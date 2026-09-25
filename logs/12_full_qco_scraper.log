@@ -1,0 +1,44 @@
+2026-09-26 00:16:02,618 [INFO] ======================================================================
+2026-09-26 00:16:02,618 [INFO] Phase 2: Full QCO & Regulatory Data Builder
+2026-09-26 00:16:02,618 [INFO] ======================================================================
+2026-09-26 00:16:02,618 [INFO] 
+Step 1: Attempting to fetch additional QCO data from bis.gov.in...
+2026-09-26 00:16:08,166 [INFO]   Successfully fetched BIS mandatory products page (463105 chars)
+2026-09-26 00:16:08,166 [INFO]   Found 0 tables on the page
+2026-09-26 00:16:09,171 [INFO] 
+Step 2: Using comprehensive ground-truth QCO data (70 products)
+2026-09-26 00:16:09,172 [INFO]         CRS electronics list: 41 products
+2026-09-26 00:16:09,175 [INFO] Written QCO master: 70 QCO + 41 CRS products
+2026-09-26 00:16:09,177 [INFO] Written QCO mapping matrix: 85 IS numbers
+2026-09-26 00:16:09,178 [INFO] Written CRS electronics file: 41 products
+2026-09-26 00:16:09,178 [INFO] 
+Step 6: Updating master catalog with QCO flags...
+2026-09-26 00:16:09,576 [INFO] Master catalog: marked 97 standards as mandatory (QCO/CRS)
+2026-09-26 00:16:09,580 [INFO] 
+--- QCO Products by Ministry ---
+2026-09-26 00:16:09,580 [INFO]   DPIIT: 27 products
+2026-09-26 00:16:09,580 [INFO]   Ministry of Power: 9 products
+2026-09-26 00:16:09,580 [INFO]   Ministry of Steel: 8 products
+2026-09-26 00:16:09,580 [INFO]   MeitY: 8 products
+2026-09-26 00:16:09,580 [INFO]   Ministry of Road Transport and Highways: 5 products
+2026-09-26 00:16:09,580 [INFO]   Ministry of Chemicals and Petrochemicals: 2 products
+2026-09-26 00:16:09,580 [INFO]   Ministry of Petroleum and Natural Gas: 2 products
+2026-09-26 00:16:09,580 [INFO]   Bureau of Indian Standards (BIS): 2 products
+2026-09-26 00:16:09,580 [INFO]   Ministry of Consumer Affairs: 2 products
+2026-09-26 00:16:09,580 [INFO]   Ministry of Jal Shakti: 2 products
+2026-09-26 00:16:09,580 [INFO]   Ministry of Agriculture and Farmers Welfare: 2 products
+2026-09-26 00:16:09,580 [INFO]   Ministry of Labour and Employment: 1 products
+2026-09-26 00:16:09,580 [INFO] 
+======================================================================
+2026-09-26 00:16:09,580 [INFO] PHASE 2 COMPLETE
+2026-09-26 00:16:09,580 [INFO]   QCO products catalogued:     70
+2026-09-26 00:16:09,580 [INFO]   CRS products catalogued:     41
+2026-09-26 00:16:09,580 [INFO]   Total mandatory products:    111
+2026-09-26 00:16:09,580 [INFO]   Unique IS numbers covered:   85
+2026-09-26 00:16:09,580 [INFO]   Master catalog updated:      97 standards flagged mandatory
+2026-09-26 00:16:09,580 [INFO] 
+Output files:
+2026-09-26 00:16:09,580 [INFO]   /Users/ayushpatel/SIH2026/data/03_regulatory_qco/full_qco_master.json
+2026-09-26 00:16:09,580 [INFO]   /Users/ayushpatel/SIH2026/data/03_regulatory_qco/qco_mapping_matrix.json
+2026-09-26 00:16:09,580 [INFO]   /Users/ayushpatel/SIH2026/data/03_regulatory_qco/crs_complete_electronics.json
+2026-09-26 00:16:09,580 [INFO] ======================================================================
