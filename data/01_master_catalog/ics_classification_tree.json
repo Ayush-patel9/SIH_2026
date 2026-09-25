@@ -1,0 +1,615 @@
+{
+  "metadata": {
+    "generated": "2026-09-26T00:43:54.403373",
+    "standard": "ISO ICS (International Classification for Standards) 2023",
+    "total_fields": 31,
+    "total_groups": 306,
+    "usage": "Semantic query routing - map user query → ICS subtree → IS standards"
+  },
+  "tree": {
+    "01": {
+      "name": "Generalities, Terminology, Standardization, Documentation",
+      "children": {
+        "01.020": "Terminology (principles and coordination)",
+        "01.040": "Vocabularies",
+        "01.060": "Quantities and units",
+        "01.080": "Graphical symbols",
+        "01.100": "Technical drawings",
+        "01.110": "Technical product documentation",
+        "01.120": "Standardization",
+        "01.140": "Information sciences. Publishing",
+        "01.160": "Reference materials (reference documents)",
+        "01.200": "Examination. Testing"
+      }
+    },
+    "03": {
+      "name": "Services, Company Organization, Management, Quality",
+      "children": {
+        "03.020": "Economics. Demography. Sociology",
+        "03.060": "Finances. Banking. Monetary systems",
+        "03.080": "Services",
+        "03.100": "Company organization and management",
+        "03.120": "Quality",
+        "03.140": "Patents. Intellectual property",
+        "03.160": "Law. Administration",
+        "03.180": "Education",
+        "03.200": "Leisure and tourism"
+      }
+    },
+    "07": {
+      "name": "Mathematics, Natural Sciences",
+      "children": {
+        "07.020": "Mathematics",
+        "07.040": "Astronomy. Geodesy. Geography",
+        "07.060": "Geology. Meteorology. Hydrology",
+        "07.080": "Biology. Botany. Zoology",
+        "07.100": "Microbiology",
+        "07.120": "Biophysics. Biochemistry"
+      }
+    },
+    "11": {
+      "name": "Health Care Technology",
+      "children": {
+        "11.020": "Medical sciences and health care facilities in general",
+        "11.040": "Medical equipment",
+        "11.060": "Dentistry",
+        "11.080": "Sterilization and disinfection",
+        "11.100": "Laboratory medicine",
+        "11.120": "Pharmaceutics",
+        "11.140": "Hospital equipment",
+        "11.160": "First aid",
+        "11.180": "Aids for disabled and handicapped persons",
+        "11.200": "Birth control. Mechanical contraceptives"
+      }
+    },
+    "13": {
+      "name": "Environment, Health Protection, Safety",
+      "children": {
+        "13.020": "Environmental protection",
+        "13.030": "Wastes",
+        "13.040": "Air quality",
+        "13.060": "Water quality",
+        "13.080": "Soil quality",
+        "13.100": "Occupational safety. Industrial hygiene",
+        "13.110": "Safety of machinery",
+        "13.120": "Domestic safety",
+        "13.140": "Noise and its effects on man",
+        "13.160": "Vibration and shock with respect to human beings",
+        "13.180": "Ergonomics",
+        "13.200": "Accident and disaster control",
+        "13.220": "Protection against fire",
+        "13.230": "Explosion protection",
+        "13.240": "Protection against excessive pressure",
+        "13.260": "Protection against electric shock. Live working",
+        "13.280": "Radiation protection",
+        "13.300": "Protection against dangerous goods",
+        "13.310": "Protection against crime",
+        "13.320": "Alarm and warning systems",
+        "13.340": "Protective equipment",
+        "13.360": "Safety at sea. Life-saving"
+      }
+    },
+    "17": {
+      "name": "Metrology and Measurement, Physical Phenomena",
+      "children": {
+        "17.020": "Metrology and measurement in general",
+        "17.040": "Geometrical and surface measurement",
+        "17.060": "Measurement of volume, mass, density, viscosity",
+        "17.080": "Measurement of time and related quantities",
+        "17.100": "Measurement of force, weight and pressure",
+        "17.120": "Measurement of flow",
+        "17.140": "Acoustics and acoustic measurements",
+        "17.160": "Vibrations, shock and vibration measurements",
+        "17.180": "Optics and optical measurements",
+        "17.200": "Thermodynamics and temperature measurements",
+        "17.220": "Electricity. Magnetism. Electrical and magnetic measurements",
+        "17.240": "Radiation measurements",
+        "17.260": "Miscellaneous physical quantities"
+      }
+    },
+    "19": {
+      "name": "Testing",
+      "children": {
+        "19.020": "Test conditions and procedures in general",
+        "19.040": "Environmental testing",
+        "19.060": "Mechanical testing",
+        "19.080": "Electrical and electronic testing",
+        "19.100": "Non-destructive testing",
+        "19.120": "Particle size analysis",
+        "19.140": "Reference materials"
+      }
+    },
+    "21": {
+      "name": "Mechanical Systems and Components for General Use",
+      "children": {
+        "21.020": "Characteristics and design of machines, apparatus, equipment",
+        "21.040": "Bearings",
+        "21.060": "Fasteners",
+        "21.080": "Seals and sealing",
+        "21.100": "Pulleys and friction drives",
+        "21.120": "Couplings and joints",
+        "21.140": "Brakes and clutches",
+        "21.160": "Springs",
+        "21.200": "Gears",
+        "21.220": "Chains and chain drives"
+      }
+    },
+    "23": {
+      "name": "Fluid Systems and Components for General Use",
+      "children": {
+        "23.020": "Fluid storage devices",
+        "23.040": "Pipeline components and pipelines",
+        "23.060": "Valves",
+        "23.080": "Pumps",
+        "23.100": "Fluid power systems",
+        "23.120": "Ventilators. Fans. Air-conditioners",
+        "23.140": "Compressors and pneumatic machines",
+        "23.160": "Vacuum technology"
+      }
+    },
+    "25": {
+      "name": "Manufacturing Engineering",
+      "children": {
+        "25.020": "Manufacturing process",
+        "25.040": "Industrial automation systems",
+        "25.060": "Machine tools",
+        "25.080": "Cutting tools",
+        "25.100": "Machining",
+        "25.120": "Welding, brazing and soldering",
+        "25.140": "Hand tools",
+        "25.160": "Welding, brazing and soldering",
+        "25.180": "Industrial furnaces",
+        "25.200": "Heat treatment"
+      }
+    },
+    "27": {
+      "name": "Energy and Heat Transfer Engineering",
+      "children": {
+        "27.010": "Energy and heat transfer engineering in general",
+        "27.020": "Internal combustion engines",
+        "27.040": "Gas and steam turbines. Steam engines",
+        "27.060": "Burners. Boilers",
+        "27.070": "Fuel cells",
+        "27.080": "Heat pumps. Refrigerating equipment",
+        "27.100": "Power stations in general",
+        "27.110": "Heat exchangers",
+        "27.120": "Nuclear energy engineering",
+        "27.140": "Hydraulic energy engineering",
+        "27.150": "Solar energy engineering",
+        "27.160": "Solar energy engineering",
+        "27.180": "Wind energy systems"
+      }
+    },
+    "29": {
+      "name": "Electrical Engineering",
+      "children": {
+        "29.020": "Electrical engineering in general",
+        "29.035": "Insulating materials",
+        "29.040": "Insulating fluids",
+        "29.050": "Superconductivity and conducting materials",
+        "29.060": "Electrical wires and cables",
+        "29.080": "Insulation",
+        "29.100": "Components for electrical equipment",
+        "29.120": "Electrical accessories",
+        "29.130": "Switchgear and controlgear",
+        "29.140": "Lamps and related equipment",
+        "29.160": "Rotating machinery",
+        "29.180": "Transformers. Reactors",
+        "29.200": "Rectifiers. Power convertors. Stabilized power supplies",
+        "29.220": "Galvanic cells and batteries",
+        "29.240": "Power transmission and distribution networks",
+        "29.260": "Electrical equipment for working in special conditions",
+        "29.280": "Electric traction equipment",
+        "29.300": "Measuring instruments for electrical quantities"
+      }
+    },
+    "31": {
+      "name": "Electronics",
+      "children": {
+        "31.020": "Electronic components in general",
+        "31.040": "Resistors",
+        "31.060": "Capacitors",
+        "31.080": "Semiconductor devices",
+        "31.100": "Electron tubes",
+        "31.120": "Display technology",
+        "31.140": "Piezoelectric devices",
+        "31.160": "Magnetic components",
+        "31.180": "Printed circuits and boards",
+        "31.200": "Integrated circuits",
+        "31.220": "Electromechanical components for electronic and telecommunications equipment",
+        "31.240": "Mechanical structures for electronic equipment",
+        "31.260": "Optoelectronics. Laser equipment"
+      }
+    },
+    "33": {
+      "name": "Telecommunications, Audio and Video Engineering",
+      "children": {
+        "33.020": "Telecommunications in general",
+        "33.030": "Telecommunication services. Applications",
+        "33.040": "Telecommunication systems",
+        "33.050": "Telecommunication terminal equipment",
+        "33.060": "Radiocommunications",
+        "33.070": "Mobile services",
+        "33.080": "ISDN",
+        "33.100": "Electromagnetic compatibility (EMC)",
+        "33.120": "Components and accessories for telecommunications equipment",
+        "33.160": "Audio, video and audiovisual engineering",
+        "33.170": "Television and radio broadcasting",
+        "33.180": "Fibre optic communications",
+        "33.200": "Telecontrol. Telemetering"
+      }
+    },
+    "35": {
+      "name": "Information Technology, Office Machines",
+      "children": {
+        "35.020": "Information technology in general",
+        "35.040": "Character sets and information coding",
+        "35.060": "Languages used in information technology",
+        "35.080": "Software",
+        "35.100": "Open systems interconnection (OSI)",
+        "35.110": "Networking",
+        "35.120": "Interfaces and interconnection equipment",
+        "35.140": "Computer graphics",
+        "35.160": "Microprocessor systems",
+        "35.180": "IT terminal and other peripheral equipment",
+        "35.200": "Interface and interconnection equipment",
+        "35.220": "Data storage devices",
+        "35.240": "IT applications",
+        "35.260": "Office machines"
+      }
+    },
+    "43": {
+      "name": "Road Vehicles Engineering",
+      "children": {
+        "43.020": "Road vehicles in general",
+        "43.040": "Road vehicle systems",
+        "43.060": "Internal combustion engines for road vehicles",
+        "43.080": "Commercial vehicles",
+        "43.100": "Passenger cars. Caravans and trailers",
+        "43.120": "Electric road vehicles",
+        "43.140": "Motorcycles and mopeds",
+        "43.160": "Cycles",
+        "43.180": "Diagnostic, maintenance and test equipment"
+      }
+    },
+    "53": {
+      "name": "Materials Handling Equipment",
+      "children": {
+        "53.020": "Lifting equipment",
+        "53.040": "Continuous handling equipment",
+        "53.060": "Industrial trucks",
+        "53.080": "Storage equipment"
+      }
+    },
+    "55": {
+      "name": "Packaging and Distribution of Goods",
+      "children": {
+        "55.020": "Packaging and distribution of goods in general",
+        "55.040": "Packaging materials and accessories",
+        "55.060": "Primary packaging",
+        "55.080": "Sacks. Bags",
+        "55.100": "Bottles. Jars. Phials",
+        "55.120": "Cans. Tins",
+        "55.140": "Drums",
+        "55.180": "Freight distribution of goods",
+        "55.200": "Packaged materials"
+      }
+    },
+    "59": {
+      "name": "Textile and Leather Technology",
+      "children": {
+        "59.020": "Textile industry in general",
+        "59.040": "Yarns",
+        "59.060": "Textile fibres",
+        "59.080": "Textile products",
+        "59.100": "Nonwovens",
+        "59.120": "Textile machinery and accessories",
+        "59.140": "Leather technology",
+        "59.160": "Furskins"
+      }
+    },
+    "61": {
+      "name": "Clothing Industry",
+      "children": {
+        "61.020": "Clothes",
+        "61.060": "Footwear",
+        "61.080": "Clothing accessories"
+      }
+    },
+    "65": {
+      "name": "Agriculture",
+      "children": {
+        "65.020": "Farming and forestry",
+        "65.040": "Farm buildings and installations",
+        "65.060": "Agricultural machinery, equipment and facilities",
+        "65.080": "Fertilizers",
+        "65.100": "Herbicides and pesticides",
+        "65.120": "Animal feeding stuffs",
+        "65.140": "Beekeeping equipment",
+        "65.150": "Fishing and fish breeding",
+        "65.160": "Tobacco, tobacco products and related equipment",
+        "65.180": "Forestry"
+      }
+    },
+    "67": {
+      "name": "Food Technology",
+      "children": {
+        "67.020": "Processes in the food industry",
+        "67.040": "Food products in general",
+        "67.050": "General methods of tests and analysis for food products",
+        "67.060": "Cereals, pulses and derived products",
+        "67.080": "Fruits. Vegetables",
+        "67.100": "Milk and milk products",
+        "67.120": "Meat, meat products and other animal produce",
+        "67.140": "Tea. Coffee. Cocoa",
+        "67.160": "Beverages",
+        "67.180": "Sugar. Sugar products. Starch",
+        "67.190": "Chocolate",
+        "67.200": "Edible oils and fats",
+        "67.220": "Spices and condiments",
+        "67.230": "Prepackaged or pre-prepared food products",
+        "67.240": "Sensory analysis",
+        "67.250": "Materials in contact with foodstuffs",
+        "67.260": "Plants and equipment for the food processing industry"
+      }
+    },
+    "71": {
+      "name": "Chemical Technology",
+      "children": {
+        "71.020": "Processes in the chemical industry",
+        "71.040": "Analytical chemistry",
+        "71.060": "Inorganic chemicals",
+        "71.080": "Organic chemicals",
+        "71.100": "Products of the chemical industry",
+        "71.120": "Chemical engineering equipment and plant"
+      }
+    },
+    "75": {
+      "name": "Petroleum and Related Technologies",
+      "children": {
+        "75.020": "Extraction and processing of petroleum and natural gas",
+        "75.040": "Crude petroleum",
+        "75.060": "Natural gas",
+        "75.080": "Petroleum products in general",
+        "75.100": "Lubricants, industrial oils and related products",
+        "75.120": "Hydraulic fluids",
+        "75.140": "Waxes, bituminous materials and other petroleum products",
+        "75.160": "Fuels",
+        "75.180": "Equipment for petroleum and natural gas industries",
+        "75.200": "Petroleum products and natural gas handling equipment"
+      }
+    },
+    "77": {
+      "name": "Metallurgy",
+      "children": {
+        "77.040": "Testing methods for metals",
+        "77.060": "Corrosion of metals",
+        "77.080": "Ferrous metals",
+        "77.100": "Cast iron",
+        "77.120": "Non-ferrous metals",
+        "77.140": "Iron and steel products",
+        "77.150": "Products of non-ferrous metals"
+      }
+    },
+    "79": {
+      "name": "Wood Technology",
+      "children": {
+        "79.020": "Wood industry in general",
+        "79.040": "Wood, sawlogs and sawn timber",
+        "79.060": "Panels based on wood",
+        "79.080": "Semi-manufactures of wood",
+        "79.100": "Pulp"
+      }
+    },
+    "81": {
+      "name": "Glass and Ceramics Industries",
+      "children": {
+        "81.040": "Glass",
+        "81.060": "Ceramics",
+        "81.080": "Refractories",
+        "81.100": "Products of the ceramics industry"
+      }
+    },
+    "83": {
+      "name": "Rubber and Plastics Industries",
+      "children": {
+        "83.020": "Processes in the rubber and plastics industries",
+        "83.040": "Raw materials for rubber and plastics",
+        "83.060": "Rubber",
+        "83.080": "Plastics",
+        "83.100": "Cellular materials",
+        "83.120": "Reinforced plastics",
+        "83.140": "Rubber and plastics products",
+        "83.160": "Tyres",
+        "83.180": "Adhesives"
+      }
+    },
+    "87": {
+      "name": "Paint and Colour Industries",
+      "children": {
+        "87.020": "Surface treatment and coating processes",
+        "87.040": "Paints and varnishes",
+        "87.060": "Raw materials for paints and varnishes",
+        "87.080": "Inks. Printing inks"
+      }
+    },
+    "91": {
+      "name": "Construction Materials and Building",
+      "children": {
+        "91.010": "Construction industry",
+        "91.020": "Physical planning. Town planning",
+        "91.040": "Buildings",
+        "91.060": "Elements of buildings",
+        "91.080": "Structures of buildings",
+        "91.100": "Construction materials",
+        "91.120": "Protection of and in buildings",
+        "91.140": "Installations in buildings",
+        "91.160": "Lighting",
+        "91.180": "Interior finishing",
+        "91.200": "Building technology",
+        "91.220": "Construction equipment"
+      }
+    },
+    "93": {
+      "name": "Civil Engineering",
+      "children": {
+        "93.010": "Civil engineering in general",
+        "93.020": "Earthworks. Excavations. Foundation construction",
+        "93.025": "External water conveyance systems",
+        "93.030": "External sewage systems",
+        "93.040": "Bridge construction",
+        "93.060": "Road engineering",
+        "93.080": "Road construction",
+        "93.100": "Construction of railways",
+        "93.110": "Construction of subways",
+        "93.120": "Construction of airports",
+        "93.140": "Construction of waterways, ports and dykes",
+        "93.160": "Hydraulic engineering",
+        "93.200": "Earth engineering"
+      }
+    }
+  },
+  "is_to_ics_map": {
+    "IS 1786": [
+      "77.140.15"
+    ],
+    "IS 2062": [
+      "77.140.70"
+    ],
+    "IS 432": [
+      "77.140.15"
+    ],
+    "IS 269": [
+      "91.100.10"
+    ],
+    "IS 8112": [
+      "91.100.10"
+    ],
+    "IS 12269": [
+      "91.100.10"
+    ],
+    "IS 1489 (PART 1)": [
+      "91.100.10"
+    ],
+    "IS 383": [
+      "91.100.15"
+    ],
+    "IS 516": [
+      "91.100.30"
+    ],
+    "IS 456": [
+      "91.080.40"
+    ],
+    "IS 875": [
+      "91.080.40"
+    ],
+    "IS 13920": [
+      "91.120.25"
+    ],
+    "IS 1239 (PART 1)": [
+      "23.040.10"
+    ],
+    "IS 4984": [
+      "23.040.20"
+    ],
+    "IS 4985": [
+      "23.040.20"
+    ],
+    "IS 8329": [
+      "23.040.10"
+    ],
+    "IS 694": [
+      "29.060.20"
+    ],
+    "IS 7098 (PART 1)": [
+      "29.060.20"
+    ],
+    "IS 1180 (PART 1)": [
+      "29.180"
+    ],
+    "IS 13779": [
+      "29.300"
+    ],
+    "IS 8828": [
+      "29.130.20"
+    ],
+    "IS 1293": [
+      "29.120.30"
+    ],
+    "IS 374": [
+      "29.160.99"
+    ],
+    "IS 13252 (PART 1)": [
+      "35.160"
+    ],
+    "IS 16046 (PART 1)": [
+      "29.220.99"
+    ],
+    "IS 16046 (PART 2)": [
+      "29.220.99"
+    ],
+    "IS 16102 (PART 1)": [
+      "29.140.40"
+    ],
+    "IS 16107 (PART 1)": [
+      "29.140.30"
+    ],
+    "IS 14286": [
+      "27.160"
+    ],
+    "IS 16221 (PART 1)": [
+      "27.160"
+    ],
+    "IS 73": [
+      "75.140"
+    ],
+    "IS 2835": [
+      "81.040.30"
+    ],
+    "IS 2553 (PART 1)": [
+      "81.040.30"
+    ],
+    "IS 9873 (PART 1)": [
+      "97.200.50"
+    ],
+    "IS 10151": [
+      "83.080.20"
+    ],
+    "IS 10146": [
+      "83.080.20"
+    ],
+    "IS 1363 (PART 1)": [
+      "21.060.10"
+    ],
+    "IS 1364 (PART 1)": [
+      "21.060.10"
+    ],
+    "IS 1367 (PART 1)": [
+      "21.060"
+    ],
+    "IS 1417": [
+      "39.060"
+    ],
+    "IS 11226": [
+      "61.060"
+    ],
+    "IS 2925": [
+      "13.340.20"
+    ],
+    "IS 15683": [
+      "13.220.10"
+    ],
+    "IS 9283": [
+      "23.080"
+    ],
+    "IS 2414": [
+      "83.160.10"
+    ],
+    "IS 15436": [
+      "83.160.10"
+    ],
+    "IS 10500": [
+      "13.060.20"
+    ]
+  }
+}

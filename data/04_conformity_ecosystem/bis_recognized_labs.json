@@ -1,139 +1,777 @@
 [
   {
-    "lab_id": "LAB_NTH_ER",
-    "lab_name": "National Test House (Eastern Region), Alipore, Kolkata",
-    "organization_type": "Central Government Autonomous Testing Laboratory (DoCA)",
-    "nabl_accreditation": "TC-5012 (Chemical, Mechanical, Electrical, Non-Destructive)",
-    "bis_recognition_status": "RECOGNIZED_BIS_LAB",
+    "name": "National Test House (NTH) - Kolkata",
+    "code": "NTH-KOL",
     "state": "West Bengal",
-    "key_capabilities": [
-      "Tensile & Bending Testing of Steel (IS 1786, IS 2062)",
-      "Cement Compressive Testing (IS 1489, IS 269)",
-      "High Voltage Cables (IS 694, IS 1554)",
-      "Paints & Varnishes"
+    "city": "Kolkata",
+    "type": "Government",
+    "nabl": "TC-5001",
+    "email": "nthlko@nic.in",
+    "standards": [
+      "IS 2062",
+      "IS 1786",
+      "IS 432",
+      "IS 1608",
+      "IS 1599",
+      "IS 1499",
+      "IS 513"
+    ],
+    "domain": [
+      "Steel",
+      "Metals",
+      "General Engineering"
     ]
   },
   {
-    "lab_id": "LAB_NTH_WR",
-    "lab_name": "National Test House (Western Region), Andheri, Mumbai",
-    "organization_type": "Central Government Autonomous Testing Laboratory (DoCA)",
-    "nabl_accreditation": "TC-5013 (Chemical, Electrical, Mechanical)",
-    "bis_recognition_status": "RECOGNIZED_BIS_LAB",
+    "name": "National Test House (NTH) - Mumbai",
+    "code": "NTH-MUM",
     "state": "Maharashtra",
-    "key_capabilities": [
-      "Chemical Analysis of Metals (IS 228)",
-      "Transformers & Switchgears",
-      "Plastics & Polymers Migration Testing (IS 10151, IS 9845)"
+    "city": "Mumbai",
+    "type": "Government",
+    "nabl": "TC-5002",
+    "email": "nthmum@nic.in",
+    "standards": [
+      "IS 2062",
+      "IS 1786",
+      "IS 694",
+      "IS 2553",
+      "IS 15683"
+    ],
+    "domain": [
+      "Steel",
+      "Electrical",
+      "Safety"
     ]
   },
   {
-    "lab_id": "LAB_CPRI_BLR",
-    "lab_name": "Central Power Research Institute (CPRI), Bengaluru",
-    "organization_type": "Autonomous Society under Ministry of Power",
-    "nabl_accreditation": "TC-5432 (High Voltage, Short Circuit, Cables, Switchgear)",
-    "bis_recognition_status": "RECOGNIZED_BIS_LAB",
+    "name": "National Test House (NTH) - Chennai",
+    "code": "NTH-CHN",
+    "state": "Tamil Nadu",
+    "city": "Chennai",
+    "type": "Government",
+    "nabl": "TC-5003",
+    "email": "nthchn@nic.in",
+    "standards": [
+      "IS 2062",
+      "IS 1786",
+      "IS 11226",
+      "IS 4151"
+    ],
+    "domain": [
+      "Steel",
+      "Mechanical",
+      "Safety"
+    ]
+  },
+  {
+    "name": "National Test House (NTH) - Guwahati",
+    "code": "NTH-GUW",
+    "state": "Assam",
+    "city": "Guwahati",
+    "type": "Government",
+    "nabl": "TC-5004",
+    "standards": [
+      "IS 2062",
+      "IS 1786",
+      "IS 1608"
+    ],
+    "domain": [
+      "Steel",
+      "Metals"
+    ]
+  },
+  {
+    "name": "National Test House (NTH) - Jaipur",
+    "code": "NTH-JAI",
+    "state": "Rajasthan",
+    "city": "Jaipur",
+    "type": "Government",
+    "nabl": "TC-5005",
+    "standards": [
+      "IS 2062",
+      "IS 1786",
+      "IS 1363",
+      "IS 1364"
+    ],
+    "domain": [
+      "Steel",
+      "Fasteners"
+    ]
+  },
+  {
+    "name": "SAIL R&D Centre for Iron & Steel",
+    "code": "SAIL-RDCIS",
+    "state": "Jharkhand",
+    "city": "Ranchi",
+    "type": "PSU",
+    "nabl": "TC-6001",
+    "standards": [
+      "IS 1786",
+      "IS 2062",
+      "IS 432",
+      "IS 2831",
+      "IS 1977",
+      "IS 1979",
+      "IS 808"
+    ],
+    "domain": [
+      "Steel",
+      "Metallurgy"
+    ]
+  },
+  {
+    "name": "SAIL - Bhilai Steel Plant Lab",
+    "code": "SAIL-BSP",
+    "state": "Chhattisgarh",
+    "city": "Bhilai",
+    "type": "PSU",
+    "nabl": "TC-6002",
+    "standards": [
+      "IS 1786",
+      "IS 2062",
+      "IS 1977"
+    ],
+    "domain": [
+      "Steel"
+    ]
+  },
+  {
+    "name": "SAIL - TISCO Research Lab",
+    "code": "SAIL-TRL",
+    "state": "Jharkhand",
+    "city": "Jamshedpur",
+    "type": "PSU",
+    "nabl": "TC-6003",
+    "standards": [
+      "IS 1786",
+      "IS 2062",
+      "IS 432",
+      "IS 1608",
+      "IS 1599"
+    ],
+    "domain": [
+      "Steel",
+      "Metallurgy"
+    ]
+  },
+  {
+    "name": "CSIR-National Physical Laboratory (NPL)",
+    "code": "CSIR-NPL",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "type": "Government-R&D",
+    "nabl": "TC-7001",
+    "standards": [
+      "IS 1248",
+      "IS 2147",
+      "IS 13252 (PART 1)",
+      "IS 616"
+    ],
+    "domain": [
+      "Electrical",
+      "Electronics",
+      "Measurement"
+    ]
+  },
+  {
+    "name": "CSIR-Central Building Research Institute (CBRI)",
+    "code": "CSIR-CBRI",
+    "state": "Uttarakhand",
+    "city": "Roorkee",
+    "type": "Government-R&D",
+    "nabl": "TC-7002",
+    "standards": [
+      "IS 269",
+      "IS 383",
+      "IS 456",
+      "IS 1077",
+      "IS 1489",
+      "IS 15622",
+      "IS 2835"
+    ],
+    "domain": [
+      "Construction",
+      "Civil",
+      "Cement"
+    ]
+  },
+  {
+    "name": "CSIR-Central Road Research Institute (CRRI)",
+    "code": "CSIR-CRRI",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "type": "Government-R&D",
+    "nabl": "TC-7003",
+    "standards": [
+      "IS 73",
+      "IS 217",
+      "IS 1208",
+      "IS 383"
+    ],
+    "domain": [
+      "Civil",
+      "Roads",
+      "Bitumen"
+    ]
+  },
+  {
+    "name": "CSIR-Central Electrochemical Research Institute (CECRI)",
+    "code": "CSIR-CECRI",
+    "state": "Tamil Nadu",
+    "city": "Karaikudi",
+    "type": "Government-R&D",
+    "nabl": "TC-7004",
+    "standards": [
+      "IS 16046 (PART 1)",
+      "IS 16046 (PART 2)",
+      "IS 1841"
+    ],
+    "domain": [
+      "Battery",
+      "Electrochemistry"
+    ]
+  },
+  {
+    "name": "CSIR-Central Electronics Engineering Research Institute (CEERI)",
+    "code": "CSIR-CEERI",
+    "state": "Rajasthan",
+    "city": "Pilani",
+    "type": "Government-R&D",
+    "nabl": "TC-7005",
+    "standards": [
+      "IS 13252 (PART 1)",
+      "IS 616"
+    ],
+    "domain": [
+      "Electronics",
+      "IT"
+    ]
+  },
+  {
+    "name": "BIS Central Laboratory",
+    "code": "BIS-CLAB",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "type": "BIS",
+    "nabl": "TC-1001",
+    "standards": [
+      "IS 1786",
+      "IS 2062",
+      "IS 1239 (PART 1)",
+      "IS 1363 (PART 1)",
+      "IS 1364 (PART 1)"
+    ],
+    "domain": [
+      "Steel",
+      "Fasteners",
+      "General"
+    ]
+  },
+  {
+    "name": "BIS South Regional Laboratory",
+    "code": "BIS-SRL",
+    "state": "Tamil Nadu",
+    "city": "Chennai",
+    "type": "BIS",
+    "nabl": "TC-1002",
+    "standards": [
+      "IS 1786",
+      "IS 11226",
+      "IS 4246"
+    ],
+    "domain": [
+      "Steel",
+      "Safety",
+      "Appliances"
+    ]
+  },
+  {
+    "name": "BIS West Regional Laboratory",
+    "code": "BIS-WRL",
+    "state": "Maharashtra",
+    "city": "Mumbai",
+    "type": "BIS",
+    "nabl": "TC-1003",
+    "standards": [
+      "IS 2062",
+      "IS 1786",
+      "IS 694",
+      "IS 7098 (PART 1)"
+    ],
+    "domain": [
+      "Steel",
+      "Cables",
+      "Electrical"
+    ]
+  },
+  {
+    "name": "ERTL (South) - Bangalore",
+    "code": "ERTL-SOU",
     "state": "Karnataka",
-    "key_capabilities": [
-      "Distribution Transformers (IS 1180 Part 1)",
-      "Solar Inverters & Power Conditioning Units (IS 16221)",
-      "LV & HV Cables (IS 7098, IS 694)",
-      "Smart Meters (IS 16444)",
-      "Switchgear (IS/IEC 60947)"
+    "city": "Bengaluru",
+    "type": "Government",
+    "nabl": "TC-8001",
+    "standards": [
+      "IS 13252 (PART 1)",
+      "IS 616",
+      "IS 16046 (PART 1)",
+      "IS 16046 (PART 2)",
+      "IS 16102 (PART 1)",
+      "IS 16107 (PART 1)"
+    ],
+    "domain": [
+      "IT Equipment",
+      "Electronics",
+      "LED"
     ]
   },
   {
-    "lab_id": "LAB_ERDA_BRD",
-    "lab_name": "Electrical Research and Development Association (ERDA), Vadodara",
-    "organization_type": "Non-profit Research Association & Testing Lab",
-    "nabl_accreditation": "TC-5098 (Electrical, Photometry, Mechanical, Dielectric)",
-    "bis_recognition_status": "RECOGNIZED_BIS_LAB",
-    "state": "Gujarat",
-    "key_capabilities": [
-      "LED Luminaires Photometry & Safety (IS 10322, IS 16102)",
-      "Energy Meters (IS 13779)",
-      "Distribution Transformers (IS 1180)",
-      "Dielectric Fluids & Insulators"
+    "name": "ERTL (North) - Noida",
+    "code": "ERTL-NOR",
+    "state": "Uttar Pradesh",
+    "city": "Noida",
+    "type": "Government",
+    "nabl": "TC-8002",
+    "standards": [
+      "IS 13252 (PART 1)",
+      "IS 616",
+      "IS 16046 (PART 2)",
+      "IS 16102 (PART 1)"
+    ],
+    "domain": [
+      "IT Equipment",
+      "Electronics"
     ]
   },
   {
-    "lab_id": "LAB_CIPET_CHN",
-    "lab_name": "Central Institute of Petrochemicals Engineering & Technology (CIPET), Chennai",
-    "organization_type": "Autonomous Institute under Ministry of Chemicals & Fertilizers",
-    "nabl_accreditation": "TC-5145 (Plastics, Polymers, Composites, Packaging)",
-    "bis_recognition_status": "RECOGNIZED_BIS_LAB",
-    "state": "Tamil Nadu",
-    "key_capabilities": [
-      "Polyethylene Materials (IS 7328, IS 10146)",
-      "PVC Food Contact Migration (IS 10151, IS 9845)",
-      "PVC Pipes & Fittings (IS 4985)",
-      "Biodegradable Plastics Testing (IS 17088)"
+    "name": "ERTL (East) - Kolkata",
+    "code": "ERTL-EAS",
+    "state": "West Bengal",
+    "city": "Kolkata",
+    "type": "Government",
+    "nabl": "TC-8003",
+    "standards": [
+      "IS 13252 (PART 1)",
+      "IS 616"
+    ],
+    "domain": [
+      "IT Equipment"
     ]
   },
   {
-    "lab_id": "LAB_STQC_ERTL_DEL",
-    "lab_name": "Electronics Regional Test Laboratory (ERTL North) / STQC, New Delhi",
-    "organization_type": "Directorate under Ministry of Electronics and IT (MeitY)",
-    "nabl_accreditation": "TC-5211 (Electronics Safety, EMC/EMI, Environmental)",
-    "bis_recognition_status": "RECOGNIZED_BIS_LAB",
-    "state": "Delhi",
-    "key_capabilities": [
-      "IT Equipment Safety (IS 13252 Part 1)",
-      "Audio/Video Apparatus Safety (IS 616)",
-      "Lithium Battery Safety (IS 16046 Part 2)",
-      "EMC/EMI Compliance"
-    ]
-  },
-  {
-    "lab_id": "LAB_CLRI_CHN",
-    "lab_name": "CSIR - Central Leather Research Institute (CLRI), Chennai",
-    "organization_type": "CSIR National Laboratory",
-    "nabl_accreditation": "TC-5310 (Leather, Footwear, Polymer Soles)",
-    "bis_recognition_status": "RECOGNIZED_BIS_LAB",
-    "state": "Tamil Nadu",
-    "key_capabilities": [
-      "Safety Footwear with Steel Toe Cap (IS 15298 Part 2, IS 11226)",
-      "Canvas & Sports Shoes (IS 3735, IS 15844)",
-      "Leather Flexing & Abrasion Resistance"
-    ]
-  },
-  {
-    "lab_id": "LAB_NISE_GUR",
-    "lab_name": "National Institute of Solar Energy (NISE), Gurugram",
-    "organization_type": "Autonomous Institute under Ministry of New & Renewable Energy (MNRE)",
-    "nabl_accreditation": "TC-6014 (Solar PV, Photovoltaic Reliability)",
-    "bis_recognition_status": "RECOGNIZED_BIS_LAB",
-    "state": "Haryana",
-    "key_capabilities": [
-      "Crystalline Silicon Terrestrial PV Modules (IS 14286)",
-      "Photovoltaic Safety Qualification (IS/IEC 61730)",
-      "Solar Inverters (IS 16221)"
-    ]
-  },
-  {
-    "lab_id": "LAB_SRI_DEL",
-    "lab_name": "Shriram Institute for Industrial Research (SIIR), Delhi",
-    "organization_type": "Independent Research & Analytical Testing Lab",
-    "nabl_accreditation": "TC-5020 (Chemical, Biological, Mechanical, Materials)",
-    "bis_recognition_status": "RECOGNIZED_BIS_LAB",
-    "state": "Delhi",
-    "key_capabilities": [
-      "Toxic Element Migration in Toys (IS 9873 Part 3)",
-      "Safety of Toys Mechanical (IS 9873 Part 1)",
-      "Drinking Water Testing (IS 10500)",
-      "Food Packaging Migration (IS 9845)"
-    ]
-  },
-  {
-    "lab_id": "LAB_ARAI_PUN",
-    "lab_name": "Automotive Research Association of India (ARAI), Pune",
-    "organization_type": "Autonomous Research Institute under Ministry of Heavy Industries",
-    "nabl_accreditation": "TC-5111 (Automotive Safety, Glass, Tyres, Emissions)",
-    "bis_recognition_status": "RECOGNIZED_BIS_LAB",
+    "name": "ERTL (West) - Mumbai",
+    "code": "ERTL-WES",
     "state": "Maharashtra",
-    "key_capabilities": [
-      "Safety Glass for Land Transport (IS 2553 Part 2)",
-      "Pneumatic Tyres (IS 15633, IS 15636)",
-      "Automotive Components Safety"
+    "city": "Mumbai",
+    "type": "Government",
+    "nabl": "TC-8004",
+    "standards": [
+      "IS 13252 (PART 1)",
+      "IS 16046 (PART 2)",
+      "IS 16102 (PART 1)"
+    ],
+    "domain": [
+      "IT Equipment",
+      "Electronics",
+      "LED"
+    ]
+  },
+  {
+    "name": "STQC Directorate - Delhi",
+    "code": "STQC-DEL",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "type": "Government",
+    "nabl": "TC-8005",
+    "standards": [
+      "IS 13252 (PART 1)",
+      "IS 14286",
+      "IS 16221 (PART 1)",
+      "IS 17017 (PART 1)"
+    ],
+    "domain": [
+      "IT",
+      "Solar",
+      "EV Charging"
+    ]
+  },
+  {
+    "name": "Central Power Research Institute (CPRI)",
+    "code": "CPRI",
+    "state": "Karnataka",
+    "city": "Bengaluru",
+    "type": "Government",
+    "nabl": "TC-9001",
+    "standards": [
+      "IS 1180 (PART 1)",
+      "IS 7098 (PART 1)",
+      "IS 7098 (PART 2)",
+      "IS 694",
+      "IS 13779",
+      "IS 8828",
+      "IS 1293",
+      "IS 16242 (PART 1)"
+    ],
+    "domain": [
+      "Transformers",
+      "Cables",
+      "Meters",
+      "Switchgear"
+    ]
+  },
+  {
+    "name": "CPRI - Bhopal",
+    "code": "CPRI-BPL",
+    "state": "Madhya Pradesh",
+    "city": "Bhopal",
+    "type": "Government",
+    "nabl": "TC-9002",
+    "standards": [
+      "IS 1180 (PART 1)",
+      "IS 13779",
+      "IS 694"
+    ],
+    "domain": [
+      "Transformers",
+      "Meters",
+      "Cables"
+    ]
+  },
+  {
+    "name": "CPRI - Nagpur",
+    "code": "CPRI-NGP",
+    "state": "Maharashtra",
+    "city": "Nagpur",
+    "type": "Government",
+    "nabl": "TC-9003",
+    "standards": [
+      "IS 694",
+      "IS 7098 (PART 1)",
+      "IS 8828"
+    ],
+    "domain": [
+      "Cables",
+      "Switchgear"
+    ]
+  },
+  {
+    "name": "Electrical Research and Development Association (ERDA)",
+    "code": "ERDA",
+    "state": "Gujarat",
+    "city": "Vadodara",
+    "type": "Industry",
+    "nabl": "TC-9004",
+    "standards": [
+      "IS 1180 (PART 1)",
+      "IS 694",
+      "IS 7098 (PART 1)",
+      "IS 8828",
+      "IS 1293",
+      "IS 13779",
+      "IS 374"
+    ],
+    "domain": [
+      "Transformers",
+      "Cables",
+      "Meters",
+      "Fans",
+      "Switchgear"
+    ]
+  },
+  {
+    "name": "National Council for Cement and Building Materials (NCCBM)",
+    "code": "NCCBM",
+    "state": "Haryana",
+    "city": "Ballabgarh",
+    "type": "Industry",
+    "nabl": "TC-10001",
+    "standards": [
+      "IS 269",
+      "IS 8112",
+      "IS 12269",
+      "IS 1489 (PART 1)",
+      "IS 1489 (PART 2)",
+      "IS 383",
+      "IS 4031"
+    ],
+    "domain": [
+      "Cement",
+      "Aggregates",
+      "Construction"
+    ]
+  },
+  {
+    "name": "Research Design and Standards Organisation (RDSO)",
+    "code": "RDSO",
+    "state": "Uttar Pradesh",
+    "city": "Lucknow",
+    "type": "Government",
+    "nabl": "TC-10002",
+    "standards": [
+      "IS 2062",
+      "IS 1786",
+      "IS 808",
+      "IS 2831"
+    ],
+    "domain": [
+      "Steel",
+      "Railway Materials"
+    ]
+  },
+  {
+    "name": "Textile Committee Testing Labs - Mumbai",
+    "code": "TEXTCOM-MUM",
+    "state": "Maharashtra",
+    "city": "Mumbai",
+    "type": "Government",
+    "nabl": "TC-11001",
+    "standards": [
+      "IS 9708",
+      "IS 3655",
+      "IS 11226",
+      "IS 15298 (PART 2)"
+    ],
+    "domain": [
+      "Textiles",
+      "PPE",
+      "Safety Footwear"
+    ]
+  },
+  {
+    "name": "South India Textile Research Association (SITRA)",
+    "code": "SITRA",
+    "state": "Tamil Nadu",
+    "city": "Coimbatore",
+    "type": "Industry",
+    "nabl": "TC-11002",
+    "standards": [
+      "IS 9708",
+      "IS 3655",
+      "IS 7703",
+      "IS 1362"
+    ],
+    "domain": [
+      "Textiles",
+      "Yarn"
+    ]
+  },
+  {
+    "name": "Northern India Textile Research Association (NITRA)",
+    "code": "NITRA",
+    "state": "Uttar Pradesh",
+    "city": "Ghaziabad",
+    "type": "Industry",
+    "nabl": "TC-11003",
+    "standards": [
+      "IS 9708",
+      "IS 3655",
+      "IS 15298 (PART 2)"
+    ],
+    "domain": [
+      "Textiles"
+    ]
+  },
+  {
+    "name": "FSSAI Lab - New Delhi",
+    "code": "FSSAI-DEL",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "type": "Government",
+    "nabl": "TC-12001",
+    "standards": [
+      "IS 10146",
+      "IS 10151"
+    ],
+    "domain": [
+      "Food Contact Materials",
+      "Plastics"
+    ]
+  },
+  {
+    "name": "National Institute of Nutrition (NIN)",
+    "code": "NIN",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "type": "Government",
+    "nabl": "TC-12002",
+    "standards": [
+      "IS 10146",
+      "IS 10151"
+    ],
+    "domain": [
+      "Food Contact Materials"
+    ]
+  },
+  {
+    "name": "National Institute of Solar Energy (NISE)",
+    "code": "NISE",
+    "state": "Haryana",
+    "city": "Gurugram",
+    "type": "Government",
+    "nabl": "TC-13001",
+    "standards": [
+      "IS 14286",
+      "IS 16221 (PART 1)",
+      "IS 16221 (PART 2)"
+    ],
+    "domain": [
+      "Solar PV",
+      "Inverters"
+    ]
+  },
+  {
+    "name": "Solar Energy Corporation of India (SECI) Lab",
+    "code": "SECI-LAB",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "type": "PSU",
+    "nabl": "TC-13002",
+    "standards": [
+      "IS 14286",
+      "IS 16221 (PART 1)"
+    ],
+    "domain": [
+      "Solar PV"
+    ]
+  },
+  {
+    "name": "BIS Assaying and Hallmarking Centre - New Delhi",
+    "code": "BIS-AHC-DEL",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "type": "BIS",
+    "nabl": "TC-14001",
+    "standards": [
+      "IS 1417",
+      "IS 2112"
+    ],
+    "domain": [
+      "Gold",
+      "Silver",
+      "Jewellery"
+    ]
+  },
+  {
+    "name": "BIS Assaying and Hallmarking Centre - Mumbai",
+    "code": "BIS-AHC-MUM",
+    "state": "Maharashtra",
+    "city": "Mumbai",
+    "type": "BIS",
+    "nabl": "TC-14002",
+    "standards": [
+      "IS 1417",
+      "IS 2112"
+    ],
+    "domain": [
+      "Gold",
+      "Silver",
+      "Jewellery"
+    ]
+  },
+  {
+    "name": "Central Institute of Rubber Research (CIRT)",
+    "code": "CIRT",
+    "state": "Kerala",
+    "city": "Kottayam",
+    "type": "Government",
+    "nabl": "TC-15001",
+    "standards": [
+      "IS 2414",
+      "IS 15436",
+      "IS 2246"
+    ],
+    "domain": [
+      "Tyres",
+      "Rubber"
+    ]
+  },
+  {
+    "name": "ATMA (Automotive Tyre Manufacturers Association) Lab",
+    "code": "ATMA-LAB",
+    "state": "Maharashtra",
+    "city": "Mumbai",
+    "type": "Industry",
+    "nabl": "TC-15002",
+    "standards": [
+      "IS 2414",
+      "IS 15436"
+    ],
+    "domain": [
+      "Tyres"
+    ]
+  },
+  {
+    "name": "Central Institute of Plastics Engineering & Technology (CIPET)",
+    "code": "CIPET",
+    "state": "Tamil Nadu",
+    "city": "Chennai",
+    "type": "Government",
+    "nabl": "TC-16001",
+    "standards": [
+      "IS 9873 (PART 1)",
+      "IS 9873 (PART 2)",
+      "IS 9873 (PART 3)",
+      "IS 9873 (PART 5)",
+      "IS 10151",
+      "IS 10146"
+    ],
+    "domain": [
+      "Toys",
+      "Plastics",
+      "Food Contact"
+    ]
+  },
+  {
+    "name": "CIPET - Lucknow",
+    "code": "CIPET-LKO",
+    "state": "Uttar Pradesh",
+    "city": "Lucknow",
+    "type": "Government",
+    "nabl": "TC-16002",
+    "standards": [
+      "IS 9873 (PART 1)",
+      "IS 9873 (PART 2)",
+      "IS 10151"
+    ],
+    "domain": [
+      "Toys",
+      "Plastics"
+    ]
+  },
+  {
+    "name": "CIPET - Ahmedabad",
+    "code": "CIPET-AMD",
+    "state": "Gujarat",
+    "city": "Ahmedabad",
+    "type": "Government",
+    "nabl": "TC-16003",
+    "standards": [
+      "IS 9873 (PART 1)",
+      "IS 10151",
+      "IS 4985"
+    ],
+    "domain": [
+      "Toys",
+      "Plastics",
+      "PVC Pipes"
+    ]
+  },
+  {
+    "name": "Fluid Control Research Institute (FCRI)",
+    "code": "FCRI",
+    "state": "Kerala",
+    "city": "Palakkad",
+    "type": "Government",
+    "nabl": "TC-17001",
+    "standards": [
+      "IS 9283",
+      "IS 9079",
+      "IS 6595 (PART 1)"
+    ],
+    "domain": [
+      "Pumps",
+      "Valves",
+      "Fluid Control"
     ]
   }
 ]
