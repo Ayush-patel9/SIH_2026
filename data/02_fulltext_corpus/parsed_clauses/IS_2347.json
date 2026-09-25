@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_2347",
-  "standard_id": "IS IS_2347",
-  "title": "Indian Standard Specification / Test Method (IS IS_2347)",
+  "is_number": "IS 2347",
+  "standard_id": "IS 2347:2023",
+  "title": "Domestic Pressure Cooker - Specification",
   "ia_identifier": "IS_2347",
   "division_code": "GEN",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard covers the requirements for domestic pressure cookers. This standard does not cover microwaveable pressure cookers.",
   "clause_2_normative_references": [
@@ -143,11 +143,11 @@
     },
     {
       "is_number": "IS 302 (PART 2/SEC 15)",
-      "standard_id": "IS 302 (PART 2/SEC 15)",
-      "title": "Indian Standard Specification / Test Method (IS 302 (PART 2/SEC 15))",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "standard_id": "IS 302 (Part 2/Sec 15):2009",
+      "title": "Safety of household and similar electrical appliances, Part 2: Particular requirements: Section 15 Appliances for heating liquids",
+      "division_code": "ETD",
+      "aspect": "Safety Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -279,7 +279,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 5523",
@@ -324,7 +324,7 @@
     "Body Capacity",
     "Greatest Nominal Cooking Pressure",
     "Grade of",
-    "Indian Standard Specification"
+    "Domestic Pressure Cooker"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

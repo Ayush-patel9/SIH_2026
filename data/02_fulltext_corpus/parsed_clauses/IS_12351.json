@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_12351",
-  "standard_id": "IS IS_12351",
-  "title": "Indian Standard Specification / Test Method (IS IS_12351)",
+  "is_number": "IS 12351",
+  "standard_id": "IS 12351:1988",
+  "title": "coupling ball for caravans and light-trailers",
   "ia_identifier": "IS_12351",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -22,6 +22,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 18",
+      "standard_id": "IS 18:1999",
+      "title": "Information and Documentation - Rules for the Abbreviation of Title Words and Titles of Publications",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS/ISO 1103",
       "standard_id": "IS/ISO 1103",
       "title": "Indian Standard Specification / Test Method (IS/ISO 1103)",
@@ -33,9 +43,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12351"
+    "coupling ball for caravans and light",
+    "trailers",
+    "coupling ball for caravans and light-trailers",
+    "IS 12351 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

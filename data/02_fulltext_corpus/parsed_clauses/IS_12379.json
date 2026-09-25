@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_12379",
-  "standard_id": "IS IS_12379",
-  "title": "Indian Standard Specification / Test Method (IS IS_12379)",
+  "is_number": "IS 12379",
+  "standard_id": "IS 12379:1988",
+  "title": "Code of practice for lining of water-courses and field channels",
   "ia_identifier": "IS_12379",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Code of Practice",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_12379) covers Indian Standard Specification / Test Method (IS IS_12379). 0,1 This Indian Standard was adopted by the after the draft finalized by the Canals and Canal Lining Sectional Committee had been aproved by the Civil Engineering Division Council. 0.2 Lining of water-courses not only minimizes the loss of water due to seepage, but also results in achieving considerable economy in land use due to reduction in cross-section of water-courses. Water thus saved may be usefully utilized for extension and improvement of irrigation facilities. Besides, in case of unlined water-courses, there is gradually rise in water table, thereby rendering the tract prone to water logging. Lining ensures stability, rigidity and easv maintenance of watercourse at lesser cost. The flatter bed slopes may be achieved which improves the command and eliminates the necessity of JHALLARS (water lifting device). In most cases gravity command becomes available. The filling time of watercourses takes less time and velocity of water is more. There is more equitable distribution of wat",
+  "clause_1_scope": "This standard covers the lining of watercourses and field channels in brick/tile, stone slab/stone masonry, cement concrete, pre-cast concrete slabs and LDPE film along with rigid cover.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 1489 (PART 1)",
@@ -19,7 +19,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1489 (PART 2)",
@@ -29,7 +29,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 269",
@@ -39,7 +39,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1489",
@@ -149,7 +149,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 3466",
@@ -223,9 +223,8 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12379"
+    "Code of practice for lining of water",
+    "courses and field channels"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

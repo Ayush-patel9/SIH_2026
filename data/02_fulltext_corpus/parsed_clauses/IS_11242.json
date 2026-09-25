@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_11242",
-  "standard_id": "IS IS_11242",
-  "title": "Indian Standard Specification / Test Method (IS IS_11242)",
+  "is_number": "IS 11242",
+  "standard_id": "IS 11242:1985",
+  "title": "Lumbo-sacral Flexion-extension and Lateral-flexion Control Brace",
   "ia_identifier": "IS_11242",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_11242) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11242).",
+  "clause_1_scope": "This Indian Standard (IS 11242) prescribes technical specifications, requirements, tolerances, and testing procedures for Lumbo-sacral Flexion-extension and Lateral-flexion Control Brace.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 1079",
@@ -19,7 +19,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 737",
@@ -63,9 +63,10 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11242"
+    "Lumbo",
+    "sacral Flexion",
+    "extension and Lateral",
+    "flexion Control Brace"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

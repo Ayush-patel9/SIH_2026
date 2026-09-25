@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_12223__PART_2_",
-  "standard_id": "IS IS_12223__PART_2_",
-  "title": "Indian Standard Specification / Test Method (IS IS_12223__PART_2_)",
+  "is_number": "IS 12223 (PART 2)",
+  "standard_id": "IS 12223 (Part 2):1989",
+  "title": "Data Interchange on 6.30 mm Wide Magnetic Tape Cartridge Using IMFM Recording at 252 ftpmm, Part 2: Track Format and Method of Recording For Data Interchange in Start/Stop Mode",
   "ia_identifier": "IS_12223__PART_2_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_12223__PART_2_) covers Indian Standard Specification / Test Method (IS IS_12223__PART_2_). This Indian Standard (Part 2), which is identical with ISO 8063/2 : 1986 'Information processing — Data interchange on 6.30 mm (0.25 in) wide magnetic tape cartridge using IMFM recording at 252 ftpmm (6400 ftpi)~-Part 2: Track format and method of recording for data interchange in start/stop mode', issued by the international Organization for Standardizatiori (ISO) was adopted by the Business Machines and Calculators Sectional Committee (LTDC 24) and approval of the Electronics and Telecommunication Division Council. In the adopted standard certain terminology and conventions are not identical with those gsed in Indian Standards; attention is specially drawn to the foUowing: 3) Comma (,) has been used as a decimal marker while in Indian Standards the current practice is to use a point (.) as the decimal marker, b) wherever the words 'International Standard' appear, referring to this standard, they should be read as 'Indian Standard'. For the purpose of this Indian Standard, only metric",
+  "clause_1_scope": "This part of ISO 8063 specifies the quality of the recorded signals, and the track format to be used on a 6,30 mm 10.",
   "clause_2_normative_references": [
     {
       "is_number": "IS/ISO 8063",
@@ -63,9 +63,9 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12223__PART_2_"
+    "Data Interchange on 6.30 mm Wide Magnetic Tape Cartridge Using IMFM Recording at 252 ftpmm",
+    "Part 2: Track Format and Method of Recording For Data Interchange in Start",
+    "Stop Mode"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

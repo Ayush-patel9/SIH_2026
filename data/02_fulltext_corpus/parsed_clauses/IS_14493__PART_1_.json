@@ -1,0 +1,114 @@
+{
+  "is_number": "IS 14493 (PART 1)",
+  "standard_id": "IS 14493 (Part 1):1997",
+  "title": "Multicore and symmetrical pair/quad cables for digital communications, Part 1: Generic Specification",
+  "ia_identifier": "IS_14493__PART_1_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 14493 (PART 1)) covers Multicore and symmetrical pair/quad cables for digital communications, Part 1: Generic Specification. This Indian Standard (Part 1) which is Identical with lEC 1 156 - 1(1994) 'Multicore and symmetrical pair/quad cables for digital communications — Part 1 : Generic specification' issued by the International Electrotechnical Commission (lEC), was adopted by the on the recommendation of Wires, Cables, Waveguides and Accessories Sectional Committee (LTD 1 8) and approval of the Electronics and Telecommunication Division Council. The text of the lEC standard has been approved as suitable for publication as Indian Standard without deviations. Certain conventions are, however, not identical to those used In Indian Standards. Attention is particularly drawn to the following: Wherever the words 'International Standard\" appear referring to this standard, they should be read as 'Indian Standard'. CROSS REFERENCES In this Indian Standard, the following International Standards are referred to. Read in their respective places the following: International Standard Corresponding Indian Standard lEC 5",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 14493",
+      "standard_id": "IS 14493",
+      "title": "Indian Standard Specification / Test Method (IS 14493)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5608 (PART 1)",
+      "standard_id": "IS 5608 (PART 1)",
+      "title": "Indian Standard Specification / Test Method (IS 5608 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10810 (PART 59)",
+      "standard_id": "IS 10810 (Part 59):1988",
+      "title": "Methods of test for cables, Part 59: Determination of the amount of halogen acid gas evolved during combustion of polymeric materials taken from cables",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13882 (PART 1)",
+      "standard_id": "IS 13882 (Part 1):1993",
+      "title": "Optical fibre cables, Part 1: Generic specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 108",
+      "standard_id": "IS 108",
+      "title": "Indian Standard Specification / Test Method (IS 108)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 96",
+      "standard_id": "IS/IEC 96",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 96)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 332",
+      "standard_id": "IS 332",
+      "title": "Indian Standard Specification / Test Method (IS 332)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Multicore and symmetrical pair",
+    "quad cables for digital communications",
+    "Part 1: Generic Specification"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "tensile strength of a joint is not Jess than 85 %",
+      "tensile strength of the unjointed individual strand. J"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 48447
+}

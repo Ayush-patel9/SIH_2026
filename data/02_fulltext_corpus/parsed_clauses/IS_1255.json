@@ -1,10 +1,10 @@
 {
-  "is_number": "IS IS_1255",
-  "standard_id": "IS IS_1255",
-  "title": "Indian Standard Specification / Test Method (IS IS_1255)",
+  "is_number": "IS 1255",
+  "standard_id": "IS 1255:1983",
+  "title": "Code of practice for installation and maintenance of power cables up to and including 33 kV rating",
   "ia_identifier": "IS_1255",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Code of Practice",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
@@ -72,6 +72,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 9646",
       "standard_id": "IS 9646:1992",
       "title": "Moulds suitable for cast resin-based joints for cables for voltages upto and including 1 100 V",
@@ -90,19 +100,27 @@
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade of",
-    "Grade atures",
-    "Grade 33",
     "Grade dciation",
+    "Grade 33",
     "Grade Joint",
-    "Grade ification",
     "Grade Cables",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1255"
+    "Grade atures",
+    "Grade ification",
+    "Grade of",
+    "Code of practice for installation and maintenance of power cables up to and including 33 kV rating"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

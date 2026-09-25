@@ -1,0 +1,51 @@
+{
+  "is_number": "IS 13130 (PART 2)",
+  "standard_id": "IS 13130 (Part 2):1991",
+  "title": "Wrist watches and watch movements Specification, Part 2: quarts electronic watches",
+  "ia_identifier": "IS_13130__PART_2_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers the performance and reliabihty requirements and test procedures for watches and watch movements of quartz electronic type.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13130",
+      "standard_id": "IS 13130",
+      "title": "Indian Standard Specification / Test Method (IS 13130)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9243",
+      "standard_id": "IS 9243",
+      "title": "Indian Standard Specification / Test Method (IS 9243)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade deral",
+    "Wrist watches and watch movements Specification",
+    "Part 2: quarts electronic watches"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "10.1 A watch/movernent may be marked 'Antimagnetic/Water Resistant/Shock Resistant*, whatever",
+      "10.2 Each watch shall be marked with indication"
+    ]
+  },
+  "total_chars_parsed": 8967
+}

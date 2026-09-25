@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_11853__PART_1_",
-  "standard_id": "IS IS_11853__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_11853__PART_1_)",
+  "is_number": "IS 11853 (PART 1)",
+  "standard_id": "IS 11853 (Part 1):1987",
+  "title": "Data Interchange on 130 mm, Double Sided, 3.8 tpmm, Flexible Disk Cartridges Using Modified Frequency Modulation Recording, Part 1: Dimensional, Physical and Magnetic Characteristics",
   "ia_identifier": "IS_11853__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_11853__PART_1_) covers Indian Standard Specification / Test Method (IS IS_11853__PART_1_). This Indian Standard ( Part 1 ) which is identical with ISO 8378/1-1986 'Information processing — Data interchange on 130 mm (525 in) flexible disk cartridges using modified frequency modulation recording at 7 958 ftprad 3 8 tpmm ( 96 tpi ) on both sides— Part 1 : Dimensional, physical and magnetic characteristics', issued by the International Organization for Standardization ( ISO ) was adopted by the of the Computers. Business Machines and Calculators Sectional Committee and approval of the Electronics and Telecommunication Division Council. In the adopted standard certain terminology and conventions are not identical with those used in Indian Standards; attention is specially drawn to the following: a) Comma ( , ) has been used as a decimal marker while in Indian Standards the current practice is to use a point ( . ) ^s ^^^ decimal marker. b) Wherever the words International Standard' appear referring to this standard, they should be read as 'Indian Standard . c) For the purpose of ",
+  "clause_1_scope": "This part of ISO 8378 specifies the dimensional, physical and magnetic characteristics of the cartridge so as to provide physical interchangeability between data processing systems.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 11853",
@@ -92,6 +92,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 11",
+      "standard_id": "IS 11",
+      "title": "Indian Standard Specification / Test Method (IS 11)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS/ISO 8371",
       "standard_id": "IS/ISO 8371",
       "title": "Indian Standard Specification / Test Method (IS/ISO 8371)",
@@ -104,9 +114,12 @@
   ],
   "clause_3_terminology": [
     "Grade 203",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11853__PART_1_"
+    "Data Interchange on 130 mm",
+    "Double Sided",
+    "3.8 tpmm",
+    "Flexible Disk Cartridges Using Modified Frequency Modulation Recording",
+    "Part 1: Dimensional",
+    "Physical and Magnetic Characteristics"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

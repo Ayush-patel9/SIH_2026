@@ -1,10 +1,10 @@
 {
-  "is_number": "IS IS_10485",
-  "standard_id": "IS IS_10485",
-  "title": "Indian Standard Specification / Test Method (IS IS_10485)",
+  "is_number": "IS 10485",
+  "standard_id": "IS 10485:1983",
+  "title": "Code of practice for the installation of single and community antenna systems for the reception of sound and television broadcasting",
   "ia_identifier": "IS_10485",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Code of Practice",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
@@ -100,16 +100,24 @@
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Grade of",
-    "Grade deration",
     "Grade eder",
     "Grade bruary",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10485"
+    "Grade deration",
+    "Code of practice for the installation of single and community antenna systems for the reception of sound and television broadcasting"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

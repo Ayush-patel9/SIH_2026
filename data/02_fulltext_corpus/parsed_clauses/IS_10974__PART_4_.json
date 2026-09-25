@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_10974__PART_4_",
-  "standard_id": "IS IS_10974__PART_4_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10974__PART_4_)",
+  "is_number": "IS 10974 (PART 4)",
+  "standard_id": "IS 10974 (Part 4):1984",
+  "title": "Code for hygienic conditions for production transport, storage and distribution of indigenous milk products, Part 4: Frozen products, KULFI",
   "ia_identifier": "IS_10974__PART_4_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -72,6 +72,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 11",
+      "standard_id": "IS 11",
+      "title": "Indian Standard Specification / Test Method (IS 11)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 1547",
       "standard_id": "IS 1547",
       "title": "Indian Standard Specification / Test Method (IS 1547)",
@@ -123,9 +133,10 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10974__PART_4_"
+    "Code for hygienic conditions for production transport",
+    "storage and distribution of indigenous milk products",
+    "Part 4: Frozen products",
+    "KULFI"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

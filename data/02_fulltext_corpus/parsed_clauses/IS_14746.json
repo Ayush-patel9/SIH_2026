@@ -1,0 +1,80 @@
+{
+  "is_number": "IS 14746",
+  "standard_id": "IS 14746:1999",
+  "title": "Respiratory Protective Devices - Half Masks And Quarter Masks",
+  "ia_identifier": "IS_14746",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes requirements for half masks and quarter masks for use as part of respiratory protective devices, except escape apparatus and diving apparatus. Laboratory and practical performance tests are included for the assessment of compliance with the requirements.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 8347",
+      "standard_id": "IS 8347:2008",
+      "title": "Respiratory protectives - definitions, classification and nomenclature of components",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14138 (PART 1)",
+      "standard_id": "IS 14138 (Part 1):1994",
+      "title": "Respiratory protective devices: threads for facepieces, Part 1: Standard thread connection",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14166",
+      "standard_id": "IS 14166:1994",
+      "title": "Respiratory protective devices : Full face masks",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Half Mask",
+    "Quarter Mask",
+    "Grade deration",
+    "Respiratory Protective Devices",
+    "Half Masks And Quarter Masks"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "carbon dioxide content of 5 percent"
+    ],
+    "electrical_and_safety_parameters": [
+      "flammability with the test"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "5.1 AU units of the same model shall be provided",
+      "with a type identifying marking. Sub-assembHes and",
+      "shaU be marked so that they can be identified. The",
+      "manufacturer shaU be identified by name, trade-mark",
+      "date (at least the year) of manufacture shaU be marked."
+    ]
+  },
+  "total_chars_parsed": 51645
+}

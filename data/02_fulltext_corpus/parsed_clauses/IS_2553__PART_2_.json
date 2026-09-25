@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_2553__PART_2_",
-  "standard_id": "IS IS_2553__PART_2_",
-  "title": "Indian Standard Specification / Test Method (IS IS_2553__PART_2_)",
+  "is_number": "IS 2553 (PART 2)",
+  "standard_id": "IS 2553 (Part 2):2019",
+  "title": "Part 2 : 2019: Safety Glass — Specification Part 2 For Road Transport ( First Revision )",
   "ia_identifier": "IS_2553__PART_2_",
-  "division_code": "GEN",
+  "division_code": "TED",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Safety Glass (Quality Control) Order"
   },
   "clause_1_scope": "This standard applies to safety glazing intended for installation as windscreens, window panes on Category M, N, A (fitted with cabin), C (fitted with cabin), Combine Harvester and L (with bodywork at least partially covering the driver) vehicles as defined in ‘Automotive vehicles — Types — Terminology’ concerning the Classification of vehicles to the exclusion of glazing for lighting and lightsignaling devices and instrument panels, glazing which are fitted on the body for aesthetic purpose and are not in driver’s forward or rearward field of vision, plastic windows of soft top vehicles and bullet resistant glazing. In the case of double windows, each pane is considered a separate item of glazing.",
   "clause_2_normative_references": [
@@ -59,7 +59,17 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Safety Glass (Quality Control) Order"
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 19",
+      "standard_id": "IS 19",
+      "title": "Indian Standard Specification / Test Method (IS 19)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS/ISO 2768",

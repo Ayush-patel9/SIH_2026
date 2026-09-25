@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_12269",
-  "standard_id": "IS IS_12269",
-  "title": "Indian Standard Specification / Test Method (IS IS_12269)",
+  "is_number": "IS 12269",
+  "standard_id": "IS 12269:1987",
+  "title": "Specification for 53 grade ordinary Portland cement (BI-LINGUAL)",
   "ia_identifier": "IS_12269",
-  "division_code": "GEN",
+  "division_code": "CED",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard covers the manufacture and chemical and physical requirements of 53 grade ordinary Portland cement.",
   "clause_2_normative_references": [
@@ -263,11 +263,10 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade 20",
     "Grade 203",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12269"
+    "Grade 20",
+    "Specification for 53 grade ordinary Portland cement",
+    "LINGUAL"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

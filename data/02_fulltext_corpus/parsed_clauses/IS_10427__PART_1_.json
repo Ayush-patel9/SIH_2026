@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_10427__PART_1_",
-  "standard_id": "IS IS_10427__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10427__PART_1_)",
+  "is_number": "IS 10427 (PART 1)",
+  "standard_id": "IS 10427 (Part 1):1982",
+  "title": "Designs for industrial experimentation, Part 1: Standard designs",
   "ia_identifier": "IS_10427__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -60,14 +60,23 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Orthogonal Array ( OA ) Tables",
     "Grade ed",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10427__PART_1_"
+    "Designs for industrial experimentation",
+    "Part 1: Standard designs"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

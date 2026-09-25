@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_10052__PART_2_",
-  "standard_id": "IS IS_10052__PART_2_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10052__PART_2_)",
+  "is_number": "IS 10052 (PART 2)",
+  "standard_id": "IS 10052 (Part 2):1999",
+  "title": "Radio Disturbance and Immunity Measuring Apparatus and Methods, Part 2: Methods of Measurement of Disturbances and Immunity",
   "ia_identifier": "IS_10052__PART_2_",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Methods of tests",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_10052__PART_2_) covers Indian Standard Specification / Test Method (IS IS_10052__PART_2_). This Indian Standard (Part 2) (First Revision) which is identical with CISPR 16-2 (1996) 'Specification for radio disturbance and immunity measuring apparatus and methods — Part 2 : Methods of measurement of disturbances and immunity' issued by Special Committee on Radio Interference (CISPR), was adopted by the Committee and approval of the Electronics and Telecommunication Division Council. This standard (Part 2) was originally published in 1982 and was largely based on CISPR 1 6 (1 977) Section 2. !S 10052 (Parts 3 to 7) were based on Sections 3 to 7 of CISPR 1 6 (1 977) respectively. This revision is now being published to combine IS 1 0052 (Parts 2 to 7) covering methods of measurement of radio disturbance and immunity in a single standard as IS 1 0052 (Part 2) and also to align it with the latest edition of CISPR 1 6. Consequently. IS 1 0052 (Parts 3 to 7) have been withdrawn. Radio disturbance and immunity measuring apparatus are covered in IS 1 0052 (Part 1 ), In the adopted sta",
+  "clause_1_scope": "This Indian Standard (IS 10052 (PART 2)) covers Radio Disturbance and Immunity Measuring Apparatus and Methods, Part 2: Methods of Measurement of Disturbances and Immunity. This Indian Standard (Part 2) (First Revision) which is identical with CISPR 16-2 (1996) 'Specification for radio disturbance and immunity measuring apparatus and methods — Part 2 : Methods of measurement of disturbances and immunity' issued by Special Committee on Radio Interference (CISPR), was adopted by the Committee and approval of the Electronics and Telecommunication Division Council. This standard (Part 2) was originally published in 1982 and was largely based on CISPR 1 6 (1 977) Section 2. !S 10052 (Parts 3 to 7) were based on Sections 3 to 7 of CISPR 1 6 (1 977) respectively. This revision is now being published to combine IS 1 0052 (Parts 2 to 7) covering methods of measurement of radio disturbance and immunity in a single standard as IS 1 0052 (Part 2) and also to align it with the latest edition of CISPR 1 6. Consequently. IS 1 0052 (Parts 3 to 7) have been withdrawn. Radio disturbance and immunity measuring apparatus are covered in IS 1 0052 (Part 1 ), In the adopted sta",
   "clause_2_normative_references": [
     {
       "is_number": "IS 1885",
@@ -70,15 +70,24 @@
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Grade ification",
     "Grade II",
     "Grade III",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10052__PART_2_"
+    "Radio Disturbance and Immunity Measuring Apparatus and Methods",
+    "Part 2: Methods of Measurement of Disturbances and Immunity"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

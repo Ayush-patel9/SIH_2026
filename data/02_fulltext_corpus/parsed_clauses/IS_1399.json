@@ -1,0 +1,51 @@
+{
+  "is_number": "IS 1399",
+  "standard_id": "IS 1399:1959",
+  "title": "Glossary of terms used in optical technology",
+  "ia_identifier": "IS_1399",
+  "division_code": "LITD",
+  "aspect": "Terminology",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1,1 This standard gives the definitions of terms used in optical technology, but does not include the more commonly used mechanical engineering terms.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 139",
+      "standard_id": "IS 139:2018",
+      "title": "Ready Mixed Paint, Marking, Quick Drying, For Marking With Rubber Stamps- Specification (Third Revision)",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 60",
+      "standard_id": "IS 60",
+      "title": "Indian Standard Specification / Test Method (IS 60)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade jOj",
+    "Grade chner",
+    "Glossary of terms used in optical technology"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 69632
+}

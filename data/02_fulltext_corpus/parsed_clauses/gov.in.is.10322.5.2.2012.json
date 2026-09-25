@@ -1,13 +1,13 @@
 {
-  "is_number": "IS 10322 (PART 5)",
-  "standard_id": "IS 10322 (Part 5):2013",
-  "title": "Part 5 : Sec 8 : 2013: Luminaires Part 5 Particular Requirements Section 8 Emergency Lighting",
+  "is_number": "IS 10322 (PART 5/SEC 2)",
+  "standard_id": "IS 10322 (PART 5/SEC 2)",
+  "title": "Luminaires - Particular Requirements - Recessed Luminaires",
   "ia_identifier": "gov.in.is.10322.5.2.2012",
-  "division_code": "ETD",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Safety Standard",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Electronics and Information Technology Goods (Requirement for Compulsory Registration) Order"
   },
   "clause_1_scope": "This standard (Part 5/Sec 2) specifies requirements for recessed luminaires for use with tungsten filament, tubular fluorescent, LED, LED modules and other discharge lamps on supply voltage not exceeding 1 000 V. This standard does not cover air-handing luminaires. This standard does not apply to air-handling or liquid-cooled luminaires. It is to be read in conjunction with those Sections of Part 1 to which reference is made.",
   "clause_2_normative_references": [
@@ -15,16 +15,6 @@
       "is_number": "IS 10322",
       "standard_id": "IS 10322",
       "title": "Indian Standard Specification / Test Method (IS 10322)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 10322 (PART 5/SEC 2)",
-      "standard_id": "IS 10322 (PART 5/SEC 2)",
-      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 5/SEC 2))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -139,7 +129,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 9968 (PART 1)",
@@ -163,9 +153,9 @@
     }
   ],
   "clause_3_terminology": [
-    "Part 5 : Sec 8 : 2013: Luminaires Part 5 Particular Requirements Section 8 Emergency Lighting",
-    "IS 10322 (PART 5) Specification",
-    "Conformity Assessment"
+    "Luminaires",
+    "Particular Requirements",
+    "Recessed Luminaires"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

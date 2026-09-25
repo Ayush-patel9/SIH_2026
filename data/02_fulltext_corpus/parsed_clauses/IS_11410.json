@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_11410",
-  "standard_id": "IS IS_11410",
-  "title": "Indian Standard Specification / Test Method (IS IS_11410)",
+  "is_number": "IS 11410",
+  "standard_id": "IS 11410:2006",
+  "title": "Information processing - 9-Track, 12.7 mm (0.5 in) wide magnetic tape for information interchange using phase encoding at 126 ftpmm ( 3 200 ftpi) - 63 cpmm (1 600 cpi)",
   "ia_identifier": "IS_11410",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_11410) covers Indian Standard Specification / Test Method (IS IS_11410). This Indian Standard (First Revision) which is identical with ISO/IEC 3788 : 1990 Information processing — 9-track, 12,7 mm (0,5 in) wide magnetic tape for information interchange using phase encoding at 126 ftpmm (3 200 ftpi) — 63 cpmm (1 600 cpi)' issued by the International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC) jointly was adopted by the and approval of the Electronics and Information Technology Division Council. This standard was originally published in 1 986 and was identical with ISO/IEC 3788 been revised to align it with the latest ISO/IEC Publication. The text of the ISO/IEC Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identicalto those used in the Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. ",
+  "clause_1_scope": "This Indian Standard (IS 11410) covers Information processing - 9-Track, 12.7 mm (0.5 in) wide magnetic tape for information interchange using phase encoding at 126 ftpmm ( 3 200 ftpi) - 63 cpmm (1 600 cpi). This Indian Standard (First Revision) which is identical with ISO/IEC 3788 : 1990 Information processing — 9-track, 12,7 mm (0,5 in) wide magnetic tape for information interchange using phase encoding at 126 ftpmm (3 200 ftpi) — 63 cpmm (1 600 cpi)' issued by the International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC) jointly was adopted by the and approval of the Electronics and Information Technology Division Council. This standard was originally published in 1 986 and was identical with ISO/IEC 3788 been revised to align it with the latest ISO/IEC Publication. The text of the ISO/IEC Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identicalto those used in the Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. ",
   "clause_2_normative_references": [
     {
       "is_number": "IS/IEC 3788",
@@ -80,6 +80,16 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -93,8 +103,8 @@
     "reference edge",
     "in-contact",
     "track",
-    "Indian Standard Specification",
-    "Test Method"
+    "Information processing",
+    "Track"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

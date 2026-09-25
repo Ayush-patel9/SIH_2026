@@ -1,0 +1,54 @@
+{
+  "is_number": "IS 14199",
+  "standard_id": "IS 14199:1995",
+  "title": "Steam Purity - Methods of Sampling and Test",
+  "ia_identifier": "IS_14199",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes the method of sampling and tests for steam purity.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 3025 (PART 35)",
+      "standard_id": "IS 3025 (Part 35):1988",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 35: Silica",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 42)",
+      "standard_id": "IS 3025 (Part 42):1992",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 42: Copper",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Steam Sampling",
+    "Isokinetic Sampling",
+    "Grade nilizers",
+    "Grade rtilizer",
+    "Steam Purity",
+    "Methods of Sampling and Test"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 26161
+}

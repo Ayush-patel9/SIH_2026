@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_10746__PART_2_",
-  "standard_id": "IS IS_10746__PART_2_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10746__PART_2_)",
+  "is_number": "IS 10746 (PART 2)",
+  "standard_id": "IS 10746 (Part 2):1983",
+  "title": "Shell and tube type marine heat exchangers, Part 2 General requirements",
   "ia_identifier": "IS_10746__PART_2_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -179,7 +179,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1990",
@@ -229,7 +229,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 410",
@@ -304,9 +304,8 @@
   ],
   "clause_3_terminology": [
     "Grade LTB-2",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10746__PART_2_"
+    "Shell and tube type marine heat exchangers",
+    "Part 2 General requirements"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

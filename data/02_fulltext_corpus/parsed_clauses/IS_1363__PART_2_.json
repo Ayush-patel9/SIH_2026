@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_1363__PART_2_",
-  "standard_id": "IS IS_1363__PART_2_",
-  "title": "Indian Standard Specification / Test Method (IS IS_1363__PART_2_)",
+  "is_number": "IS 1363 (PART 2)",
+  "standard_id": "IS 1363 (Part 2):2002",
+  "title": "Hexagon Head Bolts, Screws and Nuts of Product Grade 'C', Part 2: Hexagon Head Screws (Size Range M 5 to M 64)",
   "ia_identifier": "IS_1363__PART_2_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
-  "clause_1_scope": "This Indian Standard (IS IS_1363__PART_2_) covers Indian Standard Specification / Test Method (IS IS_1363__PART_2_). This Indian Standard (Part 2) (Fourth Revision) which is identical with ISO 4018 :1999 'Hexagon head screws — Product grade C issued by the International Organization for Standardization (ISO) was adopted by the Accessories Sectional Committee and approval of the Basic and Production Engineering Division Council. IS 1363 was originally published in 1960 and first revised in 1967. Subsequent to the publication of 1967 edition, many changes had been agreed upon at international level which have been reflected in IS 1367 series of standards covering 'Technical supply conditions for threaded steel fasteners'. Accordingly, the second revision was published in 1984 splitting the standard into 3 parts covering hexagon head bolts, hexagon head screws and hexagon nuts. The third revision of this standard was published in 1992 by adoption of ISO 4018 : 1988. This fourth revision has been prepared by adoption of latest edition of ISO 4018 published in 1999. The remaining parts of the standard, th",
+  "clause_1_scope": "This Indian Standard (IS 1363 (PART 2)) covers Hexagon Head Bolts, Screws and Nuts of Product Grade 'C', Part 2: Hexagon Head Screws (Size Range M 5 to M 64). This Indian Standard (Part 2) (Fourth Revision) which is identical with ISO 4018 :1999 'Hexagon head screws — Product grade C issued by the International Organization for Standardization (ISO) was adopted by the Accessories Sectional Committee and approval of the Basic and Production Engineering Division Council. IS 1363 was originally published in 1960 and first revised in 1967. Subsequent to the publication of 1967 edition, many changes had been agreed upon at international level which have been reflected in IS 1367 series of standards covering 'Technical supply conditions for threaded steel fasteners'. Accordingly, the second revision was published in 1984 splitting the standard into 3 parts covering hexagon head bolts, hexagon head screws and hexagon nuts. The third revision of this standard was published in 1992 by adoption of ISO 4018 : 1988. This fourth revision has been prepared by adoption of latest edition of ISO 4018 published in 1999. The remaining parts of the standard, th",
   "clause_2_normative_references": [
     {
       "is_number": "IS/ISO 4018",
@@ -399,7 +399,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Bolts, Nuts and Fasteners (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1367(PART 18)",
@@ -414,9 +414,10 @@
   ],
   "clause_3_terminology": [
     "86 k",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1363__PART_2_"
+    "Hexagon Head Bolts",
+    "Screws and Nuts of Product Grade 'C",
+    "Part 2: Hexagon Head Screws",
+    "Size Range M 5 to M 64"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,0 +1,53 @@
+{
+  "is_number": "IS 13765",
+  "standard_id": "IS 13765:1993",
+  "title": "Pliers and Nippers for Electronics - Single Purpose Pliers - Flat Nose Pliers",
+  "ia_identifier": "IS_13765",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers the dimensions and other requirements for the flat nose pliers for use while working on electronic gadgets.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 9655",
+      "standard_id": "IS/ISO 9655",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9655)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13636",
+      "standard_id": "IS 13636:1993",
+      "title": "Pliers and nippers for electronics - Technical supply conditions",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Pliers and Nippers for Electronics",
+    "Single Purpose Pliers",
+    "Flat Nose Pliers"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "nominal size 125 mm"
+    ],
+    "marking_requirements": [
+      "9.1 The pliers shall be clearly and legibly stamped with the nominal size, its use with electronics,",
+      "trade-mark. The year of manufacture may also"
+    ]
+  },
+  "total_chars_parsed": 6557
+}

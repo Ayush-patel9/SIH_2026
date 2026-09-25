@@ -1,16 +1,26 @@
 {
-  "is_number": "IS IS_11777__PART_13_",
-  "standard_id": "IS IS_11777__PART_13_",
-  "title": "Indian Standard Specification / Test Method (IS IS_11777__PART_13_)",
+  "is_number": "IS 11777 (PART 13)",
+  "standard_id": "IS 11777 (Part 13):1987",
+  "title": "Circular Connectors for Radio and Associated Sound Equipment for Frequencies Below 3 MHz Including DC, Part 13: Fixed Six-Pin Connector for Various Applications, Type 11777 IS-12",
   "ia_identifier": "IS_11777__PART_13_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_11777__PART_13_) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11777__PART_13_).",
+  "clause_1_scope": "This Indian Standard (IS 11777 (PART 13)) prescribes technical specifications, requirements, tolerances, and testing procedures for Circular Connectors for Radio and Associated Sound Equipment for Frequencies Below 3 MHz Including DC, Part 13: Fixed Six-Pin Connector for Various Applications, Type 11777 IS-12.",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS 11777",
       "standard_id": "IS 11777",
@@ -34,9 +44,10 @@
   ],
   "clause_3_terminology": [
     "Grade 130-9",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11777__PART_13_"
+    "Circular Connectors for Radio and Associated Sound Equipment for Frequencies Below 3 MHz Including DC",
+    "Part 13: Fixed Six",
+    "Pin Connector for Various Applications",
+    "Type 11777 IS"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,0 +1,103 @@
+{
+  "is_number": "IS 14202 (PART 2)",
+  "standard_id": "IS 14202 (Part 2):2003",
+  "title": "Identification Cards - Integrated Circuit(s) Cards with Contacts, Part 2: Dimensions and Location of the Contacts",
+  "ia_identifier": "IS_14202__PART_2_",
+  "division_code": "LITD",
+  "aspect": "Dimensions",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of ISO/IEC 7816 specifies the dimensions, locations an assignment for each of the contacts on integrated circuit(s) cards of an ID-1 card type. This part of ISO/IEC 7816 is to be used in conjunction with ISO/IEC 7816-1 .",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/IEC 7816",
+      "standard_id": "IS/IEC 7816",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 7816)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7816",
+      "standard_id": "IS/ISO 7816",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7816)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14202 (PART 1)",
+      "standard_id": "IS 14202 (Part 1):2003",
+      "title": "Identification Cards - Integrated Circuit(s) Cards With Contacts, Part 1: Physical Characteristics",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 781",
+      "standard_id": "IS/IEC 781",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 781)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 10373",
+      "standard_id": "IS/IEC 10373",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 10373)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14202",
+      "standard_id": "IS 14202",
+      "title": "Indian Standard Specification / Test Method (IS 14202)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 7811",
+      "standard_id": "IS/IEC 7811",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 7811)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade bruary",
+    "Identification Cards",
+    "Integrated Circuit",
+    "Cards with Contacts",
+    "Part 2: Dimensions and Location of the Contacts"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 9434
+}

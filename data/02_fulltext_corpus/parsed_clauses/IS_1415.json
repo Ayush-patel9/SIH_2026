@@ -1,0 +1,53 @@
+{
+  "is_number": "IS 1415",
+  "standard_id": "IS 1415:1966",
+  "title": "Electric hand lamps",
+  "ia_identifier": "IS_1415",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the requirements and methods of tests for electric portable hand-lamps for use on supply voltages not exceeding 250 volts single phase ac or dc, and suitable for use with lamps having wattages not exceeding 150 W. 1.1.1 Special types of hand-lamps like flameproof, gastight, watertight or dustproof hand-lamps are excluded from the scope of this standard. 1.1.2 This standard does not also cover portable lampstands and brackets.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 302",
+      "standard_id": "IS 302",
+      "title": "Indian Standard Specification / Test Method (IS 302)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1258",
+      "standard_id": "IS 1258:2005",
+      "title": "Bayonet lamp holders",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Tests",
+    "Grade deration",
+    "Electric hand lamps"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "Leakage current 42.1 a"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 19429
+}

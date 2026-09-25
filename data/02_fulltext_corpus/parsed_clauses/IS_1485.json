@@ -1,0 +1,46 @@
+{
+  "is_number": "IS 1485",
+  "standard_id": "IS 1485:1993",
+  "title": "Macaroni, Spaghetti, Vermicelli and Egg Noodles",
+  "ia_identifier": "IS_1485",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes the requirements and the methods of sampling and test for macaroni, spaghetti, vermicelli and egg noodles.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 460",
+      "standard_id": "IS 460",
+      "title": "Indian Standard Specification / Test Method (IS 460)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Macaroni",
+    "Spaghetti",
+    "Vermicelli and Egg Noodles"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "wall thickness of about 1 mm"
+    ],
+    "marking_requirements": [
+      "The material shall be packed in cardboard",
+      "cartons with a lining of moisture-proof material",
+      "paper bags, sealed to prevent ingress of moisture. Tinplate containers may also be used.",
+      "food product shall be of food grade quality.",
+      "The size of the container is subject to agreement between the purchaser and the supplier."
+    ]
+  },
+  "total_chars_parsed": 33536
+}

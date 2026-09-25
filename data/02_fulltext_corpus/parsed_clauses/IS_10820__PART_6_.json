@@ -1,10 +1,10 @@
 {
-  "is_number": "IS IS_10820__PART_6_",
-  "standard_id": "IS IS_10820__PART_6_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10820__PART_6_)",
+  "is_number": "IS 10820 (PART 6)",
+  "standard_id": "IS 10820 (Part 6):1994",
+  "title": "Methods of measurement for radio equipment used in the mobile services, Part 6: Selective calling and data equipment",
   "ia_identifier": "IS_10820__PART_6_",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Service Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
@@ -72,6 +72,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 10820 (PART2)",
       "standard_id": "IS 10820 (PART2)",
       "title": "Indian Standard Specification / Test Method (IS 10820 (PART2))",
@@ -122,6 +132,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 18",
+      "standard_id": "IS 18:1999",
+      "title": "Information and Documentation - Rules for the Abbreviation of Title Words and Titles of Publications",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 10853",
       "standard_id": "IS 10853",
       "title": "Indian Standard Specification / Test Method (IS 10853)",
@@ -135,9 +155,8 @@
   "clause_3_terminology": [
     "Grade Bl",
     "1 k",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10820__PART_6_"
+    "Methods of measurement for radio equipment used in the mobile services",
+    "Part 6: Selective calling and data equipment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

@@ -1,0 +1,80 @@
+{
+  "is_number": "IS 14365",
+  "standard_id": "IS 14365:1996",
+  "title": "Horology - Gauges for watch bezel and back covers - Dimensions and Tolerances",
+  "ia_identifier": "IS_14365",
+  "division_code": "LITD",
+  "aspect": "Dimensions",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes dimensions and tolerances of gauges used for checking threads on watch bezels and watch back covers.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 1502",
+      "standard_id": "IS/ISO 1502",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1502)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 25",
+      "standard_id": "IS 25:1979",
+      "title": "antifriction bearing alloys",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5388",
+      "standard_id": "IS 5388:1983",
+      "title": "Hexagon Handles for Plain and Threaded Plug Gauges",
+      "division_code": "LITD",
+      "aspect": "Dimensions",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5368",
+      "standard_id": "IS 5368:1969",
+      "title": "Thin Slotted and Castle Nuts (dia range 6 to 52 mm)",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Major",
+    "Grade Pitch",
+    "Grade MiOor",
+    "Horology",
+    "Gauges for watch bezel and back covers",
+    "Dimensions and Tolerances"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "clearance groove may be provulcd. A",
+      "clearance groove may be provided. A"
+    ],
+    "dimensional_tolerances": [
+      "tolerance Tp = 0.005 mm",
+      "tolerance Tp - 0.005 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 22902
+}

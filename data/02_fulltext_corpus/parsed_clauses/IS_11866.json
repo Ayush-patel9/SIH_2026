@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_11866",
-  "standard_id": "IS IS_11866",
-  "title": "Indian Standard Specification / Test Method (IS IS_11866)",
+  "is_number": "IS 11866",
+  "standard_id": "IS 11866:1987",
+  "title": "Alpha, Beta, and Alpha-beta Contamination meters and Monitors",
   "ia_identifier": "IS_11866",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -11,6 +11,16 @@
   },
   "clause_1_scope": "1.1 This standard is applicable to radiation meters and monitors designed to measure or detect surface contamination by alpha and 'or beta radiation emitting nuclides and which comprise at least : - a detection sub-assembly (comprising counter tube, scintillation detector, semiconductor detector, etc.), which may be connected either rigidly or by means of-a flexible cable or incorporated into a single assembly with - a measuring sub-assembly. Radiation meters and monitors are defined in Amendment No. 1 to TEC Publication 181: Index of Electrical Measuring Apparatus Used in Connection with Ionizing Radiation, as follows : Radiation meter An assembly including one or seveial radiation detectors and associated sub-assemblies or basic function units and designed to measure quantities connected with ionizing radiation (activity, exposure rate, etc.). (Radiation) monitor A radiation meter provided with means for giving perceptible warning (generally optical or acoustical) that the quantity connected with ionizing radiation exceeds some adjustable predetermined value or that the measured value is not within some adjustable predetermined limits. 1.2 The standard is applicable in its entirety to: alpha surface contamination meters; - alpha surface contamination monitors: - beta surface contamination meters; - beta surface contamination monitors; as i-iefined below: Alpha (beta, alpha-beta) surface contamination meter An assembly including one or more radiation detectors and associated sub-assemblies or basic function units and designed to measure alpha (beta, alpha-beta) activity per unit surface area associated with the contamination of the surface under examination. Alpha (beta, alpha-beta) surface contamination monitor Alpha (beta, alpha-beta) activity meter provided with means for giving perceptible warning (generally visual or audible) that the indicated activity per unit surface area associated with the contamination of the surface under examination exceeds some adjustable predetermined value or that the measured value is not within some adjustable predetermined limits. ( lEC page 7 ) 18:11866-1987 lEC Pub 325 (1981) 1.3 The standard is also applicable to special-purpose assemblies and to assemblies specifkally designed for a surface of a particular nature (e.g. laundry, floors). However, some of the requirements may need to be amended or supplemented according to the particular requirements applicable to such assemblies. 1.4 If an assembly has been designed ",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS 11",
+      "standard_id": "IS 11",
+      "title": "Indian Standard Specification / Test Method (IS 11)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS 585",
       "standard_id": "IS 585",
@@ -114,7 +124,7 @@
     "Coefficient of variation V",
     "Minimum detectable activity per unit area",
     "Conventionally true value of a quantity",
-    "Grade ification"
+    "Grade of"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

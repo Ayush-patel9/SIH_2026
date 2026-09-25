@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_366",
-  "standard_id": "IS IS_366",
-  "title": "Indian Standard Specification / Test Method (IS IS_366)",
+  "is_number": "IS 366",
+  "standard_id": "IS 366:1991",
+  "title": "Electric irons",
   "ia_identifier": "IS_366",
   "division_code": "GEN",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Electrical Appliances (Quality Control) Order"
   },
-  "clause_1_scope": "Amendment to IS IS_366 (Indian Standard Specification / Test Method (IS IS_366)): AMENDMENT NO. 1 OCTOBER 1993 TO ELECTRIC IRON — SPECIFICATION ( Fourth Revision ) (Page 10, clause 18.1 ) — Replace second sentence by the following: \"Before commencement of the tests the Electric Iron shall be visually examined and inspected for obvious visual defects in respect of components, parts, and their assembly construction, stability, markings, provisions of suitable terminals for supply connection, earthing and the effectiveness of screws and connections.' [ Page 2, clause 12.2 (d) line 2 ] — Substitute 'end'/c/r 'and'. ( Page 6, clause 16.2, para 2, line 3 ) — Substitute 'of 40 mm ",
+  "clause_1_scope": "Amendment to IS 366 (Electric irons): AMENDMENT NO. 1 OCTOBER 1993 TO ELECTRIC IRON — SPECIFICATION ( Fourth Revision ) (Page 10, clause 18.1 ) — Replace second sentence by the following: \"Before commencement of the tests the Electric Iron shall be visually examined and inspected for obvious visual defects in respect of components, parts, and their assembly construction, stability, markings, provisions of suitable terminals for supply connection, earthing and the effectiveness of screws and connections.' [ Page 2, clause 12.2 (d) line 2 ] — Substitute 'end'/c/r 'and'. ( Page 6, clause 16.2, para 2, line 3 ) — Substitute 'of 40 mm ",
   "clause_2_normative_references": [
     {
       "is_number": "IS 36",
@@ -30,17 +30,25 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 16",
+      "standard_id": "IS 16",
+      "title": "Indian Standard Specification / Test Method (IS 16)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Grade rrous",
     "Grade Tests",
     "Grade ification",
-    "Grade iflcatloa",
     "Grade Test",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_366"
+    "Grade iflcatloa",
+    "Electric irons"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

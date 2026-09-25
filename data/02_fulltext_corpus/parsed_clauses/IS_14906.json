@@ -1,0 +1,52 @@
+{
+  "is_number": "IS 14906",
+  "standard_id": "IS 14906:2001",
+  "title": "Air-Conditioning and Ventilation of Wheelhouse on Board Ships - Design Conditions and Basis of Calculations",
+  "ia_identifier": "IS_14906",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies design conditions and suitable methods of calculation for air-conditioning and ventilation of the wheelhouse on board seagoing merchant ships for all conditions except those encountered in extremely cold or hot climates (that is, with a lower or higher enthalpy than that stated in 4.1). 1.2 It applies to a wheelhouse supplied with airconditioning and ventilation either by the general accommodation system or by its own individual system.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 8864",
+      "standard_id": "IS/ISO 8864",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8864)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14754",
+      "standard_id": "IS 14754:2008",
+      "title": "Ships and marine technology - Air-conditioning and ventilation of accommodation spaces - Design conditions and basis of calculations",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Wheelhouse",
+    "Grade bruary",
+    "Conditioning and Ventilation of Wheelhouse on Board Ships",
+    "Design Conditions and Basis of Calculations"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 8864
+}

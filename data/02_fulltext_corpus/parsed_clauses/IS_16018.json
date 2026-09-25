@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_16018",
-  "standard_id": "IS IS_16018",
-  "title": "Indian Standard Specification / Test Method (IS IS_16018)",
+  "is_number": "IS 16018",
+  "standard_id": "IS 16018:2012",
+  "title": "Wheeled Fire Extinguishers — Performance and Construction — Specification",
   "ia_identifier": "IS_16018",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Fire Fighting Equipment (Quality Control) Order"
   },
   "clause_1_scope": "1.1 This standard specifies the principal requirements intended to ensure the safety, reliability and performance of wheeled fire extinguishers. 1.2 It is applicable to wheeled fire extinguishers with a total mass (when fully charged) of greater than 17 kg but not more than 450 kg. NOTE — Fire extinguisher of 450 kg weight shall be without trolley and trailer.",
   "clause_2_normative_references": [
@@ -173,12 +173,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade ification",
     "Grade of",
     "Grade AB",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_16018"
+    "Grade ification",
+    "Wheeled Fire Extinguishers",
+    "Performance and Construction"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

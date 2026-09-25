@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_1660",
-  "standard_id": "IS IS_1660",
-  "title": "Indian Standard Specification / Test Method (IS IS_1660)",
+  "is_number": "IS 1660",
+  "standard_id": "IS 1660:2009",
+  "title": "WROUGHT ALUMINIUM UTENSILS — SPECIFICATION",
   "ia_identifier": "IS_1660",
-  "division_code": "GEN",
+  "division_code": "MTD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Cookware and Utensils (Quality Control) Order, 2024"
   },
   "clause_1_scope": "1.1 This standard prescribes general requirements; quality of material and thickness for some of the more commonly used: a) Wrought aluminium utensils (see Fig. 1 to Fig. 21 and Fig. 25), b) Thick bottom utensils (see Table 2), c) Compartmental trays (see Fig. 22 and Fig. 23), and d) Lunch boxes (see Fig. 24). 1.2 Aluminium utensils shall mean any utensils manufactured from aluminium or its alloys which can be used for cooking, baking, serving or storing of solid/semi-solid/liquid food, water and household provisions.",
   "clause_2_normative_references": [
@@ -58,6 +58,16 @@
       "division_code": "MTD",
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -173,13 +183,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade set",
     "Grade 19000",
+    "Grade set",
     "Grade AC",
     "Grade deration",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1660"
+    "WROUGHT ALUMINIUM UTENSILS"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

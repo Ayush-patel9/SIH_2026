@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_8112",
-  "standard_id": "IS IS_8112",
-  "title": "Indian Standard Specification / Test Method (IS IS_8112)",
+  "is_number": "IS 8112",
+  "standard_id": "IS 8112:2013",
+  "title": "Specification for 43 grade ordinary Portland cement",
   "ia_identifier": "IS_8112",
-  "division_code": "GEN",
+  "division_code": "CED",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard covers the manufacture and chemical and physical requirements of 43 grade ordinary Portland cement.",
   "clause_2_normative_references": [
@@ -264,9 +264,9 @@
   ],
   "clause_3_terminology": [
     "Grade 203",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_8112"
+    "Specification for 43 grade ordinary Portland cement",
+    "IS 8112 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

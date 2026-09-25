@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_11024",
-  "standard_id": "IS IS_11024",
-  "title": "Indian Standard Specification / Test Method (IS IS_11024)",
+  "is_number": "IS 11024",
+  "standard_id": "IS 11024:1984",
+  "title": "Standard Reference Zero for the Calibration of Pure-tone Bone-conduction Audiometers and Guidelines for its Practical Application",
   "ia_identifier": "IS_11024",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Code of Practice",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_11024) covers Indian Standard Specification / Test Method (IS IS_11024). 0.1 This Indian Standard was adopted by the Indian Standards Institution on 30 August 1984, after the draft finalized by the Acoustics Sectional Committee had been approved by the Electronics and Telecommunication Division Council. 0.2 Standard reference zero for the scale of hearing level applicable to pure-tone air-conduction audiometers has been specified in IS : 4755- 1968*. For clinical diagnostic and other audiometric purposes it is often necessary to compare the measured hearing threshold levels of a person for sound transmitted to the internal ear by the air-conduction and boneconduction pathways respectively. Bone-conducied sound is provided for this purpose by an electromechanical vibrator applied to the mastoid process or to the forehead of the test person. 0.3 The standard reference zero for air-conduction audiometry is defined in IS : 4755-1968* in terms of reference equivalent threshold sound pressure levels { RETSPL ), that is threshold sound pressure levels produced in ",
+  "clause_1_scope": "This Indian Standard (IS 11024) covers Standard Reference Zero for the Calibration of Pure-tone Bone-conduction Audiometers and Guidelines for its Practical Application. 0.1 This Indian Standard was adopted by the Indian Standards Institution on 30 August 1984, after the draft finalized by the Acoustics Sectional Committee had been approved by the Electronics and Telecommunication Division Council. 0.2 Standard reference zero for the scale of hearing level applicable to pure-tone air-conduction audiometers has been specified in IS : 4755- 1968*. For clinical diagnostic and other audiometric purposes it is often necessary to compare the measured hearing threshold levels of a person for sound transmitted to the internal ear by the air-conduction and boneconduction pathways respectively. Bone-conducied sound is provided for this purpose by an electromechanical vibrator applied to the mastoid process or to the forehead of the test person. 0.3 The standard reference zero for air-conduction audiometry is defined in IS : 4755-1968* in terms of reference equivalent threshold sound pressure levels { RETSPL ), that is threshold sound pressure levels produced in ",
   "clause_2_normative_references": [
     {
       "is_number": "IS 4755",
@@ -42,6 +42,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 10565",
       "standard_id": "IS 10565:1999",
       "title": "Diagnostic Audiometers",
@@ -64,9 +74,9 @@
   ],
   "clause_3_terminology": [
     "Grade of",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11024"
+    "Standard Reference Zero for the Calibration of Pure",
+    "tone Bone",
+    "conduction Audiometers and Guidelines for its Practical Application"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

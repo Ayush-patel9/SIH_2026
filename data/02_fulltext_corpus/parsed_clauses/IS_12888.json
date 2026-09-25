@@ -1,0 +1,59 @@
+{
+  "is_number": "IS 12888",
+  "standard_id": "IS 12888:1989",
+  "title": "Optical and Mathematical Instruments - Short Range Infrared Distance Measuring Instruments",
+  "ia_identifier": "IS_12888",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the requirements of short range infrared distance measuring instrument used for measuring distances up to 2 km.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 12811",
+      "standard_id": "IS 12811:1989",
+      "title": "Worsted lohis",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10236",
+      "standard_id": "IS 10236",
+      "title": "Indian Standard Specification / Test Method (IS 10236)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Co-axial System",
+    "Collimation Error",
+    "External Attenuator Screen",
+    "Front Panet",
+    "Gallium Arsenide Diode",
+    "Integrated System",
+    "Measuring/Modulating Wave",
+    "Parallel System",
+    "Photodiode",
+    "Power Switcb",
+    "ppm",
+    "Refro-Reflector/Prism"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "9.1 The instrument shall"
+    ]
+  },
+  "total_chars_parsed": 25302
+}

@@ -6,6 +6,11 @@ import logging
 from typing import Dict, Any, List, Optional, Set, Tuple
 from tqdm import tqdm
 
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+
 # Add project root to sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
@@ -61,11 +66,9 @@ class DeepFullTextParser:
             "27001": ("IS/ISO 27001", "Information Security Management Systems")
         }
         
-        # Noise filter for false positive OCR citations
+        # Noise filter for false positive OCR citations (only true non-existent standards)
         self.EXCLUDED_NOISE_STANDARDS = {
-            "IS 0", "IS 1", "IS 2", "IS 3", "IS 4", "IS 5", "IS 6", "IS 7", "IS 8", "IS 9", "IS 10",
-            "IS 11", "IS 12", "IS 13", "IS 14", "IS 15", "IS 16", "IS 17", "IS 18", "IS 19", "IS 20",
-            "IS 105", "IS 106", "IS 107", "IS 108", "IS 109"
+            "IS 0", "IS 00", "IS 000"
         }
         
         logger.info(f"Loaded master index with {len(self.standards_by_num)} standard lookup keys.")
@@ -231,9 +234,10 @@ class DeepFullTextParser:
         if m4 and len(m4.group(1).strip()) > 50:
             return re.sub(r"\s+", " ", m4.group(1)).strip()[:2500]
 
-        # Pattern 5: Substantive sentence starting with 'This standard covers/specifies/prescribes'
-        matches5 = list(re.finditer(r"(This\s+(?:Indian\s+)?(?:standard|code\s+of\s+practice|specification)\s+(?:covers|deals\s+with|specifies|prescribes|lays\s+down)\s+(?:the\s+)?(?:requirements|essential\s+requirements|guidance|tests|methods|sampling).*?\.)", text, re.DOTALL | re.IGNORECASE))
-        for m5 in reversed(matches5):
+        # Pattern 5: Substantive sentence starting with 'This standard/Part covers/specifies/prescribes' from top of document
+        head_text = text[:8000]
+        matches5 = list(re.finditer(r"(This\s+(?:part\s+of\s+(?:ISO|IEC|IS)\s+\d+|Indian\s+Standard|standard|code\s+of\s+practice|specification|Part)\s+(?:covers|deals\s+with|specifies|prescribes|lays\s+down|applies)\s+.*?\.)", head_text, re.DOTALL | re.IGNORECASE))
+        for m5 in matches5:
             cand = re.sub(r"\s+", " ", m5.group(1)).strip()
             if len(cand) > 60:
                 return cand[:2500]
@@ -579,14 +583,27 @@ class DeepFullTextParser:
             ident = fname.replace(".txt", "")
             cleaned_text = self.clean_ocr_text(raw_text)
             
-            # Resolve standard ID
-            raw_is_candidate = ident.replace("gov.in.is.", "")
-            parts = raw_is_candidate.split(".")
-            base_is = f"IS {parts[0]}"
-            if len(parts) >= 3 and parts[1].isdigit() and len(parts[1]) <= 2:
-                base_is = f"IS {parts[0]} (Part {parts[1]})"
-            elif parts[0].lower() == "sp" and len(parts) >= 2:
-                base_is = f"SP {parts[1]}"
+            # Resolve standard ID from filename
+            if ident.startswith("gov.in.is."):
+                raw_is_candidate = ident.replace("gov.in.is.", "")
+                parts = raw_is_candidate.split(".")
+                base_is = f"IS {parts[0]}"
+                if len(parts) >= 4 and parts[1].isdigit() and parts[2].isdigit():
+                    base_is = f"IS {parts[0]} (Part {parts[1]}/Sec {parts[2]})"
+                elif len(parts) >= 3 and parts[1].isdigit() and len(parts[1]) <= 2:
+                    base_is = f"IS {parts[0]} (Part {parts[1]})"
+                elif parts[0].lower() == "sp" and len(parts) >= 2:
+                    base_is = f"SP {parts[1]}"
+            elif ident.startswith("IS_"):
+                s = ident
+                s = re.sub(r"__PART_(\d+)__?", r" (PART \1)", s, flags=re.IGNORECASE)
+                s = re.sub(r"__PART_(\d+)_\.?", r" (PART \1)", s, flags=re.IGNORECASE)
+                s = re.sub(r"__SEC_(\d+)__?", r"/SEC \1", s, flags=re.IGNORECASE)
+                s = s.replace("_", " ").strip()
+                s = re.sub(r"\s+", " ", s)
+                base_is = s
+            else:
+                base_is = f"IS {ident}"
                 
             # Get canonical master metadata
             master_meta = self.resolve_standard_metadata(base_is)

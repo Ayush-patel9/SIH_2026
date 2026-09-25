@@ -1,0 +1,160 @@
+{
+  "is_number": "IS 14536",
+  "standard_id": "IS 14536:2018",
+  "title": "Selection, Installation, Operation and Maintenance of Submersible Pumpset — Code of Practice ( First Revision )",
+  "ia_identifier": "IS_14536",
+  "division_code": "LITD",
+  "aspect": "Code of Practice",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard lays down the general guidelines for selection, installation, operation and maintenance of borewell submersible pumpsets and openwell submersible pumpsets covered in ‘Submersible pumpsets — Specification’ and ‘Openwell submersible pumpsets’ respectively.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 14220",
+      "standard_id": "IS 14220:2018",
+      "title": "Openwell Submersible Pumpsets — Specification ( First Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9283",
+      "standard_id": "IS 9283:2013",
+      "title": "Motors for Submersible Pumpsets",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 8034",
+      "standard_id": "IS 8034:2018",
+      "title": "Submersible Pumpsets — Specification ( Third Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 732 (PART 2)",
+      "standard_id": "IS 732 (PART 2)",
+      "title": "Code of Practice for Electrical Wiring Installations ( Fourth Revision ) (IS 732 (PART 2))",
+      "division_code": "ETD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3043",
+      "standard_id": "IS 3043:2018",
+      "title": "Code of Practice for Earthing ( Second Revision )",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 694",
+      "standard_id": "IS 694:2010",
+      "title": "POLYVINYL CHLORIDE INSULATED UNSHEATHED AND SHEATHED CABLES/CORDS WITH RIGID AND FLEXIBLE CONDUCTOR FOR RATED VOLTAGES UP TO AND INCLUDING 450/750 V",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 10804",
+      "standard_id": "IS 10804:1994",
+      "title": "Recommended pumping system for agricultural purposes",
+      "division_code": "FAD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 240",
+      "standard_id": "IS 240",
+      "title": "Indian Standard Specification / Test Method (IS 240)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 415",
+      "standard_id": "IS 415:2022",
+      "title": "Shuttlecocks-Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10118",
+      "standard_id": "IS 10118",
+      "title": "Indian Standard Specification / Test Method (IS 10118)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 900",
+      "standard_id": "IS 900:2019",
+      "title": "Code of Practice for Storage, Installation and Maintenance of Induction Motors ( Third Revision )",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 732",
+      "standard_id": "IS 732:2019",
+      "title": "Code of Practice for Electrical Wiring Installations ( Fourth Revision )",
+      "division_code": "ETD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Types of Submersible Motors",
+    "Types of Single Phase Submersible Motors",
+    "Method of Starting for Three Phase",
+    "Circuit Breaker",
+    "Isolator (Disconnector",
+    "Under Voltage Release",
+    "Over Voltage Release",
+    "Over-Current Release Medium Voltage",
+    "Medium Voltage",
+    "Voltage Drop",
+    "Types of Pump",
+    "Diffuser"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 53004
+}

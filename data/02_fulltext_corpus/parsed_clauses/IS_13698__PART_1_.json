@@ -1,0 +1,70 @@
+{
+  "is_number": "IS 13698 (PART 1)",
+  "standard_id": "IS 13698 (Part 1):1993",
+  "title": "Freight container - Information related to containers on board vessels, Part 1: Bay plan system",
+  "ia_identifier": "IS_13698__PART_1_",
+  "division_code": "LITD",
+  "aspect": "System Standard",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of ISO 9711 specifies a method for identifying the locations in which containers may be carried on board a container ship. By setting up this uniform identification method, it is then possible to transmit information about the space assignments given to the specific containers being carried. Further, by knowing the physical design characteristics of the vessel, and the physical data about the containers and the cargo loaded in each container, calculations can be made about the stability and trim of the ship before setting out to sea. Also, knowing what containers are on board and where they are destined, it is possible to notify cargo agents in advance of the ship's arrival in order that they may plan to pick up and deliver *their containers promptly. It is applicable to all standard freight containers covered by International Standards and should, wherever appropriate and practicable, be applied to those containers not covered by International Standards. It applies only to vessels stowing containers longitudinally.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13698",
+      "standard_id": "IS 13698",
+      "title": "Indian Standard Specification / Test Method (IS 13698)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9711",
+      "standard_id": "IS/ISO 9711",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9711)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6346",
+      "standard_id": "IS/ISO 6346",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6346)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13",
+      "standard_id": "IS 13",
+      "title": "Indian Standard Specification / Test Method (IS 13)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Freight container",
+    "Information related to containers on board vessels",
+    "Part 1: Bay plan system"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "shall be marked with odd numbers."
+    ]
+  },
+  "total_chars_parsed": 10611
+}

@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_11405__PART_1_",
-  "standard_id": "IS IS_11405__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_11405__PART_1_)",
+  "is_number": "IS 11405 (PART 1)",
+  "standard_id": "IS 11405 (Part 1):1986",
+  "title": "Data Interchange on 130 mm, Double Sided, 1.9 tpmm, Flexible Disk Cartridges Using Modified Frequency Modulation Recording, Part 1: Physical and Magnetic Characteristics",
   "ia_identifier": "IS_11405__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_11405__PART_1_) covers Indian Standard Specification / Test Method (IS IS_11405__PART_1_). This Indian Standard (Part 1) which is identical with ISO 7487/1-1985 'Information processing— Data interchange on 130 mm (5,25 in) flexible disk cartridges using modified frequency modulation recording at 7 958 ftprad, 1,9 tpmm (48 tpi) on both sides— Part 1 : Dimensional, physical and magnetic characteristics/ issued by the International Organization for Standardization (ISO), was adopted by the Indian Standards Institution on the recommendation of the Computers, Business Machines and Calculators Sectional Committee and approved by the Electronics and Telecommunication Division Council. In the adopted standard certain terminology and conventions are not identical with those used in Indian Standards; attention is specially drawn to the following: a) Comma (,) has been used as a decimal marker while in Indian Standards the current practice is to use a point (.) as the decimal marker. b) Wherever the words 'International Standard' appear.referring to this standard, they should be read a",
+  "clause_1_scope": "This part of ISO 7487 specifies the dimensional, physical and magnetic characteristics of the cartridge so as to provide physical interchangeabillty between data processing systems.",
   "clause_2_normative_references": [
     {
       "is_number": "IS/ISO 7487",
@@ -125,9 +125,11 @@
   "clause_3_terminology": [
     "Grade 203",
     "6 K",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11405__PART_1_"
+    "Data Interchange on 130 mm",
+    "Double Sided",
+    "1.9 tpmm",
+    "Flexible Disk Cartridges Using Modified Frequency Modulation Recording",
+    "Part 1: Physical and Magnetic Characteristics"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

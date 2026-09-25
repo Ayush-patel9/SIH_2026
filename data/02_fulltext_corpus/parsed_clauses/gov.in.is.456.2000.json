@@ -99,7 +99,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 12269",
@@ -109,7 +109,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 8041",
@@ -119,7 +119,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 455",
@@ -129,7 +129,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1489 (PART 1)",
@@ -139,7 +139,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1489 (PART 2)",
@@ -149,7 +149,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 8043",
@@ -319,7 +319,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1566",
@@ -339,7 +339,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 4082",
@@ -763,14 +763,14 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade of",
-    "Grade MIS",
-    "Grade Fc",
-    "Grade M15",
     "Grade Fe",
-    "Grade 11",
-    "Grade ification",
+    "Grade Fc",
+    "Grade ordinary",
     "Grade in",
+    "Grade ification",
+    "Grade of",
+    "Grade M15",
+    "Grade 11",
     "5 K",
     "Plain and Reinforced Concrete",
     "Code of Practice"

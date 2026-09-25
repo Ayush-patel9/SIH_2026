@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_1180__PART_1_",
-  "standard_id": "IS IS_1180__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_1180__PART_1_)",
+  "is_number": "IS 1180 (PART 1)",
+  "standard_id": "IS 1180 (Part 1):2014",
+  "title": "Part 1 : 2014: Outdoor Type Oil Immersed Distribution Transformers Upto and Including 2 500 kVA, 33kV - Specification Part 1 Mineral Oil Immersed (Fourth Revision)",
   "ia_identifier": "IS_1180__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard specifies the requirements and tests including standard loss levels of natural/synthetic organic ester liquid immersed, natural air-cooled, outdoor/indoor type, double-wound distribution transformers for use in power distribution systems with nominal system voltages up to and including 33 kV and of following types and ratings: a) Three phase ratings up to and including 200 kVA both non-sealed and sealed type; b) Three phase ratings higher than 200 kVA, up to and including 2 500 kVA both non-sealed type and sealed type; and c) Single phase ratings up to and including 100 kVA sealed type. This standard permits use of natural esters as well as synthetic organic esters in both non-sealed and sealed type of transformers. However, in case of non-sealed type transformers immersed in natural ester, suitable liquid preservation system such as airbags shall be used in the conservator to prevent direct contact of natural ester with the atmosphere. NOTES 1 The following types of transformers are not covered under the scope of this standard: a) Inverter duty transformers; b) Traction transformers; c) Instrument transformers; d) Transformers for static converters; €) Starting transformers; f) Testing transformers; g) Welding transformers; h) Earthing transformers; j Mining transformers; k) Transformers for solar, wind power application; m) Transformers applications); for railways (locomotive and other n) Furnace transformers; p) Rectifier transformers; q) Dual ratio in primary/secondary windings transformers; and r) Transformers for Static VAR compensator.",
   "clause_2_normative_references": [
@@ -407,13 +407,14 @@
     "Non-Sealed Type Transformer",
     "Sealed Type Transformer",
     "Pad Mounted Transformer",
-    "Grade of",
-    "Grade Parts",
     "Grade Liquid",
     "Grade Insulating",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1180__PART_1_"
+    "Grade Tests",
+    "Grade Parts",
+    "Part 1 : 2014: Outdoor Type Oil Immersed Distribution Transformers Upto and Including 2 500 kVA",
+    "33kV",
+    "Specification Part 1 Mineral Oil Immersed",
+    "Fourth Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

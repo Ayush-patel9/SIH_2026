@@ -1,10 +1,10 @@
 {
-  "is_number": "IS IS_10553__PART_1_",
-  "standard_id": "IS IS_10553__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10553__PART_1_)",
+  "is_number": "IS 10553 (PART 1)",
+  "standard_id": "IS 10553 (Part 1):1983",
+  "title": "Requirements for chlorination equipment, Part I: General guidelines for chlorination plants including handling, storage and safety of chlorine cylinders and drums",
   "ia_identifier": "IS_10553__PART_1_",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Code of Practice",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
@@ -38,6 +38,16 @@
       "division_code": "MHD",
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -129,7 +139,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 10124 (PART 8)",
@@ -165,9 +175,9 @@
   "clause_3_terminology": [
     "Grade eder",
     "Grade ed",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10553__PART_1_"
+    "Requirements for chlorination equipment",
+    "Part I: General guidelines for chlorination plants including handling",
+    "storage and safety of chlorine cylinders and drums"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

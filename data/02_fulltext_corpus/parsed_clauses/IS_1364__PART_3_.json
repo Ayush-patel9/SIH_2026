@@ -1,30 +1,20 @@
 {
-  "is_number": "IS IS_1364__PART_3_",
-  "standard_id": "IS IS_1364__PART_3_",
-  "title": "Indian Standard Specification / Test Method (IS IS_1364__PART_3_)",
+  "is_number": "IS 1364 (PART 3)",
+  "standard_id": "IS 1364 (Part 3):2002",
+  "title": "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B, Part 3: Hexagon Nuts, Style 1 (Size Range M 1.6 to M 64)",
   "ia_identifier": "IS_1364__PART_3_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
-  "clause_1_scope": "This Indian Standard (IS IS_1364__PART_3_) covers Indian Standard Specification / Test Method (IS IS_1364__PART_3_). This Indian Standard ( Part 4 ) ( Fourth Revision ) which is identical with ISO 4035 : 1999 'Hexagon thin nuts ( chamfered ) — Product grades A and B' issued by the International Organization for Standardization ( ISO ) was adopted by the the Bolts, Nuts and Fasteners Accessories Sectional Committee and approval of the Basic and Production Engineering Division Council. IS 1364 was originally published in 1960 and first revised in 1967. Subsequent to the publication of 1967 edition, many changes had been agreed upon at international level which have been reflected in IS 1367 series of standards covering 'Technical supply conditions for threaded steel fasterrers'. Accordingly, second revision was published in 1983 splitting the standard into 5 parts covering hexagon head bolts, hexagon head screws, hexagon nuts, hexagon thin nuts ( chamfered ) and hexagon thin nuts ( unchamfered ), The third revision of this standard was published in 1992 by adoption of ISO 4035 : 1988. This fourth revis",
+  "clause_1_scope": "This Indian Standard (IS 1364 (PART 3)) covers Hexagon Head Bolts, Screws and Nuts of Product Grades A and B, Part 3: Hexagon Nuts, Style 1 (Size Range M 1.6 to M 64). This Indian Standard ( Part 3 ) ( Fourth Revision ) which is identical with ISO 4032 : 1999 'Hexagon nuts, style 1 — Product grades A and B' issued by the International Organization for Standardization ( ISO ) was adopted by the Fasteners Accessories Sectional Committee and approval of the Basic and Production Engineering Division Council. IS 1364 was originally published in 1960 and first revised in 1967. Subsequent to the publication of 1967 edition, many changes had been agreed upon at international level which have been reflected in IS 1367 series of standards covering Technical supply conditions for threaded steel fasteners'. Accordingly, second revision was published in 1983 splitting the standard into 5 parts covering hexagon head bolts, hexagon head screws, hexagon nuts, hexagon thin nuts ( chamfered ) and hexagon thin nuts ( unchamfered ). The third revision of this standard was published in 1992 by adoption of ISO 4017 : 1988. This fourth revision has been made by adoption of",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1364 (PART 4)",
-      "standard_id": "IS 1364 (Part 4):2003",
-      "title": "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B, Part 4: Hexagon Thin Nuts (Chamfered) (Size Range M1.6 to M64)",
-      "division_code": "LITD",
-      "aspect": "Product Specification",
-      "relation_type": "PRODUCT_SPECIFICATION",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS/ISO 4035",
-      "standard_id": "IS/ISO 4035",
-      "title": "Indian Standard Specification / Test Method (IS/ISO 4035)",
+      "is_number": "IS 1364",
+      "standard_id": "IS 1364",
+      "title": "Indian Standard Specification / Test Method (IS 1364)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -32,9 +22,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 1364",
-      "standard_id": "IS 1364",
-      "title": "Indian Standard Specification / Test Method (IS 1364)",
+      "is_number": "IS/ISO 4032",
+      "standard_id": "IS/ISO 4032",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4032)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -52,12 +42,32 @@
       "qco_order": null
     },
     {
+      "is_number": "IS/ISO 4017",
+      "standard_id": "IS/ISO 4017",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4017)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS/ISO 4033",
       "standard_id": "IS/ISO 4033",
       "title": "Indian Standard Specification / Test Method (IS/ISO 4033)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 17",
+      "standard_id": "IS 17:1973",
+      "title": "Bleached Lac",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -115,16 +125,6 @@
       "is_number": "IS/ISO 3506",
       "standard_id": "IS/ISO 3506",
       "title": "Indian Standard Specification / Test Method (IS/ISO 3506)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS/ISO 4042",
-      "standard_id": "IS/ISO 4042",
-      "title": "Indian Standard Specification / Test Method (IS/ISO 4042)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -192,16 +192,6 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 1367 (PART 14/SEC2)",
-      "standard_id": "IS 1367 (PART 14/SEC2)",
-      "title": "Indian Standard Specification / Test Method (IS 1367 (PART 14/SEC2))",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS/ISO 8839",
       "standard_id": "IS/ISO 8839",
       "title": "Indian Standard Specification / Test Method (IS/ISO 8839)",
@@ -222,9 +212,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS/ISO 61",
-      "standard_id": "IS/ISO 61",
-      "title": "Indian Standard Specification / Test Method (IS/ISO 61)",
+      "is_number": "IS/ISO 4042",
+      "standard_id": "IS/ISO 4042",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4042)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -232,11 +222,11 @@
       "qco_order": null
     },
     {
-      "is_number": "IS/ISO 16083",
-      "standard_id": "IS/ISO 16083",
-      "title": "Indian Standard Specification / Test Method (IS/ISO 16083)",
+      "is_number": "IS/ISO 61",
+      "standard_id": "IS/ISO 61",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 61)",
       "division_code": "GEN",
-      "aspect": "Methods of tests",
+      "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
@@ -272,9 +262,29 @@
       "qco_order": null
     },
     {
-      "is_number": "IS/ISO 4032",
-      "standard_id": "IS/ISO 4032",
-      "title": "Indian Standard Specification / Test Method (IS/ISO 4032)",
+      "is_number": "IS/ISO 4018",
+      "standard_id": "IS/ISO 4018",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4018)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4034",
+      "standard_id": "IS/ISO 4034",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4034)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4035",
+      "standard_id": "IS/ISO 4035",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4035)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -285,16 +295,6 @@
       "is_number": "IS/ISO 4036",
       "standard_id": "IS/ISO 4036",
       "title": "Indian Standard Specification / Test Method (IS/ISO 4036)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS/ISO 4161",
-      "standard_id": "IS/ISO 4161",
-      "title": "Indian Standard Specification / Test Method (IS/ISO 4161)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -322,9 +322,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS/ISO 7411",
-      "standard_id": "IS/ISO 7411",
-      "title": "Indian Standard Specification / Test Method (IS/ISO 7411)",
+      "is_number": "IS/ISO 741",
+      "standard_id": "IS/ISO 741",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 741)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -453,9 +453,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1364__PART_3_"
+    "Hexagon Head Bolts",
+    "Screws and Nuts of Product Grades A and B",
+    "Part 3: Hexagon Nuts",
+    "Style 1",
+    "Size Range M 1.6 to M 64"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
@@ -464,8 +466,8 @@
     "dimensional_tolerances": [],
     "marking_requirements": [
       "value, observed or calculated, expressing the result of a test or analysis, shall be rounded off in",
-      "OF PRODUCT GRADES A AND B"
+      "PRODUCT GRADES A AND B"
     ]
   },
-  "total_chars_parsed": 18841
+  "total_chars_parsed": 20740
 }

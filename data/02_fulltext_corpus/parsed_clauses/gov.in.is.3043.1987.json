@@ -72,12 +72,32 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 16",
+      "standard_id": "IS 16",
+      "title": "Indian Standard Specification / Test Method (IS 16)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 500",
       "standard_id": "IS 500:1999",
       "title": "Potassium metabisulphite, photographic grade",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -143,12 +163,12 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade of",
-    "Grade deration",
     "Grade 25",
-    "Grade III",
     "Grade ification",
+    "Grade of",
     "Grade II",
+    "Grade deration",
+    "Grade III",
     "17 k",
     "19 k",
     "50 k",

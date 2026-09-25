@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_10431",
-  "standard_id": "IS IS_10431",
-  "title": "Indian Standard Specification / Test Method (IS IS_10431)",
+  "is_number": "IS 10431",
+  "standard_id": "IS 10431:1994",
+  "title": "Measurement of air flow of compressors and exhausters by nozzles",
   "ia_identifier": "IS_10431",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Methods of tests",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_10431) covers Indian Standard Specification / Test Method (IS IS_10431). This Indian Standard ( First Revision ) was adopted by the finalized by the Compressors, Blowers and Exhausters Sectional Committee had been approved bv the Heavy Mechanical Engineering Division Council. The accurate measurement of the air flow of the compressors and exhausters form the basis for the rating and specific power consumption of the air compressor which in turn are the deciding factors for the selection of a particular ait compressor unit. This Indian Standard was first published in 1982 and had superseded IS 5538 ( Part 1 ) : 1969 'Measurement of air flow of compressors and exhausters : Part 1 Nozzles'. The standard flow nozzles included in this standard were the ISA 1932 nozzles conforming to the general recommendations, made in ISO/R 541 : 1967 *Measurement of safety flow by means of orifice plates and nozzles' issued by the International Organization for Standardization ( ISO). IS 5538 (Part 2 ) : 1969 'Measurement of the air flow compressors and exhausters : Part 2 Ori",
+  "clause_1_scope": "This standard deals with measurement of air flow by using standard flow nozzle in order to obtain consistent and generally acceptable results, within a specified tolerance.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 5538",
@@ -40,18 +40,26 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade rrel",
     "Grade rreFs",
+    "Grade rrel",
     "15 K",
     "4 K",
     "2 K",
     "3 K",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10431"
+    "Measurement of air flow of compressors and exhausters by nozzles"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

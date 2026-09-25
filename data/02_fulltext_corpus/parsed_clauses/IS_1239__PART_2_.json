@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_1239__PART_2_",
-  "standard_id": "IS IS_1239__PART_2_",
-  "title": "Indian Standard Specification / Test Method (IS IS_1239__PART_2_)",
+  "is_number": "IS 1239 (PART 2)",
+  "standard_id": "IS 1239 (Part 2):2011",
+  "title": "Steel Tubes, Tubulars and Other Steel Fittings, Part 2: Steel Pipe Fittings",
   "ia_identifier": "IS_1239__PART_2_",
-  "division_code": "GEN",
+  "division_code": "CED",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard (Part 2) covers the requirements for butt welded and seamless, plain ended, screwed sockets, steel tubulars and other welded and seamless steel pipe fittings intended for use for water, non-hazardous gas, air and steam. The requirements of pipe nuts are covered in IS 3468.",
   "clause_2_normative_references": [
@@ -69,7 +69,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 554",
@@ -187,12 +187,12 @@
     "Socket",
     "Tube (Pipe",
     "Tubular",
-    "Grade lA",
     "Grade of",
     "Grade male",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1239__PART_2_"
+    "Grade lA",
+    "Steel Tubes",
+    "Tubulars and Other Steel Fittings",
+    "Part 2: Steel Pipe Fittings"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

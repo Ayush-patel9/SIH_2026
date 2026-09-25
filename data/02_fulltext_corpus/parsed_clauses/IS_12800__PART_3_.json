@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_12800__PART_3_",
-  "standard_id": "IS IS_12800__PART_3_",
-  "title": "Indian Standard Specification / Test Method (IS IS_12800__PART_3_)",
+  "is_number": "IS 12800 (PART 3)",
+  "standard_id": "IS 12800 (Part 3):1991",
+  "title": "Guidelines for Selection of Hydraulic Turbine, Preliminary Dimensioning and Layout of Surface Hydroelectric Power Houses, Part 3: Small, Mini and Micro Hydroelectric Power Houses",
   "ia_identifier": "IS_12800__PART_3_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Code of Practice",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -60,14 +60,25 @@
       "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Specific Speed ( Wg",
     "Grade of",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12800__PART_3_"
+    "Guidelines for Selection of Hydraulic Turbine",
+    "Preliminary Dimensioning and Layout of Surface Hydroelectric Power Houses",
+    "Part 3: Small",
+    "Mini and Micro Hydroelectric Power Houses"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

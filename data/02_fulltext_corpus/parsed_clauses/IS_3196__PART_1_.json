@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_3196__PART_1_",
-  "standard_id": "IS IS_3196__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_3196__PART_1_)",
+  "is_number": "IS 3196 (PART 1)",
+  "standard_id": "IS 3196 (Part 1):2013",
+  "title": "Part 1 : 2013: Welded Low Carbon Steel Cylinders Exceeding 5 Litre Water Capacity for Low Pressure Liquefiable Gases - Part 1 : Cylinders for liquefied Petroleum Gases (LPG)",
   "ia_identifier": "IS_3196__PART_1_",
-  "division_code": "GEN",
+  "division_code": "MTD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard (Part 1) deals with welded low carbon steel cylinders intended for storage and transportation of liquefied petroleum gases (see 1S 4576) of nominal capacity exceeding 5 l up to and including 2501 water capacity. This standard lays down the minimum requirements for the materials, design, manufacture, construction, tests and marking on these cylinders.",
   "clause_2_normative_references": [
@@ -99,7 +99,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 2062",
@@ -109,7 +109,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 8867",
@@ -129,7 +129,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 7307 (PART 1)",
@@ -350,9 +350,8 @@
     "Batch",
     "Grade 1A",
     "5 K",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_3196__PART_1_"
+    "Part 1 : 2013: Welded Low Carbon Steel Cylinders Exceeding 5 Litre Water Capacity for Low Pressure Liquefiable Gases",
+    "Part 1 : Cylinders for liquefied Petroleum Gases"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

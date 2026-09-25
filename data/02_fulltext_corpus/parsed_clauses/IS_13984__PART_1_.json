@@ -1,0 +1,91 @@
+{
+  "is_number": "IS 13984 (PART 1)",
+  "standard_id": "IS 13984 (Part 1):1995",
+  "title": "Link and Test Connectors, Part 1: Test Schedule and Requirements",
+  "ia_identifier": "IS_13984__PART_1_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard specifies test schedule and requirements for following two series of link and test connectors; a) A series of the conventional wiring type, b) A series to be directly soldered on a printed board with a nominal thickness up to 1-6 mm (0*063 inches) according to IS 7405 ( Part 1 ) : 1983, and c) U-Link plugs and cord plug. NOTE — The terminations may be reduced of bent over after assembly to comply with .",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13984",
+      "standard_id": "IS 13984",
+      "title": "Indian Standard Specification / Test Method (IS 13984)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9647",
+      "standard_id": "IS 9647:1986",
+      "title": "General Requirements and Methods of Tests for Low Frequency Connectors Below 3 MHz Including DC",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7405",
+      "standard_id": "IS 7405",
+      "title": "Indian Standard Specification / Test Method (IS 7405)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 121",
+      "standard_id": "IS 121",
+      "title": "Indian Standard Specification / Test Method (IS 121)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Tests",
+    "Grade ification",
+    "Grade of",
+    "Grade SlNoFor",
+    "Grade SI",
+    "Grade N2",
+    "Link and Test Connectors",
+    "Part 1: Test Schedule and Requirements"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "Rated voltage : 250 V"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "11.1 Each piece of connector shall be legibly",
+      "and indelibly marked with the following:",
+      "b) Manufacturer's name or tradc-mark,",
+      "c) Identification on contacts as indicated",
+      "d) Any other mark as agreed to between the"
+    ]
+  },
+  "total_chars_parsed": 24353
+}

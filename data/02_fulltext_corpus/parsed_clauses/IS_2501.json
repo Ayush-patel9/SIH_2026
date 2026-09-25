@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_2501",
-  "standard_id": "IS IS_2501",
-  "title": "Indian Standard Specification / Test Method (IS IS_2501)",
+  "is_number": "IS 2501",
+  "standard_id": "IS 2501:1995",
+  "title": "Solid Drawn Copper Tubes for General Engineering Purposes",
   "ia_identifier": "IS_2501",
-  "division_code": "GEN",
+  "division_code": "MTD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard covers the requirements of solid drawn ( seamless ) copper tubes for general engineering purposes.",
   "clause_2_normative_references": [
@@ -34,9 +34,7 @@
   ],
   "clause_3_terminology": [
     "In addition to above following definitions",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_2501"
+    "Solid Drawn Copper Tubes for General Engineering Purposes"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_1293",
-  "standard_id": "IS IS_1293",
-  "title": "Indian Standard Specification / Test Method (IS IS_1293)",
+  "is_number": "IS 1293",
+  "standard_id": "IS 1293:2005",
+  "title": "Plugs and socket- outlets of rated voltage up to and including 250 volts and rated current up to 16 amperes",
   "ia_identifier": "IS_1293",
-  "division_code": "GEN",
+  "division_code": "ETD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard covers the requirements and test methods for plugs and fixed or portable socket-outlets for ac and with and without earthing contact with a rated voltage above 50 V, but not exceeding 250 V and a rated current not exceeding 16A intended for household and similar purposes for indoors and outdoors.",
   "clause_2_normative_references": [
@@ -59,7 +59,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 9968 (PART 1)",
@@ -98,6 +98,16 @@
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     },

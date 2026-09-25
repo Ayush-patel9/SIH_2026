@@ -1,0 +1,53 @@
+{
+  "is_number": "IS 14254 (PART 1)",
+  "standard_id": "IS 14254 (Part 1):2006",
+  "title": "Programmable controller, Part 1: General information",
+  "ia_identifier": "IS_14254__PART_1_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Part of lEC 61131 applies to programmable controllers (PLC) and their associated peripherals such as programming and debugging tools (PADTs), human-machine interfaces (HMIs). etc., which have as their intended use the control and command of machines and industrial processes. PLCs and their associated peripherals are intended to be used in an industrial environment and nrtay be provided as open or enclosed equipment. If a PLC or its associated peripherals are intended for use in other environments, then the specific requirements, standards and installation practices for those other environments must be additionally applied to the PLC and its associated peripherals. The functionality of a programmable controller can be performed as v»^eli on a specific hardware and software platform as on a general-purpose computer or a personal computer with industrial environment features. This standard applies to any products performing the function of PLCs and/or their associated peripherals. This standard does not deal with the functional safety or other aspects of the overall automated system. PLCs, their application programme and their associated peripherals are considered as components of a control system. Since PLCs are component devices, safety considerations for the overall automated system including installation and application are beyond the scope of this Part. However, PLC safety as related to electric shock and fire hazards, electrical interference immunity and error detecting of the PLC-system operation (such as the use of parity checking, self-testing diagnostics, etc.), are addressed. Refer to lEC 60364 or applicable national/local regulations for electrical installation and guidelines. This Part of lEC 61131 gives the definitions of terms used in this standard. It identifies the principal functional characteristics of programmable controller systems.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 14254 (PART 2)",
+      "standard_id": "IS 14254 (Part 2):2006",
+      "title": "Programmable controllers, Part 2: Eqipment requirements and tests",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14254",
+      "standard_id": "IS 14254",
+      "title": "Indian Standard Specification / Test Method (IS 14254)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Programmable controller",
+    "Part 1: General information",
+    "Programmable controller, Part 1: General information",
+    "IS 14254 (PART 1) Specification",
+    "Conformity Assessment"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 32644
+}

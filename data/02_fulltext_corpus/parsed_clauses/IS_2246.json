@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_2246",
-  "standard_id": "IS IS_2246",
-  "title": "Indian Standard Specification / Test Method (IS IS_2246)",
+  "is_number": "IS 2246",
+  "standard_id": "IS 2246:2023",
+  "title": "Sampling Fluorspar (Fluorite) - Methods",
   "ia_identifier": "IS_2246",
   "division_code": "GEN",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard lays down the procedure to be followed in collecting and preparing samples from a lot in order to determine ore sizes, moisture content and the chemical composition of fluorspar in the lot. It details the procedure for sampling the ore from stock piles, rail wagons and ships. 1.2 This standard also includes a method for reporting the quality of the bulk of the fluorspar sampled.",
   "clause_2_normative_references": [
@@ -53,13 +53,13 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade ification",
+    "Grade edstock",
     "Grade rro",
     "Grade deration",
-    "Grade edstock",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_2246"
+    "Grade ification",
+    "Sampling Fluorspar",
+    "Fluorite",
+    "Methods"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

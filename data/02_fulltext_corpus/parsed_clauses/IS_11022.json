@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_11022",
-  "standard_id": "IS IS_11022",
-  "title": "Indian Standard Specification / Test Method (IS IS_11022)",
+  "is_number": "IS 11022",
+  "standard_id": "IS 11022:1984",
+  "title": "Methods of sampling and test for glues (bone, skin/fleshings and fish glues)",
   "ia_identifier": "IS_11022",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -11,6 +11,16 @@
   },
   "clause_1_scope": "1.1 This standard prescribes the methods of sampling and test for adhesives manufactured from materials of animal origin. It applies to adhesives in the form of liquid, jelly, cake, flakes, powder or granular solids. ♦Rules for rounding off numerical values {revised ). 3 IS : 11022 - 1984 1.1.1 For certain uses there could be specialized tests which may be agreed between the purchaser and the supplier. Such tests have not been included in this standard.",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS 11",
+      "standard_id": "IS 11",
+      "title": "Indian Standard Specification / Test Method (IS 11)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS 3434",
       "standard_id": "IS 3434:1984",
@@ -73,9 +83,10 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11022"
+    "Methods of sampling and test for glues",
+    "bone",
+    "skin",
+    "fleshings and fish glues"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

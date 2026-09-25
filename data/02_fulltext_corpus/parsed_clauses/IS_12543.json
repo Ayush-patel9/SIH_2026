@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_12543",
-  "standard_id": "IS IS_12543",
-  "title": "Indian Standard Specification / Test Method (IS IS_12543)",
+  "is_number": "IS 12543",
+  "standard_id": "IS 12543:1988",
+  "title": "Meat and Meat Products - Poultry Products - Canned Egg Curry",
   "ia_identifier": "IS_12543",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "Amendment to IS IS_12543 (Indian Standard Specification / Test Method (IS IS_12543)): AMENDMENT NO. 1 MARCH 2004 TO MEAT AND MEAT PRODUCTS - POULTRY PRODUCTS — CANNED EGG CURRY — SPECIFICATION ( Page 1 , clause 4.1 ) — Insert the following clause after 4.1: '4,1.1 Quality of water used for processing shall conform to IS 4251.' ( Page 3, Annex A) — Insert reference of the following Indian Standard at the appropriate place: IS No, Title 425 1 : 1967 Quality tolerances for water for processed food industry (FAD 18) Reprography Unit, BIS, New Delhi, India AMENDMENT NO. 2 APRIL 2011 TO MEAT AND MEAT PRODUCTS — POULTRY PRODUCTS — CANNED EGG CURRY — SPECinCATION [Page 2, clause 5.2(c)",
+  "clause_1_scope": "Amendment to IS 12543 (Meat and Meat Products - Poultry Products - Canned Egg Curry): AMENDMENT NO. 1 MARCH 2004 TO MEAT AND MEAT PRODUCTS - POULTRY PRODUCTS — CANNED EGG CURRY — SPECIFICATION ( Page 1 , clause 4.1 ) — Insert the following clause after 4.1: '4,1.1 Quality of water used for processing shall conform to IS 4251.' ( Page 3, Annex A) — Insert reference of the following Indian Standard at the appropriate place: IS No, Title 425 1 : 1967 Quality tolerances for water for processed food industry (FAD 18) Reprography Unit, BIS, New Delhi, India AMENDMENT NO. 2 APRIL 2011 TO MEAT AND MEAT PRODUCTS — POULTRY PRODUCTS — CANNED EGG CURRY — SPECinCATION [Page 2, clause 5.2(c)",
   "clause_2_normative_references": [
     {
       "is_number": "IS 4251",
@@ -18,6 +18,16 @@
       "division_code": "FAD",
       "aspect": "Product Specification",
       "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -43,9 +53,9 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12543"
+    "Meat and Meat Products",
+    "Poultry Products",
+    "Canned Egg Curry"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

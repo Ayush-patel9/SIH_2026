@@ -1,0 +1,67 @@
+{
+  "is_number": "IS 15077 (PART 1)",
+  "standard_id": "IS 15077 (Part 1):2012",
+  "title": "Semiconductor Optoelectronic Devices for Fibre Optic System Applications, Part 1: Specification Template for Essential Ratings and Characteristics",
+  "ia_identifier": "IS_15077__PART_1_",
+  "division_code": "LITD",
+  "aspect": "System Standard",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 15077 (PART 1)) covers Semiconductor Optoelectronic Devices for Fibre Optic System Applications, Part 1: Specification Template for Essential Ratings and Characteristics. This Indian Standard (Part 1 ) (First Revision) which is identical with lEC 62007-1 : 2008 'Semiconductor optoelectronic devices for fibre optic system applications — Part 1 : Specification template for essential ratings and characteristics' issued by the International Electrotechnical Commission (lEC) was adopted by the Devices Sectional Committee and approval of the Electronics and Information Technology Division Council. This standard was originally published in 2002 which was identical with lEC 62007-1 now been revised to align it with the latest version of lEC 62007-1 : 2008. 1997 and has The text of lEC Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma (,) has been used as",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 15077",
+      "standard_id": "IS 15077",
+      "title": "Indian Standard Specification / Test Method (IS 15077)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14901 (PART 5/SEC 1)",
+      "standard_id": "IS 14901 (PART 5/SEC 1)",
+      "title": "Indian Standard Specification / Test Method (IS 14901 (PART 5/SEC 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14624 (PART 2)",
+      "standard_id": "IS 14624 (Part 2):2012",
+      "title": "Safety of laser products, Part 2: Safety of Optical Fibre Communication Systems (OFCS)",
+      "division_code": "MSD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade LED",
+    "Grade Tine",
+    "Grade Ambient",
+    "Semiconductor Optoelectronic Devices for Fibre Optic System Applications",
+    "Part 1: Specification Template for Essential Ratings and Characteristics"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "Maximum tensile force on fibre (F).",
+      "Maximum tensile force on cable {F).",
+      "Maximum tensile force on cable (F)."
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 62376
+}

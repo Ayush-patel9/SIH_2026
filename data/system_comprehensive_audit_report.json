@@ -1,28 +1,28 @@
 {
   "01_master_catalog": {
-    "total_standards": 21992,
+    "total_standards": 22020,
     "null_is_number": 0,
     "null_title": 0,
     "null_division_code": 0,
     "null_aspect": 0,
-    "null_ics_codes": 21992,
-    "total_mandatory_standards": 146,
-    "fulltext_available_flagged": 1460,
+    "null_ics_codes": 0,
+    "total_mandatory_standards": 179,
+    "fulltext_available_flagged": 1984,
     "ics_fields": 31,
     "ics_groups": 306,
-    "status": "FAIL"
+    "status": "PASS"
   },
   "02_fulltext_corpus": {
-    "raw_downloads_count": 1349,
-    "parsed_clauses_count": 1017,
+    "raw_downloads_count": 1632,
+    "parsed_clauses_count": 1632,
     "null_scopes": 0,
-    "total_requirements_extracted": 3412,
-    "total_normative_edges": 7930,
+    "total_requirements_extracted": 4946,
+    "total_normative_edges": 10452,
     "null_graph_titles": 0,
     "self_loop_edges": 0,
-    "total_rag_chunks": 2993,
+    "total_rag_chunks": 4792,
     "null_rag_texts": 0,
-    "avg_rag_chunk_chars": 834.7,
+    "avg_rag_chunk_chars": 814.0,
     "status": "PASS"
   },
   "03_regulatory_qco": {
@@ -53,5 +53,5 @@
     "search_index_entries": 492,
     "status": "PASS"
   },
-  "passed_all_checks": false
+  "passed_all_checks": true
 }

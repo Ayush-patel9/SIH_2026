@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_10322__PART_5_",
-  "standard_id": "IS IS_10322__PART_5_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10322__PART_5_)",
+  "is_number": "IS 10322 (PART 5)",
+  "standard_id": "IS 10322 (Part 5):2013",
+  "title": "Part 5 : Sec 8 : 2013: Luminaires Part 5 Particular Requirements Section 8 Emergency Lighting",
   "ia_identifier": "IS_10322__PART_5_",
-  "division_code": "GEN",
+  "division_code": "ETD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -14,12 +14,12 @@
     {
       "is_number": "IS 10322 (PART 5/SEC 5)",
       "standard_id": "IS 10322 (PART 5/SEC 5)",
-      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 5/SEC 5))",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
+      "title": "Luminaires - Particular Requirements - Floodlights",
+      "division_code": "LITD",
+      "aspect": "Safety Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Electronics and Information Technology Goods (Requirement for Compulsory Registration) Order"
     },
     {
       "is_number": "IS 10322 (PART 1)",
@@ -175,9 +175,7 @@
   "clause_3_terminology": [
     "Floodlighting",
     "Floodlight",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10322__PART_5_"
+    "Part 5 : Sec 8 : 2013: Luminaires Part 5 Particular Requirements Section 8 Emergency Lighting"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

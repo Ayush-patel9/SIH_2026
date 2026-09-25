@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_11509__PART_3_",
-  "standard_id": "IS IS_11509__PART_3_",
-  "title": "Indian Standard Specification / Test Method (IS IS_11509__PART_3_)",
+  "is_number": "IS 11509 (PART 3)",
+  "standard_id": "IS 11509 (Part 3):1985",
+  "title": "Part 3 Resistance to high pressure drop and to elevated temperature",
   "ia_identifier": "IS_11509__PART_3_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -11,6 +11,16 @@
   },
   "clause_1_scope": "This part of ISO 4548 specifies a method of testing the ability of full-flow lubricating oil filters for internal combustion engines to withstand an internal pressure surge such as occurs when an engine is started from cold, and cyclic internal pressure variations experienced during operation. These tests are intended for application to spin-on type niters and detachable filters with disposable elements with a maximum flow rate of 100 l/min. The tests may be applied to other filters if thought applicable by agreement between the filter manufacturer and the purchaser. NOTE 1 This test is not intended to replace simulated environmental testing (e.g. at very low temperatures). If such testing is required, it should be the subject of negotiation between the supplier and customer.",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS 11",
+      "standard_id": "IS 11",
+      "title": "Indian Standard Specification / Test Method (IS 11)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS/ISO 4548",
       "standard_id": "IS/ISO 4548",
@@ -63,9 +73,9 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11509__PART_3_"
+    "Part 3 Resistance to high pressure drop and to elevated temperature",
+    "IS 11509 (PART 3) Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

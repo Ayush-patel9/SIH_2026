@@ -1,0 +1,589 @@
+{
+  "is_number": "IS 13252",
+  "standard_id": "IS 13252:2003",
+  "title": "Information Technology Equipment -- Safety - General Requirements",
+  "ia_identifier": "IS_13252",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1.1 Equipment covered by this standard This standard is applicable to mains-powered or battery-powered information technology equipment, including electrical business equipment and associated equipment, with a rated VOLTAGE not exceeding 600 V. This standard is also applicable to such information technology equipment: - designed for use as telecommunication terminal equipment and telecommunication NETWORK infrastructure equipment, regardless of the source of power; - designed and intended to be connected directly to, or used as infrastructure equipment in, a CABLE DISTRIBUTION SYSTEM, regardless of the source of power; - designed to use the AC mains supply as a communication transmission medium (see Clause 6, Note 4 and 7.1, Note 4). This standard is also applicable to components and subassemblies intended for incorporation in information technology equipment. It is not expected that such components and subassemblies comply with every aspect of the standard, provided that the complete information technology equipment, incorporating such components and subassemblies, does comply. NOTE 1 Examples of aspects with which uninstalled components and subassemblies may not comply include the marking of the power rating and access to hazardous parts. NOTE 2 This standard may be applied to the electronic parts of equipment even if that equipment does not wholly fall within its Scope, such as large-scale air conditioning systems, fire detection systems and fire extinguishing systems. Different requirements may be necessary for some applications. This standard specifies requirements intended to reduce risks of fire, electric shock or injury for the OPERATOR and layman who may come into contact with the equipment and, wliere specifically stated, for a service person. This standard is intended to reduce such risks with respect to installed equipment, whether it consists of a system of interconnected units or independent units, subject to installing, operating and maintaining the equipment in the manner prescribed by the manufacturer. IS 13252 (Parti): 2010 lEC 60950-1:2005 Examples of equipment that is in the scope of this standard are: Generic product type Specific example of generic type banking equipment monetary processing machines including automated teller (cash dispensing) machines (ATM) data and text processing machines and associated equipment data preparation equipment, data processing equipment, data storage equipment, personal computers, plotters, printers,",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13252(PART1)",
+      "standard_id": "IS 13252(PART1)",
+      "title": "Information Technology Equipment -- Safety - General Requirements (IS 13252(PART1))",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 61",
+      "standard_id": "IS 61",
+      "title": "Indian Standard Specification / Test Method (IS 61)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 4)",
+      "standard_id": "IS 9000 (Part 4):2008",
+      "title": "Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 4: Damp hear (Steady state)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 694",
+      "standard_id": "IS 694:2010",
+      "title": "POLYVINYL CHLORIDE INSULATED UNSHEATHED AND SHEATHED CABLES/CORDS WITH RIGID AND FLEXIBLE CONDUCTOR FOR RATED VOLTAGES UP TO AND INCLUDING 450/750 V",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS/IEC 60309 (PART 1)",
+      "standard_id": "IS/IEC 60309 (PART 1)",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60309 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60309 (PART 2)",
+      "standard_id": "IS/IEC 60309 (PART 2)",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60309 (PART 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60320",
+      "standard_id": "IS/IEC 60320",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60320)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15382 (PART 1)",
+      "standard_id": "IS 15382 (Part 1):2003",
+      "title": "Insulation Coordination for Equipment within Low-Voltage Systems, Part 1: Principles, Requirements and Tests",
+      "division_code": "ETD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11000 (PART 2/SEC 2)",
+      "standard_id": "IS 11000 (PART 2/SEC 2)",
+      "title": "Indian Standard Specification / Test Method (IS 11000 (PART 2/SEC 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 41",
+      "standard_id": "IS 41",
+      "title": "Indian Standard Specification / Test Method (IS 41)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14901 (PART 5)",
+      "standard_id": "IS 14901 (Part 5):2004",
+      "title": "Semiconductor Devices - Discrete Devices and Integrated Circuits, Part 5: Optoelectronic Devices",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60947",
+      "standard_id": "IS/IEC 60947",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60947)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 178",
+      "standard_id": "IS/ISO 178",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 178)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 180",
+      "standard_id": "IS/ISO 180",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 180)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 261",
+      "standard_id": "IS/ISO 261",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 261)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 262",
+      "standard_id": "IS/ISO 262",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 262)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 527",
+      "standard_id": "IS/ISO 527",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 527)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60990",
+      "standard_id": "IS/IEC 60990:1999",
+      "title": "IS/IEC 60990: Methods of measurement of touch current and protective conductor current",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61058",
+      "standard_id": "IS/IEC 61058",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61058)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4218 (PART 2)",
+      "standard_id": "IS 4218 (Part 2):2001",
+      "title": "ISO General Purpose Metric Screw Threads, Part 2: General Plan",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4218 (PART 4)",
+      "standard_id": "IS 4218 (Part 4):2001",
+      "title": "ISO General Purpose Metric Screw Threads, Part 4: Selected Sizes for Screws, Bolts and Nuts",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 5/SEC 25)",
+      "standard_id": "IS 13360 (PART 5/SEC 25)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 5/SEC 25))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 5/SEC 26)",
+      "standard_id": "IS 13360 (PART 5/SEC 26)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 5/SEC 26))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9773",
+      "standard_id": "IS/ISO 9773",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9773)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 6/SEC 23)",
+      "standard_id": "IS 13360 (PART 6/SEC 23)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 6/SEC 23))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60851",
+      "standard_id": "IS/IEC 60851",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60851)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61051",
+      "standard_id": "IS/IEC 61051",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61051)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3864",
+      "standard_id": "IS/ISO 3864",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3864)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4892",
+      "standard_id": "IS/ISO 4892",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4892)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7000",
+      "standard_id": "IS/ISO 7000",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8256",
+      "standard_id": "IS/ISO 8256",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8256)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9772",
+      "standard_id": "IS/ISO 9772",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9772)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4046",
+      "standard_id": "IS/ISO 4046",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4046)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 230",
+      "standard_id": "IS 230:1972",
+      "title": "Normal butyl acetate",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 60",
+      "standard_id": "IS 60",
+      "title": "Indian Standard Specification / Test Method (IS 60)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 5019",
+      "standard_id": "IS/IEC 5019",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 5019)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 5017",
+      "standard_id": "IS/IEC 5017",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 5017)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16",
+      "standard_id": "IS 16",
+      "title": "Indian Standard Specification / Test Method (IS 16)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 200",
+      "standard_id": "IS 200:1989",
+      "title": "Textiles - Determination of Copper Number of Cotton Textile Materials",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 150",
+      "standard_id": "IS 150:1950",
+      "title": "Ready mixed paint, brushing, finishing, stoving for enamel color as required",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60417",
+      "standard_id": "IS/IEC 60417",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60417)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 100",
+      "standard_id": "IS 100",
+      "title": "Indian Standard Specification / Test Method (IS 100)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 106",
+      "standard_id": "IS 106",
+      "title": "Indian Standard Specification / Test Method (IS 106)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 179",
+      "standard_id": "IS/ISO 179",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 179)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 500",
+      "standard_id": "IS 500:1999",
+      "title": "Potassium metabisulphite, photographic grade",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2859",
+      "standard_id": "IS/ISO 2859",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2859)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60384",
+      "standard_id": "IS/IEC 60384",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60384)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61965",
+      "standard_id": "IS/IEC 61965:2003",
+      "title": "IS/IEC 61965: Mechanical Safety of Cathode Ray Tubes",
+      "division_code": "MED",
+      "aspect": "Safety Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60112",
+      "standard_id": "IS/IEC 60112",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60112)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61140",
+      "standard_id": "IS/IEC 61140",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61140)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 09773",
+      "standard_id": "IS 09773",
+      "title": "Indian Standard Specification / Test Method (IS 09773)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60730",
+      "standard_id": "IS/IEC 60730",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60730)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade 180",
+    "Grade writers",
+    "Grade 130",
+    "Grade 120",
+    "Grade 105",
+    "Grade 250",
+    "Grade of",
+    "Grade 200",
+    "10 K",
+    "2 K",
+    "Information Technology Equipment",
+    "Safety"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "Temperature rise of a winding 202 A",
+      "clearances and creepage distances 203 A",
+      "clearances 211 A",
+      "rated voltages up to and including 450/750 V",
+      "Rated voltages up to and including 450/750 V",
+      "rated VOLTAGE not exceeding 600 V",
+      "flammability test"
+    ],
+    "dimensional_tolerances": [
+      "tolerance shall be taken as +10 %"
+    ],
+    "marking_requirements": [
+      "disconnection marking"
+    ]
+  },
+  "total_chars_parsed": 707804
+}

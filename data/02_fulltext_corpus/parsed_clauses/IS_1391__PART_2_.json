@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_1391__PART_2_",
-  "standard_id": "IS IS_1391__PART_2_",
-  "title": "Indian Standard Specification / Test Method (IS IS_1391__PART_2_)",
+  "is_number": "IS 1391 (PART 2)",
+  "standard_id": "IS 1391 (Part 2):2023",
+  "title": "Part 2 : 2023: Room Air Conditioners - Specification: - Part 2 Split Air Conditioners",
   "ia_identifier": "IS_1391__PART_2_",
   "division_code": "GEN",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard (Part 2) specifies safety and performance requirements of single or three phase non-ducted split with single stage, two stage, multistage, fixed and variable speed air conditioner and heat pumps (residential, commercial, and industrial) of rated capacity up to and including 18 000 W their rated voltage up to and including 250 V a.c., 50 Hz for single-phase and up to and including 415 V a.c., 50 Hz for three-phase power supply employing air cooled condensers and test methods for determination of various ratings. This standard is limited to systems utilizing a single refrigeration circuit, having one evaporator and one condenser. 1.2 This standard is not applicable to the following: a) Water-source heat pumps or water-cooled air conditioners; b) Mobile (windowless) units having а condenser exhaust duct; c) Individual assemblies not constituting a complete refrigeration system; d) Equipment using the refrigeration cycle; and absorption e) Portable air-conditioners.",
   "clause_2_normative_references": [
@@ -59,7 +59,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 9968 (PART 1)",
@@ -183,11 +183,11 @@
     },
     {
       "is_number": "IS/IEC 60529",
-      "standard_id": "IS/IEC 60529",
-      "title": "Indian Standard Specification / Test Method (IS/IEC 60529)",
+      "standard_id": "IS/IEC 60529:2001",
+      "title": "IS/IEC 60529: Degrees of protection provided by enclosures (IP CODE)",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -243,13 +243,13 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade ification",
-    "Grade Tests",
     "Grade tests",
+    "Grade Tests",
+    "Grade ification",
     "5 K",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1391__PART_2_"
+    "Part 2 : 2023: Room Air Conditioners",
+    "Specification",
+    "Part 2 Split Air Conditioners"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

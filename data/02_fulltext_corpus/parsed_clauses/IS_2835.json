@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_2835",
-  "standard_id": "IS IS_2835",
-  "title": "Indian Standard Specification / Test Method (IS IS_2835)",
+  "is_number": "IS 2835",
+  "standard_id": "IS 2835:1987",
+  "title": "Flat transparent sheet glass",
   "ia_identifier": "IS_2835",
   "division_code": "GEN",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard prescribes the requirements and methods of sampling and test for fiat transparett sheet glass for use in the manufacture of photographic plates, projection slides, silvered glass mirrors, toughened or laminated safety glasses and for glazing and framing purposes.",
   "clause_2_normative_references": [
@@ -44,9 +44,9 @@
   ],
   "clause_3_terminology": [
     "Grade deral",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_2835"
+    "Flat transparent sheet glass",
+    "IS 2835 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

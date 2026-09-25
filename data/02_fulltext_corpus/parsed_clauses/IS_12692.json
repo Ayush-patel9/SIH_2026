@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_12692",
-  "standard_id": "IS IS_12692",
-  "title": "Indian Standard Specification / Test Method (IS IS_12692)",
+  "is_number": "IS 12692",
+  "standard_id": "IS 12692:1989",
+  "title": "Small Tools - Subland Twist Drills with Parallel Shanks for Clearance Holes and Countersinks for Countersunk Head Screws",
   "ia_identifier": "IS_12692",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -18,6 +18,16 @@
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -73,9 +83,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12692"
+    "Small Tools",
+    "Subland Twist Drills with Parallel Shanks for Clearance Holes and Countersinks for Countersunk Head Screws",
+    "Small Tools - Subland Twist Drills with Parallel Shanks for Clearance Holes and Countersinks for Countersunk Head Screws",
+    "IS 12692 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

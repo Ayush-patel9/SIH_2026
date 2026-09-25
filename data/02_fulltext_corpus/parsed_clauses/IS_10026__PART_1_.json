@@ -1,10 +1,10 @@
 {
-  "is_number": "IS IS_10026__PART_1_",
-  "standard_id": "IS IS_10026__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10026__PART_1_)",
+  "is_number": "IS 10026 (PART 1)",
+  "standard_id": "IS 10026 (Part 1):1998",
+  "title": "Insulating varnishes containing solvents, Part 1: Definitions and general requirements",
   "ia_identifier": "IS_10026__PART_1_",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Terminology",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
@@ -69,6 +69,16 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
       "qco_order": null
     },
     {
@@ -133,11 +143,10 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade ather",
     "Grade tter",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10026__PART_1_"
+    "Grade ather",
+    "Insulating varnishes containing solvents",
+    "Part 1: Definitions and general requirements"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_15844__PART_1_",
-  "standard_id": "IS IS_15844__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_15844__PART_1_)",
+  "is_number": "IS 15844 (PART 1)",
+  "standard_id": "IS 15844 (Part 1):2023",
+  "title": "Part 1 : 2023: Sports Footwear - Part 1 General Purpose",
   "ia_identifier": "IS_15844__PART_1_",
-  "division_code": "GEN",
+  "division_code": "TXD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Footwear made from Leather and other materials (Quality Control) Order, 2024"
   },
   "clause_1_scope": "1.1 This standard prescribes the performance requirements of sports footwear used for general purposes (for example fitness, exercising, walking and light sports activities etc). 1.2 This standard does not cover the performance requirement for following: a) Performance sports footwear (jogging, running including trail running, adventure sport, trekking, climbing and etc); and b) Professional sports footwear.",
   "clause_2_normative_references": [
@@ -422,6 +422,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS/ISO 48",
       "standard_id": "IS/ISO 48",
       "title": "Indian Standard Specification / Test Method (IS/ISO 48)",
@@ -488,9 +498,8 @@
     "Cellular Sole",
     "Solid Sole",
     "Grade of",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_15844__PART_1_"
+    "Part 1 : 2023: Sports Footwear",
+    "Part 1 General Purpose"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

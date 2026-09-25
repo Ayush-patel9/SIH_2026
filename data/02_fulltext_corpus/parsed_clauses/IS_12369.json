@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_12369",
-  "standard_id": "IS IS_12369",
-  "title": "Indian Standard Specification / Test Method (IS IS_12369)",
+  "is_number": "IS 12369",
+  "standard_id": "IS 12369:1987",
+  "title": "Graphical Kernel System (GKS) for Computer Graphics",
   "ia_identifier": "IS_12369",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "System Standard",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_12369) covers Indian Standard Specification / Test Method (IS IS_12369). This Indian Standard, which is identical with ISO 7942-1935 'Information processing systems — Computer graphics — 'Graphical Kernel System (GKS) functional description', issued by International Organization for Standardization (ISO), was adopted by the on the recommendation of the Computers, Business Machines and Calculators Sectional Committee and approval of the Electronics and Telecommunication Division Council. In the adopted standard certain terminology and conventions are not identical with those used in Indian Standards; attention is specially drawn to the following: Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. Cross References International Standard ISO 646-1983 Information processing.- information interchange ISO 2382/13-1984 Data processing — Vocabulary — Part 1 3 Computer graphics Corresponding Indian Standard IS : 10315-1982 7-Blt coded character set I VI I rii\\yi iiiaiivfii iiiiduiiaii^c (Technical",
+  "clause_1_scope": "This Indian Standard (IS 12369) covers Graphical Kernel System (GKS) for Computer Graphics. This Indian Standard, which is identical with ISO 7942-1935 'Information processing systems — Computer graphics — 'Graphical Kernel System (GKS) functional description', issued by International Organization for Standardization (ISO), was adopted by the on the recommendation of the Computers, Business Machines and Calculators Sectional Committee and approval of the Electronics and Telecommunication Division Council. In the adopted standard certain terminology and conventions are not identical with those used in Indian Standards; attention is specially drawn to the following: Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. Cross References International Standard ISO 646-1983 Information processing.- information interchange ISO 2382/13-1984 Data processing — Vocabulary — Part 1 3 Computer graphics Corresponding Indian Standard IS : 10315-1982 7-Blt coded character set I VI I rii\\yi iiiaiivfii iiiiduiiaii^c (Technical",
   "clause_2_normative_references": [
     {
       "is_number": "IS 12361",
@@ -98,6 +98,16 @@
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
     },

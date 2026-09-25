@@ -1,16 +1,26 @@
 {
-  "is_number": "IS IS_11847",
-  "standard_id": "IS IS_11847",
-  "title": "Indian Standard Specification / Test Method (IS IS_11847)",
+  "is_number": "IS 11847",
+  "standard_id": "IS 11847:1987",
+  "title": "Spoke Wrenches for Bicycle and Moped",
   "ia_identifier": "IS_11847",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_11847) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11847).",
+  "clause_1_scope": "This Indian Standard (IS 11847) prescribes technical specifications, requirements, tolerances, and testing procedures for Spoke Wrenches for Bicycle and Moped.",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS 11",
+      "standard_id": "IS 11",
+      "title": "Indian Standard Specification / Test Method (IS 11)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS 2500",
       "standard_id": "IS 2500",
@@ -43,9 +53,9 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11847"
+    "Spoke Wrenches for Bicycle and Moped",
+    "IS 11847 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

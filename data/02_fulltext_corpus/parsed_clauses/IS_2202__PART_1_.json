@@ -1,63 +1,23 @@
 {
-  "is_number": "IS IS_2202__PART_1_",
-  "standard_id": "IS IS_2202__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_2202__PART_1_)",
+  "is_number": "IS 2202 (PART 1)",
+  "standard_id": "IS 2202 (Part 1):2023",
+  "title": "Part 1 : 2023: Wooden Flush Door Shutters (Solid Core Type)-Specification - Part 1 Plywood Face Panels",
   "ia_identifier": "IS_2202__PART_1_",
   "division_code": "GEN",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
   },
-  "clause_1_scope": "This standard (Part 1) specifies the requirements for wooden flush door shutters (solid core type) with face panels of plywood or of cross-band and face veneers.",
+  "clause_1_scope": "This standard (Part 1) lays down requirements regarding types, sizes, material, construction, workmanship and flnish, and tests of solid core wooden flush door shutters with face panels of plywood or cross-band and face veneers.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 10428",
-      "standard_id": "IS 10428:1983",
-      "title": "Glossary of terms relating to doors",
+      "is_number": "IS 2202",
+      "standard_id": "IS 2202",
+      "title": "Indian Standard Specification / Test Method (IS 2202)",
       "division_code": "GEN",
-      "aspect": "Terminology",
-      "relation_type": "TERMINOLOGY",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 707",
-      "standard_id": "IS 707:2011",
-      "title": "Timber Technology And Utilization of Wood, Bamboo and Cane - Glossary of Terms",
-      "division_code": "CED",
-      "aspect": "Terminology",
-      "relation_type": "TERMINOLOGY",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 4021",
-      "standard_id": "IS 4021:1995",
-      "title": "Timber Door, Window and Ventilator Frames -",
-      "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "PRODUCT_SPECIFICATION",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1708 (PART 1)",
-      "standard_id": "IS 1708 (PART 1)",
-      "title": "to 18: Methods of testing of small clear specimens of timber (IS 1708 (PART 1))",
-      "division_code": "CED",
-      "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 401",
-      "standard_id": "IS 401:2001",
-      "title": "Preservation of Timber - Code of Practice",
-      "division_code": "CED",
-      "aspect": "Code of Practice",
-      "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -80,6 +40,76 @@
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 3087",
+      "standard_id": "IS 3087:2005",
+      "title": "Partical boards of wood and other lingnocellulosic materials (medium density) for general purposes -Specification",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4020",
+      "standard_id": "IS 4020:1998",
+      "title": "to 16: Door Shutters - Methods of Tests",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10428",
+      "standard_id": "IS 10428:1983",
+      "title": "Glossary of terms relating to doors",
+      "division_code": "GEN",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 707",
+      "standard_id": "IS 707:2011",
+      "title": "Timber Technology And Utilization of Wood, Bamboo and Cane - Glossary of Terms",
+      "division_code": "CED",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 402",
+      "standard_id": "IS 402:1990",
+      "title": "Cold Chisels - Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1708 (PART 1)",
+      "standard_id": "IS 1708 (PART 1)",
+      "title": "to 18: Methods of testing of small clear specimens of timber (IS 1708 (PART 1))",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 40",
+      "standard_id": "IS 40:2021",
+      "title": "Specification for Carbon black for paints (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1328",
@@ -112,26 +142,6 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 14616",
-      "standard_id": "IS 14616:1999",
-      "title": "Laminated veneer lumber - Specification",
-      "division_code": "TED",
-      "aspect": "Product Specification",
-      "relation_type": "PRODUCT_SPECIFICATION",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 16171",
-      "standard_id": "IS 16171:2014",
-      "title": "Veneer Laminated Lumber - Specification",
-      "division_code": "TED",
-      "aspect": "Product Specification",
-      "relation_type": "PRODUCT_SPECIFICATION",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 12406",
       "standard_id": "IS 12406:2021",
       "title": "Medium density fibre boards for general purpose - Specification",
@@ -142,10 +152,10 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 16015",
-      "standard_id": "IS 16015:2022",
-      "title": "Mortise locks and latches (Mechanically Operated) - Specification (first revision)",
-      "division_code": "MED",
+      "is_number": "IS 2209",
+      "standard_id": "IS 2209:1976",
+      "title": "mortice locks (vertical type)",
+      "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
@@ -312,12 +322,12 @@
       "qco_order": null
     },
     {
-      "is_number": "IS/ISO 1804",
-      "standard_id": "IS/ISO 1804",
-      "title": "Indian Standard Specification / Test Method (IS/ISO 1804)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "is_number": "IS 401",
+      "standard_id": "IS 401:2001",
+      "title": "Preservation of Timber - Code of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -330,43 +340,35 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "IS 4020",
-      "standard_id": "IS 4020:1998",
-      "title": "to 16: Door Shutters - Methods of Tests",
-      "division_code": "GEN",
-      "aspect": "Methods of tests",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Type Tests",
-    "Acceptance Tests",
-    "Grade of",
-    "Grade bruary",
+    "lype Tests",
+    "Acceptance Ifests",
     "Grade Tests",
-    "Grade 5B",
-    "Grade 5C",
+    "Grade 6C",
+    "Grade bruary",
+    "Grade T0",
     "Grade ification",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_2202__PART_1_"
+    "Grade AB",
+    "Part 1 : 2023: Wooden Flush Door Shutters",
+    "Solid Core Type",
+    "Part 1 Plywood Face Panels"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
     "electrical_and_safety_parameters": [],
-    "dimensional_tolerances": [],
+    "dimensional_tolerances": [
+      "nominal thickness of the shutters shall be 25 mm"
+    ],
     "marking_requirements": [
-      "14.1 Each shutter shall be legibly and indelibly marked",
-      "Name of the manufacturer or trade-mark, if anv;",
-      "Grade of door shutter;",
+      "14.1 Each shutter shall be legibly and indelibly",
+      "marked on any of its edges with the following",
+      "a) Nameofthemanufacturcrortrade-mark, ifany;",
       "Species of timber, in case of ECO Mark; and",
-      "The criteria for which the shutter has been labelled"
+      "labelled as ECO Mark"
     ]
   },
-  "total_chars_parsed": 48359
+  "total_chars_parsed": 50287
 }

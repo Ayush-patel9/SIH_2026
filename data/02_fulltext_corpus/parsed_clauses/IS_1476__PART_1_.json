@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_1476__PART_1_",
-  "standard_id": "IS IS_1476__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_1476__PART_1_)",
+  "is_number": "IS 1476 (PART 1)",
+  "standard_id": "IS 1476 (Part 1):2000",
+  "title": "Performance of Household Refrigerating Appliance - Refrigerators with or Without Low Temperature Compartment, Part 1: Energy Consumption and Performance",
   "ia_identifier": "IS_1476__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard (Part 1) specifies the essential characteristics of household refrigerators with or without crisper, ice-making or frozen food storage compartments which are wholly factory assembled, and lays down the methods of test for the checking of the characteristics. It does not include refrigerating performance characteristics and tests or particular definitions for refrigerators cooled by internal forced air circulation. The tests described in the Indian Standard are type tests and are applicable to Tropical Class (T) appliances. When it is desired to verify the performance of a refrigerator of a given type in relation to this standard all the tests described should be in principle applied to one and same unit. These tests may also be made individually for the study of a particular characteristic.",
   "clause_2_normative_references": [
@@ -99,7 +99,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 732",
@@ -137,12 +137,12 @@
     "Storage Compartments",
     "General Definitions",
     "Definitions Relating to Some Performance",
-    "Grade Tests",
     "Grade Appliance",
+    "Grade Tests",
     "Grade bruary",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1476__PART_1_"
+    "Performance of Household Refrigerating Appliance",
+    "Refrigerators with or Without Low Temperature Compartment",
+    "Part 1: Energy Consumption and Performance"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

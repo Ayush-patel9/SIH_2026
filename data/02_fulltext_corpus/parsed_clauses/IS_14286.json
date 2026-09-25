@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_14286",
-  "standard_id": "IS IS_14286",
-  "title": "Indian Standard Specification / Test Method (IS IS_14286)",
+  "is_number": "IS 14286",
+  "standard_id": "IS 14286:2010",
+  "title": "Crystalline Silicon Terrestrial Photovoltaic (PV) modules - Design Qualification And Type Approval",
   "ia_identifier": "IS_14286",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
-  "clause_1_scope": "This Indian Standard (IS IS_14286) covers Indian Standard Specification / Test Method (IS IS_14286). This Indian Standard (First Revision) which is identical with IEC 61215 :2005 'Crystalline silicon terrestrial photovoltaic (PV) modules — Design qualification and type approval' issued by the International Electrotechnical Commission (IEC) was adopted by the Sectional Committee and approval of the Electrotechnical Division Council. This standard was first published in 1995. This revision has been undertaken to consider the developments that have taken place since the last revision and also to align it with the latest version of IEC 61 21 5 : 2005. The text of the IEC Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words International Standard\" appear referring to this standard, they should be read as Indian Standard'. b) Comma (,) has been used as a decimal marker in the International Stand",
+  "clause_1_scope": "This Indian Standard (IS 14286) covers Crystalline Silicon Terrestrial Photovoltaic (PV) modules - Design Qualification And Type Approval. This Indian Standard (First Revision) which is identical with IEC 61215 :2005 'Crystalline silicon terrestrial photovoltaic (PV) modules — Design qualification and type approval' issued by the International Electrotechnical Commission (IEC) was adopted by the Sectional Committee and approval of the Electrotechnical Division Council. This standard was first published in 1995. This revision has been undertaken to consider the developments that have taken place since the last revision and also to align it with the latest version of IEC 61 21 5 : 2005. The text of the IEC Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words International Standard\" appear referring to this standard, they should be read as Indian Standard'. b) Comma (,) has been used as a decimal marker in the International Stand",
   "clause_2_normative_references": [
     {
       "is_number": "IS/IEC 61215",
@@ -233,11 +233,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade ification",
     "Grade Approval",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_14286"
+    "Grade ification",
+    "Crystalline Silicon Terrestrial Photovoltaic",
+    "modules",
+    "Design Qualification And Type Approval"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,0 +1,77 @@
+{
+  "is_number": "IS 14820",
+  "standard_id": "IS 14820:2000",
+  "title": "Lasers and Laser-related Equipment - Test Methods for Laser Beam Parameters - Beam Widths, Divergence Angle and Beam Propagation Factor",
+  "ia_identifier": "IS_14820",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 14820) covers Lasers and Laser-related Equipment - Test Methods for Laser Beam Parameters - Beam Widths, Divergence Angle and Beam Propagation Factor. This Indian Standard which is Identical with ISO 11146 . 1999 'Lasers and laser-related equipment — Test methods for laser beam parameters — Beam widths, divergence angle and beam propagation factor' issued by the International Organization for Standardization ( ISO ) was adopted by the Committee and approval of the Mechanical Engineering Division Council. Lasers are now increasingly used for various industrial, medical and defence applications. The technical committee, therefore, felt the need to develop Indian Standard on the subject for safe deployment of laser systems. The text of ISO Standard has been approved as suitable for publication as Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma (,) has been used as a decimal marker while ",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 11146",
+      "standard_id": "IS/ISO 11146",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 11146)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 11145",
+      "standard_id": "IS/ISO 11145",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 11145)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 111",
+      "standard_id": "IS/ISO 111",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 111)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13",
+      "standard_id": "IS 13",
+      "title": "Indian Standard Specification / Test Method (IS 13)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "1 K",
+    "Lasers and Laser",
+    "related Equipment",
+    "Test Methods for Laser Beam Parameters",
+    "Beam Widths",
+    "Divergence Angle and Beam Propagation Factor"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "density H for pulsed lasers. N",
+      "density E is replaced by the energy density H for pulsed lasers. N"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 42684
+}

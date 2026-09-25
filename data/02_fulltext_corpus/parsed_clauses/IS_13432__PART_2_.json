@@ -1,0 +1,284 @@
+{
+  "is_number": "IS 13432 (PART 2)",
+  "standard_id": "IS 13432 (Part 2):1998",
+  "title": "Gas Leak Indicator for Use with Low Pressure Liquefied Petroleum Gas Burning Appliances, Part 2: Electronic type",
+  "ia_identifier": "IS_13432__PART_2_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies materials, construction, performance and testing requirements for gas leak detectors of mechanical type for use with lowpressure [2.942 kN/m? (30 gf/cm?) nominal gas inlet pressure] liquefied petroleum gas burning appliances. 1.1.1 For convenience this standard has been divided in two sections as follows: Section 1 Material and construction",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13432 (PART 1)",
+      "standard_id": "IS 13432 (Part 1):1992",
+      "title": "Gas leak detector for use with low pressure liquefied petroleum gas burning appliances, Part 1: Mechanical type",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 742",
+      "standard_id": "IS 742:1981",
+      "title": "Zinc base alloy die castings",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 617",
+      "standard_id": "IS 617:1994",
+      "title": "Aluminium and aluminium alloy ingots and castings for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 319",
+      "standard_id": "IS 319:2007",
+      "title": "Free Cutting Brass Bars, Rods and Section",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4454 (PART 4)",
+      "standard_id": "IS 4454 (Part 4):2001",
+      "title": "Steel Wires for Mechanical Springs, Part 4: Stainless Steel Wire",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4454 (PART 2)",
+      "standard_id": "IS 4454 (Part 2):2001",
+      "title": "Steel Wires for Mechanical Springs, Part II: Oil Hardened and Tempered Spring Steel Wire and Valve Spring Wire - Unalloyed",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7608",
+      "standard_id": "IS 7608:1987",
+      "title": "Phosphor bronze wire for general engineering purposes",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 513 (PART 1)",
+      "standard_id": "IS 513 (Part 1):2016",
+      "title": "Part 1 : 2016: Cold Reduced Carbon Steel Sheet and Strip Part 1 Cold Forming and Drawing Purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3168",
+      "standard_id": "IS 3168:1981",
+      "title": "Brass Strip and Foil for Deep Drawing",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1545",
+      "standard_id": "IS 1545:1994",
+      "title": "Solid drawn copper and copper alloy tubes for condenser and heat exc hangers",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2501",
+      "standard_id": "IS 2501:1995",
+      "title": "Solid Drawn Copper Tubes for General Engineering Purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 8119",
+      "standard_id": "IS 8119:1976",
+      "title": "Copper brazed steel tubing",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10779",
+      "standard_id": "IS 10779:1984",
+      "title": "Reference Coupler for the Calibration of Earphones Used in Audiometry",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2305",
+      "standard_id": "IS 2305:1988",
+      "title": "Method for mercurous nitrate test for copper and copper alloys",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5116",
+      "standard_id": "IS 5116:2020",
+      "title": "Domestic and Commercial Equipment for Use with LPG — General Requirements ( Fourth Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400 (PART 4)",
+      "standard_id": "IS 3400 (Part 4):2012",
+      "title": "Methods of Test for Vulcanized Rubbers, Part 4: Accelerated Ageing and Heat Resistance",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9798",
+      "standard_id": "IS 9798:2013",
+      "title": "Low Pressure Regulators for Use with Liquefied Petroleum Gas (LPG) Mixtures",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400 (PART 2)",
+      "standard_id": "IS 3400 (Part 2):2003",
+      "title": "Methods of Test for Vulcanized Rubber, Part 2: Rubber, Vulcanized or Thermoplastic - Determination of Hardness (Hardness Between 10 IRHD and 100 IRHD)",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 554",
+      "standard_id": "IS 554:1999",
+      "title": "Pipe Threads Where Pressure-Tight Joints are Made on the Threads - Dimensions, Tolerances and Designation",
+      "division_code": "CED",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2643",
+      "standard_id": "IS 2643:2005",
+      "title": "Pipe Threads Where Pressure-Tight Joints are not Made on the Threads - Dimensions, Tolerances and Designation",
+      "division_code": "CED",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4218",
+      "standard_id": "IS 4218",
+      "title": "Indian Standard Specification / Test Method (IS 4218)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4218 (PART 1)",
+      "standard_id": "IS 4218 (Part 1):2001",
+      "title": "ISO General Purpose Metric Screw Threads, Part 1: Basic and Design Profiles",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4218 (PART 2)",
+      "standard_id": "IS 4218 (Part 2):2001",
+      "title": "ISO General Purpose Metric Screw Threads, Part 2: General Plan",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4218 (PART 3)",
+      "standard_id": "IS 4218 (Part 3):1999",
+      "title": "ISO General Purpose Metric Screw Threads, Part 3: Basic Dimensions",
+      "division_code": "PGD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4218 (PART 4)",
+      "standard_id": "IS 4218 (Part 4):2001",
+      "title": "ISO General Purpose Metric Screw Threads, Part 4: Selected Sizes for Screws, Bolts and Nuts",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Gas",
+    "Gas Leak Indicator for Use with Low Pressure Liquefied Petroleum Gas Burning Appliances",
+    "Part 2: Electronic type"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "10.1 Detector shall be clearly and permanently",
+      "marked with the following:",
+      "Any other markings agreed to between the",
+      "10.1.1 BIS Certification Marking.",
+      "The gas leak detector may also be marked with the"
+    ]
+  },
+  "total_chars_parsed": 18937
+}

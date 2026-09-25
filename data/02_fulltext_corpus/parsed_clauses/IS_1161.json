@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_1161",
-  "standard_id": "IS IS_1161",
-  "title": "Indian Standard Specification / Test Method (IS IS_1161)",
+  "is_number": "IS 1161",
+  "standard_id": "IS 1161:2014",
+  "title": "Steel Tubes For Structural Purposes — Specification",
   "ia_identifier": "IS_1161",
-  "division_code": "GEN",
+  "division_code": "CED",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard covers the requirements for hot finished seamless (HFS), and electric resistance welded (ERW) or high frequency induction welded (HFIW) steel tubes for structural purposes.",
   "clause_2_normative_references": [
@@ -155,9 +155,7 @@
   "clause_3_terminology": [
     "Grade Tensile",
     "Grade YSt",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1161"
+    "Steel Tubes For Structural Purposes"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

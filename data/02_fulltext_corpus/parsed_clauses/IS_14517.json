@@ -1,0 +1,53 @@
+{
+  "is_number": "IS 14517",
+  "standard_id": "IS 14517:1998",
+  "title": "Fish Processing Industry - Water and Ice - Technical Requirements",
+  "ia_identifier": "IS_14517",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes the technical requirements for water and ice used in the fish processing industry.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 3025",
+      "standard_id": "IS 3025",
+      "title": "Indian Standard Specification / Test Method (IS 3025)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1622",
+      "standard_id": "IS 1622:1981",
+      "title": "Methods of sampling and microbiological examination of water",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Fish Processing Industry",
+    "Water and Ice",
+    "Technical Requirements"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "hardness as CaCOa, 600 n"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 8372
+}

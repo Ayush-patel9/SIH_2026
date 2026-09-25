@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_513",
-  "standard_id": "IS IS_513",
-  "title": "Indian Standard Specification / Test Method (IS IS_513)",
+  "is_number": "IS 513",
+  "standard_id": "IS 513:2008",
+  "title": "Cold reduced low carbon steel sheets and strips",
   "ia_identifier": "IS_513",
-  "division_code": "GEN",
+  "division_code": "MTD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard (Part 1) covers the requirements of cold reduced carbon steel sheets and strips for cold forming and drawing purpose and where the surface is of prime importance. It covers sheets and strips up to 4.0 mm thick both in coil form and cut lengths.",
   "clause_2_normative_references": [
@@ -165,15 +165,13 @@
   "clause_3_terminology": [
     "For the purpose of this standard the",
     "Classification of Grades",
-    "Grade Name",
+    "Grade Non-Ageing",
+    "Grade Strength",
+    "Grade CRI",
+    "Grade CRO",
     "Grade at",
-    "Grade of",
     "Grade Yield",
-    "Grade Temper",
-    "Grade eat",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_513"
+    "Cold reduced low carbon steel sheets and strips"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

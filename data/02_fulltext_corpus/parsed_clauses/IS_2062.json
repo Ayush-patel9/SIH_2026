@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_2062",
-  "standard_id": "IS IS_2062",
-  "title": "Indian Standard Specification / Test Method (IS IS_2062)",
+  "is_number": "IS 2062",
+  "standard_id": "IS 2062:2011",
+  "title": "Hot Rolled Medium and High Tensile Structural Steel",
   "ia_identifier": "IS_2062",
-  "division_code": "GEN",
+  "division_code": "CED",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard covers the requirements of steel including micro-alloyed steel plates, strips, shapes and sections (angles, tees, beams, channels, etc), flats, bars, etc, for use in structural work. 1.1.1 The steels are suitable for welded, bolted and riveted structures and for general engineering purposes: 1.1.2 Where welding is employed for fabrication and guaranteed-weldability is required, welding procedure should be as specified in 'Metal arc welding of carbon and carbon manganese steels — Recommendations (first revision)'.",
   "clause_2_normative_references": [
@@ -29,7 +29,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 2002",
@@ -349,9 +349,7 @@
     "Normalizing Rolling",
     "Grade of",
     "Grade deration",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_2062"
+    "Hot Rolled Medium and High Tensile Structural Steel"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

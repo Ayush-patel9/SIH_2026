@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_5522",
-  "standard_id": "IS IS_5522",
-  "title": "Indian Standard Specification / Test Method (IS IS_5522)",
+  "is_number": "IS 5522",
+  "standard_id": "IS 5522:2014",
+  "title": "Stainless Steel Sheets and Strips for Utensils Specification",
   "ia_identifier": "IS_5522",
-  "division_code": "GEN",
+  "division_code": "MTD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Stainless Steel Products (Quality Control) Order"
   },
   "clause_1_scope": "This standard covers the requirements for stainless steel in the form of sheets and strips for manufacture of utensils.",
   "clause_2_normative_references": [
@@ -124,9 +124,9 @@
   ],
   "clause_3_terminology": [
     "Grade rritic",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_5522"
+    "Stainless Steel Sheets and Strips for Utensils Specification",
+    "IS 5522 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

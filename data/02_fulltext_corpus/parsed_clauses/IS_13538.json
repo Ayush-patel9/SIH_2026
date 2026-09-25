@@ -1,0 +1,336 @@
+{
+  "is_number": "IS 13538",
+  "standard_id": "IS 13538:1993",
+  "title": "Centrifugal mixed flow and axial pumps - Code for hydraulic performance tests - Precision class",
+  "ia_identifier": "IS_13538",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 13538) covers Centrifugal mixed flow and axial pumps - Code for hydraulic performance tests - Precision class. This Indian Standard which is identical to ISO 5198 : 1987 'Centrifugal, mixed flow and axial pumps — Code for hydraulic performance tests ~ Precision class', issued by the International Organization for Standardization { ISO ), was adopted by the recommendation of the Pumps Sectional Committee ( HMD 20 ) and approval of the Heavy Mechanical Engineering Division Council. The text of ISO standard has been approved for publication as Indian Standard without deviations. Certain terminology and conventions are however not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma ( , ) has been used as a decimal marker while in Indian Standards, the current practice is to use a point ( . ) as the decimal marker. In this adopted standard, reference appears to certain International Standards for which Indian Standards also ex",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 5198",
+      "standard_id": "IS/ISO 5198",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5198)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 31",
+      "standard_id": "IS/ISO 31",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 31)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1890",
+      "standard_id": "IS 1890",
+      "title": "Indian Standard Specification / Test Method (IS 1890)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1890 (PART 2)",
+      "standard_id": "IS 1890 (Part 2):1995",
+      "title": "Quantities and Units, Part 2: Periodic and related phenomena",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1890 (PART 7)",
+      "standard_id": "IS 1890 (Part 7):1995",
+      "title": "Quantities and Units, Part 7: Acoustics",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 555",
+      "standard_id": "IS/ISO 555",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 555)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1438",
+      "standard_id": "IS/ISO 1438",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1438)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4359",
+      "standard_id": "IS/ISO 4359",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4359)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2548",
+      "standard_id": "IS/ISO 2548",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2548)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3534",
+      "standard_id": "IS/ISO 3534",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3534)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3555",
+      "standard_id": "IS/ISO 3555",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3555)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3846",
+      "standard_id": "IS/ISO 3846",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3846)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4373",
+      "standard_id": "IS/ISO 4373",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4373)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5167",
+      "standard_id": "IS/ISO 5167",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5167)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1890 (PART 12)",
+      "standard_id": "IS 1890 (Part 12):1995",
+      "title": "Quantites and units, Part 12: Characteristic numbers",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1890 (PART 13)",
+      "standard_id": "IS 1890 (Part 13):1997",
+      "title": "Quantities and units, Part 13: Solid state physics",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9163",
+      "standard_id": "IS 9163",
+      "title": "Indian Standard Specification / Test Method (IS 9163)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 91",
+      "standard_id": "IS 91",
+      "title": "Indian Standard Specification / Test Method (IS 91)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6062",
+      "standard_id": "IS 6062:1971",
+      "title": "Method of Measurement of Flow of Water in Open Channels Using Standing Wave Flume-fall",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4477",
+      "standard_id": "IS 4477",
+      "title": "Indian Standard Specification / Test Method (IS 4477)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2186",
+      "standard_id": "IS/ISO 2186",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2186)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2975",
+      "standard_id": "IS/ISO 2975",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2975)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3354",
+      "standard_id": "IS/ISO 3354",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3354)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3966",
+      "standard_id": "IS/ISO 3966",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3966)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4360",
+      "standard_id": "IS/ISO 4360",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4360)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5168",
+      "standard_id": "IS/ISO 5168",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5168)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7194",
+      "standard_id": "IS/ISO 7194",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7194)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8316",
+      "standard_id": "IS/ISO 8316",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8316)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6198",
+      "standard_id": "IS/ISO 6198",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6198)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4185",
+      "standard_id": "IS/ISO 4185",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4185)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade number",
+    "05 K",
+    "Centrifugal mixed flow and axial pumps",
+    "Code for hydraulic performance tests",
+    "Precision class"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerances, i.e. 1 %"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 241202
+}

@@ -1,0 +1,51 @@
+{
+  "is_number": "IS 1418",
+  "standard_id": "IS 1418:2009",
+  "title": "Determination of Gold in Gold Bullion, Gold Alloys and Gold Jewellery/Artefacts - Cupellation (Fire Assay) Method",
+  "ia_identifier": "IS_1418",
+  "division_code": "LITD",
+  "aspect": "Methods of tests",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes the cupellation or fire assay method for assaying of gold in gold bullion, gold alloys, and gold jewellery/artefacts covered in IS 1417.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1417",
+      "standard_id": "IS 1417:2016",
+      "title": "Gold and Gold Alloys, Jewellery/Artefacts - Fineness and Marking",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    }
+  ],
+  "clause_3_terminology": [
+    "Bullion",
+    "Cupellation",
+    "Inquartation",
+    "Parting",
+    "990 fineness",
+    "Determination of Gold in Gold Bullion",
+    "Gold Alloys and Gold Jewellery",
+    "Artefacts",
+    "Fire Assay",
+    "Method"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "lead foil, bead have been kept at 09,9 percent",
+      "Purity of lead foil, bead have been kept at 09,9 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 30507
+}

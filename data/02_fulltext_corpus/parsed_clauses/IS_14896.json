@@ -1,0 +1,154 @@
+{
+  "is_number": "IS 14896",
+  "standard_id": "IS 14896:2001",
+  "title": "Personal Computer",
+  "ia_identifier": "IS_14896",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers the general and performance requirements of the personal computer. Personal computer covered by this standard may comprise of the following: a) Personal computer module comprising of central processing unit (CPU), memory and various interfaces; b) Switch mode power supply (SMPS) unit; c) Keyboard (integral/detachable); and d) Floppy disk drive, hard disk drive and other secondary storage devices as per configuration supplied by manufacturer.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1885 (PART 52)",
+      "standard_id": "IS 1885 (Part 52):1980",
+      "title": "Electrotechnical Vocabulary, Part 52: Data Processing, Section 7: Digital Computer Programming",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13384 (PART 1)",
+      "standard_id": "IS 13384 (Part 1):1992",
+      "title": "Cathode Ray Tube Based Data Display Monitor, Part 1: Colour",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13384 (PART 2)",
+      "standard_id": "IS 13384 (Part 2):1997",
+      "title": "Cathode-ray tube based data display monitor, Part 2: Monochrome",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14441",
+      "standard_id": "IS 14441:1997",
+      "title": "keyboard",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13252",
+      "standard_id": "IS 13252:2003",
+      "title": "Information Technology Equipment -- Safety - General Requirements",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14700 (PART4/SEC2)",
+      "standard_id": "IS 14700 (PART4/SEC2)",
+      "title": "Indian Standard Specification / Test Method (IS 14700 (PART4/SEC2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14700 (PART 4/SEC 4)",
+      "standard_id": "IS 14700 (PART 4/SEC 4)",
+      "title": "Indian Standard Specification / Test Method (IS 14700 (PART 4/SEC 4))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 8)",
+      "standard_id": "IS 9000 (Part 8):1981",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 8: Vibration (sinusoidal) test",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 3/SEC 5)",
+      "standard_id": "IS 9000 (PART 3/SEC 5)",
+      "title": "Indian Standard Specification / Test Method (IS 9000 (PART 3/SEC 5))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 7/SEC 4)",
+      "standard_id": "IS 9000 (PART 7/SEC 4)",
+      "title": "Indian Standard Specification / Test Method (IS 9000 (PART 7/SEC 4))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 7/SEC 2)",
+      "standard_id": "IS 9000 (PART 7/SEC 2)",
+      "title": "Indian Standard Specification / Test Method (IS 9000 (PART 7/SEC 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade bruarv",
+    "Grade Tests",
+    "Personal Computer"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "8.1 Each personal computer shall be legibly and",
+      "indelibly marked with at least the following",
+      "a) Manufacturer's name or trademark;",
+      "c) Additional markings for safety, such as high",
+      "the marking by hand for 15 s with a piece of cloth"
+    ]
+  },
+  "total_chars_parsed": 14709
+}

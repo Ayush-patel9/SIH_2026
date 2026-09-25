@@ -1,20 +1,30 @@
 {
-  "is_number": "IS IS_11777__PART_12_",
-  "standard_id": "IS IS_11777__PART_12_",
-  "title": "Indian Standard Specification / Test Method (IS IS_11777__PART_12_)",
+  "is_number": "IS 11777 (PART 12)",
+  "standard_id": "IS 11777 (Part 12):1987",
+  "title": "Circular Connectors for Radio and Associated Sound Equipment for Frequencies Below 3 MHz Including DC, Part 12: Free Six-Socket Connector for Various Applications, Type 11777 IS-11",
   "ia_identifier": "IS_11777__PART_12_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_11777__PART_12_) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11777__PART_12_).",
+  "clause_1_scope": "This Indian Standard (IS 11777 (PART 12)) prescribes technical specifications, requirements, tolerances, and testing procedures for Circular Connectors for Radio and Associated Sound Equipment for Frequencies Below 3 MHz Including DC, Part 12: Free Six-Socket Connector for Various Applications, Type 11777 IS-11.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 11777",
       "standard_id": "IS 11777",
       "title": "Indian Standard Specification / Test Method (IS 11777)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11",
+      "standard_id": "IS 11",
+      "title": "Indian Standard Specification / Test Method (IS 11)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -44,9 +54,10 @@
   ],
   "clause_3_terminology": [
     "Grade 130-9",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11777__PART_12_"
+    "Circular Connectors for Radio and Associated Sound Equipment for Frequencies Below 3 MHz Including DC",
+    "Part 12: Free Six",
+    "Socket Connector for Various Applications",
+    "Type 11777 IS"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

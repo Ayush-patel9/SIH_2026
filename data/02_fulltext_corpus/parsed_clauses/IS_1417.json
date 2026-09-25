@@ -1,16 +1,26 @@
 {
-  "is_number": "IS IS_1417",
-  "standard_id": "IS IS_1417",
-  "title": "Indian Standard Specification / Test Method (IS IS_1417)",
+  "is_number": "IS 1417",
+  "standard_id": "IS 1417:2016",
+  "title": "Gold and Gold Alloys, Jewellery/Artefacts - Fineness and Marking",
   "ia_identifier": "IS_1417",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
-  "clause_1_scope": "1.1 This standard specifies based on gold content: a) Grades of fine gold and standard gold used for manufacture of bullion and coins, and b) Grades of gold alloy used in manufacture of jewellery/artefacts. 1.2 This standard also specifies the guidelines for marking of purity and other details on tested bullion, coins andjewellery/artefacts. NOTE — Artefacts cover medallions andutensils.",
+  "clause_1_scope": "1.1 This standard specifies eight grades of gold, used in the manufacture of jewellery/artefacts of gold, based on their gold content. 1.2 This standard also specifies the guidelines for marking of purity and other details on tested jewellery/ artefacts.",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS 8844",
+      "standard_id": "IS 8844",
+      "title": "Indian Standard Specification / Test Method (IS 8844)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS/ISO 9202",
       "standard_id": "IS/ISO 9202",
@@ -32,16 +42,6 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 15820",
-      "standard_id": "IS 15820:2009",
-      "title": "General requirement for competence of assaying and hallmarking centres",
-      "division_code": "LITD",
-      "aspect": "Product Specification",
-      "relation_type": "PRODUCT_SPECIFICATION",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 1418",
       "standard_id": "IS 1418:2009",
       "title": "Determination of Gold in Gold Bullion, Gold Alloys and Gold Jewellery/Artefacts - Cupellation (Fire Assay) Method",
@@ -57,14 +57,14 @@
     "Carat",
     "Fineness",
     "Fine Gold",
-    "Gold",
+    "Cold",
     "Gold Alloy",
     "Standard Gold",
-    "Bullion",
-    "Coin",
     "Grade Fineness",
     "9 carat",
-    "23k"
+    "2 Carat",
+    "23 carat",
+    "22 carat"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
@@ -76,5 +76,5 @@
       "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 11000
+  "total_chars_parsed": 15070
 }

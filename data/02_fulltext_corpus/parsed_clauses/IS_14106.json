@@ -1,0 +1,401 @@
+{
+  "is_number": "IS 14106",
+  "standard_id": "IS 14106:2018",
+  "title": "Direct Action Hand Pumps — Specification ( First Revision )",
+  "ia_identifier": "IS_14106",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 14106) covers Direct Action Hand Pumps — Specification ( First Revision ). This Indian Standard (First Revision) was adopted by the the Hand Pump Sectional Committee had been approved by the Mechanical Engineering Division Council. This standard was first published in 1996 and, since then, many suggestions were received for improvement. As a result Amendments 1, 2, 3, 4, 5 and 6 were issued. This Standard is being revised to incorporate the amendments issued and the suggestions received from time to time. Direct action hand pumps (DAHP) are installed on boreholes for water table depth up to 15m. A plunger is attached to the lower end of a pump rod, beneath the groundwater level and the user moves the pump rod in an up-and-down motion, using a T-bar handle. On the up-stroke, the plunger lifts water into the rising main, and replacement water is drawn into the cylinder through the foot valve. On the down-stroke, the foot valve closes, and water passes through a one-way valve in the plunger and is lifted on the next up-stroke. Direct action pumps operate without",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 2102 (PART 1)",
+      "standard_id": "IS 2102 (Part 1):1993",
+      "title": "General tolerances, Part 1: Tolerances for linear and angular dimensions without individual tolerance indications",
+      "division_code": "LITD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12818",
+      "standard_id": "IS 12818:2010",
+      "title": "unplasticized polyvinyl chloride (PVC-U)screen and casing pipes for bore/tubewell",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7834 (PART 1)",
+      "standard_id": "IS 7834 (Part 1):1987",
+      "title": "injection moulded PVC socket fittings with solvent cement joints for water supplies, Part 1: General requirements",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7328",
+      "standard_id": "IS 7328:2020",
+      "title": "Specification for Polyethylene Material for Moulding and Extrusion ( Third Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Polyethylene (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 14182",
+      "standard_id": "IS 14182:1994",
+      "title": "Solvent cement for use with unplasticized polyvinylchloride plastic pipe and fittings",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2062",
+      "standard_id": "IS 2062:2011",
+      "title": "Hot Rolled Medium and High Tensile Structural Steel",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 4454 (PART 1)",
+      "standard_id": "IS 4454 (Part 1):2001",
+      "title": "Steel Wires for Mechanical Springs, Part I: Patented and Cold Drawn Steel Wires - Unalloyed",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6603",
+      "standard_id": "IS 6603:2001",
+      "title": "Stainless Steel Bars and Flats",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9595",
+      "standard_id": "IS 9595:1996",
+      "title": "Metal arc welding of carbon and carbon manganese steels - Recommendations",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2811",
+      "standard_id": "IS 2811:1987",
+      "title": "Recommendations for Manual Tungsten Inert-gas Arc Welding of Austenitic Stainless Steel",
+      "division_code": "MED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5206",
+      "standard_id": "IS 5206:1983",
+      "title": "Covered electrodes for manual metal arc welding of stainless steel and other similar high alloy steels",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1367",
+      "standard_id": "IS 1367",
+      "title": "Indian Standard Specification / Test Method (IS 1367)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1367 (PART 2)",
+      "standard_id": "IS 1367 (Part 2):2002",
+      "title": "Technical Supply Conditions for Threaded Steel Fasteners, Part 2: Tolerances for Fasteners - Bolts, Screws, Studs and Nuts - Product Grades A, B and C",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2016",
+      "standard_id": "IS 2016:1967",
+      "title": "Plain Washers",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1239 (PART 1)",
+      "standard_id": "IS 1239 (Part 1):2004",
+      "title": "Steel Tubes, Tubulars and Other Wrought Steel Fittings, Part 1: Steel Tubes (BI-LINGUAL)",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 210",
+      "standard_id": "IS 210:2009",
+      "title": "Grey Iron Castings",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1573",
+      "standard_id": "IS 1573:1986",
+      "title": "Electroplated Coatings of Zinc on Iron and Steel",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4759",
+      "standard_id": "IS 4759:1996",
+      "title": "Hot-dip zinc coatings on structural steel and other allied products",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2629",
+      "standard_id": "IS 2629:1985",
+      "title": "Recommended Practice for Hot-Dip Galvanizing of Iron and Steel",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2500 (PART 1)",
+      "standard_id": "IS 2500 (Part 1):2000",
+      "title": "Sampling Inspection Procedures, Part 1: Attribute Sampling Plans Indexed by Acceptable Quality Limit (AQL) for Lot-by-Lot Inspection",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2082",
+      "standard_id": "IS 2082:2018",
+      "title": "Stationary Storage Type Electric Water Heaters- Specification (Fifth Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Electrical Appliances (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 2002",
+      "standard_id": "IS 2002:2009",
+      "title": "Steel plates for pressure vessels for intermediate and high temperature service including boilers",
+      "division_code": "MTD",
+      "aspect": "Service Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1239",
+      "standard_id": "IS 1239",
+      "title": "Indian Standard Specification / Test Method (IS 1239)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 20682",
+      "standard_id": "IS 20682",
+      "title": "Indian Standard Specification / Test Method (IS 20682)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1839",
+      "standard_id": "IS 1839",
+      "title": "Indian Standard Specification / Test Method (IS 1839)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 20622",
+      "standard_id": "IS 20622",
+      "title": "Indian Standard Specification / Test Method (IS 20622)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1363",
+      "standard_id": "IS 1363",
+      "title": "Indian Standard Specification / Test Method (IS 1363)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7834",
+      "standard_id": "IS 7834",
+      "title": "Indian Standard Specification / Test Method (IS 7834)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 88560",
+      "standard_id": "IS 88560",
+      "title": "Indian Standard Specification / Test Method (IS 88560)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8803",
+      "standard_id": "IS 8803:1987",
+      "title": "Coupling nuts for oil hydraulic system",
+      "division_code": "GEN",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2843",
+      "standard_id": "IS 2843:1964",
+      "title": "Recommendation on nominal capacities for process equipment",
+      "division_code": "MHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1363 (PART 2)",
+      "standard_id": "IS 1363 (Part 2):2002",
+      "title": "Hexagon Head Bolts, Screws and Nuts of Product Grade 'C', Part 2: Hexagon Head Screws (Size Range M 5 to M 64)",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 1363 (PART 3)",
+      "standard_id": "IS 1363 (Part 3):2002",
+      "title": "Hexagon Head Bolts, Screws and Nuts of Product Grade C, Part 3: Hexagon Nuts (Size Range M5 to M64)",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 2643",
+      "standard_id": "IS 2643:2005",
+      "title": "Pipe Threads Where Pressure-Tight Joints are not Made on the Threads - Dimensions, Tolerances and Designation",
+      "division_code": "CED",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3428",
+      "standard_id": "IS 3428:2009",
+      "title": "DIMENSIONS FOR RELIEF GROOVES",
+      "division_code": "GEN",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6481",
+      "standard_id": "IS 6481:1971",
+      "title": "Guide for principal uses and styles of fibreboard containers",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade FG",
+    "Grade No",
+    "Grade male",
+    "22k",
+    "Direct Action Hand Pumps",
+    "First Revision"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "Tensile strength: 800MPa",
+      "impact strength kg.cm",
+      "minimum tensile proof load of 2.5"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "8.1 The hand pumps complying with this standard shall",
+      "be durable and legibly marked in service with:",
+      "a) The pump head shall have a name plate with name",
+      "stand flange shall have steel punch impression of",
+      "manufacturer's identification mark deep enough"
+    ]
+  },
+  "total_chars_parsed": 37583
+}

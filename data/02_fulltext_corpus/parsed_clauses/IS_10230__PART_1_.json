@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_10230__PART_1_",
-  "standard_id": "IS IS_10230__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10230__PART_1_)",
+  "is_number": "IS 10230 (PART 1)",
+  "standard_id": "IS 10230 (Part 1):1982",
+  "title": "IF, RF transformers and inductors (coils): Part 1 General requirements and tests (Superseding IS:1512-1969)",
   "ia_identifier": "IS_10230__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -35,6 +35,16 @@
       "is_number": "IS 1519",
       "standard_id": "IS 1519",
       "title": "Indian Standard Specification / Test Method (IS 1519)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -133,18 +143,18 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade Sn",
-    "Grade LOTIH",
     "Grade LOTlS",
-    "Grade Sockets",
     "Grade Tests",
-    "Grade DCUlS",
+    "Grade Sn",
+    "Grade Sockets",
     "Grade ification",
+    "Grade DCUlS",
+    "Grade LOTIH",
     "Grade DGUIH",
     "10 K",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10230__PART_1_"
+    "RF transformers and inductors",
+    "coils",
+    "Part 1 General requirements and tests"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

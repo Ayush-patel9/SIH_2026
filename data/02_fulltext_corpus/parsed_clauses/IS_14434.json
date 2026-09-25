@@ -1,0 +1,335 @@
+{
+  "is_number": "IS 14434",
+  "standard_id": "IS 14434:2023",
+  "title": "Polycarbonate Moulding And Extrusion Materials Specification",
+  "ia_identifier": "IS_14434",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers the requirements, methods The standards listed in Annex A contain provisions of sampling and tests for both polycarbonate homo- which, through reference in this text, constitute provision of this standard.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 21305",
+      "standard_id": "IS/ISO 21305",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 21305)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2828",
+      "standard_id": "IS 2828:2001",
+      "title": "Plastics - Vocabulary",
+      "division_code": "GEN",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 8/SEC 8)",
+      "standard_id": "IS 13360 (PART 8/SEC 8)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 8/SEC 8))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360",
+      "standard_id": "IS 13360",
+      "title": "Indian Standard Specification / Test Method (IS 13360)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 3/SEC 10)",
+      "standard_id": "IS 13360 (PART 3/SEC 10)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 3/SEC 10))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 3/SEC 11)",
+      "standard_id": "IS 13360 (PART 3/SEC 11)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 3/SEC 11))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 3/SEC 12)",
+      "standard_id": "IS 13360 (PART 3/SEC 12)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 3/SEC 12))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 5/SEC 7)",
+      "standard_id": "IS 13360 (PART 5/SEC 7)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 5/SEC 7))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 5/SEC 5)",
+      "standard_id": "IS 13360 (PART 5/SEC 5)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 5/SEC 5))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1330 (PART 6/SEC 3)",
+      "standard_id": "IS 1330 (PART 6/SEC 3)",
+      "title": "Indian Standard Specification / Test Method (IS 1330 (PART 6/SEC 3))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 9/SEC 5)",
+      "standard_id": "IS 13360 (PART 9/SEC 5)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 9/SEC 5))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3396",
+      "standard_id": "IS 3396:1979",
+      "title": "Methods of test for volume and surface resistivities of solid electrical insulating materials",
+      "division_code": "ETD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4486",
+      "standard_id": "IS 4486:1967",
+      "title": "Recommended methods for the determination of the permittivity and dielectric dissipation factor of electrical insulating materials at power, audio and radio frequencies including metre wavelengths",
+      "division_code": "ETD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 6/SEC 3)",
+      "standard_id": "IS 13360 (PART 6/SEC 3)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 6/SEC 3))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9833",
+      "standard_id": "IS 9833:2018",
+      "title": "List of Colourants for Use in Plastics in Contact with Foodstuffs and Pharmaceuticals ( Second Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9845",
+      "standard_id": "IS 9845:1998",
+      "title": "Determination of Overall Migration of Constituents of Plastics Materials and Articles Intended to Come in Contact with Foodstuffs - Method of Analysis",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2491",
+      "standard_id": "IS 2491:2013",
+      "title": "Food Hygiene - General Principles - Code of Practice",
+      "division_code": "FAD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13360 (PART 2/SEC 3)",
+      "standard_id": "IS 13360 (PART 2/SEC 3)",
+      "title": "Indian Standard Specification / Test Method (IS 13360 (PART 2/SEC 3))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 24153",
+      "standard_id": "IS/ISO 24153",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 24153)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 294",
+      "standard_id": "IS/ISO 294",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 294)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1183",
+      "standard_id": "IS/ISO 1183",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1183)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1133",
+      "standard_id": "IS/ISO 1133",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1133)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 179",
+      "standard_id": "IS/ISO 179",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 179)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 178",
+      "standard_id": "IS/ISO 178",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 178)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 75",
+      "standard_id": "IS/ISO 75",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 75)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3451",
+      "standard_id": "IS/ISO 3451",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3451)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 127",
+      "standard_id": "IS 127",
+      "title": "Indian Standard Specification / Test Method (IS 127)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 38",
+      "standard_id": "IS 38:1976",
+      "title": "Antimony oxide for paints",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade rtilizers",
+    "Grade eding",
+    "Grade ed",
+    "Polycarbonate Moulding And Extrusion Materials Specification"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "moisture, but presence of moisture beyond 0.02 percent"
+    ],
+    "electrical_and_safety_parameters": [
+      "Dielectric strength, Min, 14 15 kV"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "products may be marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 84973
+}

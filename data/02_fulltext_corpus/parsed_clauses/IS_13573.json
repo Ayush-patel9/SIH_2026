@@ -1,0 +1,163 @@
+{
+  "is_number": "IS 13573",
+  "standard_id": "IS 13573:1992",
+  "title": "Joints and Terminations of Polymeric Cables for Working Voltages from 66kV Up To and Including 33 kV - Performance Requirements and Type Test",
+  "ia_identifier": "IS_13573",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard (Part 1) details the performance requirements and the test methods for type tests for cable accessories for use on cables of rated voltage from 1.1 kV to 3.3 kV(E). Once the accessories have been successfully type tested, then these tests need not be repeated unless changes are made in the cable accessory materials, design or manufacturing process which might affect the performance characteristics. Joints, indoor and outdoor terminations for extruded solid dielectric insulated cables are included. The service operating conditions of accessories shall be compatible with the service operating conditions of the cable.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13573 (PART 1)",
+      "standard_id": "IS 13573 (Part 1):2011",
+      "title": "Cable Accessories for Extruded Power Cables, Part 1: for Working Voltages for 1.1 kV upto and Including 3.3kV(E) - Test Methods and Test Requirements",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8308",
+      "standard_id": "IS 8308:1993",
+      "title": "Compression type tubular in-line connectors for aluminium conductors of insulated cables",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8309",
+      "standard_id": "IS 8309:1993",
+      "title": "Compression type tubular terminal ends for aluminium conductors of insulated cables",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8337",
+      "standard_id": "IS 8337:1976",
+      "title": "Performance requirements of compression joints of aluminium conductors in insulated cables",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1554 (PART 1)",
+      "standard_id": "IS 1554 (Part 1):1988",
+      "title": "PVC insulated (heavy duty) electric cables, Part 1: For working voltages up to and including 1 100 V",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7098 (PART 1)",
+      "standard_id": "IS 7098 (Part 1):1988",
+      "title": "Crosslinked polyethylene insulated PVC sheathed cables, Part 1: For working voltage upto and including 1 100 V",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 9968 (PART 1)",
+      "standard_id": "IS 9968 (Part 1):1988",
+      "title": "Elastomer insulated cables, Part 1: For working voltages upto and including 1 100 V",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14255",
+      "standard_id": "IS 14255:1995",
+      "title": "Aerial Bunched Cables for working voltagess upto and including 1100 Volts",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2071 (PART 1)",
+      "standard_id": "IS 2071 (Part 1):1993",
+      "title": "High voltage test techniques, Part 1: General definitions and test requirements",
+      "division_code": "ETD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 150",
+      "standard_id": "IS 150:1950",
+      "title": "Ready mixed paint, brushing, finishing, stoving for enamel color as required",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8130",
+      "standard_id": "IS 8130:2013",
+      "title": "Conductors for Insulated Electric Cables and Flexible Cords",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2071",
+      "standard_id": "IS 2071",
+      "title": "Indian Standard Specification / Test Method (IS 2071)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Joint",
+    "Rigid Joint",
+    "Non-rigid Joint",
+    "Type of Joints",
+    "Stop End",
+    "Cable Crutch",
+    "Outdoor Termination",
+    "Type Tests",
+    "Grade Tests",
+    "Joints and Terminations of Polymeric Cables for Working Voltages from 66kV Up To and Including 33 kV",
+    "Performance Requirements and Type Test"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "rated voltage less than 3.3 kV",
+      "rated voltage from 1.1 kV",
+      "insulation resistance measurement in accordance with 8.4 w"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 52804
+}

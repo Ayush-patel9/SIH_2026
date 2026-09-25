@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_10151",
-  "standard_id": "IS IS_10151",
-  "title": "Indian Standard Specification / Test Method (IS IS_10151)",
+  "is_number": "IS 10151",
+  "standard_id": "IS 10151:2019",
+  "title": "Polyvinyl Chloride (PVC) and its Copolymers for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water — Specification ( First Revision )",
   "ia_identifier": "IS_10151",
-  "division_code": "GEN",
+  "division_code": "FAD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard specifies the requirements and methods of sampling and test for polyvinyl chloride (PVC) and its copolymers for the manufacture of plastic items used in contact with foodstuffs, pharmaceuticals and drinking water. 1.2 This standard does not purport to establish the suitability of the packaging media with particular foodstuff, pharmaceutical and drinking water, from other than toxicological considerations.",
   "clause_2_normative_references": [
@@ -73,9 +73,10 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10151"
+    "Polyvinyl Chloride",
+    "and its Copolymers for its Safe Use in Contact with Foodstuffs",
+    "Pharmaceuticals and Drinking Water",
+    "First Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

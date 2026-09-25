@@ -1,0 +1,78 @@
+{
+  "is_number": "IS 13135",
+  "standard_id": "IS 13135:1991",
+  "title": "Automotive vehicles - Electronic flashers",
+  "ia_identifier": "IS_13135",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies requirements and methods of tests for electronic flashers for automotive applications, working on 6, 12 and 24 V battery system for direction and for hazard warning.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13115",
+      "standard_id": "IS 13115:1991",
+      "title": "B): Portable First Aid Kit for General Use (Bi-lingual)",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1248",
+      "standard_id": "IS 1248",
+      "title": "Indian Standard Specification / Test Method (IS 1248)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10250",
+      "standard_id": "IS 10250:1982",
+      "title": "Severities for Environmental Test for Automotive Electrical Equipment",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 102",
+      "standard_id": "IS 102",
+      "title": "Indian Standard Specification / Test Method (IS 102)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Direction Indicator",
+    "Hazard Warning Indicator",
+    "Fiasher(FIaslierUnit",
+    "Defects",
+    "Type Testa",
+    "Acceptance Tests",
+    "Routine Tests",
+    "Grade rfomuHice",
+    "Automotive vehicles",
+    "Electronic flashers"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 15256
+}

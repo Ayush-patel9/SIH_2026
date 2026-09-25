@@ -1,0 +1,51 @@
+{
+  "is_number": "IS 12920",
+  "standard_id": "IS 12920:1990",
+  "title": "Brush, drain cleaning (without handle)",
+  "ia_identifier": "IS_12920",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes the requirements and the methods of sampling and test for brushes, drain cleaning.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 14834",
+      "standard_id": "IS 14834:2000",
+      "title": "Lindane Dusting Powder",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8960",
+      "standard_id": "IS 8960:1978",
+      "title": "Methyl Parathion Dusting Powders",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Brush",
+    "drain cleaning",
+    "without handle"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "each brush shall be legibly and indelibly marked",
+      "manufacturer, if any, size and the batch number."
+    ]
+  },
+  "total_chars_parsed": 15988
+}

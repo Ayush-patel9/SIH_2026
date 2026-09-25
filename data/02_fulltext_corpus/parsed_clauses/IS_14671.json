@@ -1,0 +1,80 @@
+{
+  "is_number": "IS 14671",
+  "standard_id": "IS 14671:1999",
+  "title": "Code of practice for instalation and maintenance of hydraulic lifts",
+  "ia_identifier": "IS_14671",
+  "division_code": "LITD",
+  "aspect": "Code of Practice",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard deals with hydraulic lifts, where the car is directly or indirectly driven by the action of one or more hydraulic jacks and whereby the down movement even with the empty car, takes places due to gravitational force. The standard is intended to assist potential users and manufacturers of hydraulic lifts who are already familiar with electric lifts complying with existing Indian Standards (IS 1860^18 4666, etc) and in order to maximize the number of components common to both types of lifts.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1860",
+      "standard_id": "IS 1860",
+      "title": "Indian Standard Specification / Test Method (IS 1860)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9803",
+      "standard_id": "IS 9803",
+      "title": "Indian Standard Specification / Test Method (IS 9803)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4666",
+      "standard_id": "IS 4666",
+      "title": "Indian Standard Specification / Test Method (IS 4666)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2365",
+      "standard_id": "IS 2365:2018",
+      "title": "Steel Wire Suspension Ropes for Lifts, Elevators and Hoists — Specification ( Second Revision )",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Hydraulic Lifts",
+    "Direct Acting Type Hydraulic Lifts",
+    "Indirect Acting Type Hydraulic Lift",
+    "Jack",
+    "SingJe-Acting Jack",
+    "Car-Frame or Car Sling",
+    "Full Load Pressure",
+    "Shut-Off Valve",
+    "Pressure Relief Valve",
+    "Down Direction Valve",
+    "Rupture Valve",
+    "Electrical Anti-creep System"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 19764
+}

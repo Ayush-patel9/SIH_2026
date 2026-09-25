@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_1169",
-  "standard_id": "IS IS_1169",
-  "title": "Indian Standard Specification / Test Method (IS IS_1169)",
+  "is_number": "IS 1169",
+  "standard_id": "IS 1169:1967",
+  "title": "Electric pedestal type fans and regulators",
   "ia_identifier": "IS_1169",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "Amendment to IS IS_1169 (Indian Standard Specification / Test Method (IS IS_1169)): AMENDMENT NO. 4 DECEMBER 1979 TO ISM 169-1 967 SPECIFICATION FOR ELECTRIC PEDESTAL TYPE FANS AND REGULATORS (First Revision) Alterations ( Page 13, clause 16.2.1, Note ) - Substitute the following for the existing note: NOTE - Fans up to and including 400 mm sweep may be tested in the test chamber specified in IS : 555- 1967* . {Page 13, clause 16.2.1.2, Note) - Substitute the following for the existing note: 'NOTE - Fans up to and including 400 mm sweep, the distance from the walls may be in line with IS:555-1967*.' (ETDC 5) Printed at Simco Printing Press, Delhi, India AMENDMENT NO. 5 NOVEMB",
+  "clause_1_scope": "Amendment to IS 1169 (Electric pedestal type fans and regulators): AMENDMENT NO. 4 DECEMBER 1979 TO ISM 169-1 967 SPECIFICATION FOR ELECTRIC PEDESTAL TYPE FANS AND REGULATORS (First Revision) Alterations ( Page 13, clause 16.2.1, Note ) - Substitute the following for the existing note: NOTE - Fans up to and including 400 mm sweep may be tested in the test chamber specified in IS : 555- 1967* . {Page 13, clause 16.2.1.2, Note) - Substitute the following for the existing note: 'NOTE - Fans up to and including 400 mm sweep, the distance from the walls may be in line with IS:555-1967*.' (ETDC 5) Printed at Simco Printing Press, Delhi, India AMENDMENT NO. 5 NOVEMB",
   "clause_2_normative_references": [
     {
       "is_number": "IS 555",
@@ -29,7 +29,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1709",
@@ -189,7 +189,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1401",
@@ -223,17 +223,15 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade of",
-    "Grade tests",
-    "Grade Fan",
     "Grade Tests",
-    "Grade Adjustable",
     "Grade bruary",
     "Grade ification",
+    "Grade of",
     "Grade Test",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1169"
+    "Grade tests",
+    "Grade Fan",
+    "Grade Adjustable",
+    "Electric pedestal type fans and regulators"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

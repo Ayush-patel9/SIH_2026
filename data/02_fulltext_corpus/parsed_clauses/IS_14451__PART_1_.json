@@ -1,0 +1,155 @@
+{
+  "is_number": "IS 14451 (PART 1)",
+  "standard_id": "IS 14451 (Part 1):1998",
+  "title": "Telemetering of consumption and demand (Part 1) impulse transmitting and receiving devicces",
+  "ia_identifier": "IS_14451__PART_1_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard applies to telemetering apparatus intended to operate in conjunction with ax. static electrical energy meters, in particular for billing and statistical purposes. 1.2 This standard covers telemetering apparatus consisting of : i) A Master Unit with built in communication interface which receives actual meter values from one or more Slave Units. The information received is either displayed, stored, recorded or mathematically processed (for example in Summation Units) by the Master Unit. ii) One or more Slave Units which are essentially a.c, static electrical energy meters with built in Communication Interface, which respond to the commands received from the Master Unit by transmitting actual meter values. 1.3 This standard is applicable regardless of the distance between the Master and Slave Units of the telemetering system. 1.4 This standard does not apply to : i) Telemetering systems transmitting information in an analog form, for example by means of a voltage or current proportional to the measured electrical parameters from the Slave Unit(s). ii) Telemetering systems employing exclusively impulsing devices. NOTE — Such systems have been covered by Part I of this standard. iii) Meter Reading Instruments (MRI), which are portable devices used for collection, temporary storage and transfer of data. 1.5 This standard does not cover the channels or media of communication between the Master and Slave Units, such as wired media, telephone lines, radio, optical fibres, microwave, etc; since these channels and media should comply to the appropriate documents /standards. 1.6 Data conversion or modulation devices, if employed, shall be covered by this standard if they form an integral part of the telemetering system.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 14451 (PART 2)",
+      "standard_id": "IS 14451 (Part 2):1999",
+      "title": "Telemetering for Consumption and Demands, Part 2: Direct Digital Transfer of Meter Values",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14451(PART2)",
+      "standard_id": "IS 14451(PART2)",
+      "title": "Indian Standard Specification / Test Method (IS 14451(PART2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13779",
+      "standard_id": "IS 13779:2020",
+      "title": "ac STATIC WATTHOUR METERS CLASS 1 AND 2-Specefication",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 11731",
+      "standard_id": "IS 11731",
+      "title": "Indian Standard Specification / Test Method (IS 11731)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12063",
+      "standard_id": "IS 12063",
+      "title": "Indian Standard Specification / Test Method (IS 12063)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11731 (PART 1)",
+      "standard_id": "IS 11731 (Part 1):1986",
+      "title": "Methods of test for determination of the flammability of solid electrical insulating materials when exposed to an igniting source, Part 1: Horizontal specimen method",
+      "division_code": "ETD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 7/SEC 1)",
+      "standard_id": "IS 9000 (PART 7/SEC 1)",
+      "title": "Indian Standard Specification / Test Method (IS 9000 (PART 7/SEC 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 8)",
+      "standard_id": "IS 9000 (Part 8):1981",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 8: Vibration (sinusoidal) test",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 5/SEC 1)",
+      "standard_id": "IS 9000 (PART 5/SEC 1)",
+      "title": "Indian Standard Specification / Test Method (IS 9000 (PART 5/SEC 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2071",
+      "standard_id": "IS 2071",
+      "title": "Indian Standard Specification / Test Method (IS 2071)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6842",
+      "standard_id": "IS 6842",
+      "title": "Indian Standard Specification / Test Method (IS 6842)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Supporting Meter",
+    "Slave Unit",
+    "Master Unit",
+    "Summation Unit",
+    "Remote Meter Reading Unit",
+    "Optical Isolation",
+    "Grade of",
+    "Grade Tests",
+    "20K",
+    "Telemetering of consumption and demand",
+    "Part 1",
+    "impulse transmitting and receiving devicces"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "power factor conditions. A"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "7.1 The Slave Unit shall be marked as per the relevant",
+      "7.2 The Master Unit shall bear the following",
+      "a) Manufacturers name (or trade-mark) and place",
+      "required space for approval mark.",
+      "voltage marking is given below :"
+    ]
+  },
+  "total_chars_parsed": 41307
+}

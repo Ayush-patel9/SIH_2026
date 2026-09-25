@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_11179",
-  "standard_id": "IS IS_11179",
-  "title": "Indian Standard Specification / Test Method (IS IS_11179)",
+  "is_number": "IS 11179",
+  "standard_id": "IS 11179:2005",
+  "title": "Information Processing - Magnetic Ink Character Recognition - Print Specification",
   "ia_identifier": "IS_11179",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_11179) covers Indian Standard Specification / Test Method (IS IS_11179). This Indian Standard (First Revision) which is identical with ISO 1004 : 1995 'Information processing — Magnetic ink character recognition — Print Specifications' issued by the International Organization for Standardization (ISO) was adopted by the Banking and Financial Services Sectional Committee and approval of the Management and Systems Division Council. The text of the International Standard has been approved as suitable for publication as an Indian Standard with certain deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice is to use a point (.) as the decimal marker. Annexes A to D are for information only. ISO 1004 : 1995 Indian Standard INFORMATION PROCESSING — MAGNETIC INK",
+  "clause_1_scope": "This Indian Standard (IS 11179) covers Information Processing - Magnetic Ink Character Recognition - Print Specification. This Indian Standard (First Revision) which is identical with ISO 1004 : 1995 'Information processing — Magnetic ink character recognition — Print Specifications' issued by the International Organization for Standardization (ISO) was adopted by the Banking and Financial Services Sectional Committee and approval of the Management and Systems Division Council. The text of the International Standard has been approved as suitable for publication as an Indian Standard with certain deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice is to use a point (.) as the decimal marker. Annexes A to D are for information only. ISO 1004 : 1995 Indian Standard INFORMATION PROCESSING — MAGNETIC INK",
   "clause_2_normative_references": [
     {
       "is_number": "IS/ISO 1004",
@@ -28,6 +28,16 @@
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -70,6 +80,16 @@
       "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -77,9 +97,9 @@
     "0 K",
     "15 k",
     "1 k",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11179"
+    "Information Processing",
+    "Magnetic Ink Character Recognition",
+    "Print Specification"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

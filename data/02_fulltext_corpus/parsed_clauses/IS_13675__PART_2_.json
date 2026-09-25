@@ -1,0 +1,178 @@
+{
+  "is_number": "IS 13675 (PART 2)",
+  "standard_id": "IS 13675 (Part 2):1993",
+  "title": "Remote operations in text communication for information processing systems, Part 2: Protocol specification",
+  "ia_identifier": "IS_13675__PART_2_",
+  "division_code": "LITD",
+  "aspect": "System Standard",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of ISO/IEC 9072 specifies the protocol (abstract syntax) and procedures for the Remote Operation Service Element (part 1 of this International Standard). The ROSE services are provided in conjunction with the Association Control Service Element (ACSE) services (ISO 8649) and the ACSE protocol (ISO 8650), optionally the Reliable Transfer Service Element (RTSE) services (ISO/IEC 9066-1) and the RTSE protocol (ISO/IEC 9066-2), and the presentationservice (ISO 8822). The ROSE procedures are defined in terms of a) the interactions between peer ROSE protocol machines through the use of RTSE services or the presentation-service; b) the interactions between the ROSE protocol machine and its service-user. This part of ISO/IEC 9072 specifies conformance requirements for systems implementing these procedures.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13675",
+      "standard_id": "IS 13675",
+      "title": "Indian Standard Specification / Test Method (IS 13675)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 9072",
+      "standard_id": "IS/IEC 9072",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 9072)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 9066",
+      "standard_id": "IS/IEC 9066",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 9066)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12373",
+      "standard_id": "IS 12373",
+      "title": "Indian Standard Specification / Test Method (IS 12373)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13767",
+      "standard_id": "IS 13767:1993",
+      "title": "Optics - Optical instruments - Contact lenses - Vocabulary and symbols",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13707",
+      "standard_id": "IS 13707",
+      "title": "Indian Standard Specification / Test Method (IS 13707)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8649",
+      "standard_id": "IS/ISO 8649",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8649)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8650",
+      "standard_id": "IS/ISO 8650",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8650)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8822",
+      "standard_id": "IS/ISO 8822",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8822)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 7498",
+      "standard_id": "IS/IEC 7498",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 7498)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8824",
+      "standard_id": "IS/ISO 8824",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8824)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8825",
+      "standard_id": "IS/ISO 8825",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8825)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 8824",
+      "standard_id": "IS/IEC 8824",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 8824)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 90721",
+      "standard_id": "IS/ISO 90721",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 90721)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Reference Model definitions",
+    "Service conventions definitions",
+    "Presentation service definitions",
+    "Association control definitions",
+    "Reliable Transfer definitions",
+    "ROSE service definitions",
+    "Remote Operation protocol",
+    "Grade RO-INVOKE",
+    "Remote operations in text communication for information processing systems",
+    "Part 2: Protocol specification"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 57917
+}

@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_1786",
-  "standard_id": "IS IS_1786",
-  "title": "Indian Standard Specification / Test Method (IS IS_1786)",
+  "is_number": "IS 1786",
+  "standard_id": "IS 1786:2008",
+  "title": "High strength deformed steel bars and wires for concrete reinforcement-",
   "ia_identifier": "IS_1786",
-  "division_code": "GEN",
+  "division_code": "CED",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard covers the requirements of deformed steel bars and wires for use as reinforcement in concrete, in the following strength grades: a) Fe415,Fe415D; b) Fe 500, Fe SOQD; c) Fe 550, Fe 550D; and d) Fe 600. NOTES 1 Ths Tigures following' the s^rnbol F? indiCiitc th? sncc^ficd minimum 0.2 percent proof stress or yield stress in N/mm-.",
   "clause_2_normative_references": [
@@ -59,7 +59,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1608",

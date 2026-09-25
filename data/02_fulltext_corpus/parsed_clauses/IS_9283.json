@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_9283",
-  "standard_id": "IS IS_9283",
-  "title": "Indian Standard Specification / Test Method (IS IS_9283)",
+  "is_number": "IS 9283",
+  "standard_id": "IS 9283:2013",
+  "title": "Motors for Submersible Pumpsets",
   "ia_identifier": "IS_9283",
   "division_code": "GEN",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard specifies technical requirements of submersible motors for submersible pumpsets commonly used in bore holes (bore-wells or tube wells) and submersible pumpsets commonly used in open wells for handling clear, cold and fresh water for application in agriculture, water supply, etc.",
   "clause_2_normative_references": [
@@ -139,7 +139,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1570 (PART 5)",
@@ -246,14 +246,12 @@
     "Wet Type Water Filled Submersible Motors",
     "Wet Type Oil Filled Submersible Motors",
     "Resin Filled Submersible Motors",
-    "Grade of",
-    "Grade SI",
     "Grade 130",
+    "Grade Water",
     "Grade Tests",
+    "Grade of",
     "Grade Bore",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_9283"
+    "Motors for Submersible Pumpsets"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -4,6 +4,11 @@ import json
 import re
 from typing import Dict, Any, List, Optional
 
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
 MASTER_CATALOG_FILE = os.path.join(DATA_DIR, "01_master_catalog", "unified_standards.json")
 QCO_MATRIX_FILE = os.path.join(DATA_DIR, "03_regulatory_qco", "qco_mapping_matrix.json")
@@ -45,10 +50,13 @@ class StandardsEngine:
         
         # Check direct vernacular mapping
         if q_norm in self.synonyms:
-            target_is = self.synonyms[q_norm]
-            print(f" [Multilingual Match] '{query}' -> mapped to {target_is}")
-            std = self.get_standard(target_is)
-            return [std] if std else []
+            syn_entry = self.synonyms[q_norm]
+            target_is = syn_entry.get("is_ref") if isinstance(syn_entry, dict) else syn_entry
+            print(f" [Multilingual Match] '{query}' -> mapped to {target_is} ({syn_entry})")
+            if target_is:
+                std = self.get_standard(target_is)
+                if std:
+                    return [std]
             
         # Search IS number pattern e.g. "IS 1786" or "1786"
         is_match = re.search(r"(?:IS\s*)?(\d{2,5}(?:\s*\(Part\s*\d+\))?)", query, re.IGNORECASE)

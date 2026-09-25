@@ -1,21 +1,42 @@
 {
-  "is_number": "IS IS_11226",
-  "standard_id": "IS IS_11226",
-  "title": "Indian Standard Specification / Test Method (IS IS_11226)",
+  "is_number": "IS 11226",
+  "standard_id": "IS 11226:1993",
+  "title": "Leather safety footwear having direct moulded rubber sole",
   "ia_identifier": "IS_11226",
-  "division_code": "GEN",
+  "division_code": "CHD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard prescribes the requirements, methods of sampling and tests for leather safeU footwear having steel toe caps and direct moulded rubber soles.",
-  "clause_2_normative_references": [],
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13",
+      "standard_id": "IS 13",
+      "title": "Indian Standard Specification / Test Method (IS 13)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
   "clause_3_terminology": [
     "Grade of",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11226"
+    "Leather safety footwear having direct moulded rubber sole",
+    "IS 11226 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

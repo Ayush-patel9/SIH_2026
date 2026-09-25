@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_17633",
-  "standard_id": "IS IS_17633",
-  "title": "Indian Standard Specification / Test Method (IS IS_17633)",
+  "is_number": "IS 17633",
+  "standard_id": "IS 17633:2022",
+  "title": "Tables and Desks - Specification",
   "ia_identifier": "IS_17633",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Furniture (Quality Control) Order, 2024"
   },
   "clause_1_scope": "1.1 This standard covers the requirements relating to the performance and safety that is, strength, stability and durability of tables and desks to be used for in a seated and/or standing positions, used by adults. 12 This standard applies to completely manufactured/ fabricated tables and desks. It also applies to ready-to-assemble units; in that case the requirements of this standard shall apply to the assembled units.",
   "clause_2_normative_references": [
@@ -89,7 +89,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Safety Glass (Quality Control) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 3400 (PART 2)",
@@ -139,10 +139,7 @@
     "Stability Tests",
     "Strength Tests",
     "Surface Finish Tests",
-    "Tables and Desks",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_17633"
+    "Tables and Desks"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_12",
-  "standard_id": "IS IS_12",
-  "title": "Indian Standard Specification / Test Method (IS IS_12)",
+  "is_number": "IS 12",
+  "standard_id": "IS 12:2005",
+  "title": "Guide for drafting and presentation of Indian Standards",
   "ia_identifier": "IS_12",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -43,11 +43,11 @@
     },
     {
       "is_number": "IS/IEC 60529",
-      "standard_id": "IS/IEC 60529",
-      "title": "Indian Standard Specification / Test Method (IS/IEC 60529)",
+      "standard_id": "IS/IEC 60529:2001",
+      "title": "IS/IEC 60529: Degrees of protection provided by enclosures (IP CODE)",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -129,7 +129,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 9968 (PART 1)",
@@ -185,6 +185,16 @@
       "is_number": "IS 275",
       "standard_id": "IS 275",
       "title": "Indian Standard Specification / Test Method (IS 275)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -273,17 +283,15 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade reference",
-    "Grade of",
-    "Grade Terminal",
-    "Grade Socket",
+    "Grade Terminals",
     "Grade rrous",
+    "Grade Terminal",
     "Grade Rated",
     "Grade ification",
-    "Grade Terminals",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12"
+    "Grade reference",
+    "Grade Test",
+    "Grade II",
+    "Guide for drafting and presentation of Indian Standards"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

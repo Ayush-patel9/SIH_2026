@@ -1,10 +1,10 @@
 {
-  "is_number": "IS IS_12235",
-  "standard_id": "IS IS_12235",
-  "title": "Indian Standard Specification / Test Method (IS IS_12235)",
+  "is_number": "IS 12235",
+  "standard_id": "IS 12235:2004",
+  "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test",
   "ia_identifier": "IS_12235",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Methods of tests",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
@@ -19,7 +19,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS/ISO 161",
@@ -459,11 +459,10 @@
     "Load (F",
     "Length (L",
     "Ring Stiffness (S",
-    "Grade NOTE",
-    "Grade Socket",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12235"
+    "Grade d90",
+    "Grade Rs",
+    "to 19: Thermoplastics Pipes and Fittings",
+    "Methods of Test"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

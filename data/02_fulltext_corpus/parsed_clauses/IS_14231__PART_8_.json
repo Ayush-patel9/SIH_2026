@@ -1,0 +1,113 @@
+{
+  "is_number": "IS 14231 (PART 8)",
+  "standard_id": "IS 14231 (Part 8):2002",
+  "title": "Cabled Distribution Systems for Television and Sound Signals, Part 8: System Performance of Return Path",
+  "ia_identifier": "IS_14231__PART_8_",
+  "division_code": "LITD",
+  "aspect": "System Standard",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of lEC 60728 lays down the measuring methods, performance requirements and data publication requirements of optical equipment of cable networks for television signals, sound signals and interactive services. This standard - applies to all optical transmitters, receivers, amplifiers, splitters, directional couplers, isolators, multiplexers, connectors and splices used in cable networks; - covers the frequency range 5 MHz to 3 000 MHz; NOTE The upper limit of 3 000 MHz is an example, but not a strict value. The frequency range or ranges, over which the equipment is specified, shall be published. - identifies guaranteed performance requirements for certain .parameters; - lays down data publication requirements with guaranteed performance; - describes methods of measurement for compliance testing. All requirements and published data relate to minimum performance levels within the specified frequency range and in well-matched conditions as might be applicable to cable networks for television signals, sound signals and interactive services.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 14231 (PART 10)",
+      "standard_id": "IS 14231 (Part 10):2003",
+      "title": "Cable Distribution System for Television and Sound Signals, Part 10: Optical Equipment",
+      "division_code": "ETD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13420 (PART 1)",
+      "standard_id": "IS 13420 (Part 1):2002",
+      "title": "Cabled Distribution Systems for Television and Sound Signals, Part 1: Methods of Measurement and System Performance",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14231 (PART 3)",
+      "standard_id": "IS 14231 (Part 3):1995",
+      "title": "Cabled Distribution Systems for Television and Sound Signals, Part 3: Active Coaxial Wideband Distribution Components",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14231 (PART 5)",
+      "standard_id": "IS 14231 (Part 5):1995",
+      "title": "Cabled Distribution System for Television and Sound Signals, Part 5: Headend",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60728",
+      "standard_id": "IS/IEC 60728",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60728)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16270",
+      "standard_id": "IS 16270:2014",
+      "title": "Secondary Cells and Batteries for Solar Photovoltaic Application — General Requirements and Methods of Test",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": true,
+      "qco_order": "Electronics & IT Goods (Compulsory Registration) Order - "
+    },
+    {
+      "is_number": "IS 14231",
+      "standard_id": "IS 14231",
+      "title": "Indian Standard Specification / Test Method (IS 14231)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Cabled Distribution Systems for Television and Sound Signals",
+    "Part 8: System Performance of Return Path"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "density of the amplifier in A/VHz. N"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 88492
+}

@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_2878",
-  "standard_id": "IS IS_2878",
-  "title": "Indian Standard Specification / Test Method (IS IS_2878)",
+  "is_number": "IS 2878",
+  "standard_id": "IS 2878:2004",
+  "title": "Fire Extinguisher, Carbon Dioxide Type (Portable and Trolley Mounted) -Specification",
   "ia_identifier": "IS_2878",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Fire Fighting Equipment (Quality Control) Order"
   },
   "clause_1_scope": "This standard covers the requirements regarding material, shape, construction and performance test of carbon dioxide fire extinguishers ( portable and trolley mounted ).",
   "clause_2_normative_references": [
@@ -123,16 +123,16 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade Cu",
-    "Grade of",
-    "Grade atures",
-    "Grade bruary",
-    "Grade ification",
     "Grade Fire",
+    "Grade Cu",
+    "Grade bruary",
+    "Grade atures",
+    "Grade ification",
+    "Grade of",
     "6 K",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_2878"
+    "Fire Extinguisher",
+    "Carbon Dioxide Type",
+    "Portable and Trolley Mounted"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

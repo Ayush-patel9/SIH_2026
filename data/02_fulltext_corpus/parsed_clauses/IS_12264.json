@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_12264",
-  "standard_id": "IS IS_12264",
-  "title": "Indian Standard Specification / Test Method (IS IS_12264)",
+  "is_number": "IS 12264",
+  "standard_id": "IS 12264:1987",
+  "title": "Signaling Mirror for Lifeboats and Liferafts for Sea-going Ships (Hindi Edition)",
   "ia_identifier": "IS_12264",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_12264) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_12264).",
+  "clause_1_scope": "This Indian Standard (IS 12264) prescribes technical specifications, requirements, tolerances, and testing procedures for Signaling Mirror for Lifeboats and Liferafts for Sea-going Ships (Hindi Edition).",
   "clause_2_normative_references": [
     {
       "is_number": "IS 6911",
@@ -42,6 +42,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 1260 (PART 2)",
       "standard_id": "IS 1260 (Part 2):1999",
       "title": "Pictorial Marking for Handling and Labelling of Goods, Part 2: General Goods",
@@ -63,11 +73,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade Conforming",
     "Grade tests",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12264"
+    "Grade Conforming",
+    "Signaling Mirror for Lifeboats and Liferafts for Sea",
+    "going Ships",
+    "Hindi Edition"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

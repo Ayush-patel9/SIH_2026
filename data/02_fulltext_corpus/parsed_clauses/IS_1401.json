@@ -1,0 +1,61 @@
+{
+  "is_number": "IS 1401",
+  "standard_id": "IS 1401:2008",
+  "title": "Protection of persons and equipment by enclosures - Probes for verification",
+  "ia_identifier": "IS_1401",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 1401) covers Protection of persons and equipment by enclosures - Probes for verification. This Indian Standard (Second Revision) which is identical with lEC 61032 : 1997 'Protection of persons and equipment by enclosures — Probes for verification' issued by the international Electrotechnical Commission (lEC) was adopted by the recommendation of the Electrical Appliances Sectional Committee and approval of the Electrotechnical Division Council. This standard was first issued in 1959 and was revised in 1970. The second revision of this standard has been undertaken to harmonize it with the lEC 61032 : 1997. The text of lEC Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard* appear referring to this standard, they should be read as 'Indian Standard'. b) Comma {,) has been used as a decimal marker, while in Indian Standards, the current practice is to use a ",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 4287",
+      "standard_id": "IS/ISO 4287",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4287)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2768",
+      "standard_id": "IS/ISO 2768",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2768)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Enclosure",
+    "Access probe",
+    "Object probe",
+    "IP code probe",
+    "Other probe",
+    "Grade ification",
+    "Protection of persons and equipment by enclosures",
+    "Probes for verification"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "hardness of 50 HCR (Rockwell, C scale). N",
+      "minimum hardness of 50"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance of ±10 %"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 29049
+}

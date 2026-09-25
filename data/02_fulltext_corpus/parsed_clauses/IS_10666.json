@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_10666",
-  "standard_id": "IS IS_10666",
-  "title": "Indian Standard Specification / Test Method (IS IS_10666)",
+  "is_number": "IS 10666",
+  "standard_id": "IS 10666:2018",
+  "title": "Tobacco and Tobacco Products - Cigarette Filters - Specification",
   "ia_identifier": "IS_10666",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -92,6 +92,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 17",
+      "standard_id": "IS 17:1973",
+      "title": "Bleached Lac",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 54",
       "standard_id": "IS 54:1988",
       "title": "Green oxide of chromium for paints",
@@ -157,9 +167,8 @@
     "Diameter",
     "Pressure Drop",
     "Grade of",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10666"
+    "Tobacco and Tobacco Products",
+    "Cigarette Filters"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

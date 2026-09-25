@@ -1,0 +1,83 @@
+{
+  "is_number": "IS 15024 (PART 1)",
+  "standard_id": "IS 15024 (Part 1):2001",
+  "title": "Technical Product Documentation - Handling of Computer-Based - Technical Information, Part 1: Security Requirements",
+  "ia_identifier": "IS_15024__PART_1_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 15024 (PART 1)) covers Technical Product Documentation - Handling of Computer-Based - Technical Information, Part 1: Security Requirements. This Indian Standard (First Revision) which is identical with ISO 1 1442 : 2006 Technical product documentation — Document management' issued by the International Organization for Standardization (ISO) was adopted by the Committee and approval of the Production and General Engineering Division Council. This standard was originally published in 2001 in four parts which were identical with ISO 1 1 442 -1 to 4 : 1 993. This first revision has been harmonized with ISO 1 1 442 : 2006 by adoption to make pace with the latest developments taken place at international level. The Committee has decided that in addition to the above standards, IS 1 5025 : 2001 Technical product documentation — Requirements for computer-aided design and draughting — Vocabulary' shall be treated as withdrawn after publication of this standard. The text of ISO Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain terminology and conventions are, however, not identic",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 15024",
+      "standard_id": "IS 15024:2011",
+      "title": "Technical product documentation – Document management",
+      "division_code": "MSD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 10209",
+      "standard_id": "IS/ISO 10209",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 10209)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8930 (PART 1)",
+      "standard_id": "IS 8930 (Part 1):1995",
+      "title": "Technical product documentation -vocabulary, Part 1: Terms relating to technical drawings: General and types of drawings",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 16016",
+      "standard_id": "IS/ISO 16016",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 16016)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9001",
+      "standard_id": "IS/ISO 9001",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9001)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Technical Product Documentation",
+    "Handling of Computer",
+    "Based",
+    "Technical Information",
+    "Part 1: Security Requirements"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 25453
+}

@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_16107__PART_1_",
-  "standard_id": "IS IS_16107__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_16107__PART_1_)",
+  "is_number": "IS 16107 (PART 1)",
+  "standard_id": "IS 16107 (Part 1):2012",
+  "title": "Luminaires Performance, Part 1: General requirements",
   "ia_identifier": "IS_16107__PART_1_",
-  "division_code": "GEN",
+  "division_code": "PGD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard (Part 2/Section 2) specifies the performance requirements for LED street lighting luminaire, together with the test methods and conditions, required to show compliance with this standard suitable for use on de supplies up to 250 V dc or on ac supplies up to 1 000 V at 50 Hz. It applies to LED luminaires for street lighting, where claims of operational performance are made. The following types of LED street lighting luminaires are distinguished: a) Type A — Luminaire using LED modules where compliance with IS16103 (Part 2) has not been proven. b) Type B — Luminaire using LED modules where compliance with IS16103 (Part 2) has been proven. c) Type C— Luminaire using a LED lamp and covered in IS 16107 (Part 1) NOTE — The definition of the LED module is given in IS 16103 (Part 1 and Part 2) and IS 16101. This standard does not cover LED street light luminaires that intentionally produce coloured light; neither does it cover modules based on OLEDs (organic LEDs). The performance requirements are additional to the requirements given in IS 16107 (Part 1). The luminaire covered under the scope of this standard shall comply with the safety requirements given in IS 10322 (Part 5/Section 3). Life time of LED luminaires is in most cases much longer than the practical test times. Consequently, verification of manufacturer’s life time claims cannot be made in a sufficiently confident way. For that reason, the acceptance or rejection of a manufacturer’s life time claim, past 25 percent of rated life (with a maximum of 6 000 h), is out of the scope of this standard. Instead of life time validation, this standard has opted for lumen maintenance categories at a defined finite test time. Therefore, the category number does not imply a prediction of achievable life time. The categories are lumen-depreciation character categories showing behaviour in agreement with manufacturer’s information which is provided before the test is started. In order to validate a life time claim, an extrapolation of test data is needed. A general method of projecting measurement data beyond limited test time is under consideration. For explanation of life time metrics see Annex C of 1S16103 (Part 2). The acceptance or rejection criterion of the life time test as defined in this standard is different from the life time metrics claimed by manufacturers. 1.2 It is expected that LED-street light luminaire which comply with this standard will be able to start and operate at voltages be",
   "clause_2_normative_references": [
@@ -159,7 +159,7 @@
       "aspect": "Service Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "LED Lighting (CRS) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS/IEC 60571",
@@ -173,11 +173,11 @@
     },
     {
       "is_number": "IS/IEC 60529",
-      "standard_id": "IS/IEC 60529",
-      "title": "Indian Standard Specification / Test Method (IS/IEC 60529)",
+      "standard_id": "IS/IEC 60529:2001",
+      "title": "IS/IEC 60529: Degrees of protection provided by enclosures (IP CODE)",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -230,11 +230,10 @@
     "Type Test",
     "Type Test Sample",
     "Acceptance Test",
-    "Grade Tests",
+    "Grade tests",
     "10 K",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_16107__PART_1_"
+    "Luminaires Performance",
+    "Part 1: General requirements"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

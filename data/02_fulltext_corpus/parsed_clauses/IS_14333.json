@@ -1,0 +1,139 @@
+{
+  "is_number": "IS 14333",
+  "standard_id": "IS 14333:2022",
+  "title": "Polyethylene Pipes for Sewerage and Industrial Chemicals and Effluent-Specification",
+  "ia_identifier": "IS_14333",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies the characteristics and requirements for polyethylene pipes intended to be used for following applications above or below ground: a) Sewerage (pressure or non-pressure); b) Industrial effluent; and c) Industrial chemicals. 1.2 This standard covers polyethylene pipes from 63 mm to 2 500 mm nominal diameter of pressure rating from 0.20 MPa (2.0 bar) to 2.0 MPa (20.0 bar). 1.3 The operating temperatures of 10 °C, 20 °C, 27 °C, 40 °C, 50 °C and 60 °C for different service life are covered. 1.4 The reference temperature of 20 °C for 50 years of continuous stress is considered for the minimum required strength (MRS) of polyethylene base resin. The design stress at 20 °C is derived by dividing MRS by the overall service (design) coefficient, C which is 1.25 (Min) for all polyethylene pipes. This standard specifies overall service design coefficient of 1.25, 1.6 and 2.0 which shall be appropriately selected by the user/design engineer keeping in view the application to which the pipes are subjected to (see also Note 1). NOTES 1 In IS 4984, which covers PE pipes for water supply for human consumption and raw water, the C value taken is 1.25. Further, the maximum allowable operating pressure at 27 °C has been obtained by applying a pressure reduction coefficient of 0.85.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 4984",
+      "standard_id": "IS 4984:2016",
+      "title": "Polyethylene Pipes for Water Supply - Specification (Fifth Revision)",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9080",
+      "standard_id": "IS/ISO 9080",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9080)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16268",
+      "standard_id": "IS 16268",
+      "title": "Indian Standard Specification / Test Method (IS 16268)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 24153",
+      "standard_id": "IS/ISO 24153",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 24153)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7328",
+      "standard_id": "IS 7328:2020",
+      "title": "Specification for Polyethylene Material for Moulding and Extrusion ( Third Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Polyethylene (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 2530",
+      "standard_id": "IS 2530:1963",
+      "title": "Methods of test for polyethylene moulding materials and polyethylene compounds",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 15494",
+      "standard_id": "IS/ISO 15494",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 15494)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7634",
+      "standard_id": "IS 7634",
+      "title": "Indian Standard Specification / Test Method (IS 7634)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Nominal Size (DN",
+    "Nominal Size (DN/OD",
+    "Mean Outside Diameter (d",
+    "Out-of-roundness (Ovality",
+    "Standard Dimension Ratio (SDR",
+    "Wall Thickness at any Point (e",
+    "Tolerance",
+    "Minimum Required Strength (MRS",
+    "Overall Service Design Coefficient (C",
+    "Design Stress (c",
+    "Nominal Pressure (PN",
+    "Maximum Allowable Operating Pressure"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "Elongation at break for Yield strength : 15 MPa",
+      "Elongation at break : 350 percent, Min Test speed 100 mm",
+      "Elongation at break : 350 percent, Min Test speed 50 mm",
+      "Elongation at break : 350 percent, Min Test speed 25 mm"
+    ],
+    "chemical_properties": [
+      "Ash content < 0.1 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "nominal diameter has been increased from 1 000 mm",
+      "wall thickness < 25 mm"
+    ],
+    "marking_requirements": [
+      "framed thereunder, and each pipe/coil may be marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 63198
+}

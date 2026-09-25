@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_10767__PART_2_",
-  "standard_id": "IS IS_10767__PART_2_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10767__PART_2_)",
+  "is_number": "IS 10767 (PART 2)",
+  "standard_id": "IS 10767 (Part 2):2001",
+  "title": "Programmable Measuring Instruments -- Interface System for (Byte Serial, Bit Parallel), Part 2: Codes, Format, Protocols and Common Commands",
   "ia_identifier": "IS_10767__PART_2_",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "System Standard",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_10767__PART_2_) covers Indian Standard Specification / Test Method (IS IS_10767__PART_2_). This Indian Standard ( Part 2 ) ( First Revision ) which is identical with IEC 60625-2 ( 1993 ) 'Programmable measuring instruments — Interface system ( byte serial, bit parallel ) — Part 2 : Codes, formats, protocols and common commands' issued by the International Electrotechnica! Commission ( IEC ) was adopted by the Instruments, Systems and Accessories Sectional Committee and approval of the Electronics and Telecommunication Division Council. This standard ( Part 2 ) specifies a set of codes, formats and communication protocols for programmable measuring instruments. This standard was first published in 1983 and was identical to IEC 60625-2 ( 1980 ) 'An interface system for programmable measuring instruments ( byte serial, bit parallel ) — Part 2: Code and format conventions'. IEC 60625-2 ( 1980 ) has since been revised in 1993. In view of the technological advances at the international level, this standard is being revised to align it with the latest international practices. The t",
+  "clause_1_scope": "This Indian Standard (IS 10767 (PART 2)) covers Programmable Measuring Instruments -- Interface System for (Byte Serial, Bit Parallel), Part 2: Codes, Format, Protocols and Common Commands. This Indian Standard ( Part 2 ) ( First Revision ) which is identical with IEC 60625-2 ( 1993 ) 'Programmable measuring instruments — Interface system ( byte serial, bit parallel ) — Part 2 : Codes, formats, protocols and common commands' issued by the International Electrotechnica! Commission ( IEC ) was adopted by the Instruments, Systems and Accessories Sectional Committee and approval of the Electronics and Telecommunication Division Council. This standard ( Part 2 ) specifies a set of codes, formats and communication protocols for programmable measuring instruments. This standard was first published in 1983 and was identical to IEC 60625-2 ( 1980 ) 'An interface system for programmable measuring instruments ( byte serial, bit parallel ) — Part 2: Code and format conventions'. IEC 60625-2 ( 1980 ) has since been revised in 1993. In view of the technological advances at the international level, this standard is being revised to align it with the latest international practices. The t",
   "clause_2_normative_references": [
     {
       "is_number": "IS 10767",
@@ -102,6 +102,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 16",
+      "standard_id": "IS 16",
+      "title": "Indian Standard Specification / Test Method (IS 16)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS/ISO 646",
       "standard_id": "IS/ISO 646",
       "title": "Indian Standard Specification / Test Method (IS/ISO 646)",
@@ -142,6 +152,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 19",
+      "standard_id": "IS 19",
+      "title": "Indian Standard Specification / Test Method (IS 19)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 77",
       "standard_id": "IS 77:1976",
       "title": "Linseed Oil, Boiled, for Paints",
@@ -156,9 +176,13 @@
     "Grade Referenced",
     "11 K",
     "11 k",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10767__PART_2_"
+    "Programmable Measuring Instruments",
+    "Interface System for",
+    "Byte Serial",
+    "Bit Parallel",
+    "Part 2: Codes",
+    "Format",
+    "Protocols and Common Commands"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_710",
-  "standard_id": "IS IS_710",
-  "title": "Indian Standard Specification / Test Method (IS IS_710)",
+  "is_number": "IS 710",
+  "standard_id": "IS 710:2010",
+  "title": "Marine Plywood -Specification",
   "ia_identifier": "IS_710",
   "division_code": "GEN",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
   },
   "clause_1_scope": "This standard covers requirements for materials, manufacture and performance of marine plywood suitable for the construction, repair and maintenance of marine and river craft, pontoons and the like.",
   "clause_2_normative_references": [
@@ -153,14 +153,12 @@
     }
   ],
   "clause_3_terminology": [
+    "Grade bruary",
+    "Grade roz",
+    "Grade set",
     "Grade of",
     "Grade deration",
-    "Grade bruary",
-    "Grade set",
-    "Grade roz",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_710"
+    "Marine Plywood"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

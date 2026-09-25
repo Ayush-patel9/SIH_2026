@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_1175",
-  "standard_id": "IS IS_1175",
-  "title": "Indian Standard Specification / Test Method (IS IS_1175)",
+  "is_number": "IS 1175",
+  "standard_id": "IS 1175:1981",
+  "title": "Methods for Grading and Classification of Muscovite Mica Blocks, Thins and Films",
   "ia_identifier": "IS_1175",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -15,6 +15,26 @@
       "is_number": "IS 1176",
       "standard_id": "IS 1176",
       "title": "Indian Standard Specification / Test Method (IS 1176)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13",
+      "standard_id": "IS 13",
+      "title": "Indian Standard Specification / Test Method (IS 13)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14",
+      "standard_id": "IS 14",
+      "title": "Indian Standard Specification / Test Method (IS 14)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -63,11 +83,10 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade ification",
     "Grade or",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1175"
+    "Grade ification",
+    "Methods for Grading and Classification of Muscovite Mica Blocks",
+    "Thins and Films"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

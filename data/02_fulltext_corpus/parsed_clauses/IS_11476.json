@@ -1,10 +1,10 @@
 {
-  "is_number": "IS IS_11476",
-  "standard_id": "IS IS_11476",
-  "title": "Indian Standard Specification / Test Method (IS IS_11476)",
+  "is_number": "IS 11476",
+  "standard_id": "IS 11476:1985",
+  "title": "Glossary of terms relating to oils and fats",
   "ia_identifier": "IS_11476",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Terminology",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
@@ -30,14 +30,22 @@
       "relation_type": "TERMINOLOGY",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade Refined",
     "Grade rtilizer",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11476"
+    "Grade Refined",
+    "Glossary of terms relating to oils and fats"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

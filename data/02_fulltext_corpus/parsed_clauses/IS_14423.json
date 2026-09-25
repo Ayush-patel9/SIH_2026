@@ -1,0 +1,52 @@
+{
+  "is_number": "IS 14423",
+  "standard_id": "IS 14423:1997",
+  "title": "Fluid power systems and components - connectors and associated components - Nominal pressures",
+  "ia_identifier": "IS_14423",
+  "division_code": "LITD",
+  "aspect": "System Standard",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard prescribes nominal pressures for hydraulic and pneumatic fluid power connectors and associated components.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 4399",
+      "standard_id": "IS/ISO 4399",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4399)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 104",
+      "standard_id": "IS 104:2017",
+      "title": "Specification for Reday Mixed Paint, Brushing, Zinc Chrome, Priming (Third Revision)",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Nominal Pressure",
+    "Fluid power systems and components",
+    "connectors and associated components",
+    "Nominal pressures"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 4828
+}

@@ -1,0 +1,53 @@
+{
+  "is_number": "IS 14967",
+  "standard_id": "IS 14967:2001",
+  "title": "Optics and Optical Instruments - Environmental Test Methods - Combined Low Pressure and Ambient Temperature or Dry Heat",
+  "ia_identifier": "IS_14967",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of ISO 9022 specifies methods for the testing of optical instruments and instruments containing optical components, under equivalent conditions, for their ability to resist combined low pressure and ambient temperature or dry heat. The purpose of the testing is to investigate to what extent optical, thermal, mechanical, chemical and electrical performance characteristics of the specimen are affected by combined low pressure and ambient temperature or dry heat; examples are instruments which are installed or transported inside aircraft or flying objects not providing any pressure equalization.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 9022",
+      "standard_id": "IS/ISO 9022",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9022)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10236",
+      "standard_id": "IS 10236",
+      "title": "Indian Standard Specification / Test Method (IS 10236)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "3 K",
+    "1 K",
+    "Optics and Optical Instruments",
+    "Environmental Test Methods",
+    "Combined Low Pressure and Ambient Temperature or Dry Heat"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 11223
+}

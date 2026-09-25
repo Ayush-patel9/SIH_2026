@@ -1,0 +1,63 @@
+{
+  "is_number": "IS 13763",
+  "standard_id": "IS 13763:1993",
+  "title": "Pliers and Nippers for Electronics - Single Purpose Nippers - Oblique Cutting Nippers",
+  "ia_identifier": "IS_13763",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers the dimensions and other requirements for oblique cutting nippers for use while working on electronic gadgets. are necessary",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 9654",
+      "standard_id": "IS/ISO 9654",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9654)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9861",
+      "standard_id": "IS 9861:1981",
+      "title": "Dimensions for wrought copper and copper alloy wires for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4412",
+      "standard_id": "IS 4412:1981",
+      "title": "Copper wires for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Pliers and Nippers for Electronics",
+    "Single Purpose Nippers",
+    "Oblique Cutting Nippers"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "nominal size 112 mm"
+    ],
+    "marking_requirements": [
+      "The nippers shall be clearly and legibly",
+      "recognized trade-mark. The year of manufacture"
+    ]
+  },
+  "total_chars_parsed": 6663
+}

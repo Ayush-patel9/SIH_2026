@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_17017__PART_2_",
-  "standard_id": "IS IS_17017__PART_2_",
-  "title": "Indian Standard Specification / Test Method (IS IS_17017__PART_2_)",
+  "is_number": "IS 17017 (PART 2)",
+  "standard_id": "IS 17017 (Part 2):2023",
+  "title": "Part 2 : Sec 7 : 2023: Electric Vehicle Conductive Charging System - Part 2 Plugs, Socket-Outlets, Vehicle Connectors and Vehicle Inlets - Section 7 Dimensional Compatibility and Interchange Ability Requirements for a.c., d.c. and a.c./d.c. Pin and Contact-Tube Vehicle Couplers",
   "ia_identifier": "IS_17017__PART_2_",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "TED",
+  "aspect": "System Standard",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard (Part 2/Sec 7) is applicable to vehicle couplers with pins and contact-tubes of standardised configuration, herein also referred to as “accessories”, intended for use in electric vehicle conductive charging systems which incorporate control means, with rated operating voltage: a) upto 120V d.c. and rated current up to 100 A; and b) upto 240 V a.c. and rated current up to 32 A. This standard (Part 2/Sec 7) applies to d.c. interfaces and combined a.c/d.c. interfaces of vehicle couplers specified in IS 17017 (Part 2/Sec 1) :2020, and intended for use in conductive charging systems for circuits specified in IS 17017 (Part 31). This section of IS 17017 (Part 2/Sec 7) applies to the vehicle couplers to be used in an ambient temperature of between - 25 °C and + 55 °C. These vehicle couplers are intended to be connected only to cables with copper or copper- alloy conductors. Accessories covered by this standard shall be of non-rewireable type only.",
   "clause_2_normative_references": [
@@ -100,13 +100,29 @@
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Grade ification",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_17017__PART_2_"
+    "Part 2 : Sec 7 : 2023: Electric Vehicle Conductive Charging System",
+    "Part 2 Plugs",
+    "Socket",
+    "Outlets",
+    "Vehicle Connectors and Vehicle Inlets",
+    "Section 7 Dimensional Compatibility and Interchange Ability Requirements for a.c",
+    "d.c. and a.c",
+    "d.c. Pin and Contact",
+    "Tube Vehicle Couplers"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

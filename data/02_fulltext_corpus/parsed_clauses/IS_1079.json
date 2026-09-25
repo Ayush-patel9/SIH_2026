@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_1079",
-  "standard_id": "IS IS_1079",
-  "title": "Indian Standard Specification / Test Method (IS IS_1079)",
+  "is_number": "IS 1079",
+  "standard_id": "IS 1079:2017",
+  "title": "Hot Rolled Carbon Steel Sheet, Plate and Strip - Specification",
   "ia_identifier": "IS_1079",
-  "division_code": "GEN",
+  "division_code": "MTD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard covers the requirements for hot rolled low carbon steel sheets, plates and strips intended for drawing and forming for automobile and general engineering purposes.",
   "clause_2_normative_references": [
@@ -125,9 +125,8 @@
   "clause_3_terminology": [
     "Grade of",
     "Grade HRS",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1079"
+    "Hot Rolled Carbon Steel Sheet",
+    "Plate and Strip"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

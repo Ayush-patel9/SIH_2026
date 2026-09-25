@@ -12,6 +12,11 @@ from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, List
 
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+
 BASE_DIR = Path(__file__).parent.parent
 DATA_DIR = BASE_DIR / "data"
 

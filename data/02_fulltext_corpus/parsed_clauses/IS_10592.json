@@ -1,20 +1,31 @@
 {
-  "is_number": "IS IS_10592",
-  "standard_id": "IS IS_10592",
-  "title": "Indian Standard Specification / Test Method (IS IS_10592)",
+  "is_number": "IS 10592",
+  "standard_id": "IS 10592:2018",
+  "title": "Industrial Emergency Showers, Eye and Face Fountains and Combination Units — Specification ( First Revision )",
   "ia_identifier": "IS_10592",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
   "clause_1_scope": "This standard prescribes minimum performance requirements for emergency showers, eye and face fountains, combination units Self-contained eyewash and Personal eyewash units.",
-  "clause_2_normative_references": [],
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10592"
+    "Industrial Emergency Showers",
+    "Eye and Face Fountains and Combination Units",
+    "First Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,16 +1,26 @@
 {
-  "is_number": "IS IS_10020__PART_4_",
-  "standard_id": "IS IS_10020__PART_4_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10020__PART_4_)",
+  "is_number": "IS 10020 (PART 4)",
+  "standard_id": "IS 10020 (Part 4):1981",
+  "title": "Recommendations for design and construction of port and harbour components, Part 4: Slipways",
   "ia_identifier": "IS_10020__PART_4_",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Code of Practice",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
   "clause_1_scope": "1.1 This standard (Part IV ) covers the planning, design and construction of slipways for repairs or overhaul of vessels.",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS 10020",
       "standard_id": "IS 10020",
@@ -44,9 +54,8 @@
   ],
   "clause_3_terminology": [
     "Grade of",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10020__PART_4_"
+    "Recommendations for design and construction of port and harbour components",
+    "Part 4: Slipways"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,0 +1,327 @@
+{
+  "is_number": "IS 14870",
+  "standard_id": "IS 14870:2000",
+  "title": "Transformers and Inductors for Use in Electronic and Telecommunication Equipment - Measuring Methods and Test Procedures",
+  "ia_identifier": "IS_14870",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard describes measuring methods and test procedures for inductors and transformers for use in electronic and telecommunication equipment that may be involved in any specifications for such components, in particular those forming part of the I EG Quality Assessment System for Electronic Components (lECQ scheme).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 3722",
+      "standard_id": "IS 3722",
+      "title": "Indian Standard Specification / Test Method (IS 3722)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9001",
+      "standard_id": "IS 9001",
+      "title": "Indian Standard Specification / Test Method (IS 9001)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 2)",
+      "standard_id": "IS 9000 (Part 2):1977",
+      "title": "to 4: Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 2: Cold Test (Sections 1-4)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 3)",
+      "standard_id": "IS 9000 (Part 3):1977",
+      "title": "to 5: Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 3: Dry Heat Test (Sections 1-5)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 4)",
+      "standard_id": "IS 9000 (Part 4):2008",
+      "title": "Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 4: Damp hear (Steady state)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 8)",
+      "standard_id": "IS 9000 (Part 8):1981",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 8: Vibration (sinusoidal) test",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 9)",
+      "standard_id": "IS 9000 (Part 9):1984",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 9: Acceleration (steady state)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 13)",
+      "standard_id": "IS 9000 (Part 13):1981",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 13: Low air pressure test",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 14)",
+      "standard_id": "IS 9000 (Part 14):1988",
+      "title": "to 3: Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 14: Test N: Change of Temperature (Sections 1-3)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 15)",
+      "standard_id": "IS 9000 (Part 15):1982",
+      "title": "to 9: Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 15: Sealing Test (Sections 1-9)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 18)",
+      "standard_id": "IS 9000 (Part 18):1981",
+      "title": "to 3: Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 18: Solderability Test (Sections 1-3)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 19)",
+      "standard_id": "IS 9000 (Part 19):1986",
+      "title": "to 5: Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 19: Test U: Robustness of Terminations and Integral Mounting Devices (Sections 1-5)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 7/SEC 1)",
+      "standard_id": "IS 9000 (PART 7/SEC 1)",
+      "title": "Indian Standard Specification / Test Method (IS 9000 (PART 7/SEC 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9001 (PART 17/SEC 1)",
+      "standard_id": "IS 9001 (PART 17/SEC 1)",
+      "title": "Indian Standard Specification / Test Method (IS 9001 (PART 17/SEC 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 7/SEC 2)",
+      "standard_id": "IS 9000 (PART 7/SEC 2)",
+      "title": "Indian Standard Specification / Test Method (IS 9000 (PART 7/SEC 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 26)",
+      "standard_id": "IS 9000 (Part 26):1980",
+      "title": "Basic environmental testing procedures for electronic, electrical items: Part26 Sulphur dioxide test for contacts and connections",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 20)",
+      "standard_id": "IS 9000 (Part 20):1979",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 20: Resistance to cleaning solvents and permanence of markings",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9001 (PART 5)",
+      "standard_id": "IS 9001 (Part 5):1979",
+      "title": "Guidance for Environmental Testing, Part V: Resistance to Cleaning Solvents and Permanence of Markings",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 11)",
+      "standard_id": "IS 9000 (Part 11):1983",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 11: Salt mist test",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 651",
+      "standard_id": "IS/IEC 651",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 651)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 497",
+      "standard_id": "IS/ISO 497",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 497)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9779",
+      "standard_id": "IS 9779",
+      "title": "Indian Standard Specification / Test Method (IS 9779)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1000",
+      "standard_id": "IS/ISO 1000",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 50",
+      "standard_id": "IS/IEC 50",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 50)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 1007",
+      "standard_id": "IS/IEC 1007",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 1007)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 695",
+      "standard_id": "IS/IEC 695",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 695)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 68",
+      "standard_id": "IS/IEC 68",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 68)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "component",
+    "peak working voltage",
+    "Grade rrite",
+    "1 k",
+    "Transformers and Inductors for Use in Electronic and Telecommunication Equipment",
+    "Measuring Methods and Test Procedures"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "harmonic distortion of the applied voltage shall be less than 6 %",
+      "harmonic distortion of the voltage when applied to the winding shall be less than 6 %"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 107548
+}

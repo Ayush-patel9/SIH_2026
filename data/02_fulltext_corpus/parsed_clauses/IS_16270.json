@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_16270",
-  "standard_id": "IS IS_16270",
-  "title": "Indian Standard Specification / Test Method (IS IS_16270)",
+  "is_number": "IS 16270",
+  "standard_id": "IS 16270:2014",
+  "title": "Secondary Cells and Batteries for Solar Photovoltaic Application — General Requirements and Methods of Test",
   "ia_identifier": "IS_16270",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Methods of tests",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Electronics & IT Goods (Compulsory Registration) Order - "
   },
   "clause_1_scope": "This standard gives general information relating to the requirements of the secondary batteries used in photovoltaic energy systems (PVES) and to the typical methods of test used for the verification of the battery performances. This specification deals with cells and batteries used in solar photovoltaic application. This standard does not include specific information relating to battery sizing, method of charge or PVES design. This standard is applicable to secondary cells and batteries of lead-acid and nickel based chemistry.",
   "clause_2_normative_references": [
@@ -123,12 +123,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade Batteries",
     "Grade tests",
     "Grade Test",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_16270"
+    "Grade Batteries",
+    "Secondary Cells and Batteries for Solar Photovoltaic Application",
+    "General Requirements and Methods of Test"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

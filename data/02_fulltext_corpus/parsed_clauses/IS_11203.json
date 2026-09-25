@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_11203",
-  "standard_id": "IS IS_11203",
-  "title": "Indian Standard Specification / Test Method (IS IS_11203)",
+  "is_number": "IS 11203",
+  "standard_id": "IS 11203:1985",
+  "title": "Coding of machine readable characters (MICR and OCR) for information processing",
   "ia_identifier": "IS_11203",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_11203) covers Indian Standard Specification / Test Method (IS IS_11203). This Indian Standard, which is identical with ISO 2033-1983 ' Information processing — Coding of machine readable characters ( MICR and OCR )', issued by the International Organization for Standardization (ISO ), was adopted by the Indian Standards Institution on the recommendation of the Computers, Business Machine and Calculators Sectional Committee and approved by the Electronics and Telecommunication Division Council. In this standard, certain terminology and conventions are not identical with those used in Indian Standards; attention is specially drawn to the following : Wherever the words ' International Standard ' appear, referring to this standard, they should be read as ' Indian Standard '. Cross Reference International Standard ISO 646 Information processing — 7-bit coded character set for information interchange ISO 1004- 1977 Information processing — Magnetic ink character recognition — Print specifications Corresponding Indian Standard IS : 10315-1982 7-btt coded character",
+  "clause_1_scope": "This Indian Standard (IS 11203) covers Coding of machine readable characters (MICR and OCR) for information processing. This Indian Standard, which is identical with ISO 2033-1983 ' Information processing — Coding of machine readable characters ( MICR and OCR )', issued by the International Organization for Standardization (ISO ), was adopted by the Indian Standards Institution on the recommendation of the Computers, Business Machine and Calculators Sectional Committee and approved by the Electronics and Telecommunication Division Council. In this standard, certain terminology and conventions are not identical with those used in Indian Standards; attention is specially drawn to the following : Wherever the words ' International Standard ' appear, referring to this standard, they should be read as ' Indian Standard '. Cross Reference International Standard ISO 646 Information processing — 7-bit coded character set for information interchange ISO 1004- 1977 Information processing — Magnetic ink character recognition — Print specifications Corresponding Indian Standard IS : 10315-1982 7-btt coded character",
   "clause_2_normative_references": [
     {
       "is_number": "IS/ISO 2033",
@@ -80,14 +80,24 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 11",
+      "standard_id": "IS 11",
+      "title": "Indian Standard Specification / Test Method (IS 11)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "14 k",
     "1 K",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11203"
+    "Coding of machine readable characters",
+    "MICR and OCR",
+    "for information processing"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

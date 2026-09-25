@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_616",
-  "standard_id": "IS IS_616",
-  "title": "Indian Standard Specification / Test Method (IS IS_616)",
+  "is_number": "IS 616",
+  "standard_id": "IS 616:2010",
+  "title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements",
   "ia_identifier": "IS_616",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Safety Standard",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Electronics and IT Goods (CRS) Order"
   },
   "clause_1_scope": "1.1.1 This International Safety Standard applies to electronic apparatus designed to be fed from the mains, from a supply apparatus, from batteries or from remote power feeding and intended for reception, generation, recording or reproduction respectively of audio, video and associated signals. It also applies to apparatus designed to be used exclusively in combination with the above-mentioned apparatus. This standard primarily concerns apparatus intended for household and similar general use but which may also be used in places of public assembly such as schools, theatres, places of worship and the workplace, professional apparatus intended for use as described above is also covered unless falling specifically within the scope of other standards. This standard concerns only safety aspects of the above apparatus; it does not concern other matters, such as style or performance. This standard applies to the above-mentioned apparatus, if designed to be connected to the telecommunication network or similar network, for example by means of an integrated modem. Some examples of apparatus within the scope of this standard are: - receiving apparatus and amplifiers for sound and/or vision; - independent load transducers and source transducers; - supply apparatus intended to supply other apparatus covered by the scope of this standard; - electronic musical instruments, and electronic accessories such as rhythm generators, tone generators, music tuners and the like for use with electronic or non-electronic musical instruments; - audio and/or video educational apparatus; - video projectors; note 1 Film projectors, slide projectors, overhead projectors are covered by lEC 60335-2-56 [5]^ - video cameras and video monitors; - video games and flipper games; NOTE 2 Video and flipper games for commercial use are covered by lEC 60335-2-82 (6) - juke boxes; - electronic gaming and scoring machines; NOTE 3 Electronic gaming and scoring machines for commercial use are covered by lEC 60335-2-82 I6J 1 Figures in square brackets refer to the bibliography. 1 lEC 60065 : 2005 - teletext equipment; - record arid optical disc players; - tape and optical disc recorders; - antenna signal converters and amplifiers; - antenna positioners; - Citizen's Band apparatus; - apparatus for imagery; - electronic light effect apparatus; - apparatus for use in alarm systems; - intercommunication apparatus, using low voltage mains as the transmission medium; - cable head-end receivers; - multimedia a",
   "clause_2_normative_references": [
@@ -272,16 +272,6 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 00",
-      "standard_id": "IS 00",
-      "title": "Indian Standard Specification / Test Method (IS 00)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 4218 (PART 2)",
       "standard_id": "IS 4218 (Part 2):2001",
       "title": "ISO General Purpose Metric Screw Threads, Part 2: General Plan",
@@ -383,16 +373,16 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade ification",
-    "Grade ii",
-    "Grade Vibration",
     "Grade tests",
+    "Grade Vibration",
+    "Grade ii",
+    "Grade ification",
     "10 K",
     "65 K",
     "55 K",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_616"
+    "Audio",
+    "Video and Similar Electronic Apparatus",
+    "Safety Requirements"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

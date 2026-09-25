@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_8041",
-  "standard_id": "IS IS_8041",
-  "title": "Indian Standard Specification / Test Method (IS IS_8041)",
+  "is_number": "IS 8041",
+  "standard_id": "IS 8041:1990",
+  "title": "Specification for rapid hardening Portland cement",
   "ia_identifier": "IS_8041",
-  "division_code": "GEN",
+  "division_code": "CED",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard covers the manufacture and chemical and physical requirements of rapid hardening Portland cement. NOTE — The term 'rapid hardening' should not be confused with 'quick-setting*.",
   "clause_2_normative_references": [
@@ -69,7 +69,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 531",
@@ -94,11 +94,9 @@
   ],
   "clause_3_terminology": [
     "Grade ordinary",
-    "Grade deration",
     "Grade bruary",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_8041"
+    "Grade deration",
+    "Specification for rapid hardening Portland cement"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

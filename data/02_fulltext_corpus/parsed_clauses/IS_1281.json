@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_1281",
-  "standard_id": "IS IS_1281",
-  "title": "Indian Standard Specification / Test Method (IS IS_1281)",
+  "is_number": "IS 1281",
+  "standard_id": "IS 1281:2014",
+  "title": "Bicycles - Cranks and Chain Wheels - Specification",
   "ia_identifier": "IS_1281",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -19,7 +19,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 734",
@@ -93,17 +93,15 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade ifications",
+    "Grade ification",
+    "Grade Cotter",
+    "Grade No",
     "Grade of",
     "Grade Types",
-    "Grade No",
-    "Grade Double",
-    "Grade Cotter",
-    "Grade ification",
+    "Grade ifications",
     "Grade 540",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1281"
+    "Bicycles",
+    "Cranks and Chain Wheels"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_2171",
-  "standard_id": "IS IS_2171",
-  "title": "Indian Standard Specification / Test Method (IS IS_2171)",
+  "is_number": "IS 2171",
+  "standard_id": "IS 2171:1999",
+  "title": "Specification for portable fire extinguishers,dry powder (cartridge type)",
   "ia_identifier": "IS_2171",
   "division_code": "GEN",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Fire Fighting Equipment (Quality Control) Order"
   },
-  "clause_1_scope": "Amendment to IS IS_2171 (Indian Standard Specification / Test Method (IS IS_2171)): AMENDMENT NO. 1 APRIL 2001 TO PORTABLE FIRE EXTINGUISHERS, DRY POWDER (CARTRIDGE TYPE) — SPECIFICATION ( Fourth Revision ) (Second cover page, Foreword) — Insert the following before last para: 'A scheme for labelling environment friendly products known as ECO Mark has been introduced at the instance of the Ministry of Environment and Forests (MEF), Government of India. The ECO Mark would be administered by the 1986 as per the Resolution No. 71 dated 21 February 1991 and No. 425 dated 28 October 1992 published in the Gazette of the Government of India. For a product to be eligible for marking ",
+  "clause_1_scope": "Amendment to IS 2171 (Specification for portable fire extinguishers,dry powder (cartridge type)): AMENDMENT NO. 1 APRIL 2001 TO PORTABLE FIRE EXTINGUISHERS, DRY POWDER (CARTRIDGE TYPE) — SPECIFICATION ( Fourth Revision ) (Second cover page, Foreword) — Insert the following before last para: 'A scheme for labelling environment friendly products known as ECO Mark has been introduced at the instance of the Ministry of Environment and Forests (MEF), Government of India. The ECO Mark would be administered by the 1986 as per the Resolution No. 71 dated 21 February 1991 and No. 425 dated 28 October 1992 published in the Gazette of the Government of India. For a product to be eligible for marking ",
   "clause_2_normative_references": [
     {
       "is_number": "IS 318",
@@ -99,7 +99,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 7328",
@@ -259,7 +259,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 6240",
@@ -433,17 +433,17 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade of",
     "Grade 2of",
-    "Grade 4450",
+    "Grade 2ofIS291",
+    "Grade shall",
     "Grade FLB",
     "Grade bruary",
-    "Grade shall",
-    "Grade 2ofIS291",
-    "Grade LTB",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_2171"
+    "Grade of",
+    "Grade Test",
+    "Grade 4450",
+    "Specification for portable fire extinguishers",
+    "dry powder",
+    "cartridge type"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

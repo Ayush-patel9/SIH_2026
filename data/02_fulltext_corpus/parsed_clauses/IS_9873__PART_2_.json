@@ -1,46 +1,16 @@
 {
-  "is_number": "IS IS_9873__PART_2_",
-  "standard_id": "IS IS_9873__PART_2_",
-  "title": "Indian Standard Specification / Test Method (IS IS_9873__PART_2_)",
+  "is_number": "IS 9873 (PART 2)",
+  "standard_id": "IS 9873 (Part 2):2012",
+  "title": "SAFETY OF TOYS, Part 2: Flammability",
   "ia_identifier": "IS_9873__PART_2_",
   "division_code": "GEN",
-  "aspect": "Product Specification",
+  "aspect": "Safety Standard",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
-  "clause_1_scope": "This standard specifies maximum acceptable levels of certain phthalate esters in toys and children’s products, except material not accessible.",
+  "clause_1_scope": "This part of ISO 8124 specifies the categories of flammable materials which are prohibited in all toys and requirements concerning flammability of certain 'toys when they are submitted to a small source of ignition. The test methods described in clause 5 are used for the purposes of determining the flammability of toys under the particular test conditions specified. The test results thus obtained cannot be considered as providing an overall indication of the potential fire hazard of toys or materials when subjected to other sources of ignition. This part of ISO 8124 includes general requirements relating to all toys and specific requirements and methods of test relating to the following toys which are considered as being those presenting the greatest hazard: — beards, moustaches, wigs, masks and other products worn on the head with pile, hair or other attached material; — disguise costumes (e.g. cowboy outfits, nurses' uniforms) including the associated headgear, and toys intended to be worn by a child (excluding products covered by 4,2 and paper novelty hats, e.g. those supplied in crackers); — toys intended to be entered by a child (e.g. toy tents, puppet theatres, wigwams); — filled soft toys with a pile surface or textile surface but excluding soft-bodied dolls with heads and limbs made entirely from nontextile polymeric material. NOTE 1 Additional requirements for the flammability of electrical toys are specified in EN 50088, Safety of electrical toys.",
   "clause_2_normative_references": [
-    {
-      "is_number": "IS 9873 (PART 9)",
-      "standard_id": "IS 9873 (Part 9):2017",
-      "title": "Part 9 : 2017: Safety of Toys Part 9 Certain Phthalates Esters in Toys and Childrenʼs Products",
-      "division_code": "LITD",
-      "aspect": "Safety Standard",
-      "relation_type": "PRODUCT_SPECIFICATION",
-      "is_mandatory": true,
-      "qco_order": "Toys (Quality Control) Order, 2020"
-    },
-    {
-      "is_number": "IS 9873 (PART 3)",
-      "standard_id": "IS 9873 (Part 3):1999",
-      "title": "Safety Requirements for Toys, Part 3: Migration of Certain Elements",
-      "division_code": "GEN",
-      "aspect": "Safety Standard",
-      "relation_type": "SAFETY_REQUIREMENT",
-      "is_mandatory": true,
-      "qco_order": "Toys (Quality Control) Order, 2020"
-    },
-    {
-      "is_number": "IS 9873",
-      "standard_id": "IS 9873",
-      "title": "Indian Standard Specification / Test Method (IS 9873)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
     {
       "is_number": "IS/ISO 8124",
       "standard_id": "IS/ISO 8124",
@@ -52,9 +22,19 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 9873 (PART 6)",
-      "standard_id": "IS 9873 (PART 6)",
-      "title": "Indian Standard Specification / Test Method (IS 9873 (PART 6))",
+      "is_number": "IS/ISO 2431",
+      "standard_id": "IS/ISO 2431",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2431)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6941",
+      "standard_id": "IS/ISO 6941",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6941)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -63,9 +43,14 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_9873__PART_2_"
+    "flammability",
+    "flaming debris",
+    "self-extinguishing",
+    "representative sample",
+    "hair",
+    "filled soft toy",
+    "SAFETY OF TOYS",
+    "Part 2: Flammability"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
@@ -73,10 +58,9 @@
     "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "The product may also be marked with the Standard",
-      "4.1 The use of the Standard Mark is governed by the",
-      "use of the Standard Mark may be granted to"
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 7113
+  "total_chars_parsed": 19699
 }

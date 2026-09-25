@@ -1,16 +1,26 @@
 {
-  "is_number": "IS IS_11538",
-  "standard_id": "IS IS_11538",
-  "title": "Indian Standard Specification / Test Method (IS IS_11538)",
+  "is_number": "IS 11538",
+  "standard_id": "IS 11538:1986",
+  "title": "Code of practice for design and installation of farm drainage pumping plant",
   "ia_identifier": "IS_11538",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Code of Practice",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
   "clause_1_scope": "1.1 This standard covers the guidelines for design and installation of pumping plants for farm drainage purposes. Note — This standard does not cover the pumping plant for deep well drainage.",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS 11",
+      "standard_id": "IS 11",
+      "title": "Indian Standard Specification / Test Method (IS 11)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS 10907",
       "standard_id": "IS 10907:1984",
@@ -54,9 +64,9 @@
   ],
   "clause_3_terminology": [
     "Grade of",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11538"
+    "Code of practice for design and installation of farm drainage pumping plant",
+    "IS 11538 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

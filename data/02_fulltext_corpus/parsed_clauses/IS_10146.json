@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_10146",
-  "standard_id": "IS IS_10146",
-  "title": "Indian Standard Specification / Test Method (IS IS_10146)",
+  "is_number": "IS 10146",
+  "standard_id": "IS 10146:1982",
+  "title": "Polyethylene for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
   "ia_identifier": "IS_10146",
-  "division_code": "GEN",
+  "division_code": "FAD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard specifies the requirements and methods of sampling and test for polyethylene plastic materials for the manufacture of plastic items used in contact with foodstuffs, pharmaceuticals and drinking water. 1.2 This standard does not purport to establish this suitability 'of the packaging media with particular foodstuff, pharmaceutical or drinking water, from other than toxicological considerations.",
   "clause_2_normative_references": [
@@ -59,7 +59,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 10142",
@@ -99,7 +99,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Polyvinyl Chloride (PVC) Homopolymers (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 10171",
@@ -108,6 +108,16 @@
       "division_code": "FAD",
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -124,9 +134,8 @@
   ],
   "clause_3_terminology": [
     "Grade knanbfs",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10146"
+    "Polyethylene for its Safe Use in Contact with Foodstuffs",
+    "Pharmaceuticals and Drinking Water"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

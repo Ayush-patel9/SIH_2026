@@ -1,0 +1,75 @@
+{
+  "is_number": "IS 12877",
+  "standard_id": "IS 12877:1989",
+  "title": "Implementation of the 7-bit coded character sets and its 7-bit and 8-bit extensions on 3.81 mm magnetic tape cassette for data interchange",
+  "ia_identifier": "IS_12877",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 12877) covers Implementation of the 7-bit coded character sets and its 7-bit and 8-bit extensions on 3.81 mm magnetic tape cassette for data interchange. This Indian Standard, which is identical with ISO 3275:1974 'Information processing — Implementation of the 7-bit coded character set and its 7-bit and 8-bit extensions on 3'81 mm magnetic tape cassette for data interchange', issued by the International Organization for Standardization ( ISO ) was adopted by the recommendation of the Computers, Business Machines and Calculators Sectional Committee ( LTD 24 ) and approval of the Electronics and Telecommunication Division Council. In the adopted standard certain terminology and conventions are not identical with those used in Indian Standards; attention is especially drawn to the following: a) Wherever the words 'International Standard' appear, referring to this standard, they should be read as 'Indian Standard'. b) Comma ( , ) has been used as a decimal marker while in Indian Standards the current practice is to use point ( . ) as the decimal marker. CROSS REFERENCES International Standard ISO 646 7-bit coded character set for informati",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 3275",
+      "standard_id": "IS/ISO 3275",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3275)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 646",
+      "standard_id": "IS/ISO 646",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 646)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2022",
+      "standard_id": "IS/ISO 2022",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2022)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3407",
+      "standard_id": "IS/ISO 3407",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3407)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "magnetic tape",
+    "track",
+    "byte",
+    "Implementation of the 7",
+    "bit coded character sets and its 7",
+    "bit and 8",
+    "bit extensions on 3.81 mm magnetic tape cassette for data interchange"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 6401
+}

@@ -1,10 +1,10 @@
 {
-  "is_number": "IS IS_10991__PART_1_",
-  "standard_id": "IS IS_10991__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10991__PART_1_)",
+  "is_number": "IS 10991 (PART 1)",
+  "standard_id": "IS 10991 (Part 1):1984",
+  "title": "Fixed Metallized Polypropylene Film Dielectric Capacitors, Part 1: General Requirements and Methods of Tests",
   "ia_identifier": "IS_10991__PART_1_",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Methods of tests",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
@@ -120,15 +120,24 @@
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 109",
+      "standard_id": "IS 109:2017",
+      "title": "Specification for Ready Mixed Paint, Finishing, Priming, Plaster, to Indian Standard Colour No. 361 Light Stone and No. 631 Light Greay, White and Off-White (Second Revision)",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade ification",
     "Grade Tests",
     "Grade approval",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10991__PART_1_"
+    "Grade ification",
+    "Fixed Metallized Polypropylene Film Dielectric Capacitors",
+    "Part 1: General Requirements and Methods of Tests"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

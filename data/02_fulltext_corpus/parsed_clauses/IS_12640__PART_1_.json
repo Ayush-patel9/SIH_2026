@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_12640__PART_1_",
-  "standard_id": "IS IS_12640__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_12640__PART_1_)",
+  "is_number": "IS 12640 (PART 1)",
+  "standard_id": "IS 12640 (Part 1):2008",
+  "title": "Residual Current Operated Circuit - Breakers for Household and Similar Uses, Part 1: Circuit-Breakers Without Integral Overcurrent Protection (RCCBs)",
   "ia_identifier": "IS_12640__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
-  "clause_1_scope": "This Indian Standard (IS IS_12640__PART_1_) covers Indian Standard Specification / Test Method (IS IS_12640__PART_1_). This Indian Standard (Part 1) (First Revision) which is identical with lEC 61008-1 . 1996 'Residual current operated circuit-breakers without integral overcurrent protection for household and similar uses (RCCBs) — Part 1: General rules' issued by the International Electrotechnical Commission (lEC) was adopted by the Switchgear and Controlgear Sectional Committee and approval of the Electrotechnical Division Council. This standard was first published in 2000. This revision has been undertaken to align it with lEC 61008-1 : 1996 along with Amendment Nos.1 and 2 published in the year 2002 and 2006 respectively. The text of ISO Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma (,) ",
+  "clause_1_scope": "This Indian Standard (IS 12640 (PART 1)) covers Residual Current Operated Circuit - Breakers for Household and Similar Uses, Part 1: Circuit-Breakers Without Integral Overcurrent Protection (RCCBs). This Indian Standard (Part 1) (First Revision) which is identical with lEC 61008-1 . 1996 'Residual current operated circuit-breakers without integral overcurrent protection for household and similar uses (RCCBs) — Part 1: General rules' issued by the International Electrotechnical Commission (lEC) was adopted by the Switchgear and Controlgear Sectional Committee and approval of the Electrotechnical Division Council. This standard was first published in 2000. This revision has been undertaken to align it with lEC 61008-1 : 1996 along with Amendment Nos.1 and 2 published in the year 2002 and 2006 respectively. The text of ISO Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma (,) ",
   "clause_2_normative_references": [
     {
       "is_number": "IS 12640",
@@ -142,6 +142,36 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 19",
+      "standard_id": "IS 19",
+      "title": "Indian Standard Specification / Test Method (IS 19)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 45",
       "standard_id": "IS 45",
       "title": "Indian Standard Specification / Test Method (IS 45)",
@@ -187,14 +217,14 @@
     "Conditions of operation",
     "Test",
     "Definitions related to insulation coordination",
-    "Grade tests",
-    "Grade In",
     "Grade 360",
-    "Grade AC",
+    "Grade ification",
+    "Grade In",
+    "Grade tests",
     "1 K",
     "65 K",
-    "Indian Standard Specification",
-    "Test Method"
+    "Residual Current Operated Circuit",
+    "Breakers for Household and Similar Uses"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,0 +1,95 @@
+{
+  "is_number": "IS 14950",
+  "standard_id": "IS 14950:2001",
+  "title": "Fish - Dried and Dry-Salted",
+  "ia_identifier": "IS_14950",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes the requirements and the methods of sampling and test for various types of dried and dry-saited fish.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 2237",
+      "standard_id": "IS 2237:1997",
+      "title": "Prawns (Shrimps) - Frozen",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11427",
+      "standard_id": "IS 11427:2001",
+      "title": "Fish and Fisheries Products - Sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "SP 11",
+      "standard_id": "SP 11:1973",
+      "title": "SP 11: Recommended SI Units for Textiles",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "SP 10",
+      "standard_id": "SP 10",
+      "title": "Indian Standard Specification / Test Method (SP 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 594",
+      "standard_id": "IS 594:1981",
+      "title": "Specification fo Common salt for fish curing",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Count",
+    "Grade Large",
+    "Grade rric",
+    "Grade Size",
+    "Grade Length",
+    "Grade NH",
+    "Grade Mass",
+    "Fish",
+    "Dried and Dry",
+    "Salted"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "moisture level of 1 6- 1 7 percent",
+      "moisture content is about 15 percent",
+      "moisture is reduced to 10 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "The material shall be packed in a suitable package/",
+      "container as agreed between the purchaser and the",
+      "material shall be packed in packages which are leakproof, impermeable to oxygen and moisture and prevent",
+      "grade plastic materials shall be used.",
+      "7.2.1 Each container shall be marked or labelled with"
+    ]
+  },
+  "total_chars_parsed": 26884
+}

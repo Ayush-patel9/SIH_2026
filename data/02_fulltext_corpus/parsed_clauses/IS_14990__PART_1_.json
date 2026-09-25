@@ -1,0 +1,134 @@
+{
+  "is_number": "IS 14990 (PART 1)",
+  "standard_id": "IS 14990 (Part 1):2006",
+  "title": "Information Technology - Security Techniques - Evaluation Criteria for IT Security, Part 1: Introduction and General Model",
+  "ia_identifier": "IS_14990__PART_1_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of ISO/IEC 15408 establishes the general concepts and principles of IT security evaluation and specifies the general model of evaluation given by various parts of the International Standard which in its entirety is meant to be used as the basis for evaluation of security properties of IT products. It provides an overview of all parts of ISO/IEC 15408. It describes the various parts of the standard; defines the terms and abbreviations to be used in all parts of the International Standard; establishes the core concept of a Target of Evaluation (TOE); the evaluation context; and describes the audience to which the evaluation criteria are addressed. An introduction to the basic security concepts necessary for evaluation of IT products is given. It defines the various operations by which the functional and assurance components given in ISO/IEC 1 5408-2 and ISO/IEC 15408-3 may be tailored through the use of permitted operations. The key concepts of protection profiles (PP), packages of security requirements and the topic of conformance are specified and the consequences of evaluation and evaluation results are described. This part of ISO/IEC 1 5408 gives guidelines for the specification of Security Targets (ST) and provides a description of the organization of components throughout the model. General information about the evaluation methodology is given in ISO/IEC 18045 and the scope of evaluation schemes is provided.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 14990",
+      "standard_id": "IS 14990",
+      "title": "Indian Standard Specification / Test Method (IS 14990)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 15408",
+      "standard_id": "IS/IEC 15408",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 15408)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 18045",
+      "standard_id": "IS/IEC 18045",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 18045)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14990 (PART 2)",
+      "standard_id": "IS 14990 (Part 2):2006",
+      "title": "Information Technology - Security Techniques - Evaluation Criteria for it Security, Part 2: Security Functional Requirements",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 27001",
+      "standard_id": "IS/ISO 27001",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 27001)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 27002",
+      "standard_id": "IS/IEC 27002",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 27002)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 15292",
+      "standard_id": "IS/IEC 15292",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 15292)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 15443",
+      "standard_id": "IS/IEC 15443",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 15443)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 15446",
+      "standard_id": "IS/IEC 15446",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 15446)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 19790",
+      "standard_id": "IS/IEC 19790",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 19790)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade bruary",
+    "Grade An",
+    "Information Technology",
+    "Security Techniques",
+    "Evaluation Criteria for IT Security",
+    "Part 1: Introduction and General Model"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 175247
+}

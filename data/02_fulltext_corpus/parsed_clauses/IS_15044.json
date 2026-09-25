@@ -1,0 +1,103 @@
+{
+  "is_number": "IS 15044",
+  "standard_id": "IS 15044:2001",
+  "title": "Technical Drawings - Dimensioning and Tolerancing - Non-Rigid Parts",
+  "ia_identifier": "IS_15044",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 15044) covers Technical Drawings - Dimensioning and Tolerancing - Non-Rigid Parts. This Indian Standard which is identical with ISO 10579 : 1993 Technical drawings — Dimensioning and toierancing — Non-rigid parts' issued by the International Organization for Standardization (ISO) was adopted by the Committee and approval of the Basic and Production Engineering Division Council. This standard gives rules for dimensioning and toierancing non-rigid parts where restraining of features is required during verification of dimensions and tolerances specified on a drawing. The text of ISO Standard has been approved as suitable for publication as Indian Standard without deviations. In this adopted standard, certain terminology and conventions are not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma (,) has been used as a decimal marker while in Indian Standards the current practice is to use a full poi",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 10579",
+      "standard_id": "IS/ISO 10579",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 10579)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1101",
+      "standard_id": "IS/ISO 1101",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1101)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8000 (PART 1)",
+      "standard_id": "IS 8000 (Part 1):1985",
+      "title": "Geometrical tolerancing on Technical Drawings, Part 1: Tolerances of form orientation, location and Run-out and appropriate geometrical definitions",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2692",
+      "standard_id": "IS/ISO 2692",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2692)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5459",
+      "standard_id": "IS/ISO 5459",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5459)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5458",
+      "standard_id": "IS/ISO 5458",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5458)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8000 (PART 2)",
+      "standard_id": "IS 8000 (Part 2):1992",
+      "title": "Technical drawings - Geometrical tolerancing, Part 2: Maximum material principles",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "non-rigid part",
+    "free state",
+    "Technical Drawings",
+    "Dimensioning and Tolerancing",
+    "Rigid Parts"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 9187
+}

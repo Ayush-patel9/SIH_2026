@@ -1,0 +1,74 @@
+{
+  "is_number": "IS 13648",
+  "standard_id": "IS 13648:1993",
+  "title": "Power electronics capacitors",
+  "ia_identifier": "IS_13648",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard applies to capacitors intended to be used in power electronic equipment, particularly for: (a) Semiconductor switching and protection, and (b) filtering ( see Note 2 ). 1.1.1 The rated voltage of these capacitors is limited to 10 000 V. The basic frequency of the systems in which these capacitors are used is usually below 1 000 Hz, while the pulse frequencies may go up to several 1 000 Hz and in some cases beyond 10 000 Hz. 1.1.2 This standard distinguishes ac capacitors and dc capacitors and are considered as components housed in closed cabinets. NOTES 1 The requirements for capacitors, protected by internal fuses and internal disconnecting devices, as well as requirements for self-healing tests, endurance tests ana destruction tests are covered separately in and .",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13",
+      "standard_id": "IS 13",
+      "title": "Indian Standard Specification / Test Method (IS 13)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 136",
+      "standard_id": "IS 136",
+      "title": "Indian Standard Specification / Test Method (IS 136)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2500",
+      "standard_id": "IS 2500",
+      "title": "Indian Standard Specification / Test Method (IS 2500)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Tests",
+    "Grade ification",
+    "Grade Test",
+    "Grade of",
+    "Grade tests",
+    "Power electronics capacitors"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 51290
+}

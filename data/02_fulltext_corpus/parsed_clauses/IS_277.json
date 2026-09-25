@@ -1,23 +1,43 @@
 {
-  "is_number": "IS IS_277",
-  "standard_id": "IS IS_277",
-  "title": "Indian Standard Specification / Test Method (IS IS_277)",
+  "is_number": "IS 277",
+  "standard_id": "IS 277:2018",
+  "title": "Galvanized Steel Strips and Sheets (Plain & Corrugated)- Specification (Seventh Revision)",
   "ia_identifier": "IS_277",
-  "division_code": "GEN",
+  "division_code": "MTD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
   },
-  "clause_1_scope": "1.1 This standard covers the requirements of plain galvanized steel sheets and strips (coils) and corrugated galvanized sheets. 1.2 Galvanized steel sheets covered by this standard are intended to be used for purposes such as paneling, roofing, applications requiring lock forming, etc. 1.3 Requirements of galvannealed and electrogalvanized steels are not covered in this standard. 1.4 The requirements of zinc and zinc alloy coated steel sheets for automotive and engineering applications are being covered in a separate standard which is under development.",
+  "clause_1_scope": "This standard covers the requirements of plain galvanized steei sheets and strips (coils) and corrugated galvanized sheets.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS/ISO 3575",
-      "standard_id": "IS/ISO 3575",
-      "title": "Indian Standard Specification / Test Method (IS/ISO 3575)",
-      "division_code": "GEN",
+      "is_number": "IS 1079",
+      "standard_id": "IS 1079:2017",
+      "title": "Hot Rolled Carbon Steel Sheet, Plate and Strip - Specification",
+      "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 513",
+      "standard_id": "IS 513:2008",
+      "title": "Cold reduced low carbon steel sheets and strips",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Quality Control Order"
+    },
+    {
+      "is_number": "IS 875 (PART 2)",
+      "standard_id": "IS 875 (Part 2):1987",
+      "title": "Code of Practice for Design Loads (Other Than Earthquake) For Buildings And Structures, Part 2: Imposed Loads",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -42,20 +62,10 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 228",
-      "standard_id": "IS 228",
-      "title": "Indian Standard Specification / Test Method (IS 228)",
+      "is_number": "IS 2620",
+      "standard_id": "IS 2620:1963",
+      "title": "Distilling flasks",
       "division_code": "GEN",
-      "aspect": "Methods of tests",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2629",
-      "standard_id": "IS 2629:1985",
-      "title": "Recommended Practice for Hot-Dip Galvanizing of Iron and Steel",
-      "division_code": "MTD",
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
@@ -82,11 +92,11 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 1608",
-      "standard_id": "IS 1608:2005",
-      "title": "Mechanical testing of metals - Tensile Testing",
-      "division_code": "MED",
-      "aspect": "Methods of tests",
+      "is_number": "IS 107",
+      "standard_id": "IS 107",
+      "title": "Indian Standard Specification / Test Method (IS 107)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
@@ -100,79 +110,35 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "IS 513",
-      "standard_id": "IS 513:2008",
-      "title": "Cold reduced low carbon steel sheets and strips",
-      "division_code": "MTD",
-      "aspect": "Product Specification",
-      "relation_type": "PRODUCT_SPECIFICATION",
-      "is_mandatory": true,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1079",
-      "standard_id": "IS 1079:2017",
-      "title": "Hot Rolled Carbon Steel Sheet, Plate and Strip - Specification",
-      "division_code": "MTD",
-      "aspect": "Product Specification",
-      "relation_type": "PRODUCT_SPECIFICATION",
-      "is_mandatory": true,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS/ISO 16163",
-      "standard_id": "IS/ISO 16163",
-      "title": "Indian Standard Specification / Test Method (IS/ISO 16163)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 875 (PART 2)",
-      "standard_id": "IS 875 (Part 2):1987",
-      "title": "Code of Practice for Design Loads (Other Than Earthquake) For Buildings And Structures, Part 2: Imposed Loads",
-      "division_code": "LITD",
-      "aspect": "Code of Practice",
-      "relation_type": "INSTALLATION_CODE",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Black Sheet",
-    "Cold Rolled Sheet or Coil",
     "Thickness of Sheet",
-    "Normal Spangle (N",
-    "Minimized Spangle (M",
-    "Grade -1",
+    "Grade EDD",
+    "Grade Grade",
+    "Grade incation",
+    "Grade ification",
     "Grade of",
-    "Grade 350",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_277"
+    "Grade DD",
+    "Galvanized Steel Strips and Sheets",
+    "Plain & Corrugated",
+    "Seventh Revision"
   ],
   "clause_4_requirements": {
-    "mechanical_properties": [
-      "Elongation values shall be reduced by 4 units for thickness 0.5 mm"
-    ],
-    "chemical_properties": [
-      "silicon content shall not be less than 0.10 percent",
-      "silicon content shall not be less than 0.030 percent",
-      "Nitrogen content of the steel shall not be more than 0.007 percent",
-      "Nitrogen content shall not exceed 0.012 percent"
-    ],
+    "mechanical_properties": [],
+    "chemical_properties": [],
     "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [
-      "Tolerances on length on plus side shall be 15 mm",
-      "tolerances on width shall be 10 mm"
+      "Tolerances on length on plus side shall be 15 mm"
     ],
     "marking_requirements": [
-      "The material may also be marked with the Standard Mark."
+      "15.1 Manufacturer's name or trade-mark, grade of",
+      "corrugations* grade in case of corrugated sheets and",
+      "material identification (grade, quality, etc) shall legibly",
+      "be marked on top of each sheet or shown on a tag",
+      "15.1.1 The material may also be marked with the"
     ]
   },
-  "total_chars_parsed": 28624
+  "total_chars_parsed": 26670
 }

@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_11673__PART_1_",
-  "standard_id": "IS IS_11673__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_11673__PART_1_)",
+  "is_number": "IS 11673 (PART 1)",
+  "standard_id": "IS 11673 (Part 1):2019",
+  "title": "Part 1 : 2019: Sodium Hypochlorite Solution — Specification Part 1 Household and Industrial Use ( Second Revision )",
   "ia_identifier": "IS_11673__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -52,6 +52,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 4905",
       "standard_id": "IS 4905:1968",
       "title": "Methods for random sampling",
@@ -65,9 +75,9 @@
   "clause_3_terminology": [
     "Available Chlorine",
     "Grade SO",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11673__PART_1_"
+    "Part 1 : 2019: Sodium Hypochlorite Solution",
+    "Specification Part 1 Household and Industrial Use",
+    "Second Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

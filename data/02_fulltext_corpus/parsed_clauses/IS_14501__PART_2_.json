@@ -1,0 +1,66 @@
+{
+  "is_number": "IS 14501 (PART 2)",
+  "standard_id": "IS 14501 (Part 2):1998",
+  "title": "Pulse techniques and apparatus, Part 2: Pulse measurement and analysis, general considerations",
+  "ia_identifier": "IS_14501__PART_2_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard provides definitions and descriptions of the techniques and procedures for time domain pulse measurements. The definitions and descriptions provided are independent of specific devices, apparatus, instruments or computing devices which may be used in pulse measurements and are necessary for: — efficient communication of the results of pulse measurement, — standards for pulse apparatus, and — standards for apparatus which employ pulse techniques.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 14501",
+      "standard_id": "IS 14501",
+      "title": "Indian Standard Specification / Test Method (IS 14501)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14501 (PART 1)",
+      "standard_id": "IS 14501 (Part 1):1998",
+      "title": "Pulse techniques and apparatus, Part 1: Pulse terms and definitions",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7920 (PART 1)",
+      "standard_id": "IS 7920 (Part 1):2012",
+      "title": "Part 1 : 2012: Statistical Vocabulary and Symbols : Part 1 General Statistical Terms and terms used in Probability",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Pulse Measurement Terms",
+    "Statistical Terms",
+    "Waveform Formats",
+    "Waveform Epoch Expansion and Contraction",
+    "Reference Pulse Waveforms",
+    "Pulse techniques and apparatus",
+    "Part 2: Pulse measurement and analysis",
+    "general considerations"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 33366
+}

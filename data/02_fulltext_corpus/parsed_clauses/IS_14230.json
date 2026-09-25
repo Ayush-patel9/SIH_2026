@@ -1,0 +1,76 @@
+{
+  "is_number": "IS 14230",
+  "standard_id": "IS 14230:1995",
+  "title": "C-Band parabolic Dish Antenna",
+  "ia_identifier": "IS_14230",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard specifies electrical and mechanical parameters for C-Band parabolic dish antenna used for Cabled Distribution System for television and sound signals.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13987 (PART 1)",
+      "standard_id": "IS 13987 (Part 1):2012",
+      "title": "Receiving Antennas For Satellite Broadcast Transmissions in the 11/12 GHz Band, Part 1: Electrical Measurements",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13987 (PART 2)",
+      "standard_id": "IS 13987 (Part 2):1995",
+      "title": "Methods of measurement on receiving antennas for satellite transmission, Part 2: Mechanical and environmental measurements on DBS receiving antennas",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14231 (PART 1)",
+      "standard_id": "IS 14231 (Part 1):1995",
+      "title": "Cabled Distribution Systems for Television and Sound Signals, Part 1: Safety Requirements",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13987",
+      "standard_id": "IS 13987",
+      "title": "Indian Standard Specification / Test Method (IS 13987)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ed",
+    "Band parabolic Dish Antenna",
+    "C-Band parabolic Dish Antenna",
+    "IS 14230 Specification",
+    "Conformity Assessment"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "4.1 Each dish antenna shall be legibly and indelibly marked with at least the following information:",
+      "The antenna manufacturer shall publish the following data for the wind pressure of P = 800 N/m^:",
+      "4.3 Standard Mark may be provided on the dish",
+      "4.3.1 The use of the Standard Mark is governed by",
+      "licence for the use of Standard Mark may be granted"
+    ]
+  },
+  "total_chars_parsed": 6197
+}

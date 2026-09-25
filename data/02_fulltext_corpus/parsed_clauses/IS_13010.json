@@ -1,0 +1,212 @@
+{
+  "is_number": "IS 13010",
+  "standard_id": "IS 13010:2002",
+  "title": "ac Watthour Meters, Class 0.5, 1 and 2",
+  "ia_identifier": "IS_13010",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard applies only to induction type watthour meters of accuracy Class 0.5,1 and 2, for the measurement of alternating current electrical active energy. 1 .2 It applies to the assembly of meters and accessories, including current transformers, when enclosed in the meter case. It does not apply to maximum demand indicators which is covered by IS 8530. 1.3 It does not apply to any kind of measuring devices such as those used for telemetering electrical energy covered by IS 1445 1 ( Part 1 ). 1.4 This standard applies to multi-rate meters, but does not apply to other special types of meters ( for example, excess consumption meters ), or to meters used for testing purposes covered by IS 1 1426. 1.5 It does not apply to watthour meters where the voltage across the connection terminals exceeds 600 V ( line to line voltage for meters for polyphase systems ). NOTE — For portable meters and meters for outdoor use, additional requirements may be necessary.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/IEC 60068",
+      "standard_id": "IS/IEC 60068",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60068)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 75",
+      "standard_id": "IS/ISO 75",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 75)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61000",
+      "standard_id": "IS/IEC 61000",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60387",
+      "standard_id": "IS/IEC 60387",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60387)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60521",
+      "standard_id": "IS/IEC 60521",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60521)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8530",
+      "standard_id": "IS 8530:1977",
+      "title": "Maximum demand indicators (class 1)",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1445",
+      "standard_id": "IS 1445:1977",
+      "title": "Porcelain insulators for overhead power lines with a nominal voltage up to and including 1 000 V",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1401",
+      "standard_id": "IS 1401:2008",
+      "title": "Protection of persons and equipment by enclosures - Probes for verification",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12346",
+      "standard_id": "IS 12346:1999",
+      "title": "Testing Equipment for AC Electrical Energy Meters",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12360",
+      "standard_id": "IS 12360:1988",
+      "title": "Voltage Bands for Electrical Installations Including Preferred Voltages and Frequency",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 50",
+      "standard_id": "IS 50:1980",
+      "title": "Lead and Scarlet Chromes",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2071",
+      "standard_id": "IS 2071",
+      "title": "Indian Standard Specification / Test Method (IS 2071)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9792",
+      "standard_id": "IS 9792",
+      "title": "Indian Standard Specification / Test Method (IS 9792)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11000",
+      "standard_id": "IS 11000",
+      "title": "Indian Standard Specification / Test Method (IS 11000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12063",
+      "standard_id": "IS 12063",
+      "title": "Indian Standard Specification / Test Method (IS 12063)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Watthour Meter ( Active Energy Meter",
+    "Induction Meter",
+    "Meter Rotor",
+    "Meter Driving Element",
+    "Reverse Running Stop",
+    "Meter Braking Element",
+    "Register of Meter (Counting Mechanism",
+    "Meter Base",
+    "Meter Cover",
+    "Meter Case",
+    "Meter Frame",
+    "Accessible Conducting Part"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "power factor. A",
+      "small parts are accessible by the standard test"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "The meter may also be marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 95957
+}

@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_2830",
-  "standard_id": "IS IS_2830",
-  "title": "Indian Standard Specification / Test Method (IS IS_2830)",
+  "is_number": "IS 2830",
+  "standard_id": "IS 2830:2012",
+  "title": "Carbon steel cast billet ingots,billets,blooms and slabs for re-rolling into steel for general structural purposes - Specification",
   "ia_identifier": "IS_2830",
-  "division_code": "GEN",
+  "division_code": "CED",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard covers the requirements of carbon steel cast billet ingots, billets, blooms, slabs and for re-rolling into medium and high tensile structural steel including steel for concrete reinforcement. The requirements of this standard shall also be applicable to billets, blooms and slabs produced by continuously cast process. 1.2 Carbon steel cast billet ingots, billets, bloom and slabs (including continuously cast) may also be supplied in copper-bearing quality. In which case steel shall be designated with a suffix Cu.",
   "clause_2_normative_references": [
@@ -19,7 +19,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1786",
@@ -29,7 +29,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 1956",
@@ -88,9 +88,10 @@
     "Bloom",
     "Slab",
     "Grade Sulphur",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_2830"
+    "Carbon steel cast billet ingots",
+    "billets",
+    "blooms and slabs for re",
+    "rolling into steel for general structural purposes"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

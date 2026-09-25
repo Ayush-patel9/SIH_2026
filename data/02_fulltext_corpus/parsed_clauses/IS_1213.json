@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_1213",
-  "standard_id": "IS IS_1213",
-  "title": "Indian Standard Specification / Test Method (IS IS_1213)",
+  "is_number": "IS 1213",
+  "standard_id": "IS 1213:2020",
+  "title": "METHODS FOR TESTING TAR AND BITUMINOUS MATERIALS: Distillation Test",
   "ia_identifier": "IS_1213",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -42,6 +42,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 1203",
       "standard_id": "IS 1203:2022",
       "title": "Methods for Testing Tar and Bituminous Materials-Determination of Penetration",
@@ -64,9 +74,9 @@
   ],
   "clause_3_terminology": [
     "Distillation",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1213"
+    "METHODS FOR TESTING TAR AND BITUMINOUS MATERIALS: Distillation Test",
+    "IS 1213 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

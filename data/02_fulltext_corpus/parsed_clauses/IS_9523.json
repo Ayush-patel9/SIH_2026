@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_9523",
-  "standard_id": "IS IS_9523",
-  "title": "Indian Standard Specification / Test Method (IS IS_9523)",
+  "is_number": "IS 9523",
+  "standard_id": "IS 9523:2000",
+  "title": "Ductile Iron Fittings for Pressure Pipes for Water, Gas and Sewage",
   "ia_identifier": "IS_9523",
-  "division_code": "GEN",
+  "division_code": "CHD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Ductile Iron Pipes (Quality Control) Order"
   },
   "clause_1_scope": "1.1 This standard covers requirements for ductile iron fittings (special castings) to be used with pressure pipes for carrying water, gas and sewage for sizes from 80 to 2 000 mm nominal diameter. 1.2 This standard is applicable to fittings meant for mechanical joints (bolted gland), push-on-joints and flanged joints for jointing by means of various types of gaskets. The design of the socket and the gasket are not within the scope of this standard. If required, fittings fabricated from spun pipes and plain ended fittings can also be used. 1.3 This standard does not restrict the use and development of other types of joints as long as they maintain the overall dimensions for reasons of safety and interchangeability. 1.4 The fittings covered by this standard are normally supplied with externally and internally coated to protect against corrosion. 1.5 The fittings are suitable for fluid temperatures between 0°C and 50°C excluding frost. NOTE — The terms 'special castings' and 'push-on-flexible joints' have been referred as 'castings' and 'Push-on-joints' respectively henceforth in this standard.",
   "clause_2_normative_references": [
@@ -149,7 +149,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 455",
@@ -159,7 +159,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 12330",

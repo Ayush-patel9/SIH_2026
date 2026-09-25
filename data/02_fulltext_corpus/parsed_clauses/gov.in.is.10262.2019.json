@@ -32,6 +32,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 383",
       "standard_id": "IS 383:2016",
       "title": "Coarse and Fine Aggregate for Concrete - Specification",
@@ -79,7 +89,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 2386",
@@ -99,7 +109,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 3812 (PART1)",
@@ -185,11 +195,11 @@
   "clause_3_terminology": [
     "Water-Cement Ratio (w/c",
     "Water-Cementitious Materials Ratio (w/cm",
-    "Grade of",
     "Grade conforming",
-    "Grade atures",
-    "Grade V1",
     "Grade st",
+    "Grade atures",
+    "Grade of",
+    "Grade V1",
     "Concrete Mix Proportioning",
     "Guidelines",
     "Second Revision"

@@ -1,0 +1,168 @@
+{
+  "is_number": "IS 13937 (PART 1)",
+  "standard_id": "IS 13937 (Part 1):1994",
+  "title": "Statistical methods of determining and verifying stated noise emission values of machinery and equipment, Part 1: General considerations and definitions",
+  "ia_identifier": "IS_13937__PART_1_",
+  "division_code": "LITD",
+  "aspect": "Terminology",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 13937 (PART 1)) covers Statistical methods of determining and verifying stated noise emission values of machinery and equipment, Part 1: General considerations and definitions. This Indian Standard ( Part 1 ) which is identical with ISO 7574/1 : 1985 'Acoustics — Statistical methods for determining and verifying stated noise emission values of machinery and equipment — Part 1 : General considerations and definitions' issued by the International Organization for Standardization ( ISO ) was adopted by the the Acoustics Sectional Committee ( LTD 5 ) and approval of the Electronics and Telecommunication Division Council. The text of ISO Standard has been approved as suitable for publication as Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards, Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. CROSS REFERENCES In this Indian Standard, the following International Standards are referred to. Read in their respective place the following: International Standard Indian Standard Deg",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13937",
+      "standard_id": "IS 13937",
+      "title": "Indian Standard Specification / Test Method (IS 13937)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7574",
+      "standard_id": "IS/ISO 7574",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7574)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3534",
+      "standard_id": "IS/ISO 3534",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3534)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3741",
+      "standard_id": "IS/ISO 3741",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3741)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3742",
+      "standard_id": "IS/ISO 3742",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3742)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3743",
+      "standard_id": "IS/ISO 3743",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3743)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3744",
+      "standard_id": "IS/ISO 3744",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3744)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3745",
+      "standard_id": "IS/ISO 3745",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3745)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3746",
+      "standard_id": "IS/ISO 3746",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3746)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3951",
+      "standard_id": "IS/ISO 3951",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3951)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4871",
+      "standard_id": "IS/ISO 4871",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4871)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5725",
+      "standard_id": "IS/ISO 5725",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5725)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3634",
+      "standard_id": "IS/ISO 3634",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3634)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "A-weighted sound power level",
+    "measured value",
+    "family of machines",
+    "label",
+    "batch ( lot) of machines",
+    "sample",
+    "arithmetic mean of a batch (or of a",
+    "standard deviation of a batch ( or of",
+    "Statistical methods of determining and verifying stated noise emission values of machinery and equipment",
+    "Part 1: General considerations and definitions"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 22298
+}

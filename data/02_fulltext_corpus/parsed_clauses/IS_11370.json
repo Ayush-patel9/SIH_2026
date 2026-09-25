@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_11370",
-  "standard_id": "IS IS_11370",
-  "title": "Indian Standard Specification / Test Method (IS IS_11370)",
+  "is_number": "IS 11370",
+  "standard_id": "IS 11370:2008",
+  "title": "Guide for Data Elements and Record Format for Computer Based Bibliographical Data Bases for Bibliographic Description of Different Kinds of Documents",
   "ia_identifier": "IS_11370",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -30,15 +30,23 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade ification",
     "Grade of",
     "Grade Number",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11370"
+    "Grade ification",
+    "Guide for Data Elements and Record Format for Computer Based Bibliographical Data Bases for Bibliographic Description of Different Kinds of Documents"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

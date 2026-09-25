@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_13252__PART_1_",
-  "standard_id": "IS IS_13252__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_13252__PART_1_)",
+  "is_number": "IS 13252 (PART 1)",
+  "standard_id": "IS 13252 (Part 1):2010",
+  "title": "Information Technology Equipment -- Safety, Part 1: General Requirements",
   "ia_identifier": "IS_13252__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1.1 Equipment covered by this standard This standard is applicable to mains-powered or battery-powered information technology equipment, including electrical business equipment and associated equipment, with a rated VOLTAGE not exceeding 600 V. This standard is also applicable to such information technology equipment: - designed for use as telecommunication terminal equipment and telecommunication NETWORK infrastructure equipment, regardless of the source of power; - designed and intended to be connected directly to, or used as infrastructure equipment in, a CABLE DISTRIBUTION SYSTEM, regardless of the source of power; - designed to use the AC mains supply as a communication transmission medium (see Clause 6, Note 4 and 7.1, Note 4). This standard is also applicable to components and subassemblies intended for incorporation in information technology equipment. It is not expected that such components and subassemblies comply with every aspect of the standard, provided that the complete information technology equipment, incorporating such components and subassemblies, does comply. NOTE 1 Examples of aspects with which uninstalled components and subassemblies may not comply include the marking of the power rating and access to hazardous parts. NOTE 2 This standard may be applied to the electronic parts of equipment even if that equipment does not wholly fall within its Scope, such as large-scale air conditioning systems, fire detection systems and fire extinguishing systems. Different requirements may be necessary for some applications. This standard specifies requirements intended to reduce risks of fire, electric shock or injury for the OPERATOR and layman who may come into contact with the equipment and, wliere specifically stated, for a service person. This standard is intended to reduce such risks with respect to installed equipment, whether it consists of a system of interconnected units or independent units, subject to installing, operating and maintaining the equipment in the manner prescribed by the manufacturer. IS 13252 (Parti): 2010 lEC 60950-1:2005 Examples of equipment that is in the scope of this standard are: Generic product type Specific example of generic type banking equipment monetary processing machines including automated teller (cash dispensing) machines (ATM) data and text processing machines and associated equipment data preparation equipment, data processing equipment, data storage equipment, personal computers, plotters, printers,",
   "clause_2_normative_references": [
@@ -49,7 +49,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS/IEC 60309 (PART 1)",
@@ -183,10 +183,10 @@
     },
     {
       "is_number": "IS/IEC 60990",
-      "standard_id": "IS/IEC 60990",
-      "title": "Indian Standard Specification / Test Method (IS/IEC 60990)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
+      "standard_id": "IS/IEC 60990:1999",
+      "title": "IS/IEC 60990: Methods of measurement of touch current and protective conductor current",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
@@ -372,9 +372,29 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS/IEC 5017",
       "standard_id": "IS/IEC 5017",
       "title": "Indian Standard Specification / Test Method (IS/IEC 5017)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16",
+      "standard_id": "IS 16",
+      "title": "Indian Standard Specification / Test Method (IS 16)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -422,6 +442,26 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 106",
+      "standard_id": "IS 106",
+      "title": "Indian Standard Specification / Test Method (IS 106)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS/ISO 179",
       "standard_id": "IS/ISO 179",
       "title": "Indian Standard Specification / Test Method (IS/ISO 179)",
@@ -463,11 +503,11 @@
     },
     {
       "is_number": "IS/IEC 61965",
-      "standard_id": "IS/IEC 61965",
-      "title": "Indian Standard Specification / Test Method (IS/IEC 61965)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "standard_id": "IS/IEC 61965:2003",
+      "title": "IS/IEC 61965: Mechanical Safety of Cathode Ray Tubes",
+      "division_code": "MED",
+      "aspect": "Safety Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -513,18 +553,18 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade of",
     "Grade 180",
-    "Grade tests",
     "Grade writers",
-    "Grade gD",
-    "Grade 250",
     "Grade 130",
+    "Grade 120",
     "Grade 105",
+    "Grade 250",
+    "Grade of",
+    "Grade 200",
     "10 K",
     "2 K",
-    "Indian Standard Specification",
-    "Test Method"
+    "Information Technology Equipment",
+    "Safety"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

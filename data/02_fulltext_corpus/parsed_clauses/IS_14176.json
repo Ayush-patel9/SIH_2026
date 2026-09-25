@@ -1,0 +1,107 @@
+{
+  "is_number": "IS 14176",
+  "standard_id": "IS 14176:1994",
+  "title": "Information Processing - Volume and File Structure of CD-ROM for Information Interchange",
+  "ia_identifier": "IS_14176",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 14176) covers Information Processing - Volume and File Structure of CD-ROM for Information Interchange. This Indian Standard, which is identical with ISO 9660 : 1988 'Information processing — Volume and file structure of CD-ROM for information interchange\\ issued by the International Organization for Standardization was adopted by the Computer Peripherals and Media Sectional Committee (LTD 37) and approval of the Electronics and Telecommunication Division Council. The text of the ISO standard has been approved as suitable for publication as Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards; attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice is to use a point (.) as the decimal marker. c) For the purpose of this Indian Standard metric dimensions are applicable. CROSS REFERENCES in this Indian Standard, the f",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 966",
+      "standard_id": "IS/ISO 966",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 966)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9660",
+      "standard_id": "IS/ISO 9660",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9660)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 646",
+      "standard_id": "IS/ISO 646",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 646)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1539",
+      "standard_id": "IS/ISO 1539",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1539)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2022",
+      "standard_id": "IS/ISO 2022",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2022)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2375",
+      "standard_id": "IS/ISO 2375",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2375)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4873",
+      "standard_id": "IS/ISO 4873",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4873)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Standard",
+    "Grade numerical",
+    "Grade corded",
+    "Grade field",
+    "7 K",
+    "15 k",
+    "Information Processing",
+    "Volume and File Structure of CD",
+    "ROM for Information Interchange"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 117946
+}

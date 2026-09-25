@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_10037__PART_1_",
-  "standard_id": "IS IS_10037__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10037__PART_1_)",
+  "is_number": "IS 10037 (PART 1)",
+  "standard_id": "IS 10037 (Part 1):1981",
+  "title": "Requirements for sludge dewatering equipment, Part I: Sludge drying beds-sand, gravel and underdrains",
   "ia_identifier": "IS_10037__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_10037__PART_1_) covers Indian Standard Specification / Test Method (IS IS_10037__PART_1_). 0.1 This Indian Standard ( Part 2 ) was adopted by the Indian Standards Institution on 28 June 1983, after the draft finalized by the Public Health Engineering Equipment Sectional Committee had been approved by the Civil Engineering Division Council. 0.2 Sludges produced during sewage treatment contain large percentage of water. In many situations it is, therefore, necessary that these should be dewatered so that solids obtained after dewatering can be easily handled and disposed off. The liquid obtained during dewatering is usually returned to the plants inlet. Vacuum filtration is employed to separate a solid from its associated liquid by means of a porous media which retains the solid but allows the liquid to pass. 0.3 Among the vacuum filters, the revolving type continuous vacuum drum filter is most widely used (see Fig. 1 ). 0.4 In calculating the size of filter, the desired moisture content of the filter cake is one of the factors. If wetter cake content of the filter cake is acc",
+  "clause_1_scope": "This Indian Standard (IS 10037 (PART 1)) covers Requirements for sludge dewatering equipment, Part I: Sludge drying beds-sand, gravel and underdrains. 0.1 This Indian Standard ( Part 2 ) was adopted by the Indian Standards Institution on 28 June 1983, after the draft finalized by the Public Health Engineering Equipment Sectional Committee had been approved by the Civil Engineering Division Council. 0.2 Sludges produced during sewage treatment contain large percentage of water. In many situations it is, therefore, necessary that these should be dewatered so that solids obtained after dewatering can be easily handled and disposed off. The liquid obtained during dewatering is usually returned to the plants inlet. Vacuum filtration is employed to separate a solid from its associated liquid by means of a porous media which retains the solid but allows the liquid to pass. 0.3 Among the vacuum filters, the revolving type continuous vacuum drum filter is most widely used (see Fig. 1 ). 0.4 In calculating the size of filter, the desired moisture content of the filter cake is one of the factors. If wetter cake content of the filter cake is acc",
   "clause_2_normative_references": [
     {
       "is_number": "IS 10037",
@@ -24,12 +24,12 @@
     {
       "is_number": "IS 1977",
       "standard_id": "IS 1977",
-      "title": "Indian Standard Specification / Test Method (IS 1977)",
-      "division_code": "GEN",
+      "title": "Mild Steel Wire Rods",
+      "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Mild Steel Wire Rods"
     },
     {
       "is_number": "IS 4682",
@@ -53,9 +53,10 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10037__PART_1_"
+    "Requirements for sludge dewatering equipment",
+    "Part I: Sludge drying beds",
+    "sand",
+    "gravel and underdrains"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,0 +1,74 @@
+{
+  "is_number": "IS 12789",
+  "standard_id": "IS 12789:1989",
+  "title": "Household sewing machines - Tables and base",
+  "ia_identifier": "IS_12789",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard lays down the requirements for table and base for sewing machines for household purposes.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 101",
+      "standard_id": "IS 101",
+      "title": "Indian Standard Specification / Test Method (IS 101)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1078",
+      "standard_id": "IS 1078:1987",
+      "title": "Copper Naphthenate",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1734",
+      "standard_id": "IS 1734:1983",
+      "title": "to 20: Methods of test for plywood",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1708",
+      "standard_id": "IS 1708:1986",
+      "title": "to 18: Methods of testing of small clear specimens of timber",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Table",
+    "Grade Tables",
+    "Grade AB",
+    "Household sewing machines",
+    "Tables and base"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "moisture content shall be less than 15 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "14.1 The table may be marked with manufacturer's name or trade-mark."
+    ]
+  },
+  "total_chars_parsed": 13067
+}

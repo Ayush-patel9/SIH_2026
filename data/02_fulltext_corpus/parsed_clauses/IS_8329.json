@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_8329",
-  "standard_id": "IS IS_8329",
-  "title": "Indian Standard Specification / Test Method (IS IS_8329)",
+  "is_number": "IS 8329",
+  "standard_id": "IS 8329:2000",
+  "title": "Centrifugally Cast (Spun) Ductile Iron Pressure Pipes for Water, Gas and Sewage",
   "ia_identifier": "IS_8329",
-  "division_code": "GEN",
+  "division_code": "CHD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard specifies the requirements and associated test methods applicable to ductile iron pipes manufactured in metal (lined or unlined) or sand moulds and their joints for the construction of pipe lines: — to convey water, sewage or gas — to be installed below or above ground — operated with or without pressure NOTES 1 By sand it is to be understood, sand or mineral based materials used in foundry trade irrespective of the type of bonding agents.",
   "clause_2_normative_references": [
@@ -129,7 +129,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 12330",
@@ -166,14 +166,15 @@
     "Ductile Iron",
     "Pipe",
     "Grade male",
-    "Grade of",
-    "Grade A7",
-    "Grade reference",
+    "Grade ATI",
+    "Grade Kl",
     "Grade bruary",
-    "Grade KS",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_8329"
+    "Grade reference",
+    "Grade of",
+    "Centrifugally Cast",
+    "Spun",
+    "Ductile Iron Pressure Pipes for Water",
+    "Gas and Sewage"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

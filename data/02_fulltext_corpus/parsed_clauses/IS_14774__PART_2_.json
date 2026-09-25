@@ -1,0 +1,82 @@
+{
+  "is_number": "IS 14774 (PART 2)",
+  "standard_id": "IS 14774 (Part 2):2000",
+  "title": "Resistance Trace Heating in Potentially Explosive Atmospheres, Part 2: Informative Application Guide for Design, Installation and Maintenance",
+  "ia_identifier": "IS_14774__PART_2_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard (Part 2) provides guidance for the application of electrical resistance trace heating systems in areas where potentially explosive atmospheres may be present. It provides recommendations for the design, installation and maintenance of trace heating equipment and associated control and monitoring equipment. This part supplements the requirements specified in IS 14774 (Part 1).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 14774 (PART 1)",
+      "standard_id": "IS 14774 (Part 1):2000",
+      "title": "Resistance Trace Heating in Potentially Explosive Atmospheres, Part 1: General and Testing Requirements",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5572",
+      "standard_id": "IS 5572:2009",
+      "title": "Classification of hazardous areas (other than mines) having flammable gases and vapours for electrical installation",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5571",
+      "standard_id": "IS 5571:2009",
+      "title": "Guide for Selection and installation of Electrical Equipment for Hazardous Areas (other than mines)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14774",
+      "standard_id": "IS 14774",
+      "title": "Indian Standard Specification / Test Method (IS 14774)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Heater",
+    "Grade NC",
+    "Grade ification",
+    "Grade iflcation",
+    "Grade Location",
+    "Grade Setting",
+    "Grade II",
+    "Grade III",
+    "2 K",
+    "71k",
+    "Resistance Trace Heating in Potentially Explosive Atmospheres",
+    "Part 2: Informative Application Guide for Design"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "insulation resistance shall be 20 M. Minimum acceptable test voltage is 1 000 V"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 84106
+}

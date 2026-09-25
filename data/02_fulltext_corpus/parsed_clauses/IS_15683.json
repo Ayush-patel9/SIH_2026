@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_15683",
-  "standard_id": "IS IS_15683",
-  "title": "Indian Standard Specification / Test Method (IS IS_15683)",
+  "is_number": "IS 15683",
+  "standard_id": "IS 15683:2018",
+  "title": "Portable Fire Extinguishers — Performance and Construction — Specification ( First Revision )",
   "ia_identifier": "IS_15683",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Fire Fighting Equipment (Quality Control) Order"
   },
   "clause_1_scope": "This standard lays down requirements for performance, reliability and safety of portable fire extinguishers of the following types : a) Water based; b) Foam based; c) Powders — ABC/BC/D Type; d) Carbon dioxide; e) Clean agents; and f) Water mist type.",
   "clause_2_normative_references": [
@@ -56,6 +56,16 @@
       "standard_id": "IS 4989:2018",
       "title": "Foam Concentrate for Producing Mechanical Foam for Fire Fighting — Specification ( Fourth Revision )",
       "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,

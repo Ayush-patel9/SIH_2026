@@ -1,0 +1,73 @@
+{
+  "is_number": "IS 14901 (PART 5)",
+  "standard_id": "IS 14901 (Part 5):2004",
+  "title": "Semiconductor Devices - Discrete Devices and Integrated Circuits, Part 5: Optoelectronic Devices",
+  "ia_identifier": "IS_14901__PART_5_",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of IEC 60747 gives the requirements for the following devices: - signal diodes (excluding diodes designed to operate at frequencies above several hundred MHz); - switching diodes (excluding high power rectifier diodes); — voltage-regulator diodes; — voltage-reference diodes, - current-regulator diodes.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 14901 (PART 3)",
+      "standard_id": "IS 14901 (Part 3):2016",
+      "title": "Part 3 : 2016: Semiconductor Devices— Discrete Devices Part 3 Signal, Switching and Regulator Diodes",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60747",
+      "standard_id": "IS/IEC 60747",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60747)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14901 (PART 1)",
+      "standard_id": "IS 14901 (Part 1):2010",
+      "title": "Semiconductor Devices - Discrete Devices and Integrated Circuits, Part 1: General",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60050",
+      "standard_id": "IS/IEC 60050",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60050)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Semiconductor Devices",
+    "Discrete Devices and Integrated Circuits",
+    "Part 5: Optoelectronic Devices"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance less than or equal to 1 %"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 48181
+}

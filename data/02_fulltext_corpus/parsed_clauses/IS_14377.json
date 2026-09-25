@@ -1,0 +1,94 @@
+{
+  "is_number": "IS 14377",
+  "standard_id": "IS 14377:1996",
+  "title": "Three-phase Induction Motors for Fans Used in Air-conditioning and Ventilation",
+  "ia_identifier": "IS_14377",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers three-phase squirrel cage induction motors for driving fans for ventilation, airconditioning and commercial heating for voltages up to and including 11 000 V and having windings with Class E, Class B and Class F insulation ( see ).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6362",
+      "standard_id": "IS 6362:1995",
+      "title": "Designation of Methods of Cooling of Rotating Electrical Machines",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12075",
+      "standard_id": "IS 12075:2008",
+      "title": "Mechanical Vibration of Rotating Electrical Machines with Shaft Heights 56 mm and Higher - Measurement, Evaluation and Limits of Vibration Severity",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 325",
+      "standard_id": "IS 325:1996",
+      "title": "Three-phase induction motors",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1231",
+      "standard_id": "IS 1231:2019",
+      "title": "Dimensions and Output Series of Foot Mounted Induction Motors — Frame Numbers 56 to 315 ( Fourth Revision )",
+      "division_code": "LITD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 585",
+      "standard_id": "IS 585",
+      "title": "Indian Standard Specification / Test Method (IS 585)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Three",
+    "phase Induction Motors for Fans Used in Air",
+    "conditioning and Ventilation"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "rated voltages shall be 415 V"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 18427
+}

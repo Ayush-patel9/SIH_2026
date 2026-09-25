@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_269",
-  "standard_id": "IS IS_269",
-  "title": "Indian Standard Specification / Test Method (IS IS_269)",
+  "is_number": "IS 269",
+  "standard_id": "IS 269:2013",
+  "title": "Specification for Ordinary Portland Cement, 33 Grade",
   "ia_identifier": "IS_269",
-  "division_code": "GEN",
+  "division_code": "CED",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard covers the manufacture and chemical and physical requirements of 33 grade ordinary Portland cement.",
   "clause_2_normative_references": [
@@ -263,9 +263,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_269"
+    "Specification for Ordinary Portland Cement",
+    "33 Grade",
+    "Specification for Ordinary Portland Cement, 33 Grade",
+    "IS 269 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
@@ -284,5 +286,5 @@
       "10.2 Similar information shall be provided in the"
     ]
   },
-  "total_chars_parsed": 35133
+  "total_chars_parsed": 35079
 }

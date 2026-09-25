@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_10144",
-  "standard_id": "IS IS_10144",
-  "title": "Indian Standard Specification / Test Method (IS IS_10144)",
+  "is_number": "IS 10144",
+  "standard_id": "IS 10144:1982",
+  "title": "Electronic speed limiters for diesel vehicles",
   "ia_identifier": "IS_10144",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -39,7 +39,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Cement (Quality Control) Order, 2023"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 4905",
@@ -53,14 +53,12 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade number",
-    "Grade ifications",
-    "Grade rtilizers",
     "Grade Tests",
+    "Grade rtilizers",
+    "Grade ifications",
+    "Grade number",
     "Grade Testa",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10144"
+    "Electronic speed limiters for diesel vehicles"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

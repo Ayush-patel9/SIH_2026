@@ -1,0 +1,512 @@
+{
+  "is_number": "IS 13578",
+  "standard_id": "IS 13578:2008",
+  "title": "Subsurface exploration for barrrages and weirs - Code of practice",
+  "ia_identifier": "IS_13578",
+  "division_code": "LITD",
+  "aspect": "Code of Practice",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard gives guidance on the type, extent and details of subsurface exploration needed in connection with barrages and weirs. 1.2 The term subsurface exploration, as used herein, covers all types of exploration connected with determination of the nature and extent of soil and/or rock below the natural ground surface at or near barrage/weir sites.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 4453",
+      "standard_id": "IS 4453:2009",
+      "title": "Subsurface Exploration by Pits, Trenches, Drifts and Shafts - Code of Practice",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4464",
+      "standard_id": "IS 4464:2020",
+      "title": "Code of Practice for Presentation of Drilling Information and Core Description in Geotechnical Investigation ( Second Revision )",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4968 (PART 3)",
+      "standard_id": "IS 4968 (Part 3):1976",
+      "title": "Method for subsurface sounding for soils, Part 3: Static cone penetration test",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9214",
+      "standard_id": "IS 9214:1979",
+      "title": "Method of determination of modulus of subgrade reaction (K-value) of soils in field",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2950 (PART 1)",
+      "standard_id": "IS 2950 (Part 1):1981",
+      "title": "Code of practice for design and construction of raft foundations, Part 1: Design",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2950",
+      "standard_id": "IS 2950",
+      "title": "Indian Standard Specification / Test Method (IS 2950)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6926",
+      "standard_id": "IS 6926:1996",
+      "title": "Diamond Core Drilling - Site Investigation for River Valley Projects - Code of Practice",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 92",
+      "standard_id": "IS 92",
+      "title": "Indian Standard Specification / Test Method (IS 92)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1888",
+      "standard_id": "IS 1888:1982",
+      "title": "Method of load test on soils",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4434",
+      "standard_id": "IS 4434:1978",
+      "title": "Code of practice for in-situ vane shear test for soils",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5529",
+      "standard_id": "IS 5529",
+      "title": "Indian Standard Specification / Test Method (IS 5529)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5529 (PART 2)",
+      "standard_id": "IS 5529 (Part 2):2006",
+      "title": "In-situ Permeability Tests, Part 2: Tests in Bedrock",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 28)",
+      "standard_id": "IS 2720 (Part 28):1974",
+      "title": "Methods of test for soils, Part 28: Determination of dry density of soils, in-place, by the sand replacement method",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 29)",
+      "standard_id": "IS 2720 (Part 29):1975",
+      "title": "Methods of Test for Soils, Part 29: Determination of Dry Density of Soils In-place by the Core-cutter Method",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 33)",
+      "standard_id": "IS 2720 (Part 33):1971",
+      "title": "Methods of test for soils, Part 33: Determination of the density in-place by the ring and water replacement method",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 34)",
+      "standard_id": "IS 2720 (Part 34):1972",
+      "title": "Methods of test for soils, Part 34: Determination of density of soil in-place by rubber-balloon method",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4078",
+      "standard_id": "IS 4078:1980",
+      "title": "Code of practice for indexing and storage of drill cores",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025",
+      "standard_id": "IS 3025",
+      "title": "Indian Standard Specification / Test Method (IS 3025)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1498",
+      "standard_id": "IS 1498:1970",
+      "title": "Classification and identification of soils for general engineering purposes",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 2)",
+      "standard_id": "IS 2720 (Part 2):1973",
+      "title": "Methods of test for soils, Part 2: Determination of water content",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 5)",
+      "standard_id": "IS 2720 (Part 5):1985",
+      "title": "Methods of test for soils, Part 5: Determination of liquid and plastic limit",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 4)",
+      "standard_id": "IS 2720 (Part 4):1985",
+      "title": "Methods of test for soils, Part 4: Grain size analysis",
+      "division_code": "FAD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 17)",
+      "standard_id": "IS 2720 (Part 17):1986",
+      "title": "Methods of test for soils, Part 17: Laboratory determination of permeability",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 15)",
+      "standard_id": "IS 2720 (Part 15):1965",
+      "title": "Methods of Test for Soils, Part XV: Determination of Consolidation Properties",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 40)",
+      "standard_id": "IS 2720 (Part 40):1977",
+      "title": "Methods of test for soils, Part 40: Determination of free swell index of soils",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 41)",
+      "standard_id": "IS 2720 (Part 41):1977",
+      "title": "Methods of test for soils, Part 41: Measurement of swelling pressure of soils",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 10)",
+      "standard_id": "IS 2720 (Part 10):1991",
+      "title": "Methods of test for soils, Part 10: Determination of unconfined compressive strength",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 13)",
+      "standard_id": "IS 2720 (Part 13):1986",
+      "title": "Methods of test for soils, Part 13: Direct shear test",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720",
+      "standard_id": "IS 2720",
+      "title": "Indian Standard Specification / Test Method (IS 2720)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 12)",
+      "standard_id": "IS 2720 (Part 12):1981",
+      "title": "Methods of test for soils, Part 12: Determination of shear strength parameters of soil from consolidated undrained triaxial compression test with measurement of pore water pressure",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 38)",
+      "standard_id": "IS 2720 (Part 38):1976",
+      "title": "Methods of test for soils, Part 38: Compaction control test (Hilf method)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 14)",
+      "standard_id": "IS 2720 (Part 14):1983",
+      "title": "Methods of test for soils, Part 14: Determination of density index (relative density) of cohesionless soils",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 22)",
+      "standard_id": "IS 2720 (Part 22):1972",
+      "title": "Methods of test for soils, Part 22: Determination of organic matter",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 23)",
+      "standard_id": "IS 2720 (Part 23):1976",
+      "title": "Methods of test for soils, Part 23: Determination of calcium carbonate",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 26)",
+      "standard_id": "IS 2720 (Part 26):1987",
+      "title": "Method of test for soils, Part 26: Determination of pH value",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 27)",
+      "standard_id": "IS 2720 (Part 27):1977",
+      "title": "Methods of test for soils, Part 27: Determination of total soluble sulphates",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7292",
+      "standard_id": "IS 7292",
+      "title": "Indian Standard Specification / Test Method (IS 7292)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7317",
+      "standard_id": "IS 7317:2020",
+      "title": "Uniaxial Jacking Test for Deformation Modulus of Rock Mass — Code of Practice ( Second Revision )",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7746",
+      "standard_id": "IS 7746:2022",
+      "title": "In-Situ Shear Test on Rock Mass-Code of Practice",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8764",
+      "standard_id": "IS 8764:1998",
+      "title": "Method of determination of point load strength index of rocks",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9143",
+      "standard_id": "IS 9143:1979",
+      "title": "Method for the determination of unconfined compressive strength of rock materials",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9221",
+      "standard_id": "IS 9221:1979",
+      "title": "Method for the determination of modulus of elasticity and Poisson's ratio of rock materials in uniaxial compression",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12634",
+      "standard_id": "IS 12634:1989",
+      "title": "Method of determination for direct shear strength of rock joints",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7422 (PART 1)",
+      "standard_id": "IS 7422 (Part 1):1974",
+      "title": "Symbols and abbreviations for use in geological maps, sections and subsurface exploratory logs, Part 1: Abbreviations",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7422",
+      "standard_id": "IS 7422",
+      "title": "Indian Standard Specification / Test Method (IS 7422)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7422 (PART 3)",
+      "standard_id": "IS 7422 (Part 3):1974",
+      "title": "Symbols and abbreviations for use in geological maps, sections and subsurface exploratory logs, Part 3: Sedimentary rocks",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7422 (PART 4)",
+      "standard_id": "IS 7422 (Part 4):1985",
+      "title": "Symbols and abbreviations for use in geological maps, sections and subsruface exploratory logs, Part 4: Metamorphic rocks",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7422 (PART 5)",
+      "standard_id": "IS 7422 (Part 5):1992",
+      "title": "Symbols and abbreviations for use in geological maps, sections and subsurface exploratory logs, Part 5: Line symbols for formation contacts and structural features",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade asibility",
+    "Grade ification",
+    "Subsurface exploration for barrrages and weirs",
+    "Code of practice"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 35680
+}

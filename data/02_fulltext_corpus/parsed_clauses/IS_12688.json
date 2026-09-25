@@ -1,16 +1,26 @@
 {
-  "is_number": "IS IS_12688",
-  "standard_id": "IS IS_12688",
-  "title": "Indian Standard Specification / Test Method (IS IS_12688)",
+  "is_number": "IS 12688",
+  "standard_id": "IS 12688:1989",
+  "title": "Small Tools - Subland Twist Drills with Morse Taper Shank for Clearance Holes and Countersinks for Countersunk Head Screws",
   "ia_identifier": "IS_12688",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_12688) covers Indian Standard Specification / Test Method (IS IS_12688). This Indian Standard was adopted by the Bureau of Indian Standarc^s on 27 April 1989, after the draft finalized by the Small Tools Sectional Committee had been approved by the Mechanical Engineering Division Council. This standard has been prepared based on prevalent practices in Indian industry and developments at international level. In the preparation of this standard, considerable assistance has been derived from: DIN 8375 : 1981 Subland twist drill with morse taper shank for clearance holes and countersinks for countersunk head screw Other Indian Standards on subland drills are: Small tools — Subland twist drills with morse taper shank for countersunk holes prior to tapping screw threads — Specification Small tools — Subland drills with parallel shank for clearance holes and counterbores for slotted cheese head screws — Specification Small tools — Subland twist drills with morse taper shank for clearance holes and counterbores for slotted cheese head metric screw — Specification S",
+  "clause_1_scope": "This standard covers dimensions and other requirements for the subland twist drills with morse taper shank for producing clearance holes and countersinks for countersunk head screws M5 to M14 conforming to IS 3406 (Part I ) : 1986 'Dimensions for countersinks and counterbores: Part I Countersinks ( second revision )'.",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS 3406",
       "standard_id": "IS 3406",
@@ -43,9 +53,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12688"
+    "Small Tools",
+    "Subland Twist Drills with Morse Taper Shank for Clearance Holes and Countersinks for Countersunk Head Screws",
+    "Small Tools - Subland Twist Drills with Morse Taper Shank for Clearance Holes and Countersinks for Countersunk Head Screws",
+    "IS 12688 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

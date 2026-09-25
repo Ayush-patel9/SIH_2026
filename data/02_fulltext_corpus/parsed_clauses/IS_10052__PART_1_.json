@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_10052__PART_1_",
-  "standard_id": "IS IS_10052__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10052__PART_1_)",
+  "is_number": "IS 10052 (PART 1)",
+  "standard_id": "IS 10052 (Part 1):1999",
+  "title": "Radio Disturbance and Immunity Measuring Apparatus and Methods, Part 1: Radio Disturbance and Immunity Measuring Apparatus",
   "ia_identifier": "IS_10052__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_10052__PART_1_) covers Indian Standard Specification / Test Method (IS IS_10052__PART_1_). This Indian Standard (Part 1) (First Revision) which is identical with CISPR 1 6-1 (1 993) 'Specification for radio disturbance and immunity measuring apparatus and methods — Part 1 : Radio disturbance and immunity measuring apparatus' [ along with Amendment 1 (1 997)] issued by Special Committee on Radio Interference (CtSPR), was adopted by the Compatibility Sectional Committee and approval of the Electronics and Telecommunication Division Council. This standard (Part 1 ) was originally published in 1 982 and was largely based on CISPR 1 6(1 977) , Sectbn 1 . This revision is now being published to incorporate the latest developments in the technology in this field and also to align this standard with the latest edition of CISPR 16-1 . In the adopted standard, certain conventions are not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as ",
+  "clause_1_scope": "This Indian Standard (IS 10052 (PART 1)) covers Radio Disturbance and Immunity Measuring Apparatus and Methods, Part 1: Radio Disturbance and Immunity Measuring Apparatus. This Indian Standard (Part 1) (First Revision) which is identical with CISPR 1 6-1 (1 993) 'Specification for radio disturbance and immunity measuring apparatus and methods — Part 1 : Radio disturbance and immunity measuring apparatus' [ along with Amendment 1 (1 997)] issued by Special Committee on Radio Interference (CtSPR), was adopted by the Compatibility Sectional Committee and approval of the Electronics and Telecommunication Division Council. This standard (Part 1 ) was originally published in 1 982 and was largely based on CISPR 1 6(1 977) , Sectbn 1 . This revision is now being published to incorporate the latest developments in the technology in this field and also to align this standard with the latest edition of CISPR 16-1 . In the adopted standard, certain conventions are not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as ",
   "clause_2_normative_references": [
     {
       "is_number": "IS 10052",
@@ -52,6 +52,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 600",
       "standard_id": "IS 600",
       "title": "Indian Standard Specification / Test Method (IS 600)",
@@ -62,9 +72,29 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 30",
       "standard_id": "IS 30",
       "title": "Indian Standard Specification / Test Method (IS 30)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14",
+      "standard_id": "IS 14",
+      "title": "Indian Standard Specification / Test Method (IS 14)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -103,18 +133,18 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade ical",
-    "Grade Sw",
     "Grade rrite",
+    "Grade Sw",
     "Grade Sr",
+    "Grade ical",
     "Grade rroxcube",
     "Grade BNC",
     "72 K",
     "10 k",
     "1 k",
     "0 K",
-    "Indian Standard Specification",
-    "Test Method"
+    "Radio Disturbance and Immunity Measuring Apparatus and Methods",
+    "Part 1: Radio Disturbance and Immunity Measuring Apparatus"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

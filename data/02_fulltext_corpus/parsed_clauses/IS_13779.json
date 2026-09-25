@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_13779",
-  "standard_id": "IS IS_13779",
-  "title": "Indian Standard Specification / Test Method (IS IS_13779)",
+  "is_number": "IS 13779",
+  "standard_id": "IS 13779:2020",
+  "title": "ac STATIC WATTHOUR METERS CLASS 1 AND 2-Specefication",
   "ia_identifier": "IS_13779",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "1.1 This standard specifies static watt-hour meters of accuracy class 1 and 2, for the measurement of alternating-current electrical active energy of frequency in the range 45Hz to 55Hz for single phase and three phase balanced and unbalanced loads. It applies to their type tests, routine tests and acceptance tests. 1.2 It applies only to static watt-hour meters consisting of measuring element(s) and register(s) enclosed together in the meter case. It also applies to operation indicator(s) and test output(s). It also applies to multi-rate tariff meters and meters which measure energy in both directions and intended for indoor and outdoor application. For meters with smart functions, refer IS 16444 (Part 1). 1.3 It does not apply to: a) Watt-hour meters, where the voltage across the connection terminal exceeds 600 V (line to line voltage for meters for polyphase systems); b) Portable meters; and c) Data interfaces to the register of the meters. 1.4 For rack-mounted meters, the mechanical requirements are not covered in this standard.",
   "clause_2_normative_references": [
@@ -173,11 +173,11 @@
     },
     {
       "is_number": "IS/IEC 60529",
-      "standard_id": "IS/IEC 60529",
-      "title": "Indian Standard Specification / Test Method (IS/IEC 60529)",
+      "standard_id": "IS/IEC 60529:2001",
+      "title": "IS/IEC 60529: Degrees of protection provided by enclosures (IP CODE)",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -290,11 +290,10 @@
     "Terms Related to Meter Quantities",
     "Terms Related to influence Quantities",
     "Terms Related to Tests",
-    "Grade of",
+    "Grade Index",
     "10k",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_13779"
+    "ac STATIC WATTHOUR METERS CLASS 1 AND 2",
+    "Specefication"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

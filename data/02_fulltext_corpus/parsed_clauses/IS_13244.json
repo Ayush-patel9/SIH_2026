@@ -1,0 +1,73 @@
+{
+  "is_number": "IS 13244",
+  "standard_id": "IS 13244:1991",
+  "title": "Half Side and Face Cutters with Indexable Inserts",
+  "ia_identifier": "IS_13244",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers the dimensions and general requirements of half side and face milling cutters with indexable inserts having cutting edges on periphery and on one side of the cutter.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 6986",
+      "standard_id": "IS/ISO 6986",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6986)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 523",
+      "standard_id": "IS/ISO 523",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 523)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3365",
+      "standard_id": "IS/ISO 3365",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3365)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11523",
+      "standard_id": "IS 11523:1998",
+      "title": "Indexable Hardmetal (Carbide) Inserts With Wiper Edges, Without Fixing Hole - Dimensions",
+      "division_code": "GEN",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Half Side and Face Cutters with Indexable Inserts",
+    "IS 13244 Specification",
+    "Conformity Assessment"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "tensile strength not less than 925 MPa"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each half side and face cutter shall be marked",
+      "with size and manufacturer's name or trademark."
+    ]
+  },
+  "total_chars_parsed": 6421
+}

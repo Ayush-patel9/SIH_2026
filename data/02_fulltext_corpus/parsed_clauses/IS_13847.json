@@ -1,0 +1,61 @@
+{
+  "is_number": "IS 13847",
+  "standard_id": "IS 13847:1993",
+  "title": "Technical drawings - Tolerancing of orientation and location - Projected tolerance zone",
+  "ia_identifier": "IS_13847",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 13847) covers Technical drawings - Tolerancing of orientation and location - Projected tolerance zone. This Indian Standard which is identical with ISO 10578 : 1992 'Technical drawings — Tolerancing of orientation and location — Projected tolerance zone', issued by the International Organization for Standardization ( ISO ), was adopted by the ihe recommendations of the Drawings Sectional Committee ( LM 02 ) and approval of the Light Mechanical Engineering Division Council. The text of ISO standard has been approved as suitable for publication as Indian Standard without deviations. Certain conventions are however not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma ( , ) has been used as a decimal marker while in Indian Standards, the current practice is to use a point ( . ) as the decimal marker. In this adopted ISO standard, reference to ISO 1 1 01 : 1 983 has been made. The Indian Standard IS 8000 ( Part 1 ) ",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 10578",
+      "standard_id": "IS/ISO 10578",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 10578)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8000",
+      "standard_id": "IS 8000",
+      "title": "Indian Standard Specification / Test Method (IS 8000)",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1101",
+      "standard_id": "IS/ISO 1101",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1101)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Technical drawings",
+    "Tolerancing of orientation and location",
+    "Projected tolerance zone"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 8289
+}

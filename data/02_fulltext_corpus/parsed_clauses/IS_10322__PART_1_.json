@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_10322__PART_1_",
-  "standard_id": "IS IS_10322__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_10322__PART_1_)",
+  "is_number": "IS 10322 (PART 1)",
+  "standard_id": "IS 10322 (Part 1):2014",
+  "title": "Part 1 : 2014: Luminaires Part 1 General Requirements and Tests",
   "ia_identifier": "IS_10322__PART_1_",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_10322__PART_1_) covers Indian Standard Specification / Test Method (IS IS_10322__PART_1_). This Indian Standard (Part 1) (First Revision) was adopted by the finalized by the Illumination Engineering and Luminaires Sectional Committee had been approved by the Electrotechnical Division Council. This Standard (Part 1) was first published in 1982. Part 1 was one of the series of Indian Standards for luminaires. The series comprised of the following parts: Part 2 Constructional requirements, Part3 Screw and screwless terminals, Part4 Method of tests and Part5 Particular requirements. In this standard all the requirements which were earlier covered under Part | to Part 4 have been covered in this Part 1. It is also intended to revise all the series of standards under IS 10322 (Part 5) to cover general and safety requirements for particular types of luminaries. The presentation of photometry data for luminaires shall also be covered in Part 5 dealing with various types of luminaires in line with publications issued by the International Commission on Illumination (CIE) and is not, t",
+  "clause_1_scope": "This Indian Standard (IS 10322 (PART 1)) covers Part 1 : 2014: Luminaires Part 1 General Requirements and Tests. This Indian Standard (Part 1) (First Revision) was adopted by the finalized by the Illumination Engineering and Luminaires Sectional Committee had been approved by the Electrotechnical Division Council. This Standard (Part 1) was first published in 1982. Part 1 was one of the series of Indian Standards for luminaires. The series comprised of the following parts: Part 2 Constructional requirements, Part3 Screw and screwless terminals, Part4 Method of tests and Part5 Particular requirements. In this standard all the requirements which were earlier covered under Part | to Part 4 have been covered in this Part 1. It is also intended to revise all the series of standards under IS 10322 (Part 5) to cover general and safety requirements for particular types of luminaries. The presentation of photometry data for luminaires shall also be covered in Part 5 dealing with various types of luminaires in line with publications issued by the International Commission on Illumination (CIE) and is not, t",
   "clause_2_normative_references": [
     {
       "is_number": "IS 10322 (PART 5)",
@@ -169,7 +169,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 9968 (PART 1)",
@@ -189,7 +189,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 3010 (PART 2)",
@@ -382,6 +382,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 229",
       "standard_id": "IS 229:2021",
       "title": "ETHYL ACETATE SPECIFICATION Fourth Revision",
@@ -403,17 +413,15 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade of",
-    "Grade reference",
-    "Grade OI",
-    "Grade MI",
-    "Grade HI",
     "Grade Pin",
     "Grade rrous",
-    "Grade test",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10322__PART_1_"
+    "Grade ed",
+    "Grade ification",
+    "Grade reference",
+    "Grade Test",
+    "Grade II",
+    "Grade of",
+    "Part 1 : 2014: Luminaires Part 1 General Requirements and Tests"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

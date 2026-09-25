@@ -1,10 +1,10 @@
 {
-  "is_number": "IS IS_10837",
-  "standard_id": "IS IS_10837",
-  "title": "Indian Standard Specification / Test Method (IS IS_10837)",
+  "is_number": "IS 10837",
+  "standard_id": "IS 10837:1984",
+  "title": "moulds and accessories for determination of density index (relative density) of cohesionless soils",
   "ia_identifier": "IS_10837",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Methods of tests",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
@@ -79,7 +79,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": null
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 782",
@@ -94,9 +94,9 @@
   ],
   "clause_3_terminology": [
     "Grade of",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10837"
+    "moulds and accessories for determination of density index",
+    "relative density",
+    "of cohesionless soils"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

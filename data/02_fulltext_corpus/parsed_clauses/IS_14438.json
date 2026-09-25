@@ -1,0 +1,79 @@
+{
+  "is_number": "IS 14438",
+  "standard_id": "IS 14438:1997",
+  "title": "Audio cords and cordages for telecommunication specification",
+  "ia_identifier": "IS_14438",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers requirements applicable to circular and flat cords with tinsel conductors used for telecommunication such as line cords and telephone cords.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13667",
+      "standard_id": "IS 13667:1993",
+      "title": "Conductors for Electronics and Telecommunication Applications: Tinsel Conductors",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9938",
+      "standard_id": "IS 9938:1981",
+      "title": "Recommended colours for PVC insulation for LF wires and cables",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10810",
+      "standard_id": "IS 10810",
+      "title": "Indian Standard Specification / Test Method (IS 10810)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Test",
+    "Grade of",
+    "Grade Conductor",
+    "Grade ification",
+    "Audio cords and cordages for telecommunication specification"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "insulation resistance at 500 V",
+      "Flammability test",
+      "Flammability Test"
+    ],
+    "dimensional_tolerances": [
+      "nominal diameter. M"
+    ],
+    "marking_requirements": [
+      "NOTE — Dimension marked with * are for manufacturer's guidance only.",
+      "min and then marked with reference lines 50 mm apart."
+    ]
+  },
+  "total_chars_parsed": 24220
+}

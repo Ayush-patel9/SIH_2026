@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_1250",
-  "standard_id": "IS IS_1250",
-  "title": "Indian Standard Specification / Test Method (IS IS_1250)",
+  "is_number": "IS 1250",
+  "standard_id": "IS 1250:1958",
+  "title": "Proof corrections for printers and authors",
   "ia_identifier": "IS_1250",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -11,6 +11,16 @@
   },
   "clause_1_scope": "1.1 This standard prescribes two sets of symbols to be used in correcting proofs, one in the margin and the other at the place in the text where the correction is to be made. It also includes some recommendations for preparation of copy for the printer.",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS 1350",
       "standard_id": "IS 1350",
@@ -25,9 +35,7 @@
   "clause_3_terminology": [
     "Grade written",
     "Grade deration",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_1250"
+    "Proof corrections for printers and authors"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

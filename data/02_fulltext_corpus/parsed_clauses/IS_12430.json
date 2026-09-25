@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_12430",
-  "standard_id": "IS IS_12430",
-  "title": "Indian Standard Specification / Test Method (IS IS_12430)",
+  "is_number": "IS 12430",
+  "standard_id": "IS 12430:1987",
+  "title": "Safety code for installation, maintenance and servicing of sterlizers",
   "ia_identifier": "IS_12430",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_12430) covers Indian Standard Specification / Test Method (IS IS_12430). 0.1 This Indian Standard was adopted by tlie after the draft finalized by the Hospital Equipment Sectional Committee had been approved by the Consumer Products and Medical Instruments Division Council. 0.2 This safety code is intended as a guide for medical personnel and engineers, both specialists in sterilizers and sterilizing procedures, and those responsible for their maintenance. It is also intended for pharmacists and sterile supply administrators. It is anticipated that the code will prove useful to supplies officers, architects, service engineers and to others not directly involved in sterilizers but who may have an interest. 0.3 The best working of the sterilizers could be ensured by: a) optimum decontamination by suitable cleaning equipment and process, as meticulously as possible, with bacteriological monitoring; b) use of suitable packing materials and size of packs; c) sterilizing, preferably, similar materials in a process; d) using, preferably, different sterilizers appr",
+  "clause_1_scope": "This Indian Standard (IS 12430) covers Safety code for installation, maintenance and servicing of sterlizers. 0.1 This Indian Standard was adopted by tlie after the draft finalized by the Hospital Equipment Sectional Committee had been approved by the Consumer Products and Medical Instruments Division Council. 0.2 This safety code is intended as a guide for medical personnel and engineers, both specialists in sterilizers and sterilizing procedures, and those responsible for their maintenance. It is also intended for pharmacists and sterile supply administrators. It is anticipated that the code will prove useful to supplies officers, architects, service engineers and to others not directly involved in sterilizers but who may have an interest. 0.3 The best working of the sterilizers could be ensured by: a) optimum decontamination by suitable cleaning equipment and process, as meticulously as possible, with bacteriological monitoring; b) use of suitable packing materials and size of packs; c) sterilizing, preferably, similar materials in a process; d) using, preferably, different sterilizers appr",
   "clause_2_normative_references": [
     {
       "is_number": "IS 3119",
@@ -100,17 +100,26 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
+    },
+    {
+      "is_number": "IS 12",
+      "standard_id": "IS 12:2005",
+      "title": "Guide for drafting and presentation of Indian Standards",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Grade of",
-    "Grade ature",
     "Grade atures",
+    "Grade ature",
     "55 K",
     "1 k",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12430"
+    "Safety code for installation",
+    "maintenance and servicing of sterlizers"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

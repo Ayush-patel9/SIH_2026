@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_12310",
-  "standard_id": "IS IS_12310",
-  "title": "Indian Standard Specification / Test Method (IS IS_12310)",
+  "is_number": "IS 12310",
+  "standard_id": "IS 12310:1988",
+  "title": "Flutter test film for 8 mm type S Audio reproducers, magnetic type",
   "ia_identifier": "IS_12310",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -52,6 +52,16 @@
       "qco_order": null
     },
     {
+      "is_number": "IS 18",
+      "standard_id": "IS 18:1999",
+      "title": "Information and Documentation - Rules for the Abbreviation of Title Words and Titles of Publications",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 9535",
       "standard_id": "IS 9535:1980",
       "title": "Dimensions for 8 mm type S motion picture raw stock film",
@@ -63,11 +73,10 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade 24",
     "Grade 18",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12310"
+    "Grade 24",
+    "Flutter test film for 8 mm type S Audio reproducers",
+    "magnetic type"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

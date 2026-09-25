@@ -1,9 +1,9 @@
 {
-  "is_number": "IS IS_11069",
-  "standard_id": "IS IS_11069",
-  "title": "Indian Standard Specification / Test Method (IS IS_11069)",
+  "is_number": "IS 11069",
+  "standard_id": "IS 11069:2018",
+  "title": "Refined, Bleached, Hydrogenated, Winterized and Deodorized (RBHWD) Soybean oil- Speciifcation",
   "ia_identifier": "IS_11069",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
@@ -89,7 +89,7 @@
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
-      "qco_order": "Polyethylene (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 10151",
@@ -99,7 +99,7 @@
       "aspect": "Product Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "Polyvinyl Chloride (PVC) Homopolymers (Quality Control) Order, 2024"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS 10910",
@@ -215,9 +215,13 @@
   "clause_3_terminology": [
     "Winterizing",
     "9 K",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_11069"
+    "Refined",
+    "Bleached",
+    "Hydrogenated",
+    "Winterized and Deodorized",
+    "RBHWD",
+    "Soybean oil",
+    "Speciifcation"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

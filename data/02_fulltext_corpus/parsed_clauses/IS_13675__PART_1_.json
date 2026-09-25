@@ -1,0 +1,179 @@
+{
+  "is_number": "IS 13675 (PART 1)",
+  "standard_id": "IS 13675 (Part 1):1993",
+  "title": "Remote Operations in Text Communication for Information Processing Systems, Part 1: Model, Notation and Service Definition",
+  "ia_identifier": "IS_13675__PART_1_",
+  "division_code": "LITD",
+  "aspect": "System Standard",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of ISO/IEC 9072 defines a Remote Operation (R0-) notation for defining the services provided to interactive applications. This part of ISO/IEC 9072 also defines the services provided by the Remote Operation Service Element (ROSE) services. The ROSE services are provided by the use of the ROSE protocol (part 2 of ISO/IEC 9072) in conjunction with the Association Control Service Element (ACSE) services (ISO 8649) and the ACSE protocol (ISO 8650), optionally the Reliable Transfer Service Element (RTSE) services (ISO/IEC 9066-i) and the RTSE protocol (ISO/IEC 9066-2), and the presentation-service (ISO 8822). No requirement is made for conformance to this part of ISO/I EC 9072.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13675",
+      "standard_id": "IS 13675",
+      "title": "Indian Standard Specification / Test Method (IS 13675)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 9072",
+      "standard_id": "IS/IEC 9072",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 9072)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7498",
+      "standard_id": "IS/ISO 7498",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7498)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8649",
+      "standard_id": "IS/ISO 8649",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8649)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8650",
+      "standard_id": "IS/ISO 8650",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8650)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8822",
+      "standard_id": "IS/ISO 8822",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8822)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 9066",
+      "standard_id": "IS/IEC 9066",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 9066)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12373",
+      "standard_id": "IS 12373",
+      "title": "Indian Standard Specification / Test Method (IS 12373)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13707",
+      "standard_id": "IS 13707",
+      "title": "Indian Standard Specification / Test Method (IS 13707)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8824",
+      "standard_id": "IS/ISO 8824",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8824)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8825",
+      "standard_id": "IS/ISO 8825",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8825)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1367",
+      "standard_id": "IS 1367",
+      "title": "Indian Standard Specification / Test Method (IS 1367)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 907",
+      "standard_id": "IS/IEC 907",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 907)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13075",
+      "standard_id": "IS 13075:1991",
+      "title": "Sizes of rolls of black and white and colour paper for roll paper printers",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Reference Model definitions",
+    "Service conventions definitions",
+    "Association control definitions",
+    "Reliable Transfer definitions",
+    "ROSE definitions",
+    "Grade in",
+    "Grade of",
+    "Grade RO-INVOKE",
+    "Remote Operations in Text Communication for Information Processing Systems",
+    "Part 1: Model",
+    "Notation and Service Definition"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 100264
+}

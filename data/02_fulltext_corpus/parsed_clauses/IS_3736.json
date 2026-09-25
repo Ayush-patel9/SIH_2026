@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_3736",
-  "standard_id": "IS IS_3736",
-  "title": "Indian Standard Specification / Test Method (IS IS_3736)",
+  "is_number": "IS 3736",
+  "standard_id": "IS 3736:1995",
+  "title": "Canvas boots, rubber sole",
   "ia_identifier": "IS_3736",
-  "division_code": "GEN",
+  "division_code": "CHD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Footwear made from Leather and other materials (Quality Control) Order, 2024"
   },
   "clause_1_scope": "This standard prescribes requirements and methods of sampling and test for canvas boots, ankle-high having rubber sole and heel.",
   "clause_2_normative_references": [
@@ -83,9 +83,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_3736"
+    "Canvas boots",
+    "rubber sole",
+    "Canvas boots, rubber sole",
+    "IS 3736 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [

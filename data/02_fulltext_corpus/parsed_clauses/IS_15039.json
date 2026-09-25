@@ -1,0 +1,140 @@
+{
+  "is_number": "IS 15039",
+  "standard_id": "IS 15039:2001",
+  "title": "Information Technology Equipment - Immunity Characteristics - Limits and Methods of Measurement",
+  "ia_identifier": "IS_15039",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 15039) covers Information Technology Equipment - Immunity Characteristics - Limits and Methods of Measurement. This Indian Standard which is identical with CISPR 24 (1997) 'Information technology equipment — Immunity characteristics — Limits and methods of measurements' issued by the Special Committee on Radio Interference (CISPR) was adopted by the recommendation of the Electromagnetic Compatibility Sectional Committee and approval of the Electronics and Telecommunication Division Council. In the adopted standard, certain conventions are not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice is to use a point (.) as the decimal marker. CROSS REFERENCES In this adopted standard, reference appears to certain International Standards for which Indian Standards also exist. The corresponding Indian Standards which are to be substituted in th",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/IEC 60050",
+      "standard_id": "IS/IEC 60050",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60050)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61000",
+      "standard_id": "IS/IEC 61000",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14700 (PART 4/SEC 2)",
+      "standard_id": "IS 14700 (PART 4/SEC 2)",
+      "title": "Indian Standard Specification / Test Method (IS 14700 (PART 4/SEC 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14700 (PART 4/SEC 4)",
+      "standard_id": "IS 14700 (PART 4/SEC 4)",
+      "title": "Indian Standard Specification / Test Method (IS 14700 (PART 4/SEC 4))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14700 (PART 4/SEC 8)",
+      "standard_id": "IS 14700 (PART 4/SEC 8)",
+      "title": "Indian Standard Specification / Test Method (IS 14700 (PART 4/SEC 8))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6873 (PART 7)",
+      "standard_id": "IS 6873 (Part 7):1999",
+      "title": "Limits and Methods of Measurement of Radio Disturbance Characteristics, Part 7: Information Technology Equipment",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60318",
+      "standard_id": "IS/IEC 60318",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60318)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9241",
+      "standard_id": "IS/ISO 9241",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9241)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 80",
+      "standard_id": "IS 80:1991",
+      "title": "Tung Oil for Paints",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "continuous wave (CW",
+    "degradation",
+    "equipment under test (EUT",
+    "information technology equipment (ITE",
+    "jitter (of a cathode ray tube (CRT) monitor",
+    "temporal instability (flicker",
+    "port",
+    "enclosure port",
+    "cable port",
+    "a telephony call",
+    "to establish a telephony call",
+    "to receive a telephony call"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 70582
+}

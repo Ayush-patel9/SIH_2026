@@ -1,0 +1,103 @@
+{
+  "is_number": "IS 13420 (PART 1)",
+  "standard_id": "IS 13420 (Part 1):2002",
+  "title": "Cabled Distribution Systems for Television and Sound Signals, Part 1: Methods of Measurement and System Performance",
+  "ia_identifier": "IS_13420__PART_1_",
+  "division_code": "LITD",
+  "aspect": "System Standard",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of IEC 60728 is applicable to any cabled distribution system (including individual receiving systems) having a coaxial cable output and primarily intended for television and sound signals operating between about 30 MHz and 2 150 MHz. This standard specifies the basic methods of measurement of the operational characteristics of cabled distribution systems having coaxial cable outputs in order to assess the performance of these systems and their performance limits. All requirements refer to the performance limits which are obtained between the input(s) to the headend or headends and any system outlet when terminated in a resistance equal to the nominal load impedance of the system, unless otherwise specified. Where system outlets are not used, the above applies at the subscriber's end of the subscriber's feeder. NOTE 1 Basic methods of measurement are described in this standard. However, any equivalent method that ensures. at least the same accuracy may be used. NOTE 2 If the system operator wishes to subdivide the system into a number of parts, the accumulation of degradations should not exceed the figures given below. NOTE 3 An extension of the frequency range to that from 5 MHz to 3 000 MHz will be considered for future work.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 13420",
+      "standard_id": "IS 13420",
+      "title": "Indian Standard Specification / Test Method (IS 13420)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60728",
+      "standard_id": "IS/IEC 60728",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60728)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14231 (PART 3)",
+      "standard_id": "IS 14231 (Part 3):1995",
+      "title": "Cabled Distribution Systems for Television and Sound Signals, Part 3: Active Coaxial Wideband Distribution Components",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60050",
+      "standard_id": "IS/IEC 60050",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60050)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 13818",
+      "standard_id": "IS/IEC 13818",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 13818)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60072",
+      "standard_id": "IS/IEC 60072",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60072)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "2 k",
+    "8 k",
+    "Cabled Distribution Systems for Television and Sound Signals",
+    "Part 1: Methods of Measurement and System Performance"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 178368
+}

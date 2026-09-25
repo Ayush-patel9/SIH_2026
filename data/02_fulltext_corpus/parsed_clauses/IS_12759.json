@@ -1,10 +1,10 @@
 {
-  "is_number": "IS IS_12759",
-  "standard_id": "IS IS_12759",
-  "title": "Indian Standard Specification / Test Method (IS IS_12759)",
+  "is_number": "IS 12759",
+  "standard_id": "IS 12759:2019",
+  "title": "Dried Milk and Dried Milk Products — Determination of Insolubility Index ( First Revision )",
   "ia_identifier": "IS_12759",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "LITD",
+  "aspect": "Methods of tests",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
@@ -15,6 +15,16 @@
       "is_number": "IS/ISO 8156",
       "standard_id": "IS/ISO 8156",
       "title": "Indian Standard Specification / Test Method (IS/ISO 8156)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -63,9 +73,9 @@
     }
   ],
   "clause_3_terminology": [
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_12759"
+    "Dried Milk and Dried Milk Products",
+    "Determination of Insolubility Index",
+    "First Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

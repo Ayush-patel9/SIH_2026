@@ -1,0 +1,56 @@
+{
+  "is_number": "IS 13464",
+  "standard_id": "IS 13464:1992",
+  "title": "Polyamide (nylon 66) materials for moulding and extrusion",
+  "ia_identifier": "IS_13464",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes the requirements, methods of sampling and test for Nylon-66 materials for moulding and extrusion.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 134",
+      "standard_id": "IS 134",
+      "title": "Indian Standard Specification / Test Method (IS 134)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 140",
+      "standard_id": "IS 140:2015",
+      "title": "Ready Mixed Paint, Exterior, Petrol Resisting, Air Drying - Specification ( Second Revision )",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "6 k",
+    "Polyamide",
+    "nylon 66",
+    "materials for moulding and extrusion"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "moisture level normally not exceeding 2 percent",
+      "moisture content of 2*5 percent",
+      "moisture content at 20X and 40 to 50 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "The material shall be suitably packed in polyethylene bags in 10 kg tin containers or in",
+      "Each container/ package shall be clearly marked"
+    ]
+  },
+  "total_chars_parsed": 24687
+}

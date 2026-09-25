@@ -1,0 +1,64 @@
+{
+  "is_number": "IS 14993",
+  "standard_id": "IS 14993:2001",
+  "title": "Saddles, Pole Clamps(Stick Clamps) and Accessories for Live Working",
+  "ia_identifier": "IS_14993",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 14993) covers Saddles, Pole Clamps(Stick Clamps) and Accessories for Live Working. This Indian Standard which is identical with lEC 1236 ( 1993 ) [ renumbered as lEC 61236 ( 1 993 ) ] 'Saddles, pole clamps (stick clamps) and accessories for live working' issued by the International Electrotechnical Commission ( lEC ) was adopted by the of the Tools and Equipment for Live Working Sectional Committee ( ET 36 ) and approval of the Electrotechnical Division Council. The text of the lEC standard has been approved as suitable for publication as Indian Standard without deviations. In the adopted standard, certain terminology and conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice is to use a point (.) as the decimal marker. Only the English language text of the International Standard has",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2500",
+      "standard_id": "IS 2500",
+      "title": "Indian Standard Specification / Test Method (IS 2500)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 410",
+      "standard_id": "IS/IEC 410",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 410)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade tests",
+    "Saddles",
+    "Pole Clamps",
+    "Stick Clamps",
+    "and Accessories for Live Working"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "^^ The tests marked with a ^* are to be made with saddle extension and without saddle extension.",
+      "The test marked with a ^' is to be made in two configurations: on inner flange and on outer flange.",
+      "^> The tests marked with a ' concern only pole clamps, designed to be coupled."
+    ]
+  },
+  "total_chars_parsed": 40104
+}

@@ -1,0 +1,54 @@
+{
+  "is_number": "IS 13201",
+  "standard_id": "IS 13201:1991",
+  "title": "Mine haulage tracks - Rails and fish plates - General requirements",
+  "ia_identifier": "IS_13201",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard covers the general requirements of light flat bottom rails and fish plates for underground track and associated surface tracks in mines.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 3964",
+      "standard_id": "IS 3964:1980",
+      "title": "Light rails -",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14",
+      "standard_id": "IS 14",
+      "title": "Indian Standard Specification / Test Method (IS 14)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Mine haulage tracks",
+    "Rails and fish plates",
+    "General requirements"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "tensile strength of 400 to 500 N",
+      "minimum elongation of 20"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 10591
+}

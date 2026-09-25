@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_303",
-  "standard_id": "IS IS_303",
-  "title": "Indian Standard Specification / Test Method (IS IS_303)",
+  "is_number": "IS 303",
+  "standard_id": "IS 303:1989",
+  "title": "Plywood for General Purposes -",
   "ia_identifier": "IS_303",
-  "division_code": "GEN",
+  "division_code": "PGD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
   },
   "clause_1_scope": "1,1 This standard covers the requirements of diflferent grades and types of plywood used for general purposes,",
   "clause_2_normative_references": [
@@ -103,17 +103,15 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade of",
-    "Grade MOE",
-    "Grade when",
-    "Grade BB",
-    "Grade AB",
+    "Grade Specimens",
     "Grade bruary",
+    "Grade Type",
+    "Grade MOE",
     "Grade Along",
+    "Grade of",
     "Grade Shear",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_303"
+    "Grade when",
+    "Plywood for General Purposes"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],

@@ -1,13 +1,13 @@
 {
-  "is_number": "IS IS_16102__PART_1_",
-  "standard_id": "IS IS_16102__PART_1_",
-  "title": "Indian Standard Specification / Test Method (IS IS_16102__PART_1_)",
+  "is_number": "IS 16102 (PART 1)",
+  "standard_id": "IS 16102 (Part 1):2012",
+  "title": "Self - Ballasted LED Lamps for General Lighting Services, Part 1: Safety Requirements",
   "ia_identifier": "IS_16102__PART_1_",
-  "division_code": "GEN",
-  "aspect": "Product Specification",
+  "division_code": "ETD",
+  "aspect": "Safety Standard",
   "regulatory_compliance": {
-    "is_mandatory": false,
-    "qco_order": null
+    "is_mandatory": true,
+    "qco_order": "Quality Control Order"
   },
   "clause_1_scope": "This standard (Part 2) specifies the performance requirements, together with the test methods and conditions, required to show compliance of LED lamps with integral means for stable operation, intended for domestic and similar general lighting purposes, having: a) arated power from 1 W to 25 W; b) a rated voltage above 50 V ac up to and including 250 V ac at 50 Hz; c) alampcapas listed in IS 16102 (Part 1): “Self ballasted LED lamps for general lighting services: Part 1 Safety requirements’. These performance requirements are additional to the safety requirements specified in IS 16102 (Part 1). The only feature provided by this standard, when applied for replacement purposes, is information on maximum lamp outlines. The requirements of this standard relate to acceptance and type testing. This standard covers LED lamps that intentionally produce white light, based on inorganic LEDs. This standard does not cover self-ballasted LED-lamps that intentionally produce tinted or coloured light neither does it covers OLEDs. The life time of LED lamps is in most cases much longer than the practical test times. Consequently, verification of manufacturer’s life time claims cannot be made ina sufficiently confident way, because projecting test data further in time is not standardized. For that reason the acceptance or rejection of a manufacturer’s life time claim, past an operational time as stated in 7.1, is out of the scope of this standard. Instead of life time validation, this standard has opted for lumen maintenance codes at a defined finite test time. Therefore, the code number does not imply a prediction of achievable life time. The categories, represented by the code, are lumen-depreciation character categories showing behaviour in agreement with manufacturer’s information, provided before the test is started. In order to validate a life time claim, several methods of test data extrapolation exist. A general method of projecting measurement data beyond limited test time is under consideration. The pass/fail criterion of the life time test as defined in this standard is different from the life time metrics claimed by manufacturers. NOTES 1 When lamps are operated in a luminaire, the claimed performance data can deviate from the values established from this standard due to variation or changes in the luminaire components that might impact the performance of the lamp.",
   "clause_2_normative_references": [
@@ -19,7 +19,7 @@
       "aspect": "Service Specification",
       "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
-      "qco_order": "LED Lighting (CRS) Order"
+      "qco_order": "Quality Control Order"
     },
     {
       "is_number": "IS/IEC 62612",
@@ -128,6 +128,26 @@
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Specification / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15",
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },

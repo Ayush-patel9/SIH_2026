@@ -1,15 +1,15 @@
 {
-  "is_number": "IS IS_10981",
-  "standard_id": "IS IS_10981",
-  "title": "Indian Standard Specification / Test Method (IS IS_10981)",
+  "is_number": "IS 10981",
+  "standard_id": "IS 10981:1983",
+  "title": "Class of acceptance test for centrifugal mixed flow and axial pumps - Class B",
   "ia_identifier": "IS_10981",
-  "division_code": "GEN",
+  "division_code": "LITD",
   "aspect": "Product Specification",
   "regulatory_compliance": {
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This Indian Standard (IS IS_10981) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_10981).",
+  "clause_1_scope": "This Indian Standard (IS 10981) prescribes technical specifications, requirements, tolerances, and testing procedures for Class of acceptance test for centrifugal mixed flow and axial pumps - Class B.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 1890",
@@ -45,6 +45,16 @@
       "is_number": "IS 4477",
       "standard_id": "IS 4477",
       "title": "Indian Standard Specification / Test Method (IS 4477)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Specification / Test Method (IS 10)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -95,13 +105,12 @@
   "clause_3_terminology": [
     "Genera",
     "Definitions Peculiar to ttie Test Code",
-    "Grade number",
     "Grade of",
-    "Grade Method",
     "Grade Volume",
-    "Indian Standard Specification",
-    "Test Method",
-    "IS IS_10981"
+    "Grade number",
+    "Grade Method",
+    "Class of acceptance test for centrifugal mixed flow and axial pumps",
+    "Class B"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
