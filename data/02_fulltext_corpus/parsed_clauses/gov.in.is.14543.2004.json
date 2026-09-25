@@ -12,22 +12,522 @@
   "clause_1_scope": "This standard prescribes the requirements and methods of sampling and test for drinking water (other than natural mineral water) offered for sale in packaged form.",
   "clause_2_normative_references": [
     {
+      "is_number": "IS 9845",
+      "standard_id": "IS 9845:1998",
+      "title": "Determination of Overall Migration of Constituents of Plastics Materials and Articles Intended to Come in Contact with Foodstuffs - Method of Analysis",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5402",
+      "standard_id": "IS 5402:2012",
+      "title": "Microbiology of Food and Animal Feeding Stuffs – Horizontal Method for the Enumeration of Micro-Organisms – Colony-Count Technique at 30o C",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15609",
+      "standard_id": "IS 15609:2005",
+      "title": "Polyethylene Flexible Pouches for the Packing of Natural Mineral Water and Packaged Drinking Water",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15188",
+      "standard_id": "IS 15188:2012",
+      "title": "Water Quality – General Guidance on the Enumeration of Micro-Organisms by Culture",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025",
+      "standard_id": "IS 3025",
+      "title": "Indian Standard Specification / Test Method (IS 3025)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 39)",
+      "standard_id": "IS 3025 (Part 39):2021",
+      "title": "Part 39 : 2021: METHODS OF SAMPLING AND TEST PHYSICAL AND CHEMICAL FOR WATER AND WASTEWATER Part 39 Oil and Grease Second Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 59)",
+      "standard_id": "IS 3025 (Part 59):2023",
+      "title": "Part 59 : 2023: Methods Of Sampling And Test Physical And Chemical For Water And Wastewater Part 59 Manganese Second Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 60)",
+      "standard_id": "IS 3025 (Part 60):2008",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 60: Fluoride",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5887 (PART 3)",
+      "standard_id": "IS 5887 (Part 3):1999",
+      "title": "Methods for Detection of Bacteria Responsible for Food Poisoning, Part 3: General Guidance on Methods for the Detection of Salmonella",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13428",
+      "standard_id": "IS 13428:2005",
+      "title": "Packaged Natural Mineral Water",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15302",
+      "standard_id": "IS 15302:2003",
+      "title": "Determination of Aluminium and Barium in Water by Direct Nitrous Oxide-Acetylene Flame Atomic Absorption Spectrometry",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 2)",
+      "standard_id": "IS 3025 (PART 2)",
+      "title": "Indian Standard Specification / Test Method (IS 3025 (PART 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 42)",
+      "standard_id": "IS 3025 (Part 42):1992",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 42: Copper",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 53)",
+      "standard_id": "IS 3025 (Part 53):2003",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Wastewater, Part 53: Iron",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15303",
+      "standard_id": "IS 15303:2003",
+      "title": "Determination of Antimony, Iron and Selenium in Water by Electrothermal Atomic Absorption Spectrometric Method",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 49)",
+      "standard_id": "IS 3025 (Part 49):1994",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 49: Zinc",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 40)",
+      "standard_id": "IS 3025 (Part 40):1991",
+      "title": "Methods of sampling and test (physical and chemical) for water and waste water, Part 40: Calcium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 46)",
+      "standard_id": "IS 3025 (Part 46):2023",
+      "title": "Part 46 : 2023: Methods Of Sampling And Test Physical And Chemical For Water And Wastewater - Part 46 Magnesium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 45)",
+      "standard_id": "IS 3025 (Part 45):1993",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 45: Sodium and potassium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 43)",
+      "standard_id": "IS 3025 (Part 43):1992",
+      "title": "Methods of sampling and test (physical and chemical) for water and waste water, Part 43: Phenols",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 27)",
+      "standard_id": "IS 3025 (Part 27):1986",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 27: Cyanide",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 4)",
+      "standard_id": "IS 3025 (Part 4):2021",
+      "title": "Part 4 : 2021: METHODS OF SAMPLING AND TEST PHYSICAL AND CHEMICAL FOR WATER AND WASTE WATER PART 4 COLOUR Second Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 10500",
       "standard_id": "IS 10500:2012",
       "title": "Drinking water",
       "division_code": "FAD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
-      "is_number": "IS 14",
-      "standard_id": "IS 14",
-      "title": "Indian Standard Code of Practice / Test Method (IS 14)",
+      "is_number": "IS 5887",
+      "standard_id": "IS 5887",
+      "title": "Indian Standard Specification / Test Method (IS 5887)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5401",
+      "standard_id": "IS 5401",
+      "title": "Indian Standard Specification / Test Method (IS 5401)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15185",
+      "standard_id": "IS 15185:2002",
+      "title": "Water Quality - Detection and Enumeration of Escherichia Coli and Coliform Bacteria - Memberane Filtration Method",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5887 (PART 2)",
+      "standard_id": "IS 5887 (Part 2):1976",
+      "title": "Methods for detection of bacteria responsible for food poisoning, Part 2: Isolation, identification and enumeration of STAPHYLOCOCCUS AUREUS and faecal streptococci",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15186",
+      "standard_id": "IS 15186:2002",
+      "title": "Water Quality - Detection and Enumeration of Intestinal Enterococci - Memberane Filtration Method",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5403",
+      "standard_id": "IS 5403:1999",
+      "title": "Method for Yeast and Mould Count of Foodstuffs and annimal feeds",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5887 (PART 7)",
+      "standard_id": "IS 5887 (Part 7):1999",
+      "title": "Methods for Detection of Bacteria Responsible for Food Poisoning, Part 7: General Guidance on Methods for Isolation and Identification of Shigella",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15187",
+      "standard_id": "IS 15187:2002",
+      "title": "Water Quality -- Detection of Salmonella Species",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5887 (PART 5)",
+      "standard_id": "IS 5887 (Part 5):1976",
+      "title": "Methods for detection of bacteria responsible for food poisoning, Part 5: Isolation, identification and enumeration of VIBRIO CHOLERAE and VIBRIO PARAHAEMOLYTICUS",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 34)",
+      "standard_id": "IS 3025 (Part 34):1988",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 34: Nitrogen",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 55)",
+      "standard_id": "IS 3025 (Part 55):2003",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Wastewater, Part 55: Aluminium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 32)",
+      "standard_id": "IS 3025 (Part 32):1988",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 32: Chloride",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 56)",
+      "standard_id": "IS 3025 (Part 56):2003",
+      "title": "Methods of Sampling and Test ( Physical and Chemical ) for Water and Wastewater, Part 56: Selenium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 24)",
+      "standard_id": "IS 3025 (Part 24):1986",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 24: Sulphates",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 23)",
+      "standard_id": "IS 3025 (Part 23):2023",
+      "title": "Part 23 : 2023: Methods Of Sampling And Test Physical And Chemical For Water And Wastewater - Part 23 Alkalinity",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 26)",
+      "standard_id": "IS 3025 (Part 26):2021",
+      "title": "Part 26 : 2021: Methods of sampling and test physical and chemical for water and wastewater Part 26 Chlorine residualsecond revision of IS 3025Part 26",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 29)",
+      "standard_id": "IS 3025 (Part 29):2022",
+      "title": "Part 29 : 2022: Methods of Sampling and Test (Physical and Chemical) for Water and WasteWater - Part 29 Sulphide",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 48)",
+      "standard_id": "IS 3025 (Part 48):1994",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 48: Mercury",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 41)",
+      "standard_id": "IS 3025 (Part 41):2023",
+      "title": "Part 41 : 2023: Methods Of Sampling And Test Physical And Chemical For Water And Wastewater - Part 41 Cadmium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 37)",
+      "standard_id": "IS 3025 (Part 37):2022",
+      "title": "Part 37 : 2022: METHODS OF SAMPLING AND TEST PHYSICAL AND CHEMICAL FOR WATER AND WASTEWATER PART 37 ARSENIC Second Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 47)",
+      "standard_id": "IS 3025 (Part 47):1994",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Wastewater, Part 47: Lead",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10146",
+      "standard_id": "IS 10146:1982",
+      "title": "Polyethylene for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Polyethylene (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 10151",
+      "standard_id": "IS 10151:2019",
+      "title": "Polyvinyl Chloride (PVC) and its Copolymers for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water — Specification ( First Revision )",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Polyvinyl Chloride (PVC) Homopolymers (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 12252",
+      "standard_id": "IS 12252:2017",
+      "title": "Polyalkylene Terephthalates (PET and PBT), their Copolymers and List of Constituents in Raw Materials and End Products for Their Safe Use in Contact with Foodstuffs and Pharmaceuticals (First Revision)",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14971",
+      "standard_id": "IS 14971:2001",
+      "title": "Polycorbonate Resins for its Safe use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10142",
+      "standard_id": "IS 10142:1999",
+      "title": "Polystyrene (Crystal and High Impact) for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water Specification",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15410",
+      "standard_id": "IS 15410:2003",
+      "title": "Containers for Packaging of Natural Mineral Water and Packaged Drinking Water",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 10695",
+      "standard_id": "IS/ISO 10695",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 10695)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -42,10 +542,14 @@
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "7.1 The following particulars shall be marked legibly"
+      "7.1 The following particulars shall be marked legibly",
+      "and indelibly on the label of the bottle container:",
+      "a) Name of the product (diat is packaged drinking",
+      "d) Batch or Code number;"
     ]
   },
-  "total_chars_parsed": 78924
+  "total_chars_parsed": 78676
 }

@@ -27,7 +27,7 @@
       "title": "Specification for visor for scooter helmets",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -44,7 +44,17 @@
     {
       "is_number": "IS 45",
       "standard_id": "IS 45",
-      "title": "Indian Standard Code of Practice / Test Method (IS 45)",
+      "title": "Indian Standard Specification / Test Method (IS 45)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6487",
+      "standard_id": "IS/ISO 6487",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6487)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -54,7 +64,7 @@
     {
       "is_number": "IS 15575",
       "standard_id": "IS 15575",
-      "title": "Indian Standard Code of Practice / Test Method (IS 15575)",
+      "title": "Indian Standard Specification / Test Method (IS 15575)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -67,14 +77,24 @@
       "title": "Automotive vehicles - Electric horns",
       "division_code": "TED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 100",
       "standard_id": "IS 100",
-      "title": "Indian Standard Code of Practice / Test Method (IS 100)",
+      "title": "Indian Standard Specification / Test Method (IS 100)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61672",
+      "standard_id": "IS/IEC 61672",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61672)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -87,7 +107,7 @@
       "title": "Electroacoustics - Sound level meters, Part 1: Specification",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -104,17 +124,22 @@
     "Visor",
     "Basic Plane of the Human Head",
     "Basic Plane of the Headform",
-    "Central Vertical Axis",
-    "Reference Plane",
-    "Neck Curtain"
+    "Central Vertical Axis"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "sound level meter by the noise is at least 10 dB"
+    ],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "9.1 Each helmet shall be clearly and indelibly marked"
+      "9.1 Each helmet shall be clearly and indelibly marked",
+      "a) Manufacturer’s name or trade-mark;",
+      "packaging, as it is placed on the market, whether or not those",
+      "g) To be marked as “Does not provide any",
+      "9.1.1 The marking shall not be in the main field of"
     ]
   },
-  "total_chars_parsed": 91135
+  "total_chars_parsed": 91025
 }

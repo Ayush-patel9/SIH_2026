@@ -12,19 +12,9 @@
   "clause_1_scope": "This standard (Part 5/Sec 3) specifies requirements for road and street lighting luminaries as given below for use with tungsten filament, tubular fluorescent, LED, LED modules and other discharge lamps on supply voltage not exceeding 1000 V. It is to be read in conjunction with those Sections of Part 1 to which reference is made. a) Luminaires for road, street lighting and other public outdoor lighting applications; b) Tunnel lighting; c) Column-integrated luminaires with a minimum total height above normal ground level of 2.5 m; and for use with electrical lighting sources on supply voltages not exceeding 1 000 V. NOTE — Column integrated luminaires with a total height below 2.5 m are under consideration.",
   "clause_2_normative_references": [
     {
-      "is_number": "SP 30",
-      "standard_id": "SP 30:2023",
-      "title": "SP 30 : 2023: National Electrical Code Of India 2023 This standard is available as a pre-printed copy for purchase. However, if you still wish to download the soft copy of the Standard you may proceed with that. Print price :8330.00 INR (in India) (For Printed copies please contact BSBEdge.)",
-      "division_code": "ETD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 10322",
       "standard_id": "IS 10322",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322)",
+      "title": "Indian Standard Specification / Test Method (IS 10322)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -34,7 +24,7 @@
     {
       "is_number": "IS 10322 (PART 5/SEC 3)",
       "standard_id": "IS 10322 (PART 5/SEC 3)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 5/SEC 3))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 5/SEC 3))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -47,14 +37,24 @@
       "title": "Part 1 : 2014: Luminaires Part 1 General Requirements and Tests",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "SP 30",
+      "standard_id": "SP 30:2023",
+      "title": "SP 30 : 2023: National Electrical Code Of India 2023 This standard is available as a pre-printed copy for purchase. However, if you still wish to download the soft copy of the Standard you may proceed with that. Print price :8330.00 INR (in India) (For Printed copies please contact BSBEdge.)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 10322 (PART 1/SEC 1)",
       "standard_id": "IS 10322 (PART 1/SEC 1)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 1))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 1))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -64,7 +64,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 0)",
       "standard_id": "IS 10322 (PART 1/SEC 0)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 0))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 0))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -74,7 +74,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 2)",
       "standard_id": "IS 10322 (PART 1/SEC 2)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 2))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 2))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -84,7 +84,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 3)",
       "standard_id": "IS 10322 (PART 1/SEC 3)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 3))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 3))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -94,7 +94,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 4)",
       "standard_id": "IS 10322 (PART 1/SEC 4)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 4))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 4))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -102,19 +102,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 9000",
       "standard_id": "IS 9000",
-      "title": "Indian Standard Code of Practice / Test Method (IS 9000)",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -124,7 +114,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 11)",
       "standard_id": "IS 10322 (PART 1/SEC 11)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 11))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 11))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -134,7 +124,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 7)",
       "standard_id": "IS 10322 (PART 1/SEC 7)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 7))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 7))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -144,7 +134,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 14)",
       "standard_id": "IS 10322 (PART 1/SEC 14)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 14))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 14))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -154,7 +144,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 5)",
       "standard_id": "IS 10322 (PART 1/SEC 5)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 5))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 5))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -164,7 +154,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 8)",
       "standard_id": "IS 10322 (PART 1/SEC 8)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 8))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 8))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -174,7 +164,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 12)",
       "standard_id": "IS 10322 (PART 1/SEC 12)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 12))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 12))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -184,7 +174,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 9)",
       "standard_id": "IS 10322 (PART 1/SEC 9)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 9))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 9))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -194,7 +184,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 10)",
       "standard_id": "IS 10322 (PART 1/SEC 10)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 10))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 10))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -204,7 +194,7 @@
     {
       "is_number": "IS 10322 (PART 1/SEC 13)",
       "standard_id": "IS 10322 (PART 1/SEC 13)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322 (PART 1/SEC 13))",
+      "title": "Indian Standard Specification / Test Method (IS 10322 (PART 1/SEC 13))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -217,17 +207,7 @@
       "title": "Methods of photometry of luminaires, Part 2: For road and street lighting",
       "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 13383",
-      "standard_id": "IS 13383",
-      "title": "Indian Standard Code of Practice / Test Method (IS 13383)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -236,22 +216,28 @@
     "Span Wire",
     "Suspension Wire",
     "Stay Wire",
-    "Column",
+    "Column-Integrated Luminaires",
     "Reflective or Decorative External Part of a",
     "Lighting Column",
-    "Nominal Height of a Column",
-    "Door Opening of a Column",
+    "Nominal Height of a Column-Integrated",
+    "Door Opening of a Column-Integrated",
     "Cable Entry Slot of a Column Integrated",
     "Connection Box of a Column Integrated",
-    "Tunnel Luminaires"
+    "Tunnel Luminaires",
+    "Grade ification"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "6.1 The provisions of IS 10322 (Part 1/Sec 3) apply."
+      "In addition, the following information shall be provided",
+      "6.2 BIS Certification Marking",
+      "The luminaires may also be marked with the Standard",
+      "6.2.1 The use of the Standard Mark is governed by the",
+      "use of the Standard Mark may be granted to"
     ]
   },
-  "total_chars_parsed": 32728
+  "total_chars_parsed": 32495
 }

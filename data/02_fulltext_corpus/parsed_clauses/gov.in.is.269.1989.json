@@ -47,7 +47,7 @@
       "title": "Specification for Silica Fume",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -68,16 +68,6 @@
       "division_code": "GEN",
       "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -167,7 +157,7 @@
       "title": "Recommendations on stacking and storage of construction materials and components at site",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -244,7 +234,7 @@
     {
       "is_number": "IS 53",
       "standard_id": "IS 53",
-      "title": "Indian Standard Code of Practice / Test Method (IS 53)",
+      "title": "Indian Standard Specification / Test Method (IS 53)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -254,7 +244,7 @@
     {
       "is_number": "IS 3812",
       "standard_id": "IS 3812",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3812)",
+      "title": "Indian Standard Specification / Test Method (IS 3812)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -264,17 +254,7 @@
     {
       "is_number": "IS 1760",
       "standard_id": "IS 1760",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1760)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 4031",
-      "standard_id": "IS 4031",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4031)",
+      "title": "Indian Standard Specification / Test Method (IS 1760)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -283,9 +263,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade and",
     "Specification for Ordinary Portland Cement",
-    "33 Grade"
+    "33 Grade",
+    "Specification for Ordinary Portland Cement, 33 Grade",
+    "IS 269 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
@@ -294,10 +276,15 @@
     "chemical_properties": [
       "insoluble residue has been specified as 5.0 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "10.1 Each bag of cement shall be legibly and indelibly"
+      "10.1 Each bag of cement shall be legibly and indelibly",
+      "marked with the following:",
+      "a) Manufacturer's name and his registered trademark;",
+      "e) Batch/Control unit number in terms of week,",
+      "10.2 Similar information shall be provided in the"
     ]
   },
-  "total_chars_parsed": 35170
+  "total_chars_parsed": 35079
 }

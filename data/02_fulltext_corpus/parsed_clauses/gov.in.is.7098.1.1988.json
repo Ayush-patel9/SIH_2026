@@ -9,12 +9,12 @@
     "is_mandatory": true,
     "qco_order": "Electrical Cables (Quality Control) Order"
   },
-  "clause_1_scope": "This standard covers the requirements, tolerances, test methods, and compliance specifications for Crosslinked polyethylene insulated PVC sheathed cables, Part 1: For working voltage upto and including 1 100 V as prescribed under IS 7098 (PART 1) by the Bureau of Indian Standards.",
+  "clause_1_scope": "1,1 This standard (Part 1) covers the requirements for both armoured and unarmoured single, twin, three, four and multi-core crosslinked polyethylene (XLP^ insulated and PVC sheathed cables for electric supply and control purposes. U The cables covered in this standard are suitable for use on ac single phase or three phase (earthed or unearthed) systems for rated voltages up to and including 1 100 V. These cables may be used on dc systems for rated voltages up to and including 1 500 V to earth. Hom — Tbe cablet confonning to this itandard may be opefated conttnuoudy at a power firequency voltage 10 peiceat hli^ than rated voltage. 1.3 Armoured cables specified in this standard are suitable for use in mines also. However, for such cables, additional requirements have been included, wherever necessary (3.1*1« 13*5 and 17.2). 1.4 These cables are suitable fbr use where combination of ambient temperature and temperature rise due to load results in conductor temperature not exceeding 90**C under normal operation and 250*C under short circuit condition.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 7098",
       "standard_id": "IS 7098",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7098)",
+      "title": "Indian Standard Specification / Test Method (IS 7098)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -27,34 +27,14 @@
       "title": "cuprous oxide for paints",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 10810",
       "standard_id": "IS 10810",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10810)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 108",
-      "standard_id": "IS 108",
-      "title": "Indian Standard Code of Practice / Test Method (IS 108)",
+      "title": "Indian Standard Specification / Test Method (IS 10810)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -64,30 +44,10 @@
     {
       "is_number": "IS 397",
       "standard_id": "IS 397",
-      "title": "Indian Standard Code of Practice / Test Method (IS 397)",
+      "title": "Indian Standard Specification / Test Method (IS 397)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 7",
-      "standard_id": "IS 7",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -107,7 +67,7 @@
       "title": "Conductors for Insulated Electric Cables and Flexible Cords",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -117,7 +77,7 @@
       "title": "Mild steel wires, formed wires and tapes for armouring of cables",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -137,14 +97,14 @@
       "title": "PVC insulation and sheath of electric cables",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 583",
       "standard_id": "IS 583",
-      "title": "Indian Standard Code of Practice / Test Method (IS 583)",
+      "title": "Indian Standard Specification / Test Method (IS 583)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -157,7 +117,7 @@
       "title": "Specification for Medium Atrength Aircraft Plywood",
       "division_code": "TED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -167,26 +127,31 @@
       "title": "Drums for electric cables",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade Cable",
-    "Grade Teals",
-    "Grade of",
     "Grade ification",
+    "Grade Cable",
+    "Grade of",
+    "Grade Teals",
     "Crosslinked polyethylene insulated PVC sheathed cables",
     "Part 1: For working voltage upto and including 1 100 V"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
-    "chemical_properties": [],
+    "chemical_properties": [
+      "zinc coating of round steel wire shall be not less than 95 percent"
+    ],
+    "electrical_and_safety_parameters": [
+      "rated voltage from 1 kV"
+    ],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "17. IDENTIFICATION"
+      "be marked with the Standard Mark."
     ]
   },
-  "total_chars_parsed": 46503
+  "total_chars_parsed": 46380
 }

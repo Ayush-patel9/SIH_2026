@@ -9,12 +9,12 @@
     "is_mandatory": true,
     "qco_order": "Cement (Quality Control) Order, 2023"
   },
-  "clause_1_scope": "This standard ( Part 2 ) ( Third Revision) covers the manufacture, physical and chemical requirements of Portland-pozzolana cement manufactured by using calcined clay pozzolana or a mixture of calcined clay and fly ash pozzolana.",
+  "clause_1_scope": "Amendment to IS 1489 (PART 2) (Part 2 : 2015: Portland Pozzolana Cement - Specification Part 2 Calcined Clay Based (Fourth Revision)): AMENDMENT NO. 1 NOVEMBER 1991 TO IS 1489 ( Part 2 ) : 1991 PORTLAND - POZZOLANA CEMENT — SPECIFICATION PART 2 CALCINED CLAY BASED (Third Revision) ( Page 5, clause B-1.2 ) — Substitute *up to 25 tonnes' for 'of 20 to 25 tonnes*. (CED2) _ _ Printed at Slmco Printing Press Delhi, India AMENDMENT N0.2 JUNE 1993 TO IS 1489 ( Part 2 ) : 1991 PORTLANDPOZZOLANA CEMENT — SPECIFICATION PART 2 CALCINED CLAY BASED ( Third Revision ) ( Page 3, clauses 10.2.2 to 10.2.2.4 ) — Substitute the following for the existing clauses: \"10.2.2 When cement is intended for export and if the purchaser so requires, packi",
   "clause_2_normative_references": [
     {
       "is_number": "IS 1489",
       "standard_id": "IS 1489",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1489)",
+      "title": "Indian Standard Specification / Test Method (IS 1489)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -34,20 +34,10 @@
     {
       "is_number": "IS 4031",
       "standard_id": "IS 4031",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4031)",
+      "title": "Indian Standard Specification / Test Method (IS 4031)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,7 +47,7 @@
       "title": "Leaded brass strips for instrument parts",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,17 +57,7 @@
       "title": "Bicycle Spokes (Plain) and Nipples for Spokes - Specifiation",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 14",
-      "standard_id": "IS 14",
-      "title": "Indian Standard Code of Practice / Test Method (IS 14)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -85,18 +65,23 @@
   "clause_3_terminology": [
     "Pozzolana",
     "Portland CUnker",
-    "Portland"
+    "Portland-Pozzolana Cement",
+    "Grade jOa",
+    "Grade deration",
+    "Part 2 : 2015: Portland Pozzolana Cement",
+    "Specification Part 2 Calcined Clay Based",
+    "Fourth Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
       "compressive strength as 16 MPa"
     ],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "or his registered trade-mark, if any."
     ]
   },
-  "total_chars_parsed": 35959
+  "total_chars_parsed": 35909
 }

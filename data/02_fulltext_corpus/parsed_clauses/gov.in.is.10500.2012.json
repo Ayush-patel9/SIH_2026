@@ -24,7 +24,7 @@
     {
       "is_number": "IS 3025",
       "standard_id": "IS 3025",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3025)",
+      "title": "Indian Standard Specification / Test Method (IS 3025)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -57,7 +57,7 @@
       "title": "Oil Pressure Stoves — Specification ( Seventh Revision )",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,7 +67,7 @@
       "title": "Packaged Natural Mineral Water",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -304,7 +304,7 @@
     {
       "is_number": "IS 3025 (PART 2)",
       "standard_id": "IS 3025 (PART 2)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3025 (PART 2))",
+      "title": "Indian Standard Specification / Test Method (IS 3025 (PART 2))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -344,7 +344,27 @@
     {
       "is_number": "IS 14194",
       "standard_id": "IS 14194",
-      "title": "Indian Standard Code of Practice / Test Method (IS 14194)",
+      "title": "Indian Standard Specification / Test Method (IS 14194)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 10695",
+      "standard_id": "IS/ISO 10695",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 10695)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 15553",
+      "standard_id": "IS/ISO 15553",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 15553)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -354,7 +374,7 @@
     {
       "is_number": "IS 3025 (PART 1)",
       "standard_id": "IS 3025 (PART 1)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3025 (PART 1))",
+      "title": "Indian Standard Specification / Test Method (IS 3025 (PART 1))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -371,11 +391,12 @@
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 41497
+  "total_chars_parsed": 41260
 }

@@ -67,7 +67,7 @@
       "title": "Recommendations on stacking and storage of construction materials and components at site",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -207,37 +207,7 @@
       "title": "Leaded brass strips for instrument parts",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1489",
-      "standard_id": "IS 1489",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1489)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 3812",
-      "standard_id": "IS 3812",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3812)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 4031",
-      "standard_id": "IS 4031",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4031)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -255,10 +225,15 @@
       "sulphur content calculated as sulphuric anhydride (SOs), 3.5 percent",
       "ash content of 30 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "11.1 Each bag or drum of cement shall be legibly and"
+      "11.1 Each bag or drum of cement shall be legibly and",
+      "indelibly marked with the following:",
+      "a) Manufacturer’s name and his registered trademark, if any;",
+      "e) Batch/control unit number in terms of week,",
+      "11.2 Similar information shall be provided in the"
     ]
   },
-  "total_chars_parsed": 32780
+  "total_chars_parsed": 32681
 }

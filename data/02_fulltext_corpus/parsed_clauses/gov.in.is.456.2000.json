@@ -9,7 +9,7 @@
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This standard covers the requirements, tolerances, test methods, and compliance specifications for Plain and Reinforced Concrete - Code of Practice as prescribed under IS 456 by the Bureau of Indian Standards.",
+  "clause_1_scope": "1.1 This standard deals with the general structural use of plain and reinforced concrete. 1.1.1 For the purpose of this standard, plain concrete structures are those where reinforcement, if provided is ignored for determination of strength of the structure. 1.2 Special requirements of structures, such as shells, folded plates, arches, bridges, chimneys, blast resistant structures, hydraulic structures, liquid retaining structures and earthquake resistant structures, covered in respective standards have not been covered in this standard; these standards shall be used in conjunction with this standard.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 9013",
@@ -17,7 +17,7 @@
       "title": "Method of making, curing and determining compressive strength of accelerated cured concrete test specimens",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -27,24 +27,14 @@
       "title": "Specification for Concrete Admixtures -",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 4",
-      "standard_id": "IS 4:1963",
-      "title": "Guide for Layout of Learned Periodicals",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 45",
       "standard_id": "IS 45",
-      "title": "Indian Standard Code of Practice / Test Method (IS 45)",
+      "title": "Indian Standard Specification / Test Method (IS 45)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -64,7 +54,7 @@
     {
       "is_number": "IS 3812",
       "standard_id": "IS 3812",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3812)",
+      "title": "Indian Standard Specification / Test Method (IS 3812)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -77,17 +67,7 @@
       "title": "Specification for Silica Fume",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -104,7 +84,7 @@
     {
       "is_number": "IS 6461",
       "standard_id": "IS 6461",
-      "title": "Indian Standard Code of Practice / Test Method (IS 6461)",
+      "title": "Indian Standard Specification / Test Method (IS 6461)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -120,16 +100,6 @@
       "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": true,
       "qco_order": "Cement (Quality Control) Order, 2023"
-    },
-    {
-      "is_number": "IS 8",
-      "standard_id": "IS 8:1994",
-      "title": "High Heat Duty Fireclay Refractories",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
-      "is_mandatory": false,
-      "qco_order": null
     },
     {
       "is_number": "IS 12269",
@@ -232,22 +202,12 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 383",
       "standard_id": "IS 383:2016",
       "title": "Coarse and Fine Aggregate for Concrete - Specification",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -294,7 +254,7 @@
     {
       "is_number": "IS 1025 (PART 18)",
       "standard_id": "IS 1025 (PART 18)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1025 (PART 18))",
+      "title": "Indian Standard Specification / Test Method (IS 1025 (PART 18))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -304,7 +264,7 @@
     {
       "is_number": "IS 3025",
       "standard_id": "IS 3025",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3025)",
+      "title": "Indian Standard Specification / Test Method (IS 3025)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -344,7 +304,7 @@
     {
       "is_number": "IS 432",
       "standard_id": "IS 432",
-      "title": "Indian Standard Code of Practice / Test Method (IS 432)",
+      "title": "Indian Standard Specification / Test Method (IS 432)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -377,7 +337,7 @@
       "title": "Hot Rolled Medium and High Tensile Structural Steel",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
     },
@@ -387,14 +347,14 @@
       "title": "Recommendations on stacking and storage of construction materials and components at site",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 5816",
       "standard_id": "IS 5816",
-      "title": "Indian Standard Code of Practice / Test Method (IS 5816)",
+      "title": "Indian Standard Specification / Test Method (IS 5816)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -427,7 +387,7 @@
       "title": "Concrete Batching And Mixing Plant - Specification",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -457,14 +417,14 @@
       "title": "General Requirements for Batch Type Concrete Mixers ( Third Revision )",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 121",
       "standard_id": "IS 121",
-      "title": "Indian Standard Code of Practice / Test Method (IS 121)",
+      "title": "Indian Standard Specification / Test Method (IS 121)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -474,7 +434,7 @@
     {
       "is_number": "IS 24",
       "standard_id": "IS 24",
-      "title": "Indian Standard Code of Practice / Test Method (IS 24)",
+      "title": "Indian Standard Specification / Test Method (IS 24)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -517,7 +477,7 @@
       "title": "Welding of High Strength steel Bars for Reinforced Concrete Construction - Recommendations (Second Revision)",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -527,7 +487,7 @@
       "title": "Immersion Type Concrete Vibrators - General Requirements",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -537,7 +497,7 @@
       "title": "GENERAL REQUIREMENTS FOR CONCRETE VIBRATORS SCREED BOARD TYPE",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -547,14 +507,14 @@
       "title": "Concrete Vibrating Tables - Specification",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 4656",
       "standard_id": "IS 4656",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4656)",
+      "title": "Indian Standard Specification / Test Method (IS 4656)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -567,7 +527,7 @@
       "title": "Classification of joints in buildings for accommodation of dimensional deviations during construction (ISO 7727-1984)",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "DIMENSIONAL_STANDARD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -592,19 +552,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 5",
-      "standard_id": "IS 5:2007",
-      "title": "Colors for Ready Mixed Paints and Enamels",
-      "division_code": "LITD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 13311",
       "standard_id": "IS 13311",
-      "title": "Indian Standard Code of Practice / Test Method (IS 13311)",
+      "title": "Indian Standard Specification / Test Method (IS 13311)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -727,7 +677,7 @@
       "title": "Part 1 : 2023: Hollow Clay Tiles For Floors And Roofs Specification Part 1 Filler Type",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -752,12 +702,12 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 0",
-      "standard_id": "IS 0",
-      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
-      "division_code": "GEN",
+      "is_number": "SP 16",
+      "standard_id": "SP 16:1980",
+      "title": "SP 16: Design Aids for Reinforced Concrete to IS 456:1978",
+      "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -777,34 +727,14 @@
       "title": "Normal butyl acetate",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "SP 16",
-      "standard_id": "SP 16:1980",
-      "title": "SP 16: Design Aids for Reinforced Concrete to IS 456:1978",
-      "division_code": "CED",
-      "aspect": "Product Specification",
-      "relation_type": "INSTALLATION_CODE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 1489",
       "standard_id": "IS 1489",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1489)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 4031",
-      "standard_id": "IS 4031",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4031)",
+      "title": "Indian Standard Specification / Test Method (IS 1489)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -814,17 +744,7 @@
     {
       "is_number": "IS 2386",
       "standard_id": "IS 2386",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2386)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 7861",
-      "standard_id": "IS 7861",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7861)",
+      "title": "Indian Standard Specification / Test Method (IS 2386)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -834,54 +754,42 @@
     {
       "is_number": "IS 875",
       "standard_id": "IS 875",
-      "title": "Indian Standard Code of Practice / Test Method (IS 875)",
+      "title": "Indian Standard Specification / Test Method (IS 875)",
       "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 3951",
-      "standard_id": "IS 3951",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3951)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 6061",
-      "standard_id": "IS 6061",
-      "title": "Indian Standard Code of Practice / Test Method (IS 6061)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
+      "aspect": "Code of Practice",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     }
   ],
   "clause_3_terminology": [
+    "Grade ification",
+    "Grade Fc",
     "Grade ordinary",
-    "Grade s",
-    "Grade 1",
+    "Grade in",
+    "Grade 11",
+    "Grade MIS",
+    "Grade M15",
+    "Grade Fe",
+    "5 K",
     "Plain and Reinforced Concrete",
     "Code of Practice"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
+      "Slump flow: 600 mm",
       "compressive strength of 150 mm"
     ],
     "chemical_properties": [
       "chloride is encountered along with sulphates in soil or ground water, ordinary Portland cement with C,A content from 5 to 8 percent",
       "ash content is at least 20 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 321281
+  "total_chars_parsed": 321890
 }

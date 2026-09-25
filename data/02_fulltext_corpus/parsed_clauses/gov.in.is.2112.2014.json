@@ -12,12 +12,22 @@
   "clause_1_scope": "1.1 This standard specifies: a) Three grades of fine silver, and b) Six grades of silver alloys used in the manufacture of jewellery/artefacts of silver based on their silver content. 1.2 This standard also specifies the guidelines for marking of purity and other details on tested silver jewellery/artefacts. NOTE — Artefacts cover medallions, utensils and coins provided the purity of silver alloy for artefacts is as per 5.",
   "clause_2_normative_references": [
     {
+      "is_number": "IS/ISO 9202",
+      "standard_id": "IS/ISO 9202",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9202)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 1387",
       "standard_id": "IS 1387:1993",
       "title": "General requirments for the supply of metallurgical materials",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -36,15 +46,23 @@
     "Assaying",
     "Fineness",
     "Silver",
-    "Silver Alloy"
+    "Silver Alloy",
+    "Grade Fineness",
+    "Silver and Silver Alloys",
+    "Jewellery",
+    "Artefacts",
+    "Fineness and Marking",
+    "Third Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "7.1 The silver and silver alloys, jewellery/artefacts shall"
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 9866
+  "total_chars_parsed": 9739
 }

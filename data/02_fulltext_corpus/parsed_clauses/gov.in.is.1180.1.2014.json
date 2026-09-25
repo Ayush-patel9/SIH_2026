@@ -12,29 +12,19 @@
   "clause_1_scope": "This standard specifies the requirements and tests including standard loss levels of mineral oilimmersed, natural air-cooled, outdoor type, doublewound distribution transformers for use in power distribution systems with nominal system voltages up to and including 33 kV and of following types and ratings: a) Three phase ratings up to and including 200 kVA both non-sealed type and sealed type. b) Three phase ratings higher than 200 kVA, up to and including 2 500 kVA both non-sealed type and sealed type. c) Single phase ratings up to and including 25 kVA sealed type.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1180",
-      "standard_id": "IS 1180",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1180)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 1180 (PART 2)",
       "standard_id": "IS 1180 (Part 2):1989",
       "title": "Outdoor type three-phase distribution transformers up to and including 100 kVA 11 kV, Part 2: Sealed type",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 2026",
       "standard_id": "IS 2026",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2026)",
+      "title": "Indian Standard Specification / Test Method (IS 2026)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -57,7 +47,7 @@
       "title": "Shuttlecocks-Specification",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,7 +57,7 @@
       "title": "Nitrogen Compressed Gas And Liquid-Specification Second Revision",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,7 +67,7 @@
       "title": "Power transformers, Part 1: General",
       "division_code": "PGD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,7 +77,7 @@
       "title": "Power transformers, Part 2: Temperature-rise",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -97,7 +87,7 @@
       "title": "Grain Oriented Electrical Steel Sheet and Strip ( Third Revision )",
       "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -107,7 +97,7 @@
       "title": "Copper",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -117,14 +107,14 @@
       "title": "Copper strip for electrical purposes",
       "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 7404",
       "standard_id": "IS 7404",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7404)",
+      "title": "Indian Standard Specification / Test Method (IS 7404)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -137,14 +127,14 @@
       "title": "Copper Wire Rods for Electrical Applications â€” Specification ( First Revision )",
       "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 13730",
       "standard_id": "IS 13730",
-      "title": "Indian Standard Code of Practice / Test Method (IS 13730)",
+      "title": "Indian Standard Specification / Test Method (IS 13730)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -154,7 +144,7 @@
     {
       "is_number": "IS 9335",
       "standard_id": "IS 9335",
-      "title": "Indian Standard Code of Practice / Test Method (IS 9335)",
+      "title": "Indian Standard Specification / Test Method (IS 9335)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -167,7 +157,7 @@
       "title": "Solid pressboard for electrical purposes",
       "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -177,7 +167,7 @@
       "title": "New Insulating Oils — Specification (Fifth Revision)",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -187,7 +177,7 @@
       "title": "Insulating Lquids - Specifications for Unused Synthetic Organic Esters for Electrical Purposes",
       "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -197,7 +187,7 @@
       "title": "Bushings for alternating voltages above 1 000 Volts",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -207,14 +197,14 @@
       "title": "Porcelain bushings for alternating voltage up to and including 1000 V",
       "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 3347",
       "standard_id": "IS 3347",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3347)",
+      "title": "Indian Standard Specification / Test Method (IS 3347)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -224,7 +214,7 @@
     {
       "is_number": "IS 3347 (PART 2/SEC 1)",
       "standard_id": "IS 3347 (PART 2/SEC 1)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3347 (PART 2/SEC 1))",
+      "title": "Indian Standard Specification / Test Method (IS 3347 (PART 2/SEC 1))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -234,7 +224,7 @@
     {
       "is_number": "IS 3347 (PART 3/SEC 1)",
       "standard_id": "IS 3347 (PART 3/SEC 1)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3347 (PART 3/SEC 1))",
+      "title": "Indian Standard Specification / Test Method (IS 3347 (PART 3/SEC 1))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -244,7 +234,7 @@
     {
       "is_number": "IS 3347 (PART 4/SEC 1)",
       "standard_id": "IS 3347 (PART 4/SEC 1)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3347 (PART 4/SEC 1))",
+      "title": "Indian Standard Specification / Test Method (IS 3347 (PART 4/SEC 1))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -254,7 +244,7 @@
     {
       "is_number": "IS 3347 (PART 5/SEC 1)",
       "standard_id": "IS 3347 (PART 5/SEC 1)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3347 (PART 5/SEC 1))",
+      "title": "Indian Standard Specification / Test Method (IS 3347 (PART 5/SEC 1))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -267,7 +257,7 @@
       "title": "Rubber Gaskets",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -277,7 +267,7 @@
       "title": "Cork composition sheets, Part 2: Cork and Rubber",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -287,7 +277,7 @@
       "title": "Power Transformers, Part 5: Ability to Withstand Short Circuit",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -297,7 +287,7 @@
       "title": "Pipe Threads Where Pressure-Tight Joints are Made on the Threads - Dimensions, Tolerances and Designation",
       "division_code": "CED",
       "aspect": "Dimensions",
-      "relation_type": "INSTALLATION_CODE",
+      "relation_type": "DIMENSIONAL_STANDARD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -307,7 +297,7 @@
       "title": "Fittings and Accessories for Power Transformers",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -317,7 +307,7 @@
       "title": "Power Transformers Part - 3 Insulation Levels, Dielectric Tests and External Clearances in Air",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -337,24 +327,14 @@
       "title": "Power Transformers, Part 8: Applications guide",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
-      "is_number": "IS 1885",
-      "standard_id": "IS 1885",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1885)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 4253",
-      "standard_id": "IS 4253",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4253)",
+      "is_number": "IS/IEC 60076",
+      "standard_id": "IS/IEC 60076",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60076)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -364,16 +344,32 @@
   ],
   "clause_3_terminology": [
     "Distribution Transformer",
-    "Non",
-    "Sealed Type Transformer"
+    "Non-Sealed Type Transformer",
+    "Sealed Type Transformer",
+    "Grade Area",
+    "Grade Three",
+    "Grade 105",
+    "Grade HI",
+    "Grade Tests",
+    "Part 1 : 2014: Outdoor Type Oil Immersed Distribution Transformers Upto and Including 2 500 kVA",
+    "33kV",
+    "Specification Part 1 Mineral Oil Immersed",
+    "Fourth Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "Temperature rise (Part 4/Sec 1): 24 kV"
+    ],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "13.1 Rating Plate"
+      "Each transformer shall be provided with rating plate",
+      "The entries on the rating plate shall be indelibly marked",
+      "13.2 Terminal Marking Plate",
+      "Each transformer shall be provided with a terminal",
+      "marking plate in accordance with Fig. 3 to Fig. 5"
     ]
   },
-  "total_chars_parsed": 58168
+  "total_chars_parsed": 58059
 }

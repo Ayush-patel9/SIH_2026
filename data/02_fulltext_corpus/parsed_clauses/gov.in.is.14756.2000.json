@@ -12,19 +12,9 @@
   "clause_1_scope": "This standard lays down the requirements for following types of stainless steel utensils: a) Cooking utensils, b) Serving utensils, c) Table utensils, and d) Storage utensils.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 5522",
-      "standard_id": "IS 5522:2014",
-      "title": "Stainless Steel Sheets and Strips for Utensils Specification",
-      "division_code": "MTD",
-      "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
-      "is_mandatory": true,
-      "qco_order": "Stainless Steel Products (Quality Control) Order"
-    },
-    {
       "is_number": "IS 3257",
       "standard_id": "IS 3257",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3257)",
+      "title": "Indian Standard Specification / Test Method (IS 3257)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -37,7 +27,7 @@
       "title": "Composite Bottom Stainless Steel Cooking Utensils, Part 1: Copper Electrodeposited",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -47,7 +37,7 @@
       "title": "Composite Bottom Stainless Steel Cooking Utensils - Part II : 3-ply Construction",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,19 +47,19 @@
       "title": "Composite Bottom Stainless Steel Cooking Utensils, Part 3: Copper Clad",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
+      "is_number": "IS 5522",
+      "standard_id": "IS 5522:2014",
+      "title": "Stainless Steel Sheets and Strips for Utensils Specification",
+      "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Stainless Steel Products (Quality Control) Order"
     },
     {
       "is_number": "IS 13395",
@@ -77,7 +67,7 @@
       "title": "Performance of Handles and Handle Assemblies Attached to Cookware - Specification ( First Revision )",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -90,29 +80,25 @@
       "relation_type": "SAMPLING_STANDARD",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "IS 4536",
-      "standard_id": "IS 4536",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4536)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade s",
-    "Draft Indian Standard STAINLESS STEEL COOKWARE SPECIFICATION Second Revision of IS 14756"
+    "Draft Indian Standard STAINLESS STEEL COOKWARE SPECIFICATION Second Revision of IS 14756",
+    "IS 14756 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each utensil shall be legibly and indelibly marked by"
+      "Each utensil shall be legibly and indelibly marked by",
+      "manufacturer's name or initials or trade-mark and the",
+      "9.1 BIS Certification Marking",
+      "9.1.1 The product may also be marked with BIS",
+      "9.1.2 The use of the Standard Mark is governed by the"
     ]
   },
-  "total_chars_parsed": 8679
+  "total_chars_parsed": 8499
 }

@@ -12,16 +12,6 @@
   "clause_1_scope": "This standard prescribes the performance requirements of sports footwear.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 15298 (PART 1)",
       "standard_id": "IS 15298 (Part 1):2011",
       "title": "Personal Protective Equipment, Part 1: Test Methods for Footwear",
@@ -57,14 +47,14 @@
       "title": "Methods of Micro-Biological Colour Fastness and Microscopical Tests for Leather",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 7016",
       "standard_id": "IS 7016",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7016)",
+      "title": "Indian Standard Specification / Test Method (IS 7016)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -124,7 +114,7 @@
     {
       "is_number": "IS 3400",
       "standard_id": "IS 3400",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3400)",
+      "title": "Indian Standard Specification / Test Method (IS 3400)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -144,7 +134,7 @@
     {
       "is_number": "IS 15298",
       "standard_id": "IS 15298",
-      "title": "Indian Standard Code of Practice / Test Method (IS 15298)",
+      "title": "Indian Standard Specification / Test Method (IS 15298)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -157,7 +147,7 @@
       "title": "Preferred Numbers, Part 3: Guide to the Choice of Series of Preferred Numbers and of Series Containing More Rounded Values of Preferred Number",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -174,17 +164,7 @@
     {
       "is_number": "IS 100",
       "standard_id": "IS 100",
-      "title": "Indian Standard Code of Practice / Test Method (IS 100)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1076",
-      "standard_id": "IS 1076",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1076)",
+      "title": "Indian Standard Specification / Test Method (IS 100)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -194,17 +174,22 @@
   ],
   "clause_3_terminology": [
     "Grade set",
-    "Grade and",
-    "SPORTS FOOTWEAR"
+    "SPORTS FOOTWEAR",
+    "SPORTS FOOTWEAR — SPECIFICATION",
+    "IS 15844 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
-    "mechanical_properties": [],
+    "mechanical_properties": [
+      "tear strength, kg/25 mm"
+    ],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 73514
+  "total_chars_parsed": 73262
 }

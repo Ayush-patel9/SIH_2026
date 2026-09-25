@@ -14,7 +14,7 @@
     {
       "is_number": "IS 1021",
       "standard_id": "IS 1021",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1021)",
+      "title": "Indian Standard Specification / Test Method (IS 1021)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -27,7 +27,7 @@
       "title": "Caustic Soda Code Of Safety",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,7 +37,7 @@
       "title": "Pictorial marking for handling and labelling of goods, Part 1: Dangerous goods",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,7 +57,7 @@
       "title": "Methods of preparation of standard solutions for colorimetric and volumetric analysis",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,7 +67,7 @@
       "title": "Rectified spirit for industrial use",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,7 +77,7 @@
       "title": "Nitric acid",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,7 +87,7 @@
       "title": "HYDROCHLORIC ACID SPECIFICATION Fifth Revision",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -97,7 +97,7 @@
       "title": "Sodium Carbonate, Anhydrous-Specification",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -107,7 +107,7 @@
       "title": "Sulphuric acid",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -117,7 +117,7 @@
       "title": "Ammonium chloride, technical and pure",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -134,7 +134,7 @@
     {
       "is_number": "IS 99",
       "standard_id": "IS 99",
-      "title": "Indian Standard Code of Practice / Test Method (IS 99)",
+      "title": "Indian Standard Specification / Test Method (IS 99)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -147,35 +147,15 @@
       "title": "Lead and Scarlet Chromes",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1260",
-      "standard_id": "IS 1260",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1260)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 3025",
-      "standard_id": "IS 3025",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3025)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade SO",
-    "Grade rrous",
     "Grade rric",
+    "Grade rrous",
+    "Grade SO",
     "Caustic Soda"
   ],
   "clause_4_requirements": {
@@ -185,8 +165,15 @@
       "chloride, 20 g in 10 percent",
       "chloride, 10 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
-    "marking_requirements": []
+    "marking_requirements": [
+      "The solid material shall be packed in polyethylene bags",
+      "caustic soda lye shall be supplied in tankers or tank",
+      "Each container shall be securely closed and shall bear",
+      "a) Name and grade of the material;",
+      "d) Lot or batch number, in code or otherwise."
+    ]
   },
-  "total_chars_parsed": 48822
+  "total_chars_parsed": 48705
 }

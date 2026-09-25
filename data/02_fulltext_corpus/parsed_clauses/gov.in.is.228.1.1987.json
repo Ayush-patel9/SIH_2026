@@ -9,12 +9,12 @@
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This standard covers the requirements, tolerances, test methods, and compliance specifications for Methods of chemical analysis of steels, Part 1: Determination of carbon by volumetric method (for carbon 0.05 to 2.50 percent) as prescribed under IS 228 (PART 1) by the Bureau of Indian Standards.",
+  "clause_1_scope": "1. Scope- This standard (Part 1 ) covers volumetric method for determination of carbon in the range 0'05 to 2'50 percent in plain carbon, low alloy and high alloys steels.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 228",
       "standard_id": "IS 228",
-      "title": "Indian Standard Code of Practice / Test Method (IS 228)",
+      "title": "Indian Standard Specification / Test Method (IS 228)",
       "division_code": "GEN",
       "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
@@ -22,39 +22,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 0",
-      "standard_id": "IS 0",
-      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 6226",
       "standard_id": "IS 6226",
-      "title": "Indian Standard Code of Practice / Test Method (IS 6226)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 7",
-      "standard_id": "IS 7",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7)",
+      "title": "Indian Standard Specification / Test Method (IS 6226)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -64,7 +34,7 @@
     {
       "is_number": "IS 00",
       "standard_id": "IS 00",
-      "title": "Indian Standard Code of Practice / Test Method (IS 00)",
+      "title": "Indian Standard Specification / Test Method (IS 00)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -84,13 +54,16 @@
       "CARBON 0.05TO 2.50 PERCENT",
       "CARBON 005 TO 2'50 PERCENT",
       "carbon by gravimetric method (for carbon ';:■. 0\"1 percent",
-      "silicon 0'01 to 0-05 percent"
+      "silicon 0'01 to 0-05 percent",
+      "manganese up to 0-01 to 2-00 percent",
+      "carbon in steel have been modified as 0'05 to 2'50 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 20857
+  "total_chars_parsed": 20828
 }

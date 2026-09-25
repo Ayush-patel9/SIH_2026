@@ -9,14 +9,44 @@
     "is_mandatory": true,
     "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
   },
-  "clause_1_scope": "This Indian Standard (IS 694) covers POLYVINYL CHLORIDE INSULATED UNSHEATHED AND SHEATHED CABLES/CORDS WITH RIGID AND FLEXIBLE CONDUCTOR FOR RATED VOLTAGES UP TO AND INCLUDING 450/750 V. This Indian Standard (Fourth Revision) was adopted by the , after the draft finalized by the Power Cables Sectional Committee had been approved by the Electrotechnical Division Council. This standard was originally published in 1955 and was subsequently revised in 1964 when it was split up in two parts, Part 1 dealing with copper conductors and Part 2 dealing with aluminium conductors. Second revision was brought out in 1977 when the two parts were merged, including the requirements of weatherproof cables previously covered in IS 3035 (Part 1) : 1965 'Thermoplastic insulated weatherproof cables: Part 1 PVC insulated and PVC sheathed' . The two voltage grades specified as 250/440 V and 650/1 100 V were also merged. The third revision of this standard was brought out to take into account the experience gained since then to align with the international practices, to the extent considered appropriate. Major changes in this revision include the following: a) Modification of the rated voltag",
+  "clause_1_scope": "This Indian Standard (IS 694) covers POLYVINYL CHLORIDE INSULATED UNSHEATHED AND SHEATHED CABLES/CORDS WITH RIGID AND FLEXIBLE CONDUCTOR FOR RATED VOLTAGES UP TO AND INCLUDING 450/750 V. This Indian Standard (Fourth Revision) was adopted by the by the Power Cables Sectional Committee had been approved by the Electrotechnical Division Council. This standard was originally published in 1955 and was subsequently revised in 1964 when it was split up in two parts, Part 1 dealing with copper conductors and Part 2 dealing with aluminium conductors. Second revision was brought out in 1977 when the two parts were merged, including the requirements of weatherproof cables previously covered in IS 3035 (Part 1) : 1965 'Thermoplastic insulated weatherproof cables: Part 1 PVC insulated and PVC sheathed' . The two voltage grades specified as 250/440 V and 650/1 100 V were also merged. The third revision of this standard was brought out to take into account the experience gained since then to align with the international practices, to the extent considered appropriate. Major changes in this revision include the following: a) Modification of the rated voltage up to and including 450/75",
   "clause_2_normative_references": [
     {
       "is_number": "IS 3035 (PART 1)",
       "standard_id": "IS 3035 (PART 1)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3035 (PART 1))",
+      "title": "Indian Standard Specification / Test Method (IS 3035 (PART 1))",
       "division_code": "GEN",
       "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60227",
+      "standard_id": "IS/IEC 60227",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60227)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60719",
+      "standard_id": "IS/IEC 60719",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60719)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60228",
+      "standard_id": "IS/IEC 60228",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60228)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
@@ -27,7 +57,7 @@
       "title": "Conductors for Insulated Electric Cables and Flexible Cords",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,14 +67,24 @@
       "title": "PVC insulation and sheath of electric cables",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 10810",
       "standard_id": "IS 10810",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10810)",
+      "title": "Indian Standard Specification / Test Method (IS 10810)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 50",
+      "standard_id": "IS/IEC 50",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 50)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -88,16 +128,6 @@
       "division_code": "LITD",
       "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 5",
-      "standard_id": "IS 5:2007",
-      "title": "Colors for Ready Mixed Paints and Enamels",
-      "division_code": "LITD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -157,7 +187,7 @@
       "title": "Drums for electric cables",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -170,44 +200,40 @@
       "relation_type": "SAMPLING_STANDARD",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "IS 3035",
-      "standard_id": "IS 3035",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3035)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1885",
-      "standard_id": "IS 1885",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1885)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Polyvinyl Chloride Compound (PVC)",
+    "Polyvinyl Chloride Compound (PVC",
     "Type of Compound",
     "Type Tests",
     "Acceptance Tests",
     "Routine Tests",
     "Rated Voltage",
-    "Nominal Value"
+    "Nominal Value",
+    "Grade ST3",
+    "POLYVINYL CHLORIDE INSULATED UNSHEATHED AND SHEATHED CABLES",
+    "CORDS WITH RIGID AND FLEXIBLE CONDUCTOR FOR RATED VOLTAGES UP TO AND INCLUDING 450",
+    "750 V"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "RATED VOLTAGES UP TO AND INCLUDING 450/750 V",
+      "rated voltage up to and including 450/750 V",
+      "rated voltages up to and including 450/750 V",
+      "rated voltages UJU up to and including 450 /750 V",
+      "Flammability test",
+      "Flammability Test"
+    ],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "The numbers shall be repeated, at regular intervals"
+      "15.1 The cable shall be either wound on drums",
+      "15.2 The cable shall carry the following information",
+      "either stenciled on the reel or drum or contained in a",
+      "label attached to it:",
+      "Manufacturer's name, brand name or trademark;"
     ]
   },
-  "total_chars_parsed": 75168
+  "total_chars_parsed": 74901
 }

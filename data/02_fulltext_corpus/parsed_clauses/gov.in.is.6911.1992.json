@@ -17,14 +17,14 @@
       "title": "Stainless Steel Sheets and Strips for Utensils Specification",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Stainless Steel Products (Quality Control) Order"
     },
     {
       "is_number": "IS 1956",
       "standard_id": "IS 1956",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1956)",
+      "title": "Indian Standard Specification / Test Method (IS 1956)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -34,20 +34,10 @@
     {
       "is_number": "IS 228",
       "standard_id": "IS 228",
-      "title": "Indian Standard Code of Practice / Test Method (IS 228)",
+      "title": "Indian Standard Specification / Test Method (IS 228)",
       "division_code": "GEN",
       "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,14 +47,14 @@
       "title": "Method For Vickers Hardness Test for Metallic Materials",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 1762",
       "standard_id": "IS 1762",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1762)",
+      "title": "Indian Standard Specification / Test Method (IS 1762)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -74,7 +64,7 @@
     {
       "is_number": "IS 10461",
       "standard_id": "IS 10461",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10461)",
+      "title": "Indian Standard Specification / Test Method (IS 10461)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -83,9 +73,9 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade Designation",
     "Grade rritic",
     "Grade Detlgnttoa",
+    "Grade of",
     "Stainless steel plate",
     "sheet and strip",
     "Second Revision"
@@ -93,10 +83,15 @@
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "19.1 Every package shall be legibly marked with"
+      "19.1 Every package shall be legibly marked with",
+      "paint or any other marking system showing the",
+      "name or trade-mark of manufacturer, weight,",
+      "number or identification marks by which the",
+      "19.2 The material may also be marked with"
     ]
   },
-  "total_chars_parsed": 35311
+  "total_chars_parsed": 35156
 }

@@ -12,6 +12,46 @@
   "clause_1_scope": "1.1 This standard prescribes general requirements; quality of material and thickness for some of the more commonly used: a) Wrought aluminium utensils (see Fig. 1 to Fig. 21 and Fig. 25), b) Thick bottom utensils (see Table 2), c) Compartmental trays (see Fig. 22 and Fig. 23), and d) Lunch boxes (see Fig. 24). 1.2 Aluminium utensils shall mean any utensils manufactured from aluminium or its alloys which can be used for cooking, baking, serving or storing of solid/semi-solid/liquid food, water and household provisions.",
   "clause_2_normative_references": [
     {
+      "is_number": "IS 1660 (PART 1)",
+      "standard_id": "IS 1660 (Part 1):1982",
+      "title": "Wrought Aluminium Utensils, Part 1: Cooking table, serving storing and baking utensils",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1660 (PART 5)",
+      "standard_id": "IS 1660 (Part 5):1966",
+      "title": "Wrought Aluminium Utensils, Part V: Thick Bottom Utensils",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1660 (PART 6)",
+      "standard_id": "IS 1660 (Part 6):1980",
+      "title": "Wrought Aluminium Utensils, Part VI: Compartmental Trays",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1660 (PART 7)",
+      "standard_id": "IS 1660 (Part 7):1970",
+      "title": "Wrought Aluminium Utensils, Part VII: Box, Lunch",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 21",
       "standard_id": "IS 21:1992",
       "title": "Wrought Aluminium and Aluminium Alloys for Manufacture of Utensils",
@@ -22,19 +62,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 20",
-      "standard_id": "IS 20",
-      "title": "Indian Standard Code of Practice / Test Method (IS 20)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 691",
       "standard_id": "IS 691",
-      "title": "Indian Standard Code of Practice / Test Method (IS 691)",
+      "title": "Indian Standard Specification / Test Method (IS 691)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -112,22 +142,12 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 7",
-      "standard_id": "IS 7",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 715 (PART 1)",
       "standard_id": "IS 715 (PART 1)",
       "title": "Coated Abrasives (IS 715 (PART 1))",
       "division_code": "TED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -137,7 +157,7 @@
       "title": "Non-stick unreinforced plastic coatings on domestic cooking utensils",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -150,32 +170,27 @@
       "relation_type": "SAMPLING_STANDARD",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "IS 715",
-      "standard_id": "IS 715:2002",
-      "title": "Coated Abrasives",
-      "division_code": "TED",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade deration",
-    "Grade set",
     "Grade 19000",
     "Grade AC",
+    "Grade deration",
+    "Grade set",
     "WROUGHT ALUMINIUM UTENSILS"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "10.1 Each vessel shall be legibly and idelibly stamped"
+      "10.1 Each vessel shall be legibly and idelibly stamped",
+      "manufacturer's name or registered trade-mark, size and",
+      "10.2 BIS Certification Marking",
+      "10.2.1 The utensils may also be marked with the",
+      "Standard Mark. The use of the Standard Mark is"
     ]
   },
-  "total_chars_parsed": 26803
+  "total_chars_parsed": 26680
 }

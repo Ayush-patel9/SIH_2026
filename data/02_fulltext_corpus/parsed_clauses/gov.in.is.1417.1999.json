@@ -14,7 +14,17 @@
     {
       "is_number": "IS 8844",
       "standard_id": "IS 8844",
-      "title": "Indian Standard Code of Practice / Test Method (IS 8844)",
+      "title": "Indian Standard Specification / Test Method (IS 8844)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9202",
+      "standard_id": "IS/ISO 9202",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9202)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -27,7 +37,7 @@
       "title": "Gold Solders for Use in Manufacture of Jewellery",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -49,13 +59,22 @@
     "Fine Gold",
     "Cold",
     "Gold Alloy",
-    "Standard Gold"
+    "Standard Gold",
+    "Grade Fineness",
+    "9 carat",
+    "2 Carat",
+    "23 carat",
+    "22 carat"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
-    "marking_requirements": []
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
   },
-  "total_chars_parsed": 15241
+  "total_chars_parsed": 15070
 }

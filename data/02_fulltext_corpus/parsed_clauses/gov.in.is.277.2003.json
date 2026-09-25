@@ -12,22 +12,12 @@
   "clause_1_scope": "This standard covers the requirements of plain galvanized steei sheets and strips (coils) and corrugated galvanized sheets.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 1079",
       "standard_id": "IS 1079:2017",
       "title": "Hot Rolled Carbon Steel Sheet, Plate and Strip - Specification",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,17 +27,7 @@
       "title": "Cold reduced low carbon steel sheets and strips",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 5",
-      "standard_id": "IS 5:2007",
-      "title": "Colors for Ready Mixed Paints and Enamels",
-      "division_code": "LITD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,7 +57,7 @@
       "title": "General technical delivery requirements for steel and steel products",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,7 +67,7 @@
       "title": "Distilling flasks",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -97,7 +77,7 @@
       "title": "Zinc Ingot",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -107,17 +87,7 @@
       "title": "Zinc for galvanizing",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 107",
-      "standard_id": "IS 107",
-      "title": "Indian Standard Code of Practice / Test Method (IS 107)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -130,34 +100,15 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "IS 875",
-      "standard_id": "IS 875",
-      "title": "Indian Standard Code of Practice / Test Method (IS 875)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1956",
-      "standard_id": "IS 1956",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1956)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Black Sheet",
     "Thickness of Sheet",
+    "Grade ification",
+    "Grade Grade",
     "Grade Reference",
-    "Grade incation",
-    "Grade s",
+    "Grade DcsignaUon",
     "Grade EDD",
     "Grade DD",
     "Galvanized Steel Strips and Sheets",
@@ -167,10 +118,17 @@
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
-    "dimensional_tolerances": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "Tolerances on length on plus side shall be 15 mm"
+    ],
     "marking_requirements": [
-      "15.1 Manufacturer's name or trade-mark, grade of"
+      "15.1 Manufacturer's name or trade-mark, grade of",
+      "corrugations* grade in case of corrugated sheets and",
+      "material identification (grade, quality, etc) shall legibly",
+      "be marked on top of each sheet or shown on a tag",
+      "15.1.1 The material may also be marked with the"
     ]
   },
-  "total_chars_parsed": 26742
+  "total_chars_parsed": 26670
 }

@@ -17,7 +17,7 @@
       "title": "metal chairs for office purposes Specification, Part 1: Non-revolving and non-tilting",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -27,14 +27,14 @@
       "title": "B): metal chairs for office purposes Specification, Part 2: Revolving and tilting (BI-LINGUAL)",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 3499 (PART 20)",
       "standard_id": "IS 3499 (PART 20)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3499 (PART 20))",
+      "title": "Indian Standard Specification / Test Method (IS 3499 (PART 20))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -42,9 +42,29 @@
       "qco_order": null
     },
     {
+      "is_number": "IS/ISO 21015",
+      "standard_id": "IS/ISO 21015",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 21015)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 22880",
+      "standard_id": "IS/ISO 22880",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 22880)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 17524",
       "standard_id": "IS 17524",
-      "title": "Indian Standard Code of Practice / Test Method (IS 17524)",
+      "title": "Indian Standard Specification / Test Method (IS 17524)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -57,7 +77,7 @@
       "title": "Dimensions of Tables and Chairs for Office Purposes (Third Revision)",
       "division_code": "LITD",
       "aspect": "Dimensions",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "DIMENSIONAL_STANDARD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,17 +87,7 @@
       "title": "Performance Requirements of Surface Finishes for Furniture Applications",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 3499",
-      "standard_id": "IS 3499",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3499)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -91,15 +101,22 @@
     "Strength Tests",
     "Supporting Point",
     "Surface Finish Tests",
-    "Work Chair"
+    "Work Chair",
+    "Grade Location",
+    "Work Chairs"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "9.1 Each chair shall be indelibly and legibly marked"
+      "9.1 Each chair shall be indelibly and legibly marked",
+      "recognized trade mark, if any;",
+      "d) Batch/lot number.",
+      "customer shall have the instruction for assembly",
+      "9.3 BIS Certification Marking"
     ]
   },
-  "total_chars_parsed": 45540
+  "total_chars_parsed": 45383
 }

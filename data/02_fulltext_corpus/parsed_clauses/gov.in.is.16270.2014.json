@@ -22,12 +22,12 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "is_number": "IS/IEC 61427",
+      "standard_id": "IS/IEC 61427",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61427)",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,7 +37,7 @@
       "title": "Stationary cells and batteries, lead-acid type (with tubular positive plates)",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -47,7 +47,7 @@
       "title": "Stationary lead acid batteries (with tubular positive plates) in monobloc containers",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,7 +57,7 @@
       "title": "Satationary Regulated Lead Acid Batteries",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,7 +67,7 @@
       "title": "Sealed Nickel Cadmium Button Type Rechargeable Single Cells",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,7 +77,7 @@
       "title": "Vented type nickel cadmium batteries",
       "division_code": "TED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,7 +87,7 @@
       "title": "Secondary cells and batteries coating alkaline or other non-acid electrolytes - Nickel-cadmium prismatic secondary single cells with partial gas recombination",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -97,14 +97,14 @@
       "title": "Secondary Cells and Batteries containing Alkaline or other non-acid Electrolytes - Portable Sealed Rechargeable Single Cells, Part 1: Nickel-Cadmium",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 16048(PART 1)",
       "standard_id": "IS 16048(PART 1)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 16048(PART 1))",
+      "title": "Indian Standard Specification / Test Method (IS 16048(PART 1))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -117,56 +117,29 @@
       "title": "Secondary Cells and Batteries containing Alkaline or other non-acid Electrolytes - Portable Sealed Rechargeable Single Cells, Part 2: Nickel-Metal Hydride",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 0",
-      "standard_id": "IS 0",
-      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1885",
-      "standard_id": "IS 1885",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1885)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 16048",
-      "standard_id": "IS 16048",
-      "title": "Indian Standard Code of Practice / Test Method (IS 16048)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade Test",
-    "Grade s",
-    "Grade Temperature",
+    "Grade tests",
     "Grade Batteries",
+    "Grade Test",
     "Secondary Cells and Batteries for Solar Photovoltaic Application",
     "General Requirements and Methods of Test"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
-    "chemical_properties": [],
+    "chemical_properties": [
+      "Lead-Acid —20 to + 50 <95 percent",
+      "Cadmium a) -20 to + 50 a) <95 percent"
+    ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Cells or monobloc batteries shall follow the instructions"
+      "The cells may also be marked with Standard Mark."
     ]
   },
-  "total_chars_parsed": 29629
+  "total_chars_parsed": 29503
 }

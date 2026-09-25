@@ -12,16 +12,6 @@
   "clause_1_scope": "1.1 This standard covers the methods of taking samples of concrete and their analysis.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 516",
       "standard_id": "IS 516:1959",
       "title": "Method of Tests for Strength of Concrete",
@@ -44,7 +34,7 @@
     {
       "is_number": "IS 460",
       "standard_id": "IS 460",
-      "title": "Indian Standard Code of Practice / Test Method (IS 460)",
+      "title": "Indian Standard Specification / Test Method (IS 460)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -57,24 +47,14 @@
       "title": "French Chalk Technical - Specification",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 30",
       "standard_id": "IS 30",
-      "title": "Indian Standard Code of Practice / Test Method (IS 30)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 20",
-      "standard_id": "IS 20",
-      "title": "Indian Standard Code of Practice / Test Method (IS 20)",
+      "title": "Indian Standard Specification / Test Method (IS 30)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -87,23 +67,29 @@
       "title": "Coarse and Fine Aggregate for Concrete - Specification",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Grade VBR",
-    "Methods of sampling and analysis of concrete"
+    "Methods of sampling and analysis of concrete",
+    "IS 1199 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
-    "dimensional_tolerances": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "nominal size of the largest aggregate does not exceed 38 mm",
+      "nominal size of coarse aggregate does not exceed 19 mm"
+    ],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 89587
+  "total_chars_parsed": 89560
 }

@@ -12,12 +12,42 @@
   "clause_1_scope": "1.1 This standard covers the requirements relating to the performance and safety that is, strength, stability and durability of tables and desks to be used for in a seated and/or standing positions, used by adults. 12 This standard applies to completely manufactured/ fabricated tables and desks. It also applies to ready-to-assemble units; in that case the requirements of this standard shall apply to the assembled units.",
   "clause_2_normative_references": [
     {
+      "is_number": "IS/ISO 21016",
+      "standard_id": "IS/ISO 21016",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 21016)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7172",
+      "standard_id": "IS/ISO 7172",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7172)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 48",
+      "standard_id": "IS/ISO 48",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 48)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 3663",
       "standard_id": "IS 3663:2018",
       "title": "Dimensions of Tables and Chairs for Office Purposes (Third Revision)",
       "division_code": "LITD",
       "aspect": "Dimensions",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "DIMENSIONAL_STANDARD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -27,7 +57,7 @@
       "title": "Performance Requirements of Surface Finishes for Furniture Applications",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,7 +67,7 @@
       "title": "Ready mixed paint, brushing, finishing, stoving for enamel color as required",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -47,7 +77,7 @@
       "title": "Testing Methods for Processed Glass",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,7 +87,7 @@
       "title": "Part 1 : 2018: Safety Glass — Specification Part 1 Architectural, Building and General Uses ( Fourth Revision )",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Safety Glass (Quality Control) Order"
     },
@@ -84,17 +114,7 @@
     {
       "is_number": "IS 16774",
       "standard_id": "IS 16774",
-      "title": "Indian Standard Code of Practice / Test Method (IS 16774)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2553",
-      "standard_id": "IS 2553",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2553)",
+      "title": "Indian Standard Specification / Test Method (IS 16774)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -104,7 +124,7 @@
     {
       "is_number": "IS 3400",
       "standard_id": "IS 3400",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3400)",
+      "title": "Indian Standard Specification / Test Method (IS 3400)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -124,10 +144,15 @@
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "9.1 Each table shall be indelibly and legibly marked"
+      "9.1 Each table shall be indelibly and legibly marked",
+      "recognized trade mark, if any;",
+      "d) Batch/lot number.",
+      "shall have the instruction for assembly provided as a",
+      "9.3 BIS Certification Marking"
     ]
   },
-  "total_chars_parsed": 51285
+  "total_chars_parsed": 51120
 }

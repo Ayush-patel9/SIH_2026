@@ -9,7 +9,7 @@
     "is_mandatory": true,
     "qco_order": "Domestic Pressure Cooker (Quality Control) Order, 2020"
   },
-  "clause_1_scope": "The standard covers the requirements for domestic pressure cookers.",
+  "clause_1_scope": "This Indian Standard (IS 2347) covers Domestic Pressure Cooker - Specification. This Indian Standard (Fifth Revision) was adopted by the Utensils, Cutlery and Domestic Hardware Sectional Committee had been approved by the Mechanical Engineering Division Council, This standard was first published in 1963 and subsequently revised in 1966, 1974, 1987 and 1995. In this revision, following major changes have keen made: a) Amendment No. 1 has been incorporated, b) Handles and knobs shall conform to 'Performance of handless and handle assemblies attached to cookware — specification', c) Safety pressure relief device clause has been modified, and d) Test for spring loaded mechanism has been modified. The Committee responsible for the formulation of this standard is given at Annex J. For the purpose of deciding whether a particular requirement of this standard is complied with, t final value, observed or calculated, expressing the result of a test or analysis, shall be rounded off in accordance with 'Rules for rounding off numerical values {revised)' . The number of signif",
   "clause_2_normative_references": [
     {
       "is_number": "IS 6057",
@@ -57,14 +57,14 @@
       "title": "Stainless Steel Sheets and Strips for Utensils Specification",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Stainless Steel Products (Quality Control) Order"
     },
     {
       "is_number": "IS 4536",
       "standard_id": "IS 4536",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4536)",
+      "title": "Indian Standard Specification / Test Method (IS 4536)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -77,7 +77,7 @@
       "title": "Rubber Gasket for Pressure Cooker-Specification",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,7 +87,7 @@
       "title": "Performance of Handles and Handle Assemblies Attached to Cookware - Specification ( First Revision )",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -97,7 +97,7 @@
       "title": "Stainless steel wire rod",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -107,7 +107,7 @@
       "title": "Eletroplated coatings of nickle plus chromium and copper plus nickel plus chromium",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -117,7 +117,7 @@
       "title": "Crop Protection Equipment - Hand- Operated Compression Knapsack Sprayer",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -127,7 +127,7 @@
       "title": "Crop Protection Equipment - Rocker Sprayer",
       "division_code": "MHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -147,7 +147,7 @@
       "title": "Oil Pressure Stoves — Specification ( Seventh Revision )",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -157,7 +157,7 @@
       "title": "Domestic Gas Stoves for use with Liquefied Petroleum Gases",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -165,15 +165,26 @@
   "clause_3_terminology": [
     "Pressure Cooker",
     "Capacity",
-    "Cooking Capacity"
+    "Cooking Capacity",
+    "Grade Test",
+    "Grade deration",
+    "Grade bruary",
+    "Domestic Pressure Cooker"
   ],
   "clause_4_requirements": {
-    "mechanical_properties": [],
+    "mechanical_properties": [
+      "hardness greater than 350 HV. J"
+    ],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each cooker shall be marked with its capacity, on the"
+      "Each cooker shall be marked with its capacity, on the",
+      "body, the name or recognized trade-mark of the",
+      "manufacturer on both the lid and the body. The carton",
+      "shall also be similarly marked.",
+      "11.1 Each cooker shall be indelibly and legibly marked"
     ]
   },
-  "total_chars_parsed": 35780
+  "total_chars_parsed": 35665
 }

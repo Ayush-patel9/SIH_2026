@@ -1,0 +1,139 @@
+[
+  {
+    "is_number": "IS 1786",
+    "domain": "High Strength Deformed Steel Bars",
+    "labs": [
+      "LAB_NTH_ER",
+      "LAB_NTH_WR"
+    ],
+    "mandatory_tests": [
+      "Tensile Strength",
+      "Yield Stress",
+      "Elongation",
+      "Bend & Rebend Test",
+      "Chemical Analysis (C, S, P)"
+    ]
+  },
+  {
+    "is_number": "IS 1180 (Part 1)",
+    "domain": "Outdoor Distribution Transformers",
+    "labs": [
+      "LAB_CPRI_BLR",
+      "LAB_ERDA_BRD"
+    ],
+    "mandatory_tests": [
+      "No-load & Load Loss Measurement",
+      "Temperature Rise Test",
+      "Dielectric Breakdown Voltage",
+      "Short-Circuit Test"
+    ]
+  },
+  {
+    "is_number": "IS 10322 (Part 5/Sec 1)",
+    "domain": "LED Luminaires & Recessed Lights",
+    "labs": [
+      "LAB_ERDA_BRD",
+      "LAB_CPRI_BLR"
+    ],
+    "mandatory_tests": [
+      "Photometric Light Output",
+      "Insulation Resistance",
+      "Ingress Protection (IP Rating)",
+      "Thermal Endurance"
+    ]
+  },
+  {
+    "is_number": "IS 13252 (Part 1)",
+    "domain": "IT Equipment & Adapters (CRS)",
+    "labs": [
+      "LAB_STQC_ERTL_DEL"
+    ],
+    "mandatory_tests": [
+      "Electric Shock Protection",
+      "Dielectric Strength",
+      "Creepage & Clearance",
+      "Flammability",
+      "Touch Current"
+    ]
+  },
+  {
+    "is_number": "IS 616",
+    "domain": "Audio/Video Electronics (CRS)",
+    "labs": [
+      "LAB_STQC_ERTL_DEL"
+    ],
+    "mandatory_tests": [
+      "Radiation & Laser Safety",
+      "Fault Condition Testing",
+      "Dielectric Strength",
+      "Fire Enclosure Resistance"
+    ]
+  },
+  {
+    "is_number": "IS 10151",
+    "domain": "PVC for Food Contact & Drinking Water",
+    "labs": [
+      "LAB_CIPET_CHN",
+      "LAB_NTH_WR",
+      "LAB_SRI_DEL"
+    ],
+    "mandatory_tests": [
+      "Residual Vinyl Chloride Monomer (RVCM <= 1 ppm)",
+      "RVCM Migration (<= 10 ppb)",
+      "Overall Migration Limit (<= 60 mg/l)"
+    ]
+  },
+  {
+    "is_number": "IS 15298 (Part 2)",
+    "domain": "Safety Footwear with Steel Toe",
+    "labs": [
+      "LAB_CLRI_CHN"
+    ],
+    "mandatory_tests": [
+      "Toe Cap Impact Resistance (200 Joules)",
+      "Compression Resistance (15 kN)",
+      "Sole Penetration Resistance",
+      "Slip Resistance"
+    ]
+  },
+  {
+    "is_number": "IS 9873 (Part 1)",
+    "domain": "Safety of Toys (Mechanical)",
+    "labs": [
+      "LAB_SRI_DEL"
+    ],
+    "mandatory_tests": [
+      "Small Parts Hazard (Choking Test)",
+      "Sharp Edges & Sharp Points",
+      "Acoustic / Decibel Output",
+      "Drop & Torque Test"
+    ]
+  },
+  {
+    "is_number": "IS 14286",
+    "domain": "Crystalline Silicon Terrestrial PV Modules",
+    "labs": [
+      "LAB_NISE_GUR",
+      "LAB_CPRI_BLR"
+    ],
+    "mandatory_tests": [
+      "Thermal Cycling Test",
+      "Damp Heat Test",
+      "Mechanical Load Test",
+      "Hail Impact Test"
+    ]
+  },
+  {
+    "is_number": "IS 2553 (Part 2)",
+    "domain": "Safety Glass for Land Transport",
+    "labs": [
+      "LAB_ARAI_PUN"
+    ],
+    "mandatory_tests": [
+      "227g Steel Ball Impact Test",
+      "Head-Form Impact Test",
+      "Optical Distortion",
+      "Light Transmittance"
+    ]
+  }
+]

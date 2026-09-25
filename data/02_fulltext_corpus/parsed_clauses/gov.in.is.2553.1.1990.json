@@ -14,7 +14,7 @@
     {
       "is_number": "IS 2553",
       "standard_id": "IS 2553",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2553)",
+      "title": "Indian Standard Specification / Test Method (IS 2553)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -27,7 +27,7 @@
       "title": "Flat transparent sheet glass",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -40,10 +40,17 @@
     "Fourth Revision"
   ],
   "clause_4_requirements": {
-    "mechanical_properties": [],
+    "mechanical_properties": [
+      "adhesion test (see 5.3.5). N"
+    ],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
-    "marking_requirements": []
+    "marking_requirements": [
+      "Safety glass shall be packed as agreed to between",
+      "6.1.1 The packet shall be marked with the following",
+      "c) Code or batch number,"
+    ]
   },
-  "total_chars_parsed": 31860
+  "total_chars_parsed": 31778
 }

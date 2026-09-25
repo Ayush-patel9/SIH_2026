@@ -17,7 +17,7 @@
       "title": "Positive List of Constituents of Polyvinyl Chloride (PVC) and Its Copolymers in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
       "division_code": "FAD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -27,7 +27,7 @@
       "title": "List of Colourants for Use in Plastics in Contact with Foodstuffs and Pharmaceuticals ( Second Revision )",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -44,7 +44,7 @@
     {
       "is_number": "IS 24",
       "standard_id": "IS 24",
-      "title": "Indian Standard Code of Practice / Test Method (IS 24)",
+      "title": "Indian Standard Specification / Test Method (IS 24)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -57,7 +57,7 @@
       "title": "Acetone — Specification ( Fifth Revision )",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -73,18 +73,26 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade es",
     "Polyvinyl Chloride",
     "and its Copolymers for its Safe Use in Contact with Foodstuffs",
-    "Pharmaceuticals and Drinking Water"
+    "Pharmaceuticals and Drinking Water",
+    "First Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [
-      "Chloride (VC), of purity greater than 99.5 percent"
+      "Vinyl Chloride (VC), of purity greater than 99.5 percent",
+      "purity greater than 99.5 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
-    "marking_requirements": []
+    "marking_requirements": [
+      "The material shall be suitably packed with suitable",
+      "Each package shall be clearly marked with the following",
+      "b) Net mass in the package;",
+      "d) Recognized trade-mark, if any;",
+      "f) Batch No. or Code No."
+    ]
   },
-  "total_chars_parsed": 42479
+  "total_chars_parsed": 42362
 }

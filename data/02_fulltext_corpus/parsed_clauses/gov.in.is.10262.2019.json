@@ -27,17 +27,7 @@
       "title": "Specification for Concrete Admixtures -",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 20",
-      "standard_id": "IS 20",
-      "title": "Indian Standard Code of Practice / Test Method (IS 20)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -47,7 +37,7 @@
       "title": "Coarse and Fine Aggregate for Concrete - Specification",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,14 +47,14 @@
       "title": "Part 6 : 2018: Fresh Concrete — Methods of Sampling, Testing and Analysis Part 6 Tests on Fresh Self Compacting Concrete ( First Revision )",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "SAMPLING_STANDARD",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 30",
       "standard_id": "IS 30",
-      "title": "Indian Standard Code of Practice / Test Method (IS 30)",
+      "title": "Indian Standard Specification / Test Method (IS 30)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -92,29 +82,9 @@
       "qco_order": "Cement (Quality Control) Order, 2023"
     },
     {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 0",
-      "standard_id": "IS 0",
-      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 2386",
       "standard_id": "IS 2386",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2386)",
+      "title": "Indian Standard Specification / Test Method (IS 2386)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -134,7 +104,7 @@
     {
       "is_number": "IS 3812 (PART1)",
       "standard_id": "IS 3812 (PART1)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3812 (PART1))",
+      "title": "Indian Standard Specification / Test Method (IS 3812 (PART1))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -148,16 +118,6 @@
       "division_code": "CED",
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -184,7 +144,7 @@
     {
       "is_number": "IS 2386(PART 3)",
       "standard_id": "IS 2386(PART 3)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2386(PART 3))",
+      "title": "Indian Standard Specification / Test Method (IS 2386(PART 3))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -197,34 +157,14 @@
       "title": "Specification for Silica Fume",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 8",
-      "standard_id": "IS 8:1994",
-      "title": "High Heat Duty Fireclay Refractories",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1199",
-      "standard_id": "IS 1199:1959",
-      "title": "Methods of sampling and analysis of concrete",
-      "division_code": "CED",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 1489",
       "standard_id": "IS 1489",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1489)",
+      "title": "Indian Standard Specification / Test Method (IS 1489)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -234,7 +174,7 @@
     {
       "is_number": "IS 3812",
       "standard_id": "IS 3812",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3812)",
+      "title": "Indian Standard Specification / Test Method (IS 3812)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -243,27 +183,42 @@
     }
   ],
   "clause_3_terminology": [
-    "Water",
-    "Grade designation",
+    "Water-Cement Ratio (w/c",
+    "Water-Cementitious Materials Ratio (w/cm",
+    "Grade conforming",
+    "Grade V1",
+    "Grade atures",
+    "Grade st",
     "Grade of",
-    "Grade a",
     "Concrete Mix Proportioning",
     "Guidelines",
     "Second Revision"
   ],
   "clause_4_requirements": {
-    "mechanical_properties": [],
+    "mechanical_properties": [
+      "compressive strength of 33 and < 43 N",
+      "compressive strength of 43 and < 53 N",
+      "compressive strength of 53 N",
+      "compressive strength of 65 N",
+      "slump flow 550 mm",
+      "slump flow 660 mm",
+      "slump flow 760 mm",
+      "slump) for 20 mm"
+    ],
     "chemical_properties": [
       "ash is 20 percent",
       "moisture content is 2 percent",
       "ash @ 30 percent",
-      "ash @ 15 percent"
+      "ash @ 15 percent",
+      "ash, and around 10 percent",
+      "ash @ 25 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 139720
+  "total_chars_parsed": 139618
 }

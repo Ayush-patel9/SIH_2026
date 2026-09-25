@@ -9,12 +9,12 @@
     "is_mandatory": true,
     "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
   },
-  "clause_1_scope": "This standard covers the requirements of diflferent grades and types of plywood used for general purposes, 2 REFERENCE 2.",
+  "clause_1_scope": "1,1 This standard covers the requirements of diflferent grades and types of plywood used for general purposes,",
   "clause_2_normative_references": [
     {
       "is_number": "IS 313",
       "standard_id": "IS 313",
-      "title": "Indian Standard Code of Practice / Test Method (IS 313)",
+      "title": "Indian Standard Specification / Test Method (IS 313)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -24,7 +24,7 @@
     {
       "is_number": "IS 84",
       "standard_id": "IS 84",
-      "title": "Indian Standard Code of Practice / Test Method (IS 84)",
+      "title": "Indian Standard Specification / Test Method (IS 84)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -34,7 +34,7 @@
     {
       "is_number": "IS 12049",
       "standard_id": "IS 12049",
-      "title": "Indian Standard Code of Practice / Test Method (IS 12049)",
+      "title": "Indian Standard Specification / Test Method (IS 12049)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -48,16 +48,6 @@
       "division_code": "GEN",
       "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,7 +67,7 @@
       "title": "Screwed Closures for Drums — Specification ( Fourth Revision )",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -107,26 +97,34 @@
       "title": "Screwed Closures for Drums — Specification ( Fourth Revision ) (IS 1784 (PART 5))",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade of",
     "Grade AB",
-    "Grade AA",
     "Grade BB",
-    "Grade s",
+    "Grade Type",
+    "Grade Along",
+    "Grade Specimens",
+    "Grade when",
+    "Grade MOE",
+    "Grade bruary",
     "Plywood for General Purposes"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "12.2 Each plywood board shall be legibly and"
+      "12.2 Each plywood board shall be legibly and",
+      "indelibly marked or stamped with the following:",
+      "c) Batch No,, and",
+      "d) The grade and type as follows:",
+      "12.2 AH markings shall be done on the face of"
     ]
   },
-  "total_chars_parsed": 35845
+  "total_chars_parsed": 35473
 }

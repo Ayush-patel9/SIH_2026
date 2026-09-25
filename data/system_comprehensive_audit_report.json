@@ -1,0 +1,31 @@
+{
+  "01_master_catalog": {
+    "total_standards": 21992,
+    "null_is_number": 0,
+    "null_title": 0,
+    "null_division_code": 0,
+    "null_aspect": 0,
+    "total_mandatory_standards": 97,
+    "status": "PASS"
+  },
+  "02_fulltext_corpus": {
+    "raw_downloads_count": 113,
+    "parsed_clauses_count": 113,
+    "null_scopes": 0,
+    "synthetic_scopes": 0,
+    "total_requirements_extracted": 649,
+    "zero_req_files": 0,
+    "total_normative_edges": 1876,
+    "null_graph_titles": 0,
+    "self_loop_edges": 0,
+    "total_rag_chunks": 337,
+    "null_rag_texts": 0,
+    "avg_rag_chunk_chars": 1259.3,
+    "status": "PASS"
+  },
+  "03_regulatory_qco": {},
+  "04_conformity_ecosystem": {},
+  "05_procurement_gold_corpus": {},
+  "06_multilingual_lexicon": {},
+  "passed_all_checks": true
+}

@@ -32,19 +32,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 4",
-      "standard_id": "IS 4:1963",
-      "title": "Guide for Layout of Learned Periodicals",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 4031",
       "standard_id": "IS 4031",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4031)",
+      "title": "Indian Standard Specification / Test Method (IS 4031)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -57,7 +47,7 @@
       "title": "Bicycle Spokes (Plain) and Nipples for Spokes - Specifiation",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -75,11 +65,11 @@
       "chloride content shall not exceed 005 percent",
       "insoluble residue content from 2*5 to 4 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "or his registered trade-mark, if any."
     ]
   },
-  "total_chars_parsed": 34567
+  "total_chars_parsed": 34368
 }

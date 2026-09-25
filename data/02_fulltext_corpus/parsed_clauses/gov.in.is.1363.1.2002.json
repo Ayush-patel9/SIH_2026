@@ -9,12 +9,352 @@
     "is_mandatory": true,
     "qco_order": "Bolts, Nuts and Fasteners (Quality Control) Order, 2023"
   },
-  "clause_1_scope": "This International Standard specifies the characteristics of hexagon head bolts with threads from M5 up to and including M64 of product grade C. If, in special cases, specifications other than those listed In this International Standard are required, they should be selected from existing International Standards, for example ISO 724, ISO 888, ISO 898-1, ISO 965-1 and ISO 4759-1,",
+  "clause_1_scope": "This Indian Standard (IS 1363 (PART 1)) covers Hexagon Head Bolts, Screws and Nuts of Product Grade 'C', Part 1: Hexagon Head Bolts (Size Range M 5 to M 64). This Indian Standard (Part 1) (Fourth Revision) which is identical with ISO 4016:1999 'Hexagon head bolts — Product grade C issued by the International Organization for Standardization (ISO) was adopted by the Sectional Committee and approval of the Basic and Production Engineering Division Council. IS 1 363 was originally published in 1 960 and first revised In 1 967. Subsequent to the publication of 1 967 edition, many changes had been agreed upon at international level which have been reflected in IS 1367 series of standards covering Technical supply conditions for threaded steel fasteners'. Accordingly, the second revision was published in 1984 splitting the standard into 3 parts covering hexagon head bolts, hexagon head screws and hexagon nuts. The third revision of this standard was published in 1992 by adoption of ISO 4016 : 1988. This fourth revision has been prepared by adoption of latest edition of ISO 4016 published in 1999. The remaining parts of the standard, that is. Part",
   "clause_2_normative_references": [
     {
       "is_number": "IS 1363",
       "standard_id": "IS 1363",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1363)",
+      "title": "Indian Standard Specification / Test Method (IS 1363)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4016",
+      "standard_id": "IS/ISO 4016",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4016)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1367",
+      "standard_id": "IS 1367",
+      "title": "Indian Standard Specification / Test Method (IS 1367)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 401",
+      "standard_id": "IS/ISO 401",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 401)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 225",
+      "standard_id": "IS/ISO 225",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 225)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 724",
+      "standard_id": "IS/ISO 724",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 724)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4218 (PART 3)",
+      "standard_id": "IS 4218 (Part 3):1999",
+      "title": "ISO General Purpose Metric Screw Threads, Part 3: Basic Dimensions",
+      "division_code": "PGD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 888",
+      "standard_id": "IS/ISO 888",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 888)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 898",
+      "standard_id": "IS/ISO 898",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 898)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 965",
+      "standard_id": "IS/ISO 965",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 965)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4759",
+      "standard_id": "IS/ISO 4759",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4759)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3269",
+      "standard_id": "IS/ISO 3269",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3269)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4042",
+      "standard_id": "IS/ISO 4042",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4042)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8992",
+      "standard_id": "IS/ISO 8992",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8992)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4018",
+      "standard_id": "IS/ISO 4018",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4018)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 10683",
+      "standard_id": "IS/ISO 10683",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 10683)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4015",
+      "standard_id": "IS/ISO 4015",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4015)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4032",
+      "standard_id": "IS/ISO 4032",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4032)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4033",
+      "standard_id": "IS/ISO 4033",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4033)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4034",
+      "standard_id": "IS/ISO 4034",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4034)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4035",
+      "standard_id": "IS/ISO 4035",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4035)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4036",
+      "standard_id": "IS/ISO 4036",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4036)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 41",
+      "standard_id": "IS/ISO 41",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 41)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4775",
+      "standard_id": "IS/ISO 4775",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4775)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 741",
+      "standard_id": "IS/ISO 741",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 741)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7412",
+      "standard_id": "IS/ISO 7412",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7412)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7413",
+      "standard_id": "IS/ISO 7413",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7413)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7417",
+      "standard_id": "IS/ISO 7417",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7417)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8673",
+      "standard_id": "IS/ISO 8673",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8673)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8674",
+      "standard_id": "IS/ISO 8674",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8674)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8675",
+      "standard_id": "IS/ISO 8675",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8675)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8676",
+      "standard_id": "IS/ISO 8676",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8676)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8765",
+      "standard_id": "IS/ISO 8765",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8765)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4162",
+      "standard_id": "IS/ISO 4162",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4162)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 10663",
+      "standard_id": "IS/ISO 10663",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 10663)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -37,7 +377,7 @@
       "title": "ISO General Purpose Metric Screw Threads - Tolerances, Part 1: Principle and Basic Data",
       "division_code": "PGD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "DIMENSIONAL_STANDARD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,7 +397,7 @@
       "title": "Hexagon Head Bolts, Screws and Nuts of Product Grade 'C', Part 2: Hexagon Head Screws (Size Range M 5 to M 64)",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Bolts, Nuts and Fasteners (Quality Control) Order, 2023"
     },
@@ -67,7 +407,7 @@
       "title": "Technical Supply Conditions for Threaded Steel Fasteners, Part 11: Electroplated Coatings",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,44 +417,14 @@
       "title": "Technical Supply Conditions for Threaded Steel Fasteners, Part 2: Tolerances for Fasteners - Bolts, Screws, Studs and Nuts - Product Grades A, B and C",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 0",
-      "standard_id": "IS 0",
-      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "DIMENSIONAL_STANDARD",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 1367(PART 18)",
       "standard_id": "IS 1367(PART 18)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1367(PART 18))",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1367",
-      "standard_id": "IS 1367",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1367)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 14962",
-      "standard_id": "IS 14962",
-      "title": "Indian Standard Code of Practice / Test Method (IS 14962)",
+      "title": "Indian Standard Specification / Test Method (IS 1367(PART 18))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -123,18 +433,28 @@
     }
   ],
   "clause_3_terminology": [
+    "95 k",
+    "6 k",
+    "86 k",
+    "37 k",
+    "21 k",
+    "25 k",
     "Hexagon Head Bolts",
-    "Screws and Nuts of Product Grade 'C'",
+    "Screws and Nuts of Product Grade 'C",
     "Part 1: Hexagon Head Bolts",
     "Size Range M 5 to M 64"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
-    "dimensional_tolerances": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "nominal length/ = 80 mm"
+    ],
     "marking_requirements": [
-      "Details available with the ."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 25834
+  "total_chars_parsed": 25709
 }

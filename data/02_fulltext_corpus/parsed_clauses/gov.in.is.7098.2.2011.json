@@ -9,12 +9,22 @@
     "is_mandatory": true,
     "qco_order": "Electrical Cables (Quality Control) Order"
   },
-  "clause_1_scope": "1.1 This standard (Part 2) covers the requirements of following categories of crosslinked polyethylene insulated and PVC sheathed or polyethylene sheathed cables for single phase or three phase (earthed or unearthed) systems for electricity supply purposes: a) Types of Cables 1) Single-core unscreened, unarmoured (but non-magnetic metallic tape covered); 2) Single-core screened, unarmoured; 3) Single-core armoured (non-magnetic) screened or unscreened; and 4) Three-core armoured, screened or unscreened. b) Voltage Grade (UJU) 1) Earthed systems: 1 .9/3.3 kV, 3.8/6.6 kV, 6.35/11 kV, 12.7/22 kV and 19/33 kV. 2) Unearthed system: 3.3/3.3kV and 1 1/1 IkV. NOTES 1 Cables of 6.35/1 IkV grade (earthed systems) are suitable for use on 6.6/6.6 kV and (unearthed system) also. 2 The cables conforming to this standard may be operated continuously at a power frequency voltage 10 percent higher than rated voltage. 3 Under rule 54 of the Indian Electricity Rules, 1956 in case of high voltage, the permissible variation of declared voltage at the point of commencement of supply is not to vary by more than 6 percent on the higher side or by more than 9 percent on the lower side, 4 Measures taken for achieving longitudinal water tightness shall be as agreed between the purchaser and the supplier. 1.2 These cables are suitable for use where sum of ambient temperature and temperature rise due to load results in conductor temperature not exceeding 90°C under normal operation and 250°C under short-circuit conditions. 1.3 Armoured cables up to 1 1 kV grade specified in this standard are suitable for use in mines also. However, for such cables, additional requirements have been included, wherever necessary (4.1.1, 17.5 and 21.2.1). 1.4 This standard also covers cables with improved fire performance categories CI and C2 as given in Annex A. For such cables additional requirements have been included, wherever necessary.",
+  "clause_1_scope": "1.1 This standard (Part 2) covers the requirements of following categories of crosslinked polyethylene insulated and PVC sheathed or polyethylene sheathed cables for single phase or three phase (earthed or unearthed) systems for electricity supply purposes: a) Types of Cables 1) Single-core unscreened, unarmoured (but non-magnetic metallic tape covered); 2) Single-core screened, unarmoured; 3) Single-core armoured (non-magnetic) screened or unscreened; and 4) Three-core armoured, screened or unscreened. b) Voltage Grade (UJU) 1) Earthed systems: 1 .9/3.3 kV, 3.8/6.6 kV, 6.35/11 kV, 12.7/22 kV and 19/33 kV. 2) Unearthed system: 3.3/3.3kV and 1 1/1 IkV. NOTES 1 Cables of 6.35/1 IkV grade (earthed systems) are suitable for use on 6.6/6.6 kV and (unearthed system) also.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 7098",
       "standard_id": "IS 7098",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7098)",
+      "title": "Indian Standard Specification / Test Method (IS 7098)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 50",
+      "standard_id": "IS/IEC 50",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 50)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -37,7 +47,7 @@
       "title": "Conductors for Insulated Electric Cables and Flexible Cords",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -47,7 +57,7 @@
       "title": "Mild steel wires, formed wires and tapes for armouring of cables",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,14 +67,14 @@
       "title": "PVC insulation and sheath of electric cables",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 10462",
       "standard_id": "IS 10462",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10462)",
+      "title": "Indian Standard Specification / Test Method (IS 10462)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -82,19 +92,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 10810",
       "standard_id": "IS 10810",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10810)",
+      "title": "Indian Standard Specification / Test Method (IS 10810)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -137,7 +137,7 @@
       "title": "Drums for electric cables",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -150,16 +150,6 @@
       "relation_type": "SAMPLING_STANDARD",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "IS 1885",
-      "standard_id": "IS 1885",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1885)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -168,16 +158,31 @@
     "Acceptance Tests",
     "Optional Tests",
     "Earthed System",
-    "Unearthed Systems"
+    "Unearthed Systems",
+    "Grade ification",
+    "Grade Cable",
+    "10 K",
+    "Crosslinked Polyethylene Insulated Thermoplastics Sheathed Cables",
+    "Part 2: for Working Voltages from 3.3 kV up to and Including 33 kV"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "rated voltages from 1 kV",
+      "rated voltages from 6 kV",
+      "Rated voltage, 3.8/6.6 6.35/11 11/11 12.7/22 19/33 kV",
+      "Flammability test",
+      "Flammability Test"
+    ],
     "dimensional_tolerances": [],
     "marking_requirements": [
       "22.1 The cable shall be wound on a drum either wooden",
-      "{see IS 10418) or steel and packed. The ends of the cable"
+      "shall be sealed by of non-hygroscopic sealing material.",
+      "22.2 The cable shall carry the following information",
+      "either stenciled on the drum or contained in a label",
+      "b) Manufacturer's name or trade-mark;"
     ]
   },
-  "total_chars_parsed": 50700
+  "total_chars_parsed": 50463
 }

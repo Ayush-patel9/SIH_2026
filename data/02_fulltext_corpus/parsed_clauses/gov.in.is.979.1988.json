@@ -12,12 +12,12 @@
   "clause_1_scope": "1.1 This standard prescribes a method for the determination of colour fastness of textile fabrics, yarns or threads of all kinds to the action of concentrated solutions of sodium hydroxide used in mercerizing. 1.2 The method is mainly applicable to cotton and mixtures containing cotton.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
+      "is_number": "IS/ISO 105",
+      "standard_id": "IS/ISO 105",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 105)",
+      "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -34,7 +34,7 @@
     {
       "is_number": "IS 768",
       "standard_id": "IS 768",
-      "title": "Indian Standard Code of Practice / Test Method (IS 768)",
+      "title": "Indian Standard Specification / Test Method (IS 768)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -44,7 +44,7 @@
     {
       "is_number": "IS 769",
       "standard_id": "IS 769",
-      "title": "Indian Standard Code of Practice / Test Method (IS 769)",
+      "title": "Indian Standard Specification / Test Method (IS 769)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -53,16 +53,19 @@
     }
   ],
   "clause_3_terminology": [
-    "Method for determination of colour fastness of textile materials to mercerizing"
+    "Method for determination of colour fastness of textile materials to mercerizing",
+    "IS 979 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "should be marked with an asterisk ( * ).",
+      "results shall not be marked with an asterisk."
     ]
   },
-  "total_chars_parsed": 8192
+  "total_chars_parsed": 8176
 }

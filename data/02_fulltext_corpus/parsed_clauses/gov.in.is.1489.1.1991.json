@@ -14,7 +14,7 @@
     {
       "is_number": "IS 1489",
       "standard_id": "IS 1489",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1489)",
+      "title": "Indian Standard Specification / Test Method (IS 1489)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -22,19 +22,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 4031",
       "standard_id": "IS 4031",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4031)",
+      "title": "Indian Standard Specification / Test Method (IS 4031)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -77,7 +67,7 @@
       "title": "Leaded brass strips for instrument parts",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,7 +77,7 @@
       "title": "Bicycle Spokes (Plain) and Nipples for Spokes - Specifiation",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -106,16 +96,6 @@
       "standard_id": "IS 12423:1988",
       "title": "Method for colorimetric analysis of hydraulic cement",
       "division_code": "CED",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 3812",
-      "standard_id": "IS 3812",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3812)",
-      "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
@@ -140,11 +120,11 @@
       "chloride content in cement shall not exceed 0. 1 percent",
       "chloride content shall not exceed 0.05 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "bearing the manufacturer's name or his registered trade-mark, if any."
     ]
   },
-  "total_chars_parsed": 35633
+  "total_chars_parsed": 37516
 }

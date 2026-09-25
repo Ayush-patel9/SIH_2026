@@ -1,0 +1,84 @@
+[
+  {
+    "scheme_id": "SCHEME_I",
+    "scheme_name": "Scheme-I (ISI Mark - Product Certification Scheme)",
+    "governing_rules": "BIS (Conformity Assessment) Regulations, 2018 - Scheme I",
+    "certification_mark": "Standard Mark (ISI Mark)",
+    "grant_type": "Factory Inspection + Third-party Laboratory Testing + Regular Surveillance",
+    "applicable_sectors": [
+      "Steel & Iron Products",
+      "Cement",
+      "Electrical Cables & Wires",
+      "LPG Cylinders",
+      "Automotive Tyres",
+      "PVC Pipes",
+      "Footwear",
+      "Chemicals",
+      "Toys"
+    ],
+    "mandatory_under_qco": true,
+    "description": "The manufacturer is granted a licence to use the ISI mark after verification of manufacturing infrastructure, quality control system, testing personnel, and testing of sample in independent BIS/NABL labs."
+  },
+  {
+    "scheme_id": "SCHEME_II",
+    "scheme_name": "Scheme-II (CRS - Compulsory Registration Scheme)",
+    "governing_rules": "BIS (Conformity Assessment) Regulations, 2018 - Scheme II (Electronics & IT Goods Order)",
+    "certification_mark": "Standard Mark (BIS CRS Registration Logo with R-number)",
+    "grant_type": "Self-Declaration of Conformity (SDoC) based on BIS-recognized lab test reports",
+    "applicable_sectors": [
+      "Laptops & Tablets",
+      "Mobile Phones",
+      "LED Luminaires",
+      "Power Adapters & Inverters",
+      "Smart Watches",
+      "Secondary Lithium Batteries",
+      "CCTV Cameras"
+    ],
+    "mandatory_under_qco": true,
+    "description": "Manufacturers submit test reports from BIS-recognized labs to obtain a unique Registration Number (R-XXXXXXXX) displayed with the CRS mark on the product."
+  },
+  {
+    "scheme_id": "SCHEME_III",
+    "scheme_name": "Scheme-III (Certificate of Conformity - CoC)",
+    "governing_rules": "BIS (Conformity Assessment) Regulations, 2018 - Scheme III",
+    "certification_mark": "Certificate of Conformity",
+    "grant_type": "Batch testing or prototype evaluation for specialized lots",
+    "applicable_sectors": [
+      "Precision Engineering",
+      "Special Purpose Equipment",
+      "Custom Imports"
+    ],
+    "mandatory_under_qco": false,
+    "description": "Conformity assessment issued for specific production batches or specialized prototype lots."
+  },
+  {
+    "scheme_id": "SCHEME_IV",
+    "scheme_name": "Scheme-IV (Hallmarking of Precious Metal Articles)",
+    "governing_rules": "BIS (Hallmarking) Regulations, 2018",
+    "certification_mark": "BIS Hallmark + 6-digit HUID (Hallmark Unique Identification)",
+    "grant_type": "Assaying & Hallmarking Centre (AHC) XRF & Fire Assay Testing",
+    "applicable_sectors": [
+      "Gold Jewellery and Artefacts (IS 1417)",
+      "Silver Artefacts (IS 2112)"
+    ],
+    "mandatory_under_qco": true,
+    "description": "Mandatory 6-digit alphanumeric HUID engraved by certified Assaying & Hallmarking Centres verifying exact fineness (e.g. 24K/999, 22K/916, 18K/750, 14K/585)."
+  },
+  {
+    "scheme_id": "SCHEME_X",
+    "scheme_name": "Scheme-X (Eco Mark Scheme)",
+    "governing_rules": "BIS Eco Mark Scheme Rules",
+    "certification_mark": "BIS ECO Logo (Earthen Pot)",
+    "grant_type": "Environmental criteria assessment + ISI Mark compliance",
+    "applicable_sectors": [
+      "Paints",
+      "Paper",
+      "Plastics",
+      "Cosmetics",
+      "Detergents",
+      "Batteries"
+    ],
+    "mandatory_under_qco": false,
+    "description": "Labelling of environment-friendly products meeting stringent toxicity, biodegradability, and recyclable packaging requirements."
+  }
+]

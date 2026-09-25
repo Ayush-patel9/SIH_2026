@@ -9,15 +9,55 @@
     "is_mandatory": true,
     "qco_order": "Ductile Iron Pipes (Quality Control) Order"
   },
-  "clause_1_scope": "1.1 This standard specifies the requirements and associated test methods applicable to ductile iron pipes manufactured in metal (lined or unlined) or sand moulds and their joints for the construction of pipe lines: — to convey water, sewage or gas — to be installed below or above ground — operated with or without pressure NOTES 1 By sand it is to be understood, sand or mineral based materials used in foundry trade irrespective of the type of bonding agents. 2 All pressures are relative pressures expressed in MPa (IMPa =10 bar). 1.2 This standard also specifies requirements for materials, dimensions and tolerances, mechanical properties and standard coatings and linings of ductile iron pipes. 1.2,1 This standard does not restrict the use of other types of joints or future developments of other joints as long as overall dimensions are maintained for reasons of safety and interchangeability. 1.3 The standard applies to pipes, which are: manufactured with socketted, flanged or spigot ends for jointing by means of various types of gaskets, which are not with in the scope of this standard* and normally to be delivered externally and internally lined and are suitable for fluid temperatures between 0°C and 50°C, excluding frost. 1.4 This standard does not include the provisions for fittings used with the pipes conforming to this standard. A separate standard IS 9523 covers the specification on such fittings. 1.5 Fittings conforming to IS 13382 may also be used with ductile iron pipes, when the pressure requirements matches.",
+  "clause_1_scope": "1.1 This standard specifies the requirements and associated test methods applicable to ductile iron pipes manufactured in metal (lined or unlined) or sand moulds and their joints for the construction of pipe lines: — to convey water, sewage or gas — to be installed below or above ground — operated with or without pressure NOTES 1 By sand it is to be understood, sand or mineral based materials used in foundry trade irrespective of the type of bonding agents.",
   "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 2531",
+      "standard_id": "IS/ISO 2531",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2531)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7186",
+      "standard_id": "IS/ISO 7186",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7186)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4179",
+      "standard_id": "IS/ISO 4179",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4179)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8179",
+      "standard_id": "IS/ISO 8179",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8179)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
     {
       "is_number": "IS 9523",
       "standard_id": "IS 9523:2000",
       "title": "Ductile Iron Fittings for Pressure Pipes for Water, Gas and Sewage",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Ductile Iron Pipes (Quality Control) Order"
     },
@@ -27,7 +67,7 @@
       "title": "Cast Iron Specials for Mechanical and Push-on Flexible Joints for Pressure Pipes for Water, Gas and Sewage — Specification ( Second Revision )",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,7 +77,7 @@
       "title": "General requirments for the supply of metallurgical materials",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -47,7 +87,7 @@
       "title": "Rubber Sealing Rings for Gas Mains, Water Mains and Sewers",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,17 +97,7 @@
       "title": "Sheet Rubber Jointing and Rubber Insertion Jointing",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,17 +117,7 @@
       "title": "Method for Brinell Hardness Test for Metallic Materials",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 8",
-      "standard_id": "IS 8:1994",
-      "title": "High Heat Duty Fireclay Refractories",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -145,11 +165,12 @@
   "clause_3_terminology": [
     "Ductile Iron",
     "Pipe",
-    "Grade Kl",
-    "Grade of",
-    "Grade bruary",
-    "Grade for",
     "Grade male",
+    "Grade A7",
+    "Grade reference",
+    "Grade K9",
+    "Grade ATI",
+    "Grade bruary",
     "Centrifugally Cast",
     "Spun",
     "Ductile Iron Pressure Pipes for Water",
@@ -157,13 +178,27 @@
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
-      "proof stress > 270 MPa"
+      "proof stress > 270 MPa",
+      "density shall be between 910 and 930 kg/m3",
+      "maximum hardness 250"
     ],
     "chemical_properties": [],
-    "dimensional_tolerances": [],
+    "electrical_and_safety_parameters": [
+      "dielectric strength of the film should be 3 1 .5 V"
+    ],
+    "dimensional_tolerances": [
+      "wall thickness. M",
+      "tolerance is + 1 mm",
+      "Wall thickness (e) up to 6 mm",
+      "Wall thickness (e) above 6 mm"
+    ],
     "marking_requirements": [
-      "18.1 Each pipe shall have as cast or stamped or legibly"
+      "18.1 Each pipe shall have as cast or stamped or legibly",
+      "appropriate marks:",
+      "above, to indicate the major axis of the",
+      "18.1.1 Marking may be Done",
+      "18.2 BIS Certification Marking"
     ]
   },
-  "total_chars_parsed": 72475
+  "total_chars_parsed": 72237
 }

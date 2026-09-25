@@ -14,9 +14,19 @@
     {
       "is_number": "IS 228",
       "standard_id": "IS 228",
-      "title": "Indian Standard Code of Practice / Test Method (IS 228)",
+      "title": "Indian Standard Specification / Test Method (IS 228)",
       "division_code": "GEN",
       "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8490",
+      "standard_id": "IS/ISO 8490",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8490)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
@@ -37,14 +47,14 @@
       "title": "General requirments for the supply of metallurgical materials",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 1762",
       "standard_id": "IS 1762",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1762)",
+      "title": "Indian Standard Specification / Test Method (IS 1762)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -67,7 +77,7 @@
       "title": "Method for Brinell Hardness Test for Metallic Materials",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,7 +87,7 @@
       "title": "Method For Vickers Hardness Test for Metallic Materials (IS 1501 (PART 1))",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,7 +97,7 @@
       "title": "Method for Rockwell Hardness Test for Metallic Material (Scales A-B-C-D-E-F-G-H-K 15N, 30N, 45N, 15T, 30T and 45T)",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -104,28 +114,8 @@
     {
       "is_number": "IS 10175",
       "standard_id": "IS 10175",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10175)",
+      "title": "Indian Standard Specification / Test Method (IS 10175)",
       "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1956",
-      "standard_id": "IS 1956",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1956)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1501",
-      "standard_id": "IS 1501:2002",
-      "title": "Method For Vickers Hardness Test for Metallic Materials",
-      "division_code": "MTD",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
@@ -133,18 +123,23 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade Designation",
     "Grade rritic",
-    "Grade 0",
-    "Stainless Steel Sheets and Strips for Utensils Specification"
+    "Stainless Steel Sheets and Strips for Utensils Specification",
+    "IS 5522 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "13.1 Every package of sheets, strips and coils shall be"
+      "13.1 Every package of sheets, strips and coils shall be",
+      "legibly marked with paint showing the name or trademark of the manufacturer, mass, thickness, size, grade",
+      "and the cast number or identification marks, by which",
+      "13.2 The material may also be marked with the",
+      "Standard Mark. Details available with"
     ]
   },
-  "total_chars_parsed": 16518
+  "total_chars_parsed": 16404
 }

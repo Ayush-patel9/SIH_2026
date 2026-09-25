@@ -9,18 +9,8 @@
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "Page 5 6 SECTION 1 GENERAL GUIDELINES",
+  "clause_1_scope": "Amendment to IS 3043 (Code of Practice for Earthing ( Second Revision )): Amendment No. 1 ) UDC 621316.99 : 006.76 © Copyright 1988 Price Rs 650.00 September 1988 AMENDMENT NO. 1 JANUARY 2006 TO CODE OF PRACTICE FOR EARTfflNG (First Revision) (Page 19, clause 9.2.1) — Substitute the following for the existing formula: ' A FT\" R m —7- ▼ — s— ohms ■4-iT (ET 20) AMENDMENT NO. 2 JANUARY 2010 TO CODE OF PRACTICE FOR EARTHING (First Revision) {Page 17, clause 8.6) — Add the following new sub-clause after 8.6: 8.6.1 Corrosion Allowance — On an average, steel corrodes about six times as fast as copper when placed in soil. The extent of corrosion depends upon the properties ",
   "clause_2_normative_references": [
-    {
-      "is_number": "IS 7",
-      "standard_id": "IS 7",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
     {
       "is_number": "IS 732",
       "standard_id": "IS 732:2019",
@@ -32,29 +22,19 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 9409",
       "standard_id": "IS 9409:1980",
       "title": "Classification of electrical and electronic equipment with regard to protection against electric shock",
       "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "SAFETY_REQUIREMENT",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 1885",
       "standard_id": "IS 1885",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1885)",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -67,7 +47,7 @@
       "title": "Guide for Uniform System of Marking and Identification of Conductors and Apparatus Terminals",
       "division_code": "LITD",
       "aspect": "System Standard",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,24 +57,14 @@
       "title": "Primary Lead - Specification",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 8437",
       "standard_id": "IS 8437",
-      "title": "Indian Standard Code of Practice / Test Method (IS 8437)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 16",
-      "standard_id": "IS 16",
-      "title": "Indian Standard Code of Practice / Test Method (IS 16)",
+      "title": "Indian Standard Specification / Test Method (IS 8437)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -107,37 +77,17 @@
       "title": "Potassium metabisulphite, photographic grade",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
+      "is_number": "SP 30",
+      "standard_id": "SP 30:2023",
+      "title": "SP 30 : 2023: National Electrical Code Of India 2023 This standard is available as a pre-printed copy for purchase. However, if you still wish to download the soft copy of the Standard you may proceed with that. Print price :8330.00 INR (in India) (For Printed copies please contact BSBEdge.)",
+      "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 3",
-      "standard_id": "IS 3",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 20",
-      "standard_id": "IS 20",
-      "title": "Indian Standard Code of Practice / Test Method (IS 20)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -147,7 +97,7 @@
       "title": "Lead and Scarlet Chromes",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -157,7 +107,7 @@
       "title": "Guide for the control of undesirable static electricity",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -174,7 +124,7 @@
     {
       "is_number": "IS 5728",
       "standard_id": "IS 5728",
-      "title": "Indian Standard Code of Practice / Test Method (IS 5728)",
+      "title": "Indian Standard Specification / Test Method (IS 5728)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -184,29 +134,24 @@
     {
       "is_number": "IS 10422",
       "standard_id": "IS 10422",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10422)",
+      "title": "Indian Standard Specification / Test Method (IS 10422)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "SP 30",
-      "standard_id": "SP 30:2023",
-      "title": "SP 30 : 2023: National Electrical Code Of India 2023 This standard is available as a pre-printed copy for purchase. However, if you still wish to download the soft copy of the Standard you may proceed with that. Print price :8330.00 INR (in India) (For Printed copies please contact BSBEdge.)",
-      "division_code": "ETD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade deration",
-    "Grade I",
+    "Grade ification",
+    "Grade III",
     "Grade II",
+    "Grade 25",
+    "Grade deration",
     "Grade of",
+    "17 k",
+    "19 k",
+    "50 k",
     "Code of Practice for Earthing",
     "Second Revision"
   ],
@@ -217,11 +162,12 @@
       "moisture content of soils ranges from 10 percent",
       "MOISTURE IN SOIL.PERCENT"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 327346
+  "total_chars_parsed": 327291
 }

@@ -14,17 +14,7 @@
     {
       "is_number": "IS 7288",
       "standard_id": "IS 7288",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7288)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 7",
-      "standard_id": "IS 7",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7)",
+      "title": "Indian Standard Specification / Test Method (IS 7288)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -34,7 +24,7 @@
     {
       "is_number": "IS 7961",
       "standard_id": "IS 7961",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7961)",
+      "title": "Indian Standard Specification / Test Method (IS 7961)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -47,7 +37,7 @@
       "title": "List of Colourants for Use in Plastics in Contact with Foodstuffs and Pharmaceuticals ( Second Revision )",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,7 +57,7 @@
       "title": "Positive List of Constituents of Polyethylene in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
       "division_code": "FAD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,7 +67,7 @@
       "title": "Polystyrene (Crystal and High Impact) for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water Specification",
       "division_code": "FAD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,7 +77,7 @@
       "title": "Positive List of Constituents of Polyvinyl Chloride (PVC) and Its Copolymers in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
       "division_code": "FAD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -97,7 +87,7 @@
       "title": "Positive list of constituent of styrene polymers in contact with foodstuffs, pharmaceuticals and drinking water",
       "division_code": "FAD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -107,7 +97,7 @@
       "title": "Polyvinyl Chloride (PVC) and its Copolymers for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water — Specification ( First Revision )",
       "division_code": "FAD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Polyvinyl Chloride (PVC) Homopolymers (Quality Control) Order, 2024"
     },
@@ -117,37 +107,7 @@
       "title": "Guide on Suitability of Plastics for Food Packaging",
       "division_code": "FAD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 10",
-      "standard_id": "IS 10",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -170,10 +130,15 @@
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "4.1 Packing — The material shall be suitably packed with suitable liner"
+      "4.1 Packing — The material shall be suitably packed with suitable liner",
+      "4.2 Marking — Each package shall be clearly marked with the name",
+      "material, name of the manufacturer and his trade-mark, if any.",
+      "4.2.1 The package may also be marked with the Standard Mark.",
+      "4.2.2 The use of the Standard Mark is governed by the provisions of the"
     ]
   },
-  "total_chars_parsed": 23221
+  "total_chars_parsed": 22980
 }

@@ -9,47 +9,160 @@
     "is_mandatory": false,
     "qco_order": null
   },
-  "clause_1_scope": "This International Standard specifies the method for tensile testing of metallic materials and defines the mechanical properties which can be determined at ambient temperature.",
+  "clause_1_scope": "This Indian Standard (IS 1608) covers Mechanical testing of metals - Tensile Testing. This Indian Standard ( Third Revision ) which is identical with ISO 6892 : 1998 'Metallic materials — Tensile testing at ambient temperature' issued by the International Organization for Standardization ( ISO ) was adopted by the Testing of Metals Sectional Committee and approval of the Metallurgical Engineering Division Council. This Indian Standard was originally published in 1960 and subsequently revised in 1972 and 1995. This revision of the standard has been taken up to align it with ISO 6892 : 1998 by adoption under dual numbering system. The text of the ISO Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain terminology and conventions are, however, not identical to those used in Indian Standard. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear, referring to this standard, they should be as read as 'Indian Standard'. b) Comma ( , ) has been used as a decimal marker while i",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "is_number": "IS 1608 (PART 1)",
+      "standard_id": "IS 1608 (PART 1)",
+      "title": "Mechanical testing of metals - Tensile Testing (IS 1608 (PART 1))",
+      "division_code": "MED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     },
     {
-      "is_number": "IS 5",
-      "standard_id": "IS 5:2007",
-      "title": "Colors for Ready Mixed Paints and Enamels",
-      "division_code": "LITD",
+      "is_number": "IS/ISO 286",
+      "standard_id": "IS/ISO 286",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 286)",
+      "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 377",
+      "standard_id": "IS/ISO 377",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 377)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2566",
+      "standard_id": "IS/ISO 2566",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2566)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7500",
+      "standard_id": "IS/ISO 7500",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7500)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 919",
+      "standard_id": "IS 919",
+      "title": "Indian Standard Specification / Test Method (IS 919)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3803",
+      "standard_id": "IS 3803",
+      "title": "Indian Standard Specification / Test Method (IS 3803)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1828",
+      "standard_id": "IS 1828",
+      "title": "Indian Standard Specification / Test Method (IS 1828)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 951",
+      "standard_id": "IS/ISO 951",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 951)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9513",
+      "standard_id": "IS/ISO 9513",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9513)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5725",
+      "standard_id": "IS/ISO 5725",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5725)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 60",
+      "standard_id": "IS 60",
+      "title": "Indian Standard Specification / Test Method (IS 60)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade s",
+    "Grade rritic",
+    "Grade 510C",
     "Grade of",
+    "Grade 430",
+    "5 K",
     "Mechanical testing of metals",
     "Tensile Testing"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
+      "elongation of a gauge length (/, ) of 11,3 J",
       "elongation of a gauge length (L ) of 80 mm",
       "Elongation after fracture (L u - L ) shall be determined to the nearest 0,25 mm",
-      "elongation is less than 5 %"
+      "elongation is less than 5 %",
+      "elongation after fracture is equal to or greater than the specified value. N"
     ],
     "chemical_properties": [],
-    "dimensional_tolerances": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "Tolerances IT 9 (see ISO 286-2). M",
+      "nominal width of 12,5 mm",
+      "nominal diameter of 10 mm",
+      "wall thickness less than 3 mm",
+      "wall thickness of more than 0,5 mm",
+      "tolerance of ± 3,4 %"
+    ],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 72780
+  "total_chars_parsed": 72686
 }

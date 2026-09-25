@@ -17,7 +17,17 @@
       "title": "wooden beds, Part 1: For use with mattresses",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 19833",
+      "standard_id": "IS/ISO 19833",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 19833)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,7 +47,7 @@
       "title": "Performance Requirements of Surface Finishes for Furniture Applications",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -50,16 +60,6 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "IS 7259",
-      "standard_id": "IS 7259",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7259)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -68,15 +68,21 @@
     "Durability Tests",
     "Surface Finish Tests",
     "Stability Tests",
-    "Strength Tests"
+    "Strength Tests",
+    "Beds"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "10.1 Each bed shall be indelibly and legibly marked"
+      "10.1 Each bed shall be indelibly and legibly marked",
+      "recognized trade mark, if any;",
+      "e) Batch number.",
+      "shall have the instruction for assembly provided as a",
+      "10.3 BIS Certification Marking"
     ]
   },
-  "total_chars_parsed": 39695
+  "total_chars_parsed": 39540
 }

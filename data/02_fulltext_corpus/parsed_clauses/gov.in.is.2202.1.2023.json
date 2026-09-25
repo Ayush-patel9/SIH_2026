@@ -37,7 +37,7 @@
       "title": "Timber Door, Window and Ventilator Frames -",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,7 +67,7 @@
       "title": "Marine Plywood -Specification",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
     },
@@ -77,7 +77,7 @@
       "title": "Plywood for General Purposes -",
       "division_code": "PGD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
     },
@@ -87,7 +87,7 @@
       "title": "Veneered Decorative Plywood -Specification",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -97,7 +97,7 @@
       "title": "Specification for Synthetic Resin Adhesives for Plywood (Phenolic And Aminoplastic) -",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -117,7 +117,7 @@
       "title": "Laminated veneer lumber - Specification",
       "division_code": "TED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -127,7 +127,7 @@
       "title": "Veneer Laminated Lumber - Specification",
       "division_code": "TED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -137,7 +137,7 @@
       "title": "Medium density fibre boards for general purpose - Specification",
       "division_code": "MED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -147,7 +147,7 @@
       "title": "Mortise locks and latches (Mechanically Operated) - Specification (first revision)",
       "division_code": "MED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -312,21 +312,11 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 2202",
-      "standard_id": "IS 2202",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2202)",
+      "is_number": "IS/ISO 1804",
+      "standard_id": "IS/ISO 1804",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1804)",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1708",
-      "standard_id": "IS 1708:1986",
-      "title": "to 18: Methods of testing of small clear specimens of timber",
-      "division_code": "CED",
-      "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
@@ -337,16 +327,6 @@
       "title": "to 21: Methods of Test for Wood Particle Boards and Boards from Other Lignocellulosic Materials",
       "division_code": "LITD",
       "aspect": "Methods of tests",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2338",
-      "standard_id": "IS 2338",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2338)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
@@ -365,11 +345,12 @@
   "clause_3_terminology": [
     "Type Tests",
     "Acceptance Tests",
-    "Grade and",
-    "Grade Abbreviation",
+    "Grade 5C",
+    "Grade ification",
     "Grade Tests",
+    "Grade 5B",
     "Grade bruary",
-    "Grade 1",
+    "Grade of",
     "Part 1 : 2023: Wooden Flush Door Shutters",
     "Solid Core Type",
     "Part 1 Plywood Face Panels"
@@ -377,10 +358,15 @@
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "14.1 Each shutter shall be legibly and indelibly marked"
+      "14.1 Each shutter shall be legibly and indelibly marked",
+      "Name of the manufacturer or trade-mark, if anv;",
+      "Grade of door shutter;",
+      "Species of timber, in case of ECO Mark; and",
+      "The criteria for which the shutter has been labelled"
     ]
   },
-  "total_chars_parsed": 48516
+  "total_chars_parsed": 48359
 }

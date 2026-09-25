@@ -14,7 +14,7 @@
     {
       "is_number": "IS 1021",
       "standard_id": "IS 1021",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1021)",
+      "title": "Indian Standard Specification / Test Method (IS 1021)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -27,7 +27,7 @@
       "title": "Pictorial marking for handling and labelling of goods, Part 1: Dangerous goods",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,34 +37,14 @@
       "title": "Lead and Scarlet Chromes",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 10",
-      "standard_id": "IS 10",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 99",
       "standard_id": "IS 99",
-      "title": "Indian Standard Code of Practice / Test Method (IS 99)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1260",
-      "standard_id": "IS 1260",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1260)",
+      "title": "Indian Standard Specification / Test Method (IS 99)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -74,9 +54,11 @@
   ],
   "clause_3_terminology": [
     "Grade Chlorides",
-    "Grade Pipette",
     "Grade rric",
+    "Grade Pipette",
     "Grade Weigh",
+    "Grade So",
+    "Grade rrous",
     "Caustic Soda"
   ],
   "clause_4_requirements": {
@@ -86,8 +68,15 @@
       "Chloride Solution — 10 percent",
       "sulphuric acid, add dilute potassium permanganate solution dropwise ( 0.2 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
-    "marking_requirements": []
+    "marking_requirements": [
+      "The material shall be packed in polyethylene",
+      "and the supplier. The solution shall be supplied",
+      "Each container shall be securely closed and",
+      "shall bear legibly and indelibly the following",
+      "a) Name and grade of the material;"
+    ]
   },
-  "total_chars_parsed": 43899
+  "total_chars_parsed": 43829
 }

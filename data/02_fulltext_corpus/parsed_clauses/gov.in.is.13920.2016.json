@@ -42,32 +42,12 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 0",
-      "standard_id": "IS 0",
-      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 16172",
       "standard_id": "IS 16172:2023",
       "title": "Reinforcement Couplers For Mechanical Splices Of Steel Bars In Concrete - Specification",
       "division_code": "CED",
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 8",
-      "standard_id": "IS 8:1994",
-      "title": "High Heat Duty Fireclay Refractories",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -80,16 +60,6 @@
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "IS 1893",
-      "standard_id": "IS 1893:1984",
-      "title": "Criteria for earthquake resistant design of structures",
-      "division_code": "GEN",
-      "aspect": "Code of Practice",
-      "relation_type": "INSTALLATION_CODE",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -100,21 +70,23 @@
     "Transverse Reinforcement",
     "Gravity Columns in Buildings",
     "Lateral Force Resisting System",
-    "Moment",
+    "Moment-Resisting Frame",
     "Link",
-    "Shear Wall (also Called Structural Wall)",
-    "Special Shear Wall"
+    "Shear Wall (also Called Structural Wall",
+    "Special Shear Wall",
+    "Grade 550"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
       "proof stress of 415 MPa"
     ],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 77865
+  "total_chars_parsed": 77724
 }

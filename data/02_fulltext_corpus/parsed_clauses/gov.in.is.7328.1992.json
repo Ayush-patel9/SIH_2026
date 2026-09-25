@@ -12,16 +12,6 @@
   "clause_1_scope": "1.1 This standard prescribes the requirements and the methods of sampling and test for high density polyethylene (HDPE) materials for moulding and extrusion. It applies to materials ready for normal use in the form of powder, granules, and to materials unmodified by colourants, additives, films, etc. 1.2 This standard docs not cover masterbatches.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 4",
-      "standard_id": "IS 4:1963",
-      "title": "Guide for Layout of Learned Periodicals",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 732",
       "standard_id": "IS 732:2019",
       "title": "Code of Practice for Electrical Wiring Installations ( Fourth Revision )",
@@ -30,32 +20,28 @@
       "relation_type": "INSTALLATION_CODE",
       "is_mandatory": false,
       "qco_order": null
-    },
-    {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade F",
-    "Grade Tests",
-    "Grade L",
+    "Grade ification",
     "Grade EW",
-    "Grade Y",
+    "Grade test",
+    "Grade Tests",
     "Specification for Polyethylene Material for Moulding and Extrusion",
     "Third Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
-    "marking_requirements": []
+    "marking_requirements": [
+      "The material shall be delivered in suitable form of",
+      "Each container and package shall be clearly marked",
+      "d) Batch number;",
+      "g) Trade-mark, if any.",
+      "7.2.1 The containers and packages may also be"
+    ]
   },
-  "total_chars_parsed": 35807
+  "total_chars_parsed": 35559
 }

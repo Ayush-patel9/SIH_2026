@@ -9,7 +9,7 @@
     "is_mandatory": true,
     "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
   },
-  "clause_1_scope": "This Indian Standard (IS 1659) covers Block Boards -Specification. This Indian Standard (Fourth Revision) was adopted by the , after the draft finalized by the Wood and Other Lignocellulosic Products Sectional Committee had been approved by the Civil Engineering Division Council. Block boards are being used in increasing quantities in the construction of railway carriages, bus bodies, marine and river crafts and for furniture making, partitions, panelling, prefabricated houses, etc. This standard was originally formulated in I960 and subsequently revised in 1969, 1979 andl990 to lay down the method of manufacture, tests for such boards and review of species of timber with a view to assuring the optimum performance requirements for different uses. The fourth revision is based on the experience gained in the manufacture and use of block boards over the years and the modifications mainly relate to incorporation of amendments in earlier version, specifying mycological test for MR Grade Boards only and adding spot test for checking preservative treatment; ",
+  "clause_1_scope": "This standard covers the essential requirements of commercial and decorative block boards meant both for interior and exterior uses.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 707",
@@ -27,7 +27,7 @@
       "title": "Specification for Synthetic Resin Adhesives for Plywood (Phenolic And Aminoplastic) -",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,7 +57,7 @@
       "title": "Plywood for General Purposes -",
       "division_code": "PGD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
     },
@@ -67,7 +67,7 @@
       "title": "Veneered Decorative Plywood -Specification",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -84,19 +84,26 @@
   ],
   "clause_3_terminology": [
     "Block Boards",
-    "Grade of",
-    "Grade and",
+    "Grade Grade",
     "Grade Symbol",
+    "Grade Boards",
     "Grade bruary",
-    "Grade Boards"
+    "Grade boards",
+    "Grade block",
+    "Grade deration"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each block board shall be legibly and indelibly marked"
+      "Each block board shall be legibly and indelibly marked",
+      "b) Grade and type of block board;",
+      "d) Batch number and year of manufacture; and",
+      "been labelled as ECO-Mark,",
+      "11.1 BIS Certification Marking"
     ]
   },
-  "total_chars_parsed": 47271
+  "total_chars_parsed": 47058
 }

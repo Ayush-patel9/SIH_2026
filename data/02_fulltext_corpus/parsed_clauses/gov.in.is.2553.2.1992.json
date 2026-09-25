@@ -14,7 +14,7 @@
     {
       "is_number": "IS 2553",
       "standard_id": "IS 2553",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2553)",
+      "title": "Indian Standard Specification / Test Method (IS 2553)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -22,9 +22,39 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 2553(PART2)",
-      "standard_id": "IS 2553(PART2)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2553(PART2))",
+      "is_number": "IS/ISO 3536",
+      "standard_id": "IS/ISO 3536",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3536)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3537",
+      "standard_id": "IS/ISO 3537",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3537)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3538",
+      "standard_id": "IS/ISO 3538",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3538)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3917",
+      "standard_id": "IS/ISO 3917",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3917)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -39,13 +69,27 @@
     "Central Area and Outer Area",
     "Secondary Image",
     "Dimensions and Shape of Safety Glass",
-    "Body Defects of Safety Glass"
+    "Body Defects of Safety Glass",
+    "Grade Nominal",
+    "Part 2 : 2019: Safety Glass",
+    "Specification Part 2 For Road Transport",
+    "First Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
-    "dimensional_tolerances": [],
-    "marking_requirements": []
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance as for the 1 200 mm",
+      "tolerance 6 mm"
+    ],
+    "marking_requirements": [
+      "Safety glass shall be packed as agreed",
+      "6.2.1 Each piece of safety glass shall be marked",
+      "windscreen, it shall be marked with 'LW and",
+      "for other than windscreen, it shall be marked",
+      "glass used for windscreen, it shall be marked"
+    ]
   },
-  "total_chars_parsed": 58468
+  "total_chars_parsed": 58369
 }

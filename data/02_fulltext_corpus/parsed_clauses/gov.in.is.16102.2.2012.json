@@ -9,7 +9,7 @@
     "is_mandatory": true,
     "qco_order": "LED Lighting (CRS) Order"
   },
-  "clause_1_scope": "This standard (Part 2) specifies the performance requirements for self-ballasted LED lamps with a d.c. supplies up to 250 V or a.c. supplies up to 1 000 V at 50 Hz, together with the test methods and conditions, required to show comphance with this standard, intended for domestic and similar general lighting purposes, having, a) a rated wattage up to 60 W; b) a rated d.c. supplies up to 250 V or a.c. supplies up to 1 000 V at 50 Hz; and c) a lamp cap according to IS 16102 (Part 1) : 2012 'Self-ballasted LED lamps for general lighting services: Part 1 Safety requirements'. This standard does not cover self-ballasted LED-lamps that intentionally produce tinted or coloured light neither does it cover OLEDs. When applied for replacement purposes, the only dimensional feature provided by the standard is information on maximum lamp outlines. Recommendations for batch testing are under consideration. These performance requirements are additional to the requirements given in IS 16102 (Part 1). NOTES 1 When operated in a luminaire the claimed performance data can deviate from the values established in this standard. 2 Higher wattage lamp is under consideration. It may be expected that self-ballasted LED lamps, which comply with this standard will start and operate satisfactorily at voltages between 90 percent and 110 percent of rated supply voltage and at an ambient air temperature of between -10°C and 50°C and in a luminaire complying with IS 10322 (Part 1) : 2012 'General requirements and tests for luminaires'. NOTE — When the lamps are used in the luminaire, the ambient temperature inside the luminaire is expected to be higher than the room ambient temperature. The procedure for design and measurement is covered in IS 10322 (Part 1).",
+  "clause_1_scope": "This standard (Part 2) specifies the performance requirements for self-ballasted LED lamps with a d.c. supplies up to 250 V or a.c. supplies up to 1 000 V at 50 Hz, together with the test methods and conditions, required to show comphance with this standard, intended for domestic and similar general lighting purposes, having, a) a rated wattage up to 60 W; b) a rated d.c. supplies up to 250 V or a.c. supplies up to 1 000 V at 50 Hz; and c) a lamp cap according to IS 16102 (Part 1) : 2012 'Self-ballasted LED lamps for general lighting services: Part 1 Safety requirements'. This standard does not cover self-ballasted LED-lamps that intentionally produce tinted or coloured light neither does it cover OLEDs. When applied for replacement purposes, the only dimensional feature provided by the standard is information on maximum lamp outlines. Recommendations for batch testing are under consideration. These performance requirements are additional to the requirements given in IS 16102 (Part 1). NOTES 1 When operated in a luminaire the claimed performance data can deviate from the values established in this standard.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 16102 (PART 1)",
@@ -27,7 +27,7 @@
       "title": "Part 1 : 2014: Luminaires Part 1 General Requirements and Tests",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -44,20 +44,10 @@
     {
       "is_number": "IS 1885",
       "standard_id": "IS 1885",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1885)",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,7 +57,7 @@
       "title": "Part 2 : 2018: Tubular Fluorescent Lamps for General Lighting Service Part 2 Performance Requirements ( Second Revision )",
       "division_code": "ETD",
       "aspect": "Service Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,24 +77,14 @@
       "title": "Method of Electrical and Photometric Measurements of Solid State Lighting (LED) Products",
       "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 20",
-      "standard_id": "IS 20",
-      "title": "Indian Standard Code of Practice / Test Method (IS 20)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 14700 (PART 3/SEC 2)",
       "standard_id": "IS 14700 (PART 3/SEC 2)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 14700 (PART 3/SEC 2))",
+      "title": "Indian Standard Specification / Test Method (IS 14700 (PART 3/SEC 2))",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -122,59 +102,9 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 16102",
-      "standard_id": "IS 16102",
-      "title": "Indian Standard Code of Practice / Test Method (IS 16102)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 10322",
-      "standard_id": "IS 10322",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10322)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2418",
-      "standard_id": "IS 2418",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2418)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 15687",
-      "standard_id": "IS 15687",
-      "title": "Indian Standard Code of Practice / Test Method (IS 15687)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 14700",
       "standard_id": "IS 14700",
-      "title": "Indian Standard Code of Practice / Test Method (IS 14700)",
+      "title": "Indian Standard Specification / Test Method (IS 14700)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -184,7 +114,7 @@
     {
       "is_number": "IS 6873",
       "standard_id": "IS 6873",
-      "title": "Indian Standard Code of Practice / Test Method (IS 6873)",
+      "title": "Indian Standard Specification / Test Method (IS 6873)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -197,15 +127,23 @@
     "Test Voltage",
     "Lumen Maintenance (LJ",
     "Initial Values",
-    "Life (of an Individual LED Lamp)"
+    "Life (of an Individual LED Lamp",
+    "Grade ification",
+    "Grade Test",
+    "Grade Tests",
+    "10 k",
+    "1 K",
+    "Part 2 : 2017: Self",
+    "Ballasted LED Lamps for General Lighting Services Part 2 Performance Requirements"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "of the failure fraction {see Table 1)."
+      "5.1 General Requirements for Marking"
     ]
   },
-  "total_chars_parsed": 37407
+  "total_chars_parsed": 37307
 }

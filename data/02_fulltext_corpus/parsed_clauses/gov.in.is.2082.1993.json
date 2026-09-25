@@ -9,7 +9,7 @@
     "is_mandatory": true,
     "qco_order": "Electrical Appliances (Quality Control) Order"
   },
-  "clause_1_scope": "1.1 This standard cover general safety and performance requirements of Stationary Storage Type Electric Water Heater for household and similar purpose. 1.2 In addition to the above 1.1 of IS : 302-2-21 ( 1992 ) is applicable.",
+  "clause_1_scope": "Amendment to IS 2082 (Stationary Storage Type Electric Water Heaters- Specification (Fifth Revision)): AMENDMENT NO. 2 NOVEMBER 1999 TO STATIONARY STORAGE TYPE ELECTRIC WATER HEATERS — SPECIFICATION ( Fourth Revision ) ( Page 8, clause 24.1, First sentence ) — Substitute the following for the existing: 'The tests specified in Table 2 shall constitute the type tests and shall be carried out on one sample of water heater selected preferably at random from a regular production lot.' ( Page 8, clause 24.1.1, first sentence ) — Substitute the words 'The sample' for 'All samples'. (ETD32) Primed at Dee Kay Printers, New Delhi AMENDMENT NO. 3 APRIL 2001 TO STATIONARY STORAGE TYPE ELECTRIC WATER HEATER",
   "clause_2_normative_references": [
     {
       "is_number": "IS 2082 (PART 1)",
@@ -17,24 +17,14 @@
       "title": "Stationary Storage Type Electric Water Heaters- Specification (Fifth Revision) (IS 2082 (PART 1))",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Electrical Appliances (Quality Control) Order"
     },
     {
       "is_number": "IS 302",
       "standard_id": "IS 302",
-      "title": "Indian Standard Code of Practice / Test Method (IS 302)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 20",
-      "standard_id": "IS 20",
-      "title": "Indian Standard Code of Practice / Test Method (IS 20)",
+      "title": "Indian Standard Specification / Test Method (IS 302)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -43,20 +33,28 @@
     }
   ],
   "clause_3_terminology": [
+    "Grade ification",
     "Grade Tests",
     "Grade Electric",
-    "Grade ification",
+    "50 k",
+    "5 K",
+    "45 k",
+    "10 K",
+    "15 k",
     "Stationary Storage Type Electric Water Heaters",
     "Fifth Revision"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "temperature rise of 50 k",
+      "temperature rise of 45 k"
+    ],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "heater may also be marked with the Standard Mark."
     ]
   },
-  "total_chars_parsed": 23750
+  "total_chars_parsed": 23679
 }

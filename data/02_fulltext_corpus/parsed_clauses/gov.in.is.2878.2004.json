@@ -12,12 +12,22 @@
   "clause_1_scope": "This standard covers the requirements regarding material, shape, construction and performance test of carbon dioxide fire extinguishers ( portable and trolley mounted ).",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
+      "is_number": "IS 2004",
+      "standard_id": "IS 2004:1991",
+      "title": "Carbon steel forgings for general engineering purposes",
+      "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15660",
+      "standard_id": "IS 15660:2017",
+      "title": "Refillable Transportable Seamless Aluminium Alloy Gas Cylinders - Specification (First Revision)",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -34,7 +44,7 @@
     {
       "is_number": "IS 7285",
       "standard_id": "IS 7285",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7285)",
+      "title": "Indian Standard Specification / Test Method (IS 7285)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -47,7 +57,7 @@
       "title": "VALVE FITTINGS FOR COMPRESSED GAS CYLINDERS EXCLUDING LIQUEFIED PETROLEUM GAS LPG CYLINDERS SPECIFICATION Fourth Revision of IS 3224",
       "division_code": "MED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,7 +67,7 @@
       "title": "Recommendation for Safety Devices for Gas Cylinders",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,7 +77,7 @@
       "title": "Brass Tubes for General Purposes",
       "division_code": "PGD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -102,30 +112,24 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 5",
-      "standard_id": "IS 5:2007",
-      "title": "Colors for Ready Mixed Paints and Enamels",
-      "division_code": "LITD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
       "is_number": "IS 2932",
       "standard_id": "IS 2932:2003",
       "title": "Enamel, Synthetic, Exterior : (a) Undercoating (b) Finishing",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Grade B",
-    "Grade es",
+    "Grade ification",
     "Grade bruary",
+    "Grade atures",
+    "Grade Fire",
+    "Grade Cu",
+    "Grade of",
+    "6 K",
     "Fire Extinguisher",
     "Carbon Dioxide Type",
     "Portable and Trolley Mounted"
@@ -135,10 +139,17 @@
       "minimum tensile strength, in N/mm 2"
     ],
     "chemical_properties": [],
-    "dimensional_tolerances": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance on trolley dimensions shall be ± 5 mm"
+    ],
     "marking_requirements": [
-      "with ECO logo, it shall also carry the ISI Mark of BIS besides meeting additional"
+      "10. 1 Every extinguisher shall be clearly and",
+      "permanently marked in accordance with the",
+      "10.2 The following information shall be marked on",
+      "a) Manufacturer's name or trade-mark;",
+      "or recharging shall also be marked on the head of"
     ]
   },
-  "total_chars_parsed": 66243
+  "total_chars_parsed": 66030
 }

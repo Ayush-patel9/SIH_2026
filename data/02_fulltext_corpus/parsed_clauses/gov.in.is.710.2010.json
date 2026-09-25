@@ -37,14 +37,14 @@
       "title": "Specification for Synthetic Resin Adhesives for Plywood (Phenolic And Aminoplastic) -",
       "division_code": "LITD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "RAW_MATERIAL_SPEC",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 10013",
       "standard_id": "IS 10013",
-      "title": "Indian Standard Code of Practice / Test Method (IS 10013)",
+      "title": "Indian Standard Specification / Test Method (IS 10013)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -57,7 +57,7 @@
       "title": "Specification for preservative treated plywood",
       "division_code": "TED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,7 +67,7 @@
       "title": "Permissible Moisture Content For Timber Used For Different Purposes - Recommendations",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -144,7 +144,7 @@
     {
       "is_number": "IS 2753",
       "standard_id": "IS 2753",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2753)",
+      "title": "Indian Standard Specification / Test Method (IS 2753)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -153,10 +153,11 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade bruary",
-    "Grade deration",
-    "Grade of",
     "Grade roz",
+    "Grade bruary",
+    "Grade of",
+    "Grade deration",
+    "Grade set",
     "Marine Plywood"
   ],
   "clause_4_requirements": {
@@ -164,8 +165,12 @@
     "chemical_properties": [
       "moisture content not exceeding 10 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
-    "marking_requirements": []
+    "marking_requirements": [
+      "qualify for the BIS Standard Mark for Eco friendliness wiU be optional.",
+      "The product may also be marked with the Standard Mark."
+    ]
   },
-  "total_chars_parsed": 36188
+  "total_chars_parsed": 36007
 }

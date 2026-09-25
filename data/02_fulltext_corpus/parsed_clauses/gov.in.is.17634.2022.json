@@ -12,12 +12,32 @@
   "clause_1_scope": "1.1 This standard covers the requirements related to the performance and safety of storage units, including their movable and non-movable parts intended for domestic usage and for institutional usage such as filing papers or similar. 12 This standard applies to completely manufactured/fabricated storage units. It also applies to ready-to-assemble units, in that case the requirements of this standard shall apply to the assembled units.",
   "clause_2_normative_references": [
     {
+      "is_number": "IS/ISO 7170",
+      "standard_id": "IS/ISO 7170",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7170)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7171",
+      "standard_id": "IS/ISO 7171",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7171)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 17637",
       "standard_id": "IS 17637:2021",
       "title": "Performance Requirements of Surface Finishes for Furniture Applications",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -34,7 +54,7 @@
     {
       "is_number": "IS 600",
       "standard_id": "IS 600",
-      "title": "Indian Standard Code of Practice / Test Method (IS 600)",
+      "title": "Indian Standard Specification / Test Method (IS 600)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -47,16 +67,6 @@
       "title": "Methods of Test for Vulcanized Rubber, Part 2: Rubber, Vulcanized or Thermoplastic - Determination of Hardness (Hardness Between 10 IRHD and 100 IRHD)",
       "division_code": "CHD",
       "aspect": "Methods of tests",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 3400",
-      "standard_id": "IS 3400",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3400)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
@@ -74,20 +84,22 @@
     "Latching Mechanism",
     "Locking Mechanism",
     "Stability Tests",
-    "Stay",
-    "Strength Tests",
-    "Surface Finish Tests",
-    "Top Hanging Unit"
+    "Stay"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [
       "moisture content is between 8 percent"
     ],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "9.1 Each storage unit shall be indelibly and legibly"
+      "9.1 Each storage unit shall be indelibly and legibly",
+      "marked with the following particulars:",
+      "recognized trade mark, if any;",
+      "d) Batch/lot number.",
+      "customer shall have the instruction for assembly"
     ]
   },
-  "total_chars_parsed": 88807
+  "total_chars_parsed": 88640
 }

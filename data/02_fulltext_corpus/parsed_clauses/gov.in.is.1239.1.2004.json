@@ -14,7 +14,7 @@
     {
       "is_number": "IS 1239",
       "standard_id": "IS 1239",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1239)",
+      "title": "Indian Standard Specification / Test Method (IS 1239)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -27,27 +27,7 @@
       "title": "Hot-rolled Steel Strip for Welded Tubes and Pipes",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 12",
-      "standard_id": "IS 12:2005",
-      "title": "Guide for drafting and presentation of Indian Standards",
-      "division_code": "LITD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,7 +37,7 @@
       "title": "Metallic Materials – Tube – Ring Tensile Test",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -67,7 +47,7 @@
       "title": "Steel Tubes, Tubulars and Other Steel Fittings, Part 2: Steel Pipe Fittings",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
     },
@@ -77,7 +57,7 @@
       "title": "Pipe Threads Where Pressure-Tight Joints are Made on the Threads - Dimensions, Tolerances and Designation",
       "division_code": "CED",
       "aspect": "Dimensions",
-      "relation_type": "INSTALLATION_CODE",
+      "relation_type": "DIMENSIONAL_STANDARD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,17 +67,7 @@
       "title": "General requirments for the supply of metallurgical materials",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -107,14 +77,14 @@
       "title": "Cold reduced low carbon steel sheets and strips",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 228",
       "standard_id": "IS 228",
-      "title": "Indian Standard Code of Practice / Test Method (IS 228)",
+      "title": "Indian Standard Specification / Test Method (IS 228)",
       "division_code": "GEN",
       "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
@@ -127,7 +97,7 @@
       "title": "Pipe Threads where Pressure-Tight Joints are Made on the Threads - Verification by Means of Limit Gauges",
       "division_code": "CED",
       "aspect": "Dimensions",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -137,7 +107,7 @@
       "title": "Hot-dip Zinc Coatings on Mild Steel Tubes",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -167,7 +137,7 @@
       "title": "Method for flattening test on metallic tubes",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -197,17 +167,26 @@
     "Nominal Bore",
     "Plain End",
     "Bevel End",
-    "Socket"
+    "Socket",
+    "Steel Tubes",
+    "Tubulars and Other Wrought Steel Fittings",
+    "Part 1: Steel Tubes",
+    "LINGUAL"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
       "tensile strength shall be at least 320 MPa"
     ],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "17.1 Each tube shall be marked with manufacturer's"
+      "17.1 Each tube shall be marked with manufacturer's",
+      "name or trade-mark, IS No. that is, IS 1 239 ( Part I )",
+      "17.2 The different classes of tubes shall be",
+      "distinguished by colour bands, which shall be applied",
+      "shall be applied at each end of the tubes for steam"
     ]
   },
-  "total_chars_parsed": 33920
+  "total_chars_parsed": 33690
 }

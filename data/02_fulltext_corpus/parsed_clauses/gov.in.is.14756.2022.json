@@ -17,7 +17,7 @@
       "title": "Stainless Steel Sheets and Strips for Utensils Specification",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Stainless Steel Products (Quality Control) Order"
     },
@@ -27,7 +27,7 @@
       "title": "Low Nickel Austenitic Stalnless Steel Sheet and Strip for Utensils and Kitchen Appliances - Specification",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,7 +37,7 @@
       "title": "Composite Bottom Stainless Steel Cooking Utensils - Specification",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -57,26 +57,69 @@
       "title": "Stainless steel plate, sheet and strip - Specification (Second Revision)",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Stainless Steel Products (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 6527",
+      "standard_id": "IS 6527:1995",
+      "title": "Stainless steel wire rod",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13395",
+      "standard_id": "IS 13395:2021",
+      "title": "Performance of Handles and Handle Assemblies Attached to Cookware - Specification ( First Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 39",
+      "standard_id": "IS 39",
+      "title": "Indian Standard Specification / Test Method (IS 39)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9040",
+      "standard_id": "IS 9040:1978",
+      "title": "Methods for sampling of utensils",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Grade deration",
-    "Grade s",
-    "Draft Indian Standard STAINLESS STEEL COOKWARE SPECIFICATION Second Revision of IS 14756"
+    "Draft Indian Standard STAINLESS STEEL COOKWARE SPECIFICATION Second Revision of IS 14756",
+    "IS 14756 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
       "8.1 Each utensil shall have the following details:",
-      "a) Category of utensil;",
-      "b) Capacity in litre or size in cm of utensil;",
-      "c) Material of utensil;"
+      "d) Material grade;",
+      "e) Manufacturer name or initials or trade-mark; and",
+      "8.2 BIS Certification Marking",
+      "may be marked with the Standard Mark."
     ]
   },
-  "total_chars_parsed": 23254
+  "total_chars_parsed": 23101
 }

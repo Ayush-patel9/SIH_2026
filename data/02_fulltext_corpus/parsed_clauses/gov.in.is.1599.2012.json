@@ -14,7 +14,7 @@
     {
       "is_number": "IS 1692",
       "standard_id": "IS 1692",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1692)",
+      "title": "Indian Standard Specification / Test Method (IS 1692)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -24,7 +24,7 @@
     {
       "is_number": "IS 3260",
       "standard_id": "IS 3260",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3260)",
+      "title": "Indian Standard Specification / Test Method (IS 3260)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -34,7 +34,7 @@
     {
       "is_number": "IS 4598",
       "standard_id": "IS 4598",
-      "title": "Indian Standard Code of Practice / Test Method (IS 4598)",
+      "title": "Indian Standard Specification / Test Method (IS 4598)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -42,32 +42,12 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 1",
-      "standard_id": "IS 1:1968",
-      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
-      "division_code": "TXD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "is_number": "IS/ISO 7438",
+      "standard_id": "IS/ISO 7438",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7438)",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 15",
-      "standard_id": "IS 15:1973",
-      "title": "Seedlac",
-      "division_code": "EED",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -80,11 +60,12 @@
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 14355
+  "total_chars_parsed": 14340
 }

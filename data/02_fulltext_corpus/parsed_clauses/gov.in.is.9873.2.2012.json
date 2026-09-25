@@ -12,9 +12,9 @@
   "clause_1_scope": "This part of ISO 8124 specifies the categories of flammable materials which are prohibited in all toys and requirements concerning flammability of certain 'toys when they are submitted to a small source of ignition. The test methods described in clause 5 are used for the purposes of determining the flammability of toys under the particular test conditions specified. The test results thus obtained cannot be considered as providing an overall indication of the potential fire hazard of toys or materials when subjected to other sources of ignition. This part of ISO 8124 includes general requirements relating to all toys and specific requirements and methods of test relating to the following toys which are considered as being those presenting the greatest hazard: — beards, moustaches, wigs, masks and other products worn on the head with pile, hair or other attached material; — disguise costumes (e.g. cowboy outfits, nurses' uniforms) including the associated headgear, and toys intended to be worn by a child (excluding products covered by 4,2 and paper novelty hats, e.g. those supplied in crackers); — toys intended to be entered by a child (e.g. toy tents, puppet theatres, wigwams); — filled soft toys with a pile surface or textile surface but excluding soft-bodied dolls with heads and limbs made entirely from nontextile polymeric material. NOTE 1 Additional requirements for the flammability of electrical toys are specified in EN 50088, Safety of electrical toys.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 9873(PART2)",
-      "standard_id": "IS 9873(PART2)",
-      "title": "Indian Standard Code of Practice / Test Method (IS 9873(PART2))",
+      "is_number": "IS/ISO 8124",
+      "standard_id": "IS/ISO 8124",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8124)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -22,9 +22,19 @@
       "qco_order": null
     },
     {
-      "is_number": "IS 9873",
-      "standard_id": "IS 9873",
-      "title": "Indian Standard Code of Practice / Test Method (IS 9873)",
+      "is_number": "IS/ISO 2431",
+      "standard_id": "IS/ISO 2431",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2431)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6941",
+      "standard_id": "IS/ISO 6941",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6941)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -35,19 +45,22 @@
   "clause_3_terminology": [
     "flammability",
     "flaming debris",
-    "self",
+    "self-extinguishing",
     "representative sample",
     "hair",
-    "filled soft toy"
+    "filled soft toy",
+    "SAFETY OF TOYS",
+    "Part 2: Flammability"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [],
     "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
     "dimensional_tolerances": [],
     "marking_requirements": [
-      "Each product/package must bear the manufacturer's name, trademark, and grade.",
-      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
     ]
   },
-  "total_chars_parsed": 19828
+  "total_chars_parsed": 19699
 }

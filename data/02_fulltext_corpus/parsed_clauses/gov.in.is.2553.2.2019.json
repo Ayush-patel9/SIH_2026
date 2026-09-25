@@ -14,7 +14,7 @@
     {
       "is_number": "IS 2553",
       "standard_id": "IS 2553",
-      "title": "Indian Standard Code of Practice / Test Method (IS 2553)",
+      "title": "Indian Standard Specification / Test Method (IS 2553)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -27,7 +27,7 @@
       "title": "Automotive vehicles - Procedure for determining the 'H' point and the torso angle for 50th percentile adult male in seating positions of motor vehicles",
       "division_code": "ETD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,37 +37,17 @@
       "title": "Automotive Vehicles \"• Windscreen Wiping System For 3 Wheeler Vehicles \"• Specification",
       "division_code": "TED",
       "aspect": "System Standard",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 3",
-      "standard_id": "IS 3",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 30",
       "standard_id": "IS 30",
-      "title": "Indian Standard Code of Practice / Test Method (IS 30)",
+      "title": "Indian Standard Specification / Test Method (IS 30)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,24 +57,14 @@
       "title": "Part 1 : 2018: Safety Glass — Specification Part 1 Architectural, Building and General Uses ( Fourth Revision )",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Safety Glass (Quality Control) Order"
     },
     {
-      "is_number": "IS 19",
-      "standard_id": "IS 19",
-      "title": "Indian Standard Code of Practice / Test Method (IS 19)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 0",
-      "standard_id": "IS 0",
-      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
+      "is_number": "IS/ISO 2768",
+      "standard_id": "IS/ISO 2768",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2768)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -107,14 +77,14 @@
       "title": "Zinc Chrome for Paints",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 600",
       "standard_id": "IS 600",
-      "title": "Indian Standard Code of Practice / Test Method (IS 600)",
+      "title": "Indian Standard Specification / Test Method (IS 600)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -134,10 +104,7 @@
     "Optical Distortion",
     "Outer Side",
     "Pane",
-    "Reference Points",
-    "Regular Light Transmittance",
-    "Sample",
-    "Secondary Image"
+    "Reference Points"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
@@ -146,8 +113,22 @@
       "Hardness IRHD Hole Diameter: 129 mm"
     ],
     "chemical_properties": [],
-    "dimensional_tolerances": [],
-    "marking_requirements": []
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance of + (n x 0.2 mm",
+      "tolerance of +25/-0 mm",
+      "Outer Diameter: 35 mm",
+      "Outer Diameter: 30 mm",
+      "Outer Diameter: 199 mm",
+      "Outer Diameter: 192 mm"
+    ],
+    "marking_requirements": [
+      "9.1.1 Safety glass shall be packed as agreed to between",
+      "9.2.1 Each piece of safety glass shall comply with the",
+      "requirements given in 4 and shall also be marked with",
+      "9.2.2 Each packet may be marked with the following 10.2 Normal frequency of COP shall be 2 years.",
+      "a) Indication of the source of manufacture, been granted as per IS 2553 (part 2), the same shall be"
+    ]
   },
-  "total_chars_parsed": 128427
+  "total_chars_parsed": 128309
 }

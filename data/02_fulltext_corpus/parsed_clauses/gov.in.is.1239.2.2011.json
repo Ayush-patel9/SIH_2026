@@ -9,7 +9,7 @@
     "is_mandatory": true,
     "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
   },
-  "clause_1_scope": "This Indian Standard (IS 1239 (PART 2)) covers Steel Tubes, Tubulars and Other Steel Fittings, Part 2: Steel Pipe Fittings. This Indian Standard (Part 2) (Fifth Revision) was adopted by the , after the draft finalized by the Steel Tubes, Pipes and Fittings Sectional Committee had been approved by the Metallurgical Engineering Division Council. This standard was first published in 1969 and fourth revision of this standard was published in 1992. While reviewing this standard in the light of experience gained during these years, the Committee decided to further revise this standard. In this revision the following modifications have been made: a) All amendments (Amendment Nos. 1 to 6) have been incorporated. b) The requirement of approximate radius for 125 and 150 NB bends have been incorporated in Table 4. c) Additional column for maximum inside diameter of internal parallel thread for steel socket have been incorporated in Table 6. This standard is published in two parts. The other part in the series is: Part 1 Steel tubes The nominal bores specified in this standard and the corresponding nominal sizes of pip",
+  "clause_1_scope": "This standard (Part 2) covers the requirements for butt welded and seamless, plain ended, screwed sockets, steel tubulars and other welded and seamless steel pipe fittings intended for use for water, non-hazardous gas, air and steam. The requirements of pipe nuts are covered in IS 3468.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 3468",
@@ -17,7 +17,37 @@
       "title": "Pipe nuts",
       "division_code": "CED",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6507",
+      "standard_id": "IS/ISO 6507",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6507)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1608 (PART 1)",
+      "standard_id": "IS 1608 (PART 1)",
+      "title": "Mechanical testing of metals - Tensile Testing (IS 1608 (PART 1))",
+      "division_code": "MED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8493",
+      "standard_id": "IS/ISO 8493",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8493)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -27,7 +57,7 @@
       "title": "General requirments for the supply of metallurgical materials",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,7 +67,7 @@
       "title": "Steel Tubes, Tubulars and Other Wrought Steel Fittings, Part 1: Steel Tubes (BI-LINGUAL)",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": true,
       "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
     },
@@ -47,7 +77,7 @@
       "title": "Pipe Threads Where Pressure-Tight Joints are Made on the Threads - Dimensions, Tolerances and Designation",
       "division_code": "CED",
       "aspect": "Dimensions",
-      "relation_type": "INSTALLATION_CODE",
+      "relation_type": "DIMENSIONAL_STANDARD",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -64,7 +94,7 @@
     {
       "is_number": "IS 228",
       "standard_id": "IS 228",
-      "title": "Indian Standard Code of Practice / Test Method (IS 228)",
+      "title": "Indian Standard Specification / Test Method (IS 228)",
       "division_code": "GEN",
       "aspect": "Methods of tests",
       "relation_type": "TEST_METHOD",
@@ -74,7 +104,7 @@
     {
       "is_number": "IS 1239",
       "standard_id": "IS 1239",
-      "title": "Indian Standard Code of Practice / Test Method (IS 1239)",
+      "title": "Indian Standard Specification / Test Method (IS 1239)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -87,7 +117,7 @@
       "title": "Pipe Threads where Pressure-Tight Joints are Made on the Threads - Verification by Means of Limit Gauges",
       "division_code": "CED",
       "aspect": "Dimensions",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -97,7 +127,7 @@
       "title": "Method of Drift Expanding Test on Metallic Tubes",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -107,14 +137,14 @@
       "title": "Method For Vickers Hardness Test for Metallic Materials",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
     {
       "is_number": "IS 47",
       "standard_id": "IS 47",
-      "title": "Indian Standard Code of Practice / Test Method (IS 47)",
+      "title": "Indian Standard Specification / Test Method (IS 47)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -127,7 +157,7 @@
       "title": "Hot-dip Zinc Coatings on Mild Steel Tubes",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -137,7 +167,7 @@
       "title": "Methods for testing uniformity of coating of zinc coated articles",
       "division_code": "TED",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -147,7 +177,7 @@
       "title": "Recommended Practice for Hot-Dip Galvanizing of Iron and Steel",
       "division_code": "MTD",
       "aspect": "Product Specification",
-      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     }
@@ -155,8 +185,14 @@
   "clause_3_terminology": [
     "Fittings",
     "Socket",
-    "Tube (Pipe)",
-    "Tubular"
+    "Tube (Pipe",
+    "Tubular",
+    "Grade lA",
+    "Grade male",
+    "Grade of",
+    "Steel Tubes",
+    "Tubulars and Other Steel Fittings",
+    "Part 2: Steel Pipe Fittings"
   ],
   "clause_4_requirements": {
     "mechanical_properties": [
@@ -166,10 +202,17 @@
     "chemical_properties": [
       "phosphorus in amounts exceeding 0.05 percent"
     ],
-    "dimensional_tolerances": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "nominal sizes 25 to 150 mm"
+    ],
     "marking_requirements": [
-      "15.1 Tubulars, sockets and fittings shall be suitably"
+      "15.1 Tubulars, sockets and fittings shall be suitably",
+      "packed and threads protected from damage and marked",
+      "a) Manufacturer's name or trade-mark; and",
+      "15.2 BIS Certification Marking",
+      "The tubulars, sockets and fittings may also be marked"
     ]
   },
-  "total_chars_parsed": 46557
+  "total_chars_parsed": 46448
 }

@@ -17,7 +17,7 @@
       "title": "Cotton Sewing Threads",
       "division_code": "TXD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -27,7 +27,7 @@
       "title": "Textiles - Spun Polyester Sewing Threads - Specification ( First Revision )",
       "division_code": "TXD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -44,7 +44,7 @@
     {
       "is_number": "IS 3400",
       "standard_id": "IS 3400",
-      "title": "Indian Standard Code of Practice / Test Method (IS 3400)",
+      "title": "Indian Standard Specification / Test Method (IS 3400)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -53,15 +53,28 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade A",
     "Canvas shoes",
-    "rubber sole"
+    "rubber sole",
+    "Canvas shoes, rubber sole",
+    "IS 3735 Specification",
+    "Conformity Assessment"
   ],
   "clause_4_requirements": {
-    "mechanical_properties": [],
+    "mechanical_properties": [
+      "Breaking load on 50 cm"
+    ],
     "chemical_properties": [],
-    "dimensional_tolerances": [],
-    "marking_requirements": []
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "wall thickness 0.35 mm"
+    ],
+    "marking_requirements": [
+      "in cardboard cartons. Cardboard cartons may further",
+      "package may contain shoes of same size only.",
+      "The size of the shoes shall be legibly stamped on",
+      "name or recognized trade-mark, if any, together with",
+      "shall also be legibly stamped at the waist of the insole"
+    ]
   },
-  "total_chars_parsed": 30848
+  "total_chars_parsed": 30778
 }

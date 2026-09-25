@@ -12,6 +12,16 @@
   "clause_1_scope": "This standard lays down requirements for performance, reliability and safety of portable fire extinguishers of the following types : a) Water based; b) Foam based; c) Powders — ABC/BC/D Type; d) Carbon dioxide; e) Clean agents; and f) Water mist type.",
   "clause_2_normative_references": [
     {
+      "is_number": "IS/ISO 7165",
+      "standard_id": "IS/ISO 7165",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7165)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
       "is_number": "IS 7673",
       "standard_id": "IS 7673:2004",
       "title": "Fire Fighting Equipment - Glossary of Terms",
@@ -27,7 +37,7 @@
       "title": "Carbon Dioxide as Fire Extinguishing Media for Fire Protection -Specification",
       "division_code": "MED",
       "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -37,7 +47,7 @@
       "title": "Dry Chemical Powders for Fire Fighting — BC, ABC and D Types — Specification ( Third Revision )",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "CHEMICAL_ANALYSIS",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -47,27 +57,7 @@
       "title": "Foam Concentrate for Producing Mechanical Foam for Fire Fighting — Specification ( Fourth Revision )",
       "division_code": "MED",
       "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 2",
-      "standard_id": "IS 2:2022",
-      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
-      "division_code": "GEN",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 15",
-      "standard_id": "IS 15:1973",
-      "title": "Seedlac",
-      "division_code": "EED",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -77,7 +67,7 @@
       "title": "Recommended construction practice of apparatus for spray cabinet for various salt spray tests",
       "division_code": "GEN",
       "aspect": "Product Specification",
-      "relation_type": "TEST_METHOD",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -87,7 +77,7 @@
       "title": "the National Flag of India (Wool Khadi)",
       "division_code": "TXD",
       "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -104,7 +94,7 @@
     {
       "is_number": "IS 7285",
       "standard_id": "IS 7285",
-      "title": "Indian Standard Code of Practice / Test Method (IS 7285)",
+      "title": "Indian Standard Specification / Test Method (IS 7285)",
       "division_code": "GEN",
       "aspect": "Product Specification",
       "relation_type": "TEST_METHOD",
@@ -127,17 +117,7 @@
       "title": "Specification for Gas cartridges for use in fire extinguishers -",
       "division_code": "CHD",
       "aspect": "Product Specification",
-      "relation_type": "SAFETY_REQUIREMENT",
-      "is_mandatory": false,
-      "qco_order": null
-    },
-    {
-      "is_number": "IS 5",
-      "standard_id": "IS 5:2007",
-      "title": "Colors for Ready Mixed Paints and Enamels",
-      "division_code": "LITD",
-      "aspect": "Product Specification",
-      "relation_type": "GENERAL_REFERENCE",
+      "relation_type": "PRODUCT_SPECIFICATION",
       "is_mandatory": false,
       "qco_order": null
     },
@@ -167,11 +147,11 @@
     "Portable Extinguisher",
     "Extinguishing Medium",
     "Charge of Extinguisher",
-    "Service Pressure (P)",
+    "Service Pressure (P",
     "Complete Discharge of Extinguishing Medium",
     "Effective Discharge Time",
     "Rechargeable Extinguisher",
-    "Disposable Extinguisher (Non",
+    "Disposable Extinguisher (Non-rechargeable",
     "Fill Density",
     "Propellant",
     "Clean Agent"
@@ -187,10 +167,16 @@
       "carbon content of 0.03 percent",
       "nitrogen after being filled 95 percent"
     ],
-    "dimensional_tolerances": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance of + 5°C, within 5 m",
+      "WALL THICKNESS, 2mm"
+    ],
     "marking_requirements": [
-      "NOTE — An example of the layout for marking is given in"
+      "shall be marked with suitable colour.",
+      "first three months of a calendar year may be marked with the previous year as the date of manufacture.",
+      "The extinguisher may also be marked with the Standard Mark."
     ]
   },
-  "total_chars_parsed": 90608
+  "total_chars_parsed": 90487
 }
