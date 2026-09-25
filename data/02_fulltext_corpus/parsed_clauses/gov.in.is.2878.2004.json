@@ -1,74 +1,144 @@
 {
   "is_number": "IS 2878",
+  "standard_id": "IS 2878:2004",
+  "title": "Fire Extinguisher, Carbon Dioxide Type (Portable and Trolley Mounted) -Specification",
   "ia_identifier": "gov.in.is.2878.2004",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Fire Fighting Equipment (Quality Control) Order"
+  },
   "clause_1_scope": "This standard covers the requirements regarding material, shape, construction and performance test of carbon dioxide fire extinguishers ( portable and trolley mounted ).",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 2878",
-      "title": "Reaffirmed- 2010",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2004",
-      "title": "BUREAU OF INDIAN STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "'Rules for rounding off numerical values (revised)'. The number of significant places retained in the",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15660",
-      "title": "'",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 1",
-      "title": "5222.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2190",
-      "title": "It shall not be less than",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2190:2010",
+      "title": "SELECTION, INSTALLATION AND MAINTENANCE OF FIRST-AID FIRE EXTINGUISHERS — CODE OF PRACTICE",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 7285",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 7285",
+      "title": "Indian Standard Code of Practice / Test Method (IS 7285)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 3224",
-      "title": "( squeeze grip valve as shown in",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 3224:2021",
+      "title": "VALVE FITTINGS FOR COMPRESSED GAS CYLINDERS EXCLUDING LIQUEFIED PETROLEUM GAS LPG CYLINDERS SPECIFICATION Fourth Revision of IS 3224",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 5903",
-      "title": "Alloy No. 2 of",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 5903:2014",
+      "title": "Recommendation for Safety Devices for Gas Cylinders",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 407",
+      "standard_id": "IS 407:1981",
+      "title": "Brass Tubes for General Purposes",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1545",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1545:1994",
+      "title": "Solid drawn copper and copper alloy tubes for condenser and heat exc hangers",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 738",
+      "standard_id": "IS 738:1994",
+      "title": "Wrought aluminium alloys, drawn tube for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 3203",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 3203:1982",
+      "title": "Methods of testing local thickness of electroplated coatings_",
+      "division_code": "TED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5",
+      "standard_id": "IS 5:2007",
+      "title": "Colors for Ready Mixed Paints and Enamels",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2932",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2932:2003",
+      "title": "Enamel, Synthetic, Exterior : (a) Undercoating (b) Finishing",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 68938
+  "clause_3_terminology": [
+    "Grade B",
+    "Grade es",
+    "Grade bruary",
+    "Fire Extinguisher",
+    "Carbon Dioxide Type",
+    "Portable and Trolley Mounted"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "minimum tensile strength, in N/mm 2"
+    ],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "with ECO logo, it shall also carry the ISI Mark of BIS besides meeting additional"
+    ]
+  },
+  "total_chars_parsed": 66243
 }

@@ -1,34 +1,96 @@
 {
-  "is_number": "IS 9873 (Part 1)",
+  "is_number": "IS 9873 (PART 1)",
+  "standard_id": "IS 9873 (Part 1):2012",
+  "title": "Safety Requirements for Toys, Part 1: Safety Aspects related to Mechanical and Physical Properties",
   "ia_identifier": "gov.in.is.9873.1.2012",
+  "division_code": "MED",
+  "aspect": "Safety Standard",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Toys (Quality Control) Order, 2020"
+  },
   "clause_1_scope": "The requirements in this part of ISO 8124 apply to all toys, i.e. any product or material designed or clearly intended for use in play by children under 14 years of age. They are applicable to a toy as it is initially received by the consumer and, in addition, they apply after a toy is subjected to reasonably foreseeable conditions of normal use and abuse unless specifically noted otherwise. The requirements of this part of ISO 8124 specify acceptable criteria for structural characteristics of toys, such as shape, size, contour, spacing (e.g. rattles, small parts, sharp points and edges, and hinge-line clearances) as well as acceptable criteria for properties peculiar to certain categories of toy (e.g. maximum kinetic energy values for non-resilient-tipped projectiles and minimum tip angles for certain ride-on toys). This part of ISO 8124 specifies requirements and test methods for toys intended for use by children in various age groups from birth to 14 years. The requirements vary according to the age group for which a particular toy is intended. The requirements for a particular age group reflect the nature of the hazards and the expected mental and/or physical abilities of a child to cope with them. This part of ISO 8124 also requires that appropriate warnings and/or instructions for use be given on certain toys or their packaging. Due to linguistic problems which may occur in different countries, the wording of these warnings and instructions is not specified but given as general information in Annex B. It should be noted that different legal requirements exist in many countries with regard to such marking. This part of ISO 8124 does not purport to cover or include every conceivable potential hazard of a particular toy or toy category. Except for labelling requirements indicating the functional hazards and the age range for which the toy is intended, this part of ISO 8124 has no requirements for those characteristics of toys which represent an inherent and recognised hazard which is integral to the function of the toy. EXAMPLE 1 An example of such a hazard is the sharp point necessary for the proper function of a needle. The needle is a hazard which is well understood by the purchaser of a toy sewing kit, and the functional sharp-point hazard is communicated to the user as part of the normal educational process of learning to sew as well as at the point of purchase by means of cautionary labelling on the product's packaging. EXAMPLE 2 As a further exam",
   "clause_2_normative_references": [
     {
       "is_number": "IS 9873",
-      "title": "1  (2012):  Safety  Requirements  for  Toys,  Part  1:",
-      "relation_type": "SAFETY_REQUIREMENT"
-    },
-    {
-      "is_number": "IS 2012",
-      "title": "BUREAU    OF    INDIAN    STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 13360",
-      "title": "(Part  5/  Sec  11)  :  1992     Technically  Equivalent",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1586",
-      "title": "Method  for  Rockwell  do",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9873",
+      "title": "Indian Standard Code of Practice / Test Method (IS 9873)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2",
-      "title": "'Rules  for  rounding  off  numerical  values  {revised)'.  The  number  of",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2:2022",
+      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 22",
+      "standard_id": "IS 22",
+      "title": "Indian Standard Code of Practice / Test Method (IS 22)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 27",
+      "standard_id": "IS 27:2023",
+      "title": "Primary Lead - Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 0",
+      "standard_id": "IS 0",
+      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 150",
+      "standard_id": "IS 150:1950",
+      "title": "Ready mixed paint, brushing, finishing, stoving for enamel color as required",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 400",
+      "standard_id": "IS 400:1968",
+      "title": "the National Flag of India (Wool Khadi)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 242838
+  "clause_3_terminology": [
+    "Safety Requirements for Toys",
+    "Part 1: Safety Aspects related to Mechanical and Physical Properties"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": []
+  },
+  "total_chars_parsed": 210337
 }

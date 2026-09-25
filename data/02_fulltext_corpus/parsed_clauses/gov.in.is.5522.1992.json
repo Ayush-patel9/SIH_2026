@@ -1,64 +1,68 @@
 {
   "is_number": "IS 5522",
+  "standard_id": "IS 5522:2014",
+  "title": "Stainless Steel Sheets and Strips for Utensils Specification",
   "ia_identifier": "gov.in.is.5522.1992",
+  "division_code": "MTD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Stainless Steel Products (Quality Control) Order"
+  },
   "clause_1_scope": "1.1 This standard covers the requirements for stainless steel in the form of sheets and strips for manufacture of utensils.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1663",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 1956",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5522",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1501",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1956",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1956)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 228",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1586",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1608",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1500",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1387",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 228",
+      "title": "Indian Standard Code of Practice / Test Method (IS 228)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1762",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1762",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1762)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 10175",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1501",
+      "standard_id": "IS 1501:2002",
+      "title": "Method For Vickers Hardness Test for Metallic Materials",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 14664
+  "clause_3_terminology": [
+    "Grade Designation",
+    "Stainless Steel Sheets and Strips for Utensils Specification"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "13.1 Every bundle or package of sheets, strips"
+    ]
+  },
+  "total_chars_parsed": 12686
 }

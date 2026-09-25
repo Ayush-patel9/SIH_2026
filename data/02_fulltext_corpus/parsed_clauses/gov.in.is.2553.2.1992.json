@@ -1,27 +1,35 @@
 {
-  "is_number": "IS 2553 (Part 2)",
+  "is_number": "IS 2553 (PART 2)",
+  "standard_id": "IS 2553 (Part 2):2019",
+  "title": "Part 2 : 2019: Safety Glass — Specification Part 2 For Road Transport ( First Revision )",
   "ia_identifier": "gov.in.is.2553.2.1992",
-  "clause_1_scope": "This standard prescribes requirements and methods of sampling and test for safety glass meant for use in automobile windscreen, back- light and side window glasses.",
+  "division_code": "TED",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Safety Glass (Quality Control) Order"
+  },
+  "clause_1_scope": "This standard prescribes requirements and methods of sampling and test for safety glass meant for use in automobile windscreen, backlight and side window glasses.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 2553",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2553",
+      "title": "Indian Standard Code of Practice / Test Method (IS 2553)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2553 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1382",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2835",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 2553(PART2)",
+      "standard_id": "IS 2553(PART2)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 2553(PART2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -33,5 +41,11 @@
     "Dimensions and Shape of Safety Glass",
     "Body Defects of Safety Glass"
   ],
-  "total_chars_parsed": 61419
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": []
+  },
+  "total_chars_parsed": 58468
 }

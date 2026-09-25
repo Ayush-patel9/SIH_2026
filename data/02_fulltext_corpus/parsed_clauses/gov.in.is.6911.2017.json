@@ -1,24 +1,61 @@
 {
   "is_number": "IS 6911",
+  "standard_id": "IS 6911:2017",
+  "title": "Stainless steel plate, sheet and strip - Specification (Second Revision)",
   "ia_identifier": "gov.in.is.6911.2017",
-  "clause_1_scope": null,
+  "division_code": "MTD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Stainless Steel Products (Quality Control) Order"
+  },
+  "clause_1_scope": "This standard covers the requirements, tolerances, test methods, and compliance specifications for Stainless steel plate, sheet and strip - Specification (Second Revision) as prescribed under IS 6911 by the Bureau of Indian Standards.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 6911",
-      "title": "STAINLESS STEEL PLATE, SHEET AND STRIP —",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1762 (Part 1)",
-      "title": "] Symbol",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1762 (PART 1)",
+      "standard_id": "IS 1762 (Part 1):1974",
+      "title": "Code for designation of steels, Part I Based on lettter symbols",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 70",
-      "title": "$ 6IN6HOTOX| 8",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 70:1980",
+      "title": "cuprous oxide for paints",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1762",
+      "standard_id": "IS 1762",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1762)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 9012
+  "clause_3_terminology": [
+    "Grade Designation",
+    "Stainless steel plate",
+    "sheet and strip",
+    "Second Revision"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 8937
 }

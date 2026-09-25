@@ -1,139 +1,323 @@
 {
   "is_number": "IS 732",
+  "standard_id": "IS 732:2019",
+  "title": "Code of Practice for Electrical Wiring Installations ( Fourth Revision )",
   "ia_identifier": "gov.in.is.732.1989",
-  "clause_1_scope": "1.1 This code covers the essential requirements and precautions regarding wiring installations for ensuring satisfactory and reliable service and safety from all possible hazards from the use of electricity. 1.2 This code applies to the design, selection, erection and inspection and testing of wiring installations whether permanent or temporary, in and about buildings. 1.3 It relates generally to all wiring installations in non-industrial and industrial locations, whe- ther the electric supply is derived from an external source or from a private generating plant. 1.4 Installations utilizing the following nominal voltage ranges are dealt with in this code: a) voltages normally not exceeding 50 V ac or 120 V dc whether between conductors or to earth. b) voltages normally exceeding extra-low voltage but not exceeding 1 000 V ac or 1 500 V dc between conductors or 600 V ac or 900 V dc between conductors and earth. 1.5 This code covers all general guidelines appli- cable to installations operating within the ranges given in 1.4. Supplementary or additional pro- visions may be necessary to be complied with in respect of specific occupancies depending on their nature. For the purposes of guidelines on indi- vidual occupancies reference may be National Electrical Code ( SP : 30-1985 ). 1.6 This code is not applicable to the following: a) Systems for distribution of energy to the public, or to power generation and trans- mission for such systems. b) Wiring installations in special locations- such as mines or other areas where potenti- ally explosive atmosphere exists. c) Lightning conductors, telecommunications and alarm systems. d) Traction installations, motor vehicles, ins- tallations on board ships, aircraft or offshore installations. 1.7 This code also does not apply to matters concerning specifications of individual items of equipment and does not deal with requirements for the construction of prefabricated assemblies of electrical equipment. SECTION 1 TERMINOLOGY",
+  "division_code": "ETD",
+  "aspect": "Code of Practice",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This code covers the essential requirements and precautions regarding wiring installations for ensuring satisfactory and reliable service and safety from all possible hazards from the use of electricity. 1.2 This code applies to the design, selection, erection and inspection and testing of wiring installations whether permanent or temporary, in and about buildings. 1.3 It relates generally to all wiring installations in non-industrial and industrial locations, whether the electric supply is derived from an external source or from a private generating plant. 1.4 Installations utilizing the following nominal voltage ranges are dealt with in this code: a) voltages normally not exceeding 50 V ac or 120 V dc whether between conductors or to earth. b) voltages normally exceeding extra-low voltage but not exceeding 1 000 V ac or 1 500 V dc between conductors or 600 V ac or 900 V dc between conductors and earth. 1.5 This code covers all general guidelines applicable to installations operating within the ranges given in 1.4. Supplementary or additional provisions may be necessary to be complied with in respect of specific occupancies depending on their nature. For the purposes of guidelines on individual occupancies reference may be National Electrical Code ( SP : 30-1985 ). 1.6 This code is not applicable to the following: a) Systems for distribution of energy to the public, or to power generation and transmission for such systems. b) Wiring installations in special locationssuch as mines or other areas where potentially explosive atmosphere exists. c) Lightning conductors, telecommunications and alarm systems. d) Traction installations, motor vehicles, installations on board ships, aircraft or offshore installations. 1.7 This code also does not apply to matters concerning specifications of individual items of equipment and does not deal with requirements for the construction of prefabricated assemblies of electrical equipment. SECTION 1 TERMINOLOGY",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 732",
-      "title": "1989",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 2274",
-      "title": "1963*.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2274",
+      "title": "Indian Standard Code of Practice / Test Method (IS 2274)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2",
-      "title": "1960*. The number",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2:2022",
+      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9409",
-      "title": "1980*.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9409:1980",
+      "title": "Classification of electrical and electronic equipment with regard to protection against electric shock",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 862 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 862 (PART 1)",
+      "standard_id": "IS 862 (PART 1)",
+      "title": "Textiles - Handloom Cotton Ticking Cloth - Specification (IS 862 (PART 1))",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1885",
-      "title": "( Part 17 )-1987*.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 3043",
-      "title": "1987T.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 3043:2018",
+      "title": "Code of Practice for Earthing ( Second Revision )",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 240",
+      "standard_id": "IS 240",
+      "title": "Indian Standard Code of Practice / Test Method (IS 240)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 752",
-      "title": "IMS",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 752:2023",
+      "title": "Textiles - Handloom Cotton Muslin Bleached - Specification",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1",
-      "title": "732- 1969",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 7118",
-      "title": "1973* where",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 7118:1973",
+      "title": "Recommendations for direction of movement for control devices operating electrical apparatus",
+      "division_code": "ETD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2551",
-      "title": "1982f ).",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2551:1982",
+      "title": "Danger notice plates",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 692",
-      "title": "1973* for non-draining cables, where",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 692:1994",
+      "title": "Paper insulated lead-sheathed cables for rated voltage up to and including 33 kv specification",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 8623",
-      "title": "( Part 1 )-1977f.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 8623",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8623)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 11353",
-      "title": "1986*",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 11353:1985",
+      "title": "Guide for Uniform System of Marking and Identification of Conductors and Apparatus Terminals",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 347",
-      "title": "1975* or painted as may be required.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 347:2023",
+      "title": "Varnish Shellac For General Purposes - Specification",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9537",
-      "title": "(Part 2 )-1981* ]",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9537",
+      "title": "Indian Standard Code of Practice / Test Method (IS 9537)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2412",
-      "title": "1975*. Link clips shall be so arranged",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2412:1975",
+      "title": "Link clips for electrical wiring",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1653",
-      "title": "1972*,",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1653",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1653)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2667",
-      "title": "1976* ). In long",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2667",
+      "title": "Indian Standard Code of Practice / Test Method (IS 2667)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 34",
-      "title": "l9-1976f ).",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 34",
+      "title": "Indian Standard Code of Practice / Test Method (IS 34)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 3419",
-      "title": "1976*.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 3419:1989",
+      "title": "Fittings for rigid non-metallic conduits",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 50",
+      "standard_id": "IS 50:1980",
+      "title": "Lead and Scarlet Chromes",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 60",
+      "standard_id": "IS 60",
+      "title": "Indian Standard Code of Practice / Test Method (IS 60)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1258",
-      "title": "1979*",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1258:2005",
+      "title": "Bayonet lamp holders",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 374",
-      "title": "1979f",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 374:2019",
+      "title": "Electric Ceiling Type Fans — Specification ( Fourth Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9000",
-      "title": "(Part 11 )-1983t.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Code of Practice / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 10028",
-      "title": "( Part 2 )-1981f shall be carried",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 10028",
+      "title": "Indian Standard Code of Practice / Test Method (IS 10028)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1255",
-      "title": "1983J. The insulation resistance",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1255:1983",
+      "title": "Code of practice for installation and maintenance of power cables up to and including 33 kV rating",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "SP 30",
+      "standard_id": "SP 30:2023",
+      "title": "SP 30 : 2023: National Electrical Code Of India 2023 This standard is available as a pre-printed copy for purchase. However, if you still wish to download the soft copy of the Standard you may proceed with that. Print price :8330.00 INR (in India) (For Printed copies please contact BSBEdge.)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 310611
+  "clause_3_terminology": [
+    "Grade deration",
+    "Grade s",
+    "Grade of",
+    "Grade ification",
+    "Code of Practice for Electrical Wiring Installations",
+    "Fourth Revision"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 304754
 }

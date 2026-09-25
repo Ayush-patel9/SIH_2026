@@ -1,114 +1,210 @@
 {
   "is_number": "IS 15844",
+  "standard_id": "IS 15844:2010",
+  "title": "SPORTS FOOTWEAR — SPECIFICATION",
   "ia_identifier": "gov.in.is.15844.2010",
+  "division_code": "TXD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
   "clause_1_scope": "This standard prescribes the performance requirements of sports footwear.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 15298",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 2",
+      "standard_id": "IS 2:2022",
+      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1076 \n(Part  3)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 15298 (PART 1)",
+      "standard_id": "IS 15298 (Part 1):2011",
+      "title": "Personal Protective Equipment, Part 1: Test Methods for Footwear",
+      "division_code": "TXD",
+      "aspect": "Safety Standard",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 5914",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400 \n(Part  17)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400  (Part  10)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400 \n(Part  10)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15298  (Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15298 \n(Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6191",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400 \n(Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400  (Part  17)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15844",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1969",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 766",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400  (Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400 \n(Part  16)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400  (Part  16)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2454",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 7016",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 5914:1970",
+      "title": "Methods of physical testing of leather",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 14970",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 14970:2001",
+      "title": "Leather - Lastometer Grain Crack Test - Methods of Test",
+      "division_code": "FAD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6191",
+      "standard_id": "IS 6191:1971",
+      "title": "Methods of Micro-Biological Colour Fastness and Microscopical Tests for Leather",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7016",
+      "standard_id": "IS 7016",
+      "title": "Indian Standard Code of Practice / Test Method (IS 7016)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2454",
+      "standard_id": "IS 2454:1985",
+      "title": "Methods for determination of colour fastness of textile materials to arificial light (xenon lamp)",
+      "division_code": "TXD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1969",
+      "standard_id": "IS 1969:1985",
+      "title": "Methods for Determination of Breaking load and Elongation of Woven Textile Fabrics",
+      "division_code": "TXD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 766",
+      "standard_id": "IS 766:1988",
+      "title": "Method for determination of colour fastness of textile materials to rubbing",
+      "division_code": "TXD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400 (PART 1)",
+      "standard_id": "IS 3400 (Part 1):2012",
+      "title": "Methods of Test for Vulcanized Rubber, Part 1: Tensile Stress-Strain Properties",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400 (PART 17)",
+      "standard_id": "IS 3400 (Part 17):1974",
+      "title": "Methods of Test for Vulcanized Rubbers, Part XVII: Tear Strength - Angular Test Piece",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400",
+      "standard_id": "IS 3400",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3400)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400 (PART 16)",
+      "standard_id": "IS 3400 (Part 16):1974",
+      "title": "Methods of Test for Vulcanized Rubbers, Part XVI: Measurement of Cut Growth of Rubber by the Use of the Ross Flexing Machine",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15298",
+      "standard_id": "IS 15298",
+      "title": "Indian Standard Code of Practice / Test Method (IS 15298)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1076 (PART 3)",
+      "standard_id": "IS 1076 (Part 3):1985",
+      "title": "Preferred Numbers, Part 3: Guide to the Choice of Series of Preferred Numbers and of Series Containing More Rounded Values of Preferred Number",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400 (PART 10)",
+      "standard_id": "IS 3400 (Part 10):1977",
+      "title": "Methods of Test for Vulcanized Rubbers, Part X: Compression Set at Constant Strain",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 100",
+      "standard_id": "IS 100",
+      "title": "Indian Standard Code of Practice / Test Method (IS 100)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1076",
+      "standard_id": "IS 1076",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1076)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 84923
+  "clause_3_terminology": [
+    "Grade set",
+    "Grade and",
+    "SPORTS FOOTWEAR"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 73514
 }

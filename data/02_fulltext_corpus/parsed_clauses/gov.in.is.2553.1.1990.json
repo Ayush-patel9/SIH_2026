@@ -1,29 +1,49 @@
 {
-  "is_number": "IS 2553 (Part 1)",
+  "is_number": "IS 2553 (PART 1)",
+  "standard_id": "IS 2553 (Part 1):2018",
+  "title": "Part 1 : 2018: Safety Glass — Specification Part 1 Architectural, Building and General Uses ( Fourth Revision )",
   "ia_identifier": "gov.in.is.2553.1.1990",
-  "clause_1_scope": "This standard ( Part I ) prescribes the requirements and the methods of sampling and test for safety glass meant for general purposes such as for use in glazing windows, doors of buildings and rail- way coaches.",
+  "division_code": "CED",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Safety Glass (Quality Control) Order"
+  },
+  "clause_1_scope": "This standard ( Part I ) prescribes the requirements and the methods of sampling and test for safety glass meant for general purposes such as for use in glazing windows, doors of buildings and railway coaches.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 2553",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2553 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1382",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2553",
+      "title": "Indian Standard Code of Practice / Test Method (IS 2553)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2835",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2835:1987",
+      "title": "Flat transparent sheet glass",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 34128
+  "clause_3_terminology": [
+    "Grade of",
+    "Part 1 : 2018: Safety Glass",
+    "Specification Part 1 Architectural",
+    "Building and General Uses",
+    "Fourth Revision"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": []
+  },
+  "total_chars_parsed": 31860
 }

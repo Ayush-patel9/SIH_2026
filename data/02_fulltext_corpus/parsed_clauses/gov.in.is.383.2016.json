@@ -1,104 +1,52 @@
 {
   "is_number": "IS 383",
+  "standard_id": "IS 383:2016",
+  "title": "Coarse and Fine Aggregate for Concrete - Specification",
   "ia_identifier": "gov.in.is.383.2016",
+  "division_code": "CED",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
   "clause_1_scope": "3 TERMINOLOGY This Standard covers the requirements for aggregates, crushed or uncrushed, derived from natural sources, such as river terraces and riverbeds, glacial deposits, rocks, boulders and gravels, and manufactured aggregates produced from other than natural sources, for use in the production of concrete for normal structural purposes including mass concrete works.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 456",
-      "title": "‘Code  of  practice  for  plain  and  reinforced  concrete  (fourth  revisionY  and  requirements  for",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 6461 (PART 1)",
+      "standard_id": "IS 6461 (Part 1):1972",
+      "title": "Glossary of terms relating to cement concrete, Part I: Concrete aggregates",
+      "division_code": "CED",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2",
-      "title": "1 960",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 383",
-      "title": "Indian  Standard",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6461  (Part  1)",
-      "title": "and  the  following  shall  apply.",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2386  (Part  2)",
-      "title": "1. 00",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2386",
-      "title": "(Part  I)",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2386  (Part  6)",
-      "title": "is  not  less  than  95  percent.",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2386  (Part  1)",
-      "title": "on  the  same  sample.",
-      "relation_type": "SAMPLING_STANDARD"
-    },
-    {
-      "is_number": "IS 2386  (Part  4)",
-      "title": "shall  be  as  follows:",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2386  (Part  5)",
-      "title": ",  the  limits  being  set  by",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2386  (Part  7)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2386 \n(Part  1)",
-      "title": "shall  be  in  accordance  with",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2430",
-      "title": "The  amount  of  material  required  for  each  test",
-      "relation_type": "TEST_METHOD"
-    },
-    {
-      "is_number": "IS 4032",
-      "title": "and  water",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 14959 \n(Part  2)",
-      "title": "All  other  tests  shall  be  carried  out  as  described",
-      "relation_type": "TEST_METHOD"
-    },
-    {
-      "is_number": "IS 4905",
-      "title": ").",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2386  (Part  8)",
-      "title": "may",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9198",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 17",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 6461",
+      "standard_id": "IS 6461",
+      "title": "Indian Standard Code of Practice / Test Method (IS 6461)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 75131
+  "clause_3_terminology": [
+    "Grade O",
+    "Grade of",
+    "Grade d",
+    "Coarse and Fine Aggregate for Concrete"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "sulphur (S) content of the slag is 1 percent"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "10.1 Each consignment/bag of aggregate shall be"
+    ]
+  },
+  "total_chars_parsed": 66191
 }

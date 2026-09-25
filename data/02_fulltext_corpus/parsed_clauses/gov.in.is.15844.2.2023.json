@@ -1,182 +1,385 @@
 {
-  "is_number": "IS 15844 (Part 2)",
+  "is_number": "IS 15844 (PART 2)",
+  "standard_id": "IS 15844 (Part 2):2023",
+  "title": "Part 2 : 2023: Sports Footwear - Part 2 Performance Sports Footwear",
   "ia_identifier": "gov.in.is.15844.2.2023",
+  "division_code": "TXD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Footwear made from Leather and other materials (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "1.1 This standard prescribes the performance requirements of performance sports footwear used for jogging, running including trail running, adventure sport, trekking, climbing etc. 1.2 This standard does not cover the performance requirement for following: a) General purpose; and b) Professional sports footwear.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 3400 (Part 3)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15298 (Part1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6191 (Part 6)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6191 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15298",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 17011",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15844 \n(Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5914",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5914 (Part 8)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 8085 (Part 17)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15844 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6191",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6191 (Part 4)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15844",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15298 (Part \n1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 8085 (Part 18)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3400 \n(Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 7554",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 8085 \n\n\n(Part 4)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 2050",
+      "standard_id": "IS 2050:1991",
+      "title": "Glossary of terms relating to footwear",
+      "division_code": "TXD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1638",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1638:1969",
+      "title": "Sizes and Fitting of Footwear",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2050",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 15844 (PART 1)",
+      "standard_id": "IS 15844 (Part 1):2023",
+      "title": "Part 1 : 2023: Sports Footwear - Part 1 General Purpose",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": true,
+      "qco_order": "Footwear made from Leather and other materials (Quality Control) Order, 2024"
     },
     {
-      "is_number": "IS 8085 (Part 13)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 15298 (PART 1)",
+      "standard_id": "IS 15298 (Part 1):2011",
+      "title": "Personal Protective Equipment, Part 1: Test Methods for Footwear",
+      "division_code": "TXD",
+      "aspect": "Safety Standard",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 8085 (Part 19)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 5914 (PART 5/SEC 2)",
+      "standard_id": "IS 5914 (PART 5/SEC 2)",
+      "title": "Methods of physical testing of leather (IS 5914 (PART 5/SEC 2))",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 8085 \n\n\n(Part 15)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 6191 (PART 4)",
+      "standard_id": "IS 6191 (PART 4)",
+      "title": "Methods of Micro-Biological Colour Fastness and Microscopical Tests for Leather (IS 6191 (PART 4))",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 8085 (Part 20)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 15298",
+      "standard_id": "IS 15298",
+      "title": "Indian Standard Code of Practice / Test Method (IS 15298)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5914",
+      "standard_id": "IS 5914:1970",
+      "title": "Methods of physical testing of leather",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 105",
+      "standard_id": "IS 105",
+      "title": "Indian Standard Code of Practice / Test Method (IS 105)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5914 (PART 8)",
+      "standard_id": "IS 5914 (PART 8)",
+      "title": "Methods of physical testing of leather (IS 5914 (PART 8))",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15298 (PART 2)",
+      "standard_id": "IS 15298 (Part 2):2011",
+      "title": "Personal Protective Equipment, Part 2: Safety Footwear",
+      "division_code": "TXD",
+      "aspect": "Safety Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": true,
+      "qco_order": "Footwear made from Leather and other materials (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 7016 (PART 2)",
+      "standard_id": "IS 7016 (Part 2):1981",
+      "title": "Methods of test for coated and treated fabrics, Part 2: Determination of breaking strength and extension at break",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8085 (PART 13)",
+      "standard_id": "IS 8085 (PART 13)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8085 (PART 13))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8085 (PART 20)",
+      "standard_id": "IS 8085 (PART 20)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8085 (PART 20))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 16645",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 16645",
+      "title": "Indian Standard Code of Practice / Test Method (IS 16645)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 15298 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1966 (PART 2)",
+      "standard_id": "IS 1966 (Part 2):2009",
+      "title": "Textiles - Bursting Properties of Fabrics - Determination of Bursting Strength and Bursting Distension, Part 2: Pneumatic Method",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 8085 (Part 12)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 6191 (PART 6)",
+      "standard_id": "IS 6191 (PART 6)",
+      "title": "Methods of Micro-Biological Colour Fastness and Microscopical Tests for Leather (IS 6191 (PART 6))",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15844",
+      "standard_id": "IS 15844:2010",
+      "title": "SPORTS FOOTWEAR — SPECIFICATION",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400 (PART 3)",
+      "standard_id": "IS 3400 (Part 3):1987",
+      "title": "Methods of test for vulcanized rubbers, Part 3: Abrasion resistance using a rotating cylindrical drum device",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8085 (PART 4)",
+      "standard_id": "IS 8085 (PART 4)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8085 (PART 4))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15298 (PART1)",
+      "standard_id": "IS 15298 (PART1)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 15298 (PART1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400 (PART 1)",
+      "standard_id": "IS 3400 (Part 1):2012",
+      "title": "Methods of Test for Vulcanized Rubber, Part 1: Tensile Stress-Strain Properties",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7554",
+      "standard_id": "IS 7554:2009",
+      "title": "Toe puff and counter stiffener",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8085 (PART 18)",
+      "standard_id": "IS 8085 (PART 18)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8085 (PART 18))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8085 (PART 19)",
+      "standard_id": "IS 8085 (PART 19)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8085 (PART 19))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8085 (PART 12)",
+      "standard_id": "IS 8085 (PART 12)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8085 (PART 12))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8085 (PART 17)",
+      "standard_id": "IS 8085 (PART 17)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8085 (PART 17))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6191 (PART 2)",
+      "standard_id": "IS 6191 (PART 2)",
+      "title": "Methods of Micro-Biological Colour Fastness and Microscopical Tests for Leather (IS 6191 (PART 2))",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 17098",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 17098",
+      "title": "Indian Standard Code of Practice / Test Method (IS 17098)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 7016 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 17011",
+      "standard_id": "IS 17011:2018",
+      "title": "Chemical Requirements for Footwear and Footwear Materials",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "CHEMICAL_ANALYSIS",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 15844 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 8085 (PART 15)",
+      "standard_id": "IS 8085 (PART 15)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8085 (PART 15))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 8085 (Part 4)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 0",
+      "standard_id": "IS 0",
+      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 15298 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 6191",
+      "standard_id": "IS 6191:1971",
+      "title": "Methods of Micro-Biological Colour Fastness and Microscopical Tests for Leather",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1966 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 7016",
+      "standard_id": "IS 7016",
+      "title": "Indian Standard Code of Practice / Test Method (IS 7016)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8085",
+      "standard_id": "IS 8085",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8085)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1966",
+      "standard_id": "IS 1966:1976",
+      "title": "Methods for determination of bursting strength and bursting distention of fabrics - Diaphragm method",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400",
+      "standard_id": "IS 3400",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3400)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -185,5 +388,16 @@
     "Heel to Toe Drop",
     "Rigid Sole"
   ],
-  "total_chars_parsed": 30960
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "i) Zero drop (0 mm) DO",
+      "il) Low drop (1 mm - 4 mm) D1-4",
+      "iii) Mid drop (5 mm - 9 mm) D5-9",
+      "iv) High drop (10 + mm) D10+"
+    ]
+  },
+  "total_chars_parsed": 30235
 }

@@ -1,54 +1,55 @@
 {
   "is_number": "IS 1608",
+  "standard_id": "IS 1608:2005",
+  "title": "Mechanical testing of metals - Tensile Testing",
   "ia_identifier": "gov.in.is.1608.2005",
+  "division_code": "MED",
+  "aspect": "Methods of tests",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
   "clause_1_scope": "This International Standard specifies the method for tensile testing of metallic materials and defines the mechanical properties which can be determined at ambient temperature.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1608",
-      "title": "(2005) : Mechanical testing of metals - Tensile",
-      "relation_type": "TEST_METHOD"
-    },
-    {
-      "is_number": "IS 2005",
-      "title": "BUREAU OF INDIAN STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 919",
-      "title": "( Part 2 ) : 1993 ISO systems",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3711",
-      "title": "Wrought steel —",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3803",
-      "title": "( Part 1 ) : 1989 Steel —",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1828",
-      "title": "(Part 1 ) : 1991 Metallic",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 1",
-      "title": "608 : 2005",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 60",
-      "title": "»— 300 Book«.",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "'Rules for",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 5",
+      "standard_id": "IS 5:2007",
+      "title": "Colors for Ready Mixed Paints and Enamels",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 76386
+  "clause_3_terminology": [
+    "Grade s",
+    "Grade of",
+    "Mechanical testing of metals",
+    "Tensile Testing"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "elongation of a gauge length (L ) of 80 mm",
+      "Elongation after fracture (L u - L ) shall be determined to the nearest 0,25 mm",
+      "elongation is less than 5 %"
+    ],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 72780
 }

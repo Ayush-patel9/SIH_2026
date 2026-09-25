@@ -1,39 +1,109 @@
 {
   "is_number": "IS 1199",
+  "standard_id": "IS 1199:1959",
+  "title": "Methods of sampling and analysis of concrete",
   "ia_identifier": "gov.in.is.1199.1959",
+  "division_code": "CED",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
   "clause_1_scope": "1.1 This standard covers the methods of taking samples of concrete and their analysis.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1199",
-      "title": "(1959) : Methods of sampling and analysis of",
-      "relation_type": "SAMPLING_STANDARD"
-    },
-    {
       "is_number": "IS 1",
-      "title": "1199 -1959",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 516",
-      "title": "1959 Methods of Tests for Strength of Concrete.",
-      "relation_type": "TEST_METHOD"
+      "standard_id": "IS 516:1959",
+      "title": "Method of Tests for Strength of Concrete",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 269",
-      "title": "1958 Specification for Ordinary, Rapid- Hardening and",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 383",
-      "title": "1952 Specification for Coarse and Fine Aggregates",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 269:2013",
+      "title": "Specification for Ordinary Portland Cement, 33 Grade",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
     },
     {
       "is_number": "IS 460",
-      "title": "1953 Specification for Test Sieves",
-      "relation_type": "TEST_METHOD"
+      "standard_id": "IS 460",
+      "title": "Indian Standard Code of Practice / Test Method (IS 460)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 380",
+      "standard_id": "IS 380:2023",
+      "title": "French Chalk Technical - Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 30",
+      "standard_id": "IS 30",
+      "title": "Indian Standard Code of Practice / Test Method (IS 30)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Code of Practice / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 383",
+      "standard_id": "IS 383:2016",
+      "title": "Coarse and Fine Aggregate for Concrete - Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 92286
+  "clause_3_terminology": [
+    "Grade VBR",
+    "Methods of sampling and analysis of concrete"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 89587
 }

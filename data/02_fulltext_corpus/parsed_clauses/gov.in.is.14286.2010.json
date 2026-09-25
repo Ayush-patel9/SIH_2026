@@ -1,74 +1,62 @@
 {
   "is_number": "IS 14286",
+  "standard_id": "IS 14286:2010",
+  "title": "Crystalline Silicon Terrestrial Photovoltaic (PV) modules - Design Qualification And Type Approval",
   "ia_identifier": "gov.in.is.14286.2010",
-  "clause_1_scope": null,
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Solar Photovoltaics, Systems, Devices and Components Goods (Requirements for Compulsory Registration) Order"
+  },
+  "clause_1_scope": "This Indian Standard (IS 14286) covers Crystalline Silicon Terrestrial Photovoltaic (PV) modules - Design Qualification And Type Approval. This Indian Standard (First Revision) which is identical with IEC 61215 :2005 'Crystalline silicon terrestrial photovoltaic (PV) modules — Design qualification and type approval' issued by the International Electrotechnical Commission (IEC) was adopted by the on the recommendation of the Solar Photovoltaic Energy Systems Sectional Committee and approval of the Electrotechnical Division Council. This standard was first published in 1995. This revision has been undertaken to consider the developments that have taken place since the last revision and also to align it with the latest version of IEC 61 21 5 : 2005. The text of the IEC Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: a) Wherever the words International Standard\" appear referring to this standard, they should be read as Indian Standard'. b) Comma (",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 14286",
-      "title": "(2010) :  Crystalline  Silicon  Terrestrial",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 800",
+      "standard_id": "IS 800:2007",
+      "title": "General Construction In Steel - Code of Practice",
+      "division_code": "MTD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2010",
-      "title": "BUREAU     OF     INDIAN     STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 60",
+      "standard_id": "IS 60",
+      "title": "Indian Standard Code of Practice / Test Method (IS 60)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 9001",
-      "title": "(Part  1 ):  1 984'>  Guidance  for",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9000",
-      "title": "(Part  19/Sec  1  to.  5)  :  1986  Basic",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 10673",
-      "title": "Sampling  plans  and",
-      "relation_type": "SAMPLING_STANDARD"
-    },
-    {
-      "is_number": "IS 13736  (Part  2/Sec  1)",
-      "title": "Classification  of  environmental  conditions:",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12763",
-      "title": "Procedures  for",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12762  (Part  1)",
-      "title": "Photovoltaic",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12762  (Part  2)",
-      "title": "Photovoltaic",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12762  (Part  3)",
-      "title": "Photovoltaic",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12762  (Part  9)",
-      "title": "Photovoltaic",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12762  (Part  10)",
-      "title": "Photovoltaic",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "1 960  'Rules  for  rounding  off  numerical  values  (revised)'.  The  number  of  significant  places  retained  in  the",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 111088
+  "clause_3_terminology": [
+    "Grade B",
+    "Grade Approval",
+    "Grade ification",
+    "Crystalline Silicon Terrestrial Photovoltaic",
+    "modules",
+    "Design Qualification And Type Approval"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each module shall carry the following clear and indelible markings:"
+    ]
+  },
+  "total_chars_parsed": 95952
 }

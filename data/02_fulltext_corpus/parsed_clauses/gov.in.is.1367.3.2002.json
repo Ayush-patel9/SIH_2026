@@ -1,79 +1,71 @@
 {
-  "is_number": "IS 1367 (Part 3)",
+  "is_number": "IS 1367 (PART 3)",
+  "standard_id": "IS 1367 (Part 3):2002",
+  "title": "Technical Supply Conditions for Threaded Steel Fasteners, Part 3: Mechanical Properties of Fasteners Made of Carbon Steel and Alloy Steel - Bolts, Screws and Studs",
   "ia_identifier": "gov.in.is.1367.3.2002",
+  "division_code": "MTD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Bolts, Nuts and Fasteners (Quality Control) Order, 2023"
+  },
   "clause_1_scope": "This part of ISO 898 specifies the mechanical properties of bolts, screws and studs made of carbon steel and alloy steel when tested at an ambient temperature range of 10 °C to 35 °C. Products conforming to the requirements of this part of ISO 898 are evaluated only in the ambient temperature range and may not retain the specified mechanical and physical properties at higher and lower temperatures. Attention is drawn to annex A which provides examples of lower yield stress and stress at 0,2 % non-proportional elongation at elevated temperatures. At temperatures lower than the ambient temperature range, a significant change in the properties, particularly impact strength, may occur. When fasteners are to be used above or below the ambient temperature range it is the responsibility of the user to ensure that the mechanical and physical properties are suitable for his particular service conditions. Certain fasteners may not fulfill the tensile or torsional requirements of this part of ISO 898 because of the geometry of the head which reduces the shear area in the head as compared to the stress area in the thread such as countersunk, raised countersunk and cheese heads (see clause 6). This part of ISO 898 applies to bolts, screws and studs — with coarse pitch thread M1 ,6 to M39, and fine pitch thread M8 x 1 to M39 x 3; — with triangular ISO thread in accordance with ISO 68-1 ; — with diameter/pitch combinations in accordance with ISO 261 and ISO 262; — with thread tolerance in accordance with ISO 965-1 and ISO 965-2; — made of carbon steel or alloy steel. It does not apply to set screws and similar threaded fasteners not under tensile stresses (see ISO 898-5). It does not specify requirements for such properties as — weldability; — corrosion-resistance; — ability to withstand temperatures above + 300 °C (+ 250 °C for 10.9 ) or below - 50 °C; — resistance to shear stress; — fatigue resistance. NOTE The designation system of this part of ISO 898 may be used for sizes outside the limits laid down in this clause (e.g. d > 39 mm), provided that all mechanical requirements of the property classes are met. IS 1367 (Part 3) : 2002 ISO 898-1 : 1999",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1367(Part3)",
-      "title": "ISO 898-1 :1999",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2002",
-      "title": "BUREAU OF INDIAN STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 70",
+      "standard_id": "IS 70:1980",
+      "title": "cuprous oxide for paints",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1",
-      "title": "367 which covers the Technical supply conditions for threaded steel fasteners' was originally published",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1367",
-      "title": "should be brought out into several parts, each part covering a",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 421",
-      "title": "8 ( Part 1 ) : 1 999 ISO General purpose metric Identical",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1367 (Part 3)",
-      "title": "ISO 898-1 : 1999",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 14962",
-      "title": "( Part 1 ) : 2001 ISO General purpose metric",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1367 (Part9/Sec1)",
-      "title": "Technical supply",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1367 (Part9/Sec2)",
-      "title": "Technical supply",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1500",
-      "title": "Method for Brinell hardness test for",
-      "relation_type": "TEST_METHOD"
-    },
-    {
-      "is_number": "IS 1501",
-      "title": "( Part 1 ) : 1984 1 > Method for Vickers hardness",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1586",
-      "title": "Method for Rockwell hardness test for",
-      "relation_type": "TEST_METHOD"
-    },
-    {
-      "is_number": "IS 1608",
-      "title": "Mechanical testing of metals",
-      "relation_type": "TEST_METHOD"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "1 960 'Rules for",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1367",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1367)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 66078
+  "clause_3_terminology": [
+    "Technical Supply Conditions for Threaded Steel Fasteners",
+    "Part 3: Mechanical Properties of Fasteners Made of Carbon Steel and Alloy Steel",
+    "Bolts",
+    "Screws and Studs"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "yield stress and stress at 0,2 %",
+      "yield stress R eL (or stress at 0,2 %",
+      "yield stress R eL min (or minimum stress at 0,2 %",
+      "elongation /? p o,2 b x100%",
+      "yield stress R^_ cannot be determined, it is permissible to measure the stress at 0,2 %",
+      "minimum elongation after fracture, A m{n , as a percentage.",
+      "minimum tensile strength R m min are equal to or greater than the nominal values (see table 3",
+      "Minimum tensile strength.",
+      "Minimum tensile properties apply to products of nominal length / ^ 2",
+      "maximum strength consideration (e."
+    ],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Mechanical fasteners manufactured to the requirements of this International Standard shall be marked in"
+    ]
+  },
+  "total_chars_parsed": 61706
 }

@@ -1,67 +1,115 @@
 {
   "is_number": "IS 17633",
+  "standard_id": "IS 17633:2022",
+  "title": "Tables and Desks - Specification",
   "ia_identifier": "gov.in.is.17633.2022",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Furniture (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "1.1 This standard covers the requirements relating to the performance and safety that is, strength, stability and durability of tables and desks to be used for in a seated and/or standing positions, used by adults. 12 This standard applies to completely manufactured/ fabricated tables and desks. It also applies to ready-to-assemble units; in that case the requirements of this standard shall apply to the assembled units.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 3498",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 11679",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3663",
+      "standard_id": "IS 3663:2018",
+      "title": "Dimensions of Tables and Chairs for Office Purposes (Third Revision)",
+      "division_code": "LITD",
+      "aspect": "Dimensions",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 17637",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 17637:2021",
+      "title": "Performance Requirements of Surface Finishes for Furniture Applications",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 16774",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 150",
+      "standard_id": "IS 150:1950",
+      "title": "Ready mixed paint, brushing, finishing, stoving for enamel color as required",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 17004",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 17004:2018",
+      "title": "Testing Methods for Processed Glass",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 3400 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 2553 (PART 1)",
+      "standard_id": "IS 2553 (Part 1):2018",
+      "title": "Part 1 : 2018: Safety Glass — Specification Part 1 Architectural, Building and General Uses ( Fourth Revision )",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": true,
+      "qco_order": "Safety Glass (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 3400 (PART 2)",
+      "standard_id": "IS 3400 (Part 2):2003",
+      "title": "Methods of Test for Vulcanized Rubber, Part 2: Rubber, Vulcanized or Thermoplastic - Determination of Hardness (Hardness Between 10 IRHD and 100 IRHD)",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 7888",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 7888:1976",
+      "title": "Methods of Test for Flexible Polyurethane Foam",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 6188",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 16774",
+      "standard_id": "IS 16774",
+      "title": "Indian Standard Code of Practice / Test Method (IS 16774)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 3663",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 2553",
+      "standard_id": "IS 2553",
+      "title": "Indian Standard Code of Practice / Test Method (IS 2553)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 5823",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2553 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 17633",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3400",
+      "standard_id": "IS 3400",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3400)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -73,5 +121,13 @@
     "Surface Finish Tests",
     "Tables and Desks"
   ],
-  "total_chars_parsed": 52506
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "9.1 Each table shall be indelibly and legibly marked"
+    ]
+  },
+  "total_chars_parsed": 51285
 }

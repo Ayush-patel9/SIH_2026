@@ -1,67 +1,165 @@
 {
   "is_number": "IS 277",
+  "standard_id": "IS 277:2018",
+  "title": "Galvanized Steel Strips and Sheets (Plain & Corrugated)- Specification (Seventh Revision)",
   "ia_identifier": "gov.in.is.277.2018",
+  "division_code": "MTD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "1.1 This standard covers the requirements of plain galvanized steel sheets and strips (coils) and corrugated galvanized sheets. 1.2 Galvanized steel sheets covered by this standard are intended to be used for purposes such as paneling, roofing, applications requiring lock forming, etc. 1.3 Requirements of galvannealed and electrogalvanized steels are not covered in this standard. 1.4 The requirements of zinc and zinc alloy coated steel sheets for automotive and engineering applications are being covered in a separate standard which is under development.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1956 (Part 4)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6745",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 513",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1079",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 228",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 209",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 277",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1608",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 13229",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2629",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1956 (PART 4)",
+      "standard_id": "IS 1956 (Part 4):2013",
+      "title": "Part 4 : 2013: Glossary of Terms Relating to Iron and Steel - Part 4 Flat Products",
+      "division_code": "MTD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 8910",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 8910:2010",
+      "title": "General technical delivery requirements for steel and steel products",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 228",
+      "standard_id": "IS 228",
+      "title": "Indian Standard Code of Practice / Test Method (IS 228)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2629",
+      "standard_id": "IS 2629:1985",
+      "title": "Recommended Practice for Hot-Dip Galvanizing of Iron and Steel",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 209",
+      "standard_id": "IS 209:1992",
+      "title": "Zinc Ingot",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13229",
+      "standard_id": "IS 13229:1991",
+      "title": "Zinc for galvanizing",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 0",
+      "standard_id": "IS 0",
+      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1608",
+      "standard_id": "IS 1608:2005",
+      "title": "Mechanical testing of metals - Tensile Testing",
+      "division_code": "MED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6745",
+      "standard_id": "IS 6745:1972",
+      "title": "Method for determination of mass of zinc coating on zinc coated iron and steel articles",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 513",
+      "standard_id": "IS 513:2008",
+      "title": "Cold reduced low carbon steel sheets and strips",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1079",
+      "standard_id": "IS 1079:2017",
+      "title": "Hot Rolled Carbon Steel Sheet, Plate and Strip - Specification",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16163",
+      "standard_id": "IS 16163",
+      "title": "Indian Standard Code of Practice / Test Method (IS 16163)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875 (PART 2)",
+      "standard_id": "IS 875 (Part 2):1987",
+      "title": "Code of Practice for Design Loads (Other Than Earthquake) For Buildings And Structures, Part 2: Imposed Loads",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1956",
+      "standard_id": "IS 1956",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1956)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875",
+      "standard_id": "IS 875",
+      "title": "Indian Standard Code of Practice / Test Method (IS 875)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -71,5 +169,20 @@
     "Normal Spangle (N)",
     "Minimized Spangle (M)"
   ],
-  "total_chars_parsed": 29426
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "Elongation values shall be reduced by 4 units for thickness 0.5 mm"
+    ],
+    "chemical_properties": [
+      "silicon content shall not be less than 0.10 percent",
+      "silicon content shall not be less than 0.030 percent",
+      "Nitrogen content of the steel shall not be more than 0.007 percent",
+      "Nitrogen content shall not exceed 0.012 percent"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "17.1 Manufacturer’s name or trade-mark, class of"
+    ]
+  },
+  "total_chars_parsed": 28733
 }

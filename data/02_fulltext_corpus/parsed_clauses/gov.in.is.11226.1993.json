@@ -1,89 +1,61 @@
 {
   "is_number": "IS 11226",
+  "standard_id": "IS 11226:1993",
+  "title": "Leather safety footwear having direct moulded rubber sole",
   "ia_identifier": "gov.in.is.11226.1993",
+  "division_code": "CHD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Footwear made from Leather and other materials (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "This standard prescribes the requirements, methods of sampling and tests for leather safeU footwear having steel toe caps and direct moulded rubber soles.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 4778",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 5677",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 10",
+      "standard_id": "IS 10",
+      "title": "Indian Standard Code of Practice / Test Method (IS 10)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 7554",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5520",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3840",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1638",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5041",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5867",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2050",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6519",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1720",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 10945",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1895",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5852",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5868",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 11226",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 13",
+      "standard_id": "IS 13",
+      "title": "Indian Standard Code of Practice / Test Method (IS 13)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 49114
+  "clause_3_terminology": [
+    "Grade 2",
+    "Grade 1",
+    "Grade 3",
+    "Leather safety footwear having direct moulded rubber sole"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "7.1 Sizes of the footwear and trade-mark, if",
+      "any, shall be incorporated in the mould, so"
+    ]
+  },
+  "total_chars_parsed": 46286
 }

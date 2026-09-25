@@ -1,118 +1,277 @@
 {
-  "is_number": "IS 16102 (Part 1)",
+  "is_number": "IS 16102 (PART 1)",
+  "standard_id": "IS 16102 (Part 1):2012",
+  "title": "Self - Ballasted LED Lamps for General Lighting Services, Part 1: Safety Requirements",
   "ia_identifier": "gov.in.is.16102.1.2012",
+  "division_code": "ETD",
+  "aspect": "Safety Standard",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "LED Lighting (CRS) Order"
+  },
   "clause_1_scope": "This standard (Part 1) specifies the safety and interchangeabihty requirements, together with the test methods and conditions, required to show compliance of LED lamps with integrated means for stable operation (self-ballasted LED lamps), intended for domestic and similar general lighting purposes, having, a) a rated wattage up to 60 W; b) a rated voltage of d.c. supplies up to 250 V or a.c. supplies up to 1 000 V at 50 Hz; and c) caps according to Table 1 . Recommendations for batch testing are given in Annex C of IS 16103 (Part 1) : 2012 'LED modules for general lighting: Part 1 Safety requirements'. NOTES 1 Where in this standard the term \"lamp(s)\" is used, it is understood to stand for \"self-ballasted LED lamp(s)\", except where it is obviously assigned to other types of lamps. 2 Higher wattage lamp is under consideration. Annex A provides an overview of systems composed of LED system and control gear.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 16108",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 16102",
+      "standard_id": "IS 16102",
+      "title": "Indian Standard Code of Practice / Test Method (IS 16102)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 15687  (Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 10322  (Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 8913",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15518 \n(Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 11000",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 16103",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15885",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 16103 (PART 1)",
+      "standard_id": "IS 16103 (Part 1):2012",
+      "title": "LED Modules for General Lighting, Part 1: Safety Requirements",
+      "division_code": "ETD",
+      "aspect": "Safety Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 16101",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15885 \n(Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 16001",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 16102  (Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15518",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 16103  (Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 16002  (Part  2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15885  (Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4261",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 16101:2012",
+      "title": "General Lighting - LEDs and LED Modules - Terms and Definitions",
+      "division_code": "ETD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9206",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9206:1979",
+      "title": "Dimensions of caps for tungsten filament general service electric lamps",
+      "division_code": "PGD",
+      "aspect": "Dimensions",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8913",
+      "standard_id": "IS 8913:1978",
+      "title": "Methods of measurement of lamp cap temperature rise",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16108",
+      "standard_id": "IS 16108:2012",
+      "title": "Photobiological Safety of Lamps and Lamp Systems",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15687 (PART 1)",
+      "standard_id": "IS 15687 (Part 1):2006",
+      "title": "Single-capped fluorescent lamps, Part 1: Safety requirements",
+      "division_code": "GEN",
+      "aspect": "Safety Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15885 (PART 1)",
+      "standard_id": "IS 15885 (Part 1):2011",
+      "title": "Safety of Lamp Controlgear, Part 1: General Requirements",
+      "division_code": "PGD",
+      "aspect": "Safety Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10322 (PART 1)",
+      "standard_id": "IS 10322 (Part 1):2014",
+      "title": "Part 1 : 2014: Luminaires Part 1 General Requirements and Tests",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15518 (PART 1)",
+      "standard_id": "IS 15518 (Part 1):2004",
+      "title": "Safety Requirements for Incandescent Lamps, Part 1: Tungsten Filament Lamps for Domestic and Similar General Lighting Purposes",
+      "division_code": "ETD",
+      "aspect": "Safety Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15518",
+      "standard_id": "IS 15518",
+      "title": "Indian Standard Code of Practice / Test Method (IS 15518)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 650",
+      "standard_id": "IS 650:1991",
+      "title": "Specification for Standard Sand for Testing of Cement",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11000 (PART 2/SEC 1)",
+      "standard_id": "IS 11000 (PART 2/SEC 1)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 11000 (PART 2/SEC 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4261",
+      "standard_id": "IS 4261:2001",
+      "title": "Glossary of Terms Relating to Paper- and Pulp-based Packaging Materials",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16001",
+      "standard_id": "IS 16001:2012",
+      "title": "Social accountability at the work Place - Requirments",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16002 (PART 2)",
+      "standard_id": "IS 16002 (Part 2):2012",
+      "title": "Welding - Test for Shop Primers in Relation to Welding and Allied Processes, Part 2: Welding Properties of Shop Primers",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15885",
+      "standard_id": "IS 15885",
+      "title": "Indian Standard Code of Practice / Test Method (IS 15885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 16104",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 16104:2012",
+      "title": "d.c.OR a.c. Supplied Electronic Control Gear for LED Modules - Performance Requirements",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 16102",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 16103",
+      "standard_id": "IS 16103",
+      "title": "Indian Standard Code of Practice / Test Method (IS 16103)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15687",
+      "standard_id": "IS 15687",
+      "title": "Indian Standard Code of Practice / Test Method (IS 15687)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10322",
+      "standard_id": "IS 10322",
+      "title": "Indian Standard Code of Practice / Test Method (IS 10322)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11000",
+      "standard_id": "IS 11000",
+      "title": "Indian Standard Code of Practice / Test Method (IS 11000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16002",
+      "standard_id": "IS 16002",
+      "title": "Indian Standard Code of Practice / Test Method (IS 16002)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Self",
     "Type",
-    "Rated",
-    "Cap",
-    "Live",
-    "Acceptance",
-    "Inspection",
+    "Rated Voltage",
+    "Rated Wattage",
+    "Rated Frequency",
+    "Live Part",
+    "Type Test",
+    "Type Test Sample",
+    "Acceptance Test",
+    "Inspection Test Quantity (ITQ)",
     "Batch"
   ],
-  "total_chars_parsed": 42979
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "5.1 Lamps shall be clearly and durably marked with"
+    ]
+  },
+  "total_chars_parsed": 37532
 }

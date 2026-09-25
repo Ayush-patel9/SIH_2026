@@ -1,65 +1,143 @@
 {
   "is_number": "IS 1786",
+  "standard_id": "IS 1786:2008",
+  "title": "High strength deformed steel bars and wires for concrete reinforcement-",
   "ia_identifier": "gov.in.is.1786.2008",
+  "division_code": "CED",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "1.1 This standard covers the requirements of deformed steel bars and wires for use as reinforcement in concrete, in the following strength grades: a) Fe415,Fe415D; b) Fe 500, Fe SOQD; c) Fe 550, Fe 550D; and d) Fe 600. NOTES 1 Ths Tigures following' the s^rnbol F? indiCiitc th? sncc^ficd minimum 0.2 percent proof stress or yield stress in N/mm-. 2 The letter D following the strength grade indicates the category with same specified minimum 0.2 percent proof stress/yield stres.s but with enhanced specified minimum percentage elongation. 1 .2 This standard allows the chemical composition and carbon equivalent to be limited so that the material can be readily welded by conventional welding procedures. Material not conforming to these limits is generally difficult to weld for which special care and precautions will have to be exercised, 1.3 This standard applies to hot-rolled steel without subsequent treatment, or to hot-rolled steel with controlled cooling and tempering and to cold-worked steel. The production process is at the discretion of the manufacturer. 1 .4 This standard also applies to reinforcing bars and wires supplied in coil form but the requirements of this Indian Standard apply to the straightened product. 1 .5 Tuis standard also applies to remforcing bars and wires which may be subsequently coated. 1.6 Deformed bars produced by re-rolling finished products such as plates and rails (virgin or used or scrap), or by rolling material for which the metallurgical history is not fully documented or not known, are not acceptable as per this Indian Standard.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1139",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1786",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 2",
+      "standard_id": "IS 2:2022",
+      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 228",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 228",
+      "title": "Indian Standard Code of Practice / Test Method (IS 228)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9417",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9417:2018",
+      "title": "Welding of High Strength steel Bars for Reinforced Concrete Construction - Recommendations (Second Revision)",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1608",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1387",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2770  (Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1599",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 2770 (PART 1)",
+      "standard_id": "IS 2770 (Part 1):1967",
+      "title": "Methods of testing bond in reinforced concrete, Part 1: Pull-out test",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2062",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2062:2011",
+      "title": "Hot Rolled Medium and High Tensile Structural Steel",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 1608",
+      "standard_id": "IS 1608:2005",
+      "title": "Mechanical testing of metals - Tensile Testing",
+      "division_code": "MED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1599",
+      "standard_id": "IS 1599:2012",
+      "title": "Metallic Materials - Bend Test",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1387",
+      "standard_id": "IS 1387:1993",
+      "title": "General requirments for the supply of metallurgical materials",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2770",
+      "standard_id": "IS 2770",
+      "title": "Indian Standard Code of Practice / Test Method (IS 2770)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Batch",
     "Bundle",
     "Elongation",
-    "Longitudinal",
-    "Nominal",
-    "times",
-    "Percentage",
-    "Tensile",
-    "Transverse",
-    "Yield"
+    "Longitudinal Rib",
+    "Nominal Diameter or Size",
+    "Nominal Mass",
+    "Nominal Perimeter of a Deformed BarAVire",
+    "times the nominal diameter",
+    "Percentage Total Elongation at Maximum",
+    "Tensile Strength",
+    "Transverse Rib",
+    "Yield Stress"
   ],
-  "total_chars_parsed": 63324
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "carbon equivalent above 0.42 percent",
+      "carbon shall be restricted to a maximum of 0.15 percent",
+      "Nitrogen content of the steel should not exceed 0.012 percent",
+      "nitrogen contents up to 0.025 percent"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "13.1 The manufacturer or supplier shall have ingots,"
+    ]
+  },
+  "total_chars_parsed": 54907
 }

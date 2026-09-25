@@ -1,101 +1,150 @@
 {
-  "is_number": "IS 1489 (Part 1)",
+  "is_number": "IS 1489 (PART 1)",
+  "standard_id": "IS 1489 (Part 1):2015",
+  "title": "Part 1 : 2015: Portland Pozzolana Cement - Specification Part 1 Fly Ash Based (Fourth Revision",
   "ia_identifier": "gov.in.is.1489.1.1991",
-  "clause_1_scope": "This standard ( Part 1 ) covers the manufacture, physical and chemical requirements of Portland- pozzolana cement using only fly ash pozzolana.",
+  "division_code": "CED",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Cement (Quality Control) Order, 2023"
+  },
+  "clause_1_scope": "This standard ( Part 1 ) covers the manufacture, physical and chemical requirements of Portlandpozzolana cement using only fly ash pozzolana.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 4031 (Part 3)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12154",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4031 \n(Part 10)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 1489",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1489",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1489)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 3535",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 2",
+      "standard_id": "IS 2:2022",
+      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 4031",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 4031",
+      "title": "Indian Standard Code of Practice / Test Method (IS 4031)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 3812 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 4031 (PART 3)",
+      "standard_id": "IS 4031 (Part 3):1988",
+      "title": "Methods of physical tests for hydraulic cement, Part 3: Determination of soundness",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 12174",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 4031 (PART 10)",
+      "standard_id": "IS 4031 (Part 10):1988",
+      "title": "Methods of physical tests for hydraulic cement, Part 10: Determination of drying shrinkage",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 4905",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 11761",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 531",
+      "standard_id": "IS 531:1981",
+      "title": "Leaded brass strips for instrument parts",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 3812",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 630",
+      "standard_id": "IS 630:2005",
+      "title": "Bicycle Spokes (Plain) and Nipples for Spokes - Specifiation",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1727",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 269",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 11653",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 650",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 11652",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3812 (PART 1)",
+      "standard_id": "IS 3812 (Part 1):2013",
+      "title": "Specification for Pulverized Fuel Ash, Part 1: For Use as Pozzolana in Cement, Cement Mortar and Concrete",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 12423",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 12423:1988",
+      "title": "Method for colorimetric analysis of hydraulic cement",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2580",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3812",
+      "standard_id": "IS 3812",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3812)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Pozzolana"
+    "Pozzolana",
+    "Grade deration",
+    "Part 1 : 2015: Portland Pozzolana Cement",
+    "Specification Part 1 Fly Ash Based",
+    "Fourth Revision"
   ],
-  "total_chars_parsed": 39830
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "compressive strength in lime reactivity test from 5 MPa",
+      "compressive strength as 16 MPa",
+      "compressive strength from 31 MPa"
+    ],
+    "chemical_properties": [
+      "ash constituent shall be not less than 15 percent",
+      "chloride content in cement shall not exceed 0. 1 percent",
+      "chloride content shall not exceed 0.05 percent"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 35633
 }

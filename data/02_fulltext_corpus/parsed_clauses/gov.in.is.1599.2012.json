@@ -1,44 +1,90 @@
 {
   "is_number": "IS 1599",
+  "standard_id": "IS 1599:2012",
+  "title": "Metallic Materials - Bend Test",
   "ia_identifier": "gov.in.is.1599.2012",
-  "clause_1_scope": null,
+  "division_code": "MTD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 1599) covers Metallic Materials - Bend Test. 0,1 This Indian Standard ( Second Revision ) was adopted by the Indian Standards Institution on 28 February 1985, after the draft finalized by the Methods of Physical Tests Sectional Committee had been approved by the Structural and Metals Division Council. 0.2 This standard was first published in 1960 and was revised in 1974. While reviewing this standard in the light of the work done by ISO/TC 164 'Mechanical Testing of Metals' at the international level, the Sectional Committee responsible for this standard decided to revise this standard so as to have a single Indian Standard on Method for bend test amalgamating three other Indian Standards on the subject. 0.2.1 This standard thus supersedes the following Indian Standards: IS : 1692-1974 Method for simple bend testing of steel sheet and strip less than 3 mm thick IS : 3260-1965 Method for bend test for copper and copper alloys IS: 4598-1968 Method for single bend test for aluminium and aluminium alloy sheet and strip of thickness b",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1599",
-      "title": "(2012) : Metallic Materials",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 1692",
-      "title": "1974, IS : 3260-1965",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4598",
-      "title": "1968 )",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1",
-      "title": "1599 - 1985",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1692",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1692)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 3260",
-      "title": "1965 Method for bend test for copper and copper alloys",
-      "relation_type": "TEST_METHOD"
+      "standard_id": "IS 3260",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3260)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4598",
+      "standard_id": "IS 4598",
+      "title": "Indian Standard Code of Practice / Test Method (IS 4598)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2",
-      "title": "1960*.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2:2022",
+      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 15",
-      "title": "*9-1985",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 15:1973",
+      "title": "Seedlac",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 15931
+  "clause_3_terminology": [
+    "Grade bruary",
+    "Metallic Materials",
+    "Bend Test"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 14355
 }

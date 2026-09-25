@@ -1,28 +1,50 @@
 {
   "is_number": "IS 2112",
+  "standard_id": "IS 2112:2014",
+  "title": "Silver and Silver Alloys, Jewellery/Artefacts - Fineness and Marking - Specification ( Third Revision )",
   "ia_identifier": "gov.in.is.2112.2003",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Silver Jewellery Hallmarking Order"
+  },
   "clause_1_scope": "1.1 This standard specifies: a) Three grades of fine silver, and b) Five grades of silver alloys used in the manufacture of jewellery/artefacts of silver based on their silver content. 1.2 This standard also specifies the guidelines for marking of purity and other details on tested silver jewellery/artefacts. NOTE — Artefacts covers medallions and coins provided the purity of silver alloy for artefacts is as per 5.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 2113",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2112",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 1387",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1387:1993",
+      "title": "General requirments for the supply of metallurgical materials",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2113",
+      "standard_id": "IS 2113:2014",
+      "title": "Assaying Silver in Silver and Silver Alloys Methods",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
     "Assaying",
     "Fineness",
-    "Silver"
+    "Silver",
+    "Silver Alloy"
   ],
-  "total_chars_parsed": 18156
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "7.1 The silver and silver alloys, jewellery/artefacts shall"
+    ]
+  },
+  "total_chars_parsed": 15704
 }

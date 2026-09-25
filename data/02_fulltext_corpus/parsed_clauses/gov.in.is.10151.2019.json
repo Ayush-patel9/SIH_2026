@@ -1,34 +1,90 @@
 {
   "is_number": "IS 10151",
+  "standard_id": "IS 10151:2019",
+  "title": "Polyvinyl Chloride (PVC) and its Copolymers for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water — Specification ( First Revision )",
   "ia_identifier": "gov.in.is.10151.2019",
+  "division_code": "FAD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Polyvinyl Chloride (PVC) Homopolymers (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "1.1 This standard specifies the requirements and methods of sampling and test for polyvinyl chloride (PVC) and its copolymers for the manufacture of plastic items used in contact with foodstuffs, pharmaceuticals and drinking water. 1.2 This standard does not purport to establish the suitability of the packaging media with particular foodstuff, pharmaceutical and drinking water, from other than toxicological considerations.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 9833",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 10148",
+      "standard_id": "IS 10148:2023",
+      "title": "Positive List of Constituents of Polyvinyl Chloride (PVC) and Its Copolymers in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 10148",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 9833",
+      "standard_id": "IS 9833:2018",
+      "title": "List of Colourants for Use in Plastics in Contact with Foodstuffs and Pharmaceuticals ( Second Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9845",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9845:1998",
+      "title": "Determination of Overall Migration of Constituents of Plastics Materials and Articles Intended to Come in Contact with Foodstuffs - Method of Analysis",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 24",
+      "standard_id": "IS 24",
+      "title": "Indian Standard Code of Practice / Test Method (IS 24)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 170",
+      "standard_id": "IS 170:2020",
+      "title": "Acetone — Specification ( Fifth Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 4905",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 10151",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 43364
+  "clause_3_terminology": [
+    "Grade es",
+    "Polyvinyl Chloride",
+    "and its Copolymers for its Safe Use in Contact with Foodstuffs",
+    "Pharmaceuticals and Drinking Water"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "Chloride (VC), of purity greater than 99.5 percent"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": []
+  },
+  "total_chars_parsed": 42479
 }

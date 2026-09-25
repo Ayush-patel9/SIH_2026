@@ -1,109 +1,181 @@
 {
   "is_number": "IS 1660",
+  "standard_id": "IS 1660:2009",
+  "title": "WROUGHT ALUMINIUM UTENSILS — SPECIFICATION",
   "ia_identifier": "gov.in.is.1660.2009",
+  "division_code": "MTD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Cookware and Utensils (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "1.1 This standard prescribes general requirements; quality of material and thickness for some of the more commonly used: a) Wrought aluminium utensils (see Fig. 1 to Fig. 21 and Fig. 25), b) Thick bottom utensils (see Table 2), c) Compartmental trays (see Fig. 22 and Fig. 23), and d) Lunch boxes (see Fig. 24). 1.2 Aluminium utensils shall mean any utensils manufactured from aluminium or its alloys which can be used for cooking, baking, serving or storing of solid/semi-solid/liquid food, water and household provisions.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 1660",
-      "title": "(2009) : WROUGHT ALUMINIUM UTENSILS - SPECIFICATION",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1660 (Part 5)",
-      "title": ",",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1660 (Part 6)",
-      "title": "and",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1660 (Part 7)",
-      "title": "]",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2009",
-      "title": "BUREAU OF INDIAN STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1660 (Part 1)",
-      "title": ", the Committee decided to amalgamate all the Indian Standards",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "'Rules for rounding off numerical values {revised)'. The number of significant places retained in the rounded off",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 21",
-      "title": "Other",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 21:1992",
+      "title": "Wrought Aluminium and Aluminium Alloys for Manufacture of Utensils",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 20",
-      "title": "The lids, if provided shall be of aluminium, steel",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 20",
+      "title": "Indian Standard Code of Practice / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 691",
+      "standard_id": "IS 691",
+      "title": "Indian Standard Code of Practice / Test Method (IS 691)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 739",
-      "title": "or",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 739:1992",
+      "title": "Wrought aluminium and aluminium alloy wire for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 740",
+      "standard_id": "IS 740:1977",
+      "title": "Wrought aluminium and aluminium alloy rivet stock for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 737",
-      "title": "Stainless steel handles, rivets and",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 737:2008",
+      "title": "Wrought aluminium and aluminium alloy sheet and strip for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1868",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1868:1996",
+      "title": "Anodic Coatings on Aluminium and its Alloys",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 6057",
-      "title": ").",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 6057:1988",
+      "title": "Hard anodic coatings on aluminium and aluminium alloys",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 5523",
-      "title": "or with the help of instruments",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 5523:1983",
+      "title": "Methods of Testing Anodic Coatings on Aluminium and its Alloys",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 6012",
-      "title": ") and",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 6012:1992",
+      "title": "Method for measurement of coating thickness by eddy current",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 7",
-      "title": "1 5 ( Part 1 ) using",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 7",
+      "title": "Indian Standard Code of Practice / Test Method (IS 7)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 715 \n(Part 1)",
-      "title": "using medium finger pressure, cloth or paper",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 715 (PART 1)",
+      "standard_id": "IS 715 (PART 1)",
+      "title": "Coated Abrasives (IS 715 (PART 1))",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9730",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9730:2008",
+      "title": "Non-stick unreinforced plastic coatings on domestic cooking utensils",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9040",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9040:1978",
+      "title": "Methods for sampling of utensils",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 17",
-      "title": "Bureau of Indian Standards",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 715",
+      "standard_id": "IS 715:2002",
+      "title": "Coated Abrasives",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 36078
+  "clause_3_terminology": [
+    "Grade deration",
+    "Grade set",
+    "Grade 19000",
+    "Grade AC",
+    "WROUGHT ALUMINIUM UTENSILS"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "10.1 Each vessel shall be legibly and idelibly stamped"
+    ]
+  },
+  "total_chars_parsed": 26803
 }

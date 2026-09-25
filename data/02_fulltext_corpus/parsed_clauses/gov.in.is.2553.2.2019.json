@@ -1,42 +1,125 @@
 {
-  "is_number": "IS 2553 (Part 2)",
+  "is_number": "IS 2553 (PART 2)",
+  "standard_id": "IS 2553 (Part 2):2019",
+  "title": "Part 2 : 2019: Safety Glass — Specification Part 2 For Road Transport ( First Revision )",
   "ia_identifier": "gov.in.is.2553.2.2019",
-  "clause_1_scope": "This standard applies to safety glazing intended for installation as windscreens, window panes on Category M, N, A (fitted with cabin), C (fitted with cabin), Combine Harvester and L (with bodywork at least partially covering the driver) vehicles as defined in IS 14272 : 2011 ‘Automotive vehicles — Types — Terminology’ concerning the Classification of vehicles to the exclusion of glazing for lighting and light- signaling devices and instrument panels, glazing which are fitted on the body for aesthetic purpose and are not in driver’s forward or rearward field of vision, plastic windows of soft top vehicles and bullet resistant glazing. In the case of double windows, each pane is considered a separate item of glazing.",
+  "division_code": "TED",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Safety Glass (Quality Control) Order"
+  },
+  "clause_1_scope": "This standard applies to safety glazing intended for installation as windscreens, window panes on Category M, N, A (fitted with cabin), C (fitted with cabin), Combine Harvester and L (with bodywork at least partially covering the driver) vehicles as defined in ‘Automotive vehicles — Types — Terminology’ concerning the Classification of vehicles to the exclusion of glazing for lighting and lightsignaling devices and instrument panels, glazing which are fitted on the body for aesthetic purpose and are not in driver’s forward or rearward field of vision, plastic windows of soft top vehicles and bullet resistant glazing. In the case of double windows, each pane is considered a separate item of glazing.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 2553 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 2553",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2553",
+      "title": "Indian Standard Code of Practice / Test Method (IS 2553)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 13749",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 13749:2009",
+      "title": "Automotive vehicles - Procedure for determining the 'H' point and the torso angle for 50th percentile adult male in seating positions of motor vehicles",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 16325",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 16325:2019",
+      "title": "Automotive Vehicles \"• Windscreen Wiping System For 3 Wheeler Vehicles \"• Specification",
+      "division_code": "TED",
+      "aspect": "System Standard",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2553 \n(Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3",
+      "standard_id": "IS 3",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 14272",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 30",
+      "standard_id": "IS 30",
+      "title": "Indian Standard Code of Practice / Test Method (IS 30)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2553 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 2",
+      "standard_id": "IS 2:2022",
+      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2553 (PART 1)",
+      "standard_id": "IS 2553 (Part 1):2018",
+      "title": "Part 1 : 2018: Safety Glass — Specification Part 1 Architectural, Building and General Uses ( Fourth Revision )",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": true,
+      "qco_order": "Safety Glass (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 19",
+      "standard_id": "IS 19",
+      "title": "Indian Standard Code of Practice / Test Method (IS 19)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 0",
+      "standard_id": "IS 0",
+      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 51",
+      "standard_id": "IS 51:1998",
+      "title": "Zinc Chrome for Paints",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 600",
+      "standard_id": "IS 600",
+      "title": "Indian Standard Code of Practice / Test Method (IS 600)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -54,13 +137,17 @@
     "Reference Points",
     "Regular Light Transmittance",
     "Sample",
-    "Secondary Image",
-    "Secondary Image Separation",
-    "Shade Band",
-    "Test Piece",
-    "Transparent Area of the Windscreen",
-    "Windscreen",
-    "Type of Safety Glazing Material"
+    "Secondary Image"
   ],
-  "total_chars_parsed": 130041
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "hardness 70 + 10 IRHD and thickness 3 mm",
+      "hardness 60 IRHD Hole Diameter: 8 mm",
+      "Hardness IRHD Hole Diameter: 129 mm"
+    ],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": []
+  },
+  "total_chars_parsed": 128427
 }

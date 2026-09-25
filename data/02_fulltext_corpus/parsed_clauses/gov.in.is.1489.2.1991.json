@@ -1,92 +1,85 @@
 {
-  "is_number": "IS 1489 (Part 2)",
+  "is_number": "IS 1489 (PART 2)",
+  "standard_id": "IS 1489 (Part 2):2015",
+  "title": "Part 2 : 2015: Portland Pozzolana Cement - Specification Part 2 Calcined Clay Based (Fourth Revision)",
   "ia_identifier": "gov.in.is.1489.2.1991",
+  "division_code": "CED",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Cement (Quality Control) Order, 2023"
+  },
   "clause_1_scope": "This standard ( Part 2 ) ( Third Revision) covers the manufacture, physical and chemical requirements of Portland-pozzolana cement manufactured by using calcined clay pozzolana or a mixture of calcined clay and fly ash pozzolana.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 12154",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 1489",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3535",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4031",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1489 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1489",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1489)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 4845",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 4845:1968",
+      "title": "Definitions and terminology relating to hydraulic cement",
+      "division_code": "CED",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 11761",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 4031",
+      "standard_id": "IS 4031",
+      "title": "Indian Standard Code of Practice / Test Method (IS 4031)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 12174",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 3812",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 531",
+      "standard_id": "IS 531:1981",
+      "title": "Leaded brass strips for instrument parts",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1727",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 630",
+      "standard_id": "IS 630:2005",
+      "title": "Bicycle Spokes (Plain) and Nipples for Spokes - Specifiation",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1344",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 269",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4905",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 650",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 11652",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12423",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2580",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 14",
+      "standard_id": "IS 14",
+      "title": "Indian Standard Code of Practice / Test Method (IS 14)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -94,5 +87,16 @@
     "Portland CUnker",
     "Portland"
   ],
-  "total_chars_parsed": 38108
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "compressive strength as 16 MPa"
+    ],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 35959
 }

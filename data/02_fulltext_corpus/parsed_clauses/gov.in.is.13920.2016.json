@@ -1,12 +1,95 @@
 {
   "is_number": "IS 13920",
+  "standard_id": "IS 13920:2016",
+  "title": "Ductile Design and Detailing of Reinforced Concrete Structures Subjected to Seismic Forces - Code of Practice (First Revision)",
   "ia_identifier": "gov.in.is.13920.2016",
+  "division_code": "CED",
+  "aspect": "Code of Practice",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
   "clause_1_scope": "1.1 This standard covers the requirements for designing and detailing of members of reinforced concrete (RC) structures designed to resist lateral effects of earthquake shaking, so as to give them adequate stiffness, strength and ductility to resist severe earthquake shaking without collapse. Even though the general concepts adopted in this standard for structures are also applicable for RC bridge systems, provisions of this standard shall be taken only as a guide for RC bridge piers and wells of large cross-sections, but are not sufficient. This standard addresses lateral load resisting structural systems of RC structures composed of, a) RC moment resisting frames, b) RC moment resisting frames unreinforced masonry infill walls, with c) RC moment resisting frames with RC structural walls, and d) RC structural walls. 1.1.1 Provisions of this standard shall be adopted in all lateral load resisting systems of RC structures located in Seismic Zone III, IV or V. The standard is optional in Seismic Zone II. 1.1.2 The provisions for RC structures given herein apply specifically to monolithic RC construction, and not for precast RC structures. Precast and/or pre stressed concrete members may be used, only if they are designed to provide similar level of ductility as that of monolithic RC structures during or after an earthquake. Likewise, flat slab structures must have a lateral load resisting system capable of providing similar level of performance as envisioned in this standard and must be designed for drift compatibility as per 11. Specialist literature must be referred to for design and construction of such structures. The adequacy of such designs shall be demonstrated by adequate, appropriate experimentation and nonlinear dynamic structural analyses. 1.1.3 All RC frames, RC walls and their elements in a structure need not be designed to resist lateral loads and the designer can judiciously identify the lateral load resisting system based on relative stiffness and location in the building and design those members for full lateral force. RC monolithic members assumed not to participate in the lateral force resisting system (see 3.7) shall be permitted provided that their effect on the seismic response of the system is accounted for. Consequence of failure of structural and non-structural members not part of the lateral force resisting system shall also be considered in design.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 13920",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 456",
+      "standard_id": "IS 456:2000",
+      "title": "Plain and Reinforced Concrete - Code of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1786",
+      "standard_id": "IS 1786:2008",
+      "title": "High strength deformed steel bars and wires for concrete reinforcement-",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 1893 (PART 1)",
+      "standard_id": "IS 1893 (Part 1):2016",
+      "title": "Part 1 : 2016: Criteria for Earthquake Resistant Design of Structures - Part 1 : General Provisions and Buildings",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 0",
+      "standard_id": "IS 0",
+      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16172",
+      "standard_id": "IS 16172:2023",
+      "title": "Reinforcement Couplers For Mechanical Splices Of Steel Bars In Concrete - Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8",
+      "standard_id": "IS 8:1994",
+      "title": "High Heat Duty Fireclay Refractories",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 200",
+      "standard_id": "IS 200:1989",
+      "title": "Textiles - Determination of Copper Number of Cotton Textile Materials",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1893",
+      "standard_id": "IS 1893:1984",
+      "title": "Criteria for earthquake resistant design of structures",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -22,5 +105,16 @@
     "Shear Wall (also Called Structural Wall)",
     "Special Shear Wall"
   ],
-  "total_chars_parsed": 79374
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "proof stress of 415 MPa"
+    ],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 77865
 }

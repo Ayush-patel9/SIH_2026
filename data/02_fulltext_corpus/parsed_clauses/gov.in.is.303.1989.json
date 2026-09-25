@@ -1,96 +1,132 @@
 {
   "is_number": "IS 303",
+  "standard_id": "IS 303:1989",
+  "title": "Plywood for General Purposes -",
   "ia_identifier": "gov.in.is.303.1989",
-  "clause_1_scope": "1,1 This standard covers the requirements of diflferent grades and types of plywood used for general purposes,",
+  "division_code": "PGD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
+  },
+  "clause_1_scope": "This standard covers the requirements of diflferent grades and types of plywood used for general purposes, 2 REFERENCE 2.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 303",
-      "title": "(1989)  :  Plywood  for  General  Purposes  -",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 313",
-      "title": "1M»",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1990",
-      "title": "BUREAU    OF    INPIAN    STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "'Rules  for  rounding  off  numerical  va\\ws(  revised)'.  The  number  of",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 707",
-      "title": "shall  apply.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 313",
+      "title": "Indian Standard Code of Practice / Test Method (IS 313)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 84",
-      "title": "S  :",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1508",
-      "title": "may  be  used  with  the  synthetic  resin  adhesive",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5539",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 84",
+      "title": "Indian Standard Code of Practice / Test Method (IS 84)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 12049",
-      "title": ";  1987.",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 7638",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 12049",
+      "title": "Indian Standard Code of Practice / Test Method (IS 12049)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1734",
-      "title": "(  Part  4  ) :  1983  shall  have  an  average",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1734:1983",
+      "title": "to 20: Methods of test for plywood",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1",
-      "title": "734  (  Parts  I",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1734  (Part  5)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1734 \n\n(Part  5)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1734 (PART 5)",
+      "standard_id": "IS 1734 (PART 5)",
+      "title": "to 20: Methods of test for plywood (IS 1734 (PART 5))",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1784",
-      "title": "( Part  5  ).'",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1784:2020",
+      "title": "Screwed Closures for Drums — Specification ( Fourth Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1734  (Part  4)",
-      "title": "'  and",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1734 (PART 4)",
+      "standard_id": "IS 1734 (PART 4)",
+      "title": "to 20: Methods of test for plywood (IS 1734 (PART 4))",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1734  (Part  11)",
-      "title": "Methods   of  tests   for   plywood    :    Part    11",
-      "relation_type": "TEST_METHOD"
+      "is_number": "IS 1734 (PART 11)",
+      "standard_id": "IS 1734 (PART 11)",
+      "title": "to 20: Methods of test for plywood (IS 1734 (PART 11))",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1784 (PART 5)",
+      "standard_id": "IS 1784 (PART 5)",
+      "title": "Screwed Closures for Drums — Specification ( Fourth Revision ) (IS 1784 (PART 5))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "For"
+    "Grade of",
+    "Grade AB",
+    "Grade AA",
+    "Grade BB",
+    "Grade s",
+    "Plywood for General Purposes"
   ],
-  "total_chars_parsed": 41620
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "12.2 Each plywood board shall be legibly and"
+    ]
+  },
+  "total_chars_parsed": 35845
 }

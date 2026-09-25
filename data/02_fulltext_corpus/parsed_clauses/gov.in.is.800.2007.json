@@ -1,329 +1,875 @@
 {
   "is_number": "IS 800",
+  "standard_id": "IS 800:2007",
+  "title": "General Construction In Steel - Code of Practice",
   "ia_identifier": "gov.in.is.800.2007",
-  "clause_1_scope": null,
+  "division_code": "MTD",
+  "aspect": "Code of Practice",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 800) covers General Construction In Steel - Code of Practice. This Indian Standard (Third Revision) was adopted by the , after the draft finalized by the Structural Engineering and Structural Sections Sectional Committee had been approved by the Civil Engineering Division Council. The steel economy programme was initiated by erstwhile Indian Standards Institution in the year 1950 with the objective of achieving economy in the use of structural steel by establishing rational, efficient and optimum standards for structural steel products and their use. was the first in the series of Indian Standards brought out under this programme. The standard was revised in 1962 and subsequently in 1984, incorporating certain very important changes. IS 800 is the basic Code for general construction in steel structures and is the prime document for any structural design and has influence on many other codes governing the design of other special steel structures, such as towers, bridges, silos, chimneys, etc. Realising the necessity to update the standard to the s",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 800",
-      "title": "mate ~rh*f",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2007",
-      "title": "BUREAU OF INDIAN STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 2",
-      "title": "1960 'Rules for rounding off numerical values (revised)\\ The number of significant places retained in the",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 22",
-      "title": "4.1 Methods of Determining Action Effects 22",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2:2022",
+      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 8",
-      "title": "Q0 : 2007",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 8:1994",
+      "title": "High Heat Duty Fireclay Refractories",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2062",
-      "title": "or of steel having Charpy V-notch energy, E > 27J.'",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2062:2011",
+      "title": "Hot Rolled Medium and High Tensile Structural Steel",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
     },
     {
       "is_number": "IS 875",
-      "title": "for dead, live, snow and wind loads",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 875",
+      "title": "Indian Standard Code of Practice / Test Method (IS 875)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1893 (Part 1)",
-      "title": "for earthquake loads.",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1893 (PART 1)",
+      "standard_id": "IS 1893 (Part 1):2016",
+      "title": "Part 1 : 2016: Criteria for Earthquake Resistant Design of Structures - Part 1 : General Provisions and Buildings",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 786",
-      "title": "(Supplement) may be referred.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 786:1967",
+      "title": "B786-S: (Supplement) SI supplement to Indian Standard conversion factors and conversion tables (BI-LINGUAL)",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 808",
-      "title": "and",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 808:2021",
+      "title": "Hot Rolled Steel Beam Column Channel and Angle Sections - Dimensions and Properties",
+      "division_code": "MTD",
+      "aspect": "Dimensions",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1852",
+      "standard_id": "IS 1852:1985",
+      "title": "Rolling and cutting tolerances for hot rolled steel products",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 8000",
-      "title": "(Parts 1 to 4),",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 8000",
+      "title": "Indian Standard Code of Practice / Test Method (IS 8000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8976",
+      "standard_id": "IS 8976:1978",
+      "title": "Guide for preparation and arrangement of sets of drawings and parts lists",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 962",
-      "title": "A marking diagram allotting",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 962:1989",
+      "title": "Code of practice for architectural and building drawings",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 813",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 813:1986",
+      "title": "Scheme of symbols for welding",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1608",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1608:2005",
+      "title": "Mechanical testing of metals - Tensile Testing",
+      "division_code": "MED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 513",
-      "title": "ii) 15 814",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 513:2008",
+      "title": "Cold reduced low carbon steel sheets and strips",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1079",
-      "title": "iv)",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1079:2017",
+      "title": "Hot Rolled Carbon Steel Sheet, Plate and Strip - Specification",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1367",
+      "standard_id": "IS 1367",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1367)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1875",
-      "title": "<",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1875:1992",
+      "title": "Carbon steel billets, blooms, slabs and bars for forgings",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1990",
-      "title": "{",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1990:2009",
+      "title": "Steel rivet and stay bars for boilers",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2002",
-      "title": "640\"",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2002:2009",
+      "title": "Steel plates for pressure vessels for intermediate and high temperature service including boilers",
+      "division_code": "MTD",
+      "aspect": "Service Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 3039",
-      "title": "x)",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 3039:1988",
+      "title": "Structural steel for construction of hulls of ships",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 6240",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 6240:2008",
+      "title": "Hot Rolled Steel Plate (up to 6 mm) Sheet and Strip for the Manufacture of Low Pressure Liquefiable Gas Cylinders",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7557",
+      "standard_id": "IS 7557:1982",
+      "title": "Specification for Steel wire : uartto 20 mm for the manufacture of cold forged rivets",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9295",
-      "title": "<",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9295:1983",
+      "title": "Steel tubes for idlers for belt conveyors",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 10748",
-      "title": "<",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 10748:2004",
+      "title": "Hot-rolled Steel Strip for Welded Tubes and Pipes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1148",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1148:2009",
+      "title": "STEEL RIVET BARS (MEDIUM AND HIGH TENSILE) FOR STRUCTURAL PURPOSES FOR STRUCTURAL PURPOSES",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1929",
-      "title": "and",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1929:1982",
+      "title": "Hot Forged Steel Rivets for Hot Closing (12 to 36 mm Diameter)",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2155",
+      "standard_id": "IS 2155:1982",
+      "title": "Cold Forged Solid Steel Rivets for Hot Closing (6 to 16 mm Diameter)",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1",
-      "title": "149.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1363",
-      "title": "(Parts 1 to 3),",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1363",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1363)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1364",
+      "standard_id": "IS 1364",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1364)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 3640",
-      "title": ",",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5370",
-      "title": ",",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6639",
-      "title": ", and",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1030",
-      "title": "or",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 814",
-      "title": "or",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1395",
-      "title": ", as appropriate.",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1278",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1387",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 7280",
-      "title": "The combination",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3613",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6419",
-      "title": "and",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6560",
-      "title": ", as appropriate.",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 (Part 4)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 (Part 3)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 \n(Part 2)",
-      "title": "].",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 (Part 2)",
-      "title": "or as given below:",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 801",
-      "title": "to account",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1893",
-      "title": "Earthquake forces",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4326",
-      "title": "should also be followed.",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4",
-      "title": "1 Methods of Determining Action Effects",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 (Part 1)",
-      "title": "].",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 3640:1982",
+      "title": "Hexagon Fit Bolts",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 3757",
-      "title": "Their installation procedures shall conform",
-      "relation_type": "INSTALLATION_CODE"
+      "standard_id": "IS 3757:1985",
+      "title": "High Strength Structural Bolts",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 4000",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 4000:1992",
+      "title": "Code of practice for high strength bolts in steel structures",
+      "division_code": "MTD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5369",
+      "standard_id": "IS 5369:1975",
+      "title": "General Requirements for Plain Washers and Lock Washers",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5370",
+      "standard_id": "IS 5370:1969",
+      "title": "Plain Washers with Outside Diameter 3 X Inside Diameter",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5372",
+      "standard_id": "IS 5372:1975",
+      "title": "Taper washers for channels (ISMC)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5374",
+      "standard_id": "IS 5374:1975",
+      "title": "Taper washers for I-beams (ISMB)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5624",
+      "standard_id": "IS 5624:2021",
+      "title": "FOUNDATION BOLTS SPECIFICATION Second Revision",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6610",
+      "standard_id": "IS 6610:1972",
+      "title": "Heavy Washers for Steel Structures",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6623",
+      "standard_id": "IS 6623:2004",
+      "title": "High Strength Structural Nuts",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6639",
+      "standard_id": "IS 6639:1972",
+      "title": "Hexagon Bolts for Steel Structures",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6649",
+      "standard_id": "IS 6649:1985",
+      "title": "Hardened and Tempered Washers for High Strength Structural Bolts and Nuts",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1030",
+      "standard_id": "IS 1030:1998",
+      "title": "Carbon steel castings for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2708",
+      "standard_id": "IS 2708:1993",
+      "title": "Percent manganese steel castings for general engineerig purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 814",
+      "standard_id": "IS 814:2004",
+      "title": "Covered Electrodes for Manual Metal Arc Welding of Carbon and Carbon Manganese Steel",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1395",
+      "standard_id": "IS 1395:1982",
+      "title": "Low and medium alloy steel covered electrodes for manual metal arc welding",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1278",
+      "standard_id": "IS 1278:1972",
+      "title": "Filler rods and wires for gas welding",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1387",
+      "standard_id": "IS 1387:1993",
+      "title": "General requirments for the supply of metallurgical materials",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7280",
+      "standard_id": "IS 7280:1974",
+      "title": "Bare wire electrodes for submerged arc welding of structural steels",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3613",
+      "standard_id": "IS 3613:1974",
+      "title": "Acceptance tests for wire flux combination for submerged arc welding",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6419",
+      "standard_id": "IS 6419:1996",
+      "title": "Welding rods and bare electrodes for gas shielded arc welding of structural steel",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6560",
+      "standard_id": "IS 6560:1996",
+      "title": "Molybdenum and chromium-molybdenum low alloy steel welding rods and bare electrodes for gas shielded arc welding",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875 (PART 4)",
+      "standard_id": "IS 875 (Part 4):2021",
+      "title": "Part 4 : 2021: Code of Practice for Design Loads other than earthquake for Buildings and Structures Part 4 Snow Loads",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875 (PART 3)",
+      "standard_id": "IS 875 (Part 3):2015",
+      "title": "Code of Practice for Design Loads (Other than Earthquake) for Buildings and Structures - Part 3 : Wind Loads (IS 875 : Part 3) + Amendment 2016",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875 (PART 2)",
+      "standard_id": "IS 875 (Part 2):1987",
+      "title": "Code of Practice for Design Loads (Other Than Earthquake) For Buildings And Structures, Part 2: Imposed Loads",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 801",
+      "standard_id": "IS 801:1975",
+      "title": "Code of Practice for Use of Cold Formed Light Gauge Steel Structural Members In General Building Construction",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1893",
+      "standard_id": "IS 1893:1984",
+      "title": "Criteria for earthquake resistant design of structures",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4326",
+      "standard_id": "IS 4326:2013",
+      "title": "Earthquake resistant design and construction of buildings - Code of practice",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875 (PART 1)",
+      "standard_id": "IS 875 (Part 1):1987",
+      "title": "Code of Practice For Design Loads (Other Than Earthquake)For Buildings And Structures, Part 1: Dead Loads - Unit Weights of Building Material And Stored Materials (Incorporating IS 1911 : 1967)",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 25",
+      "standard_id": "IS 25:1979",
+      "title": "antifriction bearing alloys",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 816",
-      "title": "and",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9077",
-      "title": "and",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1641",
-      "title": ",",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1642",
-      "title": "and",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 7215",
-      "title": "Tolerances for erection of steel",
-      "relation_type": "INSTALLATION_CODE"
-    },
-    {
-      "is_number": "IS 12843",
-      "title": "For general",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 816:1969",
+      "title": "Code of practice for use of metal arc welding for general construction in mild steel",
+      "division_code": "MED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9595",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9595:1996",
+      "title": "Metal arc welding of carbon and carbon manganese steels - Recommendations",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9077",
+      "standard_id": "IS 9077:1979",
+      "title": "Code of practice for corrosion protection of steel reinforcement in RB and RCC construction",
+      "division_code": "MTD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9172",
+      "standard_id": "IS 9172:1979",
+      "title": "Recommended design practice for corrosion prevention of steel structures",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1641",
+      "standard_id": "IS 1641:2013",
+      "title": "Code of practice for fire safety of buildings (general): General principles of fire grading and classification",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1642",
+      "standard_id": "IS 1642:2013",
+      "title": "Fire safety of buildings (general): Details of construction - Code of practice for",
+      "division_code": "PGD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1643",
+      "standard_id": "IS 1643:2013",
+      "title": "Fire Safety of Buildings (General): Exposure Hazard — Code of Practice",
+      "division_code": "PGD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7215",
+      "standard_id": "IS 7215:1974",
+      "title": "Tolerances for fabrication of steel structures",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12843",
+      "standard_id": "IS 12843:1989",
+      "title": "Tolerances for erection of steel structures",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 919",
-      "title": "(Parts",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 919",
+      "title": "Indian Standard Code of Practice / Test Method (IS 919)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 819",
-      "title": ",",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 819:1957",
+      "title": "Code of Practice for Resistance Spot Welding for Light Assemblies in Mild Steel",
+      "division_code": "MED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 7318 (Part 1)",
-      "title": ", as relevant.",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1024",
+      "standard_id": "IS 1024:1999",
+      "title": "Code of practice for use of welding in bridges and structures subject to dynamic loading",
+      "division_code": "MED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1261",
+      "standard_id": "IS 1261:1959",
+      "title": "Code of practice for seam welding in mild steel",
+      "division_code": "MED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1323",
+      "standard_id": "IS 1323:1982",
+      "title": "Code of practice for oxy-acetylene welding for structural work in mild steels",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1393",
+      "standard_id": "IS 1393:1961",
+      "title": "Code of practice for training and testing of oxy acetylene welders",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7307",
+      "standard_id": "IS 7307",
+      "title": "Indian Standard Code of Practice / Test Method (IS 7307)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 73",
+      "standard_id": "IS 73:2013",
+      "title": "Paving bitumen",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7318 (PART 1)",
+      "standard_id": "IS 7318 (Part 1):1974",
+      "title": "Approval Test for Welders When Welding Procedure Approval is Not Required, Part I: Fusion welding of Steel",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1477",
-      "title": "(Parts 1 and 2).",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1477",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1477)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 7205",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 7205:1974",
+      "title": "Safety code for erection of Structural Steelwork",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 456",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 456:2000",
+      "title": "Plain and Reinforced Concrete - Code of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 04759",
-      "title": "1:2000",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "SP 6 (Part 1)",
+      "standard_id": "SP 6 (Part 1)",
+      "title": "SP 6-1: ISI Handbook for Structural Engineers -Part- 1 Structural Steel Sections",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "SP 6",
+      "standard_id": "SP 6",
+      "title": "Indian Standard Code of Practice / Test Method (SP 6)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7318",
+      "standard_id": "IS 7318",
+      "title": "Indian Standard Code of Practice / Test Method (IS 7318)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 514061
+  "clause_3_terminology": [
+    "Grade Bolting",
+    "Grade Connection",
+    "Grade s",
+    "Grade ification",
+    "Grade Bolts",
+    "General Construction In Steel",
+    "Code of Practice"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "yield stress if) does not exceed 360 MPa"
+    ],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each piece of steel work shall be distinctly marked"
+    ]
+  },
+  "total_chars_parsed": 495946
 }

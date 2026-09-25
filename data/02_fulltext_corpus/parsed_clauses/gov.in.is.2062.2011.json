@@ -1,177 +1,355 @@
 {
   "is_number": "IS 2062",
+  "standard_id": "IS 2062:2011",
+  "title": "Hot Rolled Medium and High Tensile Structural Steel",
   "ia_identifier": "gov.in.is.2062.2011",
-  "clause_1_scope": "1.1 This standard covers the requirements of steel including micro-alloyed steel plates, strips, shapes and sections (angles, tees, beams, channels, etc), flats, bars, etc, for use in structural work. 1.1.1 The steels are suitable for welded, bolted and riveted structures and for general engineering purposes: 1.1.2 Where welding is employed for fabrication and guaranteed-weldability is required, welding procedure should be as specified in IS 9595 : 1996 'Metal arc welding of carbon and carbon manganese steels — Recommendations (first revision)'.",
+  "division_code": "CED",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+  },
+  "clause_1_scope": "1.1 This standard covers the requirements of steel including micro-alloyed steel plates, strips, shapes and sections (angles, tees, beams, channels, etc), flats, bars, etc, for use in structural work. 1.1.1 The steels are suitable for welded, bolted and riveted structures and for general engineering purposes: 1.1.2 Where welding is employed for fabrication and guaranteed-weldability is required, welding procedure should be as specified in 'Metal arc welding of carbon and carbon manganese steels — Recommendations (first revision)'.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 2002",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1730",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9595",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1599",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1863",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1591",
+      "standard_id": "IS 1591",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1591)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1079",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1079:2017",
+      "title": "Hot Rolled Carbon Steel Sheet, Plate and Strip - Specification",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 7887",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 10748",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2314",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5986",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15914",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2062",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12779",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1757",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6240",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15647",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12778",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 228",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9442",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1608",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 10842",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1732",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1173",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 11513",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1252",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1956",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1591",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3803 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 10182",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1852",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 808",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3954",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 2002",
+      "standard_id": "IS 2002:2009",
+      "title": "Steel plates for pressure vessels for intermediate and high temperature service including boilers",
+      "division_code": "MTD",
+      "aspect": "Service Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2041",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2041:2009",
+      "title": "Steel Plates for Pressure Vessels Used at Moderate and Low Temperature",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5986",
+      "standard_id": "IS 5986:2017",
+      "title": "Hot Rolled Steel Sheet, Plate and Strip for Forming and Flanging Purposes - Specification",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6240",
+      "standard_id": "IS 6240:2008",
+      "title": "Hot Rolled Steel Plate (up to 6 mm) Sheet and Strip for the Manufacture of Low Pressure Liquefiable Gas Cylinders",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15914",
+      "standard_id": "IS 15914:2011",
+      "title": "High Tensile Strength Flat Rolled Steel Plate (Up To 6 mm), Sheet and Strip for the Manufacture of Welded Gas Cylinder",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7887",
+      "standard_id": "IS 7887:1992",
+      "title": "Mild steel wire rods for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9442",
+      "standard_id": "IS 9442:1980",
+      "title": "Hot rolled steel plates, sheets and strips for manufacture of agricultural tillage discs",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10748",
+      "standard_id": "IS 10748:2004",
+      "title": "Hot-rolled Steel Strip for Welded Tubes and Pipes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15647",
+      "standard_id": "IS 15647:2006",
+      "title": "Hot rolled steel narrow width strip for selded tubes an pipes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11513",
+      "standard_id": "IS 11513:2017",
+      "title": "Hot Rolled Carbon Steel Strip for Cold Rolling Purposes - Specification",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1956",
+      "standard_id": "IS 1956",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1956)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 8910",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 8910:2010",
+      "title": "General technical delivery requirements for steel and steel products",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 228",
+      "standard_id": "IS 228",
+      "title": "Indian Standard Code of Practice / Test Method (IS 228)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1608",
+      "standard_id": "IS 1608:2005",
+      "title": "Mechanical testing of metals - Tensile Testing",
+      "division_code": "MED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3803 (PART 1)",
+      "standard_id": "IS 3803 (Part 1):1989",
+      "title": "Steel - Conversion of Elongation Values, Part I: Carbon, loow alloy steels",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1599",
+      "standard_id": "IS 1599:2012",
+      "title": "Metallic Materials - Bend Test",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1757",
+      "standard_id": "IS 1757:1988",
+      "title": "Method for charpy impact test (V notch) for metallic material",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10842",
+      "standard_id": "IS 10842:1984",
+      "title": "Evaluation Procedure for Y-groove Weld Crackability Test in Structural Steel",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 808",
+      "standard_id": "IS 808:2021",
+      "title": "Hot Rolled Steel Beam Column Channel and Angle Sections - Dimensions and Properties",
+      "division_code": "MTD",
+      "aspect": "Dimensions",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1173",
+      "standard_id": "IS 1173:1978",
+      "title": "Hot rolled and slit steel tee bars",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1252",
+      "standard_id": "IS 1252:1991",
+      "title": "Hot rolled steel bulb angles Dimensions",
+      "division_code": "MTD",
+      "aspect": "Dimensions",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1730",
+      "standard_id": "IS 1730:1989",
+      "title": "Dimensions for steel plates,sheets strips and flats for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Dimensions",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1732",
+      "standard_id": "IS 1732:1989",
+      "title": "Steel Bars round and square for structural and general engineering purposes",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1863",
+      "standard_id": "IS 1863:1979",
+      "title": "rolled steel bulb flats -",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2314",
+      "standard_id": "IS 2314:1986",
+      "title": "Steel Sheet Piling Sections",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3954",
+      "standard_id": "IS 3954:1991",
+      "title": "Hot Rolled Steel Channel Sections for General Engineering Purposes - Dimensions",
+      "division_code": "MTD",
+      "aspect": "Dimensions",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10182",
+      "standard_id": "IS 10182",
+      "title": "Indian Standard Code of Practice / Test Method (IS 10182)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12778",
+      "standard_id": "IS 12778:2004",
+      "title": "Hot Rolled Parallel Flange Steel Sections for Beams, Columns and Bearing Piles - Dimensions and Section Properties",
+      "division_code": "MTD",
+      "aspect": "Dimensions",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12779",
+      "standard_id": "IS 12779:1989",
+      "title": "Rolling and cutting tolerances for hot rolled parallel flange beam and column sections",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1852",
+      "standard_id": "IS 1852:1985",
+      "title": "Rolling and cutting tolerances for hot rolled steel products",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3803",
+      "standard_id": "IS 3803",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3803)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -180,5 +358,17 @@
     "Controlled Rolling",
     "Normalizing Rolling"
   ],
-  "total_chars_parsed": 40722
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "silicon shall be less than 0.10 percent",
+      "silicon-aluminium killed, the silicon content shall not be less than 0.03 percent",
+      "Nitrogen content of steel shall not exceed 0.012 percent"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "20.1 Each product, with the exception of round, square"
+    ]
+  },
+  "total_chars_parsed": 37290
 }

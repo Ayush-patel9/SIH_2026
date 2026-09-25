@@ -1,17 +1,35 @@
 {
   "is_number": "IS 2082",
+  "standard_id": "IS 2082:2018",
+  "title": "Stationary Storage Type Electric Water Heaters- Specification (Fifth Revision)",
   "ia_identifier": "gov.in.is.2082.2018",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Electrical Appliances (Quality Control) Order"
+  },
   "clause_1_scope": "This standard deals with the general, safety and performance requirements of electric storage water heaters for household and similar purposes and intended for heating water below boiling temperature, their rated voltage being not more than 250 V for single-phase appliances and 415 V for other appliances. Appliances not intended for normal household use but which nevertheless may be a source of danger to the public, such as appliances intended to be used by laymen in shops, in light industry and on farms, are within the scope of this standard. As far as is practicable, this standard deals with the common hazards presented by appliances that are encountered by all persons in and around the home. However, in general, it does not take into account, a) the use of appliances by young children or infirm persons without supervision; and b) playing with the appliance by young children. NOTES 1 Attention is drawn to the fact that, a) for appliances intended to be used at high altitudes, additional requirements may be necessary; and b) for appliances intended to be used in vehicles or on board ships or aircraft, additional requirements may be necessary; and 2 This standard does not apply to: a) appliances for boiling water (IS 302-2-15); b) instantaneous water heaters (IS 302-2-35); c) commercial dispensing appliances and vending machines (No Indian standard exists at present); d) appliances intended exclusively for industrial purposes; and e) appliances intended to be used in locations where special conditions prevail, such as the presence of a corrosive or explosive atmosphere (dust, vapour or gas).",
   "clause_2_normative_references": [
     {
       "is_number": "IS 302",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 302",
+      "title": "Indian Standard Code of Practice / Test Method (IS 302)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2082",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 72",
+      "standard_id": "IS 72",
+      "title": "Indian Standard Code of Practice / Test Method (IS 72)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -19,5 +37,14 @@
     "Rated Capacity",
     "Symbols"
   ],
-  "total_chars_parsed": 22242
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 21535
 }

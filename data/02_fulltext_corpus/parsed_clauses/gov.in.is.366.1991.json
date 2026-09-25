@@ -1,34 +1,72 @@
 {
   "is_number": "IS 366",
+  "standard_id": "IS 366:1991",
+  "title": "Electric irons",
   "ia_identifier": "gov.in.is.366.1991",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Electrical Appliances (Quality Control) Order"
+  },
   "clause_1_scope": "1.1 This standard covers the genera! safety and performance requirements of electric iron used for household and similar purposes. In addition, the provision of 1 of IS 302-2-3 (1992) shall also apply.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 366",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 36",
+      "standard_id": "IS 36",
+      "title": "Indian Standard Code of Practice / Test Method (IS 36)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 302",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 302",
+      "title": "Indian Standard Code of Practice / Test Method (IS 302)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1058",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 6290",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1068",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 16",
+      "standard_id": "IS 16",
+      "title": "Indian Standard Code of Practice / Test Method (IS 16)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 36898
+  "clause_3_terminology": [
+    "Grade iflcatloa",
+    "Grade Test",
+    "Grade Tests",
+    "Grade rrous",
+    "Grade ification",
+    "Electric irons"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "8.1 The provision of 7 of IS 302-2-3 (1992) shall"
+    ]
+  },
+  "total_chars_parsed": 34565
 }

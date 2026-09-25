@@ -1,34 +1,68 @@
 {
   "is_number": "IS 979",
+  "standard_id": "IS 979:1988",
+  "title": "Method for determination of colour fastness of textile materials to mercerizing",
   "ia_identifier": "gov.in.is.979.1988",
+  "division_code": "TXD",
+  "aspect": "Methods of tests",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Cookware and Utensils (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "1.1 This standard prescribes a method for the determination of colour fastness of textile fabrics, yarns or threads of all kinds to the action of concentrated solutions of sodium hydroxide used in mercerizing. 1.2 The method is mainly applicable to cotton and mixtures containing cotton.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 979",
-      "title": "(1988) : Method for determination of colour fastness",
-      "relation_type": "TEST_METHOD"
-    },
-    {
       "is_number": "IS 1",
-      "title": "979 - 1988",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1070",
-      "title": "1977*)",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1070:2023",
+      "title": "Reagent Grade Water Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "CHEMICAL_ANALYSIS",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 768",
-      "title": "1982* and the degree of",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 768",
+      "title": "Indian Standard Code of Practice / Test Method (IS 768)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 769",
-      "title": "1982!-",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 769",
+      "title": "Indian Standard Code of Practice / Test Method (IS 769)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 9642
+  "clause_3_terminology": [
+    "Method for determination of colour fastness of textile materials to mercerizing"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 8192
 }

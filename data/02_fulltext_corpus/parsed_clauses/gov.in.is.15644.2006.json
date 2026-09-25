@@ -1,14 +1,71 @@
 {
   "is_number": "IS 15644",
+  "standard_id": "IS 15644:2006",
+  "title": "Safety of Electric toys",
   "ia_identifier": "gov.in.is.15644.2006",
+  "division_code": "GEN",
+  "aspect": "Safety Standard",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Toys (Quality Control) Order, 2020"
+  },
   "clause_1_scope": "This International Standard deals with the safety of toys that have at least one function dependent on electricity. NOTE 1 Examples of toys also within the scope of this standard are - constructional sets; - experimental sets; - functional toys (models that have a function similar to an appliance or installation used by adults); - video toys (toys consisting of a screen and activating means, such as a joystick or keyboard. Separate screens having a rated voltage exceeding 24 V are not considered to be a part of the toy). Additional requirements for experimental sets are given in Annex A. Toys using electricity for secondary functions are within the scope of this standard. NOTE 2 A doll's house having an interior lamp is an example of such a toy. Additional requirements for toys incorporating lasers and light-emitting diodes are given in Annex E. In order to comply with this standard, electric toys also have to comply with ISO 8124-1, since it covers hazards other th^an those arising by the use of electricity. NOTE 3 Transformers for toys and battery chargers are not considered to be a toy, even if supplied with it. NOTE 4 If It is intended that a child also plays with the packaging, the latter is considered to be part of the toy. . .. NOTE 5 This Standard does not apply to - toy steam engines; - scale models for adult collectors; - folk dolls and decorative dolls and other similar articles for adult collectors; - sports equipment; - aquatic equipment intended to be used in deep water; - equipment intended to be used collectively in playgrounds; - amusement machines (lEC 60335-2-82); - professional toys installed in public places (shopping centres, stations, etc.); - products containing heating elements intended for use under the supervision of an adult in a teaching context; - portable child-appealing luminaires (lEC 60598-2-10); - Christmas decorations.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 15644",
-      "title": "lEC 62115 (2003)",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 11675",
+      "standard_id": "IS 11675:1986",
+      "title": "Button cells - Silver oxide",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 30",
+      "standard_id": "IS 30",
+      "title": "Indian Standard Code of Practice / Test Method (IS 30)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3",
+      "standard_id": "IS 3",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 75982
+  "clause_3_terminology": [
+    "Grade tM",
+    "Grade 1",
+    "Grade ification",
+    "Safety of Electric toys"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 73888
 }

@@ -1,49 +1,112 @@
 {
-  "is_number": "IS 2770 (Part 1)",
+  "is_number": "IS 2770 (PART 1)",
+  "standard_id": "IS 2770 (Part 1):1967",
+  "title": "Methods of testing bond in reinforced concrete, Part 1: Pull-out test",
   "ia_identifier": "gov.in.is.2770.1.1967",
-  "clause_1_scope": "1.1 This standard ( Part I ) covers the method for the comparison of the bond resistance of different types of reinforcing bars with concrete by means of a puljrout test.",
+  "division_code": "CED",
+  "aspect": "Methods of tests",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS 2770 (PART 1)) covers Methods of testing bond in reinforced concrete, Part 1: Pull-out test. 0,1 This Indian Standard ( Part I ) was adopted by the Indian Standards Institution on 20 November 196",
   "clause_2_normative_references": [
     {
       "is_number": "IS 2770",
-      "title": "1  (1967)  :  Methods  of  testing  bond  in  reinforced",
-      "relation_type": "TEST_METHOD"
+      "standard_id": "IS 2770",
+      "title": "Indian Standard Code of Practice / Test Method (IS 2770)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 456",
-      "title": "1964*.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 456:2000",
+      "title": "Plain and Reinforced Concrete - Code of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 2",
-      "title": "1960*.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 2:2022",
+      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 516",
-      "title": "1959f.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 516:1959",
+      "title": "Method of Tests for Strength of Concrete",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1",
-      "title": "2770  (  Part  I )  -  1967",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 432",
-      "title": "(  Part  I  )-",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 432",
+      "title": "Indian Standard Code of Practice / Test Method (IS 432)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 226",
-      "title": "1962f  at  25  mm  pitch,  such  that  the  outer  diameter  of",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 226",
+      "title": "Indian Standard Code of Practice / Test Method (IS 226)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1199",
-      "title": "1959f.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1199:1959",
+      "title": "Methods of sampling and analysis of concrete",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 30185
+  "clause_3_terminology": [
+    "Grade I",
+    "Grade et",
+    "Methods of testing bond in reinforced concrete",
+    "Part 1: Pull",
+    "out test"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 25885
 }

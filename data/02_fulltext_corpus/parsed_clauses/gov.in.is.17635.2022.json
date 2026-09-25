@@ -1,32 +1,65 @@
 {
   "is_number": "IS 17635",
+  "standard_id": "IS 17635:2022",
+  "title": "Beds - Specification",
   "ia_identifier": "gov.in.is.17635.2022",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Furniture (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "1.1 This standard covers the requirements related to the performance and safety of beds for adults for domestic and non-domestic use. 1.2 This standard applies to completely manufactured/fabricated beds. It also applies to ready-to-assemble units; in that case the requirements of this standard shall apply to the assembled units. 1.3 This standard does not cover waterbeds, airbeds, foldaway beds, bunk beds and beds for people with special needs, nor the beds for healthcare and medical purposes.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 17637",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 7259 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 7259 (PART 1)",
+      "standard_id": "IS 7259 (Part 1):1988",
+      "title": "wooden beds, Part 1: For use with mattresses",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 5533",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 5533:1969",
+      "title": "Recommendations for dimensions for spaces for human activities",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 17637",
+      "standard_id": "IS 17637:2021",
+      "title": "Performance Requirements of Surface Finishes for Furniture Applications",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 7888",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 7888:1976",
+      "title": "Methods of Test for Flexible Polyurethane Foam",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 17635",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 7259",
+      "standard_id": "IS 7259",
+      "title": "Indian Standard Code of Practice / Test Method (IS 7259)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -37,5 +70,13 @@
     "Stability Tests",
     "Strength Tests"
   ],
-  "total_chars_parsed": 40702
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "10.1 Each bed shall be indelibly and legibly marked"
+    ]
+  },
+  "total_chars_parsed": 39695
 }

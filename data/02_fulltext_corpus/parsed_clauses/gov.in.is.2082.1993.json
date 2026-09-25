@@ -1,29 +1,62 @@
 {
   "is_number": "IS 2082",
+  "standard_id": "IS 2082:2018",
+  "title": "Stationary Storage Type Electric Water Heaters- Specification (Fifth Revision)",
   "ia_identifier": "gov.in.is.2082.1993",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Electrical Appliances (Quality Control) Order"
+  },
   "clause_1_scope": "1.1 This standard cover general safety and performance requirements of Stationary Storage Type Electric Water Heater for household and similar purpose. 1.2 In addition to the above 1.1 of IS : 302-2-21 ( 1992 ) is applicable.",
   "clause_2_normative_references": [
     {
+      "is_number": "IS 2082 (PART 1)",
+      "standard_id": "IS 2082 (PART 1)",
+      "title": "Stationary Storage Type Electric Water Heaters- Specification (Fifth Revision) (IS 2082 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": true,
+      "qco_order": "Electrical Appliances (Quality Control) Order"
+    },
+    {
       "is_number": "IS 302",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 302",
+      "title": "Indian Standard Code of Practice / Test Method (IS 302)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2882",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2082 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2082",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 20",
+      "standard_id": "IS 20",
+      "title": "Indian Standard Code of Practice / Test Method (IS 20)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 25905
+  "clause_3_terminology": [
+    "Grade Tests",
+    "Grade Electric",
+    "Grade ification",
+    "Stationary Storage Type Electric Water Heaters",
+    "Fifth Revision"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 23750
 }

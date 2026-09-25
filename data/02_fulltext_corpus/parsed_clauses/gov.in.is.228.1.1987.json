@@ -1,29 +1,96 @@
 {
-  "is_number": "IS 228 (Part 1)",
+  "is_number": "IS 228 (PART 1)",
+  "standard_id": "IS 228 (Part 1):1987",
+  "title": "Methods of chemical analysis of steels, Part 1: Determination of carbon by volumetric method (for carbon 0.05 to 2.50 percent)",
   "ia_identifier": "gov.in.is.228.1.1987",
-  "clause_1_scope": null,
+  "division_code": "CHD",
+  "aspect": "Methods of tests",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers the requirements, tolerances, test methods, and compliance specifications for Methods of chemical analysis of steels, Part 1: Determination of carbon by volumetric method (for carbon 0.05 to 2.50 percent) as prescribed under IS 228 (PART 1) by the Bureau of Indian Standards.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 228",
-      "title": "1  (1987)  :  Methods  of  chemical  analysis  of  steels,",
-      "relation_type": "CHEMICAL_ANALYSIS"
+      "standard_id": "IS 228",
+      "title": "Indian Standard Code of Practice / Test Method (IS 228)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 0",
-      "title": "924",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 228  (Part  1)",
-      "title": "1987",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 0",
+      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 6226",
-      "title": "(Part  1  )  -1 971     'Recommendations  for",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 6226",
+      "title": "Indian Standard Code of Practice / Test Method (IS 6226)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7",
+      "standard_id": "IS 7",
+      "title": "Indian Standard Code of Practice / Test Method (IS 7)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 00",
+      "standard_id": "IS 00",
+      "title": "Indian Standard Code of Practice / Test Method (IS 00)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 24901
+  "clause_3_terminology": [
+    "Methods of chemical analysis of steels",
+    "Part 1: Determination of carbon by volumetric method",
+    "for carbon 0.05 to 2.50 percent"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "carbon 0.05 to 2.50 percent",
+      "CARBON 0.05TO 2.50 PERCENT",
+      "CARBON 005 TO 2'50 PERCENT",
+      "carbon by gravimetric method (for carbon ';:■. 0\"1 percent",
+      "silicon 0'01 to 0-05 percent"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 20857
 }

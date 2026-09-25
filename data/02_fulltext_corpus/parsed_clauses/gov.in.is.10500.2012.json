@@ -1,191 +1,381 @@
 {
   "is_number": "IS 10500",
+  "standard_id": "IS 10500:2012",
+  "title": "Drinking water",
   "ia_identifier": "gov.in.is.10500.2012",
+  "division_code": "FAD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
   "clause_1_scope": "This standard prescribes the requirements and the methods of sampling and test for drinking water.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 3025  (Part  32)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  26)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  60)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  47)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1622",
+      "standard_id": "IS 1622:1981",
+      "title": "Methods of sampling and microbiological examination of water",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 3025",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 3025",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3025)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 3025  (Part  46)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3025 (PART 55)",
+      "standard_id": "IS 3025 (Part 55):2003",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Wastewater, Part 55: Aluminium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 3025  (Part  43)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15303",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  53)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  29)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 10500",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  57)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1622",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  24)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  41)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  27)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  54)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  42)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  21)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  37)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  52)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  49)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  56)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  55)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  59)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15302",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  23)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 14194",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  48)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025 \n(Part  39)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025  (Part  34)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 13428",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3025 (PART 34)",
+      "standard_id": "IS 3025 (Part 34):1988",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 34: Nitrogen",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1342",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1342:2019",
+      "title": "Oil Pressure Stoves — Specification ( Seventh Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 3025  (Part  40)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 13428",
+      "standard_id": "IS 13428:2005",
+      "title": "Packaged Natural Mineral Water",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15302",
+      "standard_id": "IS 15302:2003",
+      "title": "Determination of Aluminium and Barium in Water by Direct Nitrous Oxide-Acetylene Flame Atomic Absorption Spectrometry",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 57)",
+      "standard_id": "IS 3025 (Part 57):2021",
+      "title": "Part 57 : 2021: METHODS OF SAMPLING AND TEST PHYSICAL AND CHEMICAL FOR WATER AND WASTEWATER PART 57 Boron Second Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 40)",
+      "standard_id": "IS 3025 (Part 40):1991",
+      "title": "Methods of sampling and test (physical and chemical) for water and waste water, Part 40: Calcium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 26)",
+      "standard_id": "IS 3025 (Part 26):2021",
+      "title": "Part 26 : 2021: Methods of sampling and test physical and chemical for water and wastewater Part 26 Chlorine residualsecond revision of IS 3025Part 26",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 32)",
+      "standard_id": "IS 3025 (Part 32):1988",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 32: Chloride",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 42)",
+      "standard_id": "IS 3025 (Part 42):1992",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 42: Copper",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 60)",
+      "standard_id": "IS 3025 (Part 60):2008",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 60: Fluoride",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 53)",
+      "standard_id": "IS 3025 (Part 53):2003",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Wastewater, Part 53: Iron",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 46)",
+      "standard_id": "IS 3025 (Part 46):2023",
+      "title": "Part 46 : 2023: Methods Of Sampling And Test Physical And Chemical For Water And Wastewater - Part 46 Magnesium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 59)",
+      "standard_id": "IS 3025 (Part 59):2023",
+      "title": "Part 59 : 2023: Methods Of Sampling And Test Physical And Chemical For Water And Wastewater Part 59 Manganese Second Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 39)",
+      "standard_id": "IS 3025 (Part 39):2021",
+      "title": "Part 39 : 2021: METHODS OF SAMPLING AND TEST PHYSICAL AND CHEMICAL FOR WATER AND WASTEWATER Part 39 Oil and Grease Second Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 43)",
+      "standard_id": "IS 3025 (Part 43):1992",
+      "title": "Methods of sampling and test (physical and chemical) for water and waste water, Part 43: Phenols",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 56)",
+      "standard_id": "IS 3025 (Part 56):2003",
+      "title": "Methods of Sampling and Test ( Physical and Chemical ) for Water and Wastewater, Part 56: Selenium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15303",
+      "standard_id": "IS 15303:2003",
+      "title": "Determination of Antimony, Iron and Selenium in Water by Electrothermal Atomic Absorption Spectrometric Method",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 24)",
+      "standard_id": "IS 3025 (Part 24):1986",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 24: Sulphates",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 29)",
+      "standard_id": "IS 3025 (Part 29):2022",
+      "title": "Part 29 : 2022: Methods of Sampling and Test (Physical and Chemical) for Water and WasteWater - Part 29 Sulphide",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 23)",
+      "standard_id": "IS 3025 (Part 23):2023",
+      "title": "Part 23 : 2023: Methods Of Sampling And Test Physical And Chemical For Water And Wastewater - Part 23 Alkalinity",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 21)",
+      "standard_id": "IS 3025 (Part 21):2009",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 21: Total hardness",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 49)",
+      "standard_id": "IS 3025 (Part 49):1994",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 49: Zinc",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 41)",
+      "standard_id": "IS 3025 (Part 41):2023",
+      "title": "Part 41 : 2023: Methods Of Sampling And Test Physical And Chemical For Water And Wastewater - Part 41 Cadmium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 27)",
+      "standard_id": "IS 3025 (Part 27):1986",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 27: Cyanide",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 47)",
+      "standard_id": "IS 3025 (Part 47):1994",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Wastewater, Part 47: Lead",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 48)",
+      "standard_id": "IS 3025 (Part 48):1994",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 48: Mercury",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 2)",
+      "standard_id": "IS 3025 (PART 2)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3025 (PART 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 54)",
+      "standard_id": "IS 3025 (Part 54):2003",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Wastewater, Part 54: Nickel",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 37)",
+      "standard_id": "IS 3025 (Part 37):2022",
+      "title": "Part 37 : 2022: METHODS OF SAMPLING AND TEST PHYSICAL AND CHEMICAL FOR WATER AND WASTEWATER PART 37 ARSENIC Second Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 52)",
+      "standard_id": "IS 3025 (Part 52):2003",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Wastewater, Part 52: Chromium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14194",
+      "standard_id": "IS 14194",
+      "title": "Indian Standard Code of Practice / Test Method (IS 14194)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 1)",
+      "standard_id": "IS 3025 (PART 1)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3025 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
-    "Drinking"
+    "Drinking Water",
+    "Grade ed",
+    "Grade ification",
+    "Drinking water"
   ],
-  "total_chars_parsed": 47299
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 41497
 }

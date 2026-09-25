@@ -1,59 +1,90 @@
 {
-  "is_number": "IS 1367 (Part 1)",
+  "is_number": "IS 1367 (PART 1)",
+  "standard_id": "IS 1367 (Part 1):2002",
+  "title": "Technical Supply Conditions for Threaded Steel Fasteners, Part 1: General Requirements for Bolts, Screws and Studs",
   "ia_identifier": "gov.in.is.1367.1.2002",
-  "clause_1_scope": null,
+  "division_code": "MTD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Bolts, Nuts and Fasteners (Quality Control) Order, 2023"
+  },
+  "clause_1_scope": "This Indian Standard (IS 1367 (PART 1)) covers Technical Supply Conditions for Threaded Steel Fasteners, Part 1: General Requirements for Bolts, Screws and Studs. This Indian Standard { Part 1 ) (Third Revision ) which is identical with ISO 8992 : 1986 'Fasteners — General requirements for bolts, screws, studs and nuts' issued by the International Organization for Standardization ( ISO ) was adopted by the on the recommendation of the Bolts, Nuts and Fasteners Accessories Sectional Committee and approval of the Basic and Production Engineering Division Council. This standard was originally published in 1961 and subsequently revised in 1967 and 1980. This revision of the standard has been taken up to align it with ISO 8992 : 1986 by adoption under dual numbering system. While specific requirements of fasteners are covered in the rest of the parts, this part is intended to provide an instruction to different parts of the standard and cover requirements which are general in nature. The text of ISO Standard has been approved as suitable for publication as Indian Standard without deviations. Certain terminology and conventions are, however, not ident",
   "clause_2_normative_references": [
     {
       "is_number": "IS 1367",
-      "title": "(Parti ) : 2002",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1367",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1367)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2002",
-      "title": "BUREAU OF INDIAN STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1367 (PART 14/SEC 2)",
+      "standard_id": "IS 1367 (PART 14/SEC 2)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1367 (PART 14/SEC 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 13096",
-      "title": "Fasteners — Hexagon nuts with",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1367 (PART 14/SEC 3)",
+      "standard_id": "IS 1367 (PART 14/SEC 3)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1367 (PART 14/SEC 3))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1367 (Part 1)",
-      "title": "ISO 8992 : 1986",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1367 (Part 14/Sec 2)",
-      "title": "Technical supply do",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1367 (Part 14/Sec 3)",
-      "title": "Technical supply do",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1367 (Part9/Sec1)",
-      "title": "Technical supply do",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1367 (PART9/SEC1)",
+      "standard_id": "IS 1367 (PART9/SEC1)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1367 (PART9/SEC1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1",
-      "title": "367 ( Part 10): 2002 Technical supply conditions for do",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1367 (Part9/Sec2)",
-      "title": "Technical supply do",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "'Rules for rounding off numerical values ( revised)'.",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1367 (PART9/SEC2)",
+      "standard_id": "IS 1367 (PART9/SEC2)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1367 (PART9/SEC2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 13229
+  "clause_3_terminology": [
+    "Technical Supply Conditions for Threaded Steel Fasteners",
+    "Part 1: General Requirements for Bolts",
+    "Screws and Studs"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 11812
 }

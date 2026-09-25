@@ -1,54 +1,70 @@
 {
-  "is_number": "IS 1363 (Part 3)",
+  "is_number": "IS 1363 (PART 3)",
+  "standard_id": "IS 1363 (Part 3):2002",
+  "title": "Hexagon Head Bolts, Screws and Nuts of Product Grade C, Part 3: Hexagon Nuts (Size Range M5 to M64)",
   "ia_identifier": "gov.in.is.1363.3.2002",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Bolts, Nuts and Fasteners (Quality Control) Order, 2023"
+  },
   "clause_1_scope": "This International Standard specifies the characteristics of hexagon nuts with threads from M5 up to and including M64 and product grade C. If, in special cases, specifications other than those listed in this International Standard are required, they should be selected from existing International Standards, for example ISO 724, ISO 898-2, ISO 965-1 and ISO 4759-1 .",
   "clause_2_normative_references": [
     {
       "is_number": "IS 1363",
-      "title": "3 (2002) : Hexagon Head Bolts, Screws and Nuts of",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1363 (Part3)",
-      "title": "ISO 4034: 1999",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2002",
-      "title": "BUREAU OF INDIAN STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1367",
-      "title": "series of standards covering Technical supply conditions for threaded steel fasteners'.",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 8536",
-      "title": "1 987 Fasteners — Bolts, screws, studs and Identical",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 421",
-      "title": "8 ( Part 3 ) : 1 999 ISO General purpose metric screw do",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1363",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1363)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1",
-      "title": "367 ( Part 6 ) : 1 994 Technical supply conditions for do",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1367 (Part 17)",
-      "title": "2 > Industrial fasteners — do",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1367 (PART 17)",
+      "standard_id": "IS 1367 (Part 17):2005",
+      "title": "Industrial Fasteners - Threaded steel fasteners - Technical supply conditions, Part 17: Inspection, sampling and acceptance procedure",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2",
-      "title": "'Rules for rounding off numerical values ( revised )'. The number of",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1367",
+      "standard_id": "IS 1367",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1367)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 18419
+  "clause_3_terminology": [
+    "Hexagon Head Bolts",
+    "Screws and Nuts of Product Grade C",
+    "Part 3: Hexagon Nuts",
+    "Size Range M5 to M64"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Details available with the ."
+    ]
+  },
+  "total_chars_parsed": 16351
 }

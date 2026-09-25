@@ -1,374 +1,887 @@
 {
   "is_number": "IS 456",
+  "standard_id": "IS 456:2000",
+  "title": "Plain and Reinforced Concrete - Code of Practice",
   "ia_identifier": "gov.in.is.456.2000",
-  "clause_1_scope": "1.1 This standard deals with the general structural use of plain and reinforced concrete. 1.1.1 For the purpose of this standard, plain concrete structures are those where reinforcement, if provided is ignored for determination of strength of the structure. 1.2 Special requirements of structures, such as shells, folded plates, arches, bridges, chimneys, blast resistant structures, hydraulic structures, liquid retaining structures and earthquake resistant structures, covered in respective standards have not been covered in this standard; these standards shall be used in conjunction with this standard.",
+  "division_code": "CED",
+  "aspect": "Code of Practice",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers the requirements, tolerances, test methods, and compliance specifications for Plain and Reinforced Concrete - Code of Practice as prescribed under IS 456 by the Bureau of Indian Standards.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 6452",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2386 (Part 3)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1786",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1343",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1489 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4845",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025 (Part 17)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4926",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 (Part 4)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 \n(Part 5)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1642",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 432",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1489 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 13920",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12269",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6061 (Part \n1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 455",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4031 (Part 5)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 9013",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 516",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 7861 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025 (Part 32)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3414",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3812 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025 \n(Part 23)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2502",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 121",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6909",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4656",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6061 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1566",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 14687",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 456",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2506",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 13311",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1791",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2062",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 432 (Part \n1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4326",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4925",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 \n(Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1904",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 269",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12600",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1893",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 (Part 5)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1199",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5816",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12089",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025 (Part 22)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 7861 \n(Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3951 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 11817",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2505",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9417",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12330",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 8043",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3025 (Part 24)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 \n(Part 3)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3812",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 383",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2514",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15388",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 875 (Part 3)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4082",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 8041",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9013:1978",
+      "title": "Method of making, curing and determining compressive strength of accelerated cured concrete test specimens",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 9103",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 9103:1999",
+      "title": "Specification for Concrete Admixtures -",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 432 \n(Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 4",
+      "standard_id": "IS 4:1963",
+      "title": "Guide for Layout of Learned Periodicals",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 45",
+      "standard_id": "IS 45",
+      "title": "Indian Standard Code of Practice / Test Method (IS 45)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3812 (PART 1)",
+      "standard_id": "IS 3812 (Part 1):2013",
+      "title": "Specification for Pulverized Fuel Ash, Part 1: For Use as Pozzolana in Cement, Cement Mortar and Concrete",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3812",
+      "standard_id": "IS 3812",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3812)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15388",
+      "standard_id": "IS 15388:2003",
+      "title": "Specification for Silica Fume",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2",
+      "standard_id": "IS 2:2022",
+      "title": "RULES FOR ROUNDING OFF NUMERICAL VALUES (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4845",
+      "standard_id": "IS 4845:1968",
+      "title": "Definitions and terminology relating to hydraulic cement",
+      "division_code": "CED",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 6461",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 6461",
+      "title": "Indian Standard Code of Practice / Test Method (IS 6461)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2386 \n(Part 3)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 269",
+      "standard_id": "IS 269:2013",
+      "title": "Specification for Ordinary Portland Cement, 33 Grade",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 8",
+      "standard_id": "IS 8:1994",
+      "title": "High Heat Duty Fireclay Refractories",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12269",
+      "standard_id": "IS 12269:1987",
+      "title": "Specification for 53 grade ordinary Portland cement (BI-LINGUAL)",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8041",
+      "standard_id": "IS 8041:1990",
+      "title": "Specification for rapid hardening Portland cement",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 455",
+      "standard_id": "IS 455:2015",
+      "title": "Portland Slag Cement - Specification (Fifth Revision)",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 1489 (PART 1)",
+      "standard_id": "IS 1489 (Part 1):2015",
+      "title": "Part 1 : 2015: Portland Pozzolana Cement - Specification Part 1 Fly Ash Based (Fourth Revision",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 1489 (PART 2)",
+      "standard_id": "IS 1489 (Part 2):2015",
+      "title": "Part 2 : 2015: Portland Pozzolana Cement - Specification Part 2 Calcined Clay Based (Fourth Revision)",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 8043",
+      "standard_id": "IS 8043:1991",
+      "title": "Specification for hydrophobic Portland cement",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12600",
+      "standard_id": "IS 12600:1989",
+      "title": "Specification for low heat Portland cement",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12330",
+      "standard_id": "IS 12330:1988",
+      "title": "Specificatioon for sulphate resisting Portland cement",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6452",
+      "standard_id": "IS 6452:1989",
+      "title": "B): high alumina cement for structural use(BI-LINGUAL)",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6909",
+      "standard_id": "IS 6909:1990",
+      "title": "Specification for supersulphated cement",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1",
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 383",
+      "standard_id": "IS 383:2016",
+      "title": "Coarse and Fine Aggregate for Concrete - Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 22)",
+      "standard_id": "IS 3025 (Part 22):1986",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Waste Water, Part 22: Acidity",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 23)",
+      "standard_id": "IS 3025 (Part 23):2023",
+      "title": "Part 23 : 2023: Methods Of Sampling And Test Physical And Chemical For Water And Wastewater - Part 23 Alkalinity",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 516",
+      "standard_id": "IS 516:1959",
+      "title": "Method of Tests for Strength of Concrete",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4031 (PART 5)",
+      "standard_id": "IS 4031 (Part 5):1988",
+      "title": "Methods of physical tests for hydraulic cement, Part 5: Determination of initial and final setting times",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1025 (PART 18)",
+      "standard_id": "IS 1025 (PART 18)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1025 (PART 18))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025",
+      "standard_id": "IS 3025",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3025)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 24)",
+      "standard_id": "IS 3025 (Part 24):1986",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 24: Sulphates",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 32)",
+      "standard_id": "IS 3025 (Part 32):1988",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 32: Chloride",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 17)",
+      "standard_id": "IS 3025 (Part 17):2022",
+      "title": "Part 17 : 2022: METHODS OF SAMPLING AND TEST PHYSICAL AND CHEMICAL FOR WATER AND WASTE WATER PART 17 NON-FILTERABLE RESIDUE TOTAL SUSPENDED SOLIDS at 103 ï¿½C-105 ï¿½C Second Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 432",
+      "standard_id": "IS 432",
+      "title": "Indian Standard Code of Practice / Test Method (IS 432)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1786",
+      "standard_id": "IS 1786:2008",
+      "title": "High strength deformed steel bars and wires for concrete reinforcement-",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 1566",
+      "standard_id": "IS 1566:1982",
+      "title": "hard-drawn steel wire fabric for concrete reinforcement",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2062",
+      "standard_id": "IS 2062:2011",
+      "title": "Hot Rolled Medium and High Tensile Structural Steel",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 4082",
+      "standard_id": "IS 4082:1996",
+      "title": "Recommendations on stacking and storage of construction materials and components at site",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5816",
+      "standard_id": "IS 5816",
+      "title": "Indian Standard Code of Practice / Test Method (IS 5816)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1343",
+      "standard_id": "IS 1343:2012",
+      "title": "Prestressed Concrete - Code Of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12089",
+      "standard_id": "IS 12089:1987",
+      "title": "Specification for granulated slag for the manufacture of Portland slag cement",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4925",
+      "standard_id": "IS 4925:2023",
+      "title": "Concrete Batching And Mixing Plant - Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4926",
+      "standard_id": "IS 4926:2003",
+      "title": "Code of Practice Ready-Mixed Concrete",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2386 (PART 3)",
+      "standard_id": "IS 2386 (Part 3):1963",
+      "title": "Methods of test for aggregates for concrete, Part 3: Specific gravity, density, voids, absorption and bulking",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1791",
+      "standard_id": "IS 1791:2020",
+      "title": "General Requirements for Batch Type Concrete Mixers ( Third Revision )",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 121",
+      "standard_id": "IS 121",
+      "title": "Indian Standard Code of Practice / Test Method (IS 121)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 24",
+      "standard_id": "IS 24",
+      "title": "Indian Standard Code of Practice / Test Method (IS 24)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1199",
+      "standard_id": "IS 1199:1959",
+      "title": "Methods of sampling and analysis of concrete",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14687",
+      "standard_id": "IS 14687:1999",
+      "title": "Guidelines for falsework for concrete structures",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2502",
+      "standard_id": "IS 2502:1963",
+      "title": "Code of Practice for Bending and Fixing of Bars for Concrete Reinforcement",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9417",
+      "standard_id": "IS 9417:2018",
+      "title": "Welding of High Strength steel Bars for Reinforced Concrete Construction - Recommendations (Second Revision)",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2505",
+      "standard_id": "IS 2505:2023",
+      "title": "Immersion Type Concrete Vibrators - General Requirements",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2506",
+      "standard_id": "IS 2506:2022",
+      "title": "GENERAL REQUIREMENTS FOR CONCRETE VIBRATORS SCREED BOARD TYPE",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2514",
+      "standard_id": "IS 2514:2023",
+      "title": "Concrete Vibrating Tables - Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4656",
+      "standard_id": "IS 4656",
+      "title": "Indian Standard Code of Practice / Test Method (IS 4656)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11817",
+      "standard_id": "IS 11817:1986",
+      "title": "Classification of joints in buildings for accommodation of dimensional deviations during construction (ISO 7727-1984)",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7861 (PART 1)",
+      "standard_id": "IS 7861 (Part 1):1975",
+      "title": "Code of practice for extreme weather concreting, Part 1: Recommended practice for hot weather concreting",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7861 (PART 2)",
+      "standard_id": "IS 7861 (Part 2):1981",
+      "title": "Code of practice for extreme weather concreting, Part 2: Recommended practice for cold weather concreting",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5",
+      "standard_id": "IS 5:2007",
+      "title": "Colors for Ready Mixed Paints and Enamels",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13311",
+      "standard_id": "IS 13311",
+      "title": "Indian Standard Code of Practice / Test Method (IS 13311)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875 (PART 1)",
+      "standard_id": "IS 875 (Part 1):1987",
+      "title": "Code of Practice For Design Loads (Other Than Earthquake)For Buildings And Structures, Part 1: Dead Loads - Unit Weights of Building Material And Stored Materials (Incorporating IS 1911 : 1967)",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875 (PART 2)",
+      "standard_id": "IS 875 (Part 2):1987",
+      "title": "Code of Practice for Design Loads (Other Than Earthquake) For Buildings And Structures, Part 2: Imposed Loads",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875 (PART 3)",
+      "standard_id": "IS 875 (Part 3):2015",
+      "title": "Code of Practice for Design Loads (Other than Earthquake) for Buildings and Structures - Part 3 : Wind Loads (IS 875 : Part 3) + Amendment 2016",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875 (PART 4)",
+      "standard_id": "IS 875 (Part 4):2021",
+      "title": "Part 4 : 2021: Code of Practice for Design Loads other than earthquake for Buildings and Structures Part 4 Snow Loads",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1893",
+      "standard_id": "IS 1893:1984",
+      "title": "Criteria for earthquake resistant design of structures",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875 (PART 5)",
+      "standard_id": "IS 875 (Part 5):1987",
+      "title": "Code of Practice For Design Loads (Other Than Earthquake) For Buildings And Structures, Part 5: Special Loads And Combinations",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1904",
+      "standard_id": "IS 1904:2021",
+      "title": "Draft Indian Standard for General requirements for design and construction of foundations in soils Code of practice third revision of IS 1904",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1642",
+      "standard_id": "IS 1642:2013",
+      "title": "Fire safety of buildings (general): Details of construction - Code of practice for",
+      "division_code": "PGD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13920",
+      "standard_id": "IS 13920:2016",
+      "title": "Ductile Design and Detailing of Reinforced Concrete Structures Subjected to Seismic Forces - Code of Practice (First Revision)",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4326",
+      "standard_id": "IS 4326:2013",
+      "title": "Earthquake resistant design and construction of buildings - Code of practice",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3414",
+      "standard_id": "IS 3414:1968",
+      "title": "Code of Practice for Design and Installation of Joints in Buildings",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3951 (PART 1)",
+      "standard_id": "IS 3951 (Part 1):2023",
+      "title": "Part 1 : 2023: Hollow Clay Tiles For Floors And Roofs Specification Part 1 Filler Type",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6061 (PART 1)",
+      "standard_id": "IS 6061 (Part 1):1971",
+      "title": "Code of Practice for Construction of Floor and Roof with Joists and Filler Blocks, Part 1: With Hollow Concrete Filler Blocks",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6061 (PART 2)",
+      "standard_id": "IS 6061 (Part 2):1981",
+      "title": "Code of practice for construction of floor and roof with joists and filler blocks, Part 2: With hollow clay filler blocks",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 0",
+      "standard_id": "IS 0",
+      "title": "Indian Standard Code of Practice / Test Method (IS 0)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 432 (PART 1)",
+      "standard_id": "IS 432 (Part 1):1982",
+      "title": "Mild Steel and Medium Tensile Steel Bars and Hard-Drawn Steel Wire for Concrete Reinforcement, Part 1: Mild Steel and Medium Tensile Steel Bars",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 230",
+      "standard_id": "IS 230:1972",
+      "title": "Normal butyl acetate",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "SP 16",
+      "standard_id": "SP 16:1980",
+      "title": "SP 16: Design Aids for Reinforced Concrete to IS 456:1978",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1489",
+      "standard_id": "IS 1489",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1489)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4031",
+      "standard_id": "IS 4031",
+      "title": "Indian Standard Code of Practice / Test Method (IS 4031)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2386",
+      "standard_id": "IS 2386",
+      "title": "Indian Standard Code of Practice / Test Method (IS 2386)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7861",
+      "standard_id": "IS 7861",
+      "title": "Indian Standard Code of Practice / Test Method (IS 7861)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 875",
+      "standard_id": "IS 875",
+      "title": "Indian Standard Code of Practice / Test Method (IS 875)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3951",
+      "standard_id": "IS 3951",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3951)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6061",
+      "standard_id": "IS 6061",
+      "title": "Indian Standard Code of Practice / Test Method (IS 6061)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 329720
+  "clause_3_terminology": [
+    "Grade ordinary",
+    "Grade s",
+    "Grade 1",
+    "Plain and Reinforced Concrete",
+    "Code of Practice"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "compressive strength of 150 mm"
+    ],
+    "chemical_properties": [
+      "chloride is encountered along with sulphates in soil or ground water, ordinary Portland cement with C,A content from 5 to 8 percent",
+      "ash content is at least 20 percent"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 321281
 }

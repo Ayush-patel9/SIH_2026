@@ -1,47 +1,85 @@
 {
   "is_number": "IS 17631",
+  "standard_id": "IS 17631:2022",
+  "title": "Work Chairs - Specification",
   "ia_identifier": "gov.in.is.17631.2022",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Furniture (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "This standard covers the requirements of work chairs. This standard applies to completely manufactured/fabricated work chairs. It also applies to ready-to-assemble units; in that case the requirements of this standard shall apply to the assembled units.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 3499 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3499 (PART 1)",
+      "standard_id": "IS 3499 (Part 1):1985",
+      "title": "metal chairs for office purposes Specification, Part 1: Non-revolving and non-tilting",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 17637",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3499 (PART 2)",
+      "standard_id": "IS 3499 (Part 2):1985",
+      "title": "B): metal chairs for office purposes Specification, Part 2: Revolving and tilting (BI-LINGUAL)",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 11525",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3499 (PART 20)",
+      "standard_id": "IS 3499 (PART 20)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3499 (PART 20))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 17524",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3499 (Part 2)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3499 (Part 20)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 17524",
+      "title": "Indian Standard Code of Practice / Test Method (IS 17524)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 3663",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 3663:2018",
+      "title": "Dimensions of Tables and Chairs for Office Purposes (Third Revision)",
+      "division_code": "LITD",
+      "aspect": "Dimensions",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 17631",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 17637",
+      "standard_id": "IS 17637:2021",
+      "title": "Performance Requirements of Surface Finishes for Furniture Applications",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3499",
+      "standard_id": "IS 3499",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3499)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
   "clause_3_terminology": [
@@ -55,5 +93,13 @@
     "Surface Finish Tests",
     "Work Chair"
   ],
-  "total_chars_parsed": 46674
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "9.1 Each chair shall be indelibly and legibly marked"
+    ]
+  },
+  "total_chars_parsed": 45540
 }

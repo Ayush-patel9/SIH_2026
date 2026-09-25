@@ -1,84 +1,186 @@
 {
   "is_number": "IS 16018",
+  "standard_id": "IS 16018:2012",
+  "title": "Wheeled Fire Extinguishers — Performance and Construction — Specification",
   "ia_identifier": "gov.in.is.16018.2012",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Fire Fighting Equipment (Quality Control) Order"
+  },
   "clause_1_scope": "1.1 This standard specifies the principal requirements intended to ensure the safety, reliability and performance of wheeled fire extinguishers. 1.2 It is applicable to wheeled fire extinguishers with a total mass (when fully charged) of greater than 17 kg but not more than 450 kg. NOTE — Fire extinguisher of 450 kg weight shall be without trolley and trailer.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 16018",
-      "title": "(Reaffirmed 2018)",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2012",
-      "title": "BUREAU OF INDIAN STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2190",
-      "title": "‘Code of practice for selection, installation",
-      "relation_type": "INSTALLATION_CODE"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "‘Rules for rounding off numerical values (revised) . The number of significant places retained in the rounded off",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
       "is_number": "IS 15222",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 15222:2002",
+      "title": "Carbon Dioxide as Fire Extinguishing Media for Fire Protection -Specification",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 15493",
-      "title": "or certificate of supplier.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 15493:2021",
+      "title": "Gaseous Fire Extinguishing Systems - General Requirements First Revision",
+      "division_code": "PGD",
+      "aspect": "System Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 4308",
-      "title": "or",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 4308:2019",
+      "title": "Dry Chemical Powders for Fire Fighting — BC, ABC and D Types — Specification ( Third Revision )",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "CHEMICAL_ANALYSIS",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4861",
+      "standard_id": "IS 4861:1984",
+      "title": "Specification for dry powder for fighting fires in burning metals",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14609",
+      "standard_id": "IS 14609:1999",
+      "title": "Dry Chemical Powder for Fighting A,B,C, Class Fires -Specification",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "CHEMICAL_ANALYSIS",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 4989",
-      "title": "or",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 4989:2018",
+      "title": "Foam Concentrate for Producing Mechanical Foam for Fire Fighting — Specification ( Fourth Revision )",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4989 (PART 4)",
+      "standard_id": "IS 4989 (Part 4):2003",
+      "title": "multipurpose aqueous film forming foam liquid concentrate for extinguishing hydrocarbon and polar solvent fires",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 11864",
-      "title": "shall be used. The test solution shall be",
-      "relation_type": "TEST_METHOD"
+      "standard_id": "IS 11864:1986",
+      "title": "Recommended construction practice of apparatus for spray cabinet for various salt spray tests",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 6910",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 6910:1985",
+      "title": "Method of testing corrosion resistance of electroplated and anodized aluminium coatings by acetic acid salt spray (AAS) test",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 15683",
-      "title": "for portable fire extinguishers.",
-      "relation_type": "SAFETY_REQUIREMENT"
+      "standard_id": "IS 15683:2018",
+      "title": "Portable Fire Extinguishers — Performance and Construction — Specification ( First Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": true,
+      "qco_order": "Fire Fighting Equipment (Quality Control) Order"
     },
     {
       "is_number": "IS 7285",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 7285",
+      "title": "Indian Standard Code of Practice / Test Method (IS 7285)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 15660",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 15660:2017",
+      "title": "Refillable Transportable Seamless Aluminium Alloy Gas Cylinders - Specification (First Revision)",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 3400 (Part 1)",
-      "title": null,
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 80",
+      "standard_id": "IS 80:1991",
+      "title": "Tung Oil for Paints",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 19",
-      "title": "Bureau of Indian Standards",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 3400 (PART 1)",
+      "standard_id": "IS 3400 (Part 1):2012",
+      "title": "Methods of Test for Vulcanized Rubber, Part 1: Tensile Stress-Strain Properties",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3400",
+      "standard_id": "IS 3400",
+      "title": "Indian Standard Code of Practice / Test Method (IS 3400)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 77098
+  "clause_3_terminology": [
+    "Grade A",
+    "Grade B",
+    "Grade ification",
+    "Wheeled Fire Extinguishers",
+    "Performance and Construction"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "tensile strength — 3.4 MPa",
+      "Minimum tensile strength — 3.4"
+    ],
+    "chemical_properties": [
+      "carbon, 0.05 percent",
+      "sulphur and 0.05 percent",
+      "carbon content of 0.03 percent"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": []
+  },
+  "total_chars_parsed": 75798
 }

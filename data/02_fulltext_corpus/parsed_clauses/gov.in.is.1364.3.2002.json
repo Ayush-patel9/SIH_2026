@@ -1,64 +1,121 @@
 {
-  "is_number": "IS 1364 (Part 3)",
+  "is_number": "IS 1364 (PART 3)",
+  "standard_id": "IS 1364 (Part 3):2002",
+  "title": "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B, Part 3: Hexagon Nuts, Style 1 (Size Range M 1.6 to M 64)",
   "ia_identifier": "gov.in.is.1364.3.2002",
+  "division_code": "LITD",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Bolts, Nuts and Fasteners (Quality Control) Order, 2023"
+  },
   "clause_1_scope": "This International Standard specifies the characteristics of hexagon nuts, style 1, with threads from M1.6 up to including M64, with product grade A for threads ^ ^ M16and product grade B for threads ^ > M16. If, in special cases, specifications other than those listed in this International Standard are required, they should be selected from existing International Standards, for exannple ISO 724, ISO 898-2, ISO 965-1, ISO 3506-2 and ISO 4759-1. NOTE For hexagon nuts style 2, see ISO 4033.",
   "clause_2_normative_references": [
     {
       "is_number": "IS 1364",
-      "title": "3  (2002) :  Hexagon  Head  Bolts,  Screws  and  Nuts  of",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1364",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1364)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 2002",
-      "title": "BUREAU    OF   INDIAN    STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1364(Part3)",
-      "title": "180  4032:1999",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1364(PART3)",
+      "standard_id": "IS 1364(PART3)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1364(PART3))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1367",
-      "title": "series  of  standards  covering  Technical  supply  conditions  for  threaded  steel  fasteners'.",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1367",
+      "title": "Indian Standard Code of Practice / Test Method (IS 1367)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 8536",
-      "title": "Fasteners  —  Bolts,  screws,  studs  and  Identical",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 4033",
+      "standard_id": "IS 4033:1968",
+      "title": "General Requirements for Hospital Furniture",
+      "division_code": "MHD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 17",
+      "standard_id": "IS 17:1973",
+      "title": "Bleached Lac",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 4218",
-      "title": "{  Part  3  )  :  1999  ISO  General  purpose  metric",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 4218",
+      "title": "Indian Standard Code of Practice / Test Method (IS 4218)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 14962",
-      "title": "(  Part  1  )  :  2001  ISO  General  purpose  metric",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 14962",
+      "title": "Indian Standard Code of Practice / Test Method (IS 14962)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
-      "is_number": "IS 1367  (Part  17)",
-      "title": "2)  Industrial  fasteners  —",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 1367 (PART 17)",
+      "standard_id": "IS 1367 (Part 17):2005",
+      "title": "Industrial Fasteners - Threaded steel fasteners - Technical supply conditions, Part 17: Inspection, sampling and acceptance procedure",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 1",
-      "title": "367  (  Part  1  ) :  2002  Technical  supply  conditions  for",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1364  (Part  3)",
-      "title": "ISO  4032:  1999",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "'Rules  for  rounding  off  numerical  values  (  revised  )\\  The  number  of",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 1:1968",
+      "title": "the National Flag of India (Cotton Khadi) (BI-LINGUAL)",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "GENERAL_REFERENCE",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 24498
+  "clause_3_terminology": [
+    "Grade s",
+    "Hexagon Head Bolts",
+    "Screws and Nuts of Product Grades A and B",
+    "Part 3: Hexagon Nuts",
+    "Style 1"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Details available with the ."
+    ]
+  },
+  "total_chars_parsed": 21023
 }

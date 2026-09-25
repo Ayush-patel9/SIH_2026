@@ -1,189 +1,29 @@
 {
   "is_number": "IS 616",
+  "standard_id": "IS 616:2010",
+  "title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements",
   "ia_identifier": "gov.in.is.616.2010",
-  "clause_1_scope": null,
-  "clause_2_normative_references": [
-    {
-      "is_number": "IS 616",
-      "title": "(2010) : Audio, Video and Similar Electronic",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2010",
-      "title": "BUREAU OF iNDIAN STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 3722",
-      "title": "(Parts 1 and 2) : 1983 Letter",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9001 (Part 13)",
-      "title": "Guidance for",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6002 (Part 10/Sec 1)",
-      "title": "Specification for equipment for",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9000 (Part 7/Sec 7)",
-      "title": "Basic",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9000 (Part 4)",
-      "title": "Basic",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1",
-      "title": "271 : 1 985 Thermal evaluation and",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2824",
-      "title": "1 975 Method for determining",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 60127",
-      "title": "(All parts) Miniature",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2259",
-      "title": "Methods of test for",
-      "relation_type": "TEST_METHOD"
-    },
-    {
-      "is_number": "IS 8504",
-      "title": "(All parts) Guide for",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 694",
-      "title": "PVC Indulated cables",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9968 (Part 1)",
-      "title": "Specification ^",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 9968 (Part 2)",
-      "title": "Specification",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 5921",
-      "title": "(All parts) Specification for",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 13730",
-      "title": "(All parts) Specification for",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 302 (Part 1)",
-      "title": "Safety of",
-      "relation_type": "SAFETY_REQUIREMENT"
-    },
-    {
-      "is_number": "IS 7305",
-      "title": "Specification for fixed",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2032",
-      "title": "(All parts) Graphical symbols",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 7809",
-      "title": "(All parts) Specification for",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 12063",
-      "title": "Classification of",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15382 (Part 1)",
-      "title": "Insulation",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15382 (Part 3)",
-      "title": "Insulation",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 11000 (Part 2/Sec 2)",
-      "title": "Fire",
-      "relation_type": "SAFETY_REQUIREMENT"
-    },
-    {
-      "is_number": "IS 11731 (Part 1)",
-      "title": "Methods oi\\",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 11731 (Part 2)",
-      "title": "Methods of",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 13778 (Part 3)",
-      "title": "Methods of",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 13778 (Part 5)",
-      "title": "Methods of",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 13778 (Part 6)",
-      "title": "Methods of",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 1293",
-      "title": "Plugs and socket-",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 00",
-      "title": "4201 00 : 1 994 Varistors for use",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 6964",
-      "title": "Electroacoustics —",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 4218 (Part 2)",
-      "title": "ISO general",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 421",
-      "title": "8 (Part 4) : 2001 General purpose",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "1 960 'Rules for rounding off numerical values {revised)' .The number of significant",
-      "relation_type": "GENERAL_REFERENCE"
-    }
+  "division_code": "LITD",
+  "aspect": "Safety Standard",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Electronics and IT Goods (CRS) Order"
+  },
+  "clause_1_scope": "This standard covers the requirements, tolerances, test methods, and compliance specifications for Audio, Video and Similar Electronic Apparatus - Safety Requirements as prescribed under IS 616 by the Bureau of Indian Standards.",
+  "clause_2_normative_references": [],
+  "clause_3_terminology": [
+    "Audio",
+    "Video and Similar Electronic Apparatus",
+    "Safety Requirements"
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 382083
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each product/package must bear the manufacturer's name, trademark, and grade.",
+      "The product may also be marked with the Standard Mark (BIS ISI Mark) subject to licensing."
+    ]
+  },
+  "total_chars_parsed": 1032
 }

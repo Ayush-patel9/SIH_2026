@@ -1,39 +1,70 @@
 {
-  "is_number": "IS 15298 (Part 2)",
+  "is_number": "IS 15298 (PART 2)",
+  "standard_id": "IS 15298 (Part 2):2011",
+  "title": "Personal Protective Equipment, Part 2: Safety Footwear",
   "ia_identifier": "gov.in.is.15298.2.2011",
+  "division_code": "TXD",
+  "aspect": "Safety Standard",
+  "regulatory_compliance": {
+    "is_mandatory": true,
+    "qco_order": "Footwear made from Leather and other materials (Quality Control) Order, 2024"
+  },
   "clause_1_scope": "This European Standard specifies basic and additionai (optionai) requirements for safety footwear.",
   "clause_2_normative_references": [
     {
-      "is_number": "IS 15298",
-      "title": "2  (2011):  Personal  Protective  Equipment,  Part  2:",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15298(Part2)",
-      "title": "ISO  20345 :  2004",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2011",
-      "title": "BUREAU    OF    INDIAN    STANDARDS",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 2",
-      "title": "1 960  'Rules  for  rounding  off  numerical  values  (revised)' .The  number  of  significant",
-      "relation_type": "GENERAL_REFERENCE"
-    },
-    {
-      "is_number": "IS 15298  (Part  2)",
-      "title": "/ISO  20345  :  2004",
-      "relation_type": "GENERAL_REFERENCE"
+      "is_number": "IS 15298(PART2)",
+      "standard_id": "IS 15298(PART2)",
+      "title": "Indian Standard Code of Practice / Test Method (IS 15298(PART2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     },
     {
       "is_number": "IS 152",
-      "title": "g8(Part2):2011",
-      "relation_type": "GENERAL_REFERENCE"
+      "standard_id": "IS 152",
+      "title": "Indian Standard Code of Practice / Test Method (IS 152)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6",
+      "standard_id": "IS 6:1983",
+      "title": "Moderate Heat Duty Fireclay Refractories, Group 'A'",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15298",
+      "standard_id": "IS 15298",
+      "title": "Indian Standard Code of Practice / Test Method (IS 15298)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
     }
   ],
-  "clause_3_terminology": [],
-  "total_chars_parsed": 57342
+  "clause_3_terminology": [
+    "Grade ification",
+    "Personal Protective Equipment",
+    "Part 2: Safety Footwear"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "A-1.1 The product may also be marked with the Standard Mark.",
+      "A-1. 1.1 The use of the Standard Mark is governed by the provisions of the"
+    ]
+  },
+  "total_chars_parsed": 50201
 }
