@@ -1,0 +1,28 @@
+# Master Scraper Configuration
+storage:
+  base_dir: "data"
+  master_catalog_dir: "data/01_master_catalog"
+  fulltext_dir: "data/02_fulltext_corpus"
+  regulatory_qco_dir: "data/03_regulatory_qco"
+  conformity_dir: "data/04_conformity_ecosystem"
+  procurement_dir: "data/05_procurement_gold_corpus"
+  multilingual_dir: "data/06_multilingual_lexicon"
+
+network:
+  request_timeout_seconds: 30
+  max_retries: 5
+  backoff_factor: 1.5
+  concurrent_requests: 10
+  user_agents:
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/125.0"
+
+sources:
+  bis_compulsory_url: "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  crs_products_url: "https://www.crsbis.in/BIS/products.do"
+  bis_services_base: "https://www.services.bis.gov.in/php/BIS_2.0/dgdashboard"
+  internet_archive:
+    collection: "publicsafetycode"
+    identifier_pattern: "gov.in.is.*"
+    batch_size: 50

@@ -1,0 +1,44 @@
+{
+  "category_id": "GEM_CAT_DISTRIBUTION_TRANSFORMER",
+  "category_name": "Outdoor Type Oil Immersed Distribution Transformers up to 2500 kVA",
+  "governing_is_standards": [
+    "IS 1180 (Part 1)"
+  ],
+  "latest_edition": "IS 1180 (Part 1):2014",
+  "allied_normative_standards": [
+    "IS 2026 (Part 1 to 5)",
+    "IS 335",
+    "IS 2099",
+    "IS 7421"
+  ],
+  "mandatory_certification": "Scheme-I (ISI Mark) + BEE Star Rating Mandatory",
+  "golden_parameters": {
+    "standard_ratings_kva": [
+      16,
+      25,
+      63,
+      100,
+      160,
+      200,
+      250,
+      315,
+      400,
+      500,
+      630,
+      1000,
+      1600,
+      2000,
+      2500
+    ],
+    "voltage_class_kv": 11,
+    "cooling_type": "ONAN",
+    "winding_material": "Electrolytic Copper or High Grade Aluminium",
+    "max_total_losses_at_50_percent_load_watts": "< prescribed Table 3 limits",
+    "max_total_losses_at_100_percent_load_watts": "< prescribed Table 3 limits",
+    "insulating_oil_standard": "IS 335"
+  },
+  "critical_procurement_clauses": [
+    "Transformer must carry valid BIS ISI Mark as per IS 1180 (Part 1):2014 and BEE star labeling.",
+    "Type test report from CPRI / ERDA including short circuit test must be submitted."
+  ]
+}

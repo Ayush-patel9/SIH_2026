@@ -1,0 +1,121 @@
+[
+  {
+    "test_id": "TEST_TENDER_001_STEEL_PWD",
+    "tender_title": "Construction of Multi-Storey Administrative Block at Sector 62 Noida (Structural Steel & RCC Work)",
+    "sample_draft_tender_text": "\n        Item 4.1: Providing and laying reinforced cement concrete in columns, beams and slabs using High Yield Strength Deformed (HYSD) Tor Steel bars conforming to IS 1786 : 1985 of Grade Fe 415. The tensile strength should be tested as per IS 1608:1995. Mild steel plain bars conforming to IS 432:1982 can be used for stirrups. All concrete work shall adhere to IS 456:1978.\n        ",
+    "ground_truth_issues_to_catch": [
+      {
+        "issue_type": "OUTDATED_STANDARD",
+        "cited_citation": "IS 1786 : 1985",
+        "latest_standard": "IS 1786:2008 (Reaffirmed 2022)",
+        "criticality": "HIGH",
+        "reason": "IS 1786:1985 was superseded by IS 1786:2008 with major amendments (Amd 1 to 4) specifying Fe 500D/550D and mandatory chemical tolerance."
+      },
+      {
+        "issue_type": "OUTDATED_STANDARD",
+        "cited_citation": "IS 456:1978",
+        "latest_standard": "IS 456:2000 (Reaffirmed 2021)",
+        "criticality": "HIGH",
+        "reason": "IS 456:1978 (3rd revision) was replaced by IS 456:2000 (4th revision) introducing durability-based mix design and limit state method."
+      },
+      {
+        "issue_type": "OUTDATED_TEST_METHOD",
+        "cited_citation": "IS 1608:1995",
+        "latest_standard": "IS 1608 (Part 1):2022 / ISO 6892-1:2019",
+        "criticality": "MEDIUM",
+        "reason": "Tensile testing standard was revised to align with ISO 6892-1 dual numbering."
+      },
+      {
+        "issue_type": "MANDATORY_REGULATORY_TRIGGER",
+        "standard": "IS 1786",
+        "scheme": "Scheme-I (ISI Mark)",
+        "ministry": "Ministry of Steel",
+        "order_name": "Steel and Steel Products (Quality Control) Order, 2024",
+        "criticality": "CRITICAL",
+        "recommendation": "Tender specification must mandate BIS ISI Certification mark under Steel QCO 2024. Procurement of non-ISI marked reinforcement steel is illegal."
+      },
+      {
+        "issue_type": "MISSING_ALLIED_STANDARDS",
+        "missing_standards": [
+          {
+            "is_number": "IS 13920",
+            "title": "Ductile Design and Detailing of Reinforced Concrete Structures Subjected to Seismic Forces"
+          },
+          {
+            "is_number": "IS 1893 (Part 1)",
+            "title": "Criteria for Earthquake Resistant Design of Structures"
+          },
+          {
+            "is_number": "IS 1599",
+            "title": "Metallic Materials - Bend Test"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "test_id": "TEST_TENDER_002_SOLAR_STREETLIGHTS",
+    "tender_title": "Supply and Installation of 90W LED Solar Integrated Street Lighting for Smart City Municipal Area",
+    "sample_draft_tender_text": "\n        Technical Specification: Supply of outdoor 90W LED Streetlight luminaires. The LED luminaire should comply with IS 10322. LED driver must operate from 140V to 280V. Solar PV module should be 250W. Battery shall be Lithium Iron Phosphate (LiFePO4).\n        ",
+    "ground_truth_issues_to_catch": [
+      {
+        "issue_type": "INCOMPLETE_STANDARD_PART",
+        "cited_citation": "IS 10322",
+        "latest_standard": "IS 10322 (Part 5/Sec 3):2012 (Reaffirmed 2022)",
+        "criticality": "HIGH",
+        "reason": "IS 10322 is a multi-part specification. Road and street lighting requires specifically Section 3 of Part 5."
+      },
+      {
+        "issue_type": "MANDATORY_REGULATORY_TRIGGER",
+        "standard": "IS 10322 (Part 5/Sec 3)",
+        "scheme": "Scheme-II (CRS)",
+        "ministry": "MeitY",
+        "order_name": "Electronics & IT Goods (Compulsory Registration Scheme) Order",
+        "criticality": "CRITICAL",
+        "recommendation": "LED streetlights are legally mandated to have BIS CRS Registration under Scheme-II."
+      },
+      {
+        "issue_type": "MISSING_MANDATORY_STANDARDS",
+        "missing_standards": [
+          {
+            "is_number": "IS 16046 (Part 2)",
+            "title": "Secondary Lithium Cells/Batteries for Portable Applications (CRS Mandatory)"
+          },
+          {
+            "is_number": "IS 14286 / IS/IEC 61730",
+            "title": "Solar Photovoltaic Modules Design Qualification & Safety (MNRE Mandatory)"
+          },
+          {
+            "is_number": "IS 15885 (Part 2/Sec 13)",
+            "title": "Safety of AC or DC Supplied Electronic Controlgear for LED Modules"
+          },
+          {
+            "is_number": "IS 16107 (Part 2/Sec 1)",
+            "title": "LED Luminaire Performance Requirements"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "test_id": "TEST_TENDER_003_OFFICE_FURNITURE",
+    "tender_title": "Procurement of 500 Nos Executive Ergonomic Revolving Work Chairs for Directorate of Technical Education",
+    "sample_draft_tender_text": "\n        Supply of High Back Revolving Chairs with hydraulic gas lift, nylon mesh back, PU armrests, 5-prong nylon base. The vendor should provide test certificate from private testing lab as per BIFMA standard.\n        ",
+    "ground_truth_issues_to_catch": [
+      {
+        "issue_type": "MISSING_MANDATORY_INDIAN_STANDARD",
+        "recommended_standard": "IS 17631:2022 (Work Chairs - Specification)",
+        "criticality": "CRITICAL",
+        "reason": "DPIIT notified Furniture (Quality Control) Order 2024 mandating IS 17631:2022 with BIS ISI Mark. Specifying only BIFMA without IS 17631 violates public procurement QCO guidelines."
+      },
+      {
+        "issue_type": "MANDATORY_REGULATORY_TRIGGER",
+        "standard": "IS 17631",
+        "scheme": "Scheme-I (ISI Mark)",
+        "ministry": "DPIIT",
+        "order_name": "Furniture (Quality Control) Order, 2024",
+        "criticality": "CRITICAL"
+      }
+    ]
+  }
+]

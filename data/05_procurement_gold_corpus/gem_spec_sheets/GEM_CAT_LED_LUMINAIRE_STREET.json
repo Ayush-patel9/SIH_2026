@@ -1,0 +1,29 @@
+{
+  "category_id": "GEM_CAT_LED_LUMINAIRE_STREET",
+  "category_name": "LED Luminaires for Road and Street Lighting",
+  "governing_is_standards": [
+    "IS 10322 (Part 5/Sec 3)",
+    "IS 16107 (Part 2/Sec 1)"
+  ],
+  "latest_edition": "IS 10322 (Part 5/Sec 3):2012 / IS 16107:2016",
+  "allied_normative_standards": [
+    "IS 16102 (Part 1)",
+    "IS 15885 (Part 2/Sec 13)",
+    "IS 16103 (Part 1)"
+  ],
+  "mandatory_certification": "Scheme-II (CRS - Compulsory Registration Scheme) under MeitY",
+  "golden_parameters": {
+    "system_efficacy_lm_per_watt": ">= 120 lm/W",
+    "correlated_color_temperature_k": "4000K to 5700K",
+    "color_rendering_index_cri": ">= 70",
+    "power_factor": ">= 0.95",
+    "total_harmonic_distortion_thd": "<= 10%",
+    "surge_protection_kv": ">= 10 kV (internal/external SPD)",
+    "ingress_protection_rating": "IP 66",
+    "driver_standard": "IS 15885 (Part 2/Sec 13)"
+  },
+  "critical_procurement_clauses": [
+    "Product and LED Driver must have valid BIS CRS Registration under Scheme-II.",
+    "LM-79 test report from NABL accredited lab for optical performance and LM-80 report for LED chip life."
+  ]
+}

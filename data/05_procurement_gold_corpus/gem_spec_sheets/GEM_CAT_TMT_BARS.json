@@ -1,0 +1,47 @@
+{
+  "category_id": "GEM_CAT_TMT_BARS",
+  "category_name": "High Strength Deformed Steel Bars (TMT Bars)",
+  "governing_is_standards": [
+    "IS 1786"
+  ],
+  "latest_edition": "IS 1786:2008 (Reaffirmed 2022)",
+  "allied_normative_standards": [
+    "IS 1608 (Part 1)",
+    "IS 1599",
+    "IS 228",
+    "IS 2770 (Part 1)"
+  ],
+  "mandatory_certification": "Scheme-I (ISI Mark) under Steel QCO 2024",
+  "golden_parameters": {
+    "grades_allowed": [
+      "Fe 415D",
+      "Fe 500",
+      "Fe 500D",
+      "Fe 550D",
+      "Fe 600"
+    ],
+    "nominal_sizes_mm": [
+      8,
+      10,
+      12,
+      16,
+      20,
+      25,
+      28,
+      32,
+      36,
+      40
+    ],
+    "min_yield_stress_fe500d_mpa": 500.0,
+    "min_tensile_strength_fe500d_mpa": 565.0,
+    "min_elongation_fe500d_percent": 16.0,
+    "max_carbon_fe500d_percent": 0.25,
+    "max_sulphur_phosphorus_fe500d_percent": 0.075,
+    "bend_mandrel_diameter": "3d for nominal dia <= 20mm"
+  },
+  "critical_procurement_clauses": [
+    "Manufacturer must possess valid BIS License as per IS 1786:2008.",
+    "Each bundle/bar must bear standard ISI mark with manufacturer's trademark and grade designation.",
+    "Test certificate conforming to IS 1608 (tensile) and IS 1599 (bend) must accompany every consignment."
+  ]
+}

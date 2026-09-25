@@ -1,0 +1,233 @@
+[
+  {
+    "category_id": "GEM_CAT_TMT_BARS",
+    "category_name": "High Strength Deformed Steel Bars (TMT Bars)",
+    "governing_is_standards": [
+      "IS 1786"
+    ],
+    "latest_edition": "IS 1786:2008 (Reaffirmed 2022)",
+    "allied_normative_standards": [
+      "IS 1608 (Part 1)",
+      "IS 1599",
+      "IS 228",
+      "IS 2770 (Part 1)"
+    ],
+    "mandatory_certification": "Scheme-I (ISI Mark) under Steel QCO 2024",
+    "golden_parameters": {
+      "grades_allowed": [
+        "Fe 415D",
+        "Fe 500",
+        "Fe 500D",
+        "Fe 550D",
+        "Fe 600"
+      ],
+      "nominal_sizes_mm": [
+        8,
+        10,
+        12,
+        16,
+        20,
+        25,
+        28,
+        32,
+        36,
+        40
+      ],
+      "min_yield_stress_fe500d_mpa": 500.0,
+      "min_tensile_strength_fe500d_mpa": 565.0,
+      "min_elongation_fe500d_percent": 16.0,
+      "max_carbon_fe500d_percent": 0.25,
+      "max_sulphur_phosphorus_fe500d_percent": 0.075,
+      "bend_mandrel_diameter": "3d for nominal dia <= 20mm"
+    },
+    "critical_procurement_clauses": [
+      "Manufacturer must possess valid BIS License as per IS 1786:2008.",
+      "Each bundle/bar must bear standard ISI mark with manufacturer's trademark and grade designation.",
+      "Test certificate conforming to IS 1608 (tensile) and IS 1599 (bend) must accompany every consignment."
+    ]
+  },
+  {
+    "category_id": "GEM_CAT_CEMENT_PPC",
+    "category_name": "Portland Pozzolana Cement (Fly Ash Based)",
+    "governing_is_standards": [
+      "IS 1489 (Part 1)"
+    ],
+    "latest_edition": "IS 1489 (Part 1):2015 (Reaffirmed 2020)",
+    "allied_normative_standards": [
+      "IS 4031 (Part 1 to 15)",
+      "IS 4032",
+      "IS 3535"
+    ],
+    "mandatory_certification": "Scheme-I (ISI Mark) under Cement QCO 2023",
+    "golden_parameters": {
+      "fly_ash_content_percent": "15 to 35%",
+      "min_fineness_m2_per_kg": 300,
+      "min_initial_setting_time_min": 30,
+      "max_final_setting_time_min": 600,
+      "min_compressive_strength_3days_mpa": 16.0,
+      "min_compressive_strength_7days_mpa": 22.0,
+      "min_compressive_strength_28days_mpa": 33.0,
+      "soundness_le_chatelier_expansion_mm": "<= 10.0"
+    },
+    "critical_procurement_clauses": [
+      "Cement must bear BIS Standard Mark (ISI mark) conforming to IS 1489 (Part 1).",
+      "Bags must clearly mention week and year of manufacture."
+    ]
+  },
+  {
+    "category_id": "GEM_CAT_DISTRIBUTION_TRANSFORMER",
+    "category_name": "Outdoor Type Oil Immersed Distribution Transformers up to 2500 kVA",
+    "governing_is_standards": [
+      "IS 1180 (Part 1)"
+    ],
+    "latest_edition": "IS 1180 (Part 1):2014",
+    "allied_normative_standards": [
+      "IS 2026 (Part 1 to 5)",
+      "IS 335",
+      "IS 2099",
+      "IS 7421"
+    ],
+    "mandatory_certification": "Scheme-I (ISI Mark) + BEE Star Rating Mandatory",
+    "golden_parameters": {
+      "standard_ratings_kva": [
+        16,
+        25,
+        63,
+        100,
+        160,
+        200,
+        250,
+        315,
+        400,
+        500,
+        630,
+        1000,
+        1600,
+        2000,
+        2500
+      ],
+      "voltage_class_kv": 11,
+      "cooling_type": "ONAN",
+      "winding_material": "Electrolytic Copper or High Grade Aluminium",
+      "max_total_losses_at_50_percent_load_watts": "< prescribed Table 3 limits",
+      "max_total_losses_at_100_percent_load_watts": "< prescribed Table 3 limits",
+      "insulating_oil_standard": "IS 335"
+    },
+    "critical_procurement_clauses": [
+      "Transformer must carry valid BIS ISI Mark as per IS 1180 (Part 1):2014 and BEE star labeling.",
+      "Type test report from CPRI / ERDA including short circuit test must be submitted."
+    ]
+  },
+  {
+    "category_id": "GEM_CAT_LED_LUMINAIRE_STREET",
+    "category_name": "LED Luminaires for Road and Street Lighting",
+    "governing_is_standards": [
+      "IS 10322 (Part 5/Sec 3)",
+      "IS 16107 (Part 2/Sec 1)"
+    ],
+    "latest_edition": "IS 10322 (Part 5/Sec 3):2012 / IS 16107:2016",
+    "allied_normative_standards": [
+      "IS 16102 (Part 1)",
+      "IS 15885 (Part 2/Sec 13)",
+      "IS 16103 (Part 1)"
+    ],
+    "mandatory_certification": "Scheme-II (CRS - Compulsory Registration Scheme) under MeitY",
+    "golden_parameters": {
+      "system_efficacy_lm_per_watt": ">= 120 lm/W",
+      "correlated_color_temperature_k": "4000K to 5700K",
+      "color_rendering_index_cri": ">= 70",
+      "power_factor": ">= 0.95",
+      "total_harmonic_distortion_thd": "<= 10%",
+      "surge_protection_kv": ">= 10 kV (internal/external SPD)",
+      "ingress_protection_rating": "IP 66",
+      "driver_standard": "IS 15885 (Part 2/Sec 13)"
+    },
+    "critical_procurement_clauses": [
+      "Product and LED Driver must have valid BIS CRS Registration under Scheme-II.",
+      "LM-79 test report from NABL accredited lab for optical performance and LM-80 report for LED chip life."
+    ]
+  },
+  {
+    "category_id": "GEM_CAT_WORK_CHAIRS",
+    "category_name": "Office Work Chairs (Ergonomic Revolving Chairs)",
+    "governing_is_standards": [
+      "IS 17631"
+    ],
+    "latest_edition": "IS 17631:2022",
+    "allied_normative_standards": [
+      "IS 17637",
+      "IS 9873"
+    ],
+    "mandatory_certification": "Scheme-I (ISI Mark) under DPIIT Furniture QCO 2024",
+    "golden_parameters": {
+      "chair_type": "Type 1 (Adjustable back height & angle) / Type 2",
+      "seat_height_adjustment_range_mm": "400 to 520 mm",
+      "swivel_test_cycles": "120,000 revolutions minimum",
+      "seat_durability_load_cycles": "100,000 cycles with 1000 N load",
+      "castor_durability_cycles": "50,000 cycles with 110 kg payload",
+      "gas_lift_class": "Class 3 or Class 4 (BIFMA X5.1 / DIN 4550)"
+    },
+    "critical_procurement_clauses": [
+      "Chairs must bear BIS Standard Mark (ISI mark) as per IS 17631:2022 in compliance with Furniture QCO 2024.",
+      "Gas spring lift cylinder must be certified for 100,000+ cycles."
+    ]
+  },
+  {
+    "category_id": "GEM_CAT_PORTABLE_FIRE_EXTINGUISHERS",
+    "category_name": "Portable Fire Extinguishers (ABC Dry Powder & CO2)",
+    "governing_is_standards": [
+      "IS 15683"
+    ],
+    "latest_edition": "IS 15683:2018",
+    "allied_normative_standards": [
+      "IS 4308",
+      "IS 4862",
+      "IS 2878",
+      "IS 2171"
+    ],
+    "mandatory_certification": "Scheme-I (ISI Mark) under Fire Fighting Equipment QCO",
+    "golden_parameters": {
+      "extinguishing_media": "Mono Ammonium Phosphate (MAP 50% or MAP 90%) conforming to IS 4308",
+      "capacities_kg": [
+        2,
+        4,
+        6,
+        9
+      ],
+      "fire_rating_6kg": "3A and 21B minimum",
+      "discharge_time_seconds": ">= 13 seconds for 6kg",
+      "hydrostatic_test_pressure_bar": "35 bar",
+      "burst_pressure_bar": ">= 55 bar",
+      "corrosion_resistance": "480 hours salt spray test as per IS 9844"
+    },
+    "critical_procurement_clauses": [
+      "Extinguisher cylinder and extinguishing powder must be BIS ISI marked conforming to IS 15683:2018 and IS 4308.",
+      "Internal lining must be thermoplastic polymer / epoxy powder coated."
+    ]
+  },
+  {
+    "category_id": "GEM_CAT_IT_LAPTOPS",
+    "category_name": "Commercial Laptops / Notebooks",
+    "governing_is_standards": [
+      "IS 13252 (Part 1)"
+    ],
+    "latest_edition": "IS 13252 (Part 1):2010 (IEC 60950-1:2005)",
+    "allied_normative_standards": [
+      "IS 16046 (Part 2)",
+      "IS/IEC 60065",
+      "IS 16333 (Part 3)"
+    ],
+    "mandatory_certification": "Scheme-II (CRS) under MeitY Compulsory Registration Scheme",
+    "golden_parameters": {
+      "safety_standard": "IS 13252 (Part 1):2010",
+      "battery_safety_standard": "IS 16046 (Part 2):2018 / IEC 62133-2",
+      "adapter_safety_standard": "IS 13252 (Part 1)",
+      "indian_language_support": "IS 16333 (Part 3) keyboard layout",
+      "energy_star_rating": "ENERGY STAR 8.0 compliant"
+    },
+    "critical_procurement_clauses": [
+      "Device, Battery, and Power Adapter must have valid BIS CRS Registration numbers printed on product and box.",
+      "OEM must be registered with BIS under MeitY electronics order."
+    ]
+  }
+]
