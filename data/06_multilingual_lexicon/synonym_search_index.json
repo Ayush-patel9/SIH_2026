@@ -1,5 +1,10 @@
 {
-  "सरिया": "IS 1786",
+  "सरिया": {
+    "en": "Reinforcement Bar (Rebar/TMT)",
+    "domain": "Civil",
+    "is_ref": "IS 1786",
+    "is_context": ""
+  },
   "सरिए": "IS 1786",
   "रीइन्फोर्समेंट स्टील": "IS 1786",
   "कंक्रीट सरिया": "IS 1786",
@@ -8,13 +13,23 @@
   "saria": "IS 1786",
   "tmt bar": "IS 1786",
   "rebar": "IS 1786",
-  "reinforcement": "IS 1786",
+  "reinforcement": {
+    "en": "Reinforcement",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
   "steel rod": "IS 1786",
   "साधारण पोर्टलैंड सीमेंट": "IS 269",
   "सीमेंट 43 ग्रेड": "IS 269",
   "सीमेंट 53 ग्रेड": "IS 269",
   "सीमेंट की बोरियां": "IS 269",
-  "cement": "IS 269",
+  "cement": {
+    "en": "Cement",
+    "domain": "Civil",
+    "is_ref": "IS 269/IS 8112",
+    "is_context": ""
+  },
   "opc 43": "IS 269",
   "opc 53": "IS 269",
   "portland cement": "IS 269",
@@ -32,11 +47,26 @@
   "electric wire": "IS 694",
   "copper cable": "IS 694",
   "house wiring": "IS 694",
-  "वितरण ट्रांसफार्मर": "IS 1180 (Part 1)",
+  "वितरण ट्रांसफार्मर": {
+    "en": "Distribution Transformer",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
   "बिजली का ट्रांसफार्मर": "IS 1180 (Part 1)",
   "विद्युत ट्रांसफॉर्मर": "IS 1180 (Part 1)",
-  "transformer": "IS 1180 (Part 1)",
-  "distribution transformer": "IS 1180 (Part 1)",
+  "transformer": {
+    "en": "Transformer",
+    "domain": "Electrical",
+    "is_ref": "IS 1180",
+    "is_context": ""
+  },
+  "distribution transformer": {
+    "en": "Distribution Transformer",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
   "100 kva transformer": "IS 1180 (Part 1)",
   "250 kva transformer": "IS 1180 (Part 1)",
   "एलईडी स्ट्रीट लाइट": "IS 10322 (Part 5/Sec 3)",
@@ -46,7 +76,12 @@
   "led street light": "IS 10322 (Part 5/Sec 3)",
   "street luminaire": "IS 10322 (Part 5/Sec 3)",
   "led road lighting": "IS 10322 (Part 5/Sec 3)",
-  "सोलर पैनल": "IS 14286",
+  "सोलर पैनल": {
+    "en": "Solar Panel / PV Module",
+    "domain": "Electrical",
+    "is_ref": "IS 14286",
+    "is_context": ""
+  },
   "सौर फोटोवोल्टिक मॉड्यूल": "IS 14286",
   "सोलर प्लेट": "IS 14286",
   "सौर ऊर्जा पैनल": "IS 14286",
@@ -67,10 +102,20 @@
   "आग बुझाने का यंत्र": "IS 15683",
   "फायर एक्सटिंग्विशर": "IS 15683",
   "एबीसी पाउडर सिलेंडर": "IS 15683",
-  "fire extinguisher": "IS 15683",
+  "fire extinguisher": {
+    "en": "Fire Extinguisher",
+    "domain": "Safety",
+    "is_ref": "IS 15683",
+    "is_context": ""
+  },
   "abc fire extinguisher": "IS 15683",
   "co2 fire extinguisher": "IS 15683",
-  "सुरक्षा हेलमेट": "IS 4151",
+  "सुरक्षा हेलमेट": {
+    "en": "Safety Helmet / Hard Hat",
+    "domain": "Safety",
+    "is_ref": "IS 2925",
+    "is_context": ""
+  },
   "दुपहिया वाहन चालकों के लिए हेलमेट": "IS 4151",
   "हेलमेट": "IS 4151",
   "helmet": "IS 4151",
@@ -84,15 +129,30 @@
   "ductile iron pipe": "IS 8329",
   "water supply pipe": "IS 8329",
   "पीने का पानी": "IS 10500",
-  "पेयजल": "IS 10500",
+  "पेयजल": {
+    "en": "Potable / Drinking Water",
+    "domain": "Food",
+    "is_ref": "",
+    "is_context": ""
+  },
   "शुद्ध पेयजल मानक": "IS 10500",
   "drinking water": "IS 10500",
   "potable water": "IS 10500",
-  "water quality": "IS 10500",
+  "water quality": {
+    "en": "Water Quality",
+    "domain": "Food",
+    "is_ref": "IS 10500",
+    "is_context": ""
+  },
   "सोने के आभूषण": "IS 1417",
   "स्वर्ण आभूषण": "IS 1417",
   "सोने का हॉलमार्क": "IS 1417",
-  "हॉलमार्किंग": "IS 1417",
+  "हॉलमार्किंग": {
+    "en": "Hallmarking",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
   "gold jewellery": "IS 1417",
   "hallmark": "IS 1417",
   "gold hallmark": "IS 1417",
@@ -106,5 +166,2309 @@
   "इलेक्ट्रिक खिलौने": "IS 9873 (Part 1)",
   "toys": "IS 9873 (Part 1)",
   "baby toys": "IS 9873 (Part 1)",
-  "safety of toys": "IS 9873 (Part 1)"
+  "safety of toys": "IS 9873 (Part 1)",
+  "निविदा": {
+    "en": "Tender",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": "Tender specifications"
+  },
+  "tender": {
+    "en": "Tender",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": "Tender specifications"
+  },
+  "तकनीकी विनिर्देश": {
+    "en": "Technical Specification",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "technical specification": {
+    "en": "Technical Specification",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "क्रय": {
+    "en": "Procurement / Purchase",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "procurement / purchase": {
+    "en": "Procurement / Purchase",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "अनुपालन": {
+    "en": "Compliance",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "compliance": {
+    "en": "Compliance",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "गुणवत्ता नियंत्रण": {
+    "en": "Quality Control",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "quality control": {
+    "en": "Quality Control",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "मानक": {
+    "en": "Standard",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": "Indian Standard"
+  },
+  "standard": {
+    "en": "Standard",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": "Indian Standard"
+  },
+  "प्रमाणीकरण": {
+    "en": "Certification",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "certification": {
+    "en": "Certification",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "स्वीकृति": {
+    "en": "Acceptance",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "acceptance": {
+    "en": "Acceptance",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "अस्वीकृति": {
+    "en": "Rejection",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "rejection": {
+    "en": "Rejection",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "परीक्षण": {
+    "en": "Testing",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "testing": {
+    "en": "Testing",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "निरीक्षण": {
+    "en": "Inspection",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "inspection": {
+    "en": "Inspection",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "आपूर्ति": {
+    "en": "Supply",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "supply": {
+    "en": "Supply",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "दरें": {
+    "en": "Rates",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "rates": {
+    "en": "Rates",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "मात्रा": {
+    "en": "Quantity",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "quantity": {
+    "en": "Quantity",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "सामग्री": {
+    "en": "Material",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "material": {
+    "en": "Material",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "संविदा": {
+    "en": "Contract",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "contract": {
+    "en": "Contract",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "बोली": {
+    "en": "Bid / Quotation",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "bid / quotation": {
+    "en": "Bid / Quotation",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ई-टेंडर": {
+    "en": "E-Tender",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "e-tender": {
+    "en": "E-Tender",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "तकनीकी बोली": {
+    "en": "Technical Bid",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "technical bid": {
+    "en": "Technical Bid",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "वित्तीय बोली": {
+    "en": "Financial Bid",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "financial bid": {
+    "en": "Financial Bid",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "अनुसूची": {
+    "en": "Schedule / Annexure",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "schedule / annexure": {
+    "en": "Schedule / Annexure",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "विशेष शर्तें": {
+    "en": "Special Conditions",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "special conditions": {
+    "en": "Special Conditions",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "वारंटी": {
+    "en": "Warranty",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "warranty": {
+    "en": "Warranty",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "गारंटी": {
+    "en": "Guarantee",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "guarantee": {
+    "en": "Guarantee",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "जमानत": {
+    "en": "Security Deposit / EMD",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "security deposit / emd": {
+    "en": "Security Deposit / EMD",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "अग्रिम भुगतान": {
+    "en": "Advance Payment",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "advance payment": {
+    "en": "Advance Payment",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "डिलीवरी": {
+    "en": "Delivery",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "delivery": {
+    "en": "Delivery",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "आपूर्तिकर्ता": {
+    "en": "Supplier / Vendor",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "supplier / vendor": {
+    "en": "Supplier / Vendor",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "निर्माता": {
+    "en": "Manufacturer",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "manufacturer": {
+    "en": "Manufacturer",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "पंजीकरण": {
+    "en": "Registration",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "registration": {
+    "en": "Registration",
+    "domain": "Procurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "भारतीय मानक": {
+    "en": "Indian Standard (IS)",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "indian standard (is)": {
+    "en": "Indian Standard (IS)",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "भारतीय मानक ब्यूरो": {
+    "en": "Bureau of Indian Standards (BIS)",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "bureau of indian standards (bis)": {
+    "en": "Bureau of Indian Standards (BIS)",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "आईएसआई चिह्न": {
+    "en": "ISI Mark",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "isi mark": {
+    "en": "ISI Mark",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "hallmarking": {
+    "en": "Hallmarking",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "अनिवार्य प्रमाणन": {
+    "en": "Mandatory Certification",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "mandatory certification": {
+    "en": "Mandatory Certification",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "गुणवत्ता नियंत्रण आदेश": {
+    "en": "Quality Control Order (QCO)",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "quality control order (qco)": {
+    "en": "Quality Control Order (QCO)",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "संशोधन": {
+    "en": "Amendment",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "amendment": {
+    "en": "Amendment",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "परिशिष्ट": {
+    "en": "Appendix / Amendment",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "appendix / amendment": {
+    "en": "Appendix / Amendment",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "प्रयोगशाला": {
+    "en": "Laboratory",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "laboratory": {
+    "en": "Laboratory",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "मान्यता प्राप्त प्रयोगशाला": {
+    "en": "Accredited Laboratory (NABL)",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "accredited laboratory (nabl)": {
+    "en": "Accredited Laboratory (NABL)",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "नमूना": {
+    "en": "Sample",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "sample": {
+    "en": "Sample",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "नमूनाकरण": {
+    "en": "Sampling",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "sampling": {
+    "en": "Sampling",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "परीक्षण रिपोर्ट": {
+    "en": "Test Report",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "test report": {
+    "en": "Test Report",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "प्रमाण पत्र": {
+    "en": "Certificate",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "certificate": {
+    "en": "Certificate",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "अनुरूपता": {
+    "en": "Conformity",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "conformity": {
+    "en": "Conformity",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "अनुपालन प्रमाण पत्र": {
+    "en": "Compliance Certificate",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "compliance certificate": {
+    "en": "Compliance Certificate",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "तृतीय पक्ष": {
+    "en": "Third Party",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "third party": {
+    "en": "Third Party",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "स्व-घोषणा": {
+    "en": "Self Declaration",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "self declaration": {
+    "en": "Self Declaration",
+    "domain": "Standards",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "सीमेंट": {
+    "en": "Cement",
+    "domain": "Civil",
+    "is_ref": "IS 269/IS 8112",
+    "is_context": ""
+  },
+  "रेत": {
+    "en": "Sand (Fine Aggregate)",
+    "domain": "Civil",
+    "is_ref": "IS 383",
+    "is_context": ""
+  },
+  "sand (fine aggregate)": {
+    "en": "Sand (Fine Aggregate)",
+    "domain": "Civil",
+    "is_ref": "IS 383",
+    "is_context": ""
+  },
+  "बजरी": {
+    "en": "Gravel / Coarse Aggregate",
+    "domain": "Civil",
+    "is_ref": "IS 383",
+    "is_context": ""
+  },
+  "gravel / coarse aggregate": {
+    "en": "Gravel / Coarse Aggregate",
+    "domain": "Civil",
+    "is_ref": "IS 383",
+    "is_context": ""
+  },
+  "कंकड़": {
+    "en": "Crushed Stone (Aggregate)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "crushed stone (aggregate)": {
+    "en": "Crushed Stone (Aggregate)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "reinforcement bar (rebar/tmt)": {
+    "en": "Reinforcement Bar (Rebar/TMT)",
+    "domain": "Civil",
+    "is_ref": "IS 1786",
+    "is_context": ""
+  },
+  "टीएमटी सरिया": {
+    "en": "TMT Bars",
+    "domain": "Civil",
+    "is_ref": "IS 1786",
+    "is_context": ""
+  },
+  "tmt bars": {
+    "en": "TMT Bars",
+    "domain": "Civil",
+    "is_ref": "IS 1786",
+    "is_context": ""
+  },
+  "संरचनात्मक इस्पात": {
+    "en": "Structural Steel",
+    "domain": "Civil",
+    "is_ref": "IS 2062",
+    "is_context": ""
+  },
+  "structural steel": {
+    "en": "Structural Steel",
+    "domain": "Civil",
+    "is_ref": "IS 2062",
+    "is_context": ""
+  },
+  "सुदृढ़ीकरण": {
+    "en": "Reinforcement",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ढांचा": {
+    "en": "Structure / Framework",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "structure / framework": {
+    "en": "Structure / Framework",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "कंक्रीट": {
+    "en": "Concrete",
+    "domain": "Civil",
+    "is_ref": "IS 456",
+    "is_context": ""
+  },
+  "concrete": {
+    "en": "Concrete",
+    "domain": "Civil",
+    "is_ref": "IS 456",
+    "is_context": ""
+  },
+  "प्रबलित कंक्रीट": {
+    "en": "Reinforced Cement Concrete (RCC)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "reinforced cement concrete (rcc)": {
+    "en": "Reinforced Cement Concrete (RCC)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "संपीड़न शक्ति": {
+    "en": "Compressive Strength",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "compressive strength": {
+    "en": "Compressive Strength",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "तनन शक्ति": {
+    "en": "Tensile Strength",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "tensile strength": {
+    "en": "Tensile Strength",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "नमनीयता": {
+    "en": "Ductility",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ductility": {
+    "en": "Ductility",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "कठोरता": {
+    "en": "Hardness / Stiffness",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "hardness / stiffness": {
+    "en": "Hardness / Stiffness",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "लचीलापन": {
+    "en": "Flexibility / Elasticity",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "flexibility / elasticity": {
+    "en": "Flexibility / Elasticity",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "झुकाव परीक्षण": {
+    "en": "Bend Test",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "bend test": {
+    "en": "Bend Test",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "पुनः झुकाव परीक्षण": {
+    "en": "Rebend Test",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "rebend test": {
+    "en": "Rebend Test",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "उत्प्रवाह बिंदु": {
+    "en": "Yield Point",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "yield point": {
+    "en": "Yield Point",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "अधिकतम भार": {
+    "en": "Ultimate Load",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ultimate load": {
+    "en": "Ultimate Load",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ग्रेड": {
+    "en": "Grade (Fe415/Fe500)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "grade (fe415/fe500)": {
+    "en": "Grade (Fe415/Fe500)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "विस्तार": {
+    "en": "Elongation (%)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "elongation (%)": {
+    "en": "Elongation (%)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "भार": {
+    "en": "Weight (kg/m)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "weight (kg/m)": {
+    "en": "Weight (kg/m)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "व्यास": {
+    "en": "Diameter (mm)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "diameter (mm)": {
+    "en": "Diameter (mm)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "पाइप": {
+    "en": "Pipe",
+    "domain": "Civil",
+    "is_ref": "IS 1239",
+    "is_context": ""
+  },
+  "pipe": {
+    "en": "Pipe",
+    "domain": "Civil",
+    "is_ref": "IS 1239",
+    "is_context": ""
+  },
+  "नलिका": {
+    "en": "Tube / Conduit",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "tube / conduit": {
+    "en": "Tube / Conduit",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "फिटिंग": {
+    "en": "Fitting",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "fitting": {
+    "en": "Fitting",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "वाल्व": {
+    "en": "Valve",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "valve": {
+    "en": "Valve",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "छत": {
+    "en": "Roof",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "roof": {
+    "en": "Roof",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "नींव": {
+    "en": "Foundation",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "foundation": {
+    "en": "Foundation",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "दीवार": {
+    "en": "Wall",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "wall": {
+    "en": "Wall",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ईंट": {
+    "en": "Brick",
+    "domain": "Civil",
+    "is_ref": "IS 1077",
+    "is_context": ""
+  },
+  "brick": {
+    "en": "Brick",
+    "domain": "Civil",
+    "is_ref": "IS 1077",
+    "is_context": ""
+  },
+  "टाइल": {
+    "en": "Tile",
+    "domain": "Civil",
+    "is_ref": "IS 15622",
+    "is_context": ""
+  },
+  "tile": {
+    "en": "Tile",
+    "domain": "Civil",
+    "is_ref": "IS 15622",
+    "is_context": ""
+  },
+  "काँच": {
+    "en": "Glass",
+    "domain": "Civil",
+    "is_ref": "IS 2835",
+    "is_context": ""
+  },
+  "glass": {
+    "en": "Glass",
+    "domain": "Civil",
+    "is_ref": "IS 2835",
+    "is_context": ""
+  },
+  "जलरोधक": {
+    "en": "Waterproofing",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "waterproofing": {
+    "en": "Waterproofing",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "डामर": {
+    "en": "Bitumen / Asphalt",
+    "domain": "Civil",
+    "is_ref": "IS 73",
+    "is_context": ""
+  },
+  "bitumen / asphalt": {
+    "en": "Bitumen / Asphalt",
+    "domain": "Civil",
+    "is_ref": "IS 73",
+    "is_context": ""
+  },
+  "मिश्रण अनुपात": {
+    "en": "Mix Ratio / Proportion",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "mix ratio / proportion": {
+    "en": "Mix Ratio / Proportion",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "स्लम्प": {
+    "en": "Slump (workability test)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "slump (workability test)": {
+    "en": "Slump (workability test)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "जल-सीमेंट अनुपात": {
+    "en": "Water-Cement Ratio",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "water-cement ratio": {
+    "en": "Water-Cement Ratio",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "इलाज": {
+    "en": "Curing (of concrete)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "curing (of concrete)": {
+    "en": "Curing (of concrete)",
+    "domain": "Civil",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ट्रांसफार्मर": {
+    "en": "Transformer",
+    "domain": "Electrical",
+    "is_ref": "IS 1180",
+    "is_context": ""
+  },
+  "केबल": {
+    "en": "Cable",
+    "domain": "Electrical",
+    "is_ref": "IS 694/IS 7098",
+    "is_context": ""
+  },
+  "cable": {
+    "en": "Cable",
+    "domain": "Electrical",
+    "is_ref": "IS 694/IS 7098",
+    "is_context": ""
+  },
+  "तार": {
+    "en": "Wire",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "wire": {
+    "en": "Wire",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "विद्युत मीटर": {
+    "en": "Electricity Meter",
+    "domain": "Electrical",
+    "is_ref": "IS 13779",
+    "is_context": ""
+  },
+  "electricity meter": {
+    "en": "Electricity Meter",
+    "domain": "Electrical",
+    "is_ref": "IS 13779",
+    "is_context": ""
+  },
+  "एलईडी": {
+    "en": "LED (Light Emitting Diode)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "led (light emitting diode)": {
+    "en": "LED (Light Emitting Diode)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "एलईडी बल्ब": {
+    "en": "LED Lamp",
+    "domain": "Electrical",
+    "is_ref": "IS 16107",
+    "is_context": ""
+  },
+  "led lamp": {
+    "en": "LED Lamp",
+    "domain": "Electrical",
+    "is_ref": "IS 16107",
+    "is_context": ""
+  },
+  "पंखा": {
+    "en": "Fan (Ceiling Fan)",
+    "domain": "Electrical",
+    "is_ref": "IS 374",
+    "is_context": ""
+  },
+  "fan (ceiling fan)": {
+    "en": "Fan (Ceiling Fan)",
+    "domain": "Electrical",
+    "is_ref": "IS 374",
+    "is_context": ""
+  },
+  "प्रतिरोध": {
+    "en": "Resistance (Ohm)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "resistance (ohm)": {
+    "en": "Resistance (Ohm)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "धारा": {
+    "en": "Current (Ampere)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "current (ampere)": {
+    "en": "Current (Ampere)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "वोल्टेज": {
+    "en": "Voltage (Volt)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "voltage (volt)": {
+    "en": "Voltage (Volt)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "शक्ति": {
+    "en": "Power (Watt/kW)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "power (watt/kw)": {
+    "en": "Power (Watt/kW)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "आवृत्ति": {
+    "en": "Frequency (Hz)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "frequency (hz)": {
+    "en": "Frequency (Hz)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "एकल-कला": {
+    "en": "Single Phase",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "single phase": {
+    "en": "Single Phase",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "त्रि-कला": {
+    "en": "Three Phase",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "three phase": {
+    "en": "Three Phase",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "विद्युत रोधन": {
+    "en": "Electrical Insulation",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "electrical insulation": {
+    "en": "Electrical Insulation",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "पीवीसी": {
+    "en": "PVC (Polyvinyl Chloride)",
+    "domain": "Chemical",
+    "is_ref": "IS 10151",
+    "is_context": ""
+  },
+  "pvc (polyvinyl chloride)": {
+    "en": "PVC (Polyvinyl Chloride)",
+    "domain": "Chemical",
+    "is_ref": "IS 10151",
+    "is_context": ""
+  },
+  "एक्सएलपीई": {
+    "en": "XLPE (Cross-Linked Polyethylene)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "xlpe (cross-linked polyethylene)": {
+    "en": "XLPE (Cross-Linked Polyethylene)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ग्राउंडिंग": {
+    "en": "Earthing / Grounding",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "earthing / grounding": {
+    "en": "Earthing / Grounding",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "सुरक्षा": {
+    "en": "Safety",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "safety": {
+    "en": "Safety",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "आईपी रेटिंग": {
+    "en": "IP Rating (Ingress Protection)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ip rating (ingress protection)": {
+    "en": "IP Rating (Ingress Protection)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "solar panel / pv module": {
+    "en": "Solar Panel / PV Module",
+    "domain": "Electrical",
+    "is_ref": "IS 14286",
+    "is_context": ""
+  },
+  "यूपीएस": {
+    "en": "UPS (Uninterruptible Power Supply)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ups (uninterruptible power supply)": {
+    "en": "UPS (Uninterruptible Power Supply)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "एमसीबी": {
+    "en": "MCB (Miniature Circuit Breaker)",
+    "domain": "Electrical",
+    "is_ref": "IS 8828",
+    "is_context": ""
+  },
+  "mcb (miniature circuit breaker)": {
+    "en": "MCB (Miniature Circuit Breaker)",
+    "domain": "Electrical",
+    "is_ref": "IS 8828",
+    "is_context": ""
+  },
+  "बीईई स्टार रेटिंग": {
+    "en": "BEE Star Rating (Energy Efficiency)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "bee star rating (energy efficiency)": {
+    "en": "BEE Star Rating (Energy Efficiency)",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ऊर्जा दक्षता": {
+    "en": "Energy Efficiency",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "energy efficiency": {
+    "en": "Energy Efficiency",
+    "domain": "Electrical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "पम्प": {
+    "en": "Pump",
+    "domain": "Mechanical",
+    "is_ref": "IS 9283",
+    "is_context": ""
+  },
+  "pump": {
+    "en": "Pump",
+    "domain": "Mechanical",
+    "is_ref": "IS 9283",
+    "is_context": ""
+  },
+  "सबमर्सिबल पम्प": {
+    "en": "Submersible Pump",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "submersible pump": {
+    "en": "Submersible Pump",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "बेयरिंग": {
+    "en": "Bearing",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "bearing": {
+    "en": "Bearing",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "गियर": {
+    "en": "Gear",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "gear": {
+    "en": "Gear",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "बोल्ट": {
+    "en": "Bolt",
+    "domain": "Mechanical",
+    "is_ref": "IS 1363/IS 1364",
+    "is_context": ""
+  },
+  "bolt": {
+    "en": "Bolt",
+    "domain": "Mechanical",
+    "is_ref": "IS 1363/IS 1364",
+    "is_context": ""
+  },
+  "नट": {
+    "en": "Nut",
+    "domain": "Mechanical",
+    "is_ref": "IS 1363/IS 1364",
+    "is_context": ""
+  },
+  "nut": {
+    "en": "Nut",
+    "domain": "Mechanical",
+    "is_ref": "IS 1363/IS 1364",
+    "is_context": ""
+  },
+  "वाशर": {
+    "en": "Washer",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "washer": {
+    "en": "Washer",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "स्क्रू": {
+    "en": "Screw",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "screw": {
+    "en": "Screw",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "फास्टनर": {
+    "en": "Fastener",
+    "domain": "Mechanical",
+    "is_ref": "IS 1367",
+    "is_context": ""
+  },
+  "fastener": {
+    "en": "Fastener",
+    "domain": "Mechanical",
+    "is_ref": "IS 1367",
+    "is_context": ""
+  },
+  "धागा": {
+    "en": "Thread",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "thread": {
+    "en": "Thread",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "सहनशीलता": {
+    "en": "Tolerance (±)",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "tolerance (±)": {
+    "en": "Tolerance (±)",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "सटीकता": {
+    "en": "Accuracy",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "accuracy": {
+    "en": "Accuracy",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "फिनिश": {
+    "en": "Finish (Surface Finish)",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "finish (surface finish)": {
+    "en": "Finish (Surface Finish)",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "खुरदरापन": {
+    "en": "Roughness (Ra, Rz)",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "roughness (ra, rz)": {
+    "en": "Roughness (Ra, Rz)",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "संक्षारण": {
+    "en": "Corrosion",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "corrosion": {
+    "en": "Corrosion",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "जंग रोधी": {
+    "en": "Corrosion Resistant / Anti-Rust",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "corrosion resistant / anti-rust": {
+    "en": "Corrosion Resistant / Anti-Rust",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "धातुकर्म": {
+    "en": "Metallurgy",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "metallurgy": {
+    "en": "Metallurgy",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "मिश्र धातु": {
+    "en": "Alloy",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "alloy": {
+    "en": "Alloy",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ढलाई": {
+    "en": "Casting",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "casting": {
+    "en": "Casting",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "फोर्जिंग": {
+    "en": "Forging",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "forging": {
+    "en": "Forging",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "वेल्डिंग": {
+    "en": "Welding",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "welding": {
+    "en": "Welding",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "रासायनिक संरचना": {
+    "en": "Chemical Composition",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "chemical composition": {
+    "en": "Chemical Composition",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "कार्बन सामग्री": {
+    "en": "Carbon Content (%C)",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "carbon content (%c)": {
+    "en": "Carbon Content (%C)",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ताप उपचार": {
+    "en": "Heat Treatment",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "heat treatment": {
+    "en": "Heat Treatment",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "यंत्र तनन परीक्षण": {
+    "en": "Tensile Test",
+    "domain": "Mechanical",
+    "is_ref": "IS 1608",
+    "is_context": ""
+  },
+  "tensile test": {
+    "en": "Tensile Test",
+    "domain": "Mechanical",
+    "is_ref": "IS 1608",
+    "is_context": ""
+  },
+  "कठोरता परीक्षण": {
+    "en": "Hardness Test (Brinell/Rockwell/Vickers)",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "hardness test (brinell/rockwell/vickers)": {
+    "en": "Hardness Test (Brinell/Rockwell/Vickers)",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "अभिघात परीक्षण": {
+    "en": "Impact Test (Charpy/Izod)",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "impact test (charpy/izod)": {
+    "en": "Impact Test (Charpy/Izod)",
+    "domain": "Mechanical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "पॉलीएथिलीन": {
+    "en": "Polyethylene (PE)",
+    "domain": "Chemical",
+    "is_ref": "IS 10146",
+    "is_context": ""
+  },
+  "polyethylene (pe)": {
+    "en": "Polyethylene (PE)",
+    "domain": "Chemical",
+    "is_ref": "IS 10146",
+    "is_context": ""
+  },
+  "एचडीपीई": {
+    "en": "HDPE (High Density PE)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "hdpe (high density pe)": {
+    "en": "HDPE (High Density PE)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "पेंट": {
+    "en": "Paint",
+    "domain": "Chemical",
+    "is_ref": "IS 2932",
+    "is_context": ""
+  },
+  "paint": {
+    "en": "Paint",
+    "domain": "Chemical",
+    "is_ref": "IS 2932",
+    "is_context": ""
+  },
+  "प्राइमर": {
+    "en": "Primer",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "primer": {
+    "en": "Primer",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "वार्निश": {
+    "en": "Varnish",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "varnish": {
+    "en": "Varnish",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "शुद्धता": {
+    "en": "Purity (%)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "purity (%)": {
+    "en": "Purity (%)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "पीएच मान": {
+    "en": "pH Value",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ph value": {
+    "en": "pH Value",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "चिपचिपाहट": {
+    "en": "Viscosity",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "viscosity": {
+    "en": "Viscosity",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "घनत्व": {
+    "en": "Density (g/cc)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "density (g/cc)": {
+    "en": "Density (g/cc)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "गलनांक": {
+    "en": "Melting Point (°C)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "melting point (°c)": {
+    "en": "Melting Point (°C)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "क्वथनांक": {
+    "en": "Boiling Point (°C)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "boiling point (°c)": {
+    "en": "Boiling Point (°C)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ज्वलनशीलता": {
+    "en": "Flammability / Combustibility",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "flammability / combustibility": {
+    "en": "Flammability / Combustibility",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "फ्लैश बिंदु": {
+    "en": "Flash Point (°C)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "flash point (°c)": {
+    "en": "Flash Point (°C)",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "तेल": {
+    "en": "Oil / Lubricant",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "oil / lubricant": {
+    "en": "Oil / Lubricant",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "स्नेहक": {
+    "en": "Lubricant",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "lubricant": {
+    "en": "Lubricant",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ईंधन": {
+    "en": "Fuel",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "fuel": {
+    "en": "Fuel",
+    "domain": "Chemical",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "एलपीजी": {
+    "en": "LPG (Liquefied Petroleum Gas)",
+    "domain": "Chemical",
+    "is_ref": "IS 4246",
+    "is_context": ""
+  },
+  "lpg (liquefied petroleum gas)": {
+    "en": "LPG (Liquefied Petroleum Gas)",
+    "domain": "Chemical",
+    "is_ref": "IS 4246",
+    "is_context": ""
+  },
+  "सूत": {
+    "en": "Yarn",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "yarn": {
+    "en": "Yarn",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "कपड़ा": {
+    "en": "Fabric / Cloth",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "fabric / cloth": {
+    "en": "Fabric / Cloth",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "बुनाई": {
+    "en": "Weaving",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "weaving": {
+    "en": "Weaving",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "बुनावट": {
+    "en": "Knitting / Texture",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "knitting / texture": {
+    "en": "Knitting / Texture",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "फाइबर": {
+    "en": "Fibre",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "fibre": {
+    "en": "Fibre",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "रंगाई": {
+    "en": "Dyeing",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "dyeing": {
+    "en": "Dyeing",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "रंगीनी": {
+    "en": "Colour Fastness",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "colour fastness": {
+    "en": "Colour Fastness",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "सिकुड़न": {
+    "en": "Shrinkage (%)",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "shrinkage (%)": {
+    "en": "Shrinkage (%)",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "टूटने की शक्ति": {
+    "en": "Breaking Strength (N)",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "breaking strength (n)": {
+    "en": "Breaking Strength (N)",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "वर्दी": {
+    "en": "Uniform",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "uniform": {
+    "en": "Uniform",
+    "domain": "Textile",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "जल गुणवत्ता": {
+    "en": "Water Quality",
+    "domain": "Food",
+    "is_ref": "IS 10500",
+    "is_context": ""
+  },
+  "potable / drinking water": {
+    "en": "Potable / Drinking Water",
+    "domain": "Food",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "खाद्य सम्पर्क": {
+    "en": "Food Contact Material",
+    "domain": "Food",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "food contact material": {
+    "en": "Food Contact Material",
+    "domain": "Food",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "कृषि उपकरण": {
+    "en": "Agricultural Equipment",
+    "domain": "Agriculture",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "agricultural equipment": {
+    "en": "Agricultural Equipment",
+    "domain": "Agriculture",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "स्प्रेयर": {
+    "en": "Sprayer",
+    "domain": "Agriculture",
+    "is_ref": "IS 7635",
+    "is_context": ""
+  },
+  "sprayer": {
+    "en": "Sprayer",
+    "domain": "Agriculture",
+    "is_ref": "IS 7635",
+    "is_context": ""
+  },
+  "बीज": {
+    "en": "Seed",
+    "domain": "Agriculture",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "seed": {
+    "en": "Seed",
+    "domain": "Agriculture",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "उर्वरक": {
+    "en": "Fertilizer",
+    "domain": "Agriculture",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "fertilizer": {
+    "en": "Fertilizer",
+    "domain": "Agriculture",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "safety helmet / hard hat": {
+    "en": "Safety Helmet / Hard Hat",
+    "domain": "Safety",
+    "is_ref": "IS 2925",
+    "is_context": ""
+  },
+  "सुरक्षा जूते": {
+    "en": "Safety Footwear / Shoes",
+    "domain": "Safety",
+    "is_ref": "IS 11226",
+    "is_context": ""
+  },
+  "safety footwear / shoes": {
+    "en": "Safety Footwear / Shoes",
+    "domain": "Safety",
+    "is_ref": "IS 11226",
+    "is_context": ""
+  },
+  "सुरक्षा बेल्ट": {
+    "en": "Safety Belt / Harness",
+    "domain": "Safety",
+    "is_ref": "IS 3521",
+    "is_context": ""
+  },
+  "safety belt / harness": {
+    "en": "Safety Belt / Harness",
+    "domain": "Safety",
+    "is_ref": "IS 3521",
+    "is_context": ""
+  },
+  "अग्निशामक": {
+    "en": "Fire Extinguisher",
+    "domain": "Safety",
+    "is_ref": "IS 15683",
+    "is_context": ""
+  },
+  "व्यक्तिगत सुरक्षा उपकरण": {
+    "en": "PPE (Personal Protective Equipment)",
+    "domain": "Safety",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "ppe (personal protective equipment)": {
+    "en": "PPE (Personal Protective Equipment)",
+    "domain": "Safety",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "दस्ताने": {
+    "en": "Gloves",
+    "domain": "Safety",
+    "is_ref": "IS 10254",
+    "is_context": ""
+  },
+  "gloves": {
+    "en": "Gloves",
+    "domain": "Safety",
+    "is_ref": "IS 10254",
+    "is_context": ""
+  },
+  "मास्क": {
+    "en": "Mask",
+    "domain": "Safety",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "mask": {
+    "en": "Mask",
+    "domain": "Safety",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "माप": {
+    "en": "Measurement",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "measurement": {
+    "en": "Measurement",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "अंशांकन": {
+    "en": "Calibration",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "calibration": {
+    "en": "Calibration",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "परिशुद्धता": {
+    "en": "Precision",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "precision": {
+    "en": "Precision",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "विचलन": {
+    "en": "Deviation",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "deviation": {
+    "en": "Deviation",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "स्वीकार्य गुणवत्ता स्तर": {
+    "en": "AQL (Acceptable Quality Level)",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "aql (acceptable quality level)": {
+    "en": "AQL (Acceptable Quality Level)",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "नमूना योजना": {
+    "en": "Sampling Plan",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "sampling plan": {
+    "en": "Sampling Plan",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "प्रयोगशाला परीक्षण": {
+    "en": "Laboratory Test",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "laboratory test": {
+    "en": "Laboratory Test",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "प्रत्यायन": {
+    "en": "Accreditation (NABL)",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "accreditation (nabl)": {
+    "en": "Accreditation (NABL)",
+    "domain": "Measurement",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "कंप्यूटर": {
+    "en": "Computer",
+    "domain": "IT",
+    "is_ref": "IS 13252",
+    "is_context": ""
+  },
+  "computer": {
+    "en": "Computer",
+    "domain": "IT",
+    "is_ref": "IS 13252",
+    "is_context": ""
+  },
+  "लैपटॉप": {
+    "en": "Laptop",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "laptop": {
+    "en": "Laptop",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "प्रिंटर": {
+    "en": "Printer",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "printer": {
+    "en": "Printer",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "नेटवर्क": {
+    "en": "Network",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "network": {
+    "en": "Network",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "साइबर सुरक्षा": {
+    "en": "Cyber Security",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "cyber security": {
+    "en": "Cyber Security",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "डेटा": {
+    "en": "Data",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "data": {
+    "en": "Data",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "सॉफ्टवेयर": {
+    "en": "Software",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "software": {
+    "en": "Software",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "हार्डवेयर": {
+    "en": "Hardware",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  },
+  "hardware": {
+    "en": "Hardware",
+    "domain": "IT",
+    "is_ref": "",
+    "is_context": ""
+  }
 }

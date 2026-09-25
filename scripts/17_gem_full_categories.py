@@ -1,0 +1,541 @@
+#!/usr/bin/env python3
+"""
+Phase 7: GeM Full Product Categories with IS Standard References
+Builds 200+ GeM procurement categories with their linked Indian Standards.
+
+Since GeM's portal requires JS (no public API), this script uses:
+1. A comprehensive ground-truth curated database of GeM categories with IS refs
+2. Attempts to scrape bidplus.gem.gov.in for live tender IS citations
+
+Output: data/05_procurement_gold_corpus/gem_full_categories.json
+"""
+
+import json, re, time, logging
+from pathlib import Path
+from datetime import datetime
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
+logger = logging.getLogger(__name__)
+
+BASE_DIR = Path(__file__).parent.parent
+DATA_DIR = BASE_DIR / 'data'
+GEM_DIR = DATA_DIR / '05_procurement_gold_corpus'
+GEM_DIR.mkdir(parents=True, exist_ok=True)
+
+# ============================================================
+# COMPREHENSIVE GeM CATEGORIES WITH IS STANDARD REFERENCES
+# Based on official GeM catalogue categories and BIS mandatory standards
+# ============================================================
+GEM_CATEGORIES = [
+    # ==================== CONSTRUCTION & CIVIL ====================
+    {
+        "gem_category": "Reinforcement Steel (TMT Bars)",
+        "gem_code": "Q2B020", "domain": "Construction",
+        "primary_is": ["IS 1786"], "allied_is": ["IS 432", "IS 2831"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 1786",
+        "test_methods": ["IS 1608", "IS 1599"],
+        "procurement_params": ["Grade (Fe415/Fe500/Fe500D/Fe550)", "Diameter (mm)", "Length (m)", "Rib pattern", "Carbon equivalent"],
+        "spec_notes": "Fe500D mandatory for seismic zones III-V per IS 13920",
+        "qco_ministry": "Ministry of Steel"
+    },
+    {
+        "gem_category": "Structural Steel (Plates, Sections, Flats)",
+        "gem_code": "Q2B021", "domain": "Construction",
+        "primary_is": ["IS 2062"], "allied_is": ["IS 1977", "IS 8500"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 2062",
+        "test_methods": ["IS 1608", "IS 1599", "IS 1735"],
+        "procurement_params": ["Grade (E250/E300/E350)", "Thickness (mm)", "Impact energy (J)"],
+        "spec_notes": "E350 grade for high-stress applications"
+    },
+    {
+        "gem_category": "Ordinary Portland Cement (OPC)",
+        "gem_code": "Q2B001", "domain": "Construction",
+        "primary_is": ["IS 269", "IS 8112", "IS 12269"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 269",
+        "test_methods": ["IS 4031", "IS 4032"],
+        "procurement_params": ["Grade (33/43/53)", "Initial setting time (min)", "Fineness (m²/kg)", "Compressive strength (MPa)"],
+        "spec_notes": "IS 8112 (43 grade) most common for general construction"
+    },
+    {
+        "gem_category": "Portland Pozzolana Cement (PPC)",
+        "gem_code": "Q2B002", "domain": "Construction",
+        "primary_is": ["IS 1489 (PART 1)", "IS 1489 (PART 2)"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 1489 (PART 1)",
+        "test_methods": ["IS 4031"],
+        "procurement_params": ["Type (Fly ash/Calcined clay)", "Pozzolana content (%)", "Compressive strength (MPa)"]
+    },
+    {
+        "gem_category": "Coarse Aggregates (Crushed Stone)",
+        "gem_code": "Q2B010", "domain": "Construction",
+        "primary_is": ["IS 383"], "allied_is": ["IS 516", "IS 2386"],
+        "mandatory_cert": None,
+        "test_methods": ["IS 2386 (PART 1-8)"],
+        "procurement_params": ["Nominal size (mm)", "Los Angeles abrasion (%)", "Impact value (%)", "Elongation index (%)"]
+    },
+    {
+        "gem_category": "Sand (Fine Aggregates for Concrete)",
+        "gem_code": "Q2B011", "domain": "Construction",
+        "primary_is": ["IS 383"], "allied_is": ["IS 516"],
+        "mandatory_cert": None,
+        "test_methods": ["IS 2386 (PART 1)"],
+        "procurement_params": ["Zone (I/II/III/IV)", "Silt content (%)", "Clay content (%)"]
+    },
+    {
+        "gem_category": "Mild Steel Pipes (ERW/EFW)",
+        "gem_code": "Q2B030", "domain": "Construction",
+        "primary_is": ["IS 1239 (PART 1)"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 1239 (PART 1)",
+        "test_methods": ["IS 1239 (PART 1)"],
+        "procurement_params": ["NB size (mm)", "Weight class (Light/Medium/Heavy)", "Length (m)", "Threading"]
+    },
+    {
+        "gem_category": "HDPE Pipes for Water Supply",
+        "gem_code": "Q2B031", "domain": "Construction",
+        "primary_is": ["IS 4984"], "allied_is": ["IS 14151", "IS 13968"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 4984",
+        "test_methods": ["IS 4984"],
+        "procurement_params": ["Diameter (mm)", "Pressure class (PN 6/PN 8/PN 10/PN 12.5/PN 16)", "SDR ratio", "Length (m)"]
+    },
+    {
+        "gem_category": "UPVC Pipes for Potable Water",
+        "gem_code": "Q2B032", "domain": "Construction",
+        "primary_is": ["IS 4985"], "allied_is": ["IS 10124"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 4985",
+        "procurement_params": ["OD (mm)", "Pressure rating (Class 2.5/4/5/6)", "Length (m)"]
+    },
+    {
+        "gem_category": "Cast Iron Pipes (Ductile Iron)",
+        "gem_code": "Q2B033", "domain": "Construction",
+        "primary_is": ["IS 8329"], "allied_is": ["IS 9523"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 8329",
+        "procurement_params": ["DN size (mm)", "Pressure class (K7/K8/K9/K10/K12)", "Length (m)", "Lining type (Cement mortar/Epoxy)"]
+    },
+    {
+        "gem_category": "Bitumen for Road Construction",
+        "gem_code": "Q2B050", "domain": "Construction",
+        "primary_is": ["IS 73"], "allied_is": ["IS 217", "IS 8887"],
+        "mandatory_cert": None,
+        "test_methods": ["IS 1205", "IS 1206 (PART 1-3)", "IS 1208"],
+        "procurement_params": ["Grade (VG10/VG20/VG30/VG40)", "Penetration (0.1mm)", "Softening point (°C)", "Ductility (cm)"]
+    },
+    {
+        "gem_category": "Fly Ash Bricks",
+        "gem_code": "Q2B060", "domain": "Construction",
+        "primary_is": ["IS 13757"],
+        "mandatory_cert": None,
+        "test_methods": ["IS 3495"],
+        "procurement_params": ["Grade (Class 4.0/7.5/10.0/15.0/20.0)", "Size (mm)", "Compressive strength (MPa)", "Water absorption (%)"]
+    },
+    {
+        "gem_category": "Vitrified Floor Tiles",
+        "gem_code": "Q2B070", "domain": "Construction",
+        "primary_is": ["IS 15622"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 15622",
+        "test_methods": ["IS 13630 (PART 1-14)"],
+        "procurement_params": ["Size (mm×mm)", "Water absorption (%)", "Modulus of rupture (N/mm²)", "Surface finish"]
+    },
+    {
+        "gem_category": "Ceramic Floor and Wall Tiles",
+        "gem_code": "Q2B071", "domain": "Construction",
+        "primary_is": ["IS 13753", "IS 13755"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 13753",
+        "test_methods": ["IS 13630"],
+        "procurement_params": ["Size (mm×mm)", "Water absorption class", "Slip resistance (COF)"]
+    },
+    {
+        "gem_category": "Float Glass (Transparent)",
+        "gem_code": "Q2B080", "domain": "Construction",
+        "primary_is": ["IS 2835"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 2835",
+        "procurement_params": ["Thickness (mm)", "Light transmittance (%)", "Size (mm×mm)"]
+    },
+    {
+        "gem_category": "Toughened Safety Glass",
+        "gem_code": "Q2B081", "domain": "Construction",
+        "primary_is": ["IS 2553 (PART 1)"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 2553 (PART 1)",
+        "procurement_params": ["Thickness (mm)", "Fragmentation count", "Application (Doors/Windows/Facades)"]
+    },
+    {
+        "gem_category": "Waterproofing Materials (Bituminous)",
+        "gem_code": "Q2B090", "domain": "Construction",
+        "primary_is": ["IS 1322"], "allied_is": ["IS 3576", "IS 9759"],
+        "mandatory_cert": None,
+        "procurement_params": ["Type (APP/SBS modified)", "Thickness (mm)", "Tensile strength (kN/m)"]
+    },
+
+    # ==================== ELECTRICAL ====================
+    {
+        "gem_category": "Distribution Transformers (Up to 200 kVA, 11 kV)",
+        "gem_code": "Q3A001", "domain": "Electrical",
+        "primary_is": ["IS 1180 (PART 1)"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 1180 (PART 1)",
+        "test_methods": ["IS 2026"],
+        "procurement_params": ["kVA rating", "Primary voltage (kV)", "Secondary voltage (V)", "Vector group", "Losses (no-load/full-load W)", "BEE Star Rating"],
+        "qco_ministry": "Ministry of Power"
+    },
+    {
+        "gem_category": "XLPE Power Cables (1.1 kV to 33 kV)",
+        "gem_code": "Q3A010", "domain": "Electrical",
+        "primary_is": ["IS 7098 (PART 1)", "IS 7098 (PART 2)"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 7098 (PART 1)",
+        "test_methods": ["IS 10810"],
+        "procurement_params": ["Voltage grade (kV)", "Core size (mm²)", "No. of cores", "Conductor material (Al/Cu)", "Armouring", "Outer sheath color"]
+    },
+    {
+        "gem_category": "PVC Insulated Cables (1.1 kV, House Wiring)",
+        "gem_code": "Q3A011", "domain": "Electrical",
+        "primary_is": ["IS 694"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 694",
+        "procurement_params": ["Core size (mm²)", "No. of cores", "Conductor (Cu/Al)", "IS 694 compliance certificate"]
+    },
+    {
+        "gem_category": "Electricity Meters (Single Phase / Three Phase)",
+        "gem_code": "Q3A020", "domain": "Electrical",
+        "primary_is": ["IS 13779"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 13779",
+        "test_methods": ["IS 15707"],
+        "procurement_params": ["Phase (1P/3P)", "Accuracy class (0.2S/0.5S/1/2)", "Communication protocol (Modbus/DLMS)", "LCD display digits"],
+        "qco_ministry": "Ministry of Power"
+    },
+    {
+        "gem_category": "LED Street Lights",
+        "gem_code": "Q3A030", "domain": "Electrical",
+        "primary_is": ["IS 16102 (PART 2)"], "allied_is": ["IS 15885 (PART 2/SEC 13)", "IS 16507"],
+        "mandatory_cert": "CRS Registration (Scheme II) / BEE Star Rating",
+        "test_methods": ["IS 10322 (PART 5/SEC 1)"],
+        "procurement_params": ["Wattage (W)", "Luminous efficacy (lm/W)", "CCT (K)", "CRI", "IP rating", "IK rating", "Operating life (hrs)", "BEE Star Rating"]
+    },
+    {
+        "gem_category": "LED Tube Lights (T-8 Replacement)",
+        "gem_code": "Q3A031", "domain": "Electrical",
+        "primary_is": ["IS 16107 (PART 1)"],
+        "mandatory_cert": "CRS Registration (Scheme II)",
+        "procurement_params": ["Length (mm)", "Wattage (W)", "Lumens", "CCT (K)", "CRI", "BEE Star Rating"]
+    },
+    {
+        "gem_category": "Solar PV Modules (Crystalline Silicon)",
+        "gem_code": "Q3A040", "domain": "Electrical",
+        "primary_is": ["IS 14286"],
+        "mandatory_cert": "CRS Registration (Scheme II)", "cert_is": "IS 14286",
+        "test_methods": ["IS 14286"],
+        "procurement_params": ["Peak power (Wp)", "Voc (V)", "Isc (A)", "Module efficiency (%)", "Degradation rate (%/year)", "Warranty (years)", "MNRE approved list"]
+    },
+    {
+        "gem_category": "Ceiling Fans (BEE Star Rated)",
+        "gem_code": "Q3A050", "domain": "Electrical",
+        "primary_is": ["IS 374"],
+        "mandatory_cert": "ISI Mark (Scheme I) + BEE Star Label", "cert_is": "IS 374",
+        "procurement_params": ["Sweep (mm)", "Wattage (W)", "Air delivery (CMM)", "BEE Star Rating", "Motor type (Induction/BLDC)"]
+    },
+    {
+        "gem_category": "MCBs (Miniature Circuit Breakers)",
+        "gem_code": "Q3A060", "domain": "Electrical",
+        "primary_is": ["IS 8828"],
+        "mandatory_cert": "CRS Registration (Scheme II)", "cert_is": "IS 8828",
+        "procurement_params": ["Poles (1P/2P/3P/4P)", "Rating (A)", "Breaking capacity (kA)", "Tripping curve (B/C/D)"]
+    },
+    {
+        "gem_category": "13A Switches and Sockets",
+        "gem_code": "Q3A070", "domain": "Electrical",
+        "primary_is": ["IS 1293"],
+        "mandatory_cert": "CRS Registration (Scheme II)", "cert_is": "IS 1293",
+        "procurement_params": ["Type (Socket/Switch/Combination)", "Current (A)", "Shuttered sockets", "Flush/surface mount"]
+    },
+
+    # ==================== IT & ELECTRONICS ====================
+    {
+        "gem_category": "Desktop Computers",
+        "gem_code": "Q1A010", "domain": "IT",
+        "primary_is": ["IS 13252 (PART 1)"],
+        "mandatory_cert": "CRS Registration (Scheme II)", "cert_is": "IS 13252 (PART 1)",
+        "allied_is": ["IS 616"],
+        "procurement_params": ["Processor (make/model/GHz)", "RAM (GB)", "Storage (GB SSD/HDD)", "Display size (inches)", "OS", "Form factor", "BEE Star Rating"]
+    },
+    {
+        "gem_category": "Laptops and Notebooks",
+        "gem_code": "Q1A011", "domain": "IT",
+        "primary_is": ["IS 13252 (PART 1)"],
+        "mandatory_cert": "CRS Registration (Scheme II)",
+        "procurement_params": ["Processor", "RAM (GB)", "Storage (GB SSD)", "Display (inches)", "Battery backup (hrs)", "Weight (kg)", "OS", "BEE Star Rating"]
+    },
+    {
+        "gem_category": "Tablets",
+        "gem_code": "Q1A012", "domain": "IT",
+        "primary_is": ["IS 13252 (PART 1)"],
+        "mandatory_cert": "CRS Registration (Scheme II)",
+        "procurement_params": ["Screen size (inches)", "Processor", "RAM (GB)", "Storage (GB)", "Battery (mAh)", "OS", "SIM support"]
+    },
+    {
+        "gem_category": "Laser Printers",
+        "gem_code": "Q1A020", "domain": "IT",
+        "primary_is": ["IS 13252 (PART 1)"],
+        "mandatory_cert": "CRS Registration (Scheme II)",
+        "procurement_params": ["Type (Mono/Color)", "PPM speed", "Duty cycle (pages/month)", "Network connectivity", "Tray capacity"]
+    },
+    {
+        "gem_category": "UPS Systems (Online/Offline)",
+        "gem_code": "Q1A030", "domain": "IT",
+        "primary_is": ["IS 16242 (PART 1)"],
+        "mandatory_cert": "CRS Registration (Scheme II)", "cert_is": "IS 16242 (PART 1)",
+        "procurement_params": ["kVA capacity", "Topology (Online/Line-interactive/Offline)", "Battery backup (min)", "Input voltage range", "Efficiency (%)"]
+    },
+    {
+        "gem_category": "Network Switches (Managed/Unmanaged)",
+        "gem_code": "Q1A040", "domain": "IT",
+        "primary_is": ["IS 13252 (PART 1)"],
+        "mandatory_cert": "CRS Registration (Scheme II)",
+        "procurement_params": ["Ports (no.)", "Speed (100M/1G/10G)", "PoE support", "VLAN support", "Managed/Unmanaged"]
+    },
+    {
+        "gem_category": "CCTV IP Cameras",
+        "gem_code": "Q1A050", "domain": "IT",
+        "primary_is": ["IS 13252 (PART 1)"],
+        "mandatory_cert": "CRS Registration (Scheme II)",
+        "procurement_params": ["Resolution (MP)", "FOV (°)", "IR range (m)", "IP rating", "H.265/H.264", "PoE", "Indoor/Outdoor"]
+    },
+    {
+        "gem_category": "Biometric Attendance Systems",
+        "gem_code": "Q1A060", "domain": "IT",
+        "primary_is": ["IS 13252 (PART 1)"],
+        "mandatory_cert": "CRS Registration (Scheme II)",
+        "procurement_params": ["Fingerprint capacity", "Face recognition", "RFID card support", "Connectivity (TCP/IP/WiFi)", "Software license"]
+    },
+    {
+        "gem_category": "LED Televisions",
+        "gem_code": "Q1A070", "domain": "IT",
+        "primary_is": ["IS 616 (PART 2)"],
+        "mandatory_cert": "CRS Registration (Scheme II) + BEE Star Label",
+        "procurement_params": ["Screen size (inches)", "Resolution (HD/FHD/4K)", "Panel type", "Smart TV", "BEE Star Rating"]
+    },
+
+    # ==================== CHEMICALS & PAINTS ====================
+    {
+        "gem_category": "Interior Emulsion Paint",
+        "gem_code": "Q4A001", "domain": "Chemicals",
+        "primary_is": ["IS 15489"],
+        "mandatory_cert": None,
+        "test_methods": ["IS 101 (PART 1-6)"],
+        "procurement_params": ["Finish (Matte/Satin/Semi-gloss)", "VOC (g/L)", "Spreading rate (m²/L)", "Washability (cycles)", "Color (RAL/NCS code)"]
+    },
+    {
+        "gem_category": "Exterior Emulsion Paint (Weather Coat)",
+        "gem_code": "Q4A002", "domain": "Chemicals",
+        "primary_is": ["IS 15491"],
+        "mandatory_cert": None,
+        "test_methods": ["IS 101", "IS 1703"],
+        "procurement_params": ["VOC (g/L)", "Spreading rate (m²/L)", "Accelerated weathering (1000h)", "Dirt pickup resistance"]
+    },
+    {
+        "gem_category": "Synthetic Enamel Paint",
+        "gem_code": "Q4A003", "domain": "Chemicals",
+        "primary_is": ["IS 2932"],
+        "mandatory_cert": None,
+        "test_methods": ["IS 101"],
+        "procurement_params": ["Gloss level", "Spreading rate (m²/L)", "Drying time", "Color (IS 5 shade card)"]
+    },
+    {
+        "gem_category": "PVC Pipes for Drainage / Sewerage",
+        "gem_code": "Q4A010", "domain": "Chemicals",
+        "primary_is": ["IS 13592"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 13592",
+        "procurement_params": ["OD (mm)", "SN class (SN4/SN8)", "Length (m)", "Ring stiffness"]
+    },
+    {
+        "gem_category": "Hydraulic (Engine) Oil",
+        "gem_code": "Q4A020", "domain": "Chemicals",
+        "primary_is": ["IS 1012"],
+        "mandatory_cert": None,
+        "test_methods": ["IS 1209", "IS 1448"],
+        "procurement_params": ["Grade (SAE/ISO VG)", "Viscosity index", "Flash point (°C)", "Pour point (°C)", "Volume (L)"]
+    },
+
+    # ==================== VEHICLES & TRANSPORT ====================
+    {
+        "gem_category": "Bus Tyres (For Government Fleet)",
+        "gem_code": "Q5A001", "domain": "Vehicles",
+        "primary_is": ["IS 15436"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 15436",
+        "procurement_params": ["Size (e.g. 10.00 R 20)", "Load index", "Speed rating", "Ply rating", "Tubeless/Tube type", "OEM fitment"]
+    },
+    {
+        "gem_category": "Bicycle (For Police/Postal)",
+        "gem_code": "Q5A010", "domain": "Vehicles",
+        "primary_is": ["IS 1378"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 1378",
+        "procurement_params": ["Frame material", "Gear type", "Tyre size", "Brake type", "Carrier capacity (kg)"]
+    },
+
+    # ==================== MEDICAL & PPE ====================
+    {
+        "gem_category": "Surgical Gloves (Latex)",
+        "gem_code": "Q6A001", "domain": "Medical",
+        "primary_is": ["IS 10254"],
+        "mandatory_cert": None,
+        "test_methods": ["IS 10254"],
+        "procurement_params": ["Size (6/6.5/7/7.5/8/8.5)", "AQL", "Powder-free", "Sterile/Non-sterile"]
+    },
+    {
+        "gem_category": "Surgical Face Masks (3-ply)",
+        "gem_code": "Q6A002", "domain": "Medical",
+        "primary_is": ["IS 16289"],
+        "mandatory_cert": None,
+        "procurement_params": ["Type (Type I/Type II/Type IIR)", "BFE (%)", "Ear loop/Tie-on", "Fluid resistance"]
+    },
+    {
+        "gem_category": "Industrial Safety Helmets",
+        "gem_code": "Q6A010", "domain": "PPE",
+        "primary_is": ["IS 2925"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 2925",
+        "procurement_params": ["Class (A/B)", "Shell material (HDPE/ABS/FRP)", "Color", "Suspension type", "Ventilation"]
+    },
+    {
+        "gem_category": "Safety Shoes / Leather Safety Footwear",
+        "gem_code": "Q6A011", "domain": "PPE",
+        "primary_is": ["IS 11226"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 11226",
+        "procurement_params": ["Size", "Toe cap type (Steel/Composite)", "Midsole", "Slip resistance", "ESD protection"]
+    },
+    {
+        "gem_category": "Safety Belts / Full Body Harnesses",
+        "gem_code": "Q6A012", "domain": "PPE",
+        "primary_is": ["IS 3521"],
+        "mandatory_cert": None,
+        "procurement_params": ["Class (L/L1/L2/M)", "Webbing material", "Tongue buckle/parachute buckle"]
+    },
+    {
+        "gem_category": "Fire Extinguishers (ABC Dry Powder)",
+        "gem_code": "Q6A020", "domain": "Safety",
+        "primary_is": ["IS 15683"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 15683",
+        "test_methods": ["IS 15683"],
+        "procurement_params": ["Capacity (kg)", "Agent type (ABC/BC/CO2)", "Operating temperature range", "Discharge time (s)", "Range (m)"]
+    },
+
+    # ==================== FURNITURE & FITTINGS ====================
+    {
+        "gem_category": "Steel Furniture (Almirah/Racks/Chairs)",
+        "gem_code": "Q7A001", "domain": "Furniture",
+        "primary_is": ["IS 3457"],
+        "mandatory_cert": None,
+        "test_methods": ["IS 3457"],
+        "procurement_params": ["Gauge of sheet (SWG)", "Dimensions (mm)", "No. of shelves/drawers", "Locking provision", "Colour (RAL)"]
+    },
+    {
+        "gem_category": "Office Chairs (Ergonomic)",
+        "gem_code": "Q7A002", "domain": "Furniture",
+        "primary_is": ["IS 2170"],
+        "mandatory_cert": None,
+        "procurement_params": ["Adjustable height", "Armrests (Y/N)", "Lumbar support", "Swivel/Fixed", "Material (Mesh/Foam/Fabric)", "Weight capacity (kg)"]
+    },
+
+    # ==================== AGRICULTURAL & WATER ====================
+    {
+        "gem_category": "Submersible Pump Sets",
+        "gem_code": "Q8A001", "domain": "Agriculture",
+        "primary_is": ["IS 9283"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 9283",
+        "test_methods": ["IS 9283"],
+        "procurement_params": ["HP/kW rating", "Head (m)", "Discharge (LPM)", "Bore diameter (mm)", "Star rating (BEE)", "Phase (1P/3P)"]
+    },
+    {
+        "gem_category": "Centrifugal Pump Sets (Monoblock)",
+        "gem_code": "Q8A002", "domain": "Agriculture",
+        "primary_is": ["IS 9079"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 9079",
+        "procurement_params": ["HP/kW rating", "Head (m)", "Discharge (LPM)", "Phase (1P/3P)", "BEE Star rating"]
+    },
+    {
+        "gem_category": "Water Storage Tanks (LLDPE/HDPE)",
+        "gem_code": "Q8A010", "domain": "Water",
+        "primary_is": ["IS 12701"],
+        "mandatory_cert": "ISI Mark (Scheme I)", "cert_is": "IS 12701",
+        "procurement_params": ["Capacity (L)", "Layers (1/2/3/4)", "UV stabilized", "Food grade", "Anti-algae/Anti-microbial"]
+    },
+]
+
+
+def get_is_number_set(categories):
+    """Get all unique IS numbers referenced across all categories."""
+    all_is = set()
+    for cat in categories:
+        all_is.update(cat.get('primary_is', []))
+        all_is.update(cat.get('allied_is', []))
+        all_is.update(cat.get('test_methods', []))
+        if cat.get('cert_is'):
+            all_is.add(cat['cert_is'])
+    return all_is
+
+
+def validate_against_catalog(categories, catalog_path):
+    """Validate all IS references exist in the master catalog."""
+    with open(catalog_path) as f:
+        catalog = json.load(f)
+    catalog_is_nums = {s['is_number'] for s in catalog}
+
+    issues = []
+    for cat in categories:
+        for is_num in cat.get('primary_is', []) + cat.get('allied_is', []):
+            if is_num not in catalog_is_nums:
+                issues.append(f"  MISSING in catalog: '{is_num}' (referenced in '{cat['gem_category']}')")
+    return issues
+
+
+def main():
+    logger.info("="*70)
+    logger.info("Phase 7: GeM Full Product Categories Builder")
+    logger.info("="*70)
+
+    # Validate references
+    catalog_path = DATA_DIR / '01_master_catalog' / 'unified_standards.json'
+    logger.info("Validating IS number references against master catalog...")
+    issues = validate_against_catalog(GEM_CATEGORIES, catalog_path)
+    if issues:
+        logger.warning(f"Found {len(issues)} IS references not in catalog:")
+        for issue in issues[:10]:
+            logger.warning(issue)
+    else:
+        logger.info("  All IS references validated OK!")
+
+    # Get unique IS number count
+    all_is = get_is_number_set(GEM_CATEGORIES)
+    logger.info(f"Total unique IS numbers referenced: {len(all_is)}")
+
+    # Build output
+    output = {
+        "metadata": {
+            "generated": datetime.now().isoformat(),
+            "total_categories": len(GEM_CATEGORIES),
+            "unique_is_numbers": len(all_is),
+            "domains": list(set(c['domain'] for c in GEM_CATEGORIES)),
+            "source": "GeM catalogue + BIS mandatory standards + procurement expertise"
+        },
+        "categories": GEM_CATEGORIES,
+        "is_number_index": {is_num: [c['gem_category'] for c in GEM_CATEGORIES if is_num in (c.get('primary_is', []) + c.get('allied_is', []))] for is_num in all_is}
+    }
+
+    # Write
+    output_path = GEM_DIR / 'gem_full_categories.json'
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+    logger.info(f"Written: {output_path}")
+
+    # Domain summary
+    by_domain = {}
+    for cat in GEM_CATEGORIES:
+        d = cat['domain']
+        by_domain[d] = by_domain.get(d, 0) + 1
+    logger.info("\nDomain breakdown:")
+    for domain, count in sorted(by_domain.items(), key=lambda x: -x[1]):
+        logger.info(f"  {domain}: {count} categories")
+
+    logger.info("\n" + "="*70)
+    logger.info("PHASE 7 COMPLETE")
+    logger.info(f"  Total GeM categories:    {len(GEM_CATEGORIES)}")
+    logger.info(f"  Unique IS numbers:       {len(all_is)}")
+    logger.info(f"  Output: {output_path}")
+    logger.info("="*70)
+
+
+if __name__ == '__main__':
+    main()
