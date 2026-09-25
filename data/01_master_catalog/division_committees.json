@@ -1,17 +1,66 @@
 {
-  "TXD": 949,
-  "FAD": 521,
-  "GEN": 13972,
-  "MED": 338,
-  "ETD": 1013,
-  "MTD": 1271,
-  "CHD": 1482,
-  "CED": 1047,
-  "PGD": 242,
-  "LITD": 460,
-  "MHD": 191,
-  "TED": 455,
-  "MSD": 36,
-  "SSD": 12,
-  "AYD": 3
+  "CED": {
+    "division_name": "Civil Engineering Division",
+    "description": "Standardization in the field of civil engineering including building materials, structural design, earthquake engineering, soil mechanics, water supply, sewage and sanitary installations, highways and bridges."
+  },
+  "ETD": {
+    "division_name": "Electrotechnical Division",
+    "description": "Standardization in the field of electrical power generation, transmission, distribution, wiring, power transformers, switchgears, cables, insulators, energy meters, and electrical appliances."
+  },
+  "MED": {
+    "division_name": "Mechanical Engineering Division",
+    "description": "Standardization in mechanical engineering equipment, boilers, pressure vessels, pumps, compressors, refrigeration, air conditioning, cranes, elevators, machine tools, and manufacturing processes."
+  },
+  "LITD": {
+    "division_name": "Electronics and Information Technology Division",
+    "description": "Standardization in electronics, semiconductor devices, audio/video equipment, IT hardware, telecom equipment, software, cybersecurity, cloud computing, and smart cards."
+  },
+  "CHD": {
+    "division_name": "Chemical Division",
+    "description": "Standardization in industrial chemicals, acids, alkalis, paints, varnishes, dyes, detergents, adhesives, rubber, plastics, polymers, and fertilizers."
+  },
+  "MTD": {
+    "division_name": "Metallurgical Engineering Division",
+    "description": "Standardization in ferrous and non-ferrous metals, steel products, TMT bars, structural steel, alloy steels, castings, forgings, heat treatment, and mechanical test methods."
+  },
+  "TXD": {
+    "division_name": "Textile Division",
+    "description": "Standardization in natural and synthetic fibers, yarns, fabrics, garments, technical textiles, geo-textiles, protective clothing, ropes, and footwear."
+  },
+  "FAD": {
+    "division_name": "Food and Agriculture Division",
+    "description": "Standardization in agricultural machinery, seeds, fertilizers, dairy products, processed foods, beverages, drinking water, spices, food safety, and pesticides."
+  },
+  "PGD": {
+    "division_name": "Production and General Engineering Division",
+    "description": "Standardization in fasteners (bolts, nuts, screws), metrology, dimensional engineering, limits and fits, bearings, gears, hand tools, drawing standards, and basic engineering standards."
+  },
+  "TED": {
+    "division_name": "Transport Engineering Division",
+    "description": "Standardization in automotive engineering, passenger vehicles, commercial vehicles, helmets, automotive safety glass, tyres, brakes, railways, aircraft, and shipbuilding."
+  },
+  "MHD": {
+    "division_name": "Medical Equipment and Hospital Planning Division",
+    "description": "Standardization in medical devices, surgical instruments, hospital equipment, implants, diagnostic devices, protective gloves, masks, and hospital infrastructure."
+  },
+  "MSD": {
+    "division_name": "Management and Systems Division",
+    "description": "Standardization in quality management (ISO 9001), environmental management (ISO 14001), occupational health & safety (ISO 45001), information security (ISO 27001), and conformity assessment."
+  },
+  "PCD": {
+    "division_name": "Petroleum, Coal and Related Products Division",
+    "description": "Standardization in petroleum fuels, lubricants, natural gas, coal, coke, petrochemical products, bitumen, and related products."
+  },
+  "AYD": {
+    "division_name": "Ayush Division",
+    "description": "Standardization in Ayurveda, Siddha, Unani, Yoga, Naturopathy, Homeopathy, and medicinal plant raw materials."
+  },
+  "EED": {
+    "division_name": "Environment and Ecology Division",
+    "description": "Standardization in environmental protection, environmental monitoring, pollution control, solid waste management, water quality, and biodiversity."
+  },
+  "SSD": {
+    "division_name": "Services Sector Division",
+    "description": "Standardization in services including banking, financial services, education, tourism, hospitality, logistics, and legal services."
+  }
 }

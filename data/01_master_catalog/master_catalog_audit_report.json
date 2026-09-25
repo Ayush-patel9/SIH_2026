@@ -1,0 +1,154 @@
+{
+  "audit_1_total_volume": {
+    "metric": "Total Indian Standards Ingested",
+    "value": 21992,
+    "benchmark": "20,000+ Standards",
+    "passed": true,
+    "status": "PASS"
+  },
+  "audit_2_key_completeness": {
+    "metric": "Standard Number and Title Non-Null Completeness",
+    "missing_is_numbers": 0,
+    "missing_titles": 0,
+    "completeness_pct": 100.0,
+    "passed": true,
+    "status": "PASS"
+  },
+  "audit_3_chronological_validity": {
+    "metric": "Publication Year Validity (1947 - 2026)",
+    "invalid_year_count": 0,
+    "sample_invalid": [],
+    "passed": true,
+    "status": "PASS"
+  },
+  "audit_4_division_coverage": {
+    "metric": "16 Technical Division Councils Distribution",
+    "divisions_covered": 17,
+    "division_distribution": {
+      "TXD": 1152,
+      "FAD": 573,
+      "LITD": 4796,
+      "GEN": 7375,
+      "MED": 675,
+      "ETD": 1100,
+      "PGD": 554,
+      "MTD": 1278,
+      "CHD": 1497,
+      "CED": 1292,
+      "MHD": 337,
+      "TED": 913,
+      "MSD": 130,
+      "PCD": 64,
+      "EED": 232,
+      "SSD": 21,
+      "AYD": 3
+    },
+    "passed": true,
+    "status": "PASS"
+  },
+  "audit_5_qco_statutory_coverage": {
+    "metric": "Mandatory QCO Standards Identified",
+    "total_mandatory_standards": 97,
+    "ministry_breakdown": {
+      "Ministry of Chemicals and Petrochemicals": 5,
+      "DPIIT": 58,
+      "Ministry of Power / DPIIT": 2,
+      "Ministry of Steel": 13,
+      "MeitY": 5,
+      "Department of Consumer Affairs": 4,
+      "Ministry of New and Renewable Energy (MNRE)": 1,
+      "Ministry of Electronics and Information Technology (MeitY) / MNRE": 3,
+      "Ministry of Chemicals and Petrochemicals (DCPC)": 2,
+      "Department for Promotion of Industry and Internal Trade (DPIIT)": 2,
+      "Ministry of Road Transport and Highways (MoRTH)": 2
+    },
+    "passed": true,
+    "status": "PASS"
+  },
+  "audit_6_international_harmonization": {
+    "metric": "International Equivalents (IS/ISO, IS/IEC)",
+    "total_harmonized_standards": 511,
+    "sample_harmonized": [
+      "IS 10316 -> ISO 1006",
+      "IS 10958 -> ISO 3447-1975",
+      "IS 10959 -> ISO 6927-1981",
+      "IS 11817 -> ISO 7727-1984",
+      "IS 13170 (PART 1) -> ISO 261"
+    ],
+    "passed": true,
+    "status": "PASS"
+  },
+  "audit_7_product_group_taxonomy": {
+    "metric": "38 Product Group Taxonomy Classification",
+    "groups_represented": 23,
+    "top_groups": {
+      "Metals, Alloys and Metal Products (including Steel Products)": 7612,
+      "Electronic and Telecom equipments, components and devices": 2801,
+      "Building Materials including Paints": 2091,
+      "Electrical Switchgear and Other Electrical Products/Accessories": 1237,
+      "Food, Food Products and food processing equipments": 1179,
+      "Gases, Gas Cylinders , Machine tools and other mechanical products": 1050,
+      "Coal and Petroleum products": 915,
+      "Chemicals, Plastics and their Products including packaging and Environment": 771,
+      "Transport and Related Products": 739,
+      "Textile, Textile Products and Machinery": 651
+    },
+    "passed": true,
+    "status": "PASS"
+  },
+  "audit_8_aspect_categorization": {
+    "metric": "Aspect Categorization (Specification, Test Methods, Codes)",
+    "aspect_breakdown": {
+      "Product Specification": 15638,
+      "Methods of tests": 2753,
+      "Code of Practice": 1437,
+      "Terminology": 659,
+      "Dimensions": 703,
+      "System Standard": 596,
+      "Service Specification": 72,
+      "Safety Standard": 134
+    },
+    "passed": true,
+    "status": "PASS"
+  },
+  "audit_9_special_publications": {
+    "metric": "Special Publications (SP) and Handbooks Indexed",
+    "special_pub_count": 73,
+    "sample_special_pubs": [
+      "IS 17377 (PART 1): Part 1 : 2020: Textiles — Nuclear Biological Chemi",
+      "SP 1: SP 1: Comparison of Indian and Overseas Standards ",
+      "SP 11: SP 11: Recommended SI Units for Textiles",
+      "SP 12: SP 12: Handbook for Gas Welders",
+      "SP 14: SP 14: Index to Steel Designations"
+    ],
+    "passed": true,
+    "status": "PASS"
+  },
+  "audit_10_rag_index_readiness": {
+    "metric": "Unified Record Schema Conformance",
+    "schema_keys": [
+      "is_number",
+      "standard_id",
+      "year_published",
+      "reaffirmation_year",
+      "edition",
+      "title",
+      "full_title",
+      "status",
+      "aspect",
+      "product_group",
+      "degree_of_equivalence",
+      "international_equivalents",
+      "technical_committee",
+      "ics_codes",
+      "amendments",
+      "regulatory_compliance",
+      "ia_identifier",
+      "fulltext_available",
+      "source_ia_url"
+    ],
+    "json_size_mb": 24.79,
+    "passed": true,
+    "status": "PASS"
+  }
+}
