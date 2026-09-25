@@ -1,0 +1,1974 @@
+•••••••••••••••• 
+
+
+
+^ is^ 
+
+
+
+
+
+T-^^^i^ 
+
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live' 
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New' 
+
+
+
+&^JfflA=»^j^^¥ffflAfe^lCO>.jrfa^ T ^S^=^ Ir t^^^P^^ 
+
+
+
+IS 15031 (2001) : Manipulating Industrial Robots - 
+Application Oriented Test - Spot Welding [PGD 18: 
+Industrial and Production Automation Systems and Robotics] 
+
+
+
+
+>^^lllfcJ^9>^^bv/ff^feial>^h:>^^Ts;>&^T^FS 
+
+
+
+5?aiU I l>ft=55S5&'>S*^ 
+
+
+
+^^:<xvvv^i^ 
+
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+
+BLANK PAGE 
+
+
+
+*Tsr- 
+
+
+
+
+
+^^ 
+
+
+
+iA*^*^ 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032 : 1994 
+
+
+
+/ncy/an Standard 
+
+MANIPULATING INDUSTRIAL ROBOTS 
+APPLICATION ORIENTED TEST — 
+SPOT WELDING 
+
+
+
+ICS 25.040.30 
+
+
+
+©BIS 2001 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+July 2001 Price Group 10 
+
+
+
+Industrial and Production Automation Systems and Robotics Sectional Committee, BP 18 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with ISO/TR 11032 : 1994 'Manipulating industrial robots — 
+Application oriented test — Spot welding' issued by the International Organization for Standardization 
+(ISO) was adopted by the Bureau of Indian Standards on the recommendations of Industrial and 
+Production Automation Systems and Robotics Sectional Committee (BP 18) and approval of the 
+Basic and Production Engineering Division Council. 
+
+This standard does not include the development of individual standards themselves but rather the 
+establishment of common frame work, in terms of a reference model to assist future standards 
+developments. 
+
+The text of the ISO Standard has been approved as suitable for publication as Indian Standard without 
+deviations. Certain conventions are however not identical to those used in Indian Standards. Attention 
+is particulariy drawn to the following: 
+
+a) Wherever the words Technical Report' appear referring to this standard, they should be read 
+as 'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker in the Internationa! Standard while in Indian 
+Standards, the current practice is to use a point (.) as the decimal marker. 
+
+In the adopted standard, reference appears to certain International Standards for which Indian 
+Standards also exist. The corresponding Indian Standards which are to be substituted in their place 
+are listed below along with their degree of equivalence for the editions indicated: 
+
+
+
+International Standards 
+
+
+
+Corresponding Indian 
+Standards 
+
+
+
+ISO 8373 : 1994 Manipulating IS 14662 : 
+industrial robots — Vocabulary Vocabulary 
+
+ISO 9283 : 1990 Manipulating 
+industrial robots — 
+Performance criteria and 
+related testing methods 
+
+ISO 9409-1 : 1988 Manipulating 
+industrial robots — Mechanical 
+interfaces — Part 1: circular 
+(Form A) 
+
+ISO 9787 : 1990 Manipulating IS 14663 
+industrial robots — Coordinate robotics ■ 
+systems and motions motions 
+
+
+
+1999 Industrial robots — 
+
+
+
+IS 14533 : 1998 Manipulating industrial 
+robots — Performance criteria and related 
+test method 
+
+IS 13547 (Part 1) : 1993 Manipulating 
+industrial robots — Mechanical interfaces: 
+Part 1 Circular (Form A) 
+
+
+
+1999 Manipulating industrial 
+Coordinate systems and 
+
+
+
+Degree of 
+Equivalence 
+
+Identical 
+
+
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+At present there is no Indian Standard on subject covered under ISO 5830. The technical committee 
+responsible for the preparation of this standard reviewed the provisions of the above mentioned ISO 
+standards and decided about the acceptables for use in conjunction with this standard. 
+
+
+
+For the purpose of deciding whether a particular requirement of this standard is complied with, the 
+final value, observed or calculated, expressing the result of a test, shall be rounded off in accordance 
+with IS 2 : 1960 'Rules for rounding ofif numerical values {revisedj'. The number of significant places 
+retained in the rounded off value should be the same as that of the specified value in this standard. 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032 : 1994 
+
+Indian Standard 
+
+MANIPULATING INDUSTRIAL ROBOTS — 
+
+APPLICATION ORIENTED TEST — 
+
+SPOT WELDING 
+
+1 Scope 
+
+This Technical Report uses spot welding motion sequences to represent typical spot welding applications. 
+Cycle time values are used as a measure of spot welding performance. A presentation format is provided 
+for consistent presentation of test results. 
+
+The term Spot welding used in this standard means Resistance spot welding (RPW) according to the 
+vocabulary accepted by the International Institute of welding (IIS). 
+
+2 Normative references 
+
+The following standards contain provisions which, through reference in this text, constitute provisions of this 
+International Standard. At the time of publication, the editions indicated were valid. All International 
+Standards are subject to revision, and parties to agreements based on this International Standard are 
+encouraged to investigate the possibility of applying the most recent editions of the standards listed below. 
+Members of lEC and ISO maintain registers of currently valid International Standards. 
+
+ISO 5830:1 984, Resistance spot welding - Male electrode caps 
+
+ISO 8373:1994, Manipulating industrial robots - Vocabulary 
+
+ISO 9283:1990, Manipulating industrial robots - Perfonnance criteria and related testing methods 
+
+ISO 9283 Amendment 1 : 1 991 , Manipulating industrial robots - Performance criteria and related testing 
+methods - AMENDMENT 1: Guide for selection of perfonnance criteria for typical applications 
+
+ISO 9409-1 : 1988, Manipulating industrial robots - Mechanical interfaces - 
+Part 1: Circular (form A) 
+
+ISO 9787: 1 990, Manipulating industrial robots - Coordinate systems and motions 
+
+3 Definitions 
+
+For the purpose of this Technical Report, the definitions given in tSO 8373 apply. 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+4 Description of appiication 
+
+Spot welding robots are used for joining sheet metal, for example in the car industry. Typical thicknesses of 
+the sheets are from 0,5 mm to 2,0 mm. 
+
+Spot welding is performed when the robot is not moving. The movements between spots are typically in the 
+range of 40 - 500 mm. Spots are often placed in groups and motions between these can demand major 
+reorientations of the welding gun. 
+
+Robots used for spot welding typically have a rated load between 50 and 150 kg. Robots with a lower rated 
+load can also be applied. 
+
+In order to reduce damages on robot and flanges, spot welding guns handled by robots are typically 
+equipped with an equalizing system, which takes care of variability in the robot performance, sheet metal 
+position and variations in electrode tip length. 
+
+The spot welding equipment typically consists of one of the following solutions: 
+
+a) Spot welding gun, mass: 30- 120 kg, mounted on a robot. 
+
+Transformer 35 - 200 kVA, mass: 50-100 kg, ceiling or wall mounted, or standing on the floor with 
+cables (kickless) connected to the spot welding gun. 
+
+b) Spot welding gun, mass: 30-120 kg, mounted on a robot. 
+
+Transformer 35 - 200 kVA, mass 50 - 200 kg, placed on the robot arm and connected to the welding 
+gun with an integrated media supply (current, water, air) or cables (kickless). 
+
+c) Spot welding gun with integrated transformer, mass: 50 - 1 50 kg, mounted on a robot. 
+Transformer 20 - 80 kVA. 
+
+Media supply (current, water, air) along the robot arm or hanging from above. 
+
+d) Poke welding gun with a single electrode, mass: 10-30 kg, mounted on a robot. The second electrode 
+provided is stationary . 
+
+e) Stationary spot welding gun. The spot welding gun is fixed and the robot is handling the object about 
+the gun. 
+
+The welding controller is installed remote or integrated in the robot controller. 
+
+Typical communication sequences for spot weldings are shown in Figure 1 . 
+
+Settings of welding parameters are for instance dependant upon the quality of cables between transformer 
+and the welding gun, sheet numbers and materials, the electrodes and the weld quality demands. 
+
+Special demands on the robot for spot welding applications are the ability to make quick movements 
+especially over short distances, to perfonn rapid reorientations, and have good performance in positioning 
+and controlling the welding gun. It is also important to have smooth motions in order to achieve a short cycle 
+time. 
+
+Robotic spot welding involves both static and dynamic forces that will affect the workplece and these forces 
+will have to be taken Into account when optimizing cycle times. 
+
+The media supply (current, water, air) to the welding gun (e.g kickless cable) creates dynamic forces that 
+the robot shall withstand. 
+
+
+
+IS 15031 :2001 
+ISO/TR 11032:1994 
+
+
+
+Gun Electrode 
+D i sp I acement 
+of Gun Stroke 
+
+
+
+Robot motion Rotx)t motion 
+
+
+
+Robot 
+Ve I oc i ty 
+
+
+
+
+b c 
+
+
+
+e f 9 h 
+
+
+
+Time 
+
+
+
+A + B + C = Robot motion and deceleration 
+
+B = Communication time 
+
+(Weld order from robot to welding timer, processing output signal to valve for closing gun) 
+
+C = Robot is decelerating into stop position and gun has started to close 
+
+F = Cooling time, often used for communication after Weld current clear 
+
+C + D +E + F = Time for activated valve (Squeeze, Weld Cun^ent and Cooling times) 
+
+F + G = Communication and robot delay time 
+
+G + H = Time for gun opening stroke 
+
+H + I = Robot acceleration and motion time 
+
+a = Event when robot gives weld order to welding timer 
+
+b = Event when valve for gun closing is activated 
+
+c = Event when robot stops 
+
+d = Event when the gun is closed and when the required electrode force is obtained 
+
+e = Event when the robot start to prepare next action 
+
+f = Event when command to valve "Open gun" is given 
+
+g = Event when robot motion is allowed to start (\A^en gun has opened enough). 
+
+The event of "g" may occur after "h". 
+
+h = Event when gun is open 
+
+
+
+Figure 1 - Communication sequence for spot welding 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032 : 1994 
+
+
+
+5 Description of test 
+
+The purpose of the tests in this report is to evaluate cycle time performance. The cycle time tests selected 
+include typical position sequences, see table 1 . 
+
+These tests complement the test performance criteria described in ISO 9283. Those tests applicable for 
+spot welding robots are summarized in ISO 9283 Amendment 1 as follows; 
+
+- Unidirectional pose accuracy 
+
+- Unidirectional pose repeatability 
+
+- Distance accuracy 
+
+- Distance repeatability 
+
+- Pose stabilization time 
+
+- Pose overshoot 
+
+- Drift of pose characteristics 
+
+- Minimum positioning time 
+
+- Static compliance 
+
+The user has to decide which of these tests, and also which of the tests described in this report, are valid for 
+a specific application. 
+
+The testing conditions as described in ISO 9283 (clauses 6.1 through 6.3) shall be applied. 
+
+A delay of 0.6 seconds shall be programmed to simulate welding time at each position. No robot motion is 
+allowed during the programmed delay. 
+
+
+
+Table 1 - Overview of tests 
+
+
+
+Test 
+
+
+Description 
+
+
+Test 1a (Test plate): 
+
+Measuring sequence 1:1 
+Measuring sequence 1:2 
+
+
+Large reorientations 
+Short motions 
+
+
+Test 1b (Test plate): 
+
+Measuring sequence 1:1 
+Measuring sequence 1 :2 
+
+
+As test la but for robots unable to reach all test 
+poses 
+
+
+Test 2 (Test beam): 
+
+Measuring sequence 2:1 
+
+
+Long distances between the test poses 
+
+
+
+IS 15031 :2001 
+ISO/TR 11032:1994 
+
+
+
+5.1 Test1 
+
+This test consists of two different measuring sequences. For details see 8.3. The first sequence 1:1 is an 
+application test showing large reorientations and the second sequence 1:2 is an application test showing 
+short nnotions. 
+
+S.l.ilestl.a 
+
+This test shall be performed with the test plate and the test tool described in 7.1 and 7.3 and in accordance 
+with the test procedure described in 8. 
+
+All the points shall be reached, othenA/ise test 1 .b shall be applied. 
+
+5.1.2 Test 1.b 
+
+Test 1.b is an alternative to test 1. a for those robots which are unable to reach all test poses. The test 
+plate shall be placed in the most optimized position and angle for the robot. 
+
+Measuring sequences as in Test l.a. 
+
+5.3 Test 2 
+
+Test 2 is an application test showing the performance of the robot when it is moving the test tool long 
+distances between the test poses. 
+
+This test consists of one sequence 2:1 . See 8.4. 
+
+This test shall be performed with the test beam and the test tool described in 7.2 and 7.3 and in accordance 
+with the test procedure described in 8. 
+
+6 Deviation in the test from a reai application 
+
+The deviations from real applications are: 
+
+- The spot welding gun is replaced by a specified test tool and a measurement equipment e.g. light sensor. 
+
+- The welding time is simulated by using a fixed programmed delay. 
+
+- The welding current is not applied during the test. 
+
+- Hoses etc for cooling water and air, cables for welding current and signals are not installed. This means 
+that reaction forces from such sources are not considered in the test. 
+
+- The case "d" (see clause 4) poke welding is not included in this test. 
+
+- The case "e" (see clause 4) with a stationary welding gun is not included in this test. 
+
+
+
+IS 15031:2001 
+ISO/TR 11032:1994 
+
+7 Specification of test apparatus 
+
+7.1 Test plate 
+
+The test plate, used for tests 1 .a and 1 .b, shall be made according to the drawings in Annex A. Figure 2 
+shows a view of the assembled test plate. 
+
+
+
+TARGET SUPPORT 
+TARGET FLANGE A 
+
+
+
+TARGET FLANGE B (one sheet) 
+
+
+
+OBSTACLE A OBSTACLE B 
+
+
+
+TARGET FLANGE A 
+
+
+
+
+Figure 2 - Test plate 
+
+
+
+The plate has flanges and obstacles mounted perpendicularly to the plate surface. The robot has to pass 
+the obstacles as described in 8.3. 
+
+Each pose on the flanges shall be provided with a hole 2,0 mm. 
+
+In test 1 .a, the sides of the test plate shall be parallel to the base coordinate system (x and y) of the robot. 
+See figure 3. 
+
+The plate centre shall be placed in xz-plane, I.e. the x- and z- coordinates of the plate centre are selectable. 
+The test plate centre shall be placed as close as possible to the centre of the cube defined in ISO 9283 
+such that all test points can be reached. 
+
+The coordinates of the plate centre shall be reported in the test results. 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+
+
+In test 1.b, the test plate can be placed and orientated for optimum robot operation. 
+
+The location coordinates of the test plate (plate centre, position w5 and w6) shall be reported in the test 
+results. 
+
+
+
+
+Figure 3 - Test plate and robot with test tool 
+
+
+
+IS 15031 :2001 
+ISO/TR 11032:1994 
+
+7.2 Test beam 
+
+The test beam, used for test 2, shall be made in accordance with the drawings in Annex B. 
+
+The test beam shall be mounted on the test plate according to Annex B during test 2. 
+
+The test beam shall be equipped with a flange mounted perpendicularly to the plate. 
+
+Each pose on the flange shall be provided with a hole 2,0 mm. 
+
+The test beam centre shall be placed in xz-plane, i.e. the x- and z- coordinates of the beam centre are 
+selectable. See figure 4. The test beam centre shall be placed as close as possible to the centre of the cube 
+defined in ISO 9283 such that all test points can be reached. 
+
+The coordinates of the test beam centre shall be reported in the test results. 
+
+
+
+
+Figure 4 - Test beam and robot with test tooi 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+
+
+7.3 Test tool 
+
+The test tool consists of a fixture which holds the test load and the light sensor shown in figure 5. 
+
+The light sensor is positioned to simulate the direction of the welding electrodes. 
+
+The entire mass of the test tool shall be either 30, 60, 80, 100 or 120 kg. The heaviest possible test load, 
+within the rated load of the robot, shall be used for the test. Figure 5 and table 2 describe the test tool with 
+load offset and tool centre point (TCP) offset. 
+
+The light beam characteristic of the light sensor shall be parallel. The light beam diameter at the receiver 
+shall not exceed 0,5 mm. Examples of light sensors are given in Annex I. 
+
+The arrow marked on the test tool in figure 5 corresponds to the orientation indicated on the test plate and 
+the test beam. See Annex C, D and E. 
+
+
+
+
+I pad 
+
+
+
+Figure 5 - Test tool 
+
+
+
+Table 2 - Test loads and offsets 
+
+
+
+Test loads 
+
+
+Offsets 
+
+
+Centre of gravity 
+
+
+Light beam 
+
+
+Axial 
+
+
+Radial 
+
+
+Axial 
+
+
+Radial 
+
+
+30,60.80,100.120 
+
+
+-340 
+
+
+- 100 
+
+
+340 
+
+
+320 
+
+
+
+IS 15031 -.2001 
+ISO/TR 11032: 1994 
+
+8 Description of measurement procedure 
+
+8.1 General principle 
+
+The general principle of the measurement is shown in figure 6. 
+
+When the robot reaches the programmed area the first signal which shall be recorded is "Attained pose" 
+coming from the robot controller. The next signal will be "Light beam inside hole" coming from the light 
+sensor. Any oscilation of the robot, bigger than the diameter of the hole, will be visible in the graph. 
+
+The end of the spot sequence is the combined signal of "Robot movement start" and "Light beam outside 
+hole". 
+
+The total time for activated stop signal shall be reported in the test results. The total time for activated stop 
+signal is the accumulated time between the signal "Attained pose" and "Robot movement start" for all 
+poses. 
+
+
+
+Robot 
+contro I I er 
+
+
+
+Light sensor 
+signal 
+
+
+
+Robot movem«r>t Bt«rl, 
+Attoinad posa 
+Outsld« hole 
+
+
+
+
+-F I g"fl ff 
+
+
+
+O 
+O 
+
+r 
+
+(0 
+
+L 
+
+> 
+
+O 
+
+
+
+Stabi I ization time 
+
+
+
+Figure 6 - Measurement principle 
+
+
+
+10 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+
+
+8.2 Time measuring 
+
+Program the robot until the light sensor output signal indicates an "In position condition" for at least 0,6 
+seconds continuously for each test pose. 
+
+8.3 Procedure for tests 1 .a and 1 .b 
+
+Orientation of the test tool during tests 1 .a and 1 .b is shown in Annex C and E. (Note the direction of the 
+arrows in each pose.) 
+
+The posed light beanfi shall be perpendicular (± 5°) to the flanges and inside the holes. 
+
+The test tool is in start position Pstart = w1 + (0, 0, 200) mm. 
+
+A start signal is given via l/O-signal to both the robot and the recording device. 
+
+Measuring sequence 1:1 (large reorientations): 
+Pstart 
+w1 
+
+Repeat w2, w3, w4 .... w 8 ; 3 times 
+w1 
+Pstart 
+
+Measuring sequence 1:2 (short motions): 
+Pstart 
+
+Repeat w2, w 9, w 10 .... w 20, 
+w2, w 20, w 19 .... w 9 ; 3 times 
+Pstart 
+
+A stop signal is given to the recording device by the robot via output signal after the robot has stopped in its 
+final programmed position, Pstart. 
+
+The test tool shall pass obstacle "A" in z-direction (up and over the obstacle) and pass obstacle "B" with a 
+movement in the xy-plane (around the obstacle at the w1 side). See Annex C. 
+
+8.4 Procedure for test 2 
+
+Orientation of the test tool uring test 2 is shown in Annex D. (Note the direction of the arrows in each pose.) 
+
+The posed light beam shall be perpendicular (± 5°) to the flange and inside the holes. 
+
+The test tool is in start position Pstart = w1 + (0, 0, 200) mm. 
+
+A start signal is given via l/O-signal to both the robot and recording device. 
+
+Measuring sequence ^:1 (long distances): 
+Pstart 
+
+Repeat wb1....wb 10; 3 times 
+Pstart 
+
+A stop signal is given by the robot via output signal to the recording device after the robot has stopped in its 
+final programmed position, Pstart. 
+
+
+
+11 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+9 Specification of adjustments of robot controller parameters for the application 
+
+9.1 Robot controller parameters 
+
+The robot controller parameter values shall be set to those recommended by the robot manufacturer for 
+spot welding. The procedure and settings shall be reported in the test results to allow repeating of the test. 
+
+The test report shall mention if the robot controller parameters are the same as in the basic test ISO 9283. 
+
+9.2 Program structure 
+
+Data to be reported is listed in clause 10, Presentation of results. 
+
+The structure of the test program, programmed constants and mode (pose-to-pose control or linear control) 
+Shalt be reported in the test results. 
+
+It shall be possible to execute the test program step-by-step. 
+
+Programming methods used and not described in the manual shall be explained in the test results. 
+
+
+
+12 
+
+
+
+IS 15031:2001 
+ISO/TR 11032:1994 
+
+
+
+10 Presentation of results 
+
+The test results shall be described as below; 
+
+ROBOT Control system 
+
+Manufacturer: 
+Type: 
+Model No: 
+
+Serial No: 
+
+Mounting orientation: 
+
+(eg floor, wall, ceiling) 
+
+Software version: 
+System parameters same as in basic test ISO 9283: Yes/No 
+Test tool mass: kg 
+
+Test location (site): 
+
+Type of test: Test with test tool according to 7.3 or test with test gun according to F2.2. 
+
+REMARK: Results from the two types of test shall not be compared since the test conditions are not 
+the same. 
+
+Physical environment 
+Ambient temperature: 
+Abnormal conditions: (Note) 
+
+
+
+13 
+
+
+
+IS 15031 :2001 
+ISO/TR 11032: 1994 
+
+Test 1 .a 
+
+
+
+- Cycle time, sequence 1:1: 
+
+
+s 
+
+
+- Cycle time, sequence 1:2; 
+
+
+s 
+
+
+- Location of test plate centre: 
+
+
+X mm 
+
+
+
+
+Z mm 
+
+
+- Total time for activated stop signal 
+
+
+s 
+
+
+- Programmed constants (variables, work frame, 
+tool center point, etc. 
+
+
+
+
+- Programming mode, eg manual, linear, explicit etc. 
+
+
+
+
+- Electrical connections and communication 
+
+
+
+
+- Program list (logic including positions) and explanation 
+of programming philosophy: 
+
+
+
+
+- System constants 
+
+
+
+
+- Videotape showing the measuring sequence 1:1 and 1:2 
+should be available. 
+
+
+
+
+- Description of the light sensor, time recording instrument 
+and signal types (if applied) 
+
+
+
+
+- Description of the simulated welding equipment, .ie. 
+transformer mass and position (if applied) 
+
+
+
+
+- Comments: 
+
+
+
+
+
+14 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+
+
+Testl.b 
+
+
+
+- Cycle time, sequence 1:1: 
+
+- Cycle time, sequence 1:2: 
+
+
+
+
+.... s 
+.... s 
+
+
+- Location of test plate centre: 
+
+
+X... 
+Y.... 
+
+
+mm 
+
+mm 
+
+
+
+
+Z .... 
+
+
+mm 
+
+
+Position w5 
+
+
+X.... 
+
+
+mm 
+
+
+
+
+Y.... 
+
+
+mm 
+
+
+
+
+Z... 
+
+
+mm 
+
+
+Postion w6 
+
+
+X.... 
+
+
+mm 
+
+
+
+
+Y.... 
+
+
+mm 
+
+
+
+
+Z... 
+
+
+..... mm 
+
+
+- Position number(s) not possible to reach: 
+
+
+
+
+.... 
+
+
+- Total time for activated stop signal 
+
+
+
+
+.... s 
+
+
+- Programmed constants (variables, work frame, 
+tool center point, etc. 
+
+
+
+
+
+
+- Programming mode, eg manual, linear, explicit etc. 
+
+
+
+
+
+
+- Electrical connections and communication 
+
+
+
+
+
+
+' Program list (logic including positions and explanation of 
+programming philosophy: 
+
+
+
+
+
+
+- System constants 
+
+
+
+
+
+
+- Videotape showing the measuring sequence 1:1 and 1:2 
+should be available: 
+
+
+
+
+
+
+- Description of the light sensor, time recording instrurtient 
+and signal types (if applied) 
+
+
+
+
+
+
+' Description of the simulated welding equipment, i.e. 
+transformer mass and position (if applied) 
+
+
+
+
+
+
+- Comments: 
+
+
+
+
+
+
+
+15 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+
+
+Test 2 
+
+
+
+Cycle time, sequence 2:1: 
+Location of test beam centre: 
+
+
+
+- Total time for activated stop signal 
+
+- Programmed constants (variables, work frame, 
+tool center point, etc. 
+
+- Programming mode, e.g. manual, linear, explicit etc 
+
+- Electrical connections and communication 
+
+- Program list (logic including positions) and explanation 
+of programming philosophy: 
+
+- System constants 
+
+- Videotape showing the measuring sequence should be 
+available: 
+
+- Description of the light sensor, time recording instrument 
+and signal types (if applied) 
+
+- Description of the simulated welding equipment, i.e. 
+transformer mass and position (if applied) 
+
+- Comments: 
+
+
+
+s 
+
+X mm 
+
+Z mm 
+
+s 
+
+
+
+11 Other comments 
+
+
+
+16 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+
+
+ANNEX A - TEST PLATE DRAWINGS 
+(Informative) 
+
+
+
+3t 
+
+
+
+E' 
+
+
+
+E 
+
+
+
+
+
+
+
+ovv 
+
+
+
+sz 
+
+
+
+og 
+
+
+
+
+osz 
+
+
+
+17 
+
+
+
+IS 15031:2001 
+ISO/TR 11032:1994 
+
+
+
+ANNEX A - TEST PLATE DRAWINGS 
+(Informative) 
+
+
+
+
+
+SI 
+
+
+Si 
+
+
+
+
+■ 2 
+
+
+
+
+
+
+
+
+- 
+
+
+■ 2 
+
+
+
+
+m 
+
+UJ 
+
+
+
+
+sz 
+
+
+Si 
+
+
+ct 
+
+
+
+
+
+
+
+
+Ul 
+
+u 
+
+< 
+
+1— 
+
+
+
+
+
+
+8 
+
+
+
+
+at 
+
+
+
+
+
+
+S 
+
+
+
+
+
+
+
+
+s 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ov 
+
+
+
+' Oi 
+
+oz 
+
+
+•-OS i 
+1 
+
+
+0£ 
+
+
+1- 
+t 1 
+
+« s 
+
+— •■ oc 
+
+
+f 
+
+
+■« If*— 
+
+
+f 
+
+
+S ^ 
+
+
+— 
+
+
+
+
+18 
+
+
+
+IS 1S031 : 2001 
+ISO/TR 11032:1994 
+
+
+
+ANNEX B - TEST BEAM DRAWINGS 
+(Informative) 
+
+
+
+
+19 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+
+
+ANNEX C - TEST POSES FOR TEST 1 
+(Informative) 
+
+
+
+
+20 
+
+
+
+IS 15031:2001 
+ISO/TR 11032:1994 
+
+
+
+ANNEX D - TEST POSES FOR TEST 2 
+(Informative) 
+
+
+
+
+21 
+
+
+
+iS 15031 :2001 
+ISO/TR 11032:1994 
+
+
+
+ANNEX E - ORIENTATION OF THE TEST TOOL 
+(Informative) 
+
+
+
+PLATE CENTRE 
+
+
+
+yOV^ 
+
+
+-^^.^ 
+
+
+f 4 /C^ 
+
+
+.o^••«=»^o7^^^^// 
+
+
+^x^ 
+
+
+
+22 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+ANNEX F 
+(Informative) 
+
+Spot welding test using a welding gun as an alternative to the light sensor 
+equipment 
+
+Introduction 
+
+This informative Annex of ISO/TR 1 1032 provides a method to extend the basic test procedure to more 
+closely represent a typical spot welding application. 
+
+In general this test differs from the normative test as follows: 
+
+The test includes the ability of the robot to control opening and closing of the welding gun. 
+
+Reaction forces from the robot and the contact with the work piece that may affect the robot are 
+included. 
+
+The test includes spot welding conditions when programming. 
+
+The test does not allow as detailed evaluation of the test results as the test procedure in the normative 
+part. 
+
+To perform this alternative test most of the test procedures described in the normative part will be the same. 
+
+Listed below are the modified test procedures to perform this alternative test and the corresponding clause 
+numbers in the normative part. 
+
+F.I Deviation in the test from a real application (6) 
+
+- The spot welding time is simulated by using a Rxed time for pressure valve activation. 
+
+- The welding gun including equalizing system Is specially designed for this test (if not using a standard 
+spot welding gun). 
+
+F.2 Specification of test apparatus (7) 
+
+F.2.1 Test plate and test beam (7.1-7.2) 
+
+The poses on the flanges shall be marked out with a circle, target diameter 4 mm larger than the diameter 
+of electrode tip, instead of the hole. 
+
+The flanges shall be exchangeable and shall be exchanged between each measuring sequence. 
+
+Force limitation is defined in clause F.3.1. 
+
+
+
+23 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032:1994 
+
+F.2.2 Test gun (7.3) 
+
+A standard spot welding gun or a specially designed test gun shall be used for this test. 
+
+For the specially designed test gun there shall be five different masses (30, 60, 80, 100 or 120 kg) based on 
+the same body design. The heaviest gun, within the rated load of the robot, shall be used for this test. 
+Annex G describes the three test guns with load offset and TCP offset. 
+
+The test gun may be mounted to the robot with an adapter plate when required. The use of adapter plate 
+shall be reported in the test results. 
+
+The arrow marked on the welding gun drawings corresponds to the orientation indicated on the test plate 
+and the test beam. Annex H. 
+
+The gun closing time and the time to obtain the specified electrode force shall be 0,30 ± 0,05 seconds. 
+
+The gun opening time shall be 0,20 ± 0,05 seconds. 
+
+The gun opening gap shall be 50 mm. 
+
+The electrode force shall be 2,0 kN. 
+
+These closing and opening times for a single stroke shall be checked and calibrated before each test. If 
+these time specifications cannot be achieved, the influence from the closing and opening times shall be 
+reported in the test results. 
+
+
+
+d i sp I acement 
+
+
+
+
+
+Glti closed 
+
+
+\ 
+
+
+
+
+/ 
+
+
+
+
+
+
+C+D 
+
+
+E+F 
+
+
+G+H 
+
+
+Time 
+
+
+
+C+D = Time for gun to close and to obtain the specified electrode force (0.30 ± 0.05 seconds) 
+
+C+D+E+F = Minimum time for activated valve 0.60 seconds (to be reported in the test results) 
+G+H = Time for gun to open (0.20 ± 0.05 seconds) 
+
+Figure F.1 - Gun electrode displacements motion 
+
+
+
+24 
+
+
+
+IS 15031 : 2001 
+ISOyTR 11032:1994 
+
+
+
+F.3 Description of measurement procedure (8) 
+
+F.3.1 Force limitation (8.1) 
+
+The maximum permitted force between the robot and the target flanges is 1 50 N for forces parallel to the 
+plate plane. 
+
+The maximum permitted displacement of the plate is ± 1 ,0 mm parallel to the plate plane. 
+
+No electrode tip marks are allowed outside the marked circles. 
+
+F.3.2 Time measuring (8.2) 
+
+A time measuring device trigged by an electrical signal shall be used. 
+
+F.3.3 Procedure for tests 1.a and 1.b (8.3) 
+
+The orientation of the test gun during test 1 .a and 1 .b shall be the same as shown in Annex C and E in the 
+normative part. Note the direction of the arrows in each pose. 
+
+The closed electrode tips shall be perpendicular (± 5° ) to the flanges and inside the marked circles. 
+
+A start signal is given via l/O-signal to both the robot and the timing device. 
+
+A stop signal is given to the timing device by the robot via output signal after the robot has stopped in its 
+final programmed position Pstart. 
+
+F.3.4 Procedure for test 2 (8.4) 
+
+The orientation of the test gun during test 2 shall be the same as shown in Annex D in the normative part. 
+Note the direction of the arrows in each pose. 
+
+The closed electrode tips shall be perpendicular (± 5° ) to the flanges and inside the marked circles. 
+
+A start signal is given via l/O-signal to both the robot and the timing device. 
+
+A stop signal is given to the timing device by the robot via output signal after the robot has stopped in its 
+final programmed position Pstart. 
+
+F.4 Presentation of results (10) 
+
+The same format as in the normative part shall be used for presentation of the test results and extended 
+with the time for activated valve per spot (C + D + E + F in figure F.1). 
+
+
+
+25 
+
+
+
+IS 15031 :2001 
+ISO/TR 11032 : 1994 
+
+
+
+ANNEX G - TYPICAL TEST GUN DIMENSIONS 
+(Informative) 
+
+
+
+oo 
+otoo 
+o<t-— 
+— L 
+
+CO) 
+
+
+
+3>ioaiS os*3aoa ooi 
+
+
+
+
+26 
+
+
+
+IS 15031 :2001 
+ISO/TR 11032:1994 
+
+
+
+ANNEX H - ORIENTATION OF THE TEST GUN 
+(Informative) 
+
+
+
+
+27 
+
+
+
+IS 15031 : 2001 
+ISO/TR 11032: 1994 
+
+
+
+ANNEX I - LIGHT SENSORS 
+(Informative) 
+
+
+
+Example of light sensors 
+
+
+Sensor manufacturers 
+
+
+Addresses 
+
+
+Laser-Lichtschranke 
+LLS 0500 
+
+
+Laser Components GmbH 
+
+
+Am Weidegrund 10 
+
+Postfach 265 
+
+8038 Grobenzell/MQ 
+
+GERMANY 
+
+PHONE (0 81 42) 50 02-0 
+
+FAX (0 81 42) 90 97 
+
+
+Einweg-Lichtschranke LS 66 
+
+
+Leuze electronic GmbH + Co 
+
+
+Postfach 1111 
+
+D-7311 Owen-Teck 
+
+GERMANY 
+
+PHONE (0 70 21) 57 30 
+
+
+Laser-Einweglichtschranke 
+
+
+Wengior sensoric GmbH 
+
+
+Narzissenstrassen 3 
+
+W-7992 Tettnang 
+
+GERMANY 
+
+PHONE (0 75 42) 53 99-0 
+
+FAX (0 75 42) 53 99 88 
+
+
+
+
+
+
+
+
+
+REMARK: This list may be extended if additional light sensors will be known. 
+
+
+
+28 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods 
+and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any 
+form without the prior permission in writing of BIS. This does not preclude the free use, in the course 
+of implementing the standard, of necessary details, such as symbols and sizes, type or grade 
+designations. Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are 
+also reviewed periodically; a standard along with amendments is reaffirmed when such review indi- 
+cates that no changes are needed; if the review indicates that changes are needed, it is taken up for 
+revision. Users of Indian Standards should ascertain that they are in possession of the latest amend- 
+ments or edition by referring to the latest issue of 'BIS Catalogue' and 'Standards: Monthly Additions'. 
+
+This Indian Standard has been developed from Doc : No. BP 18 ( 0055 ). 
+
+
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters : 
+
+
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110 002 
+Telephones : 323 01 31 , 323 33 75, 323 94 02 
+
+Regional Offices : 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEWDELHM10 002 
+
+Eastern : 1/14 C.I.T. Scheme VII M, V. I. P. Road, Kankurgachi 
+KOLKATA 700 054 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160 022 
+Southern : C.I.T. Campus, IV Cross Road, CHENNAI 600 113 
+
+
+
+Telegrams : Manaksanstha 
+(Common to all offices) 
+
+Telephone 
+
+r 323 76 17 
+I 323 38 41 
+
+r337 84 99, 337 85 61 
+\337 86 26, 337 91 20 
+
+
+
+{ 
+
+
+
+60 38 43 
+60 20 25 
+
+
+
+Western 
+
+
+
+Branches 
+
+
+
+Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400 093 
+
+
+
+J 254 12 16,254 14 42 
+\254 25 19, 254 13 15 
+
+/ 832 92 95, 832 78 58 
+\832 78 91,832 78 92 
+
+
+
+AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. 
+FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. 
+LUCKNOW. NAGPUR. NALAGARH. PATNA. PUNE. RAJKOTTHIRUVANANTHAPURAM. 
+
+
+
+Printed at Prabhat Offset Press, New Delhi-2 
+
+
+

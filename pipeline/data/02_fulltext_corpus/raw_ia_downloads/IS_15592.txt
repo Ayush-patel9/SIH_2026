@@ -1,0 +1,8679 @@
+**************** 
+
+
+
+*■ *Z**K 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+Jawaharlal Nehru 
+Step Out From the Old to the New 
+
+
+
+m»>!5sss^^w: 
+
+
+
+
+,_A» 
+
+
+
+
+**************** 
+
+
+
+BLANK PAGE 
+
+
+
+<_<ii££ 
+
+
+
+
+
+UJ> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+Indian Standard 
+
+MECHANICAL VIBRATION — ROAD SURFACE 
+PROFILES — REPORTING OF MEASURED DATA 
+
+
+
+ICS 17.160; 93.080.10 
+
+
+
+© BIS 2005 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+July 2005 Price Group 11 
+
+
+
+Mechanical Vibration and Shock Sectional Committee, ME 28 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with ISO 8608 : 1995 'Mechanical vibration — Road surface 
+profiles — Reporting of measured data' issued by the International Organization for Standardization (ISO) 
+was adopted by the Bureau of Indian Standards on the recommendations of the Mechanical Vibration and 
+Shock Sectional Committee and approval of the Mechanical Engineering Division Council. 
+
+The text of ISO Standard has been approved as suitable for publication as an Indian Standard without 
+deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention 
+is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should 
+be read as 'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker while in Indian Standards, the current 
+practice is to use a point (.) as the decimal marker. 
+
+In this adopted standard, reference appears to the following International Standard for which Indian 
+Standard also exists. The corresponding Indian Standard which is to be substituted in its place is listed 
+below along with its degree of equivalence for the edition indicated: 
+
+International Standard Corresponding Indian Standard Degree of Equivalence 
+
+ISO2041 : 1990 Vibration and shock IS 1 1 71 7 : 1 999 Vocabulary on vibration Identical 
+
+— Vocabulary and shock 
+
+The concerned Technical Committee has reviewed the provisions of the following International Standard 
+referred in this adopted standard and has decided that the same is acceptable for use in conjunction with 
+this standard: 
+
+IEC 1260 1) Electroacoustics — Octave-band and fractional-octave-band filters 
+
+For the purpose of deciding whether a particular requirement of this standard is complied with, the final 
+value, observed or calculated, expressing the result of a test or analysis, shall be rounded off in 
+accordance with IS 2 : 1960 'Rules for rounding off numerical value {revised)'. The number of significant 
+places retained in the rounded off value should be the same as that of the specified value in this standard. 
+
+
+
+" To be published (Revision of IEC 225 : 1966). 
+
+
+
+IS 15592 : 2005 
+ISO 860S : 1995 
+
+
+
+Indian Standard 
+
+MECHANICAL VIBRATION — ROAD SURFACE 
+PROFILES — REPORTING OF MEASURED DATA 
+
+
+
+1 Scope 
+
+This International Standard specifies a uniform 
+method of reporting measured vertical road profile 
+data for either one-track or multiple-track measure- 
+ments. 
+
+It applies to the reporting of measured vertical profile 
+data taken on roads, streets and highways, and on 
+off-road terrain. It does not apply to rail-track data. 
+Measurement and processing equipment and meth- 
+ods are not included. 
+
+
+
+2 Normative references 
+
+The following standards contain provisions which, 
+through reference in this text, constitute provisions 
+of this International Standard. At the time of publi- 
+cation, the' editions indicated were valid. All standards 
+are subject to revision, and parties to agreements 
+based on this International Standard are encouraged 
+to investigate the possibility of applying the most re- 
+cent editions of the standards indicated below. 
+Members of IEC and ISO maintain registers of cur- 
+rently valid International Standards. 
+
+ISO 2041:1990, Vibration and shock — Vocabulary. 
+
+IEC 1260: — ", Electroacoustics — Octave-band and 
+fractional-octave-band filters. 
+
+
+
+3 Definitions 
+
+For the purposes of this International Standard, the 
+definitions given in ISO 2041 and the following defi- 
+nitions apply. 
+
+
+
+3.1 spatial frequency: Reciprocal of the wave- 
+length. It is expressed in cycles per metre. 
+
+3.2 Power Spectral Density (PSD): The limiting 
+mean-square value of a signal per unit frequency 
+bandwidth. For a one-sided spectrum, the area lo- 
+cated between the graphic plot and the horizontal axis 
+in a linear plot should be equal to the variance (a 2 ) of 
+the original signal for the evaluated frequency range. 
+This leads to a doubling of the spectral amplitude 
+when the calculation process is only estimating the 
+spectrum for positive frequencies. 
+
+3.3 displacement PSD: PSD of the vertical road 
+profile displacement. 
+
+3.4 velocity PSD: PSD of the rate of change of the 
+vertical road profile displacement per unit distance 
+travelled (slope of the vertical road profile). 
+
+3.5 acceleration PSD: PSD of the rate of change of 
+the slope of the vertical road profile per unit distance 
+travelled. 
+
+3.6 decolouring: Procedure to eliminate the influ- 
+ence of the transfer function of the measuring system 
+on the PSD, i.e. the raw PSD should be decoloured 
+before any further processing by dividing it by the 
+square of the modulus of the measuring equipment 
+transfer function. 
+
+3.7 smoothing: An averaging process in which a 
+data block is shifted and averaged. 
+
+NOTE 1 In this International Standard "unsmoothed 
+PSD" means the PSD as calculated from the measured 
+data, i.e. with the bandwidths used in or following from the 
+calculations and which are different from those indicated in 
+table 2. The term "smoothed PSD" is the PSD which is ob- 
+tained after using the averaging process described in 5.1.2. 
+
+
+
+1) To be published. (Revision of IEC 225:1966) 
+
+
+
+IS 1 5592 : 2005 
+ISO 8608 : 1995 
+
+
+
+4 Symbols 
+
+See table 1 . 
+
+
+
+5.1.1.2 
+
+G.(.) 
+
+
+
+Second method — Acceleration PSD: 
+
+
+
+Table 1 — Symbols 
+
+
+
+Symbol 
+
+
+Description 
+
+
+Unit 
+
+
+B e 
+
+
+Frequency resolution 
+
+
+cycles/m 
+
+
+f 
+
+
+Time frequency 
+
+
+Hz 
+
+
+c d (.) 
+
+
+Displacement PSD 
+
+
+m 3 
+
+
+G„(.) 
+
+
+Velocity PSD 
+
+
+m 
+
+
+G a (.) 
+
+
+Acceleration PSD 
+
+
+rrT 1 
+
+
+G, (.) 
+
+
+PSD of track 1 
+
+
+— 
+
+
+G 2 {.) 
+
+
+PSD of track 2 
+
+
+— 
+
+
+C 12 (■) 
+
+
+Cross spectrum between tracks 1 
+and 2 
+
+
+~ 
+
+
+1 
+
+
+Wheelbase 
+
+
+m 
+
+
+n 
+
+
+Spatial frequency 
+
+
+cycles/m 
+
+
+s 
+
+
+Track width 
+
+
+m 
+
+
+t 
+
+
+Time 
+
+
+s 
+
+
+V 
+
+
+Vehicle speed 
+
+
+m/s 
+
+
+2 
+
+
+Coherence function 
+
+
+— 
+
+
+A 
+
+
+Wavelength 
+
+
+m 
+
+
+CO 
+
+
+Angular frequency (= 2k/) 
+
+
+rad/s 
+
+
+a 
+
+
+Angular spatial frequency (= 2%n) 
+
+
+rad/m 
+
+
+NOTE — 
+
+
+The indication (.) means that the par 
+
+
+ameter of 
+
+
+the func 
+
+
+tion can be spatial frequency («) c 
+
+
+r angular 
+
+
+spatial fn 
+
+
+squency [ii). 
+
+
+
+
+
+5 Uniform method of reporting 
+
+
+
+5.1 One-track data 
+
+
+
+5.1.1 Description of the road profile 
+
+The road profile shall be described by one or both of 
+the following two methods,' with preference for the 
+first, the displacement PSD. 
+
+The reporting of the non-smoothed data is always re- 
+quired. 
+
+5.1.1.1 First method — Displacement PSD: G d (.) 
+
+The road profile shall be described by the PSD of its 
+vertical displacement. The report shall include the 
+displacement PSD versus spatial frequency, both on 
+logarithmic axes. The dimensions are metres cubed 
+versus reciprocal metres. 
+
+Two scales shall be given on the ordinate, one for 
+G 6 (n) and one for G 6 (fi). Both n and 13 scales shall 
+be indicated in the abscissa. The grid, however, shall 
+only be drawn for G d (n) and n. 
+
+
+
+The acceleration PSD is an allowed alternative method 
+of reporting data. 
+
+In this case, the road profile shall be described as the 
+PSD of its acceleration in terms of the rate of change 
+of the slope of the road surface per unit distance 
+travelled. The dimension of the PSD shall be in re- 
+ciprocal metres. 
+
+The scales shall be logarithmic on both axes. Two 
+scales shall be given on the ordinate, one for G a («) 
+and one for G a (fl). On the abscissa both n and Q shall 
+be indicated. The grid, however, shall only be drawn 
+for G a («) and n. 
+
+The relationship between the two reporting methods 
+is given by 
+
+C,(») = (2™) 4 -G d (n) 
+G a (fl) = if-G A {0) 
+
+
+
+5.1.1.3 Spatial frequency range 
+
+The reported PSD shall be restricted between the 
+limits allowed by the measuring equipment. For the 
+report the user may select any spatial frequency range 
+appropriate to his particular road surface, problem and 
+product. 
+
+NOTES 
+
+2 Figured gives the relationship between the vehicle 
+speed, the spatial frequency and the time frequency. 
+Knowledge of the frequency and speed characteristics for 
+a given class of vehicles makes it possible to choose the 
+useful limits for that class of vehicle (for example, on- or 
+off-road vehicles). 
+
+3 For the lower limit, the spatial frequency need not in 
+general be measured lower than 0,01 cycles/m for on-road 
+vehicles and 0,05 cycles/m for off-road vehicles. 
+
+4 The enveloping effect of the tyre acts as a low-pass filter 
+for the road vibration input to the vehicle. This effect de- 
+pends on the size and construction of the tyre. For general 
+on-road measurements, this results in a recommended up- 
+per limit of 1 cycles/m. Of course for suspension vibration 
+purposes, the interesting upper limit depends on the maxi- 
+mum allowed speed on the particular road. For noise pur- 
+poses, the interesting upper limit may be much higher, and 
+may go as high as 1 000 cycles/m. 
+
+5 Due to the tyre width there is also an enveloping effect 
+in the lateral direction. This means that for vibration pur- 
+poses the mean of the footprint is usually measured. The 
+width depends on the problem (for example, vibration, 
+noise) and the product (for example, motorcycle tyres, truck 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+tyres). For general on-road measurements not intended for 
+a specific product, a track of about 1 00 mm wide is often 
+used for vibration purposes. For noise purposes, a point 
+measurement is often used. 
+
+The measured surface depends on the measuring equip- 
+ment, which has a certain smoothing effect. This equipment 
+is to be reported (see 5.3.4.2.1). 
+
+6 For off-road measurements, care should be taken when 
+interpreting the high frequencies. For soft (for example, 
+sandy) surfaces, short undulations could be flattened by the 
+wheel load and filtered out. For hard (for example, stone) 
+surfaces, however, only the enveloping effect of the tyre 
+acts as a filter. In this situation the surface is to be de- 
+scribed accurately in the data sheet (see 5.3.4.3.2). 
+
+7 Annex B gives recommended methods for the charac- 
+terization of the road profile and for the fitting of the meas- 
+ured data. 
+
+
+
+5.1.2 Presentation of the smoothed power 
+spectral density 
+
+When the PSDs are calculated with a constant band- 
+width method, their representation in a log-log dia- 
+gram will give an appearance or visual impression at 
+high frequencies which over-emphasizes the fluctu- 
+ations of the PSD generated by the real power dis- 
+tribution and by the statistical noise. 
+
+For this reason, the PSD shall also be represented in 
+a smoothed form, i.e. by the mean PSD in the fol- 
+lowing frequency bands: 
+
+— octave bandwidth from the lowest calculated fre- 
+quency (except zero) up to a centre frequency of 
+0,031 2 cycles/m (0,196 3.rad/m); 
+
+— third-octave bands from the last octave band up to 
+a centre frequency of 0,25 cycles/m 
+(1,570 8rad/m); 
+
+— the rest, twelfth-octave bands up to the highest 
+calculated frequency. 
+
+The centre frequencies to be used for the calculation 
+of the smoothed PSD are given in table 2, 
+
+The mean PSD in a defined band should be calculated 
+in the following way: 
+
+
+
++ 
+
+
+
+K(i) -Ch- 0,5)<] -GK) 
+
+
+
+Gs(0 = 
+
+
+
+[(n L + 0,5)-B e -n,(/)]G(« L ) 
+
+
+
+«H-1 
+
+"hO") - «i(0 
+
+
+
+where 
+
+G s (i) is smoothed PSD in smoothing band i; 
+
+
+
+/ih = INT 
+
+
+
+n t =INT 
+
+
+
+"h(0 
+
+
+
++ 0,5 (/v see table 2); 
+
+
+
+B» 
+
+
+
++ 0,5 («,: see table 2). 
+
+
+
+The other symbols are as defined in table 1. 
+
+The first and the third terms of the right side of the 
+equation calculate respectively the parts of the original 
+band n L and n H , in the calculated smoothed band i. 
+
+If this scheme cannot be followed, due to the calcu- 
+lations, the differences shall be noted in the report. 
+
+The same rules shall be followed when the smoothing 
+is to be done in angular spatial frequency. 
+
+The same rules shall be followed for analog compu- 
+tation. 
+
+A small and easy supplementary calculation following 
+the processing of the smoothed PSD leads to the 
+characterization of the road profile as described in 
+annex B. 
+
+
+
+5.2 Multiple-track data 
+
+The multiple-track road profile data shall be described 
+as the PSD curves of each track as described in 5.1, 
+and their relationship curves expressed as their co- 
+herence function 
+
+
+
+y 2 = 
+
+
+
+G 12 (.) 2 
+
+
+
+GiO-gsc: 
+
+
+
+When more than two tracks are measured, the most 
+travelled track near the edge of the road shall be taken 
+as the reference track for the calculation of coherence 
+functions. 
+
+The curve shall be smoothed as described in 5.1.2. 
+
+5.3 Report 
+
+The report shall contain one or more curve sheets and 
+general information. 
+
+5.3.1 One-track data curve sheet 
+
+The curve sheet for one-track data shall contain the 
+non-smoothed PSD and the smoothed PSD. When 
+
+
+
+IS 15592 
+ISO 8608 
+
+
+
+2005 
+1995 
+
+
+
+the information is given on one sheet, the separate 
+curves should be carefully differentiated. 
+
+The PSD curve sheet shall also include the infor- 
+mation given in . 5.3.3.1.3, 5.3.3.1.4, 5.3.3.1.5, 
+5.3.4.3.1 and 5.3.4.3.2. 
+
+It is also recommended to indicate on the data sheet 
+the road profile characterization described in 
+annex B, i.e. the general and octave band character- 
+ization of the road and the fitted PSD (for examples 
+see figures A.2 and A.4). 
+
+5.3.2 Multiple-track data curve sheet 
+
+For multiple-track data, the sheets of each PSD shall 
+be reported as described in 5.3.1, together with a 
+similar curve sheet for their coherence function. This 
+sheet shall contain the smoothed coherence curve. 
+The track width shall be indicated on this sheet. 
+
+When the information is given on one sheet, the 
+separate curves should be carefully differentiated. 
+
+5.3.3 Parameters of analysis 
+
+5.3.3.1 For all forms of spatial analysis, the following 
+information shall be reported. 
+
+5.3.3.1.1 The analysis method used, analog or digi- 
+tal. 
+
+5.3.3.1.2 Pre-processing filters shall be reported in 
+terms of cut-off spatial frequency, slope (dB/octave) 
+and type of filter (for example Butterworth). In the 
+case of the digital analysis, this includes the anti- 
+aliasing filter. 
+
+5.3.3.1.3 The resolution bandwidth: in the case of a 
+relative constant bandwidth analysis, it is sufficient to 
+state the proportion octave bandwidth only. 
+
+5.3.3.1.4 The real distance travelled of the data, in 
+metres, analysed and reported. 
+
+In order to quantify wavelengths of 100 m with a 
+statistical precision of 0,6 at a spatial frequency res- 
+olution of 0,01 m~ \ the distance travelled shall be at 
+least 1 000 m. 
+
+In some cases it may be impossible or perhaps of no 
+interest to reach this limit, for example for short roads 
+or for the study of special forms of surfaces. In this 
+case a remark in the report is required. For a 
+discussion of statistical precision, see annex D. 
+
+
+
+5.3.3.1.5 The statistical precision of spectral esti- 
+mates of the data: in the case of a relative constant 
+bandwidth analysis, the statistical precision of the 
+narrowest bandwidth shall be reported. The statistical 
+precision shall be stated as ± % value, calculated for 
+a 95 % confidence level (i.e. the statistical precision 
+shall be stated as 1,96 times the normalized standard 
+error} on the basis of random error. 
+
+5.3.3.2 For analog spectral analyses, the following 
+information shall be reported, in addition to that 
+specified in 5.3.3.1. 
+
+5.3.3.2.1 The class of bandwidth filters in accord- 
+ance with I EC 1260. 
+
+5.3.3.2.2 The slopes (dB/octave) and type of con- 
+stant bandwidth filter. 
+
+5.3.3.3 For digital spectral analyses, the following 
+information shall be reported, in addition to that 
+specified in 5.3.3.1. 
+
+5.3.3.3.1 The specific method used (such as Fast 
+Fourrier Transform, Mean Lagged Product, Continu- 
+ous Digital Filter). 
+
+5.3.3.3.2 The sampling spatial frequency. 
+
+5.3.3.3.3 The sampling window function and cor- 
+rection factor used. 
+
+5.3.3.3.4 The reported resolution bandwidth, if it is 
+different from the analysis bandwidth (for example 
+when frequency-smoothing is used). 
+
+5.3.4 Test conditions 
+
+5.3.4.1 The date of the measurement shall be re- 
+ported. 
+
+5.3.4.2 The instrumentation used shall be reported 
+as follows. 
+
+5.3.4.2.1 Short description of the measuring system. 
+
+a) Mechanical design. 
+
+b) Scanning device 
+
+— in the case of a contacting device (for 
+example, a wheel): description of the design 
+(for example, a soft wheel), mass, tyre press- 
+ure, tyre dimensions, effective diameter, 
+nominal test load and dimensions of the con- 
+tact area under nominal test load; 
+
+
+
+IS 15592:2005 
+ISO 8608 : 1995 
+
+
+
+
+
+
+
+— in the case of a non-contacting device (for 
+example, a radar system): resolution, dimen- 
+sions of the effective measured area, etc. 
+
+The capability of the equipment to take into ac- 
+count slope bias and transverse slope effects over 
+long distances and long wavelengths. 
+
+
+
+5.3.4.2.2 A flowchart showing 
+telemetry, tape recorder, filters, etc. 
+
+
+
+transducers, 
+
+
+
+5.3.4.2.3 The instrumentation and calibration chain 
+of the measuring system should be carefully reported. 
+Details of the design, the guaranteed transfer function 
+and the accuracy should be given, either in the report 
+or in a source reference. 
+
+5.3.4.2.4 The cut-off frequencies of any filter used 
+in conjunction with the recording of the data. 
+
+5.3.4.3 The road or terrain description shall be re- 
+ported as follows. 
+
+5.3.4.3.1 Definition of the road: country, road num- 
+ber, location, village, direction and, if possible, a small 
+map. Also traffic density [annual average daily traffic 
+(AADT), when possible], typical vehicle speed and 
+other relevant descriptive information shall be re- 
+ported. 
+
+
+
+5.3.4.3.2 The road profile shall be reported with re- 
+spect to at least the type of surface (concrete pave- 
+ment, compacted soil, cobblestone, etc.) and the 
+surface condition (new pavement, rutted road, poorly 
+maintained, etc.), the grade (longitudinal slope), the 
+cross-fall (lateral slope) and the curve radius (if any). 
+In the case of off-road measurements, the cone pen- 
+etration resistance of the soil should be reported 
+together with a reference or a description of the 
+measurement method used (see, for instance, refer- 
+ence [13]}. 
+
+5.3.4.3.3 Definition of the measured track: distance 
+from the measured track to the near side of the road. 
+A sketch of the road, with indication of the tracks re- 
+served for bicycles, parking and traffic is rec- 
+ommended. All unusual facts should be indicated. 
+
+5.3.4.3.4 A photograph of the road shall be included. 
+It shall be taken from a height of 1,4 m (approximately 
+the height of the eyes of the driver of a passenger 
+car). The photograph shall also show a two- 
+dimensional scale indication and the position of the 
+measured tracks. 
+
+5.3.4.3.5 If two- or multiple-track data are given, 
+they shall be described as in 5.3.4.3.3. The distance 
+between the tracks shall also be given. 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+Table 2 — Centre frequencies and cut-off frequencies for PSD smoothing, expressed in spatial 
+
+frequency n 
+
+
+
+a) Octave bandwidth 
+
+
+
+c) Twelfth-octave bandwidth 
+
+
+
+EXP 
+
+
+"i 
+
+
+"c 
+
+
+"h 
+
+
+
+
+m 
+
+
+m 
+
+
+m ' 
+
+
+-9 
+
+
+0,001 4 
+
+
+0,002 
+
+
+0,002 8 
+
+
+-8 
+
+
+0.002 8 
+
+
+0,003 9 
+
+
+0,005 5 
+
+
+-7 
+
+
+0,005 5 
+
+
+0.007 8 
+
+
+0.011 
+
+
+-6 
+
+
+0,011 
+
+
+0.015.6 
+
+
+0,022 1 
+
+
+-5 
+
+
+0,022 1 
+
+
+0,031 2 
+
+
+0,044 2 
+
+
+
+b) Third-octave bandwidth 
+
+
+
+EXP 
+
+
+
+
+m 
+
+
+m"' 
+
+
+- 4,333 
+-4 
+
+- 3,667 
+
+- 3,333 
+-3 
+
+- 2,667 
+
+- 2,333 
+-2 
+
+
+0,044 2 
+0,055 7 
+0.070 2 
+0.088 4 
+0.111 4 
+0,140 3 
+0.176 8 
+0.222 7 
+
+
+0.049 6 
+0,062 5 
+0,078 7 
+0.099 2 
+0.125 
+0.157 5 
+0,198 4 
+0,250 
+
+
+0,055 7 
+0.070 2 
+0.088 4 
+0,111 4 
+0.140 3 
+0,176 8 
+0.222 7 
+0.280 6 
+
+
+
+NOTES 
+
+8 n, = lower cutoff frequency 
+n z = centre frequency 
+
+/ih = upper cut-off frequency 
+
+9 A small overlap exists between the lowest twelfth- 
+octave bandwidth and the highest third-octave band- 
+width. This overlap maintains the values 0,5; 1; 2; 4 as 
+centre frequencies in the twelfth-octave bands. This 
+makes it convenient to calculate the road characterization 
+(see B.3) immediately from the twelfth-octave band 
+smoothing. 
+
+
+
+EXP 
+
+
+_ i 
+
+
+
+
+"i, 
+
+
+
+
+m 
+
+
+m 
+
+
+m 1 
+
+
+- 1,833 
+
+
+0,272 6 
+
+
+0,280 6 
+
+
+0,288 8 
+
+
+- 1,750 
+
+
+0,288 8 
+
+
+0,297 3 
+
+
+0,306 
+
+
+-1,667 
+
+
+0,306 
+
+
+0,315 
+
+
+0,324 2 
+
+
+- 1,583 
+
+
+0,324 2 
+
+
+0,333 7 
+
+
+0,343 5 
+
+
+-1,500 
+
+
+0,343 5 
+
+
+0,353 6 
+
+
+0,363 9 
+
+
+-1,417 
+
+
+0,363 9 
+
+
+0,374 6 
+
+
+0,385 6 
+
+
+-1,333 
+
+
+0,385 6 
+
+
+0,396 9 
+
+
+0,408 5 
+
+
+-1,250 
+
+
+0,408 5 
+
+
+0.420 4 
+
+
+0,432 8 
+
+
+-1,167 
+
+
+0,432 8 
+
+
+0,445 4 
+
+
+0,458 5 
+
+
+-1,083 
+
+
+0,458 5 
+
+
+0,471 9 
+
+
+0,485 8 
+
+
+-1 
+
+
+0.485 8 
+
+
+0,5 
+
+
+0,514 7 
+
+
+-0,917 
+
+
+0,514 7 
+
+
+0,529 7 
+
+
+0,545 3 
+
+
+-0,833 
+
+
+0,545 3 
+
+
+0,561 2 
+
+
+0,577 7 
+
+
+- 0,750 
+
+
+0.577 7 
+
+
+0,594 6 
+
+
+0,612 
+
+
+- 0,667 
+
+
+0.612 
+
+
+0,630 
+
+
+0,648 4 
+
+
+-0,583 
+
+
+0,648 4 
+
+
+0,667 4 
+
+
+0,687 
+
+
+-0,500 
+
+
+0.687 
+
+
+0,707 1 
+
+
+0,727 8 
+
+
+-0,417 
+
+
+0,727 8 
+
+
+0,749 2 
+
+
+0,771 1 
+
+
+- 0,333 
+
+
+0.771 1 
+
+
+0,793 7 
+
+
+0,817 
+
+
+-0,250 
+
+
+0.817 
+
+
+0,840 9 
+
+
+0,865 5 
+
+
+-0,167 
+
+
+0.865 5 
+
+
+0,890 3 
+
+
+0,917 
+
+
+-0,083 
+
+
+0.917 
+
+
+0,943 9 
+
+
+0,971 5 
+
+
+
+
+
+0.971 5 
+
+
+1 
+
+
+1,029 3 
+
+
+0,083 
+
+
+1,029 3 
+
+
+1,059 5 
+
+
+1,090 5 
+
+
+0,167 
+
+
+1.090 5 
+
+
+1,122 5 
+
+
+1,155 4 
+
+
+0,250 
+
+
+1.155 4 
+
+
+1,189 2 
+
+
+1,224 1 
+
+
+0.333 
+
+
+1.224 1 
+
+
+1,259 9 
+
+
+1,296 8 
+
+
+0.417 
+
+
+1.296 8 
+
+
+1.334 8 
+
+
+1,374 
+
+
+0.500 
+
+
+1.374 
+
+
+1,414 2 
+
+
+1,455 7 
+
+
+0,583 
+
+
+1.455 7 
+
+
+1,498 3 
+
+
+1,542 2 
+
+
+0,667 
+
+
+1,542 2 
+
+
+1,587 4 
+
+
+1,633 9 
+
+
+0.750 
+
+
+1.633 9 
+
+
+1.681 8 
+
+
+1,731 1 
+
+
+0.833 
+
+
+1.731 1 
+
+
+1,781 8 
+
+
+1,834 
+
+
+0.917 
+
+
+1,834 
+
+
+1,887 7 
+
+
+1,943 1 
+
+
+1 
+
+
+1.943 1 
+
+
+2 
+
+
+2,058 6 
+
+
+1,083 
+
+
+2,058 6 
+
+
+2.118 9 
+
+
+2,181 
+
+
+1,167 
+
+
+2,181 
+
+
+2.244 9 
+
+
+2.310 7 
+
+
+1,250 
+
+
+2,310 7 
+
+
+2,378 4 
+
+
+2.448 1 
+
+
+1,333 
+
+
+2,448 1 
+
+
+2.519 8 
+
+
+2,593 7 
+
+
+1,417 
+
+
+2,593 7 
+
+
+2,669 7 
+
+
+2.747 9 
+
+
+1,500 
+
+
+2.747 9 
+
+
+2,828 4 
+
+
+2,91 1 3 
+
+
+1,583 
+
+
+2,911 3 
+
+
+2.996 6 
+
+
+3.084 4 
+
+
+1,667 
+
+
+3,084 4 
+
+
+3.174 8 
+
+
+3.267 8 
+
+
+1,750 
+
+
+3,267 8 
+
+
+3.363 6 
+
+
+3.462 1 
+
+
+1,833 
+
+
+3,462 1 
+
+
+3,563 6 
+
+
+3.668 
+
+
+1,917 
+
+
+3,668 
+
+
+3,775 5 
+
+
+3.886 1 
+
+
+2 
+
+
+3,886 t 
+
+
+4 
+
+
+4,117 2 
+
+
+2,083 
+
+
+4,117 2 
+
+
+4,237 9 
+
+
+4.362 
+
+
+2,167 
+
+
+4,362 
+
+
+4,489 8 
+
+
+4,621 4 
+
+
+2,250 
+
+
+4,621 4 .:'"' 
+
+
+4,756 8 
+
+
+4,896 2 
+
+
+2,333 
+
+
+4,896 2 
+
+
+5,039 7 
+
+
+5,187 4 
+
+
+2.417 
+
+
+5,187 4 
+
+
+5,339 4 
+
+
+5,495 8 
+
+
+2,500 
+
+
+5,495 8 
+
+
+5,656 9 
+
+
+5,822 6 
+
+
+2,583 
+
+
+5,822 6 
+
+
+5,993 2 
+
+
+6,168 8 
+
+
+2,667 
+
+
+6,168 8 
+
+
+6,349 6 
+
+
+6,535 7 
+
+
+2,750 
+
+
+6,535 7 
+
+
+6,727 2 
+
+
+6,924 3 
+
+
+2,833 
+
+
+6,924 3 
+
+
+7,127 2 
+
+
+7.336 
+
+
+2,917 
+
+
+7,336 
+
+
+7,551 
+
+
+7,772 3 
+
+
+3 
+
+
+7,772 3 
+
+
+8 
+
+
+8.234 4 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+Annex A 
+
+(informative) 
+
+Example of a report 
+
+
+
+This annex contains fictitious data arranged to form an example for two-track reporting which meets the minimum 
+requirements of this International Standard. However, the photograph is omitted. 
+
+NOTES 
+
+10 The numbers in parentheses refer to the subclauses in this International Standard. 
+
+1 1 The parts of figure A.2 and figure A.4 placed in a double frame are the recommended characterizations of the road profile 
+described in annex B. They are not required, but recommended. 
+
+12 The format of the data sheets is not standardized. 
+
+A.1 Parameters of analysis 
+
+Analysis (5.3.3.1.1, 5.3.3.3.1): FFT 
+
+anti-aliasing filter (5.3.3.1.2): 48 dB/octave 
+
+Butterworth: 0,5 cycles/m low-pass 
+Sampling spatial frequency (5.3.3.3.2): 
+
+1 ,4 cycles/m 
+Sampling window function (5.3.3.3.3): Hanning 
+Correction factor (PSD) (5.3.3.3.3): 1,63 2 
+
+A.2 Test conditions 
+
+Measuring system (5.3.4.2.1, 5.3.4.2.3, 5.3.4.2.4): see Verschoore, R. Het gebruik Van de wegsimulator en de 
+analoge rekenmachine in het onderzoek van voertuigsuspensies. Gent, 1973. 
+
+Flow chart (5.3.4.2.2): 
+
+
+
+Measuring 
+system 
+
+
+
+
+FM tape 
+
+
+
+
+Anti-aliasing 
+filter 
+
+
+
+
+Digitizing 
+
+
+
+
+Analyser 
+
+
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+A.3 Road description 
+
+Road definition (5.3.4.3.1) (see figure A.I): 
+
+traffic: AADT, 4 200 vehicles/day 
+
+typical vehicle speed: 90 km/h 
+Road profile (5.3.4.3.2): 
+
+concrete pavement, 10 years old 
+
+grade % 
+
+slope 0,06 % 
+
+no curve 
+Photograph (5.3.4.3.4) (omitted in this example) 
+
+A.4 Road characterization 
+
+See figures A.1 to A.4. 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+Wavelength, X (ml 
+
+
+
+G*[n) 
+
+
+
+10'V 
+
+
+
+10 
+
+
+
+10' 
+
+
+
+-2 
+
+
+
+10" 
+
+
+
+10" 6 - 
+
+
+
+10" 
+
+
+
+Gain) 
+1 
+
+
+
+W u - I 
+
+
+
+I 10 
+
+
+
+' _ E 
+
+
+
+100 
+
+
+
+10 
+
+
+
+10" 
+
+
+
+I-8 
+
+
+
+I 
+
+
+
+0,1 
+
+
+
+10 
+
+
+
+0.1 
+
+-1 
+
+
+
+Country: Belgium 
+
+Road: N 1000 
+
+Place: Xstad 
+
+Direction : North to South 
+
+Concrete pavement 
+
+Distance track to right roadside: 1 m 
+
+Distance travelled : 3 571 m 
+
+B e = 0.002 8 cycles/m 
+
+e, = 0,31; Statistical precision = + 61 % 
+
+
+
+
+0,1 1 
+
+Spatial frequency, n (cycles/m) 
+
+
+
+I 
+
+
+
+1 10 
+
+Angular spatial frequency, Q Irad/m) 
+
+
+
+100 
+
+
+
+Figure A.1 — Non-smoothed PSD of track 1 
+
+
+
+IS 15592 :2005 
+ISO 8608 : 1995 
+
+
+
+100 
+
+
+
+Wavelength, X (ml 
+
+10 
+
+
+
+i 
+
+
+
+10 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+10 
+
+
+
+-<► 
+
+
+
+- 1 
+
+
+
+10 
+
+
+
+,-5 
+
+
+
+10 
+
+
+
+10" 
+
+
+
+10* 
+
+
+
+-6 
+
+
+
+10 
+
+
+
+-9 
+
+
+
+Giin) 
+1 
+
+
+
+10" 1 
+
+
+
+10' 
+
+
+
+10' 
+
+
+
+6 10" 
+
+& 
+
+
+
+10" 
+
+
+
+10' 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+0.1 
+
+— 1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+I 
+
+
+
+
+- \ 
+
+
+
+
+Country: Belgium 
+
+Road: N 1000 
+
+Place: Xstad 
+
+Direction : North to South 
+
+Concrete pavement 
+
+Distance track to right roadside : 1 m 
+
+Distance travelled: 3 571 m 
+
+B a = 0,005 5 cycles/m 
+
+e r = 0,23; Statistical precision = ± 44 % 
+
+
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+J 
+
+
+
+
+- 
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+Octave characterization 
+
+
+
+
+Centra 
+frequency 
+
+" C 1 
+
+
+mis 
+
+m 
+
+
+G d l"c> 
+10-6m3 
+
+
+
+
+
+
+0.007 8 
+
+0,015 6 
+
+0.0312 
+
+0.062 5 
+
+0.125 
+
+0.25 
+
+0.5 
+
+t 
+
+2 
+
+
+0,020 5 
+0,023 2 
+0,016 7 
+0,0113 
+0,007 7 
+0,005 5 
+0,003 4 
+0,0018 
+0,001 4 
+
+
+76 157,20 
+
+48 894,71 
+
+12 599,47 
+
+2 895,00 
+
+673,55 
+
+172,26 
+
+32,12 
+
+4,42 
+
+1,46 
+
+
+
+
+
+
+General characterization: 
+
+0,011 </i< 2,83; rms d = 0,038 4 m 
+Linear fitting ; rms v = 0,033 7 m/s 
+
+m- = 2,16; G d (0,1) = 892 x 10-6 m3 
+
+
+
+
+
+
+
+
+
+
+1 i 
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+
+0,01 
+
+
+
+0,1 
+
+Spatial frequency, n (cycles/m) 
+
+
+
+10 
+
+
+
+_L 
+
+
+
+J_ 
+
+
+
+_L 
+
+
+
+0,1 
+
+
+
+1 
+
+
+
+10 
+
+
+
+100 
+
+
+
+Angular spatial frequency, Q {rad/m) 
+
+Figure A.2 — Smoothed PSD of track 1 (characterization: see annex B) 
+
+
+
+10 
+
+
+
+G^n) 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+Wavelength, I (m) 
+
+10 
+
+
+
+
+Spatial frequency, n (cycles/ ml 
+
+
+
+J_ 
+
+
+
+0.1 
+
+
+
+1 
+
+
+
+10 
+
+
+
+100 
+
+
+
+Angular spatial frequency, O (rad/m) 
+
+Figure A.3 — Non-smoothed PSD of track 2 
+
+
+
+11 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+GAQ) 
+
+
+
+10' 
+
+
+
+Gain) 
+
+1 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+10 
+
+
+
+-u 
+
+
+
+10" 
+
+
+
+10 
+
+
+
+10" 
+
+
+
+-6 
+
+
+
+10 
+
+
+
+-1 
+
+
+
+10 
+
+
+
+-2 
+
+
+
+10 
+
+
+
+-3 
+
+
+
+- 1 
+
+
+
+"8 
+
+
+
+10 
+
+
+
+10" 9 L 
+
+
+
+10 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+-4 
+
+
+
+10 
+
+
+
+-e 
+
+
+
+100 
+~~ 1 — 
+
+
+
+Wavelength, X (ml 
+
+10 
+1 
+
+
+
+0.1 
+"1 
+
+
+
+- \ 
+
+
+
+
+
+
+I I 
+
+
+
+
+
+
+Country: Belgium 
+
+Road: N 1000 
+
+Place: Xstad 
+
+Direction: North to South 
+
+Concrete pavement 
+
+Distance track to right roadside: 2,4 m 
+
+Distance travelled: 3 571 m 
+
+B t = 0,005 5 cycles/ m 
+
+£ r = 0,23; Statistical precision = ± 44 % 
+
+
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+Octave characterization 
+
+
+
+
+Centre 
+frequency 
+
+"c 
+m-1 
+
+
+rms 
+
+m 
+
+
+G d <V 
+10-6 m 3 
+
+
+II II 1 
+
+
+
+
+
+
+0,007 8 
+
+0,015 6 
+
+0,0312 
+
+0,062 5 
+
+0,125 
+
+0,25 
+
+0,5 
+
+1 
+
+2 
+
+
+0,021 3 
+0,020 2 
+0,012 6 
+0,013 
+0,008 5 
+0,004 3 
+0,003 1 
+0,001 7 
+0,001 2 
+
+
+81 768,91 
+
+36 987,61 
+
+7 164,66 
+
+3 827,58 
+
+819,90 
+
+106,68 
+
+26,45 
+
+4,21 
+
+1,08 
+
+
+
+
+
+
+General characterization: 
+
+0,011 <n< 2,83; rms d = 0,035 9m 
+Linear fitting; rms v = 0,030 1 m/s 
+
+w = 2.22; G d (0,1) = 830 x 10~6 m 3 
+
+
+I 
+
+
+
+
+- 
+
+
+I 1 
+
+
+I 
+
+
+1 
+
+
+1 
+
+
+
+0,01 
+
+
+
+0,1 
+
+Spatial frequency, n (cycles/m) 
+
+
+
+10 
+
+
+
+J_ 
+
+
+
+JL 
+
+
+
+0.1 
+
+
+
+1 
+
+
+
+10 
+
+
+
+100 
+
+
+
+Angular spatial frequency, Q (rad/m) 
+
+Figure A.4 — Smoothed PSD of track 2 (oharacterization: see annex B) 
+
+
+
+12 
+
+
+
+IS 15592 
+ISO 8608 
+
+
+
+2005 
+1995 
+
+
+
+Annex B 
+
+(informative) 
+
+Road profile characterization and PSD fitting 
+
+
+
+This annex gives means of approximately characteriz- 
+ing specific road profiles in order to facilitate the div- 
+ision of road profiles into general classifications. A 
+general classification is also given. A curve-fitting 
+method is suggested for characterizing spectral data. 
+
+B.I Symbols 
+
+See table B.1 
+
+Table B.I — Symbols 
+
+
+
+Symbol 
+
+
+Description 
+
+
+Unit 
+
+
+n 
+
+G d () 
+G.U 
+
+w' 
+
+a 
+
+
+Spatial frequency 
+
+Reference spatial frequency 
+
+(= 0.1 cycles/m) 
+
+Displacement PSD 
+
+Acceleration PSD 
+
+Exponent of fitted PSD calculated 
+
+on G d (.) 
+
+Exponent of fitted PSD calculated 
+
+on G a (.) 
+
+Angular spatial frequency 
+
+Reference angular spatial 
+
+frequency (= 1 rad/m) 
+
+
+cycles/m 
+cycles/m 
+
+m 3 
+
+m" 1 
+
+rad/m 
+rad/m 
+
+
+
+B.2 General characterization of the road 
+profile 
+
+The r.m.s. value between n = 0,011 cycles/m 
+{£2 = 0,063 rad/m) and n = 2,83 cycles/m 
+
+(fi = 17,77 rad/m), calculated from the displacement 
+PSD, shall be reported. These limits are band limits for 
+the octave bands to be calculated in 5.1.2 and B.3. 
+These limits were chosen in relation to the frequency 
+data existing in the literature. 
+
+However, for off-road data, special studies and limited 
+distances travelled, this spatial frequency range may 
+be reduced. In that case the spatial frequency range 
+shall be reported. 
+
+
+
+B.3 Characterization in octave bands 
+
+In order to obtain surveyable and classifiable data, the 
+spectrum should be divided into octave bands and the 
+r.m.s. values, calculated from the displacement PSD, 
+should be noted for each band. The centre fre- 
+quencies are given in table B.2. 
+
+The characterizations described in B.2 and B.3 can be 
+calculated with a small and easy supplementary cal- 
+culation following the processing of the smoothed 
+PSD. 
+
+B.4 Fitted PSD 
+
+The smoothed form of the PSD may be fitted by a 
+straight line on the smoothed data (5.1.2) by the 
+least-mean-square method in the spatial frequency 
+range 0,011 cycles/m to 2,83 cycles/m. This fitting 
+may be represented on the general presentation plot. 
+The equation of the fitting shall be reported. 
+
+The general form of the fitted PSD will be 
+G d («)=G d (« ).(»H)- M ' 
+
+or 
+
+G d (t2)=G d (n y(nw y w 
+
+where 
+
+«o (= 0,1 cycles/m) is the reference spatial fre- 
+quency; 
+
+fi (= 1 rad/m) is the reference angular spatial 
+frequency; 
+
+w is the exponent of the fitted PSD. 
+
+When the fitting is calculated on the acceleration PSD 
+the exponent will be W = w - 4. 
+
+NOTE 13 In this annex only a one-straight line fitting is 
+proposed. In the literature a two or more straight line fitting 
+is often used, but the standardization of a method which 
+guarantees a unique solution is practically impossible. 
+
+
+
+13 
+
+
+
+IS 15592 
+ISO 8608 
+
+
+
+2005 
+1995 
+
+
+
+Table B.2 — Centre frequencies and cut-off frequencies for PSD characterization in octaves 
+
+
+
+a) Spatial frequency 
+
+
+units, n 
+
+
+
+
+
+
+
+
+EXP 
+
+
+Spatial frequencies, cyclesfm 
+
+
+Centre wavelength 
+
+m 
+
+
+Lower cut-off 
+
+
+Centre frequency 1 > 
+
+
+Upper cut-off 
+
+
+-9 
+
+
+0,001 4 
+
+
+0,002 
+
+
+0,002 8 
+
+
+512 
+
+
+-8 
+
+
+0,002 8 
+
+
+0,003 9 
+
+
+0,005 5 
+
+
+256 
+
+
+-7 
+
+
+0,005 5 
+
+
+0,007 8 
+
+
+0,011 
+
+
+128 
+
+
+-6 
+
+
+0,011 
+
+
+0,015 6 
+
+
+0,022 1 
+
+
+64 
+
+
+-5 
+
+
+0,022 1 
+
+
+0,031 2 
+
+
+0.044 2 
+
+
+32 
+
+
+-4 
+
+
+0,044 2 
+
+
+0,062 5 
+
+
+0,088 4 
+
+
+16 
+
+
+-3 
+
+
+0,088 4 
+
+
+0,125 
+
+
+0,176 8 
+
+
+8 
+
+
+-2 
+
+
+0,176 8 
+
+
+0,25 
+
+
+0,353 6 
+
+
+4 
+
+
+-1 
+
+
+0,353 6 
+
+
+0,5 
+
+
+0,707 1 
+
+
+2 
+
+
+
+
+
+0,707 1 
+
+
+1 
+
+
+1,414 2 
+
+
+1 
+
+
+1 
+
+
+1,414 2 
+
+
+2 
+
+
+2,828 4 
+
+
+0.5 
+
+
+2 
+
+
+2,828 4 
+
+
+4 
+
+
+5,656 9 
+
+
+0,25 
+
+
+3 
+
+
+5,656 9 
+
+
+8 
+
+
+11,313 7 
+
+
+0,125 
+
+
+1 ) Centre frequency = 2 EXP 
+
+
+
+b) Angular spatial frequency units, Q 
+
+
+
+EXP 
+
+
+Angular spatial frequencies, rad/m 
+
+
+Centre wavelength 
+
+m 
+
+
+Lower cut-off 
+
+
+Centre frequency 1 ) 
+
+
+Upper cut-off 
+
+
+-6,35 
+
+-5,35 
+
+-4,35 
+
+-3,35 
+
+-2,35 
+
+-1,35 
+
+-0,35 
+
+0,65 
+
+1.65 
+
+2,65 
+
+3.65 
+
+4,65 
+
+5.65 
+
+
+0,008 7 
+0,017 4 
+0,034 7 
+0,069 4 
+0,138 8 
+0,277 7 
+0,555 4 
+1,1107 
+2.221 4 
+4.442 9 
+8,885 8 
+17,771 6 
+35,543 1 
+
+
+0,012 3 
+0,024 5 
+0,049 1 
+0,098 2 
+0,196 3 
+0,392 7 
+0,785 4 
+1,570 8 
+3,141 6 
+6,283 2 
+12,566 4 
+25.132 8 
+50,265 6 
+
+
+0,017 4 
+0,034 7 
+0,069 4 
+0,138 8 
+0,277 7 
+0,555 4 
+1,1107 
+2,221 4 
+4,442 9 
+8,885 8 
+17,771 6 
+35,543 1 
+71,086 3 ,-■ 
+
+
+512 
+256 
+128 
+
+64 
+
+32 
+
+16 
+
+8 
+
+4 
+
+2 
+
+1 
+
+0,5 
+
+0.25 
+
+0,125 
+
+
+1) Centre frequency = 2 EXP 
+
+
+
+14 
+
+
+
+IS 1 5592 : 2005 
+ISO 8608 : 1995 
+
+
+
+Annex C 
+
+(informative) 
+
+General guidance for the use of the statistical road profile description 
+
+
+
+This annex provides general guidance for the use of 
+road profile statistical data for simulation studies and 
+for related studies such as evaluation of comfort, 
+suspensions and road profiles. 
+
+C.1 Symbols 
+
+See tabled. 
+
+
+
+C.2 Relationship between time 
+frequency and spatial frequency 
+
+Figured gives the relationship between the vehicle 
+speed, the spatial frequency and the time frequency. 
+Knowledge of the resonance frequencies and the 
+speed range for a given class of vehicle makes it 
+possible to choose the useful limits for that class of 
+vehicle. 
+
+
+
+Table C.I — Symbols 
+
+
+
+Symbol 
+
+
+Description 
+
+
+Unit 
+
+
+/ 
+
+
+Time frequency 
+
+
+Hz 
+
+
+/ 
+
+
+Wheelbase 
+
+
+m 
+
+
+C d (.) 
+
+
+Displacement PSD 
+
+
+m 3 
+
+
+GJ.) 
+
+
+Velocity PSD 
+
+
+m 
+
+
+c.(.) 
+
+
+Acceleration PSD 
+
+
+m- 1 
+
+
+n 
+
+
+Spatial frequency 
+
+
+cycies/m 
+
+
+"c 
+
+
+Centre spatial frequency of a frequency band 
+
+
+cycles/m 
+
+
+"o 
+
+
+Reference spatial frequency (= 0,1 cycles/m) 
+
+
+cycles/m 
+
+
+R 
+
+
+Tyre radius 
+
+
+m 
+
+
+T 
+
+
+Time constant of a filter 
+
+
+s 
+
+
+V 
+
+
+Vehicle speed 
+
+
+m/s 
+
+
+w 
+
+
+Exponent of the fitted PSD calculated on G d (.) 
+
+
+— 
+
+
+At 
+
+
+Time delay for four-track (two-axle) simulation 
+
+
+s 
+
+
+X 
+
+
+Wavelength 
+
+
+m 
+
+
+CO 
+
+
+Angular frequency (= 2it/ ) 
+
+
+rad/s 
+
+
+n 
+
+
+Angular spatial frequency 
+
+
+rad/m 
+
+
+Oc 
+
+
+Centre angular spatial frequency of a frequency band 
+
+
+rad/m 
+
+
+«0 
+
+
+Reference angular spatial frequency (= 1 rad/m} 
+
+
+rad/m 
+
+
+NOTE — The indication (.) means 
+(fl». 
+
+
+that the parameter of the function can be spatial frequency (n) or angul 
+
+
+ar spatial frequency 
+
+
+
+15 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+100 
+
+
+
+0,1 
+
+
+
+Wavelength, X {m) 
+
+10 
+
+
+
+Spatial frequency, n (cycles/m) 
+
+
+
+1 
+
+
+
+10 
+
+
+
+0,1 
+
+
+
+
+100 
+
+
+
+Figure C.1 
+
+
+
+Angular spatial frequency, Q (rad/m) 
+
+Relationship between time frequency and spatial frequency as a function of vehicle speed 
+
+
+
+16 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+6 6 (Q) 
+
+io"V 
+
+
+
+10" 
+
+
+
+1 
+
+
+
+10" 1 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+10 
+
+
+
+-4 
+
+
+
+10 
+
+
+
+-3 
+
+
+
+a 
+
+
+
+10 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+,-s 
+
+
+
+S 10" 4 
+
+I 
+i 
+
+
+
+I 10 5 
+
+
+
+— 3 
+
+
+
+10 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+-6 
+
+
+
+100 
+
+
+
+0,01 
+
+
+
+Wavelength, X (m) 
+
+10 
+
+
+
+0,1 
+
+Spatial frequency, n (cycles/m) 
+
+
+
+_L 
+
+
+
+0,1 1 10 
+
+Angular spatial frequency, ft (rad/m) 
+
+
+
+0,1 
+
+-I 
+
+
+
+-\ 
+
+
+
+
+v I 
+
+
+
+
+- \ 
+
+
+
+
+\ \ H 
+
+
+
+
+— \ 
+
+
+
+
+\ I N r » 
+
+
+
+
+_ 
+
+
+
+
+\ V \ 
+
+
+
+
+- 
+
+
+
+
+\ \ D \ ^ 
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+R 
+
+
+I \ B \ 
+
+oad class f^ \ > 
+
+
+- 
+
+
+
+
+
+
+
+
+- 
+
+
+I I 
+
+
+I I 1 
+
+
+l \ ^ 
+
+
+
+10 
+
+
+
+100 
+
+
+
+Figure C.2 — Classification of roads 
+
+
+
+17 
+
+
+
+IS 15592 
+ISO 8608 
+
+
+
+2005 
+1995 
+
+
+
+The general expression for this relationship is 
+/= n-v 
+
+
+
+or 
+
+
+
+at = D-v 
+
+
+
+C.3 Velocity PSD 
+
+For simulation studies it is often convenient to use the 
+velocity PSD. in terms of change of the vertical 
+ordinate of the road surface per unit distance 
+travelled. The relationship between the displacement 
+PSD and the velocity PSD is given by 
+
+Gv(n)=G d (n).(2nn) 2 
+G v (£2) = G d (t2)-Sf 
+
+When w = 2 in the following expression (see 
+
+annex B) 
+
+
+
+then 
+
+
+
+G d (") = G d («oH«/*o) w 
+
+G v (n) = G v (n ) = constant 
+G v {n) = G v {f2 ) = constant 
+
+C.4 Classification of roads 
+
+An estimate of the degree of roughness of the road 
+can be made by the G d (/io) value of the fitted PSD 
+(see B.4). Table C. 2 gives the power spectral densities 
+for different classes of roads. In figure C.2 the class 
+limits are graphed on the displacement PSD. This 
+classification is made by assuming a constant-velocity 
+PSD, which means w = 2. 
+
+However, due to the fact that the PSD is not always 
+a straight line, more information is given by the power 
+spectral density or the r.m.s. displacement in the dif- 
+ferent octave bands. This makes it possible to classify 
+the road for every octave band in an appropriate class. 
+It may give some information for the repair need and 
+method. It is also possible to classify the road for an 
+appropriate band of speeds. For example, for high- 
+ways, when assuming that the velocities are between 
+70 km/h and 120 km/h, the band between 
+0,022 1 cycles/m and 1,414 2 cycles/m (0,138 8 
+rad/m and 8,885 8 rad/m) is the most significant. 
+
+Table C.3 gives the mean values and limits of G d {n c ) 
+and G d {n c ) for the different classes of road in the 
+different octave bands. 
+
+
+
+Table C.4 gives the mean values and limits of r.m.s. 
+displacement for the different classes of road in the 
+different octave bands. 
+
+The following relationships are used: 
+G d (« )=2 1 xG d (i2 ).[fl /(2ii nb )] 2 
+
+= ^6■G d {a Q ) 
+
+G v (fl)-G d fa,)-(2iufc) 2 
+G v (fl)=G d (fl )-iJ§ 
+
+NOTE 14 The words "limit" and "limits" as used in this 
+annex refer to the mathematical meaning of the words in 
+connection with the word "mean". In other words, a range 
+of values has a mean value and limits which denote the 
+extremes of the range of values. The word "limit", as used 
+in this annex, is not to be construed to mean the limit of 
+acceptability of a road surface. 
+
+C.5 General guidance for road 
+simulation 
+
+The statistical road profile description can be used for 
+computer and laboratory road simulation. However, it 
+may only be used for the determination of output 
+PSDs. Because no information is given about phase 
+shift, there is no guarantee as to the magnitude dis- 
+tribution of the road profile. 
+
+C.5.1 One-track (one-axle) simulation' 
+
+For simulation purposes, it is convenient to describe 
+the road profile as a constant-velocity PSD (w = 2). 
+
+The advantage of this description is a very easy 
+simulation of the displacement by integrating white 
+noise. The use of any other characteristic may require 
+much effort and, due to the approximation methods 
+to be applied, may result in inaccuracies which cause 
+an unvoidable dispersion in the results of comparison 
+tests. Account should be taken of the influence of the 
+transfer function of the reproducing device. 
+
+C.5.2 Two-track (one-axle) simulation 
+
+In two-track simulation, the two tracks are simulated 
+as in C.5.1. For the relationship between the two 
+tracks it is convenient to assume that the road surface 
+possesses the property of isotropy, i.e. that all profiles 
+of a given stretch of road, irrespective of orientation 
+and location, have the same properties, and to accept 
+the coherence function resulting from this assump- 
+tion. 
+
+
+
+18 
+
+
+
+IS 15592 
+ISO 8608 
+
+
+
+2005 
+1995 
+
+
+
+C.5.3 Two- or multiple-axle track simulation 
+
+In two or multiple-axle track simulation, the front 
+tracks are simulated in accordance with C.5.2. For the 
+following wheels it could be assumed that each rear 
+wheel travels over the same profile as the corre- 
+sponding front wheel. Consequently the rear wheel 
+experiences, after a certain delay, the same imposed 
+displacement as the corresponding front wheel. 
+
+The delay, At, in seconds, is given by 
+
+
+
+Ar = l\v 
+
+
+
+where 
+/ 
+
+
+
+is the corresponding wheelbase, in me- 
+tres; 
+
+is the speed of the vehicle, in metres per 
+second. 
+
+
+
+NOTES 
+
+
+
+1 5 When simulation is to be done by means of a hydraulic 
+simulator, the difference in vertical stiffness between a 
+rolling and a non-rolling tyre should be taken into account. 
+This difference can be reduced by using an adapted tyre 
+
+
+
+pressure and a special profiled plate between the simulator 
+and tyre. 
+
+16 For computer simulation, the stiffness of a rolling tyre 
+should be taken into account. 
+
+17 In order to avoid too large a displacement in the tow 
+time frequency range, it is recommended to limit the lowest 
+frequency to a value related to the lowest frequency of 
+interest. 
+
+18 For the study of the reactions from pot-holes or other 
+typical road forms, for example concrete joints, these spe- 
+cific forms can be superposed on the normal spectrum or 
+studied separately. However, also in this case, the influence 
+of the enveloping effect of the tyre has to be considered. 
+
+For vertical displacement magnitudes which are smaller 
+than ft/10, a passive low-pass network with a time constant 
+r = ft(l2v) can be used. This expresses that in a pot-hole 
+the vertical displacement of the wheel centre reaches 
+95 % of its nominal value after the distance of ft/4, i.e. the 
+time of ft/ (4k). For displacement magnitudes greater than 
+R/10, no correction is needed. 
+
+19 On unpaved terrain, the passage of the front wheel 
+may modify the track profile such that the profile for the 
+following wheel is not necessarily the same as the profile 
+for the front wheel. 
+
+
+
+19 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+Table C.2 — Road classification 
+
+Road classification is based on G d fa). G <t( n o)- &M and G ^ n ) values. 
+NOTES 
+
+1 Fit exponent w = 2 is assumed (see B.4). 
+
+2 The mean values for road classes A and H are only for simulation purposes. 
+a) Spatial frequency units, n 
+
+
+
+Road class 
+
+
+Degree of roughness 
+
+
+Gd(«o) n » 
+1CT 6 m 3 
+
+
+10" 6 m 
+
+
+Lower limit 
+
+
+Geometric mean 
+
+
+Upper limit 
+
+
+Geometric mean 
+
+
+
+
+A 
+
+
+— 
+
+
+16 
+
+
+32 
+
+
+6.3 
+
+
+
+
+B 
+
+
+32 
+
+
+64 
+
+
+128 
+
+
+25,3 
+
+
+
+
+C 
+
+
+128 
+
+
+256 
+
+
+512 
+
+
+101,1 
+
+
+
+
+D 
+
+
+512 
+
+
+1 024 
+
+
+2 048 
+
+
+404,3 
+
+
+
+
+E 
+
+
+2 048 
+
+
+4 096 
+
+
+8 192 
+
+
+1 617,0 
+
+
+
+
+F 
+
+
+8 192 
+
+
+16 384 
+
+
+32 768 
+
+
+6 468,1 
+
+
+
+
+G 
+
+
+32 768 
+
+
+65 536 
+
+
+131 072 
+
+
+25 872,6 
+
+
+
+
+H 
+
+
+131 072 
+
+
+262 144 
+
+
+— 
+
+
+103 490,3 
+
+
+1) 
+
+
+no = 0,1 cycles/m 
+
+
+
+
+
+
+
+
+
+b) Angular spatial frequency units, Q 
+
+
+
+
+
+
+
+Degree of roughness 
+
+
+
+
+G d (flo) 1J 
+
+
+G V {Q) 
+
+
+
+
+Road class 
+
+
+
+
+10" 6 m 3 
+
+
+10" 6 m 
+
+
+Lower limit 
+
+
+Geometric mean 
+
+
+Upper limit 
+
+
+Geometric mean 
+
+
+
+
+A 
+
+
+— 
+
+
+1 
+
+
+r 
+
+2 
+
+
+1 
+
+
+
+
+B 
+
+
+2 
+
+
+4 
+
+
+8 
+
+
+4 
+
+
+
+
+C 
+
+
+8 
+
+
+16 
+
+
+32 
+
+
+16 
+
+
+
+
+D 
+
+
+32 
+
+
+64 
+
+
+12ft 
+
+
+64 
+
+
+
+
+E 
+
+
+128 
+
+
+256 
+
+
+511 
+
+
+256 
+
+
+
+
+F 
+
+
+512 
+
+
+1 024 
+
+
+2 048 
+
+
+1 024 
+
+
+
+
+G 
+
+
+2 048 
+
+
+4 096 
+
+
+8 192 
+
+
+4 096 
+
+
+
+
+H 
+
+
+8 192 
+
+
+16 384 
+
+
+— 
+
+
+16 384 
+
+
+1) 
+
+
+O = 1 rad/m 
+
+
+
+
+
+
+
+
+
+20 
+
+
+
+IS 15592 
+ISO 8608 
+
+
+
+2005 
+1995 
+
+
+
+Table C.3 — Geometric mean and limits of the displacement PSD for different classes of roads as a 
+
+function of the octave bands 
+
+NOTE — The mean values for road classes A and H are only for simulation purposes. 
+
+a) Spatial frequency units, n 
+
+
+
+8 
+
+m 
+
+
+Mean 
+and 
+limits 
+
+
+
+
+
+
+
+
+Octave centra spatial frequency, n. 
+
+
+
+
+
+
+
+
+
+
+o 
+
+■ 
+
+e 
+a. 
+
+
+G d W 
+10"' m 3 
+
+
+
+
+
+
+
+
+
+
+cycles/m 
+
+
+
+
+
+
+
+
+
+
+
+
+0.007 8 
+
+
+0.015 6 
+
+
+0.031 2 
+
+
+0.062 5 
+
+
+0.125 
+
+
+0,25 
+
+
+0,5 
+
+
+1 
+
+
+2 
+
+
+4 
+
+
+A 
+
+
+Mean 
+
+
+2 621 
+
+
+655 
+
+
+164 
+
+
+41,0 
+
+
+10,2 
+
+
+2,56 
+
+
+0,64 
+
+
+0,16 
+
+
+0.04 
+
+
+0,010 
+
+
+Upper 
+
+
+5 243 
+
+
+1 311 
+
+
+328 
+
+
+81,9 
+
+
+20,5 
+
+
+5,12 
+
+
+1,28 
+
+
+0.32 
+
+
+0,08 
+
+
+0.020 
+
+
+
+
+Lower 
+
+
+5 243 
+
+
+1 311 
+
+
+328 
+
+
+81,9 
+
+
+20,5 
+
+
+5,12 
+
+
+1,28 
+
+
+0,32 
+
+
+0,08 
+
+
+0.020 
+
+
+B 
+
+
+Mean 
+
+
+10 486 
+
+
+2 621 
+
+
+655 
+
+
+163.8 
+
+
+41,0 
+
+
+10,24 
+
+
+2,56 
+
+
+0,64 
+
+
+0,16 
+
+
+0.040 
+
+
+
+
+Upper 
+
+
+20 972 
+
+
+5 243 
+
+
+1 311 
+
+
+327.7 
+
+
+81,9 
+
+
+20,48 
+
+
+5.12 
+
+
+1,28 
+
+
+0,32 
+
+
+0.080 
+
+
+
+
+Lower 
+
+
+20 972 
+
+
+5 243 
+
+
+1 311 
+
+
+327,7 
+
+
+81,9 
+
+
+20,48 
+
+
+5,12 
+
+
+1,28 
+
+
+0,32 
+
+
+0.080 
+
+
+C 
+
+
+Mean 
+
+
+41 943 
+
+
+10 486 
+
+
+2 621 
+
+
+655,4 
+
+
+163.8 
+
+
+40,96 
+
+
+10,24 
+
+
+2.56 
+
+
+0.64 
+
+
+0.160 
+
+
+
+
+Upper 
+
+
+83 886 
+
+
+20 972 
+
+
+5 243 
+
+
+1 310,7 
+
+
+327.7 
+
+
+81,92 
+
+
+20,48 
+
+
+5,12 
+
+
+1,28 
+
+
+0.320 
+
+
+
+
+Lower 
+
+
+83 886 
+
+
+20 972 
+
+
+5 243 
+
+
+1 310,7 
+
+
+327.7 
+
+
+81,92 
+
+
+20,48 
+
+
+5,12 
+
+
+1.28 
+
+
+0,320 
+
+
+D 
+
+
+Mean 
+
+
+167 772 
+
+
+41 943 
+
+
+10 486 
+
+
+2 621,4 
+
+
+655.4 
+
+
+163.84 
+
+
+40,96 
+
+
+10,24 
+
+
+2.56 
+
+
+0,640 
+
+
+
+
+Upper 
+
+
+335 544 
+
+
+83 886 
+
+
+20 972 
+
+
+5 242,9 
+
+
+1 310.7 
+
+
+327.68 
+
+
+81,92 
+
+
+20,48 
+
+
+5.12 
+
+
+1,280 
+
+
+
+
+Lower 
+
+
+335 544 
+
+
+83 886 
+
+
+20 972 
+
+
+5 242,9 
+
+
+1 310,7 
+
+
+327,68 
+
+
+81,92 
+
+
+20.48 
+
+
+5.12 
+
+
+1,280 
+
+
+E 
+
+
+Mean 
+
+
+671 089 
+
+
+167 772 
+
+
+41 943 
+
+
+10 485,8 
+
+
+2 621.4 
+
+
+655.36 
+
+
+163,84 
+
+
+40.96 
+
+
+10,24 
+
+
+2,560 
+
+
+
+
+Upper 
+
+
+1 342 177 
+
+
+335 544 
+
+
+83 886 
+
+
+20 971,5 
+
+
+5 242,9 
+
+
+1 310,72 
+
+
+327,68 
+
+
+81.92 
+
+
+20,48 
+
+
+5,120 
+
+
+
+
+Lower 
+
+
+1 342 177 
+
+
+335 544 
+
+
+83 886 
+
+
+20 971,5 
+
+
+5 242,9 
+
+
+1 310.72 
+
+
+327,68 
+
+
+81.92 
+
+
+20,48 
+
+
+5,120 
+
+
+F 
+
+
+Mean 
+
+
+2 684 354 
+
+
+671 089 
+
+
+167 772 
+
+
+41 943,0 
+
+
+10 485.8 
+
+
+2 621,44 
+
+
+655,36 
+
+
+163.84 
+
+
+40.96 
+
+
+10,240 
+
+
+
+
+Upper 
+
+
+5 368 709 
+
+
+1 342 177 
+
+
+335 544 
+
+
+83 886,1 
+
+
+20 971.5 
+
+
+5 242,88 
+
+
+1 310,72 
+
+
+327.68 
+
+
+81.92 
+
+
+20.480 
+
+
+
+
+Lower 
+
+
+5 368 709 
+
+
+1 342 177 
+
+
+335 544 
+
+
+83 886,1 
+
+
+20 971,5 
+
+
+5 242.88 
+
+
+1 310,72 
+
+
+327.68 
+
+
+81.92 
+
+
+20.480 
+
+
+G 
+
+
+Mean 
+
+
+10 737 417 
+
+
+2 684 354 
+
+
+671 089 
+
+
+167 772,1 
+
+
+41 943.0 
+
+
+10 485,76 
+
+
+2 621,44 
+
+
+655.36 
+
+
+163,84 
+
+
+40.960 
+
+
+
+
+Upper 
+
+
+21 474 834 
+
+
+5 368 709 
+
+
+1 342 177 
+
+
+335 544.3 
+
+
+83 886.1 
+
+
+20 971.52 
+
+
+5 242.88 
+
+
+1 310,72 
+
+
+327,68 
+
+
+81,920 
+
+
+H 
+
+
+Lower 
+
+
+21 474 834 
+
+
+5 368 709 
+
+
+1 342 177 
+
+
+Oi30 D*t4,o 
+
+
+83 886.1 
+
+
+20 971.52 
+
+
+5 242,88 
+
+
+1 310,72 
+
+
+327,68 
+
+
+81,920 
+
+
+
+
+Mean 
+
+
+42 949 668 
+
+
+10 737 417 
+
+
+2 684 354 
+
+
+671 088.6 
+
+
+167 772.1 
+
+
+41 943.04 
+
+
+10 485.76 
+
+
+2 621,44 
+
+
+655,36 
+
+
+163,840 
+
+
+
+21 
+
+
+
+IS 15592 
+ISO 8608 
+
+
+
+2005 
+1995 
+
+
+
+b) Angular spatial frequency 
+
+
+units, Q 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8 
+
+
+Mean 
+and 
+
+limits 
+
+
+
+
+
+
+
+
+Octave centre angular spatial frequency, fl c 
+
+
+
+
+
+
+
+
+■a 
+
+m 
+o 
+
+
+10- e m 3 
+
+
+
+
+
+
+
+
+
+
+rady 
+
+
+m 
+
+
+
+
+
+
+
+
+
+
+0,0491 
+
+
+0,098 2 
+
+
+0.196 3 
+
+
+0,392 7 
+
+
+0,785 4 
+
+
+1,570 8 
+
+
+3,141 6 
+
+
+6,283 2 
+
+
+12,566 4 
+
+
+25,132 7 
+
+
+A 
+
+
+Mean 
+
+
+415 
+
+
+104 
+
+
+25,94 
+
+
+6,48 
+
+
+1,621 
+
+
+0,405 
+
+
+0,101 3 
+
+
+0,025 3 
+
+
+0,006 33 
+
+
+0,001 58 
+
+
+Upper 
+
+
+830 
+
+
+208 
+
+
+51,88 
+
+
+12,97 
+
+
+3,242 
+
+
+0.811 
+
+
+0,202 6 
+
+
+0,050 7 
+
+
+0,012 67 
+
+
+0,003 17 
+
+
+
+
+Lower 
+
+
+830 
+
+
+208 
+
+
+51,88 
+
+
+12,97 
+
+
+3,242 
+
+
+0,811 
+
+
+0,202 6 
+
+
+0,050 7 
+
+
+0,012 67 
+
+
+0,003 17 
+
+
+B 
+
+
+Mean 
+
+
+1 660 
+
+
+415 
+
+
+103,75 
+
+
+25,94 
+
+
+6,485 
+
+
+1,621 
+
+
+0,405 3 
+
+
+0,101 3 
+
+
+0,025 33 
+
+
+0,006 33 
+
+
+
+
+Upper 
+
+
+3 320 
+
+
+830 
+
+
+207,51 
+
+
+51,88 
+
+
+12.969 
+
+
+3.242 
+
+
+0.810 6 
+
+
+0,202 6 
+
+
+0,050 66 
+
+
+0,012 67 
+
+
+
+
+Lower 
+
+
+3 320 
+
+
+830 
+
+
+207,51 
+
+
+51,88 
+
+
+12,969 
+
+
+3,242 
+
+
+0,810 6 
+
+
+0,202 6 
+
+
+0,050 66 
+
+
+0,012 67 
+
+
+C 
+
+
+Mean 
+
+
+6 640 
+
+
+1 660 
+
+
+415,01 
+
+
+103,75 
+
+
+25.938 
+
+
+6.485 
+
+
+1.621 1 
+
+
+0,405 3 
+
+
+0,101 32 
+
+
+0,025 33 
+
+
+
+
+Upper 
+
+
+13 280 
+
+
+3 320 
+
+
+830,02 
+
+
+207,51 
+
+
+51,876 
+
+
+12.969 
+
+
+3,242 3 
+
+
+0.810 6 
+
+
+0,202 64 
+
+
+0,050 66 
+
+
+
+
+Lower 
+
+
+13 280 
+
+
+3 320 
+
+
+830,02 
+
+
+207,51 
+
+
+51,876 
+
+
+12.969 
+
+
+3,242 3 
+
+
+0.810 6 
+
+
+0,202 64 
+
+
+0,050 66 
+
+
+D 
+
+
+Mean 
+
+
+26 561 
+
+
+6 640 
+
+
+1 660,05 
+
+
+415,01 
+
+
+103,753 
+
+
+25.938 
+
+
+6,484 6 
+
+
+1.621 1 
+
+
+0,405 28 
+
+
+0,101 32 
+
+
+
+
+Upper 
+
+
+53 121 
+
+
+13 280 
+
+
+3 320,09 
+
+
+830,02 
+
+
+207,506 
+
+
+51.876 
+
+
+12,969 1 
+
+
+3,242 3 
+
+
+0,810 57 
+
+
+0,202 64 
+
+
+
+
+Lower 
+
+
+53 121 
+
+
+13 280 
+
+
+3 320,09 
+
+
+830,02 
+
+
+207,506 
+
+
+51.876 
+
+
+12,969 1 
+
+
+3,242 3 
+
+
+0,810 57 
+
+
+0,202 64 
+
+
+E 
+
+
+Mean 
+
+
+106 243 
+
+
+26 561 
+
+
+6 640,18 
+
+
+1 660,05 
+
+
+415,012 
+
+
+103.753 
+
+
+25.938 2 
+
+
+6.484 6 
+
+
+1,621 14 
+
+
+0,405 28 
+
+
+
+
+Upper 
+
+
+212 486 
+
+
+53 121 
+
+
+13 280,37 
+
+
+3 320,09 
+
+
+830,023 
+
+
+207,506 
+
+
+51,876 4 
+
+
+12.969 1 
+
+
+3,242 28 
+
+
+0,810 57 
+
+
+
+
+Lower 
+
+
+212 486 
+
+
+53 121 
+
+
+13 280,37 
+
+
+3 320,09 
+
+
+830,023 
+
+
+207,506 
+
+
+51.876 4 
+
+
+12.969 1 
+
+
+3,242 28 
+
+
+0,810 57 
+
+
+F 
+
+
+Mean 
+
+
+424 972 
+
+
+106 243 
+
+
+26 560,74 
+
+
+6 640,19 
+
+
+1 660,046 
+
+
+415,012 
+
+
+103,752 9 
+
+
+25.938 2 
+
+
+6.484 56 
+
+
+1,621 14 
+
+
+
+
+Upper 
+
+
+849 944 
+
+
+212 486 
+
+
+53 121,48 
+
+
+13 280,37 
+
+
+3 320.093 
+
+
+830,023 
+
+
+207,505 8 
+
+
+51.876 4 
+
+
+12,969 11 
+
+
+3,242 28 
+
+
+
+
+Lower 
+
+
+849 944 
+
+
+212 486 
+
+
+53 121,48 
+
+
+13 280,37 
+
+
+3 320.093 
+
+
+830,023 
+
+
+207,505 8 
+
+
+51.876 4 
+
+
+12,969 11 
+
+
+3,242 28 
+
+
+G 
+
+
+Mean 
+
+
+1699888 
+
+
+424 972 
+
+
+106 242,95 
+
+
+26 560,74 
+
+
+6 640,186 
+
+
+1 660,046 
+
+
+415,011 5 
+
+
+103,752 9 
+
+
+25,938 22 
+
+
+6,484 56 
+
+
+
+
+Upper 
+
+
+3399775 
+
+
+849 944 
+
+
+212 485,91 
+
+
+53 121,48 
+
+
+13 280,371 
+
+
+3320,092 
+
+
+830,023 
+
+
+207,505 8 
+
+
+51,876 45 
+
+
+12.969 11 
+
+
+H 
+
+
+Lower 
+
+
+3399775 
+
+
+849 944 
+
+
+212 485,91 
+
+
+53 121,48 
+
+
+13 280,371 
+
+
+3320,092 
+
+
+830,023 
+
+
+207,505 8 
+
+
+51,876 45 
+
+
+12.969 11 
+
+
+
+
+Mean 
+
+
+6799550 
+
+
+*1 699888 
+
+
+424 971,81 
+
+
+106 242,97 
+
+
+26 560,742 
+
+
+6640,184 
+
+
+1660,0460 
+
+
+415,011 6 
+
+
+103,752 90 
+
+
+25.938 22 
+
+
+
+22 
+
+
+
+IS 15592 :2005 
+ISO 8608 : 1995 
+
+
+
+Table C.4 — Geometric mean and limits of the r.m.s. displacement for the roughness for different classes 
+
+of roads as a function of the octave bands 
+
+NOTE — The mean values for road classes A and H are only for simulation purposes. 
+
+
+
+a) Spatial frequency units, n 
+
+
+
+• 
+
+EC O 
+
+
+Mun and 
+limits 
+
+r.m.s. 
+
+displacement 
+
+10" 3 m 
+
+
+Octave centra spatial frequency, «,. 
+
+cycles/m 
+
+
+0.007 8 
+
+
+0,016 
+
+
+0,031 
+
+
+0,062 
+
+
+0,125 
+
+
+0,25 
+
+
+0,5 
+
+
+1 
+
+
+2 
+
+
+4 
+
+
+A 
+
+
+Mean 
+Upper 
+
+
+4 
+
+5 
+
+
+3 
+4 
+
+
+2 
+3 
+
+
+1,3 
+1,9 
+
+
+1,0 
+
+1,3 
+
+
+0,7 
+
+1,0 
+
+
+0,48 
+0,67 
+
+
+0,34 
+0,48 
+
+
+0,24 
+0.34 
+
+
+0,17 
+0,24 
+
+
+B 
+
+
+Lower 
+Mean 
+Upper 
+
+
+5 
+8 
+11 
+
+
+4 
+
+5 
+8 
+
+
+3 
+4 
+5 
+
+
+1,9 
+2,7 
+3,8 
+
+
+1,3 
+1,9 
+2,7 
+
+
+1,0 
+1,3 
+1,9 
+
+
+0,67 
+0,95 
+1,35 
+
+
+0,48 
+0,67 
+0,95 
+
+
+0,34 
+0,48 
+0,67 
+
+
+0,24 
+0,34 
+0,48 
+
+
+C 
+
+
+Lower 
+
+- Mean 
+
+Upper 
+
+
+11 
+15 
+22 
+
+
+8 
+11 
+15 
+
+
+5 
+8 
+
+11 
+
+
+3,8 
+5,4 
+7,6 
+
+
+2,7 
+3.8 
+5.4 
+
+
+1.9 
+2,7 
+3,8 
+
+
+1,35 
+1,90 
+2,69 
+
+
+0,95 
+1,35 
+1,90 
+
+
+0,67 
+0,95 
+1,35 
+
+
+0.48 
+0.67 
+0.95 
+
+
+D 
+
+
+Lower 
+Mean 
+Upper 
+
+
+22 
+
+30 
+43 
+
+
+15 
+22 
+30 
+
+
+11 
+15 
+22 
+
+
+7,6 
+10,8 
+
+15,2 
+
+
+5,4 
+7,6 
+10,8 
+
+
+3,8 
+5,4 
+7.6 
+
+
+2,69 
+3.81 
+5.38 
+
+
+1,90 
+2.69 
+3,81 
+
+
+1,35 
+1,90 
+2,69 
+
+
+0,95 
+1.35 
+1,90 
+
+
+E 
+
+
+Lower 
+Mean 
+Upper 
+
+
+43 
+61 
+86 
+
+
+30 
+43 
+61 
+
+
+22 
+30 
+43 
+
+
+15,2 
+21,5 
+30,4 
+
+
+10,8 
+15,2 
+21,5 
+
+
+7,6 
+10,8 
+15,2 
+
+
+5,38 
+7.61 
+10,76 
+
+
+3,81 
+5,38 
+7,61 
+
+
+2,69 
+3.81 
+5.38 
+
+
+1,90 
+2,69 
+3.81 
+
+
+F 
+
+
+Lower 
+Mean 
+Upper 
+
+
+86 
+122 
+172 
+
+
+61 
+86 
+122 
+
+
+43 
+61 
+86 
+
+
+30,4 
+43,1 
+60,9 
+
+
+21,5 
+30,4 
+43.1 
+
+
+15,2 
+21,5 
+30.4 
+
+
+10.76 
+15.22 
+21,53 
+
+
+7,61 
+
+10,76 
+
+15,22 
+
+
+5,38 
+7,61 
+10,76 
+
+
+3,81 
+5,38 
+7.61 
+
+
+G 
+
+
+Lower 
+Mean 
+Upper 
+
+
+172 
+244 
+344 
+
+
+122 
+172 
+244 
+
+
+86 
+122 
+172 
+
+
+60,9 
+86,1 
+121,8 
+
+
+43,1 
+60.9 
+86,1 • 
+
+
+30.4 
+43,1 
+60,9 
+
+
+21.53 
+30.44 
+43,05 
+
+
+15,22 
+21,53 
+30,44 
+
+
+10,76 
+15,22 
+21,53 
+
+
+7,61 
+
+10,76 
+
+15,22 
+
+
+H 
+
+
+Lower 
+Mean 
+
+
+344 
+487 
+
+
+244 
+344 
+
+
+172 
+244 
+
+
+121,8 
+172,2 
+
+
+86,1 
+121.8 
+
+
+60,9 
+86,1 
+
+
+43.05 
+60,89 
+
+
+30,44 
+43,05 
+
+
+21,53 
+30,44 
+
+
+15,22 
+21,53 
+
+
+
+23 
+
+
+
+IS 15592 
+ISO 8608 
+
+
+
+2005 
+1995 
+
+
+
+b) Angular spatial frequency units, Q 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~a in 
+
+m <n 
+o « 
+ee u 
+
+
+Mean and 
+limits 
+
+r.m.s. 
+
+displacement 
+
+10' 3 m 
+
+
+Octave centra angular spatial frequency, fl c 
+
+rad/m 
+
+
+0,049 1 
+
+
+0,098 
+
+
+0,196 
+
+
+0,393 
+
+
+0.785 
+
+
+1.571 
+
+
+3,14 
+
+
+6,28 
+
+
+12,57 
+
+
+25,13 
+
+
+A 
+
+
+Mean 
+Upper 
+
+
+3,8 
+5,4 
+
+
+2,7 
+3,8 
+
+
+1,9 
+2,7 
+
+
+1,34 
+1,90 
+
+
+0,95 
+
+1,34 , 
+
+
+0,67 
+0,95 
+
+
+0,47 
+0,67 
+
+
+0,34 
+0,47 
+
+
+0,24 
+0,34 
+
+
+0,17 
+0,24 
+
+
+B 
+
+
+Lower 
+Mean 
+Upper 
+
+
+5,4 
+7,6 
+10,7 
+
+
+3,8 
+5,4 
+7,6 
+
+
+2,7 
+3,8 
+5,4 
+
+
+1,90 
+2,68 
+3,80 
+
+
+1.34 
+1,90 
+2,68 
+
+
+0,95 
+1,34 
+1,90 
+
+
+0,67 
+0,95 
+1,34 
+
+
+0,47 
+0,67 
+0,95 
+
+
+0,34 
+0,47 
+0,67 
+
+
+0,24 
+0,34 
+0,47 
+
+
+C 
+
+
+Lower 
+Mean 
+Upper 
+
+
+10,7 
+15,2 
+21,5 
+
+
+7,6 
+10,7 
+15,2 
+
+
+5,4 
+7,6 
+
+10,7 
+
+
+3,80 
+5,37 
+7,59 
+
+
+2.68 
+3.80 
+5,37 
+
+
+1.90 
+2,68 
+3,80 
+
+
+1,34 
+1,90 
+2,68 
+
+
+0,95 
+
+1,34 
+1,90 
+
+
+0.67 
+0,95 
+1,34 
+
+
+0,47 
+0,67 
+0,95 
+
+
+D 
+
+
+Lower 
+Mean 
+Upper 
+
+
+21,5 
+30,4 
+42,9 
+
+
+15,2 
+21,5 
+30,4 
+
+
+10,7 
+15,2 
+21,5 
+
+
+7,59 
+10,74 
+
+15,18 
+
+
+5,37 
+7,59 
+10,74 
+
+
+3,80 
+5,37 
+7,59 
+
+
+2,68 
+3,80 
+5,37 
+
+
+1,90 
+2,68 
+3,80 
+
+
+1,34 
+1,90 
+2,68 
+
+
+0,95 
+1,34 
+1,90 
+
+
+E 
+
+
+Lower 
+Mean 
+Upper 
+
+
+42,9 
+60,7 
+85,9 
+
+
+30,4 
+42,9 
+60,7 
+
+
+21,5 
+30.4 
+42,9 
+
+
+15,18 
+21,47 
+30,36 
+
+
+10,74 
+15,18 
+21,47 
+
+
+7,59 
+10,74 
+15,18 
+
+
+5,37 
+7,59 
+10,74 
+
+
+3.80 
+5,37 
+7,59 
+
+
+2,68 
+3,80 
+5,37 
+
+
+1,90 
+2,68 
+3,80 
+
+
+F 
+
+
+Lower 
+Mean 
+Upper 
+
+
+85,9 
+121,5 
+171,8 
+
+
+60,7 
+85,9 
+121,5 
+
+
+42.9 
+60,7 
+85,9 
+
+
+30,36 
+42,94 
+60,73 
+
+
+21,47 
+30,36 
+42,94 
+
+
+15,18 
+21,47 
+30,36 
+
+
+10,74 
+15,18 
+21,47 
+
+
+7,59 
+10,74 
+15,18 
+
+
+5,37 
+7,59 
+10,74 
+
+
+3,80 
+5,37 
+7,59 
+
+
+G 
+
+
+Lower 
+Mean 
+Upper 
+
+
+171,8 
+242,9 
+343,5 
+
+
+121,5 
+171,8 
+242,9 
+
+
+85,9 
+
+121,5 
+171,8 
+
+
+60,73 
+85,88 
+121,45 
+
+
+42,94 
+60,73 
+85,88 
+
+
+30,36 
+42,94 
+60,73 
+
+
+21,47 
+30,36 
+42,94 
+
+
+15.18 
+21,47 
+30,36 
+
+
+10,74 
+15,18 
+21,47 
+
+
+7,59 
+10,74 
+15,18 
+
+
+H 
+
+
+Lower 
+Mean 
+
+
+343,5 
+485,8 
+
+
+242,9 
+343,5 
+
+
+171,8 
+242,9 
+
+
+121,45 
+171,76 
+
+
+85,88 
+121,45 
+
+
+60,73 
+85,88 
+
+
+42,94 
+60,73 
+
+
+30,36 
+42,94 
+
+
+21,47 
+30.36 
+
+
+15,18 
+21,47 
+
+
+
+24 
+
+
+
+IS 15592 
+ISO 8608 
+
+
+
+2005 
+1995 
+
+
+
+Annex D 
+
+(informative) 
+
+Considerations for PSD processing and precision 
+
+
+
+D.I General 
+
+The most common technique for PSD evaluation is 
+the use of the Fast Fourier Transform (FFT) of digital 
+profile data. Other techniques, however, could be 
+used. 
+
+D.2 Symbols 
+
+See table D.1. 
+
+D.3 Digitizing of data 
+
+Digitizing requires two settings, ru. and N. 
+
+In this case, the following relevant parameters are 
+fixed: 
+
+% = nJ2, minimum required; as an approximation, 
+to avoid aliasing: /^ = r^fi 
+
+lT, = nJN=ML' 
+
+D.4 Signal conditioning prior to 
+digitizing 
+
+A signal to be digitized and subsequently Fourier 
+transformed may not contain spectral components 
+above one-half the sampling frequency to avoid alia- 
+sing. The application of anti-aliasing filters is necess- 
+ary in most cases. 
+
+Prior to digitizing, frequency components, the period 
+of which is longer than the record length of one block, 
+may be reduced or eliminated with a high-pass filter 
+with an appropriate low cut-off frequency (this ma- 
+nipulation is called de-trending). 
+
+De-trending may also be accomplished after digitizing 
+by digital methods of regression analysis with low- 
+order polynomials. 
+
+
+
+D.5 Sampling window 
+
+Some form of sampling window is usually necessary 
+to avoid the distortion of the spectrum known as 
+leakage. Numerous weighting curves are available and 
+a correction factor is used. 
+
+
+
+Table D.I — Symbols 
+
+
+
+Symbol 
+
+
+Description 
+
+
+Unit 
+
+
+«'. 
+
+
+Frequency resolution, resorting 
+from FFT 
+
+
+cycles/m 
+
+
+B. 
+
+
+Reported frequency resolution 
+
+
+cycles/m 
+
+
+B, 
+
+
+Actual half-power point bandwidth 
+of the peak 
+
+
+cycles/m 
+
+
+E[.] 
+
+
+Expected value of [.] 
+
+
+
+
+G 
+
+
+True value of the PSD 
+
+
+
+
+6 
+
+
+Estimated value of the PSD 
+
+
+
+
+G" 
+
+
+Second derivative of the PSD 
+
+
+
+
+L 
+
+
+Total sampling distance or total 
+record 
+
+
+m 
+
+
+V 
+
+
+Record length of one block for FFT 
+
+
+m 
+
+
+AL 
+
+
+Sampling interval 
+
+
+m 
+
+
+n 
+
+
+Spatial frequency 
+
+
+cycles/m 
+
+
+% 
+
+
+Highest spectral frequency to be 
+analysed 
+
+
+cycles/m 
+
+
+"i 
+
+
+Lowest spectral frequency to be 
+analysed 
+
+
+cycles/m 
+
+
+"s 
+
+
+Sampling frequency 
+
+
+cycles/m 
+
+
+N 
+
+
+Block size for FFT; normally to be 
+rounded up to the nearest power 
+of two 
+
+
+
+
+<? 
+
+
+Number of blocks in time aver- 
+aging 
+
+
+— 
+
+
+r 
+
+
+Number of averaged components 
+in frequency smoothing 
+
+
+— 
+
+
+c 
+
+
+Total normalized mean-square er- 
+
+
+— 
+
+
+«b 
+
+
+ror 
+
+Bias error 
+
+
+__ 
+
+
+*r 
+
+
+Normalized standard error (equals 
+the random error) 
+
+
+
+
+
+
+D.6 Statistical precision 
+
+0.6.1 General 
+
+The precision of PSD may be thought of in terms of 
+two component sources of error. The total normalized 
+mean-square error, e, is given by: 
+
+
+
+25 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+
+1/2 
+
+
+
+/ 2 , 2\1/2 
+
+
+
+where 
+
+L" is the calculated block size for FFT, in metres; 
+the other symbols are as defined in table D.1. 
+
+The first term represents the normalized random error 
+component e, and the second the normalized bias er- 
+ror £ b . From this expression, conflicting error require- 
+ments on the frequency resolution B e can be seen. 
+The bias error increases with B e , while the random 
+error decreases with B e but also with L. Thus the 
+strategy is to select B s based upon bias error con- 
+siderations and then proceed to reduce random error 
+by taking advantage of its additional dependence on 
+record length. A more complete explanation of stat- 
+istical errors can be found in reference [7]. 
+
+D.6.2 Random error 
+
+The normalized standard error is defined as the ran- 
+dom error: 
+
+
+
+(BeL) 
+
+
+
+1/2 
+
+
+
+This means that the normalized standard error is equal 
+to 
+
+
+
+\1/2 
+
+
+
+e r = (1/<7) ' for time averaging 
+
+£ r = (1/r) 1/2 for frequency smoothing 
+
+£ r = [1/(r-<7)] 1/2 for combined procedures 
+
+D.6.2. 1 Time averaging 
+
+Time averaging involves cutting the total signal length 
+into equal blocks, computing the spectrum of each 
+individual block, and then averaging these spectra to 
+the resulting spectrum: 
+
+q = L/L' number of blocks 
+
+B e = B' e = '\ \L' frequency resolution 
+
+
+
+D.6.2.2 Frequency smoothing 
+
+Frequency smoothing involves computing the spec- 
+trum of the entire record and then averaging the 
+spectra at adjacent frequencies: 
+
+r = number of frequency components of the orig- 
+inal spectrum which are averaged together 
+
+B e = r-B' e = r\L frequency resolution 
+NOTES 
+
+20 Time averaging requires less computer memory than 
+frequency smoothing for the same normalized standard er- 
+ror. 
+
+21 The equations given for the normalized standard error 
+apply only in the case where all of the time averages are 
+from independent time series (blocks) of data, for example 
+where the averages are from consecutive time series 
+(blocks). For the case where the averages are from 
+overlapping segments of a longer time history, or when in 
+doubt, the normalized standard error should be calculated 
+from 
+
+£r =(S e -L)- 1 ' 2 
+
+D.6.3 Bias error 
+
+Though it is of more importance for rail tracks, in road 
+profile data the bias error is also of importance in the 
+consideration of PSDs used to represent road profile 
+geometry data thought to contain periodic compo- 
+nents. Because the bias error term in the equation 
+given in D.6.1 is a function of the second derivative 
+of the PSD, it plays a crucial role in the estimation of 
+spectral peaks. When bias error exists, sharp peaks in 
+the PSD will tend to be underestimated. Although 
+there is no proof that spectral peaks in profile data 
+behave like resonant peaks of a second-order system, 
+an idea of this underestimation is given in reference 
+[7]. Figure D.1 gives the bias error for a second-order 
+system. B, is the actual half-power point bandwidth 
+of the actual peak. 
+
+Figure D.1 is calculated using 
+
+D = G(n)IG{n) = arctan(fl e /fl r )-£ r /fi e 
+
+The bias error is 
+1 -D 
+
+
+
+«b = 
+
+
+
+D 
+
+
+
+In road profiles, the probability of high periodic peaks 
+is small and normally the influence of the bias error 
+may be neglected. 
+
+
+
+26 
+
+
+
+IS 15592 
+ISO 8608 
+
+
+
+2005 
+1995 
+
+
+
+D,7 Selection of parameters 
+
+D.7.1 In general, the precision problem may be 
+characterized in terms of three sets of constraints 
+which enter into the selection of parameters. 
+
+a) Application constraints: desired frequency range 
+and desired statistical precision. 
+
+b) Measurement constraints: longest allowable rec- 
+ord length and shortest allowable sampling inter- 
+val. 
+
+c) Computational costs: number of points input to 
+FFT routine, amount of computer memory re- 
+quired, additional computational routines. 
+
+Normally the value of resolution, fi e , is chosen to be 
+equal to the lowest spatial frequency in the spectrum 
+of interest. This value is the minimum required to pick 
+out the longest wavelength of interest in the data, and 
+thus is the least expensive choice in terms of trade-off 
+costs. 
+
+
+
+In this case, the distance between the first two 
+spectral lines is one octave. The lowest spectral line 
+also may contain a (ot of leakage from components 
+at almost Hz. For this reason it is recommended to 
+use a much smaller frequency resolution and then 
+disregard the data of the first two or three spectral 
+lines. When the first spectral line above Hz is used, 
+the data shall be carefully de-trended. 
+
+D.7.2 In the following example the use of time av- 
+eraging is assumed. 
+
+The following expressions are useful: 
+
+«s = 2^: minimum sampling frequency allowed 
+
+N = 2n s \n(. minimum blocksize for FFT; normally 
+rounded up to the nearest power of two 
+
+Figure D. 2 shows the relationship between the nor- 
+malized standard error, the resolution, the blocksize 
+and the total signal length for the example given in 
+table D. 2. 
+
+
+
+Q.8 
+
+
+
+0.6 
+
+
+
+O.U 
+
+
+
+0,2 
+
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5 1 
+
+
+1. 
+
+
+5 2 
+
+
+
+Bandwidth ratio, — 
+
+
+
+Figure D.I — Bias error for second-order system response 
+
+
+
+27 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+. 1 
+
+
+
+I 0.9 
+
+
+
+
+0,04 0,05 
+
+Resolution, B e (cycles/m) 
+
+Figure D.2 — Random error and bias error for peaks with 0,01 cycles/m half-power bandwidth 
+
+(see table D.2) 
+
+
+
+28 
+
+
+
+IS 15592 : 2005 
+ISO 8608 : 1995 
+
+
+
+Table D.2 — Example of the relationship between the different parameters, 
+
+error for different measuring situations 
+
+
+
+the bias error and the random 
+
+
+
+Case 
+
+
+1 
+
+
+2 
+
+
+3 
+
+
+4 
+
+
+5 
+
+
+6 
+
+
+7 
+
+
+8 
+
+
+Total signal length, L (m) 
+
+
+1 000 
+
+
+1 000 
+
+
+1 000 
+
+
+1 000 
+
+
+2 000 
+
+
+2 000 
+
+
+2 000 
+
+
+2 000 
+
+
+Length of block, V (m) 
+
+
+1 000 
+
+
+1 000 
+
+
+200 
+
+
+100 
+
+
+2 000 
+
+
+2 000 
+
+
+200 
+
+
+100 
+
+
+Resolution, B e (cycles/m) 
+
+
+0,005 
+
+
+0,01 
+
+
+0,005 
+
+
+0,01 
+
+
+0,005 
+
+
+0,01 
+
+
+0,005 
+
+
+0,01 
+
+
+Highest wavelength, 1 1B e 
+
+(m) 
+
+
+200 
+
+
+100 
+
+
+200 
+
+
+100 
+
+
+200 
+
+
+100 
+
+
+200 
+
+
+100 
+
+
+Number of blocks, q 
+
+
+1 
+
+
+1 
+
+
+5 
+
+
+10 
+
+
+1 
+
+
+1 
+
+
+10 
+
+
+20 
+
+
+Random error, e, 
+
+
+0,2 
+
+
+0,1 
+
+
+0.45 
+
+
+0,32 
+
+
+0,1 
+
+
+0,05 
+
+
+0,32 
+
+
+0,22 
+
+
+Bias error, « b 
+
+
+0,078 
+
+
+0,27 
+
+
+0,078 
+
+
+0,27 
+
+
+0,078 
+
+
+0,27 
+
+
+0,078 
+
+
+0,27 
+
+
+Lowest wavelength, 
+
+lK(m) 
+
+
+A 
+
+
+0,2 
+
+
+0,2 
+
+
+0,2 
+
+
+0,2 
+
+
+0,2 
+
+
+0,2 
+
+
+0,2 
+
+
+0,2 
+
+
+B 
+
+
+0,5 
+
+
+0,5 
+
+
+0,5 
+
+
+0,5 
+
+
+0,5 
+
+
+0,5 
+
+
+0,5 
+
+
+0,5 
+
+
+Sampling 
+frequency, 3« h 
+
+(cycles/m) 
+
+
+A 
+
+
+15 
+
+
+15 
+
+
+15 
+
+
+15 
+
+
+15 
+
+
+15 
+
+
+15 
+
+
+15 
+
+
+B 
+
+
+6 
+
+
+6 
+
+
+6 
+
+
+6 
+
+
+6 
+
+
+6 
+
+
+6 
+
+
+6 
+
+
+Number of samples 
+per block, L'-3t\ 
+
+
+A 
+
+
+15 000 
+
+
+15 000 
+
+
+3 000 
+
+
+1 500 
+
+
+30 000 
+
+
+30 000 
+
+
+3 000 
+
+
+1 500 
+
+
+B 
+
+
+6 000 
+
+
+6 000 
+
+
+1 200 
+
+
+600 
+
+
+12 000 
+
+
+12 000 
+
+
+1 200 
+
+
+600 
+
+
+Number of samples 
+rounded up to the 
+nearest power of 2 
+
+
+A 
+
+
+16 384 
+
+
+16 384 
+
+
+4 096 
+
+
+2 048 
+
+
+32 768 
+
+
+32 768 
+
+
+4 096 
+
+
+2 048 
+
+
+B 
+
+
+8 192 
+
+
+8 192 
+
+
+2 048 
+
+
+1 024 
+
+
+16 384 
+
+
+16 384 
+
+
+2 048 
+
+
+1 024 
+
+
+NOTE — Case A gives as highest spatial frequency 5 cycles/m. 
+Case B gives as highest spatial frequency 2 cycles/m. 
+
+
+
+29 
+
+
+
+IS 1 5592 : 2005 
+ISO 8608 : 1995 
+
+
+
+Annex E 
+
+(informative) 
+
+Bibliography 
+
+
+
+[1] ISO 2631-1 :1985, Evaluation of human exposure 
+to whole-body vibration — Part 1: General re- 
+quirements. 
+
+[2] ISO 2631 -3; 1985, Evaluation of human exposure 
+to whole-body vibration — Part 3: Evaluation of 
+exposure to whole-body z-axis vertical vibration 
+in the frequency range 0, 7 to 0,63 Hz. 
+
+[3] 150 8002:1986, Mechanical vibrations — Land 
+vehicles — Method for reporting measured 
+data. 
+
+[4] Braun, H. Me&ergebnisse von StrafSen- 
+unebenheiten, VDI-Berichte Nr. 877, Diisseldorf, 
+1991. 
+
+[5] La Barre, R.P., Forbes, R.T. and Andrew, S. 
+The measurement and analysis of road surface 
+roughness, MIRA Research Report, 1970/5. 
+
+[6] Mitschke, M. Dynamik der Kraftfahrzeuge, Band 
+B: Schwingungen, Springer Verlag, Berlin- 
+Heidelberg-New York, 1 984. 
+
+[7] Bendat, J.S. and Piersol, A.G. Random data: 
+analysis and measurement procedures, John 
+Wiley and Sons, New York, 1971. 
+
+
+
+[8] Ruf, G. Theoretische Untersuchungen des 
+Federungsverhaltens von Vierrad- 
+
+Straftenfahrzeugen. Fortschrittsberichte des 
+VDL Zeitschriften-Reihe 12 (Verkehrstechnik); 
+Nr. 44, 1983. 
+
+[9] Sayers, M. and Gillepsie, T.D. The -Effect of 
+Suspension System Non-Linearities on Truck Vi- 
+bration. Proc. IAVSD Symposium on Dynamics 
+of Vehicles on Road and Trucks, Cambridge, UK, 
+1981, p. 154. 
+
+[10] Dodds, C.J. and Robson, J.D. The description 
+of the road profile roughness. Journal of Sound 
+and Vibration, 31, 1973, pp. 175-183. 
+
+[11] Verschoore, R. Neuere Ergebnisse bei 
+Schwingungsuntersuchungen an einem 
+StraGensimulator, ATZ, 79 {718), 1977, 
+pp. 311-313. 
+
+[12] Verschoore, R. Vehicle suspension on a 
+fourtrack hydraulic simulator, 19th FISITA Con- 
+gress, 1982, Melbourne. 
+
+[13] Proceedings of the Second European Sympo- 
+sium on Penetration Testing: Dynamic cone 
+penetrometer (DCPj, Amsterdam, May 1982, 
+p. 277. 
+
+
+
+30 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods 
+and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any form 
+without the prior permission in writing of BIS. This does not preclude the free use, in the course of 
+implementing the standard, of necessary details, such as symbols and sizes, type or grade designations. 
+Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also 
+reviewed periodically; a standard along with amendments is reaffirmed when such review indicates that 
+no changes are needed; if the review indicates that changes are needed, it is taken up for revision. 
+Users of Indian Standards should ascertain that they are in possession of the latest amendments or 
+edition by referring to the latest issue of 'BIS Catalogue' and 'Standards : Monthly Additions'. 
+
+This Indian Standard has been developed from Doc : No. ME 28 (0805). 
+
+
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters : 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 1 002 
+Telephones : 2323 01 31, 2323 33 75, 2323 94 02 
+
+Regional Offices : 
+Central 
+
+
+
+Eastern 
+
+
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110 002 
+
+1/14 C.I.T. Scheme VII M, V. I. P. Road, Kankurgachi 
+KOLKATA 700 054 
+
+
+
+Northern ; SCO 335-336, Sector 34-A, CHANDIGARH 160 022 
+
+
+
+Southern : C.I.T. Campus, IV Cross Road, CHENNAI 600 1 13 
+
+
+
+Western 
+
+
+
+Branches 
+
+
+
+Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400 093 
+
+
+
+Telegrams : Manaksanstha 
+(Common to all offices) 
+
+
+
+{ 
+
+
+
+Telephone 
+
+2323 76 17 
+2323 38 41 
+
+
+
+("2337 84 99, 2337 85 61 
+\2337 86 26, 2337 91 20 
+
+f 260 38 43 
+\ 260 92 85 
+
+f2254 12 16, 2254 14 42 
+\.2254 25 19,2254 2315 
+
+{2832 92 95,2832 7858 
+2832 78 91,2832 78 92 
+
+
+
+: AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. FARIDABAD. 
+GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+NALAGARH. PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM. VISAKHAPATNAM. 
+
+
+
+Printed at Prabhat Offset Press, New Delhi-2 
+
+
+

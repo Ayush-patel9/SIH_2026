@@ -1,0 +1,4374 @@
+**************** 
+
+
+
+-k is^ 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+"^^ ^ ^ ^ % ?R^" 
+
+Jawaharlal Nehru 
+
+Step Out From the Old to the New 
+
+
+
+^^iiT'jsiS'SfS^^^^*?*:: 
+
+
+
+
+•^■•■^^^■r 
+
+
+
+
+li^ i/ir w w w w w WW ^ ^ ^ tIt w w w 
+
+
+
+BLANK PAGE 
+
+
+
+^<ii^ 
+
+
+
+
+
+UI> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 14736 (Parti): 1999 
+^ ISO 7626-1 : 1986 
+
+'^{NaPT *1M<P ( Reaffirmed 2004 ) 
+
+//7c//an Standard 
+
+VIBRATION AND SHOCK — EXPERIMENTAL 
+DETERMINATION OF MECHANICAL MOBILITY 
+
+PART 1 BASIC DEFINITIONS AND TRANSDUCERS 
+
+
+
+ICS 17.160 
+
+
+
+© BIS 1999 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+October 1999 Price Group 9 
+
+
+
+Mechanical Vibration and Shock Sectional Committee, LM 04 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which Is identical with ISO 7626-1:1986 'Vibration and shock — Experimental 
+determination of mechanical mobility — Part 1 : Basic definitions and transducers' issued by the 
+International Organization for Standardization (ISO) was adopted by the Bureau of Indian Standards on 
+the recommendation of Mechanical Vibration and Shock Sectional Committee and approval of the Light 
+Mechanical Engineering Division Council. 
+
+The text of ISO Standard has been approved «as suitable for publication as Indian Standard without 
+deviations. In the adopted standard certain conventions are not identical to those used in Indian Standards. 
+Attention is especially drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should be read 
+as 'Indian Standard*. 
+
+b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice is 
+to use a full point (.) as the decimal marker. 
+
+In this adopted standard, reference appears to certain International Standards for which Indian Standards 
+also exist. The corresponding Indian Standards which are to be substituted in their place'are listed below 
+along with their degree of equivalence for the editions indicated: 
+
+International Corresponding Indian Standard Degree of 
+
+Standard Equivalence 
+
+ISO 2041 IS 11 71 7:1 999 Vocabulary on vibration and shock {first revision) Identical 
+
+The concerned technical committee has reviewed the provisions of the following International Standards 
+referred in this adopted standard and has decided that they are acceptable for use in conjunction with this 
+standard: 
+
+International Standard Title 
+
+ISO 4865 Vibration and shock — Methods for analysis and presentation of data 
+
+ISO 5347 Vibration and shock — Methods of calibration of vibration and shock pickups 
+
+lEC Publication Scale and sizes for plotting frequency characteristics and polar diagrams 
+
+263 
+
+
+
+IS 14736 (Parti ):1999 
+ISO 7626-1 : 1986 
+
+Indian Standard 
+
+VIBRATION AND SHOCK — EXPERIMENTAL 
+DETERMINATION OF MECHANICAL MOBILITY 
+
+PART 1 BASIC DEFINITIONS AND TRANSDUCERS 
+
+
+
+Introduction 
+
+0.1 General introduction to ISO 7626 on mobility 
+measurement 
+
+Dynamic characteristics of structures can be determined as a 
+function of frequency from mobilitv measurements or measure- 
+ments of the related frequency-response functions, l<nown as 
+accelerance and dynamic compliance. Each of these frequency- 
+response functions is the phasor of the motion response at a 
+point on a structure due to a unit force (or moment) excitation. 
+The magnitude and the phase of these functions are frequency- 
+dependent. 
+
+Accelerance and dynamic compliance differ from mobility only 
+in that the motion response is expressed in terms of acceler- 
+ation or displacement, respectively, instead of in terms of velo- 
+city. In order to simplify the various parts of ISO 7626, only the 
+term "mobility" will be used. It is understood that all test pro- 
+cedures and requirements described are also applicable to the 
+determination of accelerance and dynamic compliance. 
+
+Typical applications for mobility measurements are for 
+
+a) predicting the dynamic response of structures to known 
+or assumed input excitation; 
+
+b) determining the modal properties of a structure (natural 
+frequencies, mode shapes and damping ratios); 
+
+c} predicting the dynamic interaction of interconnected 
+structures; 
+
+d) checking the validity and improving the accuracy of 
+mathematical models and structures; 
+
+e) determining dynamic properties (i.e. the complex 
+modulus of elasticity) of materials in pure or composite 
+forms. 
+
+For some applications, a complete description of the dynamic 
+characteristics may be required using measurements of transla- 
+tionai forces and motions along three mutually perpendicular 
+axes as well as measurements of moments and rotational mo- 
+tions about these three axes. This set of measurements results 
+in a 6 X 6 mobility matrix for each location of interest. For N 
+locations on a structure, the system thus has an overall mobility 
+matrix of size 6^ x QN. 
+
+
+
+For most practical applications, it is not necessary to know the 
+entire 6N x 6/V matrix. Often it is sufficient to measure the 
+driving-point mobility and a few transfer mobilities by exciting 
+with a force at a single point in a single direction and measuring 
+the translational response motions at key points on the struc- 
+ture. In other applications, only rotational mobilities may be of 
+interest. 
+
+In order to simplify the use of the various parts of ISO 7626 in 
+the various mobility measurement tasks encountered in prac- 
+tice, ISO 7626 will be published as a set of five separate parts. 
+
+ISO 7626/1 (this part of ISO 7626) covers basic definitions and 
+transducers. The information given in this part of ISO 7626 is 
+common to most mobility measurement tasks. 
+
+ISO 7626/2 covers mobility measurements using single-point 
+translational excitation with an attached exciter. 
+
+ISO 7626/3 covers mobility measurements using single-point 
+rotational excitation with an attached exciter. This information 
+is primarily intended for rotor system rotational resonance 
+predictions. 
+
+ISO 7626/4 covers measurements of the entire mobility matrix 
+using attached exciters. This includes the translational, ro- 
+tational and combination terms required for the 6 x 6 matrix 
+for each location on the structure. 
+
+ISO 7626/5 covers mobility measurements using impact excita- 
+tion with an exciter which is not attached to the structure. 
+
+Mechanical mobility is defined as the frequency-response func- 
+tion formed by the ratio of the phasor of the translational or 
+rotational response velocity to the phasor of the applied force 
+or moment excitation. If the response is measured with an ac- 
+celerometer, conversion to velocity is required to obtain the 
+mobility. Alternatively, the ratio of acceleration to force, know 
+as accelerance, may be used to characterize a structure. In 
+other cases, dynamic compliance, the ratio of displacement to 
+force, may be used. 
+
+NOTE — Historically, frequency-response functions of structures have 
+often been expressed in terms of the reciprocal of one of the above- 
+named dynamic characteristics. The arithmetic reciprocal of 
+mechanical mobility has often been called mechanical impedance. It 
+should be noted, however, that this is misleading because the 
+arithmetic reciprocal of mobility does not, in general, represent any of 
+the elements of the impedance matrix of a structure. This point is 
+elaborated upon in annex A. 
+
+
+
+IS 14736 { Part 1 ) 
+ISO 7626-1 : 1986 
+
+
+
+1999 
+
+
+
+Mobility test data cannot be used directly as part of an im- 
+pedance model of the structure. In order to achieve compatibi- 
+lity of the data and the model, the impedance matrix of the 
+model shall be converted to mobility or vice-versa {see 
+clause A.3 for limitations). 
+
+
+
+0.2 Introduction to this part of ISO 7626 
+
+Before carrying out mobility measurements, it is necessary to 
+evaluate the characteristics of the force and response 
+transducers to be used in order to ensure that accurate 
+amplitude and phase information can be obtained over the 
+entire frequency range of interest. 
+
+This part of ISO 7626 is primarily a guide for the selection, 
+calibration and evaluation of the transducers and instruments 
+for their suitability in making mobility measurements. 
+
+
+
+1 Scope and field of application 
+
+This part of ISO 7626 provides basic definitions with comments 
+and identifies the calibration tests, environmental tests and 
+physical measurements necessary to determine the suitability 
+of impedance heads, force transducers and response 
+transducers for use in measuring mechanical mobility. 
+
+This part of ISO 7626 is limited to information which is basic to 
+various types of driving point and transfer mobility, acceterance 
+and dynamic compliance measurements. Blocked impedance 
+(see 4.3) measurements are not dealt with. 
+
+NOTE — Procedures for carrying out mobility measurements in various 
+circumstances will be dealt with In ISO 7626/2, ISO 7626/3, 
+ISO 7626/4 and ISO 7626/5. 
+
+
+
+2 References 
+
+ISO 2041, Vibration and shock — Vocabulary. 
+
+ISO 4865, Vibration and shock — Methods for analysis and 
+presentation of data, n 
+
+ISO 5347, Vibration and shock — Methods of calibration of 
+vibration and shock pickups. D 
+
+lEC Publication 263, Scales and sizes for plotting frequency 
+characteristics and polar diagrams. 
+
+
+
+3 Symbols and units 
+
+
+
+Symbol 
+
+
+1 
+
+Quantity 
+
+
+SI unit 
+
+
+a 
+
+
+Acceleration 
+
+
+m/s2 
+
+
+a^lFj 
+
+
+Accelerance 
+
+
+m/(N-s2) 
+
+
+E 
+
+
+Transducer output 
+
+
+V 
+
+
+f 
+
+
+Frequency 
+
+
+Hz 
+
+
+F 
+
+
+Force 
+
+
+N 
+
+
+k 
+
+
+Stiffness 
+
+
+N/m 
+
+
+m 
+
+
+Mass 
+
+
+kg 
+
+
+S 
+
+
+Sensitivity 
+
+
+V/ units of 
+input variable 
+
+
+V 
+
+
+Velocity 
+
+
+m/s 
+
+
+X 
+
+
+Displacement 
+
+
+m 
+
+
+X,lFj 
+
+
+Dynamic compliance 
+
+
+m/N 
+
+
+^U 
+
+
+Mobility 
+
+
+m/{N.s) 
+
+
+Z 
+
+
+Free impedance 
+
+
+N.s/m 
+
+
+Zu 
+
+
+Blocked impedance 
+
+
+N-s/m 
+
+
+
+4 Definitions 
+
+For the general terms and their definitions used in this part of 
+ISO 7626, see ISO 2041. Several of the more important defi- 
+nitions used in the measurement and presentation of mecha- 
+nical mobility data are listed below to emphasize their use in 
+this part of ISO 7626. 
+
+4.1 frequency-response function: The frequency depen- 
+dent ratio of the motion-response phasor to the phasor of the 
+excitation force. 
+
+NOTES 
+
+1 Frequency-response functions are properties of linear dynamic 
+systems which do not depend on the type of excitation function. Ex- 
+citation can be harmonic, random or transient functions of time. The 
+test results obtained with one type of excitation can thus be used for 
+predicting the response of the system to any other type of excitation. 
+Phasors and their equivalents for random and transient excitation are 
+discussed in annex B. 
+
+2 Linearity of the system is a condition which, in practice, will be met 
+only approximately, depending on the type of system and on the 
+magnitude of the input. Care has to be taken to avoid non-linear ef- 
+fects, particularly when applying impulse excitation. Structures which 
+are known to be non-linear (e.g. certain riveted structures) should not 
+be tested with impulse excitation and great care is required when using 
+random excitation for testing such structures. 
+
+
+
+1 ) At present at the stage of draft. 
+
+
+
+IS 14736 (Parti ) 
+ISO 7626-1 : 1986 
+
+
+
+1999 
+
+
+
+3 Motion may be expressed in terms of eitlier velocity, acceleration or 
+displacement; the corresponding frequency-response function 
+designations are mobility, accelerance and dynamic compliance, 
+respectively. 
+
+
+
+4.2 mobility, y,/. The frequency-response function fornned 
+by the ratio of the velocity-response phasor at point / to the ex- 
+citation force phasor at point j, with all other measurement 
+points on the structure allowed to respond freely without any 
+constraints other than those constraints which represent the 
+normal support of the structure in its intended application. A 
+typical graph is given in figure 1 . 
+
+NOTES 
+
+1 The velocity response can be either translational or rotational, and 
+the excitation force can be either a rectilinear force or a moment. 
+
+2 If the velocity response measured is a translational one and if the 
+excitation force applied is a rectilinear one, the mobility term should be 
+expressed in metres per newton second in the St system. 
+
+
+
+4.3 blocked Impedance, Zjf. The frequency-response func- 
+tion formed by the ratio of the phasor of the blocking or driving- 
+point force response at point / to the phasor of the applied ex- 
+citation velocity at pointy, with all other measurement points 
+on the structure "blocked" (i.e. constrained to have 2ero velo- 
+city). All forces and moments required to constrain fully all 
+
+
+
+r\*-\Ir»+«* /^f ir»t£l*■Oc^+ r\r^ thic 
+
+
+
+■^fi if£^ oK-all Kd 
+
+
+
+r^a^^i irc^i 
+
+
+
+,H if-» r>triA£^r +<-» 
+
+
+
+obtain a valid blocked impedance matrix. Blocked impedance 
+measurements (see [13]) are, therefore, seldom made and are 
+not dealt with in the various parts of ISO 7626. 
+
+NOTES 
+
+1 Any changes in the number of measurement points or their location 
+will change the blocked impedances at all measurement points. 
+
+
+
+2 The primary usefulness of blocked impedance is in the 
+mathematical modelling of a structure using lumped mass, stiffness 
+and damping elements or finite element techniques. When combining 
+or comparing such mathematical models with experimental mobility 
+data, it is necessary to convert the analytical blocked impedance matrix 
+into a mobility matrix, or vice versa, as discussed in annex A. 
+
+4.4 free impedance: The ratio of the applied excitation 
+force phasor to the resulting velocity phasor, with all other con- 
+nection points of the system free (i.e. having zero restraining 
+forces). Free impedance is the arithmetic reciprocal of a single 
+element of the mobility matrix, as defined in 4.2. 
+
+NOTES 
+
+1 Historically, no distinction has often been made between blocked 
+impedance and free impedance. Caution should, therefore, be exer- 
+cised in interpreting published data. 
+
+2 While experimentally determined free impedances could be 
+assembled into a matrix, this matrix would be quite different from the 
+blocked impedance matrix resulting from mathematical modelling of 
+the structure and, therefore, would not conform to the requirements 
+discussed in annex A for using mechanical impedance in an overall 
+theoretical analysis of the system. 
+
+4.5 Other frequency-response functions related 
+to mobility 
+
+
+
+sometimes used instead of mechanical mobility. These are 
+summarized in table 1. 
+
+Careful note should be taken of the comments on each type of 
+ratio. Typical magnitude graphs for accelerance and for 
+dynamic compliance, corresponding to the mobility graph 
+shown in figure 1, are shown in figures 2 and 3, respectively. 
+
+
+
+Table 1 — Equivalent definitions to be used for various kinds of measured frequency response functions 
+
+related to mechanical mobility 
+
+
+
+
+
+Motion expressed 
+
+
+Motion expressed 
+
+
+Motion expressed 
+
+
+
+
+as velocity 
+
+
+as acceleration 
+
+
+as displacement 
+
+
+Term 
+
+
+Mobility 
+
+
+Accelerance 
+
+
+Dynamic compliance 
+
+
+Symbol 
+
+
+y„ = ^,i^\, 
+
+
+«,/F, 
+
+
+x,/F, 
+
+
+Unit 
+
+
+m/(N.s) 
+
+
+m/{N.s2) = kg-1 
+
+
+m/N 
+
+
+Boundary conditions 
+
+
+F, = 0:k * J 
+
+
+Ff, ^ 0; k * j 
+
+
+F, = 0;k * J 
+
+
+See figure 
+
+
+1 
+
+
+2 
+
+
+3 
+
+
+Comment 
+
+
+Boundary conditions are easy to achieve experimentally 
+
+
+Term 
+
+
+Blocked impedance 
+
+
+Blocked effective mass 
+
+
+Dynamic stiffness 
+
+
+Symbol 
+
+
+Z,, = F^/Vj 
+
+
+Fila, 
+
+
+FA) 
+
+
+Unit 
+
+
+(N.s)/m 
+
+
+(N-s2)/m = kg 
+
+
+N/m 
+
+
+Boundary conditions 
+
+
+v^ = 0:k * j 
+
+
+a^ = ; k * j 
+
+
+.V(. = Q ; k It j 
+
+
+Comment 
+
+
+Boundary conditions are very difficult or impossible to achieve experimentally 
+
+
+Term 
+
+
+Free impedance 
+
+
+Effective mass (free effective mass) 
+
+
+Free dynamic stiffness 
+
+
+Symbol 
+
+
+^u 
+
+
+F,la, 
+
+
+F,fx, 
+
+
+Unit 
+
+
+(N.s)/m 
+
+
+(N-s^l/m = kg 
+
+
+N/m 
+
+
+Boundary conditions 
+
+
+f , = ; At * y 
+
+
+/> = ; ^ ^ ,/ 
+
+
+F, = 0;k*j 
+
+
+Comment 
+
+
+1 p 
+Boundary conditions are easy to achieve, but results shall be used with great caution in system modelling 
+
+
+
+IS 14736 ( Part 1 ) : 1999 
+ISO 7626-1 : 1986 
+
+
+
+NOTES 
+
+1 Dynamic compliance is called "receptance" by several authors. 
+
+2 Accelerance has, regrettably, been called "inertance" In some 
+publications. This term is not a standard term and should be avoided 
+because it is in conflict with the common definition of "acoustic iner- 
+tance" and also contrary to the implication carried by the term "iner- 
+tance". 
+
+
+
+5.2. 1 The motion transducer should be of lightweight (or non- 
+contacting) design so as to minimize structural toading of the 
+structure under test. 
+
+5.2.2 The attachment of the transducer to the structure under 
+test should be stiff in the direction of the primary measurement 
+axis of the transducer. 
+
+
+
+4.6 frequency range of interest: Span, in hertz, from the 
+lowest frequency to the highest frequency at which mobility 
+data are to be obtained in a given test series. 
+
+
+
+5.2.3 The attachment should have a sufficiently small contact 
+area to prevent stiffening or damping of the structure by the 
+transducer or its mounting fixture. 
+
+
+
+5 Basic requirements for force- and 
+motion-measurement transducers 
+
+5.1 General 
+
+The basic characteristics of all measurement transducers which 
+are important in acquiring adequate mobility data are as 
+follows: 
+
+a) Transducers shall have sufficient sensitivity and low 
+noise in order to obtain a signal-to-noise ratio of the 
+measurement chain which is adequate to cover the dynamic 
+range of the mobility of the structure. Since lightly damped 
+structures require a larger dynamic range than structures 
+with considerable damping, transducer noise is of particular 
+concern when testing lightly damped structures. 
+
+b) If the frequency- response function of the measurement 
+transducer is not compensated by suitable signal process- 
+ing, the natural frequency of the response transducer shall 
+be far enough below or above the frequency range of in- 
+terest that no unacceptable phase shift will occur. 
+
+c) Transducer sensivity shall be stable with time and have 
+negligible d.c. drift. 
+
+d) Transducers shall be insensitive to extraneous en- 
+vironmental effects, such as temperature, humidity, 
+magnetic fields, electrical fields, acoustical fields, strain and 
+cross-axis inputs. 
+
+e) Transducer mass and rotational inertia shall be small so 
+as to avoid dynamic loading of the structure under test, or 
+at least small enough so that a correction can be made for 
+the loading. 
+
+Low susceptibility of the measurement system to the effects of 
+electrical ground loops and other extraneous signals is also im- 
+portant. 
+
+
+
+5.2 Requirements for motion-measurement 
+transducers 
+
+Although motion-measurement transducers require the 
+characteristics outlined in 5.1, certain of these characteristics 
+are more important than others. Motion transducers used in 
+mechanical mobility measurements are most commonly ac- 
+celerometers; however, displacement or velocity transducers 
+are sometimes used. The major characteristics to be considered 
+in transducer selection are outlined in 5.2.1 to 5.2.4. 
+
+
+
+5.2.4 When applying impulse excitation, zero drift of 
+piezoelectric accelerometers due to the pyro-electric effect is 
+likely to occur and this will limit the accuracy of the measure- 
+ment at low frequencies. Other types of motion transducers 
+(e.g. piezoresistive, electrodynamic»or some shear type piezo- 
+electronic accelerometers) can provide the solution to this 
+problem. 
+
+
+
+5.3 Requirements for force-measurement 
+transducers 
+
+Some of the characteristics outlined in 5.1 are more important 
+than others in the selection of a force-measurement transducer 
+to be used for mechanical mobility measurements. Since com- 
+promises in design have to be made, the items outlined in 5.3.1 
+to 5.3.3 shall be considered as being of prime importance. 
+
+5.3.1 The effective end mass (mass between the force- 
+sensing element of the transducer and the structure) should be 
+small enough to minimize extraneous inertial signals related to 
+such mass. (See 8.4 for further details.) 
+
+
+
+5.3.2 The stiffness of the force transducer and its com- 
+ponents should be selected so that no resonances involving this 
+stiffness occur within the frequency range of interest. As a 
+compromise, the effect of such resonances on the signal from 
+the force-sensing element should be compensated for by 
+suitable signal processing. 
+
+5.3.3 The static preload shall be adequate for the range of ex- 
+citation forces required by the test application. Transducers 
+with built-in preload are available to minimize this problem. 
+
+
+
+5.4 Requirements for impedance heads and 
+attachments to the structure under test 
+
+A device which combines an accelerometer and a force 
+transducer in one assembly for the purpose of mobility 
+measurement Is traditionally called an "impedance head". The 
+design is a compromise based on the characteristics outlined in 
+5.2 and 5.3. However, certain characteristics of prime import- 
+ance, given in 5.4.1 to 5.4.4, should be borne in mind. 
+
+
+
+5.4.1 The total compliance between the structure and the in- 
+ternal accelerometer should be small, because a large com- 
+pliance will cause errors in acceleration measurements. 
+
+
+
+IS 14736 (Parti ) 
+ISO 7626-1 : 1986 
+
+
+
+1999 
+
+
+
+NOTE - The total compliance is the sum of the attachment com- 
+pliance and the internal compliance of the impedance head. The at- 
+tachment compliance includes the localized "die effect" compliance of 
+the structure under test The total compliance can be measured as 
+described in annex C. 
+
+
+
+5.4.2 The effective end mass (mass between the force- 
+sensing element of the transducer and the structure) should be 
+small in relation to the free effective mass of the structure 
+under test. 
+
+5.4.3 The moment of inertia of the impedance head, relative 
+to an axis in the plane of attachment, should be small enough 
+to minimize structural loading due to rotational motion about 
+that axis. 
+
+NOTE — Further guidelines for av/oiding loading of the structure under 
+test by the attachment of impedance heads will be given In ISO 7626/2. 
+
+5.4.4 In the design of an impedance head, care is required to 
+avoid cross-sensitivity of the acceleration transducer to the ap- 
+plied force. 
+
+
+
+6 Calibration 
+
+Calibrations fall into three categories: 
+
+a) operational calibration of the combined measurement 
+and analysis system; 
+
+b) basic transducer calibrations; 
+
+c) supplementary transducer calibrations. 
+
+
+
+6.1 Operational calibrations 
+
+Operational calibrations of the combined measurement and 
+analysis system shall be carried out at the beginning and end of 
+each measurement series (and at intermediate times, as re- 
+quired). Detailed procedures w/ill be covered in the relevant 
+parts of ISO 7626 pertaining to the various types of mobility 
+measurements, as outlined in clause 0. 
+
+Combined system calibrations are easier to perform, more ac- 
+curate and in wider use than the basic calibrations discussed in 
+clause 7. These system calibrations are achieved by driving, in 
+free space, a known free mass while the acceleration and force 
+channel gains are set at the values that will be used in later 
+measurements. The ratio output shall follow the appropriate 
+mass line on the resulting mobility graph. If any difficulties are 
+experienced in combined system calibrations, basic calibrations 
+should be carried out. 
+
+
+
+used for mobility measurements, and the accelerometer is of a low 
+damping design. However, it Is good practice to display the phase 
+angle between the force transducer and accelerometer outputs on a 
+phase meter and record any deviations from the proper phase angle be- 
+tween the force transducer and accelerometer outputs while carrying 
+out the operational calibration. 
+
+
+
+6.2 Basic and supplementary transducer 
+calibrations 
+
+The basic and supplementary calibrations (see table 2) are in- 
+tended for determining the suitability of the transducers for 
+mobility measurements. Piezoelectric transducers are very fre- 
+quently used. If other types of transducers are used, the pro- 
+cedures may have to be modified to determine the suitability of 
+such transducers. 
+
+Transducers exhibiting changes in basic or supplementary 
+calibrations should not be used if the changes are unac- 
+ceptable, as indicated in the appropriate clauses in this part of 
+ISO 7626. 
+
+Table 2 — Summary of transducer calibrations and tests 
+
+
+
+Calibration 
+
+
+Accelerometer 
+
+
+Force 
+transducer 
+
+
+or test 
+
+
+Basic 
+
+
+Supple- 
+mentary 
+
+
+Basic 
+
+
+Suppler 
+mentary 
+
+
+Sensitivity 
+
+
+.7.2.1 
+
+
+
+
+7.2.2 
+
+
+
+
+Electrical impedance 
+
+
+7.3 
+
+
+
+
+7.3 
+
+
+
+
+Dimensions 
+
+
+
+
+8.2 
+
+
+
+
+8.2 
+
+
+Mass 
+
+
+
+
+8.3 
+
+
+
+
+8.3 
+
+
+Effective end mass 
+
+
+
+
+
+
+
+
+8.4 
+
+
+Transducer 
+
+
+
+
+
+
+
+
+
+
+compliance 
+
+
+
+
+
+
+
+
+8.5 
+
+
+Polarity 
+
+
+
+
+8.6 
+
+
+
+
+8.6 
+
+
+Frequency 
+
+
+
+
+
+
+
+
+
+
+response 
+
+
+
+
+8,7.1 
+
+
+
+
+8.7.2 
+
+
+Linearity 
+
+
+
+
+8.8.1 
+
+
+
+
+8.8.2 
+
+
+Temperature 
+
+
+
+
+8.9.1 
+
+
+
+
+8.9.1 
+
+
+sensitivity 
+
+
+
+
+and 8,9,2 
+
+
+
+
+and 8.9.2 
+
+
+Transverse 
+
+
+
+
+
+
+
+
+
+
+sensitivity 
+
+
+
+
+8.9.4 
+
+
+
+
+
+
+Strain 
+
+
+
+
+
+
+
+
+
+
+sensitivity 
+
+
+
+
+8.9.5 
+
+
+
+
+
+
+
+The accuracy of the frequency scale of the response graph or 
+other data output should always be checked during the oper- 
+ational calibration. 
+
+NOTES 
+
+1 An example of the resulting mobility graph, showing the effect of 
+the impedance head attachment compliance, is shown in annex C. 
+
+2 It is usually unnecessary to perform a phase-shift calibration provid- 
+ed that the accelerometers, force transducers and amplifiers are 
+selected to have nearly flat response throughout the frequency range 
+
+
+
+Transducers intended for use with specific amplifiers or signal 
+conditioners should have the calibration performed under the 
+conditions of intended use. For example, piezoelectric force 
+transducers, impedance heads and accelerometers are in- 
+tended for use with either charge amplifiers or high impedance 
+voltage amplifiers and should be calibrated with the intended 
+amplifier. For these transducers, the capacitance of the cables 
+used between transducer and amplifier is important and the 
+transducers should be calibrated together with the intended 
+cable. Other types of transducers should be calibrated with 
+
+
+
+IS 14736 ( Part 1 ) 
+ISO 7626-1 : 1986 
+
+
+
+1999 
+
+
+
+their intended signal conditioning devices in accordance with 
+the manufacturer's specifications for electrical excitation, 
+special terminating impedance, etc. 
+
+When calibrating force transducers and impedance heads, 
+special care should be taken to use mounting conditions similar 
+to those specified by the manufacturer. Flatness of the mount- 
+ing plate and proper torquing of the attaching screws is impor- 
+tant. A thin film of oil or grease or wax between the transducer 
+and the mounting surface may increase transducer coupling 
+and rigidity for use at high frequencies. If special fixtures are 
+used, every effort should be made to carry out force transducer 
+calibrations using a mechanical arrangement closely resembling 
+that to be used during the mobility measurement. 
+
+
+
+7 Basic piezoelectric transducer calibratior^s 
+
+7.1 General 
+
+All basic calibrations and tests listed in table 2 shall be carried 
+out by the manufacturer on each transducer and the results 
+shall be recorded in the documentation supplied with the 
+transducer. All basic calibrations should be repeated periodi- 
+cally by the user (or by a commercial calibration laboratory, if 
+the user does not have adequate calibration facilities). 
+
+
+
+Tka I 
+
+
+
+ifiaA ' 
+
+
+
+intAniat f/ir ranAatinn Kaei/« /^aliKra+inne 
+
+
+
+and tests is 1 year. In addition, calibrations such as sensitivity 
+should be repeated more frequently, particularly if the 
+transducer is subjected to conditions which may change its 
+sensitivity. 
+
+
+
+NOTE — Since the output signal of the charge or voltage ampliftef 
+associated with the accelerometer is always a voltage, the resultant ac- 
+celeration channel sensitivity should always be expressed in volts per 
+metre per second squared IV/lm/s^)]. )n general, the acceleration 
+channel sensitivity Is determined from the knowledge of the sepfKSte 
+sensitivities of the accelerometer and the amplifier; in cases where 
+precise mobility measurements are required, the accelerometer and the 
+amplifier to be used with .the accelerometer should be calibrated 
+together in order to obtain the acceleration channel sensitivity directly. 
+
+
+
+7.2.2 Force-transducer sensitivity 
+
+Force transducers and the force section of impedance heads 
+shall be calibrated using a mass-loading technique. 
+
+The sensitivity calibration shall be carried out by mounting 
+the force transducer on a suitable shaker using the rated pre- 
+loading torque recommended by the manufacturer. The force 
+transducer shall be vibrated at a controlled acceleration 
+amplitude, Oq, with only a reference accelerometer attached to 
+its opposite face. The force transducer amplifier voltage out- 
+put, Eq, and the applied acceleration, Oq, shall be measured. A 
+loading mass, m, shall then be attached to the opposite face of 
+the force transducer without changing the amplifier gain set- 
+tings. The voltage output, E^, shall be measured with the 
+shaker input adjusted so that the applied acceleration, a, has 
+exactly the same amplitude as before (that is a = a^). The sen- 
+sitivity of the force channel, Sf, is then given by the following 
+equation : 
+
+
+
+Sf = 
+
+
+
+where 
+
+
+
+Em ^ ^0 
+
+
+
+{m + m^ + m2 + m^a - (m^ -I- wj + mjfaQ 
+
+
+
+(1) 
+
+
+
+7.2 Sensitivity 
+
+7.2.1 Accelerometer sensitivity 
+
+Sensitivity of accelerometers and the accelerometer portion of 
+impedance heads shall be determined by using the comparison 
+method. Calibration shall be carried out by mounting the ac- 
+celerometer on a suitable shaker equipped with a reference ac- 
+celerometer previously calibrated by or referenced to an ab- 
+solute calibration. The calibration amplitude should be within 
+the range encountered in actual mobility measurements, 
+generally between 1,0 and 100 m/s2. 
+
+
+
+m is the loading mass; 
+
+m^ is the mass of the reference accelerometer; 
+
+m2 is the effective mass of the bolt; 
+
+m^ is the effective end mass of the force transducer. 
+
+All the masses are expressed in kilograms and the accelera- 
+tion shall be expressed in metres per second squared. As 
+(mi -(- ffij + m^QQ = (mi -H mj + ni'^a, because Qq = a, 
+equation (1) becomes 
+
+
+
+S, = 
+
+
+
+Em — En 
+
+
+
+,. (2) 
+
+
+
+ma 
+
+
+
+I ne sensiiiviiy uaiiurdi.iun SnuUia us Ceirriea uui ai a Singie rre- 
+quency, generally 80 Hz. 
+
+NOTE — A different frequency may be used, if 80 Hz is outside the 
+operating frequency range of the transducer or if another frequency is 
+more suitable for the particular transducer design or experimental ap- 
+plication of the transducer. 
+
+For accelerometers designed to be used with a charge 
+amplifier, accelerometer sensitivity shall be expressed in 
+picocoulombs per metre per secoiKl squared [pC/(m/s2)l. For 
+accelerometers designed to be used with a voltage amplifier 
+and for accelerometers with a buitt-in charge amplifier or im- 
+pedance transformer, accelerometer sensitivity shall be ex- 
+pressed in volts per metre per second squared IV/(m/s2)]. 
+
+
+
+ivu I c — ror rarce transauceis wnicn nave not oeen pre-assemoiea, 
+extreme care should be taken to ensure that the mounted preload does 
+not change from application to application, since sensitivity and 
+calibration depend on transducer preload. 
+
+Equation (2) gives the sensitivity of the force channel (i.e. the 
+transducer/amplifier combination) in volts per newton. The 
+sensitivity of the force transducer alone can be deduced from 
+equation (2) arid the sensitivity of the amplifier used. 
+
+For force transducers designed to be used with a charge 
+amplifier, force-transducer sensitivity shall be expressed in 
+picocoulombs per newton. For force transducers designed to 
+be used with a voltage amplifier, force-transducer sensitivity 
+shall be expressed in volts per newton. 
+
+
+
+6 
+
+
+
+IS 14736 (Parti) 
+ISO 7626-1 : 1986 
+
+
+
+1999 
+
+
+
+NOTE — In cases where precise mobility measurements are required, 
+the force transducer and the amplifier to be used with the force 
+transducer should be calibrated together In order to obtain the total 
+force channel sensitivity directly. 
+
+The method described is adequate only at frequencies below 
+approximately one-fifth of the resonance frequency due to the 
+effective mass of the system and the stiffness, k, of the force 
+transducer. This resonance can be estimated by means of the 
+following equation : 
+
+
+
+/n = 
+
+
+
+1 
+
+2n 
+
+
+
+(m + Wi + wj + "73) 
+
+
+
+1/2 
+
+
+
+(3) 
+
+
+
+where f„ is the resonance frequency of the mass-loaded 
+transducer, in hertz. 
+
+7.2.3 Impedance-head sensitivity 
+
+The sensitivity of an impedance head can be obtained from the 
+individual calibrations of the accelerometer and the force 
+transducer performed using the methods given in 7.2.1 and 
+7,2,2, respectively. Field calibration of an impedance head 
+usually consists of driving two or three differently sized free 
+masses. This ensures that the impedance head can- measure 
+known mobilities over a wide range. 
+
+
+
+7.3.2 Insulation resistance 
+
+The direct current resistances between ail the terminals of the 
+transducer and its mounting surface shall be measured and 
+supplied as data by the manufacturer. 
+
+If the transducer is not of an isolated type, the manufacturer 
+shall indicate the type of mounting needed to achieve isolation 
+when using the transducer (see 5.1). 
+
+
+
+8 Supplementary calibrations 
+
+
+
+8.1 General 
+
+The supplementary calibrations and tests listed in table 2 shall 
+be carried out by the manufacturer on samples of the 
+transducers for each type manufactured. Furthermore, some of 
+the supplementary calibrations and tests should be carried out 
+by the user to determine the condition of a transducer which 
+exhibits peculiar operating characteristics or changes in perfor- 
+mance. 
+
+
+
+7.3 Electrical impedance 
+
+7,3.1 Transducer resistance and capacitance 
+
+The direct current resistance between the terminals of the 
+transducer shall be measured by the manufacturer with a 
+megohmmeter, using an applied voltage not exceeding 50 V. 
+
+The capacitance shall be measured with an impedance bridge, 
+using an excitation voltage within the operating frequency 
+range of the transducer. If the capacitance changes with fre- 
+quency, the nneasurement shall be carried out at a minimum of 
+two frequencies, including the frequency at which the 
+reference sensitivity shall be determined. For transducers the 
+capacitancJe of which does not change significantly with fre- 
+quency, the measurement shall usually be carried out at 
+1 000 Hz. 
+
+Since the capacitance of some piezoelectric materials changes 
+with temperature and voltage, the capacitance measurement 
+shall be performed at room temperature (20 to 30 °C) and at an 
+excitation voltage recommended by the transducer manufac- 
+turer. Variations due to temperature can be minimized by 
+avoiding handling immediately before or during the capacitance 
+measurements. 
+
+NOTE — For some transducers containing internal electronic com- 
+ponents, the above impedance measurement operation may produce 
+inaccurate results or possibly cause damage. In these cases, insertion 
+methods should be used. 
+
+Resistance and capacitance measurements should be repeated 
+at suitable time intervals (see 7.1). Since these measurements 
+are generally not very accurate, only significant variations, 
+compared to previous calibrations, shall be taken into account. 
+For instance, if resistance and/or capacitance has changed by 
+more than 5 %, the transducer should be further evaluated by 
+performing all basic and supplementary calibrations or it should 
+be repaired, as required. 
+
+
+
+8.2 Dimensions 
+
+Pertinent dimensions, including height, width, length, diameter 
+and dimensions of any mounting holes or studs, shall be given. 
+The dimensions shall be provided in the form of an outline 
+drawing. Descriptions of connectors, cable sizes and cable 
+types shall also be provided. 
+
+
+
+8.3 Mass 
+
+The mass specified is the total mass of the transducer, ex- 
+cluding mounting studs and cables which do not form an in- 
+tegral part of the transducer. 
+
+
+
+8.4 Effective end mass of force transducers and 
+impedance heads 
+
+The effective end mass of force transducers and impedance 
+heads is the mass between the force-sensing elements and the 
+specimen end of the transducer. This effective end mass 
+should be included in the manufacturer's specifications. 
+However, the user should be aware that the effective end mass 
+is increased by the addition of the hardware used to attach the 
+transducer to the structure under test and/or to preload the 
+transducer. Thus, the total effective end mass is the sum of the 
+manufacturer's effective end mass and the mass of the at- 
+taching hardware. 
+
+
+
+8.5 Compliance of impedance heads 
+
+The compliance of an impedance head is the compliance of that 
+part of the assembly between the point of attachment to the 
+structure and the internal accelerometer (see [10]). 
+
+
+
+IS 14736 (Parti ) 
+ISO 7626-1 : 1986 
+
+
+
+1999 
+
+
+
+In addition to the compliance of the impedance head as pro- 
+vided by the manufacturer, the compliance of the attachment 
+hardware shall also be considered when carrying out mobility 
+measurements. 
+
+A procedure for experimentally determining the total com- 
+pliance is given in annex C. 
+
+8.6 Polarity 
+
+Polarity of the transducer, usually laid down by the nufac- 
+turer, shall be by a comparison methfld to determine whether a 
+positive or negative output voltage change is produced when 
+the mechanical input is applied in a direction from the mounting 
+surface towards the opposite end of the transducer and along 
+the axis of maximum sensitivity of the transducer. This defini- 
+tion of polarity is applicable to most transducers which have the 
+sensitivity axis perpendicular to the mounting surface. 
+
+
+
+The reference voltage, E^, is the output of the transducer 
+amplifier obtained at the reference frequency, geperally 80 Hz. 
+It is important that the mass load on the force transducer does 
+not cause a resonance involving the loading mass and the 
+transducer compliance. This can be checked using equation 
+(3). The frequency-response deviation shall be less than ± 5 % 
+of the response at the reference frequency over the frequency 
+range of interest. 
+
+NOTE — As in the sensitivity calibration of the force transducer, better 
+accuracy Is obtained by not adjusting the torque of the force- 
+transducer mounting bolt at any time during the frequency-response 
+calibration, if force transducers without built-in preload are used. 
+
+
+
+8.8 Linearity 
+
+Linearity calibrations shall be carried out by harmonic excitation 
+using the comparison method. 
+
+
+
+8.7 Frequency response 
+
+8.7.1 Accelerometer frequency response 
+
+The frequency-response calibration shall be performed by the 
+comparison method at an acceleration amplitude chosen to 
+provide a signal-to-noise ratio exceeding ten (S/N > 20 dB) 
+and over the frequency range corresponding to the range of 
+use of the accelerometer. Harmonic or wide-band excitation, 
+applied with a suitable vibration exciter, may be used to 
+measure the frequency responses. Wide-band excitation may 
+be random or transient. 
+
+Harmonic excitation may be applied at discrete frequencies or 
+by a continuous sweep. In the first case, there shall be enough 
+discrete frequencies, for instance ten frequencies per decade, 
+to ensure that, the transducer is free from local or internal 
+resonances within the frequency range of interest. If the 
+calibration is carried out at a limited number of discrete fre- 
+quencies, addition of a frequency sweep is useful to ensure the 
+same objective. 
+
+When a continuous sweep is used, the frequency should be 
+swept slowly, while the amplitude of the excitation acceleration 
+is maintained constant over the full frequency range by means 
+of a feedback control system using a reference accelerometer. 
+
+The frequency r- -,ponse shall be flat within ± 5 % in the fre- 
+quency range of interest. Care shall be taken so that transverse 
+motion of the vibration exciter, combined with the cross-axis 
+sensitivity of the transducer, does not cause measurement 
+errors of the order of the specified ± 5 %. 
+
+8.7.2 Force-transducer frequency response 
+
+Frequency-response calibration shall be performed under the 
+same conditions described for the accelerometer frequency 
+response. However, the force transducer shall be mass-loaded 
+and vibrated at a constant amplitude of acceleration at each 
+specified frequency. The voltage output of the force- 
+transducer amplifier, Lf, shall be measured at each of the fre- 
+quencies. The frequency-response deviations, expressed as a 
+percentage, shall be determined from the following equation: 
+
+
+
+Frequency-response deviation = 100 x 
+
+
+
+E, 
+
+
+
+8.8.1 Accelerometer linearity 
+
+The amplitude-linearity deviations shall be determined by 
+measuring the ratio of the reference and test accelerometer 
+outputs. This ratio shall be measured by the manufacturer at a 
+minimum of three acceleration levels in the upper decade of the 
+design range of the accelerometer. It may be useful for the user 
+to check the linearity in his own range of use. The deviations at 
+each acceleration shall be determined by computing the dif- 
+ference from the average ratio at all accelerations. This dif- 
+ference shall be expressed as a percentage of the average ratio. 
+If the deviations at all accelerations are within ± 2 %, the ac- 
+celerometer is suitable for mobility measurements. 
+
+
+
+8.8.2 Force-transducer linearity 
+
+The linearity calibration shall be carried out by vibrating the 
+mass-loaded force transducer, generally at 80 Hz, at various ac- 
+celeration levels and measuring the voltage output of the force- 
+transducer amplifier, Ey^, at each of the applied accelerations, 
+a^. The linearity deviations, expressed as a percentage, shall be 
+determined from the following equation: 
+
+
+
+Amplitude-linearity deviation 
+
+
+
+= 100 X 
+
+
+
+'^x'^x'avg 
+
+
+
+1 
+
+
+
+... (5) 
+
+
+
+where 
+
+
+
+... (4) 
+
+
+
+f^ is the force-transducer amplifier voltage output at a 
+discrete acceleration amplitude, V; 
+
+a^ is the discrete acceleration amplitude as determined by 
+a standard accelerometer, in metres per second squared; 
+
+(ZT^/ffx'avg is the average of the ratio of force-transducer 
+amplifier output amplitude to the acceleration amplitude for 
+all acceleration levels, expressed in volt seconds squared per 
+metre, and is equal to 
+
+
+
+(EJa^Jn 
+
+
+
+IS 14736 (Parti ) : 1999 
+ISO 7626-1 : 1986 
+
+
+
+A different frequency may be used if 80 Hz is outside the 
+operating frequency range of the transducer or if another fre- 
+quency is more suitabe for the particular transducer design or 
+application. 
+
+The applied force shall be computed as follows. At one of the 
+applied accelerations, the applied force shall be computed by 
+dividing the amplifier output, E^. by the force-transducer chan- 
+nel sensitivity, previously determined in 7.2.2. The force applied 
+at every other calibration point shall be determined by multiply- 
+ing the force just computed by the ratio of new applied ac- 
+celeration to the acceleration used to compute the force above. 
+
+A force transducer, or the force transducer in an impedance 
+head, is not suitable for mobility measurements if the linearity 
+deviations exceed 2 %, within the rated range of operating 
+forces. 
+
+
+
+8.9 Supplementary calibrations necessitated by 
+environmental and secondary effects 
+
+Certain calibrations are necessitated by the fact that secondary 
+and/or environmental conditions can cause transducer outputs 
+which are not direct analogues of the transduced quantities. 
+The supplementary calibrations described in 8.9.1 to 8.9.5 
+reflect the need to quantify such effects. 
+
+8.9.1 Change in transducer sensitivity with 
+temperature 
+
+It is usually desirable to select transducers which have 
+temperature-sensitivity deviations not exceeding ± 1,0 % 
+throughout the temperature range of intended use. 
+
+8.9.2 Noise induced in signal transducers by 
+temperature variations 
+
+Variation in temperature generates low-frequency noise in 
+piezoelectric transducers and in any built-in transducer 
+amplifiers that may be used. As the frequency range of use of 
+piezoelectric transducers is generally much higher, the noise 
+and the measured signal are not correlated so that there are no 
+consequences on the results of the mobility measurements. 
+However, during low-frequency measurement, rapid variations 
+in temperature may cause sufficient noise to saturate the 
+transducer electronics, thus inducing wrong measurements. 
+
+8.9.3 Force-transducer preload effects on sensitivity 
+
+The effect of different mounting torques on the sensitivity of 
+force transducers which have not been pre-assembled may be 
+determined by repeating the sensitivity calibration when the 
+force transducer is remounted using different torques. 
+
+8.9.4 Accelerometer transverse sensitivity 
+
+Transverse-sensitivity calibrations shall be performed at a single 
+frequency below 500 Hz. The transducer shall be mounted on a 
+vibration exciter perpendicular to the transducer-sensing axis. 
+Harmonic excitation shall be applied at a frequency where it is 
+known that the shaker motion in a plane perpendicular to the 
+sensing axis is at (east 100 times the motion in the direction of 
+
+
+
+the sensing axis. For measurement of transverse-sensitivity 
+ratios of much less than 1 %, the excitation requirements are 
+more strict. Extreme care and skill are required to obtain valid 
+values for such transverse sensitivities. 
+
+The transducer shall be mounted and rotated about its sensing 
+axis through 360°, in increments of 45° or less, to determine 
+the maximum transverse response. If the transverse-sensitivity 
+ratio exceeds 5 % of the axial sensitivity or changes significant- 
+ly from an earlier calibration, the transducer should be further 
+evaluated by performing supplementary calibrations or it 
+should be repaired, as required. 
+
+8.9.5 Strain effects 
+
+The effect of strain on the sensitivity of a transducer can be 
+measured by use of a simple cantilever beam, clamped to a rigid 
+support. A suitable beam design would have a first natural fre- 
+quency of approximately 5 Hz. The transducer shall be 
+mounted on the cantilever beam at a suitable location. The 
+strain shall be measured by strain gauges bonded to the beam 
+near the transducer mounting. 
+
+Details of the procedure for determining the effect of strain on 
+the sensitivity of force transducers and impedance heads can 
+be found in [121. 
+
+
+
+9 Presentation of data 
+
+The interpretation of mobility test data can be greatly enhanced 
+by the use of a suitable graphic display. A variety of display for- 
+mats is available to suit various applications. 
+
+
+
+9.1 Logarithmic plotting 
+
+At frequencies well below the lowest resonance or anti- 
+resonance frequency of a structure, the magnitude of any of 
+the three structural frequency-response functions follows an 
+almost straight line on a plot of log magnitude versus log fre- 
+quency. At frequencies well below the lowest resonance, the 
+curve tends to be asymptotic to lines of constant compliance. 
+Well below the lowest anti-resonance, the curve tends to be 
+asymptotic to lines of constant mass. For mobility plots, com- 
+pliance lines slope upwards at one magnitude decade per fre- 
+quency decade and mass lines slope downwards at one 
+magnitude decade per frequency decade, as shown in figure 1 . 
+
+If accelerance or dynamic compliance data are plotted, the 
+slopes of the mass and compliance lines change accordingly, as 
+shown in figures 2 and 3. 
+
+When plotting the results of mobility measurements with a 
+logarithmic frequency scale, the magnitude and frequency 
+scales should conform to the recommendations given in lEC 
+Publication 263. A recommended format for plotting mobility 
+data, including lines for mass and dynamic compliance, is 
+shown in figure 4. 
+
+NOTES 
+
+1 In the system of SI units, lines for constant dynamic compliance, 
+lines for constant nnobility and lines for constant mass, in increments of 
+one decade of magnitude, always intersect at frequencies of 1 12n, 
+10/271, 100/2n, etc. The frequency of 159 Hz (equivalent to 1000/2rcl is 
+a convenient one for reference purposes, as shown in the examples in 
+the lower part of figure 4. 
+
+
+
+IS 14736 (Parti ) 
+ISO 7626-1 : 1986 
+
+
+
+1999 
+
+
+
+2 In accordance with lEC Publication 263, the ratio of the length of 
+the scale for a decade of magnitude to the length of the scale for a 
+decade of frequency should be as 2/5. The format in figure 4 for plot- 
+ting mobility data follows the 2/5 rule. 
+
+3 Appropriate exponents to use as the power of 10 for mobility, mass 
+and dynamic compliance should be determined from the test results to 
+suit the data to be plotted and then noted on the plot. 
+
+
+
+9.2 Alternative plotting methods 
+
+Instead of plotting the nnagnitude and phase of the mobility test 
+results, it is sometinnes advantageous to plot the real and im- 
+aginary components as functions of frequency, as illustrated in 
+figure 5. It may also be desirable to plot the test results in polar 
+coordinates, as illustrated in figure 6 (Nyquist plot). The polar 
+
+
+
+diagram has the advantage that the data may be enhanced by 
+circle-fitting procedures. This may be important for extracting 
+modal damping coefficients from the test data. 
+
+NOTES 
+
+1 In figure 6, the actual measured data points are connected by 
+straight lines. These lines are not part of the measured data. They are 
+shown as an aid to distinguishing between data points belonging to 
+one mode of the structure and those belonging to a second mode. 
+
+2 The fact that the straight lines connecting the measured data points 
+in figure 6 do not approach a circle through the data points shows that 
+not enough data points were measured near the resonance frequency 
+to determine directly the true resonance frequency, peak response and 
+damping of the modes. In order to identify these parameters properly, 
+either more data points should be measured or a suitable circle-fitting 
+procedure shall be applied to the measured dafa points. 
+
+
+
+10 
+
+
+
+IS 14736 (Parti ): 1999 
+ISO 7626-1 : 1986 
+
+
+
+180-r 
+
+135- 
+
+90- 
+
+45- 
+
+0- 
+
+-45- 
+
+-90- 
+
+-135- 
+
+-180- 
+
+
+
+-I r 
+
+
+
+» 1 — I — r 
+
+
+
+VJ 
+
+
+
+-1 r 
+
+
+
+T r 
+
+
+
+-I 1 1 — r 
+
+
+
+
+-« r 
+
+Frequency, Hz 
+Figure 1 — Typical graph of plotted mobility test results 
+
+
+
+2 000 
+
+
+
+11 
+
+
+
+IS 14736 (Parti ) : 1999 
+tSO 7626-1 : 1986 
+
+
+
+180 
+
+
+
+-D 
+
+
+
+to 
+
+
+
+135- 
+
+90- 
+
+45- 
+
+
+
+
+
+-45- 
+
+-90- 
+
+-135- 
+
+-180- 
+
+
+
+10 
+
+
+
+10' 
+
+
+
+
+
+
+10' 
+
+
+
+10 
+
+
+
+-1 
+
+
+
+■n 
+
+
+
+LJ 
+
+
+
+^ 
+
+
+
+r 
+
+
+
+m 
+
+
+
+L 
+
+
+
+^ I ■ . I 
+
+
+
+
+2000 
+
+
+
+Frequency, Hz 
+Figure 2 - Accelerance graph corresponding to the mobifity graph plotted in figure 1 
+
+
+
+12 
+
+
+
+IS 14736 (Parti ) : 1999 
+ISO 7626-1 : 1986 
+
+
+
+
+^000 
+
+
+
+Figure 3 — Dynamic compliance graph corresponding to the mobility graph plotted in figure 1 
+
+
+
+13 
+
+
+
+i -90 
+
+
+
+E 
+
+
+
+
+O 
+
+t 
+
+.. -D 
+
+-t. B) 
+
+«o a. 
+
+o> 
+
+
+
+CO 
+
+
+
+2000 
+
+
+
+NOTE — At 159 Hz, the following sets of values apply: 
+
+Mobility Compliance Mass 
+
+10 3 m/(N.s) 10 6m/N 1,0 kg 
+
+10-tm/(N.s) 10-7 m/N 10,0 kg 
+
+
+
+Frequency, Hz 
+
+
+
+Figure 4 — Paper for plotting mobility graph 
+
+
+
+IS 14736 (Parti ):1999 
+ISO 7626-1 : 1986 
+
+
+
+2 
+
+E 
+
+
+
+1.0 
+
+
+
+0.8 - 
+0.6- 
+0,4- 
+0.2- 
+
+
+
+i 
+
+Q. 
+
+I -0,2 
+
+
+
+-0,4- 
+-0,6- 
+-0.8 
+
+-1.0 
+
+
+
+200 
+
+
+
+1 — I — r 
+
+
+
+T 
+
+
+
+r4 
+
+
+
+rr 
+
+
+
+T 1 — I — r— t 
+
+2 000 
+
+
+
+1.0 
+
+
+
+0,8 -j 
+0,6- 
+0.4- 
+0.2- 
+0- 
+
+
+
+-0.2- 
+
+-0.4- 
+
+-0.6- 
+
+-0.8 
+
+-1,0 
+
+
+
+200 
+
+
+
+-\ r 1 — I — r 
+
+
+
+U- 
+
+
+
+\ — rH 
+
+
+
+T 1 I 1 1 1 1 P 
+
+Frequency, Hz Z vOvJ 
+
+
+
+Figure 5 — Graph of the real and imaginary components of mobility corresponding to figure 1 
+
+
+
+15 
+
+
+
+IS 14736 (Parti): 1999 
+ISO 7626-1 : 1986 
+
+
+
+
+Real component, lO-^m/CN.s) 
+
+
+
+Figure 6 — Polar diagram of the mobility results for the two lowest frequency modes in figure 1 
+
+
+
+16 
+
+
+
+IS 14736 (Parti ) : 1999 
+ISO 7626-1 : 1986 
+
+
+
+Annex A 
+Relationship between mechanical impedance mobility and modal analysis 
+
+(This annex does not form an integral part of the standard.) 
+
+A.I General 
+
+The dynamic response of a mechanical system basically depends on two parameters, i.e. the exciting forces and the dynamic 
+characteristics of the system. If the level of the exciting forces is within the range in which the system behaves essentially linearly, the 
+system characteristics can be described in the frequency domain either by a mobility matrix [Y] or by an impedance matrix [Z], 
+resulting in the following two equivalent relations between exciting forces and response velocities: 
+
+{v/(a;)} = [rj{f (w)} ... (6) 
+
+{Fioj)} = [ZJIv^lw)} ... (7) 
+
+where 
+
+tF {a>)\ is the column vector of the external dynamic forces expressed as functions of frequency, acting on the system at 
+various points; 
+
+{v (uj)\ is the column vector of the corresponding response velocities at all points of interest. 
+
+NOTE — The term "point" designates a location and the associated direction. The term "coordinate" is often used with the same meaning as 
+"point". 
+
+The matrix notation of equations (6) and (7) is convenient because, in general, more than a single point on the structure has to be con- 
+sidered. If jV is the number of points at which motion response is to be considered, plus any additional points at which external forces 
+act (either exciting forces or reaction forces), the column vectors in equations (6) and (7) are of order N and the matrices are of order 
+
+N X N. 
+
+From equations (6) and (7), it follows that 
+
+[Zl = [K]-i ... (8) 
+
+It should be noted that the matrix inversion, expressed by equations (8), means that the elements Z,y of the impedance matrix are not 
+arithmetic reciprocals of the elements Yjj of the mobility matrix, and vice versa. 
+
+
+
+A. 2 Boundary conditions 
+
+In mobility testing, a dynamic exciting force is supplied to the structure at one point at a time. Thus, 
+
+Ff, = 0;k^j ... (9) 
+
+where 
+
+./' is the point of excitation; 
+
+k denotes all other points of interest. 
+
+Equation (9) defines the boundary conditions for experimental determinations of mechanical mobility. Given these boundary condi- 
+tions, measurement of the velocity response at point / and of the force at J yields the ij element of the mobility matrix: 
+
+^', = iv>Jf'jh^=.0:k.j ■•■ (10) 
+
+This is tl^ie mathematical expression of the definition of mobility given in 4.2. 
+It should be noted that the above boundary condition can easily be achieved in experimental procedures, 
+
+17 
+
+
+
+IS 14736 (Parti ) :1999 
+ISO 7626-1 : 1986 
+
+
+
+In contrast, the elements of the impedance matrix Z [equation (7)] are 
+
+Zij = Fi/vj ... (11a) 
+
+with the boundary conditions 
+
+Vj^ = 0;k *J ... (lib) 
+
+Equations (11a) and (lib) are the mathematical expressions of the definition of blocked impedance given in 4.3. The boundary condi- 
+tions of equation (lib) are very difficult or impossible to achieve in practical experimental procedures. Thus, it is generally not possible 
+to determine the elements of the impedance matrix [equation (7)1 by experimental means. 
+
+The difference in the boundary conditions of equations (9) and (lib) is very important for the proper use of mobility and impedance 
+data. It should be noted that this difference becomes irrelevant, however, in the special case in which a single point (and direction) on 
+the structure (the driving point) is the only point of interest. 
+
+This special case is not uncommon in practice. This accounts for the often-used definition of impedance as being the ratio of the 
+exciting force to the velocity response, without specifying the boundary conditions. In this special case, the jmpedance matrix and the 
+mobility matrix only have a single term, and, therefore, impedance is the arithmetic reciprocal of mobility. It should be noted that this 
+special impedance is a free impedance as defined in 4.4. Thus, it is not an element of the general N x N impedance matrix of the 
+structure. 
+
+
+
+A. 3 Comparing impedance and mobility data 
+
+Experimental investigations of the dynamic characteristics of structures result in mobility type data. In mathematical modelling, 
+however, it is generally easier to use mass and stiffness matrices. In the frequency domain, these result in blocked impedance data. 
+When comparing mobility and blocked impedance data, it is necessary to convert one into the form of the other. In doing this, special 
+care shall be exercised because blocked mechanical impedance is not an invariant characteristic of a structure, but it is dependent 
+upon the number of degrees of freedom considered (see [1]). The elements of an impedance matrix can, therefore, be compared with 
+those of an inverted mobility matrix, only if all degrees of freedom of both matrices (points and directions) are identical. If the 
+mathematical model (and its impedance matrix) has more degrees of freedom than the experimental mobility matrix, as will often be 
+the case in practice, it is necessary to convert impedance to mobility to allow comparison with the corresponding elements of an 
+experimentally-determined mobility matrix, rather than vice versa. This is so because mobility is free of artificial constraints, but 
+impedance is not. 
+
+
+
+A.4 Modal analysis 
+
+Modal analysis is a very useful tool for linking experimental analysis with mathematical modelling. It is particularly convenient for 
+predicting the dynamic interaction of interconnected sub-stuctures. 
+
+When using experimental mobility data, modal analysis uses statistical methods to extract the modal parameters, including natural 
+frequencies, damping and modal mass (or stiffness), within the frequency range of interest. A number of different methods are 
+available for identifying these parameters accurately and taking into account the effect of modes outside the frequency range of 
+interest. 
+
+When using mathematical models, the modal parameters can be extracted from the computed mass, stiffness and damping matrices 
+of the sub-structures by eigen-value/eigen-vector computation or other matrix reduction procedures. These procedures are often 
+more efficient that the direct inversion of the entire impedance matrix. 
+
+
+
+18 
+
+
+
+IS 14736 (Parti ):1999 
+ISO 7626-1 : 1986 
+
+
+
+Annex B 
+Mobility as a frequency-response function 
+
+(This annex does not form part of the standard.) 
+
+B.I Harmonic excitation 
+
+When a time function can be expressed as 
+
+x(r) = A cos(a>? + <P) ... (12) 
+
+where 
+
+A is the amplitude of the harmonic waveform; 
+
+oj is the circular frequency, in radians per second ; 
+
+t is the time, in seconds; 
+
+<P is an initial phase angle, in radians, 
+the function can be represented on a complex plane as 
+
+xU) = /le)i^'+ '^> ... (13) 
+
+where 
+
+x{t) is the projection of x{t) on the real axis. 
+
+x(t) can be thought of as a rotating vector centred at the origin of the complex plane. This rotating vector is commonly called a 
+"phasor" 1'. If the ratio of two phasors is formed at a given frequency, the result is a complex number, and is not a function of time. If 
+a set of these complex numbers is formed for all frequencies of interest, the result is called a frequency-response function. For exam- 
+ple, if the two phasors are 
+
+x^{oj,t) = /li(a»)eil^' + *il''j'l 
+
+X2(oj,t) = /l2<'^>e'''-'" ^ *2l(^'l 
+then 
+
+H[oj) = — = B(a>)eiei'"> ... (14) 
+
+where 
+
+B(w) = A^{cu)IA2{aj) 
+diio) = (tyUo) - ^2'<^' 
+
+Both B(u)) and d{a>) are functions of the frequency cy. The frequency-response function, Hito), can be expressed in polar form by the 
+amplitude and phase [Blto) and 6(cy) above] or in rectangular form as real and imaginary components: 
+
+//(w) = R(a}) + i/(w) ... (15) 
+
+where 
+
+R(uj) = B(aj) cos 9{(jj] 
+Koj) = B(oj) sin 6(m) 
+
+Mobility can be considered as a frequency-response function given by the ratio of the velocity and force phasors. Similar arguments 
+can be made for the other mobility-like quantities. 
+
+
+
+1) Some authors define the phasor as /lei*. Both definitions are consistent with the use of the term "phasor" in this part of ISO 7626 because this 
+part of ISO 7626 is only concerned with the ratio of phasors. 
+
+19 
+
+
+
+IS 14736 (Parti ) : 1999 
+ISO 7626-1 : 1986 
+
+
+
+B.2 Random excitation 
+
+In random vibration with a stationary Gaussian distribution, a fundamental equation that relates the output and input of a linear 
+bilateral system is 
+
+G^2{(o) = f^{aj)G22ioyi ... (16) 
+
+where 
+
+Gi2(to) is the cross-spectral density between the input and output of the system; 
+Hioj) is the frequency-response function of the system; 
+G22(t<j) is the auto-spectral density of the input. 
+
+Gi2 is a complex function of frequency and G22 is a real function of frequency; hence, Hico) is a complex function of frequency. 
+Mobility can be considered as a frequency-response function given by the ratio of the cross-spectral density between the velocity and 
+force excitation to the auto-spectral density of the force excitation, the input. In actual practice, only estimates of the cross- and auto- 
+spectra are available. Hence, mobilities can only be estimated using a random excitation. The estimation errors can be made less than 
+other measurement errors and do not necessarily limit the accuracy of the measurements. 
+
+
+
+B.3 Transient excitation 
+
+In transient vibrations, the input and response of a line'ar system can be related through the expression 
+
+Xi(w) = H{oj)X2{aj] ... (17) 
+
+where 
+
+X^lco) is the Fourier transform of the output, A'i(?) ; 
+X2{co) is the Fourier transform of the input, X2{t); 
+H{a>) is the frequency-response function of the system. 
+
+All of the quantities in equation (17) are complex functions of frequency. The inverse Fourier transform of Hioj) is the unit impulse 
+response function, hit), of the system; that is, if a unit impulse is applied to the input, the system output is given hy h{t). Mobility can 
+be considered as a frequency-response function given by the ratio of the Fourier transforms of the time histories of the velocity 
+response and of the input force. 
+
+In actual practice, the discrete Fourier transform (DFT) is used as an approximation of the continuous Fourier transform. Careful 
+selection of sample rate and sample size can reduce the errors of this approximation to levels less than other measurement errors. The 
+use of the DFT does not, therefore, necessarily limit the accuracy of the measurements. 
+
+
+
+20 
+
+
+
+IS 14736 (Parti ) :1999 
+ISO 7626-1 : 1986 
+
+
+
+Annex C 
+Determination of impedance-head attachment compliance and damping 
+
+(This annex does not form an integral part of the standard.) 
+
+
+
+Overall calibration and determination of the sensitivity of a mobility measurement set-up, including the attachment hardware between 
+the vibration exciter and the structure under test, may be accomplished using the following test procedure. This procedure also pro- 
+vides data on the attachment compliance and the structural damping of the impedance head (see [10)1. 
+
+The test shall be carried out by mounting a large rigid block on a sufficiently compliant support so that the natural frequency of the 
+block on the compliant support is 2 Hz or less. A cylindrical block of sufficient mass should be used to place the anti-resonance fre- 
+quency well within the frequency range of interest. The magnitude, in kilograms, of the appropriate mass, m; may be estimated from 
+
+m = 1/[(23t/)2C] .-. (18) 
+
+where 
+
+/ is a convenient frequency, in hertz, in the upper part of the frequency range over which mechanical mobility measurements are 
+to be carried out; 
+
+C is an estimate of the compliance, in metres per newton, of the impedance head and the attachment hardware between the 
+force transducer and the structure under test. 
+
+In order to design the compliant support for the calibration block, rearrangement of equation (18) yields the minimum required sup- 
+port compliance, C^: 
+
+C3= 1/[(27i/3)2m] ... (19) 
+
+where 
+
+/s is the natural frequency, in hertz, for the mass of the supported block (2 Hz or lower); 
+
+m is the mass, in kilograms, of the block selected for the test. 
+
+The impedance head (or the force transducer) should be mounted colinear with the centre of gravity of the calibration block. The 
+transducer manufacturer's specifications for mounting bolt torque should be closely adhered to. The mounting hardware should be as 
+closely as possible identical to that to be used when testing the structure. The vibration exciter should be attached to the impedance 
+head (or to the force transducer) in the manner to be used in the mobility test. The vibration exciter should be supplied with the same 
+type of excitation waveform which is to be used during the mobility test. The range of frequencies to be used for the test with the 
+calibration block should extend beyond the frequency range of interest at the high end. The mathematical model for this calibration 
+test set-up is given in [4]. 
+
+The output signals from the force transducer and the motion-response transducers should be processed in the same way as for the 
+mobility test and should be plotted as either a mobility or accelerance curve on suitable graph paper. 
+
+The curve will appear in the typical form as shown in figure 7 for mobility data. The results shown in figure 7 were obtained with a 
+calibration block having a mass of 5,5 kg and represent a rather typical attachment compliance of the impedance head of about 
+8 X 10-^0 m/N. In the frequency range from 30 to 1 1(X) Hz, the measured mobility curve closely approaches that of the mass of the 
+block used for the calibration, plus the mass of the impedance head below the force transducer, combined with the mass of the at- 
+tachment hardware. If the mass indicated by the low-frequency portion of the results of the mobility test does not equal the total 
+calibration system mass, the mobility measuring system has failings which should be corrected. Inadequate sensitivity, incorrect 
+calibration or electronic instrument problems are likely causes. 
+
+The anti-resonance (response dip) in the measured mobility curve at 2 400 Hz indicates that, at that frequency, the mobility of the 
+caiibration block has the same magnitude as that due to the attachment compliance of the impedance head. Since the two mobilities 
+have essentially opposite phase, the total mobility magnitude tends towards zero at the anti-resonance frequency. It remains finite 
+because of damping at the interface between the impedance head and the calibration block. This also accounts for the 0° phase angle 
+at the anti-resonance. 
+
+21 
+
+
+
+IS 14736 {Parti ) : 1999 
+ISO 7626-1 : 1986 
+
+
+
+At frequencies above the 2 400 Hz anti-resonance, the measured mobility curve approaches asymptotically the series combination of 
+the compliance of the mounting hardware and that of the impedance head itself. It may be difficult to check the total compliance if the 
+attachment has considerable damping. If the anti-resonance dip is not very sharp, the mobility curve will not approach the effective 
+compliance asymptote at high frequencies. 
+
+NOTE - The irregularity at 4600 Hz in the measured mobility curve shown in figure 7 is the result of a transverse rocking mode of the impedance head 
+about its attachment point. 
+
+If the overall calibration and sensitivity test is extended to sufficiently high frequencies, the mobility curve becomes controlled by the 
+effective damping of the impedance head and its mounting hardware. The magnitude of the effective damping can seldom be com- 
+puted. Thus, the test described in this annex is the only practical way to determine how much damping is present in the coupling of 
+the force transducer to the structure to be tested. 
+
+
+
+4-180 
+
+c 
+
+1-360 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n 
+
+
+
+
+
+
+
+
+J 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ 
+
+
+
+
+■T 
+
+
+
+
+
+
+
+
+
+
+r 
+
+
+— 
+
+
+
+10" 
+
+
+
+10" 
+
+
+
+% 10 
+
+o 
+
+
+
+-5 
+
+
+
+10 
+
+
+
+-6 
+
+
+
+10" 
+
+
+
+^ 
+
+
+"N 
+
+
+
+
+
+
+
+'■ 1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+C=l 
+
+
+— 
+
+
+:::: 
+
+
+■^ 
+
+
+
+
+
+
+\ 
+
+
+
+
+
+
+— 
+
+
+— 
+
+
+— 
+
+
+
+
+- 
+
+
+C=3 
+
+
+
+
+
+
+^ 
+
+
+te 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^ 
+
+
+,^ ^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^^-^^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+
+
+
+
+
+FP 
+
+
+"^ 
+
+
+....^^^ 
+
+
+r=^ 
+
+
+
+
+1 — ' 
+
+
+.^^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^ 
+
+
+-■— M 
+
+
+
+
+
+
+
+
+— _ 
+
+
+
+
+
+
+
+
+
+
+
+
+^ 
+
+
+— 1 
+
+
+
+
+— 1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+— 
+
+
+
+
+5 
+
+
+;=a 
+
+
+
+
+
+
+
+
+
+
+
+
+^ 
+
+
+
+
+
+
+
+
+
+
+
+
+V 
+
+
+^ 
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+^ ■ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s 
+
+
+
+
+
+
+
+
+
+
+J 
+
+
+
+
+,^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\ 
+
+
+"^ 
+
+
+
+
+
+
+1 
+
+
+^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+> 
+
+
+
+
+
+
+1 . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+. 
+
+
+
+
+— ■ 
+
+
+-X^ 
+
+
+
+
+^ 
+
+
+\ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n 
+
+
+>- 
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+— 
+
+
+"— 
+
+
+
+
+ti 
+
+
+^==^ 
+
+
+
+
+^=^ 
+
+
+— i 
+
+
+— 
+
+
+— 
+
+
+~ 
+
+
+
+
+— 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+' 
+
+
+_,. 
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+— 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+— 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-^^ 
+
+
+
+
+
+
+
+
+\ / 
+
+
+
+
+
+
+1=3 
+
+
+
+
+
+
+
+
+c= 
+
+
+r 
+
+
+
+
+
+
+
+
+
+
+
+
+~ 
+
+
+:: 
+
+
+
+
+
+
+
+
+
+
+
+
+— 
+
+
+~" 
+
+
+
+
+III 
+
+
+
+
+
+
+
+
+
+
+
+
+~ 
+
+
+"ZZ. 
+
+
+
+
+^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^~ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'~~ 
+
+
+
+
+
+
+■" 
+
+
+^— . 
+
+
+t 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+. 
+
+
+•■M 
+
+
+
+
+
+
+
+
+
+
+
+
+_ 
+
+
+_ 
+
+
+
+
+I— 1 
+
+
+\ • 
+
+
+
+
+
+
+
+
+
+
+
+
+r 
+
+
+
+
+
+
+— ' 
+
+
+
+30 
+
+
+
+100. 
+
+
+
+1000 
+
+
+
+10 000 
+
+
+
+Frequency, Hz 
+
+
+
+Figure 7 — Example of test results showing the effect of impedance-head attachment compliance (256 averages) 
+
+
+
+22 
+
+
+
+IS 14736 (Parti ) : 1999 
+ISO 7626-1 :1986 
+
+
+
+Bibliography 
+
+
+
+[I) O'Hara, G.J. Mechanical Impedance and Mobility Concepts, J. Acoust. Soc. Am. 41, 1967: pp. 1180-1184. 
+
+[2] EwiNS, D.J. Measurement and Application of Mechanical Impedance Data, Parts 1, 2 and 3, J. Soc. Environ. Eng. Vol. 14.3, 
+15,1 and 15.2, Dec. 1975 - June 1976. 
+
+[31 Sainsbury, M.G. and EwiNS, D.J. Vibration Analysis of a Damped Machinery Foundation Structure Using the Dynamic Stiff- 
+ness Coupling Technique Transactions ASME, J. Eng. Ind. 96, Aug. 1974: pp. 1000-1005. 
+
+[41 HtxsoN, E.J. Mechanical Impedance, in Shock and Vibration Handboo/( (2nd ed.), ed. Harris, CM. and Crede, C.E., 
+McGraw-Hill, New York, 1976: chap. 10. 
+
+[51 Rubin, S. Mechanical Immittance- and Transmission-Matrix Concepts, J. Acoust. Soc. Am. 41, 1967: pp. 1171-1179. 
+
+[6] EwiNS, D.J. Whys and Wherefores of Modal Testing, J. Soc. Environ. Eng. 18-3, 1979: pp. 3-19. 
+
+[71 EwiNS, D.J. and Griffin, J, A State-of-the-Art Assessment of Mobility Measurement Techniques — Results for the Mid-Range 
+Structures (30-3000 Hz), J. Sound and Vibration 1^(2) , 1981: pp. \°i7-'222. 
+
+[8] EwiNS, D.J. State-of-the-Art Assessment of Mobility Measurements, A Summary of European Results, Shocit Vib. Buff. 51, 
+1981; Part 1, pp. 15-35. 
+
+[91 EwiNS, D.J. State-of-the-Art Assessment of Mobility Measurement Techniques, J. Soc. Environ. Eng. 20(1), March 1981: 
+pp. 3-13. 
+
+[10] Brownjohn, J.M.W., Steele, G.H., Cawley, P. and Adams, R.D. Errors in Mechanical Impedance Data Obtained with Im- 
+pedance Heads, J. Sound and Vibration 73, 1980: pp. 461-468. 
+
+[II] Klaassen, K.B. Piezoelectric Accelerometers in Modern Electronic IVIeasuring Systems, ed. Regtien, P.P.L., Delft University 
+Press, Delft, Netherlands, 1978: chap. III. 
+
+[12] BoucHE, R.K. Calibration of Shock and Vibration Measuring Transducers, Monograph SVM-H, The Shock and Vibration In- 
+formation Center, U.S. Department of Defense, 1979. 
+
+[13] Cansdale, R., Gaukroger, D.R. and Skingle, C.W. A Technique for Measuring Impedances of a Spinning Model Rotor, 
+Technical Report TR 71092, Royal Aircraft Establishment, Farnborough, United Kingdom, May 1971. 
+
+
+
+23 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to 
+promote harmonious development of the activities of standardization, marking and quality 
+certification of goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in 
+any form without the prior permission in writing of BIS. This does not preclude the free use, in 
+the course of implementing the standard, of necessary details, such as symbols and sizes, 
+type or grade designations. Enquiries relating to copyright be addressed to the Director 
+(Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards 
+are also reviewed periodically; a standard along with amendments is reaffirmed when such 
+review indicates that no changes are needed; if the review indicates that changes are needed, 
+it is taken up for revision. Users of Indian Standards should ascertain that they are in possession 
+of the latest amendments or edition by referring to the latest issue of 'BIS Handbook' and 
+'Standards: Monthly Additions'. 
+
+This Indian Standard has been developed from Doc : No. LM 04 (0247). 
+
+
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters : 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110 002 
+Telephones : 323 01 31 , 323 33 75, 323 94 02 
+
+Regional Offices : 
+
+Central : fvlanak Bhavan, 9 Bahadur Shah Zafar Marg 
+
+NEW DELHI 110 002 
+
+
+
+Telegrams : Manaksanstha 
+(Common to all offices) 
+
+Telephone 
+
+r 323 76 17 
+I 323 38 41 
+
+
+
+Eastern 
+
+
+
+Northern 
+
+
+
+Southern 
+
+
+
+V\/estern 
+
+
+
+1/14 C. l.T. Scheme VII M, V. I. P. Road, Kankurgachi 
+CALCUTTA 700 054 
+
+SCO 335-336, Sector 34-A, CHANDIGARH 160 022 
+C. l.T Campus, IV Cross Road, CHENNAI 600 113 
+
+
+
+Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400 093 
+
+
+
+("337 84 99,337 85 61 
+I 337 86 26, 337 91 20 
+
+r 60 38 43 
+1 60 20 25 
+
+r 235 02 16,235 04 42 
+I 235 15 19,235 23 15 
+
+/ 832 92 95, 832 78 58 
+I 832 78 91,832 78 92 
+
+
+
+Branches : AHMADABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIf^BATORE. 
+FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. 
+LUCKNOW. NAGPUR. PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM. 
+
+
+
+Printed at : Prabhat Offset Press, New Delhi-2 
+
+
+

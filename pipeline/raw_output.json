@@ -1,0 +1,47 @@
+{
+  "raw_query": "53 grade ordinary portland cement for construction of rcc bridges and flyovers",
+  "search_timestamp": "2026-09-26T01:45:00.000Z",
+  "semantic_hits": [
+    {
+      "is_number": "IS 269",
+      "standard_id": "IS 269:2015",
+      "title": "Ordinary Portland Cement — Specification",
+      "year_published": 2015,
+      "score": 0.985,
+      "division": "CED",
+      "scope_snippet": "This standard covers the manufacture and chemical and physical requirements of 33, 43 and 53 grade ordinary Portland cement.",
+      "clauses_extracted": {
+        "clause_1_scope": "Covers manufacture and chemical and physical requirements of 33 grade, 43 grade and 53 grade ordinary Portland cement.",
+        "clause_2_normative": ["IS 4031 (Part 1)", "IS 4031 (Part 2)", "IS 4031 (Part 3)", "IS 4031 (Part 5)", "IS 4031 (Part 6)", "IS 4032", "IS 4905"],
+        "clause_4_requirements": {
+          "chemical": ["LSF: 0.80 to 1.02", "Insoluble residue: Max 5.0%", "Magnesia: Max 6.0%", "SO3: Max 3.5%", "Loss on ignition: Max 5.0%"],
+          "physical": ["Fineness: Min 225 m2/kg", "Soundness Le-Chatelier: Max 10 mm", "Initial Setting: Min 30 min", "28-day Compressive Strength (53 Grade): Min 53 MPa"],
+          "marking": ["Grade of cement", "Net mass 50kg", "BIS ISI Mark"]
+        }
+      },
+      "qco_enforced": true,
+      "qco_notification": "S.O. 191(E)"
+    },
+    {
+      "is_number": "IS 1489 (Part 1)",
+      "standard_id": "IS 1489 (Part 1):2015",
+      "title": "Portland Pozzolana Cement - Specification - Fly Ash Based",
+      "year_published": 2015,
+      "score": 0.923,
+      "division": "CED",
+      "scope_snippet": "Covers manufacture and requirements of fly ash based Portland pozzolana cement.",
+      "clauses_extracted": {
+        "clause_1_scope": "Specification for fly ash based Portland pozzolana cement.",
+        "clause_2_normative": ["IS 4031", "IS 4032", "IS 3812 (Part 1)"]
+      },
+      "qco_enforced": true,
+      "qco_notification": "S.O. 191(E)"
+    }
+  ],
+  "graph_traversal": {
+    "source_standard": "IS 269",
+    "outgoing_normative_edges": 14,
+    "related_test_methods": ["IS 4031", "IS 4032"],
+    "related_codes_of_practice": ["IS 456", "IS 10262"]
+  }
+}

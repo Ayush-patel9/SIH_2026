@@ -1,0 +1,1181 @@
+**************** 
+
+
+-k  is^ 
+
+
+Disclosure  to  Promote  the  Right  To  Information 
+
+Whereas  the  Parliament  of  India  has  set  out  to  provide  a  practical  regime  of  right  to 
+information  for  citizens  to  secure  access  to  information  under  the  control  of  public  authorities, 
+in  order  to  promote  transparency  and  accountability  in  the  working  of  every  public  authority, 
+and  whereas  the  attached  publication  of  the  Bureau  of  Indian  Standards  is  of  particular  interest 
+to  the  public,  particularly  disadvantaged  communities  and  those  engaged  in  the  pursuit  of 
+education  and  knowledge,  the  attached  public  safety  standard  is  made  available  to  promote  the 
+timely  dissemination  of  this  information  in  an  accurate  manner  to  the  public. 
+
+"^^  ^  ^  ^  %  ?R^" 
+
+Jawaharlal  Nehru 
+
+Step  Out  From  the  Old  to  the  New 
+
+
+^viiTSs^-SfS^^fS*?*:: 
+
+
+li^  i/ir  w  w  w  w  w  WW  ^  ^  ^  tIt  w  w  w 
+
+
+BLANK  PAGE 
+
+
+^<ii^ 
+
+
+UI> 
+
+
+PROTECTED  BY  COPYRIGHT 
+
+
+IS  14817  (Part  5) :  2004 
+18010816-5:2000 
+
+Indian  Standard 
+
+MECHANICAL  VIBRATION  —  EVALUATION  OF 
+
+MACHINE  VIBRATION  BY  MEASUREMENTS  ON 
+
+NON-ROTATING  PARTS 
+
+PART  5  MACHINE  SETS  IN  HYDRUALIC  POWER  GENERATING/PUMPING 
+
+AND  PUMPING  PLANTS 
+
+
+ICS  17.160 
+
+
+©  BIS  2004 
+BUREAU    OF    INDIAN    STANDARDS 
+
+MANAK  BHAVAN,  9  BAHADUR  SHAH  ZAFAR  MARG 
+
+NEW  DELHI  110002 
+
+June  2004  Price  Group  8 
+
+
+Mechanical  Vibration  and  Shock  Sectional  Committee,  ME  28 
+
+
+NATIONAL  FOREWORD 
+
+This  Indian  Standard  (Part  5)  which  is  identical  with  ISO  10816-5  :  2000  'Mechanical  vibration  — 
+Evaluation  of  machine  vibration  by  measurements  on  non-rotating  parts  —  Part  5:  Machine  sets  in 
+hydraulic  power  generating  and  pumping  plants'  issued  by  the  International  Organization  for 
+Standardization  (ISO)  was  adopted  by  the  Bureau  of  Indian  Standards  on  the  recommendations  of  the 
+Mechanical  Vibration  and  Shock  Sectional  Committee  and  approval  of  the  Mechanical  Engineering 
+Division  Council. 
+
+The  text  of  ISO  Standard  has  been  approved  as  suitable  for  publication  as  an  Indian  Standard  without 
+deviations.  Certain  conventions  are,  however,  not  identical  to  those  used  in  Indian  Standards. 
+Attention  is  particularly  drawn  to  the  following: 
+
+a)  Wherever  the  words  'International  Standard'  appear  referring  to  this  standard,  they  should  be 
+read  as  'Indian  Standard'. 
+
+b)  Comma  (,)  has  been  used  as  a  decimal  marker,  while  in  Indian  Standards,  the  current 
+practice  is  to  use  a  point  (.)  as  the  decimal  marker. 
+
+In  this  adopted  standard,  reference  appears  to  the  following  International  Standard  for  which  Indian 
+Standard  also  exists.  The  corresponding  Indian  Standard  which  is  to  be  substituted  in  its  place  is 
+given  below  along  with  its  degree  of  equivalence  for  the  edition  indicated: 
+
+International  Standard  Corresponding  Indian  Standard  Degree  of 
+
+Equivalence 
+
+ISO  10816-1:1995  Mechanical  vibration  IS   14817   (Part   1)    :   2000   Mechanical         Identical 
+—  Evaluation  of  machine  vibration  by  vibration     —     Evaluation     of     machine 
+measurements  on  non-rotating  parts  —  vibration    by    measurements    on    non- 
+Part  1  :  General  guidelines  rotating  parts:  Part  1  General  guidelines 
+
+The  concerned  Technical  Committee  has  reviewed  the  provision  of  the  following  International 
+Standard  referred  in  this  adopted  standard  and  has  decided  that  it  is  acceptable  for  use  in  conjunction 
+with  this  standard: 
+
+I  EC  60994      Guide  for  field  measurement  of  vibrations  and  pulsations  in  hydraulic  machines 
+(turbines,  storage  pumps  and  pump-turbines) 
+
+For  the  purpose  of  deciding  whether  a  particular  requirement  of  this  standard  is  complied  with,  the 
+final  value,  observed  or  calculated,  expressing  the  result  of  a  test  or  analysis,  shall  be  rounded  off  in 
+accordance  with  IS  2  :  1960  'Rules  for  rounding  off  numerical  values  (revised)'.  The  number  of 
+significant  places  retained  in  the  rounded  off  value  should  be  the  same  as  that  of  the  specified  value 
+in  this  standard. 
+
+
+IS    14817  (Part  5):  2004 
+ISO    10816-5  :2000 
+
+
+Indian  Standard 
+
+MECHANICAL  VIBRATION  —  EVALUATION  OF 
+
+MACHINE  VIBRATION  BY  MEASUREMENTS  ON 
+
+NON-ROTATING  PARTS 
+
+PART  5  MACHINE  SETS  IN  HYDRUALIC  POWER  GENERATING/PUMPING 
+
+AND  PUMPING  PLANTS 
+
+
+1     Scope 
+
+This  part  of  ISO  10816  gives  guidelines  for  applying  bearing  housing  vibration  evaluation  criteria  measured  under 
+normal  operating  conditions  at  the  bearings,  bearing  pedestals  or  bearing  housings  of  the  main  machine  sets  in 
+hydraulic  power  generating  and  pumping  plants.  These  guidelines  are  presented  in  terms  of  both  steady-state  running 
+vibration  and  any  amplitude  changes  which  may  occur  in  these  steady  values.  The  numerical  values  specified  are  not 
+intended  to  serve  as  the  only  basis  for  vibration  evaluation,  since,  in  general,  the  vibratory  condition  of  a  machine  is 
+assessed  by  consideration  of  both  the  bearing  housing  vibration  and  the  associated  shaft  vibration  {see  introduction  of 
+ISO  10816-1  and  ISO  7919-1). 
+
+This  part  of  ISO  10816  is  applicable  to  machine  sets  in  hydraulic  power  generating  and  pumping  plants  where  the 
+hydraulic  machines  have  speeds  from  60  r/min  to  1800  r/min,  shell  or  shoe  type  sleeve  bearings  and  a  main  engine 
+power  of  1  MW  and  more.  The  position  of  the  shaft  line  may  be  vertical,  horizontal  or  at  an  arbitrary  angle  between 
+these  two  directions. 
+
+Machine  sets  covered  by  this  part  of  ISO  10816  may  be  combined  from 
+
+—  hydraulic  turbines  and  generators, 
+
+—  pumps  and  electrical  machines  operating  as  motors,  or 
+
+—  pump-turbines  and  motor-generators. 
+
+Auxiliary  equipment  {e.g.  starting  turbines  or  exciters  lying  in  the  shaft  line)  is  included.  Evaluation  criteria  are  at 
+present  only  given  for  the  main  bearings  of  the  machine  set. 
+
+This  part  of  ISO  10816  is  applicable  also  to  single  turbines  or  pumps  connected  to  generators  or  electrical  motors 
+over  gears  or/and  radially  flexible  couplings.  However,  electrical  machines  of  this  type  should  in  principal  be  evaluated 
+according  to  the  criteria  specified  in  ISO  10816-3. 
+
+This  part  of  ISO  10816  is  not  applicable  to  the  following: 
+
+—  pumps  in  thermal  power  plants  or  industrial  installations  (for  these  machines,  see  ISO  10816-3); 
+
+—  hydraulic  machines  or  machine  sets  having  rolling  element  bearings. 
+
+Consistent  with  clause  1  of  ISO  10816-1:1995,  bearing  housing  vibration  of  machine  sets  in  hydraulic  power 
+generating  and  pumping  plants  may  be  determined  with  regard  to  following  tasks: 
+
+—  task  A:  monitoring  changes  in  vibrational  behaviour; 
+
+—  task  B:  prevention  of  excessive  kinetic  load. 
+
+
+IS    14817  (Part  5)  :  2004 
+ISO    10816-5  :  2000 
+
+
+The  criteria  are  applicable  mainly  for  the  vibration  produced  by  the  machine  set  itself.  Special  considerations  should 
+be  made  when  necessary  for  vibration  transmitted  to  the  machine  set  from  external  sources. 
+
+2  Normative  references 
+
+The  following  normative  documents  contain  provisions  which,  through  reference  in  this  text,  constitute  provisions  of 
+this  part  of  ISO  10816.  For  dated  references,  subsequent  amendments  to,  or  revisions  of,  any  of  these  publications 
+do  not  apply.  However,  parties  to  agreements  based  on  this  part  of  ISO  10816  are  encouraged  to  investigate  the 
+possibility  of  applying  the  most  recent  editions  of  the  normative  documents  indicated  below.  For  undated 
+references,  the  latest  edition  of  the  normative  document  referred  to  applies.  Members  of  ISO  and  lEC  maintain 
+registers  of  currently  valid  International  Standards. 
+
+ISO  10816-1:1995,  Mechanical  vibration  —  Evaluation  of  machine  vibration  by  measurements  on  non-rotating 
+parts  —  Part  1:  General  guidelines. 
+
+I  EC  60994,  Guide  for  field  measurement  of  vibrations  and  pulsations  in  hydraulic  machines  (turbines,  storage 
+pumps  and  pump-turbines). 
+
+3  Machine  arrangements 
+
+Significant  differences  in  design  and  arrangement  of  hydraulic  machine  sets  require  a  separation  into  four  principal 
+groups  with  regard  to  the  radial  bearing  stiffness,  as  follows. 
+
+Group  1 :  Horizontal  machine  sets  with  pedestal  or  end-shield  bearings  mounted  on  a  rigid  foundation,  usually  with 
+operational  speeds  of  above  300  r/min. 
+
+Group  2:  Horizontal  machine  sets  with  bearing  housings  which  are  only  braced  against  the  casing  of  the  hydraulic 
+machine,  usually  with  operational  speeds  of  less  than  300  r/min. 
+
+Group  3:  Vertical  machine  sets  with  bearing  housings  which  are  all  braced  against  the  foundation,  usually  with 
+
+operational  speeds  of  between  60  r/min  and  1  800  r/min. 
+
+Group  4:  Vertical  machine  sets  with  lower  bearing  housings  braced  against  the  foundation  and  upper  bearing 
+housings  braced  against  the  generator  stator  only,  usually  with  operational  speeds  of  between  60  r/min  and 
+
+1  000  r/min. 
+
+NOTE  Umbrelta-type  machines  belong  to  Group  4. 
+
+Figures  1  to  4  show  examples  for  each  group. 
+
+
+IS  14817  (Parts)  :  2004 
+ISO  10816-5  :  2000 
+
+
+NOTE  The  numbers  indicate  measurement  locations. 
+
+
+Figure  1  —  Measurement  locations  for  Group  1  machine  sets  with  horizontal  shaft  and  pedestal  or 
+end-shield  bearings  mounted  on  rigid  foundation,  usually  with  operational  speeds  of  above  300  r/min 
+
+
+IS  14817  (Parts)  :  2004 
+ISO  10816-5  :  2000 
+
+
+NOTE 
+
+
+The  numbers  indicate  measurement  locations. 
+
+
+Figure  2  —  Measurement  locations  for  a  Group  2  machine  set  with  horizontal  shaft  and  bearing  housings 
+which  are  only  braced  against  the  casing  of  the  hydraulic  machine,  usually  with  operational  speeds  of 
+
+less  than  300  r/min 
+
+
+IS   14817  (Part  5):  2004 
+ISO   10816-5  :  2000 
+
+
+NOTE  The  numbers  indicate  measurement  locations. 
+
+
+Figure  3  —  Measurement  locations  for  a  Group  3  machine  set  with  vertical  shaft  and  bearing  housings 
+which  are  all  braced  against  the  foundation,  usually  with  operational  speeds  of  between  60  r/min  and 
+
+1  800  r/min 
+
+
+IS    14817  (Parts)  :  2004 
+ISO   10816-5  :2000 
+
+
+NOTE  1       The  numbers  indicate  measurement  locations. 
+NOTE  2        Umbrella-type  machines  belong  to  this  group. 
+
+
+Figure  4  —  Measurement  locations  for  a  Group  4  machine  set  with  vertical  shaft,  lower  bearing  housings 
+
+braced  against  the  foundation  and  upper  bearing  housing  braced  against  the  generator  stator  only,  usually 
+
+with  operational  speeds  of  between  60  r/min  and  1  000  r/min 
+
+
+IS    14817  (Part  5):  2004 
+ISO   10816-5  :  2000 
+
+
+U     U 
+
+
+-H-^ 
+
+
+y////////,   ^///////////////////////A 
+
+
+'/. 
+
+
+NOTE  It  is  recommended  that  the  location  for  horizontal  measurements  should  be  on  the  bearing  pedestal  and  not  on  the 
+
+bearing  cap,  whenever  possible. 
+
+Figure  5  —  Measurement  locations  and  directions  at  pedestal  or  end-shield  bearings 
+
+4    Measurement  procedures  and  conditions 
+4.1     General 
+
+
+Follow  the  general  procedures  given  in  ISO  10816-1  and  lEC  60994,  subject  to  the  recommendations  given  in  4  2 
+to  4.5. 
+
+
+IS    14817  (Parts)  :  2004 
+ISO    10816-5  :  2000 
+
+4.2  Measurement  type 
+
+Absolute  bearing  housing  vibration  measurements  are  commonly  made  on  hydraulic  machine  sets  using  seismic 
+transducers  measuring  the  vibration  velocity  v^^g  in  millimetres  per  second  or,  after  electronic  integration,  the  vibration 
+displacement  5p_p  in  micrometres.  The  vibration  displacement  Sp_p  can  also  be  measured  directly  as  a  relative 
+quantity  using  displacement  transducers  in  the  case  where  a  rigid  non-vibrating  support  can  be  found. 
+
+Because  of  the  special  nature  of  the  vibratory  behaviour  of  hydraulic  machines  and  their  different  speed  ranges,  these 
+quantities  have  favoured  ranges  of  application  as  follows: 
+
+a)  For  low-speed  machines  (below  300  r/min),  the  preferred  measurement  quantity  is  the  vibration  displacement 
+5p_p.  If  the  spectrum  is  expected  to  contain  high-frequency  components,  the  evaluation  should  normally  be 
+based  on  broad-band  measurements  of  both  displacement  and  velocity. 
+
+b)  For  medium-  and  high-speed  machines  (300  r/min  to  1  800  r/min),  the  preferred  measurement  quantity  is  the 
+vibration  velocity  Vj^^^.  If  the  spectrum  is  expected  to  contain  low-frequency  components,  the  evaluation  should 
+normally  be  based  on  broad-band  measurements  of  both  velocity  and  displacement. 
+
+4.3  Measurement  locations  and  directions 
+
+Measurement  tasks  A  and  B  (see  clause  1 )  require  measurements  to  be  taken  on  exposed  parts  of  the  machine  that 
+are  normally  accessible  and  are  representative  locations  for  the  so-called  force  flow  in  the  supporting  structure,  for 
+example  on  all  main  bearings  of  the  machine  set.  Typical  examples  of  measurement  locations  for  hydraulic  machines 
+are  shown  in  Figures  1  to  5. 
+
+Care  shall  be  taken  in  this  context  to  ensure  that  measurements  reasonably  represent  the  vibration  of  the  bearing 
+housings  and  do  not  include  any  local  resonance  or  amplification.  The  locations  and  directions  for  vibration 
+measurements  shall  be  such  that  they  provide  adequate  sensitivity  to  the  dynamic  forces  of  the  machine  under 
+various  operating  conditions.  Typically,  this  will  often  require  two  orthogonal  radial  measurement  directions  on  each 
+bearing  cap,  pedestal  or  housing.  For  low-speed  machines  with  a  horizontal  shaft  axis,  such  as  bulb-turbines  as 
+shown  in  Figure  2.  the  measurement  locations  and  directions  shall  be  determined  with  great  care. 
+
+-CAUTION;  The  vibration  measured  at  the  lower  guide  bearings  of  vertical  machines  may  sometimes  be 
+misinterpreted;  the  vibration  level  measured  at  such  bearings  and  their  surrounding  supports  which  are  rigidly 
+embedded  in  the  buildings  is  sometimes  produced  by  hydraulic  forces,  directly  transmitted  from  the  hydraulic 
+machine  via  the  foundation.  Such  vibrations  do  not  necessarily  give  a  correct  image  of  the  vibration  of  the  Totaling 
+shaft  system. 
+
+For  horizontal  machines  when  using  portable  measuring  instrumentation,  take  measurements  in  the  vertical  and 
+horizontal  directions  90°  apart  (perpendicular  to  the  shaft  axis)  and,  if  possible,  in  the  axial  direction  (parallel  to  the 
+shaft  axis)  as  shown  in  Figure  5. 
+
+A  single  transducer  may  be  used  on  a  bearing  cap  or  pedestal  in  place  of  the  more  typical  pair  of  orthogonal 
+transducers  if  it  is  known  to  provide  adequate  information  about  the  magnitude  of  the  machine  vibration.  However, 
+caution  should  be  observed  in  evaluating  vibration  from  a  single  transducer  at  a  measurement  location,  because  it 
+may  not  be  oriented  to  provide  a  reasonable  approximation  to  the  maximum  value  at  that  location. 
+
+In  the  case  of  vertical  or  inclined  machine  sets,  the  locations  and  directions  that  give  maximum  vibration  readings 
+shall  be  used,  for  example  the  stiff  and  the  elastic  axis  (this  is  important  for  cases  with  spider  arm  support 
+constructions),  and  the  specific  location  and  direction  shall  be  recorded  with  the  measurement.  If  possible,  the  setting 
+of  the  transducers  at  different  bearings  should  be  in  line.  For  vertical  machines,  the  preferred  measurement  directions 
+are  upstream  and  90°  to  that. 
+
+For  monitoring  purposes  (task  A)  only,  in  some  cases  measurement  locations  may  be  reduced  to  the  most  important 
+ones,  mainly  at  machine  sets  with  four  or  more  bearings.  The  selection  should  be  based  on  vibration  performance 
+analyses,  simulating  all  types  of  faults  or  disturbing  effects.  Preferred  measuring  locations  should  be  those  where 
+possible  disturbing  events  produce  significant  bearing  housing  amplitudes  (velocity  or  displacement). 
+
+
+IS   14817  (Parts)  :  2004 
+_  ISO   10816-5  :2000 
+
+The  installation  of  one  single  transducer  at  the  bearing  pedestal  or  housing  in  horizontal  or  slightly  inclined  position  is 
+comnnonly  considered  adequate  for  continuous  monitoring  of  Group  1  or  2  machine  sets.  For  monitoring  axial 
+vibration  of  the  machine,  one  transducer  mounted  on  the  thrust  bearing  is  often  sufficient. 
+
+4.4    Measurement  equipment 
+
+The  measurement  equipment  shall  be  capable  of  broad-band  measurement  of  vibration  with  flat  response  within  the 
+following  frequency  ranges: 
+
+—  from  at  least  a  quarter  of  the  nominal  rotational  frequency  up  to  the  product  of  three  times  the  rotational 
+frequency  times  the  number  of  buckets  or  blades,  if  the  measurement  quantity  is  the  vibration  displacement 
+
+—  from  2  Hz  to  1  000  Hz  if  the  measurement  quantity  is  the  vibration  velocity  v^^^^. 
+
+NOTE  If  the  measurement  equipment  is  also  to  be  used  for  diagnostic  purposes,  an  upper  frequency  limit  higher  than  that 
+specified  may  be  necessary  (e.g.  higher  than  1  000  Hz  in  the  case  of  vibration  velocity  measurements). 
+
+Vibration  displacement  can  be  measured  as  an  absolute  quantity  with  special  seismic  transducers  or  accelerometers. 
+If  standard  equipment  is  applied,  particular  attention  should  be  taken  to  ensure  that  the  measuring  instrumentation  is 
+fitted  with  specific  electronic  compensation  to  obtain  a  flat  response  over  the  specified  frequency  range. 
+
+For  machines  with  nominal  speeds  lower  than  or  equal  to  300  r/min,  vibration  displacement  is  often  measured  as 
+relative  quantity  (relative  to  the  foundation)  using  contact  or  non-contact  displacement  transducers.  These 
+transducers  shall  be  installed  on  rigid  bars  or  frames  fixed  to  rigid  parts  of  the  foundation.  It  is  necessary  to  ensure 
+that  the  natural  frequencies  of  these  elements  are  at  least  higher  than  ten  times  the  nominal  rotational  frequency,  and 
+also  they  should  not  be  a  multiple  of  this  frequency. 
+
+Vibration  velocity  shall  be  measured  as  an  absolute  quantity  with  seismic  transducers  or  accelerometers.  If  seismic 
+transducers  are  used,  attention  should  be  taken  to  ensure  that  the  measuring  instrumentation  is  fitted  with  specific 
+electronic  compensation  to  obtain  a  flat  response  over  the  total  frequency  range  from  2  Hz  to  1  000  Hz. 
+
+Transducers  for  absolute  vibration  measurements  shall  be  mounted  on  rigid  parts  of  the  bearing  housing  or  adjacent 
+surrounding  structures  which  can  be  classified  to  give  a  representative  vibration  response  of  the  machine.  Particular 
+attention  shall  be  given  to  ensure  that  transducer  mounting  complies  with  specifications  from  the  transducer 
+manufacturer.  If  additional  elements  for  mounting  such  transducers  are  necessary,  it  shall  be  ensured  that  the  natural 
+frequencies  of  those  elements  are  at  least  higher  than  ten  times  the  nominal  rotational  frequency,  and  also  they 
+should  not  be  a  multiple  of  this  frequency. 
+
+The  characteristics  of  the  measuring  system  shall  be  known  with  regard  to  the  effects  of  the  environment,  including 
+the  following: 
+
+—  temperature  variations; 
+
+—  magnetic  fields; 
+
+—  sound  fields; 
+
+—  power  source  variation; 
+
+—  transducer  cable  length; 
+
+—  transducer  orientation. 
+
+Particular  attention  shall  be  given  to  ensuring  that  the  vibration  sensing  transducers  are  correctly  mounted  and  do  not 
+affect  the  vibration  response  characteristics  of  the  machine. 
+
+
+IS  14817  (Parts)  :  2004 
+ISO  10816-5  :  2000 
+
+4.5    Operational  conditions 
+
+Measurpments  shall  be  carried  out  when  the  rotor  and  the  main  bearings  have  reached  their  normal  steady-state 
+operating  temperatures  and  with  the  machine  running  under  steady-state  conditions. 
+
+5     Evaluation 
+
+5.1  General 
+
+ISO  10816-1  provides  a  general  description  of  the  two  evaluation  criteria  used  to  assess  vibration  severity  on  various 
+classes  of  machines.  One  criterion  considers  the  magnitude  of  vibration  observed  by  broad-band  measurement;  the 
+second  considers  changes  in  magnitude,  irrespective  of  whether  they  are  increases  or  decreases. 
+
+5.2  Criterion  I:  Vibration  magnitude 
+
+The  reliable  and  safe  running  of  a  machine  under  normal  operating  conditions  requires  that  the  vibration  magnitude 
+should  remain  below  certain  limits  consistent  with,  for  example,  acceptable  kinetic  loads  and  acceptable  vibration 
+transmission  into  the  support  structure  and  foundation.  Generally,  this  criterion  will  be  taken  as  the  basis  for  the 
+evaluation  of  machines  in  the  absence  of  any  other  established  knowledge  of  the  satisfactory  running  characteristics 
+for  machines  of  that  type  (e.g.  for  new  machine  types). 
+
+The  maximum  vibration  magnitude  observed  at  each  bearing  pedestal  or  housing  is  assessed  against  the  evaluation 
+zones  defined  below. 
+
+Zone  A:  The  vibration  of  newly  commissioned  machines  would  normally  fall  within  this  zone. 
+
+Zone  B:  Machines  with  vibration  within  this  zone  are  normally  considered  acceptable  for  unrestr'rcted  long-term 
+operation. 
+
+Zone  C:  Machines  with  vibration  within  this  zone  are  normally  considered  unsatisfactory  for  long-term  continuous 
+operation.  Generally,  the  machine  may  be  operated  for  a  limited  period  in  this  condition  until  a  suitable  opportunity 
+arises  for  remedial  action. 
+
+Zone  D:  Vibration  values  within  this  zone  are  normally  considered  to  be  of  sufficient  severity  to  cause  damage  to  the 
+machine. 
+
+Numerical  values  assigned  to  the  zone  boundaries  are  not  intended  to  serve  as  acceptance  specification,  which  shall 
+be  subject  to  agreement  between  the  machine  manufacturer  and  the  customer.  However,  the  zone  boundaries 
+provide  guidelines  for  ensuring  that  gross  deficiencies  or  unrealistic  requirements  are  avoided.  In  certain  cases,  there 
+may  be  specific  features  associated  with  a  particular  machine  which  would  require  different  zone  boundary  values 
+(higher  or  lower)  to  be  used.  In  such  cases,  it  is  normally  the  responsibility  of  the  machine  manufacturer  to  explain  the 
+reason  for  this  and,  in  particular,  to  confirm  that  the  machine  would  not  be  endangered  by  operating  with  higher 
+vibration  values. 
+
+NOTE  Vibration  magnitudes  for  recommissioned  units  with  increased  output,  usually  characterized  as  "uprated",  may  be  located 
+in  zone  A  or  B.  The  choice  of  zone  A  or  B  depends,  however,  on  the  relation  between  the  new  excitation  forces  and  the  capacity  of 
+the  new  and  re-used  components  to  withstand  long-term  dynamic  exposure. 
+
+5.3     Evaluation  zone  limits 
+
+5.3.1     Turbine  operating  conditions 
+
+Recommended  values  for  the  zone  boundaries  are  given  in  Tables  A.I  to  A.4  for  the  four  machine  groups  covered  by 
+this  part  of  ISO  10816.  Application  of  these  criteria  is  valid  for  measurements  in  a  radial  direction  on  bearing  pedestals 
+or  housings  of  machine  sets  with  nominal  speeds  between  60  r/min  and  1  800  r/min  operating  within  the  contractually 
+permissible  steady-state  range,,  as  well  as  at  other  load  conditions  if  the  machine  has  been  made  suitable  for  these 
+particular  conditions.  Higher  values  of  vibration  may  be  permitted  under  the  conditions  specified  in  annex  B. 
+
+
+10 
+
+
+IS   14817  (Part  5):  2004 
+ISO   10816-5:2000 
+
+Zone  boundary  values  are  specified  for  both  measurement  quantities.  If  both  quantities,  vibration  velocity  and 
+displacement,  are  measured  and  compared  to  the  corresponding  values  in  Tables  A.1 ,  A.3  and  A.4,  the  evaluation 
+which  is  most  restrictive  shall  apply. 
+
+The  limiting  values  are  applicable  for  all  types  of  machine  sets  belonging  to  one  group,  independent  of  head  and 
+power,  except  for  the  restrictions  given  in  clause  1 .  For  hydrodynamically  smoother  running  machines,  normally  lower 
+bearing  housing  vibration  may  be  expected. 
+
+In  the  case  of  pump-turbines,  increased  bearing  housing  vibration  amplitudes  may  occur  because  of  the  runner 
+design  criteria,  which  are  a  compromise  between  the  optimal  design  for  a  turbine  and  a  pump  runner. 
+
+The  values  in  Tables  A.1  to  A.4  are  based  on  statistical  analyses  of  collected  measurement  data  from  more  than 
+1  400  samples,  collected  worldwide  from  machine  sets  with  different  powers  and  speeds  within  all  four  groups.  A  brief 
+description  of  the  analysis  procedure  and  the  applied  regression  technique  is  given  in  annex  C. 
+
+NOTE  1  In  general,  an  overall  judgement  of  the  vibratory  state  of  the  machine  Is  made  on  the  basis  of  both  the  bearing  housing 
+vibration  as  defined  above  and  the  measurements  performed  on  the  shaft  (see  ISO  7919-5). 
+
+NOTE  2  As  explained  in  annex  C,  the  given  limiting  values  are  based  on  a  statistical  procedure  and  the  defining  of-predictive 
+limits;  this  was  necessary  due  to  the  wide  spread  of  the  measured  data.  Therefore  It  should  not  be  assumed  that  a  correct 
+correlation  between  zone  boundaries  and  possible  faults  or  troubles  at  the  observed  machine  will  exist  In  all  cases. 
+
+5.3.2  Pump  operating  conditions 
+
+At  present,  sufficient  data  are  not  available  to  prepare  criteria  for  machine  sets  in  pump  operating  conditions,  they  will 
+be  incorporated  in  a  future  edition  of  this  part  of  ISO  10816  when  available. 
+
+5.3.3  Special  operating  conditions 
+
+Attention  should  be  paid  to  the  following  operating  conditions: 
+
+~    steady-state  operating  conditions  at  low  partial  load,  at  overload,  and  the  frequent  transient  operating 
+conditions  during  start-up  and  shut-down; 
+
+—    rare  transient  operating  conditions  such  as  emergency  shut-down,  no-discharge  operation,  and  running 
+through  the  brake  quadrant  with  pumps  and  pump-turbines. 
+
+The  evaluation  of  such  processes  is  much  more  difficult  than  that  of  operation  in  the  specified  load  range.  At  present 
+there  are  insufficient  data  and  experience  available  to  establish  limiting  curves  for  these  operating  conditions.  The 
+less  the  operating  condition  corresponds  to  the  nominal  conditions,  the  more  the  flow  within  the  hydraulic  machine  is 
+disturbed;  disturbances  such  as  separation  and  swirl  generate  violent  stochastic  excitation.  Due  to  the  density  of 
+water,  the  forces  caused  by  the  stochastic  excitation  are  much  greater  than  in  thermal  tutto  machines.  Therefore 
+during  operation  outside  the  specified  load  range,  the  bearing  or  structure  vibrations  caused  by  mass  unbalance  are, 
+as  a  rule,  totally  masked  by  the  stochastic  components.  Because  of  these  large  stochastic  components  under  extra- 
+ordinary operating  conditions,  less  reliance  should  be  given  to  the  instantaneous  value  and  more  to  the  mean  value 
+over  a  representative  measurement  period. 
+
+5.3.4    Axial  vibration 
+
+It  is  not  common  practice  to  measure  axial  vibration  on  main  radial  load-carrying  bearings  during  continuous 
+operational  monitoring.  Such  measurements  are  primarily  used  during  periodic  vibration  surveys  or  for  diagnostic 
+purposes.  At  thrust  bearings,  axial  vibration  in  general  correlates  with  axial  pulsations  which  could  cause  damage  to 
+the  axial  load-carrying  surfaces.  Criteria  for  axial  vibration  of  bearings  cannot  be  given  at  present  because  of  the  lack 
+of  measured  data. 
+
+
+11 
+
+
+IS    14817  {Part  5):  2004 
+ISO    10816-5  :  2000 
+
+5.4  Criterion  II:  Change  in  vibration  magnitude 
+
+This  criterion  provides  an  assessment  of  a  change  in  vibration  nnagnitude  from  a  previously  established  reference 
+value  when  operating  under  steady-state  conditions.  A  significant  change  in  broad-band  vibration  magnitude  may 
+occur  which  requires  some  action  even  though  the  alarm  zone  C  of  Criterion  I  has  not  been  reached.  Such  changes 
+can  be  instantaneous  or  progressive  with  time  and  may  indicate  that  damage  has  occurred  or  be  a  warning  of  an 
+impending  failure  or  some  other  irregularity.  Criterion  II  is  specified  on  the  basis  of  change  in  broad-band  vibration 
+magnitude  occurring  under  steady  operating  conditions.  Steady  operating  conditions  should  be  interpreted  to  include 
+small  changes  in  the  machine  power  or  operational  conditions. 
+
+When  Criterion  II  is  applied,  the  vibration  measurements  being  compared  shall  be  taken  at  the  same  transducer 
+location  and  orientation,  and  under  approximately  the  same  machine  operating  conditions.  Obvious  changes  in  the 
+normal  vibration  magnitudes,  regardless  of  their  total  amount,  should  be  investigated,  because  a  dangerous  situation 
+could  then  be  avoided.  When  changes  in  vibration  magnitude  exceed  25  %  of  the  upper  boundary  value  of  zone  B 
+(defined  as  B/C  in  Tables  A.1  to  A.4),  such  changes  should  be  considered  significant,  particularly  if  they  are  sudden. 
+Diagnostic  investigations  should  be  initiated  to  ascertain  the  reason  for  the  change  and  to  determine  what  further 
+actions  are  appropriate. 
+
+NOTE  The  25  %  value  is  considered  significant  regardless  of  whether  it  is  an  increase  or  decrease  in  vibration.  The  25  %  value  is 
+provided  as  a  guideline,  but  other  values  may  be  used  based  on  experience  with  a  specific  machine. 
+
+5.5  Operational  limits 
+
+5.5.1  General 
+
+For  long-term  operation,  it  is  common  practice  to  establish  operational  vibration  limits.  These  limits  take  the  form  of 
+ALARMS  and  TRIPS. 
+
+ALARMS:  To  provide  a  warning  that  a  defined  value  of  vibration  has  been  reached  or  a  significant  change  has 
+occurred,  at  which  remedial  action  may  be  necessary.  In  general,  if  an  ALARM  situation  occurs,  operation  can 
+continue  for  a  period  whilst  investigations  are  carried  out  to  identify  the  reason  for  the  change  in  vibration  and  define 
+any  remedial  action. 
+
+TRIPS:  To  specify  the  magnitude  of  vibration  beyond  which  further  operation  of  the  machine  may  cause  damage.  If 
+the  TRIP  value  is  exceeded,  immediate  action  should  be  taken  to  reduce  the  vibration  or  the  machine  should  be  shut 
+down. 
+
+Different  operational  limits,  reflecting  differences  in  dynamic  loading  and  support  stiffness,  may  be  specified  for 
+different  measurement  positions  and  directions. 
+
+5.5.2  Setting  of  ALARMS 
+
+The  ALARM  values  may  vary  considerably,  up  or  down,  for  different  machines.  The  values  chosen  will  normally  be 
+set  relative  to  a  baseline  value  determined  from  experience  for  the  measurement  position  or  direction  for  that 
+particular  machine. 
+
+It  is  recommended  that  the  ALARM  value  should  be  set  higher  than  the  baseline  by  an  amount  equal  to  25  %  of  the 
+upper  limit  of  zone  B.  If  the  baseline  is  low,  the  ALARM  may  be  below  zone  C. 
+
+Where  there  is  no  established  baseline  (for  example  with  a  new  machine)  the  initial  ALARM  setting  should  be  based 
+either  on  experience  with  other  similar  machines  or  relative  to  agreed  acceptance  values.  After  a  period  of  time,  the 
+steady-state  baseline  value  will  be  established  and  the  ALARM  setting  should  be  adjusted  accordingly. 
+
+In  either  case  it  is  recommended  that  the  ALARM  value  should  not  normally  exceed  1 ,25  times  the  upper  limit  of 
+zone  B  (this  limit  is  defined  as  B/C  in  Tables  A.1  to  A.4). 
+
+
+12 
+
+
+IS   14817  (Part  &|  •,  2004 
+ISO   10816-5  :2000 
+
+If  the  steady-state  baseline  changes  (for  example  after  a  machine  overhaul),  the  ALARM  setting  should  be  revised 
+accordingly.  Different  ALARM  settings,  reflecting  differences  in  dynamic  loading  and  support  stiffness,  may  exist  for 
+different  measurement  locations  and  directions. 
+
+5.5.3  Setting  of  TRIPS 
+
+The  TRIP  values  will  generally  relate  to  the  mechanical  integrity  of  the  machine  and  be  dependent  on  any  specific 
+design  features  which  have  been  introduced  to  enable  the  machine  to  withstand  abnormal  dynamic  forces.  The 
+values  used  will,  therefore,  generally  be  the  same  for  all  machines  of  similar  design  and  would  not  normally  be  related 
+to  the  steady-state  baseline  value  used  for  setting  ALARMS. 
+
+There  may,  however,  be  differences  for  machines  of  different  design  and  it  is  not  possible  to  give  clear  guidelines  for 
+absolute  TRIP  values.  In  general,  the  TRIP  value  will  be  within  zone  C  or  D,  but  it  is  recommended  that  the  TRIP 
+value  should  not  exceed  1 ,25  times  the  upper  limit  of  zone  C  (this  limit  is  defined  as  C/D  in  Tables  A.1  to  A.4). 
+
+5.5.4  Special  operating  conditions 
+
+When  the  machine  is  operating  outside  the  normal  load  range  and  during  all  transient  operating  conditions,  ALARM 
+and  possibly  TRIP  contacts  shall  be  blocked  for  these  conditions.  If  the  machine  should  be  monitored  during  these 
+operating  conditions  too,  a  second  set  of  ALARM  and  TRIP  values  shall  be  selected  according  to  the  maximum 
+vibration  values  accepted  during  commissioning  of  the  machine. 
+
+5.6  Supplementary  procedures/criteria 
+
+The  measurement  and  evaluation  of  machine  vibration  given  in  this  part  of  ISO  10816  may  be  supplemented  by  shaft 
+vibration  measurements  and  the  applicable  criteria  given  in  ISO  7919-5.  It  is  important  to  recognize  that  there  is  no 
+simple  way  to  relate  bearing  housing  vibration  to  shaft  vibration,  or  vice  versa.  Thus,  when  the  criteria  of  this  part  of 
+ISO  10816  and  those  of  ISO  7919-5  are  both  applied  in  vibration-severity  assessment,  independent  shaft  and  bearing 
+pedestal  or  housing  vibration  measurement  shall  be  made.  If  application  of  the  different  criteria  leads  to  different 
+assessments  of  the  machine  vibration  severity,  the  more  restrictive  zone  classification  is  considered  to  apply. 
+
+5.7  Evaluation  based  on  vibration  vector  Information 
+
+The  evaluation  considered  in  this  part  of  ISO  10816  is  limited  to  broad-band  vibration  without  reference  to  frequency 
+components  or  phase.  This  will,  in  most  cases,  be  adequate  for  acceptance  testing  and  operational  monitoring 
+purposes.  However,  for  long-term  condition  monitoring  purposes  and  for  diagnostics,  the  use  of  vibration  vector 
+information  is  particularly  useful  for  detecting  and  defining  changes  in  the  dynamic  state  of  the  machine.  In  some 
+cases,  these  changes  would  go  undetected  when  using  only  broad-band  vibration  measurements  (see,  for  example, 
+ISO  1 081 6-1 ).  The  specification  of  criteria  for  this,  however,  is  beyond  the  scope  of  this  part  of  IS0 1081 6. 
+
+
+13 
+
+
+IS   14817  (Part  5) :  2004 
+ISO    10816-5:2000 
+
+
+Annex  A 
+
+(normative) 
+
+Evaluation  zone  boundaries 
+
+
+Recommended  values  for  the  zone  boundaries  are  give  in  Tables  A.I  to  A.4  for  the  four  principal  machine  groups 
+covered  by  this  part  of  ISO  10816.  They  apply  to  the  broad-band  r.m.s.  values  of  vibration  velocity  and  the  peak-to- 
+peak  values  of  vibration  displacement  when  measured  with  equipment  as  specified  in  4.4  on  the  bearing  pedestals  or 
+housings  in  the  radial  direction.  They  are  valid  only  for  turbine  operation  within  the  contractually  permissible  steady- 
+state  range  as  well  as  at  other  loEid  conditions,  if  the  machine  set  has  been  made  suitable  for  these  particular 
+conditions  (for  restrictions,  see  5.3.1  to  5.3.3). 
+
+NOTE  1  Limiting  values  are  defined  by  statistical  evaluation  of  measured  data  (see  annex  C).  They  are  not  derived  from  an 
+evaluation  of  the  operational  behaviour  (e.g.  occurrence  of  faults)  of  individual  machines. 
+
+For  some  machine  groups,  recommended  zone  boundary  values  have  to  be  subdivided  corresponding  to  the 
+differences  in  radial  bearing  stiffness.  Separate  values  are  given  for  the  different  measurement  locations  shown  in 
+Figures  1  to  4. 
+
+Zone  boundary  values  are  specified  for  both  measurement  quantities.  If  both  quantities  (vibration  velocity  and 
+displacement)  are  measured  and  compared  to  the  corresponding  values  in  Tables  A.1 ,  A.3  and  A.4,  the  evaluation 
+which  is  most  restrictive  shall  apply. 
+
+NOTE  2  Machines  with  Francis  turbines  might  have  higher  vibration  values  at  the  bearing  housings  when  there  are  draft  tube 
+excitations.  Experience  has  shown  that  this  excitation  can  occur  even  under  standard  operating  conditions.  In  the  case  of  heavy 
+draft  tube  excitations  at  Francis  turbines,  the  zone  boundary  values  specified  in  Tables  A.1,  A.3  and  A.4  have  limited 
+applicability.  At  present,  insufficient  measurement  data  are  available  to  specify  limits  for  machines  with  heavy  draft  tube 
+excitations. 
+
+
+Table  A.1  —  Recommended  evaluation  zone  boundaries  for  machines  of  Group  1:  Horizontal  machine  sets 
+with  pedestal  or  end-shield  bearings  mounted  on  rigid  foundation,  usually  with  operational  speeds  of 
+
+above  300  r/min 
+
+
+Zone  boundary 
+
+
+A/B 
+B/C 
+C/D 
+
+
+At  measurement  location  1,  2, 3  and  4 
+R.m.s.  velocity 
+
+
+Pea  l(-to- peak 
+displacement 
+
+
+nm 
+
+
+30 
+50 
+80 
+
+
+mm/s 
+
+
+1.6 
+2,5 
+4,0 
+
+
+NOTE  Vibration  levels  of  two-jet  Pelton  machines  are  strongly 
+influenced  by  the  orientation  of  the  resulting  steady-state  force  vector  and 
+the  operating  jet  (lower  or  upper)  under  part-load  conditions. 
+
+
+14 
+
+
+IS  14817  (Parts):  2004 
+ISO  10816-5  :  2000 
+
+
+Table  A.2  —  Recommended  evaluation  zone  boundaries  for  machines  of  Group  2:  Horizontal  machine  sets 
+with  bearing  housings  which  are  only  braced  against  the  casing  of  the  hydraulic  machine,  usually  with 
+
+operational  speeds  of  less  than  300  r/min 
+
+
+Zone  boundary 
+
+At  measurement  location  1  and-2 
+
+R.m.s.  velocity 
+
+mm/s 
+
+A/B 
+B/C 
+C/D 
+
+2,5 
+4.0 
+6,4 
+
+NOTE      Displacement  values  cannot  at  present  be  given  for  this  machine 
+group  since  vibrations  of  the  bulb  with  very  low  frequencies  and  high 
+displacement    amplitudes    are   frequently   transmitted    to    the    machine 
+bearings.  They  may  disguise  at  these  parts  all  vibration  displacement 
+values   originating   from   the   machine   itself.   The    recommended   zone 
+boundary  values  are  not  applicable  to  the  evaluation  of  bulb  vibration 
+amplitudes. 
+
+Table  A.3  —  Recommended  evaluation  zone  boundaries  for  machines  of  Group  3:  Vertical  machine  sets 
+with  bearing  housings  which  are  all  braced  against  the  foundation,  usually  with  operational  speeds  of 
+
+between  60  r/min  and  1  800  r/min 
+
+
+Zone  boundary 
+
+At  all  main 
+
+Peak-to-peak 
+displacement 
+
+urn 
+
+bearings 
+
+R.m.s.  velocity 
+
+mm/s 
+
+A/B 
+B/C 
+
+C/D 
+
+30 
+50 
+80 
+
+1.6 
+2,5 
+4.0 
+
+Table  A.4  —  Recommended  evaluation  zone  boundaries  for  machines  of  Group  4:  Vertical  machine  sets 
+
+with  lower  bearing  housings  braced  against  the  foundation  and  upper  bearing  housings  braced  against  the 
+
+generator  stator  only,  usually  with  operational  speeds  of  between  60  r/min  and  1  000  r/min 
+
+
+At  measurement  location  1 
+
+At  alt  other  main  bearings         | 
+
+Zone  boundary 
+
+Peak-to-peak 
+displacement 
+
+R.m.s.  velocity 
+
+Peak-to-peak 
+displacement 
+
+R.m.s.  velocity 
+
+nm 
+
+mm/s 
+
+\xm 
+
+mm/s 
+
+A/B 
+
+65 
+
+2,5 
+
+30 
+
+1,6 
+
+B/C 
+
+100 
+
+4,0 
+
+50 
+
+2,5 
+
+C/D 
+
+160 
+
+6.4 
+
+80 
+
+4,0 
+
+NOTE  1    If  a  machine  has  a  lower  generator  bearing  without  br 
+should  be  evaluated  according  to  measurement  location  1 . 
+
+acing  against  the  foun( 
+
+jation,  the  vibration 
+
+NOTE  2    Umbrella-type  machines  belong  to  this  group,  evaluatio 
+bearings. 
+
+n  zone  boundaries  are 
+
+those  for  the  main 
+
+15 
+
+
+IS  14817  (Parts)  :  2004 
+ISO  10816-5  :  2000 
+
+
+Annex  B 
+
+(informative) 
+
+Special  features  of  bearing  housing  vibration  of  hydraulic  machine  sets 
+
+
+B.I   General 
+
+The  principles  of  the  mechanics  of  bearing  housing  vibration  are  explained  in  ISO  10816-1.  They  are  based  mainly  on 
+a  broad  spectrum  of  theoretical  and  experimental  investigations  on  horizontal  shaft  machines.  Until  now,  not  as  much 
+attention  has  been  paid  to  machines  with  vertical  shafts  which  are  more  common  for  hydraulic  machine  sets. 
+
+For  hydraulic  machines,  bearing  housing  vibration  may  occur  over  a  wide  range  of  frequencies.  Possible  causes  of 
+vibration  are  given  in  B.2  to  B.4. 
+
+B.2  Mechanical  causes 
+
+These  are  incorrect  shaft  alignment,  bearing  anisotropy,  loose  assemblies  in  rotating  or  stationary  parts,  and  residual 
+unbalance  in  the  runner  or  impeller,  the  generator  or  the  exciter  rotor. 
+
+Frequencies  to  be  expected  are  the  frequency  of  rotation  and  its  harmonics. 
+
+8.3  Electrical  causes 
+
+These  are  inadequately  equalized  magnetic  pull  in  the  rotor  of  the  coupled  electrical  machines. 
+Frequencies  to  be  expected  are  the  frequency  of  rotation  and  its  harmonics. 
+
+B.4  Hydraulic  causes 
+
+B.4.1      Flow  through  the  waterways 
+
+Frequencies  to  be  expected  are  the  frequency  of  rotation,  frequency  of  the  blade  or  bucket  passing,  or  various 
+combinations  of  these. 
+
+B.4.2     Draft  tube  flow  Instabilities 
+
+These  occur  in  Francis  turbines  even  during  steady-state  operation  outside  the  optimum  efficiency  range. 
+
+Frequencies  to  be  expected  are  those  below  the  frequency  of  rotation,  often  down  to  one-third  to  one-quarter  of  it. 
+Resonance  with  hydraulic  structures  or  with  the  grid  might  occur,  aggravating  the  phenomenon. 
+
+B.4. 3     Cavitation 
+
+This  is  due  to  incorrect  flow  conditions  around  the  runner  or  impeller  blade  profiles,  and  occurs  mostly  within  the 
+higher  load  ranges.  Another  important  reason  for  cavitation  is  a  change  in  tail  water  level. 
+
+Frequencies  to  be  expected  are  usually  high  ones,  as  for  bursts. 
+
+
+16 
+
+
+IS    14817  (Part  5)  :  2004 
+ISO    10816-5  :  2000 
+
+B.4.4     Hydroeiastic  vibration 
+
+This  can  be  due  to  incorrectly  shaped  discharge  edges  of  hydraulic  profiles  (blades,  buckets,  stayvanes,  etc.). 
+
+Frequencies  to  be  expected  are  from  below  100  Hz  to  several  kilohertz  (depending  on  profile  dimensions  and  flow 
+velocities).  Often  a  pronounced  beat  character  is  observed. 
+
+B.4.5     Self-excited  vibrations 
+
+These  occur  where  the  movement  of  mechanical  parts  (seals,  clearances)  influences  the  flow  around  or  throjugh 
+
+them. 
+
+Frequencies  to  be  expected  are  those  slightly  above  the  frequency  of  rotation,  often  coinciding  with  the  bending 
+natural  frequencies  of  the  rotating  system. 
+
+In  machines  of  type  Group  3  and  4  at  part-load  or  overload,  higher  vibration  may  occur  due  to  hydraulic  vortices. 
+Provided  that  such  machine  conditions  with  restricted  operational  periods  do  not  effect  fatigue  of  main  structural 
+members  (even  with  higher  vibration  levels  but  lying  below  the  recommended  limiting  zones),  the  machine  set  may  be 
+made  suitable  also  for  these  particular  operating  conditions. 
+
+B.5  Additional  excitations 
+
+During  regular  transient  operating  conditions  such  as  start-up  and  shut-down,  additional  excitation  forces  interact  with 
+the  runner,  inducing  a  wider  spectrum  and  higher  amplitudes.  During  load  rejections,  even  Kaplan  turbines  can  be 
+subjected  to  draft  tube  instabilities  (see  B.4.2)  with  considerable  subsynchronous  bearing  vibration  amplitudes.  Under 
+similar  conditions  (especially  for  rotor  arrangements  with  only  two  radial  bearings)  resonance  phenomena  can  be 
+observed  at  certain  speeds  while  decelerating,  with  bearing  vibration  amplitudes  containing  one  or  more  of  the  rotor's 
+natural  frequencies  corresponding  to  the  instantaneous  speed. 
+
+At  frequent  transient  operating  conditions,  such  as  start-up  and  shut-down,  random  excitations  with  broad-band 
+spectra  are  dominant.  In  the  case  of  extreme  transients,  occurring  for  example  at  a  failure  of  a  shut-off  valve,  the 
+intensity  of  this  broad-band  excitation  spectrum  increases  even  more. 
+
+In  contrast  to  thermal  machines,  hydraulic  machines  can  normally  be  started-up  and  shut-down  or  power  can  be 
+changed  rapidly  and  frequently.  Hydraulic  machines  are  therefore  often  used  for  peak-load  supply  or  for  frequency 
+and  power  control.  Since  such  operations  also  involve  frequent  starts  and  stops,  and  often  rapid  changeover  from  one 
+operational  state  to  the  other,  these  machines  are  exposed  to  enhanced  vibration  and  stress.  For  peak-load  or  pump- 
+storage  equipment,  transient  operating  conditions  can  become  so  frequent  that  the  sum  of  the  time  intervals  of 
+increased  vibration  amounts  to  more  than  1  %o  of  the  overall  operating  time.  These  frequent  transient  operating 
+conditions  should  then  be  evaluated  separately  with  respect  to  the  additional  stress  and  fatigue  on  the  bearings  and 
+other  involved  parts  of  the  machine. 
+
+
+17 
+
+
+IS    14817  (Part  5):  2004 
+ISO   10816-5  :  2000 
+
+
+Annex  C 
+
+(informative) 
+
+Analysis  procedure  and  applied  regression  technique 
+
+
+Using  data  (measured  quantities  on  bearing  housings  or  pedestals)  collected  from  1 1  countries,  two  databases 
+were  established  (data  from  different  machine  types  with  vertical  or  horizontal  shaft  orientation  and  different 
+speeds).  The  databases  were  structured  as  follows: 
+
+—  measured  bearing  housing  displacement  jp_p  versus  rotational  speed  of  the  machine; 
+
+—  measured  bearing  housing  velocity  v^^g  versus  rotational  speed  of  the  machine. 
+
+On  some  of  the  submitted  rough  data,  modifications  were  necessary  because  of  incompatibility.  With  the  improved 
+data  sets  the  following  steps  in  the  described  procedure  (using  a  software  package  for  statistical  analysis)  were 
+performed  (see  reference  [5]): 
+
+a)  proof  of  data  distribution  within  the  specified  speed  range; 
+
+b)  regression  analysis  using  a  "Multiplicative  model"  Y  =  aX^  with  transformed  data  in  a  log-log  scajed  database 
+with  the  dependent  variable  displacement  or  velocity  and  the  independent  variable  rotational  speed, 
+
+c)  computation  and  plot  oi 
+
+—  analysis  of  variance, 
+
+—  lack  of  fit  and  pure  error  test, 
+
+—  mean  value  regression  curve  with  a  defined  98  %  probability  limit  and  prediction  limits  (between  60  %  and 
+95  %  in  steps  of  5  %), 
+
+—  residuals, 
+
+—  normal  plot  of  cumulative  residuals, 
+
+—  f-test  (for  significance  of  regression  model); 
+
+d)  linearization  of  computed  prediction  curves  (mainly  near  the  boundaries,  in  the  low-  and  high-speed  range)  in  a 
+double  logarithmic  scale; 
+
+e)  definition  of  the  prediction  limit  curve  85  %  as  zone  boundary  B/C,  which  implies  that  92,5  %  of  all  collected 
+measurement  data  are  below  this  evaluated  prediction  curve; 
+
+f)  the  ratios  between  the  zone  boundaries  A/B,  B/C  and  C/D  were  found  through  intensive  discussions  within  the 
+working  group  and  with  experts  in  other  working  groups  about  safety  margins  and  trip  or  alarm  settings. 
+
+
+1« 
+
+
+IS    14817  (Part  5):  2004 
+ISO    10816-5  :2000 
+
+
+Bibliography 
+
+
+[1]  ISO  2954,  Mechanical  vibration  of  rotating  and  reciprocating  machinery  —  Requirements  for  instruments  for 
+measuring  vibration  severity. 
+
+[2]  ISO  7919-1,  {Mechanical  vibration  of  non-reciprocating  machines  —  Measurements  on  rotating  shafts  and 
+evaluation  criteria  —  Part  1:  General  guidelines. 
+
+[3]  ISO  7919-5,  Mechanical  vibration  of  non-reciprocating  machines  —  Measurements  on  rotating  shafts  and 
+evaluation  criteria  —  Part  5:  Machines  sets  in  hydraulic  power  generating  and  pumping  plants. 
+
+[4]  ISO  10816-3,  Mechanical  vibration  —  Evaluation  of  machine  vibration  by  measurements  on  non-rotating 
+parts  —  Part  3:  Industrial  machines  with  nominal  power  above  15  kW  and  nominal  speeds  between 
+120  r/min  and  15000  r/min  when  measured  in  situ. 
+
+[5]  Schmid;  Guetl  and  Posch.  Statistical  analyses  for  the  evaluation  of  limiting  cun/es  —  Bearing  housing 
+vibration.  Technical  Report,  Tiroler  WasserkraUenwerke,  Innsbruck,  August  1 993. 
+
+
+19 
+
+
+Bureau  of  Indian  Standards 
+
+BIS  is  a  statutory  institution  established  under  the  Bureau  of  Indian  Standards  Act,  1986  to  promote 
+harmonious  development  of  the  activities  of  standardization,  marking  and  quality  certification  of 
+goods  and  attending  to  connected  matters  in  the  country. 
+
+Copyright 
+
+BIS  has  the  copyright  of  all  its  publications.  No  part  of  these  publications  may  be  reproduced  in  any 
+form  without  the  prior  permission  in  writing  of  BIS.  This  does  not  preclude  the  free  use,  in  the  course 
+of  implementing  the  standard,  of  necessary  details,  such  as  symbols  and  sizes,  type  or  grade 
+designations.  Enquiries  relating  to  copyright  be  addressed  to  the  Director  (Publication),  BIS. 
+
+Review  of  Indian  Standards 
+
+Amendments  are  issued  to  standards  as  the  need  arises  on  the  basis  of  comments.  Standards  are  also 
+reviewed  periodically;  a  standard  along  with  amendments  is  reaffirmed  when  such  review  indicates  that 
+no  changes  are  needed;  if  the  review  indicates  that  changes  are  needed,  it  is  tal<en  up  for  revision. 
+Users  of  Indian  Standards  should  ascertain  that  they  are  in  possession  of  the  latest  amendments  or 
+edition  by  referring  to  the  latest  issue  of  'BIS  Catalogue'  and  'Standards:  Monthly  Additions'. 
+
+This  Indian  Standard  has  been  developed  from  Doc:  No.  MbU  28  (0662). 
+
+Amendments  Issued  Since  Publication 
+
+
+Amend  No. 
+
+
+Date  of  issue 
+
+
+Text  Affected 
+
+
+BUREAU  OF  INDIAN  STANDARDS 
+Headquarters: 
+
+l^anak  Bhavan,  9  Bahadur  Shah  Zafar  Marg,  New  Delhi  1 10002 
+Telephones:  2323  0131,  2323  3375, 2323  9402 
+
+Regional  Offices: 
+
+Central      :  Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg 
+NEW  DELH1 110002 
+
+Eastern     :  1/14  C.I.T.  Scheme  VII  M,  V.I.R  Road,  Kankurgachi 
+KOLKATA  700054 
+
+Northern    :  SCO  335-336,  Sector  34-A,  CHANDIGARH  160022 
+Southern   :  C.I.T.  Campus,  IV  Cross  Road,  CHENNAI  600113 
+
+
+Western 
+
+
+Branches 
+
+
+Manakalaya,  E9  MIDC,  Marol,  Andheri  (East) 
+MUMBAI  400093 
+
+
+Telegrams:  Manaksanstha 
+(Common  to  all  offices) 
+
+Telephone 
+
+r  2323  7617 
+12323  3841 
+
+1-2337  8499,2337  8561 
+12337  8626,2337  9120 
+
+(•60  3843 
+1.60  9285 
+
+(-22541216,22541442 
+12254  2519,2254  2315 
+
+r  2832  9295,  2832  7858 
+12832  7891,2832  7892 
+
+
+AHMEDABAD.  BANGALORE.  BHOPAL.  BHUBANESHWAR.  COIMBATORE.  FARIDABAD. 
+GHAZIABAD.  GUWAHATI.  HYDERABAD.  JAIPUR.  KANPUR.  LUCKNOW.  NAGPUR. 
+NALAGARH.  PATNA.  PUNE.  RAJKOT.  THIRUVANANTHAPURAM.  ViSAKHAPATNAM. 
+
+
+Printed  at  Simoo  Printing  Press,  Delhi 
+
+

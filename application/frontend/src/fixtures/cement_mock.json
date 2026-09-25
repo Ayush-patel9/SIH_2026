@@ -1,0 +1,259 @@
+{
+  "query_metadata": {
+    "input_text": "Supply of Ordinary Portland Cement 53 Grade and Portland Pozzolana Cement for Highway Bridge Construction",
+    "detected_domain": "Civil Engineering & Construction Materials",
+    "detected_language": "English (with multilingual synonyms: सीमेंट, सिमेंट, சிமெண்ட், સિમેન્ટ)",
+    "extracted_keywords": [
+      "Ordinary Portland Cement",
+      "53 Grade",
+      "Portland Pozzolana Cement",
+      "Highway Bridge",
+      "Compressive Strength",
+      "Soundness",
+      "Setting Time"
+    ],
+    "confidence_score": 0.985,
+    "processed_at": "2026-09-26T01:45:00Z"
+  },
+  "primary_recommendations": [
+    {
+      "is_number": "IS 269",
+      "standard_id": "IS 269:2015",
+      "title": "Ordinary Portland Cement — Specification (Sixth Revision)",
+      "year_published": 2015,
+      "status": "ACTIVE",
+      "aspect": "Product Specification",
+      "division_code": "CED",
+      "ics_codes": ["91.100.10"],
+      "relevance_score": 0.99,
+      "match_reason": "Exact match for Ordinary Portland Cement 53 Grade. Supersedes older standalone 33 Grade (IS 269), 43 Grade (IS 8112), and 53 Grade (IS 12269) under unified standard.",
+      "scope_summary": "Covers manufacture and chemical/physical requirements of 33, 43, and 53 grade ordinary Portland cement for RCC, prestressed concrete, and infrastructure works.",
+      "key_specifications": {
+        "grades": ["OPC 33 Grade", "OPC 43 Grade", "OPC 53 Grade"],
+        "physical_requirements": [
+          "Fineness (Specific Surface by Blaine): Min 225 m²/kg",
+          "Soundness (Le-Chatelier expansion): Max 10 mm; Autoclave expansion: Max 0.8%",
+          "Initial Setting Time: Min 30 minutes; Final Setting Time: Max 600 minutes",
+          "Compressive Strength (53 Grade): 3-day min 27 MPa, 7-day min 37 MPa, 28-day min 53 MPa"
+        ],
+        "chemical_requirements": [
+          "Ratio of percentage of lime to percentages of silica, alumina and iron oxide (LSF): 0.80 to 1.02",
+          "Insoluble residue: Max 5.0% by mass",
+          "Magnesia (MgO): Max 6.0% by mass",
+          "Total sulfur content calculated as sulfuric anhydride (SO3): Max 3.5% by mass",
+          "Loss on ignition: Max 5.0% by mass",
+          "Chloride content: Max 0.1% by mass"
+        ],
+        "marking_requirements": [
+          "Manufacturer name and registered trademark",
+          "Grade of cement (e.g. OPC 53 Grade)",
+          "Net mass in kg (50 kg standard bag)",
+          "Week and year of manufacture",
+          "Standard BIS Certification Mark (ISI Mark CM/L-xxxxxxx)"
+        ]
+      }
+    },
+    {
+      "is_number": "IS 1489 (Part 1)",
+      "standard_id": "IS 1489 (Part 1):2015",
+      "title": "Portland Pozzolana Cement — Specification, Part 1: Fly Ash Based (Fourth Revision)",
+      "year_published": 2015,
+      "status": "ACTIVE",
+      "aspect": "Product Specification",
+      "division_code": "CED",
+      "ics_codes": ["91.100.10"],
+      "relevance_score": 0.94,
+      "match_reason": "Recommended alternative for mass concrete and hydraulic bridge piers subject to sulfate/chloride attacks.",
+      "scope_summary": "Covers manufacture and requirements of fly ash based Portland pozzolana cement with pozzolanic fly ash content between 15% and 35%.",
+      "key_specifications": {
+        "grades": ["PPC (Fly Ash Based)"],
+        "physical_requirements": [
+          "Fineness (Blaine): Min 300 m²/kg",
+          "Compressive Strength: 28-day min 33 MPa (matches 43/53 performance in long term durability)"
+        ],
+        "marking_requirements": [
+          "Percentage of fly ash added",
+          "Standard ISI Mark with license number"
+        ]
+      }
+    }
+  ],
+  "allied_standards": {
+    "normative_references": [
+      {
+        "is_number": "IS 4031 (Part 1 to 15)",
+        "title": "Methods of Physical Tests for Hydraulic Cement",
+        "relation_type": "NORMATIVE_TEST_METHOD",
+        "clause_reference": "Clause 8.1 - Physical Requirements"
+      },
+      {
+        "is_number": "IS 4032",
+        "title": "Method of Chemical Analysis of Hydraulic Cement",
+        "relation_type": "NORMATIVE_CHEMICAL_METHOD",
+        "clause_reference": "Clause 7.1 - Chemical Requirements"
+      },
+      {
+        "is_number": "IS 3535",
+        "title": "Methods of Sampling Hydraulic Cements",
+        "relation_type": "NORMATIVE_SAMPLING",
+        "clause_reference": "Clause 10.1 - Sampling"
+      },
+      {
+        "is_number": "IS 4905",
+        "title": "Random Sampling and Randomization Procedures",
+        "relation_type": "NORMATIVE_SAMPLING",
+        "clause_reference": "Clause 10.2"
+      }
+    ],
+    "test_methods": [
+      {
+        "is_number": "IS 4031 (Part 2)",
+        "test_parameter": "Fineness by Specific Surface (Blaine Air Permeability)",
+        "standard_title": "Methods of Physical Tests for Hydraulic Cement: Determination of Fineness",
+        "sample_size": "20g representative dry cement"
+      },
+      {
+        "is_number": "IS 4031 (Part 3)",
+        "test_parameter": "Soundness (Le-Chatelier & Autoclave)",
+        "standard_title": "Methods of Physical Tests for Hydraulic Cement: Determination of Soundness",
+        "sample_size": "Standard consistency paste"
+      },
+      {
+        "is_number": "IS 4031 (Part 5)",
+        "test_parameter": "Initial and Final Setting Time (Vicat Apparatus)",
+        "standard_title": "Methods of Physical Tests for Hydraulic Cement: Determination of Setting Time",
+        "sample_size": "300g neat cement paste"
+      },
+      {
+        "is_number": "IS 4031 (Part 6)",
+        "test_parameter": "Compressive Strength (70.6mm mortar cubes with standard Ennore sand)",
+        "standard_title": "Methods of Physical Tests for Hydraulic Cement: Compressive Strength",
+        "sample_size": "Set of 3 mortar cubes per age"
+      }
+    ],
+    "safety_standards": [
+      {
+        "is_number": "IS 4082",
+        "title": "Recommendations on Stacking and Storage of Construction Materials and Components at Site",
+        "focus_area": "Moisture-proof warehouse storage and maximum 10-bag stack height"
+      }
+    ],
+    "installation_codes": [
+      {
+        "is_number": "IS 456",
+        "title": "Plain and Reinforced Concrete - Code of Practice (Fourth Revision)"
+      },
+      {
+        "is_number": "IS 10262",
+        "title": "Concrete Mix Proportioning - Guidelines (Second Revision)"
+      }
+    ]
+  },
+  "mandatory_certifications": {
+    "is_qco_mandatory": true,
+    "schemes_applicable": [
+      "SCHEME_I_ISI_MARK",
+      "CEMENT_QUALITY_CONTROL_ORDER"
+    ],
+    "qco_details": {
+      "order_name": "Cement (Quality Control) Order, 2003 / 2024",
+      "notifying_ministry": "Ministry of Commerce and Industry (DPIIT)",
+      "gazette_so_number": "S.O. 191(E) dt 17.02.2003 & amendments",
+      "enforcement_date": "2003-02-17",
+      "exemptions": "No exemptions for public procurement or commercial sale; 100% compulsory BIS license"
+    },
+    "crs_registration_required": false,
+    "hallmarking_required": false
+  },
+  "version_amendment_status": {
+    "latest_version": "IS 269:2015 (Sixth Revision, incorporating Amendment Nos. 1, 2, 3, and 4)",
+    "cited_version": "IS 8112:1989 / IS 12269:1987 (Outdated)",
+    "is_latest_cited": false,
+    "outdated_warning": "CRITICAL: Tender specification cites withdrawn standards IS 8112:1989 (43 Grade) and IS 12269:1987 (53 Grade). Both standards were superseded and merged into IS 269:2015. Update tender clause to IS 269:2015 (OPC 53 Grade) to prevent contractor disputes and legal non-compliance.",
+    "active_amendments": [
+      {
+        "amendment_number": 1,
+        "year": 2016,
+        "summary": "Permits up to 5% performance improver additions (e.g. granulated slag, fly ash, limestone) without compromising 28-day strength."
+      },
+      {
+        "amendment_number": 2,
+        "year": 2018,
+        "summary": "Stricter total chloride limit (max 0.10% for RCC, max 0.05% for prestressed concrete)."
+      },
+      {
+        "amendment_number": 3,
+        "year": 2021,
+        "summary": "Introduces QR code marking on cement bags linking to manufacturer e-test certificate and batch traceability."
+      }
+    ],
+    "supersedes": "IS 269:1989 (33 Grade), IS 8112:1989 (43 Grade), IS 12269:1987 (53 Grade)",
+    "superseded_by": null
+  },
+  "conformity_ecosystem": {
+    "nabl_recognized_labs": [
+      {
+        "lab_id": "LAB-NTH-01",
+        "lab_name": "National Test House (NTH), Western Region",
+        "location": "Plot F-10, MIDC, Andheri East, Mumbai",
+        "state": "Maharashtra",
+        "nabl_acc_no": "TC-5012",
+        "scope": "Chemical analysis (IS 4032), Compressive strength & Fineness (IS 4031)"
+      },
+      {
+        "lab_id": "LAB-NCCBM-01",
+        "lab_name": "National Council for Cement and Building Materials (NCCBM)",
+        "location": "34 Km Stone, Delhi-Mathura Road, Ballabgarh",
+        "state": "Haryana",
+        "nabl_acc_no": "TC-5120",
+        "scope": "Comprehensive cement type testing, autoclave soundness, XRF elemental composition"
+      },
+      {
+        "lab_id": "LAB-CSIR-SERC",
+        "lab_name": "CSIR - Structural Engineering Research Centre",
+        "location": "CSIR Campus, Taramani, Chennai",
+        "state": "Tamil Nadu",
+        "nabl_acc_no": "TC-5380",
+        "scope": "Durability, Rapid Chloride Permeability Test (RCPT), Accelerated curing"
+      }
+    ],
+    "certified_manufacturers": [
+      {
+        "cml_no": "CM/L-1100012345",
+        "manufacturer_name": "UltraTech Cement Limited",
+        "brand_name": "UltraTech OPC 53 Grade",
+        "state": "Karnataka",
+        "validity_date": "2028-08-31",
+        "status": "OPERATIVE"
+      },
+      {
+        "cml_no": "CM/L-1200054321",
+        "manufacturer_name": "ACC Limited (Adani Cement)",
+        "brand_name": "ACC Concrete Plus OPC 53",
+        "state": "Karnataka",
+        "validity_date": "2027-10-31",
+        "status": "OPERATIVE"
+      },
+      {
+        "cml_no": "CM/L-1300098765",
+        "manufacturer_name": "Ambuja Cements Ltd",
+        "brand_name": "Ambuja OPC 53 Grade",
+        "state": "Himachal Pradesh",
+        "validity_date": "2028-05-31",
+        "status": "OPERATIVE"
+      }
+    ]
+  },
+  "gem_procurement_alignment": {
+    "category_id": "GEM-CAT-002",
+    "category_name": "Ordinary Portland Cement (OPC)",
+    "golden_parameters": {
+      "Standard Specification": "IS 269:2015",
+      "Mandatory Marking": "BIS ISI Mark with active CML number",
+      "Grade": "53 Grade",
+      "Packaging": "50 kg HDPE / Paper Bag (Moisture Resistant)",
+      "Inspection Certificate": "NABL Accredited Lab 28-day strength report mandatory before lot acceptance"
+    },
+    "model_tender_clause": "The cement supplied shall be 53 Grade Ordinary Portland Cement strictly conforming to IS 269:2015 (incorporating all current amendments). The manufacturer must hold a valid BIS Certification Mark License (CM/L) under the compulsory Cement (Quality Control) Order. The contractor shall furnish manufacturer test certificates for each consignment and submit random lot samples for testing at a NABL accredited testing laboratory as per IS 4031."
+  }
+}

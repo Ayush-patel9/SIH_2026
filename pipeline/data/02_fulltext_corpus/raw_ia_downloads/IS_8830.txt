@@ -1,0 +1,6947 @@
+**************** 
+
+
+
+*■ *Z**K 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+Jawaharlal Nehru 
+Step Out From the Old to the New 
+
+
+
+\\%\>*&&^^i$s: 
+
+
+
+
+,_A» 
+
+
+
+
+**************** 
+
+
+
+BLANK PAGE 
+
+
+
+<_<ii££ 
+
+
+
+
+
+UJ> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+W? 3ffc J^f^ld f^R\ eft *TTC £FRTT ^T MR<frgH — ^T 
+
+( Wen zprfftfW) 
+
+
+
+Indian Standard 
+
+CALCULATION OF LOAD CAPACITY OF SPUR AND 
+HELICAL GEARS — APPLICATION TO MARINE 
+
+GEARS 
+
+( First Revision ) 
+
+
+
+ICS 21.200; 47.020.05 
+
+
+
+© BIS 2007 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+October 2007 D ,, M/ ,. A „. 
+
+Price Group 14 
+
+
+
+Transmission Devices Sectional Committee, PGD 30 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard (First Revision) which is identical with ISO 9083 : 2001 'Calculation of load 
+capacity of spur and helical gears — Application to marine gears' issued by the International 
+Organization for Standardization (ISO) was adopted by the Bureau of Indian Standards on the 
+recommendation of the Transmission Devices Sectional Committee and approval of the Production 
+and General Engineering Division Council. 
+
+This standard was first published in 1978 covering the basic requirements of marine gears. In order to 
+harmonize this standard with International Standard, the committee decided to revise this standard to 
+align it with ISO 9083 : 2001 by adoption under dual number. 
+
+The text of ISO Standard has been approved as suitable for publication as an Indian Standard without 
+deviations. Certain conventions are, however, not identical to those used in Indian Standards. 
+Attention is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should 
+be read as 'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker, while in Indian Standards the current 
+practice is to use a point (.) as the decimal marker. 
+
+In this adopted standard, reference appears to certain International Standards for which Indian 
+Standards also exist. The corresponding Indian Standards, which are to be substituted in their 
+places, are listed below along with their degree of equivalence for the editions indicated: 
+
+
+
+International Standard 
+
+ISO 53 : 1998 Cylindrical gears for 
+general and heavy engineering — 
+Standard basic rack tooth profile 
+
+ISO 54 : 1996 Cylindrical gears for 
+general and heavy engineering — 
+Modules 
+
+
+
+ISO 701 
+notations 
+data 
+
+
+
+1998 International gear 
+Symbols for geometrical 
+
+
+
+ISO 1122-1 : 1998 Vocabulary of gear 
+terms — Part 1: Definitions related to 
+geometry 
+
+ISO 6336-1 : 1996 Calculation of load 
+capacity of spur and helical gears — 
+Part T. Basic principles, introduction 
+and general influence factors 
+
+ISO 6336-2 : 1996 Calculation of load 
+capacity of spur and helical gears — 
+Part 2: Calculation of surface durability 
+(pitting) 
+
+ISO 6336-3 : 1996 Calculation of load 
+capacity of spur and helical gears — 
+Part 3: Calculation of tooth bending 
+strength 
+
+
+
+Corresponding Indian Standard 
+
+IS 2535 (Part 1) : 2004 Cylindrical gears 
+for general and heavy engineering: Part 1 
+Standard basic rack tooth profile 
+
+IS 2535 (Part 2) : 2004 Cylindrical gears 
+for general and heavy engineering: Part 2 
+Modules 
+
+IS 2467 : 2002 International gear notations 
+
+— Symbols for geometrical data (first 
+revision) 
+
+IS 2458 : 2001 Vocabulary of gear terms 
+
+— Definitions related to geometry {first 
+revision) 
+
+IS 4460 (Part 1) : 1995 Gears — Spur and 
+helical gears — Calculation of load 
+capacity: Part 1 Introduction and general 
+influence factors (first revision) 
+
+IS 4460 (Part 2) : 1995 Gears — Spur and 
+helical gears — Calculation of load 
+capacity: Part 2 Method of calculation of 
+load factors for surface durability 
+(pitting)(r77'sf revision) 
+
+IS 4460 (Part 3) : 1995 Gears — Spur and 
+helical gears — Calculation of load 
+capacity: Part 3 Calculation of load factors 
+for bending strength (first revision) 
+
+
+
+Degree of 
+Equivalence 
+
+Identical 
+
+
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+Not 
+Equivalent 
+
+
+
+do 
+
+
+
+do 
+
+
+
+(Continued on third cover) 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+Indian Standard 
+
+CALCULATION OF LOAD CAPACITY OF SPUR AND 
+HELICAL GEARS — APPLICATION TO MARINE 
+
+GEARS 
+
+( First Revision ) 
+
+1 Scope 
+
+The formulae specified in this International Standard are intended for the establishment of a uniformly acceptable 
+method for calculating the pitting resistance and bending strength capacity for the endurance of the main- 
+propulsion and auxiliary gears of ships, offshore vessels and drilling rigs, having straight or helical teeth and subject 
+to the rules of classification societies. 
+
+The rating formulae in this International Standard are not applicable to other types of gear tooth deterioration, such 
+as plastic yielding, micropitting, scuffing, case crushing, welding and wear, and are not applicable under vibratory 
+conditions where there may be an unpredictable profile breakdown. The bending strength formulae are applicable 
+to fractures at the tooth fillet, but are not applicable to fractures on the tooth working profile surfaces, failure of the 
+gear rim, or failures of the gear blank through web and hub. This International Standard does not apply to teeth 
+finished by forging or sintering. This standard is not applicable to gears having a poor contact pattern. 
+
+This International Standard provides a method by which different gear designs can be compared. It is not intended 
+to assure the performance of assembled drive' gear systems. It is not intended for use by the general engineering 
+public. Instead, it is intended for use by the experienced gear designer who is capable of selecting reasonable 
+values for the factors in these formulae based on knowledge of similar designs and awareness of the effects of the 
+items discussed. 
+
+WARNING — The user is cautioned that the calculated results of this International Standard should be 
+confirmed by experience. 
+
+2 Normative references 
+
+The following normative documents contain provisions which, through reference in this text, constitute provisions of 
+this International Standard. For dated references, subsequent amendments to, or revisions of, any of these 
+publications do not apply. However, parties to agreements based on this International Standard are encouraged to 
+investigate the possibility of applying the most recent editions of the normative documents indicated below. For 
+undated references, the latest edition of the normative document referred to applies. Members of ISO and IEC 
+maintain registers of currently valid International Standards. 
+
+ISO 53: 1 998, Cylindrical gears for general and heavy engineering — Standard basic rack tooth profile. 
+
+ISO 54: 1 996, Cylindrical gears for general engineering and for heavy engineering — Modules. 
+
+ISO 701:1998, International gear notation — Symbols for geometrical data. 
+
+ISO 1 1 22-1 : 1 998, Vocabulary of gear terms — Part 1: Definitions related to geometry. 
+
+ISO 1328-1:1995, Cylindrical gears— ISO system of accuracy— Parti: Definitions and allowable values of 
+deviations relevant to corresponding flanks of gear teeth. 
+
+ISO 6336- 1 : 1 996, Calculation of load capacity of spur and helical gears — Parti: Basic principles, introduction and 
+general influence factors. 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+ISO 6336-2:1 996, Calculation of load capacity cf spur and helical gears — Part 2: Calculation of surface durability 
+(pitting). 
+
+ISO 6336-3:1996, Calculation of load capacity of spur and helical gears — Part 3: Calculation of tooth bending 
+strength. 
+
+ISO 6336-5: 1 996, Calculation of load capacity of spur and helical gears — Part 5: Strength and quality of material. 
+
+ISO/TR 10495:1997, Cylindrical gears — Calculation of service life under variable loads — Conditions for 
+cylindrical gears according to ISO 6336. 
+
+3 Terms, definitions and symbols 
+
+For the purposes of this International Standard, the terms and definitions given in ISO 1122-1 apply. For symbols, 
+see Table 1 . 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Table 1 — Symbols and abbreviations used in this International Standard 
+
+
+
+Symbol 
+
+
+Description or term 
+
+
+Unit 
+
+
+a 
+
+
+centre distance a 
+
+
+mm 
+
+
+b 
+
+
+facewidth 
+
+
+mm 
+
+
+b B 
+
+
+facewidth of an individual helix of a double helical gear 
+
+
+mm 
+
+
+c y 
+
+
+mean value of mesh stiffness per unit facewidth 
+
+
+N/(mmum) 
+
+
+c' 
+
+
+maximum tooth stiffness of one pair of teeth per unit facewidth (single 
+stiffness) 
+
+
+N/(mmum) 
+
+
+d \,2 
+
+
+reference diameter of pinion, wheel 
+
+
+mm 
+
+
+rf a1,2 
+
+
+tip diameter of pinion, wheel 
+
+
+mm 
+
+
+4>1,2 
+
+
+base diameter of pinion, wheel 
+
+
+mm 
+
+
+^1,2 
+
+
+root diameter of pinion, wheel 
+
+
+mm 
+
+
+d %\\ 
+
+
+shaft nominal diameter for bending 
+
+
+mm 
+
+
+^shi 
+
+
+internal diameter of hollow shaft 
+
+
+mm 
+
+
+<*w1,2 
+
+
+working pitch diameter of pinion, wheel 
+
+
+mm 
+
+
+^Na1,2 
+
+
+diameter of a circle defining the outer extremities of the usable flanks of tip 
+chamfered/rounded gear teeth 
+
+
+mm 
+
+
+/Hp 
+
+
+tooth alignment deviation (not including helix form deviation) 
+
+
+urn 
+
+
+/ma 
+
+
+mesh misalignment due to manufacturing deviations 
+
+
+urn 
+
+
+./pb 
+
+
+transverse base pitch deviation (the values of / pt may be used for calculation 
+in accordance with ISO 6336-1, using tolerances complying with ISO 1328-1) 
+
+
+urn 
+
+
+/sh 
+
+
+helix deviation due to elastic deflections 
+
+
+|xm 
+
+
+£<... 
+
+
+length of path of contact 
+
+
+mm 
+
+
+/i 
+
+
+tooth depth 
+
+
+mm 
+
+
+''aP 
+
+
+addendum of basic rack of cylindrical gears 
+
+
+mm 
+
+
+/ ifP 
+
+
+dedendum of basic rack of cylindrical gears 
+
+
+mm 
+
+
+/! Fe 
+
+
+bending moment arm for load application at the outer point of single pair 
+tooth contact 
+
+
+mm 
+
+
+/ 
+
+
+bearing span 
+
+
+mm 
+
+
+m* 
+
+
+relative individual gear mass per unit facewidth referenced to line of action 
+
+
+kg/mm 
+
+
+m n 
+
+
+normal module 
+
+
+mm 
+
+
+m red 
+
+
+reduced gear pair mass per unit facewidth referenced to the line of action 
+
+
+kg/mm 
+
+
+w t 
+
+
+transverse module 
+
+
+mm 
+
+
+"1.2 
+
+
+rotation speed of pinion, of wheel 
+
+
+min -1 
+
+
+"E 
+
+
+resonance speed 
+
+
+min~ 1 
+
+
+Pbn 
+
+
+normal base pitch 
+
+
+mm 
+
+
+
+!S 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Table 1 — (Continued) 
+
+
+
+Symbol 
+
+
+Description or term 
+
+
+Unit 
+
+
+/ ? bt 
+
+
+transverse base pitch 
+
+
+mm 
+
+
+Pr 
+
+
+protuberance of the tool 
+
+
+mm 
+
+
+'? 
+
+
+finishing stock allowance of tooth flank 
+
+
+mm 
+
+
+% 
+
+
+notch parameter $ Fn / 2p F 
+
+
+— 
+
+
+5 
+
+
+tooth thickness 
+
+
+mm 
+
+
+■ s Fn 
+
+
+tooth-root chord at the critical section 
+
+
+mm 
+
+
+S R 
+
+
+rim thickness 
+
+
+mm 
+
+
+u 
+
+
+gear ratio a I u \ = \ z^z^ I ^ 1 
+
+
+— 
+
+
+V 
+
+
+tangential speed (without subscript: at reference circle » tangential speed at 
+pitch circle) 
+
+
+m/s 
+
+
+V P 
+
+
+velocity parameter 
+
+
+— 
+
+
+*1 ,2 
+
+
+profile shift coefficient of pinion, wheel 
+
+
+— 
+
+
+>'a 
+
+
+running-in allowance for a gear pair 
+
+
+Mm 
+
+
+>'P 
+
+
+running-in allowance (equivalent misalignment) 
+
+
+pm 
+
+
+~n 
+
+
+virtual number of teeth of a helical gear 
+
+
+— 
+
+
+M.2 
+
+
+number of teeth of pinion, of wheel 3 
+
+
+— 
+
+
+/I 
+
+
+auxiliary value for the determination of / sh 
+
+
+mm-um/N 
+
+
+B 
+
+
+total facewidth of a double helical gear including the gap 
+
+
+mm 
+
+
+Q 
+
+
+tip relief 
+
+
+um 
+
+
+c B 
+
+
+basic rack factor (same rack for pinion and wheel) 
+
+
+— 
+
+
+Cr 
+
+
+gear blank factor 
+
+
+— 
+
+
+£ 
+
+
+modulus of elasticity, Young's modulus 
+
+
+N/mm 2 
+
+
+/•m 
+
+
+the mean transverse load at the reference cylinder ( = F x K^) 
+
+
+N 
+
+
+'t 
+
+
+(nominal) transverse tangential load at reference cylinder 
+
+
+N 
+
+
+ftH 
+
+
+the determinant transverse load at the reference cylinder ( = F t K A K v K H p) 
+
+
+N 
+
+
+F P 
+
+
+total helix deviation 
+
+
+pm 
+
+
+F Px 
+
+
+initial equivalent misalignment (before running-in) 
+
+
+um 
+
+
+F py 
+
+
+initial equivalent misalignment (after running-in) 
+
+
+um 
+
+
+*v 
+
+
+dynamic factor 
+
+
+— 
+
+
+*A 
+
+
+application factor 
+
+
+— 
+
+
+^Fa 
+
+
+transverse load factor (root stress) 
+
+
+— 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Table 1 — {Continued) 
+
+
+
+Symbol 
+
+
+Description or term 
+
+
+Unit 
+
+
+*Fp 
+
+
+face load factor (root stress) 
+
+
+— 
+
+
+^Ha 
+
+
+transverse load factor (contact stress) 
+
+
+— 
+
+
+K H$ 
+
+
+face load factor (contact stress) 
+
+
+— 
+
+
+*Y 
+
+
+mesh load factor (takes into account the uneven distribution of the load 
+between meshes for multiple transmission paths) 
+
+
+— 
+
+
+A*1.2 
+
+
+auxiliary values for the determination of Z BD 
+
+
+— 
+
+
+N L 
+
+
+number of cycles 
+
+
+— 
+
+
+"s 
+
+
+resonance ratio in the main resonance range 
+
+
+— 
+
+
+P 
+
+
+transmitted power 
+
+
+kW 
+
+
+Ra 
+
+
+arithmetic mean roughness value (as specified in ISO 4287) 
+
+
+urn 
+
+
+Rz 
+
+
+mean peak-to-valley roughness (as specified in ISO 4287) 
+
+
+um 
+
+
+% 
+
+
+factor of safety from tooth breakage 
+
+
+— 
+
+
+%mir> 
+
+
+minimum safety factor (tooth breakage) 
+
+
+— 
+
+
+Sh 
+
+
+factor of safety from pitting 
+
+
+— 
+
+
+$H min 
+
+
+minimum safety factor (pitting) 
+
+
+— 
+
+
+r l,2 
+
+
+pinion torque, wheel torque; (nominal) 
+
+
+Nm 
+
+
+^F 
+
+
+tooth form factor 
+
+
+— 
+
+
+Y R rel T 
+
+
+relative surface factor 
+
+
+— 
+
+
+y s 
+
+
+stress correction factor 
+
+
+— 
+
+
+YX 
+
+
+size factor (tooth-root) 
+
+
+— 
+
+
+V 
+
+
+helix angle factor (tooth-root) 
+
+
+— 
+
+
+Y 8 rel T 
+
+
+relative notch sensitivity factor 
+
+
+— 
+
+
+Zv 
+
+
+speed factor 
+
+
+— 
+
+
+Z B,D 
+
+
+single pair tooth contact factors for the pinion, for the wheel 
+
+
+— 
+
+
+z E 
+
+
+elasticity factor 
+
+
+
+
+vWmm 2 
+
+
+Z H 
+
+
+zone factor 
+
+
+— 
+
+
+Z L 
+
+
+lubricant factor 
+
+
+— 
+
+
+Zr 
+
+
+roughness factor affecting surface durability 
+
+
+— 
+
+
+Z w 
+
+
+work-hardening factor 
+
+
+— 
+
+
+^x 
+
+
+size factor (pitting) 
+
+
+— 
+
+
+Z P 
+
+
+helix angle factor (pitting) 
+
+
+— 
+
+
+z* 
+
+
+contact ratio factor (pitting) 
+
+
+— 
+
+
+
+iS 8830 : 2007 
+iSO 9083: 2001 
+
+
+
+L 
+
+
+
+
+Table 1 — {Continued} 
+
+
+
+
+Symbol 
+
+
+Description or term 
+
+
+Unit 
+
+
+«n 
+
+
+normal pressure angle 
+
+
+o 
+
+
+a t 
+
+
+transverse pressure angle 
+
+
+o 
+
+
+I 
+
+r 
+
+L 
+
+
+«W1 
+
+
+transverse pressure angle at the working pitch cylinder 
+
+
+o 
+
+
+a P0 
+
+
+normal pressure angle of the basic rack for cylindrical gears 
+
+
+o 
+
+
+I 
+
+
+
+
+
+helix angle (without subscript — at the reference cylinder) 
+
+
+— 
+
+
+A> 
+
+
+base helix angle 
+
+
+o 
+
+
+I € r.X 
+
+
+transverse contact ratio 
+
+
+— 
+
+
+f 
+
+{ 
+
+) 
+S 
+
+i- 
+i 
+
+I 
+! 
+
+I 
+
+
+e :m 
+
+
+virtual contact ratio, transverse contact ratio of a virtual gear 
+
+
+— 
+
+
+fc "fl 
+
+
+axial overlap ratio 
+
+
+— 
+
+
+t-y 
+
+
+total contact ratio {e y = <=, + e^ 
+
+
+— 
+
+
+Vj5 
+
+
+factor characterizing the equivalent misalignment after running-in 
+
+
+— 
+
+
+v ''10,50 
+
+
+kinematic viscosity at 40 °C, 50 °C 
+
+
+— 
+
+
+l 1 
+
+
+viscosity parameter 
+
+
+— 
+
+
+AP 
+
+
+root fillet radius of the basic rack for cylindrical gears 
+
+
+mm 
+
+
+<Vel 
+
+
+radius of relative curvature 
+
+
+mm 
+
+
+| 
+
+I 
+
+
+At 
+
+
+radius of relative curvature at the pitch surface 
+
+
+mm 
+
+
+P? 
+
+
+tooth-root fillet radius at the critical section 
+
+
+mm 
+
+
+I 
+
+i 
+
+i 
+
+i 
+
+I 
+i 
+
+l 
+i 
+
+• 
+
+f 
+
+• 
+i 
+
+! 
+
+
+(Tg 
+
+
+tensile strength 
+
+
+N/mm 2 
+
+
+Op 
+
+
+tooth- root stress 
+
+
+N/mm 2 
+
+
+"F lim 
+
+
+nominal stress number (bending) 
+
+
+N/mm 2 
+
+
+a Fe 
+
+
+allowable stress number (bending) = op lim K ST 
+
+
+N/mm 2 
+
+
+«FG 
+
+
+tooth- root stress limit 
+
+
+N/mm 2 
+
+
+Opp 
+
+
+permissible tooth-root stress 
+
+
+N/mm 2 
+
+
+r7 F0 
+
+
+nominal tooth-root stress 
+
+
+N/mm 2 
+
+
+i 
+
+
+(T H 
+
+
+calculated contact stress 
+
+
+N/mm 2 
+
+
+; 
+
+
+<THIim 
+
+
+allowable stress number (contact) 
+
+
+N/mm 2 
+
+
+5 
+
+: 
+
+i 
+
+
+°HG 
+
+
+modified allowable stress number = a^p 5 Hmjn 
+
+
+N/mm 2 
+
+
+
+
+^HP 
+
+
+permissible contact stress 
+
+
+N/mm 2 
+
+
+
+
+°h0 
+
+
+nominal contact stress 
+
+
+N/mm 2 
+
+
+
+
+«\2 
+
+
+angular velocity of pinion, or wheel 
+
+
+rad/s 
+
+
+
+
+a For external gear pairs a, u, z^ and -g are positive; for internal gear pairs a, u and Z2 are negative with z-\ positive. 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+4 Application 
+
+4.1 Design, specific applications 
+
+4.1.1 General 
+
+Gear designers shall recognize that requirements for different applications vary considerably. Use of the 
+procedures of this International Standard for specific applications demands a careful appraisal of all applicable 
+considerations, in particular: 
+
+— the allowable stress of the material and the number of load repetitions; 
+
+— the consequences of any percentage of failure (failure rate); 
+
+— the appropriate factor of safety. 
+
+Design considerations to prevent fractures emanating from stress raisers in the tooth flank, tip chipping and failures 
+of the gear blank through the web or hub should be analysed by general machine design methods. 
+
+Any variances according to the following shall be reported in the calculation statement. 
+
+a) If a more refined method of calculation is desired or if compliance with the restrictions in clause 4.1 is for any 
+reason impractical, relevant factors may be evaluated according to the basic standard or another application 
+standard. 
+
+b) Factors derived from reliable experience or test data may be used instead of individual factors according to this 
+International Standard. Concerning this, the criteria for Method A in ISO 6336-1 :1 996, 4.1 .8, are applicable. 
+
+In other respects, rating calculations shall be strictly in accordance with this International Standard if stresses, 
+safety factors, etc. are to be classified as being in accordance with this International Standard. 
+
+This International Standard is applicable when the wheel blank, shaft/hub connections, shafts, bearings, housings, 
+threaded connections, foundations and couplings conform to the requirements regarding accuracy, load capacity 
+and stiffness forming the basis for the calculation of the load capacity of gears. 
+
+Although the method described in this International Standard is mainly intended for recalculation purposes, by 
+means of iteration it can also be used to determine the load capacities of gears. The iteration is accomplished by 
+selecting a load and calculating the corresponding safety factor against pitting, 5 H1 , for the pinion. If S Hi is greater 
+than 5 H min the load is increased, if it is smaller than 5 H mjn the load is reduced. This is done until the load chosen 
+corresponds to S H1 = 5 Hmin . The same method is used for the wheel (S' H2 = ^Hmin) and also f° r tne safety factors 
+against tooth breakage, S F1 = 5 F2 = 5 Fmin . 
+
+4.1.2 Gear data 
+
+This International Standard is applicable within the following constraints, 
+a) Types of gear: 
+
+— external and internal, involute spur, helical and double helical gears: 
+
+— for double helical gears, it is assumed that the total tangential load is evenly distributed between the two 
+helices; if this is not the case (e.g. due to externally applied axial forces), this shall be taken into account; 
+the two helices are treated as two single helical gears in parallel; 
+
+— planetary and other gear trains with multiple transmission paths. 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+b) Range of the transverse contact ratios of actual spur and helical gear pairs: 
+
+— 1 ,2 < e a < 2,5 (affects c', c y , K v , K H p- ^Fp, ^Ha and ^Fa)- 
+
+c) Range of helix angles: 
+
+— p less than or equal to 30° (affects c', c r K y and /C H(i ). 
+
+d) Basic racks: 
+
+— no restriction 1 ). 
+
+4.1.3 Wheel blank, wheel rim 
+
+This International Standard is applicable when j r , the thickness of the wheel rim under the tooth roots of internal 
+and external gears, is > 3,5 m n . 
+
+4.1.4 Materials 
+
+These include steels (affects 2 e , ct h | im , <r FE , K v , K H p and Kf^). For materials and their abbreviations used in this 
+International Standard, see Table 2. For other materials, see ISO 6336-1, ISO 6336-2, ISO 6336-3 and ISO 6336-5 
+
+Table 2 — Materials 
+
+
+
+Material 
+
+
+Abbreviation 
+
+
+Steel (cr B < 800 N/mm 2 ) 
+
+
+St 
+
+
+Through-hardening steel, alloy or carbon, through-hardened {a Q $= 800 N/mm 2 ) 
+
+
+V 
+
+
+Case-hardened steel, case hardened 
+
+
+Eh 
+
+
+Steel, flame or induction hardened 
+
+
+IF 
+
+
+Nitriding steel, nitrided 
+
+
+NT (nitr.) 
+
+
+Through-hardening and case-hardening steel, nitrided 
+
+
+NV (nitr.) 
+
+
+Through-hardening and case-hardening steel, nitrocarburized » 
+
+
+NV (nitrocarb.) 
+
+
+
+4.1 .5 Lubrication 
+
+The calculation procedures are valid for gears that are spray or oil-bath lubricated using a lubricant approved by the 
+manufacturer/designer of the gears. This validity is further subject to the condition that, at all times of operation, an 
+adequate quantity of approved lubricant is available to the gear mesh. Provision for cooling shall ensure that 
+temperatures assumed for purposes of calculations are not exceeded (affects lubricant film formation i.e. factors Z L , 
+
+Z v and Z R ). 
+
+Provided that sufficient lubricant is available to the mesh, grease lubrication of slow speed auxiliaries is not 
+excluded. 
+
+
+
+1) For all practical purposes, it may be assumed that the proportions of the basic rack of the tools are equal to those of the 
+basic rack of the gear. 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+4.2 Safety factors 
+
+
+
+It is necessary to distinguish between the safety factor relative to pitting, S H , and the safety factor relative to tooth 
+breakage, 5 F . 
+
+For a given application, adequate gear load capacity is demonstrated by the computed values of 5 H and S F being 
+equal to or greater than the values S H rnjn anc * ^Frnin- respectively. 
+
+Choice of the value of a safety factor should be based on the degree of confidence in the reliability of the available 
+data and the consequences of possible failures. 
+
+Important factors to be considered are: 
+
+a) the allowable stress numbers used in the calculation are valid for a given probability of failure (the material 
+values in ISO 6336-5:1996 are valid for 1 % probability of damage); 
+
+b) the specified quality and the effectiveness of quality control at all stages of manufacture; 
+
+c) the accuracy of specification of the service duty and external conditions; 
+
+d) tooth breakage is often considered to be a greater hazard than pitting. 
+
+Therefore, the chosen value for 5 Fmin should to be greater than the value chosen for S Hmin . For calculation of 
+actual safety factor see 6.1 .5 (S H , pitting) and 7.1 .4 (S F , tooth breakage). 
+
+It is recommended that the minimum values of the safety factors should be agreed upon between the purchaser, 
+the manufacturer and the classification authority. 
+
+4.3 Input data 
+
+The following data shall be available for the calculations: 
+
+a) gear data: 
+
+a, z-\, z 2 . '« n > di,d 2 , d^.d^, b, x^,x 2 , a n , p e a e^ (see ISO 53:1998, ISO 54:1996); 
+
+b) cutter basic rack tooth profile: 
+''ao PaO ( see ,so 53:1993); 
+
+c) design and manufacturing data: 
+
+c a1> C a2'fpb< 5 Hmirf 5 Fmirv Ra V Ra 2 R Z-\> R Q 
+
+materials, material hardness and heat treatment details, gear accuracy grades, bearing span /, positions of 
+gears relative to bearings, dimensions of pinion shaft d sh and, when applicable, helix modification (crowning, 
+end relief); 
+
+d) power data: 
+
+Por Tor F t , n^, v 1t details of driving and driven machines. 
+Requisite geometrical data can be calculated according to national standards. 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+information to be exchanged between manufacturer and purchaser should include data specifying material 
+preferences, lubrication, safety factor and externally applied forces due to vibrations and overloads (application 
+
+factor). 
+
+4.4 Numerical equations 
+
+The units listed in clause 3 shall be used in all calculations. Information that will facilitate the use of this 
+International Standard is provided in annex C of ISO 6336-1:1996. 
+
+5 Influence factors 
+
+5.1 General 
+
+The influence factors, K v , K Ha , K Hp , Kp a and K Fp are all dependent on the tooth load. Initially, this is the applied 
+load (nominal tangential load multiplied by the appiication factor). 
+
+The factors are also interdependent and shall therefore be calculated successively as follows: 
+
+a) K v with the applied tangential load F, K A ; 
+
+b) /c" H p or K F p with the recalculated load F t K A A" v; 
+
+c) K Hu or K fa (Method B) with the applied tangential load F t K A K w tf H p. 
+
+When a gear drives two or more mating gears or is double helical, it is necessary to substitute K A by K A K r If 
+possible, the mesh load factor, K y , should preferably be determined by measurement; alternatively its value may be 
+
+estimated from the available literature. 
+
+The simplification of all influence factors in this clause involves the following assumptions (also see clause 4): 
+
+a) that the pinion tooth number ; 1 < 50; 
+
+b) that gears are of solid disc type or with heavy rims. 
+
+When details are substantially different from any of the above, refer to ISO 6336-1. 
+
+5.2 Nominal tangential load, F„ nominal torque, T, nominal power, P 
+
+The nominal tangential load, F,, is determined in the transverse plane at the reference cylinder. It is based on the 
+input torque to the driven machine. This is the torque corresponding to the heaviest regular working condition. 
+Alternatively, the nominal torque of the prime mover can be used as a basis if it corresponds to the torque 
+requirement of the driven machine, or some other suitable basis can be chosen. 
+
+2000 7 12 19098x1000F 1 000 P ,„> 
+
+d l2 d l2 n X2 v 
+
+F x dyz 1000P 9 549P .. 
+
+/ 1 2 = ~ ~ V ' 
+
+2 000 co-i ,2 ni,2 
+
+P J~J L. - T 12 Ml 2 _ 7"l,2"1.2 i^\ 
+
+"1000"~ 1000~ ~ 9 549 
+
+
+
+_ </i,2<»1,2_ ^1,211,2 
+
+
+
+
+2 000 19 098 
+
+
+
+
+rcn-1,2 2 000v 
+1,2 30 d 1>2 
+
+
+"1,2 
+9 549 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+(4) 
+
+
+
+(5) 
+
+5.3 Non-uniform load, non-uniform torque, non-uniform power 
+
+When the transmitted load is not uniform, consideration should be given not only to the peak load and its 
+anticipated number of cycles, but also to intermediate loads and their numbers of cycles. This type of load is 
+classed as a duty cycle and may be represented by a load spectrum. In such cases, the cumulative fatigue effect of 
+the duty cycle shall be considered in rating the gearset. A method of calculating the effect of the loads under this 
+condition is given in ISOTR 10495. 
+
+5.4 Maximum tangential load, F t max , maximum torque, T max , maximum power, P max 
+
+This is the maximum tangential load, F imax (or corresponding torque, r max , corresponding power, P max ) in the 
+variable duty range. Its magnitude can be limited by a suitably responsive safety clutch. F t max- ^max- ar, d ''max shall 
+be known when safety from pitting damage and from sudden tooth breakage due to loading corresponding to the 
+static stress limit is to be determined (see 5.5). 
+
+5.5 Application factor, K A 
+
+5.5.1 General 
+
+The factor tf A adjusts the nominal load, F t , in order to compensate for incremental gear loads from external 
+sources. These additional forces are largely dependent on the characteristics of the driving and driven machines, 
+as well as the masses and stiffness of the system, including shafts and couplings used in service. 
+
+It is recommended that the purchaser and manufacturer/designer agree on the value of the application factor with 
+the accord of the classification authority. 
+
+5.5.2 Method A — Factor K A . A 
+
+A' A shall be determined in this method by means of careful measurements and a comprehensive analysis of the 
+system, or on the basis of reliable operational experience in the field of application concerned (see 5.3). 
+
+5.5.3 Method B — Factor K A _ B 
+
+If no reliable data, obtained as described in 5.5.2, are available, or even as early as the first design phase, it is 
+possible to use the guideline values for Af A as described in annex C. 
+
+5.6 Internal dynamic factor, K v 
+
+5.6.1 General 
+
+The dynamic factor relates the total tooth load, including internal dynamic effects of a "multi-resonance" system, to 
+the transmitted tangential tooth load. Method B of ISO 6336-1:1996 with modifications is used in this International 
+Standard. 
+
+In this procedure it is assumed that the gear pair consists of an elementary single mass and spring system 
+comprising the combined masses of pinion and wheel, and the mesh stiffness of the contacting teeth. It is also 
+assumed that each gear pair functions as a single stage pair, i.e. the influence of other stages in a multiple-stage 
+gear system is ignored. This assumption is only tenable when the torsional stiffness (measured at the base radius 
+
+
+
+11 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+of the gears), of the shaft common to a wheel and a pinion is less than the mesh stiffness. See 5.6.3 and annex B.1 
+
+tor the procedure dealing with very stiff shafts. 
+
+Forces caused by torsional vibrations of the shafts and coupled masses are not covered by K v , These forces 
+should be included with other externally applied forces (e.g. with the application factor). 
+
+In multiple mesh gear trains there are several natural frequencies. These can be higher or lower than the natural 
+frequency of a single gear pair with only one mesh. When such gears run in the supercritical range, analysis by 
+Method A is recommended. See ISO 6336-1:1996, 6.3.1. 
+
+The specific load for the calculation of K A is (F t K A )/b. 
+
+K (F, Krf/b > 100 N/mm, then FJb = (F t K$b. 
+
+If {.F x Kp)lb < 100 N/mm, then F m /b = 100 N/mm. 
+
+When the specific loading F X K/Jb is < 50 N/mm, a particular risk of vibration exists (under some circumstances, with 
+separation of working tooth flanks), above all for spur or helical gears of coarse quality grade running at high 
+
+speed 
+
+5.6.2 Calculation of the parameters required for evaluation of K v 
+5.6,2.1 Calculation of the reduced mass, m red 
+
+a) Calculation of the reduced mass, /« red , of a single-stage gear pair 
+
+m red - . 2 ~ 2~ ( b > 
+
+where 
+
+m red is the reduced mass of a gear pair, i.e. of the mass per unit facewidth of each gear, referred to its 
+base radius or to the line of action; 
+
+J*\2 are tne P°' ar moments of inertia per unit facewidth; 
+
+A b1 2 are the base radii (= 0,5 <i b1 2 ) 
+
+b) Calculation of reduced mass, m red , of a multi-stage gear pair 
+See clause B.1. 
+
+c) Calculations of reduced mass, m red , of gears of less common designs 
+For information on the following cases, see clause B.1 : 
+
+— pinion shaft with diameter at mid-tooth depth, J m1 , about equal to the shaft diameter; 
+
+— two rigidly connected, coaxial gears; 
+
+— one large wheel driven by two pinions; 
+
+— planetary gears; 
+
+— idler gears. 
+
+
+
+12 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+5.6.2.2 Determination of the resonance running speed (main resonance) of a gear pair 
+
+a) Resonance running speed, n E1 , of the pinion: 
+
+
+
+30x10~ 3 c Y ... 
+„ E1 = — L_ m mm" 1 (7) 
+
+n Z^ V '"red 
+with c y from annex A 
+b) Resonance ratio, N 
+
+The ratio of pinion speed to resonance speed, the resonance ratio, N, is determined as follows: 
+
+
+
+N= nt = wiK 21 f mred .„, 
+
+„ E1 30000^ c Y W 
+
+The resonance running speed may be above or below the running speed calculated from equation (8) because 
+of stiffness that has not been included (e.g. the stiffness of shafts, bearings and housings) and as a result of 
+damping. For reasons of safety, the resonance range is defined by the following: 
+
+N s <Ar<1,15 (9) 
+
+At loads such that (F t K A )/b is less than 100 N/mm, the lower limit of resonance ratio N Q is determined: 
+
+— if (F t Kp)lb < 1 00 N/mm, then 
+
+
+
+"•- ' 5+0 ' 36 i^H« (10) 
+
+— if (F, K A )/b > 1 00 N/mm, then 
+
+<V S =0,85 (11) 
+
+5.6.2.3 Gear accuracy and running-in parameters, 6 p , 5 f , B k 
+
+fip, Sf and B w are non-dimensional parameters used to take into account the effect of tooth deviations and profile 
+modifications on the dynamic load. 2 ) 
+
+
+
+c '/pbeff 
+KA{F x /b) 
+
+
+
+B P = __ 7„ D Ti (12) 
+
+
+
+c '/feff /HOV 
+
+,I= IM (13) 
+
+
+
+2) The amount C a of tip relief may only be allowed for gears of accuracy grades in the range to 6 as specified in ISO 1328- 
+
+1:1995. 
+
+
+
+13 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+B k ■■ 
+
+
+
+!_. c C a 
+
+
+
+K*{F x /b) 
+
+
+
+(14) 
+
+
+
+with 
+
+c as given in annex A; 
+
+C a design amount for profile modification (tip relief at the beginning and end of tooth engagement). A value 
+C ay from running-in shall be substituted for C a in equation (14) in the case of gears without a specified 
+profile modification. C ay can be obtained from Table 3. 
+
+The effective base pitch and profile deviations are those present after running-in. The values of / p t, e ff ai"id/f e ff are 
+determined by deducting estimated running-in allowances, y p and > f , as follows: 
+
+/pbeff ^"/pbl^pl or /pbeff = /pb2~>'p2 £ 15 ) 
+
+whichever is the greater; 
+
+/fetf = /fa1-yf1 or /feff = /fa2->'f2 ( 16 > 
+
+whichever is the greater. 
+5.6.2.4 Running-in allowance, v a 
+
+a) For St, V 3 >: 
+
+160 M7 . 
+
+? P = >« = / P b (17 > 
+
+CTHlim 
+
+160 Mm 
+
+y t = f fa (18) 
+
+CTHlim 
+
+b) For Eh, IF, NT (nitr.), NV (nitr.), NV (nitrocarb.) 3 ) 
+
+v p = >•„ = 0,075 /pb (19) 
+
+y f = 0,075 / fa (20) 
+
+5.6.3 Dynamic factor in the subcritical range (N < N s ) 
+
+In this sector, resonances may exist if the tooth mesh frequency coincides with N = 1/2 and N = 1/3. The risk of this 
+is slight in the case of precision helical or spur gears, if the latter have suitable profile modification (gears to 
+ISO 1328-1:1995 accuracy grade 6 or better). 
+
+When the contact ratio of straight spur gears is small or if the quality is of low grade, K v can be just as great as in 
+the main resonance-speed range. If this occurs, the design or operating parameters should be altered. 
+
+
+
+3) See Table 2 for an explanation of the abbreviations used. 
+
+
+
+14 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+Resonances at N = 1/4, 1/5, .... are seldom troublesome because the associated vibration amplitudes are usually 
+small. 
+
+For gear pairs where the stiffness of the driving and driven shafts is not equal, in the range N= 0,2 ... 0,5, the tooth 
+contact frequency can excite natural frequencies when the torsional stiffness, c, of the stiffer shaft, referred to the 
+line of action, is of the same order of magnitude as the tooth stiffness, i.e. if cl^ 2 is of the order of magnitude of c T 
+When this is so, dynamic load increments can exceed values calculated using equation (21). 
+
+Ky = (NK)^ (21) 
+
+tf = (C v lfip) + (Cv2 fif) + (C v3 flk) (22) 
+
+where 
+
+C v1 and C^ allow for pitch and profile deviations while C^ allows for the cyclic variation of mesh stiffness. 
+See Table 3. 
+
+A value C ay resulting from running-in shall be substituted for C a in equation (14) in the case of gears without a 
+specified profile modification. The value of C ay is obtained from Table 3. 
+
+See annex A for single tooth stiffness c'. 
+
+5.6.4 Dynamic factor in the main resonance range (N Q < N =$ 1 ,15) 
+
+High quality helical gears with high total contact ratio can function satisfactorily in this sector. Spur gears of grade 5 
+or better as specified in ISO 1328-1:1995 shall have suitable profile modification, as specified in ISO 6336-1:1996 
+clause 6.4.1 item b). 
+
+Subject to above, this factor is equal to: 
+
+K v = (C V 1 B p ) + (C V 2 Bi) + (C V 4 By) + 1 (23) 
+
+For C parameters refer to Table 3. 
+
+5.6.5 Dynamic factor in the supercritical range (N > 1 ,5) 
+
+Resonance peaks can occur at N = 2, 3 ... in this range. However, in the majority of cases, vibration amplitudes are 
+small, since excitation forces with frequencies lower than meshing frequency are usually small. 
+
+For some gears in this speed range, it is also necessary to consider dynamic loads due to transverse vibration of 
+the gear and shaft assemblies. When the critical frequency is near to the frequency of rotation, and if this condition 
+cannot be avoided, this shall be taken into account in the evaluation of K w . 
+
+*v = (C V 5 Bp) + (C«e B f) + c v7 (24) 
+
+For C parameters, refer to Table 3. 
+
+
+
+15 
+
+
+
+IS 8830 : 2007 
+ISO 9083: 2001 
+
+
+
+Table 3- 
+
+
+— Equations for the calculation of factors C v1 to C v7 and C ay 
+
+
+
+
+1 < e 7 < 2 
+
+
+e y >2 
+
+
+
+
+c v1 
+
+
+0,32 
+
+
+0,32 
+
+
+
+
+c v2 
+
+
+0,34 
+
+
+0,57 
+e Y - 0,3 
+
+
+
+
+C V 3 
+
+
+0,23 
+
+
+0,096 
+e y - 1,56 
+
+
+
+
+c v4 
+
+
+0,90 
+
+
+0,57 - 0,05 e Y 
+e y - 1,44 
+
+
+
+
+Cv5 
+
+
+0,47 
+
+
+0,47 
+
+
+
+
+Cv6 
+
+
+0,47 
+
+
+0,12 
+<? T - 1.74 
+
+
+
+
+
+
+1 < e Y ^ 1,5 
+
+
+1,5 < e Y «2,5 
+
+
+e Y >2,5 
+
+
+C v7 
+
+
+0,75 
+
+
+0,125 sin [it (e y - 2)] + 0,875 
+
+
+1,0 
+
+
+c = -l 
+
+ay 18 
+
+
+rCrHlim -18,45]\l,5 
+{ 97 J 
+
+
+NOTE When the material of the pinion (1) is different from that of the wheel (2), C ay1 and C ay2 are calculated 
+
+
+separately; then C ay = 0,5 (C ay1 + C ay2 ). 
+
+
+
+5.6.6 Dynamic factor in the intermediate range (1 ,15 < N < 1 ,5) 
+
+In this range, the dynamic factor is determined by linear interpolation between K v at N = 1,15, as specified in 5.6.4, 
+and K v at N = 1 ,5, as specified in 5.6.5. 
+
+
+
+^v~^v ( /v = 1,5) + — ^ (1.5 -Ar) 
+
+
+
+(25) 
+
+
+
+5.7 Face load factor, K H p 
+
+5.7.1 General 
+
+The face load factor adjusts gear tooth stresses to allow for the effects of uneven load distribution over the 
+facewidth. 
+
+Methods C1 and C2 of ISO 6336-1:1996 are used with modifications in this International Standard. 
+
+5.7.2 Face load factor, Knp-ci 
+5.7.2.1 General 
+
+The use of method C1 is appropriate for gears having the following characteristics: 
+
+
+
+16 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+a) pinion on solid or hollow shaft, <W4>h < °> 5 > positioned symmetrically between bearings (s/i^1; see 
+Figure 2), (an asymmetrically positioned pinion leads to an additional bending deformation, which shall be 
+evaluated and added to/ ma ); 
+
+b) pinion diameter about equal to shaft diameter; 
+
+c) stiff wheel and case, stiff wheel shaft, stiff bearings; 
+
+d) a contact pattern which, under load, extends over the entire facewidth; 
+
+e) no additional external loads that act on the pinion shaft (e.g. form shaft couplings); 
+
+f) running-in allowance yp < maximum y^ as specified in 5.7.2.3. A computed Fp x , may be verified using the 
+equation: 
+
+
+
+A-p 
+
+
+
+V F ml b ) 
+
+
+
+It is recommended that the values used for/ ma be verified by inspection checks, such as the tooth contact pattern 
+in the working attitude. 
+
+Refer to annex B for application to planetary gears. 
+
+5.7.2.2 Mesh misalignment due to manufacturing tolerances, / ma 
+
+a) Assembly of gears without any modification or adjustment: 
+
+/ma = 1 .° /HP < 27 > 
+
+b) Gear pairs with provision for adjustment (lapping or running-in under light load, adjustable bearings or 
+appropriate helix angle modification) and gear pairs suitably crowned: 
+
+/ ma = 0,5 /H p (28) 
+
+c) Gear pairs with well designed end relief: 
+
+/ma = 0.7 /HP (29) 
+
+Of a pair of gears, the larger of the values/ p of the pair shall be substituted in equations (27) to (29). 
+
+5.7.2.3 Running-in allowance, yp, running-in factor, xjj 
+
+The amount y p is that by which the initial equivalent misalignment is reduced by running-in after start of operation. 
+While xn is the factor characterizing the equivalent misalignment after running-in. The use of *p in calculations is 
+valid only as long as Kp is proportional to F px 
+
+a) For St, V: 
+
+320 .. 320 
+
+
+
+>'P : 
+
+
+
+f Px ; *-p=i-— 00) 
+
+
+
+CTHiim OHIim 
+
+
+
+17 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+with >>p < Fp x and *p > 
+
+when v < 5 m/s: no restriction; 
+
+when 5 m/s < v sj 10 m/s: the upper limit of y$ is 25 600/cT H(im corresponding to F px = 80 pm; 
+when v > 10 m/s: the upper limit of y$ is 12 800/o- H | im corresponding to Fp x = 40 pm; 
+OH| im is as specified in ISO 6336-5:1996. 
+b) For Eh, IF, NT (nitr.), NV (nitr.): 
+
+vp = 0,15F px ;/rp=0,85 (31) 
+
+For all speeds, the upper limit is y$ = 6 pm, corresponding to F px = 40 pm. When the material of the pinion differs 
+from that of the wheel, yp-, and /r pi for the pinion, and y^ 2 and jtp 2 for the wheel, shall be determined separately. 
+
+
+
+The mean of the values 
+
+
+
+! Ka = 
+
+
+
+Kp1 + ^P1 
+
+
+
+>p- y 
+is used for the calculation. 
+
+5.7.2.4 Determination of the face load factor, #Hp-ci 
+5.7.2.4.1 Gears with unmodified helices 
+
+a) Spur and single helical gears 4 ): 
+
+
+
+Khp 
+
+
+
+1 + 
+
+
+
+4 000 
+
+
+
+3k ' v P £Ui; 
+
+
+
+b\ 
+
+
+
+5,12 + 
+
+
+
+" I 1 -- 
+UJ U 12 
+
+
+
+b) Double helical gears 4 ) 5 >: 
+
+
+
+H 4 000 Cy 
+
+
+
+3,2 
+
+
+
+(2_fra 
+
+
+
+2 ffi^ 
+
+
+
+<*i. 
+
+
+
+B 12 
+
+
+
+2F m lb 
+
+
+
+
+
+
+(32) 
+
+
+
+(33) 
+
+
+
+(34) 
+
+
+
+4) It is assumed that the entire torque is input at one shaft end. If the torque is input at both shaft ends or in between helices of 
+a double helical gear, a more accurate analysis is necessary. 
+
+5) The value of K H p is for the more severely stressed helix, which is that nearer to the torqued end of the pinion; tangential 
+load is divided equally between the two helices; i.e. a small gap width compared to the facewidth (fi - 2 6g) ^ 0,5 b B . As for the 
+calculation for K H p, half the tooth width (incorporating half the gap width) is used, and the obtained values are large. Thus, for 
+double helical gears with a large gap width, method C2 of ISO 6336-1 is appropriate in this case, see 5.7.3. 
+
+
+
+18 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+5.7.2.4.2 Gears with modified helices 
+
+a) Spur and single helical gears 4 ) 
+
+— with partial helix modification 6 ) (with compensation for torsional deflection only): 
+
+
+
+_ 4 000 c 7 
+
+
+
+''-^ 4 '[ 7) icpcyfr 
+
+
+
+
+
+
+Jb 12J 2F m /b 
+— with full helix modification (with compensation for torsional and bending deflections): 
+
+
+
+(35) 
+
+
+
+^8 = 1 + ^4^ and K m ^, 
+
+
+
+: HP = 1+ o ' ,u and ^H(i^1.05 (36) 
+
+b) Double helical gears 4 ' 5 > 
+
+— with full helix modification 7 ) (with compensation for torsional and bending deflections): 
+
+K Hp = 1 + ^|flZ™L and Khb^1.05 (37) 
+
+The validity of equations (33) to (37) depends upon compliance with 5.7.2.1, a) to f). 
+5.7.3 Face load factor, K H p_ C2 
+
+5.7.3.1 General 
+
+Taken from the basic standard, this method is arranged so that account is taken of the influences on mesh 
+alignment, of elastic deformations of the pinion and of manufacturing inaccuracies. 
+
+K H(i shall be calculated from the total mesh misalignment after running in; Fp y , which comprises the following two 
+components. 
+
+— Systematic error is taken into account by/ sh (mesh misalignment due to shaft deflection). It is primarily caused 
+by pinion shaft deflection, but in principle may include all mechanical deflections able to be evaluated 
+accurately enough in both amount and direction. 
+
+— Random error is represented by/^g (mesh misalignment due to manufacturing tolerance). The actual direction 
+and amount of misalignment due to manufacturing cannot be evaluated; only the range is limited by 
+manufacturing tolerance (in reference to gear accuracy grade). 
+
+
+
+6) Torsional deflection can be almost completely compensated for by means of a linear tooth trace or helix angle modification. 
+!n addition, crowning is necessary when compensation of bending deflection is required. 
+
+7) Full modification of both helices is necessary. Partial modification of the helix angle merely to compensate for torsional 
+deflection is not appropriate for double helical gears which are symmetrically positioned between bearings. Torsional and 
+bending deflections can be almost completely compensated for by means of helix angle modification. However, it is often 
+sufficient if only the helix nearest the torque input end is modified; torsional and bending deflections of the other helix tend to 
+compensate each other. This should be verified. 
+
+
+
+19 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+Application of helix correction and crowning: 
+
+— helix correction is a lead modification applied to compensate for the systematic error, and while theoretically it 
+is possible to apply a helix correction that exactly matches the calculated deflection for a specific load and so 
+eliminates the / sh contribution to K H $ for that particular load, in practice, varying loads and errors in the 
+evaluation of / sh leave a lasting influence on K H(J that has to be taken into account; 
+
+— crowning is a lead modification comprising the best defensive strategy against the random component of 
+misalignment. Since / ma can be in either direction, crowning should be symmetric to the middle of face width. 
+
+A more exact and comprehensive analysis in accordance with ISO 6336-1 is recommended if the design does not 
+match the requirements listed in clause 4 or if any of the following items have significant influence on mesh 
+alignment: 
+
+— elastic deformations not caused by gear mesh forces but by external loads (e.g. belts, chains, couplings); 
+
+— elastic deformations of wheel and wheel shaft; 
+
+— elastic deformations and manufacturing inaccuracies of the gear case; 
+
+— bearing clearances and deflections; 
+
+— arrangements different from those shown in Figure 2; 
+
+— any manufacturing or other deformations that indicate the need for a more detailed analysis. 
+
+When, by this method, a value of K Hp greater than 2,0 is calculated, the true value will usually be less. However if 
+the calculated value of A" H p is greater than 1,5, the design should be reconsidered (e.g. shaft stiffness increased, 
+bearing positions changed, helix accuracy improved). 
+
+5.7.3.2 Calculation of K H p-C2 
+
+The specific loading for the calculation of K H $ is (F t K A Kj/b. 
+
+If <F t K A K v )/b > 100 N/mm, then F m Jb = (F, K A Kj/b. 
+If (F, A" A K y )lb « 100 N/mm, then Fjb = 100 N/mm. 
+
+Fr^ Cy 
+
+K HP " 1 + 2F ! b aPPl ' eS When * HP ^ 2 (38) 
+
+m / 
+
+with the value of c y taken from annex A. 
+
+Note that b is the smaller of the facewidths of pinion and wheel measured at the pitch circles. Chamfers or rounding 
+of tooth ends shall be ignored. (For double helical gears, b = 2b B .) 
+
+5.7.3.3 Mesh misalignment after running-in, F py 
+
+Fp y = Fp x -vp (39) 
+
+where 
+
+Fp x is the mesh misalignment before running-in (see 5.7.4); 
+v p is the running-in allowance (see 5.7.2.3). 
+
+
+
+20 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+5.7.4 Mesh misalignment before running-in, f p x 
+
+The mesh alignment before running-in, Fp x , is the absolute value ol the sum of manufacturing deviations, and 
+pinion and shaft deflections, measured in the plane of action. 
+
+For gear pairs without verification of the favourable position of the contact pattern 8 ); 
+
+F px =1,33flt/ sh + fl 2 / ma (40) 
+
+with B^ and fi 2 taken from Table 4. 
+
+For gear pairs with verification of the favourable position of the contact pattern (e.g. by adjustment of bearings): 
+
+/rp x = l1,33B 1 / sh -/ Hp5 l (41) 
+
+where 
+
+/ H p 5 is the maximum helix slope deviation for ISO accuracy grade 5 (see IS0 1328-1:1995). 
+
+By subtracting / Hp5 allowance is made for the compensatory roles of elastic deformation and manufacturing 
+deviations. 
+
+Table 4 — Constants for use in equation (40) 
+
+
+
+No. 
+
+
+Helix mo< 
+Type 
+
+
+aification 
+
+Amount 
+
+
+Equation 
+
+Si 
+
+
+constant 
+
+8 2 
+
+
+1 
+
+
+Nor\e 
+
+
+— 
+
+
+1 
+
+
+1 
+
+
+2 
+
+
+Ventral crowning only 
+
+
+Cp = 0,5/ ma a 
+
+
+1 
+
+
+0,5 
+
+
+3 
+
+
+Central crowning only 
+
+
+qr=0,5(/m a +/ sh ) a 
+
+
+0,5 
+
+
+0,5 
+
+
+4 b 
+
+
+Helix correction only 
+
+
+Corrected shape calculated to match 
+torque being analysed 
+
+
+0,1 c 
+
+
+1,0 
+
+
+5 
+
+
+Helix correction plus central 
+crowning 
+
+
+Case 2 plus case 4 
+
+
+0,1° 
+
+
+0,5 
+
+
+6 
+
+
+End relief 
+
+
+Appropriate amount C^^ 
+see annex D 
+
+
+0,7 
+
+
+0,7 
+
+
+3 For appropriate crowning, Cp, see annex D. 
+
+b Predominantly applied for applications with constant load conditions. 
+
+c Vaild for very best practice of manufacturing, otherwise higher values appropriate. 
+
+
+
+5.7,4.1 Minimum values tor Knp-C2 
+
+For gear pairs without helix correction or crowning, the minimum value for A^p is 1,25; for gear pairs with 
+appropriate helix correction and crowning, the minimum value for K^ is 1,10. A favourable contact pattern shall be 
+
+verified. 
+
+
+
+8) With a favourable position of the contact pattern, the elastic deformations and the manufacturing deviations compensate 
+each other (see Figure 1 , compensative roles). 
+
+
+
+21 
+
+
+
+18 8830:2007 
+ISO 9083 : 2001 
+
+
+
+Figure 
+
+
+
+Position of contact pattern 
+
+
+
+Determination of F, 
+
+
+
+px 
+
+
+
+Contact pattern lies towards mid bearing span 
+
+
+
+
+
+
+1 
+
+
+
+T 
+
+
+
+S/ S/ff/A 
+
+
+
+> 
+
+
+
+in accordance with equation (41) 
+
+
+
+(compensative) 
+
+
+
+b) 
+
+
+
+Contact pattern lies away from mid bearing span 
+
+
+
+I_ ±L 
+
+
+
+T 
+
+
+
+1 
+
+
+
+T 
+
+
+
+/////// 
+
+
+
+in accordance with equation (40) 
+
+
+
+(augmentative) 
+
+
+
+c) 
+
+
+
+Contact pattern lies towards mid bearing span 
+
+
+
+1 
+
+
+
+T 
+
+
+
+1 
+
+
+
+
+
+
+F px in accordance with equation (40) 
+
+\K'f x / x sld? (d,/d sh ) A $ B 
+(augmentative) 
+
+Fp x in accordance with equation (41 ) 
+
+I AT 'I x/xs/^^/^B' 
+(compensative) 
+
+
+
+d) 
+
+
+
+Contact pattern lies away from mid bearing span 
+
+
+
+1 
+
+
+
+T 
+
+
+
+1 
+
+
+
+T 
+
+
+
+■ ■:_ i 
+
+
+
+F px in accordance with equation (41 ) 
+
+k'l x / x sld? (d^/d sh ) A > B' - 0,3 
+
+(augmentative) 
+
+Fn x in accordance with equation (41 ) 
+
+k'l x / x s/df {djd sh f< B'- 0,3 
+
+(compensative) 
+
+
+
+Contact pattern lies towards the bearing span 
+
+
+
+1 
+
+
+
+1 
+
+
+
+T 
+
+
+
+T 
+
+
+
+- 
+
+
+
+in accordance with equation (40) 
+
+
+
+(augmentative) 
+
+
+
+Contact pattern lies away from the bearing span 
+
+
+
+1 
+
+
+
+1 
+
+
+
+T 
+
+
+
+T 
+
+
+
+-£ 
+
+
+
+////// A 
+
+
+
+in accordance with equation (41) 
+
+
+
+r fix 
+
+(compensative) 
+
+
+
+NOTE Figures a) to d) show the most common mounting arrangement with pinion between bearings. Figures e) to f) show the 
+
+overhung pinion. 
+
+r Input or output torqued end, not dependent on direction of rotation. 
+
+S* B* = 1 for spur and single helical gears; B' = 1 ,5 for double helical gears, the peak load intensity occurs on the helix near to the 
+
+torqued end. 
+
+
+
+Figure 1 — Rules for determination of f px with regard to contact pattern position 
+
+
+
+22 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Factor K' 
+
+with | without 
+
+stiffening 3 
+
+
+
+Figure 
+
+
+
+Arrangement 
+
+
+
+0,48 
+
+
+
+0.8 
+
+
+
+a) 
+
+
+
+11 
+
+in 
+
+
+
+in 
+
+
+
+with sll < 0,3 
+
+
+
+-0,48 
+
+
+
+-0,8 
+
+
+
+b) 
+
+
+
+lLT 
+
+
+
+1 J* 
+
+
+
+11 
+ill 
+
+
+
+in 
+
+
+
+with sll< 0,3 
+
+
+
+1,33 
+
+
+
+1,33 
+
+
+
+c) 
+
+
+
+with sll < 0,3 
+
+
+
+-0,36 
+
+
+
+-0,8 
+
+
+
+d) 
+
+
+
+lLT 
+
+
+
+11 ' 
+
+I 
+
+1/2 I 
+
+
+
+I T 
+
+
+
+with s/l < 0,3 
+
+
+
+-0,6 
+
+
+
+1,0 
+
+
+
+e) 
+
+
+
+eLT 
+
+
+
+11 
+
+111 
+
+
+
+Jl 
+
+
+
+■ • T 
+
+
+
+with s/l < 0,3 
+
+
+
+a When <V</ S h > 1,15, stiffening is assumed; when d^ld^ < 1,15, there is no stiffening; furthermore, scarcely any or no 
+stiffening at all is to be expected when a pinion slides on a shaft and feather key or similar fitting, nor when normally shrink 
+fitted. 
+
+V Input or output torqued end, not dependent on direction of rotation. 
+
+A dashed line indicates the less deformed helix of a double helical gear. 
+
+Determine/ Sh from the diameter in the gaps of double helical gearing mounted centrally between bearings. 
+
+
+
+Figure 2 — Constant K' to substitute in equations (42) and (43) for calculation of/ sh 
+
+
+
+23 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+5.7.4.2 Equivalent misalignment, / sh 
+
+For spur and single helical gears: 
+
+^4 
+
+
+
+/sh^O.023 
+
+
+
+
+
+
+-0,3 
+
+
+
++ 0,3 
+
+
+
+(42) 
+
+
+
+The calculation of / sh for double helical gears is relative to the helix nearest to the shaft end which is driven or 
+which drives the load. 
+
+
+
+/*«-y-o,046 
+
+
+
+1,5 + AT 
+
+
+
+, Is f d 
+
+
+
+df\dsh 
+
+
+
+0,3 
+
+
+
++ 0,3 
+
+
+
+d^ 
+
+
+
+(43) 
+
+
+
+where 
+
+b = 2b B ; 
+
+b B is the width of one helix. 
+In equations (42) and (43), K', s and / are according to Figure 2. 
+
+In Figure 2, the pinions shown in dashed lines indicate those helices of double helical gears, which have the lower 
+value of / 8h and normal shrink fit (for a normal, shrink fit, the supporting effect is negligible). The root diameter shall 
+be somewhat greater than the shaft diameter. 
+
+5.7.4.3 Misalignment due to manufacturing inaccuracies, / ma 
+
+The misalignment due to manufacturing inaccuracies / ma equals the helix tolerance / Hp : 
+
+/ma =/H P (44) 
+
+The greater of the wheel and pinion value should be used. 
+
+NOTE As it is theoretically possible that manufacturing tolerances of pinion, wheel and shaft alignment may sum up to the 
+
+worst case, satisfying load distribution should be verified by e.g. contact pattern control. 
+
+
+
+5.8 Face load factor, K, 
+
+
+
+FP 
+
+
+
+^FJl - *H|f 
+
+
+
+a) if b/h > 3, then 
+
+
+
+(45) 
+
+
+
+Nf = 
+
+
+
+(b/h)' 
+
+
+
+}+blh + (b/hf 1+ h/b + (h/b) 2 
+
+
+
+b) if b/h < 3, then 
+
+N f = 0,692 3 
+
+
+
+(46) 
+
+
+
+(47) 
+
+
+
+24 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+where 
+
+
+
+b is the smaller of the facewidths of pinion and wheel measured at the pitch circles. Chamfers or rounding of 
+tooth ends shall be ignored. For double helical gears the width of one helix, b B , shall be substituted. 
+
+h is the tooth height from tip to root: h = (d a - d f )/2. 
+5.9 Transverse load factors, AT Ha AT Fa 
+
+5.9.1 General 
+
+The transverse load factors account for the effect of the non-uniform distribution of transverse load between several 
+pairs of simultaneously contacting gear teeth, as follows: A: Ha for surface stress, and K fa for tooth-root stress. 
+Method B of ISO 6336-1:1996 is applied. 
+
+5.9.2 Determination of the transverse load factors 
+
+Equations (48) and (49) are based on the assumption that the base pitch deviations appropriate to the gear 
+accuracy specified are distributed around the circumference of the pinion and wheel, as is consistent with normal 
+manufacturing practice. They do not apply when the gear teeth are intentionally modified. 
+
+In the following equations use c y from annex A and y a from 5.9.4. 
+— For gears with total contact ratio e y ^ 2: 
+
+
+
+e 
+
+
+
+KHa = Kta.= 2 
+
+
+
+V 
+
+
+
+— For gears with total contact ratio e y > 2: 
+
+
+
+(48) 
+
+
+
+2(e Y -1) c y (f pb -y a ) 
+K Ha = K Fa =0,9 + 0,4 J 1 Y ,, (49) 
+
+
+
+-y F tHi' b 
+
+In equations (48) and (49), the larger of f/ pb1 - y„i) and (f pb2 - >'a2) is used - 
+
+5.9.3 Limiting conditions for K Ha and Kp a 
+
+When, in accordance with equations (48) and (49, and 
+
+when KHa = KFa> — ^ ' tnen for ^Ha and A* Fa- substitute — y — (50) 
+
+and when A" Ha < 1,0, and respectively K Fa < 1,0, then substitute for K Ha , and respectively for AT Fa , the limit 
+vaiue 1,0. 
+
+It is recommended that the accuracy of helical gears be chosen so that K Ha and K fa are no greater than e a . As a 
+consequence, it may be necessary to limit the base pitch deviation tolerances of gears of coarse quality grade. 
+
+
+
+25 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+5.9.4 Running-in allowance, y a 
+
+a) For St, V: 
+
+160 
+
+>'«= fob < 51 ) 
+
+CTHlim 
+
+— if v ^ 5 m/s, no restriction; 
+
+— if 5 m/s < v 4 10 m/s, the upper limit of y a = 12 800/ a^ iim , corresponding to/ pb < 80 urn; 
+
+— if v > 10 m/s, the upper limit of y a = 6 400/<t h | jm , corresponding to/pb < 40 Mm- 
+
+b) For Eh, IF, NT (nitr.) et NV (nitr.): 
+
+v a = 0,075/ pb (52) 
+
+for all speeds with the restriction: the upper limit of y p = 3 um, corresponding to/ pb = 40 \im. 
+
+6 Calculation of surface durability (pitting) 
+6.1 Basic formulae 
+
+6.1.1 General 
+
+The calculation of surface durability is based on the contact stress, oh. at the pitch point or at the inner (lowest) 
+point of single pair tooth contact. The higher of the two values obtained shall be used to determine capacity. 
+Contact stress, <r H , and the permissible contact stress, <r Hp , shall be calculated separately for wheel and pinion; o^ 
+
+shall be ^ o- Hp . 
+
+6.1 .2 Determination of contact stress, cr H , for the pinion 
+
+Contact stress, a H , for the pinion is calculated as follows: 
+
+
+
+°"ho = Zb<jho y] K a k vKHp K Ha ^^hp ( 53 ) 
+
+with 
+
+
+
+0HO = ZHZEZ e ZR t \—- — (use the negative sign for internal gears) (54) 
+
+\d-\b u 
+
+
+
+where 
+
+
+
+o- H0 is the nominal contact stress at the pitch point; this is the stress induced in flawless (error free) gearing by 
+application of static nominal torque; 
+
+b is the facewidth (for a double helical gear b = 2b 3 ), and the value b of mating gears is the smaller of the 
+facewidths at the pitch circles of pinion and wheel, ignoring any intentional transverse chamfers or tooth- 
+end rounding; neither unhardened portions of surface-hardened gear tooth flanks nor the transition zones, 
+shall be included; 
+
+Z B is the single pair tooth contact factor for the pinion (see 6.2). 
+
+
+
+26 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+6.1 .3 Determination of contact stress, cr H , for the wheel 
+
+Contact stress, cx^, for the pinion is calculated as 
+
+
+
+where 
+
+Z D is the single pair tooth contact factor for the wheel (see 6.2). 
+
+The total tangential load in the case of gear trains with multiple transmission paths, planetary gear systems, or split- 
+path gear trains is not quite evenly distributed over the individual meshes (depending on design, tangential speed 
+and manufacturing accuracy). This shall be taken into consideration by substituting K Y K A for K A in equation (53) 
+and equation (55) to adjust the average tangential load per mesh as necessary; see clause 5. 
+
+6.1.4 Determination of permissible contact stress, <r HP , for long life 
+
+In this International Standard, Method B of ISO 6336-2:1996 is used. 
+
+<7HPref = ZlZvZrZwZx-- W D / 
+
+-Hmin JHrnin 
+
+The permissible contact stress (long life) shall be derived from equation (56), with the influence factors a H Ym , 
+S Hmjn , Z L , Z v , Z R Z w and Z x calculated according to this International Standard. However, according to ISO 6336-2, 
+the values of <r H Nrn are validated for JV L = 5 x 10 7 load cycles (for St, V, Eh) or 2 x 10 6 load cycles [for If, NT (nitr.), 
+NV (nitr.), NV (nitrocar.)]. This number is likely to be exceeded in the life of a marine gear. If this is not the case, 
+refer to ISO 6336-2 for the limited life range. Nevertheless, values of cr HPref derived from equation (56) may be 
+substituted for <7 Hp , given optimum conditions, material, lubrication, manufacturing and experience; otherwise the 
+values for a Hp are obtained for material quality MQ according to ISO 6336-5:1996 using equation (57): 
+
+
+
+For St, V, Eh: 
+
+
+
+aHp=0,92c HPre f ' 
+
+
+
+10) 
+
+
+
+Ni 
+
+
+
+0,0157 
+
+
+
+OHG 
+
+SHmin 
+
+
+
+(57) 
+
+
+
+For If, NT (nitr.), NV (nitr.), NV (nitrocar.) 
+
+
+
+OHP~0i92o"HPref 
+
+
+
+f 10 «n 
+
+
+
+Nl 
+
+
+
+0,0098 
+
+
+
+OHG 
+•SHmin 
+
+
+
+6.1.5 Safety factor for surface durability, S H 
+
+S H shall be calculated separately for the pinion and wheel: 
+
+
+
+^•>^ m ;n (58) 
+
+<7H 
+
+
+
+Sh = ~> SHmin 
+
+
+
+with (T HG for endurance according to equation (57); o H shall be in accordance with equation (53) for the pinion, and 
+with equation (55) for the wheel (see 6.1 .1). 
+
+
+
+27 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+NOTE This is the calculated safety factor with regard to contact stress (Hertzian pressure). The corresponding factor 
+
+relative to torque capacity is equal to the square of S H . 
+
+For the minimum safety factor for surface durability, 5 Hmjn , and probability of failure, see 4.1.3 of ISO 6336-1:1996. 
+
+6.2 Single pair tooth contact factors, Z B , Z D 
+
+When Z B > 1 or Z D > 1, the factors Z B and Z D are used to transform the contact stress at the pitch point of spur 
+gears to the contact stress at the inner (lowest) limit of the single pair tooth contact of the pinion or the wheel. 
+See 6.1.1. 
+
+a) Internal gears 
+
+Z D is always to be taken as unity. 
+
+b) Spur gears 
+
+Determine M^ (quotient of p re]0 at the pitch point /7 re) B at the inner limit (lowest point) of single tooth pair 
+contact of the pinion) and M 2 (quotient of p re | c by p re \ D ot the wheel) from: 
+
+
+
+M, 
+
+
+
+tanar wt 
+
+
+
+M = 
+
+
+
+
+(59) 
+
+
+
+
+I44- 1 -<*«-"- 
+
+
+
+b1 
+
+
+
+ei 
+
+
+
+(60) 
+
+
+
+(See 6.5.2 for the calculation of the profile contact ratio e a .) 
+If M^ > 1 , then Z B = A/, ; if A/, < 1 , then Z B = 1 ,0. 
+It M 2 > 1 , then Z D = M 2 ; if M 2 < 1 , then Z D = 1 ,0. 
+
+c) Helical gears with ep > 1 
+
+Zb = Zp = 1 
+
+d) Helical gears with e p < 1 
+
+Z and Z are determined by linear interpolation between the values for spur and helical gearing with e p > 1 : 
+
+
+
+Z B =Mi -e p (A/ 1 - 1); Z 3 >1 
+Z D = M 2 - ep (M 2 - 1); Z >1 
+
+
+
+(61) 
+
+
+
+If Z B or Z D are set to unity, the contact stresses calculated using equations (53) or (55) are the values for the 
+contact stress at the pitch cylinder. 
+
+The methods in 6.2 apply to the calculation of contact stress when the pitch point lies in the path of contact. If the 
+pitch point is determinant and lies outside the path of contact, then Z B and / or Z D or both shall be determined for 
+
+
+
+28 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+contact at the adjacent tip circle. For helical gears when e p is less than 1,0, Z B and Z D shall be determined by 
+linear interpolation between the values (determined at the pitch point or at the adjacent tip circle as appropriate) for 
+spur gears and those helical gears with ep $= 1. 
+
+6.3 Zone factor, Z H 
+
+The zone factor, Z H , accounts for the influence on Hertzian pressure of tooth flank curvature at the pitch point and 
+transforms the tangential force at the reference cylinder to the normal force at the pitch cylinder. 
+
+
+
+ZH= ) 2cos /b cos a'wt (62) 
+
+
+
+cos 2 « t sinor wt 
+
+6.4 Elasticity factor, Z E 
+
+The elasticity factor, Z E , takes into account the influences of the material properties E (modulus of elasticity) and v 
+(Poisson's ratio) on the contact stress. As this international Standard is only applicable to steel gears, Z E is fixed to 
+
+Z H =189,8 (63) 
+
+6.5 Contact ratio factor, Z 6 
+
+6.5.1 General 
+
+The contact ratio factor, Z 6 , accounts for the influence of the transverse contact and overlap ratios on the surface 
+load capacity of cylindrical gears. 
+
+a) Spur gears: 
+
+
+
+H 
+
+
+
+A ~ e " (64) 
+
+
+
+3 
+The conservative value of Z c = 1 ,0 may be chosen for spur gears having a contact ratio less than 2,0. 
+
+b) Helical gears: 
+U t -p < 1 , then 
+
+
+
+^(1 - ep ) + ^ (65) 
+
+-J fa 
+
+If t ?p > 1 , then 
+
+Ze [± (66) 
+
+6.5.2 Transverse contact ratio, e a 
+
+with length of path of contact: 
+
+
+
+29 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+'a 2 
+
+
+
+Jdh-d&±4 di 2 -d% 2 
+
+
+
+a sina^ 
+
+
+
+(68) 
+
+
+
+and transverse base pitch: 
+
+p bt = m t rc cosar t (69) 
+
+The positive sign is used for external gears, the negative sign for internal gears. 
+
+Equation (69) is only valid if the path of contact is effectively limited by the tip circle of the pinion and the wheel and 
+not, for example, by undercut tooth profiles. 
+
+
+
+6.5.3 Overlap ratio, <?p 
+
+frsin/7 
+
+£$ = — — 
+
+See 6.1.2 for the definition of facewidth. 
+
+6.6 Helix angle factor, Z p 
+
+The helix angle factor, Zp, takes account of the influence on surface stress of the helix angle. 
+
+
+
+(70) 
+
+
+
+Zp = Vcos/? 
+
+
+
+6.7 Allowable stress numbers (contact), o^ 
+
+
+
+(71) 
+
+
+
+!im 
+
+
+
+ISO 6336-5 provides information on commonly used gear materials, methods of heat treatment, and the influence 
+of gear quality on values for allowable stress numbers, cr H | im , derived from test results of standard reference test 
+gears. 
+
+See, too, ISO 6336-5 for requirements concerning material and heat treatment for qualities ML, MQ, ME and MX. 
+Material quality MQ shall be chosen for marine gears, unless otherwise agreed. 
+
+6.8 Influences on lubrication film formation, Z L , Z v and Z R 
+
+6.8.1 General 
+
+As described in ISO 6336-2, Z L accounts for the influence of nominal viscosity of the lubricant, Z^, for the influence 
+of tooth-flank velocities, and Z R for the influence of surface roughness on the formation of the lubricant film in the 
+contact zone. Method B of ISO 6336-2:1996 is used in this International Standard. 
+
+Factors shall be determined for the softer material when the hardness of meshing gears is different. 
+
+6.8.2 Lubricant factor, Z L 
+
+Z L can be calculated using equations (72) to (75): 
+
+
+
+7 r , 4 0-°- c ZL) r , 4(1,0-C ZL ) 
+z l = c zl + :: T5 = c zl + — 
+
+
+
+80 
+
+
+
+1,2 + 
+
+
+
+a) If cr H | im < 850 /mm 2 , then 
+
+
+
+1,2 + 
+
+
+
+134 
+
+
+
+(72) 
+
+
+
+30 
+
+
+
+C ZL =0,83 
+b) If 850 N/mm 2 < cr H Jim < 1 200 N/mm 2 , then 
+
+
+
+CzL ,f^!l + 0,635 7 
+LX - 4 375 
+
+
+
+c) If cr H | jm > 1 200 N/mm 2 , then 
+
+C ZL = 0,91 
+Alternatively, Z L can be calculated from equation (76): 
+
+Zl = C ZL +4(1,0-C ZL )v f 
+where 
+
+Vf= 1/(1,2 + 80/ v 50 ) 2 
+using the viscosity parameters from Table 5. 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+(73) 
+
+
+
+6.8.3 Speed factor, Z v 
+
+Zy can be calculated using equations (77) and (78): 
+
+2(1,0-C Zv ) 
+
+
+
+z v = c Zv + - 
+
+
+
+0,8 + 
+
+
+
+32 
+
+
+
+where 
+
+Czv = C 2L + °- 02 
+
+see equations (73) to (75) for the values of C zl _. 
+Alternatively, 7y can be calculated from equation (79): 
+
+Z v = C Zv +2 (1,0-C Zv )v p 
+where the velocity parameter v p = 1/(0,8 + 32/v) - 5 
+
+
+
+(74) 
+
+
+
+(75) 
+
+
+
+(76) 
+
+
+
+
+
+
+
+Table 5 - 
+
+
+— Viscosity parameters 
+
+
+
+
+
+
+
+
+ISO viscosity class 
+
+
+VG32 a 
+
+
+VG46 a 
+
+
+VG68 a 
+
+
+VG100 
+
+
+VG150 
+
+
+VG220 
+
+
+VG320 
+
+
+Nominal viscosity 
+
+»'40 mm 2 /s 
+l "5o mm 2 /s 
+
+
+32 
+21 
+
+
+46 
+30 
+
+
+68 
+43 
+
+
+100 
+
+61 
+
+
+150 
+89 
+
+
+220 
+
+125 
+
+
+320 
+180 
+
+
+Viscosity parameter 
+
+
+0,040 
+
+
+0,067 
+
+
+0,107 
+
+
+0,158 
+
+
+0.227 
+
+
+0,295 
+
+
+0,370 
+
+
+a Only for high speed transmission. 
+
+
+
+(77) 
+
+
+
+(78) 
+
+
+
+(79) 
+
+
+
+31 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+6.8.4 Roughness factor, Z R 
+
+6.8.4.1 Calculation of Z R 
+
+Z R may be calculated using the following equations: 
+
+where 
+
+C ZR 
+
+
+
+Zr = 
+
+
+
+(81) 
+
+
+
+1,29a 1/3 
+
+
+
+V 
+
+
+
+Rz^ + Rz.2 
+
+6.8.4.2 Roughness values 
+
+R ^ R ^ +Rz 2. (82) 
+
+2 
+
+Rzi 2 is measured on several tooth flanks. The mean roughness /?z 1 (pinion flank) and the mean roughness Rz 2 
+(wheel flank) shall be determined for their surface condition after manufacture, including any running-in treatment 
+planned as a manufacturing, commissioning or in-service process, when safe to assume that this will take place. If 
+the stated roughness is an Ra value (= CLA value; = AA value), the following approximation may be used for the 
+conversion: 
+
+/? fl =CLA = AA=^ (83) 
+
+6 
+
+10" 
+
+
+
+Rz 1 o - Rz 
+
+
+
+
+(84) 
+
+
+
+P 1 f2_ (85) 
+
+Pred P^P 2 
+
+where 
+
+p 1 2 = 0,5d b1 2 tan a, ( 86 ) 
+
+(also applicable for internal gears, d b then being negative sign) 
+
+6.8.4.3 Material dependent index, C ZR 
+
+a) If <r H | im < 850 N/mm 2 , then 
+
+C ZR =0,15 (87) 
+
+b) If 850 N/mm 2 «: er H | im < 1 200 N/mm 2 , then 
+
+C ZR =0,32-0,0002<x Hlim (88) 
+
+
+
+32 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+c) If cr H , jm > 1 200 N/mm 2 , then 
+
+C ZR =0,08 (89) 
+
+6.9 Work hardening factor, Z^ 
+
+As described in ISO 6336-2, the work hardening factor, Z^, takes account of the increased surface durability due to 
+the meshing of a steel wheel (structural steel, through-hardened steel) with a pinion significantly (« 200 HV or 
+more) harder than the wheel and having smooth tooth flanks (Rz < 6 urn, otherwise effects of wear are not covered 
+by this International Standard). Method B of ISO 6336-2:1996 is applied, as follows. 
+
+If HB< 130, then 
+
+Z W =1.2 (90) 
+
+If 130 < HB« 470, then 
+H „ HB-130 
+
+Zw=1 ' 2 -775o- < 91) 
+
+If HB > 470, then 
+
+Zw = 1 .0 (92) 
+
+where HB is the Brinell hardness of the tooth flanks of the softer gear of the pair. 
+
+6.10 Size factor, Z x 
+
+By means of Z x , account is taken of statistical evidence indicating that the stress levels at which fatigue damage 
+occurs decrease with an increase of component size (larger number of weak points in structure), as a consequence 
+of the influence on subsurface defects of the smaller stress gradients that occur (theoretical stress analysis) and 
+the influence of size on material quality (effect on forging process, variations in structure, etc.). Important influence 
+parameters are: 
+
+a) material quality (furnace charge, cleanliness, forging); 
+
+b) heat treatment, depth of hardening, distribution of hardening; 
+
+c) radius of flank curvature; 
+
+d) module: in the case of surface hardening; depth of hardened layer relative to the size of teeth (core supporting- 
+effect). 
+
+For through-hardened gears and for surface-hardened gears with adequate case depth relative to tooth size and 
+radius of relative curvature, the size factor, Z*, is taken to be 1 ,0. 
+
+7 Calculation of tooth bending strength 
+7.1 Basic formulae 
+
+7.1.1 General 
+
+As specified in ISO 6336-3, the maximum tensile stress at the tooth-root may not exceed the permissible bending 
+stress for the material. This is the basis for rating the bending strength of gear teeth. 
+
+
+
+33 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+The actual tooth-root stress, <t f , and the permissible bending stress, er FP , shall be calculated separately for pinion 
+and wheel; <x F shall be less than <7 FP . 
+
+7.1 .2 Determination of tooth root stress <r F 
+
+Method B of ISO 6336-3:1996 is used in this International Standard. 
+Tooth root stress, cr F , is calculated as follows: 
+
+a F = er F0 K A K v K F p K Fa s£ <7pp (93) 
+
+with 
+
+<TF0 = -~) / FK S rp (94) 
+
+bm n 
+
+In the case of gear trains with multiple transmission paths, planetary gear systems or split-path gear trains, the total 
+tangential load is not quite evenly distributed over the individual meshes (depending on design, tangential speed 
+and manufacturing accuracy). This shall be taken into consideration by substituting K y K A for tf A in equation (93) to 
+adjust the average tangential load per mesh as necessary (see clause 5). 
+
+When the facewidth b (for a double helical gear b = 2 b s ) is larger than that of its mating gear, the bending strength 
+of its teeth shall be based on the smaller facewidth plus a length, not exceeding one module of any extension at 
+each end. However, if it is foreseen that, because of crowning or end relief, contact does not extend to the end of 
+face, then the smaller facewidth shall be used for both pinion and wheel. Facewidth b is the facewidth at the root 
+cylinder of the gear. 
+
+7.1 .3 Determination of permissible tooth root stress, cr F p 
+
+°FP ref = ^8 relT y R relT y X = ~ ( 95 ) 
+
+-> F min ^ F min 
+
+According to ISO 6336-3, the values of <r F , im and er FE are validated for jV l = 3 x 10 6 load cycles. This number is 
+likely to be exceeded in the life of a marine gear. If this is not the case, refer to ISO 6336-3 for the limited life range. 
+Nevertheless, values of cr HP re{ derived from equation (95) may be substituted for cx F p, given optimum conditions, 
+material, manufacturing and experience; otherwise the value for er FP is obtained by equation (96). 
+
+
+
+<7 FP = 0,92 cr FPref 
+
+
+
+10. 
+
+
+
+10 
+
+
+
+°™ (96) 
+
+
+
+Nl J -^Fmin 
+
+7.1 .4 Safety factor for bending strength, S F 
+
+The factor S F shall be calculated using the following equation: 
+
+
+
+^3^ Cmi „ (97) 
+
+or 
+
+
+
+Sf~ ^SFmin 
+
+
+
+5 F is calculated separately for pinion and wheel, with <r FG calculated in accordance with equation (95) or (96) as 
+appropriate, and op obtained with equation (93). 
+
+More information on the safety factor and probability of failure can be found in ISO 6336-1 :1 996, 1 .3. 
+
+
+
+34 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+7.2 Form factor, Y F 
+
+7.2.1 General 
+
+Yf is the form factor by means of which the influence of tooth form on nominal bending stress is taken into account. 
+Yf is relevant to the application of load at the outer limit of single pair tooth contact, (method B of 
+ISO 6336-3:1996). 
+
+Values of Y F are determined for spur gears and the virtual spur gears of helical gears. Virtual spur gears have the 
+virtual number of teeth z n . See 7.2.4 for the calculation of z n and other virtual gear parameters. 
+
+Y F shall be determined separately for wheel and pinion from the following equation (see Figure 3). 
+
+6h Fe 
+
+
+
+cos« Fen 
+
+
+
+>F 
+
+
+
+J Fn 
+
+
+
+COS a 
+
+
+
+n 
+
+
+
+fbn/lA/COS /? b ) = F M /b 
+
+
+
+
+Fen 
+
+
+
+(98) 
+
+
+
+a Base circle. 
+
+Figure 3 — Determination of dimensions of tooth-root chord at the critical section 
+
+The equations given here apply to all basic rack tooth profiles with and without undercut, but with the following 
+restrictions: 
+
+a) the contact point of the 30° tangent lies on the tooth-root fillet; 
+
+b) the basic rack profile of the gearing has a root fillet; 
+
+c) the teeth were generated using tools such as hobs or planer-cutters having rack form teeth. 
+
+
+
+35 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+m n (it/t) 
+
+
+
+
+m n (rr/4) 
+
+
+
+
+a) With undercut 
+
+
+
+b) Without undercut 
+
+
+
+Figure 4 — Dimensions and basic rack profile of teeth (finished profile) 
+7.2.2 Parameters required for the determination of Y P 
+
+First, determine the auxiliary values E, G and H: 
+
+
+
+E~ ~-m n -h f p \ana n + — — — (l-sina^) ^ fp 
+4 cosa n cosa r 
+
+
+
+where 
+
+■V - pr- q (see Figure 4); 
+
+v pr = 0, when gears are not undercut (see Figure 4) 
+
+
+
+c = £!P_AtP. + jr 
+
+
+
+(99) 
+
+
+
+(100) 
+
+
+
+:.n \ *■ win ) 
+
+
+
+Next, use G and H together with 9 = nJQ as a seed value (on the right hand side) in equation (102). 
+
+
+
+6 = --- tan 8 - H 
+
+
+
+(101) 
+
+
+
+(102) 
+
+
+
+Use the newly calculated 9 and again apply equation (102). Continue using equation (102) until there is no 
+significant change in successive values of 9. Generally, the function converges after two or three iterations of 
+equation (102). Use this final value of 9\n equations (103), (104) and (105). 
+
+
+
+36 
+
+
+
+Tooth-root normal chord, s Fn : 
+
+
+
+"i n V 3 J icos8 m n 
+
+
+
+Radius of root fillet, pp: 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+(103) 
+
+
+
+Pf PiP 
+
+
+
+2G' 
+
+
+
+ra n m n CO&6{z n COs'e-2G) 
+
+Bending moment arm, /i Fe : 
+
+
+
+a en = arccos 
+
+
+
+dbri 
+
+
+
+y a = 
+
+
+
+Wen > 
+_ 0,57t + 2x j:xtana n 
+
+
+
++ inva n -inva. 
+
+
+
+Zn 
+
+
+
+l n 
+
+
+
+<*Fen = «en ~ ^e = tan «en ~ inva n ~ 
+
+
+
+0,5n: + 2 x jc x tanor n 
+
+
+
+(104) 
+
+
+
+(105) 
+(106) 
+(107) 
+
+
+
+'Fe 
+
+
+
+= 0,5 
+
+
+
+(cosy e -s\ny e iar\a Fen ) 
+
+
+
+'en ZnCOS \*_ e 
+
+
+
+G + PiP 
+cos# m 
+
+
+
+n 
+
+
+
+7.2.3 Internal gears 
+
+
+
+(108) 
+
+
+
+It is assumed that the value of the form factor of a special rack can be substituted as an approximate value of the 
+form factor of an internal gear. The profile of such a rack should be a version of the basic rack profile, modified in 
+such as way that it would generate the normal profile, including tip and root circles, of an exact counterpart gear of 
+the internal gear. The load direction angle is a^ (see Figure 5). 
+
+
+
+
+F bn /[b/cos A,) = F M /b 
+
+
+
+Figure 5 — Parameters for determination of form factor, Y F , of an internal gear 
+
+
+
+37 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+The values to be used in equation (98) are determined as follows: 
+Tooth-root normal chord, s F n2 : 
+
+
+
+SFn2 
+m n 
+
+
+
+= 2 
+
+
+
+4 m n m n COSa n m n 6 
+
+
+
+(109) 
+
+
+
+where 
+
+/? fP2 is tool radius (see below) 
+Bending moment arm, /ip e 2 : 
+
+hFe2 d e n2~dtr\2 
+
+
+
+•m n 
+
+
+
+ft I hjp2 d en 2~djr\2 
+4 ^ m n 2m n ) 
+
+
+
+tana r 
+
+
+
+tana n -^i 1-sinJ 
+
+
+
+(110) 
+
+
+
+where 
+
+p fP2 is tool radius (see below); 
+
+d en2 is derived from equation (121) adding the subscript 2; 
+
+d in2 'S derived in the same way as d an [equation (121), note that <f fn2 - d f2 = d n2 - d z ]- 
+Obtain h 1P2 from equation (111), refer to equation (113) and related information for p fP2 
+
+dt \2-d\n2 
+/ifP2 = 2 
+
+Root fillet radius, p F2 , tool radius, /?fp 2; 
+
+When the root fillet radius, p F2 , is known, it shall be used. Otherwise: 
+
+= Cp = /i t2~^Nf2 _ du\2~di2 
+
+Pf2~P\P2 i_ s j na . n 1- S in« 2(1-sina n ) 
+
+
+
+(111) 
+
+
+
+(112) 
+
+
+
+(d UK , represents the diameter of a circle near the tooth-root, containing the limits of the usable flanks of an internal 
+gear). 
+
+
+
+If sufficient data are not available, the following approximation may be used: 
+
+PF2 = ^fP2 = °' 15m n 
+
+Ensure that the correct sign is used; see the footnote in Table 1 . 
+7.2.4 Parameters for the virtual gear 
+
+
+
+(113) 
+
+
+
+P B = arccos -Jl - (sin /? cosa n ) 2 
+
+
+
+zn- 
+
+
+
+cos 2 /? b cos/? 
+
+
+
+(114) 
+
+
+
+(115) 
+
+
+
+38 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Approximation: 
+
+
+
+cos 3 J3 
+
+
+
+fan : 
+
+
+
+^n = 
+
+
+
+^a 
+
+
+
+COS 2 /? t 
+
+
+
+COS 2 ^t 
+
+
+
+■m n Zr 
+
+
+
+dan-d^ + dst-d 
+
+
+
+den ~ 2 
+
+
+
+
+Kd COS /? cosa n 
+
+
+
+(e OT -1) 
+
+
+
+dbr\ 
+2 
+
+
+
+(116) 
+(117) 
+
+(118) 
+
+(119) 
+(120) 
+(121) 
+
+(122) 
+
+
+
+The value of z is positive for external gears and negative for internal gears (see clause 3, footnote 2). 
+
+7.3 Stress correction factor, K s 
+
+The stress correction factor, Y s , is used to convert the nominal bending stress to local tooth root stress. K s shall be 
+determined separately for pinion and wheel. Y s is valid in the range 1 ^ q s <&. 
+
+
+
+y s = (1,2 + 0,13L)<7 s 
+where 
+
+/i Fe 
+
+
+
+1/(1.21 + 2.3/L)] 
+
+
+
+?s = 
+
+
+
+2p F 
+
+
+
+(123) 
+
+(124) 
+(125) 
+
+
+
+with 
+
+
+
+S Fn from equation (103) for external gears, equation (109) for internal gears; 
+/i Fe from equation (108) for external gears, equation (110) for internal gears; 
+p F from equation (104) for external gears, equation (113) for internal gears. 
+
+
+
+39 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+7.4 Helix angle factor, K p 
+
+The tooth-root stress of a virtual spur gear, calculated as a preliminary value, is converted by means of the helix 
+factor, y p , to that of the corresponding helical gear. By this means, the oblique orientation of the lines of mesh 
+contact is taken into account (lesser tooth-root stress). 
+
+If ep > 1 and J3 a 30°, then 
+
+y P = 1 "W < 126 > 
+
+If e p >1 and p> 30° .then 
+
+X [1 = 0,75 (127) 
+
+If e p s; 1 and /3 «: 30°, then 
+
+yp = 1 ~^ P 120 7 (128) 
+
+If <f p s; 1 and/?>30°, then 
+
+K p = 1-0,25 e p (129) 
+
+7.5 Tooth-root reference strength, cr FE 
+
+ISO 6336-5 provides information on values of cr F | im and cr FE for the more popular gear materials. The requirements 
+for heat treatment processes and material quality for quality grades ML, MQ and ME are also included. 
+
+The quality MQ shall be used for marine gears unless otherwise agreed. 
+
+7.6 Relative notch sensitivity factor, Y & re , T 
+
+h rei t approximately indicates the overstress tolerance of the material in the root fillet region. Method B of 
+ISO 6336-3:1996 is used in this International Standard. 
+
+Y S rel T = 1 (1 30) 
+
+where 
+
+p' is the slip-layer thickness taken from Table 6 as a function of the material; 
+
+Xj is the value for the standard reference test gear: %\ = 1 ,2; 
+
+X is the relative stress gradient calculated using the following equation: 9 ) 
+
+
+
+9) Applies for module m - 5 mm. The influence of size is covered by the factor K x (see 7.8). 
+
+
+
+40 
+
+
+
+where 
+
+
+
+X =0,2(1 + 2q.) 
+
+
+
+q s is the notch parameter obtained from equation (1 25). 
+
+
+
+Table 6 — Values for slip-layer thickness ff 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+(131) 
+
+
+
+Material 3 
+
+
+mm 
+
+
+NT (nitr.), NV (nitr.), NV (nitrocar.) 
+
+
+0,100 5 
+
+
+V 
+
+yield point tr s = 500 N/mm 2 
+
+yield point er s = 600 N/mm 2 
+
+limit of proportionality a 2 = 800 N/mm 2 
+
+limit of proportionality a 2 = 1 000 N/mm 2 
+
+
+0,028 1 
+0,019 4 
+0,006 4 
+0,001 4 
+
+
+Eh, If 
+
+
+0,003 
+
+
+a See Table 2 for an explanation of abbreviations used. 
+
+
+
+7.7 Relative surface factor, '-' 
+
+
+
+re!T 
+
+
+
+The surface factor, y R re | -r. accounts for the influence on tooth-root stress of the surface condition in the tooth-roots. 
+Primarily, this is dependent on surface roughness in the tooth-root fillets. 
+
+The influence of surface condition on tooth-root bending strength does not depend solely on the surface roughness 
+in the tooth-root fillets, but also on the size and shape (the problem of 'notches within a notch'). This subject has not 
+been sufficiently well studied to date for it to be taken into account in this International Standard. The method 
+applied here is only valid when scratches or similar defects deeper than 2 x Rz are not present. 
+
+NOTE 2 x Rz is the preliminary estimated value. 
+
+Besides surface texture, other known influences on tooth bending strength include residual compressive stresses 
+(shot peening), grain boundary oxidation and chemical effects. When fillets are shot peened, perfectly shaped, or 
+both, a value slightly greater than that obtained from the graph should be substituted for K Rre | T . When grain 
+boundary oxidation or chemical effects are present, a smaller value than that indicated by the graph should be 
+
+substituted for Fr^t- 
+
+
+
+a) For V, Eh, IF when Rz < 1 um 
+
+^YRrelT = 1 - 12 
+
+b) for NT (nitr.), NV (nitr.), NV (nitrocar.) when Rz < 1 um 
+
+^YRrelT = 1 - 025 
+
+c) forV, Eh, IFiffoss 1 um 
+
+
+
+(132) 
+
+
+
+>YR rel T = 1 - 674 ~ °- 529 (*Z + 1 ) 
+
+
+
+0,1 
+
+
+
+(133) 
+
+
+
+41 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+d) for NT (nitr.), NV (nitr.), NV (nitrocar.) when Rj>1pm 
+
+y YR rel T = 4 . 29 9 - 3.259 [Rz + 1) 0005 
+
+7.8 Size factor, Y x 
+
+K x is used to allow for the influence of size on 
+
+— the probable distribution of weak points in the material structure, 
+
+— the stress gradients that in materials theory decrease with increasing dimensions, 
+
+— material quality, and 
+
+— as regards the quality of forging, presence of defects, etc. 
+K x is calculated in accordance with Table 7. 
+
+Table 7 — Size factor (root), Y x 
+
+
+
+(134) 
+
+
+
+Material 3 
+
+
+Normal module 
+
+m n 
+
+
+Size factor 
+
+
+V 
+
+
+m n ^ 5 
+
+5 < m n < 30 
+30$ m n 
+
+
+K x =1,0 
+
+Y x = 1,03- 0,006 m n 
+
+K X =0,85 
+
+
+Eh, IF, 
+NT (nitr.) 
+NV (nitr.) 
+NV (nitrocar.) 
+
+
+m n ^5 
+
+5 < m n < 25 
+
+25 $ m n 
+
+
+r x = i,o 
+
+Y x = 1,05 -0,01 m n 
+K x = 0,8 
+
+
+a See Table 2 lor an explanation of the abbreviations used. 
+
+
+
+42 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Annex A 
+
+(normative) 
+
+Tooth stiffness parameters c'and <\ 
+
+
+
+A.1 General 
+
+A tooth stiffness parameter represents the requisite load over 1 mm facewidth, directed along the line of action 10 * to 
+produce in line with the load, the deformation amounting to 1 urn, of one or more pairs of deviation-free teeth in 
+contact. 
+
+Single stiffness, c', is the maximum stiffness of a single-tooth pair of a spur gear pair. It is approximately equal to 
+the maximum stiffness of a tooth pair in single pair contact 11 ). Single stiffness c' for helical gears is the maximum 
+stiffness normal to the helix of one tooth pair. 
+
+Mesh stiffness, c y , is the mean value of stiffness of all the teeth in a mesh. 
+
+Method B from ISO 6336-1:1996, used in this International Standard, is applicable in the range jci > * 2 « 2. 
+
+
+
+A.2 Single stiffness c 
+
+A.2.1 Calculation of c 
+
+For specific loading, F t Af A / b ^ 100 N/mm 2 : 
+
+c' = 0,8 c' th C R C B cos p (A.1) 
+
+A.2.2 Theoretical single stiffness, c'^ 
+
+c'th = ^ (A.2) 
+
+q 
+where 
+
+,- = Cl + £i. + ^3. + ( c 4Jt1 ) + £^1 + (Ce* 2 ) + ^^2 + (c 8 4) + ic 9 4) (A.3) 
+
+Zn1 'n2 ^n1 z n2 
+
+
+
+10) The tooth deflection can be determined approximately using F t {F m F^ ...) instead of Fy. Conversion from F t to F^ (load 
+tangent to the base cylinder) is covered by the relevant factors, or the modifications resulting from this conversion can be 
+ignored when compared with other uncertainties (e.g. tolerances on the measured values). 
+
+11) c at the outer limit of single parr tooth contact, can be assumed to approximate the maximum value of single stiffness when 
+
+
+
+43 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+
+
+
+
+Table A.1 — Constants for 
+
+
+equation (A.3) 
+
+
+
+
+
+
+Ci 
+
+
+c 2 
+
+
+c 3 
+
+
+Q 
+
+
+C 5 
+
+
+Q> 
+
+
+c 7 
+
+
+c 8 
+
+
+c 9 
+
+
+0,047 23 
+
+
+0,155 51 
+
+
+0,257 91 
+
+
+- 0,006 35 
+
+
+-0,116 54 
+
+
+- 0,001 93 
+
+
+- 0,241 88 
+
+
+0,005 29 
+
+
+0,001 82 
+
+
+
+A.2.3 Gear blank factor, C R 
+
+C' fl = 1 for gears made from solid disc blanks. For other gears: 
+
+r 1, ln Wfr) 
+
+Boundary conditions: 
+
+when b s /b < 0,2, substitute bjb = 0,2; 
+
+when b s /b > 1 ,2, substitute bjb = 1 ,2. 
+See Figure A.1 for symbols. 
+
+A.2.4 Basic rack factor, C B 
+
+C B can be obtained from equation (A.5): 
+
+
+
+(A.4) 
+
+
+
+C B 
+
+
+
+! +0,5(1,2--^-) 
+
+
+
+[1-0,02(20°-« Pn )] 
+
+
+
+(A.5) 
+
+
+
+A.2.5 Additional information 
+
+
+
+a) Internal gears: approximate values of the theoretical single stiffness of internal gear teeth can be determined 
+from equations (A.2), (A.3), by the substitution of infinity for z n2 . 
+
+
+
+b) Specific load (F t K^/b) < 100 N/mm 
+
+
+
+' = 0,8 c' th C R C B cos/? 
+
+
+
+Ft* A 
+100 b 
+
+
+
+0,25 
+
+
+
+(A.6) 
+
+
+
+c) The above is based on steel gear pairs, for other materials and material combinations, refer to 
+ISO 6336-1:1996, clause 9. 
+
+A.2.6 Mesh stiffness, c y 
+
+For spur gears with e a ^ 1 ,2 and helical gears with fi a 30°, the mesh stiffness: 
+
+
+
+■' (0,75 e a + 0,25) 
+
+
+
+with c' according to equation (A.1). 
+
+
+
+(A.7) 
+
+
+
+44 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+1 05 | — i- -r 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 | | 
+
+
+
+
+
+
+-sssaS'5 
+
+
+
+
+i^^^ 5 !^ Jz ± 
+
+
+
+
+jf""^ ^? 
+
+
+I -*** 1 ^t* 
+
+
+'ZPZ'* 9 1 
+
+
+95 w ^ ^^ \*£ 
+
+
+'^>^> t 
+
+
+
+
+' * I 
+
+
+
+
+^- h - h L<\ 
+
+
+
+
+
+
+s R /m = 5 s^ ^7 S 
+
+
+
+
+09 " \,S /> ,? S : 
+
+
+
+
+
+
+"' m - 10 
+
+
+
+
+
+
+
+
+
+
+. -3^ ^ C. _y' j_ 
+
+
+__ 
+
+
+fi5 e-i— ^ -A- -S 
+
+
+'///// 
+
+
+
+
+
+
+
+
+A A y /A ~ 
+
+
+") A A- /- 
+
+
+/ s\s A / ~ 
+
+
+
+
+A / A A / . ~~ 
+
+
+a -t' . i c . _^' 
+
+
+A / A A A ~ 
+
+
+t_ -,, . 1 . L_ 
+
+
+/ / A\A / / ~~ 
+
+
+^ZZT.J- 
+
+
+/ A A. A A ~ 
+
+
+Z ^ r 
+
+
+A A x A A* ~~ 
+
+
+/ I 
+
+
+^ — ^ — '\-£ *■ — ' ~~ 
+
+
+0.75 l. ^ ft = 40 
+
+
+
+
+--■&.-- , 
+
+
+m 
+
+
+=r-. 
+
+
+IU 
+
+
+7 ./ ^^ 
+
+
+
+
+"•' Z I \ 
+
+
+1 
+
+
+^A A A A A 
+
+
+
+
+v //y// 
+
+
+
+
+it: Ybf 
+
+
+
+
+65 A 
+
+
+
+
+V,OD /\y 
+
+
+o 
+
+
+
+
+
+
+/ 
+
+
+
+
+' / b % = 10 
+
+
+u> 
+
+
+6 - / / 
+
+
+
+
+u '" y i 
+
+
+
+
+
+
+
+
+_j i i 
+
+
+
+
+
+
+
+
+0.55 M I I I I I I I I I I I I I I I I I I 
+
+
+1 
+
+
+
+0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1 
+
+
+
+1,1 1.2 
+
+bjb 
+
+
+
+Figure A.1 — Wheel blank factor, C R ; mean values for mating gears of similar or stiffer wheel blank design 
+
+
+
+45 
+
+
+
+IS 8830 : 2007 
+ISO 9033 : 2001 
+
+
+
+Annex B 
+(normative) 
+
+Special features of less common gear designs 
+
+
+
+B.1 Dynamic factor, Ky, for planetary gears 
+
+B.1.1 General 
+
+In gear trains which include multiple mesh gears such as idler gears and in epicyclic gearing, planet and sun gears, 
+there are several natural frequencies. These can be higher or lower than the natural frequency of a single gear pair 
+which has only one mesh. 
+
+Although values of K w determined with the formulae in this International Standard shall be considered as unreliable, 
+they can nevertheless be useful as preliminary assessments. It is recommended that if possible they be re- 
+assessed using a more accurate procedure. 
+
+Method A should be preferred for the analysis of less common transmission designs. Refer to 6.1.1 of 
+ISO 6336-1:1996 for further information. 
+
+B.1 .2 Calculation of the relative mass of a gear with external teeth 
+
+Refer to 5.6.2. 
+
+B.1. 3 Resonance speed determination for less common gear designs 
+
+B.1.3.1 General 
+
+The resonance speed determination for less common gear designs should be made using Method A. However, 
+other methods may be used to approximate the effects. Some examples are the following: 
+
+a) pinion shaft with diameter at mid-tooth depth, d m1 , about equal to the shaft diameter; 
+
+b) two rigidly connected, coaxial gears; 
+
+c) one large wheel driven by two pinions; 
+
+d) planetary gears; 
+
+e) idler gears. 
+
+B.1 .3.2 Pinion shaft diameter equal to diameter at mid-tooth depth, d m1 
+
+The high torsional stiffness of the pinion shaft is to a great extent compensated by the shaft mass. Thus the 
+resonance speed can be calculated in the normal way, using the mass of the pinion (toothed portion) and the 
+normal mesh stiffness cy 
+
+B.1. 3.3 Two, rigidly connected, coaxial gears 
+
+The mass of the larger of the connected gears shall be included. 
+
+
+
+46 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+B.1 .3.4 One large wheel driven by two pinions 
+
+As the mass of the wheel is normally much greater than the masses of the pinions, each mesh can be considered 
+separately, i.e: 
+
+— as a pair comprising the first pinion and the wheel, and 
+
+— as a pair comprising the second pinion and the wheel. 
+
+B.1 .3.5 Planetary gears 
+
+Because of the many transmission paths that include varieties of stiffness other than mesh stiffness, the vibratory 
+behaviour of planetary gears is very complex. The calculation of dynamic load factors using simple formulae, such 
+as method B, is generally quite inaccurate. Nevertheless, method B, modified as follows, can be used for a first 
+estimate of K v . This estimate should, if possible, be verified be means of a subsequent detailed theoretical or 
+experimental analysis, or on the basis of operating experience. See also the introductory comments to this annex. 
+
+a) Sun gear/planet gear 
+
+The reduced mass for the determination of the resonance speed, « E1 , of the sun gear is given by: 
+
+•^pla ^sun , n ... 
+
+"'red =1 : 2 W : 2 \ { ' 
+
+y P* plat sun j + y •'sun'bpla j 
+
+where 
+
+7pi a and 7g Un are the moments of inertia per unit facewidth of one planet gear and the sun gear 
+respectively in kilogram square millimetres per millimetre (kg • mm 2 /mm). 
+
+r bsun = 0>5"bsun> 
+
+r b pla = °- 5 d b plai 
+
+p is the number of planet gears in the gear stage under consideration. 
+
+The value, m red , determined from equation (B.1), shall be used in the equation for calculating N (see 5.6.2.2) 
+where a mesh stiffness approximately equal to a single planetary gear shall be used for the mesh stiffness c y 
+and the number of teeth on the sun gear shall be used for z^■ 
+
+Concerning planetary gears, it should be noted that F t in equations (12) to (14) for B p , B f , B k (see 5.6.2.3) is 
+equal to the total tangential load applied to the sun gear, divided by the number of planet gears. 
+
+b) Planet gear/annulus gear rigidly connected to the gear case 
+
+In this case, the mass of the annulus gear can be assumed to be infinite. Thus, the relative mass becomes 
+equal to the referred mass of the planet gear. This can be determined as follows: 
+
+-red^ ( B - 2 ) 
+
+tpla 
+
+with the notation as above. 
+
+
+
+47 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+c) Planet gear/rotating annulus gear 
+
+In this case, the referred mass of the annulus gear can be determined as for an external wheel, and the planet 
+gear relative mass calculated in accordance with equation (B.2). The procedure described in B.1.3.4 shall be 
+used when the annulus gear meshes with several planet gears 
+
+B.1.3.6 Idler gears 
+
+Approximate values can be obtained from the following when the driving and driven gears are roughly of the same 
+size, the idler gear also about the same size or a little larger: 
+
+— reduced mass 
+
+m red = 7~2 i z\ (B,3) 
+
+^1 + 2r b2 + 'to 
+Ul J 2 J Zj 
+
+— mesh stiffness 
+
+c y =0,5(c n2 +c 72 , 3 ) (B.4) 
+
+where 
+
+j\, J 2 , J3 are the moments of inertia per unit facewidth of the pinion, the idler and the wheel respectively 
+in kilogram square millimetres per millimetre (kg • mm 2 /mm); 
+
+c y1 2 is the mesh stiffness of the driver and idler gear pair; 
+
+c y2 3 is the mesh stiffness of the driver and idler gear pair (see annex A for the determination of c. f ). 
+
+More accurate analysis is recommenced if the reference speed is in the range 0,6 < < 1 ,5. 
+
+If the idler is substantially larger than the driving and driven gears or, if the driving gear or driven gear is 
+substantially smaller than the two other gears, K y can be calculated separately for each meshing pair, i.e. 
+
+— for the driver-idler gear combination, and 
+
+— for the idler-driven gear combination. 
+
+Values of m red calculated in accordance with the above may be substituted in equation (7) of 5.6.2.2 to determine 
+the resonance speed. 
+
+An accurate analysis is recommended for cases not mentioned here. 
+
+B.2 Face load factors, K H ^, K F p, for simple planetary gears 
+
+The face load factor takes into account the effects of the non-uniform distribution of load over the gear facewidth on 
+the surface stress (A^ip) anc ' tooth-root stress (A>p). 
+
+
+
+48 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+According to 7.2.3.1 a) and 7.6.1 of ISO 6336-1:1996, Method C1 is suitable for the gears of single planetary gear- 
+sets in which the following features are found 12 ). 
+
+Either the sun or the planet carrier and sometimes the annulus gear is free to float; otherwise a comparable division 
+of load between the individual planet gears is achieved by greater accuracy of manufacture, flexibility or both. If 
+necessary, refer to the above mentioned clauses for details. 
+
+Determine: 
+
+— mesh misalignment due to manufacturing deviation/ ma in accordance with 5.7.2.2, 
+
+— running-in factor %p in accordance with 5.7.2.3, 
+
+— mesh stiffness in accordance with annex A. 
+
+Any unequal division of the total tangential load between the planet gears is covered by factor Ky (see clause 5). 
+Thus, for these gears, F m = (F, /f A K y K v ), and with F t being the nominal tangential load transmitted per mesh, also 
+the sum of the loads over both helices of double helical gears. 
+
+a) Spur and single helical gears (see footnote 5) 
+
+— Gear pair without helix modification, sun gear (Z)/planet (P), mounted on a fixed, rigid planet pin: 
+
+,2 
+
+
+
+„ 4 000 Cyl b 
+
+
+
+5,12 + 
+
+
+
+K $ c yfmi 
+
+2F m ;b 
+
+
+
+(B.5) 
+
+
+
+— For the same gear pair with helix modification (torsional deflection only compensated): 
+tf H p in accordance with equation (36) and 5.7.2.4.2, and K H p ^ 1,05. 
+
+— Gear pair without helix modification, sun gear (Z)/planet (P) with journals, mounted with bearings in the 
+planet carrier: 
+
+
+
+4 000 c r 
+
+K HP = 1 + — *"p - 
+
+
+
+5,1 ?-p 
+
+
+
+\*z 
+
+
+
++ 2 
+
+
+
+b \ 4 (u 
+
+
+
+b 12 
+
+
+
+2F m /b 
+
+
+
+(B.6) 
+
+
+
+For the same gear pair with full helix modification (bending and torsional deflection fully compensated): 
+K H p in accordance with equation (36) of 5.7.2.4.2, and /C Hp > 1,05. 
+
+Gear pair without helix modification, annulus gear (H)/planet (P) with journals, mounted with bearings in 
+the planet carrier: 
+
+
+
+8 000 c Y 
+
+
+
+K d P J 
+
+
+
+12 
+
+
+
+*"P c Y/m; 
+
+
+
+(B.7) 
+
+
+
+12) Restoring forces in toothed couplings are ignored. Restoring forces which lead to uneven distribution of load over the 
+facewidth can occur when transmission elements are rigid and friction characteristics of flexible couplings are unsatisfactory. 
+
+
+
+49 
+
+
+
+!S 8830 : 2007 
+!SO 9083 : 2001 
+
+— For the same gear pair with helix modification (bending deflection only compensated): 
+K H(J in accordance with equation (36) of 5.7.2.4.2, and A" Hp > 1 ,05. 
+
+— Gear pair with or without helix modification, annulus gear (H)/planet (P) mounted on a fixed, rigid planet 
+
+pin: 
+
+K H p in accordance with equation (36) of 5.7.2.4.2, and K Hp ^ 1,05. 
+b) Double helical gears (see 5.7.2.4, with footnotes 4 and 5) 
+
+— Gear pair without helix modification, sun gear (Z)/planet (P) mounted on a fixed, rigid planet pin: 
+
+P 3/t P E{d z ) F m /b B 
+
+— For the same gear pair with helix modification (torsional deflection only compensated, see 5.7.2.4, 
+footnote 4): 
+
+A" Hp in accordance with equation (37) of 5.7.2.4.2, and AT Hp > 1,05. 
+
+— Gear pair without helix modification, sun gear (Z)/planet (P) with journals, mounted with bearings in a 
+planet carrier: 
+
+
+
+4 000 c 7 
+
+ATh P = 1 + -3^- r p - 
+
+
+
+3,2 p 
+
+
+
+'" * (B\*fl P 7 
+
+
+
+^l + 2 
+
+
+
+ya P 
+
+
+
+B 12 
+
+
+
+^ma (Bg) 
+
+
+
+— For the same gear pair with full helix modification (bending and torsional deflection fully compensated, 
+
+see footnote 7): 
+
+AT Hp in accordance with equation (37) of 5.7.2.4.2, and K Hp ^ 1,05. 
+
+— Gear pair without helix modification, annulus gear (H)/planet (P) with journals, mounted with bearings in a 
+planet carrier: 
+
+K Hp = 1 + i°°°- K EltjJi Vit -^1 + Wit™ (B.10) 
+
+P 3* * E[dp) \B 12 J FjbB 
+
+— For the same gear pair with helix modification (bending deflection only compensated): 
+A' Hp in accordance with equation (37) of 5.7.2.4.2, and K Hp ^ 1,05. 
+
+— Gear pair: with or without helix modification, annulus gear (H)/planet (P) mounted on a fixed, rigid planet 
+
+pin: 
+
+A" Hp in accordance with equation (37) of 5.7.2.4.2, and K Hp > 1,05. 
+
+
+
+50 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Annex C 
+
+(informative) 
+
+Guide values for application factor, K& 
+
+
+
+C.1 Establishment of application factors 
+
+Application factors can best be established from a thorough analysis of service experience with a particular 
+application (see ISOATR 10495). For marine gears, the rules of the classification authorities shall be observed, as 
+these are founded on extensive service experience. For the main propulsion gears of sea-going ships, a thorough 
+analytical investigation should be made. 
+
+The factor K A is used to modify the value F t , to take into account loads additional to nominal loads imposed on the 
+gears from external sources. If it is not possible to determine the equivalent tangential load (see clause 5.3) by 
+comprehensive system analysis or from measured values using a suitable cumulative damage criterion; the 
+empirical guidance values in C.2 can be used. 
+
+For marine gears, which are subjected to cyclic peak torques (torsional vibrations) and designed for infinite life, the 
+application factor can be defined as the ratio between the peak cyclic torque and the nominal rated torque. The 
+nominal rated torque is defined by the rated power and speed; it is the torque used in the load capacity 
+calculations. 
+
+If the gear is subjected to a limited number of known loads in excess of the amount of the peak cyclic torques, this 
+influence may be covered directly by means of a cumulative fatigue criterion, as mentioned above, or by means of 
+an increased application factor representing the influence of the load spectrum. 
+
+It is recommended that the purchaser and manufacturer or designer agree on the value of the application factor in 
+agreement with the applicable classification authority. 
+
+C.2 Approximate values for the application factors 
+
+K A used in the preparation of preliminary designs can be chosen from the following values: 
+
+— for diesel driven main propulsion gears, K A = 1 ,35; 
+
+— for turbine driven main propulsion gears, K A = 1 ,1 . 
+
+For geared transmissions of auxiliary machinery such as those listed in table C1, the following values may be used: 
+
+— for diesel driven auxiliaries, K A = 1 ,5; 
+
+— for turbine and electric motor driven auxiliaries, K A = 1 ,25; 
+
+— for turbine driven electricity generators, K A - 1 , 1 . 
+
+Table C.1 — Auxiliary machinery 
+
+
+
+Electricity generators 
+
+
+Cargo pumps, feed pumps 
+
+
+Side thrusters 
+
+
+Dynamic positioning thrusters 
+
+
+Azimuth thrusters 
+
+
+Platform jacking equipment 
+
+
+Any other equipment which is essential to the safety of a ship or other similar marine unit 
+
+
+
+51 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Annex D 
+
+(informative) 
+
+Guide values for crowning and end relief of teeth of cylindrical gears 
+
+
+
+D.1 General 
+
+Well designed crowning and end relief have a beneficial influence on the distribution of load over the facewidth of a 
+gear (see 5.7). Design details should be based on a careful estimate of the deformations and manufacturing 
+deviations of the gearing of interest. If deformations are considerable, helix angle modification might be superposed 
+over crowning or end relief, but well designed helix modification is preferable. 
+
+
+
+0.2 Amount of crowning, C p 
+
+The following non-mandatory rule is drawn from experience; the amount of crowning (see Figure D.1) necessary to 
+obtain acceptable distribution of load can be determined as follows. 
+
+Subject to the limitations 10 urn ^ C^ < 40 urn plus a manufacturing tolerance of 5 urn to 10 um, and that the value 
+bca\/b would have been greater than 1 had the gears not been crowned: C p » 0,5 F (j x cv . 
+
+
+
+■i-pp^^^^ 1 
+
+
+
+'(b) 
+
+
+
+Figure O.I — Amount of crowning, C§ ( b ), and width, b^ 
+
+In order to avoid excessive loading of tooth ends, the crowning amount shall be calculated as: 
+
+Cp = 0,5(/ 8h +/ H (j) 
+
+
+
+(D.1) 
+
+
+
+When the gears are of such stiff construction that / sh can for all practical purposes be neglected, or when the 
+helices have been modified to compensate for deformation at mid-facewidth, the following value can be substituted: 
+
+
+
+Cp=0,5/H|j 
+
+
+
+(D.2) 
+
+
+
+Subject to the restriction 10 um < C p < 25 um plus a manufacturing tolerance of about 5 um, 60 % to 70 % of the 
+above values are adequate for extremely accurate and reliable high speed gears. 
+
+
+
+52 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+D.3 Amount C m and width b m of end relief 
+
+D.3.1 Method C1 
+
+This method is based on an assumed value for the equivalent misalignment of the gear pair, without end relief, and 
+on the recommendations for the amount of gear crowning. 
+
+a) Amount of end relief (see Figure D.2) 
+
+For through hardened gears: C^ » F px cv plus a manufacturing tolerance of 5 urn to 10 urn. 
+Thus, by analogy with F pxcv in clause D.1 , C\^ should be approximately. 
+
+C|(ii)=/sh+1.5/Hp (D.3) 
+
+For surface hardened and nitrided gears: C^ * 0,5 F px cv plus a manufacturing tolerance of 5 urn to 10 urn. 
+Thus, by analogy with F px cv in clause D.1 , C^ should be approximately: 
+
+Ci(ii) = 0,5(/ Sh +1,5/ H p) (D.4) 
+
+
+
+*r 
+
+
+
+ed 
+
+
+
+
+'// 
+
+
+
+Mb) 
+
+
+
+/ ^T 
+
+
+
+Figure D.2 — Amount C^ and width b^ of end relief 
+
+When the gears are of such stiff construction that / sh can for all practical purposes be neglected, or when the 
+helices have been modified to compensate deformation, proceed in accordance with equation (D.2). 
+
+For very accurate and reliable gears with high tangential velocities, 60 % to 70 % of the above values is 
+appropriate. 
+
+b) Width of end relief 
+
+For approximately constant load and higher tangential velocities: b^ is the smaller of the values (0,1 b) or 
+
+(1,0 m) 
+
+The following is appropriate for variable loading, low and average speeds: 
+
+fc red =(0,5to 0,7) b (D.5) 
+
+D.3.2 Method C2 
+
+This method is based on the deflection of gear pairs, assuming uniform distribution of load over the facewidth: 
+
+<?bth = F m /(bc y ), or F m = F t K A K v (D.6) 
+
+
+
+53 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+For highly accurate and reliable gears with high tangential velocities, the following are appropriate: 
+
+C l£)() = (2to3)J bth (D.7) 
+
+b re6 =(0,8to0,9)b (D.8) 
+
+For similar gears of lesser accuracy: 
+
+C l(ll) = (3to4)^ th (D.9) 
+
+fc red =(0,7to0,8)fc (D-10) 
+
+
+
+54 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Annex E 
+
+(informative) 
+
+Check and interpretation of tooth contact pattern 
+
+
+
+E.1 Scope and field of application 
+
+This annex describes a procedure for checking the tooth contact of marine gear units (accuracy grade 6 or better) 
+without load or under partial load condition. 
+
+E.2 Test methods 
+
+E.2.1 General 
+
+There are two methods described for determining the tooth contact pattern: 
+
+— contact test (check of mesh without load); 
+
+— load test (contact pattern at defined load level). 
+
+E.2.2 Contact test 
+
+The contact test is an economical method for determining the sum of all manufacturing deviations. The contact test 
+is usually performed in the completely mounted condition. If no housing is available, especially in the case of large 
+gears, a test rig may be used. Typical applications are 
+
+— large gears for marine transmissions, and 
+
+— gears mounted on board. 
+
+The main influence factors on the tooth contact without load are given in Table E1 . 
+
+Table E.1 — Main influence factors on the tooth contact without load 
+
+
+
+Tooth deviations 
+
+
+Housing deviations 
+
+
+Shaft deviations 
+
+
+Bearing tolerances 
+
+
+Pitch deviation 
+
+
+Shaft angle deviation 
+
+
+Axial runout 
+
+
+Bearing clearance 
+
+
+Profile deviation 
+
+
+Shaft slope deviation 
+
+
+
+
+Concentricity 
+
+
+Lead deviation 
+
+
+
+
+
+
+
+
+
+E.2.3 Load test 
+
+The load test is applied for highly loaded gears with profile or lead modifications, or both, for comparison of the 
+actual contact pattern with the data obtained by calculation. For the test, the load is increased in reasonable steps 
+in order to be able to predict the load distribution at full load. At the lowest load stage the gears shall already have 
+reached their final position. A typical sequence of load stages is: 5 %, 25 %, 50 %, 75 %, 100 % (maximum value 
+as high as possible). 
+
+The load-dependent influence factors with influence on the tooth contact are given in Table E.2. 
+
+
+
+55 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Table E.2 — Load-dependent influence factors influencing the tooth contact 
+
+
+
+Tooth deviations 
+
+
+Housing deviations 
+
+
+Shaft deviations 
+
+
+Bearing tolerances 
+
+
+Tooth deformation 
+
+
+Housing stiffness 
+
+
+Shaft deflection 
+
+
+Bearing stiffness 
+
+
+Hertzian deformation 
+
+
+Housing temperature 
+
+
+Shaft distortion 
+
+
+
+
+Gear blank deformation 
+
+
+
+
+
+
+
+
+Tooth wear 
+
+
+
+
+
+
+
+
+
+E.2.4 Procedure 
+
+It is usual for both contact and load tests that at least three sets of teeth (for the whole plane of contact) are 
+considered. Either the wheel or the pinion is painted with a suitable contrast colour. After several revolutions 
+without load or at the actual load stage the transmission of colour to the mating gear (without or with moderate 
+load), or the abrasion of the colour (high load), is used to evaluate the contact pattern. 
+
+E.2.5 Paints 
+E.2.5.1 Contact test 
+
+See Table E.3. 
+
+
+
+Table E.3 — Suitable paints (contact test) 
+
+
+Suitable paints 
+
+
+Manufacturer 
+
+
+Lukas Tuschierfarbe 
+
+
+Dr. Schonfeld & Co. 
+
+
+Diamant Tuschierfarbe 
+
+
+Schleifmittelwerk Kahl 
+
+
+Eosol Tuschierpaste 
+
+
+Emil Otto/Fabrik 
+
+
+Kruel Tuschierfarbe 
+
+
+Fa. C. Kreul 
+
+
+Norma Olfarbe 
+
+
+H. Schminke & Co. 
+
+
+Yellow Gear Marking 
+
+
+Prescott & Comp. Ltd. 
+
+
+NOTE The above are examples of products available commercially. This information is given for the 
+convenience of users of this International Standard and does not constitute an endorsement of ISO of 
+these products. 
+
+
+
+E.2.5.2 Load test 
+
+The contrast colour for load tests shall meet the following requirements: 
+
+— good contrast on metal surface; 
+
+— high temperature resistance; 
+
+— oil resistant; 
+
+— high tensile strength; 
+
+— high adhesion. 
+See Table E.4. 
+
+
+
+56 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Table E.4 — Suitable paints (load test) 
+
+
+
+Suitable paints 
+
+
+Manufacturer 
+
+
+Dykem Red Layout DX-296 
+
+
+The Dykem Company 
+
+
+Eosol AnreiBfarbe 
+
+
+Emil Otto/Fabrik 
+
+
+Pelikan AnreiBfarbe 
+
+
+Pelikanwerke 
+
+
+Regensburger Getriebepruflack 
+
+
+Regensburger Lackfabrik 
+
+
+Copper sulphate 
+
+
+
+
+NOTE The above are examples of products available commercially. This information is given for the 
+convenience of users of this International Standard and does not constitute an endorsement of ISO of 
+these products. 
+
+
+
+E.3 Evaluation of expected values for contact test and load test 
+
+E.3.1 Face contact width 
+
+The optimum contact pattern is determined on the basis of the lead modification gained by Method A, B or C of 
+ISO 6336-1:1996. Jf a linear helix modification is applied the face contact, width is calculated as 
+
+
+
+x 100 
+
+
+
+(E.1) 
+
+
+
+korr 
+
+
+
+where 
+
+
+
+.'korr 
+
+
+
+is the face contact width in percent; 
+
+is the film thickness of the contrast colour, in micrometres (um); 
+
+is the lead correction value, in micrometres (um). 
+
+
+
+E.3.2 Profile contact width 
+
+The optimum contact width over the profile is determined corresponding to the actual profile and tead corrections, 
+and the referring tolerances. Reasonably, the load value should be advised where full profile contact is expected. 
+
+E.4 Examination of contact pattern 
+
+Examination of the contact pattern is subjective and should therefore always be carried out together with the use of 
+complete investigation records. For both the contact test and load test, the optimum contact pattern can be 
+adjusted during the test by means of eccentric bearing rings or by adding shims at the supports to distort the 
+housing. 
+
+
+
+57 
+
+
+
+IS 8830 : 2007 
+ISO 9083 : 2001 
+
+
+
+Bibliography 
+
+
+
+[1] ISO 4287:1997, Geometrical Product Specifications (GPS)— Surface texture: Profile method — Terms, 
+definitions and surface texture parameters. 
+
+[2] ISO 4288:1 996, Geometrical Product Specifications (GPS) — Surface texture: Profile method — Rules and 
+procedures for the assessment of surface texture. 
+
+[3] ISO 9084:2000, Calculation of load capacity of spur and helical gears — Application to high speed gears 
+and gears of similar requirements. 
+
+[4] ISO 9085: — 13 >, Calculation of load capacity of spur and helical gears — Application for industrial gears. 
+
+
+
+1 3) To be published. 
+
+
+
+58 
+
+
+
+{Continued from second cover) 
+
+The technical committee responsible for the preparation of this standard has reviewed the provisions 
+of following International Standards referred in this adopted standard and has decided that they are 
+acceptable for use in conjunction with this standard: 
+
+International Standard Title 
+
+ISO 1328-1 : 1995 Cylindrical gears — ISO system of accuracy — Part 1: Definitions and 
+
+allowable values of deviations relevant to corresponding flanks of gear 
+teeth 
+
+ISO 6336-5 : 1996 Calculation of load capacity of spur and helical gears — Part 5: Strength 
+
+and quality of material 
+
+For the purpose of deciding whether a particular requirement of this standard is complied with, the 
+final value, observed or calculated, expressing the result of a test or analysis, shall be rounded off in 
+accordance with IS 2 : 1960 'Rules for rounding off numerical values {revised)'. The number of 
+significant places retained in the rounded off value should be the same as that of the specified value 
+in this standard. 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of 
+goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any 
+form without the prior permission in writing of BIS. This does not preclude the free use, in the course 
+of implementing the standard, of necessary details, such as symbols and sizes, type or grade 
+designations. Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are 
+also reviewed periodically; a standard along with amendments is reaffirmed when such review indicates 
+that no changes are needed; if the review indicates that changes are needed, it is taken up for revision. 
+Users of Indian Standards should ascertain that they are in possession of the latest amendments or 
+edition by referring to the latest issue of 'BIS Catalogue' and 'Standards: Monthly Additions'. 
+
+This Indian Standard has been developed from Doc: No. MGP 30 (0503). 
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 10002 
+
+Telephones: 2323 01 31 , 2323 3375, 2323 9402 website : www.bis.org.in 
+
+Regional Offices: Telephones 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg r 2323 7617 
+
+NEW DELHI 1 1 0002 1 2323 3841 
+
+Eastern : 1/14 C.I.T Scheme VII M, V.I.R Road, Kankurgachi / 2337 8499, 2337 8561 
+
+KOLKATA 700054 12337 8626, 2337 91 20 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160022 r 260 3843 
+
+1260 9285 
+
+Southern : C.I.T. Campus, IV Cross Road, CHENNAI 600113 r2254 1216, 2254 1442 
+
+12254 2519,2254 2315 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) r 2832 9295, 2832 7858 
+
+M U M B Al 400093 T 2832 7891 , 2832 7892 
+
+Branches : AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. FARIDABAD. 
+GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+PARWANOO. PATNA. PUNE. RAJKOT THIRUVANANTHAPURAM. VISAKHAPATNAM. 
+
+
+
+Printed at Simco Printing Press, Delhi 
+
+
+

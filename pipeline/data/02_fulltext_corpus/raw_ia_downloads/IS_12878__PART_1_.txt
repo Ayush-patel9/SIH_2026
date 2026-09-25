@@ -1,0 +1,2355 @@
+•••••••••••••••• 
+
+
+ic  i3^ 
+
+
+^ 
+
+
+ic 
+
+
+Disclosure  to  Promote  the  Right  To  Information 
+
+Whereas  the  Parliament  of  India  has  set  out  to  provide  a  practical  regime  of  right  to 
+information  for  citizens  to  secure  access  to  information  under  the  control  of  public  authorities, 
+in  order  to  promote  transparency  and  accountability  in  the  working  of  every  public  authority, 
+and  whereas  the  attached  publication  of  the  Bureau  of  Indian  Standards  is  of  particular  interest 
+to  the  public,  particularly  disadvantaged  communities  and  those  engaged  in  the  pursuit  of 
+education  and  knowledge,  the  attached  public  safety  standard  is  made  available  to  promote  the 
+timely  dissemination  of  this  information  in  an  accurate  manner  to  the  public. 
+
+
+Mazdoor  Kisan  Shakti  Sangathan 
+"The  Right  to  Information,  The  Right  to  Live" 
+
+
+Jawaharlal  Nehru 
+"Step  Out  From  the  Old  to  the  New" 
+
+
+555^^  V I  l>!fe=S^!55S->*«5*^ 
+
+
+^;^^:^?<i\\Vg^ 
+
+
+IS  12878-1  (1989) :  6.30  mm  Magnetic  Tape  Cartridge  Using 
+GCR  Recording  at  394  ftpmm.  Part  1:  Mechanical,  Physical 
+and  Magnetic  Properties  [LITD  16:  Computer  Hardware, 
+Peripherals  and  Identification  Cards] 
+
+
+^nz^^^aznz^^ 
+
+
+Satyanarayan  Gangaram  Pitroda 
+Invent  a  New  India  Using  Knowledge 
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge  is  such  a  treasure  which  cannot  be  stolen" 
+
+
+BLANK  PAGE 
+
+
+-iSiS 
+
+
+5>- 
+
+
+PROTECTED  BY  COPYRIGHT 
+
+
+IS  12878  (  Part  1  )  :  1989 
+ISO  8462/1  :  1986 
+
+t       ,.  **,  ,  .  ( Reaffirmed  2003 ) 
+
+Indian  Standard 
+
+SPECIFICATION  FOR 
+
+6-30  mm  MAGNETIC  TAPE  CARTRIDGE  USING 
+
+GCR  RECORDING  AT  394  ftpmm 
+
+PART  1  MECHANICAL,  PHYSICAL  AND  MAGNETIC  PROPERTIES 
+
+
+UDC    681-327-636 
+
+
+©  BIS  1990 
+
+BUREAU    OF    INDIAN    STANDARDS 
+
+MANAK     BHAVAN,    9     BAHADUR      SHAH      ZAFAR      MARG 
+NEW  DELHI  110002 
+
+July  1990  Price  Group  12 
+
+
+IS  12878  (  Part  1  )  :  1989 
+ISO  8462/1  :  1986 
+
+
+Indian  Standard 
+
+
+SPECIFICATION  FOR 
+
+6-30  mm  MAGNETIC  TAPE  CARTRIDGE  USING 
+
+GCR  RECORDING  AT  394  ftpmm 
+
+PART  1  MECHANICAL.  PHYSICAL  AND  MAGNETIC  PROPERTIES 
+
+NATIONAL  FOREWORD 
+
+This  Indian  Standard,  which  is  identical  with  ISO  8462/1  :  1 986 'Information  processing  —  Data 
+interchange  on  6-30  mm  (  025  in  )  magrietic  tape  cartridge  using  GCR  recording  at  394  ftpmm 
+(  10  000  ftpi  ),  39  cpmm  (  1  000  cpi  )  —  Kart  1  :  Mechanical,  physical  and  magnetic  properties', 
+issued  by  the  International  Organization  for  Standardization  (  ISO  )  was  adopted  by  the  Bureau  of 
+Indian  Standards  on  15  December  1989  on  the  recommendation  of  the  Computers,  Business 
+Machines  and  Calculators  Sectional  Committee  (  LTD  24  )  and  approval  of  the  Electronics  and 
+Telecommunication  Division  Council. 
+
+In  the  adopted  standard  certain  terminology  and  conventions  are,  however,  not  identical  with  those 
+used  in  Indian  Standards;  attention  is  specially  drawn  to  the  following: 
+
+a)  Wherever  the  words   'International   Standard'   appear  referring  to  this  standard,  they  should 
+be  read  as  'Indian  Standard'. 
+
+b)  Comma  (,)  has  been   used   as  a  decimal   marker,    while  in   Indian   Standards  the     current 
+practice  is  to  use  a  point  (.)  as  the  decimal  marker. 
+
+c)  For  the  purpose  of  Indian  Standard,  metric  dimensions  shall  be  applicable. 
+CROSS  REFERENCE 
+
+in  this  Indian  Standard,  the  following  international  standard  is  referred  to.  Read  in  its  place  the 
+following: 
+
+International  Standard  Indian  Standard  Degree  of 
+
+Correspondence 
+
+ISO  8462/2   Information    processing  —  IS  12878  (  Part  2  )  :  1989  Specifica-            Identical 
+
+Data  interchange  on   6,30  mm  (  025  tion  for  630    mm   magnetic  tape 
+
+in  )    magnetic    tape   cartridge  using  cartridge  using   GCR   recording  at 
+
+GCR  recording  at 394 ftpmm  ( 10  000  394 ftpmm:  Part  2  Streaming  mode 
+ftpi ),  39  cpmm  ( 1  000  cpi )  —  Part 
+2  :  Streaming  mode 
+
+
+As  in  the  Original  Standard,  this  Page  is  Intentionally  Left  Blank 
+
+
+IS  12878  (  Parti  ) 
+ISO  8462/1  :1986 
+
+
+1989 
+
+
+1     Scope  and  field  of  application 
+
+ISO  8462  specifies  the  characteristics  of  a  tape  cartridge  loaded 
+with  magnetic  tape  6,30  mm  (0.25  ir>)  wide  intended  for  digital 
+recording  at  physical  recording  densities  of  252  ftpmm 
+(6  400  ftpi)  and  394  ftpmm  (10  000  ftpi). 
+
+ISO  8462/2  specifies  a  recording  method  and  a  data  format  in- 
+tended for  use  in  the  streaming  mode  of  operation.  Two  alter- 
+native track  formats  are  specified  : 
+
+—  a  4-track  format,  and 
+
+—  a  9-track  format. 
+
+This  part  of  ISO  8462  specifies  the  mechanical,  physical  and 
+magnetic  properties  of  a  6,30  mm  (0.25  in)  wide  magnetic  tape 
+cartridge  and  methods  for  testing  the  surface  quality  of  the 
+tape. 
+
+It  also  specifies  the  environmental  conditions  under  which  the 
+cartridge  shall  be  tested  and  operated,  and  recommends  condi- 
+tions for  storage. 
+
+ISO  8462/1  and  ISO  8462/2  provide  for,  the  physical  inter- 
+change of  cartridges  between  data  processing  systems,  an<? 
+specify  a  data  format.  A  labelling  standard  for  tape  cartridges 
+used  in  the  streaniing  mode  is  under  study.  The  availability  of 
+such  a  labelling  standard  will  provide  for  full  data  interchange 
+between  data  processing  systems. 
+
+NOTE  —  Numeric  values  in  the  SI  and/or  Imperial  measurement 
+system  in  this  part  of  ISO  8462  may  have  been  rounded  off  and 
+therefore  are  consistent  with,  but  not  exactly  equal  to,  each  other. 
+Either  system  may  be  used,  but  the  two  should  be  neither  intermixed 
+nor  reconverted.  The  original  design  was  made  using  the  imperial 
+measurement  system. 
+
+
+2    Conformance 
+
+A  6,30  mm  (0.25  in)  wide  magnetic  tape  cartridge  shall  be  in 
+conformance  with  ISO  8462  if  it  meets  either  all  mandatory  re- 
+quirements of  both  ISO  8462/1  and  ISO  8462/2  specified  for 
+the  4-track  format  or  all  mandatory  requirements  of  both 
+ISO  8462/1  and  ISO  8462/2  specified  for  the  9-track  format. 
+The  two  formats  shall  not  exist  on  the  same  cartridge. 
+
+
+3    Reference 
+
+ISO  8462/2,  Information  processing  —  Data  interchange  on 
+6,30  mm  (0.25  in)  magnetic  tape  cartridge  using  GCR  recording 
+at  394  ftpmm  (10  000  ftpi),  39  cpmm  (1  000  cpi)  -  Part  2  : 
+Streaming  mode. 
+
+
+4    Definitions 
+
+For  the  purpose  of  this  International  Standard  the  following 
+definitions  apply. 
+
+4.1  magnetic  tape  :  A  tape  which  accepts  and  retains 
+magnetic  signals  intended  for  input/output  and  storage  pur- 
+poses of  information  processing  and  associated  systems. 
+
+
+4.2  Reference  Tape  Cartridge  :  A  tape  cartridge  selected 
+for  a  given  property  for  calibrating  purposes. 
+
+4.3  Secondary  Reference  Tape  Cartridge  :  A  tape  car- 
+tridge intended  for  routine  calibrating  purposes,  the  perfor- 
+mance of  which  is  known  and  stated  in  relation  to  that  of  the 
+Reference  Tape  Cartridge. 
+
+4.4  typical  field  :  The  minimum  field  which,  when  applied 
+to  the  tape  under  test,  causes  a  signal  output  equal  to  95  %  of 
+the  maximum  signal  output  at  the  specified  test  density. 
+
+
+4.5  *  Reference  Field  :  The  minimum  field  which,  when  ap- 
+plied to  the  Signal  Amplitude  Reference  Tape  Cartridge  causes 
+a  signal  output  equal  to  95  %  of  the  maximum  signal  output  at 
+the  test  density. 
+
+
+4.6     Test  Recording  Currents  :  The  two  recording  currents 
+
+—  between  148  %  and  152  %  of  the  current  required  to 
+produce  the  Reference  Field  at  252  ftpmm  (6  400  ftpi),  and 
+
+—  between  128  %  and  132  %  of  the  current  required  to 
+produce  the  Reference  Field  at  ^4  ftpmm  (10  000  ftpi). 
+
+
+IS  12878  (  Parti  )  :  1989 
+ISO  8462/1  :1986 
+
+
+4.7     Signal   Amplitude   Reference   Tape   Cartridge  :    A 
+
+reference  tape  cartridge  selected  as  a  standard  for  signal 
+amplitude  and  reference  field. 
+
+NOTE  ~  A  Master  Standard  (Computer  Amplitude  Reference)  Car- 
+tridge has  been  selected  by  the  US  National  Bureau  of  Standards 
+(NBS)  to  establish  the  reference  level  for  average  peak-to-peak  signal 
+amplitudes  when  recorded  at 
+
+-  252  ftpmm  (6  400  ftpi); 
+
+-  394  ftpmm  (10  000  ftpi). 
+
+Secondary  Standard  Amplitude  Reference  Tape  Cartridges  are 
+available  from  NBS  under  Part  Number  SRM  3217^'. 
+
+
+4.8  Standard  Reference  Annplitude  (SRA)  :  The  average 
+peak-to-peak  signal  amplitudes  of  the  Signal  Amplitude 
+Reference  Tape  Cartridge.  These  signal  amplitudes  shall  be 
+averaged  over  10  000  flux  transitions. 
+
+SRA252  is  the  average  peak-to-peak  signal  amplitude  when 
+recording  at  252  ftpmm  (6  400  ftpi)  using  the  appropriate  Test 
+Recording  Current. 
+
+SRA394  is  the  average  peak-to-peak  signal  amplitude  when 
+recording  at  394  ftpmm  (10  000  ftpi)  using  the  appropriate  Test 
+Recording  Current. 
+
+4.9  Average  Signal  Amplitude  :  The  average  peak-to-peak 
+value  of  the  signal  output  measured  over  at  least  8  000  con- 
+secutive flux  transitions. 
+
+4.10  in-contact  :  An  operating  condition  in  which  the 
+magnetic  surface  of  a  tape  is  in  physical  contact  with  a 
+magnetic  head. 
+
+4.11  track  :  A  longitudinal  area  of  the  tape  along  which  a 
+series  of  magnetic  signals  may  be  recorded. 
+
+4.12  physical  recording  density  :  The  number  of  recorded 
+flux  transitions  per  unit  length  of  track;  flux  transitions  per 
+millimetre  (ftpmm)  [flux  transitions  per  inch  (ftpi)]. 
+
+4.13  data  density  :  The  number  of  data  characters  stored 
+per  unit  length  of  tape;  characters  per  millimetre  (cpmm) 
+[characters  per  inch  (cpi)). 
+
+4.14  position  of  flux  transitions  :  That  position  which  ex- 
+hibits the  maximum  free  space  flux  density  normal  to  the  tape 
+surface. 
+
+4.15  Reference  Alignment  Tape  Cartridge  :  A  tape  car- 
+tridge containing  a  tape  on  which  continuous  information  has 
+been  recorded. 
+
+
+A  Reference  Alignment  Tape  Cartridge  is  optimized  for  perpen- 
+dicularity of  the  written  flux  transitions  to  the  cartridge  pos- 
+itioning plane. 
+
+4.16  recording  area  :  That  part  of  the  tape  satisfying  the  re- 
+quirements for  magnetic  properties. 
+
+4.17  erasing  field  :  A  field  of  sufficient  strength  to  remove 
+the  signals  from  the  tape. 
+
+
+5    Environment  and  transportation 
+
+5.1  Testing  environment 
+
+Tests  and  measurements  made  on  the  cartridge  to  check  the  re- 
+quirements of  this  part  of  ISO  8462  shall  be  carried  out  under 
+the  following  conditions  : 
+
+temperature  :  23  ±  2  °C  (73  ±  4  ^F); 
+
+relative  humidity  :  40  %  to  60  %; 
+
+conditioning  before  testing  :  24  h  min. 
+
+wet-bulb  temperature  :  18  °C  max.  (64  °F  max.) 
+
+5.2  Operating  environment 
+
+Cartridges  used  for  data  interchange  shall  be  operated  under 
+the  following  conditions  : 
+
+temperature  :  5  to  45  °C  (41  to  113  °F); 
+
+relative  humidity  :  20  %  to  80  % 
+
+wet-bulb  temperature  :  26  °C  max.  (79  °F  max.) 
+
+The  temperature  shall  be  measured  in  the  air  immediately  sur- 
+rounding the  cartridge.  Rapid  temperature  variations  should  be 
+avoided. 
+
+There  shall  be  no  deposit  of  moisture  on  or  in  the  cartridge. 
+
+5.3  Storage  environment 
+
+During  storage  it  is  recommended  that  recorded  cartridges  are 
+kept  within  the  following  conditions  : 
+
+temperature  :  5  to  45  "C  (41  to  113  °F); 
+
+relative  humidity  :  20  %  to  80  %; 
+
+wet-bulb  temperature  :  26  °C  max.  (79  "F  max.) 
+
+
+1)     NBS,  Office  of  Standard  Reference  Materials,  Room  311,  Chemistry  Building,  Gaithersburg,  MD  20899,  USA. 
+
+
+IS  12878  (  Parti  )  :  1989 
+ISO  8462/1  :  1986 
+
+
+5.4  Transportation 
+
+5.4.1  Transportation  environment 
+
+During  transportation,  the  cartridge  may  have  been  exposed  to 
+conditions  outside  the  operating  environment.  It  Is  recom- 
+mended that  the  following  conditions  are  not  exceeded  : 
+
+temperature  :  -40  to  45  °C  { -40  to  113  °F); 
+
+relative  humidity  :  20  %  to  80  %; 
+
+wet-bulb  temperature  :  26  °C  max.  (79  °F  max.) 
+
+5.4.2  Transportation  procedures 
+
+Responsibility  for  ensuring  that  adequate  precautions  are  taken 
+during  transportation  shall  be  with  the  sender.  For  transporta- 
+tion a  rigid  container  free  from  dust  or  extraneous  matter  shall 
+be  used.  The  final  package  shall  have  a  clean  interior  and  a  con- 
+struction preventing  ingress  of  dust  or  water.  It  is  recommend- 
+ed that  a  sufficient  space  exists  between  cartridge  and  outer 
+surface  of  the  final  container,  so  that  risk  of  damage  due  to 
+stray  magnetic  fields  will  be  negligible. 
+
+5.5  Conditioning  of  the  cartridge 
+
+Before  use  the  cartridge  shall  be  conditioned  by  exposure  to 
+the  operating  environment  for  a  time  at  least  equal  to  the  period 
+during  which  it  has  been  out  of  the  operating  environment  (up 
+to  a  maximum  of  8  h). 
+
+The  cartridge  shall  be  conditioned  by  running  the  tape  one 
+complete  end-to-end  pass  In  any  of  the  following  cases  : 
+
+a)  each  time  it  is  inserted  in  a  drive; 
+
+b)  after  prolonged  operation  over  a  limited  area; 
+
+c)  when  the  temperature  change  to  which  the  cartridge 
+has  been  exposed  is  greater  than  17  ''C  (30  °F). 
+
+5.6  Flannmability 
+
+Tape  or  cartridge  components  shall  be  made  from  materials 
+that,  if  ignited  from  a  match  flame,  do  not  continue  to  burn  in  a 
+still  carbon  dioxide  atmosphere. 
+
+5.7  Toxicity 
+
+Tape  or  cartridge  components  which  may  cause  bodily  harm  by 
+contact,  Inhalation  or  ingestion  during  normal  use  of  the  car- 
+tridge shall  not  be  used. 
+
+
+6    Characteristics  of  the  tape 
+6.1     Mechanical  properties 
+
+6.1.1     Tape  width 
+
+The  width  of  the  tape  shall  be 
+
+6,30  _  °  06  """  "O-^"^  "  -  OM:  5  '"' 
+
+
+NOTE  —  Although  the  tolerances  are  expressed  differently  in  the  two 
+measurement  systems,  the  dimensions  are  equivalent. 
+
+6.1.2  Tape  length 
+
+The  length  of  the  tape  between  the  LP  and  the  EW  markers 
+(see  6.1.4)  shall  be 
+
+137,0  -'^'^m   (450  -"J^  ft) 
+
+6.1.3  Tape  thickness 
+
+The  thickness  of  the  tape  and  of  its  coating  shall  be 
+
+—  overall  thickness  :  19  |Jm  max.  (0.000  75  in  max.) 
+
+—  coating  thickness  :  6,6  |Jm  max.  (0.000  26  in  max.) 
+
+6.1.4  Markers 
+
+In  the  tape  there  shall  be  a  number  of  markers,  the  relative  pos- 
+itions of  which  are  shown  in  figure  1 . 
+
+6.1.4.1  Beglnning-of-Tape  (BOT) 
+
+A  BOT  marker  shall  be  a  pair  of  circular  holes  punched  in  the 
+tape.  There  shall  be  three  such  markers,  the  innermost  of 
+which  is  used  for  the  purpose  of  identifying  the  storage  pos- 
+ition for  the  cartridge.  In  the  storage  position,  all  of  the  record- 
+ing area  shall  be  wound  on  the  supply  hub  and  shall  be  pro- 
+tected by  at  least  one  layer  of  tape.  The  two  other  markers  shall 
+be  used  to  ensure  reliability  of  detection  when  rewinding. 
+
+The  diameter  of  the  BOT  holes  shall  be  1,17  ±  0,05  mm 
+(0.046  ±  0.002  in). 
+
+6.1.4.2  End-of-Tape  (EOT) 
+
+An  EOT  marker  shall  be  a  single  circular  hole  punched  in  the 
+tape.  There  shall  be  three  such  markers  along  a  single  line.  The 
+first  to  pass  the  photo  sensor  during  forward  operation  in- 
+dicates that  the  recording  area  has  been  exceeded.  The  two 
+other  markers  shall  be  used  to  ensure  reliability  of  detection. 
+
+The  diameter  of  the  EOT  holes  shall  be  1,17  ±  0,05  mm 
+(0.046  +  0.002  in). 
+
+6.1.4.3  Load-Point  (LP) 
+
+The  LP  marker  shall  be  a  single  circular  hole  punched  in  the 
+tape  to  indicate  the  beginning  of  the  recording  area  in  the  for- 
+ward direction. 
+
+The  diameter  of  the  LP  hole  shall  be  1,17  ±  0,05  mm 
+(0.046  ±  0.002  in). 
+
+6.1.4.4  Early- Warning  (EW) 
+
+The  EW  marker  shall  be  a  single  circular  hole  punched  in  the 
+tape  for  the  purpose  of  indicating  the  approaching  end  of  the 
+recording  area  in  the  forward  direction.  Recording  shall  stop 
+before  the  EOT  marker  is  sensed. 
+
+The  diameter  of  the  EW  marker  shall  be  1,17  ±  0,05  mm 
+(0.046  ±  0.002  in). 
+
+
+IS  12878  (  Part  1  ) 
+ISO  84621  :  1986 
+
+
+1989 
+
+
+6.1.5  Light  transmittance 
+
+The  tape  shall  have  a  light  transmittance  of  less  than  0,5  % 
+measured  according  to  annex  A. 
+
+6.1.6  Tensile  yield  force 
+
+The  tensile  yield  force  of  the  tape,  defined  as  the  force  required 
+to  elongate  a  sample  by  3  %,  shall  be  6,7  N  min.  (1.5  Ibf  min.) 
+
+This  elongation  shall  be  measured  with  a  static  weighing  tester 
+at  a  constant  rate  of  grip  separation.  A  specimen  of  tape  of  at 
+least  178  mm  (7  in)  shall  be  clamped  with  an  initial  separation 
+of  102  mm  {4  in)  between  the  jaws.  This  specimen  shall  be 
+elongated  at  a  rate  of  51  mm/min  until  an  elongation  of  at  least 
+10  %  is  reached.  The  tensile  yield  force  is  the  force  required  to 
+produce  the  elongation  of  3  %. 
+
+
+6.1.7  Layer-to-layer  adhesion 
+
+Layer- to- layer  adhesion  shall  be  sufficiently  low  to  meet  the  re- 
+quirements of  the  test  given  in  annex  B. 
+
+6.1.8  Cupping 
+
+Cupping  is  the  departure  across  a  tape  (transversely  to  the  taF>e 
+motion)  from  a  flat  surface. 
+
+The  maximum  cupping  of  a  6,30  mm  (0.25  in)  long  length  of 
+tape  shall  not  exceed  0,38  mm  (0.015  in)  when  placed  concave 
+side  down  on  a  smooth,  flat  surface.  The  time  between  cutting 
+and  the  measurement  shall  be  at  least  1  h. 
+
+6.1.9  Leaders  and  splices 
+
+The  cartridge  shall  contain  no  splices  or  spliced-in  leaders. 
+
+6.1.10  Tape  wind 
+
+The  tape  shall  be  wound  on  the  hubs  with  the  magnetic  coating 
+on  the  outside,  and  in  such  a  way  that  during  forward 
+read/write  operations  the  tape  is  unwound  in  a  counter- 
+clockwise direction  viewed  from  above  as  shown  in  figure  2. 
+
+
+tape  under  testji.e.  either  the  read-whilst-write,  or  on  equip- 
+ment without  read-whilst-write  capability  on  the  first  forward- 
+read-pass)  on  the  same  equipment. 
+
+The  in-contact  condition  shall  be  used  for  all  tests. 
+
+6.3.1  Test  densities 
+
+The  test  densities  shall  be  252  ftpmm  (6  4(X)  ftpl)  and 
+394  ftpmm  (10  000  ftpi)  nominal.  The  densities  to  be  used  are 
+specified  for  each  test. 
+
+6.3.2  Test  tracks 
+
+The  test  tracks  shall  be  located  centrally  on  the  tape.  The  width 
+of  the  test  tracks  Is  not  specified;  it  shall  be  noted  and  used  for 
+calculating  Defect  Density  (see  6.3.6). 
+
+6.3.3  Typical  field 
+
+The  typical  field  of  the  tape  under  test  shall  be  within  ±  20  % 
+of  the  Reference  Field. 
+
+6.3.4  Average  Signal  Amplitude 
+
+When  a  tape  has  been  recorded  with  the  appropriate  Test 
+Recording  Current,  then  played  back  on  a  system  which  has 
+been  calibrated  by  means  of  a  Signal  Amplitude  Reference 
+Tape  Cartridge  recorded  under  the  same  conditions,  the 
+Average  Signal  Amplitude  of  the  tape  under  test  shall  be 
+
+-  at  252  ftpmm  (6  400  ftpi)  :  within  ±  25  %  of  SRA252; 
+
+-  at  394  ftpmm  (10  000  ftpi)  :  within  ±  25  %  of  SRA394. 
+
+6.3.5  Ease  of  erasure 
+
+When  a  tape  has  been  recorded  at  63  ftpmm  (1  600  ftpi)  with  a 
+recording  current  equal  to  150  %  of  the  Test  Recording  Current 
+for  252  ftpmm  (6  400  ftpi),  and  then  passed  through  a 
+longitudinal  steady  erasing  field  of  79  600  A/m  (1  000  Oe)  any 
+remaining  signal  shall  not  exceed  3  %  of  the  Standard 
+Reference  Amplitude  SRA252.  The  erasure  field  shall  be 
+reasonably  uniform,  for  example  the  field  in  the  middle  of  a 
+solenoid.  This  measurement  shall  be  made  with  a  band  pass 
+filter  passing  at  least  the  first  three  harmonics. 
+
+
+6.2    Elegtricat  surface  resistance 
+
+The  electrical  resistance  of  the  magnetic  surface  of  any  square 
+sample  of  tape  shall  be  within  the  range  of 
+
+5  X  105  to  109  Q 
+
+measured  between  electrodes  placed  on  two  opposite  sides  of 
+the  square,  using  a  voltage  of  500  ±  10  V. 
+
+
+6.3     Magnetic  properties 
+
+The  magnetic  properties  of  the  tape  are  defined  by  the  testing 
+requirements  given  below.  When  performing  the  tests,  the  out- 
+put or  resultant  signal  shall  be  measured  on  the  same  pass  for 
+both  the  Signal  Amplitude  Refarence  Tape  Cartridge  and  the 
+
+
+6.3.6    Defect  density 
+6.3.6.1     Definitions 
+
+6.3.6.1 .1  Threshold  Level  (TL)  :  The  TL  is  measured  relative 
+to  the  Standard  Reference  Amplitude  (SRA)  and  is  expressed 
+as  a  percentage  of  the  SRA. 
+
+6.3.6.1.2  Track  Width  (TW)  :  The  width  of  that  part  of  the 
+recorded  track  sensed  by  the  Read  Head. 
+
+6.3.6.1.3  tested  surface  area  :  That  surface  containing 
+recorded  signals,  exclusive  of  erased  gaps  or  other  non-used 
+recording  areas  where  errors  are  not  detectable. 
+
+It  is  the  product  of  TW  and  the  total  length  of  data  track  areas 
+tested. 
+
+
+IS  12878  (  Part  1  ) 
+ISO  8462/1  :1986 
+
+
+1989 
+
+
+6.3.6.1.4  Rejected  Region  :  Any  25,4  mm  (1  in)  length  of 
+tested  track  containing  one  or  more  missing  pulses.  Any  head- 
+to-tape  separation,  or  anomaly  in  the  oxide  surface,  which  pro- 
+duces a  loss  of  amplitude  of  the  playback  signal  below  TL  is  a 
+missing  pulse. 
+
+6.3.6.1.5  defect  density  :  The  total  number  of  Rejected 
+Regions  observed,  divided  by  the  tested  surface  area. 
+
+It  is  expressed  in  defects  per  square  millimetre,  D/mm^  (or 
+defects  per  square  inch,  D/in2). 
+
+6.3.6.1.6  Effective  Defect  Dianteter  (EDD)  :  The  EDO  Is 
+
+calculated  as  follows  : 
+
+EDD  =  (1  -  TL/IOOI  X  TW 
+
+6.3.6.2  Requirement 
+
+The  Defect  Density  shall  be  less  than,  or  equal  to, 
+
+0,034  1  X  e<-'3'3ECD;D/mm2[22  x  e'-^-oo)  D/in2] 
+
+6.3.6.3  Procedure 
+
+The  test  shall  be  carried  out  on  any  number  of  tracks  over  the 
+entire  length  of  the  Recording  Area  (6.3.7). 
+
+The  physical  recording  density  shall  be  394ftpmm 
+(lOOOOftpi). 
+
+The  recording  current  shall  be  the  Test  Recording  Current  for 
+394 ftpmm  (lOOOOftpi). 
+
+The  Threshold  Level  (TL)  shall  be  selected. 
+
+
+6.3.7    Recording  area 
+
+The  recording  area  shall  be  that  part  of  the  tape  tested  accord- 
+ing to  6.3.1  to  6.3.6.  In  the  forward  direction,  it  begins  at  least 
+686  mm  127  in)  before  the  LP  marker  and  ends  at  least  991  mm 
+(39  in)  after  the  EW  marker  (see  figure  1 )  and  extends  across 
+the  width  of  the  tape. 
+
+
+7    Characteristics  of  the  cartridge 
+
+7.1    General  description 
+
+The  cartridge  shall  be  of  a  twin  hub  coplanar  design  with  the 
+tape  and  hubs  completely  enclosed  by  the  casing,  except  for 
+the  belt  capstan  and  head  openings.  The  drive  shall  be  by 
+means  of  a  tensioned  belt  which  is  driven  by  the  Internal  belt 
+capstan  which  receives  motion  from  an  external  motor  (see 
+figure  2).  Tape  guides  shall  be  located  inside  the  cartridge.  A 
+clear  plastic  top  shall  allow  visual  monitoring  of  the  tape  and 
+shall  not  extend  beyond  the  base  except  at  the  notches. 
+
+
+7.1.1     Dinnension 
+
+The  dimefMions  of  the  cartridge  shall  be  as  shown  in  figure  3. 
+
+
+7.1.2  Cartridge  positioning  planes 
+
+The  cartridge  shall  be  referenced  to  the  drive  only  in  the  cross- 
+hatched  areas  shown  in  figure  4,  The  application  of  forces  sug- 
+gested in  figure  4  is  one  method  of  assuring  conformance  of 
+the  cartridge  to  the  positioning  plane. 
+
+7.1.3  Attachment 
+
+The  ends  of  the  tape  shall  not  be  attached  to  the  hubs. 
+
+7.1.4  Mounting  position 
+
+It  shall  be  possible  to  mount  the  cartridge  in  the  drive  in  one 
+position  only;  to  ensure  this,  the  cartridge  shall  have  the  follow- 
+ing asymmetrical  features  (see  figure  3)  : 
+
+a)  a  projection  in  one  guide  slot; 
+
+b)  the  guide  slots  shall  be  accessible  on  the  head  opening 
+edge  only. 
+
+7.1.5  Light  sensing 
+
+The  cartridge  shall  contain  optical  elements  to  permit  photo- 
+electric detection  of  the  tape  markers  (see  figure  5).  The  total 
+light  transmittance  of  both  cover  windows,  including  the  ef- 
+fects of  reflection  from  the  mirror  surface,  sensed  by  a  silicon 
+photo-transistor  shall  be  at  least  50  %    (see  annex  A). 
+
+This  requirement  shall  be  satisfied  for  both 
+
+—  a  2  000  ±  200  K  incandescent  light  source,  and 
+
+—  a  940  ±  5  nm  LED  light  source. 
+
+7.1.6  Cartfidge-ln-position  sensing 
+
+The  cartridge  shall  have  a  solid  area  on  the  front  surface  the 
+dimensions  of  which  are  shown  in  figure  6.  This  area  shall  be 
+used  for  mechanically  sensing  that  the  cartridge  is  in  position 
+for  writing  and  reading. 
+
+7.1.7  Cartridge  door 
+
+The  cartridge  shall  have  a  door  for  protection  of  the  tape  during 
+storage  and  transportation.  Requirements  for  opening  the  door 
+are  shown  in  figure  7. 
+
+7.2    File  protection 
+
+The  cartridge  shall  have  a  rotatable  plug  to  prevent  writing  or 
+erasure  of  the  tape.  See  figure  6  for  the  file  protect  plug  loca- 
+tion. 
+
+
+7.3     Physical  labels 
+
+7.3.1     Location  and  size 
+
+The  rear  surface  of  the  cartridge  and  a  part  of  the  top  side  of 
+the  cartridge  shall  allow  the  use  of  labels  (see  figure  8). 
+
+
+IS  12878  (  Parti  ) 
+ISO  8462/1  :  1986 
+
+
+1989 
+
+
+7.3.2     Interchange 
+
+Labels  shall  be  used  for  marking  the  contents  of  cartridges.  The 
+use  of  pencil  or  erasable  material  is  not  permitted. 
+
+7.4    Tape  guides 
+
+The  tape  shall  be  guided  by  two  tape  guides  contained  within 
+the  cartridge  (see  figure  91.  The  drive  shall  not  contain  any 
+elements  that  might  restrict  the  tape  path  in  the  transverse 
+direction. 
+
+
+7.11.2  Requirement 
+
+The  natural  resonant  frequency  shall  be  at  least  60  Hz. 
+
+7.11.3  Procedure 
+
+A  drive  capable  of  producing  a  pronounced  overshoot  of  the 
+tape  speed  should  be  used.  The  drive  servo  should  be  critically 
+damped  so  that  the  overshoot  observed  is  not  that  of  the  drive. 
+The  reciprocal  of  the  time  measured  between  the  first  two  over- 
+speed  peaks  is  the  natural  resonant  frequency. 
+
+
+7.5  Speed 
+
+The  cartridge  shall  be  capable  of  use  at  any  nominal  tape  speed 
+in  the  range  of  0,76  m/s  (30  in/s)  to  2,29  m/s  (90  in/s). 
+
+NOTE  —  When  using  the  higher  speeds  reliable  data  transfer  is 
+specially  dependent  on  the  careful  design  of  the  head-to-tape  contact. 
+
+7.6  Instantaneous  speed  variation  (ISV) 
+
+An  Instantaneous  Speed  Variation  Event  is  said  to  have  occur- 
+red when  the  residual  Time  Displacement  Error  (TDE)  exceeds 
+156  ns  when  measured  at  0,76  m/s  (30  in/s)  and  252  ftpmm 
+(6  400  ftpi).  The  number  of  ISV  events  shall  be  a  matter  for 
+agreement  between  the  parties  concerned. 
+
+See  annex  C  for  the  method  of  test. 
+
+
+7.12    Tape  tension 
+7.12.1     Definitions 
+
+7.12.1.1  tape  tension  :  The  resultant  force  in  the  longitudi- 
+nal direction  of  the  tape  on  a  cross-section  of  the  tape  taken 
+through  the  tape  perpendicular  to  the  longitudinal  direction. 
+
+7.12.1.2  instantaneous  tension  :  The  force  as  measured  at 
+the  cross-section  of  the  tape  located  at  the  head  position  of  the 
+free  tape  path  and  averaged  over  10  ms. 
+
+7.12.1.3  average  tension  (at  a  point  along  the  length  of  the 
+tape)  :  The  average  value  of  instantaneous  tension  measured 
+over  1  m  (3  ft)  of  tape  symmetrically  located  around  that  point. 
+
+
+7.7  Low-frequency  speed  variation 
+
+The  speed  variation  due  to  the  sum  of  the  components  of  the 
+rate  of  change  of  speed  in  the  range  0  to  1  000  Hz  shall  not  ex- 
+ceed 4  %  of  the  nominal  speed. 
+
+7.8  Acceleration 
+
+The  cartridge  shall  be  capable  of  withstanding  acceleration  and 
+deceleration  of  the  linear  tape  speed  of  50,8  m/s2  (2  000  in/s^). 
+
+7.9  Driving  force 
+
+The  tangential  force  required  at  the  external  driving  surface  of 
+the  belt  capstan  to  maintain  a  constant  operating  speed  shall  be 
+1,0  ±  0,<3  N  (3.5  ±  1.0  ozf).  The  external  radial  load  applied  to 
+the  belt  capstan  when  making  this  measurement  Shalt  be 
+5,6  ±  0,6  N  (20  ±  2  ozf). 
+
+7.10  Total  inertia 
+
+The  total  equivalent  mass  of  all  moving  cartridge  elements, 
+when  measured  at  the  external  driving  surface  of  the  capstan, 
+shall  be  0,022  kg  max.  (0.002  ozf-s^/in  max.). 
+
+7.11  Dynamic  response 
+
+7.11.1     Definition 
+
+The  speed  response  of  tape  motion  to  a  step  driving  function 
+applied  to  the  belt  capstan. 
+
+
+7.12.1.4  dynamic  tape  tension  (at  a  point  along  the  length 
+of  the  tape)  :  The  maximum  variation  of  instantaneous  tension 
+over  the  1  m  (3  ft)  of  tape  symmetrically  located  around  that 
+point. 
+
+7.12.1.5  transverse  tape  tension  variation  :  That  variation 
+across  the  tape  produced  by  the  difference  in  free  tape  path 
+length  between  the  two  edges  of  the  tape. 
+
+
+7.12.2     Requirements 
+
+7.12.2.1  Value  of  instantaneous  tension 
+
+a)  In  the  testing  environment  the  instantaneous  tension  at 
+any  point  along  the  length  of  the  tape  between  LP  and  EW 
+shall  be  between  0,28  N  (1.0  ozf)  and  0,98  N  (3.5  ozf). 
+
+b)  In  the  operating  environment  the  instantaneous  tension 
+shall  be  between  0,14  N  (0.5  ozf)  and  1,12  N  (4.0  ozf). 
+When  the  temperature  is  brought  back  to  that  of  the  testing 
+environment  the  requirements  of  a)  shall  be  met. 
+
+7.12.2.2  Value  of  dynamic  tension 
+
+The  dynamic  tension  at  any  point  along  the  length  of  the  tape 
+between  LP  and  EW  shall  not  exceed  0,21  N  (0.75  ozf). 
+
+7.12.2.3  Requirement  for  transverse  tension  variation 
+
+The  test  rod  shall  not  deviate  from  the  horizontal  by  more  than 
+4°  at  any  point  along  the  length  of  tape  from  LP  to  EW. 
+
+
+IS  12878  (Parti  )  :  1989 
+ISO  8462/1  -1986 
+
+
+7.12.3     Procedures 
+
+For  test  procedures  see  annex  D. 
+
+7.13    Drive  ratio 
+
+The  ratio  of  the  tape  speed  to  the  surface  speed  of  the  external 
+driving  surface  of  the  belt  capstan  shall  be  0,76  ±  0,02. 
+
+
+7.14    Tape  path  length 
+
+The  cartridge  shall  be  used  with  drives  causing  an  increase  of 
+the  tape  path  length  in  the  range  0,38  mm  (0.015  in)  to 
+1,40  mm  (0.055  in). 
+
+NOTE  —  The  length  of  the  tape  path  is  the  length  of  the  straight 
+tangent  common  to  the  tape  guides  when  the  cartridge  is  not  mounted 
+in  the  drive.  It  is  measured  between  the  two  contact  points  of  the  tape 
+with  the  guides.  When  the  cartridge  is  mounted  in  the  drive,  the  head 
+and/or  other  parts  of  the  drive  provoke  an  increase  of  this  tape  path 
+length  which  affects  the  initial  tape  tension. 
+
+
+7.15    Dynamic  tape  skew 
+
+Dynamic  tape  skew  is  the  variation  of  the  angle  that  the 
+centreline  of  the  tape  makes  with  Reference  Plane  B.  It  shall 
+not  exceed  7'  of  arc. 
+
+Measurement  :  Write  flux  transitions  simultaneously  on  two 
+test  tracks  over  the  entire  recording  area  of  the  tape  at  a 
+speed  V. 
+
+Using  the  same  two  gaps,  read  the  tape  in  the  fonward  and 
+reverse  directions,  measuring  the  time  differences  between  cor- 
+responding flux  transitions. 
+
+The  maximum  time  difference  /  and  the  distance  d  between  the 
+centrelines  of  the  two  test  tracks  shall  be  used  to  calculate  the 
+dynamic  tapie  skew  as  follows  : 
+
+
+arc  tan 
+
+
+d 
+
+
+<  T 
+
+
+7.16    Electrical  resistance  of  the  belt  capstan 
+
+The  electrical  resistance  of  the  belt  capstan  shall  not  exceed 
+1  MQ  when  measured  using  the  test  equipment  and  test  pro- 
+cedure described  in  annex  E. 
+
+
+Physical  end 
+of  the  tape 
+
+
+Recording  area 
+
+
+991  min. 
+
+
+686  mm 
+
+
+Dimensions  in  iniiitmetres 
+Physical  beginning 
+
+H110.12  lEI  °^ ^^^ t3P« 
+
+
+EWi 
+
+
+^ 
+
+
+LP 
+
+
+BOT 
+
+
+EOTi     EOTI     EOT 
+
+-0    ^-^ 
+
+
+■381mink67t76jWt^j_^     ^2^9t%_  \ 
+
+
+w.oVm 
+
+
+BOT 
+
+
+BOT 
+
+
+<&<>^   €h^ 
+
+
+e-  -e- 
+
+
+914i76 
+
+
+457i76 
+
+
+457l76 
+
+
+381  min 
+
+
+Physical  end 
+of  the  tape 
+
+
+Forward  direction  of  tape  movement  i 
+Figure  la)  —  Position  of  the  markers  and  recording  areas  (magnetic  surface  shown) 
+
+Recording  area 
+
+
+39  min. 
+
+
+27  min. 
+
+
+EOT]     EOTi     EOT^    , 
+
+
+m  ^ 
+
+
+ISmin. 
+
+
+18l3    i    18i3 
+
+
+Dimensions  in  inches 
+Physical  beginning 
+
+
+Forward  direction  of  tape  movement  I 
+Figure  lb!  —  Position  of  the  markers  and  recording  areas  (magnetic  surface  shown) 
+
+
+•    T3 
+
+
+S 
+
+
+IS  12878  (  Parti  )  :1989 
+ISO  8462/1  :  1986 
+
+
+Rubber-covered 
+drive  roller 
+
+
+Drive  motor 
+
+
+Mirror 
+
+
+-Beltguide  rollers  (2) 
+-  Supply  hub 
+
+
+Flat  drive  belt 
+
+
+Take-up  hub 
+
+
+Baseplate 
+
+
+File  protect 
+
+
+Tape  path 
+(oxide  out) 
+
+
+Fixed  tape 
+guides  {2] 
+
+
+Light  sensing 
+
+
+Direction  of  forward 
+tape  motion 
+
+
+Figure  2  -  Cartridge  diagram 
+
+
+11 
+
+
+IS  12878  (Parti  )  :  1989 
+ISO  8462/1  :1986 
+
+
+Dimensions  in  millimetres 
+
+
+The  cover  may  extend  beyond  the 
+baseplate  by  0,25  max.  on  any  side 
+
+
+Guide  slot 
+projection 
+
+
+Tolerance  except  as 
+noted  ±0,12 
+
+
+Figure  3a)  —  Cartridge  dimensions 
+
+
+12 
+
+
+IS  12878  (Parti  )  :  1989 
+ISO  8462/1  :1986 
+
+
+Dimensions  in  inches 
+
+
+The  cover  may  extend  beyond  the 
+baseplate  by  0.010  max.  on  any  side" 
+
+
+Guide  slot 
+projection 
+
+
+Tolerance  except  as 
+noted  ±  0.005 
+
+
+Figure  3b)  —  Cartridge  dimensions 
+
+
+13 
+
+
+IS  12878  (Parti  )  :  1989 
+ISO  8462/1  :  1986 
+
+
+Dimensions  in  millimetres 
+
+
+nj  0,25     B 
+
+
+Tolerance  except  as 
+noted  ±0,12 
+
+
+Figure  4a)  —  Cartridge  locating  pAanes 
+
+
+14 
+
+
+IS  12878  (  Parti  )  :  1989 
+ISO  8462/1  :1986 
+
+
+Dimensions  in  inches 
+
+
+0.Q10    B 
+
+
+Tolerance  except  as 
+noted  ±  0.005 
+
+
+Figurt  4b)  —  Cartridg*  locating  pianos 
+
+
+15 
+
+
+IS  12878  (  Parti  )  :  1989 
+ISO  8462/1  :  1986 
+
+
+Dimensions  in  millimetrej 
+
+
+Min-or  surface 
+Optically  clear 
+
+
+Light  source 
+
+
+Tolerance  except  as 
+
+noted  ±0,12 
+
+
+Figure  5a)  -  Light  sensing 
+
+
+16 
+
+
+IS  12878  (  Parti  }  :  1989 
+ISO  8462/1  :1986 
+
+
+Dimensions  in  inches 
+
+
+Tolerance  except  as 
+noted  ±  0.005 
+
+
+g: 
+
+
+Figur-'  5b)  --  Light  sensing 
+
+
+17 
+
+
+IS  12878  (  Part  1  )  :  1989 
+ISO  8462/1  :  1986 
+
+
+Dimensions  in  millimetres 
+
+
+Maximum  height  of 
+file  protect  plug 
+
+
+54,36 
+
+
+Kb] 
+
+
+Ca  rtridge-in-  position 
+'  sensing  area 
+
+
+Writing  prohibited  Writing  permitted 
+
+
+K^ 
+
+
+Tolerance  except 
+as  noted  ±0,12 
+
+
+Figure  6a)  —  File  protect  and  cartridge-in-poaition  sensing 
+
+
+18 
+
+
+tS  12878  (  Parti  )  :  1989 
+ISO  8462/1  :1986 
+
+
+Dimensions  in  inches 
+
+
+Maximum  height  of 
+file  protect  plug 
+
+
+Writing  prohibited        Writing  permitted 
+
+
+ToJerance  except 
+as  noted  ±  0.005 
+
+
+Figure  6b)  -  Fi!e  protect  and  cartridge-in-potition  sensing 
+
+
+19 
+
+
+IS  12878  (Parti  )  :  1989 
+ISO  8462/1  :  1986 
+
+
+Dimensions  in  mitlimetres 
+
+
+B 
+
+
+9,14 
+
+
+zx 
+
+
+T 
+
+
+B 
+
+
+Figure  7a)  —  Cartridge  door  profile 
+
+
+Tolerance  ±  0,12 
+
+
+20 
+
+
+IS  12878  (  Parti  )    1989 
+ISO  8462/1  :  1986 
+
+
+Dimensions  in  inches 
+
+
+I 
+
+B 
+
+
+0.360 
+
+
+I 
+
+B 
+
+
+Figure  7b)  —  Cartridge  door  profile 
+
+
+Tolerance  ±  0.005 
+
+
+21 
+
+
+IS  12878  (  Parti  )  :  1989 
+ISO  8462/1  :1986 
+
+
+Dimensions  in  millimetres 
+
+
+Figure  8a)  —  Label  area 
+
+
+Tolerance  ±0,12 
+
+
+22 
+
+
+IS  12878  (  Parti  )  :  1989 
+ISO  8462/1  :  1986 
+
+
+Dimensions  in  inches 
+
+
+® 
+
+
+1 
+
+
+a 
+
+
+Tolerance  ±  0.005 
+
+
+Figure  8b)  —  Label  area 
+
+
+23 
+
+
+IS  12878  (Parti  )  :  1989 
+ISO  8462/1  :1986 
+
+
+Dimensions  in  millimetres 
+
+
+0,10  max.  clearance  of 
+narrowest  tape  in  widest  guide 
+
+
+Figure  9a)  ~  Tape  path  and  drive  dimensions 
+
+
+Tolerance  except  as 
+noted  +0,12 
+
+
+24 
+
+
+IS  12878  (  Parti  )  :  1d89 
+ISO  8462/1  :  1986 
+
+
+Dimensions  in  inches 
+
+
+0.004  max.  clearance  of 
+narrowest  tape  in  widest  guide 
+
+
+a 
+
+
+Figure  9b)  —  Tape  path  and  drive  dimensions 
+
+
+Tolerance  except 
+as  noted  ±0.005 
+
+
+25 
+
+
+IS  12878  {  Part  1  )  :  1989 
+ISO  8462/1  :  1936 
+
+
+Annex  A 
+Measurement  of  light  transmittance 
+
+(This  annex  forms  part  of  the  standard.) 
+
+
+A.O     Introduction 
+
+Clauses  A.I  and  A. 2  outline  the  generat  principle  of  a. test 
+device  and  test  method  for  maasuring  the  radiation  (light) 
+transmittance  of  magnetic  tape  for  each  of  two  radiation 
+sources. 
+
+For  the  purpose  of  this  part  of  ISO  8462  "light  transmittance" 
+is  defined  by  convention  as  the  relationship  between  the 
+reading  obtained  from  the  test  device  with  the  tape  sample  in- 
+serted and  the  reading  obtained  when  no  sample  is  present. 
+The  transmittance  value  is  expressed  as  the  percentage  ratio  of 
+the  two  readings. 
+
+The  essential  elements  of  the  test  device  are 
+
+the  radiation  sources; 
+
+the  optical  path; 
+
+the  measuring  mask; 
+
+the  photocell; 
+
+the  measuring  equipment. 
+
+
+A.I     Description  of  the  test  device 
+
+A.1.1     Radiation  sources 
+
+A  tungsten  lamp  shall  be  used  as  one  radiation  (light)  source 
+and  should  be  operated  in  an  under-run  state.  The  colour 
+temperature  should  be  2  000  +  200  K  and  a  resulting  illumina- 
+tion at  the  surface  of  the  tape  sample  of  about  5  000  Ix  is 
+recommended. 
+
+A  light-emitting  diode  is  used  as  the  second  radiation  source. 
+The  output  wavelength  shall  be  940  ±  50  nm. 
+
+A.  1.2    Optical  path 
+
+The  radiation  should  be  perpendicular  to  the  tape  sample  and 
+be  of  substantially  uniform  intensity.  Typically  the  tape  sample 
+should  be  separated  from  the  source  by  a  distance  of  150  mm. 
+
+An  intermediate  mask  of  the  form  shown  in  figure  10  is  recom- 
+mended in  order  to  sensibly  ensure  that  scattered  radiation 
+does  not  enter  the  mask  area. 
+
+A. 1.3    Measuring  mask  geometry 
+
+The  measuring  mask  shall  be  constructed  in  one  piece  as 
+shown  in  figure  11 .  A  good  matt  black  finish  capable  of  absorb- 
+ing infra-red  radiation  is  necessary. 
+
+Special  care  shall  be  taken  to  ensure  that  the  tape  sample  to  be 
+measured  is  maintained  flat  in  contact  with  the  inner  face  of  the 
+mask. 
+
+
+A.  1.4    Photocell 
+
+A  flat  silicon  photocell  should  be  used.  Its  dimensions  shall  be 
+such  that  the  active  area  of  the  photocell  exceeds  the  diameter 
+of  the  mask  orifice.  It  should  be  mounted  parallel  and  In  close 
+proximity  to  the  outer  face  of  the  mask. 
+
+A.I. 5    Measuring  equipment 
+
+The  measuring  equipment  should  be  connected  directly  across 
+the  photocell  to  measure  the  output  current.  In  order  to  be  able 
+to  set  the  measuring  equipment  to  full-scale  deflection  (100  %) 
+a  shunt  potentiometer  in  the  circuit  shall  be  provided  or  a  fine 
+adjustment  of  the  lamp  power  supply  voltage  is  required. 
+
+The  load  impedance  across  the  photocell  should  be  as  low  as 
+possible  and  shall  not  exceed  500  Q.  The  instrument  should 
+have  a  nominal  accuracy  of  ±  0,05  %. 
+
+
+A.2    Test  procedure 
+
+A.2.1  For  the  purpose  of  the  test  use  a  sample  strip  of  tape 
+not  shorter  than  250  mm  (10  in), 
+
+Set  the  measuring  equipment  to  full-scale  reading  (100  %). 
+
+Insert  the  sample  strip  and  record  45  observations  on  different 
+points  along  the  sample. 
+
+Then  withdraw  the  sample  strip  and  re-check  the  full-scale 
+deflection  (100  %).  If  the  reading  lies  outside  the  range  of  99  % 
+to  101  %  reset  the  equipment  to  100  %  and  record  a  new  set  of 
+45  observations. 
+
+
+A. 2.2  A  statistical  maximum  value  of  light  transmittance 
+shall  be  determined  using  the  following  formula  : 
+
+T  =  X  +  K  -x  G 
+
+where 
+
+X    is  the  mean  value  of  n  observations; 
+
+a    is  the  accurate  estimate  of  the  lot  standard  deviation; 
+
+K    is  the  constant  specified  by  the  selected  plan  of  inspec- 
+tion; 
+
+n    is  the  number  of  observations  on  the  sample  specified 
+by  the  selected  plan  of  inspection. 
+
+The  T  value,  as  calculated  above,  shall  be  used  where  inspec- 
+tion of  lots  of  tape  is  by  variables.  Lot  quality  is  judged  in  terms 
+of  percent  defective  and  acceptance  is  lot  by  lot. 
+
+
+26 
+
+
+IS  12878  (Parti  )  :  1989 
+ISO  8462/1  :  1986 
+
+
+The  plan  is  based  upon  single  sampling  {with  a  known)  and 
+gives  an 
+
+-  Acceptable  Quality  Level  (AQL)  of  0,5  %  defective, 
+and  a 
+
+-  lot  Tolerance  Percent  Defective  (LTPD)  of  1,26  %. 
+
+The  selected  plan  has  a  sample  size  letter  of  0  and  gives  the 
+values  for 
+
+K  -  2,33  and 
+
+fj  -  45i> 
+
+If  7  <  Tmax.  the  lot  is  accepted;  If  7"  >  7  max.  the  lot  is  re- 
+jected (where  T  max.  is  the  maximum  value  of  transmit- 
+tance  permitted). 
+
+
+A. 3     Guidance  on  construction 
+
+A. 3.1  Experience  has  shown  that  a  projector  lamp  is  most 
+suited  as  the  tungsten  source.  When  selecting  a  lamp,  care 
+shall  be  taken  to  avoid  a  lamp  with  optical  inhomogeneitles  in 
+the  glass  envelope.  Also,  if  mirrors  or  lenses  are  used  in  the  op- 
+tical path,  they  shall  be  placed  so  that  no  filament  image  occurs 
+in  the  proximity  of  the  mask  and  photocell  area.  Radiation 
+sources  shall  be  operated  from  a  stabilized,  regular  power 
+supply. 
+
+
+A. 3. 2  Special  attention  shall  be  paid  to  all  surfaces  parallel  to 
+the  optica!  path  and  in  close  proximity  to  the  mask  and 
+photocell  to  avoid  reflection  of  light.  Similarly,  the  method  of 
+Inserting  the  tape  shall  ensure  that  no  ambient  light  breaks 
+through  any  slot  arrangement. 
+
+
+A. 3. 3  The  accuracy  of  the  measurement  is  dependent  not 
+only  on  attaining  the  dimensional  tolerances  shown  in 
+figure  10,  but  also  on  the  subsequent  coating  of  the  surfaces 
+with  a  high  quality  optical  matt  black  paint.  The  mask  should  be 
+checked  after  coating  to  ensure  that  the  small  hole  remains 
+within  the  tolerance.  The  method  of  holding  the  sample  shall  be 
+such  that  the  tape  is  maintained  flat  in  contact  with  the  face  of 
+the  mask.  However,  it  shall  allow  the  sample  to  be  moved 
+without  physical  damage  or  distortion. 
+
+A.3.4  The  photocell  shall  be  mounted  with  care,  taking 
+special  precaution  that  the  photocell  leads  do  not  interfere  with 
+the  mounting  arrangement.  It  is  advisable  that  the  face  of  the 
+photocell  presses  slightly  on  the  outer  face  of  the  mask. 
+
+
+A. 3.5  An  effective  means  of  providing  periodical  calibration 
+should  be  incorporated  by  inserting  an  opaque  object  *or  0  % 
+light  transmittance  and  a  filter  glass  for  75  %  light  transmit- 
+tance. 
+
+
+A.3.6     The  test  device  should  be  cleaned  periodically. 
+
+
+Photoelectric  cell 
+
+
+Measuring  mask 
+
+
+d^s   150mm(5.9inl 
+
+
+Figure  10  —  Measuring  device 
+
+
+1}     A.H.  Bowker,  H.P.  Goode :  "Samp/ing  Inspection  by  Variables",  McGraw  Hill  1952. 
+
+
+27 
+
+
+IS  12878  (  Parti  )  :  1989 
+ISO  8462/1  :1986 
+
+
+Dimensions  in  millimetres 
+
+
+Inner  face 
+
+
+Outer  face 
+
+
+*  Length  determined  by  user 
+
+
+Groove  for  frontslde  connection  wire 
+of  photocell  (If  required) 
+
+
+Dimensions  in  inches 
+
+
+0.315  0 
+
+
+Inner  face 
+
+
+Outer  face 
+
+
+Length  determined  by  user 
+
+
+Groove  for  frontside  connection  wire 
+of  photoelectric  cell  (if  required) 
+
+
+Figure  11  —  Measuring  mask 
+
+
+28 
+
+
+IS  12878  (  Parti  ) 
+ISO  8462/1  :1986 
+
+
+1989 
+
+
+Annex  B 
+
+
+Layer-to-layer  adhesion 
+
+{This  annex  forms  part  of  the  standard.) 
+
+
+The  procedure  for  testing  the  tape  for  layer- to- layer  adhesion  is 
+as  follows  : 
+
+A  piece  of  the  tape  to  be  tested,  about  1  m  (39  in)  in  length, 
+shall  be  wound  around  a  glass  pipe,  36  mm  (1.42  in)  in 
+diameter,  with  a  tension  of  3  N  (0.67  Ibf)  and  fixed  at  the  end. 
+
+
+This  shall  be  stored  for  24  h  at  a  temperature  of  45  ±  3  °C 
+(113  ±  5  °F)  and  at  a  relative  humidity  of  80  %.  After  this 
+period  it  shall  be  stored  for  another  24  h  In  the  testing  environ- 
+ment specified  in  5.1.  The  tape  shall  then  be  unwound  with  a 
+mass  of  8,3  g  (0.29  oz)  at  the  end  of  the  tape  as  shown  below, 
+and  the  angle  (0)  shall  be  smaller  than  45°. 
+
+
+8,3  gf 
+(0.29  oz) 
+
+
+Figure  12  —  Test  for  layer-to-layer  adhesion 
+
+
+29 
+
+
+IS  12878  (Parti  )  :  1989 
+\SO  8462/1  :  1986 
+
+
+Annex  C 
+Instantaneous  speed  variation 
+
+(This  annex  forms  part  of  the  Standard.) 
+
+
+C.I     General 
+
+When  a  tape  is  recorded  at  constant  frequency,  Fq,  and  played 
+back,  the  frequency  of  the  covered  signal  will  not  be  constant 
+but  will  in  general  be  Fq  ±  AF. 
+
+AF/Fq  is  defined  as  instantaneous  Speed  Variation  (ISV)  and 
+can  be  resolved  into  a  series  of  frequency  components /i,  /2, 
+.■.,ffc,  sach  of  magnitude  ofi,  02,  ■■■,  (Xk>  i-©-  : 
+
+
+2\  «f  sir*  27t/,7 
+
+
+/  =  1 
+
+
+Due  to  this  ISV,  any  flux  transition  will  not  be  in  its  expected 
+time  location,  but  wilt  exhibit  a  shift  (Ar).  This  shift  is  defined 
+as  Time  Displacement  Error  (TDE).  It  can  be  shown  that,  for 
+any  given  component  of  ISV,  the  resultant  TDE  is 
+
+2^sin2n/,r 
+
+with  a  peak  value  of 
+
+A  data  separator  phase-locked  loop  will  normally  follow  the 
+TDE  and  reduce  it  to  some  residual  value  (Residual  TDE).  The 
+degree  of  reduction  (suppression)  is  equal  to  (1  +  G),  where  G 
+is  the  open-loop  gain  at  the  frequency  of  interest. 
+
+Hence,  Residual  TDE  for  a  given  frequency  is 
+1 
+
+
+TDEo  = 
+
+
+a, 
+
+
+2nfi  1  +  G, 
+
+For  the  purpose  of  defining  allowable  TDE  for  interchange,  a 
+standard  phase-locked  loop  gain  of  the  form 
+
+
+-i^K--.^ 
+
+
+is  established,  leading  to  a  suppression  function  of 
+
+fnl 
+
+
+""  '-^f*(F 
+
+
+The  magnitude  of  the  suppression  function  is 
+
+Jn) 
+
+
+1 
+
+1  +  G 
+
+
+1  - 
+
+
+■-^0 
+
+
+This  is  shown  as  a  function  of  frequency  in  figure  14  : 
+/.  =  Fq/M 
+
+NOTES 
+
+1  For  tape  speeds  other  than  0,76  m/s  (30  in/s),  the  natural  fre- 
+quency of  the  loop  may  be  scaled  linearly. 
+
+2  The  maximum  allowable  single-frequency  ISV  which  would  result 
+in  a  value  of  TDE  within  the  specification  is  shown  in  figure  15. 
+
+C.2    Test  circuit 
+
+The  standard  loop  (see  figure  13)  shall  be  designed  as  follows  : 
+K^K2 
+
+
+C/?2   = 
+
+
+=  (2n/„)2=  1,25  X  109 
+1 
+
+
+27C  X  4  X   103 
+
+
+1 
+
+
+TDEouT  =  ~^     s/V 
+/o  =  96  kHz 
+
+
+C.3    fVletiiod  of  test 
+
+Record  the  tape  with  a  constant  recording  density  of 
+252  ftpmm  (6  400  ftpi)  full  length  on  two  tracks. 
+
+Read  the  tape  signals  at  0,76  m/s  (30  in/s),  using  the  square 
+wave  output  from  the  read  channel  connected  to  the  input  of 
+the  standard  loop. 
+
+Count  the  TDE  events  which  exceed  156  ns  [3  %  of  the 
+nominal  cell  time  at  252  ftpmm  (6  400  ftpi)]. 
+
+TDE  events  within  12,7  mm  (0.5  in)  shall  be  considered  as  a 
+single  event.  TDE  events  caused  by  missing  pulses  shall  be  ig- 
+nored. 
+
+
+30 
+
+
+IS  12878  (Parti  )  :  1989 
+ISO  8462/1  :  1986 
+
+
+Input 
+
+
+Phase  comparator 
+
+
+V/flux  transition  spacing 
+
+
+Voltage- controlled 
+oscillator 
+
+
+/C2(Hz/V) 
+
+IQ     (Centre  frequency) 
+
+
+=OUT 
+
+
+Figure  13  —  Standard  loop 
+
+
+0 
+
+
+10 
+
+
+10 
+
+
+"  20 
+
+» 
+
+"S. 
+
+§30 
+
+
+c 
+
+
+UO 
+
+
+50 
+
+
+60 
+
+
+70 
+
+
+Frequency,  Hz 
+
+10^  10^  10' 
+
+
+10^ 
+
+
+1 — 1 — 1   1  1  1  1 1 
+
+1 r — r   1  1  1  r  I 
+
+1 r I    rTT^ 
+
+■-      '  "1 1 — 1    1  r  r  n 
+
+- 
+
+/ 
+
+- 
+
+- 
+
+/ 
+
+- 
+
+- 
+
+/ 
+
+.- 
+
+- 
+
+/ 
+
+- 
+
+- 
+
+/ 
+
+- 
+
+- 
+
+/ 
+
+- 
+
+Figure  14  —  Suppression  function 
+
+
+31 
+
+
+IS  12878  (  Parti  )  :  1989 
+ISO  8462/1  :  1986 
+
+
+> 
+
+(0 
+
+
+I  1,0 
+
+CO 
+
+E 
+
+
+0,1 
+
+
+Figure  15  —  Maximum  allowable  ISV 
+
+
+32 
+
+
+IS  12878  (Parti  )  :  1989 
+ISO  8462/1  :198G 
+
+
+Annex  D 
+Tape  tension 
+
+(This  annex  forms  part  of  the  standard. 
+
+
+D.I     Test  procedure  for  measuring 
+instantaneous  tension 
+
+D.1.1     Conditioning 
+
+Condition  the  tape  before  testing  by  winding  at  2,29  m/s 
+(90  in/s)  from  BOT  to  EOT,  and  back  to  BOT. 
+
+D.1.2    Tape  speed 
+
+The  tape  speed  during  testing  shall  be  0,76  m/s  (^  in/s) 
+
+D.I. 3    Position  of  the  measuring  transducer 
+
+The  measuring  transducer  shall  be  positioned  at  the  point  along 
+the  free  tape  path  at  which  the  head  would  be  located  if  the 
+cartridge  were  mounted  in  a  drive. 
+
+When  inserted  in  the  tape  path  it  shall  cause  an  increase  in  the 
+tape  path  length  within  the  limits  of  7.14. 
+
+It  shall  be  perpendicular  to  reference  plane  8  +  1°. 
+
+D.I. 4    Characteristics  of  the  measuring  transducer 
+
+The  coefficient  of  friction  of  the  bearing  surface  shall  be  less 
+than  0,1. 
+
+The  upper  limit  of  its  frequency  response  shall  be  at  least 
+100  Hz. 
+
+The  width  of  the  bearing  surface  shall  be  sufficient  for  it  to  be  in 
+contact  with  the  whole  width  of  the  tape. 
+
+
+D.2    Test  procedure  for  measuring  tape 
+tension  variation 
+
+
+D.2.1     Conditioning 
+
+Condition  the  tape  before  testing  by  winding  at  2,29  m/s 
+(90  in/s)  from  BOT  to  EOT,  and  back  to  BOT. 
+
+
+D.2.2    Position  of  tape  for  measurement 
+
+The  cartridge  shall  be  held  with  reference  plane  B  vertical  and 
+the  cartridge  door  on  top  in  the  open  position. 
+
+The  tape  shall  remain  stationary  at  the  selected  point. 
+
+
+D.2.3    Characteristics  of  the  test  rod 
+
+The  form  and  dimensions  of  the  test  rod  are  given  in  figure  16. 
+
+The  mass  of  the  test  rod  shall  be  14  g  (0.5  oz);  a  suitable 
+material  is  aluminium. 
+
+The  centre  of  gravity  shall  be  within  0,13  mm  of  a  vertical  line 
+through  the  centre  of  the  notch. 
+
+D.2.4    Position  of  the  test  rod 
+
+The  slot  of  the  test  rod  shall  be  centred  over  the  point  along  the 
+free  tape  path  length  at  which  the  head  would  be  located  if  the 
+cartridge  were  mounted  in  a  drive. 
+
+
+33 
+
+
+18  12878  (Parti  )  :  1989 
+ISO  8462/1  :1986 
+
+
+Figure  16  -  Test  rod 
+
+
+Table  —  Dimensions  of  the  rod 
+
+
+Millimetres 
+
+Toleranc0 
+
+Inches 
+
+Tolerance 
+
+a          138,43 
+
+5.450 
+
+b           90,78 
+
+3.574 
+
+c          23.82 
+
+0.938 
+
+d          42,21 
+
+±  0,13 
+
+1.662 
+
+±  0.005 
+
+e            7,92 
+
+0.312 
+
+/            0,25 
+
+0.010 
+
+Z            3,96 
+
+0.156 
+
+h            0,279 
+
+0.011 
+
+;             3,023 
+
+±  0,025 
+
+0.119 
+
++  0.001 
+
+k            6,325 
+
+0.249 
+
+34 
+
+
+ISO  8462/1  :  1986 
+
+
+Annex  E 
+Electrical  resistance  of  the  belt  capstan 
+
+{This  annex  forms  part  of  the  Standard.) 
+
+
+Dimensions  in  millimetres 
+
+
+Non-conducting 
+centring  pin  ^  3,17 
+
+
+270  kQ 
+0,5W   2% 
+
+
+500  Vdc 
+
+
+-Nylon  base 
+
+
+Relief  in  the  board  material 
+of  the  printed  circuit  to  match 
+the  gate  area  of  the  belt 
+capstan  (^  3,96) 
+
+Contact  surfaces  {copper-clad  printed 
+
+circuit  board  materiaM 
+
+
+Figure  17  -  Test  fixture 
+
+
+E.I     Procedure 
+
+Erasure  that  the  contact  surfaces  of  the  belt  capstan  and  the  test  fixture  are  clean  and  free  from  oil,  grease,  tarnish  or  other  con- 
+taminants before  making  the  test. 
+
+Place  the  belt  capstan  on  the  centring  pin  of  the  bottom  contact  surface,  with  the  gate  area  over  the  relief. 
+
+Place  the  upper  contact  surface  on  top  of  the  belt  capstan  and  apply  a  force  of  26,6  N  (6  Ibf)  centrally  over  the  capstan. 
+
+Measure  the  current  flowing  in  the  circuit  when  a  potential  of  500  ±  5  V  is  applied. 
+
+E.2    Test  result 
+
+The  current  shall  be  0,40  mA  min. 
+
+
+35 
+
+
+Bureau  of  Indian  Standards 
+
+BIS  is  a  statutory  institution  established  under  the  Bureau  of  Indian  Standards  Act,  1986  to  promote 
+harmonious  development  of  the  activities  of  standardization,  marking  and  quality  certification  of  goods 
+and  attending  to  connected  matters  in  the  country. 
+
+Copyright 
+
+BIS  has  the  copyright  of  all  its  publications.  No  part  of  these  publications  may  be  reproduced  in 
+any  form  without  the  prior  permission  in  writing  of  BIS.  This  does  not  preclude  the  free  use,  in  the 
+course  of  implementing  the  standard,  of  necessary  details,  such  as  symbols  and  sizes,  type  or  grade 
+designations.    Enquiries  relating  to  copyright  be  addressed  to  the  Director  (  Publications  ),  BIS. 
+
+Revision  of  Indian  Standards 
+
+Indian  Standards  are  reviewed  periodically  and  revised,  when  necessary  and  amendments,  if  any,  arc 
+issued  from  time  to  time.  Users  of  Indian  Standards  should  ascertain  that  they  are  in  possession  of 
+the  latest  amendments  or  edition.  Comments  on  this  Indian  Standard  may  be  sent  to  BIS  giving  the 
+following  reference  : 
+
+
+Doc  :  No.  LTD  24  (1306) 
+
+
+Amendments  Issued  Since  Publication 
+
+
+Amend  No. 
+
+
+Date  of  Issue 
+
+
+Text  Affected 
+
+
+Telegrams  :  Manaksanstha 
+(Common  to   all  Offices) 
+
+
+BUREAU  OF  INDIAN  STANDARDS 
+Headquarters  : 
+
+Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg,  New  Delhi  1 10002 
+Telephones   :   331  01   31,    331    13  75 
+
+Regional  Offices  :  Telephone 
+
+Central  :  Manak  Bhavan.  9  Bahadur  Shah  Zafar  Marg  1331  01  31 
+
+NEW  DELHI  llOOOI  (331  13  75 
+
+Eastern  :  1/14  C.I.T.  Scheme  VII  M,  V.I.P.  Road,  Maniktola,  37  86  62 
+
+CALCUTTA  700054 
+
+Northern  :  SCO  445-446,  Sector  35-C,  CHANDIGARH  160036  2  18  43 
+
+Southern  :  C.I.T.  Campus,  IV  Cross  Road.  MADRAS  600113  41  29  16 
+
+Western  :  Manakalaya,  E9  MIDC,  Marol,  Andheri  (  East )  6  32  92  95 
+
+BOMBAY  400093 
+
+Branches  :  AHMADABAD.  BANGALORE.  BHOPAL.  BHUBANESHWAR,  COIMBATORE. 
+FARIDABAD.  GHAZLVBAD.  GUWAHATI.  HYDERABAD.  JAIPUR. 
+KANPUR.  PATNA.  TRIVANDRUM. 
+
+
+Printed  at  the  Central  Electric  Press,  Delhi.  India 
+
+

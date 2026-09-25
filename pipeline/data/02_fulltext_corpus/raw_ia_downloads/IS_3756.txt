@@ -1,0 +1,4575 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live" 
+
+
+
+IS 3756 (2002) : Method for Gear Correction - Addendum 
+Modification for External Cylindrical Gears with Parallel 
+Axes [PGD 31: Bolts, Nuts and Fasteners Accessories] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New' 
+
+
+
+■K^y / 1 juaaaws^fea rs^^TTF^ 
+
+
+
+2*S< W I *>S*V2^NK^ 
+
+
+
+^frcvvv^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+.^^_ 
+
+
+
+• 
+
+
+
+
+BLANK PAGE 
+
+
+
+*rt*2V^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 3756 : 2002 
+
+
+
+(weir tpftzm) 
+
+
+
+Indian Standard 
+
+METHOD FOR GEAR CORRECTION — ADDENDUM 
+
+MODIFICATION FOR EXTERNAL CYLINDRICAL 
+
+GEARS WITH PARALLEL AXES 
+
+(First Revision) 
+
+
+
+© BIS 2002 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+
+
+October 2002 Price Group 4 
+
+
+
+Gears Sectional Committee, BP 13 
+
+
+
+FOREWORD 
+
+This Indian Standard (First Revision) was adopted by the Bureau of Indian Standards, after the draft finalized 
+by the Gears Sectional Committee had been approved by the Basic and Production Engineering Division Council. 
+
+This standard was originally published in 1966. The revision of the standard has been undertaken to provide 
+guidelines regarding the limits of addendum modifications of teeth and distribution of addendum modifications 
+between mating gears through analytical equations and graphical representation, wherever necessary. 
+
+The gear is said to be corrected when the tooth form does not conform with the basic tooth form due to 
+addendum modification. 
+
+This standard deals with the addendum modification for external spur and helical gears with parallel axes used 
+in speed increasing and speed reducing gear pairs and of which the spur and helical gears are defined by the 
+standard basic rack tooth profile according to IS 2535 : 1978 'Basic rack and modules of cylindrical gears for 
+general engineering and heavy engineering (second revision)' . 
+
+In preparing this standard, considerable assistance has been derived from the following: 
+
+DIN 3992:1964 Addendum modification of external spur and helical gears. 
+
+Technical Report, ISO/TR 4467: 1982 'Addendum modification of the teeth of cylindrical gears for speed 
+reducing and speed increasing gear pairs'. 
+
+Maag Gear Book, Calculation and practice of gears, gear drives, toothed couplings and synchronous 
+clutch couplings, 1990 edition. 
+
+For the purpose of deciding whether a particular requirement of this standard is complied with, the final value, 
+observed or calculated, expressing the result of a test or analysis, shall be rounded off in accordance with 
+IS 2 : 1960 'Rules for rounding off numerical values (revised)'. The number of significant places retained in the 
+rounded off value should be the same as that of the specified value in this standard. 
+
+
+
+IS 3756 : 2002 
+
+
+
+Indian Standard 
+
+METHOD FOR GEAR CORRECTION — ADDENDUM 
+
+MODIFICATION FOR EXTERNAL CYLINDRICAL 
+
+GEARS WITH PARALLEL AXES 
+
+
+
+(First Revision) 
+
+
+
+1 SCOPE 
+
+
+
+This standard provides guidelines regarding the limits 
+of addendum modifications of teeth, distribution of 
+addendum modification between the gears of external 
+cylindrical gear pairs with parallel axes, used for speed 
+reducing and speed increasing applications. 
+
+2 SYMBOLS, NOMENCLATURE AND UNITS 
+
+
+
+Symbol Description 
+
+
+Unit 
+
+
+a 
+
+
+Centre distance 
+
+
+mm 
+
+
+c 
+
+
+Bottom clearance 
+
+
+mm 
+
+
+d 
+
+
+Reference circle diameter 
+
+
+mm 
+
+
+d 
+
+a 
+
+
+Tip diameter 
+
+
+mm 
+
+
+d 
+
+m 
+
+
+Mean diameter 
+
+
+mm 
+
+
+K 
+
+
+Addendum of the basic rack profile 
+
+
+mm 
+
+
+K 
+
+
+Dedendum of the basic rack profile 
+
+
+mm 
+
+
+k 
+
+
+Addendum shortening coefficient 
+
+
+— 
+
+
+m 
+
+
+Module 
+
+
+mm 
+
+
+m 
+
+n 
+
+
+Normal module 
+
+
+mm 
+
+
+S 
+
+an 
+
+
+Constant tip thickness 
+
+
+mm 
+
+
+U 
+
+
+Gear ratio (ZJZ^ 
+
+
+— 
+
+
+X 
+
+
+Addendum modification coefficient 
+
+
+_ 
+
+
+z 
+
+
+Number of teeth 
+
+
+— 
+
+
+z 
+
+v 
+
+
+Virtual number of teeth 
+
+
+— 
+
+
+a 
+
+
+Pressure angle 
+
+
+deg 
+
+
+a 
+
+n 
+
+
+Normal pressure angle 
+
+
+deg 
+
+
+a t 
+
+
+Transverse pressure angle 
+
+
+deg 
+
+
+a \ 
+
+
+Working transverse pressure angle 
+
+
+deg 
+
+
+P 
+
+
+Helix angle 
+
+
+deg 
+
+
+4, 
+
+
+Base helix angle 
+
+
+deg 
+
+
+X 
+
+
+Factor 
+
+
+— 
+
+
+Zx 
+
+
+Sum of addendum modification 
+coefficients 
+
+
+- 
+
+
+V 
+
+
+Sum of virtual number teeth, 
+pinion and gear 
+
+
+- 
+
+
+inv 
+
+
+Involute function 
+
+
+rad 
+
+
+NOTE — Suffix I for pinion and Suffix 2 for gear. 
+
+
+
+
+
+3 ADDENDUM MODIFICATION 
+
+When gears are produced by a generating process, the 
+datum line of the basic rack profile need not necessarily 
+form a tangent to the reference circle of the generated 
+gear. The tooth form may be altered by shifting the 
+
+
+
+datum line from the tangential position. The involute 
+shape of the tooth profile is retained and the effect is 
+merely to use parts farther from or nearer to the origin 
+of the involute. 
+
+The radial displacement from the tangential position 
+is termed as addendum modification or profile shift. 
+The addendum modification is considered positive 
+when the displacement is away from the centre of the 
+gear and it is considered as negative when in the 
+direction towards the centre of the gear. 
+
+The effect of addendum modification on the tooth form 
+is shown in Fig. 1. The load carrying capacity of the 
+teeth without addendum modification as shown in 
+Fig. la may be improved by the positive addendum 
+modification as shown in Fig. lb. An extremely large 
+addendum modification results in an undesirable tooth 
+form with pointed teeth as shown in Fig. lc. 
+
+The teeth with different addendum modifications 
+for 20° pressure angle are shown in Fig. 2. 
+
+The addendum modification coefficient x is the 
+addendum modification divided by the module. Thus, 
+the amount of addendum modification equals to x.m. 
+
+4 IMPORTANCE OF ADDENDUM MODI- 
+FICATION OF THE TEETH 
+
+4.1 The addendum modification gear teeth is carried 
+out in order to avoid undercut, improve strength and 
+running properties or to adjust the centre distance. 
+The addendum modification is generally recom- 
+mended in the following cases: 
+
+a) of gears with critical number of teeth; 
+
+b) of non-standard centre distance; 
+
+c) to obtain balanced strength; and 
+
+d) to obtain reduction in sizes. 
+
+However, load capacity and running equalities do not 
+attain optimum values, but the gear pairs of this system 
+have essentially better equalities than Jf-2000 gear 
+pairs. 
+
+4.2 Cost of Manufacture of Gear Pair 
+
+The value of addendum modification of teeth depends 
+solely, during manufacture, on the relative position of 
+
+
+
+IS 3756 : 2002 
+
+
+
+DATUM LINE 
+
+NO ADDENDUM MODIFICATION 
+
+
+
+
+x.m=0 
+
+
+
+REFERENCE CIRCLE 
+
+FIG. la 
+
+_DATUM LINE 
+
+FAVOURABLE ADDENQUM MODIFICATION 
+^V:V;T : : : ; : :.viv^y ; :^ xjp 
+
+
+
+
+REFERENCE CIRCLE^ 
+
+FIG.Ib 
+DATUM LINE 
+
+EXCESSIVE ADDENDUM MODIFICATION 
+
+
+
+
+REFERENCE CIRCLE 
+
+
+
+FIG. 1c 
+
+Fig. I Gears (Meshing with the Generating Rack Profile) of Identical Module, Identical Reference 
+Diameter and Identical Number of Teeth, But with Different Addendum Modification x. m 
+
+
+
+the gear to be cut and the cutter. Hence, the influence 
+of addendum modification on the cost of toothed gears 
+is nil in the majority of cases. 
+
+4.3 Influence on the Normal Wear of a Gear 
+
+The addendum modification of teeth results in a 
+decrease in specific slipping of tooth flanks and 
+consequently in a decrease in the normal wear of the 
+tooth flanks. 
+
+4.4 Influence on the Load Capacity of the Gear 
+
+An increase in the sum of addendum modifications of 
+gear pair results in increase in the load capacity of 
+gear tooth under contact pressure (pitting) and also 
+the bending strength at the root of the teeth. 
+
+
+
+4.5 Influence on the Shape of Teeth (see Fig. 1) 
+
+An increase in the addendum modification of the teeth 
+of a gear causes an increase in root thickness and a 
+decrease in tip thickness. The decrease in the 
+addendum modification of the teeth has the reverse 
+effect on tip and root thickness and below a given value 
+which depends on the number of teeth in the gear in 
+question, the addendum modification causes cutter 
+interference which grooves the tooth root. The 
+interference cause weakening of the gear tooth and 
+poor functioning resulting in noise, rapid wear, etc. 
+
+Hence, for each gear, there is a maximum value for 
+the addendum modification which results in a pointed 
+tooth and a minimum value causing cutter inter- 
+ference. 
+
+
+
+IS 3756 : 2002 
+
+
+
+ADDENDUM MODIFICATION COEFFICIENT 
+
+-0.6 -0.3 +0.3 40.6 
+
+
+
+Z = 12 
+
+
+
+Z = H 
+
+
+
+2 = 17 
+
+
+
+2 = 20 
+
+
+
+Z = 25 
+
+
+
+Z = 35 
+
+
+
+Z = 50 
+
+
+
+2=100 
+
+
+
+
+
+
+
+
+
+A 
+
+
+
+
+
+
+
+
+AAA 
+
+
+
+
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+
+Fig. 2 Effect of the Number of Teeth and the Addendum Modification Coefficient a; 
+on the Tooth Form for a = 20°, h = 1.0 m, h e = 1.25 m 
+
+' ap fp 
+
+
+
+4.6 Influence on Contact 
+
+An increase in the addendum modification of the teeth 
+of the mating gears causes a slight decrease in the 
+contact ratio of the gear pair. Hence, it is necessary to 
+take into account while selecting the addendum 
+modifications for high speed gear pairs to avoid speed 
+irregularity and increase in the level of vibrations. 
+
+4.7 Influence on the Clearance at the Root of Teeth 
+
+Increase in the sum of the addendum modification in 
+conjunction with small number of teeth in the gear 
+pair may cause excessive increase in the bottom 
+clearance resulting in detrimental phenomena, such 
+as interference, lubricant pressure, etc. 
+
+4.8 Speed Reducing and Speed Increasing Gear 
+Pairs 
+
+By considering the kinematics of a gear pair, it is 
+ascertained that the slipping of the loading tooth 
+
+
+
+during approach time, is in the opposite direction to 
+the movement of the point of contact on the tooth flank. 
+This results in a jamming effect which interferes with 
+correct operation of the gear. A favourable solution is 
+to reduce the approach time by giving the leading tooth 
+as large an addendum modification as possible. For a 
+given sum of addendum modifications, as small an 
+addendum modification as possible shall be chosen 
+for the driven gear. 
+
+For a speed reducing gear pair, the pinion is driving 
+and it is preferable to increase the addendum modi- 
+fication of the pinion when the accompanying 
+reduction is the addendum modification of the gear 
+has no detrimental effect. 
+
+For a speed increasing gear pair, the gear is driving 
+and in this case, a reduction in the addendum 
+modification of the driven pinion is detrimental to the 
+gear pair, if it becomes too great. To obtain a suitable 
+speed increasing gear pair, an addendum modification 
+
+
+
+IS 3756 : 2002 
+
+
+
+smaller than in the case of speed reducing gear pair 
+shall be chosen without however going to an 
+unacceptable value. 
+
+5 SUM OF ADDENDUM MODIFICATION 
+COEFFICIENTS 
+
+5.1 Virtual Number of Teeth (z v ) 
+
+To include straight teeth and helical teeth in the 
+identical formulae, the virtual number of teeth defined 
+by the following equation is used: 
+
+
+
+of these limits. The shaded parts of Fig. 3 indicate the 
+zones for special cases and the verification of the 
+operating conditions is essential if Ik is chosen from 
+these shaded areas. 
+
+5.3.1 Upper Conventional Limit for Ik 
+
+For 20 < Ez < 80, Ik = (100 + EzJ/120 
+
+
+
+For 80 < 2z„ 
+
+
+
+Ex = 1.5 
+
+
+
+cos 2 fl h .COS /? 
+
+
+
+sin p h = sin/?, cos a 
+
+
+
+5.2 General 
+
+
+
+The choice of sum of addendum modification 
+coefficients, Ex is arbitrary and depends on the centre 
+distance variation of operating conditions desired. Too 
+high or too low value of Ik may be harmful to the 
+satisfactory functioning of the gear pair. Therefore, 
+in this standard, conventional and recommended upper 
+and lower limits are specified for Ik. 
+
+5.3 Conventional Limits 
+
+The following equations define the conventional limits 
+for Ex which shall not be exceeded under any 
+circumstances. Figure 3 is the graphical representation 
+
+
+
+5.3.2 Lower Conventional Limit for Ex 
+For 20 < Ez w < 40, Ex = 0.0375 (40-2z v ) 
+For 40 < Ez y < 160, Ex = 0.005 (40-2i v ) 
+For 160<2i v . Ex = - 0.60 
+
+5.4 Recommended Limits 
+
+The following equations define the recommended 
+limits for the sum of addendum modification 
+coefficients, within which there is no risk of any faulty 
+operation and consequently no need for any type of 
+verification. Figure 3 also gives the graphical represen- 
+tation of recommended limits for Ex. 
+
+5.4.1 Upper Recommended Limit for Ex 
+For20<<2r v , Ex = 1.0 
+
+5.4.2 Lower Recommended Limit for Ex 
+For 20 < Ez v < 60, Ex = 0.025 (60 - Ez x ) 
+For 60 <Ez y , Ex = 0.0 
+
+The sum of the number of teeth (normal or virtual) of 
+
+
+
+1.6 
+
+
+iZX 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| | UPPER CONVENTIONAL LIMIT | | 
+
+
+1.4 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^^^m^m 
+
+
+mmm ^^^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^^^^ /etftfS&8ec Hk3c&§§ SkS&w ««&£«< 
+
+
+
+
+1.2 
+
+
+
+
+
+
+
+
+
+
+
+
+Siii HKl 11111 HH 1111 W&M IBS WMM iiii Hill $§H WM 
+
+
+
+
+
+
+
+
+
+
+
+
+.!":v!'' .{'.' ' : "| ':'.''' '''">' f ' . ; ,:V:- V *| ^^f^^^i^^^J^^^^^^^^i^^J^^^l^^^^l:^^®; 
+
+
+
+
+1.0 
+
+
+
+
+
+
+p^^^^^^M^^^«#^^^^^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UPPER RECOMM 
+
+
+ENDE 
+
+
+D UM 
+
+
+rr 
+
+
+
+
+
+
+
+
+0.8 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ipisN 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.6 
+
+
+
+
+
+
+\il 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IP 
+
+
+liv 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.4 
+
+
+
+
+
+
+
+
+■1$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+V . 
+
+
+:$twx. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0,2 
+
+
+
+
+
+
+
+
+\p 
+
+
+.:*;.:.':• .' 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\£ 
+
+
+Wkf 
+
+
+Iv 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I$i 
+
+
+■ij&'&V 
+
+
+
+
+
+
+
+
+L6wJ 
+
+
+:r re 
+
+
+COMMEI 
+
+
+L Ul 
+
+
+4tT 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*£*£| 
+
+
+•". • 
+
+
+M 
+
+
+•vx* 
+
+
+f^^^j 
+
+
+
+
+$$§£§£ 
+
+
+MS 
+
+
+WB 
+
+
+
+
+
+
+§P 
+
+
+i/ Y 
+
+
+-0.2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^W^^^^^S 
+
+
+1111 
+
+
+11111 
+
+
+IS 
+
+
+HH1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+o5gJ 
+
+
+®H 
+
+
+HI 
+
+
+^S 
+
+
+iiill 
+
+
+
+
+
+
+
+
+
+
+-0.4 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+■ L 
+
+
+coTk 
+
+
+■6BM6S5MC 
+
+
+$HH 
+
+
+liii 
+
+
+
+
+
+
+;$i# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+™»nm 
+
+
+Dvjr 1 
+
+
+
+
+
+
+
+
+;>&\ 
+
+
+
+
+-0.6 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+l*V*/7 
+
+
+
+
+
+
+HH 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+: i i 
+
+
+
+
+
+
+
+
+
+
+
+20 
+
+
+
+A0 
+
+
+
+60 
+
+
+
+80 
+
+
+
+100 
+
+
+
+120 
+
+
+
+1A0 
+
+
+
+160 
+
+
+
+Fig. 3 Conventional and Recommended Limits for the Sum of the Addendum Modification Coefficients 
+
+and Zones for Special Cases 
+
+
+
+IS 3756 : 2002 
+
+
+
+the gear pair shall in no case be less than 20 for 
+addendum modification. Recommended sum of 
+number of teeth is 24. 
+
+5.5 Selection of the Sum of Addendum Modification 
+Coefficients 
+
+The choice of the sum of addendum modification 
+coefficients shall be made taking into account the 
+following: 
+
+a) For any increase in the sum of addendum 
+modification coefficients, there is a corres- 
+ponding increase in the breaking load capa- 
+city. 
+
+b) For any reduction in the sum of addendum 
+modification coefficients, there is a corres- 
+ponding increase in the contact ratio. 
+
+5.5.1 Relation Between Centre Distance, Sum of the 
+Addendum Modification Coefficients and the 
+Operating Pressure Angle 
+
+
+
+These relations 
+
+
+are expressed as follows: 
+
+
+~m 
+
+
+= (z, + z 2 )/2.0 
+
+
+d 
+m 
+
+
+- (d x + rf 2 )/2.0 
+
+
+tan a K 
+
+
+= tan a /cos J3 
+
+
+a cos a\ 
+
+
+= d . cos a, 
+
+in t 
+
+
+Ix 
+
+
+= z (inv a'— inv aj/tan a 
+
+in v t v 
+
+
+inv a y 
+
+
+= tan a t - a t . n/180 
+
+
+inv a\ 
+
+
+-tan a\- a\. n/180 
+
+
+
+6 DISTRIBUTION OF SUM OF ADDENDUM 
+MODIFICATION COEFFICIENTS ON THE 
+TWO MATING GEARS 
+
+For the distribution of the sum of addendum 
+modification coefficients, Ix on the two mating gears, 
+it is recommended to use the following formulae: 
+
+Addendum modification coefficient of the pinion: 
+
+
+
+■■L 
+
+
+
++ s 
+
+
+
+For the straight teeth, /?= and z v = z and where the 
+number of teeth of the two mating gears appear by 
+their ratio. 
+
+
+
+x\ -X. 
+
+
+
+
+
++ X. 
+
+
+z \ 
+
+
+z 2 +z ] 
+
+
+
+or 
+
+
+
+-X. 
+
+
+
+u-X 
+
+
+
+Ltt + 1. 
+Ex - x 
+
+
+
++ x. 
+
+
+
+«+l. 
+
+
+
+The following values are recommended for X: 
+
+0.5 <X<0.75, for speed reducing gears 
+< X < 0,5, for speed increasing gears 
+
+For the gears with gear ratio exceeding 5, the 
+distribution of sum of the addey^p+2Xndum modification 
+coefficients is calculated with u = 5. 
+
+However, the final choice of addendum modification 
+coefficients, x l and x 2 shall be done within the limits 
+specified at 7. 
+
+7 LIMITING VALUES OF THE ADDENDUM 
+MODIFICATION COEFFICIENT 
+
+Too small an addendum modification coefficient gives 
+rise to cutter interference and too large an addendum 
+modification coefficient produces a pointed tooth. The 
+exact values producing either cutter interference or 
+pointed tooth for given virtual number of teeth are the 
+lower and upper geometric limits respectively. The 
+conventional and recommended limits are given 
+below: 
+
+7.1 Conventional Limits 
+
+7.1.1 Upper Conventional Limit 
+For6<z < 10, x = 0.60 
+
+V ' 
+
+For 10 < z v < 50, x = 0.50 + 0.01 z v 
+For50<z v , x= 1.0 
+
+7.1.2 Lower Conventional Limit 
+
+For 6 < z v < 12, x - 0.05 (18.0 - z v ) 
+
+For 12 < z v < 20, x = 0,0375 (20.0 - z v ) 
+
+For 20 < z v < 50, jc = (20.0 - z v )/60.0 
+
+For50<z v , JC--0.50 
+
+The graphical representation of conventional limits 
+are given in Fig. 4. 
+
+7.2 Recommended Limits 
+
+7.2.1 Upper Recommended Limit 
+For6<z v , Jt = 0.60 
+
+7.2.2 Lower Recommended Limit 
+
+For 6 < z v < 50, x = 0.025 (30.0 - z v ) 
+
+For50<z v , x = -0.50 
+
+The graphical representation of recommended limits 
+are given in Fig. 4, The virtual number of teeth of a 
+gear shall always have 6 as its lower limit. The shaded 
+portions of Fig. 4 represent the zones in which the 
+choice of addendum modification coefficient 
+necessitates verification of the characteristics of the 
+gear pair. 
+
+
+
+IS 3756 : 2002 
+
+
+
+
+-0.6 
+
+
+
+Fig. 4 Conventional a^d Recommended Limits for the Addendum 
+Modification and Zones for Special Cases 
+
+
+
+If the selected addendum modification coefficient is 
+within the recommended limits as given in Fig. 4, it 
+is not necessary to verify the operating characteristics 
+of the gear pair. 
+
+7.3 Tip Thickness 
+
+The Fig. '5 gives the curves for constant tip thickness 
+equal to 0, 0.1 m n , 0.2 m n , 0.3 m n , and 0.4 m n for a 
+tooth depth in conformity with basic rack tooth profile 
+without any reduction in the addendum. 
+
+Table 1 gives the values of addendum modification 
+coefficient as a function of virtual number of teeth 
+relating to these curves. 
+
+7.4 Reduction of the Addendum of Teeth 
+
+If it is desired to retain a tip thickness greater than 
+0.2 m , in some cases, it is useful to reduce the 
+
+
+
+addendum of the teeth. Reduction in addendum, 'k 
+can be calculated using the following formulae: 
+
+For x < 0.6, k = 0.01 (50.0 x - 3.0 z v + 6.0) 
+
+For x > 0.6, k = 0.01 (70.0 x - 3.0 z v - 6.0) 
+
+
+
+where d — m„ 
+
+
+
+cos/? 
+
+
+
++ 2.0(1.0 + x-A 
+
+
+
+If £ is calculated as negative, k = 0. 
+
+7.5 Values of Bottom Clearance 
+
+The sum of addendum modification coefficients of a 
+gear pair has an effect on the value of bottom clearance. 
+Figure 6 gives the curves representing Ex as a function 
+of 2z v , the constant clearance for a given curve and 
+taking respectively the five values : 0.05 w n , 0.1 m n , 
+0. 1 5 m , 0.2 m and 0.25 m . Table 2 gives some values 
+
+n' n n *^ 
+
+relating to these curves. 
+
+
+
+IS 3756 : 2002 
+
+
+
+1 
+
+
+1 > 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+jC 
+
+
+
+
+
+
+n<*5 
+
+
+
+
+
+
+^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$ 
+
+
+
+
+
+
+
+
+$* 
+
+
+^ 
+
+
+
+
+^ 
+
+
+,o-^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Oj 
+
+
+>y 
+
+
+ft 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*c 
+
+
+^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+— 1 
+
+
+
+
+
+
+
+
+6 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+of 
+
+
+>J 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.4 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Y 
+
+
+0.2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"X 
+
+
+
+2 A 6 8 10 12 14 16 16 20 22 24 26 28 30 32 34 
+
+
+
+(NOTE — Line k = is merged with S m = 0.2 mj 
+Fig. 5 Constant Tip Thicknesses 
+
+
+
+J 
+1.6 
+
+
+,IX 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c* 
+
+
+.otf^S- 
+
+
+
+
+csO^T 
+
+
+
+
+
+
+c.O**** 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(•*» 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TOO 
+
+
+1*1 
+
+
+
+
+
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c*^ 
+
+
+
+
+1-0 
+
+
+
+
+
+
+&* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.8 
+
+
+4 
+
+
+r 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.6 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.4 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.2 
+
+
+
+
+
+
+
+
+\ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+. c=0*2bm n * 
+
+
+
+
+
+
+
+
+
+
+
+
+\ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+U 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TT'v 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Y 
+
+
+0-2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.4 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0*6 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20 40 60 80 100 120 
+
+Fig, 6 Constant Bottom Clearances 
+
+
+
+140 
+
+
+
+160 
+
+
+
+IS 3756 : 2002 
+
+
+
+Table 1 Values of x as a Function of z y Giving the 
+Tip Thicknesses, S m 
+
+(Clause 7.3) 
+
+
+
+Z y 
+
+
+s.„ 
+
+
+0.2 m 0.3 m„ 0.4 m n 
+
+
+X 
+
+
+8 
+
+
+0.385 
+
+
+
+
+
+
+9 
+
+
+0.443 
+
+
+
+
+
+
+10 
+
+
+0.499 
+
+
+0.388 
+
+
+
+
+li 
+
+
+0.552 
+
+
+0.436 
+
+
+0.309 
+
+
+12 
+
+
+0.602 
+
+
+0.481 
+
+
+0.350 
+
+
+13 
+
+
+0.650 
+
+
+0.525 
+
+
+0.389 
+
+
+14 
+
+
+
+
+0.568 
+
+
+0.427 
+
+
+15 
+
+
+
+
+0.609 
+
+
+0.464 
+
+
+16 
+
+
+
+
+0.648 
+
+
+0.499 
+
+
+17 
+
+
+
+
+0.687 
+
+
+0.533 
+
+
+18 
+
+
+
+
+
+
+0.567 
+
+
+19 
+
+
+
+
+
+
+0.599 
+
+
+20 
+
+
+
+
+
+
+0.631 
+
+
+21 
+
+
+
+
+
+
+0.662 
+
+
+22 
+
+
+
+
+
+
+0.692 
+
+
+23 
+
+
+
+
+
+
+0.722 
+
+
+24 
+
+
+
+
+
+
+0.751 
+
+
+NOTG- 
+
+
+— hi the table, the intermediate values can be obtained 
+
+
+bylinea 
+
+
+r interpolation. 
+
+
+
+Table 2 Values of 2x for Various Values of Bottom 
+Clearance Without Any Reduction in the Addendum 
+
+(Clause 7.5) 
+
+
+
+A 
+
+
+C 
+
+
+0.05 m n 0.1 m n 0.15 m n 
+
+
+0*2 m 
+
+
+Ex 
+
+
+
+
+20 
+
+
+1.016 
+
+
+0.849 
+
+
+0.658 
+
+
+0.435 
+
+
+40 
+
+
+1.318 
+
+
+1.108 
+
+
+0.873 
+
+
+0.588 
+
+
+60 
+
+
+1.552 
+
+
+1.311 
+
+
+1.038 
+
+
+0.703 
+
+
+80 
+
+
+_ 
+
+
+1.479 
+
+
+1.175 
+
+
+0.800 
+
+
+100 
+
+
+_ 
+
+
+1.628 
+
+
+1.297 
+
+
+0.886 
+
+
+120 
+
+
+- 
+
+
+- 
+
+
+1.392 
+
+
+0.958 
+
+
+140 
+
+
+- 
+
+
+- 
+
+
+1.508 
+
+
+1.033 
+
+
+160 
+
+
+- 
+
+
+- 
+
+
+1.600 
+
+
+1.094 
+
+
+NOTE — In the table, the intermediate values can ( 
+
+
+?e obtained by 
+
+
+linear interpolation. 
+
+
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods 
+and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any form 
+without the prior permission in writing of BIS. This does not preclude the free use, in the course of 
+implementing the standard, of necessary details, such as symbols and sizes, type or grade designations. 
+Enquiries relating tp copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed 
+periodically; a standard along with amendments is reaffirmed when such review indicates that no changes are 
+needed; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards 
+should ascertain that they are in possession of the latest amendments or edition by referring to the latest issue of 
+'BIS Catalogue' and 'Standards; Monthly Additions'. 
+
+This Indian Standard has been developed from Doc : No. BP 13 (0036), 
+
+
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters : 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110 002 Telegrams : Manaksanstha 
+
+Telephones ; 323 01 31, 323 33 75, 323 94 02 (Common to all offices) 
+
+Regional Offices : Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg J 323 76 17 
+
+NEW DELHI 110 002 I 323 38 41 
+
+
+
+Eastern : 1/14 C.I.T. Scheme VII M, V. I. P. Road, Kankurgachi ~l 337 84 99, 337 85 61 
+
+KOLKATA 700 054 L 337 86 26,337 9120 
+
+
+
+Northern ; SCO 335-336, Sector 34-A, CHANDIGARH 160 022 j 60 38 43 
+
+60 20 25 
+
+
+
+{ 
+
+
+
+Southern : C.I.T. Campus, IV Cross Road, CHENNAI 600 113 ^ 254 12 16, 254 14 42 
+
+254 25 19,254 13 15 
+
+
+
+{ 
+{ 
+
+
+
+Western : Manakalaya, E9'MIDC, Marol, Andheri (East) -4 832 92 95, 832 78 58 
+
+MUMBA1400 093 L 832 78 91,832 78 92 
+
+Branches : AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. FARIDABAD. 
+GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+NALAGARH. PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM. VISAKHAPATNAM. 
+
+
+
+Printed at Prabhat Offset Press. New Delhi-2 
+
+
+

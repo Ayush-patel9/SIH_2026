@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IndianStandardsRecommendationResponse",
+  "description": "Standardized Contract Schema between RAG Pipeline and Application Frontend / Services for AI-Powered Indian Standards Recommendation Engine (SIH 2026)",
+  "type": "object",
+  "required": [
+    "query_metadata",
+    "primary_recommendations",
+    "allied_standards",
+    "mandatory_certifications",
+    "version_amendment_status",
+    "conformity_ecosystem"
+  ],
+  "properties": {
+    "query_metadata": {
+      "type": "object",
+      "required": ["input_text", "detected_domain", "detected_language", "confidence_score"],
+      "properties": {
+        "input_text": { "type": "string" },
+        "detected_domain": { "type": "string" },
+        "detected_language": { "type": "string" },
+        "extracted_keywords": { "type": "array", "items": { "type": "string" } },
+        "confidence_score": { "type": "number", "minimum": 0, "maximum": 1 },
+        "processed_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "primary_recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["is_number", "title", "relevance_score", "aspect", "division_code", "status"],
+        "properties": {
+          "is_number": { "type": "string" },
+          "standard_id": { "type": "string" },
+          "title": { "type": "string" },
+          "year_published": { "type": "integer" },
+          "status": { "type": "string", "enum": ["ACTIVE", "WITHDRAWN", "UNDER_REVISION", "SUPERSEDED"] },
+          "aspect": { "type": "string" },
+          "division_code": { "type": "string" },
+          "ics_codes": { "type": "array", "items": { "type": "string" } },
+          "relevance_score": { "type": "number", "minimum": 0, "maximum": 1 },
+          "match_reason": { "type": "string" },
+          "scope_summary": { "type": "string" },
+          "key_specifications": {
+            "type": "object",
+            "properties": {
+              "grades": { "type": "array", "items": { "type": "string" } },
+              "physical_requirements": { "type": "array", "items": { "type": "string" } },
+              "chemical_requirements": { "type": "array", "items": { "type": "string" } },
+              "marking_requirements": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "allied_standards": {
+      "type": "object",
+      "properties": {
+        "normative_references": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["is_number", "title", "relation_type"],
+            "properties": {
+              "is_number": { "type": "string" },
+              "title": { "type": "string" },
+              "relation_type": { "type": "string" },
+              "clause_reference": { "type": "string" }
+            }
+          }
+        },
+        "test_methods": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["is_number", "test_parameter", "standard_title"],
+            "properties": {
+              "is_number": { "type": "string" },
+              "test_parameter": { "type": "string" },
+              "standard_title": { "type": "string" },
+              "sample_size": { "type": "string" }
+            }
+          }
+        },
+        "safety_standards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "is_number": { "type": "string" },
+              "title": { "type": "string" },
+              "focus_area": { "type": "string" }
+            }
+          }
+        },
+        "installation_codes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "is_number": { "type": "string" },
+              "title": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "mandatory_certifications": {
+      "type": "object",
+      "required": ["is_qco_mandatory", "schemes_applicable"],
+      "properties": {
+        "is_qco_mandatory": { "type": "boolean" },
+        "schemes_applicable": { "type": "array", "items": { "type": "string" } },
+        "qco_details": {
+          "type": "object",
+          "properties": {
+            "order_name": { "type": "string" },
+            "notifying_ministry": { "type": "string" },
+            "gazette_so_number": { "type": "string" },
+            "enforcement_date": { "type": "string" },
+            "exemptions": { "type": "string" }
+          }
+        },
+        "crs_registration_required": { "type": "boolean" },
+        "hallmarking_required": { "type": "boolean" }
+      }
+    },
+    "version_amendment_status": {
+      "type": "object",
+      "required": ["latest_version", "active_amendments", "is_latest_cited"],
+      "properties": {
+        "latest_version": { "type": "string" },
+        "cited_version": { "type": "string" },
+        "is_latest_cited": { "type": "boolean" },
+        "outdated_warning": { "type": "string" },
+        "active_amendments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "amendment_number": { "type": "integer" },
+              "year": { "type": "integer" },
+              "summary": { "type": "string" }
+            }
+          }
+        },
+        "supersedes": { "type": "string" },
+        "superseded_by": { "type": "string" }
+      }
+    },
+    "conformity_ecosystem": {
+      "type": "object",
+      "properties": {
+        "nabl_recognized_labs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["lab_name", "location", "nabl_acc_no"],
+            "properties": {
+              "lab_id": { "type": "string" },
+              "lab_name": { "type": "string" },
+              "location": { "type": "string" },
+              "state": { "type": "string" },
+              "nabl_acc_no": { "type": "string" },
+              "scope": { "type": "string" }
+            }
+          }
+        },
+        "certified_manufacturers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cml_no": { "type": "string" },
+              "manufacturer_name": { "type": "string" },
+              "brand_name": { "type": "string" },
+              "state": { "type": "string" },
+              "validity_date": { "type": "string" },
+              "status": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "gem_procurement_alignment": {
+      "type": "object",
+      "properties": {
+        "category_id": { "type": "string" },
+        "category_name": { "type": "string" },
+        "golden_parameters": { "type": "object" },
+        "model_tender_clause": { "type": "string" }
+      }
+    }
+  }
+}
