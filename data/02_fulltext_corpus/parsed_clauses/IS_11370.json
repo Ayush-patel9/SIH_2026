@@ -1,0 +1,54 @@
+{
+  "is_number": "IS IS_11370",
+  "standard_id": "IS IS_11370",
+  "title": "Indian Standard Specification / Test Method (IS IS_11370)",
+  "ia_identifier": "IS_11370",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies the requirements for a computer readable record format which will hold any type of bibliographic record and data elements for bibliographic description of different kinds of documents, such as; a) Books — Textual material that is monographic in nature. b) Continuing Resources — Textual items with a recurring pattern of publication, for example periodicals, newspapers, yearbooks. NOTE — Prior to 2002, continuing resources were referred to as serials. c) Electronic Resources — Used for computer software, numeric data, computer-oriented multimedia, online systems or services. Other classes of electronic resources are coded fof their most significant aspect. Material may be monographic or serial in nature. d) Maps — All types of cartographic materials, including sheet maps and globes in printed, manuscript, electronic, and microform. e) Music — Printed and manuscript notated music. f) Sound Recordings — Non-musical sound recordings, and musical sound recordings. g) Visual materials — Projected media, twodimensional graphics, three-dimensional artifacts or naturally occurring objects, and kits. Used for archival visual materials when format or medium is being emphasized. h) Mixed Materials — Primarily archival and manuscript collections of a mixture of forms of material. Material may be monographic or serial in nature. 1.2 This standard gives an illustrative list of data elements to be used in a bibliographic record. The format of a bibliographic record is taken to constitute a logical record without any regard to the physical record on a recording medium. It does not define the different data elements or expand the different codes used.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 2709",
+      "standard_id": "IS/ISO 2709",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2709)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 99999",
+      "standard_id": "IS 99999",
+      "title": "Indian Standard Specification / Test Method (IS 99999)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade of",
+    "Grade Number",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11370"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 83670
+}

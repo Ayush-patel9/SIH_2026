@@ -1,0 +1,124 @@
+{
+  "is_number": "IS IS_10440",
+  "standard_id": "IS IS_10440",
+  "title": "Indian Standard Specification / Test Method (IS IS_10440)",
+  "ia_identifier": "IS_10440",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This code covers the design and construction of reinforced brick ( RB ) and reinforced brick concrete ( RBC ) floors and roofs.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1077",
+      "standard_id": "IS 1077:1992",
+      "title": "Common Burnt Clay Building Bricks -Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 456",
+      "standard_id": "IS 456:2000",
+      "title": "Plain and Reinforced Concrete - Code of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 432",
+      "standard_id": "IS 432",
+      "title": "Indian Standard Specification / Test Method (IS 432)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1139",
+      "standard_id": "IS 1139",
+      "title": "Indian Standard Specification / Test Method (IS 1139)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1786",
+      "standard_id": "IS 1786:2008",
+      "title": "High strength deformed steel bars and wires for concrete reinforcement-",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 1905",
+      "standard_id": "IS 1905:1987",
+      "title": "Code of Practice for Structural use of Unreinforced Masonry",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3036",
+      "standard_id": "IS 3036:2022",
+      "title": "Code of practice for laying lime concrete for a waterproofed roof finish",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2115",
+      "standard_id": "IS 2115:1980",
+      "title": "Code of practice for flat-roof finish: mud phuska",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1661",
+      "standard_id": "IS 1661:1972",
+      "title": "Code of practice for application of cement and cement-lime plaster finishes",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade 75",
+    "Grade 35",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10440"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 19575
+}

@@ -1,0 +1,142 @@
+{
+  "is_number": "IS IS_11891",
+  "standard_id": "IS IS_11891",
+  "title": "Indian Standard Specification / Test Method (IS IS_11891)",
+  "ia_identifier": "IS_11891",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard lays down the minimum requirements for the centralized recirculatory lubricating and sealing oil systems for high speed and high-pressure centrifugal compressor installations in petrochemical, fertiliser, refineries, etc, with various prime-movers like a steam turbine, gas turbine, electric motors with or without gearboxes.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 2825",
+      "standard_id": "IS 2825:1969",
+      "title": "Code for unfired pressure vessels",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4503",
+      "standard_id": "IS 4503:1967",
+      "title": "Shell and Tube Type Heat Exchangers",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1012",
+      "standard_id": "IS 1012:2002",
+      "title": "Turbine Lubricating Oils -",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 816",
+      "standard_id": "IS 816:1969",
+      "title": "Code of practice for use of metal arc welding for general construction in mild steel",
+      "division_code": "MED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8593 (PART 1)",
+      "standard_id": "IS 8593 (Part 1):2017",
+      "title": "Part 1 : 2017: Recommendations for Centralised Lubrication as Applied to Plant and Machinery Part 1 Oil Lubrication (First Revision)",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60079 (PART 7)",
+      "standard_id": "IS/IEC 60079 (PART 7)",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60079 (PART 7))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8789",
+      "standard_id": "IS 8789:2021",
+      "title": "Values of performance characteristics for three-phase induction motors with degree of protection 2X",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12615",
+      "standard_id": "IS 12615:2018",
+      "title": "Line Operated Three Phase a.c. Motors ( IE CODE ) \"Efficiency Classes and Performance Specification\" ( Third Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4406",
+      "standard_id": "IS/ISO 4406",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4406)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60079 (PART 7)",
+      "standard_id": "IS/IEC 60079 (PART 7)",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60079 (PART 7))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Equipment",
+    "Special Application",
+    "Block-in-Time",
+    "Coast-Down-Time",
+    "Cool-off Time",
+    "Control Oil",
+    "Console",
+    "Component",
+    "Main Pump",
+    "Shaft Driven",
+    "Emergency Pump",
+    "Standby Pump"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "wall thickness of 1.0 mm"
+    ],
+    "marking_requirements": [
+      "may be marked with the Standard Mark.",
+      "illustrated in Fig. 3 and shall apply unless otherwise specified."
+    ]
+  },
+  "total_chars_parsed": 44280
+}

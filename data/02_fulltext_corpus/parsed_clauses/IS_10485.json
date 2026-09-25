@@ -1,0 +1,125 @@
+{
+  "is_number": "IS IS_10485",
+  "standard_id": "IS IS_10485",
+  "title": "Indian Standard Specification / Test Method (IS IS_10485)",
+  "ia_identifier": "IS_10485",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This code of practice recommends erection and cabling of single and community antenna systems (that is, antennae and associated equipment) for good reception of sound and television broadcasts. It includes the protection of such systems against atmospheric electricity and recommendations for the certification of the systems. Note 1 — Compliance with the recommendations given in this code does not confer immunity from relevant legal requirements, if any. Note 2 — The single or community antenna system is supposed to feed to the proper receiving apparatus covered by relevant Indian Standards such as IS : 615- 1966*, IS : 4547-1978t and IS : 6759-1972J. ♦Minimum requirements of domestic radio receivers ( revised), ^Specification for receivers for monochrome television broadcast transmissions (first revision ). {Requirements for radio receivers for frequency modulation broadcast transmissions. Is : 10485 - 1983",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 615",
+      "standard_id": "IS 615:1996",
+      "title": "Radio receivers for amplitude modulation broadcast transmission",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4547",
+      "standard_id": "IS 4547:1992",
+      "title": "Receivers for Monochrome Television Broadcast Transmissions",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6759",
+      "standard_id": "IS 6759:1996",
+      "title": "Radio receivers for frequency modulation broadcast transmission",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2309",
+      "standard_id": "IS 2309:1989",
+      "title": "Code of practice for the protection of buildings and allied structures against lightning",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 616",
+      "standard_id": "IS 616:2010",
+      "title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements",
+      "division_code": "LITD",
+      "aspect": "Safety Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": true,
+      "qco_order": "Electronics and IT Goods (CRS) Order"
+    },
+    {
+      "is_number": "IS 3043",
+      "standard_id": "IS 3043:2018",
+      "title": "Code of Practice for Earthing ( Second Revision )",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8240",
+      "standard_id": "IS 8240",
+      "title": "Indian Standard Specification / Test Method (IS 8240)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 164",
+      "standard_id": "IS 164:2023",
+      "title": "Ready-Mixed Paint for Road Marking-Specification",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade deration",
+    "Grade eder",
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10485"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 62938
+}

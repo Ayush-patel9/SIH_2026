@@ -1,0 +1,1162 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+IS 13698-2 (1993) : Freight containers - Information related 
+to containers on board vessels. Part 2: Telex data 
+transmission [TED 12: Freight Containers and Pallets] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+aj^&vi iJii^s:y%K^ isb^^ni^seg 
+
+
+
+:<>5&i| mT'5K^5?::5:^>^i»l 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 13698 (Part 2) : 1893 
+180 9711-2:1990 
+
+( Reaffirmed 2003 ) 
+
+Indian Standard 
+
+FREIGHT CONTAINERS — INFORMATION 
+RELATED TO CONTAINERS ON BOARD VESSELS 
+
+PART 2 TELEX DATA TRANSMISSION 
+
+
+
+UDC 621-869-888 
+
+
+
+® BIS 1993 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+Octoder 1993 Price Group 4 
+
+
+
+Freight Containers Sectional Committee, HMD 12 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical to ISO 9711-2 : 1990 'Freight containers — Information 
+related to containers on board vessels — Part 2 : Telex data transmission', issued by the 
+International Organization for Standardization ( ISO), was adopted by the Bureau of Indian 
+Standards on the recommendation of the Freight Containers Sectional Committee ( HMD 12 ) 
+and approval of the Heavy Mechanical Engineering Division Council. 
+
+The text of ISO Standard has been approved for publication as Indian Standard without 
+deviations. Certain terminology and conventions are, however, not identical to those used in 
+Indian Standards. Attention is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they 
+should be read as 'Indian Standard'. 
+
+b) Comma ( , ) has been used as a decimal marker while in Indian Standards, the current 
+practice is to use a point ( . ) as the decimal marker. 
+
+In this adopted standard, reference appears to certain international standards for which Indian 
+Standards also exist. The corresponding Indian Standards which are to be substituted in their 
+place are listed below along with their degree of equivalence for editions indicated: 
+
+International Corresponding Indian Standard Degree of 
+
+Standard Equivalence 
+
+ISO 6346 : 1984 IS 6928 : 1992 Freight containers — Identical 
+
+Coding, identification and 
+marking {second revision) 
+
+ISO 9711-1 : 1990 IS 13698 ( Part 1 ) : 1993 Freight Identical 
+
+containers — Information related 
+to containers on board vessels: 
+Part 1 Bay Plan System 
+
+The concerned technical committee has reviewed the provisions of ISO 8601 and IMO 
+International Maritime Dangerous Goods Code ( IMDG ) 1986 consolidated addition referred in 
+this adopted standard and has decided that they are acceptable for use in conjunction with this 
+standard. 
+
+For the purpose of deciding whether a particular requirement of this standard is complied with, 
+the final value, observed or calculated, expressing the result of a test or analysis, shall be 
+rounded off in accordance with IS 2 : 1960 'Rules for rounding off numerical values ( revised' ). 
+The number of significant places retained in the rounded off value shall be the same as that of 
+the specified value in this standard. 
+
+
+
+IS 13698 (Part 2) : 1993 
+ISO 9711-2 :1990 
+
+
+
+Indian Standard 
+
+FREIGHT CONTAINERS — INFORMATION 
+RELATED TO CONTAINERS ON BOARD VESSELS 
+
+PART 2 TELEX DATA TRANSMISSION 
+
+
+
+1 Scope 
+
+This part of ISO 9711 specifies a uniform data infor- 
+mation system for transmitting all necessary data 
+and loading plans in a short period of time to the 
+next loading/discharging point using a telex or tele- 
+copy (telefax) communication system. 
+
+It is applicable to all standard freight containers 
+covered by International Standards and should, 
+wherever appropriate and practicable, be applied to 
+those containers not covered by International Stan- 
+dards. 
+
+It applies only to vessels stowing containers 
+longitudinally. 
+
+
+
+2 Normative references 
+
+The following standards contain provisions which, 
+through reference in this text, constitute provisions 
+of this part of ISO 9711. At the time of publication, 
+the editions Indicated were valid. All standards are 
+subject to revision, and parties to agreements based 
+on this part of ISO 9711 are encouraged to investi- 
+gate the possibility of applying the most recent edi- 
+tions of the standards indicated below. Members of 
+lEC and ISO maintain registers of currently valid 
+International Standards. 
+
+ISO 6346:1984, Freight containers - Coding, identifh 
+'nation and marking, 
+
+SO 8601:1988, Data elements and interchange for- 
+vats — Information interchange — Representation of 
+iates and times. 
+
+
+
+ISO 9711-1:1990. Freight containers — Information 
+related to containers on board vessels — Part 1: Bay 
+plan system, 
+
+IMO. International Maritime Dangerous Goods Code 
+(IMDG), 1986 consolidated edition. 
+
+
+
+3 Data information code 
+
+The data information code contains all required data 
+of the respective ship, including draught, trim sta- 
+bility, longitudinal moments, time of departure and 
+arrival, etc. 
+
+The data report shall consist of two sections: 
+
+— first, the vessel-related data section (see 3.1); 
+and 
+
+— second, the container-related data section (see 
+3.2 and 3.3). 
+
+
+
+3.1 Vessel-related data 
+
+The first section of the report shall provide the fol- 
+lowing information: 
+
+a) title of report consisting of the word "bay plan" 
+and the number of the bay plan; 
+
+b) date of telex transmission and telex number; 
+
+c) vessel identification 
+
+— coded name (international call sign), 
+
+— operator (owner's code as specified in 
+ISO 6346), 
+
+
+
+IS 13698 (Parts2) : 1993 
+ISO 9711-2 :1990 
+
+
+
+— voyage number (issued by operator), 
+
+— port where report is made [UN LoCode^i], 
+
+— next port of call (UN LoCode), 
+
+— date and time of departure (in accordance 
+with ISO 8601), 
+
+— expected date and time of arrival (in accord- 
+ance with ISO 8601). 
+
+An example of vessel-related data Is shown in 
+tablel- 
+
+
+
+Table 1 — Example of vessel-related data 
+
+
+
+Item 
+
+
+Explanation 
+
+
+Bay plan 74 
+
+
+Title and number of bay plan 
+
+
+1988-10-05/0635 
+
+
+Date (5 October 1988) and 
+telex number 
+
+
+Dake 
+
+
+International call sign for ves- 
+sel "Koln Express" 
+
+
+DE 
+
+
+ISO country code for Germany, 
+F.R. 
+
+
+HLCU 
+
+
+Owner's code in accordance 
+with ISO 6346 
+
+
+D012 
+
+
+Voyage number 
+
+
+DEHAM 
+
+
+UN LoCode for Hamburg 
+(where in this example report 
+is made) 
+
+
+USNYC 
+
+
+UN LoCode for New York (next 
+port of call in this example) 
+
+
+1988-1t)-06-14:30 
+
+
+Date and local time of depar- 
+ture [14 h 30 (2.30 p.m.)] 
+
+
+1988-10-10-8:30 
+
+
+Expected date and local time 
+of arrival 
+
+
+
+3.2 Container-related data 
+
+The second section of the report shall provide infor- 
+mation about the container and the cargo. 
+
+The container location shall be reported as follows: 
+
+— bay numbers, \n accordance with 
+ISO 9711-1:1990, 3.1, shall be given at the bottom 
+of the structured report; 
+
+— row numbers, in accordance with 
+ISO 9711-1:1990, 3.2, shall be given at the top of 
+the structured report and shall follow the data in 
+accordance with 3.1; 
+
+— layer or tier numbers, in accordance with 
+ISO 9711-1:1990, 3.3, shall be given on the left- 
+hand side of the structured report. 
+
+If all da^a for one bay cannot be placed within the 
+telex format width^), the bay plan should be divided 
+into 
+
+— one plan for containers on deck, and 
+
+— one plan for containers under deck. 
+
+These plans shall be subdivided into two pages: one 
+for containers above, respectively under, the port- 
+side and centre hatch covers and the other for those 
+above, respectively under, the starboard-side hatch 
+covers. 
+
+3.3 Cargo-related data 
+
+The report is structured in such a way that it re- 
+sennbles the actual layout of the vessel, in accord- 
+ance with the stowage plan specified in 
+ISO 9711-1:1990, clause 3. The report is subdivided 
+into fields, each of which represents one container. 
+Each field shall accommodate seven digits per line 
+and five lines (see figure 1 and figure 2). A field size 
+of 21 mm in width and 26 mm in height is recom- 
+mended for most telex systems. 
+
+
+
+1) The UN LoCode provides codes for names of ports, airports, Inland freight terminals, and other (ocations where customs 
+clearance of goods can take place. For details, see 
+
+United Nations Economic Commission for Europe (UN-ECE), Trade Facilitation, Trade Data Elements Directory 
+(TDED), 
+
+Copies of the UN-ECE/TDED may be obtained from the Secretarial UN-ECE Trade/WP. 4, Palais des Nations, CH-1 21 1 
+Geneva 10, Switzerland. 
+
+2) In accordance with international recommendation CCITT-S5, for telex communication, the maximum number of char 
+acters per line is 69. 
+
+
+
+IS 13698 (Part 2) : 1993 
+ISO 9711-2 :1990 
+
+
+
+vessel: dior = 
+row 06 
+
+
+
+"ragna ' = stm 
+
+04 
+
+
+
+saUing: 0012/ETA02-2M5 
+02 01 
+
+
+
+ETD02-22-15 
+03 
+
+
+
+05 
+
+
+
+tier 
+
+84 
+
+
+
+tier 
+
+82 
+
+
+
+: brelnyc : bre4nyc : bre4nyc : bre4nyc : 
+:113hlcu:113nlcu:120inincu:121hlcu: 
+: 234876<3 : 2015415 : 1765921 : 2765931 : 
+:hlc2022:hlc2011:nlc2034:hlc2022: 
+:d41 : ot: :w015 : 
+
+
+
+bre4nyc : bre2nyc: brelnyc :bre4tam:bre4tam:br el tarn 
+113hlcu:125hlcu:125hlcu:125nlcu:1241tiu:124hlcu 
+2734793:2176342:2434451:2067718:2734990:2443371 
+hlc2011:hic2022:hlc2011:ocl2012:ocl2012:hlc2022 
+ot:33 : : : :d41 
+
+
+
+bay 03 on decic port/starboard 
+
+
+
+row 06 
+
+
+
+04 
+
+
+
+02 
+
+
+
+01 
+
+
+
+03 
+
+
+
+05 
+
+
+
+tier 
+
+06 
+
+
+
+tier 
+04 
+
+
+
+tier 
+02 
+
+
+
+tier 
+
+01 
+
+
+
+:bre4tain: 
+:2031tiu; 
+:2013648: 
+:ocl2022: 
+:o33 : 
+
+
+>■ .». — ~. • ~-_.^ — — . • • < 
+
+: bre4tam : bre2tani : brelbal : bre2bal ■ 
+:210oclu:213hlcu:210nlcu;211oclu 
+: 2624567: 2114423: 2437882: 2467999 
+:ocl2011:nlc2022:hlc2022:ocl2011; 
+• 0+08^02 :c+08+02:c+08*02: ot: 
+
+
+: brelbal: 
+:214inincu: 
+:2011799: 
+:hlc2022: 
+
+
+
+
+t i • • • 
+
+;bre4bal :brelbal :bre4bal :bre2bal ■ 
+:213hlcu:2201tiu:225inmcu:215oclu. 
+: 2669544: 2067923: 2053331: 2987623 
+.hlc20H:ocl2011:hlc20l2:ocl2022: 
+
+* • * • 
+« » » 
+
+
+
+
+• \* 
+
+
+► — ~"*^ • —r — "~ "" . "— ^-. , — — — , 
+
+: :bre4bal:bre4bal: 
+: s :240ilcu:223oclu: 
+: : 759049 : 2834112: 
+
+^ :ocl2651:ocl2021: : 
+: ' : *) :d33 
+
+
+
+
+
+
+:bre4bal: 
+:228ilcu: 
+:769836 : 
+:ocl2651: 
+.: *) : 
+
+
+
+
+
+bay 03 below deck port/starboard 
+*) Example of half-height containers (see ISO 3711-1 : 1S30, 3.3) 
+
+Figure 1 — Example of the data code for a!! the containers In bay 03 
+
+
+
+IS 13698 (Part 2) : 1993 
+ISO 9711-2 : 1990 
+
+
+
+B 
+
+
+R 
+
+
+E 
+
+
+3 
+
+
+N 
+
+
+Y 
+
+
+C 
+
+
+Port of discharge 
+
+
+Movemer^t 
+
+
+Port of loading | 
+
+
+2 
+
+
+4 
+
+
+
+
+
+H 
+
+
+L 
+
+
+C 
+
+
+U 
+
+
+Mass 
+
+
+Owner code | 
+
+
+1 
+
+
+2 
+
+
+3 
+
+
+4 
+
+
+5 
+
+
+6 
+
+
+3 
+
+
+Serial number of container 1 
+
+
+H 
+
+
+L 
+
+
+C 
+
+
+2 
+
+
+
+
+
+2 
+
+
+2 
+
+
+operator 
+
+
+Size and type code | 
+
+
+c 
+
+
++ 
+
+
+1 
+
+
+3 
+
+
+5 
+
+
+
+
+
+
+Cargo-related information | 
+
+
+
+Figure 2 — Example of data code for an individual container 
+
+
+
+3.4 Field sizes for print-out 
+
+The recommended field height of 26 mm takes into 
+account the fact that the terminal operator may fill 
+in the bottom spare line with remarks on the stow 
+location. 
+
+If half-height containers are transported, the data 
+fields for both containers shall be placed one be- 
+
+
+
+neath the other. The upper container shall be placed 
+within the normal field of the bay plan, the lower 
+container at a column directly to the right beneath 
+the normal row column. 
+
+The identification code shall be as specified in 
+table 2. 
+
+
+
+IS 13698 (Part 2) : 1993 
+ISO 9711-2 :1990 
+
+
+
+Table 2 — identificatlpn codes 
+
+
+
+Data 
+
+
+
+Number of 
+digits 
+
+
+
+Explanation 
+
+
+
+Example 
+
+
+
+In the first line, the left-hand three digits shati indicate the dis- 
+charging port. The UN LoCode shall be used without the country 
+prefix. 
+
+
+
+B R E 
+
+
+
+The fourth digit in the first line shall indicate the movement status 
+by which the container Is operated by the shipping line, Arabic 
+numeral codes shall t>e used as follows: 
+
+1 Full container load (FCL) 
+
+2 Less than container load (LCL) 
+
+3 Empty 
+
+4 Trans-shipment 
+
+5 Additional transportation 
+
+Numeral codes 6 to 9 or alphabetic codes are open to operators' 
+specific demands and are subject to special agreement. 
+
+
+
+In the first line, the right-hand three digits shall indicate the port 
+of loading. The UN Lodode shall be used without the country pre- 
+fix. 
+
+
+
+3 
+
+
+
+NYC 
+
+
+
+In the second line, the left-hand three digits shall indicate con- 
+tainer gross weight per 100 kg (rounded). 
+
+
+
+The following four digits of the second line shall indicate the con- 
+tainer owner code in accordance with ISO 6346. 
+
+
+
+The third line shall comprise the seven-digit container serial 
+number, including the check digit In accordance with ISO 6346. 
+
+
+
+In the fourth line, the left-hand three digits shall indicate the con- 
+tainer operator; the owner code without the fourth digit "U" shall 
+be used In accordance with ISO 6346. 
+
+
+
+The following four digits of the fourth line shall Indicate the con- 
+tainer size and type code in accordance with ISO 6346. 
+
+
+
+2 4 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+H 
+
+
+t 
+
+
+C 
+
+
+u 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, 
+
+
+
+
+
+2 3 4 5 < 3 
+
+
+
+H L C 
+
+
+
+2 2 2 
+
+
+
+IS 13698 (Part 2) :1993 
+ISO 9711-2 :1990 
+
+
+
+Data 
+
+
+
+Number of 
+
+
+
+Explanation 
+
+
+
+Exampio 
+
+
+
+7 max. 
+
+
+
+The fifth line shall be reserved for cargo-related Information. 
+Arternatlvely, the foMowing Information shall t>e provided: 
+
+— Identification of <iangerous goods; 
+
+— Identification of temperature range of reefer cargo; 
+
+— Identification of out-of-gauge cargo. 
+
+a) Dangerous goods 
+
+The first left-hand digit shall be the letter "D" to Indicate the 
+Identification of dangerous goods. The following two digits 
+shall t>e used to identify the hazard class in accordance with 
+the IMDG code of the I MO. For containers loaded with differ- 
+ent types of dangerous goods, the remaining four digits may 
+t>e used to indicate two further hazard classes. 
+
+b) Temperature range of reefer cargo 
+
+For sensitive cargoes requiring more precise temperature 
+limits, the temperature scale code (for example, C for degrees 
+Celsius) shall be followed by three digits representing the 
+lower limit temperature only, In tenths of a degree. For ex- 
+ample C+135 would represent a sensitive cargo with a lower 
+temperature limit of + 13,5 "C. For such sensitive cargoes, It 
+Is clear that any upper Hmtt should be as do^e as practically 
+possible to the lower limit. 
+
+c) Out-of-gauge cargo 
+
+1) In the case of over-width cargo, the fourth digit shall be 
+the letter "W" to indicate over-width. The left-hand three 
+digits shall be used to show over-width on the left-hand 
+side of the container (left-hand viewed from door end to 
+closed end wall of container). The right-hand three digits 
+shall be used to indicate over-width on the right-hand side 
+of the container. Dimensions shal'l be expressed in centi- 
+metres. 
+
+2) In the case of over-height, the first digit of the fifth line 
+shall be the letter "H" . The following three digits shall 
+be used to show over-height In centimetres. 
+
+3) In the case of both over-width and over-height, this shall 
+be indicated as follows: the first three digits for over- 
+height; the remaining four digits for total over-width, for 
+example H25VV080. 
+
+d) For special cargo Information which cannot be condensed to 
+7 digits or which should l>e transmitted without abbreviation, 
+the letter "X" should be shown in the fifth line and repeated 
+at the end of the report with full text. 
+
+
+
+O 4 
+
+
+
+C 4 1 9 9 
+
+
+
+2 W 4 5 
+
+
+
+H 3 
+
+
+
+X 
+
+
+
+IS 13698 ( Part 2) : 1993 
+ISO 9711-2 :1990 
+
+
+
+Annex A 
+
+(informative) 
+
+Bibliography 
+
+[1] ISO 668:1988, Series 1 freight contair^ers — Classification, dimensions and ratings. 
+
+
+
+Reprography Unit, BIS, New Delhi, India 
+
+
+
+Standard Mark 
+
+The use of the Standard Mark is governed by the ptovisions of the Bureau of Indian 
+Standards Act, 1986 and the Rules and Regulations made thereunder. The Standard Mark 
+on products covered by an Indian Standard conveys the assurance that they have been 
+produced to comply with the requirements of that standard under a well defined system 
+of inspection, testing and quality control which is devised and supervised by BIS and 
+operated by the producer. Standard marked products are also continuously cheked by 
+BIS for conformity to that standard as a further safeguard. Details of conditions under 
+which a licence for the use of the Standard Mark may be granted to manufacturers or 
+producers may be obtained from the Bureau of Indian Standards. 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to 
+promote harmonious development of the activities of standardization, marking and quality 
+certification of goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced 
+in any form without the prior permission in writing of BIS. This does not preclude the free use, 
+in the course of implementing the standard, of necessary details, such as symbols and sizes, type 
+or grade designations. Enquiries relating to copyright be addressed to the Director 
+( Publications ), BIS. 
+
+RcTisioD of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards 
+are also reviewed periodically; a standard along with amendments is reaflBrmed when such review 
+indicates that no changes are needed; if the review indicates that changes are needed, it is taken 
+up for revision. Users of Indian Standards should ascertain that they are in possession of the 
+latest amendments or edition by referring to the latest issue of *BIS Handbook and 'Standards 
+Monthly Additions*. Comments on this Indian Standard may be sent to BIS giving the following 
+reference: 
+
+Doc : No. HMD 12 ( 0160 ) 
+
+Amendments issued Since PublicatioD 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 
+
+Telephones : 331 01 31, 331 13 75 Telegrams : Manaksanstha 
+
+( Common to all Offices ) 
+
+Regional Offices ; Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg C33l 01 31 
+
+NEW DELHI 110002 J33113 75 
+
+Eastern : 1/14 C. I. T. Scheme VII M, V. I. P. Road, ManiktoJa C37 84 99, 37 85 61 
+
+CALCUTTA 700054 {37 86 26, 37 86 62 
+
+Northern : SCO 445-446, Sector 35-C, CHANDIGARH 160036 H^ ^^ ^^* ^^ ^^ ^^ 
+
+Southern : C. I. T. Campus. IV Cross Road, MADRAS 600113 illl ?? ^^ ^^^ ^^ "^^ 
+
+{235 15 19, 235 23 15 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri ( East ) [632 92 95, 632 78 58 
+
+BOMBAY 400093 \632 78 91, 632 78 92 
+
+Branches : AHMADABAD. BANGALORE. BHOPAL- BHUBANESHWAR. COIMBATORE. 
+FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. 
+LUCKNOW. PATNA. THIRUVANANTHAPURAM. 
+
+
+
+Printed at Printwell Printers, Aligarh, India 
+
+
+

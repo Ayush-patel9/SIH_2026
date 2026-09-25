@@ -1,0 +1,75 @@
+{
+  "is_number": "IS IS_10144",
+  "standard_id": "IS IS_10144",
+  "title": "Indian Standard Specification / Test Method (IS IS_10144)",
+  "ia_identifier": "IS_10144",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the requirements and methods of tests for electronic speed limiters for diesel driven road transport vehicles. *Rules for rounding off numerical values (revised). 3 IS : 10144 - 1982",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 2106",
+      "standard_id": "IS 2106",
+      "title": "Indian Standard Specification / Test Method (IS 2106)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 269",
+      "standard_id": "IS 269:2013",
+      "title": "Specification for Ordinary Portland Cement, 33 Grade",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade number",
+    "Grade ifications",
+    "Grade rtilizers",
+    "Grade Tests",
+    "Grade Testa",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10144"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "2 Electronic speed limiter may also be marked with Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 31253
+}

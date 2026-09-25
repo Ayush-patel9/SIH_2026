@@ -1,0 +1,54 @@
+{
+  "is_number": "IS IS_11631",
+  "standard_id": "IS IS_11631",
+  "title": "Indian Standard Specification / Test Method (IS IS_11631)",
+  "ia_identifier": "IS_11631",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11631) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11631).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 226",
+      "standard_id": "IS 226",
+      "title": "Indian Standard Specification / Test Method (IS 226)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6603",
+      "standard_id": "IS 6603:2001",
+      "title": "Stainless Steel Bars and Flats",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11631"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "7.1 Each gambrel for sheep and goat shall be marked with the following information;",
+      "a) Manufacturer's name or trade-mark, if any;",
+      "c) Batch or code number; and",
+      "7.1.1 The marking shall be done at an appropriate and visible place.",
+      "7.1.2 IS/ Certification Marking — Details available with the Indian Standards Institution."
+    ]
+  },
+  "total_chars_parsed": 5090
+}

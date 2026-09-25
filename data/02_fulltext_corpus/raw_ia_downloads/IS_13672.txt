@@ -1,0 +1,1892 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live" 
+
+
+
+IS 13672 (1993) : Application layer structure in open 
+systems interconnection for information technology [LITD 
+14: Software and System Engineering] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New' 
+
+
+
+■K^y / 1 juaaaws^fea rs^^TTF^ 
+
+
+
+2*S< W I *>S*V2^NK^ 
+
+
+
+^frcvvv^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+.^^_ 
+
+
+
+• 
+
+
+
+
+BLANK PAGE 
+
+
+
+*rt*2V^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 13672: 1993 
+ISO/IEC 9545 : 1989 
+
+_ ( Reaffirmed 2003 ) 
+
+C\ NO 
+
+Indian Standard 
+
+APPLICATION LAYER STRUCTURE IN OPEN 
+SYSTEMS INTERCONNECTION FOR INFORMATION 
+
+TECHNOLOGY 
+
+
+
+UDC 681*327-8-01 
+
+
+
+©BIS 1993 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+March 1993 Price Group 7 
+
+
+
+Computer Systems and Interconnection Sectional Committee, LTD 36 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with ISO/IEC 9545 : 1989 'Information technology — 
+Open systems interconnection — Application layer structure', issued by the International 
+Organization for Standardization ( ISO ) was adopted by the Bureau of Indian Standards on 
+the recommendation of the Computer Systems and Interconnection Sectional Committee 
+( LTD 36 ) and approval of the Electronics and Telecommunication Division Council. 
+
+In the adopted standard certain terminology and conventions are however not identical to those 
+used in Indian Standards. Attention is particularly drawn to the following: 
+
+Wherever the words 'International Standard' appear, referring to this standard, they should 
+be read as 'Indian Standard'. 
+
+In this Indian Standard, the following international standards are referred to. Read in their 
+respective place the following: 
+
+International Standard Indian Standard 
+
+
+
+IS 12373 ( Part 1 ) : 1987 Basic reference 
+model of open systems interconnection for 
+information processing systems : Part 1 
+( Identical ) 
+
+IS 12373 (Part3):1993 Basic reference 
+model of open systems interconnection for 
+information processing systems : Part 3 
+Naming and addressing ( Identical ) 
+
+IS 13615: 1993 Service defintion for the 
+association control service element in open 
+systems interconnection for information 
+processing systems ( Identical ) 
+
+Doc LTD 36 (1636) Connection oriented 
+presentation service definition in open 
+systems interconnection for information 
+processing systems ( under preparation ) 
+( Identical ) 
+
+The technical committee responsible for the preparation of this standard has reviewed the 
+provisions of the following ISO Standard and has decided that it is acceptable for use In 
+conjunction with this standard: 
+
+ISO/TR 9007 : 1987 Information processing systems — Concepts and terminologies for the 
+conceptual scheme and the information base 
+
+Only the English language text in the International Standard has been retained while adopting 
+it in this standard. 
+
+
+
+ISO 7498 : 1984 Information processing 
+systems — Open systems intercon- 
+nection — Basic reference model 
+
+ISO 7498-3 : 1989 information process- 
+ing systems — Open systems 
+interconnection — Basic reference 
+model — Part 3 : Naming and 
+addressing 
+
+ISO 8649 : 1988 Information processing 
+systems — Open systems intercon- 
+nection — Service definition for the 
+association control service element 
+
+ISO 8822 : 1988 Information piocessing 
+systems — Open systems intercon- 
+nection — Connection oriented 
+presentation service definition 
+
+
+
+IS 13672 :1993 
+ISO/I EC 9545 :1989 
+
+
+
+Indian Standard 
+
+APPLICATION LAYER STRUCTURE IN OPEN 
+SYSTEMS INTERCONNECTION FOR INFORMATION 
+
+TECHNOLOGY 
+
+
+
+1 Scope 
+
+This International Standard refines the Basic 
+Reference Model for OSI to provide a framework for 
+co-ordinating the development of existing and future 
+Application Layer standards. It is provided for 
+reference by Application Layer standards. 
+
+In particular this International Standard: 
+
+a) defines the nature of standards in the 
+Application Layer and the relationships among 
+them; 
+
+b) defines the architectural framework in which 
+individual OSI Application Layer protocols shall 
+be developed. 
+
+c) defines the categories of identifiable objects 
+which are necessary for the specification and 
+operation of protocols; 
+
+d) relates distributed information processing 
+activities to the standards in the Application 
+Layer. 
+
+This International Standard does not specify services 
+and protocols for OSI. It is neither an implementation 
+specification for systems, nor a basis for appraising 
+the conformance of implementations. Further, it 
+addresses neither the requirements for, nor the form 
+of, documentation of such services and protocols. 
+
+
+
+2 Normative references 
+
+The following standards contain provisions which, 
+through reference in this text, constitute provisions of 
+this International Standard. At the time of publication, 
+the editions indicated were valid. All standards are 
+subject to revision, and parties to agreements based 
+on this International Standard are encouraged to 
+investigate the possibility of applying the most recent 
+editions of the standards listed below. Members of 
+IEC and ISO maintain registers of currently valid 
+International Standards. 
+
+ISO 7498 : 1984, Information processing systems - 
+Open Systems Interconnection - Basic Reference 
+Model. 
+
+ISO 7498-3: 1989, Information processing systems - 
+Open Systems Interconnection - Part 3: Naming and 
+Addressing. 
+
+ISO 8649: 1988, Information processing systems - 
+Open Systems Interconnection - Sen/ice Definition for 
+the Association Control Service Element. 
+
+ISO 8822: 1988, Information processing systems - 
+Open Systems Interconnection - Connection - 
+oriented presentation service definition. 
+
+ISO/TR 9007: 1987, Information processing systems - 
+Concepts and terminologies for the conceptual 
+schema and the information base. 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+3 Definitions 
+
+3.1 For the purposes of this International Standard, 
+the following terms as defined in ISO 7498 apply: 
+
+a) application-process; 
+
+b) application-entity; 
+
+c) (N)-function; 
+
+d) (N) -layer; 
+
+e) (N)-protocol; 
+
+f) (N)-protocol-control-information; 
+
+g) (N)-protocol-data-unit; 
+h) real open system; and 
+i) transfer syntax. 
+
+3.2 For the purposes of this International Standard, 
+the following terms as defined in ISO 7498-3 apply: 
+
+a) (N)-association; 
+
+b) (N)-directory-function; 
+
+c) (N)-protocoi-addressing-information; and 
+
+d) (N)-service-access-point-address. 
+
+3.3 For the purposes of this International Standard, 
+the following terms as defined in ISO/TR 9007 apply: 
+
+a) Conceptual Schema; 
+
+b) information Base; and 
+
+c) Universe of Discourse. 
+
+3.4 For the purposes of this International Standard, 
+the following terms as defined in ISO 8822 apply: 
+
+a) abstract syntax; and 
+
+b) presentation context. 
+
+
+
+3.5 For the purposes of this International Standard, 
+the following definitions apply. 
+
+3.5.1 application-association, association: A co- 
+operative relationship between two application-entity- 
+invocations for the purpose of communication of 
+information and co-ordination of their joint operation. 
+This relationship is formed by the exchange of 
+application-protocol-control-information using the 
+Presentation Service. 
+
+3.5.2 application-context: A set of rules shared in 
+common by two application-entity-invocations in 
+order to enable their co-operative operation (see 5.7). 
+
+NOTE 1 — An application-context is a shared conceptual 
+schema for the universe of discourse for communication. 
+
+3.5.3 application-context-definition: The description 
+
+of an application-context. 
+
+3.5.4 application context name: A name that 
+unambiguously identifies an application-context- 
+definition. 
+
+3.5.5 application-entity-invocation: A specific 
+utilization of part or all of the capabilities of a given 
+application-entity in support of the communications 
+requirements of an application-process-invocation. 
+
+3.5.6 application-entity-type: A description of a 
+class of application-entities in terms of a set of 
+capabilities defined for the Application Layer. 
+
+3.5.7 application-process-invocation: A specific 
+utilization of part or all of the capabilities of a given 
+application-process in support of a specific occasion 
+of information processing. 
+
+3.5.8 application-process-type: A description of a 
+class of application-processes in terms of a set of 
+intenvorking capabilities. 
+
+3.5.9 application-service-element: A set of 
+
+application-functions that provides a capability for the 
+interworking of application-entity-invocations for a 
+specific purpose. 
+
+NOTE 2 —This definition refines the original definition of 
+application-service-elements in ISO 7498. 
+
+
+
+IS 13672 :1993 
+ISO/I EC 9545 :1989 
+
+
+
+3.5.10 association control service element: An 
+
+appfication-service-element that provides the 
+exclusive means for establishing and terminating ail 
+application-associations. 
+
+NOTE 3 — The functionality of this application-service- 
+element is defined in ISO 8649. 
+
+3.5.11 multiple association control function: A 
+
+component of the application-entity-invocation that 
+co-ordinates the interactions among multiple 
+associations within an application-entity-invocation in 
+order to provide a co-ordinated service. 
+
+3.5.12 single association control function: The 
+
+component of a single association object that 
+represents the use of those rules in the application- 
+context concerning interactions among application- 
+service-elements within a single association object. 
+
+3.5.13 single association object: The collection of 
+things in an application-entity-invocation related to a 
+single application-association. 
+
+4 Abbreviations 
+
+
+
+ACSE 
+
+
+Application Control Service 
+
+
+
+
+Element 
+
+
+AE 
+
+
+application-entity 
+
+
+AP 
+
+
+application-process 
+
+
+APDU 
+
+
+application-protocol-data-unit 
+
+
+APCI 
+
+
+application-protocol-control- 
+
+
+
+
+information 
+
+
+ASE 
+
+
+application-service-element 
+
+
+MACF 
+
+
+multiple association control 
+
+
+
+
+function 
+
+
+OSI 
+
+
+Open Systems Interconnection 
+
+
+SACF 
+
+
+single association control function 
+
+
+SAO 
+
+
+single association object 
+
+
+
+5 Application Layer Concepts 
+
+
+
+5.1 Introduction 
+
+
+
+5.1.2 The Application Layer is supported by the lower 
+layers in OSI. In particular, the Presentation Layer 
+contains facilities for representing information 
+exchanged between application-entities (AEs), and 
+the Session Layer contains mechanisms that may 
+be used for controlling interactions between AEs. 
+
+5.1.3 The Application Layer differs from the other 
+layers of OSI in several important respects. Entities 
+in the Application Layer are made up of a collection of 
+application-service-elements (ASEs), each of which is 
+defined by a set of service and protocol standards. 
+These ASEs are combined in various ways to form 
+various types of AEs. The Application Layer, as the 
+highest layer of OSI, does not provide connections 
+within the Application Layer. As a result, relationships 
+formed by the transfer of information between AE- 
+invocations in the Application Layer have particular 
+significance. 
+
+5.2 Fundamental concepts 
+
+5.2.1 In ISO 7498, the co-operative operation of real 
+open systems is modelled in terms of the interactions 
+between application-processes (APs) in these 
+systems. An AP is an abstract representation of 
+those elements of a real open system which perform 
+information processing for a particular application. 
+Depending upon the nature of an application, an AP 
+may only needi to communicate with other APs 
+intermittently; moreover, the set of APs involved in 
+distributed processing for an application may change 
+with time. 
+
+5.2.2 Co-operative operation between APs requires 
+that they share sufficient information to interact and 
+carry out processing activities in a compatible 
+manner. 
+
+NOTE —This shared information is referred to as a universe 
+of discourse in the terminology of ISO/TR 9007. The 
+description of a universe of discourse is a conceptual 
+schema. 
+
+
+
+5.1.1 International Standards for OSI are intended to 
+support the communication requirements of 
+applications (i.e., information processing tasks) 
+requiring co-ordinated processing activities in two or 
+more real open systems. In particular, standards for 
+the OSI Application Layer define procedures for the 
+support of distributed information processing, 
+
+
+
+5.2.3 The information determining the nature of the 
+interactions between AP-invocations is of three kinds: 
+
+a) Information describing the set of objects 
+(using this term in its most general sense) which 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+are the subject of distributed information 
+processing activities. 
+
+b) Information describing the procedures to be 
+used to effect communication between the AP- 
+invocations for the control and co-ordination of 
+distributed information processing. 
+
+c) Information representing the net effect (i.e., 
+state) of past interactions between the AP- 
+invocations. 
+
+NOTE — This is a portion of the shared information base in 
+the terminology of ISO/TR 9007. 
+
+The purpose of OSi Application Layer standards is to 
+provide definitions of procedures for interworking 
+which are related to these three kinds of information. 
+
+5.2.4 The structuring of the Application Layer into 
+components described in this International Standard 
+does not prescribe whether the information contained 
+in any. one of these components is, or is not, 
+accessible to any other component that may be 
+present in the AE-invocation of which it is a part. 
+
+5.3 Application-Processes 
+
+5.3.1 An AP represents a set of resources, including 
+processing resources, within a real open system that 
+may be used to perform a particular information 
+processing activity (the AP concept is defined in ISO 
+7498). An AP may organise its interactions with other 
+APs in whatever way is necessary to achieve a 
+particular information processing goal: no constraints 
+are imposed by this International Standard either on 
+the form of these interactions or on the possible 
+relationships that may exist between them. 
+
+NOTE-For instance, an AP could schedule its interactions 
+with other APs to take place either sequentially or 
+concurrently, 
+
+5.3.2 The activity of a given AP is represented by one 
+or more AP-invocations. Co-operation between APs 
+takes place via relationships established among AP- 
+invocations. At a particular time, an AP may be 
+represented by none, one or more AP-invocations. 
+An AP-invocation is responsible for co-ordinating its 
+interactions with other AP-invocations. Such co- 
+
+
+
+ordination is outside the scope of this International 
+Standard. 
+
+5.4 Application-Entities 
+
+5.4.1 The aspects of an AP which need to be taken 
+into account for the purpose of OSI are represented 
+by one or more AEs. An AE represents a set of OSI 
+communication capabilities of a particular AP. 
+
+5.4.2 An AE represents one, and only one, AP in the 
+OSI environment. Different APs may be represented 
+by AEs of the same AE-type. An AP may be 
+represented by a set of AEs: each AE in this set is of a 
+different AE-type. 
+
+5.4.3 An AE-invocation represents a specific use of 
+the capabilities of an AE. It represents specific 
+communication activities of an AP-invocation and is 
+an integral part of that AP-invocation. The aspects of 
+an AP-invocation that need to be taken into account 
+for the purposes of open systems interconnection 
+are represented by one or more AE-invocations. 
+
+5.4.4 An AE-invocation models the communication 
+functions together with the associated state 
+information for particular communication activities of 
+an AP-invocation. Such activities are progressed 
+through communication between AE-invocations 
+related by application-associations. 
+
+5.4.5 An AE-invocation may be a partner in a 
+number of application-associations either 
+consecutively or concurrently. The number of these 
+application-associations may change with time. In 
+particular, there may be periods of time when an 
+AE-invocation is not a party to any application- 
+associations. The lifetime of an AE-invocation is not 
+determined by the duration of the application- 
+associations in which it is a participant. 
+
+5.4.6 The state information modelled by an AE- 
+invocation reflects the net effect of its 
+communications with other AE-invocations. The 
+existence of this state information provides a basis for 
+modelling the co-ordinated consecutive or 
+concurrent use of multiple application-associations. It 
+also provides a basis for modelling a relationship, 
+between a pair of AE-invocations, whose duration is 
+not bound to the lifetime of a particular application- 
+association. For example, this provides one possible 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+method for modelling the continuation of an activity 
+following the loss of an application-association. 
+
+5.4.7 The lifetime of an AE-invocation is controlled 
+by the AP-invocation which it represents in the OSI 
+environment. An AP-invocation may have a longer 
+lifetime than any or all of its AE-invocations. There 
+may be zero or more AE-invocations representing an 
+AP-invocation at any particular time. 
+
+5.5 Application-Service-Elements 
+
+5.5.1 An ASE is a set of functions that provides OSI 
+communication capabilities for the interworking of 
+AE-invocations for a specific purpose. 
+
+NOTE - Different functions can be grouped into one single 
+ASE or split into several ASEs. In Order to avoid 
+unnecessary proliferation of different ASEs, the following 
+should be considered: 
+
+a) grouping of functions into an ASE must contain at 
+least all the functions and the corresponding APDUs 
+which are required for a protocol machine which is 
+logically complete and consistent in itself; 
+
+b) the grouping of functions into different ASEs has to 
+occur in such a way that the ASEs can be specified 
+independently of each other. 
+
+5.5.2 The capabilities of an ASE shall be defined by 
+the specification of a set of application-protocol-data- 
+units (APDU) and the procedures governing their 
+use. This constitutes the application-protocol between 
+two ASEs of the same kind. 
+
+5.5.3 An AE may be composed of one or more ASEs 
+of different kinds in order to realize a specific 
+composite communication capability for a particular 
+purpose. 
+
+5.6 Application-Associations 
+
+5.6.1 An application-association is a co-operative 
+relationship between two AE-invocations for the 
+purpose of communication of information and co- 
+ordination of their joint operation. This relationship is 
+formed by the exchange of application-protocol- 
+control-information (APCI) using the Presentation 
+Service. The properties of this relationship are 
+characterised by a set of rules and state information 
+
+
+
+governing the mutual communication behaviour of 
+the particular pair of AE-invocations. 
+
+NOTE _ The pair of AE-invocations in an application- 
+association may have different roles; as a consequence they 
+may exhibit complementary rather than similar 
+communication behaviours. 
+
+5.6.2 When communication is required between two 
+AEs to meet the needs of an application, one or more 
+application-associations are established between 
+AE-invocations of the two AEs. An AE-invocation 
+may support a number of application-associations 
+simultaneously, sequentially or both, with one or 
+more other AE-invocations. 
+
+5.6.3 An application-association-identifier may be 
+associated with an application-association. This 
+application-association-identifier is unique within the 
+scope of the pair of associated AE-invocations. It 
+provides the means to identify the related state 
+information in each AE-invocation. 
+
+5.7 Application-Context 
+
+5.7.1 A pair of AE-invocations must have shared 
+knowledge, and follow a common set of rules that 
+governs their communication. Such a set of rules is 
+called an application-context. 
+
+NOTE - An application-context is a shared conceptual 
+schema for the universe of discourse for communication. 
+
+5.7.2 An application-association has only one 
+application-context. The set of rules that make up the 
+application-context may contain rules for alteration of 
+that set of rules. The set of rules may contain 
+alternatives, together with rules for selecting among 
+these alternatives according to the requirements of 
+the APs. 
+
+NOTE — The use of a rule to select among alternative rules 
+within an application-context does not constitute an 
+alteration of the application-context. However, the use of a 
+selection rule does change the state information 
+maintained by AE-invocations with respect to an 
+application-association. 
+
+5.7.3 An application-context includes the rules that 
+describe a set of things that must be known by both 
+AE-invocations, relationships among those things, 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+actions which may be performed on them, and 
+permitted states of affairs concerning them. The set 
+of things which must be known by both AE- 
+invocations includes those which may be the subject 
+of communications with respect to an application- 
+association, including those things which provide 
+capabilities for exchanging information (such as 
+ASEs) and information to be exchanged between AE- 
+invocations (categories of APCI to be exchanged). 
+
+NOTE — An application-context-definition does not specify 
+the nature of the co-operative processing tasks carried out 
+by the partners of an application-association. 
+
+5.7.4 The set of rules in an application-context will 
+always include a specification of a set of ASEs (by 
+reference to the ASE specification standards), and 
+may also include (but is not limited to): 
+
+a) specifications of the logical structure of 
+information to be exchanged or referenced; 
+
+b) specification of invocation dependencies 
+between the ASEs, beyond those dependencies 
+contained within the ASE specifications; 
+
+c) rules concerning the selection and use of 
+optional features of the ASEs; 
+
+
+
+i) rules concerning the addition, modification and 
+deletion of rules. 
+
+5.7.5 The sequencing rules for the use of the services 
+of the ASEs in combination specify a composite 
+service. The resulting operation of the ASEs in 
+combination generates the composite protocol that 
+supports that service. 
+
+5.7.6 An application-context may contain rules 
+describing mechanisms that enable AE-invocations to 
+transfer information for multiple association co- 
+ordination purposes. It may also contain shared rules 
+governing the use of such mechanisms for the 
+purpose of multiple association co-ordination. 
+
+5.7.7 The definition of an application-context may be 
+written in a natural language, or in a formal language. 
+Such a definition is called an appiication-context- 
+definition. An application-context-definition may 
+directly define some application-context rules and 
+may reference others that have been defined 
+elsewhere (e.g. in other application-context-definitions 
+or in ASE standards). 
+
+5.7.8 The application-context that applies to an 
+application-association is determined during its 
+establishment in either of the following ways: 
+
+
+
+d) any additional rules, beyond those 
+contained in the ASE specifications, governing 
+the sequence of use of the service primitives, 
+and in consequence the sequence of the 
+APDUs, of each ASE; 
+
+
+
+a) by identifying a 
+context-definition; or 
+
+
+
+pre-existing application- 
+
+
+
+b) by transferring an actual description of the 
+application-context. 
+
+
+
+e) rules for the co-ordinated operation of ASEs 
+(such as rules for the interleaving of service 
+requests and APDUs from different ASEs); 
+
+f) rules concerning the mapping of the APCI 
+from ASEs on to the services of either the 
+Presentation Layer and/or of other ASEs; 
+
+g) designation of application-functions, such as 
+application directory functions, and rules 
+governing their use; 
+
+h) rules concerning information that has a lifetime 
+that is greater than the lifetime of an application- 
+association; and 
+
+
+
+\n particular, a name may be used to identify a pre- 
+existing application-context-definition. 
+
+NOTES 
+
+1 The predominant method of determining application- 
+contexts is expected to be by reference to pre-existing 
+application-context-definitions. 
+
+2 The allocation of names to pre-existing application- 
+context-definitions will be the subject of registration 
+procedures as described in clause 9 of this International 
+Standard. 
+
+5.7.9 The communications behaviour of an AE- 
+invocation over an application-association is 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+constrained to be compatible with a generic 
+behaviour defined by the application-context in use. 
+
+5.7.10 An application-context shall be defined in such 
+a manner as to ensure that the ASEs it references use 
+Presentation and ACSE services in a compatible 
+manner. 
+
+
+
+5.10 Multiple Association Co-ordination 
+
+5.10.1 Co-ordination of related activities on several 
+application-associations may require: 
+
+a) sequencing of activities on different 
+associations; 
+
+
+
+5.7.11 When an AE-invocation supports a number of 
+concurrent application-associations, there is no 
+architectural requirement that each of these 
+application-associations use the same application- 
+context, 
+
+5.8 Single Association Object 
+
+5.8.1 A single association object (SAO) is the 
+component of an AE-invocation that models the 
+functions and state information related to the 
+operation of an individual application-association. The 
+lifetime of an SAO is identical to the lifetime of the 
+association it supports. It does not model the 
+existence of state information or application-functions 
+related to multiple association co-ordination 
+functions. An SAO contains one or more ASEs (one 
+of which is always the Association Contro\ Service 
+Element - ACSE) and a Single Association Control 
+Function. 
+
+5.8.2 The application-context for an individual 
+application-association contains rules for the 
+composition and operation of the SAO supporting 
+that application-association within the AE-invocation. 
+
+5.8.3 At a particular time an AE-invocation may 
+contain none, one or more SAOs. When an AE- 
+invocation contains more than one SAO, the 
+combinations of ASEs within them may be different. 
+
+5.9 Single Association Control Function 
+
+The Single Association Control Function (SACF) is 
+the component of the SAO that models the co- 
+ordination of the interactions among the ASEs 
+contained in the SAO and also models the co- 
+ordination of their use of the Presentation Service. 
+The rules concerning these interactions are defined 
+by the application-context of the application- 
+association. 
+
+
+
+b) maintenance of consistency relationships 
+between activities on different associations; and 
+
+c) any other rules necessary for the utilization of 
+multiple associations. 
+
+5.10.2 Co-ordination of related activities may be the 
+responsibility of a single AE-invocation or may be 
+shared by a group of co-operating AE-invocations in 
+two or more open systems. 
+
+5.10.3 A set of application-functions that co-ordinates 
+related activities on several associations is 
+represented in the structure of an AE-invocation by a 
+multiple association control function (MACF). A 
+MACF together with the objects that are under its 
+control provide a composite service. 
+
+NOTE — The co-ordination activities in multiple AE- 
+invocations representing one AP-invocation may operate 
+together to provide an integrated co-ordination capability. 
+
+5.10.4 A MACF may provide either or both of the 
+following forms of co-ordination: 
+
+a) localized co-ordination, resulting from the 
+autonomous operation of an AE-invocation, 
+which does not require explicit communications; 
+
+b) distributed co-ordination, resulting from the 
+co-operative operation of AE-invocations in 
+different open systems, which does require 
+explicit communications. 
+
+NOTE — The distribution of co-ordination functions among a 
+group of AE-invocations in two or more open systems 
+requires agreement on the co-ordination functions 
+performed by each of the AE-invocations. 
+
+5.10.5 When it is necessary for two AE-invocations to 
+have a shared understanding of the rules for co- 
+ordination of multiple associations, those shared rules 
+will be contained within the application-context- 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+definition. Localized co-ordination rules are not part of 
+the application-context-definition. 
+
+5.10.6 The communications requirements of a MACF 
+are supported by the generation of protocol on 
+individual associations. 
+
+5.10.7 Those rules of an application-context providing 
+support for multiple association co-ordination may 
+be contained in specifications of ASEs, specifications 
+of abstract syntaxes, or be part of the rules for the 
+combined operation of ASEs. 
+
+5.10.8 Within an AE-invocation, a MACF may co- 
+ordinate the activity on all or only a subset of the 
+application-associations. 
+
+5.10.9 A MACF specification comprises: 
+
+a) a definition of the set of services made 
+available by the combined operations over the 
+associations; 
+
+NOTE — Services within the scope of such a co- 
+ordination may or may not be made visible by the 
+MACF specification. 
+
+b) a specification of the use of services 
+provided by objects under its control; this may 
+include: 
+
+1) temporal ordering rules for the services; 
+
+2) the interrelationships between the use of 
+services; 
+
+3) the specification of information which 
+must be exchanged between AE-invocations 
+for the purpose of co-ordination. 
+
+5.11 Names and Directory Functions 
+
+5.11.1 As specified in ISO 7498-3, application- 
+directory-functions process presentation-addresses, 
+AE-titles, and application-protocol-addressing- 
+information to provide mappings among these 
+categories of information. Conceptually, these 
+functions are performed by the AE-invocation to 
+derive the addressing information required. 
+
+
+
+5.11.2 Information on these mappings may be held 
+locally and made available for access by 
+application-directory-functions, or it may be held 
+remotely. It is a locarresponsibility to retrieve the 
+information and make it available to an application- 
+directory-function, if this information is stored 
+remotely, OSI protocols may be used to access that 
+information. 
+
+NOTE ~H is not required that every AE contain an ASE that 
+provides the service to retrieve this remote information; local 
+system management may obtain this service from another 
+AE, even another AE in another AP. 
+
+5. 1 1 .3 The procedures which constitute the 
+application-directory-functions are modelled within 
+the AE independent of any particular ASE. 
+
+NOTE — Application-directory-functions are an example of 
+application-functions that are modelled within the AE 
+independent of any particular ASEs. Other such application- 
+functions may support aspects of security activities, 
+management activities, etc. 
+
+5.11.4 In ISO 7498-3, several kinds of name are 
+defined in order to enable the identification of certain 
+objects in the Application Layer. These kinds of name 
+are: 
+
+a) application-process-title; 
+
+b) application-entity-title; 
+
+c) application-process-invocation-identifier; 
+
+d) application-entity-invocation-identifier; 
+
+e) application-association-identifier; 
+
+f) appiication-process-type-title; 
+
+g) application-entity-type-title; and 
+
+h) system-title. 
+
+The ways in which they may be used in the operation 
+of application-directory-functions and the 
+identification of specific Application Layer objects are 
+described in ISO 7498-3. 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+6 Operation 
+Invocations 
+
+
+
+of Application-Entity- 
+
+
+
+6.1 Use of Application Associations 
+
+6.1.1 Capabilities for the establishment and 
+termination of application-associations are contained 
+in a specific ASE: the ACSE. This ASE is a necessary 
+part of AEs. 
+
+6.1.2 In establishing an application-association, an 
+AE-invocation specifies to the Presentation Service 
+the location of a peer AE by its presentation-address. 
+Additionally, It may use one or more of the following 
+identifiers for the selection of a peer AE-invocation: 
+
+a) AP-invocation-identifier; 
+
+b) AE-invocation-identifier. 
+
+An AE-invocation may also use an application- 
+association-identifier in order to identify the 
+application-association and the SAOs within the 
+related AE-invocations. 
+
+6.1.3 In addition, related AE-invocations may transfer 
+AP-title and AE-title information during the 
+establishment of an application-association. This 
+information identifies the peer AEs in a way that is 
+independent of their presentation-addresses. 
+
+6.1.4 The termination of an application-association 
+results from the action of the related AE-invocations. 
+AE-invocations may take such action in response to a 
+failure in communications visible in the Presentation 
+Service. 
+
+6.2 Use of the Presentation Service 
+
+6.2.1 An AE is attached to one or more presentation- 
+service-access-points in order to make it addressable 
+in the OSI environment. 
+
+
+
+transfer these APDUs between AE-invocations using 
+the Presentation Service it is necessary to establish 
+one or more presentation-contexts for each abstract 
+syntax. During an association, occurrences of these 
+APDUs are linked to presentation-contexts. Each 
+presentation-context specifies a pairing of a particular 
+abstract syntax with a transfer syntax. 
+
+6.2.4 An application-association is bound to a single 
+presentation-connection, it does not span concurrent 
+or consecutive presentation-connections. 
+
+NOTE In this way ft is a restricted use of the (N)- 
+association concept. The general (N)-association concept 
+allows such spanning. 
+
+6.3 Co-ordination of ASE Activities 
+
+6.3.1 Communication within an application- 
+association makes use of one or more ASEs in each 
+of its AE-invocations. There are two aspects to the co- 
+ordination of ASEs: 
+
+a) co-ordination of ASEs within an SAO; 
+
+b) co-ordination of peer ASE activities in related 
+SAOs. 
+
+Both of these aspects are governed by means of 
+rules in the application-context of the application- 
+association. 
+
+6.3.2 The operation of ASEs in an SAO may be 
+organised in whatever way is necessary for a 
+particular association, as defined by the application- 
+context that applies to the association. In some 
+cases the operation of ASEs may be organised so as 
+to enable the shared use of particular presentation- 
+services by means of the concatenation of APDUs 
+from different ASEs. 
+
+NOTES 
+
+
+
+6.2.2 The communicating AE-invocations use the 
+Presentation Service to transfer APDUs between 
+each other. The method of use of the Presentation 
+Service is prescribed by the rules of the application- 
+context of an application-association. 
+
+6.2.3 The structure of the APDUs of an ASE is 
+specified by at least one named abstract syntax. To 
+
+
+
+1 The specification of an ASE should take into account any 
+particular requirements for Ks operation in combination with 
+other ASEs in an SAO. Such requirements may concern the 
+co-operative use of ASE services and presentation-services. 
+
+In particular, assumptions regarding the way in which the 
+establishment and termination of associations is achieved 
+can seriously affect the feasibility of the combined operation 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+of ASEs. For instance, an ASE may require access to ACSE 
+services; alternatively, or perhaps optionally, it may be 
+capable of using a pre-existing association, 
+
+2 The relationship between the initialization phase of an 
+application-protocol and procedures for application- 
+association establishment needs to be clearly defined. The 
+initialization phase of an application-protocol may be 
+related to such procedures in one or both of the following 
+ways: 
+
+a) it may be invoked at the time of association 
+establishment; 
+
+b) it may be invoked at points during the lifetime of an 
+association. 
+
+6.4 Co-ordination of the Activities of an AE- 
+Invocation 
+
+An AE-invocation may control its activities within 
+several application-associations either to ensure their 
+independence or to co-ordinate them in ways 
+necessary to satisfy a specific communication 
+requirement 
+
+6.5 Error Recovery within an Application- 
+Association 
+
+6.5.1 The action to be taken in the event of errors that 
+are visible within an application-association is 
+prescribed by rules in the application-context of the 
+application-association. Following such errors, the 
+application-association may be terminated or, in 
+some cases, communication may be resumed from a 
+mutually acceptable point. 
+
+6.5.2 An application-association-identifier may be 
+used to denote a particular application-association as 
+part of the error recovery procedures specified in an 
+application-context. 
+
+7 Description of Application-Service- 
+Element Standards 
+
+7-1 An ASE is defined in terms of a service definition 
+and a protocol specification. 
+
+7.2 An important part of an ASE definition may be the 
+description of a model explaining the requirements of 
+the service user. Such a model may include reference 
+
+
+
+to more general models. Their descriptions must 
+remain conceptual, carrying the appearance within 
+OSI of their real operation. No implementation 
+conformance requirements can be derived from such 
+models. 
+
+7.3 A service definition conveys the understanding of 
+the function carried out by the ASE. It is the first step 
+that leads to the specification of the corresponding 
+protocol. By analogy with the service definitions at the 
+OSI layer boundaries, the service definitions for ASEs 
+are conceptual and do not imply conformance. 
+
+7.4 A protocof specification defines the structure for 
+the exchange of information between peer ASEs. In 
+so doing, the protocol specification may make use 
+of other Application Layer services and/or the 
+Presentation Service. 
+
+8 Abstract Syntax Definition 
+
+8.1 An abstract syntax is made up of those aspects 
+of the rules used in the formal specification of data 
+which are independent of the encoding techniques to 
+represent the data. 
+
+8.2 For a given ASE the structure of the APDUs is 
+specified by a set of one or more abstract syntaxes. 
+The structure of any user information conveyed 
+within these APDUs on an association is specified by 
+another set of one or more abstract syntaxes. 
+
+8.3 A name may be assigned to the definition of an 
+abstract syntax. Such a name may be used in the 
+specification of requirements for the establishment of 
+a presentation context by the Presentation Service. 
+
+9 Registration Requirements 
+
+9.1 The use of Application Layer International 
+Standards requires the establishment of registration 
+procedures for the assignment of names (which are 
+unambiguous throughout the OSI environment) for 
+the following objects: 
+
+a) The Application Layer related objects from the 
+list in 13.1 of ISO 7498-3; 
+
+b) The following additional objects: 
+
+1) abstract syntaxes; 
+
+
+
+10 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+2) application-contexts; 
+
+3) application-entities. 
+
+9.2 An abstract syntax definition or an application- 
+context-definition that is registered may be an 
+
+
+
+international or national standard, a published 
+definition developed by a community of interest, or a 
+private agreement. 
+
+9.3 The registration procedures used in each of these 
+situations should be compatible with an internationally 
+recognized framework for registration procedures. 
+
+
+
+11 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+Annex A 
+
+(informative) 
+
+Examples of the structure of AE-lnvocations 
+
+
+
+This annex provides tutorial material which is 
+intended to aid in understanding the relationships 
+between some of the Application Layer structuring 
+concepts described in this International Standard. 
+
+
+
+In particular, figures are provided to illustrate the 
+internal structure of an AE-invocation as it might be 
+viewed at a particular instant in time. 
+
+
+
+A.1 A simple AE-invocation 
+
+
+
+
+key: 
+ACSE = Association Control Service Element 
+ASE = Example Application Service Element 
+SACF = Single Association Control Function 
+SAO = Single Association Object 
+m - application-association 
+
+
+
+Figure A.1 — Simple AE-invocation 
+
+
+
+Figure A.1 illustrates a simple case, where an AE- 
+Invocation is engaged in exactly one application- 
+association at the time, and therefore contains one 
+SAO. 
+
+
+
+The SAO contains two ASEs (ACSE and a simple 
+"user" ASE in this example) and a SACF, which 
+models the use of the rules in the application-context 
+that concern interactions between the two ASEs. . 
+
+
+
+12 
+
+
+
+Printed at Dee Kay Printers, New Delhi, India 
+
+
+
+IS 13672 :1993 
+ISO/IEC9545 :1989 
+
+
+
+A.2 A complex AE-invocation 
+
+
+
+; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VPPLilV^/Vl XU1N— £j!N X X JL X X1N V W^rtX lUli 
+
+
+
+
+
+
+
+
+MACF 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n*'~* i r> 7v r\ o c* A /^ O 
+
+
+
+
+
+
+b/ 
+
+
+S 
+
+
+L 
+
+ASE1 
+
+
+>jt 
+
+
+S 
+
+
+ASE3 
+
+
+
+
+S 
+
+
+ASE5 
+
+
+
+
+
+
+
+
+
+
+A 
+C 
+
+
+
+
+
+
+A 
+C 
+
+
+
+
+
+
+A 
+C 
+
+
+
+
+
+
+
+
+
+
+
+
+ASE2 
+
+
+
+
+ASE4 
+
+
+
+
+ASE6 
+
+
+
+
+
+
+
+
+
+
+F 
+
+
+
+
+
+
+F 
+
+
+
+
+
+
+F 
+
+
+
+
+
+
+
+
+
+
+
+
+ACSE 
+
+
+
+
+ACSE 
+
+
+
+
+ACSE 
+
+
+
+
+
+
+
+
+■ 
+
+
+m 
+
+
+■ 
+
+
+
+
+■ ■ ■ 
+
+
+
+
+
+
+■ ■ ■ 
+
+
+key 
+
+
+
+
+
+
+ACSE 
+
+
+= Association Control Service Element 
+
+
+ASE = 
+
+
+Example Application Service Element 
+
+
+SACF 
+
+
+= Single Association Control Function 
+
+
+SAO 
+
+
+= Single Association Object 
+
+
+
+
+■ 
+
+
+= Application-Association 
+
+
+
+
+■ 
+
+
+
+
+
+
+
+Figure A.2 — Complex AE-invocation 
+
+
+
+Figure A.2 illustrates a more complex case in which 
+the AE-invocation is simultaneously engaged in three 
+application-associations, and therefore it contains 
+three SAOs. The first of these associations is used in 
+a manner that is independent of the activities taking 
+place in the other associations. The second and third 
+associations are used in a manner that requires co- 
+ordination of their activities, therefore the MACF is 
+present in this AE-invocation to control these two 
+SAOs. In order for the MACF to communicate with the 
+MACF in the correspondent AE-invocation, the 
+second and the third SAOs may contain one or more 
+ASEs that have functions to provide communication 
+capabilities on this individual association in support of 
+the MACF. 
+
+
+
+support the communications requirements of the 
+MACF, as necessary; 
+
+b) some or all of the SAOs supporting the 
+multiple associations for a single AE-invocation 
+may be under the control of the MACF as 
+necessary; 
+
+c) the associations controlled by the MACF in a 
+single AE-invocation may exist and be used 
+sequentially and/or simultaneously; 
+
+d) in order to support its own communications 
+requirements, the MACF may utilize one or more 
+ASEs in one or more SAOs; 
+
+
+
+The following should be noted: 
+
+a) SAO 2 and SAO 3 might both contain none, 
+one, or more ASEs that provide functions to 
+
+
+
+e) in some cases, the MACF may have no 
+communications requirements of its own. 
+
+
+
+13 
+
+
+
+Standard Mark 
+
+The use of the Standard Mark is governed by the provisions of the Bureau of Indium 
+Standards Act, 1986 and the Rules and Regulations made thereunder. The Standard Mark 
+on products covered by an Indian Standard conveys the assurance that they have been 
+produced to comply with the requirements of that standard under a well defined system 
+of inspection, testing and quality control which is devised and supervised by BIS and 
+operated by the producer. Standard marked products are also continuously checked by 
+BIS for conformity to that standard as a further safeguard. Details of conditions under 
+which a licence for the use of the Standard Mark may be granted to manufacturers or 
+producers may be obtained from the Bureau of Indian Standards. 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to 
+promote harmonious development of the activities of standardization, marking and quality 
+certification of goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced 
+in any form without the prior permission in writing of BIS. This does not preclude the free use, 
+in the course of implementing the standard, of necessary details, such as symbols and sizes, type 
+or grade designations. Enquiries relating to copyright be addressed to the Director 
+( Publications ), BIS. 
+
+Revision of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards 
+are also reviewed periodically; a standard along with amendments is reaffirmed when such review 
+indicates that no changes are needed; if the review indicates that changes are needed, it is taken 
+up for revision. Users of Indian Standards should ascertain that they are in possession of the 
+latest amendments or edition by referring to the latest issue of 'BIS Handbook : and 'Standards 
+Monthly Additions'. Comments on this Indian Standard may be sent to BIS giving the following 
+reference: 
+
+Doc : No. LTD 36 ( 1570 ) 
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 
+
+Telephones : 331 01 31, 331 13 75 Telegrams : Manaksanstfaa 
+
+( Common to all Offices ) 
+
+Regional Offices : Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg C331 01 31 
+
+NEW DELHI 1 10002 J 33 1 13 75 
+
+Eastern : 1/14 C. I. T. Scheme VII M, V. I. P. Road, Maniktola (37 84 99, 37 85 61 
+
+CALCUTTA 700054 (37 86 26, 37 86 62 
+
+C53 38 43, 53 16 40 
+
+Northern : SCO 445-446, Sector 35-C, CHANDIGARH 160036 j 53 23 g4 
+
+(235 02 16, 235 04 42 
+Southern : C. I. T. Campus, IV Cross Road, MADRAS 600113 < 235 ]5 ^ ^ ^ 5 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri ( East ) [632 92 95, 632 78 58 
+
+BOMBAY 400093 \632 78 91, 632 78 92 
+
+Branches : AHMADABAD. BANGALORE. BtfOPAL. BHUBANESHWAR. COIMBATORE 
+FARIDABAD. GHAZ1ABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR 
+LUCKNOW. PATNA. THIRUVANANTHAPURAM. 
+
+
+
+Printed at Prmtwell Printers, Aligarh, India 
+
+
+

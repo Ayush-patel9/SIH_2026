@@ -1,0 +1,43 @@
+{
+  "is_number": "IS IS_1250",
+  "standard_id": "IS IS_1250",
+  "title": "Indian Standard Specification / Test Method (IS IS_1250)",
+  "ia_identifier": "IS_1250",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes two sets of symbols to be used in correcting proofs, one in the margin and the other at the place in the text where the correction is to be made. It also includes some recommendations for preparation of copy for the printer.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1350",
+      "standard_id": "IS 1350",
+      "title": "Indian Standard Specification / Test Method (IS 1350)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade written",
+    "Grade deration",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_1250"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 36232
+}

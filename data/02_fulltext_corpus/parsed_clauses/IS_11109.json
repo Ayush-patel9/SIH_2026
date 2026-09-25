@@ -1,0 +1,85 @@
+{
+  "is_number": "IS IS_11109",
+  "standard_id": "IS IS_11109",
+  "title": "Indian Standard Specification / Test Method (IS IS_11109)",
+  "ia_identifier": "IS_11109",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the requirements for two grades of silicon brass ingots and sand castings.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1387",
+      "standard_id": "IS 1387:1993",
+      "title": "General requirments for the supply of metallurgical materials",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3685",
+      "standard_id": "IS 3685:1966",
+      "title": "Methods of chemical analysis of brasses",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2654",
+      "standard_id": "IS 2654",
+      "title": "Indian Standard Specification / Test Method (IS 2654)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1817",
+      "standard_id": "IS 1817:1961",
+      "title": "Methods of sampling non-ferrous metals for chemical analysis",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1408",
+      "standard_id": "IS 1408:1968",
+      "title": "Recommended Procedure for Inspection of Copper-base Alloy Sand Castings",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade rrous",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11109"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "7.1 The name, or trade-mark of the manufacturer and the cast number",
+      "and grade of the material shall be cast or otherwise legibly marked by",
+      "stamping on each casting by which the manufacturer and the grade of",
+      "difficult to cast on or stamp all the details, the marking shall be as",
+      "7,1,1 The material may also be marked with the ISI Certification Mark."
+    ]
+  },
+  "total_chars_parsed": 14753
+}

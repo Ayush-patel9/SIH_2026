@@ -1,0 +1,71 @@
+{
+  "is_number": "IS IS_11783",
+  "standard_id": "IS IS_11783",
+  "title": "Indian Standard Specification / Test Method (IS IS_11783)",
+  "ia_identifier": "IS_11783",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes the requirements and the methods of sampling and tests for ferrosilicon for use in explosive and pyrotechnic industry. *Specification for ferrosilicon ( third revision ). •j-Rules for rounding off numerical values ( revised ). 18:11783-1986",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 2552",
+      "standard_id": "IS 2552:1989",
+      "title": "Steel drums (galvanized and ungalvanized)",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 265",
+      "standard_id": "IS 265:2021",
+      "title": "HYDROCHLORIC ACID SPECIFICATION Fifth Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8883",
+      "standard_id": "IS 8883",
+      "title": "Indian Standard Specification / Test Method (IS 8883)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade II",
+    "Grade rtilizers",
+    "Grade rro",
+    "Grade rrosilicon",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11783"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "silicon content not less than 85 percent",
+      "silicon content not less than 70 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "6.1 Each container shall be legibly and indelibly marked with the following",
+      "a) Name of material, and its grade and type;",
+      "c) Name of the manufacturer and/or his trade-mark, if any; and",
+      "d) Batch No., in code or otherwise, to enable the batch to be traced",
+      "6.2 The container may also be marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 16629
+}

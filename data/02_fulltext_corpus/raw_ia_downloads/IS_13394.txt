@@ -1,0 +1,2405 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+IS 13394 (1992) : Guidelines for the documentation of 
+computer based application systems for information 
+processing [LITD 14: Software and System Engineering] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+aj^&vi iJii^s:y%K^ isb^^ni^seg 
+
+
+
+:<>5&i| mT'5K^5?::5:^>^i»l 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 13394:1992 
+180 6592:1985 
+
+^ ( Reaffirmed 2004 ) 
+
+^r^r ^r^FFT cf^ ^ %t ^rprq^T sTTtTTft^ snrsnft^ 
+
+Indian Standard 
+
+GUIDELINES FOR THE DOCUMENTATION OF 
+
+COMPUTER-BASED APPLICATION SYSTEMS 
+
+FOR INFORMATION PROCESSING 
+
+
+
+UDC 681-3066:002 
+
+
+
+©BIS 1992 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+
+NEW DELHI 110002 , 
+
+April 1992 Price Group 8 
+
+
+
+IS 13394:1992 
+ISO 6592: 1985 
+
+
+
+Indian Standard 
+
+
+
+GUIDELINES FOR THE DOCUMENTATION OF 
+
+COMPUTER-BASED APPLICATION SYSTEMS 
+
+FOR INFORMATION PROCESSING 
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with ISO 6592 : 1985 'information processing — 
+Guidelines for the documentation of computer-based application systems' issued by the 
+Internationa! Organization for Standardization ( ISO ) was adopted by the Bureau of Indian 
+Standards on the recommendation of Information Systems and Software Sectional Committee 
+( LTD 33 ) and approval of the Electronics and Telecommunication Division Council. 
+
+In the adopted standard certain terminology and conventions are however not identical to those 
+used in Indian Standards, Attention is particularly drawn to the following: 
+
+Wherever the words 'International Standard' appear referring to this standard, they 
+should be read as 'Indian Standard', 
+
+
+
+As in the Original Standard, this Page is Intentionally Left Blank 
+
+
+
+IS 13394 
+ISO 6592 
+
+
+
+1992 
+1985 
+
+
+
+1 Scope and field of application 
+
+This International Standard establishes guidelines for the 
+documentation of computer-based application systems. It also 
+contains checklists with the aim of supporting effective 
+activities throughout the system life cycle. 
+
+The guidelines given in this Internationa! Standard have been 
+developed with the aim of 
+
+a) obtaining the necessary commitment of the parties 
+involved with the development of the computer-based ap- 
+plication system; 
+
+b) contributing to the production of a well-planned, stan- 
+dardized system documentation; 
+
+c) enabling the successive production of system 
+documentation in parallel with system development. 
+
+Well-defined rules for documentation during the process of 
+system development will facilitate 
+
+a) the preparation of the documentation Itself; 
+
+b) estimation of the time and resources required for the 
+achievement of a project; 
+
+c) exchange of Information between the parties con- 
+cerned, resulting in 
+
+— selection of attainable objectives for a system; 
+
+— a more complete and well-considered functional 
+design ; 
+
+d) making decisions and briefing of personnel during work 
+on system development. 
+
+The system documentation produced in accordance with these 
+guicielines 
+
+a) enables the management to exercise control over the 
+development process; 
+
+b) enables users of the system to use it efficiently and cor- 
+rectly; 
+
+c) enables computer operators to schedule and run the 
+system; 
+
+d) aids diagnosis and correction of errors or faults; 
+
+e) provides information about the system as support for 
+system maintenance. 
+
+
+
+This International Standard does not cover the requirements 
+for documenting the hardware design of a computer-based 
+application system. 
+
+
+
+2 Principles of documentation 
+
+2.1 General considerations 
+
+Despite the diversity of applications of computer-based 
+systems, there are fundamental similarities, for example, the 
+obvious feature that a computer is always subject to input, pro- 
+cessing and output phases. There should always be a need to 
+establish and justify the resources such as personnel, materials 
+and finance necessary to develop and implement a computer 
+project, however large or small, and to document adequately all 
+aspects of the proposed system. 
+
+It Is in this context that the guidelines established in this Inter- 
+national Standard have been formulated; the aim being to 
+establish a basic framework of documentation that would act 
+as a solid base for any project and enable effective development 
+and implementation through proper progress and control 
+machinery, permitting the development to proceed in a planned 
+and authorized manner. 
+
+The application of these recommendations will vary according 
+to the type of system being introduced: as an example, 
+methods of operating might assume greater importance in a 
+process control environment than In, for example, a commer- 
+cial batch processing system. 
+
+A particular document or piece of Information may have no 
+relevance to or»e system and yet be important to another. The 
+checklists given in this International Standard should be used to 
+ensure that, if infornrwtion is omitted from the documentation, the 
+omission is the result of a positive decision and not an oversight. 
+
+The gradual change in the level of detail in the development 
+process may necessitate revision of documentation from earlier 
+stages. 
+
+2.2 Types of information 
+
+Two basic types of Information are identified in this Inter- 
+national Standard, I.e. administrative and technical. 
+
+Administrative information is project control and management 
+information which records what has been aSthorized and what 
+has been done. This information should be retained but it may 
+r>ot be necessary to update it once implementation is complete. 
+
+
+
+IS 13394:1992 
+ISO 6592: 1985 
+
+
+
+Technical information includes an up-to-date description of all 
+aspects of the system, including hardware, ^ftware, and data, 
+it is essential that it is constantly updated during the system life 
+cycle. 
+
+Both types of information may be included In some documents, 
+but these guidelines recommend that they be kept in separate 
+sections so that the technical information may be more easily 
+maintained. 
+
+
+
+2.3 Relationship between project stages and 
+documentation 
+
+The guidelines given in this International Standard are struc- 
+tured to relate project development stages to the documenta- 
+tion which they generate. Generally, each stage is initiated and 
+concluded by a document. Although the main stages take place 
+ir sequence, some stages and the preparation of some 
+documents overlap each other, for example preparation of 
+system support manuals should be started during the system 
+design and development stage. The number of stages and the 
+number of documents may vary for different applications; 
+these guidelines list the elements of documentation which 
+would usually appear in the documents generated by each 
+stage of the development process. 
+
+
+
+3 Feasibility study 
+
+3.1 Objectives 
+
+The objectives of the feasibility study are 
+
+a) to identify exactly what is needed following a 
+preliminary study; 
+
+b) to work out possible solutions and identify a preferred 
+solution ; 
+
+c) to document the requirements and constraints for the 
+new system. 
+
+3.2 Feasibility study request 
+
+Tnis document authorizes the use of resources to investigate a 
+specific requirenr^nt, design aim or problem and to suggest a 
+possible solution. It is produced by or for the user before work 
+commences on the project. 
+
+Prepare iion of this docunr>ent may entail the assistance of a 
+specialist in determining, for example, the time and cost targets 
+for the feasibility study. 
+
+Authorization of this feasibility study request leads to a feasi- 
+bility study and the writing of a feasibility study report. 
+
+3.3 Feasibility study report 
+
+3.3.1 Objective 
+
+The feasibility study report should enable the user to decide 
+whether or not to continue to the next stage of system design. 
+
+
+
+3,3.2 System problem and information analysts: 
+
+a) system problems: 
+
+1) definition, including background and present situa- 
+tion ; 
+
+2) constraints, technical and financial; 
+
+bl system objectives: 
+
+1} definition and description; 
+
+2) delimitation; 
+
+3) summary; 
+
+c) system Information : 
+
+1) definition and description; 
+
+2) relations; 
+
+3) specifications; 
+
+d) system processing: 
+
+1) description; 
+
+2) input, stored data, and output; 
+
+3) relations between data; 
+
+4) periodicir/; 
+
+5) volume of data. 
+
+
+
+3.3.3 
+
+
+Project organization and requirements 
+
+
+a) 
+
+
+staff requirements; 
+
+
+b) 
+
+
+training and education ; 
+
+
+c) 
+
+
+timetable of main activities; 
+
+
+d) 
+
+
+manpower; 
+
+
+e) 
+
+
+hardware; 
+
+
+f) 
+
+
+software; 
+
+
+g) 
+
+
+accommodation. 
+
+
+3.3.4 
+
+
+Costs and benefits: 
+
+
+a) 
+
+
+financial costs; 
+
+
+b) 
+
+
+benefits. 
+
+
+3.3.5 
+
+
+Proposed system : 
+
+
+a) 
+
+
+functional description; 
+
+
+b) 
+
+
+controls to ensure accuracy; 
+
+
+c) 
+
+
+security; 
+
+
+d) 
+
+
+interfaces; 
+
+
+e) 
+
+
+data flow; 
+
+
+
+IS 13394 : 1992 
+ISO 6592 : 1985 
+
+
+
+Stages 
+
+
+
+Feasibility study 
+(see clause 3} 
+
+
+
+and the 
+
+
+
+Documents produced 
+
+
+
+Feasibility 
+study request 
+
+
+
+Feasibility 
+study report 
+
+
+
+System design study 
+(see clause 4) 
+
+
+
+System design and 
+development (see clause 5) 
+
+
+
+System support 
+(see clause 61 
+
+
+
+System implementation 
+(clause 7) 
+
+
+
+Post implementation 
+reviews (see clause 81 
+
+
+
+System 
+design study 
+request (see 4.2} 
+
+
+
+System 
+design study 
+
+report (see 4.3) 
+
+
+
+System design 
+documentation: 
+general system 
+and component 
+documentation 
+(see 5.3, 5.4 and 
+annexes A, B and C) 
+
+Implementation 
+documentation: 
+plan and tests 
+(see 7.2.1 and 7.2.2) 
+
+i 
+
+System support 
+documentation: 
+user, operations, 
+program, data, system 
+technical and modifications 
+manuals (see 6.2) 
+
+
+
+Acceptance report 
+(see 7.2.3) 
+
+
+
+Evaluation refiorts 
+(see 8,2) 
+
+
+
+Alternative starting points in cases where a separate feasibility study is not required. 
+
+
+
+Figure — Summary of the relationship between project development 
+
+
+
+1813394:1992 
+ISO 6592 : 1985 
+
+
+
+f) allowance for growth: volume of data, new functions; 
+
+g) scheduling/timing ; 
+
+h) non computer functions; 
+
+j) manpower; 
+
+k) hardware; 
+
+m) software; 
+
+n) accomodation. 
+
+3.3.6 implementation, quality and acceptance 
+considerations : 
+
+a) system testing; 
+
+b) file creation/conversion; 
+
+c) integration with existing systems; 
+
+d) user education and training; 
+
+e) emulation; 
+
+f) proposed changeover methods; 
+
+g) modifications to service; 
+
+h) quality assurance requirements; 
+j) product liability requirements; 
+k) system acceptance criteria. 
+
+3.3.7 Support facilities: 
+
+a) recovery from failure; 
+
+b) maintenance; 
+
+c) availability of spares. 
+
+3.3.8 Glossary: explanation of new or unusual terms. 
+
+3.3.9 Conclusions and recommendations: 
+
+a) system requirements: 
+
+1 ) needs of the user ; 
+
+2) how they will be met. 
+
+b) alternatives : 
+
+1) describe alternatives considered; 
+2} state reasons for rejection. 
+
+
+
+4 System aesign study 
+
+4.1 Objective 
+
+The objective of this stage is to define, in detail, the chosen 
+design. 
+
+
+
+4.2 System design study request 
+
+This document states the action that the initiator requires to be 
+taken after considering the feasibility study report. In its 
+simplest form, it will merely accept the recommendations in 
+this report and authorize the system design study. 
+
+
+
+4.3 System design study report 
+
+
+
+4.3.1 Gbjectlves 
+
+The system design study report should be sufficiently detailed 
+in order that 
+
+a) the user has a clear description of what the system will 
+do (input, processing, output information stored, timing, 
+etc.); 
+
+b) the user knows exactly what to do to operate the 
+system ; 
+
+c) the organizational changes or adaptations necessary to 
+implement the system and operate it are defined, and can be 
+commenced as separate tasks; 
+
+d) the functional requirements for the system are suf- 
+ficiently unambiguous for the system design documentation 
+to be worked out in the next phase. 
+
+4.3.2 Plans: 
+
+a) organization; 
+
+b) timetable; 
+
+c) major resource requirements; 
+
+d) quality assurance; 
+
+e) standards to be used. 
+
+4.3.3 Costs and benefits: 
+
+a) development costs; 
+
+b) installation costs; 
+
+cl training and education costs; 
+
+d) running costs; 
+
+e) benefits, tangible and intangible. 
+
+4.3.4 System description: 
+
+a) functional overview of the application of the system; 
+
+b) hardware requirements ; 
+
+c) communication requirements, for example terminals 
+lines, modems, concentrators; 
+
+d) software requirements for languages, data base 
+operating system, etc. ; 
+
+ei data description; 
+
+
+
+IS 13394: 1992 
+ISO 6592 : 1985 
+
+
+
+f) data flow, including the normal and maximum volume 
+of data ; 
+
+g) allowance for change in data volume; 
+
+h) controls to ensure the accuracy of the data; 
+
+j) security, system integrity, data protection, physical 
+security, availability; 
+
+k) environmental and power requirements (including any 
+stand-by arrangements) ; 
+
+ml interfaces with other systems, either existing or pro- 
+posed ; 
+
+n) scheduling requirements; 
+
+p) allowance for additional functions; 
+
+q) non-computer procedures. 
+
+4.3.5 Implementation, quality and acceptance plans: 
+
+a) user education/training; 
+
+b) file creation/conversion; 
+
+c) system testing and performance assessments; 
+
+d) emulation; 
+
+e) modifications to service; 
+
+f) integration with existing systems; 
+
+g) changeover methods; 
+
+h) quality assurance requirements; 
+
+j) extent of product liability; 
+
+k) system acceptance criteria. 
+
+4.3.6 Support facilities: 
+
+a) recovery from failures; 
+
+b) responsibility and liability for maintenance; 
+
+c) availability of spares and back-up. 
+
+4.3.7 Summary of application system: 
+
+a) problem definition and solution; 
+bl recommendation ; 
+c) system operation; 
+
+II manpower; 
+
+21 hardware; 
+
+31 software; 
+
+4) accommodation ; 
+
+
+
+5) financial estimates; 
+61 security; 
+7) scheduling/timing; 
+dl glossary of new or unusual terms used. 
+
+4.3.8 Summary for management: 
+
+a) manpower; 
+bl hardware; 
+
+c) quality assurance requirements; 
+dl accommodation requirements; 
+el cost estimates: 
+
+II next stage of project; 
+
+21 total project; 
+f| benefit estimates; 
+g) timetable. 
+
+5 System design and development 
+
+5.1 Objectives 
+
+The objectives are as follows: 
+
+al specify, in detail, automated and manual processing 
+procedures and establish their boundaries; 
+
+bl produce documentation to enable the writing of pro- 
+grams; 
+
+cl provide the information necessary to carry out work on 
+testing and implementation of the new system; 
+
+dl make a detailed plan of all activities to be performed in 
+the implementation stage; 
+
+e) give consideration to the preparation of system support 
+manuals, 
+
+5.2 System design documentation 
+
+The purpose of this documentation is to provide a complete 
+design record of the system based on the following principles: 
+
+al that every part of the system has a function whtch 
+should be described; 
+
+b) that all the functions of a complete system can be fuHy 
+described by breaking the system down into its subordinate 
+parts and also by describing these and their interftctions and 
+relationships. 
+
+The documentation should normally contain at least two levels 
+of detail, namely: ^ 
+
+- general system documentation (see 5.31; 
+
+and component documentation (see 5.4). 
+
+
+
+18 13394:1992 
+180 6592:1985 
+
+
+
+5.3 General system documentation 
+
+!n the genera! documentation, the !eve! of detail of which the 
+system should be described depends on the requirements of 
+the system. This documentation may be required to form the 
+basis for system support manuals. 
+
+The general system documentation should detail 
+
+a) project title; 
+
+b) objectives; 
+
+c) description {both textual and diagrammatic); 
+
+— identification of subsystems; 
+
+— interfaces with other systems; 
+
+d) security; 
+
+el controls (including audit requirements); 
+
+f) operating environment; 
+
+g) recovery from failure; 
+
+h) support facilities necessary to operate the system; 
+j) data requirements; 
+k) test procedures; 
+m) change procedures. 
+
+5.4 Component documentation 
+
+This documentation should give detailed specifications of pro- 
+grams, files and manual operations. It may be required to form 
+the basis for system support manuals. 
+
+5.4.1 Progrann speclflGatlon 
+
+See annex A. 
+
+5.4.2 File and database specification 
+
+See annex B. 
+
+5.4.3 Manual routines specification 
+
+See annex C. 
+
+
+
+6 System support 
+
+6.1 Objective 
+
+The objective of this stage is to support the system once it has 
+been accepted by the user. It embraces the following aspects: 
+
+a) normal use of the system; 
+
+b) detection and correction of errors; 
+
+c) possible modifications and enhancements. 
+
+(t should be understood ihat this activity may not be carried out 
+by the same staff who developed the system. 
+
+
+
+6.2 System support documentation 
+
+Support documentation should be formed from documents 
+produced during the system design and development stage. 
+Any changes made to the documents produced during that 
+stage should be reflected in the documents for system support. 
+
+What is actually provided will depend on the particular system 
+requirements, maintenance policy and documentation stan- 
+dards. However, in order to meet the system support objective 
+it is recommended that the documentation be provided under 
+the following headings: 
+
+a) User manual 
+
+This should describe, in a clear and concise way, the rights 
+and responsibilities of both the user and the supplier of the 
+system. 
+
+The following are examples of what these rights and 
+responsibilities may be: 
+
+1) The rights of the user may include: 
+
+— the right to information about the usage of the 
+system ; 
+
+— the right to information about the system results 
+and the correction of errors in data. 
+
+2) The responsibilities of the user may include: 
+
+— the correct preparation of input data; 
+
+— informing the supplier of any errors detected in 
+the system. 
+
+3) The rights of the supplier may include: 
+
+— the right to revise the system, as supplied; 
+
+— the right to perform continuous testing to ensure 
+that the system continues to function correctly. 
+
+4) The responsiblities of the supplier may include: 
+
+— the maintenance of accurate and up-to-date 
+documentation; 
+
+— the distribution of accumulated user experience 
+with the system. 
+
+All these rights and responsibilities will be subject to agree- 
+ment between the supplier and the customer and may be in- 
+fluenced by national and international legislation and/or 
+standards. Information applicable to legislation on aspects 
+of quality assurance and product liability should be included 
+In this manual. 
+
+
+
+b) Operations manual 
+
+This should describe how to operate the system using the 
+computer and associated equipment in all its operational 
+modes. 
+
+
+
+IS 13394 : 1992 
+ISO 6592 :1985 
+
+
+
+c) Program manuals 
+
+These should describe the purpose of each program and 
+provide information such as mathematical formulae and 
+algorithms used, error handling facilities and timing. They 
+should include listings of the program, with comments, 
+useful for modifications and enhancements, test data and 
+results. 
+
+d) Data manual 
+
+This should describe the system data structure down to the 
+level of detail specified by system requirements. 
+
+8) System technsca! manual 
+
+This should enable technical staff to understand the way the 
+system works, assist them in error detection and correction 
+and in making modifications and enhancements. Where 
+appropriate, it should make reference to hardware descrip- 
+tions. 
+
+f) System change record 
+
+This should riecord what, when, how, why and by whom 
+changes were made and authorized to any part of the 
+system. 
+
+
+
+7 System implementation 
+
+7.1 Objective 
+
+The objective of this stage is to carry out full acceptance tests 
+of the system under all aspects of its operational environment 
+and demonstrate that all the specified requirements have been 
+met. 
+
+7.2 Dccumentaticn requirenrients 
+
+The input documentation to this stage should consist of an 
+implementation plan and the acceptance tests for the system. 
+The output documentation from this stage should be an accep- 
+tance report. 
+
+7.2.1 Implementation plan 
+
+Although implementation takes place at the end of project 
+development, planning should begin at an early stage and the 
+plan should be updated as necessary during the development 
+of the system. 
+
+The plan should detail, for example: 
+a} accommodation and environment; 
+
+b) staff organization; 
+
+c) user education and training; 
+
+d) file set up; 
+
+e) update, assembly and distribution of documents; 
+
+
+
+f) verification of maintenance procedures; 
+
+g) timing and method of implementation; 
+h) system changeover procedures; 
+
+j) recovery procedures. 
+
+7.2.2 Acceptance tests 
+
+The documentation should specify how the tests will be con 
+ducted within the defined operational environments. It should 
+also provide a check list of the results to be expected and give 
+tolerances where necessary. 
+
+
+
+7.2.3 Acceptance report 
+
+This should be a document embodying the results of the accep 
+tance tests signed by and duplicated to all relevant authorities. 
+
+If acceptance is to be qualified in any way, an official statement 
+of deficiencies and suggested remedies, if possible, should be 
+provided. 
+
+
+
+8 Post implementation reviews 
+
+8.1 Objectives 
+
+The objectives of this stage are periodically to 
+
+a} investigate the system's fulfilment of objectives; 
+
+b) follow up the distribution of resources and the cost 
+estimates; 
+
+c) specify the intangible positive and negative effects of 
+the system; 
+
+d) analyse and record the experience gained during work 
+on the systems development. 
+
+8.2 Evaluation reports 
+
+Evaluation reports 
+
+a) assess whether the original system objectives were cor- 
+rect and how far they have been met in practice; 
+
+b) pinpoint matters capable of improvements; 
+
+c) endorse good practices; 
+
+d) identify and assess operational problems encountered, 
+if any; 
+
+e) state whether the claimed benefits have been achieved; 
+
+f) document the experiences which will assist future 
+systems development projects. 
+
+
+
+IS 13394: 
+ISO 6592 
+
+
+
+1992 
+:1985 
+
+
+
+9 Management of documents 
+
+
+
+It is recommended that a loose-ieaf format is adopted. 
+
+
+
+9.1 Production and handling of documents 
+
+An important aspect of all work on documentation is the crea- 
+tion of documents to fulfil the needs of the user of the 
+documents. It is essential that such needs be clearly defined 
+and that the content of a document be presented in a manner 
+which makes it easy for the reader to access and understand. 
+
+Each individual document created in conjunction with a stage 
+in the system development shall be allocated a unique iden- 
+tification number or code to facilitate its storage and subse- 
+quent retrievai. The identifying number or code shall clearly 
+show the system or project and category of documentation to 
+
+uuHiVh ttio rlrtr^iimont Kolrtnnc Tho nr!nr«inloc nrwtaminrt tKa 
+
+identification of systems and subsystems may vary from 
+organization to organization but should be described in the in- 
+dividual company's own instructions. 
+
+it is vital for ease of reference and control of amendments or 
+updates that a clear and unambiguous method of page referen- 
+
+Experience shows that there is positive advantage in intro- 
+ducing a documentation system that ensures that 
+
+a} each page is uniquely identified to the system, section, 
+page within section, issue number and date of origination ; 
+
+b) each section is identified as complete; 
+
+c) insertions and deletions are clearly identified. 
+
+
+
+Procedures to be followed for amendments to the system 
+documentation should be agreed and clearly defined. It is 
+
+c^oaici iitai iiidi. ail fjiyj 
+
+correct procedures. 
+
+
+
+9.2 Principles of central documentation 
+
+The central documentation should contain all the information 
+
+This information is permanently valid as it is updated when 
+each decision, achievement, modification, etc, is approved. 
+
+To facilitate this updating, each item of information should nor- 
+mally only appear once. 
+
+
+
+9.3 Advice on documentation distribution 
+
+It is important to distinguish clearly between the total 
+documentation collection, normally stored centrally, and the 
+assembled subsets required by different departments and per- 
+sonnel. 
+
+Subsets usually contain documents copied and complied from 
+different sections of the total documentation collection. A cir- 
+culation list, based on an individual organization's require- 
+ments, should be drawn up for each document, noting the 
+name or departmental code of the recipient of the docu- 
+mentation. 
+
+
+
+IQ 
+
+
+
+18 13394:1992 
+ISO 6592 : 1985 
+
+
+
+Annex A 
+Program documentation guidelines 
+
+(This annex forms part of the standard.) 
+
+
+
+A.1 Introduction 
+
+This annex gives guidance on the level of documentation 
+required for program documentation. 
+
+The level of detail required for component documentation is 
+greater than that necessary for the other items in the body of 
+this International Standard. The requirements have, therefore, 
+been published in the form of an annex. 
+
+
+
+A.2 identification 
+
+A.2.1 Program name 
+
+Provide the title or name which identifies the program and a 
+subtitle which briefly indicates its function. 
+
+A.2.2 Variants 
+
+Describe the names used for identifying any co-existing 
+variants of the program, 
+
+A.2.3 Version 
+
+In addition to the program name and variant names, provide 
+identification for the version that requires identifying among 
+the several program versions that evolved after being modified 
+over a period of time. The documentation shall reflect changes 
+in the current version, and be kept up-to-date. 
+
+A.2.4 Date 
+
+Provide the date of release of the original and the current ver- 
+sion of the program. 
+
+A.2.5 History 
+
+For every modification, specify 
+
+— variant name; 
+
+— version name; 
+
+— reference to the reason for and contents of modi- 
+fication ; 
+
+— date of release; 
+
+— date of first use. 
+
+
+
+A.3 General items 
+
+A.3.1 Responsibilities 
+
+Provide addresses of organizations or persons responsible for 
+
+— development; 
+
+— operation; 
+
+— maintenance; 
+
+— further development of the program. 
+
+A. 3.2 Contractual items 
+
+Provide sufficient information about contractual items, 
+including costs as applicable, for example 
+
+— legal conditions such as copyright, privacy, security, 
+etc.; 
+
+— modules supplied and corresponding purchase/rental 
+price; 
+
+— installation; 
+
+— training; 
+
+— maintenance; 
+
+— quality assurance. 
+
+A. 3.3 Scope and field of application 
+
+A. 3.3.1 Describe briefly the objectives which can be achieved 
+by use of the program. 
+
+A.3.3.2 Describe the functions of the program in a way that 
+enables the user to decide whether, and within what limits, the 
+program can be used. 
+
+A. 3.3.3 Describe the design philosophy and method, 
+outstanding and distinguishing features of the program, 
+planned future revisions, etc. 
+
+A.3.4 Program specifications 
+
+A.3.4.1 Problem 
+
+A.3.4.1. 1 Problem description 
+
+Present the problem to be solved by means of the program in a 
+generally comprehensible form. 
+
+
+
+11 
+
+
+
+IS 13394:1992 
+180 6592:1985 
+
+
+
+A. 3.4.1. 2 Supplementary information 
+
+State the theoretical principles, methods and literature 
+references. 
+
+A. 3. 4.2 Problem solution 
+
+A. 3.4.2.1 Conventions and terminology 
+
+Provide details of the form of presentation and rules which are 
+to be used in the following parts of the documentation for 
+example, special interpretation of characters/signs or combina- 
+tions applicable to the solution of the problem; especially con- 
+cerning: prefixes, signs, accuracy, roundlng-off, coordinate 
+systems, value ranges, tables of abbreviations used and their 
+meanings, technical regulations of data processing. 
+
+A.3.4.2.2 Solution principles and algorithms 
+
+Describe the methods of solution and algorithms presented in 
+connection with the specified functions and with the structural 
+organization of the program. 
+
+A. 3. 4. 3 Functional specification 
+
+A.3.4.3.1 Function 
+
+Describe in detail, in non=technic3! language, all of the func- 
+tions of the program with an explanation of the data required 
+and results produced. 
+
+A,3.4.3.2 Characteristics 
+
+Provide quantitative information for typical examples, such as 
+performance data, level of accuracy, storage requirements, etc. 
+
+A.3.4.3.3 Restrictions 
+
+Specify any restrictions on the use of the program. 
+
+
+
+A.3.6 Operational specification 
+
+
+
+A.3.6.1 Language 
+
+Specify the programming language used, by reference to the 
+appropriate International Standard. Also, provide the name, 
+variant, version and supplier of the compiler or interpreter. 
+
+
+
+A. 3. 6. 2 Software requirements 
+
+Provide the names, variants, versions of other programs 
+needed to run the program (for example operating system, 
+subroutines), with reference to the corresponding documenta- 
+tion of this software. 
+
+
+
+A.3.6.3 Hardware requirements 
+
+Provide the specifications of the hardware configuration 
+necessary for running the program, with references to cor- 
+responding documentation and diagrams. 
+
+A. 3.6. 4 Mode of operation 
+
+Describe the mode of operation, for example batch, interactive, 
+realtime. 
+
+A.3.? Application example 
+
+Provide typical examples to help users understand the pro- 
+gram, including listings of data and results. 
+
+A.3.8 Associated documentation 
+
+Provide a list of references to available documents which pro- 
+vide information on the program, (for example programmers' 
+guide, installation guide), with references to supplier and order 
+number of the documents. 
+
+
+
+A.3.4.3.4 Error handling 
+
+Describe error handling by the program. 
+
+A.3.4.4 Data protection and security 
+
+Describe the data protection and security functions and 
+facilities. 
+
+A. 3.5 Application data description 
+
+Describe the application-oriented data (for example input/out- 
+put data, permanently stored data) with attributes relevant to 
+their use. 
+
+The data shall be described according to annex B. 
+
+This da^B description may be given in a separate document, 
+with appropriate cross-references. 
+
+
+
+A. 4 Technical documentation 
+
+
+
+A.4.1 Technical program description 
+
+
+
+A. 4. 1.1 Terminology and conventions 
+
+Describe the terms and conventions including all names and 
+other internal data used within the program. 
+
+
+
+A. 4. 1.2 Program structure 
+
+Describe the organization of the program units (for example 
+sub-programs, modules, segments, common storage areas) in 
+accordance with the specified problem solution. 
+
+The presentation which can be made graphically, for example 
+by a tree-structure diagram, or by an appropriately structured 
+textual description, shall contain the unit names, their entry 
+points, and interfaces, as we!! as their inter-relationships. 
+
+
+
+12 
+
+
+
+IS 13394: 1992 
+ISO 6592 : 1985 
+
+
+
+A.4.1.3 Program listing 
+
+Provide a source program listing containing sufficiently detailed 
+comments, 
+
+A.4.2 Technical data description 
+
+Provide a technical description of the data, including names, 
+meanings, representations, contents, access, responsibilities, 
+data security, and inter-relationships. This information should 
+be provided for both application-oriented data {see A. 3. 5) and 
+for other tnterna} data. 
+
+The data should be described according to annex B. This 
+description may be contained in a separate document, in which 
+case appropriate cross-references shall be made. 
+
+A. 4.3 Operation 
+
+A.43.1 Control instructions 
+
+Provide an appropriate commented list of alt required operating 
+system control instructions. 
+
+A.4.3.2 Methods of operation 
+
+Describe or reference the methods to start, stop, pause, inter- 
+rupt, and restart the program for the possible operation modes, 
+including special operations and the operational rules for data 
+files. 
+
+
+
+The procedures to be followed in operating the program should 
+be provided in accordance with annex C. 
+
+A.4.3.3 Messages 
+
+Provide a list and description of all messages, including instruc- 
+tions for any necessary operational actions. 
+
+A.4.4 Installation and support 
+
+A.4.4.1 Installation 
+
+Provide technical information for the installation of the 
+program. 
+
+A.4.4.2 Adaptation 
+
+Provide sufficient information for users who need to adapt the 
+program, for example for other environments, other uses. 
+
+A.4.4.3 Test 
+
+Describe the methods used to test the program, with input and 
+expected results. 
+
+A.4,4.4 Support 
+
+Provide additional technical information for the continuing sup- 
+port and development of the program. 
+
+
+
+13 
+
+
+
+IS 13394: 1992 
+ISO 6592: 1985 
+
+
+
+Annex B 
+
+
+
+Data documentation guidelines 
+
+(This annex forms part of the standard.) 
+
+
+
+B.I Introduction 
+
+This annex gives guidance on the level of documentation 
+required for data documentation. 
+
+The level of detail required for component documentation Is 
+greater than that necessary for the other items in the body of 
+this International Standard. The requirements have, therefore, 
+been published in the form of an annex. 
+
+
+
+B.2.5.2 Validity 
+
+Detail the chronological validity of this documentation 
+(from . . . to . . .) and supply pertinent identification of the 
+version and, if required, indication of the variant. (A VERSION 
+characterizes the validity as a function of time; a VARIANT is a 
+co-existing alternative.) 
+
+
+
+B.3 Description of the data 
+
+
+
+B.2 Identification 
+
+B.2.1 Technical identification 
+
+Describe the technical identification of the data in program and 
+database definitions. 
+
+Other technical identifications required should also be indicated 
+{see B.4.2). 
+
+
+
+B.3.1 Purpose 
+
+Give the application-oriented description of the data and their 
+purpose of application, differentiating with respect to other 
+data as required. 
+
+B.3.2 Descriptors 
+
+List the keywords, headings, and search words characterizing 
+the application-oriented references in association with details 
+of descriptor catalogues, as applicable. 
+
+
+
+B.2.2 Application-oriented identification 
+
+Describe the application-oriented identification for the data, for 
+example in working instructions or application-oriented 
+documents. 
+
+Where synonyms have been used in application-oriented 
+documents, these should also be specified here. 
+
+B.2.3 Category 
+
+Define the data by naming or describing their category, for 
+example data field, record, file, segment, page, database. 
+
+
+
+B.3.3 Sensitivity 
+
+Indicate the sensitive properties of the data with respect to 
+legal and operational requirements, for example data protec- 
+tion, confidentiality, classification (see clause B.6). 
+
+
+
+B.4 Representation 
+
+B.4.1 Structure (not applicable to data elements) 
+
+List the data objects forming the data entity being described, 
+with their Inter-relatlonships, for example position, <?rrange- 
+ment, repetition factor. 
+
+
+
+B.2.4 Status 
+
+Describe the status of the data, for example test, production. 
+
+B.2.5 Applicability of the documentation 
+
+B.2.5.1 Scope and field of application 
+
+Indicate the scope and field of application of the documenta- 
+tion concerned, for example the organizational unit of an enter- 
+prise, range of application. 
+
+
+
+B.4,2 Format 
+
+Describe the formats in which the data may occur. It may be 
+sufficient to use such standard format descriptors as: 
+
+- PICTURE S9V99 COMPUTATIONAL (COBOL according 
+to ISO 1989) 
+
+— blocked records of variable length (according to ISO 1289) 
+
+If data occur in several formats, all forgnats with their applica- 
+tions shall be indicated, for example program, file, database, 
+print mask, input fields on screen, forms. If qualifying names 
+are used, they should be stated. 
+
+
+
+14 
+
+
+
+IS 13394 : 1992 
+ISO 6592 :1985 
+
+
+
+B.4.3 Size 
+
+Indicate the physical size of the data entity in a custonnary or 
+previously defined unit (for example byte, word); size may be 
+indicated absolutely or by means of a formula. If required, 
+upper and lower^iimits should be shown. 
+
+
+
+B.5.5 Encoding 
+
+Describe any encoding applied to the data in the context of the 
+application, indicate the rules for allocating codes, or reference 
+a key list. 
+
+
+
+B.4.4 Medium (not applicable to data etements) 
+
+Indicate the medium on which the data resides, for example 
+paper, magnetic tape, data link, network. 
+
+B.4.5 Compression 
+
+Detail the type and method of compression applicable to the 
+data. 
+
+B.4.6 Code 
+
+Name the code used to represent the data, for example 
+ISO 7-bit code, if it differs from the code defined at a higher 
+iogica* level. 
+
+B.4.7 Character set 
+
+Define the valid character set for the data, especially with 
+respect to special characters. 
+
+
+
+B.6 Access 
+
+B.6.1 Authorization 
+
+Authorities such as organizational units, agencies, persons, 
+data processing procedures and programs, together with their 
+legal basis and any other conditions are given in the following 
+sub-clauses. 
+
+B.6.1. 1 Origination 
+
+Indicate the authorities permitted to generate the data and to 
+introduce it into the operational data and information system. 
+
+B.6. 1.2 Read access 
+
+Indicate the authorities permitted to read the data. 
+
+B.6. 1.3 Amendment 
+
+Indicate the authorities permitted to update or delete the con- 
+tents of the data. 
+
+
+
+B.5 Content 
+
+
+
+B,5.1 Data type 
+
+
+
+Describe the type of data, for example integer, alphabetic, 
+pointer, vector, table, clock time. 
+
+
+
+B.5.2 Units of measurement 
+
+Name the standard units of 'measurement applicable to the 
+data, for example kilogram, mjHinnetre. 
+
+B.5.3 Range of values 
+
+Indicate the ranges of values defined for the data, for example 
+by enumeration of valid values, by indication of lower and 
+upper bounds, or by reference to the range of values of data 
+contained in the data entity being described. 
+
+B.5.4 Checking conditions 
+
+Detail the checking conditions required for the data unless they 
+are already described by format, character set, data type and 
+range of values; also give further details on any checking con- 
+ditions connected with other data entities, for example check 
+character, plausibility checks. 
+
+
+
+B.6. 1.4 Communication 
+
+Indicate the authbrities permitted to communicate the contents 
+of the data to a third party without restriction. List the 
+authorities authorized to receive such a communication. 
+
+B.6.2 Access regulations 
+
+Describe the measures or procedures which regulate access to 
+the data by persons or programs according to their authoriza- 
+tion. 
+
+
+
+B.7 Responsiblities 
+
+B.7.1 Application-oriented responsibility 
+
+Indicate the authorities having application-oriented respon- 
+sibility for the data. 
+
+B.7.2 Organizational responsibility 
+
+Indicate the authorities having organizational responsibility for 
+the data and its documentation. 
+
+B.7. 3 Technical responsibility 
+
+Indicate the authorities having technica! responsibility for the 
+data, for example software development. 
+
+
+
+15 
+
+
+
+1813394:1992 
+ISO 6592 : 1985 
+
+
+
+B.7.4 Custodial responsibility 
+
+Indicate the authorities and their locations where data is stored, 
+for example the branch office of an enterprise. 
+
+
+
+B.8 Data security 
+
+B.8.1 Archiving 
+
+Detail the requirements for archiving the data, for example 
+method, place, purpose, retention period, frequency. 
+
+B.8.2 Recovery 
+
+
+
+Indicate the procedures and the effort required to recover the 
+archived data. 
+
+
+
+B.8.3 Encryption 
+
+Indicate the procedures for encrypting/decrypting the data, for 
+example the relevant national standard. 
+
+
+
+B.9 Associations 
+
+B.9.1 Occurrence 
+
+List the data entities which contain the data being described. 
+
+B.9.2 Dependencies 
+
+List the other data entities on which this data Is dependent and 
+indicate the type or name of this dependency relationship. 
+
+B.9.3 Use 
+
+Provide or reference a list of athorities actually using the data. 
+Also specify the type of access (in accordance with B.6.1). 
+
+
+
+16 
+
+
+
+18 13394:1992 
+ISO 6592 : 1985 
+
+
+
+Annex C 
+Human procedure documentation guidelines 
+
+{This annex forms part of the standard,) 
+
+
+
+C.I Introduction 
+
+This annex gives guidance on the level of docunnentation re- 
+quired for human procedures documentation. 
+
+The level of detail required for component documentation is 
+greater than that necessary for the other items in the body of 
+this International Standard. The requirements have, therefore, 
+been published in the form of an annex. 
+
+
+
+C.2 Identification 
+
+C.2.1 Procedure name 
+
+Provide the title or name used for identifying the procedure in 
+the related system and program documentation, and a subtitle 
+which briefly indicates its function. 
+
+C.2.2 Variants 
+
+Describe the names used to identify any co-existing variants of 
+the program. 
+
+C.2. 3 Version 
+
+In addition to the procedure name, and variant names, provide 
+identification to distinguish the most recent version from its 
+predecessors. For procedures closely related to programs, for 
+example operating instructions, it is desirable to relate the pro- 
+cedure version name to the program version name. 
+
+C.2.4 Date 
+
+Provide the date of release of the original and current versions 
+of the procedure. 
+
+C.2. 5 History 
+
+For every release of a procedure modification, specify 
+~ variant name; 
+
+— version name; 
+
+— reference to the reason for and content of the modi- 
+fication ; 
+
+— date of release; 
+
+— date of first use. 
+
+
+
+C.3 General items 
+
+C.3.1 Responsibilities 
+
+Provide addresses of organizations or persons responsible for 
+
+— development; 
+
+— distribution; 
+
+— training; 
+
+— modification and further development of the procedure. 
+
+C.3.2 Contractual items 
+
+Provide sufficient information about contractual items, in- 
+cluding costs as applicable, for example: 
+
+— legal conditions such as copyright, privacy, security, etc. ; 
+
+— training; 
+
+— quality assurance; 
+
+— maintenance, 
+
+C.3.3 Scope and field of application 
+
+C.3,3.1 Describe briefly the objectives which can be achieved 
+by following the procedure. 
+
+C.3.3.2 Describe the functions of the procedure in terms of 
+the associated software and environment which indicate its 
+use. 
+
+C.3.3.3 Describe or reference any philosophical, psycho- 
+logical, or ergonometric principles used in the design of the 
+procedure; outstanding features; planned future revisions, etc. 
+
+C.3.4 Procedure specifications 
+
+C.3.4.1 Occasion, frequency 
+
+Describe the situations in which the procedure is applicable; if 
+periodic, provide the cycle length, and the position within the 
+cycle; if conditional, describe the events which prescribe the 
+use of the procedure. 
+
+C.3.4.2 Conventions, terminology ^ 
+
+Provide details or a reference to any conventions followed in 
+the naming of this or related procedures, any abbreviations 
+used, etc. 
+
+
+
+17 
+
+
+
+1813394:1992 
+ISO 6592 : 1985 
+
+
+
+C.3.4.3 Function 
+
+Describe in detail all of the functions of the procedure, with 
+particular reference to the materials and data required, the 
+results recorded, the software and hardware utilized, the 
+organizational units affected. 
+
+
+
+C.3.6.3 Hardware requirements 
+
+Provide specifications for any computer hardware configura- 
+tion involved in the procedure steps, and for any auxiliary or 
+office equipment used with references to the corresponding 
+documentation. 
+
+
+
+C. 3.4.4 Capabilities and resource requirements 
+
+Provide quantitative information concerning typical volume and 
+speed of processing, usage of resources such as computer and 
+peripheral hardware, supplies, office equipment, space, etc. 
+
+
+
+C.3.6.4 Supplies 
+
+Provide information concerning the procedure's requirements 
+for such supplies as computer media, stationery items, etc. 
+
+
+
+C. 3.4.5 Restrictions and exceptions 
+
+Describe any restrictions on the use of the procedure, or situa- 
+tions in which it is not applicable; preferably, include a 
+reference to alternate procedures. 
+
+
+
+C.3.6.5 Timing constraints 
+
+Describe any scheduling requirements, any constraints on 
+speed of processing, or any limitations on the occasions calling 
+for the use of the procedure. 
+
+
+
+C.3.4.8 Personnel 
+
+Describe the person or persons who will follow the procedure, 
+in terms of their function within the organization, for example 
+billing clerk, computer operator. 
+
+C.3.4.7 Data protection, security, and privacy concerns 
+
+Describe briefly or reference any policies relevant to the protec- 
+tion of the data or the procedures themselves from unauthor- 
+ized access. 
+
+
+
+C.3.5 Application data description 
+
+Describe the application-oriented data required by, processed 
+by, and generated by the procedure, with attributes relevant to 
+their use in the procedure. 
+
+The data shall be described in accordance with annex B. 
+
+The data description may be given in a separate document, 
+with appropriate cross-references. 
+
+
+
+C.3.6 Environment specification 
+
+C.3.6.1 Personnel skills 
+
+Specify any special skills or training required by the person 
+following the procedure. 
+
+
+
+C.3.7 Application example 
+
+Provide typical examples to help users understand the pro- 
+cedure, including illustrations of typical data and resu'ts, 
+
+C.3.8 Associated documentation 
+
+Provide a list of references to available documentation concern- 
+ing the system of which the procedure is a part, the software 
+and hardware involved, any related procedures, and any rele- 
+vant organizational information. Also provide information con- 
+cerning the location of this documentation, and any procedures 
+necessary for its procurement. 
+
+
+
+C.4 Technical documentation 
+C.4.1 Technical procedure description 
+
+C.4.1.1 Terminology and conventions 
+
+Define or reference definitions for any technical or specialized 
+terms used, and for any abbreviations. Provide or reference a 
+description of the nomenclature conventions used in naming 
+system components (programs, procedures, data entities). 
+
+C.4. 1.2 Procedure structure 
+
+
+
+C. 3.6.2 Software requirements 
+
+Identify, by name, variant, version, any software involved in the 
+usage of the procedure, and provide a reference to its 
+documentation. For a procedure detailing the provision of input 
+data to a program, make special reference to the data validation 
+and error handling features of the program; for a procedure 
+detailing the operation of a program, make special reference to 
+the operational specifications of the program; for a procedure 
+detailing the interpretation, control, or distribution of the out- 
+put from a program, make special reference to the application 
+and technical data descriptions, and messages. 
+
+
+
+For composite procedures, which provide instructions for 
+several occasions, or which contain conditional steps, describe 
+the organization of the procedure, preferably graphically. 
+
+C.4.2 Procedure structure 
+
+Define the procedure to be followed as a series of numbered 
+imperative instructions, beginning with any necessary collec- 
+tion of materials or information, and proceeding in chrono- 
+logical sequence to final disposition of any results of the pro- 
+cedure. 
+
+
+
+18 
+
+
+
+18 13394:1992 
+ISO 6592 : 1985 
+
+
+
+Distinguish carefully between instructions, for example worded 
+in the imperative and explanatory material, for example worded 
+passively, by typographical or other means. 
+
+Where steps are conditional or repetitive, arrange them so that 
+the control information precedes the procedures it affects, and 
+Indicate the range of the control by step numbers both at the 
+beginning of the affected steps and at their conclusion. 
+
+Tailor the language of the procedure steps to the skill set and 
+training level of the person who will follow the procedure. 
+
+C.4.3 Technical data description 
+
+Provide a technical description of any data involved in the pro- 
+cedure, including names, meanings, representations, media, 
+contents, access methods, structure, responsibilities, data 
+security provisions, and inter-relationships. This information 
+should be provided both for the application-oriented data {see 
+C.3.5) and for any data internal to the procedure, for example 
+control tallies, tables. 
+
+The data should be described in accordance with annex B. This 
+description may be contained in a separate document, in which 
+case appropriate cross-references are required. 
+
+C.4.4 Installation and support 
+
+C. 4.4.1 Distribution and filing 
+
+Provide any necessary information about the means of distribu- 
+tion and procedures for filing or posting the procedure and its 
+associated documentation. 
+
+
+
+C.4.4.2 Testing 
+
+Describe the methods used to test the procedure, with sample 
+data processed and results. 
+
+
+
+C.4.4.3 Training 
+
+Detail 
+
+a) the provisions made for training the person who will 
+initially and subsequently use the procedure; 
+
+b) the persons or organizations responsible; 
+
+c) the typical duration of training, the productivity ''learn- 
+ing curve", etc. 
+
+C.4.4.4 Refinement 
+
+Describe or reference the means by which persons following 
+the procedure, or other persons involved, may contribute 
+suggestions for its improvement. 
+
+C. 4.4.5 Adaptation 
+
+Provide any relevant suggestions for adapting the procedure 
+for other uses or environments. 
+
+C.4.4.6 Support 
+
+Provide any additional technical information relevant to the 
+continuing support and development of the procedure. 
+
+
+
+19 « 
+
+
+
+Printed at Dee Kay Printers, New Delhi, India 
+
+
+
+Bureau of Indian Standard 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to 
+promote harmonious development of the activities of standardization, marking and quality 
+certification of goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced 
+in any form without the prior permission in writting of BIS. This does not preclude the free use, 
+in the course of implementing the standard, of necessary details, such as symbols and sizes, type 
+or grade designation. Enquiries relating to copyright be addressed to the Director 
+( Publications ), BIS. 
+
+Revision of Indian Standards 
+
+Indian Standards are reviewed periodically and revised, when necessary and amendments, if 
+any, are issued from time to time. Users of Indian Standards should ascertain that they are in 
+possession of the latest amendments or edition. Comments on this Indian Standard may be 
+sent to BIS giving the following reference: 
+
+Doc : No. LTD 33 ( 1546 ) 
+
+
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text AflFected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 
+Telephones: 331 01 31, 331 13 75 
+
+Regional OflSces : 
+
+Central : Manafc Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110002 
+
+Eastern : 1/14 C. I. T. Scheme VII M, V. I. P. Road, Maniktola 
+CALCUTTA 700054 
+
+Northern : SCO 445-446, Sector 35-C, CHANDIGARH 160036 
+Southern : C. I. T. Campus, IV Cross Road, MADRAS 600113 
+
+
+
+Telegrams : Manaksanstha 
+( Common to all Offices ) 
+
+Telephone 
+
+33101 31 
+331 13 75 
+
+C37 84 99, 37 85 61, 
+J37 86 26, 37 85 62 
+
+53 38 43, 53 16 40, 
+53 23 84 
+
+C41 24 42, 41 25 19, 
+{41 23 15, 41 29 16 
+
+r632 92 95, 63 27 80, 
+632 78 92 
+
+
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri ( East ) 
+BOMBAY 400093 
+
+Branches : AHMADABAD, BANGALORE, BHOPAL, BHUBANESHWAR, COIMBATORE, 
+FARIDABAD, GHAZIABAD, GUWAHATI, HYDERABAD, JAIPUR, KANPUR, 
+LUCKNOW, PATNA, THIRUVANANTHAPURAM. 
+
+f 
+
+
+
+Printed at Printwell Printers, Aligarh, India 
+
+
+

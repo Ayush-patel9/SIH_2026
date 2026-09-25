@@ -1,0 +1,255 @@
+{
+  "is_number": "IS IS_16107__PART_1_",
+  "standard_id": "IS IS_16107__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_16107__PART_1_)",
+  "ia_identifier": "IS_16107__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard (Part 2/Section 2) specifies the performance requirements for LED street lighting luminaire, together with the test methods and conditions, required to show compliance with this standard suitable for use on de supplies up to 250 V dc or on ac supplies up to 1 000 V at 50 Hz. It applies to LED luminaires for street lighting, where claims of operational performance are made. The following types of LED street lighting luminaires are distinguished: a) Type A — Luminaire using LED modules where compliance with IS16103 (Part 2) has not been proven. b) Type B — Luminaire using LED modules where compliance with IS16103 (Part 2) has been proven. c) Type C— Luminaire using a LED lamp and covered in IS 16107 (Part 1) NOTE — The definition of the LED module is given in IS 16103 (Part 1 and Part 2) and IS 16101. This standard does not cover LED street light luminaires that intentionally produce coloured light; neither does it cover modules based on OLEDs (organic LEDs). The performance requirements are additional to the requirements given in IS 16107 (Part 1). The luminaire covered under the scope of this standard shall comply with the safety requirements given in IS 10322 (Part 5/Section 3). Life time of LED luminaires is in most cases much longer than the practical test times. Consequently, verification of manufacturer’s life time claims cannot be made in a sufficiently confident way. For that reason, the acceptance or rejection of a manufacturer’s life time claim, past 25 percent of rated life (with a maximum of 6 000 h), is out of the scope of this standard. Instead of life time validation, this standard has opted for lumen maintenance categories at a defined finite test time. Therefore, the category number does not imply a prediction of achievable life time. The categories are lumen-depreciation character categories showing behaviour in agreement with manufacturer’s information which is provided before the test is started. In order to validate a life time claim, an extrapolation of test data is needed. A general method of projecting measurement data beyond limited test time is under consideration. For explanation of life time metrics see Annex C of 1S16103 (Part 2). The acceptance or rejection criterion of the life time test as defined in this standard is different from the life time metrics claimed by manufacturers. 1.2 It is expected that LED-street light luminaire which comply with this standard will be able to start and operate at voltages be",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 16107 (PART 2/SEC 2)",
+      "standard_id": "IS 16107 (PART 2/SEC 2)",
+      "title": "Indian Standard Specification / Test Method (IS 16107 (PART 2/SEC 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10322",
+      "standard_id": "IS 10322",
+      "title": "Indian Standard Specification / Test Method (IS 10322)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 62272",
+      "standard_id": "IS/IEC 62272",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 62272)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 62717",
+      "standard_id": "IS/IEC 62717",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 62717)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16103 (PART 2)",
+      "standard_id": "IS 16103 (Part 2):2012",
+      "title": "LED modules for general lighting, Part 2: Performance requirements",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16103",
+      "standard_id": "IS 16103",
+      "title": "Indian Standard Specification / Test Method (IS 16103)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16101",
+      "standard_id": "IS 16101:2012",
+      "title": "General Lighting - LEDs and LED Modules - Terms and Definitions",
+      "division_code": "ETD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "SP 72",
+      "standard_id": "SP 72:2010",
+      "title": "SP 72: National Lighting Code 2010",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16103 (PART 1)",
+      "standard_id": "IS 16103 (Part 1):2012",
+      "title": "LED Modules for General Lighting, Part 1: Safety Requirements",
+      "division_code": "ETD",
+      "aspect": "Safety Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10322 (PART 1)",
+      "standard_id": "IS 10322 (Part 1):2014",
+      "title": "Part 1 : 2014: Luminaires Part 1 General Requirements and Tests",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16107",
+      "standard_id": "IS 16107",
+      "title": "Indian Standard Specification / Test Method (IS 16107)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16106",
+      "standard_id": "IS 16106:2012",
+      "title": "Method of Electrical and Photometric Measurements of Solid State Lighting (LED) Products",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14700",
+      "standard_id": "IS 14700",
+      "title": "Indian Standard Specification / Test Method (IS 14700)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16102 (PART 2)",
+      "standard_id": "IS 16102 (Part 2):2017",
+      "title": "Part 2 : 2017: Self - Ballasted LED Lamps for General Lighting Services Part 2 Performance Requirements (First Revision)",
+      "division_code": "ETD",
+      "aspect": "Service Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "LED Lighting (CRS) Order"
+    },
+    {
+      "is_number": "IS/IEC 60571",
+      "standard_id": "IS/IEC 60571",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60571)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60529",
+      "standard_id": "IS/IEC 60529",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60529)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 62442",
+      "standard_id": "IS/IEC 62442",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 62442)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2500 (PART 1)",
+      "standard_id": "IS 2500 (Part 1):2000",
+      "title": "Sampling Inspection Procedures, Part 1: Attribute Sampling Plans Indexed by Acceptable Quality Limit (AQL) for Lot-by-Lot Inspection",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16105",
+      "standard_id": "IS 16105:2012",
+      "title": "Method of Measurement of Lumen Maintenance of Solid State Light (LED) Sources",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "LED Street Lighting Luminaire",
+    "Family of LED Street Lighting",
+    "Rated Median Useful Life (of LED Luminaire",
+    "LED Luminaire Luminous Efficacy",
+    "Type Test",
+    "Type Test Sample",
+    "Acceptance Test",
+    "Grade Tests",
+    "10 K",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_16107__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "ingress protection shall be IP 65"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Information on the parameters shown in Table | shall",
+      "NOTE — This information is in addition to the marking",
+      "4.2 BIS Certification Marking",
+      "marked with the Standard Mark.",
+      "4.2.2 The use of the Standard Mark is governed by"
+    ]
+  },
+  "total_chars_parsed": 37880
+}

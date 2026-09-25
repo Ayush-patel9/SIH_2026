@@ -1,0 +1,150 @@
+{
+  "is_number": "IS IS_11408",
+  "standard_id": "IS IS_11408",
+  "title": "Indian Standard Specification / Test Method (IS IS_11408)",
+  "ia_identifier": "IS_11408",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11408) covers Indian Standard Specification / Test Method (IS IS_11408). This Indian Standard (First Revision) which is identical with ISO/tEC 1864 :1992 Information technology — Unrecorded 1 2,7 mm (0,5 In) wide magnetic tape for information interchange — 32 ftpmm (800 ftpi), NRZ1, 126 ftpmm (3 200 ftpi) phase encoded and 356 ftpmm (9 042 ftpi), NRZV issued by the International Organization for Standardization (ISO) and International Electrotechnical Commission (TEC) jointly, was adopted by the of the Computer Hardware Sectional Committee and approval of the Electronics and Information Technology Division Council. This standard was originally published in 1986 and was identical with ISO/IEC 1864 : 1984 and has now been revised to align it with the latest ISO/IEC Publication. The text of the ISO/IEC Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identical to those used in the Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'Inter",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/IEC 1864",
+      "standard_id": "IS/IEC 1864",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 1864)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 468",
+      "standard_id": "IS/ISO 468",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 468)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1863",
+      "standard_id": "IS/ISO 1863",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1863)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 3788",
+      "standard_id": "IS/IEC 3788",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 3788)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5652",
+      "standard_id": "IS/ISO 5652",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5652)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 37",
+      "standard_id": "IS/IEC 37",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 37)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6098",
+      "standard_id": "IS/ISO 6098",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6098)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 209",
+      "standard_id": "IS/ISO 209",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 209)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 732",
+      "standard_id": "IS 732:2019",
+      "title": "Code of Practice for Electrical Wiring Installations ( Fourth Revision )",
+      "division_code": "ETD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3788",
+      "standard_id": "IS/ISO 3788",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3788)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 21",
+      "standard_id": "IS 21:1992",
+      "title": "Wrought Aluminium and Aluminium Alloys for Manufacture of Utensils",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "magnetic tape",
+    "IMaster Standard Reference Tape",
+    "Secondary Standard Reference Tape",
+    "Average Signal Amplitude",
+    "Typical Field",
+    "Reference Field",
+    "Standard Reference Current",
+    "Test Recording Current",
+    "reference edge",
+    "In-contact",
+    "traclc",
+    "row"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 42593
+}

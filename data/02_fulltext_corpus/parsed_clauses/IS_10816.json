@@ -1,0 +1,55 @@
+{
+  "is_number": "IS IS_10816",
+  "standard_id": "IS IS_10816",
+  "title": "Indian Standard Specification / Test Method (IS IS_10816)",
+  "ia_identifier": "IS_10816",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard describes the methods of sampling at manufacturing site and also from bags, wagons, trucks barges or ships of a consignment of zinc/lead concentrates for estimating zinc/lead and moisture content. ♦Rules for rounding off numerical values ( revised ). 3 IS : 10816 - 1984",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10316",
+      "standard_id": "IS 10316:1986",
+      "title": "Recommendations for modular co-ordination : basic module and submodular increments (Equivalent to ISO 1006 and ISO 6514 : 1982)",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade rro",
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10816"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "moisture content around 2 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 14821
+}

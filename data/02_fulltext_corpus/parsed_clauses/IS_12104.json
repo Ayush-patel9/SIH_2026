@@ -1,0 +1,81 @@
+{
+  "is_number": "IS IS_12104",
+  "standard_id": "IS IS_12104",
+  "title": "Indian Standard Specification / Test Method (IS IS_12104)",
+  "ia_identifier": "IS_12104",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12104) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_12104).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 7328",
+      "standard_id": "IS 7328:2020",
+      "title": "Specification for Polyethylene Material for Moulding and Extrusion ( Third Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Polyethylene (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 10951",
+      "standard_id": "IS 10951:2020",
+      "title": "Specification for Polypropylene ( PP ) Materials for Moulding and Extrusion ( Second Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9766",
+      "standard_id": "IS 9766:1992",
+      "title": "Flexible PVC Compounds",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6528",
+      "standard_id": "IS 6528:1995",
+      "title": "Stainless steel wire",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2500",
+      "standard_id": "IS 2500",
+      "title": "Indian Standard Specification / Test Method (IS 2500)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12104"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 3095
+}

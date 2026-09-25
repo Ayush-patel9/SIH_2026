@@ -1,0 +1,64 @@
+{
+  "is_number": "IS IS_10190",
+  "standard_id": "IS IS_10190",
+  "title": "Indian Standard Specification / Test Method (IS IS_10190)",
+  "ia_identifier": "IS_10190",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_10190) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_10190).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 2063",
+      "standard_id": "IS 2063",
+      "title": "Indian Standard Specification / Test Method (IS 2063)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 005",
+      "standard_id": "IS 005",
+      "title": "Indian Standard Specification / Test Method (IS 005)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1708",
+      "standard_id": "IS/ISO 1708",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1708)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Machine",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10190"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance is 005 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 12518
+}

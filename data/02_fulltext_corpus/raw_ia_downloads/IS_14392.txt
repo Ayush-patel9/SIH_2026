@@ -1,0 +1,2505 @@
+***•••*•**•••••• 
+
+
+Disclosure  to  Promote  the  Right  To  Information 
+
+
+Whereas  the  Parliament  of  India  has  set  out  to  provide  a  practical  regime  of  right  to 
+information  for  citizens  to  secure  access  to  information  under  the  control  of  public  authorities, 
+in  order  to  promote  transparency  and  accountability  in  the  working  of  every  public  authority, 
+and  whereas  the  attached  publication  of  the  Bureau  of  Indian  Standards  is  of  particular  interest 
+to  the  public,  particularly  disadvantaged  communities  and  those  engaged  in  the  pursuit  of 
+education  and  knowledge,  the  attached  public  safety  standard  is  made  available  to  promote  the 
+timely  dissemination  of  this  information  in  an  accurate  manner  to  the  public. 
+
+
+Mazdoor  Kisan  Shakti  Sangathan 
+'The  Right  to  Information,  The  Right  to  Live' 
+
+
+Jawaharlal  Nehru 
+'Step  Out  From  the  Old  to  the  New' 
+
+
+IS  14392  (1996) :  General  considerations  for 
+telecommunication  services  for  electronic  power  systems 
+[LITD  10:  Power  System  Control  and  Associated 
+Communications  1 
+
+
+^^^^^r 
+
+
+C^IJIA^=JCsS^ff71l^vS^3g^TN:^a^ITFSggg 
+
+
+5?5im  |7*55^!S&^N5«^^ 
+
+
+-<:-<:^vv^^ 
+
+
+^ 
+
+
+ik 
+
+
+Satyanarayan  Gangaram  Pitroda 
+Invent  a  New  India  Using  Knowledge 
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge  is  such  a  treasure  which  cannot  be  stolen" 
+
+
+BLANK  PAGE 
+
+
+Vii^ 
+
+
+i4> 
+
+
+PROTECTED  BY  COPYRIGHT 
+
+
+IS  14392   :  1996 
+lEC  1085  (1992) 
+
+WJ^ft^  HH4y  (  Reaffirmed  2001  ) 
+
+Indian  Standard 
+
+GENERAL  CONSIDERATIONS  FOR 
+
+TELECOMMUNICATION  SERVICES  FOR 
+
+ELECTRIC  POWER  SYSTEMS 
+
+
+ICS  33.040.10;  29.240.30 
+
+
+©BIS  1996 
+
+BUREAUOF    INDIAN    STANDARDS 
+
+MANAK      BHAVAN,    9    BAHADUR    SHAH    ZAFAR     MARG 
+NEW  DELHI  110002 
+
+^^^V  1996  Price  Group     12 
+
+
+Power  Line  Carrier  Systems  and  Associated  Telecontrol  Equipment  Sectional  Committee,  LTD  25 
+
+
+NATIONAL  FOREWORD 
+
+This  Indian  Standard  which  is  identical  with  lEC  Pub  1085  (1992)  'General  considerations  for 
+telecommunication  services  for  electric  power  systems',  issued  by  the  International  Electrotechnical 
+Commission  (lEC),  was  adopted  by  the  Bureau  of  Indian  Standards  on  the  recommendation  of  Power 
+Line  Carrier  Systems  and  Associated  Telecontrol  Equipment  Sectional  Committee,  LTD  25  and 
+approval  of  the  Electronics  and  Telecommunication  Division  Council. 
+
+The  text  of  the  lEC  standard  has  been  approved  as  suitable  for  publication  as  Indian  Standard  without 
+deviations.  Certain  conventions  are,  however,  not  identical  to  those  used  in  Indian  Standards. 
+Attention  is  particularly  drawn  to  the  following: 
+
+Wherever  the  words  'International  Standard'  appear  referring  to  this  standard,  they  should  be  read 
+as  'Indian  Standard'. 
+
+CROSS  REFERENCES 
+
+Inthis  Indian  Standard,  the  following  International  Standards  are  referred  to.  Read  in  their  respective 
+places  the  following: 
+
+International  Standard  Corresponding  Indian  Standard 
+
+
+lEC  870-1  :  Telecontrol  equipment 
+and  systems  —  Part  1 ;  General  con- 
+siderations 
+
+lEC  870-2  :  Telecontrol  equipment 
+and  systems  —  Part  2  :  Operating 
+considerations 
+
+lEC  a70-3  (1989)  Telecontrol  equip- 
+ment and  systems  —  Part  3  :  Inter- 
+faces (Electrical  characteristics) 
+
+lEC  870-4  (1990)  Telecontrol  equip- 
+ment and  systems  —  Part  4  :  Perfor- 
+mance requirements 
+
+lEC  870-5  Telecontrol  equipment  and 
+systems  —  Part  5  :  Transmission 
+protocols 
+
+lEC  50  (371)  (1984)  International 
+electrotechnical  vocabulary  (lEV)  — 
+Chapter  371  :Telecontrol 
+
+lEC  834-1  (1988)  Performance  and 
+testing  of  teleprotection  equipment  of 
+power  systems  —  Part  1  :  Narrow- 
+band command  systems 
+
+lEC  353  (1989)  Line  traps  for  a.c. 
+power  systems 
+
+
+IS  12746  (Part  1/Sec  1)  :  1996 
+Telecontrol  equipment  and  systems  — 
+Part  1  General  considerations  {under 
+preparation) 
+
+IS  12746  (Part  2)  :  1989  Telecontrol 
+equipment  and  systems:  Part  2  En- 
+vironmental conditions  and  power 
+supplies 
+
+IS  12746  (Part  3)  :  1995  Telecontrol 
+equipment  and  systems  :  Part  3  Inter- 
+faces (electrical  characteristics) 
+
+IS  12746  (Part  4)  :  1993  Telecontrol 
+equipment  and  systems :  Part  4  Perfor- 
+mance requirements 
+
+!S  12746  (Part  5)  :  1993  Telecontrol 
+equipment  and  systems:  Part  5  Trans- 
+mission protocols 
+
+IS  1 885  (Part  50)  :  1 985  Electrotechni- 
+cal vocabulary:  Part  50  Telecontrol 
+
+IS  1 3968  (Part  1  /Sec  1  -5) :  1 994  Perfor- 
+mance and  testing  of  teleprotection 
+equipment  of  power  systems:  Part  1 
+narrow-band  command  systems 
+
+IS  8792  :  1995  Line  traps  for  Ac  power 
+systems  —  Specification  (first  revision) 
+IS  8793  :  1995  Line  traps  for  AC  power 
+systems    —    Methods    of    test    {first 
+revision) 
+
+
+Degree  of 
+Equivalence 
+
+Identical 
+
+
+Identical 
+
+
+Identical 
+
+
+Identical 
+
+
+Identical 
+
+
+Technically 
+Equivalent 
+
+Technically 
+Equivalent 
+
+
+Technically 
+Equivalent 
+Technically 
+Equivalent 
+
+
+(Continued  on  ttiird  cover) 
+
+
+IS  14392:1996 
+lEC   1085    (1992) 
+
+Indian  Standard 
+
+GENERAL  CONSIDERATIONS  FOR 
+
+TELECOMMUNICATION  SERVICES  FOR 
+
+ELECTRIC  POWER  SYSTEMS 
+
+1     Scope 
+
+This  Technical  Report  Is  intended  to  give  an  overview  of  the  specific  problems  and  require- 
+ments for  electric  power  utility  telecommunication  systems. 
+
+
+2     Normative  references  to  related  international  standards  and  reports 
+
+The  following  standards  contains  provisions  which,  through  reference  in  this  text,  consti- 
+tute provisions  of  this  Technical  Report.  At  the  time  of  publication,  the  editions  indicated 
+were  valid.  All  standards  are  subject  to  revision,  and  parties  to  agreements  based  on  this 
+Technical  Report  are  encouraged  to  investigate  the  possibility  of  applying  the  most  recent 
+editions  of  the  standards  listed  below.  Members  of  lEC  and  ISO  maintain  -registers  of 
+currently  valid  International  Standards. 
+
+
+There  are  many  international  standards  and  reports  covering  the  topics  considered  in  this 
+report  and  the  following  subclauses  detail  those  relevant  to  each  aspect. 
+
+
+2.1      General 
+
+Guide  for  planning  of  power  systems  telecommunication  systems  (1985).* 
+
+
+ANSI/IEEE  STD  367  -  1987:  IEEE  recommended  practises  for  determining  the  electric 
+power  station  ground  potential  rise  and  induced  voltage  from  a  power  fault. 
+
+2.2     Telecontrol 
+
+In  the  area  of  telecontrol  the  lEC  Technical  Committee  No.  57  is  in  the  process  ot  produc- 
+ing a  very  useful  publication.  This  publication.  lEC  870,  consists  of  six  parts  as  follows: 
+
+
+I  EC  870-1 :  Telecontrol  equipment  and  systems  -  Part  1:  General  considerations. 
+I  EC  870-2:  Telecontrol  equipment  and  systems  -  Part  2:  Operating  considerations. 
+
+
+lEC  870-3:  1989,  Telecontrol  equipment  and  systems  -  Part  3:  Interfaces  (electrical  charac- 
+teristics). 
+
+
+Published  by  CIGRE  Working  Group  O-l  otStudy  Committee  35 
+
+
+IS  14392:1996 
+lEC   1085    (1992) 
+
+lEC  870-4:  1990,  Telecontrol  equipment  and  systems  -  Part  4:  Performance  requirements. 
+I  EC  870-5:  Telecontrol  equipment  and  systems  -  Part  5:  Transmission  protocols. 
+
+
+I  EC  870-6:  Telecontrol  equipment  and  systems  -  Part  6:  Telecontrol  protocols  compatible 
+with  ISO  and  CCITT  standards  (under  consideration). 
+
+The  following  two  documents,  published  by  the  lEC  and  IEEE  respectively,  are  also  very 
+useful: 
+
+lEC  50(371):  1984.  International  Electrotechnical  Vocabulary  (lEV)  -  Chapter  371:  Telecon- 
+trol. 
+
+IEEE  P  565/D3  5-27-77:  Manual  of  automatic  and  supervisory  station  control  data  organi- 
+sation. 
+
+2.3  Teleprotection 
+
+lEC  Technical  Committee  No.  57  has  produced  the  following  standards  on  performance 
+and  testing  of  teleprotection  equipment: 
+
+lEC  834-1 :  1988,  Performance  and  testing  of  teleprotection  equipment  of  power  systems  - 
+Part  1:  Narrow-band  command  systems. 
+
+I  EC  834-2:   Performance  and  testing  of  teleprotection  equipment  of  power  systems  - 
+Part  2:  Analogue  comparison  systems  (in  preparation). 
+
+2.4  Power  line  carrier  (PLC) 
+
+lEC  Technical  Committee  No.  57  has  produced  the  following  standards: 
+
+lEC  353: 1989,  Line  traps  for  a.c.  power  systems. 
+
+I  EC  481 :  1974,  Coupling  devices  for  power  line  carrier  systems. 
+
+
+I  EC  495:  1974.  Recommended  values  for  characteristic  input  and  output  quantities  of 
+single  sideband  power  line  carrier  terminals. 
+
+I  EC  663:  1980,  Planning  of  (single  sideband)  power  line  carrier  systems. 
+
+
+2.5     Radio 
+
+Recommendations  and  reports  of  the  CCIR,  XVIth  Plenary  Assembly.  1986,  Volume  IX  - 
+Part  1 :  Fixed  service  using  radio-relay  systems. 
+
+Recommendations  and  reports  of  the  CCIR,  XVIth  Plenary  Assembly.  1986,  Volume  VIM  - 
+Parts, 1-3:  Mobile  services. 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+2.6  CCITT 
+
+.      FDM: 
+
+CCITT  Blue  Book  (1988)  -  Volume  III  -  Fascicle  III-2:  International  analogue  carrier 
+
+systems.  Transmission  media  characteristics. 
+
+.     TDM: 
+
+CCITT  Blue  Book  (1988)  -  Volume  III  -  Fascicle  III-3:  Digital  Networks.  Transmission 
+
+system  and  multiplexing  equipment 
+
+.     CCITT  Blue  Book  (1988)  -  Volume  VIM  -  Fascicle  VIII-7:  Data  communication 
+networks.  Message  handling  systems.  Recommendations  X.400  -  X.420. 
+
+2 . 7  Electro  -magnetic  compatibility 
+immunity  tests  (!EC  801  and  I  EC  1  000  series). 
+
+
+3     General 
+
+An  electric  power  system  consists  of  a  number  ot  power  stations  (thermal  and  hydro) 
+located  in  different  parts  ot  a  country  supplying  electric  power  via  a  transmission  and  distri- 
+bution network  to  feed  loads  which  are  spread  across  the  territory  and  are  remote  from  the 
+power  stations.  The  transmission  network  connects  the  power  stations  to  substations 
+where  switching  and  transformation  to  lower  voltages  takes  place  and  from  where  loads, 
+domestic  and  industrialare  supplied  via  a  distribution  network. 
+
+
+An  electric  power  system  is  frequently  referred  to  as  an  electrical  public  utility.  In  order  to 
+administer  and  operate  the  utility,  in  addition  to  the  power  stations,  transmission  and  distri- 
+bution substations,  a  number  of  other  units  can  be  Identified  (see  figure  1).  These  are: 
+
+-  a  headquarters  to  run  the  utility; 
+
+one  or  more  control  centres  to  determine  which  power-stations  should  operate  and 
+how  the  transmission  and  distribution  network  shall  be  used; 
+
+-  one  or  more  maintenance  centres; 
+
+one  or  more  computing  centres  for  support  of  the  control  centre(s)  and  for  support 
+of  headquarters. 
+
+These  units  obviously  cannot  work  in  isolation  and  hence  require  telecommunication 
+services.  The  following  subclauses  in  clause  3  identify  the  functions  to  be  executed  and 
+the  consequent  telecommunication  services  needed  to  satisfy  the  functions. 
+
+3.1      Functions 
+
+3.1.1     Administrative  telephony  {see  V\QUfe  2) 
+
+At  the  most  basic  level  headquarters  will  need  to  communicate  with  all  locations  within  the 
+utility  by  voice,  that  is  telephony,  and  may  also  wish  to  use  telex  and  facsimile  services 
+and,  increasingly,  electronic  mail  services.  The  locations  will  also  wish  to  communicate 
+with  one  another. 
+
+
+IS   14392  :  1996 
+lEC  1085    (1992) 
+
+Locations  will  also  need  telephone  connections  to  outside  of  the  utility,  that  is  via  the 
+public  switched  telephone  network  (PSTN)  and  this  may  again  include  telex  and  facsimile 
+services. 
+
+
+3.1.2     Operational  telephony  (see  figure  3} 
+
+The  control  centre(s)  requires  rapid  and  simple  telephone  access  to  the  power  stations, 
+substations  and  the  maintenance  centre(s).  Telephone  access  is  also  required  to  neigh- 
+bouring power  utilities  for  the  purpose  of  scheduling  the  interchange  of  electrical  power. 
+
+
+3.1 .3      Telecontrol  (SCADA)  (see  figure  4) 
+
+In  order  that  the  control  centre  can  carry  out  its  function  it  needs  to  be  provided  with  ail 
+the  information  about  the  power  system,  namely  status  positions  (i.e.  monitored  informa- 
+tion such  as  circuit-breakers,  isolators,  alarms}*  measurands,  integrated  totals,  etc.,  from 
+the  power  stations  (thermal  and  hydro)  and  substations  which  are  of  course  remote  from 
+the  control  centre.  It  is  also  necessary  to  control  electrical  and  hydraulic  plant.  H  load 
+frequency  control  (LFC  -  also  known  as  Automatic  Generation  Control)  is  used  then 
+remote  control  of  the  turbine-alternators  at  the  power  stations  will  also  be  required. 
+
+
+In  the  case  of  hydro-electric  power  stations  hydraulic  data,  such  as  rainfall  and  water 
+level,  also  needs  to  be  returned  to  the  control  centre. 
+
+
+At  the  control  centre(s)  this  information  is  used  to  drive  a  man-machine  interface  con- 
+sisting of  mimic  diagrams  and  visual  display  units  (VDU's). 
+
+The  system  used  to  handle  all  these  aspects  is  known  as  a  telecontrol  system  or  SCADA 
+(Supervisory  Control  and  Data  Acquisition)  system. 
+
+
+3. 1 .4     Load  management  (see  figure  5) 
+
+An  electrical  power  utility  may  wish  to  improve  its  system  load  factor  throughout  the  day 
+by  offering  incentives  to  customers  to  utilise  electric  power  at  particular  periods  of  the  day. 
+This  function  1%  known  as  load  management  and  is  achieved  by  the  remote  switching  in  or 
+out  Of  loads.  Lwd  management  may  be  under  the  control  of  the  control  centre  or  it  may  be 
+an  automatic  feature  such  as  when  it  Is  used  for  the  control  of  street  lighting. 
+
+
+3. 1 .5     Teleprotection  (see  f igu re  6) 
+
+Where  the  occurrence  of  an  incident  on  the  power  system  requires  protective  action  at 
+another  location  teleprotection  is  used. 
+
+
+IS  14392:1996 
+\EC  1085    (1992) 
+
+
+3.1.6      Mobile  radio  (see  fiaure  7\ 
+
+
+In  support  of  the  operation  ot  the  power  system,  under  the  control  of  the  control  centre(s), 
+there  will  be  a  maintenance  organisation  with  one  or  more  locations  in  the  territory 
+covered  by  the  utility.  These  maintenance  centres  will  have  mobile  crews  who  can  be 
+reached  either  in  their  vehicles  or  directly  on  a  "walkie-talkie"  basis.  For  this,  mobile  radio 
+is  used  typically  in  the  VHF  (70-165  fwlHz)  and  UHF  (400-470  MHz)  bands. 
+
+
+3.1.7     Computing  traffic  (see  figure  8) 
+
+In  modern  utilities  it  is  usual  to  have  at  least  one  main-frame  computer  with,  in  addition, 
+smaller  mini-computers  located  elsewhere  connected  to  the  main-frame. 
+
+The  main-frame  may  be  used  by  the  control  centre  for  off-line  planning  studies.  It  may 
+also  be  used  for  administrative  services  such  as  wages  and  billing. 
+
+
+3.2      Telecommunication  services 
+
+3.2.1      Administrative  telephony 
+
+To  satisfy  the  administrative  needs  of  the  utility  (3.1.1)  a  private  network  is  usually 
+provided,  which  makes  use  of  suitable  communication  media  (see  5.1)  together  with 
+private  automatic  exchanges  and.  if  the  network  is  large  enough,  with  transit  exchanges. 
+
+
+For  connection  to  the  public  network,  public  exchange  lines  are  usually  provided  to  all 
+locations  requiring  the  service. 
+
+3.2.2     Operational  telephony 
+
+To  satisfy  the  operational  telephony  needs  (3.1.2)  a  special  purpose  telephone  system  is 
+usually  provided  with  key  calling  of  a  limited  repertoire  of  extensions  and,  where  such  a 
+system  is  shared  with  the  administrative  private  network  (3.2.1).  a  priority  feature  which 
+ensures  that  the  control  engineer  always  has  access  to  the  desired  extension. 
+
+
+3.2.3      Telecontrol 
+
+Telecontrol  systems  (3.1.3)  consist  of  equipment  at  the  control  centre(s).  sometimes 
+called  master  station(s),  connected  via  suitable  communication  media  to  outstations 
+located  in  the  power  stations  (thermal  and  hydro)  and  substations.  These  outstations  are 
+interfaced  to  the  relevant  electrical  parameters  and  receive  commands  and  return  informa- 
+tion rapidly,  accurately  and  continuously. 
+
+
+At  the  control  centre(s)  the  equipment  consists  of  mini-computers  working  with  the  out- 
+stations and  animating  the  mimic  diagrams  and  VDU's. 
+
+
+IS  14392:1996 
+lEC   1085    (1992) 
+
+32.4     Load  management 
+
+Where  load  management  is  applied  to  domestic  or  industrial  loads  by  remote  tele- 
+switching,  requiring  access  to  a  large  number  of  consumers,  one  way  radio  communication 
+may  be  quite  sulficient,  in  which  case  there  is  one  central  radio  transmitter  and  many  radio 
+receivers. 
+
+On  the  other  hand  where  control  of  street  lighting  or  control  of  domestic  electric  water 
+heating  is  required,  mains  borne  signalling  may  be  used  (also  known  as  ripple  control). 
+
+
+3.2.5  Teleprotection 
+
+Teleprotection  systems  provide  a  means  of  transmitting  protection  information  or  protec- 
+tion commands  from  one  location  to  another  via  suitable  communication  media.  Fast, 
+reliable  and  error  free  operation  is  essential  for  such  services. 
+
+3.2.6  Mobile  radio 
+
+For  mobile  radio  systems  with  a  defined  area  to  be  covered  there  will  typically  be  one  or 
+more  base  stations  connected  to  the  maintenance  centre  by  suitable  communication 
+media.  The  vehicles  will  be  equiped  with  a  radio  transmitter/receiver  with  access  to  one  or 
+more  radio  channels  in  the  VHF  or  UHF  band.  Hand  portables  may  also  be  used  in  this 
+application  and  where  the  service  distances  are  small,  UHF  is  usually  preferred.  Where 
+vehicles  are  used,  some  may  be  equipped  with  a  text  message  capability. 
+
+
+3.2.7      Computing  traffic 
+
+Computing  traffic  usually  consists  of  targe  amounts  of  data  transferred  either  to  or  from  or 
+both  ways  into  the  main-frame.  There  may  also  be  a  large  amount  of  interactive  traffic. 
+
+
+Such  traffic  requires  error  protection  as  well  as  high  speed  signalling,  typically  2,4  kbits/s, 
+9,6  kbits/s,  or  64  kbits/s  and  even  higher.  Suitable  communication  media  are  required  for 
+such  traffic. 
+
+3.2.8     Other  services 
+
+Telex,  facsimile  and  electrorflo  mail  traffic  usually  consists  of  small  amounts  of  data 
+transferred  between  operational  and  administration  centres.  Signalling  speeds  range  from 
+50  bits/s  for  telex  to  2,4  kbits/s  for  facsimile  and  electronic  mail.  No  error  protection  is 
+usually  provided  for  telex  and  facsimile;  error  protection  is  provided  however  for  electronic 
+mail  systems  based  on  the  CCITT  Recommendation  X.400.  Suitable  communication  media 
+are  needed  for  all  such  traffic.  Message  switching  facilities  for  telex  and  electronic  mail 
+bring  extra  benefits  at  reasonable  cost. 
+
+
+IS   14392:1996 
+lEC   1085     (1992) 
+
+
+3.2-^9      Public  address  system  (PA  System) 
+
+
+Public  address  systems  are  widely  used  by  electrical  power  utilities  for  administration, 
+salety  (fire,  radiation,  evacuation)  and  operational  broadcasts.  For  internal  power  station 
+operational  requirements  where  only  one  way  communication  is  necessary,  a  PA  system 
+provides  a  very  convenient  means  of  communicating  to  a  group  ot  people  collectively. 
+
+
+3.2.10     Network  management 
+
+It  is  usual  for  modern  utilities  to  employ  network  management  techniques  for  administering 
+the  telecommunications  network.  A  centrally-located  management  centre  collects  traffic 
+and  transmission  quality  and  failure  data  remotely  and  is  capable  of  making  software 
+changes. to  accomplish  the  most  reliable  routing  of  traffic. 
+
+
+3.2.11      Power  supplies 
+
+To  support  the  aforementioned  telecommunication  services,  power  supplies  are  required 
+which  should  be  engineered  to  match  the  desired  security  and  reliability.  Thus  all  supplies 
+should  be  backed  by  electrical  storage,  for  example  batteries,  so  that  the  supply  continues 
+to  be  available  during  power  system  failures. 
+
+
+3.3      Summary 
+
+An  electrical  utility  may  elect  to  provide  its  own  entire  telecommunication  services  or  a 
+portion  of  them  for  the  following  reasons: 
+
+i)     The  essential  service  provided  by  an  electrical  utility  requires  integrity  and  avail- 
+ability of  communication  better  than  a  PTT  could  normally  offer. 
+
+ii)    A  public  telecommunications  operator  may   not   be   prepared  to   provide   all  1he 
+facilities  required  in  a  cost  effective  way. 
+
+Regardless  of  whether  or  not  the  electrical  utility  or  the  PTT  provides  the  service,  isolation 
+problems  and  general  electro-magnetic  compatibility  (EMC)  at  substations  and  power 
+stations  should  be  taken  care  of  in  providing  safe,  secure  and  reliable  service. 
+
+
+4     Service  requtrements 
+
+4.1      Telecommunication  and  operational  services 
+
+4.1.1      Administrative  telephony 
+
+In  common  with  all  industrial  and  commercial  organizations  an  electrical  public  utility 
+needs  a  suitable  service  of  telephony.  However,  the  requirements  tor  such  a  service  are 
+more  demanding  than  for  many  other  organisations  because  the  telephony  facilities  may 
+strongly  influence  1he  image  of  the  utility  to  the  electricity  supply  users. 
+
+
+IS  14392:1996 
+lEC   1035    (1992) 
+
+Administrative  telephony  should  be  able  to  service  complaints  from  the  public,  demand  for 
+electrical  supply  from  the  public,  as  well  as  work  organization,  fuel  provision  and  fuel 
+movement  within  the  organization. 
+
+
+4.1.2     Operational  telephony 
+
+Due  to  the  importance  of  the  voice  communication  needs  of  staff  in  charge  of  generation, 
+transmission  and  distribution  of  electrical  power,  there  is  a  need  for  an  operational  tele- 
+phony service. 
+
+In  an  electrical  utility  operational  telephony  is  the  most  important  working  tool.  Together 
+with  telecontrol,  it  is  used  for  managing  and  supervising  the  power  network  but  operational 
+telephony  has  to  be  available  even  when  the  telecontrol  system  fails. 
+
+
+The  traffic  offered  by  the  operators  is  not  high;  nevertheless  operational  telephony 
+requires  features  that  cannot  be  provided  except  by  means  of  specially  dedicated 
+networks. 
+
+In  addition  to  the  very  high  reliability  and  availability  required,  an  operational  telephone 
+network  shall  provide  the  following  facilities: 
+
+very  rapid  access; 
+
+priority  subscribers,  with  call  intrusion  and  forcing  down  ("knock-down")  facilities; 
+
+conference  facilities; 
+
+alternative  routing -Of  calls; 
+
+automatic  re-routing  of  calls; 
+
+hunting  for  free  trunks  in  groups; 
+
+non-blocking  transit  switching; 
+
+closed  numbering  scheme; 
+
+-      barring  certain  extensions  from  calling  subscribers  outside  predetermined  exchange 
+areas. 
+
+It  is  also  desirable  to  have  indication  of  the  origin  of  the  incoming  call. 
+
+In  order  to  provide  the  above  facilities,  the  operational  telephone  network  should  be  based 
+on  special  exchanges  with  a  more  sophisticated  signalling  system  than  usual. 
+
+
+A  priority  call,  for  example,  has  to  be  able  to  transfer  the  information  about  the  priority 
+throughout  the  network  by  means  of  a  signalling  system  which  enables  the  exchanges  to 
+perform  in  the  manner  required  for  this  type  of  call,  i.e.  intrude  on  and/or  disconnect  a 
+telephone  conversation  of  lower  status  if  free  trunks  or  a  subscriber  cannot  be  found. 
+
+
+Similarly,  feaiures  such  as  conference  and  re-routing  of  calls  require  the  transfer  of 
+suitable  information  about  the  type  and  status  of  calls  and  of  the  trunk  channels  intercon- 
+necting the  transit  exchanges.  Such  features  should  be  provided  either  for  analogue  or 
+digital  interconnection  channels  whether  only  a  single  channel  is  used  or  many  channels. 
+
+
+IS  14392:1996 
+lEC   1085    (1992) 
+
+As  the  calls  in  an  operational  network  may  be  of  an  extremely  urgent  nature,  the  signalling 
+system  is  required  to  be  very  fast  and  reliable,  so  that  the  time  spent  in  setting  up  the  call 
+is  kept  to  a  minimum. 
+
+The  attraction  of  a  closed  numbering  scheme  is  that  to  reach  a  certain  subscriber  the 
+same  number  is  dialled  irrespective  of  from  which  exchange  within  the  network  the  call  is 
+placed. 
+
+To  operate  a  network-wide  closed  numbering  scheme  and  automatic  alternative  re-routing 
+requires  digital  store  and  fonward  facilities  and  stored  programme  control  (SPC)  of  the 
+exchanges. 
+
+Operational  staff  at  control  centres  should  have  the  capability  of  maximum  priority  and 
+intrusion  ability  to  produce  a  grade  of  service  of  100  %  {i.e.  availability  of  100  %}  with  zero 
+(or  minimum)  waiting  time. 
+
+
+In  order  to  ease  the  operation  and  speed  up  the  calling  procedures,  such  staff  should  be 
+provided  with  equipment  enabling  calls  to  be  set  up  to  the  required  destination  by  simply 
+pressing  a  key  or  button  (one  key  or  button)  per  destination. 
+
+
+The  fulfilment  of  the  above  functional  requirements  can  be  easily  accomplished  by  using 
+dedicated  meshed  networks,  which  are  the  most  suitable  solution  for  medium  and  large 
+size  power  networks.  In  such  cases  the  operational  telephone  network  can  also  be 
+profitably  used  for  internal  administrative  communications,  at  least  as  a  back-up  system. 
+
+
+For  smaller  networks  with  low  traffic  density  or  as  a  back-up  facility  to  the  dispatching  and 
+control  operators,  party  line  systems  may  be  a  suitable  alternative. 
+
+
+It  is  clear  from  the  foregoing  that  the  transit  exchanges  and  the  other  equipment  used  in 
+the  operational  telephone  networks  of  electrical  utilities  have  to  be  quite  special  and 
+different  from  those  used  in  public  networks. 
+
+4.1.3     Telecontrol 
+
+Telecontrol  at  its  most  basic  concept  means  controlling  a  power  station  or  substation 
+remotely  just  as  if  the  operator  was  actually  at  the  station.  One  of  the  benefits  is  a  notice- 
+able saving  in  manpower  since  one  operator  can  control  several  stations,  thus  reducing 
+operating  costs. 
+
+Telecontrol  provides  for  data  acquisition  from  the  remote  stations  towards  the  control  cen- 
+tre and  in  the  reverse  direction  commands  from  the  control  centre  to  the  remote  stations. 
+
+
+Telecontrol  does  not  however  mean  only  telecommand  for  changing  the  state  of  circuit 
+breakers  and  isolators  (disconnectors),  or  setting  some  of  the  operational  conditions  of 
+some  of  the  equipment.  It  also  means  supervision  of  the  overall  state  of  the  electrical 
+network  as  a  unique  process  to  ensure  its  security,  reliability,  availability,  and  economy  in 
+electrical  energy  provision.  To  be  effective,  this  requires  the  telecontrol  system  to  carry 
+out  the  functions  of  state  estimation,  detection  of  bad  power  system  data,  etc. 
+
+
+IS   14392:1996 
+lEC  10B5    (1992) 
+
+The  power  system  functions  that  a  telecontrol  system  has  to  satisfy  are  listed  irl  the  follow- 
+ing table  1.  The  consequent  operational  functions  to  achieve  these  are  summarised  in 
+table  2.  The  term  energy  management  system  (EMS)  is  frequently  used  to  embrace  all 
+such  aspects. 
+
+Except  in  very  small  electrical  networks,  the  telecontrol  functions  are  usually  organised  in 
+an  hierarchical  structure,  as  shown  in  figure  9. 
+
+
+At  the  highest  level  a  telecontrol  system  can  consist  of  a  number  of  interconnected  control 
+centres  serviced  preferably  by  a  common  meshed  telecommunication  network.  The  tele- 
+control system  may  span  more  than  one  power  administrative  region  at  control  centres 
+and  thus  the  authority  over  the  telecontrol  system  itself  does  not  necessarily  coincide  with 
+any  particular  power  system  authority. 
+
+
+In  most  cases  the  main  control  centre  (MCC)  will  not  execute  commands  in  real  time  via 
+the  telecontrol  system  but  operates  via  the  lower  level  centres  by  telephone  instruction. 
+Nevertheless,  the  main  control  centre  will  provide  overall  supervision  of  the  total  system 
+and  may  well  schedule  the  operation  of  the  power  stations. 
+
+At  the  level  of  Regional  Control  Centre  (RCC)  actual  LFC  operations  as  well  as  execution 
+of  commands  may  be  performed.  The  RCC  is  also  responsible  for  the  next  lower  level  of 
+operation  {District  Control  Centres),  that  execute  commands  after  instruction  by  or  agree- 
+ment with  their  RCC. 
+
+
+The  security,  reliability  and  availability  of  the  electrical  power  system  requires  that  the  tele- 
+control functions  are  fast  even  in  updating  the  telemeasurements  and  should  be  of  the 
+highest  security  and  reliability.  Consistency  of  information  between  the  measurements  and 
+status  information  is  essential  for  satisfactory  operation,  especially  in  times  of  power 
+system  faults.  Response  times  should  be  short  particularly  during  power  system  faults 
+when  the  amount  of  information  to  be  returned  will  be  very  large. 
+
+
+Security  Is  the  probability  that  unwanted  or  incorrect  commands  do  not  occur,  while  reliab- 
+ility is  the  probability  that  a  command  is  not  missed  and  is  correctly  executed.  Similarly  the 
+telemetering  functions  have  to  be  highly  reliable,  secure  and  accurate. 
+
+
+All  of  the  foregoing  result  In  the  following  requirements: 
+
+fast  and  predictable  response  times; 
+
+use  of  suitable  transmission  protocols  and  coding  for  operational  data  transmission; 
+
+high  quality  communication  media; 
+
+high  reliability  communication  network; 
+
+high  availability  communication  networks  both  long  term  (equipment  failure)  and 
+short  term  (noise,  propagation,  interferences). 
+
+
+10 
+
+
+IS  14392  :  1996 
+lEC  1085    (1992) 
+
+The  transmission  capacity  of  the  communication  links  should  match  the  need  to  keep  the 
+overall  response  times  small  consistent  with  providing  the  right  amount  of  error  protection. 
+Modern  power  system  operation  requires  that  the  updating  time  of  the  information 
+reaching  the  MCC  Is  less  than  a  few  seconds.  Taking  into  account  the  amount  of  infor- 
+mation coming  from  the  remote  stations,  the  data  throughput  can  be  typically  200  bits/s 
+to  2  400  bits/s  between  outstatlons  and  DCC,  typically  2  400  bits/s  to  9  600  bits/s  between 
+DCC  and  RCC.  and  typically  9  600  bits/s  to  48  000  bits/s  between  RCC  and  MCC. 
+
+
+The  data  throughput  figures  are  likely  to  increase  with  the  introduction  of  the  next  genera- 
+tion of  telecontrol  systems  which  tend  to  require  much  shorter  response  times  and  higher 
+throughputs  in  order  to  enhance  the  automatic  computer-based  system  control  functions 
+and  thus  improve  the  security,  reliability  and  availability  of  the  service  provided  by  the 
+utility. 
+
+
+Significant  developments  in  the  use  of  expert  systems  at  the  different  levels  of  telecontrol 
+systems  are  currently  underway.  Among  other  things,  these  may  lead  to  a  potential 
+reduction  in  the  quantities  of  a  real-time  data  transmitted  as  a  result  of  local  automatic 
+alarm  analysis  in  the  event  of  a  sudden  increase  in  data. 
+
+
+The  overall  target  availability  for  the  telecommunication  links  of  the  primary  network  (RCC 
+to  f^CC)  should  be  better  than  99,99  %,  whereas  lower  values  may  be  tolerated  in  the 
+secondary  networks  where  the  avaitability  should  be  better  than  99,9  %. 
+
+
+Regarding  the  telecommunication  network  configuration,  the  required  long-term  availability 
+imposes  a  need  for  redundant  routing  of  signals  on  fully  independent  paths.  This  can 
+readily  be  achieved  by  mesh  configuriations. 
+
+
+Redundant  routing  itself  is  not  sufficient  to  ensure  the  required  availability  in  the  short 
+term  if  there  are  any  common  mode  failures  that  can  affect  both  paths.  Full  redundancy 
+means  separate  entries  into  a  building  from  separate  routes. 
+
+
+Notwithstanding  such  separation,  each  communication  path  should  be  of  sufficiently  high 
+quality  and  high  availability  to  achieve  the  required  availability  in  the  short  term  when  one 
+of  the  paths  is  out  of  service, 
+
+A  further  consideration  is  the  need  for  flexibility  should  a  DCC,  RCC  or  even  an  MCC  fail. 
+
+
+11 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+
+Table  1  -  Power  system  functions 
+
+(to  be  satisfied  by  telecontrol) 
+
+
+Network  state  determination 
+
+
+Topology  determination  and  state  estimation. 
+Network  equivalence. 
+
+
+Network  analysis 
+
+
+Load  flow  calculations. 
+Short-circuit  calculations. 
+Contingency  evaluation. 
+Security  monitoring. 
+
+
+Thermal  power  production 
+
+
+Trend  monitoring.  Set  value 
+Operation  reports/production. 
+
+
+Hydro  power  production 
+
+
+Calculation  of  water  flow. 
+
+Supervision  of  legal  obligations  (levels,  flows,  etc.). 
+
+Trend  monitoring. 
+
+Set  value. 
+
+Control  signals  to  local  regulating  equipment. 
+
+Operation  reports/production. 
+
+
+Network  and  generation  control 
+
+
+Load  shedding. 
+
+Load-frequency  control  and  economic  energy  management. 
+
+Load  forecast. 
+Unit  commitment. 
+
+
+Specific  telecontrol  system  functions 
+
+
+Non-current  tagging  of  measurands.* 
+Non-current  tagging  of  monitored  information.* 
+
+
+Post  mortem  analysis 
+
+
+Statistical  value  processing 
+
+
+Preparation  of  statistical  reports 
+
+
+Post  mortem  review. 
+
+Reports  of  power  system  disturbances  for  immediate 
+
+disturbance  analysis. 
+
+Reports  of  power  system  disturbances  for  subsequent 
+
+disturbance  analysis. 
+
+
+General. 
+
+Statistical  value  generation. 
+
+Storage  of  statistics. 
+
+Checking  of  statistical  data. 
+
+Correction/complementing. 
+
+
+General 
+
+Operation  reports,  power  grids. 
+
+Load  prediction  (long  term). 
+
+
+Training 
+
+
+Training  simulator. 
+
+
+*   I.E.  indication  that  measurands  and/or  monitored  information  are  not  being  updated,  and  hence  are 
+"non-current". 
+
+
+12 
+
+
+IS  14392 :  1996 
+lEC  1085    (1992) 
+
+
+Table  2  -  Telecontrol  functiorrs 
+
+
+Telemetering 
+
+Acquisition  of  variable  quantities. 
+Scaling  to  engineering  units. 
+Calculation  of  composite  values. 
+Override  marking. 
+Manual  input  values. 
+
+Teleindication 
+
+Acquisition  of  state  information  and  signals. 
+
+Time  tagging  of  data 
+Calculation  of  composite  values. 
+Override  marking  of  indications. 
+Manual  inputting  of  indications. 
+
+Telecounting 
+
+Acquisition  of  integrated  variable  states. 
+Scaling  to  engineering  units 
+Override  marking 
+Manual  inputting 
+
+Telecommand 
+Teleswhching 
+
+Issuing  of  commands  for  cfiange  of  state 
+(discrete) 
+
+Teleregulation 
+Telereadjusting 
+
+Issuing  of  regulation  information  (variable). 
+Blocking 
+
+Monitoring  of  limits 
+
+Monitoring  of  telemetered  quantities  against  limits. 
+Monrtoring  of  telemetered  quantities  against  forbidden  zones. 
+Inputting  of  limit  values. 
+
+Event  processing  and  alarming 
+
+Classification  of  events  in  the  power  system. 
+
+Alarm  acknowledgment. 
+Alarm  clearance. 
+Alarm  blocking 
+Alarm  delaying 
+
+4. 1 .4     Load  management 
+
+To  Improve  the  system  load  characteristic  electrical  utilities  with  large  power  networks 
+sometimes  otter  enhanced  tariffs  to  consumers  who  are  prepared  to  restrict  their  load 
+demands  at  certain  times  of  the  day.  e.g.  off-peak  power. 
+
+
+This  gives  rise  to  a  requirement  tor  the  remote  control  of  tariff  meters  and  the  switching  of 
+non-essential  supplies  like  water  heating  loads.  This  facility  requires  relatively  few 
+commands  at  infrequent  intervals,  although  there  may  be  a  very  lar^e  number  of  terminal 
+receivers  spread  over  wide  geographic  areas  and  high  reliability  is  needed  If  security  is 
+involved.  In  addition,  this  signalling  is  usually  only  required  rn  the  outwards  direction,  as 
+there  are  no  reveftive  or  check-back  signals  in  the  reverse  direction. 
+
+
+As  a  separate  issue,  load  control  and  switching  may  be  essential  when  particular 
+situations  require  load  relief  in  order  to  avoid  non-secure  electrical  network  operation  or 
+black-outs. 
+
+
+13 
+
+
+IS  14392:1996 
+lEC  lOaS    (1992) 
+
+Load  management  is  most  effective  with  the  biggest  medium  voltage  (MV)  or  high  voltage 
+(HV)  users,  who  offer  the  largest  loads.  The  techniques  first  applied  for  load  management 
+employed  superimposifion  of  low  level  audio  frequencies  on  the  network  power  frequency 
+and  this  is  known  as  ripple  control  and  is  still  in  use.  Today  it  is  recognised  that  the  load 
+control  schemes  are  an  integral  part  of  the  much  larger  overall  telecontrol  and  telecommu- 
+nication problem  and  other  techniques  using  normal  telecommunication  media  are  used 
+for  the  effective  load  management  when  it  involves  high-toad  users  and  conditions  of 
+shortage  of  power  are  possible. 
+
+
+In  the  case  of  targe  power  users  it  may  be  desirable  to  implement  systems  allowing 
+transmission  In  both  directions  that  permit  return  of  remote  meter  reading  operations  as 
+well  as  other  customer  data  such  as  number  and  duration  of  power  supply  failures. 
+
+
+In  recent  years  increasing  interest  has  been  shown  in  the  provision  of  load  management 
+systems  using  radio  telecommunication  techniques,  resorting  to  broadcasting  radio  system 
+for  one-way  operation  or  to  private  or  dedicated  networks  in  the  case  of  two-way  systems. 
+
+
+4.1.5     Teleprotection 
+
+Of  necessity  teleprotection  is  treated  in  a  different  way  to  the  telecontrol  function.  This  is 
+because  teleprotection  requires  communication  between  points  on  a  power  network, 
+whereas  telecontrol  requires  communication  radially  from  the  control  centre. 
+
+
+Teleprotection  enables  discriminative  or  coordinated  operation  of  the  electrical  protection 
+installed  atihe  terminal  points  of  an  electrical  power  line,  and  this  requires  a  communica- 
+tion link  between  the  two  terminal  stations  of  a  line. 
+
+
+Teleprotection  systems  can  be  classified  into  two  categories  according  to  the  type  of 
+information  that  is  transmitted: 
+
+-     analogue  comparison  systems; 
+command  systems. 
+
+Analogue  comparison  protection  systems  compare  the  amplitude  and  a  phase  of  the 
+electrical  power  system  currents  at  each  end  of  a  line.  The  analogue  signals  are 
+processed  at  each  end  of  the  power  line  and  sre  compared  with  the  local  values  to 
+determine  if  there  is  a  fault  which  is  internal  or  external  to  the  line  section. 
+
+In  command  systems  the  information  transmitted  between  the  ends  of  a  protected  line 
+consists  of  a  change  of  state,  OFF-ON  or  vice  versa.  There  are  three  basic  methods  of 
+using  simple  command  signals  in  a  protection  system,  namely  to  give  a  command  "to  trip" 
+(intertripping  scheme);  to  give  an  advisory  command  that  permits  tripping  (permissive  trip 
+scheme);  or  to  give  a  command  to  prevent  tripping  {blocking  protection  scheme). 
+
+
+14 
+
+
+IS  14392:1996 
+lEC  1085    (1092) 
+
+In  the  intertripping  mode  the  command  can  be  used  at  the  receiving  end  to  effect  the 
+tripping  without  taking  into  account  the  local  protection  status  (this  is  also  known  as  direct 
+or  transfer  tripping);  in  the  permissive  mode  the  command  can  take  effect  only  if  the  local 
+protection  lias  operated.  In  the  blocking  mode  the  action  is  to  prevent  operation  of  the 
+protection  equipment  for  an  external  fault. 
+
+
+In  each  case  command  systems  require  that  the  teleprotection  is  fast,  dependable  and 
+secure.  However,  these  parameters  are  Inter-dependent,  (for  a  given  bandwidth)  and  one 
+can  only  be  improved  at  the  expense  of  the  other(s).  The  requirements  differ  according  to 
+the  type  of  system  In  use. 
+
+
+For  a  defined  dependability  and  signal  to  noise  ratio  (S/N)  in  the  transmission  path,  the 
+maximum  teleprotection  transmission  time  for  command  systems,  excluding  propagation 
+time,  should  be: 
+
+-  less  than  20  ms  for  blocking  systems; 
+
+-  less  than  40  ms  for  permissive  tripping  systems; 
+
+-  less  than  60  ms  for  intertripping  systems. 
+
+Note  that  power  system  stability  and  security  considerations  may  require  transmission 
+times  considerably  less  than  the  above,  e.g.  20  ms  for  intertripping. 
+
+
+Dependability  is  the  probability  that  the  command  is  correctly  received.  It  is  given  by 
+1-Pmc,  where  Pmc  is  the  probability  of  a  missing  command.  For  the  transmission  times 
+given  above  and  a  defined  S/N  ratio,  the  probability  (Pmc)  of  a  missing  command  should 
+be: 
+
+-  less  than  1 0"^  for  blocking  systems; 
+
+-  less  than  10"^  to  10'^  for  permissive  tripping  systems; 
+
+-  less  than  10"^  to  10""^  for  intertripping  systems. 
+
+Security  is  the  probability  that  unwanted  or  incorrect  commands  do  not  occur.  It  is  given 
+by  1-Puc,  where  Puc  is  the  probability  of  an  unwanted  command.  For  the  transmission 
+times  given  above  and  a  defined  S/N  ratio,  the  probability  (Puc)  of  an  unwanted  command 
+should  be: 
+
+-  less  than  10"^  to  10"^  for  blocking  systems; 
+
+-  less  than  1 0~^  to  10"^  for  permissive  tripping  systems; 
+
+-  less  than  1 0"^  to  1 0"^  for  Intertripping  systems. 
+
+The  transmission  of  a  protection  command  over  an  analogue  transmission  medium  usually 
+requires  a  channel  bandwidth  between  120  Hz  and  480  Hz,  but  not  exceeding  4  kHz. 
+
+
+Analogue  comparison  protection  systems,  on  the  other  hand,  require  a  security  ^nd 
+dependability  as  high  or  higher  than  for  the  command  systems,  but  require  also  good 
+fidelity  in  the  transmission  of  the  analogue  waveform.  Moreover  it  is  necessary  that  the 
+communication  channel  should  not  distort  the  variations  of  the  transmitted  waveform.  The 
+
+
+15 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+transmission  channel,  therefore,  is  usually  wider  than  for  command  protection  systems 
+and  requires  a  whole  4  kHz  channel  in  analogue  transmission  media  and  a  bit  rate 
+of  19,2  kbits/s  to  64  kbits/s  or  better  In  digital  transmission  media. 
+
+
+The  operating  time  of  an  analogue  comparison  protection  system  is  the  time  from  the 
+instant  of  fault  inception  to  operation  of  the  tripping  output  contact.  This  will  be  generally 
+less  than  60  ms  although  system  stability  and  security  considerations  may  require 
+operating  times  considerably  less  than  the  above,  e.g.  less  than  25  ms.  In  general  the 
+operating  time  will  be  increased  by  noise.  The  teleprotection  transmission  time,  excluding 
+propagation  time,  is  normally  kept  small,  e.g.  less  than  5  ms. 
+
+
+4.1.6     Mobile  radio 
+
+Mobile  radio  provides  a  unique  means  of  communication  with  personnel  in  the  field  for  the 
+operation,  fault  clearance,  repair  and  construction  of  electricity  networks  and  for  the 
+provision  of  an  efficient  consumer  service.  Its  use  contributes  to  the  high  reliability  of  the 
+public  electricity  supply  which  is  achieved  today  and  it  is  indispensable  for  maintaining  the 
+availability  of  the  supply. 
+
+
+There  is  no  alternative  to  mobile  radio  for  dispatching  maintenance  teams  at  very  short 
+notice  and  for  coordinating  their  activities.  Without  mobile  radio  the  outages  on  the  elec- 
+trical network  would  be  two  or  three  times  longer  in  duration. 
+
+
+The  traffic  offered  by  the  users  of  mobile  radio  networks  of  electric  power  companies  is 
+normally  no  higher  than  that  offered  by  users  of  other  private  mobile  radio  networks  of 
+commercial  or  industrial  companies.  However,  the  traffic  offered  becomes  much  greater  in 
+emergency  situations,  such  as  during  bad  weather  conditions  (heavy  rain,  snow,  wind, 
+hurricanes,  etc.)  when  failures  and  outages  of  the  electrical  power  lines  are  more  likely  to 
+occur.  The  dimensioning  of  the  mobile  radio  networks  has  to  be  designed  taking  into 
+account  such  conditions,  so  that  the  networks  do  not  become  overloaded  or  saturated  just 
+when  they  are  most  needed. 
+
+
+For  large  electric  power  system  operation  the  following  types  of  mobile  communications 
+are  desirable; 
+
+a)  person  to  person  or  mobile  to  mobile  communications  for  short  ranges  (few  kilome- 
+tres) e.g.  during  line  construction  or  line  survey; 
+
+b)  local  area  communications,  base-mobile  and/or  mobile-mobile  for  ranges  of  a  few 
+tens  of  kilometres,  such  as  the  coverage  of  urban  and  suburban  areas  (the  coverage 
+might  be  achieved  by  a  single  base  station  or  by  a  suitable  repeater  station); 
+
+
+16 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+c)  wide  area  communications,  base-mobile  and/or  mobile-mobile  for  ranges  of  many 
+tens  of  kilometers  in  areas  that  require  many  base  or  repeater  stations  for  the  territory 
+to  be  covered.  Cellular  mobile  radio  networks  can  often  be  used  for  wide  area  communi- 
+cation. 
+
+Type  a)  can  utilise  frequencies  different  from  type  b)  in  order  to  relieve  the  frequency 
+congestion,  e.g.  UHF  and  VHF.  Type  c)  normally  requires  microwave  radio  networks  for 
+connection  between  the  base  and  repeater  stations. 
+
+
+Such  types  of  networks  are  very  convenient  permitting  staff  savings  and  operational  coor- 
+dination in  an  area  corresponding  to  that  telecontrolted  by  District  Control  Centres. 
+
+
+Given  the  traffic  to  be  served  and  the  shortage  of  suitable  frequencies  that  occurs  in  most 
+countries,  It  is  very  convenient  to  resort  to  networks  of  the  cellular  type,  with  cells  of 
+different  sizes  depending  on  the  traffic  density  and  on  other  technical  considerations.  In 
+each  cell  a  number  of  trunked  channels  are  available  for  the  users. 
+
+
+Another  technique  that  can  profitably  be  used,  even  with  trunking,  is  the  simultaneous 
+broadcasting  of  which  there  are  two  types:  synchronised  carrier  and  quasi-synchronised 
+carrier. 
+
+Most  mobile  communication  networks  provide  voice  communications  and  much  of  the  time 
+the  service  requires  conferencing  facilities  and  interconnection  with  the  operational 
+telephone  network. 
+
+Conferencing  is  essential  in  emergency  conditions  for  the  coordination  of  the  many  teams 
+that  are  required  to  operate  simultaneously. 
+
+In  addition  to  voice  use,  the  operation  of  electrical  networks  toxJay  requires  data  transmis- 
+sion from  or  to  mobile  stations.  The  need  is  for  coded  messages,  that  can  contribute  to 
+relief  of  the  traffic  on  the  networks  by  reducing  ihe  need  for  voice  communication.  The 
+transmission  of  written  messages  is  increasingly  required  in  order  to  save  time  when 
+written  Instructions  or  authorisations  are  to  be  exchanged  for  operations. 
+
+
+Once  the  mobile  station  is  equipped  for  data  transmission  it  is  evident  that  the  possibility 
+exists  of  using  mobile  networks  for  telecontrol.  As  a  matter  of  fact  this  is  a  facility  that  is 
+often  required,  mainly  in  connection  with  MV  electrical  networks.  Such  a  feature  is  very 
+attractive,  because  it  allows  extension  of  the  telecontrol  networks  without  requiring  expen- 
+sive dedicated  communication  networks.  Nevertheless  data  transmission  over  a  mobile 
+network  requires  that  quality,  reliability,  availability,  dependability  and  security  standards 
+should  be  similar  to  those  achieved  in  fixed  telecommunication  networks. 
+
+
+The  telecontrol  and  data  transmission  applications  should  not  offer  traffic  values  that 
+impair  voice  communication,  and  they  should  be  confined  to  services  not  requiring  a 
+permanent  channel  and  offering  very  low  traffic. 
+
+
+17 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+4.1.7      Computing  traffic 
+
+For  handling  computing  traffic  either  dedicated  circuits  or  packet  switched  services  are 
+required. 
+
+Dedicated  circuits  are  advisable  where  line  utilisation  is  very  high  although  they  do  not 
+permit  ready  access  to  alternative  routes  if  the  direct  route  fails  nor  is  routing  to  more  than 
+one  address  very  efficient. 
+
+
+Packet  switching  Is  particularly  suited  to  larger  data  networks  where  the  main  data  routes 
+can  be  trunked  and  where  multi-access  use  is  required  for  relatively  low  data  throughput 
+by  the  user. 
+
+
+4. 1 .8     Other  Services 
+
+Teleprinting,  facsimile,  and  electronic  mail 
+
+In  addition  to  the  telephone  network  and  the  facilities  for  overall  system  control,  electrical 
+utilities  also  need  teleprinting  and  facsimile  facilities,  not  only  for  general  and  administra- 
+tive services,  but  as  an  important  aid  to  the  operation  of  the  electrical  network. 
+
+
+Teleprinters  are  normally  operated  as  simple  point-to-point  links,  so  that  they  are  continu- 
+ously available  to  the  users.  Nevertheless  in  very  l>ig  networks,  where  a  large  number  of 
+users  have  to  communicate  with  one  another  the  teleprinting  system  can  make  use  of 
+message  switching  exchanges,  like  a  telephone  network,  even  though  direct  circuits  are 
+always  reserved  for  the  main  network  nodes  and  control  centres. 
+
+
+Teleprinting  Is  required  for  transmitting  important  information  associated  with  operations, 
+e.g.  instructions  for  and  confirmation  of  extraordinary  switching  states  under  emergency 
+conditions,  or  in  connection  with  maintenance  and  repairs  on  the  electrical  network. 
+
+
+For  teleprinting,  dedicated  channels  are  normally  used,  with  bit  rates  between  50  bits/s 
+and  4  800  bits/s.  The  higher  bit  rates  are  reserved  for  the  more  evolutionary  teletex 
+applications. 
+
+Facsimile  is  more  and  more  widely  used  by  reason  of  its  immediacy  for  the  transmission  of 
+document  copies,  drawings  and  graphics  and  utilises  the  telephone  network  and  telephone 
+extensions. 
+
+If  facsimile  is  used  directly  for  operations  the  operational  telephone  system  is  generally 
+used  as  the  communication  media.  If  facsimile  is  required  for  administrative  purposes  the 
+operational  telephone  system  may  also  be  used,  if  permitted  by  the  PTT,  otherwise  the 
+public  telephone  network  is  used. 
+
+
+Electronic  mail,  whrch  is  based  on  the  storage  and  forwarding  of  messages,  may  also  be 
+used  in  place  of  or  as  well  as  teleprinting  for  administration  traffic.  With  electronic  mail  a 
+"mail-box"  is  used  requiring  the  recipient  to  access  his  own  mail-box  to  read  messages 
+destined  for  him.  Electronic  mail  makes  use  of  VDU  terminals. 
+
+18 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+
+4.2     Electro-magnetic  compatibility  (EMC) 
+
+
+The  first  problem  that  arises  when  dealing  with  telecommunication  links  having  at  least 
+one  of  its  ends  terminated  In  an  electrical  station  is  the  rise  in  the  earth  potential  as  a 
+result"  of  a  conductor  of  an  electrical  HV  circuit  or  a  station  busbar  being  temporarily 
+connected  to  earth  (short  circuit  fault).  For  a  few  tens  of  milliseconds,  until  the  fault  Is 
+disconnected  by  operation  of  a  circuit  breal(er(s),  the  potential  of  the  local  earth  can  be 
+very  different  from  the  potential  of  the  remote  earth.  If  a  metallic  telecommunication  circuit 
+is  used  which  connects  the  station  with  another  site  it  will  be  subjected  to  a  common-mode 
+voltage  that  is  applied  to  the  input/output  of  the  terminal  equipment  ^nd  can  cause 
+damage  to  the  equipment  and/or  danger  to  personnel. 
+
+
+Moreover,  due  to  unbalance  in  the  telecommunication  circuit  the  common  mode  voltages 
+can  result  in  differential  mode  voltages  which  can  cause  serious  damage  to  telecom- 
+inunication  equipment. 
+
+The  second  problem  Is  that  of  overvoltage  due  to  lightning  and  other  electrical  discharges 
+when  opening  circuit  breakers  and  isolators.  Lightning  can  reach  the  telecommunication 
+equipment  via  power  supplies,  communication  circuits,  and  aerial  towers.  Lightning  can 
+also  raise  the  local  earth  potential  causing  impulsive  voltages  at  the  input/output  of 
+telecommunication  equipment. 
+
+
+Further  problems  can  arise  from  induction  due  to  the  passage  of  load  or  fault  currents  in 
+electrical  power  lines  and  station  busbars. 
+
+
+In  facing  all  the  above  problems,  which  are  typical  for  equipment  installed  In  electrical 
+plants,  power  stations  and  substations,  it  is  necessary  to  make  use  of  equipment  that 
+ensures  both  damage  limitation  (I.e.  the  capability  of  the  equipment  not  to  be  damaged) 
+and  immunity  (i.e.  the  capability  to  perform  its  operational  characteristics  without  any 
+disturbance).  Furthermore,  no  radiation  or  other  disturbances  should  be  emitted  which 
+could  disturb  other  equipment. 
+
+
+Depending  on  the  site  and  on  the  electrical  environment,  some  or  all  of  the  following 
+requirements  shall  be  taken  into  account  (but  see  the  relevant  lEC  documents  and/or 
+publications  for  details): 
+
+-  minimum  insulation  resistance  to  earth  (10  MQ  to  100  M£2); 
+
+-  electrical  Insulation  withstand  (1  kV  to  2  kV,  a.c.  or  1  kV  to  3  kV,  d.c.)  for  1  min; 
+
+-  impulse  withstand  (1  kV  to  5  kV;  1 ,2/50  ^ls;  higher  values  may  also  apply  in  certain 
+circumstances,  e.g.  6  kV  or  more,  0,1/2  000  jis); 
+
+
+immunity  to  current  impulses  (up  to  500  A;  8/20  ^s); 
+immunity  to  voltage  impulses  (2  kV;  10/700  m^s); 
+immunity  to  short  supply  Interruptions  (10  ms  to  500  ms): 
+immunity  to  distorted  a.c.  power  supply  voltage  (up  to  15  %); 
+
+
+19 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+-  immunity  to  residual  ax.  on  d.c.  power  supply  (0,2  Vpp  to  15  Vpp;  100  Hz); 
+
+-  immunity  to  a.c.  and  d.c.  voltages  (10  V  to  250  V)  on  signal  inputs  (metallic); 
+
+-  immunity  to  trains  of  sinusoidal  oscillations  on  supply  inputs  (20  ms;  0,01  MHz 
+to1  MHz;  10  V  to  100  V); 
+
+-  immunity  to  damped  sinusoidal  oscillations  on  signal  inputs  (0,1  MHz  to  1  MHz; 
+0,2kVto2,5kV); 
+
+-  immunity  to  static  energy  discharge  (5/30  ns;  2  kV  to  15  kV); 
+
+-  immunity  to  50  Hz  magnetic  field  (1  s;  0,1  kA/m  to  1  kA/m); 
+
+-  Immunity  to  impulsive  magnetic  field  (8/20  jis;  0,1  kA  to  1  kA); 
+
+-  immunity  to  damped  magnetic  field  (0,1  MHz  to  1  MHz;  10  A/m  to  100  A/m); 
+
+-  immunity  to  radiated  electromagnetic  field  (continuous  and  modulated  field,  10  V/m 
+or  more  within  the  frequency  range  100  kHz  to  1  X3Hz).  For  example,  from  a  hand-held 
+"walkie-talkie"; 
+
+-  immunity  from  switching  transients  up  to  300  V/m. 
+
+Apart  from  d.c.  supply  Inputs  and  RF  connections  to  antennae,  it  is  desirable  that  all  the 
+other  inputs/outputs  be  balanced  and  insulated  from  ground. 
+
+When  circuit  breakers  or  isolators  open,  they  generate  electrical  discharges  producing 
+very  high  noise  levels  In  the  telecommunication  circuits.  The  noise  power  can  easily 
+exceed  the  level  of  signals  transmitted  by  power  line  carrier  systems,  so  that  during  the 
+discharges  transmission  may  be  lost,  unless  very  careful  signal  processing  is  applied. 
+
+
+Electrical  discharges  also  generate  radiation  of  electromagnetic  waves  having  quite  a 
+broad  spectrum.  Among  the  causes  of  electromagnetic  radiated  noise  are 
+micro-discharges  on  faulty  insulators  or  Insulators  with  dirty  surfaces  or  in  other  electrical 
+devices. 
+
+All  these  circumstances  mean  that  careful  attention  has  to  be  observed  when  operating 
+radio-receivers  working  at  LF,  MF,  HF  and  the  low  bands  of  VHF  by  ensuring  that  the 
+received  field  values  are  higher  than  usual  practice.  At  160  MHz,  for  example,  noise  figure 
+impairments  of  some  decibels  have  been  measured  in  the  areas  occupied  by  electrical 
+stations.  These  impairments,  which  have  a  power  spectrum  density  decreasing  with 
+frequency,  can  be  neglected  for  UHF  and  microwaves. 
+
+
+4.3     Other  requirements 
+
+In  the  foregoing  subclauses  we  have  seen  that  electric  power  systems  need  telecommuni- 
+cation networks  that  are  very  reliable  and  always  available.  Reliability  and  availability 
+cannot  be  ensured  simply  by  providing  alternative  signal  routing  and  path  redundancy. 
+They  require  also  high  reliability  and  availability  on  each  path,  so  that  the  dependability 
+required  by  the  sjervices  is  ensured  even  in  the  case  of  failure  of  one  of  the  paths.  More- 
+over, if  the  transmission  performance  of  each  path  is  not  good  enough  the  signal  received 
+at  each  end  of  a  link,  obtained  by  selection  or  combination,  may  be  affected  by  phase  jitter 
+that  can  considerably  impair  data  transmission  and  telecontrol. 
+
+
+20 
+
+
+IS   14392:  1996 
+lEC  1085    (1992) 
+
+Another  requirement  concerns  response  times.  The  response  times  should  be  short  and 
+stable.  Attention  should  also  be  paid  to  timing  and  synchronisation  problems  when  digital 
+transmission  systems  are  used. 
+
+Telecommunication  networks  for  power  systems  also  have  to  be  flexible.  The  many 
+changes  required  as  the  power  network  parameters  and  configuration  alter  make  it  desir- 
+able that  the  telecommunication  network  be  capable  of  adapting  to  the  different  situations. 
+Standardisation,  upwards  capability,  spare  bandwidth  and  spare  channels  are  some  of  the 
+necessary  features  of  the  telecommunication  network. 
+
+
+A  noticeable  improvement  to  the  network  flexibility  can  be  achieved  In  digital  networks  by 
+resorting  to  programmable  and  teleprogrammable  multiplex  equipment  capable  of  switch- 
+ing their  channel  input/outputs  to  different  time-slots.  Also  programmable  drop-Insert  and 
+branching  equipment  should  be  employed  for  similar  reasons.  All  these  features  should  be 
+provided  by  a  suitable  telecommunication  network  management  system. 
+
+
+From  the  above  considerations  it  appears  that  electric  power  utilities  need  very  special 
+telecommunication  networks,  having  characteristics  that  usually  cannot  be  provided  by 
+public  networks,  as  these  are  designed  and  optimised  for  other  services  and  other  require- 
+ments. In  fact,  for  the  very  demanding  operational  applications  of  generation  and  trans- 
+mission, the  most  developed  electric  power  utilities  are  always  served  by  dedicated 
+networks. 
+
+
+If  one  considers  emergency  conditions  such  as  natural  disasters,  floods,  blizzards  or  earth- 
+quakes requiring  the  maintenance  and  rapid  restoration  of  public  electricity  supply,  an 
+electric  utility  cannot  relay  on  systems  shared  with  other  services  and  utilities  which  may 
+themselves  be  overloaded  by  reason  of  the  same  emergency  conditions. 
+
+
+It  has  already  been  said  that  just  as  telecommunication  networks  for  power  utilities  should 
+be  designed  and  equipped  in  order  to  serve  the  Iraffic  foreseen  in  emergency  conditions, 
+so  these  same  circumstances  shall  also  be  taken  Into  account  when  choosing  the  various 
+transmission  media. 
+
+As  an  example  it  is  evident  that  the  availability  of  a  PLC  channel  is  correlated  with  the 
+availability  of  the  electrical  overhead  line  on  which  it  works,  so  that  PLC  should  t)nly  be 
+used  on  peripheral  telecommunication  services,  as  it  may  not  be  the  best  choice  for  long 
+range  communications,  requiring  many  sections  in  cascade.  Similarly,  where  the 
+availability  has  to  be  independent  of  the  availability  of  electrical  overhead  lines,  PLC 
+should  not  be  used. 
+
+
+This  argument  is  applicable  also  to  telecommunication  systems  based  on  optical  fibre 
+cables  supported  on  overhead  electrical  lines.  The  availability  of  a  optical  fibre  link 
+depends  on  the  availability  and  mean  time  to  repair  (MTTR)  of  the  electrical  overhead 
+lines  on  which  it  works. 
+
+
+21 
+
+
+IS  14392:1996 
+(EC  1085    (1992) 
+
+Thus  when  using  PLC  or  fibre-optics  on  power  lines  it  is  advisable  to  provide  redundancy 
+of  different  paths  and  It  is  also  desirable  that  at  least  one  of  the  paths  be  provided  by  an 
+alternative  media  such  as  radio  links. 
+
+
+This  last  point  is  important  also  in  relation  to  economic  considerations.  In  tact  tt>e  capacity 
+normally  required  for  electric  utilities  means  that  it  "may  be  cheaper  to  us^  radio  links, 
+which  can  also  be  used  for  interconnecting  repeater  stations  to  provide  suitable  mobile 
+radio  system  networks. 
+
+
+A  further  point  concerns  the  power  supplies  required  by  the  telecommunication  services. 
+Low  voltage  (e.g.  48  V  d.c.)  supplies  require  battery  back-up  of  normally  six  hours 
+capacity.  Main  a.c.  supplies  will  require  uninterrupted  power  supplies  backed  up  by  diesel- 
+alternators  with  fuel  tank  storage  of  many  days  capacity. 
+
+
+All  these  considerations  make  it  imperative  to  use  the  services  of  professional  specialist 
+support  in  designing  the  telecommunication  services  of  an  electrical  power  utility. 
+
+
+5     Impact  on  telecommunication  provision 
+
+5.1      Transmission  media 
+
+This  subclause  is  not  intended  to  give  a  detailed  description  of  the  transmission  media 
+available  for  use  by  an  electrical  power  utility  but  highlights  those  aspects  considered  to 
+be  important.  The  international  standards  (lEC.  CCITT,  CCIR,  etc.)  give  all  the  detailed 
+information  that  may  be  required. 
+
+
+Figure  10  indicates  the  various  telecommunication  transmission  media  that  may  be 
+available  to  the  user  for  conveying  information  from  one  point  to  another. 
+
+There  are  several  criteria  that  have  to  be  observed  in  selecting  a  particular  transmission 
+medium.  These  criteria  are: 
+
+-  How  many  channels  are  required? 
+
+-  What  is  the  required  transmission  capacity  for  each  channel? 
+
+-  What  constraints  are  there?  For  example;  geographical,  regulatory,  distances, 
+frequencies  available  for  use.  terrorist  activity,  power  supplies; 
+
+•     What  are  the  required  reliability  and  quality  for  the  system? 
+
+5.1.1     Pilot  cables  owned  by  the  utility 
+
+Electrical  power  utilities  frequently  make  use  of  their  own  pilot  cable  for  protection  and 
+telecommunication  services.  These  cables  are  usually  run  underground  in  cable  trenches 
+and  are  frequently  laid  in  the  same  trenches  as  HV  cables.  Because  of  this,  great  care 
+needs  to  be  taken  in  handling  pilot  cables  due  to  the  presence  of  induction  from  the 
+HV  cables,  especially  when  there  is  a  power  system  fault. 
+
+
+22 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+Care  also  needs  to  be  taken  to  ensure  that  the  electrical  balance  of  the  cables  is  sufficient 
+so  that  induction  from  HV  cables  does  not  make  the  communication  media  unusable. 
+
+
+For  telecommunication  purpose,  cables  having  balanced,  twisted  pairs  should  be  used. 
+These  cables  can  be  protected  by  such  devices  as  isolating  or  neutralising  transformers, 
+with  non-linear  devices  (e.g.  carbon  blocks  or  gas  tubes)  to  limit  dangerous  voltages, 
+although  the  use  of  these  on  circuits  used  for  teleprotection  may  be  undesirable  (see 
+figure  11).  In  order  to  reduce  the  induced  voltage  the  cable  may  be  sectionalised  by  inter- 
+mediate isolating  transformers.  The  attenuation  of  the  pilots  may  be  quite  high  and  usually 
+only  audio  frequencies  up  to  say  4  kHz,  are  usable.  Hence  distances  over  which  such 
+cables  may  be  used  without  amplification  may  be  limited  to  10  km  to  15  km. 
+
+
+5. 1 .2     Ctrcuits  leased  from  PTT's 
+
+Telecommunication  circuits  may  be  leased  from  the  PTT  for  an  annual  rental  charge  and 
+an  initial  corrnection  fee.  Analogue  and  digital  circuits  may  be  hired  to  provide  audio 
+(300  Hz  to  3  400  Hz)  or  64  kbits/s  channels  respectively.  Wider  bandwidths  are  available 
+to  provide  more  channels,  for  example  12  channels  in  the  range  60  kHz  to  108  kHz  (FDM) 
+or  30  channels  at  2,048  Mbits/s  or  24  channels  at  1.544  Mbits/s  (TDM/PCM). 
+
+
+The  PTT  may  well  impose  certain  restrictions  on  the  use  of  their  circuits  particularly  where 
+circuits  have  to  enter  HV  premises.  Isolation  transformers  will  be  necessary  as  well  as 
+non-linear  devices  to  limit  dangerous  voltages,  although  the  use  of  these  on  circuits  used 
+for  teleprotection  may  be  undesirable.  Where  d.c.  teleprotection  circuits  are  required, 
+neutralising  transformers  can  be  used  to  cancel  the  earth  potential  rise  (EPR)  and  the 
+induced  voltages  in  metallic  cables. 
+
+
+5.1.3     Power  line  carrier  (PL C) 
+
+a)    Principle 
+
+The  electricity  industries  are  unique  in  that  they  have  available  to  them  very  reliable 
+physical  paths,  i.e.  the  transmission  power  lines  which  interconnect  the  points  of 
+generation  and  load  and  over  which  telecommunication  signals  can  be  transmitted. 
+Since  the  high-voltage  transmission  line  is  used  as  the  communication  medium,  it  is  not 
+possible  to  transmit  the  useful  audio  frequency  band  directly,  because  the  frequencies 
+in  this  band  are  too  close  to  power  system  frequency  and  hence  it  is  necessary  to 
+translate  the  audio  band  by  suitable  modulation  to  occupy  a  different  part  of  the 
+spectrum.  For  this  power  line  carrier  equipment  has  been  specifically  designed  for  use 
+on  a  power  network.  PLC  permits,  by  high  frequency  SSB  {Single  Side  Band)  modula- 
+tion, the  transmission  of  analogue  information.  Although  primarily  Intended  to  utilise 
+overhead  transmission  power  lines,  PLC  can  also  be  used  for  communication  over: 
+
+
+submarine  or  underground  power  cables; 
+
+cable  incorporated  into  ground  wires  (coaxial  or  quadded  cables). 
+
+
+23 
+
+
+IS  14392  :  1996 
+lEC  1085    (1992) 
+
+b)  PLC  frequencies 
+
+The  range  of  frequencies  suitable  for  conventional  power  line  carrier  transmission 
+extends  from  about  30  kHz  to  500  kHz  (in  some  countries  490  kHz),  the  lower  limit 
+being  fixed  by  the  limitations  and  cost  of  the  coupling  equipment,  and  the  upper  limit  by 
+line  attenuation  and  radiation.  The  actual  range  of  frequencies  available  for  use  in  a 
+particular  country  should  take  into  account  the  needs  of  various  radio  services  and 
+broadcasting  services,  including  aeronautical  and  maritime  navigation  systems  together 
+with  any  local  or  national  restrictions  or  regulations. 
+
+c)  Applications 
+
+Any  audio  frequency  channel  of  up  to  4  kHz  bandwidth  (in  some  countries  2,5  kHz)  is 
+available  and  can  be  used  to  carry: 
+
+either  analogue  information  in  the  form  of  speech,  or 
+
+-  speech  plus  data  (S  +  D),  the  data  consisting  of  telemetering,  telecontrol,  tele- 
+protection,  data,  etc. 
+
+d)  Noise  and  permissible  signal  to  noise  ratio 
+
+Power  line  carrier  links  are  subject  to  two  main  types  of  noise: 
+
+i)     Sustained  white  noise-like  voltages  (random  noise)  caused  by  irregular  electrical 
+discharges  across  insulators  and  conductors  (corona  or  brush  discharge). 
+
+ii)    Short  spikes  and  bursts  of  high  amplitude  caused  by  operation  of  isolators  and 
+breakers  or  by  lightning,  flashovers  and  the  like. 
+
+These  noise  levels  determine  the  PLC  link  quality.  The  permissible  signal  to  noise  ratio 
+limit  is  defined  in  I  EC  663. 
+
+e)  PLC  offers: 
+
+long  range  on  a  single  link  (several  hundred  kilometers  without  repeater  depend- 
+ing on  the  transmitter  power  and  frequency); 
+
+-  very  high  equipment  availability; 
+very  high  equipment  reliabitity. 
+
+In  spite  of  the  many  advantages,  there  are  some  limitations: 
+
+-  narrow  AF  bandwidth  and  hence  very  low  number  of  channels; 
+
+-  narrow  available  HP  spectrum; 
+
+-  attenuation  increase  due  to  use  of  HV  line  transpositions; 
+
+-  dependence  on  electrical  line  availability. 
+
+
+This  subclause  Is  intended  to  cover  fixed  radio  links:  microwave  and  UHF. 
+
+a)    Main  features 
+
+Radio  links  are  widely  used  to  provide  power  system  telecommunication  services  for 
+the  following  reasons 
+
+-     galvanic  isolation; 
+
+independence  from  power  lines; 
+
+24 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+large  number  of  circuits; 
+
+low  cost  In  comtarison  with  other  media; 
+
+additional  services  can  be  provided  relatively  easily  and  at  low  cost; 
+
+-  easy  maintenance  (the  equipments  are  located  at  a  few  sites  only); 
+
+-  high  quality  and  high  reliability. 
+
+However  there  are  fundamental  difficulties  in  the  provision  of  radio  links  i.e.: 
+
+-  obtaining  suitable  frequency  assignments; 
+
+-  propagation  problems  depending  on  frequency  and  fading  (non-total  availability 
+during  adverse  weather); 
+
+repeater  cost  and  need  for  power  supplies; 
+difficulties  in  linking  low  attitude  stations. 
+
+b)  Design  considerations 
+
+The  first  stage  is  to  determine  the  exact  locations  which  are  to  be  Interconnected  and 
+the  necessary  transmission  capacity.  This  first  approach  will  then  determine  the  appro- 
+priate frequency  range.  The  radio  path  loss  budget  can  be  determined  by  calculation  of: 
+
+-  free  space  loss; 
+
+-  additional  losses  in  the  form  of  fading,  sometimes  deep  (obstacles,  variation  in 
+refractive  index  of  the  atmosphere,  absorption,  multipath  reflections,  etc.); 
+
+-  interference  calculations. 
+
+Then,  all  the  necessary  equipments  can  be  defined  as  follows: 
+
+-  terminal  equipment; 
+
+-  repeater  equipment; 
+
+-  type  of  wave  guide  feeder; 
+
+-  type  of  antennae; 
+
+-  height  of  towers. 
+
+An  example  of  typical  radio  link  is  given  in  figure  12. 
+
+c)  Frequencies  available 
+
+Frequency  assignments  are  generally  made  by  the  national  frequency  administration. 
+Information  is  provided  in  ITU  and  CCIR  publications. 
+
+5.1.5     Mobile  radio 
+
+Mobile  radio  makes  use  of  VHF  (70  MHz  to  165  MHz  band)  and  UHF  (400  MHz  to 
+470  MHz  band)  using  AM  or  FM  (PM). 
+
+
+At  its  simplest,  mobile  radio  in  the  VHF  band  consists  of  a  base  station  usually  located^at 
+as  high  a  point  as  possible  and  a  number  of  mobile  units,  each  equipped  with  trans- 
+ceivers. 
+
+
+25 
+
+
+IS   14392:1996 
+lEC   1085    (1992) 
+
+5.1.6  Fibre  optics 
+
+An  optical  fibre  link  is  characterised  by  the  following  main  properties: 
+
+-  very  wide  bandwidth; 
+
+-  very  low  attenuation; 
+
+-  immunity  to  electromagnetic  interference; 
+
+-  low  weight  and  small  cable  size; 
+reliability  unknown  but  likely  to  be  good; 
+high  cost  in  comparison  with  other  media; 
+
+-  high  transmission  quality. 
+
+Thus,  this  transmission  medium  is  suitable  for  transmission  of  many  simultaneous 
+channels  by  means  of  time  division  multiplexing. 
+
+For  this  purpose,  the  design  ist)btained  by  loss  budget  and  bandwidth  budget  calcula- 
+tions which  permit  determination  of: 
+
+-  type  of  optical  fibre  (multimode  or  single  mode  fibres); 
+
+-  type  of  light  transmitter  (LASER  diode  or  LED); 
+type  of  light  receiver; 
+
+-  ancillary  equipment  (repeater,  etc); 
+
+-  available  bandwidth. 
+
+An  example  of  a  typical  optical  fibre  link  is  given  in  figure  13. 
+
+5.1 .7  Satellite  systems 
+
+Where  the  territory  to  be  covered  is  large,  consideration  should  be  given  to  using  the 
+facilities  provided  by  satellite  systems.  Each  outstation  and  the  control  centre  would 
+require  an  earth  station  equipped  with  a  suitable  aerial.  Unfortunately  the  cost  of  such 
+systems  is  high  and  also  requires  hiring  of  the  satellite  service  from  a  carrier  as  the  user 
+does  not  own  the  facility.  TDM  systems  operate  over  satellites,  hence  many  of  the  attrib- 
+utes of  optical  fibre  and  fixed  link  radio  also  apply  (e.g.  many  channels  of  high  quality  with 
+good  S/N). 
+
+
+5.2     Multiplex  equipment 
+
+In  order  to  make  effective  use  of  the  transmission  medium,  it  Is  necessary  to  carry  simulta- 
+neously more  than  one  audio  frequency  channel.  This  can  be  realised  by  analogue  (FDM) 
+or  digital  (TDM)  multiplexing  techniques.  The  CCITT  have  laid  down  a  number  of  recom- 
+mendations for  such  systems. 
+
+a)    Frequency  division  multiplex,  FDM 
+
+With  this  method  a  number  of  audio  channels  are  translated  to  occupy  discrete 
+positions  In  a  frequency  domain  covering  a  wide  frequency  band. 
+
+
+26 
+
+
+is  14392:1996 
+lEC  1085    (1992) 
+
+Each  audio  channel,  including  a  signalling  frequency  of  3  825  Hz,  occupies  a  bandwidth 
+of  4  kHz.  The  translation  is  made  in  successive  steps,  first  by  combining  into  primary 
+groups  of  12  channels  (bandwidth  60  kHz  to  108  kHz)  then  into  supergroups  of  60 
+channels  (bandwidth  60  kHz  to  300  kHz)  and  so  on. 
+
+b)    Time  division  multiplex,  TDM 
+
+With  this  method  a  number  of  audio  channels  are  digitised  and  then  translated  to 
+occupy  discrete  positions  in  the  time  domain. 
+
+The  audio  channels  are  sequentially  sampled  at  a  rate  of  8  000  times  per  second.  The 
+pulse  amplitude  sample  taken  for  each  channel  corresponds  to  the  amplitude  of  the 
+complex  wave-form  at  the  instant  of  sampling.  The  pulse  amplitude  is  then  coded  into 
+an  8  bit  binary  code  and  is  allocated  a  time  slot  within  the  multiplexed  signal.  Thus  an 
+audio  channel  produces  a  digital  signal  of  64  kbits/s. 
+
+For  30  channel  PCM,  a  basic  frame  of  2,048  f\/lbits/s  is  composed  of  a  time-frame  of 
+pulses  representing  30  telephony  channels  plus  two  channels  reserved  for  signalling 
+and  synchronisation  (32  x  64  =  2,048  Mbits/s). 
+
+This  basic  frame  can  be  multiplexed  with  other  frames  to  increase  the  transmission 
+bit-rate  (8;  34  Mbits/s,  etc.). 
+
+Alternatively,  for  24  channel  PCM  a  basic  frame  of  1,544  Mbits/s  is  composed  of  a  time- 
+frame of  pulses  representing  24  telephony  channels  with  an  additional  synchronisation 
+bit  for  every  frame  ([8  x  24  +  1]  x  8  =  1,544  Mbits/s).  This  basic  frame  can  be  multi- 
+plexed with  other  frames  to  increase  the  transmission  bit-rate  (6;  32  Mbits/s,  etc). 
+
+
+c)    Applications 
+
+This  equipment  is  suitable  for  the  following  types  of  telecommunication  link: 
+microwave; 
+
+-  coaxial; 
+
+-  optical  fibre  (TDM  preferably); 
+
+-  satellite  services. 
+
+
+27 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+
+Electrical  public  utility 
+
+
+Headquarters 
+
+
+Computing  centre 
+
+
+power  station 
+(thermal) 
+
+
+Substation 
+
+
+Load 
+
+
+power  atation 
+(hydro) 
+
+
+Load 
+
+
+Figure  1 
+
+
+28 
+
+
+Electncai  public  utHitv 
+
+
+IS  14392:1996 
+lEC   1085    (1992) 
+
+
+PSTN   < 
+
+
+\ 
+
+
+Headquarters 
+
+
+Power  «tation 
+(thermal) 
+
+
+PSTN 
+
+
+Substation 
+
+
+Load 
+
+■■■'■■  Internal  to  utility 
+■  ■  «  ■  External  to  utility 
+PSTN         Public  switched  telephone  network 
+
+
+Power  station 
+(hydro) 
+
+
+■  M  ■  PSTN 
+
+
+Load 
+
+
+Maintenance  centre 
+
+
+PSTN 
+
+
+Figure  2  -  Administrative  telephone  service 
+
+
+29 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+
+Electrical  public  utility 
+
+
+Headquarters 
+
+
+Computing  centre 
+
+
+Power  station 
+(thermal) 
+
+
+Power  station 
+(hydro) 
+
+
+Maintenance  centre 
+
+
+Figure  3  -  Operational  telephony 
+
+
+30 
+
+
+Electrical  public  utility 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+
+Headquarters 
+
+
+Computing  centre 
+
+
+Lead 
+
+
+Telecontrol  links 
+
+
+Figure  4  -  Telecontrol 
+
+
+31 
+
+
+IS  14392 :  1996 
+lEC  1085    (1992) 
+
+
+Electrrcal  public  utility 
+
+
+Headquarters 
+
+
+Computing  centre 
+
+
+Power  station 
+(thermal) 
+
+
+Control  centre 
+
+f 
+
+
+Substation 
+
+
+Power  station 
+(hydro) 
+
+
+Load 
+
+
+Maintenance  centre 
+
+
+Figure  5  -  Load  management 
+
+
+32 
+
+
+Electrical  pubiic  utility 
+
+
+IS  14392:1996 
+lEC   1085    (1992) 
+
+
+Headquarters 
+
+
+Computing  centre 
+
+
+Power  station 
+(thermal) 
+
+
+Control  centre 
+
+
+Load 
+
+
+Load 
+
+
+Teleprotection  links 
+
+
+Maintenance  centre 
+
+
+Figure  6  -  Teleprotection 
+
+
+33 
+
+
+IS  14392 :  1996 
+lEC  1085    (1992) 
+
+
+Electrical  public  utility 
+
+
+H<»adquarters 
+
+
+Computing  centre 
+
+
+Control  centre 
+
+
+Mobile  radio  links 
+
+
+Figure  7  -  Mobile  radio 
+
+
+34 
+
+
+Electrical  public  utility 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+
+Headquarters 
+
+
+Control  centre 
+
+
+Computing  centre 
+
+
+Power  station 
+(thermal) 
+
+
+Substation 
+
+
+Power  station 
+(hydro) 
+
+
+Load 
+
+
+Load 
+
+
+Main  computir>g 
+traffic  Units 
+
+
+Possible  computing 
+traffic  links 
+
+
+Maintenance  centre 
+
+
+Figure  8  -  Computing  trafic 
+
+
+35 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+
+Electrical  public  utility 
+
+
+MCC 
+
+Main  (or  national) 
+control  centre 
+
+
+OCC 
+
+
+District  control  centre 
+
+
+RCC 
+
+
+Regional  or  area 
+control  centre 
+
+
+PS 
+
+
+Power  station 
+
+
+Alternative  (a  power  station  may  be  connected 
+either  to  regional  control  centre  or 
+to  a  district  control  centre) 
+
+
+Outstation,  controlled  station 
+or  remote  terminal  unit  (RTU) 
+
+
+Figure  9  -  Typical  hierarchical  structure  o1  a  telecontrol  system 
+
+
+36 
+
+
+Electrical  public  utility 
+
+
+IS  14392:1996 
+lEC  1085    (t992) 
+
+
+Telecommunication  transmission  media 
+
+
+Pilot  cables 
+
+owned  by 
+
+elect   utility 
+
+
+Power  (ine 
+carrier 
+
+
+Circuits  leased 
+from  PITS 
+
+
+Mobile  radio 
+
+
+Fixed  link  radio 
+
+
+Satellite 
+services 
+
+
+Fibre  optics 
+
+
+Figure  10 
+
+
+37 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+
+ElecUical  public  utility 
+
+
+Isolating 
+transformer 
+
+
+Lightning 
+arrestor 
+
+
+Terminal 
+equipment 
+
+
+NOTES 
+
+1  Isolating  transformers  having  fully  floating  primary  and  secondary  windings  do  not  employ  an  inter- 
+winding  shield. 
+
+2  Neutralising  transformers  can  also  be  employed  as  protective  devices  in  certain  situations. 
+
+
+Figure  1 1  -  Example  of  use  of  audio  frequency  pilot  cables 
+
+
+38 
+
+
+Electrical  public  utility 
+
+
+IS  14392:1996 
+lEC  1085    (1992) 
+
+
+Radio  relay  station 
+
+
+Terminal  station 
+
+
+Terminal  station 
+
+
+Figure  12  -  Example  of  radio  link 
+
+
+optical 
+
+terminal 
+
+equipment 
+
+
+-a 
+
+
+Optical  fibre 
+
+
+> 
+
+
+Optical 
+
+terminal 
+
+equipment 
+
+
+Multiplexer 
+
+
+Figure  13  -  Example  of  optical  fibre  link 
+
+
+39 
+
+
+(Continued  from  second  cover) 
+
+lEC  481(1974)  Coupling  devices  for 
+power  line  carrier  terminals 
+
+lEC  495  (1974)  Recommendecl 
+values  for  characteristic  input  and 
+output  quantities  of  single  sideband 
+power  line  carrier  terminals 
+
+lEC  663  (1980)  Planning  of  (single 
+sideband)  power  line  carrier  systems 
+
+
+IS  8997  :  1978  Coupling  devices  for  Technically 
+
+PLC  systems  Equivalent 
+
+IS  9482 : 1 980  Characteristic  values  of  Technically 
+
+inputs     and       outputs     of     single  equivalent 
+sideband  PLC  terminals 
+
+IS  9528  (Part  2)  :  1980  Manual  for  Technically 
+
+planning  of  (SSB)  PLC  systems  :  Part  equivalent 
+2  PLC  systems  planning 
+
+
+The  concerned  technical  committee  has  reviewed  the  provisions  of  lEC  870-6  Telecontrol  equipment 
+and  systems  —  Part  6  :  Telecontrol  protocols  compatible  with  ISO  and  CCITT  standards'  (under 
+consideration),  referred  in  this  adopted  standard  and  has  decided  that  it  is  acceptable  for  use  in 
+conjunction  with  this  standard. 
+
+Only  the  English  language  text  in  the  Internationa!  Standard  has  been  retained  while  adopting  it  in 
+this  Indian  Standard. 
+
+
+Bureau  of  Indian  Standards 
+
+BIS  is  a  statutory  institution  established  under  the  Bureau  of  Indian  Standards  Act,  1986  to  promote 
+harmonious  development  of  the  activities  of  standardization,  marking  and  quality  certification  of  goods 
+and  attending  to  connected  matters  in  the  country. 
+
+Copyright 
+
+BIS  has  the  copyright  of  all  its  publications.  No  part  of  these  publications  maybe  reproduced  in  any  form 
+without  the  prior  permission  in  writing  of  BIS.  This  does  not  preclude  the  free  use,  in  the  course  of 
+implementing  the  standard,  of  necessary  details,  such  as  symbols  and  sizes,  type  or  grade  designations. 
+Enquiries  relating  to  copyright  be  addressed  to  the  Director  (Publications),  BIS. 
+
+Review  of  Indian  Standards 
+
+Amendments  are  issued  to  standards  as  the  need  arises  on  the  basis  of  comments.  Standards  are  also 
+reviewed  periodically;  a  standard  along  with  amendments  is  reaffirmed  when  such  review  indicates  that 
+no  changes  are  needed;  if  the  review  indicates  that  changes  are  needed,  it  is  taken  up  for  revision.  Users 
+of  Indian  Standards  should  ascertain  that  they  are  in  possession  of  the  latest  amendments  or  edition  by 
+referring  to  the  latest  issue  of 'BIS  Handbook'  and  'Standards  Monthly  Additions'. 
+
+TViic    T«H;n«    Q.tn-nAnrA   Viic  Kaan  Aa\tci^r\ni^A   ff/M-n    r~»/->/^   .     KTr\       T   TT^     O^     f    1  ^CT   ^ 
+
+
+Amendments  Issued  Since  Publication 
+
+
+Amend  No. 
+
+
+Date  of  Issue 
+
+
+Text  Affected 
+
+
+BUREAU  OF  INDIAN  STANDARDS 
+
+
+Headquaiters: 
+
+Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg,  New  Delhi  110002 
+Telephones  :  323  01  31,  323  83  75,  323  94  02 
+
+Regional  Offices : 
+
+Central    :  Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg 
+NEW  DELHI  110002 
+
+Eastern    :  1/14  C  LT.  Scheme  VII M,  V.  I.  P.  Road,  Maniktola 
+CALCUTTA  700054 
+
+Northern  :  SCO  335-336,  Sector  34- A,  CHANDIGARH  160022 
+Southern  :  C.  I.  T.  Campus,  IV  Cross  Road,  MADRAS  600113 
+
+
+Western  :  Manakalaya,  E9  MIDC,  Marol,  Andheri  (East) 
+MUMBAI  400093 
+
+
+Telegrams  :  Manaksanstha 
+(Common  to  all  offices) 
+
+
+Telephone 
+
+
+{ 
+
+
+323  76  17 
+323  38  41 
+
+
+r  337  84  99,  337  85  61 
+\  337  86  26,  337  91  20 
+
+
+{ 
+
+
+60  38  43 
+
+60  20  25 
+
+
+r  235  02  16,  235  04  42 
+\  235  15  19,  235  23  15 
+
+
+{ 
+
+
+832  92  95,  832  78  58 
+832  78  91,832  78  92 
+
+
+Branches :  AHMAD ABAD.      BANGALORE.         BHOPAL.  BHUBANESHWAR. 
+
+COIMBATORE.  FARIDABAD.  GHAZIABAD.  GUWAHATI.  HYDERABAD. 
+JAIPUR.    KANPUR.    LUCKNOW.    PATNA.    THIRUVANANTHAPURAM. 
+
+
+Printed  at  Dee  Kay  Printers,  New  Delhi,  India 
+
+

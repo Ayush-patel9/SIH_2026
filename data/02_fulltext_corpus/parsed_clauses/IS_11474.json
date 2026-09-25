@@ -1,0 +1,62 @@
+{
+  "is_number": "IS IS_11474",
+  "standard_id": "IS IS_11474",
+  "title": "Indian Standard Specification / Test Method (IS IS_11474)",
+  "ia_identifier": "IS_11474",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies the requirements and testing of windlasses and anchor capstans for inland vessels.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 4692",
+      "standard_id": "IS 4692:2013",
+      "title": "Shipbuilding - Electrically Welded Studless Link Anchor Chains and Connecting Shackles",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4484",
+      "standard_id": "IS 4484:2013",
+      "title": "Shipbuilding — Electrically Welded Stud Link Anchor Chains and Connecting Shackles and Swivels",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6219",
+      "standard_id": "IS/ISO 6219",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6219)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11474"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 13713
+}

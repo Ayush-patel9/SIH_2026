@@ -1,0 +1,1191 @@
+IS 14700 (Part 4/See 1) :2008 IEC 61000-4-1:2006
+
+jndi~n
+
+Standard
+TECHNIQUES
+Series
+
+ELECTROMAGNETIC COMPATIBILITY (EMC)
+PART 4 TESTING AND MEASUREMENT Overview of IEC 61000-4 Section 1
+(
+
+First Revision)
+
+ICS 33.100.01;
+
+33.100.20
+
+@ BIS 2008
+
+BUREAU
+MANAK May 2008
+
+OF
+
+INDIAN
+
+STANDARDS
+ZAFAR MARG
+
+BHAVAN,
+
+9 BAHADUR SHAH NEW DELHI 110002
+
+Price Group 5
+
+%!l
+Electromagnetic Compatibility Sectional Committee, LITD 09 NATIONAL FOREWORD
+
+IS 14700 (Part 4/See 1): 2008 IEC61OOO-4-1 :2006
+
+.
+
+1
+
+This Indian Standard (Part 4/See 1) (First Revision) which is identical with IEC 61000-4-1 :2006 `Electromagnetic compatibility (EMC) -- Part 4-1: Testing and measurement techniques -- Overview of IEC 61000-4 series' issued by the International Electrotechnical Commission (1EC) was adopted by the Bureau of Indian Standards on the recommendation of the Electromagnetic Compatibility Sectional Committee and approval of the Electronics and Information Technology Division Council. This standard was originally published in 1999 and was identical to IEC 61000-4-1 standard is being revised to align with the latest IEC publication IEC 61000-4-1 :2006. : 1992. This
+
+The text of IEC Standard has been approved as suitable for publication
+deviations. Certain conventions are, however, Attention is particularly drawn to the following: a) Wherever the words `International be read as `Indian Standard'. not identical
+
+as an Indian Standard without to those used in Indian Standards.
+
+Standard' appear referring to this standard,
+
+they should
+
+b)
+
+Comma (,) has been used as a decimal marker, while in Indian Standards, practice is"to use a point (.) as the decimal marker.
+
+the current
+
+In this adopted standard, reference appears to certain International Standards for which Indian The corresponding Indian Standards, which are to be substituted in their Standards also exist. respective places, are listed below along with their degree of equivalence for the editions indicated: /rttemationa/ Standard
+Corresponding Indian Standard Degree of Equivalence
+
+: 1990 International IEC 60050-161 Electrotechnical Vocabulary (IEV) -- 161: Electromagnetic Chapter compatibility IEC 61000-1-1 : 1992 Electromagnetic compatibility (EMC) -- Part 1: General -- Section 1: Application and interpretation of fundamental definitions and terms IEC 61000-3-2 : 2005 Electromagnetic compatibility (EMC) -- Part 3: Limits -- Section 2: Limits for harmonic current emissions (equipment input currents 16A per phase) IEC 61000-3-3 : 2005 Electromagnetic compatibility (EMC) -- Part 3: Limits -- Limitations of voltage Section 3: fluctuations and flicker in low-voltage supply systems for equipment with rated currents 16A
+
+Is
+
+1885
+
+Electrotechnical Electromagnetic
+
+(Part 85) vocabulary: compatibility
+
+:
+
+2003' Part 85
+
+Identical
+
+IS 14700 (Part l/See 1) : 2000 Electromagnetic compatibility (EMC): Part 1 General, Section 1 Application interpretation and of fundamental definitions and terms IS 14700 (Part 3/See 2) : 2008 Electromagnetic compatibility (EMC): Part 3 Limits, Section 2 Limits for harmonic current emissions (equipment input current ~ 16A per phase) IS 14700 (Part 3/See 3) : 2008 Electromagnetic compatibility (EMC): Part 3 Limits, Section 3 Limitations of voltage fluctuations and flicker in lowvoltage supply systems for equipment with rated currents 16A
+
+do
+
+do
+
+do
+
+i
+
+IS 14700 (Part 4/See 1) :2008 lEC 61000-4-1:2006
+/rrternationa/ Standard Corresponding Indian Standard Degree of
+
+Equivalence IEC 61000-4-2 : 2001 Electromagnetic compatibility (EMC) -- Part'4: T&ting and measurement techniques -- Section 2: Electrostatic discharge immunity test IEC 61000-4-3 : 2006 Electromagnetic compatibility (EMC) -- Part 4: Testing and measurement techniques -- Section 3: Radiated radio-frequency, electromagnetic field immunity test IEC 61000-4-4 : 2004 Electromagnetic (EMC) -- Part 4: Testing compatibility and measurement techniques -- Section 4: Electrical fast transient/burst immunity test IEC 61000-4-7 : 2002 Electromagnetic compatibility (EMC) -- Part 4: Testing and measurement techniques -- Section 7: General guide on harmonics and interharmonics measurements and supply instrumentation, for power and equipment systems connected thereto IEC 61000-4-8 : 2001 Electromagnetic compatibility (EMC) -- Part 4: Testing and measurement techniques -- Section 8: Power frequency magnetic field immunity test IEC 61000-4-9 : 2001 Electromagnetic compatibility (EMC) -- Part 4: Testing and measurement techniques -- Section 9: Pulse magnetic field immunity test IEC 61000-4-12 : 2001 Electromagnetic compatibility (EMC) -- Part 4: Testing and measurement techniques -- Section 12: Oscillatory waves immunity test IEC 61000-4-15 : 2003 Electromagnetic compatibility (EMC) -- Part 4: Testing and measurement techniques -- Section 15: Flickermeter -- Functinal and design specifications IEC 61000-4-16 : 2001 Electromagnetic compatibility (EMC) -- Pari 4: Testing and measurement techniques -- Section 16: Test for immunity to conducted common mode disturbances in the frequency range O Hz to 150 kHz immunity test IS 14700 (Part 4/See 2) : 2008 Electromagnetic compatibility (EMC): Part 4 Testing and measurement techniques, Section 2 Electrostatic discharge immunity test IS 14700 (Part 4/See 3) : 2008 Electromagnetic compatibility (EMC): Part 4 Testing and measurement techniques, Section 3 Radiated radioelectromagnetic frequency, field immunity test IS 14700 (Part 4/See 4) : 2008 (EMC): Electromagnetic compatibility Part 4 Testing and measurement techniques, Section 4 Electrical fast transient/burst immunity test IS 14700 (Part 4/See 7) : 2006 Electromagnetic compatibility (EMC): Part 4 Testing and measurement techniques, Section 7 General guide on harmonics and interharmonics measurements and instrumentation for power supply systems and equipment connected thereto IS 14700 (Part 4/See 8) : 2008 Electromagnetic compatibility (EMC): Part 4 Testing and measurement techniques, Section 8 Power frequency magnetic field immunity test IS 14700 (Pati 4/See 9) : 2008 Electromagnetic compatibility (EMC): Part 4 Testing and measurement techniques, Section 9 Pulse magnetic field immunity test IS 14700 (Part 4/See 12) : 2008 Electromagnetic compatibility (EMC): Part 4 Testing and measurement techniques, Section 12 Oscillatory waves immunity test IS 14700 (Part 4/See 15) : 2008 Electromagnetic compatibility (EMC): Part 4 Testing and measurement techniques, Section 15 Flickermeter -- Functinal and design specifications IS 14700 (Part 4/See 16) : 2008 Electromagnetic compatibility (EMC): Part 4 Testing and measurement techniques, Section 16 Test for immunity to conducted common mode disturbances in the frequency range O Hz to 150 kHz immunity test Identical
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+ii
+
+IS 14700 (Part 4/See 1): 2008 IEC 61000-4-1:2006
+/nternationa/ Standard Corresponding Indian Standard Degree of Equivalence
+
+IEC 61000-4-24 : 1997 Electromagnetic compatibility (EMC) -- Part 4: Testing and measurement techniques -- Section 24: Test methods for protective devices for HEMP conducted disturbance
+
+IS 14700 (Part 4/See 24) : 2007 Electromagnetic compatibility (EMC): Part 4 Testing and measurement techniques, Section 24 Test methods for protective devices for HEMP conducted disturbance
+
+Identical
+
+The technical committee responsible for the preparation of this standard has reviewed the provisions of the following International Standards referred in this adopted standard and has decided that they are acceptable for use in conjunction with this standard:
+International Standard Title
+
+IEC 61000-2-5:1995 r IEC 61000-3-4:1998
+
+Electromagnetic compatibility Classification of electromagnetic
+
+(EMC) -- Part environments
+
+2-5:
+
+Environment
+
+--
+
+Electromagnetic compatibility (EMC) -- Part 3-4: Limits -- Limitation of emission of harmonic currents in low-voltage power supply systems for equipment with rated current greater than 16A Electromagnetic compatibility (EMC) -- Part 3-5: Limits -- Limitation of voltage fluctuations and flicker in low-voltage power supply systems for equipment with rated current greater than 16A Electromagnetic compatibility (EMC) -- Part 3-6: Limits -- Assessment emission limits for distorting loads in MV and HV power systems of
+
+IEC 61000-3-5:1994
+
+IEC 61000-3-6:2008
+
+IEC 61000-3-11:2000
+
+Electromagnetic compatibility (EMC) -- Part 3-11: Limits -- Limitation of voltage changes, voltage fluctuations and flicker in public low-voltage supply systems -- Equipment with rated current s 75A and subject to conditional connection Electromagnetic compatibility (EMC) -- Part 3-12: Limits -- Limits for harmonic currents produced by equipment connected to public lowvoltage systems with input current > 16A ands 75A per phase Electromagnetic compatibility (EMC) -- Part measurement techniques -- Surge immunity test 4-5: Testing and
+
+IEC 61000-3-12:2004
+
+IEC 61000-4-5:2005
+
+IEC 61000-4-6:2006
+
+Electromagnetic compatibility (EMC) -- Part 4-6: -- Immunity to conducted measurement techniques induced by radio-frequency fields Electromagnetic compatibility (EMC) -- Part 4-10: measurement techniques -- Damped oscillatory magnetic test
+
+Testing and disturbances,
+
+lEC 61000-4-10:2001
+
+Testing and field immunity
+
+IEC 61000-4-11:2004
+
+Electromagnetic compatibility (EMC) -- Part 4-11: Testing and measurement techniques -- Voltage dips, short-interruptions and voltage variations immunity test Electromagnetic compatibility (EMC) -- Part 4-13: Testing and measurement techniques -- Harmonics and interharmonics including mains signaling at a.c. power port, low frequency immunity tests ... Ill
+
+IEC 61000-4-13:2002
+
+IS 14700 (Part 4/See 1) :2008 IEC61OOO-4-1 :2006 /rtternationa/ Standard
+Title
+
+IEC 61000-4-14:2002
+
+compatibility (EMC) -- Parl 4-14: Testing Electromagnetic measurement techniques -- Voltage fluctuation immunity test
+
+and
+
+IEC 61000-4-17:2002
+
+compatibility (EMC) -- Parl 4-17: Testing and Electromagnetic measurement techniques -- Ripple on d.c. input power port immunity test compatibility (EMC) -- Part 4-18: Testing Electromagnetic measurement techniques -- Damped oscillatory wave immunity test and
+
+IEC 61000-4-18:2006
+
+IEC 61000-4-20:2007
+
+compatibility (EMC) -- Part 4-20: Testing and Electromagnetic measurement techniques -- Emission and immunity testing in transverse electromagnetic (TEM) waveguides Electromagnetic compatibility (EMC) -- Part 4-21: Testing and
+
+IEC 61000-4-21:2003
+
+measurement techniques -- Reverberation chamber test methods
+IEC 61000-4-23:2000 -- Part 4-23: Testing and Electromagnetic compatibility (EMC) measurement techniques -- Test methods for protective devices for HEMP. and other radiated disturbances Electromagnetic compatibility (EMC) -- measurement techniques -- HEMP immunity and systems Part 4-25: test methods Testing and for equipment
+
+IEC 61000-4-25:2001
+
+IEC 61000-4-27:2000
+
+compatibility (EMC) -- Part 4-27: Electromagnetic measurement techniques -- Unbalance, immunity test
+
+Testing
+
+and
+
+IEC 61000-4-28:2002
+
+compatibility (EMC) -- Electromagnetic Part 4-28: Testing and measurement techniques -- Variation of power frequency, immunity test Electromagnetic compatibility (EMC) -- Part 4-29: Testing and measurement techniques -- Voltage dips, short interruptions and voltage variations on d.c. input power ports, immunity tests compatibility (EMC) -- Part 4-30: Testing Electromagnetic measurement techniques -- Power quality measurement methods Electromagnetic compatibility (EMC) -- Part 4-32: measurement techniques -- High-altitude electromagnetic simulator compendium compatibility Electromagnetic measurement techniques -- transient parameters (EMC) -- Measurements and
+
+IEC 61000-4-29
+
+:/2000
+
+IEC 61000-4-30:2006
+
+IEC 61000-4-32:2002
+
+Testing and pulse (HEMP)
+
+lEC 61000-4-33:2005
+
+Part 4-33: Testing and methods for high power
+
+IEC 61000-4-34:2005
+
+Part 4-34: Testing and Electromagnetic compatibility (EMC) -- measurement techniques -- Voltage dips, short interruptions and ~oltage variations immunity tests for equipment with input current more than 16A per phase
+
+Only the English text of the International Standard has been retained while adopting it as an Indian Standard, and as such the page numbers given here are not the same as in the IEC I%blication.
+
+iv
+
+IS 14700 (Part 4/See 1) :2008 IEC61OOO-4-1 :2006 INTRODUCTION
+The IEC 61000 series is published in several parts according to the following structure:
+
+Part 1: General
+General consideration terminology (introduction, fundamental principles)
+
+Definitions,
+
+Part 2: Environment
+Description Classification Compatibility of the environment of the environment levels
+
+Part 3: Limits Emission limits Immunity test levels (in so far as they do not fall under the responsibility committees) Part 4: Testing
+Measurement Testing
+
+of the product
+
+and measurement
+techniques
+
+techniques
+
+techniques
+
+Part 5: Installation
+
+and mitigation
+
+guidelines
+
+Installation guidelines Mitigation methods and devices Part 6: Generic standards Part 9: Miscellaneous
+Each part is further subdivided into several parts, published either as International Standards, technical specifications or technical reports, some of which have already been published as sections. Others will be published with the part number followed by a dash and completed by a second number identifying the subdivision (example: 61000-6-1).
+
+IS 14700 (Part 4/See 1): 2008 IEC 61000-4-1:2006
+
+Indian Standard ELECTROMAGNETIC COMPATIBILITY (EMC)
+PART 4 TESTING AND MEASUREMENT TECHNIQUES Overview of IEC 61000-4 Series Section 1
+
+(First 1
+This
+
+Revision )
+and measuring techniques for electric
+
+Scope and object
+part of IEC 61000 covers testing
+
+and electronic
+
+equipment (apparatus and systems) in its electromagnetic
+
+environment.
+
+The object of this part is to give applicability assistance to the technical committees of IEC or other bodies, users and manufacturers of electrical and electronic equipment on EMC standards within the IEC 61000-4 series on testing and measurement techniques and to provide general recommendations concerning the choice of relevant tests.
+
+2
+
+Normative references
+
+The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies. IEC 60050( 161), International magnetic compatibility Electrotechnical Vocabulary (IEV) Chapter 161: Electro-
+
+I EC 61000-1-1, Electromagnetic Compatibility (EMC) interpretation of fundamental/ definitions and terms IEC 61000-2-5, electromagnetic Electromagnetic environments Compatibility
+
+-
+
+Part
+
+1-1: General
+
+- Application
+
+and
+
+(EMC) - Part 2: Environment
+
+- Classification
+
+of
+
+IEC 61000-3-2, Electromagnetic compatibility (EMC) - Part current emissions (equipment input current -s 6 A per phase)
+
+3-2:
+
+Limits
+
+-Limits
+
+for harmonic
+
+IEC61000-3-3, Electromagnetic compatibility (EMC) - Parf 3-3: Limits -Limitation of voltage changes, voltage fluctuations and flicker in public low-voltage supply systems, for equipment with rated current ­46 A per phase and not subject to conditions/ connection IECITS 61000-3-4, Electromagnetic compatibility (EMC) - Part 3-4: Limits - Limitation of emission of harmonic currents in low-voltage power supply systems for equipment with rated current graater than 16A IEC/TR 61000-3-5, Electromagnetic compatibility (EMC) - Part 3-5: Limits - Limitation of voltaga fluctuations and flicker in 10w-voltage power supply systems for equipment with rated current greater than 16 A I EC 61000-3-6, Electromagnetic of emission limits for distorting compatibility (EMC) - Parf 3; Limits loads in M V and HV power systems - Section 6: Assessment
+
+IS 14700 (Part 4/See 1): 2008 IEC61OOO-4-1 :2006
+IEC 61000-3-11, Electromagnetic compatibility (EMC) - Part 3-11: Limits - Limitation of voltage changes, voitage fluctuations and flicker in public low-voltage supply systems - Equipment with rated current .ss5 A and subject to conditional connection IEC 61000-3-12, Electromagnetic currents produced by equipment >16 A and .05 A per phase compatibility (EMC) - Part 3-12: connected to public low-voltage Limits - Limits for harmonic systems with input current
+
+IEC 61000-4-2, Electromagnetic compatibility techniques ­ Electrostatic discharge immunity
+
+(fMC) test
+
+-
+
+Part
+
+4-2:
+
+Testing
+
+and
+
+measurement
+
+lEC 61000-4-3, Electromagnetic compatibility (EMC) - Part 4-3: Testing techniques ­ Radiated, radio-frequency, electromagnetic fieid immunity test IEC 61000-4-4, Electromagnetic compatibility (EMC) ­ Part techniques ­ Electrical fast transient/burst immunity test IEC 61000-4-5, Electromagnetic compatibility techniques ­ Surge immunjty test (EMC) Part 4-4: Testing
+
+and
+
+measurement
+
+and
+
+measurement
+
+4-5:
+
+Testing
+
+and
+
+measurement
+
+IEC 61000-4-6, Electromagnetic compatibility {fMC) - Part 4-6: Testing techniques ­ Immunity to conducted disturbances, induced by radio-frequency I EC 61000-4-7, techniques ­ instrumentation, Electromagnetic compatibility (EMC) and General guide on harmonics for power supply systems and equipment
+
+and measurement fields
+
+Part 4-7: Testing and measurement interharmonics measurements and connected thereto 4-8: Testing and measurement
+
+IEC 61000-4-8, Electromagnetic compatibility (EMC) techniques ­ Power frequency magnetic field immunity I EC 61000-4-9, Electromagnetic compatibility (EMC) techniques ­ Pulse magnetic field immunity test I EC 61000-4-10, Electromagnetic techniques ­ Damped oscillatory
+
+- Part test Part
+
+4-9:
+
+Testing
+
+and
+
+measurement
+
+compatibility (EMC) - Part 4-f O: Testhg m agnetjc field immunity test
+
+and measurement
+
+I EC 61000-4-11, Electromagnetic compatibility (f MC) ­ Part 4-11: techniques ­ Voltage dips, short interruptions and voltage variations I EC 61000-4-12, Electromagnetic compatibility techniques ­ Oscillatory waves immunity test (EMC) - Part 4-12:
+
+Testing and measurement jmmunity test Testing and measurement
+
+I EC 61000-4-13, Electromagnetic compatibility (EMC) techniques - Harmonics and interharmonics including frequency immunity tests IEC 61000-4-14, Electromagnetic techniques - Voitage fluctuation compatibility immunity test (EMC)
+
+- Part 4-13: Testing and measurement mains signaling at a. c. power port, low
+
+­ Part 4-14:
+
+Testing
+
+and measurement
+
+I EC 61000-4-15, Electromagnetic compatibility (EMC) - Part 4-15: techniques - Flickermeter - Functional and design specifications 1 IEC 61000-4-16, Electromagnetic compatibility to conducted techniques - Test for immunity range O Hz to 150 kHz immunity test
+
+Testing
+
+and measurement
+
+(EMC) - Part 4-16: Testing common mode disturbances
+
+and measurement in the frequency
+
+1 Revision of IEC 60868
+
+IS 14700 (Part 4/See 1): 2008 IEC61OOO-4-1 :2006
+IEC61OOO-4-I7, Electromagnetic compatibility (EMC) - Part 4-17: techniques ­ Ripple on d.c. input power port immunity test IEC 61000-4-18, Electromagnetic Compatibility techniques ­ Oscillatory wave immunity test (.EMC) - Pari 4-78: Testing and measurement
+
+Testing
+
+and measurement
+
+I EC 61000-4-20, Electromagnetic compatibility (fMC) - Part 4-20: Testing and measurement techniques ­ Emission and immunity testing in transverse electromagnetic (TEM) waveguides IEC 61000-4-21, Electromagnetic compatibility (EMC) - Part 4-21: techniques - Reverberation chamber test methods Testing and measurement
+
+I EC 61000-4-23, Electromagnetic compatibility (fMC) - Part 4-23: Testing and measurement techniques - Test methods for protective devices for HEMP and other radiated disturbances I EC 61000-4-24, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement techniques ­ Section 24: Test methods for protective devices for HEMP conducted disturbance
+
+IEC 61000-4-25,
+techniques
+
+EIecfrornagnefic
+
+cornpatibil~fy (EfvfC) - Part 4-25: Testing
+for equipment and systems Testing
+
+and measurement
+
+­ HEMP immunity
+
+test methods
+
+IEC 61000-4-27, ,EIectromagnetic compatibility techniques - Unbalance, immunity test
+
+(EMC) - Part 4-27:
+
+and measurement
+
+IEC 61000-4-28, Electromagnetic compatibility {EMC) - Part 4-28: techniques ­ Variation of power frequency, immunity test I EC 61000-4-29, Electromagnetic techniques ­ Vo/tage dips, short immunity tests compatibility interruptions
+
+Testing
+
+and measurement
+
+(EMC) - Part 4-29: Testing and measurement and voltage variations on d. c. input power port
+
+IEC 61000-4-30, Electromagnetic compatibility (fMC) techniques ­Power quality measurement methods
+
+- Part 4-30:
+
+Testing
+
+and measurement
+
+I EC 61000-4-32, Electromagnetic compatibility (EMC) - Part 4-32: Testing and measurement techniques ­ High-altitude electromagnetic pulse (HEMP) simulator compendium IEC 61000-4-33, Electromagnetic compatibility (EMC) - Part 4-33: Testing techniques ­ Measurement methods for high power transiant parameters and measurement
+
+IEC 61000-4-34, Electromagnetic compatibility (EMC) - Part 4-34: Testing and measurement techniques ­ Voltage dips, short interruptions and voltage variations immunity tests for equipment with input current more than 16 A per phase
+
+3
+
+Terms
+
+and definitions apply.
+
+For the purposes of this document, the definitions in IEC 60050(161)
+
+IS 14700 (Part 4/See 1): 2008 IEC61OOO-4-1 :2006
+
+4
+
+General
+
+In the past, electromechanical devices and systems were generally not sensitive to electromagnetic disturbances (i.e. conducted and radiated electromagnetic disturbances and electrostatic discharge). The electronic components and equipment now in use are much more sensitive to these disturbances, particularly to "high-frequency" and "transient" phenomena. The tremendous expansion in the use of electronic components and equipment has increased the danger and importance of malfunctioning, damage, etc. which can arise from electric and electromagnetic disturbances. The product committees (or users and manufacturers of equipment) remain responsible for the appropriate choice of the immunity tests from the IEC 61000-4 series and the test level to be applied to their equipment. However, to enhance the task of coordination and standardization, the product committees or users and manufacturers should consider the recommendations given in this standard.
+
+5
+
+Structure
+
+of the IEC 61000-4 series standards
+of standards within the IEC 61000-4 series in general follows the guidance given 107. For the basic testing standards of the series, that structure is as follows:
+
+The structure in IEC Guide
+
+1. Scope
+2. 3. 4. 5. 6. 7. 8. 9, Normative Terms General Test levels/limits Test equipment Test set-up Test procedures Evaluation of test results references and definitions
+
+10, Test report There are standards within the IEC 61000-4 series, which are not basic testing standards example IEC 61000-4-7). They are standards related to measurement (instrumentation procedures), which do not necessarily follow the above-mentioned structure. (for and
+
+6
+
+Selection of tests
+to equipment for many reasons, for example
+
+Tests can be applied
+q
+
+design tests during development; type tests; acceptance production tests; tests.
+
+q q
+
+q
+
+Equipment should be subjected to all tests necessary to provide the required reliability, but, for economic reasons, the number of tests may be limited to a reasonable minimum. It is acceptable that the number of tests for acceptance or production testing is reduced in comparison with type tests.
+
+IS 14700 (Part 4/See 1): 2008 IEC 61000-4-1:2006
+The selection such as
+q q
+
+of the tests to be applied
+
+to a particular
+
+equipment
+
+depends
+
+on several
+
+factors,
+
+types of disturbances environmental required economic equipment
+
+affecting
+
+the equipment;
+
+conditions; and behaviour;
+
+q
+
+reliability
+
+q
+
+constraints; characteristics."
+
+q
+
+With regard to the variety of equipment and environmental conditions to be considered, it is difficult to indicate exact rules concerning the selection of tests. This selection is primarily the responsibility of the product committee concerned (based on their experience). In special cases, this can be fixed by agreement between the manufacturer and the user. in all cases, knowledge of the electromagnetic environment (the IEC 61000-2 series, especially IEC 61 000-2-5) and awareness of the statistical aspects explained in IEC 61000-1-1 will be helpful. If there is an existing applicable product standard, these standards
+q
+
+generic standard, have the following
+
+product family standard or a dedicated priority (see IEC Guide 107):
+
+dedicated product generic
+
+product family
+
+standard;
+
+q
+
+standard;
+
+.
+
+standard.
+
+If it is considered that these standards are not applicable to a particular type of equipment, the following short explanation of each part of the IEC 61000-4 series may be helpful. A summary is also given in Tables 1 and 2.
+q
+
+Test according
+
+to IEC 61000-4-2
+
+(Electrostatic
+
+discharge
+
+immunity
+
+test)
+
+In general, the electrostatic discharge test is applicable to all equipment which is used in an environment where electrostatic discharges may occur. Direct and indirect discharges shall be considered. Exclusions may include equipment limited for use in ESD-controlled environmental conditions and non-electrical or electronic products.
+q
+
+Test according immunity test)
+
+to IEC 61000-4-3
+
+(Radiated,
+
+radio-frequency,
+
+electromagnetic
+
+field
+
+In general, the radiated immunity test is applicable to all products, where radio-frequency fields are present. Exclusions may include equipment limited for use in electromagneticcontrolled conditions or low electromagnetic field environment and non-electrical or electronic prod ucts..
+q
+
+Test according
+
+to IEC 61000-4-4
+
+(E/ectrica/
+
+fast tr&msient/burst which
+
+immunity
+
+test) to mains or
+
+In general, the fast transient test is applicable to products have cables (signal or control) in close proximity to mains.
+q
+
+are connected
+
+Test according
+
+to IEC 61000-4-5
+
+(Surge immunity which
+
+test) are connected to networks leaving the
+
+The surge test is applicable building or mains in general.
+
+to products
+
+IS 14700 (Part 4/See 1): 2008 IEC61OOO-4-1 :2006
+q
+
+Test according radio-frequency
+
+to IEC 61000-4-6 fields)
+
+(Immunity
+
+test to conducted
+
+disturbances
+
+induced
+
+by
+
+In general, the conducted immunity test is applicable fields are present and which are connected to mains lines).
+q
+
+to products, where radio-frequency or other networks (signal or control and
+
+I EC 61000-4-7 instrumentation,
+
+(General guide on harmonics and interharmonics measurements for power supply systems and equipment connected thereto)
+
+This technical report defines the measurement method of harmonics and interharmonics. It compares the characteristics of an analogue measuring equipment and of a digital measuring equipment. It provides also the accuracy awaited and the test set-up. It is applicable to voltage or current measurements in the d.c. frequency range up to 2500 Hz, especially with regard to the emission requirements according to IEC 61000-3-2, IEC 61000-3-4, IEC 61000-3-6, IEC 61000-3-12 and IEC 61000-4-30.
+q
+
+Test accord ing to I EC 61000-4-6
+
+(Power frequency
+
+magnetic
+
+fie/d immunity
+
+test)
+
+In general, this test should be limited to products which are susceptible to magnetic fields (for example Hall effect devices, CRT and special products to be installed in high magnetic Exclusions include equipment which is intended for use in a low field environments). magnetic field environment.
+q
+
+Test according
+
+to IEC 61000-4-9
+
+(Pulsa magnetic
+
+field immunity
+
+test) plants (for example test)
+
+This test is mainly applicable to products to be installed telecontrol centres in close proximity to switchgear).
+9
+
+in electrical
+
+Test according
+
+to IEC 61000-4-10
+
+(Damped
+
+osci//atory
+
+magnetic
+
+field immunity
+
+This test is mainly applicable
+q
+
+to products
+
+to be installed
+
+in high-voltage
+
+substations. and vo/fage variations
+
+Test accord ing to IEC 61000-4-11
+immunity test)
+
+(Vo/tage
+
+dips, short interruptions
+
+This document defines the test methods to evaluate the immunity of an equipment connected to the LV system, to voltage dips, short interruptions and voltage variations. This test is applicable to equipment with a rated input current of less than 16 A per phase, connected to a.c. mains. The standard describes also different levels of tests, four performance criteria, the operating condition when the equipment is tested and the test setup. It is a basic standard which can be used as a tool for the product committees which are defining their own EMC immunity standard.
+q
+
+Test according
+
+to IEC 61000-4-12
+
+(Osci//atory
+
+wave immunity
+
+test)
+
+The ring wave test is applicable to equipment connected to a.c. mains in certain countries (for example the mains network in the USA). The damped oscillatory wave test is applicable to equipment used in power plants and high-voltage substations (for example static relays).
+q
+
+Test according to IEC 61000-4-13 (Harmonics, at a. c, power port, low-frequency immunity tests) This test may be applied to equipment sensitive mains or to specific harmonic components.
+
+interharmonics to precise
+
+including
+
+mains
+
+signaling
+
+zero crossing
+
+in time on the a.c.
+
+IS 14700 (Part 4/See 1): 2008 IEC 61000-4-1:2006
+q
+
+Test according to IEC 61000-4-14
+
+(Vo/tage
+
+fluctuation
+
+immunity
+
+test)
+
+most In general, voltage fluctuations have an amplitude not exceeding 10 ?40; therefore, equipment is not disturbed by voltage fluctuations. However, this teat may be applicable to equipment intended to be installed at locations where the mains have larger fluctuations. c Test according to I EC 61000-4-15 (Flickermeter ­ Functional and design specifications)
+
+This is a specification for a flickermeter, intended to indicate correct flicker perception level for all practical voltage fluctuation waveforms, especially with regard to the emission IEC 61000-3-5 and IEC 61000-3-11. requirements according to IEC 61000-3-3,
+q
+
+Test
+
+according
+
+to IEC 61000-4-16
+
+disturbances
+
+in the frequency
+
+(Test for immunity range O Hz to 150 kHz)
+
+to
+
+conducted,
+
+common
+
+mode
+
+This test shall only be used for very special equipment in large installations (for example industrial plants). This document defines the test method to evaluate the immunity of an equipment to conducted, common mode disturbances in the frequency range O Hz to 150 kHz. The standard describes also different levels of tests, four performance criteria, the operating condition when the equipment is tested and the test set-up. It is a basic standard which can be used as a tool for the product committees which are defining their own EMC immunity standard.
+q
+
+Test according
+
+to IEC 61000-4-17
+
+(Ripple
+
+on d.c. input power port immunity systems immunity for
+
+test) batteries transverse to radiated
+
+This test applies to equipment connected to d,c. distribution charged during the operation of the equipment. s
+
+with external testing testing in
+
+Test
+
+according
+
+electromagnetic
+
+to I EC 61000-4-20 (TEM) waveguides) specifies equipment fields in TEM cells.
+
+(Emission and test
+
+and
+
+This standard electromagnetic
+q
+
+procedures chambers) procedures for protective
+
+Test according to IEC 61000-4-21
+This standard electromagnetic
+
+(Reverberation and test chambers. (Test methods
+
+specifies equipment fields in reverberation
+
+for
+
+testing devices
+
+to
+
+radiated and
+
+q
+
+Test according
+other radiated
+
+to IEC 61000-4-23
+
+for HEMP
+
+disturbance) the level of radiated devices for HEMP of
+
+This standard covers testing of protective elements designed to reduce electromagnetic fields from HEMP and other high power transients.
+q
+
+Test
+
+according
+
+to IEC 61000-4-24
+of voltage
+
+(Test
+
+methods
+
+for
+
+protective
+
+conducted
+
+disturbance) breakdown immunity and voltage-limiting characteristics
+
+This standard covers testing HEMP protective devices
+q
+
+Test according
+and systems)
+
+to IEC 61000-4-25
+
+(HEMP
+
+test and test mefhods
+
+for equipment for radiated intended to
+
+This standard specifies the basic HEMP test methods and levels appropriate and conducted immunity testing. It is applicable for equipment and systems survive a HEMP.
+q
+
+Test according to IEC 61000-4-27
+
+(Unbalance
+
+immunity
+
+test)
+
+This test may be applicable to three-phase equipment with a rated input current up to 16 A per phase, connected to a three-phase a.c. mains. However, this test is not applicable to equipment taking three-phase power but using it in a single-phase manner.
+
+7
+
+IS 14700 (Part 4/See 1): 2008 IEC 61000-4-1:2006
+q
+
+Test according
+
+tolEC61000-4-28
+
+(Variation
+
+ofpower
+
+frequency,
+
+immunity
+
+test)
+
+In general, the test for variation of the power frequency is not applicable. However, it may apply to equipment intended to be installed at locations where the power frequency has large variations (for example equipment connected to an emergency power supply).
+q
+
+Test accord ing to IEC 61000-4-29
+d. c. input power ports, immunity In general, this test is applicable tests)
+
+(Voltage
+
+dips, interruptions
+
+and vo/tage
+
+variations
+
+on
+
+for d.c. input power ports. of power quality of power quality compendium) and applicability power of parameters) parameters.
+
+q
+
+Test accord ing to IEC 61000-4-30 (Measurements
+This standard gives clarification on the measurement (HEMP simulator
+
+q
+
+Test according
+
+to IEC 61000-4-32
+
+This technical report provides large scale HEMP simulators.
+q
+
+information
+
+on the world wide availability methods for
+
+Test accord parameters)
+responses
+
+ing to IEC 61000-4-33
+
+(Measurement
+
+high
+
+transient
+
+This standard provides a basic description of the methods snd means of measuring
+from high power transient tests for equipment electromagnetic radiated and conducted disturbances variations
+q
+
+Test according to IEC 61000-4-34
+immunity
+
+(Voltage dips short interruptions and voltage with input current more than 16 A per phase) with a rated input current greater than
+
+This test is applicable to equipment connected to a.c. maina, A guide to the applicability of the various
+
+16 A per phase,
+
+standards
+
+is given in Table
+
+1. entry in Table 2 gives
+
+When any of the standards listed in Table 1 is applied, a guide to the selection of the EUT ports to be tested.
+
+the corresponding
+
+7
+
+Test report
+necessary to reproduce the test. In particular,
+
+The test report shall contain all the information the following shall be recorded: identification of the EUT and any associated type, serial number; identification of the test equipment,
+
+equipment,
+
+for example, product was
+
+brand
+
+name,
+
+product
+
+for example, in which
+
+brand name, the test
+
+type, serial for
+
+number; example,
+
+any special environmental shielded enclosure; any specific performance performance conditions
+
+conditions
+
+performed,
+
+necessary
+
+to enable the test to be performed; requestor product or purchaser; standard; and
+
+level defined criterion
+
+by the manufacturer, in the generic,
+
+specified
+
+or product-family
+
+any effects on the EUT observed during or after the application the duration for which these effects persist;
+
+of the test disturbance,
+
+8
+
+IS 14700 (Part 4/See 1): 2008 IEC61OOO-4-1 :2006 .
+the rationale for the pass/fail decision (based on the performance criterion specified in the generic, product or product-family standard, or agreed between the manufacturer and the purchaser); any specific conditions of use, for example cable length or type, shielding EUT operating conditions, which are required to achieve compliance. or grounding, or
+
+8
+
+Table 1- Applicability
+
+of immunity tests based on location (environment)
+Applicability a
+Special (e.g. power plant)
+
+Basic standard
+
+Description m
+
+61000-4-2 61000-4-3 61000-4-4 61000-4-5 61000-4-6 61000-4-7
+
+! ESD Radiated electromagnetic field EFT/Burst Surge Conducted disturbances by RF fields General guide on harmonics and interharmonics measurements and inatrumentation 50/60 Hz magnetic field Pulse magnetic field Dampad oscillatory magnetic field Voltage dips and shori interruptions
+
+i
+
+aa g.a. g.a. g.a.
+
+I
+
+fr.a.
+g.a. g.a. g:a.
+
+g.a. g.a. g.a. g.a. g.a. n.i.s.
+
+I
+
+a.a. n.i.s.
+
+I
+
+g.a,
+!.
+
+n,i.s.
+
+61000-4-8 61000-4-9 61000-4-10 61000-4-11 61000-4-12 61000-4-13 61000-4-14 61000-4-15 61000-4-16 61000-4-17 61000-4-18 61000-4-19 61000-4-20 61000-4-21 6fOO0-4-22 61000-4-23 61000-4-24 61000-4-25 61000-4-27 61000-4-28
+
+may g.n.a. g.n.a. g.a.
+1 1
+
+may g.n.a. g.n.a. g.a. may may may n.i. s. may
+
+g.a.
+
+----1
+g.a,
+
+g.a.
+
+Oscillatory waves "ring wave" Harmonics, interharmonics, main signaling Voltage fluctuations Flickermeter Conducted common mode disturbances in the range of O Hz to 150 kHz Ripple on DC power supply Oscillatory waves immunity test Free TEM waveguides Reverberation chambers Free Teat methods for protective device; HEMP radiated disturbance Teat methods for protective device; HEMP conducted dieturbence Test methods for equipment and systems; HEMP Unbalance {n three-phaae mains Variation of power frequency
+
+mav may may
+nis
+
++
+
+may
+
+-JN.--l may
+n.i.s. g.n.a.
+
+g.n.a. g.n.a. g.n,a.
+
+,may may g.n,a, may
+
+b b
+
+b b
+
+b b
+
+g.n.a. g.n.a. g.n.a. may g.n.a.
+
+g.n.a, g.n.a. g.n.a, may g.n.a.
+
+g.n.a. g.n.a. g.n.a. may g.n.a.
+
+9
+
+IS 14700 (Part 4/See 1) :2008 IEC61OOO-4-1 :2006
+Table 1 (continued)
+
+Basic standard
+
+Description
+
+51000-4-29 51000-4-30 51000-4-32 31000-4-33 51000-4-34 n
+
+Voltage dips, interruptions and voltage variations on DC power ports Meaaurernent of power quality parameters HEMP simulator compendium Measurement methods for high power transient parameters Voltage dips and interruption
+
+w
+g.a.
+
+Applicability
+
+a Special (e.g. power plant) may n.i, s. n.i.s. n.i.s.
+
+I
+
+g.a.
+
+g.a.
+
+Applicability explanation: n.i.s. g.a, = not an immunity standard = generally applicable except in special cases
+
+g.n. a. = generally not applicable except in special cases may = may be applicable in certain circumstances.
+
+b Test method which is subject to restrictions given in the basic standard.
+
+10
+
+Bureau of Indian Standards
+established under the Bureau BIS is a statutory institution harmonious development of the activities of standardization, and attending to connected matters in the country. of /rJcfian Starrdarcfs Act, 1986 to promote marking and quality certification of goods
+
+Copyright BIS has the copyright
+form without implementing designations. of all its publications. the prior permission in writing the standard, of necessary Enquiries relating to copyright No part of these publications
+
+of BIS.
+
+This does not preclude
+
+details, such as symbols be addressed to the Director
+
+may be reproduced in any the free use, in course of and sizes, type or grade (Publications), BIS.
+
+Review of Indian Standards Amendments also reviewed indicates that for revision. amendments Additions'. are issued to standards as the need atises on the basis of comments. Standards are periodically; a standard along with amendments is reaffirmed when such review no changes are needed; if the review indicates that changes are needed, it is taken up Users of Indian Standards should ascertain that they are in possession of the latest or edition by referring to the latest issue of `BIS Catalogue' and `Standards: Monthly
+
+This Indian Standard
+
+has been developed
+
+from Dot: No. LITD 09 (3008). Issued Since Publication Date of Issue Text Affected
+
+Amendments Amendment No.
+
+BUREAU Headquarters:
+
+OF INDIAN
+
+STANDARDS
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 Telephones 23230131,23233375,2323 9402 Website Regional Offices: Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg NEW DELHI 110002 1/14, C.I.T. Scheme Vll M, V.I.P. Road, Kankurgachi KOLKATA 700054 Sector 34-A, CHANDIGARH 160022
+
+www.bis.org.in Telephones 23237617 { 2323 384i 23378499,23378561 23378626,23379120 2603843 { 2609285 22541216, 22541442 22542519,22542315
+
+Eastern :
+
+{
+
+Northern : SCO 335-336,
+
+Southern : C.I.T. Campus,
+
+IV Cross Road, CHENNAI
+
+600113 {
+
+Western : Manakalaya, E9 MlDC, Marol, Andheri (East) MUMBAI 400093 Branches: AHMEDABAD. GHAZIABAD. PARWANOO.
+
+28329295,28327858 { 28327891, 28327892
+
+BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. FARIDABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR, PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM. VISAKHAPATNAM.
+
+Printed at Prabhat Offset Press, New Delhi-2
+
+

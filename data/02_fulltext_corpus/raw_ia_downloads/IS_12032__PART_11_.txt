@@ -1,0 +1,15507 @@
+**************** 
+
+
+
+-k is^ 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+"^^ ^ ^ ^ % ?R^" 
+
+Jawaharlal Nehru 
+
+Step Out From the Old to the New 
+
+
+
+^\i»>js«'5!S^^^5*9*:: 
+
+
+
+
+•^■•■^^^■r 
+
+
+
+
+li^ i/ir w w w w w WW ^ ^ ^ tIt w w w 
+
+
+
+BLANK PAGE 
+
+
+
+^<ii^ 
+
+
+
+
+
+UI> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+15 12032 { Part IS > \ 1994 
+1£C Pub 617-12 £1983 J 
+
+_ ( Reaffirmed 2006 ) 
+
+Imlkm Siandard 
+
+GRAPHICAL SYMBOLS FOR DIAGRAMS IN 
+THE FIELD OF ELECT ROTECH NO LOGY 
+
+PA RT 1^ SI N Alt Y LOG IC EUEWE NTS 
+
+
+
+BUREAU OF INniAN STAMDAftUB 
+
+MANAl^ BIlAVANn. 9 BABAi>Ull SHAH ZAi'AH MABO 
+NEW DELHI 1 L0DQ2 
+
+.(.A!y IW4 VtlixEi24Ci-m 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+CONTENTS 
+
+Pagp 
+■1 
+
+National Foreword 
+
+Chapter I : General 
+
+Section 1 - Introduction ^ 
+
+Section 2 - General notes ^ 
+
+Section 3 - Explanation of terms -5 
+
+Chapter U : Symbol construction ' 
+
+Section 4 - Composition of the symbol 7 
+
+Section 5 - Outlines . : ° 
+
+Section 6 - Use and combination of outlines ^ 
+
+Chapter III : Qualifyino symbols associated wrra inputs, ourpirre and other connections 13 
+
+Section 7 - Negation, logic polarity and dynamic input 13 
+
+Section 8 - Internal connections • 1'* 
+
+Section 9 - Symbols inside the outline 15 
+
+Section 10 - Non-logic connections and signal-flow indicators 26 
+
+Chapter IV : Dependency notation ^' 
+
+Section 1 1 - General explanation 27 
+
+Section 12 - Convention 27 
+
+Section 13 - Types of dependency 29 
+
+Section 14 - AND dependency (G-dependency) 20 
+
+Section 15 - OR dependency (V-dependency) 30 
+
+Section 16 - NEGATE dependency (N-dependency) 31 
+
+Section 17 - INTCRCONNECTION dependency (Z-dependency) 32 
+
+Section 18 - CONTROL dependency (C-dependency) 33 
+
+Section IQ - SET and RESET dependency (S- and R-dependency) 34 
+
+Section 20 - ENABLE dependency (En-dependency) : 36 
+
+Section 21 - MODE dependency (M-dependency) 37 
+
+Section 22 - Comparison of C-, EN- and M-effects on inputs 38 
+
+Section 23 - ADDRESS dependency ( A-dependency) 39 
+
+Section 24 - Special techniques used in dependency notation 42 
+
+Section 25 - The ordering of labels associated with inputs and with outputs 44 
+
+Chapter V : Combinative andseowential elements 48 
+
+Section 26 - General notes • 48 
+
+Section 27 - Combinative elements 48 
+
+Section 28 - Examples of combinative elements 50 
+
+Section 2Q - Examples of buffers, drivers and receivers 54 
+
+Section 30 - Elements with hysteresis • 57 
+
+Section 31 - Examples of elements with hysteresis 57 
+
+Section 32 - Coders, code converters .58 
+
+
+
+IS 12032 (Part 12): 1994 
+TEC Pub 617-12 ( 1983 ) 
+
+
+
+Page 
+
+Section 33 - Examples of code converters 60 
+
+Section 34 - Signal-level converters with or without galvanic separation 64 
+
+Section 35 - Examples of signal-level converters 64 
+
+Section 36 - Multiplexers and demultiplexers 64 
+
+Section 37 - Examples of multiplexers and demultiplexers 65 
+
+Section 38 - Arithmetic elements 67 
+
+Section 39 - Examples of arithmetic elements 69 
+
+Section 40 - Binary delay elements 73 
+
+Section 41 - Bistable elements 74 
+
+Section 42 - Examples of bistable elements 75 
+
+Section 43 - Indication of special switching properties of bistable elements 78 
+
+Section 44 - Monostable elements 78 
+
+Section 45 - Examples of monostable elements 79 
+
+Section 46 - Astable elements 79 
+
+Section 47 - Examples of astable elements 81 
+
+Section 48 - Shift registers and counters 82 
+
+Section 49 - Examples of shift registers and counters 82 
+
+Section 50 - Memories 88 
+
+Section 5 1 - Examples of memories 89 
+
+
+
+IS 12032 ( Part 12 ): 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+Indian Standard 
+
+GRAPHICAL SYMBOLS FOR DIAGRAMS IN 
+THE FIELD OF ELECTROTECHNOLOGY 
+
+
+
+PART 12 BINARY LOGIC ELEMENTS 
+
+
+
+NATIONAL FOREWORD 
+
+
+
+This Indian Standard ( Part 12 ) which is identical with lEC Pub 617-12 (1983) 'Graphical symbols for 
+diagrams — Part 12 : Binary logic elements', issued by the International Electrotechnical Commission (lEC) 
+was adopted by the Bureau of Indian Standards on the recommendation of the Basic Standards on Electronics 
+and Telecommunication Sectional Committee (LTD 1) and approval of the Electronics and Telecommunication 
+Division Council. 
+
+The text of lEC Standard has been approved as suitable for publication as Indian Standard without deviations. 
+Certain terminology and conventions are, however, not identical with those used in Indian Standards. Attention 
+is specially drawn to the following: 
+
+Wherever the words 'International Standard' appear, referring to this standard, they should be read as 'Indian 
+Standard'. 
+
+In the adopted standard ( normative ) references appear to certain International Standards for which Indian 
+Standards also exist. The corresponding Indian Standards which are to be substituted in their place are listed 
+below along with their degree of equivalence for the editions indicated: 
+
+
+
+International Standard 
+
+lECPub 117-15 ( 1972 ) Recommended 
+graphical symbols — Part 15 : Binary 
+logic elements 
+
+lEC Pub 617-1 ( 1985 ) Graphical sym- 
+bols for diagrams — Part 1 : General 
+infonnation, general index — Cross 
+reference tables 
+
+lEC Pub 617-2 ( 1983 ) Graphical sym- 
+bols for diagrams — Part 2 : Symbol 
+elements, qualifyutg symbols and other 
+symbols having general applications 
+
+lEC Pub 617-3 ( 1983 ) Graphical 
+symbols for diagram — Part 3 : 
+Conductors and connecting devices 
+
+
+
+lEC Pub 617-10 ( 1983 ) Graphical 
+symbols for diagrams — Part 10 : 
+Telecommunications and transmis- 
+sion 
+
+lEC Pub 617-13 ( 1978 ) Graphical 
+symbols for diagrams — Part 13 : 
+Analogue elements 
+
+
+
+Indian Standard 
+
+IS 2032 ( Part 24 ) : 1980 Graphical 
+symbols used in electrotechnology: 
+Part 24 Binary logic elements 
+
+IS 12032 ( Part 1 ) : 1987 Graphical 
+symbols for diagrams in the field of 
+electrotechnology: Part 1 General in- 
+formation 
+
+IS 12032 ( Part 2 ) : 1987 Graphical 
+symbols for diagrams in the field of 
+electrotechnology : Part 2 Symbol 
+elements, qualifying symbols and other 
+symbols having general applications 
+
+IS 12032 ( Part 3 ) : 1987 Graphical 
+symbols for diagrams in the field of 
+electrotechnology ; Part 3 Conductors 
+and connecting devices 
+
+IS 12032 ( Part 10 ) : 1990 Graphical 
+symbols for diagrams in the field of 
+electrotechnology : Part 10 Telecom- 
+munications and transmission 
+
+IS 12032 ( Part 13 ) : 1990 Graphical 
+symbols for diagrams in the field of 
+electrotechnology : Part 13 Analogue 
+elements 
+
+
+
+Degree of 
+Correspondence 
+
+Technically 
+equivalent 
+
+
+
+Identical 
+
+
+
+Identical 
+
+
+
+Identical 
+
+
+
+Identical 
+
+
+
+Identical 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+The Basic Standards on Electronics and Telecommunication Sectional Committee has reviewed the 
+provisions of the following lEC Standard and has decided that it is acceptable for use in conjunction with 
+this standard : 
+
+lEC Pub 113-7 ( 1981 ) Diagrams, charts, tables - Part 7 : Preparation of logic diagrams 
+
+This Indian Standard is the twelfth part of the series of Indian Standards on Graphical symbols for diagrams, other 
+parts are : 
+
+Part 1 General infonnation 
+
+Part 2 Symbol elements, qualifying symbols and other symbols having general application 
+
+Part 3 Conductors and connecting devices 
+
+Part 4 Passive components 
+
+Part 5 Semiconductors and electron tubes 
+
+Part 6 Production and conversion of electrical energy 
+
+Part 7 Switch gear, control gear and productive devices 
+
+Part 8 Measuring instruments, lamps and signalling devices 
+
+Part 9 Telecommunication; switching and peripheral equipment 
+
+Part 10 Telecommunications; transmission 
+
+Part 11 Architectural and topographical installation plans and diagrams 
+
+Part 13 Analogue elements 
+
+V-»lliy tUC UllKll^U lail^UdgC ICAI hi lUt llllt'lIiailWIiai wJUXLluaiu uao tr\^\^ll lv.uh&iv^u w klll\^ uuupviaig, It 111 LuiLi laiuiMfci 
+
+Standards 
+
+
+
+IS 12032 (Part 12) .1994 
+lEC Pub 617 - 12 ( 1983 ) 
+
+
+
+Indian Standard 
+
+GRAPHICAL SYMBOLS FOR DIAGRAMS IN THE 
+FIELD OF ELECTROTECHNOLOGY 
+
+
+
+PART 12 BINARY LOGIC ELEMENTS 
+
+
+
+CHAPTER 1 : GENERAL 
+
+SECTION 1 - INTRODUCTION 
+
+1.1 This standard contains graphical symbols which have been developed to represent logic functions. 
+They are intended also to represent physical devices capable of carrying out these functions. The 
+symbols have been prepared with a view to electrical applications but the majority may also be 
+applied to non-electrical devices, for example pneumatic, hydraulic, mechancial. 
+
+SECTION 2 - GENERAL NOTES 
+
+2.1 Symbols in accordance with the superseded lEC Publication 117-15: Recommended Graphical 
+Symbols, Part 15 : Binary Logic Elements, will be required for a prolonged changeover period but 
+should be progressively superseded by the symbols given in this standard. Although non-preferred, 
+the use of other symbols recognized by official national standards, i.e. distinctive shapes in place 
+of symbols 12-27-01, 12-27-02, 12-27-09, 12-27-10, 12-27-11, 12-27-12, 12-28-01, 12-28-02and 
+12-28-04, shall not be considered to be in contradiction with this standard. Usage of these other 
+symbols in combination to form complex symbols (e.g. use as embedded symbols) is discouraged. 
+
+2.2 For explanation of "logic states", "logic levels", etc., see lEC Publication 113-7: Diagrams, Charts, 
+Tables, Part 7 : Preparation of Logic Diagrams. 
+
+2.3 This standard uses the symbols and 1 to identify the two logic states of a binary variable. These 
+states are referred to as 0-state and 1 -state. 
+
+2.4 A binary variable may be equated to any physical quantity for which two distinct ranges can be 
+defined. In this standard these distinct ranges are referred to as logic levels and are denoted 
+H and L. 
+
+H is used to denote the logic level with the more positive algebraic value, and L is used to denote 
+the logic level with the less positive algebraic value. 
+
+2.5 In the case of system in which logic states are equaled with other qualities of a physical quantity 
+(e.g. positive or negative pulses, presence or absence of a pulse), H and L may be used to represent 
+these qualities or may be replaced by more suitable desigJiations. 
+
+SECTION 3- EXPLANATION OF TERMS 
+
+To facilitate understanding of the descriptions in the rest of this standard, it is useful to define three tcnns. 
+
+3.1 "Internal logic state" describes a logic state assumed to exist iiLsidc a symbol outline at an input or 
+an output. 
+
+3.2 "External logic state" describes a logic stale assumed to exist outside a symbol outline: 
+- on an input line prior to any external qualifying symbol at that input, or 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 ■ 12 ( 1983 ) 
+
+- on an output line beyond external qualifying symbol at that output. 
+
+3.3 "Logic level" describes the physical quality assumed to represent a logic state of a binary variable 
+(see Clauses 2.3 and 2.4). 
+
+
+
+
+
+Illustration 
+
+
+
+
+^ 
+
+
+^ Internal 
+
+^ logic ► 
+
+states 
+
+
+\ 
+
+
+External logic 
+states or 
+logic levels 
+
+
+
+
+External logic 
+state or 
+logic level 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 -12 (1983) 
+
+CHAPTER II : SYMBOL CONSTRUCTION 
+
+SECTION 4 - COMPOSITION OF THE SYMBOL 
+
+4.1 A symbol comprises an outline or combination of outlines together with one or more qualifying 
+symbols. 
+
+Application of the symbols requires in addition the representation of input and output lines. 
+
+
+
+Outline 
+
+
+
+Input iines < 
+
+
+
+
+
+\ 
+
+
+
+
+Preferred position for 
+. thfi neneral aualifvina 
+
+
+
+
+
+
+
+
+synnbol 
+
+
+y 
+
+
+
+
+« » 
+
+
+
+
+
+
+
+
+
+
+
+
+> 
+
+
+* 
+
+
+» 
+
+
+
+
+« 
+
+
+» 
+
+
+
+
+* 
+
+
+» 
+
+
+» » 
+
+
+« 
+
+
+* 
+
+
+> Output lines 
+
+
+
+
+
+
+i 
+
+
+I 
+
+
+
+
+
+
+
+
+» 
+
+
+« 
+
+
+
+
+
+
+* 
+
+
+» 
+
+
+
+
+'\ 
+
+
+
+
+
+
+
+
+
+
+) 
+
+
+
+
+
+
+
+
+
+
+Airi^ 
+
+
+'native position for 
+general qualifying 
+bol 
+
+
+
+
+
+
+
+
+— tri6 
+
+syn-. 
+
+
+
+Notes 1. - The single asterisk (*) denotes possible positions for qualifying symbols relating to inputs and outputs. 
+
+2. - If and only if the function of ah element is completely determined by the qualifying symbols associated with 
+its inputs and/or outputs, no general qualifying symbol is needed. 
+
+4.2 General additional information may be included in a symbol outline as described in lEC Publication 
+113-7: Diagrains, Charts and Tables, Part 7: Preparation of Logic Diagrams. 
+
+4.3 Infonnation not statidardized in this standard relaling to a specific input [output) may be shown in 
+brackets inside the outline adjacent to the relevant input [output] and should follow [precede] any 
+qualifying symbols applying to the input [output] as shown in symbol 12-28-14. 
+
+Additional information relating to the general logic function of the element may be shown in 
+brackets inside the outline. 
+
+4.4 All outputs of an element represented by a single unsubdivided symbol always have identical 
+internal logic states determined by the function of the element except when indicated otherwise by 
+an associated qualifying symbol or label inside the symbol outline. The subdivision of a symbol 
+and the qualifying symbols referred to here include those explicitly shown and those only implied 
+according to the simplification rules of Clause 6.3. 
+
+4.5 In some figures, lower case letters which are not part of the symbols have been shown outside the 
+outline just to identify the inputs and outputs as referenced in the description. 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 -12 (1983) 
+
+
+
+SECTIONS- OUTLINES 
+
+
+
+5. 1 The length-width ratio of outlines is arbitrary. 
+
+5.2 For combinations of outlines, see Section 6. 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-05-01 
+
+
+
+
+
+
+
+
+Element outline (square shown) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12-05-02 
+
+
+
+
+
+
+
+
+Common control block outline 
+
+
+
+
+^ ^ 
+
+
+
+
+12-05-03 
+
+
+
+
+
+
+
+
+Common output element outline 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SECTION 6 - USE AND COMBINATION OF OUTLINES 
+
+6. 1 To reduce the space required for the representation of a group of associated elements, the outlines 
+of the elements may be joined or embedded provided the following rules are observed. 
+
+6.1.1 There is no logic coiuiection between elements when the line common to their outlines is in the 
+direction of signal flow. 
+
+Illustration 
+
+
+
+
+
+IS 12032 (Part 12): 1994 
+IECPub617.12(1983) 
+
+Note. ~ This rule does not necessarily apply in those arrays in which there exist two or more directions of signal flow, 
+e.g. indicated by a common control block, a common output element, or by dependency notation. 
+
+6.1.2 There is at least one logic connection if the line common to two outlines is perpendicular to the 
+direction of signal flow. 
+
+Each connection can be shown by the presence of qualifying symbols at one or both sides of 
+the common line. If confusion can arise about the number of logic connections, use can be made 
+of the internal connection symbol (symbol 12-08-01). 
+
+If no indications are shown on either side of the common line, it is assumed that there exists 
+only one logic connection. 
+
+Illustrations 
+
+
+
+
+
+
+
+1 
+1 
+
+
+= 
+
+
+1 
+1 
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+« 
+
+
+» 
+
+
+1 
+1 
+
+1 
+
+
+
+
+
+
+
+
+* 
+
+
+• 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+
+« 
+
+
+
+
+
+
+or 
+
+
+
+
+E 
+
+
+1 
+
+
+
+
+« 
+
+
+
+
+
+
+
+
+1 
+
+
+« 
+
+
+
+
+
+
+
+
+
+
+*- 
+
+
+- 
+
+
+1 
+
+
+
+
+
+
+
+
+- 
+
+
+-» 
+
+
+1 
+1 
+
+
+
+
+
+
+
+
+»- 
+
+
+■ » 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I 
+
+
+
+Each asterisk denotes a position for a qualifying symbol. 
+
+6.2 The common control block may be used in conjunction with an array of related elements as a point 
+of placement for inputs or outputs associated with more than one element of the array, or with no 
+element of the array. Such inputs and outputs shall be labelled if appropriate. 
+
+6.2. 1 If an input shown at a common control block is an affecting input in the sense of dependency notation 
+(see Sections 11 and 12), it is connected as an input only to those elements of the array in which its 
+identifying number appears. If an input shown at a common control block is not an affecting input 
+in the sense of dependency notation, it is an input common to, or affecting, all elements of the array. 
+
+The common control block is placed on one end of an array of related elements. 
+
+Unless indicated otherwise, the element next to the common control block is assumed to be the 
+lowest order element. 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617 -12 (1983) 
+
+
+
+Illustrations 
+
+
+
+1 
+
+
+
+Q — r 
+
+
+
+b 
+c 
+d 
+
+
+
+6.2.2 A common output, depending on all elements of the array, can be shown as the output of a common 
+output element. In the case where any array element has more than one output, the common output 
+element may be used only if those outputs always have identical internal logic states. There is one 
+internal connection from each of the elements to the common output element and these shall not 
+be shown. In addition, the common output element may have other inputs and they must be 
+explicitly shown. The function of the common output element shall be indicated. 
+
+Each input of a common output element corresponding with an output of the array has the same 
+internal logic state as that output. 
+
+A common output element is shown: 
+
+- inside the common control block, or 
+
+- at the end of the array, opposite the common control block if there is one. 
+
+Where it is appropriate to show an array of common output elements, the double line need be shown 
+only once. 
+
+Illustrations 
+
+
+
+- c 
+D-d 
+
+
+
+1 O-d 
+
+
+
+10 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 -12 (1983) 
+
+
+
+JI 
+
+
+
+Array with common output element 
+inside the common control block. 
+
+
+
+Array with two common output ele- 
+ments 
+
+
+
+6.3 To represent an array of elements having the same qualifying symbols, it may be sufficient to show 
+the symbols that are inside the outline in only the first of the outlines, provided no confusion can 
+arise. Similarly, in the case of an array of elements each consisting of several identical subarrays, 
+it is sufficient to show the first one in full and to represent each of the others by a simple outline. 
+It is assumed that the identifying numbers of affecting inputs [outputs] in the sense of dependency 
+notation and of inputs [outputs] affected thereby differ in each element of the array (for illustration 
+of the concept see Section 14). See also the simplifications resulting from the use of dependency 
+notation. 
+
+Illustrations 
+
+
+
+
+
+
+Group of elements with identical 
+general qualifying symbols 
+
+
+
+»Q 
+
+
+f 
+
+
+• a 
+
+
+
+
+♦ Q 
+
+
+• b 
+
+
+• b 
+
+
+
+
+• b 
+
+
+
+
+.b 
+
+
+
+TWo successive groups of elements 
+
+
+
+( Continued overleaf) 
+
+
+
+11 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 - 12 ( ^983 ) 
+
+
+
+»Q 
+
+
+
+• a 
+
+• b 
+
+
+
+c» 
+
+
+
+• Q 
+
+
+
+
+• b 
+
+
+
+
+•Q 
+
+
+
+
+• b 
+
+
+— 
+
+
+»Q 
+
+
+
+
+• b 
+
+
+
+
+• a 
+
+
+
+
+•b 
+
+
+
+
+
+
+
+
+
+
+
+
+• G 
+
+• b 
+
+
+[• 
+
+
+
+
+• Q 
+.b 
+
+
+:♦ 
+
+
+
+
+• a 
+
+c» 
+
+»b 
+
+
+
+
+• a 
+.b 
+
+
+: • 
+
+
+
+TWo interlaced groups of elements 
+
+
+
+Group of elements with identical 
+qualifying symbols associated with 
+inputs and outputs, shown without 
+common control block 
+
+
+
+ZL 
+
+
+
+] 
+
+
+
+♦ a b » 
+
+
+
+C 
+
+
+
+sz 
+
+
+
+♦a b» 
+
+
+
+«a b* 
+♦a b* 
+
+
+
+Group of elements with identical 
+qualifying symbols associated with 
+inputs and outputs, shown with 
+common control block 
+
+
+
+12 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 ■ 12 ( 1983 ) 
+
+CHAPTER III : QUALIFYING SYMBOLS ASSOCIATED WITH INPUTS, 
+OUTPUTS AND OTHER CONNECTIONS 
+
+SECTION 7 - NEGATION, LOGIC POLARITY AND DYNAMIC INPUT 
+
+7.1 Each of the symbols in this section defines the relationship between an internal logic state and an 
+external logic state or level. 
+
+If none of the symbols of this section is shown at an input or output, it is assumed that the internal 
+logic 1-state corresponds with: 
+
+- the external logic 1-state in a diagram using the symbol for logic negation, or 
+
+- the logic H-level in a diagram using the symbol for logic polarity. 
+In the latter diagram, external logic states do not exist. 
+
+The symbols for logic negation and logic polarity shall not be used together on the same diagram, 
+except when internal connections with logic negation are to be shown on diagrams using the symbol 
+for logic polarity. See symbols 12-08-02 and 12-08-04. 
+
+See also lEC Publication 1 13-7. 
+
+
+
+No. 
+
+
+Symlxil 
+
+
+Description 
+
+
+J 2-07-01 
+
+12-07-02 
+
+
+r> 
+
+
+
+
+
+lx)gic negation, shown at an input 
+
+Ijjgic negation, shown at an output 
+
+The internal 1-state corresponds with the external 0-state. 
+
+Nole. - Theconnectinglinemay extend through the circle. 
+
+
+V_- 
+
+
+12-07-03 
+
+12-07-04 
+
+12-07-05 
+12-07-06 
+
+
+J>^ 
+
+
+\ 
+
+
+lAigie polarity, shown at an input 
+Polarity indicator, show m at an Input 
+
+Logic polarity, shown at an output 
+Polarity indicator, shown at an output 
+
+l,ogic polarity "1 shown at an input in the case 
+I'loarily indicator / of signal flow from rigiit to left 
+
+I^igic polarity \ shown at an output in the case 
+Polarity indicator / of signal (low from right to left 
+
+The rnlcrnal 1 -stale corresponds with the 1. -level on Ihe connect- 
+ing line. 
+
+
+1 II 1 \ 
+1 1 1 1 
+III 1 
+
+
+XI 
+
+
+
+
+
+
+
+( Continued overleaf) 
+
+
+
+13 
+
+
+
+IS 12032 (Part 12): 1!»94 
+Il<x:i»uh617-I2(19«3) 
+
+
+
+No. 
+
+
+Symlx>l 
+
+
+Description 
+
+
+12-07-07 
+
+
+
+
+> 
+
+
+Dynamic input 
+
+The (transitory) internal 1-state corresponds with the transition 
+from the external 0-state to the external 1-state. Atall other times, 
+the internal logic state is 0. 
+
+On diagrams using the symbol for logic polarity the (transitory) 
+internal l-sta(e corresponds with the transition from the L-level 
+to the H-level on the connecting line. At all other times, the 
+internal logic state is 0, 
+
+
+
+
+12-07-08 
+
+
+. .,.,_^ 
+
+
+> 
+
+
+Dynamic input with logic negation 
+
+The (transitory) internal 1-state corresponds with the transition 
+from the external 1-state to the external 0-state. Atall other times 
+the internal logic state is 0. 
+
+
+'" -""-O 
+
+
+12-07-09 
+
+
+r\ 
+
+
+> 
+
+
+Dynamic input with polarity indicator 
+
+The (transitory) internal l-state corresponds with the transition 
+from the H-level to the L-level on the connectingline. At all other 
+times, the internal logic state is 0. 
+
+
+
+
+
+SECTION 8 - INTERNAL CONNECTIONS 
+
+
+
+8.1 The symbols in thi? section define the relationships between internal logic states at internal 
+connections. 
+
+An internal connection is a connection within a logic element. It is useful to be able to symbolize 
+such a coimection in order to show the logic relationships between elements whose outlines are 
+combined. In many applications, it is also convenient to use the symbols in this section to show the 
+function of complex elements. In such cases, dependency notation should be used to define the 
+effects of any internal inputs or outputs. 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-08-01 
+
+
+
+
+- 
+
+
+Internal connection 
+
+The internal 1-state [0-state] of the input of the element on the 
+right corresponds with the internal 1-state [0-state j of the output 
+of the element on the left 
+
+Note. - This symbol may be omitted if no confusion can arise 
+(see also Sub-clause 6.1.2). 
+
+
+12-08-02 
+
+
+6 
+
+
+Internal connection with negation 
+
+The internal 1-state [0-state] of the input of the element on the 
+right corresponds with the internal 0-state [l-state] of the output 
+of the element on the left 
+
+Note. - The vertical line may extend through the circle. 
+
+
+12-08-03 
+
+
+
+
+> 
+
+
+Internal connection with dynamic character 
+
+The (transitory) internal 1-state of the input of the element on the 
+right corresponds with the transition from the internal 0-state to 
+the internal 1-state of the output of the element on the left At all 
+other times, the internal logic state of the input of the element on 
+the right is 0. 
+
+
+
+14 
+
+
+
+IS 12032 ( Part 12 ) : 19<>4 
+IECI'uh6l7- 12{ 19»3) 
+
+
+
+No. 
+
+
+Symbol 
+
+
+ncscriplioii 
+
+
+12-(J8-04 
+
+
+CJ> 
+
+
+Internal cx>nnection with negation and dynamic cliaraciL'r 
+
+The (transitory) internal 1 -state of the input of llic clement on the 
+right corresponds with the tran.silion from the internal 1- slate to 
+the internal 0-statc of the output of the element on the left. Al all 
+other times, the internal logic stale of the input of the element on 
+the right is 0. 
+
+
+12-08-05 
+
+
+- 
+
+
+^ 
+
+
+Internal input (virtual input) 
+
+JThis input always stands at its internal 1-staleunless it is affected 
+by a dependency relationship that has an overriding or modifying 
+effect (see symbols 12-42-12 and 12-49-02). 
+
+Nol>^ 1. - Internal inputs and outputs have interna 1 logic slale.s 
+only. 
+
+2. - SymUils of Section 7 shall not Ite applied to internal 
+inputs and outputs, except symbol 12-07-07. 
+
+
+12-08-06 
+
+
+- 
+
+
+- 
+
+
+Internal output (virtual output) 
+
+The effect of this output on an internal input to wi\ich it is 
+connected must he indicated by dependency notation. 
+
+The notes with symbol 12-08-05 apply. 
+
+
+
+9.1 
+
+
+
+9.2 
+
+
+
+SECTION 9 - SYMBOLS INSIDE THE OUTLINE 
+If two or more inputs have the same qualifying symbol for the function, they are assumed to stand 
+in an OR-relation, except in the cases of bi-threshold and extension inputs (see symbols 12-09-02 
+and 12-09-09) where the relationship should be appropriately indicated. 
+
+The descriptions of symbols 12-09-13 to 12-09-22 may give the reader the wrong impression that 
+these are dynamic inputs. This is not the case, as it must be remembered that the internal logic state 
+as detennined by the external logic state or level may possibly be modified by the effect of other 
+inputs (e.g. Cm- inputs). If inputs represented by symbols 12-09-13 to 12-09-22 have a dynamic 
+character, symbol 12-07-07 should be used in addition. See for example symbol 1 2-47-01 . 
+
+
+
+No. • 
+
+
+Symbol 
+
+
+Description 
+
+
+12-09-01 
+
+
+n 
+
+
+
+
+Postponed output 
+
+The change of the internal state of this output is postponed until 
+the input signal which initiates the change returns to its initial 
+external logic state or logic level. The internal logic state of any 
+input(s) affecting or affected by the initiating input must not 
+change while this initiating input stands at its internal 1-state or 
+the resulting output state will not be specified by the symbol. If 
+the.input signal which initiates the change appears at an internal 
+connection, the change of state is postponed until the output of 
+the preceding element returns to its initial internal logic state. 
+
+Notes 1. - If this symbol is shown without prefix, it should lie 
+assumed that tlie output is postponed with respect to 
+each -*, *-, +, -. T-input and to each Cm-input, or 
+Cm-output (see symbols 12-18-01 and 12-18-02); in all 
+other cases, the identifying numbers (or if necessary the 
+full labels) of all inputs and outputs with respect to 
+which the output is pstponed must tie shown as a prefix 
+to this symbol. See symbol 12-1"S-15. 
+
+2. - Care should be taken that this symbol is a right 
+angle with lines of equal length to avoid confusion 
+with other symbols, for example the character 7. 
+
+.?. - For the application of this symbol and additional 
+explanation, see Section 41. 
+
+
+
+
+
+15 
+
+
+
+IS 12032 (Part 12): 1994 
+IKC Pull 617- 12 ( 19H3) 
+
+
+
+llliislraliom 
+U Ihcrc arc no olhcr inputs with an overriding effect, the transition at the output takes place when 
+the input changes 
+
+- in a diagram using the symbol for logic negation: 
+
+
+
+
+
+
+froni its external 1 -state to its external 
+0-state 
+
+
+
+from its external 0-state to its external 
+1 -state 
+
+
+
+- in a diagram using the symbol for logique polarity: 
+
+
+
+n 
+
+
+
+n 
+
+
+
+J^;> n 
+
+
+
+-{::» 
+
+
+
+from its H-level to its L-level 
+
+
+
+from its L-level to its H-level 
+
+
+
+16 
+
+
+
+No 
+
+
+
+12-09-02 
+
+
+
+Symbol 
+
+
+
+JT 
+
+
+
+12-09-03 
+
+
+
+o 
+
+
+
+12-09-04 
+
+
+
+12.-09-05 
+
+
+
+12-09-06 
+
+
+
+^ 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 -12 (1983) 
+
+
+
+Description 
+
+
+
+Bi-threshold input 
+Input with hysteresis 
+
+The input takes on its internal 1-state when the external signal 
+level reaches a threshold value VI. It maintains this state until the 
+external signal level has returned through VI and reaches another 
+threshold value V2. If this symbol (without the negation synihol 
+or polarity symbol) appears on a diagram that uses either the 
+symbol for logic polarity or the positive-logic convention, VI is 
+more positive than V2. If it appears on a diagram that uses the 
+negative-logic convention, VI is more negative than V2. If the 
+negation or polarity symbol is present at the input, then the 
+relationship between VI and V2 is reversed. 
+Note. - Ifthe label at the input line includesotbersymbols,symlx)l 
+12-09-02 shall be drawn adjacent to the input line. 
+
+
+
+Open-circuit output {e.g. open-collector, open-emitter, open- 
+drain, open-source) 
+
+One of the two possible internal logic slates of lliis type of output 
+corresponds with an external high-impedance condition. In order to 
+produce a proper logiclevel in this condition, an externally connected 
+component or circuit, often a resistor, is rec]uired. This type of output 
+is usually capable of forming part of a distributed connection. 
+
+Notes 1. - This symliol shall be drawn adjacent to the output 
+line, except when using the bit-grouping symbol 
+(symbol 12-09-25) in the manner defined in Section 
+25, where an alternative position is permilled. 
+
+2. - Although this symbol is shown inside the outline, il 
+refers to external states and levels only. 
+
+.?. - If it is necessary to indicate which logic level is the 
+one with the low impedance, use can be made of 
+symbol 12-09-04 or 12-09-05. 
+
+
+
+Open-circuit output (M-type), for example PNPopen-aillector, Nf'N 
+open-emitter, P-channel "open-drain", N-channel "open-source". 
+
+When not in its external high-impedance condition, this type ol 
+output produces a relatively low-impedance ll-level. See also 
+symbol 12-27-13. 
+Notes 1 and 2 with symbol 12-09-03 apply. 
+
+Note. - The meaning of this symbol is not altered by the presence 
+of a negation or polarity indicator. 
+
+
+
+Open-circuit output (L-type), for example NPN open-collector, 
+PNP open-emitter, N-channel "open-drain". P-channel "open- 
+source". 
+
+When not in its external high-impedance condition this type of 
+output produces a relatively low-impedance L-level. See also 
+symbol 12-27-13. 
+
+Notes 1 and 2 with symbol 12-09-03 and the note with symbol 
+12- 09-04 apply. 
+
+
+
+Passive-pull-down output 
+
+lliis type of output is similar to H-type open-circuit output 
+(symbol 12-09-04) and can likewise be used as part ot a 
+distributed connection but without the need for an additional 
+external component or circuit. See also symlxil 12-27-13. 
+
+Note 1 with symbol 12-09-03 and the note with symbol 12-09-04 
+apply. 
+
+
+
+17 
+
+
+
+( Continued overleaf) 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 -12 (1983) 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-09-07 
+
+
+^ 
+
+
+
+
+Passive-pull-up output 
+
+This type of output is similar to the H type open circuit output 
+(symlioi 12-09-05) and can likewise be used as part of a 
+distributed connection but without the need for an additional 
+external component or circuit. See also symbol 12-27-13. 
+
+Notel with symbol 12-09-03 and the note with symbol 12-09-04 
+apply 
+
+
+tz 
+
+
+
+
+12-09-08 
+
+
+V 
+
+
+
+
+3-state output 
+
+Tliis output can take on a third external state, which is a 
+high-impedance condition, having no logic significance. 
+
+For an example of u.se, see symbol 12-29-04. 
+
+Note 1 with symbol 12-09-03 applies. 
+
+
+
+
+12-09-09 
+
+
+
+
+E 
+
+
+Extension input 
+
+An input of a binary element to which the output of an extender 
+element may be connected (see symbol 12-09-10). 
+
+Note. - The description which characterizes the relationship 
+between the external logic states of binary variables and 
+Iheir corresponding physical quantities is normatly not 
+valid for extension inputs and extender outputs. 
+
+
+
+
+12-09-10 
+
+
+E 
+
+
+
+
+Extender output 
+
+An output of a binary element which may be connected to the 
+extension input of another binary element in order to extend the 
+numberof inputs of that element. 
+
+The note with symbol 12-09-09 applies. 
+
+
+
+
+12-09-11 
+
+
+
+
+EN 
+
+
+Enable input 
+
+If this input standsatitsinternal l-state,all outputs stand at their 
+normally defined internal logic states and have their normally 
+defined effect on elements or distributed connections that may 
+be connected to the outputs, provided no other inputs or outputs 
+have an overriding and contradicting effect. 
+
+If the input stands at its internal 0-slate, all outputs of the type 
+12-09-03,12-09-04 or 12-09-05 are in their external high-im- 
+pedance conditioas, all passive-pulldown outputs stand at their 
+high-impedance L-levels, all passive-puil-up outputs stand at 
+their high-impedance H-levels, all 3-state outputs stand at their 
+normally defined internal logic states and are in their external 
+high-impedance conditions and all other outputs stand at their 
+internal 0-states. 
+
+Note. - This input only affects outputs shown as external outputs. 
+If it is an input of an element having an internal connec- 
+tion indicated by one of the symbols 12-08-01 to 12-08-04, 
+even-when the note to symbol 12-08-01 is applied, the 
+input is also an EN-input of the element to which the 
+internal connection is connected. If ambiguity can arise, 
+for example in the case of em bedded outlines, EN-depend- 
+ency as defined in Section 20 should be used. 
+
+
+
+
+
+18 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617 -12 (1983) 
+
+
+
+Illustrations 
+
+
+
+m 
+
+
+ID 
+
+
+EN 
+
+
+
+
+
+
+
+EN 
+
+
+
+
+JK 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EN* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EN1 1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EN [ 
+
+
+* 
+
+
+- » 
+
+
+m - 
+
+
+
+EN1 
+
+
+* 1 
+
+
+- * 
+1 
+
+
+« - 
+
+
+
+
+1 
+
+
+
+
+« 1 
+rtvH 
+
+
+lNI 
+
+
+- « 
+1 
+
+
+» - 
+
+
+
+
+
+
+
+EN 
+
+
+
+ENl 
+
+
+
+JI 
+
+
+
+No. 
+
+
+Symliol 
+
+
+Description 
+
+
+12-09-12 
+
+
+
+
+D 
+
+
+D-input 
+
+The internal logic state of D-input is stored by the element. See 
+symbol 12-42-02. 
+
+Note. ~ The internal logic state of this input is always subject to 
+an affecting input or output. 
+
+
+- 
+
+
+12-09-13 
+12-09-14 
+
+
+
+
+J 
+K 
+
+
+J-input 
+
+When this input lakes on its internal 1-state, al is stored hy the 
+element. 
+
+When the input stands at its internal 0-state, it has no effect on 
+
+the element. 
+
+K-input 
+
+When this input takes on its internal 1-state, a is stored by the 
+element. 
+
+When the input stands at its internal 0-state, it has no effect on 
+the element. 
+
+Each occurrence of the combination J = K. = I causes a single 
+change of the internal state of the output to its complement, 
+
+Claase 9.2 applies. 
+
+
+
+
+
+
+12-09-15 
+
+
+
+
+R 
+
+
+R-input 
+
+When this input takes on its internal 1-state, a is stored by the 
+
+element. 
+
+When the input stands at its internal 0-state, it has no effect on 
+
+the element. 
+
+
+
+
+
+19 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617 - 12 ( 1983 ) 
+
+
+
+No. 
+
+
+Symlxil 
+
+
+Description 
+
+
+12-09-16 
+
+
+
+
+S 
+
+
+S-input 
+
+When this input takes on its internal l-state,a 1 is stored bythe element. 
+
+When the input stands at its internal 0-state, it has no effect on 
+the element. 
+
+The effect of the combination R = S = 1 is not specified by the 
+symbol; this effect may be indicated by means of SET/RESET- 
+dependency (see Section 19). 
+
+Clause 9.2 applies. 
+
+
+
+
+12-09-17 
+
+
+
+
+T 
+
+
+T-input 
+
+Each time this input takes on its internal 1-state, a single change 
+of the internal state of the output to its complement takes place. 
+
+When the input stands at its internal 0-state, it has no effect on 
+the element. 
+
+Clause 9.2 applies. 
+
+
+
+
+12-09-18 
+
+
+
+
+
+
+Shifting input, left to right or top to bottom 
+
+Each time this input takes on its internal 1-state, the information 
+contained in the element will be shifted once m positions from 
+left to right or from toptobottom, depending on the orientation 
+of the symbol for the element. 
+
+When the input stands at its internal 0-state, it has no effect on 
+the element. 
+
+Clause 9.2 applies. 
+
+Note. - m shall be replaced by the relevent value. If m = 1, the 1 
+may be omitted. 
+
+
+
+
+
+
+12-09-1-^ 
+
+
+
+
+.*— m 
+
+
+Shifting input, right to left or bottom to top 
+
+Each time this input takes on its internal 1-state, the information 
+contained in the element will be shifted once m positions from 
+right to left or from bottom to top, depending on the orientation 
+of the symbol for the element. 
+
+When the input stands at its internal 0-state, it has no effect on 
+the element. 
+
+Clau.se 9.2 applies. 
+
+The note with symbol 12-09-18 applies. 
+
+
+12-09-20 
+
+
+
+
+-f m 
+
+
+Counting up input 
+
+Each time this input takes on its internal 1-state, the count of 
+the element is increased once by m units. 
+
+When the input stands at its internal 0-state, it has no effect on 
+the element. 
+
+Clause 9.2 applies. 
+
+The note with symbol 12-09-18 applies. 
+
+
+
+
+12-09-21 
+
+
+
+
+-m 
+
+
+Counting-down input 
+
+Each time this input takes on its internal 1-state, the count of the 
+element is decreased once by m units. 
+
+When the input stands at its internal 0-state, it has no effect on 
+
+the element. 
+
+Clause 9.2 applies. 
+
+The note with symbol 12-09-18 applies. 
+
+
+
+
+
+20 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 - 12 ( 1983 ) 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-09-22 
+
+
+
+
+Query input of an associative memory 
+
+
+
+
+
+
+
+
+Interrogate input of an associative memory 
+
+
+
+
+
+
+7 
+
+
+If this input takes on its internal 1-state, an interrogation of the 
+content of the element takes place. 
+
+
+
+
+
+
+
+
+If the input stands at its internal 0-state, it has no effect on the 
+element. 
+
+Clause 9.2 applies. 
+
+
+12-09-23 
+
+
+■ 
+
+
+Compare output of an associative memory 
+
+
+
+
+! 
+
+
+
+
+
+
+Match output of an associative memory. 
+
+The internal 1-state at this output indicates a match. 
+
+
+
+
+12-09-24 
+
+
+
+
+_ ,^_ 
+
+
+Bit grouping for multibit input, general symbol 
+
+
+
+
+
+
+m2 
+
+
+>« 
+
+
+Inputs grouped by this symbol produce a number that is the sum 
+of the individual weights of the inputs standing at their internal 
+1-states. The individual inputs shall be shown in ascending or 
+descending order by weight. 
+
+
+
+
+1 
+
+1 
+
+
+
+
+1 
+1 
+
+
+
+
+
+
+This number can be regarded: 
+
+
+
+
+
+
+"Ik ^ 
+
+
+
+
+as a number on which a mathematical function is performed, 
+or 
+
+as defining an identifying number in the sense of dependency 
+notation (according to Clause 24.2), or 
+
+
+
+
+4 
+
+
+— 
+
+
+
+
+
+
+as a value to become the content of the element. 
+
+
+
+
+
+
+mi iMk shall be replaced by the decimal equivalents of the 
+
+actual weights. If all weights are powers of 2, mi mk may be 
+
+replaced by the exponents of the powers of 2. tables between 
+mi and mic may be omitted to the extent that no confusion can 
+
+
+
+
+
+
+arise. 
+
+
+
+
+
+
+The asterisk must be replaced by an appropriate indication of the 
+operand on which the mathematical function is performed (e.g. 
+P or 0), by an appropriate indication in the sense of dependency 
+notation or by CT. In the latter case, the number produced by the 
+inputs is the value that is loaded into the element. 
+
+
+12-09-25 
+
+
+1 
+
+
+Bit grouping for multibit output, general symbol 
+
+
+
+
+«< 
+
+
+
+
+
+
+Outputs grouped by this symbol represent a number that is the 
+sum of the individual weights of the outputs standing at their 
+internal 1-states. The individual outputs shall be shown in 
+ascending or descending order by weight. 
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+1 
+1 
+
+
+This number can be regarded: 
+
+
+
+
+
+
+, (Tlk 
+
+
+
+
+as the resuh of the performance of a mathematical function, or 
+
+
+
+
+
+
+
+
+
+
+
+as the value of the content of the element. 
+
+
+
+
+
+
+mi mic shall be replaced by the decimal equivalents of the 
+
+actual weights. If all weights are powers of 2, mi mk may lie 
+
+replaced by tlie exponents of the powers of 2. Laliels between 
+m 1 and mic may he omitted to the extent that no confusion can ari.se. 
+
+The asterisk must be replaced by an appropriate indication of the 
+result of the performance of the mathematical function or by C"T. 
+In the latter case, the number represented by the outputs standing 
+at their internal 1-states is the actdal value of the content of the 
+element. 
+
+
+
+21 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 - 12 ( 1983 ) 
+
+
+
+Illustrations 
+
+
+
+> » 
+
+
+
+* < 
+
+
+
+1 
+
+— I > * 
+16 
+
+1 
+
+
+
+* < 
+
+
+
+> * 
+
+
+
+16 
+64 
+
+16 
+
+128 
+
+
+
+See also examples in Section 39 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-09-26 
+
+
+
+
+Pm 
+
+
+Operand input (Pm-input shown) 
+
+This input represents one bit of an operand on which one or more 
+mathematical functions are performed. 
+
+Notes 1. - m shall be replaced by the detimal equivalent of 
+the weight of the bit If the weights of all Pm-inputs 
+of Uie element are powers of 2, at each Pm-input m 
+may be replaced by the exponent of the power of 
+
+2. 
+
+2. - If an operand consists of two 6r more bits repre- 
+sented by adjacent input lines, the bit grouping 
+symbol (12-09-24) may be used. 
+
+,?. - Preferred letters for operands are P and Q. If these 
+letters are not suitable or if more than two operands 
+are involved, other characters may be ased 
+providing no confusion can arise. 
+
+
+
+
+12-09-27 
+
+
+
+
+> 
+
+
+Greater-than input of a magnitude comparator 
+
+Notes ]r- This symbol is intended for use when representing 
+cascaded comparators. For an example of use, see 
+symtol 12-39-08. 
+
+2. - Symbols 12-09-27, 12-09-28 and 12-09-29 may be 
+
+combined to qualify inputs as follows: s, s, ^. 
+
+3. - This symbol should not be drawn adjacent to the 
+
+outline, to avoid confusion with the dynamic input 
+indicator symbol (12-07-07). 
+
+
+
+22 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617 -12 (1983) 
+
+
+
+No. Symbol 
+
+
+Description 
+
+
+12-09-28 
+
+
+
+
+< 
+
+
+L&ss-than input of a magnitude comparator 
+Notes I and 2 with symbol 12-09-27 apply. 
+
+
+
+
+12-09-29 
+
+
+
+
+_ _ ..^ 
+
+
+Equal input of a magnitude comparator 
+Notes 1 and 2 with symbol 12-09-27 apply 
+
+
+
+
+12-09-30 
+
+
+*>* 
+
+
+
+
+Greater-than output of a magnitude comparator 
+
+Notes 1. - The asterisks shall lie replaced by designations of 
+the operands, for example P and respectively, 
+
+2. - Symbols 12-09-30, 12-09-31 and 12-09-32 may be 
+
+combined to qualify outputs ;is fullows: 
+* fc * , * 5 * ,^. 
+
+3. - If this synllxil appears in one element of a series of 
+
+cascaded comparators, the output marked with this 
+symbol is affected not only by the operands, but also 
+by the inputs marked with the symixils 12-09-27, 
+12-09-28 or 12-09-29. 
+
+
+
+
+12-09-31 
+
+
+♦ <« 
+
+
+
+
+Less-than output of a magnitude comparatof 
+The notes with symbol 12-09-30 apply 
+
+
+
+
+12-09-32 
+
+
+« = » 
+
+
+
+
+Equal output of a magnitude aimparator 
+
+The notes with symbol 12-09-30 apply. 
+
+Note. - If this syniU>l is not combined with synilx)! 12-09-30 or 
+symbol 12-09-31, the designalionsof the operands niiiy be 
+omitted providing no confusion can arise. 
+
+
+
+
+12-09-33 
+
+
+
+
+81 
+
+
+Borrow-in input of an arithmetic element 
+
+iVo/t. - A number may be added as a suffix lo this liibcl; this 
+number is Ihe exponent of the ptiwcr of 2 which is tlic 
+weight of the bit involved. 
+
+
+
+
+12-09-34 
+
+
+
+
+BG 
+
+
+Borrow-generate input of an arithmetic element 
+The note with symbol 12-09-33 applies. 
+
+
+
+
+12-09-35 
+
+
+BG 
+
+J 
+
+
+
+
+Korrow-geiieratc output of an arithmetic element 
+The note with symbol 12-09-33 applies. 
+
+
+
+
+
+23 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617 -12 (1983) 
+
+
+
+No. 
+
+
+Synilwl 
+
+
+Description 
+
+
+12-W-36 
+
+
+BO 
+
+
+
+
+Borrow-out output of an arithmetic element 
+Ripple-borrow output of an arithmetic element 
+The note with symbol 12-09-33 applies. 
+
+
+
+
+l2-(»-37 
+
+
+
+
+BP 
+
+
+Borrow-propagale input of an arithmetic element 
+The note with symbol 12-09-33 applies. 
+
+
+
+
+12-09-38 
+
+
+BP 
+
+
+
+
+Borrow-propagate output of an arithmetic element 
+The note with symbol 12-09-33 applies. 
+
+
+
+
+12-09-39 
+
+
+
+
+CI 
+
+
+
+
+Carry-ill Input of an arithmetic element 
+The note with symbol 12-09-33 applies. 
+
+
+
+
+12-09-40 
+
+
+
+
+CG 
+
+
+Carry-gencrale input of an {\rilhmctic element 
+The note with symbol 12-09-33 applies. 
+
+
+
+
+12-09-41 
+
+
+CG 
+
+
+
+
+Carry-generate output of an arithmetic element 
+The note with symbol 12-f)9-33 applies. 
+
+
+
+
+12-09-42 
+
+
+CO 
+
+
+
+
+Carry-out output of an arithmetic element 
+Ripple-carry output of an arithmetic element 
+The note with symbol 12-09-33 applies. 
+
+
+
+
+12-09-43 
+
+
+
+
+CP 
+
+
+Carry-propagate input of an aAimellc ikmeni 
+The note with symbol 12-(W=0'3 applies. 
+
+
+
+
+12-(W-44 
+
+
+CP 
+
+
+
+
+Carry-propagate output of an arithmelic elenienl 
+The note with symbol 12-09-33 applies 
+
+
+
+
+
+24 
+
+
+
+IS 12032 {Part 12) -.1994 
+lEC Pub^l7 - 12 { 1983 ) 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-09-45 
+
+
+
+
+CT=ni 
+
+
+Content input 
+
+m shall be replaced by an appropriate indication of the content 
+of the element (e.g. a counter) that results whenever this input 
+takes on its internal 1-state. 
+
+If this input stands at its internal 0-state, it has no effect on the 
+element. 
+
+For an example of use, sec symbol 12-49-16. 
+
+
+
+
+12-09-46 
+
+
+IJ* 
+
+
+
+
+Content output 
+
+The asterisk shall be replaced l^y an appropriate indication of 
+those values of the content of the element (e.g. a counter) for 
+which the output stands at its internal 1-state. 
+
+For an example of use, see symbol 12-49-12. 
+
+
+
+
+12-09-47 
+
+
+
+
+
+
+
+Line grouping at the input side 
+
+This symbol indicates that two or more connections are needed 
+to implement a single logic input. 
+
+For an example of use, see symbol 12-28-06. 
+
+Notes. 1. - The logic levels on connections grouped by this 
+symbol may differ from those on the other input and 
+output pins. 
+
+2. - For an example of use of Note 1, see symbol 
+12-29-07. 
+
+
+1 
+1 
+1 
+
+
+12-09-48 
+
+
+1 1 
+
+
+
+
+Line grouping at the output side 
+
+TJiis symbol indicates that two or more connections are needed 
+to implement a single logic output. 
+
+For an example of use, see symbol 12-28-07. 
+
+Note 1 with symbol 12-09^7 applies. 
+
+
+1 
+1 
+1 
+
+
+
+
+12-09-49 
+
+
+
+
+"1" 
+
+
+Fixed-mode input 
+
+If an element can perform several functions but only a restricted 
+numlxr of functions is of interest, this representation can Ix; used 
+to identify an input that must be in the internal 1-stalc for the 
+element to perform the functions of interest indicated by the 
+symbol. 
+
+A fixed mode input must not be affected by dependency notation 
+nor have other functions. 
+
+l-or examples of use, sec symbols 12-49-07 and 12-49-08. 
+
+
+
+
+12-09-50 
+
+
+■*1" 
+
+
+
+
+Fixed state output 
+
+Thi.s rtprcscnlation may be used to identify an output that always 
+stands at its internal 1-state. 
+
+A fixed-slate output must not Ih; affected by dependency notation 
+nor have other functions. 
+
+For an example of use, sec symbol 12-33-10, 
+
+
+
+
+
+25 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617 - 12 ( 1983 ) 
+
+SECTION 10 - NON-LOGIC CONNECTIONS AND SIGNAL-FLOW INDICATORS 
+
+10.1 Symbol 13-02-01 or 13-02-02 of lEC Publication 617-13 may be used to denote an input or an 
+output carrying analogue or digital signals respectively. 
+
+10.2 For supply voltage inputs having special effects, use symbol 13-03-11 of lEC Publication 617-13. 
+
+10.3 In principle, the direction of signal flow is from left to right and from top to bottom. If this rule 
+caiuiot be maintained or the direction of signal flow is not obvious, then the signal lines should be 
+marked with arrowheads pointing iii the direction of signal flow. These arrowheads shall not touch 
+the outline or any qualifying symbol. See for example, symbol 12-29-03. 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-10-01 
+
+
+
+
+Non-logic connection, shown on the left-hand side 
+
+
+
+
+v 
+
+
+
+
+This symbol may be used to indicate a connection which does 
+not carry any logic information (e.g. reference voltage 
+connection). 
+
+Note. - Additional informaiion associated with non-logic connec- 
+tions may be shown without brackets inside the outline. 
+
+
+^ 
+
+
+
+
+
+
+For an example of use, see symbol 12-47-02. 
+
+
+12-10-02 
+
+
+Usesymlx)! 02-05-03 
+
+
+Bidirectional signal flow 
+
+For an example of use, see symbol 12-29-08. 
+
+Notes. l.~ On a connecting line with bidirectional signal flow, 
+any symbol for logic polarity should point to the 
+right or down e.g.: 
+
+
+
+
+
+
+c ^ f^ 
+
+
+and 
+
+
+^^ f ^ 
+
+
+V ..> 
+
+
+
+
+
+
+
+
+2. ~ In some cases, the appearance of the symbols for 
+logic polarity makes the ase of the symbol of 
+bidirectional signal flow unnecessary, e.g.: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+f\ 
+
+
+and 
+
+
+1 
+
+
+
+
+^ 
+
+
+^-1 
+
+
+
+
+
+
+
+
+. 
+
+
+
+
+
+
+
+
+26 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+ffiC Pub 617-12 (1983) 
+
+CHAPTER IV: DEPENDENCY NOTATION 
+
+SECTION 1 1 - GENERAL EXPLANATION 
+
+Dependency notation is a means of denoting the relationships between inputs, outputs, or inputs and 
+outputs, without actually showing all the elements and interconnections involved. 
+
+Apart from its use in complex elements, dependency notation should not be used to replace the 
+symbols for combinative elements. 
+
+The information provided by dependency notation supplements that provided by the qualifying 
+symbols for an element's function. 
+
+In the convention for dependency notation, use will be made of the terms "affecting" and "affected". 
+In the case where it is not evident which inputs must be considered as being the affecting or the affected 
+ones (e.g. if they stand in an AND relationship), the choice may be made in any convenient way. 
+
+In some complex elements, outputs may have an effect on inputs and other outputs. For the sake of 
+simplicity, the^ext of Sections 12and 13 refers to "affecting inputs" only, but it should be understood that 
+the recommended notation applies to affecting outputs also. 
+
+SECTION 12- CONVENTION 
+
+Dependency notation usually defines relationships between internal logic states. However, in the 
+case of 3-stale outputs, passive-puU-down outputs, passive-pull-up outputs, and open-circuit outputs 
+(symbols 12-09-03 through 12-09-08), ENABLE dependency (section 20) defines relationships between 
+the internal logic states of affecting inputs and the external states of affected outputs. 
+
+Application of dependency notation is accomplished by: 
+
+- labelling the input affecting other inputs or outputs with a particular letter symbol denoting the 
+relationship involved followed by an identifying number; 
+
+- labelling each input or output affected by that affecting input with that same number. 
+
+If it is the complement of the internal logic state of the affecting input (output] that does the affecting, 
+a bar shall be placed over the indentifying number at the affected input [output]. For an example of use, 
+see symbol 12-42-11. 
+
+If the affected input or output requires a label to denote an effect it has on the element, this label 
+shall be prefixed by the identifying number of the affecting input. 
+
+If an input or output is affected by more than one affecting input the identifying numbers of each of 
+the affecting inputs shall appear in label of the affected one, separated by commas. The left-to-right order of 
+these identifying numbers is the same as the sequence of the affecting relationships (see also Section 25). 
+
+TWo affecting inputs labelled with different letters shall not have the same identifying number unless 
+one of the letters is A (see Section 23). 
+
+If two affecting inputs have the same letter and the same identifying number they stand in an OR 
+relationship to each other. 
+
+If the labels denoting the functions of affected inputs or outputs must be numbers (e.g. outputs of a 
+coder), the identyfying numbers to be associated with both affecting inputs and affected inputs or outputs 
+shall be replaced by another character selected to avoid ambiguity, for example Greek letters. 
+
+An affecting input affects only the corresponding affected inputs and outputs of the symbol. 
+SECTION 13 - TYPES OF DEPENDENCY 
+
+13.1 The following types of dependency are defined: 
+
+AND, OR and NEGATE dependencies are used to denote Boolean relationships between inputs 
+and/or outputs. 
+
+27 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+INTERCONNECTION dependency is used to indicate that an input or output imposes it logic 
+state on one or more other inputs and/or outputs. 
+
+CONTROL dependency is used to identify a timing input or a clock input of a sequential element 
+and to indicate wWch inputs are controlled by it. 
+
+SET and RESET dependencies are used to specify the internal logic states of an RS-bistable 
+element when the R-and S-inputs both stand at their internal 1 -states. 
+
+ENABLE dependency is used to identify an Enable input and to indicate which inputs and/or 
+outputs are controlled by it (e.g. which outputs take on their high-impedance condition), 
+
+MODE dependency is used to identify an input whichselects the mode of operation of an element 
+and to indicate the inputs and/or outputs depending on that mode. 
+
+ADDRESS dependency is used to identify the Address inputs of a memory. 
+
+Table 1 page 51, lists the various dependencies and summarizes their effects. More detailed 
+definitions appear in the following sections, together with illustrations of the concepts. In these 
+illustrations, general symbols explained in Chapter V are used. 
+
+In Table 1, the word "action" implies: 
+
+- that affecting inputs will have their normally defined effect on the function of the element; 
+
+- that affected outputs will take on the internal logic states determeined by the function of the element. 
+
+Table I 
+Types of dependency 
+
+
+
+Type of dependency 
+
+
+Letter(s) 
+
+
+Effect on affected input or outpu 
+
+
+t if the affecting input stands at its: 
+
+
+See Section 
+
+
+1 -state 
+
+
+0-state 
+
+
+ADDRESS 
+
+
+A 
+
+
+Permits action (address selected) 
+
+
+Prevents action (address not selected) 
+
+
+23 
+
+
+CONTROL 
+
+
+C 
+
+
+Permits action 
+
+
+Prevents action 
+
+
+18 
+
+
+ENABLE 
+
+
+EN 
+
+
+Permits action 
+
+
+- Prevents action of affected inputs 
+
+- Imposes external high-impedance 
+condition on open-circuit and 3-siate 
+outputs (internal state of 3-stale out- 
+puts unaffected) 
+
+- imposes high-impedance L-level on 
+passive-pull-down outputs and high- 
+impedance H-level on passive-pull-up 
+outputs 
+
+- Imposes 0-state on other outputs 
+
+
+20 
+
+
+AND 
+
+
+G 
+
+
+Permits action 
+
+
+Imposes 0-state 
+
+
+14 
+
+
+MODE 
+
+
+M 
+
+
+Permits action (mode selected) 
+
+
+Prevents action (mode not selected) 
+
+
+21 
+
+
+NEGATE 
+
+
+N 
+
+
+Coniplemenis state 
+
+
+No effect 
+
+
+16 
+
+
+RESET 
+
+
+R 
+
+
+Affected output reacts as il would 
+doloS=0, R = L 
+
+
+No effect 
+
+
+19 
+
+
+SET 
+
+
+S 
+
+
+Affected output reacts as it would 
+dotoS = l, R = 
+
+
+No effect 
+
+
+19 
+
+
+OR 
+
+
+V 
+
+
+Imposes 1-stale 
+
+
+Permits action 
+
+
+15 
+
+
+[NTER 
+CONNECTION 
+
+
+z 
+
+
+Imposes 1 -stale 
+
+
+Imposes 0-stale 
+
+
+17 
+
+
+
+Note . - An affected input [output] carrying an identifying number with a bar over it is affected by the logic state of the affecting input 
+which is rhc complemcnl of Ihat indicated in the table above. 
+
+
+
+28 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+SECTION 14 - AND DEPENDENCY (G-DEPENDENCY) 
+
+14.1 Each input or output affected by a Gm-input or Gm-output stands in an AInD relationship with this 
+Gm-input or Gm-output. 
+
+
+
+No. 
+
+
+
+12-14-01 
+
+
+
+12-14-02 
+
+
+
+Symbol 
+
+
+
+Qm 
+
+
+
+Gm 
+
+
+
+Description 
+
+
+
+Gm-input 
+
+
+
+Gm-output 
+
+
+
+If a Gm-input or Gm-output stands at its inleriwl 1 -state, all 
+inputs and outputs affected by this Gm-input or Gm-output stand 
+at tiieir normally defined internal logic states. 
+
+If a Gm-input or Gm-output stands at its internal 0-state, all 
+inputs and outputs affected by thi.s Gm-input or Gm-output stand 
+at their internal 0-states. 
+
+The note with Table 1 applies. 
+
+Note. - m must be replaced by the relevant identifying numlier, 
+
+
+
+Illustrations 
+
+
+
+Q 
+
+b 
+c 
+
+
+
+1 
+
+G1 
+T 
+
+
+
+T^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+b 2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+& 
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+— b 
+
+
+
+
+k: 
+
+
+
+29 
+
+
+
+( Continued avcrlcttf) 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+G1 
+
+1 
+
+G2 
+2 
+
+
+
+G1 
+
+
+
+
+
+1 
+
+
+
+
+62 
+2 
+
+
+
+
+1 
+
+
+
+
+G3 
+3 
+
+
+
+
+1 
+G^ 
+
+
+
+
+H 
+
+
+
+G1 
+
+
+
+Dependency notation does not provide a shorthand notation for: 
+
+
+
+SECTION 15 - OR DEPENDENCY (V-DEPENDENCY) 
+
+
+
+1 5.1 Each input or output affected by a Vm-input or Vni-output stands in an OR relationship with this 
+Vm-inpul or Vni-output. 
+
+
+
+No. 
+
+
+
+12-15-01 
+
+
+
+12-15-02 
+
+
+
+Symlxil 
+
+
+
+Vm 
+
+
+
+Vm 
+
+
+
+Description 
+
+
+
+Vm-inpul 
+
+
+
+V'in-oulpul 
+
+
+
+if a Vm-inpul or Vm-oulput slands al ils inlurnal 1 -stale, all 
+Inputs and outputs at'fcctcd hy this Vm-input or Vni-oulpul stand 
+at tliiir internal 1 -states. 
+
+11' a Vni-inpul or Vni-oulpul slands al ils Inlcrnal O-slalc, all 
+inputs and outputs alTeflcd liy this Vm-input or Vni-oulpul stand 
+al their normally defined internal logic slates. 
+
+The notes with Tahle 1 and symbols 12-14-01 and 12-14-02 
+apply. 
+
+
+
+?(.l 
+
+
+
+llhistrations 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+V1 
+
+1 
+
+
+
+
+SECTION 16 - NEGATE DEPENDENCY (N-DEPENDENCY) 
+
+16.1 Each input or output affected by an Nm-input or Nm-oulput stands in an EXCLUSIVE-OR 
+relationship with this Nni-input or Nin-output. 
+
+
+
+No. 
+
+
+Symlxil 
+
+
+Dcsaiplion 
+
+
+12-16-01 
+
+
+
+
+Nm 
+
+
+Nm-input 
+
+
+
+
+12-16-02 
+
+
+Nm 
+
+
+
+
+Nni-output 
+
+
+
+
+
+
+
+
+If an Nm-input or Nm-iiutput stands at its internal l-state, the 
+internal logic state of each input and each output affected hy this 
+Nm-input or Nm-output is the complement of the normally 
+defined internal logic state of that input or output. 
+
+If ail Nm-input or Nm-output stands at ils internal 0-stale, all 
+inputs and outputs affected hy this Nm-input or Nm-oulput stand 
+at their normally defined internal logic states. 
+
+The notes with Table 1 and symbols 12-14-01 and 12-14-02 
+apply. 
+
+
+
+lllustralion 
+
+
+
+N1 
+
+
+
+Q — I 
+
+
+
+
+If a = 0, lhonc- = b 
+If a = I, llicii c= h 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+SECTION 1 7 - INTERCONNECTION DEPENDENCY (Z-DEPENDENCY) 
+
+1 7.1 INTERCONNECTION dependency is used to indicate that an input or output imposes its internal 
+logic state on one or more other inputs and/or outputs, for an example of use, see symbol 1 2-28- 1 3. 
+
+The internal logic state of an input or output affected by a Zm-input or Zm-output is identical to the 
+internal logic state of its affecting Zm-input or Zm-output unless modified by additional dependency 
+notation. 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-17-01 
+
+
+
+
+Zm 
+
+
+Zm-input 
+
+
+
+
+12-17-02 
+
+
+Zm 
+
+
+
+
+Zm-output . 
+
+
+
+
+
+
+
+
+If a Zm-input or Zm-outputstands at its internal l-state, all inputs 
+and outputs affected by this Zm-input or Zm-output stand at their 
+internal 1-states unless modified by additional dependency nota- 
+tion. 
+
+If a Zm-input or Zm-output stands at its internal 0-state,all inputs 
+and outputs affected by this Zm-input or Zm-outputstandattheir 
+internal 0-states unless modified by additional dependency 
+notation. 
+
+The notes with Table I and symbols 12-14-01 and 12-14-02 
+apply. 
+
+
+
+
+Illustrations 
+
+
+
+b = 
+
+
+
+
+Q = 
+
+
+
+
+Z1 
+
+
+
+32 
+
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+
+SECTION 18 - CONTROL DEPENDENCY (C-DEPENDENCY) 
+
+
+
+18.1 CONTROL dependency shall be used for sequential elements only and may imply more than a 
+simple AND relationship. It identifies an input that produces action, for example the clock of an 
+edge-triggered bistable circuit or the data enable of a level-operated transparent latch. 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-18-01 
+
+
+
+
+Cm 
+
+
+Cm-input 
+
+
+
+
+12-18-02 
+
+
+Cm 
+
+
+
+
+Cm-output 
+
+
+
+
+
+
+
+
+If a Cm-input or Cm-output stands at its internal 1-state, the 
+inputs affected by this Cm-input or Cm-output have their 
+normally defined effect on the function of the element. 
+
+
+
+
+
+
+If a Cm-input or Cm-output stands at its internal 0-state, the 
+inputs affected by this Cm-input or Cm-output have no effect on 
+the function of the element. 
+
+
+
+
+
+
+The notes with Table I and symbols 12-14-01 and 12-14-02 
+apply. 
+
+^ 
+
+
+
+lUustratiom 
+
+
+
+Q 
+
+b 
+
+
+
+CI 
+10 
+
+
+
+& 
+
+Q 1 
+
+
+
+CI 
+
+C2 
+1,2D 
+
+
+
+Q 
+
+
+S 
+
+
+
+
+
+
+
+
+b — ■ 
+
+
+
+
+
+
+
+
+
+
+-c. 
+
+
+c — 
+
+
+
+
+
+
+
+G 
+
+b 
+
+
+
+CI 
+
+
+
+ID 
+
+
+
+33 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+1,2 D 
+U D 
+G1 
+
+C2 
+
+
+
+
+
+
+
+I 
+
+
+>1 
+
+
+
+
+
+
+
+
+
+
+h 
+
+
+& 
+
+
+
+
+■r^ 
+
+
+
+
+V. 
+
+
+(i 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2D 
+C2 
+
+
+
+Use lias been made of Clause 9. 1 
+
+
+
+CI 
+
+1C2 
+
+2D 
+
+
+
+G1 
+
+1C2 
+
+2D 
+
+
+
+This illustration has been included for 
+explanatory purposes, but the use of a 
+Cm-input to affect a second Cm-input 
+is not recommended. 
+
+
+
+For comparison of C-, EN- and M-effects on inputs, see Section 22. 
+
+SECTION 19 - SET AND RESET DEPENDENCY (S- AND R-DEPENDENCY) 
+
+19.1 SET and RESET dependencies are used if it is necessary to specify the effect of the combination 
+R = S = 1 on a bistable element. These dependencies should not be used if such specification is not 
+
+necessary. 
+
+Affecting S- and R-inputs can affect outputs only. 
+
+
+
+No. 
+
+
+Symlxil 
+
+
+Description 
+
+
+12-19-01 
+
+
+
+
+Sm 
+
+
+Sm-input 
+
+If an Sm-input stands at its internal 1-state, the outputs affected 
+by this Sm-inputwiil take on the internal logic state they normal- 
+ly would take on for the combination S= 1, R=0, regardless of the 
+state of any R-inpul. 
+
+If an Sm-input stands at its internal 0-state, it has no effect. 
+
+The notes with Table I and symbols 12-14-01 and 12-14-02 
+apply. 
+
+
+
+
+12-19-02 
+
+
+
+
+Rm 
+
+
+Rm-input 
+
+If an Rm-input stands at its internal 1-state, the outputs affected 
+by this Rm-input will take on the internal logic state they nor- 
+mally would take on for the combination S=0, R=l, regardless 
+of the state of any S-input. 
+
+If an Rm-input stands at its internal 0-state, it lias no effect. 
+
+The notes with Table 1 and symbols 12-14-01 and 12-14-02 
+apply. 
+
+1 .„, ^ 
+
+
+
+
+
+34 
+
+
+
+Illustrations 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+
+— d 
+
+
+
+External logic states 
+a b c d 
+
+
+
+unchanged 
+
+1 
+
+1 
+unspecilied 
+
+
+
+
+Externa 
+a b 
+
+
+logic stales 
+c d 
+
+
+
+1 
+
+
+unchanged 
+1 
+
+
+1 
+
+
+1 
+
+
+1 1 
+
+
+1 
+
+
+
+
+External logic state 
+
+
+
+a 
+
+
+b 
+
+
+c d 
+
+
+
+
+
+
+
+
+unchanged 
+
+
+
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+
+External logic stales 
+
+
+
+
+a 
+
+
+b 
+
+
+c d 
+
+
+
+
+
+
+
+
+unchanged 
+
+
+
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+
+
+
+1 (} 
+
+
+1 
+
+
+1 
+
+
+1 1 
+
+
+
+Note. - Tlie non-complementary output pattern in the last lincof the truth table is only pseudo-stable. 'Hie simultaneous 
+return of a and b to produces an unforeseeable st;ible and complementary output pattern. 
+
+
+
+b — 
+
+
+
+
+Externa 
+
+
+logic slates 
+
+
+a b 
+
+
+c d 
+
+
+
+
+
+unclianged 
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+1 1 
+
+
+
+
+
+
+The note with the preceding illustration applies. 
+
+
+
+35 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+The use of the solidus is explained in Section 25 
+
+
+
+External logic states 
+
+
+
+
+a 
+
+
+b 
+
+
+c a 
+
+
+
+
+
+
+
+
+unchanged 
+
+
+
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+unchanged 
+
+
+
+Note. - This example does not use the S- and R-dependencies, but completes the set of alternatives to the unspecified 
+case and demonstrates the fact that S- and R-dependencies cannot affect inputs. 
+
+SECTION 20 - ENABLE DEPENDENCY (EN-DEPENDENCY) 
+
+20.1 ENABLE dependency is used to indicate an ENABLE input which does not necessarily affect ail 
+outputs of an element. It can also be used if one or more inputs of an element are affected. 
+
+
+
+No. 
+
+
+Symht>l 
+
+
+Description 
+
+
+12-20-01 
+
+
+
+
+ENm 
+
+
+ENm-input 
+
+The effect of this input ot» its affected outputs is the same as that 
+of a EN-input (seesymM 12-09-U) 
+
+The effect of this input on its affected inputs is the same ;is that 
+of an M-input (seesymlx)! 12-21-01). 
+
+The notes with Table I and symb{)ls 12-14-01 and 12-14-02 
+apply. 
+
+
+
+
+
+Ilhistralions 
+
+
+
+
+External logic states 
+
+
+
+a 
+
+
+d 
+
+
+
+
+
+c 
+
+
+1 
+
+
+b 
+
+
+
+EN1 
+1C2 
+2D 
+
+
+
+Gl 
+
+1C2 
+
+20 
+
+
+
+
+
+
+
+
+u 
+
+
+
+
+h 
+
+
+c 
+
+
+n 
+
+
+~l 
+
+
+
+
+
+
+1K 
+
+
+
+For comparison of C- EN- and M-elTccLs 
+on inputs, sec Section 22. 
+
+
+
+36 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617-12 (1983) 
+
+SECTION 21 - MODE DEPENDENCY (M-DEPENDENCY) 
+
+21.1 MODE dependency is used to indicate that the effects of particular inputs and outputs of an element 
+depend on the mode in which the element is operating. 
+
+
+
+No. 
+
+
+
+Synilxil 
+
+
+
+Description 
+
+
+
+12-21-01 
+
+
+
+Mm 
+
+
+
+12-21-02 
+
+
+
+Mm 
+
+
+
+Mm-input 
+
+
+
+Mm -output 
+
+
+
+If an Mm-inpu[ or Mnj-output sliuids at its iuteriw! l-slate, the 
+inputs affected by this Mm-input or Mm-iiu(put have llieir nor- 
+mally defined effect on the function of the element and the 
+outputs affected by this Mm-input or Mni-output stand at their 
+normally defined internal logic states, i.e. the inputs and outputs 
+are enabled. 
+
+If an Mm-input or Mn)-oulpuI stands at its internal 0-slale. the 
+inputs affected by this Mm-input or Mni-oulput iiave no effect 
+on the function of the element and at each output alTectcd by 
+this Mm-input or Mm-output. any sel of labels containing the 
+identifying numlx:r of that Mm-input or Mm-output has no effect 
+and is to be ignored. If an alTeeled input has several sets of laKIs 
+separated by solidi, any sel in which the identifying nunilvr of 
+the Mm-input or Mm-oulput appears has no effect and is lo In' 
+ignored. This ropresenLs disabling of some of the functions > ' a 
+multi -fundi on input, If an output has several sets of labels 
+separated by solidi (see Section 25), only those sets in which the 
+identifying number of this Mm-input or Mni-outpul ap|XNirs are 
+to be ignored, lliis represents disabling or selection of some of 
+the functions of a multi-function output, or the modification of 
+some of the characteristics or dependent relationships of the 
+output. 
+
+The notes with table 1 andsymlx^l 12-14-01 and 12-14-02 apply. 
+
+
+
+21.2 In complex elements with a large number of different modes, application of the convention for 
+MODE dependency may lead to a very extended labelling. Iti such cases, the inputs and outputs 
+affected by any affecting M-inpul are simply labelled with the letter M, but then the diagram 
+conlaiiiiiig llie syinhoj must also contain cither a table in which the elTccIs of these inputs in the 
+different modes are clearly explained or a statement as to where such a table is to be found. If no 
+confusion can arise, these letters M may be omitted. 
+
+Uliislralioiis 
+Tlie use of the bil-groupitig symbol and the solidus is explained in Sections 24 and 25, respectively. 
+M-depciidency affecting inputs: 
+
+
+
+M1 
+
+1C2 
+
+2D 
+
+
+
+Gl 
+
+1C2 
+2D 
+
+
+
+37 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+a — 
+
+
+:p:»C4/2-^/3+ 
+
+
+
+
+fa — 
+
+c — 
+
+
+",}«§ 
+
+
+
+
+
+
+n 
+
+
+r 
+
+
+d — 
+
+
+2,4D 
+
+
+
+
+e — 
+
+
+1,40 
+
+
+
+
+f — 
+
+
+1,AD 
+
+
+
+Mode (b = 0, c = 0): the outputs remain at their existing states 
+as none of the inputs has an effect. 
+
+Mode I (b = 1, c = ): parallel loading takes palce through inputs 
+e and f. 
+
+Mode 2 (b = , c = 1) : shifting down and serial loading through 
+input d take place. 
+
+Mode 3 (b = 1, c = 1) : counting up by increment of 1 per clock 
+pulse takes palce (input a). 
+
+
+
+Determining the function of an output : 
+
+
+
+Ml 
+
+
+
+h 
+
+
+
+1CT = 15 
+TCT=0 
+
+
+
+I 
+
+
+
+J^ 
+
+
+
+If input a stands at its internal 1-state establishing mode 1, output 
+b will stand at its internal 1 -state if the content of the register equals 
+15. If input a stands at its internal 0-state, output b will stand 
+at its internal 1-state if the content of the register equals 0. For 
+explanation, see also Section 25. 
+
+
+
+Modifying dependent relationships of outputs : 
+
+
+
+
+
+
+
+1 
+
+
+
+
+a — 
+b — 
+
+
+>l 
+
+
+(2/3) 4 
+0,4 
+
+
+— e 
+
+— f 
+
+
+c — 
+d — 
+
+
+G5 
+
+
+2,4/3,5 
+
+
+— g 
+
+
+
+At output e the label set causing negation (if c = 1) is effective in 
+modes 2 and 3 only. In modes and t, this output stands at its 
+nonnally defined state as if it had no labels. 
+
+At output f the label set has effect if the mode is not 0, so output 
+f is negated (if c = 1) in modes 1, 2 and 3. In mode the label set 
+has no effect so the output stands at its normally defined state. In 
+this example 0, 4 is equivalent to (1/2/3) 4. 
+
+At output g there are two label sets. The first set, causing negation 
+(if c = 1), is effective only in mode 2. The second set, subjecting 
+g to AND dependency on d, has effect only in mode 3. 
+
+Note that in mode none of the dependency relationships has any 
+effect on the outputs, so e, f and g will all stand at the same sta*e. 
+
+
+
+For comparison of C-, EN- and M-effects on inputs, see Section 22. 
+
+SECTION 22 - COMPARISON OF C-, EN- AND M-EFFECTS ON INPUTS 
+
+With regard to affected input, Cm-, ENm- and Mm-inputs all have the same effect. However, their 
+intended applications are different: 
+
+- Cm should be used to identify an input that produces action; 
+
+- ENm should be used to identify an input that produces a single preparatory effect; 
+
+
+
+38 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+- Mm should be used to identify one or more inputs that singly or together produce alternative 
+preparatory effects. 
+
+SECTION 23 - ADDRESS DEPENDENCY (A-DEPENDENCY) 
+
+23.1 ADDItfeSS dependency provides a clear representation of those elements, particularly memories 
+which use address control inputs to select specified sections of a multidimensional array. ADDRESS 
+dependency allows a symbolic representation of only a single general case of the sections of the 
+array, rather than requiring a symbolic presentation of the entire array. An input of the array shown 
+at a particular element of this general section is common to the corresponding elements of all 
+sections of the array. An output of the array shown at a particular element of this general section is 
+the result of the OR fimction of the outputs of the corresponding elements of the selected sections. 
+If any other function than OR is perfonned, this should be indicated by adding the appropriate 
+
+RAM 
+
+
+
+qualifying symbol below the general qualifying symbol, e.g. 
+
+
+
+&<) 
+
+
+
+If the label of an output of the array shown at a particular element of this general section indicates 
+that this output is an open-circuit output or a 3-state output, then this indication refers to the output 
+of the array and not to those of the sections of the array. 
+
+Inputs which are not affected by any affecting ADDRESS input have their nonnally defined 
+effect on all sections of the array whereas inputs affected by an ADDRESS input have their nonnally 
+defined effect only on the section selected by the ADDRESS input. 
+
+An affecting ADDRESS input is labelled with the letter A followed by an identifying number 
+which corresponds with the address of the particular section of the array selected by this input. 
+
+Within the general section presented by the symbol, inputs and outputs affected by an Aiii-input 
+are labelled with the^letter A, which stands for the identifying numbers, i.e. the addresses of the 
+particular sections^ This letter A is subject to the rules of dependency notation concerning 
+identifying numbers associated with affected inputs and outputs. 
+
+If an output affected by an Am-input also has other labels, then the labels preceding the letter A 
+affect the output of the section selected by this Am-input and the labels placed behind the letter A 
+affect the output of the array i.e. after the application of the OR function (or the indicated function) 
+to the corresponding outputs of the selected sections of the array. 
+
+Illustration 
+
+
+
+a — 
+
+
+A1 
+
+
+
+
+b — 
+
+
+A2 
+
+
+
+
+c — 
+
+
+A3 
+
+
+
+
+d — 
+
+
+a 
+
+
+
+
+
+
+s 
+
+
+r 
+
+
+e — 
+
+
+A,UD 
+
+
+A 
+
+
+9 
+
+
+
+
+
+EN1 
+EN2 
+EN3 
+C4 
+
+
+
+n ,. 
+
+
+
+
+IAD 
+
+
+1 
+
+
+>A 
+
+
+
+
+
+
+
+
+2,4 D 
+
+
+2 
+
+
+
+
+3.4D 
+
+
+3 
+
+
+n 
+
+
+1,40 
+
+
+1 
+
+
+>A 
+
+
+y 
+
+
+
+
+
+
+2,40 
+
+
+2 
+
+
+
+
+
+
+3,40 
+
+
+3 
+
+
+
+— h 
+
+
+
+39 
+
+
+
+IS 12032 (Part 12 ): 1994 
+lEC Pub 617-12 (1983) 
+
+23.2 The identifying numbers of affecting ADDRESS inputs correspond with the addresses of the 
+sections selected "by these inputs. They need not necessarily differ from those of other affecting 
+dependency-kiputs (e.g. G, V, N, ....) because in the general section presented by the symbol they 
+are replaced by the letter A. 
+
+If there are several sets of affecting Am-inputs for the purpose of independent and possibly 
+
+simultaneous access to sections of the array, then the letter A is modified to 1 A, 2A, Because 
+
+they have access to the same sections of the array, these sets of Am-inputs may have the same 
+identifying numbers. 
+
+Two affecting ADDRESS inputs having the same identifying number stand in no relation to 
+each other nor to any affecting dependency-input (e.g. Gm, Vm, Nm, ...) having the same identifying 
+number. 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-23-01 
+
+
+
+
+Am 
+
+
+Am-input 
+
+If this input stands at its internal 1-state, the inputs affected by 
+this input (i.e. the inputs of tlie section of the array selected by 
+this input) have their normally defined effect on the elements of 
+the selected section and the internal logic states of the outputs 
+affected by this input (i.e. the outputs of the selected section) 
+have their normal effect on the OR functions (or tlie indicated 
+functions determining the internal logic states of the outputs of 
+the array. 
+
+If the input stands at its internal 0-state, the inputs affected by 
+this input (i.e. the inputs of the section selected by this input) 
+have an effect on the elements of this section and the outputs 
+affected by this input (i.e. the outputs of the section selected by 
+this input) have no effect on the outputs of the array. 
+
+Tlie notes with Table 1 and symbols 12-14-01 and 12-14-02 apply 
+
+
+
+
+
+Illustrations 
+The use of the bit-grouping symbol is explained in Section 24. 
+
+
+
+— 3 
+
+
+
+>Ai 
+^'^ 15 
+
+
+
+CI 
+
+
+
+ZL 
+
+
+
+JI 
+
+
+
+A.1D 
+
+
+
+HA 
+
+
+
+Array of 16 sections, each of 4 pulse- 
+triggered D-bistables (see Section 41). 
+
+
+
+40 
+
+
+
+
+IS 12032 (Part 12) .1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+A particular section (among 8) is 
+selected if it is selected by both sets 
+of Am-inputs. 
+
+
+
+r 
+
+
+2 
+
+
+
+
+
+Ma| 
+
+
+
+>2A 
+
+
+
+
+
+
+
+2 
+C3 
+
+1A,3D/2A,3D 
+
+
+
+A particular section (among 8) is 
+selected if it is selected either by one 
+or by both sets of Am-inputs. 
+
+
+
+Suppose a = 1 
+
+
+
+AO 
+A1 
+A2 
+
+N3 
+
+
+
+3, A 
+
+
+
+The internal logic states of the i)ut- 
+puts of the array arc the results of the 
+OR functions of the complements of 
+the logic states of the outputs of the 
+selected sections. 
+
+
+
+41 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+DEC Pub 617-12 (1983) 
+
+Suppose a = 1 
+
+
+
+
+The internal logic states of the out- 
+puts of the array are the complements 
+of the results of the OR functions of 
+the logic states of the outputs of the 
+selected sections. 
+
+
+
+SECTION 24 - SPECIAL TECHNIQUES USED IN DEPENDENCY NOTATION 
+
+24.1 Use of a coder to produce affecting inputs 
+
+24.1 .1 If the effect of a set of affecting inputs is produced by decoding the signals on these inputs, the 
+symbol for a coder (12-32-01) may be used as an embedded symbol. 
+
+Illustration 
+
+
+
+
+24.1.2 If all affecting inputs produced by a coder are of the same type and if their identifying numbers 
+correspond with the numbers shown at the outputs of the coder, the Y in the qualifying symbol 
+XA' may be replaced by the letter denoting the type of dependency and the indications of the 
+affecting inputs should then be omitted. 
+
+Illustration 
+
+
+
+
+
+42 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+24.2 Use of bit grouping to produce affecting inputs 
+
+24.2.1 If all affecting inputs produced by a coder are of the same type and have consecutive identifying 
+numbers (not necessarily corresponding with the numbers that would have been shown at the 
+outputs of the coder), the bit grouping symbol (symbol 12-09-24) can be used. In this case, the 
+asterisk shall be replaced by the letter denoting the type of dependency followed by ^. The ml 
+shall be replaced by the smallest identifying number and the m2 shall be replaced by the largest. 
+The range of the identifying numbers (m2 - ml +1) must equal the number of outputs of the 
+coder. 
+
+
+
+Illustrations 
+
+
+
+m| 
+
+
+
+
+
+
+2 
+G8 
+
+
+
+8G 
+
+
+
+I 
+
+
+
+
+43 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+24.3 Designation of iabelled inputs having inherent storage 
+
+24.3.1 It often occurs that a labelled input other than a D-input has inherent storage. Such an input may 
+
+
+
+be labelled as: 
+
+
+
+inD,* 
+
+
+
+in which 
+
+- m shall be replaced by the identifying numbers of the inputs that affect the storage operation; 
+
+- the asterisk shall be replaced by the symbol denoting the function of the stored input. If that 
+symbol is a number, the comma following the D may be omitted. 
+
+Illustrations 
+
+
+
+CI 
+1D,M2 
+
+
+
+CI 
+ID 
+
+
+
+M2 
+
+
+
+CI 
+
+IDFN 
+
+
+
+
+
+^~ ^ ■^^ 
+
+
+■ 
+
+
+a — 
+b — 
+
+
+>C1 
+ID 
+
+
+EN 
+
+
+
+
+1 
+
+
+
+
+
+
+C8 
+C9 
+
+
+
+8D0/9D3 
+8D1/9D^ 
+8D2/9D5 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C8 
+C9 
+
+
+
+
+h 
+
+
+
+
+
+
+
+
+r 
+
+
+8D 
+
+
+
+1 
+2 
+3 
+
+5 
+
+
+
+
+
+
+
+
+
+
+- rl 
+
+
+80 
+
+
+
+
+
+
+
+
+
+
+
+
+f ...— , 
+
+
+8D 
+
+
+
+
+
+
+
+
+
+
+_ 
+
+
+1* 
+
+
+
+
+9D 
+
+
+i 
+
+
+
+
+9D 
+
+
+
+
+
+
+
+
+9D 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sec also Section 25. 
+
+
+
+63 
+
+
+
+SECTION 25 - THE ORDERING OF LABELS ASSOCIATED WITH INPUTS 
+
+AND WITH OUTPUTS 
+
+25. 1 Order of input labels 
+
+25.1 .1 If an input exerting a single function is affected, by other inputs the qualifying symbol for lliat 
+function shall be preceded by the labels corresponding to the affecting inpuls. Tlie Icfl-lo-righl 
+order of these preceding labels shall be the order in which the effects or modifications niiisl be 
+applied. The affected input fxcrfs no function if the logic slate of any one of the affccling inpuls 
+or oulputs, coiLsidcred separately , would cause Ihe affcded input lo have no cffccl, regardless 
+of the logic stales of other affecting inputs. 
+
+
+
+44 
+
+
+
+IS 12032 (Part 12) .1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+Illustration 
+
+
+
+a — 
+
+
+EM 
+
+
+
+
+b 
+
+
+C2 
+
+
+
+
+c — 
+
+
+1,2D 
+
+
+
+
+
+
+
+
+
+
+
+
+If either a = or b = 0, then c has no 
+effect. 
+
+
+
+25.1.2 If an input exerts more than one function or has more than one set of labels of affecting inputs, 
+the indications of these functions or these sets may be shown on different input lines, which 
+must be connected together outside the outline (see examples 12-33-07, 12-49-11, 12-49-15). 
+However, there are cases in which this method of presentation is not advantageous. In those cases, 
+the input may be shown once with the different sets of labels separated by solidi. No meaning 
+is attached to the order of these sets of labels. If one of the functional effects of an input is that 
+of an unlabelled input of the element, a solidus shall precede the first set of labels shown (see 
+e.g. symbol 12-49-13). 
+
+Illustrations 
+
+
+
+/G1 
+
+
+
+Gl 
+
+
+
+a — 
+
+
+G2 
+
+
+b — 
+
+
+2/C1 
+
+
+a — 
+
+
+Ml 
+
+
+b — 
+
+
+G2 
+
+
+c — 
+
+
+TR/1,2R 
+
+
+
+CI 
+
+
+
+Ml 
+G2 
+TR 
+1,2R 
+
+
+
+25.1 .3 If all inputs of a combinative element are disabled (caused to have no effect on the function on 
+the element), the internal logicstates of the outputs of the element are not specified by the symbol. 
+
+If all inputs of a sequential element are disabled (caused to have no effect on the function 
+of the element), the content of this element is not changed and the outputs remain at their existing 
+internal logic states. 
+
+25.1 .4 Labels may be factored using algebraic techniques. 
+
+Illustrations 
+
+
+
+1/2)D 
+
+
+
+— 1D/2D 
+
+
+
+>1,2,3,M5 + /6-) 
+
+
+
+— :> 1,2,3,^,5W1,2,3A,6- 
+
+
+
+45 
+
+
+
+IS 12032 { Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+25.1.5 If, at inputs without inherent storage, algebraic factoring techniques are combined with the use 
+of the bit grouping symbol, labels common to all inputs may be shown behind the bit grouping 
+symbol provided the proper order of all labels is maintained. 
+
+Illustrations 
+
+
+
+
+
+
+
+
+
+
+___ ^__ __ 
+
+
+- __ 
+
+
+■^ — 
+
+
+
+
+
+X/Y 
+
+
+
+
+G4 
+
+
+
+
+
+
+QU 
+
+
+O-' 
+
+
+-MO 
+
+
+
+
+
+
+
+
+4,1 
+
+
+1- 
+
+
+-Ml 
+
+
+^2 1 
+
+
+>4 ■ 
+
+
+
+
+4,2 
+
+
+2--M2 
+3--M3 
+
+
+
+G^ 
+
+
+
+
+
+25.1.6 If, at inputs having inherent storage, algebraic factoring techniques are combined with the use 
+of the bit grouping symbol, the indication "mD,", as defined in Clause 24.3, may also be placed 
+behind the bit grouping symbol provided the proper order of all other labels is maintained. 
+
+Illustration 
+
+
+
+C8 
+
+
+
+2 
+
+
+
+^8D,A 
+
+
+
+
+
+
+
+C8 
+
+8D0 
+
+8D2 
+
+
+
+^Af 
+
+
+
+
+
+■ 
+
+
+' — ' 
+
+
+— ■^~- 
+
+
+Q 
+
+
+C8 
+
+
+\ 
+
+
+b — 
+
+
+BD 
+
+
+
+2 
+
+
+
+
+c — 
+
+
+BD 
+
+
+U- 
+
+
+d — 
+
+
+8D 
+
+
+
+
+
+
+
+
+
+
+
+
+25.2 Orderof output labels 
+
+25.2.1 If an output has a numberof different labels, regardless of whether they are identifying numbers 
+of affecting inputs or outputs or not, these labels shall be shown in the following order: 
+
+- if the postponed output symbol (12-09-01) has to be shown, this comes first, if necessary 
+preceded by the indications of the inputs to which it must be applied; 
+
+- followed by the qualifying symbols detemiining or modifying the internal logic state of the 
+output, such that the left-to-right order of these labels correspond with the order in which their 
+effects must be applied for application, see symbol 12-49-15; 
+
+- followed by the label indicating the effect of the output on inputs and other outputs of the 
+element. 
+
+Symbols for open-circuit, passive-pull-down, passive-pull-up, or 3-state outputs shall be drawn 
+adjacent to the output line, except when using the bit grouping symbol as described in Sub-clause 
+
+25.2.3^ 
+
+If an output needs several different sets of labels which can be considered to stand in an 
+
+
+
+46 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+internal OR relationship (e.g. depending on the mode of actiori), these sets may be shown on 
+different output lines which must be coimected together outside the outline. However, there are 
+cases in which this method of presentation is not advantageous. In those cases the output may 
+be shown once with the different sets of labels separated by solidi. 
+
+TWo adjacent identifying numbers of affecting inputs in a set of labels not already separated 
+by a non-numeric character should be separated by comma (see Section 12). 
+
+Hlustratiofis 
+
+
+
+1/2 
+
+
+
+— Ml 
+
+
+
+1 CT=9/1CT=15 
+
+
+
+^ 
+
+
+
+Ml 
+
+
+
+1-- >A 
+2-- 
+
+
+
+1CT=9 
+1CT=15 
+
+
+
+Ml 
+
+
+
+1CT=9/1CT=15 
+
+
+
+n — Ml 
+
+
+
+1CT: 
+
+
+
+1CT=9 p — j b 
+
+-15 — ' 
+
+
+
+25.2.2 Labels may also be factored using algebraic techniques. 
+
+Illustrations 
+
+
+
+(1/2) 3 
+
+
+
+1,3/2,3 
+
+
+
+1,2,3,4(5CT=9/5CT=0) — 
+
+
+
+1,2,3,i,5CT=9/1,2,3,4,5CT=0 
+
+
+
+25.2.3 U (he bit grouping symbol lor outputs (symbol 12-09-25) is used and the sets of labels of all 
+outputs grouped together differ only in the indications of the weights, the sets of labels, including 
+the symbols for open-circuit, passive-pull-down, passive-pull-up or 3-state outputs (symbols 
+12-09-03 through 12-09-08) but excluding the indications of the weights, may be shown only 
+once between the symbol replacing the asterisk and the grouping symbol, provided that, except 
+for the grouping symbol and the weights, the proper order of the labels is maintained. 
+
+Illustration 
+For the meaning of 2, see symbol 1 2-38-01 . 
+
+
+
+Q 
+
+
+N3 
+
+
+
+
+
+
+
+— c 
+
+
+a — 
+
+
+N3 
+
+
+
+
+' 0,3,4 V 
+
+
+c 
+
+
+b — 
+
+
+ENi. 
+
+
+1 3,iV< 
+
+
+1 
+2 
+
+
+— d E 
+
+— e 
+
+
+E b — 
+
+
+EN4 
+
+
+I < 
+
+
+1,3,4 V 
+2,3A V 
+
+
+' — d 
+
+1 — e 
+
+
+
+47 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617-12^1983) 
+
+CHAPTER V : COMBINATIVE AND SEQUENTIAL ELEMENTS 
+
+SECTION 26 - GENERAL NOTES 
+
+All qualifying symbols inside the outline are defined in tcnns of the internal logic stales of the 
+relevant inputs and outputs (see Sections 1, 2 and 3), 
+
+Many of the following examples are based on commercially available devices. Where the polarity 
+indicator has not been used, the positive logic convention is assumed. 
+
+For the assistance of the reader pin numbers and type numbers have been shown. Where the type 
+number implies the product of a specific manufacturer, this is done to avoid uncertainties caused 
+by functional variations that sometimes occur between devices with the same type number made 
+by different manufacturers. 
+
+A given element may be symbolized in more than one way depending on the purpose it serves 
+in the system (e.g. symbols 12-28-10 and 12-28-11). Also, use is often made of the complemen- 
+tary representation especially of combinative elements to enhance the understanding of the diagram, 
+for example an OR element is shown by the symbol for an AND but with negated inputs and outputs. 
+In any case, the choice of the symbol should be governed by the relevant application of the element 
+being shown on the diagram (see TEC publication 1 1 3-7 for detailed infonnalion). 
+
+SECTION 27 - COMBINATIVE ELEMENTS 
+
+Convention 
+
+The qualifying symbol for the functionof the element indicates thenumberof inputs which must 
+take on the internal 1-state to cause the outputs to take on their internal 1 -stales. Subject to this 
+rule, other qualifying symbols than those shown in this section may be developed. 
+
+
+
+26.1 
+
+
+
+26.2 
+
+
+
+26.3 
+
+
+
+26.4 
+
+
+
+27.1 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-27-01 
+
+
+
+
+
+
+
+
+OR eiement, general symlxii 
+
+The output stands at its I-state if and only if one or more ot the 
+input stand at their 1-states. 
+
+Note. - "a 1" maay be replaced by "1" if no anihiguily arises. 
+
+
+1 
+
+1 
+1 
+
+
+>1 
+
+
+
+
+
+
+
+
+
+
+12-27-02 
+
+
+
+
+
+
+
+
+AND element, general symbol 
+
+The output stands at its 1-slnte if and only if all inputs stand at 
+their 1-states, 
+
+
+1 
+
+1 
+1 
+
+
+& 
+
+
+
+
+
+
+
+
+
+
+12-27-03 
+
+
+
+
+
+
+
+
+Logic threshold element, general symlx>l 
+
+Theoulput stands at its 1-state if and only if the number of inputs 
+which stjind at their 1 -slates is equal to or greater than the number 
+in the (|ualifying symbol, represented here by ni. 
+
+Notes 1. - mshallalways liesmallerthan the nuni!x;rof inputs 
+
+2. - An element with ni=l is generally known as OR 
+clement (see symbol 12-27^01), 
+
+
+1 
+1 
+1 
+
+
+>m 
+
+
+
+
+
+
+
+
+
+
+
+48 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+Symlx)l 
+
+
+Description 
+
+
+12-27-04 
+
+
+
+
+
+
+
+
+m and only m element, general symbol 
+
+The output stands at its 1-state if and only if the number of inputs 
+which stand at their 1-states is equal to the number in the 
+qualifying symbol, represented here by m. 
+
+Note 1 with symbol 12-27-03 applies. 
+
+Note. - A 2-input element with m = 1 is generally known as an 
+exclusive-OR element (see symbol 12-27-09). 
+
+
+1 
+1 
+
+1 
+
+
+= m 
+
+
+
+
+
+
+
+
+
+
+12-27-05 
+
+
+
+
+
+
+
+
+Majority element, general symbol 
+
+The output stands at its 1-state if and only if the majority of the 
+inputs stand at their 1-states. 
+
+
+1 
+
+1 
+
+1 
+
+
+>n/2 
+
+
+
+
+
+
+
+
+
+
+12-27-06 
+
+
+
+
+
+
+
+
+LOGIC IDENTITY element, general symlw! 
+
+The output stands at its 1-state if and only if all inputs stand at 
+the same logic state. 
+
+
+1 
+1 
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+12-27-07 
+
+
+
+
+
+
+
+
+ODD clement (ODD-partty element) ] 
+
+t general syniixil 
+Addition modulo 2 element f 
+
+Ttie output stands at its 1-state if and only if the number of inputs 
+which stand at their 1-states is odd (1, 3, 5 etc). 
+
+
+1 
+1 
+
+1 
+
+
+2k*1 
+
+
+
+
+
+
+
+
+
+
+12-27-aS 
+
+
+
+
+
+
+
+
+EVEN element (EVEN parity element), general symbol 
+
+The output stands at its 1-stateif and only if the number of inputs 
+which stand at their 1 -stales is even (0, 2, 4, etc). 
+
+
+1 
+1 
+
+1 
+
+
+2k 
+
+
+
+
+
+
+
+
+
+
+12-27-0^ 
+
+
+
+
+
+
+
+
+I".xclusive-OR element 
+
+The output stands at its 1-state if one and only one of the two 
+inputs stands at its 1-slalc. 
+
+Note. - In ihe case of more than iwo inputs, either symbol 12-27- 
+04 with m = I orsyniliol 12-27-07 shall be used depending 
+on Ihc function involved. 
+
+
+
+
+= 1 
+
+
+
+
+
+
+
+
+
+
+
+49 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617-12 ( 19H3 ) 
+
+
+
+No. 
+
+
+Symlwl 
+
+
+Description 
+
+
+12-27-10 
+
+
+
+
+
+
+
+
+Buffer without specially amplified output 
+
+The output stands at its 1 -state if and only if the input stand at its 
+1 -state. 
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+12-27-11 
+
+
+
+
+
+
+
+
+Negator 
+
+Inverter (in the case of device representatioi) using the logic 
+negation symbol). 
+
+Tlie output stands at its external 0-state if and only if the input 
+stands at its external 1 -state. 
+
+
+
+
+1 
+
+
+1^ 
+
+
+\J 
+
+
+
+
+
+
+
+
+12-27-12 
+
+
+
+
+
+
+
+
+Inverter (in the case of device representation using llie qualifying 
+.symbol for logic polarity). 
+
+The output stands at its L-levcl if and only if the input stands at 
+its H-level. 
+
+
+
+
+1 
+
+
+\ 
+
+
+
+
+
+
+
+
+
+
+12-27-13 
+
+
+
+
+
+
+
+
+Distributed connection 1 
+
+Dot function > general symbol 
+
+Wired function j 
+
+A distributed connection is a connection of .specific output.s of a 
+numlxir of elements which are joined together to achieve either 
+the AND- of the OR- function. 
+
+Note. - 'ITie asterisk shall be replaced by the qualifying symlx)l for 
+the function, i.e. & or fe 1. 
+
+As an alternative to the use of the general symlxil. a distributed 
+connection may be shovVn by one of the symlxils for a junction 
+of conduclors (03-02-04 and 03-02-05). At each point where 
+lines are joined together the qualifying symlxil for the function, 
+i.e. & or 2 1, shall be shown unless no confusion can arise from 
+its omission. 
+
+
+1 
+1 
+1 
+
+
+« o 
+
+
+
+
+
+
+
+
+
+
+
+SECTION 28 - EXAMPLES OF COMBINATIVE ELEMENTS 
+
+
+
+No. 
+
+
+Symlxil 
+
+
+Description 
+
+
+12-28-01 
+
+
+
+
+
+
+
+
+AND with negated output (NAND) 
+(e.g. part of SN 7410) 
+
+
+1 
+2 
+13 
+
+
+& 
+
+
+:>-^ 
+
+
+
+
+
+
+
+
+12-28-02 
+
+
+
+
+
+
+
+
+OR with negated output (NOR) 
+(e.g. part of SN 7427) 
+
+
+3 
+U 
+5 
+
+
+>1 
+
+
+>-^ 
+
+
+
+
+
+
+
+
+
+
+
+50 
+
+
+
+No. 
+
+
+
+12-28-03 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+& 
+
+
+>1 
+
+
+N 6 
+
+
+
+
+
+
+
+
+
+AND-OR-Invert 
+
+(e.g. partofSN74L51) 
+
+
+
+12-28-04 
+
+
+
+
+NAND with open-circuit output of tiie L-type 
+(e.g. part of SN 7403) 
+
+
+
+12-28-05 
+
+
+
+
+
+U 
+
+
+>1 
+
+
+& 
+
+
+
+
+5 
+
+
+
+
+
+
+
+
+6 
+
+
+
+
+
+
+
+
+7 
+
+
+
+
+
+
+
+
+9 
+
+
+
+
+O 
+
+
+2 
+
+
+10 
+
+
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+^ 
+
+
+N 3 
+
+
+12 
+
+
+
+
+13 
+
+
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+
+
+
+
+15 
+
+
+
+
+
+
+
+
+
+OR-AND with complementary open-circuit outputs of the 
+H-type 
+
+(e.g. MC 10121) 
+
+
+
+12-28-06 
+
+
+
+1 
+
+
+& 
+
+
+>1 
+
+
+
+
+13 
+
+
+
+
+
+
+N 8 
+
+
+9 
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+E 
+
+
+
+
+
+
+12 IN 
+
+
+
+
+
+
+
+
+
+AND-OR-Invert, expandable 
+
+(e.g. part of SN 7450) 
+
+Note. - The line grouping symbol (12-09-47) indicates that 
+two wires are needed to implement the single extension 
+connection. 
+
+
+
+12-28-07 
+
+
+
+13 
+1 
+
+
+E 
+
+
+11 
+
+
+2 
+
+
+N 12 
+
+
+3 
+
+
+
+
+
+Expander 
+
+(e.g. part of SN 7460) 
+
+
+
+51 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+
+12-28-08 
+
+
+
+Syip 
+
+
+
+liol 
+
+
+
+22 
+
+
+
+>1 -^ 
+
+
+
+17 
+J_ 
+
+
+
+ZL 
+
+
+
+D- 
+
+
+
+16 
+
+
+
+15 
+
+
+
+13 
+
+
+
+K 
+
+
+
+12 
+
+
+
+0- 
+
+
+
+Description 
+
+
+
+OR, with one common input and with compiementary outputs, 
+
+quint 
+
+(e.g. F 100102) 
+
+
+
+12-28-09 
+
+
+
+i5L -'^ 
+
+
+
+17. 
+18 
+19_ 
+20. 
+
+IL 
+23. 
+
+Ik. 
+
+J_ 
+
+i_ 
+
+3 
+
+
+
+>^ 
+
+
+
+16 
+
+
+
+Exclusive- OR, with complementary outputs and one common 
+output, quint 
+
+(e.g. E 100107) 
+
+Note, - One output of each of the five elements is internally 
+connected to an input of the common output element. Ttie 
+internal logic state of this input corresponds with that of 
+the output to which it is connected and does not depend on 
+the choice of that output because both outputs of each 
+element have identical internal logic states (see Section 6). 
+
+
+
+12-28-10 
+
+
+
+
+Exclusive- OR/NOR, dual 
+
+(e.g. partofSN74SI35) 
+
+Note. - Attention is drawn to the fact thai symbol 12-2H-11 depicts 
+the same device in another way. 
+
+
+
+12-28-11 
+
+
+
+4 
+
+
+1 
+2 
+
+
+2k*1 
+
+
+
+
+5 
+6 
+
+
+
+
+
+
+
+ODD element, with one common input, dual 
+
+(e.g. partofSN74S135) 
+
+Note. - Attention isdrawnto thefactthaisymbol 12-28-lOdepicis 
+the same device in another way. 
+
+
+
+52 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-28-12 
+
+
+8 
+
+
+
+
+
+
+Parity generator/checker with complementary outputs (e.g. 
+74280) 
+
+
+SN 
+
+
+2k 
+
+
+
+
+
+
+9 
+
+
+
+
+
+
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+5 
+
+
+
+
+
+
+
+
+12 
+
+
+
+
+
+
+
+
+
+
+
+
+13 
+
+
+
+
+N 6 
+
+
+
+
+
+
+
+
+1 
+2 
+
+
+
+
+
+
+
+
+
+
+
+
+U 
+
+
+
+
+
+
+
+
+
+
+12-28-13 
+
+
+
+
+Error detection/correction element 
+(e.g. MC 10163) 
+
+
+
+
+
+
+
+
+« 
+
+
+2k*1 
+
+
+
+
+
+
+
+
+
+
+
+
+1- 
+2- 
+
+
+- ^ 
+
+
+15 
+
+
+
+
+
+
+
+
+
+
+
+
+4- 
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5- 
+3- 
+4- 
+
+
+- 
+
+
+3 
+
+
+
+
+
+
+- 
+
+
+
+
+1 
+
+
+Z1 
+
+
+5- 
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+6 
+
+12 
+11 
+
+
+Z2 
+Z3 
+
+
+6- 
+5- 
+
+6- 
+
+
+- 
+
+
+2 
+
+
+- 
+
+
+
+
+. 
+
+
+
+
+I* 
+
+
+Z5 
+
+
+7- 
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+5 
+9 
+10 
+
+
+Z6 
+Z7 
+Z8 
+
+
+8- 
+1- 
+
+4- 
+
+
+- 
+
+
+14 
+
+
+
+
+
+
+„ 
+
+
+
+
+
+
+
+
+6- 
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8- 
+3- 
+4- 
+
+
+- 
+
+
+13 
+
+
+
+
+
+
+: 
+
+
+
+
+
+
+
+
+6- 
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8- 
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+63 
+
+
+
+IS 12032 ( Part tZ ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+
+12-28-14 
+
+
+
+Symbol 
+
+
+
+k 
+
+
+G4I0DD1 
+
+
+
+
+3 
+
+
+G3IEVEN1 
+
+
+
+
+8 
+
+
+2k 
+
+
+= 
+
+
+
+
+9 
+
+
+
+
+■t* 
+
+
+
+
+10 
+11 
+
+
+< 
+
+
+>3 
+
+[EVEN! 
+
+
+5 
+
+
+12 
+13 
+
+
+-3 
+
+
+
+
+1 
+2 
+
+
+64 
+
+[ODD! 
+
+
+6 
+
+
+L^ 
+
+
+C2 
+
+
+
+
+1 
+
+
+N3 
+
+h r 
+
+
+
+
+
+
+
+
+-> 
+
+
+1 
+
+2 3 
+
+
+'V^ 
+
+
+5 
+
+
+
+
+y-^ 
+
+
+10 
+
+
+
+
+>-i- 
+
+
+
+
+\i 
+
+
+
+
+D- 
+
+
+u 
+
+
+
+Description 
+
+
+
+Parity generator/checker, odd/even 
+(e.g. SN 74180) 
+
+
+
+12-28-15 
+
+
+
+True/complement, zero/one element, quad 
+(e.g. SN 74H87) 
+
+
+
+SECTION 29 - EXAMPLES OF BUFFERS, DRIVERS AND RECEIVERS 
+
+29.1 The symbol for an amplifier (10-15-01) may be combined with other symbols for functions, as 
+shown in this section. 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-29-01 
+
+
+J_ 
+
+
+
+
+
+
+Buffer/driver with inverted open-circuit output of the L-type 
+(e.g. part of SN 7406) 
+
+
+
+
+^ 2 
+
+
+
+
+
+
+
+
+12-09-02 
+
+
+1 
+2 
+
+
+
+
+
+
+NAND buffer 
+
+(e.g. part of SN 7437) 
+
+
+&E> 
+
+
+O^ 
+
+
+
+
+
+
+
+54 
+
+
+
+IS 12032 ( Part 12 ): 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No, 
+
+
+
+Symlx)! 
+
+
+
+Description 
+
+
+
+12-29-03 
+
+
+
+12_J^ 
+
+
+
+!^RTX] 
+
+
+
+EN2 
+
+
+
+4 
+
+
+> 
+
+
+2^ 
+
+
+\ 
+
+
+2 
+
+
+
+
+^ 
+
+
+
+
+3 ^ 
+
+
+1 
+
+
+
+
+V 
+
+
+\ 
+
+
+
+
+5 
+
+
+
+
+7 
+
+
+^ c 
+
+
+^ 
+
+
+
+
+c 
+
+
+\ 
+
+
+
+
+11 
+
+
+
+
+9 
+
+
+^^ c 
+
+
+/I 
+
+
+
+
+V. ' 
+
+
+\ 
+
+
+
+
+13 
+
+
+
+
+15 
+
+
+^^^ 
+
+
+^ 
+
+
+
+
+<. 
+
+
+
+
+
+
+
+Bus transceiver, quad 
+(e.g.Am26S10) '' 
+
+Note. - The general qualifying symbols and those associated with 
+the inputs and outputs of the two outlines forming the first 
+element of the array have been omitted from the remaining 
+elementsof the array in accordance with Section 6. 
+
+
+
+12-29-04 
+
+
+
+C JTEN 
+
+
+
+Bus driver with bi-threshold inputs and 3-state outputs, quad 
+(e.g. partofSN74S240) 
+
+
+
+JT > 
+
+
+
+16 
+
+
+
+
+
+
+U 
+
+
+
+12 
+
+
+
+12-29-05 
+
+
+
+12 r^ 
+
+
+G1 
+
+EN 
+
+h 
+
+
+r 
+
+
+
+
+^ rs 
+
+
+
+
+
+
+5 
+
+
+3 |\ 
+
+
+1 > 
+
+
+V 
+
+
+
+
+
+
+6 1^ 
+
+
+
+
+7 
+
+
+
+
+
+
+1 r\ 
+
+
+
+
+2 
+
+
+
+
+9 
+
+
+10 [N^ 
+
+
+
+
+
+
+
+
+13 rv^ 
+
+
+
+
+11 
+
+
+
+
+
+
+15 r^ 
+
+
+
+
+K 
+
+
+
+
+
+
+
+Buffer, inverting, with 3-state outputs, hex 
+(e.g. CD 4502B) 
+
+
+
+55 
+
+
+
+IS 12032 { Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+No. 
+
+
+
+12-2'^-06 
+
+
+
+12-29-07 
+
+
+
+12-2'J-08 
+
+
+
+Symlxil 
+
+
+
+15 
+
+
+
+C|EN2 
+EN3 
+
+D 
+
+
+
+IZ 
+
+
+
+-ec 
+
+
+
+-<rC 
+
+
+
+10 
+
+
+
+■«: 
+
+
+
+13 
+
+
+
+-«: 
+
+
+
+V2,3 
+
+
+
+2,1 V 
+
+
+
+11 
+
+
+
+.12 
+
+
+
+K 
+
+
+
+G1 
+
+n 
+
+
+
+C 
+
+
+
+2 
+
+
+G2 
+
+
+> 
+
+
+1,2 
+
+
+
+
+1 IN 
+
+
+N ^ 
+
+
+5 
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+
+
+12 IN 
+
+
+N 9 
+
+
+8 
+
+
+
+
+
+
+
+
+
+11 
+
+
+
+[8RTX1 
+
+
+
+— 0G1 
+-I— 1EN2 
+•-C 1EN3 
+
+b 
+
+
+
+< > 
+
+< > 
+
+< > 
+
+< > 
+
+
+
+JZ 
+
+
+
+2V 
+
+
+
+V3 
+
+
+
+— e 
+
+
+
+Description 
+
+
+
+Bus driver, hidirectional, quad 
+(e.g. 8226) 
+
+Note. - Pin 1 couldbe labelledasen EN-input(symbol 12-09-11) 
+without dependency notation, that is, the identify ing num- 
+ber 2 may be omitted at three places inside the outline. 
+
+
+
+Line receiver, dual 
+(e.g. SN 75107) 
+
+
+
+19 
+
+
+
+
+
+
+1?. 
+li 
+
+Ik 
+
+12 
+
+
+
+Bas driver, bidirectional, 8-bit parallel 
+(e.g. 8286) 
+
+
+
+56 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+SECTION 30 - ELEMENTS WITH HYSTERESIS 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Descrif^tion 
+
+
+
+12-30-01 
+
+
+
+
+Elemeot with hysteresis, general symbol 
+
+When used within an element as a general qualifying symbol, the 
+hysteresis symboI,jr, designates an element whose overall 
+input/output characteristics include hysteresis as described by 
+symbol 12-09-02, TTie asterisk must be replaced by a general 
+qualifying symbol designating the logic function of the element 
+unless that qualifying symbol is the numeral 1 (of symbol 12-27- 
+10) in which case it shall be omitted. 
+
+
+
+SECTION 31 - EXAMPLES OF ELEMENTS WITH HYSTERESIS 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-31-01 
+
+
+
+
+Bi-threshoid detector with inverted output 
+Sch mitt-trigger inverter 
+Inverter with hysteresis 
+(e.g. partofSN74LSI4) 
+
+Note. - In accordance with the description of symbol 12-09-02, 
+symbol 12-31-01 is equivalent to: 
+
+
+
+
+12-31-02 
+
+
+
+
+NAND Schmitt-trigger 
+NAND with hysteresis 
+(e.g. part of SN 74132) 
+
+The output takes on its internal 1-state only when the external 
+level applied to each input reaches its VI threshold (see descrip- 
+tion of symbol 12-09-02). TTie output will maintain the internal 
+1 -state until the external level applied to one of its inputs reaches 
+its V2 threshold. 
+
+Note. - This symbol is not equivalent to: 
+
+
+
+
+57 
+
+
+
+IS 12032 (Part 12): 1994 
+EEC Pub 617-12 ( 1983 ) 
+
+
+
+SECTION 32 - CODERS, CODE CONVERTERS 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-32-01 
+
+
+
+
+
+
+
+
+Coder, general symbol 
+
+Coiie converter, general symbol 
+
+Note. - X and Y may be replaced by appropriate indications of the 
+code used to represent the information at the inputs and at 
+the outputs respectively. 
+
+
+1 
+
+1 
+1 
+
+
+X/Y 
+
+
+1 
+1 
+
+1 
+
+
+
+
+
+
+
+
+
+32.1 Relation between inputs and outputs of coders 
+
+32.1.1 Indication of code conversion is based on the following rule: 
+
+- Depending on the input code the internal logic states of the inputs detennine an internal 
+number. This internal number is reproduced by the internal logic states of the outputs, 
+depending on the output code. 
+
+The relationship between the internal logic states of the inputs and the internal number is 
+indicated either by: 
+- labelling the inputs with numbers, in which case the internal number equals the sum of the 
+numbers associated with those inputs which stand at their internal 1 -states; 
+
+
+
+or by: 
+
+
+
+or by: 
+
+
+
+- replacing X by a appropriate designation of the input code and labelling the inputs with 
+characters which refer to this code. 
+
+The relationships between the internal number and the internal logic states of the outputs are 
+indicated either by: 
+
+labelling each output with a list of those internal numbers which lead to the internal 1 -state of 
+that output. These internal numbers shall be separated by solidi. This labelling may also be 
+applied when Y is replaced by a letter denoting a type of dependency (see also Section 24). If 
+a continuous range of internal numbers produces the internal 1 -state of an output, this can be 
+indicated by two numbers that are inclusively the beginning and the end of the range, with 
+these two numbers separated by three dots, for example: 
+
+4 ... 9 = 4/5/6/7/8/9 
+
+
+
+replacing Y by an appropriate\'ndication of the output code and labelling the outputs with 
+characters which refer to this code. 
+
+
+
+Illustrations 
+
+
+
+
+Output d stands at its internal 1 -state for the following combina- 
+tions of internal logic states at inputs a, b and c: 
+
+
+
+a= 1 
+a = 
+
+
+
+b=0 c=0 
+b = (J c = 1 
+
+
+
+58 
+
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub <17-I2 (1983) 
+
+
+
+Output h stands at its internal 1-state for the following 
+combination of internal logic states at inputs a, b and c: 
+
+
+
+a=l b = G c=l 
+
+
+
+
+Output i stands at its internal 1-state for the following combina- 
+tions of internal logic states at inputs a, b, c and d: 
+
+8=0 b=0 c=0d= 1 
+a= 1 b = c = 0d= 1 
+
+
+
+If input j stands at its internal 1 -state, outputs k and n stand at their 
+internal 1 -states. 
+
+
+
+32.1.2 Alternatively, the general symbol may be used together with an appropriate reference to a table 
+in which the relationship between the inputs and outputs is indicated. The correspondence 
+between inputs [outputs] and the columns in the table may be given in any convenient way, for 
+example by using pin numbers. In this case any internal labelling which might be confused with 
+that arising in one of the other methods must be avoided. 
+
+
+
+Tl 
+
+
+
+3 
+
+
+X/ Y 
+[Tl] 
+
+
+10 
+11 
+12 
+
+
+
+] 
+
+
+Inputs 
+
+2 3 
+
+
+Outputs 
+10 11 12 
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+
+1 
+
+
+
+
+
+
+1 
+
+
+
+
+
+1 
+
+
+
+
+1 
+
+
+1 
+G 
+
+
+1 
+
+
+
+
+
+
+
+
+1 
+1 
+1 
+
+
+
+1 
+1 
+
+
+1 
+
+
+
+1 
+
+
+
+1 
+
+
+
+
+59 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+SECTION 33 - EXAMPLES OF CODE CONVERTERS 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-33-01 
+
+
+
+
+
+X/Y 
+
+[EX 3 GRAY/DEC] 
+2 
+
+6 
+
+7 
+
+1 5 
+
+2 4 
+4 12 
+8 13 
+
+15 
+14 
+10 
+
+
+N 1 
+
+
+
+
+N 2 
+
+
+
+
+\ 3 
+
+
+15 
+
+
+\ 4 
+
+
+14 
+
+
+N 5 
+
+
+13 
+
+
+N 6 
+
+
+12 
+
+
+N 7 
+
+
+
+
+N 9 
+
+
+
+
+N 10 
+
+
+
+
+N 11 
+
+
+
+
+
+
+
+Code converter, cxces.s-3 Gray-to-decinial 
+(e.g. SN 7444) 
+
+Note. - Because it is not possible lo 
+label the inputs with characters 
+referring to the excess-3-(jray 
+code, the^eneral symbol for a 
+coder is shown here in accord- 
+ance with the first alternative of 
+the second and the third para- 
+graphs of Sub-clause 32 . 1 . 1 . 
+
+
+
+12-33-02 
+
+
+
+
+Code converter, BCD-to-decimal 
+(e.g. SN7442) 
+
+
+
+12-33-03 
+
+
+
+1 
+
+
+
+
+1 
+
+2 
+
+
+2 
+
+
+3 
+
+
+
+
+6 
+
+
+& 
+
+
+5 rs 
+
+
+'►rs 
+
+
+
+BIN/OCT 
+
+
+
+EN 
+
+
+
+\ 
+
+
+15 
+
+
+N 1^ 
+
+
+N 
+
+
+13 
+
+
+N 
+
+
+12 
+
+
+N 
+
+
+11 
+
+
+N 
+
+
+10 
+
+
+N 
+
+
+9 
+
+
+X 
+
+
+7 
+
+
+
+Code cotiverter, tliree-to-eight-iine 
+(e.g.SN74LS138) 
+
+Note. - Attention is drawn to the fact that 
+symbol 12-37-04 depicts the same 
+device in another way. 
+
+
+
+60 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+EEC Pub 617-12 (1983) 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-33-04 
+
+
+
+
+Highest priority encoder, enaiding "^ data 
+lines to 4-line BCD 
+(e.g. SN 74147) 
+
+
+
+12-33-05 
+
+
+
+
+Highest priority encoder, encoding 8 data 
+lines to 3-line binary (octal) 
+(e.g. SN 74148) 
+
+
+
+12-33-06 
+
+
+
+
+
+
+
+BIN/7 SEG [> 
+IT11 
+
+
+CI 
+
+Ck 
+Q 
+
+
+
+
+4 rv. 
+
+
+^ 
+
+
+
+
+
+
+
+
+
+
+>1 
+
+
+
+
+
+
+5 N. 
+
+
+& 
+
+
+(Sr,?i 
+
+
+
+
+3 
+
+
+
+
+
+
+
+
+
+
+IV 
+
+
+
+
+
+
+C" 
+V20 
+1 
+2 
+
+8 
+
+
+r.o{_ 
+
+
+■>^ 13 
+
+
+
+
+
+
+-irt 01 
+
+
+
+
+7 
+
+
+Q HI, 1. 1 
+
+b 20, 21 
+c 20, 21 
+
+d 20, 21 
+e 20, 21 
+f 20, 21 
+
+
+N 12 
+
+
+1 
+
+
+S 11 
+
+
+? 
+
+
+N 10 
+
+
+6 
+
+
+N 9 
+
+
+
+
+N 15 
+
+
+
+
+N I'* 
+
+
+
+
+
+
+y 
+
+
+iU, C 1 
+
+
+
+
+
+Decoder/driver, BCD-to-seven-segment 
+
+(e.g. SN 74U7) 
+
+Note. - This example shows Ihc use of Ihe 
+polarity indicator at external con- 
+nections together with the use of 
+the negation indicator at internal 
+connections (sec Section 7). 
+
+Font Table Tl: 
+
+
+
+1 1 
+
+
+i| 
+
+
+t 
+
+
+1 
+
+
+1 1 
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+IJ 
+
+
+1 
+
+
+i_ 
+
+
+_i 
+
+
+1 
+
+
+_l 
+
+
+IJ 
+
+
+1 
+
+
+
+
+
+1 
+
+
+2 
+
+
+3 
+
+
+L 
+
+
+S 
+
+
+6 
+
+
+1 
+
+
+n 
+
+
+n 
+
+
+
+
+
+
+1 1 
+
+
+r 
+
+
+1 
+
+
+
+
+IJ 
+
+
+1 
+
+
+L 
+
+
+_l 
+
+
+
+
+— 
+
+
+l_ 
+
+
+
+
+
+9 10 11 12 13 K 15 
+
+Numerical designations and resultant dis- 
+plays 
+
+Segment identification: 
+a 
+
+b 
+
+
+
+t; 
+
+
+
+61 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-33-07 
+
+
+
+
+
+
+
+
+Code aiiiverter, BCD-to-binary 
+
+(e.g. SN74S484) 
+
+
+5 
+
+
+BCD/BIN 
+
+
+
+
+
+
+& 
+
+
+EN 
+
+
+6 
+
+
+
+
+9 /r. ™ 
+
+
+o rt r7 
+
+
+
+
+//ua £p V 
+
+
+
+
+4 
+
+
+4/Ga 4pV 
+
+
+7 
+
+
+
+
+
+
+
+
+3 
+
+
+8 8pV 
+
+
+8 
+
+
+
+
+
+
+
+
+
+
+o 
+
+
+
+
+aVp 16pV 
+
+
+9 
+
+
+
+
+
+
+2 
+
+
+10 32 pv 
+
+
+10 
+
+
+
+
+
+
+
+
+1 
+
+
+20 64pV 
+
+
+11 
+
+
+
+
+
+
+
+
+19 
+
+
+40 1283 V 
+80 256 pv 
+160 
+
+
+12 
+
+13 
+
+
+
+
+18 
+
+
+17 
+
+
+
+
+12-33-08 
+
+
+Sim 
+
+
+plified form 
+
+
+
+
+
+
+
+
+BCD/BIN 
+
+
+
+
+
+
+15 ^ 
+
+
+
+
+
+
+
+
+
+
+
+
+5 
+4 
+3 
+
+
+& 
+
+
+EN 
+
+
+6 
+7 
+8 
+
+
+
+
+2 
+4 
+8 
+
+
+2V 
+4V 
+8V 
+
+
+
+
+2 
+
+1 
+
+19 
+18 
+17 
+
+
+10 16 V 
+20 32 V 
+40 64 V 
+80 128 V 
+160 256 V 
+
+
+9 
+10 
+11 
+12 
+13 
+
+
+
+
+
+
+
+
+
+
+
+
+
+f>2 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No, 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-3S-CW 
+
+
+
+10 
+
+
+EN 
+
+
+X/Y 
+
+[Til 
+
+
+V 
+V 
+V 
+V 
+V 
+
+V 
+
+
+1 
+
+
+11 
+
+
+2 
+
+
+12 
+
+
+3 
+
+
+13 
+
+
+4 
+
+
+1C 
+
+
+5 
+
+
+15 FN 
+
+
+6 
+
+7 
+
+
+
+
+9 
+
+
+
+Coder for arbitrary code 
+
+(e.g. TBP 18S030, formerly SN 74S288 
+
+The combinative relationships between inputs and outputs are 
+
+implemented in a PROM (or a ROM). 
+
+"Tl" refers to a table (or to Boolean equations) showing the logic 
+
+function of the device, for example: 
+
+
+
+Tl 
+
+
+
+Inputs 
+
+
+
+
+
+
+
+
+Outputs 
+
+
+
+
+
+
+
+
+
+
+
+
+(with device enabled) 
+
+
+14 
+
+
+13 
+
+
+12 
+
+
+11 
+
+
+10 
+
+
+9 7 
+
+
+6 5 4 3 2 1 
+
+
+L 
+
+
+L 
+
+
+L 
+
+
+. 
+
+
+■ ^ 
+
+
+H L 
+
+
+H L L L L L 
+
+
+L 
+
+
+L 
+
+
+H 
+
+
+L 
+
+
+L 
+
+
+H L 
+
+
+H L L L L L 
+
+
+L 
+
+
+L 
+
+
+H 
+
+
+L 
+
+
+H 
+
+
+H L 
+
+
+H L L L L H 
+
+
+L 
+
+
+L 
+
+
+H 
+
+
+H 
+
+
+- 
+
+
+H H 
+
+
+L L L L L H 
+
+
+L 
+
+
+H 
+
+
+L 
+
+
+L 
+
+
+L 
+
+
+H L 
+
+
+H L L L L L 
+
+
+L 
+
+
+H 
+
+
+L 
+
+
+L 
+
+
+H 
+
+
+H L 
+
+
+H L L ^ H L 
+
+
+L 
+
+
+H 
+
+
+L 
+
+
+H 
+
+
+- 
+
+
+H H 
+
+
+L L L L H L 
+
+
+L 
+
+
+H 
+
+
+H 
+
+
+L 
+
+
+L 
+
+
+H L 
+
+
+H L L L L L 
+
+
+L 
+
+
+H 
+
+
+H 
+
+
+L 
+
+
+H 
+
+
+H L 
+
+
+H L L H L L 
+
+
+L 
+
+
+H 
+
+
+H 
+
+
+H 
+
+
+- 
+
+
+H H 
+
+
+L L L H L L 
+
+
+H 
+
+
+L 
+
+
+L 
+
+
+- 
+
+
+- 
+
+
+L L 
+
+
+H L L L L L 
+
+
+H 
+
+
+L 
+
+
+H 
+
+
+- 
+
+
+- 
+
+
+L L 
+
+
+H L H L L H 
+
+
+H 
+
+
+H 
+
+
+L 
+
+
+- 
+
+
+- 
+
+
+L L 
+
+
+H H L L H L 
+
+
+H 
+
+
+H 
+
+
+H 
+
+
+- 
+
+
+- 
+
+
+L L 
+
+
+H H H H L L 
+
+
+
+- = irrelevant (don't c?re) 
+
+
+
+12-33-10 
+
+
+
+15. 
+JO. 
+
+IL 
+
+11. 
+
+j3. 
+
+
+
+
+
+BIN/BCD 
+
+
+Va 
+
+
+
+
+
+
+2a^ 
+
+
+2 
+
+
+4a^ 
+
+
+4 
+
+
+8a^ 
+
+
+8 
+
+
+•10a.<^ 
+
+
+16 
+
+
+20 a O 
+
+
+32 
+
+
+XOaCi 
+
+
+
+
+"1" ^ 
+
+
+
+
+"1"^ 
+
+
+
+Code converter, binary-to-BCD 
+(e. g. SN 74185) 
+
+
+
+63 
+
+
+
+IS 12032 (Part 12): 1994 
+EEC Pub 617-12 (1983) 
+
+
+
+SECTION 34 - SIGNAL-LEVEL CONVERTERS WITH OR WITHOUT 
+GALVANIC SEPARATION 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-34-01 
+
+
+Use symbol 12-32-01 
+
+
+Signal-level converter, general symbol 
+
+The level references may be shown inside the symbol and shall 
+replace X and Y if confusion with the coder can arise. 
+
+Note. - The general qualifying symbol X/Y may be replaced by 
+X/A' if it is necessary to indicate galvanic separation 
+between the inputs and outputs. 
+
+
+
+SECTION 35 - EXAMPLES OF SIGNAL-LEVEL CONVERTERS 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-35-01 
+
+
+
+
+
+
+
+
+Level converter, 1 IL-to-MOS, dual 
+(e.g. part of SN 75365) 
+
+
+■ 
+
+
+5 
+
+
+& 
+
+
+G1 
+
+
+
+
+1 
+
+
+r 
+
+
+3 
+6 
+
+
+TTL/MOS 
+
+1 
+
+
+
+
+
+
+
+
+12-35-02 
+
+
+
+
+
+
+4 
+
+
+Level converter, tCL-to-JiL 
+(e.g. part of MC 10125) 
+
+
+3 
+
+
+ECL/TTL 
+
+
+2 IN. 
+
+
+
+
+
+
+
+
+
+SECTION 36 - MULTIPLEXERS AND DEMULTIPLEXERS 
+
+
+
+No. 
+
+
+Symbol , 
+
+
+Description 
+
+
+12-36-01 
+
+
+
+
+
+
+
+
+Multiplexer, general syrribol 
+
+If one input of a multiplexer is selected, the internal logic state 
+of the output takes on the internal state of the selected input. 
+
+If no input is selected, the output stands at it internal 0-state: 
+
+Note. - The inputs and logic relationships that control the select- 
+ing action must also be shown, for example by showing 
+those inputs and thea.s.sociated dependency notation either 
+within the element or within a common control block. 
+
+
+1 
+1 
+1 
+
+
+MUX 
+
+
+
+
+
+
+
+
+
+
+
+64 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No, 
+
+
+Symbol 
+
+
+Description 
+
+
+12-36-02 
+
+
+
+
+
+
+
+
+Demultiplexer, general symbol 
+
+If ?n output of ,1 demultiplexer is selected, the internal logic state 
+of that output takes on the internal logic state of the input. 
+Otherwise, the output takes on its internal 0-state. 
+
+The note with symbol 12-36-01 applies. 
+
+Sole. - If confusion can arise, DX may be replaced by DMUX. 
+
+
+
+
+DX 
+
+
+1 
+
+1 
+1 
+
+
+
+
+
+
+
+
+
+SECTION 37 - EXAMPLES OF MULTIPLEXERS AND DEMULTIPLEXERS 
+
+
+
+No. 
+
+
+
+Syratol 
+
+
+
+Description 
+
+
+
+12-37-01 
+
+
+
+
+Multiplexer (one-of-eight) 
+(e.g.SN 74151) 
+
+
+
+12-37-02 
+
+
+
+14 
+
+
+
+:hi 
+
+
+
+Multiplexer, quad 
+(e.g.MC 14519) 
+
+Notes. 1.- is optional (see description of symbol 12-36-01). 
+
+2. - Attention is drawn to the fact that symbol 12-37-03 
+depicts the same device in another way. 
+
+
+
+6 
+
+
+
+
+
+
+MUX 
+1 
+
+7 "n 
+
+
+7 
+
+
+
+
+
+
+
+
+
+
+
+
+u 
+
+
+
+
+= 
+
+
+3 
+
+
+I* 
+
+
+
+
+5 
+
+
+
+
+z 
+
+
+. 
+
+
+3 
+
+
+
+
+15 
+
+
+
+
+1 
+
+
+
+
+
+
+i 
+
+
+
+
+
+
+
+A JO 
+
+il 
+
+XL 
+
+13 
+
+
+
+65 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-37^3 
+
+
+
+14 
+
+
+
+X/Y 
+
+
+
+1--G1 
+2--G2 
+3--M3 
+
+
+
+Exclusive NOR, quad 
+{e.g. MC 14519) 
+
+Note. - Altention is drawn 10 the fact thaC symbol 1 2-37-02 depicis 
+the same device in another way. 
+
+
+
+1 
+
+
+
+MUX 
+1 
+
+2 
+
+
+
+>\ 
+
+
+
+1 
+
+
+
+10 
+
+
+
+13 
+
+
+
+12-37-04 
+
+
+
+
+Demultiplexer (one-to-eight) 
+(e.g.SN74LS138) 
+
+Note. - Atten(ionisdrawnlolhefac(»haisynitx)l I2-33-03depicts 
+the sanie device in another way. 
+
+
+
+66 
+
+
+
+No. 
+
+
+
+IS 12032 ( Part 12 ): 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-37-05 
+
+
+
+17 
+
+
+
+-ti. 
+
+
+
+±:^ 
+
+
+
+18 
+
+
+
+15 
+
+
+
+16 
+
+
+
+M1IDX1:81 
+M2I2DX1:4] 
+N3/N4 
+
+
+
+
+2 J 
+
+
+
+1 rIO 
+
+
+
+2Uj^ 
+
+
+
+lUb. 
+
+
+
+IL-C^ 
+
+
+
+2 r^ 
+
+
+
+20jb, 
+
+
+
+2LJV. 
+
+
+
+Hr20 
+iTB 
+
+
+
+N3 
+
+
+
+
+1 
+N4 
+
+
+
+M 
+
+
+
+& 
+
+
+
+DX 
+
+
+
+1, 10/2, 20 
+1,11/2,21 
+1,12/2,22 
+1,13/2,23 
+
+
+
+DX 
+
+
+
+1,14/2,30 
+1,15/2,31 
+1,16/2,32 
+1,17/2,33 
+
+
+
+J3 
+11 
+
+
+
+Demultiplexer/decoder, universal, dual 
+(e.g. F 100170) 
+
+N<Hes. 1. - In order to perform the funcliun 
+DX1:8 correctly, it is necessary 
+to make an external connection 
+between pins 19 and 20, and 
+also between pins 22 and 23. 
+
+2. - The symbol for open-circuit 
+oulput(symbol 12-09-04) is not 
+shown in this example. 
+
+
+
+SECTION 38 - ARITHMETIC ELEMENTS 
+
+
+
+No. 
+
+
+Synitol 
+
+
+Description 
+
+
+
+
+12-38-01 
+
+
+
+
+
+
+
+
+Adder, general symbol 
+
+
+
+
+1 
+
+1 
+1 
+
+
+I 
+
+
+1 . 
+
+1 
+
+
+
+
+
+
+
+
+12-38-02 
+
+
+
+
+
+
+
+
+Subtractor, general symbol 
+
+
+1 
+1 
+
+1 
+
+
+P-Q 
+
+
+1 
+
+1 
+
+
+
+
+
+
+
+
+
+67 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+
+SymlKil 
+
+
+
+Description 
+
+
+
+12-38-03 
+
+
+
+
+Look-ahead carry generator (carry propagate and generate), 
+general symlxil 
+
+
+
+12-38-04 
+
+
+
+
+Multiplier, general symbol 
+
+
+
+12-38-05 
+
+
+
+
+Magnitude comparator, general symbol 
+
+A cascadable comparator i.s assumed to implement a portion of 
+a comparison that proceeds from lower to higher order, unless 
+otherwise indicated, for example by "[H-L)" placed Ixlow llie 
+qualifying symlxil "COMP" 
+
+
+
+12-38-06 
+
+
+
+
+Arithmetic logic unit, general symbol 
+
+Supplementary information shall be added to thegeneral ijualil'y- 
+ingsymbol to specify the function of the element (.sec e.g. symbol 
+
+12-3Q-10) 
+
+
+
+12-38-07 
+
+
+
+
+Half adder 
+
+
+
+f>S 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-38-08 
+
+
+
+
+Single-bit full adder 
+
+
+
+
+
+
+I 
+
+
+
+
+Note. - A simple single-bit full adder may alternatively be 
+
+
+
+
+
+
+
+
+
+
+depicted by the combination of the symbol for the ODD 
+
+
+
+
+
+
+
+
+
+
+element (modulo 2 adder) and the logic threshold element 
+
+
+
+
+
+
+CI CO 
+
+
+
+
+as shown below: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2-k + 1 
+
+
+— Z 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+r 1 
+
+
+
+
+
+
+
+
+
+
+L 1 
+
+
+
+
+
+
+
+
+>2- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+— CO 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SECTION 39 -^EXAMPLES OF ARITHMETIC ELEMENTS 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-39-01 
+
+
+
+8 
+
+
+
+
+& 
+
+
+>1 
+
+
+>1 
+
+
+I 
+CO 
+
+
+
+
+9 
+
+
+
+
+
+
+r\ 
+
+
+
+
+lU 
+
+
+zv 
+
+
+
+
+
+
+/ 
+
+
+
+
+
+
+i\ 
+
+
+3Z 
+
+
+
+
+11 
+
+
+
+
+
+
+5 
+
+
+
+
+
+
+
+
+12 
+
+
+& 
+
+
+>1 
+
+
+>1 
+
+
+■N 6 
+
+
+13 
+
+
+
+
+
+
+J\ 
+
+
+
+
+I 
+
+
+^ 
+
+
+
+
+
+
+^ 
+
+
+
+
+
+
+f\ 
+
+
+
+
+2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3 
+
+
+CI 
+
+
+
+
+
+
+\ ^ 
+
+
+
+
+
+
+
+
+
+Single-bit full adder with complementary 
+sum outputs and inverted cai'ry output 
+(e.g. SN 7480) 
+
+
+
+12-39-02 
+
+
+
+5 
+
+
+°1 
+
+
+I 
+
+
+
+
+3 
+
+
+
+
+
+
+
+
+14 
+
+
+
+
+>P 
+
+
+^n 
+
+
+12 
+
+
+3. 
+
+°1 
+
+
+
+
+
+
+6 
+
+
+I< 
+
+
+
+
+2 
+
+
+
+
+
+
+^ 
+
+
+15 
+
+
+
+
+► a 
+
+
+
+
+11 
+
+
+
+
+
+
+
+
+
+
+3 J 
+
+
+
+
+
+
+7 
+
+
+CI 
+
+
+CO 
+
+
+
+-A 
+_L 
+
+J3 
+10 
+
+
+
+Full adder, 4-bit 
+(e.g. SN 74283) 
+
+Note. - Attention is drawn to the fact 
+
+that symbol 12-39-03 depicts 
+the same device in another way. 
+
+
+
+69 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+
+12-39-03 
+
+
+
+12-39-04 
+
+
+
+12-39-05 
+
+
+
+Symbol 
+
+
+
+
+
+5 
+
+
+TT 
+] 
+
+
+6 
+7 
+
+
+
+
+•P 
+
+
+4 
+
+
+3, 
+
+
+
+
+'0 
+
+
+3 
+2 
+
+1 
+
+
+0' 
+
+
+
+
+1 
+
+2 
+
+.3 
+
+
+15 
+
+
+3 . 
+
+
+
+
+
+
+13 IN 
+
+
+& 
+
+
+EN 
+
+
+K IN 
+
+
+
+
+
+J2 
+
+il 
+JO 
+
+9 
+
+
+
+Description 
+
+
+
+Full subtracter, 4-bit 
+(e.g. SN 74283) 
+
+Note. - Attention is drawn to the fact that 
+symbol 12-39-02 depicts the same 
+device in another way. 
+
+
+
+Look-ahead carry generator, 4-bit 
+(e.g. SN 74182) 
+
+
+
+Multiplier, 4-bit parallel, generating the 
+four iRast significant bits of the product (e. 
+g. SN 74285) 
+
+
+
+70 
+
+
+
+No. 
+
+
+
+12-39-06 
+
+
+
+12-39-07 
+
+
+
+12-39-08 
+
+
+
+Symbol 
+
+
+
+5_ 
+6_ 
+
+7_ 
+U_ 
+
+3_ 
+2_ 
+
+1_ 
+
+15 
+
+
+
+n 
+
+
+
+^p 
+
+
+
+3 J 
+
+
+
+
+n^ 
+
+
+
+>(i 
+
+
+
+
+
+
+EN 
+
+
+
+J2 
+
+11 
+
+Ji 
+9 
+
+
+
+_1_ 
+J_ 
+_5_ 
+
+IL 
+
+X. 
+
+Vl_ 
+
+j5. 
+
+
+
+COMP 
+
+
+
+1 
+
+
+
+^p 
+
+
+
+5 J 
+
+
+
+1 
+
+
+
+P = a O: -^ 
+
+
+
+^Q 
+
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617-12 (1983 ) 
+
+
+
+Description 
+
+
+
+Multiplier, 4-bit parallel, generating the 
+four most significant bits of the product 
+(e.g. SN 74284) 
+
+
+
+Magnitude comparator with open-circuit 
+output of the L-type, 6-bit 
+(e.g. DM 7160) 
+
+
+
+Magnitude comparator with cascading in- 
+puts, 4-bit 
+(e.g. SN 7485) 
+
+
+
+71 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+
+12-39-09 
+
+
+
+12-39-10 
+
+
+
+Symbol 
+
+
+
+X 
+
+J_ 
+
+^s 
+j_ 
+
+_6_ 
+5 
+
+
+
+^3 
+
+
+
+13 
+
+
+
+14 
+
+
+
+^P 
+
+
+
+3 J 
+1 
+
+
+
+COMP 
+
+P>Q V 
+
+P<Q V 
+
+p = av 
+
+Pi1 = Q V 
+
+
+
+EN 
+
+
+
+_9_ 
+JO. 
+
+H 
+
+12 
+
+
+
+4 J 
+
+
+
+ALU 
+[Til 
+
+
+
+^'^31 
+
+
+
+^-Mpo" 
+
+.23_tJ^ 
+
+
+
+22 rv. 
+
+
+
+Q1 
+
+
+
+i?-j^pr 
+
+
+
+CP 
+
+CG 
+
+CO 
+
+P = Q^ 
+
+
+
+15 
+
+
+
+17 
+
+
+
+16 
+
+
+
+14 
+
+
+
+10 
+
+
+
+:-..Ji 
+
+
+
+13 
+
+
+
+Description 
+
+
+
+Magnitude nimparator with 3-st;itc out- 
+puts, 4-bit 
+(e.g. DM 76L24) 
+
+
+
+Arithmetic logic unit, 4-hit 
+(e.g. SN 74181) 
+
+Notes /. - [Tl] refers to supplcmcniiiry 
+documentation detailing the 
+element's funclinn in various 
+modes. 
+
+2.- The M's at the outputs have 
+been oiiiitlcd in accordance 
+with Clause 21.2. 
+
+
+
+72 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-39-11 
+
+
+
+
+
+
+
+ALU 
+
+
+
+
+19 
+
+
+0" 
+
+
+
+
+
+
+20 
+
+
+III) 
+
+^15 
+
+
+
+
+23 
+
+
+
+
+
+
+It* 
+
+
+3 . 
+
+
+
+
+
+
+
+
+
+
+CPo 
+
+
+-^-ll 
+
+
+ii^^ 
+
+
+CI 
+
+
+CO^ 
+
+
+'V-li 
+
+
+2L_^ 
+
+
+C1< 
+
+
+) CG^ 
+
+
+>-ii 
+
+
+
+
+n 
+
+
+r 
+
+
+
+
+u 
+
+
+PO 
+
+
+
+
+
+
+5 
+
+
+15 
+
+
+
+
+
+
+16D ^ 
+
+
+
+
+
+
+Ul) 
+
+
+
+
+
+
+
+
+3 
+
+
+PI 
+
+
+
+
+
+
+6 
+
+
+16 
+
+
+
+
+
+
+16D ^ 
+
+
+
+
+
+
+Ul 
+
+
+
+
+
+
+
+
+2 
+
+
+p? 
+
+
+
+
+
+
+7 
+
+
+1? 
+
+
+Q2 
+
+
+
+
+16D ^ 
+
+
+
+
+1 
+
+
+P3 
+
+
+
+
+
+
+8 
+
+
+18 
+
+
+
+
+
+
+16D ^ 
+
+
+
+
+
+
+U3 
+
+
+
+
+
+
+
+
+
+Arithmetic logic unit with output latches, 4-bit 
+(e.g.F 100181) 
+
+The notes with symbol 12-39-10 apply. 
+
+
+
+SECTION 40 - BINARY DELAY ELEMENTS 
+
+
+
+40.1 
+
+
+
+The qualifying symbol 02-08-05 is also used in the representation of biliary delay elements as 
+shown in this section. 
+
+
+
+No. 
+
+
+Symbol 
+
+
+r Description 
+
+
+12-40-01 
+
+
+
+
+
+
+
+
+Delay element with specified delay times 
+
+A transition from the internal 0-state to the internal 1-state at the 
+output occurs after a delay of t\ with reference to (he same 
+transition at the input. The transition from the internal l-s(a(e to 
+the internal 0-state at the output occurs after a delay of /: with 
+reference to the same transition at the input. 
+
+Note. - t\ and /2 may be replaced by the actual delays, expressed 
+in $econds, or units or digit units, and may l>c placed inside 
+word outside the outline. If the two delays are cijual. it is 
+sufficient to insert one value only. 
+
+
+
+
+^ ^2 
+H \ 
+
+
+
+
+
+
+
+
+
+
+
+10ns 
+I 
+
+
+
+5ns 
+
+
+
+Illustration 
+
+1 
+
+Q 
+
+b ° 
+
+, 1 
+
+
+
+
+
+
+L 
+
+
+
+-J U--.4 
+
+
+
+10ns 
+
+
+
+5ns 
+
+
+
+12-40-02 
+
+
+
+100ns 
+I 1 
+
+
+
+Delay element {100 ns) 
+
+
+
+73 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+Symlxil 
+
+
+Description 
+
+
+12-40-03 
+
+
+
+
+
+
+
+
+Tapped delay element (in steps of 10 lis) 
+
+• 
+
+
+
+
+1 1 
+
+
+
+
+1 1 
+
+10 ns 
+20 ns 
+30 ns 
+Wns 
+50 ns 
+
+
+
+
+
+
+
+
+
+SECTION 41 - BISTABLE ELEMENTS 
+
+
+
+4L1 
+
+
+
+41.2 
+
+
+
+The symbol for a bistable element does not contain a general qualifying symbol for the function, 
+the latter being indicated by qualifying symbols associated with the inputs and outputs. 
+
+For bistable elements controlled by Cm-inputs (symbol 12-18-01), it is necessary to distinguish 
+between four types, i.e. latches, edge -triggered bistables, pulse-triggered bistables and data-lock- 
+out bistables. In accordance with the descriptions of the symbols for a dynamic input (12-07-07) 
+and fora postponed output (12-09-01): 
+
+
+
+[ 1 
+
+I I 
+
+
+
+indicates a latch 
+
+
+
+r 
+
+
+
+I I 
+
+
+
+indicates an cdgc-triggcrcd bistable 
+
+
+
+I 
+
+Cm 
+L_ 
+
+
+
+n 
+
+
+
+indicates a pulse-triggered bistable 
+
+
+
+I 
+
+>Cm n 
+
+1 
+
+
+
+indicates a data-lock-out bislable 
+
+
+
+For edge-triggered, pulse-triggered and data-lock-oul bistables, the inputs affected !>y the 
+Cni-inpul arc assumed to be stable during the period that the Cm-input stands al ils inlernal 
+1- slate. If they do change their slates during this period, the function of liie cicmciil is not 
+specified by the symbol. 
+
+
+
+74 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+The same symbology is used for more complex elements such as shift registers and counters to 
+indicate whether they are of the edge-triggered, the pulse-triggered or the data-lock-out type. For 
+elements of the pulse-triggered or the data-lock-out type, if reference is made to the content of 
+the element (e.g. by a CT- output), this content shall be considered as being the content after the 
+application of the postponed output symbol. 
+
+
+
+SECTION 42 - EXAMPLES OF BISTABLE ELEMENTS 
+
+
+
+No. 
+
+
+
+Symlwl 
+
+
+
+Description 
+
+
+
+12-42-01 
+
+
+
+
+RS-bistable 
+RS-latch 
+
+
+
+12-42-02 
+
+
+
+6 
+
+
+C1 
+
+
+10 
+
+
+U 
+
+
+N 11 
+
+
+
+
+
+
+
+
+C2 
+2D 
+
+
+9 
+
+
+7 
+
+
+N 8 
+
+
+
+
+
+
+
+D-latch, dual 
+
+(e.g. part of SN 7475) 
+
+
+
+12-42-03 
+
+
+
+
+Edge-triggered JK-btstable 
+(e.g. partofSN74LS107) , 
+
+
+
+12-42-04 
+
+
+
+1 
+
+
+U 
+C1 
+IK 
+R 
+
+
+
+
+
+
+12 
+
+
+3 
+
+
+4 
+
+
+N 2 
+
+
+13 IN 
+
+
+
+
+
+
+
+
+
+Pulse-triggered JK-bistable 
+(e.g. part of SN 74107) 
+
+
+
+12-42-05 
+
+
+
+-c 
+
+
+
+s 
+
+u n 
+■>ci n 
+
+IK 
+R 
+
+
+
+Data-lock-out JK-bistable 
+(e.g. part of SN 741 11) 
+
+
+
+12-42-06 
+
+
+
+
+RS-latch with negated inputs (R5 - latch) 
+(e.g. part of SN 74279) 
+
+
+
+75 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( (1983 ) 
+
+
+
+No. 
+
+
+
+12-42-07 
+
+
+
+12-42-08 
+
+
+
+12-42-0^ 
+
+
+
+12-42-10 
+
+
+
+Symbol 
+
+
+
+
+1^ rs 
+
+
+S 
+
+
+IS 
+
+1R 
+
+
+
+
+
+
+
+
+
+
+3 
+
+
+& 
+
+
+
+
+4 
+
+
+8 
+
+
+5 
+
+
+
+
+
+
+
+
+12 
+
+
+C1 
+
+
+
+
+
+
+
+
+9 
+
+
+& 
+
+
+
+
+10 ■ 
+
+
+^ 6 
+
+
+11 
+
+
+
+
+
+
+
+
+2 l\ 
+
+
+R 
+
+
+
+
+
+
+
+
+
+
+1U 
+
+
+S 
+
+
+
+
+11 
+
+
+S 
+
+
+
+
+12 
+
+
+ID 
+
+
+5 
+
+
+
+
+
+
+13 
+
+
+ID 
+
+
+
+
+U 
+
+
+>C1 
+
+
+
+
+2 
+
+
+>C1 
+
+
+\ 6 
+
+
+
+
+
+
+8 
+
+
+R 
+
+
+
+
+9 ■ 
+
+
+R 
+
+
+
+
+
+Description 
+
+
+
+Edge-triggered D-bistab!e 
+(e.g. part of SN 7474) 
+
+
+
+Pulse-triggered RS-bistable 
+(e.g.SN74L71) 
+
+
+
+Edge-triggered D-bistable, dual 
+(e.g. MC 10131) 
+
+
+
+Udge-triggered D-bi.stahle 
+(e.g. MC 1222) 
+
+
+
+76 
+
+
+
+No. 
+
+
+
+12-42 11 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+Symbol 
+
+
+
+10 
+
+
+
+11 fV 
+
+
+
+C2 
+
+D c 
+
+
+
+1,2D 
+1,2D 
+
+
+
+J5 
+12 
+
+
+
+Description 
+
+
+
+Multiplexer witli storage, quad 2-input 
+(e.g. SN 74298) 
+
+
+
+12-42-12 
+
+
+
+13 
+
+
+
+U 
+
+
+
+11 
+
+
+
+
+
+
+[I/O PORT 
+
+
+
+& 
+
+
+
+>1 
+
+
+
+--G1 
+
+
+
++ 1R2 
+R2/Z6 
+
+
+
+2-- 
+
+
+
+G3 
+■-6R 
+--1EN5 
+
+EN5/1CA 
+d 3Cif 
+
+
+
+23 
+
+
+
+_5_ 
+J_ 
+
+IL 
+
+20. 
+22 
+
+
+
+/►D 
+
+
+
+± 
+
+_10 
+_15 
+_1? 
+
+21 
+
+21 
+
+
+
+Input/output port, 8 -hit 
+(e.g.8212) 
+
+
+
+77 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( (1983 ) 
+
+
+
+SECTION 43 - INDICATION OF SPECIAL SWITCHING PROPERTIES OF 
+
+BISTABLE ELEMENTS 
+
+
+
+43.1 
+
+
+
+In some applications (e.g. fail-safe systems) it is necessary to indicate the internal logic state of 
+the outputs of a bistable element at the moment the supply is switched on. The symbols below 
+show how this may be done. The qualifying symbols may be applied to other types of bistable 
+elements. 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-43-01 
+
+
+
+
+
+
+
+
+RS-bistable with initial 0-state 
+
+At the moment the supply is switched on, the output will stand 
+at its internal 0-state. 
+
+
+
+
+1=0 
+
+s 
+
+R 
+
+
+
+
+
+
+
+
+
+
+12-43-02 
+
+
+
+
+
+
+
+
+RS-bistable with initial 1-state 
+
+At the moment the supply is switched on, the output will sljiiid 
+at its internal 1-state. 
+
+
+
+
+U1 
+
+s 
+
+R 
+
+
+
+
+
+
+
+
+
+
+12-43-03 
+
+
+
+
+
+
+
+
+RS-bistable, non-volatile 
+
+At the moment the supply is .switched on, the internal logic stiite 
+of the output will be the same as it was when the supply was 
+switched off. 
+
+
+
+
+NV 
+S 
+
+R 
+
+
+
+
+
+
+
+
+
+
+
+SECTION 44- MONOSTABLE ELEMENTS 
+
+
+
+No. 
+
+
+Symbtil 
+
+
+Description 
+
+
+12-44-01 
+
+
+
+
+
+
+
+
+Monostable; relriggerable (during the output pulse), general 
+symlxil 
+
+Simple shot, general symlxil 
+
+The output changes to or remains at its 1 -slate each lime the input 
+changes to its 1-state. Tlie output returns to its ()-sla(e after a 
+period of time which is characteristic of the particular device, 
+beginningat the last change of the input to its 1-stale. 
+
+Note. - The U.SC of the dynamic input syml3ol( 12-07-07) alllic input 
+is optional (for example of use sec symlx)! 12-45-01). 
+
+
+
+
+n 
+
+
+
+
+
+
+
+
+
+
+12-44-02 
+
+
+
+
+
+
+
+
+Monostable, non retriggcrable (during the output pulse), general 
+symtol 
+
+The output changes to its 1-state only when the input changes to 
+its 1-slate. The output returns to its 0-state after a period of time 
+which is characteristic of the particular device, regardless of any 
+changes of the input variable during Ihi.i period. 
+
+NoU: - 'llic use of Ihc dynamic input syniliol (synilxil 12-07-07) 
+al the input is optional (for example of use si;e syniliol 
+12-45-02). 
+
+
+
+
+MX 
+
+
+
+
+
+
+
+
+
+
+
+7S 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+SECTION 45 - EXAMPLES OF MONOSTABLE ELEMENTS 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-45-01 
+
+
+
+14 
+
+
+
+
+n 
+
+CX 
+
+D V / rv 
+
+
+
+
+15 
+
+
+V 
+
+
+
+
+
+
+
+
+Ka / L 
+
+
+A 
+
+
+
+
+
+
+& 
+
+JT 
+
+
+> 
+
+
+13 
+
+
+1 
+
+
+
+
+2 
+
+
+N ^ 
+
+
+
+
+
+
+^ r 
+
+
+r^ 
+
+
+
+
+3 1 
+
+
+R 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Monostable, retriggerable 
+(e.g. partofSN74LS123) 
+
+Function table: 
+
+
+
+Inputs 
+
+
+Outputs 
+
+
+1 2 3 
+
+
+13 A 
+
+
+- - L 
+
+
+L H 
+
+
+H - H 
+
+
+L H 
+
+
+- L H 
+
+
+L H 
+
+
+L J H 
+
+
+A If 
+
+
+1 H H 
+
+
+A IT 
+
+
+L H J- 
+
+
+A IT 
+
+
+
+Noti:. - The second and third line of the function table each 
+indicate the logic levels the outputs will take on after the 
+completion of any output pulse started before the relevant 
+input took on its indicated level. 
+
+
+
+12-45-02 
+
+
+
+
+Monostable, non-retriggerable 
+(e.g. part of SN 74221) 
+
+
+
+SECTION 46 - ASTABLE ELEMENTS 
+
+
+
+No. 
+
+
+Symlxil 
+
+
+Description 
+
+
+12-46-01 
+
+
+
+
+
+
+
+
+Astahle elemeijt, general symbol 
+
+Signal generator producing an alternating sequence of zeroes and 
+ones. 
+
+Note. - In this symbol, the is the qualifying synilx)l for a 
+generator. If the waveform is evident, this symbol may be 
+shown without the additional symtwl J\J\ - 
+
+
+
+
+G 
+
+nn 
+
+
+
+
+
+
+
+
+
+
+12-46-02 
+
+
+
+
+
+
+
+
+Controlled astable element, general symlxil 
+
+
+Q 
+
+
+G 
+
+ji_n 
+
+
+— b 
+
+
+Explanatory diagram: 
+
+
+
+
+
+
+G 
+JUT 
+
+
+& 
+
+
+— b 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The note with symbol 12-46-01 applies. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+79 
+
+
+
+
+
+
+
+
+
+IS 12032 ( Part 12 ): 1994 
+lEC Pub 617-12 ((1983) 
+
+
+
+No. 
+
+
+Symlml 
+
+
+Dcscriplinn 
+
+
+12-46-03 
+
+
+
+
+Astable element, synchronoasly starting, general symbol 
+
+
+
+
+
+
+!G 
+
+
+
+
+The output starts with a complete pulse at the instant at which 
+
+
+
+
+
+
+ruT 
+
+
+
+
+the input takes on its internal 1-state. 
+
+
+
+
+
+
+Input Q 
+
+
+
+
+
+
+Output 
+
+
+
+
+
+
+The note with symhol 12-46-01 applies. 
+
+
+12-46-04 
+
+
+
+
+
+
+
+
+Astahle element stopping after completing the last pulse, general 
+
+symlxil 
+
+
+
+
+n 1 
+
+
+
+
+
+
+
+
+JUT 
+
+
+
+
+When the input returns to its internal 0-state, the output remains 
+at its internal 0-state or completes its final pulse. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input 
+
+
+
+
+
+
+
+
+
+
+
+Output . J U U 
+
+
+
+
+
+
+The note with symbol 12-46-01 applies. 
+
+
+12-46-05 
+
+
+
+
+
+
+
+
+Astableelcment.syiK-hronously starting, stoppingafter complet- 
+ing the last pulse, general symUtl 
+
+
+
+
+' G 1 
+
+
+
+
+
+
+
+
+JTJl 
+
+
+
+
+1 
+
+
+
+
+Input 
+
+
+
+
+
+
+
+
+
+
+
+
+1 1 
+
+1 ^ _ _ _ • 
+
+Output 
+
+^ U U U U L_ 
+
+
+
+
+
+
+The note with symbol 12-46-01 applie;,. 
+
+
+
+SO 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+SECTION 47 - EXAMPLES OF ASTABLE ELEMENTS 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-47-01 
+
+
+
+
+Clock generator/driver, four-phase 
+
+{e. g. TIM 9904, formerly SN 74LS362) 
+
+Note. ~ For the use of CTRDI V4 see sym- 
+bol 12-48-03. 
+
+
+
+12-47-02 
+
+
+
+16. 
+
+
+
+15. 
+
+
+
++ 5V(L0G) 
++ 5V(0SC) 
+OVdOG) 
+OV(OSC) 
+
+
+
+Voltage-controlled oscillator, dual 
+(e.g. SN74S124) 
+
+Note ~ If it is not necessary to detail Ihe 
+supply arrangements, the common 
+control block may be omitted. 
+
+
+
+
+81 
+
+
+
+IS 12032 {Part 12): 1994 
+lEC Pub 617-12 ((1983) 
+
+
+
+SECTION 48 - SHIFT REGISTERS AND COUNTERS 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-48-01 
+
+
+
+
+
+
+
+
+Shift register, general symbol 
+
+Note. - 'llie ni must be replaced by the number of stages. 
+
+
+1 
+
+1 
+1 
+
+
+SRGm 
+
+
+1 
+1 
+
+
+
+
+
+
+
+
+12-48-02 
+
+
+
+
+
+
+
+
+Counter with cycle length 2 to the power m (counter modulo 2 
+to the power m), general symbol 
+
+Note. - m should be replaced by the actual value. 
+
+
+1 
+1 
+1 
+
+
+CTRm 
+
+
+1 
+1 
+
+
+
+
+
+
+
+
+12-48-03 
+
+
+
+
+
+
+
+
+Counter with cycle length m (counter modulo m), general symbol 
+
+The note with symbol 12-48-02 applies. 
+
+Nol<;. - In an array of elements having different cycle lengths, (hat 
+applying to each should be indicated l^y DlVm in each 
+cleriienl. In such a case, the letters CTR need only lie 
+shown in the common control block (for example of 
+application see symbol 12-49-12). 
+
+
+1 
+1 
+1 
+
+
+CTRDIVm 
+
+
+1 
+1 
+
+
+
+
+
+
+
+
+
+SECTION 49 - EXAMPLES OF SHIFT REGISTERS AND COUNTERS 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-49-01 
+
+
+
+12-4P-02 
+
+
+
+
+
+SRG8 
+
+
+
+
+11 
+
+
+& 
+
+
+ID 
+
+
+13 
+
+
+12 
+
+
+-^-^ 
+
+
+9 
+
+
+>C1/-^ 
+
+
+
+
+
+Shift register, 8-bif, with serial input and complementary serial 
+
+output 
+
+(e.g. part of SN 7491) 
+
+
+
+i-Jb. 
+
+
+
+SRG512 
+
+Ml 
+
+•3,1. 2D 
+T,2D 
+C2/- 
+
+
+
+Z3 
+
+
+
+Shift register, 512-hit, static 
+(e.g. MM 4057) 
+
+
+
+82 
+
+
+
+IS 12032 (Part 12): 1994 
+lEC Pub 617-12 ( 1983 ) 
+
+
+
+No. 
+
+
+
+Symlxil 
+
+
+
+Description 
+
+
+
+12-4Q-03 
+
+
+
+10 
+
+
+
+11 
+
+
+
+SRG4 
+
+
+
+}Mi 
+
+
+
+C4 
+1- 
+
+
+
+'/2 
+
+
+
+JZ 
+
+
+
+1,4D 
+3,4D 
+
+
+
+3,4D 
+
+
+
+3,40 
+
+
+
+3,AD 
+2.40 
+
+
+
+j5 
+
+J13 
+12 
+
+
+
+Shift register, 4-bit, Hidirectional universal 
+(e.g. SN74LS194) 
+
+
+
+12-4Q-04 
+
+
+
+'^M! 
+
+
+
+l_b. 
+
+
+
+SRG4 
+
+
+
+•C2/1 
+
+
+
+N3 
+R 
+
+
+
+
+
+^ 
+
+
+r 
+
+
+4 
+
+
+1,2J 
+1,2K 
+T,2D 
+
+
+3 
+
+
+3 h. 
+
+
+9 
+
+
+■ ■ 
+
+
+10 
+
+
+T,2D 
+
+
+3 
+
+
+
+
+11 
+
+
+
+
+
+
+12 
+
+
+
+
+
+
+
+13 
+
+
+
+Shift register, 4-bit, parallel in/parallel out 
+(e. g. CD 4035A) 
+
+Nole. - Tlie use of the bar can be avoided by replacing 
+
+
+
+—Ji^ M1 by 
+
+
+
+and I by 0. 
+
+
+
+12-49-05 
+
+
+
+SRG8 
+■CI/-*- 
+
+
+
+10 
+
+
+
+Shift register, R-bit, with parallel outputs 
+(e.g. SN 74164) 
+
+
+
+_4_ 
+_5_ 
+_6_ 
+
+JO 
+13 
+
+
+
+S3 
+
+
+
+IS 12032 (Part 12):. 1994 
+lEC Pub 617-12 ( (1983 ) 
+
+
+
+No. 
+
+
+
+Symliol 
+
+
+
+Description 
+
+
+
+12-49-06 
+
+
+
+J^ 
+
+
+
+11 
+1_ 
+
+IL 
+
+12_ 
+
+j_ 
+
+_5_ 
+6 
+
+
+
+SRG8 
+GHSHIFTl 
+
+C2IL0AD1 
+
+
+
+>1 
+
+
+
+C3/- 
+
+
+
+a 
+
+
+
+Shift register with parallel load, 8-bit 
+(e.g.SN 74165) 
+
+
+
+jr 
+
+
+
+30 
+2D 
+
+
+
+20 
+
+
+
+12-49-07 
+
+
+
+12 
+
+
+
+19 
+
+
+
+
+
+
+J_ 
+1_ 
+
+J_ 
+
+JM_ 
+J_ 
+
+Jl 
+_6_ 
+
+_5_ 
+
+J5 
+U_ 
+16 
+
+
+
+SRG8 
+C3/1-^ 
+
+3R(RESET1 
+
+MKSHIFT) 
+
+M2(L0AD] 
+
+"1" 
+
+"1" 
+
+"1" 
+
+;d 
+
+1,3D 
+2,30 
+2,3D 
+
+
+
+Register, universal shift/storage, 8-hil (e.g. SN 74I.S323) for 
+which only the reset, shift and parallel load modes are shown. 
+
+NoU'. - lliis .symbol illuslralcs how an incompiclcly utilized 
+device n>ay be reprc.scnicd by ;i symlwl suilcd U) llic 
+.ipplicalion. For ihi.s purpose use is made of llit (ixcd- 
+modc input, symbol 12- (19-49. 
+
+
+
+JI 
+
+
+
+17 
+
+
+
+S4 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+12-40 -as 
+
+
+
+i-a^J-w 
+
+
+
+12 
+
+
+SRG8 
+>C3/2-^ 
+
+3R[RESET1 
+
+Ml [HOLD] 
+
+M2[SHIFT] 
+
+"1" 
+
+"1" 
+
+"1" 
+
+
+9 l\ 
+
+
+1 1-^ 
+
+
+
+
+2 rv. 
+
+
+3 I\ 
+
+
+19 r\ 
+
+
+
+
+
+2,30 
+
+
+
+J_ 
+
+J13 
+_6_ 
+
+Ik 
+
+_5_ 
+
+16 
+
+
+
+11 
+
+
+
+CTR14 
+
+
+
+10 
+
+
+
+-C 
+
+
+
+It 
+
+- -2T 
+- -3T 
+- -IJ 
+- -5T 
+- -6T 
+- -7T 
+- -8T 
+-n 
+--iOT 
+
+
+
+Z1 
+
+Z2- - 
+
+Z3- - 
+
+Z5 
+Z6 
+Z7 
+Z8 
+Z9 
+ZIP 
+Z11 
+
+
+
+11T Z12 
+
+
+
+- -12T 
+--T3T 
+
+
+
+Z13 
+
+
+
+_7_ 
+
+± 
+
+3 
+
+
+
+Description 
+
+
+
+Register, universal shift/storage. 8-hit 
+(e. g. SN 74LS323) for which only the 
+reset, hold and shift modes are shown 
+
+The note with symbol 12-49-07 applies. 
+
+
+
+Binary ripple counter, l4-st/ige 
+(e.g. CD 4020) 
+
+NoIl: - If it is no! necessary lo indicjilc llic 
+ripple effect, synitwl 1 2-49- 1 (I niiiy 
+be u.-ied. 
+
+
+
+S5 
+
+
+
+is 12032 (Part 12): 1994 
+lEC Pub 617-12 ( (1983 ) 
+
+
+
+No. 
+
+
+
+12-4^-10 
+
+
+
+SymU)! 
+
+
+
+10 
+
+11 
+
+
+-c 
+
+
+CTRK 
+CT = 
+
+
+'0 
+3 
+U 
+
+
+9 
+7 
+5 
+
+
+
+
+
+
+4 
+
+
+
+
+
+
+
+
+
+
+6 
+
+
+
+
+
+
+
+
+
+
+13 
+
+
+
+
+
+
+CT< 
+
+
+.13 
+
+
+12 
+
+15 
+1 
+2 
+3 
+
+
+
+Description 
+
+
+
+Hillary counter, 14-stage 
+(L'.g. CI) 4020) 
+
+Note. - If it is necessary to indiciile the 
+rippiu effect, symbol 12-49-09 
+shall lie used. 
+
+
+
+12-44-11 
+
+
+
+10 
+
+
+
+J_J^ 
+
+
+
+CTRDIV10 
+
+
+
+Ml 
+
+
+
+'1,3,4 + 
+■C2 
+
+
+
+G4 
+G3 
+R 
+
+
+
+3Cr=9 
+
+
+
+JI 
+
+
+
+15 
+
+
+
+1,2D 
+
+
+
+il 
+il 
+11 
+
+
+
+Counters, synchronous, decade, with 
+
+parallel load 
+
+(t:.g.SN741>;i60) 
+
+
+
+12-49-12 
+
+
+
+
+Counter, one dividing hy 5 and 10 and the 
+other by 6 (e.g.SN 49711) 
+
+
+
+S6 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 (1983) 
+
+
+
+No. 
+
+
+
+Symbol 
+
+
+
+Description 
+
+
+
+12-49-13 
+
+
+
+
+
+CTRDiV10/7SEG 
+
+Ql2 
+
+
+10 
+
+
+
+
+
+
+
+
+& 
+JT 
+
+JT 
+
+
+b12 
+d12 
+
+
+12 
+
+
+2 rs 
+
+
+13 
+
+
+1 
+
+
+9 
+
+
+
+
+
+
+15 
+
+
+n~(\ 
+
+
+.iO 
+
+
+11 
+
+
+
+
+<- 1 =U e Pi 
+
+f 12 
+g12 
+
+c 
+CT>5 
+
+
+6 
+
+
+
+
+7 
+
+
+
+
+K 
+
+
+
+
+N 5 
+
+
+
+
+
+
+3 
+
+
+/r,A7 < 
+
+
+^ 
+
+
+
+
+
+
+' 
+
+
+
+
+
+Decade counter/divider with deaided 7- 
+segment display outputs 
+(e.g. CD 4026) 
+Segment identification; 
+
+d 
+
+
+
+12-49-14 
+
+
+
+K 
+
+
+
+11 
+
+
+
+CTRDIV10 
+
+
+
+■2 + 
+
+
+
+Q1 
+> 
+
+G2 
+C3 
+
+
+
+■1- 
+
+
+
+1CT=9 
+
+
+
+2CT = 
+
+
+
+
+J_ 
+9 
+
+
+
+JI 
+
+
+
+3D 
+
+
+
+Counter, decade, synchronous up/down 
+(e.g. SN 74192) 
+
+
+
+12-49-15 
+
+
+
+j:::. 
+
+
+
+±i. 
+
+
+
+K 
+
+
+
+-b. 
+
+
+
+j:^ 
+
+
+
+11 
+
+
+
+_b. 
+
+
+
+CTR4 
+EN1 
+
+M2[D0WN1 2(CT=0)Z6 
+
+M3IUP1 3(CT=15)Z6 
+
+1,2-/1,3-h 
+
+G4 6,4.1 
+
+C5IL0AD] 
+
+
+
+12 
+
+
+
+13 
+
+
+
+J5_ 
+
+_!_ 
+10. 
+
+9 
+
+
+
+5D 
+
+
+
+q 
+
+1 ] + -n 
+
+
+
+41 -2- 
+
+
+
+181 -!- 
+
+
+
+Binary counter, 4-bit, synchronous 
+up/down, shown with supplementary 
+clarifying information in the array 
+(e.g. SN 74191) 
+
+
+
+87 
+
+
+
+IS 12032 ( Part 12 ) : 1994 
+lEC Pub 617-12 ((1983) 
+
+
+
+No. 
+
+
+Symlx)! 
+
+
+Description 
+
+
+12-49-16 
+
+
+
+
+
+
+
+
+Counter, decade 
+
+(e.g. part of SN 74490) 
+
+
+2 
+U 
+
+1 
+
+
+CTRDIV10 
+
+TCT=0 
+
+G1/CT.9 ^^^ 
+
+
+'0 
+.3 
+
+
+3 
+
+5 
+6 
+
+7 
+
+
+
+
+
+
+
+
+
+SECTION 50 - MEMORIES 
+
+
+
+No. 
+
+
+Symbol 
+
+
+Description 
+
+
+12-50-01 
+
+
+
+
+
+
+
+
+Read-only tnemoiy, general symbol 
+
+Note. - The asterisk must be replaced by an appropriiite indication 
+of the number of addresses and bit. In such indications Ik 
+stands for 1024. 
+
+
+1 
+1 
+1 
+
+
+ROM* 
+
+
+1 
+
+1 
+
+
+
+
+
+
+
+
+12-50-02 
+
+
+
+
+
+
+
+
+Programmable read-only memory, general symlwl 
+The note with symbol 12-50-01 applies. 
+
+
+1 
+
+1 
+1 
+
+
+PROM* 
+
+
+1 
+1 
+
+
+
+
+
+
+
+
+12-50-03 
+
+
+
+
+
+
+
+
+Random-acce.ss memory (read/write memory), general symlxji. 
+The note with symbol 12-50-01 applies. 
+
+
+1 
+
+. 1 
+1 
+
+
+RAM* 
+
+
+1 
+
+1 
+
+
+
+
+
+
+
+
+12-50-04 
+
+
+
+
+
+
+
+
+Content addressable memory (associative memory), genera! 
+
+symtoi 
+
+The note with symbol 12-50-01 applies. 
+
+
+1 
+1 
+
+1 
+
+
+CAM* 
+
+
+1 
+1 
+
+
+
+
+
+
+
+
+
+88 
+
+
+

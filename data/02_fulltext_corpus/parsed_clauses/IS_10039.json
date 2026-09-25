@@ -1,0 +1,54 @@
+{
+  "is_number": "IS IS_10039",
+  "standard_id": "IS IS_10039",
+  "title": "Indian Standard Specification / Test Method (IS IS_10039)",
+  "ia_identifier": "IS_10039",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the functional requirements and performance tests of hand-operated number printing machines for use in printing presses, binding houses, offices, etc.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1848",
+      "standard_id": "IS 1848:2007",
+      "title": "Writing and printing paper",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade deration",
+    "Grade deral",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10039"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 16724
+}

@@ -1,0 +1,46 @@
+{
+  "is_number": "IS IS_10980__PART_2_",
+  "standard_id": "IS IS_10980__PART_2_",
+  "title": "Indian Standard Specification / Test Method (IS IS_10980__PART_2_)",
+  "ia_identifier": "IS_10980__PART_2_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_10980__PART_2_) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_10980__PART_2_).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10980",
+      "standard_id": "IS 10980",
+      "title": "Indian Standard Specification / Test Method (IS 10980)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade 4h6h",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10980__PART_2_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "nominal diameter < 5 mm",
+      "nominal diameter ^ 6 mm",
+      "nominal diameter 6 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 10116
+}

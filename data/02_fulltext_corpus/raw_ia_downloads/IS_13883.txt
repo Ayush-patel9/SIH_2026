@@ -1,0 +1,6743 @@
+**************** 
+
+
+
+*■ *Z**K 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+Jawaharlal Nehru 
+Step Out From the Old to the New 
+
+
+
+m»>!5s^^*i^: 
+
+
+
+
+,_A» 
+
+
+
+
+**************** 
+
+
+
+BLANK PAGE 
+
+
+
+<_<ii££ 
+
+
+
+
+
+UJ> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 13883:1993 
+IEC 1066:1991 
+
+( Reaffirmed 2006 ) 
+
+
+
+Indian Standard 
+
+THERMOLUMINESCENCE DOSIMETRY SYSTEMS 
+FOR PERSONAL AND ENVIRONMENTAL 
+
+MONITORING 
+
+
+
+UDC 539'12'08: 535377 
+
+
+
+© BIS 1993 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+November 1993 Price Group 14 
+
+
+
+Nuclear Instrumentation Sectional Committee, LTD 26 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with IEC 1066 : 1991, 'Thermoluminescence dosimetry 
+systems for personal and environmental monitoring', issued by the International Electrotechnical 
+Commission ( IEC ) was adopted by the Bureau of Indian Standards on the recommendation of 
+tho Nuclear Instrumentation Sectional Committee ( LTD 26 ) and approval of the Electronics and 
+Telecommunication Division Council. 
+
+In the adopted standard certain terminology and conventions are, however, not identical to 
+those used in Indian Standards. Attention is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they 
+should be read as 'Indian Standard'. 
+
+b) Comma ( , ) has been used as a decimal marker while in Indian Standards, the current 
+practice is to use a point ( . ) as the decimal marker. 
+
+Only the English language text in the international standard has been retained while adopting 
+it in this Indian Standard. 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+Indian Standard 
+
+THERMOLUMINESCENCE DOSIMETRY SYSTEMS 
+FOR PERSONAL AND ENVIRONMENTAL 
+
+MONITORING 
+
+1 Introduction 
+
+Thermoluminescence dosimetry (TLD) systems consist essentially of the following 
+elements: 
+
+a) a passive device, referred to here as a dosemeter, incorporating some means of 
+identification and containing one or more detectors exhibiting the property of thermo- 
+luminescence (TL); 
+
+b) a reader which is used for heating the detector or detectors after exposure to 
+ionizing radiation and for measuring how much light is emitted on heating, in order to 
+determine the radiation dose; 
+
+c) other additional equipment and documented procedures for performing associated 
+processes, such as annealing or cleaning, which may be needed to ensure the effective- 
+ness of the whole system; 
+
+d) documented procedures for converting the measured light output into dose and for 
+handling the resulting data. 
+
+Provision is made for testing the performance of either an entire thermoluminescence 
+dosimetry (TLD) system, dosemeters, detectors or readers tested separately. While 
+items c) and d) are not addressed specifically, they are indirectly tested as part of the TLD 
+system. 
+
+
+
+The performance criteria for the entire TL system are the most comprehensive and have 
+been so designed that compliance ensures adequate performance of the system tested for 
+use in personal and environmental dosimetry consistent with the state of the art. 
+
+
+
+The performance criteria for detectors tested separately include only those criteria that are 
+clearly dependent primarily on the detector and essentially not influenced by other compo- 
+nents needed for testing. Hence, the criteria are restricted only to those that are meaning- 
+ful for a detector regardless of the remaining components used to complete a system. This 
+principle likewise applies to readers tested separately. 
+
+
+
+Some of the performance requirements specified in this standard for thermoluminescence 
+dosimetry (TLD) systems may also be used for the design of TL dosemeters for which 
+purpose the performance requirements for TLD systems identified in table 1 , items 1 to 1 1 
+inclusive, are appropriate. 
+
+Only some specific tests may be carried out on the reader and the results are independent 
+of the dosemeters used. These points are emphasized in order to reduce the number of 
+tests needed to qualify the system (see 8.4). 
+
+The annexes provided in this standard are considered useful for the understanding of the 
+dosemeters and shall be taken as informative. 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+Compliance with the performance criteria for dosemeters, detectors or readers tested 
+separately does not guarantee that any system including these components will comply 
+with the performance criteria for thermoluminescence dosimetry (TLD) systems. 
+
+
+
+2 Scope ^nd object 
+
+This standard provides performance criteria and tests for determining the performance of 
+thermoluminescence dosimetry (TLD) systems, dosemeters, detectors or readers used for 
+personal dosimetry involving photons with energies between 1 5 keV and 3 MeV and beta 
+rays with maximum energies between 0,5 MeV and 3,0 MeV. it does not address neutrons 
+or mixed fields including neutrons. Where the response to neutrons is greater than 1 % of 
+the response to photons, the manufacturer shall draw the attention of the user to this fact 
+and where possible provide qualitative information. The quantity used in this standard for 
+personal dosimetry is individual dose equivalent at depths of 7 or 1 000 mg • cm" 2 . Conver- 
+sion tables are provided for calculating the directional dose equivalent from kerma in air 
+(annex A). 
+
+
+
+This standard also provides performance criteria and tests for thermoluminescence 
+dosimetry (TLD) systems, dosemeters, detectors or readers used for environmental 
+dosimetry involving photons with energies between 30 keV and 3 MeV. It does not specifi- 
+cally address beta or cosmic rays. The quantity used in this standard for environmental 
+dosimetry is ambient dose equivalent. Conversion tables are provided for calculating the 
+ambient dose equivalent from kerma in air (annex B). 
+
+
+
+in all cases, performance is assessed under laboratory conditions which can never 
+adequately simulate the conditions actually experienced in personal or environmental 
+dosimetry. Therefore, caution is necessary when applying the results of these perfor- 
+mance tests m real situations. 
+
+
+
+This standard does not incorporate requirements for extremity dosemeters or neutron 
+dosemeters nor does it cover access to the information or handling of the resulting data. 
+
+
+
+3 Reference documents 
+
+ISO 4037: 1979, X and gamma reference radiations for calibrating dosemeters and dose 
+ratemeters and for determining their response as a function of photon energy. 
+
+
+
+ISO 6980: 1984, Reference beta radiations for calibrating dosemeters and doseratemeters 
+and for determining their response as a function of beta radiation energy. 
+
+ICRU Report 33: 1980, international Commission on Radiation Units and Measurements - 
+Radiation quantities and units. 
+
+ICRU Report 39: 1985, international Commission on Radiation Units and Measurements - 
+Determination of dose equivalents resulting from external radiation sources. 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+4 Definitions 
+
+
+
+4.1 thermoluminescence (TL): Property exhibited by certain substances, namely the 
+emission of light, which is induced by irradiation when the substance is heated following 
+exposure to ionizing radiation or UV. Strictly, the property should be referred to as radio- 
+thermoluminescence but the abbreviated form thermoluminescence is usually adequate. 
+
+
+
+4.2 thermoluminescent (TL) material: Substance exhibiting the property of thermo- 
+luminescence. 
+
+4.3 thermoluminescent (TL) detector (abbreviation - detector): Specified quantity of 
+TL material, or such material incorporated with other non-luminescent material into a 
+matrix, being defined by mass, shape or size or the mass of material incorporated in the 
+matrix. 
+
+4.4 thermoluminescent (TL) dosemeter (abbreviation - dosemeter): Passive device 
+consisting of one or more TL detectors, which may be mounted in a holder (appropriate for 
+the application), intended to be worn on a person's body or placed in an environment for 
+the purpose of assessing the appropriate dose equivalent at or near the position where it 
+is placed. 
+
+4.5 thermoluminescent (TL) dosemeter reader (abbreviation - reader): Instrument 
+used to measure the light emitted from the detectors in thermoluminescence dosemeters, 
+consisting essentially of a heating device, a light measuring device and the associated 
+electronics. 
+
+4.6 thermoluminescence dosimetry (TLD) system (abbreviation - system): The TL 
+dosemeter, reader and all associated equipment and procedures used for assessing the 
+evaluated value. 
+
+4.7 environment: Areas to which members of the general public have unrestricted 
+access. 
+
+4.8 environmental dosemeter: Dosemeter intended to be placed in the environment. 
+
+
+
+4.9 personal dosemeter: Dosemeter intended to be worn on the body. 
+
+4.10 type of system, detector or reader: Dosemeters, detectors or readers made to the 
+same design and specification and expected to have the same properties as each other 
+within specified limits. 
+
+4.11 batch (of detectors or dosemeters): Collection of detectors or dosemeters made 
+to a specific design or specification and intended to have the same performance 
+characteristics consistent with the appropriate requirements of this standard. 
+
+
+
+4.12 annealing: Controlled thermal treatment of a TL detector or dosemeter during or 
+after readout. 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+4.13 prepare: Normal treatment of annealing, cleaning, etc., which the dosemeters or 
+detectors are intended to be subjected to in routine use. 
+
+4.14 readout: Process of measuring the light emitted when a thermoluminescence 
+detector is heated in a reader. 
+
+4.15 readout value r; Value indicated by a TL reader after readout of a detector 
+expressed in units appropriate to the output of the reader. 
+
+4.16 exposure X: Quotient of dQ by dm where the value of dC? is the absolute value of 
+the total charge of the tons of one sign produced in air when alt the electrons (negatrons 
+and positrons) liberated by photons in air of mass dm are completely stopped in air: 
+
+dm 
+
+NOTE - The special unit of exposure, roentgen R, may be used temporarily: 
+
+1 R . 2,58 x 10" 4 C • kg" 1 (exactly) 
+
+4.17 absorbed dose D: Quotient of d£ by dm, where de is the mean energy imparted by 
+ionizing radiation to matter of mass dm. The special name for the unit of absorbed dose is 
+gray Gy: 
+
+1 Gy = 1 J • kg' 1 
+
+The special unit of absorbed dose, rad, may be used temporarily. 
+
+1 rad = 10" 2 Gy 
+
+In this standard, absorbed doses are specified in grays, with the corresponding value in 
+rad given in brackets. Where no ambiguity can be involved, the term "absorbed dose" is 
+abbreviated to "dose". 
+
+4.18 kerma K: Quotient of dE tr by dm, where d£ tr is the sum of the initial kinetic energies 
+of all the charged ionizing particles liberated by uncharged ionizing particles in a matter of 
+mass dm: 
+
+dE tr 
+
+
+
+dm 
+The special name for the unit of kerma is gray Gy: 
+
+1 Gy - 1 J • kg" 1 
+
+4.19 dose equivalent H: Product of D, Q and N at the point of interest in tissue where D 
+is the absorbed dose, Q is the quality factor and N is the product of all other modifying 
+factors: 
+
+H=DQN 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+The Si unit for both D and H is joule per kilogram. The special name for the unit of dose 
+equivalent is sievert Sv: 
+
+18V-1J- kg" 1 
+
+The special unit of dose equivalent, rem, may be used temporarily: 
+
+1 rem = 1 0" 2 Sv 
+
+4.20 ambient dost equivalent H*(d): Ambient dose equivalent, H*{d) at a point in a 
+radiation field, is the dose equivalent that would be produced by the corresponding aligned 
+and expanded field (note 2) in the ICRU sphere at a depth, d, on the radius opposing the 
+direction of the aligned field. 
+
+NOTES 
+
+1 The recommended depth, d, for monitoring in terms of H*(d) is 10 mm and H*(d) may be written as 
+W(10). 
+
+2 In the expanded field, the fluence and its angular and energy distribution have the same values 
+throughout the volume of interest as in the actual field at the point of reference. In the aligned and expan- 
+ded field, the fluence and its energy distribution are the same as in the expanded field but the fluence is 
+unidirectional. 
+
+4.21 directional dose equivalent H*(d): Directional dose equivalent, H'{d) at a point in a 
+radiation field, is the dose equivalent that would be produced by the corresponding 
+expanded field (see 4.20, note 2) in the ICRU sphere at a depth, d, on a radius in a 
+specified direction. 
+
+NOTE - The recommended depth, d, for monitoring in terms of H"(d) is 0,07 mm and tf(d) may be written 
+as H' (0.07). 
+
+4.22 individual dose equivalent, penetrating H Ad): Individual dose equivalent, 
+penetrating, H Ad), is the dose equivalent in soft tissue below a specified point on the body 
+at a depth, d, that is appropriate for strongly penetrating radiation. 
+
+NOTE - The recommended depth, d, for monitoring in terms of HAd) Is 10 mm, and HAd) may be written 
+asHptIO). 
+
+4.23 individual dose equivalent, superficial H 8 (d): Individual dose equivalent, super- 
+ficial, H 8 (d), is the dose equivalent in soft tissue below a specified point on the body at a 
+depth, d, that is appropriate for weakly penetrating radiation. 
+
+NOTE - The recommended depth, d, for monitoring in terms of HAjd) is 0,07 mm and H t (d) may be written 
+as H,(0,07). 
+
+4.24 evaluated value E: Value of the quantity of interest (e.g. directional dose equiva- 
+lent H'(10); air kerma K B obtained ' . applying the appropriate evaluation factor, F m , to the 
+readout value or values r). 
+
+4.25 conventional true value C: Best estimate of the quantity of interest at the point of 
+measurement (e.g. directional dose equivalent H'(10);«ir kerma KA. 
+
+
+
+4.26 evaluation factor F e : Factor, or collection of factors, used to convert the readout 
+value or values r to the evaluated value of interest E (see annex C), 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+A 07 vaa1*4««** «%Imm«<*I* Dj>kMj44*ka •* AiAf%rtl Alt*Ai*vAs4 An #*A/sArk*4 rAa^fl#%n# 4nit*%iAilnn rtnrmal 
+-r.t./ IC9IUWC oiyiim. iioauuui oi^nai uuiamnu v/n giouviiu msujwui ivuvmii)) ■ ■««<•■■««■ 
+
+readout and annealing procedures. 
+
+4.28 conversion factor F c : Factor used to convert from air kerma to the corresponding 
+dose equivalent (see annexes A and B). 
+
+4.29 response R: Quotient of the evaluated value and the conventional true value. 
+
+4.30 self-irradiation: Irradiation of the detector due to radioactive impurities contained 
+in the dosemeter holder or detector itself. 
+
+4.31 phantom: Specified object used to simulate the human body in terms of its scatte- 
+ring and absorption of gamma and beta radiation. 
+
+4.32 zero point: Evaluated value of an unirradiated prepared dosemeter. 
+
+4.33 reader background: Evaluated value corresponding to the readout value obtained 
+when the reader is operated without a dosemeter or detector. 
+
+4.34 detection threshold: Minimum evaluated value for which the readout value of a 
+dosemeter is significantly different (at the 95 % confidence level) from the readout value of 
+an unirradiated dosemeter. 
+
+4.35 coefficient of variation: Ratio V of the standard deviation, s, to the arithmetic 
+mean x of a set of n measurements Xj, given by the following formula: 
+
+V »■ — «s 
+
+
+
+
+4.36 routine test RT: Test performed on each TLD system, dosemeter, detector or 
+reader to determine performance characteristics. 
+
+4.37 quality control test QT: Test performed on a number of TLD systems, dosemeters, 
+detectors or readers of a given batch or production designed to ensure quality control. 
+
+
+
+4.38 type test TT: Test performed on a small number of TLD systems, dosemeters, 
+detectors or readers of a given type to determine performance characteristics of that type. 
+
+
+
+5 Units 
+
+This standard uses SI units. For radiation quantities, the values expressed in units in 
+temporary use (R, rad, rem) are also indicated in brackets. The following units of practical 
+importance will also be used where appropriate: 
+
+- for time: years (y), days (d), hours (h), minutes (min), and 
+
+- for energy: electronvolt (eV). 
+
+
+
+IS 13883: 1993 
+(EC 1066: 1991 
+
+6 General test conditions 
+
+6.1 Testing conditions 
+
+All tests shall be performed under standard test conditions (table 4), except when 
+otherwise stated. Systems, detectors and readers shall be tested in the manner in which 
+they are ©xpected to be used during routine personal or environmental dosimetry. For 
+example, defeciors shall be subjected to the annealing, cleaning and handling procedures 
+recommended by the manufacturer. 
+
+6.2 Reference radiations 
+
+Ail tests involving the use of irradiated dosemeters or detectors shall be carried out using 
+the radiation sources as specified in ISO Star.dard 4037 and ISO Standard 6980. 
+
+
+
+Photon reference radiations used for spectral response tests shall be chosen from column 
+A of the table 1 in 3.1 of ISO Standard 4037. Sources for beta radiation spectra response 
+tests shall be 90 Sr (in equilibrium with 90 Y) and 204 TI in accordance with ISO Standard 
+6980. 
+
+The calibration of the radiation sources used shall be traceable to the appropriate primary 
+or secondary standards. 
+
+7 Classification and designation 
+
+7. 1 Classification of systems, detectors and readers 
+
+All systems, detectors and readers are classified according to use: personal (PJ and/or 
+environmental IE J. 
+
+Systems, detectors and readers intended for use in personal dosimetry are further classi- 
+fied according to the dose equivalent of interest in terms of depth in tissue, either 7 or 
+1 000 mg • cm" 2 . 
+
+Systems, detectors and readers intended for use in environmental dosimetry are further 
+classified according to the lower energy of X or gamma radiation that they are intended to 
+measure, either 30 keV or 80 keV, and then according to the minimum period of use for 
+which they are suited, either seven days (7 d) or thirty days (30 d). 
+
+
+
+7.2 Designation of systems, detectors and readers 
+
+For personal dosimetry, systems, detectors and readers are designated by the following 
+notation: 
+
+P # (dose equivalent of interest expressed as depth in tissue in mg • cm" 2 ). 
+
+For environmental dosimetry, systems, detectors or readers are designated by the 
+following notation: 
+
+E n (lower energy in keV) (minimum use period in days). 
+
+
+
+IS 13883 : 1393 
+IEC 1066 : 1991 
+
+Example Designation 
+
+TLD system intended to measure dose equivalent 
+
+at 7 mg . cm" 2 P e (7 mg . cm" 2 ) 
+
+TLD system intended to be used for all personal and 
+
+environmental dosimetry P e (all); E n (all) 
+
+TL detector intended to be used for environmental 
+
+dosimetry for energies as low as 30 keV and for periods 
+
+as short as 1 week E n (30 keV) (7 d) 
+
+TL reader intended to be used for personal dosimetry P (all) 
+
+8 Performance requirements and test methods 
+
+8. 1 General 
+
+Performance criteria are summarized in table 1 for TLD systems, for readers in table 2 and 
+for detectors in table 3. Only the performance criteria pertaining to a particular class of 
+system, reader or detector need to be met for that class to comply with this standard. 
+
+
+
+If a detector and/or a reader are being tested as part of a system, they do not need to be 
+tested for the performance criteria in tables 2 and 3, only for those in table 1 . If readers or 
+detectors are being tested separately, they need only be tested for the performance 
+criteria in table 2 or table 3, respectively. Since, in most cases, detectors are incorporated 
+in dosemeters for practical application, there are very few quantitative performance criteria 
+for detectors alone that are relevant, However, information on basic detector performance 
+is necessary. The ICRU sphere (ICRU Report 33, 1980) is a tissue-equivalent sphere, 
+30 cm in diameter, with a density of 1 g.cm" 3 and a mass composition of 76,2 % oxygen, 
+11,1 % carbon, 10,1 % hydrogen and 2,6 % nitrogen. Therefore, compliance with this 
+standard also requires that appropriate information be provided as indicated in table 3. 
+
+
+
+8.2 Quantities of interest and calibration 
+
+Performance criteria given in tables 1 , 2 and 3 and the different tests are generally 
+expressed in terms of the conventional true value C and of the evaluated value E. It is 
+assumed that the uncertainty determining Ccan be neglected. 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Table 1 - Performance requirements for TLD systems 
+
+
+
+No. 
+
+
+Performance 
+characteristic 
+
+
+Class of 
+
+system 
+
+
+Performance requirements 
+
+
+Test required 
+
+TT -type 
+QT _ quality 
+control 
+RT m routine 
+
+
+Subclause 
+
+specifying 
+
+test 
+
+
+1 
+
+
+Batch homo- 
+g* natty 
+
+
+All 
+
+
+The evaluated value for any one dosemeter In a batch shall not differ from 
+the evaluated value tor any other dosemeter in the batch by more than 
+30 % for a dose equal to 10 times the required detection threshold limit 
+
+
+RT 
+
+
+8.6.1 
+
+
+2 
+
+
+Reproducibility 
+
+
+P. («") 
+
+E n (»ll)(7 d) 
+
+E n (all)(30d) 
+
+
+The coefficient of variation of the evaluated value shall not exceed 7,5 % 
+tor each dosemeter separately and all ndosemeters collectively, for 
+a dose of: 
+
+10 mSv (1 rem) 
+SO |iSv (5 mrem) 
+200 uSv (20 mrem) 
+
+
+TT. QT. RT 
+
+
+5.6.2 
+
+
+3 
+
+
+Uneerlty 
+
+
+P # («ll) (7 mg • cm -2 ) 
+P, (all) (1 000 mg • cm' 2 ) 
+
+E n (•") (7 d) 
+E„ (all) (30 d) 
+
+
+The response shall not vary by more than 1 % over the range: 
+
+0,5 mSv - 1 Sv (50 mrem • 1 00 rem) 
+0.1 mSv - 1 Sv (10 mrem - 100 rem) 
+10 uSv - 100 mSv (1 mrem ■ 10 rem) 
+30 pSv • 1 00 mSv (3 mrem - 1 rem) 
+
+
+TT 
+
+
+0.6.3 
+
+
+4 
+
+
+Stability of dose- 
+malar* under 
+various climatic 
+condition* 
+
+
+All 
+
+
+The evaluated values of dosemeters Irradiated either at ttve beginning 
+or at the end of a storags period shall not differ from the conventional 
+true value by more than: 
+
+5 % tor 30 d storage under standard test conditions 
+10 X for 00 d storage under standard lest conditions 
+20 % tot 30 d storage at 50 'C. 65 % relative humidity 
+20 % for 30 d Storags at 20 *C, 90 % relative humidity 
+
+
+TT.QT 
+
+
+6.6.4 
+
+
+5 
+
+
+Detection 
+threshold 
+
+
+P e (7 mg ■ cm" 2 ) 
+P # (1 000 mg • cm" 2 ) 
+E„ <*«) (7 d) 
+E n (all) (30 d) 
+
+
+The detection threshold shall not exceed: 
+
+0,5 mSv (SO mrem) 
+0,1 mSv (10 mrem) 
+10 fiSv (1 mrem) 
+30 |iSv (3 mrem) 
+
+
+TT. QT. RT 
+
+
+8.6.5 
+
+
+6 
+
+
+Self-Irradiation 
+
+
+P. (7 mg • em" 2 ) 
+P, (1 000 mg • cm" 2 ) 
+
+
+After a storage period of 30 d, the zero point shall not exceed: 
+
+0,5 mSv (50 mrem) 
+0,1 mSv (10 mrem) 
+30 |iSv (3 mrem) 
+
+
+TT.QT 
+
+
+8.6.6 
+
+
+7 
+
+
+Residual signal 
+
+
+P, (all) 
+
+E n m 
+
+
+After Irradiation with a conventional true value of 100 mSv (10 rem), the 
+required detection threshold shall not be exceeded and the response 
+shall not change by more than 10 % at a dose level of 2 mSv (200 mrem) 
+
+After Irradiation wltn a conventional true value of 10 mSv (1 rem), the 
+required detection threshold shall not be exceeded and the response 
+shall not change by more than 10 % at a level ol 0.2 mSv (20 mrem) 
+
+
+TT 
+
+
+8.6.7 
+
+
+8 
+
+
+Effect of light 
+exposure on the 
+dosemeter 
+
+
+All 
+
+
+A* a result of exposure to 1 000 ft ■ m tor 24 h. the zero point shall 
+not change by more than the required detection threshold and for ex- 
+posure for one week the evaluated value shall not dttler from the evalu- 
+ated value of dosemeter* Kept In the dark by more than 10 H 
+
+
+TT.QT 
+
+
+8.6.8 
+
+
+
+(continued on page 27} 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Table 1 (concluded) 
+
+
+
+No. 
+
+
+
+to 
+
+
+
+12 
+
+
+
+14 
+
+
+
+Performance 
+Characteristic 
+
+
+
+Energy response 
+(photons) 
+
+
+
+Energy 
+response 
+(beta ray*) 
+
+Isotropy 
+(photons) 
+
+
+
+17 
+
+
+
+18 
+
+
+
+Class o1 
+system 
+
+
+
+p. t«"> 
+
+E n (30 keV) (all) 
+
+
+
+£„ (80 keV) (all) 
+
+
+
+P. <•«) 
+P. (*") 
+
+
+
+Primary power 
+supply voltage 
+and frequency 
+
+Transient 
+voltage 
+
+Effect of climatic 
+conditions on 
+reader 
+
+
+
+Effect of VI- 
+brfiuvTi on reece? 
+
+
+
+Dropping effect 
+on dosemeter 
+
+
+
+Dropping effect 
+on reader 
+
+
+
+Effect of reader 
+light leakage 
+
+
+
+All 
+
+
+
+All 
+
+
+
+All 
+
+
+
+All 
+
+
+
+All 
+
+
+
+Performance requirements 
+
+
+
+When Irradiated with photons In the range: 
+
+15keV-»,0MeV 
+
+30 keV - 3.0 MeV, 
+
+the evaluated value shall net differ from the conventional true value by 
+
+more than 30 % 
+
+When Irradiated with photons In the range 30 keV to 80 keV. the evaluated 
+value shali not exceed the conventional true value by more than a factor 
+of 2 and when irradiated with photons In the rang* 80 keV to 3 MeV, the 
+evaluated value shall not differ from the conventional true value by more 
+than 30% 
+
+When irradiated with beta rays In the range (£„,„) 0,5 MeV to 3 MeV, 
+the response shall not vary by more than 30 .% 
+
+When Irradiated In two perpendicular planes with photons of (80 t 5) keV. 
+the mean value of the responses at an angle of Incidence of 20*. 40* 
+and 60* from normal shall not differ from the corresponding response tor 
+normal Incidence by more than 1 5 % 
+
+
+
+.80- 
+
+
+
+, 137, 
+
+
+
+When Irradiated with ""Co or ""Cs while being rotated around three 
+perpendteuelr axes using the centre of the dosemeter as the centre of 
+rotation, the response shall not vary by more than 1 5 % 
+
+The evaluated value of dosemeter* read out under steady conditions ol 
+high and low voltage/frequency, shall not differ from the evaluated value 
+of dosemeter* read out under normal reader operating conditions by 
+more than S % 
+
+The evaluated value of dosemeters read out following voltage transients 
+shall not differ from the evaluated value of dosemeters read out under 
+normal reader operating conditions by more than 5 % 
+
+The reader background shall not vary by more than 20 % of the re- 
+quired detection threshold and the evaluated value shall not differ from 
+the evaluated values determined under normal conditions by more than 
+10 % after and during exposure of the reader to the temperature and 
+humidity conditions reported In the test 
+
+The evaluated value ol dosemeters read out after exposure of the 
+reader to sinusoidal vibration shaii riot differ from vie evaluated value 
+following read out under normal reader conditions by more than S % 
+
+The evaluated value of dosemeters read out after being dropped 1 m 
+onto a concrete surface shall not differ from the evaluated value under 
+normal eondltJon* by more than 10 % 
+
+The evaluated value of dosemeters read out after dropping the 
+
+reader 1 cm onto a wood surface shall not differ from the evaluated value 
+
+under normal reader condition* by more than 5 % 
+
+The reader background shall not vary by more than 20 % of the required 
+
+
+
+detection threshold when the reader Is exposed to 1 000 W - 
+light 
+
+
+
+ol 
+
+
+
+Test required 
+
+TT -type 
+QT - quality 
+control 
+RT - routine 
+
+
+
+Subdauss 
+specifying 
+test 
+
+
+
+8.6.9 
+
+
+
+6.6.10 
+
+
+
+TT 
+
+
+
+TT 
+
+
+
+B.6.11 
+
+
+
+8.6.12 
+
+
+
+8.6.13 
+
+
+
+RT 
+
+
+
+8.6.15 
+
+
+
+6.6.16 
+
+
+
+8.6.17 
+
+
+
+8.6.18 
+
+
+
+10 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Table 2 - Performance requirements for TL readers 
+
+
+
+No. 
+
+
+Performance 
+Char act* rletlc 
+
+
+Clat* of 
+•y*t*m 
+
+
+Performance requirement* 
+
+
+T*»t required 
+
+TT -type 
+QT - quality 
+control 
+RT » routine 
+
+
+Subclause 
+
+■pacifying 
+
+t**t 
+
+
+1 
+
+
+Reader •lability 
+
+
+All 
+
+
+Tha avaluatad vaiuo* of dosemstor* raad out 2* h apart and 1 66 h apart 
+•hall not differ f rom aach othar by mora than S % and 10 % respectively 
+
+
+BT 
+
+
+6.7.2 
+
+
+8 
+
+
+Primary power 
+supply voltage 
+and frequency 
+
+
+All 
+
+
+Tha avaluatad valuaa of doaamatara, raad out under steady eondltiona 
+of high and tow voltage/frequency, ahall not differ from tha avaluatad 
+valuaa of doaamatara raad out undar normal raadar operating eondltiona 
+by more than S % 
+
+
+TT 
+
+
+6.6.12 
+
+
+9 
+
+
+Tranalant 
+voltage 
+
+
+All 
+
+
+Tha avaluatad valuaa of doaamatara, raad out following voltage tranalant 
+•hall not differ from tha evaluated value* of doaameter* raad out undar 
+normal raadar operating eondltiona by more than 6 % 
+
+
+TT 
+
+
+6.6.13 
+
+
+4 
+
+
+Effect of 
+
+climatic condition* 
+
+on raadar 
+
+
+All 
+
+
+Tha raadar background ahall not vary by more than 20 % of tha required 
+detection threehold and the avaluatad valuaa ahall not dtffar from tha 
+avaluatad value* determined undar normal eondltiona by mora than 10 % 
+attar and during expoaure of tha raadar to tha tamperatura and humidity 
+condition* reported In the t**t 
+
+
+TT 
+
+
+6.6.14 
+
+
+5 
+
+
+Effact of 
+vibration on 
+raadar 
+
+
+All 
+
+
+The avaluatad value* of doeemeters raad out after exposure of the 
+
+tha reader to *lnu*oldal vibration ahall not differ from tha avaluatad valuaa 
+
+following raad out under normal raadar eondltiona by mora than 8 % 
+
+
+TT 
+
+
+8.6.16 
+
+
+e 
+
+
+Dropping affaet 
+on raadar 
+
+
+All 
+
+
+Tha avaluatad valu** of doaamatara read out attar dropping tha 
+raadar 1 em onto a wood aurface ahall not differ from tha avaluatad 
+value* under normal reader condition* by mora than 6 % 
+
+
+TT 
+
+
+8.6.17 
+
+
+7 
+
+
+Effact of raadar 
+light leakage 
+
+
+All 
+
+
+Tha raadar background *h*N not vary by mora than 20 % of tha 
+required detection threshold whan tha reader la exposed to 
+1 000 W • m' 2 of light 
+
+
+RT 
+
+
+6.6.16 
+
+
+
+Table 3 - Performance requirements and information requested for TL detectors 
+
+
+
+No. 
+
+
+Performance 
+Characteristic 
+
+
+Claaa of 
+
+aystem 
+
+
+Performance requiremente 
+
+
+Teat required 
+
+TT -type 
+QT - quality 
+control 
+RT - reunite 
+
+
+Subclause 
+
+specifying 
+
+teat 
+
+
+
+
+
+
+
+
+Performance roqulrmmonft 
+
+
+
+
+
+
+1 
+
+
+Batch homo- 
+geneity 
+
+
+Ml 
+
+
+The evaluated value for any one detector in a batch ahall net differ 
+from tha evaluated value for any othar In the batch by mora than 30 % 
+for a dose of 10 mQy (t rad) 
+
+
+HT 
+
+
+6.6.2 
+
+
+2 
+
+
+Reproducibility 
+
+
+P. (all) 
+
+E n (all) (7 d) 
+
+E n (all) (30 d ) 
+
+
+Tha coefficient of variation of the avaluatad value ahall not exoeed 
+7,5 % for a dose of : 
+
+10 may (1 rad) 
+50 u.Gy (5 mrad) 
+200 |iQy (20 mrad) 
+
+Information roquet fad 
+
+
+TT.QT 
+
+
+6.6.3 
+
+
+3 
+
+
+linearity 
+
+
+P. (»«) 
+E„W 
+
+
+Tha avaluatad value (and standard deviation) relative to tha conventional 
+true value ahall be given over the range: 
+
+0.1 mQy to t Qy (10 mrad to 100 rad) 
+0,03 mQy to 0.1 Qy (3 mrad to 10 rad) 
+
+
+TT.tJT 
+
+
+6.8.1 
+
+
+4 
+
+
+Energy response 
+(photons) 
+
+
+All 
+
+
+The evaluated value (and standard deviation) relative to the conventional 
+-woe valu* ahall be given over th* rang* IS kaV to 3 MeV 
+
+
+TT 
+
+
+8.0.3 
+
+
+5 
+
+
+Effect* of light 
+exposure on tha 
+detector 
+
+
+All 
+
+
+The zero point (and standard deviation) for detector* exposed to 
+1 000 W • ro~ 2 lot 1 d and the response after"! weak shall be given 
+relative to those for dsteetor* kept In the dark under conditions 
+otherwise Identical 
+
+
+TT 
+
+
+8.0.5 
+
+
+
+11 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+In the case of TLD systems, table 1 , the units to be used tor the relevant dose equivalent 
+quantity are Sv (rem). In the case of readers (table 2) or detectors (table 3), kerima in air 
+expressed in gray may be used for all classes. 
+
+
+
+Where applicable, readout values shall be converted to evaluated values according to the 
+information and procedures given in annexes A, B and C. 
+
+All tests involving environmental TLD systems shall be performed with the dosemeter 
+irradiated free in air. All tests for spectral response or isotropy involving personal TLD 
+systems shall be performed with the dosemeter irradiated on a phantom (one possible 
+phantom is the 30 cm-diameter ICRU sphere, see 8.1. Other phantoms are not excluded, 
+provided that information be made available.) 
+
+
+
+Since the results of the remaining tests for personal dosimetry do not depend on the 
+absence or presence of a phantom, they may be performed with or without a phantom. 
+
+
+
+8.3 Type of test required 
+
+Tests shall be performed as type tests (TT) (see 4.38), quality control tests (QT) 
+(see 4.37), and/or routine tests (RT) (see 4.36) as indicated in tables 1, 2 and 3. Type 
+tests shall be carried out to establish the basic performance of a type of system, detector 
+or reader. Quality control tests shall be carried out to verify that the performance of a 
+specific production or delivery batch of systems, detectors or readers is consistent with 
+that type. Routine tests shall be performed on each system, detector or reader. 
+
+
+
+8.4 Minimizing the numbers of tests 
+
+Once a system has been type-tested, any other tests to be performed on dosemeters of 
+that system type may be performed with any reader of that system type and vice versa. 
+
+
+
+In characteristics 1 , 2, 3, 4 and 8 of table 1 where the performance requirements are the 
+same for more than one class and the detectors used are the same for these classes, then 
+the tests need to be done for only one class. 
+
+The tests for characteristics 12, 13, 14, 15, 16 and 17 need to be done with only one class 
+or one type of dosemeters or detectors because the results are independent of all compo- 
+nents in the system other than the reader. Consequently the results are valid for all 
+systems incorporating the same reader. 
+
+
+
+12 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+5.5 Number of dosemeters or detectors required for each test 
+
+The number of dosemeters or detectors used for each test, or in certain cases the number 
+of repeated tests shall be such that the performance requirements are demonstrated to be 
+met with 95 % confidence. This number may be determined from the results of a series of 
+repeated measurements on dosemeters within the batch being tested (e.g. during batch 
+homogeneity measurements) using the methods described in annex correcting, if 
+necessary, for ^dividual sensitivities. (For tests where the test dose is greater or equal to 
+the test dose for the fratch homogeneity test, the coefficient of variation of results from the 
+batch homogeneity test may be used to determine n.) For tests where the coefficient of 
+variation can be expected to be greater than that for batch homogeneity (e.g. tests with 
+lower test doses or tests where the influence parameter may affect the coefficient of 
+variation), it will be necessary to determine the coefficient of variation of results for that 
+test and apply an appropriate Student's t factor. 
+
+The detailed test requirements therefore include appropriate statistical criteria in general 
+terms for n dosemeters. However, it may be convenient to arbitrarily use 5, 10 or 20 dose- 
+meters or irradiations in any given test by agreement between manufacturers and 
+purchasers. In such a case, n would be 5, 10 or 20 and f would be 2,78, 2,26 or 2,09, 
+respectively. (See annex D, table D.1). 
+
+8.6 Requirements and test methods for TLD systems 
+
+The different requirements and tests are expressed in terms of conventional true value C 
+and evaluated value E where both quantities are intended to give the dose equivalent at 
+the specified depth in tissue (as defined in ICRU Report 39) for personal dosimetry and 
+the ambient dose equivalent (as defined in ICRU Report 39) for environmental dosimetry. 
+
+
+
+8.6.1 Batch homogeneity 
+
+8.6.1.1 Requirements 
+
+The evaluated value for any one dosemeter in a batch shall not differ from the evaluated 
+value for any other dosemeter in the batch by more than 30 % for a dose equal to 10 times 
+the required detection threshold limit. 
+
+8.6. 1 .2 Test method (RT) 
+
+Prepare and irradiate all dosemeters in the batch to the same conventional true value C, 
+equal to 10 times the required detection threshold limit, e.g. a dose of 1 mSv (100 mrem) 
+to r p e (1 000 mg • cm* 2 ). Determine the evaluated value Efor each dosemeter and identify 
+the dosemeters with the maximum and minimum evaluated values, E m ,,„ and E . 
+
+max min 
+
+respectively. 
+Show that: 
+
+
+
+max " min 
+min 
+
+
+
+£0,3 
+
+
+
+13 
+
+
+
+IS 13883: t993 
+IEC 1066: 1991 
+
+8.6.2 Reproducibility 
+
+8.6.2.1 Requirements 
+
+The coefficient of variation of the evaluated value shall not exceed 7,5 % for each dose- 
+meter separately and all n dosemeters collectively for a dose of: 
+
+- 10 mSv (1 rem) for class P e (all); 
+
+- 50 nSv (5 mrem) for class E n (all) (7 d); 
+
+- 200 jtSv (20 mrem) for class E n (all) (30 d). 
+
+8.6.2.2 Test method (TT. QT. RT) 
+
+Prepare, irradiate and read out each of n dosemeters. Repeat this 10 times. The conventio- 
+nal true value shall be exactly the same each time and about: 
+
+- 10 mSv (1 rem) for all class P e dosemeters; 
+
+- 50 nSv (5 mrem) for class E n dosemeters with a minimum use period of 7 days; and 
+
+- 200 nSv (20 mrem) for class E n dosemeters with a minimum use period of 30 days. 
+
+For each dosemeter, determine E* where j refers to the /-t'n dosemeter and / refers to ihe 
+/-th irradiation. 
+
+For each of the 10 irradiations, calculate the mean E f and the standard deviation sg-.. 
+Show that: 
+
+
+
+sg-j + /j 
+
+
+
+1° _ 
+2 E. I 1-0 
+/« 1 
+
+
+
+< 0,075 
+
+
+
+where / jt confidence interval of s^- ,, is calculated according to D.2 of annex D. 
+
+For each of the n dosemeters, determine the mean value E- and the standard deviation 
+
+where: 
+
+1 10 
+
+E. « Z £.. 
+
+1 10 ,., 'J 
+
+Show that for each of the n dosemeters: 
+
++ /• 
+i i 
+
+< 0,075 
+
+
+
+% +1 \ 
+
+
+
+E. 
+j 
+
+
+
+where /, is calculated according to D.2 of annex D. 
+
+14 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+8.6.3 Linearity 
+
+8.6.3.1 Requirements 
+
+The response shall not vary from the conventional true value by more than 1 % over the 
+following ranges: 
+
+- class P^ (7 mg • cm" 2 ) systems - 0,5 mSvto 1 Sv (50 mrem to 100 rem); 
+
+- class P # (1 ©GCS mg • cm" 2 ) systems - 0,1 mSv to 1 Sv (10 mrem to 100 rem); 
+
+- class E n (all) (7 d) - 10 uSv to 100 mSv (1 mrem - 10 rem); 
+
+- class E n (all) (30 d) - 30 uSv to 100 mSv (3 mrem - 10 rem). 
+
+8.6.3.2 Test (TT) 
+
+Prepare, irradiate and read out four groups of dosemeters, where n { is the number of dose- 
+meters of the /-th group. The conventional true values C { yiven to each group shall be as 
+follows: 
+
+- class P e (7 mg • cm" 2 ) - 0,0005; 0,001; 0,01; 0,1 and 1 Sv (0,05; 0,1; 1; 10 and 100 
+rem); 
+
+- class P e (1 000 mg - cm" 2 ) - 0,0001; 0,001; 0,01; 0,1 and 1 Sv (0,01; 0,1; 1; 10 and 
+100 rem); 
+
+- class E n (all) (7 d) - 0,01; 0,1; 1; 10 and 100 mSv (0,001; 0,01; 0,1; 1 and 10 rem); 
+
+- class E n (all) (30 d) - 0,03; 0,1 ; 1 ; 10 and 100 mSv (0,003; 0,01; 0,1; 1 and 10 rem). 
+
+Calculate the mean evaluated value E t at each irradiation level and its standard deviation 
+s^i- 
+
+Show that: 
+
+£. ±/. 
+0,90 £ 5 1,10 
+
+where l t is obtained from D.3 of annex D for n s dosemeters. The uncertainties over C } are 
+considered negligible. 
+
+8.6.4 Stability of dosemeter under various climatic conditions 
+
+8.6.4.1 Requirements 
+
+For all classes of systems, the evaluated values of dosemeters irradiated either at the 
+beginning or at the end of a storage period shall not differ from the conventional true value 
+by more than: 
+
+- 5 % for 30 days, storage under standard test conditions; 
+10 % for 90 days, storage under standard lest conditions; 
+
+- 20 % for 30 days, storage at 50 °C, 65 % relative humidity; 
+
+- 20 % for 30 days, storage at 20 *C, 90 % relative humidity. 
+
+8.6.4.2 Test method (TT, QT) 
+
+A) Prepare two groups of n dosemeters each. Store both groups for 24 h under 
+standard conditions. 
+
+15 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+Irradiate group 1 to a known conventional true value (C) of about: 10 mSv (1 rem). 
+
+Store both groups of dosemeters in a climatic chamber in which standard test condi- 
+tions prevail. 
+
+After a continuous period of 30 days, remove both groups of dosemeters from the 
+climatic chamber, irradiate group 2 to the same conventional true value as group 1 . 
+
+Store both groups for 24 h under standard test conditions. 
+
+Determine the evaluated value E for each dosemeter and calculate the mean of the 
+
+
+
+evaluated values E for each of the two groups and the respective standard deviations 
+
+Show that. 
+
+E (group 1 , group 2) 
+0,95 £ ±/<Sl,05 
+
+
+
+where /is calculated according to D.3 of annex D. 
+
+B) Repeat the test specified in A) for a storage period of 90 days. 
+Show that: 
+
+E (group 1 , group 2) 
+
+0,90 £ ± /< 1,10 
+
+C 
+
+where /is calculated according to D.3 of annex D. 
+
+C) Repeat the test specified in A) for a storage period of 30 days but store in a climatic 
+chamber in which the temperature is 50 °C ± 2 °C and the relative humidity is 
+about 65 %. 
+
+
+
+Show that: 
+
+
+
+E (group 1 , group 2) 
+
+0,80 <, ± / <, 1 ,20 
+
+
+
+where /is calculated according to D.3 of annex D. 
+
+D) Repeat the test specified in A) for a storage period of 30 days but store in a climatic 
+chamber in which the temperature is 20 °C ± 2 °C and the relative humidity is 90 %. 
+
+
+
+Show that: 
+
+
+
+E (group 1 . group 2} 
+
+0,80 £ ± l<. 1,20 
+
+C 
+
+
+
+where /is calculated according to D.3 of annex D. 
+
+
+
+16 
+
+
+
+iS 13883: 1993 
+IEC 1066: 1991 
+
+8.6.5 Detection threshold 
+
+8.6.5.1 Requirements 
+
+The detection threshold shall not exceed: 
+
+- 0,5 mSv (50 mrem) for class P e (7mg • cm" 2 ) systems; 
+
+- 0,1 mSv (10 mrem) for class P (1 000 mg • cm" 2 ) systems; 
+
+- 10 uSv (1 mrem) for class £ n (all) (7 d) systems; 
+
+- 30 nSv (3 mrem) for class E n (all) (30 d) systems. 
+
+8.6.5.2 Test method (TT, QT, RT) 
+Prepare and read out n dosemeters. 
+
+Determine the evaluated value E for each (unirradiated) dosemeter and calculate the 
+mean of the evaluated values E and standard deviation sg- for all n dosemeters. 
+
+Show that: 
+
+t nH <H 
+
+where: 
+
+H Class 
+
+0.5 mSv (50 mrem) P. (7 mg - cm" 2 ) 
+
+0,1 mSv (10 mrem) P % (1 000 mg • cm' 2 ) 
+
+10nSv(1mrem) E n (alt) (7 d) 
+
+30 jiSv (3 mrem) E n (all) (30 d) 
+
+and / n is the Student's t for n-t degrees of freedom (n - number of dosemeters used in the 
+test). See annex D, table D.1 for values of f n . 
+
+8.6.6 Self-irradiation 
+
+8.6.6.1 Requirements 
+
+After a storage period of 30 days, the zero point shall not exceed the following values: 
+
+0,5 mSv (50 mrem) for class P e (7 mg • cm' 2 ) systems; 
+
+- 0,1 mSv (10 mrem) for class P e (1 000 mg • cm" 2 ) systems; 
+
+- 30 \iSv (3 mrem) for class E n (all) systems. 
+
+If the irradiation time is increased by a factor of x, the reference values increase by the 
+same factor and this can be useful to reduce the number of tests. 
+
+3.6.6.2 Test method (TT, QT) 
+Prepare n dosemeters. 
+
+Store them for 30 days under standard test conditions in a location where the background 
+dose rate is known. 
+
+
+
+17 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+Read out the dosemeters and determfne the evaluated value E. 
+
+Calculate the mean of the evaluated values E for ali n dosemeters and its standard 
+deviation. Determine the conventional true value, C b (background), due to the background 
+irradiation during storage. 
+
+
+
+Show that: 
+
+
+
+(E + l)-C b ZH 
+
+
+
+where: 
+
+H Class 
+
+0,5 mSv (50 mrem) P (7 mg • cm" 2 ) 
+
+0,1 mSv (10 mrem) P, (1 000 mg ■ cm" 8 ) 
+
+30 nSv (3 mrem) E fl (all) 
+
+where / is calculated according to D.3 of annex D. The uncertainties over C b are 
+considered negligible. 
+
+8.6.7 Residue 
+
+8.6.7.1 Requirements 
+
+After irradiation with a conventional true value of 100 mSv (10 rem) for all class P fl 
+systems, the required detection threshold, as specified in 8.6.5, shall not be exceeded and 
+the response shall not change by more than 10 % at a level of 2 mSv (200 mrem). 
+
+
+
+After irradiation with a conventional true value of 10 mSv (1 rem), for all class E n systems, 
+the required detection threshold, as specified in 8.6.5, shall not be exceeded and the 
+response shall not change by more than 10 % at a level of 0,2 mSv (20 mrem). 
+
+
+
+8.6.7.2 Test method (TT) 
+
+A) Effect on detection threshold 
+
+Prepare, irradiate and read out the n dosemeters used for the detection threshold test 
+(see 8.6.5). The conventional true value C shall be about 100 mSv (10 rem) for all class 
+P e systems and 10 mSv (1 rem) for all class E n systems. 
+
+Using the same dosemeters, repeat the test for detection threshold (see 8.6.5). 
+
+B) Effect on response 
+
+Prepare, irradiate and read out the same n dosemeters used in A). 
+
+The conventional true value C shall be about 2 mSv (200 mrem) for all class P s sys- 
+tems and about 0,2 mSv (20 mrem) for all class E n systems. 
+
+Determine the evaluated value E for each dosemeter and calculate the mean of the 
+evaluated values E and standard deviation, s^. 
+
+
+
+18 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Show that: 
+
+
+
+E ±1 
+0,90=2 is 1,10 
+
+
+
+where / is calculated according to D.3 of annex D. Uncertainties over C are considered 
+negligible. 
+
+NOTE - This test essentially limits any residue to a level of the order of 0,1 %. 
+
+8.6.8 Effects of light exposure on the dosemeter 
+
+8.6.8.1 Requirements 
+
+After exposure to 1 000 W • m" 2 (see note) for 24 h the zero point shall not change by 
+more than the required detection threshold and after exposure for one week the evaluated 
+value shall not differ from the evaluated value of dosemeters kept in the dark by more 
+than 10 %. 
+
+NOTE - To produce 1 000 W • m" 2 of light, use an apparatus which produces light whose spectrum corres- 
+ponds to that of bright sunlight (295 nm to 769 nm), e.g. a xenon lamp equipped, if necessary, with appro- 
+priate filters, or use a daylight fluorescent lamp. 
+
+8.6.8.2 Test method (TT, QT) 
+A) Effect on zero point 
+
+Prepare two groups of 20 dosemeters each. 
+
+Expose group 1 to 1 000 W • m" 2 of light (see note to 8.6.8.1) for 24 h. (Ensure that the 
+temperature cf the dosemeters is maintained at less than 40 °C.) 
+
+Store the group 2 dosemeters in the dark in an otherwise identical environment. 
+(Ensure that the temperature of group 2 dosemeters is within ±5 °C of the group 1 dose- 
+meters.) 
+
+After one day, read out all dosemeters. 
+
+Determine the evaluated value E for each and calculate the mean of the evaluated 
+
+values E for each of the two groups and their respective standard deviations. 
+
+Show that: 
+
+
+
+[E (group 1) - E (group 2)] ± l<.H 
+
+
+
+where / is calculated according to D.4 of annex D for the difference of two means, 
+
+where: 
+
+"H Class 
+
+500 nSv (50 mrem) P Q (7 mg - cm' 2 ) 
+
+100 u,Sv (10 mrem) P e (I 000 mg - cm* 2 ) 
+
+10 u.Sv (1 mrem) E R (all) (7 d) 
+
+30 fiSv (3 mrem) E n (all) (30 d) 
+
+
+
+19 
+
+
+
+iS 13883 : 1993 
+IEC 1066: 1991 
+
+B) Effect on response 
+
+Prepare and irradiate two groups of 20 dosemeters each. The conventional true 
+value C shall be about 10 nSv (1 rem) for class P e (all) and class E n (all) systems. 
+
+Expose and store groups 1 and 2 respectively as in A). 
+
+After 168 h read out all dosemeters. 
+
+Determine the evaluated value E for each and calculate the mean of the evaluated 
+
+values (E) for each of the two groups and their respective standard deviations. 
+
+Show that: 
+
+E (group 1) 
+
+0.90£ — ± /< 1.10 
+
+E (group 2) 
+
+where / is calculated according to D.4 of annex D for the quotient of two means. 
+
+8.6.9 Energy response (photons) 
+
+8.6.9.1 Requirements 
+
+When irradiated with photons in the range 15 keV to 3,0 MeV tor class P e (all) doseme- 
+ters, and in the range 30 keV to 3,0 MeV for class E n (30 keV) (all) dosemeters, the 
+evaluated value shall not differ from the conventional true value by more than 30 %. 
+
+
+
+For class E n (80 keV) (all) dosemeters, when irradiated with photons in the range 30 keV 
+to 80 keV, the evaluated value shall not exceed the conventional true value by more than 
+a factor of two and when irradiated with photons in the range 80 keV to 3,0 MeV, the eva- 
+luated value shall not differ from the conventional true value bv more than 30 %. 
+
+
+
+8.6.9:2 Test method (TT) 
+
+A) All personal dosemeters and environmental dosemeters class E R (30 keV) (all) 
+
+Prepare, irradiate and read out four groups of n dosemeters each. The conventional 
+true value C for class P e (all) and for class E n (30 keV) (all) shall be about 10 mSv 
+(1 rem), using the following rao.ation: 
+
+- group 1 : 15,8 keV X-rays; 
+
+- group 2: reference radiation in range 30-40 keV; 
+
+- group 3: reference radiation in range 80-100 keV; 
+
+- group 4: 137 Csor 60 Co. 
+
+Determine the evaluated value E for each dosemeter and calculate the mean of the 
+evaluated values E for each of the four groups and the respective standard deviations. 
+For each group show that: 
+
+0,7 < < 1 ,3 (/' - 1 , 2, 3, 4) 
+
+C 
+
+where / is calculated according to D.3 of annex D. Uncertainties over C are considered 
+negligible. 
+
+20 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+NOTES 
+
+1 Personal dosemeters should be irradiated on a phantom. 
+
+2 Group 1 energy should not be used for environmental dosemeters. 
+
+B) Environmental dosemeters, class E n (80 keV) (all) 
+Perform the test a* in A) for class E n (30 keV) (all). 
+
+
+
+For group 2, show that: 
+
+
+
+*±J-±2 
+
+
+
+For groups 3 and 4, show that: 
+
+0,7 £ — £1,3 (/-3. 4) 
+
+
+
+E; ± /, 
+
+
+
+8.6.10 Energy response (beta rays) 
+
+8.6.10.1 Requirements 
+
+For class P e (all) dosemeters, when irradiated with beta rays in the range (C max ) 0.5 MeV 
+to 3 MeV, the response shall not vary by more than 30 %. 
+
+8.6.10.2 Test method (TT) 
+
+Prepare, irradiate and read out two groups of n dosemeters each. The conventional true 
+value C shall be about 10 mSv (1 rem) using the following: 
+
+- group 1: 90 Sr/ 90 Y; 
+
+- group 2: 204 TI. 
+
+Determine the evaluated value E for each dosemeter and calculate the mean of the 
+evaluated values E for each of the two groups. 
+
+
+
+For each group, show that: 
+
+
+
+£. ± /. 
+0,7 < < 1 ,3 (/ - 1 . 2) 
+
+
+
+8.6.11 Isotropy (photons) 
+
+8.6.1 1.1 Requirements 
+
+For P e (all) dosemeters irradiated with photons of 60 ± 5 keV, the mean value of the 
+responses at angles of incidence of 20°, 40° and 60° from normal shall not differ from the 
+corresponding response for normal incidence by more than 1 5 %. 
+
+60 1 37 
+
+For E n (all) dosemeters irradiated with Co or Cs while being rotated around three 
+perpendicular axes using the centre of the dosemeter as the centre of rotation, the 
+response shall not vary by more than 15 %. 
+
+
+
+21 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+8.6.1 1 .2 Test method (TT) 
+
+A) Personal dosemeters 
+
+Prepare, irradiate on a phantom and read out four groups of dosemeters. Let n, be the 
+number of dosemeters of the /-th group. The conventional true value C shall be about 
+10 mSv (1 rem) using photons of energy (60 ± 5) keV (X-rays or 241 Am) and the 
+following conditions: 
+
+- group 1 : normal incidence; 
+
+- group 2: 20° off normal; 
+
+- group 3: 40° off normal; 
+
+- group 4: 60° off normal. 
+
+The angle of incidence is varied in two planes perpendicular to each other and to the 
+plane of the dosemeter adjacent to the phantom. More than one irradiation at each 
+angle can be undertaken simultaneously on a sphered phantom. 
+
+Determine the evaluated value E for each dosemeter and calculate the mean of the 
+
+evaluated values E for each of the four groups and the respective standard deviations 
+
+s e- 
+Show that: 
+
+4 _ 
+E E \ 
+0,85 < '~ 1 _ ± /< 1,15 
+
+where / is determined according to D.4 of annex D. 
+
+B) Environmental dosemeters 
+
+Prepare, irradiate and read out three groups of n dosemeters each. The conventional 
+true value C shall be about 10 mSv (1 rem) using 60 Co or 137 Cs. During irradiation, 
+each dosemeter in each group shall be rotated around one of three perpendicular axes 
+using the centre of the dosemeter as the centre of rotation. 
+
+Determine the evaluated value E for each dosemeter of each group and calculate the 
+
+mean of the evaluated values E and the respective standard deviations s^ for each 
+group. 
+
+Show that, for each group: 
+
+E t I, 
+0,85 £ £1,15 (/-1,2, 3) 
+
+C 
+
+where / is determined according to D.3 of annex D. 
+
+8.6.12 Primary power supply voltage and frequency 
+
+8.6.12.1 Requirements 
+
+For all classes, the evaluated value of dosemeters read out under steady conditions of 
+high or low voltage/frequency shall not differ from the evaluated value of dosemeters read 
+out under normal reader operating conditions by more than 5 %. 
+
+
+
+22 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+8.6. 1 2.2 Test method (TT) 
+
+Prepare and irradiate five groups of dosemeters. Let n { be the number of dosemeters of 
+the Ath group. The conventional true value C shall be about 10 mSv (1 rem). 
+
+Read out the dosemeters under the following conditions: 
+
+group 1: normal reader operation; 
+
+- group 2: voltage 12 % low and frequency 2 % low; 
+
+- group 3: voltage 10 % high and frequency 2 % low; 
+
+- group 4: voltage 10 % high and frequency 2 % high; 
+
+- group 5: voltage 12 % low and frequency 2 % high. 
+
+Determine the evaluated value E for each dosemeter and calculate the mean of the 
+evaluated values E for each group and the respective standard deviations. 
+
+Show that for groups 2 to 5: 
+
+E (group x) 
+
+0,95 £— ±A<M,05 (x-2, 3, 4, 5) 
+
+E (group 1) 
+
+where / is calculated in accordance with D.4 of annex D. 
+
+8.6.13 Transient voltage 
+
+8.6.13.1 Requirements 
+
+For all classes, the evaluated value of dosemeters read out following voltage transients 
+shall not differ from the evaluated value of dosemeters read out under normal reader 
+operating conditions by more than 5 %. 
+
+8.6.13.2 Test method (TT) 
+
+Prepare and irradiate three groups of n dosemeters. Let n, be the number of dosemeters 
+of the Mh group. The conventional true value C shall be about 10 mSv (1 rem). Read out 
+all the dosemeters in each group respectively under the following conditions: 
+
+- group 1 : normal reader operation; 
+
+- group 2: after a transient decrease (initial voltage 10 % below nominal, 1 s 
+decrease to 20 % below nominal held for 1 s, return to 10 % below nominal in 2 s); 
+
+group 3: after a transient increase (initial voltage 10 % above nominal. 1 s 
+increase to 20 % above nominal held for 1 s, return to 10 % above nominal in 2 s). 
+
+Determine the evaluated value E for each dosemeter and calculate the mean of the 
+evaluated values E for each group and the respective standard deviations. 
+
+
+
+23 
+
+
+
+IS 13883 : 1993 
+IEC 1066: 1991 
+
+Show that for groups 2 and 3: 
+
+£ (group x) 
+
+0,95£_ ±/;M,05 (x=2,3) 
+
+£ (group 1) 
+
+where /is calculated according to D.4 of annex D. 
+
+8.6.1 4 Effects of climatic conditions on the reader 
+
+8.6.14.1 Regu/remenfs 
+
+For all classes, the reader background shall not vary by more than 20 % of the required 
+detection threshold and the evaluated values shall not differ from the evaluated values 
+determined under normal conditions by more than 10 % after and during exposure of the 
+reader to the temperature and humidity conditions reported in the test (see A) and B) 
+
+below). 
+
+8.6.14.2 Test method (TT) 
+
+A) Effects on reader background 
+
+Perform nine groups of readout cycles. Let n t be the number of cycles performed in the 
+Ath group. Each readout cycle shall be performed without a detector or a dosemeter* in 
+the reader under the following conditions: 
+
+- group 1: normal reader operation; 
+
+- group 2: after reader exposure to +60 °C and 65 % RH; 
+
+- group 3: during reader exposure to +35 °C and 65 % RH; 
+
+- group 4: after reader exposure to -10 °C and 65 % RH; 
+
+- group 5: during reader exposure to +1 °C and 65 % RH; 
+
+- group 6: after reader exposure to +20 °C and 90 % RH; 
+
+- group 7: during reader exposure to +20 °C and 90 % RH; 
+
+- group 8: after reader exposure to +20 °C and 5 % RH; 
+
+- group 9: during reader exposure to +20 °C and 5 % RH. 
+
+Determine the evaluated value £ for each readout and calculate the mean of the 
+evaluated values £ for each group and its standard deviation. 
+Show that for groups 2 to 9: 
+
+[£ (group x) - £ (group 1)]±/$0,2x H max (x « 2 to 9) 
+
+where H max is the required detection threshold (see 8.6.5) for the class being tested 
+and / is determined according to the methods of D.4 of annex D. 
+
+If the reader cannot be operated without a dosemeter or a detector, a dummy may be substituted. 
+
+
+
+24 
+
+
+
+IS 13883 : 1993 
+IEC 1066: 1991 
+
+B) Effects on response 
+
+Prepare and irradiate nine groups of dosemeters. Let n. be the number of dosemeters 
+of the Hh group. The conventional true value C shall be about 10 mSv (1 rem). 
+
+Read out the dosemeters under the following conditions: 
+
+• group 1 : normal reader operation; 
+
+- group 2: after reader exposure to +60 °C and 65 % RH; 
+
+- group 3: during reader exposure to +35 °C and 65 % RH; 
+
+- group 4: after reader exposure to -10 °C and 65 % RH; 
+
+- group 5: during reader exposure to +10 °C and 65 % RH; 
+
+- group 6: after reader exposure to +20 °C and 90 % RH; 
+
+- group 7: during reader exposure 1o +20 °C and 90 % RH; 
+
+- group 8: after reader exposure to +20 °C and 5 % RH; 
+
+- group 9: during reader exposure to +20 °C and 5 % RH. 
+
+Determine the evaluated value E for each readout and calculate the mean of the 
+evaluated values E for each group and its standard deviation. 
+Show that for groups 2 to 9: 
+
+E (group x) 
+
+0,90 £— = ±/£l,10 (x«=2k>9) 
+
+E (group 1) 
+
+where /is determined according to D.4 of annex D. 
+
+NOTE - The test conditions should be achieved by using a climatic test chamber as follows: 
+
+1) For readouts after climatic exposure 
+
+Temperature - Place the reader (without dosemeters or detectors and without power applied) in the 
+climatic chamber under standard conditions. Raise or lower the temperature at a rate of 215 "C.h'V 
+
+Maintain the required temperature for 2 h. Return the temperature at a rate of 215 e C.h" 1 to standard 
+conditions. Maintain the reader in the chamber under standard conditions for 6 h before testing. 
+
+Humidity- Place the reader (without dosemeters or detectors and without power applied) in the climatic 
+chamber under the humidity conditions required for 24 h. Remove the reader and after 1 h, apply 
+power. Maintain the reader under standard conditions for 6 h before testing. 
+
+2) For readouts during climatic exposure 
+
+Temperature - Place the reader (with power applied) in the climatic chamber under standard test 
+conditions. Raise or lower the temperature at a rate 215 "C.h'V Maintain the required temperature for 
+2 h. Perform the readouts in the chamber under these conditions, introducing any dosemeters just prior 
+to readout. 
+
+Humidity - Place the reader (with power applied) in the climatic chamber under the required humidity 
+conditions. Maintain these conditions for 6 h. Perform the readouts in the chamber under these 
+condition introducing any dosemeters just prior to readout. 
+
+25 
+
+
+
+IS 13883 : 1993 
+IEC 1066: 1991 
+
+8.6.15 Effects of vibration on the reader 
+
+8.6.15.1 Require me nts 
+
+For all classes, the evaluated value of dosemeters read out following exposure of the rea- 
+der to sinusoidal vibration shall not differ from the evaluated value following readout under 
+normal reader conditions by more than 5 %. 
+
+8.6.15.2 Test method (TT) 
+
+Prepare and irradiate two groups of dosemeters. Let n. be the number of dosemeters of 
+each group. The conventional true value C shall be about 10 mSv (1 rem). 
+
+Read out the dosemeters under the following conditions: 
+
+group 1 : normal reader operation; 
+
+- group 2: after reader exposure to vibration (see note below). 
+
+Determine the evaluated value E for each dosemeter and calculate the mean of the 
+evaluated values E for each group and its standard deviation. 
+
+Show that: 
+
+E (group 2) 
+
+0,95 < — ±/<1,05 
+
+E (group 1 ) 
+
+where / is determined according to D.4 of annex D. 
+
+NOTE - The test conditions should be achieved as follows: with the reader mounted in its normal 
+orientation, it is vibrated (displacement in the vertical direction) sinusoidally for 1 h at a frequency of 50 Hz 
+and a peak-to-peak amplitude of 1 mm. The instrument should be mounted in such a way as to minimize 
+the generation of alternative modes of vibration. 
+
+8.6.16 Dropping effect on dosemeter 
+
+8. 6. 1 6. 1 Requirements 
+
+For all classes, the evaluated value of dosemeters readout being dropped 1 m onto a 
+concrete surface shall not differ from the evaluated value under norma! conditions by more 
+than 10 %. 
+
+8.6.1 6.2 Test method (TT) 
+
+Prepare and irradiate two groups of dosemeters. Let n. be the number of dosemeters of 
+each group. The conventional true value C shall be about 10 mSv (1 rem). Read out the 
+dosemeters under the following conditions: 
+
+group 1 : normal operation; 
+
+- group 2: after dropping the dosemeters 1 m onto a concrete surface. 
+
+Determine the evaluated value E for each dosemeter and calculate the mean of the 
+evaluated values E for each group and its standard deviation. 
+
+
+
+26 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Show that: 
+
+E (group 2) 
+
+0,90 <: —= ± /< 1,10 
+
+E (group 1) 
+
+where / is determined according to D.4 of annex D. 
+
+8.6.17 Dropping effect on reader 
+
+8.6.17.1 Requirements 
+
+For all classes, the evaluated value of dosemeters read out following dropping the reader 
+1 vm onto a wood surface shall not differ from the evaluated value under normal reader 
+conditions by more than 5 %. 
+
+8.6.17.2 Test method (TT) 
+
+Prepare and irradiate two groups of dosemeters. Let n. be the number of dosemeters of 
+each group. The conventional true value C shall be about 10 mSv (1 rem). 
+
+Read out the dosemeters under the following conditions: 
+
+group 1: normal reader operation; 
+
+- group 2: after dropping the reader 1 cm onto a wood surface simulating possible 
+drop during operation. 
+
+Determine the evaluated value E for each dosemeter and calculate the mean of the 
+evaluated values E for each group and its standard deviation. 
+
+
+
+Show that: 
+
+
+
+E (group 2) 
+
+0,95 <: — ± /< 1,05 
+
+E (group 1) 
+
+
+
+where / is determined according to D.4 of annex D. 
+
+8.6.18 Effects of reader light leakage 
+
+8.6. 1 8. 1 Requirements 
+
+For all classes, the reader background shall not vary by more than 20 % of the required 
+detection threshold when the reader is exposed to 1 000 W • m" 2 of light. 
+
+8.6.18.2 Test method (RT) 
+
+Perform two groups of readout cycles. Let n. be the number of cycles performed in the /-th 
+group. Each cycle shall be performed without a detector or a dosemeter in the reader 
+under the following conditions: 
+
+
+
+group 2: during reader exposure to 1 000 W • m* 2 (over 4 n, except base) (see 
+
+
+
+group 1: normal reader operation; 
+
+- group 2: during reader 
+note of 8.6.8.1 for conditions). 
+
+27 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+Determine the mean evaluated value E for each group and the respective standard 
+deviations. 
+
+
+
+Show that: 
+
+
+
+[E (group 2) - E (group 1)]±/$0,2xW 
+
+
+
+max 
+
+
+
+where H is the detection threshold for the class being tested and / is determined 
+
+max 
+
+according to D.4 of annex D. 
+
+
+
+8.7 Requirements and test methods for TL readers 
+
+8.7.1 General 
+
+For all classes of readers, the evaluated values E and the conventional true values C may 
+be expressed in terms of kerma in air. 
+
+Tests may be performed with either dosemeters or detectors. 
+
+The requirements and test methods for TL readers are those given in 8.6.12 to 8.6.17.2 
+except 8.6.14.2. 
+
+8.7.2 Reader stability 
+
+8.7.2.1 Requirements 
+
+The evaluated values of dosemeters read out 24 h apart and 168 h apart shall not differ 
+from each other by more than 5 % and 10 %, respectively. 
+
+
+
+8.7.2.2 Test method (RT) 
+
+Prepare and irradiate three groups of dosemeters. Let n, be the number of dosemeters of 
+the /-th group. The conventional true value C shall be about 10 mGy (1 rad) for both P 
+(all) and E n (all) systems. 
+
+Store all groups for two weeks under standard conditions. Read out group 1 and use the 
+results to determine the evaluation factor F . Read out the remaining dosemeters under 
+the following conditions: 
+
+group 2: 24 h after the readout of group 1 ; 
+- group 3: 168 h after the readout of group 1 . 
+
+Determine the evaluated value E for each dosemeter using the evaluation factor F e 
+
+determined with group 1 , and calculate the mean of the evaluated values E for each group 
+and the respective standard deviations. 
+
+
+
+28 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Show that: 
+
+£ (group 2) 
+
+0,95 <S — = ± / £ 1 ,05 
+
+£ (group 1) 
+
+£ (group 3) 
+
+0,90 S—r ± /^ 1,10 
+
+£ (group 1 ) 
+
+where /is determined according to D.4 of annex D. 
+
+8.8 Requirements and test methods for TL detectors 
+
+8.8.1 General 
+
+For alt classes of detectors, evaluated values £ and conventional true values C may be 
+expressed in terms of kerma in air. 
+
+8.8.2 Batch homogeneity 
+
+8.8.2.1 Requirements 
+
+For all classes, the evaluated value for any one detector in a batch shall not differ from the 
+evaluated value for any other detector in the batch by more than 30 % for a dose equal to 
+ten times the required detection threshold limit. 
+
+8.8.2.2 resf method (RT) 
+
+Prepare and irradiate all the detectors in the batch to the same conventional true value C 
+to a dose equal to ten times the required detection threshold limit. 
+
+Determine the evaluated value £ for each detector and identify the detectors with the 
+maximum and minimum evaluated doses. 
+
+
+
+Show that: 
+
+
+
+max min <■ a o 
+
+
+
+min 
+
+8.8.3 Reproducibility 
+
+8. 8 .3. 1 Requirements 
+
+The coefficient of variation of the evaluated value shall not exceed 7,5 % for a dose of: 
+
+- 10 mGy (1 rad) for class P e (all); 
+
+- 50 iiGy (5 mrad) for class E n (all) (7 d); 
+
+- 200 nGy (20 mrad) for class E n (all) (30 d). 
+
+8.8.3.2 Test method (TT, QT) 
+
+Prepare, irradiate and read out each of n detectors. Repeat this 10 times. The conven- 
+tional true value C shall be exactly the same each time and about: 
+
+29 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+10 mGy (1 rad) for,all class P fl detectors; 
+50 (iGy (5 mrad) lor class E n (7 d) detectors; 
+- 200 p.Gy(20 mrad) tor class E n {30 d) detectors. 
+
+For each detector, determine E.. where j refers to the /-th detector and / to the i-th 
+irradiation. 
+
+For each of the 10 irradiations, calculate the mean E t and standard deviation s^,. 
+
+
+
+Show that: 
+
+
+
+-*1 ! — < 0,075 
+
+
+
+10 _ 
+
+X Ej/10 
+
+i-1 
+
+
+
+where /,, confidence interval of sg-j , is calculated according to D.2 of annex D. 
+For each of the n detectors, determine E. and the mean value: 
+
+1 10 
+E, - — - E E :; 
+
+
+
+'' 10 ,., t 
+
+
+
+and the standard deviation sg> 
+
+
+
+Show that for each of the n detectors: 
+
+
+
+— — - ^ 0, 075 
+
+
+
+E l 
+where /., confidence interval of s^. , is calculated according to D.2 of annex D. 
+
+8.9 Information requested for TL detectors 
+
+8.9.1 Linearity 
+
+The evaluated value (and standard deviation) relative to the conventional true value shall 
+be given over the range: 
+
+- 0,1 mGy to 1 Gy (0,01 rad to 100 rad) for P B (all) classes; 
+
+- 0,03 mGy to 0,1 Gy (3 mrad to 10 rad) for E n (all) classes. 
+
+8.9.2 Procedure (TT, QT) 
+
+Prepare, irradiate and read out five groups of n detectors each. The conventional true 
+values Cfor groups 1; 2; 3; 4 and 5 shall be 0,1; 1; 10 and 100 mGy, and 1 Gy (0,01; 0,1; 
+1; 10 and 100 rad) for all class P e detectors, and 0,03; 0,1; 1; 10 and 100 mGy (3, 10 and 
+100 mrad; and 1; 10 rad) for all class E n detectors. 
+
+
+
+30 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Calculate the mean E and standard deviation sg- of the evaluated values for each group. 
+Information required for each group: 
+
+
+
+E (group x) 
+
+
+
+8.9.3 Energy response (photons) 
+
+
+
+; / (group x) (x« 1, 2, 3, 4, 5) 
+
+
+
+For all classes, the evaluated value (and standard deviation) relative to the conventional 
+true value shall be given over the range 15 keV to 3 MeV. 
+
+8.9.4 Procedure (TT) 
+
+Prepare, irradiate and read out four groups of n detectors each. The conventional true 
+value (C) shall be about 10 mGy (1 rad). Read out the dosemeters under the following 
+conditions: 
+
+
+
+group 1 
+group 2 
+group 3 
+group 4 
+
+
+
+15,8 keV X-rays; 
+
+reference radiation in the range 30 keV to 40 keV; 
+
+reference radiation in the range 80 keV to 1 00 ke V; 
+
+137 Csor 60 Co. 
+
+
+
+Determine the evaluated value E for each detector and calculate the mean E and standard 
+deviation sg- of the evaluated values for each of the four groups. 
+
+Information required for each group: 
+
+E (group x) 
+
+
+
+; / (group x) (x «= 1 , 2, 3, 4) 
+
+NOTES 
+
+1 All irradiations should be free in air; for 137 Cs and eo Co, additional provision should be made for electron 
+equilibrium. 
+
+2 Group 1 energy should not be used for detectors intended to be used as environmental dosemeters. 
+8.9.5 Effects of light exposure on the detector 
+
+For all classes, the zero point (and standard deviation) for detectors exposed to 
+1 000 W • m~ 2 for one day and the response after one week shall be given relative to 
+thos^ for detectors kept in the dark under conditions otherwise identical. 
+
+
+
+8.9.6 Procedure (TT) 
+
+8.9.6. 1 Effect on zero point 
+
+Prepare two groups of 20 detectors each. 
+
+Expose group 1 to 1 000 W • m' 2 of light (see note to 8.6.8.1) for 24 h (ensure that the 
+temperature of detectors is maintained at less than 40 °C). 
+
+
+
+31 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+Store the group 2 detectors in the dark in an otherwise identical environment (the tempera- 
+ture of group 2 detectors shall be within ±5 °C of the group 1 detectors). 
+
+After one day, read out all detectors. 
+
+Determine the evaluated value E for each and calculate the mean E and standard 
+deviation s^ of the evaluated doses for each of the two groups. 
+
+Information required: 
+
+E (group 1) - E (group 2); / (group 1); / (group 2) 
+
+8.9.6.2 Effect on response 
+
+Prepare and irradiate two groups of 20 detectors each. 
+
+The conventional true value C shall be about 10 mGy (1 rad). 
+
+Expose and store groups 1 and 2, respectively, as in 8.9.6.1. 
+
+After one week, read out all detectors. 
+
+Determine the evaluated value E for each and calculate the mean E and standard 
+deviation sg of the evaluated values for each of the two groups. 
+
+Information required: 
+
+E (group 1) / E (group 2); / (group 1); /(group 2). 
+
+9 Certification 
+
+TLD systems, detectors, and readers tested for compliance with this standard as specified 
+in clause 8 shall be accompanied by a certificate which shall contain the following infor- 
+mation: 
+
+a) manufacturer's name and address; 
+
+M name and address of facility at which tests were nerformed; 
+
+c) date on which tests were performed; 
+
+d) type, serial or identification number and description of each component tested or 
+used for testing; 
+
+e) description of additional equipment and procedures (including correction procedures 
+and conversion factors) used during testing (see 1 to 7 and annex C); 
+
+f) class (or classes) tested; 
+
+g) statement indicating the results of the performance tests and, in the case of 
+detectors tested separately, providing the information required in table 3. 
+
+
+
+32 
+
+
+
+IS 13883: 1993 
+IEC 1066 : 1991 
+
+
+
+10 Power supply 
+
+
+
+Mains operated readers shall be designed to operate from single phase supply in one of 
+the following categories: 
+
+- category 1 : 220 V; 
+
+- category 2: 120 V and/or 240 V. 
+
+
+
+11 Instructions 
+
+The manufacturer shall supply sufficient written instructions to allow the user to obtain 
+performance within the requirements of this standard. 
+
+
+
+Table 4 - Reference conditions and standard test conditions 
+
+
+
+Influence quantity 
+
+
+Reference conditions 
+
+(unless otherwise stated 
+
+by the manufacturer) 
+
+
+Standard test conditions 
+
+(unless otherwise stated 
+
+by the manufacturer) 
+
+
+Reference photon 
+radiation 
+
+
+To conform to ISO 4037 
+
+
+To conform to ISO 4037 
+
+
+Reference beta radiation 
+
+
+To conform to ISO 6980 
+
+
+To conform to ISO 6980 
+
+
+Warm-up time 
+
+
+30 min 
+
+
+230 min 
+
+
+Ambient temperature 
+
+
+20 *C 
+
+
+18°Cto22°C 
+
+
+Atmospheric pressure 
+
+
+101,3kPa 
+
+
+86kPato 106 kPa 
+
+
+Relative humidity 
+
+
+65% 
+
+
+50 % to 65 % 
+
+
+Power supply voltage 
+
+
+Nominal supply voltage U H 
+
+
+Nominal supply voltage U u ±1% 
+
+
+Power supply frequency 
+
+
+Nominal frequency 
+
+
+Nominal frequency ±1 % 
+
+
+Power supply waveform 
+
+
+Sinusoidal 
+
+
+Sinusoidal with total harmonic 
+distortion lower than 5 % 
+
+
+Gamma radiation background 
+
+
+0,20 tiGy - h" 1 
+
+
+0.20 uGy • h' 1 
+
+
+Electromagnetic field of 
+external origin 
+
+
+Negligible 
+
+
+Less than the lowest value that 
+causes interference 
+
+
+Magnetic induction of exter- 
+nal origin 
+
+
+Negligible 
+
+
+Less than twice the value of the 
+induction due to the earth's mag- 
+netic field 
+
+
+Assembly controls 
+
+
+Set for normal operation 
+
+
+Set for normal operation 
+
+
+Contamination by radioactive 
+elements 
+
+
+Negligible 
+
+
+Negligible 
+
+
+Light intensity 
+
+
+50 W m 2 
+
+
+<1 000 W m* 2 
+
+
+
+33 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+Annex A 
+Dose equivalent conversion factors for personal dosemeters 
+
+Personal dosemeters should be calibrated in terms of dose equivalent in tissue: 
+
+- at a depth of 7 mg • cm" 2 ; 
+
+- at a depth of 1 000 mg • cm" 2 . 
+
+For calibration, the dosemeters should be irradiated on a phantom at various photon 
+energies between 15 keV and 3 MeV. The evaluated value E, for each class of systems 
+and for each photon energy chosen, shall be compared with the conventional true value C 
+in the phantom at the appropriate depth. 
+
+When the photon source is calibrated in terms of kerma in air K" a at electronic equilibrium 
+without a receptor and the dosemeters are irradiated with phantom backing, then: 
+
+C (7 mg • cm" 2 ) ~ F c (7 mg • cm" 2 ) • K & 
+
+C (1 000 mg • cm" 2 ) « F c (1 000 mg • cm" 2 ) • K & 
+
+where F c (7 mg • cm" 2 ) and F c (1 000 mg • cm' 2 ) are the conversion factors for the two 
+depths. Numerical values for the conversion factors for the two classes of personal 
+dosemeters (7 mg cm" 2 and 1 000 mg • cm" 2 , respectively), for one possible phantom 
+(30 cm diameter ICRU sphere), for parallel beam geometry and for various angles of 
+incidence are given in tables A.1 to A. 12. Intermediate values can be obtained by interpola- 
+tion. These tables are only examples of the conversion factors that are available. 
+
+
+
+Until relevant international bodies publish recommendations on the conversion factors to 
+be used, the proposed examples taken from various publications may be used by 
+agreement between the parties using the standard. 
+
+NOTE - Other phantoms are not excluded, provided that relevant information is made available. 
+
+
+
+34 
+
+
+
+IS 13883: 1993 
+IEG 1066: 1991 
+
+
+
+Table A. 1 - Conversion of air kerma to directional 
+
+dose equivalent W(0,07) for monoenergetic 
+photons of energy E 
+
+
+
+£ 
+
+
+#'(0,07)/*, 
+
+
+ksV 
+
+
+Sv - Gy" 1 
+
+
+10 
+
+
+0,95 
+
+
+15 
+
+
+0,99 
+
+
+20 
+
+
+1,05 
+
+
+25 
+
+
+1.13 
+
+
+30 
+
+
+1,22 
+
+
+40 
+
+
+1.41 
+
+
+50 
+
+
+1,53 
+
+
+SO 
+
+
+1,59 
+
+
+70 
+
+
+1.61 
+
+
+80 
+
+
+1.61 
+
+
+90 
+
+
+1,58 
+
+
+100 
+
+
+1,55 
+
+
+125 
+
+
+1,48 
+
+
+150 
+
+
+1.42 
+
+
+200 
+
+
+1.34 
+
+
+250 
+
+
+1.32 
+
+
+
+From: "New Quantities in Radiation Protection and Conversion Coefficients", Rad. Prot. 
+Dosimetry 14 (4), pp. 337-343 (1986). 
+
+
+
+Table A.2 - Conversion of air kerma to directional dose 
+equivalent H'(10) for photons 
+
+
+
+Series 
+
+
+Mean energy 
+
+
+H'(10)/K- a 
+
+
+
+
+keV 
+
+
+Sv/Gy 
+
+
+
+
+33 
+
+
+1,197 
+
+
+Filtered X 
+
+
+48 
+
+
+1,599 
+
+
+reference 
+
+
+65 
+
+
+1,734 
+
+
+radiations 
+
+
+^3 
+
+
+1,707 
+
+
+
+
+100 
+
+
+1,646 
+
+
+Narrow 
+
+
+118 
+
+
+1,587 
+
+
+spectrum 
+
+
+161 
+
+
+1,466 
+
+
+
+
+205 
+
+
+1.395 
+
+
+
+
+248 
+
+
+1,349 
+
+
+Filtered X 
+
+
+45 
+
+
+1.537 
+
+
+reference 
+
+
+58 
+
+
+1,677 
+
+
+radiations 
+
+
+79 
+
+
+1,709 
+
+
+
+
+104 
+
+
+1 ,632 
+
+
+Wide 
+
+
+134 
+
+
+1,536 
+
+
+spectrum 
+
+
+169 
+
+
+1,454 
+
+
+
+
+202 
+
+
+1,402 
+
+
+Zirconium 
+
+
+
+
+
+
+K-fluorescence 
+
+
+15,8 
+
+
+0.365 
+
+
+reference 
+
+
+
+
+
+
+radiation 
+
+
+
+
+
+
+Cesium-137 
+
+
+662 
+
+
+1.196 
+
+
+Cobalt-60 
+
+
+1 250 
+
+
+1,151 
+
+
+
+From: S. Wagner et a/.: Rad. Prot. Dosimetry 12, p. 231 (1985), and Grosswendt et a/.: 
+Rad. Prot. Dosimetry 3, p. 169 (1982). 
+
+35 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Table A.3 - Conversion of air kerma to directional dose 
+equivalent H\0,07) for photons 
+
+
+
+Series 
+
+
+Mean energy 
+
+
+W'(0,07)/K a 
+
+
+
+
+keV 
+
+
+Sv/Gy 
+
+
+
+
+33 
+
+
+1,271 
+
+
+Filtered X 
+
+
+48 
+
+
+1,492 
+
+
+reference 
+
+
+65 
+
+
+1,598 
+
+
+radiations 
+
+
+83 
+
+
+1.595 
+
+
+
+
+100 
+
+
+1.553 
+
+
+Narrow 
+
+
+118 
+
+
+1.502 
+
+
+spectrum 
+
+
+161 
+
+
+- 
+
+
+
+
+205 
+
+
+- 
+
+
+
+
+248 
+
+
+- 
+
+
+Filtered X 
+
+
+45 
+
+
+1.456 
+
+
+reference 
+
+
+58 
+
+
+1.552 
+
+
+radiations 
+
+
+79 
+
+
+1,591 
+
+
+
+
+104 
+
+
+1,537 
+
+
+Wide 
+
+
+134 
+
+
+- 
+
+
+spectrum 
+
+
+169 
+
+
+- 
+
+
+
+
+202 
+
+
+- 
+
+
+Zirconium 
+
+
+
+
+
+
+K-fluorescence 
+
+
+15,8 
+
+
+0,999 
+
+
+reference 
+
+
+
+
+
+
+radiation 
+
+
+
+
+
+
+Cesium-137 
+
+
+662 
+
+
+
+
+Cobalt-60 
+
+
+1 250 
+
+
+
+
+
+Frorn: S. Wagner et a/.: Rad. Prot. Dosimetry 12, p. 231 (1985), and Qrosswendt et at: 
+Rad. Prot. Dosimetry 3, p. 169 (1982). 
+
+
+
+36 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Table A.4 - Conversion of air kerma to directional dose equivalent 
+H\0,07) for different angles of incidence 
+
+
+
+Series 
+
+
+Mean 
+
+energy 
+
+keV 
+
+
+H\0,07)/K t (Sv/Gy) for 
+the angle of Incidence 
+
+
+0° 
+
+
+20° 
+
+
+40° 
+
+
+60° 
+
+
+Filtered X 
+reference 
+radiations 
+
+Narrow 
+spectrum 
+
+
+33 
+
+48 
+
+65 
+
+83 
+
+100 
+
+118 
+
+161 
+
+205 
+
+248 
+
+
+1,271 
+1,492 
+1,598 
+1,595 
+1,553 
+1.501 
+
+
+1,263 
+1,483 
+1,588 
+1,585 
+1,543 
+1,493 
+
+
+1.222 
+1,452 
+1,564 
+1.567 
+1.530 
+1.485 
+
+
+1,131 
+1.372 
+1.496 
+1.509 
+1.483 
+1,448 
+
+
+Filtered X 
+reference 
+radiations 
+
+Wide 
+spectrum 
+
+
+45 
+58 
+79 
+104 
+134 
+169 
+202 
+
+
+1.456 
+1.552 
+1.591 
+1,537 
+
+
+1,447 
+1,543 
+1,581 
+1,528 
+
+
+1.414 
+1.515 
+1 .562 
+1,516 
+
+
+1,333 
+1.442 
+1.502 
+1.471 
+
+
+Zirconium, 
+
+K-fluorescence 
+
+reference 
+
+radiation 
+
+
+15.8 
+
+
+0,999 
+
+
+0,983 
+
+
+0,928 
+
+
+0,724 
+
+
+Cesium-137 
+Cobalt-60 
+
+
+662 
+1 250 
+
+
+
+
+
+
+
+
+
+
+
+From: S. Wagner et at.: Rad. Prot. Dosimetry 12, p. 231 (1985), and Grosswendt et al. 
+Rad. Prot. Dosimetry 3, p. 169 (1982). 
+
+
+
+37 
+
+
+
+IS 13883: 1993 
+rEC 1066: 1991 
+
+
+
+Table A.5 
+
+
+
+Conversion of air kerma to directional dose equivalent 
+H'(\ 0) for different angles of incidence 
+
+
+
+Series 
+
+
+Mean 
+energy 
+
+keV 
+
+
+H'<10)/K. (Sv/Qy) for the angle 
+of incidence 
+
+
+0° 
+
+
+20° 
+
+
+40° 
+
+
+60° 
+
+
+Filtered X 
+reference 
+radiations 
+
+Narrow 
+spectrum 
+
+
+33 
+
+48 
+
+65 
+
+83 
+
+100 
+
+118 
+
+161 
+
+205 
+
+248 
+
+
+1.197 
+1,599 
+1.734 
+1.707 
+1.646 
+1,587 
+1,466 
+1 ,395 
+1,349 
+
+
+1,167 
+1,577 
+1,715 
+1,690 
+1,631 
+1,574 
+1,457 
+1.388 
+1,344 
+
+
+1,061 
+1,472 
+1,624 
+1,616 
+1.569 
+1,520 
+1,416 
+1.353 
+1.312 
+
+
+0.857 
+1.264 
+1.430 
+1,442 
+1,414 
+1,383 
+1.311 
+1.263 
+1.232 
+
+
+Filtered X 
+reference 
+radiations 
+
+Wide 
+spectrum 
+
+
+45 
+58 
+79 
+104 
+134 
+169 
+202 
+
+
+1,537 
+1.677 
+1.709 
+1,632 
+1 ,536 
+1,454 
+1,402 
+
+
+1,514 
+1,657 
+1,692 
+1,617 
+1,524 
+1.445 
+1,395 
+
+
+1.408 
+1,559 
+1.613 
+1,555 
+1,476 
+1,405 
+1.359 
+
+
+1.200 
+1.358 
+1.435 
+1,404 
+1.352 
+1,301 
+1,268 
+
+
+Zirconium, 
+
+K-fluoresconce 
+
+reference 
+
+radiation 
+
+
+15,8 
+
+
+0,365 
+
+
+0,309 
+
+
+0,210 
+
+
+0,097 
+
+
+Cesium -137 
+Cobalt-60 
+
+
+662 
+1 250 
+
+
+1,196 
+1,151 
+
+
+1,196 
+1,151 
+
+
+1.184 
+1,145 
+
+
+1,142 
+
+1,111 
+
+
+
+From: S. Wagner ef a/.: Rad. Prot. Dosimetry 12, p. 231 (1985), and Grosswendt et al. 
+Rad. Prot. Dosimetry 3, p. 169 (1982). 
+
+
+
+Table A.6 - Conversion of air kerma to directional dose 
+equivalent H'(0,O7) for beta radiation 
+
+
+
+Maximum beta 
+
+
+
+
+radiation energy 
+
+
+H'(0.07)/K Jl 
+
+
+MeV 
+
+
+Sv/Gy 
+
+
+0,1 
+
+
+0.10 
+
+
+0,15( 147 Pm) 
+
+
+0.22 
+
+
+0,2 
+
+
+0,40 
+
+
+0,3 
+
+
+0,72 
+
+
+0,4 
+
+
+1,00 
+
+
+0,5 
+
+
+1,16 
+
+
+0,57 ( 204 TI) 
+
+
+1.22 
+
+
+0,6 
+
+
+1.23 
+
+
+0.7 
+
+
+1.24 
+
+
+0,8 
+
+
+1.25 
+
+
+0,9 
+
+
+1.25 
+
+
+1.0 
+
+
+1.25 
+
+
+1,5 
+
+
+1.25 
+
+
+2.0 (l*°Sr + 80 Y) 
+
+
+1.25 
+
+
+
+From: "New Quantities in Radiation Protection and Conversion Coefficients", Rad. Prot. 
+Dosimetry 14 (4), pp. 337-343 (1986). 
+
+38 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Table A.7 - Conversion of air kerma to directional dose 
+equivalent H'{0,07) for photons 
+
+
+
+Series 
+
+
+Mean energy 
+
+
+H\Q,07)/K M 
+
+
+
+
+koV 
+
+
+Sv/Gy 
+
+
+
+
+33 
+
+
+1,27 
+
+
+Filtered X 
+
+
+48 
+
+
+1,53 
+
+
+reference 
+
+
+65 
+
+
+1,60 
+
+
+radiations 
+
+
+83 
+
+
+1,60 
+
+
+
+
+100 
+
+
+1,53 
+
+
+Narrow 
+
+
+118 
+
+
+1.48 
+
+
+spectrum 
+
+
+161 
+
+
+1,40 
+
+
+
+
+205 
+
+
+1,34 
+
+
+
+
+248 
+
+
+1,31 
+
+
+Filtered X 
+
+
+45 
+
+
+1.46 
+
+
+reference 
+
+
+58 
+
+
+1,59 
+
+
+radiations 
+
+
+79 
+
+
+1,59 
+
+
+
+
+104 
+
+
+1,53 
+
+
+Wide 
+
+
+134 
+
+
+1.45 
+
+
+spectrum 
+
+
+169 
+
+
+1,39 
+
+
+
+
+202 
+
+
+1.34 
+
+
+Zirconium 
+
+
+
+
+
+
+K-fluorescence 
+
+
+15,8 
+
+
+1,00 
+
+
+reference 
+
+
+
+
+
+
+radiation 
+
+
+
+
+
+
+Cesium-137 
+
+
+662 
+
+
+1.18 
+
+
+Cobalt-60 
+
+
+1 250 
+
+
+1,14 
+
+
+
+From: G. Williams, W.P. Swanson, P. Kragh and G. Dexler: "Calculation and Analysis of 
+Photon Dose Equivalent Distribution in the ICRU Sphere", GSF Report S-958, ISSN 
+0721-1694(1985). 
+
+
+
+39 
+
+
+
+1813883:1993 
+IEC 1066 : 1991 
+
+
+
+Table A.8 - Conversion of air kerma to directional dose 
+equivalent H'(10) for photons 
+
+
+
+Series 
+
+
+Mean energy 
+
+
+tf'(10)//C a 
+
+
+
+
+keV 
+
+
+Sv/Gy 
+
+
+
+
+33 
+
+
+1,23 
+
+
+Filtered X 
+
+
+48 
+
+
+1,67 
+
+
+reference 
+
+
+65 
+
+
+1,78 
+
+
+radiations 
+
+
+83 
+
+
+1,73 
+
+
+
+
+100 
+
+
+1,63 
+
+
+Narrow 
+
+
+118 
+
+
+1,55 
+
+
+spectrum 
+
+
+161 
+
+
+1,45 
+
+
+
+
+205 
+
+
+1,39 
+
+
+
+
+248 
+
+
+1.35 
+
+
+Filtered X 
+
+
+45 
+
+
+1.57 
+
+
+reference 
+
+
+58 
+
+
+1.77 
+
+
+radiations 
+
+
+79 
+
+
+1,76 
+
+
+
+
+104 
+
+
+1.61 
+
+
+Wide 
+
+
+134 
+
+
+1,50 
+
+
+spectrum 
+
+
+169 
+
+
+1,44 
+
+
+
+
+202 
+
+
+1,39 
+
+
+Zirconium 
+
+
+
+
+
+
+K-fluorescence 
+
+
+15,8 
+
+
+0,36 
+
+
+reference 
+
+
+
+
+
+
+radiation 
+
+
+
+
+
+
+Cesium-137 
+
+
+662 
+
+
+1.18 
+
+
+Cobalt-60 
+
+
+1 250 
+
+
+1.13 
+
+
+
+From: G. Williams, W.P. Swanson, P, Kragh and G. Dexler: "Calculation and Analysis of 
+Photon Dose Equivalent Distribution in the ICRU Sphere". GSF Report S-598, ISSN 
+0721-1694 (1985). 
+
+
+
+40 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Table A.9 - Conversion of air kerma to directional dose equivalent 
+H'(0,07) for different angles of Incidence 
+
+
+
+Series 
+
+
+Mean 
+energy 
+
+keV 
+
+
+H' 
+
+
+(0,07)/X t (Sv/Gy) for the angl 
+of incidence 
+
+
+e 
+
+
+0° 
+
+
+20° 
+
+
+40° 
+
+
+60° 
+
+
+
+
+33 
+
+
+1,27 
+
+
+1,28 
+
+
+1,26 
+
+
+1.21 
+
+
+Filtered X 
+
+
+48 
+
+
+1,53 
+
+
+1,56 
+
+
+1.S3 
+
+
+1,47 
+
+
+reference 
+
+
+65 
+
+
+1,60 
+
+
+1.64 
+
+
+1,60 
+
+
+1.54 
+
+
+radiations 
+
+
+83 
+
+
+1,60 
+
+
+1,62 
+
+
+1,60 
+
+
+1,54 
+
+
+
+
+100 
+
+
+1,53 
+
+
+1,56 
+
+
+1,55 
+
+
+1.51 
+
+
+Narrow 
+
+
+118 
+
+
+1.48 
+
+
+1,50 
+
+
+1.50 
+
+
+1,48 
+
+
+spectrum 
+
+
+1*1 
+
+
+1,40 
+
+
+1.41 
+
+
+1.42 
+
+
+1.42 
+
+
+
+
+205 
+
+
+1.34 
+
+
+1,35 
+
+
+1.36 
+
+
+1.37 
+
+
+
+
+248 
+
+
+1,31 
+
+
+1.31 
+
+
+1.31 
+
+
+1,33 
+
+
+Filtered X 
+
+
+45 
+
+
+1,46 
+
+
+1,49 
+
+
+1,47 
+
+
+1,40 
+
+
+reference 
+
+
+58 
+
+
+1,59 
+
+
+1,64 
+
+
+1,59 
+
+
+1,53 
+
+
+radiations 
+
+
+79 
+
+
+1,59 
+
+
+1,62 
+
+
+1,60 
+
+
+1.65 
+
+
+
+
+104 
+
+
+1,53 
+
+
+1,54 
+
+
+1,54 
+
+
+1,50 
+
+
+Wide 
+
+
+134 
+
+
+1.45 
+
+
+1,46 
+
+
+1.47 
+
+
+1.46 
+
+
+spectrum 
+
+
+169 
+
+
+1,39 
+
+
+1,40 
+
+
+1.40 
+
+
+1.41 
+
+
+
+
+202 
+
+
+1,34 
+
+
+1,36 
+
+
+1,36 
+
+
+1,37 
+
+
+Zirconium, 
+
+
+
+
+
+
+
+
+
+
+
+
+K-fluorescence 
+reference 
+
+
+15.8 
+
+
+1,00 
+
+
+0,99 
+
+
+0,99 
+
+
+0,99 
+
+
+radiation 
+
+
+
+
+. 
+
+
+
+
+
+
+
+
+Cesium-137 
+
+
+662 
+
+
+1.18 
+
+
+1.18 
+
+
+1.19 
+
+
+1,20 
+
+
+Cobalt-60 
+
+
+1 250 
+
+
+1,14 
+
+
+1,14 
+
+
+1.15 
+
+
+1.17 
+
+
+
+From: G. Williams, W.P. Swanson, P. Kragh and G. Dexler: "Calculation and Analysis of 
+Photon Dose Equivalent Distribution in the ICRU Sphere", GSF Report S-959, ISSN 
+0721-1694 (1985). 
+
+
+
+41 
+
+
+
+IS 13883: 1993 
+(EC 1066: 1991 
+
+
+
+Table A. 10 - Conversion of air kerma to directional dose equivalent 
+H'(10) for different angles of incidence 
+
+
+
+Series 
+
+
+Mean 
+
+energy 
+
+keV 
+
+
+H'(10)/K a (Sv/Gy) for the angle 
+of incidence 
+
+
+0° 
+
+
+20° 
+
+
+40° 
+
+
+60° 
+
+
+Filtered X 
+reference 
+radiations 
+
+Narrow 
+spectrum 
+
+
+33 
+
+48 
+
+65 
+
+83 
+
+100 
+
+118 
+
+161 
+
+205 
+
+248 
+
+
+1,23 
+1.67 
+1.78 
+1.73 
+1,63 
+1,55 
+1,45 
+1,39 
+1,35 
+
+
+1,19 
+1,68 
+1,73 
+1,69 
+1.64 
+1.57 
+1.47 
+1.38 
+1.34 
+
+
+1.11 
+1.57 
+1.67 
+1,66 
+1,60 
+1.54 
+1,44 
+1.37 
+1.33 
+
+
+0.97 
+1.40 
+1,50 
+1.50 
+1.47 
+1.42 
+1,35 
+1.31 
+1.28 
+
+
+Filtered X 
+reference 
+radiations 
+
+Wide 
+spectrum 
+
+
+45 
+58 
+79 
+104 
+134 
+169 
+202 
+
+
+1.57 
+1.77 
+1.76 
+1,61 
+1.50 
+1,44 
+1,39 
+
+
+1.55 
+1.75 
+1.71 
+1.61 
+1,53 
+1.45 
+1,39 
+
+
+1.47 
+1,65 
+1,68 
+1.59 
+1.50 
+1.42 
+1,38 
+
+
+1,29 
+1,49 
+1.51 
+1.45 
+1,39 
+1,34 
+1.32 
+
+
+Zirconium 
+
+K-fluorescence 
+
+reference 
+
+radiation 
+
+
+15,8 
+
+
+0,36 
+
+
+0,31 
+
+
+0.25 
+
+
+0,14 
+
+
+Cesium-137 
+Cobalt-60 
+
+
+662 
+1 250 
+
+
+1.18 
+1.13 
+
+
+1.18 
+1,13 
+
+
+1.17 
+1.13 
+
+
+1.16 
+1.12 
+
+
+
+From: G. Williams, W.P. Swanson, P. Kragh and G. Dexler: 
+Photon Dose Equivalent Distribution in the ICRU Sphere" 
+0721-1694(1985). 
+
+
+
+"Calculation and Analysis of 
+GSF Report S-958, ISSN 
+
+
+
+42 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Table A.1 1 - Conversion coefficients for directional dose 
+equivalent W(0,07) per unit fluence 
+
+
+
+Photon 
+
+
+
+
+Conversion coefficients 
+
+
+
+
+energy 
+keV 
+
+
+
+
+10" 12 Sv • cm 2 
+
+
+
+
+0° 
+
+
+30° 
+
+
+60° 
+
+
+90° 
+
+
+10 
+
+
+6,83 
+
+
+6,82 
+
+
+6,47 
+
+
+1,50 
+
+
+15 
+
+
+3,08 
+
+
+3,05 
+
+
+2,97 
+
+
+1.31 
+
+
+20 
+
+
+1,73 
+
+
+1.73 
+
+
+1.69 
+
+
+1,02 
+
+
+25 
+
+
+1.18 
+
+
+1,16 
+
+
+1,12 
+
+
+0,759 
+
+
+30 
+
+
+0.872 
+
+
+0,862 
+
+
+0,830 
+
+
+0,572 
+
+
+40 
+
+
+0,585 
+
+
+0,583 
+
+
+0,556 
+
+
+0,412 
+
+
+50 
+
+
+0,481 
+
+
+0,483 
+
+
+0,464 
+
+
+0,345 
+
+
+75 
+
+
+0,469 
+
+
+0.464 
+
+
+0.450 
+
+
+0,360 
+
+
+100 
+
+
+0.579 
+
+
+0,569 
+
+
+0.554 
+
+
+0.455 
+
+
+150 
+
+
+0,849 
+
+
+0,849 
+
+
+0,852 
+
+
+0,739 
+
+
+250* 
+
+
+1.46 
+
+
+1.47 
+
+
+1.50 
+
+
+1.35 
+
+
+400* 
+
+
+2.35 
+
+
+2,36 
+
+
+2.42 
+
+
+2.24 
+
+
+662* 
+
+
+3.76 
+
+
+3.78 
+
+
+3,84 
+
+
+3,59 
+
+
+1 000* 
+
+
+5,25 
+
+
+5,31 
+
+
+5,39 
+
+
+5,14 
+
+
+1 250* 
+
+
+6,34 
+
+
+6.25 
+
+
+6,38 
+
+
+6,05 
+
+
+
+* These values are not for the surface shell, but for the next inner shell i.e. between 
+14,95 cm and 14,85 cm where electron equilibrium is attained. Treat values with caution. 
+
+
+
+From: P. J. Dimbylow and D.T. Bartlett: Personal communication (1986), and P.J. 
+Dimbylow and T.M. Francis: "A Calculation of Photon Depth-Dose Distribution in the ICRU 
+Sphere for a Broad Parallel Beam, a Point Source and an Isotropic Field", NRPB R-92 
+(1979). 
+
+
+
+43 
+
+
+
+IS 13883 : 19.93 
+IEC 1066! 1991 
+
+
+
+Table A. 12 - Conversion coefficients for directional dose 
+equivalent H'(10) per unit fluence 
+
+
+
+Photon 
+
+
+
+
+Conversion coefficients 
+
+
+
+
+energy 
+keV 
+
+
+
+
+10" 12 Sv ■ cm 2 
+
+
+
+
+0° 
+
+
+30° 
+
+
+60° 
+
+
+90° 
+
+
+10 
+
+
+0,0708 
+
+
+0,0392 
+
+
+0,00242 
+
+
+<10" 5 
+
+
+15 
+
+
+0.827 
+
+
+0.684 
+
+
+0,274 
+
+
+0,00443 
+
+
+20 
+
+
+1,00 
+
+
+0,932 
+
+
+0,604 
+
+
+0,0727 
+
+
+25 
+
+
+0.906 
+
+
+0.868 
+
+
+0,657 
+
+
+0,172 
+
+
+30 
+
+
+0,773 
+
+
+0,746 
+
+
+0,609 
+
+
+0,223 
+
+
+40 
+
+
+0,608 
+
+
+0,587 
+
+
+0,498 
+
+
+0,242 
+
+
+50 
+
+
+0,518 
+
+
+0,508 
+
+
+0,436 
+
+
+0,239 
+
+
+75 
+
+
+0,505 
+
+
+0,497 
+
+
+0,440 
+
+
+0,262 
+
+
+100 
+
+
+0,610 
+
+
+0,594 
+
+
+0,537 
+
+
+0,342 
+
+
+150 
+
+
+0,885 
+
+
+0,879 
+
+
+0,811 
+
+
+0,549 
+
+
+250 
+
+
+1,50 
+
+
+1.48 
+
+
+1,41 
+
+
+1,03 
+
+
+400 
+
+
+2,38 
+
+
+2,35 
+
+
+2,28 
+
+
+1,76 
+
+
+662 
+
+
+3,69 
+
+
+3,69 
+
+
+3,63 
+
+
+2,99 
+
+
+1 250 
+
+
+6,09 
+
+
+6,10 
+
+
+6,03 
+
+
+5,25 
+
+
+
+From: D.T. Bartlett, P. J. Dimbylow and T.M. Francis: "Calculations of the Energy and 
+Angle Dependence of Response of a Simplified Design of Photon Personal Dosimeter and 
+its Relationship with the Recommended ICRU Calibration Quantity" (submitted for publi- 
+cation (1986)), and P. J. Dimbylow and T.M. Francis: "The Calculation of Dose Equivalent 
+Quantises in the ICRU Sphere for Photon Energies from 0,01 to 10 MeV", Rad. Prot. 
+Dosimetry 9 (1), pp. 49-53 (1984), for other angles and for spatial and rotational isotropy. 
+
+
+
+44 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Annex B 
+
+
+
+Dose equivalent conversion factors for environmental dosemeters 
+
+
+
+Table B.1 gives conversion data from kerma in air to ambient dose equivalent. 
+
+
+
+Table B.1 - Conversion of air kerma to ambient dose equivalent for 
+monoenergetic photons of energy E 
+
+
+
+E 
+
+
+H*(10)/K, 
+
+
+keV 
+
+
+Sv/Gy 
+
+
+10 
+
+
+0.01 
+
+
+15 
+
+
+0,32 
+
+
+20 
+
+
+0,60 
+
+
+25 
+
+
+0,86 
+
+
+30 
+
+
+1.10 
+
+
+40 
+
+
+1,47 
+
+
+50 
+
+
+1.67 
+
+
+60 
+
+
+1.74 
+
+
+70 
+
+
+1.75 
+
+
+80 
+
+
+1.72 
+
+
+90 
+
+
+1,68 
+
+
+100 
+
+
+1,65 
+
+
+125 
+
+
+1,56 
+
+
+150 
+
+
+1.49 
+
+
+200 
+
+
+1,40 
+
+
+250 
+
+
+1,35 
+
+
+300 
+
+
+1,31 
+
+
+500 
+
+
+1,23 
+
+
+662 
+
+
+1.20 
+
+
+1 000 
+
+
+1.17 
+
+
+1 250 
+
+
+1.16 
+
+
+3 000 
+
+
+1.13 
+
+
+
+From; "New Quantities in Radiation Protection and Conversion Coefficients" 
+Dosimetry 14 (4), pp. 337-343 (1986). 
+
+
+
+Had. Prot. 
+
+
+
+45 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Annex C 
+
+
+
+Determination of evaluated value Efrom readout value 
+
+
+
+To determine the evaluated value from either the ambient dose equivalent or from the 
+individual dose equivalent that a TL dosemeter is expected to measure, at least one and 
+sometimes more TL detectors are read in the TL reader. In order to convert the results of 
+these readout values r into the final answer, a number of steps have to be made, 
+depending on the TLD system being used and how it is used. The following diagram indica- 
+tes, as an example, what steps may be involved. 
+
+
+
+Readout 
+value 
+
+
+
+background correction 
+
+reader stability factor 
+
+detector sensitivity factor 
+
+other correction factors 
+
+(e.g. fading, non-linearity...) 
+
+calibration factor (e.g. the use of 
+
+60 Co or 137 Cs) 
+
+algorithm (calculation in terms of dose of 
+
+interest and, if applicable, the combination 
+
+of the results of more than one detector) 
+
+
+
+Evaluated value 
+
+-> E 
+
+
+
+In any particular situation, some of these factors may not be necessary and other factors 
+may have to be introduced. For this reason, in this standard one single factor is assumed 
+to replace the entire process, namely the evaluation factor F , which converts the readout 
+value rinto the evaluated value E. 
+
+
+
+46 
+
+
+
+IS 13883 : 1993 
+'EC 1066 : 1991 
+
+
+
+Annex D 
+
+Confidence Hmits 
+D.1 General 
+
+If the magnitude of the random uncertainty cf a measured value is a significant fraction of 
+the permitted tolerance of this measured value, the random uncertainty shall be assessed 
+by taking more than one measurement. The number of measurements or the sample size 
+
+shall be chosen in such a way that the confidence interval obtained for each mean x for a 
+confidence level of 95 % lies either within the Hmits of variation of the measured value 
+permitted in the test (test passed, point A in figure D.1) or outside these limits (test failed, 
+point O in figure D.1). If one of the permitted limits of variation x u or x |( lies within the 
+confidence interval of the mean (point □ in figure D.1), the number of measurements or 
+the sample size can be increased to reduce the width 2/ of the confidence interval of the 
+
+mean x in order to reach one of the two cases mentioned above, which are necessary for 
+an unequivocal decision of passing the test or not. 
+
+
+
+Confidence interval of 
+T A the mean of width 21 
+
+
+
+? 
+
+
+
+2/ 
+
+
+
+-¥ 
+
+
+
+i 
+
+_ Permitted upper 
+
+limit of variation 
+
+
+
+Permitted lower 
+limit of variation 
+
+
+
+IEC 196191 
+
+
+
+Figure D.1 - The test is passed if the confidence interval 
+
+of width 2/ around x lies between the permitted 
+upper and lower limits of variation, x u and x,. 
+
+
+
+In each test it is recommended to start with 10 measurements for each dosemeter. If it 
+turns out to be necessary to reduce the width 2/ of the confidence interval of the experi- 
+mental standard deviation, the number of measurements should be increased (see D.2). 
+
+Occasionally it is more convenient to carry out a test (including e.g. an irradiation) with a 
+certain number of different dosemeters drawn at random from the batch instead of repea- 
+ting a number of measurements with the same dosemeteV. There are no objections to such 
+a procedure but the random uncertainties of the test results may be increased. 
+
+
+
+47 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+D.2 Confidence interval for the experimental standard deviation (s) 
+
+The confidence interval for the experimental standard deviation of the means s, is: 
+
+(•■-'.. S+ 's> 
+
+where / is the half-width of the confidence interval of s. If s is calculated from n s measure- 
+ments, the upper limit of / at a confidence level of 95 % is given by: 
+
+
+
+'* (nJ - f ns - 
+
+
+
+s * s 
+
+
+
+ns 
+
+
+
+
+0,5 
+
+
+
+"s" 1 
+
+
+
+(1) 
+
+
+
+By way of example / 8 (10) « 0,53 • s is obtained for 10 dosemeters. 
+
+
+
+D.3 Mean, x 
+
+
+
+The confidence interval for the mean (x) is: 
+
+
+
+(x - /j. x + I) 
+
+
+
+where l t is the half-width of the confidence interval of x relative to the Mh set of measure- 
+ments. When calculating x from r>. measurements, the half-width of the confidence interval 
+is given by: 
+
+
+
+
+
+
+(2) 
+
+
+
+where s, is the standard deviation for the f-th group of measurements, and f ni is taken from 
+table D.1 for n. measurements. For example, for n. - 10, /. ■ 2,26 / ^10 • s. - 0,71 - s v 
+
+
+
+Table D.1 
+
+
+
+rt\ 
+
+
+f 
+
+
+i 
+
+
+ni 
+
+
+2 
+
+
+12.71 
+
+
+3 
+
+
+4,30 
+
+
+4 
+
+
+3,18 
+
+
+S 
+
+
+2.78 
+
+
+6 
+
+
+2,57 
+
+
+7 
+
+
+2,45 
+
+
+8 
+
+
+2,37 
+
+
+9 
+
+
+2,31 
+
+
+10 
+
+
+2,26 
+
+
+15 
+
+
+2,15 
+
+
+20 
+
+
+2,09 
+
+
+25 
+
+
+2,06 
+
+
+30 
+
+
+2,05 
+
+
+40 
+
+
+2,02 
+
+
+60 
+
+
+2,00 
+
+
+120 
+
+
+1,98 
+
+
+-0O 
+
+
+1,96 
+
+
+
+48 
+
+
+
+IS 13883 : 1993 
+IEC 1066: 1991 
+
+
+
+D.4 Confidence interval for a combined quantity 
+
+If the limits of variation are stated for a quantity (x) calculated from k independent means 
+
+Xy Xg, X 3' '" ' *k' 
+
+
+
+X ts f [X*, Xg» Xg, ..., X|^/ 
+
+and the half-width of the confidence interval of the Mh mean is /,, the half-width (/) of the 
+confidence interval for x is given by 
+
+
+
+
+k 
+/-1 
+
+
+
+of (Xj, Xg, Xg, ..., Xj^) 
+
+3x, 
+
+
+
+/ 2 
+i 
+
+
+
+Examples: 
+
+
+
+t) 
+
+
+
+x ■x 1 ±x 2 hence /« y /* 
+
+
+
+2 +/ 2 
+
+
+
+in general x - £ x, hence / « A / z / 
+
+
+
+/-1 
+
+
+
+
+/. 1 
+
+
+
+2) 
+
+
+
+x = r=— hence / = -=r- 
+
+
+
+
+3) 
+
+
+
+x = 
+
+
+
+x 1 - x 2 
+
+
+
+x 1 + x 2 
+
+
+
+hence / 
+
+
+
+—^—2- \ / <x" 2 • l,f + <X A - k 
+
+
+
+49 
+
+
+
+IS 13883: 1993 
+IEC 1066: 1991 
+
+
+
+Annex E 
+Bibliography 
+
+
+
+IEC 846: 1989, Beta, X and gamma radiation dose equivalent and dose equivalent rate 
+meters for use in radiation protection. 
+
+ISO 4071 : 1 978, Exposure meters and dosemeters - General methods for testing. 
+
+EUR 5287: 1975, Technical Recommendations for monitoring the exposure of individuals 
+to external radiation. Commission of the European Communities. 
+
+EUR 5358: 1975, Technical Recommendations for the use of thermoluminescence for dosi- 
+metry in individual monitoring for photons and electrons from external sources. Commis- 
+sion of the European Communities. 
+
+
+
+ICRU Report No. 20: 1971, International Commission on Radiation Units and Measure- 
+ments. Radiation protection instrumentation and its application. 
+
+ICRU Report No. 23: 1973, International Commission on Radiation Units and Measure- 
+ments. Measurement of absorbed dose in a phantom irradiated by a single beam of X or 
+gamma rays. 
+
+ICRP Report No. 26: 1977, Recommendations of the International Commission on Radio- 
+logical Protection, Pergamon Press. 
+
+ICRP Report No. 35: 1982, International Commission on Radiological Protection. General 
+principles of monitoring for radiation protection of workers. 
+
+
+
+50 Printed *t Dee Kay Primers, New Delhi, Imfla 
+
+
+
+Standard Mark 
+
+The use of the Standard Marie is governed by the provisions of the Bureau a/ Indian 
+Standards Act, 1986 and the Rules and Regulations made thereunder. The Standard Mark 
+on products covered by an Indian Standard conveys the assurance that they have been 
+produced to comply with the requirements of that standard under a well defined system 
+of inspection, testing and quality control which is devised and supervised by BIS and 
+operated by the producer. Standard marked products arc also continuously checked by 
+BIS for conformity to that standard as a further safeguard. Details of conditions under 
+which a licence for the use of the Standard Mark may be granted to manufacturers 01 
+producers may be obtained from the Bureau of Indian Standards. 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to 
+promote harmonious development of the activities of standardization, marking and quality 
+certification of goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced 
+in any form without the prior permission in writing of BIS. This does not preclude the free use, 
+in the course of implementing the standard, of necessary details, such as symbols and sizes, type 
+or grade designations, [inquiries relating to copyright be addressed to the Director 
+( Publications ). BIS. 
+
+Rerision of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards 
+are also reviewed periodically; a standard along with amendments is reaffirmed when such review 
+indicates that no changes are needed; if the review indicates that changes are needed, it is taken 
+up for revision. Users of Indian Standards should ascertain that they are in possession of the 
+latest amendments or edition by referring to the latest issue of 'BIS Handbook and 'Standards 
+Monthly Additions'. Comments on this Indian Standard may be sent to BIS giving the following 
+reference: 
+
+Doc : No. LTD 26 ( 1409 ) 
+
+Amendments Issued Since Publication 
+
+Amend No Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg New Delhi 110002 
+
+Telephones : 331 01 31. 331 13 75 Telegrams : Manaksanstha 
+
+( Common to all Offices ) 
+
+Regional Offices • Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg f33l 01 3] 
+
+NEW DELHI 110002 {33 1 13 75 
+
+Eastern : 1/14 C. I. T. Scheme VII M, V. 1. P. Road, Maniktola C37 84 99, 37 85 61 
+
+CALCUTTA 700054 [37 86 26, 37 86 62 
+
+Northern : SCO 445-446, Sector 35-C, CHANDIGARH 160036 P* ** ^' 53 I6 4 ° 
+
+Southern : C. I. T. Campus, IV Cross Road, MADRAS 600113 {^ ^ JJ' HI °* A \ 
+
+IZ35 15 19, 235 23 15 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri ( East ) J632 92 95, 632 78 58 
+
+BO MB AY 400093 \ 632 78 91, 632 78 92 
+
+Branches : AHMADABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. 
+FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. 
+LUCKNOW. PATNA. THIRUVANANTHAPURAM. 
+
+
+
+Printed at Printwell Printers, Aligarh, India 
+
+
+

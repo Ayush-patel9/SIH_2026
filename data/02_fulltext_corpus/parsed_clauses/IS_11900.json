@@ -1,0 +1,81 @@
+{
+  "is_number": "IS IS_11900",
+  "standard_id": "IS IS_11900",
+  "title": "Indian Standard Specification / Test Method (IS IS_11900)",
+  "ia_identifier": "IS_11900",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the requirements of two types of drawn tungsten wires su'table for fabrication of parts for lamps and electron devices, and tungsten rods for glass-to-metal sealing. Type 1 Non-sag. tungsten wire Type 2 Pure tungsten wire/rod for glass-to-metal sealing. 2.SUPPLY OF MATERIAL 2.1 The general requirements relating to the supply of this material shall conform to IS : 1387-1967*. 3. CHEMICAL COMPOSITION 3.1 The chemical composition of the material, when analyzed in accordance with the methods specified in D-l shall be as follows: Tungsten 99-95 Min Iron 0.01 Mux Molybdenum 0'02 Max Non-volatile matter 001 Max Note I — Desirable molybdenum content is 100 ppm Max. noiE 2 — The material shall be suitably doped to impart the non-sag properties to the wire. 4.FINISH 4.1 The tungsten wires and rods shall be supplied in the following finishes, as stated in the order: Finish I Black as drawn Finish 2 Electro polished Finish 3 Chemically cleaned Finish 4 Chemically cleaned and stress relieved Finish 5 Reducing atmosphere cleaned and annealed Finish 6 Centreless ground for rods 5. FREEDOM FROM DEFECTS 5.1 The tungsten wire shall be smooth free from twists, bends, kinks, curls, swaging marks, scratches, die marks, splits, slivers, pits, grooves, cracks and other physical defects when observed under a 30 X magnification. ♦General requirements for the supply of metallurgical meterials (first revision). 4 IS : 11900. 1986 5.2 Unless black finish is specified, all types of wires shall have a clean finish free from graphite, grease, oil and lubricants. All finishes shall be free from dirt, oxide, stains, scale and other surface contaminations. 5.3 Tungsten rods shall be bright, smooth, free from surface flaws, and be capable of making acceptable glass-to-metal scale. 6. REQUIREMENTS * 6.1 Tensile Strength ^ The tensile strength of the wires of gauge length of 200 mm shall conform to the requirements given in Table 1 when tested in accordance with D-2. TABLE 1 TENSILE PROPERTIES OF NON-SAG TUNGSTEN WIRE Mass OF Wi RE mg/200 mm DiA OF Wire IN mm ( Approx ) Tensile Strength g/ing/200 mm Finisiies 1,2&3 Finisli 4 Finish 5 up to 1.95 up to 0-03 80 - 110 70 - 90 55 - 95 over 1.95 to 7.91 Over 0-03 to 0-05 75 - 105 70 - 90 55- 90 Over 7-91 to 17'60 Over 0-05 to 0-08 70 - 100 60 - 90 55- 90 Over 17-60 to 48-25 Over 0-08 to 0-13 65 - 95 60 - 85 50 - 85 Over 48-25 to 198'00 Over 0-13 to 0-25 60 - 90 60 - 85 50 - 85 Over 198.00 to 760-00 Over 0-25 to 0-51 50 - 80",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1387",
+      "standard_id": "IS 1387:1993",
+      "title": "General requirments for the supply of metallurgical materials",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 100",
+      "standard_id": "IS 100",
+      "title": "Indian Standard Specification / Test Method (IS 100)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11966",
+      "standard_id": "IS 11966:1997",
+      "title": "Garlic - Guide to cold storage",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 25",
+      "standard_id": "IS 25:1979",
+      "title": "antifriction bearing alloys",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11900"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "Tensile Strength g/ing/200 mm",
+      "tensile strength and expressed in gf/mg/200 mm"
+    ],
+    "chemical_properties": [
+      "carbons ( plus CO and COg ), not more than 20 ppm"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance ± 3 percent ( ±0-24m"
+    ],
+    "marking_requirements": [
+      "10.1 Spools and bands containing tungsten wires shall be packed in",
+      "suitable containers to avoid damage during transit and storage. Small",
+      "bags of silica gel if required shall be placed inside the container for",
+      "moisture absorption. Each spool shall be marked with the name of the",
+      "begining and end of wire on a spool, manufacturer's type number, lot"
+    ]
+  },
+  "total_chars_parsed": 31586
+}

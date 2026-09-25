@@ -1,0 +1,322 @@
+{
+  "is_number": "IS IS_10746__PART_2_",
+  "standard_id": "IS IS_10746__PART_2_",
+  "title": "Indian Standard Specification / Test Method (IS IS_10746__PART_2_)",
+  "ia_identifier": "IS_10746__PART_2_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This specification covers the general requirements for the design, construction and testing of shell and tube type heat exchangers for use on boardships.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10746",
+      "standard_id": "IS 10746",
+      "title": "Indian Standard Specification / Test Method (IS 10746)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4503",
+      "standard_id": "IS 4503:1967",
+      "title": "Shell and Tube Type Heat Exchangers",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2825",
+      "standard_id": "IS 2825:1969",
+      "title": "Code for unfired pressure vessels",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3038",
+      "standard_id": "IS 3038:2006",
+      "title": "Martensitic Stainless Steel and Alloy Steel Castings for Pressure Containing Parts Suitable for High Temperature Service",
+      "division_code": "MTD",
+      "aspect": "Service Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2856",
+      "standard_id": "IS 2856:1999",
+      "title": "Carbon Steel Castings for Pressure Containing Parts Suitable for Fusion Welding",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2004",
+      "standard_id": "IS 2004:1991",
+      "title": "Carbon steel forgings for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2611",
+      "standard_id": "IS 2611:1964",
+      "title": "Carbon chromium molybdenum steel forgings for high temperature services",
+      "division_code": "MTD",
+      "aspect": "Service Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1570",
+      "standard_id": "IS 1570",
+      "title": "Indian Standard Specification / Test Method (IS 1570)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3609",
+      "standard_id": "IS 3609",
+      "title": "Indian Standard Specification / Test Method (IS 3609)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1914",
+      "standard_id": "IS 1914",
+      "title": "Indian Standard Specification / Test Method (IS 1914)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2416",
+      "standard_id": "IS 2416:1986",
+      "title": "Boiler and supherheater tubes for marine and naval purposes",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1978",
+      "standard_id": "IS 1978:1982",
+      "title": "Line pipe",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1979",
+      "standard_id": "IS 1979:1985",
+      "title": "High test line pipe",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2002",
+      "standard_id": "IS 2002:2009",
+      "title": "Steel plates for pressure vessels for intermediate and high temperature service including boilers",
+      "division_code": "MTD",
+      "aspect": "Service Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2041",
+      "standard_id": "IS 2041:2009",
+      "title": "Steel Plates for Pressure Vessels Used at Moderate and Low Temperature",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 226",
+      "standard_id": "IS 226",
+      "title": "Indian Standard Specification / Test Method (IS 226)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2062",
+      "standard_id": "IS 2062:2011",
+      "title": "Hot Rolled Medium and High Tensile Structural Steel",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 1990",
+      "standard_id": "IS 1990:2009",
+      "title": "Steel rivet and stay bars for boilers",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 318",
+      "standard_id": "IS 318:1981",
+      "title": "Leaded Tin Bronze Ingots and Castings",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 407",
+      "standard_id": "IS 407:1981",
+      "title": "Brass Tubes for General Purposes",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1545",
+      "standard_id": "IS 1545:1994",
+      "title": "Solid drawn copper and copper alloy tubes for condenser and heat exc hangers",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2501",
+      "standard_id": "IS 2501:1995",
+      "title": "Solid Drawn Copper Tubes for General Engineering Purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 410",
+      "standard_id": "IS 410:1977",
+      "title": "Cold rolled brass sheet, strip and foil",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1972",
+      "standard_id": "IS 1972",
+      "title": "Indian Standard Specification / Test Method (IS 1972)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 288",
+      "standard_id": "IS 288:1981",
+      "title": "Arsenical copper rods for boiler stay bolts and rivets",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4171",
+      "standard_id": "IS 4171:1983",
+      "title": "Copper rods and bars for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 291",
+      "standard_id": "IS 291:1989",
+      "title": "Machining Purposes",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 961",
+      "standard_id": "IS 961",
+      "title": "Indian Standard Specification / Test Method (IS 961)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3444",
+      "standard_id": "IS 3444:1999",
+      "title": "Corrosion Resistant High Alloy Steel And Nickel Base Castings for General Applications",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade LTB-2",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10746__PART_2_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 28540
+}

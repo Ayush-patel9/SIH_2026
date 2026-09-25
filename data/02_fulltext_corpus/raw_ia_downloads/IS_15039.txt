@@ -1,0 +1,2973 @@
+**************** 
+
+
+
+*■ *Z**K 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+Jawaharlal Nehru 
+Step Out From the Old to the New 
+
+
+
+mi>«ss^^*ft^: 
+
+
+
+
+,_A» 
+
+
+
+
+**************** 
+
+
+
+BLANK PAGE 
+
+
+
+<_<ii££ 
+
+
+
+
+
+UJ> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 15039: 2001 
+CISPR24(1997) 
+
+^m eft ^TTC[ aft? Mc^Rk^lT 
+
+Indian Standard 
+
+INFORMATION TECHNOLOGY EQUIPMENT — 
+
+IMMUNITY CHARACTERISTICS — LIMITS AND 
+
+METHODS OF MEASUREMENT 
+
+
+
+ICS 33.100.20 
+
+
+
+© BIS 2001 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+
+
+October 2001 Price Group 11 
+
+
+
+Electromagnetic Compatibility Sectional Committee, LTD 22 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with CISPR 24 (1997) 'Information technology equipment — 
+Immunity characteristics — Limits and methods of measurements' issued by the Special Committee 
+on Radio Interference (CISPR) was adopted by the Bureau of Indian Standards on the 
+recommendation of the Electromagnetic Compatibility Sectional Committee and approval of the 
+Electronics and Telecommunication Division Council. 
+
+In the adopted standard, certain conventions are not identical to those used in Indian Standards. 
+Attention is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should be 
+read as 'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice 
+is to use a point (.) as the decimal marker. 
+
+CROSS REFERENCES 
+
+In this adopted standard, reference appears to certain International Standards for which Indian 
+Standards also exist. The corresponding Indian Standards which are to be substituted in their place 
+are listed below along with their degree of equivalence for the editions indicated: 
+
+
+
+International 
+Standard 
+IEC 60050(1 61 ):1 990 International 
+Electrotechnical Vocabulary (IEV) 
+— Chapter 161: Electromagnetic 
+compatibility 
+
+IEC 61000-4-2:1995 Electro- 
+magnetic compatibility (EMC) — 
+Part 4: Testing and measurement 
+techniques — Section 2: 
+Electrostatic discharge immunity 
+test — Basic EMC Publication 
+
+IEC 61000-4-4:1995 Electro- 
+magnetic compatibility (EMC) — 
+Part 4: Testing and measurement 
+techniques — Section 4: Electrical 
+fast transient/burst immunity test — 
+Basic EMC Publication 
+
+IEC 61000-4-8:1993 Electro- 
+magnetic compatibility (EMC) — 
+Part 4: Testing and measurement 
+techniques Section 8: Power 
+frequency 
+
+CISPR 22:1997 Information 
+technology equipment — Radio 
+disturbance characteristics — 
+Limits and methods of 
+measurements 
+
+
+
+Corresponding 
+
+Indian Standard 
+IS 1885 (Part 64/Sec 1 and 2) : 1987 
+Electrotechnical vocabulary: Part 64 
+Electromagnetic compatibility, Section 
+1 General terms, Section 2 Specific 
+terms 
+
+IS 14700 (Part 4/Sec 2) : 1999 
+Electromagnetic compatibility (EMC): 
+Part 4 Testing and measurement 
+techniques, Section 2 Electrostatic 
+discharge immunity test 
+
+IS 14700 (Part 4/Sec 4) : 1999 
+Electromagnetic Compatibility (EMC): 
+Part 4 Testing and measurement 
+techniques, Section 4 Electrical fast 
+transient/burst immunity test 
+
+IS 14700 (Part 4/Sec 8) : 1999 
+Electromagnetic Compatibility (EMC): 
+Part 4 Testing and measurement 
+techniques, Section 8 Power 
+frequency magnetic field immunity test 
+
+IS 6873 (Part 7) : 1999 Limits and 
+methods of measurements of radio 
+disturbance charactersitcs: Part 7 
+Information technology equipment 
+(first revision) 
+
+
+
+Degree of 
+Equivalence 
+Technically 
+Equivalent 
+
+
+
+Identical 
+
+
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+{Continued on third cover) 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+CONTENTS 
+
+
+
+Page 
+
+
+
+1 Scope and object 3 
+
+2 Normative references ' 3 
+
+3 Definitions 4 
+
+4 Immunity test requirements 6 
+
+5 Applicability 9 
+
+6 Conditions during testing 9 
+
+7 Performance criteria 10 
+
+8 Product documentation 11 
+
+
+
+Tables 
+
+1 Immunity, enclosure port 11 
+
+2 Immunity, signal ports and telecommunication ports 12 
+
+3 Immunity, input d.c. power port (excluding equipment marketed 
+
+with an a.c./d.c. power converter) 12 
+
+4 Immunity, input a.c. power port (including equipment marketed 
+
+with a separate a.c./d.c. power converter) 13 
+
+Annexes 
+
+A Telecommunications terminal equipment 14 
+
+B Data processing equipment 21 
+
+C Local area networks (LAN) 25 
+
+D Printers 26 
+
+E Copying machines 27 
+
+F Automatic teller machines (ATM) 28 
+
+G Point of sale terminals (POST) 30 
+
+
+
+As in the Original Standard, this Page is Intentionally Left Blank 
+
+
+
+IS 15039 : 2001 
+CISPR 24 {1997) 
+
+Indian Standard 
+
+INFORMATION TECHNOLOGY EQUIPMENT — 
+
+IMMUNITY CHARACTERISTICS — LIMITS AND 
+
+METHODS OF MEASUREMENT 
+
+1 Scope and object 
+
+This CISPR publication applies to information technology equipment (ITE) as defined in 
+CISPR 22. 
+
+Procedures are defined for the measurement of ITE and limits are specified which are 
+developed for ITE and within the frequency range from Hz to 400 GHz. 
+
+The object of this publication is to establish requirements which will provide an adequate level 
+of intrinsic immunity so that the equipment will operate as intended in its environment. 
+
+For exceptional environmental conditions, special mitigation measures may be required. 
+
+Owing to testing and performance assessment considerations, some tests are specified in 
+defined frequency bands or at selected frequencies, Equipment which fulfils the requirements 
+at these frequencies is deemed to fulfil the requirements in the entire frequency range from 
+Hz to 400 GHz for electromagnetic phenomena. 
+
+The object of this publication is to define the immunity test requirements for equipment defined 
+in the scope in relation to continuous and transient, conducted and radiated disturbances, 
+including electrostatic discharges (ESD). 
+
+The test requirements are specified for each port considered. 
+
+NOTES 
+
+1 Safety considerations are not covered in this publication. 
+
+2 In special cases, situations will arise where the level of disturbance may exceed the levels specified in this 
+publication, for example where a hand-held transmitter is used in proximity to an equipment. In these instances 
+special mitigation measures may have to be employed. 
+
+
+
+2 Normative references 
+
+The following normative documents contain provisions which, through reference in this text, 
+constitute provisions of this International Standard. For dated references, subsequent 
+amendments to, or revisions of, any of these publications do not apply. However, parties to 
+agreements based on this International Standard are encouraged to investigate the possibility 
+of applying the most recent editions of the normative documents indicated below. For undated 
+references, the latest edition of the publication referred to applies. Members of ISO and IEC 
+maintain registers of currently valid International Standards. 
+
+IEC 60050(161): 1990, International Electrotechnical Vocabulary (IEV) - Chapter 161: 
+Electromagnetic compatibility 
+
+IEC 60318: 1970, An IEC artificial ear, of the wideband type, for the calibration of earphones 
+used in audiometry 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+IEC 61000-4-2: 1995, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement 
+techniques - Section 2: Electrostatic discharge immunity test - Basic EMC Publication 
+
+IEC 61000-4-3: 1995, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement 
+techniques - Section 3: Radiated, radio- frequency, electromagnetic field immunity test - Basic 
+EMC Publication 
+
+IEC 61000-4-4: 1995, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement 
+techniques - Section 4: Electrical fast transient/burst immunity test - Basic EMC Publication 
+
+IEC 61000-4-5: 1995, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement 
+techniques - Section 5: Surge immunity tests - Basic EMC Standard 
+
+IEC 61000-4-6: 1996, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement 
+techniques ~ Section 6: Immunity to conducted disturbances, induced by radio-frequency fields 
+
+IEC 61000-4-8: 1993, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement 
+techniques - Section 8: Power frequency magnetic field immunity test 
+
+IEC 61000-4-11: 1994, Electromagnetic compatibility (EMC) - Part 4: Testing and 
+measurement techniques - Section 11: Voltage dips, short interruptions and voltage variations 
+immunity tests 
+
+CISPR 22: 1997, Information technology equipment - Radio disturbance characteristics - 
+Limits and methods of measurement 
+
+ISO 9241-3: 1992, Ergonomic requirements for office work with visual display terminals (VDTs) - 
+Part 3: Visual display requirements 
+
+ITU-T Recommendation 1.241.1: Telephony 
+
+ITU-T Recommendation 1.411: Integrated service digital network (ISDN) user network 
+interfaces 
+
+ITU-T Recommendation K.15: Protection of high capacity transmission systems against 
+overvoltages and HF-disturbances 
+
+ITU-T Recommendation K.17: Tesfs on power fed repeaters using solid state devices in order 
+to check the arrangements for protection from external interferences 
+
+ITU-T Recommendation K.20: Resistibility of telecommunication switching equipment to 
+overvoltages and overcurrents 
+
+ITU-T Recommendation K. 21: Resistibility of subscribers' terminals to overvoltages and 
+overcurrents 
+
+ITU-T Recommendation K.22: Overvoltage resistibility of equipment connected to an ISDN T/S 
+bus, Blue Book, Volume IX, November 1988 
+
+3 Definitions 
+
+For the purpose of this publication, the definitions contained in the following documents apply: 
+ITU-T Recommendation 1.411, IEC 60050 (161), International Electrotechnical Vocabulary 
+(IEV), Chapter 161. In addition, the following specific definitions apply: 
+
+3.1 continuous wave (CW): Electromagnetic waves, the successive oscillations of which are 
+sinusoidal and identical under steady-state conditions, which can be interrupted or modulated 
+to convey information. 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+3.2 degradation: The unwanted change in operational performance of an EUT due to 
+electromagnetic disturbances. This does not necessarily mean malfunction or catastrophic 
+failure. 
+
+3.3 equipment under test (EUT): A representative ITE or functionally interactive group of 
+ITE (that is a system) which includes one or more host units and is used for evaluation 
+purposes. 
+
+3.4 information technology equipment (ITE): The definition of ITE is as described in 
+CISPR 22. 
+
+3.5 jitter (of a cathode ray tube (CRT) monitor): Peak-to-peak variation in the geometric 
+location of picture elements on the viewing surface of the CRT monitor. 
+
+3.6 temporal instability (flicker): The perception of unintended temporal variation in 
+luminance. 
+
+3.7 port: Particular interface of the specified equipment with the external electromagnetic 
+environment (see figure 1). 
+
+
+
+
+
+Enclosure port 
+
+
+
+
+DC power port 
+
+
+Information technology 
+equipment 
+
+
+Earth port 
+
+
+AC power port 
+
+
+Signal port 
+
+
+
+
+Telecommunication port 
+
+
+
+Figure 1 - Description of ports 
+
+
+
+3.8 enclosure port: The physical boundary of the equipment through which electromagnetic 
+fields may radiate or impinge. For plug-in units, the physical boundary will be defined by the 
+host unit. 
+
+3.9 cable port: A point at which a conductor or a cable is connected to the equipment. 
+Examples are signal and power ports. 
+
+3.10 a telephony call: The process exercised in the network and the telecommunication 
+terminal equipment (TTE) to allow interchange of information (speech, video or data) with 
+another TTE through the network. 
+
+NOTE - The call shall be operated in the way specified by the manufacturer. For circuit switched services the 
+exchange of data shall be considered to be possible when a 64 kbit/s channel or equivalent is available for both 
+parties. For packet service the exchange of information shall be considered to be possible when a virtual path is 
+established to the called TTE. 
+
+3.11 to establish a telephony call: The operating procedure for a user or an automatic 
+process in conjunction with the network to reach the capability to exchange information with 
+another TTE. See note to 3.10. 
+
+3.12 to receive a telephony call: The operating procedure for a user or an automatic 
+process initiated by, and in conjunction with, the network to reach the capability to exchange 
+information with another TTE. See note to 3.10. 
+
+3.13 to maintain a telephony call: The capability of exchanging information without having 
+to clear and re-establish a call. See note to 3.10. 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+3.14 to clear a telephony call: The operating procedure for a user or an automatic process 
+in conjunction with the network (either at the initiative of the local party or the distant party) to 
+stop the capability of exchanging information by an orderly return to a state where the 
+establishment of a new call is possible. See note to 3.10. 
+
+3.15 network terminator (NT): Ancillary equipment representing the termination of the 
+telecommunication network. 
+
+3.16 telephony service: A service providing users with the ability for real-time two-way 
+speech conversation via a network (see ITU-T Recommendation 1.241.1). 
+
+3.17 telecommunications terminal equipment: Equipment intended to be connected to a 
+public or private telecommunications network, that is: 
+
+a) to be connected directly to the termination of a telecommunications network in order to 
+send, process or receive information; or 
+
+b) to interwork with a telecommunications network being connected directly or indirectly to 
+the termination of a telecommunications network in order to send, process or receive 
+information. 
+
+
+
+4 Immunity test requirements 
+
+4.1 General 
+
+The immunity test requirements for equipment are given on a port-by-port basis. 
+
+Tests shall be conducted in a well-defined and reproducible manner. 
+
+The tests shall be carried out as single tests in sequence. The sequence of testing is optional. 
+
+The description of the test, the test generator, the test methods and the test set-up are given in 
+IEC basic EMC standards which are referred to in the following tables. 
+
+The contents of these IEC basic EMC standards are not repeated here; however, modifications 
+or additional information needed for the practical application of the tests are given in this 
+publication. 
+
+4.2 Particular requirements 
+
+4.2.1 Electrostatic discharges (ESD) 
+
+Static electricity discharges shall be applied only to those points and surfaces of the EUT which 
+are expected to be touched during usual operation, including user access, as specified in the 
+user manual, for example for ribbon and paper roll changes. 
+
+The discharges shall be applied in two ways: 
+
+a) contact discharges to the conductive surfaces and to coupling planes: 
+
+The EUT shall be exposed to at least 200 discharges, 100 each at negative and positive 
+polarity, at a minimum of four test points (a minimum of 50 discharges at each point). One 
+of the test points shall be subjected to at least 50 indirect discharges (contact) to the centre 
+of the front edge of the horizontal coupling plane.The remaining three test points shall each 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+receive at least 50 direct contact discharges. If no direct contact test points are available, then 
+at least 200 indirect discharges shall be applied in the indirect mode (see IEC 61000-4-2 for 
+use of the Vertical Conducting Plane (VCP)). Tests shall be performed at a maximum 
+repetition rate of one discharge per second. 
+
+b) air discharge at slots and apertures, and insulating surfaces: 
+
+On those parts of the EUT where it is not possible to perform contact discharge testing, the 
+equipment should be investigated to identify user accessible points where breakdown may 
+occur; examples are openings at edges of keys, or in the covers of keyboards and 
+telephone handsets. Such points are tested using the air discharge method. See also 
+IEC 61000-4-2 regarding painted surfaces. This investigation should be restricted to those 
+areas normally handled by the user. A minimum of 10 single air discharges shall be applied 
+to the selected test point for each such area. 
+
+The application of electrostatic discharges to the contacts of open connectors is not 
+required by this publication. 
+
+
+
+4.2.2 Electrical fast transients (EFT) 
+
+The test method is given in IEC 61000-4-4. However, the test set-up for in situ measurements 
+is not applicable for ITE. 
+
+The test procedure is as given in IEC 61000-4-4 together with the following changes and 
+clarifications: 
+
+- if the equipment contains identical ports, only one shall be tested; 
+
+- multiconductor cables, such as a 50-pair telecommunication cable, shall be tested as a 
+single cable. Cables shall not be split or divided into groups of conductors for this test; 
+
+- interface ports, which are intended by the manufacturer to be connected to data cables 
+not longer than 3 m, shall not be tested. 
+
+4.2.3 Continuous radio frequency disturbances 
+
+The preferred frequency range for the radiated field test is 80 MHz to 1 000 MHz. The preferred 
+frequency range for the continuous conducted test is 0,15 MHz to 80 MHz. However, the 
+radiated test may be performed with a start frequency lower than 80. MHz; in that case the 
+continuous conducted test (where applicable) need only be carried out up to this start 
+frequency. 
+
+The frequency ranges are scanned as specified; however, at a limited number of selected 
+frequencies a more comprehensive functional test may be required. The requirement to 
+undertake this additional selected frequency test is not universally applicable to all products, 
+but only to products which have this requirement specified in annex A (under particular product 
+specific requirements). The selected frequencies are given in tables 1 to 4. 
+
+The dwell time at each frequency shall not be less than the time necessary for the EUT to be 
+exercised and to be able to respond; however, the dwell time shall not exceed 5 s at each of 
+the frequencies during the scan. 
+
+The time to exercise the EUT shall not be interpreted as a total time of a programme or a cycle 
+but related to the reaction time in case of failure of the EUT. 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+4.2.3.1 Continuous radiated disturbances 
+
+The test procedure is in accordance with IEC 61000-4-3. 
+
+The EUT shall be positioned so that the four sides ot the EUT shall be exposed to the 
+electromagnetic field in sequence. In each position the performance of the EUT will be 
+investigated. 
+
+In the case where the most sensitive surface side of the EUT is known throughout the 
+frequency range (for example, via preliminary tests), testing may be restricted to that surface 
+side only. 
+
+In cases of dispute, testing on the four surface sides shall take precedence. 
+
+If the EUT is too large to be adequately illuminated by the radiating antenna partial illumination 
+shall be used. 
+
+Partial illumination shall be carried out using one of the following techniques: 
+
+- the EUT can be repositioned so that the front surface remains separated from the 
+radiating antenna by the test distance (perpendicular with the axis between the calibration 
+point and the radiating antenna) in order to illuminate those sections of the EUT outside the 
+previous antenna beam width; 
+
+- where the EUT consists of separate modules, the modules can be tested separately 
+within the antenna beam width. 
+
+In cases of dispute, full illumination of the EUT will take precedence. 
+
+The frequency range can be swept incrementally with a step size not exceeding 4 % of the 
+fundamental with a test level of twice the value of the specified test level. 
+
+In cases of dispute, testing with 1 % steps will take precedence. 
+
+4.2.3.2 Continuous conducted disturbances 
+
+There shall be no additional deviations from IEC 61000-4-6 (other than those specified 
+in 4.2.3.1). 
+
+4.2.4 Power-frequency magnetic fields 
+
+The test procedure shall be in accordance with IEC 61000-4-8. 
+
+The EUT shall be arranged and connected to satisfy its functional requirements, and shall be 
+placed at the centre of the coil system (immersion method). 
+
+The cables supplied by the equipment manufacturer shall be used or, in their absence, suitable 
+alternative cables of the type appropriate to the signals involved shall be used. 
+
+Physically large products need not be completely submerged in the magnetic field, only the 
+sensitive devices (such as CRT monitors if they are the only sensitive parts). In this case, and 
+if the CRT monitor is integral with the ITE, then the CRT monitor or sensitive device can be 
+removed for testing. 
+
+4.2.5 Surges 
+
+The test procedure shall be in accordance with IEC 61000-4-5 or, if appropriate, ITU-T K20, 
+K21 or K22. 
+
+8 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+4.2.6 Voltage dips and interruptions 
+
+
+
+The test procedure is in accordance with !EC 61000-4-11. There shall be no deviations from 
+that standard. 
+
+5 Applicability 
+
+Tests shall be applied to the relevant ports of the equipment according to tables 1 to 4. Tests 
+shall only be carried out where the relevant port exists. 
+
+It may be determined from consideration of the electrical characteristics and usage of a 
+particular equipment that some of the tests are inappropriate and therefore unnecessary. In 
+such a case, it is required that both the decision and the justification not to apply any particular 
+test to any particular port be recorded in the test report. 
+
+6 Conditions during testing 
+
+6.1 General conditions 
+
+The tests shall be made exercising all primary functions in the most representative mode 
+consistent with typical applications. The test sample shall be configured in a manner consistent 
+with typical installation practice. 
+
+If the equipment is part of a system or can be connected to auxiliary equipment, then the 
+equipment shall be tested while connected to the minimum representative configuration of 
+auxiliary equipment necessary to exercise the ports in a similar manner to that described in 
+CISPR 22. 
+
+The configuration and mode of operating during the tests shall be precisely noted in the test 
+report. It is not always possible to test every function of the apparatus; in such cases, the most 
+critical mode of operation shall be selected. 
+
+If the equipment either has a large number of terminals or a large number of ports with similar 
+connections, then a sufficient number shall be selected to simulate the actual operating 
+conditions and to ensure that all the different types of termination are covered. 
+
+Coil cables (such as keyboard cables) shall not be intentionally stretched during testing. For 
+such cables, the length specified in the table notes refers to unstretched conditions. 
+
+The test equipment or auxiliary equipment (for example NT or simulator) connected to the EUT 
+shall not have any influence on the result of the testing. 
+
+In cases where a manufacturer's specification requires external protection devices or 
+measures which are clearly specified in the user's manual, then the test requirements of this 
+standard shall be applied with the external protection devices or measures in place. 
+
+During testing, the environmental conditions and supply voltages shall remain within the 
+operating ranges specified for the product unless otherwise indicated in the basic standard. 
+
+If an earth connection independent of the power supply cable is provided, this earth connection 
+shall be installed according to the specifications of the manufacturer for the tests (given in 
+tables 1 to 4) at all other ports. 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+6.2 Particular conditions (EUT operational modes, etc.) 
+
+The particular conditions specified in the annexes take precedence over the corresponding 
+parts of the general conditions. 
+
+Where particular conditions for specific functions are not given in this standard, then the 
+genera! conditions shall apply. 
+
+7 Performance criteria 
+
+The manufacturer has the obligation to express the performance criteria in terms which relate 
+to the performance of his specific product when used as intended. 
+
+The following performance criteria are applicable, and shall only be evaluated when the 
+functions referred to are implemented. 
+
+7.1 General performance criteria 
+
+Examples of functions defined by the manufacturer to be evaluated during testing include, but 
+are not limited to, the following: 
+
+- essential operational modes and states; 
+
+- tests of all peripheral access (hard disks, floppy disks, printers, keyboard, mouse, etc.); 
+
+- quality of software execution; 
+
+- quality of data display and transmission; 
+
+- quality of speech transmission. 
+
+Performance criterion A 
+
+The equipment shall continue to operate as intended without operator intervention. No 
+degradation of performance or loss of function is allowed below a performance level specified 
+by the manufacturer when the equipment is used as intended. The performance level may be 
+replaced by a permissible loss of performance. If the minimum performance level or the 
+permissible performance loss is not specified by the manufacturer, then either of these may be 
+derived from the product description and documentation, and by what the user may reasonably 
+expect from the equipment if used as intended. 
+
+Performance criterion B 
+
+After the test, the equipment shall continue to operate as intended without operator 
+intervention. No degradation of performance or loss of function is allowed, after the application 
+of the phenomena below a performance level specified by the manufacturer, when the 
+equipment is used as intended. The performance level may be replaced by a permissible loss 
+of performance. 
+
+During the test, degradation of performance is allowed. However, no change of operating state 
+or stored data is allowed to persist after the test. 
+
+If the minimum performance level (or the permissible performance loss) is not specified by the 
+manufacturer, then either of these may be derived from the product description and 
+documentation, and by what the user may reasonably expect from the equipment if used as 
+intended. 
+
+
+
+10 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Performance criterion C 
+
+
+
+Loss of function is allowed, provided the function is self-recoverable, or can be restored by the 
+operation of the controls by the user in accordance with the manufacturer's instructions. 
+
+Functions, and/or information stored in non-volatile memory, or protected by a battery backup, 
+shall not be lost. 
+
+7.2 Particular performance criteria 
+
+The particular performance criteria which are specified in the normative annexes take 
+precedence over the corresponding parts of the general performance criteria. 
+
+Where particular performance criteria for specific functions are not given, then the general 
+performance criteria shall apply. 
+
+8 Product documentation 
+
+The specification used by the manufacturer to define the performance criteria for the testing 
+required by this standard shall be made available to the user upon request. 
+
+Table 1 - Immunity, enclosure port 
+
+
+
+
+
+Environmental 
+phenomenon 
+
+
+Test 
+specification 
+
+
+Units 
+
+
+Basic 
+standard 
+
+
+Remarks 
+
+
+Performance 
+criterion 
+
+
+1.1 
+
+
+Power-frequency 
+magnetic field 
+
+
+50 or 60 
+
+1 
+
+
+Hz 
+
+A/m (r.m.s.) 
+
+
+IEC 61000-4-8 
+
+
+See 1 ' 
+
+
+A 
+See annex B 
+
+
+1.2 
+
+
+Radio-frequency 
+electromagnetic field 
+Amplitude modulated 
+
+
+<80-1 000 
+
+3 
+
+80 
+
+
+MHz 
+
+V/m (unmodulated, r.m.s) 
+
+% AM (1 kHz) 
+
+
+I EC 61000-4-3 
+
+
+The test level specified 
+is prior to modulation 
+See 2 > and 3 > 
+
+
+A 
+
+
+1.3 
+
+
+Electrostatic discharge 
+
+
+4 (Contact 
+discharge) 
+
+8 (Air discharge) 
+
+
+kV (charge voltage) 
+kV (charge voltage) 
+
+
+IEC 61000-4-2 
+
+
+
+
+B 
+
+
+^ Applicable only to equipment containing devices susceptible to magnetic fields, such as CRT monitors, Hall elements, 
+electrodynamic microphones, magnetic field sensors, etc. 
+
+2 ) The frequency range is scanned as specified. However, when specified in annex A, an additional comprehensive functional 
+test shall be carried out at a limited number of frequencies. The selected frequencies are: 80, 120, 160, 230, 434, 460, 600, 
+863 and 900 MHz (±1 %). 
+
+3 > The test may be performed with a start frequency lower than 80 Mhz, but not less than 26 MHz. 
+
+
+
+11 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Table 2 - Immunity, signal ports and telecommunication ports 
+
+
+
+
+
+Environmental 
+phenomenon 
+
+
+Test 
+specification 
+
+
+Units 
+
+
+Basic 
+standard 
+
+
+Remarks 
+
+
+Performance 
+criterion 
+
+
+2.1 
+
+
+Radio-frequency 
+continuous conducted 
+
+
+0,15-80 
+
+3 
+
+80 
+
+
+MHz 
+
+V (unmodulated, r.m.s.) 
+
+% AM (1 kHz) 
+
+
+I EC 61000-4-6 
+
+
+See 1 ). 3 ) and") 
+
+
+A 
+
+
+2.2 
+
+
+Surges 
+
+
+1,5 
+
+4 
+
+1 0/700 
+
+
+kV (peak) 
+kV (peak) 
+
+Tr/Th us 
+
+
+ITU-T Rec. 
+K series 
+
+
+See 2 ) and 6 > 
+
+
+See ITU-T 
+
+Rec. 
+K series 
+
+
+2.3 
+
+
+Fast transients 
+
+
+0,5 
+
+5/50 
+
+5 
+
+
+kV (peak) 
+
+Tr/Th ns 
+
+Repetition frequency kHz 
+
+
+I EC 61000-4-4 
+
+
+See 3 ) 
+
+
+B 
+
+
+D The frequency range is scanned as specified. However, when specified in annex A, an additional comprehensive 
+functional test shall be carried out at a limited number of frequencies. The selected frequencies for conducted tests are: 
+0,2; 1; 7,1; 13,56; 21; 27,12 and 40,68 MHz (±1 %). 
+
+2 ) Applicable only to ports which according to the manufacturer's specification may connect directly to outdoor cables. 
+
+3 ) Applicable only to cables which according to the manufacturer's specification supports communication on cable lengths 
+greater than 3 m. 
+
+") If the radiated test has been carried out to a lower frequency then the test range shall only extend up to this frequency. 
+
+5 > For ports where primary protection is intended, surges are applied at voltages up to 4 kV with the primary protecters 
+fitted. Otherwise the 1,5 kV best level is applied without primary protection in place. 
+
+
+
+Table 3 - Immunity, input d.c. power port (excluding equipment marketed 
+with a a.c./d.c. power converter) 
+
+(if d.c. power is fed on conductors included in a signal cable, then the requirements of table 2 
+only apply to this cable) 
+
+
+
+
+
+Environmental 
+phenomenon 
+
+
+Test 
+specification 
+
+
+Units 
+
+
+Basic 
+standard 
+
+
+Remarks 
+
+
+Performance 
+criterion 
+
+
+3.1 
+
+
+Radio-frequency 
+continuous conducted 
+
+
+0,15-80 
+
+3 
+
+80 
+
+
+MHz 
+
+V (unmodulated, r.m.s.) 
+
+% AM (1 kHz) 
+
+
+IEC 61000-4-6 
+
+
+See 1 >and 3 ) 
+
+
+A 
+
+
+3.2 
+
+
+Surges 
+
+
+1 ,2/50 (8/20) 
+0,5 
+
+
+Tr/Th MS 
+kV (peak) 
+
+
+I EC 61000-4-5 
+
+
+Test applied lines 
+to earth (ground) 
+See 2 ) 
+
+
+B 
+
+
+33 
+
+
+Fast transients 
+
+
+0,5 
+
+5/50 
+
+5 
+
+
+kV (peak) 
+Tr/Th ns 
+Repetition 
+frequency kHz 
+
+
+IEC 61000-4-4 
+
+
+
+
+B 
+
+
+■" The frequency range is scanned as specified. However, when specified in annex A, an additional comprehensive 
+functional test shall be carried out at a limited number of frequencies. The selected frequencies for conducted test are: 0,2; 
+1; 7,1; 13,56; 21; 27,12 and 40,68 MHz (±1 %). 
+
+2 > Applicable only to ports which according to the manufacturer's specification may connect directly to outdoor cables. 
+
+3 ) If the radiated test has been carried out to a lower frequency then the test range shall only extend up to this frequency. 
+
+
+
+12 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Table 4 - Immunity, input a.c. power ports (including equipment marketed 
+with a separate a.c./d.c power converter) 
+
+
+
+
+
+Environmental 
+phenomenon 
+
+
+Test 
+specification 
+
+
+Units 
+
+
+Basic 
+standard 
+
+
+Remarks 
+
+
+Performance 
+criterion 
+
+
+4.1 
+
+
+Radio-frequency 
+continuous conducted 
+
+
+0,15-80 
+
+3 
+
+80 
+
+
+MHz 
+
+V (unmodulated, r.m.s) 
+
+% AM (1 kHz) 
+
+
+I EC 61000-4-6 
+
+
+See 1 >and3J 
+
+
+A 
+
+
+4.2 
+
+
+Voltage dips 
+
+
+>95 
+0,5 
+
+
+% reduction 
+period 
+
+
+EC 61000-4-11 
+
+
+See 2 > 
+
+
+B 
+
+
+30 
+25 
+
+
+% reduction 
+periods 
+
+
+C 
+
+
+4.3 
+
+
+Voltage interruptions 
+
+
+>95 
+250 
+
+
+% reduction 
+periods 
+
+
+IEC 61000-4-11 
+
+
+See 2 * 
+
+
+c 
+
+
+4.4 
+
+
+Surges 
+
+
+1 ,2/50 (8/20) 
+
+1 line to line 
+
+2 line to earth 
+(ground) 
+
+
+Tr/Th us 
+kV (peak) 
+kV (peak) 
+
+
+I EC 61000-4-5 
+
+
+See 4 * 
+
+
+B 
+
+
+4.5 
+
+
+Fast transients 
+
+
+1,0 
+
+5/50 
+
+5 
+
+
+kV (peak) 
+Tr/Th ns 
+Repetition 
+frequency kHz 
+
+
+IEC 61000-4-4 
+
+
+
+
+B 
+
+
+1 ) The frequency range is scanned as specified. However, when specified in annex A, an additional comprehensive 
+functional test shall be carried out at a limited number of frequencies. The selected frequencies for conducted test are-. 
+0,2; 1; 7,1; 13,56; 21; 27,12 and 40,68 MHz (±1 %). 
+
+2 > Changes to occur at degree crossover point of the voltage waveform. 
+
+3' If the radiated test has been carried out to a lower frequency then the test range shall only extend up to this frequency. 
+
+4 > When the manufacturer specifies protection measures and it is impractical to simulate these measures during the 
+tests, then the applied test levels shall be reduced to 0,5 kV and 1 kV. 
+
+
+
+13 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Annex A 
+
+(normative) 
+
+Telecommunications terminal equipment 
+
+
+
+A.1 Telecommunications terminal equipment (TTE) having an analogue interface 
+
+A. 1 . 1 Particular test conditions 
+
+The telecommunications terminal equipment (TTE) shall be configured for connection to a 
+telecommunication line (or reference line) at its nominal impedance. Auxiliary equipment may 
+be used to simulate the telecommunications network. 
+
+A. 1 .2 Particular performance criteria 
+
+The following performance criteria are applicable only when the functions are implemented. 
+
+Performance criterion A 
+
+a) Swept frequency test 
+
+Testing shall be carried out in accordance with one of the two measurement methods 
+described below. 
+
+in case of dispute, tests shall be carried out as originally performed. 
+
+Measurement method 1 
+
+The volume control (where it exists) shall be set as close as possible to the position which 
+gives the nominal value as stated by the manufacturer. 
+
+The acoustic sound pressure level (spl) shall be measured using a calibrated artificial ear, 
+as defined in IEC 60318, coupled without loss to the acoustic receiving device of the TTE. 
+The background acoustic noise shall be less than 40 dB(spl). The audio channel shall be 
+open and active. 
+
+The following shall be fulfilled during a sweep in the whole specified frequency range: 
+
+- the TTE shall be able to maintain an established call; 
+
+- for TTE supporting telephony service, the following also applies: 
+
+the demodulated narrowband 1 kHz (maximum measurement bandwidth of 100 Hz) 
+differential mode signal measured on the telecommunications port shall not be greater 
+than the values given in table A.1 , measured at the TTE nominal impedance (as specified 
+by the manufacturer); 
+
+- for TTE having an acoustic interface, the following also applies: 
+
+the acoustic demodulated sound pressure level (spl) in the receive direction shall not be 
+greater than the values gsven in table A.1 . 
+
+
+
+14 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+Table A.1 - Maximum acoustic demodulated levels at the telecommunications port 
+and at the acoustic receiving device (measurement method 1) 
+
+
+
+Frequency band 
+(MHz) 
+
+
+Type of 
+immunity test 
+
+
+Noise signal 
+(dBm) 
+
+
+Acoustic sound 
+pressure level 
+
+(dB(spl)) 
+
+
+0,15 to 30 
+
+
+Conducted 
+
+
+-50 
+
+
+55 
+
+
+30 to 40,66 
+
+
+Conducted 
+
+
+-30 
+
+
+75 
+
+
+40,66 to 40,70 
+
+
+Conducted 
+
+
+-50 
+
+
+55 
+
+
+40,70 to 80 
+
+
+Conducted 
+
+
+-30 
+
+
+75 
+
+
+80 to 1 000 (except at 900*) 
+
+
+Radiated 
+
+
+-30 
+
+
+75 
+
+
+900* 
+
+
+Radiated 
+
+
+-50 
+
+
+55 
+
+
+* This requirement is not applicable for countries where no digital mobile services operating at 900 MHz 
+exist. 
+
+NOTE - These tests are designed to ensure a minimum acceptable immunity to amplitude modulated radio- 
+frequency disturbances for devices having acoustic interfaces. The demodulated disturbance levels are 
+higher than those that wiil be found acceptable in practice. The levels in the tests have been chosen for 
+their practical test convenience, having regard for the maximum allowed background acoustic noise level 
+of 40 dB(spl) and the test levels to be applied for functional testing. The amplitude demodulated 
+disturbances will arise, almost invariably, from semi-conductor junctions behaving as inadvertent square 
+law detectors. This means that for every 1 dB change in the level of the applied radio-frequency signal the 
+demodulated level will change by 2 dB. Therefore, if a radiated immunity test subjecting the EUT to a test 
+field carrier level of 3 V/m produces a resultant demodulated acoustic 1 kHz disturbance output of 
+55 dB(spl) (a distinctly annoying acoustic level for most listeners with normal hearing, but conveniently 
+above the allowed background noise level of 40 dB(spl)), the test ensures that an amplitude modulated 
+disturbance field of 1 V/m (approximately 10 dB lower field strength) applied to the same equipment in a 
+real world situation can produce a demodulated acoustic disturbance level of approximately 35 dB(spl), 
+which most people in a practical listening environment do not perceive as annoying. 
+
+
+
+Measurement method 2 
+
+The volume control (where it exists) shall be set at a fixed level during calibration and shall not 
+be changed during the test. 
+
+
+
+The following shall be fulfilled during a sweep in the whole of the specified frequency range: 
+
+- the TTE shall be able to maintain an established call; 
+
+- for TTE supporting telephony service, the following also applies: 
+
+with the audio channel open and active, the demodulated differential mode noise on the 
+telecommunications port measured at the TTE nominal impedance (as specified by the 
+manufacturer), shall not be greater than the values given in table A.1. The measurement 
+bandwidth shall be 100 Hz maximum at 1 kHz; 
+
+- for TTE having an acoustic interface, the following also applies: 
+
+a sinusoidal signal of 1 kHz, -40 dBm is impressed on the telecommunication line (signal 
+level without the radio-frequency field). The resulting acoustic sound level is measured 
+using a microphone. The measured level shall be used and recorded as the reference level. 
+The signal used to establish the reference level is switched off during the actual test. The 
+measurement bandwidth shall be 100 Hz maximum. 
+
+The background noise shall not exceed a level 15 dB below the reference level. 
+
+The demodulated differential mode noise in the receive direction, measured in the way 
+described for the reference level, shall not be greater than the values given in table A.2. 
+
+15 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Table A.2 - Maximum demodulated differential mode noise levels at the 
+telecommunications port (measurement method 2} 
+
+
+
+Frequency band 
+(MHz) 
+
+
+Type of 
+immunity test 
+
+
+Demodulated differential mode noise 
+(dBm) 
+
+
+0,15 to 30 
+
+
+Conducted 
+
+
+Reference level -10 dB 
+
+
+30 to 40,66 
+
+
+Conducted 
+
+
+Reference level +10 dB 
+
+
+40,66 to 40,70 
+
+
+Conducted 
+
+
+Reference level -10 dB 
+
+
+40,70 to 80 
+
+
+Conducted 
+
+
+Reference level +10 dB 
+
+
+80 to 1 000 (except at 900*) 
+
+
+Radiated 
+
+
+Reference level +10 dB 
+
+
+900* 
+
+
+Radiated 
+
+
+Reference level -10 dB 
+
+
+* This requirement is not applicable for countries where no digital mobile services operating 
+at 900 MHz exist. 
+
+See note to table A.1 . 
+
+
+
+b) Selected frequency test 
+
+The following shall be fulfilled at the spot frequencies specified in tables 1, 2, 3 and 4 (this 
+may be shown by checking the data sent to the line, to avoid having an operator in the field): 
+
+- the TTE shall be able to establish a call with telephony service; 
+
+- the TTE shall be able to receive a call; 
+
+- the TTE shall be able to clear a call; 
+
+- where the TTE is intended to provide a data (non-telephony) service, the time required 
+for a transmission shall not, as a consequence of the application of the test, increase 
+beyond that defined by the manufacturer. 
+
+Performance criterion B 
+
+The following shall be fulfilled: 
+
+A call established prior to the application of the disturbance shall be maintained. 
+
+Requirements to be checked after the application of the disturbance: 
+
+- the TTE shall be able to establish a call; 
+
+- the TTE shall be able to receive a call; 
+
+- the TTE shall be able to clear a call. 
+
+Performance criterion C 
+
+Requirements to be checked after the application of the disturbance: 
+
+- the TTE shall be able to establish a call; 
+
+- the TTE shall be able to receive a call; 
+
+- the TTE shall be able to clear a call. 
+
+
+
+16 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+A.2 Telecommunications terminal equipment (TTE) having a digital interface 
+
+A. 2.1 Particular test conditions 
+
+The TTE shall be configured for connection to a telecommunication line (or reference line) at 
+its nominal impedance. Auxiliary equipment may be used to simulate the telecommunications 
+network. 
+
+For digital basic access, ISDN interfaces providing telephony service to the TTE shall be in idle 
+mode as defined for the applied digital to analogue conversion. 
+
+A. 2. 2 Particular performance criteria 
+
+The following performance criteria are applicable only when the functions are implemented. 
+
+Performance criterion A 
+
+a) Swept frequency test 
+
+Testing shall be carried out in accordance with one of the two measurement methods 
+described below. 
+
+In case of dispute, tests shall be carried out as originally performed. 
+
+Measurement method 1 
+
+The volume control (where it exists) shall be set as close as possible to the position which 
+gives the nominal value as stated by the manufacturer. 
+
+The acoustic sound pressure level (spl) shall be measured using a calibrated artificial ear, 
+as defined in IEC 60318, coupled without loss to the acoustic receiving device of the TTE. 
+The background acoustic noise shall be less than 40 dB(spl). The audio channel shall be 
+open and active. 
+
+The following shall be fulfilled during a sweep in the whole specified frequency range: 
+
+- the TTE shall be able to maintain an established call; 
+
+- for TTE supporting telephony service, the following also applies: 
+
+the demodulated differential mode noise and acoustic sound pressure levels in the 
+receive direction shall not be greater than the values given in table A. 3; 
+
+- for TTE having an acoustic interface, the following also applies: 
+
+the acoustic demodulated sound pressure level (spl) in the receive direction shall not be 
+greater than the values given in table A. 3. 
+
+
+
+17 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+Table A.3 - Maximum demodulated differential mode noise and acoustic sound 
+pressure levels at the telecommunications port and at the 
+acoustic receiving device (measurement method 1) 
+
+
+
+Frequency band 
+(MHz) 
+
+
+Type of 
+immunity 
+
+
+Demodulated 
+differential mode noise 
+
+(dBmO) 
+
+
+Acoustic sound 
+pressure level 
+
+(dB(spl)) 
+
+
+0,15 lo 30 
+
+
+Conducted 
+
+
+-50 
+
+
+55 
+
+
+30 to 40,66 
+
+
+Conducted 
+
+
+-30 
+
+
+75 
+
+
+40,66 to 40,70 
+
+
+Conducted 
+
+
+-50 
+
+
+55 
+
+
+40,70 to 80 
+
+
+Conducted 
+
+
+-30 
+
+
+75 
+
+
+80 to 1 000 (except at 900*) 
+
+
+Radiated 
+
+
+-30 
+
+
+75 
+
+
+900* 
+
+
+Radiated 
+
+
+-50 
+
+
+55 
+
+
+* This requirement is not applicable for countries where no digital mobile services 
+operating at 900 MHz exist. 
+
+See note to table A.1. 
+
+
+
+Measurement method 2 
+
+The volume control (where it exists) shall be set at a fixed level during calibration and shall not 
+be changed during the test. 
+
+The following shall be fulfilled during a sweep in the whole specified frequency range: 
+
+- the TTE shall be able to maintain an established call; 
+
+- for TTE supporting telephony service, the following also applies: 
+
+with the audio channel open and active, the demodulated differential mode noise and 
+acoustic sound pressure level from the EUT, measured in the assigned B-channel, shall not 
+be greater than the values given in table A.3. The measurement bandwidth shall be 100 Hz 
+maximum at 1 kHz; 
+
+- for TTE having an acoustic interface the following also applies: 
+
+An A-law coded digital signal representing a sinusoidal signal of 1 kHz, -40 dBmO is 
+impressed on the telecommunication line (signal level without the radio frequency 
+disturbance). The resulting acoustic sound pressure level is measured using a microphone. 
+The measured level shall be used and recorded as the reference level. The signal used to 
+establish the reference level is switched off during the actual test. The measurement 
+bandwidth shall be 100 Hz maximum. 
+
+During the test, the idle code shall be sent to the EUT in the assigned B-channel. 
+
+The background noise shall not exceed a level 15 dB below the reference level. 
+
+The demodulated differential mode noise in the receive direction, measured in the way 
+described for the reference level, shall not be greater than the values given in table A. 4. 
+
+
+
+18 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Table A.4 - Maximum demodulated differential mode noise levels 
+(measurement method 2) 
+
+
+
+Frequency band 
+(MHz) 
+
+
+Type of immunity test 
+
+
+Demodulated differential mode noise 
+(dBm) 
+
+
+0,15 to 30 
+
+
+Conducted 
+
+
+Reference level -10 dB 
+
+
+30 to 40,66 
+
+
+Conducted 
+
+
+Reference level +10 dB 
+
+
+40,66 to 40,70 
+
+
+Conducted 
+
+
+Reference level -10 dB 
+
+
+40,70 to 80 
+
+
+Conducted 
+
+
+Reference level +10 dB 
+
+
+80 to 1 000 (except at 900*) 
+
+
+Radiated 
+
+
+Reference level +10 dB 
+
+
+900* 
+
+
+Radiated 
+
+
+Reference level -10 dB 
+
+
+* This requirement is not applicable for countries where no digital mobile services 
+operating at 900 MHz exist. 
+
+See note to table A.1. 
+
+
+
+b) Selected frequency test 
+
+The following shall be fulfilled at the spot frequencies specifed in tables 1, 2, 3 and 4: 
+
+- the TTE shall be able to establish a call with telephony service; 
+
+- the TTE shall be able to receive a call; 
+
+- the TTE shall be able to clear a call; 
+
+- where the TTE is intended to provide a data (non-voice) service, the time required for 
+a transmission shall not, as a consequence of the application of the test, increase 
+beyond that defined by the manufacturer. 
+
+For ISDN equipment for primary access only the following also applies: 
+
+The number of loss of frame alignments shall be less than 10 within a test period of 10 
+seconds. Where it can be clearly established that a voice call is maintained throughout the test 
+it is not then required to evaluate the loss of frame alignment. 
+
+Performance criterion B 
+
+The following shall be fulfilled: 
+
+A call established prior to the application of the phenomena shall be maintained. 
+
+Requirements to be checked after the application of the phenomena: 
+
+- the TTE shall be able to establish a call; 
+
+- the TTE shall be able to receive a call; 
+
+- the TTE shall be able to clear a call. 
+
+Performance criterion C 
+
+Requirements to be checked after the application of the phenomena: 
+
+- the TTE shall be able to establish a call; 
+
+- the TTE shall be able to receive a call; 
+
+- the TTE shall be able to clear a call. 
+
+19 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+A. 3 Facsimile 
+
+A . 3 . 1 Pa rticular test conditions 
+
+The EUT shall be connected to a second EUT or simulator which permits a test pattern to be 
+sent to and be received from the EUT. A test pattern selected from the relevant ITU-T 
+recommendation is preferred but is not mandatory. The following requirements are in addition 
+to the TTE performance requirements. 
+
+A . 3 . 2 Particufa r performance criteria 
+
+Performance criterion A 
+
+The EUT shall operate normally during and after the test without: 
+
+- data transfer errors, for example no retries beyond the specified maximum; 
+
+- degradation of the printed image beyond the manufacturer's specification; 
+
+- missing text either full or partial, for example decapitated letters; 
+
+- unintended line or page feed; 
+
+- colour change beyond the manufacturer's specification; 
+
+- re-initiating a call. 
+
+Performance criterion B 
+
+As for performance criteria A, with the following exceptions, which are permitted during the 
+application of the disturbance, provided that normal operation of the EUT is recoverable to the 
+condition immediately before the application of the disturbance: 
+
+- degradation of the printed image beyond the manufacturer's specification; 
+
+- unintended line feed. 
+
+Performance criterion C 
+
+Any degradation of performance is permitted, provided that normal operation is self- 
+recoverable, or can be restored after the test by the use of operator controls, and provided 
+
+that: 
+
+- any interruptions in the transmission are logged and the user notified; 
+
+- the EUT can re-establish a call; 
+
+- the EUT can receive a call; 
+
+- the EUT can clear a call. 
+
+
+
+20 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Annex B 
+
+(normative) 
+
+Data processing equipment 
+
+
+
+The test shall be carried out using an exercising program which can repeat the sequences for 
+functions of equipment and, in case of failure, enable an operator to recognise the nature of 
+failure by display or by operator's operation. 
+
+The test sequences shall be selected from the following below according to the functions 
+defined by the manufacturer of the equipment to be tested, and the performance criteria A, 
+B or C shall be selected according to the disturbance to be tested. 
+
+B.I Read, write and storage of data 
+
+B . 1 . 1 Particular test conditions 
+
+Data read and write cycles shall be repeated with internal storage devices such as semi- 
+conductor memories, magnetic or optical disks or magnetic tape devices, and then the copied 
+back data shall be compared with the original. 
+
+Read-only memories (ROM) shall be read repeatedly and this data compared with the expected 
+data. 
+
+B.1.2 Particular performance criteria 
+
+Performance criterion A 
+
+Storage devices shall maintain normal operation both in read/write and in stand-by conditions. 
+
+Performance criterion B 
+
+Failures which can be recovered by read and write retries are permissible (temporary delay in 
+processing caused by this process is acceptable). 
+
+Normal operation of the EUT shall be restored after the test, self-recovery to the conditions 
+immediately prior to the application of the test is accepted where this is a normal means of 
+recovery, in these cases, operator response is permitted to re-initialise an operation. 
+
+Performance criterion C 
+
+Failures resulting in a delay in processing after the external disturbance is removed, but which 
+can be recovered to normal operation by reset or reboot are permissible. 
+
+Failures resulting in a system abort, which can be recovered to normal operation by reset or 
+
+reboot are permissible. 
+
+
+
+21 
+
+
+
+IS 15039 : 2001 
+CISPR 24(1997) 
+
+B.2 Data display 
+
+B.2.1 Particular test conditions 
+
+Text or graphics shall be displayed on display devices such as CRT monitors and liquid crystal, 
+plasma or LED displays. 
+
+B.2.2 Particular performance criteria 
+
+Performance criterion A 
+
+When seen from the normal viewing distance, the EUT shall operate with no change beyond 
+the manufacturer's specification, in flicker, colour, focus and jitter (except for the power 
+frequency magnetic field test). 
+
+Power frequency magnetic field test 
+
+For CRT monitors, the following also applies: 
+
+The jitter shall be measured using a measuring microscope as specified in 6.6.14 of ISO 9241-3. 
+
+(character height in mm + 0,3) x 2,5 
+
+
+
+The jitter (in mm) shall not exceed the value 
+
+
+
+33,3 
+
+
+
+when the CRT monitor is immersed in a continuous magnetic field of 1 A/m (r.m.s.) at one of 
+the power frequencies of 50 or 60 Hz. 
+
+Alternatively, a field of 50 A/m may be applied, and a transparent graduated mask used to 
+assess the jitter. In that case, the jitter shall not exceed 50 times the value in the above 
+formula. 
+
+NOTE - This test level is used to simplify the measurement of jitter. Lesser values of the test level may be 
+used if non-linearity is experienced, due to, for example, saturation of screening material. 
+
+The EUT shall be tested in two positions, both perpendicular to the magnetic field. 
+
+Performance criterion B 
+
+Screen disturbances during the application of the test are permissible. 
+
+Performance criterion C 
+
+Failures which are not self-recovered after removal of the external disturbance, but which can 
+be recovered to normal operation by reset or reboot are permissible. 
+
+B.3 Data input 
+
+B.3.1 Particular test conditions 
+
+Data shall be acquired with input devices such as keyboard, mouse, magnetic card reader, 
+optical character reader, image scanner, input pen or miscellaneous sensors. 
+
+Though continuous input is preferable, testing in the stand-by condition is permitted for 
+equipment which requires operator's attendance for operation. 
+
+22 
+
+
+
+IS 15039 : 2001 
+CISPR 24(1997) 
+
+When the EUT is a mass data input device, such as a character reader or scanner, then the 
+central processing unit shall run a program which reads an appropriate test chart continuously 
+for the duration of the test. Read data inputs are displayed, printed directly, or stored for later 
+evaluation. 
+
+B.3.2 Particular performance criteria 
+
+Performance criterion A 
+
+Unintended input from input device is not allowed. 
+
+Input devices shall maintain the specified quality image data. 
+
+Performance criterion B 
+
+Keyboard/mouse "lock up" is not allowed. 
+
+For equipment with manually inputted data which can be confirmed by reading the display, 
+errors which can be recognised by the operator and easily corrected are permissible. 
+
+Performance criterion C 
+
+Failures resulting in a delay in processing after the external disturbance is removed, but which 
+can be recovered to normal operation by reset or reboot are permissible. 
+
+Failures resulting in a system abort which can be recovered to normal operation by reset or 
+reboot are permissible. 
+
+B.4 Data printing 
+
+B.4.1 Particular test conditions 
+
+Data shall be printed by printers or plotters. For equipment which has several operation modes, 
+test shall be selected in the most typical operation mode. 
+
+B.4. 2 Particular performance criteria 
+
+Performance criterion A 
+
+Printers shall maintain the specified printing quality and normal operation. 
+
+Performance criterion B 
+
+No degradation of the printing quality beyond the manufacturer's specification (such as 
+distortion of character(s) or missing pixels) is permissible. 
+
+Performance criterion C 
+
+Printing errors or omission of character(s) which require reprinting are permissible. 
+
+Input/output failure which can be recovered to normal operation by reset or reboot are also 
+permissible. 
+
+
+
+23 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+B.5 Data processing 
+
+B.5.1 Particular test conditions 
+
+Data processing, such as computation, data conversion, storage or transfer shall be 
+performed, and the results of processing shall be compared with results in normal operation. 
+
+B.5.2 Particular performance criteria 
+
+Performance criterion A 
+
+Failures which do not influence the specified operation within the product specification, and 
+which do not prevent automatic recovery are permissible. 
+
+Performance criterion B 
+
+Failures which are recovered automatically but cause temporary delay in processing are 
+permissible- 
+Performance criterion C 
+
+Failures resulting in a delay in processing after the external disturbance is removed, but which 
+can be recovered to normal operation by reset or reboot are permissible. 
+
+Failures resulting in a system abort, which can be recovered to normal operation by reset or 
+reboot are permissible. 
+
+Failures which are followed by alarms and can be recovered to normal operation by the 
+operator's intervention are permissible. 
+
+
+
+24 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Annex C 
+
+(normative) 
+
+Local area networks (LAN) 
+
+
+
+C.1 Particular test conditions 
+
+A minimum test configuration consists of two pieces of terminal equipment interconnected with 
+manufacturer specified physical cable. Associated equipment necessary to the function of the 
+LAN shall be included in the test configuration. Unused ports shall be treated according to the 
+
+manufacturer's instructions. 
+
+The system shall be capable of delivering and receiving data at the specified nominal 
+transmission rate. 
+
+The LAN equipment executes a programme which exercises the LAN functions. As a minimum, 
+the functions below shall be assessed. 
+
+C.2 Particular performance criteria 
+
+Performance criterion A 
+
+During and after the test, the EUT shall operate without: 
+
+- error rate beyond the figure defined by the manufacturer; 
+
+- requests for retry beyond the figure defined by the manufacturer; 
+
+- speed of data transmission rate beyond the figure defined by the manufacturer; 
+
+- protocol failure; 
+
+- loss of link. 
+
+Performance criterion B 
+
+Error rate, request for retry and speed of data transmission rate may be degraded during the 
+application of the test. 
+
+Degradation of the performance as described in criteria A is permitted provided that the normal 
+operation of the EUT is self-recoverable to the condition immediately before the application of 
+the test. In these cases, operator response is permitted to re-initiate an operation. 
+
+Performance criterion C 
+
+Degradation of the performance as described in criteria A and B is permitted provided that the 
+normal operation of the EUT is self-recoverable to the condition immediately before the 
+application of the test or can be restored after the test by the operator. 
+
+
+
+25 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Annex D 
+
+(normative) 
+
+Printers 
+
+
+
+D.I Particular test conditions 
+
+Data shall be printed with printers or plotters. No standard image is required, but the use of a 
+text containing more than three character fonts and at least one grid of lines is recommended. 
+Character pitch and line spacing should be small. If the dot density can be selected, the 
+highest density shall be chosen. Tests shall be carried out with the EUT in the printing mode. 
+
+D.2 Particular performance criteria 
+
+Performance criterion A 
+
+The EUT shall operate without degradation of performance during and after the application of 
+the disturbance. For example, there shall be no: 
+
+- loss or corruption of data during input/output operations; 
+
+- degradation of the printed image beyond the manufacturer's specification; 
+
+- change in output mode or character font; 
+
+- perceptible change in dot-pitch; 
+
+- unintended line or page feed. 
+
+Performance criterion B 
+
+As for performance criterion A, with the following exceptions: 
+
+- degradation of the printed image beyond the manufacturer's specification is allowed; 
+
+- misalignment of the grid lines is allowed; 
+
+- unintended line feed is allowed. 
+
+After the disturbance is removed, normal operation of the EUT is self-recoverable to the 
+condition immediately before the application of the test; this may involve an operator response 
+to re-initiate the operation. 
+
+Performance criterion C 
+
+Degradation of the performance as described in criteria A and B is permitted provided that the 
+normal operation of the EUT is self-recoverable to the condition immediately before the 
+application of the test or can be restored after the test by the operator. 
+
+
+
+26 
+
+
+
+IS 15039 : 2001 
+CISPR 24(1997) 
+
+Annex E 
+
+(normative) 
+
+Copying machines 
+
+E.1 Particular test conditions 
+
+No standard image is required, but the use of a pattern consisting of a grid of lines and a scale 
+of grey tones is recommended. 
+
+Testing shall be performed in the stand-by mode and the copying mode. 
+E.2 Particular performance criteria 
+
+Performance criterion A 
+
+The EUT shall operate without degradation of performance during and after the application of 
+the disturbance. For example, there shall be no: 
+
+- unintended start of operation; 
+
+- change of the program or of the program setting, for example: 
+
+• single or double sided; 
+
+• number of copies; 
+
+• sorting and/or stapling; 
+
+• contrast; 
+
+• copy size, reduction or enlargement; 
+
+• loss of stored or transmitted data; 
+
+- interruption of copying sequence (for example, paper jam); 
+
+- false indications (for example, paper jam, low toner, low paper, control indicators); 
+
+- fall back to stand-by mode from copying mode; 
+
+- unintended operation of safety interlocks; 
+
+- degradation of copied images beyond manufacturer's specification; 
+
+- errors in billing devices. 
+
+Performance criterion B 
+
+As for performance criterion A, with the following exception: 
+
+False indications of, for example, paper jam, low toner, low paper, control indicators are 
+permissible during the test. 
+
+All false indications must be removed when the copier is reset to the stand-by mode after the 
+completion of the test. 
+
+Performance criterion C 
+
+Degradation of performance as specified under criteria A is allowed, with the following 
+qualifications and exceptions: 
+
+- output/input failures are only allowed if normal operation can be restored by reset or 
+reboot; 
+
+- no unintended start of copying from stand-by mode is allowed. 
+
+27 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Annex F 
+
+(normative) 
+
+Automatic teller machines (ATM) 
+
+
+
+F.1 Particular test Conditions 
+
+The ATM shall be connected to each ot its peripheral devices and one of each type of 
+communication line shall be connected driven into the correct terminating equipment or a 
+representative load. Interconnecting cables shall be of a type and length specified in the 
+individual equipment requirements. One subassembly of each type of ITE necessary for the 
+basic operation shall be included in the ATM to be evaluated. For a system, one of each type of 
+ITE that can be included in the possible system configuration shall be included with the ATM. 
+
+In the case of ATMs which functionally interact with other ITE, including any ITE that is 
+dependent on the ATM for its power interface, either the actual interfacing EUT or simulators 
+may be used to provide representative operating conditions, provided the effects of the 
+simulator can be isolated or identified. 
+
+The ATM shall execute a program which shall exercise each function whose integrity is to be 
+assessed during the test. As a minimum, the functions noted below shall be assessed. Where 
+more than one function is to be assessed, the software shall be flexible enough to permit the 
+test operator to select certain functions if so desired. A parallel or serial execution of the test is 
+permitted provided that the ATM can operate in that manner. To facilitate the testing, the 
+software shall alert the operator when a failure has occurred. 
+
+The ATM shall be operated using the default settings upon start-up. The ATM shall be 
+evaluated in all modes unless the most susceptible mode is already known from preliminary 
+testing or previous experience, in which case the most susceptible mode shall be used. 
+
+
+
+F.2 Particular performance criteria 
+
+Performance criterion A 
+
+The EUT shall operate without degradation of performance during and after the application of 
+the disturbance. For example, there shall be no: 
+
+- system response time beyond the figure defined by the manufacturer; 
+
+- memory errors; 
+
+- data corruption; 
+
+- repeated self-recoverable errors beyond a number specified by the manufacturer; 
+
+- loss of stored data; 
+
+- keyboard lock-up; 
+
+- system reset or shut down; 
+
+
+
+28 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+- system change state; 
+
+- network connections dropping; 
+
+- money or receipts inappropriately dispensed; 
+
+- I/O errors; 
+
+- I/O state change. 
+
+Performance criterion B 
+
+There shall be no loss of stored data during the application of the disturbance. A transaction 
+may be aborted provided that this is correctly reported. There shall be no incorrect dispensing 
+of money or printed receipts. 
+
+Degradation of the performance as described in criterion A is permitted provided that the 
+normal operation of the EUT is self-recoverable to the condition immediately before the 
+application of the test. In these cases, operator response is permitted to re-initiate an 
+operation. 
+
+Performance criterion C 
+
+There shall be no loss of function following the restoration of the system by the operator. Loss 
+or corruption of the contents of Random-Access Memory (RAM) and information stored on 
+permanent storage media, such as hard drive, optical or floppy disk, is not permitted. 
+
+Degradation of the performance as described in criteria A and B is permitted provided that the 
+normal operation of the EUT is self-recoverable, or can be restored after the test by the 
+operator. 
+
+
+
+29 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+
+
+Annex G 
+
+(normative) 
+
+Point of sale terminals (POST) 
+
+
+
+G.1 Particular test conditions 
+
+The Point of Sale Terminal (POST) shall be connected to each of its peripheral devices (such 
+as scales, scanner, card reader) and one of each type of communication line shall be 
+connected to the correct terminating equipment or a representative load. Interconnecting 
+cables shall be of a type and length specified in the individual equipment requirements. One 
+subassembly of each type of ITE necessary for the basic operation shall be included in the 
+POST to be evaluated. For a system, one of each type of ITE that can be included in the 
+possible system configuration shall be included in the POST. 
+
+In the case of POSTs which functionally interact with other ITE, including any ITE that is 
+dependent on the Central Processing Unit (CPU) for its power interface, either the actual 
+interfacing EUT or simulators may be used to provide representative operating conditions, 
+provided the effects of the simulator can be isolated or identified. 
+
+Note that it is important that any simulator used instead of the actual interfacing ITE properly 
+represents the electrical and, in some cases, the mechanical characteristics of the interfacing 
+ITE, especially RF signals and impedances. 
+
+The POST shall execute a program which shall exercise each function whose integrity is to be 
+assessed during the test. As a minimum, the functions noted below shall be assessed. Where 
+more than one function is to be assessed the software shall be flexible enough to permit the 
+test operator to select certain functions if so desired. A parallel or serial execution of the test is 
+permitted provided that the POST can operate in this manner. To facilitate the testing, the 
+software shall alert the operator when a failure has occurred. 
+
+The POST shall be operated in the condition that was found to produce the highest overall 
+emissions or, if this is not known, the default settings upon start-up. The POST shall be 
+evaluated in all modes, unless the most susceptible mode is already known from preliminary 
+testing or previous experience, in which case the most susceptible mode shall be used. 
+
+
+
+G.2 Particular performance criteria 
+
+Performance criterion A 
+
+The EUT shall operate without degradation of performance during and after the application of 
+the disturbance. For example, there shall be no: 
+
+- system response time beyond the figure defined by the manufacturer; 
+
+- memory errors; 
+
+- data corruption; 
+
+- repeated self-recoverable errors beyond a number specified by the manufacturer; 
+
+
+
+30 
+
+
+
+IS 15039 : 2001 
+CISPR 24 (1997) 
+
+- loss of stored data; 
+
+- keyboard lock-up; 
+
+- system reset or shut down; 
+
+- system change state; 
+
+- network connections dropping; 
+
+- money or receipts inappropriately dispensed; 
+
+- I/O errors; 
+
+- I/O state change. 
+
+Performance criterion B 
+
+As for performance criterion A, with the following exception: 
+
+keyboard lock-up or corruption of information of a single item within a transaction is permitted 
+during the application of the disturbance provided that the event is recorded and the user 
+
+alerted. 
+
+Performance criterion C 
+
+There shall be no loss of function following the restoration of the system by the operator. Loss 
+or corruption of volatile or non-volatile memory is not permitted. 
+
+Degradation of the performance as described in criteria A and B is permitted provided that the 
+normal operation of the EUT is self-recoverable or can be restored after the test by the 
+
+operator. 
+
+
+
+31 
+
+
+
+(Continued from second cover) 
+
+The concerned Technical Committee responsible for the preparation of this standard has reviewed the 
+provisions of the following International Publication and has decided that they are acceptable for use 
+in conjunction with this standard: 
+
+IEC 60318:1970 An IEC artificial ear, of the wideband type, for the calibration of earphones 
+used in audiometry 
+
+IEC 61000-4-3:1995 Electromagnetic compatibility (EMC): Part 4 Testing and measurement 
+techniques — Section 3: Radiated, radio-frequency, electromagnetic field immunity test 
+
+IEC 61000-4-5:1995 Electromagnetic compatibility (EMC): Part 4 Testing and measurement 
+techniques — Section 5: Surge immunity test 
+
+IEC 61000-4-6:1996 Electromagnetic compatibility (EMC): Part 4 Testing and measurement 
+techniques — Section 6: Immunity to conducted disturbances induced by radio-frequency 
+fields 
+
+IEC 61000-4-11:1994 Electromagnetic compatibility (EMC): Part 4 Testing and measurement 
+techniques — Section 11: Voltage dips, short interruptions and voltage variations immunity 
+tests 
+
+ISO 9241-3:1992 Ergonomic requirements for office work with visual display terminals 
+(VDTs): Part 3 Visual display requirements 
+
+ITU-T Recommendation 1.241.1: Telephony 
+
+ITU-T Recommendation 1.411: Integrated service digital network (ISDN) user network 
+interfaces 
+
+ITU-T Recommendation K.15: Protection of high capacity transmission systems against 
+overvoltages and HF-disturbances 
+
+ITU-T Recommendation K.17: Tests on power fed repeaters using solid state devices in order 
+to check the arrangements for protection from external interferences 
+
+ITU-T Recommendation K.20 : Resistibility of telecommunication switching equipment to 
+overvoltages and overcurrents 
+
+ITU-T Recommendation K.21 : Resistibility of subscribers' terminals to overvoltages and 
+overcurrents 
+
+ITU-T Recommendation K.22 : Overvoltage resistibility of equipment connected to an ISDN T/S bus, 
+Blue Book, Volume IX, November 1988 
+
+Only the English language text of the International Standard has been retained while adopting it in this 
+
+Indian Standard. 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of stardardization, marking and quality certification of goods and 
+attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any form 
+without the prior permission in writing of BIS. This does not preclude the free use, in the course of 
+implementing the standard, of necessary details, such as symbols and sizes, type or grade designations. 
+Enquiries relating to copyright be addressed to the Director (Publication), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed 
+periodically; a standard along with amendments is reaffirmed when such review indicates that no changes are 
+needed; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards 
+should ascertain that they are in possession of the latest amendments or edition by referring to the latest issue 
+of 'BIS Handbook' and 'Standards: Monthly Additions'. 
+
+This Indian Standard has been developed from Doc: No. LTD 22 (1905). 
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 10002 
+Telephones: 323 01 31, 323 3375, 323 94 02 
+
+Regional Offices: 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110002 
+
+Eastern : 1/14 C.I.T. Scheme VII M, V.I.P. Road, Kankurgachi 
+CALCUTTA 700054 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160022 
+Southern : C.I.T. Campus, IV Cross Road, CHENNAI 6001 13 
+
+
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400093 
+
+Branches : AHMED AB AD. BANGALORE. BHOPAL. BHUBANESHWAR. 
+COIMBATORE. FARIDABAD. GHAZIABAD. GUWAHATI. 
+HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+NALAGARH, PATNA. PUNE. RAJKOT. TfflRUVANANTHAPURAM. 
+
+
+
+Telegrams: Manaksanstha 
+(Common to all offices) 
+
+Telephone 
+
+323 76 17, 323 38 41 
+
+
+
+J337 84 99, 337 85 61 
+1337 86 26,337 9120 
+
+C60 38 43 
+160 20 25 
+254 12 16, 254 14 42 
+254 25 19,254 13 15 
+
+f 832 92 95, 832 78 58 
+1832 78 91,832 78 92 
+
+
+
+{ 
+
+
+
+Printed at Simco Printing Press, Delhi 
+
+
+

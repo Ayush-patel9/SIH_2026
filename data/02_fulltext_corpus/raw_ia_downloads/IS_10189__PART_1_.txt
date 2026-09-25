@@ -1,0 +1,1507 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live" 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New' 
+
+
+
+IS 10189-2-1 (1993) : Industrial process control values, 
+Part 2: Flow capacity, Section 1: Sizing equations for 
+incompressible fluid flow under installed conditions 
+(Superseding of IS 10189-2-1:1992 [ETD 18: Industrial 
+Process Measurement and Control] 
+
+
+
+a^v j i imzzmn^a rafrg amsBs 
+
+
+
+£«> \\ i %^^&&>>&i&: 
+
+
+
+^^CVVVfa^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+.^^_ 
+
+
+
+• 
+
+
+
+
+BLANK PAGE 
+
+
+
+*rt*2V^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 10189 ( Part 2/Sec 1 ) : 1993 
+
+STRdfar TTRsft ( Reaffirmed 2004 ) 
+
+3THT 2 5T^T^ STIcIT 
+3Tf «T*T 1 fRSTTfacT 3*n3ff % 3r<PTcl STCWten 5R*T SRT$ 
+
+Indian Standard 
+INDUSTRIAL PROCESS CONTROL VALVES 
+
+PART 2 FLOW CAPACITY 
+
+Section 1 Sizing Equations for Incompressible Fluid Flow 
+Under Installed Conditions 
+
+UDC 621-646-2 : 65-011-56 : 621-5 
+
+
+
+^ ''i*te ; 
+
+
+
+© BIS 1993 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+July 1993 Price Group 3 
+
+
+
+Industrial Process Measurement and Control Sectional Committee, ETD 18 
+
+
+
+FOREWORD 
+
+This Indian Standard ( Part 2/Sec 1 ) was adopted by the Bureau of Indian Standards, after the draft 
+finalized by the Industrial Process Measurement and Control Sectional Committee had been approved 
+by the Electrotechnical Division Council, 
+
+In many industrial applications, reducers or other fittings are attached to the control valves. The effect 
+of these types of fittings on the nominal flow coefficient of the control valve is usually not negligible. 
+It is therefore necessary to introduce a correction factor. Additional factors are introduced to take 
+account of the fluid property characteristics that influence the flow capacity of a control valve. 
+
+This series of Indian Standard on Industrial Process Control Valves is being printed in several parts. 
+Following parts have so far been printed: 
+
+a) IS 10189 ( Part 1 ) : 1982 Industrial process control valves : Part 1 General requirements and 
+
+tests; and 
+
+b) IS 10189 (Part 2/Sec 2) : 1992 Industrial process control valves: Part 2 Flow capacity, 
+
+Section 2 Sizing equations for compressible fluid flow under installed conditions. 
+
+While preparing this standard assistance has been derived from IEC Pub 534 : 2 : 1978 'Industrial 
+process control valves: Part 2 Flow capacity, Section 1 Sizing equations for incompressible fluid flow 
+under installed conditions* issued by the International Electrotechnical Commission ( IEC ). 
+
+For the purpose of deciding whether a particular requirement of this standard is complied with, the 
+final value, observed or calculated, expressing the result of a test or analysis, shall be rounded off ia 
+accordance with IS 2 : 1960 'Rules for rounding off numerical values ( revised )'. The number of 
+significant places retained in the rounded off value should be the same as that of the specified value 
+in this standard. 
+
+
+
+IS 10189 (Part 2/Sec 1) : 1993 
+
+
+
+Indian Standard 
+INDUSTRIAL PROCESS CONTROL VALVES 
+
+PART 2 FLOW CAPACITY 
+
+Section 1 Sizing Equations for incompressible Fluid Flow 
+Under Installed Conditions 
+
+
+
+1 SCOPE 
+
+1.1 This standard ( Part 2/Sec 1 ), gives the method for 
+determination of flow capacity for incompressive fluid 
+in industrial process control valves. 
+
+1.2 The equations presented in this standard are based 
+on the Bernoulli equation for Newtonian incompres- 
+sible fluids. They are not intended for use when non- 
+Newtonian fluids, fluid mixtures, slurries, or liquid-solid 
+conveyance systems are encountered. 
+
+2 REFERENCE 
+
+IS 10189 (Part 1) : 1982 'Specification for industrial 
+process control valves : Part 1 General requirements 
+and tests', is a necessary adjunct to this standard. 
+
+3 DEFINITIONS 
+
+For the purpose of this standard, the definition 
+given in 2 of IS 10189 (Part 1) ; 1982 shall apply, in 
+
+
+
+addition to the following. 
+
+3.1 Choked Flow 
+
+A limiting, or maximum flow condition that occurs as a 
+result of vaporization of the liquid flowing within the va Ive. 
+
+NOTE — With fixed inlet (upstream) conditions, it is 
+manifested by the failure of increasing pressure differen- 
+tial to produce further increases in the flow rate. Choked 
+flow will be accompanied by either cavitation or flashing. 
+If the downstream pressure is greater than the liquid 
+vapour pressure, cavitation occurs. Flashing occurs if the 
+downstream pressure is equal to or less than the liquid 
+vapour pressure. 
+
+3.2 Fitting 
+
+Any device such as a reducer, expander, elbow, T-piece, 
+or bend, which is attached directly to a control valve. 
+
+4 NOMENCLATURE 
+
+
+
+Symbols 
+
+
+
+Description 
+
+
+
+Unit 
+
+
+
+C Flow coefficient (A v , K v> C v ) 
+
+d Nominal valve size • 
+
+D Internal diameter of the piping 
+
+F d Valve style modifier 
+
+F p Liquid critical pressure ratio factor 
+
+F L Liquid pressure recovery factor of a control valve without 
+
+attached fittings 
+
+F LP Combined liquid pressure recovery factor and piping 
+
+geometry factor of a control valve with attached fittings 
+
+F P Piping geometry factor 
+
+F R Reynolds number factor 
+
+JVj, N*,, N 4 Numerical constants 
+
+P e Absolute thermodynamic critical pressure 
+
+P v Absolute vapour pressure of the liquid at inlet temperature 
+
+p x Inlet absolute pressure measured at the upstream pressure 
+
+tap 
+
+p 2 Outlet absolute pressure measured at the downstream pres- 
+
+sure tap 
+
+A/? Differential pressure between upstream and downstream 
+
+pressure taps (p 1 ^ p 2 ) 
+
+Ap max / L ) Maximum allowable pressure differential for control valve 
+
+sizing purposes without attached fittings 
+
+
+
+Various 
+
+[see IS 10189 (Parti): 1982] 
+
+mm 
+
+mm 
+
+Dimensionless 
+
+Dimension] ess 
+
+Dimensionless 
+
+Dimensionless 
+
+Dimensionless 
+Dimensionless 
+Various (see Note 1) 
+kPa or bar (see Note 2) 
+kPa or bar 
+kPa or bar 
+
+kPa or bar 
+
+kPa or bar 
+
+kPaorbar 
+
+
+
+IS 10189 (Part2/Sec 1) : 1993 
+
+
+
+Symbols 
+
+
+
+Description 
+
+
+
+Unit 
+
+
+
+APmax (LP) 
+
+Q 
+
+2max(L) 
+2ma* (LP) 
+
+Re v 
+
+L 
+V 
+
+P/Po 
+
+
+
+Maximum allowable pressure differential for control valve 
+sizing purposes with attached fittings 
+
+Volumetric flow rate 
+
+Maximum volumetric flow rate in choked conditions 
+without attached fittings 
+
+Maximum volumetric flow rate in choked conditions 
+without attached fittings 
+
+Valve Reynolds number 
+
+Head loss coefficient of a reducer or expander 
+
+Kinematic viscosity (in centistokes) 
+
+Relative density (p/p - 1.0 for water at 15,5° C) 
+
+
+
+kPa or bar 
+
+nrVh 
+nrVh 
+
+nrVh 
+
+Dimensionless 
+
+Dimensionless 
+
+1(T 6 nr/s (see Note 3) 
+
+Dimensionless 
+
+
+
+NOTES 
+
+1 To determine the units tor the numerical constants, dimensional analysis may be performed on equations ( 1 ). (9), and (14) using the 
+units given in Table 1. 
+
+2 lbar^ 10 2 kPa= 10 5 Pa. 
+
+3 1 centistoke = 10" 6 m 2 /s. 
+
+
+
+5 INSTALLATION 
+
+5.1 In sizing control valves, using the relationships 
+presented herein, the How coefficients calculated are 
+assumed to include all head losses between pressure 
+taps located as shown in Fig. I. It should be noted thai 
+the locations of the upstream and downstream pressure 
+taps have been fixed at the outer limits shown in Part 1 
+of this standard (Fig. 3). These flow coefficients shall 
+normally be compared with those listed in valve 
+manufacturers' literature which also includes all head 
+losses from two pipe diameters upstream through six 
+diameter downstream of the control valve. 
+
+5.2 For sizing purposes, a maximum allowable-pressure 
+differential has been introduced to identify choked flow. 
+
+6 GENERAL SIZING EQUATIONS 
+
+6.1 Non-choked Flow 
+
+The equation for the Cow rate of a single Newtonian 
+liquid through a control valve when operating under 
+non-choked conditions is derived from the basic for- 
+mula as given in 2.3 of Part 1 of this standard. The (low 
+
+
+
+ra te s hall be ca I c u la led a s f o 1 1 o ws : 
+
+
+
+Q 
+
+
+
+■N^Fy.F],. C\j 
+
+
+
+P/Po 
+
+
+
+0) 
+
+
+
+Hence, the tlow coefficient C (valve sizing coefficient) 
+shall be determined bv: 
+
+
+
+N.-Fh-Fr 
+
+
+
+V 
+
+
+
+
+
+
+(2) 
+
+
+
+NOTE — Fp is unity when the control wive is installed 
+without attached fittings. Fr will be unity when turbulent 
+now conditions exist. See 7.1 and 7.2 for determination 
+of these factors. Ni, the numerical constant, depends on 
+the units used in the general sizing equation and the type 
+of flow coefficients A v , K v , or (\. Values for vV] are 
+given in Table 1. 
+
+6.2 Choked Flow 
+
+6.2.1 Choked Flow (Without Attached Fittings) 
+
+The maximum rale at which flow will pass through a 
+control valve at choked flow conditions when installed 
+
+
+
+UPSTREAM 
+PRESSURE 
+TAP 
+
+
+
+£ 
+
+
+
+^ 
+
+
+
+12 
+
+
+
+f 
+
+
+
+DOWNSTREAM 
+
+PRESSURE 
+
+TAP 
+
+
+
+CONTROL VALVE OR CONTROL VALVE 
+WITH ATTACHED FITTINGS 
+
+
+
+/ 1 - 1 Nominal pipe diameters 
+/-, - 6 Nominal pipe diameters 
+
+Fig. 1 Pressure Tap Locations 
+
+
+
+IS 10189 (Part 2/Sec 1) : 1993 
+
+
+
+without attached fittings shall be calculated as follows: 
+
+
+
+v^ 
+
+
+
+Gmax (L) - "l • ?L ^R C V ^T7^ ( 3 ) 
+
+
+
+P/Po 
+
+
+
+Hence : 
+
+
+
+C = 
+
+
+
+G, 
+
+
+
+max (L) 
+
+
+
+AVF L .F R 
+
+
+
+V P / Po 
+O, -F„r 
+
+
+
+Pi-FfPv 
+
+NOTE — The maximum allowable pressure differential 
+for control vaive sizing purposes (that is, the minimum 
+pressure differential at which, the maximum flow rate 
+occurs) with the control valve installed without attached 
+fittings may be calculated as follows: 
+
+Ap^d-^i-^fPv) ( 5 ) 
+
+6.2.2 Choked Flow (With Attached Fittings) 
+
+The maximum rate at which How will pass through a 
+control valve when installed with attached fittings shall 
+be calculated as follows: 
+
+
+
+Gmax (LP) ^1 '^LP ■ ^R ' C 
+
+
+
+V 
+
+
+
+P i ~ FfPv 
+
+P/Po 
+
+
+
+Hence: 
+
+
+
+C = 
+
+
+
+^max (LP) 
+
+
+
+ATi.F, 
+
+
+
+V-. 
+
+
+
+P/Po 
+
+
+
+(6) 
+
+
+
+V) 
+
+
+
+n '* U>' J R ' Pl~ F )?Pv 
+NOTE — The maximum allowable pressure differential 
+for control valve sizing purposes (that is, the minimum 
+pressure differential at which the maximum flow rate 
+occurs) with the control valve installed with attached 
+fittings may be calculated as follows: 
+
+
+
+Ap, 
+
+
+
+max (LP) " 
+
+
+
+*LP 
+
+
+
+F P 
+
+
+
+(Pi~ f fPv) 
+
+
+
+(8) 
+
+
+
+7 DETERMINATION OF CORRECTION FACTORS 
+7.1 Piping Geometry Factor F p 
+
+F P , tbe piping geometry factor, is necessary to account 
+for fittings attached upstream and or downstream to a 
+control valve body. The F P factor is the ratio of the flow 
+rate through a control valve installed v/ith attached 
+fittings to the flow rate that would result if the control 
+valve were installed without attached fittings and tested 
+under identical conditions which will not produce 
+choked flow in either installation (see Fig. 1). To meet 
+a maximum permissible deviations! ±5 percent, the 
+Fp factor shall be determined by test. The pressure 
+differential shall be limited to values such that w 
+choking of the flow occurs. 
+
+When estimated values are permissible, the following 
+equation may be used: 
+
+Fp ^^^^ (9) 
+
+
+
+V 
+
+
+
+1 + 
+
+
+
+~Yc(c\ 2 
+
+
+
+^[d 2 
+
+
+
+NOTE — Values for Ni are given in Table 1 . 
+
+
+
+In this equation, the factor 2£ is the algebraic sum of 
+all the effective velocity head coefficients of all fittings 
+attached to the control valve. The velocity head coeffi- 
+cient of the control valve itself is not included. 
+
+Zt-C + Sa + SBi-Sm ' 0°) 
+
+where: 
+
+£i = upstream resistance coefficient, 
+t,2 = downstream resistance coefficient, 
+^Bl = inlet Bernoulli coefficient, and 
+CB2 = outlet Bernoulli coefficient. 
+
+When the diameters of inlet and outlet fittings are 
+identical, t BI = t, B2 and drop out of the equation. In 
+those cases in which the piping diameters approaching 
+and leaving the control valves are different, t>c u B 
+coefficients are calculated as follows: 
+
+If the inlet and outlet fittings are short-length, commer- 
+cially available, concentric reducers, the £i and ^2 
+coefficients may be approximated as follows : 
+
+
+
+Inlet reducer only t x ~ 0.5 
+
+
+
+-! 
+
+
+
+(ii) 
+
+
+
+Outlet reducer (expander) only 'Q 2 - 1.0 
+
+
+
+Inlet and on; lei reducers of equal size : 
+
+
+
+1 - 
+
+
+
+Cl + ?2 = L5 
+
+
+
+(12) 
+
+
+
+(13) 
+
+
+
+The F values calculated with the above l, factors 
+generally lead to selection oi valve capacities slightly 
+larger than required. This calculation require iteration. 
+
+When the inlet and oulet fittings are other than those 
+described above, the resistance coefficients, K { and K 2 , 
+must be obtained by test since they are not readily available. 
+7.2 Reynolds Number Factor Fr 
+
+F#, the Reynolds number factor, is required when non- 
+turbulent flow conditions are established through a 
+control valve because of a low pressure differential, a 
+high viscosity fluid, a very small flow coefficient, or a 
+combination thereof. 
+
+The F R factor is determined by dividing the flow 
+coefficient when non-turbulent flow conditions exist by 
+the flow coefficient measured in the same installation 
+under turbulent conditions. 
+
+If no test results are available, F R may be determined 
+from the curve given in Fig. 2, using a valve Reynolds 
+number calculated from the following equations: 
+
+
+
+Re, 
+
+
+
+N 4 -F d .Q 
+v[F P .F L .C]'^ 
+
+
+
+Fv 2 
+
+
+
+^l 2 - 
+
+
+
+C^ 
+
+
+
+N..D 4 
+
+
+
++ 1 
+
+
+
+(14) 
+
+
+
+IS 10189 (Part2/Sec 1) : 1993 
+
+
+
+This calculation will require iteration. 
+
+The bracketed quantity in the above equation accounts 
+for the "velocity of approach". Except for wide-open 
+ball or butterfly va Ives, this refinement has only a slight 
+effect on the Re v calculation and can generally be taken 
+as unity. 
+
+NOTE — Values for Nz and N4 are listed in Table 1. 
+
+Values for Fd are: 
+
+a) 0.7 lor control valves with two parallel flow paths 
+such as double-ported globe and butterfly valves; and 
+
+b) 1.0 for V-notch, ball, and single-ported globe valves. 
+Values for Fa for other valve styles are not known at 
+this time. 
+
+7.3 Liquid Pressure Recovery Factors 
+
+7.3.1 Liquid Pressure Recovery Factor Without 
+Attached Fitting F L 
+
+F L is the liquid pressure recovery factor of the valve 
+without attached fittings. This factor accounts for the 
+influence of the valve internal geometry on the valve 
+capacity at choked flow. It is defined as the ratio of the 
+actual maximum flow rate under choked flow condi- 
+tions to a theoretical, non-choked flow rate which 
+would be calculated if the pressure differential used was 
+the difference between the valve inlet pressure and the 
+apparent "vena contra eta" pressure at choked flow 
+conditions. 
+
+Using water between 5°C and 40°C as specified in the 
+test procedure, see IS 10189 (Part 1) : 1982,. F L is 
+
+
+
+calculated from test data using the following equation: 
+
+
+
+p M ^max(Ly 
+
+
+
+v; 
+
+
+
+1 
+
+
+
+Ny.C ▼ p,-0.96p v 
+
+
+
+(15) 
+
+
+
+7.3.2 Combined Liquid Pressure Recovery Factor and 
+Piping Geometry Factor with Attached Fittings F L? 
+
+F IJP is the combined liquid pressure recovery factor and 
+piping geometry factor for a control valve installed with 
+attached fittings. It is obtained in the same maimer as F L . 
+
+From test data where the fluid is water between 5°C and 
+40°C, F^ is calculated using the following equation: 
+
+
+
+^LP = 
+
+
+
+N 
+
+
+
+iax(LP) -y/ 1 
+
+\.c V Pl -Q.96p v 
+
+
+
+(16) 
+
+
+
+To meet a maximum permissible deviation of ±5 per- 
+cent. F LP must be determined by testing. When 
+estimated values are permissible, reasonable accuracy 
+may be obtained by use of the following equation: 
+
+F L 
+
+^LH " I —= (17) 
+
+
+
+V Fl 
+v 1 + — 
+
+
+
+(*■) 
+
+
+
+w 
+
+
+
+Here 2£ 2 is the velocity head coefficient, £ 2 + £ B1 , of 
+the fitting attached upstream of the valve as measured 
+
+
+
+! 'U 
+
+
+1 
+
+
+
+
+
+
+
+
+--"■*- r "~ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NUMBER FACTOR 
+o 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REYNOLDS 
+
+o 
+6 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UJ 
+
+> 
+
+< 
+
+> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0*001 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0-01 0-1 1 10 10 2 10 10* 
+
+VALVE REYNOLDS NUMBER Re v 
+
+
+
+10' 
+
+
+
+Fig. 2 Reynolds Number Factor F r for Sizing A Control Valve 
+
+4 
+
+
+
+IS 10189 (Part 2/Sec 1) : 1993 
+
+
+
+between the upstream pressure tap and the control valve 
+body inlet. The effect of a fitting ahead of a valve may 
+produce sizing errors greater than 5 percent. 
+
+7.4 Liquid Critical Pressure Ratio Factor F f 
+
+Fp is the liquid critical pressure ratio factor. This factor 
+is the ratio of the apparent "vena contra eta" pressure at 
+choked flow conditions to the vapour pressure of the 
+
+
+
+liquid at inlet temperature. At vapour pressures near 
+zero, this factor is 0.96. 
+
+Values of F F may be determined from the curve given 
+in Fig. 3, or approximated from the following equation: 
+
+
+
+F F = 0.96 -0.28 
+
+
+
+VF 
+
+
+
+(18) 
+
+
+
+a 
+
+o 
+< 
+
+
+
+< 
+oe 
+
+UJ 
+
+a 
+
+i/> 
+if) 
+
+UJ 
+
+oc 
+
+a 
+
+
+
+< 
+
+
+
+a 
+
+
+
+3 
+
+a 
+
+
+
+0*9 
+OS 
+0-7 
+0-6 
+
+
+N v 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+0-10 0*20 0*30 0*40 0*50 0*60 070 0*80 0*90 t-00 
+
+ABSOLUTE VAPOUR PRESSURE Pv 
+
+ABSOLUTE THERMODYNAMIC CRITICAL PRESSURE Pc 
+
+
+
+Fig. 3 Liquid Critical Pressure Ratio Factor F f 
+
+Table 1 Numerical Constants N 
+
+( Clauses 4, 6.1, 7.1 and 7 2 ) 
+
+
+
+Constant 
+
+
+Flow coefficient C 
+
+
+Formulae units 
+
+
+
+
+A v 
+
+
+Kv 
+
+
+Cv 
+
+
+Q 
+
+
+d,D 
+
+
+PUPl^Vy&P 
+
+
+P 
+
+
+M 
+
+
+3.6 x 10 3 
+3.6 x 10 4 
+
+
+1 X 10 _1 
+1x10° 
+
+
+8.65 x 10~ 2 
+8.65 x 10"* 1 
+
+
+mVh 
+m 3 /h 
+
+
+mm 
+mm 
+
+
+kPa 
+bar 
+
+
+kg/m 3 
+kg/m 3 
+
+
+N 2 
+
+
+1.23 xlO" 12 
+
+
+1.6 xlO" 3 
+
+
+2.14 xlO -3 
+
+
+- 
+
+
+mm 
+
+
+- 
+
+
+- 
+
+
+N 4 
+
+
+3.72 xlO 2 
+
+
+7.07 x 10 4 
+
+
+7.6 x 10 4 
+
+
+m 3 /h 
+
+
+- 
+
+
+- 
+
+
+- 
+
+
+
+NOTE — Use of the numerical constants provided in this table together with the practical metric units specified in the table will 
+yield flow coefficients in the units in which they are defined. 
+
+
+
+Standard Mark 
+
+The use of the Standard Mark is governed by the provisions of the Bureau oj Indian 
+Standards Act, 1986 and the Rules and Regulations made thereunder. The Standard Mark on 
+products covered by an Indian Standard conveys the assurance that they have been 
+produced to comply with the requirements of that standard under a well defined system of 
+inspection, testing and quality control which is devised and supervised by BIS and operated 
+by the producer. Standard marked products are also continuously checked by BIS for con- 
+formity to that standard as a further safeguard. Details of conditions under which a licence 
+for the use of the Standard Mark may be granted to manufacturers or producers may be 
+obtained from the Bureau of Indian Standards. 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harnionious development of the activities of standardization, marking and quality certificated of 
+goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any 
+form without the prior permission in writing of BIS. This does not preclude the free use* in the course of 
+implementing the standard, of necessary details, such as symbols and sizes, type or grade designations. 
+Enquiries relating to copyright be addressed to the Director ( Publications ), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also 
+reviewed periodically; a standard along with amendments is reaffirmed when such review indicates that 
+no changes are needed; if the review indicates that changes are needed, it is taken up for revision. 
+Users of Indian Standards should ascertain that they are in possession of the latest amendments or 
+edition by referring to the latest issue of 'BIS Handbook* and 'Standards Monthly Additions*. 
+Comments on this Indian Standard may be sent to BIS giving the following reference: 
+
+Doc: No. ETD 18 ( 3104) 
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 Telegrams : Manaksanstha 
+
+Telephones : 331 01 31, 331 13 75 ( Common to all offices ) 
+
+Regional Offices : Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg ( 331 01 31 
+
+NEW DELHI 110002 J 331 13 75 
+
+Eastern : 1/14 C. I. T. Scheme VII M, V. I. P. Road, Maniktola ( 37 84 99, 37 85 61 
+
+CALCUTTA 700054 { 37 86 26, 37 86 62 
+
+Northern : SCO 445-446, Sector 35-C, CHANDIGARH 160036 ( 53 38 43, 53 16 40 
+
+? 53 23 84 
+
+Southern : C. I. T. Campus, IV Cross Road, MADRAS 600113 t 235 02 16, 235 04 42 
+
+\ 235 15 19, 235 23 15 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri ( East ) j 632 92 95, 632 78 58 
+
+BOMBAY 400093 j 632 78 91, 632 78 92 
+
+Branches : AHMAD AB AD. BANGALORE. BHOPAL. BHUBANESHWA&. 
+
+COIMBATORE. FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. 
+JAIPUR. KANPUR. LUCKNOW. PATNA. THIRUVANANTHAPURAM. 
+
+
+
+Printed at New India Printing Piets. Khuria* Indto 
+
+
+

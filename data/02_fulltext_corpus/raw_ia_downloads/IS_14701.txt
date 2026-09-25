@@ -1,0 +1,11676 @@
+**************** 
+
+
+
+*■ *Z**K 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+Jawaharlal Nehru 
+Step Out From the Old to the New 
+
+
+
+mrjssss^^^w: 
+
+
+
+
+,_A» 
+
+
+
+
+**************** 
+
+
+
+BLANK PAGE 
+
+
+
+<_<ii££ 
+
+
+
+
+
+UJ> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+( Reaffirmed 2003 ) 
+
+^HT lMPl<fl — ^ra ^RTf^ff^FRT $> fePJ 90 fM 
+
+Indian Standard 
+
+INFORMATION TECHNOLOGY — 90 mm OPTICAL DISK 
+' CARTRIDGES, REWRITABLE AND READ ONLY, FOR 
+
+DATA INTERCHANGE 
+
+
+
+ICS 35.220.30 
+
+
+
+© BIS 1999 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+June l999 Price Rs 260.00 
+
+
+
+Computer Hardware Sectional Committee, LTD 37 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with ISO/IEC 10090 : 1992 'Information technology — 90 mm optical 
+disk cartridges, rewritable and read only, for data interchange' issued by the International Organization for 
+Standardization ( ISO ) and International Electrotechnical Commission ( IEC ) jointly was adopted by the Bureau 
+of Indian Standards on the recommendation of the Computer Hardware Sectional Committee and approval of 
+the Electronics and Telecommunication Division Council. 
+
+The text of International standard has been approved as suitable for publication as Indian Standard without 
+deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is 
+particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 
+
+Indian Standard'. 
+
+b) Comma ( , ) has been used as a decimal marker in the International Standard while in Indian Standards, 
+the current practice is to use a point ( . ) as the decimal marker. 
+
+CROSS REFERENCES 
+
+In this adopted standard, the following International Standard is referred to. Read in its place the following: 
+
+International Standard Corresponding Indian Standard Degree of 
+
+Equivalence 
+
+ISO 950 : 1991 Safety of informa- IS 13252 : 1992 Safety of information techn- Identical 
+
+tion technology equipment, includ- ology equipment, including electrical business 
+ing electrical business equipment equipment 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Contents 
+
+
+
+Page 
+
+
+
+Section 1 - General 
+
+
+1 
+
+
+Scope 
+
+
+•4 
+
+
+/-> r 
+
+
+4 
+
+
+v^uiiiuj muiu^ 
+
+
+3 
+
+
+Normative reference 
+
+
+4 
+
+
+Definitions 
+
+
+4.1 
+
+
+case 
+
+
+4.2 
+
+
+cyclic redundancy check (CRC) 
+
+
+4.3 
+
+
+embossed mark 
+
+
+4.4 
+
+
+entrance surface 
+
+
+4.5 
+
+
+error correction code (ECC) 
+
+
+4.6 
+
+
+field 
+
+
+4.7 
+
+
+format 
+
+
+4.8 
+
+
+groove 
+
+
+4.9 
+
+
+interleaving 
+
+
+4.10 
+
+
+Kerr rotation 
+
+
+4.11 
+
+
+land and groove 
+
+
+4.12 
+
+
+mark 
+
+
+4.13 
+
+
+optical disk 
+
+
+4.14 
+
+
+optical disk cartridge (ODC) 
+
+
+4.15 
+
+
+polarization 
+
+
+4.16 
+
+
+recording layer 
+
+
+4.17 
+
+
+Reed-Solomon code 
+
+
+4.18 
+
+
+rewritable optical disk 
+
+
+4.19 
+
+
+sector 
+
+
+4.20 
+
+
+substrate 
+
+
+4.21 
+
+
+track 
+
+
+4.22 
+
+
+zone 
+
+
+5 
+
+
+Conventions and notations 
+
+
+5.1 
+
+
+Representation of numbers 
+
+
+5.2 
+
+
+Names 
+
+
+6 
+
+
+List of acronyms 
+
+
+7 
+
+
+General description of the optic 
+
+
+
+2 
+2 
+2 
+2 
+
+2 
+2 
+2 
+2 
+2 
+
+2 
+
+t 
+
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+
+
+
+3 
+3 
+
+3 
+3 
+
+
+
+(i) 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+8 
+
+
+General requirements 
+
+
+8.1 
+
+
+Environments 
+
+
+8.1.1 
+
+
+Testing environment 
+
+
+8.1.2 
+
+
+Operating environment 
+
+
+8.1.3 
+
+
+Storage environment 
+
+
+8.1.4 
+
+
+Transportation 
+
+
+8.2 
+
+
+Temperature shock 
+
+
+8.3 
+
+
+Safety requirements 
+
+
+8.4 
+
+
+Flammability 
+
+
+9 
+
+
+Reference Drive 
+
+
+9.1 
+
+
+Optical system 
+
+
+9.2 
+
+
+Optical beam 
+
+
+9.3 
+
+
+Read channels 
+
+
+9.4 
+
+
+Tracking 
+
+
+9.5 
+
+
+Rotation of the disk 
+
+
+
+4 
+4 
+5 
+5 
+
+5 
+5 
+5 
+
+
+
+5 
+
+7 
+7 
+7 
+7 
+
+
+
+Section 2 - Mechanical and physical characteristics ° 
+
+10 Dimensional and physical characteristics of the case 8 
+
+10.1 General description of the case " 
+
+10.2 Reference planes of the case " 
+
+10.3 Dimensions of the case 8 
+
+10.3.1 Overall dimensions 8 
+
+10.3.2 Location hole 9 
+
+10.3.3 Alignment hole 9 
+
+10.3.4 Reference surfaces ' 
+
+10.3.5 Detents 10 
+
+10.3.6 Functional Areas 10 
+
+10.3.7 Spindle and head windows ** 
+
+10.3.8 Shutter 12 
+10 3.9 Path for shutter opener and shutter sensor notch 13 
+
+10.3.10 Mis-insert protections 13 
+
+10.3.11 Gripper slots 14 
+10J.12 Label area 14 
+
+10.4 Mechanical characteristics u 
+
+10.4.1 Material 14 
+
+10.4.2 Mass 15 
+10.43 Edge Distortion 15 
+
+10.4.4 Compliance A;> 
+
+10.4.5 Shutter opening force 15 
+
+1 1 Dimensional , mechanical and physical characteristics of the disk 27 
+
+11.1 General description of the disk 27 
+
+1 1.2 Reference axis and plane of the disk 27 
+113 Dimensions of the disk *& 
+
+11.3.1 Hub dimensions ** 
+
+
+
+(ii) 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+11.3.2 Clamping zone 28 
+
+11.4 Mechanical characteristics 29 
+
+11.4.1 Material 29 
+
+11.4.2 Mass 29 
+
+11.4 J Moment of inertia 29 
+
+11.4.4 Imbalance 29 
+
+11.4.5 Axial deflection 29 
+
+11.4.6 Axial acceleration 29 
+
+11.4.7 Radial runout 30 
+
+11.4.8 Radial acceleration 30 
+
+11.4.9 Tilt 30 
+
+11.5 Optical characteristics 30 
+
+11.5.1 Index Of refraction 30 
+
+11.5.2 Thickness of the substrate 30 
+
+11.5.3 Birefringence 31 
+
+11.5.4 Reflectance 31 
+
+12 Interface between cartridge and drive 31 
+
+12.1 Clamping method 31 
+
+12.2 Clamping force 31 
+
+12.3 Capture cylinder (see figure 14) 31 
+
+12.4 Disk position in operating condition (see figure 14) 32 
+
+Section 3 - Format of information 34 
+
+34 
+
+34 
+34 
+34 
+34 
+
+34 
+
+34 
+
+35 
+35 
+
+35 
+
+35 
+35 
+36 
+36 
+36 
+37 
+37 
+37 
+37 
+37 
+
+38 
+38 
+38 
+
+
+
+13 
+
+
+Track geometry 
+
+
+13.1 
+
+
+Track shape 
+
+
+13.2 
+
+
+Direction of rotation 
+
+
+13.3 
+
+
+Track pitch 
+
+
+13.4 
+
+
+Track number 
+
+
+14 
+
+
+Track format 
+
+
+14.1 
+
+
+Track layout 
+
+
+14.2 
+
+
+Radial alignment 
+
+
+14.3 
+
+
+Sector Number 
+
+
+15 
+
+
+Sector format 
+
+
+15.1 
+
+
+Sector layout 
+
+
+15.2 
+
+
+Sector Mark 
+
+
+153 
+
+
+VFO fields 
+
+
+15.4 
+
+
+Address Mark (AM) 
+
+
+15.5 
+
+
+ID fields 
+
+
+15.6 
+
+
+Postambles (PA) 
+
+
+15.7 
+
+
+Offset Detection Field (ODF) 
+
+
+15.8 
+
+
+Gap 
+
+
+15.9 
+
+
+Sync 
+
+
+15.10 
+
+
+Data field 
+
+
+15.10.1 
+
+
+User data bytes 
+
+
+15.10.2 
+
+
+CRC and ECC bytes 
+
+
+15.10.3 
+
+
+Resync bytes 
+
+
+15.11 
+
+
+Buffer field 
+
+
+
+38 
+
+
+
+(iii) 
+
+
+
+IS 14701 : 1999 
+
+
+ISO/IEC 10090 : 1992 
+
+
+16 
+
+
+Recording code 
+
+
+17 
+
+
+Format of the Information Zone 
+
+
+17.1 
+
+
+General description of the Information Zone 
+
+
+17.2 
+
+
+Division of the Information Zone 
+
+
+17.2.1 
+
+
+Initial Zone 
+
+
+17.2.2 
+
+
+Acquire Zone 
+
+
+17.2.3 
+
+
+Test Zones 
+
+
+17.2.4 
+
+
+Control Zones 
+
+
+17.2.5 
+
+
+Data Zone 
+
+
+17.2.6 
+
+
+Buffer Zone 
+
+
+18 
+
+
+Format of the Data Zone 
+
+
+18.1 
+
+
+Defect Management Areas (DMAs) 
+
+
+18.2 
+
+
+Disk Definition Sector (DDS) 
+
+
+18.3 
+
+
+Rewritable Zone 
+
+
+18.3.1 
+
+
+Location 
+
+
+18.3.2 
+
+
+Partitioning 
+
+
+18.4 
+
+
+Embossed Zone 
+
+
+18.4.1 
+
+
+Location 
+
+
+18.4.2 
+
+
+Partitioning 
+
+
+18.4.3 
+
+
+Parity Sectors 
+
+
+19 
+
+
+Defect management in the Rewritable Zone 
+
+
+19.1 
+
+
+Initialization of the disk 
+
+
+19.2 
+
+
+Certification 
+
+
+19.2.1 
+
+
+Slipping Algorithm 
+
+
+19.2.2 
+
+
+Linear Replacement Algorithm 
+
+
+19.3 
+
+
+Disks not certified 
+
+
+19.4 
+
+
+Write procedure 
+
+
+19.5 
+
+
+Primary Defect List (PDL) 
+
+
+19.6 
+
+
+Secondary Defect List (SDL) 
+
+
+Section 4 - Characteristics of embossed information 
+
+
+20 
+
+
+Method of testing 
+
+
+20.1 
+
+
+Environment 
+
+
+20.2 
+
+
+Use of the Reference Drive 
+
+
+20.2.1 
+
+
+Optics and mechanics 
+
+
+20.2.2 
+
+
+Read power 
+
+
+20.2.3 
+
+
+Read channels 
+
+
+20.2.4 
+
+
+Tracking 
+
+
+20.3 
+
+
+Definition of signals 
+
+
+21 
+
+
+Signals from grooves 
+
+
+21.1 
+
+
+Cross-track signal 
+
+
+21.2 
+
+
+Cross-track minimum signal 
+
+
+213 
+
+
+Push-pull signal 
+
+
+21.4 
+
+
+Divided push-pull signal 
+
+
+
+38 
+
+39 
+
+39 
+39 
+
+40 
+40 
+40 
+41 
+41 
+41 
+
+41 
+
+42 
+43 
+45 
+
+45 
+45 
+
+45 
+
+45 
+46 
+46 
+
+46 
+
+47 
+47 
+
+47 
+47 
+
+47 
+48 
+48 
+48 
+
+50 
+
+50 
+
+50 
+51 
+
+51 
+51 
+51 
+51 
+
+51 
+
+53 
+
+53 
+53 
+53 
+54 
+
+
+
+(iv) 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+54 
+
+
+
+21.5 On-track signal 
+
+21.6 Phase depth ~~ 
+
+21.7 Track location 55 
+
+22 Signals from Headers S5 
+
+22.1 Sector Mark ^ 
+
+22.2 VF01andVF02 55 
+
+22.3 Address Mark, ID field and Postamble 55 
+
+23 Signals from embossed Recording fields 56 
+Section 5 - Characteristics of the recording layer 56 
+
+24 Method of testing 56 
+
+24.1 Environment 5<S 
+
+24.2 Reference Drive 56 
+
+24.2.1 Optics and mechanics 5 " 
+
+24.2.2 Read power 56 
+
+24.2.3 Read channel 56 
+
+24.2.4 Tracking 57 
+
+24.3 Write conditions 57 
+
+24.3.1 Write pulse 57 
+
+24.3.2 Write power and pulse width 57 
+
+24.3.3 Write magnetic field 58 
+
+24.4 Erase conditions 
+
+
+
+58 
+
+
+
+24.4.1 Erase power 58 
+
+24.4.2 Erase magnetic field 5 ° 
+
+24.5 Definition of signals JO 
+
+25 Magneto-optical characteristics ™ 
+
+eg 
+
+25.1 Figure of merit 
+
+25.2 Imbalance of the magneto-optical signal 59 
+
+26 Write characteristics 59 
+
+26.1 Resolution 59 
+
+26.2 Narrow-band signal-to-noise ratio "9 
+
+26.3 Cross-talk 60 
+
+27 Erase characteristics "" 
+Section 6 - Characteristics of user data 6l 
+
+28 Method of testing 61 
+
+28.1 Environment 61 
+
+28.2 Reference Drive 61 
+
+28.2.1 Optics and mechanics 61 
+
+28.2.2 Read power 61 
+
+28.2.3 Read amplifiers 61 
+
+28.2.4 Analog-to-binary converters 01 
+
+28.2.5 Error correction " 2 
+
+28.2.6 Tracking 62 
+
+29 Minimum quality of a sector 62 
+29.1 Headers 62 
+
+
+
+(v) 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+29.1.1 Sector Mark 62 
+
+29.1 J, ID fields 62 
+
+29.2 User-written data 62 
+
+29 J Embossed data 62 
+
+30 Data interchange requirements 62 
+
+30.1 Tracking 62 
+
+30 J2 User-written data 63 
+
+30 J Embossed data 63 
+
+30.4 Quality of disk 63 
+
+Annexes 
+
+A - Edge distortion test 64 
+
+B - Compliance test 65 
+
+C - Track deviation measurement 67 
+
+D - CRC for ID fields 71 
+
+E - Format of the Data field of a sector 72 
+
+F - Contents of the Control Zones 76 
+
+G - Guidelines for sector replacement 84 
+
+H - Measurement of the figure of merit 84 
+
+J - Read power, write power and erase power 85 
+
+K - Test method for measuring the adsorbent force of the hub 86 
+
+L - Derivation of the operating climatic environment 8? 
+
+M - Air cleanliness class 100 000 92 
+
+N - Position of the cartridge relative to the reference planes 93 
+
+P - Transportation 94 
+
+Q - Office environment 94 
+
+R - Relaxation by zones of the requirements for signals 95 
+
+
+
+(vi) 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Indian Standard 
+
+INFORMATION TECHNOLOGY — 90 mm OPTICAL DISK 
+CARTRIDGES, REWRITABLE AND READ ONLY, FOR 
+
+DATA INTERCHANGE 
+
+Section 1 - General 
+
+1 Scope 
+
+This International Standard specifies 
+
+- the conditions for conformance testing and the Reference Drive; 
+
+- the mechanical and physical characteristics of the cartridge, so as to provide mechanical interchangeability between data 
+processing systems; 
+
+- the format of the information on the disk, both embossed and user-written; 
+
+- the characteristics of the embossed information on the disk; 
+
+- the magneto-optical characteristics of the disk, enabling processing systems to write data onto the disk; 
+
+- the minimum quality of user-written data on the disk, enabling data processing systems to read data from the disk. 
+
+2 Conformance 
+
+A 90 mm optical disk cartridge is in conformance with this International Standard if it meets all mandatory requirements 
+specified herein. 
+
+Annex R specifies the zones of the disk in which the requirements for the signal characteristics given in the body of this 
+International Standard shall be met, and the zones in which a relaxation of these requirements is permitted. 
+
+A drive claiming conformance with this International Standard shall be able, in the operating environment, to write on any 
+optical disk cartridge which is in conformance with this International Standard, and to read from any optical disk cartridge 
+which is in conformance with this International Standard. 
+
+A drive shall not claim conformance if it cannot accept the full range of media conforming to this International Standard but 
+only a specific sub-set of it. 
+
+3 Normative reference 
+
+The following standard contains provisions which, through reference in this text, constitute provisions of this International 
+Standard. At the time of publication, the edition indicated was valid. All standards are subject to revision, and parties to 
+agreements based on this International Standard are encouraged to investigate the possibility of applying the most recent 
+edition of the standard listed below. Members of EC and ISO maintain registers of currently valid International Standards. 
+
+EC 950: 1 99 1 , Safety of information technology equipment, including electrical business equipment. 
+
+4 Definitions 
+
+For the purpose of this International Standard the following definitions apply. 
+
+4.1 case: The housing for an optical disk, that protects the disk and facilitates disk interchange. 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+4.2 cyclic redundancy check (CRC): A method for detecting errors in data. 
+
+4.3 embossed mark: A mark so formed as to be unalterable by magneto-optical means. 
+
+4.4 entrance surface: The surface of the disk on to which the optical beam First impinges. 
+
+4.5 error correction code (ECC): An error-detecting code designed to correct certain kinds of errors in data. 
+
+4.6 field: A subdivision of a sector. 
+
+4.7 format: The arrangement or layout of information on the disk. 
+
+4.8 groove: See 4.11. 
+
+4.9 interleaving: The process of allocating the physical sequence of units of data so as to render the data more immune to 
+burst errors 
+
+4.10 Kerr rotation: The rotation of the plane of polarization of an optical beam upon reflection from the recording layer, 
+as caused by the magneto-optical effect. 
+
+4.11 land and groove: A trench-like feature of the disk, applied before the recording of any information, and used to 
+define the track location. The groove is located nearer to the entrance surface than the land with which it is paired to form a 
+track. 
+
+4.12 mark: A feature of the recording layer which may take the form of a magnetic domain, a pit, or any other type or 
+form that can be sensed by the optical system. The pattern of marks represents the data on the disk. 
+
+Note 1 - Subdivisions of a sector which are named 'mark' are not marks in the sense of this definition. 
+
+4.13 optical disk: A disk that will accept and retain information in the form of marks in a recording layer, that can be read 
+with an optical beam. 
+
+4.14 optical disk cartridge (ODC): A device consisting of a case containing an optical disk. 
+
+4.15 polarization: The direction of polarization of an optical beam is the direction of the electric vector of the beam. 
+
+Note 2 - The plane of polarization is the plane containing the electric vector and the direction of propagation of the beam. The polarization is right-handed 
+when to an observer looking in the direction of propagation of the beam, the end-point of the electric vector would appear to describe an ellipse in the 
+clockwise sense. 
+
+4.16 recording layer: A layer of the disk on, or in, which data is written during manufacture and/or use. 
+
+4.17 Reed-Solomon code: An error detection and/or correction code which is particularly suited to the correction of errors 
+which occur in bursts or are strongly correlated. 
+
+4.18 rewritable optical disk: An optical disk in which data in specified areas can be written, erased and rewritten by an 
+optical beam. 
+
+4.19 sector: The smallest addressable part of a track in the Information Zone of a disk that can be accessed independently 
+of other addressable parts of the zone. 
+
+4.20 substrate: A transparent layer of the disk, provided for mechanical support of the recording layer, through which the 
+optical beam accesses the recording layer. 
+
+4.21 track: The path which is to be followed by the focus of the optical beam during one revolution of the disk. 
+
+4.22 zone: An annular area of the disk. 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+5 Conventions and notations 
+
+5.1 Representation of numbers 
+
+- A measured value is rounded off to the least significant digit of the corresponding specified value. It implies that a 
+specified value of 1,26 with a positive tolerance of + 0,01, and a negative tolerance of -0,02 allows a range of measured 
+values from 1,235 to 1,275. 
+
+- Letters and digits in parentheses represent numbers in hexadecimal notation. 
+
+- The setting of a bit is denoted by ZERO or ONE. 
+
+- Numbers in binary notation and bit combinations are represented by strings of ZEROs and ONEs. 
+
+- Numbers in binary notation and bit combinations are shown with the most significant bit to the left. 
+
+- Negative values of numbers in binary notation are given in TWO'S complement. 
+
+- In each field the data is recorded so that the most significant byte (byte 0) is recorded first. Within each byte the least 
+significant bit is numbered and is recorded last, the most significant bit (numbered 7 in an 8-bit byte) is recorded first. 
+This order of recording applies also to the data input of the Error Detection and Correction circuits and to their output. 
+
+5.2 Names 
+
+The names of entities, e.g. specific tracks, fields, etc., are given with a capital initial. 
+
+6 List of acronyms 
+
+AM Address Mark 
+
+CCS Continuous Composite Servo (tracking method) 
+
+CRC Cyclic Redundancy Check 
+
+DDS Disk Definition Sector 
+
+DMA Defect Management Area 
+
+ECC Error Correction Code 
+
+FA1 Functional Area 1 
+
+FA2 Functional Area 2 
+
+ID Identifier 
+
+LSB Least Significant Byte 
+
+MSB Most Significant Byte 
+
+ODC Optical Disk Cartridge 
+
+ODF Offset Detection Field 
+
+PA Postamble 
+
+PDL Primary Defect List 
+
+RLL(2,7) Run Length Limited (code) 
+
+SDL Secondary Defect List 
+
+SM Sector Mark 
+
+VFO Variable Frequency Oscillator 
+
+7 General description of the optical disk cartridge 
+
+The optical disk cartridge which is the subject of this International Standard consists of a case containing an optical disk. 
+
+The case is a protective enclosure for the disk. It has access windows covered by a shutter. The windows are automatically 
+uncovered by the drive when the cartridge is inserted into it. 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+The optical disk is recordable on one side. Data can be written onto the disk as marks in the form of magnetic domains in the 
+recording layer and can be erased from it with a focussed optical beam, using the thermo-magnetic effect. The data can be 
+read with a focussed optical beam, using the magneto-optical effect. The beam accesses the recording layer through the 
+transparent substrate of the disk. 
+
+Part of the disk or the entire disk may contain read-only data in the form of pits embossed by the manufacturer. This data 
+can be read using the diffraction of the optical beam by the embossed pits. 
+
+8 General requirements 
+
+8.1 Environments 
+
+8.1.1 Testing environment 
+
+The test environment is the environment where the air immediately surrounding the optical disk cartridge has the following 
+properties: 
+
+23 °C ± 2 °C 
+45 % to 55 % 
+60 kPa to 106 kPa 
+
+
+
+Temperature 
+Relative humidity 
+Atmospheric pressure 
+Air cleanliness 
+
+
+
+Class 100 000 (see annex M) 
+
+
+
+No condensation on or in the optical disk cartridge shall occur. Before testing, the optical disk cartridge shall be conditioned 
+in this environment for 48 h minimum. It is recommended that, before testing, the entrance surface of the optical disk shall 
+be cleaned according to the instructions of the manufacturer of the disk. 
+
+Unless otherwise stated, all tests and measurements shall be made in this test environment. 
+
+8.1.2 Operating environment 
+
+This International Standard requires that an optical disk cartridge which meets all requirements of this International Standard 
+in the specified test environment provides data interchange over the specified ranges of environmental parameters in the 
+operating environment. 
+
+The operating environment is the environment where the air immediately surrounding the optical disk cartridge has the 
+following properties: 
+
+
+
+5 °C to 50 °C 
+
+3 % to 85 % 
+
+1 g/m 3 to 30 g/m 3 
+
+60kPatol06kPa 
+
+10 °C/h max. 
+
+10 %/h max. 
+
+Office environment (see annex Q) 
+
+
+
+Temperature 
+
+Relative humidity 
+
+Absolute humidity 
+
+Atmospheric pressure 
+
+Temperature gradient 
+
+Relative humidity gradient 
+
+Air cleanliness 
+
+Magnetic field strength at the recording layer 
+
+for any condition under which a beam is in focus : 32 000 A/m max. 
+
+Magnetic field strength at the recording layer 
+
+during any other condition : 48 000 A/m max. 
+
+No condensation on or in the optical disk cartridge shall occur. If an optical disk cartridge has been exposed to conditions 
+outside those specified in this clause, it shall be acclimatized in an allowed operating environment for at least 2 h before use 
+(see also annex L). 
+
+
+
+ISO/IEC 10090 : 1992 
+
+
+
+8.1.3 Storage environment 
+
+The optical disk cartridge without any protective enclosure shall not be stored in an environment outside the range allowed 
+for storage. The storage environment is defined as an environment where the air immediately surrounding the optical disk 
+cartridge has the following properties: 
+
+
+
+Temperature 
+
+Relative humidity 
+
+Absolute humidity 
+
+Atmospheric pressure 
+
+Temperature gradient 
+
+Relative humidity gradient 
+
+Air cleanliness 
+
+Magnetic field strength at the recording layer 
+
+No condensation on or in the optical disk cartridge shall occur. 
+
+
+
+-10°Cto50°C 
+
+3 % to 90 % 
+
+1 g/m 3 to 30 g/m 3 
+
+60 kPa to 106 kPa 
+
+15 °C/h max. 
+
+10 %/h max. 
+
+Office environment (see annex Q) 
+
+48 000 A/m max. 
+
+
+
+8.1.4 Transportation 
+
+This International Standard does not specify requirements for transportation; guidance is given in annex P. 
+
+8.2 Temperature shock 
+
+The optical disk cartridge shall withstand a temperature shock of up to 20 °C when inserted into, or removed from, the drive. 
+
+8.3 Safety requirements 
+
+The cartridge shall satisfy the safety requirements of EC 950, when used in the intended manner or in any foreseeable use in 
+an information processing system. 
+
+8.4 Flammability 
+
+The cartridge and its components shall be made from materials that comply with the flammability class for HB materials, or 
+better, as specified in EEC 950. 
+
+9 Reference Drive 
+
+The Reference Drive is a drive several critical components of which have well defined properties and which is used to test 
+write, read and erase parameters of the disk for conformance to this International Standard. The critical components vary 
+from test to test. This clause gives an outline of all components; components critical for tests in specific clauses only are 
+specified in these clauses. 
+
+
+
+9.1 Optical system 
+
+The basic set-up of the optical system of the Reference Drive used for measuring the write, read and erase parameters is 
+shown in figure 1. Different components and locations of components are permitted, provided that the performance remains 
+the same as that of the set-up in figure 1 . The optical system shall be such that the detected light reflected from the entrance 
+surface of the disk is minimized so as not to influence the accuracy of the measurements. 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+
+A Laser diode 
+
+B Collimator lens 
+
+C Optional shaping prism 
+
+Ch.l Channel 1 
+
+Ch.2 Channel 2 
+
+D Beam splitter 
+
+E Polarizing beam splitter 
+
+F Objective lens 
+
+
+
+G Optical disk 
+
+H Optional half-wave plate 
+
+I Phase retarder 
+
+J Polarizing beam splitter 
+
+K,,K 2 Photodiodes for channels 1 and 2 
+
+K 3 Split photodiode 
+
+L,,L 2 d.c.-coupled amplifiers 
+
+M Tracking channel (see 20.3) 
+
+
+
+Figure 1 - Optical system of the Reference Drive 
+
+In the absence of polarization changes in the disk, the polarizing beam splitter J shall be aligned to make the signal of 
+detector K, equal to that of detector K 2 . The direction of polarization in this case is called the neutral direction The phase 
+retarder I shall be adjusted such that the optical system does not have more than 2,5° phase retardation between the neutral 
+polarization and the polarization perpendicular to it. This position of the retarder is called the neutral position. 
+
+The phase retarder can be used for the measurement of the narrow-band signal-to-noise ratio (see 26.2). 
+
+The beam splitter J shall have a p-s intensity reflectance ratio of at least 100. 
+
+The beam splitter E shall have an intensity reflectance R p from F to H of nominally 0,30 for the neutral polarization 
+direction. The reflectance /? s for the polarization perpendicular to the neutral direction shall be nominally 0,95. The actual 
+value of /? s shall not be smaller than 0,90. 
+
+The imbalance of the magneto-optical signal is specified for a beam splitter with nominal reflectances. If the measurement is 
+made on a drive with reflectances /? p ' and R t ' for beam splitter E, then the measured imbalance shall be multiplied by 
+
+
+
+
+
+
+to make it correspond to the nominal beam splitter E. 
+
+
+
+IS 14701 : 1999 
+ISO/1EC 10090 : 1992 
+
+The output of Channel 1 is the sum of the currents through photodiodes Kj and K 2 , and is used for reading embossed marks. 
+The output of Channel 2 is the difference between photodiode currents, and is used for reading user-written marks with the 
+magneto-optical effect. 
+
+9.2 Optical beam 
+
+The focussed optical beam used for writing, reading and erasing data shall have the following properties for both 
+wavelengths: 
+
+a) Wavelengths (X) 780 nm **" 825 nm + ""* 
+
+- 10 nm - 10 nm 
+
+b) Wavelength (X) divided by the numerical 
+
+aperture of the objective lens (NA) X/NA = 1 ,475 pm ± 0,035 pm for 780 nm 
+
+X/NA = 1,560 pm ± 0,040 pm for 825 nm 
+
+c) Filling D/W of the aperture of the 
+
+objective lens 1 ,0 max. 
+
+d) Variance of the wavefront of the 
+
+optical beam near the recording layer X. 2 / 180 max. 
+
+e) Polarization parallel to the track 
+
+Extinction ratio 0,01 max. 
+
+g) The optical power and pulse width for writing, reading and erasing, and the magnetic field shall be as specified in 
+
+20.2.2, 24.2.2, 24.3, 24.4 and 28.2.2. 
+
+D is the diameter of the lens aperture and W is the beam diameter of the Gaussian beam where the intensity is 1/e 2 of the 
+maximum intensity. 
+
+The extinction ratio is the ratio of the minimum over the maximum power observed behind a linear polarizer in the optical 
+beam, which is rotated over at least 180°. 
+
+9.3 Read channels 
+
+Two read channels shall be provided to generate signals from the marks in the recording layer. Channel 1 shall be used for 
+reading the embossed marks, using the diffraction of the optical beam by the marks. Channel 2 shall be used for reading the 
+user-written marks, using the rotation of the polarization of the optical beam due to the magneto-optical effect of the marks. 
+The read amplifiers after the photo-detectors in Channel 1 and Channel 2 shall have a flat response within ± 1 dB from 
+100 kHz to 11,6 MHz. 
+
+9.4 Tracking 
+
+The Tracking channel of the drive provides the tracking error signals to control the servos for the axial and radial tracking of 
+the optical beam. The method of generating the axial tracking error is not specified for the Reference Drive. The radial 
+tracking error is generated by a split photodiode detector in the tracking channel. The division of the diode runs parallel to 
+the image of the tracks on the diode. 
+
+The requirements for the accuracy with which the focus of the optical beam must follow the tracks is specified in 20.2.4. 
+
+9.5 Rotation of the disk 
+
+The spindle shall position the disk as specified in 12.4. It shall rotate the disk at 30,0 Hz ± 0,3 Hz. The direction of rotation 
+shall be counter-clockwise when viewed from the objective lens. 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Section 2 • Mechanical and physical characteristics 
+
+10 Dimensional and physical characteristics of the case 
+
+10.1 General description of the case (see figure 2) 
+
+The case is a rigid protective container of rectangular shape. It has a spindle window on Side A to allow the spindle of the 
+drive to clamp the disk by its hub. Both Side A and Side B of the case have a head window, the one on Side A for the optical 
+head of the drive, the other one on Side B for the magnetic head providing the necessary magnetic fields. A shutter uncovers 
+the windows upon insertion into the drive, and automatically covers them upon removal from the drive. The case has 
+features that enable a drive to reject a mis-inserted cartridge, write-inhibit and reflectance detection features, and gripper 
+slots for an autochanger. 
+
+10.2 Reference planes of the case 
+
+The dimensions of the case shall be referred to three orthogonal reference planes X, Y and Z. The case shall be constrained 
+such that four reference surfaces S l to S 4 on Side A of the case lie in plane Z when measuring those dimensions of the case 
+in 10.3 which are referenced to this plane. The intersection of the three planes defines the centre of the location hole. The 
+centre of the. alignment hole shall lie in the X plane (see annex N). A dimension of a feature referenced to one of the planes 
+is the shortest distance from the feature to the plane. 
+
+10.3 Dimensions of the case 
+
+The dimensions of the case shall be measured in the test environment. The dimensions of the case in an operating 
+environment can be estimated from the dimensions specified in this clause. 
+
+10.3.1 Overall dimensions (see figure 3) * 
+
+The total length of the case shall be 
+
+L x - 94,0 mm ± 0,3 mm 
+The distance from the top of the case to reference plane X shall be 
+
+L2 - 76,0 mm ± 0,2 mm 
+The distance from the bottom of the case to reference plane X shall be 
+
+L^ = 18,0 mm ±0,2 mm 
+The total width of the case shall be 
+
++ 0,0 mm 
+
+L 4 = 90,0 mm 
+
+* - 0,4 mm 
+
+The distance from the left hand side of the case to reference plane Y shall be 
+
+L 5 = 85,0 mm ± 0,3 mm 
+The distance from the right hand side of the case to reference plane Y shall be 
+
+L 6 = 5,0 mm ± 0,1 mm 
+The corner at the top shall be rounded with a radius 
+
+/?, = 1,5 mm ± 0,2 mm 
+and the two corners at the bottom with a radius 
+8 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+R 2 = 2,0 mm ± 0,2 mm 
+In the zones extending 
+
+Lj - 8,6 mm min. 
+from the left-hand and right-hand edges of the case, the thickness of the case shall be 
+
+L % = 6,0 mm ± 0,2 mm 
+The eight long edges of the case shall be rounded with a radius 
+
++ 0,2 mm 
+
+R-, = 0,3 mm 
+
+J - 0,0 mm 
+
+10.3.2 Location hole (see figure 3) 
+
+The centre of the location hole shall coincide with the intersection of the planes X, Y and Z. The diameter of the hole shall 
+be 
+
++ 0,00 mm 
+
+D, - 3,60 mm 
+
+1 - 0,06 mm 
+
+held to a depth 
+
+i^= 1,5 mm min. 
+The location hole shall extend below plane Z by 
+
+L 10 = 4,0 mm min. 
+with a diameter equal to, or greater than D v 
+The location hole shall not extend through Side B. 
+The lead-in edges shall be rounded with a radius 
+
+R 4 = 0,5 mm max. 
+
+10.3.3 Alignment hole (see figure 3) 
+
+The centre of the alignment hole shall lie in the X plane at a distance 
+
+L n = 80,0 mm ±0,2 mm 
+from reference plane Y. 
+The alignment hole shall have a substantially rectangular shape. Its dimensions shall be 
+
++ 0,00 mm 
+
+
+
+Lj2 = 3,60 mm 
+
+
+
+-0,06 mm 
++ 0.2 mm 
+
+
+
+L M = 4,4 mm 
+
+13 -0,0mm 
+
+held to a depth Z^, below which the alignment hole shall extend to L 10 , with dimensions equal to, or greater than, L 12 and 
+L l3 , respectively. 
+
+The alignment hole shall not extend through Side B. 
+
+The lead-in edges shall be rounded with radius R 4 . 
+
+10.3.4 Reference surfaces (see figure 4) 
+Side A of the case shall contain four reference surfaces S j , S 2 , S 3 and S 4 . 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090: 1992 
+
+Surfaces S t and S 2 shall be circular with a diameter 
+
+£> 2 = 7,0 mm min. 
+Sj shall be centred on the location hole, and S 2 shall be centred on the alignment hole. 
+Surfaces S 3 and S 4 shall be circular with a diameter 
+
+Z) 3 = 6,0 mm min. 
+with their centres located at 
+
+L 14 = 54,0 mm ± 0,2 mm 
+
+L,c = 1,0 mm ± 0,2 mm and 
+
+L 16 = 81,0mm±0,2mm 
+No portion of the case or of the shutter mechanism (see 10.3.8) shall protrude more than 
+
+L 17 = 0,15 mm max. 
+beyond plane Z. 
+
+10.3.5 Detents (see figure 5) 
+
+The case shall have two symmetrical detents intended for autoloading. Each detent shall extend from plane Z up to 
+
+L 18 = 5,0 mm min. 
+and shall not extend through Side B. 
+Each detent is defined by a semi-circular section with a radius 
+
+R 5 = 2,1 mm ± 0,1 mm 
+
+which stretches out to the side of the case along two straight lines extending from the semi-circle. The radii of the two 
+detents originate from 
+
+L 19 = 65,5 mm ± 0,2 mm 
+
+Ljq = 4,0 mm max. 
+
+Ljj = 84,0 mm max. 
+
+The outside edges of the detents shall be rounded off by a radius 
+
+R 6 - 0,5 mm ± 0,2 mm 
+
+10.3.6 Functional Areas (see figure 6) 
+
+The case shall have an opening in Side A the length of which shall be 
+
+£-22 = 8,2 mm min. 
+Its width shall be at least equal to L li , and its centreline shall be located on the intersection of planes Y and Z. 
+Functional Area FA1 shall have the dimensions 
+
+Lj3 = 4,4 mm min. 
+
+Lj 4 = 3,6 mm min. 
+Its centreline shall be in plane Z, and parallel to plane X at a distance 
+
+Ljj = 7,8 mm ± 0,2 mm 
+10 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+from plane X. Side B shall have an opening corresponding to the surface of Functional Area FA1. 
+Functional Area FA2 shall have the dimensions L^ ^24 and 
+
+Ljg = 4,0 mm min. 
+Its centreline shall be in plane Z, and parallel to plane X at a distance 
+
+£37= 12,8 mm ±0,2 mm 
+There shall be no opening in Side B corresponding to Functional Area FA2. 
+The cartridge shall have a device capable of 
+
+- either closing FA 1 or FA2, 
+
+- or closing both FA 1 and FA2. 
+
+The two Functional Areas shall indicate the reflectance of the disk in the cartridge and whether or not writing on the disk is 
+permitted, as specified in table 1 (see also figure 6). 
+
+Table 1 - Use of the Functional Areas FA1 and FA2 
+
+
+
+FA1 
+
+
+FA2 
+
+
+Writing 
+
+
+Reflectance 
+
+
+Type of Cartridge 
+
+
+Open 
+
+
+Closed 
+
+
+Inhibited 
+
+
+Low 
+
+
+- Rewritable with or without 
+embossed zone, or 
+
+- fully embossed 
+
+
+Closed 
+
+
+Open 
+
+
+Permitted 
+
+
+Closed 
+
+
+Closed 
+
+
+Inhibited 
+
+
+High 
+
+
+fully embossed 
+
+
+Open 
+
+
+Open 
+
+
+Not specified by this International Standard 
+
+
+
+The surface of the device shall be at a distance 
+
+Ljg = 0,3 mm max. 
+from plane Z. 
+
+
+
+103.7 Spindle and head windows (see figure 7) 
+
+Side A of the case shall have a window to enable the spindle and the optical head of the drive to access the disk. The 
+dimensions of the window are referenced to a centreline, located at a distance 
+
+Lj 9 as 40,0 mm ± 0,2 mm 
+
+from plane Y. The width of the window shall be given by 
+
+
+
+£30= 11,0 mm 
+
+
+
++ 0,2 mm 
+-0,0 mm 
+
+
+
+and 
+
+
+
++ 0,2 mm 
+-0,0 mm 
+
+
+
+L31 = 11,0 mm 
+
+The top of the window shall be given by radius 
+
+R-i - 43,7 mm min. 
+originating from L^ and 
+
+
+
+11 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+£32 = 27,0 mm ± 0,2 mm 
+The area bounded by R 7 and the top of the case shall be recessed from plane Z by 
+
++ 0,2 mm 
+
+L,=2,0mm 
+
+~ 3 - 0,0 mm 
+
+over the width of the window. 
+
+The bottom of the window shall be the arc of the semi-circle which smoothly joins the sides of the window. The centre of 
+the semi-circle shall be defined by L^g and L32- 
+
+Side B of the case shall have a window to enable the magnetic head of the drive to access the disk. The .dimensions of the 
+window are referenced to a centreline, located at a distance L^ from plane Y. The width of the window shall be given by 
+£30 and L 3l . The window shall extend from 
+
+£34 = 40,0 mm max. 
+
+to the arc of /? 7 , originating from l^g and L^. 
+
+The area bounded by R n and the top of the case shall be, over the width of the window, at a distance 
+
++ 0,0 mm 
+
+L,c = 4,2 mm 
+
+^" - 0,4 mm 
+
+from plane Z. 
+
+The two inside comers shall be rounded with a radius 
+R % = 2,0 mm max. 
+
+10.3.8 Shutter (see figure 8) 
+
+The case shall have a spring-loaded shutter designed to completely cover the spindle and head windows when closed. When 
+open, the shutter shall expose the windows up to at least the minimum size allowed by the following dimensions, given in 
+10.3.7: 
+
+on Side A: from the semi-circle at the bottom of the window up to the top of the case, and from L$ Q to L3 ^ 
+
+on Side B: from L$ A up to the top of the case, and from L$ to Ljy, 
+
+on the top: from plane Z to L33, from Lj to Z^j, from L35 up to Side B, and from L^ to L^ v 
+
+The shutter shall be free to slide in a recessed area of the case in such a way as to ensure that the overall thickness of the 
+case and shutter does not exceed Lg by more than L 17 . 
+
+The shutter shall have one edge against which the shutter opener of the drive can push to open the shutter. When the shutter 
+is closed, this edge shall be 
+
++ 0,0 mm 
+
+L~ 6 = 79,0 mm Arj 
+
+36 - 03 mm 
+
+from plane Y. A movement of the edge to 
+
+Ly, - 55,5 mm min. 
+shall be sufficient to open the windows to the minimum size specified in 10.3.8. It shall be possible to move the edge to 
+
+L$ % = 54,7 mm max. 
+without exceeding the shutter opening force as specified in 10.4.5, while leaving the minimum size window open. 
+
+
+
+12 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+10.3.9 Path for shutter opener and shutter sensor notch (see figure 9) 
+
+The profile on the top of the case provides a path over which the shutter opener of the drive can travel. 
+The path shall run from 
+
+£39 = 81,0 mm ± 0,3 mm 
+to 
+
++ 0,3 mm 
+
+L 40 = 57,5 mm 
+
+w -0.0 mm 
+
+at a distance 
+
+L 41 =74,0mm±0,3mm 
+from plane X. 
+The lead-in edge at £39 shall be a ramp to the top of the case with an angle 
+
+A x =45° ±5° 
+The path shall end in a notch with a width at the bottom from L 40 to 
+
+L 42 = 54,7 mm max. 
+and a depth 
+
+L 43 = 3,3 mm ± 0,2 mm 
+below L 41 . The lead-in edge at the right-hand side of the notch shall be rounded with a radius 
+
+R 9 = 1,2 mm ±0,2 mm 
+
+When the shutter edge is moved to L il , a length of at least (L 40 - L^-j) of the notch shall be exposed. This enables a drive to 
+confirm that the shutter is fully open. 
+
+10.3.10 Mis-insert protections (see figure 10) 
+
+The profile on the top of the case shall have two features to prevent the case from being inserted in the drive upside-down. 
+
+The first feature is a notch intended to capture and block the shutter opener of the drive if the case is loaded upside-down. It 
+shall have a width from 
+
+L 44 = 4,6 mm ± 0,2 mm 
+
+to 
+
+L 45 = 1,0 mm ± 0,2 mm 
+
+and a depth 
+
+L 46 = 3,1 mm ± 0,2 mm 
+below the top of the case. 
+The right-hand edge of the notch shall be 
+
+L 47 = 75,4 mm ± 0,2 mm 
+above plane X. 
+The corners of this notch shall be rounded off by radii 
+
+R l0 = 0,3 mm max. 
+
+/? n = 0,5 mm ± 0,3 mm 
+
+13 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+The second feature is a chamfer and a tooth. If the case is correctly loaded, the chamfer pushes aside a possible pawl in the 
+side of the sledge of the drive. If the case is loaded upside-down, the pawl catches the tooth and prevents further insertion of 
+the case. The tooth is formed by the ramp specified in 10.3.10. The chamfer shall have an angle 
+
+A 2 = 45°±2° 
+
+and a height 
+
+L 48 = 5,0 mm ± 0,3 mm 
+
+103.11 Gripper slots (see figure 11) 
+The case shall have two symmetrical gripper slots. The slot shall have a depth of 
+
+♦ 03 mm 
+Lao — 2,5 mm 
+* y - 0,0 mm 
+
+from the edge of the case and a width of 
+
++ 03 mm 
+
+L< n = 4,0 mm 
+
+50 -0,0mm 
+
+The lower edge of a slot shall be 
+
+«.„ « +0.0 mm 
+
+Lr, =23,0 mm 
+
+31 -03 mm 
+
+above the bottom of the case. 
+
+The comers of the gripper slots shall be rounded off by radii 
+
+R l2 ~ 0,4 mm ± 0,2 mm 
+
+R n = 0,5 mm ± 0,2 mm 
+
+10.3.12 Label area (see figure 12) 
+
+The case shall have one connected label area on Side A, the bottom and Side B, with dimensions 
+
+L 52 = 4,0 mm ± 0,3 mm 
+
+L 33 = 76,0 mm ± 0,3 mm 
+
+L 54 = 30,0 mm ± 0,2 mm 
+
+and 
+
+L S5 = 1,2 mm ± 0,2 mm 
+
+The four corners of the area shall be rounded with a radius 
+
+R , 4 = 2,0 mm max. 
+When there is no label, the area shall be recessed by 
+
+L 56 = 0,2 mm min. on all Uiree sides. 
+
+10.4 Mechanical characteristics 
+
+All requirements of this clause shall be met in the operating environment. 
+
+10.4.1 Material 
+
+The case shall be constructed from any suitable materials such that it meets the requirements of this International Standard. 
+
+14 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+10.4.2 Mass 
+
+The mass of the case without the optical disk shall not exceed 50 g. 
+
+10.4 3 Edge distortion 
+
+The cartridge shall meet the requirement of the edge distortion test defined in annex A. 
+
+10.4.4 Compliance 
+
+The cartridge shall meet the requirement of the compliance (flexibility) test defined in annex B. The requirement guarantees 
+that a cartridge can be constrained in the proper plane of operation within the drive. 
+
+10.4.5 Shutter opening force 
+
+The spring force on the shutter shall be such that the force required to open the shutter does not exceed 1,5 N. It shall be 
+sufficiently strong to close a free-sliding shutter, irrespective of the orientation of the case. 
+
+
+
+15 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Shutter 
+
+
+
+Side B 
+
+
+
+Label area 
+figure 12 
+
+
+
+
+Detent for autoloading 
+figure 5 
+
+
+
+Reference surface S4 
+figure 4 
+
+Alignment hole 
+figure 3 
+
+
+
+Reference surface S2 
+
+
+
+figure 4 
+
+
+
+Side A 
+
+
+
+Label area 
+figure 12 
+
+
+
+Shutter sensor notch 
+figure 9 
+
+Slot for shutter opener 
+figure 9 
+
+
+
+
+Spindle and head windows 
+figure 7 
+
+Figure 2 - General view of the case 
+
+
+
+Mis-insert protection 
+figure 10 
+
+Detent for autoloading 
+figure 5 
+
+Reference surface S3 
+figure 4 
+
+
+
+Gripper slot 
+figure 11 
+
+Location hole 
+figure 3 
+Reference surface SI 
+
+figure 4 
+FA1 and FA2 
+figure 6 
+
+
+
+16 
+
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+*3 
+
+t ^ 
+
+
+-z - 
+
+
+
+
+
+
+,1 
+
+
+
+
+
+L H 
+
+
+
+/?4 
+
+
+
+,R A 
+
+
+
+I. 
+
+
+
+-p 
+
+
+
+SI 
+
+
+
+-z 
+
+
+
+E5J 
+
+
+
+T TT< ■■ •■ t i ■ ■ "rt 
+
+
+
+""""'■' mill 
+
+
+
+
+
+
+T J / / L , 
+
+
+
+sssssiJ 
+
+
+
+Section A - A 
+
+
+
+i, Li) 
+
+
+
+Figure 3 - Overall dimensions, viewed on Side A 
+
+
+
+17 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+03 
+
+
+
+\ 
+
+
+
+5 
+
+
+
+•14 
+
+
+
+l\ 
+
+
+
+
+
+
+lb- 
+
+
+
+u 
+
+
+
+*- ■-* M5 
+
+
+
+M\ 
+
+5 
+
+
+
+>j 
+
+
+
+£>3 
+
+
+
+c 
+
+
+
+i> 
+
+
+
+-x- 
+
+
+
+/- 
+
+
+
+Di 
+
+
+
+/ 
+
+
+
+i-n 
+
+
+
+A 
+
+
+
+\ 
+
+
+
+D^ 
+
+
+
+-Y- 
+
+
+
+I- l-z 
+
+
+
+Figure 4 - Reference surfaces on Side A 
+
+
+
+18 
+
+
+
+-18 
+
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+
+Figure 5 - Detents, seen on Side A 
+
+
+
+19 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+
+
+
+Section B - B 
+writing inhibited 
+
+
+
+Section B - B Section B - B 
+
+writing permitted high reflectance, fully embossed 
+
+
+
+Figure 6 - Functional Areas FA1 and FA2, seen on Side A and in cross-section 
+
+
+
+20 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+
+Figure 7 - Spindle and head windows on Side A (bottom) and B (top) of the 
+
+
+
+case without shutter 
+
+
+
+21 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+& 
+
+
+
+L Mt 
+
+
+
+-37 
+
+
+
+W 
+
+
+
+
+1\ 
+
+
+
+Q 
+
+
+
+-Y 
+
+
+
+X- 
+
+
+
+3 
+
+
+
+L 
+
+
+
+38 
+
+
+
+\Jr 
+
+
+
+
+■0- 
+
+
+
+~3\ 
+
+
+
+c 
+
+
+
+-Y- 
+
+
+
+-X 
+
+
+
+22 
+
+
+
+Figure 8 - Shutter in just open position (top) and maximum open position (bottom). The dashed line indicates the 
+
+position of the shutter edge when the shutter is closed. 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+
+Figure 9 - Path for the shutter opener, seen from Side B without shutter 
+
+
+
+23 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+
+
+Figure 10 • Mis-insert protections, seen from Side B of the case without shutter 
+
+
+
+24 
+
+
+
+-z - 
+
+
+
+
+
+
+^50 
+
+
+
+£> 
+
+
+
+L49 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+UN 
+C 
+
+
+
+-o 
+
+
+
+-Y - 
+
+
+
+c 
+
+
+
+-x- 
+
+
+
+^51 
+
+
+
+
+Figure 11 - Gripper slots seen from Side B of the case without shutter 
+
+
+
+25 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+^55 
+
+
+
+■&■ 
+
+
+
+Lst, 
+
+
+
+^ ^ 
+
+
+- ' — ■ ' 
+
+
+3 L 
+
+i 
+
+
+
+c 
+
+
+
+7 
+
+
+
+R 
+
+
+
+M 
+
+
+
+L 5 2- 
+
+
+
+ffl 
+
+
+
+-53 ■ 
+
+
+
+Y- 
+
+
+
+
+Figure 12 • Label area 
+
+
+
+26 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+11 Dimensional, mechanical and physical characteristics of the disk 
+
+11.1 General description of the disk 
+
+The disk shall consist of a circular substrate with a hub on one side and a recording layer coated on the other side. The 
+recording layer can be protected from environmental influences by a protective layer. The Information Zone of the substrate 
+is transparent to allow an optical beam to focus on the recording layer through the substrate. The circular hub is in the centre 
+of the disk on the side opposite to the recording layer. The hub interacts with the spindle of the drive, and provides the radial 
+centring of the disk and the clamping force. 
+
+1 1.2 Reference axis and plane of the disk 
+
+Some dimensions of the hub are referred to a disk reference plane P. The disk reference plane P is defined by the perfectly 
+flat annular surface of an ideal spindle onto which the clamping zone of the disk is clamped, and which is normal to the axis 
+of rotation of this spindle. This axis A passes through the centre of the centre hole of the hub, and is normal to plane P. 
+
+
+
+
+Figure 13 - Hub dimensions and clamping zone 
+
+
+
+27 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+113 Dimensions of the disk (see figure 13) 
+
+The dimensions of the disk shall be measured in the test environment. The dimensions of the disk in an operating 
+environment can be estimated from the dimensions specified in this clause. The outer diameter of the disk shall be 
+
++ 0,0 mm 
+
+86,0 mm 
+
+-0,5 mm 
+
+Excluding axial deflection (see 1 1.4.5), the total thickness of the disk without the hub shall not exceed 1,4 mm. 
+The diameter of the centre hole of the disk without the hub shall be 
+D 4 = 6,0 mm min. 
+
+11.3.1 Hub dimensions (see figure 13) 
+The diameter of the centre hole of the hub shall be 
+
++ 0,012 mm 
+
+D 5 =4,004 mm nnnn 
+
+3 - 0,000mm 
+
+The outer diameter of the hub shall be 
+
++ 0,0mm 
+
+D* ss 15,0 mm 
+
+6 - 0,2 mm 
+
+The height of the hub shall be 
+
++ 0,0 mm 
+A, = 1,2 mm 
+
+1 -0,2nun 
+
+The position of the top of the magnetizable surface shall be 
+
++ 0,00 mm 
+^= 1,20mm oi5mm 
+
+The height of the centring hole above reference plane P shall be 
+
+h 3 = 0,8 mm min. 
+The centring length at a diameter D 5 shall be 
+
+h 4 = 0,15 mm min. 
+The lead-in edge of the centre hole shall have chamfer c 1 of 45° by 0,2 mm ± 0,1 mm or shall be rounded off by radius 
+
+R 15 = 0,2 mm ± 0,1 mm 
+The outer edge of the centre hole shall have a chamfer c 2 of 45° by 0,4 mm ± 0,1 mm or shall be rounded off by radius 
+
+R l6 = 0,4 mm ± 0,1 mm 
+The hub shall have any suitable magnetizable material for clamping the disk. Its dimensions shall be 
+
+D 9 = 13,0 mm min. 
+
+D l0 = 6,0 mm max. 
+and its adsorbent force measured by the test device specified in annex K shall be in the range of 3,0 N to 4,5 N. 
+
+11.3.2 Clamping zone (see figure 13) 
+
+The outer diameter of the clamping zone shall be 
+
+D 7 = 21,0mm min. 
+28 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+The inner diameter of the clamping zone shall be 
+Z) g = 16,0 mm max. 
+
+11.4 Mechanical characteristics 
+
+All requirements in this clause shall be met in the operating environment. 
+
+11.4.1 Material 
+
+The disk shall be made from any suitable materials such that it meets the requirements of this International Standard. The 
+only material properties specified by this International Standard are the magnetic properties of the magnetizable zone in the 
+hub (see 11.3.1) and the optical properties of the substrate in the Information Zone (see 11.5). 
+
+11.4.2 Mass 
+
+The mass of the disk shall not exceed 24,0 g. 
+
+11.4.3 Moment of inertia 
+
+The moment of inertia of the disk relative to axis A shall not exceed 0,020 gm 2 . 
+
+11.4.4 Imbalance 
+
+The imbalance of the disk relative to axis A shall not exceed 0,006 gm. 
+
+11.4.5 Axial deflection 
+
+The axial deflection of the disk is measured as the axial deviation of the recording layer. Thus it comprises the tolerances on 
+the thickness of the substrate, on its index of refraction and the deviation of the entrance surface from plane P. The nominal 
+position of the recording layer with respect to reference plane P is determined by the nominal thickness of the substrate. 
+
+The deflection of any point of the recording layer in the Information Zone from its nominal position, in a direction normal to 
+plane P, shall not exceed ± 0,22 mm for rotational frequencies of the disk up to 30 Hz. 
+
+11.4.6 Axial acceleration 
+
+The maximum allowed tracking error e miX (see annex C) shall not exceed ± 1,0 um, measured using the Reference Servo for 
+axial tracking of the recording layer. The rotational frequency of the disk shall be 30,0 Hz ± 0,3 Hz. The stationary part of 
+the motor is assumed to be motionless (no external disturbances). The measurement shall be made using a servo with the 
+transfer function 
+
+
+
+3 \i(o) 
+
+
+
+2 1 + 
+
+
+
+3ico 
+
+
+
+// s (ia>) = ^xj^|x — £&- 
+
+3co 
+
+
+
+where 
+
+(o = 2n/ 
+
+ca / 2rc = 870 Hz 
+
+or any other servo with I1+//1 within 20% of ll+// s l in the bandwidth of 30 Hz to 100 kHz. Thus, the disk shall not require an 
+axial acceleration of more than 10 m/s 2 at low frequencies from the servo motor of the Reference Servo. 
+
+29 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+11.4.7 Radial runout 
+
+
+
+The radial runout of the tracks in the recording layer in the Information Zone is measured as seen by the optical head of the 
+Reference Drive. Thus it includes the distance between the axis of rotation of the spindle and reference axis A, the 
+tolerances on the dimensions between axis A and the location of the track, and effects of non-uniformities in the index of 
+refraction. 
+
+The runout, defined as the difference between the maximum and minimum distance of the centre of any track from the axis 
+of rotation, measured along a fixed radial line over one revolution of the disk, shall not exceed 50 um at a rotational 
+frequency of the disk of 30,0 Hz ± 0,3 Hz. 
+
+11.4.8 Radial acceleration 
+
+The maximum allowed tracking error e mM (see annex C) shall not exceed ± 0,15 um, measured using the Reference Servo 
+for radial tracking of the tracks. The rotational frequency of the disk shall be 30,0 Hz ± 0,3 Hz. The stationary part of the 
+motor is assumed to be motionless (no external disturbances). The measurement shall be made using a servo with the 
+transfer function 
+
+
+
+v2 1 + 
+
+
+
+3i(0 
+
+
+
+3 [ia) n 'to 
+3<o 
+where 
+to = 2tt/ 
+(d / 2n=1230 Hz 
+
+i= vQ 
+
+or any other servo with I1+//1 within 20% of I1+//J in the bandwidth of 30 Hz to 100 kHz. Thus, the disk shall not require a 
+radial acceleration of more than 3 m/s 2 at low frequencies from the servo motor of the Reference Servo. 
+
+11.4.9 Tilt 
+
+The tilt is the angle which the normal to the entrance surface, averaged over an area of 1 mm in diameter, makes with the 
+normal to plane P. It shall not exceed 5 mrad in the Information Zone. 
+
+11.5 Optical characteristics 
+
+11.5.1 Index of refraction 
+
+The index of refraction of the substrate in the Information Zone shall be within the range from 1,46 to 1,60. 
+
+11.5.2 Thickness of the substrate 
+
+The thickness of the substrate, from the entrance surface to the recording layer, in the Information Zone shall be 
+
+0,509 x^—x " +0,265 mm± 0,050 mm 
+n 2 -l n 2 +0,593 
+
+where n is the index of refraction. 
+
+
+
+30 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+11.5.3 Birefringence 
+
+The effect of the birefringence of the substrate is included in the measurement of the imbalance of the signals in Channel 2 
+of the Reference Drive (see 25.2). 
+
+11.5.4 Reflectance 
+
+The double-pass optical transmission of the substrate and the reflectance of the recording layer are measured together as the 
+reflectance R of the disk. 
+
+The value of/? at the standard wavelength specified in 9.2 shall lie within the range from 0,14 to 0,29 for partially embossed 
+or fully rewritable disks and for low reflectance fully embossed disks. The value of R shall be not less than 0,50 for high 
+reflectance fully embossed disks (see annex R). 
+
+The nominal value of/? shall be specified in bytes 3 and 19 of the Control Data (see annex F). 
+
+The actual value /?m shall be measured with the focussed beam and wavelength of the Reference Drive. It shall be measured 
+in unrecorded, ungrooved areas, e.g. an ungrooved part of the Initial Zone (see 17.2.1) or the ODF of a sector (see 15.7). 
+
+The value R m shall not diverge from R by more than 0,12 R, whilst remaining within the appropriate range specified above 
+for R (see annex R). 
+
+12 Interface between cartridge and drive 
+
+12.1 Clamping method 
+
+When the cartridge is inserted into the drive, the shutter of the case is opened and the drive spindle engages the disk. The 
+disk is held against the spindle by an axial clamping force, provided by the magnetizable material in the hub (see annex K) 
+and the magnets in the spindle. The radial positioning of the disk is provided by the centring of the axis of the spindle in the 
+centre hole of the hub. A cup-shaped turntable of the spindle shall support the disk in its clamping zone, determining the 
+axial position of the disk in the case. 
+
+12.2 Clamping force 
+
+The clamping force exerted by the spindle on the hub shall not exceed 5 N. 
+
+12.3 Capture cylinder (see figure 14) 
+
+The capture cylinder is defined as the volume in which the spindle can expect the centre of the hole in the hub to be, just 
+prior to capture, and with the cartridge constrained as in 10.4.4. The centre of the hole is defined as the point on axis A at a 
+distance h l below plane P (see 11.3.1 and figure 13). 
+
+The size of the cylinder defines the permissible play of the disk inside its cavity in the case. The cylinder is referred to 
+perfectly located and perfectly sized alignment and location pins in the drive; it includes the tolerances of those dimensions 
+of the case and the disk which are between the two pins mentioned and the centre of the hub. 
+
+The bottom of the cylinder is parallel to plane Z, and shall be located a distance 
+
+L 57 = 0,7 mm min. 
+above plane Z. The top of the cylinder is located a distance 
+
+L 58 = 2,3 mm max. 
+above plane Z. The radius of the cylinder shall be 
+
+/?i 7 = 1,4 mm max. 
+
+31 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+and its centre shall be given by the nominal values of Z^ 9 and Ly± in the drive. 
+
+12.4 Disk position in operating condition (see figure 14) 
+When the disk is in the dperating condition within the drive, the position of plane P of the disk shall be 
+
+L 59 = 2,4 mm ± 0,1 mm 
+above plane Z of the case, and the axis of rotation shall be within a circle with a radius 
+
+R x% = 0,1 mm max. 
+
+and a centre given by the nominal values of L^ and L^ 2 - 
+
+The torque to be exerted on the disk in the operating condition in order to maintain a rotational frequency of 30 Hz shall not 
+exceed 0,01 Nm. 
+
+
+
+32 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+-59 
+
+
+
+£ 
+
+
+
+*-57 *-58 
+
+
+
+-z- 
+
+
+
+
+-59 
+
+
+
+-P- 
+
+
+
+r 
+i 
+
+
+
+
+
+
+-57 ^58 
+
+
+
+-z- 
+
+
+
+Detail C 
+
+
+
+Figure 14 • Capture cylinder and disk position in operating condition 
+
+
+
+33 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Section 3 - Format of information 
+
+13 Track geometry 
+
+13.1 Track shape 
+
+The Information Zone shall contain tracks intended for the Continuous Composite Servo tracking method (CCS). 
+
+A track consists of a groove-land-groove combination, where each groove is shared with a neighbouring track. A groove is a 
+trench-like feature, the bottom of which is located nearer to the entrance surface than the land. The centre of the track, i.e. 
+where the recording is made, is the centre of the land. The grooves shall be continuous, except for ODFs. The shape of the 
+groove is determined by the requirements in clause 21. 
+
+Each track shall form a 360° turn of a continuous spiral. 
+
+13.2 Direction of rotation 
+
+The disk shall rotate counter-clockwise as viewed from the optical head. The tracks shall then spiral outward. 
+
+13.3 Track pitch 
+
+The Track Pitch is the distance between adjacent track centrelines, measured in a radial direction. It shall be 1,60 urn ± 0,10 
+urn. 
+
+The width of a band of 10 000 tracks shall be 16,00 mm ± 0,10 mm. 
+
+13.4 Track number 
+
+Each track shall be identified by a track number. Track shall be the first track of the Data Zone. It shall be located at a 
+radius of 24,00 mm ± 0,10 mm. 
+
+The track numbers of tracks located at radii larger than that of track shall be increased by 1 for each track. 
+
+The track numbers of tracks located at radii smaller than that of track shall be negative, and decrease by 1 for each track. 
+Their value is given in the ID field in TWO's complement, thus track -1 is indicated by (FFFF). 
+
+14 Track format 
+
+14.1 Track layout 
+
+On each track there shall be 25 sectors. Each sector shall comprise 725 bytes. A byte is represented on the disk by 16 
+Channel bits. Hence, the length of one Channel bit is determined by the requirement that there are 25 x 725 x 16 = 290 000 
+Channel bits on a track. 
+
+The sectors shall be equally spaced over a track in such a way that the distance between the first Channel bit of a sector and 
+the first Channel bit of the next sector shall be 1 1 600 Channel bits ± 3 Channel bits. 
+
+At the rotational frequency of 30 Hz, the period T of a Channel bit equals 
+
+
+
+10 9 
+
+
+
+30x290000 
+
+
+
+ns = 115 ns 
+
+
+
+34 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 
+
+
+
+1992 
+
+
+
+14.2 Radial alignment 
+
+The Headers of the sectors shall be radially aligned in such a way that the angular distance between the first Channel bit of 
+sectors in adjacent tracks shall be less than ± 1 Channel bit. 
+
+14.3 Sector Number 
+
+The sectors on a track shall be numbered consecutively from to 24. All sectors with the same Sector Number shall be 
+radially aligned. 
+
+15 Sector format 
+
+15.1 Sector layout 
+
+A sector shall comprise a Header, an Offset Detection Field (ODF) and a Recording field in which 512 user data bytes can 
+be recorded. The Header of each sector shall be embossed. The Recording field can be empty, user-written or embossed. The 
+length of the sector shall be 725 bytes nominally. Tolerances allowed by 14.1 are taken up by the Buffer, i.e. the last field of 
+the sector. The length of the Header field is 52 bytes, the length of the ODF is 1 byte and the length of the Recording field is 
+672 bytes. 
+
+The layout of a sector is shown in figure 15. The numbers indicate the length of a field in bytes. 
+
+
+
+Track 
+No. 
+
+
+ID Sector 
+No. No. 
+
+
+CRC 
+
+
+\ 2 
+
+
+1 
+
+
+2 
+
+
+
+
+
+
+
+A 
+
+
+
+
+
+
+A 
+
+
+
+
+
+
+A 
+
+
+
+
+P 
+
+
+
+
+
+
+
+
+S 
+
+
+
+
+
+
+B 
+U 
+
+F 
+
+
+SM 
+
+
+VFOi 
+
+
+
+
+IDi 
+
+
+VF0 2 
+
+
+
+
+ID 2 
+
+
+VF0 2 
+
+
+
+
+ID 3 
+
+
+
+
+ODF 
+
+
+GAP 
+
+
+VF0 3 
+
+
+y 
+
+
+Data Field 
+
+
+P 
+
+
+
+
+
+
+M 
+
+
+
+
+
+
+M 
+
+
+
+
+
+
+M 
+
+
+
+
+A 
+
+
+
+
+
+
+
+
+n 
+
+
+
+
+A 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c 
+
+
+
+
+
+
+
+
+5 12 1 5 8 1 5 8 1 5 1 
+
+
+1 
+
+
+5 12 
+
+
+3 639 
+
+
+1 
+
+
+12 
+
+
+
+
+- Header 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ntfuuruiny nt?ru 
+
+
+
+
+
+
+52 
+
+
+
+
+
+
+672 
+
+
+
+
+
+
+
+
+Sector 
+725 
+
+
+
+
+
+
+
+
+j^. 
+
+
+^ — 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 15 - Sector format 
+
+
+
+15.2 Sector Mark 
+
+
+
+The Sector Mark shall consist of an embossed pattern that does not occur in RLL (2,7) code (see 16), and is intended to 
+enable the drive to identify the start of the sector without recourse to a phase-locked loop. 
+
+The Sector Mark shall have a length of 80 Channel bits and shall consist of embossed, continuous long marks of different 
+length followed by a lead-in to the VFO! field. The timing pattern of the Sector Mark shall be as shown in figure 16, where 
+Tis the period of one Channel bit. The signal obtained from a mark is less than a signal obtained from no mark. The lead-in 
+shall have the Channel bit pattern 0000010010. 
+
+
+
+35 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 
+
+
+
+1992 
+
+
+
+
+
+. 10T 
+
+
+l 6T . 
+
+
+■ 6T I 
+
+
+* 14T 
+
+
+« 6T i 
+
+
+• 6T . 
+
+
+• 6T . 
+
+
+■ 6T . 
+
+
+0000010010 
+
+, 10T „ A . 
+
+
+mark 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mark 
+
+
+
+
+
+
+
+
+
+
+i 
+IT 
+
+
+J 
+
+
+
+
+
+
+
+
+Long mark pattern 
+
+
+
+
+
+
+
+
+
+
+
+
+Sector Mark 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 16 - Pattern of the Sector Mark 
+
+
+
+15.3 VFOfields 
+
+
+
+There shall one embossed VFOj field and two embossed VF0 2 fields in the Header and one VF0 3 field in the Recording 
+field to give the voltage-frequency-oscillator of the phase-locked loop of the read channel Channel bit synchronization. The 
+information in VFO, and VF0 3 shall be identical in pattern and have the same length of 192 Channel bits. VF0 2 s * ia ^' have 
+a length of 128 Channel bits. The start of VP0 2 depends on the contents of the preceding ID field because of the closure 
+required for the RLL (2,7) recording code. Therefore, VF0 2 shall be the appropriate one of two patterns differing only in the 
+first Channel bit. 
+
+The continuous Channel bit pattern for the VFO fields shall be 
+
+VPOi, 192 Channel bits: 0100100100100....10010 
+
+VF0 2 , 128 Channel bits: 100100100100.... 10010 
+
+VF0 2 , 128 Channel bits: 000100100100.... 10010 
+
+VF0 3 , 192 Channel bits: 0100100100100....10010. 
+
+15.4 Address Mark (AM) 
+
+The Address Mark shall consist of an embossed pattern that does not occur in RLL (2,7) code. The field is intended to give 
+the drive byte synchronization for the following ID field. It shall have a length of 16 Channel bits with the following pattern: 
+
+0100 1000 0000 0100. 
+
+15.5 ID fields 
+
+The three ID fields shall each contain the address of the sector, i.e. the track number and the sector number of the sector, and 
+CRC bytes. Each field shall consist of five bytes with the following embossed contents: 
+
+
+
+36 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090: 1992 
+
+1st and 2nd bytes MSB, LSB of the track number 
+
+3rd byte 
+
+bits 7 and 6 00 shall indicate the ID t field 
+
+01 shall indicate the ID 2 field 
+
+10 shall indicate the ID 3 field 
+
+bit 5 shall be set to ZERO 
+
+bits 4 to sector number in binary notation 
+
+4th and 5th bytes CRC field containing the CRC bits computed over the first three bytes according 
+
+to annex D. 
+
+15.6 Postambles (PA) 
+
+The Postamble field shall be equal in length 16 Channel bits. There shall be a Postamble following ID 3 and a Postamble 
+following the Data field. A Postamble allows closure of the last byte of the preceding CRC or Data field as required by ine 
+RLL (2,7) recording code (see 16). The Postamble is necessary to be able to start the following ODF or Buffer field in a 
+predictable manner. 
+
+15.7 Offset Detection Field (ODF) 
+
+The ODF shall have a length of 16 Channel bits and contain neither grooves nor embossed data. It is intended to enable the 
+drive to correct for offsets in the radial tracking. 
+
+15.8 Gap 
+
+The Gap shall be a field with a nominal length of 80 Channel bits. Its contents are not specified and shall be ignored on 
+interchange, but shall not be embossed. It is the first field of the Recording field, and gives the drive some time for 
+processing after it has finished reading the header and before it has to erase, write or read the VF0 3 field. 
+
+The length of the Gap has a tolerance of ± 8 Channel bits, i.e. the following VF0 3 field can start between 72 and 88 Channel 
+bits after the ODF. Moreover, it need not start exactly on a Channel bit position as extrapolated from the header. The 
+tolerance is subtracted from the length of the Buffer field, e.g. a Gap length of 85,3 Channel bits results in a reduction of the 
+Buffer length by 5,3 Channel bits. 
+
+15.9 Sync 
+
+The Sync field is intended to allow the drive to obtain byte synchronization for the following Data field. It shall have a 
+length of 48 Channel bits and be recorded with the Channel bit pattern 
+
+0100 0010 0100 0010 0010 0010 0100 0100 1000 0010 0100 1000 
+
+15.10 Data Held 
+
+The Data field is intended for recording user data. It shall have a length of 639 bytes and shall comprise 
+
+512 bytes of user data 
+
+4 bytes the contents of which are not specified by this International Standard and shall be ignored in interchange 
+
+4 bytes of CRC 
+
+80 bytes of ECC and 
+
+39 bytes for resynchronization. 
+
+The disposition of these bytes in the Data field with their five-way interleave and the contents of the last three categories is 
+specified in annex E. 
+
+37 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+15.10.1 User data bytes 
+
+The User data bytes are at the disposal of the user for recording information. 
+
+15.10.2 CRC and ECC bytes 
+
+The Cyclic Redundancy Check bytes and Error Correction Code bytes are used by the error detection and correction system 
+to rectify erroneous data. The ECC is a Reed-Solomon code of degree 16. The bytes shall be as specified in annex E. 
+
+15.10.3 Resync bytes 
+
+The Resync bytes enable a drive to regain byte synchronization after a large defect in the Data field. Their content and 
+location in the Data field shall be as specified in annex E. 
+
+15.11 Buffer Held 
+
+The Buffer field shall have a length of 192 Channel bits ± 48 Channel bits and shall not contain any data. The tolerance is 
+needed for four reasons. Firstly, the tolerance on the header-to-header distance as specified in 14.1. Secondly, the tolerance 
+in the start of the VF0 3 field as specified in 15.8. Thirdly, the actual length of the written data, as determined by the runout 
+of the track and the speed variations of the disk during writing of the data. Fourthly, to ensure that all data written 
+previously, the length of which is subject to the above tolerances, has been erased. 
+
+16 Recording code 
+
+The 8-bit bytes in the three Address fields and in the Data field, except for the Resync bytes, shall be converted to Channel 
+bits on the disk according to table 2. All other fields in a sector have already been defined in terms of Channel bits. Each 
+ONE Channel bit shall be recorded as a mark produced by a write pulse of the appropriate power and width. 
+
+The recording code used to record all data in the Information Zone on the disk shall be the run-length limited code known as 
+RLL (2,7). 
+
+Table 2 - Conversion of input bits to Channel-bits 
+
+
+
+Input bits 
+
+
+Channel-bits 
+
+
+10 
+
+
+0100 
+
+
+010 
+
+
+100100 
+
+
+0010 
+
+
+00100100 
+
+
+11 
+
+
+1000 
+
+
+011 
+
+
+001000 
+
+
+0011 
+
+
+00001000 
+
+
+000 
+
+
+000100 
+
+
+
+The coding shall start at the first bit of the first byte of the field to be converted. After a Resync field the RLL(2,7) coding 
+shall start again with the first bit of the next byte of input data. 
+
+The RLL(2,7) coding can seldom be terminated at the end of the last input byte in a field, due to leftover bits which cannot 
+be converted on their own. To achieve closure of the recording code, three pad bits are added at the end of the field before 
+converting the data to Channel bits. Table 3 defines the closure for all possible combinations of leftover bits. 
+
+The ID, and ID 2 fields shall lead to one of the two patterns for the VF0 2 (table 3a). 
+
+The bytes in the Data field preceding a Resync field shall lead to the Resync pattern (table 3b). 
+
+
+
+38 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+With the exception of providing a suitable closure pattern for the ID 3 field and the last byte in the Data field, the contents of 
+the PA field following the ID 3 field and the last byte in the Data field, respectively, are not specified by this International 
+Standard and shall be ignored in interchange. 
+
+
+
+Table 3a 
+
+
+- Transition 
+
+
+from the end of the W l and D) 2 Held to the VF0 2 field 
+
+
+Leftover 
+
+
+
+
+Pad 
+
+
+Channel bits of closure pattern, leading 
+
+
+input bits 
+
+
+
+
+bits 
+
+
+to one of the two VFO2 patterns 
+
+
+
+
+none 
+
+
+010 
+
+
+
+
+100100100100100100 10010 
+
+
+
+
+
+
+
+010 
+
+
+00 
+
+
+100100100100100100 10010 
+
+
+
+
+1 
+
+
+010 
+
+
+01 
+
+
+000100100100100100 10010 
+
+
+
+
+00 
+
+
+010 
+
+
+0001 
+
+
+000100100100100100 10010 
+
+
+
+
+01 
+
+
+010 
+
+
+1001 
+
+
+000100100100100100 10010 
+
+
+
+
+001 
+
+
+010 
+
+
+001001 
+
+
+000100100100100100 10010 
+
+
+end of the 
+ID field 
+
+
+
+
+
+
+end of the 
+ID field 
+
+► 
+
+
+
+
+► 
+
+
+
+
+^ VFO2 field w 
+
+
+
+Table 3b - Transition from the byte in the Data field preceding a Resync to the Resync field 
+
+
+
+Leftover 
+
+
+
+
+Pad 
+
+
+Channel bits of closure pattern, leading 
+
+
+
+
+input bits 
+
+
+
+
+bits 
+
+
+to the Resync pattern 
+
+
+
+
+
+
+none 
+
+
+011 
+
+
+
+
+0010000000100100 
+
+
+
+
+
+
+
+
+
+011 
+
+
+00 
+
+
+0010000000100100 
+
+
+
+
+
+
+1 
+
+
+011 
+
+
+01 
+
+
+0010000000100100 
+
+
+
+
+
+
+00 
+
+
+Oil 
+
+
+0001 
+
+
+0010000000100100 
+
+
+
+
+
+
+01 
+
+
+Oil 
+
+
+1001 
+
+
+0010000000100100 
+
+
+
+
+
+
+001 
+
+
+Oil 
+
+
+001001 
+
+
+0010000000100100 
+
+
+
+
+end of the 
+field 
+
+
+
+
+
+
+end of the 
+field 
+
+! ► 
+
+
+
+
+
+
+
+
+^ Resync 
+
+
+w 
+
+
+
+
+► 
+
+
+
+
+
+
+
+
+
+17 Format of the Information Zone 
+
+17.1 General description of the Information Zone 
+
+The Information Zone shall contains all information on the disk relevant for data interchange. The information comprises 
+embossed tracking provisions, embossed headers, embossed data and, possibly, user-written data. In this clause, the term 
+'data' is reserved for the content of the data field of a sector, which, in general, is transferred to the host. Clause 17 defines 
+the layout of the information; the characteristics of signals obtained from this information are specified in section 4 and 6. 
+
+If a disk has no Rewritable Zone, 18.3 and 19 are not part of the conformance requirements. If a disk has no Embossed 
+Zone, 18.4 is not part of the conformance requirements. 
+
+17.2 Division of the Information Zone 
+
+The Information Zone is divided in three parts: a Lead-in Zone, a Data Zone and a Lead-out Zone. The Data Zone is 
+intended for recording user data. The Lead-in and Lead-out Zones contain control information for the drive and zones for 
+performing tests by the manufacturer or drive. 
+
+
+
+39 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Table 4 - Layout of the Information Zone; the radii of a zone in the table are the nominal values of the radius of the 
+centre of the first track and of the radius of the centre of the last track of the zone 
+
+
+
+
+
+Track number 
+
+
+Radius (mm) 
+
+
+
+
+from 
+
+
+to 
+
+
+from 
+
+
+to 
+
+
+Lead-in Zone 
+
+
+
+
+
+
+
+
+
+
+Initial Zone 
+
+
+— 
+
+
+— 
+
+
+22,60 
+
+
+22,90 
+
+
+Acquire Zone 
+
+
+
+
+
+
+
+
+
+
+Lead-in tracks 
+
+
+-688 
+
+
+-297 
+
+
+22,90 
+
+
+23,53 
+
+
+Focus tracks 
+
+
+-296 
+
+
+-293 
+
+
+
+
+
+
+Inner Test Zone 
+
+
+
+
+
+
+
+
+
+
+for manufacturer 
+
+
+-292 
+
+
+-155 
+
+
+23,53 
+
+
+23,75 
+
+
+for drives 
+
+
+-154 
+
+
+-17 
+
+
+23,75 
+
+
+23,97 
+
+
+Inner Control Zone 
+
+
+-16 
+
+
+-1 
+
+
+23,97 
+
+
+24,00 
+
+
+Data Zone 
+
+
+
+
+
+9999 
+
+
+24,00 
+
+
+40,00 
+
+
+Lead-out Zone 
+
+
+
+
+
+
+
+
+
+
+Outer Control Zone 
+
+
+10000 
+
+
+10015 
+
+
+40,00 
+
+
+40,02 
+
+
+Outer Test Zone 
+
+
+
+
+
+
+
+
+
+
+for drives 
+
+
+10016 
+
+
+10153 
+
+
+40,02 
+
+
+40,24 
+
+
+for manufacturer 
+
+
+10154 
+
+
+10291 
+
+
+40,24 
+
+
+40,46 
+
+
+Buffer Zone 
+
+
+10292 
+
+
+10624 
+
+
+40.46 
+
+
+41.00 
+
+
+
+The division of the Information Zone shall be as given in table 4. The tolerance on the inner radius of the Data Zone is 
+specified in 13.4; the tolerance on other radii is determined by the tolerance on the track pitch as specified in 13.3. 
+
+17.2.1 Initial Zone 
+
+The Initial Zone is intended to enable a drive to lock its axial tracking (focussing) servo. It shall have either a flat reflective 
+layer, or such a layer with uninterrupted grooves over complete tracks as specified in clauses 20 and 21, or such tracks with 
+embossed Headers and ODFs, or any combination of the above. 
+
+17.2.2 Acquire Zone 
+
+The Acquire Zone shall consist of two parts, each containing embossed grooves, Headers and ODFs. The first part shall be a 
+band of Lead-in tracks with no data in the Recording fields of the sectors. 
+
+The second part shall be a band of Focus tracks with a repeated Channel bit pattern 100100... embossed in the VF0 3 , SYNC 
+and the 639 bytes of the Data fields of the Recording field of each sector. These tracks are intended to enable a drive to 
+remove focus offsets by maximizing the read signal from the Channel bit pattern. 
+
+
+
+17.2 J Test Zones 
+
+There shall be an Inner Test Zone and an Outer Test Zone. The Test Zones are areas with embossed grooves, Headers, 
+ODFs, and Recording fields. 
+
+The Test Zone for drives is intended for tests to enable a drive to set its write power, and shall not have embossed data in the 
+Recording field of the sector in the case of fully rewritable or partially embossed disks. The tracks used for testing should be 
+chosen from the Zone in a random way, so as to ensure a gradual degradation of the entire Zone due to use. Then each track 
+in this Zone will remain representative for the characteristics of tracks in the Data Zone of the disk. 
+
+The Test Zone for the manufacturer is intended for quality tests by the media manufacturer. The Test Zone for drives shall 
+not be used for such tests, as they can cause serious degradation of the Zone. 
+
+40 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+17.2.4 Control Zones 
+
+There shall be an Inner Control Zone and an Outer Control Zone. Each Control Zone shall contain 15 tracks with embossed 
+grooves and sectors formatted according to clause 15 and one track, called Buffer Track with an embossed groove and 
+Headers according to clause 15. In the Inner Control Zone track-1 is the Buffer Track, in the Outer Control Zone track 10 
+000 is the Buffer Track. The Data fields of all sectors in the two Control Zones, except in the Buffer Tracks, shall be 
+identical, and contain embossed Control data for the drive. The Control data in a Data field is specified in annex F. 
+
+The Recording fields of all sectors of the two Buffer Tracks shall not contain embossed data for fully rewritable and partially 
+embossed disks. For fully embossed disks the user data bytes in the Data field of the Recording field in the sectors in the 
+Buffer Tracks shall be set to (FF). 
+
+17.2.5 Data Zone 
+
+The Data Zone shall contain embossed grooves, Headers and ODFs. The Recording fields can be user-written or contain 
+embossed data, in the format of 15. A Data Zone can contain one contiguous area with embossed Data fields as specified in 
+18.4. The layout of the Data Zone is specified in clause 18. 
+
+17.2.6 Buffer Zone 
+
+The Buffer Zone shall contain embossed grooves, Headers and ODFs. 
+
+18 Format of the Data Zone 
+
+The Data Zone shall contain four Defect Management Areas (DMAs), two at the beginning of the zone and two at the end. 
+The area between the two sets of DMAs may contain a Rewritable Zone or an Embossed Zone or both. The layout of the 
+Data Zone, the Buffer Tracks and the Control Zones is shown in table 5, where the tracks marked R/W are rewritable. 
+
+The Rewritable and Embossed Zones are subdivided into groups as shown in table 6. 
+
+
+
+41 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Table 5 - Layout of the Data Zone, the Control Zones and the Buffer Tracks 
+
+
+
+Track 
+
+
+Fully Rewritable 
+
+
+Partially Embossed 
+
+
+Fully Embossed 
+
+
+-16 
+-2 
+
+-1 
+
+
+2 
+
+3 
+
+9996 
+
+9997 
+
+9999 
+
+10000 
+
+10001 
+10015 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Inner Control 
+Zone 
+
+
+
+
+
+
+Inner Control 
+Zone 
+
+
+
+
+Inner Control 
+Zone 
+
+
+Buffer Track 
+
+
+Buffer Track 
+
+
+
+
+Buffer Track 
+
+
+DMA1(R/W) 
+
+
+DMA1(R/W) 
+
+
+
+
+DMA1 
+
+
+A 
+
+
+A 
+
+
+▲ 
+
+
+DMA2(R/W) 
+
+
+DMA2(R/W) 
+
+
+DMA2 
+
+
+Rewritable Zone (R/W) 
+
+
+Rewritable Zone (R/W) 
+
+
+Embossed Zone 
+
+
+Embossed Zone 
+
+
+DMA3(R/W) 
+
+
+DMA3(R/W) 
+
+
+
+
+DMA3 
+
+
+A 
+
+
+A 
+
+
+DMA4 
+
+
+DMA4(R/W) 
+
+
+DMA4(R/W) 
+
+
+Buffer Track 
+
+
+Buffer Track 
+
+
+Buffer Track 
+
+
+Outer Control 
+Zone 
+
+
+Outer Control 
+Zone 
+
+
+Outer Control 
+Zone 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A see 18.1. 
+
+Table 6 - Partitioning of the Rewritable and Embossed Zones 
+Rewritable Zone Embossed Zone 
+
+
+
+Group 1 R/W Data Sectors 
+
+
+
+Group 1 R/W Spare Sectors 
+
+
+
+Group 2 R/W Data Sectors 
+
+
+
+Group g, R/W Data Sectors 
+
+
+
+Group g, R/W Spare Sectors 
+
+
+
+Remaining R/W Sectors 
+
+
+
+Group 1 Embossed Data Sectors 
+
+
+
+Group 1 Embossed Parity Sectors 
+
+
+
+Group 2 Embossed Data Sectors 
+
+
+
+Group g 2 Embossed Data Sectors 
+
+
+
+Group g 2 Embossed Parity Sectors 
+
+
+
+Remaining Embossed Sectors 
+
+
+
+18.1 Defect Management Areas (DMAs) 
+
+The four Defect Management Areas contain information on the structure of the Data Zone and on the defect management. 
+The length of each DMA shall be 36 sectors. Two of the DMAs, DMA1 and DMA2, are located near the inner diameter of 
+
+42 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+the disk; two others, DMA3 and DMA4, shall be located near the outer diameter of the disk. The boundaries of the DMAs 
+are indicated in table 7. 
+
+Table 7 • Locations of the DMAs 
+
+
+
+
+
+Beginning 
+
+
+Ending 
+
+
+Length 
+
+
+Track No. 
+
+
+Sector No. 
+
+
+Track No. 
+
+
+Sector No. 
+
+
+DMAl 
+
+▲ 
+DMA2 
+DMA3 
+
+A 
+
+DMA4 
+
+
+
+1 
+1 
+
+9997 
+9998 
+9998 
+
+
+
+11 
+14 
+
+
+11 
+14 
+
+
+1 
+
+1 
+
+2 
+
+9998 
+
+9998 
+
+9999 
+
+
+10 
+13 
+
+24 
+10 
+13 
+
+24 
+
+
+36 
+3 
+
+36 
+
+36 
+3 
+
+36 
+
+
+
+The contents of the groups of 3 sectors indicated by A * n tables 5 and 7 are not specified by this International Standard, and 
+shall be ignored in interchange. 
+
+Each DMA shall contain a Disk Definition Sector (DDS) and may contain a Primary Defect List (PDL) or a Secondary 
+Defect List (SDL) or both. The contents of the four PDLs, when recorded, shall be identical and the contents of the four 
+SDLs, when recorded, shall be identical. The only differences between the contents of the four DDSs shall be the pointers to 
+each associated PDL and SDL. 
+
+After initialization of the disk, each DMA shall have the following content: 
+
+- The first sector shall contain the DDS. 
+
+- The second DMA Sector shall be the first sector of the PDL, if the PDL is recorded. 
+
+The SDL shall be located immediately after the PDL if the PDL is recorded, or shall begin in the second DMA sector if the 
+PDL is not recorded. The lengths of the PDL and SDL are determined by the number of entries in each. 
+
+The presence of the components of the DMA is specified in table 8. 
+
+Table 8 • Requirements for the DDS, PDL and SDL 
+
+
+
+Component 
+
+
+Fully Rewritable 
+
+
+Partially Embossed 
+
+
+Fully Embossed 
+
+
+DDS 
+PDL 
+SDL 
+
+
+R/W, Required 
+R/W, Optional 
+R/W, Required 
+
+
+R/W, Required 
+R/W, Optional 
+R/W, Required 
+
+
+Embossed, Required 
+Not present 
+Not present 
+
+
+
+The content of the DMA sectors following the SDL is not specified for fully rewritable and partially embossed disks and 
+shall be ignored in interchange. The bytes of the Data fields of the DMA Sectors following the DDS for fully embossed disks 
+shall be set to (FF). 
+
+The contents of the DDS are specified in 18.2; those of the PDL and SDL are specified in clause 19. 
+
+
+
+18.2 Disk Definition Sector (DDS) 
+
+The DDS shall consist of a table with a length of one sector. It specifies the method of initialization of the disk, the division 
+of the Rewritable and Embossed Zones into groups, and the start addresses of the PDL and SDL. The DDS shall be recorded 
+in the first sector of each DMA at the end of initialization of the disk. On a fully embossed disk the DDS shall be embossed. 
+
+43 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Note 3 - For partially embossed disks, possible values for the DDS parameters are specified by the manufacturer and recorded in the Control Zones; it is not 
+required that parameter values associated with the Rewritable Zone be duplicated when the DDSs are recorded in the Data Zone during disk initialization. 
+
+The following information on the disk structure shall be recorded in each of the four DDSs. 
+
+Table 9 - Content of the DDS 
+
+
+
+Byte 
+
+
+DDS Content 
+
+
+Mandatory settings 
+
+
+Fully 
+
+
+Partially 
+
+
+Fully 
+
+
+
+
+
+
+Rewritable 
+
+
+Embossed 
+
+
+Embossed 
+
+
+
+
+
+DDS Identifier 
+
+
+(0A) 
+
+
+(0A) 
+
+
+(0A) 
+
+
+1 
+
+
+DDS Identifier 
+
+
+(0A) 
+
+
+(0A) 
+
+
+(0A) 
+
+
+2 
+
+
+Reserved 
+
+
+(00) 
+
+
+(00) 
+
+
+(00) 
+
+
+3 
+
+
+Fully Embossed 
+
+
+n.a. 
+
+
+n.a. 
+
+
+(00) 
+
+
+
+
+Disk Certified 
+
+
+(01) 
+
+
+(01) 
+
+
+n.a. 
+
+
+
+
+Disk Not Certified 
+
+
+(02) 
+
+
+(02) 
+
+
+n.a. 
+
+
+4 
+
+
+Number g } of R/W Groups MSB 
+
+
+- 
+
+
+- 
+
+
+(00) 
+
+
+5 
+
+
+Number g x of R/W Groups LSB 
+
+
+- 
+
+
+- 
+
+
+(00) 
+
+
+6 
+
+
+Number n\ of R/W Data Sectors per Group MSB 
+
+
+- 
+
+
+- 
+
+
+(00) 
+
+
+7 
+
+
+Number n\ of R/W Data Sectors per Group 
+
+
+- 
+
+
+- 
+
+
+(00) 
+
+
+8 
+
+
+Number ti\ of R/W Data Sectors per Group LSB 
+
+
+- 
+
+
+- 
+
+
+(00) 
+
+
+9 
+
+
+Number nt\ of R/W Spare Sectors per Group MSB 
+
+
+- 
+
+
+- 
+
+
+(00) 
+
+
+10 
+
+
+Number m\ of R/W Spare Sectors per Group 
+
+
+- 
+
+
+- 
+
+
+(00) 
+
+
+11 
+
+
+Number m\ of R/W Spare Sectors per Group LSB 
+
+
+- 
+
+
+- 
+
+
+(00) 
+
+
+12 
+
+
+Number g 2 of Embossed Groups MSB 
+
+
+(00) 
+
+
+- 
+
+
+- 
+
+
+13 
+
+
+Number g 2 of Embossed Groups LSB 
+
+
+(00) 
+
+
+- 
+
+
+- 
+
+
+14 
+
+
+Number n 2 of Embossed Data Sectors per Group MSB 
+
+
+(00) 
+
+
+- 
+
+
+- 
+
+
+15 
+
+
+Number n 2 of Embossed Data Sectors per Group 
+
+
+(00) 
+
+
+- 
+
+
+- 
+
+
+16 
+
+
+Number n 2 of Embossed Data Sectors per Group LSB 
+
+
+(00) 
+
+
+- 
+
+
+- 
+
+
+17 
+
+
+Number m 2 of Embossed Parity Sectors per Group MSB 
+
+
+(00) 
+
+
+- 
+
+
+- 
+
+
+18 
+
+
+Number m 2 of Embossed Parity Sectors per Group 
+
+
+(00) 
+
+
+- 
+
+
+- 
+
+
+19 
+
+
+Number m 2 of Embossed Parity Sectors per Group LSB 
+
+
+(00) 
+
+
+- 
+
+
+- 
+
+
+20 
+
+
+Number of Tracks per Parity Sector 
+
+
+(00) 
+
+
+(01) 
+
+
+(01) 
+
+
+21 
+
+
+Start of PDL, Track MSB 
+
+
+- 
+
+
+- 
+
+
+(FF) 
+
+
+22 
+
+
+Start of PDL, Track 
+
+
+- 
+
+
+- 
+
+
+(FF) 
+
+
+23 
+
+
+Start of PDL, Track LSB 
+
+
+- 
+
+
+- 
+
+
+(FF) 
+
+
+24 
+
+
+Start of PDL, Sector 
+
+
+- 
+
+
+- 
+
+
+(FF) 
+
+
+25 
+
+
+Start of SDL, Track MSB 
+
+
+- 
+
+
+- 
+
+
+(FF) 
+
+
+26 
+
+
+Start of SDL, Track 
+
+
+- 
+
+
+- 
+
+
+(FF) 
+
+
+27 
+
+
+Start of SDL, Track LSB 
+
+
+- 
+
+
+- 
+
+
+(FF) 
+
+
+28 
+
+
+Start of SDL, Sector 
+
+
+- 
+
+
+- 
+
+
+(FF) 
+
+
+29- 
+
+
+
+
+(00) 
+
+
+(00) 
+
+
+(00) 
+
+
+511 
+
+
+
+
+
+
+
+
+
+
+
+In table 9 the symbol hyphen (-) means that the appropriate value is to be entered in the DDS, and "n.a." means "not 
+applicable". 
+
+If a PDL is not recorded, DDS bytes 21 to 24 shall be set to (FF). 
+
+Fully rewritable ODCs, already in use at the date of publication of this International Standard, which meet all requirements 
+of this International Standard except the prescribed value for Byte 20 of the DDS, shall be considered as being in 
+conformance with this International Standard. 
+
+44 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+The restrictions on DDS parameters are specified in table 10. 
+
+Table 10 - DDS Parameter Restrictions 
+
+
+
+Fully Rewritable 
+
+
+Partially Embossed 
+
+
+Fully Embossed 
+
+
+1 <g x < 1024 
+
+
+2<si + £ 2 <1024 
+
+
+1 < g 2 < 1024 
+
+
+m,>0 
+
+
+$1^1 5 2 ^ 1 
+
+
+s, = o 
+
+
+0<g l xm l £1024 
+
+
+0<£, xm, <1024 
+m,£0 
+
+
+n 2 /25 = integer 
+
+
+*2 = 
+
+
+n 2 /25 = integer 
+
+
+/«2/25 = integer 
+
+
+n 2 = mj = 
+
+
+m2/25 = integer 
+
+
+wi2 > « 2 /25 
+
+
+
+
+m^ ^ « 2 /25 
+
+
+n, = m x - 
+
+
+
+18.3 Rewritable Zone 
+
+The Rewritable Zone is intended for the user to write data into. The Recording field of all sectors in this zone shall not be 
+embossed. 
+
+18.3.1 Location 
+
+If the disk is fully rewritable its Rewritable Zone shall extend from sector of track 3 to sector 24 of track 9 996. 
+
+If the disk is partially embossed, its Rewritable Zone shall extend from sector of track 3 to sector 24 of the track preceding 
+the first track of the Embossed Zone. 
+
+18.3.2 Partitioning 
+
+During initialization of the disk, the Rewritable Zone shall be partitioned into g x consecutive groups of equal size followed 
+by an unspecified number of remaining sectors (see table 6). The first group shall start at the beginning of the Rewritable 
+Zone. Each group shall comprise n } Data Sectors followed by m l Spare Sectors, where m l may equal 0. The total number of 
+Spare Sectors shall not exceed 1 024. The values of g v /ij and m x shall have been recorded in the DDSs. 
+
+18.4 Embossed Zone 
+
+Partially and fully embossed disks shall have an Embossed Zone. It shall contain data embossed by the manufacturer of the 
+disk. The layout of all sectors in this zone shall be as specified in clause 15. 
+
+
+
+18.4.1 Location 
+
+If the disk is partially embossed, the Embossed Zone shall start at sector of the track with a track number greater than, or 
+equal to, 32. This leaves at least 29 tracks after DMA2 for control information of the host operating system. The last track of 
+the Embossed Zone on a partially embossed disk shall be track 9996 which shall contain no embossed data in the Recording 
+field. 
+
+If the disk is fully embossed, the Embossed Zone shall start at sector of track 3 and end at sector 24 of track 9 996. 
+
+The track numbers of both the first and last tracks of the Embossed Zone shall be recorded in the Control Zones. 
+
+45 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+18.4.2 Partitioning 
+
+The Embossed Zone shall have been partitioned into g 2 consecutive groups of equal size (see table 6). Each group shall 
+comprise n 2 Data Sectors followed by m^ Parity Sectors. Both the Data Sector and Parity Sector areas of all groups shall 
+start at sector 0. The values of n 2 and m^ shall be integral multiples of 25, i.e. each group comprises a number of complete 
+tracks with Data Sectors and Parity Sectors. Additionally, the value of m^ shall be larger than, or equal to, n 2 H5. The 
+restriction on ntj is due to the requirement to have one Parity Sector for each embossed track. Other restrictions which apply 
+to g 2 , n 2 and n^ are specified in 18.2. The values of g 2 , n 2 and n^ shall have been recorded in the DDSs. 
+
+The first group shall start at the beginning of the Embossed Zone. 
+
+If the disk is partially or fully embossed, there may be a number of tracks remaining after the partitioning of the Embossed 
+Zone. These remaining tracks shall be located after the groups. The Data fields of any unused sectors within the Embossed 
+Zone shall have all user data bytes set to (FF), except track 9 996 of partially embossed disks which shall contain no 
+embossed Recording field. 
+
+18.4.3 Parity Sectors 
+
+The embossed Parity Sectors provide an error correction system for embossed data over the user data bytes and bytes 513 to 
+516 of each sector in addition to the ECC. They allow the drive to correct one sector on a track that cannot be corrected by 
+the ECC, assuring a high data integrity. If more than one sector on a track cannot be corrected by ECC, then it is not 
+possible to recover any of these Defective Sectors by the use of Parity Sectors. 
+
+The Data field of a Parity Sector contains 516 parity bytes (PB), calculated as an Exclusive OR (©) over the user data bytes 
+and bytes 513 to 516 (DB), of the Data Sectors on one track of the group. 
+
+The algorithm shall be 
+
+PB Tjl = DB^ DB Uin © ... DB tJ „ © ... © DB l24>n 
+
+where 
+
+l<t<n 2 /25 
+
+0<j<24 
+
+l<n<516 
+
+PB Tjl is byte A,, of Parity Sector T, and DBg^, is byte A,, of sector j on track t of the group. A,, is defined in annex E. The 
+parity bytes are calculated over the user data bytes and bytes 513 to 516, excluding the Resync bytes. The CRC, ECC, and 
+Resync bytes as defined in annex E shall be required with each Parity Sector. 
+
+The Parity Sectors for each track of the group shall be stored consecutively in the /Mj sectors allocated to them in each 
+group, starting with the first sector. The first Parity Sector of a group is associated with the first track with the Data Sectors 
+of the same group, the second Parity Sector is associated with the second track with the Data Sectors, and so on until all 
+tracks with Data Sectors have an associated Parity Sector. The contents of the Data field of the unused Parity Sectors shall 
+be set to (FF) and shall contain data complying with the layout as given in table E.l. The number of unused Parity Sectors is 
+mj - (n 2 /25). 
+
+19 Defect management in the Rewritable Zone 
+
+Defective Sectors in the groups of the Rewritable Zone, if replaced, shall be replaced by good sectors according to the defect 
+management method described below. The disk shall be initialized before use. This International Standard allows disk 
+initialization with or without certification. Defective Sectors are handled by a Linear Replacement Algorithm and optionally, 
+a Slipping Algorithm. The total number of Defective Sectors replaced by both algorithms shall not be greater than 1024. 
+
+
+
+46 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+19.1 Initialization of the disk 
+
+During initialization of the disk, the four DMAs are recorded prior to the first use of the disk. The Rewritable Zone shall be 
+partitioned into g { groups, each containing «j Data Sectors and m l Spare Sectors as specified in 18.3.2. The Spare Sectors 
+can be used as replacements for defective Data Sectors. Initialization can include a certification of the Rewritable Zone, in 
+which procedure Defective Sectors are identified and skipped. 
+
+All DDS parameters shall be recorded in the four DDSs. The SDL and optionally the PDL shall be recorded in the four 
+DMAs. The requirements for the recording of the PDLs and SDLs are stated in table 8. 
+
+19.2 Certification 
+
+If the disk is certified, the certification shall be applied to the Data Sectors and to the Spare Sectors in the groups. The 
+method of certification is not stated by this International Standard. It may involve erasing, writing, and reading of all sectors 
+in the groups. Defective Sectors found during certification shall be handled by the Slipping Algorithm (see 19.2.1) or, where 
+applicable, by the Linear Replacement Algorithm (see 19.2.2). Defective Sectors shall not be used for reading or writing. 
+Guidelines for replacing Defective Sectors are given in annex G. 
+
+19.2.1 Slipping Algorithm 
+
+The Slipping Algorithm shall be applied individually to each and every group in the Rewritable Zone if certification is 
+performed. 
+
+A defective Data Sector found during certification shall be replaced by the first available good sector following the 
+Defective Sector, and so causes a slip of one sector towards the end of the group. The last Data Sectors will slip into the 
+Spare Sector area. The address of the Defective Sector is written in the PDL. If no Defective Sectors are found during 
+certification, an empty PDL is recorded (see 19.5). 
+
+The addresses of Spare Sectors, beyond the last Data Sector slipped into the spare area (if any), which are found to be 
+defective during certification shall be recorded in the PDL. Thus, the number of available Spare Sectors is diminished 
+accordingly. 
+
+If the Spare Sector area of a group becomes exhausted during certification, the Defective Sector shall be handled by the 
+Linear Replacement Algorithm. This process involves assigning a Replacement Sector from the spare area of another group 
+and cannot be accomplished until the other group has been certified. This is due to the fact that the next available Spare 
+Sector is not known until its group is certified, i.e. the Slipping Algorithm has been applied. 
+
+19.2.2 Linear Replacement Algorithm 
+
+The Linear Replacement Algorithm is used to handle Defective Sectors found after certification. It is also used during 
+certification in the event of the spare area of a group becoming exhausted. 
+
+The Defective Sector shall be replaced by the first available good Spare Sector of the group. If there are no Spare Sectors 
+left in the group, the Defective Sector shall be replaced by the first available good Spare Sector of another group. The 
+addresses of the Defective Sector and of the Replacement Sector shall be recorded in the SDL. 
+
+19.3 Disks not certified 
+
+The Linear Replacement Algorithm is also used to handle sectors found defective on disks which have not been certified. 
+
+A Defective Sector shall be replaced by the first available good Spare Sector of the group. If there are no Spare Sectors left 
+in the group, the Defective Sector shall be replaced by the first available Spare Sector of another group. The address of the 
+Defective Sector and of the Replacement Sector shall be recorded in the SDL. 
+
+
+
+47 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+19.4 Write procedure 
+
+When writing data in the sectors of a group, a Defective Sector listed in the PDL shall be ignored, and the data shall be 
+written in the next Data Sector, according to the Slipping Algorithm. If a sector to be written is listed in the SDL, the data 
+shall be written in the Spare Sector pointed to by the SDL, according to the Linear Replacement Algorithm. 
+
+19.5 Primary Defect List (PDL) 
+
+If the disk is certified during initialization, a PDL shall be recorded; this PDL may be empty. 
+
+If a list of Defective Sectors is obtained by a means other than certification during or before initialization, the PDL may be 
+recorded. 
+
+If a disk is not certified and a list of Defective Sectors is not obtained by another means, no PDL shall be recorded. 
+
+The PDL shall contain the addresses of all Defective Sectors identified at initialization. The addresses shall be listed in 
+ascending order. The PDL shall be recorded in the minimum number of sectors necessary, and it shall begin in the first user 
+data byte of the first sector. All unused bytes of the last sector of the PDL shall be set to (FF). The information in table 11 
+shall be recorded in each PDL. 
+
+In the case of a multiple-sector PDL. the list of addresses of the Defective Sectors shall continue with the first byte of the 
+second and subsequent sectors. Thus, the PDL Identifier and the number of addresses of the PDL shall be p'ssent only in the 
+first sector. 
+
+In an empty PDL bytes 2 and 3 shall be set to (00) and bytes 4 to 51 1 shall be set to (FF). 
+
+Table 11 • Content of the PDL 
+
+
+
+Byte 
+
+
+
+PDL Content 
+
+
+
+
+1 
+
+2 
+3 
+
+4 
+5 
+6 
+
+7 
+
+x-3 
+
+x-2 
+
+x-l 
+
+x 
+
+
+
+(00). PDL Identifier 
+
+(01), PDL Identifier 
+
+Number of Addresses in the PDL. MSB 
+
+Number of Addresses in the PDL, LSB 
+
+(if bytes 2 and 3 are (00), byte 3 is the end of the PDL) 
+
+Address of the First Defective Sector (Track Number, MSB) 
+
+Address of the First Defective Sector (Track Number) 
+
+Address of the First Defective Sector (Track Number, LSB) 
+
+Address of the First Defective Sector (Sector Number) 
+
+Address of the Last Defective Sector (Track Number, MSB) 
+Address of the Last Defective Sector (Track Number) 
+Address of the Last Defective Sector (Track Number, LSB) 
+Address of the Last Defective Sector (Sector Number) 
+
+
+
+19.6 Secondary Defect List (SDL) 
+
+The Secondary Defect List (SDL) is created during initialization and used during and after certification. All disks with a 
+Rewritable Zone shall have an SDL recorded during initialization. 
+
+The SDL shall contain entries in the form of addresses of defective Data Sectors and addresses of the Spare Sectors which 
+replace them. Each entry in the SDL contains 8 bytes, viz. four each for the address of a Defective Sector and for the address 
+of its Replacement Sector. 
+
+
+
+48 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+The list of addresses shall contain the addresses of the Defective Sectors and their Replacement Sectors. The addresses of 
+the Defective Sectors shall be in ascending order. 
+
+The SDL shall be recorded in the minimum number of sectors necessary, and it shall begin in the first user data byte of the 
+first sector. All unused bytes of the last sector of the SDL shall be set to (FF). The following information shall be recorded in 
+each of the four SDLs. 
+
+The addresses of sectors already recorded in the PDL shall not be recorded in the SDL. 
+
+If a Replacement Sector listed in the SDL is later found to be defective, a new entry shall be made in the SDL indicating a 
+Replacement Sector for that Defective Sector. 
+
+In the case of a multiple-sector SDL, the list of addresses of Defective and of Replacement Sectors shall continue with the 
+first byte of the second and subsequent sectors. Thus, the contents of bytes to 15 in table 12 shall be present only in the 
+first sector. " 
+
+
+
+49 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Table 12 - Content of the SDL 
+
+
+
+Byte 
+
+
+SDL Content 
+
+
+
+
+
+(00), SDL Identifier 
+
+
+1 
+
+
+(02), SDL Identifier 
+
+
+2 
+
+
+(00) 
+
+
+3 
+
+
+(01) 
+
+
+4 
+
+
+List Length in bytes in the SDL, MSB 
+
+
+5 
+
+
+List Length in bytes in the SDL, LSB 
+
+
+
+
+(This Count begins at byte 6) 
+
+
+6-7 
+
+
+(00) 
+
+
+8 
+
+
+(02) 
+
+
+9 
+
+
+(01) 
+
+
+10-13 
+
+
+(00) 
+
+
+14 
+
+
+Number of Entries in the SDL, MSB 
+
+
+15 
+
+
+Number of Entries in the SDL, LSB 
+
+
+
+
+(Each entry is 8 bytes long) 
+
+
+16 
+
+
+Address of the First Defective Sector (Track Number, MSB) 
+
+
+17 
+
+
+Address of the First Defective Sector (Track Number) 
+
+
+18 
+
+
+Address of the First Defective Sector (Track Number, LSB) 
+
+
+19 
+
+
+Address of the First Defective Sector (Sector Number) 
+
+
+20 
+
+
+Address of the First Replacement Sector (Track Number, MSB) 
+
+
+21 
+
+
+Address of the First Replacement Sector (Track Number) 
+
+
+22 
+
+
+Address of the First Replacement Sector (Track Number, LSB) 
+
+
+23 
+
+
+Address of the First Replacement Sector (Sector Number) 
+
+
+y-1 
+
+
+Address of the Last Defective Sector (Track Number, MSB) 
+
+
+y-6 
+
+
+Address of the Last Defective Sector (Track Number) 
+
+
+y* 
+
+
+Address of the Last Defective Sector (Track Number, LSB) 
+
+
+y-4 
+
+
+Address of the Last Defective Sector (Sector Number) 
+
+
+y-3 
+
+
+Address of the Last Replacement Sector (Track Number, MSB) 
+
+
+y-2 
+
+
+Address of the Last Replacement Sector (Track Number) 
+
+
+y-1 
+
+
+Address of the Last Replacement Sector (Track Number, LSB) 
+
+
+y 
+
+
+Address of the Last Replacement Sector (Sector Number) 
+
+
+
+Section 4 • Characteristics of embossed information 
+
+20 Method of testing 
+
+The format of the embossed information on the disk is defined in clauses 13 to 18. Clauses 21 to 23 specify the requirements 
+for the signals from grooves. Headers and embossed data, as obtained when using the two different Reference Drives defined 
+in clause 9 with a wavelength of 780 nm and 825 nm, respectively. 
+
+Clauses 21 to 23 specify only the average quality of the embossed information. Local deviations from the specified values, 
+called defects, can cause tracking errors, erroneous Headers or errors in the Data fields. These errors are covered by section 
+6. 
+
+
+
+20.1 Environment 
+
+All signals in clauses 21 to 23 shall be within their specified ranges with the cartridge in any environment in the range of 
+allowed operating environments defined in 8.1.2. 
+
+50 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+20.2 Use of the Reference Drive 
+
+All signals specified in clauses 21 to 23 shall be measured in the indicated channels of the Reference Drive. The drive shall 
+have the following characteristics for the purpose of these tests. 
+
+20.2.1 Optics and mechanics 
+
+The focussed optical beam shall have the properties defined in 9.2 a) to f). The disk shall rotate as specified in 9.5. 
+
+20.2.2 Read power 
+
+For the wavelengths 825 nm and 780 nm, the optical power incident on the entrance surface of the disk (used for reading the 
+information) shall be in the range from 1,0 mW to P max . 
+
+/*„,„ shall be in the range 
+
+l,2mW<F mM <l,3mW 
+
+P fta% shall be specified in bytes 21 and 135 of the Control Zone. 
+
+For other wavelengths the values for this range are not specified by this International Standard. 
+
+Note 4 - The recommended values for P max at other rotational frequencies are given in annex J. 
+
+20.2.3 Read channels 
+
+The drive shall have a read channel, in which the total amount of light in the exit pupil of the objective lens is measured. 
+This channel can have the implementation as given by Channel 1 in 9.1. 
+
+20.2.4 Tracking 
+
+During the measurement of the signals, the axial tracking error between the focus of the optical beam and recording layer 
+shall not exceed 
+
+e max (axial) = 1,0 pm 
+and the radial tracking error between the focus of the optical beam and the centre of a track shall not exceed 
+
+e max (radial) = 0,10 pm 
+The radial tracking servo used for this measurement requires a higher performance than that specified in 1 1.4.8. 
+
+20.3 Definition of signals 
+
+All signals are linearly related to currents through a photo-diode detector, and are therefore linearly related to the optical 
+power falling on the detector. 
+
+The signals from the two halves of the split photo-diode detector in the tracking channel are indicated by /j and / 2 . The 
+signals in the tracking channel are referenced to the signal (/j + / 2 ) a , which is the sum of the signals obtained from an 
+unrecorded, ungrooved area in the Information Zone, such as the ungrooved part of the Initial Zone or the ODF in a sector. 
+
+The signals in Channel 1 are referenced to the signal / , which is the signal in Channel 1 from an unrecorded, ungrooved 
+area in the Information Zone. 
+
+Figure 17 shows the signals specified in clauses 21, 22 and 23. 
+
+
+
+51 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+<h + ^peak-to-peak 
+
+
+
+Light beam 
+
+
+
+Beam on 
+
+ungrooved 
+
+area 
+
+
+
+i 
+
+
+
+(h+IJ 
+
+
+
+(A+/ 2 )r 
+
+
+
+Level 
+
+
+
+I .AAAA i 
+i ) 
+
+Ui + 'j)min ■ 
+
+
+
+
+Split photodiode 
+
+
+
+Beam across tracks" 
+
+
+
+t Ui-h) 
+
+
+
+peak-to-peak 
+
+
+
+Signals from grooves in the tracking channel 
+
+
+
+Sector 
+Mark 
+
+
+
+Beam on 
+unrecorded— *- 
+track 
+
+
+
+
+VFO . .AM, ID, PA 
+
+
+
+mfm 
+
+
+
+A, 
+
+
+
+Level 
+
+
+
+■* »• 
+
+ODF 
+
+T 
+
+
+
+Signals from Headers in Channel 1 
+
+
+
+'dmax 
+±_ 
+
+
+
+
+imii 
+
+
+
+'dmin 
+
+
+
+Level 
+
+
+
+Signals from Recording fields in Channel 1 
+
+
+
+Figure 17 - Signals from embossed areas 
+
+
+
+52 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+21 Signals from grooves 
+
+The signals (/, + / 2 ) and (7j - / 2 ) shall be filtered in order that frequencies above 1 MHz are attenuated by at least 40 dB 
+thereby eliminating the effect of modulation due to embossed marks. This condition shall not apply to the measurement of 
+the signal (/[ + 7 2 ) a . 
+
+The shape of the grooves and the embossed information shall be such that the following requirements are met (see annex R). 
+
+21.1 Cross-track signal 
+
+The cross-track signal is the sinusoidal sum signal (7j + 7 2 ) in the tracking channel, when the focus of the optical beam 
+crosses the tracks. The signal can be used by the drive to locate the centre of the tracks. The peak-to-peak value of the cross- 
+track signal shall meet the following requirements: 
+
+a) in areas containing embossed Headers and embossed Recording fields: 
+
+For 780 nm For 825 nm 
+
+(h+h) (h+h) 
+
+0,14 < rc ^O^ 0,10 < 7— — -P- < 0,50 
+
+Ui +h\ (h +h\ 
+
+b) in grooved areas in the Information Zone without embossed Recording fields: 
+
+For 780 nm For 825 nm 
+
+(h+h) (h+h) 
+0,25 <-, S.<0,71 0,20 < -, ^-£0,60 
+
+(h+hi (h+h\ 
+
+The uniformity of the cross-track signal shall be such that the above ratio shall not vary by more than 15 % over 
+any grooved area in the Information Zone without embossed Recording fields. 
+
+21.2 Cross-track minimum signal 
+
+The cross-track minimum signal is the minimum of the sum signal (7j + 7 2 ) min m tne tracking channel, when the optical 
+beam crosses the tracks. The cross-track minimum signal shall meet the following requirements: 
+
+For 780 nm For 825 nm 
+
+(/,+/ 2 ) . (h+h) ■ 
+
+1» — £imBL>o,25 V — ^>0,30 
+
+(h+h), (h+h\ 
+
+in grooved areas in the Information Zone with or without embossed data. 
+
+21.3 Push-pull signal 
+
+The push-pull signal is the sinusoidal difference signal (7j - 7 2 ) in the tracking channel, when the focus of the optical beam 
+crosses the tracks. The signal can be used by the drive for radial tracking. The peak-to-peak value of the push-pull signal 
+shall meet the following requirements: 
+
+a) in grooved areas with embossed data in the Information Zone: 
+
+
+
+53 
+
+
+
+IS 14701 : 1999 
+1SO/IEC 10090 : 1992 
+
+For 780 nm For 825 nm 
+
+0,38<-t ^-<0,71 0,35 <-, ^.<0,70 
+
+Ui+h\ Kh+h\ 
+
+b) in grooved areas in the Information Zone without embossed Recording fields: 
+
+For 780 nm For 825 nm 
+
+ih~h) (h~h) 
+0,52 < -t fE.<0,71 0,50 < -J ^<0,70 
+
+21.4 Divided push-pull signal 
+
+The first term of the divided push-pull signal is the peak-to-peak amplitude derived from the instantaneous level of the 
+differential output (/j - 1 2 ) from the split photodiode detector when the light beam crosses the unrecorded or preformatted 
+data area of grooved tracks divided by the instantaneous level of the sum output (I\ + ^ 2 ) ^ rom tne s P^ t photodiode detector 
+when the light beam crosses these areas. 
+
+The second term of the divided push-pull signal is the ratio of the minimum peak-to-peak amplitude derived from the 
+instantaneous level of the differential output <J X - / 2 ) divided by the instantaneous level of the sum output (/j + / 2 ) from the 
+split photodiode detector when the light beam crosses the preformatted data area of grooved tracks to the maximum peak-to- 
+peak amplitude derived from the instantaneous level of the differential output (/, - / 2 ) divided by the instantaneous level of 
+the sum output (l x + / 2 ) from the split photodiode detector when the light beam crosses the preformatted data area of 
+grooved tracks. 
+
+The split photodiode detector separator shall be parallel to the projected track axis. In this measurement, the /, and l 2 signals 
+shall be provided by the split photodiode detector. The tracking servo shall be operating in open-loop mode during this 
+measurement. 
+
+The first term shall meet the following requirements: 
+
+For 780 nm For 825 nm 
+
+
+
+0,74 < 
+
+
+
+l \~h 
+
+
+
+\h+h) 
+
+
+
+<1,05 0,70 < 
+
+
+
+f l I ^ 
+
+
+
+<1,05 
+
+
+
+PP \'^'2J„ 
+
+
+
+The second term shall satisfy: 
+
+For 780 nm and 825 nm 
+
+
+
+h-h 
+7,+/ 2 
+
+
+
+PP 
+
+
+
+sua 
+
+
+
+h-h 
+/,+/ 2 
+
+
+
+>0,7 
+
+
+
+pp 
+
+
+
+JDU 
+
+
+
+21.5 On-track signal 
+
+The on-track signal is the signal in Channel 1 when tracking in a grooved area without embossed data. The on-track signal 
+/ ot shall meet the following requirements: 
+
+
+
+54 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+For 780 nm For 825 nm 
+
+0,72<^L<1,00 0,70£-k-Sl,00 
+
+'o A> 
+
+21.6 Phase depth 
+
+The phase depth of the grooves shall be less than 180°. 
+
+21.7 Track location 
+
+The tracks are located at those radii on the disk where the push-pull signal equals and the cross-track signal has its 
+maximum value. 
+
+22 Signals from Headers 
+
+The signals obtained from the embossed Headers shall be measured in Channel 1 of the Reference Drive. 
+
+The signal from an embossed mark in the recording layer is defined as the peak-to-peak value of the modulation of the 
+signal in Channel 1 caused by the mark when the beam follows a recorded track (see annex R). 
+
+The level of all signals from embossed marks shall be lower than / ot . 
+
+22.1 Sector Mark 
+
+The signal / sm from the Sector Mark shall meet the following requirements: 
+For 780 nm For 825 nm 
+
+/ sm // o >0,53 Wo^0,50 
+
+22.2 VFO! and VF0 2 
+
+The signal / vfo from the marks in the VFOj and VF0 2 fields shall meet the following requirements: 
+
+For 780 nm For 825 nm 
+
+/ Vfo // O ;>0,23 / vfo // o >0,20 
+
+In addition the condition 
+
+For 780 nm For 825 nm 
+
+WW* 0,53 WW* wo 
+
+shall be satisfied within each Header, where /,„„„ is the maximum signal from marks of that Header in the fields defined in 
+22.3. 
+
+22 J Address Mark, ID field and Postamble 
+
+The signal /„ from marks in the Address Mark, ID and Postamble fields shall meet the following requirements: 
+For 780 nm For 825 nm 
+
+/ h // o *0,23 Vo* - 20 
+
+The last requirement applies over any Header. 1^^ and /,„,„ are the signals with minimum and maximum amplitude in 
+those fields of a sector mentioned above. 
+
+55 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+23 Signals from embossed Recording fields 
+
+If the disk has an Embossed Zone, the Recording field of all sectors in this Zone shall contain embossed marks. The signals 
+from these marks shall be measured in Channel 1 (see 9.1 and annex R). Acceptable defects of the marks are specified in 
+section 6. The signal from all embossed Recording fields is defined as the peak-to-peak value of the modulation of the 
+signal. 
+
+The signal / d from marks in the Recording fields of the Embossed Zone shall meet the following requirements: 
+
+For 780 nm For 825 nm 
+
+/ d // o 2 0,23 / d // o >0,20 
+
+'dmm /'*»« * °>53 / dmin // dmax £ 0,50 
+
+The last requirement applies over Recording fields. / dmin and / dmM are the signals with minimum and maximum amplitude 
+in the Recording field of a sector. 
+
+For the Focus tracks in the Acquire Zone, only / d / / is defined. 
+Section 5 - Characteristics of the recording layer 
+
+24 Method of testing 
+
+Clauses 25 to 27 describe a series of tests to assess the magneto-optical properties of the recording layer, as used for writing 
+and erasing data. The tests shall be performed only in the Recording field of the sectors in the Rewritable Zone. If there is no 
+Rewritable Zone for user recording, clauses 26 to 28 shall not apply. The write, read and erase operations necessary for the 
+tests shall be made on the same Reference Drive (see also annex J). 
+
+Clauses 25 to 27 specify only the average quality of the recording layer. Local deviations from the specified values, called 
+defects, can cause write or erase problems. These defects are covered by section 6. 
+
+24.1 Environment 
+
+All signals in clauses 25 to 27 shall be within their specified ranges with the cartridge in any environment in the range of 
+allowed operating environments defined in 8.1.2. 
+
+24.2 Reference Drive 
+
+The write and erase tests described in clauses 25 to 27 shall be measured in Channel 2 of the Reference Drive. The drive 
+shall have the following characteristics for the purpose of these tests. 
+
+24.2.1 Optics and mechanics 
+
+The focussed optical beam shall have the properties defined in 9.2 a) to 0- The disk shall rotate as specified in 9.5. 
+
+24.2.2 Read power 
+
+The optica] power incident on the entrance surface of the disk and used for reading the information shall be in the range 
+from 1,0 mW to />„,„. 
+
+24.2 3 Read channel 
+
+The Reference Drive shall have a read channel which can detect magneto-optical marks in the recording layer. This channel 
+shall have an implementation equivalent to that given by Channel 2 in 9.3. 
+
+56 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+24.2.4 Tracking 
+During the measurement of the signals, the focus of the optical beam shall follow the tracks as specified in 20.2.4. 
+
+24.3 Write conditions 
+
+Marks are written on the disk by pulses of optical power superimposed on a bias power, in the presence of a magnetic field. 
+
+
+
+24.3.1 Write pulse 
+
+The shape of the write pulse shall be as given in figure 18. 
+
+
+
+
+
+
+
+T 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+k * 
+
+
+k 
+
+
+i 
+
+
+> 
+
+
+
+
+
+
+OjP 
+
+> 
+
+
+> 
+
+
+
+
+
+
+0.9P J 
+
+1 / 
+
+
+
+
+
+
+
+
+
+
+Pw 
+
+
+> 
+
+
+r / 
+
+
+
+
+
+
+
+
+
+
+
+
+t 
+
+0,1P 
+
+
+U 1 
+
+
+r 
+
+
+
+
+
+
+
+
+
+
+" 1 
+
+
+r 
+I 
+
+
+
+
+T t 
+
+
+
+
+
+P w : write power 
+
+T r : rise time 
+
+T : write pulse width 
+
+
+
+P to : bias power 
+T f : fall time 
+
+
+
+Figure 18 • Shape of write pulse 
+
+
+
+The rise and fall times T r and T f shall each be less than 15 ns when the pulse width T p exceeds 100 ns. They shall each be 
+less than (0,1 7 p + 5) when T p is less than 100 ns. 
+
+24.3.2 Write power and pulse width 
+
+The write power is the optical power incident on the entrance surface of the disk and used for writing marks. 
+
+The bias power P b shall be set between 0,9 mW and 1,1 mW. 
+
+The tests shall be carried out at a temperature of 23 °C ± 2 °C, at either 
+
+- one of the three constant pulse widths T p and a write power P w appropriate to the radius, as given in bytes 22 to 30 and 
+
+
+
+136 to 144 of the Control data (see annex F), or 
+
+
+
+57 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+- a constant pulse power /> w given in bytes 31 and 145, and a pulse width appropriate to the radius given in bytes 32 to 34 
+and 146 to 148, respectively, of the Control data (see annex F). 
+
+For radii other than those specified the values shall be linearly interpolated. The actual power and pulse width used shall be 
+within ± 5 % of those selected. 
+
+For other temperatures, the values should be compensated as shown in annex J, in which recommended maximum write 
+powers for two optional rotational frequencies are also shown. 
+
+The required write power shall not exceed 
+
+
+
+61 
+
+
+
+'l 1 ^ 
+
+— I-—*™ 
+
+
+
+m W for T p < 92 ns 
+
+
+
+or 
+
+
+
+7mW for 7/ p >92ns. 
+T is expressed in nanoseconds. 
+
+24.3.3 Write magnetic field 
+
+The requirements of all tests shall be met for all magnetic field intensities at the recording layer during writing in the range 
+from 16 000 A/m to 32 000 A/m. 
+
+The write magnetic field, pointing in the North to South direction, shall be within 15° from the normal to the disk reference 
+plane P, in the direction of the incident beam, i.e. from the entrance surface to the recording layer. 
+
+24.4 Erase conditions 
+
+Marks are erased from the disk by a constant optical power in the presence of a magnetic field. 
+
+24.4.1 Erase power 
+
+The erase power is the optical power incident on the entrance surface of the disk and used for erasing marks. The erase 
+power shall not exceed the value calculated according to the formula in 24.3.2. 
+
+The tests shall be carried out at a temperature of 23 °C ± 2 °C and with an erase power appropriate to the radius, given in 
+bytes 45 to 47 and 159 to 161 of the Control data (see annex F). For radii other than those specified the values shall be 
+linearly interpolated. The actual power used shall be within ± 10 % of that selected. 
+
+For other temperatures the values should be compensated as shown in annex J, in which recommended maximum erase 
+powers for two optional rotational frequencies are also shown. 
+
+24.4.2 Erase magnetic field 
+
+The requirements of all tests shall be met for all magnetic field intensities at the recording layer during erasing in the range 
+from 16 000 A/m to 32 000 A/m. 
+
+The erase magnetic field, pointing in the North to South direction, shall be within 15° from the normal to the disk reference 
+plane P, in the direction of the reflected beam, i.e. from the recording layer to the entrance surface. 
+
+24.5 Definition of signals 
+
+The signals in Channel 2 are linearly related to the difference between the currents through the photo-diode detectors Kj and 
+K 2 , and are therefore linearly related to the optical power falling on the detectors (see 9.1). 
+
+58 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+25 Magneto-optical characteristics 
+
+25.1 Figure of merit 
+
+The figure of merit F of the recording layer is a measure of the magnitude of the signal obtained from magneto-optical 
+marks. It is defined as R sin 6 cos 28, where R is the reflectance of the disk expressed as a decimal fraction, 8 is the Ken- 
+rotation of the optical polarization between a mark and no-mark, and 6 is the ellipticity of the reflected beam, averaged over 
+the aperture. The polarity of the figure of merit is defined to be negative for a magneto-optical mark written in an Fe-rich 
+Fe-Tb alloy recording layer with the write magnetic field in the direction specified in 24.3.3. In this case the direction of the 
+Kerr rotation is counter-clockwise as seen from the incident beam. 
+
+The polarity and magnitude of the value of the figure of merit shall be as specified in byte 10 and 1 1 of the Control data (see 
+annex F). The figure of merit shall comply with 
+
+0,0025 < I F I < 0,0050 
+
+25.2 Imbalance of the magneto-optical signal 
+
+The imbalance of the magneto-optical signal is the d.c. offset of the signal from Channel 2 of the Reference Drive, which 
+can be due to birefringence of the substrate. The offset can be measured by writing marks on the disk in the low-frequency 
+region where the modulation transfer function of the optical system is one, as in annex H. One can also use a series of marks 
+that give a 50 % duty cycle read signal. The offset is now the signal level halfway between the extremes of the signal. 
+
+The imbalance shall be such that the offset in Channel 2 divided by the signal in Channel 1 shall not exceed 0,06 in the 
+Recording field of any sector in the Rewritable Zone. The imbalance shall be measured in a bandwidth from d.c. to 40 kHz. 
+The imbalance is specified for a Reference Drive with a beam splitter E with nominal values for the reflectances, the phase 
+retarder shall be in the neutral position (see 9.1). 
+
+26 Write characteristics 
+
+26.1 Resolution 
+
+The resolution is the ratio of the signal amplitude from a high-density pattern of marks to the signal amplitude from a low- 
+density pattern of marks. It shall be measured as follows. 
+
+Write two series of marks, one spaced eight Channel bits apart and one spaced three Channel bits apart, in the Recording 
+field of a sector. The write conditions shall be as specified in 24.3. 
+
+Read the signals in Channel 2 under the conditions specified in 24.2.2 and 24.2.3. IL is the peak-to-peak value of the signal 
+obtained from the widely spaced marks, IH is the peak-to-peak value of the signal obtained from the narrowly spaced marks. 
+
+The resolution IH /IL shall not be less than 0,4 within any sector in the Rewritable Zone for all allowed values of the write 
+magnetic field. 
+
+26.2 Narrow-band signal-to-noise ratio 
+
+The narrow-band signal-to-noise ratio is the ratio of the signal level to the noise level of a specified pattern, measured in a 
+30 kHz bandwidth. It shall be determined as follows. 
+
+Write a series of marks spaced three Channel bits apart in the Recording fields of a series of sectors. The write conditions 
+shall be as specified in 24.3. 
+
+Read the Recording fields in Channel 2 under the conditions specified in 24.2.2 and 24.2.3, using a spectrum analyser with a 
+bandwidth of 30 kHz. Measure the amplitudes of the signal at 2,9 MHz ±0,1 MHz and the noise at this frequency as 
+
+
+
+59 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+indicated in figure 19. The measurements shall be corrected for the effect of the Header fields, in order to obtain the value 
+for the Recording field only. The narrow-band signal-to-noise rdtio is 
+
+
+
+20 log 
+
+
+
+signal level "\ 
+level ) 
+
+
+
+■ noise 
+
+
+
+The narrow-band signal-to-noise ratio shall be greater than 45 dB in any sector in the Rewritable Zone for all allowed values 
+of the write magnetic field and for all phase differences between -15° and +15° in the optical system as defined in 9.1. 
+
+Amplitude .Signal level 
+
+
+
+
+■► Frequency 
+Figure 19 - Spectrum analyser display 
+
+26.3 Cross-talk 
+
+The test on cross-talk shall be carried out on any group of five adjacent unrecorded tracks, designated (n-2), (n-1), n, (n+1), 
+(n+2), in the Rewritable Zone according to the following procedure: 
+
+- Erase the Recording field of each of the sectors in these tracks. 
+
+- Write a series of marks spaced eight Channel bits apart in the Recording fields of the sectors in track n. The write 
+conditions shall be as specified in 24.3. 
+
+- Read the Recording fields of the sectors in the tracks (n-1), n and («+l) under the conditions specified in 24.2.2 and 
+24.2.3. 
+
+The cross-talk from a track n to track (n-1) and to track (n+1) shall be lower than -27 dB. 
+
+27 Erase characteristics 
+
+Procedure: 
+
+a) Write a series of marks spaced three Channel bits apart in the Recording fields of any series of sectors in the 
+Rewritable Zone. The write conditions shall be as specified in 24.3. 
+
+b) Read the Recording fields under the conditions specified in 24.2.2 and 24.2.3, using a spectrum analyser with a 
+bandwidth of 30 kHz. Note the amplitude of the signal (as specified in 26.2). 
+
+c) Erase under the conditions specified in 24.4. 
+
+d) Repeat a) and c) 1 000 times. 
+
+e) Repeat a). 
+
+60 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+f) Repeat b); note the amplitude of the signal and the noise (as specified in 26.2). 
+
+g) Repeat c); note the amplitude of the residual signal of the written mark at the same frequency as in f)- 
+Requirements: 
+
+1) The narrow-band signal-to- noise ratio calculated from the readings in shall be greater than 45 dB. 
+
+2) The residual signal in g) shall be less than -40 dB relative to the signal level of the written marks in b). 
+
+Section 6 - Characteristics of user data 
+
+28 Method of testing 
+
+Clauses 29 and 30 describe a series of measurements to test conformance of the user data on the disk with this International 
+Standard. It checks the legibility of both embossed and user-written data. The data is assumed to be arbitrary. The user- 
+written data may have been written by any drive in any environment. The read tests shall be performed on the Reference 
+Drive. 
+
+Whereas clauses 20 to 27 disregard defects, clauses 29 and 30 include them as an unavoidable deterioration of the read 
+signals. The gravity of a defect is determined by the correctability of the ensuing errors by the error detection and correction 
+circuit in the read channel defined below. The requirements in clauses 29 and 30 define a minimum quality of the data, 
+necessary for data interchange. 
+
+28.1 Environment 
+
+All signals in clauses 29 to 30 shall be within their specified ranges with the cartridge in any environment in the range of 
+allowed operating environments defined in 8.1.2. It is recommended that before testing the entrance surface of the optical 
+disk shall be cleaned according to the instructions of the manufacturer of the disk. 
+
+28.2 Reference Drive 
+
+All signals specified in clauses 29 to 30 shall be measured in the indicated channels of the Reference Drive. The drive shall 
+have the following characteristics for the purpose of these tests: 
+
+28.2.1 Optics and mechanics 
+
+The focussed optical beam shall have the properties already defined in 9.2 a) to 0- The disk shall rotate as specified in 9.5. 
+
+28.2.2 Read power 
+
+The optical power incident on the entrance surface of the disk (used for reading the information) shall be in the range from 
+l,0mWto/> max . 
+
+28.2 J Read amplifiers 
+
+The read amplifiers after the photo-detectors in Channels 1 and 2 shall be as specified in 9.3. 
+
+28.2.4 Analog-to-binary converters 
+
+The signals from both read amplifiers shall be converted from analog-to-binary with a peak detector. 
+
+The converter for Channel 1 shall operate correctly for analog signals from embossed marks with amplitudes as determined 
+by clauses 22 and 23. 
+
+The converter for Channel 2 shall operate correctly for analog signals from user-written marks with an amplitude as 
+determined by clauses 25 and 26. 
+
+61 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+28.2.5 Error correction 
+
+Correction of errors in the data bytes shall be carried out by an error detection and correction system based on the definition 
+in E.3 of annex E. There shall be an additional correction system for the embossed data, based on the Parity Sectors as 
+defined in 18.4.3. 
+
+28.2.6 Tracking 
+
+During measurement of the signals, the focus of the optical beam shall follow the tracks as specified in 20.2.4. 
+
+29 Minimum quality of a sector 
+
+This clause specifies the minimum quality of the Header and Recording field of a sector as required for interchange of the 
+data contained in that sector. The quality shall be measured on the Reference Drive specified in 28.2. 
+
+A byte error occurs when one or more bits in a byte have a wrong setting, as detected by the ECC and/or CRC circuits. 
+
+29.1 Headers 
+
+29.1.1 Sector Mark 
+
+At least three of the five long marks of the Sector Mark shall have the timing specified in 15.2 and the signals shall have the 
+amplitude specified in 22.1. 
+
+29.1.2 ID fields 
+
+At least one of the three ID fields in a Header read in Channel 1 shall not have any byte errors, as checked by the CRC in the 
+field. 
+
+Note 5 - This involves correct capture of the data clock on the preceding VFOj or VFO2 field and correct byte synchronization on the preceding Address 
+Mark. 
+
+29.2 User-written data 
+
+The user-written data in a sector as read in Channel 2 shall not contain any byte errors that cannot be corrected by the error 
+correction defined in 28.2.5. 
+
+Note 6 - This involves correct capture of the data clock on the preceding VFO3 field and correct byte synchronization on the preceding data Sync. 
+
+29 3 Embossed data 
+
+The embossed data in a sector as read in Channel 1 shall not contain any byte errors that cannot be corrected by the error 
+correction defined in 28.2.5. 
+
+Note 7 - This involves correct capture of the data clock on the preceding VFO3 field and correct byte synchronization on the preceding data Sync. 
+
+30 Data interchange requirements 
+
+A disk offered for interchange of data shall comply with the following requirements. 
+
+30.1 Tracking 
+
+The focus of the optical beam shall not jump tracks unintentionally. 
+
+
+
+62 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+30.2 User-written data 
+
+Any sector written in the Rewritable Zone that does not comply with 29.1 and 29.2 shall have been replaced according to the 
+rules of the defect management as defined in clause 19. 
+
+30 .3 Embossed data 
+
+Any sector in the Embossed Zone that does not comply with 29.1 and 29.3 shall be correctable by the error correction based 
+on the Parity Sectors as defined in 18.4.3. 
+
+30.4 Quality of disk 
+
+The quality of the disk is reflected in the number of replaced sectors in the Rewritable Zone. This International Standard 
+allows a maximum of 1 024 replaced sectors. The maximum number acceptable to a user remains a matter of agreement 
+between purchaser and supplier. 
+
+
+
+63 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Annex A 
+
+(normative) 
+
+Edge distortion test 
+
+A.l The distortion test checks if the case is free from unacceptable distortions and protrusions along its edges. The test is 
+
+made by causing the cartridge to pass through the vertical slot of a gauge while applying a specified force including the 
+
+gravitational pull. 
+
+A.2 The gauge shall be made of a suitable material, e.g. of chrome-plated carbon steel. The inner surfaces shall be polished 
+
+to a surface finish of 5 urn peak-to-peak. 
+
+A.3 The dimensions shall be as follows (see figure A. 1 ): 
+
+L a = 96,0 mm min. 
+
+L b = 91,0 mm ±0,1 mm 
+
++ 0,1 mm 
+
+L = 8.6 mm rtrt 
+
+c - 0,0 mm 
+
+L d = 6.30 mm ±0,01 mm 
+
+L e = 6.80 mm min. 
+A.4 When the cartridge is inserted vertically into the gauge, a vertical downward force F x of 0,8 N maximum applied to the 
+centre of the top edge of the cartridge shall cause the cartridge to pass through the gauge. 
+
+
+
+
+Figure A.l - Distortion Gauge 
+
+
+
+64 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex B 
+(normative) 
+
+Compliance test 
+
+
+
+B.l The compliance test checks the flatness and flexibility of the case by forcing the four reference surfaces of the case 
+into a plane. The test is made by placing the cartridge on the supports of a gauge and applying forces on the cartridge 
+opposite to the supports. 
+
+B.2 The location of the four reference surfaces S 1, S2, S3 and S4 is defined in 10.3.4 and figure 4. 
+
+B.3 The test gauge consists of a base plate on which four posts PI, P2, P3 and P4 are fixed so as to correspond to the four 
+surfaces SI, S2, S3 and S4, respectively (see figure B.l). The dimensions are as follows (see figure B.2): 
+
+Posts PI and P2 
+
+D a = 6,50 mm ± 0,01 mm 
+
+r^ „ ,^ +0,00 mm 
+
+D h = 3,50 mm _ 
+
+b - 0.02 mm 
+
+// a = 1,0 ±0,1 mm 
+
+H h = 2,0 mm max. 
+Posts P3 and P4 
+
+D c = 5,50 mm ±0,01 mm. 
+
+The top area (H b - H z ) of posts PI and P2 has a chamfer. 
+
+After assembly, the upper annular surfaces of the four posts shall lie between two horizontal planes spaced 0,01 mm apart. 
+
+B.4 The cartridge shall be placed with its reference surfaces onto the posts of the horizontal gauge. A vertical downward 
+force F c of 0,4 N shall be exerted on the cartridge opposite each of the four posts. 
+
+B.5 Requirements 
+
+Under the conditions of B.4, three of the four surfaces SI to S4 shall be in contact with the annular surface of their 
+respective posts, and any gap between the remaining surface S and the annular surface of its post shall not exceed 0,1 mm. 
+
+
+
+65 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+
+Figure B.l - Compliance gauge 
+
+
+
+Ob 
+
+
+
+H a 
+
+
+
+H b 
+
+
+
+
+P3,4 
+
+
+
+*>a 
+
+
+
+P1.2 
+
+
+
+Figure B.2 - Detail of posts 
+
+
+
+66 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex C 
+(informative) 
+
+Track deviation measurement 
+
+
+
+The deviation of a track from its nominal location is measured in the same way as a drive sees a track, i.e. through a tracking 
+servo. The strength of the reference servo used for the test is in general less than the strength of the same servo in a normal 
+drive. The difference in strength is intended for margins in the drive. The deviation of the track is related to the tracking 
+error between the track and the focus of the optical beam, remaining after the reference servo. The tracking error directly 
+influences the performance of the drive, and is the best criterion for testing track deviations. 
+
+The specification of the axial and radial track deviations can be described in the same terms. Therefore, this annex applies to 
+both axial and radial track deviations. 
+
+
+
+C.l Relation between requirements 
+
+The acceleration required by the motor of the tracking servo to make the focus of the optical beam follow the tracks on the 
+disk (see 11.4.6 and 11.4.8) is a measure for the allowed deviations of the tracks. An additional measure is the allowed 
+tracking error between the focus and the track (see 20.2.4). The relation between both is given in figure C.l, where the 
+maximum allowed amplitude of a sinusoidal track deviation is given as function of the frequency of the deviation. It is 
+assumed in the figure that there is only one sinusoidal deviation present at a time. 
+
+
+
+log(* ) 
+
+ev max ' 
+
+
+
+
+►log(/) 
+Figure C.l • Maximum allowed amplitude of a single, sinusoidal track deviation 
+
+At low frequencies, the maximum allowed amplitude x mM is given by 
+
+*m« = <W/(2*/> 2 . W 
+
+where a mM is the maximum acceleration of the servo motor. At high frequencies we have 
+
+x = e (2) 
+
+■*m«x ^mM * ' 
+
+where c_„ is the maximum allowed tracking error. The connection between both frequency regions is given in C.3. 
+
+
+
+67 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+C.2 Reference Servo 
+
+The above restriction of the track deviations is equal to the restriction of the track deviations for a Reference Servo. A 
+Reference Servo has a well-defined transfer function, and reduces a single, sinusoidal track deviation with amplitude jr ma3t to 
+a tracking error e max as in figure C.l. 
+
+The open-loop transfer function of the Reference Servo shall be 
+
+1+ icoc < 3 > 
+
+
+
+
+
+
+cco 
+
+where i = v-1 , co = 2n/and w = 2nf , with/ the dB frequency of the open-loop transfer function. The constant c 
+gives the cross-over frequencies of the lead-lag network of the servo: the lead break frequency/, =/ / c and the lag break 
+frequency f 2 =/ xc. The reduction of a track deviation x to a tracking error e by the reference servo is given by 
+
+, 1 W 
+
+
+
+x l + // s 
+
+
+
+If the dB frequency is specified as 
+
+(5) 
+
+
+
+o) = 
+
+
+
+V 
+
+
+
+a m* c 
+
+
+
+then a low-frequency track deviation with an acceleration a max will be reduced to a tracking error e max , and a high- 
+frequency track deviation will not be reduced. The curve in figure C.l is given by 
+
+*ma* = <W ' 1 + #S ' < 6 ) 
+
+The maximum acceleration required from the motor of this reference servo is 
+
+a max (motor) = e m „(o 2 ll+// s l (7) 
+
+At low frequencies (f </q/c) applies 
+
+2 
+
+a max (motor) = fl max (track)= "P c ™m (8) 
+
+c 
+
+Hence, it is permitted to use o ma]l (motor) as specified for low frequencies in 1 1.4.6 and 1 1.4.8 for the calculation of <o of a 
+reference servo. 
+
+C.3 Requirement for track deviations 
+
+The track deviations shall be such that, when tracking with a Reference Servo on a disk rotating at the specified frequency, 
+the tracking error shall not be larger than e max during more than 12 us. 
+
+The Open-loop transfer function of the Reference Servo for axial and radial tracking shall be given by equation (3) within an 
+accuracy such that II + H\ does not differ by more than ± 20 % from its nominal value in a bandwidth from 30 Hz to 100 
+kHz. The constant c shall be 3. The dB frequency coq / (2n) shall be given by equation (5), where a max and e max for axial 
+and radial tracking are specified in 20.2.4, 1 1.4.6 and 1 1.4.8. 
+
+
+
+68 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+C.4 Measurement implementation 
+
+Three possible implementations for an axial or radial measurement system have been given below. // a is the open-loop 
+transfer function of the actual tracking servo of the drive, //, is the transfer function for the Reference Servo as given in 
+equation (3). x and v are the position of the track and the focus of the optical beam, i, is the tracking error after a Reference 
+Servo, which signal has to be checked according to the previous paragraph. 
+
+
+
+
+
+
+
+/ \ Position sensor 
+
+^ — ^A t — +jt\ ^ 
+
+
+Filter 
+
+1 
+7 + tf s 
+
+
+
+
+
+
+
+
+K 
+
+
+y 1 
+
++ 
+
+
+
+
+e s 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Servo 
+
+
+
+
+
+
+
+
+e a 
+
+
+
+
+
+
+
+
+
+Figure C.2 - Implementation of a Reference Servo by filtering the track position signal with the reduction 
+
+characteristics of the Reference Servo 
+
+
+
+
+
+
+
+- e s 
+
+
+
+
+
+
+
+
+> 
+
+
+"a 
+
+
+H 
+a 
+
+
+
+
+J 
+
+i 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure C.3 • Implementation of a Reference Servo by changing the transfer function of the actual servo 
+
+
+
+69 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+_ n 
+
+
+
+
+
+
+
+
+
+" 
+
+
+' + H a 
+
+
+— *- e 
+
+
+e a 
+
+
+
+
+
+
+1 +H s 
+s 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+> 
+
+
+H 
+a 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure C.4 - Implementation of a Reference Servo by changing the tracking error of the actual servo 
+
+The optimum implementation depends on the characteristics of // a and H s . Good results for motors in leaf springs are often 
+obtained by using separate circuits in a low and high frequency channel. The implementation of figure C.2 is used in the 
+low-frequency channel, while that of figures C.3 or C.4 is used in the high-frequency channel. The signals from both 
+channels are added with a reversed cross-over filter to get the required tracking error. In the low-frequency channel one can 
+also use the current through the motor as a measure of the acceleration of the motor, provided the latter is free from 
+hysteresis. The current must be corrected for the transfer function of the motor and then be converted to a tracking error with 
+a filter with a transfer function e/a = e/(x(o 2 ), derived from equation (4). 
+
+
+
+70 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex D 
+(normative) 
+
+CRC for ID fields 
+
+
+
+The 16 check bits of the CRC of the ID field shall be computed over the first three bytes of this field. The generator 
+polynomial shall be 
+
+G(x)=jc 16 +jc 12 + ;c 5 + 1 
+
+The residua] polynomial is defined by 
+
+
+
+R(jc) = 
+
+
+
+(i=23 . i=7 ."\ 
+
+X 6^' + 2>/*' jc 16 modGU) 
+
+^ i-i i=0 j 
+
+
+
+where b, denotes a bit of the first three bytes and b, an inverted bit. Bit b 23 is the highest order bit of the first byte. 
+The contents of the 16 check bits c^ of the CRC are defined by 
+
+t=15 
+k=0 
+
+c 15 is recorded in the highest order bit of the fourth byte in the ID field. 
+
+
+
+71 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex E 
+(normative) 
+
+Format of the Data field of a sector 
+
+
+
+E.l Contents of Data field 
+
+The bytes in the Data field constitute an ordered sequence A„. The elements of A„ are, depending on the value of n: 
+
+1 <n<512: A n = D„ user data bytes 
+
+5 1 3 < n < 5 16: A„ = F m bytes with non-specified content 
+
+5 17 < n < 520: A„ = C k CRC check bytes 
+
+521 <n < 600: A„ = E st ECC check bytes, 
+
+
+
+where 
+
+
+
+m = n - 512 
+k^n-516 
+s = [( n - 521 ) mod 5 ] + 1 
+
+t . Jn-521] t 
+t = ind — - — +1 
+
+
+
+
+
+
+The notation int[x] denotes the largest integer not greater than x\ (x mod y) denotes the remainder of the integer division x/y. 
+
+The order of the user data bytes D„ is the same as the order in which they are input into the controller of the drive, i.e. Dj 
+comes first The Resync bytes are not included in A n . 
+
+E.2 Interleaving 
+
+Before the ECC and CRC bytes are calculated, the bytes in the Data field are five-way interleaved. For that purpose, the first 
+three sub-groups of A„ are mapped onto a two-dimensional matrix B,y with 104 rows and 5 columns (see table E.l). Thus 
+
+for 1 < w < 520: B^ = A„, 
+
+where 
+
+j is ( n - 1 ) mod 5 
+E.3 CRC and ECC 
+
+E.3.1 General 
+
+The CRC and ECC shall be computed over the Galois field based on the primitive polynomial 
+G p (x) = jt 8 + jr 5 + Jt 3 +jr 2 +l 
+
+72 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+The elements of the field are a? = (/?') 88 » where fi is a primitive root of G (x). The value of the n-th bit in a byte is the 
+coefficient of the n-th power of J3, where < n < 7, when fi is expressed on a polynomial basis. 
+
+E.3.2 CRC 
+
+The generator polynomial for the CRC bytes shall be 
+
+
+
+i=139 , x 
+
+G c (x) = S (x + a'j 
+
+
+
+The four check bytes of the CRC shall be computed over the user data and the four ¥ m bytes. The information polynomial 
+shall be 
+
+
+
+I C W = 
+
+
+
+i=103;'=4 
+
+X X 
+
+
+B </ 
+
+
+x' 
+
+
+t=l 
+
+
+>=0 
+
+
+
+
+
+
+
++ B ,o*° 
+
+
+
+The contents of the four check bytes C k of the CRC are defined by the residual polynomial 
+
+R e (x) = I c Cx)jc 4 modG c (x) 
+The storage locations for the coefficients of the polynomial are specified by 
+
+RcU)=I 4 C*jc 4 -* 
+*=i 
+
+E.3.3 ECC 
+
+The primitive polynomial and the elements shall be as specified in E.3.1. The generator polynomial for the check bytes of 
+the ECC shall be 
+
+G e U)= X (x+o') 
+
+»=120 
+
+The 80 check bytes of the ECC shall be computed over the user data, the four F w bytes and the four CRC bytes. The 
+corresponding five information polynomials shall be 
+
+i-103 
+
+where0<y<4 
+
+The contents of the 16 check bytes E J( for each polynomial I <x) are defined by the five residual polynomials 
+
+R^<x)«I^«jr l6 modG e Cx) 
+The storage locations for the coefficients of the polynomials are specified by 
+
+»=16 _ 
+
+R e/W= X E 0+i).i* 
+r=l 
+
+The bits of the computed check bytes shall be inverted before they are encoded into Channel bits, as indicated by the use of 
+E in the above formula and E in table E.l. 
+
+73 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+E.4 Resync 
+
+The Resync fields shall be inserted in the Data field to prevent loss of byte synchronization and to limit the propagation of 
+errors in the user data. Whilst they are numbered consecutively, all Resync fields are identical. They contain the following 
+pattern in Channel bits which does not occur in user data 
+
+0010 0000 0010 0100 . 
+
+The Resync field RS„ shall be inserted between bytes A 15 „ and A 15rt+1 , where 1 < n < 39. 
+
+E.5 Recording Sequence 
+
+The bytes of the Data field shall be recorded on the disk immediately after the Sync field. Their order shall be according to 
+the sequence A„ with the Resync bytes inserted as specified in E.4. 
+
+Table E.1 shows in matrix form the arrangement of the bytes. The sequence of recording is from left to right and top to 
+bottom. The first three bytes SB], SB 2 and SB 3 form the Data Sync field, which precedes the Data field. The first 104 rows 
+of the Data field contain user data and a few bytes with unspecified contents and CRC data. The last 16 rows contain the 
+ECC check bytes. 
+
+
+
+74 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Table E.1 - Data field configuration. The indices i and/" of bytes B tf are given along the sides of the matrix 
+
+
+
+Column No 
+
+
+; -> 
+
+
+
+
+
+
+
+
+
+1 
+
+
+2 
+
+
+3 
+
+
+Row No. i 
+4 T 
+
+
+
+
+SB1 
+
+
+SB2 
+
+
+SB3 
+
+
+Dl 
+
+
+D2 
+
+
+D3 
+
+
+D4 
+
+
+D5 
+
+
+103 
+
+
+
+
+
+
+D6 
+
+
+D7 
+
+
+D8 
+
+
+D9 
+
+
+D10 
+
+
+102 
+
+
+
+
+
+
+Dll 
+
+
+D12 
+
+
+D13 
+
+
+D14 
+
+
+D15 
+
+
+101 
+
+
+
+
+RSI 
+
+
+D16 
+
+
+D17 
+
+
+Dig 
+
+
+D19 
+
+
+D20 
+
+
+100 
+
+
+
+
+
+
+D21 
+
+
+D22 
+
+
+D23 
+
+
+D24 
+
+
+D25 
+
+
+99 
+
+
+D26 
+
+
+D27 
+
+
+D28 
+
+
+D29 
+
+
+D30 
+
+
+98 
+
+
+
+
+RS2 
+
+
+D31 
+
+
+D32 
+
+
+D33 
+
+
+D34 
+
+
+D35 
+
+
+97 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+104 rows 
+
+
+RS33 
+
+
+D496 
+
+
+D497 
+
+
+D498 
+
+
+D499 
+
+
+D500 
+
+
+4 
+
+
+
+
+
+
+D501 
+
+
+D502 
+
+
+D503 
+
+
+D504 
+
+
+D505 
+
+
+3 
+
+
+D506 
+
+
+D507 
+
+
+D508 
+
+
+D509 
+
+
+D510 
+
+
+2 
+
+
+
+
+RS34 
+
+
+D511 
+
+
+D512 
+
+
+Fl 
+
+
+F2 
+
+
+F3 
+
+
+1 
+
+
+
+
+
+
+F4 
+
+
+CI 
+
+
+C2 
+
+
+C3 
+
+
+C4 
+
+
+
+
+
+
+
+
+
+
+
+El,l 
+
+
+E2,l 
+
+
+E3.1 
+
+
+E4.1 
+
+
+E5.1 
+
+
+-1 
+
+
+
+
+RS35 
+
+
+El,2 
+
+
+E2,2 
+
+
+E3.2 
+
+
+E4.2 
+
+
+E5^ 
+
+
+-2 
+
+
+16 rows 
+
+
+
+
+El,3 
+
+
+E2,3 
+
+
+E3,3 
+
+
+E4,3 
+
+
+E5.3 
+
+
+-3 
+
+
+• 
+
+
+
+
+
+
+
+
+
+
+• 
+
+
+
+
+RS39 
+
+
+El,14 
+
+
+E2,14 
+
+
+E3.14 
+
+
+E4.14 
+
+
+E5.14 
+
+
+-14 
+
+
+
+
+
+
+EU5 
+
+
+E2.15 
+
+
+E3.15 
+
+
+E4.15 
+
+
+E5,15 
+
+
+-15 
+
+
+
+
+
+
+
+
+El,16 
+
+
+E2.16 
+
+
+E3.16 
+
+
+E4,16 
+
+
+E5,16 
+
+
+-16 
+
+
+
+75 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex F 
+(normative) 
+
+Contents of the Control Zones 
+
+
+
+Each sector in the two Control Zones shall contain the same Control data provided by the manufacturer of the media. The 
+Control data is divided into four groups in the following way. 
+
+1) The media characterization data gives a general characterization of the disk. It specifies the type of disk, the ECC, the 
+tracking method, etc. The data is recorded in bytes to 17. Bytes to 9, 12 and 13 are mandatory for all media, 
+bytes 10 and 1 1 are mandatory for rewritable and partially embossed media only. 
+
+2) The Recording Control data specifies the settings of the drive for reading, writing and erasing. Space is allocated for 
+the following sets of data: 
+
+- three wavelengths L l ,L 2 imdL 3 , 
+
+- for each wavelength the reflectance R of the disk, 
+
+- for each wavelength four rotational frequencies N v N 2 , W3 and N 4 
+
+- for each value of N: 
+
+. the maximum read power 
+
+. one set of erase conditions 
+
+. four sets of write conditions: viz. three sets for constant pulse width and one set for constant pulse power (each 
+set may contain three values for the inner, middle and outer radius of the Information Zone). 
+
+The Recording Control data can be divided in two sub-groups, one for the conformance tests described in clauses 18 
+to 27, and one for control of user drives. 
+
+a) The conformance test data specifies the settings for the Reference Drive. They can also be used as reference data for 
+user drives. The conformance test data shall be recorded in bytes 18 to 34, 44 to 47, 132 to 148 and 158 to 161, and 
+are mandatory for rewritable and partially embossed media. 
+
+b) The User reference data contains the recommendation of the media manufacturer for the settings of a user drive for 
+operating the disk in the test environment. This data is recorded in bytes 48 to 131, and 162 to 359, and is optional, 
+except in those bytes listed in c). 
+
+c) The following bytes are reserved for future standardization and shall be set to (FF): 
+
+
+
+35 to 43 
+
+
+198 to 200 
+
+
+56 to 58 
+
+
+226 to 228 
+
+
+84 to 86 
+
+
+263 to 271 
+
+
+112toll4 
+
+
+284 to 286 
+
+
+149 to 157 
+
+
+312 to 314 
+
+
+170 to 172 
+
+
+340 to 342 
+
+
+
+3) The System data gives the characteristics of an Embossed Zone on the disk. The data shall be recorded in bytes 380 
+to 383, and is mandatory for partially and fully embossed media. Bytes 400 to 428 are mandatory for all types of 
+media. 
+
+4) The last group contains unspecified data, recorded in bytes 480 to 5 1 1 . 
+Optional bytes shall either contain the prescribed data or shall be set to (FF). 
+
+76 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+F.l Media characterization data 
+
+Byte 0: Format Descriptor 1 
+
+This byte shall be set to 00000000, indicating Continuous Composite Servo tracking, Constant Angular Velocity of the disk, 
+(2,7) RLL marie position Recording code. 
+
+Byte 1: Format Descriptor 2 
+
+This byte shall be set to 00010001, indicating Reed-Solomon Long Distance Error Correction Code of degree 16 with a 5- 
+way interleave, 512 bytes user data per sector. 
+
+Byte 2: Sectors per track 
+
+This byte shall be set to 0001 1001, indicating 25 sectors per track. 
+
+Byte 3: Reflectance 
+
+This byte shall specify the disk manufacturer's specification of the reflectance R of the disk, expressed as a fraction, when 
+measured at a nominal wavelength of 825 nm. It is specified as a number n such that 
+
+n=lO0R 
+
+Byte 4: On-land or in-groove recording 
+
+This byte shall be set to 00000000, indicating on-land recording. 
+
+Byte 5: Reserved 
+
+This byte shall be set to (FF). 
+
+Byte 6: Maximum read power 
+
+This byte shall specify the lowest of the values specified in Bytes 21, 135 and 249 of the Control Zones. It specifies the 
+maximum read power P v , in milliwatts, permitted for reading the Control Zones. It is specified as a number n such that 
+
+n = 20P w 
+
+Byte 7: Media type 
+
+The allowed settings of this byte shall be 
+
+0000 0000: indicates fully embossed media 
+
+0010 0000: indicates fully rewritable media, M.O. 
+
+1010 0000: indicates rewritable media, M.O., with partially embossed data 
+
+Other settings of this byte are prohibited by this International Standard, they are reserved for future standardization. 
+
+Bytes 8, 9: Last track in the Data Zone 
+
+These bytes shall be set to 001001 1 1 and 00001 111, respectively, indicating the MSB, LSB of the track number of the last 
+track in the Data Zone, viz, 9999. 
+
+Byte 10: Polarity of the figure of merit 
+
+This byte shall be set to 00000001, indicating that the polarity is negative. 
+
+Byte 11: Magnitude of the figure of merit 
+
+This byte shall indicate the magnitude of the figure of merit F, specified as a number n, such that 
+
+n=10000F 
+
+Bytes 12,13: Reserved 
+
+77 
+
+
+
+ISO/IEC 10090 : 1992 
+
+These bytes shall be set to (FF). 
+
+Bytes 14 to 17: Unspecified 
+
+These bytes may be used for manufacturer identification. They shall be ignored in interchange. 
+
+F.2 Recording control data 
+Byte 18: Wavelength 
+
+This byte shall specify the wavelength L x , in nanometres, of the drive as a number n such that 
+
+«= 1/5 L,. 
+
+This byte shall be set to n - 165. 
+
+Byte 19: Reflectance 
+
+This byte shall specify the reflectance /?, of the disk measured at wavelength L x as a number n such that 
+
+n= 100/?,. 
+
+The value of n shall be equal to that recorded in byte 3. 
+
+Byte 20: Rotational frequency 
+
+This byte shall specify the rotational frequency N, in hertz of the disk as a number n such that 
+
+n = N x . 
+
+This byte shall be set to n = 30. 
+
+Byte 21: Maximum read power 
+
+This byte shall specify the maximum read power Z 3 ,. in milliwatts, in the Information Zone under condition L, and A^, 
+expressed as a number n such that 
+
+n = 2QP X 
+
+where 24 < n < 26 
+
+Bytes 22 to 30: Write power at constant pulse width 
+
+Bytes 22 to 30 shall specify the write powers P w , in milliwatts, for three values of a pulse width T p , under condition L x and 
+/Vj , where T is the period of one Channel bit. P w is expressed as a number n such that 
+
+n = 5 Pw. 
+
+Byte 22 Write power at 7" p = 1 ,00 T ns and r = 24 mm 
+Byte 23 Write power at T p = 1 ,00 T ns and r = 30 mm 
+Byte 24 Write power at T p = 1 ,00 T ns and r - 40 mm 
+
+Byte 25 Write power at T p = 0,50 7*ns and r = 24 mm 
+Byte 26 Write power at T p - 0,50 T ns and r = 30 mm 
+Byte 27 Write power at 7" = 0,50 T ns and r -- 40 mm 
+
+Byte 28 Write power at T p = 0,25 T ns and r = 24 mm 
+Byte 29 Write power at T p = 0,25 T ns and r = 30 mm 
+Byte 30 Write power at T p = 0,25 T ns and r = 40 mm 
+
+Bytes 31 to 34: Write pulse width at constant write power 
+
+Bytes 31 to 34 shall specify the write pulse width T , in nanoseconds, at a write power P w under condition L, and N x .T p is 
+expressed as a number n such that 
+
+78 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Byte 31 Write power 
+Byte 32 Write pulse width at r = 24 mm 
+Byte 33 Write pulse width at r = 30 mm 
+Byte 34 Write pulse width at r = 40 mm 
+
+Bytes 35 to 43: Reserved 
+
+These bytes shall be set to (FF). 
+
+Bytes 44 to 47: D.c. erase power 
+
+Byte 44 shall be set to (00). Bytes 45 to 47 shall then specify erase powers P t , in milliwatts, for a d.c. erase at three radii, 
+under condition L t and N v P e is expressed in the same way as P w in bytes 22 to 30. 
+
+Byte 45 Erase power at r = 24 mm 
+Byte 46 Erase power at r = 30 mm 
+Byte 47 Erase power at r = 40 mm 
+
+Byte 48: Rotational frequency 
+
+This byte shall specify the rotational frequency N 2 , in hertz, of the disk, expressed in the same way as Nj in byte 20. 
+
+If this byte is not set to (FF), n shall be set to 40. 
+
+Bytes 49 to 75 
+
+These bytes shall specify the same parameters as in bytes 21 to 47, but under the condition L x and N 2 , except bytes 56 to 58 
+which shall be set to (FF). 
+
+Byte 76: Rotational frequency 
+
+This byte shall specify the rotational frequency iv* 3 , in hertz, of the disk, expressed in the same way as N^ in byte 20. 
+If this byte is not set to (FF), n shall be set to 60. 
+Bytes 77 to 103 
+
+These bytes shall specify the same parameters as in bytes 21 to 47, but under the condition L t and N 3 , except bytes 84 to 86 
+which shall be set to (FF). 
+
+Byte 104: Rotational frequency 
+
+This byte shall specify the rotational frequency N 4 , in hertz, of the disk, expressed in the same way as Nj in byte 20. 
+
+If this byte is not set to (FF), n shall have a value other than 30, 40 or 60. 
+
+Bytes 105 to 131 
+
+These bytes shall specify the same parameters as in bytes 21 to 47, but under the condition L x and N 4 , except bytes 112 to 
+1 14 which shall be set to (FF). 
+
+Byte 132: Wavelength 
+
+This byte shall specify the wavelength L^ of the drive, in nanometres, as a number n such that 
+
+n=l/5L2 
+
+This byte shall be set to n = 156 
+
+Byte 133: Reflectance 
+
+This byte shall specify the reflectance R 2 of the disk measured at wavelength Lj as a number n such that 
+
+n~ 100 R 2 
+
+79 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Byte 134: Rotational frequency 
+
+This bytes shall specify the rotational frequency N, of the disk, in hertz, as a number n such that 
+
+« = #, 
+
+This byte shall be set to n = 30. 
+
+Byte 135: Maximum read power 
+
+This byte shall specify the maximum read power P 2 in the Information Zone, in milliwatts, under condition L^ and N v 
+expressed as a number n such that 
+
+n = 20 P 2 
+
+where 24 < n < 26 
+
+Bytes 136 to 144: Write power at constant pulse width 
+
+These bytes shall specify the write powers P w in milliwatts for three values of a pulse width T , under condition L^ and N { 
+for three radii, where T is the period of one Channel bit. /* w is expressed as number n such that 
+
+n = 5P w 
+
+Byte 136 Write power at T p = 1,00 7"nsandr = 24 mm 
+Byte 1 37 Write power at T p = 1 ,00 T ns and r = 30 mm 
+Byte 1 38 Write power at 7" p = 1 ,00 T ns and r = 40 mm 
+
+Byte 139 Write power at T p = 0,50 Tns and r = 24 mm 
+Byte 140 Write power at T p - 0,50 T ns and r - 30 mm 
+Byte 14 1 Write power at T p - 0.50 T ns and r = 40 mm 
+
+Byte 142 Write power at T p - 0,25 7"ns and r = 24 mm 
+Byte 143 Write power at T = 0,25 T ns and r = 30 mm 
+Byte 144 Write power at T - 0,25 Tns and r - 40 mm 
+
+Bytes 145 to 148: Write pulse width at constant write power 
+
+These bytes shall specify the write pulse width T in nanoseconds, at a write power P w under condition Lj and N { for three 
+radii. T is expressed as a number n such that 
+
+" = 7 P 
+
+P w is expressed in the same way as in bytes 136 to 144. 
+
+Byte 145 Write power 
+Byte 146 Write pulse width at r = 24 mm 
+Byte 147 Write pulse width at r = 30 mm 
+Byte 148 Write pulse width at r = 40 mm 
+
+Bytes 149 to 157: Reserved 
+
+These bytes shall be set to (FF). 
+
+Bytes 158 to 161: D.c. erase power 
+
+Byte 158 shall be set to (00). Bytes 159 to 161 shall then specify erase powers P e , in milliwatts, for a d.c. erase at three radii, 
+under condition Z^ and N v P t is expressed in the same way as P w in bytes 136 to 144. 
+
+Byte 159 Erase power at r = 24 mm 
+Byte 160 Erase power at r - 30 mm 
+Byte 161 Erase power at r = 40 mm 
+
+80 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Byte 162: Rotational frequency 
+
+This byte shall specify the rotational frequency N 2 of the disk, in hertz , expressed in the same way as N 1 in byte 134. 
+
+If this byte is not set to (FF), n shall be set to 40. 
+
+Bytes 163 to 189 
+
+These bytes shall specify the same parameters as in bytes 135 to 161, but under the condition l^ and N 2 , except bytes 170 to 
+172 which shall be set to (FF). 
+
+Byte 190: Rotational frequency 
+
+This byte shall specify the rotational frequency N 3 of the disk, in hertz , expressed in the same way as N { in byte 134. 
+
+If this byte is not set to (FF), n shall be set to 60. 
+
+Bytes 191 to 217 
+
+These bytes shall specify the same parameters as in bytes 135 to 161, but under the condition Lj and N 3 , except bytes 198 to 
+200 which shall be set to (FF). 
+
+Byte 218: Rotational frequency 
+
+This byte shall specify the rotational frequency N 4 of the disk, in hertz , expressed in the same way as Nj in byte 134. 
+
+If this byte is not set to (FF), n shall have a value other than 30, 40 or 60. 
+
+Bytes 219 to 245 
+
+These bytes shall specify the same parameters as in bytes 135 to 161, but under the condition L^ and N 4 , except bytes 226 to 
+228 which shall be set to (FF). 
+
+Byte 246: Wavelength 
+
+This byte shall specify the wavelength L, of the drive, in nanometres, expressed in the same way as L^ in byte 132. 
+
+Bytes 247 to 359 
+
+These bytes shall specify the same parameters as in bytes 133 to 245, but under the condition L$, except bytes 263 to 271, 
+284 to 286, 312 to 314 and 340 to 342 which shall be set to (FF). Bytes 256 to 258 are optional. 
+
+Bytes 360 to 379: Reserved 
+
+These bytes shall be set to (FF). 
+
+Summary of recording control data 
+
+Table F.l summarizes the requirements for bytes 18 to 359. In this table: 
+
+- large, bold numbers are those of the mandatory bytes, see 2a); 
+
+- large, italic, shaded numbers are those of the bytes which shall always be set to (FF). see 2c); 
+
+- smaller, normally printed numbers are those of the bytes the content of which is optional. These bytes shall either contain 
+the value specified for them in F.l or be set to (FF). see 2b). 
+
+F.3 System data 
+Bytes 380 and 381: First track of tbe Embossed Zone 
+
+If a disk has an Embossed Zone, these bytes shall specify the MSB, LSB of the track number of the first track of this Zone 
+(see table 5), else they shall be set to (FF). 
+
+81 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Bytes 382 and 383: Last track of the Embossed Zone 
+
+If a disk has an Embossed Zone, these bytes shall specify the MSB, LSB of the track number of the last track of this Zone 
+(see table 5), else they shall be set to (FF). 
+
+Bytes 384 to 399: Reserved 
+
+These bytes shall be set to (FF). 
+
+Bytes 400 to 428: Control bytes for partially embossed disks 
+
+This information is required for partially embossed disks and contains parameter values for bytes to 28 of the DDS. These 
+control bytes shall be defined by the manufacturer at the time the disk is manufactured. Bytes 421 to 428, which represent 
+addresses of the PDL and SDL, shall be set to (FF). The control bytes can be used by the user as input to the format process 
+and to recover the contents of the DDS if lost through machine error or if inadvertently overwritten. For fully rewritable and 
+fully embossed disks, these bytes shall be set to (FF). 
+
+Bytes 429 to 479: Reserved. 
+
+These bytes shall be set to (FF). 
+
+F.4 Unspecified data 
+
+Bytes 480 to 511 
+
+The contents of these bytes are not specified in this International Standard. They may contain an identification of the 
+manufacturer. They shall be ignored in interchange. 
+
+
+
+82 
+
+
+
+Table F.l - Summary of recording control data 
+
+
+
+IS 14701 : 1999 
+ISO/1EC 10090 : 1992 
+
+
+
+LI 
+
+
+Ll 
+
+
+Ll 
+
+
+Ll 
+
+
+L2 
+
+
+L2 
+
+
+L2 
+
+
+L2 
+
+
+L3 
+
+
+L3 
+
+
+L3 
+
+
+L3 
+
+
+Nl 
+
+
+N2 
+
+
+N3 
+
+
+N4 
+
+
+Nl 
+
+
+N2 
+
+
+N3 
+
+
+N4 
+
+
+Nl 
+
+
+N2 
+
+
+N3 
+
+
+N4 
+
+
+18 
+
+
+132 
+
+
+246 
+
+
+wWMi 
+
+
+19 
+
+
+
+
+: Bm§ 
+
+
+133 
+
+
+
+
+247 
+
+
+48 
+
+
+76 
+
+
+104 
+
+
+162 
+
+
+190 
+
+
+218 
+
+
+248 
+
+
+276 
+
+
+304 
+
+
+332 
+
+
+KMM 
+
+
+49 
+
+
+77 
+
+
+105 
+
+
+■"mm 
+
+
+163 
+
+
+191 
+
+
+219 
+
+
+249 
+
+
+277 
+
+
+305 
+
+
+333 
+
+
+WmM 
+
+
+50 
+
+
+78 
+
+
+106 
+
+
+W*M§ 
+
+
+164 
+
+
+192 
+
+
+220 
+
+
+250 
+
+
+278 
+
+
+306 
+
+
+334 
+
+
+liiilii: 
+
+
+51 
+
+
+79 
+
+
+107 
+
+
+WtiWi 
+
+
+165 
+
+
+193 
+
+
+221 
+
+
+251 
+
+
+279 
+
+
+307 
+
+
+335 
+
+
+;ii:i!li*iii!!i 
+
+
+52 
+
+
+80 
+
+
+108 
+
+
+WmM 
+
+
+166 
+
+
+194 
+
+
+222 
+
+
+252 
+
+
+280 
+
+
+308 
+
+
+336 
+
+
+WMm 
+
+
+53 
+
+
+81 
+
+
+109 
+
+
+; i*39i 
+
+
+167 
+
+
+195 
+
+
+223 
+
+
+253 
+
+
+281 
+
+
+309 
+
+
+337 
+
+
+IlKS; 
+
+
+54 
+
+
+82 
+
+
+110 
+
+
+■M$M 
+
+
+168 
+
+
+196 
+
+
+224 
+
+
+254 
+
+
+282 
+
+
+310 
+
+
+338 
+
+
+27 
+28 
+
+
+55 
+
+
+83 
+
+
+111 
+
+
+iJ42i 
+
+
+169 
+
+
+197 
+
+
+225 
+
+
+255 
+256 
+
+
+283 
+
+
+311 
+
+
+339 
+
+
+56 
+
+
+;84 ■ 
+
+
+112 
+
+
+- ; H«i 'I'm!; i ' ' ill). "i 
+
+
+m , 
+
+
+'1224 i: 
+
+
+
+
+340 
+
+. :.;imE....,hi.-«.!iI.ii 
+
+
+29 1 
+
+
+'"•57;,}: 
+
+
+85 
+
+
+113 
+
+
+: : : >143;::: : 
+
+
+;;iziv 
+
+
+199 
+
+
+227 ,; 
+
+
+257 
+
+
+
+
+:&3j^^4i^: 
+
+
+31 
+
+
+>•&•< 
+
+
+86 
+
+
+114 
+
+
+
+
+m : M 
+
+
+200 
+
+
+22$ 
+
+
+258 
+259 
+
+
+^286M 
+
+
+:i : 314^ 
+
+
+''?342$- 
+
+
+59 
+
+
+87 
+
+
+115 
+
+
+173 
+
+
+201 
+
+
+229 
+
+
+287 
+
+
+315 
+
+
+343 
+
+
+W$M 
+
+
+60 
+
+
+88 
+
+
+116 
+
+
+m 
+
+
+174 
+
+
+202 
+
+
+230 
+
+
+260 
+
+
+288 
+
+
+316 
+
+
+344 
+
+
+mssm 
+
+
+61 
+
+
+89 
+
+
+117 
+
+
+BBW: 
+
+
+175 
+
+
+203 
+
+
+231 
+
+
+261 
+
+
+289 
+
+
+317 
+
+
+345 
+
+
+WM.i 
+
+
+62 
+63 
+
+
+90 
+91 
+
+
+118 
+119 
+
+
+m 
+
+
+176 
+177 
+
+
+204 
+205 
+
+
+232 
+233 
+
+
+262 
+
+
+290 
+291 
+
+
+318 
+319 
+
+
+346 
+347 
+
+
+liPllt 
+
+
+€l48>$m- 
+
+
+4iMii|i 
+
+
+,;;:;3tf,;;;j;; 
+
+
+64 
+
+
+92 
+
+
+120 
+
+
+-ulISQM 
+
+
+178 
+
+
+206 
+
+
+234 
+
+
+X&tk 
+
+
+292 
+
+
+320 
+
+
+348 
+
+
+37 
+
+
+65 
+
+
+93 
+
+
+121 
+
+
+'ffitfl 
+
+
+179 
+
+
+207 
+
+
+235 
+
+
+rjgjjtff 
+
+
+293 
+
+
+321 
+
+
+349 
+
+
+p:^ 
+
+
+66 
+
+
+94 
+
+
+122 
+
+
+iUa£ 
+
+
+180 
+
+
+208 
+
+
+236 
+
+
+■:fj2j<#t 
+
+
+294 
+
+
+322 
+
+
+350 
+
+
+; ,...^.,, 
+
+
+67 
+
+
+95 
+
+
+123 
+
+
+:; : :>5il 
+
+
+181 
+
+
+209 
+
+
+237 
+
+
+pil 
+
+
+295 
+
+
+323 
+
+
+351 
+
+
+40 
+
+
+68 
+
+
+96 
+
+
+124 
+
+
+$1543 
+
+
+182 
+
+
+210 
+
+
+238 
+
+
+■*&&;■& 
+
+
+296 
+
+
+324 
+
+
+352 
+
+
+■L:M;i| 
+
+
+69 
+
+
+97 
+
+
+125 
+
+
+,:,!,:■ ■•■".:: 
+
+-1.155m 
+
+
+183 
+
+
+211 
+
+
+239 
+
+
+: tM::'i: 
+
+
+297 
+
+
+325 
+
+
+353 
+
+
+:f'42 :l ;t.;': 
+
+
+70 
+71 
+72 
+
+
+98 
+99 
+100 
+
+
+126 
+127 
+128 
+
+
+.:*■'•■ 1^0->--- 
+■■'•V' ^iv:'^* 
+
+
+184 
+185 
+186 
+
+
+212 
+213 
+214 
+
+
+240 
+
+241 
+242 
+
+
+■|,ini (■'■'" '■)»» l ' ( iw)! 
+
+■$27M 
+
+
+298 
+299 
+300 
+
+
+326 
+327 
+328 
+
+
+354 
+355 
+356 
+
+
+4^ 
+
+
+msm 
+
+
+272 
+
+
+Bssi 
+
+
+73 
+
+
+101 
+
+
+129 
+
+
+l WM 
+
+
+187 
+
+
+215 
+
+
+243 
+
+
+273 
+
+
+301 
+
+
+329 
+
+
+357 
+
+
+IliKill 
+
+
+74 
+
+
+102 
+
+
+130 
+
+
+wwm 
+
+
+188 
+
+
+216 
+
+
+244 
+
+
+274 
+
+
+302 
+
+
+330 
+
+
+358 
+
+
+niniiMtHini! 
+
+
+75 
+
+
+103 
+
+
+131 
+
+
+Mtm 
+
+
+189 
+
+
+217 
+
+
+245 
+
+
+275 
+
+
+303 
+
+
+331 
+
+
+359 
+
+
+
+
+Mandatory: Bytes set to (FF) 
+
+
+
+Mandatory 
+
+
+
+Not mandatory 
+
+
+
+See F.l for the specification of the content of each byte. 
+
+
+
+83 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Annex G 
+(informative) 
+
+Guidelines for sector replacement 
+
+Clause 19 assumes that a sector is defective and will be replaced by the defect management, for instance when any of the 
+following conditions exist: 
+
+a) a sector has two or three ID fields with each an error as detected by the CRC check; 
+
+b) the Sector Mark cannot be recognized; 
+
+c) a column in the Data field (see table E.l) contains more than three defective bytes A„. 
+
+Annex H 
+(normative) 
+
+Measurement of the figure of merit 
+
+H.l The figure of merit enables a drive designer to determine the amplitude of the signal in Channel 2 of the drive from 
+magneto-optical marks recorded on the disk at a low spatial frequency in both the radial and tangential direction. 
+
+Determination of the figure of merit using a drive as the Reference Drive specified in clause 9 will not measure media 
+properties only but also the optical retardation of the optical system of the drive. Therefore, a calibration of the drive is 
+needed with a conventional determination of the figure of merit by measuring the reflectance, Kerr rotation and ellipticity. 
+This calibration can only be executed reliably on media with low coercivity. 
+
+H.2 The drive shall be calibrated as follows. A test disk with negligible birefringence, e.g. a glass disk, and a low- 
+coercivity magneto-optical layer is used for a conventional determination of the reflectance R, the Kerr rotation 6 of the 
+polarization between both opposite states of magnetization of the layer, and the Kerr ellipticity B. The figure of merit of the 
+media is then 
+
+F L = R sine cos2B 
+
+A low-frequency test pattern is written on the same disk. The written domains shall be substantially larger than the focal 
+spot, so as to work in the low spatial frequency region where the modulation transfer function of the optical system is one. 
+This implies that for a disk rotating at 30 Hz, a pattern of long domains with a frequency lower than 100 kHz has to be 
+written on several consecutive tracks, while keeping the marks in neighbouring tracks radially aligned and overlapping. 
+
+The pattern is read with the drive to be calibrated. The resulting peak-to-peak amplitude VL of the signal in Channel 2 of the 
+drive is the required calibration constant for this drive. 
+
+H.3 The figure of merit of any low- or high-coercivity disk can now be determined on the calibrated drive by writing 
+the above test pattern and reading the peak-to-peak amplitude V of the signal in Channel 2. The figure of merit F of this disk 
+is then 
+
+L VL 
+
+
+
+84 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex J 
+(informative) 
+
+Read power, write power and erase power 
+
+
+
+J.l Read power 
+
+The values of P max for two further rotational frequencies are defined in table J.l. The value contained in the Control Zone 
+may not exceed these values for a specific rotational frequency. 
+
+Table J.l • Rotational frequency and maximum read power 
+
+
+
+Rotational Frequency 
+
+
+Maximum Read Power P,^ 
+
+
+40 Hz 
+60 Hz 
+
+
+l,4mW<P ma ,<l,5mW 
+
+l,8mW</ , mM <2,0mW 
+
+
+
+J.2 Write power and erase power 
+
+The values of write power and erase power contained in the Control Zones are described as the values at the temperature of 
+23 °C only and should not exceed the values for the following two rotational frequencies as follows: 
+
+Rotational Frequency Maximum Write Power and Maximum Erase Power 
+
+
+
+40 Hz 
+
+
+
+^w,e=61 
+
+
+
+
+
+
+mW 
+
+
+
+P w e = 8 mW 
+
+
+
+T p < 72 ns 
+
+
+
+T p > 72 ns 
+
+
+
+60 Hz 
+
+
+
+**»,=« 
+
+
+
+1 X 
+
+l T P TV) 
+
+
+
+mW 
+
+
+
+P w e = 10 mW 
+
+
+
+T < 48 ns 
+
+
+
+7p > 48 ns 
+
+
+
+where P w e is the write power (P w ) or erase power (PJ and T is the numeric value in nanoseconds of the write pulse width. 
+The write power and erase power should be compensated for the temperature of the disk according to the formula: 
+
+P^P 23 -[0,03(T op -23)) 
+where 
+
+P t is the compensated power, 
+P 2 3 is the value described in the Control Zone, and 
+T is the iiumeric value in degree Centigrade (°C) of the temperature of the disk. 
+
+
+
+85 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+Annex K 
+(normative) 
+
+Test method for measuring the adsorbent force of the hub 
+
+K.l The purpose of this test is to determine the magnetic characteristic of the magnetizable material of the hub. 
+
+K.2 The test device (see figure K.l) consists of a spacer, a magnet, a back yoke and a centre shaft. The dimensions of 
+the test device are as follows: 
+
+D d = 7,0 mm ±0,1 mm 
+D e = 14,0 mm ±0,1 mm 
+D f = 13,0 mm max. 
+
++ 0,0 mm 
+
+D = 3,9 mm 
+
+8 - 0,1 mm 
+
+H c = 0,40 mm ± 0,01 mm 
+tf d = 1,00 mm ±0,05 mm 
+
+K.3 The material of the test device shall be: 
+
+Magnet : Sm-Co 
+
+Back yoke : Any suitable magnetizable material 
+
+Spacer : Non-magnetizable material or air gap 
+
+Centre shaft : Non-magnetizable material 
+
+K.4 The characteristics of the magnet with back yoke are as follows: 
+
+Number of poles :4 
+
+Maximum energy product (JSHj^'AlS kJ/m 3 ± 16 kJ/m 3 
+
+The characteristics of the magnet with back yoke shall be adjusted by the use of a pure nickel plate with the following 
+dimensions (see figure K.2), and the adsorbent force of this plate at the point of H c = 0,4 mm when spaced from the magnet 
+surface shall be 3,3 N ± 0,2 N. 
+
+Z\= 6,0 mm ±0,1 mm 
+D x - 15,0 mm ±0,1 mm 
+H t - 1,00 mm ± 0,05 mm 
+
+K S The test condition for temperature shall be as specified in 8.1.1. 
+
+
+
+86 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+
+Centre shaft 
+
+
+
+Figure K.l - Test device for the clamping characteristic of the hub 
+
+
+
+mtimmBBnmnninjinifniinBR 
+
+
+
+D h 
+
+
+
+
+
+
+tfffljtftftm&UUUA 
+
+
+
+D. 
+
+
+
+"e 
+
+
+
+Figure K.2 - Calibration plate of the test device 
+
+
+
+87 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex L 
+(informative) 
+
+Derivation of the operating climatic environment 
+
+
+
+This annex gives some background on how some of the conditions of the operating environment in clause 8.1.2 have been 
+derived. 
+
+L.l Standard climatic environment classes 
+
+The conditions of the ODC operating environment are, with a few exceptions mentioned below, based on parameter values 
+of the IEC standard climatic environment class 3K3 described in EC publication 721-3-3:1987 !) . This publication defines 
+environmental classes for stationary use of equipment at weather-protected locations. 
+
+The IEC class 3K3 refers to climatic conditions which 
+
+"... may be found in normal living or working areas, e.g. living rooms, rooms for general use (theatres, restaurants, etc.), 
+offices, shops, workshops for electronic assemblies and other electrotechnical products, telecommunication centres, storage 
+rooms for valuable and sensitive products." 
+
+L.2 Overtemperature considerations 
+
+While IEC class 3K3 defines the limits for the room climate only, the ODC operating environment specification in this 
+International Standard takes into consideration also system and drive overtemperature. This means that when inserted in a 
+drive, the ODC will sense a temperature which is above the ambient room temperature. The figures in the operating 
+environment specification have been calculated from the assumption that this overtemperature may be up to 20 °C. 
+
+L.3 Absolute humidity 
+
+The introduction of the parameter 
+
+absolute humidity [unit: g water / m 3 of air] 
+
+is very useful when studying overtemperature. When the temperature rises inside a drive, the relative humidity goes down 
+but the absolute humidity remains substantially constant So, making room for overtemperature in the operating environment 
+specification affects not only the upper temperature limit but also the lower relative humidity limit. The relationship 
+between these parameters is shown in the climatogram (the relative humidity versus temperature map) of the ODC operating 
+environment, figure L.l. 
+
+The absolute humidity restrictions influence the operating environment in the following two ways: 
+
+a) Combinations of high temperatures and high relative humidities are excluded. Such combinations could have negative 
+influence on the performance and the life of ODCs. 
+
+b) Combinations of low temperatures and low relative humidities are excluded. Such combinations are very unlikely to 
+occur in worldwide normal office environments. 
+
+1J Classification of environmental conditions • Part 3: Classification of groups of environmental parameters and their 
+severities. Stationary use at weatherprotected locations. 
+
+
+
+88 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+L.4 Deviations from the IEC standard environment class 
+
+Apart from the changes introduced by the overtemperature considerations mentioned above, there are a few more parameter 
+values which are not based on IEC class 3K3. These are: 
+
+Atmospheric pressure 
+
+The IEC 3K3 lower limit of 70 kPa has been extended to 60 kPa. ODCs show no intrinsic pressure sensitivity and 
+70 kPa excludes some possible markets for ODCs. 
+
+Absolute humidity 
+
+The IEC 3K3 value for the upper limit of 25 g/m 3 has been raised to 30 g/m 3 in view of some expected operation in 
+portable devices outside the controlled office environment. 
+
+Temperature 
+
+The maximum temperature around the ODC, i.e. room temperature plus overtemperature, has been limited to SO °C 
+(while IEC 3K3 + 20 °C would have become 60 °C). For ODCs according to this International Standard, however, the 50 °C 
+limit is considered to be a physical limit above which operation (as well as storage) is not safe. 
+
+This means that equipment designers may want to ensure adequate cooling inside the drive especially when the 
+room temperature approaches the upper EEC 3K3 limit of 40 °C. 
+
+Further 
+
+The rates of change (the gradients) of temperature and relative humidity are not according to IEC 3K3. 
+
+L.5 Wet bulb temperature specifications 
+
+Instead of specifying limits for the absolute humidity, earlier standards for ODCs as well as those for other digital data 
+storage media often used restrictions of the parameter 
+
+wet bulb temperature [unit: °C] 
+
+in order to avoid too severe combinations of high temperatures and high relative humidities. 
+
+In order to facilitate comparisons between different specifications, figure L.2 shows wet bulb temperatures of interest for the 
+ODC operating environment, as well as for the testing and storage environments. Since wet bulb temperatures vary slightly 
+with the atmospheric pressure, the diagram is valid for the normal pressure of 101,3 kPa. 
+
+
+
+89 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Absolute air humidity in g/m 3 
+
+
+
+
+I EC Class 3K3 
+
+
+
+ODC Operating environment 
+
+
+
+40 50 60 
+
+Air temperature in °C 
+
+
+
+90 
+
+
+
+Figure L.l - Climatogram of IEC Class 3K3 and the ODC operating environment 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+100 
+
+
+
+90- 
+
+
+
+80 - 
+
+
+
+70- 
+
+
+
+S 60 
+
+
+
+•o 
+
+'I— 
+
+s 
+
+
+
+> 
+
+
+
+50 
+
+
+
+£ 40 
+
+
+
+30 - 
+
+
+
+20 - 
+
+
+
+10 
+
+
+
+Wet bulb temperature (°C) 
+
+10 20 30 40 
+
+
+
+
+i humility: 
+
+
+
+t "- 
+
+10 20 30 40 
+
+A1r temperature (°C) 
+
+
+
+Figure L.2 - Wet bulb temperatures of the operating and storage environments 
+
+
+
+91 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex M 
+(normative) 
+
+Air cleanliness class 100 000 
+
+
+
+The classification of air cleanliness is based on a particle count with a maximum allowable number of specified minimum 
+sized particles per unit volume, and on a statistical average particle size distribution. 
+
+M.l Definition 
+
+The particle count shall not exceed a total of 3 300 000 particles per cubic metre of a size 0,5 um and larger. 
+
+The statistical average particle size distribution is given in figure M.l. Class 100 000 means that 3 500 000 particles per 
+cubic metre of a size of 0,5 um and larger are allowed, but only 25 000 particles per cubic metre of a size of 5,0 um and 
+larger. 
+
+It should be recognized that single sample distribution may deviate from this curve because of local or temporary conditions. 
+Counts below 350 000 particles per cubic metre are unreliable except when a large number of samplings is taken. 
+
+M.2 Test method 
+
+For particles of sizes of the 0,5 um to 5,0 um, equipment employing light-scattering principles shall be used. The air in the 
+controlled environment is sampled at a known flow rate. Particles contained in the sampled air are passed through an 
+illuminated sensing zone in the optical chamber of the instrument. Light scattered by individual particles is received by a 
+photo detector which converts the light pulses into electrical current pulses. An electronic system relates the pulse height to 
+particle size and counts the pulses such that the number of particles in relation to particle! Size is registered or displayed. 
+
+
+
+jj 100 000 000 
+
+
+
+c 
+8. 
+
+
+
+1 
+
+
+
+I 
+
+
+
+E 
+
+I 
+
+2 
+
+M 
+
+r 
+8. 
+
+hi 
+
+E 
+
+3 
+
+e 
+
+I 
+
+
+
+10 000 000 
+
+
+
+1 000 000 
+
+
+
+100 000 
+
+
+
+10 000 
+
+
+
+1 000 
+
+
+
+100 
+
+
+
+
+
+
+
+
+
+
+
+\ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\ 
+
+
+
+
+
+
+
+
+\ 
+
+
+
+
+
+0.1 0.S 1 5 10 100 1 000 
+
+Particle size in pm 
+
+
+
+92 
+
+
+
+Figure M.l - Particle size distribution curve 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex N 
+(normative) 
+
+Position of the cartridge relative to the reference planes 
+
+This annex shows the position of the cartridge relative to the reference planes, as specified in 10.2. 
+
+
+
+Location 
+hole 
+
+
+
+Si 
+
+
+
+
+Alignment 
+hole 
+
+
+
+Figure N.l • Position of the cartridge 
+
+
+
+93 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex P 
+(informative) 
+
+Transportation 
+
+
+
+P.l As transportation occurs under a wide range of temperature and humidity variations, for differing periods, by many 
+methods of transport and in all parts of the world it is not possible to specify conditions for transportation or for packaging. 
+
+P 2 The form of packaging should be agreed between sender and recipient or, in the absence of such agreement, is the 
+responsibility of the sender. It should take account of the following hazards. 
+
+P .2.1 Temperature and humidity 
+
+Insulation and wrapping should be designed to maintain the conditions for storage over the estimated period of 
+transportation. 
+
+P .2 .2 Impact loads and vibration 
+
+a) Avoid mechanical loads that would distort the shape of the cartridge. 
+
+b) Avoid dropping the cartridge. 
+
+c) Cartridges should be packed in a rigid box containing adequate shock-absorbent material. 
+
+d) The final box should have a clean interior and a construction that provides sealing to prevent the ingress of dirt and 
+
+moisture. 
+
+
+
+Annex Q 
+(informative) 
+
+Office environment 
+
+
+
+Due to their construction and mode of operation optical disk cartridges have considerable resistance to the effects of dust 
+particles around and inside the disk drive. Consequently it is not generally necessary to take special precaution to maintain a 
+sufficiently low concentration of dust particles. 
+
+Operation in heavy concentrations of dust should be avoided, e.g. in a machine shop or on a building site. 
+
+Office environment implies an environment in which personnel may spend a full working day without protection and 
+without suffering temporary or permanent discomfort. 
+
+
+
+94 
+
+
+
+IS 14701 : 1999 
+ISO/IEC 10090 : 1992 
+
+
+
+Annex R 
+(normative) 
+
+Relaxation by zones of the requirements for signals 
+
+
+
+Table R.1 shows the zones in which the requirements specified in the body of this International Standard shall be satisfied 
+and those in which they are relaxed. 
+
+indicates the zones in which the values of the signals shall be within the range specified. 
+
+
+
+indicates the zones in which the range is extended from 80% of the lower limit to 120% of the 
+upper limit The requirement for uniformity is extended from ± 12% to ± 20%. 
+
+
+
+No marking indicates the zones for which the requirements are not applicable. 
+
+
+
+Table R.1 - Requirements for signals in each zone 
+
+
+
+CLAUSE 
+
+
+SIGNAL 
+
+
+ZONES 
+
+
+INITIAL 
+
+
+ACQUIRE 
+
+
+TEST 
+
+
+CONTROL 
+
+
+DATA 1 CONTROL 
+
+
+TEST 
+
+
+BUFFER 
+
+
+LEAD 1 FOCUS 
+
+
+MFG. 1 DRIVE 
+
+
+DRIVE 1 MKS. 
+
+
+11.5,4 
+
+
+Reflectance 
+
+
+
+
+
+
+
+
+
+
+11.5.4 
+
+
+Unifoimity 
+
+
+
+
+
+
+
+
+
+
+
+
+21.U 
+
+
+Cross T.ack 
+
+
+
+
+
+
+
+
+
+
+
+
+MMilllM •• 
+
+
+
+
+
+
+21.1* 
+
+
+Cross Track 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+21.2 
+
+
+Cross Track Mm. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2lJ.a 
+
+
+PP 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+21.3J. 
+
+
+PP 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+214 
+
+
+DPP(fiist) 
+
+
+
+
+
+
+
+
+
+
+21.4 
+
+
+DPP (second) 
+
+
+
+
+
+
+
+
+
+
+
+
+21.5 
+
+
+On Track 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22.1 
+
+
+SM 
+
+
+
+
+
+
+
+
+
+
+
+
+iiillll 
+
+
+22i 
+
+
+VFOi,VP02 
+
+
+
+
+
+
+
+
+mum 
+
+
+
+
+
+
+223 
+
+
+AM, ID, PA 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23 
+
+
+Embossed Data 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+243.2 
+
+
+Write Power 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+24.4.1 
+
+
+Erase Power 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25.1 
+
+
+POM 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25.2 
+
+
+Imbalance 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+26.1 
+
+
+Resolution 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+26.2 
+
+
+NBSN 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+263 
+
+
+Cross Talk 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+27 
+
+
+Erase Char. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+95 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1 986 to promote harmonious 
+development of the activities of standardization, marking and quality certification of goods and attending to 
+connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications maybe reproduced in any form without 
+the prior permission in writing of BIS. This does not preclude the free use, in the course of implementing the 
+standard, of necessary details, such as symbols and sizes, type or grade designations. Enquiries relating to 
+copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed 
+periodically; a standard along with amendments is reaffirmed when such review indicates that no changes are 
+needed; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards 
+should ascertain that they are in possession of the latest amendments or edition by referring to the latest issue 
+of 'BiS Handbook' and 'Standards : Monthly Additions'. 
+
+This Indian Standard has been developed from Doc : No. LTD 37 (1511). 
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 10002 Telegrams: Manaksanstha 
+
+Telephones : 323 01 31, 323 94 02, 323 33 75 ( Common to 
+
+all offices ) 
+
+Regional Offices: Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg f 323 76 17 
+
+NEW DELHI 110002 [ 323 3841 
+
+Eastern : 1/14 C. I. T. Scheme VII M, V. I. P. Road, Maniktola J 337 84 99, 337 85 61 
+
+CALCUTTA 700054 \ 337 86 26, 337 86 62 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160022 f 60 38 43 
+
+1 60 20 25 
+
+Southern : C. I. T. Campus, IV Cross Road, CHENNAI 6001 13 f 235 02 16, 235 04 42 
+
+1235 15 19,235 23 15 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) f 832 92 95, 832 78 58 
+
+MUMBAI 400093 \ 832 78 91, 832 78 92 
+
+
+
+Branches : AHMADABAD. BANGALORE. BHOPAL. BHUBANESHWAR. 
+
+COIMBATORE. FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. 
+KANPUR. LUCKNOW. NAGPUR. PATNA. PUNE. THIRUVANANTHAPURAM. 
+
+
+
+Printed at New India Printing Press, Khurja, India 
+
+
+

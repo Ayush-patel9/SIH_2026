@@ -1,0 +1,74 @@
+{
+  "is_number": "IS IS_1128",
+  "standard_id": "IS IS_1128",
+  "title": "Indian Standard Specification / Test Method (IS IS_1128)",
+  "ia_identifier": "IS_1128",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard lays down the requirements for dimensions and physical properties, of limestone slabs and tiles for use in flooring and face work.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1124",
+      "standard_id": "IS 1124:1974",
+      "title": "Method of test for determination of water absorption, apparent specific gravity and porosity of natural building stones",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1121",
+      "standard_id": "IS 1121",
+      "title": "Indian Standard Specification / Test Method (IS 1121)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1126",
+      "standard_id": "IS 1126:2013",
+      "title": "Determination of durability of natural building stones - Method of test",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_1128"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "Tolerances^ — The tolerances in thickness shall be +5 mm",
+      "tolerance of ± 1 mm"
+    ],
+    "marking_requirements": [
+      "5.1 Each type of limestone slabs and tiles may be marked in a suitable",
+      "manner with the manufacturer's identification mark or initials."
+    ]
+  },
+  "total_chars_parsed": 11013
+}

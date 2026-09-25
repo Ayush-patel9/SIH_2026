@@ -1,0 +1,1166 @@
+**************** 
+
+
+
+-k is^ 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+"^^ ^ ^ ^ % ?R^" 
+
+Jawaharlal Nehru 
+
+Step Out From the Old to the New 
+
+
+
+^^iiT'jsiS'SfS^s^^?*:: 
+
+
+
+
+•^■•■^^^■r 
+
+
+
+
+li^ i/ir w w w w w WW ^ ^ ^ tIt w w w 
+
+
+
+BLANK PAGE 
+
+
+
+^<ii^ 
+
+
+
+
+
+UI> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+18 14277:1996 
+^ ( Reaffirmed 2002 ) 
+
+Indian Standard 
+STATISTICAL INTERPRETATION OF 
+
+HTT^QT^ T?t:?QTTT T^C HTCTTA/T Anrir^M rM7 A/ITI? A XT 
+
+X J-^W X XV J_^wJ V^ J-/ JL wj J_viJ X AlVXriLX XV_/i>l v^x lVXJL-:/r-\J.>l J 
+
+STANDARD DEVIATION AND 
+REGRESSION COEFFICIENT- 
+CONFIDENCE INTERVAL 
+
+
+
+ICS 03.120.30 
+
+
+
+©BIS 1996 
+BTITIFATI OP TIMTITAM QTATvrnAwnc 
+
+— — - — ^ ^ ^^ -w-.» **"i M^ M. A M X -^ kr .M. tm. X ^ M^ 1-%. JLlL A# kj 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110 002 
+
+August 1996 Price Group 3 
+
+
+
+Statistical Methods for Quality and Reliability Sectional Committee, MSD 3 
+
+
+
+FOREWORD 
+
+This Indian Standard was adopted by the Bureau of Indian Standards, after the draft finalized by the 
+Statistical Methods for Quality and Reliability Sectional Committee had been approved by the 
+Management and Systems Division Council. 
+
+Industrial experimentation is often performed to estimate some unknown values. These values are usually 
+parameters (constants, such as, mean thickness of metal sheets; variance of tensile strength of wire; 
+relationship between carbon content and tensile strength of steel, etc) of a probability distribution or 
+function of these parameters. The present standard deals with estimation of parameters of a normal 
+population on the basis of series of lest results on items in a sample drawn from this population, and 
+discusses point estimates and interval estimates for mean, standard deviation and regression coefficient. 
+It is not concerned with the calculation of an interval containing, with a fixed probability, at least a given 
+percentage of the population (that is, statistical tolerance interval) which is covered in IS 13131 : 1991 
+'Statistical tolerance interval — Methods for determination'. 
+
+A point estimate is a single value which is used to estimate the parameter in question. A point estimate 
+is often inadequate as an estimate of a parameter since it rarely coincides with the value of the parameter 
+and does not indicate how far away this estimate is from the true value of the parameter. One way of 
+expressing this uncertainty is to specify an interval as an estimate instead of a single value, stating that 
+the interval thus calculated includes the true value of the population parameter, has a specified high 
+probability. Such an interval is called a confidence interval. 
+
+Jhe confidence interval is obtained as a function of the test results on items in the sample of observations 
+and therefore is a random interval. Associated with it is a confidence level (sometimes termed as 
+confidence coefficient), which is the probability, usually expressed as a percentage, that the interval does 
+contain the parameter of the population. If we choose an interval such that the probability that it contains 
+the value of the population parameter is 1 - a, then we say that the interval is a 100 (1 - a ) percent 
+confidence interval for the parameter and 1 — a is known as the confidence level. Generally 95 percent 
+and 99 percent confidence intervals are constructed. 
+
+An informative list of published Indian Standards on Statistical Methods is given at Annex A. 
+
+The committee responsible for the formulation of this standard is given at Annex B. 
+
+
+
+IS 14277! 1996 
+
+
+
+Indian Standard 
+
+STATISTICAL INTERPRETATION OF 
+
+TEST RESULTS — ESTIMATION OF MEAN, 
+
+STANDARD DEVIATION AND 
+
+REGRESSION COEFFICIENT — 
+
+CONFIDENCE INTERVAL 
+
+
+
+1 SCOPE 
+
+This standard specifies the statistical treatment of 
+test results needed to calculate confidence interval 
+for the mean, standard deviation and regression 
+coefficient of a population. 
+
+2 REFERENCES 
+
+The following Indian Standards are necessary ad- 
+juncts to this standard: 
+
+IS No. Title 
+
+6200 Statistical tests of significance: 
+
+(Part 1) : 1995 Part 1 t-, Normal and F tests 
+{second revision) 
+
+6200 Statistical tests of significance: 
+
+(Part 2) : 1977 Part 2 x^ test (first revision) 
+7920 Statistical vocabulary and sym- 
+
+(Part 1) : 1994 bols : Part 1 Probability and 
+general statistical terms 
+9300 Statistical models for industrial 
+
+(Part 2) : 1989 applications: Part 2 Continuous 
+models (first revision) 
+
+3 DEFINITIONS 
+
+For the purpose of this standard, the definitions 
+given in IS 7920 (Part 1) : 1994 shall apply. 
+
+4 POINT ESTIMATION 
+
+4.1 Estimation of the Mean 
+
+A point estimate of the population mean (desig- 
+nated as ft) is given by the sample mean (F) and is 
+obtained as follows: 
+
+- 1 " 
+X =- 7: xi 
+
+where jci,;C2, ••., Jfn are test results of n items in the 
+
+sample. 
+
+4.2 Estimation of the Standard Deviation 
+
+The point estimate of the population standard 
+deviation ( a ), is given by sample standard devia- 
+tion (s) as follows: 
+
+
+
+=v 
+
+
+
+n-li = i 
+
+
+
+2 (Xi - x)^ 
+
+
+
+or 
+
+
+
+s = 
+
+
+
+n- 1 
+
+
+
+2 xt 
+
+i = l 
+
+
+
+.? _ 
+
+
+
+
+
+
+where 
+Xi = the value of the ith test result (i = 1, 2, ..., n) ; 
+n = the total number of test results; and 
+x = the sample mean calculated as in 4.1. 
+
+4.3 Estimation of the Regression Coefficient 
+
+Consider the linear regression of an independent 
+variable (X) on the dependent variable (Y), 
+
+E(Y\X=x) = ^0 + ^vc 
+
+Given n(>2) pairs of test results (xi, >'i), / = 1, 2,..., 
+n, the estimate of /3i, is 
+
+*■ = ? 
+
+where s^ is the estimate of standard deviation of .Y 
+andjxyis the estimate of covariance of ^t" and 7. 
+Jx is given by the expression in 4.2 and % is given 
+by the following expression: 
+
+1 " 
+s^ = - — r H (Xi - X) (yi - y) 
+n — 1 i = 1 
+
+or Sxy = T [Ixiyi - ^ ^] 
+
+5 CONFIDENCE INTERVAL FOR THE MEAN 
+
+5.1 Standard Deviation Known 
+
+The confidence interval for the population mean is 
+calculated from the point estimate (Jc) of the mean 
+and the known standard deviation (a). 
+
+A 100 (1 - a) percent confidence interval for the 
+population mean of a normally distributed variable 
+with mean;* and variance a is given by: 
+
+
+
+1 
+
+
+
+IS 14277 : 1996 
+
+
+
+[jC - 21 - 
+
+
+
+a/2 
+
+
+
+TT 
+
+
+
++ 2l-«/2^] 
+
+
+
+where 21 - a/i denotes the value of standard normal 
+deviate with the area of (1- — ) to its left and ~t= 
+is the standard error of x. 
+
+NOTES 
+
+1 The value of zi- a/2 can be obtained from the tables of the 
+standard normal distribution given in IS 9300 (Part 2) : 1989. 
+For95 percent and 99 percent confidence intervals, the value 
+is 1.96 and 2.575, respectively. 
+
+2 As 1 - a increases, the length of the interval also 
+increases. Also for a fixed a, 9s a increases the length of the 
+interval increases. 
+
+3 For given a and <7, larger the sample size, narrower is the 
+length of the interval and better the estimate. 
+
+5.1.1 In some cases one-sided confidence intervals 
+are most appropriate to use. The one-sided con- 
+fidence interval may be either an upper limit or a 
+lower limit. A 100 (1- a) percent one-sided con- 
+fidence interval for population mean of a normally 
+distributed variable with mean (m) and variance 
+(a) is given by: 
+
+
+
+or 
+
+
+
+X — Z\ 
+
+
+
+X + Z\ 
+
+
+
++ 00 
+
+
+
+] 
+
+
+
+where zi-a denotes the value of standard normal 
+deviate with the area of (1 -a ) to its left and -^ is 
+the standard error of x. 
+
+5.2 Standard Deviation not Known 
+
+Wheii the parameter a is not known and if the 
+sample is large,' say, greater than 30, its point 
+estimate {$), as given in 4.2, is made use of in place 
+pfCT for calculating confidence interval as given 
+in 5.1. 
+
+If the sample size is less than 30, its point estimate 
+(s), as given in 4.2 is made use of in place of a , and 
+student's /-distribution is made use of in place of 
+normal distribution for calculating confidence 
+interval. 
+
+The 100 (1- a) percent confidence interval is given 
+by: 
+
+[? - fl - a/2(n - 1)^ , 3e + ri - a/2(n - i)^] 
+
+NOTE — The values of ti - M {n - 1) are given in the 
+tables on critical values of r-distribution (two-sided) in 
+IS 6200 (Part 1) : 1995. 
+
+5.2.1 For one-sided confidence interval a 
+100 (1— a) percent confidence interval is given by: 
+
+
+
+[x - ?l-«(n-l)^, + »] 
+
+
+
+Example 1 
+
+Measurements on the thickness (in codified units) 
+of a sample of 16 mica discs firom a production 
+process are as follows: 
+
+14. 11, 11, 17, 15, 13, 14, 11, 14, 12, 10, 10, 8, 13, 7. 8 
+
+The mean of thickness values is calculated as 11.75. 
+Suppose it is known that these discs have been 
+produced by a controlled process whose standard 
+deviation is known to be equal to 2.5. 
+
+Following the procedure described in 5.1, we find 
+that the 95 percent confidence interval for the mean 
+is: 
+
+which gives us the interval [10.5, 13.0]. The prob- 
+ability that the population mean is included in the 
+estimated interval [10.5, 13.0] is 95 percent. 
+Similarly, the 99 percent confidence interval can be 
+calculated as [10.1, 13.4], 
+
+Example 2 
+
+Consider the above example when there is no 
+knowledge about the standard deviation of the 
+thickness. The estimate of ais obtained ass = 2.77. 
+In this case the 95 percent confidence interval is 
+seen to be 
+
+[ 11.75 - (2.131) X ^, 11.75 + (2.131) x ^] 
+
+which is [10.3, 13.2]. 
+
+Similarly, the 99 percent confidence interval can be. 
+calculated as [9.7, 13.8]. 
+
+6 CONFIDENCE INTERVAL FOR VARIANCE 
+
+6.1 The one-sided confidence interval for variance 
+
+c^ is defined by the upper limit, the lower limit 
+being taken as equal to zero. 
+
+The interval is given by: 
+
+NOTE — The values of j; j — a(n—i) ^'^ given in the tables 
+for critical values otx^ distribution, for a equal to 0.05 and 
+0.01 in IS 6200 (Part 2): 1977. 
+
+Example 3 
+
+The precision of a micrometer is measured in 
+terms of the standard deviation of the readings 
+made by it The 10 readings made on a specimen with a 
+
+
+
+1814277:1996 
+
+
+
+calibrated micrometer are as follows: 
+
+0.501, 0.502, 0.498, 0.499, 0.501, 0.503, 0.499, 
+0.502, 0.497, 0.504 
+
+We are required to find the 95 percent confidence 
+interval for the variance, ct^, of these readings. 
+
+The calcula ted value of (n - 1) s^ is 0.000 046 4 while 
+the value of jj^ forn- 1 = 9 is 16.92 for confidence 
+level of 95 percent. 
+
+The one-sided 95 percent confidence interval is 
+[0,0.000002742]. 
+
+7 CONFIDENCE INTERVAL FOR THE 
+REGRESSION COEFFICIENT 
+
+7.1 The confidence interval for bi is given by: 
+
+
+
+Time (min) 
+Temperature 
+
+
+
+2 
+110 
+
+
+
+5 
+130 
+
+
+
+8 
+160 
+
+
+
+11 
+
+180 
+
+
+
+We also have .yxy = 4 545 and s^ = 742.5 and 
+sj= 28 090. 
+
+Thus, the 95 percent confidence interval is obtained 
+as 
+
+
+
+&i -ti-aa(n~7) 
+
+
+
+-^■v^ 
+
+
+
+il^x 
+
+
+
+in-2)sl 
+
+
+
+(n-2)si 
+
+where bi,Sx and Sxy are as defined in 4.3 and sy is 
+the sample standard deviation of_y as defined forx 
+in 4.2. 
+
+Example 4 
+
+The temperature in the Heating 2tone of an Ex- 
+haust is related to the duration of heating. To 
+estimate this relationship readings were taken on 
+the temperature once every 3 minutes beginning 2 
+minutes after the heating started. These readings 
+were as follows: 
+
+
+
+14 
+190 
+
+
+
+17 
+210 
+
+
+
+20 
+220 
+
+
+
+We take 
+X = duration in minutes, and 
+y = temperature in *C. 
+
+The point-estimate of the regression coefficient j3i, 
+that is, bi is equal to 6.12 . 
+
+
+
+23 
+250 
+
+
+
+26 
+260 
+
+
+
+29 
+280 
+
+
+
+[6.12- (2.306) X 
+
+
+
+■y/ 33.64 
+
+
+
+V^ 
+
+
+
+742.5 
+64 
+
+
+
+6.12 + (2.306) X V^] 
+
+= [ 6.12 - 2.306 X 0.213, 6.12 + 2.306 X 0.213 ] 
+
+This gives us the interval [5.6, 6.6]. 
+
+The regression coefficient in this example measures 
+the rate of change in temperature per minute in- 
+crease in duration of heating. There are 95 percent 
+chances that this rate is between 5.6 and 6.6°C. 
+
+
+
+IS 14277 : 1996 
+
+
+
+ANNEX A 
+( Foreword ) 
+
+LIST OF INDIAN STANDARDS ON STATISTICAL METHODS 
+
+
+
+IS No. 
+
+397 
+(Part 1) : 1972 
+
+
+
+397 
+(Part 2) : 1985 
+
+
+
+397 
+(Part 3) : 1980 
+
+397 
+(Part 4) : 1987 
+
+1548 
+(Part 1) : 1981 
+
+2500 
+(Part 1) : 1992/ 
+ISO 2859-1 : 1989 
+
+
+
+2500 
+(Part 2): 1965 
+
+2500 
+(Part 3) : 1995/ 
+ISO 2859-2: 1985 
+
+
+
+4905 : 1968 
+5420 
+(Part 1) : 1969 
+
+5420 
+(Part 2): 1973 
+
+6200 
+
+(Part 1) : 1995 
+6200 
+
+(Part 2) : 1977 
+
+6200 
+
+(Part 3) : 1984 
+6200 
+
+(Part 4) : 1983 
+
+
+
+Title 
+
+Method for statistical quality 
+control during production : 
+Part 1 Control charts for vari- 
+ables 
+
+Method for statistical quality 
+control during production : 
+Part 2 Control charts for at- 
+tributes and count of defects 
+Method for statistical quality 
+control during production : 
+Part 3 Special control charts 
+Method for statistical quality 
+control during production : 
+Part 4 Master control systems 
+Manual on basic principles of 
+lot sampling : Part 1 Itemized 
+lot sampling 
+
+Sampling inspection proce- 
+dures : Part 1 Attribute sam- 
+pling plans indexed by 
+acceptable quality level (AQL) 
+for lot-by-lot inspection 
+Sampling inspection proce- 
+dures : Part 2 Inspection by 
+variables for percent defective 
+Sampling inspection proce- 
+dures : Part 3 Attribute sam- 
+pling plans indexed by limiting 
+quality (LQ) for isolated lot in- 
+spection 
+
+Methods for random sampling 
+Guide on precision of test 
+methods: Part 1 Principles 
+and applications 
+
+Guide on precision of test 
+methods : Part 2 Inter- 
+laboratory testing 
+Statistical tests of significance : 
+Part 1 ^, Normal and F-tests 
+Statistical tests of significance : 
+Part 2%^ -test 
+
+Statistical tests of significance : 
+Part 3 Tests for normality 
+Statistical tests of significance : 
+Part 4 Non-parametric tests 
+
+
+
+IS No. 
+
+7200 
+(Part 1) : 1989 
+
+7200 
+(Part 2): 1975 
+
+7300 : 1995 
+
+7600 : 1975 
+7920 
+(Part 1) : 1994 
+
+7920 
+(Part 2) : 1994 
+
+7920 
+(Part 3): 1995 
+
+8900 : 1978 
+
+9300 
+(Part 1) : 1979 
+
+9300 
+(Part 2): 1989 
+
+10427 
+(Part 1) : 1982 
+
+10427 
+(Part 2): 1986 
+
+10645 : 1983 
+
+12347 : 1988 
+
+12348 : 1988 
+13131 : 1991 
+
+14277 : 1995 
+
+
+
+SP 28 : 1994 
+
+
+
+Title 
+
+Presentation of statistical data : 
+Part 1 Tabulation and sum- 
+marization 
+
+Presentation of statistical data : 
+Part 2 Diagrammatic repre- 
+sentation of data 
+Methods for regression and 
+correlation 
+Analysis of variance 
+Statistical vocabulary and sym- 
+bols : Part 1 Probability and 
+general statistical terms 
+Statistical vocabulary and sym- 
+bols : Part 2 Statistical quality 
+control 
+
+Statistical vocabulary and sym- 
+bols : Part 3 Design of experi- 
+ments (under print) 
+Criteria for the rejection of 
+outlying observations 
+Statistical models for in- 
+dustrial applications : Part 1 
+Discrete models 
+Statistical models for in- 
+dustrial applications : Part 2 
+Continuous models 
+Designs for industrial ex- 
+perimentation : Part 1 Stand- 
+ard designs 
+
+Designs for industrial ex- 
+perimentation : Part 2 Or- 
+thogonal arrays 
+Method for estimation of 
+process capability 
+Analysis of means-A graphical 
+procedure 
+
+Use of probability papers 
+Statistical tolerance interval — 
+Methods for determination 
+Statistical interpretation of 
+test results — Estimation of 
+mean, standard deviation and 
+regression coefficient — Con- 
+fidence interval 
+Handbook on statistical 
+quality control 
+
+
+
+IS 14277 : 1996 
+
+
+
+ANNEX B 
+
+(Foreword) 
+
+COMMITTEE COMPOSITION 
+
+Statistical Methods for Quality and Reliability Sectional Committee, MSD 3 
+
+Chaimum 
+
+Prof S. P. Mukherjee 
+
+University of Calcutta, Calcutta 
+
+
+
+Members 
+Shri S. K. Agarwal 
+
+Shri Suresh Kumar (Alternate) 
+Prof M. L. Aggarwal 
+
+Props. Biswas (Alternate) 
+DrAshok Kumar 
+Shri M. G. Bhade 
+
+Shri A. Kumar (Alternate) 
+Shri Bhagwan Das 
+
+Shri M. BHOWMiK(/!//em<we) 
+Dr B. Das 
+
+Dr Debabrata Ray (Alternate) 
+Shri S. N. Das 
+Shri G. W. Datey 
+Dr O. p. Kathuria 
+
+Dr Prajneshu (Alternate) 
+Shri A V. Krishnan 
+
+Shri Javed Afaque (Alternate) 
+Dr a Lahiri 
+
+Shri U. Dutta (Alternate) 
+Prof S.R.Mohan 
+
+Prof Arvind Seth (Alternate) 
+Shri M. M. Naik 
+
+Shri S. P. Date (Alternate) 
+Prof A N. Nankana 
+Shri K. K. Pahuja 
+
+Shri Gopal Bandhu (Alternate) 
+Shri C. Ranganathan 
+
+Shri C. V. Seshagiri (Alternate) 
+Air Cmde R. Sampath (Retd) 
+Shri S. C. Seddey 
+
+Shri A K. Saha (Alternate) 
+Shri D. R. Sen 
+Shri Ramani Subramaniam 
+
+Shri P. Subbaramaiah (Alternate) 
+Shri A K. Talwar, 
+Director (MSD) 
+
+
+
+Representing 
+Powergrid Corporation of India Limited, New Delhi 
+
+University of Delhi, Delhi 
+
+Defence Science Centre, DRDO, Ministry of Defence, New Delhi 
+Tata Iron and Steel Company Limited, Jamshedpur 
+
+Central Statistical Organization, New Delhi 
+
+Indian Association for Productivity, Quality and Reliability, Calcutta 
+
+Tata Engineering and Locomotive Company Limited, Jamshedpur 
+
+Quality Management Institute, New Delhi 
+
+Indian Agricultural Statistics Research Institute, New Delhi 
+
+Bharat Heavy Electricals Limited, Hyderabad 
+
+Indian Jute Industries' Research Association, Calcutta 
+
+Indian Statistical Institute, Calcutta 
+
+Bajaj Auto Limited, Pune 
+
+In personal capacity (B-109 Malviya Nagar, New Delhi) 
+Steel Authority of India Limited, New Delhi 
+
+Lucas-TVS Limited, Madras 
+
+Management and Statistics Centre, Madras 
+Army Statistical Organization, New Delhi 
+
+DCM Limited, New Delhi 
+SRF Limited, Madras 
+
+Director General, BIS (Ex-officio Member) 
+
+Member Secretary 
+
+Shrimati Bindu Mekta 
+
+Deputy Director (MSD), BIS 
+
+
+
+(Continued on page 6) 
+
+
+
+IS 14277 : 1996 
+
+
+
+//-^ *•• ie c\ 
+
+
+
+Basic Statistical Methods Subcommittee, MSD 3 : 1 
+
+
+
+Convener 
+Prof S. P. Mukherjee 
+
+Members 
+Prof M, L. Aggarwal 
+Dr Ashok Kumar 
+Shri G. W. Datey 
+Dr a. Lahiri 
+Profs. R. Mohan 
+Shri M. M. Naik 
+Prof A. N. Nankana 
+Shri K. K. Pahuja 
+Shri D. R. Sen 
+
+
+
+Representing 
+University of Calcutta, Calcutta 
+
+University of Delhi, Delhi 
+
+Defence Science Centre, DRDO, Ministiy of Defence, New Delhi 
+
+Quality Management Institute, New Delhi 
+
+Indian Jute Industries' Research Association, Calcutta 
+
+Indian Statistical Institute, New Delhi 
+
+Bajaj Auto Limited, Pune 
+
+In personal capacity (B-109 Malviya Nagar, New Delhi) 
+
+Steel Authority of India Limited, New Delhi 
+
+DCM Limited, New Delhi 
+
+
+
+Panel for Basic Methods Including Terminology, MSD 3:1/P-1 
+
+
+
+Convener 
+Shri G. W. Datey 
+
+Members 
+Dr Ashok Kumar 
+Dr S. R, Mohan 
+Dr D. Ray 
+
+
+
+Quality Management Institute, New Delhi 
+
+Defence Science Centre, DRDO, Ministry of Defence, New Delhi 
+
+Indian Statistical Institute, New Delhi 
+
+Indian Association for Productivity, Quality and Reliability, Calcutta 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods 
+and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any form 
+without the prior permission in writing of BIS. This does not preclude the free use, in the course of 
+implementing the standard, of necessary details, such as symbols and sizes, type or grade designations. 
+Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also 
+reviewed periodically; a standard along with amendments is reaffirmed when such review indicates that 
+no changes are needed; if the review indicates that changes are needed, it is taken up for revision. Users 
+of Indian Standards should ascertain that they are in possession of the latest amendments or edition by 
+referring to the latest issue of 'BIS Handbook' and 'Standards Monthly Additions'. 
+
+This Indian Standard has been developed from Doc : No. MSD 3 ( 0076 ). 
+
+
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 
+Telephones : 323 01 31, 323 83 75, 323 94 02 
+
+Regional Offices : 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110002 
+
+Eastern : 1/14 C. I.T. Scheme VII M, V. I. P. Road, Maniktola 
+CALCUTTA 700054 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160022 
+Southern : C. 1. T. Campus, IV Cross Road, MADRAS 600113 
+
+
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400093 
+
+
+
+Telegrams : Manaksanstha 
+(Common to all offices) 
+
+
+
+Telephone 
+
+
+
+{ 
+
+
+
+323 76 17 
+323 38 41 
+
+
+
+/ 337 84 99, 337 85 61 
+\ 337 86 26, 337 91 20 
+
+
+
+{ 
+
+
+
+60 38 43 
+60 20 25 
+
+
+
+r 235 02 16, 235 04 42 
+\ 235 15 19, 235 23 15 
+
+r 832 92 95, 832 78 58 
+\ 832 78 91, 832 78 92 
+
+
+
+Branches : AHMADABAD. BANGALORE. BHOPAL. BHUBANESHWAR. 
+
+COIMBATORE. FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. 
+JAIPUR. KANPUR. LUCKNOW. PATNA. THIRUVANANTHAPURAM. 
+
+
+
+Printed at Dee Kay Printers, New Delhi- 1 10015, India. 
+
+
+

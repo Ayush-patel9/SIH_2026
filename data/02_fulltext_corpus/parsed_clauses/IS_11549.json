@@ -1,0 +1,98 @@
+{
+  "is_number": "IS IS_11549",
+  "standard_id": "IS IS_11549",
+  "title": "Indian Standard Specification / Test Method (IS IS_11549)",
+  "ia_identifier": "IS_11549",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies requirements and methods of tests for impregnating oils and compounds used for manufacture of PILC cables up to 33 kV. 1.2 The impregnants covered in this standard are of the following two types: a) draining type oils, and b) non-draining compounds. 1.3 This standard does not cover the requirements of oils used as coolants in hollow core cables.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 692",
+      "standard_id": "IS 692:1994",
+      "title": "Paper insulated lead-sheathed cables for rated voltage up to and including 33 kv specification",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1448",
+      "standard_id": "IS 1448:2020",
+      "title": "Part 173 : 2020: Methods of Test for Petroleum and its Products [ P : 173 ] Determination of Lead Content in Motor Gasoline — Energy Dispersive X-Ray Fluorescence Spectrometry Method",
+      "division_code": "ETD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6103",
+      "standard_id": "IS 6103:1971",
+      "title": "Method of test for specific resistance (resistivity) of electrical insulating liquids",
+      "division_code": "ETD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6792",
+      "standard_id": "IS 6792:1992",
+      "title": "Method for Determination of Electric Strength of Insulating Oils",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6262",
+      "standard_id": "IS 6262:1971",
+      "title": "Method of Test for Power Factor and Dielectric Constant of Electrical Insulating Liquids",
+      "division_code": "ETD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1447",
+      "standard_id": "IS 1447",
+      "title": "Indian Standard Specification / Test Method (IS 1447)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Type",
+    "Grade of",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11549"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "power factor and dielectric constant of electrical insulation liquids. W"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "7.1 Each container shall be indelibly marked with the following:",
+      "c) Brand name of the product or trade-mark or both,",
+      "e) Identification or suitable code to erable the date ard lot of",
+      "7.1.1 Each barrel or drum may also be marked with the ISI Certification!",
+      "Note — The use of the ISI Certification Mark is governed by the provisions of"
+    ]
+  },
+  "total_chars_parsed": 23450
+}

@@ -1,0 +1,71 @@
+{
+  "is_number": "IS IS_11289",
+  "standard_id": "IS IS_11289",
+  "title": "Indian Standard Specification / Test Method (IS IS_11289)",
+  "ia_identifier": "IS_11289",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This code of practice provides guidance for carrying out examination of the system with a view to monitoring and documenting its performance.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11189",
+      "standard_id": "IS 11189:2020",
+      "title": "Methods of Tubewell Development ( First Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11290",
+      "standard_id": "IS 11290",
+      "title": "Indian Standard Specification / Test Method (IS 11290)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11291",
+      "standard_id": "IS 11291:1985",
+      "title": "Code of practice for testing of computer based systems",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11289"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 54124
+}

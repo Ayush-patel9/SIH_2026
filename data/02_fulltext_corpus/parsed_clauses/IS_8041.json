@@ -1,0 +1,116 @@
+{
+  "is_number": "IS IS_8041",
+  "standard_id": "IS IS_8041",
+  "title": "Indian Standard Specification / Test Method (IS IS_8041)",
+  "ia_identifier": "IS_8041",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the manufacture and chemical and physical requirements of rapid hardening Portland cement. NOTE — The term 'rapid hardening' should not be confused with 'quick-setting*.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 4031",
+      "standard_id": "IS 4031",
+      "title": "Indian Standard Specification / Test Method (IS 4031)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4031 (PART 3)",
+      "standard_id": "IS 4031 (Part 3):1988",
+      "title": "Methods of physical tests for hydraulic cement, Part 3: Determination of soundness",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4031 (PART 14)",
+      "standard_id": "IS 4031 (Part 14):1989",
+      "title": "Methods of physical test for hydraulic cement, Part 14: Determination of false set",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4031 (PART 5)",
+      "standard_id": "IS 4031 (Part 5):1988",
+      "title": "Methods of physical tests for hydraulic cement, Part 5: Determination of initial and final setting times",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4031 (PART 8)",
+      "standard_id": "IS 4031 (Part 8):1988",
+      "title": "Methods of physical tests for hydraulic cement, Part 8: Determination of transverse and compressive strength of plastic mortar using prism",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 269",
+      "standard_id": "IS 269:2013",
+      "title": "Specification for Ordinary Portland Cement, 33 Grade",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 531",
+      "standard_id": "IS 531:1981",
+      "title": "Leaded brass strips for instrument parts",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 630",
+      "standard_id": "IS 630:2005",
+      "title": "Bicycle Spokes (Plain) and Nipples for Spokes - Specifiation",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ordinary",
+    "Grade deration",
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_8041"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "chloride content in cement shall not exceed (V05 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "composite bags] bearing the manufacturer's name or his registered trade-mark, if any.",
+      "1 The bags or packages may also be marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 27886
+}

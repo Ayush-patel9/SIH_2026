@@ -1,0 +1,4454 @@
+**************** 
+
+
+
+-k is^ 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+"^^ ^ ^ ^ % ?R^" 
+
+Jawaharlal Nehru 
+
+Step Out From the Old to the New 
+
+
+
+^^iiT'jsiS'SfS^^s*?*:: 
+
+
+
+
+•^■•■^^^■r 
+
+
+
+
+li^ i/ir w w w w w WW ^ ^ ^ tIt w w w 
+
+
+
+BLANK PAGE 
+
+
+
+^<ii^ 
+
+
+
+
+
+UI> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+18 11419:1992 
+ISO 1001 :1986 
+
+( Reaffirmed 2001 ) 
+
+( ^^ 5?TTt^^ ) 
+
+Indian Standard 
+
+FILE STRUCTURE AND LABELLING OF 
+
+MAGNETIC TAPES FOR INFORMATION 
+
+INTERCHANGE 
+
+(First Revision } 
+
+
+
+UDC 681-327-6302 
+
+
+
+©BIS 1992 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+May 1992 Price Group 8 
+
+
+
+IS 11419: 1992 
+ISO 1001 :1986 
+
+
+
+Indian Standard 
+
+
+
+FILE STRUCTURE AND LABELLING OF 
+
+MAGNETIC TAPES FOR INFORMATION 
+
+INTERCHANGE 
+
+( First Revision ) 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with ISO 1001 : 1986 'Information processing — File 
+structure and labelling of magnetic tapes for information interchange' was adopted by the 
+Bureau of Indian Standards on the recommendation of the Computer Media Sectional Committee 
+( LTD 37 ) and approval of the Electronics and Telecommunication Division Council. 
+
+This standard was first published in 1985. The standard is being revised to bring it in line 
+with the latest version of the ISO standard with which it is identical. 
+
+The differences between the earlier edition of this standard and the present edition is given in 
+Annex C. 
+
+The text of the ISO standard has been approved as suitable for publication as Indian Standard 
+without deviations. Certain conventions are however not identical to those used in Indian 
+Standards. Attention is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they 
+should be read as Indian Standard'; and 
+
+b) Comma {,) has been used as a decimal marker while in Indian Standards, the current 
+practice is to use a point (.) as the decimal marker. 
+
+
+
+CROSS REFERENCES 
+
+In this Indian Standard, the following 
+respective places the following: 
+
+International Standard 
+
+
+
+International Standards are referred to. Read In their 
+
+
+
+Indian Standard 
+
+
+
+ISO 646 Information processing- 
+ISO 7-bit coded character set for 
+information interchange 
+
+ISO 962 Information processing- 
+Implementation of the 7-bit 
+coded character set and its 7-bit 
+and 8-bit extensions on 9 track, 
+12'7 mm ( 05 in ) magnetic tape 
+
+ISO 1863 Information processing 
+7 track, 127 mm ( 0"5 in ) wide 
+magnetic tape for information 
+interchange recorded at 32 rpm.m 
+( 800 rpi ) 
+
+
+
+IS 10315 : 1982 7-bit coded 
+character set for information 
+interchange 
+
+IS 11407 : 1986 Implementation of 
+the 7-bit coded character set and 
+its 7-bit and 8-bit extensions on 
+9 track, 127 mm magnetic tape 
+
+18 11409:1986 Specification for 
+9 track, 12"7 mm wide magnetic 
+tape recorded at 32 rpmm 
+
+
+
+Degree of 
+Correspondence 
+
+Technically 
+equivalent 
+
+Identical 
+
+
+
+Identical 
+
+
+
+IS 11419 : 1992 
+ISO 1001 : 1986 
+
+
+
+Indian Standard 
+
+
+
+iS 11408:1986 Specification for 
+unrecorded 12'7 mm wide 35 
+ftpmmNRZI, 126 ftpmm phase 
+encoded and 356 ftpmm NRZ 1 
+magnetic tape for information 
+processing 
+
+
+
+IS 12326:1987 7-bit and 8-bit 
+coded character sets -— Code 
+extension techniques 
+
+IS 11410: 1986 9 track, 127 mm 
+wide magnetic recorded at 63 
+rpmm phase encoded for infor- 
+mation processing 
+
+IS 10401 8-bit coded character set 
+for information interchange 
+
+9 track, 127 mm wide magnetic 
+tape format and recorded using 
+group coding at 246 ( cpmm ) for 
+information processing 
+
+
+
+Degree of 
+Correspondence 
+
+Identical 
+
+
+
+International Standard 
+
+ISO 1864 Information processing- 
+Unrecorded 127 mm ( 0'5 in ) 
+wide magnetic tape for infor- 
+mation interchange 35 ftpmm 
+(800 ftpi ) NRZ 1, 126 ftpmm 
+( 3 200 ftpi ) phase encoded and 
+356 ftpmm ( 9 042 ftpi ), NRZ 1 
+
+ISO 2022 Information processing 
+ISO 7-bit and 8-bit coded cha- 
+racter sets — Code extension 
+techniques 
+
+ISO 3788 Information processing 
+9-track 12'7 mm ( 0'5 in ) wide 
+magnetic tape for information 
+interchange recorded 63 rpmm 
+{ 1 600 rpi ), phase encoded 
+
+ISO 4873 Information processing 
+8- bit coded character set for 
+information interchange 
+
+ISO 5652 Information processing — 
+9-track, 127 mm ( 0'5 in ) wide 
+magnetic tape for information 
+interchange — Format and 
+
+recording, using group coding 
+at 246 cpiTifn-( 6 280 in ) 
+
+The provisions of the International Standard ISO 1862 'Information processing — 9-track, 
+127 mm ( 05 in ) wide magnetic tape for information interchange recorded at 8 rpmm 
+(200 rpi)' has been reviewed by the technical committee responsible for preparation of this 
+standard and found acceptable for use in conjunction with this standard. 
+
+
+
+Identical 
+
+
+
+Identical 
+
+
+
+Technically 
+equivalent 
+
+Identical 
+
+
+
+IS 11419 : 1992 
+ISO 1001 :1986 
+
+
+
+1 Scope and field of appiioation 
+
+This International Standard specifies the file structure and the 
+labelting of magnetic tapes for the interchange of information 
+between users of information processing systems. 
+
+This International Standard also specifies 
+
+— volume .and file structure; 
+
+— basic characteristics of the blocks containing the 
+records constituting the file; 
+
+— recorded labels for identifying files, file sections and 
+volumes of magnetic tapes; 
+
+— four nested levels of interchange. 
+
+Furthermore, this International Standard specifies require- 
+ments for the processes which are provided within information 
+processing systems, to enable information to be interchanged 
+between different systems, utilizing recorded magnetic tape as 
+the medium of interchange. For this purpose it specifies the 
+functions to be provided within systems which are intended to 
+originate or receive magnetic tape volumes which conform to 
+this International Standard. 
+
+
+
+2 Conformance 
+
+2.1 Conformance of a magnetic tape volume set 
+
+A magnetic tape volume set conforms to this International 
+Standard when all information recorded on it conforms to the 
+specifications of this International Standard. A statement of 
+conformance shall identify the lowest level of interchange to 
+which the contents of the magnetic tapes conform. 
+
+A prerequisite to such conformance is conformance of each 
+volume of the volume set to the same International Standard 
+for information interchange on magnetic tapes. 
+
+2.2 Conformance of an information processing 
+system 
+
+An information processing system conforms to this Inter- 
+national Standard if it meets all the requirements specified in 
+this International Standard either for an originating system, or 
+for a receiving system, or for both types of system. A state- 
+ment of conformance shall identify which of these sets of re- 
+quirements can be met by the system. 
+
+
+
+3 References 
+
+ISO 646, Information processing 
+set for information interchange. 
+
+
+
+ISO 7-bit coded character 
+
+
+
+ISO 962, Information processing — Implementation of the 7-bit 
+coded character set and its 7-bit and 8-bit extensions on 
+9-track, 12,7 mm (0.5 in) magnetic tape. 
+
+ISO 1862, Information processing — 9-track, 12,7 mm (0.5 in) 
+wide magnetic tape for information interchange recorded at 
+8 rpmm (200 rpi). 
+
+ISO 1863, Information processing — 9-track, 12,7 mm (0.5 in) 
+wide magnetic tape for information interchange recorded at 
+32 rpmm (800 rpi). 
+
+ISO 1864, Information processing — Unrecorded 12,7 mm 
+(0.5 in) wide magnetic tape for information interchange — 
+35 ftpmm (800 ftpi) NRZI, 126 ftpmm (3 200 ftpi) phase encod- 
+ed and 356 ftpmm (9 042 ftpi), NRZ7. 
+
+ISO 2022, Information processing — ISO 7-bit and 8-bit coded 
+character sets — Code extension techniques. 
+
+ISO 3788, Information processing — 9-track, 12,7 mm (0.5 in) 
+wide magnetic tape for information interchange recorded at 
+63 rpmm (1 600 rpi), phase-encoded. 
+
+ISO 4873, Information processing — 8-bit coded character set 
+for information interchange. 
+
+ISO 5652, Information processing — 9-track, 12,7 mm (0.5 in) 
+wide magnetic tape for information interchange — Format and 
+recording, using group coding at 246 cpmm (6 250 rpi). 
+
+
+
+4 Definitions 
+
+For the purpose of this International Standard, the following 
+definitions apply. 
+
+
+
+4.1 application program : A program that processes the 
+contents of records belonging to a file, and may also process 
+selected attribute data relating to the file or to the volume(s) on 
+which it is recorded. 
+
+NOTE — An application program is a specific class of user as defined 
+In this International Standard. 
+
+
+
+IS 11419 : 1992 
+ISO 1001 :1986 
+
+
+
+4.2 block : A group of bytes recorded consecutively in 
+accordance with the relevant International Standard for infor- 
+mation intercharvge. 
+
+fiOTE — The minimum and maximum lengths of a block are specified 
+in the relevant International Standard for information interchange. 
+
+4.3 blocked : An attribute of records and record segments 
+that indicates that they may begin at a byte that is not the first 
+byte of a block. 
+
+4.4 byte : A string of eiqht binary digits operated upon as a 
+unit. 
+
+4.5 file : A named collection of information consisting of 
+zero or more records. 
+
+
+
+4.18 International Standard for information inter- 
+change : A standard that specifies the recording method and 
+the track format of a magnetic tape (for example ISO 1863). 
+
+4.19 Tape Mark : A control block used as a delimiter. 
+
+NOTE — The structure of Tape Marks is specified by the relevant 
+International Standards for information interchange. 
+
+4.20 user : A person or other entity that causes the invoca- 
+tion of the services provided by an implementation. 
+
+4.21 variable-length record : A record contained in a file in 
+which the records^ may have different lengths. 
+
+
+
+4.6 file section : That part of a file that is recorded on any 
+one volume. 
+
+4.7 file set : A collection of one or more files recorded con- 
+secutively on a set of volumes. 
+
+
+
+4.22 volume : A dismountable reel of magnetic tape. 
+
+4.23 volume set : A collection of one or more volumes, on 
+which a file set is recorded. 
+
+
+
+4.8 fixed-length record : A record contained in a file in 
+which all records must have the same length. 
+
+4.9 implementation : A set of processes within an informa- 
+tion processing system which enable that system to behave as 
+an originating system, or as a receiving system, or as both 
+types of system. 
+
+4.10 installation : A person or other entity which controls 
+the use of one or more implementations which process and 
+interchange magnetic tapes. 
+
+NOTE — An installation is a specific class of user as defined in this 
+International Standard. 
+
+4.11 label : A record that identifies and characterizes a 
+volume, or a file section on a volume. 
+
+4.12 originating system : An information processing 
+system which can record a file set on a volume set for the pur- 
+pose of data interchange with another system. 
+
+
+
+5 Notation 
+
+The following notation is used in this International Standard : 
+
+BP : Byte position within the label 
+
+L : Length of the field in number of byte 
+
+positions 
+
+a-character(s) : Any of the allowed characters (see 8.1) 
+
+
+
+Digit{s) : 
+
+
+
+Any digit from ZERO to NINE. 
+
+
+
+With the exception of SPACE, a group of capital letters in the 
+content column of a table specifying label contents indicates 
+that these characters shall appear in the order given and in the 
+corresponding byte positions of the field specified, for example 
+VOL in BP 1 to 3 of the Volume Header Labels. In the tables 
+and thoughout this International Standard, SPACE signifies the 
+character coded in position 2/0 of ISO 646. 
+
+
+
+4.13 originator : A person who is responsible for issuing 
+commands to an originating system. 
+
+4.14 receiving system : An information processing system 
+which can read a file set from a volume set which has been 
+recorded by another system for the purpose of data inter- 
+change. 
+
+4.15 recipient : A person who is responsible for issuing 
+commands to a receiving system. 
+
+4.16 record : Related data treated as a unit of information. 
+
+
+
+6 Arrangement of labels and files 
+
+6.1 Arrangement of data on a volume 
+
+A volume shall be recorded with a sequence of blocks and Tape 
+Marks. The sequence shall commence with a block, and shall 
+terminate within the usable recording area. 
+
+6.2 Arrangement of label groups 
+6.2.1 Labels 
+
+
+
+4.17 segmented record : A record contained in a file which 
+is assigned to contain records that may have different lengths 
+and that may be recorded entirely in one block or over more 
+than one block. 
+
+
+
+A label shall be a record that shall have a length of 80 bytes. 
+Each label shall be recorded within the first or only 80 byte pos- 
+itions of a block. If the block contains any additional bytes, they 
+shall be recorded with any desired bit combinations. 
+
+
+
+IS 11419 
+ISO 1001 
+
+
+
+1992 
+; 1986 
+
+
+
+Each label shall be of one of the following types : 
+
+Volume Header 
+Installation Volume 
+File Header 
+User File Header 
+End of File 
+End of Volume 
+User File Trailer 
+
+6.2.2 Label sets 
+
+A sequence of one or more labels of the same type, recorded in 
+consecutive blocks, shall be a label set of that type. All labels in 
+a set shall be numbered consecutively starting from 1, except 
+those labels in the User File Header and User File Trailer Label 
+Sets. 
+
+The labels in the User File Header and User File Trailer Label 
+Sets may be identified in any order and may contain duplicate 
+identifiers within a set. 
+
+6.2.3 Label groups 
+
+A label group shall consist of a mandatory label set, optionally 
+followed by a second label set of a different type. Each label 
+group shall be of one of the types listed in table 1, and shall in- 
+clude only those label sets listed in the corresponding entry of 
+the table. The first set listed in each table entry is the man- 
+datory set, and the second set listed is the optional set. 
+
+Table 1 
+
+
+
+Label group 
+
+
+Label sets 
+
+
+Beginning of Volume 
+
+
+Volume Header 
+Installation Volume 
+
+
+Beglrining of File Section 
+
+
+File Header 
+User File Header 
+
+
+End of File Section 
+
+
+End of Volume 
+User File Trailer 
+
+
+End of File 
+
+
+End of File 
+User File Trailer 
+
+
+
+6.3 Arrangement of file sections 
+
+6.3.1 File section 
+
+A file section shall be recorded in a sequence of one or more 
+blocks, or no blocks. If no blocks are recorded, the file section 
+is regarded as empty. 
+
+6.3.2 Labelled-Sequence 
+
+6.3.2.1 A Labelled-Sequence shall consist of the sequence 
+of blocks and Tape Marks as listed below, recorded consecu- 
+tively : 
+
+a) Beginning of File Section Label Group; 
+
+b) Tape Mark; 
+
+c) a file section; 
+
+
+
+d) Tape Mark; 
+
+e) either an End of File Label Group or an End of File Sec- 
+tion Label Group, as required in 6.3.2.2; 
+
+f) Tape Mark. 
+
+6.3.2.2 If the file section is the last or only file section of a file, 
+then the label group that follows it shall be an End of File Label 
+Group. Otherwise the label group shall be an End of File 
+Section Label Group. 
+
+NOTE — An End of File Section Label Group can only be the last label 
+group on a volume because of the requirements of 6.5.1. 
+
+6.3.2.3 Within a Labelled-Sequence the information con- 
+tained in the File Header Label Set, and in the End of File or End 
+of Volume Label Set, shall apply to the file section that is 
+recorded within the sequence. 
+
+6.3.2.4 Within a Labelled-Sequence the number of labels in 
+an End of Volume or End of File Label Set shall be equal to the 
+number of labels in the File Header Label Set. Within all 
+Labelled-Sequences in which the file sections of a file are 
+recorded, the number of File Header Labels shall be the same. 
+
+6.4 Relationship of file sections to a volume 
+
+The information on a volume shall consist of the sequence of 
+blocks and Tape Marks as listed below, recorded consecutively : 
+
+— Beginning of Volume Label Group; 
+
+— one or more Labelled-Sequences; 
+
+— Tape Mark. 
+
+Any recording following the last Tape Mark of the sequence 
+shall be ignored in interchange. 
+
+The information that identifies and describes the volume shall 
+be contained in the Volume Header Label Set, within the 
+Beginning of Volume Label Group. 
+
+6.5 Arrangement of files and file sets 
+
+6.5.1 Files 
+
+If a file is recorded entirety within one volume it stvall consist of 
+only one file section. 
+
+If a file is recorded over more than one volume, then only one 
+file section of the file shall be recorded on any one volume, and 
+
+— the first file section shall be recorded as the last or only 
+file section on a volume; 
+
+— any intermediate file section shall be recorded as the 
+only file section on a volume; 
+
+— the last file section shall be recorded as the first or only 
+fife section on a volume. 
+
+All sections of a file shall be numbered consecutively start- 
+ing from 1 . 
+
+
+
+IS 114^9:1992 
+ISO 1001 : 1986 
+
+
+
+6.5.2 File sets 
+
+A file set shall consist of one or more files having a common file 
+set identifier. All files in a file set shall be numbered con- 
+secutively starting from 1 . 
+
+The files in a file set shall be recorded consecutively over a set 
+of one or more volumes. 
+
+6.6 Structure of a volume set 
+
+A volume set shall be the set of volumes on which a file set is 
+recorded. The volume set shall contain only one file set. 
+
+
+
+7 Hie structure for data interchange 
+
+This clause specifies the file structure for data interchange in 
+terms of data blocks and data records, and identifies the label 
+fields defined for that purpose. 
+
+7.1 Blocks 
+
+7.1.1 Characteristics 
+
+A block in which part of a file section is recorded shall contain 
+one or more Measured Data Units <MDU). Each MDU shall 
+either be a fixed-length record, or shall contain a variable- 
+length record or a record segment. 
+
+A block in which part of a file section is recorded may contain 
+
+— an Offset field preceding the first or only MDU; 
+
+— a Padding field following the last or only MDU. 
+
+The first or only MDU in a block shall begin at the first byte of 
+the block after the Offset field (if any). Each subsequent MDU 
+shall begin at the byte immediately following the last byte of the 
+preceding MDU in that block. Each MDU shall end in^he block 
+in which it begins. 
+
+7.1.2 Block length 
+
+The length of a block shall be the number of bytes in the block. 
+Within a file, all blocks may have different lengths. The length 
+of a block shall be the sum of 
+
+— the lengths of the MDUs in the block; 
+
+— the length of the Offset field; 
+
+— the length of the Padding field. 
+
+A maximum block length shall be assigned for a file. The block 
+length shall not exceed the maximum value specified by the 
+relevant International Standard for information interchange. 
+
+7.1.3 Offset field 
+
+This field shall consist of not more than 99 bytes. It shall be 
+reserved for implementation use. Its contents are not specified 
+by this International Standard and may be ignored in inter- 
+change. 
+
+
+
+7.1.4 Padding field 
+
+This field shall consist of a number of bytes sufficient to extend 
+the length of a block either 
+
+a) to the minimum length required by the relevant Inter- 
+national Standard for information interchange, or 
+
+b) to a greater length as required by the implementation. 
+
+Each byte of this field shall contain bit combination bg to 
+bi = 0101 1110. This field shall be ignored in interchange. 
+
+7.2 Records 
+
+7.2.1 Characteristics 
+
+A record shall have the following characteristics : 
+
+a) A record may be either a fix^-length record, or a 
+variable-length record, or a segmented record. 
+
+b) A fixed-length record or a variable-length record shall 
+be recorded entirety within one block; a segmented record 
+may be recorded in a part of one or more blocks. 
+
+c) The length of a record shall be the number of bytes in 
+the record. 
+
+7.2.2 Fixed-length records 
+
+A fixed-length record shall be a record contained in a file that is 
+assigned to contain only records of the same length. The 
+minimum assigned length of a fixed-length record shall be one 
+byte and the maximum assigned length shall not exceed the 
+assigned block length less the length of the offset field. At least 
+one byte of a fixed-length record shall not contain bit combina- 
+tion bgtobi = 0101 1110. 
+
+7.2.3 Variable-length records 
+
+A variable-length record shall be a record contained in a file that 
+is assigned to contain records that may have different lengths. 
+
+A variable-length record shall be contained in an MDU. The 
+MDU shall consist of a Record Control Word (RCW), followed 
+immediately by the variable-length record. The RCW shall con- 
+sist of four characters whiqh shall be coded in accordance with 
+ISO 646 and shall express the s^m of the lengths of the record 
+and of the RCW as a four-digit decimal number. 
+
+A maximum record length shall be assigned for a file. The 
+length of any record in the file shall not exceed this value. The 
+assigned maximum record length shall not be zero and shall not 
+exceed the assigned block length less the length of the Offset 
+field and less the length of the RCW. 
+
+The minimum length of a variable-length record shall be zero. 
+
+7.2.4 Segmented records 
+
+A segmented record shall be a record contained in a file that is 
+assigned to contain records that may have different lengths and 
+
+
+
+1811419:1992 
+ISO 1001 :1986 
+
+
+
+that may be recorded entirely in one block or over more than 
+one block. 
+
+That part of a segmented record that is recorded in one block is 
+a record segment. There shall be only one segment of the same 
+record in a block. 
+
+Successive segments of the same record within the same file 
+sections shall be recorded in successive blocks. 
+
+Different segments of the same record shall only be recorded in 
+different file sections if one of the segments is recorded in the 
+fast block of a file section, and the next segment of the record is 
+recorded in the first block of the next non-empty file section of 
+that file. 
+
+A maximum record length shall be assigned for a file. The 
+length of any record in the file shall not exceed this assigned 
+value. The assigned maximum record length shall not be zero. 
+
+NOTE — The assigned maximunri record length Is unbounded in that 
+this International Standard specifies no limit to the number of record 
+segments in a record. 
+
+A record segment shall be contained in an MDU. The MDU 
+shall consist of a Segment Control Word (SCW), followed im- 
+mediately by the record segment. The SCW shall consist of five 
+characters which shall be coded in accordance with ISO 646. 
+
+The first character of the SCW is called the Segment Indicator, 
+This character shall have one of the values 0, 1, 2 or 3 with the 
+following meaning : 
+
+shall mean that the record begins and ends in this record 
+segment; 
+
+1 shall mean that the record begins but does not end in 
+this record segment; 
+
+2 shall mean that the record neither begins nor ends in this 
+record segment; 
+
+3 shall mean that the record ends but does not begin in 
+this record segment. 
+
+The last four characters of the SCW shall express as a decimal 
+number the sum of the lengths of the record segment and of 
+the SCW. 
+
+The length of a record segment shall not exceed the assigned 
+block length less the length of the Offset field and less the 
+length of the SCW. 
+
+The minimum length of a record segment shall be zero. 
+
+7.2.5 Coded representation of data 
+
+The contents of each record shall be interpreted in accordance 
+with the relevant International Standard for the coded 
+representation of information. 
+
+7.3 Files 
+
+7.3.1 Characteristics 
+
+A file shall contain either only fixed-length records or only 
+variable-length records or only segmented records. 
+
+
+
+7.3.2 Consistency of file attributes between file sections 
+
+The following lat)el fields in the File Header Label Set for each 
+file section of the same file shall contain the same characters : 
+
+- File Identifier (HDR1 BP 5 to 21) 
+
+- File Set Identifier IH0R1 BP 22 to 27) 
+
+- File Sequence Number (HDR1 BP 32 to 35) 
+
+- Generation Number (HDRl BP 36 to 39) 
+
+- Generation Version Number (HDRl BP 40 and 41) 
+
+- File Accessibility (HDRl BP 54) 
+
+- Record Format (HDR2 BP 5) 
+
+- Block Length (HDR2 BP 6 to 10) 
+
+- Record Length (HDR2 BP 11 to 15) 
+
+- Offset Length <HDR2 BP 51 to 52) 
+
+
+
+7.3.3 File organization 
+
+The file organization shall be sequential. 
+
+
+
+8 Format and contents of the labels 
+and label sets 
+
+8.1 Character set and coding 
+
+Unless othenwise stated, the characters in the labels shall be 
+coded in accordance with ISO 646. 
+
+The 57 characters used in the labels shall be those in the follow- 
+ing positions of the International Reference Version (IRV) : 
+
+2/0 to 2/2 
+2/5 to 2/15 
+3/0 to 3/15 
+4/1 to 4/15 
+5/0 to 5/10 
+5/15 
+
+
+
+These 57 characters are referred to as 
+annex A). 
+
+
+
+"a-characters" (see 
+
+
+
+8.2 Justification of characters 
+
+In the label fields, characters shall be justified as follows : 
+
+— in each field, the contents of which are specified by this 
+International Standard to be digits, the digits shall be right- 
+justified and any remaining positions on the left shall be 
+filled with ZEROs; 
+
+— in each field, the contents of which are specified by this 
+International Standard to be a-characters, the a-characters 
+shall be left-justified and any remaining positions on the 
+right shall be filled with SPACEs. 
+
+8.3 Volume Header Label Set (V0L1 to V0L9) 
+
+A Volume Header Label Set shall be a label set comprising at 
+least one Volome Header Label and at most nine such labels. 
+
+
+
+IS 11419: 1992 
+ISO 1001 :1986 
+
+
+
+8.3.1 First Volume Header Label (V0L1) 
+
+The First Volume Header Label shall identify the volume, the 
+owner, the accessibility conditions, the implementation record- 
+ing the Volume Header Label Set, and the version of this Inter- 
+national Standard which applies. 
+
+Table 2 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+VOL 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+1 
+
+
+5 to 10 
+
+
+Volume Identifier 
+
+
+6 
+
+
+a-characters 
+
+
+11 
+
+
+Volume Accessibility 
+
+
+1 
+
+
+a-character 
+
+
+12 to 24 
+
+
+(Reserved for future 
+standardization) 
+
+
+13 
+
+
+SPACES 
+
+
+25 to 37 
+
+
+Implementation Identifier 
+
+
+13 
+
+
+a-characters 
+
+
+38 to 51 
+
+
+Owner Identifier 
+
+
+14 
+
+
+a-characters 
+
+
+52 to 79 
+
+
+(Reserved for future 
+standardization) 
+
+
+28 
+
+
+SPACES 
+
+
+80 
+
+
+Label Standard Version 
+
+
+1 
+
+
+4 
+
+
+
+8.3.1.1 Fields reserved for future standardization (BP 12 to 24 
+and BP 52 to 79) 
+
+These fields shall be reserved for future standardization. 
+
+The characters in these fields shall be SPACEs. 
+
+8.3.1.2 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be VOL. 
+
+8.3.1.3 Label Number (BP 4) 
+
+This field shall specify the Label Number. 
+
+The character in this field shall be the digit ONE. 
+
+8.3.1.4 Volume Wentifier (BP 5 to 10) 
+
+This field shaH specify an identification of the volume. 
+The characters in this field shall be a-characters. 
+
+8.3.1.5 Volume Accessibility (BP 11) 
+
+This field shall specify whether there are installation-specified 
+restrictions under which the volume may be accessed. 
+
+The character in thisfield shall be an a-character. 
+
+SPACE shall mean tnat no such restrictions for access to the 
+volume have beeo agreed upon between the originator and the 
+recipient of the volume. 
+
+
+
+Any other a-character shall mean that there are particular 
+restrictions for access to the volume, tnat are subject to agree- 
+ment between the originator and the recipient of the volume. 
+
+
+
+8.3.1.6 Implementation Identifier (BP 25 to 37) 
+
+This field shall specify an identification of the implementation 
+which recorded the Volume Header Label Set. 
+
+The characters in this field shall be a-characters. 
+
+
+
+8.3.1.7 Owner Identifier (BP 38 to 51) 
+
+This field shall specify an identification of the owner of the 
+volume. 
+
+The characters in this field shall be a-characters. 
+
+8.3.1.8 Label Standard Version (BP 80) 
+
+This field shall specify the version of this International Standard 
+to which the volume is expected to conform. 
+
+The character in this field shall be a digit. 
+
+The digit4shall indicate the present version of this International 
+Standard. 
+
+
+
+8.3.2 Other Volume Header Labels (VQI 2 to V0L9) 
+
+Other Volume Header Labels shall be optional If present, they 
+shall contain implementation-defined information and shall 
+have the layout shown in table 3. 
+
+Table 3 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+VOL 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+Digits 2 to 9 
+
+
+5 to 80 
+
+
+(Reserved for 
+implementation use) 
+
+
+76 
+
+
+Not specified 
+
+
+
+8.3.2.1 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be VOL. 
+
+8.3.2.2 Label Number (BP 4) 
+
+This field shall specify the Label Number. 
+
+The character in this field shall be one of the digits TWO to 
+NINE. 
+
+8.3.2.3 Field reserved for implementation use (BP 5 to 80) 
+This field shall be reserved for implementation use. 
+
+
+
+18 11419:1992 
+ISO 1001 :1986 
+
+
+
+This International Standard neither specifies nor restricts the bit 
+combinations which may be recorded in this field, nor does it 
+specify any meaning for these bit combinations. 
+
+
+
+8.4 Installation Volume Label Set (UVL1 to UVL9) 
+
+An Installation Volume Label Set is optional. If present, it shall 
+comprise at least one Installation Volume Label and at most 
+nine such labels. They shall have the layout shown in table 4. 
+
+
+
+Table 4 
+
+
+
+Table 5 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+UVL 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+Digits 1 to 9 
+
+
+5 to 80 
+
+
+(Reserved for 
+installation use) 
+
+
+76 
+
+
+Not specified 
+
+
+
+8.4.1 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be UVL. 
+
+8.4.2 Label Number (BP 4} 
+
+This field shall specify the Label Number. 
+
+The character in this field shall be one of the digits ONE to 
+NINE. 
+
+8.4.3 Field reserved for installation use (BP 5 to 80) 
+
+This field shall be reserved for installation use. 
+
+This International Standard neither specifies nor restricts the bit 
+combinations which may be recorded in this field, nor does it 
+specify any meaning for these bit combinations. 
+
+8.5 File Header Label Set (HDR1 to HDR9) 
+
+A File Header Label Set shall be a label set comprising at least 
+two File Header Labels and at most nine such labels. 
+
+8.5.1 First File Header Label (HDR1) 
+
+The First File Header Label shall identify the file section, specify 
+the position of the file section within a file set, and specify cer- 
+tain attributes of the file section. 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+HDR 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+1 
+
+
+5 to 21 
+
+
+File Identifier 
+
+
+17 
+
+
+a-characters 
+
+
+22 to 27 
+
+
+File Set Identifier 
+
+
+6 
+
+
+a-characters 
+
+
+28 to 31 
+
+
+File Section Number 
+
+
+4 
+
+
+Digits 
+
+
+32 to 35 
+
+
+File Sequence Number 
+
+
+4 
+
+
+Digits 
+
+
+36 to 39 
+
+
+Generation Number 
+
+
+4 
+
+
+Digits 
+
+
+40 and 41 
+
+
+Generation Version Number 
+
+
+2 
+
+
+Digits 
+
+
+42 to 47 
+
+
+Creation Date 
+
+
+6 
+
+
+SPACE, 
+digits 
+
+
+48 to 53 
+
+
+Expiration Date 
+
+
+6 
+
+
+SPACE, 
+digits 
+
+
+54 
+
+
+File Accessibility 
+
+
+1 
+
+
+a-character 
+
+
+55 to 60 
+
+
+Block Count 
+
+
+6 
+
+
+ZEROS 
+
+
+61 to 73 
+
+
+Implementation identifier 
+
+
+13 
+
+
+a-characters 
+
+
+74 to 80 
+
+
+(Reserved for future 
+standardization) 
+
+
+7 
+
+
+SPACES 
+
+
+
+8.5.1 .1 Field reserved for future standardization (BP 74 to 80) 
+This field shall be reserved for future standardization. 
+
+The characters in this field shall be SPACES. 
+
+8.5.1.2 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be HDR. 
+
+8.5.1.3 Label Number (BP 4) 
+
+This field shall specify the Label Number. 
+
+The character in this field shall be the digit ONE. 
+
+8.5.1.4 File Identifier (BP 5 to 21 ) 
+
+This field shall specify an identification of the file. 
+
+The characters in this field shall be a-characters. 
+
+NOTE — Different files in a file set are permitted to have the same file 
+identifier. 
+
+8.5.1.5 File Set Identifier (BP 22 to 27) 
+
+This field shall specify an identification of the file set. 
+The characters in this field shall be a-characters. 
+
+
+
+IS 11419 : 1992 
+ISO 1001 :1986 
+
+
+
+8.5.1.6 File Section Number (BP 28 to 31) 
+
+This field shall specify the ordinal number of the file section as a 
+four-digit decimal number. 
+
+The characters in this field shall be digits. 
+
+8.5.1.7 File Sequence Number (BP 32 to 35) 
+
+This field shall specify the ordinal number of the file in a file set 
+as a four-digit decimal number. 
+
+The characters in this field shall be digits. 
+
+8.6.1.8 Generation Number (BP 36 to 39) 
+
+This field shall specify an identification of the generation of the 
+file as a four-digit decimal number from 0001 to 9999. 
+
+The characters in this field shall tie digits. 
+
+NOTE — The Generation Number field of a file within a file set Is per- 
+mined to be the same as that of other files with the same File lder>tifier 
+field in the file set. 
+
+
+
+8.5.1.9 Generation Version Number (BP 40 and 41) 
+
+TNs field shall specify an identification of the version of the 
+generation of a file as a two-digit decimal number. 
+
+The characters in this field shall be digits. 
+
+NOTE — The Generation Version Number field of a file within a file set 
+is permitted to be the same as that of other files with the same File 
+Identifier and Generation Number fields in the file set. 
+
+
+
+8.5.1.10 Creation Date (BP 42 to 47) 
+
+This field shall specify the creation date of a file section. 
+
+The characters in this field shall be SPACE and digits. 
+
+The first character shall specify that the two most significant 
+digits of the year are 19 if it is SPACE and are 20 if it is digit 
+ZERO. 
+
+The next two characters shall be digits specifying the two least 
+significant digits of the year from 00 to 99. 
+
+The next three characters shall be digits specifying the ordinal 
+number of the day as a three-digit decimal number from 001 
+to 366. 
+
+If the last five digits are ZEROs, this shall indicate that the 
+creation date is not specified. 
+
+8.5.1.11 Expiration Date (BP 48 to 53) 
+
+This field shall specify the earliest date at which the data of the 
+file section may be regarded as obsolete. 
+
+
+
+The characters in this field shall be SPACE and digits. 
+
+The first character shall specify that the two most significant 
+digits of the year are 19 if it is SPACE and are 20 if it is digit 
+ZERO. 
+
+The next two characters shall be digits specifying the two least 
+significant digits of the year from 00 to 99. 
+
+The next three characters shall be digits specifying the ordinal 
+number of the day as a three-digit decimal number from 001 
+to 366. 
+
+If the last five characters are ZEROs, this shall indicate that the 
+expiration date is not specified and that the data may be regard- 
+ed as obsolete. 
+
+8.5.1.12 File Accessibility (BP 54) 
+
+This field shall specify whether there are installation-specified 
+restrictions under which the file may be accessed. 
+
+The character in this field shall be an a-character. 
+
+SPACE shall mean that no such restrictions for access to the 
+file have been agreed upon between the originator and the reci- 
+pient of the volume. 
+
+Any other a-character shall mean that there are particular 
+restrictions for access to the file that are subject to agreement 
+between the originator and the recipient of the volume. 
+
+8.5.1.13 Block Count (BP 55 to 60) 
+This field shall specify a constant value. 
+The characters in this field shall be ZEROs. 
+
+8.5.1.14 Implementation Identifier (BP 61 to 73) 
+
+This field shall specify an identification of the implementation 
+which recorded the label set. 
+
+The characters in this field shall be a-characters. 
+
+8.5.2 Second File Header Label (HDR2) 
+
+The Second File Header Label shall specify certain attributes of 
+the file and implementation-defined information. 
+
+Table 6 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+HDR 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+2 
+
+
+5 
+
+
+Record Format 
+
+
+1 
+
+
+F, D or S 
+
+
+6 to 10 
+
+
+Block Length 
+
+
+5 
+
+
+Digits 
+
+
+11 to 15 
+
+
+Record Length 
+
+
+5 
+
+
+Digits 
+
+
+16 to 50 
+
+
+(Reserved for 
+implementation use) 
+
+
+35 
+
+
+Not specified 
+
+
+51 and 52 
+
+
+Offset Length 
+
+
+2 
+
+
+Digits 
+
+
+53 to 80 
+
+
+(Resen/ed for future 
+standardization) 
+
+
+28 
+
+
+SPACES 
+
+
+
+10 
+
+
+
+iS 11419: 1992 
+ISO 1001 :1986 
+
+
+
+8.5.2.1 Field reserved for future standardization (BP 53 to 80) 
+This field shall be reserved for future standardization. 
+
+The characters in this field shall be SPACES. 
+
+8.5.2.2 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be HDR. 
+
+8.5.2.3 Label Number (BP 4) 
+
+This field shall specify the Label Number. 
+
+The character in this field shall be the digit TWO. 
+
+8.5.2.4 Record Format (BP 5) 
+
+This field shall specify the format of the records of the file. 
+The character in this field shall be F, D or S. 
+F shall mean that all records are fixed-length records. 
+D shall mean that all records are variable-length records. 
+S shall mean that all records are segmented records. 
+
+8.5.2.5 Block Length (BP 6 to 10) 
+
+This field shall specify the maximum permitted length of a data 
+block of the file as a five-digit decimal number. 
+
+The characters in this fiald shall be digits. 
+
+8.5.2.6 Record Length (BP 11 to 15) 
+
+This field shall specify a five-digit decimal number as follows. 
+
+The characters in this field shall be digits. 
+
+If the Record Format field (HDR2 BP 5) contains F, the Record 
+Length field shall specify the length of each data record. 
+
+If the Record Format field (HDR2 BP 5) contains D, the Record 
+Length field shall specify the maximum length of an MDU in the 
+
+file. 
+
+If the Record Format field (HDR2 BP 5) contains S, the Record 
+Length field shall specify the maximum length of a record in the 
+file. This number shall not include the bytes in the Segment 
+Control Words. If all characters are ZEROs, this shall mean that 
+the maximum record length may be greater than 99 999 bytes. 
+
+8.5.2.7 Field reserved for implementation use (BP 16 to 50) 
+
+This field shall be reserved for implementation use. 
+
+This International Standard neither specifies nor restricts the bit 
+combinations which may be recorded in this field, nor does it 
+specify any meaning for these bit combinations. 
+
+
+
+8.5.2.8 Offset Length (BP 51 and 52) 
+
+This field shall specify the length of the Offset field as a two- 
+digit decimal number. 
+
+The characters in this field shall be digits. 
+
+
+
+8.5.3 Other File Header Labels (HDR3 to HDR9) 
+
+Other File Header Labels shall be optional. If present, they shall 
+contain implementation-defined information and shall have the 
+layout shown in table 7. 
+
+Table 7 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+HDR 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+Digits 3 to 9 
+
+
+5 to 80 
+
+
+(Reserved for 
+Implementation use) 
+
+
+76 
+
+
+Not specified 
+
+
+
+8.5.3.1 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be HDR. 
+
+8.5.3.2 Label Number (BP 4) 
+
+This field shall specify the Label Number. 
+
+The character in this field shall be one of the digits THREE to 
+NINE. 
+
+8.5.3.3 Field reserved for implementation use (BP 5 to 80) 
+
+This field shall be reserved for implementation use. 
+
+This International Standard neither specifies nor restricts the bit 
+combinations which may be recorded in this field, nor does it 
+specify any meaning for these bit combinations. 
+
+8.6 User File Header Label Set (UHL) 
+
+A User File Header Label Set shall be optional. If present, its 
+labels shall have the layout shown in table 8. 
+
+Table 8 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+UHL 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+a-character 
+
+
+5 to 80 
+
+
+(Reserved for 
+application use) 
+
+
+76 
+
+
+Not specified 
+
+
+
+11 
+
+
+
+IS 11419 : 1992 
+ISO 1001 : 1986 
+
+
+
+8.6.1 Label Identifier (BP 1 to 31 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be UHL. 
+
+8.6.2 Label Number (BP 4) 
+
+This field shall be reserved for application use. 
+The character in this field shall be an a-character. 
+
+8.6.3 Field reserved for application use (BP 5 to 80) 
+
+This field shall be reserved for application use. 
+
+This International Standard neither specifies nor restricts the bit 
+combinations which may be recorded in this field, nor does it 
+specify any meaning for these bit combinations. 
+
+8.7 End of Volume Label Set (E0V1 to E0V9) 
+
+An End of Volume Label Set shall be a label set comprising at 
+least two and at most nine End of Volume Labels. 
+
+8.7.1 First End of Volun>e Label (E0V1) 
+
+Table 9 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+EOV 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+1 
+
+
+5 to 21 
+
+
+File Identifier 
+
+
+17 
+
+
+a-characters 
+
+
+22 to 27 
+
+
+File Set Identifier 
+
+
+6 
+
+
+a-characters 
+
+
+28 to 31 
+
+
+File Section Number 
+
+
+4 
+
+
+Digits 
+
+
+32 to 35 
+
+
+File Sequence Number 
+
+
+4 
+
+
+Digits 
+
+
+36 to 39 
+
+
+Generation Number 
+
+
+4 
+
+
+Digits 
+
+
+40 and 41 
+
+
+Generation Version Number 
+
+
+2 
+
+
+Digits 
+
+
+42 to 47 
+
+
+Creation Date 
+
+
+6 
+
+
+SPACE, 
+digits 
+
+
+48 to 53 
+
+
+Expiration Date 
+
+
+6 
+
+
+SPACE, 
+digits 
+
+
+54 
+
+
+File Accessibility 
+
+
+1 
+
+
+a-character 
+
+
+55 to 60 
+
+
+Block Count 
+
+
+6 
+
+
+Digits 
+
+
+61 to 73 
+
+
+Implementation Identifier 
+
+
+13 
+
+
+a-characters 
+
+
+74 to 80 
+
+
+(Reserved for future 
+standardization) 
+
+
+7 
+
+
+SPACES 
+
+
+
+8.7.1.1 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be EOV. 
+
+8.7.1.2 Block Count (BP 55 to 60) 
+
+This field shall specify as a six-digit decimal number; the 
+number or blocks in which the file section is recorded. 
+
+The characters in this field shall be digits. 
+
+
+
+8.7.1.3 Implementation Identifier (BP 61 to 73) 
+
+This field shall specify an identification of the implementation 
+which recorded the label set. 
+
+The characters in this field shall be a-characters. 
+
+
+
+8.7.2 Second End of Volume Label (E0V2) 
+
+
+
+Table 10 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+EOV 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+2 
+
+
+5 
+
+
+Record Format 
+
+
+1 
+
+
+F, D or S 
+
+
+6 to 10 
+
+
+Block Length 
+
+
+5 
+
+
+Digits 
+
+
+11 to 15 
+
+
+Record Length 
+
+
+5 
+
+
+Digits 
+
+
+16 to 50 
+
+
+(Reserved for 
+implementation use) 
+
+
+35 
+
+
+Not specified 
+
+
+51 and 52 
+
+
+Offset Length 
+
+
+2 
+
+
+Digits 
+
+
+53 to 80 
+
+
+Reserved for future 
+Standardization) 
+
+
+28 
+
+
+SPACES 
+
+
+
+Within a Labelled- Sequence the contents of the fields of this 
+label shall be identical with the contents of the corresponding 
+fields in the First File Header Label, except for the following 
+fields. 
+
+
+
+Within a Labelled- Sequence the contents of the fields of this 
+label shall be identical with the contents of the corresponding 
+fields of the Second File Header Label, except for the following 
+fields. 
+
+
+
+8.7.2.1 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be EOV. 
+
+8.7.2.2 Field reserved for implementation use (BP 16 to 50) 
+
+This field shall be reserved for implementation use. 
+
+This International Standard neither specifies nor restricts the bit 
+combinations which may be recorded in this field, nor does it 
+specify any meaning for these bit combinations. 
+
+
+
+12 
+
+
+
+IS 11419 : 1992 
+ISO 1001 : 19B6 
+
+
+
+8.7.3 Other End of Volume Labels {EOV3 to EOV9) 
+
+Other End of Volume Labels shall be optional. If present, they 
+shall contain implementation-defined information and shall 
+have the layout shown in table 1 1 . 
+
+Table 11 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+EOV 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+Digits 3 to 9 
+
+
+5 to 80 
+
+
+(Reserved for 
+implementation use) 
+
+
+76 
+
+
+Not specified 
+
+
+
+8.7.3.1 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be EOV. 
+
+8.7.3.2 Label Number (BP 4) 
+
+This field shall specify the Label Number. 
+
+The character in this field shall be one of digits THREE to NINE. 
+
+8.7.3.3 Field reserved for implementation use IBP 5 to 80) 
+
+This field shall be reserved for implementation use. 
+
+This International Standard neither specifies nor restricts the bit 
+combinations which may be recorded in this field, nor does it 
+specify any meaning for these bit combinations. 
+
+8.8 End of File Label Set (E0F1 to E0F9) 
+
+An End of File Label Set shall be a label set comprising at least 
+two and at most nine End of File Labels. 
+
+8.8.1 First End of File Label (EOFI) 
+Table 12 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+EOF 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+1 
+
+
+5 to 21 
+
+
+File Identifier 
+
+
+17 
+
+
+a-characters 
+
+
+22 to 27 
+
+
+File Set Identifier 
+
+
+6 
+
+
+a-characters 
+
+
+28 to 31 
+
+
+File Section Number 
+
+
+4 
+
+
+Digits 
+
+
+32 to 35 
+
+
+File Sequence Number 
+
+
+4 
+
+
+Digits 
+
+
+36 to 39 
+
+
+Generation Number 
+
+
+4 
+
+
+Digits 
+
+
+40 and 4-1 
+
+
+Generation Version Number 
+
+
+2 
+
+
+Digits 
+
+
+42 to 47 
+
+
+Creation Date 
+
+
+6 
+
+
+SPACE, 
+digits 
+
+
+48 to 53 
+
+
+Expiration Date 
+
+
+6 
+
+
+SPACE, 
+digits 
+
+
+54 
+
+
+File Accessibility 
+
+
+1 
+
+
+a-character 
+
+
+55 to 60 
+
+
+Block Count 
+
+
+6 
+
+
+Digits 
+
+
+61 to 73 
+
+
+Implementation Identifier 
+
+
+13 
+
+
+a-characters 
+
+
+74 to 80 
+
+
+(Reserved for future 
+standardization) 
+
+
+7 
+
+
+SPACES 
+
+
+
+Within a Labelled-Sequence the contents of the fields of this 
+label shall be identical with the contents of the corresponding 
+fields in the First File Header Label, except for the following 
+fields. 
+
+
+
+8.8.1.1 Label Identifier (BP 1 to 3) 
+This field shall specify the Label Identifier. 
+The characters in this field shall be EOF. 
+
+
+
+8.8.1.2 Block Count (BP 55 to 60) 
+
+This field shall specify as a six-digit decimal number; the 
+number of blocks in which the file section is recorded. 
+
+The characters in this field shall be digits. 
+
+
+
+8.8.1.3 Implementation Identifier (BP 61 to 73) 
+
+This field shall specify an identification of the implementation 
+which recorded the label set. 
+
+The characters in this field shall be a-characters. 
+
+
+
+8.8.2 Second End of File Label (E0F2) 
+
+
+
+Table 13 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+EOF 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+2 
+
+
+5 
+
+
+Record Format 
+
+
+1 
+
+
+F, D or S 
+
+
+6 to 10 
+
+
+Block Length 
+
+
+5 
+
+
+Digits 
+
+
+11 to 15 
+
+
+Record Length 
+
+
+5 
+
+
+Digits 
+
+
+16 to 50 
+
+
+(Reserved for 
+implementation use) 
+
+
+35 
+
+
+Not specified 
+
+
+51 and 52 
+
+
+Offset Length 
+
+
+2 
+
+
+Digits 
+
+
+53 to 80 
+
+
+(Reserved for future 
+standardization) 
+
+
+28 
+
+
+SPACES 
+
+
+
+Within a Labelled-Sequence the contents of the fields of this 
+label shall be identical with the contents of the corresponding 
+fields in the Second File Header Label, except for the following 
+fields. 
+
+8.8.2.1 Label Identifier (BP 1 to 3) 
+
+This field shaK specify the Label Identifier. 
+The characters in ttris field shall be EOF. 
+
+8.8.2.2 Field reserved for implementation use (BP 16 to 50] 
+
+This field shall be reserved for implementation use. 
+
+This International Standard neither specifies nor restricts the bit 
+combinations which may be recorded in this field, nor does it 
+specify any meaning for these bit combinations. 
+
+
+
+13 
+
+
+
+IS 11419 : 1992 
+ISO 1001 : 1986 
+
+
+
+8.8.3 Other End of File Labels (E0F3 to EOF 9) 
+
+Other End of File Labels shal) be optional. If present, they shall 
+contain implementation-defined information and shall have the 
+layout shown in table 14, 
+
+Table 14 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+EOF 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+Digits 3 to 9 
+
+
+5 to 80 
+
+
+(Reserved for 
+
+implementation use) 
+
+
+76 
+
+
+Not specified 
+
+
+
+8.8.3.1 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be EOF. 
+
+8.8.3.2 Label Number (BP 4) 
+
+This field shall specify the Label Number. 
+
+The character in this field shall be one of digits THREE to NINE. 
+
+8.8.3.3 Field reserved for implementation use (BP 5 to 80) 
+
+This field shall be reserved for implementation use. 
+
+This International Standard neither specifies nor restricts the bit 
+combinations which may be recorded in this field, nor does it 
+specify any meaning for these bit combinations. 
+
+8.9 User File Trailer Label Set (UTL) 
+
+A User File Trailer Label Set shall be optional. If present, its 
+labels shall have the layout shown in table 15. 
+
+Table 15 
+
+
+
+BP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+UTL 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+a-character 
+
+
+5 to 80 
+
+
+(Reserved for 
+application use) 
+
+
+76 
+
+
+Not specified 
+
+
+
+8.9.1 Label Identifier (BP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be UTL. 
+
+8.9.2 Label Number IBP 4) 
+
+This field shall be reserved for application use. 
+The character in this field shall be an a-character. 
+
+
+
+8.9.3 Field reserved for application use (BP 5 to 80} 
+
+This field shall be reserved for application use. 
+
+This International Standard neither specifies nor restricts the bit 
+combinations which may be recorded in this field, nor does it 
+specify any meaning for these bit combinations. 
+
+9 Levels of interchange 
+
+This International Standard specifies four nested levels of inter- 
+change. 
+
+At all levels, labels specified as optional by this International 
+Standard may be recorded. These labels may be Ignored in 
+interchange. 
+
+9.1 Level 1 
+
+At Level 1 the following restrictions shall apply : 
+
+— a volume set shall contain only one file, and 
+
+— all records in any file shall be fixed-length records. 
+
+9.2 Level 2 
+
+At Level 2 the following restriction shall apply : 
+
+— all records in any file shall be fixed-length records. 
+
+9.3 Level 3 
+
+At Level 3 the following restriction shall apply : 
+
+— all records in the file shall be either fixed-length records 
+or variable-length records. 
+
+9.4 Level 4 
+
+At level 4 no restrictions apply. 
+
+10 Requirements for the description 
+of systems 
+
+Information shall be communicated between an application 
+program and an implementation, or between an installation and 
+an implementation <se€ clauses 11 and 12). 
+
+An information processing system that conforms to this Inter- 
+national Standard shall be the subject of a description which 
+identifies the means by which the user may supply such infor- 
+mation, or may obtain it when it is made available, as specified 
+in this Intel^national Standard. 
+
+11 Requirements for an originating system 
+11.1 General 
+
+The implementation in an originating system shall be capable of 
+recprding a file set, and all labels that are not specified in this 
+
+
+
+14 
+
+
+
+IS 11419: 1992 
+ISO 1001 :1986 
+
+
+
+International Standard as being optional, on a volume set in 
+accordance with one of the interchange levels specified in 
+clause 9 of this International Standard. 
+
+The implementation shall not be required to record any labels 
+that are specified in this International Standard as being 
+optional. 
+
+11.2 Files 
+
+The implementation shall obtain from the application program 
+the records that constitute the files of the file set to be 
+recorded 
+
+The implementation shall obtain from the application program 
+the length of each record in the file. 
+
+NOTE — An RCW or SCW does not form part of a record. 
+
+11.3 Labels 
+
+11.3.1 The implementation shall permit the installation to 
+supply the information that is to be recorded in each of the 
+label fields listed below, and shall supply the information for a 
+field if the installation does not supply it. 
+
+
+
+For each volume in the volume set : 
+
+— Volume Identifier 
+
+— Volume Accessibility 
+For each file in the file set : 
+
+— File Accessibility 
+
+
+
+V0L1 BP 5 to 10 
+V0L1 BP11 
+
+HDR1 BP54 
+
+
+
+11 .3.2 If the implementation permits the installation to supply 
+the information that is to be recorded in any of the label fields 
+listed below, then the implementation shall record such infor- 
+mation as supplied by the installation, and shall supply the in- 
+formation if the installation does not supply it. 
+
+
+
+For each volume in the volume set 
+
+— Owner Identifier 
+For each file in the file set : 
+
+— File Set Identifier 
+
+
+
+V0L1 BP 38 to 51 
+
+
+
+HDR1 BP 22 to 27 
+
+
+
+11.3.3 The implementation shall permit the applicatiop pro- 
+gram to supply the information that is to be recorded in each of 
+the label fields listed below, and shall supply the information for 
+a field if the application program does not supply it. 
+
+
+
+For each file in the file set : 
+
+— File Identifier 
+
+— Record Format 
+
+— Block Length 
+
+— Record Length 
+
+
+
+HDR1 BP5to21 
+HDR2 BP 5 
+HDR2 BP 6 to 10 
+HDR2BP 11 to 15 
+
+
+
+11.3.4 If the implementation permits the application program 
+to supply the information that is to be recorded in any of the 
+label fields listed below, then the implementation shall record 
+such information as supplied by the application program, and 
+shall supply the information if the application program does not 
+supply it. 
+
+
+
+For each file in the file set : 
+
+— Generation Number 
+
+— Generation Version Number 
+For each file section in the file set : 
+
+— Creation Date 
+
+— Expiration Date 
+
+
+
+HDR1 BP 36 to 39 
+HDR1 BP 40 and 41 
+
+HDR1 BP 42 to 47 
+HDR1 BP 48 to 53 
+
+
+
+11.3.5 If the implementation is capable of recording an 
+Installation Volume Label Set, then the implementation shall 
+permit the installation to supply the information that is to be 
+recorded in the label fields listed below for that label set, and 
+shall not be required to record the corresponding label if the in- 
+stallation does not supply the information. 
+
+For each label in an Installation Volume Label Set recorded on 
+any volume in the volume set : 
+
+— Reserved for Installation Use BP 5 to 80 
+
+NOTE — If any label in an Installation Volume Label Set is not record- 
+ed, then 6.2.2 of this International Standard requires that no higher 
+numbered labels in the set shall be recorded. 
+
+11.3.6 If the implementation is capable of recording a User 
+Header or a User Trailer Label Set, then the implementation 
+shall permit the application program to supply the information 
+that is to be recorded in the label fields listed below for that 
+label set, and shall not be required to record the corresponding 
+label if the application program does not supply the informa- 
+
+,tion. 
+
+For each label in a User Header and a User Trailer Label Set that 
+forms part of any Labelled-Sequence on a volume : 
+
+— Label Number BP 4 
+
+— Reserved for application use BP 5 to 80 
+
+11.4 Restrictions 
+
+The implementation may apply restrictions on the information 
+supplied by the user in the Record Length field (HDR2 BP 11 
+to 15) as follows. 
+
+If the records in a file are segmented records the implementa- 
+tion may impose a limit on the maximum record length. This 
+limit shall not be less than the maximum assignable block 
+length, less the length of the Offset field and the length of 
+the SCW. 
+
+If the records in a file are variable-length records the implemen- 
+tation may assign a tnaximum record length equal to the 
+assigned maximum block length, less the length of the Offset 
+field and the length of the RCW. 
+
+
+
+15 
+
+
+
+IS 11419 : 1992 
+ISO 1001 :1986 
+
+
+
+12 Requirements for a receiving system 
+
+12.1 General 
+
+The implementation in a receiving system shall be capable of 
+reading a file set, and all recorded labels, from a volume set that 
+has been recorded In accordance with one of the interchange 
+levels specified in this International Standard. 
+
+The implementation may Ignore the information from any labels 
+that are specified in this International Standard as being 
+optional. 
+
+12.2 Files 
+
+The implementation shall make available to the application pro- 
+gram the records that constitute the files of the recorded file 
+set. 
+
+The implementation shall make available to the application pro- 
+gram the length of each record in the file. 
+
+NOTE - An RCW or SCW does not form part of a record. 
+
+12.3 Labels 
+
+12.3.1 The implementation shall permit the user to supply in- 
+formation sufficient to enable the implementation to locate the 
+files required by the user, and to locate the volumes on which 
+these files are recorded. 
+
+12.3.2 The implementation shall make available to the installa- 
+tion the information that is recorded in each of the label fields 
+listed below. 
+
+
+
+12.3.4 The implementation shall not be required to make 
+available to the user the information that is recorded in each of 
+the label fields listed below. 
+
+
+
+For each volume in the volume set 
+
+— Volume Identifier 
+
+— Volume Accessibility 
+For each file in the file set : 
+
+— File Accessibility 
+
+
+
+V0L1 BP 5 to 10 
+VOLl BPII 
+
+HDR1 BP54 
+
+
+
+12.3.3 The implementation shall make available to the ap- 
+plication program the information that is recorded in each of 
+the label fields listed below. 
+
+
+
+For each file in the file set 
+
+— File Identifier 
+
+— Record Format 
+
+— Block Length 
+
+— Record Length 
+
+
+
+HDRl BP5to21 
+HDR2BP5 
+HDR2'BP 6 to 10 
+HDR2fiP n to 15 
+
+
+
+For each volume in the volume set : 
+
+— Owner Identifier 
+For each file in the file set : 
+
+— File Set Identifier 
+
+— Generation Number 
+
+— Generation Version Number 
+For each file section in the file set : 
+
+— Creation Date 
+
+— Expiration Date 
+
+
+
+VOLl BP 38 to 51 
+
+HDR1 BP 22 to 27 
+HDR1 BP 36 to 39 
+HDR1 BP 40 and 41 
+
+HDR1 BP 42 to 47 
+HDR1 BP 48 to 53 
+
+
+
+12.3.5 If the implementation is capable of making available to 
+the user the information that is recorded in an Installation 
+Volume Label Set, it shall make available to the installation the 
+information that is recorded in each of the label fields listed 
+below. 
+
+For each recorded label in-an Installation Volume Label Set on 
+any volume in the volume set : 
+
+
+
+— Reserved for installation use 
+
+
+
+BP 5 to 80 
+
+
+
+12.3.6 If the implementation is capable of making available to 
+the user the information that is recorded in a User Header or a 
+User Trailer Label Set, it shall make available to the application 
+program the information that is recorded in each of the l^bel 
+fields listed below. 
+
+For each recorded label in a User Header and a User Trailer 
+Label Set that forms part of any Labelled-Sequence on a 
+volume : 
+
+— Label Number BP 4 
+
+— Reserved for gfpplication use BP5to80 
+
+
+
+12.4 Restrictions 
+
+If the records in a file are segmented records, the implementa- 
+tion may impose a limit on the length of a record in the file. This 
+limit shall not be less than th'e maximum assignable block 
+length, less the length of the Offset field and the length of the 
+SCW. The implementation is not required to make available to 
+the application program any byte beyond the first n bytes of the 
+record, where n is the value of the imposed limit. 
+
+
+
+16 
+
+
+
+Annex A 
+
+
+
+IRV code table from ISO 646 
+
+(This annex does not form part of the standard.) 
+
+
+
+Table 16 
+
+
+
+IS 11419 : 1992 
+ISO 1001 : 1986 
+
+
+
+
+
+b? 
+
+
+
+
+
+r] 
+
+
+3— 
+
+
+
+
+
+r" 
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+
+
+b6 
+
+
+
+
+
+
+
+
+1 
+
+
+1 
+
+
+
+
+
+
+
+1 
+
+
+1 
+
+
+
+
+b5 
+
+
+
+
+
+r 
+
+
+
+
+
+1 
+
+
+
+
+
+1 
+
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+1 
+
+
+2 
+
+
+3 
+
+
+4 
+
+
+5 
+
+
+6 
+
+
+7 
+P 
+
+
+ISBISISI3] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NUl 
+
+
+t^LS 
+
+
+SP 
+
+
+
+
+
+
+
+p 
+
+
+% 
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+
+1 
+
+
+vm 
+
+
+6CT 
+
+
+1 
+
+
+1 
+
+
+A 
+
+
+Q 
+
+
+a 
+
+
+q 
+
+
+
+
+
+
+
+
+1 
+
+
+
+
+
+2 
+
+
+$TJt 
+
+
+8C2 
+
+
+II 
+
+
+2 
+
+
+B 
+
+
+R 
+
+
+"b" 
+
+
+r 
+
+
+
+
+
+
+
+
+1 
+
+
+1 
+
+
+3 
+
+
+tTJ< 
+
+
+&C3t 
+
+
+# 
+
+
+3 
+
+
+c 
+
+
+s 
+
+
+c 
+
+
+s 
+
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+4 
+
+
+%m 
+
+
+&€4 
+
+
+n 
+
+
+4 
+
+
+D 
+
+
+T 
+
+
+d 
+
+
+t 
+
+
+
+
+
+1 
+
+
+
+
+
+4 
+
+\ 
+
+
+5 
+
+
+tim. 
+
+
+|S|^I^ 
+
+
+% 
+
+
+5 
+
+
+E 
+
+
+u 
+
+
+e 
+
+
+u 
+
+
+
+
+
+1 
+
+
+1 
+
+
+
+
+
+6 
+
+
+ACIC 
+
+
+St« 
+
+
+& 
+
+
+6 
+
+
+F 
+
+
+V 
+
+
+,f 
+
+
+V 
+
+
+
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+7 
+
+
+&etj 
+
+
+5T9 
+
+
+1 
+
+
+7 
+
+
+G 
+
+
+M 
+
+
+9 
+
+
+t<r 
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+8 
+
+
+el^ 
+
+
+<:ah 
+
+
+( 
+
+
+8 
+
+
+H 
+
+
+X 
+
+
+h 
+
+
+X 
+
+
+1 
+
+
+
+
+
+
+
+
+1 
+
+
+9 
+
+
+m 
+
+
+E« 
+
+
+) 
+
+
+9 
+
+
+I 
+
+
+Y 
+
+
+i 
+
+
+>": 
+
+
+1 
+
+
+
+
+
+1 
+
+
+
+
+
+10 
+
+
+IP 
+
+
+$il8 
+
+
+* 
+
+
+■ 
+
+
+J 
+
+
+z 
+
+
+} 
+
+
+z 
+
+
+1 
+
+
+
+
+
+1 
+
+
+1 
+
+
+11 
+
+
+¥T 
+
+
+e$c 
+
+
++ 
+
+
+■ 
+
+r 
+
+
+K 
+
+
+c 
+
+
+k 
+
+
+< 
+
+
+1 
+
+
+1 
+
+
+
+
+
+
+
+
+12 
+
+
+pr 
+
+
+1^<( 
+
+
+/ 
+
+
+< 
+
+
+L 
+
+
+\ 
+
+
+I 
+
+
+
+
+1 
+
+
+1 
+
+
+
+
+
+1 
+
+
+13 
+
+
+^« 
+
+
+tss 
+
+
+— 
+
+
+— 
+
+
+M 
+
+
+3 
+
+
+m 
+
+
+y 
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+
+
+
+14 
+
+
+%^ 
+
+
+l%t 
+
+
+■ 
+
+
+> 
+
+
+N 
+
+
+A. 
+
+
+n 
+
+
+m. 
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+1 
+
+
+15 
+
+
+SI 
+
+
+l$t 
+
+
+/ 
+
+
+9 
+
+
+
+
+
+- _^ 
+
+
+l>iL 
+
+
+
+The a-characters are those which are not shaded in table 16. 
+
+
+
+17 
+
+
+
+IS 11419 : 1992 
+ISO 1001 :1986 
+
+
+
+Annex B 
+Initialized volumes 
+
+(This annex does not form part of the standard.) 
+
+
+
+B.I Purpose 
+
+An installation which originates recorded magnetic tapes for information interchange will need to have available a supply of magnetic 
+tape volumes which are ready to be recorded with interchange file sets. Such volumes will typically be unrecorded, or will contain only 
+data that need not be retained. File sets can then be recorded on some of these volumes when the need for data interchange arises. 
+
+At an installation, the administration of these magnetic type volumes can be simplified if appropriate volume identification details are 
+already recorded in the first label group on each volume, although no valid file sections are recorded on the volumes. A volume 
+recorded in this way is known as an initialized volume. If initialized volumes and data interchange volumes are handled by common 
+administrative arrangements, it may be convenient if the specification of an initialized volume can be closely related to the specifica- 
+tion of an interchange volume. For this purpose a recommended specification for an initialized volume is provided below. The 
+specification makes use only of elements already specified in the body of this International Standard. 
+
+B.2 Specification 
+
+The data on an initialized volume^shall consist of the sequence of blocks and Tape Marks as listed below, recorded consecutively : 
+
+— Beginning of Volume Label Group; 
+
+— two Tape Marks. 
+
+Any information that is recorded following the second Tape Mark of the sequence may be ignored. 
+
+
+
+18 
+
+
+
+IS 11419: 1992 
+ISO 1001 :1986 
+
+
+
+Annex C 
+
+Main differences between the first edition (1979) and the present (second) 
+
+edition of this International Standard 
+
+(This annex does not form part of the standard.) 
+
+
+
+C. 1 The structure and text of the specifications have been completely revised to improve the clarity and to correspond to the style 
+of ISO 7665. 
+
+C.2 The requirements for information processing systems and the requirements for sets of magnetic tape volumes for interchange 
+have been placed in distinct sets of clauses, each with corresponding definitions of conformance. 
+
+C.3 Up to eight additional Volume Header Labels may optionally be recorded on a magnetic tape volume, identified by V0L2 to 
+V0L9. 
+
+C.4 HDR2, E0V2 and E0F2 labels are now required also at Level 1 and Level 2. 
+
+C.5 The contents of a file may consist of the coded representations of any type of information for which an Interndlional Standard 
+exists, and is no longer restricted to coded character sets conforming to ISO 646. 
+
+C.6 The responsibility for the selection and interpretation of the contents of the Accessibility fields is now clearly assigned to the 
+installation. 
+
+C.7 An annex B, for the format of initialized volumes not yet recorded with data for interchange, has been added. 
+
+
+
+1 9 Printed at Dee Kay Printers, New Etelhi, India 
+
+
+
+Bnreau of Indian Standard 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, J986 to 
+promote harmonious development of the activities of standardization, marking and quality 
+certification of goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced 
+in any form without the prior permission in writing of BIS. This does not preclude the free use, 
+in the course of implementing the standard, of necessary details, such as symbols and sizes, type 
+or grade designations. Enquiries relating to copyright be addressed to the Director 
+( Publications ), BIS. 
+
+Revision of Indian Standards 
+
+Indian Standards are reviewed periodically and revised, when necessary and amendments, if 
+any, are issued from time to time. Users of Indian Standards should ascertain that they are in 
+possession of the latest amendments or edition. Comments on this Indian Standard may be 
+sent to BIS giving the following reference: 
+
+Doc : No. LTD 37 ( 1589 ) 
+
+
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text AfiFected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters : 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 
+
+Telephones i 331 01 31, 331 13 75 Telegrams i Manaksanstha 
+
+( Common to all Offices ) 
+
+Regional Offices t Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg r331 01 31 
+
+NEW DELHI 110002 (331 13 75 
+
+Eastern : 1/14 C. I. T. Scheme VII M, V. I. P. Road, Maniktola 37 86 62 
+
+CALCUTTA 700054 
+
+Northern i SCO 445-446, Sector 35-C, CHANDIGARH 160036 53 38 43 
+
+Southern : C. I. T, Campus, IV Cross Road, MADRAS 600U3 235 02 16 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri ( East ) 6 32 92 95 
+
+BOMBAY 400093 
+
+Branches : AHMADABAD, BANGALORE, BHOPAL, BHUBANESHWAR, COIMBATORE, 
+FARIDABAD, GHAZIABAD, GUWAHATI, HYDERABAD, JAIPUR, KANPUR, 
+LUCKNOW, PATNA, THIRUVANANTHAPURAM. 
+
+
+
+Printed at Piintwell Printers, Aligarh, India 
+
+
+

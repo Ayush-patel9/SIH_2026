@@ -1,0 +1,114 @@
+{
+  "is_number": "IS IS_2830",
+  "standard_id": "IS IS_2830",
+  "title": "Indian Standard Specification / Test Method (IS IS_2830)",
+  "ia_identifier": "IS_2830",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the requirements of carbon steel cast billet ingots, billets, blooms, slabs and for re-rolling into medium and high tensile structural steel including steel for concrete reinforcement. The requirements of this standard shall also be applicable to billets, blooms and slabs produced by continuously cast process. 1.2 Carbon steel cast billet ingots, billets, bloom and slabs (including continuously cast) may also be supplied in copper-bearing quality. In which case steel shall be designated with a suffix Cu.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 2062",
+      "standard_id": "IS 2062:2011",
+      "title": "Hot Rolled Medium and High Tensile Structural Steel",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 1786",
+      "standard_id": "IS 1786:2008",
+      "title": "High strength deformed steel bars and wires for concrete reinforcement-",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 1956",
+      "standard_id": "IS 1956",
+      "title": "Indian Standard Specification / Test Method (IS 1956)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8910",
+      "standard_id": "IS 8910:2010",
+      "title": "General technical delivery requirements for steel and steel products",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 228",
+      "standard_id": "IS 228",
+      "title": "Indian Standard Specification / Test Method (IS 228)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11371",
+      "standard_id": "IS 11371:2022",
+      "title": "Method for Macroetch Testing, Inspection and Rating of Wrought Steel Products",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12037",
+      "standard_id": "IS 12037:1987",
+      "title": "Macrographic examination by sulphur print (Baumann method)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Cast Billet Ingots",
+    "Billet",
+    "Bloom",
+    "Slab",
+    "Grade Sulphur",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_2830"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "Nitrogen content of the steel should not exceed 0.012 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance of + 5 mm",
+      "tolerance of +150 mm"
+    ],
+    "marking_requirements": [
+      "13.1 Unless agreed otherwise, the material shall be",
+      "marked as given in 13.2 and 13.3.",
+      "(including continuously cast) shall be legibly stamped",
+      "or painted with the cast number; and the name or trademark of the manufacturer.",
+      "slabs (including continuously cast) shall be suitably"
+    ]
+  },
+  "total_chars_parsed": 21827
+}

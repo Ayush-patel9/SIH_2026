@@ -1,0 +1,101 @@
+{
+  "is_number": "IS IS_10579",
+  "standard_id": "IS IS_10579",
+  "title": "Indian Standard Specification / Test Method (IS IS_10579)",
+  "ia_identifier": "IS_10579",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies physical and electrical requirements and test methods for various types of polyethylene ( PE ) insulation and sheath *Specificationfor polyethylene insulation and sheath of electric cables. f Rules for rounding off numerical values ( revised ). IS : 10579 - 1983 of telecommunication cables taken, where possible, from the cables after manufacture. NOTE 1 — The types of PE compounds recognised for the purpose all contain antioxidants. NOTE 2 — PE co-polymers have not yet been included in this standard. It is intended to include them when sufficient data is available. NOTE 3 — Unless otherwise specified in the relevant cable specifications, sheath compounds shall also contain carbon black of suitable type uniformly dispersed throughout the material. 1.2 This standard does not deal with cross-linked or cellular materials and materials for special applications, for example, coaxial cables for submarine, CATV, RF or other applications.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 6474",
+      "standard_id": "IS 6474",
+      "title": "Indian Standard Specification / Test Method (IS 6474)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2530",
+      "standard_id": "IS 2530:1963",
+      "title": "Methods of test for polyethylene moulding materials and polyethylene compounds",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9938",
+      "standard_id": "IS 9938:1981",
+      "title": "Recommended colours for PVC insulation for LF wires and cables",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5831",
+      "standard_id": "IS 5831:1984",
+      "title": "PVC insulation and sheath of electric cables",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4486",
+      "standard_id": "IS 4486:1967",
+      "title": "Recommended methods for the determination of the permittivity and dielectric dissipation factor of electrical insulating materials at power, audio and radio frequencies including metre wavelengths",
+      "division_code": "ETD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade Density",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10579"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "density PE ( HDPE ) > 0*940 J",
+      "density > 0-925 g/cm 3 . N"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "power factor of more than 0-000 3 a"
+    ],
+    "dimensional_tolerances": [
+      "wall thicknesses ^ 0*8 mm",
+      "wall thicknesses < 0*8 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 29032
+}

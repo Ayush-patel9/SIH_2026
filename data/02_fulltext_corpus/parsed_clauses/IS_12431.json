@@ -1,0 +1,45 @@
+{
+  "is_number": "IS IS_12431",
+  "standard_id": "IS IS_12431",
+  "title": "Indian Standard Specification / Test Method (IS IS_12431)",
+  "ia_identifier": "IS_12431",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard is applicable to magnetic video recording using 12*65 mm (0-5 in ) tape cassettes on two-hand helical-scan video cassette recorders and defines the basic VHS format video cassette system of 50 Hz-625 lines. 1.2 This standard defines the electrical and mechanical characteristics of equipment which will provide for the interchangeability of recorded cassettes. The requirements given relate to 625 line 50 field systems.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 4377",
+      "standard_id": "IS 4377:1981",
+      "title": "General requirements for magnetic sound tape recording and reproducing systems",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12431"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "leader and the trailer tape shall be at least 50%"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 14337
+}

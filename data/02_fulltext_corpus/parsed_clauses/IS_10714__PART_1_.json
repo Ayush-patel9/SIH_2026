@@ -1,0 +1,541 @@
+{
+  "is_number": "IS IS_10714__PART_1_",
+  "standard_id": "IS IS_10714__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_10714__PART_1_)",
+  "ia_identifier": "IS_10714__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of ISO 128 gives general rules for the execution of technical drawings, as well as presenting the structure of, and an index for, the other parts of ISO 128. In all. ISO 128 specifies the graphical representation of objects on technical drawings with the aim of facilitating the international exchange of information on drawings and ensuring their uniformity in a comprehensive system relating to several technical functions. This part of ISO 128 is applicable to all kinds of technical drawings, including, for example, those used in mechanical engineering and construction (architectural, civil engineering, shipbuilding, etc.). It is applicable to both manual and computer-based drawings. It is not applicable to three-dimensional CAD models.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10714",
+      "standard_id": "IS 10714",
+      "title": "Indian Standard Specification / Test Method (IS 10714)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 128",
+      "standard_id": "IS/ISO 128",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 128)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10714 (PART 20)",
+      "standard_id": "IS 10714 (Part 20):2001",
+      "title": "Technical Drawings - General Principles of Presentation, Part 20: Basic Conventions for Lines",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 31",
+      "standard_id": "IS/ISO 31",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 31)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 129",
+      "standard_id": "IS/ISO 129",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 129)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 286",
+      "standard_id": "IS/ISO 286",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 286)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1890 (PART 1)",
+      "standard_id": "IS 1890 (Part 1):1995",
+      "title": "Quantities and Units, Part 1: Space and Time",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 919 (PART 1)",
+      "standard_id": "IS 919 (Part 1):1993",
+      "title": "ISO Systems of limits and fits, Part 1: Bases of tolerance, deviations and fits",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1000",
+      "standard_id": "IS/ISO 1000",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1101",
+      "standard_id": "IS/ISO 1101",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1101)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1302",
+      "standard_id": "IS/ISO 1302",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1302)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2692",
+      "standard_id": "IS/ISO 2692",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2692)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2768",
+      "standard_id": "IS/ISO 2768",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2768)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3040",
+      "standard_id": "IS/ISO 3040",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3040)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3098",
+      "standard_id": "IS/ISO 3098",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3098)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5455",
+      "standard_id": "IS/ISO 5455",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5455)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5457",
+      "standard_id": "IS/ISO 5457",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5457)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5458",
+      "standard_id": "IS/ISO 5458",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5458)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5459",
+      "standard_id": "IS/ISO 5459",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5459)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8000 (PART 1)",
+      "standard_id": "IS 8000 (Part 1):1985",
+      "title": "Geometrical tolerancing on Technical Drawings, Part 1: Tolerances of form orientation, location and Run-out and appropriate geometrical definitions",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8000 (PART 2)",
+      "standard_id": "IS 8000 (Part 2):1992",
+      "title": "Technical drawings - Geometrical tolerancing, Part 2: Maximum material principles",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2102",
+      "standard_id": "IS 2102",
+      "title": "Indian Standard Specification / Test Method (IS 2102)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2102 (PART 2)",
+      "standard_id": "IS 2102 (Part 2):1993",
+      "title": "General tolerances, Part 2: Geometrical tolerances for features without individual tolerance indications",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10718",
+      "standard_id": "IS 10718:1993",
+      "title": "Technical drawings - Dimensions and tolerancing of cones",
+      "division_code": "LITD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9609 (PART 0)",
+      "standard_id": "IS 9609 (Part 0):2001",
+      "title": "Technical Product Documentation - Lettering, Part 0: General Requirements",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1071",
+      "standard_id": "IS 1071",
+      "title": "Indian Standard Specification / Test Method (IS 1071)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13099",
+      "standard_id": "IS 13099:2001",
+      "title": "Geometrical Product Specifications ( GPS ) - Geometrical Tolerancing - Positional Tolerancing",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6428",
+      "standard_id": "IS/ISO 6428",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6428)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6433",
+      "standard_id": "IS/ISO 6433",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6433)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7083",
+      "standard_id": "IS/ISO 7083",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7083)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7200",
+      "standard_id": "IS/ISO 7200",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7200)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7573",
+      "standard_id": "IS/ISO 7573",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7573)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8015",
+      "standard_id": "IS/ISO 8015",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8015)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8785",
+      "standard_id": "IS/ISO 8785",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8785)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9431",
+      "standard_id": "IS/ISO 9431",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9431)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 10135",
+      "standard_id": "IS/ISO 10135",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 10135)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 10205",
+      "standard_id": "IS/ISO 10205",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 10205)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11666",
+      "standard_id": "IS 11666:1985",
+      "title": "Technical drawings - Item lists",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12160",
+      "standard_id": "IS 12160:1987",
+      "title": "Technical Drawings - Fundamental Tolerancing Principle",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14722",
+      "standard_id": "IS 14722:1999",
+      "title": "Technical Drawings - Simplified Representation of Moulded, Cast and Forged Parts",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8930",
+      "standard_id": "IS 8930",
+      "title": "Indian Standard Specification / Test Method (IS 8930)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6284",
+      "standard_id": "IS/ISO 6284",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6284)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8560",
+      "standard_id": "IS/ISO 8560",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8560)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 11091",
+      "standard_id": "IS/ISO 11091",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 11091)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 13715",
+      "standard_id": "IS/ISO 13715",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 13715)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 15785",
+      "standard_id": "IS/ISO 15785",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 15785)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 15787",
+      "standard_id": "IS/ISO 15787",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 15787)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 16016",
+      "standard_id": "IS/ISO 16016",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 16016)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2553",
+      "standard_id": "IS/ISO 2553",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2553)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 26922",
+      "standard_id": "IS/ISO 26922",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 26922)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 10209",
+      "standard_id": "IS/ISO 10209",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 10209)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10714__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 31093
+}

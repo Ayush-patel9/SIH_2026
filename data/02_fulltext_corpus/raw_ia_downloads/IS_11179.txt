@@ -1,0 +1,6855 @@
+**************** 
+
+
+-k  is^ 
+
+
+Disclosure  to  Promote  the  Right  To  Information 
+
+Whereas  the  Parliament  of  India  has  set  out  to  provide  a  practical  regime  of  right  to 
+information  for  citizens  to  secure  access  to  information  under  the  control  of  public  authorities, 
+in  order  to  promote  transparency  and  accountability  in  the  working  of  every  public  authority, 
+and  whereas  the  attached  publication  of  the  Bureau  of  Indian  Standards  is  of  particular  interest 
+to  the  public,  particularly  disadvantaged  communities  and  those  engaged  in  the  pursuit  of 
+education  and  knowledge,  the  attached  public  safety  standard  is  made  available  to  promote  the 
+timely  dissemination  of  this  information  in  an  accurate  manner  to  the  public. 
+
+"^^  ^  ^  ^  %  ?R^" 
+
+Jawaharlal  Nehru 
+
+Step  Out  From  the  Old  to  the  New 
+
+
+^^iiT'jsiS'SfS^^i^*?*:: 
+
+
+li^  i/ir  w  w  w  w  w  WW  ^  ^  ^  tIt  w  w  w 
+
+
+BLANK  PAGE 
+
+
+^<ii^ 
+
+
+UI> 
+
+
+PROTECTED  BY  COPYRIGHT 
+
+
+1311179:2005 
+1801004:1995 
+
+nmfmm^  (  Reaffirmed  2002  > 
+
+Indian  Standard 
+
+INFORMATION  PROCESSING  — 
+
+MAGNETIC  INK  CHARACTER  RECOGNITION  — 
+
+PRINT  SPECIFICATIONS 
+
+(  First  Revision  ) 
+
+ICS  35.240.40 
+
+
+©  BIS  2005 
+
+BUREAU     OF     INDIAN     STANDARDS 
+
+MANAK    BHAVAN,    9    BAHADUR    SHAH    ZAFAR    MARG 
+NEW    DELHI    110002 
+
+June  2005  P"ce  Group  14 
+
+
+Banking  and  Financial  Services  Sectional  Committee,  MSD  7 
+
+
+NATIONAL  FOREWORD 
+
+This  Indian  Standard  (First  Revision)  which  is  identical  with  ISO  1004  :  1995  'Information  processing  — 
+Magnetic  ink  character  recognition  —  Print  Specifications'  issued  by  the  International  Organization  for 
+Standardization  (ISO)  was  adopted  by  the  Bureau  of  Indian  Standards  on  the  recommendations  of  the 
+Banking  and  Financial  Services  Sectional  Committee  and  approval  of  the  Management  and  Systems 
+Division  Council. 
+
+The  text  of  the  International  Standard  has  been  approved  as  suitable  for  publication  as  an  Indian  Standard 
+with  certain  deviations.  Certain  conventions  are,  however,  not  identical  to  those  used  in  Indian  Standards. 
+Attention  is  particularly  drawn  to  the  following: 
+
+a)  Wherever  the  words  'International  Standard'  appear  referring  to  this  standard,  they  should 
+be  read  as  'Indian  Standard'. 
+
+b)  Comma  (,)  has  been  used  as  a  decimal  marker  while  in  Indian  Standards,  the  current  practice 
+is  to  use  a  point  (.)  as  the  decimal  marker. 
+
+Annexes  A  to  D  are  for  information  only. 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+Indian  Standard 
+
+INFORMATION  PROCESSING  — 
+
+MAGNETIC  INK  CHARACTER  RECOGNITION  — 
+
+PRINT  SPECIFICATIONS 
+
+(  First  Revision  ) 
+
+Section  1  —  Font  E  13  B 
+
+
+1      Scope 
+
+Section  1  of  this  International  Standard  specifies  tlie 
+stiapes,  dimensions  and  tolerances  for  the  ten  digits 
+and  four  special  symbols  to  be  printed  in  magnetic  ink^ 
+and  used  for  the  purposes  of  character  recognition.  It 
+describes  the  various  types  of  printing  defects  and 
+other  printing  considerations,  together  with  the  toler- 
+ances permitted,  and  also  contains  specifications  for  sig- 
+nal level  measurement  and  references  to  Optical 
+Character  Recognition  (OCR),  a  technology  now  often 
+used  in  conjunction  with  E  13  B  MICR  reading. 
+
+The  characters  specified  in  section  1  of  this  Interna- 
+tional Standard  were  developed  initially  for  use  in  banks 
+to  permit  automatic  document  handling  for  bank  data 
+processing,  but  they  have  application  to  other  automatic 
+processing  systems  as  well. 
+
+
+2      Character  configuration 
+
+2.1      Designation 
+
+The  series  of  standard  magnetic  ink  characters  consists 
+of  ten  digits  and  four  special  symbols.  They  are  identi- 
+fied as  follows: 
+
+
+Name 
+
+Zero 
+
+One 
+
+Two 
+
+Three 
+
+Four 
+
+Five 
+
+Six 
+
+Seven 
+
+Eight 
+
+Nine 
+
+Symbol  1 
+
+Symbol  2 
+
+Symbol  3 
+
+Symbol  4 
+
+
+Designation 
+
+Stoke 
+
+0 
+
+Stoke 
+
+1 
+
+Stoke 
+
+2 
+
+Stoke 
+
+3 
+
+Stoke 
+
+4 
+
+Stoke 
+
+5 
+
+Stoke 
+
+6 
+
+Stoke 
+
+7 
+
+Stoke 
+
+8 
+
+Stoke 
+
+9 
+
+Stoke  10 
+
+Stoke  1 1 
+
+Stoke  12 
+
+Stoke  13 
+
+2.2     Dimensions 
+
+Detailed  dimensions  and  the  reference  centre  lines  of 
+the  printed  characters  for  Strokes  0  to  13  are  shown  in 
+figures  1  to  14  inclusive.  Figure  15  illustrates  the  charac- 
+ter design,  matrix.  Dlniensions  of  the  printed  characters 
+are  as  follows: 
+
+
+1 )  Character  height 
+
+2)  character  widths 
+
+
+3)  width  of  horizontal 
+and  vertical  bars 
+
+4)  minimum  width  of 
+horizontal  bars  (this 
+specification  does 
+not  apply  to  vertical 
+bars,  see  5.5) 
+
+5)  corner  radii  (except 
+Stroke  0,  see  figure  1 ) 
+
+6)  tolerance  (average 
+edge) 
+
+
+2,972  mm  (0.117  in) 
+
+1,321  mm  (0.052  in) 
+1 ,651  mm  (0.065  in) 
+1,981  mm  (0.078  in) 
+2,31 1  mm  (0.091  in) 
+
+0,330  mm  (0.013  in) 
+0,279  mm  (0.011  in) 
+
+
+0,165  mm  (0.0065  in) 
+±0,038  mm  (±0.0015  in) 
+
+
+3     Character  spacing  and  alignment 
+
+3.1     Spacing  of  characters 
+
+3.1.1  Common  fields  (fixed  format) 
+
+3.1.1.1  The  distance  between  the  right  average  edge 
+of  adjacent  characters  shall  be  3,175  mm  +  0,254  mm 
+(0.125  in  ±  0.010  in)  (see  figure  16). 
+
+(Average  edge  is  defined  and  discussed  in  clause  5.) 
+
+3.1.1.2  The  accumulation  of  spacing  tolerances  in  any 
+common  (fixed  format)  field  is  limited  to  the  extent  that 
+the  accumulation  does  not  infringe  upon  the  boundaries 
+defining  this  field. 
+
+
+1)  As  used  In  this  International  Standard,  the  term  "magnetic  inl<"  means  ink  capable  of  being  magnetized  and  sensed. 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+3.1 .2  Minimum  space  —  any  field 
+
+Tine  minimum  space  between  the  right  average  edge  of 
+adjacent  characters,  whether  they  are  in  the  same  field 
+or  adjoining  fields,  can  never  be  less  than  2,921  mm 
+(0.115  in).  This  also  applies  to  variable  format  fields. 
+Maximum  or  other  spacing  requirements  in  variable 
+fields  shall  be  specified  by  the  individual  machine  manu- 
+facturer involved. 
+
+3.2     Alignment  of  characters 
+
+3.2.1  Definition 
+
+alignment:  The  relative  vertical  location  of  a  character 
+with  respect  to  adjacent  characters  within  a  given  field. 
+The  horizontal  centre  line  of  each  character  is  indicated 
+on  drawings  of  the  printed  character  by  the  symbol  (Qh- 
+These  centre  lines  serve  to  establish  vertical  alignment 
+of  all  characters,  since  all  characters  are  designed 
+about  the  same  horizontal  centre  line. 
+
+3.2.2  Tolerances 
+
+Vertical  alignment  tolerance  is  that  which  is  consistent 
+with  good  printing  practice  and  subject  to  the  following 
+interpretations: 
+
+a)  alignment  of  a  line  of  characters  printed  in  any 
+field  should  be  such  that  the  bottom  edges  of  ad- 
+jacent characters  within  each  field  do  not  vary 
+vertically  by  more  than  0,381  mm  (0.015  in) 
+(see  figure  17); 
+
+b)  on  characters  that  do  not  come  down  to  the 
+"base"  line  (see  figures  13,  14,  and  16),  the  toler- 
+ance specified  in  a)  applies  to  the  horizontal  cen- 
+tre line. 
+
+
+4      Character  skew 
+
+The  maximum  allowable  character  skew  is  ±  1  °30' 
+measured  with  respect  to  the  bottom  edge  of  the  docu- 
+ment. (See  figure  18.) 
+
+
+5      Character  tolerances 
+
+5.1  Dimensions 
+
+See  figures  1  to  14  for  dimensions  of  printed  characters. 
+
+5.2  Definition  of  "average  edge" 
+
+average  edge:  An  imaginary  line  that  divides  the  irregu- 
+larities along  the  edge  of  a  printed  character  so  that  the 
+summation  of  the  white  areas  on  one  side  of  the  line  is 
+equal  to  the  summation  of  the  black  areas  on  the  other 
+
+
+side  (see  figure  19).  (The  typical  edge  of  a  printed  char- 
+acter is  not  a  straight  line.) 
+
+5.3  Average  edge  tolerance 
+
+The  average  edge  tolerance  for  all  stroke  edges  shall 
+be  ±  0,038  mm  (±  0.0015  in)  applied  to  the  dimensions 
+(measured  from  (Q  and  (Qh)  that  locate  the  edges.  A  typi- 
+cal illustration  of  this  tolerance  is  shown  in  figure  20. 
+
+The  average  edge  of  the  radii  shall  be  tangential  to  the 
+average  edge  of  the  stroke  and  shall  fall  within  the  ± 
+0,038  mm  (+  0.0015  in)  tolerance  specified  for  stroke 
+edges  (See  2.2) 
+
+5.4  Edge  irregularity  tolerance 
+
+5.4.1  Peaks  and  valleys  about  the  average  edge  are 
+permitted  to  extend  to  ±  0,089  mm  (±  0.0035  in)  from 
+the  dimension  locating  the  edge.  An  example  is  shown 
+in  figure  21.  However,  when  these  occur  the  sum  of  the 
+edge  present  in  the  0,038  mm  to  0,089  mm  (0.0015  in 
+to  0.0035  in)  zone  shall  not  exceed  25%  of  the  total 
+edge. 
+
+5.4.2  An  occasional  void  can  l>e  present  at  the  edge 
+and  cause  a  valley  that  exceeds  the  limits  mentioned 
+above.  The  maximum  allowable  size  of  such  voids  is 
+
+specified  in  clause  6. 
+
+5.4.3  An  occasional  excursion  (such  as  feathering  or 
+stringing  out)  can  be  present  at  the  edge  and  extend  be- 
+yond the  0,038  mm  to  0,089  mm  (0.0015  in  to  0.0035 
+in)  zone.  Such  occasional  excursions  are  not  consid- 
+ered to  be  edge  irregularities,  and  are  defined  as  extra- 
+neous ink  that  is  "attached"  to  the  character.  The 
+maximum  allowable  size  and  quantity  of  such  excur- 
+sions is  given  in  clause  8. 
+
+in  measuring  the  size  of  such  excursions,  only  the  por- 
+tion that  extends  beyond  the  0,089  (0.0035  in)  limit  men- 
+tioned in  5.4.1  should  be  considered  since  the  portion 
+of  the  excursion  in  the  0,038  mm  to  0,089  mm  (0.0015 
+in  to  0,0035  in)  zone  is  controlled  by  character  edge  ir- 
+regularity limits  given  in  5.4.1. 
+
+5.5  Minimum  width  of  horizontal  bars 
+
+The  distance  between  the  average  edges  of  any  hori- 
+zontal bar  shall  be  at  least  0,279  mm  (0.01 1  in).  (This 
+specification  is  an  adjunct  to  the  dimension  specification 
+locating  each  edge.  This  specification  does  not  apply  to 
+vertical  bars  since  vertical  bars  are  controlled  entirely 
+by  the  dimensions  locating  each  edge. 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+6      Voids 
+
+6.1  Definition 
+
+voids:  The  absence  of  ink  within  the  specified  oiitline 
+of  the  printed  character. 
+
+6.2  lUlaximum  allowable  single  void 
+
+6.2.1  The  maximum  allowable  single  void  anywhere  in 
+the  character,  including  at  an  edge,  shall  be  of  a  size 
+that  can  be  contained  entirely  within  the  boundary  of  a 
+0,203  mm  x  0,203  mm  (0.008  in  x  0.008  in)  square, 
+with  the  following  exception: 
+
+If  the  portion  of  the  character  involving  a  single 
+void  is  two  or  more  zones  wide  [each  zone  is 
+0,330  mm  (0.013  in)  wide],  then  the  maximum  al- 
+lowable single  void  must  be  completely  sur- 
+rounded by  ink  and  contained  entirely  within  the 
+boundary  of  a  0,254  mm  x  0,254  mm  (0.010  in  x 
+0.008  in)  square. 
+
+In  this  case,  voids  at  edges  are  not  included  and 
+are,  therefore,  limited  to  a  0,203  mm  x  0,203  mm 
+(0.008  in  X  0.008  in)  square.  (See  figure  22.) 
+
+6.2.2  Single  voids  that  are  long  and  narrow  are  called 
+"needle"  type  voids.  They  are  allowable  in  any  length 
+anywhere  on  the  character  provided  that  they  are  no 
+wider  than  0,051  mm  (0.002  in),  average  edge  to  aver- 
+age edge. 
+
+6.3  Maximum  allowable  combined  voids 
+
+The  combined  areas  of  all  voids,  in  any  vertical  coluTnn 
+or  horizontal  row  nominally  0,330  mm  (0.013  in)  wide, 
+shall  not  exceed  20%  of  the  area  of  the  column  or  row. 
+(See  figure  23.) 
+
+
+7      Uniformity  of  ink  film 
+
+The  ink  deposited  shall  be  uniformly  distributed  within 
+the  outlines  of  each  character.  Conditions  to  be  avoided 
+include  excessive  squeeze-out,  halo,  and  other  uneven 
+deposits. 
+
+A  ridge  of  ink  that  outlines  a  character  and  that  appears 
+dense  in  relation  to  the  ink  deposited  within  the  charac- 
+ter is  acceptable  provided  that  it  does  not  exceed  0,038 
+mm  (0.0015  in)  between  its  average  edges.  Such 
+ridges  are  predominant  in  letterpress  printing  and  some 
+impact  printing. 
+
+
+8      Extraneous  ink 
+
+8.1  Definition 
+
+8.1 .1  Extraneous  ink,  magnetic 
+
+Any  magnetic  ink  which  appears  in  the  15,9  mm  (0.625 
+inch)  MICR  clear  band  other  than  the  E  13  B  MICR 
+characters.  (See  8.2.1.1  and  8.2.2,  and  figure  24).  The 
+MICR  clear  band  is  applicable  to  both  the  front  and 
+back  of  the  document. 
+
+8.1 .2  Extraneous  ink,  nonmagnetic 
+
+Any  ink  (nonmagnetic)  appearing  in  the  8,0  mm  (0.315 
+inch)  optical  clear  band  (area)  that  interferes  with  opti- 
+cal reading  of  E  13  B  MICR  characters.  It  is  splatter, 
+smear,  tracking,  feathering,  stringing  out,  toning,  back 
+offset,  and  so  forth.  (See  8.2.1.2,  and  figure  24).  This 
+clear  area  is  defined  in  ISO  1831^  and  includes  the 
+printing  band  for  the  MICR  characters.  The  optical  clear 
+band  applies  only  to  the  document  front. 
+
+8.2  Limitations 
+
+8.2.1  Extraneous  ink,  front 
+
+8.2.1.1  IMagnetic  ink 
+
+Extraneous  magnetic  ink  on  the  front  of  the  document 
+within  the  MICR  clear  band  is  acceptable  if  the  spots 
+can  be  contained  in  a  0,08  mm  x  0,08  mm  (0.003  in  x 
+0.003  in)  square. 
+
+Spots  that  cannot  be  contained  in  a  0,08  mm  x  0,08 
+mm  (0.003  in  x  0.003  in)  square  are  acceptable  pro- 
+vided that  they  can  be  contained  in  a  0,1  mm  x  0,1  mm 
+(0.004  in  X  0.004  in)  square  and  are  limited  to  one  per 
+character  space  and  total  not  more  than  five  per  field. 
+
+Spots  that  are  found  to  be  located  within  the  outermost 
+limits  established  by  the  character  edge  irregularity  toler- 
+ance are  to  be  considered  under  the  character  edge  ir- 
+regularity specifications. 
+
+8.2.1.2  Non-magnetic  ink 
+
+Spots  within  the  8,0  mm  (0.315  in)  optical  clear  band 
+that  can  be  contained  inside  a  circle  0,2  mm  (0.008  in) 
+in  diameter  are  acceptable  as  long  as  no  two  spots  are 
+closer  than  1 ,0  mm  (0.040  in)  to  each  other  or  to  an  E 
+1 3  B  character  regardless  of  PCS  values.  See  ISO 
+1831  for  the  definitions  of  Visual  Spectrum  and  Print 
+Contrast  Signal  (PCS). 
+
+
+1)  ISO  1831:  1980,  Printing  specifications  for  optical  character  recognition. 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+8.2.2  Extraneous  magnetic  ink,  bacl< 
+
+Extraneous  magnetic  inl<  on  the  back  of  \he  document 
+withiin  the  area  of  tfie  MICR  clear  and  is  not  acceptable 
+if  the  spots  cannot  be  contained  in  a  0,15  mm  x  0,15 
+mm  (0.006  in  x  0.006  in)  square. 
+
+
+9      Debossment  (impression) 
+
+Penetration  of  the  printed  character  into  the  surface  of 
+the  paper  is  known  as  debossment.  When  it  is  exces- 
+sive, it  can  be  the  cause  of  rejects  or  misreads.  Signal 
+levels  may  be  reduced  or  distorted  because  the  mag- 
+netic ink  characters  are  displaced  from  the  magnetic 
+pick-up  device  by  the  debossment  depth.  Debossment 
+on  the  face  of  the  document  may  or  may  no  cause  frac- 
+tures of  the  paper  fibers  which  are  detectable  on  the  re- 
+verse side. 
+
+A  category  of  equipment  which  can  measure  deboss- 
+ment to  within  a  repeatability  of  0,0025  mm  (0.001  in)  is 
+the  light  section  microscope.  Typical  vendors  of  this 
+equipment  are  Zeiss  and  Stangert. 
+
+This  standard  established  0,025  mm  (0,001  in)  as  the 
+maximum  allowable  debossment.  However,  it  is  recog- 
+nized that  this  specification  depth  is  frequently  ex- 
+ceeded by  letterpress  printing,  press  numbering,  and 
+ribbon  encoding  without  immediately  causing  MICR 
+reading  problems.  Additional  tolerances  beyond  the 
+stated  0,025  mm  (0.001  in)  limit  may  be  acceptable  de- 
+pending upon  several  associated  factors  such  as  signal 
+strength,  uniformity  of  ink  coverage,  and  evenness  of 
+debossment.  Therefore,  it  is  recommended  before  sam- 
+ple documents  are  rejected  for  exceeding  these  deboss- 
+ment specifications,  that  back-up  evaluation  and  testing 
+for  the  above  factors  be  employed. 
+
+For  example: 
+
+(1)  Uneven  debossment  such  as  deeper  penetra- 
+tion by  a  vertical  narrow  stroke  of  a  character, 
+as  compared  to  a  broader  portion  of  the  same 
+character  coupled  with  insufficient  signal  from 
+the  ink  can  cause  rejects. 
+
+(2)  Although  uniform  debossment  of  an  entire  char- 
+acter with  adequate  signal  strength  probably  will 
+not  cause  rejects,  considering  that  these  condi- 
+tions can  occur,  a  further  explanation  of  toler- 
+ances acceptable  under  the  certain 
+circumstances  is  contained  in  annex  A. 
+
+
+10    Signal  level 
+10.1    Definitions 
+
+10.1.1  Signal  level:  The  amplitude  of  the  voltage 
+waveform  produced  when  a  dc-magnetized  printed  char- 
+acter is  scanned  by  a  suitable  magnetic  reading  head. 
+
+A  Typical  character  waveform  of  Stroke  12  (Symbol  3) 
+as  it  appears  on  the  face  of  an  oscilloscope  is  given  in 
+figure  25. 
+
+10.1.2  Nominal  signal  level:  The  signal  obtained 
+from  a  properly  printed  reference  printing  sample,  cali- 
+brated as  100  percent  using  the  Wire  Card  Calibration 
+procedure  and  suitable  test  equipment. 
+
+The  Wire  Card  Calibration  procedure  involves  the  meas- 
+urement of  a  standard  magnetic  flux  generated  by  a 
+sinusoidal  electrical  current  (1),  flowing  through  a 
+straight  wire  positioned  parallel  to  the  gap  and  within 
+the  gap  of  a  standard  magnetic  read  head.  Calibration 
+is  performed  using  procedures  and  test  equipment  as 
+described  in  10.4. 
+
+The  chart  shown  in  figure  26  and  the  waveforms  in  fig- 
+ure 27  illustrate  the  nominal  signal  level  for  designated 
+peaks  of  each  character  when  the  Stroke  1 2  (Symbol  3) 
+is  at  1 00  percent. 
+
+10.1.3  Relative  signal  level:  The  ratio,  stated  as  a 
+percentage,  that  the  signal  level  of  a  character  being 
+measured  bears  to  the  nominal  signal  level  for  that  char- 
+acter with  the  reference  Wire  Card  standard  taken  as 
+100  percent  for  the  Stroke  12  (Symbol  3)  (see  figure 
+13). 
+
+The  signal  level  of  the  character  being  measured  is  ob- 
+tained using  suitable  procedures  and  test  equipment. 
+(See  10.2.) 
+
+10.1.4  Secondary  reference  document:  A  paper 
+document  specially  printed  in  magnetic  ink  with  a  single 
+Stroke  12  (Symbol  3)  of  the  E  13  B  font.  This  document 
+is  of  known  relative  signal  level  as  determined  by  the 
+Wire  Card  Calibration  procedure  described  in  10.4  for 
+use  in  calibration  of  equipment  used  to  measure  rela- 
+tive signal  level.  Secondary  reference  documents  are 
+selected  such  that  the  relative  signal  of  the  printing 
+theron  is  as  close  as  practical  to  100  percent  of  the 
+nominal  signal  level.  These  documents  are  marked  to  in- 
+dicate their  actual  relative  signal  levels  (See  figure  28). 
+To  perform  as  expected,  MICR  characters  should  be 
+printed  to  the  nominal  dimensions  shown  in  figures  1 
+through  14. 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+10.2  Test  equipment  and  parameters 
+
+10.2.1  Test  equipment 
+
+10.2.1.1  A  means  for  moving  a  document  bearing  the 
+dry  magnetic  ink  printing  from  left  to  riglit  (tfie  cliarac- 
+ters  are  scanned  from  right  to  left),  in  a  direction  paral- 
+lel to  a  single  gap  magnetic  read  head,  *id  including 
+means  for  holding  the  document  in  intimate  contact  with 
+the  face  of  a  magnetic  write  head  and  read  head. 
+
+10.2.1.2  A  dc-magnetizing  head  (write  head)  capable 
+of  magnetizing  the  characters  to  saturation  in  a  direc- 
+tion parallel  to  the  bottom  reference  edge  and  in  the 
+plane  of  the  printed  characters.  Note  that  saturation  of 
+the  magnetic  ink  is  important  to  achieve  uniform  signal 
+levels  within  any  waveform  and  also  readings  which  are 
+repeatable. 
+
+10.2.1.3  A  single  gap  magnetic  read  head  mounted 
+with  the  long  axis  of  the  gap  perpendicular  to  the  bot- 
+tom reference  edge  and  parallel  with  the  plane  of  the 
+printed  characters.  Considering  the  magnetic  read  head 
+gap  as  a  plane  of  negligible  thickness,  the  plane  of  the 
+gap  shall  be  perpendicular  to  the  plane  of  the  document 
+and  to  the  bottom  reference  edge  of  the  document. 
+
+10.2.1.4  A  linear  amplifier  to  amplify  the  output  of  the 
+magnetic  read  head  for  presentation  on  an  oscilloscope. 
+
+10.2.1.5  An  oscilloscope,  or  equivalent,  for  display  of 
+the  voltage  waveform(s)  of  the  character(s)  to  be  meas- 
+ured and  the  voltage  waveform(s)  of  a  calibrated  Stroke 
+12  (Symbol  3)  on  a  secondary  reference  document. 
+
+10.2.2  Equipment  parameters 
+
+10.2.2.1  The  relative  speed  of  the  document  to  the 
+read  head  shall  be  380  cm/s  (150  in/s)  within  +  2%. 
+Combined  character  skew  from  all  causes  shall  not  ex- 
+ceed 1 ,5  degrees  relative  to  the  centre  line  of  the  read 
+head  gap. 
+
+10.2.2.2  The  magnetizing  read  head  shall  be  such  as 
+to  produce  dc  magnetic  saturation  in  printed  characters 
+in  the  direction  specified  in  10.2.1.2.  The  leading  pole 
+relative  to  the  printed  character  is  to  be  the  north  pole. 
+
+10.2.2.3  The  magnetic  read  head  shall  have  a  0,076 
+mm  (0.003  in)  gap  and  a  minimum  resonant  frequency 
+of  40  kHz.  The  height  of  the  read  head  gap  shall  be 
+6,35  mm  (0.250  in).  The  head  shall  be  shielded  on  all 
+sides,  except  the  read  face  and  the  back,  such  that  any 
+induced  noise  shall  not  cause  a  signai-to-noise  ratio 
+less  than  40:1  when  reading  100  percent  reference  ma- 
+terial (Brush  Clevite  Read  Head,  part  number  BK1251, 
+or  equivalent). 
+
+
+10.2.2.4 
+
+teristics: 
+
+
+The  amplifier  shall  have  the  following  charac- 
+
+
+(1)  Gain.  The  amplifier  gain  shall  be  such  that  an  in- 
+put sine  wave  of  1 0  m V  +  0,2  mV  peak-to-peak 
+at  1  kHz,  produces  a  sine  wave  output  of  2,4  V 
+
++  0,4  V  peak-to-peak. 
+
+(2)  Frequency  response. 
+
+(a)  The  amplifier  gain  shall  not  vary  by  more 
+than  ±  0,5  db  from  the  1  kHz  gain  over  a 
+frequency  range  of  200  Hz  to  3  kHz. 
+
+(b)  The  amplifier  gain  between  the  frequencies 
+200  Hz  and  75  Hz  shall  not  drop  more  than 
+3  db  below  the  1  kHz  gain. 
+
+(c)  The  amplifier  gain  below  75  Hz  shall  not  ex- 
+ceed the  1  kHz  gain. 
+
+(d)  The  amplifier  gain  above  3  kHz  shall  drop 
+on  a  smooth  cun/e  such  that:  at  5,1  kHz  ± 
+600  Hz,  the  gain  is  3  db  below  the  1  kHz 
+gain;  and  at  1 1 ,2  kHz  ±  1 ,2  kHz,  the  gain  is 
+12  db  below  the  1  kHz  gain. 
+
+NOTE  -  A  gain  3  db  below  a  reference  value  is  0,707 
+of  the  reference  value;  a  gain  12  db  below  a  reference 
+value  is  0,25  of  the  reference  value. 
+
+(3)  Roll-Off.  The  high  frequency  roll-off  charac- 
+teristics of  the  amplifier  shall  be  equivalent  to 
+that  of  a  four  section  resistance-capacitance  fil- 
+ter with  buffering  between  stages,  that  is,  non- 
+peaking,  and  have  an  attenuation  of  6  db  per 
+octave  per  stage  or  24  db  per  octave  for  the 
+four  stages. 
+
+(4)  Linearity.  At  any  frequency  within  the  range 
+from  75  Hz  to  11,2  kHz  ±  1,2  kHz,  the  amplifier 
+gain  shall  be  linear  within  ±  0,5  db  for  an  input 
+voltage  range  of  3  mV  to  25  mV  peak-to-peak. 
+
+(5)  Noise. 
+
+(a)  With  the  input  connection  to  ground,  the 
+noise  output  shall  not  exceed  the  voltage 
+which  is  equivalent  to  one  percent  of  the 
+nominal  output  signal  level. 
+
+(b)  A  circuit  diagram  of  a  suitable  amplifier  is 
+given  in  annex  A. 
+
+10.2.2.5    The  oscilloscope  may  be  of  any  commercially 
+available  type  intended  for  laboratory  measurements 
+and  equipped  with  a  graticule  bearing  horizontal  and 
+vertical  rulings. 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+10.3   Testing  procedure 
+
+10.3.1  The  horizontal  trace  which  appears  on  the  face 
+of  the  oscilloscope  when  the  output  of  the  amplifier  is 
+connected  to  the  ac  input  of  the  oscilloscope,  but  with 
+no  document  being  scanned,  is  adjusted  to  coincide 
+with  the  lowest  ruling  on  the  oscilloscope  graticule. 
+
+10.3.2  A  secondary  reference  document  with  a  Stroke 
+12  (Symbol  3)  character  is  placed  in  the  transport  and 
+scanned.  Set  the  vertical  gain  to  2X  magnification  and 
+adjust  the  vertical  centring  so  that  the  deflection  from 
+the  uppermost  division  to  the  baseline  is  200  percent  of 
+the  positive  peak  amplitude  of  the  symbol  being  meas- 
+ured. This  may  be  done  as  follows: 
+
+(1)  Determine  the  number  of  major  divisions  on  the 
+graticule  in  the  vertical  direction. 
+
+(2)  Divide  this  number  by  two. 
+
+(3)  Multiply  this  by  the  relative  signal  level  percent- 
+age of  the  secondary  reference  document. 
+Stroke  12  (Symbol  3)  character  being  used  and 
+divide  by  the  nominal  value  (see  figure  29)  for 
+the  character  to  be  measured.  Adjust  the  verti- 
+cal gain  so  that  the  vertical  deflection  of  the 
+character  being  observed  is  equal  to  this  calcu- 
+lated deflection. 
+
+For  example: 
+
+(a)  Eight  major  divisions  are  on  the  face  of  the 
+oscilloscope. 
+
+(b)  A  secondary  reference  document  relative 
+signal  level  is  at  104  percent. 
+
+(c)  If  the  character  being  measured  is  a  Stroke 
+12  (Symbol  3)  character,  the  nominal  value 
+for  this  character  is  100  so  the  number  of  di- 
+visions equals  {8/2)*(104/100),  which 
+equals  4,16.  If  the  character  being  meas- 
+ured is  a  9,  the  nominal  value  for  this  char- 
+acter is  165  so  the  number  of  divisions 
+equals  (8/2)*(104/165),  which  equals  2,52. 
+
+(d)  If  the  character  to  be  measured  is  a  Stroke 
+12  (Symbol  3)  character,  adjust  the  vertical 
+gain  so  that  the  average  amplitude  of  the 
+third  and  fifth  peaks  on  the  secondary  refer- 
+ence docujTient  is  4,16  divisions  on  the 
+graticule.  If  the  character  to  be  measured  is 
+a  9,  adjust  the  vertical  gain  so  that  the  aver- 
+age amplitude  of  the  third  and  fifth  peaks 
+on  the  secondary  reference  document  is 
+2,52  divisions  on  the  graticule. 
+
+(e)  Four  divisions  then  correspond  to  1 00  per- 
+cent for  the  character  being  measured.  The 
+vertical  gain  must  be  adjusted  again  if  a  dif- 
+ferent character  is  to  be  measured. 
+
+
+10.3.3    An  alternate  procedure  that  is  slightly  more  ac- 
+curate but  may  take  more  time  when  measuring  a  large 
+number  of  documents  may  be  used  to  determine  rela- 
+tive signal  strength  as  follows: 
+
+(1)  A  secondary  reference  document  with  a  cali- 
+brated Stroke  12  (Symbol  3)  character  is  placed 
+in  the  transport  and  scanned.  The  average  am- 
+plitude of  the  third  and  fifth  peaks  of  this  charac- 
+ter is  then  measured,  using  the  highest 
+resolution  possible  on  the  oscilloscope. 
+
+(2)  This  value  is  then  scaled  by  dividing  by  the  rela- 
+tive signal  level  of  the  secondary  reference 
+Stroke  12  (Symbol  3)  character  and  multiplying 
+by  the  nominal  relative  value  for  the  character  to 
+be  measured  (see  figure  29).  The  resulting 
+value  is  the  nominal  signal  level  for  the  charac- 
+ter to  be  measured. 
+
+(3)  To  determine  the  relative  signal  level  of  any  par- 
+ticular character  under  test,  measure  the  vertical 
+deflection  of  the  appropriate  positive  peaks  (fig- 
+ure 29)  and  divide  by  the  nominal  signal  level 
+for  that  character  as  determined  above. 
+
+For  example: 
+
+(a)  If  the  relative  signal  level  for  the  calibrated 
+Stroke  12  (Symbol  3)  character  equals  104 
+percent  and  measures  800  mV  on  the  oscil- 
+loscope, then  the  nominal  voltage  for  a 
+Stroke  1 2  (Symbol  3)  character  is  (800 
+mV)*(100/104)  =  769  mV.  The  nominal  volt- 
+age for  Stroke  13  (Symbol  4)  character 
+would  be  (800  mV)*(67/104)  =  515  mV. 
+
+(b)  If  another  Stroke  12  (Symbol  3)  character 
+measures  750  mV,  the  relative  signal  level 
+is  (750/769)  =  97,5%.  If  a  Stroke  13  (Sym- 
+bol 4)  character  measures  560  mV,  the  rela- 
+tive signal  level  is  (560/515)  =  108,7%. 
+
+1 0.4    Wire  card  calibration  of  secondary  reference 
+documents. 
+
+10.4.1  The  wire  card  calibration  procedure  is  based 
+on  the  signal  level  obtained  from  the  magnetic  flux  gen- 
+erated by  a  sinusoidal  ciirrent,  I,  of  fixed  magnitude  and 
+given  frequency  carried  by  a  straight  cylindrical  conduc- 
+tor centred  and  in  intimate  contact  with  the  read  head 
+gap.  See  figure  29. 
+
+10.4.2  The  magnetic  flux  to  be  used  for  calibration 
+shall  be  the  flux  developed  by  a  cylindrical  conductor  ex- 
+tending over  the  full  gap  and  with  the  following  nominal 
+diameter  and  drive  current: 
+
+(1)    Conductor  diameter  shall  be  equivalent  to  the 
+standard  dimensions  of  AWG  B&S  GAUGE  #  28 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+Annealed  copper,  single  Formvar,  0,32  mm 
+(0.01264  in)  in  diameter. 
+
+(2)    The  drive  current,  I,  shall  be  a  sinewave  of  8,6 
+mA,  zero  to  peak  {±  2  percent),  at  5,77  kHz  (±  2 
+percent).  The  drive  current  shall  not  contain 
+more  than  5  percent  total  harmonic  distortion. 
+
+The  straight  wire  shall  be  taped  to  a  stiff  paper  card. 
+The  tape  shall  not  be  thicker  than  0,05  miti  (0.002  in). 
+A  100  Q  (1  percent,  0,1  watt)  resistor  rtiscy  be  con- 
+nected in  series  with  one  end  of  the  wire  to  facilitate  cur- 
+rent measurement.  A  suitable  device  for  generating  the 
+magnetic  flux  for  the  calibration  is  shown  in  figure  30. 
+
+10.4.3  Test  equipment  required 
+
+The  following  test  equipment  should  be  used: 
+
+(1)  A  IVIoore  Magnetic  Character  Tester  (iVICT),  or 
+equivalent.  Caution:  The  read  head  gap  height 
+in  the  Moore  tester  is  6,35  mm  (0.250  in)  requir- 
+ing careful  alignment  of  the  test  documents.  The 
+head  springs  shall  be  in  good  condition  and  the 
+machine  shall  be  warmed  up  for  at  least  15  min- 
+utes before  making  measurements. 
+
+(2)  A  properly  calibrated  oscilloscope.  The  oscil- 
+loscope shall  have  an  input  impedance  of  at 
+least  1  Mii  for  display  of  the  wire  card  current 
+level,  the  output  voltage  level  from  the  tester  in- 
+duced by  the  wire  card  current,  and  the  voltage 
+waveform  of  the  character  to  be  calibrated. 
+
+(3)  A  screwdriver,  wrench,  and  small  hammer. 
+
+These  tools  shall  be  used  to  adjust  the  height 
+and  rotation  of  the  heads.  A  small  screwdriver 
+shall  be  used  to  adjust  the  potentiometer  that 
+controls  the  voltage  to  the  write  head. 
+
+10.4.4  Wire  card  calibration  procedure 
+
+10.4.4.1  Disconnect  all  loads  from  the  output  of  the 
+amplifier  except  the  oscilloscope.  Carefully  adjust  the 
+current  in  the  wire  to  8,6  mA  (zero  to  peak)  at  5,77  kHz 
+and  place  the  wire  card  on  a  flat,  nonconductive  sur- 
+face near  the  back  of  the  tester. 
+
+10.4.4.2  Disconnect  the  two  wires  to  the  ac  motor  and 
+remove  the  screws  that  hold  the  read  head  in  the  ma- 
+chine. The  output  of  the  MCT  should  be  ac  coupled  to 
+the  input  of  the  oscilloscope,  and  the  oscilloscope  trace 
+baseline  should  be  set  to  the  bottom  graticule  line.  After 
+the  tester  has  warmed  up,  manually  move  the  wire  card 
+over  the  read  head  with  the  head  touching  the  wire  cen- 
+trally until  the  maximum  signal  amplitude  is  measured 
+on  the  oscilloscope.  The  maximum  (zero  to  peak)  ampli- 
+tude of  the  output  sine  wave  which  corresponds  to  the 
+
+1 00  percent  signal  level  should  be  recorded. 
+
+
+10.4.4.3  Reconnect  the  ac  motor  wires  and  remount 
+the  read  head  in  the  machine.  Using  a  document  simi- 
+lar to  the  secondary  reference  document  with  a  single 
+Stroke  12  (Symbol  3)  character,  carefully  adjust  the 
+height  and  rotation  of  the  read  and  write  heads  to  give 
+a  maximum  output  for  the  third  peak  of  the  Stroke  12 
+(Symbol  3)  character  using  the  screwdriver,  wrench, 
+and  hammer.  The  adjustment  of  the  write  head  is  more 
+difficult  than  the  adjustment  of  the  read  head  and  re- 
+quires several  iterations  since  the  document  must  be 
+erased  and  re-measured  after  each  adjustment. 
+
+10.4.4.4  Monitor  the  voltage  across  the  write  head 
+and  adjust  the  appropriate  potentiometer  with  the  small 
+screwdriver  until  0,35  V  is  measured.  Then  while  ain- 
+ning  the  test'  document  through  the  machine,  monitor 
+the  tester  output  and  gradually  increase  the  write  head 
+voltage  until  a  maximum  amplitude  on  the  third  peak  is 
+reached.  Erase  the  document  and  re-measure  to  guar- 
+antee that  the  output  is  still  at  the  maximum.  The  ma- 
+chine should  now  be  ready  to  measure  the  secondary 
+reference  document. 
+
+Caution:  For  secondary  reference  documents  to  per- 
+form as  expected,  MICR  characters  should  be  printed 
+to  the  nominal  dimension  shown  in  figures  1  to  14. 
+
+10.4.4.5  Place  the  secondary  reference  document  in 
+the  transport  and  observe  the  output  waveform  with  the 
+oscilloscope  ac  coupled.  Determine  the  average  ampli- 
+tude of  the  third  and  fifth  peaks  using  the  maximum 
+resolution  possible  on  the  oscilloscope.  The  average  of 
+several  runs  should  be  used  since  there  is  usually 
+some  variation  between  runs  and  some  noise  gener- 
+ated by  the  tester. 
+
+1 0.4.4.6  The  relative  signal  amplitude  for  the  secon- 
+dary reference  Stroke  12  (Symbol  3)  character  can  now 
+be  determined  by  dividing  the  average  amplitude  of  the 
+two  peaks  by  the  maximum  amplitude  measured  with 
+the  wire  card.  For  example,  if  the  maximum  output 
+measured  with  the  wire  card  was  740  mV  and  the  aver- 
+age amplitude  of  the  two  peaks  on  the  secondary  refer- 
+ence document  was  800  mV,  then  the  relative  signal 
+strength  for  the  secondary  reference  would  be 
+(800/740)  =  108%. 
+
+10.4.4.7  The  heads  should  be  readadjusted  whenever 
+a  new  type  of  secondary  reference  document  is  cali- 
+brated. Minor  changes  in  the  paper  or  print  quality  may 
+also  change  the  optimal  position  for  the  write  head. 
+
+1 0.5   Relative  signal  level  tolerance 
+
+The  relative  signal  level  from  any  printed  character  may 
+vary  from  50%  to  200%  of  its  nominal  signal  level. 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+10.6   Residual  signal  level 
+
+The  residual  signal  level  is  the  signal  delivered  by  char- 
+acter which  has  been  voided. 
+
+Whenever  mis-encoded  information  is  voided,  the  resid- 
+ual signal  level  shall  not  exceed  5%  of  the  nominal  sig- 
+nal level  for  the  Stroke  12  (Symbol  3)  character. 
+
+The  method  employed  to  void  should  permit  re-encod- 
+ing of  the  document  and  re-reading  in  MICR  equipment. 
+
+
+1 1    Paper 
+
+Paper  should  be  made  from  virgin  pulp  (not  recycled) 
+with  a  basis  grammage  weight  minimum  of  90  g/m^ 
+which  is  considered  ideal  for  paper  documents. 
+
+It  is  recognized  that  certain  particles  embedded  in  pa- 
+per can  be  a  cause  for  machine  rejects. 
+
+Paper  should  be  used  from  which  magnetic  particles, 
+such  as  iron  and  other  ferromagnetic  materials,  have 
+been  eliminated  or  reduced  to  a  minimum. 
+
+
+1 2    Format 
+
+12.1  Reference  edges 
+
+12.1.1  Horizontal  dimensions 
+
+All  horizontal  format  dimensions  are  measured  from  the 
+right-hand  edge  of  the  document.  The  right-hand  edge 
+of  the  first  or  right-hand  character  shall  be  located 
+7,925  mm  ±  1,575  mm  (0.312  in  ±  0.062  in)  from  the 
+right-hand  reference  edge.  (See  figure  31.) 
+
+12.1.2  Vertical  dimensions 
+
+All  vertical  dimensions  are  measured  from  the  bottom 
+edge  of  the  document. 
+
+12.2  MICR  clear  band 
+
+MICR  Clear  band:  A  horizontal  band  15.9  mm  (0.625 
+in)  high  on  both  the  front  and  back  of  a  document  and 
+extending  the  full  length  of  the  document  that  must  be 
+kept  free  of  any  magnetic  ink,  other  than  the  E  13  B 
+font.  See  figure  24. 
+
+12.3  MICR  print  band 
+
+MICR  print  band:  A  rectangle  of  6,35  mm  (0.250  in)  in 
+height  that  has  one  side  parallel  to  the  horizontal  align- 
+ing document  edge  and  is  intended  to  contain  only  mag- 
+netic ink  characters  or  symbols  of  the  E  13  B  font  in 
+one  single  line.  The  vertical  location  of  this  band  is  de- 
+termined by  the  application  involved  but  the  MICR  print 
+
+
+band  must  be  wholly  contained  within  the  MICR  clear 
+band.  Fonts  E  13  B  and  CMC  7  shall  not  be  permitted 
+in  the  same  MICR  clear  bands  on  any  document.  The 
+MICR  print  band  is  defined  only  for  the  front  of  a  docu- 
+ment. See  figure  24. 
+
+12.4  Optical  clear  band 
+
+Optical  clear  band:  A  rectangle  with  height  of  8,0  mm 
+(0.315  in)  which  has  included  within  it  the  centrally  lo- 
+cated MICR  print  band.  The  width  of  the  optical  clear 
+band  shall  be  larger  than  the  MICR  printing  by  at  least 
+2,5  mm  (0.1  in)  on  the  right  and  left  sides.  See  figure 
+24  and  ISO  1831. 
+
+12.5  Optical  clear  band  background 
+
+12.5.1  General 
+
+Recognition  of  E  13  B  characters,  either  by  an  optical 
+reader  or  visually  (original  or  microfilm),  requires  an  ade- 
+quate reflectance  difference  between  the  MICR  printed 
+characters  and  its  surrounding  background  in  the  clear 
+band  of  the  document. 
+
+12.5.2  Background  reflectance 
+
+Background:  The  colour  in  the  optical  clear  band  of 
+the  document. 
+
+The  background  reflectance  shall  be  at  least  60%  mini- 
+mum using  the  CIE/Y  filter  peaking  at  555  nm,  as  per 
+ISO  1831:  1980,  subclause  4.2.3. 
+
+12.5.3  Print  contrast  signal  (PCS) — magnetic  ink 
+printed  character 
+
+Print  contrast  signal  (PCS):  The  PCS  of.  the  MICR 
+characters  with  respect  to  its  optical  clear  band  back- 
+ground shall  be  greater  than  0,6.  Use  the  method  given 
+in  ISO  1831:  1980,  subclause  5.4.5. 
+
+
+13    MICR  ink  permanence 
+
+Due  to  the  multiple  passes  through  high  speed  MICR 
+reader  sorters  required  in  payment  transfer  systems, 
+MICR  printing  is  required  to  withstand  at  least  twenty 
+(20)  passes  without  degrading  the  MICR  reader  perform- 
+ance. 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+Dimensions  in  millimetres 
+
+
+R  0,330 
+/ 
+
+
+1,466 
+
+
+«ff-A 
+
+
+f 
+
+,15( 
+
+: f- 
+
+,151 
+
+
+1,156 
+
+
+1,156 
+
+
+7^7 
+
+
+~L 
+
+
+R  0,660 
+
+
+< 0,165 
+
+
+^  : 0,165 
+
+
+< 1,818  — > 
+
+—  2,146  
+
+
+Figure  1  —  Stroke  0  (iZero) 
+
+
+1,486  ^ 
+
+0,991 
+
+
+"H    >V 
+1,486 
+
+i 
+
+
+> 
+
+
+Alignment 
+within  0,038 
+
+
+7 
+
+
+0,165 
+
+
+I 
+
+
+-0,330 
+
+
+0,660.    0,660 
+Figure  2  —  Stroke  1  (One) 
+
+
+T^^ 
+
+
+1,486 
+
+
+■H  /V 
+
+
+1,486 
+
+
+1,156 
+
+T 
+
+1,156 
+
+
+>^    0,826 
+1,156 
+
+
+0,165 
+
+
+>    1^0,165      A     ^ 
+
+■^    h< 0,165        I 
+
+
+0,165 
+
+
+; 
+
+
+H/V 
+
+
+Alignment 
+within  0,038 
+
+
+< 0,330 
+
+^ 0,330 
+
+
+Figure  3  -  Stroke  2  (Two) 
+
+
+Figure  4  -  Stroke  3  (Three) 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+Dimensions  in  mitilmetres 
+
+
+r 
+
+
+1,651   — >j 
+I     0,991     I 
+
+
+T 
+
+1,486 
+
+C      ^^ 
+
+0,826 
+1,486     4^ 
+
+
+-0,330 
+
+
+1J_. 
+
+!    oiie's    Tfy 
+
+
+W 
+
+
+0,495 
+
+
+0,330    ^      I      |< 
+
+0.330  ^       |<— 
+
+
+1.486  ¥ 
+
+
+1,156    0,165 
+
+
+K-  0,156  > 
+
+
+1,156 
+
+
+',165 
+
+
+^ 
+
+
+) 
+
+
+-1,486 
+
+
+^    M— 0,16 
+
+
+1,165 
+),165 
+
+
+Figim  5 — Stroke  4  (Four) 
+
+
+Figures— Stroke  5  {Five) 
+
+
+<- 1,486   — ; 
+— j^l  0,826 
+
+
+T 
+
+
+1,486 
+
+
+1,156 
+
+
+HA~a" 
+1,156 
+
+
+1,486 
+
+
+I 
+
+
+0,660^ 
+
+
+JIZI 
+
+
+< 1,816 
+
+
+0,495 
+
+
+0,165 
+
+
+A.  0,^5 
+
+
+f 
+
+
+fe 
+
+
+0,165 
+0,165 
+
+
+Figure  7— Stroke  6  (Six) 
+
+
+0,165 
+165 
+
+
+Figure  8 — Stroke  7  ( Seven) 
+
+
+10 
+
+
+IS    11179:2005 
+ISO    1 004  :  1 995 
+
+
+Dimensions  In  millimetres 
+
+
+1^  1,321  ->i 
+
+|< —  1,651 >' 
+
+1,981 >• 
+
+
+0,330 
+0,330 
+
+
+Figure  9  —  Stroke  8  (eight) 
+
+
+1,486    I 
+
+1,156         I 
+
+
+h^    0,165 
+
+
+I 
+
+
+■aUgnment 
+wit  in  0,038 
+
+
+<- 1,321^^ 
+
+
+< 1,651 
+
+
+■0,330 
+Z — 0,330 
+
+
+Figure  10 -Stroke  9  (nine) 
+
+
+I-  u  1 
+
+
+'  IT 
+
+1,486   T 
+0,991 
+
+Y  4^ 
+
+
+n"A~>jv" 
+
+
+0,991 
+
+
+1,486 
+
+
+i 
+
+
+i_ 
+
+
+-1,816  > 
+
+
+<-1,156   -^ 
+
+
+\         t<- 0,495 
+
+a 
+
+
+0,495 
+
+
+I 
+
+
+T' 0,495 
+
+
+<-  0,495 
+
+
+1,486 
+
+
+0,743 
+
+
+^r^^  <— 0,330 
+— >|       !<■  -  0,330 
+
+
+0,165 
+1.486  I  I 
+
+i       I    J 
+
+
+m 
+
+
+0,991 
+
+•< > 
+
+|<-1,321    -> 
+< 1,981   > 
+
+
+0,165 
+
+
+Figure  11  —  Stroke  10  {Symbol  1) 
+
+
+Figure  12  -  Stroke  1 1  (SymlMl  2) 
+
+
+11 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+Dimensions  in  millimetres 
+
+
+<-0,165 
+
+
+Figure  13  —  Stroke  12  (Symtwl  3) 
+
+
+Figure  14  —  Stroke  13  (Symbol  4) 
+
+
+NOTES  CONCERNING  FIGURES  1  TO  14 
+
+1.  All  radii  are  0,165  mm  (0.0065  in),  except  for  Stroke  0  (Zero). 
+
+2.  All  radii  siiall  be  blended  with  adjacent  edges. 
+
+3.  Tolerance:  0,038  mm  (0230  0.0015  in). 
+
+4.  Minimum  width  of  horizontal  bars  is  0,279  mm  (0.01 1  in).  This  specification  does  not  apply  to  vertical  bars. 
+
+5.  Dimensions  are  in  millimetres,  (For  values  in  inches,  see  annex  B.) 
+
+
+12 
+
+
+IS  11179 
+ISO  1004 
+
+
+2005 
+1995 
+
+
+9x0,330mm= 
+2,972  mm, 
+
+
+^ 
+
+
+C    Forqtrokel 
+(^  ForStrokeslO,  12 
+C   For  Stroke^3, 4, 8,  9, 1 1 
+
+<^    ForStrokesO,  2, 5, 6, 7, 13 
+
+
+III-? 
+
+
+itct 
+
+
+7  X  0,330  mm  =  2,31 1  mm  For  Strokes  0, 8, 10, 1 1, 12, 13 
+
+6  X  0,330  mm  =  1 ,981  mm  For  Strokes  4, 6, 9 
+
+5  X  0,330  mm  =  1 ,651  mm  For  Strokes  3, 5, 7 
+
+4  X  0,330  mm  =  1 ,321  mm  For  Strokes  1 , 2 
+
+
+2,972  mm  =  0.1 17  in. 
+2,311  mm  =  0.091  in. 
+1,981  mm  =  0.078  in. 
+t,65 1mm  =  0.065  in. 
+1,321  mm  =  0.052  in. 
+0,330  mm  =  0.013  in. 
+
+
+Ail  characters 
+
+
+NOTES 
+
+1  All  characters  centred  about  the  horizontal  centre  iine. 
+
+2  All  characters,  right-hand  edges  aiigried. 
+
+3  Minimum  height  of  right-hand  edges  Is  four  squares. 
+
+
+Figure  15  —  Character  design  matrix 
+This  is  a  7  X  9  matrix  of  0,330  mm  (0.0013  in) 
+
+
+^ 
+
+
+i-B-"v-B-i-fl-e-t:-<tH 
+
+
+OlOlOlOlOlOlOlOK     9X3.175  ±0,254  mm 
+
+3,175  mm  =  0.125  in 
+
+
+Figure  16  —  Distance  between  characters 
+
+
+0,381  mm 
+maximum 
+
+
+-2-il±l,.5±&-?J|flO|fl| 
+
+
+0,381  mm 
+maximum 
+
+
+0,381  mm 
+maximum 
+
+
+0,381  mm 
+maximum 
+
+
+0,381  mm 
+maximum 
+
+
+0,381  mm  =  0.015  In 
+Figure  17  —  Aliowable  variation  In  vertical  alignment 
+
+
+13 
+
+
+IS    11179  :  2005 
+ISO    1004  :  1995 
+
+
+Imaginary 
+"average" 
+
+
+Figure  18  —  Allowable  character  skew 
+
+
+Figure  19 — Average  edge 
+
+
+Dimensions  in  millimetres  (inches) 
+
+
+1,486  ±0,038  (0.0585  ±0.0015) 
+
+
+Dimensions  in  millimetres  (Incties) 
+Dimension  on  drawing      :f?         Dimension  on  drawing 
+
+
+-0,089 
+Edge  irregularity  (-0,0035) 
+
+tolerance 
+
+
+-0,089 
+(-0,0035) 
+
+
+0,165  ±  0,038  (0.0065  ±  0.0015)  (-0,0015) 
+
+
+Peak 
+
+
+Typical 
+dimensions 
+
+
+Peak 
+
+
+Figure  20 — Average  edge  tolerance 
+
+
+Figure  21  —  Edge  inegularlty 
+
+
+14 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+0,203  mm 
+(0.008  in) 
+
+
+0,203  mm 
+(0.008  in) 
+
+
+"Acceptable" 
+
+
+0,203  mm 
+(0.008  in) 
+
+
+0,203  mm 
+(0.008  in) 
+
+
+Four  vertical  columns 
+
+
+TTiree 
+
+horizontal 
+
+rows 
+
+
+(J): 
+
+
+"Not  acceptable" 
+
+
+(3)::::: 
+
+
+Figure  22  —  Examples  of  single  voids 
+
+
+Figure  23 — Examples  of  rows  and  columns 
+
+
+15 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+Area  A:   The  MICR  print  band,  subclause  12.3 
+Only  MICR  printirrg  in  this  band 
+
+Area  B:  The  optical  clear  band,  subclause  1 2.4. 
+Rules  given  in  subclauses  8. 1 .2  and 
+8.2.1 .2  apply  in  this  band.  This  area 
+includes  the  MICR  print  band  area. 
+Background  in  Area  B  may  be  tinted 
+with  Ro>60%,  subclause  12.5. 
+
+Area  C:  The  MICR  clear  band,  subclause  1 2.2. 
+No  extraneous  ink,  front  or  back 
+is  allowed  in  tliis  band.  Rules  given  in 
+subclauses  8.1 .1 ,  8.2.1 ,  and  8.2.2  apply 
+here.  Area  C  includes  tfie  MICR  clear 
+band  and  the  optical  clear  band. 
+
+
+Dimensions  in  millimetres  (inches) 
+
+
+8,0 
+(0,31) 
+
+
+2,5  min. 
+(0,1) 
+
+
+AreaC 
+MICR  clear  band 
+
+
+•^  2,5  min. 
+(0,1) 
+
+
+Figure  24  ~  Restriction  Areas  for  Extraneous  Ink 
+
+
+16 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+^^^^Ai...±. 
+
+
+o  to 
+
+
+Figure  25  —  Waveform  of  Stroke  12  (Symbol  3)  as  it  appears  on  face  of  oscilloscope 
+
+
+Character 
+
+
+Peak* 
+
+
+Nominal 
+Signal  Level 
+
+
+0 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+7 
+
+8 
+
+9 
+
+Symbol  1 
+
+Symbol  2 
+
+Symbol  3 
+
+Symbol  4 
+
+
+1 
+
+2 
+
+1 
+
+1 
+
+3 
+
+1 
+
+5 
+
+1 
+
+4 
+
+1 
+
+3 
+1  &  5  (average) 
+3  &  5  (average) 
+3  &  5  (average) 
+
+
+130 
+
+85 
+105 
+
+85 
+105 
+105 
+105 
+
+75 
+105 
+165 
+105 
+
+70 
+100 
+
+67 
+
+
+*Counting  vertical  edges  right  to  left  on  the  printed  character;  counting 
+peaks  left  to  right  on  the  displayed  waveforms  and  including  positive  and 
+negative  peaks. 
+
+
+Figure  26  —  Signal  peaks  for  calibrating  ail  characters 
+
+
+17 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+PEAK  NO. 
+
+
+— >|      K — 0,330 
+
+
+OZERO 
+
+
+PEAK  NO, 
+
+
+85 
+
+
+1/2      3 
+
+
+3  THREE 
+
+
+PEAK  NO. 
+1             2 
+
+/ 
+
+-  85 
+3     4 
+
+/ 
+
+/ 
+
+r 
+
+1 
+
+\ 
+
+/ 
+
+Y 
+
+\ 
+
+r\ 
+
+1 
+
+\ 
+
+-> 
+
+<—  0,330 
+
+PEAK  NO. 
+
+
+■105 
+
+
+I  ONE 
+
+
+PEAK  NO. 
+
+
+f  1 
+
+4^ 
+
+i^t^- 
+
+4^ 
+
+s.r 
+
+1- 
+
+1 
+
+^      K—  0,330 
+
+U  FOUR 
+
+
+1/2  3     4 
+
+
+2§ 
+
+
+?^ 
+
+
+2 
+
+
+0,330 
+
+
+E  TWO 
+
+
+5  FIVE 
+
+
+PEAK  NO.  ''°^ 
+
+12      3    4      \    5      6 
+
+
+■75 
+
+
+PEAK  NO. 
+
+
+1/2      3456 
+
+
+E>  SIX 
+
+
+■165 
+PEAK  NO.     /  PEAK  NO. 
+
+2      3  4      5 
+
+
+7  SEVEN 
+
+
+nr 
+
+1 
+
+71 
+
+Z-A  , 
+
+^V^ 
+
+^=.;^ 
+
+\7 
+
+n 
+
+►t       1^—  0,330 
+
+H  NINE 
+Note:  Each  horizontal  division  is  0,330  mm  (0.013  in) 
+
+
+PEAK  NO. 
+
+
+105- 
+12     3  \    4      5     6 
+
+
+Y 
+
+JK 
+
+J 
+
+[ 
+
+J 
+
+\ 
+
+/ 
+
+\ 
+
+J 
+
+\ 
+
+> 
+
+r 
+
+\ 
+
+/ 
+
+N 
+
+/ 
+
+\ 
+
+f 
+
+h^ 
+
+-0,2 
+
+30 
+
+H 
+
+i^  > 
+
+/ 
+
+^ 
+
+V 
+
+L 
+
+f 
+
+T 
+
+^ 
+
+A 
+
+r 
+
+\ 
+
+^ 
+
+\<- 
+
+-0,; 
+
+J30 
+
+Figure  27  —  Ideal  waveform  peaks 
+
+
+18 
+
+
+IS    11179  :  2005 
+ISO    1004  :  1995 
+
+
+PEAK  NO. 
+
+
+1 
+
+
+100AVG 
+
+
+2     3/4\5     6 
+
+
+PEAK  NO. 
+
+
+67AVG 
+
+
+12      3/45  6 
+
+
+\ 
+
+^ 
+
+^ 
+
+i 
+
+\ 
+
+i 
+
+J 
+
+<. 
+
+/ 
+
+\ 
+
+/ 
+
+k 
+
+/ 
+
+\ 
+
+/ 
+
+r 
+
+^"" 
+
+> 
+
+V 
+
+/ 
+
+1 
+
+<- 
+
+-0,3 
+
+30 
+
+ESSZH? 
+
+
+— >•       «—  0,330 
+II"  SYMBOLS  '"SYMBOL 4 
+
+Figure  27  —  Ideal  waveform  peaks  (concluded) 
+
+
+'"  .11  ,'■  n  b   0  i   g   5   *i  E   a    T    0 
+
+MICR  CALIBRATION  DOCUMENT 
+102% 
+
+
+CALIBRATED  VALUE 
+
+
+Figure  28  —  Secondary  signal  level  document 
+
+
+19 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+Conductor 
+
+
+Sinusoidal 
+current  (1) 
+
+
+Read  head 
+
+
+Figure  29  —  Conductor  arrangement  for 
+wire  card  calibration  method 
+
+
+Transparent  tape 
+
+(thicl<n6ss  0,05  mm) 
+
+
+100iJ  +  1% 
+Resistor 
+
+
+Drive  current 
+input 
+
+
+NOTE:  The  minimum  length  of  straight  CU-wlre 
+
+shall  exceed  the  total  gap  height  of  the  read 
+head.  To  position  the  wire  against  the  read  head 
+gap,  look  for  the  maximum  signal  output  from 
+the  amplifier  system. 
+
+
+Document 
+paper 
+
+
+CU-wlre 
+AWG  #28 
+
+
+Figure  30  —  Test  device  suitable  for  generating  magnetic 
+fiux  for  the  wire  card  calibration  method 
+
+
+20 
+
+
+IS  11179 
+ISO  1004 
+
+
+2005 
+1995 
+
+
+-> 
+
+
+Right-hand 
+.  edge  of 
+document 
+
+
+7,925  ±1,575  mm 
+■(0.312  ±0.062  in) 
+
+
+Figure  31  -  Distance  of  the  right  hand  character 
+from  the  right  hand  reference  edge 
+
+
+21 
+
+
+IS  11179 
+ISO  1004 
+
+
+2005 
+1995 
+
+
+Annex  A 
+
+(informative) 
+
+Debossment  and  linear  amplifier 
+
+
+A1 .     Debossment 
+
+
+As  stated  in  clause  9,  excessive  debossment  may  cause 
+rejects  or  misreads.  Actual  results  from  debossing  vary 
+with  such  conditions  as  signal  level  of  the  ink,  uniformity 
+of  ink  coverage,  evenness  of  the  debossment, 
+coarseness  of  the  paper,  and  the  character  itself. 
+Industry  experience  fias  shown  that  if  the  signal  level  is 
+adequate,  the  following  pragmatic  values  are  suggested 
+to  be  allowed  before  rejects  or  misreads  will  occur. 
+
+
+Character 
+
+Symbols  1-4 
+Numbers  1,4,  6,  7,  9 
+Numbers  2,  3,  5,  8,  0 
+
+
+Debossment 
+
+0,04  mm  (0.0015  in) 
+0,04  mm  (0.001 5  in) 
+0,05  mm  (0.0020  in) 
+
+
+The  printing  industry,  manufacturers  of  encoding  ribbons, 
+manufacturers  of  encoding  equipment,  and  bank 
+encoding  departments  are  encouraged  to  make  every 
+effort  to  hold  all  printing  to  the  0,025  mm  (0.001  in) 
+specification. 
+
+Users  are  cautioned  not  to  reject  documents  because  of 
+variances  from  the  0,025  mm  (0.001  in)  specification 
+without  backup  evaluation  of  the  associated  conditions. 
+
+A2.    Circuit  diagram 
+
+The  circuit  diagram  which  is  suitable  for  determining  the 
+output  of  magnetic  read  heads  as  described  in  subclause 
+10.2.2.4  is  presented  in  figure  A.1. 
+
+
+-70  V  - 
+7,5  mA 
+
+
+CI 
+
+0,15 
+
+100V 
+
+
+R1 
+33,2K 
+
+
+R14 
+7,5  K 
+1W 
+
+
+LI  and  L2  are  powdered  Iron  core  inductors,  in  millihenries  (mH) 
+
+2  CI  through  C8  are  capacitors,  in  microfarads  (^iF). 
+
+3  R1  through  R14  are  resistors,  in  ohms;  K  =  1,000;  1/4  W  unless  othenwise  specified. 
+
+4  Q1 ,  Q2,  Q3,  Q4  are  transistors,  type  2N527  or  equivalent. 
+
+5  CR1  and  CR2  are  zener  diodes,  type  1N766  or  equivalent. 
+
+
+Ground 
+
+
+Figure  A.1  —Circuit  diagram  of  a  typical  linear  amplifier 
+
+
+22 
+
+
+IS  11179 
+ISO  1004 
+
+
+2005 
+1995 
+
+
+Annex  B 
+
+(informative) 
+
+Equivalent  metric-inch  dimensions  used  in  font  E  13  B 
+
+
+millimetres 
+
+inclies 
+
+millimetres 
+
+inches 
+
+0,025 
+
+0.001  0 
+
+0,744 
+
+0.029  3 
+
+0,038 
+
+0.001  5 
+
+0,826 
+
+0.032  5 
+
+0,051 
+
+0.002  0 
+
+0,991 
+
+0.039  0 
+
+0,076 
+
+0.003  0 
+
+1,156 
+
+0.045  5 
+
+0,089 
+
+0.003  5 
+
+1,321 
+
+0.052  0 
+
+0,102 
+
+0.004  0 
+
+1,486 
+
+0.058  5 
+
+0,152 
+
+0.006  0 
+
+1,575 
+
+0.062  0 
+
+0,165 
+
+0.006  5 
+
+1,651 
+
+0.065  0 
+
+0,178 
+
+0.007  0 
+
+1,816 
+
+0.071  5 
+
+0,203 
+
+0.008  0 
+
+1,981 
+
+0.078  0 
+
+0,216 
+
+0.008  5 
+
+2,146 
+
+0.084  5 
+
+0,254 
+
+0.010  0 
+
+2,311 
+
+0.091  0 
+
+0,279 
+
+0.011  0 
+
+2,921 
+
+0.1150 
+
+0,330 
+
+0.013  0 
+
+2,972 
+
+0.1170 
+
+0,381 
+
+0.015  0 
+
+3,175 
+
+0.125  0 
+
+0,495 
+
+0.019  0 
+
+7,925 
+
+0.312  0 
+
+0,660 
+
+0.026  0 
+
+15,875 
+
+0.625  0 
+
+23 
+
+
+IS    11179  :  2005 
+ISO    1004  :  1995 
+
+
+Section  2  —  Font  CMC  7 
+
+
+1 4    Scope 
+
+Section  2  of  this  International  Standard  specifies  the 
+shapes,  dimensions  and  tolerances  for  the  ten  digits  0 
+to  9,  five  symbols,  and  twenty-six  letters,  to  be  printed 
+with  magnetic  ink^'  for  the  purpose  of  character  recogni- 
+tion. It  describes  the  various  types  of  printing  defects 
+and  other  printing  considerations,  together  with  the  toler- 
+ances permitted,  and  also  contains  specifications  for  sig- 
+nal level  measurement. 
+
+The  characters  specified  in  section  2  of  this  Interna- 
+tional Standard  were  developed  initially  for  use  in  banks 
+to  permit  automatic  document  handling  for  bank  data 
+processing,  but  they  have  application  to  other  automatic 
+processing  systems  as  well. 
+
+
+15    Character  configuration 
+
+15.1  Code  description 
+
+The  coded  character  is  composed  of  six  intervals  con- 
+tained within  seven  strokes  cut  to  the  shape  of  a  con- 
+ventional character. 
+
+Two  interval  widths  are  used:  "long"  and  "short".  It  is  the 
+combination  of  these  "long"  and  "short"  intervals  that  de- 
+termines the  character  code. 
+
+Two  long  and  four  short  intervals  may  be  combined  In 
+fifteen  possible  ways  (Ci)  —  a  total  which  is  available 
+for  the  ten  digits  and  five  symbols. 
+
+The  alphabetic  code  uses  one  or  three  long  intervals,  al- 
+lowing a  total  of  C?  +  Ci  =  26  combinations  which  are 
+thus  available  for  twenty-six  letters. 
+
+Table  1  shows  the  correspondence  between  codes  and 
+the  characters.  The  intervals  are  numbered  1  to  6  from 
+left  to  right  on  the  printed  character.  Their  values  are 
+represented  by  the  digit  0  for  short  intervals  and  by  the 
+digit  1  for  long  intervals. 
+
+15.2  Configuration 
+
+There  are  four  font  heights  (see  20.5):  3,20  mm  (0.1260 
+in),  3.00  mm  (0.811  in),  2,85  mm  (0.1122  in)  and  2,70 
+mm  (0,1063  in).  Figures  34  to  54  give  full  details  of  the 
+alphanumeric  character  set  and  symbols. 
+
+
+Table  1 
+
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+1 
+
+0 
+
+0 
+
+0 
+
+1 
+
+0    1 
+
+0 
+
+1 
+
+1 
+
+0 
+
+0 
+
+0    2 
+
+1 
+
+0 
+
+1 
+
+0 
+
+0 
+
+0    3 
+
+1 
+
+0 
+
+0 
+
+1 
+
+0 
+
+0    4 
+
+0 
+
+0 
+
+0 
+
+1 
+
+1 
+
+0    5 
+
+0 
+
+0 
+
+1 
+
+0 
+
+1 
+
+0    6 
+
+1 
+
+1 
+
+0 
+
+0 
+
+0 
+
+0    7 
+
+0 
+
+1 
+
+0 
+
+0 
+
+1 
+
+0    8 
+
+0 
+
+1 
+
+0 
+
+1 
+
+0 
+
+0    9 
+
+0 
+
+0 
+
+1 
+
+1 
+
+0 
+
+0    0 
+
+1 
+
+0 
+
+0 
+
+0 
+
+0 
+
+1    SI 
+
+0 
+
+1 
+
+0 
+
+0 
+
+0 
+
+1    Sll 
+
+0 
+
+0 
+
+1 
+
+0 
+
+0 
+
+1   sill 
+
+0 
+
+0 
+
+0 
+
+1 
+
+0 
+
+1    SIV 
+
+0 
+
+0 
+
+0 
+
+0 
+
+1 
+
+1    SV 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+0 
+
+1 
+
+0 
+
+0 
+
+0 
+
+0    A 
+
+1 
+
+0 
+
+1 
+
+0 
+
+1 
+
+0    B 
+
+0 
+
+0 
+
+0 
+
+1 
+
+1 
+
+1   c 
+
+1 
+
+0 
+
+0 
+
+1 
+
+1 
+
+0    D 
+
+0 
+
+0 
+
+0 
+
+1 
+
+0 
+
+0    E 
+
+0 
+
+0 
+
+1 
+
+0 
+
+1 
+
+1    F 
+
+1 
+
+0 
+
+0 
+
+0 
+
+1 
+
+1    G 
+
+1 
+
+0 
+
+1 
+
+1 
+
+0 
+
+0    H 
+
+0 
+
+0 
+
+0 
+
+0 
+
+0 
+
+1    1 
+
+1 
+
+0 
+
+1 
+
+0 
+
+0 
+
+1    J 
+
+0 
+
+1 
+
+1 
+
+0 
+
+1 
+
+0    K 
+
+0 
+
+1 
+
+0 
+
+0 
+
+1 
+
+1    L 
+
+0 
+
+0 
+
+1 
+
+1 
+
+1 
+
+0    M 
+
+0 
+
+0 
+
+1 
+
+0 
+
+0 
+
+0    N 
+
+1 
+
+0 
+
+0 
+
+0 
+
+0 
+
+0    O 
+
+0 
+
+0 
+
+1 
+
+1 
+
+0    P 
+
+1 
+
+1 
+
+0 
+
+0 
+
+0    Q 
+
+0 
+
+1 
+
+1 
+
+0 
+
+0    R 
+
+0 
+
+0 
+
+1 
+
+0 
+
+1    S 
+
+0 
+
+0 
+
+0 
+
+0 
+
+1 
+
+0    T 
+
+1 
+
+0 
+
+1 
+
+0 
+
+0  u 
+
+1 
+
+0 
+
+0 
+
+0 
+
+1    V 
+
+1 
+
+0 
+
+0 
+
+1 
+
+0 
+
+1   w 
+
+1 
+
+0 
+
+0 
+
+1 
+
+0    X 
+
+0 
+
+1 
+
+0 
+
+0 
+
+1    Y 
+
+0 
+
+0 
+
+1 
+
+1 
+
+0 
+
+1   z 
+
+1 6    Means  of  automatic  sensing 
+
+The  automatic  character  recognition  takes  place  by 
+means  of  identification  of  the  interval  lengths  between 
+adjacent  strokes.  Stroke  sensing  takes  place  magneti- 
+cally. 
+
+
+1 7    Reference  edges  of  documents 
+
+For  the  purpose  of  measuring  the  printed  image,  the 
+right-hand  and  the  bottom  edges  are  the  reference 
+edges  of  the  document. 
+
+
+1 )  As  used  in  this  International  Standard,  the  term  "magnetic  ink"  means  ink  capable  of  being  magnetized  and  sensed. 
+
+
+24 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+18    Print  location  (see  figure  32) 
+
+18.1  Horizontal  location 
+
+The  extreme  right  mean  edge  of  the  printed  line  should 
+be  located  at  least  6,0  mm  (0.236  in)  from  the  right  ref- 
+erence edge  of  the  document.  The  distance  between 
+the  left-hand  edge  of  the  document  and  the  extreme  left 
+mean  edge  in  the  printed  line  should  be  at  least  4,0  mm 
+(0.157  in).  In  some  cases,  by  agreement  between  par- 
+ties concerned,  this  latter  distance  may  be  reduced  to 
+2,0  mm  (0.079  in).  System  consideration  may  dictate  a 
+6,0  mm  (0.236  in)  minimum  margin  on  both  sides,  if  the 
+document  is  to  be  readable  in  both  directions. 
+
+18.2  Vertical  location 
+
+The  character  must  be  printed  entirely  within  a  printing 
+band  6,4  mm  (0.252  in)  high.  The  bottom  edge  of  this 
+printing  band  is  located  4,8  mm  (0.189  in)  above  and 
+parallel  to  the  bottom  reference  edge  of  the  document. 
+
+This  sub-clause  does  not  apply  to  punched  cards. 
+
+
+19    Clear  band 
+
+Over  the  whole  length  and  on  both  sides  of  the  docu- 
+ment a  clear  band,  16  mm  (0.625  in)  measured  from 
+the  bottom  edge  of  the  document,  must  be  free  from 
+any  magnetic  ink  other  than  CMC  7  characters.  Under 
+no  circumstances  may  CMC  7  characters  be  printed 
+within  the  clear  band  using  non-magnetic  ink. 
+
+CMC  7  and  E  13  B  fonts  shall  not  be  permitted  in  the 
+same  clear  band  on  any  document.  CMC  7  must  only 
+appear  on  the  front  of  the  document. 
+
+
+20    Character  spacing  and  alignment 
+20.1    Horizontal  character  spacing 
+
+20.1.1  Character  pitch  B 
+
+The  distance  between  the  orthogonal  projections  upon 
+the  bottom  reference  edge  of  the  extreme  right  mean 
+edges  (see  21.6)  at  mid-character  eight  of  adjacent 
+characters.  The  nominal  character  pitch  B  may  be  as 
+small  as  3,17  mm  (0.125  in)  (which  means  at  most 
+eight  characters  per  inch).  The  horizontal  spacing  be- 
+tween characters  must  be  such  that  a  minimum  inter- 
+character  distance  Dm  is  maintained. 
+
+20.1.2  Intercharacter  distance  D  between  two  adja- 
+cent characters 
+
+The  distance  between  the  orthogonal  projections  upon 
+the  bottom  reference  edge  of  the  right  mean  edges  (see 
+21.6)  at  mid-character  height  of  the  left-hand  stroke  of 
+
+
+the  right-hand  character  and  the  right-hand  stroke  of  the 
+left-hand  character, 
+
+20.1.3  Minimum  intercharacter  distance 
+
+Dmi  =  0,67  mm  (0.0264  in)  if  the  right-hand  character 
+has  one  or  two  long  intervals;  and  Dm2  =  0,50  mm 
+(0.01 97  in)  if  the  right-hand  character  has  three  long  in- 
+tervals. 
+
+20.1.4  Character  width  A 
+
+The  distance  between  the  right  mean  edges  of  the  out- 
+ermost strokes  of  a  character.  The  nominal  values  for 
+characters  with  one,  two  and  three  long  intervals  respec- 
+tively, are  as  follows: 
+
+A^  =  2,0  mm  (0.079  in) 
+A2  =  2,2  mm  (0.087  in) 
+As  =  2,4  mm  (0.094  in) 
+
+20.2  Vertical  misalignment 
+
+20.2.1  Definition 
+
+vertical  misalignment:  The  deviation  of  the  printed 
+character  from  the  nominal  vertical  position  on  the  docu- 
+ment. 
+
+20.2.2  Limitation 
+
+Vertical  misalignment  should  be  consistent  with  good 
+printing  practice  and  can  be  tolerated  as  far  as  the  char- 
+acters are  completely  contained  in  the  printing  band  of 
+the  document.  (See  18.2) 
+
+
+21    Character  definition  and  tolerances 
+
+21.1  Stroke:  One  or  more  segments. 
+
+21.2  segment  height  h:  The  distance  between  the  top 
+and  bottom  of  that  segment. 
+
+21.3  strol^e  height  Af:  The  sum  of  the  heights  of  the 
+segments  contained  in  that  stroke. 
+
+21.4  character  height  He'.  The  distance  between  the 
+top  and  bottom  of  that  character. 
+
+21.5  font  height  Hi:  The  nominal  height  of  the  highest 
+character  of  the  font. 
+
+21 .6  stroke  edge  zones  and  mean  edges 
+
+21.6.1    printed  edge  zone:  Printed  edge  zones  are  lo- 
+cated at  both  edges  of  all  strokes,  each  one  being  de- 
+fined by  two  parallel  lines  having  a  fixed  distance  —  the 
+printed  edge  zone  width  b  —  from  each  other.  The 
+value  of  b  is  0,06  mm  (0.0024  in). 
+
+
+25 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+There  are  fourteen  printed  edge  zones  in  a  character. 
+Each  printed  edge  zone  extends  over  the  full  height  of 
+the  stroke,  excluding  intersegment  interruptions  and  seg- 
+ment end  zones. 
+
+21.6.2  mean  edge:  The  centre  line  of  the  printed 
+edge  zone  dividing  the  irregularities  of  the  printed  edge, 
+contained  in  the  printed  edge  zone,  in  such  a  way  that 
+the  sum  of  the  non-inked  areas  on  the  stroke  side  is 
+equal  to  the  sum  of  the  inked  areas  on  the  space  side. 
+If  this  sum  is  minimized,  the  centre  line  is  then  called 
+theoretical  mean  edge. 
+
+21.6.3  theoretical  mean  edge:  The  fourteen  theoreti- 
+cal mean  edges  of  a  character  are  used  to  detennine 
+the  skew  angle  of  the  character  (see  21.7);  in  this  case 
+the  fourteen  mean  edges  of  a  character  need  not  be 
+parallel  each  other. 
+
+21.6.4  practical  mean  edge:  For  practical  measure- 
+ments, parallel  mean  edges  are  used,  placed  so  that 
+their  direction  is  the  average  direction  of  the  fourteen 
+theoretical  mean  edges.  Such  parallel  mean  edges  are 
+called  practical  mean  edges. 
+
+21 .7  skew  angle  a:  The  angle  behveen  any  practical 
+mean  edge  and  a  line  perpendicular  to  the  bottom  refer- 
+ence edge.  The  absolute  value  of  the  skew  angel  of  a 
+character  must  not  exceed  1  °30'. 
+
+21 .8  stroke  width  L:  The  distance  between  the  right 
+and  left  mean  edges  of  a  stroke.  Its  value  must  lie 
+within  the  range  0,10  mm  to  0,19  mm  (0.0039  in  to 
+0.0075  in). 
+
+21.9  stroke  interval  P:  The  distance  between  the  right 
+mean  edges  of  adjacent  strikes  or  the  distance  between 
+left  mean  edges  of  adjacent  strokes.  The  value  of  the 
+tolerances  depends  on  the  value  of  as  specified  in 
+21.9.1  and  21.9.2. 
+
+21.9.1  Right  mean  edges  P^i  and  Pn2 
+
+Pr  1  =  0,30  mm  ±  0,04  mm  (0.01 1 8  in  +  0.001 6  in)  for 
+0°  <a  <  45' 
+
+Pri  =0,30  mm  ±0,03  mm  (0.0118  in  ±0.0012  in)  for 
+45'<a<  1°30' 
+
+Pr2  =  0,50  mm  ±  0,04  mm  (0.0197  in  ±  0.0016  in)  for 
+0°  <a  <  45' 
+
+Pr2  =  0,50  mm  ±  0,03  mm  (0.0197  in  ±  0.0012  in)  for 
+45'<a<  1°30' 
+
+21.9.2  Left  mean  edges  PLi  and  PL2 
+
+Pli  =  0,30  mm  ±  0,06  mm  (0.01 18  in  ±  0.0024  in)  for 
+0°  <a  <  1  "30' 
+
+
+Pl2  =  0,50  mm  ±  0,06  mm  (0.0197  in  ±  0.0024  in)  for 
+0°<a<  1°30' 
+
+
+22    Extraneous  Ink  (spots) 
+
+22.1  extraneous  ink  front:  Magnetic  ink  located  outside 
+the  printed  edge  zone  and  outside  segment  end  zone 
+and  within  the  clear  band  in  the  area  that  should  be  ink 
+free. 
+
+The  integrated  height  of  the  extraneous  ink  front  along 
+any  line  parallel  to  the  skew  angle  of  the  character  must 
+not  exceed  0,2  mm  (0.008  in). 
+
+22.2  extraneous  ink  back:  Magnetic  ink  present. in  the 
+clear  band  on  the  reverse  side  of  the  document. 
+
+The  spots  on  the  reverse  side  of  the  document  are  not 
+acceptable  if  they  are  detectable  by  the  unaided  eye. 
+
+
+23    Voids 
+
+void:  An  absence  of  magnetic  ink  outside  the  printed 
+edge  zone  and  outside  the  segment  end  zones  in  an 
+area  that  should  be  inked. 
+
+The  integrated  height  of  voids  along  any  line  parallel  to 
+the  skew  angle  of  the  character  must  not  exceed  0,4 
+mm  (0.016  in). 
+
+The  absence  of  ink  in  an  area  extending  over  the  full 
+width  of  a  stroke  including  its  printed  edge  zones  is  al- 
+lowable over  a  height  greater  than  0,4  mm  (0.016  in) 
+provided  the  signal  level  specification  is  satisfied.  How- 
+ever, voids  are  limited  by  the  requirement  that  the  char- 
+acter must  be  readable  visually  without  confusion. 
+
+
+24    Segment  end  zones 
+
+segment  end  zones:  A  zone  of  maximum  height  of 
+0,20  mm  (0.0079  in),  that  can  be  located  at  both  ends 
+of  strokes  and  stroke  segments. 
+
+The  width  is  equal  to  that  of  the  stroke  together  with  its 
+printed  edge  zones. 
+
+The  following  rules  apply: 
+
+a)  any  shape  of  stroke  ends  within  the  segment 
+end  is  acceptable; 
+
+b)  the  segment  end  zones  may  be  located  at 
+stroke  ends  at  the  most  convenient  vertical  posi- 
+tion to  minimize  the  voids  and  extraneous  ink; 
+
+c)  the  height  of  the  segment  end  zone  should  be 
+chosen  such  as  to  ease  the  fulfillment  of  the 
+
+
+26 
+
+
+IS    11179 
+ISO    1004 
+
+
+2005 
+1995 
+
+
+specification  on  voids.  The  sum  of  the  heights  of 
+all  segment  end  zones  along  any  stroke  must 
+be  smaller  than 
+
+0,6  mm  (0.024  in)  for  two  or  three  segment 
+strokes; 
+
+0,4  mm  (0.016  in)  for  one  segment  strokes. 
+
+Where  a  stroke  (segment)  is  interrupted,  the  new  stroke 
+ends  may  not  be  covered  with  segment  end  zones. 
+
+
+25    Uniformity  of  inl< 
+
+The  ink  deposited  must  be  uniformly  distributed  within 
+the  outlines  of  each  stroke.  Conditions  to  be  avoided  in- 
+clude excessive  squeeze  out,  halo  and  other  uneven  de- 
+posits which  might  result  in  a  ridge  of  ink  that  outlines  a 
+stroke,  and  that  appears  dense  in  relation  to  the  ink  de- 
+posited within  the  stroke.  Such  ridges  are  predominant 
+in  letterpress  printing  and  some  impact  printing. 
+
+
+26    Debossment 
+
+Penetration  of  the  printed  character  into  the  surface  of 
+the  paper  is  known  as  debossment.  The  depth  of  de- 
+bossment can  vary  within  a  character  and  even  within  a 
+stroke.  It  can  reduce  the  strength  of  the  signal  and 
+when  severe,  can  make  a  character  unreadable.  De- 
+bossment must  not  exceed  0,025  mm  (0.001  inch). 
+Measurement  equipment  such  as  the  light  section  micro- 
+scope are  readily  available  to  assist  in  making  these 
+measurements. 
+
+
+27    Signal  level 
+
+27.1  Description  of  the  signal 
+
+When  a  suitably  magnetized  CMC  7  character  is 
+scanned  by  a  read  head,  the  passage  of  each  stroke 
+edge  results  in  a  voltage  pulse. 
+
+The  signal  that  corresponds  to  a  character  is  thus  a  suc- 
+cession of  fourteen  pulses,  the  sign  of  which  aitemate. 
+Pulses  associated  with  right-hand  stroke  edges  are  con- 
+ventionally called  positive  pulses;  pulses  associated 
+with  left-hand  edges  are  negative. 
+
+The  amplitude  of  each  of  the  two  pulses  that  are  associ- 
+ated with  a  stroke  is  approximately  proportional  to  the 
+height  of  that  stroke. 
+
+27.2  Definitions 
+
+27.2.1    standard  stroke:  A  unique  and  well-defined 
+stroke,  specially  created  to  remain  stable  with  time. 
+
+
+27.2.2    relative  signal  level:  A  quantity  n,  associated 
+with  every  stroke  edge  and  defined  by  the  following 
+equation: 
+
+
+/t%  =  100x 
+
+
+Uo 
+
+
+where 
+
+
+U  is  the  absolute  value  of  the  pulse  amplitude  de- 
+livered by  the  edge  under  consideration  and 
+measured  by  means  of  suitable  equipment; 
+
+Uo  is  the  pulse  amplitude  delivered  by  the  right 
+edge  of  the  standard  stroke  and  measured  by 
+means  of  the  same  equipment. 
+
+NOTE:  The  amplitude  Uo  will  be  that  one,  which  corresponds 
+to  the  average  of  the  two  amplitudes  produced  by  the  right 
+edges  of  the  two  left  strokes  (as  seen  by  the  read  head)  of  the 
+E  13  B  Font  Stroke  12  (Symbol  3)  reference  symbol  which  has 
+been  calibrated  at  100%  using  the  procedures  of  clause  10. 
+
+27.3  Allowable  signal  level  range 
+
+The  maximum  relative  signal  level  in  any  character 
+must  not  exceed  300%.  The  minimum  relative  signal 
+level  in  any  character  must  not  be  less  than  25%.  The 
+ratio  between  highest  and  lowest  relative  signal  levels 
+within  any  one  character  must  not  exceed  5. 
+
+27.4  Nominal  signal  level 
+
+In  practice  the  signal  level  is  proportional  to  the  stroke 
+height  M.  Signal  level  is  said  to  be  nominal  if 
+
+M 
+
+actual  signal  level = Yq^  100% 
+1  ,y 
+
+27.5  Residual  signal  level 
+
+residual  signal  level:  The  maximum  signal  level  deliv- 
+ered by  a  character  which  has  been  voided. 
+
+Whenever  misencoded  information  is  voided,  the  resid- 
+ual signal  level  shall  not  exceed  5%  (with  respect  to  Uo 
+according  to  the  definition  in  27.2.2). 
+
+The  method  employed  shall  permit  the  re-encoding  of 
+the  document. 
+
+
+28    Paper 
+
+Paper  should  be  made  from  virgin  pulp  (not  recycled) 
+with  a  basis  grammage  weight  of  90  g/m^  which  is  con- 
+sidered ideal  for  paper  documents. 
+
+it  is  recognized  that  certain  particles  embedded  in  pa- 
+per can  be  cause  for  machine  reading  rejects. 
+
+
+27 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+Paper  should  be  used  from  which  magnetic  particles, 
+such  as  iron  and  other  ferromagnetic  materials,  have 
+been  eliminated  or  reduced  to  a  minimum. 
+
+
+29    MICR  ink  permanence 
+
+Due  to  the  multiple  passes  through  high  speed  MICR 
+reader  sorters  required  in  payment  transfer  systems, 
+MICR  printing  is  required  to  withstand  at  least  twenty 
+passes  without  degrading  the  MICR  reader  performance. 
+
+
+28 
+
+
+IS    11179  :  2005 
+ISO    1004  :  1995 
+
+
+Symbols  and  abbreviations 
+
+corresponding 
+
+Symbol  or  clause  or  Characteristic 
+
+Abbreviation  sub-clause 
+
+A  20.1.4  Cliaracter  width 
+
+>4i  20.1 .4  Character  width  of  a  character  with  one  long  interval 
+
+Ai  20.1 .4  Character  width  of  a  character  with  two  long  intervals 
+
+Ai  20.1 .4  Character  width  of  a  character  with  three  long  intervals 
+
+AL  20.1  Alignment 
+
+b  21.6.1  Printed  edge  zone  width 
+
+e  20.1.1  Character  pitch 
+
+CB  19  Clear  band 
+
+D  20.1.2  Intercharacter  distance 
+
+Dm  20.1.1  Minimum  interchange  distance 
+
+Dm  1  20.1 .3  Minimum  interchange  distance  for  character  with  one  or  two  long  intervals 
+
+Dm 2  20.1.3  Minimum  interchange  distance  for  character  with  three  long  intervals 
+
+DM  26  Debossment 
+
+ExB  22.2  Extraneous  ink  back 
+
+ExF  22.1  Extraneous  ink  front 
+
+FT  18  Format 
+
+h  21 .2  Segment  height 
+
+He  21.4  Character  height 
+
+Hi  21.5  Font  height 
+
+L  21.8  Stroke  width 
+
+M  21 .3  Stroke  height 
+
+P  21 .9  Stroke  inten/al 
+
+Pli  21.9.2  Short  stroke  interval  between  left  mean  edges 
+
+Pl2  21.9.2  Long  stroke  interval  between  left  mean  edges 
+
+Pr  1  21 .9.1  Short  stroke  interval  between  right  mean  edges 
+
+Pr2  21.9.1  Long  stroke  interval  between  right  mean  edges 
+
+SP  20  Character  spacing 
+
+Ul  25  Uniformity  of  ink 
+
+V  23  Voids 
+
+VM  20.2  Vertical  misalignment 
+
+a  21 .7  Character  skew  angle 
+
+
+29 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+Dimensions  in  millimetres  (inches) 
+
+
+Clear 
+band 
+
+
+{ 
+
+
+Reference  edge 
+
+
+Printing  band 
+
+
+'''vr'vrv™v"-v"vr"'"T"vii    f'\-c"'"V''"'""^"^^^^  — 
+
+
+4,0" '(0.1 57) 
+
+
+16(0.625) 
+
+6,4  (0.250) 
+
+4,8(0.188) 
+
+
+-6,0*'(0.236) 
+
+
+Reference  edge 
+
+
+*>  Minimum  values  (see  18,1) 
+
+
+Figure  32  —  Format  of  documents 
+
+
+30 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+ABCD  is  the  segment  end  zone 
+
+
+(Scale  300:1) 
+
+
+Printed  edge  zone 
+
+
+Requirements: 
+
+Sum  of  voids:  Vi  +  V2+ V™  =  V  <  0,4  mm  (0.016  in) 
+
+Sum  of  spots:  Si  +  5?+ Sn  =  S  <  0,2  mm  (0.008  in) 
+
+
+P  L  =  Stroke  interval  left      S  =  Spots 
+P   =  Stroke  interval  rigfit    V  =  Voids 
+
+
+:  Stroke  width 
+
+
+a  =  Character  skew  angle 
+
+
+Figure  33  ~  Magnified  view  of  part  of  a  character 
+
+
+31 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+Introduction  to  the  drawings  of  the  printed  characters 
+
+of  font  CMC  7 
+
+The  nominal  shapes  and  dimensions  of  the  printed  digits,  symbols  and  letters  are  shown  on  the  following  pages,  for 
+each  of  the  four  height  3,20  mm  (0.1260  in),  3,00  mm  (0.1 181  in),  2,85  mm  (0.1 122  in)  and  2,70  mm  (0.1063  in).  (The 
+scale  is  10:1.) 
+
+All  dimensions  are  quoted  in  millimetres.  A  table  of  conversions  to  inches  is  given  in  annex  C. 
+
+The  radius  of  rounded  character  corners  is  0,5  mm  (0.020  in).  The  corresponding  circles  are  always  tangential  to  the 
+character  outline. 
+
+The  segment  end  may  be  straight  or  rounded.  If  the  ends  differ  from  the  drawings,  the  nominal  segment  height  should 
+correspond  to  the  drawings  when  measured  along  the  vertical  axis  of  the  stroke. 
+
+Horizontal  dimensions  (stroke  width  and  inten/als)  and  their  tolerances  are  given. 
+
+a)  Stroke  width 
+
+The  value  of  stroke  width  chosen  for  use  throughout  the  drawings  is  0,15  mm  (0.0059  in). 
+
+b)  Stroke  intervals 
+
+Stroke  intervals  throughout  the  drawings  are  equal  to  the  nominal  values  in  21.9. 
+
+
+32 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+R0,5 
+
+
+2,1 
+
+
+I  fz-i^ 
+
+
+■il 
+
+
+2,5 
+
+
+1,7 
+
+
+iMni 
+
+
+1,5 
+
+
+2,1  E 
+
+y  ^' y 
+
+
+ran 
+
+
+il  1,6 
+0,7    ± 
+
+
+2,5 
+
+
+2,3    ' 
+
+
+liiu 
+
+
+Q 
+
+
+i  PHi  n 
+
+
+^ 
+
+
+^  1 
+
+"~   1,3  1.45        I  I 
+
+0.8  ^  ^    V   y 
+
+
+19  2  2 
+
+1,75     ^'^  ■ 
+
+
+1.2 
+
+
+•\f  \/ X  0,5 
+
+
+lltJ^ 
+
+
+<£ 
+
+
+T" 
+
+
+T 
+
+
+2,2 
+
+
+DJ 
+
+
+ili   4- "  1 1 1 1  I 
+
+
+f 
+
+
+1 
+
+
+2,5 
+
+
+2.5     ~>I< 
+
+1,3 
+
+
+UJli 
+
+
+"l-    1,9 
+0,7   >^ 
+
+
+2,4 
+
+
+T 
+
+
+><        >< 
+
+
+1^1 
+
+
+.fT 
+
+
+O 
+
+
+1.75     'TT 
+
+
+1.85     1.75     T^ 
+
+y  y  '1^ 
+
+
+,35 
+
+
+a 
+
+
+^ 
+
+
+f*-1.3    I 
+
+■0,7    vl/   vL 
+
+
+T 
+
+
+2,5 
+
+
+J 
+
+
+y  y  y 
+
+
+± 
+
+
+1,3 
+
+
+0.8 
+
+
+T 
+
+
+X     1.9 
+0,7     X 
+
+
+T 
+
+
+2,5 
+
+
+Figure  34  —  Digits:  Font  height  3,20  mm  {H,,) 
+
+
+33 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+\                 / 
+
+V 
+
+A 
+
+2,2 
+>< 
+
+-j 
+
+>s. 
+
+_ 
+
+1 
+
+> 
+
+3 
+
+.2                     A 
+
+1,9 
+
+<                        >< 
+
+3,2 
+2,7 
+
+MM 
+
+SI 
+
+
+Sli 
+
+
+3,2 
+
+
+2,7 
+
+
+U°'lll  lllli^ 
+
+
+T 
+
+
+'f 
+
+
+1,6  ^ 
+
+1,1 
+
+
+1. 
+
+
+SIV 
+
+
+0,4 
+
+1 
+
+
+3,2 
+2,3 
+
+
+T 
+
+
+i: 
+
+
+^ 
+
+
+\ 
+
+
+T 
+
+
+2,2 
+
+
+3,2 
+
+
+T 
+
+
+Hi 
+
+
+1,175 
+
+
+SV 
+
+
+Figure  35  —  Symbols:  Font  height  3,20  mm  (ft^^) 
+
+
+34 
+
+
+IS    11179  :  2005 
+ISO    1004 : 1995 
+
+
+1- 
+
+2,25 
+
+
+2,35 
+
+
+3,2 
+
+
+-^1,3 
+
+
+T 
+
+0,55 
+
+
+>^y  Y  ^ 
+
+
+m 
+
+
+IriV  I       A  ^ 
+
+-  -  ..c I  [2,35 
+
+4'  Lk.  2,25 
+
+
+liM 
+
+
+a 
+
+
+K 
+
+
+'1*2,35 
+
+
+2,55 
+
+
+JS~j^  1.9 
+
+0.85^    ^  y  ^    ^ 
+
+
+0,65 
+
+
+ILLL 
+
+
+^   1,8 
+
+
+-  R2,4 
+
+
+-t1,85 
+0,6    W  w 
+
+
+V  Sf 
+
+
+^2.35 
+
+
+0,8^^ 
+
+
+J 
+
+
+Figure  36  —  Letters  A  to  H:  Font  height  3,20  mm  (/^) 
+
+
+35 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+u 
+
+
+EEi 
+
+
+T 
+
+
+II 
+
+18-^ 
+
+2,45 
+
+1,5 
+
+tl 
+
+"         Ik 
+
+1,1 
+
+y  \/ 
+
+/ 
+
+2,35 
+
+
+R0,5 
+
+
+1,5 
+
+
+K 
+
+/ 
+
+/ 
+
+> 
+
+2, 
+
+\ 
+
+♦5 
+
+A 
+
+1 
+
+< 
+
+V        y  2,2 
+
+
+0.75 
+
+
+2,35 
+
+
+T 
+
+
+2.45 
+
+
+f 
+
+1,8 
+
+
+iLTn- 
+
+
+T 
+
+
+2,85  2,75 
+
+
+^1. 
+
+yy  y 
+
+
+Figure  37  —  Letters  1  to  Q:  Font  height  3,20  mm  {H^^) 
+
+
+36 
+
+
+IS  1 1 1 79  :  2005 
+ISO  1004  :  1995 
+
+
+R0,5 
+
+
+Lli 
+
+
+4^y 
+
+
+^2,45 
+
+
+R  2,35 
+
+
+2,9 
+
+
+\<v>< 
+
+
+U 
+
+
+1,7 
+
+i 
+
+
+0,65  X  1, 
+
+
+1,5 
+
+
+1 
+
+i0 
+
+0.85  1'1  ^ 
+
+fT 
+
+
+H 
+
+
+ii 
+
+
+0,85 
+
+
+2,45 
+
+
+\ 
+
+
+\ 
+
+
+1,4 
+
+
+1 
+
+
+^2,25 
+"^  1,7 
+
+
+iiu 
+
+
+I  1.9 
+
+
+iri 
+
+
+0,75 
+
+
+7 
+
+^2,25 
+1,5 
+
+
+1,1 
+
+
+0,75 
+
+
+Figure  38  —  Letters  R  to  Z:  Font  height  3,20  mm  (H„) 
+
+
+37 
+
+
+IS  11179  :  2005 
+ISO  T004  :  1995 
+
+
+R0,5 
+
+
+"7  . 
+
+
+P 
+
+
+1.95 
+
+
+'■°'   I 
+
+
+1.6 
+
+
+\<      \f  y     >< 
+
+
+I    1,05 
+
+
+1.4 
+
+
+"1 
+
+
+1,95    -r|lj__l   /s^ 
+
+inl^t^TTR>^ 
+
+
+35 
+
+
+ff 
+
+2,15    ' 
+1.95 
+
+
+Uu 
+
+
+i. 
+
+
+a 
+
+
+>n< 
+
+
+rSlH 
+
+
+TT 
+
+
+^         A      t  2,25  t       4^ 
+
+^       .--     1,8  2,05       ^ 
+
+
+1,2  1.35        I  I 
+
+
+1,15:^ 
+
+
+aP^ 
+
+
+\/  \/  0,45 
+
+
+7^     ^ 
+
+■X      2.05    ^ 
+
+
+UUi 
+
+
+EJ 
+
+
+^  :^'VrTn 
+
+
+T 
+
+0,65 
+
+
+'    2,35 
+1.B5   I 
+
+£1 
+
+
+2,35 
+
+
+o 
+
+
+t     >^       ,  >|r      ,'M^ y     ,     2,35 
+
+^■75    1.65     n^ 
+
+
+i1,3S 
+
+
+1,3S       1,25 
+
+
+nr 
+
+
+5^ 
+
+
+1 
+
+
+0,65 
+
+
+1.8     I 
+
+
+1,2 
+
+
+± 
+
+
+lU 
+
+
+T 
+
+
+njn 
+
+
+\ 
+
+
+71  i 
+
+xL   1,75 
+
+
+0,65 
+
+
+Figure  39  —  Digits:  Font  height  3,00  mm  {Ha) 
+
+
+38 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+^ 
+
+t"            ^^ 
+
+f\ 
+
+^' 
+
+2,05 
+
+\i    /' 
+
+^^^       0,95 
+
+^ 
+
+
+1.8 
+
+1 
+
+
+SI 
+
+
+Sll 
+
+
+2,55 
+
+
+^1^ 
+
+
+2,55 
+
+
+Iiii  iiiiU  'U 
+
+
+0,65 
+
+
+2,55 
+
+
+f~T 
+
+
+1,05 
+
+
+SIV 
+
+
+0-4  2,15 
+
+
+k 
+
+
+/ 
+
+
+A 
+
+
+i 
+
+
+f 
+
+
+0,95 1 
+
+
+i 
+
+
+T 
+
+
+^2,05 
+
+
+1,175 
+
+
+SV 
+
+
+Figure  40  —  Symbols:  Font  height  3,00  mm  (H„) 
+
+
+39 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+HI 
+
+j< 
+
+2 
+
+2,1 
+
+2 
+
+III 
+
+.2 
+
+<    > 
+
+> 
+
+r 
+
+0,5 
+
+
+EH 
+
+
+vt'" 
+
+
+1,651,8 
+
+
+t-  1.2  1,35    I       i 
+,6  \^    ^    ^  ^ 
+
+
+0,8 
+
+
+pas 
+
+
+LF 
+
+
+±.  2,1 
+
+1 
+
+
+T 
+
+
+imi 
+
+
+J.'i^    A    1,8  2,4 
+
+
+0,6   ' 
+
+
+II II 
+
+/K 
+
+III!,/ 
+
+y  > 
+
+^  2,3 
+7 
+
+7 
+
+I    2,2 
+
+51 
+
+
+T 
+
+
+Figure  41  —  Letters  A  to  H:  Font  height  3,00  mm  (/y 
+
+
+40 
+
+
+IS  11179  :  2005 
+ISO  1004:  1995 
+
+
+U 
+
+
+J 
+i" 
+
+
+IE 
+
+
+1.7  ^ 
+11 
+
+
+r 
+
+
+T 
+
+
+2,3 
+
+Ik 
+1 
+
+
+R0,5 
+
+
+> 
+
+1 
+
+> 
+
+/ 
+
+/ 
+
+2 
+
+3 
+
+A 
+
+0,9 
+
+'' 
+
+mj 
+
+
+0,7 
+
+
+Figure  42  —  Letters  I  to  Q:  Font  height  3,00  mm  {H^ 
+
+
+41 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+R0,5 
+
+
+Hi 
+
+
+It 
+
+
+\<  v\/\< 
+
+
+1  6 
+
+/ 
+
+
+0,6 
+
+
+L_ 
+
+
+18 
+
+
+^ 
+
+^f" 
+
+1 
+
+0,8     1    X 
+
+fT 
+
+
+f 
+
+
+Al,B 
+
+
+Figure  43  —  Letters  R  to  Z:  Font  height  3,00  mm  {Ha) 
+
+
+42 
+
+
+IS    11179  :  2005 
+ISO    1004  :  1995 
+
+
+f 
+
+
+^ 
+
+
+2,25     I  y 
+
+1,55       ^^ 
+
+
+\/  \f 
+
+
+LJ. 
+
+
+f 
+
+1.85 
+
+
+J^ 
+
+
+1,35 
+
+
+LZ 
+
+
+mm 
+
+
+7^ 
+
+JL  1,4 
+
+
+2,25 
+
+
+0,6 
+
+
+ff 
+
+
+Uiu 
+
+
+2,05  '       "^ 
+
+
+± 
+
+
+n 
+
+
+1,85     ^     Yi     I 
+
+
+0,8 
+
+
+^ 
+
+
+^-,         f      f  2,15  t        ^ 
+
+
+1; 
+
+0.7  >^        >|,      |, 
+
+
+^  '         1,55 
+
+1,3 
+
+
+1,15 
+
+
+1,95 
+
+
+V  X 
+
+
+,05J5J< 
+
+
+# 
+
+
+T^ 
+
+
+T 
+
+
+1,95 
+
+
+IJlii 
+
+
+T 
+
+
+0,45 
+
+
+1,25  Y_ 
+
+
+rJ:  "nnn 
+
+
+1,8 
+
+i 
+
+
+2,25 
+
+
+Mil 
+
+
+2,25 
+
+
+1,15 
+
+
+DL 
+
+
+\L    1,7 
+
+
+0,6 
+
+
+1,65    ,55    ^1 
+
+
+JlBt 
+
+
+3  1,2 
+
+
+m 
+
+
+m 
+
+
+!• 
+
+
+1 
+
+
+>K    1     2,25 
+1,7 
+
+
+^      I 
+
+0,6  X 
+
+
+'     1,15 
+
+
+Ml 
+
+
+t 
+
+
+'■•Q 
+
+
+in 
+
+
+0,75 
+
+
+in 
+
+
+I     2,25 
+-!■    1,7 
+
+
+0.6 
+
+
+Figure  44  —  Digits:  Font  lielght  2,85  mm  (H^,) 
+
+
+43 
+
+
+IS    11179  :  2005 
+ISO    1004  :  1i995 
+
+
+1,95 
+
+rf       ^^ 
+
+2,85 
+0,9 
+
+1,7 
+
+1 
+
+
+2,85 
+
+
+2,4 
+
+
+jjL^ 
+
+
+SI 
+
+
+Sll 
+
+
+1,05 
+
+
+2,85 
+
+
+i'^lll  IIIIU 
+
+
+0,6 
+
+
+Sill 
+
+
+2,45 
+
+
+f 
+
+1,45 
+
+
+Inn 
+
+
+SIV 
+
+
+0,4 
+
+i 
+
+
+2,85 
+
+
+2,05 
+
+
+T 
+
+
+>»'  >^ 
+
+
+k 
+
+
+i 
+
+
+\ 
+
+
+T, 
+
+
+^2,85 
+
+
+,95 
+
+
+0,9 
+
+
+\ 
+
+
+11,35    I 
+
+
+1,175 
+
+
+SV 
+
+
+Figure  45  —  Symbols:  Font  height  2,85  mm  (H;,) 
+
+
+44 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+R0,5 
+
+
+.  Ml 
+
+X 
+
+^2, 
+1 
+
+35 
+
+III 
+
+^ 
+
+n 
+
+0,5        > 
+
+'' 
+
+1,15 
+
+
+R0,5 
+
+
+t 
+
+
+pa;>     I 
+
+
+.J BlUQ/:/ 
+
+R2,85 
+
+
+It 
+
+
+tl 
+
+
+^  1,425 
+
+
+2,1 
+
+
+0.85^ 
+
+
+II 
+
+■II                             ,,    M 
+
+II          >^2,'1 
+
+,L>^    A    1,7          2,3 
+
+II  III  °^=>^  ><>.  V 
+
+>^>^ 
+
+0,55 
+
+
+ILLL 
+
+
+mo- 
+
+^    1,6 
+0,95 
+
+
+[fl^ 
+
+
+^: 
+
+
+3 
+
+L"t-  R  2,65     I  y^  ^'^ 
+
+
+tOrS 
+
+
+1,15 
+
+
+2,35 
+
+
+VV  V 
+
+
+f 
+
+2,1 
+
+°■^^< 
+
+f 
+
+
+Figure  46  —  Letters  A  to  H:  Font  height  2,85  mm  {H„) 
+
+
+45 
+
+
+IS  11179:  2005 
+ISO  1004  :  1995 
+
+
+III 
+
+11 
+
+t 
+
+A ' 
+
+ill 
+
+1  {""S. 
+
+III 
+
+1  fi  ^ 
+
+W  2.2 
+
+1  1.35 
+
+UK 
+
+III 
+
+0,95 
+
+R0,5 
+
+
+1  35 
+
+
+0,85 
+
+
+2,2 
+
+
+m 
+
+
+2 
+3.65  |, 
+
+
+2,1 
+
+
+k 
+
+
+0,75 
+
+
+iff^ 
+
+
+T 
+
+
+2,85 
+
+
+2,5 
+
+
+i 
+
+0,35  yy 
+
+
+T 
+
+
+A 
+
+2,2  T 
+1,6 
+
+
+i 
+
+
+r 
+
+
+2,5  2,5 
+
+
+■^  1, 
+
+
+0,95 
+
+
+Y  '^  V 
+
+
+% 
+
+
+yy    0,35 
+
+
+0,75 
+
+
+Jl 
+
+
+^1 
+
+
+Jj-*l    >l^>yv 
+
+
+l},S5 
+
+
+Figure  47  —  Letters  I  to  O:  Font  height  2,85  mm  {Ha) 
+
+
+46 
+
+
+IS    11179  :  2005 
+ISO    1004  :  1995 
+
+
+R0,5 
+
+
+15' 
+
+
+0,85 
+
+
+ILL 
+
+
+14 
+
+
+0,65 
+
+
+J 
+
+
+'2, 
+
+
+2, 
+
+
+55 
+
+
+R2,30 
+
+
+II 
+
+
+II 
+
+
+0,55  1,  ± 
+
+
+/ 
+
+< 
+
+A1 
+
+1,55 
+
+7 
+
+1 
+
+-> 
+
+lit 
+
+1 
+
+0,75  0.95^ 
+
+fT 
+
+
+A 
+1,!5 
+
+
+X 
+
+
+A  1J5 
+0,05 
+
+
+0,65 
+
+
+Figure  48  —  Letters  R  to  Z:  Font  height  2,85  mm  (H,,) 
+
+
+47 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+R0,5 
+
+
+>\ 
+
+^^-^ 
+
+f\   2.7 
+
+1,8 
+
+: 
+
+t 
+
+2.1      I 
+
+41 
+
+
+^^ 
+
+
+2.1     1         y 
+
+1,4 
+
+0,95 
+
+
+Ul 
+
+
+f 
+
+
+1,75 
+
+
+1,3 
+
+
+Its 
+
+
+I     "^    2.1 
+J^1,15 
+
+
+0.6 
+
+
+JJJU 
+
+
+1,95  '      V       I 
+1,75    ^ — -^ 
+
+
+n 
+
+
+>»'>< 
+
+
+0,95 
+
+
+3Lfl 
+
+
+TT 
+
+
+^ 
+
+
+'T        1  r       1,6  1,85 
+
+
+1,2 
+
+
+0,7 
+
+
+TT 
+
+
+1 
+
+
+1   J< 
+
+
+# 
+
+
+1,1 
+
+
+XX  X  0,40 
+
+
+i 
+
+
+1,05       /^ 
+
+
+ILLii 
+
+
+EJ 
+
+
+M,  ^Wl 
+
+
+T 
+
+
+'     2,1 
+1,7 
+
+
+2,1 
+
+1,1 
+
+
+LUL 
+
+
+Eir 
+
+
+nr 
+
+
+i. 
+
+
+I   1,95  2,1     I 
+
+
+0,6 
+
+
+1,6 
+
+
+ill 
+
+
+U 
+
+
+T 
+
+
+1,4 
+
+
+^Ph 
+
+
+2  1,1 
+
+
+T 
+
+
+I  irrT^ 
+
+
+m 
+
+
+T 
+
+
+1,1 
+
+
+± 
+
+
+lU 
+
+
+0,75 
+
+
+Ojo 
+
+
+T 
+
+
+T 
+
+
+2,1 
+
+
+1' 
+
+
+i. 
+
+
+0,6 
+
+
+Figure  49  —  Digits:  Font  height  2,70  mm  (H,,) 
+
+
+48 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+J 
+
+1,85 
+
+
+0,85 
+
+
+2,7 
+
+
+T 
+
+
+1,6 
+
+1 
+
+
+SI 
+
+
+Sll 
+
+
+2,7 
+2,3 
+
+
+A 
+
+2,7 
+
+>»^  >^ 
+
+V      III    1 
+
+lllvv 
+
+0,6 
+
+
+1,35 
+
+± 
+
+
+0,95 
+
+
+T 
+
+
+SIV 
+
+
+T 
+
+
+2,7 
+1,95 
+
+
+0,35 
+
+
+i: 
+
+
+t 
+
+
+0,85 
+
+
+^ 
+
+
+T 
+
+
+T^1,8! 
+
+
+2,7 
+
+
+-^^ 
+
+
+1,175 
+
+
+SV 
+
+
+Figure  50  —  Symbols:  Font  height  2,70  mm  (Hu) 
+
+
+49 
+
+
+^S  11179:  2005 
+ISO  1004  :  1995 
+
+
+1,9 
+
+
+11 
+
+
+0,45 
+
+
+yy  >^ 
+
+
+R0,5 
+
+
+R0,5 
+
+
+^  1.1    T    1.5  1.6 
+
+
+^ 
+
+
+11 
+
+
+ri 
+
+
+n 
+
+
+0.7    >|,     >^ 
+
+
+^    2 
+
+
+0,55 
+
+
+2,15 
+
+
+lUl 
+
+
+mr 
+
+
+E 
+
+
+2,1 
+
+
+i 
+
+
+T 
+
+
+0.7 
+
+
+T 
+
+
+Figure  51  —  Letter  A  to  H:  Font  height  2,70  mm  (,H„) 
+
+
+50 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+U 
+
+
+IE 
+
+
+1,55 '^ 
+I  1,25 
+
+
+Ul 
+
+
+r 
+
+
+T 
+
+
+2,05 
+
+Ik 
+0,9 
+
+y  y 
+
+
+R0,5 
+
+
+1  25 
+
+
+2,05 
+0,8 
+
+yy 
+
+
+'- 
+
+^     1.9 
+0.65  ^  ^ 
+
+f 
+
+
+1 
+
+
+0.7 
+
+
+m 
+
+
+M 
+
+
+2,7 
+
+
+2,35 
+
+
+T 
+
+
+2,05 
+1,55 
+
+
+0,35  y  y 
+
+
+f 
+
+,55 
+
+
+T      f 
+
+
+0.9 'f 
+
+
+2,4  2,35 
+
+
+1 
+
+
+± 
+
+
+yy   0,35 
+
+
+0.7 
+
+
+Jl 
+
+
+T 
+
+
+iB 
+
+
+1,95 
+
+
+1,25 
+
+
+0,8 
+
+
+Figure  52  —  Letters  I  to  Q:  Font  height  2,70  mm  (HU) 
+
+
+51 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+R0,5 
+
+
+Tft 
+
+
+1,45 
+
+
+J 
+
+0,8 
+
+
+Lil 
+
+
+H 
+
+
+rV.       I     f^e  '    2,45 
+
+
+1,45 
+
+
+0,55 
+
+
+T 
+
+
+35 
+
+
+>V16 
+1,!5 
+
+i^1, 
+
+
+45 
+0.75  0-9  y 
+
+
+TT 
+
+
+1,P5 
+
+
+1,45 
+
+
+0,9 
+
+
+T 
+
+
+ii^ 
+
+
+0,65 
+
+
+Figure  S3  —  Letters  R  to  Z:  Font  height  2,70  mm  {H,,) 
+
+
+52 
+
+
+III 
+
+
+II 
+
+
+"'"II 
+
+.1'' 
+
+II I  nil 
+
+
+Ijlll 
+II 
+
+Mill 
+
+
+III'" 
+■"III 
+
+
+1111111 
+II 
+
+mill' 
+
+
+mil 
+III 
+
+
+Mil 
+
+
+;:i 
+
+
+ill 
+
+
+ll"'ll  11" 
+
+III        "  II 
+
+lull    Mm 
+
+
+111 
+III 
+
+
+nil 
+
+
+mill 
+
+
+in 
+
+'"h 
+
+III 
+
+|ll| 
+
+1 
+
+II 
+11 
+
+■■III 
+11 
+
+nil 
+nil 
+
+1 
+
+III" 
+.    Ij 
+
+II 
+
+III 
+
+inl» 
+
+III! 
+
+1 
+
+II  111 
+
+^ 
+
+Mill 
+
+■    ■ 
+
+III 
+III 
+
+
+II 
+II 
+
+
+III 
+
+llll 
+
+
+1"" 
+
+
+
+llll 
+
+III 
+
+III 
+
+Mill 
+lull 
+
+III. 
+llll 
+
+II 
+ll 
+
+'"h     ll 
+
+n, II 
+
+II 
+
+
+en 
+
+
+II 
+
+
+II 
+
+
+III 
+
+
+;;iiii. 
+
+
+Figure  54  —  The  complete  set  of  font  CMC  7  characters 
+
+
+HI  I II I 
+
+
+II 
+
+
+III    ° 
+
+
+(fi  (fi 
+
+
+O   ^ 
+10  o 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+Annex  C 
+
+(informative) 
+
+Equivalent  metric-inch  dimensions  used  in  font  CIMC  7 
+
+
+millimetres 
+
+inches 
+
+miliimetres 
+
+inches 
+
+0,40 
+
+0.015  7 
+
+1,90 
+
+0.074  8 
+
+0,45 
+
+0.017  7 
+
+1,96 
+
+0.076  8 
+
+0,50 
+
+0.019  7 
+
+2,00 
+
+0.078  7 
+
+0,55 
+
+0.021  7 
+
+2,05 
+
+0.080  7 
+
+0,60 
+
+0.023  6 
+
+2,10 
+
+0.082  7 
+
+0,65 
+
+0.025  6 
+
+2,15 
+
+0.084  6 
+
+0,70 
+
+0.027  6 
+
+2,20 
+
+0.086  6 
+
+0,75 
+
+0.029  5 
+
+2,25 
+
+0.088  6 
+
+0,80 
+
+0.031  5 
+
+2,30 
+
+0.090  6 
+
+0,85 
+
+0.033  5 
+
+2,35 
+
+0.092  5 
+
+0,90 
+
+0.035  4 
+
+2,40 
+
+0.094  5 
+
+0,95 
+
+0.037  4 
+
+2,45 
+
+0.096  5 
+
+1,00 
+
+0.039  4 
+
+2,50 
+
+0.098  4 
+
+1,05 
+
+0.041  3 
+
+2,55 
+
+0.100  4 
+
+1,07 
+
+0.042  1 
+
+2,60 
+
+0.102  4 
+
+1,10 
+
+0.043  3 
+
+2,65 
+
+0.104  3 
+
+1,15 
+
+0.045  3 
+
+2,70 
+
+0.106  3 
+
+1,175 
+
+0.046  3 
+
+2,75 
+
+0.108  3 
+
+1,20 
+
+0.047  2 
+
+2,80 
+
+0.110  2 
+
+1,25 
+
+0.049  2 
+
+2,85 
+
+0.1122 
+
+1,30 
+
+0.051  2 
+
+2,90 
+
+0.114  2 
+
+1,35 
+
+0.053  1 
+
+2,95 
+
+0.116  1 
+
+1,40 
+
+0.055  1 
+
+3,00 
+
+0.118  1 
+
+1,425 
+
+0.056  1 
+
+3,05 
+
+0.120  1 
+
+1,45 
+
+0.057  1 
+
+3,10 
+
+0.122  0 
+
+1,50 
+
+0.059  1 
+
+3,15 
+
+0.124  0 
+
+1,55 
+
+0.061  0 
+
+3,20 
+
+0.126  0 
+
+1,60 
+
+0.063  0 
+
+3,25 
+
+0.128  0 
+
+1,65 
+
+0.065  0 
+
+3,35 
+
+0.131  9 
+
+1,70 
+
+0.066  9 
+
+3,40 
+
+0.133  9 
+
+1,75 
+
+0.068  9 
+
+3,60 
+
+0.141  7 
+
+1,80 
+
+0.070  9 
+
+3,80 
+
+0.149  6 
+
+1,85 
+
+0.072  8 
+
+4,00 
+
+0.157  5 
+
+54 
+
+
+IS  11179  :  2005 
+ISO  1004  :  1995 
+
+
+Annex  D 
+
+(informative) 
+
+Use  of  symbols 
+
+A  code  line  contains  various  groups  of  ciiaracters  called  fields  (or  zones)  of  information. 
+
+These  fields  may  contain  numerical  or  alphabetical  characters  or  both. 
+
+In  applications  in  which  all  fields  contain  numerical  characters  only,  there  is  no  restriction 
+on  the  use  of  any  symbols. 
+
+In  applications  in  which  no  field  contains  numerical  characters,  there  is  no  restriction  on  the 
+use  of  any  syrrtbol. 
+
+In  applications  in  which  the  fields  may  contain  numerical  as  well  as  alphabetical  characters, 
+it  may  be  desired,  in  fields  with  numerical  characters  only,  to  check  systematically  the  pres- 
+ence of  two  long  intervals  in  each  such  character.  In  this  case  the  following  rules  shall  ap- 
+ply: 
+
+fields  which  may  contain  at  least  one  alphabetical  character  shall  be  preceded  by  S  IV; 
+
+fields  containing  numberical  characters  only  shall  be  preceded  by  S  I,  S  II,  S  III  or  S  V. 
+
+
+55 
+
+
+Bureau  of  Indian  Standards 
+
+BIS  is  a  statutory  institution  established  under  the  Bureau  of  Indian  Standards  Act,  1986  to  promote 
+harmonious  development  of  the  activities  of  standardization,  marking  and  quality  certification  of 
+goods  and  attending  to  connected  matters  in  the  country. 
+
+Copyright 
+
+BIS  has  the  copyright  of  all  its  publications.  No  part  of  these  publications  may  be  reproduced  in  any 
+form  without  the  prior  permission  in  writing  of  BIS.  This  does  not  preclude  the  free  use,  in  the  course 
+of  implementing  the  standard,  of  necessary  details,  such  as  symbols  and  sizes,  type  or  grade 
+designations.  Enquiries  relating  to  copyright  be  addressed  to  the  Director  (Publications),  BIS. 
+
+Review  of  Indian  Standards 
+
+Amendments  are  issued  to  standards  as  the  need  arises  on  the  basis  of  comments.  Standards  are 
+also  reviewed  periodically;  a  standard  along  with  amendments  is  reaffirmed  when  such  review  indicates 
+that  no  changes  are  needed;  if  the  review  indicates  that  changes  are  needed,  it  is  taken  up  for  revision. 
+Users  of  Indian  Standards  should  ascertain  that  they  are  in  possession  of  the  latest  amendments  or 
+edition  by  referring  to  the  latest  issue  of  'BIS  Catalogue'  and  'Standards:  Monthly  Additions'. 
+
+This  Indian  Standard  has  been  developed  from  Doc:  No.  MSD  7  (263). 
+
+Amendments  Issued  Since  Publication 
+
+
+Amend  No. 
+
+
+Date  of  Issue 
+
+
+Text  Affected 
+
+
+BUREAU  OF  INDIAN  STANDARDS 
+Headquarters: 
+
+Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg,  New  Delhi  110002 
+
+Telephones:  2323  0131 ,  2323  3375,  2323  9402  website  :  www.bls.org.in 
+
+Regional  Offices: 
+
+
+Central       :  Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg 
+NEW  DELHI  110002 
+
+Eastern      :  1/14  C.I.T  Scheme  VII  M,  V.I. P.  Road,  Kankurgachi 
+KOLKATA  700054 
+
+Northern    :  SCO  335-336,  Sector  34-A,  CHANDIGARH  160022 
+
+
+Southern   :  C.I.T.  Campus,  IV  Cross  Road,  CHENNAI  600113 
+
+
+Western     :  Manakalaya,  E9  MIDC,  Marol,  Andheri  (East) 
+MUMBAI  400093 
+
+
+Telephones 
+
+(-2323  7617 
+12323  3841 
+
+(-2337  8499,2337  8561 
+12337  8626,2337  9120 
+
+r  260  3843 
+L  260  9285 
+
+r2254  1216,2254  1442 
+12254  2519,2254  2315 
+
+(-2832  9295,2832  7858 
+1 2832  7891 ,  2832  7892 
+
+
+Branches:  AHMEDABAD.  BANGALORE.  BHOPAL.  BHUBANESHWAR.  COIMBATORE.  FARIDABAD. 
+GHAZIABAD.  GUWAHATI.  HYDERABAD.  JAIPUR.  KANPUR.  LUCKNOW.  NAGPUR. 
+NALAGARH.  PATNA.  PUNE.  RAJKOT  THIRUVANANTHAPURAM.  VISAKHAPATNAM. 
+
+
+Printed  at  Simco  Printing  Press,  Delhi 
+
+

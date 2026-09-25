@@ -1,0 +1,107 @@
+{
+  "is_number": "IS IS_12120",
+  "standard_id": "IS IS_12120",
+  "title": "Indian Standard Specification / Test Method (IS IS_12120)",
+  "ia_identifier": "IS_12120",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers preservative treatment of wood panel products and the raw materials, such as stiles, battens, veneers and wood chips ( particles ) used to manufacture these products against biological damage; that is, sap-stain, wood rotting fungi, tefmite, insects, marine borers and bacteria in order to obtain satisfactory economic Ijfe.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 401",
+      "standard_id": "IS 401:2001",
+      "title": "Preservation of Timber - Code of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 707",
+      "standard_id": "IS 707:2011",
+      "title": "Timber Technology And Utilization of Wood, Bamboo and Cane - Glossary of Terms",
+      "division_code": "CED",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 848",
+      "standard_id": "IS 848:2006",
+      "title": "Specification for Synthetic Resin Adhesives for Plywood (Phenolic And Aminoplastic) -",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 303",
+      "standard_id": "IS 303:1989",
+      "title": "Plywood for General Purposes -",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 1659",
+      "standard_id": "IS 1659:2004",
+      "title": "Block Boards -Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Plywood and Allied Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 2380",
+      "standard_id": "IS 2380:1977",
+      "title": "to 21: Methods of Test for Wood Particle Boards and Boards from Other Lignocellulosic Materials",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2753",
+      "standard_id": "IS 2753",
+      "title": "Indian Standard Specification / Test Method (IS 2753)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade deration",
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12120"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "chloride ( 1-2 percent",
+      "moisture content not exceeding 16 percent",
+      "moisture content of 20-30 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 29877
+}

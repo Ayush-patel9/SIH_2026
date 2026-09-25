@@ -1,0 +1,489 @@
+{
+  "is_number": "IS IS_12235",
+  "standard_id": "IS IS_12235",
+  "title": "Indian Standard Specification / Test Method (IS IS_12235)",
+  "ia_identifier": "IS_12235",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard (Part 3) specifies a method for the determination of the opacity of plastics pipes and fittings. 1.2 It lays down the maximum acceptable limit for light which may pass through the wall of the pipe or fitting, if the particular standard specifies that they be opaque.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 4985",
+      "standard_id": "IS 4985:2021",
+      "title": "UNPLASTICIZED PVC PIPES FOR POTABLE WATER SUPPLIES SPECIFICATION Fourth Revision",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 161",
+      "standard_id": "IS/ISO 161",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 161)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1183",
+      "standard_id": "IS/ISO 1183",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1183)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2507",
+      "standard_id": "IS/ISO 2507",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2507)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 345",
+      "standard_id": "IS/ISO 345",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 345)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4422",
+      "standard_id": "IS/ISO 4422",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4422)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6401",
+      "standard_id": "IS/ISO 6401",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6401)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9969",
+      "standard_id": "IS/ISO 9969",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9969)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 13844",
+      "standard_id": "IS/ISO 13844",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 13844)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 13845",
+      "standard_id": "IS/ISO 13845",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 13845)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 13846",
+      "standard_id": "IS/ISO 13846",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 13846)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 1)",
+      "standard_id": "IS 12235 (PART 1)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 1))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1269",
+      "standard_id": "IS 1269",
+      "title": "Indian Standard Specification / Test Method (IS 1269)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1269 (PART 1)",
+      "standard_id": "IS 1269 (Part 1):1997",
+      "title": "Legal metrology - Material measure of length, Part 1: Woven metallic and glass fibre tape measures",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1269 (PART 2)",
+      "standard_id": "IS 1269 (Part 2):1997",
+      "title": "Legal metrology - Material measures of length, Part 2: Steel tape measures",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 2)",
+      "standard_id": "IS 12235 (PART 2)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 2))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 50",
+      "standard_id": "IS 50:1980",
+      "title": "Lead and Scarlet Chromes",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 3)",
+      "standard_id": "IS 12235 (PART 3)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 3))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 4)",
+      "standard_id": "IS 12235 (PART 4)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 4))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1070",
+      "standard_id": "IS 1070:2023",
+      "title": "Reagent Grade Water Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "CHEMICAL_ANALYSIS",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025",
+      "standard_id": "IS 3025",
+      "title": "Indian Standard Specification / Test Method (IS 3025)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 47)",
+      "standard_id": "IS 3025 (Part 47):1994",
+      "title": "Methods of Sampling and Test (Physical and Chemical) for Water and Wastewater, Part 47: Lead",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 41)",
+      "standard_id": "IS 3025 (Part 41):2023",
+      "title": "Part 41 : 2023: Methods Of Sampling And Test Physical And Chemical For Water And Wastewater - Part 41 Cadmium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3025 (PART 48)",
+      "standard_id": "IS 3025 (Part 48):1994",
+      "title": "Methods of sampling and test (physical and chemical) for water and wastewater, Part 48: Mercury",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 5/SEC 1)",
+      "standard_id": "IS 12235 (PART 5/SEC 1)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 5/SEC 1))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 5/SEC 2)",
+      "standard_id": "IS 12235 (PART 5/SEC 2)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 5/SEC 2))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 6)",
+      "standard_id": "IS 12235 (PART 6)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 6))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 7)",
+      "standard_id": "IS 12235 (PART 7)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 7))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 8/SEC 1)",
+      "standard_id": "IS 12235 (PART 8/SEC 1)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 8/SEC 1))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 8/SEC 2)",
+      "standard_id": "IS 12235 (PART 8/SEC 2)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 8/SEC 2))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 8/SEC 3)",
+      "standard_id": "IS 12235 (PART 8/SEC 3)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 8/SEC 3))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 8/SEC 4)",
+      "standard_id": "IS 12235 (PART 8/SEC 4)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 8/SEC 4))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 9)",
+      "standard_id": "IS 12235 (PART 9)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 9))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 10)",
+      "standard_id": "IS 12235 (PART 10)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 10))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 11)",
+      "standard_id": "IS 12235 (PART 11)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 11))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 12)",
+      "standard_id": "IS 12235 (PART 12)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 12))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 13)",
+      "standard_id": "IS 12235 (PART 13)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 13))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 14)",
+      "standard_id": "IS 12235 (PART 14)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 14))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 15)",
+      "standard_id": "IS 12235 (PART 15)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 15))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 16)",
+      "standard_id": "IS 12235 (PART 16)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 16))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 17)",
+      "standard_id": "IS 12235 (PART 17)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 17))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 18)",
+      "standard_id": "IS 12235 (PART 18)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 18))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 19)",
+      "standard_id": "IS 12235 (PART 19)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 19))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 40",
+      "standard_id": "IS 40:2021",
+      "title": "Specification for Carbon black for paints (Second Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Initial Internal Diameter (rfi",
+    "Vertical Deflection (y",
+    "Percentage Deflection (P",
+    "Load (F",
+    "Length (L",
+    "Ring Stiffness (S",
+    "Grade NOTE",
+    "Grade Socket",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12235"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "density at a wave length of 535 n"
+    ],
+    "chemical_properties": [
+      "sulphuric acid — 25 percent",
+      "Sulphuric Acid — 10 percent",
+      "sulphuric acid solution. Add 2.0 ml of 30 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "wall thickness is 0.05 mm",
+      "wall thickness greater than 8.6 mm",
+      "wall thickness up to 8.6 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 153293
+}

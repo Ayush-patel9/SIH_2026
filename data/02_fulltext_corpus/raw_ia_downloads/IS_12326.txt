@@ -1,0 +1,7596 @@
+**************** 
+
+
+
+-k is^ 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+"^^ ^ ^ ^ % ?R^" 
+
+Jawaharlal Nehru 
+
+Step Out From the Old to the New 
+
+
+
+^^iiT'jsiS'SfS^^i^*?*:: 
+
+
+
+
+•^■•■^^^■r 
+
+
+
+
+li^ i/ir w w w w w WW ^ ^ ^ tIt w w w 
+
+
+
+BLANK PAGE 
+
+
+
+^<ii^ 
+
+
+
+
+
+UI> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 12326 : 2005 
+ISO/IEC2022:1994 
+
+
+
+Indian Standard 
+
+INFORMATION TECHNOLOGY — CHARACTER CODE 
+STRUCTURE AND EXTENSION TECHNIQUES 
+
+( First Revision ) 
+
+
+
+ICS 35.040.00 
+
+
+
+©BIS 2005 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+November 2005 
+
+
+
+Price Group 14 
+
+
+
+Computer Hardware Sectional Committee, LTD 37 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard (First Revision) which is identical with ISO/IEC 2022 : 1994 'Information technology — 
+Character code structure and extension techniques' issued by the International Organization for Standardization 
+(ISO) and International Electrotechnical Commission (lEC) jointly was adopted by the Bureau of Indian Standards 
+on the recommendations of the Computer Hardware Sectional Committee and approval of the Electronics and 
+Information Technology Division Council. 
+
+The text of the ISO/IEC Standard has been approved as suitable for publication as an Indian Standard without 
+deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is 
+particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should be read 
+as 'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice is to use 
+a point (.) as the decimal marker. 
+
+The technical committee responsible for the preparation of this standard has reviewed the provisions of the 
+following International Standards and has decided that these are acceptable for use in conjunction with this 
+standard: 
+
+International Standard Title 
+
+ISO 2375 : 1985 Data processing — Procedure for registration of escape sequences 
+
+ISO 8824 : 1990 Information technology — Open systems interconnection — Specification of 
+
+abstract syntax notation one (ASN.l) 
+
+ISO 8825 : 1990 Information technology — Open systems interconnection — Specification of basic 
+
+encoding rules for abstract syntax notation one (ASN.l) 
+
+ISO/IEC 6429 : 1992 Information technology — Control functions for coded character sets 
+
+ISO Inemational register of coded character sets to be used with escape sequences 
+
+
+
+1812326:2005 
+ISO/IEC 2022 : 1994 
+
+Indian Standard 
+
+INFORMATION TECHNOLOGY — CHARACTER CODE 
+STRUCTURE AND EXTENSION TECHNIQUES 
+
+( First Revision ) 
+
+Section 1 - General 
+
+1 Scope 
+
+This International Standard specifies the structure of 8-bit codes and 7-bit codes which provide for the coding of character sets. 
+The code elements used in the structure are common to both the 8-bit and 7-bit codes. The codes use a variety of techniques 
+for extending die capabilities of elementary 8-bit and 7-bit codes. Greater emphasis is given to 8-bit codes in this edition of the 
+Standard than in previous editions because they are now more widely used. 
+
+The use of common elements in the 8-bit and 7-bit code structure enables any specific conforming 8-bit code to be 
+transformed into an equivalent 7-bit code, and vice versa, in a simple and direct fashion. 
+
+ISO/IEC 4873 conforms to the 8-bit code strucmre specified here, and ISO/IEC 646 conforms to the 7-bit code structure 
+specified here. 
+
+Note - The coded character set specified in ISO/IEC 10646-1 has a different structure not in accordance with this International Standard. 
+
+The code structure facihties specified here include various means of extending die number of control functions and graphic 
+characters available in a code. They also include techniques to construct and formalize die definition of specific codes, and to 
+provide a coded identification of the structure and of the constituent elements of such specific codes. 
+
+Specific codes may also be identified by means of object identifiers in accordance with ISO 8824, Abstract Syntax Notation 
+One (ASN. 1). The form of such object identifiers is specified in annex A. 
+
+Individual character sets and control functions intended for use widi these 8-bit and 7-bit codes are assumed to be registered in 
+die ISO International Register of Coded Character Sets to be Used widi Escape Sequences, in accordance with ISO 2375 (see 
+annex B). The register includes details to relate inxlividual character sets and control functions widi dieir coded representations, 
+and also with the associated coded identifications of such character sets. 
+
+The principles established in diis International Standard may be utilized to form supplementary code structure facilities. For 
+example ISO/IEC 6429 has followed such a procedure to formulate some parameterized control functions. 
+
+The use of uniform code structure techniques fordie 8-bit and 7-bit codes specified here has die advantage of: 
+
+- permitting uniform provision for code strucmre in the design of information processing systems, 
+
+- providing standardized methods of calling into use agreed sets of characters, 
+
+- allowing the interchange of data between environments that utilise 8-bit and 7-bit codes respectively, 
+
+- reducing the risk of conflict between systems required to inter-operate. 
+
+When two systems with different levels of implementation of code strucmre facilities are required to communicate widi one 
+another, they may do so using the code structure facilities that they have in common. 
+
+The codes specified here are designed to be used for data that is processed sequentially in a forward direction. Use of these 
+codes in strings of data which are processed in some other way, or which are included in data formatted for fixed-length record 
+processing, may have undesirable results or may require additional special treatment to ensure correct interpretation. 
+
+Note - Since the previous edition (1986) of this International Standard the text has been completely rearranged and rewritten to make the Standard more 
+convenient to use as a reference document. It is now arranged in three main sections as follows: 
+
+1 General 
+
+2 Character Sets and Codes 
+
+3 Code Identification and Escape Sequences 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 ; 1994 
+
+
+
+2 Conformance 
+
+2.1 Types of conformance 
+
+Full conformance to a standard means that all of its requirements are met. Conformance will only have a unique meaning if the 
+standard contains no options. If there are options within the standard they must be clearly identified, and any claim of 
+conformance must include a statement that identifies those options that have been adopted. 
+
+This International Standard is of a different nature since it specifies a large number of facilities from which different selections 
+may be made to suit individual applications. These selections are not identified in this International Standard, but must be 
+identified at the time that a claim of conformance is made. Conformance to such an identified selection is known as limited 
+
+conformance. 
+
+The selection of facilities &om this International Standard that are to be used in a particular application will generally be 
+included in a specification document, which states the adopted facilities and gives other details necessary to define fiilly one or 
+more specific codes. Such a specification is said to be in accordance with this International Standard (see 10.1). 
+
+2.2 Conformance of information interchange 
+
+A CC-data-element within coded information for interchange is in conformance with this International Standard if the coded 
+representations within that CC-data-element satisfy the following conditions: 
+
+a) they shall represent graphic characters, control functions, and code-identificalion functions in accordance with an identified 
+selection of the facilities specified in this International Standard (i.e. a version of this Standard, see 10.1); 
+
+b) when the code extension techniques specified in this International Standard are used, they shall be implemented by the 
+control functions and code-identification fiinctions defined in this Standard with the meaning and coded representation 
+specified in this Standard; 
+
+c) no coded representation that is either reserved for registration and not assigned, or reserved for fiiture use, shall be used; 
+
+d) no registered escape sequence shall be used with a meaning different fi:om that defined by the registration. 
+
+2.3 Conformance of devices 
+
+A device is in conformance with this International Standard if it conforms to the requirements of 2.3,1, and cither or both of 
+2.3.2 and 2.3,3 below. Any claim of conformance shall identic the document which contains the description specified in 2.3.1. 
+
+2.3.1 Device description 
+
+A device that conforms to this International Standard shall be the subject of a description that 
+
+a) identifies either directly, or by reference to a specification that is in accordance with this International Standard, the 
+selection of facilities fi-om this Standard that it can utilize when originating or when receiving CC-data-elements; 
+
+b) identifies the means by which the user may supply the corresponding characters and functions, or may recognize them 
+when they are made available to the user, as specified in 2.3.2 and 2.3.3 respectively. 
+
+2.3.2 Originating devices 
+
+An originating device shall be capable of transmitting within a CC-data-element the coded representations of graphic 
+characters from one or more graphic character sets, and of an identified selection of control functions and code-identification 
+functions jconforming to this International Standard. 
+
+Such a device shall allow the user to supply, from an appropriate set, characters or other indications which will impUciUy or 
+explicitiy determine the graphic characters, control functions, and code-identification functions whose coded representations 
+are to be transmitted. 
+
+2.3.3 Receiving devices 
+
+A receiving device shall be capable of receiving within a CC-data-element and interpreting the coded representations of 
+graphic characters fi-om one or more graphic character sets, and an identified selection of control functions and code- 
+identification fiinctions conforming to this International Standard. 
+
+Such a device shall make available to the user, from an appropriate set, characters or other indications which are implicitiy or 
+explicitly determined by the graphic characters, control functions, and code^identification functions whose coded 
+representations are received. 
+
+
+
+IS 12326 : 2005 
+ISQ/IEC 2022 : 1994 
+
+
+
+3 Normative references 
+
+The following standards contain provisions which, through reference in this text, constitute provisions of this International 
+Standard. At the time of publication, the editions indicated were valid. All standards are subject to revision, and parties to 
+agreements based on this International Standard are encouraged to investigate the possibility of applying the most recent 
+editions of the standards listed below. Members of lEC and ISO maintain registers of currently valid standards. 
+
+ISO 2375:1985, Data processing - Procedure for registration of escape sequences. 
+
+ISO/IEC 6429: 1992, Information technology - Control functions for coded character sets. 
+
+ISO 8824:1990, Information technology - Open Systems Interconnection - Specification of Abstract Syntax Notation One 
+
+(ASN.l). 
+
+ISO 8825:1990, Information technology - Open Systems Interconnection - Specification of Basic Encoding Rules for Abstract 
+Syntax Notation One (ASN.l). 
+
+ISO International Register of Coded Character Sets to be Used with Escape Sequences. 
+
+4 Deflnitions 
+
+For the purposes of this International Standard, the following definitions apply. 
+
+4.1 bit combination: An ordered set of bits used for the representation of characters. 
+
+4.2 byte: A bit string that is operated upon as aunit. 
+Note - Each bit has the value either ZERO or ONE. 
+
+4.3 character: A member of a set of elements used for the organization, control or representation of data. 
+
+4.4 coded-character-data-element (CC-data-element): An element of interchanged information that is specified to 
+consist of a sequence of coded representations of characters, in accordance with one or more identified standards for coded 
+character sets. 
+
+Notes 
+
+1 - In a communication environment in accordance with the Reference Model for Open Systems Interconnection of ISO 7498, a CC-data-element will form 
+ail or part of the information that corresponds to the Presentation-Protocol-Data-Unit (PPDU) defined in that International Standard. 
+
+2 - When information interchange is accomplished by means of interchangeable media, a CC-data-element will form all or part of the information that 
+corresponds to the user data, and not that recorded during formatting and initialization. 
+
+4.5 coded character set; code: A set of unambiguous rules that establishes a character set and the one-to-one relationship 
+between the characters of the set and their bit combinations. 
+
+4.6 code extension: The techniques for the encoding of characters that are not included in the character set of a given code. 
+
+4.7 code table: A table showing the character allocated to each bit combination in a code. 
+
+4.8 combining character: A member of an identified subset of a coded character set, intended for combination T^di the 
+preceding or following graphic character, or with a sequence of combining characters preceded or followed by a non- 
+combining character. 
+
+4.9 control character: A control function the coded representation of which consists of a single bit combination. 
+
+4.10 control function: An action that affects the recording, processing, transmission or interpretation of data, and that has 
+a coded representation consisting of one or more bit combinations. 
+
+4.11 to designate; To identify a set of characters that are to be represented, in some cases immediately and in others on the 
+occurrence of a further control function, in a prescribed manner. 
+
+
+
+IS 12326: 2005 
+ISO/IEC 2022: 1994 
+
+
+
+4.12 device: A component of information processing equipment which can transmit, and/or can receive, coded information 
+
+within CC -data-elements. 
+
+Note - It may be an input/output device in the conventional sense, or a process such as an application program or a gateway function. 
+
+4.13 escape sequence: A string of bit combinations that is used for control purposes in code extension procedures. The 
+
+first of these bit combinations represents the control function ESCAPE. 
+Note -In this International Standard ESCAPE is always referred to as a control character. 
+
+4.14 Final Byte: The bit combination that terminates an escape sequence or a control sequence. 
+
+4.15 graphic character: A character, other than a control function, that has a visual representation normally handwritten, 
+printed or displayed, and that has a coded representation consisting of one or more bit combinations. 
+
+4.16 graphic symbol: A visual representation of a graphic character or of a control function. 
+
+4.17 Intermediate Byte: A bit combination which may occur between ttfat of the control character ESCAPE and the Final 
+
+Byte in an escape sequence. 
+
+4.18 to invoke: To cause a designated set of characters to be represented by the prescribed bit combinations whenever those 
+bit combinations occur. 
+
+4.19 repertoire: A specified set of characters that are each represented by one or more bit combinations of a coded 
+
+character set. 
+
+4.20 to represent: 
+
+a) To use a prescribed bit combination with the meaning of a character in a set of characters that has been designated and 
+invoked; or 
+
+b) To use an escape sequence with the meaning of an additional control function. 
+
+4.21 user: A person or other entity that invokes the services provided by a device. 
+
+Notes 
+
+1 - This entity may be a process such as an applicadon program if the "device" is a code convenor or a gateway function, for example. 
+
+2 - The characters, as supplied by the user or made available to the user, may be in the form of codes local to the device, or of non-conventional visible 
+representations, provided that 2.3 above is satisfied. 
+
+5 Notation, code tables and names 
+5.1 Notation 
+
+The bits of the bit combinations of the 8-bit code are identified by bg, by, bg, bj, b4, bj, bj and b,, where bg is the highest 
+order, or most-significant, bit and bj is the lowest-order, or least-significant, bit. 
+
+The bits of the bit combinations of the 7-bit code are identified by b,, bg, h^, b^, hj, bj and bj, where by is the highest order, or 
+most-significant, bit and bj is the lowest-order, or least- significant, bit. 
+
+The bit combinations may be interpreted to represent integers in binary notation, in the range to 255 for the 8-bit code, and 
+in the range to 127 for the 7-bit code, by attributing the following weights to the individual bits: 
+
+Bit: bg by bg b5 b4 b, bj bj 
+
+Weight: 128 64 32 16 8 4 2 1 
+
+In this International Standard, the bit combinations are identified by notations of the form x/y, where x and y are numbers in 
+the range 00 to 15. 
+
+The correspondence between the notations of the form x/y and the bit combinations consisting of the bits bg or by to bj is as 
+
+follows: 
+
+- X for the 8-bit code is the number represented by bg, by, bg, and h^ where these bits are given the weights 8, 4, 2 and 1 
+respectively; 
+
+
+
+IS 12326 : 2005 
+ISO/lEC 2022 : 1994 
+
+
+
+- X for the 7-bit code is the number represented by b7, bg, and b5 where these bits are given the weights 4, 2 and 1 
+respectively; 
+
+- y is the number represented by b4, bj, bj and b, where these bits are given the weights 8, 4, 2 and 1 respectively. 
+
+The notations of the form x/y are the same as those used to identify code table positions, where x is the column number and y 
+the row number (see 5.2). 
+
+5^ Code tables 
+
+An 8-bit code table consists of 256 positions arranged in 16 columns and 16 rows. The columns and rows are numbered 00 to 
+15 (see figure 1). 
+
+A 7-bit code table consists of 128 positions arranged in 8 columns and 16 rows. The columns are numbered 00 to 07 and the 
+rows 00 to 15 (see figure 1). 
+
+The code table positions are identified by notations of the form x/y, where x is the column number and y is the row number. 
+By convention, leading zeroes are included in the colunm and rcfw numbers (e.g. 02/01). 
+
+The positions of the code table are in one-to-one correspondence with the bit combinations of the code. The notation of a code 
+table position, of the form x/y, is the same as that of the corresponding bit combination. 
+
+
+
+
+
+00 
+
+
+01 
+
+
+02 
+
+
+03 
+
+
+1 — 
+04 
+
+
+05 
+
+
+06 
+
+
+07 
+
+
+
+
+
+
+00 
+
+
+01 
+
+
+02 
+
+
+03 
+
+
+04 
+
+
+05 
+
+
+06 
+
+
+07 
+
+
+08 
+
+
+09 
+
+
+10 
+
+
+11 
+
+
+12 
+
+
+13 
+
+
+14 
+
+
+15 
+
+
+00 
+
+
+
+
+p_ 
+
+
+r~" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+00 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+06. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+06 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+07; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+07 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+08 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+08 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+09 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+09 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+
+
+
+13 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7-bit 
+
+
+
+53 Names of characters 
+
+
+
+8-bit 
+
+
+
+Figure 1 - Code tables 
+
+
+
+This International Standard assigns one name to each character. In addition, it specifies an acronym for each control character 
+and for the characters SPACE and DELETE. By convention, only capital letters, space and hyphen are used for writing the 
+names of the characters. For acronyms only capital letters and digits are used. It is intended that the acronyms and this 
+convention be retained in all translations of the text. 
+
+
+
+IS 12326 : 2005 
+ISO/IEC2022: 1994 
+
+
+
+Section 2 - Character sets and codes 
+
+6 Characters and character sets 
+
+6.1 Types of characters and character sets 
+
+The structure of 8-bit and 7-bit codes specified by this International Standard makes use of the following types of characters, 
+character sets, and functions: 
+
+- fixed coded characters, 
+
+- setsof coded graphic characters, 
+
+- sets of coded control functions (or control characters), 
+
+- coded single additional control functions. 
+
+These components are specified respectively in 6.2 to 6.5 below. 
+
+The coded representations of the graphic characters and control functions are specified in relation to the 8-bit and 7-bit code 
+tables defined in 5.2 above. A coded representation for each type of component is specified within columns 00 to 07 of the 
+8-bit and 7-bit code tables. For some components an alternative coded representation is specified in columns 08 to 15 of the 
+S^bit code table, and is not applicable to any 7-bit code. 
+
+6.2 Fixed coded characters 
+
+6.2.1 Character DELETE 
+
+Name: DELETE Acronym: DEL Coded representation: 07/15 
+
+DEL was originally used to erase or obliterate an erroneous or unwanted character in punched tape. DEL may be used for 
+media-fill or time-fill. DEL characters may be inserted into, or removed from, a CC-data-element without affecting its 
+information content, but such action may affect the information layout and/or the control of equipment. 
+
+6.2.2 Character ESCAPE 
+
+Name: ESCAPE Acronym: ESC Coded representation: 01/11 
+
+ESCAPE is a control character used for code extension purposes, h causes the meaning of a limited number of the bit 
+combinations following it in a CC-data-element to be changed. These bit combinations, togethei' with the preceding bit 
+combination that represents the ESC character, constitute an escape sequence. 
+
+Escape sequences provide the coded representations of code-identification functions and of some types- of control ftmctions. 
+The various uses of escape sequences are specified in clause 13. Code identification functions are specified in clauses 14 and 
+15. 
+
+6.2.3 Character SPACE 
+
+Name: SPACE Acronym: SP Coded representation: 02/00 
+
+SPACE is a graphic character. It has a visual representation consisting of the absence of a graphic symbol. It causes the active 
+position to be advanced by one character position. 
+
+6.3 Sets of coded graphic characters 
+
+6.3.1 Types of coded graphic character set 
+
+A graphic character shall have a coded representation comprising one or more 8-bit combinations (bytes) in an 8-bit code, and 
+one or more 7-bit combinations (bytes) in a 7-bit code. Within a coded graphic character set each character shall be 
+represented by the same number of such bit combinations. 
+
+The bit combinations used to represent the graphic characters in a set shall be either from the six adjacent colunms numbered 
+02 to 07 of the code tables or fi-om the six adjacent columns numbered 10 to 15 of the 8-bit code table. 
+
+The type of a coded graphic character set is defined by the maximum number of graphic characters that the set can contain. 
+The types of set specified here are illustrated in figure 3. 
+
+
+
+1812326:2005 
+ISO/rEC 2022: 1994 
+
+
+
+A coded graphic character set in which each character is represented by a single bit combination shall be one of the following: 
+
+- 94-character set, in positions 02/01 to 07/14, or 10/01 to 15/14; 
+(i.e. all positions in columns 02 to 07 except 02/00 and 07/15, or 
+
+all positions in columns 10 to 15 except 10/00 and 15/15) 
+
+- 96-character set, in positions 02/00 to 07/15, or 10/00 to 15/15. 
+(i.e. all positions in columns 02 to 07, or in columns 10 to 15) 
+
+In a 94-character set no character shall be allocated to positions 02/00 and 07/15. 
+
+A coded graphic character set in which each character is represented by a sequence of n bit combinations, where n>l , shall be 
+one of the following: 
+
+- 94"-character set, 
+
+- 96°-character set. 
+
+These sets are here referred to as multiple-byte sets. 
+
+A 94"-character set shall consist of up to 94" graphic characters each of which is represented by a sequence of n 8-bit or 7-bit 
+combinations, either all in the range 02/01 to 07/14 or all in the range 10/01 to 15/14. In a 94n-character set no character shall 
+have a coded representation that includes the bit combination 02/00 or 07/15. 
+
+A 96"-character set shall consist of up to 96" graphic characters each of which is represented by a sequence of n 8-bit or 7-bit 
+combinations, either all in the range 02/00 to 07/15 or all in the range 10/00 to 15/15. 
+
+Note - The 8th bit (bg) of each byte in such an 8-bit multiple-byte representation is unifonnly either ZERO or ONE. 
+
+
+
+IS 12326 : 2005 
+rSO/lEC 2022 : 1994 
+
+
+
+
+
+02 
+
+
+03 
+
+
+04 
+
+
+05 
+
+
+06 
+
+
+07 
+
+
+
+
+10 
+
+
+11 
+
+
+12 
+
+
+13 
+
+
+14 
+
+
+15 
+
+
+00 
+01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+06 
+
+
+
+
+
+
+
+
+
+
+
+
+07 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+06 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+09 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+03 
+
+
+04 
+
+
+05 J6 
+
+
+07 
+
+
+
+
+10 
+
+
+11 
+
+
+12 
+
+
+13 
+
+
+14 
+
+
+15 
+
+
+00 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+06 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+07 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+08 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+09 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+
+
+
+
+
+
+
+
+: 
+
+
+12 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15l 
+
+
+
+
+
+
+
+
+
+
+
+
+
+94-character set 
+
+
+
+96-character set 
+
+
+
+T)0 
+
+
+^ 
+
+
+"~ 
+
+
+■■" 
+
+
+
+
+
+
+"Y 
+
+
+01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0« 
+
+
+
+
+
+
+
+
+
+
+
+
+— 
+
+
+07 
+
+
+
+
+
+
+
+
+
+
+
+
+08 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+09 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+" 
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+
+
+
+
+
+
+,-,^ 
+
+
+15 
+
+
+
+
+
+
+
+
+
+
+J 
+
+
+r 
+
+
+
+
+
+00 
+
+
+■"■ 
+
+
+■"■ 
+
+
+"~" 
+
+
+— "■ 
+
+
+^ 
+
+
+^ 
+
+
+T 
+
+
+01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+06 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+07 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+08 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+09 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+03 
+
+
+04 
+
+
+05 
+
+
+06 
+
+
+07 
+
+
+10 
+
+
+11 
+
+
+12 
+
+
+13 
+
+
+14 
+
+
+15 
+
+
+
+94 X 94-character set 
+
+
+
+02 
+
+
+03 
+
+
+04 
+
+
+05 
+
+
+06 
+
+
+07 
+
+
+10 
+
+
+11 
+
+
+12 
+
+
+13 
+
+
+14 
+
+
+15 
+
+
+
+96 X 96-character set 
+
+
+
+Figure 2 - Structure of sets of coded graphic characters 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+6.3.2 Contents of a coded graphic character set 
+
+Within a coded graphic character set either a unique graphic character shall be allocated to each of the (sequences of) bit 
+combinations that are specified for that set, or that bit combination (or sequence) shall be declared unused. 
+
+Any coded graphic character set shall not contain the characters SPACE or DELETE, or any control character (see 6.4). 
+However, characters other than SPACE and representing spaces of different sizes or usage may be assigned to any (sequences 
+of) bit combinations in any set of graphic characters. 
+
+6.3.3 Combination of graphic characters 
+
+Unless specifically defined otherwise, graphic characters shall not be combining characters, i.e. they shall not be intended for 
+combination with an adjacent graphic character. 
+
+Some graphic character sets may allow for the graphical representation of additional graphic symbols, such as accented letters, 
+by the imaging of two or more graphic characters as a single graphic symbol. Two combination methods are recognised in this 
+International Standard: 
+
+a) graphic characters that are non-combining characters may be combined by the use of the control character BACKSPACE 
+or CARRIAGE RETURN; 
+
+-b) graphic characters that are specified to be combining characters may be used in conjunction with a non-combining graphic 
+
+character. 
+
+Sponsors of graphic character sets who apply for registration according to ISO 2375 are expected to identify any combining 
+characters that are in the set. 
+
+Notes 
+
+1 - A standard that defines a character set should specify which characters, if any, are combining characters, and how they may be used, since a registration 
+does not require such details to be stated. 
+
+2 - The graphic character set of ISO/IEC 646 allows for the first of the above methods for the itnaging of accented characters. 
+
+3 - ISO/IEC 5429 specifies a third method for combining graphic characters, independent of the specification of the characters themselves, by the use of the 
+control function GRAPHIC CHARACTER COMBINATION (GCC). 
+
+6.3.4 Sources of coded graphic character sets 
+
+Sets of graphic characters and their coded representations are specified in other standards such as ISO/IEC 646 or 
+ISO/IEC 10367, and in national standards. Some of these sets, and some additional sets, are specified in the ISO International 
+Register of Coded Character Sets (see annex B). 
+
+Note - New and revised character sets may be added to the register when required. 
+
+Sets of graphic characters for private use may be defined by agreement between the interchange parties. 
+
+6.4 Sets of coded control functions 
+
+6.4.1 Types of coded control function set 
+
+A set of coded control functions shall contain up to 32 control functions (or control characters) allocated to two adjacent 
+columns of a code table. 
+
+Two types of coded control function set are defined as follows: 
+
+- primary set, in positions (X)/00 to 01715, 
+
+- supplementary set, in positions 08/00 to 09/15, or represented by escape sequences. 
+
+A primary set shall include the ESCAPE character. A supplementary set shall not include that character. These sets are 
+illustrated in figure 3. 
+
+Either a unique control function shall be allocated to each position or the position shall be declared unused. 
+
+
+
+IS 12326: 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Fe = 
+
+
+
+04 05 inESCFe 
+
+
+
+
+
+00 
+
+
+01 
+
+
+00 
+
+
+
+
+
+
+01 
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+04 
+
+
+
+
+
+
+05 
+
+
+
+
+
+
+06 
+
+
+
+
+
+
+07 
+
+
+
+
+
+
+08 
+
+
+
+
+
+
+09 
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+11 
+
+
+
+
+ESC 
+
+
+12 
+
+
+
+
+
+
+13 
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+15 
+
+
+
+
+
+
+
+
+
+08 
+
+
+09 
+
+
+00 
+
+
+
+
+
+
+01 
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+04 
+
+
+
+
+
+
+05 
+
+
+
+
+
+
+06 
+
+
+
+
+
+
+07 
+
+
+
+
+
+
+08 
+
+
+
+
+
+
+09 
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+11 
+
+
+
+
+
+
+12 
+
+
+
+
+
+
+13 
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+15 
+
+
+
+
+
+
+
+Primary set 
+
+
+
+Supplementary set 
+
+
+
+Figure 3 - Structure of sets of coded control functions (or characters) 
+
+6.4.2 Primary sets of coded control functions 
+
+A control function in a primary set shall have a coded representation consisting of one 8-bit or 7-bit combination, i.e. it is a 
+control character. 
+
+A primary set of coded control fimctions shall include the control character ESCAPE in position 01/11. 
+
+If any control function from the primary set specified in ISO/IEC 6429 is included, it shall have the definition and the coded 
+representation specified therein. No transmission control characters, other than the ten specified in ISO/IEC 6429, shall be 
+included in a primary set of coded control functions. 
+
+6.4.3 Supplementary sets of coded control functions 
+
+A control function in a supplementary set shall have a coded representation consisting of one 8-bit or 7-bit combination when 
+the set is invoked in positions 08/00 to 09/15. It shall be represented by an escape sequence of type Fe (see 13.2) otherwise. 
+Note - The notation Fe indicates a bit combination in the range 04/00 to 05/15. The escape sequence consists of the two bit combinations ESC Fe (13.2.5). 
+
+A supplementary set of coded control functions shall not include the control character ESCAPE or any of the transmission 
+control functions of the primary set of ISO/IEC 6429. 
+
+6.4i4 Sources of coded control function sets 
+
+Control functions for a wide variety of applications are specified in ISO/IEC 6429. A standardized primary set and 
+supplementary set are included (identified there as CO and CI sets). Sets of control functions are also registered in the ISO 
+International Register of Coded Character Sets (see annex B). Each set is registered either as a primary (CO) set only, or as a 
+supplementary (CI) set only. 
+
+Note - New and revised sets of coded control functions may be added to the register when required. 
+
+Sets of coded control functions for private use may be defined by agreement between the interchange parties. 
+
+
+
+10 
+
+
+
+1812326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+6.5 Coded single additional control functions 
+
+A coded single additional control function shall be either; 
+
+- a standardized single control function, or 
+
+- a registered single control function, or 
+
+- a private control fiinction. 
+
+Each such function shall be represented by an escape sequence (see clause 13). 
+
+6.5.1 Standardized single control functions 
+
+A standardized single control function shall have a permanently assigned meaning. Such a function shall be represented by an 
+escape sequence of type Fs (13.2.1). Each such function shall be registered, together with its coded representation, in the ISO 
+International Register of Coded Character Sets (see annex B). 
+
+Notes 
+
+! - Any candidates for registration as standardized control functions must first be approved by ISO/IEC JTC1/SC2. If approval is granted the control 
+function is registered according to the procedure of ISO 2375. It will normally then be specified in a"standard published by ISO or other recognised body. 
+
+2 - The notation Fs indicates a bit combination in the range 06/00 to 07/14. The escape sequence consists of the bit combinations ESC Fs (13.2.5). 
+
+6.5.2 Registered single control functions 
+
+A registered single control function shall have a permanently assigned meaning. Such a function shall be represented by an 
+escape sequence of type 3Ft (13.2.2). Each such function shall be registered, together with its coded representation, in the ISO 
+International Register of Coded Character Sets (see annex B). 
+
+Note - The notation Ft indicates a bit combination in the range 04/00 to 07/14. The escape sequence consists of the bit combinations ESC 02/03 .. Ft 
+
+(13.2.5). 
+
+6.5.3 Private control functions 
+
+Private control functions have no standardized meaning. They are for private use and may be defined by agreement between 
+the interchange parties. A private control function shall be represented by an escape sequence of type Fp or of type 3Fp 
+
+(13.2.2), 
+
+Note - The notation Fp indicates a bit combination in the range 03/00 to 03/15. The escape sequences consist respectively of the bit combinations ESC Fp 
+and ESC 02/03 .. Fp (13.2.5). 
+
+6.5.4 Sources of coded single control functions 
+
+Some standardised single control functions are specified elsewhere in this International Standard, see 7.3 and 15.3, and some 
+are specified in ISO/IEC 6429. 
+
+Registered control functions are found in the ISO International Register of Coded Character Sets (see annex B). 
+
+Private control functions are defined by agreement between the interchange parties. 
+
+7 The elements of 8-bit and 7-bit codes 
+7.1 Summary of the elements 
+
+An clement of an 8-bit or a 7-bit code shall be either: 
+
+- a coded character-set (7.2), 
+
+- a coded single additional control function (6.5), 
+
+- a coded code- identification function (7.4). 
+
+These code elements are illustrated in figure 4. 
+
+
+
+11 
+
+
+
+IS 12326: 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+CO 
+
+code 
+
+element 
+
+
+
+CI 
+
+code 
+
+element 
+
+
+
+Code 
+
+identification 
+
+functions 
+
+
+
+Single additional 
+control functions 
+
+
+
+GO 
+
+code 
+
+element 
+
+
+
+Gl 
+
+code 
+element 
+
+
+
+G2 
+code 
+element 
+
+
+
+
+Figure 4 - Elements of a code 
+7.2 Character-set code elements 
+
+A character-set code element shall be an identified set of coded graphic characters, or of coded control functions (or 
+characters), together with an element name to indicate the relationship of the set to the structure of the code. When the element 
+is invoked, the corresponding set shall be represented in those columns of an 8-bit or 7-bit code table that arc specified in 
+6.3.1, 6.4.2, or 6.4.3 for that type of set. 
+
+A character-set code element shall be one of those shown in table 1 below. The table shows the name of the element, the type 
+of coded character set that it comprises, and the column numbers of the 8-bit or 7-bit code tables into which it may be invoked. 
+
+Table 1 - Character-set code elements 
+
+
+
+Name 
+
+
+
+CO 
+CI 
+GO 
+Gl 
+
+G2 
+G3 
+
+
+
+Column numbers 
+
+
+
+OOMdOl 
+
+08 and 09 or ESC Fe 
+
+02 to 07 
+
+02 to 07 or 
+
+10 to 15 
+
+(asforGl) 
+
+(asforGl) 
+
+
+
+Type of coded character set 
+
+
+
+Control fimctions (characters), primary set 
+Control functions, supplementary set 
+Graphic characters - 94-character or 94"-character set 
+Graphic characters - 94-character or 94"-character or 
+
+96-character or 96^-chaiacttT set 
+(asforGl) 
+(asforGl) 
+
+
+
+Note - The identification of specific graphic character sets as the elements GO, Gl, G2, and G3, and the identification of specific control function sets as the 
+elements CO and CI, is referred to in this International Standard by the term "designation". Designation of sets may be achieved by the use of designation 
+functions (7.4) or by other methods (see 10.2). 
+
+
+
+12 
+
+
+
+1812326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+1<3 Invocation of character-set code elements 
+
+The designation of a control character set as a CO or CI code element shall invoke that set. 
+
+The designation of a graphic character set as a GO, Gl, G2. or G3 code element shall invoke that set if the code element 
+ab-eady has a shift status (8.3.3 and 9.3.3); otherwise the use of a corresponding shift function shall invoke that set Shift 
+functions are control functions, and are specified in 8.3, 8.4, 9.3, and 9.4. They are listed in table 2 below. 
+
+Table 2 shows the name, acronym, and coded representation of each shift function. The entry in the "usage code" column 
+signifies whether the function is available for use in an 8-bit code or a 7-bit code as follows: 
+
+- 7 7-bit code only, 
+
+- 8 8-bit code only, 
+
+- 7/8 7-bit and 8-bit codes. 
+
+The entry in the "type" column signifies the allocation of the function to a particular code element as follows: 
+
+
+
+- CO 
+
+- CI 
+
+- Fs 
+
+
+
+a member of the primary set of control functions, 
+
+a member of the supplementary set of control functions, 
+
+a standardised single control function. 
+
+Table 2 - Shift functions 
+
+
+
+Name 
+
+
+Acronym 
+
+
+Usage 
+Code 
+
+
+Coded Representation 
+
+
+Type 
+
+
+Bit Combination 
+
+
+SHIFT-IN 
+SHIFT-OUT 
+
+LOCKING-SHIFT ZERO 
+LOCKING-SHIFT ONE 
+LOCKING-SHIFT TWO 
+LOCKING-SHIFT THRFF 
+SINGLE-SHIFT TWO 
+SINGLE-SHIFT THREE 
+LOCKING-SHIFT ONE RIGHT 
+LOCKING-SHIFT TWO RIGHT 
+LOCKING-SHIFT THREE RIGHT 
+
+
+SI 
+
+SO 
+
+LSO 
+
+LSI 
+
+LS2 
+
+LS3 
+
+SS2 
+
+SS3 
+
+LSIR 
+
+LS2R 
+
+LS3R 
+
+
+7 
+
+7 
+
+8 
+
+8 
+
+7/8 
+
+7/8 
+
+7/8 
+
+7/8 
+
+8 
+
+8 
+
+8 
+
+
+CO 
+CO 
+CO 
+CO 
+
+Fs 
+Fs 
+CI 
+CI 
+Fs 
+Fs 
+Fs 
+
+
+00/15 
+
+00/14 
+
+00/15 
+
+00/14 
+
+ESC 06/14 
+
+ESC 06/15 
+
+ESC 04/14 or 08/14 
+
+ESC 04/15 or 08/15 
+
+ESC 07/14 
+
+ESC 07/13 
+
+ESC 07/12 
+
+
+
+Notes 
+
+1 - Tlie coded representations of LS2, LS3, SS2, SS3, LSIR, LS2R, and LS3R, are allocated in the ISO International Register of Coded Character Sets (see 
+annex B), and are repeated here for convenience. 
+
+2 - If a 7-bit single-byte representation of SS2 and SS3 is required, it should be bit combination 01/09 and 01/13. respectively in the primary set of control 
+functions (see annex B of ISO/IEC 10538). >~ i y } 
+
+When any shift function from table 2 is required for use in an 8-bit or 7-bit code it shall be included in, or as, the appropriate 
+element of that code, in accordance with the "type" entry above. 
+
+7.4 Coded code-identification functions 
+
+The following types of coded code-identification functions are specified in this International Standard: 
+
+- designation of sets of control characters (14.2), 
+
+- designation of sets of graphic characters (14.3), 
+
+- identify revision number of character sets (14.5), 
+
+- announcement of code structure and facihties (15.2), 
+
+- code switching (15.4). 
+
+
+
+13 
+
+
+
+18 12326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+An associated control function is also specified: 
+
+- data delimiter (15.3). 
+
+These functions may be included as code elements in a 8-bit or 7-bit code when required. Alternative methods of providing 
+equivalent facilities may be specified in standards for information interchange (see 10.2). 
+
+7.5 Unique coding of graphic characters 
+
+The same character may be present in more than one of the sets of graphic characters that have been designated as the GO, Gl, 
+G2, and G3 code elements of an 8-bit or 7-bit code. Such a character shall be regarded as the same character as a character in 
+another of those code elements if both characters have the same name within the specifications, or entries of the ISO 
+International Register of Coded Character Sets, that respectively define the two sets. 
+
+If the same character has been allocated to more than one of those sets, then that character may be represented by the coded 
+representation taken from any of the code elements GO, Gl, G2, or G3 in which the character has been allocated. 
+
+Where a particular application of this International Standard requires that every character in information interchange should 
+have a unique coded representation, the specification of the version of the code (10. 1) shall state that restriction. 
+
+When the restriction for unique coding applies, any character shall be represented by the coded representation taken from the 
+lowest numbered code element (in the sequence GO, Gl, G2, G3) in which the character has been allocated. In this case a 
+coded representation for such a character within one of the other, higher numbered code elements shall not be used, even if the 
+higher numbered code element is already invoked rad the lowest numbered code element in which the character is allocated is 
+not currently invoked. 
+
+8 Structure of 8-bit codes 
+
+8.1 Code table layout for 8-bit codes 
+
+An 8-bit code shall have a structure which is based on an 8-bit code table arranged in separate areas as follows (see figure 5): 
+
+- columns 00 and 01 shall be the CL area, 
+
+- columns 02 to 07 shall be the GL area, 
+
+- columns 08 and 09 shall be the CR area, 
+
+- columns 10 to 15 shall be the GR area. 
+
+The bit combinations in these areas shall be used to represent characters as follows: 
+
+- CL, a primary set of control characters; 
+
+- GL, either the characters SPACE (6.2.3) and DELETE (6.2.1) and a set of 94 or 94«» graphic characters, or a set of 96 or 
+96" graphic characters; 
+
+- CR, either a supplementary set of control functions, or unused; 
+
+- GR, either a set of 94 or 94" graphic characters (leaving positions 10/00 and 15/15 unused), or a set of 96 or 96" graphic 
+characters, or unused. 
+
+Note - In figure 5, positions 02/00 and 07/15, or positions 10/00 and 15/15, may be used to represent any graphic characters when a 96-character or 
+96"-character set is invoked in the GL or GR area respectively. 
+
+
+
+14 
+
+
+
+1812326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+
+
+00 
+
+
+01 
+
+
+02 
+
+
+03 
+
+
+04 
+
+
+05 
+
+
+06 
+
+
+07 
+
+
+08 
+
+
+09 
+
+
+10 
+
+
+11 
+
+
+12 
+
+
+13 
+
+
+14 
+
+
+15 
+
+
+00 
+
+
+
+
+
+
+SP 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+■ 
+
+
+
+
+
+
+
+
+
+
+01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+GL 
+are a 
+
+
+
+
+
+
+1 
+
+
+
+
+GR 
+
+are a 
+
+
+
+
+
+
+04 
+
+
+_^CL_ 
+
+
+
+
+
+
+
+
+CR 
+
+
+
+
+
+
+
+
+05 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+06 
+
+
+a 
+
+
+
+
+
+
+
+
+a 
+
+
+
+
+
+
+
+
+07 
+
+
+r 
+
+
+
+
+
+
+
+
+r 
+
+
+
+
+
+
+
+
+08 
+
+
+e 
+
+
+
+
+
+
+
+
+e 
+
+
+
+
+
+
+
+
+09 
+
+
+a 
+
+
+
+
+
+
+
+
+a 
+
+
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16 
+
+
+
+
+
+
+
+
+_ 
+
+
+
+
+
+
+
+
+IH 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+■ 
+
+
+
+Figure 5 - Areas of 8-bit code table 
+8.2 Elements and structure of the code 
+
+An 8-bit code shall include a CO and a GO code element, and may also include some or all of the code elements CI Gl G2 
+and G3 (7.2). If more than two of GO to G3 are included, it shall include appropriate shift functions (7.3) to enable the graphic 
+characters in those sets to be invoked. 
+
+An 8-bit code may include one or more single additional control functions (6.5), or code-identification fiuictions (7.4). 
+
+If more than four sets of graphic characters, or more than two sets of control functions, are required in a specific 8-bit code 
+designation functions may be included within that code to permit other character sets to be designated as code elements GO to 
+G3, CO, or CI (14.1). 
+
+The structure of the code is illustrated in figure 6. 
+
+83 Invocation of graphic character sets by means of shift functions 
+
+8 J.l LOCKING-SHIFT ZERO, .. ONE, „ TWO, and .. THREE 
+
+Each of the four locking-shift ftmctions LSO, LSI, LS2, and LS3 (7.3) shall invoke in the GL area the specific graphic 
+character set that has been identified as the respective code element GO, Gl, G2, or G3. The graphic character set that is 
+invoked shall be the set that was last designated as the respective element GO, Gl, G2, or G3 of the code. When such a set has 
+been mvoked the characters in that set shall be represented by the corresponding bit combinations (or sequences of n bit 
+combinations for a multiple-byte set) in the GL area of the code table. 
+
+When a locking-shift fimction LSO, LSI, LS2, or LS3 invokes a 94-character or 94n-character set, that set shall be invoked 
+into positions 02/01 to 07/14, SPACE shall be invoked into position 02/00, and DELETE shall be invoked into position 07/15 
+When a locking-shift fimction LSI, LS2, or LS3 invokes a 96-character or 96"-character set, that set shall be invoked into 
+positions 02/00 to 07/15. The characters SPACE and DELETE cannot be represented while such a set is in an invoked state 
+
+
+
+15 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022: 1994 
+
+
+
+8.3.2 LOCKING SHIFT ONE RIGHT, .. TWO RIGHT , and .. THREE RIGHT 
+
+Each of the three locking-shift functions LSIR, LS2R, and LS3R (7.3) shall invoke in the GR area the specific graphic 
+character set that has been identified as the respective code element Gl, G2, or G3. The graphic character set that is invoked 
+shall be the set that was last designated as the respective element Gl , G2, or G3 of the code. When such a set has been invoked 
+the characters in that set shall be represented by the corresponding bit combinations (or sequences of n bit combinations for a 
+multiple-byte set) in the GR area of the code table. 
+
+When a locking-shift function LSIR, LS2R, or LS3R invokes a 94-character or a 94°-charactcr set, that set shall be invoked 
+into positions 10/01 to 15/14, and positions 10/00 and 15/15 shall not be used. When a locking-shift function LSIR, LS2R, or 
+LS3R invokes a 96-charactcr or a 96°-character set, that set shall be invoked into positions 10/00 to 15/15. 
+
+8.3.3 Shift status 
+
+The shift status is defined as an attribute of a code element GO to G3 that is in an invoked state, and is identified by the name 
+of the code table area into which the element is invoked i.e. GL or GR. In an S^bit code only one of GO to G3 can have a GL 
+shift status, and only one of Gl to G3 can have a GR shift status, at each specific point within a CC-data-etement. 
+
+Characters from any code element GO to G3 that does not have a shift status cannot be represented within a CC-data-element 
+(except by the method of 8.4) until that code element has been invoked; i.e. at any given point within a CC-data-element not 
+more than two of the code elements GO to G3 can be in an invoked state, one in the GL area and one in the GR area. 
+
+Note - The same code element Gl, G2, or G3 may be invoked in GL and GR simultaneously, but this is not recommended. 
+
+At the beginning of information interchange either locking-shift functions shall be used to establish the initial GL and GR shift 
+status, or the shift status at that point may be undefined (see 10,1). 
+
+
+
+16 
+
+
+
+IS 12326: 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Repertoire of control 
+function sets^or CO 
+
+
+
+
+Single^dxiitional control 
+functions represented by 
+escape sequences of 
+typeFs or3Ft 
+
+
+
+CID 
+
+
+
+8-bit code in use 
+
+
+
+CL 
+
+
+
+□r7:= 
+
+
+
+GL 
+
+
+
+LSO 
+
+
+
+LSI 
+
+
+
+GO 
+
+
+
+
+
+
+CR 
+
+
+
+'urzn 
+
+
+
+GR 
+
+r — 1 
+
+
+
+
+-v 
+
+
+
+s'si 
+
+-A- 
+
+
+
+LSIR L$2 
+
+
+
+Gl 
+
+
+
+^J^ 
+
+
+
+-o 
+
+
+
+CI 
+
+
+
+Repertoire of control function 
+sets for CI 
+
+
+
+<— J)esignation and invocation of 
+control functions (14.2) 
+
+
+
+^Alternative representation for 
+ESC Fe 
+
+
+
+SS3 
+
+
+
+LS2R LS3R 
+
+
+
+>i. 
+
+
+
+G2 
+
+
+
+< 
+LS3 <- 
+
+
+
+>^ 
+
+
+
+G3 
+
+
+
+Invocation of one 
+graphic cliaracter 
+
+Invocation of graphic 
+sets 
+
+
+
+Designation of 
+^ graphic sets (14.3) 
+
+
+
+
+Repertoire of multiple-byte 
+graphic sets 
+
+
+
+Repertoire of graphic 
+sets 
+
+
+
+Figure 6 - Structure of 8-bit codes 
+
+
+
+17 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+8.3.4 Interactions oflocidng-shift functions 
+
+When one of the code elements GO to G3 has GL or GR shift status, the occurrence of the corresponding locking-shift function 
+shall have no effect. The occurrence of a locking-shift function shall have no effect on the meaning of the following bit 
+combinations: 
+
+- those representing control characters in columns 00 and 01, or columns 08 and 09; 
+
+- those included in any escape sequence; 
+
+- those representing the character invoked by an SS2 or SS3 control function (8.4). 
+
+An identified graphic character set that has been designated as a code element GO to G3 may be invoked repeatedly until a 
+different identified set is designated as that code element. 
+
+8.4 Invocation of single graphic characters by means of shift functions 
+
+SINGLE-SHIFT TWO and SINGLE-SHIFT THREE 
+
+If either of the single-shift functions SS2 or SS3 are included in a code (10.1), then either the GL area or the GR area shall be 
+identified as the single- shift area. This identification shall be stated in the specification of the version of the code (10.1). 
+
+Each of the single-shift functions SS2 and SS3 shall invoke a single character from the specific character set that has been 
+identified as the respective code element G2 or G3. The graphic character set from which the single character is invoked shall 
+be the set that was last designated as the respective element G2, or G3 of the code. 
+
+When such a shift function occurs, the immediately following bit combination (or sequence of n bit combinations for a 
+multiple-byte set) in the CC-data-element shall represent the corresponding character from the set that is designated as the 
+code element G2 or G3 respectively. The shift status that was in effect immediately before the occurrence of the single-shift 
+function shall continue in effect immediately after the bit combination (or sequence) that represents die invoked single graphic 
+character. 
+
+When a single-shift function SS2 or SS3 invokes a character from a 94'Character or a 94"-character set the immediately, 
+following one or n bit combinations respectively shall be in the range from 02/01 to 07/14 if GL is the single-shift area, and 
+shall be in the range from 1(V01 to 15/14 if GR is the single-shift area. When a single-shift function SS2 or SS3 invokes a 
+character from a 96-character or a 96°-character set the immediately following one or n bit combinations respectively shall be 
+in the range from 02/00 to 07/15 if GL is the single-shift area, and shall be in the range from 10/00 to 15/15 if GR is the 
+single-shift area. 
+
+8.5 Invocation of sets of control functions 
+
+8.5.1 Invocation of the CO code element 
+
+The designation of a primary set of control fiinctions as the CO code element of the code shall also invoke that set in the CL 
+area of the code table. When CO is invoked, each control function (character) in that set shall be represented by the 
+corresponding bit combination from columns 00 and 01 of the code table, i.e. positions 00/00 to 01/15. 
+
+If CO has not been invoked the assumption is made that the control character ESCAPE is available and is represented by bit 
+combination 01/11. 
+
+The control characters LSO and LS 1 shall be included in the CO code element of any specific 8-bit code that makes use of these 
+shift functions (see 8.3). 
+
+Note - A primary set that includes LSO and LSI is specified in ISO/IEC 6429. 
+
+8.5.2 Invocation of the CI code element 
+
+The designation of a supplementary set of control functions as the CI code element of an 8-bit code shall also invoke that set. 
+When a CI code element is invoked, either: 
+
+- it shall be invoked in the CR area of the code table, or 
+
+- it shall be invoked into escape sequences of type ESC Fe (see 13.2.1), and bit combinations in the CR area shall not be 
+used. 
+
+Only one of these two alternative forms of invocation shall be used in any version (see lO.l) of an 8-bit code that includes the 
+CI code element. The form of invocation used shall be identified in the specification of the version. The other form of 
+invocation shall not be used in that code. 
+
+18 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+The control functions SS2 and SS3 shall be included in the CI code element of any specific code that makes use of these shift 
+functions (see 8.4). 
+
+Note - A supplementary set that includes SS2 and SS3 is specified in ISO/IEC 6429. A supplementary set that includes only SS2 and SS3, and no other 
+control functions, has been registered in the ISO Imemational Register of Coded Character Sets (see annex B). 
+
+9 Structure of 7-bit codes 
+
+9.1 Code table layout for 7-bit codes 
+
+A 7-bit code shall have a structure which is based on a 7-bit code table arranged in separate areas as follows (see figure 7): 
+
+- columns 00 and 01 shall be the CL area, 
+
+- columns 02 to 07 shall be the GL area. 
+
+The bit combinations in these areas shall be used to represent characters as follows: 
+
+- CL, a primary set of control characters; 
+
+- GL, either the characters SPACE (6.2.3) and DELETE (6.2.1) and a set of 94 or 94" graphic characters, or a set of 96 or 
+96" graphic characters; 
+
+Note - In figure 7 positions 02/00 and 07/15 may be used to represent any graphic characters when a %-character or 96''-character set is invoked in the GL 
+
+area. 
+
+
+
+
+
+00 
+
+
+01 
+
+
+02 
+
+
+03 
+
+
+04 
+
+
+05 
+
+
+06 
+
+
+07 
+
+
+00 
+
+
+
+
+
+
+SP 
+
+
+
+
+
+
+
+
+
+
+
+
+01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+■ 
+
+GL 
+
+area 
+
+■ 
+
+_ 
+
+
+
+
+
+
+04 
+
+
+CL 
+
+
+
+
+
+
+
+
+05 
+
+
+
+
+
+
+
+
+
+
+06 
+
+
+a 
+
+
+
+
+
+
+
+
+07 
+
+
+r 
+
+
+
+
+
+
+
+
+08 
+
+
+e 
+
+
+i 
+
+
+
+
+
+
+
+
+09 
+
+
+
+
+
+
+
+
+10 
+
+
+
+
+
+
+
+
+
+
+11 
+12 
+
+
+— 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DEL 
+
+
+
+Figure 7 - Areas of 7-bit code table 
+
+9.2 Elements and structure of the code 
+
+A 7-bit code shall include a CO and a GO code element, and may also include some or all of the code elements CI, Gl, G2, and 
+G3 (7.2). If more than one of GO to G3 are included, it shall include appropriate shift functions (7.3) to enable the graphic 
+characters in those sets to be invoked. 
+
+A 7-bit code may include one or more single additional control functions (6.5), or code-identification functions (7.4). 
+
+
+
+19 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+If more than four sets of graphic characters, or more than two sets of control functions, are required in a specific 7-bit code, 
+designation functions may be used within that code to change the specific character sets that are designated as code elements 
+GO to G3, CO, or CI (14.1). 
+
+The structure of the code is illustrated in figure 8. 
+
+
+
+20 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Repertoire of control 
+function sets for CO 
+
+
+
+Single additional control 
+functions represented by 
+escape sequences of 
+type Fs or 3Ft 
+
+
+
+/ 
+
+
+
+Repertoire of control function 
+sets for Cl 
+
+
+
+CZD 
+
+
+
+i □ 
+
+
+
+CI 
+
+
+
+C1D 
+
+
+
+Designation and invocation 
+of control functions (14.2) 
+
+
+
+Specific control functions within 
+the currently designated set for 
+Cl are represented by ESC Fe 
+sequences 
+
+
+
+7-bit code in use 
+
+
+
+
+Invocation of one 
+graphic character 
+
+Invocation of graphic 
+sets 
+
+
+
+Designation of 
+^ graphic sets (14.3) 
+
+
+
+Repertoire of multiple-byte 
+graphic sets 
+
+
+
+Repertoire of graphic 
+
+sets 
+
+
+
+Figure 8 - Structure of 7-bit codes 
+
+
+
+21 
+
+
+
+IS 12326 : 2005 
+ISO/IEC2022: 1994 
+
+
+
+9.3 Invocation of graphic character sets by means of shift functions 
+
+9.3. 1 SHIFT-IN, SHIFT-OUT, LOCKING-SHIFT TWO, and LOCKING-SfflFT THREE 
+
+Each of the four locking-shift functions SI, SO, LS2, and LS3 (7.3) shall invoke in the GL area the specific graphic character 
+set that has been identified as the respective code element GO, Gl, G2, or G3. The graphic character set that is invoked shall be 
+the set that was last designated as the respective element GO, Gl , G2, or G3 of the code. When such a set has been invoked the 
+characters in that set shall be represented by the corresponding bit combinations (or sequences of n bit combinations for a 
+multiple-byte set) in the GL area of the code table. 
+
+When a locking-shift function SI, SO, LS2, or LS3 invokes a 94-character or 94"-character set, that set shall be invoked into 
+positions 02/01 to 07/14, SPACE shall be invoked into position 02/00, and DELETE shall be invoked into position 07/15. 
+When a locking-shift function SO, LS2, or LS3 invokes a 96-character or 96"-character set, that set shall be invoked into 
+positions 02/00 to 07/15. The characters SPACE and DELETE cannot be represented while such a set is in an invoked state. 
+
+9.3.2 LOCKING SHIFT ONE RIGHT, TWO RIGHT, and THREE RIGHT 
+
+The three shift functions LSIR, LS2R, and LS3R, which are specified in 8.3.2 for use in 8-bit codes, may also be used in a 
+7-bit code. They shall only be used in a 7-bit code when their meaning must be preserved during transformation of 
+CC-data-elements from an 8-bit to a 7-bit code (see 11.1). When used in a 7-bit code LSIR, LS2R, and LS3R shall have the 
+same effects as SO, LS2, and LS3 respectively. 
+
+9.3.3 Shift status 
+
+The shift status is defined as an attribute of a code element GO to G3 that is in an invoked state. In a 7-bit code only one of GO 
+to G3 can have a shift status at each specific point within a CC-data-element. 
+
+Characters from any code element GO to G3 that does not have a shift status cannot be represented within a CC-data-element 
+(except by the method of 9.4) until that code element has been invoked; i.e. at any given point within a CC-data-element not 
+more than one of the code elements GO to G3 can be in an invoked state. 
+
+At the beginning of information interchange either locking-shift functions shall be used to establish the initial shift status, or 
+the shift status at that point may be undefined (see lO.l), 
+
+9.3.4 Interactions of locking-shift functions 
+
+When one of the code elements GO to G3 has shift status, the occurrence of the corresponding locking-shift function shall have 
+no effect. The occurrence of a locking-shift function shall have no effect on the meaning of the following bit combinations: 
+
+- those representing control characters in columns 00 and 01; 
+
+- those included in any escape sequence; 
+
+- those representing the character invoked by an SS2 or SS3 control function (9.4). 
+
+An identified graphic character set that has been designated as a code element GO to G3 may be invoked repeatedly until a 
+different identified set is designated as that code element. 
+
+9.4 Invocation of single graphic characters by means of shift functions 
+
+SINGLE-SHIFT TWO and SINGLE-SHIFT THREE 
+
+Each of the single-shift functions SS2 and SS3 shall invoke a single character from the specific character set that has been 
+identified as the respective code element G2 or G3. The graphic character set from which the single character is invoked shall 
+be the set that was last designated as the respective element G2, or G3 of the code. 
+
+When such a shift function occurs, the immediately following bit combination (or sequence of n bit combinations for a 
+multiple-byte set) in the CC-data-element shall represent the corresponding character from the set that is designated as the 
+code element G2 or G3 respectively. The shift status that was in effect immediately before the occurrence of the single-shift 
+function shall continue in effect immediately after the bit combination (or sequence) that represents the invoked single graphic 
+
+character. 
+
+When a single-shift function SS2 or SS3 invokes a character from a 94-character or a 94"-character set the immediately 
+following one or n bit combinations respectively shall be in the range from 02/01 to 07/14. When a single-shift function SS2 
+or SS3 invokes a character from a 96-character or a 96"-character set the immediately following one or n bit combinations 
+respectively shall be in the range from 02/00 to 07/15. 
+
+
+
+22 
+
+
+
+1812326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+9.5 Invocation of sets of control functions 
+
+9.5.1 Invocation of the CO code element 
+
+The designation of a primary set of control functions as the CO code element of the code shall also invoke that set in the CL 
+area of the code table. When CO is invoked, each control function (character) in that set shall be represented by the 
+corresponding bit combination from columns 00 and 01 of the code table, i.e. positions 00/00 to 01/15. 
+
+If CO has not been invoked the assumption is made that the control character ESCAPE is available and is represented by bit 
+combihation 01/11. 
+
+The control characters SI and SO shall be included in the CO code element of any specific 7-bit code that makes use of these 
+shift fiinctions (see 9.3). 
+
+Note - A primary set that includes SI and SO is specified in ISO/IEC 6429. 
+
+9.5.2 Invocation of the CI code element 
+
+The designation of a supplementary set of control functions as the CI code element of a 7-bit code shall also invoke that set 
+into escape sequences of type ESC Fe (see 13.2.1). 
+
+The control functions SS2 and SS3 shall be included in either the CI or the CO code element of any specific code that makes 
+use of these shift functions (see 9.4). 
+
+Note - A supplementary set that ittcludes SS2 and SS3 is specified in ISOAEC 6429. A supplementary set that includes only SS2 and SS3, and no other 
+control functions, has been legistered in the ISO International Register of Coded Character Sets (see annex B). 
+
+10 Versions and levek of implementation 
+
+10.1 Versions 
+
+A version of the code structure specified in this International Standard is an identified selection of the facilities specified in 
+clause 8 or in clause 9. 
+
+A version will generally be the subject of a specification document which states the selection of facilities comprised within that 
+version. Such a document provides a basis for agreement between the interchanging parties. 
+
+A version may optionally include identification of the initial conditions applicable at the beginning of information interchange, 
+in particular: 
+
+- the identification of all graphic character sets and control function sets that are to be used, 
+
+- the initial designation status of such sets, and 
+
+- the shift status. 
+
+Thus a version may be, but need not be, a fully specified code. 
+
+If a version is not a fully specified code the means by which identifications are communicated between the interchange parties 
+prior to information interchange shall be defined in the specification of the version. 
+
+Note - A version of this International Standard differs in principle from a version of a standard such as ISO/IBC 4873 since that standard ivquiies a version 
+to be a fully specified code. 
+
+16.2 Identification of code structure facilities and character sets 
+
+CC-data-elements conforming to a version of this International Standard are intended to form all or part of a composite unit of 
+coded information that is interchanged between a sender and a recipient. The identification of the version of this International 
+Standard that has been adopted by the originator, and any other identifications needed to define a fully specified code, shall 
+also be available to the recipient. The route by which such identification is communicated to the recipient is outside the scope 
+of this International Standard. . 
+
+However some standards for interchange of coded information may permit, or require, that the coded representation of the 
+identifications applicable to the CC-data-elements forms part of the interchanged information. Such coded representations may 
+form all or part of a distinct identification data element, or may be embedded in a CC-data-clemcnt, in accordance with the 
+relevant standard. The code-identification functions for announcement (15.2) and designation (14) specified in this 
+International Standard may be used for this purpose. Object identifiers in accordance with ISO 8824 (ASN.l) may also be used 
+for this purpose - see annex A. 
+
+23 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+103 Levels of implementation 
+
+The following selections of code structure facilities are defined here because of their wide applicability. Their adoption is 
+intended to improve the extent of compatibility achievable in information interchange. 
+
+103.1 8-bit codes 
+
+Level 1 - Elementary 8-bit Code 
+
+A Level 1 version of the 8-bit code structure of this International Standard shall comprise: 
+
+- a CO code element, 
+
+- a GO code element having GL shift status, 
+
+- the character SPACE and DELETE, 
+
+- optionally a CI code element in the CR area, 
+
+- a Gl code element having GR shift status. 
+
+The designation functions for CO, CI, GO, and Gl may optionally be used at the beginning of information interchange only. 
+The use of the locking-shift functions LSO and LSIR is not required. 
+
+Note - ISO/IEC 4873 (Level 1) is in accordance with Level 1. 
+
+Level 2 - Multiple Pre-Designated Character Sets, without Locking Shifts 
+
+A Level 2 version of the 8-bit code structure of this International Standard shall comprise: 
+
+- the facilities of Level 1 , 
+
+- either or both of the G2 and G3 code elements, 
+
+- one or both of the shift functions SS2 and SS3, with GL identified as the single-shift area. 
+
+The designation functions for G2 and G3 may optionally be used at the beginning of information interchange only. 
+
+Note - ISO/IEC 4873 (Level 2) is in accordance with Level 2. 
+
+Level 3 - Multiple Pre-Designated Character Sets, with Locking Shifts 
+
+A Level 3 version of the 8-bit code structure of this International Standard shall comprise: 
+
+- the facilities of Level 2, 
+
+- one or more of die shift functions LSO, LSI, LS2, LS3, LSIR, LS2R, LS3R. 
+
+Note - ISO/IEC 4873 (Level 3) is in accordance with Level 3. 
+
+Level 4 - Redesignation of Graphic Character Sets Within a Code 
+
+A Level 4 version of the 8-bit code structure of this International Standard shall comprise: 
+
+- the facilities of Level 3, 
+
+- the use of the graphic set designation functions (14.3) at any point during information interchange. 
+
+The announcement function (15.2) may optionally be used at the beginning of information interchange only. 
+
+Note - In a Level 4 version, the coded representation of one or more characters may change when one of the code elements CO, Gl or G2 is redesignated, if 
+the requirement for unique coding applies (see 7.5). 
+
+10.3.2 Quiilification of levels for 8-bit codes 
+
+Levels 2A, 3A, and 4A - GR as singlc'shift area 
+
+In a code that is according to Levels 2, "3, or 4, except that GR is identified as the single-shift area, then the corresponding 
+levels are identified as Level 2A, 3A, and 4A. 
+
+Levels 10, 2C, 3C and 4C - CI invoked as ESC Fe 
+
+In a code that is according to Levels 1, 2, 3, or 4, except that the functions in the CI code element are represented by ESC Fe 
+sequences, instead of by bit combinations in columns 08 and 09, the corresponding implementation levels are identified as 
+Level 1C,2C,3C, and 4C. 
+
+If both of the above qualifications apply, the levels are identified as Level 2AC, 3AC, and 4AC. 
+
+
+
+24 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+10.3.3 7-bit codes 
+
+Level 1 - Elementary 7-bit Code 
+
+A Level 1 version of the 7-bit code structure of this International Standard shall comprise: 
+
+- a CO code element, 
+
+- a GO code element having shift status, 
+
+- the characters SPACE and DELETE. 
+
+The designation functions for CO and GO may optionally be used at the beginning of information interchange only. The use of 
+the locking-shift function SI is not required. 
+
+Note - ISO/IEC 646 is in accordance with Level 1. 
+
+Level 2 - Multiple Pre-Designatcd Character Sets With Two Locking Shifts 
+
+A Level 2 version of the 7-bit code structure of this International Standard shall comprise: 
+
+- the facilities of Level 1 , 
+
+- optionally a CI code element, 
+
+- the Gl code element, 
+
+- the shift functions SO and SI, 
+
+- one or both of the G2, and G3 code elements, 
+
+- one or both of the shift functions SS2 and SS3. 
+
+The designation functions for CI, Gl, G2, and G3 may optionally be used at the beginning of information interchange only. 
+
+Level 3 - Multiple Pre-Designated Character Sets With Four Locking Shifts 
+
+A Level 3 version of the 7-bit code structure of this International Standard shall comprise: 
+
+- the facilities of Level 2, 
+
+- one or both of the locking shift fimctions LS2 and LS3. 
+
+Level 4 - Redesignation of Graphic Character Sets Within a Code 
+
+A Level 4 version of the 7-bit code structure of this International Standard shall comprise: 
+
+- the facilities of Level 3, 
+
+- the use of the gr^hic set designation functions (14.3) at any point during information interchange. 
+
+The announcement fimction (15.2) may optionally be used at the beginning of information interchange only. 
+
+Notes 
+
+I - In a Level 4 version, the coded icptesentation of one or more characters may change when one of the code elements GO, Gl or G2 is redesignated, if the 
+requirement for uniqite coding applies (see 7.5). 
+
+2— The previous edition of this International Standard defined three "levels of compatibility" with ISO/IEC 646 which could apply to a code with code 
+extension facilities. They have been replaced here by the above set of four levels which have a wider applicability. 
+
+II Transformation between 8-bit and 7-bit codes 
+11.1 Transformation from 8-bit to 7-bit codes 
+
+Information conforming to any 8-bit code that is in accordsuice with this International Standard may be transformed to an 
+equivalent 7-bit coded form when required. The transformation rules depend on which facilities of code structure are included 
+in the 8-bit code. Identification of those facilities may be achieved by the use of the annoimcement function defined in 15.2. 
+
+Within a CC-data-element any 8-bit combination in which bg is ZERO has an equivalent 7-bit form comprising b; to bj of the 
+8-bit form. Where the bit combination has a bg of ONE (i.e. it is ft-om columns 08 to 15 of the code table) further 
+transformation is required. This ^plies to the following coded representations: 
+
+- control functions fi-om CI if represented in columns 08 and 09, 
+
+- graphic characters from whichever of Gl , G2, or G3 has GR shift stams, 
+
+- single graphic characters invoked by SS2 or SS3 when they are represented by bit combinations fix)m columns 10 to 15 
+(i.e. GR has been identified as the single-shift area). 
+
+25 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+In the equivalent 7-bit form the corresponding coded representations are as follows: 
+
+- a control function from the CI set is represented by an ESC Fe sequence, 
+
+- a graphic character from the set that has GR shift status is represented by by to bj of the corresponding 8-bit combination 
+(or sequence of n 8-bit combinations for a multiple-byte set), and appropriate extra shift functions are present, 
+
+- a single graphic character invoked by SS2 or SS3 is represented by b^ to bj of the corresponding bit combinations from 
+columns 02 to 07. 
+
+1 1.2 Transformation from 7-bit to 8-bit codes 
+
+Information conforming to any 7-bit code that is in accordance with this International Standard may be transformed to an 
+equivalent 8-bit coded form when required. The transformation rules depend on which facilities of code structure are included 
+in the 7-bit code. Identification of those facilities may be achieved by the use of the announcement function defined in 15.2. 
+
+Within a CC -data-element any 7-bit combination has an equivalent 8-bit form comprising hj to bj of the 7-bit form, together 
+with a bg of ZERO. 
+
+Further transformations may be made to obtain a fuller exploitation of the capability of an 8-bit code, in particular to make use 
+of the following coded representations: 
+
+- control functions from the CI set represented in columns 08 and 09, 
+
+- graphic characters from a Gl, G2, or G3 set having GR shift status, and the elimination of some shift functions that are 
+consequently redundant. 
+
+- single graphic characters invoked by SS2 or SS3 when GR has been identified as the single-shift area for the code. 
+
+This International Standard does not specify the rules for such transformations. The announcement function ACS 5 may be 
+used to indicate that all shift functions have been preserved. 
+
+If a 7-bit CC-data-element originated from a previous transformation of an equivalent 8-bit form, the locking-shift functions 
+LSIR, LS2R, and LS3R may be present. Further transformation of the coded representations of characters from Gl, G2, and 
+G3 sets may be required in consequence of the differences of specification of these functions in 7-bit and 8-bit codes. The 
+announcement function ACS 10 and ACS 1 1 may be used to indicate which specification is intended to apply. 
+
+
+
+26 
+
+
+
+1812326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Section 3 - Code identification and escape sequences 
+
+12 Code-'identification functions 
+
+12.1 Purposes of code-identification functions 
+
+Code-identification functions to provide the following facilities are specified in this International Standard: 
+
+- designation of sets of graphic characters, 
+
+- designation of sets of control functions or characters, 
+
+- identification of the revision number of registered character sets, 
+
+- announcement of the byte-size (8-bit or 7-bit) of the code and the facilities of code structure used, 
+
+- designation of, and return from, other coding systems that are not in accordance with this International Standard, 
+
+An associated control function is also specified: 
+
+- data delimiter to indicates return to an outer level of data structure. 
+These functions are specified in clauses 14 and 15 below. 
+
+12.2 Relationship to escape sequences 
+
+Escape sequences provide the coded representations of code-identification functions. Their structure is specified in the 
+following clause. 
+
+Note - Escape sequences also provide ihe coded representations of supplementary sets of control functions (6.4.3) and of single additional control functions 
+
+(6.5). 
+
+13 Structure and use of escape sequences 
+
+13.1 Structure of escape sequences 
+
+An escape sequence shall consist of two or more bytes. In an 8-bit code a byte shall be an 8-bit combination. In a 7-bit code a 
+byte shall be a 7-bit combination. 
+
+The first byte of an escape sequence shall be the bit combination representing the ESCAPE character and the last shall be 
+known as the Final Byte. An esci^>e sequence may also contain one or more bytes known as Intermediate bytes. 
+
+The function represented by an escape sequence shall be determined by its Intermediate byte($), if any, and by its Final Byte. 
+
+Intermediate bytes shall be any of the 16 positions of column 02 of the code table; they are denoted by the symbol I. 
+
+Final bytes shall be any of the 79 positions of columns 03 to 07 of fee code table excluding position 07/15; they arc denoted by 
+the symbol F. 
+
+Note - Although, in this International Standard, escape sequences are specified in terms of bytes or positions in the code table, the meaning of an escape 
+sequence is determined only by its bit combinations and it is unaffected by any meaning assignedto those bit combinations taken individually. 
+
+Bit combinations in columns OOand 01 and the bit combination 07/15 shall not be used as either Intermediate or Final bytes to 
+construct an escape sequence. In an 8-bit code bit combinations in columns 08 to 15 also shall not be so used. 
+
+Note - As these prohibited bytes may appear in an escape sequence in error, it may be necessary within an application to provide methods of identifyiag 
+such a situation and of recovering &om it, but this is not coveted by this International Standard. 
+
+13.2 Types of escape sequences 
+13.2.1 Indication of type 
+
+The first, or only, byte that follows the ESCAPE character in an escape sequence shall indicate the type of the escape 
+sequence. The number of the code table column from which the bit combination of this byte is taken shall identify the type in 
+accordance with the table 3.a. Each type of escape sequence shall be used for the purpose shown in table 3.a or in table 3.b. 
+
+
+
+27 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Table 3.a - Types of 
+
+
+escape sequence and corresponding indicators 
+
+
+Column No. 
+
+
+Type 
+
+
+Function represented 
+
+
+00 and 01 
+
+
+- 
+
+
+(shall not be used) 
+
+
+02 
+
+
+nF 
+
+
+(see table 3.b) 
+
+
+03 
+
+
+Fp 
+
+
+Private control function (see 6.5.3) 
+
+
+04 and 05 
+
+
+Fe 
+
+
+Control function in the CI set (see 6.4.3) 
+
+
+06 and 07 
+
+
+Fs 
+
+
+Standardized single control function (see 6.5.1) 
+
+
+except 97/15 
+
+
+
+
+
+
+
+In escape sequences of types Fp, Fe, and Fs the second byte (the type-indicator) shall also be the Final Byte. The notations Fp, 
+Fe, and Fs respectively are also used when referring to the coded representations of control fiinctions. 
+
+The type "nF" in the above table indicates escape sequences of the series of types whose names are of the form nF where n 
+may take any value from to 15, as listed in table 3.b. Such escape sequences shall be of the form ESC I .. F where the 
+notation ".." indicates that more than one Intermediate Byte may appear in the sequence. 
+
+13.2.2 Escape Sequences of types nF 
+
+Escape sequences of the types nF shall be used to represent various code^identification functions, except for type 3F which 
+shall represent control functions. Table 3.b shows, for each type, the type name, the first I byte (the type-indicator byte), and 
+the corresponding function represented by it. It also shows whether the sequence may include further I bytes, and their purpose 
+if present. (The key to the notation for the entries in the column headed "2nd 1 byte" follows the table.) 
+
+Within each of the above types the escape sequences are of two subtypes, depending on the range of the F byte. The table 
+below shows for each subtype the range of F and the assigned use. 
+
+Use of F 
+
+(shall not be used) 
+
+Reserved for Private use (16 positions, see 13.3.3) 
+
+Standardised purposes (63 positions, see 13.3.1 and 13.3.2) 
+
+
+
+Range of F 
+
+
+Notation 
+
+
+columns 00 to 02 
+
+
+- 
+
+
+column 03 
+
+
+Fp 
+
+
+columns 04 to 07 
+
+
+Ft 
+
+
+except 07/15 
+
+
+
+
+
+28 
+
+
+
+1812326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Table 3.b - Escape sequences of type nF and corresponding functions 
+
+
+
+Type 
+
+
+
+First 
+I Byte 
+
+
+
+2nd I Byte* 
+
+
+
+Rule 
+
+
+
+Use 
+
+
+
+Function represented 
+
+
+
+OF 
+IF 
+
+2F 
+3F 
+4F 
+
+5F 
+6F 
+
+7F 
+
+8F 
+
+9F 
+
+lOF 
+
+IIF 
+
+12F 
+
+13F 
+
+14F 
+
+15F 
+
+
+
+02/00 
+02/01 
+02/02 
+02/03 
+02/04 
+
+02/05 
+02/06 
+02/07 
+02/08 
+02/09 
+02/10 
+02/11 
+02/12 
+02/13 
+02/14 
+02/15 
+
+
+
+N 
+O 
+O 
+
+o 
+
+Y 
+
+O 
+
+N 
+N 
+O 
+O 
+
+o 
+o 
+
+N 
+
+o 
+o 
+o 
+
+
+
+R 
+R 
+R 
+S 
+
+■r,s 
+
+
+
+R,S 
+R,S 
+R,S 
+R,S 
+
+R,S 
+R,S 
+R,S 
+
+
+
+ANNOUNCE CODE STRUCTURE(15.2) 
+CO-DESIGNATE (14.2) 
+Cl-DESIGNATE (14.2) 
+Single control functions (6.5.2 and 6.5.3) 
+Designation of multiple-byte graphic character sets 
+(see 13.2.3 and 14.3) 
+
+DESIGNATE OTHER CODING SYSTEM (15.4) 
+IDENTIFY REVISED REGISTRATION (14.5) 
+(reserved for future standardisation) 
+GO-DESIGNATE 94-SET (14.3) 
+Gl -DESIGNATE 94-SET (14.3) 
+G2-DESIGNATE 94-SET (14.3) 
+G3-DESIGNATE 94-SET (14,3) 
+(reserved for future standardisation) 
+GI-DESIGNATE96-SET (14.3) 
+G2-DESIGNATE 96-SET (14.3) 
+G3-DESIGNATE 96-SET (14.3) 
+
+
+
+* Key to "2nd I byte" entries in table 3.b 
+
+When the Final Byte of an escape sequence is Fp the 2nd (and further) I Bytes are not specified by this International Standard. 
+When the Final Byte is Ft the entries in the "Rule" and "Use" columns of table 3.b indicate the following provisions relating to 
+the 2nd (and any further) I bytes. Any bit combinations not specified explicitly below shall be reserved for future 
+standardisation. 
+
+
+
+Rule: 
+
+N 
+O 
+Y 
+
+Use: 
+
+
+
+2nd I byte shall not be present (reserved for future standardisation); 
+
+2nd (and further) I bytes may be present for use as indicated under "Use"; 
+
+2nd I byte shall be present for use as indicated under "Use". 
+
+
+
+Registration procedures may make use of bit combinations 02/01 to 02/03 to supplement the number of bit 
+combinations available for F (see 14.1). Further I bytes in the range 02/00 to 02/15 may also be soused. 
+
+Standardised meanings are assigned to one or more bit combinations, as shown below. 
+
+
+
+Escape Sequence Type 
+
+4F 
+4F 
+5F 
+
+
+
+Bit combination 
+
+(for 2nd I byte see 13.2.3) 
+02/00 of 3rd I byte (14.4) 
+02/15 of2nd I byte (15.4) 
+02/00 of 2nd I byte (14.4) 
+
+
+
+8FtollFandl3Ftol5F 
+13.23 Escape Sequences of type 4F 
+
+Table 4 below shows the assignment of the 2nd I byte in escape sequences of type 4F, and the corresponding fiinction 
+represented by the sequence. 
+
+
+
+29 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Table 4 - Escape sequences of type 4F and corresponding functions 
+
+
+
+2nd I 
+Byte 
+
+
+Function represented (see 143) 
+
+
+02/08 
+02/09 
+02/10 
+02/11 
+02/13 
+02/14 
+02/15 
+
+
+GO-DESIGNATE MULTIB\'iE 94-SET 
+Gl -DESIGNATE MULTIBYTE 94-SET 
+G2-DESIGNATE MULTIBYTE 94-SET 
+G3-DESIGNATE MULTIBYTE 94-SET 
+Gl -DESIGNATE MULTIBYTE 96-SET 
+G2-DESIGNATE MULTIBYTE 96-SET 
+G3-DESIGNATE MULI'IBYTE 96-SET 
+
+
+
+Note - The 2nd 1 byte 02/08 is omitted when F is 04/00, 04/01 or 04/02 (see 14.3.2, table 6, Note). 
+
+In escape sequences of type 4F a third I byte may be present, with assignments of bit combinations as for "Use" R,S (see key 
+to table 3 above). 
+
+13.2.4 Summary 
+
+Table 5 summarises the assignments of the Intermediate bytes in the escape sequences. The shaded ^irea denotes the 
+combinations reserved for future standardization. 
+
+13.2.5 Notation of escape sequences 
+
+In this International Standard the notation used for escape sequences is as follows, where x/y is as defined in 5.1, and F 
+indicates Fp or Ft as defined in 1 3.2.2: 
+
+
+
+Type 
+
+Fe, Fp, and Fs 
+nF 
+
+
+
+Notation 
+
+ESC x/y 
+ESC x/y F 
+
+
+
+30 
+
+
+
+1812326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Table 5 - Intermediate bytes of escape sequences 
+
+
+
+
+13.3 Speciflc meanings of escape sequences 
+
+13.3.1 Registrationof Final Bytes 
+
+In an escape sequence of type Fs or of type nF, except for type OF and except when the SELECT-DRCS indicator is present 
+(see 1 4.4), the Final Byte Ft shall be reserved for registration. 
+
+
+
+31 
+
+
+
+18 12326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Where the Final Byte of a type of escape sequence is reserved for registration its meaning, and that of any I bytes to 
+supplement it, will be specified using the procedures established by ISO 2375. That International Standard shall be followed in 
+preparing and maintaining a register of escape sequences and their meanings. Allocation of such Final and, where necessary, 
+Intermediate bytes is carried out by the Registration Authority in accordance with ISO 2375 (see annex B), except as stated in 
+13.3.2. 
+
+13.3.2 Final Bytes specified in this International Standard 
+
+Standardised meanings are assigned to one or more bit combinations for the Final Byte F, as shown below. 
+
+Escape sequence type Bit combination 
+
+OF (see 15.2) 
+
+IF, 2F, 4F 07/14 (14.1) 
+
+5F 04/00 (15.4) 
+
+8Fto llFand 13Fto 15F 07/14 (14.1) 
+
+133,3 Private use 
+
+In any escape sequence a Final Byte Fp (i.e. from column 03) shall be reserved for private use. Escape sequences for private 
+use are not subject to registration under ISO 2375. They are defined by agreement between the interchange parties. 
+
+Where the SELECT-DRCS indicator is present in an escape sequence of type nF the Final Byte Ft shall also be for private use 
+(14.4). 
+
+Note - The implementors of any private escape sequence described as such in this International Standard are alerted to the fact that other implementors may 
+give different meanings to the same escape sequence or may use different escape sequences to mean the same thing. FurthennoTe, such meanings may 
+subsequently be assigned to registered escape sequences. Interchange parties are warned that the use of such private escape sequences may reduce their 
+capability to interchange data subsequently. 
+
+14 Designation of sets of graphic characters and control functions 
+14.1 Designation functions 
+
+Designation functions are provided to enable identified sets of coded graphic characters, and identified sets of coded control 
+functions, to be designated as elements of a specific code. Any such set that is designated shall be either: 
+
+- registered in the ISO International Register of Coded Character Sets (see annex B), or 
+
+- a set for private use, or 
+
+- a dynamically redefinable (graphic) character set (DRCS, see 14.4). 
+
+A function to identify a revision of a registered character set is also provided. 
+A registered set, or a set for private use, shall be of one of the following types: 
+
+- a primary set of control functions for CO (see 6.4.2) 
+
+- a supplementary set of control functions for CI (see 6.4.3) 
+
+- a 94-character set of graphic characters (see 6.3. 1 ) 
+
+- a 96-character set of graphic characters (see 6,3.1) 
+
+- a 94"-charact6r set of graphic characters (see 6.3. 1 ) 
+
+- a 96"-character set of graphic characters (see 6.3.1) 
+
+Separate designation functions are provided for designating a primary set for CO and a supplementary set for CI. For graphic 
+character sets separate designation functions are provided according to the type (i.e. size) of set to be designated and the code 
+element GO to G3 into which the set is to be designated. 
+
+Designation functions shall be represented by escape sequences as defined in clause J 3. For each registered set a Final Byte F 
+(=Ft), and where necessary one or more associated Intermediate byte(s) I to supplement the F byte, is allocated in the register 
+to identify the set. This (sequence of) byte(s) shall be the F byte (and associated I bytes, if any) in the escape sequence 
+representing the function that designates that set. 
+
+Note - Such allocations of F (and associated I, If any) are taken from a separate series of Final bytes for each of the six types of sets indicated above. In 
+consequence a designation function can only designate a set of suitable type as a particular code element. 
+
+
+
+32 
+
+
+
+1812326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+The Final Byte 07/14 shall be reserved to identify the empty set of each type, i.e. the set that does not contain any character. If 
+an empty set is designated the bit combinations corresponding to the code table positions of the set shall not be used, i.e. the 
+(non-existent) characters shall not be invoked. 
+
+A Final Byte F (= Fp) shall identify a set for private use (see 13.3.3). 
+
+14.2 Designation of sets of control functions (CZD, CID) 
+
+14.2.1 Purpose 
+
+Two functions are specified here for designating sets of control functions as elements of a code. They designate respectively 
+the CO and CI code^lements. They may be used for the following purposes: 
+
+a) at the beginning of information interchange, to identify the specific control function sets to be used as CO and CI code 
+elements; 
+
+b) if more than two sets of control functions are required for use in a specific code; 
+
+c) if a succession of different control fiinction sets is required to be designated as a particular code element CO or C 1 . 
+In cases b) and c) the appropriate designation functions are regarded as part of the code structure. 
+
+Note - ISO/IEC 6429 specifies an alternative method for providing additional control functions within a code. That method is |nefened when there is a need 
+to avoid superseding one set of control functions by another. 
+
+The function IDENTIFY-REVISED-REGISTRATION (IRR), specified in 14.5, may be used in conjunction with these 
+designation functions. 
+
+14.2.2 Designation of CO 
+
+Name: CO-DESIGNATE Acronym: CZD Coded representation: ESC 02/01 F 
+
+C7D shall designate an identified primary set of control functions as the CO element of a specific code. The set shall be 
+identified by the Final Byte F. The designation of a set as a CO code element shall immediately invoke that set and shall 
+supersede the previously designated set. 
+
+14.2.3 Designation of CI 
+
+Name: Cl-DESIGNATE Acronym: CID Coded representation: ESC 02/02 F 
+
+CID shall designate an identified supplementary set of control functions as the CI element of a specific code. The set shall be 
+identified by the Final Byte F. The designation of a set as a CI code element shall immediately invoke that set and shall 
+supersede the previously designated set. 
+
+14.3 Designation of sets of graphic characters (GnDm^nd GnDMm) 
+
+14.3.1 Purpose 
+
+Fourteen functions are specified here for designating sets of graphic characters. The specifications of "these functions are 
+similar to each other, differing only as regards the type of set designated and the code element to which the designation 
+applies. They are listed in table 6. 
+
+These functions may be used for the following purposes: 
+
+a) at the beginning of information interchange, to identify the specific graphic character sets to be used as GO, Gl, G2, and 
+G3 code elements; 
+
+b) when more than four sets of graphic characters are required for use in a specific code; 
+
+c) if a succession of different graphic character sets is required to be designated as a particular code element GO, Gl, G2, or 
+G3. 
+
+In cases b) and c) the appropriate designation functions are regarded as part of the code structure. 
+
+The SELECT-DRCS indicator, specified in 14.4, may be used with these designation functions. The function IDENTIFY- 
+REVISED-REGISTRATION (IRR), specified in 14.5, may be used in conjunction with these functions. 
+
+
+
+33 
+
+
+
+18 12326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+14.3.2 Specifications 
+
+Each row of table 6 summarises the features of one of the functions specified here for designating a graphic character set as an 
+element of a specific code. The entries in a row indicate the following features of the function: 
+
+- an acronym for the function, of the form GnDm or GnDMm (n-0 to 3, m=4 or 6), 
+
+- the name of the function, 
+
+-- the type (i.e. size) of graphic character set designated by the function, 
+
+- the code element to which the function designates the set, 
+
+- the I byte (or the 1st and 2nd I bytes) of the escape sequence representing the function. 
+
+Each named function shall designate an identified graphic character set of the indicated type as the indicated code element. Its 
+coded representation shall be an escape sequence of type nF where the I byte(s) are as indicated. The set shall not be a DRCS. 
+It shall be identified by the F byte (and any associated I bytes), see 14.1. 
+
+A 94-character graphic set or a 94"-character graphic set may be designated as a GO, Gl, G2, or G3 code element of a specific 
+code. Any type of graphic character set may be designated as a Gl , G2, or G3 code element. When so designated the identified 
+set shall supersede the set that was previously designated as that particular code element. 
+
+A graphic character set may be designated as one of GO to G3 regardless of the shift status of that code element. When an 
+identified set is designated as a particular code element dien: 
+
+- if that code element already has a shift status, the set shall be immediately invoked; 
+
+- if that code element does not have a shift status, then the set shall be invoked at the next occasion when the corresponding 
+locking-shift function is used (8.3 and 9.3). 
+
+Table 6 - Designation fiuictions for graphic diameter sets 
+
+
+
+Acronym 
+
+
+
+GZD4 
+G1D4 
+G2D4 
+G3D4 
+
+G1D6 
+G2D6 
+G3D6 
+
+GZDM4 
+G1DM4 
+G2DM4 
+G3DM4 
+
+G1DM6 
+G2DM6 
+G3DM6 
+
+
+
+Name 
+
+
+
+GO-DESIGNATE 94-SET 
+Gl -DESIGNATE 94-SET 
+G2-DESIGNATE 94-SET 
+G3-DESIGNATE 94-SET 
+
+Gl -DESIGNATE 96-SET 
+G2-DESIGNATE 96-SET 
+G3-DESIGNATE 96-SET 
+
+GO-DESIGNATE MULTIBYTE 94-SET 
+Gl -DESIGNATE MULTIBYTE 94-SET 
+G2-DESIGNATE MULTIBYTE 94-SET 
+G2-bESIGNATE MULTIBYTE 94-SET 
+
+Gl-DESIGNATE MULTIBYTE 96-SET 
+G2-DESIGNATE MULTIBYTE 96-SET 
+G3-DESIGNATE MULTIBYTE 96-SET 
+
+
+
+Type 
+of set 
+
+
+
+94 
+94 
+94 
+94 
+
+96 
+96 
+96 
+
+94i> 
+94" 
+94" 
+94« 
+
+96» 
+96" 
+96" 
+
+
+
+Code 
+element 
+
+
+
+GO 
+Gl 
+G2 
+G3 
+
+Gl 
+G2 
+G3 
+
+GO 
+Gl 
+G2 
+G3 
+
+Gl 
+G2 
+G3 
+
+
+
+I byte(s) 
+
+
+
+02/08 
+02/09 
+02/10 
+02/11 
+
+02/13 
+02/14 
+02/15 
+
+02/04 02/08 
+02/04 02/09 
+02/04 02/10 
+02/04 02/11 
+
+02/04 02/13 
+02/04 02/14 
+02/04 02/15 
+
+
+
+* For the function GZDM4 there is an exception to the above specification. This fiinction shall be represented by ESC 02/04 F 
+with no 2nd I byte when F is 04/00, 04/01 , or 04/02. 
+
+Note - The reason for this exception is that the sets registered with Final bytes 04/00, 04/01, and 04/02 were registered at a time when the current version of 
+this Standard (1st Edition) allowed tnultiple-byte sets to be designated only as GO seu and specified ESC 02m F to represent that designation. 
+
+
+
+34 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+14.3.3 Size indication for multiple-byte sets 
+
+For the functions that designate 94"-character and 96"-character graphic character sets (i.e. the fiinctions GnDMm), the range 
+of the Final Byte F in the escape sequence that represents the function shall indicate the number of bytes in the coded 
+representation of the characters in the set identified by F, as follows: 
+
+Range of F Number of Bytes 
+
+columns 00 to 02 (shall not be used) 
+
+column 03 2 or more (Note: the set is for private use) 
+
+columns 04 and 05 2 
+
+column 06 3 
+
+column 07 4 or more 
+
+14.4 Dynamically redefinable character sets (DRCS) 
+
+14.4.1 Purpose 
+
+A Dynamically Redefinable Character Set (DRCS) is a set of graphic characters the visual appearance of which is specified 
+and transmitted prior to the time of use. Such specification may be made explicitly or by a refKence. These characters may be 
+alphabetic, syllabic, ideographic, special symbols or picture element symbols. Once specified, a DRCS is regarded as a 
+member of the repertoire of graphic character sets that can be designated by appropriate escape sequences as a GO, Gl, G2 or 
+G3 code element. 
+
+The designation functions specified in 14.3 are used with an added indicator, SELECT-DRCS, to designate a DRCS. 
+
+14.4.2 Specification 
+
+When the SELECT-DRCS indicator is included in a designation fiinction of 14.3, the fiinction shall designate an identified 
+DRCS of the indicated type as the indicated code element. The coded representation of the function shall be the appropriate 
+escape sequence firom table 6. The SELECT-DRCS indicator shall be represented by the bit combination 02/00 in the 2nd I 
+byte for functions GnDm, and in the 3rd I byte for functions GnDMm. 
+
+The DRCS shall be identified by the F byte (and any associated I bytes). Each F byte, and the associated I byte(s) if any, shall 
+be allocated by the user. 
+
+Notes 
+
+1 - It is reconunended that the user should allocate the F bytes sequentially, starting with 04/00. Up to 63 94-characier or 94''-chaF»;ter sets, and up to 63 
+96-character or 96"-€haracter sets may be identified within the available range of F bytes, without the use of any associated I bytes. 
+
+2 - The indicator SELECT-DRCS is needed to distinguish between a designated set that is a DRCS and a set that is registered, since it implies exact 
+description of the shape or font of the characters in the set 
+
+14.5 Identification of revisions of registered character sets (IRR) 
+
+14.5.1 Purpose 
+
+A function is provided to identify the revision number of a character set that is registered in the ISO Internationa} Register of 
+Coded Character Sets (see annex B). 
+
+A revision of a set in the register is only permitted to add a character or characters to a set, and shall be submitted to the 
+Registration Authority as required by ISO 2375, pointing out that the submission is a revision of a registered set. If the 
+proposed revision is not upwards compatible with the existing version it is not accepted, and it shall be registered as an entirely 
+new set with a new Final Byte allocation. 
+
+14.5.2 Specification 
+
+Name: IDENTIFY REVISED REGISTRATION Acronym: IRR Coded representation: ESC 02/06 F 
+
+IRR when used shall immediately precede one of the designation functions specified in 14.2 and 14.3. IRR shall identify the 
+revision number of the character set that is designated by the immediately following designation function. 
+
+In the coded representation of IRR the F byte shall identify the revision by its number in the range 1 to 63, where successive 
+numbers starting firom I shall be represented by successive bit combinations in colunms 04 to 07 starting from 04/00. 
+
+Note - The combined use of IRR and a designation function from 14.3 facilitates the recognition, by older devices or systems, of newer versions of character 
+
+sets. 
+
+35 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+15 Code announcement and switching 
+
+15.1 Summary of functions provided 
+
+Various code-identification aiid control fiinctions are needed by some applications, in addition to the designation functions 
+specified in clause 14. The functions provided here are: 
+
+- an announcer to identify the byte-size (8-bit or 7-bit) of the code and the code structure facilities used (15.2); 
+
+- a designation to switch to, and return from, other coding systems that are not in accordance with this International Standard 
+
+(15.4); 
+
+- a data delimiter to indicate die end of a unit of data that is in accordance with this International Standard (15.3); 
+These functions shall be represented by escape sequences in accordance with clause 13. 
+
+15.2 Announcement of code structure facilities (ACS) 
+
+15.2.1 Purpose 
+
+A code-identification function is provided to announce the code structure facilities from this International Standard that are 
+used in the data which follows. It is intended to be embedded within the character coded information at the beginning of an 
+information interchange. The announcer function may be used one or more times in sequence to identify the various facilities 
+
+used. 
+
+15.2.2 Specification 
+
+Name: ANNOUNCE CODE STRUCTURE Acronym: ACS Coded representation: ESC 02/00 F 
+
+ACS shall identify a specific code strucmre facility, or a related group of facilities, which are to be used in following data. The 
+facilities that may be identified by ACS are specified here. 
+
+Note - Identification of additional facilities that might be required in future will need a revision of this International Standard. There is no provision for 
+registration of such facilities. 
+
+In the coded representation of ACS the Final Byte F shall identify one such facility by its number in the range 1 to 62, where 
+successive numbers starting fi-om 1 shall be represented by successive bit combinations in columns 04 to 07 starting from 
+04/01. 
+
+A list of the facilities that may be identified by ACS is given in table 7. Each entry in the list gives a description of the facility 
+(or group), and a pictorial representation where appropriate, together with the corresponding facility number and Final Byte. 
+
+Restrictions on ACS 
+
+When ACS is used twice or more in a sequence to identify the code structure facilities applicable to a following unit of data, 
+the following facilities, identified by facility number, shall not be used in the combinations shown: 
+
+- 1,3, and 4 shall not be used in combination with 16, and 18 to 23; 
+
+- 12, 13, and 14 shall not be used together with any other facility. 
+
+Note - In a 7-bit code, facilities number 2 and number 4 provide an identical code structure. Both facilities are provided for those interchange situations in 
+which it is required to differentiate in the 7-bit code between data originating from two types of 8-bit code, viz. those having the Gl code element in 
+columns 02-07 and those having Gl in columns 10-15. 
+
+
+
+36 
+
+
+
+18 12326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Facility Final 
+Number Byte 
+
+
+
+1 
+
+
+
+04/01 
+
+
+
+04/02 
+
+
+
+04/03 
+
+
+
+04/04 
+
+
+
+04/05 
+
+
+
+04/06 
+
+
+
+Table 7 
+Code Structure Facilities for the Announcer Function (ACS) 
+
+
+
+Facilities utilised 
+
+
+
+The GO code element shall be used. Designation 
+of GO also invokes it into the GL area. No 
+locking-shift functions shall be used. 
+
+In 8-bit code: the GR area is not used. (*) 
+
+The GO and Gl code elements shall be used. In 7- 
+bit code: SI invokes GO, and SO invokes Gl. 
+
+In 8-bit code: LSO invokes GO to GL, and LSI 
+invokes Gl to GL. The GR area is not used. 
+
+
+
+The GO and Gl code elements shall be used in an 
+8-bit code only. Designation of GO and Gl invoke 
+them to GL and GR respectively. No locking-shift 
+functions shall be used. (*) 
+
+
+
+The GO and Gl code elements shall be used, 
+bit code: SI invokes GO and SO invokes Gl. 
+
+
+
+In7- 
+
+
+
+In 8-bit code: designation of GO and Gl also 
+invoke them into GL and GR respectively; no 
+locking-shift functions shall be used. {*) 
+
+Full preservation of shift functions is maintained 
+when transforming data between 7-bit and 8-bit 
+codes. 
+
+
+
+The CI code element shall be used. In 7-bit and 8- 
+bit codes each CI control function shall be 
+represented by the ESC Fe sequence. 
+
+
+
+7-bit code 
+
+
+
+8-bit code 
+
+
+
+
+2 
+
+
+
+SI 
+
+
+
+GO 
+
+
+
+LSO 
+LSi 
+
+
+
+E^ 
+
+
+
+Gl 
+
+
+
+Not used 
+
+r-r-— T 
+
+
+
+
+s: 
+
+
+T 
+
+
+^ 
+
+
+T 
+
+
+
+P \A^ 
+
+
+
+GO 
+
+
+
+Gl 
+
+
+
+Seen 
+
+
+
+ESC Fe 
+
+
+
+r^ESCFe 
+
+
+
+(*) see Restrictions on ACS (in 15.2.2) 
+
+
+
+37 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022: 1994 
+
+
+
+Table 7 (continued) 
+
+
+
+Facility Final 
+Number Byte 
+
+
+
+Facilities utilised 
+
+
+
+7 04/07 The CI code element shall be used. Each CI 
+
+control function shall be represented by - 
+
+in 7-bit code: the ESC Fe sequence; 
+
+in 8-bit code: single bit combination from the CR 
+area (columns 08 and 09). 
+
+8 04/08 All graphic character sets comprise 94 characters. 
+
+
+
+9 04/09 The Gl, G2, and 03 graphic character sets may 
+comprise 94 and/or 96 characters (in 7-bit and 8- 
+bit codes). 
+
+
+
+10 04/10 A 7-bit code is used although the environment 
+may be able to support an 8-bit code. 
+
+
+
+1 1 04/1 1 An 8-bit code is used. 
+
+1 2 04/1 2 Level 1 of ISO/IEC 4873 shall be used. 
+
+13 04/1 3 Level 2 of ISO/IEC 4873 shall be used. 
+
+14 04/14 Level 3 of ISO/IEC 4873 shall be used. 
+
+16 05/00 In addition to any other code element GO to G3 
+which may be used, GO shall be used. It will be 
+invoked by - 
+
+in 7-bit code: SI; 
+
+in 8-bit code: LSO. (*) 
+
+18 05/02 In addition to any other code element GO to G3 
+which may be used, Gl shall be used. It will be 
+invoked by - 
+
+in 7-bit code: SO; 
+
+in 8-bit code: LSI. (*) 
+
+Note - Facility numbers 15 and 17 are reserved for future standardization. 
+
+
+
+7-bit code 
+
+
+
+ESCFe 
+
+
+
+et 
+
+
+
+G0-G3 < 
+
+
+
+
+
+
+
+I 
+
+I 
+I 
+
+Gl^GS 
+
+\ 
+I 
+I 
+
+
+
+94 
+
+
+
+and. 
+
+
+
+or 
+
+
+
+96 
+
+
+
+Not used 
+
+11 ,' 
+
+
+
+See 10.3.1 
+
+
+
+See 10.3.1 
+
+
+
+See 10.3.1 
+
+
+
+O, 
+
+
+
+SI 
+
+
+
+8-bit code 
+
+
+
+>G0-G3 
+
+
+
+GltG3 
+
+
+
+Not used 
+
+Tr-\ 
+
+IJ. ! 
+
+
+
+
+
+
+
+■w 
+
+
+
+
+
+
+
+
+LSO 
+
+
+^ ■ 
+
+
+GO 
+
+
+
+
+
+SO 
+
+
+
+13 
+
+
+
+^r 
+
+
+
+
+
+
+
+38 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Facility Final 
+Number Byte 
+
+19 05/03 
+
+
+
+20 05/04 
+
+
+
+21 05/05 
+
+
+
+22 05/06 
+
+
+
+23 05/07 
+
+
+
+26 05/10 
+
+
+
+27 05/11 
+
+
+
+Table 7 (continued) 
+Facilities utilised 
+
+In addition to any other code element GO to G3 
+which may be used, Gl shall be used. It will be 
+invoiced by - 
+
+
+
+in 7-bit code: SO; 
+in 8-bit code: LSIR. 
+
+
+
+(*) 
+
+
+
+In addition to any other code element GO to G3 
+which may be used, G2 shall be used. It will be 
+invoked by - 
+
+in 7-bit code: LS2; 
+
+in 8-bit code: LS2. (*) 
+
+In addition to any other code element GO to G3 
+which may be used, G2 shall be used. It will be 
+invoked by - 
+
+
+
+in 7-bit code: LS2; 
+in 8-bit code: LS2R. 
+
+
+
+{*) 
+
+
+
+In addition to any other code element GO to G3 
+which may be used, G3 shall be used. It will be 
+invoked by - 
+
+in 7-bit code: LS3; 
+
+in 8-bit code: LS3. (*) 
+
+In addition to any other code element GO to G3 
+which may be used, G3 shall be used. It will be 
+invoked by - 
+
+in 7-bit code: LS3; 
+
+in 8-bit code: LS3R. (*) 
+
+In addition to any other code element GO to G3 
+which may be used, G2 shall be used. SS2 shall 
+invoke a single character of this set in both 7-bit 
+and 8-bit codes. (*) 
+
+
+
+In addition to any other code element GO to G3 
+which may be used, G3 shall be used. SS3 shall 
+invoke a single character of this set in both 7-bit 
+and 8-bit codes. (*) 
+
+
+
+7-bit code 
+
+
+
+8-bit code 
+
+
+
+
+
+
+
+
+
+Gl 
+
+
+
+
+
+
+
+
+
+
+I TT 
+
+
+
+
+
+
+1 
+
+
+^ 
+
+
+
+
+SO "^ 
+
+
+"^ XSIR 
+
+
+
+
+
+
+
+
+
+
+G2 
+
+
+
+
+
+
+
+
+
+
+J T 
+
+
+'^ 
+
+
+
+
+ar 1 
+
+
+
+
+
+
+LS2 ^ 
+
+
+f" 
+
+
+LS2 
+
+
+
+
+
+
+
+
+
+
+02 
+
+
+
+
+
+
+
+
+
+
+1 T 
+
+
+\ 
+
+
+
+
+1 1 
+
+
+^^ 
+
+
+
+
+LS2 ^ 
+
+
+-^ LS2R 
+
+
+
+
+
+
+
+
+S3 
+
+
+03 
+
+
+[ 
+
+
+
+
+
+
+
+
+I, "^ 
+
+
+UN 
+
+
+
+
+
+
+L 
+
+
+LS3 
+
+
+
+
+
+
+
+
+
+
+03 
+
+
+
+
+
+
+
+
+
+
+1 ^ 
+
+
+
+
+
+
+1 
+
+
+Ir 
+
+
+
+
+
+
+L! 
+
+
+53 
+
+
+-^ 
+
+
+LS3R 
+
+
+
+
+
+
+
+
+
+
+^ 
+
+
+
+
+
+
+
+
+II 
+
+
+F 
+
+
+
+
+
+
+Y 1 
+
+
+
+
+
+
+
+
+
+
+SM\« 
+
+
+-^2 
+
+
+
+
+
+
+
+
+
+
+
+
+^ 
+
+
+
+
+. 
+
+
+
+
+
+
+K 
+
+
+
+
+; ^ 
+
+
+f 1 
+
+
+
+
+
+
+
+
+S! 
+
+
+■^ 
+
+
+SS3 
+
+
+
+
+
+
+
+39 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+28 05/12 In an 8-bit code any single character invoked by 
+SS2 or SS3 shall be represented by bit combi- 
+nation(s) from columns 10 to 15. 
+
+
+
+
+Note - Facility numbers 24, 25 and 29 to 62 are reserved for future standardization. 
+
+15.3 Data Delimiter for this Coding Method (CMD) 
+
+15.3.1 Purpose 
+
+A control function is provided to act as an instruction to return from the coding method defrned in this International Standard 
+to the coding method used in an outer level of the data structure, such as an application data syntax. It may be used to indicate 
+the end of a CC-data-element where this cannot be determined in some other way. 
+
+Notes 
+
+1 - An application which usesia data syntax in which not all the data elements are CC-data-elements in accordance with this International Standard, or uses 
+another general level of control, generally indicates the beginning of a string of character-coded informadon by means of the conventions of that data 
+syntax. The end of the string may be indicated by a dehmiter. 
+
+2 - The escape sequence representing this control function may be suitable for use by coding systems other than that of this International Standard. 
+
+15.3.2 Specification 
+
+Name: CODING METHOD DELIMITER Acronym: CMD Coded representation: ESC 06/04 
+
+The control function CMD shall delimit (i.e. terminate) a string of data coded according to this International Standard, and 
+shall switch to a general level of control. 
+
+The use of this function is not mandatory if the outer level of data structure defines means of delimiting the string, for instance 
+by specifying the length of the string. 
+
+15.4 Designation of Other Coding Systems (DOCS) 
+
+15,4.1 Purpose 
+
+A code-identiiication function is provided to designate and invoke an identified coding system different from that of this 
+International Standard, not necessarily a character code. It provides a means for switching between coding systems according 
+to this Standard and other coding systems when it is not performed at an outer level (e.g. 15.3). 
+
+Each such other coding system is registered in the ISO International Register of Coded Character Sets (see annex B), together 
+with a Final Byte (and where necessary one or more associated Intermediate bytes) to identify it. 
+
+This function is also recommended for use by such other coding systems for returning to the coding system of this 
+International Standard, by the use of a reserved Final Byte which identifies it. 
+
+Note - Other standards specify alternative methods for achieving an effect similar to that of DOCS, e.g. those based on the upper layers defined in ISO 7498 
+- Open Systems Interconnection, Basic Reference Model. 
+
+
+
+15.4.2 Specification 
+
+Name: DESIGNATE OTHER CODING SYSTEM 
+
+
+
+Acronym: DOCS 
+
+Coded representation: ESC 02/05 F or ESC 02/05 I F 
+
+
+
+DOCS shall designate and invoke an identified coding system. In the coded representation of DOCS the F byte (and any 
+associated I bytes) shall identify the coding system. 
+
+DOCS with Final Byte 04/00, without I byte, shall designate the coding system of this International Standard. It is intended for 
+use by other coding systems for returning to this coding system. It shall restore the state of the coding system to that at the time 
+of invocation of the other coding system, that is the state established by annoimcer fimctions, and the designation and 
+invocation state of graphic character and control character sets. Whether or not other states, e.g. the active position, are 
+restored is outside the scope of this International Standard. 
+
+
+
+40 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+DOCS with I byte 02/15 shall mean that the other coding system does not use DOCS (F = 04/00), coded as specified here, to 
+return (it may have an alternate means to return or none at all). It shall also mean that after such a return (if any) the previous 
+state of this coding system (i.e. announcements, designations, and invocations) is undefined. 
+
+DOCS with any other I byte, or with no I byte, shall mean that the other coding system uses DOCS (F = 04/00) to return. 
+
+
+
+41 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Annex A 
+
+(normative) 
+
+External references to character repertoires and their coding 
+
+
+
+A.l Methods of reference to character repertoires and their coding 
+
+Within programming languages and other methods for defining the syntax of data objects there is commonly a need to declare 
+specified character codes that are in accordance with this International Standard (see 10.2). 
+
+For any fully specified code that is in accordance with this International Standard a precise declaration of that code should 
+identify the following features: 
+
+- the reference number of this International Standard (i.e. ISO/IEC 2022), 
+
+- the code structure and shift functions, identified by the number of bits in a byte and the implementation level, 
+
+- the component character sets and any further single additional control fvmctions, identified by one or more registration 
+numbers, 
+
+- the initial state of designations and shift status. 
+
+A.2 Identification of ASN.l character abstract syntaxes 
+
+One of the methods now in common use for defining the syntax of data objects is Abstract Syntax Notation 1 (ASNvl) 
+specified in ISO 8824. The corresponding coded representations are specified in ISO 8825. When this method is used the 
+forms of the references to character repertoires and coding are as indicated in this clause and in A.3 respectively. 
+
+The set of all character strings that can be formed fi-om the characters of an identified repertoire in accordance with this 
+International Standard is defined to be a "character abstract syntax" in the terminology of ISO 8824. For each such character 
+abstract syntax a corresponding object identifier value is defined to permit references to be made to that syntax when the 
+ASN.l notation is used. 
+
+A.2.1 Object identifiers 
+
+ISO 8824 annex B specifies the form of object identifier values for objects that are specified in an ISO standard. In such an 
+object identifier the features and options of this International Standard (ISO/IEC 2022) shall be identified by means of 
+numbers (arcs) which follow (i.e. are below) the arc "2022" which identifies this International Standard. 
+
+The sequence of such arcs shall be: 
+
+abstract-syntaxes (1) regl reg2 regS ,..[revisions(0) revi rev2 rev3 ....] 
+
+where the set of arcs shown between [ and ] is optional. 
+
+The first arc, which has the value (1), identifies the object as an abstract-syntax. It shall be followed by one or a sequence of 
+further arcs, each of which shall be a register entry number fi-om the ISO International Register of Coded Character Sets, in 
+ascending numerical order. This sequence shall identify all the sets of graphic characters and control functions that form a part 
+of the code, and is notated here as regl reg2 reg3 .... 
+
+The above sequence of arcs may optionally be followed by a further sequence of arcs, the first of which is the arc 
+"revisions(O)"; the other arcs in the sequence shall be the set of revision numbers (if any) that are applicable to the set of 
+register entry numbers identified previously. The arcs for the revision numbers shall appear in the same order as the arcs for 
+the register entry numbers to which they correspond; where no revision number is applicable the corresponding arc shall have 
+the value (0). Any consecutive zeroes at the end of the sequence may be omitted. The sequence is notated here as revl rev2 
+rev3 ... 
+
+
+
+42 
+
+
+
+IS 12326 : 2005 
+iSO/lEC 2022 : 1994 
+
+
+
+For a eode which permits redesignation of character sets within a single CC -data-dement (i.e. a code at Level 4 or 4C) the 
+sequence of arcs shall identify all the sets which may be designated at points within the CC-data-element, as well as the 
+designations that apply initially. 
+
+Note - As an example, the object identifier for the repertoire of ISO 8859-1 is: 
+(iso/iec standard 2022 abstract-syntaxes (1) 6 100) 
+
+A.2.2 Object descriptors 
+
+ISO 8824 also specifies object descriptors corresponding to object identifier values. For the above sequence of arcs the 
+corresponding object descriptor shall be as follows: 
+
+"ISO/IEC 2022 registrations regl[/revll reg2{/rev2], reg3[/rev3] " 
+
+where the text between pairs of brackets [ and ] is optional. 
+
+Note - All spaces shall be single spaces. 
+
+A.3 Identification of ASN. 1 cliaracter transfer syntaxes 
+
+The coding method for character strings that can be formed from the characters in accordance with this International Standard 
+is defined to be a "character transfer syntax" in the terminology of ISO 8825. For each such character transfer syntax a 
+corresponding object identifier value is defined to permit references to be made to that syntax when the ASN.l notation is 
+used. 
+
+A^.l Object identifiers 
+
+In an object identifier in accordance with ISO 8824 annex B, the coded representation of the character sets of a code 
+conforming to this International Standard shall be identified by means of numbers (arcs) which follow (i.e. are below) the arc 
+"2022" which identifies this International Standard. 
+
+The sequence of such arcs shall be: 
+
+transfer-syntaxes (0) code-level gO gl g2 g3 cO cl gleft gright 
+
+The first arc, which has the value (0), identifies the object as a transfer-syntax. It shall be followed by one or a sequence of 
+further arcs as indicated by the notation above. 
+
+The arc code-level shall identify the code structure, by reference to the number of bits in the byte and the implementation 
+level. It shall have one of the following values: 
+
+7bit-levell (1) 8bit-levell (11) 8bit-levellc (21) 
+
+7b!t-level2 (2) 8bit-level2 (12) 8bit-lcvel2c (22) 
+
+7bit-lcveB (3) 8bit-level3 (13) 8bit-levcl3c (23) 
+
+7bit-level4 (4) 8bit-lcvel4 (14) 8bit-level4c (24) 
+
+8bit-lcvel2a (15) 8bit-l6vel2ac (25) 
+
+8bit-level3a (16) 8bit-level3ac (26) 
+
+8bit-level4a (17) 8bit-level4ac (27) 
+
+The arcs gO gl g2 g3 cO and cl shall each be either a register entry number from the ISO International Register of Coded 
+Character Sets or zero (0). Non-zero arcs gO, gl, g2, and g3 shall be the register entry numbers for the sets that are designated 
+respectively as the GO, Gl, G2, and G3 code elements of the code. Non-zero arcs cO and cl shall be the register entry numbers 
+for the sets that are designated respectively as the CO and Cl code elements of the code. A zero arc shall indicate that no 
+character set has been designated as the corresponding code element. For a code at Level 4 or 4C the arcs identify the initial 
+designations only, i.e. the designations that apply at the beginning of each CC-data-element. 
+
+The arc gleft shall identify the code clement GO, Gl, G2, or G3 that initially has GL shift status in an 8-bit code, or that 
+initially has shift status in a 7-bit code. It shall have one of the values: 
+
+g0(0),gl(l),g2(2),org3(3) 
+
+corresponding respectively to those code elements. The default value is (0). 
+
+
+
+43 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022: 1994 
+
+
+
+The arc gright shall identify the code element Gl, G2, or G3 that initially has GR shift status in an 8-bit code. It shall have one 
+of the values: 
+
+gl(l),g2(2),org3(3) 
+
+corresponding respectively to those code elements. The default value is (1). 
+
+In the sequence of arcs the default value of gright, and all consecutive zeroes that precede that value, may be omitted. 
+
+Note - Examples of references for complete codes and their conesponditig object identifiers are shown below: 
+
+- IRV of ISOAEC 646 (includes GO and CO code elements only) 
+
+{iso/iec standard 2022 transfer-syntaxes (0) 7bit-levell (1)60001} 
+
+- ISO 8859-1 (includes GO and Gl code elements only) 
+
+{iso/iec standard 2022 transfer-syntaxes (0) 8bit-levell (11) 6 100) 
+
+A.3.2 Restrictions on code extension facilities 
+
+Within CC-data-elements conforming to a code that is identified as specified in A.3.1: 
+
+- the announcer function (ACS) shall not appear, 
+
+- designation functions and the IRR function shall only appear when the code is at Level 4 or 4C, 
+
+- the functions CMD and DOCS shall not appear. 
+
+A.3.3 Object descriptors 
+
+ISO 8824 also specifies object descriptors corresponding to object identifier values. For the above sequence of arcs the 
+corresponding object descriptor shall be as follows: 
+
+"ISO/IEC 2022 codeAevelGO=reg Gl=reg Gl=reg G^=reg C(i=reg C\=reg GL=ga GR.=gb" 
+
+Note - All spaces shall be single spaces. 
+
+The notation codeAevel indicates that any one of tfie following phrases may occur at that point: 
+
+7-bit/levcl-l 8-bit/level-l 8-bitAevel-lC 
+
+7-bit/level-2 8-bit/level-2 8-bit/level-2C 
+
+7-bit/level-3 8-bit/level-3 8-bit/level-3C 
+
+7-bit/level-4 8-bit/level-4 8-bit/level-4C 
+
+8-bit/level-2A 8-bit/level-2AC 
+
+8-bit/level-3A 8-bit/level-3AC 
+
+8-bit/level-4A 8-bit/level-4AC 
+
+In die phrases of the form xx=reg the notation reg indicates a registration number. Any such phrase may be omitted if no 
+character set is designated as the identified code element. 
+
+In the phrase GL=ga the notation ga indicates Gl, G2, or G3. The default phrase GL=GO shall be omitted. 
+
+In the phrase GR.=gb the notation gb indicates G2 or G3. The phrase shall be omitted for a 7-bit code. For an 8-bit code the 
+default phrase GR=G1 shall be omitted. 
+
+
+
+44 
+
+
+
+18 12326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Annex B 
+
+(informative) 
+
+
+
+The ISO International register of coded character sets 
+to be used with escape sequences 
+
+
+
+B.l The ISO International Register 
+
+The ISO International Register contains character sets which have been registered in accordance with procedures specified in 
+ISO 2375. Its purpose is to identify widely used character sets and associate with each a unique register entry number to 
+identify it, and a unique escape sequence by means of which it can be designated conveniently. 
+
+The publication of this Register promotes compatibility in international information interchange and avoids duplication of 
+effort in developing application-oriented character sets. Registration provides an identification for a character set but implies 
+nothing about its status; it may or may not be part of an international or a national standard, or of an application-oriented 
+standard. However, when such a standard is issued subsequent to the registration of a register number and an escape sequence, 
+it is appropriate for these two forms of identification to be specified in the standard. 
+
+Note - This register also contains registrations of other coding systems and of single control functions. 
+
+B.2 New Registrations 
+
+If a recognised body wishes to register a character set, application should be made as required in ISO 2375. Any character set 
+can be a candidate for registration as long as it satisfies the technical requirements of ISO/IEC 2022 and the formal 
+requirements of ISO 2375. Its characteristics will determine the type of escape sequence that can be allocated to it. 
+
+B.3 The Registration Authority 
+
+The registration procedure and the maintenance of the Register is performed by an International Registration Authority. 
+ECMA has been designated by the Council of the International Organization for Standardization, ISO, as the Registration 
+Authority for ISO 2375. 
+
+ECMA carries out these duties as a free service to the international data processing community. It advises applicants on the 
+requirements to be met by applications, circulating the applications in conformance with the procedures. It allocates the 
+register number and the escape sequence and finally registers each character set with its specific escape sequence. After each 
+registration owners of the Register receive the corresponding additional sheets of the Register. 
+
+*ECMA 
+
+Rue du Rhone 1 14 Phone: +41 22 849.60.00 
+
+CH-I204 GENEVA Fax: +41 22 786.52.31 
+
+Switzerland Internet: helpdesk@ecma.ch 
+
+X.400: C=ch: A=arcom; P=ecma; 0=genevanet; 
+OUl=ecma; S=helpdesk 
+
+
+
+45 
+
+
+
+IS 12326 : 2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Annex C 
+
+(informative) 
+
+Main differences i>etween the 3rd edition (1986) 
+and the present edition of this International Standard 
+
+
+
+C.l The standard has been completely rearranged and rewritten, to make it more convenient to use as a reference 
+document. In particular the specification of 8-bit codes and 7-bit codes is now presented in the following sequence: 
+
+- Characters and character sets, 
+
+- The elements of 8-bit and 7-bit codes, 
+
+- Structure of 8-bit codes, 
+
+- Structure of 7-bit codes. 
+
+C.2 Names and acronyms have been assigned to the code-identification functions, such as designations and announcers. 
+These functions are specified in a separate section of the standard following the specification of 8-bit and 7-bit codes. 
+
+C.3 Escape sequences are now regarded only as the coded representations of code-identification functions, and of some 
+control functions. They are specified accordingly within a single clause, separate from the specification of the functions that 
+they represent. 
+
+C4 A new option has been added to the specification to allow for the unique coding of graphic characters within a code 
+whenever the same character is present in more than one of the code elements GO -to G3 if required by the application (seiS 
+
+7.5). 
+
+C.5 The specification of an 8-bit code may require that, following the single-shift functions SS2 and SS3, the bit 
+combination(s) representing the invoked character shall be taken from columns 10 to 15 and not from columns 02 to 07 (see 
+8.4). 
+
+C.6 A new set of levels of implementation has been specified for 8-bit and 7-bit codes, based on those specified in 
+ISO/IEC 4873 (see 10.3). 
+
+C.7 The new style of conformance clause, adopted for all standards on character coding, has been introduced. 
+
+C.8 Object identifiers conforming to Abstract Syntax Notation One (ASN.l , see ISO 8824) are specified for the character 
+repertoires and codes that may be constructed in accordance with this Standard. The specification appears in a new annex. 
+
+C.9 The wording of the definitions has been aligned with that of ISO/IEC 4873 and ISO/IEC 6429. 
+
+
+
+46 
+
+
+
+1812326:2005 
+ISO/IEC 2022 : 1994 
+
+
+
+Annex D 
+
+(infonnative) 
+
+Bibliography 
+
+
+
+ISO/IEC 646:1991, information technology - ISO 7-bit coded character set for information interchange. 
+
+ISO/IEC 4873:1991, Information technology - ISO 8-bit code for information interchange - Structure and rules for 
+implementation. 
+
+ISO 7498:1984, Information processing systems - Open Systems Interconnection - Basic Reference Model. 
+
+ISO 8859-1 : 1987, Information processing - 8-bit single-byte coded graphic character sets - Part I: Latin alphabet No.I. 
+
+ISO/IEC 10367: 1991, Information technology - Standardized coded graphic character sets for use in 8-bit codes. 
+
+ISO/IEC 10646-1:1993, Information technology - Universal Multiple-Octet Coded Character Set (UCS) Part 1: Architecture 
+and Basic Multilingual Plane. 
+
+
+
+47 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods and 
+attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any form 
+without the prior permission in writing of BIS. This does not preclude the free use, in the course of implementing 
+the standard, of necessary details, such as symbols and sizes, type or grade designations. Enquiries relating to 
+copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed 
+periodically; a standard along with amendments is reaffirmed when such review indicates that no changes are 
+needed; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards 
+should ascertain that they are in possession of the latest amendments or edition by referring to the latest issue of 
+'BIS Catalogue' and 'Standards: Monthly Additions'. 
+
+This Indian Standard has been developed from Doc: No. LTD 37 (1978). 
+
+
+
+Amend No. 
+
+
+
+Amendments Issued Since Publication 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 10002 
+Telephones: 2323 0131, 2323 3375, 2323 9402 
+
+Regional Offices: 
+
+Central 
+
+
+
+website : www.bis.org.in 
+
+
+
+Eastern 
+
+
+
+Northern 
+
+
+
+Southern 
+
+
+
+Western 
+
+
+
+Branches 
+
+
+
+: Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110002 
+
+: 1/14 C.I.T. Scheme VII M, V.LP. Road, Kankurgachi 
+KOLKATA 700054 
+
+: SCO 335-336, Sector 34-A, CHANDIGARH 160022 
+
+: C.I.T. Campus, IV Cross Road, CHENNAI 6001 13 
+
+: Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400093 
+
+
+
+Telephones 
+
+r2323 7617 
+12323 3841 
+
+r2337 8499, 2337 8561 
+12337 8626,2337 9120 
+
+r 260 3843 
+1260 9285 
+
+r2254 1216,2254 1442 
+12254 2519,2254 2315 
+
+(-2832 9295, 2832 7858 
+12832 7891,2832 7892 
+
+
+
+AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. FARIDABAD. 
+GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+NALAGARH. PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM. VISAKHAPATNAM. 
+
+
+
+Printed at Simco Printing Press, Delhi 
+
+
+

@@ -1,0 +1,52 @@
+{
+  "is_number": "IS IS_10858",
+  "standard_id": "IS IS_10858",
+  "title": "Indian Standard Specification / Test Method (IS IS_10858)",
+  "ia_identifier": "IS_10858",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard applies to pilot craft used in closed waters estuaries and open roadsteads to bring and take off pilots to merchant ships.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10862",
+      "standard_id": "IS 10862:1984",
+      "title": "Classification and Basic Requirements of Pilot Craft",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6217",
+      "standard_id": "IS/ISO 6217",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6217)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10858"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 3161
+}

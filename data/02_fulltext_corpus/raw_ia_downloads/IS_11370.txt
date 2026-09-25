@@ -1,0 +1,10798 @@
+**************** 
+
+
+
+-k is^ 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+"^^ ^ ^ ^ % ?R^" 
+
+Jawaharlal Nehru 
+
+Step Out From the Old to the New 
+
+
+
+^^iiTSs^-SfS^^^^*?*:: 
+
+
+
+
+•^■•■^^^■r 
+
+
+
+
+li^ i/ir w w w w w WW ^ ^ ^ tIt w w w 
+
+
+
+BLANK PAGE 
+
+
+
+^<ii^ 
+
+
+
+
+
+UI> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+18 11370:2008 
+
+^^<i< 3^mrfef t^^%%[T^ ^RT ^m ^ % ^glZF 
+
+( WoiJ fRf^m ) 
+
+Indian Standard 
+
+GUIDE FOR DATA ELEMENTS AND RECORD FORMAT 
+
+FOR COMPUTER BASED BIBLIOGRAPHICAL DATA 
+
+BASES FOR BIBLIOGRAPHIC DESCRIPTION OF 
+
+DIFFERENT KINDS OF DOCUMENTS 
+
+( First Revision ) 
+
+
+
+ICS 35.240.30 
+
+
+
+© BIS 2008 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+
+
+May 2008 Price Group 11 
+
+
+
+Documentation and Information Sectional Committee, MSD 5 
+
+
+
+FOREWORD 
+
+This Indian Standard (First Revision) was adopted by Bureau of Indian Standards, after the draft finalized by the 
+Documentation and Information Sectional Committee had been approved by Management and Systems Division 
+Council. 
+
+This standard was first published in 1985 for creating computer based bibliographic data records of different print 
+documents available within the various Indian libraries. 
+
+Keeping in view the global changes in bibliographic formats such as AACR2, ISBD, ISO 2709 (Format of Informa- 
+tion Exchange), various MARCs, etc. and its structure due to exponential growth of e-resources, this change is an 
+endeavour towards the demand of the twenty-first century's machine-readable cataloguing (MARC) system. 
+
+Bibliographic description of a document is a collection of information, which is intended to provide a unique and 
+unambiguous reference, such as, will enable a librarian to identify and retrieve the document, or an intending user 
+to order it from the publisher or other sources. Such bibliographic descriptions in computer readable form consti- 
+tute records in bibliographical databases. These bibliographic records facilitate rapid communication and exchange 
+of information on scientific, technical social science and other kinds of documents. It is desirable that appropriate 
+mechanisms be developed and utilized for the convenient control of bibliographic records. 
+
+The provision in the guide for bibliographic description of different kinds of documents helps in such control of 
+bibliographic records and facilitates the processing of the records for libraiy and documentation purposes and the 
+exchange of this information between different libraries, documentation and infonnation centres. It ensures consis- 
+tencies, uniformity and compatibility in the creation, exchange and utilization of the bibliographic databases. 
+
+Bibliographic databases could be used specifically for SDI/alert services, preparation of select bibliographies on 
+specific subjects, preparation of national bibliography, union catalogues, etc, and for the exchange of bibliographic 
+information among national and international agencies. 
+
+In the preparation of this standard considerable assistance has been taken fi-om the following publications: 
+
+IS 14873 : 2000/ISO 2709 : 1996 Information and documentation — Format for information exchange, 
+
+MARC21 Specifications for Record Structure, Character Sets, and Exchange Media. Web Version, January 
+2000. Network Development and MARC Standard Office, Library of Congress. 
+
+http://www.loc.gov/marc/specifications/spechome.html 
+
+MARC21 Concise Format for Bibliographic Data. 2003 Concise Edition. Network Development and MARC 
+Standard Office, Library of Congress, http://www.loc.gov/marc/bibliographic/ecbdhdme.html 
+
+UNIMARC Manual. 4th Update 2002. Universal Bibliographic Control and International MARC Core 
+Programme. — Miinchen : K G Saur, 1994. http://www.ifla.0rg/VI/3/p 1 996- 1 /unimarc.htm 
+
+ISBD(G) : General International Standard for Bibliographic Description — Revised ed.; prepared by the 
+ISBD Review Committee Working Group set up by the IFLA Committee on Cataloguing.- Miinchen : K 
+G Saur, 1992. 
+
+IFLA, ISBD(CM): International Standard Bibliographic Description for Cartographic Materials Recommended 
+by the ISBD Review Committee. Approved by the Standing Committees of the IFLA Section on Cata- 
+loguing and the IFLA Section of Geography and Map Libraries. - Revised edition. - Munchen : K G 
+Saur, 1987. 
+
+IFLA, ISBD(S): International Standard Bibliographic Description for Serials. Recommended by the ISBD 
+Review Committee. Approved by the Standing Committees of the IFLA Section on Cataloguing and the 
+IFLA Section on Serial Publications. Rev. edition. — Mtinchen : K G Saur, 1988. 
+
+IFLA, ISBD(NBM): International Standard Bibliographic Description for Non-Book Materials. Recommended 
+by the ISBD Review Committee. Approved by the Standing Committee of the IFLA Section on Cata- 
+loguing Rev. edition. — Miinchen : K G Saur, 1987. 
+
+{Continued on third cover) 
+
+
+
+IS 11370 : 2008 
+
+
+
+Indian Standard 
+
+GUIDE FOR DATA ELEMENTS AND RECORD FORMAT 
+
+FOR COMPUTER BASED BIBLIOGRAPHICAL DATA 
+
+BASES FOR BIBLIOGRAPHIC DESCRIPTION OF 
+
+DIFFERENT KINDS OF DOCUMENTS 
+
+( First Revision ) 
+
+
+
+1 SCOPE 
+
+1.1 This standard specifies the requirements for a 
+computer readable record format which will hold any 
+type of bibliographic record and data elements for 
+bibliographic description of different kinds of 
+documents, such as; 
+
+a) Books — Textual material that is monographic 
+in nature. 
+
+b) Continuing Resources — Textual items with 
+a recurring pattern of publication, for example 
+periodicals, newspapers, yearbooks. 
+
+NOTE — Prior to 2002, continuing resources were 
+referred to as serials. 
+
+c) Electronic Resources — Used for computer 
+software, numeric data, computer-oriented 
+multimedia, online systems or services. Other 
+classes of electronic resources are coded fof 
+their most significant aspect. Material may be 
+monographic or serial in nature. 
+
+d) Maps — All types of cartographic materials, 
+including sheet maps and globes in printed, 
+manuscript, electronic, and microform. 
+
+e) Music — Printed and manuscript notated 
+music. 
+
+f) Sound Recordings — Non-musical sound 
+recordings, and musical sound recordings. 
+
+g) Visual materials — Projected media, two- 
+dimensional graphics, three-dimensional 
+artifacts or naturally occurring objects, and 
+kits. Used for archival visual materials when 
+format or medium is being emphasized. 
+
+h) Mixed Materials — Primarily archival and 
+manuscript collections of a mixture of forms 
+of material. Material may be monographic or 
+serial in nature. 
+
+1.2 This standard gives an illustrative list of data 
+elements to be used in a bibliographic record. The 
+format of a bibliographic record is taken to constitute 
+a logical record without any regard to the physical 
+record on a recording medium. It does not define the 
+
+
+
+different data elements or expand the different codes 
+used. 
+
+2 DEFINITIONS/TERMINOLOGY 
+
+2.1 For the purpose of this standard the following 
+definitions shall apply (Italicized terms within 
+definitions are terms for which definitions are also 
+provided). 
+
+2.1.1 Base Address of Data — A data element in the 
+leader which specifies the first octet of the first variable 
+field in the record and is equal to the sum of the lengths 
+of the leader and the directory, including the field 
+terminator at the end of the directory. 
+
+2.1.2 Bibliographic Level — A data element in the 
+leader of bibliographic records which provides 
+additional information about the characteristics and 
+components of the record, and is used in conjunction 
+with the type of record data element of the leader. 
+
+2.1.3 Bibliographic Record — A collection of data 
+elements describing or identifying one or more units 
+treated as one logical entity. 
+
+2.1.4 Blank (SP) — ASCII character 20(hex) (it is 
+graphically represented as |^ or #), which is used in 
+indicators and data elements containing coded values 
+(and occurs in data content). Generally, blank stands 
+for "undefined", but in some instances it has been 
+assigned a meaning. ASCII name is space. 
+
+2.1.5 Character — A member of a set of elements used 
+for organization, control, or representation of data. In 
+MARC a character may be encoded using one or more 
+than one octet, depending on the character set. All 
+ASCII characters are encoded using one octet in the 
+ASCII encoding and the Unicode UTF-8 encoding, 
+thus a character is equivalent in length to an octet when 
+an element's values are restricted to ASCII. 
+
+2.1.6 Content Designation — The codes and 
+conventions established explicidy by MARC to identify 
+and further characterize the data elements within a 
+record and to support the manipulation of that data. 
+
+
+
+IS 11370 : 2008 
+
+
+
+2.1.7 Control Field — A variable field containing 
+information useful or required for the processing of 
+the record. Control fields are assigned tags beginning 
+with two zeroes. Control fields with fixed length data 
+elements are restricted to ASCII graphics. 
+
+2.1.8 Control Number — An ASCII graphic character 
+string uniquely associated with a record by the 
+organization transmitting the record and located in a 
+specific variable field. 
+
+2.1.9 Data Element — A defined unit of information. 
+
+2.1.10 Data Element Identifier — A one-character code 
+used to identify individual data elements within a 
+variable field. The data element may be any ASCII 
+lowercase alphabetic, numeric, or graphic symbol 
+except blank. 
+
+2.1.11 Data Field — A variable field containing 
+bibliographic or other data. Data fields are assigned 
+tags beginning with characters other than two zeroes. 
+Data fields contain data in any MARC 21 character set 
+unless a field-specific restriction applies. 
+
+2.1.12 Delimiter — ASCII control character IF(hex) 
+(it is graphically represented as :!^ or $), which is 
+combined with a data element identifier to make up 
+the subfield code which precedes each individual data 
+element within a variable field. The ASCII name for 
+the delimiter is unit separator (US). 
+
+2.1.13 Directory — An index to the location of the 
+variable fields (control and data) within a record. The 
+directory consists of entries. 
+
+2.1.14 Encoding Level — A data element in the leader 
+of authority, bibliographic, classification, and holdings 
+records which provides information about the fullness 
+of the information and/or content designation in the 
+
+record. 
+
+2.1.15 Entry — A field within the directory which gives 
+the tag, length and starting character posifion of a 
+variable field. 
+
+2.1.16 Entry Map — A data element in the leader which 
+specifies the structure of the entries in the directory. 
+Always set to 4 500 in MARC records. 
+
+2.1.17 Field — A defined character string that may 
+contain one or more data elements. 
+
+2.1.18 Field Terminator (FT) ■— ASCII control 
+character lE(hex) (it is graphically represented as FT 
+or '^), which is used to terminate the directory and each 
+variable field within a record. ASCII name for the field 
+terminator is record separator (RS). 
+
+2.1.19 Fill Character — ASCII graphical vertical bar 
+( I )[7C(hex)], which fills a required character position 
+and has the meaning 'no attempt has been made to code' . 
+
+
+
+2.1.20 Fixed Field — k field whose length does not 
+vary. The term is occasionally used to refer to variable 
+control fields, especially those that contain coded data 
+such as fields 007 or 008. 
+
+2.1.21 Identifier Length — See 2.1.37. 
+
+2.1.22 Indicator — A data element associated with a 
+data field that supplies additional information about 
+the field. An indicator may be any ASCII lowercase 
+alphabetic, numeric, or blank. Indicators are not used 
+in control fields. 
+
+lA.li Indicator Count — A data element in the leader 
+which contains the number positions reserved for 
+indicators in each variable data field. The indicator 
+count is always set to 2 in MARC records. 
+
+2.1.24 Leader — k fixed field that occurs at the 
+beginning of each record and provides information for 
+the processing of the record. 
+
+2.1.25 Length — A measure of the size of a data 
+element, field, or record and is expressed in number of 
+
+octets. 
+
+2.1.26 Logical Record Length — A data element in 
+the leader which contains the length of the entire 
+record, including itself and the record terminator. 
+
+lA.ll Octet — A string of 8 bits. In some cases (for 
+example, ASCII) each octet represents a character; in 
+other cases (for example, Unicode) multiple octets may 
+represent a character. 
+
+2.1.28 Record — See 2.1.3. 
+
+2.1.29 Record Label — See 2.1.24. 
+
+2.1.30 Record Length — See 2.1.26. 
+
+2.1.31 Record Status — A data element in the leader 
+which indicates the relation of the record to a file (for 
+example, new, updated, etc.). 
+
+2.1.32 Record Terminator (RT) — ASCII control 
+character ID(hex) (it is graphically represented as RT 
+or \), which is used as the final character of a record, 
+following the field terminator of the last data field. 
+ASCII name for the record terminator is 'group 
+separator (GS)'. 
+
+2.1.33 Space — See 2,1.4. 
+
+2.1.34 Starting Character Position — The position, 
+relative to the base address of data, of the first octet of 
+the first character in the variable field referenced by 
+the entry. The first character of the first field following 
+the directory is numbered 0. 
+
+2.1.35 Status — See 2.1.31. 
+
+2.1.36 Subfield Code — The two-character 
+combination of a delimiter followed by a data element 
+
+
+
+IS 11370 : 2008 
+
+
+
+identifier. Subfield codes are not used in control fields. 
+
+2.1.37 Subfield Code Length — A data element in the 
+leader which contains the sum of the lengths of the 
+delimiter and the data element identifier used in the 
+record. Always set to 2 in MARC records, 
+
+2.1.38 Tag — A three character string used to identify 
+or label an associated variable field. The tag may 
+consist of ASCII numeric characters (decimal integers 
+0-9) and/or ASCII alphabetic characters (uppercase or 
+lowercase, but not both). 
+
+2.1.39 Type of Record — A data element in the leader 
+that with bibliographic level, specifies the 
+characteristics and defines the components of the 
+record. 
+
+2.1.40 Variable Control Field — See 2.1,7. 
+
+2.1.41 Variable Data Field — See 2.1.11. 
+
+2.1.42 Variable Field — A field whose length is 
+determined for each occurrence by the length of data 
+comprising that occurrence. There are two types of 
+
+variable fields control fidds dSifX data fields . 
+
+3 RECORD FORMAT AND DATA ELEMENTS 
+
+3.1 A guide for bibliographic description of documents 
+in computer based bibliographic data bases should 
+provide the layout of the bibliographic record format 
+and a specification of the data elements forming the 
+bibliographic description, Annex A gives the layout of 
+the record format, Annex B gives illustrative data 
+elements together with the corresponding tags, 
+indicators, and subfield identifiers. An illustrative 
+example is given in Annex C. 
+
+3.1.1 A bibliographic record includes a bibliographic 
+description of the document in question, some form of 
+classification and/or indexing applied to the subject 
+content of the document, an abstract or summary or 
+annotation and other information. 
+
+3.1.2 Bibliographic record refers to the structure within 
+which the bibliographic description is stored in 
+computer readable form. It has three distinct parts: a 
+fixed length leader, number of directories based on 
+available fields, and variable data fields associated with 
+the directory. 
+
+3.1.3 A piece of specific information forming part of 
+the bibliographic descripfion and having a specific 
+functional relationship with the content of the 
+document to which the record refers. Data elements 
+are separately identified within the bibliographic record 
+so that each element can, if desired, be independently 
+assessed and manipulated by a computer programme. 
+
+3.1.4 The data elements are contained in different fields 
+identified by tags (field tags). Data elements are further 
+
+
+
+subdivided into sub-elements contained in subfields 
+introduced by subfield identifier. An indicator 
+associated with data field supplies further information 
+about the data element contained in it. 
+
+4 GENERAL RECORD STRUCTURE 
+
+4.1 The general structure of a bibliographic record is 
+shown in Fig. 1. A more detailed structure is shown 
+schematically in Annex A. 
+
+Each record begins with a leader {see Fig. 2 and Fig. 3), 
+which is a fixed field containing informadon for the 
+processing of the record. Following the leader is the 
+directory, which is an index to the locadon of the 
+variable fields (control and data) within the record. The 
+fields following the directory are all variable fields. 
+The first variable field is the control number field (that 
+is, Fixed fields 001, 003, 005, 006, 007, 008), which 
+contains an ASCII graphic character string uniquely 
+associated with the record by the organization 
+transmitting the record. Following the control number 
+field are the rest of the control fields, which contain 
+information useful or required for the processing of 
+the record. Following the control fields are data fields, 
+which contain general data. A field terminator (FT), 
+ASCII control character 1 E(hex), is used to terminate 
+the directory and each variable field within the record. 
+A record terminator (RT), ASCII control character 
+ID(hex), is used as the final character of the record, 
+following the field terminator of the last data field. 
+
+4.2 Leader 
+
+The leader is the first field in the record and has a fixed 
+length of 24 characters (position 0-23). Leader allows 
+only ASCII graphic characters. The structure of the 24 
+characters leader is shown in Fig. 4. The numbers 
+indicate the character posifions occupied by each part 
+of the leader. 
+
+4.2.1 Record Length {Character Position 00-04) 
+
+It contains a five ASCII numeric character string equal 
+to the length of the enfire record, including itself and 
+the record terminator. The five-character numeric string 
+is right justified with zero fill, if necessary. The 
+maximum length of the record is 99999 octets. 
+
+4.2.2 Record Status {Character Position 05) 
+
+It contains a single ASCII graphic character, which 
+describes the relafion of the record to a file, such as; 
+
+a) a - Increase in encoding level 
+
+The encoding level (Leader/17) of the record 
+has been changed to a higher encoding level. 
+
+b) c - Corrected or revised 
+
+A change other than in the encoding level 
+code has been made to the record. 
+
+
+
+IS 11370 : 2008 
+
+
+
+c) d - Deleted 
+
+d) n - New 
+
+e) p - Increase in encoding level from pre- 
+publication 
+
+The cataloguing level of a pre-publication record has 
+changed because of the availability of the published 
+item. 
+
+4.2.3 Type of Record {Character Position 06) 
+
+It contains a single ASCII graphic character, which 
+specifies the characteristic of the record and defines 
+the components of it, such as; 
+
+a) a - Language material 
+
+Includes printed, microform, and electronic 
+language material. 
+
+b) c - Notated music 
+
+Includes microform and electronic notated 
+music. 
+
+c) d - Manuscript notated music 
+Includes microform manuscript music. 
+
+d) e - Cartographic material 
+
+Includes maps, atlases, globes, digital maps, 
+and other cartographic items. 
+
+e) f - Manuscript cartographic material 
+Includes microform manuscript maps. 
+
+f) g - Projected medium 
+
+Examples include: motion pictures, video 
+recordings (including digital video), 
+filmstrips, slides, transparencies, or material 
+specifically designed for projection. 
+
+g) i - Nonmusical sound recording 
+Examples include: speech. 
+
+h) j - Musical sound recording 
+
+Examples include: phonodiscs, compact discs, 
+or cassette tapes. 
+
+j) k - Two-dimensional nonprojectable graphic 
+Examples include: activity cards, charts, 
+collages, computer graphics, drawings, 
+duplication masters, flash cards, paintings, 
+photonegatives, photoprints, pictures, photo 
+CDs, postcards, posters, prints, spirit masters, 
+study prints, technical drawings, 
+photomechanical reproductions, and 
+reproductions of any of these. 
+
+k) m - Computer file 
+
+Includes the following classes of electronic 
+resources: computer software (including 
+programmes, games, fonts), numeric data, 
+
+
+
+computer-oriented multimedia, online 
+systems or services. For these classes of 
+materials, if there is a significant aspect that 
+causes it to fall into another Leader/06 
+category, the code for that significant aspect 
+is used instead of code m (for example, vector 
+data that is cartographic is not coded as 
+numeric but cartographic). Other classes of 
+electronic resources are coded for their most 
+significant aspect (for example, language 
+material, graphic, cartographic material, 
+sound, music, moving image). In case of 
+doubt or if the most significant aspect cannot 
+be determined, consider the item a computer 
+file. 
+
+m) o-Kit 
+
+Contains a mixture of components from two 
+or more types of items, none of which is the 
+predominant constituent of the kit. 
+
+n) p - Mixed material 
+
+Indicates that there are significant materials 
+in two or more fomis that are usually related 
+by virtue of their having been accumulated 
+by or about a person or body. Includes archival 
+fonds and manuscript collections of mixed 
+forms of materials, such as text, photographs, 
+and sound recordings. 
+
+p) r - Three-dimensional artifact or naturally 
+occurring object 
+
+Includes man-made objects, such as models, 
+dioramas, games, puzzles, simulations, 
+sculptures and other three-dimensional art 
+works and their reproductions, exhibits, 
+machines, clothing, toys, and stitchery, and 
+naturally occurring objects, such as 
+microscope specimens and other specimens 
+mounted for viewing. 
+
+q) t - Manuscript language material 
+
+4.2.4 Bibliographic Level {Character Position 07) 
+
+It contains an ASCII graphic character, which also 
+provides information about the components and 
+characteristics of the record, such as; 
+
+a) a - Monographic component part 
+
+A monographic bibliographic unit that is 
+physically attached to or contained in another 
+unit such that the retrieval of the component 
+part is dependent on the identification and 
+location of the host item or container. The 
+record contains fields that describe the 
+component part and data that identify the host, 
+field 773 (Host item entry). 
+
+
+
+IS 11370 : 2008 
+
+
+
+b) b - Serial component part 
+
+A serial bibliographic unit that is physically 
+attached to or contained in another serial unit 
+such that the retrieval of the component part 
+is dependent on the physical identification and 
+location of the host item or container. The 
+record contains fields that describe the 
+component part and data that identify the host, 
+field 773 (Host item entry). 
+
+c) c - Collection 
+
+A made-up multipart group of items that were 
+not originally published, distributed, or 
+produced together. The record describes units 
+defined by common provenance or 
+administrative convenience for which the 
+record is intended as the most comprehensive 
+in the system. 
+
+d) d - Subunit 
+
+A part of a collection, especially an archival 
+unit described collectively elsewhere in the 
+system. The record contains fields that 
+describe the subunit and data that identify che 
+host item entry (field 773). 
+
+e) i - Integrating resource 
+
+A bibliographic resource that is added to or 
+changed by means of updates that do not 
+remain discrete and are integrated into the 
+whole. Examples include: Updating loose- 
+leafs and updating web sites. 
+
+f) m - Monograph/Item 
+
+An item either complete in one part 
+(monograph) or intended to be completed in 
+a finite number of separate parts (multivolume 
+monograph). 
+
+g) s - Serial 
+
+An item issued in successive parts bearing 
+numerical or chronological designations and 
+intended to be continued indefinitely (for 
+example, serials, journals, series, 
+newspapers). 
+
+4.2.5 Type of Control {Character Position 08) 
+
+It also contains an ASCII graphic character, which also 
+provides information about the components and 
+characteristics of the record, such as a - for archival or 
+blank space — for no specific type. 
+
+4.2.6 Character Coding Scheme {Character Position 
+09) 
+
+It contains a code that identifies the character coding 
+scheme used in a record, such as blank space - for 
+MARC-8 or a - for UCS/Unicode. But in Indian 
+libraries, where documents are available in different 
+
+
+
+langua,ges and Unicode is the only option provides 
+proper solution for the multilingual encoding of the 
+various documents. Thus, a — should always be 
+implemented as a character encoding scheme. 
+
+4.2.7 Indicator Count {Character Position 10) 
+
+It is an ASCII numeric character specifying the number 
+of indicators occurring in each variable data field. Here, 
+its value will be always 2. 
+
+4.2.8 Subfield Code Length {Character Position 11) 
+
+It contains one ASCII numeric character indicates the 
+sum of the lengths of the delimiter and the data element 
+identifier used in the record for identifying the 
+subfields. This character position always represents 2 
+as a subfield code length. 
+
+4.2.9 Base Address of Data {Character Positions 12-16) 
+
+Five ASCII numeric characters that describes the first 
+character position of the first variable field in the record. 
+It is equal to the sum of the lengths of the leader and 
+the directory, including the field terminator at the end 
+of the directory. The number is right justify with zero 
+fill, if necessary. 
+
+4.2.10 Implementation Defined {Character Position 
+17-19) 
+
+The character positions 17-19 contains only ASCII 
+graphic characters information for encoding level, 
+descriptive cataloguing form, and linked record 
+requirement. Any position not defined contains a 
+blank. 
+
+4.2.10.1 Character position 17 (encoding level) 
+
+a) # - Full level 
+
+The most complete MARC level created from 
+information derived from an inspection of the 
+physical item. 
+
+b) 1 - Full level, material not examined 
+
+The information used in creating the record 
+is derived from an extent description of the 
+item without reinspection of the physical item. 
+This Code is used primarily in the 
+retrospective conversion of records when all 
+of the information on the extant description 
+is transcribed. Certain control field coding and 
+other data elements are based only on explicit 
+information in the description. 
+
+c) 2 - Less-than-f ull level , material not examined 
+The information used in creating the record 
+is derived from an extent description of the 
+item without reinspection of the physical item. 
+This code is used primarily in the retrospective 
+conversion of records when all of the 
+descriptive access points but only a specified 
+
+
+
+IS 11370 : 2008 
+
+
+
+subset of other data elements are transcribed. 
+Authoritative headings may not be current. 
+
+d) 3 - Abbreviated level 
+
+Indicates a brief record that does not meet the 
+National Level Bibliographic Record minimal 
+level cataloguing specifications. Headings in 
+the records may reflect established forms to 
+the extent that such forms were available at 
+the time the record was created. 
+
+e) 4 - Core level 
+
+f) 5 - Partial (preliminary) level 
+
+A record that is not considered final by the 
+creating agency (for example, the headings 
+may not reflect established forms; the record 
+may not meet national-level cataloguing 
+specifications). 
+
+g) 7 - Minimal level 
+
+A record that meets the national-level 
+bibliographic record minimal-level 
+cataloguing specifications and is considered 
+final by the creating agency. Headings reflect 
+established forms. 
+
+h) 8 - Prepublication level 
+
+Indicates a prepublication level record. This 
+includes records create in cataloguing in 
+publication programmes. 
+
+j) u - Unknown 
+
+Used by an agency receiving or sending data 
+to replace a local code when the appropriate 
+MARC encoding level code cannot be 
+determined. Code u is not used in newly input 
+or updated records. 
+
+k) z - Not applicable 
+
+The encoding level concept does not apply to 
+the record. 
+
+4.2.10.2 Character position 18 (Descriptive 
+cataloguing form) 
+
+a) #-Non-ISBD 
+
+The descriptive portion of the record does not 
+follow International Standard Bibliographic 
+Description (ISBD) cataloguing and 
+punctuation provisions. 
+
+b) a-AACR2 
+
+The descriptive portion of the record and the 
+choice and form of entry of the access points 
+are formulated according to either the second 
+edition of the Anglo-American Cataloguing 
+Rules or cataloguing manuals based on AACR 
+2. The punctuation practices of ISBD apply. 
+
+
+
+c) i - ISBD 
+
+The descriptive portion of the record is 
+formulated according to the descriptive and 
+punctuation provisions of ISBD. The heading 
+forms are not formulated according to AACR 
+2. This category includes records that use 
+ISBD punctuation but the other conventions 
+used are unknown. 
+
+d) u - Unknown 
+
+An organization receiving or sending data in 
+Leader/ 1 8 cannot determine the appropriate 
+descriptive cataloguing form used in the 
+record. Code u may be used in records 
+converted from another metadata format. 
+
+4.2.10.3 Character position 19 (Linked record 
+requirement) 
+
+a) # - Related record not required 
+
+The record contains basic identification 
+information in every linking entry field in the 
+record or in a related linking entry complexity 
+note (field 580), or the record contains no 
+76X-78X linking entry field. 
+
+b) r - Related record required 
+
+The record contains at least one 76X-78X 
+linking entry field that does not contain basic 
+identification information and contains no 
+related linking entry complexity note (field 
+580) with basic identification information 
+
+4.2.11 Entry Map (Character Positions 20-23) 
+
+It contains four single digit ASCII numeric characters 
+that specify the structure of the entries in the directory. 
+
+4.2.11.1 Character position 20 (Length of length-of- 
+field) 
+
+Specifies the length of that part of each directory entry; 
+it is always set to 4. 
+
+4.2.11.2 Character position 21 (Length of starting - 
+character-position) 
+
+Specifies the length of that part of each directory entry; 
+it is always set to 5. 
+
+4.2.11.3 Character position 22 (Length of 
+implementation-defined) 
+
+Specifies that part of each directory entry. A directory 
+entry does not contain an implementation-defined 
+portion; therefore this position is always set to 0. 
+
+4.2.11.4 Character position 23 (Undefined) 
+
+The character position is undefined, therefore it is 
+always set to 0. 
+
+
+
+IS 11370 : 2008 
+
+
+
+4.3 Directory 
+
+A directory entry is made up of a tag, length-of-field, 
+and field starting position. The directory begins in 
+character position 24 of the record and ends with a 
+field terminator It is of variable length and consists of 
+a series of fixed fields, referred to as entries. One entry 
+is associated with each variable field either controls or 
+data present in the record. Each directory entry is 12 
+characters in length. The number of directories depends 
+on the number of fields available with the record. The 
+structure of each entry is shown in Fig. 5, where the 
+numbers indicate the character position of the 
+respective occupied parts. 
+
+4.3.1 Tag {Character Positions 00-02) 
+
+It consists of three ASCII numeric characters used to 
+identify or label an associated variable field. The tag 
+is stored in the directory entry for the field. It does not 
+appear in the variable field itself. 
+
+4.3.2 Length of Field {Character Positions 03-06) 
+
+It consists of four ASCII numeric characters 
+representing the length, expressed as a decimal number, 
+of the variable field to which the entry corresponds. 
+This length includes the indicators, subfield codes, data 
+and field terminator associated with the field. It is right 
+justify with zero fill, if necessary. A field may contain 
+a maximum of 9999 octets. 
+
+4.3.3 Starting Character Position {Character Positions 
+07-U) 
+
+It contains five ASCII numeric characters, which give 
+the starting character position, expressed as a decimal 
+number, of the variable field to which the entry 
+corresponds relative to the base address of data of the 
+record. This five-digit ASCII numeric character is right 
+justified with zero fill, if necessary. 
+
+4.4 Variable Fields 
+
+The variable fields consist of control fields and data 
+fields following the leader and directory in the record. 
+
+4.4.1 Control Fields 
+
+Control fields are fixed in the length, comprised of data 
+and field terminator. They do not contain indicators 
+
+
+
+and subfield codes. Control fields include tag numbers 
+001, 003, 005, 006, 007 and 008, where 001 is control 
+number field and contains the control number of the 
+record. Each record contains only one control number 
+field with tag 001, which is always located at the base 
+address of data. 
+
+4.4.2 Data Fields 
+
+Data fields always vary, and it is not fixed in length. 
+These fields contain indicators and subfield codes, as 
+well as data and a field terminator {see Fig. 6). 
+
+4.4.2.1 Indicators 
+
+Indicators are the first two characters in every variable 
+data field, preceding any subject code (delimiter plus 
+data element identifier), which may be present. Each 
+indicator is one character and every data field in the 
+record includes two indicators, even if values have not 
+been defined for the indicators in a particular field. 
+Indicators supply additional information about the 
+field, and are defined individually for each field. 
+Indicator values are interpreted independently; 
+meaning is not ascribed to the two indicators taken 
+together. Indicators may be any ASCII lowercase 
+alphabetic, numeric, or blank. A blank is used in an 
+undefined indicator position, and also have a defined 
+meaning in a defined indicator position. 
+
+4.4.2.2 Subfield Codes 
+
+Subfield codes identify the individual data elements 
+within the field, and precede the data elements they 
+identify. Each data field contains at least one subfield 
+code. The subfield code consists of a delimiter [ASCII 
+IF(hex)] followed by a data element identifier Data 
+element identifiers may be any ASCII lowercase 
+alphabetic or numeric character. In general, numeric 
+identifiers are defined for data used to process the field, 
+or coded data needed to interpret the field. Alphabetic 
+identifiers are defined for the separate elements, which 
+constitute the data content of the field. 
+
+4.5 Record Terminator 
+
+The Record Terminator, the ASCII control character 
+ID(hex), is a last character of the record, following 
+the field terminator of the last data field of the record. 
+
+
+
+IS 11370 : 2008 
+
+
+
+Leader (Record Label) 
+
+
+
+Directory 
+
+
+
+Variable Fields 
+
+
+
+Record Terminator 
+
+
+
+Fig. 1 General Structure of MARC Record 
+
+LEADER DIRECTORY FT CONTROL NUMBER_FIELD FT 
+
+CONTROL_FIELD_l FT ... CONTROL_FIELD_n FT 
+
+DATA_FIELD_1 FT ... DATA__FIELD_n FT RT 
+
+Fig. 2 Skeleton of a MARC Record 
+
+
+
+Leader | Directory 1 | Directory2 ( ... Directory-N| FT | Control Number Fieldl 1 FT ] 
+Control Number Field2 | FT | ... Control Number Field N [ FT ( Data Fields 1 | FT j Data 
+Fields 21 FT t . . . Data Fields N 1 FT | RT 
+
+Fig. 3 Detailed Structure of a MARC Record 
+
+
+
+Record_Length Record_Status Type_of_Record 
+
+
+Bibliographic_ Level 
+
+
+00-04 05 06 
+
+
+07 
+
+
+TVpe_of_Control Character_Coding_Scheme 
+
+
+Indicator_Count 
+
+
+08 09 
+
+
+10 
+
+
+SubfieId_Code_Length Base_Address_of_Data 
+
+
+Iinp]einentation_Defined 
+
+
+11 12-16 
+
+
+17-19 
+
+
+Entry^MAP 
+
+
+
+
+20-23 
+
+
+
+
+
+Fig. 4 Structure Of the Leader in MARC21 Records 
+
+
+
+Tag 
+
+
+Length _of_Field 
+
+
+StartingCharacter Position 
+
+
+00-02 
+
+
+03-06 
+
+
+07-11 
+
+
+
+Fig. 5 Structure of a Directory Entry in MARC Records 
+
+
+
+Indicatorl Indicator_2 Delimiter Dala_Element_Identifier_l 
+
+DataElementl ...Delimiter DataElementldentifiern 
+Data_Element_n FT 
+Fig. 6 Structure of a Variable Data Field in MARC Records 
+
+
+
+IS 11370 : 2008 
+
+
+
+ANNEX A 
+
+(Clauses 3.1 and 4.1) 
+
+LAYOUT OF THE RECORD FORMAT 
+
+
+
+Character Position 
+
+
+00 to 04 
+
+05 
+
+06 
+
+07 
+
+08 
+
+09 
+
+10 
+
+11 
+
+12 to 16 
+
+17 to 19 
+
+20 
+
+21 
+
+Map 
+
+22 
+
+23 
+
+Entry 
+
+
+Record leneth 
+
+
+1 ^ A_ 
+
+
+
+
+Record status 
+
+
+
+
+
+
+
+
+
+
+Type of record 
+
+
+
+
+
+
+Bibliographic level 
+
+
+
+
+
+
+Type of control 
+
+
+
+
+
+
+Character coding scheme 
+
+
+Leader 
+
+
+
+
+Indicator count 
+
+
+(Fixed Length 
+
+
+
+
+Subfield code length 
+
+
+24 charact 
+
+
+ers) 
+
+
+
+
+Base address of data 
+
+
+
+
+
+
+Implementation defined 
+
+
+
+
+
+
+Length of "length-of-field" 
+
+
+t 
+
+Entry 
+
+▲ 
+
+t 
+
+
+
+
+
+
+Length of "starting-character- 
+position" 
+
+
+
+
+
+
+Length of "implementation- 
+defined" 
+
+
+
+
+
+
+Undefined 
+
+
+' 
+
+
+
+
+Tag 
+
+
+k 
+
+
+3 characters 
+
+
+Length of field 
+
+
+
+
+4 characters 
+
+
+Starting character position 
+
+
+
+
+3 characters 
+
+
+Tag 
+
+
+Directory 
+
+
+4 characters 
+
+
+Length of field 
+
+
+
+
+5 characters 
+
+
+Starting character position 
+
+
+Record ^ 
+Identifier 
+
+Fixed Fields 
+
+
+
+
+
+
+1 
+
+
+
+
+
+
+1 
+
+
+
+
+
+
+Field Terminator 
+
+
+r ■ 
+
+
+Tag 001 
+
+
+Reference data 
+
+
+i 
+
+
+
+
+Field Terminator 
+
+
+
+
+
+
+Reference data 
+
+
+
+
+Tag 003 to 008 
+
+
+Field Terminator 
+
+
+
+
+Variable fields 
+Ixx to 9xx 
+
+
+Data 
+
+
+
+
+i 
+
+
+^ 
+
+
+
+
+Field Terminator 
+
+
+Data 
+
+
+
+
+Data 
+
+
+Fields 
+
+
+
+
+Field Terminator 
+
+
+
+
+
+
+
+
+1 
+
+
+Variable 
+Fields 
+
+
+
+
+
+
+1 
+
+
+
+
+
+
+Data 
+
+
+] 
+
+
+r ^ 
+
+
+
+
+
+
+Field Terminator 
+
+
+
+
+
+
+Record Terminator 
+
+
+r 
+
+
+
+
+Next Record 
+
+
+
+
+
+
+
+
+
+
+
+1811370:2008 
+
+
+
+ANNEX B 
+
+(Clause 3.1) 
+
+ILLUSTRATIVE LIST OF DATA ELEMENTS 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+
+
+Data Element 
+
+
+
+
+
+
+Identifier 
+
+
+
+
+001 
+
+
+
+
+
+
+Control Number (NR) 
+
+
+003 
+
+
+
+
+
+
+Control Number Identifier (NR) 
+
+
+005 
+
+
+
+
+
+
+Date and Time of Latest Transaction (NR) 
+
+
+006 
+
+
+
+
+
+
+Fixed-Length Data Element Additional Material 
+Cliaracteristics — ^Genera! Information (R) 
+
+
+007 
+
+
+
+
+
+
+Physical Description Fixed Field - General 
+Information (R) 
+
+
+008 
+
+
+
+
+
+
+Fixed-Length Data Elements - General Information 
+(NR) 
+
+
+010 
+
+
+First - Undefined 
+
+
+
+
+Library of Congress Control Number (NR) 
+
+
+
+
+Second - Undefined 
+
+
+$a 
+
+
+LC control number 
+
+
+
+
+
+
+$b 
+
+
+NUCMC control number 
+
+
+
+
+
+
+$z 
+
+
+Cancelled/Invalid control number 
+
+
+OB 
+
+
+Kret- Undefined 
+
+
+
+
+Patent Control Information (R) 
+
+
+
+
+Second -Undefined 
+
+
+$a 
+
+
+Number 
+
+
+
+
+
+
+$b 
+
+
+Country 
+
+
+
+
+
+
+$c 
+
+
+Type of number 
+
+
+
+
+
+
+$d 
+
+
+Date 
+
+
+
+
+
+
+$e 
+
+
+Status 
+
+
+
+
+
+
+$f 
+
+
+Party to document 
+
+
+015 
+
+
+First - Undefined 
+
+
+
+
+National Bibliography Number (R) 
+
+
+
+
+Second - Undefined 
+
+
+$a 
+
+
+National Bibliography Number 
+
+
+
+
+
+
+$2 
+
+
+Source 
+
+
+016 
+
+
+First - National 
+
+
+
+
+National Bibliographic Agency Control Number (R) 
+
+
+
+
+bibliographic agency 
+
+
+$a 
+
+
+Record Control Number 
+
+
+
+
+# - National Library of 
+
+
+$z 
+
+
+Cancelled/Invalid Record Control Number 
+
+
+
+
+Kolkata 
+
+
+$2 
+
+
+Source 
+
+
+
+
+7 - source specified in 
+
+
+
+
+
+
+
+
+subfield $2 
+
+
+
+
+
+
+
+
+Second - # - Undefined 
+
+
+
+
+
+
+017 
+
+
+First - # - Undefined 
+
+
+
+
+Copyright or Legal Deposit Number (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Copyright Registration Number 
+
+
+
+
+
+
+$b 
+
+
+Assigning Agency 
+
+
+
+
+
+
+$2 
+
+
+Source 
+
+
+018 
+
+
+First-# -Undefined 
+
+
+
+
+Copyright Article-Fee Code (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Copyright article-fee code 
+
+
+020 
+
+
+First - # - Undefined 
+
+
+
+
+International Standard Book Number (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+International Standard Book Number 
+
+
+
+
+
+
+$c 
+
+
+Terms of Availability 
+
+
+
+
+
+
+$z 
+
+
+Cancelled/Invalid ISBN 
+
+
+022 
+
+
+First - Level of 
+
+
+
+
+International Standard Serial Number (R) 
+
+
+
+
+International Interest 
+
+
+$a 
+
+
+International Standard Serial Number 
+
+
+
+
+#- No level specified 
+
+
+$y 
+
+
+Incorrect ISSN 
+
+
+
+
+- of international interest 
+
+
+$z 
+
+
+Cancelled ISSN 
+
+
+
+
+1 - not of international 
+
+
+$2 
+
+
+Source 
+
+
+
+
+interest 
+
+
+
+
+
+
+
+
+Second - # - Undefined 
+
+
+
+
+
+
+024 
+
+
+First - Type of Standard 
+
+
+
+
+Other Standard Identifier (R) 
+
+
+
+
+Number or Code 
+
+
+$a 
+
+
+Standard Number or Cod** 
+
+
+
+
+0-ISRC 
+
+
+$c 
+
+
+Terms of Availability 1 
+
+
+
+10 
+
+
+
+IS 11370 : 2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+
+
+1-UPC 
+
+
+$d 
+
+
+Additional codes following the standard number or code 
+
+
+
+
+2-ISMN 
+
+
+$z 
+
+
+Cancelled Invalid standard number or code 
+
+
+
+
+3-EAN 
+
+
+$2 
+
+
+Source of number of code 
+
+
+
+
+4 - SICI 
+
+
+
+
+
+
+
+
+Second - Difference 
+
+
+
+
+
+
+
+
+Indicator 
+
+
+
+
+
+
+
+
+# - No information 
+
+
+
+
+
+
+
+
+- No difference 
+
+
+
+
+
+
+
+
+1 - difference 
+
+
+
+
+
+
+027 
+
+
+First -# -Undefined 
+
+
+
+
+Standard Technical Report Number (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Standard technical report number 
+
+
+
+
+
+
+$z 
+
+
+Cancelled / Invalid number 
+
+
+028 
+
+
+First - Type of Publisher 
+
+
+
+
+Publisher Number (R) 
+
+
+
+
+number 
+
+
+$a 
+
+
+Publisher number 
+
+
+
+
+- issue number 
+
+
+$b 
+
+
+Source 
+
+
+
+
+1 - matrix number 
+
+
+
+
+
+
+
+
+2 - plate number 
+
+
+
+
+
+
+
+
+3 - other music number 
+
+
+
+
+
+
+
+
+4 - video recording No. 
+
+
+
+
+
+
+
+
+5 - other pub. No. 
+
+
+
+
+
+
+
+
+Second - Added entry 
+
+
+
+
+
+
+
+
+controller 
+
+
+
+
+
+
+
+
+— no note, no added entry 
+
+
+
+
+
+
+
+
+1 - Note, added entry 
+
+
+
+
+
+
+
+
+2 - Note, no added entry 
+
+
+
+
+
+
+
+
+3 - no note, added entry 
+
+
+
+
+
+
+030 
+
+
+First - # - Undefined 
+
+
+
+
+CODEN Designation (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+CODEN 
+
+
+
+
+
+
+$z 
+
+
+Cancelled / Invalid CODEN 
+
+
+032 
+
+
+First - # - Undefined 
+
+
+
+
+Postal Registration Number (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Postal registration number 
+
+
+
+
+
+
+$b 
+
+
+Source (agency assigning number) 
+
+
+033 
+
+
+First - Type of date in 
+
+
+
+
+Date/Time and Place of an Event (R) 
+
+
+
+
+subfield $a 
+
+
+$a 
+
+
+Formatted date/ time 
+
+
+
+
+# - no date information 
+
+
+$b 
+
+
+Geographic classification area code 
+
+
+
+
+- single date 
+
+
+$c 
+
+
+Geographic classification sub-area code 
+
+
+
+
+1- multiple single date 
+
+
+$3 
+
+
+Material specified 
+
+
+
+
+2 -range of dates 
+
+
+
+
+
+
+
+
+Second - Type of event 
+
+
+
+
+
+
+
+
+# - no information 
+
+
+
+
+
+
+
+
+- capture 
+
+
+
+
+
+
+
+
+1 - broadcast 
+
+
+
+
+
+
+
+
+2 - finding 
+
+
+
+
+
+
+034 
+
+
+First - Type of Scale 
+
+
+
+
+CODED Cartographic Mathematical Data (R) 
+
+
+
+
+- no scale recorded 
+
+
+$a 
+
+
+Category of scale 
+
+
+
+
+1 - Single scale 
+
+
+$b 
+
+
+Constant ratio linear horizontal scale 
+
+
+
+
+3 -Range of scales 
+
+
+$c 
+
+
+Constant ratio linear vertical scale 
+
+
+
+
+Second - Type of ring 
+
+
+$d 
+
+
+Coordinates — westernmost longitude 
+
+
+
+
+# - not applicable 
+
+
+$e 
+
+
+Coordinates — easternmost longitude 
+
+
+
+
+- outer ring 
+
+
+$f 
+
+
+Coordinates — northernmost latitude 
+
+
+
+
+1- exclusion ring 
+
+
+$g 
+
+
+Coordinates — southernmost latitude 
+
+
+
+
+
+
+$h 
+
+
+Angular scale 
+
+
+
+
+
+
+$j 
+
+
+Declination — northern limit 
+
+
+
+
+
+
+$k 
+
+
+Declination ■ — southern limit 
+
+
+
+
+
+
+$m 
+
+
+Right ascension — eastern limit 
+
+
+
+
+
+
+$n 
+
+
+Right ascension — western limit 
+
+
+
+11 
+
+
+
+IS 11370 : 2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+
+
+
+
+$p 
+
+
+Equinox 
+
+
+
+
+
+
+$s 
+
+
+G-ring latitude 
+
+
+
+
+
+
+$t 
+
+
+G-ring longitude 
+
+
+036 
+
+
+First - # - Undefined 
+
+
+
+
+Original Study Number for Computer Data Files 
+
+(NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Original study number 
+
+
+
+
+
+
+$b 
+
+
+Source (agency assigning number) 
+
+
+037 
+
+
+First - # - Undefined 
+
+
+
+
+Source of Acquisition (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Stock number 
+
+
+
+
+
+
+$b 
+
+
+Source of stock number/acquisition 
+
+
+
+
+
+
+$c 
+
+
+Terms of availability 
+
+
+
+
+
+
+$f 
+
+
+Form of issue 
+
+
+
+
+
+
+$g 
+
+
+Additional format characteristics 
+
+
+
+
+
+
+$n 
+
+
+Note 
+
+
+040 
+
+
+First - # - Undefined 
+
+
+
+
+Cataloguing Source (NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Original cataloguing agency 
+
+
+
+
+
+
+$b 
+
+
+Language of cataloguing 
+
+
+
+
+
+
+$c 
+
+
+Transcribing agency 
+
+
+
+
+
+
+$d 
+
+
+Modifying agency 
+
+
+
+
+
+
+$e 
+
+
+Description conventions 
+
+
+041 
+
+
+First - Translation 
+
+
+
+
+Language |Code (R) 
+
+
+
+
+indication 
+
+
+$a 
+
+
+Language c6de of text/sound track or separate title 
+
+
+
+
+- item not a translation 
+
+
+$b 
+
+
+Language code of summary or abstract/overprinted title 
+
+
+
+
+1 - item is or includes tran. 
+
+
+
+
+or subtitle 
+
+
+
+
+Second - Source of Code 
+
+
+$d 
+
+
+Language code of sung or spoken text 
+
+
+
+
+# - MARC language Code 
+
+
+$e 
+
+
+Language code of librettos 
+
+
+
+
+7 - source defined in $2 
+
+
+$f 
+
+
+Language code of table of contents 
+
+
+
+
+
+
+$g 
+
+
+Language code of accompanying material other than 
+librettos 
+
+
+
+
+
+
+$h 
+
+
+Language code of original and/or intermediate 
+
+
+- 
+
+
+
+
+
+
+translations of text 
+
+
+
+
+
+
+$2 
+
+
+Source of code 
+
+
+043 
+
+
+First- #- Undefined 
+
+
+
+
+Geographic Area Code (NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Geographic area code 
+
+
+
+
+
+
+$b 
+
+
+Local GAC code 
+
+
+
+
+
+
+$c 
+
+
+ISO code 
+
+
+
+
+
+
+$2 
+
+
+Source of local code 
+
+
+044 
+
+
+First - # - Undefined 
+
+
+
+
+Country of Publishing Entity Code (NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+MARC country code 
+
+
+
+
+
+
+$b 
+
+
+Local subentity code 
+
+
+
+
+
+
+$c 
+
+
+ISO country code 
+
+
+
+
+
+
+$2' 
+
+
+Source of local subentity code 
+
+
+047 
+
+
+First - # - Undefined 
+
+
+
+
+Form of Musical Composition Code (NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Form of musical composition code 
+
+
+048 
+
+
+First - # - Undefined 
+
+
+
+
+Number of Musical Instruments or Voices Code (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Performer or ensemble 
+
+
+
+
+
+
+$b 
+
+
+Soloist 
+
+
+080 
+
+
+First - # - Undefined 
+
+
+
+
+Universal Decimal Class Number (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Universal Decimal Classification Number 
+
+
+
+
+
+
+$b 
+
+
+Item number 
+
+
+
+
+
+
+$x 
+
+
+Common auxiliary subdivision 
+
+
+
+
+
+
+$2 
+
+
+Edition identifier 
+
+
+082 
+
+
+First - type of edition 
+
+
+
+
+Dewey Decimal Classification Number (R) 
+
+
+
+
+- full edition 
+
+
+$a 
+
+
+Classification number 
+
+
+
+
+I - abridged edition 
+
+
+$b 
+
+
+Item number 
+
+
+
+12 
+
+
+
+IS 11370 : 2008 
+
+
+
+Tag 
+
+
+
+Indicator 
+
+
+
+100 
+
+
+
+110 
+
+
+
+111 
+
+
+
+Second - source of 
+
+classification number 
+
+# - no information 
+
+- assigned by LC 
+
+4 - assigned by other 
+
+agency 
+
+
+
+084 First - # - Undefined 
+
+Second - # - Undefined 
+
+
+
+Subfield 
+Identifier 
+
+
+
+088 First- # -Undefined 
+
+Second - # - Undefined 
+
+
+
+First - type of personal 
+name entry element 
+
+- forename 
+
+1 - surname 
+
+3 - family name 
+Second - # - Undefined 
+
+
+
+First - Type of corporate 
+name entry element 
+
+-inverted name 
+
+1 -jurisdiction name 
+
+2 - name in direct order 
+Second - # - Undefined 
+
+
+
+First - Type of meeting 
+name entry element 
+
+- inverted name 
+
+1 -jurisdiction name 
+
+2 - name in direct order 
+Second - # - Undefined 
+
+
+
+$2 
+
+
+
+$a 
+$b 
+$2 
+
+
+
+$z 
+
+
+
+$b 
+$c 
+$d 
+$e 
+$f 
+
+$g 
+$j 
+$k 
+
+$1 
+
+$n 
+
+$p 
+$q 
+$t 
+$u 
+
+
+
+$a 
+$b 
+$c 
+$d 
+$e 
+$f 
+
+$g 
+$k 
+
+$1 
+$n 
+$p 
+$t 
+$u 
+
+
+
+Sa 
+
+$c 
+$d 
+$e 
+$f 
+
+$g 
+$k 
+
+$1 
+
+$n 
+$p 
+$q 
+
+
+
+Data Element 
+
+
+
+Edition number 
+
+
+
+Colon Classification Number (R) 
+
+Classification number 
+Item number 
+Edition number 
+
+
+
+Report Number (R) 
+
+Report number 
+Cancelled/Invalid report number 
+
+
+
+Main Entry — Personal Name (NR) 
+
+Personal name 
+
+Numeration 
+
+Titles and other words associated with a name 
+
+Dates associated with a name 
+
+Relator term 
+
+Date of a work 
+
+Miscellaneous information 
+
+Attribution qualifier 
+
+Form sub-heading 
+
+Language of a work 
+
+Number of part/section of a work 
+
+Name of part/section of a work 
+
+Fuller form of name 
+
+Title of a work 
+
+Affiliation 
+
+
+
+Main Entry — Corporate Name (NR) 
+
+Corporate name or jurisdiction name as entry element 
+
+Subordinate unit 
+
+Location of meeting 
+
+Date of meeting or treaty signing 
+
+Relator term 
+
+Date of a work 
+
+Miscellaneous information 
+
+Form sub-heading 
+
+Language of a work 
+
+Number of part/section/meeting 
+
+Name of part/section of a work 
+
+Title of a work 
+
+Affiliation 
+
+
+
+Main Entry — Meeting Name (NR) 
+
+Meeting name or jurisdiction name as entry element 
+
+Location of meeting 
+
+Date of meeting 
+
+Subordinate unit 
+
+Date of a work 
+
+Miscellaneous information 
+
+Form sub-heading 
+
+Language of a work 
+
+Number of part/section/meeting 
+
+Name of part/section of a work 
+
+Name of meeting following jurisdiction name entry 
+
+element 
+
+
+
+13 
+
+
+
+IS 11370 : 2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+
+
+
+
+$t 
+
+
+Title of a work 
+
+
+
+
+
+
+$u 
+
+
+Affiliation 
+
+
+130 
+
+
+First - Non-filing characters 
+
+
+
+
+Main Entry — Uniform Title (NR) 
+
+
+
+
+0-9 - number of filing 
+
+
+$a 
+
+
+Uniform title 
+
+
+
+
+characters 
+
+
+$d 
+
+
+Date of treaty signing 
+
+
+
+
+Second - # - Undefined 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+
+
+$h 
+
+
+Medium 
+
+
+
+
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+
+
+$m 
+
+
+Medium of performance for music 
+
+
+
+
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+
+
+$o 
+
+
+Arranged statement for music 
+
+
+
+
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+
+
+$r 
+
+
+Key for music 
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+
+
+
+
+$t 
+
+
+Title of a work 
+
+
+210 
+
+
+First - Title added entry 
+
+
+
+
+Abbreviated Title (R) 
+
+
+
+
+- no added entry 
+
+
+$a 
+
+
+Abbreviated title 
+
+
+
+
+] - added entry 
+
+
+$b 
+
+
+Qualiiying information 
+
+
+
+
+Second - Type 
+
+
+$2 
+
+
+Source 
+
+
+
+
+# - Abbreviated key title 
+
+
+
+
+
+
+
+
+- other abbreviated title 
+
+
+
+
+
+
+222 
+
+
+First ->- # - Undefined 
+
+
+
+
+Key Title (R) 
+
+
+
+
+Second - Non-filing 
+
+
+$a 
+
+
+Key title 
+
+
+
+
+characters 
+
+
+$b 
+
+
+Qualifying information 
+
+
+
+
+0-9 - number of non-filing 
+
+
+
+
+
+
+
+
+characters 
+
+
+
+
+
+
+240 
+
+
+First - Uniform title 
+
+
+
+
+Uniform Title (NR) 
+
+
+
+
+printed or display 
+
+
+$a 
+
+
+Uniform title 
+
+
+
+
+- not printed or display 
+
+
+$d 
+
+
+Date of treaty signing 
+
+
+
+
+1 -printed or display 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+Second - Non-filing 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+characters 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+0-9 - number of non-filing 
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+characters 
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+
+
+$m 
+
+
+Medium of performance for music 
+
+
+
+
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+
+
+$0 
+
+
+Arranged statement for music 
+
+
+
+
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+
+
+$r 
+
+
+Key for music 
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+243 
+
+
+First - Uniform title 
+
+
+
+
+Collective Uniform Title (NR) 
+
+
+
+
+printed or display 
+
+
+$a 
+
+
+Uniform title 
+
+
+
+
+- not printed or display 
+
+
+$d 
+
+
+Date of treaty signing 
+
+
+
+
+1 - printed or display 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+Second - Non-filing 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+Characters 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+0-9 - number of non-filing 
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+characters 
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+
+
+$m 
+
+
+Medium of performance for music 
+
+
+
+
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+
+
+$0 
+
+
+Arranged statement for music 
+
+
+
+
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+
+
+$r 
+
+
+Key for music 
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+
+14 
+
+
+
+IS 11370 : 2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+245 
+
+
+First - Title added entry 
+
+
+
+
+Title Statement (NR) 
+
+
+
+
+- no added entry 
+
+
+$a 
+
+
+Title 
+
+
+
+
+1 - added entry 
+
+
+$b 
+
+
+Reminder of title 
+
+
+
+
+Second - Non-filing 
+
+
+$c 
+
+
+Statement of responsibility 
+
+
+
+
+characters 
+
+
+$f 
+
+
+Inclusive dates 
+
+
+
+
+0-9 - number of non-filing 
+
+
+$g 
+
+
+Bulk dates 
+
+
+
+
+characters 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+
+
+$k 
+
+
+Form 
+
+
+
+
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+246 
+
+
+First - Note/Added entry 
+
+
+
+
+Varying Form of Title (R) 
+
+
+
+
+controller 
+
+
+$a 
+
+
+Title proper/short title 
+
+
+
+
+- Note, no added entry 
+
+
+$b 
+
+
+Remainder of title 
+
+
+
+
+1 - Note, added entry 
+
+
+$f 
+
+
+Date or sequential designation 
+
+
+
+
+2 - No note, no title added 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+entry 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+3 - No note, added entry 
+
+
+$i 
+
+
+Display text 
+
+
+
+
+Second - Type of title 
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+# - No type specified 
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+0- Portion of title 
+
+
+
+
+
+
+
+
+1 - Parallel title 
+
+
+
+
+
+
+
+
+2 - Distinctive title 
+
+
+
+
+
+
+
+
+3 - Other title 
+
+
+
+
+
+
+
+
+4 - Cover title 
+
+
+
+
+
+
+
+
+5 - Added title page title 
+
+
+
+
+
+
+
+
+6 - Caption title 
+
+
+
+
+
+
+
+
+7 - Running title 
+
+
+
+
+
+
+
+
+8 - Spine title 
+
+
+
+
+
+
+247 
+
+
+First - Title added entry 
+
+
+
+
+Former Title (R) 
+
+
+
+
+- No added entry 
+
+
+$a 
+
+
+Title 
+
+
+
+
+1 - Added entry 
+
+
+$b 
+
+
+Reminder of title 
+
+
+
+
+Second - Note controller 
+
+
+$f 
+
+
+Date or sequential designation 
+
+
+
+
+- Display note 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+1 - Do not display note 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+
+
+$x 
+
+
+International Standard Serial Number 
+
+
+250 
+
+
+First - # - Undefined 
+
+
+
+
+Edition Statement (NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Edition statement 
+
+
+
+
+
+
+$b 
+
+
+Reminder of edition statement 
+
+
+254 
+
+
+First -# -Undefined 
+
+
+
+
+Musical Presentation Statement (NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Musical presentation statement 
+
+
+255 
+
+
+First- # -Undefined 
+
+
+
+
+Cartographic Mathematical Data (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Statement of scale 
+
+
+
+
+
+
+$b 
+
+
+Statement of projection 
+
+
+
+
+
+
+$c 
+
+
+Statement of coordinates 
+
+
+
+
+
+
+$d 
+
+
+Statement of zone 
+
+
+
+
+
+
+$e 
+
+
+Statement of equinox 
+
+
+
+
+
+
+$f 
+
+
+Outer G-ring coordinate pairs 
+
+
+
+
+
+
+$g 
+
+
+Exclusion G-ring coordinate pairs 
+
+
+256 
+
+
+First- # -Undefined 
+
+
+
+
+Computer File Characteristics (NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Computer file characteristics 
+
+
+
+15 
+
+
+
+18 11370:2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+260 
+
+
+First - Sequence of 
+
+
+
+
+Publication, Distribution, etc (Imprint) (R) 
+
+
+
+
+publishing statements 
+
+
+$a 
+
+
+Place of publication, distribution, etc 
+
+
+
+
+# - No information 
+
+
+$b 
+
+
+Name of publisher, distributor, etc 
+
+
+
+
+1 - Intervening publisher 
+
+
+$c 
+
+
+Date of publication, distribution, etc 
+
+
+
+
+2 - Current publisher 
+
+
+$e 
+
+
+Place of manufacture 
+
+
+
+
+Second - # - undefined 
+
+
+$f 
+
+
+Manufacturer 
+
+
+
+
+
+
+$g 
+
+
+Date of manufacture 
+
+
+
+
+
+
+$3 
+
+
+Materials specified 
+
+
+270 
+
+
+First - Level 
+
+
+
+
+Address (R) 
+
+
+
+
+# - No level specified 
+
+
+$a 
+
+
+Address 
+
+
+
+
+1 - Primary 
+
+
+$b 
+
+
+City 
+
+
+
+
+2 - Secondary 
+
+
+$c 
+
+
+State of province 
+
+
+
+
+Second - Type of address 
+
+
+$d 
+
+
+Country 
+
+
+
+
+# - No type specified 
+
+
+$e 
+
+
+Postal code 
+
+
+
+
+- Mailing 
+
+
+$f 
+
+
+Terms preceding attention name 
+
+
+
+
+7 - Specified in $i 
+
+
+$g 
+
+
+Attention name 
+
+
+
+
+
+
+$h 
+
+
+Attention position 
+
+
+
+
+
+
+$i 
+
+
+Type of address 
+
+
+
+
+
+
+$k 
+
+
+Telephone number 
+
+
+
+
+
+
+$1 
+
+
+Fax number 
+
+
+
+
+
+
+$m 
+
+
+Electronic mail address 
+
+
+
+
+
+
+$p 
+
+
+Contact person 
+
+
+
+
+
+
+$q 
+
+
+Title of contact person 
+
+
+
+
+
+
+$r 
+
+
+Hours 
+
+
+
+
+
+
+$z 
+
+
+Public note 
+
+
+300 
+
+
+First - # - Undefined 
+
+
+
+
+Physical Description (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Extent 
+
+
+
+
+
+
+$b 
+
+
+Other physical details 
+
+
+
+
+
+
+$c 
+
+
+Dimensions 
+
+
+
+
+
+
+$e 
+
+
+Accompanying material 
+
+
+
+
+
+
+$f 
+
+
+Type of unit 
+
+
+
+
+
+
+$g 
+
+
+Size of unit 
+
+
+306 
+
+
+First - # - Undefined 
+
+
+
+
+Playing Time (NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Playing time 
+
+
+307 
+
+
+First- #- Undefined 
+
+
+
+
+Hours, etc (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Hours 
+
+
+
+
+
+
+$b 
+
+
+Additional information 
+
+
+310 
+
+
+First - # - Undefined 
+
+
+
+
+Current Publication Frequency (NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Current publication firequency 
+
+
+
+
+
+
+$b 
+
+
+Date of current publication fi-equency 
+
+
+321 
+
+
+First - # - Undefined 
+
+
+
+
+Former Publication Frequency (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Former publication firequency 
+
+
+
+
+
+
+$b 
+
+
+Date of former publication firequency 
+
+
+340 
+
+
+First-# -Undefined 
+
+
+
+
+Physical Medium (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Material base and configuration 
+
+
+
+
+
+
+$b 
+
+
+Dimensions 
+
+
+
+
+
+
+$c 
+
+
+Materials applied to surface 
+
+
+
+
+
+
+$d 
+
+
+Information recording technique 
+
+
+
+
+
+
+$e 
+
+
+Support 
+
+
+
+
+
+
+$f 
+
+
+Production rate/ratio 
+
+
+
+
+
+
+$h 
+
+
+Location within medium 
+
+
+
+
+
+
+$i 
+
+
+Technical specifications of medium 
+
+
+
+
+
+
+$3 
+
+
+Materials specified 
+
+
+342 
+
+
+First - Geospatial Reference 
+
+
+
+
+Geospatial Reference Data (R) 
+
+
+
+
+Dimension 
+
+
+$a 
+
+
+Name 
+
+
+
+16 
+
+
+
+
+
+
+
+
+
+1811370:2008 
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+
+
+- Horizontal coordinate 
+
+
+$b 
+
+
+Coordinate or distance units 
+
+
+
+
+system 
+
+
+$c 
+
+
+Latitude resolution 
+
+
+
+
+1 - Vertical coordinate 
+
+
+$d 
+
+
+Longitude resolution 
+
+
+
+
+system 
+
+
+$e 
+
+
+Standard parallel or oblique line latitude 
+
+
+
+
+Second - Geospatial 
+
+
+$f 
+
+
+Oblique line longitude 
+
+
+
+
+Reference Method 
+
+
+$g 
+
+
+Longitude of central meridian or projection centre 
+
+
+
+
+- Geographic 
+
+
+$h 
+
+
+Latitude of projection origin or projection centre 
+
+
+
+
+1 - Map projection 
+
+
+$i 
+
+
+False easting 
+
+
+
+
+2 - Grid coordinate system 
+
+
+$j 
+
+
+False northing 
+
+
+
+
+3 - Local planar 
+
+
+$k 
+
+
+Scale factor 
+
+
+
+
+4 - Local 
+
+
+$1 
+
+
+Height of perspective point above surface 
+
+
+
+
+5 - Geodetic model 
+
+
+$m 
+
+
+Azimuthal angle 
+
+
+
+
+6 - Altitude 
+
+
+$n 
+
+
+Azimuth measure point longitude or straight vertical 
+
+
+
+
+8 - Depth 
+
+
+
+
+longitude fi'om pole 
+
+
+
+
+
+
+$0 
+
+
+Landsat number and path number 
+
+
+
+
+
+
+$p 
+
+
+Zone identifier 
+
+
+
+
+
+
+$q 
+
+
+Ellipsoid name 
+
+
+
+
+
+
+$r 
+
+
+Semi-major axis 
+
+
+
+
+
+
+$s 
+
+
+Denominator of flattening ratio 
+
+
+
+
+
+
+$t 
+
+
+Vertical resolution 
+
+
+
+
+
+
+$u 
+
+
+Vertical encoding method 
+
+
+
+
+
+
+$v 
+
+
+Local planar, local, or other projection or grid 
+description 
+
+
+
+
+
+
+$w 
+
+
+Local planar or local georeference information 
+
+
+343 
+
+
+First - # - Undefined 
+
+
+
+
+Planar Coordinate Data (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Planar coordinate encoding method 
+
+
+
+
+
+
+$b 
+
+
+Planar distance units 
+
+
+
+
+
+
+$c 
+
+
+Abscissa resolution 
+
+
+
+
+
+
+$d 
+
+
+Ordinate resolution 
+
+
+
+
+
+
+$e 
+
+
+Distance resolution 
+
+
+
+
+
+
+$f 
+
+
+Bearing resolution 
+
+
+
+
+
+
+$g 
+
+
+Bearing units 
+
+
+
+
+
+
+$h 
+
+
+Bearing reference direction 
+
+
+
+
+
+
+$i 
+
+
+Bearing reference meridian 
+
+
+362 
+
+
+First - Format of date 
+
+
+
+
+Dates of Publication and/or Sequential Designation 
+
+
+
+
+- Formatted style 
+
+
+$a 
+
+
+(R) 
+
+
+
+
+1 - Unformatted style 
+
+
+$z 
+
+
+Dates of publication and/or sequential designation 
+
+
+
+
+Second - # - Undefined 
+
+
+
+
+Source of information 
+
+
+440 
+
+
+First- # -Undefined 
+
+
+
+
+Series Statement/Added Entry - Title (R) 
+
+
+
+
+Second - Non-filing 
+
+
+$a 
+
+
+Title 
+
+
+
+
+Characters 
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+0-9 - number of non-filing 
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+characters 
+
+
+$v 
+
+
+Volume number/sequential designation 
+
+
+
+
+
+
+$x 
+
+
+International Standard Serial Number 
+
+
+490 
+
+
+First - Specified whether 
+
+
+
+
+Series Statement (R) 
+
+
+
+
+series is traced 
+
+
+$a 
+
+
+Series statement 
+
+
+
+
+0-Series not traced 
+
+
+$1 
+
+
+Library of Congress call number 
+
+
+
+
+1- Series traced differently 
+
+
+$v 
+
+
+Volume number/sequential designation 
+
+
+
+
+Second - # - Undefined 
+
+
+$x 
+
+
+International Standard Serial Number 
+
+
+500 
+
+
+First-# -Undefined 
+
+
+
+
+General Note (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+General note 
+
+
+501 
+
+
+First - # - Undefined 
+
+
+
+
+With Note (R) 
+
+
+
+
+Second -#- Undefined 
+
+
+$a 
+
+
+With note 
+
+
+
+17 
+
+
+
+18 11370:2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+502 
+
+
+First - # - Undefined 
+
+
+
+
+Dissertation Note (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Dissertation note 
+
+
+504 
+
+
+First - # - Undefined 
+
+
+
+
+Bibliography, etc Note (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Bibliography, etc note 
+
+
+
+
+
+
+$b 
+
+
+Number of references 
+
+
+505 
+
+
+First - Display constant 
+
+
+
+
+Formatted Contents Note (R) 
+
+
+
+
+controller 
+
+
+$a 
+
+
+Formatted contents note 
+
+
+
+
+- Contents 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+1 - Incomplete contents 
+
+
+$r 
+
+
+Statement of responsibility 
+
+
+
+
+2 - Partial contents 
+
+
+$t 
+
+
+Title 
+
+
+
+
+3 - No display content 
+
+
+$u 
+
+
+Uniform Resource Identifier 
+
+
+
+
+generated 
+
+
+
+
+
+
+
+
+Second - Level of content 
+
+
+
+
+
+
+
+
+designation 
+
+
+
+
+
+
+
+
+#- Basic 
+
+
+
+
+
+
+
+
+- Enhanced 
+
+
+
+
+
+
+507 
+
+
+First - # - Undefined 
+
+
+
+
+Scale Note for Graphic Material (NR) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Representative fraction of scale note 
+
+
+
+
+
+
+$b 
+
+
+Reminder of scale note 
+
+
+510 
+
+
+First - Coverage location 
+
+
+
+
+Citation/References Note (R) 
+
+
+
+
+in source 
+
+
+$a 
+
+
+Name of source 
+
+
+
+
+- Coverage unknown 
+
+
+$b 
+
+
+Coverage of source 
+
+
+
+
+I — Coverage complete 
+
+
+$c 
+
+
+Location within source 
+
+
+
+
+2 - Coverage is selective 
+
+
+$x 
+
+
+International Standard Serial Number 
+
+
+
+
+3 - Location in source not 
+
+
+
+
+
+
+
+
+given 
+
+
+
+
+
+
+
+
+4 - Location in source given 
+
+
+
+
+
+
+
+
+Second - # - Undefined 
+
+
+
+
+
+
+513 
+
+
+First - # - Undefined 
+
+
+
+
+Type of Report and Period Covered Note (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Type of report 
+
+
+
+
+
+
+$b 
+
+
+Period covered 
+
+
+516 
+
+
+First - Type of display 
+
+
+
+
+Type of Computer File or Data Note (R) 
+
+
+
+
+covered note 
+
+
+$a 
+
+
+Type of computer file or data note 
+
+
+
+
+#-Type of file 
+
+
+
+
+
+
+
+
+8 - No display content 
+
+
+
+
+
+
+
+
+generated 
+
+
+
+
+
+
+
+
+Second - # - Undefined 
+
+
+
+
+
+
+520 
+
+
+First - Display constant 
+
+
+
+
+Summary, etc (R) 
+
+
+
+
+controller 
+
+
+$a 
+
+
+Summary, etc note 
+
+
+
+
+# - Summary 
+
+
+$b 
+
+
+Expansion of summary note 
+
+
+
+
+- Subject 
+
+
+$u 
+
+
+Uniform Resource Identifier 
+
+
+
+
+1 - Review 
+
+
+
+
+
+
+
+
+2 - Scope and constant 
+
+
+
+
+
+
+
+
+3 - Abstract 
+
+
+
+
+
+
+
+
+8 - No display constant 
+
+
+
+
+
+
+
+
+generated 
+
+
+
+
+
+
+
+
+Second - # - Undefined 
+
+
+
+
+
+
+522 
+
+
+First - Display constant 
+
+
+
+
+Geographic Coverage Note (R) 
+
+
+
+
+controller 
+
+
+$a 
+
+
+Geographic coverage note 
+
+
+
+
+# - Geographic coverage 
+
+
+
+
+
+
+
+
+8 - No display constant 
+
+
+
+
+
+
+
+
+generated 
+
+
+
+
+
+
+
+
+Second - # - Undefined 
+
+
+
+
+
+
+525 
+
+
+First - # - Undefined 
+
+
+
+
+Supplement Note (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Supplement note 
+
+
+
+18 
+
+
+
+IS 11370 : 2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+533 
+
+
+First - # - Undefined 
+
+
+
+
+Reproduction Note (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Type of reproduction 
+
+
+
+
+
+
+$b 
+
+
+Place of reproduction 
+
+
+
+
+
+
+$c 
+
+
+Agency responsible for reproduction 
+
+
+
+
+
+
+$d 
+
+
+Date of reproduction 
+
+
+546 
+
+
+First -# -Undefined 
+
+
+
+
+Language Note (R) 
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Language note 
+
+
+
+
+
+
+$b 
+
+
+Information code or alphabet 
+
+
+586 
+
+
+First - Display constant 
+
+
+
+
+Awards Note 
+
+
+
+
+controller 
+
+
+$a 
+
+
+Awards note 
+
+
+
+
+# - Awards 
+
+
+
+
+
+
+
+
+8 - No display constant 
+
+
+
+
+
+
+
+
+generated 
+
+
+
+
+
+
+
+
+Second - # - Undefined 
+
+
+
+
+
+
+600 
+
+
+First - Type of personal 
+
+
+
+
+Subject Added Entry - Personal Name (R) 
+
+
+
+
+name entry element 
+
+
+$a 
+
+
+Personal name 
+
+
+
+
+- Forename 
+
+
+$b 
+
+
+Numeration 
+
+
+
+
+1 - Surname 
+
+
+$c 
+
+
+Titles and other words associated with a name 
+
+
+
+
+3 - Family name 
+
+
+$d 
+
+
+Dates associated with a name 
+
+
+
+
+Second - Thesaurus 
+
+
+$e 
+
+
+Relator term 
+
+
+
+
+0-LCSH 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+1 - LCSH for children's 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+literature 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+2 - MeSH 
+
+
+$j 
+
+
+Attribution qualifier 
+
+
+
+
+3 - NAL subject authority 
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+4 - Source not specified 
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+5-POPSI 
+
+
+$m 
+
+
+Medium of performance for music 
+
+
+
+
+6 -PRECIS 
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+
+
+$0 
+
+
+Arranged statement for music 
+
+
+
+
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+
+
+$q 
+
+
+Fuller form of name 
+
+
+
+
+
+
+$r 
+
+
+Key for music 
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+
+
+
+
+$t 
+
+
+Title of a work 
+
+
+
+
+
+
+$u 
+
+
+Affiliation 
+
+
+
+
+
+
+$v 
+
+
+Form subdivision 
+
+
+
+
+
+
+$x 
+
+
+General subdivision 
+
+
+
+
+
+
+$y 
+
+
+Chronological subdivision 
+
+
+
+
+
+
+$z 
+
+
+Geographic subdivision 
+
+
+610 
+
+
+First - Type of corporate 
+
+
+
+
+Subject Added Entry — Corporate Name (R) 
+
+
+
+
+name entry element 
+
+
+$a 
+
+
+Corporate name or jurisdiction name as entry element 
+
+
+
+
+- Inverted name 
+
+
+$b 
+
+
+Subordinate unit 
+
+
+
+
+1 - Jurisdiction name 
+
+
+$c 
+
+
+Location of meeting 
+
+
+
+
+2 - Name in direct order 
+
+
+$d 
+
+
+Date of meeting or treaty signing 
+
+
+
+
+Second - Thesaurus 
+
+
+$e 
+
+
+Relator term 
+
+
+
+
+0-LCSH 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+1 - LCSH for children's 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+literature 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+2 -MeSH 
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+3 - NAL subject authority 
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+4 - Source not specified 
+
+
+$ra 
+
+
+Medium of performance for music 
+
+
+
+
+5-POPSI 
+
+
+$n 
+
+
+Number of part/section/meeting 
+
+
+
+
+6 - PRECIS 
+
+
+$0 
+
+
+Arranged statement for music 
+
+
+
+
+
+
+$P 
+
+
+Name of part/section of a work 
+
+
+
+
+
+
+$r 
+
+
+Key for music 
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+
+19 
+
+
+
+IS 11370 : 2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+
+
+
+
+$t 
+
+
+Titleof a work 
+
+
+
+
+
+
+$u 
+
+
+Affiliation 
+
+
+
+
+
+
+$v 
+
+
+Form subdivision 
+
+
+
+
+
+
+$x 
+
+
+General subdivision 
+
+
+
+
+
+
+$y 
+
+
+Chronological subdivision 
+
+
+
+
+
+
+$z 
+
+
+Geographic subdivision 
+
+
+611 
+
+
+First - Type of meeting 
+
+
+
+
+Subject Added Entry - Meeting Name (R) 
+
+
+
+
+name entry element 
+
+
+$a 
+
+
+Meeting name or jurisdiction name as entry element 
+
+
+
+
+- Inverted name 
+
+
+$c 
+
+
+Locafion of meeting 
+
+
+
+
+1 - Jurisdiction name 
+
+
+$d 
+
+
+Date of meeting 
+
+
+
+
+2 - Name in direct order 
+
+
+$e 
+
+
+Subordinate unit 
+
+
+
+
+Second - Thesaurus 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+- LCSH 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+1 - LCSH for children's 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+literature 
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+2 - MeSH 
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+3 - NAL subject authority 
+
+
+$n 
+
+
+Number of part/section/meeting 
+
+
+
+
+4 - Source not specified 
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+5 - POPSI 
+
+
+$q 
+
+
+Name of meeting following jurisdiction name entry 
+
+
+
+
+6 - PRECIS 
+
+
+
+
+element 
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+
+
+
+
+$t 
+
+
+Title of a work 
+
+
+
+
+
+
+$u 
+
+
+Affiliation 
+
+
+
+
+
+
+$v 
+
+
+Form subdivision 
+
+
+
+
+
+
+$x 
+
+
+General subdivision 
+
+
+
+
+
+
+$y 
+
+
+Chronological subdivision 
+
+
+
+
+
+
+$z 
+
+
+Geographic subdivision 
+
+
+630 
+
+
+First - Nonfiling characters 
+
+
+
+
+Subject Added Entry - Uniform Title (R) 
+
+
+
+
+0-9 - number of non-filing 
+
+
+$a 
+
+
+Uniform fitle 
+
+
+
+
+characters 
+
+
+$d 
+
+
+Date of treaty signing 
+
+
+
+
+Second - Thesaurus 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+- Inverted name 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+I - Jurisdiction name 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+2 - Name in direct order 
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+Second - Thesaurus 
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+-LCSH 
+
+
+$m 
+
+
+Medium of performance for music 
+
+
+
+
+1 - LCSH for children's 
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+literature 
+
+
+$0 
+
+
+Arranged statement for music 
+
+
+
+
+2 -MeSH 
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+3 - NAL subject authority 
+
+
+$r 
+
+
+Key for music 
+
+
+
+
+4 - Source not specified 
+
+
+$s 
+
+
+Version 
+
+
+
+
+5 - POPSI 
+
+
+$t 
+
+
+Title of a work 
+
+
+
+
+6 -PRECIS 
+
+
+$v 
+
+
+Form subdivision 
+
+
+
+
+
+
+$x 
+
+
+General subdivision 
+
+
+
+
+
+
+$y 
+
+
+Chronological subdivision 
+
+
+
+
+
+
+$z 
+
+
+Geographic subdivision 
+
+
+648 
+
+
+First - # - Undefined 
+
+
+
+
+Subject Added Entry - Chronological Term (R) 
+
+
+
+
+Second - Thesaurus 
+
+
+$a 
+
+
+Chronological term 
+
+
+
+
+- LCSH 
+
+
+$v 
+
+
+Form subdivision 
+
+
+
+
+1 - LCSH for children's 
+
+
+$x 
+
+
+General subdivision 
+
+
+
+
+literature 
+
+
+$y 
+
+
+Chronological subdivision 
+
+
+
+
+2 - MeSH 
+
+
+$z 
+
+
+Geographic subdivision 
+
+
+
+
+3 - NAL subject authority 
+
+
+
+
+
+
+
+
+4 - Source not specified 
+
+
+
+
+
+
+
+
+5 -POPSI 
+
+
+
+
+
+
+
+
+6 -PRECIS 
+
+
+
+
+
+
+
+20 
+
+
+
+IS 11370 : 2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+650 
+
+
+First - Level of subject 
+
+
+
+
+Subject Added Entry - Topical Term (R) 
+
+
+
+
+# - No information 
+
+
+$a 
+
+
+Topical term or geographic name entry element 
+
+
+
+
+- No level specified 
+
+
+$b 
+
+
+Topical term following geographic name entry element 
+
+
+
+
+1 - Primary 
+
+
+$c 
+
+
+Location of event 
+
+
+
+
+2 - Secondary 
+
+
+$d 
+
+
+Active dates 
+
+
+
+
+Second - Thesaurus 
+
+
+$e 
+
+
+Relator term 
+
+
+
+
+- LCSH 
+
+
+$v 
+
+
+Form subdivision 
+
+
+
+
+1 - LCSH for children's 
+
+
+$x 
+
+
+General subdivision 
+
+
+
+
+literature 
+
+
+$y 
+
+
+Chronological subdivision 
+
+
+
+
+2-MeSH 
+
+
+$z 
+
+
+Geographic subdivision 
+
+
+
+
+3 - NAL subject authority 
+
+
+
+
+
+
+
+
+4 - Source not specified 
+
+
+
+
+
+
+
+
+5 - POPSI 
+
+
+
+
+
+
+
+
+6 - PRECIS 
+
+
+
+
+
+
+651 
+
+
+First - # - Undefined 
+
+
+
+
+Subject Added Entry - Geographic Name (R) 
+
+
+
+
+Second - Thesaurus 
+
+
+$a 
+
+
+Geographic name 
+
+
+
+
+- LCSH 
+
+
+$v 
+
+
+Form subdivision 
+
+
+
+
+1 - LCSH for children's 
+
+
+$x 
+
+
+General subdivision 
+
+
+
+
+literature 
+
+
+$y 
+
+
+Chronological subdivision 
+
+
+
+
+2-MeSH 
+
+
+$z 
+
+
+Geographic subdivision 
+
+
+
+
+3 - NAL subject authority 
+
+
+
+
+
+
+
+
+4 - Source not specified 
+
+
+
+
+
+
+
+
+5 - POPSI 
+
+
+
+
+
+
+
+
+6 -PRECIS 
+
+
+
+
+
+
+653 
+
+
+First - Level of index term 
+
+
+
+
+Index Term - Uncontrolled (R) 
+
+
+
+
+# - No information 
+
+
+$a 
+
+
+Uncontrolled term 
+
+
+
+
+- No level specified 
+
+
+
+
+
+
+
+
+1 - Primary 
+
+
+
+
+
+
+
+
+2 - Secondary 
+
+
+
+
+
+
+
+
+Second - # - Undefined 
+
+
+
+
+
+
+700 
+
+
+First - Type of personal 
+
+
+
+
+Added Entry — Personal Name (R) 
+
+
+
+
+name entry element 
+
+
+$a 
+
+
+Personal name 
+
+
+
+
+- Forename 
+
+
+$b 
+
+
+Numeration 
+
+
+
+
+1 - Surname 
+
+
+$c 
+
+
+Titles and other words associated with a name 
+
+
+
+
+3 - Family name 
+
+
+$d 
+
+
+Dates associated with a name 
+
+
+
+
+Second - Type of added 
+
+
+$e 
+
+
+Relator term 
+
+
+
+
+entry 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+# - No information 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+provided 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+2 - Analytical entry 
+
+
+$j 
+
+
+Attribution qualifier 
+
+
+
+
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+
+
+$m 
+
+
+Medium of performance for music 
+
+
+
+
+
+
+$n 
+
+
+Number of parf section of a work 
+
+
+
+
+
+
+$0 
+
+
+Arranged statement for music 
+
+
+
+
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+
+
+$q 
+
+
+Fuller form of name 
+
+
+
+
+
+
+$r 
+
+
+Key for music 
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+
+
+
+
+$t 
+
+
+Title of a work 
+
+
+
+
+
+
+$u 
+
+
+Affiliation 
+
+
+1 
+
+
+
+
+$x 
+
+
+International Standard Serial Number 
+
+
+' 710 
+
+
+First - Type of corporate 
+
+
+
+
+Added Entry — Corporate Name (R) 
+
+
+i 
+
+
+name entry element 
+
+
+$a 
+
+
+Corporate name or jurisdiction name as entry element 
+
+
+1 
+
+
+- Inverted name 
+
+
+$b 
+
+
+Subordinate unit 
+
+
+1 
+
+! 
+
+
+1 - Jurisdiction name 
+
+
+$c 
+
+
+Location of meeting 
+
+
+
+21 
+
+
+
+1811370:2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+SubfieW 
+Identifier 
+
+
+Data Element 
+
+
+
+
+
+
+2 - Name in direct order 
+
+
+$d 
+
+
+Date of meeting or treaty signing 
+
+
+
+
+
+
+Second - Type of added 
+
+
+$e 
+
+
+Relator term 
+
+
+
+
+
+
+entry 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+
+
+# - No information 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+
+
+provided 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+
+
+2 - Analytical entry 
+
+
+$k 
+$1 
+$m 
+$n 
+
+$0 
+
+$p 
+$r 
+
+$s 
+$t 
+$u 
+
+$x 
+
+
+Form sub-heading 
+
+Language of a work 
+
+Medium of performance for music 
+
+Number of part/section/meeting 
+
+Arranged statement for music 
+
+Name of part/section of a work 
+
+Key for music 
+
+Version 
+
+Title of a work 
+
+Affiliation 
+
+International Standard Serial Number 
+
+
+
+
+711 
+
+
+First - Type of meeting 
+
+
+
+
+Added Entry— Meeting Name (R) 
+
+
+
+
+
+
+name entry element 
+
+
+$a 
+
+
+Meeting name or jurisdiction name as entry element j 
+
+
+
+
+- Inverted name 
+
+
+$c 
+
+
+Location of meeting 
+
+
+
+
+
+
+1 - Jurisdiction name 
+
+
+$d 
+
+
+Date of meeting 
+
+
+
+
+
+
+2 - Name in direct order 
+
+
+$e 
+
+
+Subordinate unit 
+
+
+
+
+
+
+Second - Type of added 
+
+
+$f 
+
+
+Dateof a work 
+
+
+
+
+
+
+entry 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+
+
+# - No information 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+
+
+provided 
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+
+
+2 - Analytical entry 
+
+
+$1 
+
+$n 
+$p 
+
+
+Language of a work 
+
+Number of part/section/meeting 
+
+Name of part/section of a work 
+
+
+
+
+
+
+
+
+$q 
+
+
+Name of meeting following jurisdiction 
+element 
+
+
+name entry 
+
+
+
+
+
+
+$S 
+
+
+Version 
+
+
+
+
+
+
+
+
+$t 
+
+
+Title of a work 
+
+
+
+
+
+
+
+
+$u 
+
+
+Affiliation 
+
+
+
+
+
+
+
+
+$x 
+
+
+International Standard Serial Number 
+
+
+
+
+720 
+
+
+First - Type of name 
+
+
+
+
+Added Entry— Uncontrolled Name (R) 
+
+
+
+
+
+
+# - Not specified 
+
+
+$a 
+
+
+Name 
+
+
+
+
+
+
+1 - Personal 
+
+
+$e 
+
+
+Related term 
+
+
+
+
+
+
+2 - Other 
+
+
+
+
+
+
+
+
+
+
+Second -# -Undefined 
+
+
+
+
+
+
+
+
+730 
+
+
+First - Non-filing 
+
+
+
+
+Added Entry— Uniform Title (R) 
+
+
+
+
+
+
+characters 
+
+
+$a 
+
+
+Uniform title 
+
+
+
+
+
+
+0-9 - Number of non- filing 
+
+
+$d 
+
+
+Date of treaty signing 
+
+
+
+
+
+
+characters 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+
+
+Second - Type of added 
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+
+
+entry 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+
+
+# - No information 
+
+
+$k 
+
+
+Form-subheading 
+
+
+
+
+
+
+provided 
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+
+
+2 - Analytical entry 
+
+
+$m 
+
+$n 
+
+$0 
+
+$p 
+$r 
+$s 
+$t 
+
+$x 
+
+
+Medium of performance for music 
+
+Number of part/section of a work 
+
+Arranged statement for music 
+
+Name of part/section of a work 
+
+Key for music 
+
+Version 
+
+Title of a work 
+
+International Standard Serial Number 
+
+
+
+
+
+22 
+
+
+
+
+
+
+
+
+
+IS 11370 : 2008 
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+740 
+
+
+First - Non-filing 
+
+
+
+
+Added Entry — Uncontrolled Related/Analytical 
+
+
+
+
+characters 
+
+
+
+
+Title (R) 
+
+
+
+
+0-9 - Number of non-filing 
+
+
+$a 
+
+
+Uncontrolled related/analytical title 
+
+
+
+
+characters 
+
+
+$h 
+
+
+Medium 
+
+
+
+
+Second - Type of added 
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+entry 
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+# - No information 
+
+
+
+
+
+
+
+
+provided 
+
+
+
+
+
+
+
+
+2 - Analytical entry 
+
+
+
+
+
+
+800 
+
+
+First - Type of personal 
+
+
+
+
+Series Added Entry — Personal Name (R) 
+
+
+
+
+name entry element 
+
+
+$a 
+
+
+Personal name 
+
+
+
+
+- Forename 
+
+
+$b 
+
+
+Numeration 
+
+
+
+
+1 - Surname 
+
+
+$c 
+
+
+Titles and other words associated with a name 
+
+
+
+
+3 - Family name 
+
+
+$d 
+
+
+Dates associated with a name 
+
+
+
+
+Second - # - Undefined 
+
+
+$e 
+
+
+Relator term 
+
+
+
+
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+
+
+$h 
+
+
+Medium 
+
+
+
+
+
+
+$j 
+
+
+Attribution qualifier 
+
+
+
+
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+
+
+$m 
+
+
+Medium of performance for music 
+
+
+
+
+
+
+$n 
+
+
+Number of part/section of a work 
+
+
+
+
+
+
+$0 
+
+
+Arranged statement for music 
+
+
+
+
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+
+
+$q 
+
+
+Fuller form of name 
+
+
+
+
+
+
+$r 
+
+
+Key for music 
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+
+
+
+
+$t 
+
+
+Title of a work 
+
+
+
+
+
+
+$u 
+
+
+Affiliation 
+
+
+
+
+
+
+$v 
+
+
+Volume/Sequential designation 
+
+
+810 
+
+
+First - Type of corporate 
+
+
+
+
+Series Added Entry — Corporate Name (R) 
+
+
+
+
+name entry element 
+
+
+$a 
+
+
+Corporate name or jurisdiction name as entry element 
+
+
+
+
+- Inverted name 
+
+
+$b 
+
+
+Subordinate unit 
+
+
+
+
+1 - Jurisdiction name 
+
+
+$c 
+
+
+Location of meeting 
+
+
+
+
+2 - Name in direct order 
+
+
+$d 
+
+
+Date of meeting or treaty signing 
+
+
+
+
+Second - # - Undefined 
+
+
+$e 
+
+
+Relator term 
+
+
+
+
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+
+
+$g 
+
+
+Miscellaneous information 
+
+
+
+
+
+
+$h 
+
+
+Medium 
+
+
+
+
+
+
+$k 
+
+
+Form sub-heading 
+
+
+
+
+
+
+$1 
+
+
+Language of a work 
+
+
+
+
+
+
+$m 
+
+
+Medium of performance for music 
+
+
+
+
+
+
+$n 
+
+
+Number of part/section/meeting 
+
+
+
+
+
+
+So 
+
+
+Arranged statement for music 
+
+
+
+
+
+
+$p 
+
+
+Name of part/section of a work 
+
+
+
+
+
+
+$r 
+
+
+Key for music 
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+
+
+
+
+$t 
+
+
+Title of a work 
+
+
+
+
+
+
+$u 
+
+
+Affiliation 
+
+
+
+
+
+
+$v 
+
+
+Volume/Sequential designation 
+
+
+811 
+
+
+First - Type of meeting 
+
+
+
+
+Series Added Entry — Meeting Name (R) 
+
+
+
+
+name Entry element 
+
+
+$a 
+
+
+Meeting name or jurisdiction name as entry element 
+
+
+
+
+- Inverted name 
+
+
+$c 
+
+
+Location of meeting 
+
+
+
+
+1 - Jurisdiction name 
+
+
+$d 
+
+
+Date of meeting 
+
+
+
+
+2 - Name in direct order 
+
+
+$e 
+
+
+Subordinate unit 
+
+
+
+23 
+
+
+
+18 11370:2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfield 
+Identifier 
+
+
+Data Element 
+
+
+
+
+
+
+Second - # - Undefined 
+
+
+$f 
+
+Sg 
+$h 
+$k 
+$1 
+$n 
+$p 
+
+
+Date of a work 
+
+Miscellaneous information 
+
+Medium 
+
+Form sub-heading 
+
+Language of a work 
+
+Number of part/section/meeting 
+
+Name of part/section of a work 
+
+
+
+
+
+
+
+
+$q 
+
+
+Name of meeting following jurisdiction name entry | 
+
+
+
+
+
+
+
+
+element 
+
+
+
+
+
+
+
+
+$s 
+
+
+Version 
+
+
+
+
+
+
+
+
+$t 
+
+
+Title of a work 
+
+
+
+
+
+
+
+
+$u 
+
+
+Affiliation 
+
+
+
+
+
+
+
+
+$v 
+
+
+Volume/Sequential designation 
+
+
+
+
+830 
+
+
+First - # - Undefined 
+
+
+
+
+Series Added Entry— Uniform Title (R) 
+
+
+
+
+
+
+Second - Non-filing 
+
+
+$a 
+
+
+Uniform title 
+
+
+
+
+
+
+characters 
+
+
+$d 
+
+
+Date of treaty signing 
+
+
+
+
+
+
+0-9 - Number of non-filing 
+
+
+$f 
+
+
+Date of a work 
+
+
+
+
+
+
+characters 
+
+
+$g 
+$h 
+$k 
+$1 
+$m 
+$n 
+$0 
+$p 
+$r 
+$s 
+$t 
+$v 
+
+
+Miscellaneous information 
+
+Medium 
+
+Form sub-heading 
+
+Language of a work 
+
+Medium of performance for music 
+
+Number of part/section of a work 
+
+Arranged statement for music 
+
+Name of part/section of a work 
+
+Key for music 
+
+Version 
+
+Title of a work 
+
+Volume/Sequential designation 
+
+
+
+
+850 
+
+
+First - # - Undefined 
+
+
+
+
+Holding Institution (R) 
+
+
+
+
+
+
+Second - # - Undefined 
+
+
+$a 
+
+
+Holding institution 
+
+
+
+
+852 
+
+
+First - Shelving scheme 
+
+
+
+
+Location (R) 
+
+
+
+
+
+
+# - No information 
+
+
+$a 
+
+
+Location 
+
+
+
+
+
+
+provided 
+
+
+$b 
+
+
+Sub-location or collection 
+
+
+
+
+
+
+I-DDC 
+
+
+$c 
+
+
+Shelving location 
+
+
+
+
+
+
+2-UDC 
+
+
+$e 
+
+
+Address 
+
+
+
+
+
+
+4 - Shelving control No. 
+
+
+$f 
+
+
+Coded location qualifier 
+
+
+
+
+
+
+5 - Title 
+
+
+$g 
+
+
+Non-coded location qualifier 
+
+
+
+
+
+
+6 - Shelved separated 
+
+
+$h 
+
+
+Classification part 
+
+
+
+
+
+
+8 - Colon Classification 
+
+
+$i 
+
+
+Item part 
+
+
+
+
+
+
+Second - Shelving order 
+
+
+$j 
+
+
+Shelving control number 
+
+
+
+
+
+
+# - No information 
+
+
+$k 
+
+
+Call number prefix 
+
+
+
+
+
+
+provided 
+
+
+$1 
+
+
+Shelving form of title 
+
+
+
+
+
+
+- Not enumeration 
+
+
+$m 
+
+
+Call number suffix 
+
+
+
+
+
+
+1 - Primary enumeration 
+
+
+$n 
+
+
+Country code 
+
+
+
+
+
+
+2 - Alternative enumeration 
+
+
+$p 
+$q 
+$s 
+$t 
+$x 
+$z 
+
+
+Piece designation 
+Piece physical condition 
+Copyright article-fee code 
+Copy number 
+Non-public note 
+Public note 
+
+
+
+
+856 
+
+
+First - Access method 
+
+
+
+
+Electronic Location and Access (R) 
+
+
+
+
+
+
+# - No information provided 
+
+
+$a 
+
+
+Host name 
+
+
+
+
+
+
+- E-mail 
+
+
+$b 
+
+
+Access number 
+
+
+
+
+
+
+1-FTP 
+
+
+$c 
+
+
+Compression information 
+
+
+
+
+
+
+2 - Remote login (Telnet) 
+
+
+$d 
+
+
+Path 
+
+
+
+
+
+24 
+
+
+
+IS 11370 : 2008 
+
+
+
+Tag 
+
+
+Indicator 
+
+
+Subfleld 
+Identifler 
+
+
+Data Element 
+
+
+
+
+3 - Dialup 
+
+
+$f 
+
+
+Electronic name 
+
+
+
+
+4 -HTTP 
+
+
+$h 
+
+
+Processor of request 
+
+
+
+
+Second - Relationship 
+
+
+$i 
+
+
+Instruction 
+
+
+
+
+# - No information provided 
+
+
+$j 
+
+
+Bits per second 
+
+
+
+
+- Resource 
+
+
+$k 
+
+
+Password 
+
+
+
+
+1 - Version of resource 
+
+
+$1 
+
+
+Logon 
+
+
+
+
+2 - Related resource 
+
+
+$m 
+
+
+Contact for access assistance 
+
+
+
+
+8 - No display constant 
+
+
+$n 
+
+
+Name of location of host 
+
+
+
+
+generated 
+
+
+$0 
+
+
+Operating system 
+
+
+
+
+
+
+$p 
+
+
+Port 
+
+
+
+
+
+
+$q 
+
+
+Electronic format type 
+
+
+
+
+
+
+$r 
+
+
+Settings 
+
+
+
+
+
+
+$s 
+
+
+File size 
+
+
+
+
+
+
+$t 
+
+
+Terminal emulation 
+
+
+
+
+
+
+$u 
+
+
+Uniform Resource Identifier 
+
+
+
+
+
+
+$v 
+
+
+Hours access method available 
+
+
+
+
+
+
+$w 
+
+
+Record control number 
+
+
+
+
+
+
+$x 
+
+
+Non-public note 
+
+
+
+
+
+
+$y 
+
+
+Link text 
+
+
+
+
+
+
+$z 
+
+
+Public note 
+
+
+
+25 
+
+
+
+IS 11370 : 2008 
+
+ANNEX C 
+{Clause 3.1) 
+
+COMPLETE DESCRIPTIONS AND RECORD FORMAT OF DIFFERENT DOCUMENTS IN 
+
+ILLUSTRATIVE EXAMPLES 
+
+Examples: 
+
+I) AACR2R Description of the booli and bibliographic record for it. 
+
+2;51N3qN63 
+
+Ranganathan, S. R..(Shiyali Ramamrita), 1892-1972. 
+Colon Classification / by S R Ranganathan. - 6* ed. - Bombay : Asia Pub. House, 1963. 
+1 V. (various paginations); 22cm. - (Madras Library Association. Publication series; 26) 
+(Ranganathan series in library science; 4), 
+
+Contents: Basic classification. - Rules (pt.l). - Schedules of classification (pt.2). - Schedules of 
+classics and sacred books with special names (pt. 3). 
+Each section has special t.p. 
+"Reprinted, 1964". 
+
+1. Classification, Colon. I. Title. 11. Title: Series. 
+
+Complete Bibliographic Record 
+Leader 01060nam a22000277a 4500 
+
+001 1001 
+
+005 20040602000000.0 
+
+008 040602rl9631963ii000 0eng 
+
+040 ## $a INF $c INF $d INF 
+
+082 00 $a 025.4 
+
+084 ## $a 2;5 1N3 $b qN63 $2 CC 
+
+100 1# $a Ranganathan, S. R. $q (Shiyali Ramamrita), $d 1892- 1972. 
+
+245 00 $a Colon classification / $c by S. R. Ranganathan. 
+
+250 ## $a 6th ed. 
+
+260 ## $a Bombay : $b Asia Pub. House $c 1963 
+
+300 ## $a 1 V. (various pagings) $c 22 cm. 
+
+440 #0 $a Ranganathan series in library science; $v 4 
+
+410 20 $a Madras Library Association. $t Publication series; $v 26 
+
+500 ## $a Each section has special t.p. 
+
+500 ## $a "Reprinted, 1964." 
+
+505 0# $a Basic classification — Rules (pt. 1) — Schedules of classification (pt. 2). — 
+
+Schedules of classics and sacred books with special names (pt. 3). 
+
+650 #0 $a Classification, Colon. 
+
+850 ## $a INFL-380009 
+
+852 1# $a INF $b TXT COLL $c 2 $h 025.4 $i qN63 $p 163 $t c2 
+
+
+
+26 
+
+
+
+IS 11370 : 2008 
+
+2) AACR2R description of the map and bibliographic record for it. 
+
+Tej Bros. 
+
+Road map of India : seeing places of interest in India made easy through this road, rail, sea & 
+air route map guide / Tej Bros. - Latest ed. — Scale [ca. 1:5,385,600]. — Bombay [India] : Tej 
+Bros., [1990?]. 
+
+1 map : col. ; 57 x 48 cm., folded in cover 17x12 cm. 
+
+Includes statistical figures, table of distances by road and by rail, ill. of places of interest, a 
+note, and insets of India showing states and air and sea routes. 
+Text on verso. 
+
+1. India - Road Maps. 2. India - Maps, Tourist. I. Title 
+
+Complete Bibliographk Record 
+Leader 01123nem 2200313 a 450 
+
+001 16242 
+
+005 20040131000000.0 
+
+007 ajjcanzn 
+
+008 040225s 1 990 ii a eng 
+010 ##$3 90684429 
+
+020 ## $c R56.OO 
+
+034 l#$a a $b 5385600 
+
+040 ## $a INF $c INF $d INF 
+
+050 00 $a G765 1 .P2 1 990 $b .T4 
+
+052 ##$a7651 
+
+110 2# $a Tej Bros. 
+
+245 10 $a Road map of India : $b seeing places of interest in India made easy through this 
+
+road, rail, sea & air route map guide. 
+
+250 ## $a Latest ed. 
+
+255 ## $a Scale [ca. 1 :5,385,600]. 
+
+260 ## $a Bombay [India] : $b Tej Bros., $c [1990?] 
+
+300 ##$a 1 map: $b col. ;$c 57x48 cm., folded in cover 17 X 12 cm. 
+
+500 ## $a Includes statistical figures, table of distances by road and by rail, ill. of places of 
+
+interest, a note, and insets of India showing states and air and sea routes. 
+
+500 ## $a Text on verso. 
+
+651 #0 $a India $x Road maps. 
+
+651 #0 $a India $x Maps, Tourist. 
+
+850 ## $a INFL-380009 
+
+852 1# $a INF $bREF COLL $c 2 $h 025.4 $iqN90$p 269 $tc2 
+
+3) AACR2R description of the sound recording. 
+
+Lata Mangeshkar, 1929 - . 
+
+Diamonds forever, [sound recording] / Lata Mangeshkar. - Calcutta : His Master's Voice, 
+pl989. 
+4 sound cassettes : analog. 
+
+
+
+27 
+
+
+
+IS 11370 : 2008 
+
+
+
+His Master's Voice; TPHV 41608-TPHV 41611. 
+
+Sung in Hindi. 
+
+"60 years, 60 songs" — Inlay sheet. 
+
+Songs from popular Hindi motion pictures. 
+
+1. Songs, Hindi - India. 2. Motion picture music - India. 
+
+Complete Bibliographic Record 
+
+Leader 01253njm 22003857a 450 
+
+001 27494 
+
+005 19990209081758.5 
+
+007 ss|lunjlcmnnue 
+
+008 981I10sl989iimpnhin 
+010 ##$a 90905881 
+
+020 ##$cRs. 23.00 (Per Vol.) 
+
+025 ## $a I-Sr-5028; 05 
+
+028 00 $a TPHV 41 608 $b His Master's Voice 
+
+028 00 $a TPHV 41611 $b His Master's Voice 
+
+040 ## $a INF $c INF 
+
+043 m $a a-ii— 
+
+050 00 $a RYB 0942-0945 
+
+100 1 # $a Lata Mangeshkar, $d 1 929- 
+
+245 1 $a Diamonds forever $h [sound recording] / $c Lata Mangeshkar. 
+
+260 ## $a Calcutta : $b His Master's Voice, $c pi 989. 
+
+300 ## $a 4 sound cassettes : $b analog. 
+
+500 ## $a His Master's Voice: TPHV 4 1 608-TPHV 41611. 
+
+546 ## $a Sung in Hindi. 
+
+500 ## $a "60 years, 60 songs"--Inlay sheet. 
+
+520 ## $a Songs from popular Hindi motion pictures. 
+
+500 ## $a Production level cataloguing. 
+
+650 #0 $a Songs, Hindi $z India. 
+
+650 #0 $a Motion picture music $z India. 
+
+850 ## $a INFL-380009 
+
+852 ## $a RecSound |h RYB 0942-0945 |w MUSIC 
+
+4) AACR2R description of tlie videorecording. 
+
+361/.0078 
+
+Oswald, Ida. 
+
+This bag is not a toy : a handbook for the use of videorecording in education for the professions 
+/ by Ida Oswald and Suzanne Wilson. Diagrs. by Teresa J. K. Wallden. - New York : Cotmcil on 
+Social Work Education, [1971]. 
+
+X, 133 p. ; illus. ; 22 cm. 
+
+On spine: Videorecording in education. 
+Includes bibliographical references. 
+
+1. Social work education. I. Wilson, Suzanne, 1928- II. Council on Social 
+Work Education. III. Title. 
+
+28 
+
+
+
+IS 11370 : 2008 
+
+Comptete Bibliographic Record 
+
+000 01029cam 2200277 450 
+
+001 802263 
+
+005 19741112000000.0 
+
+008 710713sl971nyuab000 0eng 
+
+010 ##$8 75151625 
+
+040 ## $a INF $c INF $d INF 
+
+050 00$aHVll$b,O8 
+
+082 00$a361/.0078 
+
+100 1# $a Oswald, Ida. 
+
+245 10 $a This bag is not a toy : $b a handbook for the use of videorecording in education for the 
+professions / $c by Ida Oswald and Suzanne Wilson. Diagrs. by Teresa J. K. Wallden. 
+
+260 ## $a New York : $b Council on Social Work Education, $c [197 1] 
+
+300 ## $a X, 1 33 p.: $b illus. ; $c 22 cm. 
+
+500 ## $a On spine: Videorecording in education. 
+
+504 ## $a Includes bibliographical references. 
+
+650 #0 $a Social work education. 
+
+650 #0 $a Video tapes. 
+
+700 1# $a Wilson, Suzanne, $d 1928- $e joint author. 
+
+710 2# $a Council on Social Work Education. 
+
+740 ## $a Videorecording in education. 
+
+850 M $a INFL-380009 
+
+5) AACR2R description of the electronic serial. 
+
+Journal of Internet Cataloguing / Haworth Press. - Vol. 1, no. 1 (1997)- . - 
+Binghamton, NY : Haworth Press, 1997- 
+
+V. ; $c 25 cm. 
+
+Quarterly. 
+
+Title from cover. 
+
+Vol. 1 published over three years, 1997-1999. 
+
+Table of contents and abstracts from this journal can be found at the JIC home 
+Page. 
+
+Also available via World Wide Web; OCLC FirstSearch Elecfronic Collections 
+Online; Subscription required for access to abstracts and fiiU text. 
+
+SERBIB/SERLOC merged record. 
+
+ACQN:aq 97009157. 
+
+http://firstsearch.oclc.org. Address for accessing the journal using authorization number and 
+password through OCLC FirstSearch Electronic Collections Online. Subscription to online journal 
+required for access to abstracts and frill text. 
+
+http://firstsearch.oclc.org/joumal=1091-1367;screen=info;ECOIP. Address for accessing the 
+journal from an authorized IP address through OCLC FirstSearch Electronic Collections Online. 
+Subscription to online journal required for access to abstracts and fiill text. 
+
+Table of contents and absfracts. 
+http://www.haworthpressinc.com/store/product.asp?sku=J141. 
+
+1. Cataloguing of computer network resources - Periodicals. 2. Cataloguing of computer 
+network resources - United States - Periodicals. I. Journal of Internet cataloguing (Online). 
+
+29 
+
+
+
+IS 11370: 2008 
+
+
+
+Complete Bibliographic Record 
+
+Leader 02870cas 22006 1 3 a 450 
+
+001 11486852 
+
+005 20031116180245.0 
+
+008 960131cl9979999nyuqrlp0a0engd 
+
+010 ## $a 97655064 $z sn 96004762 
+
+012 ## Sa -3-7-031 1151639-P-97 11 11 
+
+022 0#$a 1091-1367 
+
+030 Un $a JICTFP 
+
+037 ## $b Haworth Press, 10 Alice Street, Binghamton, N.Y. 13904-1580 
+
+040 m $a INF $c INF $d INF 
+
+042 m $a nsdp $a Ic 
+
+043 M $a n-us— 
+
+050 00$aZ695.24$bJ68 
+
+072 #0 $a X200 
+
+082 00 $a 025.3/44 $2 21 
+
+082 10Sa025S2 12 
+
+210 0# $a J. Internet cat. 
+
+222 #0 $a Journal of Internet cataloguing 
+
+245 00 Sa Journal of Internet cataloguing. 
+
+249 0$ $i ACQUIRE Title: $a Journal of Internet cataloguing 
+
+260 ## $a Binghamton, NY : $b Haworth Press, $c 1997- 
+
+300 ## $a V. ; $c 25 cm. 
+
+310 ## $a Quarterly 
+
+362 0# $a Vol. 1, no. 1 (1997)- 
+
+500 Un $a Title from cover. 
+
+515 ## $a Vol. 1 published over three years, 1997-1999. 
+
+530 ## Sa Table of contents and abstracts from this journal can be found at the JIC home page. 
+
+530 m $a Also available via World Wide Web; $b OCLC First Search Electronic Collections 
+
+Online; $c Subscription required for access to abstracts and fiill text. 
+
+590 m $a SERBIB/SERLOC merged record 
+
+592 ##$aACQN:aq 97009157 
+
+650 #0 1$ Cataloguing of computer network resources $v Periodicals. 
+
+650 #0 $a Cataloguing of computer network resources $z United States $v Periodicals. 
+
+776 1# $t Journal of Internet cataloguing (Online) $w (OCoLC)483 88826 
+
+850 m $a INFL.3 80009 
+
+856 4# $u http://firstsearch.oclc.org $z Address for accessing the journal using authorization 
+
+number and password through OCLC FirstSearch Electronic Collections Online. 
+
+Subscription to online journal required for access to abstracts and fiill text 
+
+856 4# $u http://firstsearch.oclc.org/joumal=1091-1367;screen=info;ECOIP $z Address for 
+
+accessing the journal from an authorized IP address through OCLC FirstSearch Electronic 
+Collections Online. Subscription to online journal required for access to abstracts and full 
+text 
+
+856 4 1 #3 Table of contents and abstracts $u 
+
+http://www.haworthpressinc.comyslore/product.asp?sku=J141 
+
+
+
+30 
+
+
+
+(Continued from second cover) 
+
+The Unicode Consortium. The Unicode Standard, Version 4.0.-1, defined hy: The Unicode Standard, Version 
+4.0 (Reading, MA, Addison- Wesley, 2003. ISBN 0-321- 18578-1), as amended by Unicode 4.0.1 
+
+http://www.unicode.Org/versions/Unicode4.0.l/ 
+
+The record format described in this guide is in conformity with that of IS 1 4873 : 2000/ISO 2709 : 1 996 'Information 
+and docimientation — Format for information exchange', but at the same time it has certain distinctive features. 
+Apart from describing the record format, this Guide gives an illustrative list of data elements different for different 
+kinds of documents together with the corresponding tags, indicators and subfield identifiers. This facilitates this 
+guide for being used for the bibliographic description of different kinds of documents. All the variable data fields 
+in this record format have the same structure. This will facilitate easier manipulation of data. Moreover, a separate 
+local use block has been provided in this format for communicating variations in data or new data for local use. 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods 
+and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any form 
+without the prior permission in writing of BIS. This does not preclude the free use, in the course of 
+implementing the standard, of necessary details, such as symbols and sizes, type or grade designations. 
+Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed 
+periodically; a standard along with amendments is reaffirmed when such^view indicates that no changes are 
+needed; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards 
+should ascertain that they are in possession of the latest amendments or edition by referring to the latest issue of 
+'BIS Catalogue' and 'Standards : Monthly Additions'. 
+
+This Indian Standard has been developed from Doe : No. MSD 5 (314). 
+
+
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters 
+
+
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 10 002 
+Telephones : 2323 0131, 2323 3375, 2323 9402 
+
+
+
+Regional Offices 
+Central 
+
+
+
+Eastern 
+
+
+
+Western 
+
+
+
+Branches 
+
+
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110002 
+
+1/14 C.LT. Scheme VII M, V. I. P. Road, Kankurgachi 
+KOLKATA700054 
+
+
+
+Northern : SCO 335-336, Sector 34- A, CHANDIGARH 160 022 
+
+
+
+Southern : C.LT. Campus, IV Cross Road, CHENNAI 600 1 1 3 
+
+
+
+Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400 093 
+
+
+
+Telegrams : Manaksanstha 
+(Common to all offices) 
+
+Telephone 
+
+f 2323 7617 
+\ 2323 3841 
+
+r 2337 8499, 2337 8561 
+\. 2337 8626, 2337 9120 
+
+/260 3843 
+\ 260 9285 
+
+/2254 1216. 2254 1442 
+\2254 2519, 2254 2315 
+
+/ 2832 9295, 2832 7858 
+\ 2832 7891, 2832 7892 
+
+
+
+AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. FARIDABAD. 
+GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+PARWANOO. PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM, VISAKHAPATNAM. 
+
+
+
+Printed atFtabhat Offset Press, New Delhi-2 
+
+
+

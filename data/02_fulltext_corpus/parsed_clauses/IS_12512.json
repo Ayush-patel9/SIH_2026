@@ -1,0 +1,72 @@
+{
+  "is_number": "IS IS_12512",
+  "standard_id": "IS IS_12512",
+  "title": "Indian Standard Specification / Test Method (IS IS_12512)",
+  "ia_identifier": "IS_12512",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes the mechanical and physical properties and the corresponding tests for HDPE containers of nominal capacities 2, 3 and S litres intended to contain, and transport liquid pesticides.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 8190",
+      "standard_id": "IS 8190",
+      "title": "Indian Standard Specification / Test Method (IS 8190)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7028",
+      "standard_id": "IS 7028",
+      "title": "Indian Standard Specification / Test Method (IS 7028)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7408",
+      "standard_id": "IS 7408",
+      "title": "Indian Standard Specification / Test Method (IS 7408)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7328",
+      "standard_id": "IS 7328:2020",
+      "title": "Specification for Polyethylene Material for Moulding and Extrusion ( Third Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Polyethylene (Quality Control) Order, 2024"
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade biuary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12512"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 14943
+}

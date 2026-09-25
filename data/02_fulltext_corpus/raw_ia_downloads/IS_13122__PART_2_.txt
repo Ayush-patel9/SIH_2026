@@ -1,0 +1,3526 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+IS 13122-1 (1993) : Transmitters for Use in 
+Industrial-Process Control Systems, Part 1: Methods for 
+Evaluating the Performance [ETD 18: Industrial Process 
+Measurement and Control] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+aj^&vf iJii^s:y%K^ isb^^ni^seg 
+
+
+
+:<>5&i| mT'5K^5?::5:^>^i»l 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 13122 ( Part 1 ): 1993 
+
+mr^ m^ ^ Reaffirmed 2001 ) 
+
+Indian Standard 
+
+TRANSMITTERS FOR USE IN INDUSTRIAL- 
+PROCESS CONTROL SYSTEMS -SPECIFICATION 
+
+PART 1 METHODS FOR EVALUATING THE PERFORMANCE 
+
+
+
+UDC 621-396-61 : 65-011-56 : 621-523 
+
+
+
+© BIS 1993 
+
+BUREAU OFINDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+•^«»« 1993 p,ice Group 7 
+
+
+
+Industrial Process Measurement and Control Sectional Committee, ETD 18 
+
+
+
+FOREWORD 
+
+This Indian Standard ( Part 1 ) was adopted by the Bureau of Indian Standards, after the draft finalized 
+by the Industrial Process Measurement and Control Sectional Committee had been approved by the 
+Electrotechnical Division Council. 
+
+The methods of evaluation specified in this standard are intended for use by manufacturers to 
+determine the performance of their products and by users or independent testing esiablishments to 
+verify manufacturers' performance specifications. 
+
+This standard ( Part 1 ) is intended to specify uniform methods of test for the evaluation of the 
+perfprmance of transmitters with pneumatic or electric output signals. 
+
+Part 2 of this standard provides guidance for installation, inspection and routine testing of these 
+transmitters. 
+
+The test conditions in this standard, for example, the range of ambient temperatures and power 
+supply, represent those which commonly arise in use. Consequently, the values specified herein shall be 
+used where no other vahies are specified by the manufacturer. 
+
+The tests specified in this standard are not necessarily sufficient for instruments specifically designed 
+for unusually arduous duties; conversely, a restricted series of tests may be suitable for instruments 
+designed to perform witriin a more limited range of conditions. 
+
+It will be appreciated that the closest communication should be maintained between the manufacturer 
+and the evaluating body while deciding the test programmes. Note shall be taken of the manufacturer's 
+specifications for the instrument and the manufacturer should be invited to comment on both the test 
+programmes and the results. 
+
+When a full evaluation in accordance with this standard is not required those tests which are required 
+shall be performed and the results reported in accordance with those parts of the standard which ar-e 
+relevant ( see Part 2 ) of this standard. 
+
+While preparing this standard, assistance was derived from lEC Publication 770:1984 'Methods of 
+evaluating the performance of transmitters for use in industrial-process control systems % issued by the 
+International Electrotechnical Commission ( lEC). 
+
+For the purpose of deciding whether a particular requirement of this standard is complied with, the 
+final value, observed or calculated, expressing the result of a test or analysis, shall be rounded off in 
+accordance with IS 2 : I960 'Rules for rounding off numerical values ( revised)\ The number of 
+significant places retained in the rounded off value should be the same as that of the specified value in 
+this standard. 
+
+
+
+IS 13122 (Part 1) : 1993 
+
+Indian Standard 
+
+TRANSMITTERS FOR USE IN INDUSTRIAL- 
+PROCESS CONTROL SYSTEMS — SPECIFICATION 
+
+PART 1 METHODS FOR EVALUATING THE PERFORMANCE 
+
+
+
+1 SCOPE 
+
+1.1 This stfuidiird is applicable lo iransmiUers which 
+have cither a standard electric current output signal as 
+per IS 7728 : 1984 or a standard pneumalic output 
+signal in accordance with IS 7722 : 1975, or a standard 
+voltage output signal as per IS 8493 ; 1977. 
+
+1.2 The tests detailed herein may be applied to traivs- 
+mitters which have other output signals, provided that 
+due allowance is made tor such difference. 
+
+1.3 Transmitters for the measurement of electrochemi- 
+cal properties, such as/;H transmitters, are not covered 
+by this standard. 
+
+2 REFERENCES 
+
+The Indian Standards listed in Annex A are necessary 
+adjuncts to this standard. 
+
+3 TERMINOLOGY 
+
+3.0 For the purpose of this standard, the following 
+definitions shall apply. 
+
+3.1 Conformity of a curve, the closeness to which it 
+approximates a specified curve (for example, linear, 
+logarithmic, parabolic, cubic, square root, etc). 
+
+3.1.1 Conformiiyy Independent 
+
+The maximum deviation of the actual characteristic 
+(average of upscale and dowascale readings) from a 
+specified curve, so positioned as to minimize the 
+maximum deviation. 
+
+3.1.2 Conformity, Tennimil-Based 
+
+The maximum deviation of the actual characteristic 
+(average of upscale and downscaie readings) from a 
+specified curve coinciding with the actual charac- 
+teristic at upper and lower range-values. 
+
+3.1.3 Conformity, Zero-Based 
+
+The maximum deviation of the actual characteristic 
+(average of upscale and downscaie readings) from a 
+specified curve so positioned as to coincide with the 
+actual characteristic at the lower range-value and to 
+minimize the maximum deviation. 
+
+3.2 Deadliand 
+
+The largest cha ngc in input that can be effected without 
+causing a detectable change in output. 
+
+3.3 Hysteresis 
+
+That property of an element evidenced by the depend- 
+ence of the values of the output, for a given excursion 
+of the input, upon the history of prior excursion the 
+direction of the current traverse. 
+
+
+
+3.3.1 Hysteresis Error 
+
+That portion of hysteresis due to energy absorption in 
+the elements of a measuring instrument. Unless other- 
+wise specified it should be determined by subtracting 
+the effect of the dead band from the maximum 
+measured separation between upscale-going and 
+downscale-going indications of the measured variable 
+during a full range traverse. 
+
+3.4 Ran^e 
+
+The region between the limits within which a quantity 
+is measured, received or transmitted; limits are given 
+by stating the lower and upper range-values. 
+
+Example : Pa, 20 Pa, or 4 niA, 20 iiiA. 
+
+NOTE - TnuismiUers may be supplied with tiianual or 
+automatic means of adjusting the range. As used in this 
+standard the term "range" and the definitions below apply 
+lo the characteristics of the transmitter tbr a specified 
+setting of the adjustment means. 
+
+3.4.1 Elevated Zero Range 
+
+A range in which the zero value of the measured vari- 
+iMc is greater than the lower range-value. 
+
+Example : - lO^C to +3Q^C. 
+
+3.4.2 Lower Range-Value 
+
+The lowest value of the measured variable that a device 
+is adjusted to measure. 
+
+3.4.3 Upper Range-Value 
+
+The highest value of the measured variable that a 
+device is adjusted to uieasure. 
+
+3.4.4 Span 
+
+The algebra tic difference between the upper and lower 
+range-values, for example : 16 niA when the range is 4 
+m A to 20 niA or 20 Pa when the ra nge is Pa to 20 Pa . 
+
+3.4.5 Suppressed Zero Range 
+
+A range in which the zero value of the measured vari- 
+able is less than the iower-range-value, for example 
+200''C to SOO'^C. 
+
+3.5 Repeatability 
+
+The closeness of agreement among a numlier of coasecu- 
+live measurements of the output for the same value of the 
+input under the same operating conditions, approaching 
+from the same direction, far full range traverses. 
+
+3.6 Transmitter 
+
+A device which responds to a measured variable to 
+produce a standard output signal for transmission 
+which has a prescribed continuous relationship to the 
+value of the measured variable. 
+
+
+
+1 
+
+
+
+IS 13122 (Part 1) : 1993 
+
+
+
+3.7 Zero Adjustnient 
+
+A means provided in an instauuent to cause a parallel 
+shift in the input-output curve. 
+
+4 GENERAL TESTING PROCEDHKES 
+
+4.1 Selection <»f Ranges for Test 
+
+Unless otherwise specified by the manufacturer where 
+the span is adjustable other than to take up manufactur- 
+ing tolerances, the tests shall be carried out with the 
+span adjustment set approximately at the 
+manufacturer's stated minimum and maximum and at 
+an intermediate value. 
+
+4.1.1 Unless otherwise specilled by the manufacturer, 
+where the zero adjustment is adjustable other than to 
+take up manufacturing tolerance, such as devices 
+equipped with means for suppression or elevation of 
+zero, the tests shall be carried out with the eleva- 
+tion/suppression adjustment set for its minimal effect, 
+then at its extremes. 
+
+If the extent of adjustment is more than twice the 
+maximum span, tests shall also be carried out with the 
+adjustment set approximately at the arithmetic mean of 
+the two extreme values of elevation aud/or suppression. 
+
+4.1.2 Testing of a traasniitter with provision for sub- 
+stantial adjustment of both span and zero in accordance 
+with 3.1.1 and 3.1.2 may require an impractically large 
+number of tests. Preliminary tests should be conducted 
+to determine the effect of changing span and zero 
+adjustments on the characteristic being measured so 
+that redundant tests can be eliminated from the test 
+programme in cases where the characteristic can be 
+inferred reliably fntm fewer tests. For example, 
+hysteresis and dead band may not be significantly 
+affected by selection of the lower and upper range value 
+if the span is held constant, and often may be calculated 
+tor diO'erent spans from measurements at a single span 
+setting. In any case the report should clearly indicate 
+relevant values of the measured parameters for each 
+setting of the adjustments so that the values of 
+measured error, hysteresis, dead band, etc, are all ref- 
+erenced to the same adjustnient of the transmitter. 
+
+4.2 Zero and span should be adjusted to make the 
+actual characteristic conform closely to ideal values at 
+the upper and lower range limits before the tests 
+specified in each clause of this standard. When this is 
+done the [\\v{ shall be stated in the evaluation report. 
+
+4.3 Unless otherwise stated, the test results shall be 
+expressed as percentages of output span. 
+
+4.4 When performance characteristics are specified, 
+they shall be t^ibulated beside the actual test results. 
+
+4.5 The limit of error of the measuring systems used 
+for the test shall be stated in the test report and should 
+be smaller tha n or equal to one-fourth of the stated limit 
+of error of the instrument tested {see 5.5.1). 
+
+4.6 An adequate time, as specified by the manufacturer, 
+shall be allowed after switching on the power supply in 
+order to allow temperature within the transmitter to stabi- 
+lize. In the absence of manufacturerspecification, a period 
+of at least 15 min should Ik allowed. 
+
+
+
+4.7 Errors shall be expressed as dei)arture from the 
+input/output relationship specified by the manufric- 
+turer. 
+
+For example : A ^temperature transmitter' may have an 
+output intended to be linear with respect to input emf 
+or incoq)orate a network intended to linearize the out- 
+put with respect to temperature. To determine the error 
+in the first example, the input/output relationship 
+would be emf to output; in thesecond example, it would 
+be temperature to output. Although the sattie test pro- 
+cedure may be applied, the errors shall be assessed 
+differently. 
+
+5 ENVIRONMENTAL TEST C:ONI)niONS 
+
+5.1 Standard Retei-ence Atmosphere 
+
+Tempera lu re 27"C 
+
+Relativii humidity 65 percent 
+
+Atmospheric pressure 1 1 .3 kPa 
+
+This standard reference atmosphere is that atmosphere 
+to which values measured under aity other atnvospheric 
+conditions are corrected by calculation. 
+
+It is recognized that in many cases a correction factor 
+for humidity is not possible. In such cases the standard 
+reference atmosphere takes account of temperature and 
+pressure only. 
+
+This atmosphere is equivalent to the normal reference 
+operating conditions usually identified by the manufac- 
+turer. 
+
+5.2 Recommended Range of Ambient Conditions 
+for Test Measurements 
+
+LS^CtoSS'^C 
+
+45 percent to 75 
+
+percent 
+
+S6 kPa to 106 kPa 
+
+Value to be stated, if 
+
+relevant 
+
+
+
+Temperature 
+Relative humidity 
+
+Atomospheric pressure 
+Electromagnetic field 
+
+
+
+The maximum rate of temperature change permissible 
+duringany test shall be l^Cin 10 min. These conditions 
+may be equivalent to nomial operating conditions. 
+
+5,3 Reference Conditions During Tests 
+
+5.3.1 Electrical Supply 
+
+a) Rated voltage 
+± 1 percent 
+
+b) Rated frequency 
+
+± 1 percent 
+
+c) Harmonic distortion (ac supply) 
+
+Less than 5 percent 
+
+d) Ripple (dc supply) 
+
+Less than 0.1 percent. 
+NOTF. - Tolerances are not applicalile to transmitters 
+with seit'-contained power supplies. 
+
+5.3.2 Pneumatic Supply 
+a) Rated pressure 
+
+± 1 percent 
+
+
+
+IS 13122 (Part 1) : 1993 
+
+
+
+b) Supply air Icinperature 
+
+AinbieiU temperature ± 2"C 
+
+c) Supply air humidity 
+
+Dew-point at least 10"C below transmitter body 
+temperature 
+
+d) Oil and dusl tree 
+
+NOTE - An oil ainteiit not greater Uian one pari per 
+million and absence of dust particles greater than 3 |.ini is 
+considered to t:)C an "oi! and dust free' supply. 
+
+5.4 lAnul Impedance ^ 
+
+The value given by the manutaeturer shall be used 
+lor electric transmitters. If the manufacturer gives a 
+range of values, the load impedance taken shall be 
+equal to: 
+
+a) the minimujn value specified l^y the manufac- 
+turer for transmitter with direct voltage output 
+signal; and 
+
+b) the maximum value specified by the manufac- 
+turer for a transmitter with direct current output 
+signal, 
+
+U nless ot he rw i se s 1 a \ e d by \ he n\a nn la etii re r, far 
+pneumatic transmitters an 8 m length of 4 mm internal 
+diameter rigid pipe followed by a 20 cnr capacity shall 
+be used, 
+
+NO'fE - Care should he taken tct ensure that pneumatic 
+connections are leak-tight. 
+
+5.5 Other Conditions 
+
+Spurious induced voltage or pressure tluctualion shall 
+have negligible etfecl ou the uieasurement. 
+
+Transmitter position during the lest shall be any normal 
+operating position specified by the manufacturer. Only 
+one of the permitted positions shall tx: used throughout 
+the tests. 
+
+External mechanical coi\straints shall be negligible. 
+
+When normal operatiou requires a (low of process 
+fluid through the measuring element, the flow rate 
+shall be adjusted to the mean of the maximum and 
+minimum values specified by the manufacturer. The 
+temperature of the fluid shall t)e maintained within 
+± 2°C of a valtjje within the range specified by the 
+manufacturer. The composition of the Huid shall be 
+such that it will not have an adverse effect on the 
+instrument under lest. 
+
+5.5,1 Accuracy of Mciliod of Measurement 
+
+The result of a measurement should t>e recorded in a 
+measurement report. The method of measurement 
+should be two class indices better than the accuracy 
+class given in the instrument manual. 
+
+The maximum resultant error of the instru- 
+ments/standards which measure the inputs 
+(measurands) and the output should be below the 
+value indicated ia the table. 
+
+
+
+Class Index of the 
+
+Transmitted to he 
+
+Measured 
+
+
+Maximum 
+Possible Error 
+of the Instruments/ 
+Standards 
+
+
+0.16 
+
+
+±0.04 
+
+
+0,25 
+
+
+±0.06 
+
+
+0.4 
+
+
+±0.1 
+
+
+0.6 
+
+
+±0.15 
+
+
+I.O 
+
+
+±0.25 
+
+
+1.6 
+
+
+±0.1 
+
+
+2.3 
+
+
+±0.6 
+
+
+
+6 SAMPLE CALCIII^TIONS 
+
+6.0 Sample measurement tabulation and tlie deviation 
+curves are given in Table 1 and Fig. 1. 
+
+6.1 From col 9 in Table 1, we observe Ihat the greatest 
+positive deviation from an (tverage occurs at 20 percent 
+and 30 percent input on the downscale measurements 
+and is 0.25 percent. 
+
+From col 8 in Table 1 we find that the greatest negative 
+deviation from an average occurs at 70 percent input 
+on the upscale measurements and is 0.3 percent. 
+
+6.2 Conformity 
+
+6.2.1 It is usually measured in terms of non-conformity 
+and expressed as conformity; for example, the maxi- 
+mum deviation between an average curve and a 
+specified curve. The average curve is determined after 
+making two or more full-range travenies in each direc- 
+tion. The value of conformity is reterred to the output 
+span unless otherwise stated. 
+
+6.2.2 As a performance specification, conformity may 
+be expressed as independent conformity, terminal- 
+based conformity, or zero-based conformity. 
+
+6.2.3 Linearity is a specific, but often used, case of 
+conformity where the specified curve is a straight line. 
+
+6.2.4 The terminal-based straight line has a slope of 
+0.001 5 and a value of 0.05 at percent input. The 
+largest average negative deviation occurs at 70 percent 
+inputand is-0.225.The intercept of the terminal based 
+straight line at 70 percent input is +0.55. Therefore, the 
+negative value of conformity is -0.280. 
+
+The largest average positive deviation occurs at 20 
+percent input and is +0,175. The intercept of the ter- 
+mii\al based straight line at 20 percent input is -0.020. 
+Therefore, the positive value of conformity is +0.195. 
+
+6.3 Hysteresis (Hysteresis ErrorFUis Etfeetof Dead 
+IJand) 
+
+6,3.1 The largest difference between the average values 
+for upscale and downscale measurements occurs at 40 
+percent input and is 0.20 percent, 
+
+6.4 Repeatability 
+
+It is usually measured in terms of non-repeatability, but 
+expressed as repeatabijity. 
+
+6.4,1 The formula for calculating repeatability is : 
+[{x,-^xf/N^ 
+
+
+
+Table 1 Sample Measurement Tabulation 
+
+(Clauses 6.0 and 6A) 
+
+
+
+
+
+
+
+
+
+Error (Percentage of Output Span) 
+
+Input (percent) Dp Actual Down Actual Up Actual Down Actual Up Actual Down Actual 
+
+(1) (2) (3) (4) (5) (6) (7) 
+
+
+
+
+
+
+
+10 
+
+
+
+20 
+
+
+
+30 
+
+
+
+40 
+
+
+
+50 
+
+
+
+60 
+
+
+
+70 
+
+
+
+80 
+
+
+
+90 
+
+
+
+4-0.06 
+
+
+
++0.13 
+
+
+
+fO.ll 
+
+
+
+-0.04 
+
+
+
+-0.18 
+
+
+
+-0.27 
+
+
+
+'0.32 
+
+
+
+-0.27 
+
+
+
+-0.16 
+
+
+
+-0.04 
+
+
+
+f0.14 
+
+
+
++0.23 
+
+
+
++0.24 
+
+
+
++0.13 
+
+
+
+• 0.02 
+
+
+
+-0-.12 
+
+
+
+-0.17 
+
+
+
+-0.17 
+
+
+
+-0.06 
+
+
+
++0.04 
+
+
+
++0.0S 
+
+
+
++0.09 
+
+
+
+-0.07 
+
+
+
+-0.16 
+
+
+
+-0.25 
+
+
+
+-0.30 
+
+
+
+-0.26 
+
+
+
+-0.05 
+
+
+
+-0.05 
+
+
+
++0.15 
+
+
+
++0.26 
+
+
+
++0.25 
+
+
+
++0.15 
+
+
+
++0.01 
+
+
+
+-0.10 
+
+
+
+-0.16 
+
+
+
+-0.15 
+
+
+
+-0.05 
+
+
+
+0.05 
+
+
+
++0.09 
+
+
+
++0.10 
+
+
+
+-0.04 
+
+
+
+-0.13 
+
+
+
+-0.23 
+
+
+
+-0.28 
+
+
+
+-0.22 
+
+
+
+-0.14 
+
+
+
+-0.06 
+
+
+
++0.16 
+
+
+
++0.26 
+
+
+
++0.26 
+
+
+
++0.17 
+
+
+
++0.01 
+
+
+
+-0.08 
+
+
+
+-0.12 
+
+
+
+-0.13 
+
+
+
+-0.04 
+
+
+
+Up Average 
+
+(8) 
+
++0.05 
++0.10 
++0.10 
++0.15 
+-0.16 
+
+
+
+Down Average Average Error ^ 
+
+
+
+-0.25 
+
+
+
+-0.30 
+
+
+
+-0.25 
+
+
+
+-0.15 
+
+
+
+(9) 
+
+
+
+-0.05 
+
+
+
+-0.15 
+
+
+
++0.25 
+
+
+
++0.25 
+
+
+
++0.45 
+
+
+
+0.00 
+
+
+
+-O.IO 
+
+
+
+-0.15 
+
+
+
+-0.1: 
+
+
+
+-0.05 
+
+
+
+(10) 
+
+
+
+-0.05 
+
+
+
++0.10 
+
+
+
++0.175 
+
+
+
++0.175 
+
+
+
++0.05 
+
+
+
+-0.08 
+
+
+
+-0.175 
+
+
+
+-0.225 
+
+
+
+-0.20 
+
+
+
+-0.10 
+
+
+
+100 
+
+
+
++0.09 
+
+
+
++0.11 
+
+
+
++0.10 
+
+
+
++0.10 
+
+
+
++0.10 
+
+
+
+LS 13122 (Fart 1) : 1993 
+
+
+
+0-3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,/ 
+
+
+
+
+\J 
+
+
+/-DOWN SCALE CURVES 
+
+
+
+
+iO-2 
+
+
+
+
+f 
+
+
+
+
+
+
+/ ^ 
+
+
+
+
+s^ 
+
+
+\ 
+
+
+r-TERMlNAL-BASeO 
+\ STRAIGHT LINE 
+
+
+
+
+I/) 
+
+I"" 
+
+i 
+
+z 
+
+
+/; 
+
+
+
+
+/^ 
+
+
+
+
+
+
+^ 
+
+
+i^ 
+
+
+X 
+
+
+1 
+
+
+
+
+
+
+'^ 
+
+
+
+
+' 
+
+
+
+
+\ 
+
+
+V 
+
+
+\ 
+
+
+
+
+
+
+/ 
+
+
+U 
+
+
+a: 
+
+
+
+
+
+
+
+
+
+
+\ 
+
+
+^ 
+
+
+s. 
+
+
+
+
+7/ 
+
+
+1 
+
+
+a. 
+i-O-2 
+
+S 
+
+UJ-0'3 
+
+
+
+
+
+
+UP 
+
+
+SCALt 
+
+
+I CUR 
+
+
+VES-^ 
+
+
+^> 
+
+
+x 
+
+
+^ 
+
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10 20 30 ^0 BO 60 70 
+PERCENT INPUT 
+
+Fig. 1 Di^'iAiioN Ojrvhs 
+
+
+
+80 
+
+
+
+90 100 
+
+
+
+By inspection of Table 1 it can be dclcnnined that the 
+greatest deviation between actual error values (xj) and 
+the average upscale error (x) or average downscale 
+error occurs at 20 percent input, relative to the upscale 
+values. Thererore, the sample calculation is provided 
+for these values. 
+
+
+
+For 20 percent upscale input, x •• 
+
+
+
++0.13 
++0.08 
++0.09 
+
+
+
++0.03 
+-0.02 
+-0.01 
+
+
+
+0.10 and N 
+
+0.000 9 
+0,000 4 
+0.000 1 
+0.0014 
+
+
+
+■ 3. 
+
+
+
+should be consistent with the degree of exactness 
+desired and the characteristic being evaluated. 
+
+Prior to recording obser\^ations, the device under test 
+shall be exercised by three full-range traverses in each 
+direction. 
+
+At each point being oliserved, the input shall Ixi held 
+steady until tlie output of the device under test becomes 
+stabilized at its apparent final value. 
+
+Tapping or vibrating the instrument under test is not 
+allowed unless the performance characteristic under 
+study requires such action. 
+
+
+
+Repeatability - (0.001 4/3)2 - (0.000 47)2 = 0.021 6 
+
+This calculation shall be performed for all input values 
+and the largest chosen as the assigned repeatability for 
+those test cycles. 
+
+7 STATIC BEHAVIOUR 
+
+7.1 Accuracy Related Terms 
+
+7 AA General 
+
+The device under test and the associated test equipment 
+shall be allowed to stabilize under steady-state environ- 
+mentiil conditions. All testing shall be done under these 
+conditions. Environmental conditions which may in- 
+fluence test resultCshall be observed and recorded. 
+
+The number of test points to delenuine the performance 
+characteristics of a device should be distributed over 
+the range. They shouU include points at or near (within 
+10 percent of span) the lower and upper range-values. 
+There should l>e not less than five pointsand preferably 
+more. The number and location of these test points 
+
+
+
+
+INPUT 
+
+
+
+(t - Hysteresis (hysteresis error plus dead band) 
+b ~ Dead hand only 
+
+Fig. 2 Hysteresis 
+
+
+
+IS 13122 (Part 1) : 1993 
+
+
+
+7.1.2 Measurement Cycle 
+
+Maintain lest conditions and pre-condition the device 
+under test as indicated in 7,1.1. Ol^serve and record 
+output values for each input value lor at least three, but 
+preferably five, lull range traverses in each direction. 
+
+7.1-2.1 Error tabulation 
+
+The difference between each observed output value a nd 
+its corresponding ideal oulpul value shall be deter- 
+mined. This diiference is the error and shall be ex- 
+pressed as a percent of output span, A positive error 
+denotes that the observed output value is greater than 
+the ideal output value. 
+
+The following shall be computed : 
+
+a) Average upscale error - The arithmetic mean 
+of the errors ni each value of input for the 
+upscale readings of each measurement cycle; 
+
+b) Average downscale error - The arithmetic 
+mean of the errors at each value of input for the 
+downscale readings of each measurement 
+cycle; and 
+
+c) Average error - The arithmetic mean of all 
+upscale and downscale readings at each value 
+of input. 
+
+Record error values, average upscale error values, 
+average downscale error values, and average error 
+values in a table such as illustrated in Table L 
+
+7.1.2.2 Error curve 
+
+Plot the following error curves versus per input (see 
+Fig, 1) shall be plotted. 
+
+a) Average upscale error, 
+
+b) Average downscale error, and 
+
+c) Average error. 
+
+7.1.3 Conformily, Terminal-Based 
+
+Terminal-based conformity may be determined direct- 
+ly from the error curve (see Fig. 1). 
+
+A straight reference line or other reference curve shall 
+be drawn such that it coincides with the average error 
+curve at the upper range-value and the lower range 
+values. 
+
+Tenninal-based conformity is the maximum deviation 
+between the average error curve and the straight line or 
+reference curve. It is expressed as a plus or minus 
+percent of ideal oulput span (see Table 1). 
+NOTFS 
+
+1 ll\c graphical mclhods described in this standard ii- 
+luslnitc the nature of the coinputation to he made. Other 
+methods, for example compulei reduction ot data, may 
+be used. 
+
+2 From the measurements taken it is also possible to 
+compute "hideperidenl coarormity' and 'zero-based am- 
+formity'. If contbrmity is presented according to these 
+bases the tact should be slnled clearly in the report. 
+
+3 It* the instrument has a ('-shaped curve a statement of 
+terminal conforniity will yield a larger value than if the 
+instrument has an S-shaped curve. 
+
+If the use of the instrument permits adjustments to 
+minhnize conformity errors, the value of independent 
+
+
+
+confonnity is a useful figure. 
+
+7.1.4 Hysteresis 
+
+Hysteresis is the difference l>cVwcen the vaWies of the 
+average upscale error and the average downscale error 
+at each value of input. 
+
+Report as the value of hysteresis the largest difference 
+as determined above. 
+
+7.1.5 Repeatability 
+
+Repeatability can be determined directly from the error 
+values of a number of test cycles. Repeatability shall 
+be computed as the root mean square of the deviations 
+from the average of a numl>er of observations. 
+
+Repeatability shall be expressed as a percentage of the 
+output span using the worst value obtained above. (See 
+Table I, and 5 for illustrative examples.) 
+
+NCriES 
+
+1 In some cases determination of the point at which the 
+value of repeatability is greatest will ^x^ aided by ploUing 
+all the error values for the measurement cycles on the 
+error curve. 
+
+2 The value of repeatability determined in accordance 
+with this subclause is intended for comparison of the 
+performance of similar devices. It is not intended to be a 
+statistiailly valid measure of repeatability which may be 
+observed in service. 
+
+7.1.6 Dead Band 
+
+Dead band shall be measured at the upper and lower 
+range -values and at a point midway between these 
+values by proceeding as follows: 
+
+a) Slowly vary (increase or decrease) the input 
+until a detectable output change is observed; 
+
+b) Observe the input value; 
+
+c) Slowly vary the input in the opposite direction 
+until a detectable output change is observed; 
+and 
+
+d) Observe the input value. 
+
+The increment through which the input signal is varied 
+(difference between steps 2 and 4) is the dead band. It 
+is determined from a mininuim of three cycles and 
+preferably five cycles (steps 1 to 4). The maximum 
+value shall be reported. 
+
+Dead band shall be expressed in percent of input span. 
+It is unnecessary in most cases to continue the test if 
+the dead band is less than O.I percent. 
+
+If measurement at upper and lower range-values is 
+impractical the measurement may be made at other 
+values, for example 10 percent and 90 percent of 
+range. 
+
+7.2 ElTecis of Influence Quantities 
+
+Unless otherwise stated, these effects shall be assessed 
+by determining the change in the lower range -value and 
+the span due to the following changes in conditions of 
+use taken mdividually. The other conditions of use 
+remain constant at the reference values. Rates of 
+change ofintluencequantitiesshall be sufficiently slow 
+to ensure that no overshoot occurs at any location in the 
+transmitter under test. 
+
+
+
+IS 13122 (Part 1) : 1993 
+
+
+
+NOTE — If necessary measurement of output should be 
+made at several input values to permit assessment or any 
+signitlcant etTect of intluence quantities on conformity, 
+hysteresis, etc. 
+
+7.2.1 Electrical Power Supply Aberrations 
+
+7.2J.1 Mains power supply variations 
+
+This test shall be carried out by measurement of the 
+changes in lower range-value and span caused by the 
+following variations in the power supply in combina- 
+tion (that is, nine sets of measurement forac supplies 
+and three sets of nieasurenicnts for dc supplies), the 
+load resistance being as specified in 5.4. 
+
+a) Voltage 
+
+i) nominal value, 
+
+ii) +10 perceni or the manufaeiurer's limii, if 
+
+less, and 
+iii) -15 percent or the manufacturer's limit, if 
+less 
+
+b) Frequency 
+
+i) Nominal value, and 
+
+ii) +2 percent - 10 percent or the manufacturer's 
+lituil, if narrower. 
+
+Under low voltage/low frequency conditions, a check 
+shall be made to establish that with the input at the 
+upper range-value, the output does not limit below its 
+upper range-value. 
+
+7.2.1.2 Power supply interruptions 
+
+The purpose of this test is vo determine the behaviour 
+of the transmitter when switching to a standby supply. 
+The input shall Ik held constant al 50 percent of span. 
+
+Short interruption (electric transmitter only). 
+
+The power supply shall be iutcrrapled for 5 uis, 20 ms, 
+100 ms, 200 ms and 500 ms for dc supply or 1, 5, 10 
+and 25 cycles at the crossover point ac for supply. 
+
+The following values shall be recorded: 
+
+a) The maximum transient negative and positive 
+change in output; 
+
+b) The time takes for the output to reach 99 percent 
+of its steady-state value following reapplica- 
+tions of power; and 
+
+
+
+c) Any permanent change in output. 
+
+If switching occurs at randoin phase this test should be 
+repeated ten times, the period of time between any two 
+tests being ut least equal to ten times the duration of the 
+test. If switching is at the crossover point only three 
+tests are necessary. 
+
+7.2.1.3 Power supply depression 
+
+With the transmitter set at output upper range-value, the 
+power supply voltage shall be reduced to 75 percent of 
+nominal value for a period of 5 s. The change in output 
+and the amplitude and duration of any transient shall 
+be recorded. 
+
+7.2.1.4 Mains power supply transient over voltages 
+(see Fig. 3 ) 
+
+Voltage spikes shall be superimposed on the mains 
+supply. The spike energy shall be 0.1 J, and the spike 
+amplitudes shall be 100 percent, 200 percent and 500 
+percent overvoltage (percentage of nominal mains rnis 
+voltage). The spokes may be generated by capacitor or 
+by any means giving an equivalent wavcfonn. 
+
+The power supply lines shall be protected by a fvuitahlc 
+suppression filter, consisting at least of a check of 500 
+f,iH, capable of carrying the line current. 
+
+The pulse of each amplitude phased to mains peak 
+voltage shall be applied, or alternatively, at least ten 
+pulses randomly phased with respect to the main supp- 
+ly. Any transients or dc output changes appearing at the 
+ouipui of ihc iasirument shaii be recorded. 
+
+7.2.2 Pneumatic Supply Variations 
+
+This test shall be carried out at 100 percent output by 
+measuring the effect of a variation of ± 10 percent 
+about the nominal reference supply pressure to the 
+transmitter. 
+
+7.2.3 Reverse Supply Voltage Protection 
+
+For transniitlers incorporating protection against 
+power supply reversal, the maximum allowed reverse 
+power supply voltage shall be applied. 
+
+7.2.4 Electrical Interference (Applicable to Transmit' 
+ters with Electrical Input) 
+
+
+
+
+
+ilNE PRO- 
+TECTION 
+FILTER 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TRANSMITTER 
+
+
+50 Hr/60 Hz 
+
+
+
+
+
+
+MAINS SUPPLY 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TRANSIENT 
+PULSE 
+
+GENERATOR 
+
+
+
+
+
+Fic;. 3 ScuEMAiic DiA(rRAM or Power Supply fuANSiiiNT Overvoltages 
+
+
+
+IS 13122 (Part 1) : 1993 
+
+
+
+7.2.4.1 Common mode interference^ see Fig. 4 ) 
+
+This test is only applicable to transmilters with ter- 
+minals which are isolated torn earth. 
+
+It shall be carried outby hieasuremenl of changes in the 
+lower range-value and spaii caus.^d by the superj^josi- 
+tion of an ac signal of 250 V rnis at mains frequency 
+between earth and each input and output terminal in 
+turn. If the manufacturer specifics a value less than 
+250 V then this lower value shall be used instead. The 
+phase of the iiUerfering signal shall be varied over 360" 
+with respect to "the phase of.the mains input to transmit- 
+ter power supply. 
+
+
+
+INPUT 
+SOURCE 
+
+
+
+^ 
+
+
+
+lx)th input or both output terminals simultiineously. If the 
+impedance between terminals is low relative to im- 
+pedance to earth both test methods yield equivalent 
+results. The method descritxid alx)ve has been chosen to 
+promote consistency of method and result among testing 
+agencies Tor a wide range of devices. 
+
+7.2.4.2 Series mode interference ( see Fig. 5 ) 
+
+This test is used to determine the influence on the 
+output of an ac signal (series mode signal) at mains 
+frequency superimposed on the input signal. 
+
+The superimposed voltage is obtained across the secon- 
+dary of a transformer shuiUed with a parallel resistance 
+
+
+
+TRANS- 
+MITTER 
+
+
+
+
+T 
+
+
+
+TRANSMITTER 
+
+ENCLOSURE EARTH 
+
+50 Hz/60 Hz ALTER- 
+NATING VOLTAGE UNIT^ 
+ADJUSTABLE FOR 
+PHASE AND AMPLITUDE 
+
+
+
+a) Common Mode ac Generator 
+
+
+
+INPUT 
+SOURCE 
+
+
+
+TRANS- 
+MITTER 
+
+
+
+
+TRANSMITTER 
+ENCLOSURE EaRTh 
+
+
+
+DC VOLTAGE UNIT 
+ADJUSTABLE 
+
+
+
+b) Common Mode dc Generator 
+Fkj. 4 Common Mode lNi^Rn^.RENCE 
+
+
+
+The test shall then be repeated using a direct instead of 
+an alternating voltage. A potential of 50 V dc or 1 000 
+limes the input span, whichever is less, shall be used, 
+both positive and negative potentials being supplied. If 
+the manufacturer specifies a value less than 50 V, this 
+lower value shall be used. As previously, the voltage 
+shall only be applied to output terminals that are iso- 
+lated from earth. 
+
+During the common mode interference tests, the traivs- 
+mitter shall be applied from an input signal source 
+which is not affected by the common mode signal. For 
+current-input transmitters the signal source shall be a 
+current source with not less than 10 i^F capacitance 
+connected across its output tenuinals. For voltage- 
+input transmitters the signal source shall be a voltage 
+source with an output impedance no greater than 100 
+ohms at mains frequency. 
+
+NOTC — Coiiiinoii mode interference tests are also 
+commonly conducted tiy connecting the lest signal to 
+
+
+
+of 10 ohms maximum and connected in series with the 
+input. 
+
+The side of the parallel connection of the transformer 
+secondary and leading resistor not directly connected 
+to the transmitters should be earthed. For instruments 
+with isolation between input and output, the output 
+should be earthed when iitput is being measured. Meas- 
+urements should be carried out for output values of 10 
+percent and 90 percent. 
+
+By adjusting the primary voltage the series made volt- 
+age across the loading resistor shall be set to 1 V, peak 
+value, with connection to the transmitter open-ciruited. 
+The transmitter is then connected into the circuit, and 
+the change in the mean value of the output signal is 
+measured. The phas0 of the transformer voltage shall 
+be set so that the chJinge of the output current has its 
+uiaximum value. Tht; change of the mean dc value of 
+the output signal is' noted, if small or less than 0.5 
+percent of the actual span. Jf the measured change is 
+
+
+
+IS 13122 (Part 1) : 1993 
+
+
+
+INPUT 
+SOURCE 
+
+
+
+rGh 
+
+
+
+TRANS- 
+
+MITT6R 
+
+
+
+TRANSFORMER WITH 
+
+
+
+5CREENE0 5E 
+
+
+
+1 
+
+
+
+AC POWER 
+
+SUPPLY 
+
+CARTH 
+
+
+
+gOr^PABY 
+
+
+
+TRANSMITTER 
+ENCLOSURE EARTH 
+
+
+
+SO Hz/60 Hz ALTER- 
+NATING VOLTAGE UNIT, 
+ADJUSTABLE FOR 
+PHASE AND AMPLITUDE 
+
+
+
+FicK 5 Series Mode iN'iiiRniRENCE 
+
+
+
+greater than 0.5 of span, llic series mode voltage is 
+reduced by reducing the primary vohage until the 
+change in the output signal equals 0.5 percent of span. 
+The corresponding value of the series mode voltage 
+shall be staled. 
+
+7.2.5 Earthing 
+
+This lest is applicable only to transmitters with electri- 
+cal inputs and outputs isolated Irom earth. 
+
+The test shall be carried out by measurement ot the 
+
+steady-state change of the lower range value and span 
+
+caused by earthing each input and output terminal in 
+
+turn. 
+
+Any transient changes shall be noted. 
+
+Care should be taken to ciminate any effect due to 
+
+earthing of the lest signal source. 
+
+7.2.6 Output Load 
+
+7.2.6.1 Evaluation of the complementary error due to 
+electric load variation 
+
+Alter setting the rated supply voltage, read the output 
+change at the values of the load for Riojidimm Rioadmax 
+and (Riorid mm + Ruxid miix)/^ Measurements musl be 
+made at least three limes in every point. The two wire 
+transmitler must be examined for the full range of 
+permissible supply voltage. The highest output change 
+expressed in percent of the output range is the com- 
+plementary error of the transmitter due to load varia- 
+tion. 
+
+7.2.6.2 Output load (electrical) 
+
+This test shall be applied to trans mi tiers with electrical 
+ouput signals, ll shall be carried out by measurement 
+of the changes in lower range -value and span caused 
+by variations of load resistance from the minimum to 
+the maximum value specified by the manufacturer. The 
+output changes shall be expressed in percent of output 
+span. 
+
+7.2.6.3 Output loud (pneumatic) 
+
+This test shall be carried out with the input set at 10 
+percem, 50 percent and 90 percent of span. Varying 
+amounts of airshall l:>e bled frontthe transmitter output 
+connection and the output pressure ineasured for each 
+delivered How rate. Varying amounts of air shall then 
+be bled into the transmitter output connection and the 
+output pressure measured for each exhausted t1ow rate. 
+
+
+
+The pressure shall then be plotted against (low in accord- 
+ance with Fig. 6. From the graph will be detennined : 
+
+a ) M a xi mu m d e 1 i ve re d il o w ra te (20 kPa ou tp u t) ; 
+
+b) Maximum exhausted flow rate (100 kPa output); 
+
+c) Output pressure change when delivering 0.2 
+m /h and 0.4 m /h of air (at reference condi- 
+tions) ; and 
+
+d) Output pressure change when exhausting 0.2 m /h 
+
+and 0.4 m /h of air (at reference conditions). 
+
+Air supply pressure shall be maintained at its nominal 
+level throughout the test. 
+
+A discontinuity in the flow characteristic is termed "the 
+output relay dead space" (Fig. 6) and the height of the 
+step of this discontinuity shall be expressed as a percent 
+of span. The corresponding air flow (delivered or ex- 
+hausted) shall also be recorded. 
+
+7.2.7 Source Impedance Lead Resistance 
+
+On transmitters, the input to which is an electrical 
+voltage, the change in output caused by varying the 
+resistance the input circuit from the minim uai value 
+specified by the manufacturer to the maximum value 
+shall be mca^sured. The resistance shall be distributed 
+equally in each line. 
+
+7 .2 .8 R adio Interference 
+
+Tests of the effect on the output of radio Trequency 
+interference shall be the subject of specific agreement 
+between manufacturer and user. 
+
+7.2.9 Magnetic-Field Interference 
+
+The purpose of this test is to determine the effect of a 
+mains frequency alternating field on tlie output of a 
+traiismitter. It is not applied to instruments using 
+pneumatic sigiials only. 
+
+The instmment shall be exposed to magnetic field of 
+400 A/m (rms) which is directed along the major axis 
+of the instrument. 
+
+The effect of the field on the mean dc level and on the 
+ripple content of the output shall be detennined for 
+output signals of 10 percent and 90 percent span. The 
+test shall be repeated with the magnetic field directed 
+along two additional axis mutually perpendicular to the 
+first. 
+
+
+
+IS 13122 (Parti): 1993 
+
+
+
+
+I OELIVEREO 
+FLOW 
+
+
+
+Fig. 6 Flow Cuakacierisiics of a PNEiiMAncTRANSMiTrcR 
+
+
+
+NCTFE — A magnetic Helcl of approximately 4{)() A/m 
+wilt !ie obtained at or near the centre of a circular coj! of 
+1 m diameter, having 80 turns and airrying 5 A. 
+
+7.2. J Ambient Temperatures 
+
+[see IS 9000 (P:.irt 2/Sec I to 4) : 1977 and IS 9000 (Part 
+3/Scc I to 5) : 1977 and IS 9000 (Pari 14/Sec 1 to 3) : 
+198S]. 
+
+The changes in the value of the lower range-value and 
+span shall be measured at the niaxinuini and niiniuiuni 
+operating teniperalure specified by the nianufacturer, 
+and, if Ihey are included in this operating raitgc.ateach 
+of the following ambient temperatures : 
+
++20*^C. +4^^C, +55^C, +20"C, O^^Q -UPC, -25^^C, 
++20^^C. 
+
+The temperature shall )k^ changed step by step, in the 
+order given, and witltout any adjustment of the trans- 
+mitter. A second temperature cycle, identical to the 
+first, shall be performed without readjustment of the 
+Iraitsmiltei. 
+
+The tolerance for each temperature is ± 2"C. Sufficient 
+time shall be allowed for stabilization of the tem|x^ra- 
+ture at all parts of the transmitter. For transmitters with 
+a pneumatic output the air supply temperature shall be 
+the same as the transmitter temperature, 
+
+7.2.11 Humidity 
+
+[see IS 9000 (Part 4) : 1979 and IS 9000 (Part 5/Scc 1 
+and 2) : 1981]. 
+
+The transmitter shall be maintained at ambient test 
+conditions for 24 h. A set of reference measurements 
+shall be taken at intervals of 20 percent of the output 
+span. The transmitter shall then be maintained for a 
+period of at least 48 h in a chamber at atmospheric 
+pressure at a temperature of 40i9 ''C, and a relative 
+
+
+
+humidity of 91 percent. The transmitter shall be 
+switched on for the final 4 h of the abovie period and 
+measurements shall be taken immediately following 
+this period at intervals of 20 percent of the output span. 
+With the transmitter still in operation, the temperature 
+shall be allowed to fall below 25''C in not less than 1 h. 
+The chamber shall remain closed so that saturation 
+shall lake place during this period. The maximum 
+change in lower range-value and span due to this con- 
+dition shall be determined and recorded. 
+
+After this lest, a visual inspection shall be conducted to 
+c hec k lb r s i g us o f n a s ho v e r, a c cu m u 1 a t i o ns o f co nd e n- 
+sate, deterioration of components, etc. 
+
+Immediately after a further period of 24 h at ambient 
+conditions, the transmitter error shall be determined at 
+intervals of approximately 20 percent span for upscale 
+and downscale signals. Changes in error from those 
+measured initially under ambient conditions shall be 
+recorded. 
+
+7.2.12 Mounting Position 
+
+The change in knver range-value and span caused by 
+± 10" inclinatioi\s from the position(s) specified by the 
+manufacturer shall be measured and recorded. Four 
+measurements shall be made with lilt applied in two 
+planes at right angles to each other. 
+
+Where a ± 10'^ inclination is excessive due to the design 
+of the Iransmitter, the maxiimim inclination specified 
+by the manufacturer shall be used. 
+
+7.2.13 Shock 
+
+This test shall be made according to the test procedure 
+given in IS 9000 (Part 7/Sec 3 ) : 1979. Before the test 
+reference measurenifints of lower range-value and span 
+shall be recorded. 
+
+
+
+10 
+
+
+
+IS 13122 (Parti): 1993 
+
+
+
+The object of this test is: 
+
+a) to represent knocks aud jo lis likely lo occur 
+during tninsporlation repair work or rough 
+handling in use; and 
+
+b) to verify the niininiuui degree of mechanical 
+rugged ness. 
+
+The procedure ol 'dropping on to a face' sha]) be 
+applied as follows : 
+
+The transmitter standing in its normal position of 
+use on a smooth, hard, rigid surface of concrete or 
+steel, is tilted about one bottom edge so that the 
+distance between the opposite edge and the test 
+surface is 25 mm, 50 mm or 100 mm (value chosen 
+by agreement between manufacturer and user), or 
+so that the angle made by the bottom and the test 
+surface is 30'\ whichever condition is the less 
+severe. Iv is then al UAved to fall freely onto the lest 
+surface. 
+
+The trausiuilter shall be subjecVed to one drop about 
+e a c h o f t he fo u r bo t to ni e d gcs . 
+
+After this test, the lransn\iUer shall be examined for 
+damage. Any change in lower range -value and span 
+shall be recorded. It shall he verified that the transntit- 
+ter can be readjusted to the initial performance. 
+
+7.2.14 Mechanical Vibration 
+
+This test shall be performed according to IS 9000 
+( Part 8 ) : 19S1 or according to the following rules, 
+except when otherwise stated by the manufacturer. 
+The object is first to measure the changes in lower 
+range- value and span induced by meachanical vibra- 
+tions likely to be met in service, secondly to ensure 
+that the transmitter is satisfactorily robust for these 
+conditions. 
+
+The vibration tests are performed on tlie transmitter 
+with normal supply and 50 percent input. 
+
+The transmitter shall be mounted, in accordance with 
+the nianufaclurer's instructions for normal installa- 
+tions, on a vibration table and subjected to sinusoidal 
+vibrations in three mutually perpendicular axis, one of 
+which shall be the vertical direction. The rigidity of the 
+vibration tabic, of the mounting plate, of any mounting 
+
+
+
+brackets used for supporting the instrument, shall be 
+such that the impulse is transferred to the instrument 
+with the minimum of loss. 
+
+There are three distinct stages in this test: 
+
+First stage - Initial resonance search. 
+
+The objeeV of this stage is to investigate the transmitter 
+response to vibrations, to determine resonance frequen- 
+cies find (o collect information which is necessary for 
+final resonance search and for endurance conditioning 
+at resonance frequencies, if necessary. 
+
+During the frequency sweepijtg, frequencies shall be 
+noted which causes : 
+
+a) significant changes in the output signal, and 
+
+b) mechanical resonances. 
+
+All the amplitudes and frequencies at which these 
+effects occur shall be noted in order to be compared 
+with those found during the final resonance rscarch 
+specified in Table 2. 
+
+Frequency sweeping shall be continuous and logarith- 
+mic. The sweep rale shall be approximately 0.5 octave 
+per minute. The frequency range to l)e used for the 
+evaluation of industrial-process control transmitters 
+should be taken from the table below and selected 
+according to the type of operating conditions and kind 
+of installation. 
+
+Second stage — End u ra ncc co nd i ti o ni ng. 
+
+The transmitter shall be subjected to vibration for 
+1.5 h each in three mutually perpendicular planes, one 
+of which shall be the vertical direction. In each plane 
+the test shall be run at that frequency which resulted in 
+the largest mechanical resonance during the initial 
+resonance search, or if no resonances were detected, at 
+the maximum frequency specified for the type of 
+operating conditions and installation. 
+
+Third stage — Fi na 1 reso na nee sea rch. 
+
+The final resonance search shall be made in the same 
+way as the initial resonance search ai\d with the san>e 
+vibration characteristics. The resonance frequencies, 
+and the frequencies which cause significant changes in 
+the output signal, found in the initial resonance search 
+
+
+
+Table 2 Operating Conditions 
+
+{Clause 12M) 
+
+
+
+hisliillatioa 
+
+
+
+(1) 
+
+
+
+i) Conlrol rooiii ( (ieneval application ) 
+ii) Field ( Low vitiration k'-vcl ) 
+iii) I'icid ( CictK'vnl applicalion ) 
+i V ) f ' i ]i cl i nc ( Lo vv v i h ra t i o n i e v e 1 ) 
+v) Pipeline ( (iencral application ) 
+vt) lixtreme vibralioii levels 
+
+
+
+Vi brut ion 
+frequeucy 
+
+(2) 
+UU06O 
+60 10 J 50 
+10 to 60 
+60 to 500 
+10 to 60 
+60 to 2 m) 
+
+
+
+Peak 
+lilmk (mm) 
+
+
+Peak 
+
+Ac eel era li on ( m /s" ) 
+
+
+(3) 
+
+
+(4) 
+
+
+
+0.07 
+
+
+
+0. 14 
+
+
+
+0.21 
+
+
+
+0.8 
+
+
+
+19.6 
+
+
+
+29.4 
+
+
+
+NOTC — The crossover l'ref[uency between coiislaiil amplitude and constant acceleration is nominally 60 Hz. 
+
+
+
+11 
+
+
+
+IS 13122 (I»ait I) : |9i>3 
+
+
+
+(ind iinnl resonance search shall be compared. Din'eren- 
+ces can Ik caused by noii-claslic derornuilioji which 
+may in liirn cause cracks in the mechanical construc- 
+tion. 
+
+Final weasuremenis 
+
+The salislactory mechanical condition of the transmit- 
+ter shall be verified at the end of the lest. Any change 
+of calibration shall be recorded. 
+
+7.2.15 Over-Ranf^Q 
+
+This test shall be carried out by measuring the changes 
+in lower rangC'Value and span which result from over- 
+ranging at the minimum and maximum span. 
+
+The input shall be increased gradually from the lower 
+range-value to the maximum over-range specified by 
+the manufacturer. 
+
+After the over-range has been Jtpplicd for 1 min, the 
+input shall be reduced to the nominal lower range- 
+value. After a further 5 min have elai)sed, the tower 
+range-value and the span shall be determined. 
+If the transmitter is to be tested for over-range effect in 
+both direction as with differential pressure transmiUcrs 
+and transmitters whose input may Ix^ both below the 
+lower range-value and above the upper range-value, it 
+shall be tested as described aliove, first over-ranging 
+above the upper range -value, it shall be tested as 
+descril)ed above, first over-ranging above the upper 
+range-value, and then over-ranging below the lower 
+range-value. The values of lower range-value and span 
+
+determined afterover-ranging in each direction shall be 
+recorded. 
+
+For certain types of transmitters the testing procedure 
+shall be defined in agreement with the manufacturer. 
+
+NOTH — n* over-ranging produces siguiHaml thernici! 
+
+effects, the duration of application should be increased 
+
+until steady-stale is achieved. 
+
+7.2.16 Static (Process) Pressure 
+
+This test shall be carried out, as specified by the 
+manufacturer, on transiuiiters other than pressure trans- 
+mitters which in normal operation are subjected to 
+process pressure.The changes in lower range-vaiueand 
+span caused by changing static pressure in the measur- 
+ing element shall Ix; measured and recorded. The pres- 
+sure shall be changed in four equal steps from 
+atmospheric to the full working pressure of the instru- 
+ment. For some transmitters, this test is also carried out 
+below atmospheric pressure. 
+
+NCyfE — Due attention should be given to the etfect of 
+
+changes in pressure in a closed system aiused l:>y changes 
+
+in ambient temperature and the ditficulty of measuring 
+
+the change of span at high static pressure. 
+
+7.2.16.1 Static process pressure 
+
+This test shall l)e carried out, as specified by the 
+
+tnanufactnrer, as transmitters. Other than pressure 
+
+transmitters, which in normal operation are subjected 
+
+to process pressure. In case of a test performed with 
+
+liquid, the measuring chamber must be filled as far as 
+
+possible without air bubbles. Adjust the zero, the trans- 
+
+
+
+mitter at atmospheric pressure ajid there, after slowly 
+increase the static pressure in bath measuring cham- 
+bers. Read the value of the out|)ut after waiting for a 
+time of mijumum 10 seconds at the values of 0, 20, 40, 
+60, 80 and 100 percent of the rated static pressure. 
+Calculate arithmetic mean of the output/signal output 
+for each measuring points. The arithmetic inean of the 
+highest and lowest expressed in percent of the output 
+range in the complementary error of pressure dif- 
+ference transmitter due to static pressure change. This 
+must be related to either to the total range or lo the 10 
+percent value thereof. 
+
+7.2.17 Temperature of Process Fluid 
+If the process Huid is in contact with the measuring 
+clement in normal use and the temperature of the 
+process fluid may inlluence the transmitter perfor- 
+mance, then this test shall be carried out. It shall be 
+performed by measuring the steady-state changes in 
+lower range-value and span which result from changes 
+in fluid temperature in four equal steps. The details of 
+the test shall be agreed with the manufacturer. While 
+the temperature is changing, the transmitter shall be 
+energized, and an input signal shall be applied lo main- 
+tain the output within the normal operating range. 
+Changes in the output measured during the test shall be 
+recorded. 
+
+7.2. IX Flow of Process Fluid Through the Instrument 
+This test shall be carried out on transmitters (other than 
+ilow-meters) which require for normal operation, that 
+process tluid [lows through some part of them. 
+It shall be carried out by measuremetit of the change in 
+lower range-value and span caused by alteratioti of the 
+How rate through the transmitter from the minimum to 
+the maximum specified by the manufacturer. The test 
+(luid shall be subject to agreement between the userand 
+the manufacturer. 
+
+7,2.19 Flow of Purge Gas Through the Transmitter 
+If purge gas, such as air or nitrogen, is applied lo the 
+case of a transmitter in a mamicr that creates a slight 
+positive pressure within the case to ensure a gas How 
+from inside to outside of the transmitter, changes in 
+lower range-value and span caused by an alteration of 
+the How rale of purge gas shall Ix^ measured with the 
+now adjusted to percent, 50 percent and 100 percent 
+of the maximum specified by the manufacturer. 
+
+Each measurement shall be taken 30 min afterthe purge 
+gas How has been set. 
+
+7.3 Stability 
+
+7.3.1 Start-up Drift 
+
+This test shall lie carried out by measurement of the 
+changes which occur in the output in the period imme- 
+diately following application of the pneumatic or 
+electrical power supply to the transmitter. Prior to the 
+test, the transmitter shall be subjected to ambient en- 
+vironmental conditions or as advised by the manufac- 
+turer for a period of 24 h, but shall not have been 
+energized. 
+
+
+
+12 
+
+
+
+IS 13122 (Parti): 1993 
+
+
+
+Wilh a 10 percent input signnJ applied lo the transmit- 
+ters, it sliall lie switched on and the output noted after 
+5 min, 1 h, and 4 h. The transmitters shall then be 
+switched off, and after at least 24 h under ambient 
+environmental conditions, the test shall be repeated 
+with a 90 percent input signal. The measurements 
+obtained shall be recorded to sliow the short-term drift 
+characteristic of the transmitter. 
+
+7.3.2 Loni^^Temi Drift 
+
+The transmitter shall be operated lor 30 days with a 
+steady input signal corresponding to 90 percent of span. 
+The inpnt and output shall be measured each day and 
+the output drift determined, corrected l)y calculation for 
+any small variation of input. Care should be taken that 
+changes due to amlMcnt environmental conditions, 
+other than lime, do not mask the effects of long-term 
+drift. The lower range-value and span shall be 
+measured and recorded immediately before and after 
+the 30 days test period. 
+
+The transmitter should be kept in environmental cham- 
+l>er at controlled temperature and relative humidity. 
+Stabilized supply should be used for the test. These 
+parameters should also be continuously recorded 
+during the test period. 
+
+7.3.3 Accelerated Operational Life Test 
+
+Transmitters incorporating machanical or electro- 
+machanicai parts shall be connected as for normal 
+operation. An initial alternating input with peak-to- 
+peakamplitiide equal lo half the span and centred at the 
+mean of the upper and lower range-values shall be 
+applied. The frequency shall be such that gain is not 
+reduced below 0.8 unless otherwise agreed with the 
+manufacturer, the transmitter shall be subjected to 100 
+000 measurement cycles. Lower range value, span and 
+hysteresis at mid-span shall be measured Ix'fore and after 
+tlie lest and any changes shall be recorded. 
+
+7.4 Other Tests 
+
+7.4.1 Ripple Content of Electrical Output 
+
+The peak-lo-peak values and the principal frequency 
+component of any ripple content of the output shall l>e 
+measured and recorded witli 10 percent, 50 percent and 
+90 percent input signals at mininmm and maxinuim lead, 
+
+7.4.2 Insulation Resistatwe 
+
+This test shall be carried out by agreement wilh the 
+manufacturer in accordance wilh local requirements. 
+
+7.4.3 Dielectric Sirengdt Measurement 
+
+This test shall be carried out by agreement with the 
+manufacturer in accordance with local requirements. 
+
+7.4.4 Power Consumption 
+
+7.4.4.1 Electrical power consumption 
+
+Wilh the inj)ut adjusted so thai power consumption is 
+at its maximum value, the walls and voll-amperes 
+consumed shall be measured and recorded. The meas- 
+urement shall be made at the nominal specified by the 
+manufacturer for the supply. 
+
+7.4.4.2 Pneumatic power consumption 
+
+The maximum airc(tnsumption of the Ira nsmiller shall 
+lie measured and recorded. 
+
+
+
+7.5 Effect of ()|HMi-Circuited and Short-Chruited bipiit 
+
+Bich electrical input connection shall be interrupted in 
+turn for 5 min and the ultimate stead-state outputs 
+recorded. The times taken to reach these values shall 
+also be recorded. Asimilar test shall be performed with 
+the electrical input connection shorted together. 
+
+7.6 Effect of Opeii-Ciix-iiited and Short-Circuited 
+Output 
+
+Each electrical output connection shall be internipted 
+in turn tor 5 min and the steady-state voltage across the 
+output terminals shall be recorded. The limes taken lo 
+reach these values shall also be recorded. Asimilar test 
+shall be performed with the electrical output connec- 
+tions shorted together. After the short-circuit test, the 
+calibration of the transmitlershall be checked to deter- 
+mine whether any permanent change in calibration or 
+damage has occurred. 
+
+S DYNAMIC BEHAVlOirR 
+
+8.0 General 
+
+Testing shall lie carried out with the span adjusted to 
+the approximate mean of the maxinuim and minimum 
+span and with the lower range-value set approximately 
+at the mid-point of its permissible range of adjutviment. 
+
+If there are other adjustments which modify the 
+dynamic l)eliaviour of the transmitter, tests shall be 
+carried out with the adjustments set to have their 
+niininuim and maxinuim effects. 
+
+The load impedance value specified by the manufac- 
+turer shall be used, [f no-value is specified, a 0.1 yi¥ 
+capacitor in parallel wilh the reference load resistance 
+shall be used for transmitters with electrical output. For 
+pneumatic transmitters, a test load consisting of an 8 m 
+length of 4 mm internal diameter rigid pipe followed 
+by a 20 cnv^ capacity shall be used. 
+
+8.1 Step Response 
+
+Aseries of step changes shall l>e applied to the input of 
+the transmitters as specitied below. The rise time of the 
+step input shall be small compared with the transmitter 
+response time, both being recorded for the following: 
+
+a) Step corresponding to 80 percent of output span 
+from 10 percent to 90 percent, then irom 90 
+percent to 10 percent; and 
+
+b) Steps corresponding to 10 percent of output 
+spaa up and down as lollows : 
+
+5 percent lo 15 percent; 45 percent to 55 percent 
+and 85 percent to 95 percent. 
+
+The time for the output to reach and remain within 1 
+percent of the span of its steady value shall be measured 
+for each test condition. 
+
+The amount of dead time and overshoot, if any, shall 
+be slated. 
+
+NO IT — If response is exponcntiril, the limes which 
+correspond to 63 percent and 95 percent of the input step 
+may also lie useful. 
+
+8.2 Fi'equency Response 
+
+The peak-lo-peak amplitude of the sinusoidal signal 
+applied to the input shall be sufficient to allow a valid 
+
+
+
+13 
+
+
+
+IS 13122 (Part 1) : 1993 
+
+ineasureaicnt whiie keeping a relatively low value (not 
+exceeding 20 percent ol' span). The frequency ot* the 
+input signal shall be increased in incrcnienls froni an 
+initial value sufficiently low to approximate zero fre- 
+quency cf)nditions (not above 0.005 Hz) to a higher 
+frequency at which the output is attenuated to 
+approximately one-half of its initial amplitude. 
+
+At least one complete cycleof the input and output shall 
+be recorded at each frequency step. 
+
+The results of these tests shall be presented graphically 
+(see Fig. 7 ) in the following form: 
+
+a) the gain relative to zero frequency gain shall he 
+plotted against frequency on a logarithmic 
+scale; and 
+
+
+
+b) the phase lag between the output and input shall 
+be plotted against frequency on a logarithitiic 
+scale. 
+
+Front the graphs, the following shall be determined: 
+i) tlie frequency at which the relative gain is 0.7; 
+ii) the frequency at which the phase lag is 45*^; and 
+iii) the maximum relative gain and the correspond- 
+ing frequency and phase angle. 
+
+9 SUMMARY Ol TESTS 
+
+9.1 The following tests as given in Table 3 irre suitable 
+tor industrial process transmitters. In general each 
+applicable test should be conducted on a given trans- 
+mitter if a full evaluation report is planned. 
+
+
+
+Table 3 Test Schedule and Information 
+
+
+
+lk>si;;;ll;Uion 
+
+
+
+t) All transmitters 
+a) Measured error 
+
+
+
+b) Conformity 
+
+c) Hysteresis 
+d)Repeal;ibiIity 
+
+e) bttVcl ot" dead band 
+
+t) Ainbieut temperature 
+
+g) Humidity 
+
+h) Mounting position 
+
+j) Sliock 
+
+k) Vibration 
+
+ni) Over-range 
+
+
+
+ii) Drift 
+
+a) Slart-up 
+
+b) l^ng-lerm 
+
+c) Accelerated bfe 
+
+
+
+Illl 
+
+
+rnrin;i1 
+
+
+IttMl )tr 
+
+
+I)c Kc| 
+
+
+M>i lid 
+
+
+kercreiicc 
+to (/Clause or 
+
+
+• 
+
+
+
+
+
+
+Siilf-Cliiiisc 
+
+
+Units 
+
+
+
+
+
+
+
+
+Remarks 
+
+
+
+
+(2) 
+
+
+
+
+
+
+
+
+(3) 
+
+
+(4) 
+
+
+Percent ot output span 
+
+
+
+
+
+
+
+
+'i'hrec to five upscale 
+
+
+7,1.2 
+
+
+
+l*erccnt of output span 
+Percent of output span 
+IVrcent of output span 
+Percent of output span 
+
+Percent of output span 
+
+l^erceiU of output span 
+l*ercent of output span 
+Percent of output span after procedure 
+
+Percent of output span 
+
+Percent of output span 
+
+
+
+Percent of output span 
+
+[^M'cent of output span 
+Percent of output span 
+
+
+
+and downscalc full range 
+traverses, full range traverses, 
+measuring at least five points. 
+Cotiipute errors and plot 
+error curves 
+
+
+
+Vf>ry input to obtain detectable 
+output change at 0.5 percent, 
+IfXi percent output 
+
+Two cycles at +2(f(\ +41. fC. 
+
+-ZSX, +2(fC 
+
+Saturation induced 
+
+± \if inclination in two planes 
+
+'Drop and topple' procedure 
+in accordance with IS ^CKX) 
+( [>art7/Sec3 ): J979 
+
+Initial resonance search, 
+
+1.5 h endurance conditioning 
+
+and final resonance search 
+
+Over-range for I min. Measure 
+5 nun after return to lower 
+range-value. Carried out in 
+both directions if a differential 
+pressure transmitter 
+
+At 5 min. 1 h, and4 h after 
+power is switched oji 
+
+30 days at 90 percent of span 
+
+tfK) 000 cycles of amplitude 
+e()uai to half the span. Measure 
+lower range-value, span, and 
+hysteresis 
+
+
+
+7.1.3 
+7.1,4 
+7.1.5 
+7.1.6 
+
+7.2.10 
+
+7.2.11 
+7.2.12 
+7.2.13 
+
+7.2.14 
+
+7.2.15 
+
+
+
+7.3.1 
+
+7.3.2 
+7.3.3 
+
+
+
+IS 13122 (Fart 1): 1993 
+
+
+
+Table 3 ( concluded ) 
+
+
+
+Uesij^iiution 
+
+
+
+(1) 
+
+
+
+luloritiiitioii to be Reported 
+
+. JW_^^»*<— - 
+
+
+
+Ke fere lice 
+to Clause or 
+Sub-Clause 
+
+
+
+iii) Electric transmitters 
+a) Power supply 
+i) Mains variations 
+
+
+
+ii) Short interruption 
+iii) Depression 
+iv) TransitiMl over voltages 
+
+
+
+b) Bleclrical imerference 
+i) Common mode 
+
+
+
+ii) Series mode 
+
+c) Earthing 
+
+d) Output load 
+
+e) Source impedance 
+
+n Radio interference 
+
+g) Magnetic-Held Interl'erence 
+
+h) Ripple 
+
+j) Power consumption 
+
+k) Open and short circuits input 
+m) Open and shori circuits-output 
+
+i\>) Pneumatic hutnsmitters 
+
+a) Supply variations 
+
+b) Output load 
+
+c) Power 00 nsuiuplioii 
+
+
+
+v) Dynamic behaviour 
+
+a) Slep response 
+
+b) Frequency response 
+
+
+
+Units 
+
+a) 
+
+Percent of output span 
+
+
+
+Peak positive and negative percent of 
+output span; time to stabilize 
+
+Percent of output span; duration of 
+output transient 
+
+RecOvd any oul)>ut transients 
+
+
+
+Percent of output span 
+
+Percent of output span 
+
+Record transients 
+Percent of output span 
+
+Percent of output span 
+Percent of output span 
+
+Maximum watts and volt-amperes 
+
+Time to stabilize 
+'Inne to stabilize 
+Percent of output span 
+
+See Fig- 6 
+
+
+
+Record time for response to withm I 
+percent of output span of final value 
+
+See Fig. 7 
+
+
+
+Remark 
+(3) (4) 
+
+Nine sets of measurements 7,2/1. J 
+
+for variations in ac voltage 
+and frequency; three sets for dc 
+
+Nine related interruptions at 7.2. 1.2 
+
+.crossover point of 1 , 5. 10, 25 cycles 
+
+At 75 percent of nominal supply 7.2.1.3 
+
+voltage for 5 s 
+
+Iwo pulses of KM) percent, im 7,2.1.4 
+
+percent and 500 [X'-rccnt of 
+mains rms voltage 
+
+For transmitters with terminals 7.2.4.1 
+
+isolated from earth 250 V rms. 
+ac superimposed on isolated 
+terminals at mains frctpiency 
+then positive and negative 50 V 
+superimposed on isolated tertnitials 
+
+IV or less, at mains fret|uency 7.2.4.2 
+
+and 10 percent and 90 percent 
+of output span 
+
+Only for transmitters with 7.2.5 
+
+isolated terminals 
+
+Vary load resistance from 7.2.6. 1 
+
+minimum to maximum as 
+siX'cified by manufacturers 
+
+Vary input circuit resistance 7.2.7 
+
+from minimum to maximum 
+values specil'ied by manufacturer 
+
+As specified by manufacturer 7.2.8 
+
+4fK) A/m at 10 percent and 7.2.9 
+
+90 percent of output span 
+
+Peak-to-peak values and 7.4.1 
+
+principle frequency components 
+
+At maximum supply voltage 7.4.4.1 
+
+and minimum frequency 
+specified by the manufacluver 
+
+Interrupt each input connection 7.5 
+
+and then short together 
+
+Interrupt each output connection 7.6 
+
+and then short together 
+
+Nominal reference supply 7.2.2 
+
+pressure varied 10 [jcrcent 
+
+with output at 100 percent of span 
+
+Air bied from/into transmitter . 7.2.6.2 
+
+with input set at 10 percent. 
+
+5f > )XM'cent and 90 percent of i9pan 
+
+Recorded for minimum and 7.4.4.2 
+
+maximum input and maximum 
+air consumption 
+
+Input steps corresponding to 8.1 
+
+80 percent and 10 percent of 
+output span 
+
+Apply peak-to-peak amplitude 8.2 
+
+of 20 percent of input span at 
+fret|uencies necessary to vary 
+dynamic gain from 1 to 0.7 
+
+
+
+15 
+
+
+
+IS 13122 (Part 1) : 1V93 
+
+
+
+IS No. 
+
+7722 : 1975 
+
+
+
+
+
+
+
+
+
+1 
+
+mn* 
+
+
+1 
+
+BAIN 
+
+
+
+
+o 
+
+
+
+
+
+
+
+
+n 
+
+
+V 
+
+
+
+
+UJ 
+
+< < 
+
+-J CD 
+UJ 
+
+
+
+
+GAlN.O^n^ 
+
+
+\ 
+
+
+
+
+0: N 
+
+X 
+
+? o 
+
+
+
+
+
+
+
+
+
+
+\ 
+
+
+
+
+
+
+
+
+1 
+
+
+
+
+
+
+\ 
+
+
+
+
+
+< ^ 
+
+**• UJ 
+UJ O 
+
+
+
+< 5 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PHASE ^*1 
+AT GAtN=0-7 
+
+
+1 
+
+
+ASe AT 
+. max, 
+
+Vgain 
+
+
+
+
+
+
+
+
+
+
+
+
+V 
+
+
+
+
+
+
+
+
+
+
+
+
+\> 
+
+
+
+
+
+FREQUENCY IN HERTZ 
+
+Fig. 7 FkhorENo RiispoNsr, Ti^si Rj:si i it 
+
+ANNEX A 
+{Clause 2.1) 
+
+US I Ol REFERRED INDIAN STANDARDS 
+
+
+
+Title 
+
+
+
+Analogue pneumatic sig- 
+nals for process control 
+systems 
+
+7728 : 1984 Analogue dc current sig- 
+
+nals for process control 
+. systems (fust revision) 
+
+8493 : 1977 Analogue dc vollage signals 
+
+for industrial pmcess n\eas- 
+uiTemenls and control systems 
+
+9000 Basic environmental testing 
+
+procedures for electronic 
+and electrical items 
+
+(Part 2/Sec 1 to 4) : 1977 Cold test, Section 1 
+
+General, Section 2 Cold 
+test fornon heat dissipating 
+items with sudden change 
+of temperature, Section 3 
+Cold test for non-heat dis- 
+sipating item with gnidual 
+change of tempera lure. Sec- 
+tion 4 Cold test for heat dis- 
+sipating items with gradual 
+change of temperature 
+
+Dry heat test, Section 1 
+General, Section 2 and Sec- 
+tion 3 Dry heat test for non- 
+heat dissipating items with 
+sudden change of teu\pera- 
+ture 
+
+
+
+JSNo. 
+(Part 4): 1979 
+
+
+
+(Part5/Secl and 2): 
+1981 
+
+
+
+(Part7/Sec3): 1979 
+
+
+
+Part 8): 1981 
+
+
+
+Title 
+Damp heat (steady state) 
+
+Damp heat (cyclic) test 
+Section 1 16 + 8 h cycle, 
+Section 2 12+ 12 h cycle 
+
+Impact test, Section 3 
+Drop and topple 
+
+Vibration (sinusoidal) test 
+
+
+
+(Part3/Sec I to 3) : 1988 
+
+
+
+Part i4/Sec 1 to 3) : 1988 Test N : Change of 
+temperature, Section 1 Test 
+Na : Rapid change of 
+temperature (thermal 
+
+shock) with prescribed 
+time of transition-two 
+cha mber method (first 
+revision), Section 2 Test 
+Nb: Change of temperature 
+(temperature cycling) with 
+specified rate of change- 
+one chamber method, Sec- 
+tion 3 Test Nc: Rapid 
+change of temperature 
+(thennal shock) - Two 
+fluid bath method (first 
+revision) 
+
+
+
+16 
+
+
+
+Standard Mark 
+
+The use of the Standard Mark is governed by the provisions of the Bureau of Indian 
+Standards Act^ 1986 and the Rules and Regulations made thereunder. The Standard Mark on 
+products covered by an Indian Standard conveys the assurance that they have been 
+produced to comply with the requirements of that standard under a well defined system of 
+inspection, testing and quality control which is devised and supervised by BIS and operated 
+by the producer. Standard marked products are also continuously checked by BIS for con- 
+formity to that standard as a further safeguard. Details of conditions under which a licence 
+for the use of the Standard Mark may be granted to manufacturers or ^producers may be 
+obtained from the Bureau of Indian Standards. 
+
+
+

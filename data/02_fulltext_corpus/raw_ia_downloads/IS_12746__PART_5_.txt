@@ -1,0 +1,2608 @@
+•••••••••••••••• 
+
+
+
+^ is^ 
+
+
+
+
+
+T-^^^i^ 
+
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live' 
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New' 
+
+
+
+
+&^JfflA=gi^^^^/ffiAfc^icOv^ ^a^T^s^=^Ir t ^^l ^^ 
+
+
+
+IS 12746-1-1 (1999) : Telecontrol equipment and systems. 
+Part 1: General considerations, Section 1 General principles 
+[LITD 10: Power System Control and Associated 
+Communications] 
+
+
+
+>^^lllfcJ^9>^^bv/ff^feial>^h:>^^Ts;>&^T^FS 
+
+
+
+5?aiU I l>ft=55S5&'>S*^ 
+
+
+
+^^:<xvvv^i^ 
+
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+
+BLANK PAGE 
+
+
+
+*Tsr- 
+
+
+
+
+
+^^ 
+
+
+
+iA*^*^ 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 12746 (Parti/Sec 1) : 1999 
+lEC 870-1-1 (1988) 
+
+( Reaffirmed 2006 ) 
+
+
+
+
+
+
+/nd/an Standard 
+TELECONTROL EQUIPMENT AND SYSTEMS 
+
+
+
+PART 1 GENERAL CONSIDERATIONS 
+Section 1 General Principles 
+
+
+
+ICS 33.200 
+
+
+
+© BIS 1999 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+Ja/7t/a/y199d Price Group 10 
+
+
+
+Power Systems Control and Associated Communications Sectional Committee, LTD 25 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with lEC 870-1-1 ( 1988 ) 'Telecontrol equipment and systems 
+— Part 1 : General considerations— Section 1 General principles' issued by the International Electrotechnlcal 
+Commission (I EC) was adpoted by the Bureau of Indian Standsirds on the recommendation of Power 
+Systems Control and Associated Communications Sectional Committee (LTD 25) and approval of the 
+Electronics and Telecommunication Division Council. 
+
+The text of the I EC standard has been approved as suitable for publication as Indian Standard without 
+deviations. 
+
+Wherever the words 'International Standard' appear referring to this standard, they should be 
+read as 'Indian Standard'. 
+
+CROSS REFERENCES 
+
+In this Indian Standard, the following International Standards are referred to. Read in their respective 
+places the following : 
+
+
+
+International Standard 
+
+
+
+Corresponding Indian Standard 
+
+
+
+Degree of 
+Equivalence 
+
+
+
+lEC 50 (371) : 1984 International 
+Electrotechnlcal Vocabulary (lEV) 
+
+— Chapter 371 : Telecontrol 
+
+I EC 870-1-2 : 1989 Telecontrol 
+equipment and systems — Part 1 : 
+General consideratior^ — Section 2 
+Guide for specifications 
+
+lEC 870-1-3 : 1990 Telecontrol 
+equipment and systems — Part 1 : 
+General considerations — Section 3 
+Glossary 
+
+lEC 870-2-1 : 1987 Telecontrol 
+equipment and systems — Part 2 : 
+Operating conditions — Section 1 
+Environmental conditions and 
+power supplies 
+
+I EC 870-3 : 1 989 Telpcontrol equip- 
+ment and systems — Part 3 : Inter- 
+faces (Electrical characteristics) 
+
+— Specifications 
+
+I EC 870-4 : 1990 Telecontrol equip- 
+ment and systems — Part 4 : Per- 
+formance requirements 
+
+I EC 870-5 : 1993 Telecontrol 
+equipment and systems — Part 5 : 
+Transmission protocols 
+
+Only the English language text in the International Standard has been retained while adopting it in this 
+Indian Standard. 
+
+
+
+IS 1885 (Part 50) : 1985 Electrotechnlcal 
+vocabulary : Part 50 Telecontrol ( first 
+revision ) 
+
+IS 12746 (Part 1/Sec 2) : 1 993 Telecontrol 
+equipment and systems : Part 1 General 
+considerations, Section 2 Guide for 
+specifications 
+
+IS 12746 (Part 1/Sec 3) : 1 993 Telecontrol 
+equipment and systems : Part 1 General 
+consideration, Section 3 Glossary 
+
+IS 12746 (Part 2) : 1989 Telecontrol equip- 
+ment and systems : Part 2 Environmental 
+conditions and power supplies 
+
+
+
+IS 12746 (Part 3) : 1 995 Telecontrol equip 
+ment and systems : Part 3 Interfaces 
+(Electrical-characteristics) — Specifications 
+
+IS 12746 (Part 4) : 1993 Telecontrol equip- 
+ment and systems : Part 4 Performance 
+requirements 
+
+IS 12746 (Part 5) : 1992 Telecontrol equip- 
+ment and systems : Part 5 Transmission 
+protocols 
+
+
+
+Technically 
+Equivalent 
+
+Identical 
+
+
+
+do 
+
+
+
+Technically 
+Equivalent 
+
+
+
+Identical 
+
+
+
+do 
+
+
+
+do 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+
+
+Indian Standard 
+TELECONTROL EQUIPMENT AND SYSTEMS 
+
+
+
+PARTI GENERAL CONSIDERATIONS 
+Section 1 General Principles 
+
+
+
+INTRODUCTION 
+
+
+
+Telecontrol systems serve for monitoring and control of processes 
+which are geographically widespread. They include ail equipment and 
+functions for acquisition, processing, transmission and display of the 
+necessary process information. The performance of a telecontrol system 
+is determined basically by: 
+
+
+
+1) the data integrity of information transfer, from a source to its 
+destination, and 
+
+2) the speed with which information is transferred to Its destination. 
+
+
+
+The data integrity is defined as the unchangeability of an informa- 
+tion content from a source to its destination, while the speed of 
+information transfer is measured by the overall transfer time. 
+
+
+
+The high responsibility which is associated with the transmission of 
+Information such as commands and the occurrence of adverse environ- 
+mental conditions necessitate standards for data acquisition and of data 
+transmission which fulfil stringent requirements of data integrity and 
+transmission efficiency. 
+
+
+
+It should be noted that although this series of standards has been 
+produced specifically for telecontrol systems used in electrical power 
+systems, they may also be applied to other fields of application, e.g. 
+gas and water supply and distribution, etc. 
+
+
+
+The aim of these standards is to provide adequate Information for 
+correct planning and reliable operation of telecontrol systems. The 
+standards are divided Into different parts, listed In Clause 2 of this 
+report. 
+
+This part of this series of telecontrol standards Is intended to give 
+the user a general survey of the systems and their elements, thus 
+presenting the necessary basic Information for a thorough under- 
+standing of the following parts of these standards. 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+1 . Scope 
+
+This series of standards applies to telecontrol equipment and systems 
+with coded bit serial data transmission for monitoring and control of 
+geographically widespread processes. 
+
+2. Object 
+
+This series of standards describes configurations and functions of 
+telecontrol systems and of related elements. It defines the functional 
+requirements, logical characteristics and interface conditions of the 
+basic elements and the rules those elements shall follow in co-existing 
+with other elements. 
+
+These standards do not define the internal physical characteristics of 
+such elements nor the layout, construction or material used. 
+
+
+
+The following subjects are outside the scope of these standards: 
+
+ripple control systems; 
+
+properties of transmission channels and local bus (highway) 
+systems for communication between process input/output elements; 
+
+
+
+teleprotection and locally automated functions even though they 
+may sometimes be Implemented within a telecontrol system. 
+
+
+
+These standards are subdivided into several parts, which are sub- 
+divided into several sections and issued as separate publications 
+bearing the following titles and scopes: 
+
+I EC Publication 870-1-1: Part 1 : General considerations , Section One - 
+General principles (which constitutes this report) 
+
+
+
+This report explains the structural elements, configurations and 
+basic functions of telecontrol systems. 
+
+
+
+It gives an overview of functional elements which contribute to basic 
+structures and possible choice of telecontrol systems configurations. 
+
+
+
+It deals with functions which are typical for any process to be 
+monitored and controlled but emphasizes the specific problems which 
+characterize geographically widespread processes, such as the dominant 
+influence of telecommunication links with restricted bandwidth and 
+often low signal-to-noise ratio. 
+
+
+
+However, this report shall only serve as an introduction to the 
+detailed standards and recommendations laid down in Parts 2-5 quoted 
+below. 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+I EC Publication 870-1-2: Part 7; General considerations. Section Two - 
+Guide for specifications (under consideration) 
+
+This Section Two of Part 1 will describe guidelines for planning and 
+defining specifications of telecontrol systems and equipment in order to 
+accommodate individual application demands. 
+
+
+
+I EC Publication 870-1-3: Part 1: General considerations. Section Three - 
+Glossary (under consideration) 
+
+This Section Three of Part 1 will present the specific terms of 
+telecontrol techniques as defined in the International Electrotechnical 
+Vocabulary [lEV] [lEC Publication 50 (371)] as well as other terms 
+which are necessary for the understanding of this series of standards. 
+
+
+
+I EC Publication 870-2-1: Part 2: Operating conditions , Section One - 
+Environmental conditions and power supplies 
+
+This Section One of Part 2 defines the environmental and power 
+
+supply conditions to which the telecontrol equipment should be 
+
+designed in order to fulfil its specifications. It establishes classes for 
+different conditions and also defines test procedures. 
+
+
+
+I EC Publication 870-2-2 will constitute Section Two and it will deal 
+with electromagnetic compatibility as well as corrosive and erosive 
+influences. 
+
+lEC Publication 870-3: Part 3: interfaces (in preparation) 
+
+This part will define the interface conditions that have to be met in 
+order to correlate the different pieces of equipment needed to form a 
+telecontrol system and to allow the user to manage such a system. 
+
+I EC Publication 870-U: Part ^: Performance requirements (in pre- 
+paration) 
+
+This part will deal with those characteristics that have to be met by 
+telecontrol equipment and systems to accomplish the functions for 
+which they are intended in a continuous, secure and precise manner, 
+and in addition to be flexible enough to accommodate future demands. 
+
+
+
+lEC Publication 870-5: Part 5; Transmission protocols (in preparation) 
+
+
+
+This part will describe the functional characteristics of data 
+transmission that shall be met in order to implement a telecontrol 
+system by means of links or networks. Data integrity requirements for 
+information transmission, distinct data formats and transmission 
+methods, which fulfil these requirements, will be defined. 
+
+
+
+IS 12746 ( Pait 1/Sec 1 ) : 1999 
+lEC 870-1-1(1988) 
+
+This part will include several sections. 
+
+The standards listed above will be completed by additional parts and 
+sections as appropriate. 
+
+
+
+3. General aspects related to telecontrol systems 
+
+The fundamental aspects relating to the operation of geographically 
+widespread processes including the generation and optimum transport- 
+ation and distribution of a product are very similar for the different 
+kinds of products (e.g. gas, water, oil or electricity). Telecontrol 
+systems employed in the operation of electric power systems have been 
+developed to a very advanced state and often serve as examples for 
+applications in other areas. For this reason, the general aspects 
+relating to the operation of any geographically widespread process are 
+explained in the following sub-clauses by reference where appropriate 
+to the operation of an electric power system. 
+
+3 . 1 The role of telecontrol systems in power systems operation 
+
+The quality of the power supply, which includes its reliability, 
+depends to a large extent on the existence of a coordinated telecontrol 
+system which assures all the necessary supervisory and control func- 
+tions. The structure of such a telecontrol system is dictated by the 
+power system's architecture and by the strategy of operation adopted 
+by the user(s). It is in essence a distributed process control system 
+conforming to the hierarchical structure of the geographically wide- 
+spread power transportation and distribution networks. A typical case 
+olF a telecontrol system is depicted in Figure 1, page 25. 
+
+
+
+A system can, from the operational point of view, service a whole 
+power network or be split up Into different levels of responsibility or 
+even into partially or fully independent subsystems. 
+
+
+
+The local control systems of power stations are usually independent 
+of the power network telecontrol system but certain monitored informa- 
+tion is fed from the power stations control systems into the power 
+network telecontrol system. Conversely, certain control information, 
+such as set points for power generation, are transmitted into power 
+stations (e.g. in the case of automatic load/frequency control). 
+
+
+
+Telecontrol system configurations range from a few point-to-point 
+monitoring and control functions up to multilevel systems covering vast 
+geographic areas. The use of computer technology on all levels of the 
+system allows telecontrol systems and architectures to use distributed 
+intelligence with possibilities of preprocessing information to avoid 
+superfluous data flow. Redundancy Is provided for vital functions in 
+order to fulfil specified availability and reliability requirements. 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+Extended processing functions, such as load/frequency control, 
+security analysis, state estimation and short-term predictive energy 
+management, may be carried out either by a separate real-time 
+computer system or by the telecontrol system itself, according to the 
+choice of the systems architecture. 
+
+It has also to be noted that equipment and subsystems are often 
+manufactured by different suppliers and/or stem from different gene- 
+rations of technology. Their integration into telecontrol systems thus 
+creates interface problems which are sometimes difficult to solve. 
+
+3.2 The role of the data transmission system 
+
+One of the important factors which has to be taken into account in 
+the planning stage of a telecontrol system is the specification of the 
+data transmission system. 
+
+Private or public communication cables, microwave channels and 
+power line carrier (PLC) are most widely used. Since telecontrol 
+systems have to operate in real-time mode, limitations imposed by the 
+telecommunication channels may heavily impair the overall system 
+efficiency. The implication is restricted bandwidth and hence restricted 
+bit rates to be transmitted under noisy environmental conditions, which 
+cause distortion of transmitted signal elements. Conversely specifica- 
+tions of the overall channels have to be chosen to allow optimization of 
+the overall system performance. The data transmission system has to 
+be considered in this sense as an integrated part of the telecontrol 
+system. 
+
+
+
+In addition, all transmission equipment located in the vicinity of high 
+voltage equipment such as circuit breakers and isolators, is prone to 
+intermittent high noise levels of the burst type and transient voltages. 
+This is especially true for PLC channels. 
+
+
+
+The performance requirements and boundary conditions for some 
+telecontrol applications, such as teletripping in transmission line 
+protection, generation/load rejection schemes, etc., where instan- 
+taneous response in real-time mode is critical, dictate the permanent 
+direct logical connections between data sources and their destinations. 
+This means that the application of store and forward techniques or 
+packet switching are explicitly prohibited in such systems. 
+
+
+
+There are however telecontrol functions with less demanding per- 
+formance requirements which may adopt the general techniques and 
+standards which have been developed for office automation applica- 
+tions. Data exchanges among central stations for regions, districts or 
+even nations may fall into that category. 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+3.3 Requirements which determine the design of a telecontrol system 
+
+For detailed information, see lEC Publication 870-4. 
+
+3.3.1 Functional characteristics 
+
+The system shall be designed so that the operators will obtain 
+the correct information on actual operational status from strategic 
+points of the power network and shall be able to respond quickly and 
+accurately. 
+
+3.3.2 Environmental conditions 
+
+The installed equipment has to operate correctly under specified 
+operational environmental conditions. Detailed specifications and a 
+classification of environmental conditions are given in I EC Publi- 
+cation 870-2-1. 
+
+3.3.3 Reliability, availability and security (^RAS) 
+
+RAS specifications depend on the particular application, and have to 
+be met by the system and all its functional elements. These include 
+uninterrupted power supplies which generally are not considered as 
+being part of the telecontrol system itself. Electromagnetic compatibility 
+has to receive close attention for all electronic equipment involved in 
+telecontrol systems. 
+
+
+
+Systems should be laid out to operate in a fail safe mode and compo- 
+nent failures should be indicated immediately. 
+
+
+
+3.3.4 Maintainability, serviceability and expandability, 
+upwards compatibility 
+
+Means for quick fault indication and location are required together 
+with self-diagnosis of the equipment. Both hardware and software 
+should ensure maintainability and expandability, to cope with suc- 
+cessive alteration and expansion of the process. Design Improvement 
+and changes of technology and of the methods of operation should also 
+be taken into account. The organization of the software should be such 
+as to permit operational control staff to carry out changes quickly and 
+easily to cater for alterations in the power supply network. 
+
+
+
+3.4 Main differences between telecontrol systems and local control systems 
+
+The characteristics which differentiate telecontrol systems from local 
+control systems are: 
+
+The use of telecommunication links under restriction of bandwidth 
+and under noisy environmental conditions, requires optimum trade- 
+offs between transmission speed and reliable information transfer in 
+order to cope with the amount of data to be transmitted and the 
+overall transfer time needed. 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+rEC 870-1-1 (1988) 
+
+Long distance data transmission links or networks^ sometimes 
+composed of different transmission media, create problems with 
+occasional high noise levels. The chosen data transmission protocol 
+has to consider these circumstances. High data integrity rates 
+have to be guaranteed at arbitrary high noise levels, whilst taking 
+account of the fact that information transfer rates decrease 
+gradually with increasing noise. 
+
+
+
+Numerous geographically widespread plants (and telecontrol sta- 
+tions) have to be controlled by the same centre. 
+
+
+
+4. Structures and configurations of telecontrol systems 
+
+A system's structure is understood as the hierarchic order of the 
+basic elements and their interactions, which constitute and characterize 
+that system. 
+
+A system configuration is a specified arrangement of telecontrol 
+stations and their interconnections. 
+
+4.1 Interrelation of process network architectures 
+and telecontrol system configurations 
+
+In the planning stage, the system configuration has to be defined 
+and tailored according to the user specifications. The configuration of 
+the process, e.g. of a power grid, with the number of voltage levels 
+involved, the number and geographical locations of power stations, 
+control centres, substations and outstations, determines first of all the 
+layout of the data transmission system which has to Interconnect these 
+points. 
+
+
+
+This strategy may differ from country to country and from utility to 
+utility, being state or privately owned. 
+
+Emphasis may be given to monitoring functions, leaving control 
+functions partly or entirely to the local operators in substations but 
+providing means for later upgrading of the system. Full operational 
+facilities for remote monitoring and telecontrol functions may be 
+implemented right from the beginning. Even in relatively simple 
+systems, the monitoring and control functions may be quite complex 
+in order to satisfy the many operational requirements for each 
+hierarchical level of a power network. They may also be influenced by 
+security requirements, statutory regulations and economic consider- 
+ations. The trend to more power grid tie lines, either at company levels 
+or at national levels, calls for high grade application control functions 
+and hence highly sophisticated telecontrol system structures. 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+For the sake of reliability and security, telecontrol systens are 
+therefore often subdivided into a number of different levels of 
+responsibility while still maintaining an overall operational trans- 
+parency. 
+
+4.2 Basic functional modules of a point-to-point telecontrol system 
+
+A simple but typical point-to-point structure, with interfaces to be 
+defined in I EC Publication 870-3 is represented in Figure 2, page 26. 
+This serves to describe and explain briefly the basic functional 
+modules of equipment or subsystems, namely: 
+
+process input/output; 
+
+information processing in the controlled station; 
+
+data transmission; 
+
+information processing in the controlling station; 
+
+operator input/output. 
+
+Table I, page 23, represents typical interrelations of these functional 
+modules and possible types of related telecontrol modules and equip- 
+ment. It should be noted that processing of local and special appli- 
+cation functions in the controlled station as well as in the controlling 
+station may be performed either in the telecontrol equipment itself or 
+in separate equipment (i.e. in additional processors or in a process 
+computer) which then has to be linked to the telecontrol equipment by 
+a data bus. 
+
+
+
+4.3 Functional software modules 
+
+Telecontrol system software can be divided into the categories shown 
+in Table 1 1 , page 24. 
+
+In typical systems, the basic and application software consist of 
+standard modules. New development work is normally restricted to 
+project specific software. 
+
+4.4 Configuration of telecontrol systems 
+
+Data transmission network configurations can be broken down into 
+the basic functional elements listed below, which constitute the basis of 
+all composite network configurations. Details concerning data trans- 
+mission and traffic methods are dealt with in Clause 6. However, some 
+specific remarks concerning data transmission have to be formulated at 
+this stage. The telecontrol equipment in the control centre usually 
+communicates with more than one outstation and uses more than one 
+link terminal (see Figure 2: DCE, modems, page 26) for this purpose. 
+The number of link terminals used influences the organization of the 
+data transfer. , 
+
+
+
+The various types of data transfer suitable for telecontrol purposes 
+are now illustrated, using the following symbols: 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+
+
+o 
+
+
+
+Main control centre 
+
+
+
+C) 
+
+
+
+Control centre with one or more link 
+terminals 
+
+
+
+The small circles inserted into the symbols for stations symbolize the 
+number of link terminals per control centre. 
+
+
+
+A 
+
+
+
+Outstation, controlled station, remote 
+terminal unit (RTU) 
+
+
+
+O 
+
+
+
+Information collecting, concentrating and 
+exchange points 
+
+
+
+Data transmission line 
+
+
+
+4.4.1 Point-to-point configuration 
+
+
+
+^ 
+
+
+
+A 
+
+
+
+This configuration connects two telecontrol 
+stations and is the simplest type possible 
+
+
+
+4.4.2 Multiple point-to-point configuration 
+
+
+
+
+The control centre is connected to the 
+outstations by one link terminal per out- 
+station. At any time, all outstations are 
+allowed to transmit data to the control 
+centre, which in return may transmit 
+messages to one or more outstations 
+simultaneously. 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+4.4.3 Multipoint-star configuration 
+
+
+
+
+The control centre is connected to more 
+than one outstation by one common link 
+terminal. At any time, only one outstation 
+is allowed to transmit data to the control 
+centre. The central telecontrol equipment 
+may transmit data either to one or more 
+selected outstations or global messages to 
+all outstations simultaneously. 
+
+
+
+4.4.4 Multipoint- party line configuration 
+
+
+
+■^ 
+
+
+
+A 
+
+
+
+A 
+
+
+
+A 
+
+
+
+The control centre is connected to more 
+than one outstation by a common path. The 
+restrictions imposed on the exchange 
+between centra! and outstations is the same 
+as in the multipoint-star configuration 
+(Sub-clause 4.4.3). 
+
+
+
+4.4.5 Multipoint- ring configuration (partyline-ring) 
+
+
+
+
+The communication path bet- 
+ween all stations forms a ring. 
+This is a preferred method to 
+improve the availability of the 
+communication path. If the 
+path is interrupted in some 
+location, full communication is 
+maintained, since every station 
+can be reached from two sides 
+of the ring. 
+
+
+
+10 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+
+
+4.4.6 Composite (hybrid) configuration 
+
+
+
+Configurations of the types indicated in Sub-clauses 4.4.1 to 4.4.5 
+can be combined in a great variety of composite configurations. The 
+most important variety is the meshed network configuration in which 
+communication between any pair of stations is required. 
+
+
+
+
+Information collection, concentration and exchange points may be 
+inserted. 
+
+Multirouting as shown in Sub-clauses 4.4.5 and 4.4.6 increases the 
+reliability and availability of data transmission. 
+
+
+
+5. Functions of telecontrol systems 
+
+5.1 Layered structure of telecontrol functions 
+
+The functions of data systems may be subdivided into seven layers 
+as specified in the OSI (Open System Interconnection) reference model 
+defined by ISO, This subdivision into modular layers is a useful 
+theoretical model for defining standards. Each layer is essentially 
+independent of the layers below and above it. It treats the layer below 
+as a "service" function and the layer above as a "master" with which 
+it exchanges data and to which it reports errors. It communicates, in 
+general, with its corresponding layer on the other side of the trans- 
+mission line. 
+
+
+
+The independence of the layers gives a modularity to the system. It 
+is possible to alter one layer without altering others, in particular 
+some layers may be omitted. 
+
+Telecontrol system functions are divided into the following layers: 
+
+
+
+11 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+Application functions 
+
+Cover the special needs of the process to wnich a telecontrol 
+
+system is applied, thus dealing with the types of information 
+
+emanating from the process or from the operator. This information 
+
+is transferred to the telecontrol system by signals and is handled 
+within this system in the form of data. 
+
+Operational processing functions including presentation functions 
+
+Conversion of information into signals and data in the operational 
+equipment. 
+
+Data transport, network, linf< and physical transmission functions 
+
+Application functions and associated operational processing 
+functions are described in general in Sub-clauses 5.2 to 5.4 below. 
+Standards for data transport, network and link functions (such as 
+data format structures) are described in general in Clause 6 below 
+and will be dealt with in detail in lEC Publication 870-5. 
+
+
+
+5.2 Application functions 
+
+Application functions are divided into the following two categories; 
+
+
+
+Basic functions; 
+
+Extended processing functions. 
+
+5.2.1 Basic functions 
+
+These deal with all types of individual information from and to the 
+process and the operator. 
+
+The information content of data resulting from basic application 
+functions remains unaltered while being processed by the telecontrol 
+system (i.e. the data integrity is maintained). 
+
+The main subgroups are: 
+
+Monitoring (information acquisition from the process) 
+
+• Teleindication 
+
+discrete state information (single, double or multipoint). 
+
+
+
+• Telemetering 
+
+continuous variable quantities. 
+
+• Telecounting 
+
+integrated variables or incremental information. 
+
+
+
+12 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 ( 1988 ) 
+
+Command and control (acting on the process) 
+
+• Telecommand, teleswitching 
+
+single or double commands, pulse type or maintained commands. 
+
+• Teleregulation and teleadjusting 
+
+continuous and discontinuous variable quantities. 
+
+5.2.2 Extended processing functions 
+
+They are derived from a set of basic functions acting on the input 
+and/or output side of the process and operator by means of operational 
+processing functions. 
+
+Extended processing functions may alternatively be performed by the 
+CPU of the telecontrol system or by separate computer systems. 
+
+Typical examples are (in order of decreasing overall transfer time 
+priority) : 
+
+limit indication; 
+
+automatic interpretation of alarms; 
+
+display of faulty states; 
+
+display of summated measured values; 
+
+real time state estimation; 
+
+fault location routines (process and telecontrol system); 
+
+real time event logging for post mortem analysis; 
+
+load/frequency control and economic energy management; 
+
+security monitoring and analysis; 
+
+display of integrated metered values; 
+
+short-term energy management; 
+
+contingency evaluation; 
+
+automatic load shedding and restoration; 
+
+hydro-thermal optimization and unit commitment. 
+
+5.3 Operational processing functions 
+
+Operational processing functions ensure correct data acquisition and 
+provide appropriate data presentation. Typical operational processing 
+functions are: 
+
+
+
+matching of input/output signals which cross interfaces to man and 
+
+to the process; 
+
+suppression of contact bounces; 
+
+detection of faulty state information; 
+
+limit checks; 
+
+plausibility checks; 
+
+increment pulse validation; 
+
+calculation of engineering values of measurands; 
+
+summation and other arithmetic operations. 
+
+
+
+13 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+Modern technology allows the economic implementation of additional 
+operational processing functions within stations where information is 
+acquired and within information concentrators. This procedure is called 
+preprocessing. Preprocessed information may also be further processed 
+by the CPU of the controlling station (or a separate computer system). 
+
+
+
+Preprocessing may also reduce the amount of data to be transmitted 
+and may prevent, particularly in emergency situations, possible over- 
+loading of transmission links, the CPU and the man-machine interface. 
+
+5.4 Presentation of the process information to tiie operator 
+
+The man-machine interface is defined as the shared boundary 
+between the terminal of a data processing system and the operator. 
+The type and form of information to be interchanged between man and 
+machine and the hardware and software to accomplish this have to be 
+specified accordingly. 
+
+The basic requirement for optimum man-machine communication is 
+therefore to provide operators and maintenance personnel with 
+adequate and reliable information on the actual status of the power 
+grid and the telecontrol system itself and to make use of central 
+facilities to allow possible intervention in the process. 
+
+
+
+The types of information mentioned in Sub-clauses 5.2.1 and 5.2.2 
+are typically displayed by the following hardware: 
+
+Mimic diagram 
+
+Represents the topology and indicates the status of the power 
+grid. Active and/or passive elements such as multi-aspect indi- 
+cators, indication lamps, discrepancy switches, push buttons may 
+be used to display the status and to initiate commands. 
+
+
+
+Operator's consoie 
+
+Usually consists of a combination of displays, especially visual 
+display units and keyboards, which provide the operator with 
+detailed information and control facilities. 
+
+
+
+indicating instruments (analogue and/or digital) 
+
+For measured and composite values (e.g. sums of analogue values 
+
+or processed values). 
+
+Visual display units (VDU) 
+
+Usually serve for alphanumeric display of alarms, measurands and 
+other information and for graphic display of process network 
+status, etc. 
+
+Recording equipment 
+
+For alphanumeric and graphic recording such as teletype, line 
+
+printers, hardcopying devices and plotters. 
+
+
+
+14 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+Acoustic signal/ zatlon 
+
+For attracting the operator's attention to dangerous situations. 
+
+
+
+Maintenance equipment 
+
+For monitoring and maintenance of the telecontrol system itself. 
+
+
+
+6. Transmission of telecontrol data 
+
+6.1 Tlie role of data transmission standards 
+
+Data transmission standards have been issued by international bodies 
+such as CCITT and ISO. Existing standards are characterized by the 
+fact that they cover commercial type data transmission. I.e. data 
+transfer between scientific or commercial computer systems and remote 
+terminals. Transmission paths may be circuits rented from the public 
+telephone authority, covering distances from a few kilometres up to 
+several hundred kilometres. Data handling of this type is typically 
+optimized for office automation tasks. Message frames and protocols are 
+mostly adequate for the degree of time requirements and data integrity 
+required by those services. 
+
+
+
+On-line, real-time telecontrol data transmission on the other hand, 
+which is characterized by the fact that telecontrol systems cause 
+material or energy to move, require standards which fulfil stringent 
+data integrity requirements. 
+
+
+
+The typical requirements of telecontrol data transmission are: 
+
+very high availability; 
+
+very high data integrity; 
+
+short transfer time which allows real-time response to events; 
+
+high information transfer efficiency; 
+
+proper operation in the presence of high electromagnetic Inter- 
+ference and differences in earth potential. 
+
+The major obstacle in fulfilling these requirements is the fact that 
+the two requirements, "high data integrity" and "low transmission 
+delay", are two conflicting properties in transmission paths with 
+restricted bandwidths and under inimical environmental conditions. 
+
+
+
+Consequently it Is necessary to standardize transmission methods 
+with fair compromises on these two properties. 
+
+
+
+15 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+Utility owned transmission media, such as underground and overhead 
+cables, PLC and microwave links are very often put into operation in 
+order to achieve high availability of the communication links. 
+
+6.2 Data transport, network j link and physical transmission functions 
+
+Data transport functions cover all functions involved in the 
+management of efficient and reliable information transfer between 
+stations. 
+
+Requests for the transmission of messages with various priorities, 
+lengths, dialogue types and destinations are accepted from the "appli- 
+cation" layer in each station. Appropriate transmission procedures are 
+delegated to the lower protocol layers which report on the successful 
+performance or on observed errors to the higher layers. Automatic 
+recovery procedures are initiated upon dynamic errors, while error 
+reports to the higher layers are generated upon the detection of 
+persistent errors. 
+
+
+
+Typical functions which are managed in the higher layers in co- 
+operation with the tower protocol layers "link" and "physical trans- 
+mission" are: 
+
+Priority organization for spontaneous and cyclic information 
+transfers. 
+
+Performance of maintenance and test routines upon request (e.g. 
+activating or deactivating links, stations or system parts). 
+
+Error recovery strategies. 
+
+Generating and monitoring error-detecting codes. 
+
+Generating and monitoring frame synchronization, acknowledgement 
+of message frames and detecting frame size errors. 
+
+Serializing and deserializing of message frames. 
+
+Monitoring signal quality. 
+
+Converting signal levels and data formats. 
+
+6.3 Characteristics of telecontrol data transmission 
+
+6.3.1 Telecontrol message structure 
+
+The general structure of a telecontrol message is shown in Figure 3, 
+page 27 (for details, see lEC Publication 870-5). Standard frame 
+formats provide information field lengths which may vary only by 
+multiples of octets. 
+
+
+
+16 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+
+
+6.3.2 Transmission initiation modes of telecontrol devices 
+
+
+
+Three basic transmission initiation modes are used for teiecontroi 
+data transmission: 
+
+Event initiated transmission (^spontaneous transmission] 
+
+
+
+Data transmission is initiated by events in stations where they 
+occur, such as changes of breaker positions, changes of measured 
+values, etc. This method best meets real-time requirements. The 
+proper operation of event initiated transmission is ascertained by 
+
+•I- :__: ^f ^^^•,^^:^ 4.-.»4. i^t .^^4.: t'U^.^*.~u^ " r *: ^ 
+
+VI ai i9iiiia»ivi I \jt ^ci i%^uiv> (.c^o v. i ii i vi ma liui i v wov^iiuv^ iuii^liuii^. 
+
+
+
+Transmission on demand 
+
+In this case the outstation is requested by the master station to 
+transmit the actual information status. In the case of several 
+outstations this mode is also called interrogative or polling mode. 
+
+
+
+Cyclic transmission 
+
+This mode is frequently used for transmission of measured values 
+and binary information from outstation to the control station. Sets 
+of measured values and/or binary status information are trans- 
+mitted in a time division scheme. It has to be noted that cyclic 
+transmission causes a time delay in updating which increases with 
+the amount of information to be scanned in one cycle. A data path 
+is needed in the direction of information flow only. 
+
+
+
+Event initiated transmission and transmission on demand, where data 
+is transmitted only once, call for transmission with very high data 
+integrity. For the cyclic updating mode, where occasional wrong 
+information is corrected during the following cycle, a lower data 
+integrity class would be sufficient (for details, see lEC Publi- 
+cation 870-5). 
+
+
+
+6.3.3 Combinations of transmission initiation modes and dialog procedures 
+
+Link configurations, initiation modes of transmission and types of 
+traffic are principally independent of each other and a multitude of 
+combinations would therefore theoretically be possible. Practical 
+solutions, however, are limited by a series of restrictions imposed 
+mostly by considerations of a partly technical and a partly economical 
+nature. 
+
+Combinations of transmission initiation modes are: 
+
+
+
+17 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+Event initiation and transmission on demand, polled status inform- 
+ation from one or more outstations, or a set of specific measured 
+values and/or single-point or double-point status information is 
+scanned during a requested time period, etc. 
+
+
+
+Event initiated and cyclic transmission. Cyclic transmission can be 
+interrupted, thus enabling event transmission which has higher 
+priority. Periodically initiated test data transmission may also be 
+used as "watchdog" function. 
+
+
+
+Combination of the three transmission initiation modes with the 
+following priority allocation: 
+
+1) event initiated transmission; 
+
+2) transmission on demand; 
+
+3) cyclic transmission . 
+
+With regard to network configurations the following points have to be 
+taken into consideration: 
+
+Multiple point-to-point configurations can be broken up into the 
+equivalent number of point-to-point link elements, all having 
+independent link terminals on both ends. All three initiation modes 
+of transmission and combinations thereof can be applied to each 
+link individually. The data flow from n outstations will be limited 
+by the throughput of the system's central processors and not by 
+the capacity of the individual link terminals. 
+
+
+
+Restrictions in data flow, especially for links with cyclic trans 
+mission, are due to the imposed transmission priorities. 
+
+
+
+All multipoint configurations, such as star and party line, restrict 
+the possible data transmission rate from n outstations to less than 
+^/n per outstation. 
+
+Further restrictions are due to the choice of combinations of the 
+three transmission initiation modes and the imposed transmission 
+priorities. It has to be noted that the information handling strategies 
+of multipoint configurations are equal to those of bit-serial data bus 
+systems. Bus systems may operate in different initiation modes and 
+therefore need sophisticated data transmission handling capabilities. 
+
+
+
+Event initiated transmission may in the case of emergency suddenly 
+cause an increasing amount of information to be transmitted in a short 
+time (of the order of magnitude of 1 or 2 s duration) at one or all 
+outstations. Multiple point-to-point configurations are more flexible in 
+coping with an emergency than multipoint configurations. 
+
+
+
+18 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870.1-1 (1988) 
+
+
+
+6.4 Types of traffic in transmission c flannels 
+
+
+
+The particular procedures for conveying data over the communication 
+link, together with the direction and the chronological sequence in 
+which communication links may be needed, are functions of the types 
+of traffic carried by the link. 
+
+6.4.1 Simplex traffic 
+
+Simplex (one way) traffic may be used in the cyclic updating mode 
+in point-to-point and multipoint telemonitoring systems or in systems 
+using the channel selecting mode. 
+
+6.4.2 Half duplex traffic 
+
+Halfduplex traffic is characterized by a transmission link common to 
+both directions, thus precluding simultaneous transmission in both 
+directions. Compared to simplex transmission, it offers enhanced 
+protection of event information against loss by defining appropriate 
+dialogue procedures. 
+
+6.4.3 Duplex traffic 
+
+Independent transmission channels exist for the incoming and out- 
+going directions, thus representing a four-wire transmission path 
+having the possibility of simultaneous data transmission in both 
+directions. 
+
+6.5 Telecommunication systems 
+
+Properties of telecommunication systems are mentioned in this context 
+only in so far as they serve as a subsystem to a telecontrol system for 
+data transmission. 
+
+
+
+Transmission of telecontrol data is performed in most countries over 
+fully or partly utility owned information transmission systems. Rented 
+channels from telephone companies are also in use. 
+
+
+
+The channels usually comprise the following facilities for internal 
+use: 
+
+telephone with private automatic branch exchange (PABX); 
+
+teleprinter, facsimile; 
+
+telecontrol data transmission; 
+
+teleprotection; 
+
+closed circuit video. 
+
+Selections of existing transmission standards (CCITT, EIA and 
+others) which fulfil the requirements of telecontrol systems are 
+adopted . 
+
+6.5.1 Transmission media 
+
+The following transmission media are currently in use: 
+
+
+
+19 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+radio (VHF, UHF); 
+point-to-point microwave; 
+power line carrier (PLC); 
+
+communication cable embedded in earth wire | multiwire cables, 
+suspended communication cable s coax cables, 
+
+underground communication cable optical fibres. 
+
+
+
+The transmission facilities form a more or less complete telecommu- 
+nication network. Data transmission rates of telecontrol systems are 
+usually in the range of 50 bits/s to 2 400 bits/s, infrequently as high 
+as 4 800 bits/s and 9 600 bits/s. Signalling speeds in excess of 
+9 600 bits/s generally require special broadband channels which can be 
+provided using conventional telecommunication transmission techniques 
+over various telecommunication media. 
+
+
+
+6.5.2 Transmission methods 
+
+Telecontrol systems rely exclusively on bit-serial binary data 
+formats. The physical representation of the information units (bits) on 
+the transmission path depends on the transmission medium used, on 
+bandwidth limitations, and other environmental conditions. 
+
+
+
+The most common transmission methods are: 
+
+Pulse code modulation (PCM) in which binary information is repre- 
+sented by two distinct signal levels of fixed duration, in the 
+case of cablebound transmission over short distances (baseband 
+transmission), or by two distinct frequencies of distinct duration 
+for longer distances or other transmission media. In the case of 
+low transmission rates (up to 1 200 bIts/s) ordinary "frequency 
+shift" channels are used which convert the two distinct signal 
+levels into two distinct frequencies. For higher transmission speeds 
+various multilevel modulation techniques are applied which require 
+and deliver, in addition to the binary data flow, "signal-element- 
+timing" information and other data control information. 
+
+
+
+Digital pulse duration modulation (DPDM) In which binary informa- 
+tion is represented by signal pulses of two distinct durations. 
+The number of pulses and pulse intervals represent a given 
+number of bits. Frequency shift channels and modem techniques can 
+be implemented with DPDM and PCM, 
+
+
+
+6.6 Protection of messages against noise on the transmission channel 
+
+With regard to telecontrol data transmission and its integrity the 
+following characteristics of specific channel types are of Interest: 
+
+
+
+available bandwidth per channel; 
+
+20 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+planned signal/noise ratio figures which prevail during normal 
+environmental conditions and extremely low signal/noise ratios 
+during intervals of burst type noise; 
+
+attenuation (db/km) and its variations due to external influences 
+(weather, icing, etc.); 
+
+transmission time delay (ms/100 km) . 
+
+These characteristics are very different for the transmission media 
+cited above and interrelated for specific channel type. 
+
+Burst type noise, produced by operation of circuit breakers and 
+isolators, is practically absent on microwave channels, although 
+variations in attenuation due to atmospheric scattering may have to be 
+compensated by diversity operation. PLC on the other hand is charac- 
+terized by poor signal/noise ratios during the short periods of burst 
+type noise but attenuation per kilometre is low, thus allowing increased 
+repeater spacing. 
+
+6.6.1 Protection of information against falsification 
+
+Measures can be applied in all layers of telecontrol systems to reduce 
+the possibility of information falsification. Examples of typical measures 
+are: 
+
+Improving the signat-to-noise ratio. Passive methods include 
+screening of coaxial cables, proper choice of carrier and sub- 
+carrier frequencies. Active methods include increase of the 
+transmitter power, etc. 
+
+By weighted superposition of redundant coding and signal quality 
+supervision (pulse amplitude, signal distortion), maximum reduction 
+of residual (undetected) errors in transmission links can be 
+obtained. 
+
+After error detection, the output of the falsified information has to 
+be suppressed. 
+
+Using plausibility checks, state estimators and extended inform- 
+ation transmission procedures (such as "check before operate" for 
+command transmission). 
+
+6.6.2 Protection against loss of information 
+
+Spontaneous telecontrol systems may lose information if the inform- 
+ation is discarded after error detection on the transmission path. This 
+can be avoided by different methods such as: 
+
+
+
+Decision feed back 
+
+Various methods are in use, for example positive acknowledgement 
+and automatic repetition of transmission if the positive acknow- 
+ledgement does not arrive. 
+
+
+
+21 
+
+
+
+IS 12746 ( Part 1/Sec 1 ) : 1999 
+JEC 870-1-1 (1988) 
+
+Information feed back 
+
+This method combines error detection with protection against 
+loss of information by performing an identity check between the 
+information sent out and retransmitted to the initiating station. 
+
+Provision of sequential numbers for subsequent message frames. 
+
+
+
+22 
+
+
+
+IS 12746 { Part 1/Sec 1 ) 
+lEC 870-1-1 (1988) 
+
+
+
+1999 
+
+
+
+TABLE I 
+
+Interrelation of basic functional modules 
+
+and typical systems functions wit/i typical hardware modules 
+
+within a telecontrol system 
+
+
+
+Basic functional 
+modules 
+
+
+
+Typical (application and tele- 
+control 1 systems functions 
+
+
+
+Type or related modules 
+of equipment 
+
+
+
+Process input/output 
+
+- To convert actual physical states 
+of the process into coded data 
+(monitoring direction) 
+
+- Act on the process 
+(command direction) 
+
+
+
+To ensure information transfer 
+
+- From sensors In the process 
+
+to CPU, e.g. to add up and to 
+code metering pulses 
+
+- From CPU via transducers and 
+actuators to the process 
+
+
+
+Process equipment 
+
+- Sensors in the process 
+
+- Input channels receiving 
+(analogue or digital) data from 
+the process 
+
+- Transducers, actuators (n the 
+process, operating valves, 
+circuit-breakers, governors 
+
+
+
+Specific telecontroi information 
+processing 
+
+in the controlled station 
+- To process data according to 
+predefined rules 
+
+
+
+To process incoming and outgoing 
+information, e.g. 
+
+- To detect events by comparison 
+of former and new status 
+Information 
+
+- To reduce data if needed 
+
+- To react on comparison of set 
+point and measurands by send- 
+ing an actuator command 
+
+
+
+telecontrol equipment 
+
+- Central processor (CPU) 
+
+- Associated front-end processors 
+
+- Hard wired logic 
+
+- Main memory devices 
+
+- Internal bus subsystems 
+
+- Input/output channels to process 
+equipment 
+
+
+
+Data transmission 
+
+
+
+To transmit serial data between 
+widespread stations of a tele- 
+control system 
+
+
+
+To ensure reliable transmission of 
+all important process f'nformotion 
+
+- Signal (and/or) format conversion 
+
+- Error detection, e.g. by codes 
+and signal quality monitoring 
+
+- Data path performance monitoring 
+
+
+
+Data circuit-terminating equipment 
+
+
+
+- Standardized CCITT modems 
+
+- Special modems, e.g. incorpor- 
+ating channel switching and pro- 
+cessing In case of sophisticated 
+communications networks 
+
+
+
+Specific telecontrol information 
+processing 
+
+in the controlling station 
+- To process data according 
+to predefined rules 
+
+
+
+To process Incoming and outgoing 
+information, e.g. 
+
+- To prepare dear, comprehensive 
+information for display 
+
+- To derive automatic commands 
+from information cominq from 
+different stations of the tele- 
+control system 
+
+
+
+Telecontrol equipment 
+
+- Central processor (CPU) 
+
+- Associated front-end processors 
+
+- Hard-wired logic (very rarely) 
+
+- Main memory devices (Core, IC) 
+
+- Auxiliary mass storage (disk, 
+tape) 
+
+- Internal bus subsystem 
+
+- Input/output channels 
+
+
+
+Operator's input/output 
+
+
+
+Information display and 
+
+recording 
+
+To provide means for interacting 
+
+with the process by operators 
+
+To provide means for online 
+
+testing and fault diagnosis of 
+
+the telecontrol system Itself 
+
+
+
+To convert data into information 
+comprehensible by personnel and to 
+convert human actions into data 
+
+- Indication alarm and record 
+functions on /off status 
+
+- Digital and analog metering 
+
+-- Control and command functions 
+
+- Supervisory alarm functions 
+
+- Fault diagnosis 
+
+
+
+Operator's equipment 
+
+
+
+Mimic diagram 
+
+Visual display (VDU) 
+
+Signalling lamps 
+
+Recorders, line printers, data 
+
+loggers 
+
+Analog and digital indicating 
+
+instruments 
+
+Process operator consoles, 
+
+keyboards 
+
+Discrepancy (control) switches 
+
+Light pen, trace ball or joystick 
+
+for VDU 
+
+
+
+Note.- The mark i Indicates that the reiated hardware equipment need not necessarily coincide fully with the 
+basic functional modules. 
+
+
+
+23 
+
+
+
+IS 12746 ( Part 1/Sec1) : 1999 
+lEC 870-1.1 (1988) 
+
+
+
+TABLE II 
+
+
+
+Typical functional software modules of telecontrol systems 
+
+
+
+
+
+
+
+TELECONTROL SYSTEMS SOFTWARE 
+
+
+
+
+
+
+BASIC SOFTWARE 
+
+
+1 
+STANDARD APPLICATION 
+SOFTWARE 
+
+
+PROJECT SPECIFIC 
+SOFTWARE 
+
+
+DATA BASE 
+
+
+apptic«tkm Independent 
+
+
+system Independent 
+
+
+project dependent 
+
+
+system dependent 
+
+
+- Operating system 
+
+- Hardware drivers 
+
+
+- Telecommunication and 
+Interprocessor com- 
+munication 
+
+- Man-machine dialogue 
+
+
+- Particular functions of 
+of a system 
+(e.g. arithmetic pro- 
+cedures for analogue 
+values) 
+
+
+- System control tables 
+
+- Tables for object des- 
+criptions (software 
+modules 
+
+
+- Time and mathematical 
+basic functions 
+
+
+- Data input/output 
+programs 
+
+
+
+
+- Object status tables 
+(process state) 
+
+
+- Programs for maintenance 
+and tests 
+
+
+- Data processing and 
+control pro^ramn 
+
+
+
+
+
+
+
+
+- Data logging, display 
+and long time storage 
+programs 
+
+
+
+
+- Data base maintenance 
+software 
+
+
+
+
+- Data base management 
+
+
+
+
+
+
+
+24 
+
+
+
+IS 12746 ( Part 1/Sec1) : 1999 
+lEC 870-1-1 (1988) 
+
+
+
+
+MCC 
+
+
+
+Main (or national) 
+control centre 
+
+
+
+DCC 
+
+
+
+District control centre 
+
+
+
+RCC 
+
+
+
+Regional or area 
+control centre 
+
+
+
+PS 
+
+
+
+Power station 
+
+
+
+Alternative (a power 
+station may be 
+controlled either to 
+a regional control 
+centre or to a dis- 
+trict control centre) 
+
+
+
+A 
+
+
+
+Outstation, controlled 
+station or remote 
+terminal unit (RTU) 
+
+
+
+Fig. 1. - Typical hierarchical structure of a telecontrol system 
+for power transportation and distribution network. 
+
+
+
+25 
+
+
+
+IS 12746 ( Part 1/Sec1) 
+lEC 870-1-1 (1988) 
+
+
+
+1999 
+
+
+
+CONTROLLING STATION 
+
+
+
+OPERATOR'S 
+EQUIPMENT 
+
+
+
+TELECONTROL 
+EQUIPMENT 
+
+DTE 
+
+
+
+
+VDU 
+
+
+
+Operator'! 
+console 
+
+
+
+Processor(s) 
+for operational 
+processing 
+functions 
+
+
+
+Special 
+processor Is) 
+
+
+
+DCE 
+
+
+
+DCE 
+(Modem) 
+
+
+
+Transmission 
+
+line 
+
+(channel) 
+
+
+
+Data circuit 
+
+
+
+CONTROLLED STATION 
+
+
+
+DCE 
+
+
+
+DCE 
+(Modem) 
+
+
+
+-Telecontrol equipment . 
+to DCE interface 
+
+
+
+Telecontrol system in restricted sense 
+
+
+
+TELECONTROL 
+EQUIPMENT 
+
+DTE 
+
+
+
+Processor(s) 
+for operational 
+processing 
+functions 
+
+
+
+Special 
+processor(s) 
+
+
+
+Alarms 
+
+Status 
+
+Positions 
+
+Meter 
+
+values 
+
+
+
+PROCESS 
+EQUIPMENT 
+
+
+
+Measured 
+values 
+
+
+
+Switch 
+commands 
+
+
+
+Set point 
+commands 
+
+
+
+Information 
+input 
+
+equipment 
+(sensors) 
+
+
+
+Information 
+output 
+equipment 
+(actuators) 
+
+
+
+Governor 
+
+
+
+Telecontrol equipment 
+to operator's 
+equipment interface 
+
+
+
+Telecontrol equipment 
+to process 
+equipment interface 
+
+
+
+Telecontrol system ir> wide sense 
+
+
+
+Man-machine 
+interface 
+
+
+
+VDU: Visual display unit 
+
+DCE: Data circuit-terminating equipment 
+
+DTE: Data terminal equipment 
+
+Optional interface between telecontrol processorlsi and special processor(s) 
+
+
+
+Fig. 2. - Typical structure of a telecontrol system 
+
+(shown by a point-to-point configuration). 
+
+
+
+26 
+
+
+
+lo 12746 ( Part 1/Sec 1 ) : 1999 
+lEC 870-1-1 (1988) 
+
+
+
+FRAME 
+
+
+ORGANI- 
+
+
+IDENTIFI- 
+
+
+STATUS- 
+
+
+CHECK 
+
+
+DELIMITER 
+
+
+ZATION 
+
+
+CATION 
+
+
+CONTROL 
+
+
+
+
+Start 
+
+
+Type of 
+
+
+Address 
+
+
+User data 
+
+
+Protection 
+
+
+deiimiters 
+
+
+message 
+Serial number 
+
+
+type: 
+
+
+
+
+against 
+error 
+
+
+
+
+Specification 
+
+
+' source 
+
+
+
+
+Check bits 
+
+
+
+
+of dialogue 
+
+
+- destination 
+
+
+
+
+
+
+
+
+elements, e.g. 
+
+
+
+
+
+
+
+
+
+
+interrogation. 
+
+
+
+
+
+
+
+
+
+
+answer, etc. 
+
+
+
+
+
+
+
+
+
+
+< Information field - 
+
+
+^ 
+
+
+
+
+< 
+
+
+< 
+
+
+Block length --- 
+-- Frame -^ 
+
+
+
+
+> 
+
+> 
+
+
+
+Fig. 3.- General structure of a telecontrol message 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1 986 to promote harmonious 
+development of the activities of standardization, marking and quality certification of goods and attending to 
+connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications maybe reproduced in any form without 
+the prior permission in writing of BIS. This does not preclude the free use, in the course of implementing the 
+standard, of necessary details, such as symbols and sizes, type or grade designations. Enquiries relating to 
+copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed 
+periodically; a standard along with amendments is reaffirmed when such review indicates that no changes are 
+needed; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards 
+should ascertain that they are in possession of the latest amendments or edition by referring to the latest issue 
+of 'BIS Handbook' and 'Standards : Monthly Additions'. 
+
+This Indian Standard has been developed from Doc : No. LTD 25 ( 965 ), 
+
+Amendments Issued Since Publicatiun 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+Headquarters; 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 10002 Telegrams: Manaksanstha 
+
+Telephones : 323 01 31, 323 94 02, 323 33 75 ( Common to 
+
+all offices ) 
+
+Regional Offices: Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg f 323 76 17 
+
+NEW DELHI 110002 \ 323 3841 
+
+Eastern ; 1/14 C. I. T. Scheme VII M, V. 1. P. Road, Maniktola f 337 84 99, 337 85 61 
+
+CALCUTTA 700054 \ 337 86 26, 337 86 62 
+
+Northern : SCO 335-336, Sector 34.A, CHANDIGARH 160022 f 60 38 43 
+
+1 60 20 25 
+
+Southern : C. I. T Campus, IV Cross Road, CHENNAI 6001 13 f 235 02 16, 235 04 42 
+
+1 235 L5 19,235 23 15 
+
+Western : Manakalaya, E9 MIDC, Marol, Andhen (East) f 832 92 95, 832 78 58 
+
+MUMBAI 400093 [ 832 78 9 1 , 832 78 92 
+
+Branches : AHMADABAD. BANGALORE. BHOPAL BHUBANESHWAR 
+
+COIMBATORE. FARIDABAD. GHAZIABAD. GUWAHAH, HYDERABAD. JAIPUR. 
+KANPUR. LUCKNOW. NAGPUR PATNA. PUNE. THIRUVANANTHAPURAM 
+
+
+
+Primed at New India Printing Press, Khurja, India 
+
+
+

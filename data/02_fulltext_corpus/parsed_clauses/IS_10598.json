@@ -1,0 +1,68 @@
+{
+  "is_number": "IS IS_10598",
+  "standard_id": "IS IS_10598",
+  "title": "Indian Standard Specification / Test Method (IS IS_10598)",
+  "ia_identifier": "IS_10598",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes the requirements of guide rollers used with dyeing and finishing machinery.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 5249",
+      "standard_id": "IS/ISO 5249",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5249)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2102 (PART 1)",
+      "standard_id": "IS 2102 (Part 1):1993",
+      "title": "General tolerances, Part 1: Tolerances for linear and angular dimensions without individual tolerance indications",
+      "division_code": "LITD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Wall",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10598"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance of + 3 mm",
+      "wall thickness of 2 mm"
+    ],
+    "marking_requirements": [
+      "8.1 Each roller shall be marked with manufacturer's",
+      "initials or trade-mark, if any.",
+      "8.2 Each case/carton of rollers",
+      "e) Lot/batch number;",
+      "shall also bear the"
+    ]
+  },
+  "total_chars_parsed": 15794
+}

@@ -1,0 +1,88 @@
+{
+  "is_number": "IS IS_10518",
+  "standard_id": "IS IS_10518",
+  "title": "Indian Standard Specification / Test Method (IS IS_10518)",
+  "ia_identifier": "IS_10518",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers requirements for snap flask moulding boxes and the jackets used in foundry.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 617",
+      "standard_id": "IS 617:1994",
+      "title": "Aluminium and aluminium alloy ingots and castings for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 210",
+      "standard_id": "IS 210:2009",
+      "title": "Grey Iron Castings",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1280",
+      "standard_id": "IS 1280:1975",
+      "title": "Foundry moulding boxes of steel construction",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 498",
+      "standard_id": "IS 498:2018",
+      "title": "Grading for Vacuum Pan ( Plantation White and Refined ) Sugar ( Sixth Revision )",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4982",
+      "standard_id": "IS 4982:1984",
+      "title": "Closing pins for foundry moulding boxes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade F4",
+    "Grade deration",
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10518"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "hardness of 54 to 62 N"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance on centre distance and pins shall be f 0.5 mm"
+    ],
+    "marking_requirements": [
+      "1 Each snap flask moulding box and jacket shall be marked manufacturer's name and trade-mark and the sizes of the box.",
+      "the Standard Mark 102."
+    ]
+  },
+  "total_chars_parsed": 15250
+}

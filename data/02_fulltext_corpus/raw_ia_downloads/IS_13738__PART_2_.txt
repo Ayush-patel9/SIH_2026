@@ -1,0 +1,998 @@
+**************** 
+
+
+-k  is^ 
+
+
+Disclosure  to  Promote  the  Right  To  Information 
+
+Whereas  the  Parliament  of  India  has  set  out  to  provide  a  practical  regime  of  right  to 
+information  for  citizens  to  secure  access  to  information  under  the  control  of  public  authorities, 
+in  order  to  promote  transparency  and  accountability  in  the  working  of  every  public  authority, 
+and  whereas  the  attached  publication  of  the  Bureau  of  Indian  Standards  is  of  particular  interest 
+to  the  public,  particularly  disadvantaged  communities  and  those  engaged  in  the  pursuit  of 
+education  and  knowledge,  the  attached  public  safety  standard  is  made  available  to  promote  the 
+timely  dissemination  of  this  information  in  an  accurate  manner  to  the  public. 
+
+
+Mazdoor  Kisan  Shakti  Sangathan 
+'The  Right  to  Information,  The  Right  to  Live" 
+
+
+Jawaharlal  Nehru 
+Step  Out  From  the  Old  to  the  New' 
+
+
+^viiTSs^-SfS^^i^*?*:: 
+
+
+IS  13738-2  (1993)  :  Information  processing  systems  -  Data 
+interchange  on  90  mm  flexible  disk  cartridges  using 
+modified  frequency  modulation  recording  at  15  916  ftprad, 
+on  80  tracks  on  each  side.  Part  2:  Track  format  [LITD  16: 
+Computer  Hardware,  Peripherals  and  Identification  Cards] 
+
+
+2?ai\A  I  t>ft!V*?S:>^N»6^ 
+
+
+li^  i/ir  w  w  w  w  w  WW  ^  ^  *  tIt  w  w  w 
+
+
+BLANK  PAGE 
+
+
+^<ii^ 
+
+
+UI> 
+
+
+PROTECTED  BY  COPYRIGHT 
+
+
+IS  13738  (  Part  2)  :  1993 
+ISO/IEC  9529-2  :  1989 
+
+(  Reaffirmed  2003 ) 
+
+sTct^  Tm  qr  80  t^  ^x  15916  trtp  €t  %  mx  tt  ft 
+
+^T  tWtf^  ^rt^RcTT  ^tV^tw^  fT^rfl^  ^  ^sW^ 
+^T#  |iT  90  iTTTfr  ^^  feF^  ^T^fr^  qr  ^^r  T^T^^^ 
+
+Indian  Standard 
+
+INFORMATION  PROCESSING  SYSTEMS  — 
+
+DATA  INTERCHANGE  ON  90  mm  FLEXIBLE 
+
+DISK  CARTRIDGES  USING  MODIFIED 
+
+FREQUENCY  MODULATION  RECORDING  AT 
+
+15  916  ftprad,  ON  80  TRACKS  ON  EACH  SIDE 
+
+PART  2    TRACK  FORMAT 
+
+
+UDC    681-327-634 
+
+
+©  BIS  1993 
+
+BUREAU     OF     INDIAN     STANDARDS 
+
+MANAK     BHAVAN,    9     BAHADUR     SHAH     ZAFAR     MARG 
+NEW     DELHI     110002 
+
+October  1993  Price  Groap  7 
+
+
+Computer  Media  Sectional  Committee,  LTD  37 
+
+
+NATIONAL  FOREWORD 
+
+This  Indian  Standard  which  is  identical  with  ISO/IEC  9529-2  ;  1989  'Information  processing 
+systems  —  Data  interchange  on  90  mm  (  3-5  in  )  flexible  disk  cartridges  using  modified  frequency 
+modulation  recording  at  15  916  ftprad,  on  80  tracks  on  each  side  —  Part  2  :  Track  format' 
+issued  by  the  International  Organization  for  Standardization  was  adopted  by  the  Bureau  of  Indian 
+Standards,  on  the  recommendation  of  the  Computer  Media  Sectional  Committee  (  LTD  37  )  and 
+the  Electronics  and  Telecommunication  Division  Council. 
+
+The  text  of  the  ISO  Standard  has  been  approved  as  suitable  for  publication  without  deviation  as 
+Indian  Standard.  Certain  conventions  are  however  not  identical  to  those  used  in  Indian  Standards; 
+attention  is  especially  drawn  to  the  following: 
+
+a)  Wherever  the  words  'International  Standard'  appear  referring  to  this  standard,  they  should 
+be  read  as  'Indian  Standard'. 
+
+b)  Comma  (  ,  )  has  been   used   as  a   decimal   marker   while    in    Indian  Standards,  the  current 
+practice  is  to  use  a  point  (  .  )jas  the  decimal  marker. 
+
+c)  For  the  purpose  of  this  Indian  Standard  metric  dimensions  are  applicable. 
+CROSS  REFERENCES 
+
+
+In  this  Indian  Standard,  the  following   International  Standards    are  referred  to. 
+respective  places  the  following: 
+
+
+Read    in  their 
+
+
+Indian  Standard 
+
+IS  10315  :  1982  7-bit  coded  character 
+set  for  information  interchange 
+
+IS  12326  :  1987  7-bit  and  8-bit  coded 
+character  sets  —  Code  extension 
+techniques 
+
+IS  10401  :  1982  8-bit  coded  character 
+set  for  information  interchange 
+
+
+Degree  of 
+Correspondence 
+
+Technically 
+equivalent 
+
+Identical 
+
+
+International  Standard 
+
+ISO  646  Information  processing  — 
+ISO  7-bit  coded  character  set  for 
+information  interchange 
+
+ISO  2022  Information  processing  — 
+ISO  7-bit  and  8-bit  coded  character 
+sets  —  Code  extension  techniques 
+
+ISO  4873  Information  processing  — 
+8-bit  coded  character  set  for  infor- 
+mation interchange 
+
+The  Computer  Media  Sectional  Committee  has  reviewed  the  provisions  of  following  ISO  Standards 
+and  has  decided  that  these  are  acceptable  for  use  in  conjunction  with  this  standard: 
+
+ISO  6429  :  1988      Information  processing  —  Control  functions  for  7-bit  and  8-bit  coded  character 
+sets 
+
+Information  processing  ■ —  8-bit  single-byte  coded  graphic  character  sets 
+
+Information  processing  —  Volume  and  file  structure  of  flexible  disk  cartridges 
+for  information  interchange 
+
+
+Technically 
+equivalent 
+
+
+ISO  8859  :  1987 
+ISO  9293  :  1987 
+
+
+IS  1373* (  Part2):19»3 
+ISO/IEC  »52»-2  1 19S» 
+
+
+Indian  Standard 
+
+INFORMATION  PROCESSING  SYSTEMS  — 
+
+DATA  INTERCHANGE  ON  90  mm  FLEXIBLE 
+
+DISK  CARTRIDGES  USING  MODIFIED 
+
+FREQUENCY  MODULATION  RECORDING  AT 
+
+15  916  ftprad,  ON  80  TRACKS  ON  EACH  SIDE 
+
+PART  2     TRACK  FORMAT 
+
+
+1       Scope 
+
+This  part  of  ISO/IEC  9529  specifies  the  track  layout,  the  track  format  and  the  characteristics  of  the 
+recorded  signals. 
+
+NOTE  -  Numeric  values  in  the  SI  and/or  Imperial  measurement  system  in  this  part  of  ISO/IEC  9529  may  have  been  rounded 
+off  and  therefore  are  consistent  with,  but  not  exactly  equal  to,  each  other.  Either  system  may  be  used,  but  the  two  should  be 
+neither  intermixed  nor  reconverted.  The  original. design  was  made  using  SI  units. 
+
+
+2  Conformance 
+
+A  90  nim  (3,5  in)  flexible  disk  cartridge  is  in  conformance  with  this  Part  of  ISO/IEC  9529  if  it 
+meets  all  mandatory  requirements  specified  herein. 
+
+A  prerequisite  for  conformance  with  this  part  of  ISO/IEC  9529  is  conformance  with  ISO/IEC  9529-1. 
+
+3  Normative    references 
+
+The  following  standards  contain  provisions  which,  through  reference  in  this  text,  constitute  provisions 
+of  this  part  of  ISO/IEC  9529,  At  the  time  of  publication,  the  editions  indicated  were  valid.  All 
+standards  are  subject  to  revision,  and  parties  to  agreements  based  on  this  part  of  ISO/IEC  9529  are 
+encouraged  to  investigate  the  possibility  of  applying  the  most  recent  editions  of  the  standards  listed 
+below.  Members  of  lEC  and  ISO  maintain  registers  of  currently  valid  International  Standards. 
+
+ISO  646: 1983,     Information  processing  -  ISO  7-bit  coded  character  set  for  information  interchange. 
+ISO  2022:1986,   Information  processing  -  ISO  7 -bit  and  8~bit  coded  character  sets  -  Code  extension 
+
+techniques. 
+ISO  4873:1986,  Information  processing  -  ISO  8-bit  code  for  information  interchange  -  Structure  and 
+
+rules  for  implementation. 
+ISO  6429:1988,  Additional  control  functions  for  (7 -bit  and  8-bit  coded)  character-sets. 
+ISO  8859:1987    Information  processing  -  8-bit  singk^byte  coded  graphic  character  sets. 
+ISO  9293:1987    Information  processing  -  Volume  and  file  structure  of  flexible  disk  cartridges  for 
+
+information  interchange r 
+
+
+IS  13738  (  Part  2  )  :  1993 
+ISO/IEC  9529-2 :  1989 
+
+
+4       General    requirements 
+
+4.1  Mode  of  recording 
+
+The  mode  of  recording  shall  be  Modified  Frequency  Modulation  (MFM)  for  which  the  conditions  are: 
+
+—  a  flux  transition  shall  be  written  at  the  centre  of  each  bit  cell  containing  a  ONE; 
+
+—  a  flux  transition  shall  be  written  at  each  cell  boundary  between  consecutive  bit  cells  containing 
+ZEROS. 
+
+An  exception  to  this  is  defined  in  4.12. 
+
+4.2  Track  location  tolerance  of  the  recorded  flexible  disk  cartridge 
+
+For  the  purposes  of  this  part  of  ISO/IEC  9529  the  nominal  track  locations  specified  in  sub  clause 
+9.2.3. 1  of  ISO/IEC  9529-1  require  compensation  for  the  actual  temperature  usjng  the  nominal  value  of 
+the  thermal  coefficient  of  expansion  specified  in  sub  clause  8.2  of  ISO/IEC  9529-1.  Over  the  range  of 
+operating  environment  specified  in  sub  clause  6. 1 .2  of  ISO/IEC  9529-1 ,  the  centrelines  of  the  recorded 
+tracks  shall  be  within  ±  0,028  mm  ( ±  0,001 1  in)  of  these  compensated  nominal  track  locations. 
+
+4.3  Recording  offset  angle 
+
+At  the  instant  of  writing  or  reading  a  magnetic  transition,  the  transition  shall  have  an  angle  of 
+e=aTcsin(-^  )  ±  0°18' 
+
+where  Rn  is  the  radius  through  that  transition  (see  ISO/IEC  9529-1,  9.2.3.1). 
+
+9 
+
+
+Track 
+
+
+Track  centreline 
+
+
+Direction 
+of  rotation 
+
+
+Line  of  access 
+
+
+c/=:0,35mm  (0,014  in) 
+
+
+Figure   1 
+
+NOTE  -  As  tracks  may  be  written  and  overwritten  at  extremes  of  the  tolerances  given  in  4.2  and  4.3,  a  band  of  old 
+irfformation  may  be  left  at  one  edge  of  the  newly  written  data  and  would  constitute  unwanted  noise  when  reading.  It  is 
+therefore  necessary  to  trim  the  edges  of  the  tracks  by  erasure  after  writing. 
+
+
+IS  13738  (  Part  2  )  1 1993 
+ISO/IEC  9529-2  :  1989 
+
+
+4.4  Density  of  recording 
+
+4.4.1  The  nominal  density  of  recording  shall  be  15  916  ftprad.  The  resulting  nominal  bit  cell  length  is 
+
+62,8  M-rad. 
+
+4.4.2  The  long  term  average  bit  cell  length  shall  be  the  average  bit  cell  length  measured  over  a 
+sector.  It  shall  be  within  ±  2,5%  of  the  nominal  bit  cell  length. 
+
+4.4.3  The  short  term  average  bit  cell  length,  referred  to  a  particular  bit  cell,  shall  be  the  average  of 
+the  lengths  of  the  eight  preceding  bit  cells.  It  shall  be  within ±  8%  of  the  long-term  average  bit  cell 
+length. 
+
+4.5  Flux   transition    spacing 
+
+The  instantaneous  spacings  between  flux  transitions  are  influenced  by  the  reading  and  writing 
+process,  the  bit  sequence  (pulse  crowding  effects)  and  other  factors.   The  locations  of  the  transitions 
+are  defined  as  the  locations  of  the  peaks  in  the  signal  when  reading  (see  annexes  A  and  B). 
+
+4.5.1  The  spacing  between  the  flux  transitions  of  a  sequence  of  ONEs  shall  be  between  80%  and 
+120%  of  the  short-term  average  bit  cell  length. 
+
+4.5.2  The  spacing  between  the  flux  transition  for  a  ONE  and  that  between  two  ZEROs  preceding  or 
+following  it  shall  be  between  130%  and  165%  of  the  short-term  average  bit  cell  length. 
+
+4.5.3  The  spacing  between  the  flux  transitions  of  two  ONEs  surrounding  a  ZERO  shall  be  between 
+185%  and  225%  of  the  short-term  average  bit  cell  length. 
+
+
+1110      0       10       1 
+
+
+80%  to  120% 
+
+
+130%  to  165% 
+
+
+130%  to  165% 
+
+
+185%  to  225% 
+
+
+Figure  2 
+
+
+4.6    Average   Signal    Amplitude 
+
+
+For  each  side  the  Average  Signal  Amplitude  on  any  track  of  the  interchanged  flexible  disk  cartridge 
+shall  be  less  than  160%  of  SRAjy  and  more  than  40%  of  SRA2/(.see  4.12  in  ISO/IEC  9529-1). 
+
+
+IS  13738  (  Part2):1993 
+ISO/IEC  9529-2  :  1989 
+
+
+4.7  Byte 
+
+A  byte  is  a  group  of  eight  bit-positions,  identified  Bl  to  B8. 
+The  bit  in  each  position  is  a  ZERO  or  a  ONE. 
+
+4.8  Sector 
+
+All  tracks  shall  be  divided  into  18  sectors  of  512  bytes. 
+
+4.9  Cylinder 
+
+A  pair  of  tracks,  one  on  each  side  of  the  disk,  having  the  same  track  number. 
+
+4.10  Cylinder  number 
+
+The  cylinder  number  shall  be  a  two-digit  number  identical  with  the  track  number  of  the  tracks  of  the 
+cylinder. 
+
+4.11  Data  capacity  of  a  track 
+
+The  data  capacity  of  a  track  shall  be  9  216  bytes. 
+
+4.12  Hexadecimal    notation 
+
+Hexadecimal  notation  shall  be  used  hereafter  to  denote  the  following  bytes: 
+
+(00)  for  (B8  to  B 1 )  =  00000000 
+
+(0 1 )  for  (B8  to  B 1)  =  00000001 
+
+(02)  for  (B8  to  Bl)  =  00000010 
+(4E)  for  (B8  to  Bl)  =  01001110 
+(FE)  for  (B8  to  Bl)=  11111110 
+(FB)  for(B8toBl)=  lllUOll 
+(A  1)*  for  (B8  to  Bl)  =  10100001 
+
+In  byte  (Al)*  the  boundary  transition  between  B3  and  B4  is  missing. 
+
+4.13  Error   Detection   Characters   (EDC) 
+
+The  two  EDC  bytes  are  hardware-generated  by  shifting  serially   the  relevant  bits,  specified  later  for 
+each  part  of  the  track,  through  a  16-bit  shift  register  described  by  the  generator  polynomial: 
+
+Xl6  +  xl2  -H  X5  +1 
+(See  also  annex  C). 
+
+
+IS  13738  (  Parti):  1993 
+ISO/IEC  9529-2 :  1989 
+
+
+5       Track  layout 
+
+Formatting  of  a  track  shall  commence  with  the  occurrence  of  Index.  Index  shall  occur  within  ±  440  us 
+
+of  the  instant  at  wJiich  reference  line  B  (see  7.4.2.2  of  ISO/IEC  9529-1)  is  parallel  to  the  Hne  of 
+
+access. 
+
+During  formatting  the  rotational  speed  of  the  disk  shall  be 
+
+—  averaged  Index  to  Index  :  300  r/min  ±  2% 
+
+—  averaged  over  a  sector  :  300  r/min  ±  2,5% 
+
+After  formatting,  there  shall  be  18  sectors  on  each  track.  The  layout  of  each  track  shall  be  as  shown 
+in  figure  3. 
+
+
+INDEX 
+GAP 
+
+SECTOR 
+IDENTIFIER 
+
+IDENTIFIER 
+GAP 
+
+FIRST 
+DATA 
+BLOCK 
+
+DATA 
+
+BLOCK 
+
+GAP 
+
+1 
+
+LAST 
+DATA 
+BLOCK 
+
+DATA 
+
+BLOCK 
+
+GAP 
+
+TRACK 
+GAP 
+
+■^ 
+
+1st  Sector 
+
+^ 
+
+18th  Sector — 
+
+5.1    Index  Gap 
+
+
+Figure   3 
+
+
+At  nominal  density,  this  field  shall  comprise  146  bytes  of  unspecified  content  except  that  it  shall  not 
+contain  any  (Al)*-bytes.   Some  of  the  first  bytes  may  have  become  ill-defined  due  to  overwriting. 
+
+5.2    Sector   Identifier 
+
+The  layout  of  this  field  shall  be  as  shown  in  figure  4. 
+
+
+Sector  identifier 
+
+Identifier  mark 
+
+Address  Identifier 
+
+12  bytes 
+(00) 
+
+3  bytes 
+(AD* 
+
+1  byte 
+(FE) 
+
+Track  address 
+
+S 
+
+1  byte 
+(02) 
+
+EDO 
+
+C 
+1  byte 
+
+Side 
+
+1  byte 
+
+(00)  or  (01) 
+
+1  byte 
+
+2  bytes 
+
+5.2.1     Identifier  Mark 
+
+This  field  shall  comprise  16  bytes: 
+12  (00)     -bytes 
+3  (Al)*  -bytes 
+1  (FE)    -byte 
+
+
+Figure  4 
+
+
+IS  X3738  (  Part  2 ) :  1993 
+TSO/IEC  9529-2  :  1989 
+
+
+5.2.2     Address  Identifier 
+This  field  shall  comprise  6  bytes. 
+5.2.24     Track  Address 
+
+This  field  shall  comprise  2  bytes: 
+
+a)  Cylinder  Number  (C) 
+
+This  field  shall  specify  in  binary  notation  the  cylinder  number  from  00  for  the  outermost  cylinder  to  79 
+for  the  innermost  cylinder. 
+
+b)  Side  Number  (Side) 
+
+This  field  shall  specify  the  side  of  the  disk.  On  Side  0,  it  shall  be  (00)  on  all  tracks.  On  Side  1  it  shall 
+be  (01)  on  all  tracks. 
+
+5.2.2.2  Sector  Number  (S) 
+
+The  3rd  byte  shall  specify  in  binary  notation  the  sector  number  from  01  for  the  1st  sector  to  18  for  the 
+last  sector. 
+
+The  sectors  may  be  recorded  in  any  order  of  their  sector  numbers. 
+
+5.2.2.3  4th  Byte 
+
+The  4th  byte  shall  always  be  a  (02)-byte. 
+
+5.2.2.4  EDC 
+
+These  two  bytes  shall  be  generated  as  defined  in  4.13  using  the  bytes  of  the  Sector  Identifier  starting 
+with  the  first  (Al)*-byte  (see  5.2.1)  of  the  Identifier  Mark  and  ending  with  the  4th  byte  (see  5.2.2.3) 
+of  the  Address  Identifier. 
+
+If  the  EDC  is  incorrect  the  sector  is  defective.  ISO  9293  specifies  the  handling  of  defective  sectors. 
+
+5.3   Identifier  Gap 
+
+This  field  shall  comprise  initially  22  (4E)-bytes.  These  bytes  may  have  become  ill-defined  due  to 
+overwriting. 
+
+
+|S  13738  (  Part  2  )  :  1*93 
+isO/IEC  !>52!>-2  :  1989 
+
+
+5.4   Data   Block 
+
+The  layout  of  this  field  shall  be  as  shown  in  figure  5. 
+
+
+Data  block 
+
+Data  rnark 
+
+Data  field 
+
+EDC 
+
+12  bytes 
+(00) 
+
+3  bytes 
+(AD* 
+
+1  byte 
+(FB) 
+
+512  bytes 
+
+2  bytes 
+
+Figure  5 
+
+5.4.1  Data   Mark 
+
+This  field  shall  comprise: 
+
+12  (00)      -bytes 
+3(A1)*    -bytes 
+1  (FB)      -byte 
+
+5.4.2  Data    Field 
+
+This  field  shall  comprise  512  bytes. 
+
+If  it  comprises  less  than  the  requisite  number  of  data  bytes,  the  remaining  positions  shall  be  filled 
+with  (OO)-bytes. 
+
+5.4.3  EDC 
+
+These  two  bytes  shall  be  generated  as  defined  in  4.13  using  the  bytes  of  the  Data  Block  starting  with 
+the  first  (Al)*-byte  of  the  Data  Mark  and  ending  with  the  last  byte  of  the  Data  Field. 
+
+If  the  EDC  is  incorrect  the  sector  is  defective.  ISO  9293  specifies  the  handling  of  defective  sectors. 
+
+5.5  Data  Block  Gap 
+
+This  field  shall  comprise  initially  101  (4E)-bytes.    These  bytes  may  have  become  ill-defined  due  to 
+overwriting.  The  Data  Block  Gap  is  recorded  after  each  Data  Block  and  it  precedes  the  following 
+Sector  Identifier.   After  the  last  Data  Block,  it  precedes  the  Track  Gap. 
+
+5.6  Track  Gap 
+
+This  field  shall  follow  the  Data  Block  Gap  of  the  last  sector.   (4E)-bytes  are  written  until  the  Index  is 
+detected,  unless  it  has  been  detected  during  writing  of  the  last  Data  Block  Gap,  in  which  case  there 
+shall  be  no  Track  Gap. 
+
+
+IS  13738  (  Part2):l993 
+ISO/IEC  9529-2 :  1989 
+
+
+6       Coded  representation  of  data 
+
+6.1  Standards 
+
+The  contents  of  the  data  field  shall  be  recorded  and  interpreted  according  to  the  relevant  International 
+Standards  for  the  coding  of  information,  for  example  ISO  646,  ISO  2022  or  ISO  4873. 
+
+6.2  Coding  methods 
+
+6.2.1     When  the  coding  method  requires  it,  the  Data  Fiel^  shall  be  regarded  as  an  ordered  sequence 
+of  8-bit  bytes. 
+
+Within  each  byte  the  bit  positions  shall  be  identified  by  B8  to  Bl.  The  high-order  bit  shall  be  recorded 
+in  position  B8  and  the  low-order  bit  in  position  Bl.  The  sequence  of  recording  shall  be  high-order  bit 
+first. 
+
+When  the  data  is  encoded  according  to  an  8-bit  code,  the  binary  weights  of  the  bit  positions  shall  be 
+as  shown  in  figure  6. 
+
+
+Bit  Position 
+
+B8 
+
+B7 
+
+B6 
+
+B5 
+
+B4 
+
+B3 
+
+B2 
+
+Bl 
+
+Binary  Weight 
+
+128 
+
+64 
+
+32 
+
+16 
+
+8 
+
+4 
+
+2 
+
+1 
+
+Figure  6 
+
+
+When  the  data  is  encoded  according  to  a  7-bit  code,  bit  position  B8  shall  contain  bit  ZERO,  and  the 
+data  shall  be  encoded  in  bit  positions  B7  to  Bl,  using  the  same  binary  weights  as  shown  above. 
+
+6.2.2.   When  the  coding  method  requires  it,  the  Data  Field  shall  be  regarded  as  an  ordered  sequence 
+of  bit  positions,  each  containing  a  bit. 
+
+
+IS  13738  (  Part  2 ) :  1993 
+ISO/IEC  9529-2  :  1989 
+
+
+Annex  A 
+
+(informative) 
+
+Procedure  and  equipment  for  measuring  flux  transition  spacing 
+
+A.l  General 
+
+This  annex  specifies  equipment  and  procedure  for  measuring  flux  transition  spacing  on  90  ram  flexible 
+disk  cartridges  using  MFM  recording  at  15  916  flux  transitions  per  radian  on  both  sides. 
+
+The  testing  rotational  speed  is  300  r/min  nominal. 
+
+A. 2        Format 
+
+The  disk  to  be  measured  shall  be  written  by  the  disk  drive  for  data  interchange  use. 
+
+A. 3        Test   Equipment 
+
+A. 3.1     Disk    Drive 
+
+The  disk  drive  shall  have  a  rotational  speed  of  300  r/min  ±  3  r/min  averaged  over  one  revolution.  The 
+average  angular  speed  taken  over  32  ^is  shall  not  deviate  by  more  than  0,5%  from  the  speed  averaged 
+over  one  revolution. 
+
+A, 3. 2        Head 
+
+A. 3. 2.1    Resolution 
+
+The  head  shall  have  an  absolute  resolution  of  70%  to  75%  at  Track  79  on  each  side,  using  the 
+Reference  Material  RM  9529,  applying  the  calibration  factor  of  the  Reference  Material  appropriate  to 
+the  side,  and  recording  with  the  appropriate  Test  Recording  Current. 
+
+The  resonant  frequency  of  the  head  shall  be  at  least  500  000  Hz. 
+
+The  resolution  shall  not  be  adjusted  by  varying  the  load  impedance  of  the  head. 
+
+The  resolution  shall  be  measured  at  the  output  of  the  amplifier  defined  in  A.3.3.1. 
+
+A.3.2.2      Offset  angle 
+
+The  offset  angle  of  the  head  shall  be  0  =  arc  sin  (  n — )  ±  0°  6', 
+where  d  =  0,35  mm  (0,014  in). 
+
+A.3.2.3      Contact 
+
+Care  shall  be  taken  that  the  heads  are  in  good  contact  with  the  disk  during  tests. 
+
+
+IS  13738  (  Part  2  )  :  1993 
+ISO/IEC  9529-2 :  1989 
+
+
+A.3.3     Read  Channel 
+
+A.3.3.1     Read  amplifier 
+
+The  read  amplifier  shall  have  a  flat  response  from  1  000  Hz  to  375  000  Hz  within  ±  1  dB,  and 
+amplitude  saturation  shall  not  occur. 
+
+A.3.3.2     Peak  sensing  amplifier 
+
+Peak  sensing  shall  be  caitied  out  by  a  differentiating  and  limiting  amplifier,  or  equivalent  good  peak 
+sensing  circuit. 
+
+A.3.4     Time  interval  measuring  resolution 
+
+The  time  interval  counter  shall  be  able  to  measure  5  |is  to  at  least  5  ns  resolution. 
+
+A. 4  Procedure  for  measurement 
+
+A.4.1     Flux  transition  spacing  measurement 
+
+The  flux  transition  spacings  shall  be  measured  by  measuring  the  time  intervals  between  successive 
+peaks  in  the  read  signal  for  10^  intervals  of  random  samphtVg  on  a  track,  and  plotting  logarithmically 
+the  distribution  of  time  intervals  as  shown  below. 
+The  measurements  should  be  made  at  the  output  of  the  read  amplifier  defined  in  A.3.3, 
+
+A.4.2     Flux  transition  spacing  for  all  tracks 
+
+Measurement  time  intervals  t\  to  t^  shall  be  as  shown  below. 
+
+t^/tQ  and  fj/ro  (X  100%)  correspond  to  sub  clause  4.5.1. 
+t^/tQ  and  t-^tQ  (X  100%)  correspond  to  sub  clause  4.5.2. 
+t^tQ  and  t^tQ  (X  100%)  correspond  to  sub  clause  4.5.3. 
+
+fo  is  the  short-term  average  bit  cell  length  =  2  |is  normal.  Intervals  which  are  out  of  specification  due 
+to  data  block  splicing  or  index  splicing  shall  be  neglected. 
+
+
+10 
+
+
+IS  13738  (  Part2):1993 
+ISO/IEC  9529-2 :  1989 
+
+
+0,8  1,2  1,3  1.65   1.85         2,25     /J, 
+
+
+Figure   A.l 
+
+
+11 
+
+
+IS  15738  (  Part  2 )  :  1993 
+ISO/IEC  9529-2  :  1989 
+
+
+Annex  B 
+
+(informative) 
+Data  separators  for  decoding  MFM  recording 
+
+The  MFM  recording  method  gives  nominal  flux  transition  spacings  of 
+
+t  for  the  patterns  1 11  or  000 
+3t/2  for  the  patterns  100  or  001 
+2f  for  the  pattern  101 
+
+The  data  separator  should  be  capable  of  resolving  a  difference  of  only  2  p.s.  To  achieve  this  with  a  low 
+error  rate,  the  data  separator  cannot  operate  on  a  fixed  period  but  should  follow  changes  in  the  bit  cell 
+length. 
+
+It  is  recognized  that  various  techniques  may  be  developed  to  achieve  dynamic  data  separation;  with 
+present  technology  only  a  data  separator  based  on  a  phase-locked  oscillator  can  provide  the 
+necessary  reliability. 
+
+
+12 
+
+
+IS  13738  (  Part  2  )  :  1993 
+ISO/EEC  9529-2 :  1989 
+
+
+Annex  C 
+
+(informative) 
+EDC   implementation 
+
+Figure  C.l  shows  the  feedback  connections  of  a  shift  register  which  may  be  used  to  generate  the  EDC 
+
+bytes. 
+
+Prior  to  the  operation,  all  positions  of  the  shift  register  are  set  to  ONE.   Input  data  are  added 
+(exclusive  OR)  to  the  contents  of  position  Cjs  of  the  register  to  form  a  feedback.  This  feedback  is  in 
+its  turn  added  (exclusive  OR)  to  the  contents  of  position  C4  and  position  Cn- 
+
+On  shifting,  the  outputs  of  the  exclusive  OR  gates  are  entered  respectively  into  positions  Cq,  C5  and 
+C12.   After  the  last  data  bit  has  been  added,  the  register  is  shifted  once  more  as  specified  above. 
+
+The  register  then  contains  the  EDC  bytes. 
+
+If  further  shifting  is  to  take  place  during  the  writing  of  the  EDC  bytes,  the  control  signal  inhibits 
+exclusive  OR  operations. 
+
+
+To  check  for  errors  when  reading,  the  data  bits  are  added  into  the  shift  register  in  exactly  the  same 
+manner  as  they  were  during  writing.   After  the  data  the  EDC  bytes  are  also  entered  into  the  shift 
+register  as  if  they  were  data.  After  the  final  shift,  the  register  contents  will  be  all  zero  if  the  record 
+does  not  contain  errors. 
+
+
+Control 
+
+
+c, 
+
+
+-15 
+
+
+r 
+
+Input 
+
+
+Outplit 
+(EDC  writing) 
+
+
+Figure  C.l 
+
+
+13 
+
+
+Printed  at  Dee  K«y  Prinlen,  New  Delhi,  India 
+
+
+Standard  Mark 
+
+The  use  of  the  Standard  Mark  is  governed  by  the  provisions  of  the  Bureau  of  Indian 
+Standards  Act,  19^6  and  the  Rules  and  Regulations  made  thereunder.  The  Standard  Mark 
+on  products  covered  by  an  Indian  Standard  conveys  the  assurance  that  they  have  been 
+produced  to  comply  with  the  requirements  of  that  standard  under  a  well  defined  system 
+of  inspection,  testing  and  quality  control  which  is  devised  and  supervised  by  BIS  and 
+operated  by  the  producer.  Standard  marked  products  are  also  continuously  checked  by 
+BIS  for  conformity  to  that  standard  as  a  further  safeguard.  Details  of  conditions  unde 
+which  a  licence  for  the  use  of  the  Standard  Mark  may  be  granted  to  manufacturers  o^ 
+producers  may  be  obtained  from  the  Bureau  of  Indian  Standards. 
+
+
+Bureau  of  Indian  Standards 
+
+BIS  is  a  statutory  institution  established  under  the  Bureau  0/  Indian  Standards  Act,  1986  to 
+promote  harmonious  development  of  the  activities  of  standardization,  marking  and  quality 
+certification  of  goods  and  attending  to  connected  matters  in  the  country. 
+
+Copyright 
+
+BIS  has  the  copyright  of  all  its  publications.  No  part  of  these  publications  may  be  reproduced 
+in  any  form  without  the  prior  permission  in  writing  of  BIS.  This  does  not  preclude  the  free  use, 
+in  the  course  of  implementing  the  standard,  of  necessary  details,  such  as  symbols  and  sizes,  type 
+or  grade  designations.  Enquiries  relating  to  copyright  be  addressed  to  the  Director 
+(  Publications  ),  BIS. 
+
+Revision  of  Indian  Standards 
+
+Amendments  are  issued  to  standards  as  the  need  arises  on  the  basis  of  comments.  Standards 
+are  also  reviewed  periodically;  a  standard  along  with  amendments  is  reaffirmed  when  such  review 
+indicates  that  no  changes  are  needed;  if  the  review  indicates  that  changes  are  needed,  it  is  taken 
+up  for  revision.  Users  of  Indian  Standards  should  ascertain  that  they  are  in  possession  of  the 
+latest  amendments  or  edition  by  referring  to  the  latest  issue  of  'BIS  Handbook  and  'Standards 
+Monthly  Additions*.  Comments  on  this  Indian  Standard  may  be  sent  to  BIS  giving  the  following 
+reference: 
+
+Doc  :  No.  LTD  37  (  1514  ) 
+
+Amendments  Issued  Since  Publication 
+
+Amend  No.  Date  of  Issue  Text  AflFected 
+
+
+BUREAU  OF  INDIAN  STANDARDS 
+
+Headquarters: 
+
+Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg.  New  Delhi  110002 
+
+Telephones  :  331  01  31.     331  13  75  Telegrams  :  Manaksanstha 
+
+(  Common     to    all    Offices  ) 
+
+Regional  Offices  :  Telephone 
+
+Central  :  Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg  f33l  01  31 
+
+NEW  DELHI  110002  J33I  13  75 
+
+Eastern  :  1/14  C.  I.  T.  Scheme  VII  M,  V.  I.  P.  Road,  Maniktola  C37  84  99,     37  85  61 
+
+CALCUTTA  700054  ^37  86  26'.     37  86  62 
+
+53  38  43,     53  16  40 
+
+
+Northern  :  SCO  445-446,  Sector  35-C,  CHANDIGARH  160036 
+
+
+53  23  84 
+
+
+Southern  :  C.  I.  T.  Campus,  IV  Cross  Road,  MADRAS  6001 13  P^^  ^^  ^^'     ^^^  ^"^  ^^ 
+
+1235  15  19,     235  23  15 
+
+Western    :  Manakalaya,  E9  MIDC,  Marol,  Andheri  (  East  )  1632  92  95,     632  78  58 
+
+BOMBAY  400093  |632  78  91,     632  78  92 
+
+Branches  :  AHMADABAD.  BANGALORE.  BHOPAL.  BHUBANESHWAR,  COIMBATORE. 
+FARIDABAD,  GHAZIABAD.  GLWAHATI.  HYDERABAD.  JAIPUR.  KANPUR. 
+LUCKNOW.    PATNA.    THIRUVANANTHAPURAM. 
+
+
+Printed  at  Printwell  Printers,  Aligarh.  India 
+
+

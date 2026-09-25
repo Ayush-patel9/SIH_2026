@@ -108,7 +108,7 @@
       "division_code": "CED",
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
-      "is_mandatory": false,
+      "is_mandatory": true,
       "qco_order": null
     },
     {
@@ -118,7 +118,7 @@
       "division_code": "CED",
       "aspect": "Product Specification",
       "relation_type": "RAW_MATERIAL_SPEC",
-      "is_mandatory": false,
+      "is_mandatory": true,
       "qco_order": null
     },
     {
@@ -763,14 +763,14 @@
     }
   ],
   "clause_3_terminology": [
-    "Grade ification",
-    "Grade Fc",
-    "Grade ordinary",
-    "Grade in",
-    "Grade 11",
+    "Grade of",
     "Grade MIS",
+    "Grade Fc",
     "Grade M15",
     "Grade Fe",
+    "Grade 11",
+    "Grade ification",
+    "Grade in",
     "5 K",
     "Plain and Reinforced Concrete",
     "Code of Practice"

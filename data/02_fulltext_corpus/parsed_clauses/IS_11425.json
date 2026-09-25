@@ -1,0 +1,43 @@
+{
+  "is_number": "IS IS_11425",
+  "standard_id": "IS IS_11425",
+  "title": "Indian Standard Specification / Test Method (IS IS_11425)",
+  "ia_identifier": "IS_11425",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard applies to semiconductor radiation detectors which are used for the detection and high-resolution spectroscopy of charged particles. The measurement techniques described have been selected to be readily available to all manufacturers and users of semiconductor charged particle detectors. Some superior techniques are not included because the methods are too complex or require equipment (such as particle accelerators) which may not be readily available. Test procedures for the associated amplifiers and preamplifiers are described in 1EC Publication 340: Test Procedures for Amplifiers and Preamplifiers for Semiconductor Detectors for Ionizing Radiation.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11645",
+      "standard_id": "IS 11645:1985",
+      "title": "Test procedures for amplifiers and preamplifiers for semiconductor detectors for ionizing radiation",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade bruary",
+    "80 K",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11425"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 77752
+}

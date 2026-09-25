@@ -1,0 +1,61 @@
+{
+  "is_number": "IS IS_10810__PART_7_",
+  "standard_id": "IS IS_10810__PART_7_",
+  "title": "Indian Standard Specification / Test Method (IS IS_10810__PART_7_)",
+  "ia_identifier": "IS_10810__PART_7_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_10810__PART_7_) covers Indian Standard Specification / Test Method (IS IS_10810__PART_7_). This Indian Standard (Part 64) was adopted by the Power Cables Sectional Committee had been approved by the Electrotechnical Division Council. This standard specifies the test method for measurement of temperature index of insulation or sheath of electric cables. This method is limited to phisically self-supporting test specimens. For the purpose of deciding whether a particular requirement of this standard is complied with, the final value, observed or calculated, expressing the result of a test or analysis, shall be rounded off in accordance with IS 2 ; I960 'Rules for rounding off numerical vslIuqs (revised)'. The number of significant places retained in the rounded off value should be the same as that of the specified value in this standard. IS 10810 (Part 64): 2003 Indian Standard METHODS OF TEST FOR CABLES PART 64 MEASUREMENT OF TEMPERATURE INDEX",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10810 (PART 64)",
+      "standard_id": "IS 10810 (Part 64):2003",
+      "title": "Methods of Test for Cables, Part 64: Measurement of Temperature Index",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10810 (PART 58)",
+      "standard_id": "IS 10810 (Part 58):1998",
+      "title": "Methods of test for cables, Part 58: Oxygen index test - [IS 10810(Part 58]",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 21",
+      "standard_id": "IS 21:1992",
+      "title": "Wrought Aluminium and Aluminium Alloys for Manufacture of Utensils",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10810__PART_7_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 7624
+}

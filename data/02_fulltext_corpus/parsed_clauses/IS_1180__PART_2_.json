@@ -1,0 +1,442 @@
+{
+  "is_number": "IS IS_1180__PART_2_",
+  "standard_id": "IS IS_1180__PART_2_",
+  "title": "Indian Standard Specification / Test Method (IS IS_1180__PART_2_)",
+  "ia_identifier": "IS_1180__PART_2_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard specifies the requirements and tests including standard loss levels of natural/synthetic organic ester liquid immersed, natural air-cooled, outdoor/indoor type, double-wound distribution transformers for use in power distribution systems with nominal system voltages up to and including 33 kV and of following types and ratings: a) Three phase ratings up to and including 200 kVA both non-sealed and sealed type; b) Three phase ratings higher than 200 kVA, up to and including 2 500 kVA both non-sealed type and sealed type; and c) Single phase ratings up to and including 100 kVA sealed type. This standard permits use of natural esters as well as synthetic organic esters in both non-sealed and sealed type of transformers. However, in case of non-sealed type transformers immersed in natural ester, suitable liquid preservation system such as airbags shall be used in the conservator to prevent direct contact of natural ester with the atmosphere. NOTES 1 The following types of transformers are not covered under the scope of this standard: a) Inverter duty transformers; b) Traction transformers; c) Instrument transformers; d) Transformers for static converters; €) Starting transformers; f) Testing transformers; g) Welding transformers; h) Earthing transformers; j Mining transformers; k) Transformers for solar, wind power application; m) Transformers applications); for railways (locomotive and other n) Furnace transformers; p) Rectifier transformers; q) Dual ratio in primary/secondary windings transformers; and r) Transformers for Static VAR compensator.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1180 (PART 3)",
+      "standard_id": "IS 1180 (Part 3):2021",
+      "title": "Part 3 : 2021: Outdoor/Indoor Type Liquid Immersed Distribution Transformers Up to and Including 2 500 kVA, 33 kV â€” Specification Part 3 Natural/Synthetic Organic Ester Liquid Immersed",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1180",
+      "standard_id": "IS 1180",
+      "title": "Indian Standard Specification / Test Method (IS 1180)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1180 (PART 1)",
+      "standard_id": "IS 1180 (Part 1):2014",
+      "title": "Part 1 : 2014: Outdoor Type Oil Immersed Distribution Transformers Upto and Including 2 500 kVA, 33kV - Specification Part 1 Mineral Oil Immersed (Fourth Revision)",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Distribution Transformers (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 2026 (PART 14)",
+      "standard_id": "IS 2026 (PART 14)",
+      "title": "Indian Standard Specification / Test Method (IS 2026 (PART 14))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885 (PART 38)",
+      "standard_id": "IS 1885 (Part 38):1993",
+      "title": "Electrotechnical Vocabulary, Part 38: Power Transformers and Reactors",
+      "division_code": "ETD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 415",
+      "standard_id": "IS 415:2022",
+      "title": "Shuttlecocks-Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1747",
+      "standard_id": "IS 1747:2023",
+      "title": "Nitrogen Compressed Gas And Liquid-Specification Second Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13503",
+      "standard_id": "IS 13503:2013",
+      "title": "Classification of Insulating Liquids",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16659",
+      "standard_id": "IS 16659",
+      "title": "Indian Standard Specification / Test Method (IS 16659)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16899",
+      "standard_id": "IS 16899",
+      "title": "Indian Standard Specification / Test Method (IS 16899)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16081",
+      "standard_id": "IS 16081:2013",
+      "title": "Insulating Lquids - Specifications for Unused Synthetic Organic Esters for Electrical Purposes",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16099",
+      "standard_id": "IS 16099",
+      "title": "Indian Standard Specification / Test Method (IS 16099)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2026 (PART 1)",
+      "standard_id": "IS 2026 (Part 1):2011",
+      "title": "Power transformers, Part 1: General",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2026",
+      "standard_id": "IS 2026",
+      "title": "Indian Standard Specification / Test Method (IS 2026)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2026 (PART 2)",
+      "standard_id": "IS 2026 (Part 2):2010",
+      "title": "Power transformers, Part 2: Temperature-rise",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2026 (PART 7)",
+      "standard_id": "IS 2026 (Part 7):2009",
+      "title": "Power Transformers, Part 7: Loading Guide for Oil-Immersed Power Transformers",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3024",
+      "standard_id": "IS 3024:2015",
+      "title": "Grain Oriented Electrical Steel Sheet and Strip ( Third Revision )",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16585",
+      "standard_id": "IS 16585:2023",
+      "title": "Magnetic Materials - Specifications For Individual Materials Fe-Based Amorphous Strip Delivered In The Semi-Processed State",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 191",
+      "standard_id": "IS 191:2007",
+      "title": "Copper",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1897",
+      "standard_id": "IS 1897:2008",
+      "title": "Copper strip for electrical purposes",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7404",
+      "standard_id": "IS 7404",
+      "title": "Indian Standard Specification / Test Method (IS 7404)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12444",
+      "standard_id": "IS 12444:2020",
+      "title": "Copper Wire Rods for Electrical Applications â€” Specification ( First Revision )",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13730",
+      "standard_id": "IS 13730",
+      "title": "Indian Standard Specification / Test Method (IS 13730)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6162",
+      "standard_id": "IS 6162",
+      "title": "Indian Standard Specification / Test Method (IS 6162)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9335",
+      "standard_id": "IS 9335",
+      "title": "Indian Standard Specification / Test Method (IS 9335)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1576",
+      "standard_id": "IS 1576:1992",
+      "title": "Solid pressboard for electrical purposes",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60137",
+      "standard_id": "IS/IEC 60137",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60137)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7421",
+      "standard_id": "IS 7421:1988",
+      "title": "Porcelain bushings for alternating voltage up to and including 1000 V",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3347",
+      "standard_id": "IS 3347",
+      "title": "Indian Standard Specification / Test Method (IS 3347)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 347",
+      "standard_id": "IS 347:2023",
+      "title": "Varnish Shellac For General Purposes - Specification",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8603",
+      "standard_id": "IS 8603:2008",
+      "title": "Dimensions for porcelain transformers bushings for use in heavily polluted atmospheres 12/17.5kV, 24kV and 36kV [Amalgamating IS 8603(Parts 1,2and3) : 1977]",
+      "division_code": "LITD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8603 (PART 4)",
+      "standard_id": "IS 8603 (Part 4):2003",
+      "title": "Dimensions for Porcelain Transformer Bushings for Use in Heavily Polluted Atmospheres, Part 4: 52 kV Bushings",
+      "division_code": "ETD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11149",
+      "standard_id": "IS 11149:1984",
+      "title": "Rubber Gaskets",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4253 (PART 2)",
+      "standard_id": "IS 4253 (Part 2):2008",
+      "title": "Cork composition sheets, Part 2: Cork and Rubber",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2026 (PART 5)",
+      "standard_id": "IS 2026 (Part 5):2011",
+      "title": "Power Transformers, Part 5: Ability to Withstand Short Circuit",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3639",
+      "standard_id": "IS 3639:1966",
+      "title": "Fittings and Accessories for Power Transformers",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2026 (PART 3)",
+      "standard_id": "IS 2026 (Part 3):2009",
+      "title": "Power Transformers Part - 3 Insulation Levels, Dielectric Tests and External Clearances in Air",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2026 (PART 10)",
+      "standard_id": "IS 2026 (Part 10):2009",
+      "title": "Power Transformers, Part 10: Determination of sound levents",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 62975",
+      "standard_id": "IS/IEC 62975",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 62975)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2026 (PART 8)",
+      "standard_id": "IS 2026 (Part 8):2009",
+      "title": "Power Transformers, Part 8: Applications guide",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Distribution Transformer",
+    "Non-Sealed Type Transformer",
+    "Sealed Type Transformer",
+    "Pad Mounted Transformer",
+    "Grade of",
+    "Grade Parts",
+    "Grade Liquid",
+    "Grade Insulating",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_1180__PART_2_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each transformer shall be provided with rating plate",
+      "The entries on the rating plate shall be indelibly marked",
+      "13.2 Terminal Marking Plate",
+      "Each transformer shall be provided with a terminal",
+      "marking plate in accordance with Fig. 3 to Fig. 5"
+    ]
+  },
+  "total_chars_parsed": 73570
+}

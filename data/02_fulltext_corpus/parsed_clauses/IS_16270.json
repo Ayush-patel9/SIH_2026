@@ -1,0 +1,146 @@
+{
+  "is_number": "IS IS_16270",
+  "standard_id": "IS IS_16270",
+  "title": "Indian Standard Specification / Test Method (IS IS_16270)",
+  "ia_identifier": "IS_16270",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard gives general information relating to the requirements of the secondary batteries used in photovoltaic energy systems (PVES) and to the typical methods of test used for the verification of the battery performances. This specification deals with cells and batteries used in solar photovoltaic application. This standard does not include specific information relating to battery sizing, method of charge or PVES design. This standard is applicable to secondary cells and batteries of lead-acid and nickel based chemistry.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1885 (PART 15)",
+      "standard_id": "IS 1885 (Part 15):2008",
+      "title": "Electrotechnical Vocabulary, Part 15: Primary Cells and Batteries [Amalgamating IS 1885(Part 8) : 1996]",
+      "division_code": "ETD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61427",
+      "standard_id": "IS/IEC 61427",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61427)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1651",
+      "standard_id": "IS 1651:2013",
+      "title": "Stationary cells and batteries, lead-acid type (with tubular positive plates)",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13369",
+      "standard_id": "IS 13369:1992",
+      "title": "Stationary lead acid batteries (with tubular positive plates) in monobloc containers",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15549",
+      "standard_id": "IS 15549:2005",
+      "title": "Satationary Regulated Lead Acid Batteries",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10893",
+      "standard_id": "IS 10893:1984",
+      "title": "Sealed Nickel Cadmium Button Type Rechargeable Single Cells",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10918",
+      "standard_id": "IS 10918:1984",
+      "title": "Vented type nickel cadmium batteries",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15767",
+      "standard_id": "IS 15767:2008",
+      "title": "Secondary cells and batteries coating alkaline or other non-acid electrolytes - Nickel-cadmium prismatic secondary single cells with partial gas recombination",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16048 (PART 1)",
+      "standard_id": "IS 16048 (Part 1):2013",
+      "title": "Secondary Cells and Batteries containing Alkaline or other non-acid Electrolytes - Portable Sealed Rechargeable Single Cells, Part 1: Nickel-Cadmium",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16048(PART 1)",
+      "standard_id": "IS 16048(PART 1)",
+      "title": "Indian Standard Specification / Test Method (IS 16048(PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16048 (PART 2)",
+      "standard_id": "IS 16048 (Part 2):2013",
+      "title": "Secondary Cells and Batteries containing Alkaline or other non-acid Electrolytes - Portable Sealed Rechargeable Single Cells, Part 2: Nickel-Metal Hydride",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Batteries",
+    "Grade tests",
+    "Grade Test",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_16270"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "Lead-Acid —20 to + 50 <95 percent",
+      "Cadmium a) -20 to + 50 a) <95 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "The cells may also be marked with Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 29503
+}

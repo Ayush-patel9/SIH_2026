@@ -1,0 +1,413 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+IS 14202-1 (2003) : Identification Cards - Integrated 
+Circuit (s) Cards With Contacts, Part 1: Physical 
+Characteristics [LITD 16: Computer Hardware, Peripherals 
+and Identification Cards] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+aj^&vi iimmK-^i^^^ T ^bi^ nvF^f 
+
+
+
+::^^s^\n%i9^j^/;s^>^^^^ 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 14202 (Parti): 2003 
+ISO/IEC 7816-1 :1998 
+
+Indian Standard 
+
+IDENTIFICATION CARDS — INTEGRATED CIRCUIT(S) 
+
+CARDS WITH CONTACTS 
+
+PART 1 PHYSICAL CHARACTERISTICS 
+
+( First Revision ) 
+
+ICS 35.240.15 
+
+
+
+©BIS 2003 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN. 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+February 2003 ' Price Group 2 
+
+
+
+Computer Hardware Sectional Committee, LTD 37 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard (Part 1) (First Revision) which is identical with ISO/IEC 7816-1:1998 
+'Identification cards — Integrated circuit(s) cards with contacts — Part 1 : Physical characteristics' 
+issued by the International Organization for Standardization (ISO) and the International 
+Electrotechnical Commission (lEC) jointly was adopted by the Bureau of Indian Standards on the 
+recommendation of the Computer Hardware Sectional Committee and approval of the Electronics 
+and Telecommunication Division Council. 
+
+IS 14202(Part 1) was originally published in 1995 and was identical to ISO/IEC 7816:1987. This 
+revision is being published to align it with ISO/IEC 7816-1:1998. 
+
+In the adopted standard, certain conventions are not identical to those used in Indian Standards. 
+Attention is particularly drawn to the following: 
+
+a) Wherever the words'lnternational Standard' appear referring to this standard, they should 
+be read as 'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker while in Indian Standards, the current 
+practice is to use a point(.) as the decimal marker. 
+
+The concerned Technical Committee responsible for the preparation of this standard has reviewed 
+the provisions of the following International Publications and has decided that they are acceptable 
+for use in conjunction with this standard: 
+
+ISO/IEC 7810:1995 Identification cards — Physical characteristics 
+
+ISO/IEC 781 1-1:1995 Identification cards — Recording technique — Part V.Embossing 
+
+ISO/IEC 781 1-2:1995 Identification cards — Recording technique — Part 2: Magnetic stripe 
+
+ISO/IEC 781 1-3:1995 Identification cards — Recording technique — Part 3: Location of embossed 
+characters on ID-1 Cards. 
+
+ISO/IEC 781 1-4:1995 Identification cards — Recording technique — Part 4: Location of read-only 
+magnetic tracks — Tracks 1 and 2 
+
+ISO/IEC 781 1-5:1995 Identification cards — Recording technique— Part 5: Location of read-write 
+magnetic track — Track 3 
+
+ISO/IEC 7811-6:1996 Identification cards — Recording technique — Part 6: Magnetic stripe — 
+High coercivity 
+
+ISO/IEC 7813:1995 Identification cards — Financial transaction cards 
+
+ISO/IEC 10373:1993 Identification cards — Test methods 
+
+
+
+IS 14202 (Part 1) : 2003 
+ISO/IEC 7816-1 : 1998 
+
+Indian Standard 
+
+IDENTIFICATION CARDS — INTEGRATED CIRCUIT(S) 
+
+CARDS WITH CONTACTS 
+
+PART 1 PHYSICAL CHARACTERISTICS 
+
+( First Revision ) 
+
+
+
+1 Scope 
+
+This part of ISO/IEC 7816 specifies the physical characteristics of integrated circuit(s) cards with contacts. It applies 
+to identification cards of the ID-1 card type which may include embossing and/or a magnetic stripe as specified in 
+ISO/IEC 781 1-1 to ISO/IEC 7811-6. 
+
+This part of ISO/IEC 781 6. applies to cards which have a physical interface with electrical contacts. It does not, 
+however, define the nature, number and position of the integrated circuits in the cards. 
+
+NOTE Other types of IC cards, formats or interfaces may be developed in the future which will call for additions to be made 
+to this part of ISO/IEC 7816 or will result in the need for other International Standards to be prepared. 
+
+2 Normative references 
+
+The following normative documents contain provisions which, through reference in this text, constitute provisions of 
+this part of ISO/IEC 7816. For dated references, subsequent amendments to, or revisions of, any of these 
+publications do not apply. However, parties to agreements based on this part of ISO/IEC 7816 are encouraged to 
+investigate the possibility of applying the most recent editions of the normative documents indicated below. For 
+undated references, the latest edition of the normative document referred to applies. Members of ISO and lEC 
+maintain registers of currently valid International Standards. 
+
+ISO/IEC 7810:1995, Identification cards - Physical characteristics. 
+
+ISO/IEC 781 1 -1 :1 995, Identification cards - Recording technique - Part 1: Embossing, 
+
+ISO/IEC 781 1 -2:1 995, Identification cards - Recording technique - Part 2: Magnetic stripe, 
+
+ISO/IEC 7811-3:1995, Identification cards - Recording technique - Part 3: Location of embossed characters on ID-1 
+cards, 
+
+ISO/IEC 7811-4:1995, Identification cards - Recording technique - Part 4: Location of read-only magnetic tracks - 
+Tracks 1 and 2. 
+
+ISO/IEC 7811-5:1995, Identification cards - Recording technique - Part 5: Location of read-write magnetic track - 
+Track 3, 
+
+ISO/IEC 781 1 -6:1 996, Identification cards - Recording technique - Part 6: Magnetic stripe - High coercivity, 
+
+ISO/IEC 7813:1995, Identification cards - Financial transaction cards. 
+
+ISO/IEC 10373:1993, Identification cards - Test methods. 
+
+
+
+IS 14202 (Part 1) : 2003 
+ISD/IEC 7816-1 : 1998 
+
+3 Terms and definitions 
+
+For the purposes of this part of iSO/lEC 7816, the following terms and definitions apply. 
+
+3.1 
+
+integrated circuit(s) 
+
+electronic connponent(s) designed to perform processing and/or memory functions 
+
+3.2 
+
+integrated circuit(s) card (IC card) 
+
+an ID-1 card type (as specified in ISO/lEC 7810) into which has been inserted one or more integrated circuits 
+
+3.3 
+contact 
+
+conducting element ensuring galvanic continuity between integrated circuit(s) and the external interfacing 
+
+equipment 
+
+4 Physical characteristics 
+
+The following physical characteristics describe the card after the insertion of integrated circuit(s) with contacts into 
+an ID-1 card type meeting the requirements of ISO/lEC 7810. Such a card may also meet the requirements of 
+iSO/lEC 7811-1 to ISO/iEC 7811-6 and ISO/lEC 7813. Test methods are described in ISO/lEC 10373. 
+
+4.1 General 
+
+The physical characteristics specified for all types of Identification cards in ISO/IEC 7810 shall apply to IC cards. 
+
+NOTE The thickness of the cards as specified in ISO/IEC 7810 applies to a non-embossed card including contacts and 
+integrated circuits. 
+
+NOTE 2 Concerning "resistance to chemicals" (see subclause 8.1.4 of ISO/IEC 7810:1995) the attention of card issuers is 
+drawn to the fact that information held on a magnetic stripe or in the integrated circult(s) may be rendered ineffective as a result 
+of contamination. 
+
+4.2 Additional characteristics 
+
+4.2.1 Ultra-violet light 
+
+Any protection beyond the ambient UV light level shall be the responsibility of the card manufacturer. 
+
+4.2.2 X-rays 
+
+Exposure of either side of the card to a dose of 0,1 Gy of medium-energy X-radiation of 70 keV to 140 keV 
+(cumulative dose per year) shall not cause malfunction of the card. 
+
+NOTE This corresponds to twice the generally accepted human dose of 0,05 Gy per year. 
+
+4.2.3 Surface profile of contacts 
+
+No point of the IC contact surface shall be higher than 0,05 mm above or lower than 0.1 mm below the adjacent 
+surface of the card. The protection area specified in subclause 9.2.2 of ISO/lEC 7810:1995 shall be extended to the 
+area between B and shown in figure 3 in ISO/IEC 7810:1995. 
+
+WARNING For cards which are printed after embedding, problems may be encountered when contacts 
+are above the adjacent surface of the card. 
+
+
+
+IS 14202 (Part 1) : 2003 
+ISO/IEC 7816-1 : 1998 
+
+
+
+4.2.4 Mechanical strength (of cards and contacts) 
+
+
+
+The card should resist damage to its surface and to any components contained in it and should remain intact during 
+normal use, storage and handling. 
+
+Each contact surface and contact area (entire galvanic surface) shall not be damaged by a working pressure 
+equivalent to a steel ball of diameter 1 mm applying a force of 1 ,5 N. 
+
+4.2.5 Electrical resistance (of contacts) 
+
+The contact resistance of a card connector assembly can be defined and measured by using a test card (e.g. with a 
+short circuit between the contacts within the card). 
+
+When a d.c. current of any value between 50 ^A and 300 mA is applied, the resistance measured between any two 
+lines of the connector (two contacts in series) shall be less than 0,5 Q. 
+
+The impedance shall be such that the voltage across the impedance shall remain lower than 10 mV for an a.c. 
+current of 10 mA peak at a frequency of 4 MHz. 
+
+4.2.6 Electromagnetic interference [between magnetic stripe and integrated circuit(s)] 
+
+If the card carries a magnetic stripe, the IC card shall not be damaged, malfunction or be altered after reading, 
+writing or erasing of the magnetic stripe. Conversely, the writing or reading of the integrated circuit(s) shall not 
+cause a malfunction of the magnetic stripe or its associated reading, writing or handling mechanisms. 
+
+4.2.7 Static electricity 
+
+The integrated circuit shall not be damaged in normal use by a person charged with static electricity. 
+
+The performance of the card shall not be degraded by exposure to a static discharge between any contact and 
+ground of a voltage of 2 000 V through a resistance of 1 500 Q. from a capacitor of 100 pF. 
+
+4.2.8 Operating temperature 
+
+The card shall operate in an ambient temperature range between °C and 50 °C. 
+
+4.2.9 Bending properties 
+
+When subjected to a total of 1 000 bending cycles as described in ISO/IEC 10373:1993, the card shall still function 
+and shall not show any cracked part. 
+
+4.2.10 Torsion properties 
+
+When subjected to a total of 1 000 torsion cycles as described in ISO/IEC 10373:1993, the card shall still function 
+and shall not show any cracked part. 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods 
+and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any 
+form without the prior permission in writing of BIS. This does not preclude the free use, in the course 
+of implementing the standard, of necessary details, such as symbols and sizes, type or grade 
+designations. Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also 
+reviewed periodically; a standard along with amendments is reaffirmed when such review indicates that 
+no changes are needed; if the review indicates that changes are needed, it is t^ken up for revision. 
+Users of Indian Standards should ascertain that they are In possession of the latest amendments or 
+edition by referring to the latest issue of *BIS Catalogue' and 'Standards : Monthly Additions'. 
+
+This Indian Standard has been developed from Doc : No. LTD 37 (1940). 
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters : 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110 002 Telegrams : Manaksanstha 
+
+Telephones : 323 01 31, 323 33 75, 323 94 02 (Common to all offices) 
+
+Regional Offices : Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg f 2323 76 17 
+
+New Delhi 110 002 12323 38 41 
+
+Eastern : 1/14, C.I.T Scheme VII M, V.I. P. Road, Kankurgachi r2337 84 99, 2337 85 61 
+
+KOLKATA 700 054 12337 86 26, 2337 91 20 
+
+Northern : SCO 335-336, Sector 34-A, Chandigarh 160 022 f 260 38 43 
+
+I 260 20 25 
+
+Southern : C.I.T Campus, IV Cross Road. Chennai 600 113 r2254 12 16, 2254 14 42 
+
+12254 25 19, 2254 13 15 
+
+Western : Manakalaya, E9, MiDC, Marol, Andheri (East) j 2832 92 95, ,2832 78 58 
+
+Mumbai 400 093 12832 78 91, 2832 78 92 
+
+Branch : AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. FARIDABAD. 
+GHAZIABAD, GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+NALAGARH. PATNA. PUNE. RAJKOT THIRUVANANTHAPURAM. VISAKHAPATNAM. 
+
+
+
+Printed at Printograph, New Delh, Ph.: 5726847 
+
+
+

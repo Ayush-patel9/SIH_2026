@@ -1,0 +1,106 @@
+{
+  "is_number": "IS IS_12636",
+  "standard_id": "IS IS_12636",
+  "title": "Indian Standard Specification / Test Method (IS IS_12636)",
+  "ia_identifier": "IS_12636",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12636) covers Indian Standard Specification / Test Method (IS IS_12636). This Indian Standard which is identical with ISO 4057 : 1986 'Information processing — Data interchange on 630 mm ( 0'25 in ) magnetic tape cartridge, 63 bpmm ( 1 600 bpi ) phaseencoded', issued by the International Organization for Standardization ( ISO ) was adopted by the Business Machines and Calculators Sectional Committee ( LTDC 24 ) and approval of the Electronic and Telecommunication Division Council. In the adopted standard certain terminology and conventions are not identical with those used in Indian Standards; attention is especially drawn to the following: a) Comma ( , ) has been used as a decimal marker while in Indian Standards the current practice is to use a point ( . ) as the decimal marker. b) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. CROSS REFERENCES International Standard ISO 646-1 983 7-Bit coded character set for information processing ir>terchange ISO 2022 Code extension techniques fo",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 4057",
+      "standard_id": "IS/ISO 4057",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4057)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 646",
+      "standard_id": "IS/ISO 646",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 646)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2022",
+      "standard_id": "IS/ISO 2022",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2022)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4873",
+      "standard_id": "IS/ISO 4873",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4873)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 370",
+      "standard_id": "IS/ISO 370",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 370)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4067",
+      "standard_id": "IS/ISO 4067",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4067)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "nfiagnetic tape",
+    "Reference Tape Cartridge",
+    "secondary reference tape cartridge",
+    "Signal Amplitude Reference Tape Cartridge",
+    "reference field",
+    "Test Recording Current",
+    "Standard Reference Amplitude (SRA",
+    "Average Signal Amplitude",
+    "in-contact",
+    "track",
+    "bit density",
+    "position of flux transitions"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "elongation of 3 %"
+    ],
+    "chemical_properties": [
+      "silicon phototransistor, shall be at least 50 %"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "Tolerance Percent Defective (LTPD) of 1,26 %"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 50388
+}

@@ -1,0 +1,71 @@
+{
+  "is_number": "IS IS_11025",
+  "standard_id": "IS IS_11025",
+  "title": "Indian Standard Specification / Test Method (IS IS_11025)",
+  "ia_identifier": "IS_11025",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard is applicable to symbols and other markings on hearing aids and related equipment for the purpose of identifying control settings and giving information regarding technical functions and characteristics. Related equipment shall be understood to include devices such as: — hearing aid equipment, not entirely worn on the listener; — auditory trainers; — group hearing aid equipment; — insert earphones; — other accessories.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 824",
+      "standard_id": "IS 824:1965",
+      "title": "Preferred Values for Resistors and Capacitors",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10781",
+      "standard_id": "IS 10781:1984",
+      "title": "Reference Coupler for the Measurement of Hearing Aids Using Earphones Coupled to The Ear by Means of Ear Inserts",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9302 (PART 1)",
+      "standard_id": "IS 9302 (PART 1)",
+      "title": "Indian Standard Specification / Test Method (IS 9302 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1102",
+      "standard_id": "IS 1102:1968",
+      "title": "Handloom Buckram Cloth",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11025"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 15337
+}

@@ -1,0 +1,43 @@
+{
+  "is_number": "IS IS_11494",
+  "standard_id": "IS IS_11494",
+  "title": "Indian Standard Specification / Test Method (IS IS_11494)",
+  "ia_identifier": "IS_11494",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the recommended practice for construction and maintenance of surface farm drainage systems.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11495",
+      "standard_id": "IS 11495:1986",
+      "title": "Code for design of surface farm drainage system",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11494"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance of 30 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 16775
+}

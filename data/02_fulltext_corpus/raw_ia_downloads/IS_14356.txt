@@ -1,0 +1,1247 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+IS 14356 (1996) : Guide for protection of information 
+resources [LITD 17: Information Systems Security and 
+Biometrics] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+aj^&vi iJii^s:y%K^ isb^^ni^seg 
+
+
+
+:<>5&i| mT'5K^5?::5:^>^i»l 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+( Reaffirmed 2002 ) 
+
+
+
+hidkm Standard 
+
+GUIDE FOR PROTECTION OF 
+INFORMATION RESOURCES 
+
+
+
+ics 35.tnmj 
+
+
+
+■"BJS I'J*'* 
+BLRGAt OF INDIAN STANDARDS 
+MANAK HHAVAM. -^ HAHADUk SHAH7AFAR MAKti 
+
+
+
+Infomiation System Security Sectional Committee, LTD 38 
+
+
+
+FOREWORD 
+
+This Indian Standard was adopted by tlie Bureau ol Indian Siand;u^ds, after Uie draft finalized by Information 
+System Security Sectional Committee, had been approved by Electronics and Telecommunication Division 
+Council. 
+
+The proliferation of personal computers, lociU iu-ea networks and distributed processing have drastically 
+chiinged llie way infomiation resources iae protected. There has been a trend of concentration of more and 
+more information in computers to tacilitate the use of timely and accurate information. Since the information 
+technology has changed so rapidly, internal controls and the ct)ntrol points needed for protection that were 
+present in tJie past, do not provide a good solution for tlie present day computerised information system. Also, 
+while in die past users have fully depended on computer technologists for die protection of information, they 
+lire now recognising Uiat computers and computer related problems must be undersux)d »md managed like any 
+other resources. 
+
+Reliance upon inadequately controlled information system can have serious consequences, including: 
+
+i) Loss of integrity of information impairing tlie organisations ability to perform its functions, 
+
+ii) Inability to provide needed services to die users, 
+
+iii) Loss of competitive edge due to leakage of contldential information, and 
+
+iv) Loss of credibility or embarrassment to tlie organisation. 
+
+To avoid Uiese consequences, a broad set of information security issues must be addressed effectively and 
+comprehensively for taking appropriate measures. 
+
+The purpose of die protection service is to protect the integrity and confidentiality of data and ensure diat die 
+infomiation is available when required and only to those who :u-e authorized and genuine user. 
+
+Thus Management of protection of infomiation resources has three basic components: 
+
+i) Integrity — Safeguarding die accuracy and completeness of hifomiation. 
+ii) ConfidentiiUity — Protecting sensitive inft)miation from a unauUiorised disclosure, 
+iii) Availability — Ensuring availability of information when required. 
+
+The integrity of die hifomiation has to be ensured by providing protection against the following: 
+
+i) IJnautliorised data modification/deletion, and 
+ii) Unaudiorised data creation/insertion. 
+
+The confidentiality of information is aimed at to protect infonnation from unauUiorized disclosure to individual 
+or processes. It ensures Uie following: 
+
+i) Confidentiality of a data unit as well as specific field widiin daui unit, 
+ii) Confidentiality of data in a connected environment, 
+iii) ftotection from direct or indirect derivation of information of from observation of information 
+
+triiffic communicated over a network. Since infomiation is represented dirough data, information 
+
+cim be derived from diim in a number of ways: 
+
+(Continued on third cover) 
+
+
+
+IS 14356 : 1996 
+
+
+
+Indian Standard 
+
+GUIDE FOR PROTECTION OF 
+INFORMATION RESOURCES 
+
+
+
+1 SCOPE 
+
+This guide is intended to be used as a guide for policy 
+makers, managers and employees of an organisation 
+who are responsible for initiating, implementing and 
+maintaining protection of computer systems and data 
+processed witliin dieir organisation. It is aimed at 
+providing help for developing a structured and de- 
+fined process for protection of information resources 
+and implementing tliat. It is also meant to serve as a 
+guide I'or identifying die range of controls required 
+for most situations encountered in tlie context of 
+information system. This guide is also benetlcial in 
+such cases where infonnation flows tlirougli network 
+as it provides a fnmiework for enabling a meciianism 
+for establishing mutual trust between organisations 
+which are networked partners, and a basis for facili- 
+liesmanagemeni between hifonnation users and serv- 
+ice providers. 
+
+2 TERMINOLOGY 
+
+2.1 Information Resource — Information lakes 
+many forms. It can be stored on computen transmit- 
+ted across die networks, printed at or written down t>n 
+paper etc. This Infonnation Resource is defined as 
+any and all infonnation, regiyd less of fonn, that is 
+contained in or possessed by tlie organization's com- 
+puter system facilities, communication networks, or 
+storage media. Infonnation resource may consist of 
+trade secrets, confidential documents, or oUier infor- 
+mation considered to be valuable as.sets. 
+
+3 THREATS TO INFORMATION RESOURCES 
+
+Major xiireats to die infonnation resources is due to 
+people, belonging boUi from inside or outside the 
+organisation. By fiu, tlie most costly losses to infor- 
+mation resources incurred by organisiitions result 
+from human errors, accidents and omissiop.s by em- 
+ployees resulting in loss of integrity and confidenti- 
+ality. In addition, diere may be physical direat to 
+infonnation resources. 
+
+3.1 Threats to Information Integrity 
+
+Integrity attacks aim at defeating die mechanism used 
+to provide integrity of infonnation. Thus, tliey can be 
+put under die following clas.ses: 
+
+
+
+i) Attacks aimed at suboniing access preven- 
+tion mechanisms. Such attacks include: 
+
+a) Aattacks on the mechanism itself, 
+
+b) Penetration of die services die mecha- 
+nism relies upon like routing control and 
+access control, and 
+
+c) Exploitation of utilities widi unintended 
+side-effects. 
+
+ti) Attacks aimed at defeating cryptographic 
+mechanisms or at exploiting weaknes.ses of 
+such mechanisms. Such attacks include : 
+
+a) Penetration of die cryptographic mecha- 
+
+nisms like digital signature or func- 
+tions, and 
+
+b) Deletion and replication. 
+
+iii) Attacks aimed at defeating die contextual 
+mechanism used. Such attiicks include : 
+
+a) Massive, coordinated changes of data- 
+
+item replicas, and 
+
+b) Penetration of the context estabii.shing 
+
+mechanism. 
+
+iv) AlUicks aimed at defeating detection and 
+acknowledgement mechanisms. Such 
+attacks include: 
+
+a) False acknowledgements, and 
+
+b) Exploitation of faulty sequencing be- 
+tween the acknowledgement mecha- 
+nism and the treatment of die received 
+data. 
+
+v) Attacks dirough Viruses and odier Malicious 
+Code such attacks include: 
+
+a) Viruses : Prognmis which modify odier 
+
+prognuns and repR)duce endlessly, in- 
+fecting other prognmis, 
+
+b) 'Wonns' and Trojan Horses* often cause 
+
+diuiiage to the software, and 
+
+c) Electronic Bulletin Boards: AlUioughin 
+
+general, Uiey offer usetulinibnnation, a 
+small percentage of bulletin boiu-ds, 
+however, are not hsmnless. 
+
+
+
+LS 14356 : 1996 
+
+
+
+vi) Threat piirticuhir to media. Such ilireats 
+include: 
+
+a) Threat against tlie media in which infor- 
+mation is stored> and 
+
+b) Threat against tlie media tiirough which 
+infonnation is transmitted. 
+
+3.2 Threats to Infcirmation Confidentiality 
+
+The threat to tlie protected datii is an unaulliorised 
+disclosure of information encoded in tlie data or 
+disclosure of the diita chiiracteristics. The piurticular 
+threat that exist in different environments are 
+addressed as following: 
+
+i) Threats when contldentiality is provided 
+tlirough access prevention. Such Uireats 
+include: 
+
+a) Penetration (*f tl)e access prevention 
+mechanism, 
+
+b) F*enetration of the integrity mechanism 
+used to protect certificates, 
+
+c) Exploitation of system utilities tliat may 
+disclose, directly or indirectly, infor- 
+mation about Uie system, and 
+
+d) ('overt channel. 
+
+ii) Threats when confidentiality is provided 
+tlirough infonnation hiding. Sucli threats 
+include: 
+
+a) Penetration of the cryptographic mech- 
+anism, 
+
+b) Traffic analysis, 
+
+c) Analysis of protocol data unit headers, 
+
+d) Browsing and eavesdropping, and 
+
+e) Covert channel. 
+
+3.3 Threats to Information Avaiiability 
+
+3.3.1 Improper Operation 
+
+vSome improper operations carried out inadvertently 
+or deliberately may lead to daihage of computer 
+system network (if applicable), t)r the information 
+resource. 
+
+3.3.2 Uick of Proper Maintenance of Hardware 
+
+This sometimes may lead to system unavailability 
+due to lack of maintenance or maintenance by incom- 
+petent agency 
+
+3.3.3 Lack of Proper Maintenance of Infmnation 
+
+Uniess a systematic procedure is followed in a reguliu" 
+way towards backup, infonnation may not be avail- 
+able when needed. 
+
+
+
+3.4 Pliysical Threats to Information Resources 
+
+3.4.1 Fire Dama^^e 
+
+Fire d:image is tlie most significant and prevalent 
+physical liireat facing data processing organisations 
+which can lead to heavy loss of information 
+
+resources. 
+
+3.4.2 Water Damage 
+
+The compact nature of computers, coupled with their 
+high elecu^ical mid cooling heads, niidces data process- 
+ing equipment piu'ticuhuly susceptible to even the 
+snuillest iunount of moisture. 
+
+3.4.3 Electrical Outages and Fluctuations 
+
+filackouis, power surges iue also possible sources of 
+loss of data. 
+
+4 INI ORMATK )N PROTECTION SERVICES 
+AND MECHANISMS 
+
+IVotection of infonnation resources is achieved by 
+ensuring tlie data integrity and data confidentiality as 
+infonnation is stored and transmitted in tlie form of 
+data. Thus, infonnation protection services consist of 
+protection against integrity violation and protection 
+against confidentiality violations. 
+
+4.1 Types of Information Protection Services 
+
+Protection services can be classified according to the 
+following criteria: 
+
+4.1.1 liy the type of violation they protect against : 
+
+i) Unauthorised data modification, 
+ii) Unauthorised data creation, and 
+iii) UnauUiorised data deletion. 
+
+4.1.2 The type of protection they provide : 
+
+i) Protection of data semantics, and 
+ii) Protection oi' data semantics associated 
+attributes. 
+
+^, 1 .3 Ihe types of at tacks against which the informa- 
+tion is protected : 
+
+i) Protection against external attacks, and 
+ii) Protection against internal attacks. 
+
+4.1.4 The recovery mechanism they provide : 
+i) In ca.se of data corruption, and 
+
+ii) In case of deletion. 
+
+4.1.5 By the type of protection they support : 
+
+i) Prevention of integrity compromise, and 
+
+
+
+IS 14356 : 1996 
+
+
+
+ii) Detection of integrity compromise. 
+
+4.2 Types of Protection Mechsitiisms 
+
+4,2*1 Those which prevent access to tiie medium. 
+Such mechanisms uiclude: 
+
+i) Physically isolated, noise free channels, 
+
+ii) Routing control, and 
+
+iii) Access control, 
+
+4.2.2 Those which detect unautliorised modification 
+of diiuior sequence of datii items, including cases of 
+diim creation, data deletion and daui replication. 
+Such mechimisms include: 
+
+i) Digital signature, 
+
+ii) Daut replication, 
+
+iii) Hashing function in conjunction with 
+cryptographic transfonnations, and 
+
+iv) Message sequencing. 
+
+A23 Those which iire mapping techniques tliat render 
+the information to be protected relatively inaccessi- 
+ble to all but to those possess some critical infonna- 
+tion about the mapping techniques. Such techniques 
+include: 
+
+i) Enciphemient, and 
+ii) Data padding, 
+
+4.2.4 Those who provide confidentiality to ilie data 
+through different memis : 
+
+i) Confidentiality provision Uirougli protocol 
+
+data unit header protection, and 
+ii) Confidentiality provision through 
+contextuiU location. 
+
+5 INFORMATION PROTECTION PROGRAMME 
+
+In order to a successful system for tlie protection of 
+Information resources, it is required to plan, imple- 
+ment :ind maintain a comprehensive infonnation 
+protection prognunme. The person or group in tlie 
+organisiition with responsibility of tlie information 
+protection should present to senior management a 
+clear view of tlireats imd alternative solutions for 
+countering tliose threats so tliat after cimying out a 
+risk analysis process in temis of weighing potential 
+losses versus tlie cost and effort of limiting the 
+exposures management can uike appropriate deci- 
+sion. 
+
+The information resource security protection pro- 
+gnunme Ciin be divided into tlie following stages to 
+have proper understanding of the prognunme, help in 
+. implemenuition imd also to measure tlie progress of 
+pmgnunme implementation : 
+
+
+
+i) Adoption of an information resource 
+
+security policy, 
+ii) Development and implementation of daui 
+
+classification system, 
+iii) Development and implementation of an 
+
+inlbrmation protection standards manual, 
+iv) Planning of ilie management infonnation 
+
+protection prognunme, and 
+v) Ongoing protection programme maintenance 
+
+and enforcement. 
+
+5.1 Stagel: Adoption of an Information Resource 
+Security Policy 
+
+1 he organisation * s policy statement should set gn)und 
+rules for the protection of tlie infonnation resources 
+and state responsibilities and accountabilities of all 
+concerned. The policy should precisely state tlie 
+value to the organisation of data, information, re- 
+sources and need to procure their integrity, confiden- 
+tiality and availability. In addition to identifying 
+information as an asset and fixing manager/employee 
+infonnation protection responsibility and accounta- 
+bility, die information resource security policy state- 
+ment should set forth information protection pro- 
+grmnnie priorities. Management should set a cleiu* 
+direction and demonstnite the effectiveness of tliat in 
+the face of accidental or deliberate unautliorised 
+disclosure, modificatitni or destruction through tlie 
+issue and implementation of an organisation wide 
+infonnation resource security policy. The policy 
+should also state the requirement tt) provide computer 
+security and awareness training to all its employees 
+having access to infonnation resources to help in 
+deriving standiu*ds and guidelines for implementa- 
+tion. The intent of Uiis hifonnation resource policy is 
+to accomplish the following: 
+
+i) To ensure the confidentiality, availability 
+and integrity of information, 
+
+ii) lo reduce the risk of loss of information by 
+accidental or intentional modification, dis- 
+closure or destruction, and 
+
+iii) To preserve the organisation's rights and 
+remedies in the event of a k)ss. 
+
+The organisation will implement the infonnation 
+resource security policy in such a way as to : 
+
+i) Mold individuals accountable for their use of 
+organisation's information resources, 
+
+ii) To authorize access lo infonnation on a need 
+
+lo know basi.s,and 
+iii) To ensure tlie timely access to infonnation. 
+
+
+
+IS 14356 : 1996 
+
+
+
+5.2 Stage II : Development and Implementation 
+of a Data Classification System 
+
+Infonnation assets must be classitled according to 
+tiieir sensitivity and importance to tlie organisation. 
+Since it is unrealistic to expect managers and employ- 
+ees to maintain absolute control overall inlormalion 
+witliin the boundaries ol tiie organisation, it is 
+necess;u*y to advise tJiem : 
+
+i) What intonnation should be brought under 
+
+control, 
+ii) Which types of information lu-e considered 
+
+more sensitive, and 
+iii) How tlie organisation would like that limited 
+amount of sensitive infonnation handled and 
+protected. 
+
+5.2.1 A siunple of four level of classification is given 
+below: 
+
+i) Confident iai 
+
+It is Uiat classification of data of which unauthorized 
+disclosure/use could cause serious diunagc to tlie 
+organisation (important drawings, design infonna- 
+ticm, proprietary software etc.) 
+
+ii) Restricted 
+
+It IS that classification of data of which unauthorised 
+disclosure/use would not be in tlie best interest of tlie 
+organisation (computer software, perst)nnel data, 
+budget infonnation, some documents and drawings). 
+
+iii) Internal Use 
+
+It is tliat classification of data thai does noi require any 
+degree of protection against disclosure witl\in tl^e 
+company (operating procedures, inter-office memo- 
+randums, telephone directory) 
+
+iv) Unclassified 
+
+It is Ltiat classification of data Uiat requires no protec- 
+tion against disclosure (published annual reports, 
+periodicals, any infonnation/document equivalent t)f 
+which is available in some open literature) 
+
+The management should give serious consideration 
+to tlie programme prior to implementation. A contin- 
+uous process of classification, declassification, 
+labeling, storage, access, destruction and reproduc- 
+tion of classified data and tlie administrative over- 
+head tliis process will create must be considered. 
+Failure to maintain a balance between tlie value of tlie 
+infonnation classified and the administrative burden 
+tlie classification system places on the organisation 
+will result in long-term dilficuUies in achieving 
+
+
+
+success. Thus, tlie classificatit)n has to be done very 
+ciirefully and identify only sensitive infonnation to be 
+controlled under classified infonnation. 
+
+5.3 Stage III: Development of Information 
+Protection Standards Manual 
+
+The functions needed to provide effective protection 
+of tlie information resources of an organisiUion should 
+be well defined. In order to facilitate tlie implemen- 
+tation of these functions, they iU'e translated in tenns 
+of slandiu^ds, procedures and guidelines. 
+
+Ihis manual should contain the defined standiurds, 
+procedures and guidelines especially tiiilored to tlie 
+specific needs i)f a piirticuhu" orgiuiisation. Thus, the 
+standiuds must be derived and developed from the 
+policy statement to meet die dechu-ed objectives. 
+Pn)cedures should be worked out towiu^ds how to 
+c;uTy out Uie activities as stated in Uie standiU'ds. 
+Ihe.se procedures should be unmiibiguous and should 
+be in luuinony with the working environment of Uie 
+organisation, riiey should be made mandatory. Those 
+procedures which have not reached Uie level where 
+Uiey can be made mandatory, they can be treated as 
+guidelines and Uiey slK)uld be encouraged for use till 
+tliey take die fonn of prv>cedures. Such slandiuds, 
+procedures and guidelines should be developed and 
+periodically updated at defined regular intervals. 
+
+The manual is the prinuu^y communication tool for 
+specific information protection responsibilities. The 
+information protection administrator must maintain 
+Uie manual properly so Uiat it will be perceived and 
+adhered to with Uie .seriousness it deserves. Stand- 
+;u^ds, procedures, and guidelines must be distributed 
+in written fonn to all personnel. 
+
+5.3,1 Mana^^emcnt Functional Measures 
+
+i) Policy Statement : 
+
+As mentioned eitflier, the management policy to- 
+Wiu^ds protection of infonnation resources should be 
+stated in Uiis manual . i1iis should set a cleiu* direction 
+and deinonsLrate management support Uirough Uie 
+i.ssue of this organisation -wide information .security 
+policy. The update policy should also be defined in 
+detail, including responsibilitiesand review dates, for 
+maintaining the policy document updated and effec- 
+Uve. 
+
+ii) Mana{»ement Or\»anization 
+
+To manage information protection wiUiin the organ- 
+isatii>n, there me many management functions to be 
+ciaried out. A well defined management fnunework 
+in terms of its organ isaUon and responsibiliues should 
+
+
+
+IS 14356 : 1996 
+
+
+
+be establisliCu to initiuie, plan antl coiUn)! tJie iiuple- 
+menlaiion of inlonnation pnxeciion system. Some- 
+times, a source orspeciahsl's advice may need to be 
+established and made available witl\in Uk organiza- 
+tion to keep up witli industry trend. stand:uds and 
+assessments. 
+
+iii) Owners/lip, Citsutdian and User responsibili' 
+ties and Accoimtability 
+
+To maintain appropriate protection of organisation's 
+inlbnnation resources, all misjorinlbrmalion resourc- 
+es should be accounted lor and each identitied re- 
+source should have a nomin.ated owner. 1 Isualiy liie 
+person who generates the inlbnnation is tJie natural 
+owner of tiie tnlbnnation. As many small pieces oi 
+information iu-e integrated the value of the inl\>nna- 
+tion increases and so a higher level of responsibility 
+for tiie protection of die integrated inlbnnation is 
+required. Owner should be assigned respi)nsibilily 
+for implementing security measures for protectioii 
+which may be delegated but accountability should 
+remain with ilie nominated owner i)f the inlonnaiion 
+resources. Management at all levels of the organisa- 
+tion ;ue responsible for it. vSpecific responsibilities 
+iae detailed below: 
+
+Senior Manaj^ement : They iu^e prinuu-ily responsible 
+f()restabi!shing and nuuntaining inlbnnation resource 
+security widiin tlieir functional laea dial include the 
+following: 
+
+a) Evaluating cinporate information and 
+implementing controls. 
+
+b) Authorizing an individuafs access to 
+infoniialion, 
+
+c) Promptly removing Ids of disgruntled 
+employees fn)m system, 
+
+d) (luiading against unlawful acquisition or 
+use of informatit)!!, and 
+
+e) Providing a back-up system and niainiain- 
+ing operations. 
+
+Data Users : They ;u-e responsible for adhering to all 
+policies, standiurds and procedures tl\at include the 
+following: 
+
+a) Maintaining conndentialily<)fiiilbnnaii()iu 
+
+b) Maintaining confidentiality of security 
+controls and passwords, 
+
+c) Rep()rting suspected violations to 
+managetnent, and 
+
+d) Executing a confidentiality or ownership 
+agreement. 
+
+
+
+Infonmaion Systems Departmem : They ;u e general- 
+ly die custodian of inlbnnation resources for all 
+functio!ss lhrouglu)ut the ojganisation and include the 
+following: 
+
+a) Suppi)rl the organisation in the design, in- 
+stallatioti, maintenance, Uaining, and use of 
+information security cv>nlrv>ls, both 
+automated and inatmal, 
+
+b) Maintain a secure and safe information 
+systems envin)nment, 
+
+c) Maintain die integrity of all security con- 
+trols, and 
+
+d) Develop and maintain an information 
+systems cv)mingency plan il>at provides lor 
+data redundancy, aitemalive pn)cessing 
+capability, timely rect)very and insurance 
+against loss ()f information rest)urces. 
+
+hucrnal Auditing : They are responsible ibr evaluat- 
+ing ctMitrols.or procedures and testing compliance 
+wiUi security pi)licies, standiads and procedures and 
+for reporting to management the adequacy of security 
+controls over inlbnnation resources. 
+
+iv) luifarcin:^ Mex lumistn for Adherins^ t<i Fidicy 
+
+I'or adhering to the defined policies stand;u'ds and 
+procedures which ;u^e derived ln)m policies must be 
+implemented. These stand:u"ds and procedures must 
+be enforced in a systematic way in die organisation. 
+l'\)r diis implementation plan has it) be drawn ciu-eful- 
+ly ct)n,sidering the prevailing practices and environ- 
+ment. Fonnal procedure for pennitting deviation 
+from tlie detined standards should also be worked i>ut. 
+The course of action in case of idenlified breach of 
+procedure should also be delined. Noncompliance or 
+violation of die defined policy and stand;u-d should 
+rcsuU in an action which should be signiltcanv ent)ugh 
+to .serve as a deterrent. They may include, but not 
+limited to suspension termination, other di.sciplimu-y 
+action or civil and/or criminal prosecution. 
+
+v) Measures for user Awareness 
+
+To ensure duit users are avv;u'e t)f .security Uireatsto 
+protection of inibmuuion assets and iue equipped Ui 
+support die policy and pn)cedures laid out in die 
+organisation in diis regiud, user tnust be trained and 
+awiu-e of. Users should be given adequate education 
+and technical training iii dns regard, lb minimize the 
+diunage from .security incidents, malfunctions as well 
+as to monitor and learn troni such incidents, incidents 
+affecting security must be reported Uirough th^ 
+correct channei as quickly as possible. 
+
+
+
+IS 14356 : 1996 
+
+5,3.2 Access Control Measures 
+
+Access control measures tire the most elteciive ways 
+of ensuring integrity and confidentiality ol an inlbr- 
+mation source. As more and more inlbrmation iire 
+networked, access control at the computer level, 
+network level, application level, user level and ibr 
+outside users »u*e discussed. 
+
+i) Computer access control 
+
+To prevent unauthorised ct)mputer access, access U) 
+computer facility should be controlled. Access to 
+computer facilities needs to be restricted to auiJior- 
+ised users. Computer facilities which serve multiple 
+user should be capable of: 
+
+a) Identifying iuid verifying die identity of 
+each authorised user, 
+
+b) Providing a password management system 
+which ensures quality passwords, and 
+
+c) Restriction of connection times to provide 
+additional security for high risk application. 
+
+ii) Network Access Control 
+
+To protect information available on the network, 
+connections to networked services should be ct)nta)l- 
+• led-. These controls should ensure that connected 
+users or computer services do not compromi.se the 
+security of any otlier network services. Controls 
+should include: 
+
+a) Appropriate interfaces between networked 
+services, 
+
+b) Appropriate audienlication mechanisms for 
+remote users and equipment, and 
+
+c) Control of user access to information 
+services. 
+
+Networks may require to be divided into sepiu-atc 
+domiiins to facilitate better conuol and be protected 
+by a defined security perimeter (sometimes referred 
+to as a fire wall) or a network gateway. Access 
+between domains can Uius be controlled by security 
+gateway inct)rporating appropriate routine and con- 
+nection capability controls. The criteria for segrega- 
+tion of networks into domains should be based oii 
+organisation's access control policy and require- 
+ments. 
+
+iii). Application Access Control 
+
+To prevent uiuiutliorised access to infonnation held in 
+computer systems. Access to application systems and 
+data may require to be controlled through logical 
+access ccmtrols. Logical access ti) computer sofiwiu-e 
+and data should be restricted to authorised users. 
+
+
+
+Appliauion systems should : 
+
+a) Contn>l user access to data and application 
+system functions, in accordance with a 
+defined business access control policy, 
+
+b) Provide protection from unauthorised 
+access forany utility soflwiu-eUiat is capable 
+of overriding system orapplication controls, 
+and 
+
+c) Not compr(miisc the security of other 
+systems with which infonnation resources 
+are shiu-ed. 
+
+vSensili ve systems might require dedicated or isolated 
+computing environment. For this: 
+
+a) I'he sensitivity of an application systems 
+should be explicitly identified and docu- 
+mented by the application owner, and 
+
+b) When a sensitive application is to run in a 
+shred enviromnent, the application systems 
+with which it will sluire resources should be 
+identified and agreed wiU) owner of tlie 
+sensitive application. 
+
+iv) User Access Coniri>l 
+
+To prevent unauthori.scd computer access, access tt) 
+computer^ervices in data should he controlled on the 
+basis of requirenienls. 'Hiere^should be formal proce- 
+dures to control allocations of access rights to infor- 
+matit)n resources. The procedures should cover all 
+stages in the life cycle of u.ser access from the initial 
+registration of new users to the formal de-registration 
+of u.sers who no longer require access to informatit>n 
+resources. Special attention should be given, where 
+appropriate, to the need to control Uie allocation of 
+privileged access rights which allow users to override 
+.system contA)ls. In lliis connection, die allocation of 
+user pa.ssword slunild be securely controlled and 
+access rights should be reviewed at reguhu- intervals. 
+
+v) Third Fttrty Access Control 
+
+The access to Uie information by diird piuty users may 
+present a security risk. Where there is a genuine need 
+for such an access, a ri.sk analysis should be ciuried 
+out to determine the implementation of control 
+requirements. The control should be defined in a 
+contract and agreVd upon wiUi the third party. 
+
+5.3,3 InWA^rity and Confidentiality Protectittn 
+Measures 
+
+Some additional measures required for ensuring 
+integrity and confidentiality lae di.scussed below 
+which can form p;u-t of the stand;u*ds and procedures. 
+
+
+
+IS 14356 : 1996 
+
+
+
+i) Software and Hardware Configuration Control 
+
+Managers who are responsible for application sys- 
+tems iire also responsible for the security of die 
+project or support environment. They should ensure 
+tliat all proposed changes lae fonnjilly reviewed and 
+they do not compromise tlie security of eitlier tlie 
+system or operating environment. It should also be 
+ensured that support proguuns iire given access only 
+to those piuts of tlie system diat iu-e necessiu*y for Uieir 
+work. In addition to ensure correct version of appli- 
+cation and system prognuns, aconfigumtion manager 
+should be identified. 
+
+Similarly, tlie hardware should also be under strict 
+configuration control. These changes must go Uirough 
+tiie foniial procedure for apppjval. 
+
+ii) Protection during Exchange of Information 
+
+This is to prevent loss, modification or misuse of data 
+during exchanges of clata and software between 
+organisations. Exchanges of data and software be- 
+tween organisations should be carried out based on 
+fonnal agreement. Procedures and stimdards to pro- 
+tect media in transit should be established. Consid- 
+eration should be given to the security implications 
+associated widi various forms of information ex- 
+changes like electronic mail, file transfers, etc, and 
+tl\e recjuirements for security controls. Cleiir policies 
+are retjuired to control tlie security risks associated 
+witli electronic otfice systems prevalent these days, 
+
+iii) Network Control 
+
+To ensure the protection of infomiation in networks, 
+die security of computer networks should be imple- 
+mented. Network managers should ensure uiat ap- 
+propriate controls are established for security of data 
+in networks and the protection of connected services 
+from unauthorised access. 
+
+iv) Application Security 
+
+To prevent loss, modification or misuse of user data 
+in application systems, die design and operation 
+should confomi to security requirements needed to 
+protect infomiation resources. These should include 
+input data validation to ensure diat it is correct and 
+appropriate, periodic review of contents of key fields 
+or data files to confinn dieir integrity, internal proc- 
+essing validation to detect processing error or any 
+deliberate act for highly sensitive datii, message 
+authentication for application involving the 
+transmission of sensitive data. In addition which are 
+desirable to be exercised to minimise the risk of 
+corruption of applicadon systems may include 
+
+
+
+updating of operational progrmn dirough nominated 
+persons alone, holding oriiy executable code on die 
+operational system and not the source code, maintain- 
+ing audit log of all updates to operational progrmu, 
+and retaining previous versions of softwiu'e for 
+contingencies. 
+
+v) Encipherment of Information 
+
+For highly security .sensitive infonnation, added pro- 
+tecdon in addition to access control can be provided 
+by mapping techniques that render the information to 
+be protected reladvely inaccessible to all but those 
+who possess some critical information alx)ut die 
+mappiui^. They are achieved dirough enciphennent 
+of informadon. This is based on eidier symmetric or 
+asymmetric encipherment. In symmetric s;une key is 
+used for encipher and decipher wliereas in asymmet- 
+ric case, public key is used to encipher but 
+corresponding private key is used to decipher them. 
+
+5,3,4 Measures for Availahility of Information 
+Resources 
+
+i) Protection from Malicious Software 
+
+7'o saieguard the integrity t)f softwiu-e and data, 
+precauuons iue required to prevent the introducdon 
+of malicious software. Computer softwiu-e is vulner- 
+able ti> unaudu>rised modificauon. Some of the 
+techniques used for diis purpose include computer 
+viruses, network worms, Trojan horses and logic 
+bombs. In particular, precaution should be taken to 
+detect and prevent computer viruses on personal 
+computers. 
+
+ii) Protection during Media Handling 
+
+To prevent d;unage to infonnation assets and hiter- 
+ruption to business acdvities, computer media should 
+be controlled and physically protected. There should 
+be v/ell laid out procedures especially for manage- 
+ment of removable computer media, and for handling 
+sensitive data. In additit)n, system documentation 
+which may contain description of applicadon proc- 
+esses, procedures, data structures, and audiorisation 
+process, should be protected from unaudiorised 
+access. 
+
+iii) Computer Equipment Security 
+
+Equipment's and telecommunication cabling which 
+iu*e used for inlbnnadon processing should be placed 
+in such a way that it is tree from risks of damage, 
+interference and unauthorised access. Ciae should 
+also be laketi sucii dial it is protected from power 
+failures and other electrical anomalies. 
+
+
+
+IS 14356 : 1996 
+
+iv) Physical Security 
+
+Care should be taken to see tluit unnecessary access 
+to tlie equipment needing security should be mini- 
+mised to facilitate its physical protection. Special 
+care should be taken to see diat it is well protected 
+from fire, dust, water, smoke, heat, vibration etc, as 
+well as interference. 
+
+v) House Keeping in terms of Back up and 
+Maintenance 
+
+To maintain die integrity and availability of infonna- 
+tion resources, housekeeping measures are required. 
+Routine procedures should be established for takhig 
+back up copies of data, logging events and faults and 
+when appropriate, monitoring xhc equipment envi- 
+ronment. 
+
+5.4 Stage IV : Planning for the Management of 
+Information Protection 
+
+For planning of protection of an infonnation resourc- 
+es, a comprehensive risk analysis is carried out. Any 
+risk can be defined as a resultant value derived from 
+mapping of perceived iind known Uireats against 
+perceived and known vulnerability of die infonnation 
+system. Towards carrying out U^e risk analysis, it is 
+necessary to take into account die value of the infor- 
+mation in tenns of its integrity, mission support and 
+continuity. For diis it is important diat diree types of 
+information assets namely value of die actual infor- 
+mation, value of die hardwiire and softwtire compo- 
+nents and value of die services to be provided *u-e 
+known. These diree types of infonnation assets 
+should be evaluated and assessed based on diree 
+criteria of confidentiality, integrity and availability. 
+
+To assess die value of die confidentiality of an 
+specific infonnation asset, it is estimated to tind what 
+an organisation will pay direcUy or indirectly for 
+infonnation or legal damage die organisation may 
+experience if infomiadon found its way into wrong 
+hands. Since integrity refers to those services 
+required to ensure diat infonnation is accurate, 
+complete and audientic \yhen it is processed and 
+stored. Thus die value of ititegrity refers to diose costs 
+which an organisation will pay directly or indirectly 
+due to loss of any of die above said attribute. Avail- 
+ability can be valued by assessing die impact of 
+having a service, infonnation source or a data file 
+ceasing to exist. This can be seen eidier due to total 
+loss or a temponu-y loss over a period of time. 
+
+Having assessed die value, identification of possible 
+direats are carried out to assess die risk due to each 
+possible direat knowing its possibility of occunence. 
+
+
+
+The economic assessment is used to examine the 
+potenUal loss expectancy, given various direat execu- 
+tion scenario. Since it is not possible to have a risk 
+free environment risks have to be managed. Based on 
+the potential impact and probability of a risk, a 
+prioritisation should be ciuried out to detennine 
+which direats to be controlled and managed. Risks 
+are managed by developing and implementing 
+countenneasure applications against each identified 
+risk. These countenneasures iu*e designed to support 
+infonnation security objectives in three different 
+capacities, which include: 
+
+i) f^revention mechanism 
+
+ii) Detection mechanism 
+
+iii) Conection mechanism 
+
+After planning for the countenneasures, die residuid 
+ri.sksiire analysed to find out wheUier diey iu-e at the 
+acceptable level. 
+
+Having identified all die planned countennea.sures. 
+iurdier planning is ciuried out to ensure diat for each 
+of die countenneasure required, resources iu-e made 
+available in tenn of manpower, money, equipment 
+and required inlVasuucture, 
+
+Implementation isciuried out according to the e;irlier 
+defined plan. However, diere is a need for constant 
+monitoring and control of all die activities identified 
+in die plan. This is helpful to make required changes 
+in the plan and to ensure a successful information 
+protection prognunnie. 
+
+5.5 Stage V: Ongoing Information Protection 
+Programme and its Maintenance 
+
+There is a need to monitor and assess effectiveness of 
+the existing infonnation protection prognunnie via 
+internal or extenial audit procedures to see its effec- 
+tiveness. The enforcing mechanism for die standiu-ds 
+and procedures .should also be well w()rked out. 
+Reguliu* update of infonnation resource .security 
+pnignimnie is required because of the rapidly chang- 
+ing data processing and infonnation .security environ- 
+ments. The mechanisms of getting die feedback imd 
+update process of die standiyds manual should be 
+cleiuly defined. There should be a well identified 
+.source in the organisation who can be contacted in 
+case of any chu-ilication on die policy or implemen- 
+tation issues. Usually he is die chief of infonnation 
+system. 
+
+An eftective information protection requires a high 
+level of liwiu*ene.ss of all involved. For diis self- 
+as.sessment helps to a hu-ge extent. For self-assess- 
+ment to achieve a higher degree of managers aware- 
+
+
+
+IS 14356 : 1996 
+
+ness, it is recoainiended tiiat all managers periodi- protectii)apr()grtLiiune,ans\yering them will increase 
+
+CtXlly complete a short self-assessment objectiveques- information protection awiireness because mimagers 
+
+tionnaire to ojvswer questions about the information will have to answer objectively. As exposures a-re 
+
+protection witliin tiieir iu-ea of control Apim from identified, actions required to address vulnerability 
+
+assessment of the effectiveness of tlie information can be documented and committed for correction. 
+
+
+
+(Continued from second cover) 
+
+a) By understanding tlie semantic of data itself (from Uie value of tlie data), 
+
+b) By using assiKiated attributes of the data to pennit inferring (Ibr eximiple size, dytiiunic 
+variation like date of last update, etc), and 
+
+c) By considering context of tlie data Uiat is otlier data objects tliat are associated witii it (from 
+knowing where the data exist). 
+
+Availability of information is aimed at protection from tiie following: 
+
+i) Physical destruction of equipment or network segment, 
+ii) Inoperability of equipment or network due to equipment miilfunction, strftwiure fiiiiure, or 
+
+sabotage, and 
+iii) I>egradati(m of performance from system saturation, link or bit error rate. 
+
+The information protection system should comprehensively ensure tlie security against ail tlie above 
+possibilities. After introducing to tlie issues involved, tins document is aimed at providing a guideline to 
+implement a comprehensive infonnation protection system spread out in different stages to facilitate its 
+implementation. It also provides for tlie flexibility for implementation needed for different organisations 
+depending on their size, working methods and existing environment. To tluit extent tiie guideline has been 
+deliberately kept generic in nature. 
+
+
+

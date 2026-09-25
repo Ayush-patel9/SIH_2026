@@ -1,0 +1,81 @@
+{
+  "is_number": "IS IS_10311",
+  "standard_id": "IS IS_10311",
+  "title": "Indian Standard Specification / Test Method (IS IS_10311)",
+  "ia_identifier": "IS_10311",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies requirements relating to the elements of design of low lift and high lift powered platform trucks and their acceptance criteria.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10371",
+      "standard_id": "IS 10371",
+      "title": "Indian Standard Specification / Test Method (IS 10371)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 83",
+      "standard_id": "IS 83",
+      "title": "Indian Standard Specification / Test Method (IS 83)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9701",
+      "standard_id": "IS 9701:2019",
+      "title": "Powered Industrial Trucks and Tractors — Brake Performance and Component Strength ( Second Revision )",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7553",
+      "standard_id": "IS 7553:2003",
+      "title": "Control Symbols for Powered Industrial Trucks",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5154",
+      "standard_id": "IS 5154:1980",
+      "title": "Lead-acid traction batteries",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10311"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 11383
+}

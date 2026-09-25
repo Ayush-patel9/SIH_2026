@@ -1,0 +1,468 @@
+{
+  "is_number": "IS IS_2171",
+  "standard_id": "IS IS_2171",
+  "title": "Indian Standard Specification / Test Method (IS IS_2171)",
+  "ia_identifier": "IS_2171",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "Amendment to IS IS_2171 (Indian Standard Specification / Test Method (IS IS_2171)): AMENDMENT NO. 1 APRIL 2001 TO PORTABLE FIRE EXTINGUISHERS, DRY POWDER (CARTRIDGE TYPE) — SPECIFICATION ( Fourth Revision ) (Second cover page, Foreword) — Insert the following before last para: 'A scheme for labelling environment friendly products known as ECO Mark has been introduced at the instance of the Ministry of Environment and Forests (MEF), Government of India. The ECO Mark would be administered by the 1986 as per the Resolution No. 71 dated 21 February 1991 and No. 425 dated 28 October 1992 published in the Gazette of the Government of India. For a product to be eligible for marking ",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 318",
+      "standard_id": "IS 318:1981",
+      "title": "Leaded Tin Bronze Ingots and Castings",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6912",
+      "standard_id": "IS 6912:2005",
+      "title": "Copper and copper alloy forging stock and forgings",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1239",
+      "standard_id": "IS 1239",
+      "title": "Indian Standard Specification / Test Method (IS 1239)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6529",
+      "standard_id": "IS 6529:1996",
+      "title": "Stainless steel blooms, billets and slabs for forging",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1804",
+      "standard_id": "IS 1804:2004",
+      "title": "Steel Wire Ropes - Fibre Main Cores",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 291",
+      "standard_id": "IS 291:1989",
+      "title": "Machining Purposes",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 319",
+      "standard_id": "IS 319:2007",
+      "title": "Free Cutting Brass Bars, Rods and Section",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6528",
+      "standard_id": "IS 6528:1995",
+      "title": "Stainless steel wire",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 513",
+      "standard_id": "IS 513:2008",
+      "title": "Cold reduced low carbon steel sheets and strips",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7328",
+      "standard_id": "IS 7328:2020",
+      "title": "Specification for Polyethylene Material for Moulding and Extrusion ( Third Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Polyethylene (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 4308",
+      "standard_id": "IS 4308:2019",
+      "title": "Dry Chemical Powders for Fire Fighting — BC, ABC and D Types — Specification ( Third Revision )",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14609",
+      "standard_id": "IS 14609:1999",
+      "title": "Dry Chemical Powder for Fighting A,B,C, Class Fires -Specification",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2825",
+      "standard_id": "IS 2825:1969",
+      "title": "Code for unfired pressure vessels",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3074",
+      "standard_id": "IS 3074:2013",
+      "title": "Steel Tubes for Automotive Purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3601",
+      "standard_id": "IS 3601:2006",
+      "title": "B): Steel Tubes for Mechanical and General Engineering Purposes (Bi-lingual)",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14933",
+      "standard_id": "IS 14933:2001",
+      "title": "High Pressure Fire Fighting Hose -Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2643",
+      "standard_id": "IS 2643:2005",
+      "title": "Pipe Threads Where Pressure-Tight Joints are not Made on the Threads - Dimensions, Tolerances and Designation",
+      "division_code": "CED",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1323",
+      "standard_id": "IS 1323:1982",
+      "title": "Code of practice for oxy-acetylene welding for structural work in mild steels",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 819",
+      "standard_id": "IS 819:1957",
+      "title": "Code of Practice for Resistance Spot Welding for Light Assemblies in Mild Steel",
+      "division_code": "MED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1261",
+      "standard_id": "IS 1261:1959",
+      "title": "Code of practice for seam welding in mild steel",
+      "division_code": "MED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9595",
+      "standard_id": "IS 9595:1996",
+      "title": "Metal arc welding of carbon and carbon manganese steels - Recommendations",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6913",
+      "standard_id": "IS 6913:2023",
+      "title": "Stainless Steel Tubes For The Food, Beverage, Dairy And Pharmaceutical Industry - Specification",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 691",
+      "standard_id": "IS 691",
+      "title": "Indian Standard Specification / Test Method (IS 691)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3203",
+      "standard_id": "IS 3203:1982",
+      "title": "Methods of testing local thickness of electroplated coatings_",
+      "division_code": "TED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2062",
+      "standard_id": "IS 2062:2011",
+      "title": "Hot Rolled Medium and High Tensile Structural Steel",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Steel and Steel Products (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 6240",
+      "standard_id": "IS 6240:2008",
+      "title": "Hot Rolled Steel Plate (up to 6 mm) Sheet and Strip for the Manufacture of Low Pressure Liquefiable Gas Cylinders",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5382",
+      "standard_id": "IS 5382:1985",
+      "title": "Rubber Sealing Rings for Gas Mains, Water Mains and Sewers",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 391",
+      "standard_id": "IS 391:2020",
+      "title": "Method for determining resistance to penetration by water of fabrics by hydrostatic head test",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4454",
+      "standard_id": "IS 4454",
+      "title": "Indian Standard Specification / Test Method (IS 4454)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 407",
+      "standard_id": "IS 407:1981",
+      "title": "Brass Tubes for General Purposes",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 617",
+      "standard_id": "IS 617:1994",
+      "title": "Aluminium and aluminium alloy ingots and castings for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4947",
+      "standard_id": "IS 4947:2006",
+      "title": "Specification for Gas cartridges for use in fire extinguishers -",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2507",
+      "standard_id": "IS 2507:1975",
+      "title": "Cold-rolled steel strips for springs",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2643 (PART 1)",
+      "standard_id": "IS 2643 (PART 1)",
+      "title": "Pipe Threads Where Pressure-Tight Joints are not Made on the Threads - Dimensions, Tolerances and Designation (IS 2643 (PART 1))",
+      "division_code": "CED",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3618",
+      "standard_id": "IS 3618:1966",
+      "title": "Phosphate Treatment of Iron and Steel for Protection Against Corrosion",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2190",
+      "standard_id": "IS 2190:2010",
+      "title": "SELECTION, INSTALLATION AND MAINTENANCE OF FIRST-AID FIRE EXTINGUISHERS — CODE OF PRACTICE",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2932",
+      "standard_id": "IS 2932:2003",
+      "title": "Enamel, Synthetic, Exterior : (a) Undercoating (b) Finishing",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8543",
+      "standard_id": "IS 8543",
+      "title": "Indian Standard Specification / Test Method (IS 8543)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5762",
+      "standard_id": "IS 5762:1970",
+      "title": "Methods for Determination of Melting Point and Melting Range",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7188",
+      "standard_id": "IS 7188:1974",
+      "title": "Methods of test for cellulose acetate flakes",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 265",
+      "standard_id": "IS 265:2021",
+      "title": "HYDROCHLORIC ACID SPECIFICATION Fifth Revision",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2124",
+      "standard_id": "IS 2124:2023",
+      "title": "Sodium Bicarbonate Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade 2of",
+    "Grade 4450",
+    "Grade FLB",
+    "Grade bruary",
+    "Grade shall",
+    "Grade 2ofIS291",
+    "Grade LTB",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_2171"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "bursting pressure of not less than 50 kgf"
+    ],
+    "chemical_properties": [
+      "phosphorus and sulphur 0.05 percent",
+      "sulphuric acid / 5 percent",
+      "lead-tin alloy (tin not less than 10 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "12.1 Each extinguisher shall be clearly and",
+      "permanently marked with the following information:",
+      "a) Name of the manufacturer or trade-mark,if",
+      "12.2 BIS Certification Marking",
+      "The produet may also be marked with BIS Standard"
+    ]
+  },
+  "total_chars_parsed": 44264
+}

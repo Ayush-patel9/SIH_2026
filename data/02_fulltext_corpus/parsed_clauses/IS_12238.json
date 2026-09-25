@@ -1,0 +1,83 @@
+{
+  "is_number": "IS IS_12238",
+  "standard_id": "IS IS_12238",
+  "title": "Indian Standard Specification / Test Method (IS IS_12238)",
+  "ia_identifier": "IS_12238",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes the requirements and methods of sampling and test for colour and star matches in boxes.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 2653",
+      "standard_id": "IS 2653:2004",
+      "title": "Safety Matches in Boxes",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10374",
+      "standard_id": "IS 10374",
+      "title": "Indian Standard Specification / Test Method (IS 10374)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1398",
+      "standard_id": "IS 1398:1982",
+      "title": "Packing paper, water-proof, bitumen laminated",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 715",
+      "standard_id": "IS 715:2002",
+      "title": "Coated Abrasives",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 196",
+      "standard_id": "IS 196:1966",
+      "title": "B): Atmospheric Conditions for Testing (Revised)(BI-LINGUAL)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12238"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "boxes shall be wrapped in a suitable paper which",
+      "shall be securely pasted or glued to make a tight",
+      "which shall be securely pasted or glued to make",
+      "number of intermediate gross packets containing"
+    ]
+  },
+  "total_chars_parsed": 26013
+}

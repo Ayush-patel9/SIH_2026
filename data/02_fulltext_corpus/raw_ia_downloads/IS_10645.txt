@@ -1,0 +1,3533 @@
+**************** 
+
+
+
+-k is^ 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+"^^ ^ ^ ^ % ?R^" 
+
+Jawaharlal Nehru 
+
+Step Out From the Old to the New 
+
+
+
+^^iiT'jsiS'SfS^^^^*?*:: 
+
+
+
+
+•^■•■^^^■r 
+
+
+
+
+li^ i/ir w w w w w WW ^ ^ ^ tIt w w w 
+
+
+
+BLANK PAGE 
+
+
+
+^<ii^ 
+
+
+
+
+
+UI> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+1810645:2004 
+
+Indian Standard 
+
+METHODS FOR ESTIMATION OF 
+PROCESS CAPABILITY AND PROCESS PERFORMANCE 
+
+( Second Revision ) 
+
+ICS 03.120.30 
+
+
+
+© BIS 2004 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+
+
+August 2004 Price Group 6 
+
+
+
+Statistical Methods for Quality and Reliability Sectional Committee, MSD 3 
+
+
+
+FOREWORD 
+
+This Indian Standard (Second Revision) was adopted by the Bureau of Indian Standards, after the draft finalized by 
+the Statistical Methods for Quality and Reliability Sectional Committee, had been approved by the Management and 
+Systems Division Council. 
+
+Even when all the assignable causes of variation are removed from a process and it operates only under the chance 
+causes, certain amount of variation is inevitable. This inherent variability of the process is generally referred to as 
+process capability. Process capability is a statistical measure of inherent process variability and is defined as the 
+length of natural process interval. It represents the variation that is obtained when the process operates under chance 
+causes only. For example, on the processed parts, the process capability is the dimensional variation due to chance 
+causes operating on a process or by known causes which cannot be eliminated or which are too uneconomical to 
+eliminate. 
+
+Process capability studies are useful for : 
+
+a) Purchasing agent who has a means of comparing the actual performance of equipment with manufacturers' 
+claims, 
+
+b) Design engineer who has a more rational basis for the specification of tolerances when he is acquainted with 
+the capability of the available equipment, 
+
+c) Planning engineer in assigning the jobs to the various mKhines/processes after due consideration to the 
+tolerances and capabilities, 
+
+d) Production and ins^tion personnel in employing this as a basis for i^ocess control, and 
+
+e) Organizations implementing IS/ISO 9000 standaitls on quality management systems. For assessing the capa- 
+bility of its processes, the methods described in this standard are intended to assist management of such 
+organizations in this task. These indices need to be constantly reviewed by the management for keeping them 
+at desired level and continuously improving them. 
+
+Tool wear and other influences on a process such as temperature, pressure may cause a trend. For finding the trend and 
+its effect on process capability, reference may be made to IS 397 (Part 3) : 2003 'Method for statistical quality control 
+during production : Part 3 Special control charts by variables'. 
+
+The process capability includes/reflects the effects of factors contributing to the variability. The studies to optimize 
+the levels of the factors and reduce the variability without adversely affecting the economy of production can be 
+undertaken to improve process capability. Such studies do not form a part of this standard. 
+
+It may be noted that wherever the capability indices in this standard are computed, they only form point estimates of 
+their true values. It is, therefore, recommended that wherever possible, confideince intervals for the indices are 
+computed and reported. 
+
+This standard was originally published in 1983 and revised in 1998. This revision has been undertaken to : 
+
+a) Include the following: 
+
+1) factors influencing process variation, 
+
+2) planning the process capability study, and 
+
+3) action for process control on the basis of process capability and specification, 
+
+b) Modify example for calculation of process capability using frequency method, 
+
+c) Introduce the concept of process performance, and 
+
+d) Incorporate many editorial corrections. 
+
+The composition of the Committee responsible for the formulation of this standard is given in Annex B. 
+
+
+
+IS 10645 : 2004 
+
+Indian Standard 
+
+METHODS FOR ESTIMATION OF 
+PROCESS CAPABILITY AND PROCESS PERFORMANCE 
+
+( Second Revision ) 
+
+
+
+1 SCOPE 
+
+This standard defines process capability and covers the 
+planning process capability study and its calculation for 
+both variable (normal and non-normal distribution) and 
+attributes type of data. This standard also describes the 
+actions required to be taken when comparing process 
+capability with specification limits. 
+
+2 REFERENCES 
+
+The following standards contain provisions, which 
+through reference in this text constitute provisions of 
+this standard. At the time of publication, the editions 
+indicated were valid. All standards are subject to revision 
+and parties to agreements based on this standard are 
+encouraged to investigate the possibility of applying the 
+most recent editions of the standards indicated below: 
+
+
+
+fSNo. 
+
+
+
+397 
+
+
+
+(Parti): 2003 
+
+(Part 2) : 2003 
+
+(Part 3) : 2003 
+6200 (Part 3) : 2003 
+
+7200 (Part 1): 1989 
+
+7920 
+
+(Part 1) : 1994 
+
+(Part 2): 1994 
+9300 (Part 2): 1989 
+
+12348 : 1988 
+
+
+
+Title 
+
+Method for statistical quality 
+control during production: 
+
+Control charts for variables (second 
+
+revision) 
+
+Control charts for attributes and 
+
+count of defects (third revision) 
+
+Special control charts by variables 
+
+Statistical tests of significance: 
+Part 3 Tests for normality 
+
+Presentation of statistical 
+data: Part 1 Tabulation and 
+summarization (second revision) 
+
+Statistical vocabulary and symbols: 
+Probability and general statistical 
+terms (second revision) 
+Statistical quality control (second 
+revision) 
+
+Statistical models for industrial 
+applications: Part 2 Continuous 
+models (first revision) 
+
+Use of probability papers 
+
+
+
+3 TERMINOLOGY 
+
+For the purpose of this standard, the defmitions given in 
+IS 7920 (Part 1) and IS 7920 (Part 2) shall apply. 
+
+4 FACTORS INFLUENCING PROCESS VARIATION 
+
+Following are the major factors that influence the process 
+variation: 
+
+a) Condition of the machine or equipment, 
+
+b) Skill of the operator, 
+
+c) Type of operation and operational conditions, 
+
+d) Raw materials used, 
+
+e) Environment, and 
+
+f) Measurement process. 
+
+5 PLANNING PROCESS CAPABILITY STUDY 
+
+5.1 The following points should be taken care of before 
+taking up the process capability study : 
+
+a) Study should be conducted by well trained and 
+experienced personnel, 
+
+b) Order of production should be preserved, 
+
+c) Details of input materials, operational conditions, 
+process lines and other facilities should be 
+recorded, and 
+
+d) The applicable specification limits, which may be 
+either one-sided (lower or upper) or two-sided 
+should be recorded. 
+
+5.2 A record of various stages of production should be 
+kept during the study. The samples drawn for measurement 
+should be identified as to stream, order of production, 
+etc. The process should be operating under its normal 
+operating conditions unless the study is investigating 
+specific abnormalities. 
+
+6 PROCESS CAPABILITY 
+
+6.1 General 
+
+6.1.1 It is a statistical measure of inherent process 
+variability and is defined as the length of natural process 
+interval. It represents the variation that is obtained when 
+the process operates under chance causes only. If the 
+process was monitored using a control chart, it would be 
+possible to detect the presence of any assignable cause(s) 
+and eliminate them to ensure that the process operates 
+
+
+
+IS 10645 : 2004 
+
+
+
+under chance causes only. Any further reduction in the 
+variability may need modification in the process or a 
+technological upgradation in the process. 
+
+6.1.2 A process, which operates under chance causes only, 
+that is in statistical control, can be described in terms of 
+a probability distribution. The proportion of non- 
+conforming items can be determined on the basis of this 
+distribution. 
+
+6.1.3 The lower and upper natural process limits are 
+obtained as a and ( 100 - a ) percentiles of the distribution 
+and these include (100 - 2a) percent of the items when 
+the process is in a state of statistical control. They are 
+written as P^ and P^^^^^^^ [where 100 P (X<PJ = a]. The 
+value of a can generally be chosen on considerations of 
+coverage and length of the interval. For a normally 
+distributed process, the natural process limits are taken 
+as (i ± 3cf and they correspond to a = 0. 1 35. Even for non- 
+normal distributions, the percentile values may be taken 
+corresponding to a = 0.1 35 therefore P^ = P^ ,,^. In such a 
+case, the natural process limits will not necessarily be 
+symmetrical around the process mean. The natural process 
+interval (also called the process spread), namely, the 
+interval between the upper and the lower natural process 
+limits, covers 99.73 percent of items produced {see Fig. 1 
+and Fig. 2). 
+
+
+
+L5L jj-3cf 
+
+
+
+y^'i<f 'J'il- 
+
+
+
+
+FiG. 1 Natural Process Interval — Normal Distribution 
+
+
+
+P u.isa 
+
+
+
+» W.Wif 
+
+
+
+0,135X 
+
+
+
+
+9973% 
+
+
+
+0135?; 
+
+
+
+Fig. 2 Natural Process Ikferval — Non-normal Distribution 
+
+
+
+6.1.4 In short, it will be necessary to: 
+
+a) Define the process and its operating conditions. 
+If there is a change in those conditions it will 
+necessitate a fresh process study, 
+
+b) Make the process stable and bring it into statisti- 
+cal control, 
+
+c) Estimate the inherent process variability, and 
+
+d) Select an appropriate measure of process 
+capability. 
+
+6.1.5 It is necessary to check from the control chart if 
+the process is in statistical control [see IS 397 (Part 1) or 
+IS 397 (Part 2)] and/or from a histogram of the data [see 
+IS 72(X) (Part I)]. An appropriate test for normality [see 
+IS 6200 (Part 3)] or normal probability paper (see 
+IS 12348) may also be used to look for the following: 
+
+a) Departure from normality, 
+
+b) Outliers, 
+
+c) Data beyond specification limit, 
+
+d) Location of the specification limits in relation to 
+the distribution, 
+
+e) Asymmetry (that is skewness), 
+
+f) 'Long tails' in the data (that is kurtosis), and 
+
+g) Any other unusual features. 
+
+6.1.6 It would be inappropriate to just discard data that 
+do not appear to fit any pre-conceived pattern. Such 
+departures might be very revealing about the behaviour 
+of the process and should be thoroughly investigated. 
+
+6.1.7 In case of multi-output processes (such as multi- 
+spindle machines, multi-nozzle filling machines), process 
+capability has to account for extra sources of variation 
+that may be present from one output point to the other. 
+The distribution of observed values on items coming from 
+different output points may still be normal but with larger 
+variability. It is important to state how the standard 
+deviation has been calculated as well as the sampling 
+strategy used, sample size and the quantity produced for 
+each output point (see 7.1). 
+
+6.2 Data are usually tatcen from a control chart. If the 
+control chart has relaxed or modified control limits, the 
+standard deviation will be larger than that estimated from 
+data taken from a control chart with standard control 
+limits. Issues such as these and those given earlier will 
+influence the determination of natural process interval 
+and it is important that they are stated in any capabiliiy 
+assessment. 
+
+6.3 Variable Data 
+
+6.3.1 Normal Distribution 
+
+When the quality characteristic follows a normal 
+distribution, process capability is defined as 6ct where a 
+
+
+
+IS 10645 : 2004 
+
+
+
+is the standard deviation of test results from the process 
+under statistical control. This is equal to the length of the 
+natural process interval as shown in Fig. 1. 
+
+NOTE — The process mean \i and the process standard 
+deviation a can be estimated in terms of sample mean x <>nd 
+sample standard deviation s. Process Capability may be 
+estimated by 6 s. 
+
+6.3.2 Other Distributions 
+
+6.3.2.1 When the quality characteristic does not follow a 
+normal distribution, the natural process limits P^^^^and 
+P^^^are determined either by use of tables giving the 
+area under the probability distribution curves 
+[see IS 9300 (Part 2)] or using the probability papers 
+[see IS 12348] or by integration or by use of numerical 
+methods for evaluation of integrals. The length of the 
+natural process interval P^ ^^ ~ ^o 135 (when the process is 
+in the state of statistical control) is defined as process 
+capability [see Fig. 2]. 
+
+6.3.2.2 For the non-normal distribution, like exponential 
+or weibull or log-normal the percentiles P^, /*m)o.„, may 
+be expressed as functions of the population mean and 
+the population standard deviation. The mean and 
+standard deviation may be estimated by the sample 
+averages and sample standard deviation s. Hence, 
+estimates of these percentiles may be obtained in terms 
+of the sample mean and sample standard deviation. 
+
+
+
+<l(»-a) 
+
+
+
+- P^ is the process capability. 
+
+
+
+6.3.2.3 The mean and standard deviation and hence the 
+percentiles may also be estimated using control charts 
+and probability papers. 
+
+6.4 Attributes Data 
+
+It is often the case with attribute quality characteristics 
+that the objective is zero non-conformities or zero non- 
+conforming items. Consequently, process capability is 
+defined in terms of the process average of number of non- 
+conformities or proportion of non-conforming items, for 
+
+example, C or P , when the process is in the state of 
+statistical control. 
+
+6.4.1 Process Capability as Proportion of Non- 
+conforming Items 
+
+When a process is monitored using a P-chart [see 
+IS 397 (Part 2)], the process capability may be described 
+as the average proportion of non-conforming items, when 
+the process is in statistical control {see 11.3 ). 
+
+NOTE — The process capability is calculated by using the 
+estimate of average proportion of non-conforming items as 
+obtained from the data using control charts. It is first 
+ensured that the control chart shows that the process is in 
+statistical control [see IS 397 (Part 2)]. 
+
+
+
+6.4.2 Process Capability as Number of Non-conformities 
+per Item 
+
+When a process is monitored using a c-chart [see 
+IS 397 (Part 2)], the process capability may be described 
+
+as the average number of non-conformities, C , once the 
+process is in statistical control (see 11.4). 
+
+NOTE ~- The process capability is calculated by using the 
+estimate average of proportion of non-conformities as 
+obtained from the data using control charts. It is Tirst ensured 
+that the control chart shows that the process is in statistical 
+control [see IS 397 (Part 2)]. 
+
+7 PROCEDURES FOR ESTIMATING PROCESS 
+CAPABILITY FOR VARIABLE DATA 
+
+7.1 Using Range Method 
+
+7.1.1 For single output machine, 25 sub-groups of 3 to 5 
+continuous observations are recommended. 
+
+7.1.2 For multi-output machines (such as multiple spindle 
+machines or multiple filling heads) or transfer lines 
+wherein identical parts are processed either on many 
+outputs or on a chain of machines, samples shall be taken 
+output-wise or receiving station-wise. This is necessary 
+to identify the output or the station which turns out non- 
+conforming parts. In these cases, 5 samples of 3 to 5 
+observations each are taken from each output or line 
+subject to a minimum of 30 samples. 
+
+7.1.3 It is advisable to keep the samples taken in separate 
+trays according to the machine, time of taking sample, 
+output, etc. The evaluation of measurement values is done 
+by the range method. 
+
+7.1.4 Record the measured values in the prescribed form 
+in the order of manufacture. 
+
+7.1.5 Calculate the range for each sub-group, the 
+difference between the largest and smallest value. 
+
+7.1.6 The ranges are then homogenized as described 
+in 6.2.2.1 ofIS 397 (Parti). 
+
+7.1.7 The estimate of standard deviation (s) is given by 
+
+R Id^ where R is the average of the homogenized ranges 
+and rfj is a constant factor obtained from Annex A for a 
+given value of sample size («). 
+
+7.1.8 The value of 6Rld^ is calculated, which is the 
+process capability. 
+
+7.1.9 If the ranges are not homogenized, even after the 
+elimination of 25 percent of the sub-groups, the data is 
+discarded and fresh data is collected after removing the 
+assignable causes of variation and above procedure is 
+repeated. 
+
+
+
+IS 10645 : 2004 
+
+
+
+7.2 Using Frequency Distribution Method 
+
+7.2.1 For single output machine, as far as possible, a 
+sample of minimum 50 consecutive pieces is taken after 
+confirming that the process is in statistical control. 
+
+7.2.2 From the data, the frequency table is obtained 
+[5£e 5 ofIS 7200 (Parti)]. 
+
+7.2.3 The data is then tested for normality [see IS 6200 
+(Part 3)]. If the data follow normal distribution, calculate 
+standard deviation (s). 
+
+7.2.4 The value of process capability is then obtained as 
+six times the standard deviation that is 6 s. 
+
+NOTE — The sample sizes recommended are for engineering 
+industry and may vary with industry and situations, 
+
+8 PROCESS CAPABILITY AND SPECIFICATION 
+LIMITS 
+
+8.1 Capable processes are those whose natural process 
+intervals are less than the specified tolerance {see Fig. 1 
+and Fig. 2). In other words, the process capability, that is 
+6ct or P^ 865-^*0 135 '^ '^^^ ^^" ^^^ i^-L), where U and L 
+are the upper and the lower specification limits 
+respectively. Under these circumstances there is some 
+latitude for shift in process average. It is advisable not 
+to consume this latitude, particularly where these are likely 
+to affect subsequent assembly operations, if any. 
+
+8.2 Even if a process is deemed capable by the 
+above definition, if the process distribution has been 
+poorly centered relative to the specification limits, 
+out-of-specification items may be produced. For this reason, 
+it is necessary to assess the location in addition to the 
+length of natural process interval. This consideration 
+leads to defining process capability indices {see 9). 
+
+8.3 The information that is derived from process 
+capability can be effectively used in the process control. 
+The foremost of them is to compare process capability 
+with the tolerance. 
+
+8.4 Depending upon the relationship between the process 
+capability and the difference between the upper 
+specification limit (f/) and the lower specification limit 
+(L), Table 1 suggests probable actions to be taken. 
+
+8.5 In the case of one sided limit, that is, when either 
+upper specification limit (f/) or lower specification limit 
+(L) is given, the probable actions to be taken are suggested 
+in Table 2. 
+
+9 PROCESS CAPABILITY INDICES FOR VARIABLE 
+DATA 
+
+9.1 The process capability index is defined as the ratio 
+
+
+
+of the specified tolerance to the natural process interval when 
+the process is under statistical control and is defined as: 
+
+
+
+'■p-^ 
+
+
+
+U-L 
+
+
+
+_ p 
+
+tOO-a 'a 
+
+
+
+where U and L are the upper and lower specification 
+limits and 
+
+^100- o 1 '^a are percentiles of the distribution. 
+
+NOTES 
+
+1 Generally the value of a is taken as 0.135. 
+
+2 Process capability fraction — The inverse of the C index 
+(denoted by C^ ) is called process capability fraction'lt may 
+be expressed as percentage. 
+
+9.1.1 The upper process capability index (C ^J, in 
+relation to upper specification limit is defined as: 
+
+
+
+c^=(U-PJKP, 
+
+
+
+phi 
+
+
+
+99.IMSS 
+
+
+
+PJ 
+
+
+
+9.1.2 The lower process capability index (C ), in relation 
+to lower specification limit is defined as: 
+
+Cp«= (P™-L)/(P^-P„,3,) 
+
+9.1.3 The minimum process capability index (C ^), is 
+defined as: 
+
+C. = Minimum fC,, , C,.,} 
+
+pk ' pk»' pkl' 
+
+NOTE — C^= Cp (1- *) where A is a factor S I and for 
+P^= (U+L)/2, C^=C^- Bench mark of C^= 1.33 is often used 
+but C^=2 is needed to ensure that moderate changes in the 
+process do not result in parts beyond specification limits. 
+
+9.1.4 In case when only U is given, the value of C ^^ is to 
+be taken as C^^ and if only L is given, the value of C ^.^ is 
+to be taken as C ^. 
+
+9.1.5 These indices will provide information whether 
+a process is poorly located and whether it will produce 
+out-of-specification items. Even if the process capability 
+index (C^) is high, a low value of the performance index 
+(Cp^) will reveal a poorly located process producing out- 
+of-specification items. 
+
+9.2 For normal distribution, the natural process interval 
+is Pjoo_„ - P„= 6o, therefore the process capability index 
+is defined as: 
+
+Cp = (f/-L)/6o 
+
+9.3 A value of 1 .67 for C is highly desirable. Further, 
+for normaf distribution: 
+
+Cp.„ = (f/-M)/3cT 
+
+Cp„ = (M-L)/3a 
+
+C^ = Minimum {C,„,C„} 
+
+
+
+IS 10645 : 2004 
+
+
+
+Table 1 Process Capability and Specified Tolerance (Two-Sided Specification) 
+
+{Clause 8.4) 
+
+
+
+SI No. 
+
+(1) 
+
+
+
+Relationship 
+
+(2) 
+
+
+
+Probable Actions/Decisions 
+
+(3) 
+
+
+
+i) 
+
+
+
+Process capability < iU~L) 
+
+
+
+ii) 
+
+
+
+Process capability = (U-L) 
+
+
+
+iii) 
+
+
+
+Process capability > (U-L) 
+
+
+
+iv) 
+
+
+
+V) 
+
+
+
+Long-term solutions 
+
+
+
+Short-term/immediate solutions 
+
+
+
+1 ) Job can be changed to a less costly/precise machine. 
+
+2) Specified tolerance can be narrowed if it is economically worth- 
+while, 
+
+3) Inspection interval can be increased and 100 percent inspection if 
+employed can be dispensed with. The items can be accepted on 
+the basis of control chart as long as it shows that the process is in 
+control. 
+
+4) a) Process average can be set at an economical level closer to the 
+
+upper (U) OT lower (L) specification limit depending on the 
+situation. If it is advantageous to be nearer L, set at L + 3(T and 
+in the latter case set the process average at U - 3a. 
+
+b) If economical setting is immaterial, maintain x chart with 
+related modified control limits for optimal re-settings. 
+
+When a is known: 
+UCL= U-V,a 
+LCL = L+ V,<T 
+
+When a is not known: 
+UCL=U-V^J 
+
+where the values of V, and Vj may be obtained from Annex A. 
+
+5) Centering of process at (t/+Ly2 is essential for mating components 
+
+1 ) Greater attention to the centering of the process (maintaining the 
+process average at the specification mean) should be given. 
+
+2 ) Set the machine at the most economic level if it is advantageous to 
+change the process average at the risk of allowing some scrap or 
+rework. 
+
+3) Investigate the possibility of reducing process variability. 
+
+1 ) Scrap and rework are inevitable. 
+
+2) Resort to minimum machine adjustments. 
+
+3) Hundred percent inspection must be resorted to. 
+
+4) Examine the possibility of widening the specified tolerance to suit 
+the process capability. 
+
+1 ) Explore changes in the process reduce its variability. 
+
+2) Switch over to more precise/costly machines. 
+
+1) Maintain J( - R charts and set the machine at (t/+L)/2 (for 
+minimum total rejections) followed by 100 percent inspection. 
+
+2) Maintain ~x ~ ^ charts and set the machine at the most economic 
+level. Calculation of the most economic level is as follows : 
+
+Let 'A' be the loss, if j^' < L 
+
+'fi' be the profit, if L s "x <.V 
+
+'C be the loss, if 'x > U 
+The most economic level for machine setting is: 
+
+
+
+U ■¥ L 
+
+
+
+U-L 
+
+
+
+logio 
+
+
+
+I 
+
+
+
+(fl + C) " 0.4343 
+
+
+
+IS 10645 : 2004 
+
+
+
+Table 2 Process Capability and One-Sided Specification (Upper Limit) 
+
+(Clause 8.5) 
+
+
+
+SI No. 
+
+(1) 
+
+
+
+Relationship 
+
+(2) 
+
+
+
+Probable Acttons/Decisions 
+
+(3) 
+
+
+
+i) 
+
+
+
+ii) 
+
+
+
+iii) 
+
+
+
+Process capability < 
+2 (U - Process average) 
+
+
+
+Process capability = 
+2 (U - Process average) 
+
+
+
+Process capability > 
+2 ({/ - Process average) 
+
+
+
+a) There is adequate safety margin. Non-conforming items do not 
+occur 
+
+b) If production can be increased or it is otherwise advantageous, set 
+the machine at the level U - 3 a and maintain control chart for 
+both average and range 
+
+c) Explore possibility of gains through reduction in a and 
+corresponding appropriate raise in the average 
+
+Maintain control chart for both average and range to ensure 
+conformance 
+
+
+
+Investigate the possibility of reducing the machine setting and/or 
+machine variability compatible with the requirements. 
+
+When lower specification limit (L) is specified, (U - Process average) should be replaced by (Process average - L) and 
+
+
+
+NOTE 
+
+
+
+U-3a by L+3a in the table. 
+
+
+
+10 PROCESS PERFORMANCE INDICES FOR 
+VARIABLE DATA 
+
+10.1 Process performance, a statistical measure of the 
+outcome of a characteristic from a process which may not 
+have been demonstrated to be in a state of statistical 
+control, is effectively expressed by indices covering 
+situations where specification limit(s) are given. These 
+indices are based on both the location and the spread of 
+the distribution. 
+
+10.2 The process performance index is the ratio of the 
+difference between a specified tolerance limit and the 
+process location to the difference between the 
+corresponding natural process limit and the process 
+location. It is known as the P ^ index which is defined in 
+terms of upper process performance index and lower 
+process performance index as the lower of the two. Thus 
+
+
+
+pku 
+
+
+
+pk! 
+
+
+
+(U - P^)KP^M5-P5o> (also called upper 
+process performance index) 
+
+(/>,„ - L)f(P^^ - P^^^;) (also called lower 
+process performance index) and 
+
+mimmum[P^^^,P^J 
+
+
+
+where 
+
+
+
+U and L are the upper and lower specification 
+limits respectively, SLndP^^^, P^^ and P^ ^^ are 
+the percentile values of the distribution. 
+
+10.3 When the variable follows a normal distribution, 
+the median P^^ is equal to the mean (|j). Further, 
+
+(^w,865 - -^so) ^"'^ (''50 - ■^0,135) ^""^ ^^^^ ^1"^* '° 3 ^• 
+
+
+
+Therefore, the P ^indices can be expressed as: 
+
+P,^= (U-M)/3a 
+
+or 
+P, = (p-L)/3a 
+where 
+
+U and L are upper and lower specification limits 
+and 'c' the inherent process standard deviation. 
+
+^pk = Minimum {Pp,„,Pp„} 
+11 ILLUSTRATIVE EXAMPLES 
+
+11.1 Table 3 gives frequency and Table 4 gives the values 
+of diameter of 150 observations for breaking load (in kN) 
+of aluminium wires (size 300 mm) drawn according to 
+IS 398 ( Part 3) when the process is in statistical control. 
+
+The mean and standard deviation of the above data have 
+been calculated as ( A" ) L39 and (s) 0. 11 respectively. Using 
+X^ - test for testing goodness of fit [see IS 6200 (Part 3)] , it 
+has been found that the data follow normal distribution. 
+
+Hence, process capability = 6s = 6x0.11= 0.66 
+
+11.2 Estimation of Process Capability Using Range 
+Chart 
+
+
+
+Component 
+Characteristic 
+
+
+
+Specification 
+
+
+
+Bearing bush 
+
+Internal diameter in mm, of 
+
+bearing bush 
+
+28.020^-°^' mm 
+
+
+
+Table 5 gives recorded observation: Deviates from 
+28 mm in units of thousands. 
+
+
+
+IS 10645 : 2004 
+
+
+
+11.2.1 Computations 
+
+/i-Chart 
+
+J =145/25 = 5.8 
+
+UCL =D^R= 2.282 x 5.8 = 1 3.24 
+
+Since the range for sub-group number 21 is more than 
+UCL, this sub-group is eliminated for the purpose of 
+homogenization. For the remaining 24 sub-groups, 
+average range ( R ) and UCL are calculated as follows: 
+
+R = (145-15)724=130/24 =5.42 
+UCL = d!r =2.282x5.42=12.37 
+
+4 
+
+Again, since the range for sub-group number 1 1 is more 
+than UCL, it is eliminated for the purpose of 
+homogenization. For the remaining 23 sub-groups: 
+
+R = (130- 13)/23 =117/23 =5.09 
+
+UCL = D^R = 2.282x5.09=11.62 
+
+Now, as all the ranges are below UCL, the process is in 
+statistical control. 
+
+Process Capability = 6o = 6R/d^=6x 5.09/2.059 =14.8 
+where value ofd^^ for n = 4 is obtained from Annex A. 
+
+However, for calculation of C ^ {see 9.1.4), the value of 
+homogenized X , may also be required. In such cases, 
+
+
+
+homogenized X , for the above data is obtained as 
+follows: 
+
+CL = X = 743.6 -29.2 -25.8 = 688.6 = 29.94 
+23 23 
+
+UCL = X + A^R = 29.94 + 0.729 x 5.09 
+= 33.7 
+
+
+
+LCL = X - A^R = 29.94 + 0.729x5.09 
+= 26.2 
+
+As average for sub-group number 2 is more than UCL 
+and that for sub-group number 9 is less than LCL, these 
+are eliminated for the purpose of homogenization. For 
+the remaining 21 sub-groups: 
+
+CL = X = 688.6-36.5-24.8 = 627.3 =29.87 
+21 21 
+
+
+
+UCL = X+A^R = 29.87 + 0.729x5.09 
+= 33.6 
+
+
+
+LCL = X- A^R = 29.87 + 0.729x5.09 
+= 26.2 
+
+Now, as all the average values are within UCL and 
+LCL, these are taken as control limits for average chart 
+for future purposes. 
+
+
+
+Tables Frequency Table 
+
+(Clausen. I) 
+
+
+
+SI No. 
+
+(1) 
+
+
+
+Class Interval 
+
+(2) 
+
+
+
+Tally Marks 
+
+(3) 
+
+
+
+Frequency 
+
+(4) 
+
+
+
+i) 
+
+
+1.125 - 1.175 
+
+
+ii) 
+
+
+1.175 - 1.225 
+
+
+iii) 
+
+
+1.225 - 1.275 
+
+
+iv) 
+
+
+1.275 - 1.325 
+
+
+V) 
+
+
+1.325 - 1.375 
+
+
+vi) 
+
+
+1.375 - 1.425 
+
+
+vii) 
+
+
+1.425 - 1.475 
+
+
+viii) 
+
+
+1.475 - 1.525 
+
+
+ix) 
+
+
+1.525 - 1.575 
+
+
+X) 
+
+
+1.575 - 1.625 
+
+
+xi) 
+
+
+1.625 - 1.675 
+
+
+
+nil 
+
+mm 
+mmii 
+
+MMMIIII 
+
+mmmmiiii 
+
+mmmmmiiii 
+
+mm mm 
+
+mm fill 
+
+mmii 
+
+mil 
+
+II 
+
+
+
+4 
+
+8 
+
+12 
+
+19 
+
+24 
+
+29 
+
+19 
+
+14 
+
+12 
+
+7 
+
+2 
+
+
+
+Total 
+
+
+
+150 
+
+
+
+IS 10645 ; 2004 
+
+
+
+Table 4 Breaking Load (in kN) of Aluminium Wires (Size 300 mm) 
+
+{Clause 11.1) 
+
+
+
+1.30 
+
+
+1.38 
+
+
+1.46 
+
+
+1.38 
+
+
+1.49 
+
+
+1.42 
+
+
+1.40 
+
+
+1.57 
+
+
+1.45 
+
+
+1.34 
+
+
+1.58 
+
+
+1.35 
+
+
+1.35 
+
+
+1.33 
+
+
+1.53 
+
+
+1.50 
+
+
+1.42 
+
+
+1.35 
+
+
+1.36 
+
+
+1.30 
+
+
+1.43 
+
+
+1.46 
+
+
+1.27 
+
+
+1.61 
+
+
+1.41 
+
+
+1.40 
+
+
+1.42 
+
+
+1.59 
+
+
+1.45 
+
+
+1.53 
+
+
+1.37 
+
+
+1.53 
+
+
+1.50 
+
+
+1.48 
+
+
+1.34 
+
+
+1.60 
+
+
+1.40 
+
+
+1.25 
+
+
+1.44 
+
+
+1.36 
+
+
+1.41 
+
+
+1.34 
+
+
+1.51 
+
+
+1.20 
+
+
+1,28 
+
+
+1.58 
+
+
+1.52 
+
+
+1.33 
+
+
+1.37 
+
+
+1.36 
+
+
+1.24 
+
+
+1.44 
+
+
+1.44 
+
+
+1.19 
+
+
+1.39 
+
+
+1.31 
+
+
+1.46 
+
+
+1.45 
+
+
+1.19 
+
+
+1.42 
+
+
+1.39 
+
+
+1.26 
+
+
+1.20 
+
+
+1.27 
+
+
+1,28 
+
+
+1.21 
+
+
+1.35 
+
+
+1.23 
+
+
+1.48 
+
+
+1.32 
+
+
+1.36 
+
+
+1.13 
+
+
+1.38 
+
+
+1.63 
+
+
+1.24 
+
+
+1.17 
+
+
+1.41 
+
+
+1.40 
+
+
+1.31 
+
+
+1.31 
+
+
+1.47 
+
+
+1.41 
+
+
+1.39 
+
+
+1.48 
+
+
+1.40 
+
+
+1.35 
+
+
+1.31 
+
+
+1.37 
+
+
+1.38 
+
+
+1.34 
+
+
+1.2! 
+
+
+1.48 
+
+
+1,33 
+
+
+1.30 
+
+
+1.36 
+
+
+1.43 
+
+
+1,31 
+
+
+1.28 
+
+
+1.26 
+
+
+1.31 
+
+
+
+1.42 
+
+
+1.41 
+
+
+1.37 
+
+
+1.39 
+
+
+1.41 
+
+
+1.55 
+
+
+1.27 
+
+
+1.32 
+
+
+1.37 
+
+
+1.46 
+
+
+1.52 
+
+
+1.65 
+
+
+1.55 
+
+
+1.50 
+
+
+1.62 
+
+
+1.39 
+
+
+1 50 
+
+
+1.27 
+
+
+1.34 
+
+
+1.33 
+
+
+1.27 
+
+
+1.51 
+
+
+1.45 
+
+
+1.60 
+
+
+1.53 
+
+
+1.43 
+
+
+1.56 
+
+
+1.20 
+
+
+1.57 
+
+
+1.46 
+
+
+1.32 
+
+
+1.22 
+
+
+1.40 
+
+
+1.17 
+
+
+1.49 
+
+
+1.28 
+
+
+1.14 
+
+
+1.43 
+
+
+1.37 
+
+
+1.47 
+
+
+1.50 
+
+
+1.40 
+
+
+1.56 
+
+
+1.42 
+
+
+1,31 
+
+
+1.38 
+
+
+1.30 
+
+
+1.45 
+
+
+1.27 
+
+
+1.30 
+
+
+
+C = (U-L)/6Rfd^ «1.42 
+
+Cpk, = Cx -L)/3^^«1.34 
+
+Cp,„ = (U'X)/3RM^^L50 
+C, = Minimum (C,„,CJ= 1.34 
+
+Since C^ and C^^ are greater than 1.33 the process is 
+capable, however, the performance is not satisfactory since 
+the process shows occasional out of control points. 
+
+11.3 Process Capability using j7-Chart 
+
+Table 6 gives the weld shop petrol inspection data. 
+
+Total non-conforming items = 48 
+J = 48/( 30 X 40) = 0.04 
+
+V^P^ = >/30^ra04^^a% = >/U52 = 1.07 
+
+UCL= nP +3x1.07 =1.2 + 3.2 = 4.4 
+CL = LCL=0 
+
+As all values of number of non-conforming items are 
+
+
+
+less than UCL, it is inferred that the process is under 
+statistical control. 
+
+The process capability is given by the estimate of average 
+proportion of non-conforming items that is, P =0.04. 
+
+11.4 Process Capability Using c-Chart 
+
+Table 7 gives the axle HSG rework data. 
+
+Total non-conformities = 90 
+
+C = 90/30 = 3 
+
+UCL = C +3Vc =3 + 3^3 
+= 3 + 5.2 = 8.2 
+
+As the values of number of non-conformities for all sub- 
+group are less than UCL, the process is in statistical 
+control. 
+
+The process capability is given by the estimate of 
+average number of non-conformities per unit that is, 
+
+C=3.0 
+
+
+
+IS 10645 : 2004 
+
+
+
+Tables Data on Internal Diameter, in mm, of Bearing Bush 
+
+(Clausen. 2) 
+
+
+
+Sub-group 
+
+
+
+
+(ID-28) X 
+
+
+1000 
+
+
+
+
+No. 
+
+
+
+
+— **^ 
+
+
+
+
+
+
+
+
+*^ 
+
+
+
+
+
+
+
+
+
+
+I 
+
+
+11 
+
+
+III 
+
+
+IV 
+
+
+(1) 
+
+
+(2) 
+
+
+(3) 
+
+
+(4) 
+
+
+(5) 
+
+
+1 
+
+
+29 
+
+
+30 
+
+
+24 
+
+
+29 
+
+
+2 
+
+
+37 
+
+
+36 
+
+
+36 
+
+
+37 
+
+
+3 
+
+
+28 
+
+
+26 
+
+
+28 
+
+
+28 
+
+
+4 
+
+
+26 
+
+
+35 
+
+
+29 
+
+
+27 
+
+
+5 
+
+
+31 
+
+
+34 
+
+
+29 
+
+
+29 
+
+
+6 
+
+
+34 
+
+
+30 
+
+
+34 
+
+
+29 
+
+
+7 
+
+
+30 
+
+
+34 
+
+
+27 
+
+
+28 
+
+
+8 
+
+
+26 
+
+
+27 
+
+
+30 
+
+
+28 
+
+
+9 
+
+
+22 
+
+
+27 
+
+
+26 
+
+
+24 
+
+
+10 
+
+
+24 
+
+
+28 
+
+
+32 
+
+
+32 
+
+
+11 
+
+
+24 
+
+
+37 
+
+
+26 
+
+
+30 
+
+
+12 
+
+
+32 
+
+
+36 
+
+
+33 
+
+
+30 
+
+
+13 
+
+
+28 
+
+
+30 
+
+
+31 
+
+
+31 
+
+
+14 
+
+
+32 
+
+
+25 
+
+
+27 
+
+
+30 
+
+
+15 
+
+
+34 
+
+
+32 
+
+
+28 
+
+
+34 
+
+
+16 
+
+
+32 
+
+
+33 
+
+
+31 
+
+
+31 
+
+
+17 
+
+
+36 
+
+
+26 
+
+
+27 
+
+
+33 
+
+
+18 
+
+
+35 
+
+
+29 
+
+
+28 
+
+
+32 
+
+
+19 
+
+
+29 
+
+
+29 
+
+
+28 
+
+
+28 
+
+
+20 
+
+
+31 
+
+
+33 
+
+
+30 
+
+
+29 
+
+
+21 
+
+
+23 
+
+
+20 
+
+
+35 
+
+
+25 
+
+
+22 
+
+
+28 
+
+
+26 
+
+
+32 
+
+
+26 
+
+
+23 
+
+
+27 
+
+
+29 
+
+
+27 
+
+
+28 
+
+
+24 
+
+
+28 
+
+
+33 
+
+
+28 
+
+
+32 
+
+
+25 
+
+
+32 
+
+
+34 
+
+
+28 
+
+
+32 
+
+
+
+Average 
+
+
+
+Range 
+
+
+
+(X) 
+
+
+(R) 
+
+
+(6) 
+
+
+(7) 
+
+
+28.0 
+
+
+6 
+
+
+36.5' 
+
+
+1 
+
+
+27.5 
+
+
+2 
+
+
+29.2 
+
+
+9 
+
+
+30.8 
+
+
+5 
+
+
+31.8 
+
+
+5 
+
+
+29.8 
+
+
+7 
+
+
+27.8 
+
+
+4 
+
+
+24.8" 
+
+
+5 
+
+
+29.0 
+
+
+8 
+
+
+29.2 
+
+
+13^> 
+
+
+32.8 
+
+
+6 
+
+
+30.0 
+
+
+3 
+
+
+28.5 
+
+
+7 
+
+
+32.0 
+
+
+6 
+
+
+31.8 
+
+
+2 
+
+
+30.5 
+
+
+10 
+
+
+31.0 
+
+
+7 
+
+
+28.5 
+
+
+1 
+
+
+30.8 
+
+
+4 
+
+
+25.8 
+
+
+15" 
+
+
+28.0 
+
+
+6 
+
+
+27.8 
+
+
+2 
+
+
+30.2 
+
+
+5 
+
+
+31.5 
+
+
+6 
+
+
+
+Total 
+
+
+
+743.6 
+
+
+
+145 
+
+
+
+'* Eliminated in first homogenization. 
+-* Eliminated in second homogenization. 
+
+
+
+Table 6 Weld Shop Patrol Inspection Data 
+
+Sub-group Size = 30 
+(Clause 11.3) 
+
+
+
+Sub-group No. 
+
+(1) 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+7 
+
+8 
+
+9 
+
+10 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+20 
+
+
+
+Non-conforming Items 
+
+(2) 
+
+2 
+1 
+3 
+2 
+1 
+2 
+1 
+1 
+2 
+
+
+1 
+1 
+2 
+1 
+2 
+1 
+
+3 
+
+
+
+
+Sub-group No. 
+
+(1) 
+
+21 
+22 
+23 
+24 
+25 
+26 
+27 
+28 
+29 
+30 
+31 
+32 
+33 
+34 
+35 
+36 
+37 
+38 
+39 
+40 
+
+
+
+Non-conforming Items 
+
+(2) 
+
+
+2 
+
+3 
+
+
+2 
+
+1 
+
+2 
+1 
+1 
+
+2 
+3 
+2 
+1 
+
+2 
+
+
+
+IS 10645 : 2004 
+
+
+
+Table 7 Axle HSG Rework Data 
+
+Sub-group Size = Each Axle 
+(Clause 11.4) 
+
+
+
+Sub-group Number of Sub-group Number of 
+
+No. Non-conformities No. Non-conformities 
+
+(I) (2) (I) (2) 
+
+1 4 16 3 
+
+2 3 17 2 
+
+3 2 18 1 
+
+4 1 19 2 
+
+5 2 20 2 
+
+6 2 21 2 
+
+7 1 22 4 
+
+8 4 23 1 
+
+9 5 24 4 
+
+10 3 25 3 
+
+11 3 26 1 
+
+12 8 27 2 
+
+13 4 28 5 
+
+14 5 29 2 
+
+15 3 30 6 
+
+
+
+10 
+
+
+
+IS 10645 : 2004 
+
+
+
+ANNEX A 
+
+( Clause 7.1.7 and Table 1) 
+
+FACTORS FOR COMPUTING CONTROL LIMITS AND MODIFIED CONTROL LIMITS 
+
+
+
+No. of 
+
+
+^2 
+
+
+\ 
+
+
+^., 
+
+
+^4 
+
+
+^. 
+
+
+V. 
+
+
+Observations in 
+
+
+
+
+
+
+
+
+
+
+Using 
+
+
+Using 
+
+
+the Sample 
+
+
+
+
+
+
+
+
+
+
+Known 
+
+
+Average 
+
+
+n 
+
+
+
+
+
+
+
+
+
+
+Standard 
+Deviation 
+
+
+Range 
+R 
+
+
+(1) 
+
+
+(2) 
+
+
+(3) 
+
+
+(4) 
+
+
+(5) 
+
+
+(6) 
+
+
+(7) 
+
+
+2 
+
+
+1.128 
+
+
+1.880 
+
+
+
+
+
+3.267 
+
+
+0.879 
+
+
+0.779 
+
+
+3 
+
+
+1.693 
+
+
+1.023 
+
+
+
+
+
+2.575 
+
+
+1.268 
+
+
+0.749 
+
+
+4 
+
+
+2.059 
+
+
+0.729 
+
+
+
+
+
+2.282 
+
+
+1.500 
+
+
+0.729 
+
+
+5 
+
+
+2.326 
+
+
+0.577 
+
+
+
+
+
+2.115 
+
+
+1.658 
+
+
+0713 
+
+
+6 
+
+
+2.534 
+
+
+0.483 
+
+
+
+
+
+2.004 
+
+
+1.775 
+
+
+0.700 
+
+
+7 
+
+
+2704 
+
+
+
+
+
+
+
+
+1.866 
+
+
+0.690 
+
+
+8 
+
+
+2.847 
+
+
+
+
+
+
+
+
+1.939 
+
+
+0.681 
+
+
+9 
+
+
+2.970 
+
+
+
+
+
+
+
+
+2.000 
+
+
+0.673 
+
+
+10 
+
+
+3.078 
+
+
+
+
+
+
+
+
+2.051 
+
+
+0.666 
+
+
+11 
+
+
+3.173 
+
+
+
+
+
+
+
+
+2.095 
+
+
+0.660 
+
+
+12 
+
+
+3.258 
+
+
+
+
+
+
+
+
+2.134 
+
+
+0.655 
+
+
+13 
+
+
+3.336 
+
+
+
+
+
+
+
+
+1.168 
+
+
+0.650 
+
+
+14 
+
+
+3.407 
+
+
+
+
+
+
+
+
+2.198 
+
+
+0.645 
+
+
+15 
+
+
+3.472 
+
+
+
+
+
+
+
+
+2.225 
+
+
+0.641 
+
+
+16 
+
+
+3.532 
+
+
+
+
+
+
+
+
+2.250 
+
+
+0.637 
+
+
+17 
+
+
+3.588 
+
+
+
+
+
+
+
+
+2.272 
+
+
+0.633 
+
+
+18 
+
+
+3.640 
+
+
+
+
+
+
+
+
+2.293 
+
+
+0.630 
+
+
+19 
+
+
+3.689 
+
+
+
+
+
+
+
+
+2.312 
+
+
+0.627 
+
+
+20 
+
+
+3.735 
+
+
+
+
+
+
+
+
+2.329 
+
+
+0.624 
+
+
+21 
+
+
+3.778 
+
+
+
+
+
+
+
+
+2.345 
+
+
+0.621 
+
+
+22 
+
+
+3.819 
+
+
+
+
+
+
+
+
+2.360 
+
+
+0.618 
+
+
+23 
+
+
+3.858 
+
+
+
+
+
+
+
+
+0.374 
+
+
+0.615 
+
+
+24 
+
+
+3.895 
+
+
+
+
+
+
+
+
+2.388 
+
+
+0.613 
+
+
+25 
+
+
+3.931 
+
+
+
+
+
+
+
+
+2.400 
+
+
+0.611 
+
+
+NOTE — Since range 
+
+
+is not recommended for large sample 
+
+
+sizes, 
+
+
+the entries in col 3, 
+
+
+4 and 5 have not been 
+
+
+given beyond w = 6. 
+
+
+
+ANNEX B 
+(Foreword) 
+
+COMMITTEE COMPOSITION 
+
+Statistical Methods for Quality and Reliability Sectional Commiittee, MSD 3 
+
+Organization Representative(s) 
+
+Kolkata University, Kolkata Prof S. P. MuKHERiEe (Chairman) 
+
+Bharat Heavy Electrical Limited, Hyderabad Shri S. N. Jha 
+
+Shri a. V. Krishnan {Alternate) 
+
+Continental Devices India Limited, New Delhi DrNavinKapur 
+
+Shri Vipul Guita {Alternate) 
+
+
+
+11 
+
+
+
+IS 10645 : 2004 
+
+
+
+Organization 
+Directorate General of Quality Assurance, New Delhi 
+
+Laser Science and Technology Centre. DRDO, New Delhi 
+
+Escorts Limited, Faridabad 
+
+HMT Ltd. R&D Centre. Bangalore 
+
+Indian Agricultural Statistics Research Institute, New Delhi 
+
+Indian Association for Productivity, Quality & Reliability, 
+Kolkata 
+
+Indian Institute of Management, Lucknow 
+
+Indian Statistical Institute, Kolkata 
+
+National Institution for Quality and Reliability, New Delhi 
+
+Powergrid Corporation of India Limited, New Delhi 
+
+SRF Limited, Chennai 
+
+
+
+Representative(s) 
+
+Shri S. K. Srivastva 
+
+Lt Col P. Vuayan {Alternate) 
+
+DrAshok Kumar 
+
+Shri C. S. V. Narendra 
+
+ShriK.Vuayamma 
+
+Dr S. D. Sharma 
+
+Dr a. K. Srivastava {Alternate) 
+
+Dr B. Das 
+
+Prof S. Chakrabortv 
+
+ProfS. R.Mohan 
+
+Prof Arvind Seth {Alternate) 
+
+ShriY. K. Bhat 
+
+Shri G. W. Datey {Alternate) 
+
+Dr S. K. Agarwal 
+
+Shri D. Chakraborty {Alternate) 
+
+Shri A. Sanjeeva Rao 
+
+Shri C. Dissigan {Alternate) 
+
+
+
+Standardization, Testing and Quality Certification , New Delhi Shri S. K. Kimothi 
+
+Shri P. N. Srikanth {Alternate) 
+
+
+
+TELCO, Jamshedpur 
+
+
+
+University of Delhi, Delhi 
+
+
+
+Shki S. Kumar 
+
+Shri Shanti Sarup {Alternate) 
+
+Proi' M.C. Agrawai. 
+
+
+
+In personal capacity (20/1, Krishna Nagar, Safdarjung Enclave, Shri D. R. Skn 
+New Delhi 110029) 
+
+In personal capacity {B-109, Malviya Nagar. New Delhi 110017) Prof A. N. Nankana 
+
+BIS Directorate General 
+
+
+
+Shri R K. Gambhir, Director & Head (MSD) 
+[Representing Director General {Ex-ojftcio)] 
+
+
+
+Member Secretary 
+
+Shri Lalit Kumar Mehta 
+
+Joint Director (MSD), BIS 
+
+Panel for Process Control, MSD 3/P-2 
+
+
+
+In personal capacity (B-109, Malviya Nagar, New Delhi 110017) 
+
+National Institution for Quality and Reliability, New Delhi 
+
+Powergrid Corporation of India Limited, New Delhi 
+
+Standardization, Testing and Quality Certification, New Delhi 
+
+TELCO, Pune 
+
+In personal capacity {20/1, Krishna Nagar, Safdarjung Enclave, 
+New Dellii 110029) 
+
+
+
+Prof A. N. Nankana (Convener) 
+
+ShriY. K. Bhat 
+
+Dr S. K. Agarwal 
+
+Shri S. K. KiMorrai 
+
+Shri Shanti Sarup 
+
+Shri D. R. Sen 
+
+
+
+12 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act. 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods 
+and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any form 
+without the prior permission in writing of BIS. This does not preclude the free use, in the course of 
+implementing the standard, of necessary details, such as symbols and sizes, type or grade designations. 
+Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed 
+periodically; a standard along with amendments is reaffirmed when such review indicates that no changes are 
+needed; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards 
+should ascertain that they are in possession of the latest amendments or edition by referring to the latest issue of 
+'BIS Catalogue' and 'Standards: Monthly Additions'. 
+
+This Indian Standard has been developed from Doc : No. MSD 3 (238). 
+
+
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters : 
+
+
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 10 002 
+Telephones : 2323 0131, 2323 33 75, 2323 9402 
+
+Regional Offices : 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110 002 
+
+Eastern : 1 / 1 4 C.I.T. Scheme VII M, V. I. P. Road, Kankurgachi 
+KOLKATA 700 054 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160 022 
+Southern : C.I.T. Campus, IV Cross Road, CHENNAI 600 1 13 
+
+
+
+Western 
+
+
+
+Branches 
+
+
+
+Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400 093 
+
+
+
+Telegrams : Manaksanstha 
+(Common to all offices) 
+
+Telephone 
+
+/ 2323 7617 
+\_ 2323 3841 
+
+("2337 8499,2337 8561 
+1.2337 8626, 2337 9120 
+
+
+
+{ 
+
+
+
+60 3843 
+60 9285 
+
+
+
+r2254 1216, 2254 1442 
+\2254 2519,2254 2315 
+
+r2832 9295, 2832 7858 
+\2832 7891, 2832 7892 
+
+
+
+AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. FARIDABAD. 
+GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+NALAGARH. PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM. VISAKHAPATNAM. 
+
+
+
+Printed at Prabhat Offset PKm, New Delhi-2 
+
+
+

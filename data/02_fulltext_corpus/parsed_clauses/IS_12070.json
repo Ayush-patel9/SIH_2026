@@ -1,0 +1,71 @@
+{
+  "is_number": "IS IS_12070",
+  "standard_id": "IS IS_12070",
+  "title": "Indian Standard Specification / Test Method (IS IS_12070)",
+  "ia_identifier": "IS_12070",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1,1 This standard covers the design, construction and methods of estimating the safe bearing pressures of rocks for shallow foundations based on strength, allowable settlement and classification criteria.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 2809",
+      "standard_id": "IS 2809:1972",
+      "title": "Glossary of terms and symbols relating to soil engineering",
+      "division_code": "CED",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11358",
+      "standard_id": "IS 11358:1987",
+      "title": "Glossary of terms and symbols relating to rock mechanics",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7317",
+      "standard_id": "IS 7317:2020",
+      "title": "Uniaxial Jacking Test for Deformation Modulus of Rock Mass — Code of Practice ( Second Revision )",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1888",
+      "standard_id": "IS 1888:1982",
+      "title": "Method of load test on soils",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12070"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 25404
+}

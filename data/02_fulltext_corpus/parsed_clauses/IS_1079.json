@@ -1,0 +1,150 @@
+{
+  "is_number": "IS IS_1079",
+  "standard_id": "IS IS_1079",
+  "title": "Indian Standard Specification / Test Method (IS IS_1079)",
+  "ia_identifier": "IS_1079",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers the requirements for hot rolled low carbon steel sheets, plates and strips intended for drawing and forming for automobile and general engineering purposes.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 3573",
+      "standard_id": "IS/ISO 3573",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3573)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 16160",
+      "standard_id": "IS/ISO 16160",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 16160)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1956 (PART 4)",
+      "standard_id": "IS 1956 (Part 4):2013",
+      "title": "Part 4 : 2013: Glossary of Terms Relating to Iron and Steel - Part 4 Flat Products",
+      "division_code": "MTD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8910",
+      "standard_id": "IS 8910:2010",
+      "title": "General technical delivery requirements for steel and steel products",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 228",
+      "standard_id": "IS 228",
+      "title": "Indian Standard Specification / Test Method (IS 228)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1608",
+      "standard_id": "IS 1608:2005",
+      "title": "Mechanical testing of metals - Tensile Testing",
+      "division_code": "MED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3803 (PART 1)",
+      "standard_id": "IS 3803 (Part 1):1989",
+      "title": "Steel - Conversion of Elongation Values, Part I: Carbon, loow alloy steels",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1599",
+      "standard_id": "IS 1599:2012",
+      "title": "Metallic Materials - Bend Test",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10175",
+      "standard_id": "IS 10175",
+      "title": "Indian Standard Specification / Test Method (IS 10175)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1730",
+      "standard_id": "IS 1730:1989",
+      "title": "Dimensions for steel plates,sheets strips and flats for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3803",
+      "standard_id": "IS 3803",
+      "title": "Indian Standard Specification / Test Method (IS 3803)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade HRS",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_1079"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "tensile strength for qualities HR1, HR2, HR3 and HR4 would normally be expected to be 270 MPa",
+      "tensile strength is required, the value of 270 MPa",
+      "Minimum tensile strength for qualities HR1",
+      "minimum tensile strength is required, the value of 270"
+    ],
+    "chemical_properties": [
+      "nitrogen content shall not exceed 0.012 percent",
+      "carbon content less than 0.10 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "The material may also be marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 22684
+}

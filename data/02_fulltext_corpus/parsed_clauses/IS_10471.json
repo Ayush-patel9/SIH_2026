@@ -1,0 +1,92 @@
+{
+  "is_number": "IS IS_10471",
+  "standard_id": "IS IS_10471",
+  "title": "Indian Standard Specification / Test Method (IS IS_10471)",
+  "ia_identifier": "IS_10471",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers recommendations for prevention of corrosion of metalHc materials in electronic components and assemblies. It does not deal with the electronic uses of non-metallic materials, such as plastics, composites, elastomers and other polymeric materials. 1.2 The scope of this standard is limited to the anticorrosive performance of metallic materials used in electronic components and related corrosion control measures. 1.2.1 This standard does not cover electrical or mechanical design except those aspects which affect susceptibility towards corrosion. 1.2.2 This standard however does not debar the use of other proven commercial material or process selected and concurred by the procuring agency or authority.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 3531",
+      "standard_id": "IS 3531:1997",
+      "title": "Glossary of terms relating to corrosion of metals",
+      "division_code": "GEN",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3194",
+      "standard_id": "IS 3194:1980",
+      "title": "Recommended practice for cleaning of metals prior to electroplating",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7001",
+      "standard_id": "IS 7001:1989",
+      "title": "Shot peening of steel parts",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 104",
+      "standard_id": "IS 104:2017",
+      "title": "Specification for Reday Mixed Paint, Brushing, Zinc Chrome, Priming (Third Revision)",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8221",
+      "standard_id": "IS 8221:1976",
+      "title": "Code of practice for corrosion prevention of metals and metal components in packages",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6263",
+      "standard_id": "IS 6263:2018",
+      "title": "Volatile Corrosion Inhibitor (VCI) Treated Paper- Specification (First Revision)",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade rtilizer",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10471"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 27510
+}

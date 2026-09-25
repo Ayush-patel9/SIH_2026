@@ -1,0 +1,205 @@
+{
+  "is_number": "IS IS_12641",
+  "standard_id": "IS IS_12641",
+  "title": "Indian Standard Specification / Test Method (IS IS_12641)",
+  "ia_identifier": "IS_12641",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12641) covers Indian Standard Specification / Test Method (IS IS_12641). This Indian Standard (First Revision) which is identical with lEC 60749 (2002) 'Semiconductor devices — Mechanical and climatic test methods' issued by the International Electrotechnicai Commission (lEC) was adopted by the Devices and Integrated Circuits Sectional Committee and approval of the Electronics and Telecommunication Division Council. At present following two Indian Standards exist on the subject: Environmental testing procedures for semiconductor devices and integrated circuits Environmental testing procedures for microclrcuits This standard has been prepared in order to revise above mentioned standards so as to align them with latest international practices. This standard constitutes the first revision of IS 12641. With the publication of this standard, IS 10477 shall be withdrawn. The text of the EC Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standar",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10477",
+      "standard_id": "IS 10477:1982",
+      "title": "Environmental testing procedures for microcircuits",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 1)",
+      "standard_id": "IS 9000 (Part 1):1988",
+      "title": "Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 1: General",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 4)",
+      "standard_id": "IS 9000 (Part 4):2008",
+      "title": "Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 4: Damp hear (Steady state)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 8)",
+      "standard_id": "IS 9000 (Part 8):1981",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 8: Vibration (sinusoidal) test",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 9)",
+      "standard_id": "IS 9000 (Part 9):1984",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 9: Acceleration (steady state)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 11)",
+      "standard_id": "IS 9000 (Part 11):1983",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 11: Salt mist test",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 13)",
+      "standard_id": "IS 9000 (Part 13):1981",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 13: Low air pressure test",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 14)",
+      "standard_id": "IS 9000 (Part 14):1988",
+      "title": "to 3: Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 14: Test N: Change of Temperature (Sections 1-3)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 15)",
+      "standard_id": "IS 9000 (Part 15):1982",
+      "title": "to 9: Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 15: Sealing Test (Sections 1-9)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 18)",
+      "standard_id": "IS 9000 (Part 18):1981",
+      "title": "to 3: Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 18: Solderability Test (Sections 1-3)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 19)",
+      "standard_id": "IS 9000 (Part 19):1986",
+      "title": "to 5: Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 19: Test U: Robustness of Terminations and Integral Mounting Devices (Sections 1-5)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 20)",
+      "standard_id": "IS 9000 (Part 20):1979",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 20: Resistance to cleaning solvents and permanence of markings",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9001 (PART 18)",
+      "standard_id": "IS 9001 (Part 18):1986",
+      "title": "Guidance for environmental testing, Part 18: Ultrasonic cleaning test",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11000 (PART 2/SEC 2)",
+      "standard_id": "IS 11000 (PART 2/SEC 2)",
+      "title": "Indian Standard Specification / Test Method (IS 11000 (PART 2/SEC 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14901 (PART 1)",
+      "standard_id": "IS 14901 (Part 1):2010",
+      "title": "Semiconductor Devices - Discrete Devices and Integrated Circuits, Part 1: General",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12970",
+      "standard_id": "IS 12970",
+      "title": "Indian Standard Specification / Test Method (IS 12970)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade II",
+    "Grade III",
+    "Grade ificatmn",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12641"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "adhesion of the die attach medium to the die. N"
+    ],
+    "chemical_properties": [
+      "moisture diffusion at 85 °C, 85 %",
+      "moisture limit (±20 %"
+    ],
+    "electrical_and_safety_parameters": [
+      "leakage current caused by partial breakdown shall be monitored. V",
+      "Flammability test"
+    ],
+    "dimensional_tolerances": [
+      "tolerance of +10 %"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 145086
+}

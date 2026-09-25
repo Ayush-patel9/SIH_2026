@@ -1,0 +1,62 @@
+{
+  "is_number": "IS IS_11829",
+  "standard_id": "IS IS_11829",
+  "title": "Indian Standard Specification / Test Method (IS IS_11829)",
+  "ia_identifier": "IS_11829",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11829) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11829).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 7226",
+      "standard_id": "IS 7226:1974",
+      "title": "Cold rolled medium, high carbon and low alloy steel strip for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3749",
+      "standard_id": "IS 3749",
+      "title": "Indian Standard Specification / Test Method (IS 3749)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11828",
+      "standard_id": "IS 11828:1987",
+      "title": "Miniature Hand Hacksaw Frames",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11829"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "minimum hardness at the point of the tooth shall be not less than 760"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Marking — Each blade shall be marked with manufacturer's name, initials or registered trademark and year of manufacture."
+    ]
+  },
+  "total_chars_parsed": 6478
+}

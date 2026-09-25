@@ -1,0 +1,1623 @@
+**************** 
+
+
+*■  *Z**K 
+
+
+Disclosure  to  Promote  the  Right  To  Information 
+
+Whereas  the  Parliament  of  India  has  set  out  to  provide  a  practical  regime  of  right  to 
+information  for  citizens  to  secure  access  to  information  under  the  control  of  public  authorities, 
+in  order  to  promote  transparency  and  accountability  in  the  working  of  every  public  authority, 
+and  whereas  the  attached  publication  of  the  Bureau  of  Indian  Standards  is  of  particular  interest 
+to  the  public,  particularly  disadvantaged  communities  and  those  engaged  in  the  pursuit  of 
+education  and  knowledge,  the  attached  public  safety  standard  is  made  available  to  promote  the 
+timely  dissemination  of  this  information  in  an  accurate  manner  to  the  public. 
+
+Jawaharlal  Nehru 
+Step  Out  From  the  Old  to  the  New 
+
+
+mr^jsss^^^w: 
+
+
+,_A» 
+
+
+**************** 
+
+
+BLANK  PAGE 
+
+
+<_<ii££ 
+
+
+UJ> 
+
+
+PROTECTED  BY  COPYRIGHT 
+
+
+IS  15025:2001 
+ISO/TR  10623: 1991 
+
+Indian  Standard 
+
+TECHNICAL  PRODUCT  DOCUMENTATION  — 
+
+REQUIREMENTS  FOR  COMPUTER-AIDED 
+DESIGN  AND  DRAUGHTING  —  VOCABULARY 
+
+
+ICS     01.040.01;  01.040.35;  01.110;  35.240.10 
+
+
+©BIS  2001 
+BUREAU   OF  INDIAN  STANDARDS 
+
+MANAK    BHAVAN,  9  BAHADUR  SHAH  ZAFAR  MARG 
+NEW  DELHI  110002 
+
+August  2001  Price  Group    10 
+
+
+Drawings  Sectional  Committee,  BP  24 
+
+
+NATIONAL  FOREWORD 
+
+This  Indian  Standard,  which  is  identical  with  ISO/TR  10623  :  1991  'Technical  product  documentation  — 
+Requirements  for  computer-aided  design  and  draughting  —  Vocabulary'  issued  by  the  International 
+Organization  for  Standardization  (ISO)  was  adopted  by  the  Bureau  of  Indian  Standards  on  the  recommendation 
+of  Drawings  Sectional  Committee  and  approval  of  the  Basic  and  Production  Engineering  Division  Council. 
+
+This  standard  is  intended  to  facilitate  communication  in  computer-aided  design  (CAD)  technology.  It  presents 
+terms  and  definitions  of  selected  concepts  relevant  to  the  field  of  data  processing  and  CAD,  and  identifies 
+relationships  between  the  terms. 
+
+The  text  of  ISO  standard  has  been  approved  as  suitable  for  publication  as  Indian  Standard  without  deviations. 
+In  this  adopted  standard,  certain  terminology  and  conventions  are  not  identical  to  those  used  in  the  Indian 
+Standards.  Attention  is  particularly  drawn  to  the  following: 
+
+a)  Wherever  the  words,  'International  Standard'  appear  referring  to  this  standard,  they  should  be  read  as 
+'Indian  Standard'. 
+
+b)  Comma  (,)  has  been  used  as  a  decimal  marker  while  in  Indian  Standard,  the  current  practice  is  to  use 
+a  full  point  (.)  as  the  decimal  marker. 
+
+In  this  adopted  standard,  reference  appears  to  certain  International  Standards  for  which  Indian  Standards  also 
+exist.  The  corresponding  Indian  Standards  which  are  to  be  substituted  in  their  place  are  listed  below  along  with 
+their  degree  of  equivalence  for  the  editions  indicated  : 
+
+International  Corresponding  Indian  Standard  Degree  of 
+
+Standard  Equivalence 
+
+ISO  5456-1  :  1996  IS  15021  (Part  1) :  2001  Technical  drawings  —  Identical 
+
+Projection  methods:  Part  1  Synopsis 
+
+ISO  10209-1  :  1992  IS  8930  (Part  1)  :   1995  Technical  product  do 
+
+documentation  —  Vocabulary:  Part  1  Terms 
+relating  to  technical  drawings:  General  and  types 
+of  drawings  (first  revision) 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+Indian  Standard 
+
+TECHNICAL  PRODUCT  DOCUMENTATION  — 
+
+REQUIREMENTS  FOR  COMPUTER-AIDED 
+DESIGN  AND  DRAUGHTING  —  VOCABULARY 
+
+
+1  Scope 
+
+This  Technical  Report  is  intended  to  facilitate  communication  in  computer-aided 
+design  (CAD)  technology.  It  presents  terms  and  definitions  of  selected  concepts 
+relevant  to  the  field  of  data  processing  and  CAD,  and  identifies  relationships 
+between  the  terms. 
+
+It  deals  with  the  main  areas  of  the  CAD  technique  for  the  representation  of 
+technical  drawing  information.  These  include  the  principal  processes  and  types 
+of  equipment  used;  the  representation,  organization  and  presentation  of  data; 
+the  programming  and  operation  of  computers;  the  input-output  devices  and  peri- 
+pheral equipment;  the  terms  describing  particular  CAD  applications  and  tools. 
+
+Terms  such  as  CAD,  CAE,  CAM  and  CADD  have  not  been  defined  owing  to  the  fact  that 
+they  have  specific  meanings  in  the  different  technical  disciplines.  As  a  result 
+these  terms  may  be  interpreted  as  meaning  "the  use  of  computers"  in  the  design, 
+engineering,  manufacturing  and  draughting  disciplines,  respectively. 
+
+2  Definitions 
+
+(Sources,  if  any,  are  given  in  square  brackets  after  the  definition.) 
+
+2.1  Algorithm 
+
+A  finite  ordered  set  of  well-defined  rules  for  the  solution  of  a  problem. 
+[ISO/IEC  2382-1:-,  term  01.05.05] 
+
+2.2  Alphabet 
+
+An  ordered  character  set,  the  order  of  which  has  been  agreed  upon. 
+
+NOTE  -  This  definition  also  covers  the  alphabet  of  natural  languages  consisting 
+of  those  characters  represented  by  letters  including  letters  with  diacritical 
+marks. 
+
+[ISO  2382-4:1987,  term  04.03.03] 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+2.3  Alphabetic  {numeric]  [alphanumeric]  [binary]  code 
+
+A  code  whose  application  results  in  a  code  element  set  whose  elements  are  formed 
+from  an  alphabetic  [numeric]  [alphanumeric]  [binary]  character  set. 
+
+[ISO  2382-4:1987,  term  04.02.06] 
+
+2.4  Application  software   [program] 
+
+A  software  [program]  that  is  specific  to  the  solution  of  an  application  prob- 
+lem. 
+
+[ISO/IEC  2382-1:-,  term  01.09.03] 
+
+2.5  Approval  phase 
+
+Phase  in  which  documents  containing  design  data  are  formally  checked  and  adop- 
+ted. Markings  and  visible  proofs  of  approval  are  made  on  the  original  document. 
+
+2.6  ASCII  (abbreviation) 
+
+American  Standard  Code  for  Information  Interchange. 
+
+2.7  Assembly  language 
+
+A  programming  language  that  provides  symbolic  forms  for  machine  instructions. 
+NOTE  -  Assembly  languages  usually  also  provide  macro  calls. 
+[ISO/IEC  2382-7:1989,  term  07.01.09] 
+
+2.8  Attribute 
+
+A  named  property  of  an  entity. 
+[ISO/IEC  2382-17:-,  term  17.02.10] 
+
+2.9  Automatic 
+
+Pertaining  to  a  process  or  equipment  that,  under  specified  conditions,  functions 
+without  human  intervention. 
+
+[ISO/IEC  2382-1:-,  term  01.01.07] 
+
+2.10  Automation 
+
+The  conversion  of  processes  or  equipment  to  automatic  operation  or  the  results  of 
+the  conversion. 
+
+[ISO/IEC  2382-1:-,  term  01.01.09] 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.11  Authorization 
+
+Of  a  user,  his  rights  to  access  (read,  modify,  insert,  delete)  certain  data. 
+
+2.12  CAD  (abbreviation) 
+
+Computer-aided  design. 
+
+The  design  activities,  including  draughting  and  illustrating,  in  which  infor- 
+mation processing  systems  are  used  to  carry  out  functions  such  as  designing  or 
+improving  a  part  or  a  product. 
+
+NOTE  -  Usually  CAD  and  CAM  are  used  together  and  expressed  as  CAD/CAM. 
+
+[ISO/IEC  2382-24:-,  term  24.01.04] 
+
+2.13  CA  drawing  (abbreviation) 
+Computer-aided  drawing. 
+
+2.14  CAE  (abbreviation) 
+
+Computer-aided  engineering. 
+
+Analysis  of  a  design  to  check  for  basic  errors,  and  to  optimize  manuf acturabil- 
+ity,  performance,  productivity  or  economy,  by  using  information  processing  sys- 
+tems . 
+
+NOTE  -  Information  from  the  CAD/CAM  design  database  is  used  to  analyse  the  func- 
+tional characteristics  of  a  part  or  a  product  under  design,  or  to  simulate  its 
+performance  under  various  conditions. 
+
+[ISO/IEC  2382-24:-,  term  24.01.03] 
+
+2.15  CAM  (abbreviation) 
+
+Computer-aided  manufacturing. 
+
+The  production  process  in  which  information  processing  systems  are  used  to  di- 
+rect and  control  manufacturing. 
+
+NOTE  -  Usually  CAD  and  CAM  are  used  together  and  expressed  as  CAD/CAM. 
+
+[ISO/IEC  2382-24:-,  term  24.01.07] 
+
+2.16  CASE  (abbreviation) 
+Computer-aided  software  engineering. 
+
+
+IS  15025  .  2001 
+ISO/TR  10623  :  1991 
+
+
+2.17  Central  processing  unit 
+CPU  (abbreviation) 
+
+A  functional  unit  that  consists  of  one  or  more  processors  and  their  internal 
+storages. 
+
+NOTE  -  In  English,  the  term  "processor"  is  often  used  synonymously  with  proces- 
+sing unit. 
+
+[ISO/IEC  2382-1:-,  term  01.03.01] 
+
+2.18  Character 
+
+A  member  of  a  set  of  elements  that  is  used  for  the  representation,  organization, 
+or  control  of  data. 
+
+NOTE  -  Characters  may  be  categorized  as  follows: 
+
+
+character 
+
+
+Types 
+
+
+Examples 
+
+
+graphic  character  — 
+
+
+—  control  character 
+
+
+digit 
+
+letter 
+
+ideogram 
+
+special  character 
+
+
+•  transmission  control  character 
+
+•  format  effector 
+
+•  code  extension  character 
+
+•  device  control  character 
+
+
+[ISO  2382-4:1987,  term  04.01.01) 
+
+
+2.19  CIM  (abbreviation) 
+
+Computer-integrated  manufacturing . 
+
+The  production  of  which  all  activities  are  integrated  into  a  computer-based 
+planning  management  and  control  system. 
+
+NOTE  -  CIM  includes  the  technologies  of  CAD,  CAP,  CAM,  CAQ  and  PPS  and  the 
+sharing  of  information  among  them;  however,  it  does  not  include  CAO. 
+
+[ISO/IEC  2382-24:-,  term  24.01.02] 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.20  Code 
+
+Coding  scheme 
+
+A  collection  of  rules  that  maps  the  elements  of  one  set  on  to  the  elements  of  a 
+second  set. 
+
+NOTES 
+
+1  The  elements  may  be  characters  or  character  strings. 
+
+2  The  first  set  is  the  coded  set  and  the  second  is  the  code  element  set. 
+
+3  An  element  of  the  code  element  set  may  be  related  to  more  than  one  element  of 
+the  coded  set  but  the  reverse  is  not  true. 
+
+[ISO  2382-4:1987,  term  04.02.01] 
+
+2.21  COM  (abbreviation) 
+
+Computer  output  microfilming. 
+
+A  technique  for  converting  and  recording  data  from  a  computer  directly  onto  a 
+microform. 
+
+[ISO  2382-13:1984,  term  13.06.02] 
+
+2.22  Communication  security 
+
+Physical  security  and  transfer  protocol  checking  of  data  during  the  transmission 
+of  information. 
+
+2.23  Compile  (verb) 
+
+To  translate  all  or  part  of  a  program  expressed  in  a  high-level  language  into  a 
+computer  program  expressed  in  an  intermediate  language,  an  assembly  language,  or 
+a  machine  language. 
+
+[IS0/IEC  2382-7:1989,  term  07.03.03] 
+
+2.24  Computer 
+
+A  functional  unit  that  can  perform  substantial  computations,  including  numerous 
+arithmetic  operations  and  logic  operations,  without  human  intervention  during  a 
+run. 
+
+NOTES 
+
+1  In  information  processing  the  term  computer  usually  describes  a  digital  com- 
+puter. 
+
+2  A  computer  may  consist  of  a  stand-alone  unit  or  may  consist  of  several  inter- 
+connected units. 
+
+[IS0/IEC  2382-1:-,  term  01.03.03] 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.25  Computer  graphics 
+
+Methods  and  techniques  for  converting  data  to  or  from  graphic  display  via 
+computers. 
+
+[ISO/IEC  2382-1:-,  term  01.06.07] 
+
+2.26  (Computer)  program 
+
+A  syntactic  unit  that  conforms  to  the  rules  of  a  particular  programming  language 
+composed  of  declarations  and  statements  or  instructions  needed  to  solve  a  cer- 
+tain function,  task,  or  problem. 
+
+[ISO/IEC  2382-1:-,  term  01.05.01] 
+
+2.27  Copyright 
+
+The  exclusive  right  to  the  publication,  production  or  sale  of  the  rights  to  data 
+or  the  resulting  product,  granted  by  law  for  a  definite  period  of  time. 
+
+2.28  CPU  (abbreviation) 
+
+Central  processing  unit  (see  2.17). 
+
+2.29  Data 
+
+A  re-interpretable  representation  of  information  in  a  formalized  manner  suit- 
+able for  communication,  interpretation,  or  processing. 
+
+NOTE  -  Operations  can  be  performed  upon  data  by  humans  or  by  automatic  means. 
+
+[ISO/IEC  2382-1:-,  term  01 .01.02] 
+
+2.30  Data  bank 
+
+A  set  of  data  related  to  a  given  subject  and  organized  in  such  a  way  that  it  can 
+be  consulted  by  users. 
+
+[ISO  2382-4:1987,  term  04.07.14] 
+
+2.31  Database 
+
+A  data  structure  for  accepting,  storing  and  providing  on  demand  data  for  mul- 
+tiple independent  users. 
+
+[ISO  2382-4:1987,  term  04.07.15] 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+2.32  Database  management  system 
+DBMS  (abbreviation) 
+Database  system 
+
+A  computer-based  system  for  defining,  creating,  manipulating,  controlling,  man- 
+aging and  using  databases. 
+
+NOTE  -  The  software  for  using  a  database  may  be  part  of  the  database  management 
+system  or  may  be  a  stand-alone  database  system. 
+
+[ISO/IEC  2382-1:-,  term  01.08.05] 
+
+
+2.33  Data  medium 
+
+The  material  in  or  on  which  data  can  be  recorded  and  from  which  data  can  be  re- 
+trieved. 
+
+[ISO/IEC  2382-1:-,  term  01.01.48] 
+
+
+2.34  Data  processing 
+DP  (abbreviation) 
+Automatic  data  processing 
+ADP  (abbreviation) 
+
+The  systematic  performance  of  operations  upon  data. 
+
+Examples:  Arithmetic  or  logic  operations  upon  data,  merging  or  sorting  of  data, 
+assembling  or  compiling  of  programs. 
+
+NOTE  -  The  term  data  processing  must  not  be  used  as  a  synonym  for  information 
+processing. 
+
+[ISO/IEC  2382-1:-,  term  01.01.03] 
+
+2.34.1  Data  processing  system  security 
+Computer  system  security 
+
+The  technological  and  administrative  safeguards  established  and  applied  to  a 
+data  processing  system  to  protect  hardware,  software,  and  data  from  accidental 
+or  malicious  modifications,  misuse,  destruction  or  disclosure. 
+
+[ISO/IEC  2382-1:-,  term  01.01.41] 
+
+
+2.35  Data  transfer 
+
+Moving  of  data  from  one  computer  process  to  another  in  an  ordered  form. 
+
+2.36  (left  blank  intentionally) 
+
+2.37  Development  phase 
+
+Phase  in  which  the  actual  product  design  and  improvement  work  is  carried  out 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.38  Digital 
+
+Pertaining  to  data  that  consist  of  digits. 
+[ISO/IEC  2382-1:-,  term  01.02.04] 
+
+2.39  Digitization 
+
+To  capture  data  of  a  physical  nature  using  a  computer  program  and  to  represent 
+those  data  in  alphanumeric  form. 
+
+2.40  Digitize  (verb) 
+
+To  express  or  represent  in  a  digital  form  data  that  are  not  discrete  data. 
+
+Example:  To  obtain  a  digital  representation  of  the  magnitude  of  a  physical  quan- 
+tity from  an  analog  representation  of  that  magnitude. 
+
+[ISO  2382-5:1989,  term  05.01.15] 
+
+2.41  DIL  (abbreviation) 
+Document  issuing  list  (see  2.51). 
+
+2.42  Magnetic  disk 
+
+A  flat  circular  plate  with  a  magnetizable  surface  layer  on  one  or  both  sides  of 
+which  data  can  be  stored. 
+
+[ISO  2382-12:1988,  term  12.01.36] 
+
+2.43  Diskette 
+
+A  small  magnetic  disk  enclosed  in  a  jacket. 
+
+NOTE  -  Sometimes  the  words  "diskette"  and  "floppy  disk"  are  used  interchange- 
+ably. 
+
+[ISO  2382-12:1988,  term  12.01.39] 
+
+2.44  Display 
+
+A  visual  presentation  of  data. 
+[ISO  2382-13:1984,  term  13.03.01] 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.45  Display  device 
+
+An  output  unit  that  gives  a  visual  representation  of  data. 
+
+NOTE  -  Usually  the  data  are  displayed  temporarily;  however,  arrangements  may  be 
+made  for  producing  a  hard  copy  of  this  representation. 
+
+[ISO  2382-12:1988,  term  12.08.12] 
+
+2.46  Display  image 
+
+A  collection  of  display  elements  or  segments  that  are  represented  together  at 
+any  one  time  on  a  display  surface. 
+
+[ISO  2382-13:1984,  term  13.03.03] 
+
+2.47  Display  surface 
+
+In  a  display  device,  that  medium  on  which  display  images  may  appear. 
+Examples:  The  screen  of  a  cathode  ray  tube;  the  paper  in  a  plotter. 
+[ISO  2382-13:1984,  term  13.04.01] 
+
+2.48  Distribution  phase 
+
+The  issuing  and  dissemination  of  the  approved  documents,  or  portions  thereof,  to 
+the  Document  issuing  list  (2.51). 
+
+2.49  Document 
+
+(1)  A  data  medium  and  the  data  recorded  on  it,  that  generally  has  permanence 
+and  that  can  be  read  by  man  or  machine. 
+
+[IS0/IEC  JTC  1/SC  1  N  1058  rev.,  term  17.03.44] 
+
+(2)  Information  on  a  data  carrier  treated  as  a  unit. 
+[IS0/TC  10/SC  1/WG  5  N  102] 
+
+2.50  Document  content  security 
+
+Security  of  the  document  with  respect  to  authorization  and  copyright.  This  in- 
+cludes the  various  levels  of  authorization  security  and  copyright  security. 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+2.51  Document  issuing  list 
+
+
+A  list  of  documents  issued  at  one  and  the  same  time.  In  addition  to  information 
+on  document  identities,  revision  index,  etc.,  the  document  issuing  list  contains 
+full  information  on  subscriber's  name,  address,  desired  medium,  number  of  copies 
+and  authorization  level  of  the  subscriber. 
+
+
+2.52  Documentation 
+
+(1)  The  management  of  documents,  which  may  include  the  actions  of  identifying, 
+acquiring,  processing,  storing  and  dissemination. 
+
+(2)  A  collection  of  documents  on  a  given  subject. 
+
+(3)  Collection  of  various  documents  concerning  one  or  more  specific  aspects. 
+NOTE  -  Examples  include  technical,  commercial  and  other  documents. 
+
+[ISO/TC  10/SC  1/WG  5  N  102] 
+
+2.53  Documentation  security 
+
+Security  of  documentation  during  the  entire  product  design  process,  including 
+communication  security,  installation  and  operational  security,  system  security 
+and  security  of  document  content. 
+
+2.54  EDP  (abbreviation) 
+Electronic  data  processing  (see  2.55). 
+
+2.55  Electronic  data  processing 
+
+Data  processing  performed  predominantly  by  electronic  devices. 
+
+2.56  Field 
+
+On  a  data  medium  or  in  storage,  a  specified  area  used  for  a  particular  class  of 
+data  elements. 
+
+Example:  A  group  of  character  positions  used  to  enter  or  display  wage  rates  on  a 
+screen. 
+
+[ISO  2382-4:1987,  term  04.07.02] 
+
+2.57  File 
+
+A  named  set  of  records  stored  or  processed  as  a  unit. 
+[ISO  2382-4:1987,  term  04.07.10] 
+
+
+10 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.58  Floppy    (disk) 
+Flexible  disk 
+
+A  flexible  magnetic  disk  enclosed  in  a  protective  container. 
+
+[ISO  2382-12:1988,  term  12.01.37] 
+
+2.59  Geometric  modeling 
+
+A  modeling  technique  which  represents  three-dimensional  shapes  in  a  computer  in 
+a  form  that  can  be  manipulated. 
+
+[ISO/IEC  2382-24:-,  term  24.02.03] 
+
+2.60  GKS  (abbreviation) 
+Graphical  Kernel  System  (see  2.63). 
+
+2.61  Graphic  character 
+
+A  character,  other  than  a  control  character,  that  has  a  visual  representation 
+and  is  normally  produced  by  writing,  printing  or  displaying. 
+
+[ISO  2382-4:1987,  term  04.03.01] 
+
+2.62  Graphic  monitor 
+
+A  functional  unit  that  observes  and  records  selected  activities  within  a  data 
+processing  system  for  analysis  and  displays  these  images  in  a  two-dimensional 
+graphics  mode. 
+
+2.63  Graphical  Kernel  System  (GKS) 
+
+ISO  7942:1985,  Information  processing  systems  -  Computer  graphics  -  Graphical 
+Kernel  System  (GKS)  functional  description. 
+
+The  standard  provides  a  set  of  functions  for  computer  graphics  programming.  GKS 
+defines  a  graphics  nucleus  of  a  graphics  system.  It  provides  a  functional  inter- 
+face between  an  application  program  and  a  configuration  of  graphical  input  and 
+output  devices. 
+
+2.64  Graphical  model 
+
+A  two-  or  three-dimensional  image  display  of  an  object. 
+
+2.65  Grid 
+
+A  set  of  points  organized  in  a  matrix  used  to  enter  positions  on  a  screen. 
+[ISO/IEC  JTC  1/SC  1  N  1077,  term  24.04.25] 
+
+
+11 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.66     Hard  copy 
+
+
+A  permanent  copy  of  a  display  image  generated  on  an  output  device  such  as  a 
+printer  or  plotter,  and  which  can  be  carried  away. 
+
+[ISO/IEC  2382-1:-,  term  01.06.04] 
+
+
+2.67  Hard  disk 
+
+A  fixed  magnetic  disk. 
+
+[ISO  2382-12:1988,  term  12.01.38] 
+
+2.68  Hardware 
+
+All  or  part  of  the  physical  components  of  an  information  processing  system. 
+[ISO/IEC  2382-1:-,  term  01.01.05] 
+
+2.69  Hidden  line 
+
+(1)  A  line  segment  that  represents  an  edge  obscured  from  view  in  a  two- 
+dimensional  projection  of  a  three-dimensional  object. 
+
+[ISO  2382-13:1984,  term  13.02.10] 
+
+(2)  Line  or  segment  of  a  line  which  can  be  masked  in  a  three-dimensional  view 
+of  an  object. 
+
+[ISO/IEC  JTC  1/SC  1  N  1077,  term  24.04.26] 
+
+2.69.1  Hidden  outline 
+
+A  line  representing  a  contour  surface  or  edge  which  is  invisible  from  the 
+viewer's  point  of  observation  or  covered  by  other  parts  of  the  assembly. 
+
+[ISO/TC  10  term] 
+
+2.70  IGES  (abbreviation) 
+
+Initial  Graphics  Exchange  Specification  {see  2.73). 
+
+2.71  Information  (in  information  processing) 
+
+Knowledge  concerning  any  objects,  such  as  facts,  events,  things,  processes,  or 
+ideas,  including  concepts,  that  within  a  certain  context  has  a  particular 
+meaning. 
+
+[ISO/IEC  2382-1:-,  term  01.01.01] 
+
+
+12 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+2.72  Information  processing 
+
+The  systematic  performance  of  operations  upon  information,  that  includes  data 
+processing  and  may  include  operations  such  as  data  communication  and  office 
+automation. 
+
+NOTE  -  The  term  information  processing  must  not  be  used  as  a  synonym  for  data 
+processing. 
+
+[ISO/IEC  2382-1:-,  term  01.01.04] 
+
+2.73  Initial  Graphics  Exchange  Specification 
+
+Standard  NIST  IR  4412:1990  for  the  transfer  of  CAD  data  from  one  application 
+program  to  another. 
+
+2.74  Input  unit 
+Input  device 
+
+A  device  by  which  data  can  be  entered  into  a  computer. 
+
+[ISO  2382-11:1987,  term  11.01.23] 
+
+2 . 75  Input-Output  (adjective) 
+1/0  (adjective) 
+
+Pertaining  to  a  device,  process  or  channel  involved  in  an  input  process  and  in 
+an  output  process,  concurrently  or  not,  or  to  their  associated  data  or  states. 
+
+NOTE  -  The  phrase  "input-output"  may  be  used  in  place  of  "input-output  data", 
+"input-output  signals",  "input-output  process"  when  such  a  usage  is  clear  in  a 
+given  context. 
+
+[ISO  2382-6:1987,  term  06.02.07] 
+
+2.76  Installation  security 
+
+The  physical  security  of  the  computing  device  and  storage  media  on  which  the 
+data  are  processed,  including  security  against  problems  related  to  electrical 
+supply,  ventilation,  cooling,  magnetic  induction,  electrostatic  energy  and 
+physical  trespassing. 
+
+2.77  Instruction 
+
+Statement  (deprecated  in  this  sense) 
+
+A  language  construct  that  specifies  an  operation  and  identifies  its  operands,  if 
+any . 
+
+[ISO/IEC  2382-7:1989,  term  07.06.01] 
+
+
+13 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+2.78  Conversational  mode 
+Interactive  mode 
+Time  sharing  (deprecated  in  this  sense) 
+
+
+A  mode  of  operation  of  a  computer  system  in  which  a  sequence  of  alternating  en- 
+tries and  responses  between  a  user  and  the  system  takes  place  in  a  manner  simi- 
+lar to  a  dialogue  between  two  persons. 
+
+[ISO  2382-10:1979,  term  10.03.03] 
+
+
+2.79  Interface 
+
+A  shared  boundary  between  two  functional  units,  defined  by  functional  charac- 
+teristics, common  physical  interconnection  characteristics,  signal  character- 
+istics, and  other  characteristics,  as  appropriate. 
+
+NOTE  -  The  concept  involves  the  specification  of  the  connection  of  two  devices 
+having  different  functions. 
+
+[ISO  2382-9:1984,  term  09.01.01] 
+
+2.80  Interface  (user  interface) 
+
+The  management  routines  of  a  data  processing  system  that  controls  the  method, 
+devices  and  management  of  the  input  and  output  of  data,  normally  handled  by  the 
+application  package  or  the  operating  system. 
+
+2.81  Issue  (verb) 
+
+To  transfer  a  document  from  check  approval  to  storage  phase  and  thereby  make  it 
+available  for  reading  and  distribution. 
+
+2.82  Issuing  and  distribution  phase 
+
+The  phase  in  which  the  documents  are  issued  and  distributed;  it  takes  place 
+between  the  approval  and  storage  phases. 
+
+2.83  Item 
+
+(1)  Component,  part,  element  or  physical  feature  of  an  object  represented  on  a 
+drawing. 
+
+[ISO  10209-1:-,  term  2.6] 
+
+(2)  A  basic  part,  component,  equipment,  functional  unit,  etc.,  which  usually  is 
+represented  by  a  graphical  symbol  on  a  diagram. 
+
+Examples:  Resistors,  relays,  generators,  amplifiers,  power  supply  units  and 
+switchgear  assemblies  may  all  be  described  as  items  for  the  purpose  of  desig- 
+nation. 
+
+[IEC  750:1983,  term  2.4] 
+
+
+14 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.84  Keyboard 
+
+An  arrangement  of  typing  and  function  keys  laid  out  in  a  specified  manner. 
+
+[ISO  9241-4:-,  term  3.2] 
+
+2.85  Keypunch 
+Keyboard  punch 
+
+A  keyboard-actuated  punch  that  punches  holes  in  a  data  medium. 
+
+[ISO  2382-12:1988,  term  12.06.06] 
+
+2.86  Layer 
+
+In  network  architecture,  a  group  of  services,  functions  and  protocols  that  is 
+complete  from  a  conceptual  point  of  view,  that  is  one  out  of  a  set  of  hierarchi- 
+cally arranged  groups,  and  that  extends  across  all  systems  that  conform  to  the 
+network  architecture. 
+
+[ISO  2382-18:1987,  term  18.02.04] 
+
+2.87  Level 
+
+A  degree  of  subordination  of  an  item  in  a  hierarchic  arrangement. 
+
+2.88  Library  {of  data) 
+A  set  of  related  files. 
+
+2.89  List 
+
+An  ordered  set  of  data  elements. 
+[ISO  2382-4:1987,  term  04.08.01] 
+
+2.90  Locator 
+
+An  input  device  that  provides  coordinates  of  a  position. 
+Examples:  A  mouse,  a  tablet. 
+[ISO  2382-13:1984,  term  13.04.17] 
+
+2.91  Mainframe 
+
+A  computer,  usually  in  a  computer  center,  with  extensive  capabilities  and  re- 
+sources to  which  other  computers  may  be  connected  so  that  they  can  share  fa- 
+cilities. 
+
+[ISO/IEC  2382-1:-,  term  01.03.02] 
+
+15 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.92  Master  print 
+
+A  document  used  strictly  for  reproduction  of  hard  copies.  This  can  be  either  a 
+plotted  document  or  an  aperture  card.  In  the  manual  process,  this  is  normally  a 
+transparency. 
+
+2.93  Matrix 
+
+A  rectangular  array  of  elements,  arranged  in  rows  and  columns  that  may  be  ma- 
+nipulated according  to  the  rules  of  matrix  algebra. 
+
+2.94  Menu 
+
+A  list  of  options  displayed  to  the  user  by  a  data  processing  system,  from  which 
+the  user  can  select  an  action  to  be  initiated. 
+
+
+[ISO/IEC  2382-1:-,  term  01.06.06] 
+
+2.95  Mesh  network 
+
+A  network  in  which  there  are  at  least  two  nodes  with  two  or  more  paths  between 
+them. 
+
+[ISO  2382-18:1987,  term  18.01.12] 
+
+2.96  Microcomputer 
+
+A  digital  computer  whose  processing  unit  consists  of  one  or  more  micropro- 
+cessors, and  includes  storage  and  input-output  facilities. 
+
+[ISO/IEC  2382-1:-,  term  01.03.17] 
+
+2.97  Minicomputer 
+
+A  digital  computer  that  is  functionally  intermediate  between  a  microcomputer  and 
+a  mainframe. 
+
+[ISO/IEC  2382-1:-,  term  01.03.18] 
+
+2.98  Monitor 
+
+A  device  that  observes  and  records  selected  activities  within  a  data  processing 
+system  for  analysis. 
+
+NOTE  -  Possible  uses  are  to  indicate  significant  departure  from  the  norm,  or  to 
+determine  levels  of  utilization  of  particular  functional  units. 
+
+[ISO  2382-12:1988,  term  12.08.20] 
+
+
+16 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+2.99  Numeral 
+
+A  discrete  representation  of  a  number. 
+
+Example:  The  following  are  four  different  numerals  that  represent  the  same  num- 
+ber, i.e.  a  dozen,  by  the  methods  shown: 
+
+Twelve  by  a  word  in  the  English  language; 
+
+12  in  the  decimal  numeration  system; 
+
+XII  by  a  Roman  numeral; 
+
+1100  in  the  binary  numeration  system. 
+
+[ISO  2382-5:1989,  term  05.01.06] 
+
+2.100  Numeric 
+Numerical 
+
+Pertaining  to  data  that  consist  of  numerals. 
+
+[ISO/IEC  2382-1:-,  term  01.02.03] 
+
+2.101  Numerical  control 
+NC  (abbreviation) 
+
+(1)  Automatic  control  of  a  process  performed  by  a  device  that  makes  use  of  nu- 
+meric data  usually  introduced  while  the  operation  is  in  progress. 
+
+NOTE  -  The  term  "numerical  control"  is  commonly  used  in  machine-tool  appli- 
+cations . 
+
+(2)  A  technique  of  operating  machine  tools  in  which  the  motion  is  determined  by 
+numerically  coded  commands. 
+
+NOTE  -  These  commands  may  be  generated  by  a  CAD/CAM  system  on  tapes  that  guide  a 
+
+machine  tool. 
+
+[ISO/IEC  2382-24:-,  term  24.03.01] 
+
+2.101.1  Numerically  controlled  draughting  machine 
+
+An  output  machine  from  a  computer  for  producing  technical  drawings. 
+
+NOTE  -  These  machines  are  often  called  NC-draughting  machines  or  plotters. 
+
+[ISO  9179-1:1988,  term  5.1] 
+
+2.102-  Open  Systems  Interconnection  reference  model 
+OSI  reference  model 
+
+A  model  that  describes  the  general  principles  of  the  open  systems  interconnec- 
+tion, and  the  purpose  and  the  hierarchical  arrangement  of  its  seven  layers. 
+
+
+17 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.103  Operating  security 
+
+Procedures  and  general  measures  intended  to  prevent  intentional  and  uninten- 
+tional damage  to  the  operation  of  a  data  processing  system. 
+
+2.104  Operating  system 
+
+Software  that  controls  the  execution  of  programs  and  that  may  provide  services 
+such  as  resource  allocation,  scheduling,  input-output  control,  and  data  manage- 
+ment. 
+
+NOTE  -  Although  operating  systems  are  predominantly  software,  partial  hardware 
+implementations  are  possible. 
+
+[IS0/IEC  2382-1:-,  term  01.04.05] 
+
+2.105  Operation 
+
+A  well-defined  action  that,  when  applied  ta  any  permissible  combination  of  known 
+entities,  produces  a  new  entity. 
+
+Example:  The  process  of  addition  in  arithmetic;  in  adding  five  and  three  and  ob- 
+taining eight,  the  numbers  five  and  three  are  the  operands,  the  number  eight  is 
+the  result,  and  the  plus  sign  is  the  operator  indicating  that  the  operation  per- 
+formed is  addition. 
+
+[ISO  2382-2:1976,  term  02.10.01] 
+
+2.106  Original  backup 
+
+An  exact  copy  of  the  original  document  used  for  data  security.  This  is  normally 
+on  the  same  medium  and  must  contain  the  same  data.  It  is  physically  stored  away 
+from  the  original  document. 
+
+2.107  Original  data 
+
+The  data  set  which  has  been  authorized  for  further  handling  by  the  checking  and 
+approval  process. 
+
+2.108  Original  document 
+
+The  combination  of  original  data  on  the  original  medium  constituting  the  techni- 
+cal definition  of  a  product  and  also  forming  the  base  for  changes  made  during 
+the  life  of  the  product. 
+
+2.109  Original  drawing 
+
+Drawing  giving  the  currently  approved  information  or  data  and  on  which  the 
+latest  revision  has  been  recorded. 
+
+[ISO  10209-1:-,  term  3.14] 
+
+
+18 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.110  Original  medium 
+
+The  storage  device  for  the  original  document.  In  the  CAD  technique  this  is  nor- 
+mally magnetic  tape,  hard  disk  or  floppy  disk. 
+
+2.111  Output 
+
+See  Input-Output  (2.75). 
+
+2.112  Output  unit 
+Output  device 
+
+A  device  by  which  data  can  he  conveyed  out  of  a  computer. 
+
+[ISO  2382-11:1987,  term  11.01.23] 
+
+2.113  PDES  (abbreviation) 
+
+Product  Data  Exchange  Standard  (see  2.122). 
+
+2.114  Peripheral  equipment 
+
+Any  device  that  is  controlled  by  and  can  communicate  with  a  particular  computer. 
+Examples:  Input-Output  units,  auxiliary  storage. 
+[ISO/IEC  2382-1:-,  term  01.03.07] 
+
+2.115  Phasing  out 
+
+Removal  of  the  design  documents  of  a  product  from  the  storage  for,  active  docu- 
+ments to  the  storage  where  access  time  may  be  considerable.  This  occurs  after  a 
+decision  has  been  made  to  withdraw  a  product  from  production. 
+
+2.116  Pixel 
+Picture  element 
+PEL  (abbreviation) 
+
+The  smallest  element  of  a  display  surface  that  can  be  independently  assigned 
+colour  or  intensity. 
+
+[ISO  2382-13:1984,  term  13.03.07] 
+
+2.117  Plotter 
+
+(1)  An  output  unit  that  directly  produces  a  hard  copy  record  of  data  on  a  re- 
+movable medium,  in  the  form  of  a  two-dimensional  graphic  representation. 
+
+[ISO  2382-12:1988,  term  12.07.02] 
+
+(2)  See  numerically  controlled  draughting  machine  (2.101.1). 
+
+19 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.118  Postprocessor 
+
+A  computer  program  that  effects  some  final  computation  or  organization. 
+
+2.119  Preprocessor 
+
+A  computer  program  that  effects  some  preliminary  computation  or  organization. 
+
+2.120  (Language)  preprocessor 
+
+A  functional  unit  that  effects  preparatory  processing  of  computer  programs. 
+Example:  A  macrogenerator  may  function  as  a  preprocessor  of  a  translator. 
+[ISO/IEC  2382-7:1989,  term  07.03.25] 
+
+2.121  Printer 
+
+An  output  device  that  produces  a  hard  copy  record  of  data  mainly  in  the  form  of 
+a  sequence  of  discrete  graphic  characters  belonging  to  one  or  more  predetermined 
+character  sets. 
+
+NOTE  -  In  many  instances,  printers  may  be  used  as  plotters. 
+
+[ISO  2382-12:1988,  term  12.07.01] 
+
+2.122  Product  Data  Exchange  Standard  (PDES) 
+
+Draft  International  Standard  (IS0/TC  184)  for  the  transfer  of  CAD  data. 
+
+2.123  Three-dimensional  projection 
+
+Means  of  projecting  a  three-dimensional  object  on  a  plane. 
+
+2.124  Raster  display  device 
+
+A  display  device  in  which  display  images  are  generated  by  raster  graphics. 
+[ISO  2382-13:1984,  term  13.04.03] 
+
+2.125  Raster  graphics 
+
+Computer  graphics  in  which  a  display  image  is  composed  of  an  array  of  pixels 
+arranged  in  rows  and  columns. 
+
+
+[ISO  2382-13:1984,  term  13.01.03] 
+
+
+20 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+2.126  Read-only  storage 
+Read-only  store/GB/ 
+Fixed  storage 
+
+Nonerasable  storage  (deprecated) 
+Read-only  memory  (deprecated) 
+
+A  storage  device  whose  contents  cannot  be  modified,  except  by  a  particular  user, 
+or  when  operating  under  particular  conditions. 
+
+Example:  A  storage  device  in  which  writing  is  prevented  by  a  lockout. 
+
+2.127  Read-only  memory 
+ROM  (abbreviation) 
+
+A  storage  device  in  which  data,  under  normal  conditions,  can  only  be  read. 
+
+[ISO  2382-12:1988,  term  12.02.13] 
+
+2.128  Record 
+
+A  set  of  data  elements  treated  as  a  unit. 
+[ISO  2382-4:1987,  term  04.07.03] 
+
+2.129  Revision  phase 
+
+Phase  in  which  revisions  are  made.  These  revisions  are  subsequently  checked  and 
+approved. 
+
+2.130  Security 
+
+See  Operating  security  (2.103),  Installation  security  (2.76),  Communication  se- 
+curity (2.22),  Documentation  security  (2.53),  Data  processing  system  security 
+(2.34.1)  and  Document  content  security  (2.50). 
+
+2.131  SET  (abbreviation) 
+
+Standard  d'Echange  et  de  Transfert  (see  2.136). 
+
+2.132  Signature  document 
+
+The  original  document  with  the  addition  of  approval  required  by  customer  or 
+authority.  This  document  is  normally  paper-based  and  must  not  be  exposed  to  any 
+form  of  change  in  addition  to  the  stamp  it  may  require  for  approval. 
+
+
+21 
+
+
+IS    15025  :  2001 
+ISO/TR    10623  :  1991 
+
+
+2.133  Soft  copy 
+
+A  nonpermanent  display  image. 
+Example:  A  cathode  ray  tube  display. 
+[ISO  2382-13:1984,  term  13.03.04] 
+
+2.134  Software 
+
+All  or  part  of  the  programs,  procedures,  rules,  and  associated  documentation 
+of  a  data  processing  system. 
+
+NOTE  -  Software  is  an  intellectual  creation  that  is  independent  of  the  medium  on 
+which  it  is  recorded. 
+
+[IS0/IEC  2382-1:-,  term  01.01.06] 
+
+2.135  Solid  model 
+
+A  mode  of  representation  and  display  showing  the  solid  properties  of  a  three- 
+dimensional  object. 
+
+2.135.1  Solid  modeling 
+
+A  three-dimensional  geometric  modeling  which  deals  with  the  solid  character- 
+istics of  an  object  in  order  to  represent  its  internal  structure  as  well  as  its 
+external  shapes. 
+
+[IS0/IEC  2382-24:-,  term  24.02.04] 
+
+2.136  Standard  d'Echange  et  de  Transfert  (SET) 
+
+French  standard  {NF  Z  68-300:1989)  for  the  transfer  of  modelling  data  and  infor- 
+mation. 
+
+
+2.137  Standard  for  the  Exchange  of  Product  Model  Data  (STEP) 
+
+Draft  International  Standard  (ISO  10303,  under  preparation)  intended  to  replace 
+IGES,  SET  and  PDES  (ISO/TC  184). 
+
+
+2.138  STEP  (abbreviation) 
+
+Standard  for  the  Exchange  of  Product  Model  Data  (see  2.137) 
+
+2.139  Storage  phase 
+
+Phase  in  which  the  design  documentation  is  stored.  Documents  can  then  be  lent 
+for  read/copy  or  for  revisions. 
+
+
+22 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+2.140  Subscriber 
+
+A  person  authorized  to  use  one  or  more  services  of  an  office  automation  system. 
+[IS0/IEC  2382-27:-,    term  27.01.03] 
+
+2.141  Surface  model 
+
+A  mode  of  display  showing  the  surfaces  of  a  three-dimensional  object. 
+
+2.142  Symbol  [character]  [alphabetic]  [binary  digit]  string 
+
+A  string  consisting  solely  of  symbols  [of  characters]  [of  letters  from  the  same 
+alphabet]  [of  binary  digits] . 
+
+[ISO  2382-4:1987,  term  04.05.02] 
+
+2.143  Task 
+
+In  a  multiprogramming  or  multiprocessing  environment,  one  or  more  sequences  of 
+instructions  treated  by  a  control  program  as  an  element  of  work  to  be  accom- 
+plished by  a  computer. 
+
+[ISO  2382-10:1979,  term  10.02.02] 
+
+2.144  (User)  terminal 
+
+An  input-output  unit  by  which  a  user  communicates  with  a  computer. 
+[ISO  2382-12:1988,  term  12.08.01] 
+
+2.145  Transfer  protocol 
+
+The  means  by  which  data  are  transferred  from  one  application  package  to  another. 
+
+2.146  Turnkey  system 
+
+A  data  processing  system  that  is  ready  to  use  when  installed,  and  supplied  to 
+the  user  in  a  ready-to-run  condition  possibly  customized  to  a  specific  user  or 
+application. 
+
+NOTE  -  Delivery  does  not  necessarily  include  preparatory  work  on  the  user's 
+data. 
+
+[ISO/IEC  2382-1:-,  term  01.01.45] 
+
+
+23 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+2.147  Wire  frame  representation 
+
+
+A  mode  of  display  shoving  all  edges  of  a  three-dimensional  object  without 
+distinguishing  hidden  lines. 
+
+[ISO  2382-13:1984,  term  13.02.11] 
+
+
+2.148  Word 
+
+A  character  string  considered  as  a  unit  for  a  given  purpose. 
+[ISO  2382-4:1987,  term  04.06.01] 
+
+2.149  Workstation 
+
+A  functional  unit  at  which  a  user  works. 
+
+NOTE  -  A  workstation  often  has  some  degree  of  data  processing  capability. 
+
+[ISO/IEC  2382-1:-,  term  01.03.11] 
+
+
+24 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+Annex  A 
+(informative) 
+
+Bibliography 
+
+ISO/IEC  2382-1 :-l),  Information  technology  -  Vocabulary  -  Part  1:  Fundamental 
+terms. 
+
+ISO  2382-2:1976,  Data  processing  -  Vocabulary  -  Section  02:  Arithmetic  and  logic 
+
+operations. 
+
+ISO  2382-4:1987,  Information  processing  systems  -  Vocabulary  -  Part  04:  Organiz- 
+ation of  data. 
+
+ISO  2382-5:1989,  Information  processing  systems  -  Vocabulary  -  Part  05:  Represen- 
+tation of  data. 
+
+ISO  2382-6:1987,  Information  processing  systems  -  Vocabulary  -  Part  06:  Prep- 
+aration and  handling  of  data. 
+
+ISO/IEC  2382-7:1989,  Information  technology  -  Vocabulary  -  Part  07:  Computer 
+programming . 
+
+ISO  2382-9:1984,  Data  processing  -  Vocabulary  -  Part  09:  Data  communication. 
+
+ISO  2382-10:1979,  Data  processing  -  Vocabulary  -  Section  10:  Operating  techniques 
+and  facilities. 
+
+ISO  2382-11:1987,  Information  processing  systems  -  Vocabulary  -  Part  11:  Proc- 
+essing units. 
+
+ISO  2382-12:1988,  Information  processing  systems  -  Vocabulary  -  Part  12:  Periph- 
+eral equipment. 
+
+ISO  2382-13:1984,  Data  processing  -  Vocabulary  -  Part  13:  Computer  graphics. 
+
+ISO/IEC  2382-17: -2),  Information  technology  -  Vocabulary  -  Part  17:  Databases. 
+
+ISO  2382-18:1987,  Information  processing  systems  -  Vocabulary  -  Part  18:  Distrib- 
+uted data  processing. 
+
+ISO/IEC  2382-24: -2),  Information  processing  systems  -  Vocabulary  -  Part  24: 
+Computer-integrated  manufacturing . 
+
+ISO/IEC  2382-27:-,  Information  technology  -  Vocabulary  -  Part  27:  Office 
+automation. 
+
+ISO  5456-1: -2),  Technical  drawings  -  Projection  methods  -  Part  1:  Survey. 
+
+ISO  7942:1985,  Information  processing  systems  -  Computer  graphics  -  Graphical 
+Kernel  System  (GKS)  functional  description. 
+
+
+25 
+
+
+IS  15025  :  2001 
+ISO/TR  10623  :  1991 
+
+
+ISO  9179-1:1988,  Technical  drawings  -  Numerically  controlled  draughting  machines 
+-  Part  1:  Vocabulary. 
+
+ISO  9241-4:-2),  Ergonomic  requirements  for  office  work  with  visual  display  ter- 
+minals (VDTs)  -  Part  4:  Keyboard  requirements. 
+
+ISO  10209-1: -3),  Technical  product  documentation  -  Vocabulary  -  Part  1:  Terms 
+relating  to  technical  drawings:  general  and  types  of  drawings. 
+
+ISO  10303: -2),  Exchange  of  product  model  data  -  Representation  and  format 
+description. 
+
+IEC  750:1983,  Item  designation  in  electrotechnology . 
+
+NF  Z  68-300:1989,  Automatisation  industrielle  -  Specifications  du  standard 
+d'echange  et  de  transfert  (SET). 
+
+NIST  IR  4412:1990,  Initial  graphics  exchange  specification. 
+
+
+1)  To  be  published.  (Revision  of  ISO  2382-1:1984) 
+
+2)  Under  preparation. 
+
+3)  To  be  published. 
+
+
+26 
+
+
+Bureau  of  Indian  Standards 
+
+BIS  is  a  statutory  institution  established  under  the  Bureau  of  Indian  Standards  Act+  1986  to  promote 
+harmonious  development  of  the  activities  of  stardardization,  marking  and  quality  certification  of  goods  and 
+attending  to  connected  matters  in  the  country. 
+
+Copyright 
+
+BIS  has  the  copyright  of  all  its  publications.  No  part  of  these  publications  may  be  reproduced  in  any  form 
+without  the  prior  permission  in  writing  of  BIS.  This  does  not  preclude  the  free  use,  in  the  course  of 
+implementing  the  standard,  of  necessary  details,  such  as  symbols  and  sizes,  type  or  grade  designations. 
+Enquiries  relating  to  copyright  be  addressed  to  the  Director  (Publication),  BIS. 
+
+Review  of  Indian  Standards 
+
+Amendments  are  issued  to  standards  as  the  need  arises  on  the  basis  of  comments.  Standards  are  also  reviewed 
+periodically;  a  standard  along  with  amendments  is  reaffirmed  when  such  review  indicates  that  no  changes  are 
+needed;  if  the  review  indicates  that  changes  are  needed,  it  is  taken  up  for  revision.  Users  of  Indian  Standards 
+should  ascertain  that  they  are  in  possession  of  the  latest  amendments  or  edition  by  referring  to  the  latest  issue 
+of 'BIS  Handbook'  and  'Standards:  Monthly  Additions'. 
+
+This  Indian  Standard  has  been  developed  from  Doc:  No.  BP  24  ( 0158  ). 
+
+Amendments  Issued  Since  Publication 
+
+
+Amend  No. 
+
+
+Date  of  Issue 
+
+
+Text  Affected 
+
+
+BUREAU  OF  INDIAN  STANDARDS 
+Headquarters: 
+
+Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg,  New  Delhi  1 10002 
+Telephones:  323  01  31,  323  3375,  323  94  02 
+
+Regional  Offices: 
+
+Central      :  Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg 
+
+
+Telegrams:  Manaksanstha 
+(Common  to  all  offices) 
+
+Telephone 
+
+323  76  17,323  38  41 
+
+
+NEW  DELHI  110002 
+
+Eastern      :  1/14  C.I.T.  Scheme  VII M,  V.I.P.  Road,  Kankurgachi 
+CALCUTTA  700054 
+
+Northern    :  SCO  335-336,  Sector  34-A,  CHANDIGARH  160022 
+Southern    :  C.I.T.  Campus,  IV  Cross  Road,  CHENNAI  6001 13 
+
+Western      :  Manakalaya,  E9  MIDC,  Marol,  Andheri  (East) 
+MUMBAI  400093 
+
+Branches  :  AHMEDABAD.  BANGALORE.  BHOPAL.  BHUBANESHWAR. 
+COIMBATORE.  FARIDABAD.  GHAZIABAD.  GUWAHATI. 
+HYDERABAD.  JAIPUR.  KANPUR.  LUCKNOW.  NAGPUR. 
+NALAGARH,  PATNA.  PUNE.  RAJKOT.  THIRUVANANTHAPURAM. 
+
+
+(-337  84  99,337  85  61 
+1337  86  26,337  9120 
+
+
+{ 
+
+
+60  38  43 
+60  20  25 
+r254  12  16,254  14  42 
+1254  25  19,254  13  15 
+
+r832  92  95,  832  78  58 
+1832  78  91,832  78  92 
+
+
+Printed  at  Simco  Printing  Press,  Delhi 
+
+

@@ -1,0 +1,62 @@
+{
+  "is_number": "IS IS_1201",
+  "standard_id": "IS IS_1201",
+  "title": "Indian Standard Specification / Test Method (IS IS_1201)",
+  "ia_identifier": "IS_1201",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers methods of sampling bitumen and bituminous materials, binders, emulsions, reclaimed asphalt material in their liquid, semi-solid or solid states supplied in any of the following forms: a) Cans or small containers, drums, barrels and bags of different sizes depending on the state of the material; b) Solid materials in loose form; c) Rail tank wagon and tanker trucks or lorries; and d) Bulk storage tanks and other types of bulk storage.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1206 (PART 1)",
+      "standard_id": "IS 1206 (PART 1)",
+      "title": "Indian Standard Specification / Test Method (IS 1206 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1206 (PART 2)",
+      "standard_id": "IS 1206 (Part 2):2022",
+      "title": "Part 2 : 2022: METHODS FOR TESTING TAR AND BITUMINOUS MATERIALS - Determination of Viscosity Part 2 Absolute Viscosity",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1206 (PART 3)",
+      "standard_id": "IS 1206 (Part 3):2021",
+      "title": "Part 3 : 2021: METHODS FOR TESTING TAR AND BITUMINOUS MATERIALS - Determination of Viscosity-Part 3 Kinematic Viscosity-",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_1201"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 29063
+}

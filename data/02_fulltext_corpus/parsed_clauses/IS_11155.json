@@ -1,0 +1,432 @@
+{
+  "is_number": "IS IS_11155",
+  "standard_id": "IS IS_11155",
+  "title": "Indian Standard Specification / Test Method (IS IS_11155)",
+  "ia_identifier": "IS_11155",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard deals with procedures for construction of concrete and masonry spillways and similar overflow structures.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 456",
+      "standard_id": "IS 456:2000",
+      "title": "Plain and Reinforced Concrete - Code of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 457",
+      "standard_id": "IS 457:1957",
+      "title": "Code of Practice for General Construction of Plain and Reinforced Concrete for Dams and Other Massive Structures",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8605",
+      "standard_id": "IS 8605:1977",
+      "title": "Code of practice for construction of masonry in dams",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6512",
+      "standard_id": "IS 6512:2019",
+      "title": "Criteria for Design of Solid Gravity Dams ( Second Revision )",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10135",
+      "standard_id": "IS 10135:1985",
+      "title": "Code of practice for drainage system for gravity dams, their foundations and abutments",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9461",
+      "standard_id": "IS 9461:1980",
+      "title": "Guidelines for data required for design of temporary river diversion works",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9795 (PART 1)",
+      "standard_id": "IS 9795 (Part 1):1981",
+      "title": "Guidelines for the choice of the type of diversion works, Part 1: Coffer dams",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10084 (PART 1)",
+      "standard_id": "IS 10084 (Part 1):1982",
+      "title": "Criteria for design of diversion works, Part 1: Coffer dams",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10084 (PART 2)",
+      "standard_id": "IS 10084 (Part 2):2014",
+      "title": "Part 2 : 2014: Design of Diversion Works - Criteria : Part 2 Diversion Channel and Open Cut or Conduit in the Body of Dam.",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10788 (PART 1)",
+      "standard_id": "IS 10788 (Part 1):1984",
+      "title": "Code of practice for construction of diversion works, Part 1: Cellular coffer dams",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13912",
+      "standard_id": "IS 13912:1993",
+      "title": "Closure of diversion channel and open cut or conduit in the body of dam - Code of practice",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9759",
+      "standard_id": "IS 9759:1981",
+      "title": "Guidelines for dewatering during construction",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7861 (PART 1)",
+      "standard_id": "IS 7861 (Part 1):1975",
+      "title": "Code of practice for extreme weather concreting, Part 1: Recommended practice for hot weather concreting",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7861",
+      "standard_id": "IS 7861",
+      "title": "Indian Standard Specification / Test Method (IS 7861)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6066",
+      "standard_id": "IS 6066:1994",
+      "title": "Pressure grouting of rock foundations in river valley projects - Recommendations",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9103",
+      "standard_id": "IS 9103:1999",
+      "title": "Specification for Concrete Admixtures -",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 269",
+      "standard_id": "IS 269:2013",
+      "title": "Specification for Ordinary Portland Cement, 33 Grade",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 8112",
+      "standard_id": "IS 8112:2013",
+      "title": "Specification for 43 grade ordinary Portland cement",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1344",
+      "standard_id": "IS 1344:1981",
+      "title": "Specification for calcined clay pozzolana",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1489",
+      "standard_id": "IS 1489",
+      "title": "Indian Standard Specification / Test Method (IS 1489)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1727",
+      "standard_id": "IS 1727:1967",
+      "title": "Methods of test for pozzolanic materials",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2541",
+      "standard_id": "IS 2541:1991",
+      "title": "Code of practice for preparation and use of lime concrete",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3812",
+      "standard_id": "IS 3812",
+      "title": "Indian Standard Specification / Test Method (IS 3812)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7861 (PART 2)",
+      "standard_id": "IS 7861 (Part 2):1981",
+      "title": "Code of practice for extreme weather concreting, Part 2: Recommended practice for cold weather concreting",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11309",
+      "standard_id": "IS 11309:1985",
+      "title": "Method of conducting pull-out test on anchor bars and rock bolts",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4461",
+      "standard_id": "IS 4461:1998",
+      "title": "Code of practice for joints in surface hydro-electric power stations",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12200",
+      "standard_id": "IS 12200:2001",
+      "title": "Provision of Water-Stops at Transverse Contraction Joints in Masonry and Concrete Dams - Code of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13645",
+      "standard_id": "IS 13645:1993",
+      "title": "Guniting the Upstream Face of Masonry Dams - Guidelines",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4967",
+      "standard_id": "IS 4967:1968",
+      "title": "Recommendations for seismic instrumentation for river valley projects",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6524",
+      "standard_id": "IS 6524:1972",
+      "title": "Code of practice for installation and observation of instruments for temperature measurements inside dams; resistance type thermometers",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7436 (PART 2)",
+      "standard_id": "IS 7436 (Part 2):2019",
+      "title": "Part 2 : 2019: Limits and Methods of Measurement of Radio Disturbance Characteristics Part 2 Electromagnetic Compatibility (EMC) — Requirements for Household Appliances, Electric Tools and Similar Apparatus Section 2 Emission — Product family standard ( Forth Revision )",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8282 (PART 1)",
+      "standard_id": "IS 8282 (Part 1):1976",
+      "title": "Code of practice for installation, maintenance and observations of pore pressure measuring devices in concrete and masonry dams, Part 1: Electrical resistance type cell",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10334",
+      "standard_id": "IS 10334:1982",
+      "title": "Code of practice for selection, splicing, installation and providing protection to the open ends of cables used for connecting resistance type measuring devices in concrete and masonry dams",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10434 (PART 1)",
+      "standard_id": "IS 10434 (Part 1):2003",
+      "title": "Installation, Maintenance and Observation of Deformation Measuring Devices in Concrete and Masonry Dams - Guidelines, Part 1: Resistance Type Jointmeters",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4623",
+      "standard_id": "IS 4623:2000",
+      "title": "Recommendations for Structural Design of Radial Gates",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10096",
+      "standard_id": "IS 10096",
+      "title": "Indian Standard Specification / Test Method (IS 10096)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4622",
+      "standard_id": "IS 4622:2020",
+      "title": "Recommendations for Structural Design of Fixed-Wheel Gates ( Fourth Revision )",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5620",
+      "standard_id": "IS 5620:2020",
+      "title": "Recommendations for Structural Design Criteria for Low Head Slide Gates ( Third Revision )",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9349",
+      "standard_id": "IS 9349:2006",
+      "title": "Recommendations for structural design of medium and high head slide gates",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7718",
+      "standard_id": "IS 7718:2018",
+      "title": "Recommendations for Inspection, Testing and Maintenance of Fixed Wheel and Slide Gate (Second Revision)",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11155"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 50088
+}

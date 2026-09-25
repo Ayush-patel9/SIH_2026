@@ -1,0 +1,87 @@
+{
+  "is_number": "IS IS_11889",
+  "standard_id": "IS IS_11889",
+  "title": "Indian Standard Specification / Test Method (IS IS_11889)",
+  "ia_identifier": "IS_11889",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11889) covers Indian Standard Specification / Test Method (IS IS_11889). This Indian Standard which is identical with ISO 2603 'Booths for simultaneous interpretation -- General characteristics and equipment', issued by the international Organization for Standardization (ISO), was adopted by the Indian Standards Institution on therecommendation of Acoustics Sectional Committee and approval of the Electrotechnicai Division Council, In this standard, certain terminology and conventions are not identical with those used in Indian Standards; attention is specially drawn to the following: Comma ( , ) has been used as a decimal marker while in Indian Standards, the current practice is to use point ( ' ) as the decimal marker. Cross Reference In this Indian Standard, the following International Standards are referred to. Please read in their respective place the following Indian Standards: International Standard Corresponding Indian Standard ISO 140/4, Acoustics — Measurement of sound IS : 9901 (Part 4)-1981 Measurement of sound Insulation in buildings and of buil",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 2603",
+      "standard_id": "IS/ISO 2603",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2603)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 140",
+      "standard_id": "IS/ISO 140",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 140)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9901 (PART 4)",
+      "standard_id": "IS 9901 (Part 4):1981",
+      "title": "Measurement of sound insulation in buildings and of building elements, Part 4: Field measurements of airborne sound insulation between rooms",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9302",
+      "standard_id": "IS 9302",
+      "title": "Indian Standard Specification / Test Method (IS 9302)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4043",
+      "standard_id": "IS/ISO 4043",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4043)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "booth with built-in equipment",
+    "booth with portable equipment",
+    "semi-permanent booth",
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11889"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "carbon dioxide concentration shall not exceed 0,10 %"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 24833
+}

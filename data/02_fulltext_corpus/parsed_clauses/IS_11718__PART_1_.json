@@ -1,0 +1,81 @@
+{
+  "is_number": "IS IS_11718__PART_1_",
+  "standard_id": "IS IS_11718__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_11718__PART_1_)",
+  "ia_identifier": "IS_11718__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard ( Part 1 ) applies to audio-visual, video and television systems and to the parts of which they are composed or which are used as auxiliaries to such systems in the field of education, training and similar applications. 1.2 These systems range from very simple general-purpose devices to highly professional equipment used, for example, for audio-visual distribution systems. 1.3 No attempt is made in this standard to classify equipment with regard to its characteristics. The particular combination of characteristics specified for a given system is that required to ensure optimum performance under conditions of normal operation. 1.4 This standard is confined to a description of the different characteristics and the methods of measurement; it does not attempt to specify performance.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11718",
+      "standard_id": "IS 11718",
+      "title": "Indian Standard Specification / Test Method (IS 11718)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2264",
+      "standard_id": "IS 2264:1963",
+      "title": "Preferred frequencies for acoustical measurements",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6964",
+      "standard_id": "IS 6964:2001",
+      "title": "Electroacoustics - Octave-Band and Fractional-Octave-Band Filters",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8159",
+      "standard_id": "IS 8159:1993",
+      "title": "Scales and sizes for plotting frequency characteristics and polar diagrams",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade bntaiy",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11718__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "terminals shall be marked with respect to polarity."
+    ]
+  },
+  "total_chars_parsed": 15852
+}

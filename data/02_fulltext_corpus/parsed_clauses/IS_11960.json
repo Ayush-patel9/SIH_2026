@@ -1,0 +1,63 @@
+{
+  "is_number": "IS IS_11960",
+  "standard_id": "IS IS_11960",
+  "title": "Indian Standard Specification / Test Method (IS IS_11960)",
+  "ia_identifier": "IS_11960",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard specifies the procedure for the metallographic determination of the presence, type and distribution of porosity and uncombined carbon in hardmetals.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 4499",
+      "standard_id": "IS/ISO 4499",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4499)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11520",
+      "standard_id": "IS 11520:2023",
+      "title": "Metallographic Sample Preparation Of Hardmetals - Method ( First Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11959",
+      "standard_id": "IS 11959:2023",
+      "title": "Metallographic Determination Of Microstructure In Hard Metals - Method ( First Revision )",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Carbon Defects",
+    "Eta-Phase/n - Phase",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11960"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 17363
+}

@@ -1,0 +1,64 @@
+{
+  "is_number": "IS IS_11816__PART_1_",
+  "standard_id": "IS IS_11816__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_11816__PART_1_)",
+  "ia_identifier": "IS_11816__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard gives guidance on the means of controlling attack by pests on cereals and pulses in storage. 1.2 Other aspects of storage of cereals and pulses are dealt with in Part 1 and 2 of this standard.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11816 (PART 3)",
+      "standard_id": "IS 11816 (Part 3):2018",
+      "title": "Part 3 : 2018: Storage of Cereals and Pulses Part 3 Control of Attack by Pests ( First Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6322",
+      "standard_id": "IS/ISO 6322",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6322)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6261",
+      "standard_id": "IS 6261:1971",
+      "title": "Methods of analysis for detection of insect and rodent contamination in grains and milled products",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade rrugineus",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11816__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "temperature rises to an unfavorable level, usually not above 42°C"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 20367
+}

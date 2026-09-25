@@ -1,0 +1,14553 @@
+•*•*•••••*•*•••• 
+
+
+
+
+
+
+^ 
+
+
+
+m^% 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+The Right to Information, The Right to Live' 
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New' 
+
+
+
+IS 14776-2 (2000) : Industrial Automation - Shop Floor 
+Production, Part 2: Application of the Reference Model for 
+Standardization and Methodology [PGD 18: Industrial and 
+Production Automation Systems and Robotics] 
+
+
+
+.^^_ 
+
+
+
+^sf m 
+
+
+
+^ 
+
+
+
+1 w 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen' 
+
+
+
+
+- M 
+
+
+
+
+
+
+
+BLANK PAGE 
+
+
+
+
+><3 
+
+
+
+^ri*jr.-^. 
+
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 14776 (Part2): 2000 
+ISO/TR 10314-2: 1991 
+
+Wrffo *IFffi ( Reaffirmed 2005 > 
+
+Indian Standard 
+
+INDUSTRIAL AUTOMATION — SHOP FLOOR 
+
+PRODUCTION 
+
+PART 2 APPLICATION OFTHE REFERENCE MODEL FOR STANDARDIZATION 
+
+AND METHODOLOGY 
+
+
+
+1CS 25.040.40 
+
+
+
+© BIS 2000 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+August 2000 Price Group 14 
+
+
+
+Industrial and Production Automation Systems and Robotics Sectional Committee, BP/PE 18 
+
+
+
+M ATIONAL FOREWORD 
+
+This Indian Standard ( Part 1 ) which is identical with 1SO/TR 1 03 1 4-2 : 1 991 'Industrial automation — Shop floor 
+production — Part 2 : Application of the reference model for standardization and methodology' issued by the 
+International Organization for Standardization ( ISO ), was adopted by the Bureau of Indian Standards on the 
+recommendations of the Industrial and Production Automation Systems and Robotics, Sectional Committee and 
+approval of the Basic & Production Engineering Division Council. 
+
+This standard describes Reference Model for Standardization and Methodology for identification of standard 
+requirements for industrial automation. This Part deals with the 'Application of the Reference Model and Methodology' 
+to the general area of industrial automation. 
+
+There is another standard on this subject which is published as Part 1 of this standard and is related to the 
+requirements for reference model for standardization and its methodology for identification of requirements. 
+
+The text of the ISO Standard has been approved as suitable for publication as Indian Standard without deviations. 
+Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn 
+to the following; 
+
+a) Wherever the words 'report' appear referring to this standard, they should be read as 'Indian Standard'. 
+
+b) Comma ( , ) has been used as a decimal marker in the International Standard while in Indian Standards, the 
+current practice is to use a point ( . ) as the decimal marker. 
+
+Wherever the reference of IEC 44 and IEC 65 is given, these may be referred to corresponding sectional committees 
+of ETDC, however corresponding to ISO/TC 1 84 and its sub committees/working groups, the work is being looked 
+after by BP 1 8 under BPDC of Bureau of Indian Standards. 
+
+
+
+IS 14776^ Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+Contents 
+
+
+
+1 Scope 
+
+
+
+Methodology for identification of areas of standards 2 
+
+2.1 An overview of the reference model 2 
+
+2.2 Procedures 6 
+
+2.3 Classification of areas for standards 7 
+
+Guide to using the procedures: structured questions 9 
+
+3.1 Structured questions 9" 
+
+3.2 Procedure Al; 
+
+
+
+3.3 Procedure A2 
+
+3.4 Procedure A3 
+
+3.5 Procedure Bl 
+
+3.6 Procedure B2 
+
+
+
+Subject-Action Interrelationships 10 
+
+Subject-Subject Interrelationships 12 
+
+Action- Action Interrelationships 14 
+
+Horizontal (Contextual) Interrelationships 16 
+
+Vertical Interrelationships 17 
+
+
+
+4 Identification of areas for standardization 1 8 
+
+4.1 Procedure Al 18 
+
+4.2 Procedure A2 20 
+
+4.3 Procedure A3 22 
+
+4.4 Procedure Bl 24 
+
+4.5 Procedure B2 25 
+
+5 Recommendations 25 
+
+Annexes 
+
+A Mapping of existing standards activities onto the model 26 
+
+B Illustrative areas of standards for cells of the matrices 34 
+
+
+
+(J) 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+Indian Standard 
+
+INDUSTRIAL AUTOMATION — SHOP FLOOR 
+
+PRODUCTION 
+
+PART 2 APPLICATION OF THE REFERENCE MODEL FOR STANDARDIZATION 
+
+AND METHODOLOGY 
+
+
+
+1 SCOPE 
+
+This report presents and describes a means of identifying where new or revised manufacturing 
+standards may be required. It establishes a Reference Model for Shop Floor Production, which is 
+then used as the basis for developing a methodology for the identification and extraction of areas 
+for standards. The assumptions used to develop the Reference Model are: 
+
+• the field of interest is the manufacture of discrete parts and in particular the 
+production (physical realisation) of these parts, 
+
+• the Reference Model needs to be open-ended so that it can be revised to 
+incorporate new technologies, and 
+
+• the Reference Model needs to be generic in nature so that it can be applied to 
+a wide range of applications and is not directed to a particular organisational 
+structure of manufacturing. 
+
+It is emphasised that the Reference Model: 
+
+• provides a conceptual framework for understanding discrete parts 
+manufacturing and 
+
+• can be used to identify areas of standards necessary to integrate 
+manufacturing systems. 
+
+The Reference Model does not however provide a methodology for designing, implementing, 
+operating and maintaining any existing or future manufacturing automation system. There may be a 
+need to develop other Reference Models which can be used for those purposes, perhaps based on 
+the work described in this report. The development of such models is beyond the scope of this 
+technical report 
+
+
+
+IS 14776 ( Part 2 ): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+2 METHODOLOGY FOR IDENTIFIC ATION OF AREAS OF STANDARDS 
+
+Procedures for using the reference model, a methodology, are needed for a guide on how to use the 
+reference model, how to identify areas for standardization and subsequently how to derive areas of 
+standards requirements. These procedures are described in detail in the "Reference Model for 
+Manufacturing Standards, Part 1", and are summarised below. 
+
+2.1 AN OVERVIEW OF THE REFERENCE MODEL 
+
+Discrete Parts Manufacturing has been represented by twelve major functions. These are: 
+
+1 . Corporate Management 
+
+2. Finance 
+
+3 . Marketing & Sales 
+
+4 . Research & Development 
+
+5 . Product Design & Production Engineering 
+
+6. Production management 
+
+7. Procurement 
+
+8. Shipping 
+
+9 . Waste Material Treatment 
+
+1 . Resources management 
+
+1 1 . Maintenance Management 
+
+1 2 . Shop Floor Production 
+
+The Reference Model described here concentrates on the last of these twelve functions, Shop Floor 
+Production, and its environment or Context Functions, which constitute the first eleven functions. 
+Shop Floor Production is the primary function directly engaged in producing parts. 
+
+Shop Floor Production is represented in Part 1 by a four level Shop Floor Production Model or 
+SFPM. It is quite likely that specific manufacturing implementations may require more or less than 
+four levels, but four levels seem sufficient for the purpose of identifying areas of standards. The 
+four levels of activity are as shown in Figure 1 (reproduced from Part 1), namely: 
+
+Level 1 Equipment 
+
+Execute shop floor production processes. 
+
+Level 2 Station. 
+
+Command shop floor production processes. 
+
+Level 3 Cell. 
+
+Coordinate shop floor production processes. 
+
+Level 4 Section/Area. 
+
+Supervise shop floor production processes. 
+
+
+
+IS 14776 ( Part 2 ): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+
+
+Level 
+
+
+Sub- Activity 
+
+
+Responsibility 
+
+
+4 
+
+
+Section 
+/Area 
+
+
+Supervise shop 
+floor production 
+process 
+
+
+Supervising and co-ordinating the 
+production and supporting the jobs 
+and obtaining and allocating resources 
+to the jobs 
+
+
+3 
+
+
+Cell 
+
+
+Co-ordinate shop 
+floor production 
+process 
+
+
+Sequencing and supervising 
+the jobs at the shop floor 
+production process 
+
+
+2 
+
+
+Station 
+
+
+Command shop 
+floor production 
+process 
+
+
+Directing and co-ordinating 
+
+the shop floor production process 
+
+
+1 
+
+
+Equipment 
+
+
+Execute shop 
+floor production 
+process 
+
+
+Executing the job of shop floor 
+production according to commands 
+
+
+
+Figure 1 - Shop Floor Production Model (SFPM) 
+
+A Generic Activity Model or GAM has been developed to model the execution of the various 
+activities at each of the four levels, as shown in Figure 2 (reproduced from Part 1). The internals 
+of the GAM represent an interrelated set of four subjects and four actions. 
+
+The four subjects are: 
+
+a) Control Information which includes: 
+
+(i) command information, normally flowing from a higher level to a lower 
+level, which initiates, alters or terminates an activity, 
+
+(ii) status information which is generated in direct responsezto a eomn^ancf and 
+normally flows in the opposite direction to the command, 
+
+(iii) lequest information which corresponds to control information for control 
+interaction within a level (peer to peer), if any, and 
+
+(iv) response information which corresponds to status information for control 
+interaction within a level (peer to peer), if any. 
+
+
+
+IS 14776 <Part2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+b) Data: all information other than control information required for or resulting 
+from the performance of an activity. 
+
+c) Material: Material is a production object of the manufacturing activity. Material 
+includes all the physical matter that enters the product during manufacturing: raw 
+materials, parts and assemblies, auxiliary materials, products and scrap material. 
+
+d) Resources: Resources are all the physical means required to carry out the 
+manufacturing that are not Material. Resources include transform, transport, 
+verify and storage equipment; tools and fixtures; data processing and 
+communication systems; software; basic resources such as supply material, 
+energy, space and time; and personnel. 
+
+
+
+The four actions are: 
+
+
+
+a) Transform: The act of changing control information, data, material or resources 
+from one form to another form, or one state to another state. Transform includes 
+encoding or parsing information, decomposing commands, and cutting, forming, 
+assembling, or adjusting material or resources. 
+
+b) Transport: The act of moving control information, data, material, or resources 
+from one point in the enterprise to another. 
+
+c) Verify: The act of assessing the compliance of all transformed control 
+information, data, material and resources to determine their conformance to a 
+specification. 
+
+d) Store: The act of retaining control information, data, material or resources at a 
+specified location within Shop Floor Production until they are required to be 
+transported. 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+
+
+Information ** 
+
+
+Resources 
+
+
+
+
+
+
+i 
+
+
+i 
+
+
+i 
+
+
+I 
+
+
+
+
+
+
+i 
+
+
+f 
+
+
+i 
+
+
+f 
+
+
+
+
+Material * 
+
+
+
+
+
+
+Material * 
+
+
+Information ** 
+
+
+{ TP, TF, VE, ST} 
+
+
+Information 
+
+
+
+
+
+
+Resources 
+
+
+
+
+
+
+Resources 
+
+
+
+
+
+
+
+
+
+
+
+
+J 
+
+
+i 
+
+
+i 
+
+
+i 
+
+
+
+
+
+
+, 
+
+
+' 
+
+
+v 
+
+
+
+
+
+
+Inforn 
+
+
+nation ** 
+
+
+Resources 
+
+
+
+
+
+* Actions {TP, TF, VE, ST} on Material 
+are defined only at Level 1 
+
+
+
+TP 
+TF 
+VE 
+ST 
+
+
+
+Transport 
+Transform 
+Verify 
+Store 
+
+
+
+* * Information is defined in the text to include 
+both control and data components. 
+For strict hierarchies, horizontal 
+Information flows are restricted to data 
+components 
+
+
+
+Figure 2 - Generic Activity Model (GAM) 
+
+
+
+IS 14776(Part2):2000 
+ISO/TR 10314-2:1991 
+
+
+
+2.2 PROCEDURES 
+
+
+
+As described above, the environment of the Shop Floor Production Model is represented by eleven 
+context functions. The activities on each level can be represented by specific activity models 
+corresponding to instances of the Generic Activity Model at the four levels of the SFPM. 
+
+Two types of procedures, A and B, have been developed to be applied to the Shop Floor 
+Production Model and the Generic Activity Model in order to identify areas of standards 
+requirements. Procedures of type A deal with interactions of subjects and actions within one GAM 
+on a specific level. Procedures of type B deal with interactions between the SFPM and its context 
+functions, as well as with interactions between two GAMs located at adjacent levels of the SFPM. 
+Note that the subject "material" is defined only at level 1 of the SFPM. 
+
+Procedures A: the "Interrelationship within a level" procedures 
+
+These procedures are used for extracting areas of standards for interrelationship between 
+Subject and Action, Subject and Subject, and Action and Action corresponding to each 
+level of the SFPM. 
+
+For each activity, these procedures should be applied to extract areas where standards may 
+apply. 
+
+Procedure Al: Subject- Action interrelationship 
+
+For each activity in each level of the SFPM, consider any possible Subject- Action 
+interrelationship for applicable areas of standards. 
+
+Procedure A2: Subject interrelationship 
+
+For each activity in each level of the SFPM, consider any possible Subject-Subject 
+interrelationship for applicable areas of standards. 
+
+Procedure A3: Action interrelationship 
+
+For each activity in each level of the SFPM, consider any possible Action- Action 
+interrelationship for applicable areas of standards. 
+
+Procedures B: the "External" procedures 
+
+These procedures are used for extracting areas of standards for interrelationship between 
+activities of the subjects of Shop Floor Production and its manufacturing context in both a 
+vertical (between levels) and contextual (horizontal, on the same level) structure. 
+
+For each activity these procedures should be applied to extract areas where standards may 
+apply. 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+Procedure Bl: Horizontal (Contextual) interrelationship 
+
+Consider any possible interrelationships between activities between the subjects of 
+Shop Floor Production and its manufacturing context for applicable areas of standards. 
+
+Procedure B2: Vertical interrelationship 
+
+For each level of the SFPM consider any possible Subject interrelationship with the 
+levels above and below for applicable areas of standards, and hence relevant Subject 
+attributes. Note that there is no level to be considered below level 1, while the context 
+functions should be considered as forming the level above level 4. 
+
+For each of these procedures matrices are developed in chapter 3 whose elements correspond to 
+areas for standardization, and which can be populated by applying the procedures above. 
+
+2.3 CLASSIFICATION OF AREAS FOR STANDARDS 
+
+Part 1 of the Reference Model introduced an overall approach to identifying areas for standards (in 
+Figure 5 of that document). However when extracting areas for standardization it is necessary to 
+interpret the identified areas in terms of relevant technologies, and in terms of the qualities desired 
+from the standards. The following Figure 3 shows how the general issues raised by the * 
+Procedures of Part 1 (A1,A2,A3,B 1,B2) are made concrete by the introduction of the two 
+concepts of Standard Viewpoints and Base Technologies. 
+
+The standard viewpoints are: 
+
+Performance 
+
+Safety 
+
+Compatibility 
+
+Operability 
+
+Reliability 
+
+Maintainability 
+
+Environment 
+
+Description 
+
+Qualification 
+
+The Base Technologies may change over time. BTs being considered at the present are: 
+
+Information 
+
+Material / Products 
+
+Product/Production 
+
+Tool/Device 
+
+Instrumentation/Control 
+
+Computer and Communication 
+
+Human Interface 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+
+Matrices 
+
+representing 
+
+Areas of 
+
+Potential 
+
+Standards 
+
+
+
+I 
+
+
+
+Figure 3 - Process of extracting areas for standardization 
+
+It is also necessary 10 have a means of representing and codifying the results of applying and 
+interpreting the procedures. To this end, five sets of matrices are defined in sections 3.2 to 3.6, 
+corresponding to each procedure. A unique name is also defined for each cell of each matrix to 
+allow labelling of standards areas identified. Section 4 shows how the matrices are used to identify 
+and label standards areas. 
+
+Annex A is a list of identified on-going standards-making activities which uses the concepts of 
+Base Technologies, Viewpoints and the labels of the matrices. Areas identified in Section4, but 
+not covered in Annex A indicate potential areas for new work items. 
+
+
+
+8 
+
+
+
+IS 14776 (Part2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+3 GUIDE TO USING THE PROCEDURES: STRUCTURED QUESTIONS 
+
+This chapter provides a guide on how the matrices can be populated with identified areas for 
+standardization, by means of the concept of 'structured questions' and some examples. The task of 
+sample matrix population will be performed in chapter 4. 
+
+3.1 STRUCTURED QUESTIONS 
+
+The A and B type procedures of Chapter 2 can be recast in a generic form of structured question 
+which uses the concepts of actions, subjects, viewpoints and BTs, and for which the process of 
+formulation is itself a process of identification of areas of possible standards requirements. The 
+replacement of the generic concepts shown between braces "{...}" by particular concepts leads to 
+specific questions whose answers are specific to the area of interest. 
+
+So in the following reformulation, 
+
+{viewpoint} can be replaced by any of 
+
+Performance, Safety, Compatibility, Operability, Reliability, 
+Maintainability, Environment, Description or Qualification; 
+
+{subject} can be replaced by any of 
+
+Control Information, Data, Material or Resource; 
+
+{action} can be replaced by any of 
+
+Transform, Transport, Verify or Store; 
+
+{level} can be replaced by any of 
+
+Section/Area, Cell, Station or Equipment; 
+
+and {BT} can be replaced by any of 
+
+Information, Material/ Products, Product/Production, Tool/Device, 
+Instrumentation/Control, Computer and Communication or Human 
+Interface. 
+
+The five procedures then become five structured questions, which have the general form of "Are 
+there or should thereto {viewpoint} standards for significant interactions between XYZ, 
+realised in {BT} technology", where XYZ represents an "inner question" which depends on the 
+particular procedure. So the specific forms are: 
+
+SQ-A1: Are there or should there be {viewpoint} standards for significant interactions 
+between {subject} and {action} at the {level} level, realised in {BT} technology? 
+
+SQ-A2: Are there or should there be {viewpoint} standards for significant interactions 
+between {subject} and {subject} at the {level} level, realised in {BT} technology? 
+
+SQ-A3: Are there or should there be {viewpoint} standards for significant interactions 
+between {action} and {action} at the {level} level, realised in :{BT} technology? 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+SQ-B1: Are there or should there be {viewpoint} standards for significant interactions 
+between {subject} of Shop Floor Production and its manufacturing context, realised in 
+{BT} technology? 
+
+SQ-B2: Are there or should there be {viewpoint} standards for significant interactions 
+between {subject} at {level} and {subject} at the levels above or below, realised in 
+{BT} technology? 
+
+As described in Part 1, the procedures can be represented in matrix form (as shown in Part l's 
+Figure 6). With this reformulation, the concepts {subject}, {action}, {level}, {viewpoint} 
+and {BT} can be used to label each axis (dimension) as appropriate. Because the inclusion of 
+viewpoint and BTs results in about a hundredfold increase in the size of the matrices, they will be 
+omitted in the following general discussion on populating the matrices, although their use may well 
+be justified and necessary in particular circumstances. In particular, they will need to be re- 
+introduced when considering the correspondence between the identified needs for standards an<^ 
+areas where actual standards exist or are being developed. 
+
+It is also necessary to distinguish between the problems of identifying an area where standards may 
+be required (the objective of the Reference Model) and that of giving a name to such an area. Such 
+a name needs to distinguish the area from others where necessary, but also to associate it with other 
+areas where they should sensibly be aggregated (consolidated) into a larger standards area which 
+applies across several levels, subjects, actions or viewpoints etc. Examples might be requirements 
+for documentation of software, or a concern for traceability. The Reference Model does not itself 
+help with these processes of naming or aggregation (consolidation). However the use of the 
+concepts to label dimensions allows artificial names to be constructed for individual standards areas 
+in the form of matrix co-ordinates. 
+
+For completeness, the following section elaborates the questions for each procedure (structured 
+question). 
+
+3.2 PROCEDURE Al: SUBJECT- ACTION INTERRELATIONSHIPS 
+
+In procedure Al one is concerned with an individual Generic Activity Model (GAM) at a given 
+level of the Shop Floor Production Model (SFPM), and tries to identify areas for standardization 
+which may suggest themselves when contemplating the interrelation between subjects and actions 
+within the GAM at the given level. 
+
+
+
+When each concept of SQ-A1 is elaborated, this becomes "should there be or are there already 
+standards to relate: 
+
+f **> * — ^ ^ Control Information ] [Section 
+
+Data 
+
+Material 
+
+Resources 
+
+
+
+Transform 
+
+Transport 
+
+Verify 
+
+Store 
+
+v. s 
+
+
+
+y with<< 
+
+
+
+► atthe < 
+
+
+
+Section 
+Cell 
+Station 
+Equipment 
+
+
+
+y Level?" 
+
+
+
+^ 
+
+
+
+J 
+
+
+
+Clause 4.1 gives some possible interpretations for this structured question. 
+
+
+
+10 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+The corresponding matrices for levels 1 to 4 are given in Figure 4. Note that Material is considered 
+only at Level 1. 
+
+
+
+
+
+CONTROL 
+INFORMATION 
+
+
+DATA 
+
+
+MATERIAL 
+
+
+RESOURCES 
+
+
+TRANSFORM 
+
+
+1.TI.C 
+
+
+LTf.D 
+
+
+"ITf.M 
+
+
+1.71.R 
+
+
+TRANSPORT 
+
+
+LTp.C 
+
+
+LTp.D 
+
+
+LTp.M 
+
+
+LTp.R 
+
+
+VERIFY 
+
+
+1.V.C 
+
+
+1.V.D 
+
+
+1.V.M 
+
+
+1.V.R 
+
+
+STORE 
+
+
+1.S.C 
+
+
+1.S.D 
+
+
+1.S.M 
+
+
+1.S.R 
+
+
+
+PROCEDURE A1 at level 1, Equipment 
+
+
+
+
+
+CONTROL 
+INFORMATION 
+
+
+DATA 
+
+
+RESOURCES 
+
+
+TRANSFORM 
+
+
+2.Tf.C 
+
+
+2.Tf.D 
+
+
+2.Tf.R 
+
+
+TRANSPORT 
+
+
+2Tp.C 
+
+
+2Tp.D 
+
+
+2Tp.R 
+
+
+VERIFY 
+
+
+2.V.C 
+
+
+2.V.D 
+
+
+2.V.R 
+
+
+STORE 
+
+
+2.S.C 
+
+
+2.S.D 
+
+
+2.S.R 
+
+
+PROCEDURE A1 at level 2, Station 
+
+
+
+
+CONTROL 
+INFORMATION 
+
+
+DATA 
+
+
+RESOURCES 
+
+
+TRANSFORM 
+
+
+3.Tf.C 
+
+
+3.TI.D 
+
+
+3.Tf.R 
+
+
+TRANSPORT 
+
+
+3Tp.C 
+
+
+3.Tp.D 
+
+
+3Tp.R 
+
+
+VERIFY 
+
+
+3.V.C 
+
+
+3.V.D 
+
+
+3.V.R 
+
+
+STORE 
+
+
+3.S.C 
+
+
+3.S.D 
+
+
+3.S.R 
+
+
+PROCEDURE A1 at level 3, Cell 
+
+
+
+
+CONTROL 
+INFORMATION 
+
+
+DATA 
+
+
+RESOURCES 
+
+
+TRANSFORM 
+
+
+4Tf.C 
+
+
+4.TLD 
+
+
+4.TLR 
+
+
+TRANSPORT 
+
+
+4.Tp.C 
+
+
+4Tp.D 
+
+
+4Tp.R 
+
+
+VERIFY 
+
+
+4.V.C 
+
+
+4.V.D 
+
+
+4.V.R 
+
+
+STORE 
+
+
+4.S.C 
+
+
+4.S.D 
+
+
+4.S.R 
+
+
+
+PROCEDURE A1 at level 4, Section/ Area 
+
+
+
+Figure 4 - Matrices for Procedure Al: Subject-Action Interrelationships 
+
+
+
+11 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+3.3 PROCEDURE A2: SUBJECT-SUBJECT INTERRELATIONSHIPS 
+
+For procedure A2 one again considers an individual GAM at a particular level of the SFPM, but 
+this time considering the interrelation between the subjects of control information, material (at level 
+1 only), resources and data. 
+
+
+
+When each concept of SQ-A2 is elaborated, this becomes "should there be or are there already 
+standards to relate: 
+
+
+
+r Control Information 
+
+
+
+< 
+
+
+
+Data 
+
+Material 
+
+Resources 
+
+
+
+; Control Information 
+Data 
+Material 
+Resources 
+
+
+
+r 
+
+
+
+v 
+
+
+
+Cell 
+y at the ^ Station 
+
+
+
+^ 
+
+
+
+Section 
+Cell 
+Station 
+Equipment 
+
+
+
+V Level?" 
+
+
+
+v^ 
+
+
+
+Clause 4.2 gives some possible interpretations for this structured question. 
+
+The corresponding matrices for levels 1 to 4 are given in Figure 5. (Material is to be considered 
+only at Level 1.) 
+
+
+
+12 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+
+
+CONTROL 
+INFORMATION 
+
+
+DATA 
+
+
+MATERIAL 
+
+
+RESOURCES 
+
+
+CNTRL INFO. 
+
+
+1.C.C 
+
+
+LCD 
+
+
+1.C.M 
+
+
+1.C.R 
+
+
+DATA 
+
+
+1.D.C 
+
+
+1.D.D 
+
+
+1.D.M 
+
+
+1.D.R 
+
+
+MATERIAL 
+
+
+1.M.C 
+
+
+1.M.D 
+
+
+1.M.M 
+
+
+1.M.R 
+
+
+RESOURCES 
+
+
+1.R.C 
+
+
+1.R.D 
+
+
+1.R.M 
+
+
+1.R.R 
+
+
+
+PROCEDURE A2 at level 1 , Equipment 
+
+
+
+
+
+CONTROL 
+INFORMATION 
+
+
+DATA 
+
+
+RESOURCES 
+
+
+CNTRL. INFO. 
+
+
+2.C.C 
+
+
+2.C.D 
+
+
+2.C.R 
+
+
+DATA 
+
+
+2.D.C 
+
+
+2.D.D 
+
+
+2.D.R 
+
+
+RESOURCES 
+
+
+2.R.C 
+
+
+2.R.D 
+
+
+2.R.R 
+
+
+PROCEDURE A2 at level 2, Station 
+
+
+
+
+CONTROL 
+INFORMATION 
+
+
+DATA 
+
+
+RESOURCES 
+
+
+CNTRL. INFO. 
+
+
+3.C.C 
+
+
+3.C.D 
+
+
+3.C.R 
+
+
+DATA 
+
+
+3.D.C 
+
+
+3.D.D 
+
+
+3.D.R 
+
+
+RESOURCES 
+
+
+3.R.C 
+
+
+3.R.D 
+
+
+3.R.R 
+
+
+PROCEDURE A2 at level 3, Cell 
+
+
+
+
+CONTROL 
+INFORMATION 
+
+
+DATA 
+
+
+RESOURCES 
+
+
+CNTRL. INFO. 
+
+
+4.C.C 
+
+
+4.C.D 
+
+
+4.C.R 
+
+
+DATA 
+
+
+4.D.C 
+
+
+4.D.D 
+
+
+4.D.R 
+
+
+RESOURCES 
+
+
+
+
+4.R.C 
+
+
+4.R.D 
+
+
+4.R.R 
+
+
+
+PROCEDURE A2 at level 4, Section/Area 
+Figure 5 - Matrices for Procedure A2: Subject-Subject Interrelationships 
+
+
+
+13 
+
+
+
+IS 14776 ( Part 2 ): 2000 
+ISOyTR 10314-2:1991 
+
+
+
+3.4 PROCEDURE A3: ACTION-ACTION INTERRELATIONSHIPS 
+
+Procedure A3 examines the interrelation of actions within a GAM at a given level of the SFPM. 
+
+
+
+When each concept of SQ-A3 is elaborated,this becomes "should there be or are there already 
+standards to relate: 
+
+
+
+f Transform ^l 
+J Transport 
+
+Verify 
+
+Store 
+
+
+
+
+
+
+r Transform " 
+
+
+
+Transport 
+
+
+
+f ^i Verify 
+Store 
+
+
+
+r 
+
+
+
+v. 
+
+
+
+> atthe « 
+
+
+
+^ 
+
+
+
+Section 
+Cell 
+Station 
+Equipment 
+
+
+
+"\ 
+
+
+
+V Level?" 
+
+
+
+Clause 4.3 gives some possible interpretations for this structured question. 
+The corresponding matrices for levels 1 to 4 are given in Figure 6. 
+
+
+
+14 
+
+
+
+PROCEDURE A3 at level 1, Equipment 
+
+
+
+PROCEDURE A3 at level 2, Station 
+
+
+
+PROCEDURE A3 at level 3, Cell 
+
+
+
+IS 14776(Part2):2000 
+ISO/TR 10314-2:1991 
+
+
+
+
+
+TRANSFORM 
+
+
+TRANSPORT 
+
+
+VERIFY 
+
+
+STORE 
+
+
+TRANSFORM 
+
+
+I.Tf.Tf 
+
+
+t.Tf.Tp 
+
+
+1.T1.V 
+
+
+LTf.S 
+
+
+TRANSPORT 
+
+
+LTp.Tf 
+
+
+1Tp.Tp 
+
+
+LTp.V 
+
+
+LTp.S 
+
+
+VERIFY 
+
+
+LV.Tf 
+
+
+LV.Tp 
+
+
+1.V.V 
+
+
+1.V.S 
+
+
+STORE 
+
+
+1.S.TI 
+
+
+LS.Tp 
+
+
+1.S.V 
+
+
+1.S.S 
+
+
+
+
+
+TRANSFORM 
+
+
+TRANSPORT 
+
+
+VERIFY 
+
+
+STORE 
+
+
+TRANSFORM 
+
+
+2Tf.Tf 
+
+
+2Tf.Tp 
+
+
+2.Tf.V 
+
+
+2.Tf.S 
+
+
+TRANSPORT 
+
+
+2Tp.Tf 
+
+
+2Tp.Tp 
+
+
+2Tp.V 
+
+
+2.Tp.S 
+
+
+VERIFY 
+
+
+2.VTf 
+
+
+2.V.Tp 
+
+
+2.V.V 
+
+
+2.V.S 
+
+
+STORE 
+
+
+2.STf 
+
+
+2.S.Tp 
+
+
+2.S.V 
+
+
+2.S.S 
+
+
+
+
+
+TRANSFORM 
+
+
+TRANSPORT 
+
+
+VERIFY 
+
+
+STORE 
+
+
+TRANSFORM 
+
+
+3Tf.Tf 
+
+
+3.7T.Tp 
+
+
+3.Tf.V 
+
+
+3.Tf.S 
+
+
+TRANSPORT 
+
+
+3Tp.Tf 
+
+
+3Tp.Tp 
+
+
+3Tp.V 
+
+
+3Tp.S 
+
+
+VERIFY 
+
+
+3.V.Tf 
+
+
+3.V.Tp 
+
+
+3.V.V 
+
+
+3.V.S 
+
+
+STORE 
+
+
+3.S.Tf 
+
+
+3.S.Tp 
+
+
+3.S.V 
+
+
+3.S.S 
+
+
+
+
+
+TRANSFORM 
+
+
+TRANSPORT 
+
+
+VERIFY 
+
+
+STORE 
+
+
+TRANSFORM 
+
+
+4Tf.Tf 
+
+
+4Tf.Tp 
+
+
+4.Tf.V 
+
+
+4Tf.S 
+
+
+TRANSPORT 
+
+
+4Tp.Tf 
+
+
+4.Tp.Tp 
+
+
+4.Tp.V 
+
+
+4Tp.S 
+
+
+VERIFY 
+
+
+4.VTf 
+
+
+4.VTp 
+
+
+4.V.V 
+
+
+4.V.S 
+
+
+STORE 
+
+
+4.S.T* 
+
+
+4.STp 
+
+
+4.S.V 
+
+
+4.S.S 
+
+
+
+PROCEDURE A3 at level 4, Station/Area 
+Figure 6 - Matrices for Procedure A3: Action-Action Interrelationships 
+
+
+
+15 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+3.5 PROCEDURE Bl: HORIZONTAL (CONTEXTUAL) INTERRELATIONSHIPS 
+
+This procedure attempts to identify areas requiring standardization by considering the interface of 
+the eleven context functions with the shop floor production in terms of subjects. 
+
+When each concept of SQ-B1 is elaborated, this becomes "should there be or are there already 
+standards to relate: 
+
+Corporate Management 
+
+Finance 
+
+Marketing and Sales 
+
+Research and Development 
+
+Product Des, Production Eng. 
+
+Production Management 
+
+Procurement 
+
+Shipping 
+
+Waste Material Treatment 
+
+Resources Management 
+
+Maintenance Management 
+
+
+
+SFP with < 
+
+
+
+> in terms of •< 
+
+
+
+v 
+
+
+
+J 
+
+
+
+Control Information 
+
+Data 
+
+Material 
+
+Resources 
+
+
+
+>?" 
+
+
+
+\. 
+
+
+
+J 
+
+
+
+Clause 4.4 gives some possible interpretations for this structured question. 
+
+The matrix of Figure 7 gives a framework to represent the activities of shop floor production. It 
+appears from Figure 2 of Part 1 that most of corporate management's, finance's, marketing and 
+sales', and research and development's interrelation with the shop floor production are 
+predominantly established via product design, production engineering and production management. 
+Remaining interrelations can at this time be governed only by guidelines, rather than standards. 
+
+
+
+
+
+CONTROL 
+INFORMATION 
+
+
+DATA 
+
+
+MATERIAL 
+
+
+RESOURCES ' 
+
+
+F1. CORPORATE MANAGEMENT 
+
+
+F1.C 
+
+
+F1.D 
+
+
+F1.M 
+
+
+F1.R 
+
+
+F2. FINANCE 
+
+
+F2.C 
+
+
+F2.D 
+
+
+F2.M 
+
+
+F2.R 
+
+
+F3. MARKETING & SALES 
+
+
+F3.C 
+
+
+F3.D 
+
+
+F3.M 
+
+
+F3.R 
+
+
+F4. R&D 
+
+
+F4.C 
+
+
+F4.D 
+
+
+F4.M 
+
+
+F4.R 
+
+
+F5. PRODUCT.DESIGN/PRODUCTION ENG. 
+
+
+F5.C 
+
+
+F5.D* 
+
+
+F5.fo 
+
+
+F5.R 
+
+
+F6. PRODUCTION MANAGEMENT 
+
+
+F6.C* 
+
+
+F6.D 
+
+
+F6.M 
+
+
+F6.R 
+
+
+F7. PROCUREMENT 
+
+
+F7.C 
+
+
+F7.D 
+
+
+F7.M* 
+
+
+F7.R 
+
+
+F8. SHIPPING 
+
+
+F8.C 
+
+
+F8.D* 
+
+
+F8.M* 
+
+
+F8.R 
+
+
+F9. WASTE MATERIAL TREATMENT 
+
+
+F9.C 
+
+
+F9.D 
+
+
+F9.M* 
+
+
+F9.R 
+
+
+F10. RESOURCE MANAGEMENT 
+
+
+F10.C 
+
+
+F10.D 
+
+
+F10.M 
+
+
+F10.R* 
+
+
+F11. MAINTENANCE MANAGEMENT 
+
+
+F11.C* 
+
+
+F11.D 
+
+
+F11.M 
+
+
+F11.R 
+
+
+
+PROCEDURE B1 
+
+Figure 7 - Matrix for Procedure Bl : Horizontal (Contextual) Interrelationships 
+
+(The cells marked with asterisks were identified in Figure 2 of Part 1, in Typical Arrangements of 
+Manufacturing Functions'.) 
+
+
+
+16 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+3.6 PROCEDURE B2: VERTICAL INTERRELATIONSHIPS 
+
+Procedure B2 is similar to procedure A2, except that it deals with the interrelation of subjects 
+between a GAM on one level and a GAM on levels above or below, and the interrelation is in 
+practice limited to transport of subjects. 
+
+
+
+When each concept of SQ-B2 is elaborated, this becomes "should there be or are there already 
+standards to relate: 
+
+[Control Information 1 f Section/Cell 
+
+< Data r transported across the < Cell/Station > Levels?" 
+
+
+
+I Resources 
+
+
+
+i Station/Equip 
+
+
+
+Clause 4.5 gives some possible interpretations for this structured question. 
+
+If a transport relationship is identified between shop floor production and the eleven other major 
+discrete part manufacturing functions in terms of subjects, then this relationship should be 
+examined for level-specific standards requirements. 
+
+The corresponding matrix is given in Figure 8 for the typical example of interrelations between 
+adjacent levels. Any interrelations between non-adjacent levels can be similarly represented and 
+labelled. 
+
+
+
+SECTION 
+CELL 
+STATION 
+EQUIPMENT 
+
+
+
+
+
+
+
+CONTROL 
+INFORMATION 
+
+
+DATA 
+
+
+RESOURCE 
+
+
+
+
+4/3 
+
+
+4/3.C 
+
+
+4/3.D 
+
+
+4/3.R 
+
+
+
+
+3/2 
+
+
+3/2.C 
+
+
+3/2.D 
+
+
+3/2. R 
+
+
+
+
+2/1 
+
+
+2/1 .C 
+
+
+2/1. D 
+
+
+2/1. R 
+
+
+
+PROCEDURE B2 
+
+
+
+Figure 8 - Matrix for Procedure B2: Vertical Interrelationships for adjacent levels 
+
+
+
+17 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+4 IDENTEFICATION OF AREAS FOR STANDARDIZATION 
+
+The following tables show some example areas of identified standards requirements without 
+reference to viewpoints or base technologies. Viewpoints and base technologies relating to 
+existing standards-making are illustrated in Annex A. Annex B gives the same information, but 
+ordered by the Procedure, Level and Cell identifiers.. 
+
+In the tables, the entry "x" means no standards area was identified, "-" means there is no logical 
+interpretation for the cell and "«" means the entry is the same as that on the left. 
+
+4.1 PROCEDURE Al: Subject-Action interrelationships 
+
+There are two interpretations for the subject-action interrelation, corresponding to the two possible 
+directions of actions and subjects; that is actions on subjects, or subjects required for actions. 
+
+So one interpretation is the action operating on the subject, as in say the transform of material. A 
+standard on the material transformation at level 1 corresponds to standard procedures for 
+processing. Standards on the transportation of data at levels 2,3 and 4 correspond to standard 
+protocols for data transmission, for example OSI standards. 
+
+The other interpretation is an interrelation between actions and subjects which are necessary for 
+actions or used in actions. Standards on resources for transformation at level 1 correspond to 
+standards for machine tools, assembling machines,etc. Standards on control information for 
+transformation at level 2 corresponds to standards for numerical control commands, robots control 
+commands, etc. 
+
+Both interpretations are considered below. 
+
+(i) Action on subject 
+
+Al (action on subject): LEVEL 1 
+
+
+
+Control Information 
+Tf Conversion of signals 
+
+
+
+Tp Transmission of control 
+information 
+
+
+
+Data Material 
+
+Conversion of signals Processing 
+
+Transmission of data Handling of material 
+
+
+
+Resource 
+
+Assembly of fixture, 
+Training of personnel 
+Conversion of energy 
+
+Transmission of power, 
+Transport of fuel. 
+Transport of tools. 
+Transport of waste material 
+
+Vf Verification of control information Verification of data Inspection of material Inspection of machinery 
+
+S t Buffering of control information Buffering of data Storage of material Storage of re-usable resource 
+
+(e.g. fixtures, dies, tools) 
+
+Note that material is considered only at Level 1. 
+
+
+
+18 
+
+
+
+Al (action on subject): LEVEL 2 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+Control information 
+
+Tf Directing and coordinating 
+equipment (NC data 
+interpretation) 
+
+Tp Transmission of control information 
+in/between station(s) 
+
+V f Verification of control information 
+
+
+
+S t Storage of control information 
+
+
+
+Data 
+
+Processing of measured data 
+(industrial unit conversion). 
+Processing of resource data 
+
+Transmission of data 
+in/between station(s) 
+
+Verification of data 
+
+
+
+Storage of data 
+
+
+
+Resource 
+
+Training of personnel 
+
+Transmission of power 
+
+
+
+Monitoring and diagnosis 
+station controller (numerical 
+control, robot, programmable 
+logic controller etc) 
+
+Storage of program 
+
+
+
+Al (action on subject): LEVEL 3 
+
+
+
+Control information 
+Tf Controlling jobs 
+
+
+
+Tp Transmission of control information 
+in/between cells 
+
+Vf Verification of control information 
+
+
+
+S t Storage of control information 
+
+
+
+Data 
+
+Processing of operational data 
+Processing of resource data 
+
+Transmission of data 
+in/between cells 
+
+Verification of data 
+
+
+
+Storage of data 
+
+
+
+Resource 
+
+Training of personnel 
+
+
+
+Transmission of power 
+Transmission of program 
+
+Monitoring and diagnosis 
+of cell controller 
+
+Storage of program 
+
+
+
+Al (action on subject): LEVEL 4 
+
+
+
+Control information 
+
+Tf Job planning (including 
+
+scheduling & resource allocation) 
+
+Tp Control information transmission 
+in/between sections 
+
+Vf Control information verification 
+
+
+
+St Control information storage 
+
+
+
+Data 
+
+Operational data processing, 
+Resources data processing 
+
+Data transmission 
+in/between sections 
+
+Data verification 
+
+
+
+Data storage 
+
+
+
+Resource 
+
+Human training 
+
+Power transmission, 
+program transport 
+
+Section controller monitor 
+& diagnostics 
+
+Program storage 
+
+
+
+(ii) Subjects necessary for actions 
+Al (subject for action): LEVEL 1 
+
+
+
+
+
+
+
+Tf 
+
+
+Tp 
+
+
+
+
+Vf 
+
+
+St 
+
+
+Control 
+
+
+information 
+
+
+X 
+
+
+X 
+
+
+
+
+X 
+
+
+X 
+
+
+Data 
+
+
+
+
+X 
+
+
+X 
+
+
+
+
+X 
+
+
+X 
+
+
+Material 
+
+
+
+
+X 
+
+
+X 
+
+
+
+
+X 
+
+
+Tt 
+
+
+Resource 
+
+
+
+
+Machine tool, Tool, 
+Fixture 
+
+
+Automatic guided 
+vehicle. Conveyor, 
+Pallet 
+
+
+Co-ordinate 
+measuring machine, 
+Measuring devices 
+
+
+Automatic 
+warehouse 
+
+
+
+19 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+Al (subject for action): LEVEL 2 
+
+
+
+Tf 
+
+Control information Commands to 
+machine tool 
+
+
+
+Data 
+
+
+
+Resource 
+
+
+
+Numerical control 
+data 
+
+
+
+Station controller 
+
+
+
+Tp 
+
+
+
+vr 
+
+
+
+Commands* td Commands to 
+
+Automatic guided Co-ordinate 
+vehicle/robot measuring machine 
+
+
+
+Automatic guided 
+vehicle/robot 
+control data * 
+
+
+
+Automatic guided 
+vehicle/robot 
+control data 
+
+
+
+« 
+
+
+
+« 
+
+
+
+St 
+
+Commands to 
+automatic warehouse 
+
+
+
+Automatic warehouse 
+control data 
+
+
+
+« 
+
+
+
+Al (subject for action): LEVEL 3 
+
+
+
+Tf 
+
+
+
+Control information Job controlling 
+commands 
+
+
+
+Tp 
+« 
+
+
+
+Data 
+
+
+
+Resource 
+
+
+
+Data for job scheduling « 
+
+(Standard operation procedure), 
+Product model 
+
+
+
+Cell controller 
+
+
+
+« 
+
+
+
+Vf 
+« 
+
+« 
+« 
+
+
+
+St 
+« 
+
+« 
+« 
+
+
+
+Al (subject for action): LEVEL 4 
+
+
+
+Tf 
+
+
+Tp 
+
+
+Vf 
+
+
+Control information Job planning commands 
+
+
+« 
+
+
+« 
+
+
+Data Data for job scheduling, 
+Product model 
+
+
+« 
+
+
+« 
+
+
+Resource Section controller 
+
+
+« 
+
+
+« 
+
+
+
+St 
+« 
+« 
+
+« 
+
+
+
+4.2 PROCEDURE A2: Subject-Subject interrelationships 
+
+As with Procedure Al, several interpretations are possible for the interrelationships - these are that 
+of a subject with itself, of subjects for subjects and of interfaces between subjects and subjects. 
+All three interpretations are considered below. 
+
+
+
+(i) A2 (subject with itself) 
+
+
+
+Level 1 Level 2 
+
+Control information Control information definition « 
+Data Data definition « 
+
+Material Material definition x 
+
+Resource Resource definition « 
+
+
+
+Level 3 
+
+
+Level 4 
+
+
+« 
+
+
+« 
+
+
+« 
+
+
+« 
+
+
+X 
+
+
+X 
+
+
+« 
+
+
+« 
+
+
+
+20 
+
+
+
+IS 14776(Part2):2000 
+ISO/TR 10314-2:1991 
+
+
+
+(ii) Subjects for subjects 
+
+
+
+A2 (subject (row) for subject (column)): LEVEL 1 
+
+
+
+Control Information .." Data 
+
+
+
+Control Information x 
+
+
+
+Material 
+x 
+
+
+
+Resource 
+x 
+
+
+
+Data 
+
+Material 
+Resource 
+
+
+
+Control information Data presentation Material presentation Resource presentation 
+
+presentation & specification & specification & specification, & specification 
+
+Vocabulary 
+
+
+
+Sign-board 
+
+
+
+Bar code label Package 
+
+
+
+Consumable resource 
+(lubrication oil, filter, etc 
+
+
+
+A2 (subject (row) for subject (column)): LEVEL 2,3,4 
+
+
+
+Control information Data 
+
+Control information x x 
+
+Data Control information Data presentation 
+
+presentation & specification & specification, 
+
+Vocabulary 
+
+
+
+Resource 
+
+
+
+Physical media « 
+
+(Tape, Flexible disk, etc.) 
+
+
+
+Resource 
+
+
+
+Resource presentation 
+& specification 
+
+
+
+Consumable resource 
+
+
+
+(iii) Interface between subjects and subjects 
+
+
+
+A2 (interface between subjects): LEVEL 1 
+
+
+
+Control information Data Material 
+
+Control information x x x 
+
+Data - xx 
+
+Material - - Part fastening 
+
+Resource - - 
+
+
+
+Resource 
+
+
+
+Part fixturing 
+
+Connector, Device connection. 
+End effector chuck. 
+Modular tool, User interface 
+
+
+
+A2 (interface between subjects): LEVEL 2,3,4 
+
+
+
+
+
+Control 
+
+
+information 
+
+
+Data 
+
+
+Resource 
+
+
+Control information 
+
+
+X 
+
+
+
+
+X 
+
+
+X 
+
+
+Data 
+
+
+- 
+
+
+
+
+X 
+
+
+X 
+
+
+Resource 
+
+
+_ 
+
+
+
+
+__ 
+
+
+Connector, 
+
+
+
+21 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+4.3 PROCEDURE A3: Action- Action interrelationships 
+
+There are three interpretations for the action-action interrelation. 
+
+The first interpretation is an interrelation of ah action with itself. It suggests areas for 
+standardization of relevant action definitions. 
+
+The second interpretation is an interrelation of actions which are executed simultaneously with close 
+interactions. Standards on interrelation between transformation and verification at level 1 
+correspond to standards for in-process inspection. 
+
+The third interpretation is an interrelation of actions which are always executed sequentially. 
+
+All three interpretations are considered below. 
+
+As one example, standards on the interrelation between transportation and transportation at levels 
+2,3 and 4 correspond to standards for gateways or bridges of communication network. 
+
+(i) Action with itself 
+A3 (action with itself) 
+
+Level 1 
+
+Tf Transformation functional definition 
+
+Tp Transportation functional definition 
+
+Vf Verification functional definition 
+
+S t Storage functional definition 
+
+
+
+Level 2 
+
+
+Level 
+
+
+3 
+
+
+Level 4 
+
+
+« 
+
+
+« 
+
+
+
+
+« 
+
+
+« 
+
+
+« 
+
+
+
+
+« 
+
+
+« 
+
+
+« 
+
+
+
+
+« 
+
+
+« 
+
+
+« 
+
+
+
+
+« 
+
+
+
+(ii) Concurrent actions 
+
+A3 (concurrent actions): LEVEL 1 
+
+
+
+Tf Tp 
+
+
+Vf 
+
+
+St 
+
+
+Tf Concurrent processing Processing during 
+
+transportation 
+
+
+In process inspection 
+
+
+Aging 
+
+
+Tp - x 
+
+
+In line inspection 
+
+
+Live storage, Buffering 
+
+
+Vf 
+
+
+In line calibration 
+
+
+X 
+
+
+St - 
+
+
+~ 
+
+
+X 
+
+
+A3 (concurrent actions): LEVEL 2,3,4 
+
+
+Tf Tp 
+
+
+Vf 
+
+
+St 
+
+
+Tf Parallel processing x 
+
+
+X 
+
+
+X 
+
+
+Tp - Broad band communication 
+
+
+X 
+
+
+Buffering 
+
+
+Vf - 
+
+
+X 
+
+
+X 
+
+
+St - 
+
+
+- 
+
+
+X 
+
+
+
+22 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+(iii) Sequential actions 
+
+A3 (sequential actions (row to column)): LEVEL 1 
+
+
+
+Tf 
+
+
+
+
+Tp 
+
+
+Vf 
+
+
+St 
+
+
+Tf x 
+
+
+
+
+Positioning at 
+change of action 
+
+
+x 
+
+
+X 
+
+
+Tp Positioning at 
+
+change of action 
+
+
+
+
+Change of Tp methods 
+
+
+Positioning at 
+change of action 
+
+
+Positioning at 
+change of action 
+
+
+Vf x 
+
+
+
+
+Positioning at 
+change of action 
+
+
+x 
+
+
+X 
+
+
+St x 
+
+
+
+
+Positioning at 
+change of action 
+
+
+X 
+
+
+X 
+
+
+A3 (sequential actions 
+
+
+(row to column)): LEVEL 2,3,4 
+
+
+
+
+Tf 
+
+
+
+
+Tp 
+
+
+Vf 
+
+
+St 
+
+
+Tf x 
+
+
+
+
+Decoding 
+
+
+X 
+
+
+X 
+
+
+Tp Encoding 
+
+
+
+
+Gateway, Bridge 
+
+
+Error checking 
+
+
+Information retrieval 
+
+
+Vf x 
+
+
+
+
+Error checking 
+
+
+X 
+
+
+X 
+
+
+St x 
+
+
+
+
+Logging 
+
+
+X 
+
+
+X 
+
+
+
+23 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+4.4 PROCEDURE Bl: Contextual (Horizontal) interrelationships 
+
+In filling out the fields of the matrix of Figure 7 an example of a typical question to ask is: 
+'What areas of standardization can be identified through the interrelation between the specific 
+context function Product Design and Production Engineering with the shop floor production 
+data? 
+
+An answer to this question is "Product description data". This example could be expanded by 
+considering "Product description data" from the viewpoint of operability, qualification and 
+maintainability with implementations in the Base Technologies of Product/Production, 
+computer/communication and Human Interface. 
+
+
+
+
+
+Control 
+
+
+information Data 
+
+
+Material 
+
+
+Resources 
+
+
+Fl. Corporate 
+management 
+
+
+Policy, General status 
+
+
+Reports (schedule, 
+capacity, quality) 
+
+
+X 
+
+
+X 
+
+
+F2. Finance 
+
+
+X 
+
+
+
+
+Reports (shop floor 
+costing, pricing 
+information) 
+
+
+X 
+
+
+Budget 
+
+
+F3. Marketing 
+& sales 
+
+
+Shop floor production 
+order, Order status 
+
+
+Reports (schedule, 
+capacity, quality) 
+
+
+Samples 
+
+
+Demonstration 
+facilities 
+
+
+F4. R & D 
+
+
+X 
+
+
+
+
+Company standard 
+product models 
+
+
+Physical models 
+
+
+Updates 
+(e.g. software) 
+
+
+-F5. Product desig 
+/production eng. 
+
+
+nx 
+
+
+
+
+Engineering information. 
+Bill of materials plus 
+drawings, Product models, 
+Process/Operation plans 
+
+
+Prototypes 
+
+
+Tooling, Software 
+
+
+
+F6. Production Production schedule, 
+management Production status 
+
+
+
+Production monitoring data, x 
+Cost data, Quality data, 
+Schedule, Capacity 
+
+
+
+Software 
+
+
+
+F7. Procurement Requests for materials Inventory data 
+
+
+
+F8. Shipping Product status for shipping 
+
+Finished products x 
+
+
+
+F9. Waste material 
+Containers 
+treatment 
+
+F10. Resource Resource request, 
+
+management Resource status 
+
+Fll. Maintenance Maintenance request, 
+management Calibration/ 
+
+downtime schedule 
+
+
+
+Product inventory data 
+
+Waste releases 
+
+and quantity 
+
+Resource allocation data. 
+Resource specification 
+
+
+
+Maintenance requirement, x 
+Calibration data, 
+Fault reports. 
+Machine usage data 
+
+
+
+Raw material, 
+Procured parts 
+
+Product information. 
+
+
+
+Waste description Waste 
+
+
+
+Storage space 
+
+
+
+Resources, Services, 
+Consumable resources 
+
+Diagnostic programs, 
+Diagnostic devices, 
+Spare parts 
+
+
+
+24 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+4.5 PROCEDURE B2:Vertical interrelationships for adjacent levels 
+B2 (vertical interrelationship) 
+
+
+
+
+
+Control information 
+
+
+Data 
+
+
+Resource 
+
+
+1/2 
+
+
+Command and status 
+for Equipment 
+
+
+Sensor data 
+
+
+X 
+
+
+2/3 
+
+
+Process execution 
+commands and status 
+
+
+Operational data 
+
+
+Software updates 
+
+
+3/4 
+
+
+Job execution 
+command and status 
+
+
+Operational data, 
+Resource allocation data 
+
+
+Software updates 
+
+
+
+5 RECOMMENDATIONS 
+
+Section 4 has shown how tables which identify areas of standards can be generated using the 
+procedures described in section 3. Annexes A and B show corresponding current and illustrative 
+standards-making activities as of late 1989. Using these annexes, standards-makers can identify 
+potential areas for new work-items, while standards-users can identify some relevant standards for 
+their own enterprise. 
+
+It is recommended that ISO TC184 SC5 and all of its WGs should use TR 10314 - Reference 
+Model for Shop Floor Production Standards, Parts 1 and 2, as an aid in project planning. Other 
+committees such as the ISO TCI 84 Advisory Group, other SCs of TCI 84, other industrial 
+automation TCs and SCs within ISO and EC, and the SCIA are also encouraged to use this model 
+for planning purposes. 
+
+Given the flexibility of the model, it should be viable for some period of time, even though the 
+specific examples of Annexes A and B will become outdated. Any gaps or shortcomings that are 
+identified as the Reference Model is increasingly used should be referred to ISO TCI 84 SC5. 
+
+
+
+25 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+ANNEX A. MAPPING OF EXISTING STANDARDS ACTIVITIES ONTO THE MODEL 
+
+This Annex presents the results of reviewing various lists of standards-making activities against the 
+Reference Model for Shop Floor Production Standards. While derived from a large list containing 
+entries for many committees and projects related to manufacturing, information technology and 
+communication standards, the information presented has been restricted to those industrial 
+automation committees within the current scope of the Steering Committee on Industrial 
+Automation (SCIA), that is to current projects within ISO TC184, IEC TC65 and EEC TC44. The 
+information is based on data gathered in late 1989 and will become outdated as new work items 
+and committee activities are approved. While it represents the best understanding of the Working 
+Group as of early 1990, it is not intended to be a definitive list, nor to replace any ISO or IEC list 
+of approved activities. 
+
+The headings for each table area as follows: 
+
+Qrgn: ISO or IEC 
+
+Ctte: The relevant Technical Committee 
+
+SC: .... Subcommittee (where appropriate) 
+
+WG: .... Working Group (where appropriate) 
+
+Ctte/Doc: Whether the work is an identified Report or Activity 
+
+(Rep/Act), or simply an identified general committee scope (Ctte) 
+
+Scope of Activity or Standards document: (self explanatory) 
+
+Example Standards Areas: (self explanatory) 
+
+(Proc) Level Cell: The Procedure used, at what Level, and for which matrix cell. 
+
+(Where items appear at all four levels, the keyword "AH" is used; 
+an ampersand "&" shows where more than one cell is used; a 
+multiplication symbol "*" is used for the product of two sets 
+(so {Tp,V}*(M,R} would denote TpM, TpR, VM, VR}) 
+
+Viewpoint: As defined in section 2.3 
+
+Base Technology: As defined in section 2.3 
+
+
+
+26 
+
+
+
+Orgn 
+
+
+Ctte 
+
+
+sc 
+
+
+WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+(Proc) Level Cell 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+IEC 
+
+
+TC44 
+
+
+
+
+WG3 
+
+
+Rep/Act 
+
+
+Electrical Equipment of Industrial Machines - Part 1 : 
+General Requirements 
+
+
+Resource/Resource 
+
+
+<A2) 1 RR 
+
+
+Description 
+
+
+Device/Tool 
+
+
+IEC 
+
+
+TC44 
+
+
+
+
+WG2 
+
+
+Rep/Act 
+
+
+Electrical Equipment of Industrial Machines - Part 3: 
+Industrial Sewing Machines 
+
+
+Resource/Resou rce 
+
+
+(A2) 1 RR 
+
+
+Description 
+
+
+Device/Tool 
+
+
+IEC 
+
+
+TC44 
+
+
+
+
+WG5 
+
+
+Rep/Act 
+
+
+IEC 550 - NC Equipment for machines 
+
+
+Resource/Resource 
+
+
+(A2) 2 RR 
+
+
+Description 
+
+
+Device/Tool 
+
+
+IEC 
+
+
+TC44 
+
+
+
+
+WG5 
+
+
+Rep/Act 
+
+
+Interface between Numerical Controls and 
+Industrial Machines 
+
+
+Resource/Resou rce 
+
+
+(B2) 1/2 R 
+
+
+Description 
+
+
+Computer & Communi- 
+cations 
+
+
+IEC 
+
+
+TC65 
+
+
+SC A WG10 
+
+
+Rep/Act 
+
+
+Functional Safety of Programmable Electronic 
+Systems - Generic Aspects 
+
+
+Verify Resource 
+
+
+(A2) 2,3,4 VR 
+
+
+Safety 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+Language for programmable controller - 
+Application Languages (inc Part 3) 
+
+
+Transform Control Information 
+
+
+<A1) 2,3,4 TfC 
+
+
+Compatibility 
+
+
+Information 
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+PLCs - Part 1 : General Information 
+
+
+Resource Standard 
+
+
+(A2) 2,3,4 RR 
+
+
+Description 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+PLCs • Part 2: Equipment Characteristics 
+
+
+Resource Standard 
+
+
+(A2) 2,3,4 RR 
+
+
+Performance, 
+Compatibility, 
+Description 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+PLCs - Part 3: Programming Languages 
+
+
+Transform Control Information 
+
+
+(A1) 2,3,4 TfC 
+
+
+Compatibility 
+
+
+Information 
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+PLCs - Part 4: User Guidelines 
+
+
+Data for Resource 
+
+
+(A2) 2,3,4 DR 
+
+
+Operability, 
+Maintainability 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+PLCs - Part : Messaging Service Specification 
+
+
+Transport Control Info/Data 
+
+
+(A1) 2,3,4 TpC&D; 
+(B2) 3/2,4/3 C&D 
+
+
+Compatibility 
+
+
+Communication 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+WG8 
+
+
+Rep/Act 
+
+
+Definition of test methods for safe operation of 
+digital industrial-process equiment 
+
+
+Verify Resource 
+
+
+(A1)AIIVR 
+
+
+Safety 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+WG8 
+
+
+Rep/Act 
+
+
+Evaluation of system properties for the purposes of 
+system assessment (8 parts) 
+
+
+Resource Standard 
+
+
+(A2) 2,3,4 RR 
+
+
+Performance, 
+Reliability 
+
+
+Production 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+WG9 
+
+
+Rep/Act 
+
+
+Safe Software 
+
+
+Transform Control Info/Data 
+
+
+(A1)AIITfC&D 
+
+
+Safety 
+
+
+Information 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+
+
+Rep/Act 
+
+
+Analog Pneumatic Signals for Process Control 
+Systems 
+
+
+Transport Control Info/Data 
+
+
+(A1)1,2TpC&D; 
+(B2) 2/1 C&D 
+
+
+Compatibility 
+
+
+Communication 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA 
+
+
+
+
+Rep/Act 
+
+
+Binary Direct Voltage Signals for Process 
+Measurement and Control Systems 
+
+
+Transport Control Info/Data 
+
+
+(A1)AIITpC&D; 
+(B2) All C&D 
+
+
+Compatibility 
+
+
+Communication 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+WG5 
+
+
+Rep/Act 
+
+
+Thermocouples - Part 1 (Amend) - Reference Tables 
+
+
+Verify Resource 
+
+
+(A2) 1 VR 
+
+
+Performance 
+
+
+Instrument 
+
+
+
+-J 
+
+
+
+8 
+
+
+
+00 
+
+
+
+Orgn 
+
+
+Ctte 
+
+
+sc 
+
+
+WG 
+
+
+Ctte/Doc 
+
+
+Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+(Proc) Level Cell 
+
+
+Viewpoint 
+
+Compatibility 
+
+
+Base Technology 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+WG5 
+
+
+Rep/Act 
+
+
+Thermocouples - Part 2 (Amend) - Tolerances 
+
+
+Resource Standard 
+
+
+(A2) 1 RR 
+
+
+Instrument 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+WG5 
+
+
+Rep/Act 
+
+
+Thermocouples - Part 3: Extension & Compensating 
+Tables - Tolerances & Identification System 
+
+
+Data for Resource 
+
+
+(A2) 1 DR 
+
+
+Compatibility, 
+Performance 
+
+
+Instrument 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+WG9 
+
+
+Rep/Act 
+
+
+Control Valves Data Sheet; Sizing equations for 
+low flow control valves 
+
+
+Data for Resource 
+
+
+(A2) 1 DR 
+
+
+Compatibility, 
+Performance 
+
+
+Instrument 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+WG9 
+
+
+Rep/ Act 
+
+
+Noise Generated by Liquid Flow through Control 
+Valves (Laboratory Measurement, Prediction) 
+
+
+Data for Resource 
+
+
+(A2) 1 DR 
+
+
+Compatibility, 
+Performance 
+
+
+Instrument 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+
+
+Rep/Act 
+
+
+Code of Practice for the Calculation of Response 
+Times of Temperature Sensors etc. 
+
+
+Data for Resource 
+
+
+<A2) 1 DR 
+
+
+Compatibility, 
+Performance 
+
+
+Instrument 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+
+
+Rep/Act 
+
+
+Electrical, Pneumatic Chart Recorders for 
+Industrial-Process Control Systems - Part 2 
+
+
+Verify Resource 
+
+
+(A2) 1 VR 
+
+
+Performance 
+
+
+Instrument 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+
+
+Rep/Act 
+
+
+General Methods, Procs for Evaluation of Process 
+Measurement, Control Devices 
+
+
+Verify Resource 
+
+
+(A2) AH VR 
+
+
+Performance 
+
+
+instrument 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+
+
+Rep/Act 
+
+
+Guidance for Inspection, Testing of Transmitters in 
+Industrial-Proc Control Sys - Part 2 
+
+
+Verify Resource 
+
+
+(A2) 1 VR 
+
+
+Performance 
+
+
+Instrument 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+
+
+Rep/Act 
+
+
+IEC 546 Controller performance 
+
+
+Verify Resource 
+
+
+(A2) 2,3,4 VR 
+
+
+Performance, 
+
+Reliability, 
+
+Compatability 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+
+
+Rep/Act 
+
+
+Evaluating Performance of Valve Positioners for 
+Industrial-Process Control Systems 
+
+
+Verify Resource 
+
+
+(A2) 1 VR 
+
+
+Performance, 
+Compatability 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+
+
+Rep/Act 
+
+
+Methods for Evaluating Performance of Instruments 
+with Two or Multistage Output etc. 
+
+
+Verify Resource 
+
+
+(A2)1,2VR 
+
+
+Performance, 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+
+
+Rep/Act 
+
+
+Standard for Fire Safe Control Valves 
+
+
+Resource Standard 
+
+
+(A2) 1 RR 
+
+
+Compatability 
+
+
+Production 
+
+
+IEC 
+
+
+TC65 
+
+
+SCB 
+
+
+
+
+Rep/Act 
+
+
+Standard on Calibration Procedures for industrial 
+Temperature Sensors 
+
+
+Verify Resource 
+
+
+(A2) 1 VR 
+
+
+Performance, 
+
+
+Instrument 
+
+
+IEC 
+
+
+TC65 
+
+
+see 
+
+
+WG1 
+
+
+Rep/Act 
+
+
+Development of Real-time Architecture 
+(from ISA DS 72.03) 
+
+
+Transport Control Info/Data 
+
+
+(A1) 2,3,4 TpC&D; 
+(B2) 2/1,3/2 C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+IEC 
+
+
+TC65 
+
+
+see 
+
+
+WG1 
+
+
+Rep/Act 
+
+
+PMS - MMS Companion Standard for Process 
+Control 
+
+
+Transport Control Info/Data 
+
+
+(A1) 2,3,4 TpC&D; 
+(B2) 2/1 ,3/2,4/3 C&D 
+
+
+Compatibility 
+
+
+Communication 
+
+
+IEC 
+
+
+TC65f 
+
+
+sec 
+
+
+WG1 
+
+
+Rep/Act 
+
+
+Preparation of Standards Profiles for Comms 
+Needs of Process Control Industry 
+
+
+Transport Control Info/Data 
+
+
+(A1) 2,3,4 TpC&D; 
+(B2) 3/2,4/3 C&D 
+
+
+Compatibility 
+
+
+Communication 
+
+
+
+Orgn 
+
+
+Ctte 
+
+
+sc 
+
+
+WG 
+
+
+Ctte/Doc 
+
+
+Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+(Proc) Level Cell 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+IEC 
+
+
+TC65 
+
+
+Sec 
+
+
+WG3 
+
+
+Rep/Act 
+
+
+Amendments to Interface System for Programmable Resource Standard & Transport 
+Measuring instruments, 625-1 (Aligning Pts 1^2) Control Info/Data 
+
+
+(A2) 1 RR; 
+(A1) 1 TpC&D; 
+(B2) 2/1 C&D 
+
+
+Compatibility 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+sec 
+
+
+WG3 
+
+
+Rep/Act 
+
+
+Interface System for Programmable Measuring 
+Instruments - Part 1 
+
+
+Resource Standard & Transport 
+Control Info/Data 
+
+
+(A2) 1 RR; 
+(A1) 1 TpC&D; 
+(B2) 2/1 C&D 
+
+
+Compatibility 
+
+
+Control 
+
+
+IEC 
+
+
+TC66 
+
+
+sec 
+
+
+WG3 
+
+
+Rep/Act 
+
+
+Interface System for Programmable Measuring 
+Instruments - Part 2 
+
+
+Resource Standard & Transport 
+Control Info/Data 
+
+
+(A2)1 RR; 
+(A1) 1 TpC&D; 
+(B2) 2/1 C&D 
+
+
+Compatibility 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+sec 
+
+
+WG3 
+
+
+Rep/Act 
+
+
+Investigation of a Common Application Interface for 
+625-2 using or not MMS 
+
+
+Transform Control Info/Data 
+
+
+(A1) 1 TfC&D 
+
+
+Compatibility 
+
+
+Communication 
+
+
+IEC 
+
+
+TC65 
+
+
+sec 
+
+
+WG3 
+
+
+Rep/Act 
+
+
+Preparation of a Modular Instrument System 
+Standard 
+
+
+Resource Standard 
+
+
+(A2) 2,3,4 RR 
+
+
+Compatibility 
+
+
+Control 
+
+
+IEC 
+
+
+TC65 
+
+
+sec 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+Fietabus Standard 
+
+
+Transport Control Info/Data 
+
+
+(A1)1,2TpC&D; 
+(B2) 2/1 C&D 
+
+
+Compatibility 
+
+
+Communication 
+
+
+IEC 
+
+
+TC65 
+
+
+sec 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+PROWAY A/8 
+
+
+Transport Control Info/Data 
+
+
+(A1)1,2TpC&D; 
+(B2) 2/T C&D 
+
+
+Compatibility 
+
+
+Communication 
+
+
+IEC 
+
+
+TC65 
+
+
+sec 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+PROWAY C 
+
+
+Transport Control Info/Data 
+
+
+(A1)1,2TpC&D; 
+(B2) 2/1 C&D 
+
+
+Compatibility 
+
+
+Communication 
+
+
+IEC 
+
+
+TC65 
+
+
+sec 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+PROWAY C (Addendum 5MB* and 10MB/S ) 
+
+
+Transport Control Info/Data 
+
+
+(A1) 1,2 TpC&D; 
+(82) 2/1 C&D 
+
+
+Compatibility 
+
+
+Communication 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+SWG 
+
+
+Rep/Act 
+
+
+Protection Against an Explosion Hazard when 
+Flammable Gas is Used etc. 
+
+
+Resource Standard 
+
+
+(A2)1,2RR; 
+(B2) 2/1 R 
+
+
+Safety 
+
+
+Production 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+WG1 
+
+
+Rep/Act 
+
+
+IEV: Chapter 351 - Automatic Control 
+
+
+Vocabulary 
+
+
+(A2) All DD 
+
+
+Description 
+
+
+Human Interface 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+WG2 
+
+
+Rep/Act 
+
+
+Environmental Conditions - Operating Conditions 
+for Industrial-Process Measurement - Part 1 
+
+
+Resource Standard 
+
+
+(A2) All RR 
+
+
+Environment 
+
+
+Production 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+WG2 
+
+
+Rep/Act 
+
+
+Environmental Conditions - Operating Conditions 
+for Industrial- Process Measurement - Part 2 
+
+
+Resource Standard 
+
+
+(A2) All RR 
+
+
+Environment 
+
+
+Production 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+WG4 
+
+
+Rep/Act 
+
+
+Environmental Conditions - Continuous Wave 
+Conducted Immuniry Requirements 
+
+
+Resource Standard 
+
+
+(A2) All RR 
+
+
+Environment 
+
+
+Production 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+WG4 
+
+
+Rep/Act 
+
+
+Environmental Condn - Electromagnetic Compati- 
+bility for Industrial-Process Measurement - Part 2 
+
+
+Resource Standard 
+
+
+(A2) All RR 
+
+
+Environment 
+
+
+Production 
+
+
+
+M 
+
+
+
+IO 
+
+
+
+
+
+
+to 
+
+
+
+© 
+
+
+
+Orgr 
+
+
+Ctte 
+
+
+SC 
+
+
+WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+(Proc) Level Cell Viewpoint 
+
+
+Base Technology 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+WG4 
+
+
+Rep/Act 
+
+
+Environmental Condn - Electromagnetic Compati- 
+bility for Industrial-Process Measurement - Part 3 
+
+
+Resource Standard 
+
+
+(A2) All RR 
+
+
+Environment 
+
+
+Production 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+WG4 
+
+
+Rep/Act 
+
+
+Environmental Condn - Electromagnetic Compati- 
+bility for Industrial-Process Measurement - Part 5 
+
+
+Resource Standard 
+
+
+(A2) All RR 
+
+
+Environment 
+
+
+Production 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+
+
+Rep/Act 
+
+
+Environmental Conditions - IEC 654, Operating 
+Conditions for measuring and control equipment 
+
+
+Resource Standard 
+
+
+(A2) All RR 
+
+
+Environment 
+
+
+Production 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+
+
+Rep/Act 
+
+
+Environmental Conditions - IEC 654, Surge Voltage 
+(Operating Environment) 
+
+
+Resource Standard 
+
+
+(A2) All RR 
+
+
+Environment 
+
+
+Production 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+
+
+Rep/Act 
+
+
+Environmental Conditions - IEC 801 , Electromag- 
+netic compatability * (Operating Environment) 
+
+
+Resource Standard 
+
+
+(A2) All RR 
+
+
+Environment 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 
+
+
+WG1 
+
+
+Ctte 
+
+
+Extended Formats and Data Structure 
+
+
+Transform Control Information 
+
+
+(At)2TfC 
+
+
+Compatability 
+
+
+Information 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 
+
+
+WG2 
+
+
+Ctte 
+
+
+Vocabulary 
+
+
+WG2, Title only 
+
+
+(A2) All DD 
+
+
+Description 
+
+
+Human Interface 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 
+
+
+WG3 
+
+
+Ctte 
+
+
+Companion Standard to MMS (ISO 9506) 
+
+
+Transport Control Information 
+
+
+(B2) 2/3; 3/4 C 
+
+
+Compatability 
+
+
+Information 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 
+
+
+
+
+Ctte 
+
+
+Numerical Cdntrol of Machines 
+
+
+SC1 Title only 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG1 
+
+
+Ctte 
+
+
+Terminology and Graphical Representation 
+
+
+Data to Data 
+
+
+(A2) All DD 
+
+
+Description 
+
+
+Human Interface 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG2 
+
+
+Ctte 
+
+
+Performance and Test Methods 
+
+
+Resource Verification 
+
+
+(A1)1,2VR 
+
+
+Performance 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG3 
+
+
+Ctte 
+
+
+Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+(A1) 1 {Tp.Tf.V.S} 
+
+
+*{M,R} Safety 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG4 
+
+
+Ctte 
+
+
+Robot Programing Languages - Application 
+Languages 
+
+
+Transform Control Information 
+
+
+(A1)1,2TfC 
+
+
+Compatability 
+
+
+information 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG5 
+
+
+Ctte 
+
+
+Mechanical Interfaces 
+
+
+Transport Resources 
+
+
+(A1) 1 TpR 
+
+
+Compatability 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG6 
+
+
+Ctte 
+
+
+Robot Companion Standard to MMS (ISO 9506) 
+
+
+Transport Control Information & Data 
+
+
+(B2) 2/3.3/4 C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+
+
+Ctte 
+
+
+Performance Testing of Robots 
+
+
+Resource Verification 
+
+
+(A1)1,2VR 
+
+
+Performance 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+
+
+Ctte 
+
+
+Robots for Manufacturing Environment 
+
+
+Transport, Transform, 
+
+Verify & Store Material & Resource 
+
+
+(A1) 1 {TpTf.V.S} * 
+
+
+'{M.R} Safety 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+
+
+Ctte 
+
+
+Standardised Data Sheets for robots 
+
+
+SC2 Title only 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC3 
+
+
+WG1 
+
+
+Ctte 
+
+
+Programming Languages for Automatically 
+Controlled Equipment 
+
+
+Transform Control Information & Data 
+
+
+(A1)1,2TfC 
+
+
+Compatability 
+
+
+Information 
+
+
+
+Orgn 
+
+
+Ctte 
+
+
+SC WG 
+
+
+Ctte/Doc 
+
+
+Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+(Proc) Level Cell 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+ISO 
+
+
+TC184 
+
+
+SC3 WG1 
+
+
+Rep/Act 
+
+
+Revision of ISO 4342 CLDATA, 4343 APT - 
+Application Languages 
+
+
+Transform Control Information & Data 
+
+
+(A1)2,3TfC 
+
+
+Compatability 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC3 WG2 
+
+
+Ctte 
+
+
+Requirements for a Global Programming Language 
+Environment 
+
+
+Beyond SFRM 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC3 
+
+
+Ctte 
+
+
+Manufacturing Application Languages 
+
+
+SC3 Title only 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC4 WG1 
+
+
+Rep/Act 
+
+
+Development of STEP 
+
+
+Data with Product Design 
+
+
+(B1) 3,4 F04D 
+
+
+Compatability 
+
+
+Information 
+
+
+ISO 
+
+
+TC184 
+
+
+SC4 WG1 
+
+
+Ctte 
+
+
+Technical Coordination and Support 
+
+
+No match 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC4 
+
+
+Ctte 
+
+
+External Representation of Product Definition Data 
+
+
+SC4 Title only 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC5 WG1 
+
+
+Ctte 
+
+
+Reference Models 
+
+
+' Beyond SFRM 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC5 WG2 
+
+
+Ctte 
+
+
+Communications and Interconnections 
+
+
+Transform Control Information & Data 
+
+
+(B2) 2/3,3/4 C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+(SO 
+
+
+TC184 
+
+
+SC5 WG3 
+
+
+Ctte 
+
+
+Industrial Automation Vocabulary 
+
+
+WG3, Tille only 
+
+
+(A2) All DD 
+
+
+Description 
+
+
+Human Interface 
+
+
+ISO 
+
+
+TC184 
+
+
+SC5 
+
+
+Ctte 
+
+
+System Integration and Communication 
+
+
+SC5 Title only 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 WG1 
+
+
+Rep/Act 
+
+
+Extended Format and Data Structure 
+(Rev: TR 61 32 -1981) 
+
+
+Transform Control 
+information 
+
+
+(A1)2TfC 
+
+
+Compatability 
+
+
+Information 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 WG1? 
+
+
+Rep/Act 
+
+
+Axis and Motion Nomenclature 
+
+
+Resource to Resource 
+
+
+(A2) 1 RR 
+
+
+Description 
+
+
+Human Interface 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 WG2 
+
+
+Rep/Act 
+
+
+NC Vocabulary 
+
+
+
+
+(A2) All DD 
+
+
+Description 
+
+
+Human Interface 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 WG3 
+
+
+Rep/Act 
+
+
+NC Companion Standard to MMS (9506/4) 
+
+
+Transport Control Information 
+
+
+(B2) 2/3,3/4 C 
+
+
+Compatability 
+
+
+Information 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 
+
+
+Rep/Act 
+
+
+Numerical Control of Machines - Symbols 
+
+
+Resource to Resource 
+
+
+(A2) 1 RR 
+
+
+Description 
+
+
+Human Interface 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 
+
+
+Rep/Act 
+
+
+Part 2: Coding and Maintenance of Preparatory 
+Functions G and Misc Functions M 
+
+
+Transform Control Information 
+
+
+(A1)1,2TfC 
+
+
+Compatability 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 
+
+
+Rep/Act 
+
+
+Part 3: Programming of Miscellaneous Functions M 
+(Classes 1 to 9) 
+
+
+Transform Control Information 
+
+
+(A1) 1,2 TfC 
+
+
+Compatability 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC1 
+
+
+Rep/Act 
+
+
+Specn. of Interface Signals betw. Numerical Control 
+Unit/Electrical Equipt. of NC m/c 
+
+
+Transform Control Information 
+
+
+(A1) 1 TfC 
+
+
+Compatability 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 WG1 
+
+
+Rep/Act 
+
+
+Robot Characteristics 
+
+
+No match 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 WG1 
+
+
+Rep/Act 
+
+
+Robot Vocabulary 
+
+
+
+
+(A2) All DD 
+
+
+Description 
+
+
+Human Interface 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 WG1? 
+
+
+Rep/Act 
+
+
+Coordinate Systems and Motions 
+
+
+Transform Control 
+
+
+(A1) 1 TfC 
+
+
+Compatability 
+
+
+Production 
+
+
+
+<*» 
+
+
+
+
+
+
+Orgr 
+
+
+i Ctte 
+
+
+sc 
+
+
+WG 
+
+
+Ctte/Doc 
+
+
+: Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+(Proc) Level Cell 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG2 
+
+
+Rep/ Act 
+
+
+Performance Criteria and Related Testing Methods 
+
+
+Resource Verification 
+
+
+(A1)1,2RV 
+
+
+Performance 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG3 
+
+
+Rep/Act 
+
+
+Robot Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+(A1) 1 {Tp.Tf.V.S} * {M,R} Safety 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG4 
+
+
+Rep/Act 
+
+
+Robot Programming Languages 
+
+
+Transform Control Information 
+
+
+(A1) 1 TfC 
+
+
+Compatability 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG5 
+
+
+Rep/Act 
+
+
+Mechanical Interfaces - Part 1 : Circular (Form A) 
+
+
+Transport Resource 
+
+
+(A1) 1 TpR 
+
+
+Compatability 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG6 
+
+
+Rep/Act 
+
+
+Robot Companion Standard to MMS (9506/3) 
+
+
+Transport Control 
+information & Data 
+
+
+(B2) 2/3&3/4 C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+ISO 
+
+
+TC184 
+
+
+SC3 
+
+
+WG1 
+
+
+Rep/Act 
+
+
+Extension of Basic Part Programming Reference 
+Language 
+
+
+Transform Control 
+
+
+(A1) 1 TfC 
+
+
+Compatability 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC3 
+
+
+WG1 
+
+
+Rep/Act 
+
+
+Extension of Post Processing Commands 
+
+
+Transform Control Information 
+
+
+(A1) 1,2 TfC 
+
+
+Compatability 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC3 
+
+
+WG1 
+
+
+Rep/Act 
+
+
+NC Processor Output - Logical Structure 
+
+
+Transform Control Information 
+
+
+(A1) 2,3 TfC 
+
+
+Compatability 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+SC3 
+
+
+WG2 
+
+
+Rep/Act 
+
+
+Requirements for Global Programming Language 
+Environment 
+
+
+Beyond SFRM 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC4 
+
+
+WG1 
+
+
+Rep/Act 
+
+
+Data Exchange and Transfer Standard 
+Specification (STEP) 
+
+
+Data with Product Design 
+
+
+(B1) 3,4 F04D 
+
+
+Compatability 
+
+
+Information 
+
+
+ISO 
+
+
+TC184 
+
+
+SC5 
+
+
+WG1 
+
+
+Rep/Act . 
+
+
+Basic Reference Model for Automated and 
+CAD Systems 
+
+
+Beyond SFRM 
+
+
+
+
+
+
+
+
+ISO 
+
+
+TC184 
+
+
+SC5 
+
+
+WG2 
+
+
+Rep/Act 
+
+
+Control Systems Employing Half-Duplex 
+Transmission etc. 
+
+
+Transport Control Information & Data 
+
+
+(B2) 1/2,2/3,3/4 
+C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+ISO 
+
+
+TC184 
+
+
+SC5 
+
+
+WG2 
+
+
+Rep/Act 
+
+
+Electrical and Mechanical Interface and Line 
+Control Characteristics for Serial Data Link etc. 
+
+
+Transport Control Information & Data 
+
+
+(B2) 1/2,2/3,3/4 
+C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+ISO 
+
+
+TC184 
+
+
+SC5 
+
+
+WG2 
+
+
+Rep/Act 
+
+
+Functional Standards on l-LANs 
+
+
+Transport Control Information & Data 
+
+
+(B2) 1/2,2/3,3/4 
+C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+ISO 
+
+
+TC184 
+
+
+SC5 
+
+
+WG2 
+
+
+Rep/Act 
+
+
+Manufacturing Message Service • Protocol Spec. 
+
+
+Transport Control Information & Data 
+
+
+(B2) 1/2,2/3,3/4 
+C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+ISO 
+
+
+TC184 
+
+
+SC5 
+
+
+WG2 
+
+
+Rep/Act 
+
+
+Manufacturing Message Service - Service Def. 
+
+
+Transport Control Information & Data 
+
+
+(B2) 1/2,2/3,3/4 C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+ISO 
+
+
+TC184 
+
+
+SC5 
+
+
+WG3 
+
+
+Rep/Act 
+
+
+Industrial Automation Systems - Vocabulary 
+
+
+
+
+(A2) All DD 
+
+
+Description 
+
+
+Human Interface 
+
+
+ISO 
+
+
+TC184 
+
+
+
+
+WG2 
+
+
+Rep/Act 
+
+
+Revision of ISO/TC 184 Structure 
+
+
+Beyond SFRM 
+
+
+
+
+
+
+
+
+
+WW 
+
+-* 0» 
+©— ■ • 
+
+<o •• 
+
+Zft o 
+
+o 
+
+o 
+
+
+
+Orgn 
+
+
+Ctte SC 
+
+
+WG 
+
+
+Ctte/Doc 
+
+
+Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+(Proc) Level Celt 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+ISO 
+
+
+TC184 
+
+
+WG3 
+
+
+Rep/Act 
+
+
+Environmental Conditions for Discrete Parts 
+Manufacturing - Automation Sys and Equip. 
+
+
+Resource to Resource 
+
+
+(A2) All RR 
+
+
+Environment 
+
+
+Production 
+
+
+ISO 
+
+
+TC184 
+
+
+
+
+Rep/Act 
+
+
+Functional Standards for Real-time LANs 
+
+
+Transport Control Information & Data 
+
+
+(B2) 1/2,2/3,3/4 
+C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+ISO 
+
+
+TC184 
+
+
+
+
+Rep/Act 
+
+
+Production management standard for ISO 9506 
+
+
+Data & Control Info with Production 
+Management 
+
+
+(B1)AIIF06C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+ISO 
+
+
+TC184 
+
+
+
+
+Rep/Act 
+
+
+Real-time LANs (proposed new work item) 
+
+
+Transport Control information & Data 
+
+
+(B2) 1/2.2/3,3/4 
+C&D 
+
+
+Compatability 
+
+
+Communication 
+
+
+
+van 
+
+
+
+
+
+
+-8 
+
+o 
+
+
+
+IS 14776 (Part 2): 2000 
+ISO/TR 10314-2:1991 
+
+
+
+ANNEX B. ILLUSTRATIVE AREAS OF STANDARDS FOR CELLS OF THE MATRICES 
+
+This Annex re-orders the material in Annex A to show illustrative examples of standard areas for 
+each procedure, each level and each label for the cells of the corresponding matrices. 
+
+
+
+The headings for each table area as follows: 
+
+(Proc) Level Cell: The Procedure used, at what Level, and for which matrix cell. 
+
+Orgn: ISOorlEC 
+
+Ctte: The relevant Technical Committee 
+
+SC: .... Subcommittee (where appropriate) 
+
+WG: .... Working Group (where appropriate) 
+
+Cue/Doc: Whether the work is an identified Report or Activity 
+
+(Rep/Act), or simply an identified general committee scope (Ctte) 
+Scope of Activity or Standards document (self explanatory) 
+Example Standards Areas (self explanatory) 
+Viewpoint: As defined in section 2.3 
+
+Base Technology: As defined in section 2.3 
+
+
+
+34 
+
+
+
+(Proc)LevelCell 
+
+
+Orgn Ctte SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A1) 1 SM 
+
+
+ISO TC184 SC2 WG3 
+
+
+Rep/Act Robot Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 SM 
+
+
+ISO TC 184 SC 2 
+
+
+Cite Robots for Manufacturing Environment 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 SM 
+
+
+ISO TC184SC2WG3 
+
+
+Ctte Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 SR 
+
+
+ISO TC 184 SC2 WG3 
+
+
+Rep/Act Robot Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 SR 
+
+
+ISO TC184SC2 
+
+
+Ctte Robots for Manufacturing Environment 
+
+
+Transport, Transform, Verify & Store 
+Material 4 Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 SR 
+
+
+ISO TC184SC2 WG3 
+
+
+Ctte Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 TfC 
+
+
+ISO TC184 SC2 WG1? 
+
+
+Rep/Act Coordinate Systems and Motions 
+
+
+Transform Control 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1) 1 TfC 
+
+
+ISO TC184 SC3 WG1 
+
+
+Rep/Act Extension of Basic Part Programming 
+Reference Language 
+
+
+Transform Control 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1) 1 TfC 
+
+
+ISO TCI 84 SC3 WG1 
+
+
+Rep/Act Extension of Post Processing Commands 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1) 1 TfC 
+
+
+ISO TC184 SC1 
+
+
+Rep/Act Part 2: Coding and Maintenance of 
+Preparatory Functions G and Misc 
+Functions M 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1) 1 TfC 
+
+
+ISO TC 184 SC1 
+
+
+Rep/Act Part 3: Programming of Miscellaneous 
+Functions M (Classes 1 to 9) 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1) 1 TfC 
+
+
+ISO TC 184 SC 3 WG 1 
+
+
+Ctte Programming Languages for 
+
+Automatically Controlled Equipment 
+
+
+Transform Control Information & Data 
+
+
+Compatability 
+
+
+Information 
+
+
+<A1) 1 TfC 
+
+
+ISO TC 184 SC 2 WG 4 
+
+
+Ctte Robot Programing Languages - 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Information 
+
+
+
+
+
+
+Application Languages 
+
+
+
+
+
+
+
+
+(A1) 1 TfC 
+
+
+ISO TC184 SC2 WG4 
+
+
+Rep/Act Robot Programming Languages 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Production 
+
+
+
+WOT 
+
+!: m 
+
+
+
+
+
+
+
+
+
+
+
+
+(Proc)LevelCell 
+
+
+Orgn 
+
+
+Ctte SC WG 
+
+
+Ctte/Doc Scop* of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A1) 1 TfC 
+
+
+ISO 
+
+
+TC 184 SC1 
+
+
+Rep/Act Specn. of Interface Signals betw. 
+
+Numerical Control Unit/Electrical Equipt. 
+of NC m/c 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1) 1 TfC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG3 
+
+
+Rep/Act Investigation of a Common Application 
+Interface for 625-2 using or not MMS 
+
+
+Transform Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1) 1 TfC&D 
+
+
+IEC 
+
+
+TC 65 SC A WG9 
+
+
+Rep/Act Safe Software 
+
+
+Transform Control Info/Data 
+
+
+Safety 
+
+
+Information 
+
+
+(A1) 1 TfM&R 
+
+
+ISO 
+
+
+TC184 SC2 WG3 
+
+
+Rep/Act Robot Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 TfM&R 
+
+
+ISO 
+
+
+TC184SC2 
+
+
+Ctte Robots for Manufacturing Environment 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 TfM&R 
+
+
+ISO 
+
+
+TC184SC2 WG3 
+
+
+Ctte Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG3 
+
+
+Rep/Act Amendments to Interface System for 
+Programmable Measuring Instruments, 
+625-1 (Aligning Pts 1 ,2) 
+
+
+Resource Standard & Transport Control 
+Info/Data 
+
+
+Compatibility 
+
+
+Control 
+
+
+(A1) 1 TpC&D 
+
+
+IEC 
+
+
+TC65 SCA 
+
+
+Rep/Act Analog Pneumatic Signals for Process 
+Control Systems 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1) 1 TpC&D 
+
+
+IEC 
+
+
+TC65 SCA 
+
+
+Rep/Act Binary Direct Voltage Signals for Process 
+Measurement and Control Systems 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(Al)1TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act Fieidbus Standard 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1) 1 TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG3 
+
+
+Rep/Act Interface System for Programmable 
+Measuring Instruments - Parts 1 & 2 
+
+
+Resource Standard & Transport Control 
+Info/Data 
+
+
+Compatibility 
+
+
+Control 
+
+
+(A1) 1 TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act PROWAYA/B 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1) 1 TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act PROWAYC 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1) 1 TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act PROWAY C (Addendum 5MB/S and 
+10MB/S) 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+
+(Proc)LevelC«ll 
+
+
+Orgn Cttt> SC WG 
+
+
+Ctte/Doc Scop* of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(At) 1 TpMAR 
+
+
+ISO TC 184 SC2 WG3 
+
+
+Rep/Act Robot Safely 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 TpM&R 
+
+
+ISO TC184SC2 
+
+
+Cite Robots tor Manufacturing Environment 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 TpM&R 
+
+
+ISO TC184SC2WG3 
+
+
+Ctte Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1)1TpR 
+
+
+ISO TC184SC2WGS 
+
+
+Ctle Mechanical interfaces 
+
+
+Transport Resources 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1) 1 TpR 
+
+
+ISO TC 164 SC2 WQS 
+
+
+Rep/Act Mechanical Interfaces - Part 1 : Circular 
+(Form A) 
+
+
+Transport Resource 
+
+
+Compatabiiity 
+
+
+Production 
+
+
+(A1) 1 VM 
+
+
+ISO TC 164 SC2 WG3 
+
+
+Rep/Act Robot Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 VM 
+
+
+ISO TC164SC2 
+
+
+Ctte Robots for Manufacturing Environment 
+
+
+Transport, Transform, Verify A Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 VM 
+
+
+ISO TC184SC2 WG3 
+
+
+Ctte Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1) 1 VR 
+
+
+IEC TC65 SCA WG8 
+
+
+Rep/Act Definition of tost methods for safe 
+
+operation of digital industrial-process 
+equiment 
+
+
+Verify Resource 
+
+
+Safety 
+
+
+Control 
+
+
+(A1) 1 VR 
+
+
+ISO TC184SC2 WG2 
+
+
+Ctte Performance and Test Methods 
+
+
+Resource Verification 
+
+
+Performance 
+
+
+Production 
+
+
+(A1) 1 VR 
+
+
+ISO TC 184 SC2 WG2 
+
+
+Rep/Act Performance Criteria and Related Testing 
+Methods 
+
+
+Resource Verification 
+
+
+Performance 
+
+
+Production 
+
+
+(A1) 1 VR 
+
+
+ISO TC 184 SC 2 
+
+
+Ctte Performance Testing of Robots 
+
+
+Resource Verification 
+
+
+Performance 
+
+
+Production 
+
+
+(A1) 1 VR 
+
+
+ISO TC 184 SC2 WG3 
+
+
+Rep/Act Robot Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1)1VR 
+
+
+ISO TC184SC2 
+
+
+Ctte Robots for Manufacturing Environment 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+
+w 
+
+
+
+(Proc)LevelCell 
+
+
+Orgn 
+
+
+Ctte SC WG 
+
+
+Ctte/Doc 
+
+
+Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A1)1 VR 
+
+
+ISO 
+
+
+TC184 SC2 WG3 
+
+
+CUe 
+
+
+Safety 
+
+
+Transport, Transform, Verify & Store 
+Material & Resource 
+
+
+Safety 
+
+
+Production 
+
+
+(A1)2TtC 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/ Act Language for programmable controller - 
+Application Languages (inc Part 3) 
+
+
+Transform Control Information 
+
+
+Compatibility 
+
+
+Information, Control 
+
+
+(A1)2TfC 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act 
+
+
+PLCs - Part 3: Programming Languages 
+
+
+Transform Control Information 
+
+
+Compatibility 
+
+
+Information, Control 
+
+
+(A1)2TfC 
+
+
+ISO 
+
+
+TC 184 SCI WG1 
+
+
+Rep/Act 
+
+
+Extended Format and Data Structure 
+(Rev: TR 61 32 -1981) 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Information 
+
+
+(A1)2TfC 
+
+
+ISO 
+
+
+TC 184 SC 1 WG 1 
+
+
+Ctte 
+
+
+Extended Formats and Data Structure 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Information 
+
+
+(A1)2TfC 
+
+
+ISO 
+
+
+TC184 SC3 WG1 
+
+
+Rep/Act Extension of Post Processing Commands 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1)2TfC 
+
+
+ISO 
+
+
+TC 184 SC3 WG1 
+
+
+Rep/Act NC Processor Output - Logical Structure 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1)2TfC 
+
+
+ISO 
+
+
+TC 184 SCI 
+
+
+Rep/Act 
+
+
+Part 2: Coding and Maintenance of 
+Preparatory Functions G and Misc 
+Functions M 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1)27IC 
+
+
+ISO 
+
+
+TC 184 SC1 
+
+
+Rep/Act 
+
+
+Part 3: Programming of Miscellaneous 
+Functions M (Classes 1 to 9) 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1)2T!C 
+
+
+ISO 
+
+
+TC 184 SC 3 WG 1 
+
+
+Ctte 
+
+
+Programming Languages for 
+Automatically Controlled Equipment 
+
+
+Transform Control Information & Data 
+
+
+Compatability 
+
+
+Information 
+
+
+(A1)2TfC 
+
+
+ISO 
+
+
+TC184SC3 WG1 
+
+
+Rep/Act 
+
+
+Revision of ISO 4342 CLDATA^ 4343 APT 
+Application Languages 
+
+
+- Transform Control Information & Data 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1)2T!C 
+
+
+ISO 
+
+
+TC184SC2 WG4 
+
+
+Ctte 
+
+
+Robot Programing Languages - 
+Application Languages 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Information 
+
+
+(A1)2TpCM> 
+
+
+IEC 
+
+
+TC65 SCA 
+
+
+Rep/Act Analog Pneumatic Signals for Process 
+Control Systems 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)2TpC4D 
+
+
+IEC 
+
+
+TC65 SCA 
+
+
+Rep/Act Binary Direct Voltage Signals for Process 
+Measurement and Control Systems 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+
+WOT 
+
+S to 
+
+o 
+
+o 
+
+
+
+(Proc)LevefCell 
+
+
+Orgn 
+
+
+Ctte SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+<A1)2TpC4b 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act Development of Real-time Architecture 
+(from ISA DS 72.03} 
+
+
+Transport Control Info/Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(A1)2TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act FieWbus Standard 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)2TpC&D 
+
+
+IEC 
+
+
+TC65 SCA WG6 
+
+
+Rep/Act PLCs - Part : Messaging Service 
+Specification 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)2TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act PMS - MMS Companion Standard for 
+Process Control 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)2TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act Preparation of Standards Profiles for 
+Comms Needs of Process Control 
+Industry 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)2TpC&D 
+
+
+IEC 
+
+
+TC65 SCC WG6 
+
+
+Rep/Act PROWAYA/B 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)2TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act PROWAYC 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)2TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act PROWAY C (Addendum 5MB/s and 
+10MB/S) 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)2TfC&D 
+
+
+IEC 
+
+
+TC 65 SC A WG9 
+
+
+Rep/Act Safe Software 
+
+
+Transform Control Info/Data 
+
+
+Safety 
+
+
+Information 
+
+
+(A1)2VR 
+
+
+IEC 
+
+
+TC 65 SC A WG8 
+
+
+Rep/Act Definition of test methods for safe 
+
+operation of digital industrial-process 
+equiment 
+
+
+Verify Resource 
+
+
+Safety 
+
+
+Control 
+
+
+(A1)2VR 
+
+
+ISO 
+
+
+TC184SC2 WG2 
+
+
+Ctte Performance suid Test Methods 
+
+
+Resource Verification 
+
+
+Performance 
+
+
+Production 
+
+
+(A1)2VR 
+
+
+ISO 
+
+
+TC 184 SC2 WG2 
+
+
+Rep/Act Performance Criteria and Related 
+Testing Methods 
+
+
+Resource Verification 
+
+
+Performance 
+
+
+Production 
+
+
+(A1)2VR 
+
+
+ISO 
+
+
+TC184SC2 
+
+
+Ctte Performance Testing of Robots 
+
+
+Resource Verification 
+
+
+Performance 
+
+
+Production 
+
+
+<A1)3TTC 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act Language for programmable controller - 
+Application Languages (ihc Part 3) 
+
+
+Transform Control Information 
+
+
+Compatibility 
+
+
+Information, Control 
+
+
+(A1)3TfC 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act PLCs - Part 3: Programming Languages 
+
+
+Transform Control Information 
+
+
+Compatibility 
+
+
+Information, Control 
+
+
+(A1)3TfC 
+
+
+ISO 
+
+
+TC184 SC3 WG1 
+
+
+Rep/Act NC Processor Output - Logical Structure 
+
+
+Transform Control Information 
+
+
+Compatability 
+
+
+Production 
+
+
+
+w 
+
+SC 
+
+
+
+§ 
+
+
+
+(Proc)LevelCell 
+
+
+Orgn 
+
+
+Ctte SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+viewpoint 
+
+
+Base Technology 
+
+
+(A1)3TfC 
+
+
+ISO 
+
+
+TC184SC3 WG1 
+
+
+Rep/Act Revision of ISO 4342 CLDATA, 4343 
+APT - Application Languages 
+
+
+Transform Control Information & Data 
+
+
+Compatability 
+
+
+Production 
+
+
+(A1)3TfC&D 
+
+
+IEC 
+
+
+TC 65 SC A WG9 
+
+
+Rep/Act Safe Software 
+
+
+Transform Control Info/Data 
+
+
+Safety 
+
+
+Information 
+
+
+(A1)3TpC&D 
+
+
+IEC 
+
+
+TC65 SCA 
+
+
+Rep/Act Binary Direct Voltage Signals for Process 
+Measurement and Control Systems 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)3TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act Development df Real-time Architecture 
+(from ISA DS 72.03) 
+
+
+Transport Control Info/Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(A1)3TpC&D 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act PLCs - Part : Messaging Service 
+Specification 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)3TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act PMS - MMS Companion Standard for 
+Process Cbntrol 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+<A1)3TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act Preparation of Standards Profiles for 
+
+Comms Needs of Process Control Industry 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)3VR 
+
+
+IEC 
+
+
+TC 65 SC A WG8 
+
+
+Rep/Act Definition of test methods for safe 
+
+operation of digital industrial-process 
+equiment 
+
+
+Verify Resource 
+
+
+Safety 
+
+
+Control 
+
+
+(A1)4TfC 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act Language for programmable controller - 
+Application Languages (inc Part 3) 
+
+
+Transform Control Information 
+
+
+Compatibility 
+
+
+Information, Control 
+
+
+(A1)4TfC 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act PLCs - Part 3: Programming Languages 
+
+
+Transform Control Information 
+
+
+Compatibility 
+
+
+Information, Control 
+
+
+(A1)4TfC&D 
+
+
+IEC 
+
+
+TC 65 SC A WG9 
+
+
+Rep/Act Safe Software 
+
+
+Transform Control Info/Data 
+
+
+Safety 
+
+
+Information 
+
+
+(A1)4TpC&D 
+
+
+IEC 
+
+
+TC65 SCA 
+
+
+Rep/Act Binary Direct Voltage Signals for Process 
+Measurement and Control Systems 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)4TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act Development of Real-time Architecture 
+(from ISA DS 72.03) 
+
+
+Transport Control Info/Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(A1)4TpC&D 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act PLCs - Part : Messaging Service 
+Specification 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+
+(Proc)LevalCell 
+
+
+Orgri 
+
+
+Ctte SC WG 
+
+
+Ctte/Doc Scop* of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Basa Technology 
+
+
+(A1)4TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act PMS - MMS Companion Standard for 
+Process Control 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)4TpC&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act Preparation of Standards Profiles for 
+
+Comms Needs of Process Control Industry 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(A1)4VR 
+
+
+IEC 
+
+
+TC65 SCA WG8 
+
+
+Rep/Act Definition of test methods for safe 
+
+operation of digital industrial-process 
+equiment 
+
+
+Verify Resource 
+
+
+Safety 
+
+
+Control 
+
+
+(A2) 1 DD 
+
+
+IEC 
+
+
+TC 65 WG1 
+
+
+Rep/Act IEV: Chapter 351 - Automatic Control 
+
+
+Vocabulary 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 1 DD 
+
+
+ISO 
+
+
+TC 184 SC5 WG3 
+
+
+Rep/Act Industrial Automation Systems - 
+Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 1 DD 
+
+
+ISO 
+
+
+TC184SC5 WG3 
+
+
+Ctte Industrial Automation Vocabulary 
+
+
+WG3, Title only 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 1 DD 
+
+
+ISO 
+
+
+TC 184 SC1 WG2 
+
+
+Rep/Act NC Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 1 DD 
+
+
+ISO 
+
+
+TC 184 SC2 WG1 
+
+
+Rep/Act Robot Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 1 DD 
+
+
+ISO 
+
+
+TC184SC2 WG1 
+
+
+Ctte Terminology and Graphical 
+Representation 
+
+
+Data to Data 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 1 DD 
+
+
+ISO 
+
+
+TC184SC1 WG2 
+
+
+Ctte Vocabulary 
+
+
+WG2, Title only 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 1 DR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act Code of Practice for the Calculation of 
+
+Response Times of Temperature Sensors 
+
+
+Data for Resource 
+
+
+Compatibility, 
+Performance 
+
+
+Instrument 
+
+
+(A2) 1 DR 
+
+
+IEC 
+
+
+TC65 SCB WG9 
+
+
+Rep/Act Control Valves Data Sheet; Sizing 
+equations for low flow control valves 
+
+
+Data for Resource 
+
+
+Compatibility, 
+Performance 
+
+
+Instrument 
+
+
+(A2) 1 DR 
+
+
+IEC 
+
+
+TC 65 SC B WG9 
+
+
+Rep/Act Noise Generated by Liquid Flow through 
+Control Valves (Laboratory Measurement, 
+Prediction) 
+
+
+Data for Resource 
+
+
+Compatibility, 
+Performance 
+
+
+Instrument 
+
+
+(A2) 1 DR 
+
+
+IEC 
+
+
+TC65 SCB WG5 
+
+
+Rep/Act Thermocouples - Part 3: Extension & 
+Compensating Tables - Tolerances & 
+Identification System 
+
+
+Data for Resource 
+
+
+Compatibility, 
+Performance 
+
+
+Instrument 
+
+
+
+WW 
+
+I* 
+
+*2J 
+
+
+
+to 
+
+
+
+to " 
+<ofc» 
+
+
+
+
+
+
+(Proc)LevetCell 
+
+
+Orgn 
+
+
+Ctte 
+
+
+SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A2) 1 RR 
+
+
+iEC 
+
+
+TC65 
+
+
+SCC WG3 
+
+
+Rep/Act Amendments to Interface System for 
+Programmable Measuring Instruments, 
+625-1 (Aligning Pts 1 ,2) 
+
+
+Resource Standard & Transport Control 
+Info/Data 
+
+
+Compatibility 
+
+
+Control 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC44 
+
+
+WG3 
+
+
+Rep/Act Electrical Equipment of Industrial 
+
+Machines - Part 1 : General Requirements 
+
+
+Resource/Resource 
+
+
+Description 
+
+
+Device/Tool 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC44 
+
+
+WG2 
+
+
+Rep/Act Electrical Equipment of Industrial 
+
+Machines - Part 3: Industrial Sewing 
+Machines 
+
+
+Resource/Resource 
+
+
+Description 
+
+
+Device/Tool 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG4 
+
+
+Rep/Act Environmental Conditions - Continuous 
+
+Wave Conducted Immunity Requirements 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+Rep/Act Environmental Conditions - IEC 654, 
+
+Operating Conditions for measuring and 
+control equipment 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+Rep/Act Environmental Conditions - IEC 654, 
+
+Surge Voltage (Operating Environment) 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+Rep/Act Environmental Conditions - IEC 801, 
+Electromagnetic compatability - 
+(Operating Environment) 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG2 
+
+
+Rep/Act Environmental Conditions - Operating 
+Conditions for Industrial-Process 
+Measurement - Part 1 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG2 
+
+
+Rep/Act Environmental Conditions - Operating 
+Conditions for Industrial-Process 
+Measurement - Part 2 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement- Part 2 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+
+WW 
+
+3- 
+
+23 
+
+
+
+ro 
+
+
+
+to 
+
+
+
+<o io 
+
+O 
+
+
+
+(Ptoc)LevelCeJI 
+
+
+prgr 
+
+
+Ctte SC WO 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC65 WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement - Part 3 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC65 WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement - Part 5 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC 65 SC C WG3 
+
+
+Rep/Act Interface System for Programmable 
+Measuring Instruments - Part 1 
+
+
+Resource Standard & Transport Control 
+Info/Data 
+
+
+Compatibility 
+
+
+Control 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC6S SCC WG3 
+
+
+Rep/Act Interface System for Programmable 
+
+
+Resource Standard & Transport Control 
+
+
+Compatibility 
+
+
+Control 
+
+
+
+
+
+
+
+
+Measuring Instruments - Part 2 
+
+
+Info/Data 
+
+
+
+
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC 65 SWG 
+
+
+Rep/Act Protection Against an Explosion Hazard 
+when Flammable Gas is Used etc. 
+
+
+Resource Standard 
+
+
+Safety 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act Standard for Fire Safe Control Valves 
+
+
+Resource Standard 
+
+
+Compatabitity 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+IEC 
+
+
+TC 65 SC B WG5 
+
+
+Rep/Act Thermocouples - Part 2 {Amend) - 
+Tolerances 
+
+
+Resource Standard 
+
+
+Compatibility 
+
+
+Instrument 
+
+
+(A2) 1 RR 
+
+
+ISO 
+
+
+TC184 SC1 WG1? 
+
+
+Rep/Act Axis and Motion Nomenclature 
+
+
+Resource to Resource 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 1 RR 
+
+
+ISO 
+
+
+TC 184 WG3 
+
+
+Rep/Act Environmental Conditions for Discrete 
+Parts Manufacturing - Automation Sys 
+and Equip. 
+
+
+Resource to Resource 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 1 RR 
+
+
+ISO 
+
+
+TC 184 SC1 
+
+
+Rep/Act Numerical Control of Machines - Symbols 
+
+
+Resource to Resource 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 1 VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act Electrical, Pneumatic Chart Recorders for 
+Industrial-Process Control Systems - Part 2 
+
+
+Verify Resource 
+
+
+Performance 
+
+
+Instrument 
+
+
+(A2) 1 VR 
+
+
+IEC 
+
+
+TC 65 SC B 
+
+
+Rep/Act Evaluating Performance of Valve 
+
+Positioners for Industrial-Process Control 
+Systems 
+
+
+Verify Resource 
+
+
+Performance, 
+Compatability 
+
+
+Control 
+
+
+
+JS N 
+
+
+
+M 
+
+
+
+£ 
+
+
+
+(Proc)LevelCell 
+
+
+Orgn 
+
+
+Ctte SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A2) 1 VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act General Methods, Procs for Evaluation of 
+Process Measurement, Control Devices 
+
+
+Verify Resource 
+
+
+Performance 
+
+
+Instrument 
+
+
+(A2) 1 VR 
+
+
+IEC 
+
+
+TC6S SCB 
+
+
+Rep/Act Guidance for Inspection, Testing of 
+
+Transmitters in Industrial- Proc Control 
+Sys - Part 2 
+
+
+Verify Resource 
+
+
+Performance 
+
+
+Instrument 
+
+
+(A2) 1 VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act Methods for Evaluating Performance of 
+Instruments with Two or Multistage 
+Output etc. 
+
+
+Verity Resource 
+
+
+Performance, 
+
+
+Control 
+
+
+(A2) 1 VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act Standard on Calibration Procedures for 
+Industrial Temperature Sensors 
+
+
+Verify Resource 
+
+
+Performance, 
+
+
+Instrument 
+
+
+(A2) 1 VR 
+
+
+IEC 
+
+
+TC 65 SC B WG5 
+
+
+Rep/Act Thermocouples - Part 1 (Amend) - 
+Reference Tables 
+
+
+Verify Resource 
+
+
+Performance 
+
+
+Instrument 
+
+
+(A2)2DD 
+
+
+IEC 
+
+
+TC65 WG1 
+
+
+Rep/Act IEV: Chapter 351 - Automatic Control 
+
+
+Vocabulary 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2)2DD 
+
+
+ISO 
+
+
+TC 184 SC5 WG3 
+
+
+Rep/Act Industrial Automation Systems - 
+Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2)2DD 
+
+
+ISO 
+
+
+TC184SC5 WG3 
+
+
+Ctte Industrial Automation Vocabulary 
+
+
+WG3, Title only 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2)2DD 
+
+
+ISO 
+
+
+TC184 SC1 WG2 
+
+
+Rep/Act NC Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2)2DD 
+
+
+ISO 
+
+
+TC 184 SC2 WG1 
+
+
+Rep/Act Robot Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 2 DD 
+
+
+ISO 
+
+
+TC184SC2 WG1 
+
+
+Ctte Terminology and Graphical 
+Representation 
+
+
+Data to Data 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 2 DD 
+
+
+ISO 
+
+
+TC184SC1 WG2 
+
+
+Ctte Vocabulary 
+
+
+WG2, Title onfy 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 2 DR 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act PLCs - Part 4: User Guidelines 
+
+
+Data for Resource 
+
+
+Operability, 
+Maintainability 
+
+
+Control 
+
+
+(A2)2RR 
+
+
+IEC 
+
+
+TC 65 WG4 
+
+
+Rep/Act Environmental Conditions • Continuous 
+Wave Conducted Immunity Requirements 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+
+O 
+
+
+
+(Proc)LevelCell 
+
+
+Orgn 
+
+
+Ctte 
+
+
+SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A2) 2 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+Rep/Act Environmental Conditions - (EC 654, 
+
+Operating Conditions for measuring and 
+control equipment 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2)2RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+Rep/Act Environmental Conditions - IEC 654, 
+
+Surge Voltage (Operating Environment) 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 2 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+Rep/Act Environmental Conditions -IEC 801, 
+Electromagnetic compatabifity - 
+(Operating Environment) 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 2 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG2 
+
+
+Rep/Act Environmental Conditions - Operating 
+Conditions for Industrial-Process 
+Measurement • Part 1 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2)2RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG2 
+
+
+Rep/Act Environmental Conditions - Operating 
+Conditions for Industrial-Process 
+Measurement - Part 2 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 2 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement - Part 2 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 2 RR 
+
+
+IEC 
+
+
+TO 65 
+
+
+WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement - Part 3 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 2 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement - Part 5 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 2 RR 
+
+
+(EC 
+
+
+TC65 SCA WG8 
+
+
+Rep/Act Evaluation of system properties for the 
+
+
+Resource Standard 
+
+
+Performance, 
+
+
+Production 
+
+
+
+
+
+
+
+
+
+
+purposes of system assessment (8 parts) 
+
+
+
+
+Reliability 
+
+
+
+
+(A2) 2 RR 
+
+
+IEC 
+
+
+TC44 
+
+
+WG5 
+
+
+Rep/Act IEC 550 - NC Equipment for machines 
+
+
+Resource/Resource 
+
+
+Description 
+
+
+Device/Tool 
+
+
+(A2)2RR 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act PLCs - Part 1 : General Information 
+
+
+Resource Standard 
+
+
+Description 
+
+
+Control 
+
+
+
+COCO 
+
+
+O 
+
+
+
+
+3 
+
+
+3 
+
+
+_* 
+
+
+at 
+
+
+o 
+
+
+
+
+■ 
+
+
+
+
+ro 
+
+
+M 
+
+
+
+
+
+
+_A 
+
+
+
+
+to 
+
+40 
+
+
+IO 
+
+
+
+
+
+
+(Proc)LevelCell 
+
+
+Orgn 
+
+
+Ctte SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A2) 2 RR 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act PLCs • Part 2: Equipment Characteristics 
+
+
+Resource Standard 
+
+
+Performance, 
+Compatibility, 
+Description 
+
+
+Control 
+
+
+(A2) 2 RR 
+
+
+IEC 
+
+
+TC 65 SC C WG3 
+
+
+Rep/Act Preparation of a Modular Instrument 
+System Standard 
+
+
+Resource Standard 
+
+
+Compatibility 
+
+
+Control 
+
+
+(A2) 2 RR 
+
+
+IEC 
+
+
+TC65 SWG 
+
+
+Rep/Act Protection Against an Explosion Hazard 
+when Flammable Gas is Used etc. 
+
+
+Resource Standard 
+
+
+Safety 
+
+
+Production 
+
+
+(A2) 2 RR 
+
+
+ISO 
+
+
+TC 164 WG3 
+
+
+Rep/Act Environmental Conditions for Discrete 
+Parts Manufacturing - Automation Sys 
+and Equip. 
+
+
+Resource to Resource 
+
+
+Environment 
+
+
+Production 
+
+
+(A2)2VR 
+
+
+IEC 
+
+
+TC65 SCAWG10 Rep/Act Functional Safety of Programmable 
+
+
+Verify Resource 
+
+
+Safety 
+
+
+Control 
+
+
+
+
+
+
+
+
+Electronic Systems - Generic Aspects 
+
+
+
+
+
+
+
+
+(A2)2VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act General Methods, Procs for Evaluation of 
+Process Measurement, Control Devices 
+
+
+Verify Resource 
+
+
+Performance. 
+
+
+Instrument 
+
+
+(A2)2VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act IEC 546 Controller performance 
+
+
+Verify Resource 
+
+
+Performance, 
+
+Reliability, 
+
+Compatability 
+
+
+Control 
+
+
+(A2) 2 VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act Methods for Evaluating Performance of 
+
+Instruments with Two or Multistage Output 
+
+
+Verify Resource 
+
+
+Performance 
+
+
+Control 
+
+
+(A2) 3 DO 
+
+
+IEC 
+
+
+TC65 WG1 
+
+
+Rep/Act IEV: Chapter 351 - Automatic Control 
+
+
+Vocabulary 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 3 DD 
+
+
+ISO 
+
+
+TC 164 SC5 WG3 
+
+
+Rep/Act Industrial Automation Systems - 
+Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 3 DD 
+
+
+ISO 
+
+
+TC184SC5 WG3 
+
+
+Ctte Industrial Automation Vocabulary 
+
+
+WG3, Title only 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 3 DD 
+
+
+ISO 
+
+
+TC164 SCI WG2 
+
+
+Rep/Act NC Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 3 DD 
+
+
+ISO 
+
+
+TC184 SC2 WG1 
+
+
+Rep/Act Robot Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+
+
+
+
+to 
+
+
+
+to 
+
+
+
+8 to 
+
+
+
+ro 
+
+
+
+(Proc)LovetCeli 
+
+
+Orgn 
+
+
+Ctte 
+
+
+SC WG 
+
+
+Ctt«/Doc Scop* of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A2) 3 DD 
+
+
+ISO 
+
+
+TC184SC2 WG1 
+
+
+Ctte Terminology and Graphical 
+
+
+Data to Data 
+
+
+Description 
+
+
+Human Interface 
+
+
+
+
+
+
+
+
+
+
+Representation 
+
+
+
+
+
+
+
+
+(A2)3DD 
+
+
+ISO 
+
+
+TC 184 SC 1 WG 2 
+
+
+Ctte Vocabulary 
+
+
+WG2, Title only 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 3 DR 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act PLCs -Part 4: User Guidelines 
+
+
+Data for Resource 
+
+
+Operability, 
+
+
+Control 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Maintainability 
+
+
+
+
+(A2) 3 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG4 
+
+
+Rep/Act EnvirorimentaiCofl(l!tk>r«-Ck>ntinuous 
+Wave Conducted Immunity Requirements 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2)3RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+Rep/Act Environmental Conditions -IEC 654, 
+
+Operating Conditions for measuring and 
+control equipment 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 3 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+Rep/Act Environmental Conditions - IEC 654, 
+
+Surge Voltage (Operating Environment) 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 3 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+Rep/Act Environmental Conditions -IEC 801, 
+Electromagnetic compatability - 
+(Operating Environment) 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 3 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG2 
+
+
+Rep/Act Environmental Conditions - Operating 
+Conditions for industrial-Process 
+Measurement - Part 1 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+<A2) 3 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG2 
+
+
+Rep/Act Environmental Conditions - Operating 
+Conditions for Industrial-Process 
+Measurement - Part 2 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 3 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement • Part 2 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2)3RR 
+
+
+IEC 
+
+
+TC65 
+
+
+WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement - Part 3 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+
+a 
+
+
+
+WW 
+
+I* 
+■a 
+
+"m 
+* *X 
+
+r?»> 
+
+S o 
+
+o 
+o 
+
+
+
+
+
+
+(Proc)LeveJCell 
+
+
+Orgr 
+
+
+Ctte SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A2) 3 RR 
+
+
+IEC 
+
+
+TC 65 WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement - Part 5 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 3 RR 
+
+
+IEC 
+
+
+TC 65 SC A WGS 
+
+
+Rep/Act Evaluation of system properties for the 
+
+purposes of system assessment (8 parts) 
+
+
+Resource Standard 
+
+
+Performance, 
+Reliability 
+
+
+Production 
+
+
+(A2) 3 RR 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/ Act PLCs - Part 1 : General Information 
+
+
+Resource Standard 
+
+
+Description 
+
+
+Control 
+
+
+(A2) 3 RR 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act PLCs - Part 2: Equipment Characteristics 
+
+
+Resource Standard 
+
+
+Performance, 
+
+Compatibility, 
+Description 
+
+
+Control 
+
+
+(A2) 3 RR 
+
+
+IEC 
+
+
+TC 65 SC C WG3 
+
+
+Rep/Act Preparation of a Modular Instrument 
+System Standard 
+
+
+Resource Standard 
+
+
+Compatibility 
+
+
+Control 
+
+
+(A2) 3 RR 
+
+
+ISO 
+
+
+TC184 WG3 
+
+
+Rep/Act Environmental Conditions for Discrete 
+Parts Manufacturing - Automation Sys 
+and Equip. 
+
+
+Resource to Resource 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 3 VR 
+
+
+IEC 
+
+
+TC65 SCAWG10 
+
+
+Rep/Act Functional Safety of Programmable 
+Electronic Systems - Generic Aspects 
+
+
+Verify Resource 
+
+
+Safety 
+
+
+Control 
+
+
+(A2) 3 VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act General Methods, Procs for Evaluation of 
+Process Measurement, Control Devices 
+
+
+Verify Resource 
+
+
+Performance 
+
+
+Instrument 
+
+
+(A2) 3 VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act IEC 546 Controller performance 
+
+
+Verify Resource 
+
+
+Performance, 
+
+Reliability, 
+
+Compatability 
+
+
+Control 
+
+
+(A2) 4 DD 
+
+
+IEC 
+
+
+TC 65 WG1 
+
+
+Rep/Act IEV: Chapter 351 - Automatic Control 
+
+
+Vocabulary 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 4 DD 
+
+
+ISO 
+
+
+TC 184 SC5 WG3 
+
+
+Rep/Act Industrial Automation Systems - 
+Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 4 DD 
+
+
+ISO 
+
+
+TC184 SC5 WG3 
+
+
+Ctte Industrial Automation Vocabulary 
+
+
+WG3, Tttle only 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 4 DD 
+
+
+ISO 
+
+
+TC184 SC1 WG2 
+
+
+Rep/Act NC Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+
+is 
+
+o— » 
+
+?S 
+
+ro 
+ro 
+
+
+
+to 
+
+<o to 
+Zt o 
+
+o 
+o 
+
+
+
+(Proc)LevelCell 
+
+
+Orgn 
+
+
+Ctte 
+
+
+SC 
+
+
+WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A2) 4 DO 
+
+
+ISO 
+
+
+TC184 
+
+
+SC2 
+
+
+WG1 
+
+
+Rep/Act Robot Vocabulary 
+
+
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 4 DD 
+
+
+ISO 
+
+
+TC184SC2 WG1 
+
+
+Cite Terminology and Graphical 
+
+
+Data to Data 
+
+
+Description 
+
+
+Human Interface 
+
+
+
+
+
+
+
+
+
+
+
+
+Representation 
+
+
+
+
+
+
+
+
+(A2) 4 DD 
+
+
+ISO 
+
+
+TC 184 SC 1 WG 2 
+
+
+Cite Vocabulary 
+
+
+WG2, Title only 
+
+
+Description 
+
+
+Human Interface 
+
+
+(A2) 4 DR 
+
+
+IEC 
+
+
+TC65 
+
+
+SCA WG6 
+
+
+Rep/Act PLCs - Part 4: User Guidelines 
+
+
+Data for Resource 
+
+
+Operability, 
+
+
+Control 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Maintainability 
+
+
+
+
+(A2) 4 RR 
+
+
+IEC 
+
+
+TC6S 
+
+
+
+
+WG4 
+
+
+Rep/Act Environmental Conditions - Continuous 
+Wave Conducted Immunity Requirements 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 4 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+
+
+Rep/Act Environmental Conditions - IEC 654, 
+
+Operating Conditions for measuring and 
+control equipment 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2)4RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+
+
+Rep/Act Environmental Conditions -IEC 654, 
+
+Surge Voltage (Operating Environment) 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 4 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+
+
+Rep/Act Environmental Conditions • IEC 801 , 
+Electromagnetic compatability - 
+(Operating Environment) 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 4 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+WG2 
+
+
+Rep/Act Environmental Conditions - Operating 
+Conditions for Industrial-Process 
+Measurement - Part 1 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 4 RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+WG2 
+
+
+Rep/Act Environmental Conditions • Operating 
+Conditions for Industrial-Process 
+Measurement - Part 2 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2)4RR 
+
+
+IEC 
+
+
+TC65 
+
+
+
+
+WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement - Part 2 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+
+to " 
+to to 
+
+
+
+
+
+
+(Jt 
+
+
+
+<Proc)LevelCell 
+
+
+Orgn 
+
+
+Ctte SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(A2) 4 RR 
+
+
+IEC 
+
+
+TC 65 WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement - Part 3 
+
+
+Resource Standard 
+
+
+Environrhenl 
+
+
+Production 
+
+
+(A2) 4 RR 
+
+
+IEC 
+
+
+TC 65 WG4 
+
+
+Rep/Act Environmental Condn - Electromagnetic 
+Compatibility for Industrial-Process 
+Measurement - Part 5 
+
+
+Resource Standard 
+
+
+Environment 
+
+
+Production 
+
+
+(A2) 4 RR 
+
+
+IEC 
+
+
+TC 65 SC A WG8 
+
+
+Rep/Act Evaluation of system properties for the 
+purposes of system assessment (8 parts) 
+
+
+Resource Standard 
+
+
+Performance, 
+Reliability 
+
+
+Production 
+
+
+(A2) 4 RR 
+
+
+IEC 
+
+
+TC 65 SC A WG6 
+
+
+Rep/Act PLCs - Part 1 : General Information 
+
+
+Resource Standard 
+
+
+Description 
+
+
+Control 
+
+
+<A2) 4 RR 
+
+
+IEC 
+
+
+TC65 SCA WG6 
+
+
+Rep/Act PLCs - Part 2: Equipment Characteristics 
+
+
+Resource Standard 
+
+
+Performance, 
+Compatibility, 
+Description 
+
+
+Control 
+
+
+(A2)4RR 
+
+
+IEC 
+
+
+TC65 SCC WG3 
+
+
+Rep/Act Preparation of a Modular Instrument 
+System Standard 
+
+
+Resource Standard 
+
+
+Compatibility 
+
+
+Control 
+
+
+- <A2) 4 RR 
+
+
+ISO 
+
+
+TC 184 WG3 
+
+
+Rep/Act Environmental Conditions for Discrete 
+Parts Manufacturing - Automation Sys 
+and Equip. 
+
+
+Resource to Resource 
+
+
+Environment 
+
+
+Production 
+
+
+(A2)4VR 
+
+
+IEC 
+
+
+TC65 SCAWG10 
+
+
+Rep/Act Functional Safety of Programmable 
+Electronic Systems - Generic Aspects 
+
+
+Verify Resource 
+
+
+Safety 
+
+
+Control 
+
+
+(A2) 4 VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act General Methods, Procs for Evaluation of 
+Process Measurement, Control Devices 
+
+
+Verify Resource 
+
+
+Performance 
+
+
+Instrument 
+
+
+(A2) 4 VR 
+
+
+IEC 
+
+
+TC65 SCB 
+
+
+Rep/Act IEC 546 Controller performance 
+
+
+Verify Resource 
+
+
+Performance, 
+
+Reliability, 
+
+Compatability 
+
+
+Control 
+
+
+(B1) 1 F06C&D 
+
+
+ISO 
+
+
+TC184 
+
+
+Rep/Act Production management standard for 
+ISO 9506 
+
+
+Data & Control Info with Production 
+Management 
+
+
+Compatabttity 
+
+
+Communication 
+
+
+
+WW 
+
+
+O 
+
+
+
+
+3 
+
+
+3 
+
+
+-A 
+
+
+© 
+
+
+O 
+
+
+
+
+.4 
+
+
+3. 
+
+
+IS) 
+
+
+M 
+
+
+
+
+
+
+
+
+
+
+(0 
+
+
+• • 
+
+
+(0 
+
+
+IS> 
+
+
+
+(Proc)LevelCeff 
+
+
+Orgn 
+
+
+Ctte SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(B1J2F06CAO 
+
+
+ISO 
+
+
+TC184 
+
+
+Rep/Act Production management standard for 
+ISO 9506 
+
+
+Data & Control Info with Production 
+Management 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B1)3F04D 
+
+
+ISO 
+
+
+TC184 SC4 WG1 
+
+
+Rep/Act Data Exchange and Transfer Standard 
+Specification (STEP) 
+
+
+Data with Product Design 
+
+
+Compatability 
+
+
+information 
+
+
+(B1) 3 F04D 
+
+
+ISO 
+
+
+TC184SC4 WG1 
+
+
+Rep/Act Development of STEP 
+
+
+Data with Product Design 
+
+
+Compatability 
+
+
+Information 
+
+
+<B1)3F06C&D 
+
+
+ISO 
+
+
+TC184 
+
+
+Rep/Act Production management standard for 
+ISO 9506 
+
+
+Data & Control Info with Production 
+Management 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B1) 4 F04D 
+
+
+ISO 
+
+
+TC 184 SC4 WG1 
+
+
+Rep/Act Data Exchange and Transfer Standard 
+Specification (STEP) 
+
+
+Data with Product Design 
+
+
+Compatability 
+
+
+Information 
+
+
+(B1)4F04D 
+
+
+ISO 
+
+
+TC184SC4 WG1 
+
+
+Rep/Act Development of STEP 
+
+
+Data with Product Design 
+
+
+Compatability 
+
+
+Information 
+
+
+(B1)4F06C&D 
+
+
+ISO 
+
+
+TC184 
+
+
+Rep/Act Production management standard for 
+ISO 9506 
+
+
+Data & Control Info with Production 
+Management 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 1/2 C&D 
+
+
+ISO 
+
+
+TC184 
+
+
+Rep/Act Real-time LANs (proposed new work item) 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 1/2 C&D 
+
+
+IEC 
+
+
+TC 65 SC C WG3 
+
+
+Rep/Act Amendments to Interface System for 
+Programmable Measuring Instruments, 
+625-1 (Aligning Pts 1,2) 
+
+
+Resource Standard & Transport Control 
+Info/Data 
+
+
+Compatibility 
+
+
+Control 
+
+
+(B2) 1/2 C&D 
+
+
+IEC 
+
+
+TC65 SCA 
+
+
+Rep/Act Analog Pneumatic Signals for Process 
+Control Systems 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(62) 1/2 C&D 
+
+
+IEC 
+
+
+TC65 SCA 
+
+
+Rep/Act Binary Direct Voltage Signals for Process 
+Measurement and Control Systems 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+<B2) 1/2 C&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act Development of Real-time Architecture 
+(from ISA DS 72.03) 
+
+
+Transport Control Info/Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 1/2 C&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act Fieldbus Standard 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 1/2 C&D 
+
+
+IEC 
+
+
+TC 65 SC C WG3 
+
+
+Rep/Act Interface System for Programmable 
+Measuring Instruments - Part 1 
+
+
+Resource Standard & Transport Control 
+Info/Data 
+
+
+Compatibility 
+
+
+Control 
+
+
+
+to 
+
+
+
+</i 
+
+
+
+
+
+
+(Proc)LevelCell 
+
+
+Orgr 
+
+
+I Ctte SC WG 
+
+
+Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(B2) 1/2 C&D 
+
+
+IEC 
+
+
+TG 65 SC C WG3 
+
+
+Rep/Act Interface System for Programmable 
+Measuring Instruments - Part 2 
+
+
+Resource Standard & Transport Control 
+Info/Data 
+
+
+Compatibility 
+
+
+Control 
+
+
+(B2) 1/2 C&D 
+
+
+IEC 
+
+
+TC65 SCC WG1 
+
+
+Rep/Act PMS - MMS Companion Standard for 
+Process Control 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(82) 1/2 C&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act PROWAYA/B 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 1/2 C&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act PROWAYC 
+
+
+Transport Control Into/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 1/2 C&D 
+
+
+IEC 
+
+
+TC 65 SC C WG6 
+
+
+Rep/Act PROWAY C (Addendum 5MB/s and 
+10MBVS) 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 1/2 C&D 
+
+
+ISO 
+
+
+TC 184 SC5 WG2 
+
+
+Rep/Act Functional Standards on l-LANs 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(82) 1/2 C&D 
+
+
+ISO 
+
+
+TC184 SC5 WG2 
+
+
+Rep/Act Control Systems Employing Half-Duplex 
+Transmission etc. 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 1/2 C&D 
+
+
+ISO 
+
+
+TC184 SC5 WG2 
+
+
+Rep/Act Electrical and Mechanical Interface and 
+
+Line Control Characteristics for Serial Data 
+Link etc. 
+
+
+Transport Control Information & Data 
+
+t 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 1/2 C&D 
+
+
+ISO 
+
+
+TC 184 SC5 WG2 
+
+
+Rep/Act Manufacturing Message Service - 
+Protocol Spec. 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 1/2 C&D 
+
+
+ISO 
+
+
+TC 184 SC5 WG2 
+
+
+Rep/Act Manufacturing Message Service - 
+Service Def . 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(82) 1/2 R 
+
+
+IEC 
+
+
+TC 44 WG5 
+
+
+Rep/Act Interface between Numerical Controls 
+and Industrial Machines 
+
+
+Resource/Resource 
+
+
+Description 
+
+
+Computer & 
+Communications 
+
+
+(B2) 1/2 R 
+
+
+IEC 
+
+
+TC 65 SWG 
+
+
+Rep/Act Protection Against an Explosion Hazard 
+when Flammable Gas is Used etc. 
+
+
+Resource Standard 
+
+
+Safety 
+
+
+Production 
+
+
+(B2)2/3C 
+
+
+ISO 
+
+
+TC184SC1 WG3 
+
+
+Ctte Companion Standard to MMS (ISO 9506) 
+
+
+Transport Control Information 
+
+
+Compatability 
+
+
+Information 
+
+
+(B2)2/3C 
+
+
+ISO 
+
+
+TC 184 SC1 WG3 
+
+
+Rep/Act NC Companion Standard to MMS 
+(9506/4) 
+
+
+Transport Control Information 
+
+
+Compatability 
+
+
+Information 
+
+
+(B2) 2/3 C&D 
+
+
+ISO 
+
+
+TC184SC5 WG2 
+
+
+Ctte Communications and Interconnections 
+
+
+Transform Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+
+WOT 
+£»TJ 
+
+
+
+IO 
+
+
+
+«0 
+3> N> 
+
+
+
+(Proc)LeveJCell 
+
+
+Orgn 
+
+
+Ctte SC WGt 
+
+
+Ctte/Doc Scop* of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+viewpoint 
+
+
+Base Technology 
+
+
+(B2) 2/3 C&D 
+
+
+ISO 
+
+
+TC184 
+
+
+Rep/Act Functional Standards for Real-lime LANs 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+ISO 
+
+
+TC184 
+
+
+Rep/Act Real-time LANs (proposed new work item) 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+IEC 
+
+
+TC65 SCA 
+
+
+Rep/Act Binary Direct Voltage Signals for Process 
+Measurement and Control Systems 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act Development of Real-time Architecture 
+(from ISA DS 72.03) 
+
+
+Transport Control Info/Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+IEC 
+
+
+TC65 SCA WG6 
+
+
+Rep/Act PLCs - Part : Messaging Service 
+Specification 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act PMS-MMS Companion Standard for 
+Process Control 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+IEC 
+
+
+TC 65 SC C WG1 
+
+
+Rep/Act Preparation of Standards Profiles for 
+
+Comms Needs of Process Control Industry 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+ISO 
+
+
+TC 184 SC5 WG2 
+
+
+Rep/Act Functional Standards on l-LANs 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+ISO 
+
+
+TC184 SC5 WG2 
+
+
+Rep/Act Control Systems Employing Half-Duplex 
+Transmission etc. 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+ISO 
+
+
+TC 184 SC5 WG2 
+
+
+Rep/Act Electrical and Mechanical Interface and 
+
+Line Control Characteristics for Serial Data 
+Link etc. 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+ISO 
+
+
+TC 184 SC5 WG2 
+
+
+Rep/Act Manufacturing Message Service - 
+Protocol Spec. 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+ISO 
+
+
+TC184 SC5 WG2 
+
+
+Rep/Act Manufacturing Message Service - 
+Service Def. 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+ISO 
+
+
+TC 184 SC2 WG6 
+
+
+Rep/Act Robot Companion Standard to MMS 
+(9506/3) 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 2/3 C&D 
+
+
+ISO 
+
+
+TC184SC2WG6 
+
+
+Ctte Robot Companion Standard to MMS 
+(ISO 9506) 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+
+WW 
+© — » 
+
+10 
+
+
+
+10 
+
+
+
+s 
+
+
+
+10 
+
+
+
+
+
+
+J*. 
+
+
+
+(Proc)LevdCell 
+
+
+Orgn Ctte SC WG 
+
+
+Ctte/Doc Scop* of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint 
+
+
+Base Technology 
+
+
+(B2) 3/4 C 
+
+
+ISO TC184SC1 WG3 
+
+
+Ctle Companion Standard to MMS (ISO 9506) 
+
+
+Transport Control Information 
+
+
+Compatability 
+
+
+Information 
+
+
+(B2) 3/4 C&D 
+
+
+ISO tC184SC5WG2 
+
+
+Cue Communications and Interconnections 
+
+
+Transform Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+ISO TC 184 SC1 WG3 
+
+
+Rep/Act NC Companion Standard to MMS (9506/4) Transport Control Information 
+
+
+Compatability 
+
+
+Information 
+
+
+(B2) 3/4 C&D 
+
+
+ISO TC184 
+
+
+Rep/Act Real-time LANs (proposed new Work item) 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+!EC TC65 SCA 
+
+
+Rep/Act Binary Direct Voltage Signals for Process 
+Measurement and Control Systems 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+IEC TC 65 SC A WG6 
+
+
+Rep/Act PLCs - Part : Messaging Service 
+Specification 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+IEC TC 65 SC C WG1 
+
+
+Rep/Act PMS - MMS Companion Standard for 
+Process Control 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+IEC TC 65 SC C WG1 
+
+
+Rep/Act Preparation of Standards Profiles for 
+
+Comms Needs of Process Control Industry 
+
+
+Transport Control Info/Data 
+
+
+Compatibility 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+ISO TC184 SC5 WG2 
+
+
+Rep/Act Functional Standards on l-LANs 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+ISO TC 184 SC5 WG2 
+
+
+Rep/Act Control Systems Employing Half-Duplex 
+Transmission etc. 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+ISO TC 184 SC5 WG2 
+
+
+Rep/Act Electrical and Mechanical Interface and 
+
+Line Control Characteristics for Serial Data 
+Link etc. 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+ISO TC 184 SC5 WG2 
+
+
+Rep/Act Manufacturing Message Service - 
+Protocol Spec. 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+ISO TC 184 SC5 WG2 
+
+
+Rep/Act Manufacturing Message Service - 
+Service Def. 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+ISO TC 184 SC2 WG6 
+
+
+Rep/Act Robot Companion Standard to MMS 
+(9506/3) 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+(B2) 3/4 C&D 
+
+
+ISO TC184SC2 WG6 
+
+
+Ctte Robot Companion Standard to MMS 
+(ISO 9506) 
+
+
+Transport Control Information & Data 
+
+
+Compatability 
+
+
+Communication 
+
+
+
+-A 0> 
+
+o— » 
+
+
+
+ro 
+
+
+
+ISJ 
+
+
+
+
+
+
+(Proc)LevetCell Orgn Ctte SC WG Ctte/Doc Scope of Activity or Standards Doc 
+
+
+Example Standards Areas 
+
+
+Viewpoint Base Technology 
+
+
+(B2) 3/4 D ISO TC 184 SC 5 WG 2 Ctte 
+
+
+Communications and Interconnections 
+
+
+Transform Control Information & Data 
+
+
+Compatability Communication 
+
+
+ISO TC184 SC5 WG1 Rep/Act Basic Reference Model for Automated and 
+
+CAD Systerris 
+
+
+Beyond SFRM 
+
+
+
+
+ISO TC184SC4 Ctte 
+
+
+External Representation of Product 
+Definition Data 
+
+
+SC4 Title only 
+
+
+
+
+ISO TC184 SC3 Ctte 
+
+
+Manufacturing Application Languages 
+
+
+SC3 Title only 
+
+
+
+
+ISO TC 184 SC 1 Ctte 
+
+
+Numerical Control of Machines 
+
+
+SC1 Title only 
+
+
+
+
+ISO TC184 SC5 WG1 Ctte 
+
+
+Reference Models 
+
+
+Beyond SFRM 
+
+
+
+
+ISO TC184SC3 WG2 Ctte 
+
+
+Requirements for a Global Programming 
+Language Environment 
+
+
+Beyond SFRM 
+
+
+
+
+ISO TC184 SC3 WG2 Rep/Act 
+
+
+Requirements for Global Programming 
+Language Environment 
+
+
+Beyond SFRM 
+
+
+
+
+ISO TC184 WG2 Rep/Act 
+
+
+Revision of ISO/TC 184 Structure 
+
+
+Beyond SFRM 
+
+
+
+
+ISO TC 184 SC2 WG1 Rep/Act 
+
+
+Robot Characteristics 
+
+
+No match 
+
+
+
+
+ISO TC184SC2 Ctte 
+
+
+Standardised Data Sheets for robots 
+
+
+SC2 Title only 
+
+
+
+
+ISO TC184SC5 Ctte 
+
+
+System Integration and Communication 
+
+
+SC5 Title only 
+
+
+
+
+ISO TC184SC4 WG1 Ctte 
+
+
+Technical Coordination and Support 
+
+
+No match 
+
+
+
+
+
+s- 
+
+
+
+to " 
+
+ZZ o 
+
+o 
+o 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote harmonious 
+development of the activities of standardization, marking and quality certification of goods and attending to 
+connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications maybe reproduced in any form without 
+the prior permission in writing of BIS. This does not precludelhe free use, in the course of implementing the 
+standard, of necessary details, such as symbols and sizes, type or grade designations. Enquiries relating to 
+copyright be addressed to the Director {^Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed 
+periodically; a standard along with amendments is reaffirmed when such review indicates that no changes are 
+needed; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards 
+should ascertain that they are in possession of the latest amendments or edition by referring to the latest issue 
+of 4 BIS Handbook' and Standards : Monthly Additions'. 
+
+This Indian Standard has been developed from Doc : No. BP/PE 18 (0212). 
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+Date of Issue 
+
+
+Text Affected 
+
+
+
+
+
+
+
+
+* — i, * — 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters: 
+
+
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 10002 
+Telephones : 323 01 31, 323 94 02, 323 33 75 
+
+Regional Offices: 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110002 
+
+
+
+Telegrams: Manaksanstha 
+
+( Common to 
+
+all offices ) 
+
+Telephone 
+
+f 323 7617 
+1 3233841 
+
+
+
+Eastern : 1/14 C. I. T. Scheme VII M, V. IP. Road, Maniktola 
+CALCUTTA 700054 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160022 
+
+Southern : C. I. T. Campus, IV Cross Road, CHENNAI 600113 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400093 
+
+
+
+337 84 99,337 85 61 
+337 86 26, 337 86 62 
+
+("60 38 43 
+1 60 20 25 
+
+\ 235 02 16,235 04 42 
+[ 235 15 19,235 23 15 
+
+' 832 92 95,832 78 58 
+832 78 91,832 78 92 
+
+
+
+Branches : AHMADABAD. BANGALORE. BHOPAL. BHUBANESHWAR. 
+
+COIMBATORE. FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. 
+KANPUR. LUCKNOW. NAGPUR. PATNA. PUNE. THIRUVANANTHAPURAM. 
+
+
+
+Printed at New India Printing Press, Khurja; India 
+
+
+

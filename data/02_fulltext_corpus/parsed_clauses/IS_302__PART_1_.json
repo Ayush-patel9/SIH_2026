@@ -1,0 +1,116 @@
+{
+  "is_number": "IS IS_302__PART_1_",
+  "standard_id": "IS IS_302__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_302__PART_1_)",
+  "ia_identifier": "IS_302__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_302__PART_1_) covers Indian Standard Specification / Test Method (IS IS_302__PART_1_). This Indian Standard (Part 2/Sec 21) (Second Revision) was adopted by the draft finalized by the Electrical Appliances Sectional Committee had been approved by the Electrotechnical Division Council. This standard was first published in 1992, and revised in 2011. This revision has been undertaken primarily to align the existing standard with the latest International Standard. This standard covers the safety requirements of stationary storage type electric water heaters. This standard however does not cover the performance requirements which are covered under IS 2082 ‘Stationary storage type electric water heater’. It has been assumed in the formulation of this standard that the execution of its provisions is entrusted to appropriately qualified and experienced persons. This standard recognizes the internationally accepted level of protection against hazards such as electrical, mechanical, thermal, fire and radiation of appliances when operated as in normal use taking into account the ma",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 302",
+      "standard_id": "IS 302",
+      "title": "Indian Standard Specification / Test Method (IS 302)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2082",
+      "standard_id": "IS 2082:2018",
+      "title": "Stationary Storage Type Electric Water Heaters- Specification (Fifth Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Electrical Appliances (Quality Control) Order"
+    },
+    {
+      "is_number": "IS/IEC 60730",
+      "standard_id": "IS/IEC 60730",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60730)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61508",
+      "standard_id": "IS/IEC 61508",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61508)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 191",
+      "standard_id": "IS 191:2007",
+      "title": "Copper",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1570 (PART 5)",
+      "standard_id": "IS 1570 (Part 5):1985",
+      "title": "Schedules for Wrought Steels, Part 5: Stainless and Heat-resisting Steels",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13273",
+      "standard_id": "IS 13273:1991",
+      "title": "Vitreous enamelled inner tanks for storage water heater",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3972 (PART 2/SEC 2)",
+      "standard_id": "IS 3972 (PART 2/SEC 2)",
+      "title": "Indian Standard Specification / Test Method (IS 3972 (PART 2/SEC 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Tests",
+    "Grade Electric",
+    "20 K",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_302__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "Leakage current and electric strength 16 v"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "be marked with the rated pressure in pascals.",
+      "Immersion heater units for multiple supply shall be marked with their rated power input for each supply circuit."
+    ]
+  },
+  "total_chars_parsed": 66577
+}

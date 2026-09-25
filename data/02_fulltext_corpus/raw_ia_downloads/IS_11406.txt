@@ -1,0 +1,4970 @@
+**************** 
+
+
+
+^ tOTH: 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live" 
+
+
+
+Jawaharlal Nehru 
+"Step Out From the Old to the New" ' 
+
+
+
+IS 11406 (1986) : File Structure and Labelling of Flexible 
+Disk Cartridges for Information Interchange [LITD 16: 
+Computer Hardware, Peripherals and Identification Cards] 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+
+BLANK PAGE 
+
+
+
+
+^*-:gv 
+
+
+
+
+^^35^* 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+15 i, 1M06-1f Be 
+lSOtMS-1983 
+
+Reaffirmed 2001 ; 
+indisn Stenc^artf 
+
+FILE STRUCTURE AND LABELLING OF FLEXIBLE DISK 
+CARTRIDGES FOR INFORMATION INTERCHANGE 
+
+[ISO Title : JnlormatiDn Procosairg — FHa SltuetUJft and Labfilhng 
+of FEe^ible Oiak CartridgBd for Infontia^ion llnt«FcliBng$ ] 
+
+
+
+use tBV5ZT^4 
+
+
+
+
+^i iwS. < 
+
+
+
+© CppfffffM 1ftl7 
+
+rNDIAN STAMDARDS INSTITUtlOU 
+
+MANAK BHAVAN, B BAHADUR SHAH ZAFAR MARG 
+
+M£W DELHI I10W2 
+
+f^r i Mtfeh 1087 
+
+
+
+UDC e81.St7.684 
+
+
+
+IS : 11406-1986 
+ISO 7665-1983 
+
+
+
+
+Indian Standard 
+
+FILE STRUCTURE AND LABELLING OF FLEXIBLE DISK 
+CARTRIDGES FOR INFORMATION INTERCHANGE 
+
+[ ISO Title : Information Processing — File Structure and Labelling 
+of Flexible Disk Cartridges for information Interchange ] 
+
+
+
+CO 
+
+« 
+
+c 
+o 
+
+E 
+
+S 
+
+e 
+
+■« 
+
+M 
+
+u 
+
+o 
+
+
+
+V 
+
+E 
+E 
+o 
+U 
+
+
+
+E 
+e 
+
+
+
+National Foreword 
+
+This Indian Standard wiiich is identicai witli ISO 7665-1983 'Information processing 
+— File structure and iabeiling of flexible disk cartridges for information interchange', issued by 
+the International Organization for Standardization (ISO), was adopted by the Indian Standards 
+Institution on the recommendation of the Computers, Business Machines and Calculators 
+Sectional Committee and approved by the Electronic and Telecommunication Division Council. 
+
+In the adopted standard certain terminology and conventions are not identical with 
+those used In Indian Standards; attention is especially drawn to the following: 
+
+a) Comma ( , ) has been used as a decimal marker while in Indian Standards the 
+current practice is to use a point ( . ) as the decimal marker. 
+
+b) Wherever the words 'International Standard' appear referring to this standard, they 
+should be read as 'Indian Standard'. 
+
+Cross References 
+
+International Standard 
+
+ISO 646-1983 Information processing — ISO 
+7-bit coded character set for information 
+interchange 
+
+ISO 4873-1979 InformaUon processing — ISO 
+8-bit coded character set for information 
+interchange 
+
+ISO 6596/1-1982 Information processing— Data 
+interchange on 130 mm (5.25 in) flexible 
+disk cartridges using two-frequency 
+recording at 7 958 ftprad on one side — 
+Part 1 : Dimensional, Physical and mag- 
+netic characteristics 
+
+ISO 6596/2-1985 Information processing — 
+Data interchange on 130 mm (5.25 in) 
+flexible disk cartridges using two-fre- 
+quency recording at 7 958 ftprad on one 
+side — Part 2 : Track format for 1,9 
+tpmm ( 48 tpi ) 
+
+ISO 7487/1-1985 Information processing — 
+Data interchange on 130 mm (5.25 in) 
+flexible disk cartridges using modified 
+frequency modulation recording at 7 958 
+ftprad 1,9 tpmm ( 48 tpi ) on both sides 
+Part 1 : Dimensional, physical and mag- 
+netic characteristics 
+
+ISO 7487/2-1985 Information processing — 
+Data interchange on 130 mm (5.25 in) 
+flexible disk cartridges using modified 
+frequency modulation recording at 7 9^ 
+ftprad, 1,9 tpmm (48 tfA) on both sides 
+Part 2 : Track format A 
+
+
+
+Corresponding Indian Standard 
+
+IS : 10315-1982 7-bit coded character set for 
+information interchange 
+(Technically equivalent) 
+
+IS : 10401-1982 8-bit coded character set for 
+information interchange 
+(Technically equivalent) 
+
+IS : 11404 (Part 1)-1986 Specification for data 
+Interchange on 130 mm, single sided, 1*9 
+tpmm, flexible disk cartridges using two- 
+frequency recording : Part 1 Physical and 
+magnetic characteristics 
+(Identical) 
+
+IS : 11404 (Part2)-1986 Specification for data 
+Interchange on 130 mm, single sided, 1*9 
+tpmm, flexible disk cartridges using two- 
+frequency recording : Part 2 Track 
+format 
+(Identical) 
+
+IS : 11405 (Part 1)-1986 Specification for data 
+interchange on 130 mm, double sided, 1*9 
+tpmm, flexible disk cartridges using 
+modified frequency modulation recording : 
+Part 1 Physical and magnetic characteris- 
+tics 
+(Identical) 
+
+IS : 11405 (Part 2)-1986 Specification for data 
+interchange on 130 mm, double sided, 1*9 
+tpmm, flexible disk cartridges using modi- 
+fied frequency modulation recording : Part 
+2 Track format 
+(Identical) 
+
+
+
+Adopted IS January t986 
+
+
+
+©r March 1987, ISI 
+
+
+
+6r « 
+
+
+
+INOIAN STANO>AllllS INSTITUTION 
+
+MANAK »4AVAN, • BAHADUR SHAH ZAFAR UARG 
+
+NEW DELHI ttOOOS 
+
+
+
+18:11406-1986 
+ISO 7665-1983 
+
+The Computers, Business Machines and Calculators Sectional Committee has reviewed 
+the provisions of following ISO Standards and has decided that these are acceptable! for use in 
+conjunction with this standard: 
+
+ISO 2022-1982 Information processing — ISO 7-bit and 8-blt coded character sets — 
+
+Code extension techniques 
+
+ISO 5654/1-1984 information processing —-Data Interchange on 200 mm <8 in) flexible 
+disk cartridges using two-frequency recording at 13 262 ftprad on one side — Part 1 : 
+Dimensional, physical and magnetic characteristics 
+
+ISO 5654/2-1982 Information processing — Data interchange on 200 mm (8 in) 
+flexible disk cartridges using two-frequency recording at 13 262 ftprad on one side — 
+Part 2 : Track format 
+
+ISO 7065/1-1982 Information processing — Data interchange on 200 mm (8 in) flexible 
+disk cartridges uging modified frequency modulation recording at 13 262 ftprad on two 
+sides — Part 1 : Dimensional; physical and magnetic characteristics 
+
+ISO 7065/2-1982 Information processing — Data interchange on 200 mm (8 in) flexible 
+disk cartridges using modified frequency modulation recording at 13 262 ftprad on two 
+sides — Part 2 : Track format for 1,9 tpmm (48 tpi) 
+
+
+
+18:11406-1986 
+ISO 7665-1 913 
+
+
+
+1 Scope and field of application 
+
+This International Standard specifies requirements for the file 
+structure and the labelling of flexible disk cartridges for the in- 
+terchange of infomiation between users of different informa- 
+tion processing systems. 
+
+This International Standard specifies 
+
+a) recorded labels to identify files, file sections, and 
+volumes of flexible disk cartridges; 
+
+b) basic characteristics of the blocks containing the 
+records constituting the file; 
+
+c) the file structure. 
+
+This International Standard specifies three nested levels of 
+interchange so that 
+
+a) at the first level, called BASIC INTERCHANGE (Bl), it is 
+possible to interchange data by using a minimum set of the 
+facilities provided; 
+
+b) at the second level, called EXTENDED INTERCHANGE 
+LEVEL 1 (El), it is possible to interchange data using the 
+minimum set together with blocks having a length greater 
+than that of the physical records and with blocked fixed- 
+length records; 
+
+c) at the third level, called EXTENDED INTERCHANGE 
+LEVEL 2 (E2), it is possible to interchange data using the 
+facilities of levels Bl and El together with variable-length 
+records and segmented records. 
+
+Annex A describes examples but does not form part of this 
+standard. 
+
+Annex B gives disk parameter values derived from flexible disk 
+data interchange standards, but does not form part of this 
+standard. 
+
+
+
+2 Conformance 
+
+A flexible disk cartridge conforms to this International Standard 
+when all interchange files and all labels recorded on it conform 
+to the specifications of this International Standard. A state- 
+
+
+
+ment of conformity shall identify the level or levels of inter- 
+change to which the contents of the flexible disk cartridge con- 
+form. 
+
+A prerequisite is conformance to the applicable flexible disk car- 
+tridge data interchange standards identified in this international 
+Standard for the different types of flexible disks. 
+
+
+
+3 References 
+
+ISO 646, Information processing — ISO 7-bit coded character 
+set for information interchange. 
+
+ISO 2022, information processing — ISO 7-bit and 8-bit coded 
+character sets — Code extension techniques. 
+
+ISO 4873, Information processing — 8-bit coded character set 
+for information interchange. 
+
+ISO 5654, Information processing — Data interchange on 
+200 mm (8 in) flexible disk cartridges using two-frequency 
+recording at 13 262 ftprad on one side — 
+
+Part 1: Dimensional, physical and magnetic characteristics. 
+
+Part 2: Track format. 
+
+ISO 6596, Information processing — Data interchange on 
+130 mm (5.25 in) flexible disk cartridges using two-frequency 
+recording at 7 958 ftprad on one side — 
+
+Part 1: Dimensional, physical and magnetic charcteristics. 
+
+Part 2: Track format for 1 ,9 tpmm (48 tpi). i> 
+
+ISO 7065, Information processing — Data interchange on 
+200 mm (8 in) flexible disk cartridges using modified frequency 
+modulation recording at 13 262 ftprad on two sides — 
+
+Part 1: Dimensional, physical and magnetic characteristics. 
+
+f^rt 2: Track format for 1 ,9 tpmm (48 tpi). i' 
+
+ISO 7487, Information processing — Data interchange on 
+130 mm (5.25 in) flexible disk cartridges using modified fre- 
+quency modulation recording at 7 958 ftprad on two sides — 
+
+Part 1: Dimensional, physical and magnetic character- 
+istics. " 
+
+Part 2: Track format. H 
+
+
+
+1) At present at the stage of draft. 
+
+
+
+15:11406-1986 
+ISO 7665-1983 
+
+
+
+ECMA-59, Data interchange on 200 mm flexible disk cartridges 
+using two-frequency recording at 13 262 ftprad on both sides. 
+
+ECMA-78, Data interchange on 130 mm flexible disk cartridges 
+using MFM recording at 1 958 ftprad on both sides, 3,8 tracks 
+per millimetre. 
+
+
+
+4.12 natural order: An ascending sequence of integers 
+starting with the lowest allowed value and proceeding, in 
+increments of one, to the highest allowed value. 
+
+4.13 physical record:- A fixed-length field containing the 
+data of a sector. 
+
+
+
+4 Definitions 
+
+For the purpose of this International Standard, the following 
+definitions apply. 
+
+4.1 block: A group of characters treated as a logical unit. 
+
+4.2 blocked : An attribute of records and record segments 
+that indicates that they may begin at a byte that is not the first 
+byte of a block. 
+
+
+
+4.3 byte : A string of eight binary digits operated upon as a 
+unit. 
+
+
+
+4.14 physical record address: A five-digit number in which 
+the cylinder address provides the two most significant digits, 
+the side number provides the next most significant digit, and 
+the sector number provides the two least significant digits. 
+
+4.15 record: Related data treated as a unit of inforriianon. 
+
+4.16 sector: That part of a track on a flexible disk cartridge 
+that can be accessed by the magnetic heads in the course of 
+predetermined angular displacements of the disk. 
+
+4.17 segmented record: A record contained in a file in 
+which each record consists of one or more consecutive record 
+segments. 
+
+
+
+4.4 cylinder: A pair of tracks, one on each side, having the 
+same track number. 
+
+NOTES 
+
+1 The cylinder number is a two-digit number identical to the track 
+number. 
+
+2 On flexible disk cartridges that are recorded only on one side, 
+cylinders comprise one track only. 
+
+
+
+4.5 extent : A set of physical records the addresses of which 
+form a continuous ascending sequence. 
+
+4.6 file: A named collection of information consisting of 
+records pertaining to a single subject. 
+
+
+
+4.18 track : That part of a flexible disk that can be accessed 
+by a single magnetic head that is stationary while the disk 
+makes a complete revolution. 
+
+4.19 variable-length record : A record contained in a file in 
+which the records may have different lengths. 
+
+4.20 volume: A dismountable physical unit of storage 
+nriedium, for example a flexible disk cartridge. 
+
+
+
+5 Notation 
+
+
+
+5.1 Specification of label content 
+
+
+
+4.7 file section: For a file recorded over more than one 
+volume, that part of the file that is recorded in any one volume. 
+
+4.8 fixed-length record: A record contained in a file in 
+which all the records have the same length. 
+
+
+
+4.9 formatting: Writing the proper control information 
+establishing the cylinders and designating addresses of physical 
+records on the surfaces of the flexible disk. 
+
+
+
+4.10 initialization: Writing of the Volume Label, the 
+ERMAP Label, and any other information initially required to be 
+on the flexible disk cartridge, prior to the commencement of 
+general processing or use. 
+
+
+
+4.11 label: A record that identifies, characterizes and/or 
+delimits a volume, a file or a file section on that volume. 
+
+
+
+5.1.1 In references to label contents throughout the following 
+clauses of this International Standard, a notation is used with 
+the significance shown in table 1 . 
+
+Table 1 — Notation 
+
+
+
+Notation 
+
+
+Significance 
+
+
+CP 
+
+
+Character position within the label 
+
+
+L 
+
+
+Length of the field in number of characters 
+
+
+a-character 
+
+
+Any of the characters complying with the 
+requirements of 8.1 for use in labels 
+
+
+Digit(s) 
+
+
+Any digit(s) from to 9 
+
+
+
+5.1.2 With the exception of SPACE, a group of capital letters 
+in the "content" column of a table specifying label contents in- 
+dicates that the corresponding characters shall appear in the 
+order given and in the corresponding character positions of the 
+field specified [for example, VOL in CP 1 to 3 of the Volume 
+
+
+
+18 : 11406-t986 
+ISO 7665-1983 
+
+
+
+Label (see table 6)]. In the tables and throughout this Interna- 
+tional Standard, SPACE signifies the character coded in posi- 
+tion 2/0 of ISO 646. 
+
+S.2 Label fields 
+
+Where the words of this International Standard are used to 
+signify a specific label or label field (for example "Sector Se- 
+quence Indicator"), the words are printed with initial capitals 
+throughout (except for prepositions). 
+
+
+
+6 Arrangement of labels and files 
+
+6.1 Applicability of this International Standard to 
+identified types of flexible disk cartridge 
+
+The requirements of this International Standard are applicable 
+to several types of flexible disk cartridge. Each type of cartridge 
+is the subject of a separate data interchange standard. These 
+standards are identified in table 3, together with the 
+corresponding values of a paranneter Recording-Type. The 
+parameter Recording-Type is used in this International Stan- 
+dard to identify the data interchange standard to which the 
+cartridge conforms, within the set of standards that apply to 
+cartridges having the same physical dimensions. 
+
+Table 2 identifies those numerical parameters that characterize 
+the differences, between the types of cartridge, that are signifi- 
+cant for the requirements of this Interrutional Standard. 
+
+Table 2 — Parameters for data interchange 
+standards 
+
+
+
+Number-Of-Sides 
+
+
+
+Cylinder- Limit 
+
+
+
+Index-Sector-Limit 
+
+
+
+Data-Sector-Limit 
+
+
+
+Data-Physical-Record-Length 
+
+
+
+Track-Data-Capacity 
+
+
+
+The values of the parameters listed in table 2 shall be obtained 
+from data interchange standards as specified below. The values 
+applicable to the data interchange standards listed in table 3 are 
+quoted in annex B. 
+
+Number-Of-Sides: The number of sides of the disk on which 
+recorded tracks shall be present. 
+
+Cylinder-Limit: The specified minimum number of good 
+cylinders that shall be present from cylinder 01 to the cylinder 
+having the highest specified cylinder number. 
+
+Index-Sector- Limit: The number of usable sectors on Track 00, 
+Side 0, or on Track 00, Side 1. 
+
+NOTE — These numbers shall be the same on both sides. 
+
+Oata-Sector-Limit : The number of usable sectors on each track 
+other than Track 00, on Side. or Side 1. 
+
+
+
+Data-Physical-Record-Length : The number of bytes in the Data 
+Fieki of a Data Block on each track other than Track (X), on 
+Side Cor Side 1. 
+
+Track-Data-Capacity: The numerical product of the parameters 
+Data-Sector-Limit and Data-Physical-Record-Length. 
+
+Table 3 — Data interchange standards and parameter 
+Recording-Type 
+
+
+
+Data interchange 
+
+
+Parameter 
+
+
+standard 
+
+
+Recording-Type 
+
+
+ISO 5654 
+
+
+1 
+
+
+ECIVIA-59 
+
+
+2 
+
+
+ISO 7065 
+
+
+M 
+
+
+ISO 6596 
+
+
+1 
+
+
+ISO 7487 
+
+
+M 
+
+
+ECMA-78 
+
+
+3 
+
+
+
+6.2 Number of sides 
+
+Where this International Standard specifies requirements for 
+labels and files on side 0, such requirements shall always apply. 
+
+Where this International Standard specifies requirements for 
+labels and files on side 1, such requirements shall apply to 
+those types of flexible disk cartridge for which the parameter 
+Number-Of-Sides in table 2 has the value 2, and shall not apply 
+to those types of flexible disk cartridge for which the parameter 
+has the value 1 . 
+
+6.3 Organization of space on a flexible disk 
+cartridge 
+
+The parameter Cylinder-Limit, which is shown in table 2, is 
+used to specify the organization of space on a flexible disk 
+cartridge. 
+
+Available space on a flexible disk cartridge shall be organized In 
+the following way: 
+
+a) An index cylinder (cylinder (X)) shall be reserved for 
+descriptive information about the volume, and the files 
+recorded on the volume. 
+
+b) A number of cylinders, the addresses of which range 
+from 01 to Cylinder- Limit inclusive, shall be available for 
+files. 
+
+NOTE — According to the data Interchange standards, a unique 
+cylinder number is associated with each cylinder. Two of these 
+cylinders are intended to be used only when the volume contains one 
+or more defective cylinders. 
+
+Each non-defective cylinder possesses a unique cylinder address, but a 
+defective cylinder does not possess a cylinder address. 
+
+Cylinder addresses are assigned consecutively to the non-defective 
+cylinders, in ascending sequence of cylinder numbers. 
+
+6.4 index cylinder (cylinder 00) 
+
+The index cylinder (cylinder 00) on a flexible disk cartridge shall 
+be reserved for descriptive information about the volume and 
+the files recorded on the volume. The ' idex cylinder shall 
+
+
+
+IS:11406-19M 
+ISO 7665-1983 
+
+
+
+always be formatted with physical records that have a length of 
+128 data characters on side 0. On side 1, the physical record 
+length depends on the type of flexible disk cartridge. 
+
+The number of physical records that shall appear on both tracks 
+of the index cylinder shall be the value of the parameter Index- 
+Sector-Limit in table 2. 
+
+The allocation of sectors on the index cylinder shall be as 
+shown in table 4. 
+
+Table 4 — Sectors on the index cylinder (cylinder 00) 
+
+
+
+Side 
+
+
+Sector 
+
+
+Use 
+
+
+
+
+
+01 to 04 
+
+
+reserved for system use 
+
+
+
+
+
+05 
+
+
+reserved for Error Map Label 
+(ERMAP) 
+
+
+
+
+
+06 
+
+
+reserved for future starKlardization 
+
+
+
+
+
+07 
+
+
+resen/ed for Volume Label (V0L1) 
+
+
+
+
+
+08 to Index- 
+Sector-Limit 
+
+
+resen/ed for File Labels (HDR1) 
+
+
+1 
+
+
+01 to Index- 
+Sector-Limit 
+
+
+
+6.4.1 Sectors reserved for system use 
+
+Sectors 01 to 04 of side shall be reserved for system use and 
+shall be ignored in interchange. Their contents are not specified 
+by this International Standard and shall not be overwritten, 
+except if otherwise agreed by the sender and the recipient of 
+the data. 
+
+
+
+6.4.2 Sector reserved for future standardization 
+
+Sector 06 of side is reserved for future standardization and 
+shall be ignored in interchange. 
+
+6.4.3 Sectors reserved for labels 
+
+Labels on the index cylinder shall be records that all have the 
+same length. All labels shall be recorded within the first or only 
+128 character positions of the physical record. Sector 05 of side 
+shall be reserved for the Error Map Label (see 8.6). Sector 07 
+of side shall be reserved for the Volume Label (V0L1). Sec- 
+tors 08 to Index-Sector-Limit of side and sectors 01 to Index- 
+Sector-Limit of side 1 shall be reserved for File Labels (HDR1), 
+one label per physical record, to describe the files recorded on 
+cylinders with addresses 01 to Cylinder- Limit. 
+
+The File Labels may be recorded anywhere among the sectors 
+reserved for them. 
+
+Unused sectors shall be deleted according to 10.2. 
+
+
+
+6.5 Contents of cylinders with addresses 01 to 
+Cylinder-Limit 
+
+Cylinders with addresses 01 to Cylinder-Limit shall contain 
+either allocated space or unallocated available space. 
+
+
+
+These cylinders shall be formatted with physical records the 
+length of which in data characters shall be the value of the 
+parameter Data-Physical-Record-Length in table 2. The num- 
+ber of such physical records that shall be recorded on side 
+and on side 1 of each cylinder shall be the value of the 
+parameter Data-Sector-Limit in table 2. 
+
+Each physical record either shall be allocated to an extent, or 
+shall be unallocated. All physical records alk)cated to an.extent 
+shall be identified by an HDR1 label contained in cylinder 00. All 
+physical records not so indicated^shall be unallocated. A 
+physical record shall not be allocated to nrare than one extent. 
+
+Data that form part of a file shall be recorded only within an 
+extent. 
+
+The contents of all unallocated physical records sfiall not fomi 
+part of any file and may be ignored in interchange. 
+
+
+
+7 RIe structure for data interchange 
+
+NOTE — This clause specifies the file structure for data Interchange in 
+terms of data blocks and data records and Identifies the label fiekte 
+defined for that purpose. 
+
+7.1 Blocks 
+
+7.1.1 Characteristics 
+
+A block shall be a group of characters treated as a logical unit 
+having the following characteristics: 
+
+a) A block shall be recorded in all or part of a physical 
+record, or over several physical records the addresses of 
+which form a consecutive ascending sequence. 7?iis se- 
+quence shall include only the addresses of those non- 
+defective physical records that are recorded on the volume. 
+
+b) A block shall begin at the first byte of a physical record. 
+
+c) A block may contain one or more complete records or 
+record segments. 
+
+NOTE — A block Is a logical entity not to be confused with data btock 
+described in 10.1. 
+
+
+
+7.1.2 Blocic length 
+
+The length of a block shall be the number of characters in the 
+block. Within a file, all blocks shall have the same length. If the 
+block length exceeds that of the ohysical record, the Mock 
+length shall be an integer multiple of the physical record length. 
+
+The maximum length of a block that may be assigned on a 
+flexible disk shall be equal to the total capacity of a data track. 
+
+NQTE ~ This does not imply that a t>k>ck must begin and end on tfw 
+same track. 
+
+The minimum length of a block shall be 
+
+a) 1 character, when it contains a fixed-length record: 
+
+b) 4 characters, when it contains a variaUe-lengtli record; 
+
+c) 5 characters, when it contains a segmented record. 
+
+
+
+IS : 11406-1986 
+ISO 7665-1983 
+
+
+
+7.1.3 Unused character positions 
+
+If the Ijlock length is smaller than the physical record length, 
+the unused space between the end of the blocl( and the end of 
+the physical record shall be filled with NULs. 
+
+NOTE — In all other cases, the end of a block coincides with the end of 
+a physical record. 
+
+7.1.4 Relation to extents 
+
+V\^hin each extent, the data within consecutive physical 
+records, excluding defective physical records, shall be con- 
+sidered to be grouped into consecutive blocks. 
+
+The first block of an extent shall begin at the first byte of the 
+first non-defective physical record in the extent. A block shall 
+be completely contained in one extent only. 
+
+7.2 Records 
+
+7.2.1 Characteristics 
+
+A record shall be related data treated as a unit of information 
+having the following characteristics: 
+
+a) A recoro may be recorded on all or part of one or more 
+blocks. 
+
+b) Within each block, the data shall be considered to be 
+grouped into consecutive records or record segments. 
+
+c) The first or only record or record segment of a block 
+shall begin at the first byte of the block. Each successive 
+record or record segment, if any, within the block shall 
+begin at the byte immediately following the last character of 
+the preceding record or record segment. 
+
+d) The length of a record shall be the number of 
+characters of the record. 
+
+e) A fixed-length record, or a variable-length record, or a 
+record segment shall end in the block in which it begins. 
+
+
+
+7.2.2.3 Relation to blocks 
+
+The first or only record of a block shall begin at the first byte of 
+the block. The space between the end of the last or only record 
+of a block and the end of a block shall be filled with NULs. 
+
+
+
+7.2.3 Variable-length records 
+
+A variable-length record shall be a record contained in a file that 
+is assigned to contain records that may have different lengths. 
+
+A Record Control Word (RCW) shall be recorded as the first 
+four characters of the record. It shall express the record length 
+as a four-digit decimal number coded according to ISO 646. 
+These four characters shall be counted as part of the record 
+length. 
+
+A maximum record length shall be assigned for a file. The 
+length of any record in the file shall not exceed this assigned 
+value. The assigned maximum record length shall not be 
+greater than the block length. 
+
+The minimum length of a variable-length record shall be 
+4 characters. 
+
+
+
+7.2.3.1 Unblocked variable-length records 
+
+An unblocked variable-length record shall be a record con- 
+tained in a file in which each block contains only one record. 
+
+
+
+7.2.3.2 Blocked variable-length records 
+
+A blocked variable-length record shall be a record contained in 
+a file in which a block may contain more than one record. 
+
+
+
+7.2.3.3 Relation to blocks 
+
+The first or only record of a block shall begin at the first byte of 
+the block. The space between the end of the last or only record 
+of a block and the end of a block shall be filled with NULs. 
+
+
+
+7.2.2 Fixed-length records 
+
+A fixed-length record shall be a recprd contained in a file that is 
+assigned to contain records that all have the same length. The 
+minimum assigned length of a fixed-length record shall be one 
+data character and the maximum assigned length shall be equal 
+to the block length. 
+
+
+
+7.2.2.1 Unblocked fixed-length records 
+
+An unblocked fixed-length record shall be a record contained in 
+a file in which each block contains only one record. 
+
+
+
+7.2.4 Segmented records 
+
+A segmented record shall be a record contained in a file that is 
+assigned to contain records that may have different lengths and 
+that may be recorded partly in one block and partly in one or 
+more other blocks in the same file. 
+
+That part of a segmented record that is recorded in one block is 
+a record segment. There shall be only one segment of the same 
+record in a block. 
+
+Successive segments of the same record within the same file 
+shall be recorded in successive blocks. 
+
+
+
+7.2.2.2 Blocked fixed-length records 
+
+A blocked fixed-length record shall be a record contained in a 
+file in which each block may contain more than one record. 
+
+
+
+Different segments of the same record shall only be recorded in 
+different file sections if one of the segments is recorded in the 
+last block of a file section, and the next segment of the record is 
+recorded in the first block of another file section. 
+
+
+
+IS: 11406-1986 
+ISO 7665-1983 
+
+
+
+A maximum record length shall be assigned for a file. The 
+length of any record in the file shall not exceed this assigned 
+value. The assigned maximum record length is unbounded in 
+that this International Standard specifies no limit to the number 
+of record segments in a record. 
+
+A Segment Control Word (SCW) shall be recorded as the first 
+five characters of each record segment. These characters shall 
+be coded according to ISO 646. 
+
+The first character of the SCW is called the segment Indicator. 
+This shall have one of the values 0, 1, 2 or 3 as follows: 
+
+shall mean that the record begins and ends in this record 
+segment; 
+
+1 shall mean that the record begins but does not end in 
+this record segment; 
+
+2 shall mean that the record neither begins nor ends in this 
+record segment; 
+
+3 shall mean that the record ends but does not begin in 
+this record segment. 
+
+The record segment length includes the length of the SCW, 
+and shall be expressed as a four-digit decimal number recorded 
+as the last four characters of the SCW. The length of a record 
+segment shall not be greater than the block length. 
+
+The minimum length of a record segment shall be five 
+characters. 
+
+7.2.4.1 Unblocked segmented records 
+
+A file shall not contain unblocked segmented records. 
+
+7.2.4.2 Blocked segmented records 
+
+A blocked segmented record shall be a record contained in a file 
+in which a block may contain segments of more than one 
+record. 
+
+7.2.4.3 Relation to blocks 
+
+The first or only record segment of a block shall begin at the 
+first byte of the block. The space between the end of the last or 
+only record segment of a block and the end of the block shall be 
+filled with NULs. 
+
+7.2.5 Coded representation of data 
+
+The characters in each record shall be interpreted according to 
+the International Standards for the coded representation of 
+character sets. 
+
+7.3 Files 
+
+7.3.1 Characteristics 
+
+A file shall be a named collection of records having the follow- 
+ing characteristics: 
+
+a) A file shall be recorded in all or part of a volume, or over 
+more than one volume. 
+
+
+
+b) If a file is recorded over more than one volume, only 
+one file section of that file shall be recorded in any one 
+volume. Either all sections of a file shall be numbered con- 
+secutively starting with 01 or they shall all be unnumbered. 
+
+c) Each file or file section that is recorded on a volume 
+shall be contained within a single extent. 
+
+7.3.2 Relation to volumes 
+
+A volume may contain one or more complete files or file sec- 
+tions. 
+
+A volume shall not contain more than one section of the same 
+file. 
+
+7.3.3 Relation to extents 
+
+If one or more consecutive blocks at the end of an extent are 
+not used to contain any records of a file or file section, these 
+blocks shall be assigned as unused and shall not form part of 
+the file. Any data that is recorded within these unused blocks 
+shall be ignored in interchange. 
+
+If all bk)cks in an extent are assigned as unused, the whole file 
+or file section shall be ignored in interchange. 
+
+7.3.4 Consistency of file attributes between file 
+sections 
+
+Within the set of File Labels (HDR1) for the different file sec- 
+tions of the same file, those label fields that have the same field 
+name taken from those listed below shall contain the same 
+characters: 
+
+a) File Identifier (CP 6 to 22). 
+
+b) Block Length (CP 23 to 27). 
+
+c) Record Format (CP 40). 
+
+d) Bypass Indicator (CP 41). 
+
+e) File Accessibility Indicator (CP 42). 
+
+f) Write Protect (CP 43). 
+
+g) Interchange Type (CP 44). 
+
+h) Record Length (CP 54 to 57). 
+j) Record Attribute (CP 63). 
+k) File Organization (CP 64). 
+
+7.4 File organization 
+
+7.4.1 The file organization shall be sequential. 
+
+7.4.2 In a sequential file, if the records are unblocked, no 
+record shall appear in a block unless the preceding block 
+
+
+
+18:11406-1986 
+ISO 7665-1983 
+
+
+
+contains a record. If the records are blocked, no record or 
+record segment shall appear In a block unless the preceding 
+block contains insufficient space to accommodate the next 
+record or record segment. These requirements shall not apply 
+to the first record or record segment of the file section. 
+
+7.4.3 If the records are blocked, any character positions that 
+follow the last record in the last used block shall be ignored in 
+interchange. 
+
+7.5 Record formats and attributes permitted for 
+interchange 
+
+Within a file for interchange, the records shall have one of the 
+following combinations of format and attributes : 
+
+a) fixed-length, unblocked; 
+
+b) fixed-length, blocked; 
+
+c) variable-length, unblocked; 
+
+d) variable-length, blocked; 
+
+e) segmented, blocked. 
+
+7.6 Relevant fields for file structure 
+
+The following File Label (HDR1) fields are relevant for de- 
+scribing the file structure of the data to be interchanged : 
+
+CP 23 to 27: Block Length 
+CP 40 : Record Format 
+
+CP 54 to 57: Record Length 
+CP 63 : Record Attribute 
+
+CP 64 : File Organization 
+
+
+
+Table 5 — International Reference Version (see ISO 646) 
+showing characters permitted in labels 
+
+(prohibited characters are shaded) 
+
+
+
+
+
+b7 
+
+
+
+
+
+0— 
+
+
+5 
+
+
+^ 
+
+
+
+
+T~ 
+
+
+1~ 
+
+
+1 
+
+
+b6 
+
+
+
+
+
+
+
+
+1 
+
+
+i 
+
+
+
+
+J 
+
+
+i 
+
+
+1 
+
+
+US 
+
+
+
+
+
+'"1 
+
+
+
+
+
+1 
+
+
+
+
+1 
+
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+1 
+
+
+2 
+
+
+3 
+
+
+4 
+
+
+5 
+
+
+6 
+
+
+7 
+
+
+b4 d3 b2 b1 
+
+
+
+
+
+
+
+
+
+
+NUt 
+
+
+OLE 
+
+
+SP 
+
+
+
+
+
+III 
+
+
+P 
+
+
+■^ p| 
+
+
+1 
+
+
+1 
+
+
+SOH 
+
+
+&C1 
+
+
+1 
+
+
+1 
+
+
+A 
+
+
+Q 
+
+
+a 
+
+
+q 
+
+
+10 
+
+
+2 
+
+
+litX 
+
+
+&C2 
+
+
+II 
+
+
+2 
+
+
+B 
+
+
+R 
+
+
+b 
+
+
+r 
+
+
+11 
+
+
+3 
+
+
+gT)C 
+
+
+0C3 
+
+
+# 
+
+
+3 
+
+
+C 
+
+
+S 
+
+
+c 
+
+
+s 
+
+
+10 
+
+
+4 
+
+
+EOT 
+
+
+&C4 
+
+
+n 
+
+
+4 
+
+
+D 
+
+
+T 
+
+
+<^ 
+
+
+t 
+
+
+10 1 
+
+
+5 
+
+
+^H(k 
+
+
+HAiC 
+
+
+% 
+
+
+5 
+
+
+iE 
+
+
+U 
+
+
+e 
+
+
+u 
+
+
+110 
+
+
+6 
+
+
+ftCK 
+
+
+SYN 
+
+
+& 
+
+
+6 
+
+
+F 
+
+
+V 
+
+
+f 
+
+
+V 
+
+
+111 
+
+
+7 
+
+
+SEL 
+
+
+ET8 
+
+
+1 
+
+
+7 
+
+
+G 
+
+
+w 
+
+
+9 
+
+
+w 
+
+
+10 
+
+
+8 
+
+
+BS 
+
+
+CAN 
+
+
+( 
+
+
+S 
+
+
+H 
+
+
+X 
+
+
+h 
+
+
+X 
+
+
+10 1 
+
+
+9 
+
+
+HT 
+
+
+E« 
+
+
+) 
+
+
+9 
+
+
+I 
+
+
+Y 
+
+
+1 
+
+
+y 
+
+
+10 10 
+
+
+10 
+
+
+LF 
+
+
+SUS 
+
+
+• 
+
+
+■ 
+
+
+J 
+
+
+Z 
+
+
+4 
+
+
+z 
+
+
+10 11 
+
+
+11 
+
+
+VT 
+
+
+ESC 
+
+
+4- 
+
+
+• 
+
+
+K 
+
+
+i 
+
+
+k 
+
+
+< 
+
+
+110 
+
+
+12 
+
+
+FF 
+
+
+IS4 
+
+
+/ 
+
+
+< 
+
+
+L 
+
+
+:i 
+
+
+i 
+
+
+
+
+110 1 
+
+
+13 
+
+
+CR 
+
+
+IS3 
+
+
+- 
+
+
+= 
+
+
+M 
+
+
+1 
+
+
+m 
+
+
+> 
+
+
+1110 
+
+
+14 
+
+
+SO 
+
+
+IS2 
+
+
+■ 
+
+
+> 
+
+
+N 
+
+
+:S* 
+
+
+n 
+
+
+— 
+
+
+1111 
+
+
+15 
+
+
+SI 
+
+
+IS1 
+
+
+/ 
+
+
+7 
+
+
+
+
+
+- 
+
+
+
+
+
+DEL 
+
+
+
+8 Format and contents of labels 
+
+8.1 Character set and ceding 
+
+The characters in the labels shall be coded according to 
+ISO 646. 
+
+The 57 characters used in the labels shall be those in the follow- 
+ing positions of the International Reference Version (see 
+table 5) : 
+
+2/0 to 2/2 
+2/5 to 2/15 
+3/0 to 3/15 
+4/1 to 4/15 
+5/0 to 5/10 
+
+
+
+8.2 Justification of characters 
+
+In the label fields, characters shall be justified as follows : 
+
+a) in each field the content of which is specified by this 
+International Standard to be SPACEs or digits, digits shall 
+be right-justified, and any remaining positions on the left 
+shall be filled either only with zeros or only with SPACEs; 
+
+b) in other fields, characters shall be left-justified, and any 
+remaining positions on the right shall be filled with SPACEs. 
+
+
+
+8.3 Labels 
+
+A volume shall contain a Volume Label (V0L1) and an Error 
+Map Label (ERMAP). Each file or file section pn the volume 
+shall be identified through a File Label (HDR1). Each of these 
+labels shall be recorded on cylinder 00 as a record with a length 
+of 128 characters. 
+
+
+
+5/15 
+
+
+
+A label shall not be part of a file. 
+
+
+
+15:11406-1986 
+ISO 7665-1983 
+
+
+
+8.4 Volume Label (V0L1) 
+
+The Volume Label shall Identify the volume, the owner, the 
+accessibility conditions, the version of this Interrrational Stan- 
+dard which applies (see clause 2), and certain physical 
+characteristics of the volume. 
+
+The contents of the Volume Label are shown in table 6 and 
+further described and specified in 8.4.1 to 8.4.10. 
+
+8.4.1 Fields reserved for future standardization (CP 12 to 
+
+37, 52 to 71, 73 to 75, 79 and 81 to 128) 
+
+These fields shall be reserved for future standardization. 
+
+The characters in CP 12 to 37, 52 to 71 , 73 to 75. and 79 shall be 
+SPACES. The characters in CP 81 to 128 shall be either all 
+SPACES or all NULs. 
+
+8.4.2 Label Identifier (CP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be VOL. 
+
+8.4.3 Label Number (CP 4) 
+
+This field shall specify the Label Number. 
+The character in this field shall be the digit 1 . 
+
+
+
+8.4.4 Volume Identifier (CP 5 to 10> 
+
+This field shall specify an identification for the volume. 
+
+The characters in this field shall be a-characters. 
+
+The identifier shall be permanently assigned by the owner of 
+the volume. 
+
+
+
+8.4.5 Volume Accessibility Indicator (CP 11) 
+
+This field shall specify whether there are restrictions under 
+which the volume may be accessed. 
+
+The character in this field shall be an a-character. 
+
+SPACE shall mean that there is no access restriction to 
+any file label or data on the volume. 
+
+Any shall mean that there are particular qualifica- 
+
+other tions for access to the volume, that are subject 
+
+character to agreement between the sender and the reci- 
+pient of the data. 
+
+If this field contains SPACE, the RIe Accessibility Indicator 
+(HDR1, CP42) in all File Header Labels shall also contain 
+SPACE. 
+
+
+
+Table 6 — Contents of the Volume Label 
+
+
+
+CP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+VOL (see 8.4.2) 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+1 (see 8.4.3) 
+
+
+5 to 10 
+
+
+Volume Identifier 
+
+
+6 
+
+
+a-characters (see 8.4.4) 
+
+
+11 
+
+
+Volume Accessibility Indicator 
+
+
+1 
+
+
+a-character (see 8.4.5) 
+
+
+12 to 37 
+
+
+(Reserved for future standardization) 
+
+
+26 
+
+
+SPACES (see 8.4.1) 
+
+
+38 to 51 
+
+
+Owner Identifier 
+
+
+14 
+
+
+a-characters (see 8.4.6) 
+
+
+52 to 71 
+
+
+(Reserved for future standardization) 
+
+
+20 
+
+
+SPACES (see 8.4.1) 
+
+
+72 
+
+
+Recording-Type Indicator 
+
+
+1 
+
+
+a-charaeter (see 8.4.7) 
+
+
+73 to 75 
+
+
+(Reserved for future standardization) 
+
+
+3 
+
+
+SPACES (see 8.4.1) 
+
+
+76 
+
+
+Physical Record Length Identifier 
+
+
+1 
+
+
+SPACE or digit (see 8.4.8) 
+
+
+77 to 78 
+
+
+Sector Sequence Indicator 
+
+
+2 
+
+
+SPACES or digits (see 8.4.9) 
+
+
+79 
+
+
+(Reserved for future standardization) 
+
+
+1 
+
+
+SPACE (see 8.4.1) 
+
+
+80 
+
+
+Label Standard Version 
+
+
+1 
+
+
+digit (see 8.4.101 
+
+
+81 to 128 
+
+
+(Resen/ed for future standardization) 
+
+
+48 
+
+
+SPACES or NULs (see 8.4.1) 
+
+
+
+10 
+
+
+
+IS: 11406-1986 
+ISO 7665-1983 
+
+
+
+8.4.6 Owner Identifier (CP 38 to 51) 
+
+This field siiall specify the owner of the volume. 
+The characters in this field shall be a-characters. 
+
+6.4.7 Recording-Type Indicator (CP 72) 
+
+This field shall specify the data interchange standard to which 
+the volume conforms, from among the set of standards which 
+are applicable to flexible disk cartridges having the same 
+physical dimensions. 
+
+The character in this field shall be an a-character, and shall be 
+either SPACE or the value of the parameter Recording-Type in 
+table 3 that corresponds to the data interchange standard to 
+which the flexible disk cartridge conforms. 
+
+SPACE or 1 shall mean that this volume conforms to one 
+of the data interchange standards for which 
+the value of the parameter Recording-Type 
+is1. 
+
+Any shall mean that this volume conforms to one 
+
+other of the data interchange standards for which 
+
+character the value of the parameter Recording-Type is 
+the same as this character. 
+
+NOTE — The data interchange standard specifies the number of for- 
+matted surfaces of the volume and the number of cylinders available 
+for use. This information is summarized in annex B by means of the 
+parameters Number-Of-Sldes and Cylinder-Limit. 
+
+
+
+SPACE shall mean that the length of all physical records is 
+128 bytes. 
+
+1 shall mean that the length of all physical records is 
+256 bytes. 
+
+2 shall mean that the length of all physical records is 
+512 bytes. 
+
+3 shall mean that the length of all physical records is 
+1 024 bytes. 
+
+8.4.9 Sector Sequence Indicator (CP 77 to 78) 
+
+This field shall specify the sequence of the sectors on the 
+tracks. 
+
+The characters in this field shall be SPACEs or digits. 
+
+SPACES or 01 shall each mean that the sectors are in the 
+natural order. 
+
+02 to 13 shall mean that the sectors are in one of the 
+
+other 12 orders specified by ISO 5654 and 
+ECMA-59. 
+
+
+
+8.4.10 Label Standard Version (CP 80) 
+
+This field shall specify the version of this International Standard 
+to which the volume conforms. 
+
+The character in this field shall be a digit. 
+
+3 shall indicate the present version of this International 
+Standard. 
+
+
+
+8.4.8 Physical Record Length Identifier (CP 76) 
+
+This field shall specify the length of all physical records on all 
+cylinders other than cylinder 00. 
+
+The character in this field shall be SPACE or a digit. 
+
+
+
+8.5 File Label (HDR1) 
+
+The File Label shall identify the file, specify its location on the 
+volume, and designate certain attributes of the file. 
+
+The contents of the File Lat»el are shown in table 7 and are 
+further described and specified in 8.5.1 to 8.5.22. 
+
+
+
+11 
+
+
+
+18 : 11406-1986 
+ISO 7865-1983 
+
+
+
+Table 7 — Contents of the File Label 
+
+
+
+CP 
+
+
+Field name 
+
+
+L 
+
+
+Content 
+
+
+1 to 3 
+
+
+Label Identifier 
+
+
+3 
+
+
+HDR (see 8.5.2) 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+1 (see 8.5.3) 
+
+
+5 
+
+
+(Reserved for future standardization) 
+
+
+1 
+
+
+SPACE (see 8.5.1) 
+
+
+6 to 22 
+
+
+File Identifier 
+
+
+17 
+
+
+a-characters (see 8.5.4) 
+
+
+23 to 27 
+
+
+Block Length 
+
+
+5 
+
+
+digits (see 8.5.5) 
+
+
+28 
+
+
+(Reserved for future standardization) 
+
+
+1 
+
+
+SPACE (see 8.5.1) 
+
+
+2910 33 
+
+
+Begin Extent 
+
+
+5 
+
+
+digits (see 8.5.6) 
+
+
+34 
+
+
+(Reserved for future standardization) 
+
+
+1 
+
+
+SPACE (see 8.5.1) 
+
+
+35 to 39 
+
+
+End Extent 
+
+
+5 
+
+
+digits (see 8.5.7) 
+
+
+40 
+
+
+Record Format 
+
+
+1 
+
+
+SPACE or F or V or S (see 8.5.8) 
+
+
+41 
+
+
+Bypass Indicator 
+
+
+1 
+
+
+SPACE or B (see 8.5.9) 
+
+
+42 
+
+
+File Accessibility Indicator 
+
+
+1 
+
+
+a-character (see 8.5.10) 
+
+
+43 
+
+
+Write Protect 
+
+
+1 
+
+
+SPACE or P (see 8.5.11) 
+
+
+44 
+
+
+Interchange Type 
+
+
+1 
+
+
+SPACE or capital letter or digit 
+(see 8.5.12) 
+
+
+45 
+
+
+Multivolume Indicator 
+
+
+1 
+
+
+SPACEor Cor L (see 8.5.13) 
+
+
+46 to 47 
+
+
+File Section Number 
+
+
+2 
+
+
+SPACES or digits (see 8.5.14) 
+
+
+48 to 53 
+
+
+Creation Date 
+
+
+6 
+
+
+SPACES or digits (see 8.5.15) 
+
+
+54 to 57 
+
+
+Record Length 
+
+
+4 
+
+
+SPACES or digits (see 8.5.16) 
+
+
+58 to 62 
+
+
+Unused Positions Count 
+
+
+5 
+
+
+SPACES or digits (see 8.5.17) 
+
+
+63 
+
+
+Record Attribute 
+
+
+1 
+
+
+SPACE or B (see 8.5.18) 
+
+
+64 
+
+
+File Organization 
+
+
+1 
+
+
+SPACE or S (see 8.5.19) 
+
+
+65 to 66 
+
+
+(Reserved for future standardization) 
+
+
+2 
+
+
+SPACES (see 8.5.1) 
+
+
+67 to 72 
+
+
+Expiration Date 
+
+
+6 
+
+
+SPACES or digits (see 8.5.20) 
+
+
+73 
+
+
+Verify/Copy Indicator 
+
+
+1 
+
+
+a-character (see 8.5.21) 
+
+
+74 
+
+
+(Reserved for future standardization) 
+
+
+1 
+
+
+SPACE (see 8.5.1) 
+
+
+75 to 79 
+
+
+End of Data 
+
+
+5 
+
+
+digits (see 8.5.22) 
+
+
+80 
+
+
+(Reserved for future standardization) 
+
+
+1 
+
+
+SPACE (see 8.5.1) 
+
+
+81 to 128 
+
+
+(Reserved for future standardization) 
+
+
+48 
+
+
+SPACES or NULs (see 8.5.1) 
+
+
+
+8.5.1 Fields reserved for future standardization 
+
+(CP 5, 28, 34, 65, 66, 74 and 80 to 128) 
+
+These fields shall be reserved for future standardization. 
+
+The characters in CP 5, 28, 34, 65, 66, 74 and 80 shall be 
+SPACES. The characters in CP 81 to 128 shall be dither all 
+SPACES or all NULs. 
+
+
+
+8.5.2 Ubei Identifier (CP 1 to 3) 
+
+This field shall specify the Label Identifier. 
+The characters in this field shall be HDR. 
+
+8.5.3 Label Number (CP 4) 
+
+This field shall specify the Label Number. 
+The character in this field shall be the digit 1 . 
+
+
+
+8.5.4 File Identifier (CP 6 to 22) 
+
+This field shall specify the identifier of the file. 
+
+The characters in this field shall be a-characters. The File Iden- 
+tifier shall be assigned to the file by its originator at label crea- 
+tion time. There shall be no duplicate File Identifiers on the 
+same volume. 
+
+8.5.5 Block Length (CP 23 to 27) 
+
+This field shall specify the number of characters per block. 
+The characters in this field shall be digits. 
+
+8.5.6 Begin Extent (CP 29 to 33) 
+
+This field shall specify the address of the first physical record of 
+the extent. 
+
+The characters in this field shall be digits. 
+
+
+
+12 
+
+
+
+IS : 11406-1986 
+ISO 7665-1983 
+
+
+
+The first two digits shall specify the cylinder address (01 to 
+Cylinder-Limit). 
+
+The third digit shall specify the side number (0 or 1). 
+
+The last two digits shall specify the sector number (01 to Data- 
+Sector-Limit). 
+
+
+
+8.5.7 End Extent (CP 35 to 39) 
+
+This field shall specify the address of the last physical record of 
+the extent. 
+
+The characters in this field shall be digits. 
+
+The first two digits shall specify the cylinder address (01 to 
+Cylinder-Limit). 
+
+The third digit shall specify the side number (0 to 1). 
+
+The last two digits shall specify the sector number (01 to Data- 
+Sector-Limit). 
+
+
+
+8.5.8 Record Format (CP 40) 
+
+This field shall specify the format of the records in the file. 
+
+The character in this field shall be SPACE, F, V or S. 
+
+SPACE or F shall mean that all records are fixed-length 
+records. 
+
+
+
+V 
+S 
+
+
+
+shall mean that all records are variable-length 
+records. 
+
+shall mean that all records are segmented 
+records. 
+
+
+
+8.5.9 Bypass Indicator (CP 41) 
+
+This field shall specify whether or not a file may be ignored in 
+interchange. 
+
+The character In this field shall be SPACE or B. 
+
+SPACE shall mean that the file is intended for inter- 
+
+change. 
+
+
+
+8.5.11 Write Protect (CP 43) 
+
+This field shall specify whether or not there is a protection 
+against alteration of the file. 
+
+The character in this field shall be SPACE or P. 
+
+SPACE shall mean that there is no protection. 
+
+P shall mean that the file is protected. 
+
+8.5.12 Interchange Type (CP 44) 
+
+This field shall specify the set of attributes that the file 
+possesses. 
+
+The character in this field shall be SPACE or a capital letter or a 
+digit. 
+
+SPACE shall mean that the file is a BASIC INTER- 
+
+CHANGE file. 
+
+1 shall mean that the file is an EXTENDED IN- 
+TERCHANGE LEVEL 1 (ED file. 
+
+2 shall mean that the file is an EXTENDED IN- 
+TERCHANGE LEVEL 2 (E2) file. 
+
+Any shall mean that the file does not conform to 
+
+capital any interchange level specified by this Intema- 
+
+letter tional Standard. 
+
+
+
+8.5.13 Multivolume Indicator (CP 45) 
+
+This field shall specify whether the file is completely contained 
+on the volume, is continued on another volume or finishes on 
+this volume. 
+
+The character in this field shall be SPACE, C or L. 
+
+SPACE shall mean that the file is entirely contained in 
+
+the volume. 
+
+
+
+B 
+
+
+
+shall mean that the file may be ignored for in- 
+terchange. 
+
+
+
+C 
+L 
+
+
+
+shall mean that the file continues on another 
+volume. 
+
+shall mean that the file ends, but does not 
+begin, in the volume. 
+
+
+
+8.5.10 File Accessibility Indicator (CP 42) 
+
+This field shall specify whether or not there are particular con- 
+ditions under which the file can be accessed. 
+
+The character in this field shall be an a-character. 
+
+
+
+SPACE 
+
+
+
+Any 
+
+other 
+
+character 
+
+
+
+shall mean that there is no access restric- 
+tion. 
+
+shall mean that there are particular qualifica- 
+tions for access to the file, which are subject 
+to agreement between the sender and the 
+recipient of the da^a. In this case, the Volume 
+Accessibility Indicator (VOL 1, CP 11) shall 
+not be SPACE. 
+
+
+
+8.5.14 File Section Number (CP 46 to 47) 
+
+This field shall specify the ordinal number of the file sections 
+(starting with 01 ) in a multivolume file if they are consecutively 
+numbered. 
+
+The characters in the field shall be SPACES or digits. 
+
+SPACES shall mean that the file sections are not 
+numbered. 
+
+Digits shall form this numlser (01 to 99). 
+
+If the file is not a multivolume file, this field shall contain 
+SPACES or 01. 
+
+
+
+13 
+
+
+
+18:11406-1986 
+ISO 7665-1983 
+
+
+
+8.5.15 Creation Date (CP 48 to 53) 
+
+This field sliall specify the date of creation of the file section. 
+
+The characters in this field shall be SPACES or digits. 
+
+SPACES shall mean that the creation date is not signifi- 
+cant. 
+
+The first two digits shall specify the two low-order digits of 
+the year (00 to 99). 
+
+The next two digits shall specify the month (01 to 12). 
+
+The last two digits shall specify the day (01 to 31). 
+
+8.5.16 Record Length (CP 54 to 57) 
+
+This field shall specify the maximum number of characters per 
+record. 
+
+The characters in this field shall be SPACEs or digits. 
+
+SPACES shall mean that the maximum record length is 
+equal to the block length. 
+
+Digits shall specify the maximum number of characters 
+per record. 
+
+If the Interchange Type field (HDR1, CP 44) contains a SPACE, 
+the Record Length field shall contain either SPACEs or a number 
+equal to that in the Block Length field (HDR1, CP 23 to 27). 
+
+If the Record Format field (HDR1, CP 40) contains a V, the 
+number of characters specified by this field shall include the 
+characters in the Record Control Word (RCW). 
+
+If the Record Format field (HDR1, CP 40) contains a S, the 
+number of characters specified by this field shall not include 
+the characters in the Segment Control Word(s), and a value 
+of shall mean that the record length may be greater than 
+9 999 characters. 
+
+
+
+8.5.17 Unused Positions Count (CP 58 to 62) 
+
+This field shall be used with blocked records to specify the 
+number of unused character positions in the block that im- 
+mediately precedes the block identified by End of Data (HDR1, 
+CP 75 to 79). 
+
+The characters in this field shall be SPACEs or digits. 
+
+SPACES shall mean that there are no unused positions in 
+the last block. 
+
+Digits shall specify the number of unused positions in 
+the last block. 
+
+With unblocked records, this field shall contain only SPACEs or 
+ZEROS. 
+
+
+
+8.5.18 Record Attribute (CP 63) 
+
+This field shall specify whether the records of the file are 
+blocked or unblocked. 
+
+The character in this field shall be SPACE or B. 
+
+SPACE shall mean that the records are unblocked. 
+
+B shall mean that the records are blocked. 
+
+8.5.19 File Organization (CP 64) 
+
+This field shall specify the organization of the file. 
+
+The character in this field shall be SPACE or S. 
+
+SPACE or S shall mean that the file is organized sequen- 
+tially. 
+
+8.5.20 Expiration Date (CP 67 to 72) 
+
+This field shall specify if and when the data within the file sec- 
+tion may be regarded as obsolete. 
+
+The characters in this field shall be SPACEs or digits. 
+
+SPACES shall mean that the data may be regarded as 
+obsolete. 
+
+999999 shall mean that the data shall not be regarded 
+
+as obsolete. 
+
+Digits other than 999999 shall specify the earliest date at which 
+the data may be regarded as obsolete. 
+
+The first two digits shall specify the two low-order digits of 
+the year (00 to 99). 
+
+The next two digits shall specify the month (01 to 12). 
+
+The last two digits shall specify the day (01 to 31). 
+
+8.5.21 Verify/Copy Indicator (CP 73) 
+
+This field shall specify whether verification procedures have 
+been applied to the data of the file section, or whether the file 
+section has been copied on another medium. 
+
+The character in this field shall be an a-character. 
+
+SPACE shall mean that this file section has not been 
+verified or copied, or, alternatively, that this in- 
+formation is not relevant in interchange. 
+
+The use of any other character shall be a matter for agreement 
+between the sender and the recipient of the data. 
+
+8.5.22 End of Data (CP 75 to 79) 
+
+This field shall specify the address of the physical record con- 
+taining the beginning of the next available unused block in the 
+extent, if such a block exists. 
+
+The characters in this field shall be digits. 
+
+
+
+14 
+
+
+
+18:11406-1986 
+ISO 7665-1983 
+
+
+
+The first two digits shall specify the cylinder address (01 to 
+Cylinder-Limit plus 1). 
+
+The third digit shall specify the side number (0 or 1). 
+
+The last two digits shall specify the sector number (01 to 
+Data-Sector-Limit). 
+
+If this address is equal to that in the Begin Extent field (CP 29 to 
+33), this shall mean that no data are recorded in the extent. 
+
+If this address is higher than that in the End Extent field (CP 35 
+to 39), this shall mean that there are no unused blocks in the 
+extent. In this situation only, a cylinder address equal to 
+Cylinder- Limit plus 1 may occur. 
+
+8.6 Error Map Label (ERMAP) 
+
+The ERMAP label shall be used to identify up to two cylinders 
+found defective during formatting. 
+
+The contents of the ERMAP label shall be as shown in table 8 
+and as further specified in 8.6.1 to 8.6.4. 
+
+8.6.1 Fields reserved for future standardization 
+
+(CP6, 10, 14 to 128) 
+
+These fields shall be reserved for future standardization. 
+
+The characters in CP 6, 10 and 14 to 80 shall be SPACEs. 
+
+The characters in CP 81 to 128 shall be either all SPACEs or all 
+NULs. 
+
+8.6.2 Label Identifier (CP 1 to 5) 
+This field shall specify the ERMAP label. 
+The characters in this field shall be ERMAP. 
+
+8.6.3 Defective Cylinder Identification 1 (CP 7 to 9) 
+
+This field shall specify the cylinder number of the only defective 
+cylinder if one defective cylinder is present on the volume, or 
+shall specify the number of the lowest-numbered defective 
+cylinder if more than one defective cylinder is present on the 
+volume. 
+
+
+
+The characters in this field shall be SPACEs or digits. 
+
+SPACES shall mean that no defective cylinder has been 
+encountered during formatting. 
+
+The first two digits shall specify the cylinder number (01 to 
+Cylinder- Limit) of the first defective cylinder. 
+
+The third digit shall always be the digit 0. 
+
+
+
+8.6.4 Defective Cylinder Identification 2 (CP 11 to 13) 
+
+This field shall specify the cylinder number of the higher- 
+numbered defective cylinder, if two defective cylinders are pre- 
+sent on the volume. 
+
+The characters in this field shall be SPACEs or digits. 
+
+SPACEs shall mean that there are not two defective 
+cylinders on the volume (there may be one, if 
+specified at CP 7 to 9). 
+
+The first two digits shall specify the cylinder number (02 to 
+Cylinder-Limit plus 1) of the second defective cylinder. 
+
+The third digit shall always be the digit 0. 
+
+
+
+9 Initialization and processing of label fields 
+
+9.1 Volume Label (V0L1) 
+
+The Volume Label, once created, shall be preserved and shall 
+not be changed unless authorized by the owner of the volume, 
+and then only as prescribed by that owner. However, the con- 
+tents of the fields of the V0L1 label shall not be overridden. 
+
+The Volume Label shall be created when the volume is initial- 
+ized; the following fields shall be properly set during this 
+process : 
+
+a) Label Identifier (CP 1 to 3). 
+
+b) Label Number (CP 4). 
+
+c) Recording-Type Indicator (CP 72). 
+
+
+
+Table 8 — Contents of ERMAP Label 
+
+
+
+CP 
+
+
+Raid name 
+
+
+L 
+
+
+Content 
+
+
+1 to 5 
+
+
+Label Identifier 
+
+
+5 
+
+
+ERMAP (see 8.6.2) 
+
+
+6 
+
+
+(Reserved for future standardization) 
+
+
+1 
+
+
+SPACE (see 8.6.1) 
+
+
+7 to 9 
+
+
+Defective Cylinder Identification 1 
+
+
+3 
+
+
+SPACES or digits (see 8.6.3) 
+
+
+10 
+
+
+(Resented for future standardization) 
+
+
+1 
+
+
+SPACE (see 8.6.1) 
+
+
+11 to 13 
+
+
+Defective Cylinder Identification 2 
+
+
+3 
+
+
+SPACES or digits (see 8.6.4) 
+
+
+14 to 80 
+
+
+(Reserved for future starxjardization) 
+
+
+67 
+
+
+SPACES (see 8.6.1) 
+
+
+81 to 128 
+
+
+(Reserved for future standardization) 
+
+
+48 
+
+
+SPACES or NULs (see 8.6.1) 
+
+
+
+15 
+
+
+
+18:11406-1986 
+ISO 7665-1983 
+
+
+
+d) Physical Record Length Identifier (CP 76). 
+
+e) Sector Sequence Indicator (CP 77 to 78); 
+
+f) Label Standard Version (CP 80). 
+
+Entry of other fields may be done either with the same initializa- 
+tion process or with a subsequent process, under control of a 
+system operator and/or a special program. 
+
+The following fields shall be assigned by the installation or the 
+user of the installation : 
+
+a) Volume Identifier (CP 5 to 10). 
+
+b) Volume Accessibility Indicator (CP 11). 
+
+c) Owner Identifier (CP 38 to 51). 
+
+9.2 File Label (HDR1) 
+
+A File Label, once created, shall be preserved, and shall not be 
+changed unless authorized by the owner of the file, and then 
+only as prescribed by the owner. 
+
+During reading of the flexible disk cartridge, the contents of the 
+fields found in labels being processed may be overriden by 
+using new characters obtained from other sources. The new 
+characters may be supplied before the file is processed or after 
+the processing has begun. 
+
+During initialization, all sectors intended to contain File Labels 
+shall be deleted according to 10.2. 
+
+9.3 Error Map Label (ERMAP) 
+
+9.3.1 The ERMAP Label, once created, shall be preserved and 
+shall not be changed except in accordance with the re- 
+quirements of 9.3.2. 
+
+
+
+10.1.1 Data Mark 
+
+The format of the Data Mark depends on the mode of recording 
+that is used on the volume. 
+
+The Data Mark shall have the format specified in the data inter- 
+change standard to which the volume conforms. More than 
+one format of Data Mark may be present on the same volume. 
+
+Within each specified format of Data Mark one byte is specified 
+to be either: 
+
+a) a bit combinatkin which indicates that "the data is 
+valid, and the whole Data Field can be read", or 
+
+b) a bit combination which indicates that "the first byte of 
+the Data Field shall be interpreted according to ISO 7666". 
+
+The values klentified in a) are here called a valid-data byte, and 
+shall indicate that the data is valid and that the whole physical 
+record can be read. 
+
+The values identified in b) are here called a flag byte, and shall 
+indicate that the first byte of the physical record shall be in- 
+terpreted according to 10.2 and 10.3. 
+
+
+
+10.1.2 EDC 
+
+These two bytes shall be generated by hardware using the 
+bytes of the data block starting with the last byte of the Data 
+Mark and ending with the last byte of the physical record. 
+
+10.2 Deleted data 
+
+The data of a physteal record shall be considered deleted if the 
+last byte of the Data Mark is a fisg byte and the first byte of the 
+physical record contains the character D; the remaining bytes in 
+that physical record shall be ignored in interchange. The EDC 
+of such a data block shall be valid. This method of deletion shall 
+be applied only to a physk»l record that is within cylinder 00. 
+
+
+
+9.3.2 The ERMAP Label shall be created during initialization, 
+after fomfiatting. The ERMAP Label shall be initialized with the 
+Label Identifier (CP 1 to 5) set to ERMAP, followed either by 
+123 SPACES, or by 75 SPACES and 48 NULs. In addition, the 
+cylinder numbers of any defective cylinders (up to two) 
+detected during a formatting operation shall be recorded as 
+specified in 8.6. 
+
+
+
+10 Physical records 
+
+10.1 Structure of data blocks 
+
+In accordance with the data interchange standards listed in 
+table 3, the data btock of a sector comprises three ftekis: 
+
+a) Data Mark. 
+
+b) Data Field (see 4.13, physk»l record). 
+
+c) EDC (error detectkin characters). 
+
+
+
+10.3 Defective physical records 
+
+A physical record shall be considered defective if the last byte 
+of the Data Mark is a flag byte and if its first byte contains the 
+character F; the remaining bytes in that physical record shall be 
+ignored in interchange. 
+
+The EDC of a data block containing a defective physical record 
+may or may not be valid. 
+
+
+
+10.4 Handling of defective physical records 
+
+Distinction shall tie made between defective phystoal records 
+found when formatting a flexible disk cartrkige, and physical 
+records fouiKl defective during processing of data (vM'iting or 
+reading of a file), after the flexible disk was initialized. This 
+lntematk>nal Standard specifies the following options for use 
+while processing data. 
+
+If a defective physical record is encountered on cylinder 00, 
+furttwr processing shall be suspended. 
+
+
+
+16 
+
+
+
+18:11406-1986 
+ISO 7665-1963 
+
+
+
+When a defective physical record is encountered within a file, 
+one of the following actions may be taken : 
+
+a) continue processing using sequential relocation; 
+
+b) suspend further processing of the offending file on this 
+flexible disk cartridge. 
+
+10.4.1 Sequential relocation 
+
+If a defective physical record is encountered when creating a 
+file, a flag byte shall be entered as the last byte of the Data 
+Mark and the character F shall be entered as the first byte of the 
+physical record. The data intended for this physical record shall 
+then be written in the next non-defective physical record in 
+ascending phy»cal record address sequent^, if there are suffi- 
+cient unused physical records in the extent to enable the whole 
+of the block to be correctly written within the extent. If it is im- 
+possible to write a flag byte and F, such that they can be 
+recognized on subsequent reading, or if there are not sufficient 
+physical records to enable the bkick to be written within the 
+extent, further processing of this file on this flexible disk car- 
+tridge shall be suspended. 
+
+NOTE — If the flag byte and F cannot be recognized on subsequent 
+reading, the volume does not conform to the data interchange 
+standard. 
+
+If a flag byte and F are encountered when reading a flexible disk 
+cartridge, the desired data will be found in the next non- 
+defective physical recorc* as specified above. No further pro- 
+cessing of the defective physical record is required. 
+
+10.4.2 Suspension of processing of a file 
+
+If processing of a file is suspended during its creatkm because a 
+defective physical record has been encountered, the file shall 
+be terminated on this flexible disk cartridge with the last 
+physical record of the block preceding the block in which the 
+defective physical record occurred. 
+
+The bk>ck in which the defective physical record occurred shall 
+be included among the unused blocks that are indicated in the 
+File Header label. The file may then be continued on arrather 
+volume. 
+
+NOTE — The terminating physical record specified In this sub-clause is 
+the physical record preceding the defective physical record if the btock 
+length is less than or equal to the physical record ler)gth. 
+
+
+
+11 Levels of interchange 
+
+11.1 General 
+
+This Intemational Standanj specifies three levels of interchange 
+called "BASIC INTERCHANGE", "EXTENDED INTER- 
+CHANGE LEVEL 1", and "EXTENDED INTERCHANGE 
+LEVEL 2". 
+
+A single volume may contain files of different levels of inter- 
+change or files not conforming to any interchange level 
+specified in this International Standard. Therefore, a volume 
+may conform to more than one interchange level simultaneous- 
+ly, and shall always conform to the requirements of 11.5. 
+
+On a given flexible disk cartridge, all data shall be recorded ac- 
+cording to one of the data interchange standards listed in 
+table 3. 
+
+
+
+11.2 BASIC INTERCHANGE 
+
+A volume which confonns to the BASIC INTERCHANGE level 
+shall contain one or more BASIC INTERCHANGE files. 
+
+A BASIC INTERCHANGE fHe shall be specified by SPACE on 
+the Interchange Type fieki (HDR1, CP 44) and shall have the 
+following attributes: 
+
+a) The file name shall be of not more than 8 characters. 
+
+b) The block length shall not exceed the physical record 
+length. 
+
+c) All records shall be in fixed-length format. 
+
+d) All records shall have a length equal to the bk>ck length. 
+
+e) All records shall be unblocked. 
+
+If the volume conforms to ISO 7065, the parameter Data- 
+Physteal-Record-Length in table 2 shall take only the value 256, 
+aiKl the parameter Data-Sector-Limit shall take only the 
+value 26. 
+
+The fields shown in table 9, having assumed values in BASIC 
+INTERCHANGE, need not be checked. 
+
+
+
+Table 9 - Reitte with assumed values in BASIC INTERCHANGE 
+
+
+
+Fteid name 
+
+
+Assumed values | 
+
+
+Label 
+
+
+CP 
+
+
+Chsracters 
+
+
+Record Format 
+
+
+HDR1 
+
+
+40 
+
+
+SPACE or F 
+
+
+Reootd Length 
+
+
+HDR1 
+
+
+S4toS7 
+
+
+SPACE 
+
+
+Unused Positions Count 
+
+
+HDR1 
+
+
+58 to 62 
+
+
+SPACE 
+
+
+Record Attribute 
+
+
+HDR1 
+
+
+63 
+
+
+SPACE 
+
+
+
+17 
+
+
+
+IS: 11406-1 986 
+ISO 7665-1963 
+
+
+
+11.3 EXTENDED INTERCHANGE LEVEL 1 
+
+A volume which conforms to EXTENDED INTERCHANGE 
+LEVEL 1 shall contain one or more EXTENDED INTER- 
+CHANGE LEVEL 1 files. 
+
+An EXTENDED INTERCHANGE LEVEL 1 file shall be specified 
+by the digit 1 in the Interchange Type field (HDR1, CP 44) and 
+shall have the following attributes: 
+
+a) The file name shall be of not more than 8 characters. 
+
+b) The block length shall not exceed the value of the 
+parameter Track-Data-Capactty identified in table 2. 
+
+c) All records shall be in fixed-length format. 
+
+d) Records may be blocked or unblocked. 
+
+11.4 EXTENDED INTERCHANGE LEVEL 2 
+
+A volume whk:h conforms to EXTENDED INTERCHANGE 
+LEVEL 2 shall contain one or more EXTENDED INTER- 
+CHANGE LEVEL 2 files. 
+
+An EXTENDED INTERCHANGE LEVEL 2 file shall be specified 
+by the digit 2 in the Interchange Type fieM (HDR1, CP 44) and 
+shall have the following attributes: 
+
+a) The file name shall be of not more than 17 characters. 
+
+b) The block length shall not exceed the value of the 
+parameter Track-Data-Capacity kterrtified in table 2. 
+
+
+
+c) Records shall be in fixed-length, or in variable-length, or 
+in segmented, format. 
+
+d) Records shall have one of the following combinatbns 
+of format and attributes: 
+
+1) fixM-length, unblocked; 
+
+2) fixed-length, blocked; 
+
+3) variable-length, unblocked; 
+
+4) variable-length, blocked; 
+
+5) segmented, blocked. 
+
+1 1 .5 Files not conforming to specified interchange 
+levels 
+
+If a volume includes a file that does not conform to any of the 
+interchange levels specified in this Intematnnal Standard, the 
+identifying label of the file shall have contents that conform to 
+the requirements of 8.5 in the following fiekis: 
+
+a) Label Identifier (CP 1 to 3). 
+
+b) Label Number (CP 4). 
+
+c) Begin Extent (CP 29 to 33). 
+
+d) End Extent (CP 35 to 39). 
+
+e) Interchange Type (CP 44). 
+
+The contents of all ather fields are not specified. 
+
+If a volume includes such a' non-confonning file, character posi- 
+tkxis CP 14 to 128 in the ERMAP label may contain any 
+charactera. 
+
+
+
+If 
+
+
+
+18:11406-1986 
+ISO 7665-1983 
+
+Annex A 
+Examples 
+
+(This annex does not form an integral part of the standard.) 
+
+This annex describes examples of structuring data records and blocks on flexible disl< cartitridges and the fields of the HDR1 Label 
+defined for that purpose. 
+
+A.I Relevant fields for data format 
+
+The following fields in HDR1 are relevant for describing the data formats: 
+
+CP 23 to 27: Block Length 
+
+CP 40 : Record Format 
+
+CP 54 to 57: Record Length 
+
+CP 58 to 62: Unused Positions Count 
+
+CP 63 : Record Attribute 
+
+A.2 Specific formats 
+
+A.2.1 Unblocked records 
+
+These records are recorded as one and only one record per block, irrespective of the record length. 
+
+Example 1 
+
+A file containing fixed-length records of 120 characters is considered. 
+
+The label fields of interest will contain 
+
+
+
+Block Length 
+Record Format 
+Record Length 
+Unused Positions Count 
+Record Attribute 
+
+
+
+120 
+
+SPACE or F 
+SPACES or 120 
+SPACES 
+SPACE 
+
+
+
+For this file, each physical record would contain 120 data characters, followed by 136 padding characters (NULs). 
+
+
+
+RECORO 
+
+
+
+120 
+
+
+
+RECORD 
+
+
+
+120 
+
+
+
+BLOCK 
+
+
+
+NULs 
+
+
+
+BLOCK 
+
+
+
+NUU 
+
+
+
+120 
+
+
+
+136 
+
+
+
+120 
+
+
+
+136 
+
+
+
+PHYSICAL RECORD 
+
+
+
+256 
+
+
+
+PHYSICAL RECORD 
+
+
+
+2S6 
+
+
+
+IB 
+
+
+
+18; 11406-1986 
+ISO 766S-1983 
+
+
+
+Example 2 
+
+A file containing variable-length records with a maximum length of SOO characters is considered. 
+
+The label fields of interest will contain 
+
+
+
+Block Length 
+
+
+512 
+
+
+Record Format 
+
+
+V 
+
+
+Record Length 
+
+
+500 
+
+
+Unused Positions Count 
+
+
+SPACES 
+
+
+Record Attribute 
+
+
+SPACE 
+
+
+
+The record considered in the following example has a length of 450 characters. 
+
+
+
+446 
+
+
+
+R I 
+c I 
+w I 
+
+
+
+RECORD 
+
+
+
+I 
+
+
+
+460 
+
+
+
+62 
+
+
+
+BLOCK 
+
+
+
+NULs 
+
+
+
+512 
+
+
+
+PHYSICAL RECORD 
+
+
+
+PHYSICAL RECORD 
+
+
+
+256 
+
+
+
+266 
+
+
+
+I 
+
+
+
+For this file, every pair of physical records would contain a variable-length record, followed by padding characters (NULs) within the 
+block. 
+
+A.2^ Blocked records 
+
+These records are recorded as one or more record per block, depending on the record lengths. 
+
+Exwr^ihS 
+
+A ffle containing fixed-length records of 60 characters that are biodced into blocks with a length of 240 charactere Is considared. 
+
+The label flekls of interest will contain 
+
+
+
+Block Length 
+Record Format 
+Record Length 
+Unused Positkins Count 
+Record Attribute 
+
+
+
+240 
+
+SPACE or F 
+
+60 
+
+ZEROS or SPACES or 60, or 120 or 180 
+
+B 
+
+
+
+The contents of the Unused Positkms Count fieM depend on the number of records writtan in the last btock: 
+
+SPACES or ZEROS mean a completaly filled bkwk of four records. 
+
+60 means a partly fHled block with three records. 
+
+120 means a partly filled btock with two records. 
+
+180 means a partly filled btock with one record. 
+
+
+
+18: 11406-1 986 
+IS0 7t6S.19fl3 
+
+For this ffle, each physical record (except possibly the last one used) contains 240 data characters and 16 padding characters (NULsl. 
+
+
+
+REC. 
+
+
+
+REC. 
+
+
+
+REC. 
+
+
+
+REC. 
+
+
+
+60 I eO I 60 ■ 60 ! 
+I I I I 
+
+
+
+REC. 
+
+
+REC. 
+
+
+REC. 
+
+
+REC. 
+
+
+
+
+
+
+
+
+
+
+
+1 60 • 60 i 60 I 60 » 
+I I I i I 
+
+
+
+256 
+
+
+
+256 
+
+
+
+i 
+
+
+
+
+
+
+
+
+BLOCK 
+
+
+NULs 
+
+
+BLOCK 
+
+
+NULs 
+
+
+1 240 
+
+
+16 
+
+
+240 
+
+
+16 ! 
+
+j 
+
+
+PHYSICAL RECORD 
+
+
+PHYSICAL RECORD 
+
+
+
+Example 4 
+
+A file containing variable-length records with a maximum length of 120 characters that are blocked into blocks with a length of 240 
+characters is considered. The last two blocks of the file are shown in the diagram below. 
+
+The label fields of interest wilt contain 
+
+
+
+Block Length 
+
+
+240 
+
+
+Record Format 
+
+
+V 
+
+
+Record Length 
+
+
+120 
+
+
+Unused Positions Count 
+
+
+10 
+
+
+Record Attribute 
+
+
+B 
+
+
+
+The contents of the Unused Pos>t»ns Count field specify the number of unused character positions in the last block written; these 
+positions are filled with NULs. 
+
+For this file, each physical record contains variable-length records within blocks followed by padding characters (NULs) within the 
+block and between the end of the bh)ck and the end of the physical records. 
+
+
+
+4 1 66 
+
+
+1 
+4 i 
+
+
+76 
+
+
+1 
+4 1 81 
+
+
+
+
+4! 
+
+
+106 
+
+
+
+
+4 1 116 
+
+
+
+
+
+
+R i 
+
+C |REC. 
+
+
+R 1 
+
+C 
+
+W 
+
+
+REC. 
+
+
+C 1 REC. 
+W, 
+
+
+
+
+R i 
+c 1 
+W, 
+
+
+REC. 
+
+
+
+
+R ! 
+
+C REC. 
+
+W, 
+
+
+10 
+
+
+
+
+1 .0 
+
+
+
+
+80 
+
+
+86 
+
+
+S 
+
+
+
+
+110 
+
+
+120 
+
+
+
+
+
+
+
+
+1 
+BLOCK 
+
+■...„;,■ J 
+
+
+3 
+Z 
+
+
+NULs 
+
+
+BLOCK 1 3 
+
+1 ^ 
+
+
+NULs 
+
+
+1 
+
+1 
+
+■ 
+
+
+
+
+240 
+
+
+
+
+» 
+
+
+
+
+
+
+1 
+240 
+
+
+l"i 
+
+
+PHYSICAL RECORD 
+
+
+PHYSICAL RECORD 
+
+
+1 
+1 
+
+
+
+
+
+
+266 
+
+
+
+
+
+
+
+
+
+
+
+
+256 
+
+
+
+
+1 
+
+1 
+
+1 
+
+
+
+21 
+
+
+
+18 : 11406-1986 
+ISO 7665-1983 
+
+Examples 
+
+A file containing segmented records with a maximum length of 400 characters and recorded across blocks witn a length of 
+256 characters is considered. The last three blocks of the file are shown in the diagram betow. 
+
+The label fields of interest will contain 
+
+
+
+Block Length 
+
+
+256 
+
+
+Record Format 
+
+
+S 
+
+
+Record Length 
+
+
+400 
+
+
+Unused Positions Count 
+
+
+56 
+
+
+Record Attribute 
+
+
+B 
+
+
+
+RECORD 
+A 
+
+
+REC. 
+
+B 
+
+
+RECORD 
+C 
+
+
+
+
+
+
+1 
+
+
+
+I 
+
+I 
+
+JL 
+
+
+
+I 
+
+
+
+s I 
+
+L 
+
+
+
+w 
+
+
+
+390 
+
+
+
+251 
+
+
+
+SEGMENT 
+A1 
+
+
+
+256 
+
+
+
+5 
+
+
+
+139 
+
+
+
+I I 
+|5 
+
+
+
+SEG. 
+A2 
+
+
+
+I 
+
+I I 
+|S i 
+
+
+
+290 
+
+
+
+96 
+
+
+
+SEG. 
+B1 
+
+
+
+W 
+
+
+
+T 
+
+I SEG. 
+I CI 
+
+
+
+w 
+
+
+
+144 
+
+
+
+12 
+
+
+
+195 
+
+
+
+SEGMENT 
+C2 
+
+
+
+100 
+
+
+
+200 
+
+
+
+BLOCK 
+
+
+
+BLOCK 
+
+
+
+BLOCK 
+
+
+
+NULs 
+
+
+
+256 
+
+
+
+256 
+
+
+
+256 
+
+
+
+PHYSICAL RECORD 
+
+
+
+PHYSICAL RECORD 
+
+
+
+PHYSICAL RECORD 
+
+
+
+256 
+
+
+
+256 
+
+
+
+256 
+
+
+
+Exan^d 
+
+A file containing segmented records with a maximum lerigth of 8 000 characters and recorded across btocks with a length of 512 
+characters is considered. The last three btocks containing segments of the first record are shown in the diagram betow. The first ten 
+segments of the first record each have a length of 512 characters. 
+
+The label fields of interest will contain 
+
+
+
+Block Length 
+
+
+512 
+
+
+Record Format 
+
+
+S 
+
+
+Record Length 
+
+
+8000 
+
+
+Unused Positions Count 
+
+
+depends on contents of last btock in fHe 
+
+
+Record Attribute 
+
+
+B 
+
+
+
+18:11406-1986 
+ISO 7865-1913 
+
+
+
+RECORD A 
+
+
+
+RECORD B 
+
+
+
+5! 
+
+
+507 
+
+
+5 
+S 
+
+
+120 
+
+507 
+
+
+5 1 50 
+
+
+5 
+
+
+8000 
+452 
+
+
+S 
+C 
+W 1 
+
+
+SEGMENT 
+A9 
+
+
+S 
+
+C 
+
+w 
+
+
+SEGMENT 
+A10 
+
+
+S 1 
+
+^ I SEG. 
+
+
+S 
+C 
+W 
+
+
+SEGMENT 
+B1 
+
+
+1 
+
+
+512 
+
+
+
+
+512 
+
+
+55 
+
+
+
+
+457 
+
+
+
+BLOCK 
+
+
+BLOCK 
+
+
+BLOCK 
+
+
+512 
+
+
+512 
+
+
+512 ; 
+
+1 
+1 
+
+
+PHY. REC. 
+
+
+PHY. REC. 
+
+
+PHY. REC. 
+
+
+PHY. REC. 
+
+
+PHY. REC. 
+
+
+PHY. REC. 
+
+
+
+256 
+
+
+
+256 
+
+
+
+256 
+
+
+
+256 
+
+
+
+256 
+
+
+
+256 
+
+
+
+28 
+
+
+
+19:11406-1986 
+ISO 7668-1983 
+
+
+
+Annex 6 
+
+
+
+Data interchange standards and parameters 
+
+(This annex does not form an integral part of the starxlard.) 
+
+
+
+The values of the parameters listed in table 2 of this International Standard are quoted in table 10 for ttiose data interchange stan- 
+dards that are listed in table 3. If any of the quoted values differs from the value obtained from the data interchange standard, then the 
+latter value applies. 
+
+Table 10 — Parameter values 
+
+
+
+Parameter 
+
+
+Parameter values | 
+
+
+200 miTi cartridge 
+
+
+130 mm cartridge | 
+
+
+ISOS664 
+
+
+ECMA-69 
+
+
+ISO 7066 
+
+
+ISO 6686 
+
+
+ISO 7487 
+
+
+ECMA-78 
+
+
+Number-Of-Sides 
+
+
+1 
+
+
+2 
+
+
+2 
+
+
+1 
+
+
+2 
+
+
+2 
+
+
+Cv«nder-Umit 
+
+
+74 
+
+
+74 
+
+
+74 
+
+
+32 
+
+
+37 
+
+
+77 
+
+
+Index-Sector-Umit 
+
+
+26 
+
+
+26 
+
+
+26 
+
+
+16 
+
+
+16 
+
+
+16 
+
+
+Oata-Sector-Umit 
+
+
+26 
+
+
+26 
+
+
+26 IS 8 
+
+
+9 
+
+
+16 
+
+
+16 
+
+
+Data-Phytical-Record- Length 
+
+
+128 
+
+
+128 
+
+
+256 512 1 024 
+
+
+266 
+
+
+286 
+
+
+256 
+
+
+Track-Data-Capacity 
+
+
+3328 
+
+
+3326 
+
+
+6666 7680 8192 
+
+
+2304 
+
+
+4086 
+
+
+4086 
+
+
+
+NOTE - As shown in the above table, ISO 7066 specifies three altemative sets of values for the pair of parameters Data-Sactor-Limit and 
+Data-Physical- Record- Length. 
+
+
+
+M 
+
+
+
+PHINTED AT SrMRJ PRtNTTNO PBLE3^ DeUU (iNEHA) 
+
+
+

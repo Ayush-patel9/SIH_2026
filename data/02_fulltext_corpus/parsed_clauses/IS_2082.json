@@ -1,0 +1,74 @@
+{
+  "is_number": "IS IS_2082",
+  "standard_id": "IS IS_2082",
+  "title": "Indian Standard Specification / Test Method (IS IS_2082)",
+  "ia_identifier": "IS_2082",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard deals with the general, safety and performance requirements of electric storage water heaters for household and similar purposes and intended for heating water below boiling temperature, their rated voltage being not more than 250 V for single-phase appliances and 415 V for other appliances. Appliances not intended for normal household use but which nevertheless may be a source of danger to the public, such as appliances intended to be used by laymen in shops, in light industry and on farms, are within the scope of this standard. As far as is practicable, this standard deals with the common hazards presented by appliances that are encountered by all persons in and around the home. However, in general, it does not take into account, a) the use of appliances by young children or infirm persons without supervision; and b) playing with the appliance by young children. NOTES 1 Attention is drawn to the fact that, a) for appliances intended to be used at high altitudes, additional requirements may be necessary; and b) for appliances intended to be used in vehicles or on board ships or aircraft, additional requirements may be necessary; and",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 302",
+      "standard_id": "IS 302",
+      "title": "Indian Standard Specification / Test Method (IS 302)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60379",
+      "standard_id": "IS/IEC 60379",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60379)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 72",
+      "standard_id": "IS 72",
+      "title": "Indian Standard Specification / Test Method (IS 72)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "The following definitions and letter symbols",
+    "Rated Capacity",
+    "Symbols",
+    "Grade Tests",
+    "Grade Electric",
+    "50 K",
+    "5 K",
+    "45K",
+    "10 K",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_2082"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "rated voltage being not more than 250 V",
+      "temperature rise of 50 K",
+      "temperature rise of 45K"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 21434
+}

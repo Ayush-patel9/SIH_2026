@@ -1,0 +1,1419 @@
+**************** 
+
+
+
+*■ *Z**K 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+Jawaharlal Nehru 
+Step Out From the Old to the New 
+
+
+
+mrjsssss^^ft^: 
+
+
+
+
+,_A» 
+
+
+
+
+**************** 
+
+
+
+BLANK PAGE 
+
+
+
+<_<ii££ 
+
+
+
+
+
+UJ> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 14700 (Part 6/Sec 1) : 2008 
+IEC 61000-6-1 :2005 
+
+
+
+TFT 6 ^HI"MTTHeP 
+
+sfjtpti srRnfoi, vrnfom afk *tch sfreirfap ^rai^r % fa*? Trfcrcm 
+
+Indian Standard 
+ELECTROMAGNETIC COMPATIBILITY (EMC) 
+
+PART 6 GENERIC STANDARDS 
+Section 1 Immunity for Residential, Commercial and Light-Industrial Environments 
+
+
+
+ICS 33.100.20 
+
+
+
+© BIS 2008 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+May 2008 Price Group 6 
+
+
+
+Electromagnetic Compatibility Sectional Committee, L1TD 09 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard (Part 6/Sec 1) which is identical with IEC 61000-6-1 : 2005 'Electromagnetic 
+compatibility (EMC) — Part 6-1: Generic standards — Immunity for residential, commercial and light- 
+industrial environments' issued by the International Electrotechnical Commission (IEC) was adopted 
+by the Bureau of Indian Standards on the recommendation of the Electromagnetic Compatibility 
+Sectional Committee and approval of the Electronics and Information Technology Division Council. 
+
+The text of IEC Standard has been approved as suitable for publication as an Indian Standard without 
+deviations. Certain conventions are, however, not identical to those used in Indian Standards. 
+Attention is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should 
+be read as 'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker, while in Indian Standards, the current 
+practice is to use a point (.) as the decimal marker. 
+
+In this adopted standard, reference appears to certain International Standards for which Indian 
+Standards also exist. The corresponding Indian Standards, which are to be substituted in their 
+respective places, are listed below along with their degree of equivalence for the editions indicated: 
+
+
+
+International Standard 
+
+IEC 60050-161 : 1990 International 
+Electrotechnical Vocabulary (IEV) — 
+Chapter 161: Electromagnetic 
+
+compatibility 
+
+IEC 61000-4-2 : 2001 Electromagnetic 
+compatibility (EMC) — Part 4: Testing 
+and measurement techniques — Section 
+2: Electrostatic discharge immunity test 
+
+IEC 61000-4-3 : 2006 Electromagnetic 
+compatibility (EMC) — Part 4: Testing 
+and measurement techniques — Section 
+3: Radiated, radio-frequency, 
+
+electromagnetic field immunity test 
+
+IEC 61000-4-4 : 2004 Electromagnetic 
+compatibility (EMC) — Part 4: Testing 
+and measurement techniques — Section 
+4: Electrical fast transient/burst immunity 
+test 
+
+IEC 61000-4-8 : 2001 Electromagnetic 
+compatibility (EMC) — Part 4: Testing 
+and measurement techniques — Section 
+8 Power frequency magnetic field 
+immunity test 
+
+
+
+Corresponding Indian Standard 
+
+IS 1885 (Part 85) : 2003 Electrotechnical 
+vocabulary: Part 85 Electromagnetic 
+compatibility 
+
+IS 14700 (Part 4/Sec 2) : 2008 
+Electromagnetic compatibility (EMC): 
+Part 4 Testing and measurement 
+techniques, Section 2 Electrostatic 
+discharge immunity test 
+
+IS 14700 (Part 4/Sec 3) : 2008 
+Electromagnetic compatibility (EMC): 
+Part 4 Testing and measurement 
+techniques, Section 3 Radiated, radio- 
+frequency, electromagnetic field 
+immunity test 
+
+IS 14700 (Part 4/Sec 4) : 2008 
+Electromagnetic compatibility (EMC): 
+Part 4 Testing and measurement 
+techniques, Section 4 Electrical fast 
+transient/burst immunity test 
+
+IS 14700 (Part 4/Sec 8) : 2008 
+Electromagnetic compatibility (EMC): 
+Part 4 Testing and measurement 
+techniques, Section 8 Power frequency 
+magnetic field immunity test 
+
+
+
+Degree of 
+Equivalence 
+
+Identical 
+
+
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+{Continued on third cover) 
+
+
+
+IS 14700 (Part 6/Sec 1) : 2008 
+IEC 61000-6-1 :2005 
+
+INTRODUCTION 
+IEC 61000 is published in separate parts according to the following structure: 
+
+Part 1: General 
+
+General considerations {introduction, fundamental principles) 
+Definitions, terminology 
+
+Part 2: Environment 
+
+Description of the environment 
+Classification of the environment 
+Compatibility levels 
+
+Part 3: Limits 
+
+Emission limits 
+
+Immunity limits (insofar as they do not fall under the responsibility of the product 
+committees) 
+
+Part 4: Testing and measurement techniques 
+
+Measurement techniques 
+Testing techniques 
+
+Part 5: Installation and mitigation guidelines 
+
+Installation guidelines 
+Mitigation methods and devices 
+
+Part 6; Generic standards 
+
+Part 9: Miscellaneous 
+
+Each part is further subdivided into several parts, published either as International Standards 
+or as technical specifications or technical reports, some of which have already been 
+published as sections. Others will be published with the part number followed by a dash and 
+a second number identifying the subdivision (example: 61000-6-1). 
+
+
+
+IS 14700 (Part 6/Sec 1) : 2008 
+IEC 61000-6-1 :2005 
+
+Indian Standard 
+ELECTROMAGNETIC COMPATIBILITY (EMC) 
+
+PART 6 GENERIC STANDARDS 
+Section 1 Immunity for Residential, Commercial and Light-Industrial Environments 
+
+1 Scope and object 
+
+This part of IEC 61000 for EMC immunity requirements applies to electrical and electronic 
+apparatus intended for use in residential, commercial and light-industrial environments. 
+Immunity requirements in the frequency range Hz to 400 GHz are covered. No tests need to 
+be performed at frequencies where no requirements are specified. 
+
+This generic EMC immunity standard is applicable if no relevant dedicated product or 
+product-family EMC immunity standard exists. 
+
+This standard applies to apparatus intended to be directly connected to a low-voltage public 
+mains network or connected to a dedicated DC source which is intended to interface between 
+the apparatus and the low-voltage public mains network. This standard applies also to 
+apparatus which is battery operated or is powered by a non-public, but non-industrial, low- 
+voltage power distribution system if this apparatus is intended to be used in the locations 
+described below. 
+
+The environments encompassed by this standard are residential, commercial and light- 
+industrial locations, both indoor and outdoor. The following list, although not comprehensive, 
+gives an indication of locations which are included: 
+
+- residential properties, for example houses, apartments; 
+
+- retail outlets, for example shops, supermarkets; 
+
+- business premises, for example offices, banks; 
+
+- areas of public entertainment, for example cinemas, public bars, dance halls; 
+
+- outdoor locations, for example petrol stations, car parks, amusement and sports centres; 
+
+- light-industrial locations, for example workshops, laboratories, service centres. 
+
+Locations which are characterised by being supplied directly at low voltage from the public 
+mains network are considered to be residential, commercial or light-industrial. 
+
+The object of this standard is to define the immunity test requirements for apparatus" specified 
+in the scope in relation to continuous and transient, conducted and radiated disturbances 
+including electrostatic discharges. 
+
+The immunity requirements have been selected to ensure an adequate level of immunity for 
+apparatus at residential, commercial and light-industrial locations. The levels do not, 
+however, cover extreme cases, which may occur at any location, but with an extremely low 
+probability of occurrence. Not all disturbance phenomena have been included for testing 
+purposes in this standard but only those considered as relevant for the equipment covered by 
+this standard. These test requirements represent essential electromagnetic compatibility 
+immunity requirements. 
+
+NOTE 1 Information on other disturbance phenomena is given in IEC 61000-4-1. 
+
+
+
+IS 14700 (Part 6/Sec 1) : 2008 
+IEC 61000-6-1 :2005 
+
+Test requirements are specified for each port considered. 
+
+NOTE 2 Safety considerations are not covered by this standard. 
+
+NOTE 3 In special cases, situations will arise where the levels of disturbances may exceed the test levels 
+specified in this standard; for example where a hand-held transmitter is used in proximity to an apparatus. In these 
+instances, special mitigation measures may have to be employed. 
+
+2 Normative references 
+
+The following referenced documents are indispensable for the application of this document. 
+For dated references, only the edition cited applies. For undated references, the latest edition 
+of the referenced document (including any amendments) applies. 
+
+IEC 60050-161, International Electrotechnical Vocabulary (IEV) - Chapter 161: Electro- 
+magnetic compatibility 
+
+IEC 61000-4-2, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement 
+techniques - Section 2: Electrostatic discharge immunity test 
+
+IEC 61000-4-3, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement 
+techniques - Section 3: Radiated, radio-frequency, electromagnetic field immunity test 
+
+IEC 61000-4-4, Electromagnetic compatibility (EMC) - Part 4-4: Testing and measurement 
+techniques - Electrical fast transient/burst immunity test 
+
+IEC 61000-4-5, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement 
+techniques - Section 5: Surge immunity test . 
+
+IEC 61000-4-6, Electromagnetic compatibility (EMC) - Part 4-6: Testing and measurement 
+techniques - Section 6: Immunity to conducted disturbances, induced by radio-frequency 
+fields 
+
+IEC 61000-4-8, Electromagnetic compatibility (EMC) - Part 4: Testing and measurement 
+techniques - Section 8: Power frequency magnetic field immunity test 
+
+IEC 61000-4-11, Electromagnetic compatibility (EMC) - Part 4-11: Testing and measurement 
+techniques - Voltage dips, short interruptions and voltage variations immunity tests 
+
+CISPR 22, Information technology equipment - Radio disturbance characteristics - Limits 
+and methods of measurement 
+
+
+
+IS 14700 (Part 6/Sec 1) : 2008 
+IEC 61 060-6-1 : 2005 
+
+
+
+3 Terms and definitions 
+
+
+
+For the purposes of this document, the terms and definitions given in IEC 60050-161 as well 
+as the following definitions apply. 
+
+NOTE Additional definitions related to EMC and to relevant phenomena are given in other IEC and CISPR 
+publications. 
+
+3.1 
+port 
+
+particular interface of the specified apparatus with the external electromagnetic environment 
+(see Figure 1) 
+
+NOTE In some cases different ports may be combined. 
+
+
+
+Enclosure port 
+
+
+
+Signal port 
+
+
+
+Apparatus 
+
+
+
+AC power port 
+
+
+
+DC power port 
+
+
+
+Figure 1 - Examples of ports 
+
+3.2 
+enclosure port 
+
+physical boundary of the apparatus which electromagnetic fields may radiate through or 
+impinge on 
+
+3.3 
+cable port 
+
+port at which a conductor or a cable is connected to the apparatus 
+
+NOTE Examples are signal and power ports. 
+
+3.4 
+signal port 
+
+port at which a conductor or cable intended to carry signals is connected to the apparatus 
+
+NOTE Examples are analog inputs, outputs and control lines; data busses; communication networks etc. 
+
+3.5 
+power port 
+
+port at which a conductor or cable carrying the primary electrical power needed for the 
+operation (functioning) of an apparatus or associated apparatus is connected to the 
+apparatus 
+
+
+
+3.6 
+
+public mains network 
+
+electricity lines to which all categories of consumers have access and which are operated by 
+an electrical power supply and/or distribution organization for the purpose of supplying 
+electrical energy 
+
+
+
+IS 14700 (Part 6/Sec 1) : 2008 
+IEC 61000-6-1 : 2005 
+
+3.7 
+
+long distance lines 
+
+lines connected to a signal port and which inside a building are longer than 30 m, or which 
+leave the building (including lines of outdoor installations) 
+
+3.8 
+
+low voltage 
+
+voltage having a value below a conventionally adopted limit 
+
+(see IEV 151-15-03) 
+
+4 Performance criteria 
+
+The variety and the diversity of the apparatus within the scope of this standard makes it 
+difficult to define precise criteria for the evaluation of the immunity test results. 
+
+If, as a result of the application of the tests defined in this standard, the apparatus becomes 
+dangerous or unsafe, the apparatus shall be deemed to have failed the test. 
+
+A functional description and a definition of performance criteria, during or as a consequence 
+of the EMC testing, shall be provided by the manufacturer and noted in the test report, based 
+on one of the following criteria for each test as specified in Tables 1 to 4. 
+
+a) Performance criterion A: The apparatus shall continue to operate as intended during 
+and after the test. No degradation of performance or loss of function is allowed below a 
+performance level specified by the manufacturer, when the apparatus is used as 
+intended. The performance level may be replaced by a permissible loss of performance. If 
+the minimum performance level or the permissible performance loss is not specified by 
+the manufacturer, either of these may be derived from the product description and 
+documentation and what the user may reasonably expect from the apparatus if used as 
+intended. 
+
+b) Performance criterion B: The apparatus shall continue to operate as intended after the 
+test. No degradation of performance or loss of function is allowed below a performance 
+level specified by the manufacturer, when the apparatus is used as intended. The 
+performance level may be replaced by a permissible loss of performance. During the test, 
+degradation of performance is however allowed. No change of actual operating state or 
+stored data is allowed. If the minimum performance level or the permissible performance 
+loss is not specified by the manufacturer, either of these may be derived from the product 
+description and documentation and what the user may reasonably expect from the 
+apparatus if used as intended. 
+
+c) Performance criterion C: Temporary loss of function is allowed, provided the function is 
+self-recoverable or can be restored by the operation of the controls. 
+
+5 Conditions during testing 
+
+The equipment under test (EUT) shall be tested in the expected most susceptible operating 
+mode e.g. identified by performing limited pre-tests. This mode shall be consistent with 
+normal applications. The configuration of the test sample shall be varied to achieve maximum 
+susceptibility consistent with typical applications and installation practice. 
+
+
+
+IS 14700 (Part 6/Sec 1) : 2008 
+IEC 61000-6-1 : 2005 
+
+If the apparatus is part of a system, or can be connected to auxiliary apparatus, the 
+apparatus shall be tested while connected to the minimum representative configuration of 
+auxiliary apparatus necessary to exercise the ports in a similar manner to that described in 
+CISPR22. 
+
+In cases where a manufacturer's specification requires external protection devices or 
+measures which are clearly specified in the user's manual, the test requirements of this 
+standard shall be applied with the external protection devices or measures in place. 
+
+The configuration and mode of operation during the tests shall be precisely noted in the test 
+report. It is not always possible to test every function of the apparatus; in such cases the 
+most critical mode(s) of operation shall be selected. 
+
+If the apparatus has a large numbeF of similar ports or ports with many similar connections, a 
+sufficient number shall be selected to simulate actual operating conditions and to ensure that 
+all the different types of termination are covered. 
+
+The tests shall be carried out at one single set of parameters within the operating ranges of 
+temperature, humidity and atmospheric pressure specified for the product and at the rated 
+supply voltage, unless otherwise indicated in the basic standard. 
+
+6 Product documentation 
+
+If the manufacturer is using his own specification for an acceptable level of EMC performance 
+or degradation of EMC performance during or after the testing required by this standard, this 
+fact shall be stated in the user documentation. This specification itself shall be made 
+available upon request. 
+
+7 Applicability 
+
+The application of tests for evaluation of immunity depends on the particular apparatus, its 
+configuration, its ports, its technology and its operating conditions. 
+
+Tests shall be applied to the relevant ports of the apparatus according to Tables 1 to 4. Tests 
+shall only be carried out where the relevant ports exist. 
+
+It may be determined from consideration of the electrical characteristics and usage of a 
+particular apparatus that some of the tests are inappropriate and therefore unnecessary. In 
+such a case it is required that the decision and justification not to test shall be recorded in 
+the test report. 
+
+8 Immunity test requirements 
+
+The immunity test requirements for apparatus covered by this standard are given on a port by 
+port basis. 
+
+Tests shall be conducted in a well-defined and reproducible manner. 
+
+The tests shall be carried out individually as single tests in sequence. The tests may be 
+performed in any order. 
+
+
+
+IS 14700 (Part 6/Sec 1) : 2008 
+IEC 61000-6-1 :2005 
+
+
+
+The description of the test, relevant generator, appropriate methods, and the set-up to be 
+used are given in basic standards, which are referred to in the following tables. 
+
+The contents of these basic standards are not repeated here, however modifications or 
+additional information needed for the practical application of the tests are given in this 
+standard. 
+
+
+
+Table 1 - Immunity - Enclosure port 
+
+
+
+
+
+Environmental 
+phenomena 
+
+
+Test specifications 
+
+
+Units 
+
+
+Basic 
+standards 
+
+
+Remarks 
+
+
+Performance 
+criterion 
+
+
+1.1 
+
+
+Power-frequency magnetic 
+field 
+
+
+50, 60 
+3 
+
+
+Hz 
+
+A/m 
+
+
+IEC 61000-4-8 
+
+
+The test shall be carried out at the frequencies 
+appropriate to the power supply frequency. 
+Equipment intended for use in areas supplied 
+only at one of these frequencies need only be 
+tested at that frequency. a 
+
+
+Ab 
+
+
+1.2 
+
+
+Radio-frequency 
+electromagnetic field. 
+Amplitude modulated 
+
+
+80 to 1 000 
+
+3 
+
+80 
+
+
+MHz 
+V/m 
+% AM (1 kHz) 
+
+
+IEC 61000-4-3 c 
+
+
+The test level specified is the r.m.s. value of 
+the unmodulated carrier. 
+
+
+A 
+
+
+1.3 
+
+
+Radio-frequency 
+electromagnetic field. 
+Amplitude modulated 
+
+
+1,4 to 2,0 
+
+3 
+
+80 
+
+
+GHz 
+V/m 
+% AM (1 kHz) 
+
+
+IEC 61000-4-3 c 
+
+
+The test level specified is the r.m.s. value of 
+the unmodulated carrier. d 
+
+
+A 
+
+
+1.4 
+
+
+Radio-frequency 
+electromagnetic field. 
+Amplitude modulated 
+
+
+2,0 to 2,7 
+
+1 
+
+80 
+
+
+GHz 
+
+V/m 
+
+% AM (1 kHz) 
+
+
+IEC 61000-4-3 c 
+
+
+The test level specified is the r.m.s. value of 
+the unmodulated carrier. d 
+
+
+A 
+
+
+1.5 
+
+
+Electrostatic 
+discharge 
+
+
+Contact 
+discharge 
+
+
++4 (charge voltage) 
+
+
+kV 
+
+
+IEC 61000-4-2 
+
+
+See basic standard for applicability of contact 
+and/or air discharge test. 
+
+
+B 
+
+
+Air 
+discharge 
+
+
++8 (charge voltage) 
+
+
+kV 
+
+
+B 
+
+
+a Applicable only to apparatus containing devices susceptible to magnetic fields. 
+
+b For CRTs, the acceptable jitter depends upon the character size and is calculated for a test level of 1 A/m as follows: 
+
+y< (3C+1) 
+40 
+where jitter J and character size C are in millimetres. 
+
+As jitter is linearly proportional to the magnetic field strength, tests can be carried out at other test levels extrapolating the maximum jitter level appropriately. 
+c IEC 61000-4-20 may be used for small EUTs as defined in IEC 61000-4-20 subclause 6.1. 
+d The frequency range has been selected to cover the frequencies with the highest potential risk of a disturbance. 
+
+
+
+o 
+o 
+
+00 
+
+
+
+Table 2 - Immunity - Signal ports 
+
+
+
+
+
+Environmental 
+phenomena 
+
+
+Test specifications 
+
+
+Units 
+
+
+Basic 
+standards 
+
+
+Remarks 
+
+
+Performance 
+criterion 
+
+
+2.1 
+
+
+Radio-frequency common 
+mode 
+
+
+0,15 to 80 
+
+3 
+
+80 
+
+
+MHz 
+
+V 
+
+% AM (1 kHz) 
+
+
+IEC 61000-4-6 
+
+
+The test level specified is the r.m.s. value of 
+the unmodulated carrier a - b 
+
+
+A 
+
+
+2.2 
+
+
+Fast transients 
+
+
+±0,5 
+5/50 
+5 
+
+
+kV (open circuit test voltage) 
+
+Tr/Th ns 
+
+Repetition frequency kHz 
+
+
+IEC 61000-4-4 
+
+
+Capacitive clamp used b 
+
+
+B 
+
+
+a The test level can also be defined as the equivalent current fnto a 150 fl load. 
+
+b Applicable only to ports interfacing with cables whose total length according to the manufacturer's functional specification may exceed 3 m. 
+
+
+
+m w 
+
+O -L 
+
+§§ 
+
+if 
+
+en ° 
+
+
+
+ro 
+
+o 
+o 
+
+00 
+
+
+
+CO 
+
+
+
+Table 3 - Immunity - Input and output DC power ports 
+
+
+
+
+
+Environmental 
+phenomena 
+
+
+Test specifications 
+
+
+Units 
+
+
+Basic 
+standards 
+
+
+Remarks 
+
+
+Performance 
+criterion 
+
+
+3.1 
+
+
+Radio-frequency common 
+mode 
+
+
+0,15 to 80 
+
+3 
+
+80 
+
+
+MHz 
+
+V 
+
+% AM (1 kHz) 
+
+
+IEC 61000-4-6 
+
+
+The test level specified is the r.m.s. value of 
+the unmodulated carrier a . b 
+
+
+A 
+
+
+32 
+
+
+Surges 
+
+line-to-earth 
+
+line-to-line 
+
+
+1,2/50 (8/20) 
+
+±0,5 
+
+±0,5 
+
+
+Tr/Th us 
+
+kV (open circuit test voltage) 
+
+kV (open circuit test voltage) 
+
+
+IEC 61000-4-5 
+
+
+For application to input ports c 
+
+
+B 
+
+
+3.3 
+
+
+Fast transients 
+
+
+±0,5 
+5/50 
+5 
+
+
+kV (open circuit test 
+voltage) 
+
+Tr/Th ns 
+
+Repetition frequency kHz 
+
+
+IEC 61000-4-4 
+
+
+For application to input ports d 
+
+
+B 
+
+
+a Th« test level can also be defined as the equivalent current into a 150 Q load. 
+
+b Applicable only to ports interfacing with cables whose total length according to the manufacturers functional specification may exceed 3 m. 
+
+c Not applicable to input ports intended for connection to a battery or a rechargeable battery which must be removed or disconnected from the apparatus for recharging. Apparatus 
+with a DC power input port intended for use with an AC - DC power adaptor shall be tested on the AC power input of the AC- DC power adaptor specified by the manufacturer or, 
+where none is so specified, using a typical AC - DC power adaptor. DC ports which are not intended to be connected to a DC distribution network are treated as signal ports. 
+
+d Not applicable to input ports intended for connection to a battery or a rechargeable battery which must be removed or disconnected from the apparatus for recharging. Apparatus 
+with a DC power input port intended for use with an AC - DC power adaptor shall be tested on the AC power input of the AC- DC power adaptor specified by the manufacturer or, 
+where none is so specified, using a typical AC - DC power adaptor. The test is applicable to DC power input ports intended to be connected permanently to cables longer than 3 m. 
+
+
+
+m </> 
+o -* 
+
+§l 
+
+
+
+IO 
+
+© 
+
+
+
+Table 4 - Immunity - Input and output AC power ports 
+
+
+
+
+
+Environmental 
+phenomena 
+
+
+Test specifications 
+
+
+Units 
+
+
+Basic 
+standards 
+
+
+Remarks 
+
+
+Performance 
+criterion 
+
+
+4.1 
+
+
+Radio-frequency 
+common mode 
+
+
+0,15 to 80 
+
+3 
+
+80 
+
+
+MHz 
+
+V 
+
+% AM (1 kHz) 
+
+
+IEC 61000-4-6 
+
+
+The test level specified is the r.m.s, value Of 
+the unmodulated carrier 3 
+
+
+A 
+
+
+4.2 
+
+
+Voltage dips 
+
+
+
+
+0,5 
+
+
+% residual voltage 
+cycle 
+
+
+IEC 61000-4-11 
+
+
+Voltage shift at zero crossing b 
+
+
+B 
+
+
+
+1 
+
+
+% residual voltage 
+cycle 
+
+
+B 
+
+
+70 
+
+25/30 at 50/60Hz 
+
+
+% residual voltage 
+cycle 
+
+
+C 
+
+
+4.3 
+
+
+Voltage 
+interruptions 
+
+
+
+
+250/300 at 50/60Hz 
+
+
+% residual voltage 
+cycle 
+
+
+IEC 61000-4-11 
+
+
+Voltage shift at zero crossing b 
+
+
+C 
+
+
+4.4 
+
+
+Surges 
+
+line-to-earth 
+
+line-to-line 
+
+
+1,2/50 (8/20) 
+
+±2 
+
+±1 
+
+
+Tr/Th ps 
+
+kV (open circuit test voltage) 
+
+kV (open circuit test 
+voltage) 
+
+
+IEC 61000-4-5 
+
+
+
+
+B 
+
+
+4.5 
+
+
+Fast transients 
+
+
+±1 
+
+5/50 
+
+5 
+
+
+kV (open circuit test voltage) 
+
+Tr/Th ns 
+
+Repetition frequency kHz 
+
+
+IEC 61000-4-4 
+
+
+
+
+B 
+
+
+a The test level can also be defined as the equivalent current into a 150 Q load. 
+b Applicable only to input ports. 
+
+
+
+IS 14700 (Part 6/Sec 1) : 2008 
+IEC 61000-6-1 : 2005 
+
+
+
+Bibliography 
+
+IEC 61000-4-1, Electromagnetic compatibility (EMC) - Part 4-1: Testing and measurement 
+techniques - Overview of IEC 61000-4 series 
+
+IEC 61000-4-20, Electromagnetic compatibility (EMC) - Part 4-20: Testing and measurement 
+techniques - Emission and immunity testing in transverse electromagnetic (TEM) waveguides 
+
+
+
+11 
+
+
+
+(Continued from second cover) 
+
+The technical committee responsible for the preparation of this standard has reviewed the provisions 
+of the following International Standards referred in this adopted standard and has decided that they 
+are acceptable for use in conjunction with this standard: 
+
+
+
+International Standard 
+IEC 61000-4-5: 2005 
+
+IEC 61000-4-6: 2006 
+IEC 61000-4-11 :2004 
+CISPR 22 : 2006 
+
+
+
+Title 
+
+Electromagnetic compatibility (EMC) — Part 4: Testing and measurement 
+techniques — Section 5: Surge immunity test 
+
+Electromagnetic compatibility (EMC) — Part 4: Testing and measurement 
+techniques — Section 6: Immunity to conducted disturbances, induced by 
+radio-frequency fields 
+
+Electromagnetic compatibility (EMC) — Part 4: Testing and measurement 
+techniques — Section 1 1 : Voltage dips, short interruptions and voltage 
+variations immunity test 
+
+Information technology equipment — Radio disturbance characteristics 
+— Limits and methods of measurement 
+
+
+
+Only the English text of the International Standard has been retained while adopting it as an Indian 
+Standard, and as such the page numbers given here are not the same as in the IEC Publication. 
+
+
+
+Bureau of Indian Standards 
+
+BIS is'a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods 
+and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any 
+form without the prior permission in writing of BIS. This does not preclude the free use, in course of 
+implementing the standard, of necessary details, such as symbols and sizes, type or grade 
+designations. Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are 
+also reviewed periodically; a standard along with amendments is reaffirmed when such review 
+indicates that no changes are needed; if the review indicates that changes- are needed, it is taken up 
+for revision. Users of Indian Standards should ascertain that they are in possession of the latest 
+amendments or edition by referring to the latest issue of 'BIS Catalogue' and 'Standards: Monthly 
+Additions'. 
+
+This Indian Standard has been developed from Doc: No. LITD 09 (2031). 
+
+Amendments Issued Since Publication 
+
+
+
+Amendment No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110 002 
+
+Telephones: 2323 01 31 , 2323 3375, 2323 9402 Website: www.bis.org.in 
+
+
+
+Regional Offices: 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110 002 
+
+Eastern : 1/14, C.I.T. Scheme VII M, V.I. P. Road, Kankurgachi 
+KOLKATA 700 054 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160 022 
+Southern : C.I.T. Campus, IV Cross Road, CHENNAI 600 113 
+
+
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400 093 
+
+
+
+{ 
+
+
+
+{ 
+
+
+
+{ 
+
+
+
+Telephones 
+
+2323 7617 
+2323 3841 
+
+
+
+2337 8499, 2337 8561 
+2337 8626,2337 9120 
+
+( 260 3843 
+1 260 9285 
+
+2254 1216,2254 1442 
+2254 2519,2254 2315 
+
+
+
+| 2832 9295, 2832 7858 
+I 2832 7891 , 2832 7892 
+
+
+
+Branches: AHMEDABAD. BANGALORE. BHOPAL BHUBANESHWAR. COIMBATORE. FARIDABAD. 
+GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+PARWANOO. PATNA. PUNE. RAJKOT.^HIRUVANANTHAPURAM. VISAKHAPATNAM. 
+
+
+
+Printed at Prabhat Offset Press. New Oelhi-2 
+
+
+

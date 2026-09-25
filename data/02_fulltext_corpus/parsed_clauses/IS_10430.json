@@ -1,0 +1,65 @@
+{
+  "is_number": "IS IS_10430",
+  "standard_id": "IS IS_10430",
+  "title": "Indian Standard Specification / Test Method (IS IS_10430)",
+  "ia_identifier": "IS_10430",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard lays down design criteria tor lined canals and presents guidelines for selection of type of lining.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 4558",
+      "standard_id": "IS 4558:1995",
+      "title": "Under-drainage of lined canals - Code of practice",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7894",
+      "standard_id": "IS 7894:1975",
+      "title": "Code of practice for stability analysis of earth dams",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9451",
+      "standard_id": "IS 9451:2022",
+      "title": "Guidelines for Lining of Canals in Expansive Soils",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade rrocement",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10430"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "abrasion. N"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 35563
+}

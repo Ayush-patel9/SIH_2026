@@ -1,0 +1,60 @@
+{
+  "is_number": "IS IS_11028",
+  "standard_id": "IS IS_11028",
+  "title": "Indian Standard Specification / Test Method (IS IS_11028)",
+  "ia_identifier": "IS_11028",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11028) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11028).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 5429",
+      "standard_id": "IS 5429:2013",
+      "title": "Dimensions for Steel Tubes for Automotive Purposes",
+      "division_code": "MTD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1068",
+      "standard_id": "IS 1068:1993",
+      "title": "Eletroplated coatings of nickle plus chromium and copper plus nickel plus chromium",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2600",
+      "standard_id": "IS 2600",
+      "title": "Indian Standard Specification / Test Method (IS 2600)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11028"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Marking — Eaeh handle bar shall be marked with the manufacturer's identification marlc."
+    ]
+  },
+  "total_chars_parsed": 2137
+}

@@ -1,0 +1,1554 @@
+*••••••••••*•••• 
+
+
+-k  t^^ 
+
+
+Disclosure  to  Promote  the  Right  To  Information 
+
+Whereas  the  Parliament  of  India  has  set  out  to  provide  a  practical  regime  of  right  to 
+information  for  citizens  to  secure  access  to  information  under  the  control  of  public  authorities, 
+in  order  to  promote  transparency  and  accountability  in  the  working  of  every  public  authority, 
+and  whereas  the  attached  publication  of  the  Bureau  of  Indian  Standards  is  of  particular  interest 
+to  the  public,  particularly  disadvantaged  communities  and  those  engaged  in  the  pursuit  of 
+education  and  knowledge,  the  attached  public  safety  standard  is  made  available  to  promote  the 
+timely  dissemination  of  this  information  in  an  accurate  manner  to  the  public. 
+
+
+Mazdoor  Kisan  Shakti  Sangathan 
+"The  Right  to  Information,  The  Right  to  Live" 
+
+
+IS  14776-1  (2000)  :  Industrial  Automation  -  Shop  Floor 
+Production,  Part  1:  Reference  Model  for  Standardization  and 
+a  Methodology  for  Identification  of  Requirements  [PGD  18: 
+Industrial  and  Production  Automation  Systems  and  Robotics] 
+
+
+Jawaharlal  Nehru 
+"Step  Out  From  the  Old  to  the  New" 
+
+
+gyia^/f/raa^^^:^^ 
+
+
+S?St^  *  I  |>&B5^«%^Na«^ 
+
+
+\\V^:5^< 
+
+
+Satyanarayan  Gangaram  Pitroda 
+Invent  a  New  India  Using  Knowledge 
+
+
+Bhartrhari — Nitisatakam 
+Knowledge  is  such  a  treasure  which  cannot  be  stolen" 
+
+
+ic 
+
+
+A- 
+
+
+A 
+
+
+BLANK  PAGE 
+
+
+^<*i^ 
+
+
+PROTECTED  BY  COPYRIGHT 
+
+
+IS  14776  (Parti):  2000 
+ISO/TR  10314-1  :1990 
+
+(  Reaffirmed  2005 ) 
+
+nmkwm 
+
+Indian  Standard 
+
+INDUSTRIAL  AUTOMATION  —  SHOP  FLOOR 
+
+PRODUCTION 
+
+PART  1  REFERENCE  MODEL  FOR  STANDARDIZATION  AND  A 
+
+METHODOLOGY  FOR  IDENTIFICATION 
+
+OF  REQUIREMENTS 
+
+
+ICS    25.040.40 
+
+
+©  BIS  2000 
+
+BUREAU  OF  INDIAN  STANDARDS 
+
+MANAK    BHAVAN,  9  BAHADUR  SHAH  ZAFAR  MARG 
+NEW  DELHI  110002 
+
+March  2000  Price  Group  6 
+
+
+Industrial  and  Production  Automation  Systems  and  Robotics  Sectional  Committee,  BP/PE  18 
+
+
+NATIONAL  FOREWORD 
+
+This  Indian  Standard  which  is  identical  with  ISO/TR  10314-1  :  1990  Industrial  automation  —  Shop  floor 
+production  —  Part  1 :  Reference  model  for  standardization  and  a  methodology  for  identification  of  requirements' 
+issued  by  the  International  Organization  for  Standardization  (ISO)  was  adopted  by  the  Bureau  of  Indian 
+Standards  on  the  recommendations  of  the  Industrial  and  Production  Automation  Systems  and  Robotics  Sectional 
+Committee  and  approval  of  the  Basic  and  Production  Engineering  Division  Council. 
+
+This  standard  does  not  include  the  development  of  individual  standards  themselves  but  rather  the  establishment 
+of  common  frame  work,  in  terms  of  a  reference  model  to  assist  future  standards  developments. 
+
+The  text  of  the  ISO  standard  has  been  approved  as  suitable  for  publication  as  Indian  Standard  without  deviation 
+except  the  word  'report'.  Wherever  the  word  'report'  appears  referring  to  this  standard,  it  should  read  as  'Indian 
+
+Standard'. 
+
+
+IS    1477^  (Parti)  1 2000 
+KO/TR    10314-1:1990 
+
+
+Indian  Standard 
+
+
+INDUSTRIAL  AUTOMATION  —  SHOP  FLOOR 
+
+PRODUCTION 
+
+PART  1  REFERENCE  MODEL  FOR  STANDARDIZATION  AND  A 
+
+METHODOLOGY  FOR  IDENTIFICATION 
+
+OF  REQUIREMENTS 
+
+
+1    Scope  and  Field  of  Application 
+
+
+1.1   Scope 
+
+This  report  presents  and  describes  a  means  of  identifying  where  new  or 
+revised  manufacturing  standards  may  be  required.   It  establishes  a 
+Reference  Model  for  Shop  Floor  Production,  which  is  then  used  as  the 
+basis  for  developing  a  methodology  for  the  identification  and  extraction  of 
+areas  for  standards.   The  assumptions  used  to  develop  the  Reference 
+Model  are: 
+
+•  the  field  of  interest  is  the  manufacture  of  discrete  parts  and  in 
+particular  the  production  {physical  realisation)  of  these  parts, 
+
+•  the  Reference  Model  needs  to  be  open-ended  so  that  it  can  be 
+revised  to  incorporate  new  technologies,  and 
+
+•  the  Reference  Model  needs  to  be  generic  in  nature  so  that  it  can 
+be  applied  to  a  wide  range  of  applications  and  is  not  directed  to  a 
+particular  organisational  structure  of  manufacturing. 
+
+It  is  emphasised  that  the  Reference  Model: 
+
+•  provides  a  conceptual  framework  for  understanding 
+manufacturing  and 
+
+•  can  be  used  to  identify  areas  of  standards  necessary  to  integrate 
+manufacturing  systems. 
+
+The  Reference  Model  does  not  however  provide  a  methodology  for 
+designing,  implementing,  operating  and  maintaining  any  existing  or 
+future  manufacturing  automation  system.  There  may  be  a  need  to  develop 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+otlier  Reference  Models  which  can  be  used  for  tiiose  purposes,  perhaps 
+based  on  the  work  described  in  this  report.    The  development  of  such 
+models  is  beyond  the  scope  of  this  technical  report. 
+
+
+1.2  Field  of  Application 
+
+The  Reference  Model  described  in  this  report  is  intended  for  use  in  the 
+identification  of  standards  within  the  Shop  Floor  Production  area  of 
+manufacturing. 
+
+Manufacturing  is  perceived  to  be  all  inclusive,  from  customer  order 
+through  to  delivery  of  the  product.    Twelve  manufacturing  functions  have 
+been  identified  as  being  a  part  of  manufacturing.   The  following  is  a  list  of 
+these  twelve  functions,  together  with  illustrative,  non-exhaustive 
+activities  typically  related  to  these  functions: 
+
+1)  Corporate  management,  e.g. 
+
+•  Direction  of  enterprise 
+
+•  Strategic  planning 
+
+•  Feasibility  study  for  investment 
+
+•  Risk  management 
+
+2)  Finance,  e.g. 
+
+•  Financial  planning 
+
+•  Corporate  budgeting 
+
+•  Financial  accounting 
+
+3)  Marketing  and  sales,  e.g. 
+
+•  Marketing  research 
+
+•  Advertising 
+
+•  Sales  forecasting 
+
+•  Sales  scheduling 
+
+•  Pricing 
+
+•  Sales  (order,  delivery,  invoice) 
+
+•  Product  service 
+
+4)  Research  and  Development,  e.g. 
+
+•  R&D  planning 
+
+•  Basic  research 
+
+•  Applied  research 
+
+•  Product  development 
+
+•  Manufacturing  development 
+
+
+IS    1477«  (Parti):  2000 
+iSO/TR    i03i4-iil990 
+
+
+5)    Product  design  and  Production  engineering,  e.g. 
+
+•  Define  product  specifications 
+
+•  Preliminary  design  and  testing 
+
+•  Detailed  design 
+
+•  Design  analysis,  test,  evaluation 
+
+•  Revise  design 
+
+•  Release  design  for  production  planning 
+
+•  Project  management 
+
+•  Process  planning 
+
+•  Programming  of  numerical  control  and  programmable  control 
+
+•  Tooling 
+
+•  Plant  engineering 
+
+•  Bill  of  material 
+
+•  Quality  assurance  planning  of  production 
+
+•  Production  configuration 
+
+6)  Production  management  e.g. 
+
+•  Production  scheduling 
+
+•  Product  and  Inventory  control 
+
+•  Production  monitoring 
+
+•  General  maintenance  request 
+
+•  Quality  control 
+
+•  Cost  control  and  cost  management 
+
+7)  Procurement  e.g. 
+
+•  Vendor  performance 
+
+•  Purchasing 
+
+•  Receiving 
+
+•  General  stores 
+
+8)  Shipping,  e.g. 
+
+•  Product  storage 
+
+•  Distribution 
+
+9)  Waste  material  treatment,  e.g. 
+
+•  Waste  material  processing 
+
+•  Waste  material  storage 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314.1:1990 
+
+
+10)  Resource  management,  e.g. 
+
+•  Facility  management 
+
+•  Tool  control 
+
+•  Energy  management 
+Time  and  Attendance 
+Facility  security 
+Health  and  Safety 
+Environment  control 
+
+
+• 
+
+
+11)  Maintenance  management,  e.g. 
+
+•  Preventive  maintenance 
+
+•  Corrective  maintenance 
+
+12)  Shop  Floor  Production,  e.g. 
+
+•  Material  store 
+
+•  Transport  material 
+
+•  Transform  material 
+
+•  Incoming  inspection 
+
+•  In-process  gauging  and  testing 
+
+•  In-process  audit 
+
+•  Product  audit 
+
+As  shown  in  Figure  1  and  described  in  the  definitions  which  follow  in 
+Section  2.2,  these  functions  tend  to  be  grouped  under  three  main 
+headings.    Items  I)  through  to  4)  are  functions  of  the  Enterprise 
+concerned  with  strategic  long  term  planning  activities.    Items  5)  through 
+to  11)  are  functions  of  the  Facility,  concerned  with  tactical  planning  of 
+the  production  process,  resource  management  and  product  modelling. 
+The  final  item,  12)    Shop  Floor  Production,  is  a  function  which  involves 
+the  activities  that  actually  create  a  physical  product. 
+
+The  twelve  manufacturing  functions  are  interrelated  and  a  single 
+Reference  Model  covering  all  twelve  functions  would  be  desirable.    After 
+careful  study  of  existing  work,  it  was  decided  that  the  development  of  a 
+single  Reference  Model  covering  every  function  of  manufacturing  was  not 
+manageable  at  this  time. 
+
+The  area  of  Shop  Floor  Production  on  the  other  hand  has  shown  an 
+urgent  need  for  and  a  willingness  to  adopt  standards.    The  Reference 
+Model  described  in  this  technical  report  is  intended  to  guide  the 
+planning  for  and  the  development  of  standards  to  assist  the  integration  of 
+an  automated  Shop  Floor  Production  system.    It  is  recognised  that  the 
+Shop  Floor  Production  function  will  be  required  to  interface  with 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+functions  (and  their  activities)  outside  the  scope  of  Shop  Floor 
+Production  itself.    Figure  2  is  a  clarification  of  how  major  functions  of 
+manufacturing  might  be  interrelated. 
+
+In  the  future.  Reference  Models  for  manufacturing  that  include 
+Enterprise  and  Facility  functions  may  be  developed.    Any  future  modelling 
+work  in  the  area  of  manufacturing  should  take  account  of  the  Reference 
+Model  far  Shop  Floor  Production  presented  here  and  every  effort  should 
+be  made  to  ensure  compatibility  between  the  Reference  Model  for  Shop 
+Floor  Production  and  emy  Facility  or  Enterprise  Reference  Models  that 
+may  be  developed. 
+
+
+2    Terminology 
+
+
+2.1   General 
+
+
+A  number  of  terms  are  described  in  this  chapter  to  provide  a  better 
+understanding  by  the  user  of  this  report.    These  descriptions  are 
+intended  to  be  used  solely  in  the  context  of  this  report  and  are  not 
+intended  to  be  general  definitions. 
+
+
+2.2  Specific  terms 
+
+2.2.1  Reference  Model:    a  means  of  describing  the  activities  and 
+components  of  manufacturing  through  the  use  of  figure  (s)  and 
+text. 
+
+2.2.2  Discrete  Parts  Manufacturing:    systems  of  functions  for 
+producing  products  or  parts  consisting  of  discrete  elements. 
+
+2.2.3  Function:    a  grouping  of  several  activities  performed  to  realise 
+some  manufacturing  objective. 
+
+2.2.4  Activity:    a  manufacturing  process  which  causes  some  change  in 
+inputs. 
+
+2.2.5  Level:    a  collection  of  activities  which  form  a  degree  of 
+subordination  in  a  hierarchical  arrangement. 
+
+
+s 
+
+
+IS    14776  (Parti):  2000 
+BO/TR    10314-1:1990 
+
+
+2.2.6  Enterprise:   an  entire  manufacturing  unit  consisting  of  a 
+corporate  component  and  one  or  more  Facility  components. 
+The  corporate  component  is  responsible  for  interactions 
+between  the  external  environment  of  the  Enterprise  and  the 
+Facility  or  Facilities,  and  also  for  the  control  of  functions  within 
+the  Facility  or  Facilities. 
+
+2.2.7  Facility:    a  component  of  an  Enterprise  which  excludes 
+corporate  functions.    The  Facility  is  responsible  for  providing 
+support  and  direction  for  Enterprise  and  Shop  Floor 
+Production  activities. 
+
+2.2.8  Shop  Floor  Production:    a  component  of  a  Facility  whose 
+function  is  directly  related  to  the  production  of  discrete  parts 
+and/  or  products. 
+
+2.2.9  Shop  Floor  Production  Model:    the  basic  model  used  to 
+describe  the  structure  within  Shop  Floor  Production. 
+
+2.2.10  Interaction:    an  interrelationship  or  interconnection  between 
+the  Subjects  within  Shop  Floor  Production,  and  also  between 
+the  Subjects  and  Actions  within  or  external  to  Shop  Floor 
+Production. 
+
+2.2.11  Generic  Activity  Model:    a  generic  model  used  to  describe  the 
+execution  of  activities  within  Shop  Floor  Production  and  their 
+interactions  with  functions  interfacing  to  Shop  Floor 
+Production, 
+
+
+3   Abbreviations 
+
+
+Several  abbreviations  are  used  in  this  report: 
+
+•  GAM  Generic  Activity  Model 
+
+•  SFPM  Shop  Floor  Production  Model 
+
+•  ST  Store 
+
+•  TF  Transform 
+
+•  TP  Transport 
+
+•  VE  Verify 
+
+
+IS    1477^  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+4    Objectives  for  Mantifacturing  Standardisation 
+
+4.1   General  information 
+
+4.1.1  The  objectives  of  standardisation 
+
+ISO  has  pointed  out  the  objectives  of  standardisation  as  follows: 
+
+•  mutual  understanding 
+
+•  health,  safety,  protection  of  environment 
+
+•  interface,  interchangeability 
+
+•  fitness  for  purpose 
+
+•  variety  control. 
+
+4.1.2  The  concept  of  Standards  Viewpoints 
+
+The  process  of  standardisation  for  manufacturing  is  to  define  areas  of 
+standards,  to  select  aspects  to  be  standardised  and  to  define  standards 
+based  on  the  state  of  the  art.    In  this  report,  the  following  Standards 
+Viewpoints  (defined  in  4.2)  have  been  selected  to  identify  the  needs  of 
+standards  in  the  manufacturing  field  derived  from  the  guidance  of  the 
+above  ISO  objectives: 
+
+Safety 
+
+Environment 
+
+Compatibility 
+
+Performance 
+
+Operability 
+
+Maintainability 
+
+Reliability 
+
+Qualifications 
+
+Description 
+
+These  nine  Standards  Viewpoints,  together  with  the  Reference  Model, 
+are  used  in  the  proposed  methodology  for  extracting  areas  of 
+standards. 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+4.2  Standards  Viewpoints  for  Manufacturing 
+
+Nine  Standards  Viewpoints  for  manufacturing  are  defined  as  follows 
+and  are  to  be  applied  to  any  area  where  standards  may  apply: 
+
+4.2. 1  Safety  Viewpoint 
+
+Safety  is  concerned  with  the  effect  on  safety  that  normal  and 
+erroneous  operation  df  the  manufacturing  facility  would  have  on  the 
+operating  personnel,  the  equipment  and  the  work  in  progress.    It  also 
+covers  the  need  for  traceability,  that  is  the  ability  to  trace  the 
+sequence  of  manufacturing  processes  and  components  used  in 
+manufacture.    Hence  defme  design  and  operation  standards  to  ensure 
+safe  operation. 
+
+4.2.2  Environment  Viewpoint 
+
+Environment  is  concerned  with  the  effect  that  operating  entities  can 
+have  on  the  physical  environment  both  during  the  manufacturing 
+activity  itself  and  as  a  by-product  of  that  activity.   In  each  case  both 
+normal  and  failure  modes  should  be  considered.    Hence  identify 
+standards  which  define  each  effect,  how  it  is  to  be  measured  and 
+norms  for  acceptable  operation. 
+
+4.2.3  Compatibility  Viewpoint 
+
+Compatibility  is  concerned  with  interchangeability  and 
+interdependence,  and  addresses  issues  related  to  interfacing.  Hence 
+define  design  and  operation  standards  to  ensure  compatibility. 
+
+4.2.4  Performance  Viewpoint 
+
+Performance  is  concerned  with  the  performance  aspects  which  can  be 
+categorised  in  terms  of  speed,  quality  of  finish  (output),  resources 
+consumed  etc.    Hence  identify  standards  to  define  these  qualities  and 
+appropriate  specifications. 
+
+
+8 
+
+
+IS    1477^  (Parti):  2000 
+ISOyXR    10314-1:1990 
+
+
+4.2.5  Operability  Viewpoint 
+
+Operabllity  is  concerned  witJi  all  aspects  of  human  interactions  with 
+the  manufacturing  environment.    It  is  essentially  concerned  with  easy 
+operation  and  the  avoidance  of  improper  operation  under  both  normal 
+and  erroneous  conditions.    Hence  define  design  and  operation 
+standards  to  ensure  easy  and  correct  operation. 
+
+4.2.6  Maintainability  Viewpoint 
+
+Maintainability  is  concerned  with  reducing  downtime  and  the  risks 
+and  costs  of  evolution.    It  is  very  important  to  enable  easy  maintenance 
+of  all  manufacturing  constituents  and  the  system  itself,  to  maintain  a 
+known  status  for  each  manufacturing  entity  and  its  documentation  and 
+to  support  traceability  where  required.    Hence  define  design  and 
+operation  standards  to  ensure  easy  maintenance. 
+
+4.2.7  Reliability  Viewpoint 
+
+Reliability  is  concerned  with  all  aspects  of  how  a  system  is  designed 
+and  operated  to  meet  specified  levels  of  availability.    This  starts  with 
+the  reliability  of  individual  elements  and  components,  and  goes  up  to 
+the  reliability  of  the  entire  system  and  organisation.    Hence  define 
+design  and  operation  standards  to  ensure  reliability. 
+
+4.2.8  Qualifications  Viewpoint 
+
+Qualifications  are  concerned  with  the  quality  of  personnel  for 
+achieving  the  proper  design  and  operation  of  manufacturing  entities. 
+The  viewpoint  is  essentially  concerned  with  the  training  of  operators 
+as  qualified  experts.    Hence  define  design  and  operation  standards  for 
+the  qualifications  of  personnel  for  managing  manufacturing  activities. 
+
+4.2.9  Description  Viewpoint 
+
+Description  is  concerned  with  all  aspects  of  how  the  design  and 
+operation  of  manufacturing  entities  are  defined  and  described  to 
+provide  all  persons  concerned  with  a  means  of  mutual  understanding. 
+It  is  essentially  concerned  with  the  terminology,  identification  and 
+description  of  documents.    Hence  define  design  and  operation 
+standards  to  ensure  mutual  understanding  in  t±ie  manufacturing  field. 
+
+
+IS    14776  (Fartl):  2000 
+ISO/TR    10314-1:1990 
+
+
+The  Reference  Model  for  Shop  Floor  Production 
+
+
+5.1   General  Information 
+
+This  chapter  describes  the  Reference  Model  developed  to  be  used  in  the 
+identification  of  standards  within  Shop  Floor  Production. 
+
+The  Reference  Model  presented  in  the  following  three  sections  is  in 
+many  ways  a  synthesis  of  a  variety  of  existing  models.   Firstly  the  major 
+activities  undertaken  for  manufacturing  are  identified  as  a  context  for 
+Shop  Floor  Production.    Secondly  a  Shop  Floor  Production  Model  (SFPM) 
+is  presented  which  groups  Shop  Floor  activities  into  hierarchical  levels. 
+Thirdly  a  Generic  Activity  Model  (GAM)  is  presented  to  model  the  various 
+activities  within  each  level  of  the  SFPM. 
+
+Each  activity  in  Shop  Floor  Production  can  be  represented  by  an  instance 
+of  the  GAM.   The  various  elements  of  the  GAM  will  have  different 
+interpretations  for  any  given  activity. 
+
+The  intent  of  this  Reference  Model  is  to  assist  in  identifying  where 
+standards  may  be  required  and  the  detail  is  not  sufficient  for  other 
+purposes  such  as  providing  a  basis  for  designing  or  implementing  a 
+manufacturing  system.   The  Reference  Model  presents  a  functional  view 
+of  the  Enterprise.  Facility  and  Shop  Floor  Production. 
+
+
+5.2  The  Context  of  Shop  Floor  Production 
+
+Section  1.2  sets  out  the  scope  of  manufacturing,  identifying  12  major 
+functions.   Figure  1  shows  one  example  of  how  Shop  Floor  Production 
+takes  place  in  a  context  established  by  those  other  functions.  Accordingly 
+interactions  occur  between  many  of  the  activities  of  Shop  Floor 
+Production  and  those  of  the  Facility,  and  to  a  lesser  extent  with  those  of 
+the  Enterprise  itself.    The  methodology  described  later  allows  for  these 
+interactions  to  be  identified.  In  addition  to  the  interactions  occurring 
+within  Shop  Floor  Production  itself. 
+
+
+10 
+
+
+IS    14776  (Parti):  2000 
+ISOyXR    10314-1:1990 
+
+
+5.3  The  Shop  Floor  ProducUon  Model  (SFPM) 
+
+Shop  Floor  Production  is  distinguished  from  the  other  eleven 
+manufacturing  functions  identified  in  Section  1.2  by  the  fact  that  it 
+contains  those  activities  which  are  directly  engaged  in  producing  parts. 
+It  is  common  practice  to  group  these  activities  into  several  levels. 
+
+In  this  report,  a  four  level  model  is  selected  to  present  the  activities  of 
+the  Shop  Floor  Production  function.    It  is  quite  likely  that  specific 
+manufacturing  implementations  may  require  more  or  less  than  four 
+levels,  but  four  levels  seem  sufficient  for  the  purpose  of  identifying  areas 
+of  standards. 
+
+Also  this  report  identifies  four  types  of  manufacturing  activity,  each  type 
+corresponding  to  each  level  of  Shop  Floor  Production.    There  can  be  (and 
+generally  are)  several  activities  in  progress  at  the  same  time  at  each  level. 
+The  types  of  activity  are: 
+
+1 )  execute  shop  floor  production  processes 
+
+2)  command  shop  floor  production  processes 
+
+3)  co-ordinate  shop  floor  production  processes 
+
+4)  supervise  shop  floor  production  processes. 
+
+The  four  level  model  in  Figure  3  illustrates  the  structure  of  Shop  Floor 
+Production.    This  model  is  called  the  Shop  Floor  Production  Model 
+(SFPM).    The  figure  shows  the  name  of  each  level  and  the  corresponding 
+type  of  activities  at  this  level  together  with  its  description. 
+
+
+5.4  The  Generic  Activity  Model  (GAM) 
+
+This  technical  report  approaches  the  modelling  of  those  characteristics 
+relevant  to  standards  identification  within  the  SFPM  through  the  concept 
+of  an  activity.   A  Generic  Activity  Model  (GAM)  as  shown  in  Figure  4  has 
+been  developed  to  model  the  execution  of  the  various  activities  at  each 
+level. 
+
+The  internals  of  the  GAM  represent  an  interrelated  set  of  four  vSubJects 
+and  four  Actions.   The  Subjects  and  Actions  are  defined  below: 
+
+
+11 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+5.4. 1      Four  Subjects 
+
+a)  Control  Information  which  includes: 
+
+(i)     command  information,  normally  flowing  from  a  higher 
+level  to  a  lower  level  which  initiates,  alters  or  terminates 
+an  activity, 
+
+(ii)    status  information  which  is  generated  in  direct  response 
+to  a  command  and  normally  flows  in  the  opposite  direction 
+to  the  command. 
+
+(iii)  request  information  which  corresponds  to  control 
+
+information  for  control  interaction  within  a  level  (peer  to 
+peer),  if  any,  and 
+
+(iv)  response  information  which  corresponds  to  status 
+
+information  for  control  interaction  within  a  level  (peer  to 
+peer),  if  any. 
+
+b)  Data:    all  information  other  than  control  information  required 
+for  or  resulting  from  the  performance  of  an  activity. 
+
+c)  Material:    Material  is  a  production  object  of  the 
+manufacturing  activity.   Material  includes  all  the  playsical 
+matter  that  enters  the  product  during  manufacturing:    raw 
+materials,  parts  and  assemblies,  auxiliary  materials,  products 
+and  scrap  material. 
+
+d)  Resources:    Resources  are  all  the  physical  means  required  to 
+carry  out  the  manufacturing  that  are  not  Material.   Resources 
+include  transform,  transport,  verify  and  storage  equipment; 
+tools  and  fixtures;  data  processing  and  communication 
+systems;  basic  resources  such  as  supply  material,  energy,  space 
+and  time;  personnel. 
+
+Note:    The  general  class  of  "information"  is  defined  here  to  consist  of 
+control  information  and  data,  that  is  as  the  union  of  a)  and  b)  above. 
+
+5.4.2     Four  Actions 
+
+a)      Transform:   The  act  of  changing  control  information,  data, 
+material  or  resources  from  one  form  to  another  form,  or  one 
+
+
+12 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+State  to  another  state.    Transform  includes  encoding  or  parsing 
+information,  decomposing  commands,  and  cutting,  forming, 
+assembling,  or  adjusting  material  or  resources. 
+
+b)  Transport:    The  act  of  moving  control  information,  data, 
+material,  or  resources  from  one  point  in  t±ie  enterprise  to 
+another. 
+
+c )  Verify:   The  act  of  assessing  the  compliance  of  all  transformed 
+control  information,  data,  material  and  resources  to  determine 
+their  conformance  to  a  specification. 
+
+d)  Store:    The  act  of  retaining  control  information,  data,  material 
+or  resources  at  a  specified  location  within  Shop  Floor 
+Production  or  Facility  until  they  are  required  to  be  transported. 
+
+The  GAM  describes  the  execution  of  activities  in  terms  of  four 
+Subjects  (Control  Information.  Data.  Material.  Resources)  and  four 
+Actions  (Transform.  Transport.  Verify.  St^re).    The  GAM  is  developed 
+from  a  view  that  the  realisation  of  manufacturing  activities  can  be 
+represented  in  terms  of  these  four  Subjects  and  four  Actions. 
+
+The  representation  of  a  given  activity  will  be  a  specific  instance  (an 
+instantiation)  of  the  GAM  in  which  specific  correspondences 
+(bindings)  are  established  between  the  elements  of  the  GAM  (Subjects. 
+Actions)  and  the  entities  which  correspond  to  those  elements  for  that 
+particular  manufacturing  activity. 
+
+Not  all  elements  of  the  GAM  will  be  present  in  every  instance  -  the 
+lowest  level  of  Shop  Floor  Production  for  example  does  not  have 
+command  and  status  information  for  the  non-existent  level  below. 
+
+Major  manufacturing  activities  may  be  decomposed  into  (sub)activities 
+in  a  horizontal  fashion  (into  a  series  of  further  activities)  or  in  a 
+vertical/  hierarchical  fashion  (into  levels  of  activities) .    The  GAM  is 
+generic  in  the  sense  that  it  can  be  applied  to  all  activities. 
+
+Establishing  specific  GAM  bindings  to  particular  manufacturing 
+activities  yields  specific  Subjects  and  Actions.   The  A-  and  B-type 
+procedures  described  in  Section  6  can  then  make  use  of  these  specific 
+Subjects  and  Actions  in  identifying  areas  of  standards. 
+
+
+13 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314*1:1990 
+
+
+6    Methodology  for  extracting  areas  of  standards 
+
+
+6.1   General  Information 
+
+There  are  a  number  of  interactions  among  activities,  and  among  Subjects 
+and  Actions  within  activities,  which  are  used  to  identify  the  area  of 
+standardisation  in  manufacturing.    Therefore  the  methodology  consists  of 
+examining  the  various  activities.  Subjects  and  Actions  in  various 
+relationships  and  connections  to  determine  if  a  standards  requirement  is 
+defined. 
+
+The  goal  of  standardisation  is  to  permit  more  effective  relationships  and 
+connections  between  two  or  more  objects.    In  manufacturing,  objects  may 
+be  machine-to-machine  relationships  and/  or  connections,  or  man-to- 
+machine  relationships  and/  or  interactions. 
+
+The  Reference  Model  described  in  the  preceding  chapter  is  essentially 
+declarative  rather  than  procedural  —  that  is  it  presents  a  set  of  concepts 
+and  a  hierarchical  approach  by  which  a  manufacturing  Enterprise  can  be 
+better  understood.   The  Model  defines  useful  manufacturing  functions, 
+characteristics  and  relationships  amongst  them.    It  is  also  necessary  to 
+show  how  they  cem  be  used  to  identify  standards  areas  for  manufacturing. 
+
+This  chapter  provides  such  a  methodology  for  extracting  areas  of 
+standards. 
+
+
+6.2  Overall  approach 
+
+The  way  in  which  the  various  elements  of  the  Reference  Model  are  used 
+to  identify  standards  is  illustrated  in  Figure  5.   The  various  activities  of 
+manufacturing  are  grouped  into  twelve  major  functions.    One  of  these. 
+Shop  Floor  Production,  is  further  modelled  by  a  four  level  model.  SFPM 
+(Figure  3). 
+
+The  various  activities  at  each  level  of  SFPM  can  each  be  modelled  by  the 
+GAM  (Figure  4).  with  each  such  instantiated  model  resulting  in  bindings 
+for  GAM  concepts  (Subjects,  Actions).    The  activities  of  SFPM  can  be 
+combined  into  vertical  and  horizontal  arrangements  and  this  fact  is 
+recognised  in  the  procedures  of  6.3  which  identify  potential  areas  for 
+standards,  each  of  which  can  be  represented  by  a  cell  entry  in  the 
+matrices  of  Figure  6. 
+
+
+14 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+Once  a  potential  standards  area  has  been  identified  (a  non-empty  cell 
+entry)  it  should  be  examined  in  the  light  of 
+
+•  the  technologies  of  interest,  i.e.  the  technologies  that  might  be 
+evident  in  the  Subjects  and  Actions  for  that  area,  and 
+
+•  the  Standards  Viewpoints  described  in  Section  4.2. 
+
+These  two  concerns  act  as  filters  which  restrict  areas  of  standards  to 
+those  which  are  realisable  with  current  technology  and  which  reflect  the 
+objectives  of  standardisation. 
+
+
+6.3  Extraction  Procedures 
+
+These  prpcedures  use  the  concepts  of  the  Reference  Model  and  describe 
+how  these  can  be  examined  to  identify  potential  areas  for  standards.   The 
+approach  places  strong  em^phasis  on  interactions  between  elements  of  a 
+system.    Consequently  it  is  expected  to  produce  areas  of  potential 
+standards  which  are  prerequisites  for  systems  integration. 
+
+The  various  combinations  in  the  Reference  Model  alluded  to  above  are 
+examined  by  applying  the  two  kinds  of  procedures  defined  below  to  each 
+of  the  Standards  Viewpoints. 
+
+It  is  important  to  note  that: 
+
+•  each  of  the  two  kinds  of  procedure  can  be  applied  independently 
+of  one  another. 
+
+•  the  same  standard  might  arise  from  applying  different  procedures 
+and 
+
+•  the  application  of  these  procedures  is  not  guaranteed  to  produce 
+an  exhaustive  list  of  standards  but  rather  to  clarify  areas  of 
+standards. 
+
+6.3.1     Procedures  A:    the  "Interrelationship  within  a  leveF 
+procedures 
+
+These  procedures  are  used  for  ex^acting  areas  of  standards  for 
+interrelationship  between  Subject  and  Action.  Subject  and  Subject 
+and  Action  and  Action  corresponding  to  each  level  of  the  SFPM. 
+
+
+15 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+For  each  activity,  these  procedures  should  be  applied  to  extract  areas 
+where  standards  may  apply. 
+
+Procedure  Al:   Subject- Action  Interrelationship 
+
+For  each  activity  in  each  level  of  the  SFPM.  consider  any  possible 
+Subject- Action  interrelationship  for  applicable  areas  of  standards. 
+
+Procedure  A2:    Subject  interrelationship 
+
+For  each  activity  in  each  level  of  the  SFPM,  consider  any  possible 
+Subject-Subject  interrelationship  for  applicable  areas  of  standards. 
+
+Procedure  A3:   Action  Interrelationship 
+
+For  each  activity  in  each  level  of  the  SFPM,  consider  any  possible 
+Action- Action  interrelationship  for  applicable  areas  of  standards. 
+
+6.3.2     Procedures  B:    the  "External"  procedures 
+
+These  procedures  are  used  for  extracting  areas  of  standards  for 
+interrelaiionship  between  activities  for  both  vertical  and  horizontal 
+structure. 
+
+For  each  activity  these  procedures  should  be  applied  to  extract  areas 
+where  standards  may  apply. 
+
+Procedure  Bl:   Horizontal  interrelationship 
+
+For  each  level  of  the  SFPM  consider  any  possible  interrelationships 
+between  Shop  Floor  Production  and  other  manufacturing  functions 
+(the  context  functions  l.,ll  of  1.2)  for  applicable  areas  of  standards. 
+
+Procedure  B2:   Vertical  interrelationship 
+
+For  each  level  of  the  SFPM  consider  any  possible  Subject 
+interrelationship  with  the  level  above  and  below  for  applicable  areas 
+of  standards,  and  hence  relevant  Subject  attributes. 
+
+
+16 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+6.4  Matrix  Representation  of  Identification  Procedures 
+
+Corresponding  to  each  procedure  (Al,  A2,  A3.  Bl.  B2)  it  is  possible  to 
+envisage  a  matrix  which  represents  that  procedure  graphically.    These 
+are  shown  schematically  in  Figure  6.    Each  cell  of  each  matrix  represents 
+a  potential  area  for  standards.    Similar  matrices  are  used  in  Part  2  of  this 
+report  to  show  the  standards  areas  identified  through  the  application  of 
+these  procedures,  as  well  as  worksheets  for  other  users  of  the  Reference 
+Model  and  its  methodology. 
+
+
+7    Summary 
+
+
+This  document  is  Part  1  of  a  report  on  a  means  to  identify  where  industrial 
+automation  standards  for  Shop  Floor  Production  may  be  required.    It  has 
+described  a  Reference  Model  which  may  be  used  as  a  systematic  method  for 
+determining  areas  for  standards  development  work.    Part  2  of  the  report 
+describes  an  application  of  the  methodology  which  utilises  this  Reference 
+Model  in  identifying  these  areas,  catalogues  them  and  cross-references 
+them  with  standards  already  completed  or  in  the  process  of  development. 
+
+
+17 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+Enterprise  * 
+
+
+Facility 
+
+
+Corporate  management 
+Finance 
+
+Marketing  &  Sales 
+Research  &  Development 
+
+
+Product  design  & 
+
+Production  Engineering 
+Production  management 
+Procurement 
+Shipping 
+
+Waste  material  treatment 
+Resources  management 
+Maintenance  management 
+
+
+Shop  Floor  Production 
+
+
+Shop  Floor  Production 
+
+
+Figure  1  -  Typical  Grouping  o1  Manulacturing 
+
+
+*  The  connbination  of  Enterprise  and  Facility  form  the 
+context  of  Shop  Floor  Production  as  described  in  5.2. 
+
+
+18 
+
+
+vSntes  Forecast 
+
+
+Product  Availabitily      Product  Quality 
+
+
+CORPORATE 
+MANAGEMENT 
+
+
+"o 
+
+Q. 
+Q 
+
+CC 
+
+
+Finance 
+Policy 
+
+
+FINANCE 
+
+
+Marketing 
+Policy 
+
+
+Budget 
+
+
+Production  Policy 
+
+
+MARKETING  &  SALES 
+
+
+R&D 
+Requirements 
+
+
+RESEARCH  & 
+DEVELOPMENT 
+
+
+Technical 
+Inforrtiation 
+
+
+Order 
+
+
+Product  Design 
+Requirements 
+
+
+MM 
+
+
+PRODUCT  DESIGN  & 
+PRODUCTION  ENGINEERING 
+
+
+Bill  of  Materials 
+
+
+PROCUREMENT 
+
+
+Procured 
+Resource^ 
+
+
+RESOURCE 
+MANAGEMENT 
+
+
+Production  Status 
+
+
+Production  Status 
+
+
+Ship  Status 
+
+
+PRODUCTION  MANAGEMENT 
+{Quality,  Cost,  Delivery) 
+
+
+Purchase 
+Order 
+
+Engineering 
+Information 
+
+
+Materials 
+
+
+to 
+
+o 
+
+a> 
+CO 
+
+
+Production 
+"  Commands 
+
+Product 
+Information 
+
+
+Ship 
+Order 
+
+
+SHOP  FLOOR 
+PRODUCTION 
+
+
+Maintenance 
+Request 
+
+
+MAINTENANCE 
+MANAGEMENT 
+
+
+Products 
+
+
+SHIPPING 
+
+
+Waste 
+
+
+WASTE  MATERIAL 
+TREATMENT 
+
+
+O 
+
+
+^     Figure  2  -  Typical  Arrangements  of  Manufacturing  Functions 
+
+
+(O 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+Level 
+
+Sub- Activity 
+
+Responsibility 
+
+4 
+
+Section 
+/Area 
+
+Supervise  shop 
+floor  production 
+process 
+
+Supervising  and  co-ordinating  the 
+production  and  supporting  the  jobs 
+and  obtaining  and  allocating  resources 
+to  the  jobs 
+
+3 
+
+Cell 
+
+Co-ordinate  shop 
+tloor  production 
+process 
+
+Sequencing  and  supervising 
+the  jobs  at  the  shop  floor 
+production  process 
+
+2 
+
+Station 
+
+Command  shop 
+floor  production 
+process 
+
+Directing  and  co-ordinating 
+
+the  shop  floor  production  process 
+
+1 
+
+Equipment 
+
+Execute  shop 
+floor  production 
+process 
+
+Executing  the  job  of  shop  floor 
+production  according  to  commands 
+
+Figure  3  -  Shop  floor  production  model  (SFPM) 
+
+
+20 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+Information  **                 Resources 
+
+a 
+
+U 
+
+Material  * 
+
+Material  * 
+
+. — 1^. 
+
+Information  ** 
+
+{  TP,  TF,  VE,  ST} 
+
+Information  ** 
+
+1^. 
+
+Resources 
+
+1^. 
+
+Resources 
+
+^^ 
+
+'  r 
+
+
+Information 
+
+
+Resources 
+
+
+Actions  {TP.  TF,  VE,  ST}  on  Material  are 
+defined  only  at  Level  1 
+
+
+TP 
+TF 
+VE 
+ST 
+
+
+Transport 
+Transform 
+Verify 
+Store 
+
+
+Information  is  defined  in  the  text  to  include 
+both  control  and  data  components. 
+For  strict  hierarchies,  horizontal 
+Information  flows  are  restricted  to  data 
+components 
+
+
+Figure  4  ■-  Generic  Activity  Model 
+
+
+21 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+Matrix  Representing 
+Areas  of  Potential  Standards 
+
+
+Figure  5  -  Overall  Approach  to  Identifying  areas  of  standards 
+
+
+NOTE:  Part  2  will  also  use  concepts  of  appropriate  technologies  and 
+Standards  Viewpoints  to  restrict  potential  areas  for  standards 
+into  those  which  are  practical  and  desirable. 
+
+
+22 
+
+
+IS    14776  (Parti):  2000 
+ISO/TR    10314-1:1990 
+
+
+:  Subject  -  Action 
+For  each  level, 
+
+consider  — 
+
+
+to 
+
+c 
+o 
+
+
+Subjects 
+
+
+:  Subject  -  Subject 
+For  each  level, 
+
+consider  — 
+
+
+o 
+
+o 
+
+CO 
+
+
+Subjects 
+
+
+:  Action  -  Action 
+For  each  level, 
+
+consider  — 
+
+
+CO 
+
+c 
+o 
+
+5 
+
+
+Actions 
+
+
+B1  :  Horizontal 
+For  each  level, 
+
+consider  ■ 
+
+
+B2  :  Vertical 
+For  each  level, 
+
+consider- 
+
+
+8§ 
+
+Context  Functions 
+
+u_  o 
+
+pl 
+
+CO  Q. 
+
+CO 
+
+B 
+
+CO 
+
+Subje 
+other 
+
+fcts  in 
+levels 
+
+Figure  6  -  Matrix  representation  of  identification  procedures 
+
+
+23 
+
+
+Bureau  of  Indian  Standards 
+
+BIS  is  u  statLitory  institulion  established  under  the  Bureau  of  Indian  Standards  Act,  1986  to  promote 
+harmonious  development  of  the  activities  of  standardization,  marking  and  quaUty  certification  of  goods 
+and  attending  to  connected  matters  in  the  country. 
+
+Copyright 
+
+BIS  )ias  the  copyright  of  ali  its  publications.  No  part  of  these  publications  may  be  reproduced  in  any  form 
+without  the  prior  permission  in  writing  of  BIS.  This  does  not  preclude  the  free  use,  in  the  course  of 
+implementing  the  standard,  of  necessary  details,  such  as  symbols  and  sizes,  type  or  grade  designations. 
+Hnquiries  relating  to  copyrigin  be  addressed  to  the  Director  {Publications),  BIS. 
+
+Review  of  Indian  Standards 
+
+Ainendments  are  issued  to  standards  as  the  need  arises  on  the  basis  of  comments.  Standards  are  also 
+reviewed  periodically;  a  standard  along  with  amendments  is  reaffirmed  when  such  review  indicates  that 
+no  changes  are  needed;  if  the  review  indicates  that  changes  are  needed,  it  is  taken  up  for  revision.  Users 
+of  Indian  Standards  should  ascertain  that  they  are  in  possession  of  the  latest  amendments  or  edition  by 
+referring  to  the  latest  issue  of  'BIS  Catalogue'  and  'Standards:  Monthly  Additions' 
+
+This  Indian  Standard  has  been  developed  from  Doc  :  No.  BP/PE   18    (  021 1  ). 
+
+
+Amendments  Issued  Since  Publication 
+
+
+Amend  No. 
+
+
+Date  of  Issue 
+
+
+Text  Affected 
+
+
+BUREAU   OF   INDIAN    STANDARDS 
+
+
+Headquarters: 
+
+
+Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg,  New  Delhi  1 10  002 
+Telephones  :  323  01  31,  323  33  75,  323  94  02 
+
+Regional  Offices  : 
+
+Central      :  Manak  Bhavan,  9  Bahadur  Shah  Zafar  Marg 
+NEW  DELHI  1 10  002 
+
+Eastern      :  1/14  C.  IT.  Scheme  VII  M,  V.  I.  P.  Road,  Kankurgachi 
+CALCUTTA  700  054 
+
+Northern    :  SCO  335-336,  Sector  34-A,  CHANDIGARH  160  022 
+Southern    :  C.  I.  T.  Campus,  IV  Cross  Road,  CHENNAI  600  113 
+
+
+Western     :  Manakalaya,  1:9  MIDC,  Marol,  Andheri  (East) 
+MUMBAl'  400  093 
+
+
+Telegrams   :  Manaksanstha 
+(Common  to  all  offices) 
+
+
+{ 
+
+
+Telephone 
+
+323  76  17 
+323  38  41 
+
+
+{ 
+
+
+337  84  99,337  85  61 
+337  86  26,337  91  20 
+
+
+{ 
+
+
+60  3843 
+60  20  25 
+
+
+235  02  16,235  04  42 
+235  15  19,235  23  15 
+
+832  92  95,  832  78  58 
+832  78  91,  832  78  92 
+
+
+Branches  :  AHMADABAD.  BANGALORE.  BHOPAL.  BHUBANESHWAR.  COIMBATORE. 
+FARIDABAD.GHAZIABAD.GUWAHATI.  HYDERABAD.  JAIPUR.  KANFUR. 
+LUCKNOW.  NAGPUR.  PATNA.  PUNE.  R  AIKOT.THIRU  VANANTHAPURAM. 
+
+
+Printed  at  Printograph,  New  Delh,  Ph.:  5726847 
+
+

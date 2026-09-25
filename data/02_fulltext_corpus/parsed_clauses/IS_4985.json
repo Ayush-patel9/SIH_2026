@@ -1,0 +1,324 @@
+{
+  "is_number": "IS IS_4985",
+  "standard_id": "IS IS_4985",
+  "title": "Indian Standard Specification / Test Method (IS IS_4985)",
+  "ia_identifier": "IS_4985",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers requirements for plain as well as socket-ended pipes, including those for use with elastomeric sealing rings, for potable water supplies. 1.1.1 The standard also cover pipes for agricultural use. 1.2 This standard does not cover unplasticized PVC pipes for use in suction and delivery lines of agricultural pumps, which have been covered in IS 12231. 1.3 The pipes covered in this standard are not suitable for use as casing pipes in tube wells. Such pipes are covered in IS 12818.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 12235",
+      "standard_id": "IS 12235:2004",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4422",
+      "standard_id": "IS/ISO 4422",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4422)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3127",
+      "standard_id": "IS/ISO 3127",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3127)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 161",
+      "standard_id": "IS/ISO 161",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 161)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2045",
+      "standard_id": "IS/ISO 2045",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2045)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3603",
+      "standard_id": "IS/ISO 3603",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3603)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12231",
+      "standard_id": "IS 12231:1987",
+      "title": "Unplasticized PVC Pipes for Use in Suction and Delivery Lines of Agricultural Pump Sets",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12818",
+      "standard_id": "IS 12818:2010",
+      "title": "unplasticized polyvinyl chloride (PVC-U)screen and casing pipes for bore/tubewell",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10148",
+      "standard_id": "IS 10148:2023",
+      "title": "Positive List of Constituents of Polyvinyl Chloride (PVC) and Its Copolymers in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10151",
+      "standard_id": "IS 10151:2019",
+      "title": "Polyvinyl Chloride (PVC) and its Copolymers for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water — Specification ( First Revision )",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Polyvinyl Chloride (PVC) Homopolymers (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 4669",
+      "standard_id": "IS 4669:1968",
+      "title": "Methods of test for polyvinyl chloride resins",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 1)",
+      "standard_id": "IS 12235 (PART 1)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 1))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 727",
+      "standard_id": "IS/ISO 727",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 727)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5382",
+      "standard_id": "IS 5382:1985",
+      "title": "Rubber Sealing Rings for Gas Mains, Water Mains and Sewers",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 3)",
+      "standard_id": "IS 12235 (PART 3)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 3))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 4)",
+      "standard_id": "IS 12235 (PART 4)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 4))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 10)",
+      "standard_id": "IS 12235 (PART 10)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 10))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 5/SEC 1)",
+      "standard_id": "IS 12235 (PART 5/SEC 1)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 5/SEC 1))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 2)",
+      "standard_id": "IS 12235 (PART 2)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 2))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 14)",
+      "standard_id": "IS 12235 (PART 14)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 14))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 8/SEC 1)",
+      "standard_id": "IS 12235 (PART 8/SEC 1)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 8/SEC 1))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12235 (PART 8/SEC 4)",
+      "standard_id": "IS 12235 (PART 8/SEC 4)",
+      "title": "to 19: Thermoplastics Pipes and Fittings - Methods of Test (IS 12235 (PART 8/SEC 4))",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 24153",
+      "standard_id": "IS/ISO 24153",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 24153)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4633",
+      "standard_id": "IS/ISO 4633",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4633)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9852",
+      "standard_id": "IS/ISO 9852",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9852)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7634 (PART 3)",
+      "standard_id": "IS 7634 (Part 3):2003",
+      "title": "Plastics Pipe Selection, Handling, Storage and Installation for Potable Water Supplies - Code of Practice : Part 3 - Laying and Jointing of UPVC Pipes",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Nominal Size (DN",
+    "Nominal Outside Diameter (d",
+    "Mean Inside Diameter at Mid Point of Socket",
+    "Out-of-Roundness (Ovality",
+    "Nominal Wall Thickness (e",
+    "Wall Thickness at any Point (e",
+    "Minimum Wall Thickness at any Point (ein",
+    "Tolerance",
+    "Working Pressure (PN",
+    "Allowable Operating Pressure (PFA",
+    "Hydrostatic Stress (c",
+    "Long-Term Hydrostatic Stress"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "Lead (first extraction) 1.0 mg/l",
+      "Lead (third extraction) 0.05 mg/l",
+      "Cadmium 0.01 mg/l",
+      "Mercury 0.001 mg/l"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "wall thickness 6 mm",
+      "nominal sizes 20 mm",
+      "nominal diameters d, < 280 mm",
+      "wall thickness of the 2) For nominal diameters d, > 280 mm",
+      "wall thickness up to 8.6 mm"
+    ],
+    "marking_requirements": [
+      "13.1 Each pipe shall be clearly and indelibly marked",
+      "any contrasting colour can also be used for marking",
+      "at intervals of not more than 3 m. The markings shall",
+      "a) Manufacturer's name or trade-mark,",
+      "d) Batch or lot number, and"
+    ]
+  },
+  "total_chars_parsed": 77304
+}

@@ -1,0 +1,2342 @@
+**************** 
+
+
+
+*■ *Z**K 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+Jawaharlal Nehru 
+Step Out From the Old to the New 
+
+
+
+mt>«ssss^^ft^: 
+
+
+
+
+,_A» 
+
+
+
+
+**************** 
+
+
+
+BLANK PAGE 
+
+
+
+<_<ii££ 
+
+
+
+
+
+UJ> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 11410: 2006 
+ISO/IEC3788:1990 
+
+
+
+^HT mm - 126 ftpmm (3 200 ftpi) — 63 cpmm 
+
+(1 600 cpi) q* ^T kJHc^Rh 3T#T c^ ^rt g<wicN"l ^ 
+
+tcP? 9-£cp, 12.7 mm (0.5 in) #|t ^$>m £q 
+
+( Wen Tfrftm ) 
+
+Indian Standard 
+
+INFORMATION PROCESSING — 9-TRACK, 12.7 mm 
+
+(0.5 in) WIDE MAGNETIC TAPE FOR INFORMATION 
+
+INTERCHANGE USING PHASE ENCODING AT 
+
+126 ftpmm (3 200 ftpi) — 63 cpmm (1 600 cpi) 
+
+( First Revision ) 
+
+
+
+ICS 681.327.636 
+
+
+
+© BIS 2006 
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+May 2006 p r j ce Group 7 
+
+
+
+Computer Hardware Sectional Committee, LTD 37 
+
+
+
+1 976 and has now 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard (First Revision) which is identical with ISO/IEC 3788 : 1990 Information 
+processing — 9-track, 12,7 mm (0,5 in) wide magnetic tape for information interchange using phase 
+encoding at 126 ftpmm (3 200 ftpi) — 63 cpmm (1 600 cpi)' issued by the International Organization for 
+Standardization (ISO) and International Electrotechnical Commission (IEC) jointly was adopted by the 
+Bureau of Indian Standards on the recommendations of the Computer Hardware Sectional Committee 
+and approval of the Electronics and Information Technology Division Council. 
+
+This standard was originally published in 1 986 and was identical with ISO/IEC 3788 
+been revised to align it with the latest ISO/IEC Publication. 
+
+The text of the ISO/IEC Standard has been approved as suitable for publication as an Indian Standard 
+without deviations. Certain conventions are, however, not identicalto those used in the Indian Standards. 
+Attention is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should be 
+read as 'Indian Standard'. 
+
+b) Comma ( , ) has been used as a decimal marker while in Indian Standards, the current practice 
+is to use a point ( . ) as the decimal marker. 
+
+In this adopted standard, reference appears to certain International Standards for which Indian Standards 
+also exist. The corresponding Indian Standards which are to be substituted in their places are listed 
+below along with their degree of equivalence for the editions indicated: 
+
+
+
+International Standard 
+
+
+
+ISO 646 
+processing 
+character 
+interchange 
+
+
+
+: 1991 
+— ISO 
+set for 
+
+
+
+Information 
+
+7-bit coded 
+
+information 
+
+
+
+Corresponding Indian Standard 
+
+IS 1 031 5 : 1 997 7-bit coded character 
+set for information interchange 
+(first revision) 
+
+
+
+Degree of Equivalence 
+Identical 
+
+
+
+ISO 1001 : 1986 Information 
+processing — File structure and 
+labelling of magnetic tapes for 
+information interchange 
+
+ISO 2022 : 1986 Information 
+processing — ISO 7-bit and 8-bit 
+coded character sets — Coded 
+extension techniques 
+
+ISO 4873 : 1986 Information 
+processing — ISO 8-bit code for 
+information interchange — Structure 
+and rules for implementation 
+
+The technical committee responsible for the preparation of this standard has reviewed the provisions of 
+the following International Standards and has decided that they are acceptable for use in conjunction 
+with this standard: 
+
+
+
+IS 11419 : 1992 Magnetic tape 
+labelling and file structure and 
+labelling of magnetic tapes for 
+information processing (first revision) 
+
+IS 12326 : 2005 7-bit and 8-bit 
+coded character sets — Code 
+extension techniques 
+
+IS 10401 : 1998 8-bit coded character 
+set for information interchange 
+(first revision) 
+
+
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+International Standard 
+ISO 1864: 1985 
+
+
+
+ISO 8064: 1985 
+
+
+
+Title 
+
+Information processing — Unrecorded 12,7 mm (0,5 in) wide magnetic 
+tape for information interchange — 32 ftpmm (800 ftpi) NRZ1 , 126 ftpmm 
+(3 200 ftpi) phase encoded and 356 ftpmm (9 042 ftpi) NRZ1 
+
+Information processing — Reels for 12,7 mm (0,5 in) wide magnetic 
+tapes — Sizes 16,18 and 22 
+
+
+
+IS 11410: 2006 
+ISO/IEC 3788 : 1990 
+
+
+
+Indian Standard 
+
+INFORMATION PROCESSING — 9-TRACK, 12.7 mm 
+
+(0.5 in) WIDE MAGNETIC TAPE FOR INFORMATION 
+
+INTERCHANGE USING PHASE ENCODING AT 
+
+126 ftpmm (3 200 ftpi) — 63 cpmm (1 600 cpi) 
+
+( First Revision ) 
+
+
+
+1 Scope 
+
+This International Standard specifies a format and 
+recording standard for 9-track, 12,7 mm {0,5 in) 
+magnetic tape to be used for data interchange be- 
+tween information processing systems, communi- 
+cation systems, and associated equipment utilizing 
+the 7-bit coded character set (see ISO 646), its ex- 
+tension in ISO 2022 where required, or an 8-bit 
+coded character set (see ISO 4873). Magnetic label- 
+ling for use on magnetic tape is the subject of 
+ISO 1001. The magnetic tape and reel to be used 
+shall conform to ISO 1864 and/or ISO 8064. 
+
+NOTE 1 Numeric values in the SI and/or Imperial 
+measurement system in this International Standard may 
+have been rounded off and therefore are consistent with, 
+but not exactly equal to, each other. Either system may 
+be used, but the two should be neither intermixed nor re- 
+converted. The original design was made using the Impe- 
+rial measurement system. 
+
+
+
+2 Normative references 
+
+The following standards contain provisions which, 
+through reference in this text, constitute provisions 
+of this International Standard. At the time of publi- 
+cation, the editions indicated were valid. All stan- 
+dards are subject to revision, and parties to 
+agreements based on this International Standard 
+are encouraged to investigate the possibility of ap- 
+plying the most recent editions of the standards in- 
+dicated below. Members of IEC and ISO maintain 
+registers of currently valid International Standards. 
+
+ISO 646:1983, Information processing — ISO 7-bit 
+coded character set for information interchange. 
+
+ISO 1001:1986, Information processing — File struc- 
+ture and labelling of magnetic tapes for information 
+interchange. 
+
+
+
+ISO 1864:1985, Information processing — Unrecorded 
+12,7 mm (0,5 in) wide magnetic tape for information 
+Interchange — 32 ftpmm (800 ftpi) NRZ1, 126 ftpmm 
+(3 200 ftpi) phase encoded and 356 ftpmm (9 042 ftpi) 
+NRZ1. 
+
+ISO 2022:1986, information processing — ISO 7-bit 
+and 8-bit coded character sets — Coded extension 
+techniques. 
+
+ISO 4873:1986, Information processing — ISO 8-bit 
+code for information interchange — Structure and 
+rules for implementation. 
+
+ISO 8064:1985, Information processing — Reels for 
+12,7 mm (0,5 in) wide magnetic tapes — Sizes 16, 18 
+and 22. 
+
+
+
+3 Definitions 
+
+For the purposes of this International Standard, the 
+following definitions apply. 
+
+3.1 magnetic tape: A tape which will accept and 
+retain magnetic signals intended for input, output 
+and storage purposes on computers and associated 
+equipment. 
+
+3.2 reference tape: A tape which has been se- 
+lected for given properties for use in calibration. 
+
+3.3 Master Standard Reference Tape: A reference 
+tape selected as a standard for signal amplitude. 
+
+NOTE 2 A Master Standard Reference Tape has been 
+established by the US National Institute of Standards and 
+Technology (NIST). 
+
+3.4 Secondary Standard Reference Tape: A tape 
+the performance of which is known and stated in 
+relation to that of the Master Standard Reference 
+Tape. 
+
+
+
+IS 11410: 2006 
+ISO/IEC3788: 1990 
+
+
+
+NOTE 3 Secondary Standard Reference Tapes are 
+available from NIST (Office of Standard Reference Mate- 
+rials, Room B31-1, Chemistry Building, NBS, Gaithersburg, 
+Md 20899, USA) under part number SRM 3200. 
+
+It is intended that these be used for calibration of tertiary 
+tapes for use in routine calibration. 
+
+
+
+3.5 Typical Field: In the plot of Average Signal 
+Amplitude against recording field at the specified 
+flux transition density, the Typical Field is the mini- 
+mum field that causes an Average Signal Amplitude 
+equal to 95 % of the maximum Average Signal Am- 
+plitude. 
+
+
+
+3.6 Reference Field: The Typical Field of the Master 
+Standard Reference Tape at the specified recording 
+density. 
+
+
+
+3.7 Standard Reference Amplitude: The average 
+peak-to-peak signal amplitude derived from the 
+Master Standard Reference Tape in the NIST meas- 
+urement system under the recording conditions 
+specified in 5.6.1. 
+
+
+
+3.8 reference edge: The edge further from an ob- 
+server, when a tape is lying flat with the magnetic 
+surface uppermost and the direction of movement 
+for recording is from left to right (see figure 1). 
+
+3.9 in-contact: An operating condition in which the 
+magnetic surface of a tape is rn contact with a mag- 
+netic head. 
+
+3.10 track: A longitudinal area on a tape along 
+which a series of magnetic signals may be recorded. 
+
+3.11 row; Nine transversely related locations {one 
+in each track) in which bits are recorded. 
+
+
+
+4 General requirements 
+
+4.1 Operating environment 
+
+Tapes used for data interchange shall be operated 
+under the following conditions: 
+
+— temperature: 16 °C to 32 °C (60 °F to 90 °F); 
+
+— relative humidity: 20 % to 80 %; 
+
+— wet bulb temperature: not greater than 25 °C 
+(78 °F). 
+
+Conditioning before operating: If a tape has been 
+exposed during storage and/or transportation to 
+conditions outside the above values, it should be 
+conditioned for a period of 2 h to 12 h depending 
+upon the extent of exposure. 
+
+4.2 Storage and transportation 
+
+The recommendations for storage and transporta- 
+tion environment are specified in annex C. 
+
+Responsibility for ensuring that adequate precau- 
+tions against damage are taken during shipment 
+shall be with the sender (see annex C). 
+
+4.3 Wind tension 
+
+For interchange, the tape winding tension shall be 
+between 2,0 N and 3,6 N (7 ozf to 13 ozf). 
+
+
+
+5 Recording 
+
+
+
+5.1 Method of recording 
+
+The recording method shall be phase encoding, de- 
+scribed as follows: 
+
+
+
+3.12 physical recording density: The number of re- 
+corded flux transitions per unit length of track, 
+[ftpmm (ftpi)]. 
+
+
+
+5.1.1 A ONE is represented by a flux transition to 
+the polarity of the interblock gap, when reading in 
+the forward direction. 
+
+
+
+3.13 data density: The number of data characters 
+stored per unit length of tape, [cpmm (cpi)]. 
+
+3.14 skew: Within a row, the maximum displace- 
+ment of any location from any other location meas- 
+ured as the distance between two perpendiculars to 
+the reference edge through said locations. 
+
+
+
+3.15 position of a flux transition: The point which 
+exhibits the maximum free-space flux density 
+normal to the tape surface. 
+
+
+
+5.1.2 A ZERO is represented by a flux transition to 
+the polarity opposite to that of the interblock gap, 
+when reading in the forward direction. 
+
+5.1.3 Additional flux transitions shall be written at 
+the nominal midpoint between bit flux transitions, as 
+defined in 5.1.1 and 5.1.2, if required to establish the 
+proper polarity for the succeeding bits. These flux 
+transitions shall be called phase flux transitions. 
+
+5.1.4 Interblock gaps shall be of the same polarity 
+as erase (see 5.7). 
+
+
+
+1811410:2006 
+ISO/IEC 3788 : 1990 
+
+
+
+5.2 Density of recording 
+
+The nominal physical recording density shall be 
+126 ftpmm (3 200 ftpi). The resulting nominal flux 
+transition spacing is 7,935 u.m (312,5 pin). A density 
+of 63 ftpmm (1 600 ftpi) is also used for specific 
+measurements. 
+
+
+
+5.3 Average flux transition spacing 
+
+The following requirements shall be measured by 
+reading a tape that has been continuously and 
+evenly recorded at 63 ftpmm (1 600 ftpi) in phase in 
+all tracks. The resulting nominal bit flux transition 
+spacing is 15,87 pm {625 pin). 
+
+
+
+5.3.1 The long-term average (static) flux transition 
+spacing shall be within ± 4 % of the nominal spac- 
+ing. This average shall be measured over a mini- 
+mum of 5 x 10 5 successive flux transitions. 
+
+5.3.2 The short-term average (dynamic) flux transi- 
+tion spacing, when referred to a particular flux tran- 
+sition spacing, is defined as the average of that flux 
+transition spacing and the preceding three flux 
+transition spacings. 
+
+The short-term average flux transition spacing shall 
+be within ± 10 % of the long-term average flux 
+transition spacing. 
+
+In addition, the rate of change of the short-term av- 
+erage flux transition spacing shall not exceed 
+
+0,5 %. 
+
+
+
+5.4 Instantaneous flux transition spacing 
+
+The instantaneous spacing between flux transitions 
+may be influenced by the reading and writing pro- 
+cess, the bit sequence recorded (pulse crowding ef- 
+fects) and other factors. 
+
+Instantaneous spacings between flux transitions 
+shall meet the following five conditions, when tested 
+on the reference read chain (see annex A): 
+
+a) The spacing between successive data flux tran- 
+sitions without an intervening phase flux transi- 
+tion shall be between 85 % and 108 % of the 
+corresponding short-term average flux transition 
+spacing. 
+
+b) The spacing between successive data flux tran- 
+sitions with an intervening phase flux transition 
+shall be between 93 % and 112 % of the corres- 
+ponding short-term average flux transition spac- 
+ing. 
+
+c) The spacing between a data flux transition and 
+any adjacent phase flux transition shall be be- 
+
+
+
+tween 44 % and 62 % of the corresponding 
+short-term average flux transition spacing. 
+
+d) The average spacing between actual data flux 
+transitions in a sequence of flux transitions at 63 
+per millimetre (1600 per inch) and the predicted 
+position of those data bits relative to flux transi- 
+tions at 126 per millimetre (3 200 per inch) pre- 
+ceding or succeeding the sequence shall not 
+exceed ± 6 % of the corresponding short-term 
+average spacing. 
+
+e) The equipment used for recording tapes at 
+63 characters per millimetre (1 600 characters 
+per inch) and the magnetic tape to be used for 
+interchange shall fulfil the requirements of a) to 
+d) when tested under the conditions specified in 
+the reference read chain (see annex A). 
+
+5.5 Skew 
+
+The skew shall be less than 15,87 pm (625 pin). This 
+condition is required to be satisfied for both flux 
+transition polarities and Tor each row. 
+
+
+
+5.6 Signal amplitude 
+
+5.6.1 Standard Reference Amplitude 
+
+The Standard Reference Amplitude is the average 
+peak-to-peak signal amplitude derived from the 
+Master Standard Reference Tape on the qualified 
+measurement system at the density of 126 ftpmm 
+(3200 ftpi) and the recording current, I r of 1,8 x /,. 
+The signal amplitude shall be averaged over 4 000 
+flux transitions, and shall be measured on the read- 
+while-write pass. The reference current, /,, is the 
+current which produces the Reference Field. 
+
+5.6.2 Average signal amplitude 
+
+The average peak-to-peak signal amplitude of an 
+interchanged tape at 126 ftpmm (3 200 ftpi) shall be 
+between 65 % and 150 % of the Standard Reference 
+Amplitude. 
+
+The average peak-to-peak signal amplitude at 
+63 ftpmm (1 600 ftpi) shall be less than 300 % of the 
+Standard Reference Amplitude. 
+
+Averaging shall be done over a minimum of 4 000 
+flux transitions, which for the interchange tape, may 
+be segmented into blocks. Averaging shall be done 
+on the first read pass after interchange. 
+
+5.6.3 Minimum signal amplitude 
+
+An interchange tape shall contain no adjacent flux 
+transitions the peak-to-peak signal amplitude of 
+which is less than 20 % of the Standard Reference 
+Amplitude on the first pass after interchange. 
+
+
+
+IS 11410: 2006 
+ISO/IEC 3788 : 1990 
+
+
+
+5.7 Erasure 
+
+5.7.1 Erase direction 
+
+When erased, the rim end of the erased area of the 
+tape shall be magnetized so that it is a North- 
+seeking pole, and the hub end of the erased area is 
+a South-seeking pole {see annex B). 
+
+5.7.2 Erase width 
+
+The full width of the tape shall be d.c.-erased in the 
+direction specified in 5.7.1. 
+
+
+
+5.7.3 Residual signal 
+
+The tape shall be erased so that any residual 
+signals, including NR21 at 32 ftpmm (800 ftpi) and 
+356 ftpmm (9042 ftpi), and phase encoding at 
+126 ftpmm (3 200 ftpi) are less than 4 % of the Stan- 
+dard Reference Amplitude at 126 ftpmm (3200 ftpi). 
+
+
+
+7 Data representation 
+
+7.1 Coded representation of characters 
+
+Characters shall be represented by means of the 
+7-bit coded character set (see ISO 646), the 8-bit 
+coded character set (see ISO 4873) or, where re- 
+quired, of an extension of the 7-bit coded character 
+set (see ISO 2022). 
+
+The bit-to-track allocation shall be as follows: 
+
+
+
+7.1.1 7-blt coded characters 
+
+
+
+Binary 
+weight 
+
+
+2 o 
+
+
+2' 
+
+
+22 
+
+
+23 
+
+
+2« 
+
+
+25 
+
+
+2 e 
+
+
+- 
+
+
+— 
+
+
+Bit desig- 
+nation 
+
+
+b1 
+
+
+b2 
+
+
+b3 
+
+
+b4 
+
+
+b5 
+
+
+b6 
+
+
+b7 
+
+
+— 
+
+
+P 
+
+
+Track 
+
+
+2 
+
+
+8 
+
+
+1 
+
+
+9 
+
+
+3 
+
+
+5 
+
+
+6 
+
+
+7 
+
+
+4 
+
+
+
+6 Track configuration 
+
+
+
+Track 7 shall always be recorded with bit ZERO. Bit 
+P in track 4 shall be the parity bit. The parity shall 
+be odd. 
+
+
+
+6.1 Number of tracks 
+
+There shall be nine tracks. 
+
+6.2 Track identification 
+
+Tracks shall be numbered consecutively beginning 
+at the reference edge with track 1 (see figure 1). 
+
+
+
+6.3 Track positions 
+
+The distance from the centrelines of the tracks to the 
+reference edge shall be 
+
+
+
+7.1.2 8-bit coded characters 
+
+
+
+Track 1 
+Track 2 
+Track 3 
+Track 4 
+Track 5 
+Track 6 
+Track 7 
+Track 8 
+Track 9 
+
+
+
+0,74 mm 
+2,13 mm 
+3,53 mm 
+4,93 mm 
+6,32 mm 
+7,72 mm 
+9,12 mm 
+10,52 mm 
+11.91 mm 
+
+
+
+(0,029 in) 
+(0,084 in) 
+(0,139 in) 
+(0,194 in) 
+(0,249 in) 
+(0,304 in) 
+(0,359 in) 
+(0,414 in) 
+(0,469 in) 
+
+
+
+The tolerance shall be ±0,08 mm (0,003 in) for all 
+tracks. 
+
+
+
+6.4 Track width 
+
+The width of a written track shall be 
+1,09 mmmin. (0,043 in min.) 
+
+
+
+Binary 
+weight 
+
+
+2° 
+
+
+2' 
+
+
+22 
+
+
+23 
+
+
+2 4 
+
+
+25 
+
+
+2« 
+
+
+27 
+
+
+— 
+
+
+Bit desig- 
+nation 
+
+
+b1 
+
+
+b2 
+
+
+b3 
+
+
+b4 
+
+
+b5 
+
+
+b6 
+
+
+bl 
+
+
+b8 
+
+
+P 
+
+
+Track 
+
+
+2 
+
+
+8 
+
+
+1 
+
+
+9 
+
+
+3 
+
+
+5 
+
+
+6 
+
+
+7 
+
+
+4 
+
+
+
+Bit P in track 4 shall be the parity bit. The parity 
+shall be odd. 
+
+7.2 Representation of binary data 
+
+When the coding method requires it, the coded rep- 
+resentations recorded in data rows shall be re- 
+garded as a set of bit positions, each containing a 
+bit, which can be either a ZERO or a ONE. 
+
+The binary weights, bit designations and track allo- 
+cation shall be as given in 7.1. 
+
+8 Format of the tape 
+
+8.1 identification burst 
+
+The phase-encoded recording method shall be 
+identified by a burst of recording at the BOT marker. 
+This burst shall consist of 63 ftpmm (1 600 ftpi) on 
+track 4 and erasure on all other tracks. The identifi- 
+cation burst shall begin at least 43,2 mm (1,7 in) be- 
+fore the hub end of 1he BOT marker and continue 
+
+
+
+IS 11410: 2006 
+ISO/IEC 3788 : 1990 
+
+
+
+past the hub end of the BOT marker, but shall end 8.6 Gaps 
+
+at least 12,7 mm (0,5 in) before the first block. 
+
+
+
+8.2 Block structure 
+
+All data blocks shall consist of a preamble, a data 
+portion and a postamble. 
+
+8.3 Preamble 
+
+The preamble, preceding the data portion of a data 
+block shall consist of 40 rows containing only ZEROs 
+followed by one row containing only ONEs. 
+
+8.4 Length of the data portion 
+
+The data portion of a data block shall consist of at 
+least 18 data rows and at most 2048 data rows. 
+However, larger blocks may be used by agreement 
+between the interchanging parties. 
+
+8.5 Postamble 
+
+The postamble, following the data portion of a data 
+block shall consist of one row containing only ONEs 
+followed by 40 rows containing only ZEROs. 
+
+
+
+8.6.1 Initial gap 
+
+Between the hub end of the BOT marker and the first 
+recorded row of the preamble of the first block there 
+shall be a gap with a length of 76 mm min. 
+(3 in min.) and 7 600 mm max. (300 in max.). This 
+gap shall be erased In accordance with 5.7 with the 
+exception of the identification burst. 
+
+
+
+8.6.2 Interblock gap 
+
+The length of the interblock gaps shall be 
+
+— 15 mm nom. (0,6 in nom.) 
+
+— 12,7 mm min. (0,50 in min.) 
+
+— 7 600 mm max. (300 in max.) 
+
+This gap shall be erased in accordance with 5.7. The 
+actual gap length depends upon the number of con- 
+secutive erase instructions. 
+
+
+
+birEnucxgap 
+
+12.7 mm min. 
+
+7 600 mm max. 
+
+[0,5 fn to 300 In) 
+
+
+
+Block 
+
+
+
+HHalgnp 
+
+76 mm min. 
+
+7 600 mm max. 
+
+(3 In to 300 In) 
+
+
+
+Reference 
+edge 
+
+
+
+Data revs 
+
+18 min. 
+
+2 048 max. 
+
+
+
+12,7 mm min. 
+(0,5 In min.) 
+
+
+
+1 
+
+
+mm 
+
+
+mmmmmmmmmmmmm 
+
+
+2 
+
+
+ft« 
+
+
+Mf mu mm |M mm m mm mm mm Ml riK flft fM 
+HtHIHIHtHiQlHIHIHIIinilRtCi 
+
+
+3 
+
+
+stis 
+
+
+mmmmmmmmmmmmm 
+
+
+4 
+
+
+mm 
+
+
+mmmmmmmmmmmmm 
+
+
+5 
+
+
+flm 
+
+
+Qkmmmmmmmm&mmm 
+
+
+6 
+
+
+mm 
+
+
+HI HI HI HI HI HI HJ HJ HI 99. HI HI HI 
+
+
+7 
+
+
+SM 
+
+
+mmmmmmmmmmmmtn 
+
+
+8 
+
+
+mm 
+
+
+wm mm. mm hi hh mf mm mm mm mm wm fsv mm 
+
+
+9 
+
+
+mm 
+
+
+mmmmmnmmMmmmm 
+
+
+
+43,2 mm min. 
+(1,7 In min.) 
+
+
+
+BOT marker 
+[lllllllltlimil! 
+
+
+
+ID burst 
+
+
+
+-—Forward tape motion 
+
+— Resultant recording direction 
+
+
+
+Note - Tape Is shown with magnetic surface towards observer. Read-write head on 
+same side as magnetic surface. 
+
+
+
+Figure 1 — Track layout 
+
+
+
+IS 11410: 2006 
+ISO/IEC 3788 : 1990 
+
+
+
+8.7 Tape Mark 
+
+The Tape Mark shall be a control block character- 
+ized by: 
+
+— d.c.-erasure in tracks 3, 6 and 9; 
+
+— bit pattern (1111...), over 64 to 256 transitions in 
+tracks 2, 5 and 8; 
+
+— tracks 1, 4 and 7, in any combination, may be 
+d.c.-erased or recorded in the manner stated for 
+tracks 2, 5 and 8. All eight possible combinations 
+shafl be considered as a Tape Mark. 
+
+A Tape Mark shall be separated from other blocks 
+by an interblock gap. 
+
+
+
+The use of Tape Marks is specified in ISO 1001. 
+
+9 Quality of recording for data 
+interchange 
+
+Tapes shall not be employed for data interchange 
+where the number of gaps which have been 
+elongated due to erase instructions, 
+
+either: exceeds 2 when the total number of 
+blocks written is less than, or equal to, 400; 
+
+or: is greater than 0,5 % of the total number of 
+blocks written in any other case. 
+
+No permanent parity errors whilst writing are per- 
+missible In the data to be interchanged. 
+
+
+
+IS 11410: 2006 
+ISO/IEC 3788 : 1990 
+
+
+
+Annex A 
+
+(normative) 
+
+Procedure and instrumentation for measuring flux transition spacing 
+
+
+
+A.1 Format 
+
+The equipment used for recording tapes (see tape 
+transport, A.2.1) at 63 cpmm (1 600 cpi) shall record 
+on the magnetic, tape to be used for interchange 
+using the format described in the following sub- 
+clauses. 
+
+
+
+A.1 .1 Worst case patterns 
+Test patterns 
+
+1. 11111111 
+
+2. 00000000 
+
+3. 11110000 
+4.00001111 
+5.00010000 
+6. 11101111 
+7.00010111 
+
+8. 11101000 
+
+9. 11001100 
+
+10. 10101010 
+
+11. 10101111 
+12. 11110101 
+
+13. 01010000 
+
+14. 00001010 
+
+These test patterns shall be used in the following 
+sequence as specified in A.1.3.1.1 and A. 3. 2.1: 
+
+1,1,1,3,2,2.2,4,6,3,4,4,6,6,3,5,5,5,7,8,7,8,7,8,9,9,9,10,10,10. 
+12,11,14,13. 
+
+This sequence is to be repeated three times to con- 
+stitute each tape block. 
+
+A. 1.2 Writing 
+
+The tape shall be written in any start-stop mode of 
+operation compatible with system operation. 
+
+A.1. 3 Block format 
+
+Two block formats shall be generated. Each block 
+format shall be repeated 800 times together with 
+interblock gaps. All tracks shall be recorded simul- 
+taneously, each to meet the format specified as fol- 
+lows: 
+
+
+
+A.1.3.1 Format A 
+
+A.1.3.1.1 Tracks 1, 2. 4, 6, 8 and 9 shall each con- 
+tain the preamble, three times the test pattern se- 
+quence defined in A.1.1 and the postamble. 
+
+A.1. 3.1.2 Tracks shall contain the preamble, 
+816 ONEs, and the postamble. This track is written 
+to provide a record of speed variations. 
+
+A.1. 3.1. 3 Tracks 3 and 7 shall each contain the 
+preamble, 51 times the pair test pattern No. 1 fol- 
+lowed by test pattern No. 2, and the postamble. 
+These tracks are written to provide a means for lo- 
+cating any test pattern in a block defined in 
+A.1.3.1.1. 
+
+A.1. 3.2 Format B 
+
+A.1. 3.2.1 Tracks 1, 3, 5, 7. 8 and 9 shall each con- 
+tain the preamble, three times the test pattern se- 
+quence defined in A.1.1 and the postamble. 
+
+A.1.3.2.2 Track 4 shall contain the preamble, 
+816 ONEs, and the postamble. This track is written 
+to provide a record of speed variations. 
+
+A.1 .3.2.3 Tracks 2 and 6 shall each contain the 
+preamble, 51 times the pair test pattern No. 1 fol- 
+lowed by test pattern No. 2, and the postamble. 
+These tracks are written to provide a means for lo- 
+cating any test pattern in a block defined in 
+A.1.3.2.1. 
+
+NOTE 4 On using the formats described in A.1.3.1 and 
+A. 1.3.2, odd parity is preserved in each row on the re- 
+corded tape. 
+
+A.2 Instrumentation 
+A.2.1 Tape transport 
+
+A.2.1.1 Nominal tape speeds shall be between 
+380 mm/s and 480 mm/s (15.0 in/s and 18,9 in/s), 
+± 1 %, constant speed. 
+
+A.2. 1.2 The equipment shall accept 266,7 mm 
+(10,5 in) reels. 
+
+
+
+18 11410:2006 
+ISOIIEC 3788 : 1990 
+
+
+
+A. 2. 1.3 The start-stop mode is not used; therefore, 
+start-stop parameters are irrelevant. 
+
+A.2.2 Read chain 
+A. 2.2.1 Read head 
+
+
+
+A.2.2.3 Amplifier-differentiator 
+
+A. 2.2. 3.1 The frequency response of the amplifier 
+alone shall be flat within a total variation of 0,1 dB 
+in the frequency range from 1 kHz to 100 kHz, and 
+not more than 3 dB down at 30 Hz and 1 MHz. 
+
+
+
+NOTE 5 The length of gap is defined as the dimension 
+parallel to the tape movement. 
+
+A. 2.2. 1.1 Voltage output parameters are irrelevant. 
+
+A.2.2.1.2 The head mechanical dimensions should 
+be such as to meet the specifications in 6.3. The 
+length of the physical read gap shall be less than 
+2,8 urn (110 pin) but greater than 1,9 urn (75 pin). 
+
+A.2.2.1.3 Transfer function 
+
+A.2.2.1.3.1 Test 
+
+Test the amplitude and phase response relative to 
+the magnetic field induced by a wire placed at right 
+angles to the length of the gap. The position of the 
+wire shall be such as to maximize the head output. 
+The current in the wire shall be constant at all fre- 
+quencies of the test. 
+
+
+
+A.2.2.3.2 The frequency limiting lumped compo- 
+nents within the amplifier shall be designed to 
+produce the following transfer function 1 '. 
+
+A. 2.2. 3.2.1 Function for a 475 mm/s (18 3/4 in/s) 
+drive: 
+
+
+
+tf(S) = 
+
+
+
+AS 
+
+
+
+(S + 1,0 x 10 e )(S 2 + 1,59 x 10 6 5 + 1,2 x 10 f2 ) 
+
+
+
+A being the gain to be adjusted to produce a 2 V 
+peak-to-peak output at 126 ftpmm (3200 ftpi); 
+
+in the numerator, 5 produces differentiation; 
+
+in the denominator the poles are designed for a 
+3-pole Bessel filter with a - 3 dB frequency of 
+120 kHz and a constant delay of 2,32 ps, with less 
+than 1 % deviation in the frequency range from 
+kHz to 90 kHz. 
+
+
+
+A.2.2.1.3.2 Specification 
+
+In the frequency range from 6 kHz to 45 kHz, the 
+amplitude frequency characteristic shall be within 
+1 dB from a + 6 dB per octave line. 
+
+A. 2.2. 2 Impedance match 
+
+
+
+Head-to-amplifier: The loading effect of the input 
+impedance of the amplifier shall not cause the head 
+output to change by more than 1£° dB m the range 
+of frequencies from kHz to 200 kHz. 
+
+
+
+A.2.2.3. 2.2 Function for a 380 mm/s (15 in/s) drive: 
+
+//(S) = — . — dl 
+
+(5 + 6,61 x lO 5 )^ 2 + 1,04 x 10 e 5 + 5,25 x 10 11 ) 
+
+
+
+A being the gain to be adjusted to produce a 2 V 
+peak-to-peak output at 126 ftpmm (3 200 ftpi); 
+
+in the numerator, S produces differentiation; 
+
+in the denominator the poles are designed for a 
+3-pofe Bessel filter with a - 3 dB frequency of 
+80 kHz and a constant delay of 3,48 ps, with less 
+than 1 % deviation in the frequency range from 
+kHz to 60 kHz. 
+
+
+
+1) The 
+used. 
+
+
+
+symbol, S, represents the complex frequency variable arising in the Laplace Transform. The symbol, p, is also often 
+
+
+
+IS 11410: 2006 
+ISO/IEC 3788 : 1990 
+
+
+
+^in<A> °- 
+
+
+
+
+
+
++ V 
+
+
+
+
+
+*1 
+
+
+
+:i © 
+
+
+
+V^V) 
+
+
+
+J (Current source) 
+
+
+
+Figure A.1 — Example of amplifier differentiator 
+
+
+
+A.2.2.3.3 Generalized equation for a 3-pole filter 
+with differentiation (see figure A.1): 
+
+
+
+VaJW 
+
+
+
+AS 
+
+
+
+*U-S) (S+a)(S 2 + 6S + c) 
+where 
+
+F out (S) = L[F out (0] 
+F ln (S) = L[F ln (0] 
+Solution to the equation 
+A = R 2 fR t LC 2 
+a=1//?,C, 
+
+c=1/LC 2 
+
+When selecting the gain A, the value of one of the 
+passive components in the above circuit, and the 
+proper values for a, b and c from either A.2.2.3.2.1 
+or A. 2.2. 3. 2. 2, the solution for the other passive 
+components is determinated. The bias current 
+"/ dc " is selected for convenience and does not af- 
+fect the transfer function. 
+
+
+
+A. 2.2.4 Amplifier-limiter 
+
+The gain of the limiter shall be such as to produce 
+at the output a minimum slope of 0,025 V/ns with a 
+30 kHz, 2 V peak-to-peak sinewave. With the same 
+input, the limiter shall introduce less than a 20 ns 
+asymmetry. 
+
+A. 2.2. 5 Overall response from head gap to output 
+of amplifier-limiter 
+
+A. 2.2. 5.1 Equipment required 
+
+A sinewave generator able to generate frequencies 
+in the range from 5 kHz to 50 kHz. The harmonic 
+distortion content of the generator's sinewave out- 
+put shall be such as to produce less than 1 % har- 
+monic distortion of the sinewave at the output of the 
+amplifier-differentiator. 
+
+A time-interval counter able to measure 5 u.s with a 
+resolution of 10 ns. 
+
+NOTE 6 The required resolution may be obtained by any 
+convenient means; for example, an average of 100 or 
+more independent measurements, each of 100 ns resol- 
+ution, may be used. 
+
+A. 2.2.5.2 Equipment setup 
+
+The setup of the equipment shall f>e as shown in 
+figure A.2. 
+
+
+
+IS 11410: 2006 
+ISO/IEC 3788 : 1990 
+
+
+
+
+
+. r 
+
+
+™ _ 
+
+
+
+
+Sinewave 
+generator 
+
+
+g 
+
+
+
+
+
+
+
+
+I 
+
+
+
+
+r 
+
+
+AmpL- 
+dif. 
+
+
+
+
+Ampl.- 
+
+lim. 
+
+
+| 
+
+
+
+
+i 
+
+i 
+
+
+
+
+I 
+1 
+
+
+1 
+
+1 
+
+_l 
+
+
+_t- 
+
+
+r 
+
+
+
+
+
+
+i chain 
+
+
+
+
+
+
+
+
+Reference rea< 
+
+
+
+
+
+
+Time interval 
+
+
+
+
+
+
+
+
+
+
+
+
+counter 
+
+
+
+
+
+
+
+
+
+Wire placed at right angles to the length 
+of the gap as defined in A.2.2. 1 .3. 1 
+
+
+
+Figure A.2 — Calibration equipment setup 
+
+
+
+A.2.2.S.3 Procedure 
+
+With the generator output set to give 2 V peak-to- 
+peak at the output amplifier-differentiator at each 
+test frequency, vary the frequency of the generator 
+from 6 kHz to 45 kHz. At each test frequency, meas- 
+ure the time displacement between the positive zero 
+crossover of the current sinewave following through 
+the gap wire and the positive transition at the output 
+of the amplifier-limiter. 
+
+A.2.2. 5.4 Specification for the calibration of the 
+read chain 
+
+A.2.2.5.4.1 For the filter in A.2.2.3.2.1 at 475 mm/s 
+(18 3/4 in/s) the time delay between the positive 
+zero crossover of the current sinewave flowing 
+through the gap wire and the positive transition at 
+the output of the amplifier-limiter shall not vary bv 
+more than ± (400 x 7500//)ns*>, where /"is the test 
+frequency, with respect to the time delay measured 
+at 15 kHz, in the range of frequencies from 7,5 kHz 
+to 45 kHz. 
+
+A. 2.2. 5.4.2 For the filter in A.2.2.3.2.2 at 380 mm/s 
+(15 in/s) the time delay between the positive zero 
+crossover of the current sinewave flowing through 
+the gap wire and the positive transition at the output 
+of the amplifier-limiter shall not vary by more than 
+± (500 x 6000// , )ns**', where /is the test frequency, 
+with respect to the time delay measured at 12 kHz, 
+in the range of frequencies from 6 kHz to 36 kHz. 
+
+
+
+A.3 Procedure for measuring flux 
+transition spacing as defined in 5.4 
+
+A.3.1 Equipment required 
+
+A. 3.1.1 The tape generated meeting the conditions 
+specified in clause A.1. 
+
+A.3.1 .2 The tape drive and three read chains as 
+specified in clause A.2. 
+
+A. 3.1. 3 Time-measuring equipment suitable for 
+measuring the time between flux transitions. 
+
+A.3.2 A possible method of measurement 
+
+A. 3.2.1 Assumptions 
+
+For the purposes of this equipment, the time- 
+measuring equipment shall be a triple-trace 
+oscilloscope, and the tape format shall be as speci- 
+fied in A.1.3.1. 
+
+A.3.2.2 Setup 
+
+Arrange the equipment as shown in figure A.3. 
+
+A.3.2.2.1 The flux transition spacings shall be 
+measured as the time between the transitions pres- 
+ent at the output of the amplifier-limiter of track 4. 
+
+A.3. 2.2. 2 The short-term average flux transition 
+spacing as defined in 5.3.2 shall be measured at the 
+output of the amplifier-limiter of track 5 simultane- 
+ously with the measurement on A.3.2.2.1. 
+
+
+
+*) This value is equivalent to + 1 degree at 7,5 kHz 
+**) This value is equivalent to + 1 degree at 6 kHz. 
+
+
+
+10 
+
+
+
+IS 11410: 2006 
+ISO/IEC 3788 : 1990 
+
+
+
+A.3.2.2.3 Track 3 is a track written in such a way 
+as to provide a means for locating the test pattern 
+to be analysed in A.3.2.2.1. 
+
+A.3.2.3 Measurement 
+
+A3. 2. 3,1 Data 
+
+Figure A. 3 shows a picture of the oscilloscope as it 
+might look when analysing the fourth pattern (test 
+pattern 3) as specified in the sequence in A. 1.1. 
+
+A.3.2.3. 2 Measurements 
+
+Measure the time for A, 2?,, B 2 , C,. C 2 , C 3 and C 4 on 
+track 4 and T A , T B , T c ^ and T Cja on track 5. 
+
+A. 3. 2. 3.3 Requirements 
+
+As specified in 5.4, the patterns in figure A. 4 shall 
+meet all of the following requirements: 
+
+
+
+85< 
+
+
+
+93< 
+
+
+
+I± 
+4 
+
+4005, 
+4CXV 
+
+
+
+X100 = ^-<108 
+
+
+
+and i^ <112 
+
+
+
+400 r 
+
+
+
+400, 
+
+
+
+400, 
+
+
+
+44<- 
+
+
+
+T r 
+
+
+
+and 
+
+
+
+and 
+
+
+
+and 
+
+
+
+<62 
+
+
+
+-1,2 
+
+
+
+A.3.2.4 Requirements 
+
+The measurement sequence specified in A.3.2.3 
+shall be repeated on every data pattern recorded on 
+the tape. Each and every data pattern shall meet the 
+requirements of 5.4. 
+
+
+
+
+
+
+
+Read chain track 3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© 
+
+
+
+
+
+
+
+
+
+
+Read chain track 4 
+
+
+
+
+(TO 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Read chain track 5 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tape transport 
+as in A. 2.1 
+
+
+
+Three read chains 
+as in A.2.2 
+
+
+
+Triple-trace 
+oscilloscope 
+
+
+
+Figure A. 3 — Measurement equipment setup 
+
+
+
+11 
+
+
+
+IS 11410: 2006 
+ISO/IEC 3788 : 1990 
+
+
+
+Track 3 
+
+
+
+~l 
+
+
+
+Track 4 
+
+
+
+1 
+
+
+
+Track 5 
+
+
+
+Cy C 2 
+
+
+
+Q C k 
+
+
+
+ft 
+
+
+
+«« : — ^ 
+
+
+
+a, 
+
+
+
+1 1 110 
+
+
+
+I 
+
+
+
+
+
+
+
+5 
+
+
+
+
+
+
+
+
+
+
+1 
+
+
+VV*« 
+
+
+
+
+
+
+•» 
+
+
+
+
+
+
+
+
+-« 
+
+
+S 1 f 3 
+
+
+=5* 
+
+
+
+
+
+Figure A.4 — Test pattern display 
+
+
+
+12 
+
+
+
+IS 11410: 2006 
+ISO/IE C 3788 : 1990 
+
+
+
+Annex B 
+
+(informative) 
+
+Determination of the erase magnetic field direction 
+
+B.1 Principle B.2 Method of test 
+
+The beginning of a correctly erased tape must ex- A section of the erased area of the tape shall be cut 
+
+hibit a North-seeking pole (see 5.7.1). When the point in «uch a way that the end toward the rim end of the 
+
+of a compass needle which normally indicates North tape is Identifiable. This end of the cut section is 
+
+is placed in close proximity to the rim end of a cor- brought as close as possible to the compass needle 
+
+rectly erased tape, the needle will be deflected away and the presence or absence of deflection of the 
+
+from the tape. needle away from the tape is determined. 
+
+
+
+13 
+
+
+
+IS 11410: 2006 
+ISO/IEC 3788 : 1990 
+
+
+
+Annex C 
+
+(informative) 
+
+Storage and transportation 
+
+
+
+C.1 Environment 
+
+It is recommended that during storage and trans- 
+portation the tapes are kept within the following 
+conditions: 
+
+— temperature: 5 °C to 32 °C (40 °F to 90 °F); 
+
+— relative humidity: 20 % to 80 %; 
+
+— wet bulb temperature: not greater than 26 °C 
+(80 °F); 
+
+— there shall be no condensation on the tape. 
+
+C.2 Hazards 
+
+Transportation of data-bearing magnetic tape in- 
+volves three basic potential hazards: 
+
+C.2.1 Impact loads and vibrations during 
+transportation 
+
+Those forces which could cause damage to the reel, 
+or movement within the tape pack, with consequen- 
+tial loss of wind tension. 
+
+Recommendaf/ons 
+
+a) The free end of the tape should be secured to 
+prevent any tendency to unwind. 
+
+b) A rigid plastic container free from dust or other 
+extraneous matter should be used. 
+
+c) The plastic container(s) should be fitted into a 
+rigid box containing adequate shock absorbent 
+material. 
+
+
+
+d) The final box should have a clean interior and a 
+lid construction that provides sufficient sealing to 
+prevent the ingress of dirt and water. 
+
+e) The orientation of the reels within the final box 
+should be such that their axes are horizontal. 
+
+The final box should be clearly marked to indi- 
+cate its correct orientation. 
+
+C.2.2 Extremes of temperature and humidity 
+
+Those extremes which could set up stresses within 
+the body of the tape. 
+
+Recommendations 
+
+a) Extreme changes in temperature and humidity 
+should be avoided wherever possible. 
+
+b) When a tape is received, it should be conditioned 
+in the operating environment (see 4.1) for a 
+period of 2 h to 12 h, depending upon the extent 
+of exposure to conditions outside the operating 
+environment 
+
+C.2.3 Effects of stray magnetic field 
+
+Those effects which would possibly cause corruption 
+of data. 
+
+Recommendation 
+
+A nominal spacing of not less than 80 mm 
+(3,15 in) should exist between the magnetic tape 
+reel and the outer surface of the final container 
+in which case it is considered that the risk of 
+corruption will be negligible. 
+
+
+
+14 
+
+
+
+Bureau of Indian Standards 
+
+
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of 
+goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any 
+form without the prior permission in writingof BIS. This does not preclude the free use, in the course 
+of implementing the standard, of necessary details, such as symbols and sizes, type or grade 
+designations. Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are 
+also reviewed periodically; a standard along with amendments is reaffirmed when such review 
+indicates that no changes are needed; if the review indicates that changes are needed, it is taken 
+up for revision. Users of Indian Standards should ascertain that they are in possession of the latest 
+amendments or edition by referring to the latest issue of 'BIS Catalogue" and 'Standards : Monthly 
+Additions'. 
+
+This Indian Standard has been developed from Doc : LTD 37 (1977). 
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters: 
+
+
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 1 002 
+Telephones : 2323 01 31 , 2323 3375, 2323 9402 Website : www.bis.org.in 
+
+Regional Offices : 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110 002 
+
+
+
+Telephones 
+
+23237617 
+23233841 
+
+
+
+Eastern : 1/14 C. I. T. Scheme VII M, V. I. P. Road, Kankurgachi 
+KOLKATA 700 054 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160 022 
+
+Southern : C. I. T. Campus, IV Cross Road, CHENNAI 600 113 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI400 093 
+
+
+
+2337 8499, 2337 8561 
+2337 8626,2337 9120 
+
+(2603843 
+[2609285 
+
+2254 1216,2254 1442 
+2254 2519,2254 2315 
+
+(2832 9295, 2832 7858 
+[2832 7891 , 2832 7892 
+
+
+
+Branches: AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. 
+FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. 
+LUCKNOW. NAGPUR. PARWANOO. PATNA. PUNE. RAJKOT. 
+THIRUVANANTHAPURAM.VISAKHAPATNAM. 
+
+Printed at New India Printing Press, Khurja, India 
+
+
+

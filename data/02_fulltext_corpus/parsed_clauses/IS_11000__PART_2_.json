@@ -1,0 +1,88 @@
+{
+  "is_number": "IS IS_11000__PART_2_",
+  "standard_id": "IS IS_11000__PART_2_",
+  "title": "Indian Standard Specification / Test Method (IS IS_11000__PART_2_)",
+  "ia_identifier": "IS_11000__PART_2_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of IEC 60695 specifies the glow-wire apparatus and common test procedure to simulate the effect of thermal stresses which may be produced by heat sources such as glowing elements or overloaded resistors, for short periods, in order to assess the fire hazard by a simulation technique. The test described in this standard is applicable to electrotechnica! equipment, its subassemblies and components, and may also be applied to solid electrical insulating materials or other solid combustible materials. One of the responsibilities of a technical committee is, wherever applicable, to make use of basic safety publications in the preparation of its publications.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11000 (PART 2/SEC 1)",
+      "standard_id": "IS 11000 (PART 2/SEC 1)",
+      "title": "Indian Standard Specification / Test Method (IS 11000 (PART 2/SEC 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60695",
+      "standard_id": "IS/IEC 60695",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60695)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60584",
+      "standard_id": "IS/IEC 60584",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60584)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4046",
+      "standard_id": "IS/ISO 4046",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4046)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 13943",
+      "standard_id": "IS/IEC 13943",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 13943)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "5 K",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11000__PART_2_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "purity of at least 99,8 %"
+    ],
+    "electrical_and_safety_parameters": [
+      "flammability test"
+    ],
+    "dimensional_tolerances": [
+      "nominal diameter of 1,0 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 20350
+}

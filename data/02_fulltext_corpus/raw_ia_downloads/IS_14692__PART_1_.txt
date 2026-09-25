@@ -1,0 +1,3019 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live" 
+
+
+
+IS 14692-1 (1999) : Information Technology - Vocabulary, 
+Part 1: Fundamental Terms [LITD 14: Software and System 
+Engineering] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New' 
+
+
+
+■K^y / 1 juaaaws^fea rs^^TTF^ 
+
+
+
+2*S< W I *>S*V2^NK^ 
+
+
+
+^frcvvv^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+.^^_ 
+
+
+
+• 
+
+
+
+
+BLANK PAGE 
+
+
+
+*rt*2V^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS1 4692 (Part 1 ): 1999 
+ISO/IEC 2382-1 :1993 
+
+( Reaffirmed 2003 ) 
+
+Indian Standard 
+INFORMATION TECHNOLOGY — VOCABULARY 
+
+PART1 FUNDAMENTAL TERMS 
+
+
+
+ICS 01.040.35 
+
+
+
+© BIS 1999 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+June 1999 p r j ce Group 7 
+
+
+
+Software Systems, Languages and Methodologies Sectional Committee, LTD 33 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with ISO/IEC 2382-1 : 1993 'Information Technology — 
+Vocabulary — Part 1 : Fundamental terms', issued jointly by the International Organization for 
+Standardization ( ISO ) and International Electrotechnical Commission ( I EC ), was adopted by the 
+Bureau of Indian Standards on the recommendation of Software Systems, Languages and Method- 
+ologies Sectional Committee and approval of the Electronics and Telecommunication Division Council. 
+
+The text of the ISO/IEC standard has been approved as suitable for publication as Indian 
+Standard without deviations. Certain conventions are, however, not identical to those used in Indian 
+Standards. Attention is particularly drawn to the following: 
+
+Wherever the words International Standard' appear referring to this standard, they should be 
+read as Indian Standard'. 
+
+CROSS REFERENCES 
+
+The concerned technical committee has reviewed the provisions of the following standards referred 
+in this adopted standard and has decided that these are acceptable for use in conjunction with this 
+standard: 
+
+ISO 1087 : 1990 Terminology — Vocabulary 
+
+ISO 31 66 : 1 988 Codes for the representation of names of countries 
+
+
+
+IS14692(Part1):1999 
+ISO/IEC 2382-1 :1993 
+
+
+
+Indian Standard 
+INFORMATION TECHNOLOGY — VOCABULARY 
+
+
+
+PART1 FUNDAMENTAL TERMS 
+
+
+
+Section 1 : General 
+
+1.1 Scope 
+
+This part of ISO/IEC 2382 is intended to facilitate 
+international communication in information 
+techonology. It presents, in two languages, terms 
+and definitions of selected concepts relevant to 
+the field of information technology and identifies 
+relationships among the entries. 
+
+In order to facilitate their translation into other 
+languages, the definitions are drafted so as to 
+avoid, as far as possible, any peculiarity attached 
+to a language. 
+
+This part of ISO/IEC 2382 deals with the most 
+important concepts on which are based the further 
+specialized sections in various technical fields, 
+as well as the essential terms which should be 
+used by nonspecialist users in communication 
+with specialists in information processing. 
+
+1.2 Normative references 
+
+The following standards contain provisions which, 
+through reference in this text, constitute provisions 
+of this part of ISO/IEC 2382. At the time of 
+publication, the editions indicated were valid. All 
+standards are subject to revision, and parties to 
+agreements based on this part of ISO/IEC 2382 
+are encouraged to investigate the possibility of 
+applying the most recent editions of the standards 
+indicated below. Members of IEC and ISO maintain 
+registers of currently valid International Standards. 
+
+ISO 1087 : 1990, Terminology - Vocabulary 
+
+ISO 3166 : 1988, Codes for the representation 
+of names of countries. 
+
+1 .3 Principles and rules followed 
+1 .3.1 Definition of an entry 
+
+Section 2 comprises a number of entries. Each 
+entry consists of a set of essential elements 
+that includes an index number, one term or several 
+synonymous terms, and a phrase defining one 
+
+
+
+concept. In addition, an entry may include 
+examples, notes or illustrations to facilitate 
+understanding of the concept. 
+
+Occasionally, the same term may be defined in 
+different entries, or two or more concepts may 
+be covered by one entry, as described in 1 .3.5 
+and 1 .3.8 respectively. 
+
+Other terms such as vocabulary, concept, terms 
+and definition, are used in this part of ISO/IEC 
+2382 with the meaning defined in ISO 1 087. 
+
+1 .3.2 Organization of an entry 
+
+Each entry contains the essential elements defined 
+in 1.3.1 and, if necessary, additional elements. 
+The entry may contain the following elements in 
+the following order: 
+
+a) an index number (common for all languages 
+in which this part of ISO/IEC 2382 is published); 
+
+b) the terms or the generally preferred term in 
+the language. The absence of a generally preferred 
+term for the concept in the language is indicated 
+
+by a symbol consisting of five points ( ); a 
+
+row of dots may be used to indicate, in a term, a 
+word to be chosen in a particular case; 
+
+c) the preferred term in a particular country 
+(identified according to the rules of I SO 31 66) ; 
+
+d) the abbreviation for the term; 
+
+e) permitted synonymous term(s); 
+
+f) the text of the definition (see 1 .3.4); 
+
+g) one or more examples with the heading 
+"Example(s)"; 
+
+h) one or more notes specifying particular cases 
+in the field of application of the concepts with 
+the heading "NOTE(S)"; 
+
+i) a picture, a diagram, or a table which could be 
+common to several entries. 
+
+1 .3.3 Classification of entries 
+
+A two-digit serial number is assigned to each 
+
+
+
+IS14692(Part1):1999 
+ISO/IEC 2382-1 :1993 
+
+part of this International Standard, beginning with 
+01 for "fundamental terms". 
+
+The entries are classified in groups to each of 
+which is assigned a four-digit serial number; the 
+first two digits being those of the part of this 
+International Standard. 
+
+Each entry is assigned a six-digit index number; 
+the first four digits being those of the part of 
+this International Standard and the group. 
+
+To show the relationship between versions of 
+this International Standard in various languages, 
+the numbers assigned to parts, groups, and entries 
+are the same for all languages. 
+
+1.3.4 Selection of terms and wording of 
+definitions 
+
+The selection of terms and the wording of definitions 
+have, as far as possible, followed established 
+usage. Where there were contradictions, solutions 
+agreeable to the majority have been sought. 
+
+1.3.5 Multiple meanings 
+
+When, in one of the working languages, a given 
+term has several meanings, each meaning is 
+given a separate entry to facilitate translation 
+into other languages. 
+
+1.3.6 Abbreviations 
+
+As indicated in 1.3.2, abbreviations in current 
+use are given for some terms. Such abbreviations 
+are not used in the texts of the definitions, examples, 
+or notes. 
+
+1 .3.7 Use of parentheses 
+
+In some terms, a word or words printed in bold 
+typeface are placed between parentheses. These 
+words are part of the complete term, but they 
+may be omitted when use of the abridged term 
+in a technical context does not introduce 
+ambiguity. In the text of another definition, example, 
+or note of ISO/IEC 2382, such a term is used 
+only in its complete form. 
+
+In some entries, the terms are followed by words 
+in parentheses in normal typeface. These words 
+are not a part of the term but indicate directives 
+for the use of the term, its particular field of 
+application, or its grammatical form. 
+
+
+
+1 .3.8 Use of brackets 
+
+When several closely related terms can be defined 
+by texts that differ only in a few words, the terms 
+and their definitions are grouped in a single entry. 
+The words to be substituted in order to obtain 
+the different meanings are placed in brackets, 
+i.e. [ ], in the same order in the term and in the 
+definition. To clearly identify the words to be 
+substituted, the last word that according to the 
+above rule could be placed in front of the opening 
+bracket is, wherever possible, placed inside the 
+bracket and repeated for each alternative. 
+
+1.3.9 Use of terms printed in italics in 
+definitions and the use of an asterisk 
+
+A term printed in italics in a definition, an example, 
+or a note is defined in another entry in this 
+International Standard, which may be in another 
+part. However, the term is printed in italics only 
+the first time it occurs in each entry. 
+
+Italics are also used for other grammatical forms 
+of a term, for example, plurals of nouns and 
+participles of verbs. 
+
+The basic forms of all terms printed in italics 
+which are defined in this part of ISO/IEC 2382 
+are listed in the index at the end of the part 
+(see 1.3.11 ). 
+
+An asterisk is used to separate terms printed in 
+italic typeface when two such terms are referred 
+to in separate entries and directly follow each 
+other ( or are separated only by a punctuation 
+mark). 
+
+Words or terms that are printed in normal typeface 
+are to be understood as defined in current 
+dictionaries or authoritative technical vocabularies. 
+
+1.3.10 Spelling 
+
+In the English language version of this part of 
+ISO/IEC 2382, terms, definitions, examples, and 
+notes are given in the spelling preferred in the 
+USA. Other correct spellings may be used without 
+violating this part of ISO/IEC 2382. 
+
+1.3.11 Organization of the alphabetical index 
+
+For each language used, an alphabetical index 
+is provided at the end of each part. The index 
+includes all terms defined in the part. Multiple- 
+word terms appear in alphabetical order under 
+each of their key words. 
+
+
+
+Section 2 : Terms and definitions 
+
+01 Fundamental terms 
+
+01.01 General terms 
+
+01.01.01 
+
+information (in information processing) 
+Knowledge concerning objects, such as facts, 
+events, things, processes, or ideas, including 
+concepts, that within a certain context has a 
+particular meaning. 
+
+NOTE — see figure 1. 
+
+01.01.02 
+data 
+
+A reinterpretable representation of information 
+in a formalized manner suitable for communication, 
+interpretation, or processing. 
+
+NOTES 
+
+1 Data can be processed by humans or by automatic means. 
+
+2 See figure 1 . 
+
+01.01.03 
+text 
+
+Data in the form of characters, symbols, words, 
+phrases, paragraphs, sentences, tables, or other 
+character arrangements, intended to convey a 
+meaning, and whose interpretation is essentially 
+based upon the reader's knowledge of some natural 
+language or artificial language. 
+
+Example: A business letter printed on paper or 
+displayed on a screen. 
+
+01.01.04 
+to access 
+
+To obtain the use of a resource. 
+
+01.01.05 
+
+information processing 
+
+The systematic performance of operations upon 
+information, that includes data processing and 
+may include operations such as data commu- 
+nication and office automation. 
+
+NOTES 
+
+1 The term information processing must not be used as a 
+synonym for data processing. 
+
+2 See figure 1. 
+
+01.01.06 
+
+data processing 
+
+
+
+IS14692(Part1):1999 
+ISO/IEC 2382-1 :1993 
+
+DP (abbreviation) 
+
+automatic data processing 
+
+ADP (abbreviation) 
+
+The systematic performance of operations upon 
+
+data. 
+
+Example: Arithmetic or logic operations upon data, 
+merging or sorting of data, assembling or compiling 
+of programs, or operations on text, such as editing, 
+sorting, merging, storing, retrieving, displaying, 
+or printing. 
+
+NOTES 
+
+1 The term data processing must not be used as a synonym 
+for information processing. 
+
+2 See figure 1. 
+
+01.01.07 
+hardware 
+
+All or part of the physical components of an 
+information processing system. 
+
+Example: Computers, peripheral devices. 
+
+01.01.08 
+software 
+
+All or part of the programs, procedures, rules, 
+and associated documentation of an information 
+processing system. 
+
+NOTE — Software is an intellectual creation that is 
+independent of the medium on which it is recorded. 
+
+01.01.09 
+firmware 
+
+An ordered set of instructions and associated 
+cfafa* stored in a way that is functionally 
+independent of main storage, usually in a ROM. 
+
+01.01.10 
+storage (device) 
+
+A functional unit into which data can be placed, 
+in which they can be retained, and from which 
+they can be retrieved. 
+
+01.01.11 
+memory 
+
+All of the addressable storage space in a 
+processing unit and all other internal storagethaX 
+is used to execute* instructions. 
+
+01.01.12 
+automatic 
+
+Pertaining to a process or equipment that, under 
+specified conditions, functions without human 
+intervention. 
+
+
+
+IS 146924 ParM): 1999 
+ISO/IEC 2382-1 :1993 
+
+01.01.13 
+to automate 
+
+To make a process or equipment automatic. 
+
+01.01.14 
+automation 
+
+The conversion of processes or equipment to 
+automatic operation, or the results of the conversion. 
+
+01.01.15 
+
+to computerize 
+
+To automate by means of computers. 
+
+01.01.16 
+computerization 
+
+Automation by means of computers. 
+
+01.01.17 
+
+computer generation 
+
+A category in a historical classification of computers 
+based mainly on the technology used in their 
+manufacture. 
+
+Example: First generation based on relays or 
+vacuum tubes, the second on transistors, the 
+third on integrated circuits. 
+
+01.01.18 
+computer science 
+
+The branch of science and technology that is 
+concerned with information processing by means 
+of computers. 
+
+01.01.19 
+
+computer center 
+
+data processing center 
+
+. A facility that includes personnel, hardware, and 
+software, organized to provide information 
+processing services. 
+
+01.01.20- 
+
+data processing system 
+computer system 
+computing system 
+
+One or more computers, peripheral equipment, 
+and software that perform data processing. 
+
+01.01.21 
+
+information processing system 
+
+One or more data processing systems and devices, 
+such as office and communication equipment, 
+that perform information processing. 
+
+01.01.22 
+information system 
+
+An information processing system, together with 
+associated organizational resourses such as 
+human, technical, and financial resources, that 
+
+
+
+provides and distributes information. 
+
+01.01.23 
+resource 
+computer resource 
+
+Any element of a data processing system needed 
+to perform required operations. 
+
+Example: Storage devices, input-output units, 
+one or more processing units, data, files, and 
+programs. 
+
+01.01.24 
+
+1 . process 
+
+A predetermined course of events defined by 
+its purpose or by its effect, achieved under given 
+conditions. 
+
+01.01.25 
+
+2. process (in data processing) 
+
+The predetermined course of events that occur 
+during the execution of all part of a program. 
+
+01.01.26 
+configuration 
+
+The manner in which the hardware and software 
+of an information processing system are organized 
+and interconnected. 
+
+01.01.27 
+block diagram 
+
+A diagram of. a system in which the principal 
+parts or functions are represented by blocks 
+connected by lines that show the relationships 
+of the blocks. 
+
+NOTE — Block diagrams are not restricted to physical 
+devices. 
+
+01.01.28 
+synchronous 
+
+Pertaining to two or more processes that depend 
+upon the occurrence of specific events such as 
+common timing signals. 
+
+01.01.29 
+asynchronous 
+
+Pertaining to two or more processes that do not 
+depend upon the occurrence of specific events 
+such as common timing signals. 
+
+01.01.30 
+input (data) 
+
+Data entered into an information processing system 
+or any of its parts for storage or processing. 
+
+01.01.31 
+input (process) 
+
+The processor entering data into an information 
+
+
+
+processing system or any of its parts for storage 
+or processing. 
+
+01.01.32 
+
+input (adjective) 
+
+Pertaining to a device, process, or input-output 
+
+channel involved in an input process, or to the 
+
+associated data or states. 
+
+NOTE — The word "input" may be used in place of "input 
+data", "input signal", or Input process" when such a usage 
+is clear in a given context. 
+
+01.01.33 
+output (data) 
+
+Data that an information processing system, or 
+any of its parts, transfers outside of that system 
+or part. 
+
+01.01.34 
+output (process) 
+
+The process by which an information processing 
+system, or any of its parts, transfers data outside 
+of that system or part. 
+
+01.01.35 
+
+output (adjective) 
+
+Pertaining to a device, process, or input-output 
+
+channel involved in an output process, or to the 
+
+associated data or states. 
+
+NOTE — The word "output" may be used in place of "output 
+data", "output signal", or "output process" when such a usage 
+is clear in a given context. 
+
+01.01.36 
+to download 
+
+To transfer* programs or data from a computer 
+to a connected computer with fewer resources, 
+typically from a mainframeXo a personal computer 
+
+01.01.37 
+to upload 
+
+To transfer* programs or data from a connected 
+computerXo a computer with greater resources, 
+typically from a personal compterXo a mainframe. 
+
+01.01.38 
+interface 
+
+A shared boundary between two functional units, 
+defined by various characteristics pertaining to 
+the functions, physical interconnections, signal 
+exchanges, and other characteristics, as 
+appropriate. 
+
+01.01.39 
+
+data communication 
+
+Transfer of data among functional units according 
+
+
+
+IS14692(Part1):1999 
+ISO/IEC 2382-1 :1993 
+
+to sets of rules governing data transmission and 
+the coordination of the exchange. 
+
+01.01.40 
+functional unit 
+
+An entity of hardware or software, or both, capable 
+of accomplishing a specified purpose. 
+
+01.01.41 
+
+online (adjective) 
+
+on-line/GB/(adjective) 
+
+Pertaining to the operation of a functional unit 
+
+when under the control of a computer. 
+
+01 .0 .42 
+
+offline (adjective) 
+
+off-line/GB/(adjective) 
+
+Pertaining to the operation of a functional unit 
+
+that takes place either independently of, or in 
+
+parallel with, the main operation of a computer. 
+
+01.01.43 
+
+timesharing 
+
+time slicing (deprecated in this sense) 
+
+An operating technique of a data processing 
+
+system that provides for the interleaving in time 
+
+of two or more processes in one processor. 
+
+01.01.44 
+network 
+
+An arrangement of nodes and interconnecting 
+branches. 
+
+01.01.45 
+computer network 
+
+A network of data processing nodes that are 
+interconnected for the purpose of data 
+communication. 
+
+01.01.46 
+
+local area network 
+
+LAN (abbreviation) 
+
+A computer network located on a user's premises 
+
+within a limited geographical area. 
+
+NOTE — Communication within a local area network is 
+not subject to external regulations: however, communication 
+across the LAN boundary may be subject to some form 
+of regulation 
+
+01.01.47 
+interoperability 
+
+The capability to communicate, execute* programs, 
+or transfer data among various functional units 
+in a manner that requires the user to have little 
+or no knowledge of the unique characteristics of 
+those units. 
+
+
+
+IS 14692 (Parti ) : 1999 
+ISO/IEC 2382-1 :1993 
+
+01.01.48 
+turnkey system 
+
+A data processing system that is ready to use 
+when installed, and supplied to the user in a ready- 
+to-run condition possibly customized to a specific 
+user or application. 
+
+NOTE — Some preparatory work on the user's data may 
+be required. 
+
+01.01.49 
+virtual 
+
+Pertaining to a functional unit that appears to 
+be real, but whose functions are accomplished 
+by other means. 
+
+01.01.50 
+
+virtual machine 
+
+VM (abbreviation) 
+
+A virtual* data processing system that appears 
+
+to be at the exclusive disposal of a particular 
+
+user, but whose functions are accomplished by 
+
+sharing the resources of a real data processing 
+
+system. 
+
+01.01.51 
+data medium 
+
+A material in or on which data can be recorded 
+and from which data can be retrieved. 
+
+01.01.52 
+disk 
+
+A data medium consisting of a flat circular plate 
+that is rotated in order to read or write* data on 
+one or both sides. 
+
+01.01.53 
+to log on 
+to log in 
+
+To initiate a session. 
+
+01.01.54 
+to log off 
+to log out 
+
+To end a session. 
+
+01.02 Information representation 
+
+01.02.01 
+
+signal 
+
+A variation of a physical quantity used to represent 
+data. 
+
+01.02.02 
+discrete 
+
+Pertaining to data that consist of distinct elements, 
+such as characters, or to physical quantities having 
+a finite number of distinctly recognizable values. 
+
+
+
+as well as to processes and functional units that 
+use those data. 
+
+01.02.03 
+numeric 
+numerical 
+
+Pertaining to data that consist of numerals as 
+well as to processes and functional units that 
+use those data. 
+
+01.02.04 
+digital 
+
+Pertaining to data that consist of digits as well 
+as to processes and functional units that use 
+those data. 
+
+01.02.05 
+alphanumeric 
+
+Pertaining to data that consist of letters, digits, 
+and usually other characters, such as punctuation 
+marks, as well as to processes and functional 
+units that use those data. 
+
+01.02.06 
+analog 
+
+Pertaining to continuously variable physical 
+quantities or to data presented in a continuous 
+form, as well as to processes and functional units 
+that use those data. 
+
+01.02.07 
+symbol 
+
+A graphic representation of a concept that has 
+meaning in a specific context. 
+
+01.02.08 
+
+bit 
+
+binary digit 
+
+Either of the digits or 1 when used in the binary 
+numeration system. 
+
+01.02.09 
+byte 
+
+A stringthat consists of a number of bits, treated 
+as a unit, and usually representing a character 
+or a part of a character. 
+
+NOTES 
+
+1 The number of bits in a byte is fixed for a given data 
+processing system. 
+
+2 The number of bits in a byte is usually 8. 
+
+01.02.10 
+octet 
+8-bit byte 
+
+A byte that consists of eight bits. 
+
+
+
+01.02.11 
+character 
+
+A member of a set of elements that is used for 
+the representation, organization, or control of data. 
+
+NOTE — Characters may be categorized as follows : 
+
+Types Examples 
+
+[digit 
+
+[ graphic character [ letter 
+
+[ [ ideogram 
+
+[ [ special character 
+
+character [ 
+
+[ [ transmission control character 
+
+[ control character [format effector 
+
+[ code extension character 
+[ device control character 
+
+01.02.12 
+
+digit 
+
+numeric character 
+
+A character that represents a nonnegative integer. 
+
+Example: One of the characters 0,1 , ..., F in the 
+hexadecimal numeration system, 
+
+01.03 Hardware 
+
+01.03.01 
+processing unit 
+central processing unit 
+
+CPU (abbreviation) 
+
+A functional unit that consists of one or more 
+
+processors and their internal storages. 
+
+NOTE — In English, the term processor is often used 
+synonymously with processing unit 
+
+01.03.02 
+mainframe 
+
+A computer, usually in a computer center, with 
+extensive capabilities and resources to which 
+other computers may be connected so that they 
+can share facilities. 
+
+01.03.03 
+computer 
+
+A functional unit that can perform substantial 
+computations, including numerous arithmetic 
+operations and logic operations without human 
+intervention. 
+
+NOTES 
+
+1 A computer may consist of a stand-alone unit or several 
+interconnected units. 
+
+2 In English, in information processing, the term computer 
+usually refers to a digital computer. 
+
+
+
+IS14692(Part1):1999 
+ISO/IEC 2382-1: 1993 
+
+01.03.04 
+digital computer 
+
+A computer that is controlled by internally stored* 
+programs and that is capable of using common 
+storage for all or part of a program and also for 
+all or part of the data necessary lor the execution 
+of the programs; executing user-written or user- 
+designated programs; performing user-designated 
+manipulation of digitally represented discrete data, 
+including arithmetic operations and bgic operations; 
+and executing programs that modify themselves 
+during their execution. 
+
+NOTE — In English, in information processing, the term 
+computer is often used to refer to a digital computer. 
+
+01.03.05 
+analog computer 
+
+A computer whose operations are analogous to 
+the behaviour of another system and that accepts, 
+processes, and produces analog data. 
+
+01.03.06 
+hybrid computer 
+
+A computer that integrates analog computer 
+components and digital computer components 
+by interconnection of digital-to-analog converters 
+and analog-to-digital converters. 
+
+NOTE — A hybrid computer may use or produce analog 
+data and discrete data. 
+
+01.03.07 
+
+peripheral equipment 
+
+Any device that is controlled by and can 
+communicate with a particular computer. 
+
+Example: Input-output units, external storage. 
+
+01.03.08 
+processor 
+
+In a computer, a functional unit that interprets 
+and executes instructions. 
+
+NOTE — A processor consists of at least an instruction 
+control unit and an arithmetic and logic unit. 
+
+01.03.09 
+microprocessor 
+
+A processor whose elements have been 
+miniaturized into one or a few integrated circuits. 
+
+01.03.10 
+
+integrated circuit 
+
+IC (abbreviation) 
+
+microchip 
+
+chip 
+
+A small piece of semiconductive material that 
+
+
+
+IS 14692 (Parti ): 1999 
+ISO/IEC 2382-1 :1993 
+
+contains interconnected electronic elements. among its hardware and software components. 
+
+
+
+01.03.11 
+terminal 
+
+A functional unit in a system or communication 
+networkaX which data may be entered or retrieved. 
+
+01.03.12 
+user terminal 
+
+A ferm/na/that enables a user to communicate 
+with a computer. 
+
+01.03.13 
+workstation 
+
+A functional unitXhaX usually has special purpose 
+computing capabilities and includes user-oriented 
+input units and output units. 
+
+Example: A programmable terminal, a 
+nonprogrammable terminal or a stand-alone 
+microcomputer 
+
+01.03.14 
+
+programmable termimal 
+intelligent terminal 
+
+A user terminal lhat has built-in data processing 
+capability. 
+
+01.03.15 
+
+nonprogrammable terminal 
+dumb terminal 
+
+A user terminal that has no independent data 
+processing capability. 
+
+01.03.16 
+
+video display terminal 
+
+VDT (abbreviation) 
+
+visual display terminal 
+
+visual display unit 
+
+VDU (abbreviation) 
+
+A user terminal 'with a display* screen, and usually 
+
+equipped with an input unit such as a keyboard. 
+
+01.03.17 
+calculator 
+
+A device that is suitable for performing arithmetic 
+operations, but that requires human intervention 
+to alter its stored 1 " program, if any, and to initiate 
+each operation or sequence of operations. 
+
+NOTE — A calculator performs some of the functions of 
+a computer, but usually operates only with frequent human 
+intervention. 
+
+01.03.18 
+
+computer architecture 
+
+The logical structure and functional characteristics 
+of a computer, including the interrelationships 
+
+
+
+01.03.19 
+microcomputer 
+
+A digital computer whose processing unit consists 
+of one or more microprocessors, and includes 
+storage and input-output facilities. 
+
+01.03.20 
+
+personal computer 
+PC (abbreviation) 
+
+A microcomputer primarily intended for stand- 
+alone use by an individual. 
+
+01.03.21 
+
+portable computer 
+
+A microcomputer that can be hand-carried for 
+use in more than one location. 
+
+01.03.22 
+laptop computer 
+
+A battery powered portable computer small and 
+light enough to be operated on a person's lap. 
+
+01.03.23 
+minicomputer 
+
+A digital computerXhaX is functionally intermediate 
+between a microcomputer and a mainframe. 
+
+01.03.24 
+supercomputer 
+
+Any of the class of computers that have the 
+highest processing speeds available at a given 
+time for solving scientific and engineering 
+problems. 
+
+01.03.25 
+
+MIPS (abbreviation) 
+
+millions of instructions per second 
+
+A unit of measure of processing performance 
+equal to one million instructions per second. 
+
+01.03.26 
+
+MFLOPS (abbreviation) 
+
+megaflops 
+
+A unit of measure of processing performance 
+equal to one million floating-point operations per 
+second. 
+
+NOTE — This unit of measure is used in scientific computer 
+applications. 
+
+01.03.27 
+connectivity 
+
+The capability of a system or device to be attached 
+to other systems or devices without modification. 
+
+01.04 Software 
+
+
+
+01.04.01 
+
+application software 
+application program 
+
+Software or a program that is specific to the solution 
+of an application problem. 
+
+Example: A spreadsheet program. 
+
+01.04.02 
+system software 
+
+Application-independent software that supports 
+the running of application software. 
+
+Example: An operating system. 
+
+01.04.03 
+
+support software 
+support program 
+
+Software or a program that aids in the development, 
+maintenance, or use of other software or provides 
+general application-independent capability. 
+
+Example: A compiler, a database management 
+system. 
+
+01.04.04 
+
+system documentation 
+
+The collection of documents that describe the 
+requirements, capabilities, limitations, design, 
+operation, and maintenance of an information 
+processing system. 
+
+01.04.05 
+software package 
+
+A complete and documented set of programs 
+supplied to several users for a generic application 
+or function. 
+
+NOTE — Some software packages are alterable for a specific 
+application. 
+
+01.04.06 
+
+portability (of a program) 
+
+The capability of a program to be executed on 
+various types of data processing systems without 
+converting the program to a different language 
+and with little or no modification. 
+
+01.04.07 
+
+software engineering 
+
+The systematic application of scientific and 
+technological knowledge, methods, and experience 
+to the design, implementation, testing, and 
+documentation of software to optimize its 
+production, support, and quality. 
+
+01.04.08 
+operating system 
+
+
+
+IS14692(Part1):1999 
+ISO/IEC 2382-1 :1993 
+
+OS (abbreviation) 
+
+Software that controls the execution of programs 
+and that may provide services such as resource 
+allocation, scheduling, input-output control, and 
+data management. 
+
+NOTE — Although operating systems are predominantly 
+software, partial hardware implementations are possible. 
+
+01.05 Programming 
+
+01.05.01 
+program 
+computer program 
+
+A syntactic unit that conforms to the rules of a 
+particular programming language and that is 
+composed of declarations and statements or 
+instructions needed to solve a certain function, 
+task, or problem. 
+
+01.05.02 
+
+to program 
+
+to code (deprecated in this sense) 
+
+To design, write, modify, and test programs. 
+
+01.05.03 
+programming 
+
+The designing, writing, modifying, and testing 
+of programs. 
+
+01.05.04 
+
+routine 
+
+program (deprecated in this sense) 
+
+A program, or part of a program, that may have 
+
+some general or frequent use. 
+
+01.05.05 
+algorithm 
+
+A finite ordered set of well-defined rules for the 
+solution of a problem. 
+
+01.05.06 
+flowchart 
+flow diagram 
+
+A graphical representation of a process or the 
+step-by-step solution of a problem, using suitably 
+annotated geometric figures connected by ftowlines 
+for the purpose of designing or documenting a 
+process or program. 
+
+01.05.07 
+to debug 
+
+To detect, locate and eliminate errors in programs. 
+
+01.05.08 
+natural language 
+
+A language whose rules are based on current 
+usage without being specifically prescribed. 
+
+
+
+IS14692(Part1):1999 
+ISO/IEC 2382-1 :1993 
+
+01.05.09 
+artificial language 
+
+A language whose rules are explicitly established 
+prior to its use. 
+
+01.05.10 
+programming language 
+
+An artificial language for expressing programs. 
+
+01.06 Applications and end user 
+
+01.06.01 
+simulation 
+
+The use of a data processing system to represent 
+selected behavioral characteristics of a physical 
+or abstract system. 
+
+Example: The representation of air streams around 
+airfoils at various velocities, temperatures, and 
+air pressures. 
+
+01.06.02 
+emulation 
+
+The use of a data processing system to imitate 
+another data processing system, so that the 
+imitating system accepts the same data t executes 
+the same programs, and achieves the same results 
+as the imitated system. 
+
+NOTE — Emulation is usually achieved by means of 
+hardware or firmware. 
+
+01.06.03 
+information retrieval 
+
+IR (abbreviation) 
+
+Actions, methods and procedures for obtaining 
+
+information on a given subject from stored* data. 
+
+01.06.04 
+hard copy 
+
+A permanent copy of a display image generated 
+on an output unit such as a printer or a plotter, 
+and which can be carried away. 
+
+01.06.05 
+soft copy 
+
+Nonpermanent output of information in audio or 
+visual format. 
+
+Example: A cathode ray tube display. 
+
+01.06.06 
+menu 
+
+A list of options displayed by a data processing 
+system, from which the user can select an action 
+to be initiated. 
+
+01.06.07 
+prompt 
+
+
+
+A visual or audible message sent by a program 
+to request the user's response. 
+
+01.06.08 
+computer graphics 
+
+Methods and techniques for construction, 
+manipulation, storage, and display of imagesby 
+means of a computer. 
+
+01.06.09 
+
+office automation 
+
+OA (abbreviation) 
+
+The integration of office activities by means of 
+
+an information processing system. 
+
+NOTE — This term includes in particular the processing 
+and communication of text, images, and voice. 
+
+01.06.10 
+
+text processing 
+
+word processing 
+
+Dafa processing operations on text, such as 
+entering, editing, sorting, merging, retrieving, 
+storing, displaying, or printing. 
+
+01.06.11 
+compatibility 
+
+The capability of a functional unit to meet the 
+requirements of a specified interface without 
+appreciable modification. 
+
+01.06.12 
+
+artificial intelligence 
+
+Al (abbreviation) 
+
+The branch of computer science devoted to 
+
+developing data processing systems that perform 
+
+functions normally associated with human 
+
+intelligence, such as reasoning, learning, and 
+
+self-improvement. 
+
+01.06.13 
+robotics 
+
+The techniques involved in designing, building 
+and using robots. 
+
+01.06.14 
+
+computer-aided 
+
+computer-assisted 
+
+CA (abbreviation) 
+
+Pertaining to a technique or process in which 
+
+part of the work is done by a computer. 
+
+01.06.15 
+
+electronic publishing 
+computer-aided publishing 
+computer-assisted publishing 
+
+The production of typeset-quality documents 
+including text, graphics, and pictures with the 
+
+
+
+10 
+
+
+
+assistance of a computer. 
+
+NOTE — In some instances, electronic publishing is 
+accomplished through the use of application programs and 
+in other instances it is achieved through the use of a 
+dedicated system. 
+
+01.06.16 
+
+desktop publishing 
+
+Electronic publishing using a microcomputer. 
+
+01.06.17 
+electronic mail 
+Email 
+
+Correspondence in the form of messages 
+transmitted between user terminals over a 
+computer network. 
+
+01.06.18 
+
+knowledge base 
+
+K-base (abbreviation) 
+
+A database that contains inference rules and 
+
+informatbn about human experience and expertise 
+
+in a domain. 
+
+NOTE — In self-improving systems, the knowledge base 
+additionally contains information resulting from the solution 
+of perviously encountered problems. 
+
+01.06.19 
+
+expert system 
+
+ES (abbreviation) 
+
+A computer system that provides for expertly 
+
+solving problems in a given field or application 
+
+area by drawing inferences from a knowledge 
+
+base developed from human expertise. 
+
+NOTES 
+
+1 The term is sometimes used synonymously with , though 
+it is usually taken to emphasize expert knowledge. 
+
+2 Some expert systems are able to improve their knowledge 
+base and develop new inference rules based on their 
+experience with previous problems. 
+
+01.06.20 
+
+image processing 
+
+picture processing 
+
+The use of a data processing system to create, 
+scan, analyze, enhance, interpret, or display 
+images. 
+
+01.06.21 
+spreadsheet program 
+
+A program that displays a table of cells arranged 
+in rows and columns, in which the change of the 
+contents of one cell can cause recomputation 
+of one or more cells based on userdef ined relations 
+among the cells. 
+
+
+
+IS14692(Part1):1999 
+ISO/IEC 2382-1 :1993 
+
+01.06.22 
+user-friendly 
+
+Pertaining to ease and convenience of use by 
+humans. 
+
+01 .07 Computer security 
+
+01.07.01 
+
+data protection 
+
+The implementation of appropriate administrative, 
+technical or physical means to guard against 
+unauthorized intentional or accidental disclosure, 
+modification, or destruction of data. 
+
+01.07.02 
+computer crime 
+
+A crime committed through the use, modification, 
+or destruction of hardware, software, or data. 
+
+01.07.03 
+1 . hacker 
+
+A technically sophisticated computer enthusiast. 
+
+01.07.04 
+2. hacker 
+
+A technically sophisticated computer enthusiast 
+who uses his or her knowledge and means to 
+gain unauthorized access to protected resources. 
+
+01.07.05 
+software piracy 
+
+Illegal use or copying of software products. 
+
+01.08 Data Management 
+
+01.08.01 
+
+information management 
+
+In an information processing system, the functions 
+of controlling the acquisition, analysis, retention, 
+retrieval, and distribution of information. 
+
+01.08.02 
+
+data management 
+
+In a data processing system, the functions that 
+provide access to data, performs or monitors 
+the storage of data, and controls input-output 
+operations. 
+
+01.08.03 
+access method 
+
+A technique to obtain the use of data, the use 
+of storage in order to read or write data, or the 
+use of an input-output channelXo transfer data. 
+
+Example: Random access method, indexed access 
+method, sequential access method. 
+
+
+
+11 
+
+
+
+IS14692(Part1):1999 
+ISO/IEC 2382-1 :1993 
+
+01.08.04 
+data bank 
+
+A set of data related to a given subject and 
+organized in such a way that it can be consulted 
+by subscribers. 
+
+01.08.05 
+database 
+
+A collection of data organized according to a a unit. 
+
+
+
+conceptual structure describing the characteristics 
+of these data and the relationships among their 
+corresponding entities, supporting one or more 
+application areas. 
+
+01.08.06 
+file 
+
+a named set of records* stored or processed as 
+
+
+
+12 
+
+
+
+IS14692(Part1):1999 
+ISO/IEC 2382-1 :1993 
+
+
+
+BEFORE PROCESSING 
+
+OBJECTS 
+
+as 
+FACTS, 
+EVENTS, 
+
+
+
+PROCESSING 
+
+
+
+
+INFORMATION 
+01.01.01 
+
+
+
+DATA 
+01.01,02 
+
+
+
+
+
+AFTER PROCESSING 
+
+OBJECTS 
+
+as 
+FACTS, 
+EVENTS, 
+
+
+
+IDEAS 
+
+
+
+
+INFORMATION 
+01.01.01 
+
+
+
+
+DATA 
+01.01.02 
+
+
+
+Figure 1 - Interrelationships between information and datg 
+
+
+
+13 
+
+
+
+IS 14692 (Parti ) : 1999 
+ISO/IEC 2382-1 :1993 
+
+
+
+English alphabetical index 
+
+
+
+access 
+
+ADP 
+
+Al 
+
+aided 
+
+algorithm 
+
+alphanumeric 
+
+analog 
+
+application 
+
+architecture 
+
+area 
+
+artificial 
+
+assisted 
+
+asynchronous 
+
+automate 
+
+automatic 
+
+automation 
+
+
+
+bank 
+base 
+
+binary 
+bit 
+
+block 
+byte 
+
+
+
+CA 
+
+calculator 
+
+center 
+
+central 
+character 
+
+chip 
+
+circuit 
+
+code 
+
+communication 
+
+compatibility 
+
+computer 
+
+
+
+to access 01.01.04 
+
+access method 01.08.03 
+
+ADP (abbreviation) 01.01.06 
+
+Al (abbreviation) 01.06.12 
+
+computer-aided...' 01.06.14 
+
+computer-aided publishing 01.06.15 
+
+algorithm 01.05.05 
+
+alphanumeric 01.02.05 
+
+analog 01.02.06 
+
+analog computer 01.03.05 
+
+application software 01.04.01 
+
+application program 01.04.01 
+
+computer architecture 01.03.18 
+
+local area network 01.01.46 
+
+artificial language 01.05.09 
+
+artificial intelligence 01.06.12 
+
+computer-assisted 01.06.14 
+
+computer-assisted publishing 01 .06. 1 5 
+
+asynchronous 01.01.29 
+
+to automate 01.01.13 
+
+automatic data processing 01.01.06 
+
+automatic 01.01,12 
+
+automation 01.01.14 
+
+office automation 01.06.09 
+
+
+
+B 
+
+
+
+data bank 01.08.04 
+
+knowledge base 01.06.18 
+
+K-base (abbreviation) 01.06.13 
+
+binary digit 01.02.08 
+
+bit 01.02.08 
+
+8-bit byte £t:u2.10 
+
+block diagram ......0101.27 
+
+byte 01.02.09 
+
+8-bit byte 01.02.10 
+
+
+
+CA (abbreviation) 01.06.14 
+
+calculator 01.03 1 7 
+
+computer center 01.01 19 
+
+data processing center 01.0V 19 
+
+centra! processing unit 01.0'J 01 
+
+character 01.02.11 
+
+numeric character 01.02.12 
+
+chip 01.03.10 
+
+integrated circuit 01.03.10 
+
+to code (deprecated in 
+
+this sense) 01.05.02 
+
+data communication 01.01.39 
+
+compatibility 01.06.11 
+
+computer generation 01.01.17 
+
+computer science 01.01.18 
+
+computer center 01. 01.19 
+
+computer system 01.01.20 
+
+computer resource 01.01.23 
+
+computer network 01.01.45 
+
+computer 01.03.03 
+
+digital computer 01.03.04 
+
+analog computer 01 03.05 
+
+hybrid computer 01.03.06 
+
+computer architecture 01 03.18 
+
+personal computer 01.03.20 
+
+portable computer... 01.03.21 
+
+laptop computer 01.03.22 
+
+
+
+computerization 
+
+computerize 
+
+computing 
+
+configuration 
+
+connectivity 
+
+copy 
+
+CPU 
+crime 
+
+
+
+data 
+
+
+
+database 
+
+debug 
+
+desktop 
+
+device 
+
+diagram 
+
+digit 
+
+digital 
+
+discrete 
+
+disk 
+
+display 
+
+
+
+documentation 
+
+download 
+
+DP 
+
+dumb 
+
+
+
+E 
+electronic 
+
+emulation 
+
+engineering 
+
+equipment 
+
+ES 
+
+expert 
+
+
+
+file 
+
+firmware 
+
+flow 
+
+flowchart 
+
+friendly 
+
+functional 
+
+
+
+computer program 01.05.01 
+
+computer graphics 01.06.08 
+
+computer-aided 01.06.14 
+
+computer-assisted 01.06.14 
+
+computer-aided publishing 01.06.15 
+
+computer-assisted publishing 01.06.15 
+
+computer crime 01.07.02 
+
+computerization 01.01.16 
+
+to computerize 01.01.15 
+
+computing system 01.01.20 
+
+configuration 01.01.26 
+
+connectivity 01.03.27 
+
+hard copy 01.06.04 
+
+soft copy 01.06.05 
+
+CPU (abbreviation) 01.03.01 
+
+computer crime 01.07.02 
+
+
+
+data 01.01.02 
+
+data processing 01.01.06 
+
+automatic data processing 01.01.06 
+
+data processing center 01.01.19 
+
+data processing system 01.01.20 
+
+input (data) 01.01.30 
+
+output (data) 01.01.33 
+
+data communication 01.01.39 
+
+data medium 01.01.51 
+
+data management 01.08.02 
+
+databank 01.08.04 
+
+database 01.08.05 
+
+to debug 01.05.07 
+
+desktop publishing 01.06.16 
+
+storage (device) 01.01.10 
+
+block diagram 01.01.27 
+
+flow diagram 01.05.06 
+
+binary digit 01.02.08 
+
+digit 01.02.12 
+
+digital 01.02.04 
+
+digital computer 01.03.04 
+
+discrete 01.02.02 
+
+disk 01.01.52 
+
+video display terminal 01.03.16 
+
+visual display terminal 01.03.16 
+
+visual display unit 01.03.16 
+
+system documentation 01.04.04 
+
+to download 01.01.36 
+
+DP (abbreviation) 01.01.06 
+
+dumb terminal 01.03.15 
+
+
+
+Email 01.06.17 
+
+electronic publishing 01.06.15 
+
+electronic mail 01.06.17 
+
+emulation 01.06.02 
+
+software engineering 01.04.07 
+
+peripheral equipment 01.03.07 
+
+ES (abbreviation) 01.06.19 
+
+expert system 01.06.19 
+
+
+
+file 01.08.06 
+
+firmware 01.01.09 
+
+flow diagram 01.05.06 
+
+flowchart 01.05.06 
+
+user-friendly 01.06.22 
+
+functional unit 01.01.40 
+
+
+
+14 
+
+
+
+IS 14692 (Parti ) : 1999 
+ISO/IEC 2382-1 :1993 
+
+
+
+generation 
+graphics 
+
+
+
+hacker 
+
+hard 
+
+hardware 
+
+hybrid 
+
+
+
+IC 
+
+image 
+in 
+information 
+
+
+
+input 
+
+
+
+instruction 
+
+integrated 
+
+intelligence 
+
+intelligent 
+
+interface 
+
+interoperability 
+
+IR 
+
+
+
+K 
+knowledge 
+
+
+
+computer generation 01.01.17 
+
+computer graphics 01.06.08 
+
+
+
+H 
+
+
+
+1. hacker 01.07.03 
+
+2. hacker 01.07.04 
+
+hard copy 01.06.04 
+
+hardware 01.01.07 
+
+hybrid computer 01.03.06 
+
+
+
+I 
+
+
+
+IC (abbreviation) 01.03.10 
+
+image processing 01.06.20 
+
+to log in 01.01.53 
+
+information 
+
+(in information processing) 01.01.01 
+
+information processing 01.01.05 
+
+information processing system 01.01.21 
+
+information system 01.01.22 
+
+information retrieval 01.06.03 
+
+information management 01.08.01 
+
+input (data) 01.01.30 
+
+input (process).... 01.01.31 
+
+input (adjective) 01.01.32 
+
+millions of instructions per 
+
+second 01.03.25 
+
+integrated circuit 01.03.10 
+
+artificial intelligence 01.06.12 
+
+intelligent terminal 01.03.14 
+
+interface 01.01.38 
+
+interoperability 01.01.47 
+
+IR (abbreviation) 01.06.03 
+
+
+
+megaflops 
+
+memory 
+
+menu 
+
+method 
+
+MFLOPS 
+
+microchip 
+
+microcomputer 
+
+microprocessor 
+
+million 
+
+minicomputer 
+MIPS 
+
+
+
+K 
+
+
+
+K-base (abbreviation) 01.06.18 
+
+knowledgebase 01.06.18 
+
+
+
+megaflops 01.03.26 
+
+memory 01.0111 
+
+menu 01.06.06 
+
+access method 01.08.03 
+
+MFLOPS (abbreviation) 01.03.26 
+
+microchip 01.03.10 
+
+microcomputer 01.03.19 
+
+microprocessor 01.03.09 
+
+millions of instructions 
+
+per second 01.03.25 
+
+minicomputer 01.03.23 
+
+MIPS (abbreviation) 01.03.25 
+
+
+
+N 
+
+
+
+natural naturatlanguage 01.05.08 
+
+network network 01.01.44 
+
+computer network 01.01.45 
+
+local area network 01.01.46 
+
+nonprogrammable nonprogrammable terminal 01 .03. 1 5 
+
+numeric numeric 01.02.03 
+
+numeric character 01.02.12 
+
+numerical numerical 01.02.03 
+
+
+
+OA OA (abbreviation) 01.06.09 
+
+octet octet 01.02.10 
+
+off off-line /GB/ (adjective) 01.01.42 
+
+to log off 01.01.54 
+
+office office automation 01.06.09 
+
+offline offline (adjective) 01.01.42 
+
+on on-line /GB/ (adjective) 01.01.41 
+
+to log on 01.01.53 
+
+online online (adjective) 01.01.41 
+
+operating operating system 01.04.08 
+
+OS OS (abbreviation) 01.04.08 
+
+out to log out 01.01.54 
+
+output output (data) 01.01.33 
+
+output (process) 01.01.34 
+
+output (adjective) .01.01 35 
+
+
+
+LAN 
+language 
+
+
+
+laptop 
+line 
+
+
+
+local 
+log 
+
+
+
+machine 
+mail 
+
+mainframe 
+management 
+
+medium 
+
+
+
+LAN (abbreviation) 01.01.46 
+
+natural language 01.05.08 
+
+artificial language 01.05.09 
+
+programming language 01.05.10 
+
+laptop computer 01.03.22 
+
+on-line /GB/ (adjective) 01.01.41 
+
+off-line /GB/ (adjective) 01.01.42 
+
+local area network 01.01.46 
+
+to log on 01.01.53 
+
+to log in 01.01.53 
+
+to log off 01.01.54 
+
+to log out 01.01.54 
+
+
+
+M 
+
+virtual machine 01.01.50 
+
+electronic mail 01.06.17 
+
+Email. 01.06.17 
+
+mainframe 01.03.02 
+
+information management 01.08.01 
+
+data management 01.08.02 
+
+data medium 01.01.51 
+
+
+
+package 
+
+PC 
+
+per 
+
+peripheral 
+
+personal 
+
+picture 
+
+piracy 
+
+portability 
+
+portable 
+
+process 
+
+
+
+processing 
+
+
+
+software package 01.04.05 
+
+PC (abbreviation) 01.03.20 
+
+millions of instructions 
+
+per second. 01.03.25 
+
+peripheral equipment 01.03.07 
+
+personal computer 01.03.20 
+
+picture processing 01.06.20 
+
+software piracy 01.07.05 
+
+portability (of a program) 01.04.06 
+
+portable computer .01.03.21 
+
+1. process .01.01.24 
+
+2. process (in data processing) ...01.01.25 
+
+input (process) 01.01.31 
+
+output (process) 01.01.34 
+
+information processing 01.01.05 
+
+data processing 01.01.06 
+
+automatic data processing 01 .01 .06 
+
+data processing center 01.01.19 
+
+data processing system 01.01.20 
+
+information processing system 01.01.21 
+
+processing unit 01.03.01 
+
+central processing unit. 01.03.01 
+
+text processing 01.06.10 
+
+word processing 01.06.10 
+
+image processing 01.06.20 
+
+picture processing 01.06.20 
+
+
+
+15 
+
+
+
+IS 14692 (Parti ) : 1999 
+ISO/IEC 2382-1 :1993 
+
+
+
+processor processor 01.03.08 
+
+program application program 01.04.01 
+
+support program 01.04.03 
+
+portability (of a program) 01 .04.06 
+
+program 01.05.01 
+
+computer program 01.05.01 
+
+.to program 01.05.02 
+
+program (deprecated in this sense)01.05.04 
+
+spreadsheet program 01.06.21 
+
+programmable programmable terminal 01.03.14 
+
+programming programming 01.05.03 
+
+programming language 01.05.10 
+
+prompt prompt 01.06.07 
+
+protection data protection 01.07.01 
+
+publishing electronic publishing 01.06.15 
+
+computer-aided publishing 01.06.15 
+
+computer-assisted publishing 01.06.15 
+
+desktop publishing 01.06.16 
+
+
+
+text 
+time 
+
+turnkey 
+
+
+
+unit 
+
+
+
+upload 
+user 
+
+
+
+dumb terminal 01.03.15 
+
+video display terminal 01.03.16 
+
+visual display terminal 01 .03.16 
+
+text 01.01.03 
+
+text processing 01.06.10 
+
+time sharing 01.01.43 
+
+time slicing (deprecated 
+
+in this sense) 01.01.43 
+
+turnkey system 01.01.48 
+
+
+
+u 
+
+
+
+functional unit 01.01.40 
+
+processing unit 01.03.01 
+
+central processing unit 01.03.01 
+
+visual display unit 01.03.16 
+
+to upload 01.01.37 
+
+user terminal 01.03.12 
+
+user-friendly 01.06.22 
+
+
+
+resource 
+
+retrieval 
+robotics 
+routine 
+
+
+
+science 
+second 
+
+sharing 
+signal 
+simulation 
+slicing 
+
+soft 
+software 
+
+
+
+spreadsheet 
+storage 
+
+supercomputer 
+support 
+
+symbol 
+
+synchronous 
+
+system 
+
+
+
+resource 01.01.23 
+
+computer resource 01.01.23 
+
+information retrieval 01.06.03 
+
+robotics 01.06.13 
+
+routine 01.05.04 
+
+
+
+computer science 01.01.18 
+
+millions of instructions 
+
+per second 01.03.25 
+
+time sharing.. 01.01.43 
+
+signal 01.02.01 
+
+simulation 01.06.01 
+
+time slicing (deprecated 
+
+in this sense) 01.01.43 
+
+soft copy 01.06.05 
+
+software 01.01.08 
+
+application software 01.04.01 
+
+system software 01.04.02 
+
+support software 01.04.03 
+
+software package 01.04.05 
+
+software engineering 01.04.07 
+
+software piracy 01.07.05 
+
+spreadsheet program 01.06.21 
+
+storage (device) 01.01.10 
+
+supercomputer 01.03.24 
+
+support software 01.04.03 
+
+support program 01.04.03 
+
+symbol 01.02.07 
+
+synchronous 01.01.28 
+
+data processing system 01.01.20 
+
+computer system 01.01.20 
+
+computing system 01.01.20 
+
+information processing system 01.01.21 
+
+information system 01.01.22 
+
+turnkey system 01.01.48 
+
+system software 01.04.02 
+
+system documentation 01.04.04 
+
+operating system 01.04.08 
+
+expert system 01.06.19 
+
+
+
+VDT VDT (abbreviation) 01.03.16 
+
+VDU VDU (abbreviation) :.... 01.03.16 
+
+video video display terminal 01.03.16 
+
+virtual virtual 01.01.49 
+
+virtual machine 01.01.50 
+
+visual visual display terminal 01 .03.16 
+
+visual display unit 01.03.16 
+
+VM VM (abbreviation) 01.01.50 
+
+word word processing 01.06.10 
+
+workstation workstation 01.03.13 
+
+
+
+terminal 
+
+
+
+terminal 01.03.11 
+
+user terminal 01.03.12 
+
+programmable terminal 01.03.14 
+
+intelligent terminal 01.03.14 
+
+nonprogrammable terminal 01.03.15 
+
+
+
+16 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote harmonious 
+development of the activities of standardization, martring and quality certification of goods and attending to 
+connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publifcations. No part of these publications maybe reproduced in any form without 
+the prior permission in writing of BIS. This does not preclude the free use, in the course of implementing the 
+standard, of necessary details, such as symbols and sizes, type or grade designations. Enquiries relating to 
+copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments Standards are also reviewed 
+periodically; a standard along with amendments is reaffirmed when such review indicates that no changes are 
+needed; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards 
+should ascertain that they are in possession of the latest amendments or editioitby referring to the latest issue 
+of 'BIS Handbook' and 'Standards : Monthly Additions' 
+
+This Indian Standard has been developed from Doc : No. LTD 33(1 674 ). 
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUUEAU OF INDIAN STANDARDS 
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 Telegrams: Manaksanstha 
+
+Telephones : 323 01 31, 323 94 02, 323 33 75 ( Common to 
+
+all offices ) 
+
+Regional Offices: Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg f 323 76 17 
+
+NEW DELHI 110002 \ 323 3841 
+
+Eastern : 1/14 C. I. T. Scfeme VII M, V. I. P. Road, Maniktola f 337 84 99, 337 85 61 
+
+CALCUTTA 700054 \ 337 86 26, 337 $6 62 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160022 f 60 38 43 
+
+\ 60 20 25 
+
+Southern : C. I. T. Campus, IV Cross Road, CHENNAI 600113 f 235 02 16, 235 0442 
+
+
+
+23515 19,235 23 15 
+
+832 92 95,832 78 58 
+MUMBAI 400093 \ 832 78 91, 832 78 92 
+
+
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) f 832 92 95, 832 78 58 
+
+
+
+Branches : AHMAD ABAD. BANGALORE. BHOPAL. BHUBANESHWAR. 
+
+COIMBATORE. FARIDA^AD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. 
+KANPUR. LUCKNOW. NAGPUR. PATNA. PUNE. THIRUVANANTHAPURAM. 
+
+
+
+Printed at New India Printing Press, Khurja, India 
+
+
+

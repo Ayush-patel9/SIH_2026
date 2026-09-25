@@ -1,0 +1,80 @@
+{
+  "is_number": "IS IS_1417",
+  "standard_id": "IS IS_1417",
+  "title": "Indian Standard Specification / Test Method (IS IS_1417)",
+  "ia_identifier": "IS_1417",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies based on gold content: a) Grades of fine gold and standard gold used for manufacture of bullion and coins, and b) Grades of gold alloy used in manufacture of jewellery/artefacts. 1.2 This standard also specifies the guidelines for marking of purity and other details on tested bullion, coins andjewellery/artefacts. NOTE — Artefacts cover medallions andutensils.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 9202",
+      "standard_id": "IS/ISO 9202",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9202)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3095",
+      "standard_id": "IS 3095:1999",
+      "title": "Gold Solders for Use in Manufacture of Jewellery",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15820",
+      "standard_id": "IS 15820:2009",
+      "title": "General requirement for competence of assaying and hallmarking centres",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1418",
+      "standard_id": "IS 1418:2009",
+      "title": "Determination of Gold in Gold Bullion, Gold Alloys and Gold Jewellery/Artefacts - Cupellation (Fire Assay) Method",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Assaying",
+    "Carat",
+    "Fineness",
+    "Fine Gold",
+    "Gold",
+    "Gold Alloy",
+    "Standard Gold",
+    "Bullion",
+    "Coin",
+    "Grade Fineness",
+    "9 carat",
+    "23k"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 11000
+}

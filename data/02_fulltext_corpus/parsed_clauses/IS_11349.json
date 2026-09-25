@@ -1,0 +1,122 @@
+{
+  "is_number": "IS IS_11349",
+  "standard_id": "IS IS_11349",
+  "title": "Indian Standard Specification / Test Method (IS IS_11349)",
+  "ia_identifier": "IS_11349",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard applies to analogue oscilloscopes and to peak voltmeters used for measurements during tests with high impulse voltages and high impulse currents. It covers the specific characteristics and calibrations required to meet the measuring accuracies specified in IS: 2071 ( Part 3 )- 1976*. 1.2 This standard does not cover general instrument requirements because they are dealt with in IS : 11018 ( Part 1 )-1984f and IS : 9176-1979J. SECTION 1 GENERAL",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 2071",
+      "standard_id": "IS 2071",
+      "title": "Indian Standard Specification / Test Method (IS 2071)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11018",
+      "standard_id": "IS 11018",
+      "title": "Indian Standard Specification / Test Method (IS 11018)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9176",
+      "standard_id": "IS 9176:2001",
+      "title": "Expression of the Performance of Electrical and Electronic Measuring Equipment",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6700",
+      "standard_id": "IS 6700:1972",
+      "title": "Requirements for general purpose cathode-ray oscilloscope",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4330",
+      "standard_id": "IS 4330:1967",
+      "title": "Methods of Measurements on Cathode-Ray Oscilloscope (DC to 10 Mc/s)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8690",
+      "standard_id": "IS 8690:1977",
+      "title": "Application guide for measuring devices for high voltage testing",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2071 (PART 3)",
+      "standard_id": "IS 2071 (Part 3):1976",
+      "title": "Methods of high voltage testing, Part 3: Measuring devices",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 200",
+      "standard_id": "IS 200:1989",
+      "title": "Textiles - Determination of Copper Number of Cotton Textile Materials",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 50",
+      "standard_id": "IS 50:1980",
+      "title": "Lead and Scarlet Chromes",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11349"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 59632
+}

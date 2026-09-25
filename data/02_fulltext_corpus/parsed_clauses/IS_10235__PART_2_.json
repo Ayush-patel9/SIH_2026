@@ -1,0 +1,58 @@
+{
+  "is_number": "IS IS_10235__PART_2_",
+  "standard_id": "IS IS_10235__PART_2_",
+  "title": "Indian Standard Specification / Test Method (IS IS_10235__PART_2_)",
+  "ia_identifier": "IS_10235__PART_2_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies definitions relating to terms in mechanics and materials relevant to surgical implants.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10235",
+      "standard_id": "IS 10235",
+      "title": "Indian Standard Specification / Test Method (IS 10235)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16235",
+      "standard_id": "IS 16235",
+      "title": "Indian Standard Specification / Test Method (IS 16235)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade aC",
+    "Grade gC",
+    "Grade rrite",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10235__PART_2_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "carbon system, the eutectoid occurs at approximately 9 %",
+      "Carbon steels up to 0'8%",
+      "Carbon steels having 0*02%"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 51645
+}

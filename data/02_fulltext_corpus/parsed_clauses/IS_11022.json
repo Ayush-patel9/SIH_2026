@@ -1,0 +1,93 @@
+{
+  "is_number": "IS IS_11022",
+  "standard_id": "IS IS_11022",
+  "title": "Indian Standard Specification / Test Method (IS IS_11022)",
+  "ia_identifier": "IS_11022",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes the methods of sampling and test for adhesives manufactured from materials of animal origin. It applies to adhesives in the form of liquid, jelly, cake, flakes, powder or granular solids. ♦Rules for rounding off numerical values {revised ). 3 IS : 11022 - 1984 1.1.1 For certain uses there could be specialized tests which may be agreed between the purchaser and the supplier. Such tests have not been included in this standard.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 3434",
+      "standard_id": "IS 3434:1984",
+      "title": "Glossary of Terms for Adhesives and Pressure Sensitive Adhesive Tapes",
+      "division_code": "CHD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1070",
+      "standard_id": "IS 1070:2023",
+      "title": "Reagent Grade Water Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "CHEMICAL_ANALYSIS",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 460",
+      "standard_id": "IS 460",
+      "title": "Indian Standard Specification / Test Method (IS 460)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 878",
+      "standard_id": "IS 878:2008",
+      "title": "Laboratory glassware - Graduated measuring cylinders",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 170",
+      "standard_id": "IS 170:2020",
+      "title": "Acetone — Specification ( Fifth Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11022"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "Sulphuric Acid Solution — 20 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 42460
+}

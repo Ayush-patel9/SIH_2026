@@ -1,0 +1,1682 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+IS 11797 (1985) : Radiation detectors for instrumentation 
+and protection of nuclear reactors [LITD 8: Electronic 
+Measuring Instruments, Systems and Accessories] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+aj^&vi iJii^s:y%K^ isb^^ni^seg 
+
+
+
+:<>5&i| mT'5K^5?::5:^>^i»l 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+Intiilfit Sinndiifii 
+
+
+
+IS: 11797-1989 
+lEC Pab 51S(1^7S) 
+
+( Reaffirmed 2001 ) 
+
+
+
+SPECIFJCAjrON FOR RADIATION DCTECTORS FOR 
+INSTRUMENTATION AND PROTECT [ON OF 
+NUCLEAR REACTORS 
+
+(lEC Tillc : RaiJialicin Dettctors for the tnstniinentatLon nnd Frotectian 
+qF Nuclear t^edctocs Characteristics and Test Methods) 
+
+
+
+UDC i2l-31Ti9 : 539' ( 0744 : 539- 1 2 (Ml : WlMS^^Z-d 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAk UHAVAN, 9 BAflADUR SHAH £AFAR MARC 
+NEW DELHI ] lOOua 
+
+'^J' ^ OctaBtt J957 
+
+
+
+IS : 11797-1985 
+
+UDC 621-317 39; 5391-074.8:5391208:62r039*5/-6 lEC Pub 515 (1975) 
+
+
+
+Indian Standard 
+
+SPECIFICATION FOR RADIATION DETECTORS FOR 
+INSTRUMENTATION AND PROTECTION OF 
+NUCLEAR REACTORS 
+(lEC Title : Radiation Detectors for the Instrumentation and Protection 
+of Nuclear Reactors; Characteristics and Test Methods) 
+
+
+
+National Foreword 
+
+This Indian Standard, which is identical with lEC Pub 515 (1975) 'Radiation detectors for the 
+instrumentation and protection of nuclear reactors; characteristics and test methods' issued by the Interna- 
+tional Electrotechnical Commission, was adopted by the Indian Standards Institution on the recommen- 
+dation of the Nuclear Instrumentation Sectional Committee and approval of the Electronics and Telecom- 
+munication Division Council. 
+
+Wherever the words International Standard' appear, referring to this standard, they should be read 
+as *lndian Standard'. 
+
+Cross References 
+
+In this Indian Standard, the following International Standards are referred to. Read in their 
+respective places the following: 
+
+International Standard Corresponding Indian Standard 
+
+lEC Pub 50(66) (1968) Detection and measurement of^ IS : 1885 (Part 63)-1985 Electrotechnical 
+
+ionizing radiation by electric means [Superscd- ! vocabulary: Part 63 Nuclear instni- 
+
+ed by lEC Pub 50(391) and 50(392)] V mentation 
+
+lEC Pub 50(391) (1975) Detection and measurement | 
+of ionizing radiation by electric means J 
+
+The technical committee responsible for the preparation of this Indian Standard has reviewed the 
+provisions of the following lEC standards and decided that they are acceptable for use in conjuction with 
+this standard. 
+
+lEC Pub 231 (1967) General principles of nuclear reactor instrumentation 
+
+lEC Pub 232 (1966) General characteristics of nuclear reactor instrumentation 
+
+Only the English language text of the International Standard has been retained while adopting it in 
+this Indian Standard. 
+
+
+
+Adopted 28 August 1985 
+
+
+
+® October 1987, BIS 
+
+
+
+Gr9 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BitAVAN, 9 BAHADUR SHAH ZAFAR MARO 
+
+NEW DELHI 110002 
+
+
+
+IS : 117^-1985 
+lEC Pub 515 (1975) 
+
+CONTENTS 
+
+
+
+Section One — Introduction Page 
+Clause 
+
+1. Scope 3 
+
+2. Definitions 3 
+
+3. Interpretation of this standard 5 
+
+Section Two — Preliminary 
+
+4. General 5 
+
+5. Types of radiation to be measured 5 
+
+6. Detector operating conditions 6 
+
+7. Conditions of detector measurement 6 
+
+8. Connectors and cables ^ 
+
+Section Three — Characteristics 
+
+9. General 7 
+
+10. Pulse mode neutron detectors 10 
+
+11. Current mode neutron detectors 12 
+
+Section Four — Test Methods 
+
+12. General 14 
+
+13. Specific tests for pulse fission ionization chambers 15 
+
+14. Specified tests for boron trifluoride and boron-lined proportional counter tubes 17 
+
+15. Specific tests for helium-3 proportional counter tubes 18 
+
+16. Specified tests for compensated boron current ionization chambers 18 
+
+17. Specific tests for uncompensated boron current ionization chambers 21 
+
+18. Specific tests for current ionization chambers for gamma radiation 22 
+
+19. Specific tests for fission current ionization chambers 22 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+
+
+SECTION ONE — INTRODUCTION 
+
+1. Scope 
+
+The aim of this publication is to establish a standard concerning the characteristics and test methods of gas-filled 
+radiation detectors used for the instrumentation and protection of nuclear reactors. 
+
+These detectors function as electrical transducers and are used particularly in: 
+
+— assemblies for measuring power and rate of change of power by means of neutron fluence rate (flux); 
+
+— periodmeters or reactivity meters; 
+
+— reactor warning and safety monitoring assemblies; 
+
+— assemblies for measuring power by means of gamma radiation. 
+
+The detectors examined in this standard are not used for personnel dosimetry purposes. 
+
+In so far as they do not conflict with the present standard, lEC Publication 231, General Principles of Nuclear 
+Reactor Instrumentation, and I EC Publication 232, General Characteristics of Nuclear Reactor Instrumentation, 
+should be followed, as well as general recommendations and safety standards for electrical equipment which have 
+already been issued. 
+
+The detectors subject to this standard are: 
+
+— boron CAirrent ionization chambers ; 
+
+— fission current ionization cham^bers or pulse ionization cham^bers; 
+
+— ionization chambers for gamma radiation ; 
+
+— boron trifluorlde proportional counter tubes ; 
+
+— iioron-lined proportional counter tubes ; 
+
+— heiium-3 proportional counter tubes. 
+
+Note, — This list is not restrictive and it is hoped that all types of radiation detectors used in reactor installations will benefit from the 
+present standard. The standard for tests also applies to connecting cables and connectors when they form an integral part of 
+the detector. 
+
+
+
+2. Definitions 
+
+Preliminary note 
+
+Definitions given in Sub-clauses 2.1, 2.2 and 2.4 to 2.9 are taken from or based on lEC Publication 50(391), 
+Detection and Measurement of Ionizing Radiation by Electric Means. The other definitions are still under 
+consideration and given here to facilitate understanding of this standard. 
+
+2.1 Concomitant radiation 
+
+Radiation which is associated with the radiation to be measured but which is not the object of the measurement, 
+and whose effects on the measurement should preferably be eliminated. 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+2.2 Sensitivity (of a measuring assembly) 
+
+For a given value of the measured quantity, the ratio of the increase of the observed variable to the corresponding 
+increase of the measured quantity. 
+
+variation of output quantity (detector response) 
+
+
+
+variation of input quantity (radiation to be measured) 
+
+
+
+2 . 3 Influen ceab ility 
+
+If the operation of a detector is disturbed by a concomitant radiation, the detector is said to be "influenceable" 
+by this other radiation. The concomitant radiation is an influence quantity. 
+
+The influenceabihty of a detector to concomitant radiation is given by: 
+
+variation of the output quantity (detector response) 
+
+
+
+S 
+
+
+
+variation of the input quantity (concomitant radiation) 
+
+
+
+with all other influence quantities held constant at specified values. Oth^r factors such as temperature, pressure, 
+polarizing potential, etc., may also be influence quantities, 
+
+2.4 Compensation factor (of a compensated ionization chamber) 
+
+The ratio of the sensitivity to concomitant radiation of the compensated ionization chamber to the sensitivity 
+to the same concomitant radiation of the same chamber, if it were not compensated. 
+
+2.5 Compensation ratio (of a compensated ionization chamber) 
+
+The inverse of the compensation factor used as an index of performance of a compensated ionization chamber. 
+
+2.6 Sensitive material (of a neutron detector) 
+
+The material used in certain neutron detectors either, for example, in a lining or a filling gas, which is intended to 
+produce directly ionizing particles from the neutrons by nuclear reaction. 
+
+Note. — The word "particle" is used here in a general sense '\n<z\\x6\Vk% fission fragments, 
+
+2.7 Burn-up life (of a neutron detector) 
+
+An estimated ^we/ic^ of neutrons of a given energy distribution after which the sensitive material will be consumed 
+to such an extent that the detector characteristics exceed the specified tolerances for a specified purpose. 
+
+
+
+2.8 Useful life (of a detector) 
+
+Operational life, under irradiation and environmental conditions restricted within specified limits, after which the 
+detector characteristics exceed the specified tolerances. Useful life can be expressed in incident particle fluence, 
+number of produced pulses, etc. 
+
+2.9 (Particle) fluence rate ( particle flux density) 
+
+Increment of fluence A during a suitably small interval of time A / divided by that interval of time. 
+
+
+
+In many applications where the detector has a linear characteristic and negligible output for zero input 
+
+output quantity 
+
+
+
+S - 
+
+
+
+input quantity 
+
+
+
+IS : 11797-1985 
+^ , , lEC Pub 515 (1975) 
+
+Symbol: <p 
+
+A 
+
+w = 
+
+A / 
+
+Note, — Fluence rate is identical with the product of the volume particle jdensity and the average speed. 
+
+2. 10 Unperturbed neutron fluence t ate (flux) 
+
+Mean neutron fluence rate in a position without the neutron detector placed in the same position. 
+
+2.11 Perturbed neutron fluence rate (flux) 
+
+Spatial mean neutron fluence rate in a position with the neutron detector placed in the same position for measure- 
+ment. This quantity is equal to the detector output divided by its sensitivity and is, in practice, approximated by the 
+neutron fluence rate averaged over the detector surface. 
+
+3. Interpretation of this standard 
+
+The verbs listed below have the following implications in this standard : 
+Mandatory: "shall" or "must". 
+Recommendation: "should". 
+Permissible : "may". 
+
+SECTION TWO — PRELIMINARY 
+
+4. General 
+
+Although each category of detector and each type of apparatus has its own particular conditions of use and range 
+of application, it is possible to define general principles of use which depend essentially on the following: 
+
+a) the intrinsic characteristics of each type of detector; 
+
+b) the limitations resulting indirectly from the quantity measured, e.g. activation of the materials by neutrons; 
+
+c) the measuring sub-assembly used, the characteristics of which must be suited to those of the detector ; 
+
+d) the characteristics of the medium surrounding the detector and particularly the influence quantities. 
+
+The mode of use of the ionization produced must be defined: the pulse mode, the direct current mode and the 
+mean square or variance current mode are examples. 
+
+If detectors are operated in more than one mode, their characteristics shall be given for each mode. 
+
+
+
+5. Types of radiation to be measured 
+
+The two principal types of radiation to be measured are neutrons and photons. They are represented by neutron 
+fluence rate (flux) in the first case and by either the absorbed dose rate or the exposure rate in the second case. 
+
+Each detector is preferably constructed to measure one single kind of radiation but it is almost always influenced 
+by other radiations which surround it. This means: 
+
+— the superposition on the measuremeht of a background which impairs accuracy and can reduce the range of 
+measurement; 
+
+— if the influence of the concomitant radiation becomes significant, the radiation to be measured may be obscured. 
+In particular, residual gamma radiation often impairs the measurement of neutrons. 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+All radiation in the detector environment has to be considered in the conditions of use. The characteristics may be 
+altered by activation of the detector materials by neutrons, the release of heat by the absorption of radiation and 
+therefore changes in material properties, or by other changes to the filling gas. 
+
+
+
+6. Detector operating conditions 
+
+Detectors placed in or near the core of reactors are subject to very stringent design regulations, particularly with 
+reference to the materials used. 
+
+The variables which impose a limitation on the use of detectors should be specified together with their limits for 
+each type of detector. 
+
+The significant variables, in general, are neutron fluence rate (flux) and spectrum, environmental temperature, 
+pressure, hum.idity, etc. 
+
+
+
+7. Conditions of detector measurement 
+
+Measuring conditions are characterized mainly by the following: 
+
+— a large range of measurement (often of the order of six to ten decades); 
+
+— the severity of the ambient conditions due to high-flux values^ a high intensity of concomitant radiation and high 
+pressures and temperatures; 
+
+— the activation of materials, often resulting in replacement difficulties even when the reactor is shut down. 
+
+7.1 Limits due to the detector 
+
+For an ionization chamber, the upper limit of the measuring range is set by the rate of recombination of ions 
+causing deviation from proportionality between the neutron fluence rate (flux) and the output signal. 
+
+This upper limjt of the m.easuring range may be determined by a specifi.ed deviation from, proportionality for a 
+given polarization voltage or by the output current at which a given ratio or difference between t/j , and Uq^ is 
+obtained (see Sub-clause 16.4.1). 
+
+For pulse detectors, an absolute upper limit to the measuring range is set by the resolving time of the detector 
+together with its associated measuring assembly. 
+
+The intrinsic lower limit of the measuring range is determined by the output signal in the absence of the primary 
+ionizing radiation under given ambient conditions. 
+
+It is desirable not to exceed a given value of the neutron fluence rate (flux) beyond which activation of materials 
+would produce a gamma or beta background large enough to make subsequent low-level measurements difficult. 
+
+An important case is that of highly sensitive detectors used for reactor start-up (in particular boron trifluoride 
+or boron-lined counter tubes) where the activity of materials may be prejudicial to immediate re-use. 
+
+
+
+7.2 Limits due to the measuring sub-assembly 
+
+The limits due to the measuring sub-assembly are determined essentially by the resolving time, bandwidth, 
+noise level and input impedance in the case of pulse measuring systems, and by the current sensitivity, drift, zero 
+off*set and input impedance in the case of current measuring sub-assemblies. 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+7.3 Limits due to surrounding gamma radiation 
+
+Frequently, the surrounding gamma radiation imposes a lower limit in the use of detectors. Gamma radiation 
+generates spurious ionization current in current ionization chambers and modifies the counting plateau to give 
+false counts in ionization pulse chambers. This limit can be lowered in neutron current ionization chambers by 
+compensation, and in pulse fission chambers by reduction of the chamber and amplifier assembly resolving 
+time. Improvements can also be made by suitably shielding the detector against gamma radiation. 
+
+
+
+In the particular case of boron current ionization chambers, the lower limit imposed by gamma radiation is 
+relatively high. When the chambers are compensated, the lower limit of practical use can be calculated with the 
+following relation : 
+
+e S^ 
+in which : 
+
+9P^in = minimum neutron fluence rate (flux) measurable with the required accuracy 
+
+e ~ required maximum ratio of the gamma current to neutron current expressed as a percentage (%) 
+
+/ — compensation factor expressed as a percentage (%) 
+
+5n =^ sensitivity of the chamber to neutron radiation in amperes per unit of neutron flux density (A • n"^ • cm^ • s) 
+
+Sy == influenceability of the chamber to gamma radiation without compensation, in amperes per unit of exposure 
+rate (A • R"i • h) 
+
+X — exposure rate (R • h'^) 
+In some designs, the compensation factor can be changed, for example by adjusting the compensation voltage. 
+
+The compensation factor can depend on the intensity of the radiation y and its energy spectrum. The compen- 
+sation should therefore allow for variation in conditions with respect to the gamma radiation source and the source 
+to detector geometry. 
+
+
+
+8. Connectors and cables 
+
+Connectors and cables are often an integral part of a detector assembly and should be designed so as not to limit 
+detector performance. 
+
+The design of connectors and cables should enable them to be easily manipulated by hand or by remote handling 
+devices without risk of damage. 
+
+Care should be taken in particular to avoid electrical interference which could interfere with the operation of 
+measuring sub-assemblies. To reduce electrical interference, detectors may need to be electrically shielded and the 
+outer shield insulated from the common side of the measuring circuit and from electrical contact whith the external 
+frame (for example see I EC Publication 232). 
+
+It is also necessary to ensure the continuity of connections and it is desirable for connectors to include a device 
+enabUng continuity to be checked at any time. 
+
+Detector terminations shall be marked. 
+
+
+
+SECTION THREE — CHARACTERISTICS 
+9. General 
+
+The list below gives the data which, where applicable, shall be supplied by the manufacturer. 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+9.1 Characteristics of detectors 
+
+9.1.1 Mechanical data 
+An outline drawing shall be supplied. 
+
+Dimensions : 
+
+— length; 
+
+— diameter; 
+
+— weight; 
+
+— position of sensitive volume. 
+
+Principal materials : 
+
+— metals; 
+
+— insulators; 
+
+— sensitive lining (type and amount); 
+
+— major impurities. * 
+
+Temperature : 
+
+— range of normal operation; 
+
+— maximum permissible V-alue. 
+
+Filling gas : 
+
+— analysis of main constituents; 
+
+— pressure. 
+
+External pressure : 
+
+— maximum permissible value. 
+
+Shock and vibration : 
+
+— limit values. 
+
+9.1.2 Electrical and nuclear data 
+Mode of operation. 
+
+Polarizing voltages : 
+
+— polarity; 
+
+— recommended operating value or values; 
+
+— maximum permissible value or values. 
+
+Compensation conditions: 
+
+— compensation voltage polarity, recommended value and permissible range; 
+
+— compensation factor. 
+
+
+
+In particular, elements which may cause excessive parasitic detector signals, post-irradiation activity in the detector body and thermal 
+neutron absorption. 
+
+
+
+IS : 11797-li»85 
+lECPub 51511975) 
+
+Capacitances and insulation resistances : 
+
+— electrode to electrode 
+
+— electrodes to casing 
+
+— casing to frame or interference shielding 
+Electric charge delivered per ionizing event for both the radiation to be nfieasured and the main concomitant 
+
+radiation. 
+Charge collection time. 
+
+
+
+as a function of tenxperature. 
+
+
+
+Sensitivity: 
+
+— pulse mode; 
+
+— current mode; 
+
+— mean square mode (fluctuations). 
+Range of measurement. 
+
+Influenceability : 
+
+— pulse mode ; 
+
+— current mode; 
+
+— mean square mode (fluctuations). 
+
+Background signal (ah undesired signal produced by natural or induced radioactivity in the materials of the detector) : 
+
+— initially; 
+
+— after a given period in a known neutron flux. 
+Maximum permissible neutron fluence rate (flux). 
+Maximum permissible gamma exposure rate. 
+
+Sensitive material : 
+
+— type; 
+
+— purity. 
+Burn-up life. 
+
+Useful life : 
+
+—- the detector manufacturer shall also supply the test data produced by the tests described in this standard. 
+
+
+
+9.2 Characteristics of connectors 
+
+9.2. 1 Mechanical data 
+
+The physical quantities mentioned in Sub-clause 9.1 and applicable to connectors shall be specified as such by 
+the manufacturer. 
+
+Particularly important factors are : 
+
+
+
+I 
+
+
+Plug 
+
+
+Socket 
+
+
+Dimensions 
+
+
+Outside diameter 
+Coupling description 
+Centre conductor dimensions 
+Overall length 
+
+
+Outside diameter 
+Coupling description 
+Dimensions for mating plug and pin 
+Overall length 
+
+
+Materials 
+
+
+Body 
+Centi-e pin 
+Insulation 
+
+
+Body 
+
+Centre pin 
+Insulation 
+
+. : • 1 • ■ "rni 1 III, 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+9.2.2 Electrical characteristics 
+Characteristic impedance and leakage resistance at rated temperature and nominal conditions of use. 
+
+Maximum ratings : 
+
+— voltage between electrodes and between electrodes and the casing; 
+
+— temperature; 
+
+— external pressure; 
+
+— ambient humidity. 
+
+9.3 Characteristics of cables 
+
+9.3.1 Mechanical data 
+
+Dimensions : 
+
+— outside diameter; 
+
+— centre conductor diameter; 
+
+— length; ^ 
+
+— minimum bending radius; 
+
+— weight. 
+
+Materials : 
+
+— inner conductor; 
+
+— outer screens ; 
+
+— insulation. 
+
+9.3.2 Electrical characteristics 
+
+— leakage resistance (minimum) at rated temperature and humidity; 
+
+— capacitance per unit length; 
+
+— characteristic impedance and pulse attenuation (where applicable); 
+
+— any nuclear Hmitations on use. 
+
+Maximum ratings : 
+
+— voltage between conductors; 
+
+— temperature; 
+
+— external pressure ; 
+
+— ambient humidity. 
+
+
+
+10. Pulse mode neutron detectors 
+
+10.1 Principles 
+
+Pulse mode neutron detectors include the fission pulse ionization chamber, the boron trifluoride counter tube, the 
+boron-lined counter tube and the helium-3 proportional counter tube. 
+
+a) Fission ionization chambers contain a fissile element — for example, uranium 235 whose nuclei, after capturing 
+neutrons, disintegrate into ^'fission fragments". The latter have considerable kinetic energy which is partly 
+expended in the filling gas to produce ionization, 
+
+10 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+Fission chambers can be utilized in pulse counting assemblies, in mean current measuring assemblies or in mean 
+square current measuring assemblies (fluctuations). 
+
+b) Boron trifluoride counter tubes are thermal neutron detectors which use the reaction: 
+
+
+
+'*B + V -> 'He + 'Li 
+
+in the boron trifluoride filling gas. The ionization due to the alpha particle and lithium nucleus is multiplied by an 
+electric field and the counter tube is operated under proportional conditions. 
+
+c) Boron-lined counter tubes also use the nuclear reaction of thermal neutrons with boron which is deposited in 
+the form of a solid lining on the inside of the counter wall. The filling gas can therefore be chosen to obtain other 
+required characteristics such as a particular collection time, 
+
+d) Helium-3 proportional counters are thermal neutron detectors which use the reaction of the neutron in the 
+gas helium-3. 
+
+'He + \ -^ 'H + 'H 
+
+10.2 Sensitivity in the linear range 
+
+The sensitivity of a pulse mode neutron detector is determined by dividing the mean counting rate, excluding 
+background, by the thermal neutron fluence rate (flux) at the detector. It is specified in units of counts per second 
+per unit neutron fluence rate (flux) (counts n"^ • cm*). This sensitivity must be measured with defined electrical 
+characteristics in the detector and the measuring sub-assembly, and it must be stated whether the neutron fluence 
+rate is perturbed or unperturbed. 
+
+10.3 Range of measurement 
+
+The theoretical range of measurement of the detector is determined by its lower and upper limits. The lower 
+limit is fixed for the pulse fission chamber by "alpha pile-up" and by the background due to spontaneous fissions. 
+The upper limit depends on the resolving time^ which is a function of the charge collection time and the electrical 
+characteristics of the measuring sub-assembly. 
+
+In practice, the lower operating limit may be set by other factors such as counting statistics, gamma radiation 
+and amplifier noise. The practical limitations are explained in Clause 7. 
+
+10.4 Effect of gamma radiation 
+
+The presence of gamma radiation is indicated by the degradation of the pulse spectrum, the bias plateau length 
+and, in certain cases, by the reduction of the multiplication factor of proportional counter tubes. 
+
+10.5 Operating temperature 
+
+The range of operating temperatures is determined by the structural materials and the technology of manufacture. 
+At high temperature, the principal problem is to maintain satisfactory insulator performance. 
+
+10.6 Burn-up and useful life (see definitions in Sub-clauses 2.7 and 2,8) 
+
+The burn-up life depends on consumption of the sensitive material. It is measured by the number of counted 
+events or by the value of the neutron fluence corresponding to a specified quantity of sensitive material consumed* 
+
+The useful life depends on the ambient conditions and the influence quantities. 
+
+If storage conditions can affect the useful life of the detector, they must be clearly defined. 
+
+10.7 Polarization voltage 
+
+The polarization voltage is defined by polarity and magnitude. In the pulse mode, the polarization voltage of the 
+chamber is commonly a positive voltage applied to the collecting electrode rela;tive to the case. 
+
+
+
+11 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+For proportional counters, the multiplication factor depends on the value of the polarization voltage. The 
+curves characterizing the relationship shall be given by the manufacturer. 
+
+For some types of detectors, the characteristics of the measuring sub-assembly and the required life of the detector 
+should be taken into account when selecting the operating polarization voltage. 
+
+10.8 Response to a nuclear event 
+
+The mean electrical charge developed per event in the detector must be known. It is expressed in coulombs. 
+In the case of a proportional counter tube, this variable is a function of the multiplication factor and may be difficult 
+to measure. 
+
+The charge collection times and the pulse output current are also important data. 
+
+
+
+10.9 Insulation resistance 
+
+For the range of specified temperature, pressure and voltage, the insulation resistance shall have a sufficiently 
+high resistance to restrict leakage current to a reasonable value and shall be free from the pulse breakdown effect, 
+i.e. the generation of spurious pulses which can simulate signal pulses. 
+
+For detectors and any associated connector and cable which will operate at high temperature, attention shall be 
+given to variation of the insulation resistance with temperature. 
+
+10.10 Electrical capacitance 
+
+The electrical capacitance is an important characteristic when it has an appreciable effect on the time constant of 
+the input circuit of the measuring sub-assembly. 
+
+
+
+1 1 . Current mode neutron detectors 
+
+11.1 Principles 
+
+Current detectors include the fission ionization chamber, the boron ionization chamber and ionization chambers 
+sensitive to gamma radiation. 
+
+a) Fission current ionization chambers (see item a) of Sub-clause 10.1). 
+
+b) Boron current ionization chambers. These are thermal neutron detectors which use the reaction: 
+
+''b + 'n^ -V *He + \\ 
+
+5 th 2 3 
+
+A great part of the ionization charge caused by the alpha particle and the recoil of the lithium nucleus in the 
+filling gas is collected as a current, whose mean value is generally measured. These chambers may also be used in 
+the mean square current mode. 
+
+Boron is utilized in these chambers in the form of a solid lining on the electrodes or sometimes in the form of a 
+gaseous compound. 
+
+To reduce the influence of gamma radiation, compensated chambers use the measuring principle of current 
+difference. They generally comprise two nearly identical chambers. One contains a sensitive lining and collects the 
+charge produced by ionization due to the effects of both neutron and gamma radiation, while the other collects 
+only the charge produced by the effect of gamma radiation. 
+
+By choice of the polarity of the polarization voltages, the output currents of these chambers are made to oppose 
+each other so that the net output from the detector is essentially due to neutrons. 
+
+c) Similar detectors may be used as ionization chambers sensitive to gamma radiation. These differ only troni 
+uncompensated boron ionization chambers in the omission of the neutron sensitive material. They can be tested 
+in a similar wav 
+
+
+
+12 
+
+
+
+IS : 11797-1985 
+,,.„.,,,.,. lEC Pub 515 (1975) 
+
+1 1.2 Sensitivity in the linear range ^ ^ 
+
+As has been stated in Sub-clause 2.2, the neutron and gamma sensitivity of current detectors {S^ and Sy ) is deter- 
+mined by dividing the mean or mean square output current by the perturbed thermal neutron fluence rate (flux) or 
+gamma exposure rate with a specified energy spectrum in the detector. For d.c. measurements, it is specified in units 
+of current per unit of neutron or gamma flux density (A • n"^ • cm^ • s or A • R"^ • h). 
+
+
+
+11 .3 Range of measurement 
+
+The theoretical range of measurement appropriate to the detector is determined by its lower and upper limits. 
+
+The lower limit is fixed by parasitic current due to chamber activation, insulation leakage or background alpha 
+currcn+ in the case of a fission chamber. 
+
+The upper limit is fixed by recombination effects. 
+
+The practical limitations are explained in Clause 7. 
+
+11.4 Influenceability by concomitant radiation 
+
+For neutron detectors, the main concomitant radiation to be considered is gamma radiation. 
+
+Influenceability is determined by dividing the output current due to gamma radiation alone by the value of the 
+exposure rate which produces this current. It is measured in A • R'^ • h. For a compensated chamber, the influence- 
+ability is reduced by the compensation factor. 
+
+If ly is the current delivered by an uncompensated chamber in the presence of gamma radiation, the current 
+delivered by an identical but compensated chamber would be ly */, where ly -/is the product of ly and the com- 
+pensation factor/. 
+
+For gamma ionization chambers, the concomitant radiations to be considered are neutron flux and induced 
+gamma radiations. 
+
+1 L5 Operating temperature 
+
+The range of operating temperature is determined mainly by the structural materials and the technology of 
+manufacture. At high temperature, the principal problem is to maintain satisfactory insulator performance. 
+
+
+
+1 1 .6 Burn-up and useful life (see definition in Sub-clauses 2, 7 and 2.8) 
+
+The burn-up life depends on consumption of the sensitive material. It is measured by the total output charge or 
+by the value of the neutron fluence corresponding to a specified quantity of sensitive material consumed. 
+
+The useful life depends on the ambient conditions and the influence quantities. If storage conditions can affect 
+the useful life of the detector, they must be clearly defined. 
+
+1 1 .7 Polarization vohages 
+
+The polarization voltages are defined by polarity and magnitude. 
+
+Tiie compensation voltage is usually negative with respect to the chamber case and may be adjustable or fixed, 
+depending on the design of the chamber. 
+
+The main polarization voltage is generally positive with respect to the chamber case and is chosen to ensure 
+saturation of the chamber over the operating range. This choice shall be based on data furnished by the saturation 
+curves. 
+
+Polarization characteristics for the detector shall be furnished by the manufacturer to allow proper determination 
+of voltage regulation requirements. 
+
+
+
+13 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+11.8 Response to a nuclear event 
+
+In some applications, the mean and mean square electric charge released per detected neutron or gamma photon 
+is of interest. For mean square measurements, the electron and ion collection time is also important. 
+
+
+
+1 1 .9 Insulation resistance 
+
+The insulation resistance of the collector electrode shall be such that leakage current does not introduce significant 
+error within the measurement range. The value chosen shall be related to the performance of the measuring sub- 
+assembly. 
+
+11.10 Electrical capacitance 
+
+The electrical capacitance is an important characteristic when it has an appreciable effect on the time constant 
+of the input circuit of the measuring sub-assembly. 
+
+
+
+SECTION FOUR — TEST METHODS 
+12. General 
+
+12.1 Introduction 
+
+The tests specified are final tests in the production process. They shall be performed by the manufacturer on each 
+detector and its cable (if the cable is an integral part of the detector) except where the detector is in large quantity 
+production. In this case, the tests shall be performed on an adequate sample. 
+
+The test methods described in this standard relate to electrical, nuclear and mechanical characteristics and serve 
+as the basis for acceptance of production detectors. 
+
+Wherever neutron or gamma radiation tests involving detector sensitivity, compensation, activation, influence- 
+abihty, etc., are required, the energy spectrum and intensity of the radiation should be specified. For these tests, 
+a known isotropic fiuence rate ox gamma radiation rate is necessary. 
+
+Certain special or additional tests should be carried out on prototypes or on detectors selected at random from a 
+batch. 
+
+Examples of these special tests are : burn-up and useful fife, long-term stability at maximum temperature, influence- 
+ability of pulse fission ionization chambers, high-stress mechanical tests, variation of neutron sensitivity with 
+temperature, vibration, saturation characteristics at high neutron fluence rate (flux) or gamma level. This 
+information should be available from the manufacturer. 
+
+
+
+12.2 Choice of test methods 
+
+In selecting test methods, consideration should be given to the fact that detectors for the instrumentation and 
+protection of reactors are designed primarily for relative measurements of nuclear radiation and not for absolute 
+measurements. 
+
+Test methods used shall be such that the results are not influenced by electrical interference. 
+
+
+
+1 2.3 List of typical tests 
+The following tests should be carried out wherever they are applicable: 
+
+a) Mechanical tests : 
+— microphony. 
+
+
+
+14 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+b) Electrical tests : 
+
+— insulation resistance; 
+
+— dielectric strength ; 
+
+— electrical capacity; 
+
+— background. 
+
+c) Nuclear tests : 
+
+— sensitivity; 
+
+— influenceability ; 
+
+— compensation; 
+
+— saturation voltage or counts plateau; 
+
+— charge developed per event; 
+
+— collection time; 
+
+— discrimJnation curve or pulse spectrum.; 
+
+— multiplication factor, 
+
+dj Special tests: may be required by the particular detector specification. 
+
+12.4 Climatic conditions 
+Unless otherwise specified, the tests shall be carried out under the following conditions (see also Sub-clause 12.2): 
+
+— ambient temperature: 25 rh 15 °C; 
+
+— relative humidity: between 45% and 75%. 
+
+The actual atmospheric conditions shall be stated on the test sheets. In accordance with good practice, they shall 
+not be subject to large or rapid variations during a series of tests. A practical method for avoiding such variations 
+is to place the detector in a climatic chamber at constant temperature. 
+
+
+
+12.5 Mechanical tests 
+
+Mechanical tests should be performed first and then followed by the electrical and nuclear tests. 
+
+The mechanical tests shall comprise at least a visual inspection supplemented by such tests as are required for the 
+specific application. 
+
+Vibration and imipact tests shall be performed on a prototype according to specifications. 
+
+
+
+13. Specific tests for puise fission ionization chambers 
+
+13.1 General 
+
+These tests shall be carried out when the detector sub-assembly is complete in all respects including connectors 
+and integral cables. They may form the basis of final acceptance. 
+
+The equipment used for all the tests shall comprise suitable measuring instruments which have been accurately 
+set up. It will include a capacitance bridge, appropriate voltage sujjplies, radiation sources, ovens, etc. 
+
+It is necessary that measuring sub-assemblies used for tests should be identified in such a way that their character- 
+istics can be accurately reproduced. In addition, means must be provided to check the calibration at any time either by 
+pulse generators or by a standard chamber. 
+
+
+
+15 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+The important factors are : input circuit type (charge, voltage or current sensitive), input circuit impedance, overall 
+frequency response, input level, discriminator dead time, dynamic range and recovery time. 
+
+
+
+13.2 Mechanical tests (see Sub-clause 12.5) 
+
+13.3 Electrical and nuclear tests 
+
+13.3.1 At ambient temperature 
+
+a) Where possible, the capacitance between the electrodes and between the electrodes and the chamber case 
+shall be measured and the continuity of all connecting cables verified. 
+
+b) The leakage current between the chamber case and any additional outer screen shall be measured at a specified 
+voltage. 
+
+c) The chamber alpha current plus the leakage current between the electrodes shall be measured over a specified 
+voltage range and, where applicable, the leakage current between the electrodes and the chamber case shall be 
+measured at a specified voltage. 
+
+d) The chamber shall be connected to the measuring sub-assembly and a discriminator curve plotted for zero 
+polarizing voltage and for the specified operating polarizing voltage. 
+
+The zero voltage curve shall be used to determine that amplifier noise is satisfactory, and the operating voltage 
+curve shall be recorded to define the alpha activity of the chamber. 
+
+The effective discriminator level shall be expressed in identifiable units of current or charge. Absolute units are 
+preferable for this purpose although other, non-absolute units such as "ion pairs" are in common use. 
+
+e) The chamber shall be exposed to a reproducible perturbed neutron fluence rate (flux) which gives a count 
+rate of at least 10 counts • s'^ at the specified operating voltage. A discriminator curve shall be plotted. 
+
+f) The polarizing plateau characteristic curve shall be plotted using a selected discriminator level. 
+
+g) When required, the mean electron collection time of the chamber shall be measured. 
+
+In the case of current pulses (time constant of the measuring circuit much shorter than the collection time), the 
+electron collection time is represented by the pulse base width.* In the case of charge collection (time constant of 
+the measuring circuit much greater than the collection time), the collection time is measured by the resultant 
+pulse rise time as defined in lEC Publication 50(66), I.E.V. 66-10-375. 
+
+h) The electric charge or current per pulse at the specified polarizing potential and at a given discriminator level 
+shall be recorded. This may be determined from the characteristics of the pulse or by a special measurement. 
+
+
+
+13.3.2 At maximum operating temperature 
+
+This test does not need to be carried out on those chambers whose maximum working temperature shall not 
+exceed 100 °C. 
+
+a) The chamber and an appropriate length of cable shall be placed in an oven and the temperature raised to the 
+maximum operating temperature within defined limits. All connecting cables shall be verified for electrical con- 
+tinuity where possible. 
+
+The leakage current between the chamber case and any additional outer screen shall be measured at a suitable 
+voltage. 
+
+
+
+* The pulse width is defined by the interval of time measured on the straight line parallel to the time axis and between points with an 
+ordinate equal to 10% of the pulse amplitude. 
+
+
+
+16 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+b) The chamber alpha current plus the leakage current between the electrodes shall be meas--red over a specified 
+voltage range and, where applicable, the leakage current between the electrodes and the chamber case shall be 
+measured at a specified voltage. 
+
+c) The chamber shall be connected to the measuring sub-assembly and a discriminator curves plotted for zero 
+polarizing voltage and for the specified operating polarizing voltage. 
+
+The zero voltage curve shall be used to determine that amplifier noise is satisfactory, and the operating voltage 
+curve shall be recorded to define the alpha activity of the chamber. 
+
+d) The chamber shall be exposed to the same neutron fluence rate (flux) used in Item e) of Sub-clause 13.3.1 
+above and a discriminator curve plotted. The curve shall agree with that obtained in Item e) of Sub-clause 13.3.1 
+within the specified limits. 
+
+e) The polarizing plateau characteristic curve shall be plotted using the discriminator level defined after tne 
+test under Item e) of Sub-clause 13.3.1. 
+
+f) When required, the mean electron collection time of the chamber shall be measured. 
+
+gj The chamber and its cables shall remain at the maximum operating temperature for not less than 100 h. At 
+the end of this time and while the chamber and its cables are still at this temperature, the tests under Items a), 
+b)y c), d)y e),f) and g) of Sub-clause 13.3.2 shall be repeated. 
+
+The results obtained shall be the same within the specified limits. 
+
+13.3.3 Repeat tests at ambient temperature 
+
+After the tests at the maximum operating temperature, the sub-assembly shall be allowed to cool to ambient 
+temperature. The tests under Items a), b), c), d), e),f) and g) of Sub-clause 13.3.1 shall be repeated. The results 
+obtained should remain within the specified limits. 
+
+If the tests of Sub-clause 13.3.2 have been omitted because the operating temperature is less than 100 ^C, at least 
+100 h must elapse between the tests of Sub-clauses 13,3.1 and 13.3.3, 
+
+13.4 Neutron sensitivity in the linear range 
+
+The chamber neutron sensitivity at a specified operating voltage shall be determined and expressed in the units 
+given in Sub-clause 10.2. This may be done by measuring the neutron flux density used in Item ej of Sub-clause 
+13.3,1 or by a special measurement. 
+
+
+
+14. Specified tests for boron trifluoride and boron^lined proportional counter tubes 
+
+14.1 General (see Sub-clause 13 J) 
+
+14.2 Mechanical tests (see Sub-clause 12,5) 
+
+14.3 Electrical and nuclear tests 
+
+14.3.1 At ambient temperature 
+
+a) The leakage current between the anode wire and the counter case shall be measured at a specified voltage. 
+
+b) The counter tube shall be exposed to a reproducible perturbed neutron fluence rate (flux) and the output of the 
+measuring sub-assembly amplifier shall be connected to a multi-channel analyser. The polarizing voltage shall be 
+applied to the counter tube and adjusted until the peak of the spectrum on the analyser is at a predetermined 
+position. The applied voltage and the spectrum full width at half -magnitude shall be recorded. For the boron- 
+Uned proportional counter tube, other data such as the whole spectrum may be recorded instead of full width at 
+half-magnitude. 
+
+
+
+17 
+
+
+
+IS : 117^-1985 
+lEC Pyb 515 (1975) 
+
+c) A polarizing voltage plateau curve shall be plotted at a specified discriminator level. 
+A discrimination curve should be plotted at a specified polarizing potential. 
+
+14.3.2 At maximum operating temperature 
+
+This test does not need to be carried out on those counter tubes whose maximum working temperature will not 
+exceed 100 °C. 
+
+a) The counter tube and an appropriate length of cable shall be placed in an oven and the temperature raised to 
+the maximum operating temperature within defined limits. 
+
+b) The tests under Items a) and b) of Sub-clause 14.3. 1 shall be repeated. The results obtained shall be the same 
+within the specified limits. 
+
+c) The counter tube and its cables shall remain at the maximum operating temperature for not less than 100 h. 
+At the end of this time and while the counter tube and its cables are still at this temperature, the foregoing tests 
+under Items a) and b) of Sub-clause 14.3.1 shall be repeated. The results obtained shall be the same within the 
+specified limits. 
+
+14.3.3 Repeat tests at ambient temperature 
+
+After the tests at the maximum operating temperature, the sub-assembly shall be allowed to cool to ambient 
+temperature. The tests under Items a) and b) of Sub-clause 14.3.1 shall be repeated and the results obtained shall 
+be the same within the specified limits. 
+
+If the tests given in Sub-clause 14,3.2 have been omitted because the operating temperature is less than 100 °C, 
+at least 100 h shall elapse between the tests given in Sub-clauses 14.3.1 and 14.3.3. 
+
+14.4 Neutron sensitivity in the linear range 
+
+The counter tube neutron sensitivity at a specified operating voltages shall be determined and expressed in the 
+units given in Sub-clause 10.2. This may be done by measuring the neutron flux density used in Item b) of Sub- 
+clause 14.3.1 or by a special measurement. 
+
+14.5 Influenceability by gamma radiation 
+
+For specified applications in which gamma influenceability is particularly important, the following tests should 
+be performed : 
+
+The counter tube shall be connected to a specified measuring sub-assembly and exposed to a specified gamma 
+exposure rate. The output count rate should be determined and should be less than a specified value. 
+
+For boron trifluoride counter tubes, this test should be repeated after not less than 100 h. 
+
+In some applications, the gamma radiation can influence the response of a counter tube to neutrons. In such 
+cases, special tests would then be necessary. 
+
+
+
+15. Specific tests for helium-3 proportional counter tubes 
+
+Details of tests on these detectors are not given because they are similar to the tests apphed to boron trifluoride 
+counter tubes. 
+
+
+
+16. Specified tests for compensated boron current ionization chambers 
+
+1 6. 1 General 
+
+These tests shall be carried out when the detector sub-assembly is complete in all respects including connectors 
+and integral cables. They may form the basis of final acceptance. 
+
+18 
+
+
+
+IS : 11797-liW5 
+lEC Pub 515 (1975) 
+
+The equipment used for the tests shall comprise suitable measuring instruments which have been accurately set 
+up. It will include a capacitance bridge, appropriate voltage supplies, radiation sources, ovens, etc. 
+
+16.2 Mechanical tests (see Sub-clause 12,5) 
+
+1 6.3 Electrical tests 
+
+16.3.1 At ambient temperature 
+
+a) The capacitance between the collector and each of the polarizing voltage electrodes, and between the collector 
+and the chamber case, shall be measured. 
+
+All connecting cables shall be verified for electrical continuity. 
+
+b) With both polarizing electrodes connected to the chamber case, the leakage current between the collector and 
+the case shall be measured at a specified voltage. 
+
+c) With the collector and gamma polarizing electrodes connected to the chamber case, the leakage current 
+between the neutron polarizing electrode and the chamber case shall be measured at a specified voltage. 
+
+d) With the collector and neutron polarizing electrodes connected to the chamber case, the leakage current 
+between the gamma polarizing electrode and the chamber case shall be measured at a specified voltage. 
+
+e) The leakage current between the chamber casd and any additional outer screen shall be measured at a specified 
+voltage. 
+
+16.3.2 At maximum operating temperature 
+
+This test does not need to be carried out on those chambers whose maximum working temperature does not exceed 
+lOD °C. 
+
+a) The chamber and an appropriate length of cable shall be placed in an oven and the temperature raised to the 
+maximum operating temperature within defined limits. All connecting cables shall be verified for electrical 
+continuity. 
+
+b) Repeat test under Item b) of Sub-clause 16.3.1. 
+
+c) Repeat test under Item c) of Sub-clause 16.3.1 
+
+d) Repeat test under Item d) of Sub-clause 16.3.1 
+
+e) Repeat test under Item e) of Sub-clause 16.3.1 
+
+f) With the neutron polarizing electrode connected to the chamber case, the collector current shall be determined 
+as a function of potential applied to the gamma polarizing electrode. The readings obtained should be less than 
+specified values at all potentials up to a specified limit. 
+
+g) With the gamma polarizing electrode connected to the chamber case, the collector current shall be determined 
+as a function of potential applied to the neutron polarizing electrode. The readings obtained should be less than 
+specified values at all potentials up to a specified limit. 
+
+h) The chamber and its integral cables shall remain at the maximum operating temperature for not less than 
+100 h. At the end of this time and while the chamber and its integral cables are still at this temperature, the fore- 
+going tests under Items a)y b), c), d) and e) of Sub-clause 16.3.2 shall be repeated. The results obtained shall 
+be the same within specified limits. 
+
+16.3.3 Repeat tests at ambient temperature 
+
+After the tests at maximum operating temperature, the sub-assembly shall be allowed to cool to ambient tem- 
+perature. The tests under Items a),b),c), d) and e) of Sub-clause 16.3.1 shall be repeated and the results obtained 
+shall be the same within specified limits. 
+
+19 
+
+
+
+IS : 11797-1985 
+lECPub 515(1975) 
+
+If the tests given in Sub-clause 163,2 have been omitted because the operating temperature is less than 100 °C, 
+at least 100 h must elapse between the tests given in Sub-clauses 16.3.1 and 16.3.3. 
+
+16.4 Nuclear tests 
+
+16.4.1 Influenceablllty by gamma radiation and compensation factor 
+
+The chamber shall be exposed to a known gamma exposure rate of known energy spectrum in a stated geometrical 
+relationship with the source. These factors having been chosen with a view to obtaining adequate accuracy in the 
+following tests. 
+
+a) A potential Uy shall be applied to the gamma polarizing electrode and a saturating positive potential shall 
+be applied to the neutron polarizing electrode. Collector current shall be measured for both positive and reverse 
+values of Uy. 
+
+Gamma current in the compensating section of the chamber is given by half the difference between the two 
+collector currents. This current shall be evaluated and plotted as a function of the potential Uy, 
+
+b) A positive potential U^ shall be apphed to the neutron polarizing electrode and the collector current shall 
+be measured with positive and reverse operating potentials applied to the gamma polarizing electrode. The current 
+in the neutron section of the chamber is given by half the sum of these two currents. This current shall be evalu- 
+ated and plotted as a function of the potential U^^. 
+
+The voltage at which the current is 90% and 110% of its plateau value shall be determined and designated as 
+C/^ 0.9 and U^,^,, 
+
+An upper limjt to the value of U^ which may be applied in this test m.ay be specified lower than that which 
+causes a 10% increase in saturation current, since it is recognized that some ionization chamber assemblies 
+cannot be tested to U^ j j v/ithout exceeding their maxim.um rated voltage 
+
+The gamma influenceability of the neutron-sensitive volume shall be determined from the saturation current 
+obtained in this way and the known gamma exposure rate. 
+
+c) The compensation factor is given by the difference between the currents given in a) and in 6j, this difference 
+being divided by the current given in b). It shall be determined as a function of Uy for a specified value of U^. 
+This should be repeated for specified source to detector geometries. 
+
+On some compensated ionization chambers, reversal of the gamma polarizing potential may introduce errors. In 
+such cases, it may be possible to reverse the neutron polarizing potential and to modify the above procedure 
+accordingly, 
+
+16.4.2 Neutron sensitivity in the linear range 
+
+The chamiber shall be exposed to a known perturbed stationary neutron fiux with negligible gamma radiation. 
+The neutron saturation characteristics of the neutron-sensitive section shall be determined using the method given 
+in Sub-clause 16.4.1 
+
+A positive potential t/„ shall be applied to. the neutron polarizing electrode and the collector current shall be 
+measured with positive and reverse operating potentials applied in turn to the gamma polarizing electrode. The 
+current due to neutrons is given by half the sum of these two currents. 
+
+This current shall be evaluated and plotted as a function of the potential U^, 
+
+The voltage at which the current is 90% and 110% of the saturation value shall be determined and designated as 
+
+An upper limit to the value of t/„ which may be applied in this test may be specified for the reason given in 
+Item b) of Sub-clause 16.4.1. 
+
+From^ the saturation current and the knov/n neutron fluence rate (flux), the neutron sensitivity of the cham.ber 
+shall be determined and limits of accuracy shall be stated. 
+
+
+
+20 
+
+
+
+IS : 117^7-1985 
+lEC Pub 515 (1975) 
+
+17. Specific tests for uncompensated boron current ionization chambers 
+
+1 7. 1 General (see Sub-clause 16. 1) 
+
+The tests on uncompensated chambers are based on those for compensated chambers but are simpler because of 
+the absence of a gamma polarizing electrode. 
+
+17.2 Mechanical tests (see Sub-clause 12 J) 
+
+17.3 Electrical tests 
+
+17.3.1 At ambient temperature 
+
+a) The capacitance between the collector and the polarizing electrodes and between the collector and the chamber 
+case shall be measured. 
+
+As far as possible, all connecting cables shall be verified for electrical continuity. 
+
+b) With the polarizing electrode connected to the chamber case, the leakage current between the collector and 
+the case shall be measured at a specified voltage. 
+
+c) With the collector connected to the chamber case, the leakage current between the polarizing electrode and 
+the chamber case shall be measured at a specified voltage. 
+
+d) The leakage current between the chamber case and any additional outer screen shall be measured at a specified 
+voltage. 
+
+17.3.2 At maximum operating temperature 
+
+This test does not need to be carried out on those detectors whose maximum working temperature does not 
+exceed 100 °C. 
+
+a) The chamber and an appropriate length of cable shall be placed in an oven and the temperature raised to the 
+maximum operating temperature within defined limits. 
+
+As far as possible, all connecting cables shall be verified for electrical continuity. 
+
+b) With the polarizing electrode connected to the chamber case, the leakage current between the collector and 
+the case shall be measured at a specified voltage. 
+
+c) With the collector connected to the chamber case, the leakage current between the polarizing electrode and 
+the chamber case shall be measured at a specified voltage. 
+
+d) The leakage current between the chamber case and any additional outer screen shall be measured at a specified 
+voltage. 
+
+e) The collector current shall be determined as a function of potential applied to the polarizing electrode. 
+The readings obtained shall be less than specified values at all potentials up to a specified Hmit. 
+
+f) The chamber and its cables shall remain at the maximum operating temperature for not less than 100 h. At 
+the end of this time, and while the chamber and its integral cables are still at this temperature, the foregoing tests 
+under Items a), b), c) and d) of Sub-clause 17.3.2 shall be repeated. The results obtained shall be the same 
+within specified limits. 
+
+17.3.3 Repeat tests at ambient temperature 
+
+After the tests at maximum operating temperature, the sub-assembly shall be allowed to cool to ambient tempera- 
+ture. The tests under Items b), c) and d) of Sub-clause 17.3.1 shall be repeated and the results obtained should 
+be the same within specified limits. 
+
+
+
+21 
+
+
+
+IS : 11797-1985 
+lEC Pub 515 (1975) 
+
+If the tests of Sub-clause 17.3.2 have been omitted because the operating temperature is less than 100 °C, at least 
+100 h must elapse between the tests of Sub-clauses 17.3.1 and 17.3.3. 
+
+17.4 Nuclear tests 
+
+Neutron sensitivity and inftuenceability by gamma radiation 
+
+The polarization voltage, neutron sensitivity, influenceability by gamma radiation and background for an un- 
+compensated ionization chamber shall be determined by the test methods given in Sub-clauses 16.4.1, 16.4.2 and 
+16.4.3, as applicable. 
+
+
+
+18. Specific tests for current ionization chambers for gamma radiation 
+
+The tests for current ionization chambers are identical to those for uncompensated boron current ionization 
+chambers except that the primary and concomitant radiations are interchanged. 
+
+
+
+19. Specific tests for fission current ionization chambers 
+
+The tests for fission current ionization chambers are identical to those for uncompensated boron current ioniz- 
+ation chambers. Alpha activity of the chamber coating will, however, influence leakage current measurements and 
+should be taken into consideration. It will influence the tests under Items b) and c) of Sub-clauses 17.3.1 and 17.3.2 
+as well as Sub-clause 17.3.3, and may also cause errors in the primary and concomitant sensitivity measurements 
+unless adequate radiation strengths are used. 
+
+
+
+22 
+
+
+

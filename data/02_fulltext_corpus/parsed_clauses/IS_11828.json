@@ -1,0 +1,52 @@
+{
+  "is_number": "IS IS_11828",
+  "standard_id": "IS IS_11828",
+  "title": "Indian Standard Specification / Test Method (IS IS_11828)",
+  "ia_identifier": "IS_11828",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11828) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11828).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11829",
+      "standard_id": "IS 11829:1986",
+      "title": "Miniature Hand Hacksaw Blades",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2500",
+      "standard_id": "IS 2500",
+      "title": "Indian Standard Specification / Test Method (IS 2500)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11828"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "nominal size 150 mm"
+    ],
+    "marking_requirements": [
+      "Marking — Each frame shall be legibly stamped with manufacturers' name, initials/registered trade-mark, nominal size and type."
+    ]
+  },
+  "total_chars_parsed": 5025
+}

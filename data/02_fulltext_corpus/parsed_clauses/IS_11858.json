@@ -1,0 +1,54 @@
+{
+  "is_number": "IS IS_11858",
+  "standard_id": "IS IS_11858",
+  "title": "Indian Standard Specification / Test Method (IS IS_11858)",
+  "ia_identifier": "IS_11858",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies material, dimensions and other requirements of handle grip for power tiller.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 3400",
+      "standard_id": "IS 3400",
+      "title": "Indian Standard Specification / Test Method (IS 3400)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7201",
+      "standard_id": "IS 7201",
+      "title": "Indian Standard Specification / Test Method (IS 7201)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade deration",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11858"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "elongation is measured when a tensile stress of 2 800 kN"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "1 Marking —Each grip shall be legibly marked with the manufacturer's name and/or recognized trade-mark, batch or code number.",
+      "1 The grip may also be marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 13080
+}

@@ -1,0 +1,1315 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+IS 14254-1 (2006): Programmable controller. Part 1: General 
+information [ETD 18: Industrial Process Measurement and 
+Control] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+aj^&vi iJii^s:y%K^ isb^^ni^seg 
+
+
+
+:<>5&i| mT'5K^5?::5:^>^i»l 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS14254(Part1):2006 
+rEC 61131-1 (2003) 
+
+
+
+( wm^^jftmf ) 
+
+Indian Standard 
+PROGRAMMABLE CONTROLLERS 
+
+PART 1 GENERAL INFORMATION 
+
+( First Revision ) 
+
+ICS 25.040.40; 35.240.50 
+
+
+
+© BIS 2006 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN. 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELH1 110002 
+
+March 2006 P"ce Group 6 
+
+
+
+Industrial Process Measurement and Control Sectional Committee, ET 18 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard (Part 1) (First Revision) which is identical with lEC 61131-1 (2003) 'Programmable 
+controllers — Part 1 : General information' issued by the International Electrotechnical Commission (lEC) 
+was adopted by the Bureau of Indian Standards on the recommendation of the Industrial Process 
+Measurement and Control Sectional Committee and approval of the Electrotechnical Division Council. 
+
+This part of the standard constitutes a series of standards on Programmable Controllers and their 
+associated peripherals should be read in conjuction with the other parts of the series. Other parts of the 
+series are as follows: 
+
+Part 2 Equipment requirements and tests 
+
+Part 3 Programming languages 
+
+Part 4 User guidelines 
+
+Part 5 Communications 
+
+Part 6 Reserved 
+
+Part 7 Fuzzy-control programming 
+
+Part 8 Guidelines for the application and implementation of programming languages for programmable 
+controllers 
+
+The text of the lEC Standard has been approved as suitable for publication as an Indian Standard without 
+deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention 
+is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard* appear, referring to this standard, they should be read 
+as 'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice 
+is to use a point (.) as the decimal marker. 
+
+In this adopted standard, reference appears to the following International Standard for which Indian 
+Standard also exists. The corresponding Indian Standard which is to be substituted in its respective place 
+is listed below along with its degree of equivalence for the edition indicated: 
+
+International Standard Corresponding Indian Standard Degree of Equivalence 
+
+lEC 61131-2 (2003) Programmable IS 14254 (Part 2) : 2005 Programmable Identical 
+
+controllers — Part 2 : Equipment controllers: Part 2 Equipment 
+requirements and tests requirements and tests 
+
+The technical committee has reviewed the provisions of following International Standards referred in this 
+adopted standard has decided that they are acceptable for use in conjunction with this standard: 
+
+International Standard Title 
+
+lEC 60364 Electrical installations of buildings 
+
+lEC 61 1 31 -3 (2003) Programmable controllers — Part 3 : Programming languages 
+
+
+
+( Continued on third cover) 
+
+
+
+IS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+Indian Standard 
+PROGRAMMABLE CONTROLLERS 
+
+PART 1 GENERAL INFORMATION 
+
+( First Revision ) 
+
+1 Scope 
+
+This Part of lEC 61131 applies to programmable controllers (PLC) and their associated peri- 
+pherals such as programming and debugging tools (PADTs), human-machine interfaces 
+(HMIs). etc., which have as their intended use the control and command of machines and 
+industrial processes. 
+
+PLCs and their associated peripherals are intended to be used in an industrial environment 
+and nrtay be provided as open or enclosed equipment. If a PLC or its associated peripherals are 
+intended for use in other environments, then the specific requirements, standards and 
+installation practices for those other environments must be additionally applied to the PLC 
+and its associated peripherals. 
+
+The functionality of a programmable controller can be performed as v»^eli on a specific hardware 
+and software platform as on a general-purpose computer or a personal computer with industrial 
+environment features. This standard applies to any products performing the function of PLCs 
+and/or their associated peripherals. This standard does not deal with the functional safety or 
+other aspects of the overall automated system. PLCs, their application programme and their 
+associated peripherals are considered as components of a control system. 
+
+Since PLCs are component devices, safety considerations for the overall automated system 
+including installation and application are beyond the scope of this Part. However, PLC safety as 
+related to electric shock and fire hazards, electrical interference immunity and error detecting 
+of the PLC-system operation (such as the use of parity checking, self-testing diagnostics, etc.), 
+are addressed. Refer to lEC 60364 or applicable national/local regulations for electrical instal- 
+lation and guidelines. 
+
+This Part of lEC 61131 gives the definitions of terms used in this standard. It identifies the 
+principal functional characteristics of programmable controller systems. 
+
+2 Normative references 
+
+The following referenced documents are indispensable for the application of this document. For 
+dated references, only the edition cited applies. For undated references, the latest edition of 
+the refereaced document (including any amendments) applies. 
+
+lEC 61 131-2, Programmable controllers - Part 2: Equipment requirements and tests^ 
+
+lEC 61 131-3:2003, Programmable controllers - Part 3: Programming languages 
+
+
+
+^ To be published. 
+
+
+
+IS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+
+
+3 Terms and definitions 
+
+For the purposes of this document, the following terms and definitions apply. 
+
+3.1 
+
+application programme or user programme 
+
+logical assembly of all the programming language elements and constructs necessary for the 
+intended signal processing required for the control of a machine or process by a PLC-system 
+
+3.2 
+
+automated system 
+
+control system beyond the scope of lEC 61131, in which PLC-systems are incorporated by or 
+for the user, but which also contains other components including their application programmes 
+
+3.3 
+
+field device 
+
+catalogued part to provide input and/or output interfaces or to provide data pre- 
+processing/post-processing to the programmable controller system. A remote field device may 
+operate autonomously from the programmable controller system. It can be connected to the 
+programmable controller using a field bus 
+
+3.4 
+
+ladder diagram or relay ladder diagram 
+
+one or more networks of contacts, coils, graphically represented functions, function blocks, 
+data elements, labels, and connective elements, delimited on the left and (optionally) on the 
+right by power rails 
+
+3.5 
+
+programmable (logic) controller (PLC) 
+
+digitally operating electronic system, designed for use in an industrial environment, which uses 
+a programmable memory for the internal storage of user-oriented instructions for implementing 
+specific functions such as logic, sequencing, timing, counting and arithmetic, to control, 
+through digital or analogue inputs and outputs, various types of machines or processes. Both 
+the PLC and its associated peripherals are designed so that they can be easily integrated into 
+an industrial control system and easily used in all their intended functions 
+
+NOTE The abbreviation PLC is used In this standard to stand for programmable controllers, as is the common 
+practice in the automation industry. The use of PC as an abbreviation for programmable controllers leads to 
+confusion with personal computers. 
+
+3,6 
+
+programmable controller system or PLC-system 
+
+user-built configuration, consisting of a programmable controller and associated peripherals, 
+that is necessary for the intended automated system. It consists of units interconnected by 
+cables or plug-in connections for permanent installation and by cables or other means for 
+portable and transportable peripherals 
+
+3.7 
+
+programming and debugging tool (PADT) 
+
+catatogued peripheral to assist in programming, testing, commissioning and troubleshooting the 
+PLC-system application, programme documentation and storage and possibly to be used as 
+HMIs. PADTs are said to be pluggable when they may be plugged or unplugged at any time into 
+their associated interface, without any risk to the operators and the application. In all other 
+cases, PADTs are said to be fixed 
+
+
+
+IS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+3.8 
+
+remote input/output station (RIOS) 
+
+manufacturer's catalogued part of a PLC-system including input and/or output interfaces 
+allowed to operate only under the hierarchy of the main processing unit (CPU) for I/O 
+multiplexing/demultiplexing and data pre-processing/post-processing. The RIOS is the only 
+permitted limited autonomous operation, for example, under emergency conditions such as 
+breakdown of the communication link to the CPU or of the CPU itself, or when maintenance 
+and troubleshooting operations are to be performed 
+
+4 Functional characteristics 
+
+4.1 Basic functional structure of a programmable controller system 
+
+The general structure with main functional components in a programmable controller system is 
+illustrated in Figures 1, 2 and 3. These functions communicate with each other and with the 
+signals of the machine/process to be controlled. 
+
+
+
+other systems 
+
+
+
+Mains . 
+supply 
+
+
+
+^ 
+
+
+
+POWER 
+SUPPLY 
+function 
+
+
+
+COMMUNICATION 
+functions 
+
+
+
+HUMAN-MACHINE 
+
+INTERFACE 
+
+functions 
+
+
+
+V 
+
+
+
+PROGRAMMING, 
+DEBUGGING. 
+TESTING 
+functions 
+
+
+
+SIGNAL PROCESSING 
+functions 
+
+
+
+APPLICATION 
+PROGRAMME 
+functions 
+
+
+
+OPERATING 
+
+SYSTEM 
+
+functions 
+
+
+
+APPLICATION 
+PROGRAMME 
+STORAGE 
+functions 
+
+
+
+DATA 
+STORAGE 
+
+
+
+I 
+
+
+
+INTERFACE functions to 
+sensors and actuators 
+
+
+
+f==f 
+
+Machine/Process 
+
+
+
+OPERATOR 
+
+
+
+APPLICATION 
+programmer 
+
+
+
+Figure 1 - Basic functional structure of a PLC-system 
+
+
+
+IS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+
+
+Peripherals 
+
+
+
+Remote I/O statlon(s) 
+
+
+
+z: 
+
+
+
+
+
+Main processing unit 
+
+
+
+
+
+
+
+
+
+
+
+
+Input module(s) 
+
+
+
+
+
+
+Memory (ies) 
+
+and 
+processing unit(s) 
+
+
+
+
+Output nrKxiule(s) 
+
+
+Communication modute(s) 
+
+
+
+
+
+
+
+
+
+
+Power supply unit(s) 
+
+
+Implementer-specific subsystem(s) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 2 - Programmable controller hardware model 
+(from lEC 61131-5) 
+
+
+
+rS 14254 (Parti) .2006 
+lEC 61131-1 (200^) 
+
+
+
+y\ 
+
+
+
+Al 
+
+
+
+Peripherals 
+
+(permanently /non-permanently installed) 
+
+
+
+Ar 
+
+
+
+Remote lOs 
+
+
+
+Local extension rack 
+
+
+
+Basic PLC 
+
+
+
+Memory 
+(ies) 
+
+and 
+
+processing 
+unit(s) 
+
+
+Input 
+module(s) 
+
+
+Output 
+modute(s) 
+
+
+Commu- 
+nication 
+modules 
+(optional) 
+
+
+
+Power supply 
+
+
+
+D 
+
+
+
+^ 
+
+
+
+Auxiliary power 
+supply (optional) 
+
+
+
+'•I 
+
+
+
+Be , 
+
+
+
+Bi 
+
+
+
+tI 
+
+
+
+■^ 
+
+
+
+Bei 
+
+
+
+^ 
+
+
+
+# 
+
+
+
+Be 
+
+
+
+Bi 
+
+
+
+Limit of the scope of this standard 
+
+
+
+^ Digital and analogue 
+^ input signalintefface/port 
+
+^ I/O power interface/port 
+
+Digital and analogue 
+► output signallntertace/port 
+
+^ I/O power interface/port 
+
+
+
+^ Communication signals Interteoet/port 
+^ With third-party devices 
+
+(computers, printers, fieldbus, etc.) 
+
+
+
+^ Mains power input interface/port 
+
+
+
+Auxiliary power output interface/port 
+^ (to provide energy for sensors 
+and actuators) 
+
+^ Protective earthing port 
+
+
+
+^ Functional earthing port 
+
+
+
+Open communication signals 
+
+
+
+^ interface/port 
+
+
+
+(internal communications also open 
+to third-party devices 
+
+
+
+> 4 
+
+
+
+Interfaced devices and signals 
+
+
+
+Key 
+
+Al Communication interface/port for local I/O 
+
+Ar Communication interface/port for remote I/O station 
+
+Be Open-communication interface/port also open to third-party devices (for example, personal computer used 
+for programming instead of a PADT) 
+
+Bi Internal communication interface/port for peripherals 
+
+C Interface/port for digital and analogue input signals 
+
+D Interface/port for digital and analogue output signals 
+
+E Serial or parallel communication interfaces/ports for data communication with third-party devices 
+
+F Mains power interface/port. Devices with F ports have requirements on keeping downstream devices intel- 
+
+ligent during power-up, power-down and power interruptions. 
+
+G Port for protective earthing 
+
+H Port for functional earthing 
+
+J I/O power interface/port used to power sensors and actuators 
+
+K Auxiliary power output interface/port 
+
+Figure 3 - Typical interface/port diagram of a PLC-system 
+(from lEC 61131-2) 
+
+
+
+IS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+The CPU function consists of the application programme storage, the data storage, the 
+operating system, and the execution of the application programme functions. 
+
+The CPU processes signals obtained from sensors as well as internal data storage and 
+generates signals to actuators as well as internal data storage in accordance with the 
+application programme. 
+
+« Interface function to sensors and actuators 
+
+The interface function to sensors and actuators converts 
+
+- the input signals and/or data obtained from the machine/process to appropriate signal 
+levels for processing; 
+
+- the output signals and/or data from the signal processing function to appropriate signal 
+levels to drive actuators and/or displays. 
+
+The input/output signals to the interface functions may be coming from special modules 
+which pre-process external sensor signals according to the defined functions contained in 
+the special modules themselves. Examples of such special modules include RID module, 
+fuzzy-control module, high-speed counter module, motion modules and others. 
+
+• Communication function 
+
+The communication function provides data exchange with other systems (third-party 
+devices) such as other PLC-systems, robot controllers, computers, etc. 
+
+• Human-machine interface (HMI) function 
+
+The HMI function provides for interactron between the operator, the signal processing 
+function and the machine/process. 
+
+• Programming, debugging, testing and documentation functions 
+
+These functions provide for application programme generation and loading, monitoring, 
+testing and debugging as well as for applicatron programme documentation and archiving. 
+
+• Power-supply functions 
+
+The power-supply functions provide for the conversion and isolation of the PLC-system 
+power from the mains supply. 
+
+4.2 Characteristics of the CPU function 
+
+4.2.1 Summary 
+
+The capabilities of the programmable controllers are determined by programmable functions 
+which are summarized in Table 1. They are subdivided for ease of use into application-oriented 
+groups. 
+
+
+
+iS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+
+
+Table 1 - Summary of programmable functions 
+
+
+
+Function group 
+
+
+Examples 
+
+
+Logic control 
+
+- Logic 
+
+- Timers 
+
+- Counters 
+
+
+Programming language elements 
+
+AND, OR, NOT, XOR, bi-stable elements 
+
+On-delay, off-delay 
+
+Up- and/or down-counting (of pulses) 
+
+
+Signal/data processing 
+
+- Mathematical functions 
+
+- Data handling 
+
+- Analogue data processing 
+
+
+Basic arithmetic: ADD, SUB, MUL, DIV 
+Extended arithmetic: SORT, trigonometric functions 
+Comparisons: greater, smaller, equal 
+Selecting, formatting, moving 
+PID, integration, filtering (not as standard elements) 
+
+Fuzzy control 
+
+
+Interfacing functions 
+
+- Input/output 
+
+- Other systems 
+
+- HMI 
+
+- Printers 
+
+- Mass memory 
+
+
+Analogue, digital I/O modules 
+BCD conversion 
+Communication protocols 
+Display, commands 
+Messages, reports 
+Logging 
+
+
+Execution control 
+
+
+Periodic, event-driven execution 
+
+
+System configuration 
+
+
+Status checking (not as standard elements) 
+
+
+
+4.2.2 Operating system 
+
+The operating system function is responsible for tiie managennent of internal PLC-system 
+Interdependent functions (configuration control, diagnostics, memory management, application 
+programme execution management, communication with peripherals and with the interface 
+functions to sensors and actuators, etc.). 
+
+After a power-down or a distortion, the PLC system can restart in thr^e different ways. 
+
+a) Cold restart 
+
+Restart of the PLC-system and its application programme after all dynamic data (variables 
+such as I/O image, internal registers, timers, counters, etc., and programme contexts) are 
+reset to a predetermined state. A cold restart may be automatic (for example, after a power 
+failure, a loss of information in the dynamic portion(s) of the memory(ies), etc.) or manual 
+(for example, push-button reset, etc.). 
+
+b) Warm restart 
+
+Restart after a power failure with a user-programmed predetermined set of remnant data 
+and a system predetermined application programme context. A warm restart is identified by 
+a status flag or equivalent means made available to the application programme indicating 
+that the power failure shut-down of the PLC-system was detected in the run mode. 
+
+c) Hot re&tart 
+
+Restart after power failure that occurs within the process-dependent maximum time aHowed 
+for the PLC-system to recover as if there had been no power failure. 
+
+All I/O information and other dynamic data as well as the application programme context 
+are restored or unchanged. 
+
+Hot-restart capability requires a separately powered real-time clock or timer to determine 
+elapsed time since the power failure was detected and a user-accessible means to 
+programme the process-dependent maximum time allowed. 
+
+
+
+IS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+4.2.3 Memory for application data storage 
+
+• Application programme storage 
+
+The application programme storage provides for memory locations to store a series of in- 
+structions whose periodic or event-driven execution determines the progression of the 
+machine or the process. The application programme storage may also provide for memory 
+locations to store initial values for application programme data. 
+
+• Application data storage 
+
+The application data storage provides for memory locations to store I/O image table 
+and data (for example, set values for timers, counters, alarm conditions, parameters and 
+recipes for the machine or the process) required during the execution of the application 
+programme. 
+
+• Memory type, memory capacity, memory utilization 
+
+Various types of memory are in use: read/write (RAM), read-only (ROM), programmable 
+read-only (PROM), reprogrammable read-only (EPROM/UV-PROM, EEPROM). Memory 
+retention at power failure is achieved by a proper selection of the memory type where 
+applicable (for example, EPROM, EEPROM) or the use of memory back-up for volatile 
+miemories (for example, a battery). 
+
+Memory capacity relates to the number of memory locations in Kbytes, which are reserved 
+to store both the application programme and the application data. Memory capacity 
+measurements are: 
+
+- capacity in the minimum useful configuration; 
+
+- size(s) for expansion increments; 
+
+- capacity(ies) at maximal configuration(s). 
+
+Each programmable function used by the application programme occupies memory 
+locations. The number of locations required generally depends on the programmable 
+functions and the type of programmable controller. 
+
+Application data storage requires memory capacity depending on the amount and format of 
+data stored. 
+
+4.2.4 Execution of tlie application programme 
+
+An application programme may consist of a number of tasks. The execution of each task is 
+accomplished sequentially, one programmable function at a time until the end of the task. The 
+initiation of a task, periodically or upon the detection of an event (interrupt condition), is under 
+the control of the operating system. 
+
+4.3 Characteristics of the interface function to sensors and actuators 
+
+a) Types of input/output signals 
+
+Status information and data from the machine/process are conveyed to the I/O system of 
+the programmable controller by binary, digital, incremental or analogue signals. Conversely, 
+decisions and results determined by the processing function are conveyed to the 
+machine/process by use of appropriate binary, digital, incremental or analogue signals. 
+The large vari^ety of sensors and actuators used requires accommodating a wide range of 
+input and output signals. 
+
+b) Characteristics of the input/output system 
+
+Various methods of signal processing, conversion and isolation are used in input/output 
+systems. The behaviour and performance of the PLC-system depend on the static/dynamic 
+evaluation of the signal (detection of events), storing/non-storing procedures, opto-isolation, 
+etc. 
+
+
+
+IS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+Input/output systems in general display a modular functionality which allows for con- 
+figuration of the PLC-system according to the needs of the machine/process and also for 
+later expansion (up to the maximum configuration). 
+
+The input/output system may be located in close proximity to the signal processing function 
+or may be mounted close to the sensors or actuators of the machine/process, remotely 
+from the signal-processing function. 
+
+4.4 Characteristics of the communication function 
+
+The communication function represents the communication aspects of a programmable 
+controller. It serves the programme and data exchange between the programmable controller 
+and external devices or other programmable controllers or any devices in an automated 
+system. 
+
+It provides functions such as device verification, data acquisition, alarm reporting, programme 
+execution, and I/O control, application programme transfer, and connection management to the 
+signal-processing unit of the PLC from or to an external device. 
+
+The communication function is generally accomplished by serial data transmission over local 
+area networks or point-to-point links. 
+
+4.5 Characteristics of the human-machine interface (HIMI) function 
+
+The HMI function has two purposes. 
+
+• To provide the operator with the information necessary for monitoring the operation of the 
+machine/process. 
+
+• To allow the operator to interact with the PLC-system and its application programme in 
+order to make decisions and adjustments beyond their individual user scope. 
+
+4.6 Characteristics of the programming, debugging, 
+monitoring, testing and documentation functions 
+
+4.6.1 Summary 
+
+These functions are implemented as either an integral or an independent part of 
+a programmable controller and provide for code generation and storage of the application 
+programme and application data in the programmable controller memory{ies) as well as 
+retrieving such programmes and data from memory(ies). 
+
+4.6.2 Language 
+
+For the programming of the application, there is a set of languages defined in lEC 61131-3. 
+
+a) Textual languages 
+
+1) instruction list (IL) language 
+
+A textual programming language using instructions for representing the application 
+programme for a PLC-system. 
+
+2) Structured text (ST) language 
+
+A textual programming language using assignment, sub-programme control, selection 
+and iteration statements to represent the application programme for a PLC-system. 
+
+b) Graphical languages 
+
+1) Function block diagram (FBD) language 
+
+A graphical programming language using function block diagrams tor representing the 
+application programme for a PLC-system. 
+
+
+
+IS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+2) Ladder diagram (LD) language 
+
+A graphical programming language using ladder diagrams for representing the 
+application programme for a PLC-system 
+
+3) Sequential function chart (SFC) 
+
+A graphical and textual notation for the use of steps and transitions to represent the structure of 
+a program organization unit (program or function block) for a PLC-System. The transition 
+conditions and the step action can be represented In a subset of the above-listed 
+languages. 
+
+4.6.3 Writing the application programme 
+
+• Generating the application programme 
+
+The application programme may be entered via alphanumeric or symbolic keyboards and, 
+when menu-driven displays are, or a graphical programme entry Is, used via cursor keys, 
+joystick, mouse, etc. All programme and data entries are generally checked for validity and 
+internal consistency In such a way that the entry of Incorrect programmes and data is 
+
+minimized. 
+
+• Displaying the application programme 
+
+During application programme generation, all instructions are displayed Immediately, state- 
+ment by statement or segment by segment (in the case of a monitor or other large display). 
+In addition, the complete programme can generally be printed. If alternative representation 
+of programming language elements is available, then the display representation is generally 
+user-selectable. 
+
+4.6.4 Automated system start-up 
+
+a) J-oading the application programme 
+
+The generated programme resides either In the memory of the programmable controller or 
+in the memory of the PADT. The latter requires a programme transfer via down-load or 
+memory cartridge insertion into the programmable controller before start-up. 
+
+c) Accessing the memory 
+
+During start-up or trouble-shooting operations, the application programme and application 
+data storage are accessed by the PADT as well as by the processing unit to allow 
+programme monitoring, modification and correction. This may be done on line (I.e. while the 
+PLC-system Is controlling the machine/process). 
+
+d) Adapting the programmable controller system 
+
+Typical functions for adapting the PLC-system to the machine/process to be controlled are: 
+
+T) test functions which check the sensors and actuators connected to the PLC-systems 
+(for example, forcing the outputs of the PLC-system); 
+
+1) test functions which check the operation of the programme sequence (for example, 
+setting of flags and forcing the inputs); 
+
+2) setting or resetting of variables (for example, timers, counters, etc.). 
+
+e) Indicating the automated system status 
+
+The ability to provide information about the machine/process and the internal status of 
+the PLC-system and of its application programme facilitates the start-up and debugging 
+of a PLC application. Typical means are: 
+
+1) status Indication for Inputs/outputs; 
+
+3) Indication/recording of status changes of external signals and Internal data; 
+
+4) scan time/execution times monitoring; 
+
+5) real-time visualization of programme execution and data processing; 
+
+6) fuse/short-circuit protection status Indicators. 
+
+10 
+
+
+
+IS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+f) Testing the application programme 
+
+Test functions support the user during writing, debugging and checking the application 
+programme. Typical test functions are: 
+
+1) checking the status of inputs/outputs, internal functions (timers, counters); 
+
+2) checking programme sequences, for example, step-by-step operations, variations of 
+
+programme cycle time, halt commands; 
+
+3) simulation of interface functions, for example, forcing of l/Os, of information exchanged 
+between tasks or modules internal to the PLC-system. 
+
+g) Modifying the application programme 
+
+Functions for modification provide for changing, adjusting and correcting application 
+programmes. Typical functions are search, replace, insert, delete, and add; they apply to 
+characters, instructions, programme modules, etc. 
+
+4.6.5 Documentation 
+
+A documentation package should be provided to fully describe the PLC-system and the 
+application. The documentation package may consist of 
+
+a) description of the hardware configuration with project-dependent notations; 
+
+b) application programme documentation consisting of 
+
+1) programme listing, with possibly mnemonics for signals and data processed; 
+
+2) cross-reference tables for all data processed (l/Os, internal functions such as internal 
+stored data, timers, counters, etc.); 
+
+3) comments; 
+
+4) description of modifications; 
+
+5) maintenance manual. 
+
+4.6.6 Application programme archiving 
+
+For rapid repair and to minimize down-time, the user may want to store the application 
+programme in non-volatile media such as flash, PC-cards, EEPROM, EPROM, disks, etc. Such 
+a record needs to be updated after every programme modification so that the programme 
+executing in the PLC-system and the archived programme remain the same. 
+
+4.7 Characteristics af the power-supply functions 
+
+The power-supply functions generate voltages necessary to operate the PLC-system and 
+generally also provide control signals for proper ON/OFF synchronization of the equipment. 
+Various power supplies may be available depending on supply voltages, power consumption, 
+parallel connection, requirements for uninterruptible operation, etc. 
+
+5 Availability and reliability 
+
+Every automated system requires a certain level of availability and reliability of its control 
+system. It is the user's responsibility to ensure that the architecture of the overall automated 
+system, the characteristics of the PLC-system and its application programme will jointly satisfy 
+the intended application requirements. 
+
+a) Architecture of the automated system 
+
+Techniques such as redundancy, fault tolerance and automatic error checking, as well as 
+machine/process diagnostic functions can provide enhancements in the area of availability 
+of the automated system. 
+
+11 
+
+
+
+IS 14254 (Parti): 2006 
+lEC 61131-1 (2003) 
+
+b) Architecture of the programmable controller system 
+
+A modular construction in conjunction with suitable internal self-tests allowing rapid fault 
+identification may provide enhancements in the area of maintainability of the PLC-system 
+and therefore of the availability of the automated system. Techniques such as redundancy 
+and fault tolerance may also be considered for special applications. 
+
+c) Design, testing and maintenance of the application programme 
+
+The application programme is a key component of the overall automated system. Most 
+programmable controllers provide enough computing power to permit implementation 
+of diagnostic functions in addition to the minimum control function. Machine/process 
+behaviour modelling and subsequent identification of faulty conditions should be 
+considered. 
+
+Adequate testing of the application programme is mandatory. Every modification implies 
+proper design and testing so that the overall availability and reliability are not impaired. The 
+programme documentation ^hall be maintained and annotated accordingly. 
+
+d) Installation and service conditions 
+
+PLC-systems are typically of rugged design and intended for general-purpose service. 
+However, as for any equipment, the more stressing the service conditions, the worse is the 
+reliability, and benefit in this area may be expected when permitted service conditions are 
+better than the normal service conditions specified in lEC 61131-2. Some applications 
+may require consideration of special packaging, cooling, electrical noise protection, etc., for 
+reliable operation. 
+
+
+
+12 
+
+
+
+(Continued from second cover) 
+
+For the purpose of deciding whether a particular requirement of this standard rs complied with, the final 
+value, observed or calculated expressing the result of a test, shall be rounded off in accordance with 
+IS 2 : 1960 'Rules for rounding off numerical values (revised)'. The number of srgnificant places retained 
+in the rounded off value should be the same as that of the specified value in this standard. 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution establislned under the Bureau of Indian Standards Act, 1986 to promote 
+harnnonious development of tlie activities of standardization, marking and quality certification of 
+goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any 
+form without the prior permission in writing of BIS. This does not preclude the free use, in the course 
+of implementing the standard, of necessary details, such as symbols and sizes, type or grade 
+designations. Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are 
+also reviewed periodically; a standard along with amendments is reaffirmed when such review indicates 
+that no changes are needed; if the review indicates that changes are needed, it is taken up for revision. 
+Users of Indian Standards should ascertain that they are in possession of the latest amendments or 
+edition by referring to the latest issue of 'BIS Catalogue' and ^Standards: Monthly Additions'. 
+
+This Indian Standard has been developed from Doc: No. ET 18 (5610). 
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 
+
+Telephones: 2323 01 31 , 2323 3375, 2323 9402 website : www.bis.org.in 
+
+Regional Offices: Telephones 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg r2323 7617 
+
+NEW DELHI 1 1 0002 L 2323 3841 
+
+Eastern : 1/14 C.I.T. Scheme Vil M, V.I.P. Road, Kankurgachi r2337 8499, 2337 8561 
+
+KOLKATA 700054 L2337 8626, 2337 9120 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160022 r260 3843 
+
+1 260 9285 
+
+Southern : C.I.T. Campus, IV Cross Road, CHENNAI 600113 r2254 1216, 2254 1442 
+
+12254 2519,2254 2315 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) r2832 9295, 2832 7858 
+
+MUMBAI 400093 1 2832 7891 , 2832 7892 
+
+Branches: AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. FARIDABAD. 
+GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+NALAGARH, PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM. VISAKHAPATNAM. 
+
+
+
+Printed at Simco Printing Press, Delhi 
+
+
+

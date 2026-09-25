@@ -1,0 +1,68 @@
+{
+  "is_number": "IS IS_11403",
+  "standard_id": "IS IS_11403",
+  "title": "Indian Standard Specification / Test Method (IS IS_11403)",
+  "ia_identifier": "IS_11403",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11403) covers Indian Standard Specification / Test Method (IS IS_11403). This Indian Standard ( First Revision ) which is identical with ISO/IEC 7185 : 1990 'Information technology — Programming languages — Pascal', issued by the International Organization for Standardization and International Electrotechnical Commission ( ISO/IEC ), was adopted by the Committee ( LTD 34 ) and approval of the Electronics and Telecommunication Division Council. This standard was first published in 1986 adopting ISO/IEC 7185 : 1983. The present revision has been taken up, adopting the revised version of the above said ISO/IEC standard. The major revisions being: a) relaxation of the syntax of real numbers, to allow 'digit sequences* rather than 'unsigned integers' for the various components; b) in the handling of <end-of-line characters' in text files; and c) in the handling cf run-time errors. The text of the ISO/IEC International Standard has been approved as suitable for publication as Indian Standard without deviations. Certain conventions are however not identical with t",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/IEC 7185",
+      "standard_id": "IS/IEC 7185",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 7185)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 646",
+      "standard_id": "IS/ISO 646",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 646)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 71",
+      "standard_id": "IS/IEC 71",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 71)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Error",
+    "Extension",
+    "Implementation-defined",
+    "Implementation-dependent",
+    "Processor",
+    "Grade of",
+    "Grade shall",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11403"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 183235
+}

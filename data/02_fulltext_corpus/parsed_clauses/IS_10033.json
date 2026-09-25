@@ -1,0 +1,46 @@
+{
+  "is_number": "IS IS_10033",
+  "standard_id": "IS IS_10033",
+  "title": "Indian Standard Specification / Test Method (IS IS_10033)",
+  "ia_identifier": "IS_10033",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard covers the requirements for zircon and graphite based core and mould washes used in foundries.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10032",
+      "standard_id": "IS 10032:2013",
+      "title": "Organic No Bake (Self Setting) Binders for Use in Foundries",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade GA",
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10033"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "ash shall be minimum 62*5 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "11.1 The bags or the containers shall be marked",
+      "with manufacturer's name, production batch",
+      "11.2 The material may also be marked with the"
+    ]
+  },
+  "total_chars_parsed": 15879
+}

@@ -1,0 +1,84 @@
+{
+  "is_number": "IS IS_11024",
+  "standard_id": "IS IS_11024",
+  "title": "Indian Standard Specification / Test Method (IS IS_11024)",
+  "ia_identifier": "IS_11024",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11024) covers Indian Standard Specification / Test Method (IS IS_11024). 0.1 This Indian Standard was adopted by the Indian Standards Institution on 30 August 1984, after the draft finalized by the Acoustics Sectional Committee had been approved by the Electronics and Telecommunication Division Council. 0.2 Standard reference zero for the scale of hearing level applicable to pure-tone air-conduction audiometers has been specified in IS : 4755- 1968*. For clinical diagnostic and other audiometric purposes it is often necessary to compare the measured hearing threshold levels of a person for sound transmitted to the internal ear by the air-conduction and boneconduction pathways respectively. Bone-conducied sound is provided for this purpose by an electromechanical vibrator applied to the mastoid process or to the forehead of the test person. 0.3 The standard reference zero for air-conduction audiometry is defined in IS : 4755-1968* in terms of reference equivalent threshold sound pressure levels { RETSPL ), that is threshold sound pressure levels produced in ",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 4755",
+      "standard_id": "IS 4755:1987",
+      "title": "Reference zero for the calibration of puretone air conduction audiometers",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10779",
+      "standard_id": "IS 10779:1984",
+      "title": "Reference Coupler for the Calibration of Earphones Used in Audiometry",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10565",
+      "standard_id": "IS 10565:1999",
+      "title": "Diagnostic Audiometers",
+      "division_code": "MHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6964",
+      "standard_id": "IS 6964:2001",
+      "title": "Electroacoustics - Octave-Band and Fractional-Octave-Band Filters",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11024"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance of ± 25 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 31832
+}

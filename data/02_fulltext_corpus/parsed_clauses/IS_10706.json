@@ -1,0 +1,65 @@
+{
+  "is_number": "IS IS_10706",
+  "standard_id": "IS IS_10706",
+  "title": "Indian Standard Specification / Test Method (IS IS_10706)",
+  "ia_identifier": "IS_10706",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers methods of tests for single sideband ( SSB ) power line carrier (PLC ) terminals conforming to IS : 9482-1980*.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 9482",
+      "standard_id": "IS 9482:1996",
+      "title": "Single Sideband Power Line Carrier Terminals",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 207",
+      "standard_id": "IS 207:1964",
+      "title": "Gate and Shutter Hooks and Eyes",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 20711",
+      "standard_id": "IS 20711",
+      "title": "Indian Standard Specification / Test Method (IS 20711)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Routine",
+    "Grade Tests",
+    "Grade tests",
+    "Grade Test",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10706"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 32191
+}

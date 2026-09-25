@@ -1,0 +1,335 @@
+{
+  "is_number": "IS IS_11012",
+  "standard_id": "IS IS_11012",
+  "title": "Indian Standard Specification / Test Method (IS IS_11012)",
+  "ia_identifier": "IS_11012",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11012) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11012).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 5727",
+      "standard_id": "IS 5727",
+      "title": "Indian Standard Specification / Test Method (IS 5727)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1570",
+      "standard_id": "IS 1570",
+      "title": "Indian Standard Specification / Test Method (IS 1570)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4503",
+      "standard_id": "IS 4503:1967",
+      "title": "Shell and Tube Type Heat Exchangers",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7938",
+      "standard_id": "IS 7938:2023",
+      "title": "Air Receivers For Compressed Air Installation - Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2693",
+      "standard_id": "IS 2693:1989",
+      "title": "Power Transmission - Bush Type Flexible Coupling",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4702",
+      "standard_id": "IS 4702",
+      "title": "Indian Standard Specification / Test Method (IS 4702)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5456",
+      "standard_id": "IS 5456:2006",
+      "title": "Testing of Positive Displacement Type Air Compressors and Exhausters - Code of Practice",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 210",
+      "standard_id": "IS 210:2009",
+      "title": "Grey Iron Castings",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 617",
+      "standard_id": "IS 617:1994",
+      "title": "Aluminium and aluminium alloy ingots and castings for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2004",
+      "standard_id": "IS 2004:1991",
+      "title": "Carbon steel forgings for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 961",
+      "standard_id": "IS 961",
+      "title": "Indian Standard Specification / Test Method (IS 961)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1170",
+      "standard_id": "IS 1170:1992",
+      "title": "Ferrochromium",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 318",
+      "standard_id": "IS 318:1981",
+      "title": "Leaded Tin Bronze Ingots and Castings",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 305",
+      "standard_id": "IS 305:1981",
+      "title": "Aluminium Bronze Ingots and Castings",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 28",
+      "standard_id": "IS 28:1985",
+      "title": "Phosphor bronze ingots and castings",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1030",
+      "standard_id": "IS 1030:1998",
+      "title": "Carbon steel castings for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4409",
+      "standard_id": "IS 4409:2023",
+      "title": "Ferronickel - Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7906",
+      "standard_id": "IS 7906",
+      "title": "Indian Standard Specification / Test Method (IS 7906)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7906 (PART2)",
+      "standard_id": "IS 7906 (PART2)",
+      "title": "Indian Standard Specification / Test Method (IS 7906 (PART2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6603",
+      "standard_id": "IS 6603:2001",
+      "title": "Stainless Steel Bars and Flats",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8422",
+      "standard_id": "IS 8422",
+      "title": "Indian Standard Specification / Test Method (IS 8422)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6454",
+      "standard_id": "IS 6454:1972",
+      "title": "Self-Aligning Roller Bearings",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6455",
+      "standard_id": "IS 6455:2020",
+      "title": "Single Row Deep Groove Ball Bearings — Specification ( First Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6456",
+      "standard_id": "IS 6456:1972",
+      "title": "Double Row Radial Ball Bearings",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6457",
+      "standard_id": "IS 6457:1972",
+      "title": "Single Row Cylindrical Roller Bearings",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6458",
+      "standard_id": "IS 6458:1972",
+      "title": "Double Row Cylindrical Roller Bearings",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1364",
+      "standard_id": "IS 1364",
+      "title": "Indian Standard Specification / Test Method (IS 1364)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1365",
+      "standard_id": "IS 1365:2005",
+      "title": "Slotted Countersunk Flat Head Screws *common head style) - Product Grade A",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1366",
+      "standard_id": "IS 1366:2002",
+      "title": "Slotted Cheese Head Screws - Product Grade A",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10962",
+      "standard_id": "IS 10962:1984",
+      "title": "Technical supply conditions for reciprocating air compressor above 60 kW",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade 40Cr4Mo3",
+    "Grade of",
+    "Grade Grade",
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11012"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 22937
+}

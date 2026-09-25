@@ -1,0 +1,83 @@
+{
+  "is_number": "IS IS_12264",
+  "standard_id": "IS IS_12264",
+  "title": "Indian Standard Specification / Test Method (IS IS_12264)",
+  "ia_identifier": "IS_12264",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12264) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_12264).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 6911",
+      "standard_id": "IS 6911:2017",
+      "title": "Stainless steel plate, sheet and strip - Specification (Second Revision)",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Stainless Steel Products (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 7328",
+      "standard_id": "IS 7328:2020",
+      "title": "Specification for Polyethylene Material for Moulding and Extrusion ( Third Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Polyethylene (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 9536",
+      "standard_id": "IS 9536:1989",
+      "title": "Polyamide cord",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1260 (PART 2)",
+      "standard_id": "IS 1260 (Part 2):1999",
+      "title": "Pictorial Marking for Handling and Labelling of Goods, Part 2: General Goods",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1260",
+      "standard_id": "IS 1260",
+      "title": "Indian Standard Specification / Test Method (IS 1260)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Conforming",
+    "Grade tests",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12264"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 8887
+}

@@ -1,0 +1,1696 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live" 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New' 
+
+
+
+IS 11404-1 (1986) : Data Interchange on 130 mm, Single 
+Sided, 1.9 tpmm, Flexible Disk Cartridges Using 
+Two-frequency Recording, Part 1: Physical and Magnetic 
+Characteristics [LITD 16: Computer Hardware, Peripherals 
+and Identification Cards] 
+
+
+
+a^v j i juas^N^fes i rafrg amsBs 
+
+
+
+£«> \\ i %^sfi^^^>9i^: 
+
+
+
+^^CVVVfa^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+.^^_ 
+
+
+
+• 
+
+
+
+
+BLANK PAGE 
+
+
+
+*rt*2V^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+Indian Stanford 
+
+
+
+IB : 41404 (Part 1H 98* 
+ISO 6S9fl t-1912 
+
+( Reaffirmed 2001 ) 
+
+
+
+SPECIFICATION FOR DATA INTERCHANGE ON 
+130 mm, SINGLE SIDED, 19 tpmm. FLEXIBLE 
+DISK CARTRIDGES USING TWO- 
+FREQUENCY RECORDING 
+
+PART 1 PHYSICAL AND MAGNETIC CHARACTERISTICS 
+
+[ ISO Title : Information Processing- D ato Interchange an 130 mm 
+
+(S.25 in) Flexible Disk Cartridges Using Two- Frequency 
+
+Recording at 7 9SS ftprad on One Side— Pert 1 : Dimensional. 
+
+Physical and Magnetic Characteristics ] 
+
+
+
+UDC BSrSZTflM 621 3174 
+
+
+
+m 
+
+
+
+@ Copvficttt 1988 
+
+INDIAN STANDARDS INSTITUTION 
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR WARS 
+
+MEW DELHI If MM 
+
+C r B Nov3/nt>0f 1&86 
+
+
+
+uoc ttv&rmmwvA 
+
+
+
+IS: 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+
+
+
+Indian Standard 
+
+SPECIFICATION FOR DATA INTERCHANGE ON 
+130 mm, SINGLE SIDED, V9 tpmm, FLEXIBLE 
+DISK CARTRIDGES USING TWO- 
+FREQUENCY RECORDING 
+
+PART 1 PHYSICAL AND MAGNETIC CHARACTERISTICS 
+
+[ ISO Title : Information Processing— Data Interchange on 130 mm 
+
+(5,25 in) Flexible Disk Cartridges Using Two-Frequency 
+
+Recording at 7 958 ftprad on One Side — Part 1 : Dimensional, 
+
+Physical and Magnetic Characteristics ] 
+
+
+
+National Foreword 
+
+This Indian Standard (Part 1) which is identical with ISO 6596/1-1982 'Information proces- 
+sing—Data interchangeon 130 mm (5.25in) flexible disk cartridges using two-frequency recording 
+at 7 958 ftprad on one side — Part 1 '.Dimensional, physical and magnetic characteristics', 
+issued by the International Organization for Standardization (ISO), was adopted by the Indian 
+Standards Institution on the recommendation of the Computers, Business Machines and 
+Calculators Sectional Committee and approved by the Electronics and Telecommunication 
+Division Council. 
+
+In the adopted standard certain terminology and conventions are not identical with 
+those used in Indian Standards; attention is specially drawn to the following; 
+
+a) Comma (,) has been used as a decimal marker while in Indian Standards the current 
+practice is to use a point (.) as the decimal marker. 
+
+b) Wherever the words 'International Standard' appear, referring to this standard, they 
+should be read as 'Indian Standard*. 
+
+c) For the purpose of Indian Standard, metric dimensions are applicable. 
+Cross References 
+
+
+
+Corresponding Indian Standard 
+
+IS : 10315-1982 7-bit coded character set for 
+information interchange 
+(Technically equivalent) 
+
+IS : 10401-1982 8-bit coded character set for 
+information interchange 
+(Technically equivalent) 
+
+IS ; 11406-1986 File structure and labelling of 
+flexible disk cartridges for information 
+interchange 
+(Identical) 
+
+The Computers, Business Machines and Calculators Sectional Committee has reviewed 
+the provisions of the following ISO standard and has decided that this is acceptable for use 
+in conjunction with this standard: 
+
+ISO 2022-1982 Information processing — ISO 7-bit and 8-bit coded character sets — 
+Code extension techniques 
+
+
+
+International Standard 
+
+ISO 646-1983 Information processing — ISO 
+7-bit coded character set for information 
+interchange 
+
+ISO 4873-1979 Information processing — ISO 
+8-bit coded character set for information 
+interchange 
+
+ISO 7665-1983 Information processing — File 
+structure and labelling of flexible disk 
+cartridges for information interchange 
+
+
+
+Adopted 15 January 1986 
+
+
+
+November 1986, ISI 
+
+
+
+Gr 8 
+
+
+
+INDIAN STANDARDS INSTITUTION 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+
+NEW DELHI 110002 
+
+
+
+IS : 11404 (Part 1H986 
+ISO 6596/1-1982 
+
+
+
+Introduction 
+
+
+
+3 Definitions 
+
+
+
+tSO 6596 specifies the characteristics of 130 mm {5.25 in) flex- 
+ible disk cartridges recorded at 7 958 ftprad on one side using 
+two-frequency recording. 
+
+ISO 6596/2 specifies the quality of recorded signals, the track 
+layout, and the track format to be used on a 130 mm (5.25 in) 
+flexible disk cartridge, recorded at 7 958 ftprad, 1,9tpmm 
+(48 tpi), on one side, using two-frequency recording, which is 
+intended for data interchange between data processing 
+systems. 
+
+Together with the iabelling scheme to be specified in ISO 7665, 
+ISO 6596/1 and ISO 6596/2 provide for full data interchange 
+between data processing systems. 
+
+1 Scope and field of application 
+
+This part of ISO 6596 specifies the dimensional, physical and 
+magnetic characteristics of the cartridge, so as to provide 
+physical interchangeability between data processing systems. 
+
+NOTE - Numeric values in the SI and/or Imperial measurement 
+system in this International Standard may have been rounded and 
+therefore are consistent with, but not exactly equal to, each other. 
+Either system may be used, but the two should be neither intermixed 
+nor reconverted. The original design was made using Imperial units and 
+further developments were made using SI units. 
+
+
+
+2 References 
+
+ISO 646, information processing — ISO 7-bit coded character 
+set for information interchange. 
+
+ISO 2022, Information processing - ISO 7-bit and 8- bit coded 
+character sets — Code extension techniques. 
+
+ISO 4873, Information processing — 8-bit code for information 
+interchange — Structure and rules for implementation. 
+
+ISO 7665, Information processing — File structure and labelling 
+of flexible disc cartridges for information interchange. 
+
+
+
+For the purpose of this International Standard the following 
+definitions apply. 
+
+
+
+3.1 flexible disk : A flexible disk which accepts and retains 
+on the specified side or sides magnetic signals intended for in- 
+put/output and storage purposes of information data process- 
+ing and associated systems. 
+
+3.2 reference flexible disk cartridge : A flexible disk car- 
+tridge arbitrarily selected for a given property for calibrating 
+purposes. 
+
+3.3. secondary reference flexible disk cartridge : A flex- 
+ible disk cartridge intended for routine calibrating purposes, the 
+performance of which is known and stated in relation to that of 
+the reference flexible disk cartridge. 
+
+3.4 signal amplitude reference flexible disk cartridge : 
+
+A reference flexible disk cartridge selected as a standard for 
+recording field and signal amplitude. 
+
+NOTE - A master standard for signal amplitudes, reference fields, 
+overwrite and resolution characteristics has been established by the 
+Physikalisch-Technische Bundesanstalt (PTB), Bundesallee 100 in 
+Braunschweig, Germany, F.R. Secondary reference flexible disk car- 
+tridges can be ordered from PTB Lab 5.11 under part number RM 6596 
+as long as available. 
+
+
+
+3.5 typical field : The minimum recording field which, when 
+applied to a flexible disk cartridge, causes a signal output equal 
+to 95 % of the maximum average signal amplitude when taken 
+as a function of the recording field at the specified track and 
+flux transition frequency of that flexible disk cartridge. 
+
+
+
+3.6 reference field : The typical field of the signal amplitude 
+reference flexible disk cartridge. 
+
+
+
+IS: 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+
+
+3.7 test recording current : The current between 145 % 
+and 155 % of the current which produces the reference field at 
+125 000 flux transitions per second (ftps) on track 00. 
+
+3.8 standard reference amplitudes : The average signal 
+amplitudes derived from the signal amplitude reference flexible 
+disk cartridge at the densities obtained when writing with 
+125 000 ftps on track 00 and with 250 000 ftps on track 34 
+using the test recording current (see 8.2). 
+
+3.9 average signal amplitude : The arithmetically averaged 
+value for a track of the output voltages measured peak-to-peak 
+over the whole track. 
+
+3.10 in contact : An operating condition in which the 
+magnetic surface of the disk intended for data storage is in 
+physical contact with the magnetic head. 
+
+3.11 formatting : Writing the proper control information, 
+establishing the 35 physical tracks, and designating addresses 
+of physical records on the flexible disk's surface. 
+
+3.12 initialization : Writing of the volume label, the ERMAP 
+label and any other information initially required to be on the 
+flexible disk cartridge prior to the commencement of general 
+processing or use. 
+
+3.13 recording area : That area of the disk surface with 
+which the head may come into contact. 
+
+
+
+4 General description 
+
+4.1 General figures 
+
+A typical flexible disk cartridge is represented in figures 1 to 3 
+as follows : 
+
+Figure 1 — Flexible disk cartridge, shows the cartridge seen 
+from above, side up. 
+
+Figure 2 — Section A-A, is a cross-section along line A-A in 
+figure 1. 
+
+Figure 3 — Protective envelope with cartridge, shows a pro- 
+tective envelope with cartridge, side 1 up. 
+
+4.2 Main elements 
+
+The main elements of this flexible disk cartridge are 
+
+— the recording disk; 
+
+— the Hner; 
+
+— the jacket. 
+
+The cartridge is stored in an envelope. 
+
+
+
+4.3 Description 
+
+The jacket is of a square form. It includes a central window, an 
+index window and a head window in both sides. 
+
+The liner is fixed to the inside of the jacket. It comprises two 
+layers of material between which the disk is held. The liner has 
+the same openings as the jacket. 
+
+The disk has only a central window and an index window. 
+
+4.4 Optional features 
+
+The interchange characteristics of the jacket allow for vari- 
+ations in its construction, it may include flaps (for example, 
+three flaps as shown in the figures, or none) and notches along 
+the reference edge. 
+
+
+
+5 General requirements 
+
+5.1 Environment and transportation 
+
+5.1.1 Testing environment 
+
+Tests and measurements made on the cartridge to check the 
+requirements of this International Standard shall be carried out 
+under the following conditions : 
+
+temperature : 23 ± 2 °C (73 ± 4 °F) 
+
+relative humidity : 40 % to 60 % 
+
+conditioning before testing : 24 h minimum 
+
+The temperature and the relative humidity shall be measured in 
+the air immediately surrounding the cartridge. 
+
+The stray magnetic field at any point on the disk surface, in- 
+cluding that resulting from the concentrating effect on the 
+recording head, shall not exceed 4 000 A/m (50 Oe). 
+
+5.1.2 Operating environment 
+
+Cartridges used for data interchange shall be operated under 
+the following conditions : 
+
+temperature : 10 to 51,5 °C (50 to 125 °F) 
+
+relative humidity : 20 % to 80 % 
+
+wet bulb temperature : less than 29 °C (84 °F) 
+
+The temperature and the relative humidity shall be measured in 
+the air immediately surrounding the cartridge. It is recom- 
+mended that the rate of change of the temperature should not 
+exceed 20 °C (36 °F) per hour. 
+
+There shall be no deposit of moisture on or in the cartridge. 
+
+The stray magnetic field at any point on the disk surface, in- 
+cluding that resulting from the concentrating effect on the 
+recording head, shall not exceed 4 000 A/m <50 Oe). 
+
+
+
+IS: 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+
+
+5.1.3 Storage environment 
+
+During storage the cartridges shall be kept under the following 
+conditions : 
+
+temperature : 4 to 51,5 °C (40 to 125 °F> 
+
+relative humidity : 8 % to 80 % 
+
+Each cartridge shall be in an envelope and in an upright 
+position. 
+
+The stray magnetic field shall not exceed 4 000 A/m (50 Oe). 
+
+NOTE — Cartridges which have been stored at temperatures and 
+humidities outside the operating condition but within the storage con- 
+ditions may exhibit degraded performance characteristics. Such car- 
+tridges should be subjected to a conditioning period of not less than 
+24 h within the operating environment prior to use. 
+
+5. 1 .4 Transportation 
+
+Responsibility for ensuring that adequate precautions are taken 
+during transportation shall be with the sender. During transpor- 
+tation the cartridge shall be in its envelope and in a protective 
+package. The latter shall be free from dust or extraneous 
+matter. It shall have a clean interior and construction prevent- 
+ing ingress of dust and water. It is recommended that a 
+sufficient space exists between cartridge and outer surface of 
+the final container, so that risk of damage due to stray 
+magnetic fields will be negligible. 
+
+It is recommended that the following conuitions should not be 
+exceeded : 
+
+temperature : -40 to 51,5 °C ( -40 to 125 °F) 
+
+maximum rate of temperature change : 20 °C (36 °F) per 
+hour 
+
+relative humidity : 8 % to 90 % 
+
+No moisture shall condense in or on the cartridge. 
+
+5.1.5 Handling 
+
+The cartridge shall stay out of its envelope for the shortest time 
+possible. When handling the cartridge the operator shall not 
+touch the exposed magnetic surfaces of the disk and shall 
+avoid exposing the cartridge to direct sunlight, moisture and 
+dust. 
+
+
+
+5.2 Materials 
+
+5.2.1 Jacket 
+
+The jacket may be constructed from any suitable material. 
+
+5.2.2 Liner 
+
+The material of the liner shall be able to retain dust without 
+damage to the disk. 
+
+
+
+5.2.3 Disk 
+
+The disk may be constructed from any suitable material (for ex- 
+ample, bi-axially oriented polyethylene terephthalate) coated at 
+least on one side with a strong and flexible layer of magnetic 
+material (for example y-Fe 2 3 ). 
+
+5.2.4 Envelope 
+
+The envelope may be manufactured from any suitable material, 
+(for example, paper). 
+
+5.3 Direction of rotation 
+
+The direction of rotation shall be counterclockwise when look- 
+ing at side 0. 
+
+
+
+6 Dimensional characteristics 
+
+Tne dimensional characteristics listed in the sub-clauses below 
+are indicated in figures 4 to 7 as follows : 
+
+Figure 4 — Jacket dimensions, shows the jacket. 
+
+Figure 5 — Cartridge thickness, shows a partial cross- 
+section of the jacket. 
+
+Figure 6 — Disk dimensions, shows the disk. 
+
+Figure 7 — Disk thickness, shows a cross-section of the 
+disk. 
+
+All dimensions are referred to the reference edge of the car- 
+tridge (see figure 4). 
+
+6.1 Jacket 
+
+6.1.1 Form 
+
+The jacket shall have a square form with angles of 90° ± 30' 
+and a side length 
+
+/, - 133,3 ± 0,4 mm (5.250 ± 0.015 in) 
+
+6.1.2 Thickness 
+
+6.1.2.1 Jacket wall and liner 
+In an area defined by 
+
+r x = 35 mm (1.38 in) 
+
+r 2 - 50 mm (1.97 in) 
+
+and with a probe having a diameter of 15 mm (0.59 in) applied 
+against the cartridge with a force of 1 N (3.6 ozf), the thickness 
+of the jacket wall and liner shall be 
+
+e<i = 0,45 ± 0,15 mm (0.018 ± 0.006 in) 
+
+
+
+IS: 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+
+
+6.1.2.2 Cartridge 
+
+The overall thickness of the cartridge shall be (see 6.1.7) : 
+
+1,2 mm (0.047 in) < e 2 < 2,1 mm (0.083 in) 
+
+when measured according to annex A. 
+
+The cartridge shall fall freely through a gauge with a 
+2,60 + g' 05 mm (0.100 +g°° 2 in) wide opening having flat and 
+vertical walls and a depth of 150 mm (5.9 in). 
+
+6.1.3 Central windows 
+
+The central windows shall have a diameter 
+
+d y = 39,7 ± 0,2 mm (1.56 ± 0.01 in) 
+The position of their centre is defined by 
+
+l 2 = 66,65 ± 0,30 mm (2.624 ± 0.012 in) 
+
+6.1.4 Index windows 
+
+6.1.4.1 Location 
+
+The centre of the index windows shall be defined by 
+/ 3 - 42,10 ± 0,25 mm (1.657 ± 0.010 in) 
+/ 4 = 60,00 ± 0,25 mm (2.362 ± 0.010 in) 
+
+6.1.4.2 Diameter 
+
+The diameter of the index windows shall be 
+d 2 = 6,35 ± 0,20 mm (0.250 ± 0.008 in) 
+
+6.1.5 Head windows 
+
+6.1.5.1 Location 
+
+The location of the lowest point of the head windows shall be 
+defined by 
+
+/ 5 = 3,30 ± 0,25 mm (0.130 ± 0.010 in) 
+
+6.1.5.2 Dimensions 
+
+The width of the head windows shall be 
+
+/ 6 = 12,7 ± 0,2 mm (0.500 ± 0.008 in) 
+The nominal radius of their ends shall be 
+
+r 3 = 6,35 mm (0.250 in) 
+Their length shall be 
+
+/ 7 - 35,00 ± 0,25 mm (1.378 ± 0.010 in) 
+
+
+
+6.1.6 Reference edge profile 
+
+Within an area defined by 
+
+/ 8 = 25 mm (1.0 in) 
+
+The reference edge shall have a. convex profile; for example, 
+rounded off with one or more radii of 0,3 mm min. (0.012 in 
+min.). 
+
+6.1.7 Construction of the jacket 
+
+If the jacket utilizes flaps, their width shall be 
+/ 9 - 12 mm max. (0.47 in max.) 
+
+The total thickness e 2 of the cartridge with flaps shall satisfy the 
+conditions of 6.1.2 (see annex A). 
+
+6.1.8 Notches 
+
+Two notches may be provided along the reference edge. If 
+provided, they have to be entirely contained within areas 
+defined by : 
+
+10 = 48,0 mm min. (1.89 in min.) 
+
+n = 58,0 mm max. (2.28 in max.) 
+
+12 = 75,0 mm min. (2.95 in min.) 
+
+13 ~ 85,5 mm max. (3.37 in max.) 
+
+14 - 2,0 mm max. (0.08 in max.) 
+
+6.1.9 Write-enable notch 
+
+The position and size of the write-enable notch shall be defined 
+by 
+
+/ 19 = 96,5 ± 0,25 mm (3.799 ± 0.008 in) 
+
+/20 = 6,35 ± 0,13 mm (0.250 ± 0.005 in) 
+
+/ 21 - 3,8 ± 0,25 mm (0.150 ± 0.008 in) 
+
+If the notch is covered by any means, writing on the disk shall 
+be inhibited. 
+
+6.2 Liner 
+
+The liner shall extend across the recording area (see 6.3.4). 
+However, no part of the liner shall protrude by more than 
+0,5 mm (0.019 in) into the openings of the jacket. 
+
+6.3 Disk 
+
+6.3.1 Diameters 
+
+The external diameter of the disk shall be 
+d 3 = 130,2 ± 0,2 mm (5.125 ± 0.008 in) 
+
+
+
+IS: 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+
+
+The inner diameter of the disk shall be 
+
+d A - 28,575 ± 0,025 mm (1.125 ± 0.001 in) 
+
+6.3.2 Thickness 
+
+The thickness of the disk shall be 
+
+e* « 0,080 ± 0,010 mm (0.003 ± 0.000 4 in) 
+
+6.3.3 Index hole 
+
+6.3.3.1 Location 
+
+The location of the index hole shall be defined by 
+r 4 = 25,4 ± 0,1 mm (1.000 ± 0.004 in) 
+
+6.3.3.2 Diameter 
+
+The diameter of the index hole shall be 
+
+d b = 2,54 ± 0,10 mm (0.100 ± 0.003 9 in) 
+
+6.3.4 Recording area 
+
+The recording area shall be defined by 
+r 5 - 31,3 mm max. (1.23 in max.) 
+r 6 = 62,5 mm min. (2.46 in min.) 
+
+6.3.5 Sides 
+
+For convenience of description two sides are defined 
+
+— side is the side on which the disk is recorded and is 
+accessed through side of the jacket, 
+
+— side 1 is the other side. 
+
+
+
+7 Physical characteristics 
+
+7.1 Inflammability 
+
+The cartridge shall be made from materials that, if ignited from 
+a match flame, do not continue to burn in a still carbon dioxide 
+atmosphere. 
+
+7.2 Coefficient of linear thermal expansion of the 
+disk 
+
+The coefficient of thermal expansion of the disk shall be 
+
+(17 ± 8) x 10- 6 K- 1 
+
+
+
+7.3 Coefficient of linear hygroscopic expansion of 
+the disk 
+
+The coefficient of hygroscopic expansion of the disk shall be in 
+the range 
+
+{0 to 15) x 10 ~ 6 per percent of relative humidity 
+
+
+
+7.4 Opacity 
+
+7.4.1 Opacity of the jacket 
+
+The jacket shall have a light transmittance of less than 1 % 
+using an LED with a nominal wavelength of 940 ± 10 nm as 
+the radiation source when measured according to annex B. 
+
+7.4.2 Opacity of the disk 
+
+The disk shall have a light transmittance of less than 1 % using 
+an LED with a nominal wavelength of 940 ± 10 nm as the 
+radiation source when measured according to annex B. 
+
+7.5 Torque 
+
+7.5.1 Starting torque 
+
+The starting torque, without head and pads loaded to the car- 
+tridge, shall not exceed 0,01 Nm (1.42 ozf in). 
+
+7.5.2 Running torque 
+
+When the disk cartridge is tested at a rotation speed of 
+300 ± 6 r/min, with a pressure pad of 280 ± 10 mm2 
+(0.434 + 0.015 in2) surface applied with a force of 
+0,70 ± 0,05 N (2.52 ± 0.18 ozf) and located parallel to the 
+head windows as defined in figure 8 by : 
+
+/ 15 = 44 mm (1.73 in) 
+
+/ 16 = 55 mm (2.16 in) 
+
+/ 17 = 7 mm (0.28 in) 
+
+/ 18 = 35 mm (1.38 in) 
+
+the torque necessary to rotate the disk shall not exceed 
+0,03 Nm (4.26 ozf in). 
+
+
+
+8 Magnetic characteristics 
+8.1 Track geometry 
+
+8.1.1 Number of tracks 
+
+There shall be 35 discrete concentric tracks in the recording 
+area (see 6.3.4) for data interchange (see annex D). 
+
+
+
+IS: 11404 (Part D-1986 
+ISO 6596/1-1982 
+
+
+
+8.1.2 Width of tracks 
+
+The recorded track width on the disk surface shall be 
+
+0,300 ± 0,025 mm (0.011 8 ± 0.001 in) 
+
+The area between the tracks shall be erased. The method of 
+measuring effective track width is given in annex C. 
+
+8.1.3 Track location 
+
+
+
+8.1.3.1 Nominal locations 
+
+The nominal radius of the centrelines of all tracks shall be 
+calculated by using the formula 
+
+25,4 n 
+
+R n = 57,150 mm 
+
+48 
+
+
+
+Rn = 2.25 in 
+
+48 
+
+
+
+where n is the numeric value corresponding to the track 
+number: n = to 34 for data interchange {see also annex D). 
+
+8.1:3.2 Track location tolerance 
+
+The centrelines of tracks recorded for testing purposes shall be 
+within ± 0,025 mm (0.001 in) of the nominal positions, 
+when measured in the testing environment (see 5.1.1). 
+
+
+
+8.2.1.2 Typical field 
+
+The typical field of the disk under test shall be within ± 20 % 
+of the reference field. It shall be measured using 1/on track 00. 
+
+8.2.1.3 Average signal amplitude 
+
+When a disk has been recorded with the test recording current, 
+then read back on a system which has been calibrated by 
+means of a signal amplitude reference flexible disk cartridge, 
+recorded under the same conditions, the average signal 
+amplitude of the disk under test shall be 
+
+— not more than 130 % on track 00 using 1/; 
+
+— not less than 80 % on track 34 using 2/ ; 
+of the appropriate standard reference amplitude. 
+
+8.2.1.4 Resolution 
+
+After recording, using the test recording current, on track 34, 
+the ratio 
+
+average signal amplitude using 2/ 
+average signal amplitude using 1/ 
+
+shall be greater than 80 % of the value of the same ratio for the 
+signal amplitude reference flexible disk cartridge. 
+
+
+
+8.1.4 Track number 
+
+The track number shall be a two-digit decimal number (00 to 34) 
+which identifies the tracks consecutively, starting at the outer- 
+most track (00) (see also annex D). 
+
+8.1.5 Index 
+
+The index is the point which determines the beginning and the 
+end of a track. At the instant of having detected the leading 
+edge of the index window, the index is under the read-write 
+gap. 
+
+8.2 Functional testing 
+
+For the purpose of the following tests the same drive unit shall 
+be used for writing and reading operations. 
+
+8.2.1 Surface tests 
+
+The magnetic properties of the data surface are defined by the 
+testing requirements given below. 
+
+
+
+8.2.1.5 Overwrite 
+
+On track 00 after recording with the test recording current, first 
+using 1/ and then overwriting with 2/ for one revolution, the 
+ratio 
+
+residual average signal amplitude at If 
+after overwrite using 2/ 
+
+average signal amplitude after 
+first recording using 1/ 
+
+shall be less than 100 % of the value of the same ratio for the 
+signal amplitude reference flexible disk cartridge. This test shall 
+be performed with a frequency-selective voltmeter. 
+
+
+
+8.2.1.6 Modulation 
+Modulation shall be 
+
+maximum mean - minimum mean 
+
+
+
+x 100% 
+
+
+
+maximum mean + minimum mean 
+
+
+
+8.2.1.1 Test conditions 
+
+The disk shall be tested at 300 ± 6 r/min. The test frequencies 
+used shall be 
+
+1/ = 125 000 ± 125 ftps 
+
+V = 250 000 ± 250 ftps 
+
+The frequency(ies) to be used is (are) specified for each test. 
+
+
+
+The maximum mean shall be the average value of the amplitude 
+modulated output voltage in that part of the track with the 
+maximum amplitudes, and the minimum mean shall be that in 
+the respective part with the minimum amplitudes. Output 
+voltage shall be measured peak-to-peak, averaging shall be 
+done over about 2 000 consecutive flux transitions. 
+
+On track 00 using 1/and on track 34 using 2/, modulation shall 
+be less than 10 %. 
+
+
+
+IS: 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+
+
+8.2.2 Track quality tests 
+
+These tests shall be carried out using 2/ and over all 35 usable 
+tracks at the defined positions. The test recording current shaii 
+be used. 
+
+8.2.2.1 Missing pulse 
+
+Write a track at 2/ with the appropriate test recording current. 
+Any playback signal, when measured base-to-peak, which is 
+less than 40 % of half the arithmetically averaged value of the 
+output voltages measured peak-to-peak over the preceding 
+2 000 consecutive flux transitions, shall be a missing pulse. 
+
+8.2.2.2 Extra pulse 
+
+Write a track at 2f with the test recording current. Erase for one 
+revolution with a constant direct current equivalent to the 
+quiescent value of the test recording current. 
+
+Arty playback signal, which when measured base-to-peak, in- 
+cluding the statistical noise and the residual signal of the disk, 
+
+
+
+exceeds 30 % of half the average signal amplitude of the track 
+under test, shall be an extra pulse. 
+
+8.2.3 Rejection criteria 
+
+8.2.3.1 Defective track 
+
+A track on which one or more missing and or extra pulses are 
+detected in the same position(s) on consecutive passes shall be 
+a defective track. The applicable number of consecutive passes 
+shall be a matter for agreement between interested parties. 
+
+8.2.3.2 Requirements for tracks 
+
+As initially received from the medium supplier, the cartridges 
+shall have no defective tracks. 
+
+8.2.3.3 Rejected cartridge 
+
+A cartridge which does not meet the requirements of 8.2.3.2 
+shall be rejected. 
+
+
+
+Central window 
+
+
+
+Index window- 
+
+
+
+R: 
+
+
+
+J 
+
+
+
+IZ 
+
+
+
+
+
+
+
+7\ 
+
+
+
+^l 
+
+
+
+■SideO 
+
+
+
+- Jacket 
+
+
+
+Disk 
+
+
+
+X 
+
+
+
+Head window 
+
+
+
+Figure 1 — Flexible disk cartridge 
+
+
+
+Liner - 
+
+
+
+X 
+
+>- Side 1 
+
+
+
+Jacket 
+
+
+
+
+Jacket 
+
+
+
+Figure 2 — Section A-A 
+
+
+
+IS : 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+
+
+
+Label area 
+
+
+
+Sidel 
+
+
+
+Envelope 
+
+
+
+Figure 3 — Protective envelope with cartridge 
+
+
+
+IS: 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+
+
+
+Reference edge 
+
+
+
+Figure 4 — Jacket dimensions 
+
+
+
+10 
+
+
+
+u 
+
+
+
+CM 
+
+01 
+
+
+
+
+
+
+Figure 5 — Cartridge thickness 
+
+
+
+IS: 11404 (Parti H9W 
+ISO 6596/1-1982 
+
+
+
+
+
+Figure 6 — Disk dimensions 
+
+
+
+11 *-T 
+
+
+
+i/ in uirrrr 
+
+
+
+\y }}) ))}}}} }\ 
+
+
+
+Figure 7 — Disk thickness 
+
+
+
+PH 
+
+
+
+Sidel 
+
+
+
+
+t7-' 
+
+
+
+/16 
+
+
+
+Figure 8 — Pressure pad area 
+11 
+
+
+
+IS: 11404 (Part 1H986 
+ISO 6596/1-1982 
+
+
+
+Annex A 
+
+
+
+Measurement of the cartridge thickness 
+
+(This annex forms part of the standard.) 
+
+
+
+A.I Maximum thickness 
+
+
+
+A.2 Minimum thickness 
+
+
+
+This value shall be measured for all edges using the gauge of 
+figure 9. The cartridge shall be capable of entering the gauge 
+for at least 15 mm (0.59 in) when a force of 1 N max. (3.6 ozf 
+max.) is applied on the opposite edge. 
+
+
+
+This value shall be measured for all edges using the gauge of 
+figure 10. This gauge has a length of 40 mm (1.57 in). When 
+submitted to a force of 1 N (3.6 ozf) the cartridge shall enter 
+the slot by less than 1 mm (0.039 in). 
+
+
+
+Dimensions in millimetres 
+(Inches in parentheses) 
+
+
+
+IN (3.6 ozf) 
+
+
+
+
+
+°c 
+
+
+
+
+) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+40(1.57) 
+
+
+
+
+
+{ 
+
+
+
+5 
+
+
+
+/?0,05(0.002)max. 
+
+
+
+7 
+
+
+
+I 
+
+
+
+^ 
+
+
+
+15(0.591 
+
+
+
+,2,1(0.083) 
+
+
+
+Figure 9 — Measuring gauge 
+
+
+
+12 
+
+
+
+IS : 11404 (Part 1HM6 
+ISO 6598/1-1982 
+
+
+
+Dimensions in millimetres 
+(Inches in parentheses) 
+
+
+
+i1N(3.6azf) 
+
+
+
+
+Figure 10 — Measuring gauge 
+
+
+
+18 
+
+
+
+(S: 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+
+
+Annex B 
+Measurement of light transmittance 
+
+(This annex forms part of the standard.) 
+
+
+
+B.O Introduction 
+
+The following description outlines the general principle of the 
+measuring equipment and the measuring method to be applied 
+when measuring the radiation (light) transmittance of the jacket 
+and of the magnetic disk. 
+
+For the purpose of this document "light transmittance" is 
+defined by convention as the relationship between the reading 
+obtained from the test device with the sample inserted and the 
+reading obtained when no sample is present. The transmittance 
+value is expressed as the percentage ratio of the two readings. 
+
+The essential elements of the measuring equipment are 
+
+— the radiation source; 
+
+— the photo diode; 
+
+— the optical path; 
+
+— the measuring circuitry. 
+
+B.1 Description of the measuring equipment 
+
+B.1.1 Radiation source 
+
+An infra red light-emitting diode (LED) with the following 
+parameters shall be used : 
+
+— wavelength at peak emission A peak = 940 ± 10 nm 
+
+— half-power band width b - ± 50 nm 
+
+NOTE — Earlier International Standards for unrecorded flexible disk 
+cartridges required the use of an LED with a nominal wavelength of 
+900 nm, which is no longer available 
+
+B.I. 2 Radiation receiver 
+
+A flat silicon photo diode shall be used as the radiation receiver, 
+it shaii be operated in the short circuit mode. The active area of 
+the diode shall be equal to, or at the most 20 % larger than, the 
+open area of the aperture. This condition guarantees a linear 
+dependency of the short circuit diode current on the light inten- 
+sity. 
+
+B.1.3 Optical path (see figure 11) 
+
+The optical axis of the arrangement shall be perpendicular to 
+the disk. 
+
+The distance from the emitting surface of the LED to the disk 
+shall be 
+
+
+
+2 tana 
+
+
+
+where 
+
+d max is the maximum diameter of the index window; 
+
+a is the angle where the relative intensity of the LED is 
+equal to, or greater than, 35 % of the maximum intensity in 
+the optical axis. 
+
+The aperture shall have a thickness of between 1,2 to 1,4 mm 
+and a diameter given by 
+
+D = (2 L 2 tana) mm 
+
+L 2 = [L y + 1,5) mm 
+
+Its surfaces shall be matt black. The whole device should be 
+enclosed within a light-tight casing. 
+
+B.I. 4 Measuring circuitry 
+
+Figure 12 shows the recommended circuitry with the following 
+components : 
+
+E : regulated power supply with variable output voltage 
+
+R : current-limiting resistor 
+
+LED : iight-emitting diode 
+
+Dj : Si photo diode 
+
+A : operational amplifier 
+
+Rfo, R fl : feedback resistors 
+
+S : gain switch 
+
+V : voltmeter 
+
+The forward current of the LED and consequently its radiation 
+power can be varied by means of the power supply E. D t works 
+in the short circuitry mode. The output voltage of the oper- 
+ational amplifier is given by 
+
+v o - 4 x *f 
+
+and is therefore a linear function of the light intensity. / k is the 
+short circuit current of &. 
+
+RfO and R f1 shall be low- temperature drift resistors with an 
+accuracy of 1 % . The following ratio applies : 
+
+
+
+^f0 
+
+
+
+1 
+50 
+
+
+
+14 
+
+
+
+IS: 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+
+
+B.2 Measuring method 
+
+B.2.1 Measurement of the disk 
+
+The measurements shall be taken within an annular band 
+whose boundaries are tangent to the index window. 
+
+— S is set to position 0. With the index window in front of 
+the photo diode, the voltmeter is set to full-scale reading 
+(100 % transmittance) by varying the output voltage of E. 
+
+
+
+- The disk is rotated until the photo diode is covered by 
+the disk. S is set to position 1. Full deflection of the 
+voltmeter now represents 2 % transmittance. 
+
+The disk is rotated slowly for one revolution and the readings of 
+the voltmeter are observed. 
+
+B.2.2 Measurement of the jacket 
+
+The same procedure applies to the jacket measurement, except 
+that the jacket without a disk shall be rotated. 
+
+
+
+
+Aperture 
+
+
+
+Si photo diode 
+
+
+
+Optical axis 
+
+
+
+Figure 11 — Measuring device 
+
+
+
+
+
+Figure 12 - Electronic circuitry 
+15 
+
+
+
+IS: 11404 (Part 1)-1986 
+ISO 8596/1-1982 
+
+
+
+Annex C 
+
+
+
+Method for measuring the effective track width 
+
+(This annex forms part of the standard.) 
+
+
+
+DC erase a 7-track wide band. Record 250 000 ftps frequency 
+pattern in a track centered in the middle of the erased band, 
+with the read/write head with the erase element active. 
+Measure the output voltage. 
+
+Move the head radially over the disk in increments not greater 
+than 0,01 mm (0.000 4 in) to the left and to the right until the 
+read back signal has decreased by 75 %. Determine the read 
+back signal amplitude for each incremental move and plot its 
+
+
+
+amplitude versus displacement. See figure 13 for reading the 
+half track width A and B for both sides of displacement provid- 
+ed the gap width of the head used is not smaller than the effec- 
+tive track width. The total effective track width should be the 
+sum of 1/2 effective track width A and 1/2 effective track 
+width B. 
+
+Repeat the test to ensure no thermal or hygroscopic effects 
+have taken place during the measurement. 
+
+
+
+Relative output, % 
+
+
+
+
+Head displacement 
+
+
+
+Figure 13 — Track width 
+
+
+
+16 
+
+
+
+IS: 11404 (Part 1)-1986 
+ISO 6596/1-1982 
+
+Annex D 
+Use of additional tracks 
+
+(This annex does not form part of the standard.) 
+
+The body of this International Standard specifies the requirements for those tracks used for full data interchange, i.e. tracks 00 to 34. 
+Additionally, tracks 35 to 39 may be used for purposes not requiring full data interchange. Dimension t 7 is sufficient to give access to 
+40 tracks. 
+
+For these applications, the text of the following clauses of Part 1 and Part 2 shall read : 
+
+Parti 
+
+8.1.1 Number of tracks 
+
+There shall be 40 discrete concentric tracks in the recording area (see 6.3.4) 
+In the following two clauses, figure 34 shall be replaced by 39 : 
+
+8.1.3.1 Nominal locations 
+
+8.1.4 Track number 
+Part 2 
+
+3.2.2.2.1 Track Address (T) 
+
+
+
+17 
+
+
+
+Printed at Simco Printing Press, Delhi, India 
+
+
+

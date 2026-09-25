@@ -1,0 +1,2318 @@
+•••••••••••••••• 
+
+
+
+ic i3^ 
+
+
+
+
+^ 
+
+
+
+ic 
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live" 
+
+
+
+Jawaharlal Nehru 
+"Step Out From the Old to the New" 
+
+
+
+IS 12876 (1989): Information Interchange on 3.81 mm 
+Magnetic Tape Cassette at 4 cpmm, Phase Encoded at 63 ftpmm 
+[LITD 16: Computer Hardware, Peripherals and Identification 
+Cards] 
+
+
+
+^nz^^^aznz^^ 
+
+
+
+SSa£\ * H>ftPii5c%^Na*^ 
+
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+
+BLANK PAGE 
+
+
+
+
+-iSiS 
+
+
+
+
+5>- 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 12876: 1989 
+ISO 3407: 1983 
+
+( Reaffirmed 2003 ) 
+
+Indian Standard 
+
+
+
+SPECIFICATION FOR 
+
+INFORMATION INTERCHANGE ON 3"81 mm 
+
+MAGNETIC TAPE CASSETTE AT 4 cpmm, 
+
+PHASE ENCODED AT 63 ftpmm 
+
+
+
+UDC 681-327-636 
+
+
+
+© BIS 1990 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+July 1990 Price Group 9 
+
+
+
+IS 12876 : 1M9 
+ISO 3407 : 1983 
+
+
+
+Indian Standard 
+
+
+
+SPECIFICATION FOR 
+
+INFORMATION INTERCHANGE ON SSI mm 
+
+MAGNETIC TAPE CASSETTE AT 4 cpmm, 
+
+PHASE ENCODED AT 63 ftpmm 
+
+NATIONAL FOREWORD 
+
+This Indian Standard, which is identical with ISO 3407:1983 Information processing — 
+Information interchange on 381 mm ( 01 50 in ) magnetic tape cassette at 4 cpmm ( lOOcpi ), 
+phase encoded at 63 ftpmm ( 1 600 ftpi )', issued by the International Organization for Standardiza- 
+tion ( ISO ) was adopted by the Bureau of Indian Standards on 15 December 1989 on the 
+recommendation of the Computers, Business Machines and Calculators Sectional Committee 
+( LTDC 24 ) and approval of the Electronics and Telecommunication Division Council. 
+
+In the adopted standard certain terminology and conventions are not identical with those used in 
+Indian Standards; attention is specially drawn to the following: 
+
+a) Wherever the words 'International Standard' appear, referring to this standard, they should 
+
+be read as 'Indian Standard'. 
+
+b) Comma ( , ) has been used as a decimal marker while in Indian Standards the current 
+
+practice is to use point ( . ) ^^ the decimal marker. 
+
+c) For the purpose of Indian Standard, metric dimensions are applicable. 
+CROSS REFERENCES 
+
+In this Indian Standard, the following international standards are referred to. Read in their 
+respective places the following : 
+
+internationa! Standard indian Standard Degree of 
+
+Correspondence 
+
+ISO 646 Information processing— IS 10315: 1982 7-bit coded Technically 
+
+7-bit coded character for Infor- character set for information equivalent 
+
+mation processing interchange interchange 
+
+ISO 2022 Information processing— IS 12326 ; 1987 7-bit and Identical 
+ISO — 7-bit and 8-bit coded and 8-bit coded character 
+character sets-Code extension sets -— Code/extension tech- 
+techniques niques 
+
+
+
+As in the Original Standard, this Page is Intentionally Left Blank 
+
+
+
+IS 12876:1989 
+ISO 34G7 : 1983 
+
+
+
+1 Scope and field of application 
+
+This International Standard specifies the Characteristics of a 
+3,81 mm (0.150 in) magnetic tape cassette to provide data in- 
+terchange and physical interchangeability between information 
+processing systems utilizing the ISO 7-bit coded character set 
+(see ISO 646) and, where required, its extensions (see 
+ISO 2022). The cassette is of the twin hub coplanar type, load- 
+ed with a 3,81 mm (0.150 in) wide magnetic tape for digital 
+recording usiiig the 31,5 bits per mm (800 bpi) phase encoding 
+method. The direction of magnetization is in the longitudinal 
+direction of the tape. 
+
+NOTES 
+
+1 Numeric values in the SI and /or Imperial measurement system in 
+this International Standard may have been rounded, and are therefore 
+consistent with, but not exactly equal to each other. Either system may 
+be used, but the two should be neither intermixed nor converted. The 
+original design was made using the metric measurement system. 
+
+2 Throughout the remainder of this International Standard for the 
+sake of simplicity the recording density is stated as 32 bpmm (800 bpi) 
+nominal. 
+
+This Internationa) Standard applies to cassettes and data used 
+for interchange. Where it applies for testing only, this is 
+specifically stated. 
+
+
+
+2 References 
+
+ISO 646, Information processing — 7-bit coded character set 
+for information interchange. 
+
+ISO 2022, Information processing — /SO 7'bit and 8-bit coded 
+character set — Code extension techniques. 
+
+
+
+3 Definitions 
+
+For the purpose of this International Standard, the following 
+definitions apply: 
+
+3.1 magnetic tape: Tape which will accept and retain the 
+magnetic signals intended for input, output and storage pur- 
+poses on computers and associated equipment. 
+
+3.2 reference tape cassette: A tape cassette which has 
+been selected for given properties for use in calibration. 
+
+
+
+3.3 secondary reference tape cassette: A tape cassette 
+intended for routine calibrating purposes, whose performance 
+is known and stated in relation to that of the reference tape 
+cassette. 
+
+3.4 reference field: For the specified packing density 
+(see 5.2), the minimum field applied to the signal amplitude 
+reference tape cassette which causes an output signal equal to 
+95 % of the maximum output. 
+
+3.5 test recording current: A recording current between 
+145 % and 155 % of the current required to produce the 
+reference field. 
+
+3.6 signal amplitude reference tape cassette: A 
+reference tape cassette selected as a standard for signal 
+amplitude! 
+
+NOTE — A master standard (computer amplitude reference), based on 
+reference tape cassettes and heads, has been established as the result 
+of work by national standardization organizations and national 
+laboratories, coordinated by the U.S. National Bureau of Standards 
+(NBS). 
+
+Secondary signal amplitude reference tape cassettes, certified by the 
+National Bureau of Standards, Gaithersburg, Maryland, USA, and the 
+Physikalish-Technische Bundesanstalt (PTB), Braunschweig, Ger 
+many, are available. 
+
+NBS certified cassettes are available directly from NBS under the part 
+number SRM 1600. PTB certified cassettes are available through the 
+European Computer Manufacturers Association (ECMA), 114, rue du 
+RhSne, CH -i204 Geneva, Switzerland. 
+
+The calibration devices are correlated between NBS and PTB 
+
+3.7 standard reference amplitude: The average peak-to- 
+peak signal amplitude derived from the signal amplitude 
+reference tape cassette, at the density of 63 ftpmm (1 600 ftpi) 
+using the test recording current (see 3.5). The signal amplitude 
+shall be averaged over 4 000 flux transitions. 
+
+3.8 average signal amplitude: The average peak-to-peak 
+value of the signal output measured over at least 4 000 flux 
+transitions. 
+
+
+
+3.9 in contact: An operating condition in which the 
+magnetic surface of a tape is in contact with a magnetic head. 
+
+
+
+IS 12876 : 
+ISO 3407 
+
+
+
+1989 
+1983 
+
+
+
+3.10 track: A longitudinal area on the tape along which a 
+series of magnetic signals may be recorded. 
+
+3.n. bit density: The number of bit flux transifions per unit 
+length of track. 
+
+3.12 position of flux transitions : That point which exhibits 
+the maximum free-space flux density normal to the tape sur- 
+face. 
+
+3.13 leader: Non-magnetic transparent tapes joined to each 
+end of the magnetic tape. 
+
+3.14 erasing field: A unidirectional field of sufficient 
+strength to remove the signals from the tape. 
+
+3.15 print througM: Any unwanted signals induced in one 
+layer of tape by the field of a deliberately recorded signal in an 
+adjacent layer or layers. 
+
+3.16 reference alignment cassette: A cassette containing 
+tape on which continuous information has been recorded 
+where the optimum playback head gap alignment does not dif- 
+fer by more than ± 3' from the vertical on the cassette support 
+plane. [Currently, these cassettes are available with 
+wavelengths of 7,5 [im 1265 ^iin} and 4,75 fim. (187 jjinj, and 
+with longer wavelengths, i 
+
+3.17 typical field: The minimum field characteristic of each 
+tape, which, when applied to the tape under test, causes a 
+signal output equal to 95 % of the maximum signal output at 
+the specified test packing density. 
+
+3.18 resistance per square: The surface resistance of a 
+square area of any size, measured between electrodes placed 
+on two opposite sides of the square. The unit of measurement 
+is the ohm. 
+
+
+
+4 Environment and transportation 
+4.1 Testing environment 
+
+Tests and measurements made on the cassette to check the re- 
+quirements of this International Standard shall be carried out 
+under the following conditions: 
+
+temperature: 23 ± 2 °C (73 ± 5 '^F); 
+
+relative humidity : 40 to 60 % ; 
+
+conditioning before testing: 24 h minimum. 
+
+4.? Operating environment 
+
+Cassettes used for data interchange shall be operated under the 
+following conditions: 
+
+temperature : 10 to 4b °C (50 to 1 13 "Fj ; 
+
+relative humidity : 20 to 80 % ; 
+
+wet bulb temperature: less than 26 °C (79 °F). 
+
+
+
+The temperature shall be measured in the air immediately sur- 
+rounding the cassette. Rapid temperature variations should be 
+avoided. There shall be no deposit of moisture on or in the 
+cassette. 
+
+4.3 Transportation and storage environment 
+
+During transportation and storage, it is recommended that 
+recorded cassettes are kept within the following conditions : 
+
+4 to 50 °C (40 to 122 °F|; 
+
+
+
+temperature : 
+relative humidity; 
+
+
+
+20 to SO % ; 
+
+
+
+NOTE — Cassettes which have been exposed to temperatures ex- 
+ceeding the storage temperature range may exhibit degraded perfor- 
+mance characteristics. Such cassettes should be subjected to a condi- 
+tioning period of not less than 24 h within the operating environment 
+prior to use. 
+
+4.4 Transportation 
+
+Responsibility for ensuring that adequate precautions are taken 
+during shipment shall be with the sender. During transport, the 
+reels of tapes shall be blocked to prevent any tendency to un- 
+wind. For transport, a rigid container free from dust or ex- 
+traneous matter shall be used. The final package must have a 
+clean interior and construction, preventing ingress of dust and 
+water. It is recommended that a space of not less than 80 mm 
+(3.15 in} exists between cassette and outer surface of the final 
+container so that risk of damage due to stray magnetic fields 
+will be negligible. 
+
+
+
+5 Characteristics of tape 
+
+The tape shall consist of a base material (for example oriented 
+polyethylene terephthalate film or its equivalent) coated on one 
+side with a strong yet flexible layer of ferromagnetic material 
+dispersed in a suitable binder. The magnetic tape shall be con- 
+tinuous and splice-free. Tapes or cassette components which 
+wilt ignite from a match flame and when so ignited will continue 
+to bur/i in a still carbon dioxide atmosphere shall not be used. 
+
+5.1 IMechanical properties 
+
+5.1.1 Tape and leader ,w.idth and tolerance 
+
+The width of tape and leader shall be : 
+
+(0.150 g™.. in) 
+
+5.1.2 Tape and leader length 
+5.1.2.1 Tape length 
+
+The length of the splice-free tape shall be : 
+
+
+
+3,81 _g.06^"^ 
+
+
+
+86-J 
+
+
+
+m 
+
+
+
+(282+ 'lf\) 
+
+
+
+5.1.2.2 Leader length 
+
+
+
+The length of the leader tape shall be such that the distance 
+from the cassette face to the beginning of the magnetic tape is 
+500 ± 50 mm (19.68 ± 2.0 in) when the leader tape is pulled 
+out of the cassette through the opening nearest to the empty 
+reel. 
+
+
+
+IS 12876 
+ISO 3407 
+
+
+
+1989 
+1983 
+
+
+
+5.1.3 Tape and leader thickness 
+
+* 
+
+5.1.3.1 Thickness of tape 
+
+The overall thickness of tape (including coating) shall be 
+maximum 19 \im (750 |ain), minimum 15 |Jm (&X) [i\n), with a 
+coating thickness of 5 ± 1 |im (200 ± 40 |Jin). 
+
+5.1.3.2 Thickness of leader 
+
+The thickness of the leader shall be 38 [xm (1 500 |iin) 
+maximum and 28 fim (1 100 fiin) minimum. 
+
+5.1.4 Markers 
+
+5.1.4.1 The magnetic tape shall be provided with a beginning- 
+of-tape and an end-of-tape marker (BOT and EOT). 
+
+5.1.4.2 The markers shall be circular holes having a diameter 
+of 0,60 ± 0,05 mm (0.023 7 ± 0.002 in). 
+
+5.1.4.3 The distance of the marker centres from the physical 
+beginning and end of the magnetic tape (for BOT and EOT 
+respectively) shall be 450 ± 30 mm (17.7 ± 1.2 in). The 
+distance between tape centre line and marker centre line shall 
+be less than 0,1 mm (0.003 9 in). 
+
+5.1.5 Light transmlttance 
+
+5.1.5.1 Light transmlttance of tape 
+
+The tape and the splicing tape shall each have a light transmlt- 
+tance of less than 1 % measured according to annex B. 
+
+5.1.5.2 Light transmlttance of leader. 
+
+The leader tape shall transmit 75 % or more light, measured ac- 
+cording to annex B. 
+
+5.1.6 Elastoplast'fc properties 
+
+5.1.6.1 The elastic properties of the tape shall be such that 
+when subjected to a tension of 0,5 N (0.112 Ibf) for a period of 
+3 min under any combination of temperature and relative 
+humidity within the ranges given In 4.1, the elongation shall be 
+between 0,08 and 0,50 %. 
+
+5.1.6.2 The etastoplastic properties of the tape shall be such 
+that when subjected to a tension of 3 N (0.67 Ibf) for a period 
+of 3 min under temperature and humidity conditions as given in 
+4.1, the (permanent) elongation measured with negligible ten- 
+sion after a second 3 min interval shall be less than 1 %. 
+
+5.1 .6.3 The elastic properties of the tape shall be such that its 
+tensile yield force, defined as the force required to elongate a 
+sample by 3 %, shall be at least 4,5 N (1.01 Ibf). 
+
+Procedure: Use a static weighing constant rate of grip separa 
+tion tester capable of indicating the load to an accuracy of 
+± 2 %. Clamp a specimen of tape at least 180 mm (7 in) In 
+
+
+
+length with an initial 100 mm (4 in) separation between jaws. 
+Elongate the specimen at a rate of 50 mm (2 in) per minute until 
+minimum elongation of 10 % is reached. The force required to 
+produce an elongation of 3 % is the tensile yield force. 
+
+5.1.6.4 The elastic properties of the leader shall be such that 
+when subjected to a tension of 1,0 N (0.225 Ibf) for a period of 
+3 min, under temperature and humidity conditions as specified 
+In 4.1 the elongation shall be between 0,08 and 0,50 %. 
+
+5.1.7 Longltudlnai curvature 
+
+There shall be a minimum radius of curvature for the edge of 
+the tape, defined and tested by allowing a 1 m (39 in) length of 
+tape to unroll and assume its natural curvature on a flat surface. 
+The minimum radius shall be 33 m (108 ft) which, if measured 
+over an arc of a circle, corresponds to a deviation of 3,8 mm 
+from a 1 m chord (0.150 in from a 39 in chord). 
+
+5.1.8 Tape-to-leader connection 
+
+5.1.8.1 Dimensions 
+
+If a splicing tape is used it shall not extend more than 18 mm 
+(0.71 in), from the splice between leader and tape and shall not 
+overlap the edges-of the leader or tape. No overlap is permitted 
+between leader and tape and any gap shall not exceed 0,5 mm 
+(0,02 in). The thickness of the splicing tape shall be 50 |im 
+(0.002 in) maximum. 
+
+5.1.8.2 Tape-to-leader alignment 
+
+At the area of the splice, there shall be no lateral discontinuity 
+greater than 50 \im (0.002 in). 
+
+5.1.8.3 Strength 
+
+After being subjected to a longitudinal static force of 2 N 
+(0.45 Ibf) for 24 h under the conditions of 4.2, the connection 
+shall meet the requirements given in 5.1.8.1. 
+
+5.1.9 Tensile strength 
+
+The tape shall be suitable for use with instruments applying a 
+maximum continuous load of 2 N (0.45 Ibf), provided that the 
+requirements of 7.8 are met. 
+
+5.1.10 Layer-to-layer adhesion 
+
+Layer-to-layer adhesion shall be suffici-sntly low to meet the 
+test given in annex A. 
+
+
+
+5.2 Tests of magnetic properties 
+
+The magnetic properties of the tape are defined by the testing 
+requirements given below. 
+
+5.2.1 Test density 
+
+Tape shall be tested at 63 ftpmm (1 600 ftpl) nominal. 
+
+
+
+IS 12876 : 
+ISO 3407 
+
+
+
+1989 
+1983 
+
+
+
+5.2.2 Typical field 
+
+The typical field of the tape under test shaii be within ± 20 % 
+of the reference field. 
+
+5.2.3 Average signal amplitude 
+
+When a tape has been recorded with the test recording current, 
+then played back on a system which has been calibrated by 
+means of a signal amplitude reference tape cassette recorded 
+under the same conditions, the average signal amplitude of the 
+tape under test shall be within + 25 o/^ ^f ^j^g g^^^^jg^^ 
+reference amplitude. When performing this test, the output 
+signal shall be measured on the same relative pass for both 
+tapes; i.e. read-while-write or read-on-first-pass-after-write. 
+
+5.2.4 Ease of erasure 
+
+When a tape has been recorded with the test recording current, 
+and then passed through a longitudinal steady erasure field of 
+79 500 A/ m (1 000 Oe) the average signal amplitude of the 
+remaining unwanted signal shall not exceed 3 % of the stan- 
+dard reference amplitude. The erasure field shall be reasonably 
+uniform, for example the field in the middle of a solenoid. This 
+measurement shall be made with a band pass filter passing at 
+least the first three harmonics. 
+
+5.2.5 Test for drop-outs and drop-ins 
+
+These tests shall be carried out in the "in contact" condition 
+and over the entire usable recording area which shall, in length, 
+extend from 350 mm (13.8 in) before the BOT-marker to 
+350 mm (13.8 in) beyond the EOT-marker, and, in width over 
+the track widths as defined in 8.2. 
+
+When performing these tests, the output signal shall be 
+measured on the same relative pass for both the signal 
+amplitude reference tape cassette and the tape under test; i.e. 
+read while-write or read-on-first-pass after write. 
+
+5.2.5.1 Drop-outs 
+
+When a tape has been recorded with the test recording current, 
+any playback signal, when measured base-to peak, which is 
+less than 50 % of half the standard reference amplitude is 
+considered a drop-out. 
+
+5.2.5.2 Drop-ins 
+
+When a tape has been recorded with a coF^'stant recording cur- 
+rent equivalent to the test recording current, any playback 
+signal, when measured base to peak, which exceeds 10 % of 
+half the standard reference amplitude is considered n drop-in. 
+
+
+
+5.2.7 Print-through 
+
+A tape for testing shall be written with a suitable pattern using 
+the test recording current rewound and stored for a minimum 
+of 16 h at 60 °C (140 °F). At the end of this period the 
+measured print-through signal shall not exceed 2 % of the 
+standard reference amplitude. As the decay of the print- 
+through signal on a section of tape is extremely rapid after it, 
+has been removed from the coil, the time elapsing between the 
+tape leaving the coil and its passing over the test read head 
+shall not exceed 500 ms. 
+
+
+
+5.3 Electrical surface resistance 
+
+The surface resistance of the tape shall not exceed 
+10° i^/square. 
+
+
+
+6 Tape cassette 
+
+6.1 Identification of cassette sides 
+
+6.1.1 The cassette has its two sides distinguished and labelled 
+"A" and "B", respectively, corresponding to tracks No. 1 and 
+No. 2 (see figure 1). 
+
+
+
+6.1.2 The back surface is provided with two holes whose 
+minimum area, depth and section are indicated in figure 1. 
+Writing on a track is enabled by closing the outer surface of the 
+corresponding hole. When a closing device other than a plug is 
+used, it shall remain attached to the cassette. 
+
+6.1.3 The back surface is provided with one slot slightly off 
+centre (see figure 1). 
+
+This slot makes it possible to distinguish between the sides A 
+and B, both visually and mechanically. 
+
+6.2 Mechanical characteristics 
+
+The mechanical characteristics which define the coplanar tape 
+cassette and which permit physical interchangeability of cas- 
+settes on any recorder for data interchange of different manu- 
+facture are specified in figures 1 to 6. 
+
+
+
+6.3 Basic specifications 
+
+Furthermore, the following basic specifications apply: 
+
+
+
+5.2.6 Rejected region 
+
+A rejected region is an area of tape extending across the width 
+of either track and not more than 10 mm (0.4 in) in length, 
+which on two consecutive tests exhibits drop-outs or drop-ins. 
+
+The acceptable number of rejected regions in an interchange 
+environment is a matter of agreement between inte-^change 
+parties. 
+
+
+
+6.3.1 Tape patP^and guidance 
+
+Requirements are shown in figures 2 and 3. 
+
+6.3.2 Cassette support planes 
+
+The cassette shaii be supprted by the write/read instrument 
+only by hatched areas in figure 5. 
+
+
+
+iS 12876 :1989 
+ISO 3407:1983 
+
+
+
+6.3.3 Holes in back surface 
+
+The position and dimensions of the holes in the back surface 
+are given in figure 1. The dimensions of the write-enable 
+device, if used, shall be compatible with the hole dimensions as 
+shown in figure 1 and shall be such that it may be installed and 
+removed with reasonable effort and remain seated during nor- 
+mal use. The write-enable device shall not protrude beyond the 
+back surface and it shall not be recessed more than 1 mm 
+(0.039 in). The write-enable device shall at least close the cross- 
+hatched area as shown in figure 1. 
+
+6.3.4 Window area 
+
+The maximum window area shall be in accordance with the 
+dimensions given in figure 6. The maximum allowable increase 
+in cassette thickness (required, for example, to accommodate 
+marks indicating amount of wound and unwound tape) is^iven 
+for each support plane. 
+
+6.3.5 Withdrawal force 
+
+The minimum withdrawal force of the leader tape from the hub 
+attachment shall be a static load of 10 N (2.25 Ibf) for a period 
+of 10 min. 
+
+6.3.6 Tape winding 
+
+The tape shall be wound on the hubs with the magnetic coating 
+out in such a way that, when recording on Track No.1, and 
+looking at label A, the tape is unwound in an anti-clockwise 
+direction. 
+
+6.3.7 Friction torque of the full hub 
+
+The maximum friction torque of the full hub in the cassette 
+shalJ be 2 X 10 ^ N-m (0.28 ozf-in). 
+
+6.3.8 Friction torque of both hubs 
+
+The maximum friction torque of both hubs measured in the 
+cassette itself at the nearly full hub shall be 2,7 X TO"^ Nm 
+(0.38ozfinK With a holdback torque of 0,8 X lO'^ N-m 
+(0.11 ozfin), applied to the nearly empty hub, the required 
+maximum torque to be applied to the nearly full hub shall not 
+exceed 5,5 X 10-3 N-m {0.78 ozf-in). 
+
+6.3.9 Pressure pad 
+
+The cassette shall be provided with a pressure pad to hold the 
+magnetic tape against the write /read head. The pressure of the 
+pad upon the head shall be 0,005 to 0,015 N/mm2 (11.6 to 
+34.8 ozf/in^), when the minimum distance between head and 
+reference line lies between 3,1 mm (0.122 in) and 3,8 mm 
+(0.150 in). This pressure shall be measured on a symmetrically 
+positioned circular cylindrical surface having a radius between 
+10 mm (0.39 in) and infinity (see figure 2). 
+
+Under the above conditions and with 0,8 X 10'^ N-m 
+(0.11 ozf-in) holdback torque applied to the nearly empty hub, 
+the required maximum torque applied to the nearly full hub 
+shall not exceed 16 X 10^ Nm (2.25 ozf-in) to start tape mo- 
+tion, and shall not exceed 12,5 X 10'^ N-m (1.78 ozf-in) to con- 
+tinue tape motion. 
+
+
+
+Measured from the centre line of the cassette, the pressure pad 
+shall extend on both sides of this centre line in the direction of 
+tape travel a minimum of 2,5 mm (0.098 in) and a maximum of 
+4 mm (0.157 in). Up to the distance of 2,5 mm (0.098 in) the 
+pressure requirements still apply. The pressure pad shall be 
+symmetrically positioned, and the distances between pressure 
+pad and cassette support planes surrounding the reference 
+holes shall not exceed 3,5 mm (0.138 in). Those values shall 
+also be valid in actual working conditions. 
+
+No magnetic material may be used for the cassette construc- 
+tion near the position of the write/read head. No screening 
+shield may be used and the pressure pad and its holder shall be 
+of non-magnetic material. 
+
+6.3.10 Tape guides 
+
+The tape touches the cassette at points on either side of the 
+tape head recesses (indicated by arrows U and L). (See 
+figure 3). 
+
+Guides are required at these positions. Between the outer 
+guides (P and S) there shall be a closed construction so as to 
+prevent dust entering the cassette. 
+
+The guides indicated by the letter L shall be perpendicular to 
+the lower support plane (see 6.3.2). The guides indicated by the 
+letter U shall be perpendicular to the upper support plane. 
+
+6.3.11 Transverse tolerances of tape position 
+
+6.3.11.1 Transverse tolerances without tape tension 
+
+The extreme position of the tape in the head region when no 
+tape tension Is present shall be limited by means incorporated 
+in the cassette. The distance between cassette support planes 
+surrounding the reference holes and those means shall lie 
+between 3,5 mm (0.138 in) and 3,7 mm (0.146 in). 
+
+6.3.11.2 Transverse tolerances with tape tension 
+
+If the tape is not influenced or touched by any external means 
+(guides, heads, capstans), during wind or rewind, the tape 
+edges shall have a distance 4,1 + 0,2 mm (0.161 ± 0.008 in) 
+from the support plane surrounding the reference holes (see 
+figures 4 and 5). When track No. 1 is being used, the side B 
+outer cassette surface is the reference plane. Conversely, when 
+track No. 2 is being used, the side A outer cassette surface is 
+the reference plane. 
+
+6.3.12 Hub diameter 
+
+It is recommended that the hub diameter be 21,7 ± 0,5 mm 
+(0.855 ± 0.019 in). 
+
+6.4 Labelling of tape cassette 
+
+6.4.1 Label area 
+
+The maximum label area shall be In accordance with the dimen- 
+sions given in figure 6. The maximum allowable depression in 
+the thickness of the cassette in the label area is given for each 
+support plane. 
+
+
+
+IS 12876: 1989 
+ISO 3407:1983 
+
+
+
+6.4.2 Interchange 
+
+Suitable labels shall be used for marking the contents of the 
+cassette. The use of pencil or erasable materia! is t\Gt allowed. 
+The position and size of labels used shall be less than the pro- 
+vided depression of the label area. 
+
+6.4.3 Identification 
+
+The label shall have provisions for the identification of owner, 
+manufacturer, cassette side and interchange label. The label 
+shall indicate: 
+
+a) that the cassette is meant for data interchange 
+(clause 1); 
+
+b) the use of track 2 (8.4); 
+
+c) whether 7 or 8 bit coding is used (8.7); 
+
+d) the method of recording. 
+
+6.5 Magnetic properties of the cassette housing 
+
+The magnetic properties of the cassette housing shall not Im- 
+pede bulk erasure of the tape by an external device. 
+
+
+
+7 Recording 
+
+7.1 Method of recording 
+
+The method of recording shall be phase encoding, described as 
+follows •- 
+
+7.1.1 The tape before the first block, the interblock gaps and 
+that part of the tape following the last block written, shall be 
+erased with the same polarity. 
+
+This polarity is such that the beginning of the relevant track is a 
+North seeking pole. 
+
+This erasing process forms part of the recording procedure. 
+
+7.1.2 A ZERO bit is defined as a flux transition to the polarity 
+opposite to that of the interblock gap, when reading in the tor- 
+ward direction. 
+
+7.1.3 A ONE bit is defined as a flux transition to the polarity of 
+the interblock gap, when reading in the forward direction, 
+
+7.1.4 Additional flux transitions shall be written at the 
+nominal midpoints between bit flux transitions as defined in 
+7.1.2 and 7.1.3 if required, to establish the proper polahty for 
+the succeeding bits. These flux transitions shall be called phase 
+flux transitions. 
+
+7.2 Equipment 
+
+The equipment and tape used for interchange shall satisfy the 
+requirements of 7.3 to 7.8 inclusive. 
+
+
+
+over a length of tape of not less than 3,81 m 
+
+
+
+All signal measurements are made at a point in the read chain 
+where the amplitude is proportional to the rate of change of 
+flux in the read head. 
+
+7.3 Density of recording 
+
+7.3.1 The density of recording is 32 bpmm (800 bpi) nominal 
+(see clause 1). 
+
+7.3.2 The Song-term average bit spacing is the spacing be- 
+tween bit flux transitions that have been recorded continuously 
+at a nominal density of 32 ftpmm (800 ftpi) and shall be 
+measured 
+{12.5 ft). 
+
+The long-term average bit spacing shall be within ± 4 % of the 
+nominal spacing of 31,75 ^im (1 250 liin). 
+
+7.3.3 The short-term average bit spacing referred to a 
+particular bit spacing is the average of the preceding four bit 
+spacings. 
+
+The short-term average bit spacing shall be within the limits of 
+± 5 % of the long-term average bit spacing. 
+
+In addition, the short-term average bit spacing shall not change 
+at a rate greater than 2 % per bit. 
+
+7.4 Flux transition spacing 
+
+7.4.1 The spacing between successive data bit flux transitions 
+shall not differ by more than 10 % from the preceding bit 
+spacing. 
+
+7.4.2 The spacing between a phase flux transition and the 
+preceding data bit flux transition shall be between 45 and 55 % 
+of the preceding bit spacing. 
+
+7.5 Signal amplitude 
+
+7.5.1 Average signal amplitude 
+
+7.5.1.1 The average peak to-peak signal amplitude of the in 
+terchanged tape cassette at 63 ftpmm (1 600 ftpi) shall not 
+deviate by more than + 50 %, — 35 % from the standard 
+reference amplitude. Averaging shall be done over a minimum 
+of 4 000 flux transitions, which for the interchange cassette 
+may be segmented into blocks. 
+
+7.5.1.2 The average peak-to-peak sigtial enipiitude at 
+32 ftpmm (800 ftp!) nominal shall be less than twice the stan 
+dard reference amplitude. 
+
+7.5.1.3 Averaging shall be done on the first-read-pass after 
+interchange. 
+
+7.5.2 Minimum signal amplitude 
+
+No tape cassettes intended for interchange shall contain any 
+adjacent flux transitions whose base-to-peak signal amplitude 
+is less than 35 % of half of the standard reference amplitude. 
+
+
+
+IS 12876: 1989 V 
+ISO 3407:1983 
+
+
+
+This check is to be made during read-while-write or resd-on- 
+first-pass-after-write . 
+
+7.6 Number of elongated gaps 
+
+The number of gaps which have been elongated (see 8.11.4) 
+due to erase instructions is a matter of agreement between in- 
+terchange parties, but it is recommended that this number does 
+not exceed 2, or alternatively 1 % of the total number of blocks 
+written, whichever figure is larger. 
+
+
+
+8.3.2 The recording starts with track No. 1 ; at its conclusion 
+the cassette may be turned over and the recording can be con- 
+tinued with track No. 2. 
+
+8.4 Use of tracks 
+
+The use of track No. 1 is reserved for data interchange. The use 
+of track No. 2 is to be indicated on the label. If it is not used in 
+the same way as track No. 1, reading of track No, 2 requires 
+agreement between sender and recipient of the cassette. 
+
+
+
+7.7 Alignment error 
+
+When adjusted for maximum output, the azimuth angles for a 
+reference alignment cassette, and the information to be inter- 
+changed, shall not differ by more than ± 15'. 
+
+7.8 Tape winding torque 
+
+The take-up torque shall be at least 3 X 10 ^ Nm (0.43 ozf-in). 
+The maximum continuous value of the take-up tape tension 
+shall be constant or decrease with increasing reel diameter and 
+shall not exceed 0,5 N (0.113 Ibf). The above values apply dur- 
+ing winding, re-winding, recording and playback. 
+
+7.9 Residuals of previous recordings 
+
+In the zone of the tape in which the outer edges of the tracks 
+are allowed to vary (see 8.2.2), there can be residuals of 
+previous recordings. 
+
+
+
+8.5 Location of characters on the tracks 
+
+Each character is located in a byte (octet) of eight bit-positions 
+along the track numbered from 1 to 8 in order of recording. 
+
+8.6 Sequence of recording 
+
+The least significant bit is recorded first. The information to be 
+interchanged is recorded serially by bit and by character. 
+
+
+
+Bit-positions: 
+
+
+
+byte 
+
+
+
+...4 321 87654321 876543 2... 
+
+
+
+Forward tape motion : 
+
+
+
+-^>- 
+
+
+
+Resulting recording direction : 
+
+
+
+8 Format 
+
+8.1 Number of tracks 
+
+There shall be two tracks. 
+
+8.2 Track dimensions 
+
+8.2.1 Track width 
+
+The track-width shall be 1,45 mm (0.057 in) nominal. 
+
+8.2.2 Distances between tape centre tine and 
+track edges 
+
+The distance between the centre line of the tape and the outer 
+edges of the tracks shall be between 1,830 mm (0.072 in) and 
+1,905 mm (0.075 in). The distance between the tape centre line 
+and the inner edges of the tracks shall be between 0,37 mm 
+(0.015) and 0,51 mm (0.020 in). 
+
+8.3 Track designation 
+
+8.3.1 With side "A" up the designation of the two tracks is as 
+follows : 
+
+When the tape moves from left to right with the magnetic sur- 
+face facing the observer, and with the leader of side A to the 
+right, the bottom track is designated track No. 1 and the upper 
+track is designated track No. 2 (see figure 1). 
+
+
+
+8.7 Code 
+
+The characters are represented by means of the ISO 7-bit 
+coded character set (see ISO 646) and, where required, of its 
+extensions (see ISO 2022). 
+
+8.7.1 Recording of 7-bit coded characters 
+
+Each 7-bit coded character is recorded in bit-positions 1 to 7 of 
+a byte ; bit-position 8 is recorded with value ZERO. The relation- 
+ship is as follows : 
+
+
+
+Bits of the 7-bit 
+combination : 
+
+
+
+
+
+^7 
+
+
+be 
+
+
+bs 
+
+
+b* 
+
+
+b3 
+
+
+b2 
+
+
+bi 
+
+
+Bit-position 
+
+in the byte; 
+
+
+8 
+
+
+7 
+
+
+6 
+
+
+5 
+
+
+4 
+
+
+3 
+
+
+2 
+
+
+1 
+
+
+
+8.7.2 Recording of 8-bit coded characters 
+
+Each 8-bit coded character is recorded in bit-positions 1 to 8 of 
+a byte. The relationship is as follows: 
+
+
+
+Bits of the 8-bit 
+combination : 
+
+
+be 
+
+
+b7 
+
+
+^ 
+
+
+bs 
+
+
+b4 
+
+
+b3 
+
+
+b2 
+
+
+b, 
+
+
+Bit-position 
+in the byte: 
+
+
+8 
+
+
+7 
+
+
+6 
+
+
+5 
+
+
+4 
+
+
+3 
+
+
+2 
+
+
+1 
+
+
+
+IS 12876:1989 
+ISO 3407:1983 
+
+
+
+8.8 Sequence of characters 
+
+The sequence of characters from start to finish of a block shall 
+correspond to the normal left to right sequence>of a written 
+line. 
+
+
+
+8.9 Data block 
+
+A data block shall consist of a preamble, data and a post- 
+amble. The data portion of a data block including the CRC 
+(see 8.13) shall contain a minimum of 32 bits and a maximum 
+of 2 064 bits. 
+
+
+
+8.10 Control block 
+
+A control block (known as a tape mark) shall consist of a 
+preamble, two bytes of eight ZERO bits each, and a postamble. 
+
+
+
+8.11 Gaps 
+
+8.11.1 Integrity of gaps 
+
+The gaps shall be DC erased. Immediately before and after each 
+block there shall be a length of a least 2,5 mm (0.10 in) in 
+which, exclusive of residual edge signals, there is no flux 
+discontinuity capable of producing a read signal of more than 
+10 % of half of the sianudrd reference arnpiiiude. in the re- 
+maining part of the gap there shall be no more than seven flux 
+transitions. 
+
+
+
+8.11.2 Interblock gaps 
+
+The interblock gap, defined as the distance between two suc- 
+cessive data blocks, shall have a minimum length of 17,8 mm 
+(0.70 in), a nominal length of 20,3 mm (0.80 in) and a max- 
+imum length of 250 mm (9.84 in). Any gap in excess of 400 mm 
+(15.5 in) shall be considered as the end of data on this track. 
+
+
+
+8.11.3 Initial gap 
+
+The gap between the BOT marker and the first data block shall 
+be 33 mm (1.30 in) minimum and 250 mm (9.84 in) maximum. 
+
+
+
+8.11.4 Elongated gap 
+
+A gap is an elongated gap if its length is between 50 mm 
+(1 .97 in) and 250 mm (9.84 in). 
+
+
+
+8.11.5 Trailer gap 
+
+The gap following the last block shall have a minimum length of 
+17,8 mm (0.70 in). At least 17,8 mm (0.70 in) of this gap shall 
+He within the tested area (see 5.2.5). 
+
+8.12 Preamble and postamble 
+
+8.12.1 preamble 
+
+Immediately preceding data in each block, the preamble 
+"10101010" shall be written. When reading in the fon^vard 
+direction, the first flux transition shall be a ZERO transition. 
+
+8.12.2 Postamble 
+
+Immediately following data in each block, the postamble 
+"10101010" shall be written. When reading in the forward 
+direction, the first flux transition shall be a ZERO transition. 
+
+8.13 Cyclic redundancy check (CRC) 
+
+The last two characters in the data portion of a data block shall 
+be cyclic redundancy check (CRC), The 16-bit CRC shall be 
+written in each data block following the data and immediately 
+preceding the postamble. The polynomial generating the CRC 
+is expressed as : 
+
+
+
+10 
+
+
+
+IS 12876:1989 
+ISO 3407: 1983 
+
+
+
+Dimensions in millimetres 
+
+
+
+This area must be closed 
+to enable writing 
+
+
+
+
+Arrow denotes direction of tape travel 
+when recording track 1 
+
+
+
+No slot allowed in this area 
+
+
+
+A-A 
+80A±o,3 
+
+
+
+
+To be determined 
+by the manufacturer 
+
+
+
+
+
+Figuro 1a — Sides, tracks, holes and asymmetrical slot 
+
+
+
+IS 12876 :1989 
+ISO 3407:1983 
+
+
+
+Dimensions in inches 
+
+
+
+This area must be closed 
+to enable writing 
+
+
+
+0.240 1 
+
+
+
+0.232 3 
+0.157 5 m in. 
+
+
+
+
+Side A 
+
+
+
+a240 1 
+*0.232 3 
+
+1.157 5 min. 
+
+
+
+y_y jj jjjQ^l" ' ^ 
+
+
+
+
+Write inhibit hole track 1 
+
+
+
+Asymmetrical 
+slot 
+
+
+
+
+
+Track 1 ' 
+
+
+
+Arrow denotes direction of tape travel 
+when recording track 1 
+
+
+
+No slot allowed in this area 
+
+
+
+
+0.287 4 
+
+
+
+To be determined 
+by the manufacturer 
+
+
+
+
+(o) 
+
+
+
+Figure lb — Sides, tracks, holes and asYmrnetrical slot 
+
+
+
+12 
+
+
+
+IS 12876 :1989 
+ISO 3407:1983 
+
+
+
+Dimensions in millimetres 
+
+
+
+28±0.25 
+
+
+
+Shaded areas in figure 2 define 
+openings over the full height of the 
+cassette aperture, unobstructed by 
+fixed members, except for areas 
+covered by the magnetic tape 
+and pressure pad. 
+
+
+
+
+Pressure roller 
+
+
+
+Pressure roller 
+
+
+
+Write /read head 
+
+
+
+Figure 2a — Position of heads 
+
+
+
+
+Figure 3a — Tape guides in cassette 
+
+
+
+13 
+
+
+
+IS 12876:1989 
+ISO 3407 : 1983 
+
+
+
+Dimensions in inches 
+
+
+
+1.112 
+
+
+
+Shaded areas in figure 2 define 
+openings over the full height of the 
+cassette aperture, unobstructed by 
+fixed nnembers, except for areas 
+covered by the magnetic tape 
+and pressure pad. 
+
+
+
+
+Pressure roller 
+
+
+
+Write/ read head 
+
+
+
+Figure 2b — Position of heads 
+
+
+
+0.208 6 
+
+
+
+0.196 8 
+
+
+
+
+2.614 2 
+
+
+
+Figtire 3b — Tape guides in cassette 
+
+
+
+Ui 
+
+
+
+I Symmetry about the centre line is 
+
+
+
+Dimensions in millimetres 
+
+
+
+Side A- 
+
+
+
+68iO,5 
+
+
+
+implied without accumulation of tolerances 
+
+
+
+r Prime reference line 
+
+
+
+
+
+
+5oT I i ='■= 
+
+
+
+B-B (2X 
+
+
+
+c-c 
+
+
+
+
+
+Reference 
+
+
+
+4-0J_ fiole 
+
+
+
+D-D 
+
+
+
+
+rn 
+
+
+
+CD 
+
+
+
+.01 
+
+13,5-o;6(2x 
+
+
+
+JL 
+
+
+
+I 
+
+
+
+67±o.3 
+
+
+
+^ Side A 
+
+
+
+28±0,25 
+
+
+
+
+n^ 
+
+
+
+i4-^§:? 
+
+
+
+A 
+
+
+
+ri 
+
+
+
+1 mm. 
+r-^y =1,3 max. 
+
+
+
+Reference hole- 
+
+
+
+.4±0,2{2x 
+
+
+
+
+30°12° 
+
+
+
+
+30^50 
+
+
+
+
+0) 0> 
+
+
+
+Figure 4a — Cassette dimensions 
+
+
+
+8S 
+
+
+
+Side A 
+
+
+
+Symmetry about the centre line is 
+implied without accumulation of tolerances 
+
+
+
+'imensions in inches 
+
+
+
+9i 
+
+
+
+
+CO 0> 
+
+
+
+<0 (O 
+
+S3 
+
+
+
+0.149 6^ 
+
+
+
+Figure 4b — Cassette dimensions 
+
+
+
+Support planes in front 
+
+and side views are designated by 
+
+phantom lines 
+
+
+
+y/\ 0.1 IA| 
+
+
+
+Dimensions in miiiimetres 
+
+
+
+Side A 
+
+
+
+
+
+l/l 0.2 I A 
+
+
+
+
+Figure 5a — Cassette support planes 
+
+
+
+
+
+
+Support planes in front 
+
+anr! r,ide views are designated by 
+
+phantom lines 
+
+
+
+■ ^10.003 9 |A 
+
+
+
+Dimensions in inches 
+
+
+
+Side A 
+
+
+
+
+CO 0> 
+
+
+
+Figure 5b - Cassette support planes 
+
+
+
+E3 
+
+
+
+
+Dimensions in millimetres 
+
+
+
+« 
+
+
+
+r 
+
+
+
+/ith 
+
+
+
+
+Side A 
+
+
+
+
+
+nnnl 
+
+
+
+T^: 
+
+
+
+d— J 
+
+
+
+ij- 
+
+
+
+% 
+
+
+
+Figure 6a — Maximum label and window area dimensions 
+
+
+
+00 
+
+
+
+Dimensions in inches 
+
+
+
+Side A- 
+
+
+
+3.587 
+
+
+
+hi 
+
+
+
+/i\ 
+
+
+
+\y 
+
+
+
+
+
+00 
+
+
+
+Figure 6b — Maximum label and window area dimensions 
+
+
+
+IS 12876 : 
+ISO 3407 
+
+
+
+1989 
+1983 
+
+
+
+Annex A 
+
+
+
+Layer-to-layer adhesion 
+
+{This annex forms part of the standard.) 
+
+
+
+The procedure for testing the tape for tayer-to-layer adhesion is as follows : 
+
+A piece of the tape to be tested, about 1 m (39 in) in length, shall be wound around a glass pipe, 36 mm (1.4 in) in diameter, with a 
+tension of 3 N (0.67 Ibf), and fixed at the end. This shall be stored for 24 h at a temperature of 45 ± 3 °C (113 ± 6 °F) and at 80 % 
+relative humidity. After this period it shall be stored for another 24 h in the testing environment specified in clause 4. The tape shall 
+then be unwound with a mass of 5 g at the end of the tape as shown in figure 7, and the angle 6 shall be smaller than 45°. 
+
+
+
+
+Figure 7 — Test for layer-to-layer adhesion 
+
+
+
+21 
+
+
+
+IS 12876 : 
+ISO 3407 
+
+
+
+1989 
+1983 
+
+
+
+Annex B 
+
+
+
+Measurehient of light transmittance 
+
+{This annex forms part of the standard.) 
+
+
+
+B.I Introduction 
+
+Clauses B.2 and B.3 outline the general principle of a test 
+device and test method originally designed for measurement of 
+the radiation (light) transmittance of punched tape but ap- 
+plicable also in the case of magnetic tape. The device and test 
+method have been chosen because they simulate the more 
+critical factors of typical photoelectric tape readers. 
+
+For the purpose of this International Standard "light transmit- 
+tance" is defined by convention as the relationship between the 
+reading obtained from the test device with the tape sample in- 
+serted and the reading obtained when no sample is present. 
+The transmittance value is expressed as the percentage ratio of 
+the two readings. 
+
+The essential elements of the test device are; 
+
+— the radiation <light) source; 
+
+— the optical path; 
+
+— the measuring mask; 
+
+— the photoelectric cell; 
+
+— the measuring equipment. 
+
+B.2 Description of the test device 
+
+B.2.1 Radiation (light) source 
+
+A tungsten lamp shall be used as the radiation (light) source 
+and should be operated in an under-run state. 
+
+The colour temperature should be 2 (XX) ± 2(X) K and a 
+resulting illumination at the surface of the tape sample of about 
+5 000 Ix is recommended. 
+
+B.2.2 Optical path 
+
+The radiation should be perpendicular to the tape sample and 
+be of substantially uniform intensity. Typically the tape sample 
+should be separated from the lamp by a distance of 150 mm 
+(5.9 in). 
+
+A diaphragm of the form shown in figure 8 is recommended in 
+order to sensibly ensure that scattered radiation does not enter 
+the mask area. 
+
+B.2.3 Measuring mask geometry 
+
+The measuring mask shall be constructed in one piece as 
+shown in figure 9. A good matt black finish capable of absorb- 
+ing infra-red radiation is necessary. 
+
+
+
+Special care shall be taken to ensure that the tape sample to be 
+measured is maintained flat in contact with the inner face of the 
+mask. 
+
+
+
+B.2.4 Photoelectric cell 
+
+A flat silicon photoelectric cell should be used. Its dimensions 
+shall be such that the active area of the photoelectric cell ex- 
+ceeds the diameter of the mask orifice. It should be mounted 
+parallel and in close proximity to the outer face of the mask. 
+
+B.2.5 Measuring equipment 
+
+The measuring equipment should be connected directly across 
+the photoelectric cell to measure the outout current. In order to 
+be able to set measuring equipment to full scale deflection 
+(ICK) %) a shunt potentiometer in the circuit shall be provided 
+or a fine adjustment of the lamp power supply voltage is re- 
+quired. 
+
+The load impedance across the photoelectric cell should be as 
+low as possible and shall not exceed 500 Q. The instrument, 
+which could take the form of a moving coil meter with a full 
+scale deflection of 50 \lA, should be capable of measuring the 
+maximum and minimum values to an accuracy of ± 1 %. 
+
+
+
+B.3 Test procedure 
+
+B.3.1 For the purpose of the test use a sample strip of tape 
+not shorter than 250 mm (10 in). 
+
+Set the measuring equipment to full scale deflection (100 %). 
+
+Insert the sample strip and record 45 observations on different 
+points along the sample. 
+
+Then withdraw the sample strip and re-check the full scale 
+deflection (100 %). If the reading lies outside the range of 99 % 
+to 101 % reset the equipment to 100 % and record a new set of 
+45 observations. 
+
+
+
+B.3. 2 If a statistical maximum value of light transmittance is 
+desired it can be determined according to the formula 
+
+7 - X + K y^ a 
+
+where 
+
+X is the mean value of n observations; 
+
+a is the accurate estimate of the lot standard deviation; 
+
+
+
+22 
+
+
+
+IS 12876 : 
+ISO 3407 
+
+
+
+1989 
+1983 
+
+
+
+K is the constant specified by the selected plan of inspec- 
+tion; 
+
+n is the number of observations on the sample specified 
+by the selected plan of inspection. 
+
+The rvalue so calculated is for use where inspection of lots of 
+tape is by variables. Lot quality Is judged in terms of percent 
+defective and acceptance Is lot by lot. 
+
+The plan is based upon single sampling (with a known) and 
+gives an 
+
+— acceptable quality level (AQl) of 0,5 % defective; 
+
+and a 
+
+— lot tolerance percent defective (LTPD) of 1,62 %. 
+
+The selected plan has a sample size letter of and gives the 
+values for 
+
+k = 2,33, and 
+
+
+
+i>rt = 45 
+
+If r < r max. the lot is accepted, 
+
+If T> rmax. the lot is rejected, 
+
+where T max. = maximum value of transmittance permit- 
+ted = 50 %. 
+
+
+
+B.4 Guidance on construction 
+
+B.4.1 Experience has sTiown that a projeptor lamp is most 
+suited as the radiation source. When selecting a tamp,, care 
+shall be taken to avoid a lamp with optical inhomogenities in 
+the glass envelope. Also, if mirrors or lenses are used in the op- 
+tical path they shall be placed so that no filament image occurs 
+in the proxins^ity of the mask and photoelectric cell area. It is 
+necessary to operate the lamp from a stabilized, regulated 
+power supply. 
+
+
+
+1) Reference: A.H. Bowker and H.P. Goode, Samp/ing Inspection by Variabies, McGraw-Hill, 1962. 
+
+
+
+23 
+
+
+
+IS 12876 : 1989 
+iSO 3407 : 1983 
+
+
+
+
+Photoelectric cell 
+
+
+
+Measuring mask 
+
+
+
+Inner face 
+
+
+
+Outer face 
+
+
+
+Determined by user 
+
+
+
+dm 150 mm 
+
+
+
+Figure 8 — Measuring device (diagram) 
+
+
+
+Dimensions in millimetres 
+
+
+
+
+Groove for frontside connection 
+wire of photoelectric cell 
+(if required) 
+
+
+
+Figure 9 — Measuring masl^ 
+
+
+
+24 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods 
+and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in 
+any form without the prior permission in writing of BIS. This does not preclude the free use, in the 
+course of implementing the standard, of necessary details, such as symbols and sizes, tvpe or grade 
+designations. Enquiries relating to copyright be addressed to the Director ( Publications ), BIS. 
+
+Revision of Indian Standards 
+
+Indian Standards are reviewed periodically and revised, when necessary and amendments, if any, arc 
+issued from time to time. Users of Indian Standards should ascertain that they are in possession of 
+the latest amendments or edition. Comments on this Indian Standard may be sent to BIS giving the 
+following reference : 
+
+Doc : No. LTD 24 (1302) 
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters : 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg. New Delhi 1 10002 Telegrams : Manaksanstha 
+
+Telephones : 331 01 31, 331 13 75 (Common to all Offices) 
+
+Regional Offices : Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg 1331 01 31 
+
+NEW DELHI 110001 |33l 13 75 
+
+Eastern : 1/14 CI.T. Scheme VII M, V.I.P. Road, Maniktola, 37 86 62 
+
+CALCUTTA 700054 
+
+Northern : SCO 445-446, Sector 35-C, CHANDIGARH 160036 2 18 43 
+
+Southern : CI.T. Campus, IV Cross Road, MADRAS 600113 41 29 16 
+
+Western : Manakalaya. E9 MI DC, Marol, Andhcri ( East ) 6 32 92 95 
+
+BOMBAY 400093 
+
+Branches : AHMADABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. 
+FARIDABAD. GHAZL\BAD. GUWAHATI. HYDERABAD. JAIPUR. 
+KANPUR. PATNA. TRIVANDRUM. 
+
+
+
+Printed at the Central Electric Press, Delhi, India 
+
+
+

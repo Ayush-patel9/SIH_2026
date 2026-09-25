@@ -1,0 +1,59 @@
+{
+  "is_number": "IS IS_12103",
+  "standard_id": "IS IS_12103",
+  "title": "Indian Standard Specification / Test Method (IS IS_12103)",
+  "ia_identifier": "IS_12103",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12103) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_12103).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 737",
+      "standard_id": "IS 737:2008",
+      "title": "Wrought aluminium and aluminium alloy sheet and strip for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12103"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "Carbon 1 '20 to 1 '30 percent",
+      "Manganese 0*20 to 0'45 percent",
+      "Silicon O'lO to 0'35 percent",
+      "Phosphorus 0035 percent",
+      "Sulphur 0'025 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "7.1 Each unit shall be legibly and indelibly marked with the manufacturer's name, initials or recognized",
+      "8. Packing — The blades of the skin graft expander shall be suitably lubricated in order to avoid",
+      "9. Sampling — Sampling procedure and acceptance criteria for conformity shall be as agreed to",
+      "O April 1988. BIS"
+    ]
+  },
+  "total_chars_parsed": 5548
+}

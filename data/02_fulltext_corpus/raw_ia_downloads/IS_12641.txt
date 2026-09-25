@@ -1,0 +1,7720 @@
+**************** 
+
+
+
+-k is^ 
+
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+"^^ ^ ^ ^ % ?R^" 
+
+Jawaharlal Nehru 
+
+Step Out From the Old to the New 
+
+
+
+^^iiT'jsiS'SfS^^^^*?*:: 
+
+
+
+
+•^■•■^^^■r 
+
+
+
+
+li^ i/ir w w w w w WW ^ ^ ^ tIt w w w 
+
+
+
+BLANK PAGE 
+
+
+
+^<ii^ 
+
+
+
+
+
+UI> 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+( Reaffirmed 2006 ) 
+
+(WW g^^ 
+
+Indian Standard 
+
+SEMICONDUCTOR DEVICES — MECHANICAL AND 
+
+CLIMATIC TEST METHODS 
+
+(First Revision) 
+
+ICS 31.080.01 
+
+
+
+© BIS 2004 
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+
+NEW DELHI 110002 
+
+^^^^"^2004 Price Group 16 
+
+
+
+Semiconductor Devices and Integrated Circuits Sectional Committee, LTD 10 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard (First Revision) which is identical with lEC 60749 (2002) 'Semiconductor devices 
+— Mechanical and climatic test methods' issued by the International Electrotechnicai Commission 
+(lEC) was adopted by the Bureau of Indian Standards on the recommendations of the Semiconductor 
+Devices and Integrated Circuits Sectional Committee and approval of the Electronics and 
+Telecommunication Division Council. 
+
+At present following two Indian Standards exist on the subject: 
+
+IS 12641 : 1989 Environmental testing procedures for semiconductor devices and integrated 
+circuits 
+
+IS 10477 : 1982 Environmental testing procedures for microclrcuits 
+
+This standard has been prepared in order to revise above mentioned standards so as to align them 
+with latest international practices. This standard constitutes the first revision of IS 12641. With the 
+publication of this standard, IS 10477 shall be withdrawn. 
+
+The text of the EC Standard has been approved as suitable for publication as an Indian Standard 
+without deviations. Certain conventions are, however, not identical to those used in Indian Standards. 
+Attention is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should be 
+read as 'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice 
+is to use a point (.) as the decimal marker. 
+
+Only the English text of the International Standard has been retained while adopting it as an Indian 
+Standard, and as such the page numbers given here are not the same as in I EC Publication. 
+
+CROSS REFERENCES 
+
+In this adopted standard, reference appears to certain International Standards for which Indian 
+Standards also exist. The corresponding Indian Standards which are to be substituted in their place 
+are listed below along with their degree of equivalence for the editions indicated: 
+
+
+
+International Standard 
+
+
+
+Corresponding Indian Standard 
+
+
+
+I EC 68-1 (1988) Environmental IS 9000 (Part 1) : 1988 Basic environmental 
+testing — Part 1 : General and testing procedures for electronic and electrical 
+guidance items: Part 1 General 
+
+
+
+I EC 68-2-3 (1985) Environmental 
+testing — Part 2 : Tests — Test 
+Ca: Damp heat, steady state 
+
+lEC 68-2-6 (1995) Environmental 
+testing — Part 2 : Tests — Test Fc 
+and guidance Vibration 
+
+(sinusoidal) 
+
+
+
+I EC 68-2-7 (1983) 
+testing — Part 2 : 
+Ga and guidance 
+steady state 
+
+
+
+Environmental 
+Tests — Test 
+: Acceleration, 
+
+
+
+IS 9000 (Part 4) : 1 979 Basic environmental 
+testing procedures for electronic and electrical 
+items: Part 4 Damp heat (steady state) 
+
+IS 9000 (Part 8) : 1981 Basic environmental 
+testing procedures for electronic and electrical 
+items: Part 8 Vibration (sinusoidal) test 
+
+IS 9000 (Part 9) : 1984 Basic environmental 
+testing procedures for electronic and electrical 
+items: Part 9 Acceleration (steady state) test 
+
+
+
+Degree of 
+Equivalence 
+
+Technically 
+equivalent 
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+{Continued on third cover) 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+Indian Standard 
+
+SEMICONDUCTOR DEVICES — MECHANICAL AND 
+CLIMATIC TEST METHODS 
+
+(First Revision) 
+
+1 Scope and object 
+
+This International Standard lists test methods applicable to semiconductor devices (discrete 
+devices and integrated circuits) from which a selection may be made. However, additional test 
+mjethods may be required for non-cavity devices. 
+
+NOTE A non-cavity device is a device in w/hich enclosing or encapsulating material is in Intimate contact w/ith all 
+exposed surfaces of the active element, and no void space is included in the device design. 
+
+This standard has taken into account, wherever possible, lEC 60068. 
+
+The object of this standard is to establish uniform preferred test methods with preferred values 
+for stress levels forjudging the environmental properties of semiconductor devices. 
+
+In case of contradiction between this standard and a relevant specification, the latter shall 
+
+govern. 
+
+2 Normative references 
+
+The following normative documents contain provisions which, through reference in this text, 
+constitute provisions of this International Standard. At the time of publication, the editions 
+indicated were valid. All normative documents are subject to revision, and parties to 
+agreements based on this International Standard are encouraged to investigate the possibility 
+of applying the most recent editions of the normative documents indicated below. Members of 
+lEC and ISO mainiain registers of currently valid International Standards. 
+
+lEC 60068-1:1988, Environmental testing ~ Part 1: Genera! and guidance 
+
+I EC 60068-2-3:1985, Environmental testing - Part 2: Tests - Test Ca: Damp heat, steady state 
+
+lEC 60068-2-6:1995, Environmental testing - Part 2: Tests - Test Fc and guidance: Vibration 
+(sinusoidal) 
+
+lEC 60068-2-7:1983, Environmental testing - Part 2: Tests - Test Ga and guidance: 
+Acceleration, steady state. 
+
+lEC 60068-2-1 1:1981, Environmental testing - Part 2: Tests - Test Ka: Salt mist 
+
+I EC 60068-2-13:1983, Environmental testing - Parf 2: Tests - Test M: Low air pressure 
+
+lEC 60068-2-14:1984, Environmental testing - Part 2: Tests - Test N: Change of temperature 
+
+
+
+IS 1 2641 : 2004 
+lEC 60749 <2002) 
+
+lEC 60068-2-17:1994, Environmental testing - Part 2: Tests - Test Q: Sealing 
+
+I EC 60068-2-20:1979, Environmental testing - Part 2: Tests - Test T: Soldering 
+
+lEC 60068-2-21:1983, Environmental testing - Part 2: Tests - Test U: Robustness of 
+terminations and integral mounting devices 
+
+lEC 60068-2-45:1980, Environmental testing - Part 2: Tests - Test XA and guidance: 
+Immersion in cleaning solvents 
+
+I EC 60068-2-47:1982, Environmental testing - Part 2: Tests - Mounting of components, 
+equipment and other articles for dynamic tests including shock (Ea), bump (Eb), vibration (Fc 
+and Fd) and steady-state acceleration (Ga) and guidance 
+
+!EC 60068-2-48: 19&2, Environmental testing - Part 2: Tests - Guidance on the application of 
+the tests of lEC Publication 68 to simulate the effects of storage 
+
+lEC 60653:1979, General considerations on ultrasonic cleaning 
+
+lEC 60695-2-2:1991 , Fire hazard testing - Part 2: Test methods - Section 2: Needle-flame test 
+
+lEC 60747-1:1983, Semiconductor devices - Discrete devices and integrated circuits - Part 1: 
+General 
+
+lEC 60748-1:1984, Semiconductor devices. Integrated circuits- Part 1: General 
+
+3 Terms, definitions and letter symbols 
+
+Reference is made to lEC 60068, lEC 60747 and lEC 60748. 
+
+4 Standard atmospheric conditions 
+
+Reference: lEC 60068-1. 
+
+Unless otherwise specified, all tests and recoveries shall be carried out under standard 
+atmospheric conditions for testing, as defined in lEC 60068-1, subclause 5.3: 
+
+temperature: 15Xto35°C; 
+
+relative humidity: 45 % to 75 %, where appropriate; 
+
+arr pressure: 86 kPa to 106 kPa (860 mbar to 1060 mbar). 
+
+All electrical measurements, as well as recoveries followed by measurements, shall, however, 
+be carried out under the atmospheric conditions: 
+
+temperature: (25 ± 5) X; 
+
+relative humidity: 45 % to 75 %, where appropriate; 
+
+air pressure: 86 kPa to 106 kPa (860 mbar to 1060 mbar). 
+
+Referee tests shall be carried out under the following standard atmospheric conditions: 
+
+temperature: (25±1)°C; 
+
+relative humidity: 48 % to 52 %; 
+
+air pressure: 86 kPa to 106 kPa (860 mbar to 1060 mbar). 
+
+
+
+IS 1 2641 : 2004 
+lEC 60749 (2002) 
+
+Before the measurements are made, the specimens shall be stored until temperature 
+equilibrium is reached. The ambient temperature during the measurements shall be stated in 
+the test report. 
+
+During measurement, the specimens shall not be exposed to draughts, illumination or other 
+influences likely to cause error. 
+
+5 External visual examination and verification of dimensions 
+
+5.1 External visual examination 
+
+5.1.1 Purpose 
+
+To verify that the physical appearance of the materials, design, construction, markings and 
+workmanship of the device are in accordance with the applicable detail specification. 
+
+5.1.2 Scope 
+
+This test is intended for the outgoing inspection from the device manufacturer's facility or as an 
+incoming user inspection. Additional requirements for the optical systems of optoelectronic 
+devices need to be specified where applicable. 
+
+5.1.3 Definition 
+
+Chip out: a void in the package material caused by an unintentional breakage. 
+
+5.1.4 Test apparatus 
+
+Apparatus used in this test shall be capable of demonstrating device conformance to the 
+applicable requirements, which may include optical equipment capable of magnification 
+between 3x and 10x and a relatively large and accessible field of view such as an illuminated 
+ring magnifier. 
+
+5.1.5 Test method 
+
+The device shall be examined under a magnification of between 3x and 10x (unless otherwise 
+specified) with a field of view sufficiently large to contain the entire device In accordance with 
+the requirements of the applicable specification and the criteria listed in 5.1.6. Where 
+adherence of foreign material is in question, devices may be subjected to a clean filtered air 
+(ionized if devices are electrostatic sensitive) stream (suction or expulsion) of 27 m/s maxi- 
+mum, and reinspected. 
+
+5.1.6 Defect criteria 
+
+Devices shall be considered defective ff they exhibit any of the following: 
+
+5.1.6.1 Device design, termination identification, markings (content, placement, and legibility), 
+materials, construction, and workmanship not in accordance with the applicable specification. 
+
+
+
+IS 1 2641 : 2004 
+lEC 60749 (2002) 
+
+5.1.6.2 Defects or damage resulting from manufacturing, handling, or testing, including the 
+following: 
+
+a) Broken packages, voids or cracks in the packages. Cracks, scratches, openings, bubbles 
+and other defects on the surface shall not be cause for failure unless they affect the 
+performance of the package or violate other criteria stated herein, such as markings, finish, 
+etc. 
+
+b) Any chip out dimension that exceeds 1,5 mm in any direction on the surface or has a depth 
+which exceeds 0,2 mm, unless otherwise specified, for example for very small packages. 
+
+c) Any chip out that exposes either sealing glass (not exposed prior to the chip out) or any 
+internal material such as lead frame or conductive layer, that is not intended to be exposed 
+by design. 
+
+5.1.6.3 Visible evidence of corrosion, contamination or breakage, broken leads, cracked seals 
+(except glass meniscus), defective (peeling, flaking, or blistering) or damaged plating. 
+Discoloration of the finish shall not be cause for failure unless there is evidence of flaking, 
+pitting, or corrosion. In the case of very small packages, more stringent requirements may be 
+called for in the relevant specification. 
+
+5.1.6.4 Leads that are not intact, or aligned in their normal location, or free of sharp or 
+unspecified lead bends, or (for ribbon leads) free of twist outside the normal lead plane. 
+
+5.1 .6.5 Leads that are not free of foreign material such as paint or other adherent deposits. 
+
+5.1.7 Information to be given in the relevant specification 
+
+The following details shall be specified in the applicable document: 
+
+a) Requirements for marking and the lead or pin identification (see 5.1 .6.1). 
+
+b) Detailed visual requirements specified in drawings. 
+
+c) Chip out dimensions if other than those specified in 5.1 .6.2 b). 
+
+5.2 Verification of dimensions 
+
+Dimensions given in the relevant specification shall be verified. 
+
+6 Electrical measurements 
+
+6.1 For environmental testing, the characteristics to be checked shall be selected from the 
+chapter "Acceptance and reliability" of the relevant part of lEC 60747 or lEC 60748; they are 
+specified for each device category. 
+
+6.2 Measurement conditions: see table "Conditions for the endurance tests" in the chapter 
+"Acceptance and reliability" of the relevant part of lEC 60747 or lEC 60748. 
+
+
+
+IS 12641 : 2004 
+lEC 60749 <2002) 
+
+
+
+6.3 Initial measurements 
+
+
+
+If upper specification limit and/or lower specification limit criteria are required only, it is left to 
+the discretion of the manufacturer whether initial measurements are made or not. Initial 
+measurements shall be made where individual values for an individual device are a criterion. 
+
+6.4 Measurements monitored during environmental testing 
+
+To be stated, where appropriate. 
+
+6.5 Final measurements 
+
+When the test is called for in the relevant specification as part of a sequence (sub-group) of 
+tests, measurements are required only at the end of the sequence. For certain tests, such as 
+solderability or lead fatigue, electrically defective devices may be used. 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+CHAPTER 2: MECHANICAL TEST METHODS 
+
+
+
+The choice of the appropriate tests depends on the type of devices and of the encapsulation. 
+The relevant specification shall state which tests are applicable. 
+
+1 Robustness of terminations 
+
+Reference: lEC 60068-2-21. 
+
+1.1 Tensile 
+
+This test shall be in accordance with Test Uai, with the following specific requirements: 
+
+In 2.6, read: 
+
+After test, examine under 3x to lOx magnification. 
+
+The device shall be rejected if there is breakage (other than seal meniscus), loosening or 
+relative motion between the lead or terminal and the device body. 
+
+1.2 Bending 
+
+This test shall be in accordance with Test Ub, with the following specific requirements: 
+
+In 4.2, Method 2 is recommended only for dual-in-line and similar packages, where the 
+configuration of the body makes it difficult or impracticable to use Method 1 . 
+
+1.3 Torsion 
+
+This test shall be in accordance with Test Uc, with the following specific requirements: 
+
+Method 
+
+Method A (severity 2) or Method B shall be used. 
+
+Failure criteria 
+
+When examining using 10x to 20x magnification after removal of the stress, any evidence of 
+breakage, other than in the seal meniscus, loosening, or relative motion between the terminal 
+lead and the device body shall be considered as a device failure. 
+
+1.4 Torque 
+
+1 .4.1 Torque test for studs 
+
+This test shall be in accordance with Test Ud, with the following specific requirements: 
+
+The device shall be considered as a failure if any of the following occurs: 
+
+- the stud breaks or elongates more than one-half the thread pitch; 
+
+- there is evidence of thread stripping or deformation of the mounting seat; 
+
+- the device fails electrical measurements after test, if applicable. 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+1.4.2 Torque test for leads - New test (called Ud2) 
+
+1.4.2.1 Object 
+
+To determine the ability of a termination to withstand twisting which may be applied during 
+inspection or servicing after installation. 
+
+1.4.2.2 Test method 
+
+The component shall be held rigidly and a torque or twist shall be applied slowly to the 
+termination being tested until the twist angle reaches 30° + 10° or the specified torque is 
+achieved, whichever condition occurs first. 
+
+The termination is then returned to its original position. A torque of 1,4 x 10-2 ± 1,4 x 10-3 N-m 
+shall be applied to the termination at a distance of 3,0 ± 0,5 mm from the body or within 1 mm 
+from the end of the termination, if it is shorter than 3 mm. 
+
+The torque shall be applied in each direction. 
+
+When the component has terminations which are formed close to the body, the torque may be 
+applied 3,0 ± 0,5 mm from the point where the terminations are formed. 
+
+1.4.2.3 Final measurements 
+
+After test, examine under 3x to lOx magnification. The component shall be rejected if there is 
+any evidence of termination breakage, loosening or relative motion between the termination 
+and the body. 
+
+1.4.2.4 Information to be given in the relevant specification 
+
+Number and selection of terminations to be tested. 
+
+2 Soldering 
+
+Reference: lEC 60068-2-20. 
+
+2.1 Solderability 
+
+This test shall be in accordance with Test Ta, with the following specific requirements: 
+
+- Ageing: 
+
+Where accelerated ageing is required by the relevant specification, "ageing 1b" is preferred. 
+Ageing 3 may be used. Ageing 1a and 2 shall not be used. 
+
+- Dewetting: (as per 4.9 of Test Ta); 
+
+This test shall not be considered mandatory except when it is required in the relevant 
+specification. 
+
+- When Method 1 is selected: 
+
+Terminals are subjected to the solder-bath method. The terminals are immersed in the bath 
+to within 1,5 mm or other distance, as specified in the relevant specification, from the 
+seating plane of the component. 
+
+NOTE When the immersion distance is closer than 1,5 mm to the seating plane of the device, then alternative 
+failure criteria may apply and shall be specified. 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+- When Method 2 is selected: 
+
+Terminals are subjected to the soldering-iron method, using the soldering-iron bit size A. The 
+distance of the soldering-iron application from the body of the component shall be as specified in 
+the relevant specification; the time or soldering-iron application shall be 3,5 ± 0,5 s. 
+
+- When Method 3 is selected: 
+
+Terminals are subjected to the solder globule method. The terminals are tested at a point 
+5 ± 1 mm from the body of the component. The wire shall be wetted with solder within 2,5 s. 
+
+Criteria for good wettir)g 
+
+When observed under 10x magnification, the dipped surface shall be covered with a smooth 
+and bright solder coating, with no more than traces (approximately 5 %) of scattered 
+imperfections such as pin-holes or non-wetted areas. These imperfections shall not be con- 
+centrated in one area. 
+
+2.2 Resistance to soldering heat 
+
+This test shall be in accordance with Test Tb, with the following specific requirements: 
+
+Method 
+
+Method 1A with an immersion time of 10 ± 1 s, or Method 1B shall be used, 
+
+2.3 Resistance of plastic encapsulated SMDs to the combined effect of moisture 
+and soldering heat 
+
+2.3.1 Object 
+
+This subclause provides a test method for assessing the resistance to soldering heat of plastic 
+encapsulated surface mount devices (SMDs). This test is destructive. 
+
+2.3.2 General description 
+
+Package cracking and electrical failure in plastic encapsulated SMDs can result when soldering 
+heat raises the vapour pressure of moisture which has been absorbed into SMDs during 
+storage. These problems are assessed. In this test method, SMDs are evaluated for heat 
+resistance after being soaked in an environment which simulates moisture being absorbed 
+while under storage in a warehouse or dry pack. 
+
+2.3.3 Test apparatus and materials 
+
+a) Humidity chamber 
+
+The humidity chamber shall provide an environment complying with the temperature and 
+relative humidity defined in item c) of 2.3,4. 
+
+b) Reflow soldering apparatus 
+
+The infra-red convection, the convection and the vapour-phase reflow soldering apparatus 
+shall provide temperature profiles complying with the conditions of soldering heat defined in 
+items d)1) and d)2) of 2.3.4. The settings of the reflow soldering apparatus shall be 
+adjusted by temperature profiling of the top surface of the specimen while it is undergoing 
+the soldering heat process, measured as shown in figure 1. 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+Adhesive agent or thin tape 
+
+Die ^ _j— «=s= ^ Thermocouple 
+
+
+
+Lead pins 
+
+
+
+
+NOTE The adhesive agent or thin tape should have good thermal conductivity. 
+
+Figure 1 - Method of measuring the temperature profile of a specimen 
+
+c) Holder 
+
+Unless otherwise detailed in the relevant specification, any board material, such as epoxy 
+fibreglass or polyimide, may be used for the holder. The specimen shall be placed on the 
+holder by the usual means and in a position as shown in figure 1. If the position of the 
+specimen, as shown in figure 1, necessitates changing the shape of terminations and 
+results in subsequent electrical measurement anomalies, a position that avoids changing 
+the shape of terminations may be chosen, and this shall be specified in the relevant 
+specification. 
+
+d) Wave-soldering apparatus 
+
+The wave-soldering apparatus shall comply with conditions given in item d)3) of 2.3.4. 
+Molten solder shall usually be flowed. 
+
+e) Solvent for vapour-phase reflow soldering 
+Perfluorocarbon (perfluoroisobutylene) shall be used. 
+
+f) Flux 
+
+Unless otherwise detailed in the relevant specification, the flux shall consist of 25 % by 
+weight of colophony in 75 % by weight of isopropyl alcohol, both as specified in appendix C 
+of I EC 60068-2-20. 
+
+g) Solder 
+
+Solder of composition as specified in appendix B of lEC 60068-2-20 shall be used. 
+
+2.3.4 Procedure 
+
+a) Initial measurements 
+
+1) Visual inspection 
+
+Visual inspection, as specified in clause 5 of chapter 1, shall be performed before the 
+test. Special attention shall be paid to external cracks and swelling, which will be looked 
+for under a magnification of 40x. 
+
+2) Electrical measurement 
+
+Electrical testing shall be performed as required by the relevant specification. 
+
+3) Internal inspection by acoustic tomography 
+
+Unless otherwise detailed in the relevant specification, internal cracks and delamination 
+in the specimen shall be inspected by acoustic tomography in accordance with 
+appendix i. 
+
+b) Drying 
+
+Unless otherwise detailed in the relevant specification, the specimen shall be baked at 
+125 °C ±5 °C for at least 24 h. 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+c) Moisture soak 
+
+Unless otherwise detailed in the relevant specification, moisture soak conditions shall be 
+selected on the basis of the packing method of the specimen {see 11.1.1 of appendix II). If 
+baking the specimen before soldering is detailed in the relevant specification, the specimen 
+shall be baked instead of being subject to moisture soak. 
+
+1) Moisture soak for dry-packed SMDs 
+
+Moisture soak conditions for dry-packed SMDs may be used as specified in method A, 
+table 1, or method B, table 2. Moisture soak conditioning for dry-packed SMDs consists 
+of two stages. The first stage of conditioning is intended to simulate moisturizing SMDs 
+before opening the dry pack/dry cabinet. The second stage of conditioning is to simulate 
+moisturizing SMDs during storage after opening the dry pack for soldering (floor life). 
+Moisture soak conditioning for dry-packed SMDs shall be selected from method A or B. 
+Method A shall be used when the relative humidity in the dry pack or dry cabinet is 
+specified by the manufacturer as being between 10 % and 30 %. Method B shall be 
+used when the relative humidity in the dry pack or dry cabinet is specified by the 
+manufacturer as being below 10 %. 
+
+i) Method A 
+
+Unless otherwise detailed in the relevant specification, the first stage of conditioning 
+A1, as shown in table 1, shall be performed. Subsequently, the second stage of 
+conditioning A2, as shown in table 1, shall be performed within 4 h of finishing the 
+first stage of conditioning (see 11.1.2.2 of appendix II). 
+
+Table 1 - Moisture soak conditions for dry-packed SMDs (method A) 
+
+
+
+Condition 
+
+
+Moisture soak 
+conditions 
+
+
+Permissible storage 
+
+conditions in the dry 
+
+pack and the dry 
+
+cabinet 
+
+
+Condition of 
+floor life 
+
+
+First-stage 
+conditioning 
+
+
+A1 
+
+
+(85 ±2) °C, (30 ± 5) % RH,. 
+168 ^0 h 
+
+
+<30 X, 30 % RH, 1 year 
+
+
+- 
+
+
+Second-stage 
+conditioning 
+
+
+A2 
+
+
+(30 ±2) °C, (70 + 5) % RH, 
+168 ^0 h 
+
+
+- 
+
+
+<30 °C, 70% RH, 168 h 
+
+
+RH: Relative hum 
+
+
+idity. 
+
+
+
+
+
+
+
+
+
+NOTE 1 The first stage of conditioning represents storage conditions in the dry pack and the dry cabinet, as well 
+as increasing relative humidity in the dry pack, by repacking the SMDs at the distributor's facility and the user's 
+inspection facility. When condition A1 is applied, the SMDs must be packed into a moisture-proof bag with 10 trays 
+and desiccants within a few weeks of drying. They may then be subjected to multiple temporary openings of the 
+moisture-proof bag (for several hours at a time). Repack and inspection of SMDs are possible while the humidity 
+indicator in the dry pack indicates less than 30% RH since SMDs will re.cover the initial condition of absorbed 
+moisture within a few days of repacking. In this case, the moisture content measurement of SMDs (see clause 11.2 
+of appendix It) is rrot needed as a moisture control of the dry pack. A check of the moisture indicator is sufficient for 
+moisture control. 
+
+NOTE 2 When moisture soak of the first-stage conditioning does not result in saturation, the soak time is 
+extended to 336 h, because SMDs in a dry pack or dry cabinet will become saturated with moisture during long-term 
+storage. When moisture soak of the first stage of conditioning reaches saturation, the soak time is shortened. 
+
+
+
+10 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+ii) Method B 
+
+
+
+The condition of moisture soak conditioning shall be selected from table 2 in 
+accordance with the condition of the floor life detailed in the relevant specification 
+(see 11.1.2.3 of appendix II). 
+
+Table 2 - Moisture soak conditions for dry-packed SMDs (method B) 
+
+
+
+
+
+Condition 
+
+
+Moisture soak conditions 
+
+
+Total conditions from balding 
+
+to dry paclting and temporary 
+
+opening of the dry pack 
+
+
+Condition of floor iife 
+
+
+B1 
+
+
+(30 ± 2) °C, (60 ± 5) % RH, 
+192 :'o' h 
+
+
+<30 °C, 60 % RH, 24 h 
+
+
+<30 °C, 60 % RH, 168 h 
+
+
+B2 
+
+
+(30 ± 2) °C. (60 ± 5) % RH, 
+96!'o' h 
+
+
+<3.0 °C, 60 % RH, 24 h 
+
+
+<30 °C, 60 % RH, 72 !i 
+
+
+B3 
+
+
+(30 ± 2) "C, (60 ± 5) % RH, 
+72 _o h 
+
+
+<30 °C, 60 % RH, 24 ii 
+
+
+<30 °C, 60 % RH, 48 h 
+
+
+84 
+
+
+(30 ± 2) °C, (60+ 5) % RH, 
+
+48 !f h 
+
+
+<30 "C, 60 % RH, 24 h 
+
+
+<30 °C, 60 % RH, 24 h 
+
+
+B5 
+
+
+(30 + 2) °C, (60 ± 5) % RH, 
+
+c +24 . 
+
+6 _o ti 
+
+
+- 
+
+
+<30 °C, 60 % RH, 6 h 
+
+
+RH: Relative humidity. 
+
+
+
+NOTE 3 IVIoisture soalc conditions from B1 to 84 consist of the first-stage conditioning (30 °C, 60 % RH, 24 h) and 
+the second-stage conditioning (floor life). 
+
+NOTE 4 Contents in the dry pack of SIVIDs, IC trays and other materials, should be fully dried just before pacl<ing 
+into the moisture-proof bag and the desiccant must be completely dry. This is because moist materials and 
+degraded desiccants give off w/ater vapour, causing the relative humidity in the dry pack to exceed 10 %. 
+The relative humidity in the dry pack should be verified by the humidity indicator and the moisture content 
+measurement of the SMDs, as shown in clause 11.2 of appendix II. 
+
+NOTE 5 Storage of SMDs in a dry cabinet instead of a dry pack is not permitted because very low relative 
+humidity cannot be obtained in a dry cabinet. 
+
+NOTE 6 The individual conditions of method B shall cover total storage condition from baking the SMDs to 
+soldering them, and this should include the duration time of room storage from baking the SMDs to packing them 
+into the dry pack, temporary opening of the dry pack and the floor life. 
+
+2) Conditions for non-dry-packed SMDs 
+
+The moisture soak condition shall be selected from table 3, in accordance with the 
+permissible limit of actual storage (see 11.1 .2.1 of appendix II). 
+
+Table 3 - IVIoisture soak conditions for non -dry-packed SMDs 
+
+
+
+Condition 
+
+
+Temperature 
+
+°C 
+
+
+Relative humidity 
+
+% 
+
+
+Duration time 
+
+h 
+
+
+Permissible limit on actual 
+storage 
+
+
+C 
+
+
+85 ± 2 
+
+
+85 + 5 
+
+
+168 ± 24 
+
+
+<30 °C, 85 % RH 
+
+
+D 
+
+
+85 + 2 
+
+
+60 + 5 
+
+
+168 + 24 
+
+
+<30 °C, 60 % RH 
+
+
+RH; Relative h 
+
+
+jmidity. 
+
+
+
+
+
+
+
+
+
+11 
+
+
+
+IS 12641 : 2004 
+lEC 60749(2002) 
+
+d) Soldering heat 
+
+Unless otherwise detailed in the relevant specification, the specimen shall be subjected to 
+soldering heat within 4 h of finishing the moisture soak or bal<ing. The method and 
+condition of soldering heat shall be selected from items d)1) to d)3) of this subclause 
+according to the relevant specification. Whichever method is chosen, the soldering heat 
+cycles shall be a minimum of one and a maximum of three. Unless otherwise detailed in the 
+relevant specification, one cycle of soldering heat shall be used. If more than one cycle is 
+selected, the specimen shall be cooled down to below 50 °C before the second, and 
+subsequent, soldering heat. 
+
+NOTE 7 If the specimen is not affected by moisture soal< and drying, which tal<es place during room storage of 
+over 4 h, a storage time exceeding 4 h following the completion of moisture soalt or the baiting may be detailed in 
+
+the relevant specification. 
+
+1 ) Method of heating by infra-red convection or convection reflow soldering 
+
+i) Preparation 
+
+The specimen shall be put on the holder. 
+
+ii) Preheating 
+
+Unless otherwise specified in the relevant specification, the specimen shall be 
+preheated at a temperature from 100 °C to 160 °C for 1 min to 2 min in the reflow 
+soldering apparatus. 
+
+iii) Solder heating 
+
+Following preheating, the temperature of the specimen shall be raised to peak 
+temperature and then lowered to room temperature. The heating condition shall be 
+selected from table 4 in accordance with the relevant specification. 
+
+NOTE 8 If the SMDs are thick and large, condition l-B should be selected, since the temperature of thick and large 
+SMDs having a large heat capacitance will not reach 220 °C during actual reflow soldering (see 11.3.1 of appendix II). 
+
+NOTE 9 Following preheating, the temperature of the specimen should follow the values as indicated in the profile 
+given in figure 11.9 or figure 11.10 of appendix II. 
+
+Table 4 - Heating condition for infra-red convection reflow 
+and convection reflow soldering 
+
+
+
+Condition 
+
+
+Time 
+
+s 
+
+
+Range of peak 
+temperature 
+
+°C 
+
+
+l-A 
+
+
+10 ± 1 
+
+
+235 to 240 
+
+
+l-B 
+
+
+10 ± 1 
+
+
+220 to 225 
+
+
+
+2) Method of heating by vapour-phase reflow soldering 
+
+i) Preparation 
+
+The specimen shall be put on the holder. 
+
+ii) Preheating 
+
+Unless otherwise specified in the relevant specification, the specimen shall be 
+preheated at a temperature from 100 °C to 160 °C for 1 min to 2 min in the vapour- 
+phase soldering apparatus. 
+
+
+
+iii) Solder heating 
+
+The temperature of the specimen shall be raised after preheating, 
+temperature of the specimen has reached 215 °C ± 5 °C, it shall be 
+for 40 s ± 4 s as shown in table 5 (refer to il.3.2 of appendix II). 
+
+
+
+When the 
+
+maintained 
+
+
+
+12 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+Table 5 - Heating condition for vapour-phase soldering 
+
+
+
+Condition 
+
+
+Temperature 
+
+
+Time 
+
+s 
+
+
+li-A 
+
+
+215 ± 5 
+
+
+40 ± 4 
+
+
+
+3) Method of heating by wave-soldering 
+
+i) Preparation 
+
+The bottom surface of the specimen shall be fixed to the holder by an adhesive 
+agent specified in the relevant specification. Unless otherwise detailed in the 
+relevant specification, flux shall not be applied to the specrmen and holder. 
+
+NOTE 10 If flux is applied, vaporization of solvent in the flux could affect the temperature rise of the specimen. 
+Flux should not, therefore, be applied to the body of the specimen and should only be applied to lead pins as 
+sparingly as possible. 
+
+NOTE 11 Where SMDs have a stand-off (height between the bottom of the SIVID body and the bottom of the lead 
+pin) of less than 0,5 mm (except lower thermal resistance SMDs with a heat sink and whose body thicl<ness 
+exceeds 2,0 mm), they should be tested by soldering heat of condition l-A. SMDs whose body thickness exceeds 
+3,0 mm are tested by soldering heat by condition l-B. Wave-soldering of conditions lll-A and lll-B should be omitted 
+because conditions l-A and l-B are more severe than conditions lll-A and lll-B for these SMDs (refer to 11.3. 3 of 
+appendix II). 
+
+ii) Preheating 
+
+Unless otherwise detailed in the relevant specification, the specimen shall be 
+preheated at a temperature of 80 °C to 140 °C for 30 s to 60 s in the soldering 
+apparatus. 
+
+iii) Solder heating 
+
+Following preheating, the specimen and the holder shall be immersed into flowirig 
+molten solder, as shown in figure 2. The immersion condition shall be selected from 
+table 6. 
+
+
+
+Holder 
+
+
+
+Specimen 
+
+
+
+
+Flowing molten 
+solder 
+
+
+
+i:iiH?Hji:!:^?i:i;i 
+
+
+
+llilllllillllll- 
+
+
+
+^ 
+
+
+
+Direction 
+
+
+
+Figure 2a - Start of immersion Figure 2b - End of immersion 
+
+Figure 2 - Heating by wave-soldering 
+
+
+
+13 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+Table 6 - Immersion conditions for wave-soldering 
+
+
+
+CortditJon 
+
+
+Temperature of solder 
+
+°C 
+
+
+Immersing time 
+
+s 
+
+
+Actual soldering 
+method 
+
+
+lll-A 
+
+
+260 + 5 
+
+
+5 ± 1 
+
+
+Single-wave 
+
+
+lll-B 
+
+
+260 ± 5 
+
+
+10 ± 1 
+
+
+Double-wave 
+
+
+
+iv) Cleaning 
+
+If the flux is applied, It shall be removed by a cleaning method detailed in the 
+relevant specification. 
+
+e) Recovery 
+
+If recovery is detailed in the relevant specification, the specimen shall be stored under 
+standard atmospheric conditions for the time given in the specification. 
+
+NOTE 12 Wave-soldering is not commonly available to the semiconductor manufacturer. Where the manufacturer 
+does not have access to such equipment, the method should be specified only by agreement between the 
+manufacturer and the customer. 
+
+f) Final measurements 
+
+1) Visual inspection, as specified in clause 5 of chapter 1, shall be performed after the 
+test. Special attention shall be paid to external cracks and swelling which will be lool<ed 
+for under a magnification of 40x. 
+
+2) Electrical measurement 
+
+Electrical testing shall be performed as required by the relevant specification. 
+
+3) internal inspection by acoustic tomography 
+
+Unless otherwise specified in the relevant specification, internal cracl<s and 
+delamination in the specimen shall be inspected by acoustic tomography in accordance 
+with appendix I. 
+
+
+
+14 
+
+
+
+IS 12641 : 2004 
+lEC 60749 <2002) 
+
+
+
+2.3.5 Information to be given in the relevant specification 
+
+
+
+a) Material of holder 
+
+b) Position of specimen on the holder 
+
+c) Composition of fiux 
+
+d) Number of test specimens 
+
+e) Item and failure criteria for initial measurement 
+
+f) Preconditioning 
+
+g) Method of moisture soak 
+h) Conditrons of drying 
+
+i) Baking conditions instead of the moisture soak 
+
+j) Method of moisture soak for dry packed SMDs 
+
+k) Period between the stages of moisture soak conditioning 
+
+!) Conditions of first-stage and second-stage conditioning 
+and whether another condition is needed 
+
+m) Soak time of the first-stage conditioning if 168 h of soak time 
+is insufficient 
+
+n) Moisture soak conditions for SMDs stored in completely 
+dried dry pack 
+
+o) Moisture soak conditions for non-dry-packed SMDs 
+
+p) Period between finish of moisture soak and soldering heat 
+
+q) Method and condition of soldering heat 
+
+r) Number of cycles of soldering heat 
+
+s) Preheat conditions for infra-red convection and convection 
+reflow soldering 
+
+t) Heating conditions for infra-red convection and convection 
+reflow soldering 
+
+u) Preheat conditions for vapour-phase reflow soldering 
+
+v) Adhesion method 
+
+w) Preheat conditions for wave-soldering 
+
+x) Cleaning method for flux 
+
+y) Recovery conditions 
+
+z) Item and failure criteria for final measurement 
+
+
+
+Subclause 
+2.3.3 
+item c 
+item c 
+item f) 
+2.3.4 
+item a 
+item b 
+item c 
+item b 
+item c 
+item c 
+item c 
+
+
+
+item c 
+item c 
+
+item c 
+
+item c 
+item d 
+item d 
+item d 
+item d 
+
+item d 
+
+item d 
+item d 
+item d 
+item d 
+item e 
+item f) 
+
+
+
+1) 
+1)i) 
+
+
+
+1)i) 
+1)i) 
+
+1)ii) 
+2) 
+
+
+
+1) 
+
+1) 
+
+2) 
+3) 
+3) 
+3) 
+
+
+
+15 
+
+
+
+IS 12641 : 2004 
+lEC 60749(2002) 
+
+
+
+Appendix I 
+
+(normative) 
+
+Methods of inspection by acoustic tomography 
+
+
+
+1.1 Object 
+
+Inspection by acoustic tomography is required by 2.3.4 in order to inspect the specrmen's initial 
+internal integrity and internal integrity anomalies subsequent to solder heating. 
+
+1.2 Equipment 
+
+An acoustic tomography unit capable of operating in the C-Scan (plane image) mode within the 
+10 MHz to 75 MHz frequency range with an accuracy of 0,5 mm2 or more in the area of plane 
+
+image. 
+
+1.3 Procedure of inspection 
+
+1.3.1 Select the highest usable ultrasonic frequency, subject to the limitations imposed by the 
+media thicknesses and acoustic characteristics, specimen configuration and transducer 
+availability, to address the interfaces to be inspected (attenuation of the signal with depth). 
+
+1.3.2 Complete transducer calibration and optimization in accordance with the manufacturer's 
+recommended procedure. 
+
+1.3.3 Bake all specimens suspected or known to have ab^sorbed water through external cracks 
+for the period and temperature required to remove all moisture. 
+
+1.3.4 Place the specimens in the acoustic tomography apparatus. Unless otherwise detailed in 
+the relevant specification, the sides, top and bottom of the specimen shall be inspected. 
+
+1.3.5 Unless otherwise detailed in the relevant specification, the focus of the ultrasonic beam 
+shall be adjusted to the first interfaces (for example the surface of the die for the top-side 
+inspection and the bottom surface of the die pad for the bottom-side inspection). If any integrity 
+anomalies remote from the first interfaces are detected, the focus shall be changed 
+accordingly. 
+
+1.3.6 Optimize the signal-to-noise response of the acoustic system and units under evaluation. 
+
+1.3.7 Complete inspection for all specimens specified in 2.3.4. 
+
+
+
+16 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+1.4 Failure criteria 
+
+1.4.1 Unless otherwise detailed in the relevant specification, the following internal integrity 
+anomalies shall be unacceptable. 
+
+a) Delamination of any area on the top surface of the die. 
+
+b) Internal resin cracking that intersects a bond wire, ball bond, or wedge bond. 
+
+c) Internal resin cracking extended to any internal feature (for example, from die pad to lead 
+finger). 
+
+d) Internal resin cracking extending more than two-thirds of the distance from any internal 
+feature to the outside of the specimen. These additional internal integrity anomalies shall 
+be unacceptable if the area and location of the delamination or crack are specified in the 
+relevant specification. 
+
+e) Wide delamination of any internal feature that intersects a bond wire, ball bond, or wedge 
+bond. 
+
+f) Wide delamination or wide internal crack that degrades an electrical or thermal 
+specification. 
+
+NOTE 1 If internal resin cracks of b), c), d) and f) above are suspected (based on acoustic tomography), polished 
+cross-sections must be made to verify the suspected sites. 
+
+NOTE 2 Internal integrity anomalies in this subclause are specified in order to avoid failures such as external 
+-cracks, electrical and thermal failures in the population of the specimens. Other integrity anomalies that may 
+generate reliability failures must be checked by other reliability tests as stated in 1.4.2. 
+
+1.4.2 Unless otherwise detailed in the relevant specification, internal integrity anomalies other 
+than a), b), c), d), e) and f) detailed in 1.4.1 may be listed as grounds for rejection. 
+
+NOTE Some internal integrity anomalies in this subclause may need to be assessed by alternative reliability tests 
+such as the climatic test of chapter 3. 
+
+t.5 Information to be given in the relevant specification 
+
+Subclause 
+
+a) Side to be inspected if different from specification 1.3.4 
+
+b) Focus of ultrasonic beam if different from specification 1.3.5 
+
+c) Area and location of delamination item e) of 1.4.1 
+
+d) Area and location of delamination or crack item f) of 1.4.1 
+
+e) Additional internal integrity anomalies to be judged as unacceptable 1.4.2 
+
+
+
+17 
+
+
+
+JS 12641 : 2004 
+lEC 60749 (2002) 
+
+Appendix II 
+
+(informative) 
+
+Details and descriptions of test method on resistance 
+of plastic encapsulated SMDs to the combined effect of moisture 
+
+and soldering heat 
+
+
+
+11.1 Description of moisture soak 
+
+11.1.1 Guidance for moisture soak 
+
+Method A and method B of moisture soak of item c) of 2.3.4 are intended to be used for dry- 
+packed SMDs, whereas conditions C and D in table 3 are intended for use with non-dry-packed 
+SMDs which have been stored under room conditions. 
+
+Where package cracking is generated by soldering heat after the moisture soak of condition C 
+or D, it is recommended that devices be dry-packed or stored in a dry atmosphere. 
+
+If the cracking is generated by solder heating after the moisture soak of method A and 
+method B, it is recommended that SMDs are pre-baked before being soldered on to the PCBs. 
+
+11.1.2 Considerations on which the condition of moisture soak is based 
+
+11.1.2.1 General description of moisture soak 
+
+The presence of moisture in SMDs is caused by diffusion of water vapour into the resin. The 
+moisture content of the resin needs to be examined, since package cracking during soldering 
+emanates from near the die pad or the die. Examples of characteristics for moisture soak at 
+85 °C, 85 % relative humidity, are shown in figure 11.1. In the case where the resin thickness 
+from the bottom surface of the package to the die pad is 1 mm, figure 11.1 indicates that over 
+168 h are needed for saturation to take place. 
+
+Moisture soak characteristics, such as that of resin A in figure 11.3, show a slow moisture soak 
+speed which is nevertheless considered significant. Figure 11.1 and figures 11.4 to 11.8 represent 
+moisture soak characteristics of resin A. 
+
+Saturation is needed for soldering heat tests in order to simulate long-time storage of, for 
+example, one year which occurs when SMDs are dry-packed or warehoused. The diffusion 
+speed of water vapour into resin depends only on temperature. Given the resin thickness as 
+defined in figure 11.2, saturating moisture time at 85 °C depends on the resin thickness 
+as shown in figure 11.3. It would appear that, for a normal SMD whose resin thickness is 
+from 0,5 mm to 1,0 mm, 168 h of moisture soak time are required. 
+
+
+
+18 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+The saturated moisture content of resin depends on temperature and relative humidity as 
+shown in figure 11.4. The relative humidity required for moisture soak can be determined from 
+figure 11.4 (for example, so that the content of moisture at 85 °C can be made to correspond 
+with the content of moisture at 30 °C, the actual storage temperature). Conditions of moisture 
+soal< for soldering heat tests are derived from figure 11.4 as shown in table 11.1. 
+
+Figure 11.5 shows the moisture content in resin at the first interface (top surface of die or 
+bottom surface of die pad) under conditions of moisture soak and real storage conditions. 
+
+
+
+
+
+
+168 h 
+
+
+
+
+Distance from back surface of SMD mm 
+
+
+
+Figure 11.1 - Process of moisture diffusion at 85 °C, 85 % RH 
+
+
+
+Resin 
+
+
+
+
+Die pad 
+
+
+
+NOTE "a" or "b": the thicker of the two is defined as the resin thickness and the top surface of the die or the 
+bottom surface of the die pad is defined as ttve first interface. 
+
+Figure 11.2 - Definition of resin thickness and the first interface 
+
+
+
+19 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+400 
+
+
+
+
+Resin thickness mm 
+
+
+
+Figure 11.3 - Moisture soak time to saturation at 85 "C 
+as a function of resin thickness 
+
+
+
+0} 
+
+E 1= 
+
+W o 
+
+
+
+storage 
+
+
+Moisture soak 
+
+
+conditions 
+
+
+conditions 
+
+
+at 30 °C 
+
+
+at 85 °C 
+
+
+
+
+:: 100 %RH 
+
+
+
+50 % RH 
+
+
+
+' 30 % RH 
+
+
+
+20 40 60 80 100 
+
+Temperature °C 
+
+
+
+Figure 11.4 - Tentperature dependence of saturated moisture content of resin 
+
+Table 11.1 - Comparison of actual storage conditions 
+and equivalent moisture soak conditions before soldering heat 
+
+
+
+Condition 
+
+
+Actual conditions of storage 
+
+
+Relative humidity for moisture 
+soal( at 85 "C 
+
+% 
+
+
+A1 
+
+
+30 "C max., 30 % RH max. 
+
+
+30 ±5 
+
+
+C 
+
+
+30 °C max., 85 % RH max. 
+
+
+85 ± 5 
+
+
+D 
+
+
+30 °C max., 60 % RH max. 
+
+
+60 ± 5 
+
+
+
+20 
+
+
+
+IS 12641 : 2004 
+lEC 60749(2002) 
+
+
+
+10 
+
+
+
+•2 
+
+
+
+
+
+
+03 o 
+
+3 E 
+
+
+
+Sro 
+
+
+
+4 - 
+
+
+
+85°C, 85%RH, 168h 
+
+
+30 "C, 85 % RH, 1 year 
+
+
+• 
+
+
+-^^ ^ 
+
+
+85X, 60%RH, 168h 
+
+-J* 
+
+
+30 °C, 60 % RH, 1 year 
+
+
+— -^ >4 1 
+
+
+85°C, 30%RH, 168h 
+
+
+~^^ 
+
+
+30 °C, 30 % RH, 1 year (storage 
+
+
+condition in dry pacl<) 
+
+
+
+0,5 1 
+
+Resin thickness mm 
+
+
+
+1,5 
+
+
+
+Figure 11.5 - Dependence of moisture content of resin at the first interface 
+on resin thickness under various soak conditions 
+
+
+
+li.1.2.2 Moisture soak conditioning - Method A 
+
+Method A of moisture soalc given in item c)1)i) of 2.3.4 is based on conditions where SiVIDs 
+are stored in a dry pacl< or dry cabinet for a long time, under permissible conditions of 30 °C, 
+30 % RH, for one year, and where the pacl<ing/cabinet can be opened temporarily any number 
+of times for a few hours at a time, provided the humidity indicator indicates below 30 % RH. 
+
+Figure 11.6 shows that the first-stage conditioning A1 and the second-stage conditioning A2 
+completely represents a floor life of 30 X, 70 % RH, 168 h after opening the dry pack even 
+though the dry pacl< is degraded into a condition of 30 % RH. 
+
+
+
+21 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+
+0,5 
+
+Resin thickness mm 
+
+
+
+Figure 11.6 - Dependence of moisture content of resin at the first interface 
+on resin thickness related to method A of moisture soak 
+
+
+
+11.1.2.3 Moisture soak conditioning - Method B 
+
+Method B of moisture soak given in item c)1)ii) of 2.3.4 is based on conditions where SMDs, 
+IC trays and other materials have been completely baked immediatel^y before dry packing and 
+the volume of dried desiccant added to the enclosure bag ensures absorption of moisture 
+diffused through the enclosure bag. Integrity of the dry pack is verified through 
+
+a) use of in situ moisture control indicators of a sensitivity that will alert for loss of enclosure 
+bag integrity; and 
+
+b) determination of SMD moisture content as shown in clause 11.2. Environmental exposure 
+time includes the time from SMD bake to dry pack, the time the dry pack may be 
+temporarily opened at the distributor's facility, and the package floor life. 
+
+Figure 11.7 shows the calculated relation between method B conditions and long-term storage at 
+elevated moisture conditions. This calculated figure indicates that conditions 81 to 85 
+demonstrate potential correlation problems for thick SMDs where the moisture content of the 
+storage environment is greater than 10 %. 
+
+In SMDs with interface to package exterior thickness greater than 1 mm, conditions 81 to 85 
+are no more severe than 30 °C, 10 % RH, for one-year storage. Therefore, if a 10 % RH 
+saturation condition at the interface is deemed to have a significant effect on the reflow 
+performance, thick SMDs assessed with method B conditions shall be stored in conditions 
+lower than 10 % RH. 
+
+Figure 11.8 provides an example of how the calculated interface moisture content of condition 
+B-tested products may not adequately replicate the calculated interface moisture content for 
+the most used environments at greater than 10 % moisture content. 
+
+
+
+22 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+10 
+
+
+
+
+
+
+B1: 30 "C, 60 % RH, 192 h after complete baking 
+B2: 30 °C, 60 % RH, 96 h after complete baking 
+B3: 30 °C, 60 % RH, 72 h after complete baking 
+04: 30 °C, 60 % RH, 48 h after complete baking 
+85: 30 °C, 60 % RH, 6 h after complete baking 
+
+
+
+
+0,5 1.0 
+
+Resin thickness mm 
+
+
+
+1.5 
+
+
+
+Figure 11.7 - Dependence of the moisture content of resin at the first interface 
+on resin thickness related to method B of moisture soak 
+
+
+
+9 
+
+
+H) 
+
+
+
+
+F 
+
+
+o 
+
+
+
+
+c 
+
+CD 
+
+
+8 
+
+m 
+
+
+r 
+
+
+"r 
+
+
+n 
+
+
+(11 
+
+
+o 
+
+
+r 
+
+
+03 
+
+
+
+
+
+5 S5 
+
+
+
+1U 
+
+
+
+
+
+
+
+
+
+
+a: 30 °C, 60 % RH, 168 h after complete baking 
+(floor life of condition 81) 
+
+
+
+
+8- 
+
+
+
+
+
+
+
+
+
+
+b: 30 X, 60 % RH, 192 ti after complete baking 
+
+
+
+
+
+
+
+
+
+
+
+
+(condition 81) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c: 30 °C, 60 % RH, 168 h after 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+storage of 30 °C, 10 % RH, 1 year 
+
+
+
+
+6- 
+
+
+
+
+
+
+
+
+> 
+
+
+d:30X, 60%RH, 168 h after 
+storage of 30 °C, 20 % RH, 1 year 
+
+^^ e:30''C, 60% RH, 168 h after 
+
+
+
+
+
+
+
+
+
+
+
+
+4- 
+
+
+
+
+
+
+
+
+
+
+^^^s. storage of 30 °C, 30 % RH, 1 year 
+
+
+
+
+9- 
+
+
+30 
+30 
+30 
+
+
+°c 
+°c, 
+
+
+30 % RH, 
+20 % RH, 
+10%RH, 
+
+
+^ y-^^^^I^~^~--— ------_ 
+
+
+
+
+
+
+1 year ^5>C"^-^-l-___ 
+
+
+
+
+
+
+1 year a ^^^^^ ■ ^ 
+
+
+
+
+n 
+
+
+1 b' ^*°*'r-- — 1, 1 
+
+
+
+0,5 1,0 
+
+Resin thickness mm 
+
+
+
+1,5 
+
+
+
+Figure 11.8 - Dependence of moisture content of resin at the first interface 
+on resin thickness related to condition B1 of method B of moisture soak 
+
+
+
+23 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+11.2 Procedure for moisture content measurement 
+
+The moisture content of a device (MCD) is often used to provide an indication of moisture 
+content in SMDs. Measurement of the MCD shall, however, be used carefully for the following 
+reasons: 
+
+- when the moisture soal< does not result in saturation, the moisture content of the resin at 
+the first interface will not be representative, since moisture distribution in SMDs may be 
+variable. For example, the surface of the SMD may contain a high level of moisture 
+whereas the inner part of the device is dry, and vice versa; 
+
+- though the moisture content of resin is equal, according to the ratio of resin in the device, 
+the MCD varies. 
+
+A procedure for measuring the moisture content of a device is described as follows: 
+
+- the device is weighed with an accuracy of 0,1 mg per device (x); 
+
+- as permitted by the absolute maximum rating of storage temperature in the relevant 
+specification, the device is dried for 24 h at 150 °C or 48 h at 125 °C; 
+
+- the device is allowed to cool down to room temperature for 30 min ± 10 min; 
+
+- the device is re-weighed (y); 
+
+- the moisture content of the device (MCD) is calculated using the following ^quatiorr: 
+
+MCD = 1 00 ( ^^^^ ) % 
+
+
+
+11.3 Soldering heat methods 
+
+II. 3.1 Temperature profile of infrared convection and convection reflow soldering 
+
+Solder heating using infrared convection or convection reflow soldering specified in d)1) 
+of 2.3.4 shall be performed according to the temperature profile shown in figure 11.9. 
+
+If the temperature of the top surface of the SMD is below 220 °C for real-life reflow soldering, 
+the lower temperature profile shown in figure 11.10 can be applied. 
+
+in order to get a good solder joint between SMDs and the PCB, the temperature of the solder 
+joint is usually required to be at least 215 °C. Since the temperatures at several points of the 
+PCB are not stable during infrared convection reflow soldering, a maximum temperature of 
+235 °C will be reached at certain solder joints in order to maintain the temperature of all solder 
+joints of all SMDs on the PCB over 215 °C. 
+
+For typical SMDs, the temperature of the top surface will reach in excess of 220 °C when the 
+temperature of the solder joints is set at 235 °C. Accordingly, the profile of figure 11.9 shall be 
+selected. 
+
+
+
+24 
+
+
+
+IS 1 2641 : 2004 
+lEC 60749 (2002) 
+
+
+
+Thick and large SMDs (over 3,0 mm in thickness and over 2 000 mm3 in volume for example) 
+with a large heat capacitance have a tendency for the temperature of the top surface not to 
+reach 220 °C under many heating conditions. Figure 11.10 should, therefore, be selected and 
+the temperature profile to be applied shall be detailed in the relevant specifications. 
+
+
+
+240 °C max. 
+235 X 
+
+
+
+
+100°Cto160°C 
+
+
+
+1 min to 2 min 
+
+
+
+Time 
+
+
+
+Figure 11.9 - Temperature profile of infrared convection and convection 
+reflow soldering (condition l-A) 
+
+
+
+225 °C max 
+
+
+
+220 X 
+
+
+
+
+100 "C to 160 X 
+
+
+
+1 min to 2 min 
+
+
+
+Time 
+
+
+
+Figure 11.10 - Temperature profile of infrared convection and 
+convection reflow soldering (condition l-B) 
+
+
+
+11.3.2 Temperature profile of vapour-phase soldering 
+
+Solder heating using the vapour-phase soldering specified in d)2) of 2.3.4 shall be performed 
+according to the temperature profile shown in figure 11.11. 
+
+
+
+25 
+
+
+
+IS 12641 : 2004 
+!EC 60749 (2002) 
+
+
+
+a> 
+
+Q. 
+
+E 
+
+
+
+215°C±5X 
+
+
+
+
+1 min to 2 min 
+
+
+
+Time 
+
+
+
+Figure 11.11 -Temperature profile of vapour-phase soldering (condition ll-A) 
+
+il.3.3 Heating method by wave-soldering 
+
+The method of immersion into a solder bath as shown in figure 11.12 does not correspond 
+exactly with real wave soldering criteria because the molten solder does not enter the gap 
+between tine PCB and tlie SMD's body during real wave-soldering. Consequently, the tem- 
+perature of the SMD during real wave-soldering is lower than that during the immersion method 
+into a solder bath. When the immersion method is performed for ICs and LSIs having a large 
+heat capacity, the device's body temperature becomes higher than that resulting from the 
+wave-soldering method, by between 10 °C and 80 °C. When SMDs are large, such as QFP and 
+QFJ, the differential could be between 50 °C and 80 °C. Consequently, the wave-soldering 
+method as shown in figure 2 of item d)3) of 2.3.4 shall be performed for the soldering heat test. 
+Pacloge cracking is generated by rapid temperature rise at the first interface during solder 
+heating. 
+
+Figure 11.13 shows the relationship between the thickness of the SMD's body and the peak 
+temperature at the first interface under each type of solder heating. In SMDs having a stand-off 
+(the height between the bottom of the SMD's body and the bottom of the lead pin) of less than 
+0,5 mm (excluding lower thermal resistance SMDs having a heat sink), if the body thickness of 
+the SMD exceeds 2,0 mm and solder heating by condition l-A is used, the wave-soldering 
+method can be omitted. Similarly, when the thickness exceeds 3,0 mm and solder heating by 
+condition l-B is used, the wave-soldering method can also be omitted. For SMDs having a 
+stand-off exceeding 0,5 mm (see figure 11.14) or having a heat sink, wave-soldering cannot be 
+omitted because their body temperature will be higher than that shown in figure 11.13. 
+
+
+
+./^ 
+
+
+
+Jig 
+
+
+
+iiiiiiiiiiiiiir 
+
+
+
+;::Molten solder : 
+
+
+
+*/ 
+
+
+
+Solder bath 
+
+
+
+Figure 11.12 - Immersion method into solder bath 
+
+
+
+26 
+
+
+
+IS 12641 : 2004 
+lEC 60749 12002) 
+
+
+
+260 
+
+
+
+IR convection and convection 
+reflow soldering (condition l-A) 
+
+
+
+
+1,5 2 2,5 
+
+Ttiickness of SMDs mm 
+
+
+
+Figure 11.13 - Relation between the infrared convection reflow soldering 
+
+and wave-soldering 
+
+
+
+PCB 
+
+
+
+Lower stand-off 
+
+
+
+
+Molten solder does not 
+enter the gap 
+
+
+
+PCB 
+
+
+
+Higher stand-off 
+
+
+
+
+Molten solder entered 
+into the gap 
+
+
+
+Figure ll.14a - Lower Figure II. 14b - Higher 
+
+NOTE The reason for the differential of the SIMD tennperature depends on the height of the stand-off. 
+
+Figure 11.14 - Temperature in the body of the SMD djurlng wave-soldering 
+
+
+
+27 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+3 Vibration (sinusoidal) 
+
+Reference: hEC 60068-2-6. 
+
+This test shall be in accordance with test Fc, with the following specific requirements: 
+
+- the body and leads of the device shall be securely clamped during the test; 
+
+- endurance by sweeping; 
+
+- acceleration: 196 m/s2 (20 gp); 
+
+- frequency range: 100 Hz to 2 000 Hz; 
+
+- number of cycles per axis: 15. 
+
+4 Shock 
+
+Reference: I EC 60068-2-27. 
+
+This test shall be in accordance with Test Ea, with the following specific requirements: 
+
+The conditions shall be selected from table 7, taking into consideration the mass of the device 
+and its internal construction. 
+
+Table 7 
+
+
+
+Peak amplitude 
+
+
+Duration 
+
+
+Waveform 
+
+
+14 700 m/s2 (1 500 gj 
+
+
+0,5 ms 
+
+
+Half-sine 
+
+
+4 900 m/s2 (500 gj 
+
+
+1,0 ms 
+
+
+Half-sine 
+
+
+980 m/s2 (100 gj 
+
+
+6,0 ms 
+
+
+Half-sine 
+
+
+
+The device shall be subjected to three successive shocks, in both directions of three mutually- 
+perpendicular axes so chosen that faults are most likely to be revealed, i.e. a total of 18 shocks 
+(see lEC 60068-2-27, subclause 5.2). 
+
+The body and leads of the device shall be securely fastened during the test. 
+
+5 Acceleration, steady state 
+
+Reference: lEC 60068-2-7. 
+
+This test shall be in accordance with Test Ga, with the following specific requirements: 
+
+Mounting 
+
+According to clause 4 of lEC 60068-2-47 the case being clamped and the leads restrained. 
+
+Procedure 
+
+Unless otherwise specified, the acceleration shall be applied for at least 1 min along one axis 
+so chosen that the force is exerted in a pull direction with respect to the die. 
+
+
+
+28 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+Severities 
+
+500 000 m/s2 (50 000 gj 
+
+300 000 m/s2 (30 000 g^) Preferred severity 
+
+200 000 m/s2 (20 000 g^) 
+
+100 000 m/s2 (10 000 g^) 
+
+50 000 m/s2 (5 000 g^) 
+
+Information to be given in the relevant specification 
+
+a) severity; 
+
+b) axes and directions of acceleration. 
+
+6 Bond strength test 
+
+6.1 General 
+
+6.1.1 Object 
+
+To measure bond strength or determine compliance witii specified bond strength requirements. 
+
+6.1.2 General description of the test 
+
+Seven test methods are described, each having its own purpose, that is: 
+
+- methods A and B are intended for testing internal bonds of a device by a direct pulling of 
+the connecting wire; 
+
+- method C is intended for bonds external to the device and consists of a peeling stress 
+exerted between the lead or terminal and the board or substrate; 
+
+- method D is intended for internal bonds and consists of a shear stress applied between a 
+die and a substrate or similar face-bonded configurations; 
+
+- methods E and F are intended for external bonds and consist of a push-off or a pull-off 
+stress exerted between a die and the substrate; 
+
+- method G is intended to test the mechanical resistance of wire bonds to a shear force. 
+
+6.1 .3 Description of the test apparatus (for all methods) 
+
+The apparatus for this test should consist of a suitable equipment for applying the specified 
+stress on the bond, lead wire or terminals as required in the specified test method. A calibrated 
+measurement and indication of the applied stress in Newtons (N) at the point of failure should 
+be provided by equipment capable of measuring stresses up to and including 100 mN with an 
+accuracy of ±2,5 mN, stresses between 100 mN and 500 mN with an accuracy of +5 mN, and 
+stresses exceeding 500 mN with an accuracy of ±2,5 % of the indicated value. 
+
+6.2 Methods A and B (see also annex A) 
+
+6.2.1 Scope 
+
+This test is intended to be applied to the wire-to-die bond, wire-to-substrate bond, or the wire- 
+to-terminal bond inside the package of wire-connected semiconductor devices bonded by 
+soldering, thermocompression, ultrasonic and other related techniques. 
+
+
+
+29 
+
+
+
+IS 1 2641 : 2004 
+lEC 60749 (2002) 
+
+6.2.2 General description of the test 
+
+6.2.2.1 iVIethod A: Wire pull (applied to bonds separately) 
+
+The wire connecting the die or substrate should be cut so as to provide two ends accessible 
+for a pull test. In the case of short wire runs, it may be necessary to cut the wire close to one 
+termination in order to allow the pull test at the opposite termination. The wire should be 
+gripped in a suitable device and simple pulling action applied to the wire or to the device 
+(with the wire clamped) in such a manner that the force is applied within 5° of the parallel to the 
+surface of the die or substrate in the case of a stitch bond. 
+
+6.2.2.2 Method B: Wire pull (applied to two bonds simultaneously) 
+
+A hook should be inserted under the lead wire connecting the die or substrate to the terminal, 
+and a pull applied to the hook with the device clamped. The pulling force is applied 
+approximately in the middle of the wire in a direction within 5° of the normal to the die or 
+substrate surface or normal to a straight line between the bonds. 
+
+6.2.2.3 The pulling force should be progressively increased until the wire or a bond breaks 
+(item a) in 6.2.2.4) or until the minimum force has been reached (item b) in 6.2.2.4). 
+
+6.2.2.4 Failure criteria 
+
+a) For determining acceptance, the value of the pulling force at which the wire or bond breaks 
+should be recorded and compared with that given in table 8 (see note). 
+
+For wire diameters not specified in table 8, the curves of figure 3 should be used to determine 
+the bond pull limit. The curves are only applicable to bond pulls normal to the die. 
+
+b) As an alternative procedure, the pulling force is increased to the specified minimum value 
+(see note). If neither the wire nor the bond is broken, the bond is considered to have 
+p^assed the test. 
+
+NOTE The pulling force should be modified where relevant (for example, for method B) by using the information 
+given in the annex. 
+
+6.2.2.5 Classification of failures 
+
+When specified, broken wires or bonds should be classified as follows: 
+
+a) wire break at neckdown point (reduction of section due to bonding process); 
+
+b) wire break at a point other than neckdown; 
+
+c) failure in bond (interface between wire and metallization) at the die; 
+
+d) failure in bond (interface between wire and metallization) at substrate, package post or any 
+point other than at the die; 
+
+e) metallization lifted from the die; 
+
+f) metallization lifted from the substrate or package post; 
+
+g) fracture of the die; 
+
+h) fracture of the substrate. 
+
+NOTE Method B is not recommended for the purpose of measuring the absolute value of the bond strength 
+(see annex A). However, It may be used for testing the bond quality on a comparative basis durirrg the manu- 
+facturing process. 
+
+
+
+30 
+
+
+
+IS 1 2641 : 2004 
+lEC 60749(2002) 
+
+
+
+Table 8 
+
+
+
+Test method 
+
+
+Wire 
+composition 
+and diameter 
+
+mm 
+
+
+Minimum pulling force P^ * 
+
+mN 
+
+
+Pre-seal 
+
+
+Post-seal and any otiier processing 
+or screening wlien applicable 
+
+
+Normal to die 
+
+
+Parallel to die 
+
+
+Normal to die 
+
+
+Parallel to die 
+
+
+A or B 
+
+
+Al 0,018 
+Au 0,018 
+
+
+15 
+20 
+
+
+25 
+30 
+
+
+10 
+
+15 
+
+
+20 
+25 
+
+
+A or B 
+
+
+Al 0,025 
+Au 0,025 
+
+
+25 
+30 
+
+
+35 
+
+40 
+
+
+15 
+25 
+
+
+25 
+35 
+
+
+A or B 
+
+
+Al 0,033 
+Au 0,033 
+
+
+30 
+40 
+
+
+40 
+50 
+
+
+20 
+30 
+
+
+30 
+40 
+
+
+A or B 
+
+
+Al 0,038 
+Au 0,038 
+
+
+35 
+
+50 
+
+
+45 
+60 
+
+
+25 
+35 
+
+
+35 
+45 
+
+
+A or B 
+
+
+Al 0,075 
+Au 0,075 
+
+
+120 
+150 
+
+
+130 
+160 
+
+
+80 
+
+120 
+
+
+90 
+130 
+
+
+* See figure A.I in annex A. 
+
+NOTE 1 For ribbon wire, use the equivalent round wire diameter that gives the same cross-sectional area as the 
+ribbon wire being tested. 
+
+NOTE 2 Care should be tal<en not to damage the bond when opening the case for the post-seal tests. 
+
+
+
+31 
+
+
+
+IS 1 2641 : 2004 
+lEC 60749 (2002) 
+
+
+
+0,04 
+
+
+0,1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+
+(0,00 
+
+
+in 
+
+
+) 
+
+
+
+
+10 
+
+
+
+
+
+
+
+
+
+
+40 
+
+
+1 000 
+
+
+^ ! i 1 
+
+
+.„i__ 
+
+
+1 — „ 
+
+
+:- 
+
+
+1 
+
+
+
+
+— :;r 
+
+
+J. i 
+
+
+
+
+,r:r 
+
+
+:zz. 
+
+
+- — 
+
+
+J 1 L ! 
+
+
+j- 
+
+
+
+
+
+
+
+
+
+
+"1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^'V 
+
+
+
+
+
+
+
+
+
+
+— 
+
+
+
+
+
+
+
+
+
+
+— 
+
+
+
+
+
+
+-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-?" 
+
+
+"" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ 
+
+
+^B 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ 
+
+
+^ 
+/ 
+
+
+7' 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ 
+
+
+V 
+
+
+
+
+
+
+CD 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/, 
+
+
+r /y 
+
+// 
+
+
+r 
+
+
+
+
+
+
+
+
+O 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+t^ 
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ / 
+
+
+f- 
+
+
+
+
+
+
+
+
+
+
+— 
+
+
+X 
+2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+— 
+
+
+E 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- — tV^ 
+
+/ / / 
+
+
+
+
+
+
+
+
+
+
+
+
+'~ 
+
+
+E 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// 
+
+/If 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3 
+Q. 
+
+■a 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JO 
+E 
+
+£ 
+
+i 10 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7 
+
+
+.V- 
+
+
+
+
+
+
+
+
+— 
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ 
+
+
+/ 
+
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+— 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+' 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ 
+
+
+/ 
+
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ 
+
+
+^A 
+
+
+/ 
+
+
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ 
+
+
+
+
+/ 
+
+
+/ 
+
+
+Curve A: gold (pre-seal) 
+
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+U'' ^ 
+
+
+/ 
+
+
+/ 
+
+
+
+
+Ci 
+
+_1 
+
+
+jrve ( 
+
+
+aluminium 
+Z\ aluminium 
+
+1 1 I 
+
+
+(pre-s£ 
+(post-E 
+
+
+sal) 
+>eal) 
+
+
+1 
+
+
+A 
+
+
+\ 1 
+
+
+
+
+
+10 100 
+
+Wire diameter (nm) 
+
+
+
+1 000 
+
+
+
+NOTE The minimum pulling rorce should be taken from table 8. This graph may be used for wire diameters not 
+
+specified in the table. 
+
+Figure 3 - Minimum bond pull limits (normal to die) 
+
+
+
+32 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+6.3 Method C 
+
+6.3.1 Scope 
+
+This test is normally intended to be applied to bonds external to the device package. 
+
+6.3.2 Method C: Bond peel 
+
+The lead or terminal and the device pacl<age should be gripped or clamped in such a manner 
+that a peeling stress is exerted with the specified angle between the lead or terminal and the 
+board or substrate. Unless otherwise specified, an angle of 90° should be used. 
+
+6.3.3 The pulling force should be progressively applied until the lead (or terminal) or the bond 
+breaks (see 6.3.4.1) or until the minimum force has been reached (see 6.3.4.2). 
+
+6.3.4 Failure criteria 
+
+6.3.4.1 For determining acceptance, the value of the pulling force at which the bond breaks 
+should be recorded and compared with that given in table 8. For wire diameters not specified in 
+table 8, the curves of figure 3 should be used to determine the bond puH limit. The curves are 
+only applicable to bond pulls normal to the die. The result of the test is valid only if the bond 
+itself is the first to fail when the pulling force is applied. Only instances in which the bond itself 
+breaks shall be counted as failures. 
+
+6.3.4.2 As an alternative procedure, the pulling force is increased to the specified minimum 
+value. If neither the lead (or terminal) nor the bond is broken, the bond is considered to have 
+passed the test. 
+
+6.3.5 Classification of failures 
+
+When specified, broken leads (or terminals) or bonds should be classified as follows: 
+
+a) lead (or terminal) break at a deformation point (weld affected region); 
+
+b) lead (or terminal) break at a point not affected by the bonding process; 
+
+c) failure in the bond interface (in the solder, or at a point of weld interface between the lead 
+(or terminal) and the board or the substrate conductor to which the bond was made); 
+
+d) conductor lifted from the board or substrate; 
+
+e) fracture within the board or substrate. 
+
+6.4 Method D 
+
+6.4.1 Scope 
+
+This test is normally intended to be applied to internal bonds between a semiconductor die and 
+a substrate to which it is attached in a face-bonded configuration. It may also be used to test 
+the bonds between a substrate and an intermediate carrier or secondary substrate on which the 
+die is mounted. 
+
+
+
+33 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+6.4.2 Method D: Bond shear (applied to flip chip) 
+
+A suitable tool or wedge should be brought in contact with the die (or carrier) at a point just 
+above the primary substrate and a force applied perpendicular to one edge of the die 
+(or carrier) and parallel to the primary substrate, to cause bond failure by shear. 
+
+6.4.3 The force should be progressively increased until the bonds breal< (see 6.4.4.1) or until 
+the minimum force (see 6.4.4.2) has been reached. 
+
+6.4.4 Failure criteria 
+
+6.4.4.1 For determining acceptance, the value of the force at which the bonds break should 
+be recorded. It should be not less than 50 mN multiplied by the number of bonds. The result 
+of the test is valid only if the bonds themselves are the first to fail when the force is applied. 
+Only instances in which the bond itself breal<s shall be counted as failures. 
+
+6.4.4.2 As an alternative procedure, the force is increased to 50 mN multiplied by the number 
+of bonds. If neither the bonds nor the substrate or die are brol<en, the bonds are considered to 
+have passed the test, 
+
+6.4.5 Classificatmn of faHures 
+
+When specified, the failures should be classified as follows: 
+
+a) failure in the bond material, or bonding pedestal, where applicable; 
+
+b) fracture in the die (or carrier) or substrate (that is, removal of a portion of the die or 
+substrate immediately under the bond); 
+
+c) lifted metallization (that is, separation of the metallization or bonding pedestal from the die 
+(or carrier] or substrate). 
+
+6.5 Methods E and F 
+
+6.5.1 Scope 
+
+These tests are intended for application to beam-lead devices. 
+
+Method E is normally intended to be applied to process control and is used on a sample of 
+semiconductor die bonded to a specially prepared substrate. Therefore, it cannot be used for 
+random sampling of production or inspection lots. 
+
+Method F is normally intended to be applied to a sample basis on beam-lead devices that have 
+been bonded to a ceramic or other suitable substrate. 
+
+6.5.2 Method E: Push-off test 
+
+A metallized substrate containing a hole should be employed. The hole, appropriately centred, 
+should be sufficiently large to provide clearance for a push tool, but not large enough to 
+interfere with the bonding areas. The push tool should be sufficiently large to minimize device 
+cracking during testing, but not large enough to contact the beam-leads in the anchor bond 
+area. 
+
+
+
+34 
+
+
+
+IS 12641 : 2004 
+lEC 60749 <2002) 
+
+The substrate should be rigidly held and the push tool inserted through the hole. The contact of 
+the push tool to the device should be made without appreciable impact (less than 0,25 mm per 
+minute). The tool is forced against the underside of the bonded device at a constant rate until 
+the force specified in 6.5.5 below is attained or a failure occurs. 
+
+6.5.3 Method F: Pull-off test 
+
+The calibrated pull-off apparatus should include a pull-off tool (for instance, an electrically 
+heated loop of nichrome wire) to make connection with a hard setting adhesive material 
+(for instance, a heat-sensitive polyvinyl acetate resin glue) on the top side of the beam-lead 
+die. Care should be taken to ensure that no adhesive flows down to the beam or under the die. 
+The substrate should be rigidly installed in the pull-off fixture and the pull-off tool should make 
+firm mechanical connection to the adhesive material. The pulling force should be applied to the 
+device within 5° of the normal and its value increased to at least that specified in 6.5.5 or until 
+the upper surface of the die is at approximately 2,5 mm above the substrate. 
+
+6.5.4 Failure criteria for both methods E and F: 
+
+a) broken semiconductor die; 
+
+b) beam lifting at a bond; 
+
+c) beam broken at a bond; 
+
+d) beam broken at the edge of the semiconductor die; 
+
+e) beam broken between a bond and the edge of the semiconductor die; 
+
+f) bond lifting from the substrate; 
+
+g) metallization lifting (separation of the metallization from either the die or a bonding pad). 
+
+
+
+6.5.5 Force to be applied (both methods) 
+
+500 mN per linear millimetre of nominal undeformed (before bonding) beam width. The bond 
+strength should be determined by dividing the breaking force by the total of the nominal beam 
+widths before bonding. 
+
+6.6 Method G; Wire ball shear test 
+
+6.6.1 Scope 
+
+Method G is intended to test the mechanical resistance of wire bonds to a shear force. It is re- 
+commended that it be used in addition to method A or B. It provides more information about the 
+robustness of the metallurgical bond since, as opposed to method A or B, it has the advantage 
+of concentrating on the bond itself rather than showing failures which are not directly linked 
+with the quality of the bond (like wire breaking at the heel, neck, or in the span). 
+
+This method provides a standard procedure for determining the shear strength of a series of 
+ball bonds made by either thermal compression or thermosonic techniques. 
+
+
+
+35 
+
+
+
+IS 12641 : 2004 
+I EC 60749 (2002) 
+
+6.6.2 General description 
+
+Bond shear is a process in which an instrument uses a chisel-shaped tool to shear or push a 
+ball or wedge bond off the bond pad (see figure 4). The force required to cause this separation 
+is recorded and is referred to as the bond shear force. The bond shear force of a gold ball 
+bond, when correlated to the diameter of the ball bond shear strength, is an indicator of the 
+quality of the metallurgical bond between the gold ball bond and the bond pad metallization, as 
+indicated in figure 5 and table 9. The bond shear force of an aluminum wedge bond, when 
+compared to the manufacturer's tensile strength of the wire, is an indicator of the integrity of 
+the weld between the aluminum wire and the bond pad metallization. 
+
+The ball bond includes the enlarged spherical or nail-head portion of the wire (provided by the 
+flame-off and first bonding operation in the thermal compression or thermosonic process, 
+or both), the underlying bonding pad and the ball bond bonding pad interfacial attachment area 
+or weld interface. 
+
+These test methods cover ball bonds made with small diameter wire (from 18 ^im to 76 |xm 
+(0,0007 in to 0,003 in)) of the type used in integrated circuits and hybrid microelectronic 
+assemblies. These test methods can be used only when the ball height and diameter are large 
+enough and adjacent interfering structures are far enough away to allow suitable placement 
+and clearance (above the bonding pad and between adjacent bonds) of the shear test ram. 
+
+The test methods are destructive. They are appropriate for use in process development or, with 
+a proper sampling plan, for process control or quality assurance. 
+
+6.6.3 Terms and definitions 
+
+6.6.3.1 Definition of sliear modes (see figure 4) 
+
+6.6.3.1.1 Mode 1 - Ball lift 
+
+Separation of the whole ball bond from the bond pad with only an imprint being left on the bond 
+pad. No intermetallic formation is evident and little, if any, disturbance of the metallization is 
+seen. 
+
+6.6.3.1.2 Mode 2 - Bond shear/Ball shear/Wedge shear 
+
+Separation of the ball above the intermetallics. Tbe intermetallics portion of the ball is left on 
+the bond pad metallization along with some gold. 
+
+6.6.3.1.3 Mode 3 - Bond pad lift 
+
+Separation between the bond pad metallization and the underlying substrate. Some bond pad 
+metallization and intermetallics remain on the ball. 
+
+
+
+36 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+6.6.3.1.4 Mode 4 - Cratering (chip-out) 
+
+Bond pad lifts, removing a portion of the substrate. Bond pad metallization and a ptjrtion of the 
+substrate are attached to the ball. 
+
+6.6.3.1.5 Mode 5a - Instrument/operator error (shear tool too high) 
+
+Condition where the shear tool removes only the topmost part of the ball or wedge bond. 
+Improper placement of sample, shear height too high, or malfunction of instrument. 
+
+6.6.3.1.6 Mode 5b - Instrument/operator error (shear tool too low) 
+
+The shear tool contacts the metallization or protective overcoat, producing an invalid shear 
+value. Improper placement of sample, shear height too low, or instrument malfunction. 
+
+
+
+37 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+
+Bond separated from 
+bonding pad 
+Little or no intemietallic 
+on pad 
+
+Bond pad intact 
+
+
+
+V/^/^y///////////A 
+
+
+
+
+Major portion of bond 
+
+attached to wire 
+
+Ball or wedge bonding 
+
+
+
+Weld area intact 
+
+
+
+Mode 1 - Bond lift 
+
+
+
+Mode 2 - Bond shear - Gold/aluminum 
+
+
+
+
+Pad metallization separated 
+from chip 
+
+
+
+- ;^-^^-^-^^^ V77777>-.J,,^^Vm 
+
+
+
+j[ 
+
+
+
+Residual pad and substrate 
+attached to bond 
+
+
+
+
+Mode 3 - Bond pad lift 
+
+
+
+Mode 4 - Cratering 
+
+
+
+
+Minor portion of bond 
+attached to wire 
+
+
+
+Bond sheared too high 
+Only portion of bond 
+removed 
+
+
+
+
+Arm contacted metallization 
+instead of bond 
+
+
+
+Bond pad separated 
+from chip 
+
+
+
+Mode 5A - Shearing skip 
+
+
+
+Mode 5B - Arm contacts specimen ■ 
+Instrument error 
+
+
+
+Figure 4 - Bond shear codes 
+
+
+
+38 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+6.6.3.2 Shear tool or arm 
+
+
+
+Tungsten carbide chisel, or equivalent, with specific angles on the bottom and back of the tool 
+to assure a shearing action. Required shear tool parameters include, but are not limited to, flat 
+shear face, sharp shearing edge, shearing width of 1,5 to 2 times the bond diameter or bond 
+length. 
+
+The shearing tool should be designed so as to prevent ploughing and drag during testing. 
+The tool should be clean and free of chips or other defects that will interfere with the shearing 
+test. 
+
+6.6.3.3 Thermosonic gold (Au) ball bond 
+
+Gold ball bond formed using a thermosonic wire bond process. 
+
+6.6.3.4 Ultrasonic aluminum (Al) wedge bond 
+
+Aluminum wedge bond or weld formed using an ultrasonic wire bonding process. 
+
+6.6.4 Equipment and material 
+
+6.6.4.1 Ball shear testing shall only be conducted using equipment having the capabilities 
+
+listed below. 
+
+a) Ball bond shear tester capable of precise placement of shearing ram (±2,54 |am or +0,10 mil) 
+above the substrate, fitted with zoom microscope (70x minimum magnification). 
+
+b) Shearing tool designed so as to prevent ploughing and drag during testing. The tool should 
+be clean and free of chips or other defects that will interfere with the shearing test. 
+
+c) Device holder for holding the device securely at horizontal level and perpendicular to the 
+shear tool during testing. The sample holder shall have adequate clamping capability during 
+the test to secure the holder and the sample. 
+
+d) The bond shear equipment shall be capable of precision placement of the shearing tool 
+(±2,54 ^im or ±0,10 mil) above the substrate. The specified distance above the topmost part 
+of the bonding surface shall insure the shear tool does not contact the surface of the die 
+and shall be less than the distance from the topmost part of the bonding surface to the 
+centre line of the ball or wedge bond. 
+
+e) An optical microscope/measurement system capable of measuring the bond diameter to 
+within ±2,5 |im or ±0,1 mil. 
+
+6.6.4.2 Calibration 
+
+Before performing the bond shear test, it must be determined that the equipment has been 
+calibrated in accordance with the manufacturer's specification and is presently in calibration. 
+Recalibration is required if the tester is moved to another location. 
+
+
+
+39 
+
+
+
+IS 12641 : 2004 
+lEC 60749 <2002) 
+
+6.6.5 Procedure 
+
+6.6.5.1 Sample size shall be a minimum specified by SPC controls for specific devices. 
+Normal sample size for process development should be a minimum of 50 random shears 
+unless otherwise specified. 
+
+6.6.5.2 This test should only be used on unmoulded samples with ball heights (>10,16 (j.m or 
+>0,4 mil) and ball spacings sufficient to allow complete and unobstructed shearing of the ball 
+bond. 
+
+6.6.5.3 Set up the test equipment according to manufacturer's instructions. Inspect shear tool 
+and replace tool if any damage is detected. 
+
+6.6.5.4 Place a test sample in the device holder in a level horizontal position perpendicular to 
+the shear tool. 
+
+6.6.5.5 Position the shear tool close to the ball (within two ball diameters) and less than one- 
+half ball height above and perpendicular to the device surface, as illustrated in modes 1 to 4 of 
+figure 4. 
+
+The bottom of the shearing tool should be maintained below the centre line of the ball and just 
+above the die pad metallization. 
+
+6.6.5.6 Activate the test button and allow the shear tool to move into the ball until the ball is 
+sheared or separates from the substrate. 
+
+6.6.5.7 Examine the sheared area, record both the shear mode (as defined in 6.6.3.1) and the 
+gram force required to shear the ball. 
+
+6.6.5.8 Repeat the test (6.6.5.3 to 6.6.5.7) for each test sample in the lot. 
+
+6.6.5.9 Calculate and record for each sample: 
+
+a) average shear force (gf)^); 
+
+b) minimum (gf); 
+
+c) maximum (gf); 
+
+d) standard deviation. 
+
+6.6.5.10 Tests determined to have interference during shear should not be included for 
+determining the average shear value. These include wire shear, improper placement of ram 
+(does not contact entire ball), and other tests which have interference during shear, 
+for example: modes 5a and 5b. 
+
+6.6.5.11 Using the known (or measured) ball diameter for each test sample, calculate the 
+average and minimum bond shear strength for each lot tested (average grams force/known 
+average ball size). 
+
+
+
+^' Reference is being made here to grams force (gf) instead of SI units since it is common practice to use grams 
+force in this l<ind of test. The formula to convert the grams force into Newtons is provided in the relevant tables 
+and diagrams. aq 
+
+
+
+IS 1 2641 : 2004 
+lEC 60749 (2002) 
+
+6.6.6 Acceptable test limits 
+
+6.6.6.1 Acceptable test limits for ball bonds 
+
+The ball bonds on a part shall be considered acceptable if the minimum individual and average 
+bond shear values are greater than or equal to those stated in figure 5 and table 9. 
+
+Alternate minimum bond shear values may be used if agreed to by both the part supplier and 
+the end-user (customer). 
+
+MINIMUM SHEAR VALUES 
+
+
+
+25,4 
+
+
+
+120.0 
+
+
+
+38,1 
+
+
+
+Ball bond diameter (iim) 
+50,8 63,5 76,2 88,9 101,6 
+
+
+
+114,3 127,0 
+
+
+
+
+1,5 
+
+
+
+2 2,5 3 3,5 
+
+Ball bond diameter (0,001 in) 
+
+
+
+NOTE See table 9 for exact bond shear values. 
+(1 gf = 9,81 mN, 0,001 in = 25,4 ^m) 
+
+Figure 5 - Minimum acceptable individual and average ball bond shear values 
+
+
+
+41 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+Table 9 - Minimum acceptable individual and average ball bond 
+shear values for gold ball bond on A1/A1 alloy metallization 
+
+
+
+Ball diameter 
+
+
+Minimum 
+shear average"" 
+
+
+Minimum 
+individual shear reading^) 
+
+
+fim 
+
+
+0,001 in 
+
+
+gf 
+
+(1 gf = 9,82 mN) 
+
+
+gf 
+
+(1 gf = 9,82 mN) 
+
+
+25,4 
+
+
+1 
+
+
+4,3 
+
+
+3,1 
+
+
+27,9 
+
+
+1,1 
+
+
+5,2 
+
+
+3,8 
+
+
+30,5 
+
+
+1,2 
+
+
+6,2 
+
+
+4,5 
+
+
+33,0 
+
+
+1,3 
+
+
+7,3 
+
+
+5,3 
+
+
+35,6 
+
+
+1,4 
+
+
+8,5 
+
+
+6,2 
+
+
+38,1 
+
+
+1,5 
+
+
+9,7 
+
+
+7,1 
+
+
+40,6 
+
+
+1,6 
+
+
+11,1 
+
+
+8,0 
+
+
+43,2 
+
+
+1,7 
+
+
+12,5 
+
+
+9,1 
+
+
+45,7 
+
+
+1,8 
+
+
+14,0 
+
+
+10,2 
+
+
+48,3 
+
+
+1,9 
+
+
+15,6 
+
+
+11,3 
+
+
+50,6 
+
+
+2 
+
+
+17,3 
+
+
+12,6 
+
+
+53,3 
+
+
+2,1 
+
+
+19,0 
+
+
+13,9 
+
+
+55,9 
+
+
+2,2 
+
+
+20,9 
+
+
+15.2 
+
+
+58,4 
+
+
+2,3 
+
+
+22,9 
+
+
+16,6 
+
+
+61,0 
+
+
+2,4 
+
+
+24,9 
+
+
+18,1 
+
+
+63,5 
+
+
+2,5 
+
+
+27,0 
+
+
+19,6 
+
+
+66,0 
+
+
+2,6 
+
+
+29,2 
+
+
+21,2 
+
+
+68,6 
+
+
+2,7 
+
+
+31,5 
+
+
+22,9 
+
+
+71,1 
+
+
+2,8 
+
+
+33,9 
+
+
+24,6 
+
+
+73,7 
+
+
+2,9 
+
+
+36,3 
+
+
+26,4 
+
+
+76,2 
+
+
+3 
+
+
+38,9 
+
+
+28,3 
+
+
+78,7 
+
+
+3,1 
+
+
+41,5 
+
+
+30,2 
+
+
+81.3 
+
+
+3,2 
+
+
+44,2 
+
+
+32,2 
+
+
+83,8 
+
+
+3,3 
+
+
+47,0 
+
+
+34,2 
+
+
+86,4 
+
+
+3,4 
+
+
+49,9 
+
+
+36,3 
+
+
+88,9 
+
+
+3,5 
+
+
+52,9 
+
+
+38,5 
+
+
+91,4 
+
+
+3,6 
+
+
+56,0 
+
+
+40,7 
+
+
+94,0 
+
+
+3,7 
+
+
+59,1 
+
+
+43,0 
+
+
+96,5 
+
+
+3,8 
+
+
+62,4 
+
+
+45,4 
+
+
+99,1 
+
+
+3,9 
+
+
+65,7 
+
+
+47,8 
+
+
+101,6 
+
+
+4 
+
+
+69,1 
+
+
+50,3 
+
+
+104,1 
+
+
+4,1 
+
+
+72,6 
+
+
+52,8 
+
+
+106,7 
+
+
+4,2 
+
+
+76,2 
+
+
+55,4 
+
+
+109,2 
+
+
+4,3 
+
+
+79,9 
+
+
+58,1 
+
+
+111,8 
+
+
+4,4 
+
+
+83,6 
+
+
+60,8 
+
+
+114,3 
+
+
+4,5 
+
+
+87,5 
+
+
+63,6 
+
+
+116,8 
+
+
+4,6 
+
+
+91,4 
+
+
+66,5 
+
+
+119,4 
+
+
+4,7 
+
+
+95,4 
+
+
+69,4 
+
+
+121,9 
+
+
+4,8 
+
+
+99,5 
+
+
+72,4 
+
+
+124,5 
+
+
+4,9 
+
+
+103,7 
+
+
+75,4 
+
+
+127,0 
+
+
+5 
+
+
+108,0 
+
+
+78,5 
+
+
+1) Average based on 5,5 gf/(0,001 ln)2 which is approximately 0,00853 gf/|im2 (0,0837 mN/nm2) 
+
+2) Individual minimum based on 4,0 gf/(0,001 in)2 which is approximately 0,0062 gf/|im2 (0,0608 tT\N/\in\^) 
+
+
+
+42 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+6.6.6.2 Acceptable test limits for aluminium wedge bonds 
+
+The wedge bonds on a part shall be considered acceptable if the minimum shear values are 
+equal to or greater than the manufacturer's tensile strength of the bond wire. 
+
+6.7 Information to be given in the relevant specification 
+
+When this test is required in a relevant specification, the following details should be given as 
+far as they are applicable: 
+
+- test method; 
+
+- testing procedure: force to rupture or predetermined value of the applied force; 
+
+- minimum bond strength; 
+
+- number and selection of bonds to be tested on each device and number of devices; 
+
+- for test method C, angle of the bond peel if other than 90° and corresponding minimum 
+bond strength. 
+
+7 Die shear strength test 
+
+7.1 Object 
+
+The object of the die shear strength test is to determine the integrity of materials and 
+procfidures used to attach semiconductor dies or passive elements to package headers or 
+other substrates. 
+
+NOTE This determination is based on a measure of the force applied to the die or to the element, and. If a failure 
+occurs, the type of failure resulting from the application of force and the visual appearance of the residual die attach 
+media and the header/substrate metallization. This method Is not applicable for die areas greater than 10 mm^. 
+
+7.2 Description of the test apparatus 
+
+The apparatus for this test shall consist of a load applying instrument in the form of a linear 
+motion force-applying instrument or a circular dynamometer with a lever arm. In addition it shall 
+have the following: 
+
+a) a contact tool which applies a uniform load to the edge of the die, perpendicular to the die 
+mounting plane of the package or substrate (see figure 8). A compliant material on the 
+contact tool may be used to ensure that the load is applied uniformly (see figure 6); 
+
+b) an accuracy of 5 % of full scale or ±0,5 N whichever is the greater tolerance; 
+
+c) a means of indicating the load applied; 
+
+d) a facility, fitted with suitable light source, to allow visual observation (e.g. at lOx 
+magnification) of the die and contact tool during testing; 
+
+e) a fixture with rotational capability relative to the die contact tool and package/substrate 
+holding fixture to allow line contact of the tool along the whole edge of the die from end to 
+end (see figure 7). 
+
+7.3 Test method 
+
+A force sufficient to shear the die from its mounting or equal to twice the minimum specified 
+shear strength (see 7.4), whichever is the smaller, shall be applied to the die using the 
+apparatus of 7.2 above with the following provisions. 
+
+
+
+43 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+a) When a linear motion force-applying instrument is used, the direction of the applied force 
+shall be parallel with the plane of the header or substrate and perpendicular to the die being 
+
+tested, 
+
+b) When a circular dynamometer with a lever arm is employed to apply the force required for 
+testing, it shall be pivoted about the lever arm axis and the motion shall be parallel with the 
+plane of the header or substrate and perpendicular to the edge of the die being tested. 
+The coatact tooling attached to the lever arm shall be at a proper distance to ensure an 
+accurate value of applied force. 
+
+c) The die contact tool shall load against an edge of the die which most closely approximates 
+a 90" angle with the base of the header or substrate to which it is bonded (see figure 8). 
+
+d) After initial contact with the die edge and during the application of force, the contact tool 
+shall not move vertically with respect to the die such that contact is made with the 
+header/substrate or die attach media, if the tool rides over the die, a new die may be 
+substituted or the die may be repositioned, provided that the requirements of item c) in 7.3 
+
+are met. 
+
+7.4 Failure criteria 
+
+The strength of attachment of a die shall be considered to have failed the test if any of the 
+following criteria exists: 
+
+a) Unless otherwise specified in the relevant specification, die separation at a force not 
+greater than the following: 
+
+1) 4,1 mm2 < die area < 10 mm2: 25 N; 
+
+2) die area < 4,1 mm2: 6,1 N per mm2 of die area; 
+
+3) die area > 10 mm2; Not applicable (see 7,1); 
+
+b) die separation at a force less than 1,25 times that in a) above and evidence of less than 
+50 % adhesion of the die attach medium to the die; 
+
+c) die separation at a force less than 2 times that in a) above and evidence of less than 10 % 
+adhesion of the die attach medium to the die. 
+
+NOTE Residual die material attached In discrete areas of the die attach medium should be considered as 
+evidence of such adhesion. 
+
+7.5 Requirements 
+
+When specified, the force required to achieve separation and the category of the separation 
+shall be recorded. 
+
+7.5.1 Categories of separation 
+
+a) Shearing of die with residual die material remaining. 
+
+b) Separation of die from die attach medium. 
+
+c) Separation of die and die attach medium from package. 
+
+7.6 information to be given in the relevant specification 
+
+When this test is required in the relevant specification, the following details shall be given: 
+
+- minimum die attach strength if other than that given by the expressions in item a) of 7.4; 
+
+- number of devices to be tested and acceptance criteria; 
+
+- requirements for data recording, when applicable (see 7.5). 
+
+
+
+44 
+
+
+
+Contact 
+tool 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+Direction 
+of force 
+
+
+
+
+Contact 
+tool 
+
+
+
+Compliant 
+material 
+
+NOTE A compliant interface on thie contact tool distributes the load to the irregular edge of the die. 
+Figure 6 - Compliant interface on contact tool (plane view) 
+
+
+
+v. 
+
+
+
+Contact 
+tool 
+
+
+
+
+z 
+
+
+
+v^ 
+
+
+
+
+Die 
+
+
+
+Die 
+
+
+
+Contact 
+tool 
+
+
+
+NOTE The die contact tool or the device may be rotated to ensure parallel alignment. 
+
+Figure 7 - Alignment of tool with die (p(ane view) 
+
+
+
+
+Contact 
+tool 
+
+
+
+Direction 
+of force 
+
+
+
+NOTE The contact tool is loaded against the edge of the die which is perpendicular to the header/substrate. 
+Figure 8 - Choice of die edge for application of contact tool (elevation) 
+
+
+
+45 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+CHAPTER 3: CLIMATIC TEST METHODS 
+
+
+
+The choice of the appropriate tests depends on the type of devices and of the encapsulation. 
+The relevant specification shall state which tests are applicable. 
+
+Tenrperatures shall be chosen: 
+
+- for discrete devices from lEC 60747-1, chapter 4, clause 5; 
+
+- for integrated circuits from lEC 60748-1 , chapter 4, clause 5. 
+
+1 Change of temperature 
+
+Reference.- lEC 60068-2-14. 
+
+1.1 Rapid change of temperature: two-chamber method 
+
+This test shall be in accordance with Test Na, with the following specific requirements: 
+
+- the use of a single test chamber that meets the specified conditions is permissible; 
+
+- the capacity of each chamber and the loading should be such that the specified exposure 
+temperature will be reached within 2 min after the specimens are introduced into the 
+chamber; 
+
+- the thermal time constant of the test specimen and its carrier shall be taken into account; 
+
+- low-temperature Tp,: the minimum storage temperature of the semiconductor device*; 
+
+- high temperature Tq: the maximum storage temperature of the semiconductor device*; 
+
+- duration of the exposure fi: 10 min if the exposure temperature has been reached by the 
+specimen within 3 min, or 10 min after thermal equilibrium of the specimen has been 
+reached in other cases. Thermal equilibrium of the specimen shall be reached, in any case, 
+in not more than 20 min; 
+
+- the use of automatic equipment is permitted, in which case the transition time t2 shall be 
+less than 1 min; otherwise the standard transition time (2 min to 3 min) shall apply; 
+
+- initial measurements: 
+
+mechanical tests: none, 
+
+electrical tests: as given in the relevant specification; 
+
+- final measurements: 
+
+• electrical tests to be the same as for endurance tests, and an external visual 
+examination is to be performed for evidence of cracks, breaks, loose parts. 
+
+
+
+The tolerances for these temperatures should be such that the rated values are not exceeded. 
+
+46 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+1.2 Rapid change of temperature: two-fluid-bath method 
+
+This test shall be in accordance with Test Nc, with the following specific requirements: 
+
+Preferred temperatures (appropriate liquids for the temperature range should be chosen): 
+
+- 0X/+100X 
+
+- 55°C/+125°C 
+
+- 65X/+150'C 
+
+- 65 °C/+200 °C 
+
+- Tsigmin/Istgrnax 
+
+2 Storage (at high temperature) 
+
+Reference: lEC 60068-2-48. 
+
+The specimens shall be stored at the maximum storage temperature (Tstgmax) as given in the 
+relevant specification. Unless otherwise specified in the relevant specification, the duration of 
+the test shall be selected from those given in lEC 60747-1, chapter VII, section three, 
+subclause 2.2.1, for discrete devices and, for integrated circuits, in lEC 60748-1, chapter VII, 
+section three, subclause 2.2.1. 
+
+After the test, the measurements specified in the relevant specification shall be performed. 
+
+3 Low air pressure 
+
+Reference: I EC 60068-2-13. 
+
+This test shall be in accordance with Test M, with the following specific requirements: 
+
+Unless otherwise specified, this test applies only to devices with operating voltages greater 
+than 1 000 V. 
+
+a) pre-conditioning: none; 
+
+b) initial measurements: as specified in the relevant specification; 
+
+c) the specified maximum voltage shall be applied to specified terminals from the start of the 
+test (that is, before pressure reduction starts); 
+
+d) pressure: 1 kPa (10 mbar), 4,4 kPa (44 mbar) or 60 kPa (600 mbar); duration: 1 min; 
+
+e) not applicable; 
+
+f) during the test, additional leakage current caused by partial breakdown shall be monitored. 
+Visual examination may give additional information; 
+
+g) recovery: 1 h to 2 h at standard atmospheric conditions for testing (see chapter I, clause 4 
+in this publication); 
+
+h) final measurements, as specified in the relevant specification. 
+
+
+
+47 
+
+
+
+IS 12641 : 2004 
+lEC 60749 {2A02) 
+
+
+
+4A Damp heat, steady state 
+
+Reference: lEC 60068-2-3. 
+
+This test shall be in accordance with Test Ca, with the following specific requirements: 
+
+4A.1 Amend clause 1 of Test Ca to read: 
+
+1. Object: To assess, using unsaturated damp heat, the external aspect (such as surface 
+finish) of semiconductor devices. 
+
+4A.2 Amend clause 6 of Test Ca to read: 
+
+6 Information to be given in the detail specification 
+
+a) Pre-conditioning procedure: none. 
+
+b) Checks to be made prior to the test: 
+
+- mechanical tests: none; 
+
+- electrical tests: none; 
+
+- visual examination. 
+
+c) Prior to the introduction of the device into the chamber, the device shall be heated to a 
+temperature greater than that of the chamber, so as to avoid condensation on the device; 
+as an alternative, the chamber may be brought to ambient temperature prior to introduction 
+of devices into it. 
+
+d) Severities: 10, 21 or 56 days: 21 and 56 days to be preferred. 
+
+e) Loading (electrical operation) during conditioning: none. 
+
+f) Electrical and mechanical checks to be made during conditioning and the period(s) after 
+which they should be performed: none. 
+
+g) Special precautions regarding the removal of surface moisture, if applicable. 
+
+h) Recovery: upon completion of the conditioning, and prior to the final measurements, the 
+specimens shall be subjected to standard atmospheric conditions for testing (see chapter 1, 
+clause 4) for no less than 1 h and no more than 2 h, unless otherwise stated in the detail 
+specification. 
+
+i) Checks to be made after recovery: electrical tests as called for in the detail specification 
+are to be performed within 24 h. When stated in the detail specification, visual examination 
+for corrosion and legibility of marking is to be performed. 
+
+NOTE 1 This test should not be used to assess the internal aspect of semiconductor devices. 
+
+NOTE 2 The vapour pressure associated with this test is of the order of 70 hPa. 
+
+4B Damp heat, steady state, accelerated 
+
+4B.1 Object 
+
+This steady-state damp heat test is performed to assess, in an accelerated manner, the 
+resistance of non-cavity or epoxy-sealed cavity devices to the degradation due to damp heat 
+and to assess the effect of damp heat when combined with bias. This test is not intended to 
+assess external effects of corrosion. 
+
+NOTE Non-cavity device: see definition in chapter I, clause 1 of this standard. 
+
+
+
+48 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+4B.2 General description 
+
+This test subjects the specimens to high levels of unsaturated damp heat for periods of 168 h 
+to 1 000 h, depending on the severity. If specified, bias voltage is applied. 
+
+Degradation results from absorption of water vapour by the encapsulation materials and 
+presence of moisture films or penetration of moisture along physical junctions. 
+
+4B.3 Testing chamber 
+
+The chamber shall be so constructed that: 
+
+- the temperature and humidity of the chamber are monitored by means of sensing devices 
+located in the working space; 
+
+- the temperature and relative humidity in the working space are uniform and maintained at 
+±2 °C of the specified temperature and ±5 % of the specified relative humidity; 
+
+NOTE The temperature tolerance of ±2 °C is intended to take account of absolute errors in the measurement, 
+slow changes of temperature and temperature variations of the working space. It is necessary to keep short 
+
+term fluctuation within ±0,5 °C to maintain the required humidity. 
+
+- condensed water is continuously drained from the chamber and not used again until it has 
+been repurified; 
+
+- condensed water cannot fall on the specimens. 
+
+The supply water shall have a resistivity not less than 500 i^m. 
+
+
+
+4B.4 Severities 
+
+
+
+Table 10 
+
+
+
+Test conditions 
+
+(see note) 
+
+
+Duration 
+
+
+Temperature 
+
+
+Relative humidity 
+
+
+Severity 1 
+
+
+Severity 2 
+
+
+Severity 3 
+
+
+Severity 4 
+
+
+Severity 5 
+
+
+85 ± 2 °C 
+
+
+85 + 5 % 
+
+
+1&8h+ 16 h 
+
+
+504 h + 48 h 
+
+
+1000 h + 96h 
+
+
+2000 h ± 192 h 
+
+
+5000 h + 432 h 
+
+
+NOTE The resulting vapour pressure is of the order of 500 hPa. 
+
+
+
+48.5 Bias voltage 
+
+a) When specified, the specimen shall have a voltage bias applied during exposure. 
+Guidelines for determining the appropriate circuit configuration for bias applications are 
+listed below in descending order of importance (see note): 
+
+- power as small as possible; 
+
+- voltage as high as possible within the operating range; 
+
+- voltage difference as high as possible between adjacent metallization lines on the die 
+(for example, in the case of digital devices, adjacent inputs for the same gate would be 
+high and low). 
+
+NOTE The highest stress conditions correspond to zero power, maximum allowed voltage to the device within 
+the operating range and maximum allowed voltage between adjacent metallization lines on the die. 
+
+Where the dissipation of the devices cannot be reduced below 100 mW, the bias voltage shall be applied 
+intermittently. The on-off periods shall be specified, preferably 1 h on and 3 h off. 
+
+
+
+49 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+b) Bias voltage shall be applied to the specimens for a total time equal to the specified test 
+duration. 
+
+The total test duration, when using intermittent bias, shall be the same (that is including on 
+and off periods) as specified for the non-intermittent test. 
+
+c) The voltage bias(es) shall continue to be applied to specimens until they have cooled to 
+room temperature, unless it can be established, for the given device types and test 
+conditions, that no significant change of characteristics occurs when the device 's cooled 
+with the bias removed. 
+
+
+
+4B.6 Testing procedure 
+
+4B.6.1 Initial measurements 
+
+Prior to exposure, the specified measurements shall be made at standard atmospheric 
+conditions for testing or as specified. 
+
+4B.6.2 Conditioning 
+
+The specimens under test are placed at a minimum distance of 30 mm from the chamber 
+internal surfaces and shall not be submitted to radiant heat from the heaters. 
+
+48.6.3 Recovery 
+
+Upon completion of the conditioning, and prior to the final measurements, the specimens shall 
+be subjected to standard conditions for testing (see chapter I, clause 4) and normal 
+atmospheric pressure for no less than 1 h and no more than 2 h, unless otherwise stated in the 
+detail specification. 
+
+4B.6.4 Final measurements 
+
+The specimen shall be visually inspected and electrically and mechanically checked as 
+required in the detail specification. 
+
+Measurements may be initiated any time upon completion of the recovery period, but all 
+measurements shall be completed within 8 h after the recovery period. 
+
+4B.7 Information to be given in the detail specification 
+
+When this test is included in the relevant specification, the following details shall be given as 
+far as they are applicable: 
+
+Subclause 
+
+a) Severity 4B.4 
+
+b) Bias voltage (when specified) 4B.5 
+
+c) On-off periods, if applicable 4B.5 
+
+d) Initial measurements 48. 6.1 
+
+e) Final measurements 48.6.4 
+
+
+
+50 
+
+
+
+IS 12641 : 2004 
+lEC 60749(2002) 
+
+
+
+4C Damp heat, steady-state, highly accelerated 
+
+4C.1 Object 
+
+This steady-state damp heat test is performed with unsaturated and pressurized vapour to 
+assess, in a highly accelerated manner, the resistance of non-cavity devices to the degradation 
+due to damp heat and to assess the effect of damp heat, when combined with bias. This test is 
+not intended to assess external effects of cbrrosion. 
+
+4C.2 General description 
+
+This test subjects the specimens to very high levels of unsaturated damp heat for relatively 
+short periods. If specified, bias voltage is applied. 
+
+Test severities are determined by temperature, relative humidity and duration. Care should be 
+taken not to reach the glass transition temperature of the encapsulating material. 
+
+Degradation results from absorption of water vapour by the encapsulation materials and 
+presence of moisture films or penetration of moisture along physical junctions. 
+
+4C.3 Testing chamber 
+
+The chamber shall be a humidity/pressure vessel (autoclave) so constructed that: 
+
+- it can produce vapour pressures in excess of 1 000 hPa, without saturation and in con- 
+formance with the values given in subclause 4C.4; 
+
+- the temperature and humidity of the chamber are monitored by means of sensing devices 
+appropriately located in the chamber; 
+
+- the temperature and relative humidity in the working space are uniform and maintained 
+within the tolerances given in subclause 4C.4; 
+
+- condensed water cannot fall on the specimens; 
+
+- the water shall have a resistivity of no less than 500 Clm. 
+
+
+
+4C.4 Severities 
+
+
+
+Table i1 
+
+
+
+Variant 
+
+
+Test conditions 
+
+
+Duration 
+
+
+Temperature 
+
+
+Relative humidity 
+
+
+Severity 1 
+
+
+Severity 2 
+
+
+Severity 3 
+
+
+A 
+
+
+110 + 2 "C 
+
+
+85 ± 5 % 
+
+
+408 h 
+
+
+192 h 
+
+
+96)1 
+
+
+B 
+
+
+120±2°C 
+
+
+85 + 5 % 
+
+
+192 h 
+
+
+96 h 
+
+
+48 h 
+
+
+C 
+
+
+130 + 2 °C 
+
+
+85 + 5 % 
+
+
+96 h 
+
+
+48 h 
+
+
+24 h 
+
+
+NOTE The vapour pressures are approximately 1 200 fiPa, 1 700 hPa or 2 300 liPa for variants A, B and C 
+respectively. 
+
+
+
+51 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+4C.5 Bias voltages 
+
+a) When specified, the specimen will have a voltage bias applied during exposure, within 
+the operating range, tal<ing into account safety requirements. Guidelines for determining the 
+appropriate circuit configuration for bias appiication are listed below in descending order 
+of importance (see note): 
+
+- power as small as possible; 
+
+- voltage as high as possible; 
+
+- voltage difference as high as possible between adjacent metallization lines on the die 
+(for example,, in the case of digital devices, adjacent inputs for the same gate would be 
+HIGH and LOW). 
+
+NOTE The highest stress conditions correspond to zero power, maximum allowed voltage to the device within 
+the operating range and maximum allowed voltage between adjacent metallization lines on the die. 
+
+b) Where the dissipation of the specimens cannot be reduced below 100 mW, the bias voltage 
+should be applied intermittently. The on-off periods shall be specified, preferably 1 h on and 
+3 h off. 
+
+c) Bias voltage shall be applied to the specimens for a total time equal to the specified test 
+duration. 
+
+The total test duration, when using intermittent bias, shall be the same (that is including on 
+and off periods) as specified for the non-intermittent test. 
+
+d) The voltage bias(es) shall continue to be applied to specimens until they have cooled to 
+room temperature, unless it can be established, for the given device types and test 
+conditions, that no significant change of characteristics occurs when the device is cooled 
+with the bias removed. 
+
+
+
+4C.6 Testing procedure 
+
+4C.6.1 Initial measurements 
+
+The specimen shall be visually inspected and electrically and mechanically checked as 
+required in the detail specification. 
+
+4C.6.2 Conditioning 
+
+- The specimens under test are placed at a minimum distance of 30 mm from the chamber 
+internal surfaces and shall not be submitted to radiant heat from the heaters. 
+
+- The chamber is first heated to the temperature of boiling water and kept for 10 min at 
+atmospheric pressure. 
+
+- The chamber is then heated to the required test temperature, in such a way that the water 
+vapour remains unsaturated. 
+
+- The test duration shall be counted from the moment when pressure, humidity and 
+temperature become stabilized. Heating and stabilization shall be achieved within 3 h. 
+
+- The bias voltage is switched on after the stabilization period. 
+
+- The sources of heat and humidity shall successively be switched off, the pressure is 
+dropped and the specimens removed from the chamber within 2 h (see also 4C.5 d)). 
+
+
+
+52 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+4C.6.3 Recovery 
+
+
+
+Upon completion of the conditioning and prior to the final measurements, the specimens shall 
+be subjected to standard conditions for testing (see chapter 1, clause 4) and normal atmos- 
+pheric pressure for no less than 1 h and no more than 2 h, unless otherwise stated in the detail 
+specification. 
+
+4C.6.4 Final measurements 
+
+The specimen shall be electrically and mechanically checked as required in the detail specification. 
+
+Measurements may be initiated any time upon completion of the recovery period, but all 
+measurements shall be completed within 8 h after the recovery period. 
+
+4C.7 Information to be given in the detail specification 
+
+When the test is included in the detail specification, the following details shall be given as far 
+as they are applicable: 
+
+Subclause 
+
+a) Variant A, B or C 4C.4 
+
+b) Severity 1, 2 or 3 4C.4 
+
+c) Bias voltage 4C.5 
+
+d) On-off periods, if applicable 4C.5 
+
+e) Initial measurements 4C.6.1 
+
+f) Final measurements 4C.6.4 
+
+
+
+5 Sealing 
+
+5.1 General terms 
+
+5.1.1 Units of pressure 
+
+The International System of Units (SI) recommends the use of the pascal (Pa) as the unit of 
+pressure. The commonly used units are, however, the absolute atmosphere or the bar (where 
+1 absolute atmosphere = 1 bar = 10^ Pa). The unit used in this test method is the pascal with 
+the bar used as an alternative. 
+
+5.1.2 Standard leak rate 
+
+The standard leak rate is defined as that quantity of dry air at 25 °C in pascals (bars) cubic 
+centimeters flowing through a leak or multiple leak paths per second when the high-pressure 
+side is at 105 Pa (1 bar) and the low-pressure side is at a pressure of not greater than 102 Pa 
+(10-3 bar). The standard leak rate shall be expressed in units of pascals cubic centimetres per 
+second (bars cubic centimetres per second). 
+
+5.1.3 Measured leak rate 
+
+The measured leak rate R{He) is defined as the leak rate of a given package as measured 
+under specified conditions and employing a specified test medium. The measured leak rate 
+shall be expressed in units of pascals cubic centimetres per second (bars cubic centimetres 
+per second). For the purpose of comparison with rates determined by other methods of testing, 
+the measured leak rates must be converted to equivalent standard leak rates. 
+
+
+
+53 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+5.1.4 Equivalent standard leak rate 
+
+The equivalent standard leak rate (L) of a given package, with a measured leak rate R(He). 
+is defined as the leak rate of the same package with the same leak geometry, that would exist 
+under the standard conditions of 5.1.2. The formula in 5.4.3 (which does not apply to test 
+condition 5.3) represents the UR ratio and gives the equivalent standard leak rate (L) of the 
+package with a measured leak rate R(He). where the package volume and leak test conditioning 
+parameters influence the measured value of /^(He)- The equivalent standard leak rate shall be 
+expressed in units of units of pascals cubic centimetres per second (bars cubic centimeters per 
+second). 
+
+5.2 Bomb pressure test 
+
+Reference: lEC 60068-2-17. 
+
+This test shall be in accordance with test QI, with the following specific requirements: 
+
+- test liquid: 95 % methyl alcohol and 5 % water mixture, with addition of a detergent; 
+~ temperature of the test liquid: 25 °C ± 5 "C; 
+
+- pressure: 4,5-105 Pa (4,5 bar); 
+
+- duration of conditioning: 16 h; 
+
+- cleaning liquid: de-ionized water; 
+
+- recovery: between two days and two weeks. 
+
+NOTE The use of this test is not recommended for semiconductor devices (see annex F to lEC 60068-2-17). 
+
+5.3 Fine leak detection: radioactive krypton method 
+
+Reference: none. 
+
+5.3.1 Object 
+
+To determine the leak rate of a semiconductor device by measuring the radiation level present 
+within the device after it has been pressurized in a chamber with suitable radioactive tracer 
+gas. 
+
+This method is intended to be specified for devices which are designed to be hermetically 
+seated in glass, metal or ceramic (or combination thereof) encapsulations and is suitable for 
+equivalent standard leak rates smaller than 1 PacmS'S-'' (10-5 bar-cm^-s-'^). 
+
+5.3.2 General description 
+
+5.3.2.1 The numerical values given are applicable for krypton 85 tracer gas and for equivalent 
+standard leak rate limit in the order of 5 x 10-3 Pacm^s-i (5 x 10-8 bar-cm^s-i). The use of 
+other tracer gases would require other numerical values. 
+
+5.3.2.2 Equipment 
+
+Equipment for this test consists of a radioactive tracer activation tank and a counting station 
+with sufficient sensitivity to determine the radiation level of the tracer gas inside the device. 
+
+
+
+54 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+The equipment operates with a tracer gas mixture of dry nitrogen and krypton 85 with a 
+specified activity (minimum: 100 }j.Cicm-3)under standard atmospheric conditions. 
+
+Instructions for the use of the leal< testing equipment, as supplied by the manufacturer of the 
+equipment, shall be followed in calibrating and operating the equipment. Test results obtained 
+under non-preferred conditions can be compared with those under preferred conditions by 
+conversion through the appropriate formula given in these instructions. 
+
+5.3.2.3 Activation parameters 
+
+The activation pressure and soak time shall be determined in accordance with the following 
+equation (see note below). 
+
+Qs=-^ (1) 
+
+skPTt 
+
+where 
+
+Qs is the maximum leak rate allowable for the device to be tested, in Pa-cm^s-'' (barcm3s-i) Kr; 
+
+R is the counts per minute above the ambient background after activation if the device leak 
+rate were exactly equal to Qg. This is the reject count above the background of both the 
+counting equipment and the component if it has been through previous radioactive leak 
+tests; 
+
+s is the specific activity, in microcuries per cubic centimetres of the krypton 85 gas in the 
+activation system; 
+
+k is the overall counting efficiency of the scintillation crystal in counts per minute per one 
+microcurie of krypton 85 in the internal cavity of the specific component being evaluated. 
+This factor depends upon component configuration and dimensions of the scintillation 
+crystal. The counting efficiency shall be determined in accordance with 5.3.2.4. 
+
+where 
+
+Pe is the absolute activation pressure in pascals (bars) and P\ is the original absolute 
+interna! pressure of the devices in pascals (bars). The activation pressure (Pg) may be 
+established by specification, or if a convenient soak time (T) has been established, the 
+activation pressure (Pe) can be adjusted to satisfy equation (1); 
+
+7 is the soak time that the devices are to be activated, in hours; 
+
+t is the conversion of hours to seconds which is equal to 3 600 seconds/hour. 
+
+NOTE The complete version of equation (1) contains a factor Pq^ - (AP)^ In the numerator which is a correction 
+factor for elevation above sea-level. Pq Is the sea level absolute pressure, in pascals (bars), and AP is the 
+difference in pressures, in pascals (bars), between the actual pressure at the test station and sea-level pressure, 
+For the purposes of this test, this factor is neglected. 
+
+5.3.2.4 Determination of the counting efficiency (Ac) 
+
+The counting efficiency (k) of equation (1) shall be determined as follows. 
+
+a) A representative unit of the device type to be tested shall be provided with a tube to its 
+internal cavity and the cavity shall be backfilled through the tube with known volume and 
+specific activity of krypton 85 tracer gas and the tubulation should be sealed off. 
+
+
+
+55 
+
+
+
+IS 12641 : 2004 
+lEC 60749(2002) 
+
+b) The counts per minute in the shielded scintillation crystal of the counting station in which 
+the devices are tested shall be directly read. 
+
+From this value, the counting efficiency in counts per minute per microcurie shall be 
+calculated. 
+
+5.3.2.5 Evaluation of the surface sorption 
+
+For each type of encapsulation to be tested, the coatings and external sealants shall be 
+evaluated for surface sorption of l<rypton 85 before establishing the leak test parameters. 
+Representative samples of the devices shall be subjected to the predetermined pressure and 
+time conditions established for the device configuration, as specified in 5.3.2.2 and 5.3.2.3. 
+The count rate of the samples shall then be noted every 10 min, until it becomes constant. The 
+elapsed time shall be noted and is the "wait time" as specified in 5.3.4. 
+
+5.3.3 Personnel precautions 
+
+Applicable national regulations for the use of radioactive gas should be followed. 
+
+NOTE Large packages with gross leaks may become excessively radioactive. 
+
+5.3.4 Procedure 
+
+The devices shall be placed in a radioactive tracer gas activation tank. The tank shall 
+be evacuated to at least 50 Pa (5-10-'^ bar). The actual pressure and soak time shall be 
+determined in accordance with 5.3.2.3. 
+
+The devices shall be subjected to a minimum of 2-105 Pa (2 bar) absolute pressure of krypton 
+85/dry nitrogen mixture for a minimum of 12 min. The R value in counts per minute shall be not 
+less than 600 above background. The krypton 85/dry nitrogen gas mixture shall be evacuated 
+until a pressure less than 50 Pa (5 10-4 bar) exists in the activation tank. This evacuation shall 
+be complete within a maximum of 3 min. 
+
+The activation tank shall then be backfilled with air (air wash). The devices shall then be 
+removed from the activation tank and leak tested within 1 h after gas exposure. 
+
+The wait time determined by 5.3.2.5 shall be observed but in no case shall the time between 
+removal from the activation chamber and test exceed 1 h. 
+
+If the test is to be repeated on the same specimen{s), then they shall first be decontaminated 
+in a vacuum for 8 h, prior to repressurization. 
+
+
+
+The actual leak rate of the component shall be calculated using the following equation: 
+
+
+
+(actual readout in net counts per minute) x Q^ 
+
+
+
+R 
+
+where 
+
+Q is the actual leak rate, in Pa-cm3s-i (barcm3s-''); 
+
+Qs and R are defined in 5.3.2.3. 
+
+
+
+56 
+
+
+
+IS 1 2641 : 2004 
+^EC 60749 (20021 
+
+5.3.5 Specified conditions 
+
+Limit of the leak rate. 
+
+5.3.6 Gross leak detection 
+
+Subsequent to this test, the absence of gross leaks shall be checked by using one of the 
+methods described in 5.5 to 5.8. 
+
+5.4 Fine leak detection: tracer gas (helium) method with mass spectrometer 
+
+Reference: lEC 60068-2-17. 
+
+This test shall be in accordance with test Qk, with the following specific requirements. 
+
+5.4.1 General 
+
+This test is applicable to cavity devices only. 
+
+Test Qk, as described in lEC 60068-2-17, is intended to be applicable to all styles of cavity 
+packages, the mechanical robustness of which varies with size, overall wall thickness versus 
+area ratio, material, construction, etc., and hence excludes the use of a single tracer gas 
+pressure for the impregnation step. 
+
+The test shall be performed in accordance with lEC 60068-2-17, with the following specific 
+requirements. 
+
+5.4.2 Method 1: specimens not filled wtth helium during manufacture - Fixed method 
+
+Procedure: 
+
+a) Determine or assess the internal cavity free volume V (see note to table 12) and select the 
+applicable range: 
+
+<0,05 cm3 
+
+>0,05 cm3-<0,5 cm3 
+
+>0,5 cm3-<1,0 cm3 
+
+>1,0 cm3-<10 cm3 
+
+>10 cm3-<20 cm3 
+
+b) The acceptable reading on the leak rate meter is given in terms of helium leak rate f?(He)- 
+
+c) The gross leak test shall be performed after the fine leak detection. 
+
+Table 12 below lists requirements covering most application cases. For other applications, 
+the flexible method in 5.4.3 may be used. The maximum ventilation time shall be 1 h. 
+
+
+
+57 
+
+
+
+IS 12641 : 2004 
+lEC 60749(2002) 
+
+
+
+Table 12 
+
+
+
+Volume of package V 
+
+(see note) 
+
+cm3 
+
+
+Pressure exposure condition 
+
+
+"(He) 
+
+Reject limit 
+
+Pacm^s-i 
+
+(barcm^s-'') 
+
+
+Pabs 
+
+Pa (bar) 
+
+
+Minimum 
+exposure time 
+
+h 
+
+
+V< 0,05 
+
+
+5-105 (5) 
+
+
+2 
+
+
+5-10-3 (5x 10-8) 
+
+
+0,05 < V< 0,5 
+
+
+5-105 (5) 
+
+
+4 
+
+
+5-10-3 (5x 10-8) 
+
+
+G,5< V< 1,0 
+
+
+3'105 (3) 
+
+
+2 
+
+
+5-10-2 (5x 10-^ 
+
+
+^,o<v< 10,0 
+
+
+3-105 (3) 
+
+
+5 
+
+
+5-10-3 (5x 10-8) 
+
+
+10< V<20,0 
+
+
+3-105 (3) 
+
+
+10 
+
+
+5-10-3 (5 X 10-8) 
+
+
+NOTE The internal free volume is the cavity volume that can be, by design, filled v/lth gas. 
+Talking into account the selected ranges, a rough assessment of it is usually adequate. 
+
+
+
+5.4.3 
+
+
+
+Method 2: specimens not filled with helium during manufacture - 
+Flexible method 
+
+
+
+Values for pressure exposure time and ventilation time st>all be chosen such that the actual 
+measurecj tracer gas leak rate f?(He) readings obtained for the devices under test (if defective) 
+will be greater than the minimum detection sensitivity capability of the mass spectrometer. The 
+devices shall be subjected to a minimum of 2-105 Pa (2 bar) absolute of helium atmosphere. 
+If the chosen ventilation time (^2) is greater than 1 h, graphs shall be plotted to determine an 
+/R(He) value which will assure overlap with the selected gross leal< test condition. The chosen 
+values, in conjunction with the value of the internal volume of the device package to be tested 
+and the maximum equivalent standard leak rate (L) limit (as shown below or as specified in the 
+applicable specification), shall be used to calculate the measured leak rate (R(He)) limit using 
+the following formula: 
+
+
+
+where 
+
+
+
+R, 
+
+
+
+(He) 
+
+
+
+L 
+
+Pe 
+
+Po 
+Ma 
+M 
+
+h 
+h 
+
+V 
+
+
+
+R 
+
+
+
+(He) 
+
+
+
+^LPb_{Ma_\'^ 
+Po[m ] 
+
+
+
+- 
+
+
+^ 
+
+
+M 
+
+
+1/2" 
+
+
+
+
+Lt^ 
+
+
+(Ma) 
+
+
+1/2" 
+
+
+^Po 
+
+
+[VPo 
+
+
+M 
+
+
+1-e 
+
+
+
+
+
+
+
+
+1 ® 
+
+
+
+
+
+
+
+
+
+is the measured leak rate of the tracer gas (He) through the leak, in (Pa-cm3He)s-i 
+(bar-cm3He)-s-i; 
+
+is the equivalent standard leak rate, in Pacm3s-1 air (bar-cm3 air)s-i; 
+
+is the pressure of exposure, in pascals (bars); 
+
+is the atmospheric pressure, 10^ pascals (1 bar); 
+
+is the molecular weight of air, in grams (28,7); 
+
+is the molecular weight of the tracer gas (helium), in grams (4); 
+
+is the time of exposure to P^, in seconds; 
+
+is the ventilation time between release of pressure and leak detection, in seconds; 
+
+is the internal volume of the device package cavity, in cubic centimetres. 
+
+
+
+58 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+5.4.3.1 Failure criteria 
+
+
+
+Unless otherwise specified, devices with an internal cavity volume of 0,01 cm3 or less shall be 
+rejected if the equivalent standard leal< rate (L) exceeds 5 x 10-3 Pa-cma-s-t air (5 x 10-8 
+barcm^s-i air). Devices with an internal cavity volume greater than 0,01 cm3 and equal to or 
+less than 0,4 cm3 shall be rejected if the equivalent standard leak rate (L) exceeds 
+10--2 Pacm3s-'' air (10-^ barcmSs-i air). Devices with an internal cavity volume greater than 
+0,4 cm3 shall be rejected if the equivalent standard leak rate (/.) exceeds 10-1 Pa-cm3-s-i air 
+(10-6 bar-cm3-s-i air). 
+
+NOTE Failure criteria in 5.4.3.1 are given as the equivalent standard leak (air). Failure criteria in 5.4.2 (table 12) 
+are given as measured helium leal< rates. 
+
+5.4.4 Method 3: specimens filled with helium during manufacture 
+
+This test shall be performed in accordance with lEC 60068-2-17, clause E.6 of test Qk. 
+
+5.4.5 Gross leak detection 
+
+Subsequent to this test, the absence of gross leaks shall be checked by using one of the 
+methods described in 5.5 to 5.8. 
+
+5.5 Gross leaks, perfluorocarbon vapour method using electronic detection apparatus 
+
+Reference: None. 
+
+5.5.1 Object 
+
+To determine the leak rate of a semiconductor device by measuring the amount of perfluoro- 
+carbon escaping from the device after it has been pressurized in the impregnation liquid. 
+
+This method is intended to be specified for devices which are designed to be hermetically 
+sealed in glass, metal, or ceramic (or combination thereof) encapsulations and is suitable for 
+equivalent standard leak rates higher than lO-i Pa-cm3-s-i (10-6 bar-cmS-s-i). 
+
+This method is an alternative to the test described in lEC 60068-2-17, method Qc. 
+
+5.5.2 General description 
+
+The semiconductor devices are pressurized at specified conditions, removed from the pressure 
+chamber, and placed in a heated cell. The heated cell is connected to a detector that is 
+sensitive to the impregnation fluid used for the pressurization cycle. If the device has leaks, 
+it will contain fluid that will vaporize, and the vapour is then detected by the test apparatus. 
+The amount of vapour escaping per unit time is indicative of the leak rate. The test may also be 
+used on a go/no-go basis for screening purposes. 
+
+5.5.3 Test apparatus 
+
+5.5.3.1 Description 
+
+Equipment for this test consists of a vacuum/pressure chamber and a perfluorocarbon vapour 
+detector capable of detecting the presence of 0,15 |j^l of the detector fluid in the volume of the 
+test cell. 
+
+
+
+59 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+The apparatus operates using an impregnation liquid having a kinematic viscosity of the order 
+of 0,4 X 10-6 m2s-i (0,4 cSt) at room temperature, a boiling point between 75 °C and 85 °C 
+and low heat of vaporization at boiling point so as to generate vapour quickly within the 
+specimen when heated. 
+
+NOTE Commonly used liquids are perfluorocarbons. A type I fluid should be used (see table 14). 
+
+
+
+5.5.3.2 
+
+
+
+Precautions 
+
+
+
+The perfluorocarbon vapour detection apparatus shall be located at a minimum distance of 3 m 
+from the pressurization chamber. 
+
+5.5.4 Test method 
+
+The devices shall be enclosed in a vacuum/pressure chamber and the pressure reduced to 
+500 Pa to 600 Pa (5-10-3 bar to 6 10-3 bar) and maintained for 30 min to 45 min. A sufficient 
+amount of impregnation fluid shall be admitted to the pressure chamber to cover the devices. 
+The fluid shall be admitted after the vacuum period but before breaking the vacuum. The 
+devices shall then be pressurized to 5-105 to 6-105 Pa (5 bar to 6 bar). The pressure shall be 
+maintained for a period of 30 min to 45 min. If the devices will not withstand 5-105 Pa (5 bar) 
+pressure, the pressure may be lowered to a minimum of 2-105 Pa (2 bar) and the pressure 
+maintained for 2,5 h to 3 h. Upon completion of the pressurization period, the pressure shall be 
+released, the devices removed from the pressure chamber and retained in a bath of 
+impregnating fluid. When the devices are removed from the fluid, they may be air dried prior to 
+the test cycle. The drying time shall be limited to 5 min maximum. The devices shall then be 
+tested with the perfluorocarbon vapour detection system. The "preheat" time for drying the 
+external surfaces of the device shall be in accordance with table 13. The test time shall be a 
+minimum of 3,5 s, unless the device is rejected earlier. The preheat and test chambers shall be 
+at a temperature of 125 °C ± 5 °C. 
+
+Table 13 
+
+
+
+Package with internal 
+free volume 
+
+cm3 
+
+
+Preheat time 
+at 125*0 ±5-0 
+
+s 
+
+
+V< 0,010 
+
+
+<5 
+
+
+0,010 < V<QA 
+
+
+<9 
+
+
+V> 0,4 
+
+
+<13 
+
+
+NOTE Maximum preheat time can be determined by cycling a 
+device having a 0,5 mm to 1,5 mm hole and measuring the 
+maximum preheat time that can be used without permitting the 
+device to escape detection. 
+
+
+
+5.5.5 Reject criterion 
+
+Unless otherwise specified, a device that indicates a perfluorocarbon level equal to, or greater 
+than, the level indicated by 0,15 |xl of perfluorocarbon shall constitute a failure. 
+
+
+
+60 
+
+
+
+IS 12641 : 2004 
+lEC 60749(2002) 
+
+5.6 Gross leak - Perfluorocarbon - bubble detection method 
+
+Reference: lEC 60068-2-17. 
+
+As an alternative to methods 5.5, 5.7 and 5.8, the absence of gross leaks shall be checked by 
+using method 2 or 3 of test Qc of lEC 60068-2-17, as required by the detail specification. 
+
+Recommended liquids for test Qc (see table 14) are as follows. 
+
+Method 2: type II fluid 
+Method 3: Step 1 : type I fluid 
+Step 2: type II fluid 
+
+The following requirements shall apply. 
+
+a) The temperature of the bath used for method 2 shall be 125 °C ± 5 "C, unless otherwise 
+stated in the detail specification. 
+
+b) The immersion time in the bath used for method 2 shall be a minimum of 60 s, unless 
+otherwise stated in the detailed specification. 
+
+c) Observation shall be made against a dull non-reflective black background, under direct 
+lighting adjusted to provide maximum reflectability at the specific position, through a 3x 
+magnifier or stereo zoom microscope arranged for the observation of bubbles emanating 
+from the specimen immersed in the liquid. 
+
+5.7 Test condition E, weight-gain gross-leak detection 
+
+5.7.1 Object 
+
+As an alternative to methods 5.5, 5.6 and 5.8, the absence of gross leaks shall be checked by 
+the following weight-gain method. 
+
+5.7.2 Equipment 
+
+Apparatus for this test shall consist of: 
+
+a) a vacuum/pressure chamber for the evacuation and subsequent pressure bombing of 
+devices up to 6-105 Pa (6 bar) absolute up to 10 h; 
+
+b) an analytical balance capable of weighing the devices accurately to 0,1 mg; 
+
+c) a source of type III detector fluid as specified in table 14; 
+
+d) a filtration system capable of removing particles greater than 1 ^m in size from the 
+perfluorocarbon fluid; 
+
+e) suitable calibrated instruments to measure test pressures and times. 
+
+
+
+61 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+Table 14 - Physical property requirements of perfluorocarbon fluids^ 
+
+
+
+Property 
+
+
+Type 1 
+
+
+Type II 
+
+
+Type III 
+
+
+Boiling point (°C) 
+
+
+50-95 
+
+
+140-200 
+
+
+50-110 
+
+
+Surface tension (dynes/cm) at 25 °C 
+
+
+
+
+<20 
+
+
+
+
+Density at 25 °C (g/ml) 
+
+
+>1,6 
+
+
+>1,6 
+
+
+>1,6 
+
+
+Density at 125 °C (g/ml) 
+
+
+
+
+>1,5 
+
+
+
+
+Dielectric strength (V/mm) 
+
+
+>12 000 
+
+
+>12 000 
+
+
+>12 000 
+
+
+Residue (mg/g) 
+
+
+<50 
+
+
+<50 
+
+
+<50 
+
+
+Appearance 
+
+
+Clear colourless 
+
+
+3 Perfluorocarbons contain no chlorine or hydrogen. 
+
+
+
+5.7.3 Procedure 
+
+The devices shall be placed in an oven at 125 °C for 1 h minimum, after which they shall be 
+allowed to cool to room ambient temperature. Each device shall be weighed and the initial 
+weight recorded or the devices may be categorized into cells as follows. Devices having a 
+volume of <0,01 cm3 shall be categorized in cells of 0,5 mg increments and devices with 
+volume >0,01 cm3 shall be categorized in ceils of 1,0 mg increments. The devices shall be 
+placed in a vacuum/pressure chamber and the pressure reduced to 500 Pa (5 10-3 bar) and 
+maintained for 1 h except that, for devices with an internal cavity volume >0,1 cm3, this vacuum 
+cycle may be omitted. A sufficient amount of type III detector fluid shall be admitted to the 
+pressure chamber to cover the devices. When the vacuum cycle is performed, the fluid shall be 
+admitted after the 1 h period but before breaking the vacuum. The devices shall then be 
+pressurized to 5-105 Pa (5 bar absolute) minimum except that 6-105 Pa (6 bar absolute) 
+minimum shall be used when the vacuum cycle has been omitted. The pressure shall be 
+maintained for 2 h minimum. If the devices will not withstand the 5-105 Pa (5 bar absolute) test 
+pressure, the pressure may be lowered to 3-105 Pa (3 bar absolute) minimum with the vacuum 
+cycle and the pressure maintained for 10 h minimum. 
+
+Upon completion of the pressurization period, the pressure shall be released and the devices 
+removed from the pressure chamber and retained in a bath of the perfluorocarbon fluid. When 
+the devices are removed from the fluid, they shall be air dried for 2 min ± 1 min prior to 
+weighing. Transfer the devices singly to the balance and determine the weight or weight 
+category of each device. All devices shall be tested within 4 min following removal from the 
+fluid. The delta weight shall be calculated from the record of the initial weight and the post 
+weight of the device. Devices which were categorized shall be separated into two groups, one 
+group which shall be devices which shifted one cell or less and the other group which shall be 
+devices which shifted more than one cell. 
+
+5.7.4 Failure criteria 
+
+A device shall be rejected if it gains 1,0 mg or more and has an internal volume of >0,01 cm3 
+and 2,0 mg or more if the volume is >0,01 cm3. if the devices are categorized, any device 
+which gains enough weight to cause it to shift by more than one cell shall be considered a 
+reject. A device which loses weight of an amount which, if gained, would cause the device to be 
+rejected, may be re-tested after it is baked at 125 "C for a period of 8 h, 
+
+
+
+62 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+5.8 Penetrant dye gross leak detection 
+
+5.8.1 Equipment 
+
+The following apparatus shall be used for this test. 
+
+a) Ultraviolet tight source with peak radiation at approximately the frequency causing 
+maximum reflection of the dye (3650 A for Zyglo, 4935 A for Fluorescein, 5560 A for 
+Rhodamine B, etc.). 
+
+b) Pressure chamber capable of maintaining 7-105 pa (7 bar absolute). 
+
+c) Solution of fluorescent dye (such as Rhodamine B, Fluorescein; Dye-check, Zyglo, FL-50, 
+or equivalent) mixed in accordance with the manufacturer's specification. 
+
+d) A magnifier with a magnification in the range between 1,5x to 30x for dye observation. 
+
+5.8.2 This test shall be permitted only for destructive verification of devices (see 5.9). 
+The pressure chamber shall be filled with the dye solution to a depth sufficient to completely 
+cover all the devices. The devices shall be placed in the solution and the chamber pressurized 
+at 7 105 Pa (7 bar absolute) minimum for 3 h minimum. For device packages which will not 
+withstand 7-105 Pa (7 bar absolute), 4-105 Pa (4 bar absolute) minimum for 10 h may be used. 
+The devices shall then be removed and carefully washed, using a suitable solvent for the dye 
+used, followed by an air-jet dry. The devices shall then be immediately examined under the 
+magnifier using an ultraviolet light source of appropriate frequency. 
+
+5.8.3 Failure criterion 
+
+Any evidence of dye penetration into the device cavity shall constitute a failure. 
+
+5.9 Gross leak re-test 
+
+Devices which fail the gross leak test (test conditions 5.5, 5.6 or 5.7) may be re-tested 
+destructively. 
+
+If the re-test shows a device to pass, that was originally thought to be a failure, then the device 
+need not be counted as a failure in the accept number of sample size number calculations. 
+Devices which fail the fine-leak test (test methods 5.3 or 5.4) shall not be retested for 
+acceptance unless specifically permitted by the applicable acquisition document. Where a fine 
+leak re-test is permitted, the entire leak test procedure for the specified test condition shall be 
+repeated, i.e. the re-test consisting of a second observation on leak detection without a re- 
+exposure to the tracer fluid or gas under the specified test condition shall not be permissible in 
+any circumstances. Preliminary measurement to detect residual tracer gas is advisable before 
+any retest. 
+
+
+
+63 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+6 Salt mist 
+
+Reference: I EC 60068-2-11. 
+
+This test shall be in accordance with Test Ka, with the following specific requirements: 
+
+- conditioning duration: 24 h; 
+
+- recovery: the component shall be lightly brushed and washed in running tap-water...; 
+
+- final measurements, failure criteria: 
+
+evidence of flaking or pitting in the finish, when viewed with 3x to lOx magnification. 
+
+7 Thermal intermittence test 
+
+Reference: lEC 60068-2-14. 
+
+To determine whether the internal interconnection system of a semiconductor device is subject 
+to intermittent failures when subjected to a slowly changing temperature. This test is primarily 
+intended for devices having no internal cavity. It shall be in accordance with Test Nb, with the 
+following specific requirements: 
+
+- the test chamber should include provision for electrical connection to, and monitoring of, 
+device(s) under test with access to each device terminal; 
+
+- the cycle may be performed either from the specified low temperature to the specified high 
+temperature, or conversely; 
+
+- the conditions indicated in table 15 shall apply. 
+
+Table 15 
+
+
+
+
+
+Severity 
+
+
+A 
+
+
+B 
+
+
+C 
+
+
+Low temperature 7^ 
+
+
+25 X±5 X 
+
+
+Minimum operating 
+temperature 
+
+
+Minimum storage 
+temperature 
+
+
+High temperature Tg 
+
+
+125 X + S °C 
+
+
+IVIaximum operating 
+temperature 
+
+
+Maximum storage 
+temperature 
+
+
+Rate of change of temperature 
+(average over the period of 
+temperature change (see note) 
+
+
+3 °C maxtmum/minute 
+
+
+Number of cycles 
+
+
+1/2 (that is, from T^ to Tg or Tg to 7^) 
+
+
+Duration of exposure 
+
+
+i, > 1 min 
+
+
+
+- no initial, no final measurements; 
+
+- electrical checks during conditioning: 
+
+an example of parallel detection circuit is given in figure 9; other circuits (series detection, 
+constant voltage generator, etc.) are also permitted. 
+
+NOTE A faster change of temperature is acceptable provided that the time constant and the scanning rate of the 
+detector are compatible v\/ith the rate of change of temperature. 
+
+
+
+64 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+e 
+
+
+
+Constant current 
+generator 
+
+
+
+Jr 
+
+
+
+Q Relerence 
+
+
+
+Device 
+under test 
+
+
+
+Threshold 
+detector 
+
+
+
+Figure 9 - Parallel detection circuit 
+
+The test apparatus should be capable of sensing and Identifying a failed device. 
+
+The threshold detector should be set to indicate a failure at a voltage specified by the relevant 
+specification. 
+
+A failure is defined by an evidence of open-circuit at any internally connected terminal or short- 
+circuit between two leads. 
+
+After the initial change from room temperature to 7^ or Tg. device terminals should be 
+monitored at least once for each 3 °C change when the temperature is varied either from 
+minimum to maximum or from maximum to minimum (see note above). 
+
+The test conditions used for testing the continuity of each lead should be specified so that 
+minimum power dissipation is obtained, in order that the case and junction temperature will be 
+approximately equal to that of the ambient temperature. 
+
+8 Internal moisture content measurement by mass spectrometry method 
+
+8.1 Object 
+
+The purpose of this destructive test is to measure the water vapour content of gas contained in 
+a hermetically sealed package. 
+
+8.2 General description 
+
+The package to be analyzed is placed in a suitable apparatus essentially composed of a 
+vacuum opening chamber tightly connected to a mass spectrometer. 
+
+After pumping down the chamber, the package is pierced and its gaseous content is analyzed 
+for determination of its water vapour content. 
+
+
+
+65 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+8.3 Test apparatus 
+
+The main features of the apparatus are the following. 
+
+8.3.1 The temperature of the opening chamber shall be stabilized at 100 X + 5 °C. The transfer 
+passage (between the opening chamber and the mass spectrometer), the ion source and the 
+analyzer chamber shall be kept continuously at 125 °C ± 5 °C. 
+
+8.3.2 The apparatus sensitivity shall be at least ten times better than the acceptance limit 
+specified for the package. 
+
+8.3.3 The apparatus calibration shall be performed at the specified moisture limit (±20 %) 
+using a package simulator which has the capability of generating at least three different 
+volumes of gas with a tolerance of +10 %. The moisture content shall be established by the 
+standard generation techniques (i.e. two pressure, divided flow, or cryogenic method). 
+
+The calibration operation shall be performed: 
+
+- every day for spectrometer measurement calibration; 
+
+- every year for the absolute moisture generator (connected to the simulator) versus the 
+national standards. 
+
+8.3.4 The piercing action shall not modify the gaseous content to be analyzed. 
+
+8.4 Preconditioning 
+
+Cleanliness precautions shall be observed at all steps. Packages to be tested shall be 
+submitted, in the following order, to: 
+
+- sealing test (see clause 7); 
+
+- cleaning (see 10.8.3); 
+
+- prebaking for 12 h to 24 h at 125 °C under a vacuum equal to or less than 10 kPa (0,1 bar). 
+
+8.5 Conditioning 
+
+The package shall be taken from the prebake chamber and immediately put into the opening 
+chamber. The air pressure in this chamber shall then be gradually decreased. The chamber 
+and the package shall be heated at 100 °C ± 5 °C for a duration allowing them to reach the 
+stabilized specified vacuum level and temperature before performing the following 
+measurements: 
+
+a) determination of the chamber pressure increase when the gases are released. A pressure 
+rise of less than 50 % of normal invalidates the test; 
+
+b) mass spectrum scanning to detect air constituents in the package; 
+
+c) proportions (by volume) of water vapour content and other constituents if required in the 
+relevant specification. 
+
+8.6 Requirements 
+
+A package that has a water vapour content greater than the specified maximum value shall be 
+considered defective. 
+
+
+
+66 
+
+
+
+IS 12641 : 2004 
+lEC 60749 (2002) 
+
+8.7 Information to be given in the relevant specification 
+
+a) Gaseous constituents to be detected, if applicable; see item b) of 8.5. 
+
+b) Permissible proportion of water vapour; see item c) of 8.5. 
+
+c) Permissible proportion of otiier gaseous constituents, if applicable; see item c) of 8.5. 
+
+8.8 Guidance 
+
+8.8.1 General considerations 
+
+Water vapour content measurements, in the case of electronic device packages, are compli- 
+cated by two characteristics. 
+
+a) The analyzed volume is often very small (i.e. 0,01 cm3 to 0,1 cm3). 
+
+b) The specified maximum water vapour contents are usually less than 5 000 ppm V. 
+
+8.8.2 Piercing tools 
+
+Point piercing tools used shall not disturb the specified vacuum. Sharp-pointed tools actuated 
+from outside the chamber wall (via a bellows to permit the movement) should be used to pierce 
+both metal and ceramic packages. In some cases, it may be necessary to reduce the thickness 
+of the area to be pierced. 
+
+8.8.3 Recommended cleaning sequence 
+
+Five minutes ultrasonic cleaning in each of three successive baths: 
+
+- trichloroethylene; 
+
+- isopropyl alcohol; 
+~ acetone. 
+
+(See also lEC 60653.) 
+
+
+
+67 
+
+
+
+IS 12641 : 2004 
+lEC 60749 {2002) 
+
+
+
+CHAPTER 4: IVHSCELLANEOUS TEST METHODS 
+
+
+
+1 Flammability tests of plastic-encapsulated devices 
+
+1.1 Flammability (internally induced) 
+
+Reference; none. 
+
+The purpose of this test is to determine whether the device ignites due to internal heating 
+caused by excessive overloads. 
+
+The device shall be operated in free air without a heat sink and the internal electrical power 
+dissipation slowly increased from the maximum rated value until any of the following occurs: 
+
+1) an internal power dissipation equal to five times the maximum rated power dissipation at 
+25 °C is reached; in this case, the power shall be maintained for a minimum duration of 
+
+1 min; or 
+
+2) the device becomes either open-circuited or short-circuited, or its resistance increases to 
+such a high value that any further increase in power dissipation is impracticable; or 
+
+3) the device ignites. 
+
+A device shall constitute a failure only if it smoulders or ignites. 
+
+1.2 Flammability (externally induced) 
+
+Reference: lEC 60695-2-2. 
+
+This test shall be in accordance with the needle-flame test, with the following specific 
+requirements: 
+
+a) preconditioning: none; 
+
+b) number of test specimens: three, unless otherwise stated in the detail specification; 
+
+c) position of the specimen: as.per figure 1b of lEC 60695-2-2; 
+
+d) surface to be tested and point of application: as per figure 1b of lEC 60695-2-2; 
+
+e) underlying layer: paper on pinewood, as per clause 4 of lEC 60695-2-2; 
+
+f) duration of application of the flame (fg): 10 s; 
+
+g) duration of burning: 10 s; 
+
+h) extent of burning: it shall not extend over a surface significantly greater than that touched 
+by the flame during its application. 
+
+
+
+2 Permanence of marking 
+
+Reference: I EC 60068-2-45. 
+
+This test shall be in accordance with Test XA, with the following specific requirements: 
+
+Amend clause 8 of Test XA to read: 
+
+
+
+68 
+
+
+
+IS 1 2641 : 2004 
+lEC 60749 12002) 
+
+8.1 Solvents to be used: 
+
+Type B: a mixture of R113 (70 + 5 %), and isopropyl alcohol (30 ± 5 %) 
+Type C: distilled or deionized water. 
+
+8.2 Solvent temperature: 23 ± 5 °C for solvent B. 
+
+55 ± 5 °C for solvent C. 
+
+8.3 Initial measurements: not applicable, unless otherwise required in the detail specification 
+
+8.4 Conditioning: method 1. 
+
+NOTE Unless otherwise specified, one half of the specimens shall be tested with solvent B and the other half with 
+solvent C. 
+
+8.5 Rubbing material: cotton wool. 
+
+8.6 Recovery time: no less than 2 h and up to 24 h if final electrical measurements are 
+required in the relevant specification, otherwise not applicable. 
+
+8.7 Final measurements: not applicable, unless otherwise required in the detail specification. 
+
+8.8 Acceptance criteria: the marking shall remain legible (other criteria may be required in the 
+relevant specification). 
+
+
+
+69 
+
+
+
+IS 12641 : 2004 
+I EC 60749 12002} 
+
+
+
+Annex A 
+
+(normative) 
+
+Guidance 
+
+(see chapter 2, 6.2) 
+
+
+
+Method A 
+
+As a general guidance, a stitch type bond should normally be submitted to a shear force, and a 
+nail-head type bond to withstand a pulling force. 
+
+Method B 
+
+The force that is actually applied to the bonds varies considerably with the length of the wire 
+loop between bonds, that is, parameters A and h of figure A.I, and with the vertical distance d 
+between bonds. If the wire loop is very short, the breaking load of the wire may easily be 
+exceeded even if the force applied to the hook is smaller than this limit. For instance, it can be 
+seen from the formula given below that a pulling force P^ of approximately 100 mN will be 
+exerted on a wire when a force P of 40 mN is applied to the hook, and h = 0,1 mm, A = 2 mm 
+and d = 0,2 mm. In such a case, a gold wire of 0,025 mm diameter is likely to be broken before 
+the bond gives way. If of = 0, a similar pulling force will be developed with P reduced to 20 mN. 
+
+
+
+The values of pulling force normal to the die quoted in table 8 correspond to the pull (P) 
+applied to the hook. These are the limits used in normal practice, where half the force (P/2) is 
+applied normally (perpendicularly) to each bond. 
+
+Where very flat loops are used (e.g. some microwave and RF devices), the parallel-to-die 
+figures may be used. In such cases, both h and d in figure A.1 are small compared with A and 
+the term 
+
+A^ , A^ 
+
+
+
+^ + — in the equation of figure A.I approximates to 
+
+
+
+{2h + df {2h + df 
+
+This force (P^) is applied to both bonds simultaneously when the force P is applied to the hook 
+and, using the approximation above, is related by 
+
+P -Pf ^ 
+*"4(/7 + d/2 
+
+or 
+
+P = 4Pw(/7 + d/2)//^ 
+
+This can be rearranged to give the height of the loop: 
+
+P 
+
+
+
+{h + dl2)=A 
+
+
+
+AP 
+
+
+
+70 
+
+
+
+!S 12641 : 2004 
+lEC 60749 (2002) 
+
+
+
+Thus, for example, if from table 8 P = 15 and Pw = 25, then the Pf^llelpull limit will be reached 
+before the normal limit, if the height of the loop [h + dl2) is less than 15/\/(4 x 25) - 0,15/\. 
+
+under these circumstances, the pull on the hook (P) may be reduced to give the required 
+parage pulf applicable to the height of the loop being tested. Where individual loop height 
+measu ements are impractical, the pull (P) corresponding to the highest loop shall be used. 
+
+
+
+
+P = — 
+
+
+
+1 + 
+
+
+
+{2h + df 
+
+
+
+1/2 
+
+
+
+Figure A.I 
+
+
+
+71 
+
+
+
+{Continued from second covet) 
+International Standard 
+
+lEC 68-2-11 (1981) Environ- 
+mental testing — Part 2 : Tests — 
+Test Ka : Salt mist 
+
+lEC 68-2-13 (1983) Environ- 
+mental testing — Part 2 : Tests — 
+Test M : Low air pressure 
+
+I EC 68-2-14 (1984) Environ- 
+mental testing — Part 2 : Tests — 
+Test N : Change of temperature 
+
+I EC 68-2-17 (1994) Environ- 
+mental testing — Part 2 : Tests — 
+Test Q : Sealing 
+
+I EC 68-2-20 (1979) Environ- 
+mental testing — Part 2 ; Tests — 
+Test T : Soldering 
+
+I EC 68-2-21 (1983) Environ- 
+mental testing — Part 2 : Tests — 
+Test U Robustness of 
+
+terminations and integral mounting 
+devices 
+
+I EC 68-2-45 (1980) Environ- 
+mental testing — Part 2 : Tests — 
+Test XA and guidance : Immersion 
+in cleaning solvents 
+
+I EC 653 (1979) General 
+considerations on ultrasonic 
+
+cleaning 
+
+I EC 695-2-2 (1991) Fire hazard 
+testing — Part 2 ; Test methods — 
+Section 2 : Needle-flame test 
+
+lEC 747-1 (1983) Semiconductor 
+devices — Discrete devices and 
+integrated circuits — Part 1 
+General 
+
+I EC 748-1 (1984) Semiconductor 
+devices, Integrated circuits — Part 
+1 : General 
+
+
+
+Corresponding Indian Standard 
+
+
+
+IS 9000 (Part 11) : 1983| Basic environmental 
+
+
+
+testing procedures for electronic and electrical 
+items: Part 11 Salt mist test 
+
+
+
+IS 9000 (Part 13) : 198l| Basic environmental 
+
+
+
+testing procedures for electronic and electrical 
+items: Part 13 Low air pressure test 
+
+IS 9000 (Part 14) : 1988 Basic environmental 
+testing procedures for electronic and electrical 
+items: Part 14 Test N Change of temperature 
+
+IS 9000 (Part 15) : 1982 Basic environmental 
+testing procedures for electronic and electrical 
+items: Part 15 Sealing test 
+
+IS 9000 (Part 18) : 1981 Basic environmental 
+testing procedures for electronic and electrical 
+items: Part 18 Solderability test 
+
+IS 9000 (Part 19) : 1986 Basic environmental 
+testing procedures for electronic and electrical 
+items: Part 19 Test U, Robustness of 
+terminations and integral mount devices 
+
+
+
+IS 9000 (Part 20) : 1979 Basic environmental 
+
+
+
+testing procedures for electronic and electrical 
+items: Part 20 Resistance to cleaning solvents 
+and permanence of markings 
+
+IS 9001 (Part 18) : 1986| Guidance for 
+
+
+
+environmental testing: Part 18 Ultrasonic 
+cleaning test 
+
+
+
+IS 11000 (Part 2/Sec 2) 
+Part 
+
+
+
+1984 Fire hazard 
+2 lest methods, Section 2 
+
+
+
+testing: 
+Needle-flame test 
+
+IS 14901 (Part 1) : 2001 Semiconductor 
+devices — Discrete devices and integrated 
+circuits: Part 1 General 
+
+
+
+IS 12970 
+devices — 
+
+
+
+(Part 1) : 199q 
+Integrated circuits 
+
+
+
+Semiconductor 
+Part 1 General 
+
+
+
+Degree of 
+Equivalence 
+
+Technically 
+equivalent 
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+do 
+
+
+
+Identical 
+
+
+
+do 
+
+
+
+Technically 
+equivalent 
+
+
+
+The concerned Technical Committee responsible for the preparation of this standard has reviewed the 
+provisions of the following International Publications and has decided that they are acceptable for use 
+in conjunction with this standard: 
+
+lEC 68-2-47 (1982) 'Environmental testing — Part 2 : Tests — Mounting of components, 
+equipment and other articles for dynamic tests including shock (Ea), bump (Eb), vibration (Fc and 
+Fd) and steady-state acceleration (Ga) and guidance' 
+
+lEC 68-2-48 (1982) 'Environmental testing — Part 2 : Tests — Guidance on the application of the 
+tests of lEC Publication 68 to simulate the effects of storage' 
+
+
+
+Bureau of Indian Standards 
+
+BhS is a statutory institution established under the Bureau of Indian Standards Act, 1 986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of 
+goods and attending to connected matters In the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any 
+form without the prior permission in writing^f BIS. This does not preclude the free use, in the course 
+of implementing the standard, of necessary details, such as symbols and sizes, type or grade 
+designations. Enquiries relating to copyright be addressed to the Director (Publication), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also 
+reviewed periodically; a standard along with amendments is reaffirmed when such review indicates that 
+no changes are needed; if the review indicates that changes are needed, it is taken up for revision. 
+Users of Indian Standards should ascertain that they are In possession of the latest amendments or 
+edition by referring to the latest issue of 'BIS Catalogue' and 'Standards: Monthly Additions'. 
+
+This Indian Standard has been developed from Doc: No. LTD 10 (1968). 
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 
+Telephones: 2323 01 31 , 2323 3375, 2323 9402 
+
+Regional Offices: 
+
+Central : f^anak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELH1 110002 
+
+Eastern : 1/14 C.I.T Scheme VII M, V.I.R Road, Kankurgachi 
+KOLKATA 700054 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160022 
+Southern : C.I.T Campus, IV Cross Road, CHENNAI 600113 
+
+
+
+Western 
+
+
+
+Branches 
+
+
+
+Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400093 
+
+
+
+Telegrams: Manaksanstha 
+(Common to all offices) 
+
+Telephone 
+
+f 2323 7617 
+12323 3841 
+
+(-2337 8499,2337 8561 
+12337 8626,2337 9120 
+
+r60 3843 
+160 9285 
+
+r2254 1216, 2254 1442 
+12254 2519,2254 2315 
+
+f 2832 9295, 2832 7858 
+12832 7891,2832 7892 
+
+
+
+AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. FARIDABAD 
+GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+NALAGARH. PATNA. PUNE. RAJKOT THIRUVANANTHAPURAM. VtSAKHAPATNAM. 
+
+
+
+Printed at Simco Printing Press, Delhi 
+
+
+

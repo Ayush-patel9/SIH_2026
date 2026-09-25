@@ -1,0 +1,817 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+IS 12754-4 (1989) : Industrial process measurement control 
+functions and instrumentation - Symbolic representation^ 
+Part 4 : Basic symbols for process computer, interface and 
+shared display/control functions [MED 17: Chemical 
+Engineering Plants and Related Equipment] 
+
+
+
+aj^&vi iimmK-^i^^^ T ^bi^ nvF^f 
+
+
+
+::^^s^\n%i9^j^/;s^>^^^^ 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangarara Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 12754 ( Part 4 ) : 1989 
+ISO 3511/4 1985 
+
+Indian Standard ^'-'-'^'''^ 
+
+INDUSTRIAL PROCESS MEASUREMENT CONTROL 
+
+FUNCTIONS AND INSTRUMENTATION — 
+
+SYMBOLIC REPRESENTATION 
+
+PART 4 BASIC SYMBOLS FOR PROCESS COMPUTER, INTERFACE, AND 
+SHARED DISPLAY/CONTROL FUNCTIONS 
+
+i»mf % ftf I? in«iT7^a sratv 
+
+
+
+UDC 621-5 : 00362 
+
+
+
+® BIS 1990 
+
+BUREAUOF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+February 1 990 Price Group 5 
+
+
+
+IS 12754 ( Part 4) : 1989 
+180 3811/4: 1986 
+
+
+
+Indian Standard 
+
+
+
+INDUSTRIAL PROCESS MEASUREMENT CONTROL 
+
+FUNCTIONS AND INSTRUMENTATION ~ 
+
+SYMBOLIC REPRESENTATION 
+
+PART 4 BASIC SYMBOLS FOR PROCESS COMPUTER, INTERFACE, AND 
+SHARED DISPLAY/CONTROL FUNCTIONS 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard ( Part 4 ), which is identical with ISO 3511/4:1985 'Industrial process 
+measurement control functions and instrumentation — Symbolic representation — Part 4: Basic 
+symbols for process computer, interface, and shared display/control functions' issued by the 
+International Organization for Standardization ( ISO ) was adopted on 18 August 1989 by the 
+Bureau of Indian Standards on the recommendation of the Chemical Engineering Sectional 
+Committee ( HMD 17/EDC 57 ) and approval of the Heavy Mechanical Engineering Division 
+Council. 
+
+Wherever the words 'International Standard' appear, referring to this standard, they should be read 
+as 'Indian Standard'. 
+
+This Indian Standard is in four parts as detailed out in the Introduction. 
+
+
+
+As in the Original Standard, this Page is Intentionally Left Blank 
+
+
+
+18 12764 (Part4): 1989 
+ISO 3511/4: 1985 
+
+
+
+Introduction ^ 
+
+This International Standard has been devised to provide a 
+universal means of connmunrcation between the various in- 
+terests involved in the design, manufacture, installation and 
+operation of measurennent and control equipment used in the 
+process industries. 
+
+Requirements within the industries vary considerably; in 
+recognition of this, this International Standard is presented in 
+four parts as follows: 
+
+Part 1 : Basic requirements (directed towards the needs of 
+those employing comparatively simple measurement and 
+control means). 
+
+Part 2: Extension of basic requirements. 
+
+Part 3: Detailed symbols for instrument interconnection 
+diagrams. 
+
+Part 4: Basic symbols for process computer, interface func- 
+tions, and shared display/ control functions. 
+
+
+
+They are intended to provide a means of illustrating process 
+computer and/or shared display/ control functions in the field 
+of process measurement and control and may be used with the 
+symbols of ISO 3511/1 and ISO 3511/2. They will enable users 
+to show and identify in simple form the functions of instru- 
+ments, the process computer, and shared display/control func- 
+tions, or any combination of these. 
+
+It is permissible to use the basic symbol for computer-based 
+functions (see 3.1) throughout for any software-based digital 
+system. This is not intended to preclude the use of the basic 
+symbol for shared display/control functions (see 3.2) if the user 
+considers this to be appropriate. 
+
+The symbols are intentionally limited to identification on pro- 
+cess flow diagrams, piping and instrument diagrams, etc. and 
+do not provide means of illustrating specific instruments or 
+parts thereof. 
+
+The letter code for function identification shall be taken from 
+table 1 of ISO 3511/1 and ISO 3511/2. 
+
+The application methods are shown in the examples. 
+
+
+
+These parts together are intended to 
+
+a) meet the requirements of those who, possibly employ- 
+ing more sophisticated measurement and control means, 
+may wish to depict such aspects as the measurement 
+techniques embodied in a particular instrument, or the 
+means — hydraulic, pneumatic, electrical, mechanical — 
+used for its actuation; 
+
+b) provide standard symbolic representation for process 
+measurement control functions and instrumentation. These 
+symbols are not intended to replace graphical symbols for 
+electrical equipment as contained in lEC Publication 617, 
+Graphical symbols for diagrams. 
+
+
+
+1 Scope and field of application 
+
+The symbols established in this part of ISO 3511 have been 
+developed to be used in conjunction with the symbols given in 
+ISO 3511/1 and ISO 3511/2 and shall be considered as sup- 
+plementary. 
+
+
+
+2 Definitions 
+
+For the purposes of this part of ISO 3511, the following defini- 
+tions and the definitions given in ISO 3511/1 and ISO 3511/2 
+apply. 
+
+2.1 programmable: Term indicating the capability of the 
+system to accept instructions in computer language given by 
+the user for performing control strategies or complex functions. 
+
+2.2 configurable: Term indicating the capability of the 
+system to allow the user to select, from pre-programmed func- 
+tions (modular software units), those which are necessary to 
+accomplish a control strategy or other complex functions, 
+without the use of computer language. 
+
+2.3 process computer: Programmable device which 
+operates in real time on process data, on-line (primarily sensor- 
+based), to perform user specifiable supervision and/or control 
+functions. 
+
+
+
+I8 127B4( Part 4) :1989 
+180 3611/4:1985 
+
+
+
+2.4 shared display/shared control system: System in 
+which shared functions, such as display, control and com- 
+munications, are shared in time, i.e. "time-shared" functions. 
+These functions are generally accomplished by devices contain- 
+ing pre-programmed algorithms which are user accessible, con- 
+figurable and connectable to perform a given control strategy 
+or function. 
+
+2.5 distributed control system (DCS) : System for process 
+control purposes vyhich, while being functionally integrated, 
+consists of sub-systems which may be physically separated and 
+remotely located from one another. These sub-systems are nor- 
+mally connected by a communication link (e.g. data bus). 
+
+2.6 software link: Interconnection of system functions via 
+keyboard or program instructions (soft wiring as opposed to 
+hard wiring). 
+
+
+
+3 Basic symbols 
+
+3.1 Basic symbol for computer-based functions 
+
+The symbol comprises 
+
+— a thin line hexagon of approximately 10 mm width be- 
+tween two parallel sides [see figure 1a)l; 
+
+
+
+— a letter code in accordance with ISO 3511/1 and 
+ISO 351 1 /2 denoting the process computer functions. 
+
+If required, a number may be included to make identification 
+easier. 
+
+If only computer functions are provided, the basic symbol alone 
+may be used [see figure lb)]. 
+
+The basic symbol is usually applied in conjunction with the 
+basic symbols of ISO 3511/1 and ISO 3511/2 showing 
+measured process variables or actuated correcting unit [see 
+figure 1c)]. 
+
+Symbols which touch each other imply communication be- 
+tween functions. 
+
+NOTES 
+
+1 An acceptable alternative symbol, used by some countries, is the 
+thin line half-circle. Several examples Of this usage a^re shown for 
+reference in clause 4. 
+
+2 The single horizontal line (see ISO 3511/1) should be used to in- 
+dicate the existence of operator interface in the control room. 
+
+3 The double horizontal line (see ISO 3511/2) should be used to in- 
+dicate accessibility at a local panel. 
+
+4 This symbol is intended to represent computer and interface func- 
+tions performed by a programmable device. 
+
+
+
+o 
+
+
+
+
+
+
+
+
+
+
+a) Basic symbol 
+
+
+
+bl Symbol for process 
+computer only 
+
+
+
+c) Symbol in connection with 
+instruments 
+
+
+
+Figure 1 
+
+
+
+IS 12754 ( Part 4) :1989 
+180 3511/4: 1986 
+
+
+
+3.2 Basic symbol for shared display/control 
+functions 
+
+The symbol comprises 
+
+— a thin line circle of approximately 10 mm in diameter set 
+inside a square [see figure 2a}]; 
+
+— a letter code in accordance with ISO 3511/1 and 
+ISO 3511/2 denoting the shared display/ control functions. 
+
+If required, a number may be included to make identification 
+easier. 
+
+If only shared display/control functions are provided, the basic 
+symbol alone may be used [see figure 2b)]. 
+
+
+
+The basic symbol is usually applied in conjunction with the 
+basic symbols of ISO 3511/1 and ISO 3511/2 showing 
+measured process variables or actuated correcting unit [see 
+figure 2c)I. 
+
+Symbols which touch each other imply communication be- 
+tween functions. 
+
+NOTES 
+
+1 The basic symbol is not rotatable. 
+
+2 The single horizontal line (see ISO 3511/1) should be used to in 
+dicate the existence of operator interface. 
+
+3 The double horizontal line (see ISO 3511/2) should be used to in 
+dicate accessibility at a local panel. »* 
+
+4 This symbol is intended to represent functions performed by a con- 
+figurable device with shared functions for display and/or control. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<n 
+
+
+
+
+
+a) Basic symbol 
+
+
+
+b) Symbol for shared 
+display/shared controt only 
+
+
+
+c) Symbol in connection with 
+instruments 
+
+
+
+Figure 2 
+
+
+
+18 12764 (Part4): 1989 
+ISO 3511/4: 1985 
+
+
+
+4 Examples of use of the symbols 
+4.1 Process computer examples 
+4.1.1 Pressure signal to computer 
+
+
+
+4.1.3 Flow recording and control by computer 
+
+
+
+^FRC 
+
+
+
+
+J03, 
+
+
+
+-h 
+
+
+
+7, 
+
+
+
+Alternative method 
+
+
+
+4.1.4 Control valve actuated and position display 
+(open-shut) on computer 
+
+
+
+[>k] 
+
+
+
+4.1.2 Temperature signal to computer (input 
+
+number 211) with temperature recording and high alarm 
+
+by computer normally accessible to the operator 
+
+
+
+Alternative method 
+
+
+
+Alternative method 
+
+
+
+TRA' 
+
+
+
+211 
+
+
+
+GB 
+
+
+
+
+■c^ 
+
+
+
+TRA 
+
+
+
+211 
+
+
+
+18 12754 ( Part 4) : 1989 
+ISO 3511/4: 1985 
+
+
+
+4.1.5 Flow recording and control by computer, flow Indication in control room 
+
+
+
+
+O-^ 
+
+
+
+^^ 
+
+
+
+4.1.6 Pressure recording ar^d control by computer with "back-up" by discrete instruments 
+
+
+
+
+-/- 
+
+
+
+-o — ^ 
+
+
+
+4.1.7 Flow recording and control by computer, operator access in local control room„ flow indication in central 
+control room 
+
+
+
+<D 
+
+
+
+-^ 
+
+
+
+-7^ 
+
+
+
+
+
+O^ ^ 
+
+
+
+■7^ 
+
+
+
+^^ 
+
+
+
+is 12754 (Part4): 1989 
+180 3511/4:1985 
+
+
+
+4.1.8 Cascade control and indication and recording of temperature by computer with "baclc-up" control and 
+Indication with common process connections "^^ 
+
+
+
+
+-h 
+
+
+
+h 
+
+
+
+-h 
+
+
+
+
+Alternative method 
+
+
+
+h 
+
+
+
+TIRC Y 
+260/" 
+
+
+
+-7^ 
+
+
+
+-/- 
+
+
+
+
+IS 12764 (Part4): 1989 
+150 3511/4:1985 
+
+
+
+4.1.9 Indication and cascade control of level to flow by computer with connected "back-up" control and indication 
+
+
+
+
+4.2 Shared display/control examples 
+4.2.1 Flow recording on shared display 
+
+
+
+rFRN] 
+
+
+
+ts^ 
+
+
+
+4.2.2 Shared control and recording of pressure, i.e. by distributed control system (DCS) with pressure recording by a 
+discrete instrument in control room 
+
+
+
+
+
+^^ 
+
+
+
+-o^ 
+
+
+
+
+
+
+18 12764 ( Part 4) :1989 
+180 3511/4:1986 
+
+
+
+4.2.3 Cascade control examples 
+
+LICA-106 DCS control (master) and low alarm 
+
+LZA-107 "Hard-wired" protection system with its own alarm announcement, not duplicated In DCS 
+
+FRC-101 DCS recording control (slave of LICA-106) 
+
+TA-110 "Hard-wired" high temperature alarm with its own announcement and duplicated in DCS 
+
+HS-103 "Hard-wired" local manual reset 
+
+
+
+
+10 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to 
+promote harmonious development of the activities of standardization, marking and quality 
+certification of goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. Ho part of these publications may be reproduced in 
+any form without the prior permission in writing of BIS. This does not preclude the free use, in 
+the course of implementing the standard, of necessary details, such as symbols and sizes, type or 
+grade designations. Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Revision of Indian Standards 
+
+Indian Standards are reviewed periodically and revised, when necessary and amendments, if any, 
+are issued from time to time. Users of Ir^ian Standards should ascertain that they are in 
+possession of the latest amendments or edition. Comments on this Indian Standard may be sent 
+to BIS giving the following reference : 
+
+Doc: No. HMD 17/EDC57 (5004) 
+
+Amendments issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Isssue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters 
+
+
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 
+Telephones : 331 01 31, 331 13 75 
+
+Regional Offices : 
+
+Central ; Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110002 
+
+Eastern : 1/14 C. I. T, Scheme VII M, V. I. P, Road, Maniktola 
+CALCUTTA 700054 
+
+Northern : SCO 445-446, Sector 35-C, CHANDIGARH 160036 
+
+
+
+Southern : C, I. T. Campus, IV Cross Road, MADRAS 6001 13 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) 
+BOMBAY 400093 
+
+Branches : AHMADABAD. BANGALORE. BHOPAL. BHUBANESHWAR. 
+GUWAHATI. HYDERABAD. JAIPUR. KANPUR. PATNA. 
+TRIVANDRUM. 
+
+
+
+ilegrams : Manaksanstha 
+(Common to all Offices) 
+
+
+
+
+Telephone 
+
+
+
+
+331 01 31 
+i331 13 75 
+
+
+
+
+36 24 99 
+
+
+
+
+2 18 43 
+is 16 41 
+
+
+
+
+f 41 24 42 
+-{ 41 25 19 
+L41 29 16 
+
+
+
+
+6 32 92 9b 
+
+
+
+Printed at Printograph, Delhi, India 
+
+
+

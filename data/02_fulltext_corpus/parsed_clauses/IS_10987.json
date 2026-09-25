@@ -1,0 +1,53 @@
+{
+  "is_number": "IS IS_10987",
+  "standard_id": "IS IS_10987",
+  "title": "Indian Standard Specification / Test Method (IS IS_10987)",
+  "ia_identifier": "IS_10987",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This code is intended to provide purchasers and manufacturers with guidelines in design, fabrication, testing and installation of underground as well as above-ground horizontal cylindrical steel tanks with flat ends for storage of petroleum products. 1.1.1 Provisions of this code may also be applied to design and construct tanks for storage of various chemicals having specific gravity less than one. In such cases, special considerations regarding lining and corrosion allowance shall be made while designing the tanks for intended use. 1.1.2 Provisions of this code are applicable for storage of products under ambient temperature and atmospheric pressure conditions. 1.2 This standard is complementary to and . 1.2.1 Provisions regarding permissible stresses, design, fabrication and erection as included in shall apply unless specified otherwise in this code. 1.2.2 For provisions regarding analysis for saddle support and associated local loads, reference shall be made to . 1.3 The above-ground storage tanks covered in this standard are not intended for mobile application. 1.4 Unless otherwise stated specifically, provisions, covered in this standard apply to both above-ground and underground tanks.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1239",
+      "standard_id": "IS 1239",
+      "title": "Indian Standard Specification / Test Method (IS 1239)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1367",
+      "standard_id": "IS 1367",
+      "title": "Indian Standard Specification / Test Method (IS 1367)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade bitumen",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10987"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 29223
+}

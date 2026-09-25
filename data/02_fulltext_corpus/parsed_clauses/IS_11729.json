@@ -1,0 +1,84 @@
+{
+  "is_number": "IS IS_11729",
+  "standard_id": "IS IS_11729",
+  "title": "Indian Standard Specification / Test Method (IS IS_11729)",
+  "ia_identifier": "IS_11729",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11729) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11729).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 6191",
+      "standard_id": "IS 6191:1971",
+      "title": "Methods of Micro-Biological Colour Fastness and Microscopical Tests for Leather",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5914",
+      "standard_id": "IS 5914:1970",
+      "title": "Methods of physical testing of leather",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1670",
+      "standard_id": "IS 1670:1991",
+      "title": "Textiles - Yarn - Determination of breaking load and elongation at break of single strand",
+      "division_code": "TXD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1720",
+      "standard_id": "IS 1720:1978",
+      "title": "Cotton Sewing Threads",
+      "division_code": "TXD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11729"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "tensile strength of 20 580 kN",
+      "elongation and maximum 4 percent permanent elongation at 6860 kN",
+      "minimum tensile strength of 20"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Marking — Unless otherwise required by the purchaser, each handball shall bear the manufacturer's name, initials or trade-mark."
+    ]
+  },
+  "total_chars_parsed": 6233
+}

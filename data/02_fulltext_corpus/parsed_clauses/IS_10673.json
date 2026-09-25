@@ -1,0 +1,80 @@
+{
+  "is_number": "IS IS_10673",
+  "standard_id": "IS IS_10673",
+  "title": "Indian Standard Specification / Test Method (IS IS_10673)",
+  "ia_identifier": "IS_10673",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1,1 This standard covers sampling plans and procedures for inspection by attributes for electronic items. Note — When specified by the responsible authority, this standard shall be called up in the specification, contract, inspection instructions or other documents and the provisions set forth herein -shall govern. The ' responsible authority ' shall be designated in one of the above documents. The responsible authority may be the customer.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 2859",
+      "standard_id": "IS/ISO 2859",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2859)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2500",
+      "standard_id": "IS 2500",
+      "title": "Indian Standard Specification / Test Method (IS 2500)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 220",
+      "standard_id": "IS/ISO 220",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 220)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade ifying",
+    "1 K",
+    "6 K",
+    "14 K",
+    "18 K",
+    "24 K",
+    "35 K",
+    "26 K",
+    "38 K",
+    "20 k",
+    "0 K"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 161925
+}

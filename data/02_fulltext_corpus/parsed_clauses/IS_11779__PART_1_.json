@@ -1,0 +1,70 @@
+{
+  "is_number": "IS IS_11779__PART_1_",
+  "standard_id": "IS IS_11779__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_11779__PART_1_)",
+  "ia_identifier": "IS_11779__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11779__PART_1_) covers Indian Standard Specification / Test Method (IS IS_11779__PART_1_). 0.1 This Indian Standard was adopted by the after the draft finalized by the Connectors for Electronic Equipment Sectional Committee had been approved by the Electronics and Telecommunication Division Council. 0.2 This standard ( Part 1 ) is one of the Indian Standards on low frequency connectors below 3 MHz including dc used in electronic equipment and shall be used in conjunction with IS : 9647- 1986 'General requirements and methods of tests for low frequency connectors below 3 MHz including dc {first revision )'. Subsequent parts of this standard will cover detailed specifications for specific types of connectors. 0.3 While preparing this standard, assistance has been derived from the following publications: JSS 50813 (1971) Detail Specification for Connectors, Electrical, Circular, Mmiature Bayonet Coupling, issued by the Directorate of Standardization, Ministry of Defence, India. lEC Pub 130-7 (1971) Connector for frequencies below 3 MHz, Part 7 : Circular multipole connectors wi",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 9647",
+      "standard_id": "IS 9647:1986",
+      "title": "General Requirements and Methods of Tests for Low Frequency Connectors Below 3 MHz Including DC",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11779",
+      "standard_id": "IS 11779",
+      "title": "Indian Standard Specification / Test Method (IS 11779)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade Tests",
+    "Grade of",
+    "Grade Contact",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11779__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "Insulation resistance 12.4 v"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "5.1 The connectors shall be marked in accordance",
+      "6»1 The climatic category shall generally be chosen",
+      "6.2 The climatic category of a particular connector shall be specified in the relevant specification.",
+      "7.1 The rated voltage and rated current shall be",
+      "tests, the order in which they shall be carried out"
+    ]
+  },
+  "total_chars_parsed": 29404
+}

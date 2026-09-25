@@ -1,0 +1,238 @@
+{
+  "is_number": "IS IS_10153",
+  "standard_id": "IS IS_10153",
+  "title": "Indian Standard Specification / Test Method (IS IS_10153)",
+  "ia_identifier": "IS_10153",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard lays down guidelines for utilization of fly ash. 1.2 Fly ash may be collected from the flue gases, in thermal power plants, by mechanical collectors or electrostatic precipitators or a combination of both. It may be removed by “wet system’ or ‘dry system’. The ‘wet system’ involves mixing the fly ash with water and sluicing it to a settling tank or dumping areas. The ‘dry system’ involves removal of the fly ash in dry form either directly by screw feeders discharging into transport vehicles from the hoppers or by means of pneumatic conveying system for further utilization or storage.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1489 (PART 1)",
+      "standard_id": "IS 1489 (Part 1):2015",
+      "title": "Part 1 : 2015: Portland Pozzolana Cement - Specification Part 1 Fly Ash Based (Fourth Revision",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 456",
+      "standard_id": "IS 456:2000",
+      "title": "Plain and Reinforced Concrete - Code of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4926",
+      "standard_id": "IS 4926:2003",
+      "title": "Code of Practice Ready-Mixed Concrete",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9142 (PART 2)",
+      "standard_id": "IS 9142 (Part 2):2018",
+      "title": "Part 2 : 2018: Artificial Lightweight Aggregate for Concrete — Specification Part 2 Sintered Fly Ash Coarse Aggregate ( First Revision )",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2686",
+      "standard_id": "IS 2686:1977",
+      "title": "Cinder as Fine Aggregates for use in Lime Concrete",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2042",
+      "standard_id": "IS 2042:2006",
+      "title": "Insulating bricks",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12894",
+      "standard_id": "IS 12894:2002",
+      "title": "Pulverized Fuel Ash-Lime Bricks -",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13757",
+      "standard_id": "IS 13757:1993",
+      "title": "Burnt clay fly ash building bricks-Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16720",
+      "standard_id": "IS 16720:2018",
+      "title": "Pulverized Fuel Ash-Cement Bricks- Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8229",
+      "standard_id": "IS 8229:1986",
+      "title": "Specification for Oil-well Cement",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3466",
+      "standard_id": "IS 3466:1988",
+      "title": "B): SPECIFICATION FOR MASONRY CEMENT",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 712",
+      "standard_id": "IS 712:1984",
+      "title": "Specification for Building Limes",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3812",
+      "standard_id": "IS 3812",
+      "title": "Indian Standard Specification / Test Method (IS 3812)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5817",
+      "standard_id": "IS 5817",
+      "title": "Indian Standard Specification / Test Method (IS 5817)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 30",
+      "standard_id": "IS 30",
+      "title": "Indian Standard Specification / Test Method (IS 30)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2541",
+      "standard_id": "IS 2541:1991",
+      "title": "Code of practice for preparation and use of lime concrete",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10359",
+      "standard_id": "IS 10359:1982",
+      "title": "Code of practice for manufacture and use of lime-pozzolana concrete blocks for paving",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10360",
+      "standard_id": "IS 10360:1982",
+      "title": "lime-pozzolana concrete blocks for paving",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4332",
+      "standard_id": "IS 4332",
+      "title": "Indian Standard Specification / Test Method (IS 4332)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1489",
+      "standard_id": "IS 1489",
+      "title": "Indian Standard Specification / Test Method (IS 1489)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Fly Ash Concrete",
+    "Ready Mixed Fly Ash Concrete",
+    "Grade deration",
+    "Grade rtilizer",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10153"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "ash concrete with 20 percent",
+      "moisture which is normally in the range of 15-30 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 35174
+}

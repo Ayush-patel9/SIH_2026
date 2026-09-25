@@ -1,0 +1,85 @@
+{
+  "is_number": "IS IS_10853__PART_3_",
+  "standard_id": "IS IS_10853__PART_3_",
+  "title": "Indian Standard Specification / Test Method (IS IS_10853__PART_3_)",
+  "ia_identifier": "IS_10853__PART_3_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_10853__PART_3_) covers Indian Standard Specification / Test Method (IS IS_10853__PART_3_). This Indian Standard, which is identical with lEC Pub 244-1 3 :1 991 'Methods of measurement for radio transmitters, Part 13 Performance characteristics for FM sound broadcasting', issued by the International Electrotechnical Commission (lEC) was adopted by the recommendation of the Radio Communications Sectional Committee (LTD 20) and approval of the Electronics and Telecommunication Division Council. The text of the lEC Standard has been approved as suitable for publication as Indian Standard without deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention is particularly drawn to the following: (a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard'. (b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice is to use a point (.) as the decimal marker. CROSS REFERENCES In this Indian Standard, the following International Standards a",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10853",
+      "standard_id": "IS 10853",
+      "title": "Indian Standard Specification / Test Method (IS 10853)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10853 (PART 4)",
+      "standard_id": "IS 10853 (Part 4):1994",
+      "title": "Methods of measurement for Radio Transmitters, Part 4: Performance characteristics for FM sound Broadcasting",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10853 (PART 5)",
+      "standard_id": "IS 10853 (PART 5)",
+      "title": "Indian Standard Specification / Test Method (IS 10853 (PART 5))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 244",
+      "standard_id": "IS/IEC 244",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 244)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10853 (PART4)",
+      "standard_id": "IS 10853 (PART4)",
+      "title": "Indian Standard Specification / Test Method (IS 10853 (PART4))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10853__PART_3_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "harmonic distortion, shall give a reading of 0.775 V"
+    ],
+    "dimensional_tolerances": [
+      "tolerance of at most 1 %"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 56994
+}

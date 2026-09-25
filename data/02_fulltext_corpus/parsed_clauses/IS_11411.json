@@ -1,0 +1,174 @@
+{
+  "is_number": "IS IS_11411",
+  "standard_id": "IS IS_11411",
+  "title": "Indian Standard Specification / Test Method (IS IS_11411)",
+  "ia_identifier": "IS_11411",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11411) covers Indian Standard Specification / Test Method (IS IS_11411). This Indian Standard which is identical with ISO 5652-1984 'Information processing — 9- track, 12,7 mm (0.5 in) wide magnetic tape for information interchange — Format and recording, using group coding at2 46 cpmm (6250cpi)\\issued by the International Organization forStandardization (ISO), was adopted by the Indian Standards Institution on the recommendation of the Computers, Business Machines and Calculators Sectional Committee and approved by the Electronics and Telecommunication Division Council. In the adopted standard certain terminology and conventions are not identical with those used in Indian Standards; attention is specially drawn to the following: a) Comma (,) has been used as a decimal marker while in Indian Standards the current practice is to use a point (•) as the decimal marker. b) Wherever the words 'International Standard' appear, referring to this standard, they should be read as 'Indian Standard'. c) For the purpose of Indian Standard, metric dimensions are applicab",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 5652",
+      "standard_id": "IS/ISO 5652",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5652)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 646",
+      "standard_id": "IS/ISO 646",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 646)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1001",
+      "standard_id": "IS/ISO 1001",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1001)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1864",
+      "standard_id": "IS/ISO 1864",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1864)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4873",
+      "standard_id": "IS/ISO 4873",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4873)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10315",
+      "standard_id": "IS 10315:1997",
+      "title": "bit coded character set for information interchange",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11419",
+      "standard_id": "IS 11419:1992",
+      "title": "File Structure and Labelling of Magnetic Tapes for Information Interchange",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11408",
+      "standard_id": "IS 11408:2006",
+      "title": "Information technology - Unrecorded 12.7 mm (0.5 in) wide magnetic tape ror information interchange - 32 ftpmm (800 ftpi) NRZ1,126 ftpmm ( 3 200 ft[o) phase encoded and 356 ftpmm ( 9 042 ftpi), NRZ1",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2022",
+      "standard_id": "IS/ISO 2022",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2022)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5852",
+      "standard_id": "IS/ISO 5852",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5852)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 132",
+      "standard_id": "IS 132",
+      "title": "Indian Standard Specification / Test Method (IS 132)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 254",
+      "standard_id": "IS 254:2023",
+      "title": "Magnesium Chloride Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 356",
+      "standard_id": "IS 356:1991",
+      "title": "Ester gum",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "magnetic tape",
+    "reference tape",
+    "secondary reference tape",
+    "signal amplitude reference tape",
+    "typical field",
+    "reference field",
+    "standard reference amplitude",
+    "reference edge",
+    "in contact",
+    "track",
+    "row",
+    "position of flux transition"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "density of 356 ftpmm (9 042 ftpi). It shall begin at least 38 mm"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "Nominal length : 7,6 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 37664
+}

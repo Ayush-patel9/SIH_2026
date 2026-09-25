@@ -5,27 +5,53 @@
     "null_title": 0,
     "null_division_code": 0,
     "null_aspect": 0,
-    "total_mandatory_standards": 97,
-    "status": "PASS"
+    "null_ics_codes": 21992,
+    "total_mandatory_standards": 146,
+    "fulltext_available_flagged": 1460,
+    "ics_fields": 31,
+    "ics_groups": 306,
+    "status": "FAIL"
   },
   "02_fulltext_corpus": {
-    "raw_downloads_count": 113,
-    "parsed_clauses_count": 113,
+    "raw_downloads_count": 1349,
+    "parsed_clauses_count": 1017,
     "null_scopes": 0,
-    "synthetic_scopes": 0,
-    "total_requirements_extracted": 649,
-    "zero_req_files": 0,
-    "total_normative_edges": 1876,
+    "total_requirements_extracted": 3412,
+    "total_normative_edges": 7930,
     "null_graph_titles": 0,
     "self_loop_edges": 0,
-    "total_rag_chunks": 337,
+    "total_rag_chunks": 2993,
     "null_rag_texts": 0,
-    "avg_rag_chunk_chars": 1259.3,
+    "avg_rag_chunk_chars": 834.7,
     "status": "PASS"
   },
-  "03_regulatory_qco": {},
-  "04_conformity_ecosystem": {},
-  "05_procurement_gold_corpus": {},
-  "06_multilingual_lexicon": {},
-  "passed_all_checks": true
+  "03_regulatory_qco": {
+    "qco_matrix_keys": 85,
+    "full_qco_products": 70,
+    "crs_categories": 47,
+    "status": "PASS"
+  },
+  "04_conformity_ecosystem": {
+    "conformity_schemes": 5,
+    "bis_recognized_labs": 42,
+    "lims_lab_registry_labs": 42,
+    "lims_standard_mappings": 78,
+    "manak_licensee_records": 34,
+    "manak_standards_covered": 9,
+    "status": "PASS"
+  },
+  "05_procurement_gold_corpus": {
+    "gem_categories_count": 54,
+    "cppp_live_tenders_count": 54,
+    "diff_benchmark_cases": 3,
+    "status": "PASS"
+  },
+  "06_multilingual_lexicon": {
+    "hindi_terms_count": 198,
+    "regional_languages": 5,
+    "total_regional_terms": 76,
+    "search_index_entries": 492,
+    "status": "PASS"
+  },
+  "passed_all_checks": false
 }

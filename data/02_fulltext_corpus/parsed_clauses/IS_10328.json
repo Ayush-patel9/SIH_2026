@@ -1,0 +1,52 @@
+{
+  "is_number": "IS IS_10328",
+  "standard_id": "IS IS_10328",
+  "title": "Indian Standard Specification / Test Method (IS IS_10328)",
+  "ia_identifier": "IS_10328",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies the method of expression of dimensions and direction oi manufacture of unprocessed ( not written upon, not ruled and not punched ) writing and printing paper,",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 217",
+      "standard_id": "IS/ISO 217",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 217)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4661",
+      "standard_id": "IS 4661:1999",
+      "title": "Glossary of terms used in paper trade and industry",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade deration",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10328"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 6372
+}

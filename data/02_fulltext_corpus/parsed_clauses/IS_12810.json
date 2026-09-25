@@ -1,0 +1,56 @@
+{
+  "is_number": "IS IS_12810",
+  "standard_id": "IS IS_12810",
+  "title": "Indian Standard Specification / Test Method (IS IS_12810)",
+  "ia_identifier": "IS_12810",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes the requirements for shorthand notebooks.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 6956",
+      "standard_id": "IS 6956:2001",
+      "title": "Cover Paper",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1060",
+      "standard_id": "IS 1060",
+      "title": "Indian Standard Specification / Test Method (IS 1060)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12810"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance of ±2 mm"
+    ],
+    "marking_requirements": [
+      "The notebooks shall be supplied in packages, containing copy books of the same type, size and",
+      "having the same number of pages. Each package",
+      "shall be wrapped in paper to protect the notebooks from damage during transportation. The",
+      "packaged. If the notebooks are tied in bundles,",
+      "each bundle shall be firmly bound with paper"
+    ]
+  },
+  "total_chars_parsed": 6427
+}

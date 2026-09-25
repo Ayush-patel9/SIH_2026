@@ -1,0 +1,71 @@
+{
+  "is_number": "IS IS_10765",
+  "standard_id": "IS IS_10765",
+  "title": "Indian Standard Specification / Test Method (IS IS_10765)",
+  "ia_identifier": "IS_10765",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_10765) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_10765).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 3642",
+      "standard_id": "IS 3642",
+      "title": "Indian Standard Specification / Test Method (IS 3642)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6603",
+      "standard_id": "IS 6603:2001",
+      "title": "Stainless Steel Bars and Flats",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1501",
+      "standard_id": "IS 1501:2002",
+      "title": "Method For Vickers Hardness Test for Metallic Materials",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7531",
+      "standard_id": "IS 7531:1990",
+      "title": "Surgical Instruments - Corrosion Resistance of Stainless Steel Surgical Instruments - Methods of Tests",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10765"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "initials, or registered trade-mark, the country of manufacture and the words 'Stainless Steel'."
+    ]
+  },
+  "total_chars_parsed": 5060
+}

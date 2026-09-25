@@ -1,0 +1,243 @@
+{
+  "is_number": "IS IS_11385",
+  "standard_id": "IS IS_11385",
+  "title": "Indian Standard Specification / Test Method (IS IS_11385)",
+  "ia_identifier": "IS_11385",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard provides guidance on the type, extent and details of subsurface explorations needed in connection with the following items of work: a) Canals — Stability of banks and bed in: 1) cutting, and 2) filling. b) Canals — Water loss due to seepage and water logging in the command area. c) Canals — Selection of lining with reference to the characteristics of bed material, permeability, subsoil water table and salinity. d) Cross drainage structures — Design and construction of the foundation for head regulators, cross-regulators, drops or falls, super passages, syphons, aqueducts, level crossings and bridges. e) Borrow area investigations for the suitability of material to be used for canal embankments and necessary compaction procedure.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 4453",
+      "standard_id": "IS 4453:2009",
+      "title": "Subsurface Exploration by Pits, Trenches, Drifts and Shafts - Code of Practice",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6926",
+      "standard_id": "IS 6926:1996",
+      "title": "Diamond Core Drilling - Site Investigation for River Valley Projects - Code of Practice",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1892",
+      "standard_id": "IS 1892:2021",
+      "title": "Subsurface investigation for foundations Code of practice second revision of IS 1892",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9214",
+      "standard_id": "IS 9214:1979",
+      "title": "Method of determination of modulus of subgrade reaction (K-value) of soils in field",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1888",
+      "standard_id": "IS 1888:1982",
+      "title": "Method of load test on soils",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2131",
+      "standard_id": "IS 2131:1981",
+      "title": "Method for standard penetration test for soils",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4968",
+      "standard_id": "IS 4968",
+      "title": "Indian Standard Specification / Test Method (IS 4968)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4968 (PART 2)",
+      "standard_id": "IS 4968 (Part 2):1976",
+      "title": "Method for subsurface sounding for soils, Part 2: Dynamic method using cone and bentonite slurry",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4968 (PART 3)",
+      "standard_id": "IS 4968 (Part 3):1976",
+      "title": "Method for subsurface sounding for soils, Part 3: Static cone penetration test",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6403",
+      "standard_id": "IS 6403:1981",
+      "title": "Code of practice for determination of bearing capacity of shallow foundations",
+      "division_code": "PGD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4434",
+      "standard_id": "IS 4434:1978",
+      "title": "Code of practice for in-situ vane shear test for soils",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5529",
+      "standard_id": "IS 5529",
+      "title": "Indian Standard Specification / Test Method (IS 5529)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720",
+      "standard_id": "IS 2720",
+      "title": "Indian Standard Specification / Test Method (IS 2720)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 2)",
+      "standard_id": "IS 2720 (Part 2):1973",
+      "title": "Methods of test for soils, Part 2: Determination of water content",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4078",
+      "standard_id": "IS 4078:1980",
+      "title": "Code of practice for indexing and storage of drill cores",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 14)",
+      "standard_id": "IS 2720 (Part 14):1983",
+      "title": "Methods of test for soils, Part 14: Determination of density index (relative density) of cohesionless soils",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2720 (PART 21)",
+      "standard_id": "IS 2720 (Part 21):1977",
+      "title": "Methods of Test for Soils, Part XXI: Determination of Total Soluble Solids",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7422",
+      "standard_id": "IS 7422",
+      "title": "Indian Standard Specification / Test Method (IS 7422)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15686",
+      "standard_id": "IS 15686:2006",
+      "title": "Recommendations for preparation of geological and geotechnical maps for river valley projects",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4464",
+      "standard_id": "IS 4464:2020",
+      "title": "Code of Practice for Presentation of Drilling Information and Core Description in Geotechnical Investigation ( Second Revision )",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1498",
+      "standard_id": "IS 1498:1970",
+      "title": "Classification and identification of soils for general engineering purposes",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade asibility",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11385"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 31538
+}

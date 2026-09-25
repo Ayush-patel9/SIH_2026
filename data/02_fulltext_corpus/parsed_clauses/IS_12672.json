@@ -1,0 +1,70 @@
+{
+  "is_number": "IS IS_12672",
+  "standard_id": "IS IS_12672",
+  "title": "Indian Standard Specification / Test Method (IS IS_12672)",
+  "ia_identifier": "IS_12672",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the requirements, tests and guidance for coordination of internal fuses used to protect shunt capacitors. 1.2 This standard also applies to internal overpressure disconnectors used to protect self-healing metallized dielectric capacitors. NOTE — The requirements of self-healing and nonself healing shunt capacitors for power systems are covered in ^Specification for shunt capacitors for power systems ( second revision )'. 1.3 This standard does not apply to fuses and disconnectors for which service conditions, in general, are not compatible with the requirements of the standard, unless otherwise agreed to between the manufacturer and the purchaser. 1.4 The guidance for coordination of fuse and disconnector protection is given in Annex A.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9224",
+      "standard_id": "IS 9224",
+      "title": "Indian Standard Specification / Test Method (IS 9224)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9385",
+      "standard_id": "IS 9385",
+      "title": "Indian Standard Specification / Test Method (IS 9385)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "The following definitions in addition to those",
+    "Bank Protection",
+    "Internal Fuse",
+    "Internal Overpressure Disconnector",
+    "Unbalance Protection",
+    "Grade Tests",
+    "Grade tests",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12672"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance of the fuse. m"
+    ],
+    "marking_requirements": [
+      "7.1 The marking regarding the presence of",
+      "internal fuse and internal overpressure disconnector shall be provided on the rating plate of the"
+    ]
+  },
+  "total_chars_parsed": 25348
+}

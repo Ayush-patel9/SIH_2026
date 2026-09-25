@@ -1,0 +1,65 @@
+{
+  "is_number": "IS IS_11359",
+  "standard_id": "IS IS_11359",
+  "title": "Indian Standard Specification / Test Method (IS IS_11359)",
+  "ia_identifier": "IS_11359",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes requirements of wax candles for use for illuminating purposes ( excluding ornamental candles ). *Rules for rounding off numerical values ( revised ).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 46",
+      "standard_id": "IS 46",
+      "title": "Indian Standard Specification / Test Method (IS 46)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4654",
+      "standard_id": "IS 4654:2019",
+      "title": "Paraffin Wax — Specification ( Third Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade deral",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11359"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "7.1 Each packet shall be clearly and indelibly marked with the manufacturer's address, name, initial or recognized trade-mark and also with",
+      "8.1 Each packet shall contain the number of candles as agreed to between",
+      "8.1.1 The packaging material shall be suitable for providing protection",
+      "burning candles shall be measured against a metal filament, sub-standard",
+      "The candle shall be lighted and kept burning free from draught for 10"
+    ]
+  },
+  "total_chars_parsed": 18191
+}

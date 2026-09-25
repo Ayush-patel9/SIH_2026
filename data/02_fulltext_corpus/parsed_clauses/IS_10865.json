@@ -1,0 +1,72 @@
+{
+  "is_number": "IS IS_10865",
+  "standard_id": "IS IS_10865",
+  "title": "Indian Standard Specification / Test Method (IS IS_10865)",
+  "ia_identifier": "IS_10865",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard specifies the dimensions, material and general requirements for spring bars for holding strap with: a) Wrist watch cases, b) Wrist watch strap clasp (sheet metal), and c) Wrist watch leather strap buckle.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 5522",
+      "standard_id": "IS 5522:2014",
+      "title": "Stainless Steel Sheets and Strips for Utensils Specification",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Stainless Steel Products (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 6527",
+      "standard_id": "IS 6527:1995",
+      "title": "Stainless steel wire rod",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6528",
+      "standard_id": "IS 6528:1995",
+      "title": "Stainless steel wire",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9641",
+      "standard_id": "IS 9641:1980",
+      "title": "Dimensions for lugs for wrist watch case",
+      "division_code": "GEN",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "14 k",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10865"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "1 The label containing each pack shall be marked with the manufacturer's name or trade-maik, if any.",
+      "marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 10966
+}

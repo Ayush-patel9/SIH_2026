@@ -1,0 +1,84 @@
+{
+  "is_number": "IS IS_12481",
+  "standard_id": "IS IS_12481",
+  "title": "Indian Standard Specification / Test Method (IS IS_12481)",
+  "ia_identifier": "IS_12481",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12481) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_12481).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 6094",
+      "standard_id": "IS 6094",
+      "title": "Indian Standard Specification / Test Method (IS 6094)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1570 (PART2)",
+      "standard_id": "IS 1570 (PART2)",
+      "title": "Indian Standard Specification / Test Method (IS 1570 (PART2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8669",
+      "standard_id": "IS 8669:1992",
+      "title": "Hexagon drive ends for power tools - Dimensions",
+      "division_code": "GEN",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2500",
+      "standard_id": "IS 2500",
+      "title": "Indian Standard Specification / Test Method (IS 2500)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1570",
+      "standard_id": "IS 1570",
+      "title": "Indian Standard Specification / Test Method (IS 1570)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12481"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "minimum hardness 65"
+    ],
+    "chemical_properties": [
+      "sulphur and phosphorus contents of 0*05 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Marking — Each hexagonal insert bit shall be marked with the width across flats and manufacturer's name or registered trade-mark."
+    ]
+  },
+  "total_chars_parsed": 4838
+}

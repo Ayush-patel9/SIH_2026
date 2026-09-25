@@ -1,0 +1,421 @@
+{
+  "is_number": "IS IS_616",
+  "standard_id": "IS IS_616",
+  "title": "Indian Standard Specification / Test Method (IS IS_616)",
+  "ia_identifier": "IS_616",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1.1 This International Safety Standard applies to electronic apparatus designed to be fed from the mains, from a supply apparatus, from batteries or from remote power feeding and intended for reception, generation, recording or reproduction respectively of audio, video and associated signals. It also applies to apparatus designed to be used exclusively in combination with the above-mentioned apparatus. This standard primarily concerns apparatus intended for household and similar general use but which may also be used in places of public assembly such as schools, theatres, places of worship and the workplace, professional apparatus intended for use as described above is also covered unless falling specifically within the scope of other standards. This standard concerns only safety aspects of the above apparatus; it does not concern other matters, such as style or performance. This standard applies to the above-mentioned apparatus, if designed to be connected to the telecommunication network or similar network, for example by means of an integrated modem. Some examples of apparatus within the scope of this standard are: - receiving apparatus and amplifiers for sound and/or vision; - independent load transducers and source transducers; - supply apparatus intended to supply other apparatus covered by the scope of this standard; - electronic musical instruments, and electronic accessories such as rhythm generators, tone generators, music tuners and the like for use with electronic or non-electronic musical instruments; - audio and/or video educational apparatus; - video projectors; note 1 Film projectors, slide projectors, overhead projectors are covered by lEC 60335-2-56 [5]^ - video cameras and video monitors; - video games and flipper games; NOTE 2 Video and flipper games for commercial use are covered by lEC 60335-2-82 (6) - juke boxes; - electronic gaming and scoring machines; NOTE 3 Electronic gaming and scoring machines for commercial use are covered by lEC 60335-2-82 I6J 1 Figures in square brackets refer to the bibliography. 1 lEC 60065 : 2005 - teletext equipment; - record arid optical disc players; - tape and optical disc recorders; - antenna signal converters and amplifiers; - antenna positioners; - Citizen's Band apparatus; - apparatus for imagery; - electronic light effect apparatus; - apparatus for use in alarm systems; - intercommunication apparatus, using low voltage mains as the transmission medium; - cable head-end receivers; - multimedia a",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 3722",
+      "standard_id": "IS 3722",
+      "title": "Indian Standard Specification / Test Method (IS 3722)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9001 (PART 13)",
+      "standard_id": "IS 9001 (Part 13):1981",
+      "title": "Guidance for Environmental Testing, Part 13: Vibration (sinusoidal) Test",
+      "division_code": "EED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6002 (PART 10/SEC 1)",
+      "standard_id": "IS 6002 (PART 10/SEC 1)",
+      "title": "Tommy Bars for Box Spanners (IS 6002 (PART 10/SEC 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 7/SEC 7)",
+      "standard_id": "IS 9000 (PART 7/SEC 7)",
+      "title": "Indian Standard Specification / Test Method (IS 9000 (PART 7/SEC 7))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 4)",
+      "standard_id": "IS 9000 (Part 4):2008",
+      "title": "Basic Environmental Testing Procedures for Electronic and Electrical Items, Part 4: Damp hear (Steady state)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2824",
+      "standard_id": "IS 2824:2007",
+      "title": "Method for determining of the proof and the comparative tracking indices of solid insulating materials",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60127",
+      "standard_id": "IS/IEC 60127",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60127)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8504",
+      "standard_id": "IS 8504",
+      "title": "Indian Standard Specification / Test Method (IS 8504)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9968 (PART 1)",
+      "standard_id": "IS 9968 (Part 1):1988",
+      "title": "Elastomer insulated cables, Part 1: For working voltages upto and including 1 100 V",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9968 (PART 2)",
+      "standard_id": "IS 9968 (Part 2):2002",
+      "title": "Elastomer-insulated Cables, Part 2: For Working Voltages from 3.3 kV up to and Including 3 3kV",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5921",
+      "standard_id": "IS 5921",
+      "title": "Indian Standard Specification / Test Method (IS 5921)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13730",
+      "standard_id": "IS 13730",
+      "title": "Indian Standard Specification / Test Method (IS 13730)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 302 (PART 1)",
+      "standard_id": "IS 302 (Part 1):2008",
+      "title": "Safety of household and similar electrical appliances, Part 1: General Requirements",
+      "division_code": "ETD",
+      "aspect": "Safety Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Electronics & IT Goods (Compulsory Registration) Order - "
+    },
+    {
+      "is_number": "IS 2032",
+      "standard_id": "IS 2032",
+      "title": "Indian Standard Specification / Test Method (IS 2032)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7809",
+      "standard_id": "IS 7809",
+      "title": "Indian Standard Specification / Test Method (IS 7809)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15382 (PART 1)",
+      "standard_id": "IS 15382 (Part 1):2003",
+      "title": "Insulation Coordination for Equipment within Low-Voltage Systems, Part 1: Principles, Requirements and Tests",
+      "division_code": "ETD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15382 (PART 3)",
+      "standard_id": "IS 15382 (Part 3):2006",
+      "title": "Insulation coordination for equipment within low-voltage systems, Part 3: use of coating potting or moulding for protection against pollution",
+      "division_code": "ETD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11000 (PART 2/SEC 2)",
+      "standard_id": "IS 11000 (PART 2/SEC 2)",
+      "title": "Indian Standard Specification / Test Method (IS 11000 (PART 2/SEC 2))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11731 (PART 1)",
+      "standard_id": "IS 11731 (Part 1):1986",
+      "title": "Methods of test for determination of the flammability of solid electrical insulating materials when exposed to an igniting source, Part 1: Horizontal specimen method",
+      "division_code": "ETD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11731 (PART 2)",
+      "standard_id": "IS 11731 (Part 2):1986",
+      "title": "Methods of Test for Determination of Flammability of Solid Electrical Insulating Materials When Exposed to An Igniting Source, Part 2: Vertical Specimen Method",
+      "division_code": "ETD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13778 (PART 3)",
+      "standard_id": "IS 13778 (Part 3):2012",
+      "title": "Winding wires - Test methods, Part 3: Mechnical Properties",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 261",
+      "standard_id": "IS/ISO 261",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 261)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 262",
+      "standard_id": "IS/ISO 262",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 262)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 306",
+      "standard_id": "IS/ISO 306",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 306)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13778 (PART 5)",
+      "standard_id": "IS 13778 (Part 5):2012",
+      "title": "Winding Wires – Test Methods, Part 5: Electrical Properties",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13778 (PART 6)",
+      "standard_id": "IS 13778 (Part 6):2011",
+      "title": "Winding Wires - Test Methods, Part 6: Thermal properties",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 00",
+      "standard_id": "IS 00",
+      "title": "Indian Standard Specification / Test Method (IS 00)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4218 (PART 2)",
+      "standard_id": "IS 4218 (Part 2):2001",
+      "title": "ISO General Purpose Metric Screw Threads, Part 2: General Plan",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 421",
+      "standard_id": "IS 421",
+      "title": "Indian Standard Specification / Test Method (IS 421)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61293",
+      "standard_id": "IS/IEC 61293",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61293)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61558",
+      "standard_id": "IS/IEC 61558",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61558)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 62151",
+      "standard_id": "IS/IEC 62151",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 62151)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 7000",
+      "standard_id": "IS/ISO 7000",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 100",
+      "standard_id": "IS 100",
+      "title": "Indian Standard Specification / Test Method (IS 100)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1043",
+      "standard_id": "IS/ISO 1043",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1043)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2859",
+      "standard_id": "IS/ISO 2859",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2859)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9000",
+      "standard_id": "IS/ISO 9000",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade ii",
+    "Grade Vibration",
+    "Grade tests",
+    "10 K",
+    "65 K",
+    "55 K",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_616"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "ash capacitors, which should be 85 %",
+      "ash capacitor, which shall be 85 %"
+    ],
+    "electrical_and_safety_parameters": [
+      "clearances and creepage distances 132 A",
+      "clearances 143 A",
+      "Rated voltages up to and including 450/750 V",
+      "Temperature rises shall not exceed the values specified in 7.1.1 to 7.1.5 inclusive. A",
+      "temperature rises of 10 K",
+      "temperature rises are based on a maximum ambient temperature of 35 °C",
+      "Flammability test"
+    ],
+    "dimensional_tolerances": [
+      "nominal diameter less than 3 mm"
+    ],
+    "marking_requirements": [
+      "b) A warning that terminals marked with the symbol according to 5.",
+      "The test is not applied to terminals marked with the symbol of 5."
+    ]
+  },
+  "total_chars_parsed": 372661
+}

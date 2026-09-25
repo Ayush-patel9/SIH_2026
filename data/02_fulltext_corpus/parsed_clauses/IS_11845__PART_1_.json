@@ -1,0 +1,82 @@
+{
+  "is_number": "IS IS_11845__PART_1_",
+  "standard_id": "IS IS_11845__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_11845__PART_1_)",
+  "ia_identifier": "IS_11845__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This part of ISO 5784 specifies rules for the use of supply or exhaust symbols in basic logic systems needed by the user for better understanding of pipe connections. This system of symbols may be used to define functions as well as for diagram circuitry. The rules specified in this part of ISO 5784 are applicable to any type of fluid power binary logic device, with or without moving parts. ISO 5784-1 : 1988, Fluid power systems and components — Fluid logic circuits — Part 1 : Symbols for binary logic and related functions. IEC 617-12: 1983, Graphical symbols for diagrams - Part 12 : Binary logic elements. 3 Definitions For the purposes of this part of ISO 5784, the definitions given in ISO 5598 apply.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11845 (PART 2)",
+      "standard_id": "IS 11845 (Part 2):1995",
+      "title": "Fluid logic circuits for fluid power systems, Part 2: Symbols for supply and exhausts as related to logic symbols",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5784",
+      "standard_id": "IS/ISO 5784",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5784)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1219",
+      "standard_id": "IS/ISO 1219",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1219)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 5598",
+      "standard_id": "IS/ISO 5598",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5598)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 617",
+      "standard_id": "IS/IEC 617",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 617)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11845__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 12149
+}

@@ -1,0 +1,64 @@
+{
+  "is_number": "IS IS_11644",
+  "standard_id": "IS IS_11644",
+  "title": "Indian Standard Specification / Test Method (IS IS_11644)",
+  "ia_identifier": "IS_11644",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard specifies the tolerances of form and position applicable to all types of metric bolts and screws in nominal diameter range 3 to 24 mm used in aerospace construction.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 7913",
+      "standard_id": "IS/ISO 7913",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 7913)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8000 (PART 1)",
+      "standard_id": "IS 8000 (Part 1):1985",
+      "title": "Geometrical tolerancing on Technical Drawings, Part 1: Tolerances of form orientation, location and Run-out and appropriate geometrical definitions",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8000 (PART 2)",
+      "standard_id": "IS 8000 (Part 2):1992",
+      "title": "Technical drawings - Geometrical tolerancing, Part 2: Maximum material principles",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11644"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "nominal diameter range 3 to 24 mm",
+      "tolerances shall conform to Table 2 for nominal thread diameter from 3 to 24 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 10050
+}

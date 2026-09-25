@@ -1,0 +1,313 @@
+{
+  "is_number": "IS IS_12",
+  "standard_id": "IS IS_12",
+  "title": "Indian Standard Specification / Test Method (IS IS_12)",
+  "ia_identifier": "IS_12",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard applies to plugs and fixed or portable socket-outlets for ac only, with and without earthing contact, with a rated voltage not exceeding 250 V and a rated current not exceeding 16 A intended for household and similar purposes, either indoors or outdoors. The rated current is limited to 16 A maximum for fixed socket-outlets provided with screwless terminals. This standard does not cover requirement for flush mounting boxes, however it covers only those requirements for surface-type mounting boxes which are necessary for the tests on the socket-outlet. This standard applies also to plugs incorporated in cord sets and to plugs and portable socket-outlets incorporated in cord extension sets. It also applies to plugs and socket-outlets which are a component of an appliance, unless otherwise stated in the standard for the relevant appliance. This standard does not apply to, a) plugs, socket-outlets and couplers for industrial purposes. b) appliance couplers. c) plugs, fixed and portable socket-outlets for extra low voltage (ELV). NOTE — ELV values are specified in relevant ELV standard, if any. d) fixed socket-outlets combined with fuses, automatic switches, etc. In locations where special conditions prevail, as in ships, vehicles and the like, and in hazardous locations, for example, where explosions are liable to occur, special constructions may be required. NOTES 1 General requirements for mounting boxes are given in IS 14772.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/IEC 60884",
+      "standard_id": "IS/IEC 60884",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60884)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14772",
+      "standard_id": "IS 14772:2020",
+      "title": "General Requirements for Enclosures for Accessories for Household and Similar Fixed Electrical Installations - Specification",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60320",
+      "standard_id": "IS/IEC 60320",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60320)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60529",
+      "standard_id": "IS/IEC 60529",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60529)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61058 (PART 1)",
+      "standard_id": "IS/IEC 61058 (PART 1)",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61058 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60068",
+      "standard_id": "IS/IEC 60068",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60068)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5133",
+      "standard_id": "IS 5133",
+      "title": "Indian Standard Specification / Test Method (IS 5133)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885 (PART 74)",
+      "standard_id": "IS 1885 (Part 74):2012",
+      "title": "Electrotechnical Vocabulary, Part 74: Electrical and magnetic devices",
+      "division_code": "ETD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10332",
+      "standard_id": "IS 10332:1982",
+      "title": "Hydrofluoric acid, aqueous",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1401",
+      "standard_id": "IS 1401:2008",
+      "title": "Protection of persons and equipment by enclosures - Probes for verification",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14763",
+      "standard_id": "IS 14763:2000",
+      "title": "Conduits for Electrical Purposes - Outside Diameters of Conduits for Electrical Installation and Threads for Conduits and Fittings -",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 694",
+      "standard_id": "IS 694:2010",
+      "title": "POLYVINYL CHLORIDE INSULATED UNSHEATHED AND SHEATHED CABLES/CORDS WITH RIGID AND FLEXIBLE CONDUCTOR FOR RATED VOLTAGES UP TO AND INCLUDING 450/750 V",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 9968 (PART 1)",
+      "standard_id": "IS 9968 (Part 1):1988",
+      "title": "Elastomer insulated cables, Part 1: For working voltages upto and including 1 100 V",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4160",
+      "standard_id": "IS 4160:2005",
+      "title": "Interlocking switch socket outlet, Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 70",
+      "standard_id": "IS 70:1980",
+      "title": "cuprous oxide for paints",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 292",
+      "standard_id": "IS 292:1983",
+      "title": "Leaded Brass Ingots and Castings",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 275",
+      "standard_id": "IS 275",
+      "title": "Indian Standard Specification / Test Method (IS 275)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 30",
+      "standard_id": "IS 30",
+      "title": "Indian Standard Specification / Test Method (IS 30)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 14340",
+      "standard_id": "IS 14340:1996",
+      "title": "Brass for current carrying parts in electrical wiring accessories",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11000",
+      "standard_id": "IS 11000",
+      "title": "Indian Standard Specification / Test Method (IS 11000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2824",
+      "standard_id": "IS 2824:2007",
+      "title": "Method for determining of the proof and the comparative tracking indices of solid insulating materials",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 100",
+      "standard_id": "IS 100",
+      "title": "Indian Standard Specification / Test Method (IS 100)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 200",
+      "standard_id": "IS 200:1989",
+      "title": "Textiles - Determination of Copper Number of Cotton Textile Materials",
+      "division_code": "MTD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3854",
+      "standard_id": "IS 3854:2023",
+      "title": "Switches For Domestic And Similar Purposes - Specification",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61058",
+      "standard_id": "IS/IEC 61058",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61058)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade reference",
+    "Grade of",
+    "Grade Terminal",
+    "Grade Socket",
+    "Grade rrous",
+    "Grade Rated",
+    "Grade ification",
+    "Grade Terminals",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "rated voltage not exceeding 250 V",
+      "rated voltage up to and including 250 V",
+      "rated voltage of the equipment. A",
+      "insulation resistance is measured using а d.c. v",
+      "rated voltage upto and including 250V",
+      "temperature rise, at any point, not exceeding 45°C"
+    ],
+    "dimensional_tolerances": [
+      "Tolerance: +0.2 mm",
+      "tolerance of 0 mm",
+      "tolerance of + 0.05 mm"
+    ],
+    "marking_requirements": [
+      "8.1 Accessories shall be marked with the following:",
+      "trade-mark or identification mark.",
+      "numeral shall also be marked.",
+      "shall also be marked.",
+      "attention shall be drawn to the fact that the resulting"
+    ]
+  },
+  "total_chars_parsed": 261053
+}

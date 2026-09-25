@@ -1,0 +1,52 @@
+{
+  "is_number": "IS IS_11091",
+  "standard_id": "IS IS_11091",
+  "title": "Indian Standard Specification / Test Method (IS IS_11091)",
+  "ia_identifier": "IS_11091",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes the method of test for degree of curl and degree of sizing of paper. 2- TERMINOLOGY 2.1 For the purpose of this standard the definitions given in IS : 4661-1968t shall apply. 3. APPARATUS * Hulcs lor rounding off numerical values ( revised ). t Glossary of terms used in paper trade and industry. is : 11091 - 1984 3.1 The apparatus, shown in Fig. 1, consists of a float having near the centre a rectangular wetting aperture about 50 milhmetres long and a width L which is adjustable from zero to about 25 millimetres. A stop H IS provided to hold one end of the curling specimen at a fixed angle F with respect to the horizontal. A scale with stippled surface, graduated in degrees, is fastened to the float to indicate the movement of the pointed end of the curling specimen. 3.2 Stop watch or other suitable timing device. ^^/^^^J^Jl^l^l^^^^^^ 'FLOAT aperture^l Fig. 1 Curl Tester 3.3 Vessel container distilled water at 27 ± TQ 4. TEST SPECIMEN 4.1 From each test unit of the sample cut specimen in the shape of a right trapezoid having an altitude of 40 millimetres in the machine direction and bases of 40 millimetres and 70 millimetres extending in the cross direction. 5. PROCEDURE 5.1 Condition the test specimen as prescribed in 5 of IS : 1060 ( Part 1 )- 1966*. 5.2 Degree of Curl — Put the float on water, place ihe square end of the trapezoidal specimen under the stop with the longest, pointed side next to the scale, and allow the specimen to fall across the aperture and become wet over that area. Read the scale angle reached by the point of the specimen at the instant the direction of curling reverses. If this angle is less than 30 or more than 60 degrees, adjust the width of the aperture ♦Methods of sampling and test for paper and allied products, Part 1 ( revised). IS: 11091 -1984 until the angle lies within the desired range. In general, if the curve of the specimen departs noticeably from a circular cylindrical surface, reduce the width, in the cross direction, of the wetted portion of the specimen until the curve is substantially circular. Test in this manner at least five specimens for each side of the paper, making sure that the top of the lloat is dry before each test. Add the average scale angle to the horizontal { the fixed angle, about 30° ) which the square end of the specimen makes with the horizontal ). Divide this sum by the width in centimetres of the aperture used ( length of arc of wetted, curled portion of specimen i",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 4661",
+      "standard_id": "IS 4661:1999",
+      "title": "Glossary of terms used in paper trade and industry",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1060",
+      "standard_id": "IS 1060",
+      "title": "Indian Standard Specification / Test Method (IS 1060)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade deration",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11091"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 8454
+}

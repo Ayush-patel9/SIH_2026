@@ -1,0 +1,181 @@
+{
+  "is_number": "IS IS_12456",
+  "standard_id": "IS IS_12456",
+  "title": "Indian Standard Specification / Test Method (IS IS_12456)",
+  "ia_identifier": "IS_12456",
+  "division_code": "GEN",
+  "aspect": "Code of Practice",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard lays down the minimum requirements for the protection of electronic computer/data processing equipment from damage by fire covering the structural environment and its protection. NOTES 1 The requirements contained in this standard are applicable to installations for commercial electronic data processing (EDP) and industrial process control where substantial material damage and/or business interruption losses could occur. They are not intended to cover tabletop or desk type computers or remote terminals or micro-processors (having limited value concentration) although they may be used as a guide for the protection of this type of equipment. This document may also be useful where a small group of desk type computers are installed in a certain location.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 3809",
+      "standard_id": "IS 3809:1979",
+      "title": "Fire resistance test for structures",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3808",
+      "standard_id": "IS 3808:1979",
+      "title": "Method of test for non-combustibility of building materials",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3614",
+      "standard_id": "IS 3614:2021",
+      "title": "Fire Doors and Doorsets-Specification",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 36",
+      "standard_id": "IS 36",
+      "title": "Indian Standard Specification / Test Method (IS 36)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1646",
+      "standard_id": "IS 1646:2015",
+      "title": "Fire Safety of Buildings (General): Electrical Installations - Code of Practice ( Third Revision )",
+      "division_code": "ETD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1554",
+      "standard_id": "IS 1554",
+      "title": "Indian Standard Specification / Test Method (IS 1554)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "SP 30",
+      "standard_id": "SP 30:2023",
+      "title": "SP 30 : 2023: National Electrical Code Of India 2023 This standard is available as a pre-printed copy for purchase. However, if you still wish to download the soft copy of the Standard you may proceed with that. Print price :8330.00 INR (in India) (For Printed copies please contact BSBEdge.)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2189",
+      "standard_id": "IS 2189:2008",
+      "title": "Selection, Installation and Maintenance of Automatic Fire Detection and Alarm System Code of Practice",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11360",
+      "standard_id": "IS 11360:1985",
+      "title": "Specification for smoke detectors for use in automatic electrical fire alarm system",
+      "division_code": "ETD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15105",
+      "standard_id": "IS 15105:2021",
+      "title": "Design and Installation of Fixed Automatic Sprinkler Fire Extinguishing Systems - Code of Practice",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15493",
+      "standard_id": "IS 15493:2021",
+      "title": "Gaseous Fire Extinguishing Systems - General Requirements First Revision",
+      "division_code": "PGD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15528",
+      "standard_id": "IS 15528:2004",
+      "title": "Gaseous Fire Extinguishing Systems - Carbon Dioxide Total Flooding and Local Application ( Sub-Floor and In-Cabinet), High and Low Pressure (Refrigerated) Systems",
+      "division_code": "LITD",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2878",
+      "standard_id": "IS 2878:2004",
+      "title": "Fire Extinguisher, Carbon Dioxide Type (Portable and Trolley Mounted) -Specification",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Fire Fighting Equipment (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 940",
+      "standard_id": "IS 940:2003",
+      "title": "Specification for Portable Fire Extinguisher, Water Type (Gas Cartridge) -",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2190",
+      "standard_id": "IS 2190:2010",
+      "title": "SELECTION, INSTALLATION AND MAINTENANCE OF FIRST-AID FIRE EXTINGUISHERS — CODE OF PRACTICE",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12456"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 50730
+}

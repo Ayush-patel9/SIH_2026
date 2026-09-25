@@ -1,0 +1,81 @@
+{
+  "is_number": "IS IS_12462",
+  "standard_id": "IS IS_12462",
+  "title": "Indian Standard Specification / Test Method (IS IS_12462)",
+  "ia_identifier": "IS_12462",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12462) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_12462).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 7917",
+      "standard_id": "IS 7917:1994",
+      "title": "Freight Containers - Air/Surface (Intermodal) General Purpose Containers and Tests",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7917 (PART 2)",
+      "standard_id": "IS 7917 (PART 2)",
+      "title": "Freight Containers - Air/Surface (Intermodal) General Purpose Containers and Tests (IS 7917 (PART 2))",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7694",
+      "standard_id": "IS 7694:1992",
+      "title": "Series 1 Freight Containers - Corner Fittings",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7622",
+      "standard_id": "IS 7622:2001",
+      "title": "Series 1 Freight Containers - Handling and Securing",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 6965",
+      "standard_id": "IS/ISO 6965",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 6965)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12462"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 8071
+}

@@ -1,0 +1,64 @@
+{
+  "is_number": "IS IS_12533",
+  "standard_id": "IS IS_12533",
+  "title": "Indian Standard Specification / Test Method (IS IS_12533)",
+  "ia_identifier": "IS_12533",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies the sizes of paper in rolls for phototypesetting and photolettering devices. The method of marking packed paper has also been covered.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 125",
+      "standard_id": "IS 125",
+      "title": "Indian Standard Specification / Test Method (IS 125)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5381",
+      "standard_id": "IS 5381",
+      "title": "Indian Standard Specification / Test Method (IS 5381)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12533"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "7.1 Each package shall be marked with, besides",
+      "the paper contained in it.",
+      "7.2 The packages may also be marked with the",
+      "No IE — The use of the Standard Mark is governed",
+      "Act 1986 and the Rules and Regulations made thereunder. The Standard Mark on products covered by an"
+    ]
+  },
+  "total_chars_parsed": 5204
+}

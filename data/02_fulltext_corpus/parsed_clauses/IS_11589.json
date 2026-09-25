@@ -1,0 +1,65 @@
+{
+  "is_number": "IS IS_11589",
+  "standard_id": "IS IS_11589",
+  "title": "Indian Standard Specification / Test Method (IS IS_11589)",
+  "ia_identifier": "IS_11589",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers requirements for jump stands used in gymnastics.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 9195",
+      "standard_id": "IS 9195",
+      "title": "Indian Standard Specification / Test Method (IS 9195)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 738",
+      "standard_id": "IS 738:1994",
+      "title": "Wrought aluminium alloys, drawn tube for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9195 (PART 1)",
+      "standard_id": "IS 9195 (Part 1):1979",
+      "title": "Gymnasium Equipment, Part I: General Requirements",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade deration",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11589"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "5.1 The jump stands shall be prominently marked with the",
+      "manufacturer's name, initials or recognized trade-mark.",
+      "5.1.1 The jump stands may also be marked with the ISI Certification",
+      "Note — The use of the ISI Certification Mark is governed by the provisions of",
+      "the Indian Standards Institution ( Certification Marks ) Act and the Rules and Regulations made thereunder. The ISI Mark on products covered by an Indian Standard"
+    ]
+  },
+  "total_chars_parsed": 11094
+}

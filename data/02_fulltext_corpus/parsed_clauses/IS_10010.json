@@ -1,0 +1,82 @@
+{
+  "is_number": "IS IS_10010",
+  "standard_id": "IS IS_10010",
+  "title": "Indian Standard Specification / Test Method (IS IS_10010)",
+  "ia_identifier": "IS_10010",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes a method for evaluating the strength and shade of a pigment dispersion by printing.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1070",
+      "standard_id": "IS 1070:2023",
+      "title": "Reagent Grade Water Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "CHEMICAL_ANALYSIS",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1745",
+      "standard_id": "IS 1745:2018",
+      "title": "Petroleum Hydrocarbon Solvents - Specification (Third Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1459",
+      "standard_id": "IS 1459:2018",
+      "title": "Kerosene — Specification ( Fourth Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6448",
+      "standard_id": "IS 6448:2018",
+      "title": "Diammonium Phosphate - Speciification ( Third Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1781",
+      "standard_id": "IS 1781:2022",
+      "title": "Urea, Technical-Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade rtilizers",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10010"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 16880
+}

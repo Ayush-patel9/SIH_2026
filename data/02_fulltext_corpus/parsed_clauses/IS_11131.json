@@ -1,0 +1,74 @@
+{
+  "is_number": "IS IS_11131",
+  "standard_id": "IS IS_11131",
+  "title": "Indian Standard Specification / Test Method (IS IS_11131)",
+  "ia_identifier": "IS_11131",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes the requirements and methods of tests for wooden casks and barrels from 10 to 300 litres capacity.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 707",
+      "standard_id": "IS 707:2011",
+      "title": "Timber Technology And Utilization of Wood, Bamboo and Cane - Glossary of Terms",
+      "division_code": "CED",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6703",
+      "standard_id": "IS 6703:1972",
+      "title": "Glossary of wooden packaging terms",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 287",
+      "standard_id": "IS 287:1993",
+      "title": "Permissible Moisture Content For Timber Used For Different Purposes - Recommendations",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7028",
+      "standard_id": "IS 7028",
+      "title": "Indian Standard Specification / Test Method (IS 7028)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade deration",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11131"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "moisture content not exceeding 15 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 12148
+}

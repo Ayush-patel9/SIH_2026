@@ -1,0 +1,7873 @@
+**************** 
+
+
+
+^ tOTH: 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live" 
+
+
+
+Jawaharlal Nehru 
+"Step Out From the Old to the New" ' 
+
+
+
+IS 15077-1 (2012): Semiconductor Optoelectronic Devices for 
+Fibre Optic System Applications, Part 1: Specification 
+Template for Essential Ratings and Characteristics [LITD 
+11: Fibre Optics, Fibers, Cables, and Devices] 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+
+Bhartrhari — Nitisatakam 
+"Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+
+BLANK PAGE 
+
+
+
+
+^*-:gv 
+
+
+
+
+^^35^* 
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+Indian Standard 
+
+SEMICONDUCTOR OPTOELECTRONIC DEVICES 
+FOR FIBRE OPTIC SYSTEM APPLICATIONS 
+
+PART 1 SPECIFICATION TEMPLATE FOR 
+ESSENTIAL RATINGS AND CHARACTERISTICS 
+
+( First Revision ) 
+
+
+
+ICS 33.1 80.01 ;31 .260;31 .080.01 
+
+
+
+© BIS 2012 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+August 2012 Price Group 11 
+
+
+
+Fibre Optics, Fibres, Cables and Devices Sectional Committee, LITD 1 1 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard (Part 1 ) (First Revision) which is identical with lEC 62007-1 : 2008 'Semiconductor 
+optoelectronic devices for fibre optic system applications — Part 1 : Specification template for essential 
+ratings and characteristics' issued by the International Electrotechnical Commission (lEC) was adopted 
+by the Bureau of Indian Standards on the recommendation of the Fibre Optics, Fibres, Cables and 
+Devices Sectional Committee and approval of the Electronics and Information Technology Division 
+Council. 
+
+
+
+This standard was originally published in 2002 which was identical with lEC 62007-1 
+now been revised to align it with the latest version of lEC 62007-1 : 2008. 
+
+
+
+1997 and has 
+
+
+
+The text of lEC Standard has been approved as suitable for publication as an Indian Standard without 
+deviations. Certain conventions are, however, not identical to those used in Indian Standards. Attention 
+is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should 
+be read as 'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker while in Indian Standards, the current 
+practice is to use a point (.) as the decimal marker. 
+
+
+
+In this adopted standard, reference appears to certain International Standards for which Indian 
+Standards also exist. The corresponding Indian Standards which are to be substituted in their respective 
+places are listed below along with their degree of equivalence for the editions indicated: 
+
+
+
+International Standard 
+
+lEC 60747-5-1 : 1997 Discrete 
+semiconductor devices and 
+integrated circuits — Part 5-1: 
+Optoelectronic devices — General 
+
+lEC 60825-2 : 1993 Safety of laser 
+products — Part 2: Safety of optical 
+fibre communication system (OFCS) 
+
+
+
+Corresponding Indian Standard 
+
+IS 14901 (Part 5/Sec 1) : 2011 
+Semiconductor devices — Discrete 
+devices and integrated circuits: 
+Part 5 Optoelectronic devices. 
+Section 1 General {first revision) 
+
+IS 14624 (Part 2) : 1998 Safety of 
+laser products: Part 2 Safety of 
+optical fibre communication system 
+(OFCS) 
+
+
+
+Degree of Equivalence 
+Identical 
+
+
+
+do 
+
+
+
+The technical committee has reviewed the provision of the following International Standard referred 
+in this adopted standard and has decided that it is acceptable for use in conjunction with this standard: 
+
+
+
+International Standard 
+
+lEC 60825 (All parts except Part 2) 
+
+
+
+Title 
+Safety of laser products 
+
+
+
+For the purpose of deciding whether a particular requirement of this standard is complied with, the 
+final value, observed or calculated, expressing the result of a test or analysis, shall be rounded off in 
+accordance with IS 2 : 1960 'Rules for rounding off numerical values {revised)'. The number of 
+significant places retained in the rounded off value should be the same as that of the specified value 
+in this standard. 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+Indian Standard 
+
+SEMICONDUCTOR OPTOELECTRONIC DEVICES 
+FOR FIBRE OPTIC SYSTEM APPLICATIONS 
+
+PART 1 SPECIFICATION TEMPLATE FOR 
+ESSENTIAL RATINGS AND CHARACTERISTICS 
+
+
+
+( First Revision ) 
+
+
+
+1 Scope and object 
+
+
+
+This part of lEC 62007 is a specification tempiate for essentiai ratings and cinaracteristics of 
+tine foiiowing categories of semiconductor optoeiectronic devices to be used in tine field of fibre 
+optic systenns and subsystenns: 
+
+- semiconductor photoemitters; 
+
+- semiconductor photoelectric detectors; 
+
+- monolithic or hybrid integrated optoelectronic devices and their modules. 
+
+The object of this performance specification template is to provide a frame for the preparation 
+of detail specifications for the essential ratings and characteristics. 
+
+Detail specification writers may add specification parameters and/or groups of specification 
+parameters for particular applications. However, detail specification writers may not remove 
+specification parameters specified in this standard. 
+
+2 Normative references 
+
+The following referenced documents are indispensable for the application of this document. For 
+dated references, only the edition cited applies. For undated references, the latest edition of 
+the referenced document (including any amendments) applies. 
+
+lEC 60825 (all parts). Safety of laser products 
+
+lEC 60747-5-1, Discrete semiconductor devices and integrated circuits - Part 5-1: 
+Optoelectronic devices - General 
+
+3 Terms, definitions and abbreviations 
+
+For the purposes of this document, the following terms, definitions and abbreviations apply, as 
+well as terms and definitions concerning physical concepts, types of devices, general terms, 
+and ratings and characteristics given in lEC 60747-5-1. 
+
+3.1 Terms and definitions 
+
+3.1.1 
+
+PIN photodiode 
+
+photodiode with a large intrinsic region sandwiched between p- and n-doped semiconducting 
+regions used for the detection of optical radiation 
+
+NOTE Adapted from lEV 731-06-29, specialized 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+3.1.2 
+
+avalanche photodiode 
+
+APD 
+
+photodiode operating witin a bias voltage sucin tinat tine primary pinotocurrent undergoes 
+
+ampiification by cumuiative muitipiication of cliarge carriers. 
+
+NOTE Adapted from lEV 731-06-30, specialized. 
+
+3.1.3 
+
+relative intensity noise 
+
+RIN 
+
+quotient of tine radiant power mean square fluctuations < AOg > to the mean square radiant 
+power <Oe>^. normalized to a frequency band of unit width 
+
+NOTE RIN is usually expressed in dB/Hz. 
+
+RIN= lOlog^ojc AOg >/(< Og >^ X Afjj 
+
+3.1.4 
+spectral shift 
+
+deviation of the peak-emission wavelength at a particular case temperature or a particular 
+forward current from its value at a specified reference case temperature or a specified 
+reference forward current, respectively 
+
+NOTE The specific reference temperature is usually 25 °C. 
+
+3.1.5 
+
+input reflection coefficient 
+
+quotient of the high frequency reflected voltage to the high frequency incident voltage 
+
+3.1.6 
+tracking error 
+
+^tr 
+
+deviation of the radiant power at a particular case temperature from its value at a specified 
+reference case temperature 
+
+NOTE 1 The specific reference temperature is usually 25 °C. 
+
+NOTE 2 Specifications usually refer to the maximum deviation (absolute value) in two specified temperature 
+ranges below and above the specified reference case temperature. 
+
+NOTE 3 The tracking error is usually expressed as a percentage of the radiant power at the reference case 
+temperature. 
+
+3.1.7 
+
+(diode) responsivity Rq, R (of a photodiode) 
+
+quotient of the photocurrent /„ by the radiant power Og at the optical port of the photodiode 
+
+NOTE 1 If no ambiguity is likely to occur, the shorter term and letter symbol may be used. 
+NOTE 2 "Photodiode" means a complete device such as: 
+
+chip itself; 
+
+packaged component with window or pigtail. 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+3.1.8 
+
+excess noise factor 
+
+noise resulting from tine spatiai and timing fluctuations of tine avalanche carrier multiplication: it 
+is defined as the ratio of the noise power at a specified reverse bias to the amplified shot noise 
+of the photocurrent at a reference reverse bias 
+
+NOTE The reference reverse voltage should be sufficiently low that no carrier multiplication takes place but 
+sufficiently large that the device is fully depleted and has achieved its rated speed and responsivity. 
+
+3.2 Abbreviations 
+
+3.2.1 
+TEC 
+
+thermo-electric cooler 
+
+3.2.2 
+TIA 
+
+transimpedance amplifier 
+
+3.2.3 
+LED 
+
+light emitting diode 
+
+3.2.4 
+LD 
+
+laser diode 
+
+3.2.5 
+APD 
+
+avalanche photodiode 
+
+4 LEDs for fibre optic systems or subsystems 
+
+4.1 Type 
+
+Ambient-rated or case-rated LED with or without optical fibre pigtail for fibre optic systems or 
+subsystems. 
+
+4.2 Semiconductor materials 
+
+GaAs, GaAIAs, InGaAs, InP, etc. 
+
+4.3 Details of outline and encapsulation 
+
+4.3.1 lEG and/or national reference number of outline drawing. 
+
+4.3.2 Method of encapsulation: glass/metal/plastic/other. 
+
+4.3.3 Terminal identification and indication of any electrical connection between a terminal 
+and the case. 
+
+4.3.4 Characteristics of the optical port: relative orientation to mechanical axis, relative 
+position to mechanical axis, area, numerical aperture. 
+
+4.3.5 For devices with pigtail: information on the pigtail fibre, kind of protection, connector, 
+length. 
+
+3 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+4.3.6 Information on the heat sink of the pacl<age. 
+
+4.4 Limiting values (absolute maximum ratings) over the operating temperature range, 
+unless otherwise stated 
+
+
+
+Table 1 - Limiting values for LEDs 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Min. 
+
+
+IVIax. 
+
+
+4.4.1 
+
+
+Storage temperature 
+
+
+Tstg 
+
+
+X 
+
+
+X 
+
+
+4.4.2 
+
+either 4.4.2.1 
+
+or 4.4.2.2 
+
+
+Temperature 
+Ambient temperature 
+Case temperature 
+
+
+Tamh 
+Tease 
+
+
+X 
+X 
+
+
+X 
+X 
+
+
+4.4.3 
+
+
+Soldering temperature at maximum soldering time 
+and minimum distance to case specified 
+
+
+Tsia 
+
+
+
+
+X 
+
+
+4.4.4 
+
+
+Reverse voltage 
+
+
+Vr 
+
+
+
+
+X 
+
+
+4.4.5 
+
+
+Continuous forward current 
+Derating curve or derating factor 
+
+
+If 
+
+
+
+
+X 
+
+
+4.4.6 
+
+
+Repetitive peak forward current at specified pulse 
+
+conditions (where appropriate) 
+
+Derating curve or derating factor (where appropriate) 
+
+
+/frm 
+
+
+
+
+X 
+
+
+4.4.7 
+
+
+Power dissipation 
+
+Derating curve or derating factor (where appropriate) 
+
+
+Ptot 
+
+
+
+
+X 
+
+
+4.4.8 
+
+
+For case-rated devices: 
+
+Virtual junction temperature (where appropriate) 
+
+
+7-vj 
+
+
+
+
+X 
+
+
+4.4.9 
+
+
+For devices with pigtail: 
+
+Bend radius of pigtail (at specified distance from the 
+
+case) 
+
+
+r 
+
+
+X 
+
+
+
+
+4.4.10 
+
+
+Shock 
+
+
+
+
+
+
+X 
+
+
+4.4.11 
+
+
+Vibration 
+
+
+
+
+
+
+X 
+
+
+4.4.12 
+4.4.12.1 
+
+4.4.12.2 
+
+
+Tensile force on devices with pigtail: 
+
+Untight structure: 
+
+- Tensile force on fibre along its axis 
+
+- Tensile force on cladding along its axis 
+
+Tight structure: 
+
+- Tensile force on pigtail along its axis 
+
+
+F 
+F 
+
+F 
+
+
+
+
+X 
+X 
+
+X 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+4.5 Electrical and optical characteristics 
+
+Table 2 - Electrical and optical characteristics for LEDs 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Conditions at T^^^ or r^ase = 25 °C 
+unless otherwise stated 
+
+
+Symbols 
+
+
+Requirements 
+
+
+IVIin. 
+
+
+Max. 
+
+
+4.5.1 
+
+
+Forward voltage 
+
+
+/p or Og specified 
+
+
+Vf 
+
+
+
+
+X 
+
+
+4.5.2 
+
+
+Reverse current 
+
+
+Kr specified 
+
+
+Ir 
+
+
+
+
+X 
+
+
+4.5.3 
+
+
+Differential resistance 
+
+
+/p or <l)e specified 
+
+
+rd 
+
+
+
+
+X 
+
+
+4.5.4 
+
+
+Total capacitance 
+
+
+Kpj,/ specified 
+
+
+Ctot 
+
+
+
+
+X 
+
+
+4.5.5 
+
+either 
+4.5.5.1 
+
+or 4.5.5.2 
+
+
+Noise parameter 
+
+Relative intensity noise 
+(where appropriate) 
+
+Carrier-to-noise ratio (where 
+appropriate) 
+
+
+/p or Oe./o, A/n specified 
+
+/p or Oe,/e, A/n, A,, m specified 
+
+
+RIN 
+
+C/N 
+
+
+
+
+X 
+X 
+
+
+4.5.6 
+
+either 
+4.5.6.1 
+
+or 4.5.6.2 
+
+
+Output parameter 
+Radiant output power 
+
+Forward current 
+
+
+/p specified (d.c. or pulse, or both) 
+cDg specified 
+
+
+
+
+X 
+
+x^ 
+
+
+X^ 
+X 
+
+
+4.5.7 
+
+
+For devices without pigtail: 
+Half-intensity angle (where 
+appropriate) 
+
+
+/p or Oe, angle (p specified 
+
+
+^1/2 
+
+
+
+
+X 
+
+
+4.5.8 
+
+
+For devices without pigtail: 
+Misalignment angle (where 
+appropriate) 
+
+
+/p or Og, angle ^ specified 
+
+
+Ae 
+
+
+
+
+X 
+
+
+4.5.9 
+
+
+Spectral radiation bandwidth 
+
+
+/p or Og specified 
+
+
+A/l 
+
+
+
+
+X 
+
+
+4.5.10 
+
+either 
+4.5.10.1 
+
+or 4.5.10.2 
+
+
+Bandwidth 
+
+Switching times: 
+
+- rise time 
+-fall time 
+
+- delay times (where 
+appropriate) 
+
+- peak emission wavelengths 
+
+Cut-off frequency 
+
+
+DC current, 
+
+input pulse current 
+
+pulse width and duty cycle specified 
+
+/p or Og specified 
+
+
+'r 
+
+'d(on)' 
+'d(off) 
+
+/c 
+
+
+X 
+
+
+X 
+X 
+X 
+X 
+
+
+^ Where appropriate. 
+
+
+
+4.6 Supplementary information 
+
+4.6.1 Typical curve or coefficient 
+
+Provide the curve or coefficient in 4.6.1.1 or 4.6.1.2. 
+
+4.6.1.1 Typical curve or coefficient of radiant power versus temperature and typicai curve of 
+radiant output power versus forward current (d.c. or puise, as specified). 
+
+4.6.1 .2 Typicai curve or coefficient of radiant intensity versus temperature and typicai curve of 
+radiant intensity versus forward current (d.c. or puise, as specified). 
+
+4.6.2 Typicai curve or coefficient of change in peak emission wavelength versus temperature. 
+
+4.6.3 Typicai radiation diagram. 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+4.6.4 Thermal resistance, ambient-rated or case-rated. 
+
+5 Laser module with pigtails 
+
+5.1 Type 
+
+Tine laser module consists of the following basic parts: 
+
+- laser diode 
+
+- pigtail 
+
+- photodiodes 
+
+- thermal sensor 
+
+- TEC element - 
+
+
+
+where appropriate 
+
+
+
+5.2 Semiconductor 
+
+5.2.1 Materials 
+
+The laser module consists of the following materials: 
+
+- laser diode e.g. GaAs, GaAIAs, InGaAsP, InP 
+
+- photodiode e.g. Ge, Si, GalnAs 
+
+- thermal sensor I where appropriate 
+
+- TEC element ' 
+
+5.2.2 Structure 
+
+Laser diode, e.g.: gain guided, index guided, distributed feedback, etc. 
+
+5.3 Details of outline and encapsulation 
+
+5.3.1 lEC and/or national reference number of the outline drawing. 
+
+5.3.2 Method of encapsulation: glass/metal/plastic/other. 
+
+5.3.3 Terminal identification and indication of any electrical connection between a terminal 
+and the case. 
+
+5.3.4 Information on the pigtail fibre, e.g.: type of fibre, kind of protection, connector, length. 
+
+5.3.5 Information on the heatsinking of the package. 
+
+5.4 Limiting values (absolute maximum ratings) over the operating temperature range, 
+unless otherwise stated 
+
+General conditions 
+
+5.4.1 Minimum and maximum storage temperatures (I'stg)- 
+
+5.4.2 Minimum and maximum operating case temperatures (T'case)- 
+
+5.4.3 Minimum and maximum operating submount temperature (I'sub)- 
+
+5.4.4 Maximum soldering temperature (soldering time and minimum distance to case) {Tg\^). 
+6 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+5.4.5 Minimum bend radius of pigtaii (at specified distance from tine case) (r). 
+
+5.4.6 Slnocl< (maximum acceleration and puise duration). 
+
+5.4.7 Vibration (maximum acceleration and frequency range). 
+
+5.4.8 Tensile force along cable axis. 
+
+5.4.8.1 Untight structure: 
+
+- Maximum tensile force on fibre (F). 
+
+- Maximum tensile force on cable {F). 
+
+5.4.8.2 Tight structure: 
+
+- Maximum tensile force on cable (F). 
+Laser diode 
+
+For laser module without TEC, derating curve or derating factor must be given for one of 
+following parameters, 5.4.10 to 5.4.13. For laser module with TEC, Tg^jt, equals to 25 °C. 
+
+5.4.9 Maximum reverse voltage (Fr). 
+
+5.4.10 Maximum continuous forward current (/p). 
+
+5.4.11 Maximum continuous radiant power (^g). 
+
+5.4.12 Maximum pulsed forward current at stated frequency and pulse duration (/pp)- 
+
+5.4.13 Maximum pulsed radiant power at stated frequency and pulse duration (^gp)- 
+Photodiode 
+
+5.4.14 Maximum reverse voltage (Fr). 
+
+5.4.15 Maximum forward current (/p). 
+Thermal sensor (where appropriate) 
+
+5.4.16 Maximum ratings 
+
+5.4.16.1 Maximum power dissipation (P). 
+
+or 
+
+5.4.16.2 Maximum voltage supply (F). 
+Thermoelectric cooler (where appropriate) 
+
+5.4.17 Maximum cooler current under cooling and heating (Ip^)- 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+5.5 Electric and optical characteristics 
+
+Table 3 - Electric and optical characteristics for laser modules with pigtails 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Conditions at T^ub = 25 °C 
+
+for laser with TEC, 
+
+Tamb or r,33e = 25 °C for laser 
+
+module without TEC 
+
+unless otherwise stated 
+
+
+Symbols 
+
+
+Requirements 
+
+
+A. Laser diode 
+
+5.5.1 
+
+
+Forward voltage 
+
+
+If or Og specified 
+
+
+^F 
+
+
+
+
+Max. 
+
+
+5.5.2 
+
+
+Threshold current 
+
+
+
+
+Ath) 
+
+
+Min. 
+
+
+Max. 
+
+
+5.5.3 
+
+
+Radiant power at 
+threshold 
+
+
+Jf = 'm 
+
+
+^e(TH) 
+
+
+
+
+Max. 
+
+
+5.5.4 
+
+
+Forward current above 
+threshold (for laser 
+module without TEC) 
+
+
+Og specified 
+
+T = T-case max. or Tg^b max. 
+
+
+A/p 
+
+
+
+
+Max. 
+
+
+5.5.5 
+
+
+Differential efficacy (for 
+laser module without 
+TEC) 
+
+
+Og or A/p specified 
+
+T = T^ase max. or Tg^b max. 
+
+
+Id 
+
+
+Min. 
+
+
+Max. 
+
+
+5.5.6 
+
+5.5.6.1 
+
+5.5.6.1.1 
+
+5.5.6.1.2 
+
+or 
+5.5.6.1.3 
+
+5.5.6.1.4 
+5.5.6.1.5 
+
+
+Spectral characteristics 
+
+Spectral characteristics 
+
+Peak emission 
+wavelength 
+
+Spectral radiation 
+bandwidth FWHM 
+
+Mode spacing and 
+number of longitudinal 
+modes 
+
+Peak emission 
+wavelength under 
+modulation 
+
+Spectral radiation 
+bandwidth under 
+modulation 
+
+
+<t>g or A/p specified 
+CW-operation 
+
+Og or A/p specified 
+CW-operation 
+
+<t>g or A/p specified 
+CW-operation 
+
+<t>g or A/p specified 
+modulation condition specified 
+
+Og or A/p specified 
+modulation condition specified 
+
+
+rim 
+
+
+Min. 
+Min. 
+
+
+Max. 
+Max. 
+Max. 
+
+Max. 
+
+Max. 
+
+
+5.5.6.2 
+
+and/or 
+5.5.6.2.1 
+
+5.5.6.2.2 
+
+or 
+5.5.6.2.3 
+
+5.5.6.2.4 
+5.5.6.2.5 
+
+
+Additional spectral 
+characteristics 
+
+Centroidal wavelength 
+
+Spectral radiation 
+r.m.s. bandwidth 
+
+Mode spacing and 
+number of longitudinal 
+modes 
+
+Central wavelength under 
+modulation 
+
+Spectral radiation r.m.s. 
+bandwidth under 
+modulation 
+
+
+Og or A/p specified 
+CW-operation 
+
+<t>g or A/p specified 
+<l>g or A/p specified 
+
+Og or A/p specified 
+modulation condition specified 
+
+<I>g or A/p specified 
+modulation condition specified 
+
+
+^avg 
+AAms " 
+
+rim 
+
+
+Min. 
+Min. 
+
+
+Max. 
+Max. 
+Max. 
+
+Max. 
+Max. 
+
+
+5.5.7 
+
+5.5.7.1 
+
+5.5.7.2 
+
+
+Single spectral mode laser r 
+modulation 
+
+Spectral mode width 
+
+Side-mode suppression 
+ratio 
+
+
+nodule under specified direct 
+
+Og or A/p specified 
+modulation condition specified 
+
+<l)g or A/p specified 
+modulation condition specified 
+
+
+A/Il 
+SMSR 
+
+
+Min. 
+
+
+Max. 
+
+
+5.5.8 
+
+
+Spectral shift 
+
+
+
+
+
+
+
+
+
+
+
+8 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Conditions at Tgub = 25 °C 
+
+for laser with TEC, 
+
+Tamb or T'case = 25 °C for laser 
+
+module without TEC 
+
+unless otherwise stated 
+
+
+Symbols 
+
+
+Requirements 
+
+
+5.5.8.1 
+5.5.8.2 
+
+
+Spectral shift for module 
+with TEC 
+
+Spectral shift for laser 
+module without TEC 
+
+
+^amb ^ or ^case ^' 
+
+
+A/lc 
+Aic 
+
+
+
+
+Max. 
+Max. 
+
+
+5.5.9 
+
+
+Transient parameters 
+
+
+
+
+
+
+
+
+
+
+5.5.9.1 
+
+and/or 
+5.5.9.2 
+
+
+Rise time, 
+fall time 
+
+Turn-on time, 
+turn-off time 
+
+
+\ 
+
+
+Bias current A/p or (*e 
+
+input pulse current, 
+
+width and duty cycle specified 
+
+
+*on' 
+<off 
+
+
+
+
+Max. 
+Max. 
+
+
+5.5.10 
+
+
+Cut-off frequency 
+
+
+<l>e or A/p specified 
+
+
+/c 
+
+
+Min. 
+
+
+Max. 
+
+
+5.5.11 
+
+
+Carrier-to-noise ratio 
+
+
+A/p or Og, A/, /^, m and/o specified 
+
+
+C/jV 
+
+
+Min. 
+
+
+
+
+B. Monitor pho 
+
+5.5.12 
+
+
+todiode 
+
+Dark current 
+
+
+Og = 
+
+Fr specified 
+
+
+'fr(O) 
+
+
+
+
+Max. 
+
+
+5.5.13 
+
+
+Reverse current under 
+optical radiation 
+
+
+Oe or A/p specified 
+Fp, specified 
+
+
+''R(e) 
+
+
+Min. 
+
+
+Max. 
+
+
+5.5.14 
+
+either 
+5.5.14.1 
+
+or 
+5.5.14.2 
+
+
+Diode capacitance or 
+rise/fall time 
+
+Diode capacitance 
+
+Rise time, 
+fall time 
+
+
+Fp, and /specified 
+
+Og or A/p specified 
+Fr specified 
+
+
+Qot 
+
+
+
+
+Max. 
+Max. 
+
+
+5.5.15 
+5.5.15.1 
+
+and/or 
+5.5.15.2 
+
+
+Tracking error 
+Tracking error 
+
+Tracking error 
+
+
+Og or A/p and Fr specified. 
+Temperature range: 25 °C to r^gse 
+min. or Tg^b min. 
+
+Og or A/p and Fr specified. 
+Temperature range: 25 °C to r^gse 
+min. or Tg^b min. 
+
+
+£ri 
+
+Er2 
+
+
+
+
+Max. 
+Max. 
+
+
+C. Thermistor 
+
+5.5.16 
+
+
+where appropriate) 
+
+Resistance 
+
+
+Thermistor current /,c specified 
+
+
+R 
+
+
+Min. 
+
+
+Max. 
+
+
+5.5.17 
+
+
+Slope of resistance 
+
+
+Thermistor current I^^ specified. 
+Temperature range: 
+
+Y a J. b 
+^ sub ' ^ sub 
+
+
+AR/R 
+
+
+Min. 
+
+
+Max. 
+
+
+D. TEC current 
+
+5.5.18 
+
+
+(where appropriate) 
+
+TEC current 
+
+
+Og or A/p specified, 
+Temperature range: r^asg min. or 
+Tease max. 
+
+
+IpE 
+
+
+
+
+Max. 
+
+
+5.5.19 
+
+
+TEC voltage 
+
+
+<t>g or A/p specified, 
+
+Temperature range: T^^^^ or Tg^b min. 
+
+and max. 
+
+
+FpE 
+
+
+
+
+Max. 
+
+
+^ CW-operation. 
+'' In modulation. 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+5.6 Supplementary information 
+
+5.6.1 DC forward current of the laser diode corresponding to (Z>eoo- 
+
+NOTE ^gpt,: radiant power value of the laser chip on submount, representative of the performance and reliability of 
+devices manufactured using the same technology and submitted to the same quality assurance procedures. 
+
+5.6.2 Response time of tine tinermistor temperature to tiie cliange of cooier current (wiiere 
+appropriate). 
+
+5.6.3 Tinermai resistance between iaser diode junction and case (witinout cooier): ^thj-c- 
+
+5.6.4 511 parameter. 
+
+5.7 l-iazards 
+
+See lEC 60825. 
+
+6 PIN photodiodes for fibre optic systems or subsystems 
+
+6.1 Type 
+
+Ambient-rated or case-rated PIN pinotodiodes with or without optical fibre pigtail for fibre optic 
+systems or subsystems. 
+
+6.2 Semiconductor materials 
+
+Si, Ge, InGaAs, etc. 
+
+6.3 Details of outline and encapsulation 
+
+6.3.1 lEC and/or national reference number of outline drawing. 
+
+6.3.2 Method of encapsulation: glass/metal/plastic/other. 
+
+6.3.3 Terminal identification and indication of any electrical connection between a terminal 
+and the case. 
+
+6.3.4 Characteristics of the optical port: relative orientation to mechanical axis, relative 
+position to mechanical axis, area, numerical aperture. 
+
+6.3.5 For devices with pigtail: information on the pigtail fibre, type of fibre, l<ind of protection, 
+connector, length. 
+
+6.3.6 Information on the heat sink of the package. 
+
+
+
+10 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+6.4 Limiting values (absolute maximum ratings) over the operating temperature range, 
+unless otherwise stated 
+
+Table 4 - Limiting values for PIN photodiodes 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Symbols 
+
+
+Requirements 
+
+
+IVIin. 
+
+
+Max. 
+
+
+6.4.1 
+
+
+Storage temperature 
+
+
+^stg 
+
+
+X 
+
+
+X 
+
+
+6.4.2 
+
+either 6.4.2.1 
+
+or 6.4.2.2 
+
+
+Temperature 
+Ambient temperature 
+Case temperature 
+
+
+-* amb 
+
+T 
+
+-* case 
+
+
+X 
+X 
+
+
+X 
+X 
+
+
+6.4.3 
+
+
+Soldering temperature at maximum soldering time 
+and minimum distance to case specified 
+
+
+Tsld 
+
+
+
+
+X 
+
+
+6.4.4 
+
+
+Reverse voltage 
+
+
+Vr 
+
+
+
+
+X 
+
+
+6.4.5 
+
+
+Power dissipation 
+
+
+Pm 
+
+
+
+
+X 
+
+
+6.4.6 
+
+
+Radiant power on the sensitive area 
+
+
+fe 
+
+
+
+
+X 
+
+
+6.4.7 
+
+
+For devices with pigtail: 
+
+Bend radius of pigtail (at specified distance from the 
+
+case) 
+
+
+1- 
+
+
+X 
+
+
+
+
+6.4.8 
+
+
+Shock 
+
+
+
+
+
+
+X 
+
+
+6.4.9 
+
+
+Vibration 
+
+
+
+
+
+
+X 
+
+
+6.4.10 
+6.4.10.1 
+
+6.4.10.2 
+
+
+Tensile force on devices with pigtail: 
+
+Untight structure: 
+
+- Tensile force on fibre along its axis 
+
+- Tensile force on cladding along its axis 
+
+Tight structure: 
+
+- Tensile force on pigtail along its axis 
+
+
+F 
+F 
+
+F 
+
+
+
+
+X 
+X 
+
+X 
+
+
+
+11 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+6.5 Electrical and optical characteristics 
+
+Table 5 - Electrical and optical characteristics for PIN photodiodes 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Conditions at T^^^, or T^^^^ = 25 °C 
+unless otherwise stated 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Min. 
+
+
+Max. 
+
+
+6.5.1 
+
+6.5.1.1 
+6.5.1.2 
+
+
+Dark current 
+
+Dark current 
+
+Dark current at high 
+
+temperature 
+
+
+Fr specified, Og = 
+Vp, specified, <l>g = 
+^amb or 7'case Specified 
+
+
+/r(D) ^ 
+/r(D) ^ 
+
+
+
+
+X 
+X 
+
+
+6.5.2 
+
+
+Total capacitance 
+
+
+Kr,/ specified, Og = 
+
+
+Ctot 
+
+
+
+
+X 
+
+
+6.5.3 
+
+
+Noise current 
+
+
+Vr. ^R(e)./o. A/n. «l. ^p. Ai specified 
+
+
+In 
+
+
+
+
+X 
+
+
+6.5.4 
+6.5.4.1 
+
+6.5.4.2 
+
+
+For devices without pigtail: 
+
+Sensitivity along the specified 
+mechanical axis 
+
+Spatial uniformity of sensitivity 
+(where appropriate) 
+
+
+Kr, Ap, AA, Og specified 
+Fr, Ap, A/l or <I>g specified 
+
+
+Sfd, S 
+AS 
+
+
+X 
+
+
+x« 
+
+X 
+
+
+6.5.5 
+
+
+For devices with pigtail: 
+Sensitivity 
+
+
+Fr, Ap, A/l, <l)g specified 
+
+
+Sfd, S 
+
+
+X 
+
+
+x« 
+
+
+6.5.6 
+
+either 
+6.5.6.1 
+
+or 
+6.5.6.2 
+
+
+Bandwidth 
+
+Switching time: 
+
+- Rise time 
+
+- Fall time 
+
+- Delay times (where 
+appropriate) 
+
+- Storage time 
+
+Cut-off frequency 
+
+
+Kr, Ap, A/l, pulse base ctg^, pulse top 
+Og2, «L specified 
+
+Fr, Ap, A/l, Og, Rf_ specified 
+
+
+tr 
+
+h 
+
+<d(on)/ 
+
+<d(off) 
+
+ts 
+
+/c 
+
+
+X 
+
+
+X 
+X 
+X 
+
+X 
+
+
+NOTE The specified voltage Kp is the same for all the characteristics, unless otherwise stated 
+
+
+^ Where appropriate. 
+
+^ Term and/or letter symbol under consideration. 
+
+
+
+6.6 Supplementary information 
+
+6.6.1 Typical curve of dark current versus voltage, at different temperatures. 
+
+6.6.2 Typical curve of total capacitance versus reverse voltage. 
+
+6.6.3 Relative sensitivity versus wavelength. 
+
+6.6.4 Relative sensitivity versus temperature. 
+
+6.6.5 Derating curve or derating factor of maximum dissipation. 
+
+7 Avalanche photodiodes (APDs) with or without pigtails 
+
+7.1 Type 
+
+Ambient-rated or case-rated avalanche photodiode for fibre optic systems or subsystems. 
+
+12 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+7.2 Semiconductor 
+
+7.2.1 Materials 
+
+Si, Ge, InGaAs, etc. 
+
+7.2.2 Structure 
+
+7.3 Details of outline and encapsulation 
+
+7.3.1 lEC and/or national reference number of outline drawing. 
+
+7.3.2 Method of encapsulation: glass/metal/plastic/other. 
+
+7.3.3 Terminal identification and indication of any electrical connection between a terminal 
+and the case. 
+
+7.3.4 Characteristics of the optical port: relative orientation to the mechanical axes, relative 
+position to mechanical axes, area, numerical aperture. 
+
+7.3.5 Information on the pigtail fibre (where appropriate): type of fibre, kind of protection, 
+connector, length. 
+
+7.4 Limiting values (absolute maximum ratings) over the operating temperature range, 
+unless otherwise stated 
+
+7.4.1 Minimum bend radius of the pigtail, where appropriate. 
+
+7.4.2 Minimum and maximum storage temperature (Tgtg). 
+
+7.4.3 Minimum and maximum operating ambient or case temperatures (Tamb or ^case)- 
+
+7.4.4 Maximum soldering temperature (Tgi^j) (soldering time and minimum distance to case to 
+be specified). 
+
+7.4.5 Maximum power dissipation at ambient or case temperature of 25 °C (-Ptot) ^'^'^ derating 
+curve or derating factor. 
+
+7.4.6 Maximum pull force for pigtail (fibre or cable), where appropriate, in the direction of the 
+axis of the input pigtail (fibre or cable). 
+
+7.4.7 Maximum reverse current (/r). 
+
+7.4.8 Maximum forward current (/p). 
+
+7.5 Electrical and optical characteristics 
+
+Kr shall be the same for all characteristics; it shall be equal to 0,9 of the individually measured 
+value of ViBR): unless otherwise specified. 
+
+
+
+13 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+Table 6 - Electrical and optical characteristics for avalanche photodiodes (APDs) 
+
+with or without pigtails 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Conditions at Tg^b or J'case = 25 °C 
+unless otherwise stated 
+
+
+Symbols 
+
+
+Requirements 
+
+
+7.5.1 
+
+
+Breakdown voltage 
+
+
+£e or (*e = 0, 
+
+/r specified 
+
+
+''(BR) 
+
+
+Min. 
+
+
+Max. 
+
+
+7.5.2 
+7.5.2.1 
+
+7.5.2.2 
+
+
+Reverse dark current 
+
+Reverse dark current (NOTE 
+1) 
+
+Reverse dark current (NOTE 
+2) 
+
+
+Ee or <*e = 0. 
+
+Fr specified 
+
+Ee or (*e = 0, 
+
+Fr specified 
+
+T = T^mb nnax. or T^^^^ max. 
+
+
+T a 
+■'R 
+
+■'R 
+
+
+
+
+Max. 
+Max. 
+
+
+7.5.3 
+7.5.3.1 
+
+7.5.3.2 
+
+
+Sensitivity 
+Sensitivity (NOTE 1) 
+
+Sensitivity (NOTE 2) 
+
+
+Fri (NOTE 2), (pe. /Ipp, A/l specified 
+^R- 0e- ^p- ^-^ specified 
+
+
+5^ 
+
+
+Min. 
+Min. 
+
+
+Max. 
+
+(NOTE 
+
+1) 
+
+Max. 
+
+(NOTE 
+
+2) 
+
+
+7.5.4 
+
+
+Multiplication factor 
+
+
+Fri (NOTE 2), Ap, A/l, (*e, specified 
+
+
+M 
+
+
+Min. 
+
+
+
+
+7.5.5 
+
+
+Total capacitance 
+
+
+Ee or (*e = 0; Fr, /specified 
+
+
+Cfot 
+
+
+
+
+Max. 
+
+
+7.5.6 
+7.5.6.1 
+
+7.5.6.2 
+
+
+Small signal parameters 
+
+Turn-on time and turn-off 
+time 
+
+Small signal cut-off 
+frequency 
+
+
+Fr, A/l, «,_, 
+
+^ei: peak radiant power 
+^e2'- offset radiant power 
+
+Fr, /Ip, A/l, ^e and Rf_ specified 
+
+
+'on 
+<off 
+
+/c 
+
+
+Min. 
+
+
+Max. 
+Max. 
+
+
+7.5.7 
+
+
+Excess noise factor 
+
+
+Fri(NOTE2), Fr, /po, Ap, A/l, M,/o, 
+A/n, specified 
+
+
+^e 
+
+
+
+
+Max. 
+
+
+7.5.8 
+
+
+Noise current (where 
+appropriate) 
+
+
+Fr, /Ip, A/l,/, Aff^ specified 
+
+
+^n 
+
+
+
+
+Max. 
+
+
+NOTE 1 Where appropriate. 
+
+NOTE 2 Vr! should be a small value at which negligible carrier multiplication takes place, or the voltage at which 
+the device is fully depleted and has achieved its rated speed. 
+
+
+^ Where appropriate. 
+
+'' Term and/or letter symbol under consideration. 
+
+
+
+7.6 Supplementary information 
+
+7.6.1 Curve of breakdown voltage versus temperature. 
+
+7.6.2 Curve of sensitivity versus wavelengtin. 
+
+7.6.3 Curve of capacitance versus reverse voltage. 
+
+7.6.4 Curve of multiplication factor versus reverse voltage at different temperatures. 
+
+7.6.5 Curve of reverse dark current versus reverse voltage at different temperatures. 
+
+14 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+7.6.6 Location of sensitive area by reference to tine pacl<age (witlnout pigtaii). 
+
+7.6.7 Curve of excess noise factor versus reverse voitage (winere appropriate). 
+
+7.6.8 Curve of noise current versus reverse voitage (winere appropriate). 
+
+8 PIN-TIA modules for fibre optic systems or subsystems 
+
+8.1 Type 
+
+Ambient-rated or case-rated PIN-TIA modules for fibre optic systems or subsystems. 
+
+The PIN-TIA module consists of the following basic parts: 
+
+- PIN photodiode; 
+
+- TIA circuits; 
+
+- fibre pigtail, pigtail connectors, receptacles (connecterized package). 
+
+8.2 Semiconductor materials 
+
+The PIN-TIA module consists of the following semiconductor materials : 
+
+- PIN photodiode: Si, Ge, InGaAs, etc ; 
+
+- TIA circuit: GaAs, Si, etc. 
+
+8.3 Structure 
+
+The structure of the PIN-TIA module is 
+
+- PIN photodiode: Mesa, planar, etc ; 
+
+- TIA circuit: CMOS, Bi-CMOS, HBT, Bi-polar etc ; 
+
+- information on the fibre coupling: taper type, lens coupling, etc ; 
+
+- information on the circuit: high impedance, transimpedance, bandwidth, etc ; 
+
+- information on the package: pigtail, receptacle (connecterized package), etc. 
+
+8.4 Details of outline and encapsulation 
+
+- lEC and/or national reference number of outline drawing. 
+
+- Method of encapsulation: glass/metal/plastic/other. 
+
+- Terminal identification and indication of any electrical connection between a terminal and 
+the case. 
+
+- Characteristics of the optical port: orientation relative to mechanical axis, position relative 
+to mechanical axis, area, numerical aperture. 
+
+- Information on the pigtail fibre: type of fibre, kind of protection, connector, length. 
+
+- Information on the connector/receptacle. 
+
+
+
+15 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+8.5 Limiting values (absolute maximum ratings) over the operating temperature range, 
+unless otherwise stated 
+
+Table 7 - Limiting values for PIN-TIA modules 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+Min. 
+
+
+Max. 
+
+
+8.5.1 
+
+
+Storage temperature 
+
+
+Tstg 
+
+
+X 
+
+
+X 
+
+
+°C 
+
+
+8.5.2 
+
+either 8.5.2.1 
+
+or 8.5.2.2 
+
+
+Operating temperature 
+Operating ambient temperature 
+Operating case temperature 
+
+
+T'case 
+
+
+X 
+X 
+
+
+X 
+X 
+
+
+°C 
+
+°c 
+
+
+8.5.3 
+
+
+Soldering temperature at maximum soldering time and 
+minimum distance to case specified 
+
+
+Tsld 
+
+
+
+
+X 
+
+
+°c 
+
+
+8.5.4 
+
+
+Supply voltages at specified terminals 
+
+
+f^supp 
+
+
+X 
+
+
+X 
+
+
+V 
+
+
+8.5.5 
+
+
+Radiant power at optical port 
+
+
+Oe 
+
+
+
+
+X 
+
+
+mW{W) 
+
+
+8.5.6 
+
+
+Bend radius of pigtail (at specified distance from the 
+case) 
+
+
+r 
+
+
+X 
+
+
+
+
+mm{cm) 
+
+
+8.5.7 
+
+
+Shock 
+
+
+
+
+
+
+X 
+
+
+m/s^, s 
+
+
+8.5.8 
+
+
+Vibration 
+
+
+
+
+
+
+X 
+
+
+m/s^ Hz 
+
+
+8.5.9 
+8.5.9.1 
+
+8.5.9.2 
+
+
+Tensile force along cable axis: 
+
+Untight structure 
+
+- Tensile force on fibre 
+
+- Tensile force on cable 
+
+Tight structure 
+
+- Tensile force on cable 
+
+
+F 
+F 
+
+F 
+
+
+
+
+X 
+X 
+
+X 
+
+
+N 
+N 
+
+N 
+
+
+
+8.6 Operating conditions at ramb = 25 °C, unless otherwise stated 
+
+Table 8 - Operating conditions for PIN-TIA modules 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+Min. 
+
+
+Max. 
+
+
+8.6.1 
+
+
+Supply voltages specified by terminal number 
+
+
+^supp 
+
+
+x 
+
+
+X 
+
+
+V 
+
+
+8.6.2 
+
+
+Supply current (at Tamb max.) specified by terminal 
+number 
+
+
+^supp 
+
+
+
+
+X 
+
+
+mA 
+
+
+8.6.3 
+
+
+Load resistance 
+
+
+«L 
+
+
+X 
+
+
+
+
+Q. 
+
+
+
+16 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+8.7 Electrical and optical characteristics 
+
+Table 9 - Electrical and optical characteristics for PIN-TIA modules 
+
+
+
+
+
+
+
+Conditions at Tawb 
+
+
+
+
+Requirements 
+
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+or Tease = 25 °C, 
+
+unless othierwise stated 
+
+
+Symbols 
+
+
+Min. 
+
+
+Max. 
+
+
+Units 
+
+
+8.7.1 
+
+
+Minimum detectable power 
+
+
+a) Ap, AA,fmB. B and C/N 
+specified 
+
+or 
+
+b) Ap, AA, bit rate, signal pattern 
+and bit error rate specified 
+
+
+OeD 
+
+
+X 
+
+
+
+
+dBm 
+
+
+8.7.2 
+
+
+Output noise power density 
+
+
+RL,fm, B, <De specified 
+Ap, AA specified 
+
+
+i'nO, A 
+
+
+
+
+X 
+
+
+W/Hz 
+
+
+8.7.3 
+
+
+Frequency 
+
+
+
+
+
+
+
+
+
+
+
+
+8.7.3.1 
+
+
+Low frequency output noise 
+power density 
+
+
+RL,fm, B, Ap and AA specified, 
+
+Oe = 
+
+
+PnO, A 
+
+
+
+
+X 
+
+
+W/Hz 
+
+
+and 
+8.7.3.2 
+
+
+Corner frequency 
+
+
+«L,/m, B, Ap and AA specified, 
+
+Oe = 
+
+
+fcor 
+
+
+
+
+X 
+
+
+Hz 
+
+
+8.7.4 
+
+
+Responsivity 
+
+
+
+
+
+
+
+
+
+
+
+
+8.7.4.1 
+
+
+Responsivity (for module) 
+
+
+Ap, AA, Oe, Rl specified 
+
+
+Rd 
+
+
+X 
+
+
+
+
+V/W 
+
+
+and 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8.7.4.2 
+
+
+Responsivity (for PIN 
+photodiode only) (where 
+appropriate) 
+
+
+Vr, Ap, AA, Oe specified 
+
+
+Rd 
+
+
+X 
+
+
+
+
+A/W 
+
+
+8.7.5 
+
+
+Frequency response flatness 
+
+
+Ap, AA, Oe, Rl specified 
+/i and/2 specified 
+
+
+ARdIRd 
+
+
+
+
+X 
+
+
+
+
+8.7.6 
+
+
+Bandwidth 
+
+
+
+
+
+
+
+
+
+
+
+
+either 
+
+
+Switching time: 
+
+
+
+
+
+
+
+
+
+
+
+
+8.7.6.1 
+
+
+- Rise time 
+
+
+Ap, AA, Oei, Oe2, Rl specified 
+
+
+t, 
+
+
+
+
+X 
+
+
+ns 
+
+
+
+
+- Fall time 
+
+
+
+
+U 
+
+
+
+
+X 
+
+
+ns 
+
+
+or 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8.7.6.2 
+
+
+Cut-off frequency 
+
+
+Ap, AA, Oe, Rl specified 
+
+
+/c 
+
+
+X 
+
+
+
+
+MHz 
+(GHz) 
+
+
+8.7.7 
+
+
+Offset voltage (where 
+appropriate) 
+
+
+Ap, AA, Oe, Rl specified 
+
+
+foff 
+
+
+X 
+
+
+X 
+
+
+V 
+
+
+8.7.8 
+
+
+Dark current (PIN photodiode 
+only) (where appropriate) 
+
+
+Vr specified, Oe = 
+
+
+/r 
+
+
+
+
+X 
+
+
+nA 
+
+
+
+8.8 Supplementary information 
+
+- Relative responsivity versus wavelengtin 
+
+- Typical tinermal variation of the offset voltage 
+
+- Information on the equalization 
+
+9 Laser diode modules for pumping an optical fibre amplifier 
+
+9.1 Type 
+
+The laser module consists of the following basic parts: 
+
+- laser diode; 
+
+- fibre pigtail (where appropriate); 
+
+
+
+17 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+- lenses (where appropriate); 
+
+- photodiode (where appropriate); 
+
+- thermai sensor (where appropriate); 
+
+- TEC element (where appropriate); 
+
+- isolator (where appropriate). 
+
+9.2 Semiconductor materials 
+
+The laser diode module for pumping an optical fibre amplifier consists of the following 
+semiconductor materials: 
+
+- laser diode: GaAs, GaAIAs, InGaAs, InGaAsP, InP, etc. 
+
+- photodiode: Ge, Si, InGaAs, etc. 
+
+- thermal sensor: 1 where appropriate 
+
+- TEC element: J 
+
+9.3 Structure 
+
+Laser diode: gain guided, index guided, distributed feedback, ridge waveguide, BH, etc. 
+
+9.4 Details of outline and encapsulation 
+
+- lEC and/or national reference number of the outline drawing. 
+
+- Method of encapsulation: glass/metal/plastic/other. 
+
+- Terminal identification and indication of any electrical connection between a terminal and 
+the case. 
+
+- Characteristics of the optical port: orientation relative to mechanical axis, position relative 
+to mechanical axis, area, numerical aperture. 
+
+- Information on the pigtail fibre: type of fibre, kind of protection, connector, and length. 
+
+- Information on the heat sinking of the package. 
+
+
+
+18 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+9.5 Limiting values (absolute maximum ratings) over the operating temperature range, 
+unless otherwise stated 
+
+Table 10 - Limiting values for laser diode modules for pumping an optical fibre amplifier 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+Min. 
+
+
+Max. 
+
+
+9.5.1 
+9.5.2 
+9.5.3 
+9.5.4 
+
+9.5.5 
+9.5.6 
+9.5.7 
+9.5.8 
+9.5.8.1 
+
+9.5.8.2 
+
+
+A. General conditions 
+
+Storage temperature 
+
+Operating case temperature 
+
+Operating submount temperature (where appropriate) 
+
+Soldering temperature at maximum soldering time and at 
+specified minimum distance to case 
+
+Bend radius of pigtail (at specified distance from the case) 
+
+Shock 
+
+Vibration 
+
+Tensile force along cable axis 
+
+Untight structure 
+
+- Tensile force on fibre 
+
+- Tensile force on cable 
+
+Tight structure 
+- Tensile force on cable 
+
+
+Tstg 
+^'case 
+Tsub 
+Ts\d 
+
+r 
+
+F 
+F 
+
+F 
+
+
+X 
+X 
+X 
+
+X 
+
+
+X 
+X 
+X 
+X 
+
+X 
+X 
+
+X 
+X 
+
+X 
+
+
+°C 
+°C 
+
+°c 
+°c 
+
+mm (cm) 
+
+m/s2, s 
+
+m/s2, Hz 
+
+N 
+N 
+
+N 
+
+
+9.5.9 
+
+9.5.10 
+
+9.5.11 
+
+
+B. Laser diode ^ 
+
+Reverse voltage 
+Continuous forward current 
+Continuous radiant power 
+
+
+Vr 
+If 
+
+
+
+
+X 
+X 
+X 
+
+
+V 
+
+mA 
+mW 
+
+
+9.5.12 
+9.5.13 
+
+
+C. Photodiode (where appropriate) 
+
+Reverse voltage 
+Forward current 
+
+
+Vr 
+/f 
+
+
+
+
+X 
+X 
+
+
+V 
+mA 
+
+
+9.5.14 
+
+either 
+9.5.14.1 
+
+or 9.5.14.2 
+
+
+D. Thermal sensor (where appropriate) 
+
+Thermal sensor 
+Dissipation 
+
+Supply voltage 
+
+
+P 
+
+f^supp 
+
+
+
+
+X 
+X 
+
+
+W 
+V 
+
+
+9.5.15 
+
+
+E. Thermoelectric cooler (where appropriate) 
+
+TEC current under cooling and heating 
+
+
+^P 
+
+
+
+
+X 
+
+
+A 
+
+
+" For laser module without TEC, the derating curve or derating factor shall be given for one of the parameters of 9.5.10 
+to 9.5.13. For laser module with TEC, Tsub = 25 °C. 
+
+
+
+19 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+9.6 Electrical and optical characteristics 
+
+
+
+Table 11 - Electrical and optical characteristics for laser diode modules 
+for pumping an optical fibre amplifier 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Conditions at Tsub = 25 °C 
+
+for laser modules with TEC, 
+
+Tamb or Tease = 25 °C for laser 
+
+module without TEC, unless 
+
+otherwise specified 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+Min. 
+
+
+Max. 
+
+
+
+
+A. Laser diode 
+
+
+
+
+
+
+
+
+
+
+
+
+9.6.1 
+
+
+Forward voltage 
+
+
+cl>e or /f specified 
+
+
+Vf 
+
+
+
+
+X 
+
+
+V 
+
+
+9.6.2 
+
+
+Forward current 
+
+
+
+
+
+
+
+
+
+
+
+
+9.6.2.1 
+
+
+Forward current 
+
+
+cj>e specified 
+
+
+If a 
+
+
+
+
+X 
+
+
+mA 
+
+
+9.6.2.2 
+
+
+Forward current at high 
+temperature 
+
+
+Oe specified Tease = Tease, max. 
+
+
+If b 
+
+
+
+
+X 
+
+
+mA 
+
+
+9.6.3 
+
+
+Threshold current 
+
+
+
+
+/(TH) 
+
+
+x 
+
+
+X 
+
+
+mA 
+
+
+9.6.4 
+
+
+Differential efficiency 
+
+
+c&e or A/f specified 
+
+(A/F = /F - /(TH)) 
+
+
+Id 
+
+
+X 
+
+
+X 
+
+
+m 
+
+
+9.6.5 
+
+
+Spectral characteristics 
+
+
+
+
+
+
+
+
+
+
+
+
+9.6.5.1 
+
+
+Peak emission 
+wavelength 
+
+
+Oe or a/f specified, 
+CW condition 
+
+
+ip 
+
+
+X 
+
+
+X 
+
+
+nm 
+
+
+either 
+9.6.5.2 
+
+
+Spectral radiation 
+r.m.s. bandwidth 
+
+
+Oe or A/f specified, 
+CW condition 
+
+
+A/irms 
+
+
+
+
+X 
+
+
+nm 
+
+
+or 9.6.5.3 
+
+
+Spectral radiation 
+bandwidth (FWHM) 
+
+
+Oe or A/f specified, 
+CW condition 
+
+
+A/l 
+
+
+
+
+X 
+
+
+nm 
+
+
+9.6.5.4 
+
+
+Spectral shift with 
+current or radiant power 
+
+
+A/f ^, A/f '' or Oe ", 
+Oe '', specified 
+
+
+Ale 
+or Alp 
+
+
+
+
+X 
+X 
+
+
+nm/mA 
+nm/mW 
+
+
+9.6.5.5 
+
+
+Spectral shift with 
+temperature (for laser 
+module with TEC) 
+
+
+Tease ^ Tease " Specified 
+
+Oe or a/f specified 
+
+
+AIt 
+
+
+
+
+X 
+
+
+nm/°C 
+
+
+9.6.5.6 
+
+
+Spectral shift with 
+temperature (for laser 
+module with TEC) 
+
+
+Tamb ^ Tamb '' Specified 
+
+Oe or A/F specified 
+
+
+A/It 
+
+
+
+
+X 
+
+
+nm/°C 
+
+
+
+
+B. IVIonitor photodiode 
+
+
+(where appropriate) 
+
+
+
+
+
+
+
+
+
+
+9.6.6 
+
+
+Dark current 
+
+
+(De = 0, Vr specified 
+
+
+/R(D) 
+
+
+
+
+X 
+
+
+pA 
+
+
+9.6.7 
+
+
+Monitor current 
+
+
+Oe or A/f specified, 
+Vr specified 
+
+
+/R(M) 
+
+
+X 
+
+
+X 
+
+
+mA 
+
+
+9.6.8 
+
+
+Tracking error 
+
+
+
+
+
+
+
+
+
+
+
+
+9.6.8.1 
+
+
+Tracking error a 
+
+
+<l>e or A/f, Vr specified, 
+
+Temperature range: 
+
+25 °C to Tease, min. or Tamb, min. 
+
+
+£ri 
+
+
+
+
+X 
+
+
+
+
+9.6.8.2 
+
+
+Tracking error ^ 
+
+
+<I>e or A/f, and Vr specified 
+
+Temperature range: 
+
+25 °C to Tease, max. or Tamb, max. 
+
+
+^R2 
+
+
+
+
+X 
+
+
+
+
+
+
+C. Tliermistor (where a 
+
+
+ppropriate) 
+
+
+
+
+
+
+
+
+
+
+9.6.9 
+
+
+Resistance 
+
+
+Thermistor current /te specified 
+
+
+R 
+
+
+X 
+
+
+X 
+
+
+Q 
+
+
+9.6.10 
+
+
+Slope of resistance 
+
+
+Thermistor current /te specified 
+Temperature range: 
+
+Tsub , Tsub 
+
+
+AR/R 
+
+
+X 
+
+
+X 
+
+
+
+
+
+20 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+
+
+Conditions at Tsub = 25 °C 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+tor laser modules with ibc, 
+
+Tamb or Tease = 25 °C for laser 
+
+module without TEC, unless 
+
+otherwise specified 
+
+
+Min. 
+
+
+Max. 
+
+
+9.6.11 
+9.6.12 
+
+
+D. TEC element (where appropriate) 
+
+TEC current Og or A/f, specified 
+Temperature range: 
+Tease min. or Tease max. 
+
+TEC voltage Oe or A/f, specified 
+Temperature range: 
+
+Tease min. Or Tease maX. 
+
+
+/PE 
+
+FPE 
+
+
+
+
+X 
+X 
+
+
+A 
+V 
+
+
+a CW-operation. 
+tJ In modulation. 
+
+
+
+9.7 Supplementary information 
+
+- Median life under specified case temperature at specified output power. 
+
+- DC forward current of tine iaser diode corresponding to Oeoo. 
+
+NOTE <l>eoo is the radiant power value of the laser chip on submount, representative of the performance and 
+reliability of devices manufactured using the same technology and submitted to the same quality assurance 
+procedures. 
+
+- Response time of tine thermistor temperature with respect to the change of cooler current 
+(where appropriate). 
+
+- Thermal resistance between iaser diode junction and case (for the laser module without 
+cooler). 
+
+9.8 Hazards 
+
+See lEC 60825. 
+
+
+
+10 Laser diode modules for fibre optic analogue transmission systems 
+or subsystems 
+
+10.1 Type 
+
+The laser diode module consists of the following basic parts: 
+
+- laser diode; 
+
+- fibre pigtail (where appropriate); 
+
+- photodiode (where appropriate); 
+
+- thermal sensor (where appropriate); 
+
+- TEC element (where appropriate); 
+
+- isolator (where appropriate). 
+
+10.2 Semiconductor materials 
+
+The semiconductor materials of the laser diode modules for fibre optic analogue transmission 
+systems or subsystems are 
+
+
+
+- laser diode: 
+
+- photodiode: 
+
+
+
+GaAs, GaAIAs, InGaAs, InGaAsP, InP etc. 
+Ge, Si, InGaAs, etc. 
+
+
+
+21 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+- thermal sensor: 
+
+- TEC element: 
+
+
+
+where appropriate 
+
+
+
+10.3 Structure 
+
+Laser diode: distributed feedback (DFB), distributed Brag reflector (DBR), etc. 
+
+10.4 Details of outline and encapsulation 
+
+- lEC and/or national reference number of the outline drawing. 
+
+- Method of encapsulation: glass/metal/plastic/other. 
+
+- Terminal identification and indication of any electrical connection between a terminal and 
+the case. 
+
+- Characteristics of the optical port: relative orientation to mechanical axis, relative position 
+to mechanical axis, area, numerical aperture, etc. 
+
+- Information on the pigtail fibre: type of fibre, kind of protection, connector, length, etc. 
+
+- Information on the heatsinking of the package. 
+
+10.5 Limiting values (absolute maximum ratings) over the operating temperature range, 
+unless otherwise stated 
+
+Table 12 - Limiting values for laser diode modules for fibre optic 
+analogue transmission systems or subsystems 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+Min. 
+
+
+Max. 
+
+
+
+
+A. General conditions 
+
+
+
+
+
+
+
+
+
+
+10.5.1 
+
+
+Storage temperature 
+
+
+Tstg 
+
+
+X 
+
+
+X 
+
+
+°C 
+
+
+10.5.2 
+
+
+Operating case temperature 
+
+
+Tease 
+
+
+X 
+
+
+X 
+
+
+°C 
+
+
+10.5.3 
+
+
+Operating submount temperature 
+(where appropriate) 
+
+
+Tsub 
+
+
+X 
+
+
+X 
+
+
+°c 
+
+
+10.5.4 
+
+
+Soldering temperature at maximum soldering time 
+and minimum distance to case specified 
+
+
+Ts\d 
+
+
+
+
+X 
+
+
+°c 
+
+
+10.5.5 
+
+
+Bend radius of pigtail (at specified distance from 
+the case) 
+
+
+r 
+
+
+X 
+
+
+
+
+mm(cm) 
+
+
+10.5.6 
+
+
+Shock 
+
+
+
+
+
+
+X 
+
+
+m/s2, s 
+
+
+10.5.7 
+
+
+Vibration 
+
+
+
+
+
+
+X 
+
+
+m/s2, Hz 
+
+
+10.5.8 
+
+
+Tensile force along cable axis 
+
+
+
+
+
+
+
+
+
+
+10.5.8.1 
+
+
+Untight structure 
+
+- Tensile force on fibre 
+
+- Tensile force on cable 
+
+
+F 
+F 
+
+
+
+
+X 
+X 
+
+
+N 
+N 
+
+
+10.5.8.2 
+
+
+Tight structure 
+
+- Tensile force on cable 
+
+
+F 
+
+
+
+
+X 
+
+
+N 
+
+
+
+
+B. Laser diode ^ 
+
+
+
+
+
+
+
+
+
+
+10.5.9 
+
+
+Reverse voltage 
+
+
+Vr 
+
+
+
+
+X 
+
+
+V 
+
+
+10.5.10 
+
+
+Continuous forward current 
+
+
+If 
+
+
+
+
+X 
+
+
+mA 
+
+
+10.5.11 
+
+
+Continuous radiant power 
+
+
+Oe 
+
+
+
+
+X 
+
+
+mW 
+
+
+10.5.12 
+
+
+ESD (HBM) " 
+
+
+
+
+
+
+X 
+
+
+V 
+
+
+
+
+C. Photodiode (where appropriate) 
+
+
+
+
+
+
+
+
+
+
+10.5.13 
+
+
+Reverse voltage 
+
+
+Vr 
+
+
+
+
+X 
+
+
+V 
+
+
+10.5.14 
+
+
+Forward current 
+
+
+If 
+
+
+
+
+X 
+
+
+mA 
+
+
+10.5.15 
+
+
+ESD (HBM)" 
+
+
+
+
+
+
+X 
+
+
+V 
+
+
+
+22 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+Min. 
+
+
+Max. 
+
+
+10.5.16 
+
+either 
+10.5.16.1 
+
+or 10.5.16.2 
+
+
+D. Thermal sensor (where appropriate) 
+
+Thermal sensor 
+
+Dissipation 
+Supply voltage 
+
+
+Plot 
+Fsupp 
+
+
+
+
+X 
+X 
+
+
+W 
+V 
+
+
+10.5.17 
+
+
+E. Thermo electric cooler (where appropriate) 
+
+TEC current under cooling and heating 
+
+
+/PE 
+
+
+
+
+X 
+
+
+A 
+
+
+^ For laser module without TEC, the derating curve or derating factor shall be given for one of the following 
+
+parameters of 10.5.10 to 10.5.13. 
+
+For laser module with TEC, Tsub = 25 °C. 
+'^ Both polarities. 
+
+
+
+10.6 Electrical and optical characteristics 
+
+Table 13 - Electrical and optical characteristics for laser diode modules 
+for fibre optic analogue transmission systems or subsystems 
+
+
+
+
+
+
+
+Conditions at Tsub = 25 °C 
+
+
+
+
+
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+for laser module with TEC.ramb 
+
+or Tease = 25 °C for laser module 
+
+without TEC, unless otherwise 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+
+
+
+
+
+
+
+
+stated 
+
+
+
+
+Min. 
+
+
+Max. 
+
+
+
+
+
+
+A. Laser diode 
+
+
+
+
+
+
+
+
+
+
+
+
+10.6.1 
+
+
+Forward voltage 
+
+
+Oe or If specified 
+
+
+V 
+
+
+
+
+X 
+
+
+V 
+
+
+10.6.2 
+
+
+Threshold current 
+
+
+
+
+^TH) 
+
+
+X 
+
+
+X 
+
+
+mA 
+
+
+10.6.3 
+
+
+Forward current above 
+threshold 
+
+
+Oe specified 
+
+
+A/F^ 
+
+
+
+
+X 
+
+
+mA 
+
+
+10.6.4 
+
+
+Differential efficiency 
+
+
+Oe or A/f specified 
+
+
+la 
+
+
+X 
+
+
+X 
+
+
+mW/mA 
+
+
+10.6.5 
+
+
+Spectral characteristics 
+
+
+
+
+
+
+
+
+
+
+
+
+10.6.5.1 
+
+
+Peak emission wavelength 
+
+
+Oe or A/f specified, 
+CW condition 
+
+
+h 
+
+
+X 
+
+
+X 
+
+
+nm(nm) 
+
+
+10.6.5.2 
+
+
+Spectrum linewidth at -3 
+dB (where appropriate) 
+
+
+Oe or A/f specified 
+CW condition 
+
+
+M 
+
+
+
+
+X 
+
+
+MHz 
+
+
+10.6.5.3 
+
+
+Sidemode suppression 
+ratio 
+
+
+Oe or A/f specified, 
+CW condition 
+
+
+SMSR 
+
+
+X 
+
+
+X 
+
+
+dB 
+
+
+10.6.6 
+
+
+Modulation chirp 
+
+
+Oe or A/f specified, 
+modulation condition, and 
+
+
+a 
+
+
+
+
+X 
+
+
+nm/mA 
+(nm/mW) 
+
+
+
+
+
+
+frequency range specified 
+
+
+
+
+
+
+
+
+10.6.7 
+
+
+521 parameter 
+
+
+Frequency range specified 
+
+
+521 
+
+
+X 
+
+
+X 
+
+
+
+
+10.6.8 
+
+
+Relative intensity noise 
+
+
+Oe or A/f specified, /„ and Afn 
+specified, reflected optical power 
+specified 
+
+
+RIN 
+
+
+
+
+X 
+
+
+dB/Hz 
+
+
+10.6.9 
+
+
+Composite second order 
+distortion 
+
+
+
+
+CSO 
+
+
+
+
+X 
+
+
+dBc 
+
+
+10.6.10 
+
+
+Composite triple beat 
+
+
+
+
+CTB 
+
+
+
+
+X 
+
+
+dBc 
+
+
+10.6.11 
+
+
+lintermodulation distortion 
+
+
+
+
+
+
+
+
+
+
+
+
+10.6.11.1 
+
+
+Two-tone second order 
+intermodulation distortion 
+(where appropriate) 
+
+
+
+
+IM2 
+
+
+
+
+X 
+
+
+dB 
+
+
+
+23 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+
+
+
+
+Conditions at Tsub = 25 °C 
+
+
+
+
+
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+for laser module withi TEC, Jamb 
+
+or Tease = 25 °C for laser module 
+
+without TEC, unless otherwise 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+
+
+
+
+
+
+
+
+stated 
+
+
+
+
+Min. 
+
+
+Max. 
+
+
+
+
+10.6.11.2 
+
+
+Two-tone third order 
+intermodulation distortion 
+(wliere appropriate) 
+
+
+
+
+/M3 
+
+
+
+
+X 
+
+
+dB 
+
+
+10.6.12 
+
+
+Reflectance 
+
+
+Oe (input) and Ap specified 
+
+
+RL 
+
+
+
+
+X 
+
+
+dB 
+
+
+
+
+B. Monitor photodiode (wli 
+
+
+ere appropriate) 
+
+
+
+
+
+
+
+
+
+
+10.6.13 
+
+
+Dark current 
+
+
+Oe = 0, Vr specified 
+
+
+/R(D) 
+
+
+
+
+X 
+
+
+nA 
+
+
+10.6.14 
+
+
+Monitor current 
+
+
+Oe or A/f specified, Vr specified 
+
+
+iR{M) 
+
+
+X 
+
+
+X 
+
+
+mA 
+
+
+10.6.15 
+
+
+Tracking error 
+
+
+
+
+
+
+
+
+
+
+
+
+10.6.15.1 
+
+
+Tracking error 
+(25 -^ min.) 
+
+
+Oe or A/f, Vr specified 
+
+Temperature range: 
+
+25 °C at Tease min. or Tamb min. 
+
+
+£ri 
+
+
+
+
+X 
+
+
+dB 
+
+
+10.6.15.2 
+
+
+Tracking error 
+(25 -^ max.) 
+
+
+Oe or A/f, et Vr specified 
+
+Temperature range: 
+
+25 °C at Tease max. or Tamb max. 
+
+
+^R2 
+
+
+
+
+X 
+
+
+dB 
+
+
+10.6.16 
+
+
+Total capacitance 
+
+
+Oe = 0, frequency and Vr specified 
+
+
+Ctot 
+
+
+
+
+X 
+
+
+PF 
+
+
+
+
+C. Tliermai sensor (whiere 
+
+
+appropriate) 
+
+
+
+
+
+
+
+
+
+
+10.6.17 
+
+
+Resistance 
+
+
+Thermistor current /,c specified 
+
+
+R 
+
+
+X 
+
+
+X 
+
+
+Q. 
+
+
+10.6.18 
+
+
+Slope of resistance 
+
+
+Thermistor current /,e specified 
+Temperature range: 
+
+Tsub ^ Tsub <= 
+
+
+AR/R 
+
+
+X 
+
+
+X 
+
+
+
+
+
+
+D. TEC element (wliere app 
+
+
+ropriate) 
+
+
+
+
+
+
+
+
+
+
+10.6.19 
+
+
+TEC current 
+
+
+Oe or A/f, specified. 
+Temperature range: 
+Tease min. or Tease max. 
+
+
+/PE 
+
+
+
+
+X 
+
+
+A 
+
+
+10.6.20 
+
+
+TEC voltage 
+
+
+Oe or A/f, specified. 
+Temperature range: 
+
+Tease min. Or Tease maX. 
+
+
+FPE 
+
+
+
+
+X 
+
+
+V 
+
+
+10.6.21 
+
+
+Temperature difference 
+between Tease and Tslh, 
+
+
+TEC current and voltage specified 
+Laser operating condition 
+
+
+ATPE 
+
+
+
+
+X 
+
+
+°C 
+
+
+^ A/p is define 
+
+
+d as A/p = /p - I^J^^ 
+
+
+
+
+
+
+
+
+•^ CW-operatic 
+
+
+in. 
+
+
+
+
+
+
+
+
+'^ In modulatio 
+
+
+n. 
+
+
+
+
+
+
+
+
+
+10.7 Supplementary information 
+
+- Median life under specified case temperature at specified output power. 
+
+- DC forward current of tine laser diode corresponding to Oeoo. 
+
+NOTE Ogoo is the radiant power value of the laser chip on submount, representative of the performance and 
+reliability of devices manufactured using the same technology and submitted to the same quality assurance 
+procedures. 
+
+- Response time of the thermistor temperature with respect to the change of cooler current 
+(where appropriate). 
+
+- Thermal resistance between laser diode junction and case (for the laser module 
+without cooler). 
+
+
+
+24 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+10.8 Hazards 
+
+See lEC 60825. 
+
+11 LED arrays for fibre optic systems or subsystems 
+
+11.1 Type 
+
+LED arrays with/without optical fibre pigtail for fibre optic systems or subsystems. 
+
+11.2 Semiconductor materials 
+
+GaAs, AIGaAs, InGaAs, InGaAsP, InP, etc. 
+
+11.3 Details of outline and encapsulation 
+
+- lEC and/or national reference number or outline drawing. 
+
+- Method of encapsulation: glass/metal/plastic/others. 
+
+- Terminal identification and indication of any electrical connection between a terminal and 
+the case. 
+
+- Characteristics of the optical port: number of channels (LEDs), distance between channels, 
+relative orientation to mechanical axis, relative position to mechanical axis, and numerical 
+aperture. 
+
+- For devices with pigtail: information on a fibre pigtail, kind of protection, connector, and 
+pigtail length. 
+
+- Information on the heat sinking of the package. 
+
+
+
+25 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+11.4 Limiting values (absolute maximum ratings) over the operating temperature range, 
+unless otherwise stated 
+
+
+
+Table 14 - Limiting values for LED arrays 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+IVIin. 
+
+
+Max. 
+
+
+11.4.1 
+
+
+Storage temperature 
+
+
+Tstg 
+
+
+X 
+
+
+X 
+
+
+°C 
+
+
+11.4.2 
+
+
+Operating temperature 
+
+
+
+
+
+
+
+
+
+
+either 
+11.4.2.1 
+
+
+Operating ambient temperature 
+
+
+Tamb 
+
+
+X 
+
+
+X 
+
+
+°C 
+
+
+or 11.4.2.2 
+
+
+Operating case temperature 
+
+
+Tease 
+
+
+X 
+
+
+X 
+
+
+°c 
+
+
+11.4.3 
+
+
+Soldering temperature at maximum soldering time and 
+minimum distance to case specified 
+
+
+Ts\d 
+
+
+
+
+X 
+
+
+°c 
+
+
+11.4.4 
+
+
+Reverse voltage 
+
+
+Vr 
+
+
+
+
+X 
+
+
+V 
+
+
+11.4.5 
+
+
+Continuous forward current with temperature derating 
+curve or factor 
+
+
+If 
+
+
+
+
+X 
+
+
+mA 
+
+
+11.4.6 
+
+
+Repetitive peak forward current 
+
+
+/frm 
+
+
+
+
+X 
+
+
+mA 
+
+
+11.4.7 
+
+
+Power dissipation 
+
+
+Plot 
+
+
+
+
+X 
+
+
+W (mW) 
+
+
+11.4.8 
+
+
+Virtual junction temperature ^ 
+
+
+^(vj) 
+
+
+
+
+X 
+
+
+°C 
+
+
+11.4.9 
+
+
+Bend radius of pigtail (at specified distance from the 
+case) " 
+
+
+r 
+
+
+X 
+
+
+
+
+mm (cm) 
+
+
+11.4.10 
+
+
+Shock 
+
+
+
+
+
+
+X 
+
+
+m/s2, s 
+
+
+11.4.11 
+
+
+Vibration 
+
+
+
+
+
+
+X 
+
+
+m/s2, s 
+
+
+11.4.12 
+
+
+Tensile force along cable axis " 
+
+
+
+
+
+
+X 
+
+
+m/s2, Hz 
+
+
+11.4.12.1 
+
+
+Untight structure 
+
+- Tensile force on fibre along its axis 
+
+- Tensile force on fibre cladding along its axis 
+
+
+F 
+F 
+
+
+
+
+X 
+X 
+
+
+N 
+N 
+
+
+11.4.12.2 
+
+
+Tight structure 
+
+- Tensile force on pigtail along its axis 
+
+
+F 
+
+
+
+
+X 
+
+
+N 
+
+
+"" For case rate 
+
+
+i devices only. 
+
+
+
+
+
+
+
+
+
+
+'' For devices w 
+
+
+ith pigtail only. 
+
+
+
+
+
+
+
+
+
+
+
+26 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+11.5 Electrical and optical characteristics 
+
+Table 15 - Electrical and optical characteristics for LED arrays 
+
+
+
+Subclauses 
+
+
+Characteristics and conditions 
+
+at Jamb or Tease = 25 °C, 
+
+unless otiierwise stated 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+Min. 
+
+
+Max. 
+
+
+11.5.1 
+
+
+Radiant power 
+
+
+
+
+
+
+
+
+
+
+either 11.5.1.1 
+
+
+Radiant power at the optical port and at specified /f 
+
+
+Oe 
+
+
+X 
+
+
+X" 
+
+
+mW 
+
+
+or 11.5.1.2 
+
+
+Forward current at specified radiant output power 
+
+
+If 
+
+
+X" 
+
+
+X 
+
+
+mA 
+
+
+11.5.2 
+
+
+Peal< emission wavelength at specified If or Oe 
+
+
+Ap 
+
+
+X 
+
+
+X 
+
+
+nm ()xm) 
+
+
+11.5.3 
+
+
+Spectral radiation bandwidth at specified If or Oe 
+
+
+AA 
+
+
+
+
+X 
+
+
+nm 
+
+
+11.5.4^''' 
+
+
+Half-intensity angle at specified If or Oe 
+
+
+ei/2 
+
+
+
+
+X 
+
+
+°C 
+
+
+11.5.5^''' 
+
+
+IVIisalignment angle between optical axis and 
+mechanical axis at specified If or Oe 
+
+
+AG 
+
+
+
+
+X 
+
+
+°C 
+
+
+11.5.6 
+
+
+Reverse current at specified If or Oe 
+
+
+Vf 
+
+
+
+
+X 
+
+
+V 
+
+
+11.5.7 
+
+
+Reverse current at specified Vr 
+
+
+/r 
+
+
+
+
+X 
+
+
+V 
+
+
+11.5.8 
+
+
+Bandwidth 
+
+
+
+
+
+
+
+
+
+
+either 11.5.8.1 
+
+
+Switching times at specified d.c. bias current, pulse 
+width and duty cycle: 
+
+- rise time 
+
+- fall time 
+
+- delay times " 
+
+
+td{on) and 
+
+'d(off) 
+
+
+
+
+X 
+X 
+X 
+X 
+
+
+ns 
+ns 
+ns 
+ns 
+
+
+or 11.5.8.2 
+
+
+Cut-off frequency at specified If or Oe, noise 
+frequency, bandwidth and modulation factor 
+
+
+/c 
+
+
+
+
+X 
+
+
+IVIHz 
+
+
+11.5.9" 
+
+
+Total capacitance at specified Vr and frequency 
+
+
+Ctot 
+
+
+X 
+
+
+X 
+
+
+PF 
+
+
+11.5.10 
+
+
+Noise frequency 
+
+
+
+
+
+
+
+
+
+
+either 11.5.10.1 
+
+
+Carrier to noise ratio at specified If or Oe, noise 
+frequency, bandwidth and modulator factor 
+
+
+C/N 
+
+
+
+
+X 
+
+
+
+
+or 11.5.10.2 
+
+
+Relative intensity noise at specified /p or Oe, noise 
+frequency and bandwidth 
+
+
+RIN 
+
+
+
+
+X 
+
+
+
+
+11.5.11 
+
+
+Differential resistance at specified If or Oe 
+
+
+rd 
+
+
+
+
+X 
+
+
+Q. 
+
+
+11.5.12" 
+
+
+IVIodulation current at 1 dB efficacy compression at 
+specified Oe, «l, /Ip, AA, and/ 
+
+
+/p(1clB) 
+
+
+X 
+
+
+X 
+
+
+mA 
+
+
+11.5.13'' 
+
+
+Two-tone intermodulation distortion at specified Oe, 
+Ri, Ap, AA, and/ 
+
+
+Di2,r>2i 
+
+
+
+
+X 
+
+
+dB 
+
+
+either 11.5.13.1" 
+
+
+Thermal resistance between junction and case 
+
+
+«th(j-c) 
+
+
+
+
+X 
+
+
+Q/K 
+
+
+or 11.5.13.2" 
+
+
+Thermal resistance between junction and ambient 
+
+
+«th(j-a) 
+
+
+
+
+X 
+
+
+niK 
+
+
+11.5.14= 
+
+
+Optical crosstalk at specified /p 
+
+
+CRo 
+
+
+
+
+X 
+
+
+dB 
+
+
+11.5.15" 
+
+
+Electrical crosstalk at specified If, iu clock 
+frequency, and signal pattern 
+
+
+CRe 
+
+
+
+
+X 
+
+
+dB 
+
+
+NOTE For referer 
+
+
+ce only 
+
+
+
+
+
+
+
+
+
+
+The thermai crosst 
+
+
+alk of channel "i", CRth{\), is defined by the quotient of 
+
+
+(Oi' - ^y 
+
+
+i', where 
+
+
+
+
+
+
+- (*i' is the radi 
+itself) is fed by 
+
+
+ant power emitted from the channel "i" when each cha 
+specified /p(DC). 
+
+
+nnel (all ch 
+
+
+annel inclu 
+
+
+ding the i-t 
+
+
+1 channel 
+
+
+- Oi' is the radi 
+
+
+ant power emitted from the channel "f" when it is the o 
+
+
+nly channel 
+
+
+fed by spe 
+
+
+cified /p(Dc 
+
+
+■ 
+
+
+The thermal crosst 
+
+
+alk of the device (array), CRth, is the maximum of the c 
+
+
+)verall cross 
+
+
+talks. 
+
+
+
+
+
+
+
+27 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+Subclauses 
+
+
+Characteristics and conditions 
+
+at Tamb or Tease = 25 °C, 
+
+unless otherwise stated 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+Min. 
+
+
+Max. 
+
+
+'^^ For devices without pigtail only. 
+
+^* Where appropriate. 
+
+^'' The optical crosstalk of channel "/", Cffo(i), is defined as the quotient of ^/Oi, where 
+
+- (^i is the radiant power emitted from the channel "i" whilst each of all the other channels is fed by specified 
+
+/F(DC), 
+
+- Oi is the radiant power emitted from the channel "/" when It Is the only channel fed by /f(dc) specified. 
+The optical crosstalk of the device (array), CRo, is the maximum of the overall crosstalks. 
+
+°* The electrical crosstalk of channel "i", CRe{\), is defined as the quotient of ^/<l>i, where 
+
+- (*i is the average radiant power emitted from the channel "/" when each of all the other channels is fed by 
+specified driving conditions, If, U, clock frequency and signal pattern (NRZ). 
+
+- Oi is the average radiant power emitted from the channel "i" when it is the only channel fed by specified driving 
+conditions, /f, U, clock frequency and signal pattern (NRZ). 
+
+The electrical crosstalk of the device (array), CRe, is the maximum of the overall crosstalks. 
+
+
+
+11.6 Supplementary information 
+
+To be given only when necessary for the specification and the use of the device. 
+
+- Temperature derating curves referred to in the limiting values; 
+
+- Radiant output power versus temperature curve or coefficient; 
+
+- Radiant output power versus forward current curve; 
+
+- Change in peak emission wavelength versus temperature curve or coefficient; 
+
+- Radiation diagram; 
+
+- Thermal resistance (for ambient rated or case rated devices); 
+
+- Detailed outline drawings. 
+
+12 Optical modulators for digital fibre optic applications 
+
+12.1 Type 
+
+The optical modulator module consists of following basic parts; 
+
+- modulator (Mach-Zehnder type, electro-absorption type, etc.); 
+
+- input and output fibre pigtail (where appropriate); 
+
+- thermal sensor (where appropriate); 
+
+- TEC element (where appropriate); 
+
+- photodiode (where appropriate). 
+
+12.2 Materials 
+
+The materials of optical modulators for digital fibre optic applications are 
+
+- modulator: InP, GaAs, InGaAs, InAIAs, InGaAsP, LiNbOg, etc; 
+
+- thermal sensor ; 
+
+- TEC element ; 
+
+- photodiode: Ge, Si, InGaAs, etc. 
+
+
+
+28 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+12.3 Structure 
+
+- Modulator: lumped type (Mach-Zehnder), travelling-wave type (Mach-Zehnder), Y-branch, 
+MQW, etc. 
+
+- Optical isolator, photodiode, half-mirror, etc. 
+
+12.4 Details of outline and encapsulation 
+
+- lEC and/or national reference number of the outline drawing. 
+
+- Method of encapsulation: glass/metal/plastic/other. 
+
+- Terminal identification and indication of any electrical connection between a terminal and 
+the case. 
+
+- Characteristics of the optical port: relative orientation to mechanical axis, relative position 
+to mechanical axis, area, numerical aperture. 
+
+- Information on the pigtail fibre: type of fibre, kind of protection, length, connector type, 
+angular orientation of the connector to the fibre polarization axis (where appropriate). 
+
+- Information on the heatsinking of the package. 
+
+12.5 Limiting values (absolute maximum ratings) over the operating temperature range, 
+unless otherwise stated 
+
+Table 16 - Limiting values for optical modulators for digital fibre optic applications 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+Min. 
+
+
+Max. 
+
+
+
+
+A. General conditions 
+
+
+
+
+
+
+
+
+
+
+12.5.1 
+
+
+Storage temperature 
+
+
+Tstg 
+
+
+X 
+
+
+X 
+
+
+°C 
+
+
+12.5.2 
+
+
+Operating case temperature 
+
+
+T'case 
+
+
+X 
+
+
+X 
+
+
+°C 
+
+
+12.5.3 
+
+
+Operating submount temperature (where 
+appropriate) 
+
+
+Tsub 
+
+
+X 
+
+
+X 
+
+
+°C 
+
+
+12.5.4 
+
+
+Soldering temperature at maximum soldering time 
+and minimum distance to case specified 
+
+
+Tsld 
+
+
+
+
+X 
+
+
+°C 
+
+
+12.5.5 
+
+
+Bend radius of pigtail (at specified distance from 
+the case) 
+
+
+r 
+
+
+X 
+
+
+
+
+mm(cm) 
+
+
+12.5.6 
+
+
+Shock 
+
+
+
+
+
+
+X 
+
+
+m/s2, s 
+
+
+12.5.7 
+
+
+Vibration 
+
+
+
+
+
+
+X 
+
+
+m/s2, Hz 
+
+
+12.5.8 
+
+
+Acceleration (where appropriate) 
+
+
+
+
+
+
+X 
+
+
+m/s2 
+
+
+12.5.9 
+
+
+Tensile force along cable axis: 
+
+
+
+
+
+
+
+
+
+
+12.5.9.1 
+
+
+Untight structure 
+
+- Tensile force on fibre 
+
+- Tensile force on cable 
+
+
+F 
+F 
+
+
+
+
+X 
+X 
+
+
+N 
+N 
+
+
+12.5.9.2 
+
+
+Tight structure 
+
+- Tensile force on cable 
+
+
+F 
+
+
+
+
+X 
+
+
+N 
+
+
+12.5.10 
+
+
+Change of temperature when operational (where 
+appropriate) 
+
+
+ATlt 
+
+
+
+
+X 
+
+
+°C/min. 
+
+
+
+
+B. Modulator ^ 
+
+
+
+
+
+
+
+
+
+
+12.5.11 
+
+
+Reverse voltage 
+
+
+Vr 
+
+
+
+
+X 
+
+
+V 
+
+
+12.5.12 
+
+
+Forward current 
+
+
+If 
+
+
+
+
+X 
+
+
+mA 
+
+
+12.5.13 
+
+
+Continuous input power 
+
+
+'I>e(in,cw) 
+
+
+
+
+X 
+
+
+mW 
+
+
+
+
+C. Thermal sensor (where appropriate) 
+
+
+
+
+
+
+
+
+
+
+12.5.14 
+
+
+Thermal sensor 
+
+
+
+
+
+
+
+
+
+
+either 12.5.14.1 
+
+
+Dissipation power 
+
+
+Plot 
+
+
+
+
+X 
+
+
+W 
+
+
+or 12.5.14.2 
+
+
+Supply voltage 
+
+
+^supp 
+
+
+
+
+X 
+
+
+V 
+
+
+
+29 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Symbols 
+
+
+Requirements 
+
+
+Units 
+
+
+Min. 
+
+
+Max. 
+
+
+
+
+D. Thermo-electric cooler (where appropriate) 
+
+
+
+
+
+
+
+
+
+
+12.5.15 
+
+
+TEC current under cooling and heating 
+
+
+h 
+
+
+
+
+X 
+
+
+A 
+
+
+
+
+E. Photodiode (where appropriate) 
+
+
+
+
+
+
+
+
+
+
+12.5.16 
+
+
+Reverse voltage 
+
+
+Vr 
+
+
+
+
+X 
+
+
+V 
+
+
+12.5.17 
+
+
+Forward current 
+
+
+If 
+
+
+
+
+X 
+
+
+mA 
+
+
+NOTE Relative humidity and air pressure should be specified for all devices in non-hermetically sealed 
+packages. 
+
+
+" For modulator module without TEC, the derating curve or derating factor shall be given for one of the 
+parameters of 12.5.9 to 12.5.11. 
+
+
+For modulator module with TEC, Tsub = 25 °C. 
+
+
+
+12.6 Electrical and optical characteristics 
+
+Table 17 - Electrical and optical characteristics for optical modulators 
+for digital fibre optic applications 
+
+
+
+
+
+
+
+Conditions at Tsub = 25 °C for 
+modulators with TEC, 
+
+
+
+
+Requirement 
+
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Tamb or Tease = 25 °C 
+
+for modulators without TEC, 
+
+
+Symbols 
+
+
+
+
+
+
+Units 
+
+
+
+
+
+
+
+
+
+
+unless otherwise stated 
+
+
+
+
+Min. 
+
+
+Max. 
+
+
+
+
+
+
+A. Modulator 
+
+
+
+
+
+
+
+
+
+
+
+
+12.6.1 
+
+
+Operating voltage 
+
+
+Extinction ratio specified, 
+d.c. bias specified 
+
+
+Vk 
+
+
+X 
+
+
+X 
+
+
+V 
+
+
+12.6.2 
+
+
+Operating wavelength 
+
+
+Polarization, wavelength and 
+
+
+^op 
+
+
+X 
+
+
+X 
+
+
+nm (pm) 
+
+
+
+
+
+
+input power specified 
+
+
+
+
+
+
+
+
+12.6.3 
+
+
+Insertion loss 
+
+
+Polarization, wavelength and 
+input power specified 
+
+
+iin 
+
+
+
+
+X 
+
+
+dB 
+
+
+12.6.4 
+
+
+Return loss 
+
+
+Polarlztion, wavelength and d.c. 
+bias specified 
+
+
+Rl 
+
+
+X 
+
+
+X 
+
+
+dB 
+
+
+12.6.5 
+
+
+Extinction ratio 
+
+
+Polarization, wavelength and 
+input power specified, d.c. bias 
+specified 
+
+
+ExR 
+
+
+X 
+
+
+X 
+
+
+dB 
+
+
+12.6.6 
+
+
+Frequency response 
+
+
+Polarization, wavelength and 
+input power specified, d.c. bias 
+specified 
+
+
+/c 
+
+
+
+
+X 
+
+
+MHz 
+(GHz) 
+
+
+12.6.7 
+
+
+Frequency response 
+flatness 
+
+
+Polarization, wavelength and 
+input power specified, d.c. bias 
+specified 
+
+
+ARdIRd 
+
+
+
+
+X 
+
+
+MHz/mV 
+
+
+12.6.8 
+
+
+Wavelength chirp 
+
+
+Polarization, wavelength and 
+input power specified, d.c. bias 
+specified 
+
+
+a 
+
+
+
+
+X 
+
+
+MHz/mV 
+
+
+
+
+B. Thermistor (where appr 
+
+
+opriate) 
+
+
+
+
+
+
+
+
+
+
+12.6.9 
+
+
+Resistance 
+
+
+Thermistor current Z,,, specified 
+
+
+R 
+
+
+X 
+
+
+X 
+
+
+Q 
+
+
+12.6.10 
+
+
+Slope of resistance 
+
+
+Thermistor current /,(, specified 
+Temperature range: 
+
+Tsub ^,Tsub '° 
+
+
+ARIR 
+
+
+X 
+
+
+X 
+
+
+
+
+
+
+C. Thermo-electric cooler 
+
+
+element (where appropriate) 
+
+
+
+
+
+
+
+
+
+
+
+30 
+
+
+
+IS 15077 (Parti) :2012 
+I EC 62007-1 : 2008 
+
+
+
+
+
+
+
+Conditions at Tsub = 25 °C for 
+modulators with TEC, 
+
+
+
+
+Requirement 
+
+5 
+
+
+
+
+Subclauses 
+
+
+Characteristics 
+
+
+Tamb or Tease = 25 °C 
+
+for modulators without TEC, 
+
+
+Symbols 
+
+
+
+
+Units 
+
+
+
+
+
+
+
+
+
+
+unless otherwise stated 
+
+
+
+
+Min. 
+
+
+Max. 
+
+
+
+
+12.6.11 
+
+
+TEC current 
+
+
+Viz specified 
+Temperature range: 
+Tease min. or Tease max. 
+
+
+/PE 
+
+
+
+
+X 
+
+
+A 
+
+
+12.6.12 
+
+
+TEC voltage 
+
+
+Kit specified, 
+Temperature range: 
+
+Tease min. Or Tease max. 
+
+
+FpE 
+
+
+
+
+X 
+
+
+V 
+
+
+12.6.13 
+
+
+Temperature difference 
+between Tease and Tsub 
+
+
+TEC current, voltage and 
+modulator operating condition 
+specified 
+
+
+ATPE 
+
+
+
+
+X 
+
+
+°C 
+
+
+
+
+D. Monitor photodiode (whi 
+
+
+ere appropriate) 
+
+
+
+
+
+
+
+
+
+
+12.6.14 
+
+
+Dark current 
+
+
+Oe = 0, Vr specified 
+
+
+/R(D) 
+
+
+
+
+X 
+
+
+nA 
+
+
+12.6.15 
+
+
+Monitor current 
+
+
+Oe specified 
+Vr specified 
+
+
+/R(M) 
+
+
+X 
+
+
+X 
+
+
+mA 
+
+
+a CW-operation. 
+
+
+
+
+
+
+
+
+b In modulation. 
+
+
+
+
+
+
+
+
+
+12.7 Supplementary information 
+
+- Extinction ratio (or output power) as a function of reverse voltage. 
+
+- Response time of tine tinermal sensor temperature witin respect to tlie change of cooler 
+current (winere appropriate). 
+
+- Bias stability (where appropriate). 
+
+- Bias temperature coefficient, in either V/°C or %/°C (where appropriate). 
+
+12.8 Hazards 
+
+See lEC 60825. 
+
+
+
+31 
+
+
+
+IS 15077 (Parti): 2012 
+I EC 62007-1 : 2008 
+
+
+
+Bibliography 
+
+lEC 60050-731, International Electrotechnlcal Vocabulary - Chapter 731: Optical fibre 
+communication 
+
+lEC 60050-845, International Electrotechnlcal Vocabulary - Chapter 845: Lighting 
+
+
+
+32 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution establisined under tine Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of goods 
+and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any form 
+without the prior permission in writing of BIS. This does not preclude the free use, in course of imple- 
+menting the standard, of necessary details, such as symbols and sizes, type or grade designations. 
+Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also 
+reviewed periodically; a standard along with amendments is reaffirmed when such review indicates that 
+no changes are needed; if the review indicates that changes are needed, it is taken up for revision. Users 
+of Indian Standards should ascertain that they are in possession of the latest amendments or edition by 
+referring to the latest issue of 'BIS Catalogue' and 'Standards: Monthly Additions'. 
+
+This Indian Standard has been developed from Doc No.: LITD 1 1 (31 58). 
+
+Amendments Issued Since Publication 
+
+Amendment No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 1 0002 
+
+Telephones: 2323 0131, 2323 3375, 2323 9402 Website: www.bis.org.in 
+
+Regional Offices: Telephones 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg (2323 7617 
+
+NEW DELHI 1 1 0002 \ 2323 3841 
+
+Eastern : 1/14, C.I.T. Scheme VII M, V.I. P. Road, Kankurgachi ( 2337 8499,2337 8561 
+
+KOLKATA 700054 ( 2337 8626, 2337 91 20 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160022 (2603843 
+
+( 260 9285 
+
+Southem : C.I.T. Campus, IV Cross Road, CHENNAI 600113 (22541216,22541442 
+
+(22542519,2254 2315 
+
+Western : Manakalaya, E9MIDC, Marol, Andheri (East) (2832 9295,2832 7858 
+
+MUMBAI 400093 1 2832 7891 , 2832 7892 
+
+Branches: AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. DEHRADUN. 
+FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW. 
+NAGPUR. PARWANOO. PATNA. PUNE. RAJKOT. THIRUVANATHAPURAM. VISAKHAPATNAM. 
+
+
+
+Published by BIS, New Delhi 
+
+
+

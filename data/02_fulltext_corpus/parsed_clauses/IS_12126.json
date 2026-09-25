@@ -1,0 +1,115 @@
+{
+  "is_number": "IS IS_12126",
+  "standard_id": "IS IS_12126",
+  "title": "Indian Standard Specification / Test Method (IS IS_12126)",
+  "ia_identifier": "IS_12126",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the methods of test and performance requirements of hand held metal detectors used for determining the location of metal weapons carried on a person and in a small package. 1.2 It does not cover metal detectors used for detecting the following: a) Wiring of explosives, and b) Buried metals and metals in trenches,",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 9858",
+      "standard_id": "IS 9858:1981",
+      "title": "Safety requirements for electronic measuring apparatus",
+      "division_code": "LITD",
+      "aspect": "Safety Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9779",
+      "standard_id": "IS 9779",
+      "title": "Indian Standard Specification / Test Method (IS 9779)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 531",
+      "standard_id": "IS 531:1981",
+      "title": "Leaded brass strips for instrument parts",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6911",
+      "standard_id": "IS 6911:2017",
+      "title": "Stainless steel plate, sheet and strip - Specification (Second Revision)",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Stainless Steel Products (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 2255",
+      "standard_id": "IS 2255:1977",
+      "title": "Mild Steel Wire Rod for the Manufacture of Machine Screws (By Cold Heading Process)",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4170",
+      "standard_id": "IS 4170:1967",
+      "title": "Brass rods for general engineering purposes",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2004",
+      "standard_id": "IS 2004:1991",
+      "title": "Carbon steel forgings for general engineering purposes",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade 04",
+    "Grade festrs",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12126"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "Tolerance on all dimensions except material thickness i 1 mm"
+    ],
+    "marking_requirements": [
+      "2 Certification Marking — The paetal detector may glso be marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 22716
+}

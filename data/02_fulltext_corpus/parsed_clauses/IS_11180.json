@@ -1,0 +1,86 @@
+{
+  "is_number": "IS IS_11180",
+  "standard_id": "IS IS_11180",
+  "title": "Indian Standard Specification / Test Method (IS IS_11180)",
+  "ia_identifier": "IS_11180",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11180) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11180).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1570",
+      "standard_id": "IS 1570",
+      "title": "Indian Standard Specification / Test Method (IS 1570)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1608",
+      "standard_id": "IS 1608:2005",
+      "title": "Mechanical testing of metals - Tensile Testing",
+      "division_code": "MED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1499",
+      "standard_id": "IS 1499:1977",
+      "title": "Method for Charpy Impact Test (U-notch) for Metals",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2289",
+      "standard_id": "IS/ISO 2289",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2289)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11180(PART 1)",
+      "standard_id": "IS 11180(PART 1)",
+      "title": "square and hexagonal kellys for direct rotary drilling (IS 11180(PART 1))",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade bruary",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11180"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "Yield stress, MIn = 686 N",
+      "Tensile strength, Min = 882 N",
+      "Minimum elongation on test specimen with L^ = 5"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 10334
+}

@@ -1,0 +1,41 @@
+{
+  "is_number": "IS IS_11136",
+  "standard_id": "IS IS_11136",
+  "title": "Indian Standard Specification / Test Method (IS IS_11136)",
+  "ia_identifier": "IS_11136",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies the conditions and procedures for measurement of mechanical and electrical performance characteristics of video tape recording and reproducing equipment. 2* TERMINOLOGY 2.1 For the purpose of this standard, the terms and definitions specified in IS : 1885 ( Part 48 )-1978t shall apply. ♦Rules for rounding off numerical values ( revised). fElectrotechnical vocabulary: Part 48 Recording. IS: 11136- 1934 3. GENERAL CONDITIONS FOR MEASUREMENT 3.0 Unless otherwise specified, measurements shall be made under normal measuring conditions as specified below. 3.1 Normal Supply Voltage — The rated supply voltage shall be applied to the equipment. 3.1.1 The voltage applied to the equipment shall be held constant within 1\"0 percent of the rated value during the measurement of the characteristic. 3.1.2 In case of ac mains operations, the voltage shall be applied at the rated frequency. The harmonic content of ac mains supply voltage shall not exceed 5*0 percent. 3.1.3 In case of battery operation, primary batteries of the type and rated voltage as specified by the manufacturers shall be used* 3.2 Atmospheric Conditions for Test 3.2.1 Unless otherwise specified all measurements shall be carried out under the following atmospheric conditions: Temperature 15 to 35°C Relative humidity 45 to 75 percent Pressure 86 to 106 kPa ( 1 kPa 10 m bar ) 3.2.2 The equipment shall be protected from draught and direct radiation. 3.3 Accuracy of Test Set-Up — The test set-up employed to carry out measurements in accordance with this standard shall have an accuracy of at least one -order better than that specified for the quantity under measurement. 3.4 Stereophonic Recording and Reproducing Equipment — Unless otherwise specified, measurements shall be carried out on each channel for stereophonic equipment. 3.5 Reporting — The test report shall clearly indicate the following: a) Rated supply voltage type ( ac or dc ) and frequency in the case of ac, b) Atmospheric conditions under which tests are carried out, c) Any change of necessary adjustment to the equipment done before measurement, and d) Results of tests. IS : 11136 - 1984 4. OPERATING CONDITIONS 4,1 Before any measurements are made, the unit shall operate at least for the stabilization period specified by the manufacturer or 10 minutes whichever is greater. 4.2 Before any measurements are made all measuring equipment shall have reached temperature stability. 4.3 Apart from the specified load, the measuri",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11136"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 18701
+}

@@ -1,0 +1,61 @@
+{
+  "is_number": "IS IS_11353",
+  "standard_id": "IS IS_11353",
+  "title": "Indian Standard Specification / Test Method (IS IS_11353)",
+  "ia_identifier": "IS_11353",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard gives rules for the general application of marking conductors by colours in installations, assemblies, equipment and apparatus. 1.2 This standard also applies to the terminal markings for basic electrical unit ( for example, resistors, fuses, relays, transformers, rotating machines ) and for combinations of such units ( for example, motor control equipment). It also applies to the identification of the terminations of conductors performing certain functions ( for example, power supply; earthing, earthing to frame, etc ). 1.3 This standard serves as a guide when dealing with identification systems in particular type of equipment. Note — In the context of this standard, the expression 'terminal marking* refers to the markings applied to the conducting parts of a circuit or apparatus which are provided for electrical connection to external circuits,",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 375",
+      "standard_id": "IS 375",
+      "title": "Indian Standard Specification / Test Method (IS 375)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2032",
+      "standard_id": "IS 2032",
+      "title": "Indian Standard Specification / Test Method (IS 2032)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11553",
+      "standard_id": "IS 11553:2011",
+      "title": "Air Cargo Equipment - Air/Land Pallet Nets",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11353"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 22573
+}

@@ -1,0 +1,865 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+IS 12223-2 (1989): Data Interchange on 6.30 mm Wide 
+Magnetic Tape Cartridge Using IMFM Recording at 252 ftpmm. 
+Part 2 : Track Format and Method of Recording For Data 
+Interchange in Start/Stop Mode [LITD 16: Computer Hardware, 
+Peripherals and Identification Cards] 
+
+
+
+aj^&Vi ilW^K-^i^^^ T ^bi^ nVF^f 
+
+
+
+:<>5&i| \ I |T'5K;^5?S^>^i»1 
+
+
+
+K^^i^i^Vii^^ 
+
+
+
+Satyanarayan Gangarara Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 12223 (Part 2) : 1989 
+180 8063/2:1986 
+
+( Reaffirmed 2003 ) 
+
+
+
+Indian Standard 
+
+SPECIFICATION FOR DATA INTERCHANGE 
+
+ON 6.30 mm WIDE MAGNETIC TAPE CARTRIDGE 
+
+USING IMFM RECORDING AT 252 ftpmm 
+
+PART 2 TRACK FORMAT AND METHOD OF RECORDING 
+FOR DATA INTERCHANGE IN START/STOP MODE 
+
+
+
+UDC 681 .327.636:621 .798.1 1 -52 
+
+
+
+©BIS 1990 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+August ^2^ Price Group 3 
+
+
+
+IS 12223 (Part 2) : 1989 
+ISO 8063/2:1986 
+
+
+
+Indian Standard 
+
+SPECIFICATION FOR DATA INTERCHANGE 
+
+ON 6.30 mm WIDE MAGNETIC TAPE CARTRIDGE 
+
+USING IMFM RECORDING AT 252 ftpmm 
+
+PART 2 TRACK FORMAT AND METHOD OF RECORDING 
+FOR DATA INTERCHANGE IN START/STOP MODE 
+
+NATIONAL FOREWORD 
+
+This Indian Standard (Part 2), which is identical with ISO 8063/2 : 1986 'Information processing — 
+Data interchange on 6.30 mm (0.25 in) wide magnetic tape cartridge using IMFM recording at 
+252 ftpmm (6400 ftpi)~-Part 2: Track format and method of recording for data interchange in 
+start/stop mode', issued by the international Organization for Standardizatiori (ISO) was adopted by 
+the Bureau of Indian Standards on 15 December 1989 on the recommendation of the Computers, 
+Business Machines and Calculators Sectional Committee (LTDC 24) and approval of the Electronics 
+and Telecommunication Division Council. 
+
+In the adopted standard certain terminology and conventions are not identical with those gsed in 
+Indian Standards; attention is specially drawn to the foUowing: 
+
+3) Comma (,) has been used as a decimal marker while in Indian Standards the current 
+
+practice is to use a point (.) as the decimal marker, 
+b) wherever the words 'International Standard' appear, referring to this standard, they should 
+
+be read as 'Indian Standard'. 
+
+For the purpose of this Indian Standard, only metric dimensions are applicable. 
+CROSS REFERENCES 
+
+In this Indian Standard, the following international standards are referred to. Read in their respective 
+places, the following; 
+
+
+
+International Standard Indian Standard Degree of 
+
+Correspondence 
+
+ISO 646 Information processing — IS 1 031 5 : 1 982 7-bit coded Technically equivalent 
+
+ISO 7-bit coded character set for character set for information 
+
+information interchange interchange 
+
+ISO 2022 Information process- IS 12326 : 1987 7-bit and 8-bit Identical 
+
+ing — ISO 7-bit and 8-bit coded coded character sets — Code ext- 
+
+cbaracter sets — Code extension ension techniques 
+techniques 
+
+
+
+IS 12223 (Part 2) : 1989 
+ISO 8063/2 : 1986 
+
+
+
+International Standard 
+
+
+
+Indian Standard 
+
+
+
+Degree of 
+Correspondence 
+
+
+
+ISO 4341 Information process- 
+ing — Magnetic tape cassette and 
+cartridge labelling and file struc- 
+ture for information interchange 
+
+ISO 4873 Information process- 
+ing—ISO 8-bit code— Structure 
+and rules for implementation 
+
+
+
+IS 1 2660 : 1 989 Specification for 
+magnetic tape cassette and cart- 
+ridge labelling and file structure 
+for information interchange 
+
+IS 10401 : 1982 8-bit coded 
+character set for information/ 
+interchange. 
+
+
+
+Identical 
+
+
+
+Technically 
+equivalent 
+
+
+
+IS 12223 (Part 2) : 1989 
+ISO 8063/2 : 1986 
+
+
+
+1 Scope and field of application 
+
+ISO 8063 specifies the characteristics of a tape cartridge using 
+6,30 mm (0.25 in) wide magnetic tape for data interchange be- 
+tween data processing systems. 
+
+ISO 8063/1 specifies the dimensional, physical and magnetic 
+characteristics of the cartrid^, and the track layout. 
+
+This part of ISO 8063 specifies the quality of the recorded 
+signals, and the track format to be used on a 6,30 mm 10.25 in) 
+magnetic tape cartridge, recorded at 252 ftpmm 16 400 ftpi) 
+using IMFM recording and the start/stop mode of operation. 
+
+Together with the labelling scheme specified in ISO 4341, 
+ISO 8063/1 and ISO 8063/2 provide for full data interchange 
+between data processing systems. 
+
+NOTE — Numeric values in the SI and/or Imperial measurement 
+system in this part of ISO 8063 may have been rounded off and 
+therefore are consistent with, but not exactly equal to, each other. 
+Either system may be used, but the two should be neither intermixed 
+nor reconverted. The original design was made using the Imperial 
+measurement system. 
+
+ISO 8063 applies to cartridges used for data interchange. 
+Where it applies for testing only, this is specifically stated. 
+
+
+
+2 Conformance 
+
+A 6,30 mm (0.25 in) wide magnetic tape cartridge shaO be in 
+conformance with ISO 8063 if it meets all mandatory 
+requirements of both ISO 8063/1 and ISO 8063/2. 
+
+
+
+ISO 2022, information processing — iSO 7- bit and $- bit coded 
+character sets — Code extension techniques. 
+
+ISO 4341, information processing — Magnetic tape cassette 
+and cartridge iabeiling andfiie structure for information inter- 
+change. 
+
+
+
+ISO 4873, information processing 
+ture and ruies for impiementation. 
+
+
+
+ISO 8-bit code - Struc- 
+
+
+
+4 Data representation 
+
+Characters shall be represented by means of the ISO 7-bit 
+coded character set (see ISO 646) and, where required, by its 
+7-bit or 8-bit extensions (see ISO 2022) or by means of the ISO 
+8-bit coded character set (see ISO 4873). 
+
+4.1 Recording of 7-bit coded characters 
+
+Each 7-bit coded character shall be recorded in bit positions B1 
+to B7 of an 8-bit byte; bit-position 88 shall always be recorded 
+with ZERO. The relationship shall be as shown in figure 1. 
+
+4.2 Recording of 8-bit coded characters 
+
+Each 8-bit coded character shall be recorded in bit positions B1 
+to B8 of an 8-bit byte. The relationship shall be as shown in 
+figure 2. 
+
+
+
+5 Recording 
+
+
+
+3 References 
+
+ISO 646, information processing — ISO 7-bit coded character 
+set for information interchange. 
+
+
+
+5.1 Method of recording 
+
+The method of recording shall be Inverted Modified Frequency 
+Modulation (IMFM) for which the conditions shall be 
+
+
+
+Bits of the 7-bit combination 
+
+
+
+
+
+b7 
+
+
+b6 
+
+
+b5 
+
+
+b4 
+
+
+b3 
+
+
+b2 
+
+
+b1 
+
+
+Bit-positions in the byte 
+
+
+B8 
+
+
+87 
+
+
+B6 
+
+
+85 
+
+
+B4 
+
+
+83 
+
+
+82 
+
+
+81 
+
+
+
+Figure 1 
+% 
+
+
+
+IS 12223 (Part 2) : 1989 
+ISO 8063/2 : 1986 
+
+
+
+Bits of the 8-bit combination 
+
+
+b8 
+
+
+b7 
+
+
+b6 
+
+
+b5 
+
+
+b4 
+
+
+b3 b2 
+
+
+b1 
+
+
+Bit-positions in the byte 
+
+
+88 
+
+
+87 
+
+
+B6 
+
+
+B5 
+
+
+84 
+
+
+83 
+
+
+82 
+
+
+81 
+
+
+
+Figure 2 
+
+
+
+1 1 
+
+
+
+1 
+
+
+
+1 
+
+
+
+Figure 3 
+
+
+
+a) a flux transition shall be written at the centre of a bit ceil 
+containing a ZERO; 
+
+b) a flux transition shall be written at the cell boundary 
+between consecutive bit cells containing ONEs. 
+
+See figure 3. 
+
+5.2 Measurement 
+
+All signal measurements shall be made at the point in the read 
+chain where the amplitude is proportional to the rate of change 
+of flux in the read head. The ratio of tape speed to the surface 
+speed of the belt capstan shall be assumed to be exactly 0,76. 
+
+
+
+5.3 Density of recording 
+
+5.3.1 The nominal recording density shall be 252 ftpmm 
+(6 400ftpi). The nominal bit cell length shall be 3,97 pm 
+(156 Min). 
+
+5.3.2 The long-term average bit cell length shall be the 
+average bit cell length measured over at least 500 000 flux tran- 
+sitions. It shall be within ± 3 % of the nominal bit cell length. 
+
+
+
+5.3.3 The short-term average bit cell length, referred to a par- 
+ticular bit cell, shall be the average of the lengths of the 
+preceding four bit cells. It shall be within ± 7 % of the long- 
+term average bit cell length and shall be within ± 2 % of ^he 
+average bit cell length of any string of 128 consecutive bit cells 
+, containing the said particular bit celt. 
+
+
+
+5.4 Flux transition spacing 
+
+5.4.1 Effect of asymmetry 
+
+At nominal recording density the average variation of spacing 
+between consecutive flux transitions, taken over 32 flux tran- 
+sition spacings, shall not be greater than 2 % (see figure 4). 
+
+5.4.2 Effect of data patterns 
+
+In each of the two possible sequences of flux transitions de- 
+fined by bit pattern 00000001000000010000000 the spacing d^ 
+between the two ZERO flux transitions preceding the ONE bit 
+cell shall not exceed the average of the four earlier flux tran- 
+sition spacings by more than 12 %. 
+
+Similarly, the spacing (^2 between the two ZERO flux transitions 
+following the ONE bit cell shall not exceed the average of the 
+four subsequent ftux transition 'spacings by more than 12 % 
+(see figure 5). 
+
+5.5 Signal amplitude of the interchanged 
+cartridge 
+
+5.5.1 The average peak-to-peak signal amplitude at 
+252 ftpmm (6 400 ftpi) shall not deviate by more than ^|g % 
+from SRA252- 
+
+Averaging shaH be done over a minimum of 6 400 flux tran- 
+sitions, which may be segmented into blocks 
+
+5.5.2 No peak-to-peak signal amplitude at 126 ftpmm 
+(3 200 ftpi) shall be more than three times SRA250. 
+
+
+
+, IS 12223(Part2) : 1989 
+' ISO 8063/2 : 1986 
+
+
+
+
+2 '^'\d-.-d,. 
+
+
+
+31 iL rfj + dj + 1 
+
+
+
+,02 
+
+
+
+/■ - 1 
+
+
+
+Figure 4 
+
+
+
+00000010 0000 100 0000 
+
+n_jiJiJ~i_rLrLrL_rLrLru 
+
+I ^1 1^11 
+
+
+
+^1 J^1 L J ^2 L ^2 
+
+— ! mA — ' \^ -H — h « ^ 
+
+
+
+|di -0,25Oi|^^^2>l^2^0^^Dd 
+
+
+
+0,25 Di 
+
+
+
+0,25 Z>2 
+
+
+
+Figure 5 
+
+
+
+5.6 Minimum signal amplitude 
+
+No cartridge, when interchanged/ shall contain flux transitions 
+the base-to-peak amplitudes of which are less than 35 % of half 
+SRA252. 
+
+5.7 Erasure 
+
+After erasure, any signal amplitude shall be less than !3 % of the 
+SRA252. 
+
+5.8 Recording offset angle 
+
+On any track the angle that a flux transition across the track 
+makes with a line perpendicular to Reference Plane B shall not 
+exceed 9 minutes of arc. 
+
+
+
+6 Track format 
+
+The layout and positioning of tracks shair be as specified in 
+ISO 8063/1. 
+
+6.1 Use of tracks 
+
+Each track shall be a data track and shall be written serially in 
+the direction from the BOT nriarker to the EOT nwrker. No data 
+
+
+
+for interchange shall be written between the BOT nrwrker and 
+the LP marker. Data for interchange shall be written after sens- 
+ing the LP marker and may continue to be written after sensing 
+the EW marker. 
+
+
+
+6.2 Location of characters on the tracks 
+
+Each character shall be located in a byte of eight bit positions 
+along the track numbered from 1 to 8 in order of recording. 
+
+
+
+6.3 Sequence of recording 
+
+The least-signrficant bit shall be recorded first. The Information 
+to be interchanged shall be recorded serially by bit and by 
+character. 
+
+
+
+Bit-positions: ...4321 87654321 8765432.. 
+
+
+
+FonA/ard tape nriotion : 
+Resulting recording direction: 
+
+6.4 Data block 
+
+
+
+A data bk>ck shall consist of a preamble, a data portion, a CRC 
+character and a postamble (see figure 6). 
+
+
+
+
+5 
+
+
+
+IS 12223 (Part 2) : 1989 
+ISO 8063/2: 1986 
+
+
+
+PREAMBLE 
+
+• 
+
+
+DATA 
+
+
+CRC 
+
+
+POSTAMBLE 
+
+
+
+
+
+
+one 
+
+
+
+
+000.. 001 
+
+
+8-bit bytes 
+
+
+16 bit 
+byte 
+
+
+100... 000 
+
+
+39 ZEROs minimum 
+
+
+12 bytes minimum 
+
+
+39 ZEROs minimum 
+
+
+47 ZEROs maximum 
+
+
+8 196 bytes maximum 47 ZEROs 
+
+
+t maximum 
+
+
+
+Figure 6 
+
+
+
+6.4.1 Preamble 
+
+The preamble, consisting of not less than 39 ZEROs .and not 
+more than 47 ZEROs followed by a single ONE, shall be written 
+immediately preceding data in each data block. 
+
+6.4.2 Data portion 
+
+The data portion of a data block shall contain a minimum of 
+12 data bytes and a maximum of 8 192 data bytes. 
+
+
+
+6.5 Control block 
+
+A control block shall consist of a preamble, two bytes of eight 
+ZEROs, and a postamble. 
+
+6.6 Gaps 
+
+6.6.1 Integrity of gaps 
+
+The gaps shall be erased. 
+
+
+
+6.4.3 Cyclic Redundancy Check (CRC) 
+
+The t6 bits following the data portion of a data block shall be a 
+Cyclic Redundancy Check (CRC) character. This 16-blt 
+character shall be written in each data block following the data 
+portion and immediately preceding the postamble, the least 
+significant bit being recorded first. The polynomial generating 
+the CRC shall be 
+
+xlB + vl5 + ,v2 -I- 1 
+
+6.4.4 Postamble 
+
+The postamble, consisting of a ONE followed by not less than 
+39 ZEROs and not more than 47 ZEROs, shall be written 
+Immediately following the CRC in each data L .ck. 
+
+
+
+6.6.2 Initial gap 
+
+The gap between the LP marker and the first data block shall be 
+152,4 mm min. (6 in min.) and 1,2 m max. (48 In max.). 
+
+6.6.3 Interblock gaps 
+
+The interblock gap shall have a minimum length of 31 mm 
+(1.22 in) and a maximum length of 1,2 m (48 in). Any gap In 
+excess of 1 ,2 m {48 in) shall be considered as the end of data 
+on this track, 
+
+NOTE — The ability to start or stop within a gap of a given length is 
+dependent on the tape speed selected from the range specified In 
+ISO 8063/1 sub-clause 7.5 and the acceleration and deceleration also 
+specified in (SO 8063/1 sub-clause 7.7. 
+
+
+
+Borean of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act^ 2986 to promote 
+harmonious development of the activities of standardization, marking and quality certification of 
+goods and attending to connected ndatters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in 
+any form without the prior permission in writing of BIS. This does not preclude the free use, in 
+the course of implementing the standard, of necessary details, such as symbols and sizes, type or 
+grade designations. Enquiries relating to copyright be addressed to the Director ( Publications ), BIS. 
+
+Revision of Indian Standards 
+
+Indian Standards are reviewed periodically and revised, when necessary and amendments, if aay» 
+are issued from time lo time. Users of Indian Standards should ascertain that they are in possession 
+of the latest amendments or edition. Comments on this Indian Standard may be sent to BIS 
+giving the following reference : 
+
+Doc. No. LTD 24 (1308) 
+
+Amendments Issued Since Publication 
+
+Amend No. Date of Issue Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters : 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg. New Delhi 110002 
+
+Telephones : 331 01 31, 331 13 75 Telegrams rJManaksanstha 
+
+( Common to all Offices ) 
+
+Regional Offices : Telephone 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg f 331 01 31 
+
+NEW DELHI 110002 I 331 13 75 
+
+Eastern : 1/14 C.I.T. Scheme VII M, V.I.P. Road. Maniktola 
+
+CALCUTTA 700054 37 86 62 
+
+Northern : SCO 445-446, Sector 35-C, CHANDIGARH 160036 2 18 43 
+
+Southern : C.LT. Campus. IV Cross Road, MADRAS 600113 41 29 16 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri ( East ) 
+
+BOMBAY 400093 6 32 92 95 
+
+Blanches : AHMADABAD. BANGALORE, BHOPAL. BHUBANESHWAR. 
+COIMBATORE, FARIDABAD, GHAZIABAD. GUWAHATL 
+HYDERABAD. JAIPUR, KANPUR. PATNA. TRIVANDRUM. 
+
+
+
+Printed at Kay Kay Printers 1 50-D Kamla Nagar Delhi - 1 10007 
+
+
+

@@ -1,0 +1,71 @@
+{
+  "is_number": "IS IS_10139",
+  "standard_id": "IS IS_10139",
+  "title": "Indian Standard Specification / Test Method (IS IS_10139)",
+  "ia_identifier": "IS_10139",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1,1 This standard defines the items which should be considered for the presentation of information regarding predictions of quantitative IS : 10139 - 1982 characteristics of reliability, maintainability and availability of systems and equipment including hardware, software and human elements.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11013",
+      "standard_id": "IS 11013:1984",
+      "title": "Piezoelectric Ceramic Elements (Impact Type and Squeeze Type) For Gas Lighters",
+      "division_code": "CHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885",
+      "standard_id": "IS 1885",
+      "title": "Indian Standard Specification / Test Method (IS 1885)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7690",
+      "standard_id": "IS 7690:1975",
+      "title": "Mathematical guide to the terms and definitions for reliability of electronic equipment and components (or parts) used therein",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10139"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 27432
+}

@@ -1,0 +1,77 @@
+{
+  "is_number": "IS IS_12305",
+  "standard_id": "IS IS_12305",
+  "title": "Indian Standard Specification / Test Method (IS IS_12305)",
+  "ia_identifier": "IS_12305",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12305) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_12305).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1382",
+      "standard_id": "IS 1382:1981",
+      "title": "Glossary of terms relating to glass and glassware",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2303",
+      "standard_id": "IS 2303",
+      "title": "Indian Standard Specification / Test Method (IS 2303)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4793",
+      "standard_id": "IS/ISO 4793",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4793)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade Pore",
+    "Grade IVfinimum",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12305"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "5.1 Packing — Each sintered filter shall be suitably packed so as to avoid any shredding, disintegration and breakage during transit. A copy of Appendix D shall be packed with each filter to",
+      "5.2 Marking — Each package shall be marked permanently and legibly with the following:",
+      "a) Name of the manufacturer or his recognized trade-mark;",
+      "b) Designation of porosity grade ( see 3.1 );",
+      "d) Lot No. for identification or manufacturing date;"
+    ]
+  },
+  "total_chars_parsed": 13148
+}

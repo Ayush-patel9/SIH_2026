@@ -1,0 +1,125 @@
+{
+  "is_number": "IS IS_14756",
+  "standard_id": "IS IS_14756",
+  "title": "Indian Standard Specification / Test Method (IS IS_14756)",
+  "ia_identifier": "IS_14756",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard lays down the minimum requirements for following types of stainless steel utensils: a) Cooking utensil; b) Serving utensils; c) Table utensils, and d) Storage utensils.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 5522",
+      "standard_id": "IS 5522:2014",
+      "title": "Stainless Steel Sheets and Strips for Utensils Specification",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Stainless Steel Products (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 15997",
+      "standard_id": "IS 15997:2012",
+      "title": "Low Nickel Austenitic Stalnless Steel Sheet and Strip for Utensils and Kitchen Appliances - Specification",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15960",
+      "standard_id": "IS 15960:2013",
+      "title": "Composite Bottom Stainless Steel Cooking Utensils - Specification",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 21",
+      "standard_id": "IS 21:1992",
+      "title": "Wrought Aluminium and Aluminium Alloys for Manufacture of Utensils",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6911",
+      "standard_id": "IS 6911:2017",
+      "title": "Stainless steel plate, sheet and strip - Specification (Second Revision)",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Stainless Steel Products (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 6527",
+      "standard_id": "IS 6527:1995",
+      "title": "Stainless steel wire rod",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13395",
+      "standard_id": "IS 13395:2021",
+      "title": "Performance of Handles and Handle Assemblies Attached to Cookware - Specification ( First Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 39",
+      "standard_id": "IS 39",
+      "title": "Indian Standard Specification / Test Method (IS 39)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9040",
+      "standard_id": "IS 9040:1978",
+      "title": "Methods for sampling of utensils",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade deration",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_14756"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "8.1 Each utensil shall have the following details:",
+      "d) Material grade;",
+      "e) Manufacturer name or initials or trade-mark; and",
+      "8.2 BIS Certification Marking",
+      "may be marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 23101
+}

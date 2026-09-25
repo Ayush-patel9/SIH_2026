@@ -1,0 +1,65 @@
+{
+  "is_number": "IS IS_12032__PART_9_",
+  "standard_id": "IS IS_12032__PART_9_",
+  "title": "Indian Standard Specification / Test Method (IS IS_12032__PART_9_)",
+  "ia_identifier": "IS_12032__PART_9_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12032__PART_9_) covers Indian Standard Specification / Test Method (IS IS_12032__PART_9_). Chapter I : General Section 1 - Introduction ^ Section 2 - General notes ^ Section 3 - Explanation of terms -5 Chapter U : Symbol construction ' Section 4 - Composition of the symbol 7 Section 5 - Outlines . : ° Section 6 - Use and combination of outlines ^ Chapter III : Qualifyino symbols associated wrra inputs, ourpirre and other connections 13 Section 7 - Negation, logic polarity and dynamic input 13 Section 8 - Internal connections • 1'* Section 9 - Symbols inside the outline 15 Section 10 - Non-logic connections and signal-flow indicators 26 Chapter IV : Dependency notation ^' Section 1 1 - General explanation 27 Section 12 - Convention 27 Section 13 - Types of dependency 29 Section 14 - AND dependency (G-dependency) 20 Section 15 - OR dependency (V-dependency) 30 Section 16 - NEGATE dependency (N-dependency) 31 Section 17 - INTCRCONNECTION dependency (Z-dependency) 32 Section 18 - CONTROL dependency (C-dependency) 33 Section IQ - SET and RESET dependency (S- and R-dependency) 34 ",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 12032",
+      "standard_id": "IS 12032",
+      "title": "Indian Standard Specification / Test Method (IS 12032)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12032 (PART 12)",
+      "standard_id": "IS 12032 (Part 12):1994",
+      "title": "Graphical symbols for diagrams in the field of electrotechnology, Part 12: Binary logic elements",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2032",
+      "standard_id": "IS 2032",
+      "title": "Indian Standard Specification / Test Method (IS 2032)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "13 K",
+    "12 K",
+    "7 K",
+    "14 K",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12032__PART_9_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "marked with arrowheads pointing iii the direction of signal flow."
+    ]
+  },
+  "total_chars_parsed": 119418
+}

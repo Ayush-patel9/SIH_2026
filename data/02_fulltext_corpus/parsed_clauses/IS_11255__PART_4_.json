@@ -1,0 +1,76 @@
+{
+  "is_number": "IS IS_11255__PART_4_",
+  "standard_id": "IS IS_11255__PART_4_",
+  "title": "Indian Standard Specification / Test Method (IS IS_11255__PART_4_)",
+  "ia_identifier": "IS_11255__PART_4_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard (Part 3) prescribes a method for determination of flow rate of a gas stream in confined spaces, like stacks and duct. 1.1.1 Methods for determination of stack gas velocity, temperature, static and differential pressure, moisture content and molecular weight of stack gases necessitates measurement of these parameters for flow rate determination. 1.1.2 Gas flow in a large industrial stack or ducts may be steady and well mixed across the diameter of the stack, in such case any sample taken at any time and from any place in the stack will be representative. But for most such stacks the velocity and concentration in stack vary from point to point and time-to-time therefore many separate measurement must be made and averaged for determination of flow rate.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11255 (PART 3)",
+      "standard_id": "IS 11255 (Part 3):2008",
+      "title": "Methods for measurement of emissions from stationary sources, Part 3: Flow rate",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 9096",
+      "standard_id": "IS/ISO 9096",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9096)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4167",
+      "standard_id": "IS 4167:2020",
+      "title": "Glossary of Terms Relating to Air Pollution ( Second Revision )",
+      "division_code": "GEN",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11255 (PART 2)",
+      "standard_id": "IS 11255 (Part 2):1985",
+      "title": "Methods for measurement of emissions from stationary sources, Part 2: Sulphur dioxide",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Pjtot",
+    "Grade deration",
+    "Grade rtilizer",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11255__PART_4_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "moisture content of less than 15 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 42026
+}

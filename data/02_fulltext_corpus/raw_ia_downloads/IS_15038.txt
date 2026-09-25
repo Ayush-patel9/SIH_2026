@@ -1,0 +1,3554 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+IS 15038 (2011) : Reliability Growth - Statistical Test and 
+Estimation Methods [LITD 2: Reliability of Electronic and 
+Electrical Components and Equipment] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+aj^&vi iJii^s:y%K^ isb^^ni^seg 
+
+
+
+:<>5&i| mT'5K^5?::5:^>^i»l 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+1815038:2001 
+
+lEC 61164 (1995) 
+
+( Reaffirmed 2005 ) 
+
+f^mk^ f^rfSRff 
+
+Indian Standard 
+
+RELIABILITY GROWTH — STATISTICAL TEST 
+
+AND ESTIMATION METHODS 
+
+
+
+ICS 03.120.01; 03.120.30; 21.020 
+
+
+
+© BIS 2001 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI 110002 
+
+
+
+September 2001 Price Group 1 
+
+
+
+Reliability of Electronic and Electrical Components and Equipment Sectional Committee, LTD 03 
+
+
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with lEC 61164 (1995) 'Reliability growth — Statistical test and 
+estimation methods' issued by the International Electrotechnical Commission (lEC), was adopted by the Bureau 
+of Indian Standards on the recommendation of Reliability of Electronic and Electrical Components and 
+Equipment Sectional Committee and approval of the Electronics and Telecommunication Division Council. 
+
+In the adopted standard, certain conventions are, however, not identical to those used in Indian Standards. Attention 
+
+is particularly drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 
+'Indian Standard'. 
+
+b) Comma (,) has been used as a decimal marker while in Indian Standards, the current practice is to use a 
+point (.) as the decimal marker. 
+
+Only English language text has been retained while adopting this International Standard. 
+
+CROSS REFERENCES 
+
+In this adopted standard, reference appears to the following International Standard for which Indian Standard 
+also exists. The corresponding Indian Standard which is to be substituted in its place is listed below along with 
+its degree of equivalence for the edition indicated: 
+
+International Standard Corresponding Indian Degree of 
+
+Standard Equivalence 
+
+lEC 50 (191) : 1990 International IS 1885 (Part 39):1999 Electrotechnical Not Equivalent 
+
+Electrotechnical Vocabulary (lEV) vocabulary: Part 39 Reliability of 
+
+— Chapter 191: Dependability electronic and electrical items {second 
+
+and quality of service revision) 
+
+The technical committee responsible for the preparation of this standard has reviewed the provisions of the 
+following International Standards and has decided that they are acceptable for use in conjunction with this 
+standard : 
+
+lEC 605-1:1978 Equipment reliability testing — Part 1: General requirements 
+
+lEC 605-4:1986 Equipment reliability testing — Part 4: Procedures for determining point estimates and 
+confidence limits from equipment reliability determination tests 
+
+lEC 605-6: 1986 Equipment reliability testing — Part 6: Tests for the validation of a constant failure rate 
+assumption 
+
+lEC 1014:1989 Programmes for reliability growth 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+Indian Standard 
+
+RELIABILITY GROWTH — STATISTICAL TEST 
+AND ESTIMATION METHODS 
+
+
+
+1 Scope 
+
+This International Standard gives models and numerical methods for reliability growth assessments 
+based on failure data from a single system which were generated in a reliability improvement 
+programme. These procedures deal with growth, estimation, confidence intervals for system reliability 
+and goodness-of-fit tests. 
+
+2 Normative references 
+
+The following normative documents contain provisions which, through reference in this text, constitute 
+provisions of this International Standard. At the time of publication, the editions indicated were valid. 
+All normative documents are subject to revision, and parties to agreements based on this International 
+Standard are encouraged to investigate the possibility of applying the most recent editions of the 
+normative documents listed below. Members of lEC and ISO maintain registers of currently valid 
+International Standards. 
+
+lEC 50(191): 1990, International Electrotechnical Vocabulary (lEV) - Chapter 191: Dependability and 
+quality of service 
+
+lEC 605-1: 1978, Equipment reliability testing -Part J: General requirements 
+
+lEC 605-4; 1986, Equipment reliability testing - Part 4: Procedures for determining point estimates 
+and confidence limits from equipment reliability determination tests 
+
+lEC 605-6: 1986, Equipment reliability testing - Part 6: Tests for the validity of a constant failure rate 
+assumption 
+
+lEC 1014: 1989, Programmes for reliability growth 
+
+3 Definitions 
+
+For the purposes of this standard the terms and definitions of lEC 50(191) and lEC 1014 ^ply, 
+together with the following additional terms and definitions: 
+
+3.1 delayed modlHcation: A corrective modification which is incorporated into the system at the 
+end of a test. 
+
+NOTE - A delayed modification is not incorporated during the test. 
+
+3.2 improvement effectiveness factor: The fraction by which the intensity of a systematic failure is 
+reduced by means of corrective modification. 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+3.3 type I test: A test which is terminated at a predetermined time or test with data available 
+through a time which does not correspond to a failure. 
+
+NOTE - Type I test is sometimes called time terminated test. 
+
+3.4 type II test: A reliability growth test which is terminated upon the accumulation of a specified 
+number of failures, or test with data available through a time which corresponds to a failure. 
+
+NOTE - Type II test is sometimes called failure terminated test. 
+
+4 Symbols 
+
+For the purpose of this international standard, the following symbols apply: 
+
+X, P scale and shape parameters for the power law model 
+
+CV critical value for hypothesis test 
+
+d number of intervals for grouped data analysis 
+
+E, £j, £j mean and individual improvement effectiveness factors 
+
+/ number of distinct types of category B failures observed 
+
+i, j general purpose indices 
+
+Kp^ number of category A failures 
+
+K^ number of category B failures 
+
+k 
+
+K^ number of i-ih type category B failures observed; K^ = ^K^ 
+
+1=1 
+M parameter of the Cramer- von Mises test (statistical) 
+
+A^ number of relevant failures 
+
+A^j number of relevant failures in i-th interval 
+
+N(T) accumulated number of failures up to test time T 
+
+E[N(T)] expected accumulated number of failures up to test time T 
+
+t(i~ 1 ); t{i) endpoints of i-th interval of test time for grouped data analysis 
+
+T current accumulated relevant test time 
+
+Tj accumulated relevant test time at the f-th failure 
+
+T^ total accumulated relevant test times for type II test 
+
+7* total accumulated relevant test times for type I test 
+
+Xy{v) y fractile of the x^ distribution with v degrees of freedom 
+
+z general symbol for failure intensity 
+
+«y Y fractile of the standard normal distribution 
+
+z projected failure intensity 
+
+z{T) current failure intensity at time T 
+
+QCD current instantaneous mean time between failures 
+
+projected mean time between failures 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+5 The power law model 
+
+The statistical procedures for the power law reliability growth model use the original relevant failure 
+and time data from the test. Except in the projection technique (see 7.6), the model is applied to the 
+complete set of relevant failures (as in lEC 1014, figure 2, characteristic (3)) without subdivision into 
+categories. 
+
+The basic equations for the power law model are given in this clause. Background information on the 
+model is given in annex B. 
+
+The expected accumulated number of failures up to test time T is given by: 
+
+£[A^(r)]=^rP,with x>o, p>o, r>o 
+
+where 
+
+X is the scale parameter 
+
+P is the shape parameter (a function of the general effectiveness of the improvements; 0<P<1, 
+corresponds to reliability growth; p=l corresponds to no reliability growth; p>l corresponds to 
+negative reliability growth). 
+
+The current failure intensity after Th of testing is given by: 
+
+z(r) = — E[7v(r)] = xpr^^ , with r > o 
+
+dT 
+
+Thus, parameters X and P both affect the failure intensity achieved in a given time. The equation 
+represents in effect the slope of a tangent to the N{T) vs. T characteristic at time T as shown in 
+lEC 1014, figure 6. 
+
+The current mean time between failures after T h of testing is given by: 
+
+1 
+
+
+
+e(r) = 
+
+
+
+z{T) 
+
+
+
+Methods are given in 7.1 and 7.2 for maximum likelihood estimation of the parameters X ^and^^. 
+Subclause 7.3 gives goodness-of-fit tests for the model, and 7.4 and 7.5 discuss confidence interval 
+procedures. An extension of the model for reliability growth projections is given in 7.6. 
+
+The model has the following characteristic features: 
+
+- it is simple to evaluate; 
+
+- when the parameters have been estimated froni past programmes it is a convenient tool for 
+planning future programmes employing similar conditions of testing and equal improvement 
+effectiveness (see clause 5, and lEC 1014, clause 6); 
+
+- it gives the unrealistic indications that z(r) =«> at 7 = and that growth can be unending, that is 
+z{T) tends to zero as T tends to infinity; however, these limitations do not generally affect its 
+practical use; 
+
+- it is relatively slow and insensitive in indicating growth immediately after a corrective 
+modification, and so may give a low (that is, pessimistic) estimate of the final 9(7), unless 
+projection is used (see 7.6); 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+- the normal evaluation method assumes the observed times to be exact times of failure, but an 
+alternative approach is possible for groups of failures within a known time period (see 7.2.2). 
+
+
+
+6 Use of the model in planning reliability improvement programmes 
+
+As inputs to the procedure described in 6.3 of lEC 1014, two quantities have to be predicted by means 
+of reliability growth models: 
+
+- the accumulated relevant test time in hours expected to be necessary to meet the aims of the 
+programme; 
+
+- the number of relevant failures expected to occur during this time period. 
+
+The accumulated relevant test time is then converted to calendar time from the planned test time per 
+week or month, making allowance for the predicted total downtime (see below) and other 
+contingencies, and the number of relevant failures is increased by judgment to include non-relevant 
+failures and used to predict total downtime. 
+
+The inputs to the model for these calculations will be the assumed parameters for the model, as already 
+estimated from one or more previous programmes, and judged to be valid for the future application by 
+similarity of the test items, test environment, management procedures and other significant influences. 
+
+
+
+7 Statistical test and estimation procedures 
+
+7.1 Overview 
+
+The procedures in 7.2 utilize system failure data during a test programme to estimate the progress of 
+reliability growth, and to estimate, in particular, the final system reliability at the end of the test. The 
+reliability growth which is assessed is the result of corrective modifications incorporated into the 
+system during test. The procedures discussed in 7.2,1 assume that the accumulated test time to each 
+relevant failure is known. Subclause 7.2.2 addresses the situation where actual failure times are not 
+known and failures are grouped in intervals of test time. 
+
+Type I tests, which are concluded at 7*, which is not a failure time, and type II tests, which are 
+concluded at failure time Tj^, use slightly different formulae, as indicated in 7.2.1 . 
+
+An appropriate goodness-of-fit test, as described in 7.3, shall be performed after the growth test 
+procedures of 7.2.1 and 7.2.2. 
+
+Subclause 7.6 addresses the situation where the corrective modifications are incorporated into the 
+system at the end of the test as delayed modifications. The projection technique estimates the system 
+reliability resulting from these corrective modifications. 
+
+7.2 Growth tests and parameter estimation 
+
+7.2.1 Case 1 - Time data for every relevant failure 
+
+This method applies only where the time of failure has been logged for every failure. 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+Step 1: exclude non-relevant failures by reference to 7.1 of lEC 1014, and/or other appropriate 
+documentation. 
+
+Step 2: assemble into a data set the accumulated relevant test times (as defined in 9.5 of lEC 60S-1) at 
+which each relevant failure occurred. For type I tests, note also the time of termination of the 
+test. 
+
+Step 3: Calculate the test statistic 
+
+
+
+[type I] 
+
+
+
+
+or 
+
+
+
+'N 
+
+
+
+Xri-(jv-i)- 
+
+U=— ?=== [typell] 
+
+
+
+S 12 
+
+
+
+where 
+
+N is the total number of relevant failures; 
+
+T* is the total accumulated relevant test times for type I test; 
+
+Tjyj is the total accumulated relevant test times for type II test; 
+
+Tj is the accumulated relevant test time at the i-th failure. 
+
+Under the hypothesis of zero growth, that is, the failure times follow a homogeneous Poisson process, 
+the statistic U is approximately distributed as a standard normal random variable with mean and 
+standard deviation 1. The statistic U can be used to test if there is evidence of reliability growth, 
+positive or negative, independent of the reliability growth model. 
+
+A two-sided test for positive or negative growth at the a significance *level has critical values 
+"i-a/2 ^"^ ""i-a/2 * where Wi«cc/2 ^^ ^^^ (l-a/2)- 100-th fractile of the standard normal distribution. 
+
+If ^<-Ml-a/2^" ^>«l-a/2 
+
+then there is evidence of positive or negative reliability growth, respectively, and the analysis is 
+continued with Step 4. 
+
+If, however, ~"l-a/2 *^ ^ < "l-a/2 
+
+then there is not evidence of positive or negative reliability growth at the a significance level and the 
+growth analysis is terminated. In this case, the hypothesis of exponential times between successive 
+failures (or a homogeneous Poisson process) is accepted at the a significance level. The critical values 
+"l-a/2 ^"^ ""i-a/2 correspond to a ojie-sided test for positive or negative growth, respectively, at the 
+a/2 significance level. 
+
+At the 0,20 significance level, the critical values for a two-sided test are 1.28 and -1,28. The critical 
+value 1,28 corresponds to a one-sided test for positive growth at the 10 % significance level. For other 
+levels of significance, choose the appropriate critical values from a table of fractiles for the standard 
+
+normal distribution. 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+Step 4: calculate the summation: 
+
+
+
+or 
+
+
+
+5i = Iln(r*/7;) Itypel] 
+
+1=1 
+
+N 
+
+Si=l\n{T^/T^ [typen] 
+
+
+
+Step 5: calculate the (unbiased) estimate of the parameter P from the formula: 
+
+^ N-l 
+
+P = -— [type I] 
+
+or 
+
+P = — — [type II] 
+
+Step 6: calculate the estimate of the parameter 1 from the formula: 
+
+
+
+or 
+
+
+
+i=N/(T*) [type I] 
+
+>-=A^/(?kf [type II] 
+
+
+
+Step 7: calculate the estimated failure intensity z(T) and mean time between failures 0{T), for any 
+test time 7'> 0, from the formulae: 
+
+e(D = i/£(r) 
+
+
+
+NOTES 
+
+1 Z\T} and Q{T) are estimates of the "current" failure intensity and MTBF at time T>Q, for T over the range 
+represented by the data. "Extrapolated" estimates for a future time T during the test programme, or at its expected 
+termination time, may be obtained similarly, but used with the usual caution associated with extrapolation. 
+Extrapolated estimates should not extend past the expected termination time. 
+
+2 If the test programme is completed, then 0(7) , for 7 = T or T~T^ (as appropriate), estimates the MTBF of 
+the system configuration on test at the end of the test programme. 
+
+7.2.2 Case 2 - Time data for groups of relevant failures 
+
+This alternative method is for the case where the data set consists of known time intervals, each 
+containing a known number of failures. It is important to note that the interval lengths and the number 
+of failures per interval need not be constant. 
+
+The test period is over the interval (0; T) and is partitioned into //intervals at times, < t(\) < t(2) < 
+... < t(d). The i-th interval is the time period between /(i-l) and t(i)yi =1,2, ..., d, f(0) = 0, t(d) = T. 
+The partition times t{i) may assume any values between and T. 
+
+Step 1: exclude non-relevant failures by reference to 7.1 of lEC 1014 and/or other appropriate 
+documentation. 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1S95) 
+
+Step 2: assemble into a data set the number of relevant failures N-^ recorded in the i-th interval 
+
+d 
+[r(/-l);r{i)], i = l,...,d. The total number of relevant failures is A^ = X ^i • 
+
+For each interval, pjA/ shall not be less than 5, (if necessary, adjacent intervals should be 
+combined before this test) where: 
+
+/a)-r(i-l) 
+
+Step 3: for the d intervals (after combination if necessary) and corresponding failures N^, calculate 
+the statistic 
+
+.2 ^(^i-Pi^)' 
+
+
+
+x' = l 
+
+
+
+,=1 piN 
+
+Under the hypothesis of zero growth, that is, the failure times follow a homogeneous Poisson 
+process, the statistic X is approximately distributed as a x^ random variable with d-l 
+
+degrees of freedom. The statistic X can be used to test if there is evidence of reliability 
+growth, positive or negative, independent of the reliability growth model. 
+
+A two-sided test for positive or negative growth at the a significance level has critical value 
+
+If X^^CV 
+
+then there is evidence of positive or negative reliability growth and the analysis is continued 
+with Step 4. 
+
+If X^kCV 
+
+then there is tiot evidence of positive or negative reliability growth at the a significance level 
+and the growth analysis is terminated. In this case, the hypothesis of exponential times 
+between successive failures (or a homogeneous Poisson process) is accepted at the a 
+significance level. 
+
+Critical values Xi-a'»(^~^) ^^^ various significance levels a and several degrees of freedom 
+d-\ can be found in tables of the x^ distribution, for example in lEC 605-4 and lEC 605-6. 
+
+Step 4: for the original data set assembled in Step 2, calculate the maximum likelihood estimate of 
+the shape parameter p. The maximum likelihood estimate of p is the value P , which satisfies 
+the following equation: 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+
+
+d 
+
+
+
+t{i)hnt{i)-t{i-l)hnt{i-l) 
+r(/)P-/(i-l)P 
+
+
+
+- In t{d) 
+
+
+
+= 0. 
+
+
+
+Note that f(0)=:0 and also f(0)ln f(0) = All t() terms may be normalized with respect to t(d) and then 
+the final term In (t{d)) disappears. An iterative method must be used to solve this equation for p . 
+
+Step 5: calculate the estimate of the parameter k from the formula 
+
+i^N/tid)^ 
+
+Step 6 calculate the estimated failure intensity z{T) and mean time between failures 0{T), for any 
+test time r> 0, from the formulae: 
+
+£(r) = lpr^' 
+e(r) = i/£(r) 
+
+NOTES 
+
+1 z(T) and 0(r) are estimates of the "current** failure intensity and MTBF at time r> 0. for T over the range 
+represented by the data. "Extrapolated" estimates for a future time T during the test phase, or at its expected 
+termination time, may be obtained similarly, but used with the usual caution associated with extrapolation. 
+Extrapolated estimates should not extend past the expected termination time. 
+
+2 If the test program is completed, then Q{T) for T = t{d), estimates the MTBF of the system configuration on 
+test at the end of the test phase. 
+
+
+
+7.3 Goodness-of-fit tests 
+
+If individual failure times are available, use case 1, otherwise, use case 2. 
+
+7.3.1 Case I - Time data for every relevant failure 
+
+The estimation method included in 7.2.1 shall first be used to estimate the shape parameter p. The 
+Cramer-von Mises statistic is then given by the following expression: 
+
+
+
+1 ^ 
+
+
+
+12M 
+
+
+
+/=l 
+
+
+
+^p 
+
+
+
+12 
+
+
+
+2/-1 
+
+2A/ 
+
+
+
+where 
+
+M = N and T=T for type I tests 
+
+M= N-l and r = Tyv for type II tests 
+
+7;<r, <...<rw. 
+
+
+
+M- 
+
+
+
+Table 1 gives critical values of this statistic for 10 % significance level. If the statistic C^{M) exceeds 
+the critical value corresponding to M in the table, then the hypothesis that the power law model 
+adequately fits the data shall be rejected. Otherwise, the model shall be accepted. 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+When the failure times are known, the graphical procedure described below may be used to obtain 
+additional information about the correspondence between the model and the data. 
+
+For the graphical procedure, an estimate of the expected time to the j-th failure, ^[TjJ, is plotted 
+against the observed time to the j-th failure, T-. From annex B, ^[TjJ may be estimated by: 
+
+
+
+^[^j]=K ' with ;■-!,. ..,A^ 
+
+
+
+The expected failure times, 
+
+
+
+^yV/P 
+
+
+
+, are then plotted against the observed failure times, T-, on identical 
+
+linear scales, as in the example of figure A.l. The visual agreement of these points with a line at 45° 
+through the origin is a subjective measure of the applicability of the model. 
+
+7.3.2 Case 2 - Time data for groups of relevant failures 
+
+This test is suitable only when P has been estimated using grouped data, as in 7.2.2. The expected 
+number of failures in the time interval [r(/-l);r(/)] is approximated by: 
+
+
+
+ei=l[r(,)P-r(.-l)P] 
+
+
+
+For each interval, e-^ shall not be less than 5, and if necessary, adjacent intervals should be combined before the 
+test. For d intervals (after combination if necessary) and with N^^ the same as in 7.2.2, calculate the statistic: 
+
+The critical values of this statistic for d~2 degrees of freedom can be found in tables of the x^ 
+distribution, for example in lEC 605-4 and lEC 605-6. If the critical >talue at a 10 % level of 
+significance is exceeded, then the hypothesis that the power law model adequately fits the grouped data 
+shall be rejected. 
+
+When the data set consists of known time intervals, each containing a known number of failures, the 
+graphical procedure described below may be used to obtain additional information about the 
+correspondence between the model and the data. 
+
+For each interval endpoint r(/), the number of observed failures from to /(/) is 
+
+M'(«))=ZWj. 
+
+;=• 
+The expected number of failures £[/V(K'))] is estimated by 
+
+E[N{tU))] = Ui)^ 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+This gives = /Udr 
+
+tU) 
+
+
+
+The graphical procedure consists of plotting 
+
+
+
+
+
+
+and also plotting the line lnl+(p-l) In T, T>0 
+
+
+
+as in the example of figure A.2. See annex B for the relationship between In 5l and 5 and 
+-l) and -a. 
+
+
+
+For P< 1, this line is decreasing. The visual agreement of these points with this line is a subjective 
+measure of the applicability of the model. 
+
+7.4 Confidence intervals on the shape parameter 
+
+The shape parameter P in the power law reliability growth model determines if the model reflects 
+growth and to what degree. If 0<P<1, there is positive reliability growth, if P=l, there is no 
+reliability growth, and if P> 1, there is negative reliability growth. 
+
+For a two-sided confidence interval on P when individual failure times are available, use case 1. For 
+grouped failure times, use case 2. 
+
+7.4.1 Case J - Time data for every relevant failure 
+Step 1: calculate P from step 5 in 7.2.1 
+
+Step 2: type I test 
+
+For a two-sided 90 % confidence interval on p, calculate 
+
+^ _ Xo.o5;(2A/) 
+
+"- 2(;v-i) 
+
+Xo.95:(2N) 
+2{N-l) 
+
+
+
+Dv = 
+
+
+
+The fractiles can be found in tables of the x^ distribution, for example in lEC 605-4 and 
+lEC 605-6. 
+
+The lower confidence limit on P is 
+The upper confidence limit on P is 
+
+10 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+One-sided 95 % lower and upper limits on (J are P^b ^^^ PuB' respectively. 
+
+Type II test 
+
+For a two-sided 90 % confidence interval on P , calculate 
+
+D _ ^ As; (2(^-1)) 
+^ 2(A^-l)(A^-2) 
+
+" 2{N-l){N-2) 
+The lower confidence limit on |3 is 
+
+Plb = ^lP 
+
+The upper confidence limit on P is 
+
+One-sided 95 % lower and upper limits on ^ are ^i^ and P^B' respectively. 
+
+7.4.2 Case 2 - Time data for groups of relevant failures 
+
+These confidence interval procedures are suitable when 3 has been estimated from grouped data as in 
+7.2.2. 
+
+Step 1: calculate P as in 7.2.2, step 4. 
+
+Step 2: calculate 
+
+P{i}--rT< with 1 = 1,2 d 
+
+t(d) 
+
+Step 3: calculate the expression 
+
+
+
+d \p{i)^-\tiP{i)^-P(i-l)^\nP{i-l)^] 
+
+A^l- r — ^ n 
+
+/>(,)P-p(i-i)Pj 
+
+
+
+1=1 
+
+
+
+Step 4: calculate 
+
+1 
+
+
+
+C = 
+
+
+
+71 
+
+
+
+Step 5: for an approximate two-sided 90 % confidence interval on p, calculate 
+
+^_ (164)-C 
+
+where 
+
+N is the total number of failures. 
+
+11 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+Step 6: the lower confidence limit on P is 
+
+Plb = P(1-5) 
+The upper confidence limit on P is 
+
+One-sided 95 % lower and upper limits on P are Plb and P^q, respectively. 
+
+7.5 Confidence intervals on current MTBF 
+
+From 7.2.1, step 7, 8(7) estimates the current MTBF, 9(7). For confidence intervals on 9(7) when 
+individual failure times are available, use case 1. For grouped failure times, use case 2. 
+
+7.5.1 Case I - Time data for every relevant failure 
+Step 1: calculate 9(7) from 7.2.1, step 7. 
+
+Step 2: for a two-sided 90 % confidence interval, refer to table 2. type I, or table 3, type II, and 
+locate the values L and U for the appropriate sample size N. 
+
+Step 3: the lower confidence limit on 9(7) is 
+
+eLB = Le(r) 
+
+the upper confidence limit on 9(7) is 
+
+9uB=^*e(7) 
+One-sided 95 % lower and upper limits on 9(7) are 9lb and 9ub, respectively. 
+
+7.5.2 Case 2 -Time data for groups of relevant failures 
+
+These confidence interval procedures are suitable when P has been estimated from grouped data as in 
+
+7.2.2. 
+
+Step 1: calculate Pas in 7.2.2, and calculate 0(T) as in 7.2.1, step 7 
+Step 2: calculate 
+
+t( ') 
+/'(/)=— T, avec « = l,2,...,d 
+Tid) 
+
+
+
+12 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+
+
+Step 3: calculate the expression 
+
+
+
+A = l 
+
+
+
+d (p(/)PlnP(i)P-/'a-l)P|nP(/-l)Pj 
+
+
+
+1=1 
+
+
+
+Step 4: calculate 
+
+
+
+(rt.)9-p(i-i)*] 
+
+
+
+"-■IF' 
+
+
+
+-+1 
+
+Step 5: for an approximate two-sided 90 % confidence interval on 6(7), calculate 
+
+where 
+
+A^ is the total number of failures. 
+
+Step 6: the lower confidence limit on 9(7) is 
+
+6^5=6(7) (1-5) 
+The upper confidence limit on 9(7) is 
+
+eUB=^7')(l + 5) 
+
+One-sided 95 % lower and upper limits on 9(7) are 9lb and 6^3, respectively. 
+
+7.6 Projection technique 
+
+The following technique is appropriate when the cotrfxtive modifications have been incorporated into 
+the system at the end of the test as delayed modifications. The objective is to estimate the system 
+reliability resulting from these corrective modifications. 
+
+Step 1: separate the category A and category B failures (see lEC 1014, definitions 3.10 and 3.11). 
+
+Step 2: identify the time of first occurrence of each distinct type of failure in category B, as a 
+separate data set. Let / be the number of these distinct types. 
+
+Step 3: perform steps 1 to 5 of 7.2.1 upon this data set, in order to estimate P, using A^ = / and 7* or 
+T^ as applicable to the complete set of data. 
+
+Step 4: assign to each of the / distinct types of category B failures in the data set of step 2 an 
+improvement effectiveness factor, E^, i = 1,...I. For each of the / distinct types of category 
+B failures, E^, < E^ < 1, is an engineering assessment of the expected decrease in failure 
+intensity resulting from an identified corrective modification (see definition 3.1). 
+
+From these assigned values, calculate the average £ , or if preferred, postulate an average 
+improvement effectiveness factor (e.g., 0,7) instead of individually assigning the 
+£y, /=l,...I, as described above. 
+
+
+
+13 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+Step 5: estimate the projected failure intensity and MTBF: 
+
+iT ' - 
+
+=- /:A+lKi(i-£i)+/p£ 
+
+
+
+(=1 
+
+
+
+where 
+
+K^ is the number of category A failures; 
+
+K^ is the number of observed failures for the z'-th type of category B failures; 
+
+7= 7* or T^, as used in step 3 above. 
+
+If the individual E^ values are not assigned and only the mean E is available, then the middle 
+term in the square brackets becomes: 
+
+where K^ is the number of category B failures. 
+In this case the projected failure intensity is: 
+
+
+
+Zp^Uk^ + k^{i-e)+i4e] 
+
+
+
+The projected MTBF is 
+
+
+
+ep = i/zp 
+
+
+
+14 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+
+
+Table 1 - Critical values for Cramer-von Mises goodness-of-fit test 
+at 10 % level of significance 
+
+
+
+M 
+
+
+Critical value of statistic 
+
+
+
+
+3 
+
+
+0,154 
+
+
+
+
+4 
+
+
+0,155 
+
+
+
+
+5 
+
+
+0,160 
+
+
+
+
+6 
+
+
+0,162 
+
+
+
+
+7 
+
+
+0,165 
+
+
+
+
+8 
+
+
+0,165 
+
+
+
+
+9 
+
+
+0,167 
+
+
+
+
+10 
+
+
+0,167 
+
+
+
+
+11 
+
+
+0,169 
+
+
+
+
+12 
+
+
+0,169 
+
+
+
+
+13 
+
+
+0.169 
+
+
+
+
+14 
+
+
+0,169 
+
+
+
+
+15 
+
+
+0,169 
+
+
+
+
+16 
+
+
+0,171 
+
+
+
+
+17 
+
+
+0,171 
+
+
+
+
+18 
+
+
+0,171 
+
+
+
+
+19 
+
+
+0,171 
+
+
+
+
+20 
+
+
+0.172 
+
+
+
+
+30 
+
+
+0,172 
+
+
+
+
+^60 
+
+
+0,173 
+
+
+NOTE- 
+
+
+- For type I tests, M^N\ for type 11 tests, M = N-l 
+
+
+
+15 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+
+
+Table 2 - Two-sided 90 % confidence intervals for MTBF from type I testing 
+
+
+
+A^ 
+
+
+L 
+
+
+U 
+
+
+N 
+
+
+L 
+
+
+U 
+
+
+3 
+
+
+0,175 
+
+
+6,490 
+
+
+21 
+
+
+0,570 
+
+
+1,738 
+
+
+4 
+
+
+0,234 
+
+
+4,460 
+
+
+22 
+
+
+0,578 
+
+
+1,714 
+
+
+5 
+
+
+0,281 
+
+
+3,613 
+
+
+23 
+
+
+0,586 
+
+
+1,692 
+
+
+6 
+
+
+0,320 
+
+
+3,136 
+
+
+24 
+
+
+0,593 
+
+
+1,672 
+
+
+7 
+
+
+0,353 
+
+
+2,826 
+
+
+25 
+
+
+0,600 
+
+
+1.653 
+
+
+8 
+
+
+0,381 
+
+
+2,608 
+
+
+26 
+
+
+0.606 
+
+
+1,635 
+
+
+9 
+
+
+0,406 
+
+
+2,444 
+
+
+27 
+
+
+0,612 
+
+
+1.619 
+
+
+10 
+
+
+0,428 
+
+
+2.317 
+
+
+28 
+
+
+0,618 
+
+
+1,604 
+
+
+11 
+
+
+0,447 
+
+
+2,214 
+
+
+29 
+
+
+0.623 
+
+
+1.590 
+
+
+12 
+
+
+0,464 
+
+
+2,130 
+
+
+30 
+
+
+0,629 
+
+
+1,576 
+
+
+13 
+
+
+0,480 
+
+
+2,060 
+
+
+35 
+
+
+0.652 
+
+
+1.520 
+
+
+14 
+
+
+0,494 
+
+
+1,999 
+
+
+40 
+
+
+0.672 
+
+
+1,477 
+
+
+15 
+
+
+0,508 
+
+
+1,947 
+
+
+45 
+
+
+0.689 
+
+
+1.443 . 
+
+
+16 
+
+
+0,521 
+
+
+1,902 
+
+
+50 
+
+
+0,703 
+
+
+1,414 
+
+
+17 
+
+
+0,531 
+
+
+1,861 
+
+
+60 
+
+
+0.726 
+
+
+1.369 
+
+
+18 
+
+
+0,543 
+
+
+1,825 
+
+
+70 
+
+
+0,745 
+
+
+1.336 
+
+
+19 
+
+
+0,552 
+
+
+1,793 
+
+
+80 
+
+
+0.759 
+
+
+1.311 
+
+
+20 
+
+
+0,561 
+
+
+1,765 
+
+
+100 
+
+
+0.783 
+
+
+1,273 
+
+
+NOTE - For yv> 100 
+
+A^-1 
+
+N 
+N-\ 
+
+N 
+
+where 
+
+Wq5 ^y/2 *s ^^^ 100 '(( 
+
+
+r 1 — T^ 
+^^^"o,5.r/2j— J 
+
+) 1 — Y^ 
+^^-o,5.r/2j-J 
+
+3,5 + Y/2)-th fractile of the standard normal distribution. 
+
+
+
+16 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+
+
+Table 3 - Two-sided 90 % confidence intervals for MTBF from type II testing 
+
+
+
+N 
+
+
+L 
+
+
+u 
+
+
+N 
+
+
+L 
+
+
+V 
+
+
+3 
+
+
+ai7i2 
+
+
+4,746 
+
+
+21 
+
+
+0,6018 
+
+
+1,701 
+
+
+4 
+
+
+0,2587 
+
+
+3,825 
+
+
+22 
+
+
+0,6091 
+
+
+1.680 
+
+
+5 
+
+
+0,3174 
+
+
+3,254 
+
+
+23 
+
+
+0,6160 
+
+
+1.659 
+
+
+6 
+
+
+0,3614 
+
+
+2,892 
+
+
+24 
+
+
+0.6225 
+
+
+1.790 
+
+
+7 
+
+
+0,3962 
+
+
+2.644 
+
+
+25 
+
+
+0,6286 
+
+
+1.623 
+
+
+8 
+
+
+0.4251 
+
+
+2.463 
+
+
+26 
+
+
+0.6344 
+
+
+1,608 
+
+
+9 
+
+
+0,4495 
+
+
+2,324 
+
+
+27 
+
+
+0.6400 
+
+
+1,592 
+
+
+10 
+
+
+0,4706 
+
+
+2.216 
+
+
+28 
+
+
+0.6452 
+
+
+1.578 
+
+
+11 
+
+
+0,4891 
+
+
+2.127 
+
+
+29 
+
+
+0.6503 
+
+
+1.566 
+
+
+12 
+
+
+0,5055 
+
+
+2,053 
+
+
+30 
+
+
+0.6551 
+
+
+1.553 
+
+
+13 
+
+
+0,5203 
+
+
+1.991 
+
+
+35 
+
+
+0.6763 
+
+
+;.501 
+
+
+14 
+
+
+0,5337 
+
+
+1.937 
+
+
+40 
+
+
+0,6937 
+
+
+1.461 
+
+
+15 
+
+
+0,5459 
+
+
+1.891 
+
+
+45 
+
+
+0.7085 
+
+
+1,428 
+
+
+16 
+
+
+0,5571 
+
+
+1.876 
+
+
+50 
+
+
+0.7212 
+
+
+1.401 
+
+
+17 
+
+
+0,5674 
+
+
+1,814 
+
+
+60 
+
+
+0.7422 
+
+
+1,360 
+
+
+18 
+
+
+0.5769 
+
+
+1.781 
+
+
+70 
+
+
+0.7587 
+
+
+1,327 
+
+
+19 
+
+
+0.5857 
+
+
+1.752 
+
+
+80 
+
+
+0,7723 
+
+
+1,303 
+
+
+20 
+
+
+0,5940 
+
+
+1.726 
+
+
+100 
+
+
+0.7938 
+
+
+1,267 
+
+
+NOTE- 
+
+
+ForN> 100 
+
+
+
+
+V 
+
+
+
+
+L = 
+
+N 
+
+N'2 
+
+
+where 
+"0,5 
+
+
+U = 
+
+N 
+
+^yl2 is the IOC 
+
+
+v 
+
+
+-«o.5+r/2 \^ 
+
+;0,5 + Y/2)-thfra 
+
+
+ctile of the stands 
+
+
+ird normal distrib 
+
+
+ution. 
+
+
+
+17 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+
+
+Annex A 
+
+(informative) 
+
+Numerical examples 
+
+
+
+A.l Introduction 
+
+The following numerical examples show the use of the procedures discussed in clause 7. Table A.l is a 
+complete data set used to illustrate the reliability growth methods when the relevant failure times are 
+known, and table A.2 shows these data combined within intervals suitable for the grouped data 
+analysis. Tables A.3 and A.4 provide data for the projection technique when corrective modifications 
+are delayed to the end of test. Goodness-of-flt tests, as described in 7.3, are applied when applicable. 
+These examples may be used to validate computer programs designed to implement the methods given 
+in clause 7. 
+
+A.2 Current reliability assessments 
+
+The data set in table A.l corresponds to a test flnishing at 1 000 h. These data are used in the examples 
+of A.2.1 and A. 2. 2 for type I and type II tests, respectively, and combined in table A.2 for the example 
+of A. 2. 3 for grouped failures. 
+
+A.2.1 Example 1: Type I test - Case 1 - Time data for every relevant failure 
+
+This case is covered in 7.2.1. Data from table A.l are used with test finishing at 1 000 h. 
+
+a) Test for growth 
+
+U = -3,713. At the 0,20 significance level, the critical values for a two-sided test are 1,28 and - 
+1.28. Since U <-l,28. there is evidence of positive reliability growth and the analysis is continued. 
+
+b) Parameter estimation 
+
+The estimated parameters of the power law model are: 
+i= 1,0694 
+p = 0,5623 
+
+c) Current MTBF 
+
+The estimated current MTBF at 1 000 h is 34,2 h. 
+
+d) Goodness-of'fit 
+
+C\M) ~ 0,038 with M = 52. At the 0.10 significance level, the critical value from table 1 is 0,173. 
+Since C^M) < 0,173, the power law model is accepted (see 7.3 and figure A.l). 
+
+e) Confidence interval on P 
+
+A two-sided 90 % confidence interval on p is (0.4491; 0,7101). 
+
+f) Confidence interval on current MTBF 
+
+A two-sided 90 % confidence interval on the current MTBF at 1 000 h is (24,2 h; 48,1 h). 
+
+
+
+18 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+A. 2. 2 Example 2: Type II test - Case I - Time data for every relevant failure 
+
+This case is covered in 7.2.1. Data from table A.l are used with test finishing at 975 h. 
+
+a) Test for growth 
+
+U = -3,764. At the 0,20 significance level, the critical values for a two-sided test are 1,28 and -1,28. 
+Since U <-l,28, there is evidence of positive reliability growth and the analysis is continued. 
+
+b) Parameter estimation 
+
+The estimated parameters of the power law model are: 
+A,= 1,1067 
+p= 0,5594 
+
+c) Current MTBF 
+
+The estimated current MTBF at 975 h is 33,5 h. 
+
+d) Goodness-of-fit 
+
+C^(M) - 0,041 with M = 51. At the 0,10 significance level, the critical value from table 1 is 0,173. 
+Since C^M) < 0,173. the power law model is accepted (see 7.3 and figure A.l). 
+
+e) Confidence interval on p 
+
+A two-sided 90 % confidence interval on p is (0,4646; 0,7347). 
+
+f) Confidence interval on current MTBF 
+
+A two-sided 90 % confidence interval on the current MTBF at 975 h is (24,3 h; 46,7 h). 
+
+A.2.3 Example 3 - Case 2 - Time data for group relevant failures 
+
+This case is covered in 7.2.2. Data from table A.l are used. The failures have been grouped over 
+intervals of 200 h to give the data set in table A.2. The analysis of this data set gives the results 
+described below. 
+
+a) Test for growth 
+
+X^ = 595 with four degrees of freedom. At the 0.20 significance level, the critical value is 6,0. Since 
+X^ > 6,0, there is evidence of positive or negative reliability growth and the analysis is continued. 
+
+b) Parameter estimation 
+
+The estimated parameters of the power law model are: 
+i =0.9615 
+p = 0,5777 
+
+c) Current MTBF 
+
+The estimated current MTBF at 1 000 h is 33,3 h. 
+
+d) Goodness-of-fit 
+
+X^ = 2,175 with three degrees of freedom. At the 0.10 significance level, the critical value is 6,25. 
+Since X^ < 6,25, the power law model is accepted (see 7.3 and figure A. 2). 
+
+e) Confidence interval on j3 
+
+A two-sided 90 % confidence interval on p is (0,3202; 0.8351). 
+
+
+
+19 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+f) ^Confidence interval on current MTBF 
+
+A two-sided 90 % confidence interval on the current MTBF at 1 000 h is (16.6 h; 49,9 h). 
+
+A.3 Projected reliability estimates 
+
+This example illustrates the calculation of a projected reliability estimate (see 7.6) when the corrective 
+modifications have been incorporated into the system at the end of test. 
+
+A.3.1 Example 4 
+
+The basic data used in this example are given in table A.3. There are a total of ^ = 45 relevant failures 
+with Kp^= \3 category A failures which received no corrective modification. At the end of the 4 000 h 
+test, /= 16 distinct corrective modifications were incorporated into the system to address the K^ = 32 
+category B failures. The category for each relevant failure is given in table A.3. Each category B 
+failure type is distinguished by a number. Table A.4 provides additional information used for the 
+projection. 
+
+Steps in the procedure 
+
+Step 1: identify category A and B failures. 
+
+Times of occurrence and the category A and B failures are identified in table A.3. The failure times for 
+the 16 distinct category B types are indicated in table A.4, column 2. 
+
+Step 2: identify first occurrence of distinct category B types. 
+
+The times of first occurrence of the 16 distinct category B types are given in table A.4, column 3. 
+
+Step 3: analyze first occurrence data. 
+
+The data set of table A.4, column 3, is analyzed in accordance with steps 4-8 of 7.2.1. The results 
+follow below: 
+
+Parameter estimation 
+
+The estimated parameters of the power law model are: 
+
+1 = 0,0326 
+
+p = 0,7472 
+
+First occurrence failure intensity estimation 
+
+The estimated current failure intensity for first occurrence of distinct category B types at 4 000 h is 
+
+o;oo30h-^ 
+
+Goodness-of-fit 
+
+C^(M) = 0,085 with Af = 16. At the 0,10 significance level, the critical value from table 1 is 0,171. 
+
+Since C (A/) < 0,171, the power law model is accepted for the times of first occurrence of distinct 
+category B types. 
+
+
+
+20 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+
+
+Step 4: assign effectiveness factors 
+
+
+
+An example of assigned individual effectiveness factors for each corrective modification is given in 
+table A. 4, column 5. The average of these 16 effectiveness factors is 0,72. An average in the range of 
+0,65 to 0,75 is typical, based on historical experience. 
+
+Step 5: estimate projected failure intensity. 
+
+
+
+To calculate the projected failure intensity, the following values are needed: 
+
+
+T 
+
+
+= 
+
+
+4 000h 
+
+
+f^A 
+
+
+= 
+
+
+13 
+
+
+I 
+
+
+= 
+
+
+16 
+
+
+P 
+
+
+= 
+
+
+0,7472 
+
+
+E 
+
+
+= 
+
+
+0,72 
+
+
+K^ 
+
+
+- 
+
+
+table A.4, column 4 
+
+
+Ei 
+
+
+- 
+
+
+table A4, column 5 
+
+
+
+The estimated projected failure intensity at 7= 4 000 h (the end of test) is 0,0074 h~^ 
+Step 6: estimate projected MTBF. 
+
+The projected MTBF is 135,1 h. 
+
+NOTE - With no reliability growth during the 4 000 h test, the MTBF over this period is estimated by (4 000/45) = 
+88,9 h. The projected MTBF is the estimated increase in MTBF due to the 16 corrective modifications and the 
+corresponding effectiveness factors. The sensitivity of the projected MTBF to the assigned effectiveness factors is 
+often of interest. If only an average effectiveness factor of 0,60 were assigned, the projected MTBF would equal 
+121,3 h. An average effectiveness factor of 0.80 would give a projected MTBF of 138,1 h. 
+
+
+
+21 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+Table A.l - Complete data - aU relevant failures and accumulated test times for type I test; 
+
+r* = 1000h,Ar = 52 
+
+
+
+2 
+
+
+4 
+
+
+10 
+
+
+15 
+
+
+18 
+
+
+19 
+
+
+20 
+
+
+25 
+
+
+39 
+
+
+41 
+
+
+43 
+
+
+45 
+
+
+47 
+
+
+66 
+
+
+88 
+
+
+97 
+
+
+104 
+
+
+105 
+
+
+120 
+
+
+196 
+
+
+217 
+
+
+219 
+
+
+257 
+
+
+260 
+
+
+281 
+
+
+283 
+
+
+289 
+
+
+307 
+
+
+329 
+
+
+357 
+
+
+372 
+
+
+374 
+
+
+393 
+
+
+403 
+
+
+466 
+
+
+521 
+
+
+556 
+
+
+571 
+
+
+621 
+
+
+628 
+
+
+642 
+
+
+684 
+
+
+732 
+
+
+735 
+
+
+754 
+
+
+792 
+
+
+803 
+
+
+805 
+
+
+832 
+
+
+836 
+
+
+873 
+
+
+975 
+
+
+
+
+
+
+
+Table A.2 - Grouped data for example 3, derived from table A.1 
+
+
+
+Group number 
+
+
+Number of failures 
+
+
+Accumulated relevant test time at 
+
+end of group interval 
+
+h 
+
+
+1 
+
+
+20 
+
+
+200 
+
+
+2 
+
+
+13 
+
+
+400 
+
+
+3 
+
+
+5 
+
+
+600 
+
+
+4 
+
+
+8 
+
+
+800 
+
+
+5 
+
+
+6 
+
+
+1000 
+
+
+
+22 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+
+
+Table A3 - Complete data for projected estimates in example 4 - 
+
+all relevant failures and accumulated test times; 
+
+r» = 4 000 h, iV = 45, ^A = 13, i^B = 32, / = 16 
+
+
+
+
+
+
+
+
+
+
+
+Accumulated relevant test times. Tj 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Classification 
+
+
+per category AJB, including distinct category 8 
+h 
+
+
+types 
+
+
+
+
+^i 
+
+
+150 
+
+
+253 
+
+
+475 
+
+
+540 564 636 
+
+
+722 
+
+
+871 
+
+
+996 
+
+
+Category 
+
+
+HI 
+
+
+82 
+
+
+83 
+
+
+84 85 A 
+
+
+85 
+
+
+A 
+
+
+86 
+
+
+^i 
+
+
+1003 
+
+
+1025 
+
+
+1 120 
+
+
+1 209 1 255 1 334 
+
+
+1647 
+
+
+1774 
+
+
+1927 
+
+
+Category 
+
+
+87 
+
+
+A 
+
+
+88 
+
+
+82 89 810 
+
+
+89 
+
+
+810 
+
+
+811 
+
+
+Ti 
+
+
+2 130 
+
+
+2 214 
+
+
+2 293 
+
+
+2 448 2 490 2 508 
+
+
+2 601 
+
+
+2 635 
+
+
+2 731 
+
+
+Category 
+
+
+A 
+
+
+A 
+
+
+A 
+
+
+A 812 A 
+
+
+81 
+
+
+88 
+
+
+A 
+
+
+n 
+
+
+2 747 
+
+
+2 850 
+
+
+3040 
+
+
+3 154 3 171 3 206 
+
+
+3 245 
+
+
+3 249 
+
+
+3 420 
+
+
+Category 
+
+
+86 
+
+
+813 
+
+
+89 
+
+
+84 A A 
+
+
+812 
+
+
+810 
+
+
+85 
+
+
+^i 
+
+
+3 502 
+
+
+3646 
+
+
+3 649 
+
+
+3 663 3 730 3 794 
+
+
+3 890 
+
+
+3 949 
+
+
+3 952 
+
+
+Category 
+
+
+83 
+
+
+810 
+
+
+A 
+
+
+82 88 814 
+
+
+815 
+
+
+A 
+
+
+816 
+
+
+
+Table A.4 - Distinct types of category B failures, from table A.3, with failure times, 
+time of first occurrence, number observed and effectiveness factors 
+
+
+
+Column n^ 
+
+
+I 
+
+
+2 
+
+
+3 
+
+
+4 
+
+
+5 
+
+
+Type 
+
+
+Failure times 
+h 
+
+
+Time at first 
+occurrence 
+
+h 
+
+
+Number 
+observed 
+
+
+Assigned 
+
+effectiveness 
+factors 
+
+
+1 
+
+
+150; 2 601 
+
+
+150 
+
+
+2 
+
+
+0,7 
+
+
+2 
+
+
+253; 1 209; 3 663 
+
+
+253 
+
+
+3 
+
+
+0.7 
+
+
+3 
+
+
+475; 3 502 
+
+
+475 
+
+
+2 
+
+
+0,8 
+
+
+4 
+
+
+540; 3 154 
+
+
+540 
+
+
+2 
+
+
+0,8 
+
+
+5 
+
+
+564; 722; 3 420 
+
+
+564 
+
+
+3 
+
+
+0,9 
+
+
+6 
+
+
+996; 2 747 
+
+
+996 
+
+
+2 
+
+
+0,9 
+
+
+7 
+
+
+1003 
+
+
+1003 
+
+
+I 
+
+
+0,5 
+
+
+8 
+
+
+1 120; 2 635; 3 730 
+
+
+1 120 
+
+
+3 
+
+
+0,8 
+
+
+9 
+
+
+I 255; 1 647; 3 040 
+
+
+1255 
+
+
+3 
+
+
+0,9 
+
+
+10 
+
+
+1 334; 1 774; 3 249; 3 646 
+
+
+1334 
+
+
+4 
+
+
+0,7 
+
+
+U 
+
+
+1927 
+
+
+1927 
+
+
+1 
+
+
+0,7 
+
+
+12 
+
+
+2 490; 3 245 
+
+
+2 490 
+
+
+2 
+
+
+0,6 
+
+
+13 
+
+
+2 850 
+
+
+2 850 
+
+
+1 
+
+
+0,6 
+
+
+14 
+
+
+3 794 
+
+
+3 794 
+
+
+1 
+
+
+0,7 
+
+
+15 
+
+
+3 890 
+
+
+3 890 
+
+
+1 
+
+
+0,7 
+
+
+16 
+
+
+3 952 
+
+
+3 952 
+
+
+1 
+
+
+0,5 
+
+
+
+23 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+Expected test time 
+at failure 
+
+
+
+lOOOh F 
+
+
+
+800h - 
+
+
+
+600h - 
+
+
+
+
+400 h ^ 
+
+
+
+200 h - 
+
+
+
+Oh 
+
+
+
+200 h 
+
+
+
+400 h 
+
+
+
+600 h 
+
+
+
+800 h 1 000 h 
+
+Observed test 
+time at failure 
+
+
+
+Figure A.l - Scattergram of expected and observed test times at failure 
+based on data of table A.l with power law model 
+
+
+
+24 
+
+
+
+Failures 
+Test time 
+
+
+
+IS 15038 : 2001 
+lEC 61164(1995) 
+
+
+
+0,20 F 
+
+
+
+
+0,04 t 
+
+
+
+200 h 
+
+
+
+300 h 
+
+
+
+400 h 500 h 
+
+
+
+700 h 900 h 
+
+
+
+2 000h 
+
+Accumulated 
+test time 
+
+
+
+Figure A.2 - Observed and estimated accumulated failures/accumulated test time 
+based on data of table A J with power law model 
+
+
+
+25 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+
+
+Annex B 
+
+(informative) 
+
+The power law reliability growth model - Background information 
+
+
+
+B.l The Duane postulate 
+
+The most commonly accepted pattern for reliability growth was reported in a paper by J.T. Duane in 
+1964. In this paper, Duane discussed his observations on failure data for a number of systems during 
+development testing. He observed that the accumulated number of failures N{T), divided by the 
+accumulated test time, 7, was decreasing and fell close to a straight line when plotted against T on In-ln 
+scale. That is, approximately, 
+
+ln(M7')/r) = 5-alnr, withd>0,a>0 
+
+Duane interpreted these plots and concluded that the accumulated number of failures is approximated 
+by the power law function, 
+
+M^) = A.^^ withX>0, p = l-a 
+Based on this observation, Duane expressed the current instantaneous failure intensity at time 7 as 
+
+— N{T) = X&T^\ withr>0 
+dT 
+
+
+
+which gives the instantaneous MTBF 
+
+
+
+x-i r>-P 
+
+
+
+(xpr^*)" = , withr>o 
+
+/v P 
+
+The exponent a = 1-P is sometimes called the "growth rate". 
+
+The Duane postulate is deterministic in the sense that it gives the expected pattern for reliability growth 
+but does not address the associated variability of the data. 
+
+
+
+B.2 The power law model 
+
+L.H. Crow, in 1974, considered the power law reliability growth pattern and formulated the underlying 
+probabilistic model for failures as a non-homogeneous Poisson process (NHPP), {N{T)y T>0}, with 
+mean value function 
+
+E[N{T)]=^XT^ 
+and intensity function 
+
+z(r) = xpr^^ 
+
+
+
+26 
+
+
+
+IS 15038 : 2001 
+lEC 61164 (1995) 
+
+The Crow NHPP power law model has exactly the same reliability growth pattern as the Duane 
+
+postulate, for example, they both have the same expression XT^ for the expected number of failures by 
+time T. However, the NHPP model gives the Poisson probability that A^(7^ will assume a particular 
+value, that is, 
+
+e 
+
+
+
+Pr[Mr) = n] =-^ ' , with n = 0,1,2,... 
+
+
+
+n! 
+
+
+
+Also, under this model 
+
+£[;i7]^j = 7\ with; =1,2,... 
+where T is the accumulated time to they-th failure. 
+
+
+
+This gives the useful first order approximation 
+
+M/f 
+
+,avec 7 = 1,2,. 
+
+
+
+Mis 
+
+
+
+for the expected time to they-th failure. 
+
+When P = 1, then z{T) h X, and the times between successive failures follow an exponential distribution 
+with mean \/X (homogeneous Poisson process), indicating no reliability growth. The intensity function 
+z{T) is decreasing for P < 1 (positive growth), and increasing for p > 1 (negative growth). 
+
+The NHPP power law reliability growth model is a probabilistic interpretation of the Duane postulate 
+and therefore allows for the development and use of rigorous statistical procedures for reliability 
+growth assessments. These methods include maximum likelihood estimation of the model parameters 
+and system reliability, confidence interval procedures and objective goodness-of-fit tests. The NHPP 
+power law model was extended by Crow in 1983 for reliability growth projections. 
+
+B.3 Reference documents 
+
+1 Crow, L.H., 1974, "Reliability Analysis for Complex Repairable Systems'*. Reliability and 
+Biometry, ed. F. Proschan and RJ. Serfling, pp. 379-410. Philadelphia, PA: SIAM. 
+
+2 Crow, L.H., 1983, "Reliability Growth Projection From Delayed Fixes". Proceedings of the 1983 
+Annual Reliability and Maintainability Symposium, pp. 84-89, Orlando, FL. 
+
+3 Duane, J.T., 1964, "Learning Curve Approach to Reliability Monitoring'*. IEEE Transactions on 
+Aerospace 2: pp. 563-566. 
+
+
+
+27 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act^^ 1986 to promote 
+harmonious development of the activities of stardardization, marking and quality certification of goods and 
+attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced in any form 
+without the prior permission in writing of BIS. This does not preclude the free use, in the course of 
+implementing the standard, of necessary details, such as symbols and sizes, type or grade designations. 
+Enquiries relating to copyright be addressed to the Director (Publication), BIS. 
+
+Review of Indian Standards 
+
+Amendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed 
+periodically; a standard along with amendments is reaffirmed when such review indicates that no changes are 
+needed; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards 
+should ascertain that they are in possession of the latest amendments or edition by referring to the latest issue 
+of 'BIS Handbook' and 'Standards: Monthly Additions'. 
+
+This Indian Standard has been developed from Doc: No. LTD 3 (1817). 
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 1 10002 
+Telephones: 323 01 31, 323 3375, 323 94 02 
+
+Regional Offices: 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110002 
+
+Eastern : 1/14 C.I.T. Scheme VII M, V.I.P. Road, Kankurgachi 
+CALCUTTA 700054 
+
+Northern : SCO 335-336, Sector 34-A, CHANDIGARH 160022 
+Southern : C J.T. Campus, IV Cross Road, CHENNAI 6001 13 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) 
+MUMBAI 400093 
+
+Branches : AHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. 
+COIMBATORE. FARIDABAD. GHAZIABAD. GUWAHATI. 
+HYDERABAD. JAIPUR. KANPUR. LUCKNOW. NAGPUR. 
+NALAGARH, PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM. 
+
+
+
+Telegrams: Manaksanstha 
+(Common to all offices) 
+
+Telephone 
+
+323 76 17,323 38 41 
+
+
+
+r337 84 99, 337 85 61 
+1337 86 26,337 9120 
+
+r60 38 43 
+
+160 20 25 
+r254 12 16,254 14 42 
+1254 25 19,254 13 15 
+
+r832 92 95, 832 78 58 
+1832 78 91,832 78 92 
+
+
+
+Printed at Simco Printing Press, Delhi 
+
+
+

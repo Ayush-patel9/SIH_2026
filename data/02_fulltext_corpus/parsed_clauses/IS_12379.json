@@ -1,0 +1,241 @@
+{
+  "is_number": "IS IS_12379",
+  "standard_id": "IS IS_12379",
+  "title": "Indian Standard Specification / Test Method (IS IS_12379)",
+  "ia_identifier": "IS_12379",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12379) covers Indian Standard Specification / Test Method (IS IS_12379). 0,1 This Indian Standard was adopted by the after the draft finalized by the Canals and Canal Lining Sectional Committee had been aproved by the Civil Engineering Division Council. 0.2 Lining of water-courses not only minimizes the loss of water due to seepage, but also results in achieving considerable economy in land use due to reduction in cross-section of water-courses. Water thus saved may be usefully utilized for extension and improvement of irrigation facilities. Besides, in case of unlined water-courses, there is gradually rise in water table, thereby rendering the tract prone to water logging. Lining ensures stability, rigidity and easv maintenance of watercourse at lesser cost. The flatter bed slopes may be achieved which improves the command and eliminates the necessity of JHALLARS (water lifting device). In most cases gravity command becomes available. The filling time of watercourses takes less time and velocity of water is more. There is more equitable distribution of wat",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1489 (PART 1)",
+      "standard_id": "IS 1489 (Part 1):2015",
+      "title": "Part 1 : 2015: Portland Pozzolana Cement - Specification Part 1 Fly Ash Based (Fourth Revision",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 1489 (PART 2)",
+      "standard_id": "IS 1489 (Part 2):2015",
+      "title": "Part 2 : 2015: Portland Pozzolana Cement - Specification Part 2 Calcined Clay Based (Fourth Revision)",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 269",
+      "standard_id": "IS 269:2013",
+      "title": "Specification for Ordinary Portland Cement, 33 Grade",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 1489",
+      "standard_id": "IS 1489",
+      "title": "Indian Standard Specification / Test Method (IS 1489)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 456",
+      "standard_id": "IS 456:2000",
+      "title": "Plain and Reinforced Concrete - Code of Practice",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1077",
+      "standard_id": "IS 1077:1992",
+      "title": "Common Burnt Clay Building Bricks -Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12894",
+      "standard_id": "IS 12894:2002",
+      "title": "Pulverized Fuel Ash-Lime Bricks -",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13757",
+      "standard_id": "IS 13757:1993",
+      "title": "Burnt clay fly ash building bricks-Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10646",
+      "standard_id": "IS 10646:1991",
+      "title": "Canal linings - Cement concrete tiles",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10430",
+      "standard_id": "IS 10430:2000",
+      "title": "Criteria for Design of Lined Canals and Guidance for Selection of Type of Lining",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4701",
+      "standard_id": "IS 4701:1982",
+      "title": "Code of practice for earthwork on canals",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 22",
+      "standard_id": "IS 22",
+      "title": "Indian Standard Specification / Test Method (IS 22)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2250",
+      "standard_id": "IS 2250:1981",
+      "title": "Code of Practice for Preparation and Use of Masonry Mortars",
+      "division_code": "CED",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 455",
+      "standard_id": "IS 455:2015",
+      "title": "Portland Slag Cement - Specification (Fifth Revision)",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Cement (Quality Control) Order, 2023"
+    },
+    {
+      "is_number": "IS 3466",
+      "standard_id": "IS 3466:1988",
+      "title": "B): SPECIFICATION FOR MASONRY CEMENT",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2116",
+      "standard_id": "IS 2116:1980",
+      "title": "Sand for masonry mortars - Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 383",
+      "standard_id": "IS 383:2016",
+      "title": "Coarse and Fine Aggregate for Concrete - Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1542",
+      "standard_id": "IS 1542:1992",
+      "title": "sand for plaster",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7969",
+      "standard_id": "IS 7969:1975",
+      "title": "Safety code for handling and storage of building materials",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 712",
+      "standard_id": "IS 712:1984",
+      "title": "Specification for Building Limes",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9698",
+      "standard_id": "IS 9698:1995",
+      "title": "Lining of Canals with Polyethylene Film - Code of Practice",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12379"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 23159
+}

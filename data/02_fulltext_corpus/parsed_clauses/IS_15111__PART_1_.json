@@ -1,0 +1,115 @@
+{
+  "is_number": "IS IS_15111__PART_1_",
+  "standard_id": "IS IS_15111__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_15111__PART_1_)",
+  "ia_identifier": "IS_15111__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard ( Part 1 ) specifies the safety and interchangeability requirements together with the test methods and conditions, required to show compliance of tubular fluorescent and other gas discharge lamps with integrated means for controlling starting and stable operation ( self ballasted lamps ), intended for domestic and similar general lighting purposes having: a) a rated wattage up to and including 26 W, b) a rated voltage up to and including 250 V, and c) Edison screw E 14 and E 27 or bayonet caps B15dandB22d. The performance requirements are given in Part 2 of this standard. Recommendations for whole product testing are under consideration.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 15111",
+      "standard_id": "IS 15111",
+      "title": "Indian Standard Specification / Test Method (IS 15111)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8913",
+      "standard_id": "IS 8913:1978",
+      "title": "Methods of measurement of lamp cap temperature rise",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9206",
+      "standard_id": "IS 9206:1979",
+      "title": "Dimensions of caps for tungsten filament general service electric lamps",
+      "division_code": "PGD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 125",
+      "standard_id": "IS 125",
+      "title": "Indian Standard Specification / Test Method (IS 125)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10276",
+      "standard_id": "IS 10276",
+      "title": "Indian Standard Specification / Test Method (IS 10276)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11000",
+      "standard_id": "IS 11000",
+      "title": "Indian Standard Specification / Test Method (IS 11000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 650",
+      "standard_id": "IS 650:1991",
+      "title": "Specification for Standard Sand for Testing of Cement",
+      "division_code": "CED",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Self Ballasted Lamp",
+    "Type",
+    "Rated Voltage",
+    "Rated Wattage",
+    "Rated Frequency",
+    "Cap Temperature Rise (Ats",
+    "Live Part",
+    "TVpeTest",
+    "Type Test Sample",
+    "Acceptance Test",
+    "Inspection Test Quantity (ITQ",
+    "Rated Luminous Flux"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "rated voltage up to and including 250 V"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "6.1 The lamps shall be clearly and durably marked",
+      "with the following mandatory markings:",
+      "a) Mark of origin ( this may take the form of a",
+      "trade-mark, the manufacturers name or the",
+      "b) Rated vohage or the voltage range ( marked"
+    ]
+  },
+  "total_chars_parsed": 28004
+}

@@ -1,0 +1,375 @@
+{
+  "is_number": "IS IS_10386__PART_6_",
+  "standard_id": "IS IS_10386__PART_6_",
+  "title": "Indian Standard Specification / Test Method (IS IS_10386__PART_6_)",
+  "ia_identifier": "IS_10386__PART_6_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_10386__PART_6_) covers Indian Standard Specification / Test Method (IS IS_10386__PART_6_). This Indian Standard (First Revision) was adopted by the the Safety in Construction, Operation and Maintenance of River Valley Projects Sectional Committee, WRD 21 had been approved by the Water Resources Division Council. A continuous supply of electric power is of primary importance for almost all human activities, particularly in the industrial sector. Outbreak of fire or an explosion in a power station may completely curtail supply of electrical power for considerable time in addition to causing extensive damage to the building and equipment. Importance of fire safety, for electrical generating and distributing stations has been increasingly recognized, due to occurrence of several devastating fires in such locations in the recent past. Therefore, considering the fact that any fire in such installations may completely disrupt the life of the community, several industries served by them, and may also involve replacement of highly valuable equipment, it is necessary that every attemp",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10386 (PART 7)",
+      "standard_id": "IS 10386 (Part 7):2020",
+      "title": "Part 7 : 2020: Construction, Operation and Maintenance of River Valley Projects — Safety Code Part 7 Fire Safety Aspects ( First Revision )",
+      "division_code": "LITD",
+      "aspect": "Safety Standard",
+      "relation_type": "SAFETY_REQUIREMENT",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1644",
+      "standard_id": "IS 1644:2013",
+      "title": "Code of practice for fire safety of buildings (general): Exit requirements and personal hazard",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1642",
+      "standard_id": "IS 1642:2013",
+      "title": "Fire safety of buildings (general): Details of construction - Code of practice for",
+      "division_code": "PGD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1646",
+      "standard_id": "IS 1646:2015",
+      "title": "Fire Safety of Buildings (General): Electrical Installations - Code of Practice ( Third Revision )",
+      "division_code": "ETD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12777",
+      "standard_id": "IS 12777:1989",
+      "title": "Method for Classification of Flame Spread of Products",
+      "division_code": "PCD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11006",
+      "standard_id": "IS 11006:2011",
+      "title": "Flash Back Arrestor (Flame Arrestor)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3594",
+      "standard_id": "IS 3594:1991",
+      "title": "Code of practice for fire safety of industrial buildings:General storage and warehousing including cold storage",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1643",
+      "standard_id": "IS 1643:2013",
+      "title": "Fire Safety of Buildings (General): Exposure Hazard — Code of Practice",
+      "division_code": "PGD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 62305",
+      "standard_id": "IS/IEC 62305",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 62305)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12459",
+      "standard_id": "IS 12459:1988",
+      "title": "Code of Practice for Fire Safety in Cable Runs",
+      "division_code": "ETD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6665",
+      "standard_id": "IS 6665:1972",
+      "title": "Code of practice for industrial lighting",
+      "division_code": "ETD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1641",
+      "standard_id": "IS 1641:2013",
+      "title": "Code of practice for fire safety of buildings (general): General principles of fire grading and classification",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2175",
+      "standard_id": "IS 2175:1988",
+      "title": "Specification for heat sensitive fire detectors for use in automatic fire alarm system",
+      "division_code": "GEN",
+      "aspect": "System Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9668",
+      "standard_id": "IS 9668:1990",
+      "title": "Code of practice for provision and maintenance of water supplies and fire fighting",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3844",
+      "standard_id": "IS 3844:1989",
+      "title": "Code of practice for installation and maintenance of internal fire hydrants and hose reels on premises",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 13039",
+      "standard_id": "IS 13039:2014",
+      "title": "External hydrant systems - provision and maintenance - Code of practice",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2871",
+      "standard_id": "IS 2871:2012",
+      "title": "Branch Pipe, Universal For Fire fighting Purpose- Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2189",
+      "standard_id": "IS 2189:2008",
+      "title": "Selection, Installation and Maintenance of Automatic Fire Detection and Alarm System Code of Practice",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12835 (PART 1)",
+      "standard_id": "IS 12835 (Part 1):2021",
+      "title": "Part 1 : 2021: Design And Installation Of Fixed Foam Fire Extinguishing System - Code Of Practice Part 1 Low Expansion Foam",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2190",
+      "standard_id": "IS 2190:2010",
+      "title": "SELECTION, INSTALLATION AND MAINTENANCE OF FIRST-AID FIRE EXTINGUISHERS — CODE OF PRACTICE",
+      "division_code": "LITD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 944",
+      "standard_id": "IS 944:1979",
+      "title": "Functional Requirements of 1800-1/Min Trailer Pump For Fire Brigade Use",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12717",
+      "standard_id": "IS 12717:1989",
+      "title": "Functional requirements of fire fighting equipment - High capacity portable pumpset (1100-1600 1/min)",
+      "division_code": "MHD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 636",
+      "standard_id": "IS 636:2018",
+      "title": "Non-Percolating Flexible Fire Fighting Delivery Hose — Specification ( Fourth Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4927",
+      "standard_id": "IS 4927:1992",
+      "title": "Specification for Unlined Flax Canvas Hose for Fire Fighting",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2097",
+      "standard_id": "IS 2097:2012",
+      "title": "Foam Making Branch Pipe and Foam Inductor- Specification",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4989",
+      "standard_id": "IS 4989:2018",
+      "title": "Foam Concentrate for Producing Mechanical Foam for Fire Fighting — Specification ( Fourth Revision )",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 94",
+      "standard_id": "IS 94",
+      "title": "Indian Standard Specification / Test Method (IS 94)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 951",
+      "standard_id": "IS 951:2003",
+      "title": "Functional Requirements for Crash Fire Tender for Air Fields",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 950",
+      "standard_id": "IS 950:2012",
+      "title": "Functional Requirements for Water Tender, Type B for Fire Brigade Use",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 941",
+      "standard_id": "IS 941:1985",
+      "title": "Specification for Blower and Exhauster for Fire Fighting",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4571",
+      "standard_id": "IS 4571:1977",
+      "title": "Specification Aluminium Extension Ladders for Fire Brigade use",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10993",
+      "standard_id": "IS 10993:1984",
+      "title": "Functional requirements for 2000 kg dry powder tender for fire brigade use",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 949",
+      "standard_id": "IS 949:2012",
+      "title": "Emergency (Rescue) Tender - Functional Requirements",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6070",
+      "standard_id": "IS 6070:1983",
+      "title": "Code of practice for selection, operation and maintenance of trailer fire pumps, portable pumps, water tenders and motor fire engines",
+      "division_code": "ETD",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade II",
+    "Grade of",
+    "Grade IV",
+    "Grade III",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10386__PART_6_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 63646
+}

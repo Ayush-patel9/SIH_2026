@@ -1,0 +1,92 @@
+{
+  "is_number": "IS IS_12193__PART_1_",
+  "standard_id": "IS IS_12193__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_12193__PART_1_)",
+  "ia_identifier": "IS_12193__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12193__PART_1_) covers Indian Standard Specification / Test Method (IS IS_12193__PART_1_). This Indian Standard which is identical with lEC Pub 315-4 ( 1982 ) 'Methods of measurement on radio receivers for various classes of emissions — Part 4 : Radio-frequency measurements on receivers for frequency modulated sound-broadcasting emissions', issued by the International Electrotechnical Commission ( lEC ), was adopted by the recommendation of the Radio Communications Sectional Committee ( LTD 20 ) and approval of the Electronics and Telecommunication Division Council. In the adopted standard certain terminology and conventions are however not identical to those used in Indian Standards. Attention is particularly drawn to the following: Wherever the words 'International Standard' appear, referring to this standard, they should be read as 'Indian Standard'. CROSS REFERENCES In this Indian Standard, the following International Standards are referred to. respective place the following: Read in their International Standard lEC Pub 106 Recommended methods of measurement of radiated ",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 12193",
+      "standard_id": "IS 12193",
+      "title": "Indian Standard Specification / Test Method (IS 12193)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12193 (PART 3)",
+      "standard_id": "IS 12193 (Part 3):2012",
+      "title": "Methods of Measurement on radio receivers for various classes of emission, Part 3: Receivers for frequency - modulated sound broadcasting emissions",
+      "division_code": "TED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9302",
+      "standard_id": "IS 9302",
+      "title": "Indian Standard Specification / Test Method (IS 9302)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 100",
+      "standard_id": "IS 100",
+      "title": "Indian Standard Specification / Test Method (IS 100)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 30",
+      "standard_id": "IS 30",
+      "title": "Indian Standard Specification / Test Method (IS 30)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade bruary",
+    "1 k",
+    "5 k",
+    "19 k",
+    "9 k",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12193__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "harmonic distortion for modulation frequencies up to about 5 kHz",
+      "harmonic distortion as a function of output power (see Clause 1 1). w"
+    ],
+    "dimensional_tolerances": [
+      "tolerance of at most 1%"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 146536
+}

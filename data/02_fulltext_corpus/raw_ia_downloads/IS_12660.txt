@@ -1,0 +1,2777 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+IS 12660 (1989) : Information Processing-Magnetic Tape 
+Cassette and Cartridge Labelling and File Structure for 
+Information Interchange [LITD 16: Computer Hardware, 
+Peripherals and Identification Cards] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+aj^&vf ijii^s^yiis^ i s:>&^ nT¥seg 
+
+
+
+:<>5&i| mT'5K^5?::5:^>^i»l 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+18 12660:1989 
+ISO 4341 : 1978 
+
+... -, . , , ( Reaffirmed 2003 ) 
+
+Indian Standard 
+
+INFORMATION PROCESSING — MAGNETIC TAPE CASSETTE 
+
+AND CARTRIDGE LABELLING AND FILE STRUCTURE FOR 
+
+INFORMATION INTERCHANGE 
+
+
+
+UDC 681 •327-636 
+
+
+
+G BIS 1990 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+NEW DELHI llOOOa 
+
+December 1990 Prjce Group 7 
+
+
+
+IS 12660 : 1989 
+ISO 4341 : 1978 
+
+Indian Standard 
+
+INFORMATION PROCESSING-MAGNETIC TAPE CASSETTE AND 
+CARTRIDGE LABELLING AND FILE STRUCTURE FOR INFORMATION 
+
+INTERCHANGE 
+
+NATIONAL FOREWORD 
+
+This Indian Standard, which is identical with ISO 4341 : 1978 'Information processing -Magnetic tape cassette 
+and cartridge labelling and file structure for information interchange*, issued by the International Organization for 
+Standardization (ISO), was adopted by the Bureau of Indian Standards on 6 February 1989 on the 
+recommendation of the Connputers, Business Machines and Calculators Sectional Committee (LTDC 24) and 
+approval of the Electronic and Telecommunication Division Council, 
+
+In the adopted standard certain terminology and conventions are not identical with those used in Indian 
+Standards; attention is especially drawn to the following: 
+
+a) Wherever the words 'International Standard' appear referring to this standard, they should be read 
+as 'Indian Standard.' 
+
+b) Comma ( . ) has been used as a decinrial marker while in Indian Standards the current practice is to 
+use a point < . ) as the decimal marker. 
+
+CROSS REFERENCES 
+
+tn this Indian Standard, the following International Standards are referred to. Read in their respective place the 
+following: 
+
+International Standard Corresponding Indian Standard Degree of Correspondence 
+
+ISO 646:1983 7-bit coded character IS 10315: 19827-bit codedcharacter Technically equivalent 
+
+set for information processing set for information interchange 
+
+interchange 
+
+IS0 1001:1-979 Information process- IS 11419 : 1985 Magnetic tape Identical 
+
+ing— Magnetictapelabellingand file labelling and file structures for 
+structure for information interchange information processing 
+
+The Computers, Business Machines and Calculators Sectional Committee has reviewed the provisions of 
+following ISO Standards and has decided that these are acceptable foruse in conjunction with this standard: 
+
+ISO 3275 Information processing — Implementation of the 7-bit coded character set and its 7-bit and 8-bit 
+extensions on 3.81 mm magnetic tape cassette for data interchange 
+
+ISO 3407 Information processing -3.81 mm (0.150 in) magnetic tape cassette for information 
+interchange, 32 bpmm (800 bpi), phase encoded 
+
+
+
+As in the Original Standard, this Page is Intentionally Left Blank 
+
+
+
+IS 12680 ; 
+ISO 4341 
+
+
+
+1989 
+: 1978 
+
+
+
+INTRODUCTION 
+
+The aim of this International Standard is to make possible 
+the interchange of information recorded on magnetic tape 
+cassettes and cartridges between different users and 
+different data processing and data capture equipment. This 
+is accomplished by the arrangement of magnetically 
+recorded separators and labels, to structure and identify the 
+files. 
+
+To provide for the wide range of equipment and appli- 
+cations using magnetic tape cassettes, three systems of 
+increasing complexity are specified. It is possible to dis- 
+tinguish between the three systems by reading the first 
+block recorded on a particular volume. 
+
+In order that a cassette which carries more sophisticated 
+labelling may be copied on unsophisticated equipment, 
+the terminating conditions for end of track and end of data 
+within a cassette are identical in all three of these systems. 
+Thus, support of the basic system is a necessary require- 
+ment to ensure data interchangeability from simple data 
+preparation devices to more complex data processing 
+systems. 
+
+The third system is provided only for use in the most 
+sophisticated environment, where ISO 1001 for magnetic 
+tape labelling is already employed. 
+
+Throughout the whole of this International Standard, 
+the use of the 7-bit coded character set specified in ISO 646 
+is implied. 
+
+NOTE —Whenever the word "cassette" is used, the word "cartridge" 
+is also implied. It is felt that the illustrations and examples given for 
+cassettes can readily be interpreted to cover similar situations for 
+multi-track cartridges. 
+
+
+
+1 SCOPE AND FIELD OF APPLICATION 
+
+This International Standard specifies fife structures for data 
+interchange on magnetic tape cassettes. 
+
+To provide for the range of sophistication in equipment and 
+applications, three systems are specified : 
+
+a) the basic system, employing only hardware-defined 
+separators to structure the files; 
+
+b) the compact system, employing special data blocks 
+with information content (labels), which are capable of 
+being recorded using only numeric equipment; 
+
+c) the extended system, employing the magnetic tap!^ 
+labelling system specified in ISO 1001 together with r\e^ 
+labels, to define a more comprehensive labelling system. 
+
+This International Standard is not limited to the 3,81 mm 
+magnetic tape cassette described in ISO 3407 but could also 
+be applied to higher capacity cassettes or cartridges. 
+
+2 REFERENCES 
+
+ISO 646, 7-bit coded character set for information pro- 
+cessing interchange. 
+
+ISO 1001, information processing — Magnetic tape iabeiiing 
+and fiie structure for information interchange, 
+
+ISO 3275, Information processing — Implementation of the 
+1-bit coded character set and its 1-bit and B-bit extensions 
+on 3,81 mm magnetic tape cassette for data interchange. 
+
+ISO 3407, Information processing — 3,81 mm (0.150 in) 
+magnetic tape cassette for information interchange, 
+32 bpmm (800 bpi), phase encoded. 
+
+
+
+IS 12660 
+ISO 4341 
+
+
+
+1989 
+:1978 
+
+
+
+3 DEFINITIONS 
+
+For the purposes of this International Standard the 
+following terms have the meanings Indicated. 
+
+NOTE — for a better explanation, the concepts have, where appro- 
+priate, been listed separately as logical and physical. The definition 
+of a term that is used in an International Standard related to this 
+subject conforms to Its usage in that International Standard; the 
+definition of aaerm that is in common use in a context related to 
+this International Standard conforms to that common usage. 
+
+
+
+Logical 
+
+
+
+record : Related data 
+treated as a unit of 
+information. 
+
+
+
+file ; A collection of infor- 
+mation consisting of ^ 
+records pertaining to a 
+single subject 
+
+Examples : In the context 
+of business data, a payroll 
+file, an inventory file. 
+
+— The delineation of a 
+file may be arbitrary. 
+
+- A file may be recorded 
+on aJI or part of a track or 
+volume, or on more than 
+one volume. 
+
+
+
+Physical 
+
+
+
+block : A group of con- 
+tiguously recorded charac- 
+ters written or read as a 
+unit, and terminated with 
+an interblock gap. 
+
+
+
+file section : That part of 
+a file that is recorded on a 
+single track of a cassette. 
+
+— The sections of a file 
+in a volume shall not 
+have sections of other 
+files interspersed. 
+
+
+
+file set : A collection of 
+one or more related files, 
+recorded consecutively 
+on a volume set. 
+
+
+
+volume : A dismourrtable 
+physical unit of storage 
+media, for example a 
+complete cassette con- 
+sisting of either 
+
+- two tracks used 
+serially and sequen- 
+tially for data inter* 
+change as specified 
+in ISO 3407 or 
+
+- a single track 
+(number 1, side A) 
+used serially for data 
+interchange with the 
+use of track number 2, 
+side B, defined by agree- 
+ment between the inter- 
+change parties a$ spe- 
+cified in ISO 3407 
+
+
+
+volume set : A collection 
+of one or more volumes on 
+which one and only. one 
+file set is recorded. 
+
+
+
+label : A block, at the beginning or at the end of a volume, 
+of a track or of a file, that identifies, characterizes and/or 
+delimits that volume, track or file. A label is not considered 
+to be part of a file. 
+
+label identifier : One or more characters recorded in tl>e 
+label to identify the label. 
+
+characters used in a label : Only a subset of the characters 
+of the 7-bit code defined in ISO 646 is used in the label. 
+The allowable characters are described in the following 
+way : 
+
+any numeric character from to 9. 
+
+: any numeric, alphabetic or special 
+character of the centre four columns of th% code table 
+except position 5/15 and those positions where there is 
+provision for alternative graphic representation. 
+
+tape mark : A delimiter used to indicate the boundary^ 
+between file data and labels, and also between certain 
+labels. In the basic system it is used to separate files. 
+
+NOTES 
+
+1 The tape mark configuration is specified in the relevant Inter- 
+national Standard for data interchange on magnetic tape cassettes. 
+
+2 Throughout this International Standard the tape mark is in- 
+dicated as an asterisk^*). 
+
+double tape mark : A delimiter consisting of two conse- 
+cutive tape marks that is used to indicate the end of a 
+volume or of a file set. 
+
+NOTE — Except in the basic system, two consecutive tape marks 
+also occur when an empty file section or an empty file exists on a 
+volume, in which case they are not interpreted as a double mark 
+but rather as two single tape marks framing an empty file section. 
+In this context "empty" means that no blocks are present between 
+the tape mark following the header label and the tape mark 
+preceding the end of volume, end of track or end of file label of 
+that file section or file. 
+
+
+
+IS 12660:1989 
+ISO 4341 : 1978 
+
+
+
+4 BASIC SYSTEM 
+
+4.1 Introduction 
+
+The basic system permits the structuring of one or more 
+files on one volume by means of hardware separators 
+(tape marks) only. Each volume is independent; multi- 
+volume files are not provided. No magnetically recorded 
+labels are used. 
+
+The procedures for recording and detecting end of data 
+on ^ track are defined In the relevant International 
+Standards for media. 
+
+
+
+4.2 Use of tape marks 
+
+Tape marks are used with the following significance to in- 
+dicate the structure of volumes and files. 
+
+— Start of volume . . .* 
+
+— File separator *. . .* 
+
+— Intermediate end of track . . .* 
+
+— Intermediate start of track . . .* 
+
+— End of data (and end of volume) . . .** 
+
+It is not permitted for one file separator to be immediately 
+followed by another since this signifies end of data; thus, 
+there can be no empty file sections as described in the 
+definition of "double tape mark" in clause 3. 
+
+Two tape marks not signifying end of data may occur 
+when an intermediate start of track is immediately followed 
+by a file separator : this condition is explained in 4.4 and 
+4.5. 
+
+
+
+4.3 Structuring the files 
+
+Figure 1 illustrates the use of tape marks to establish the 
+file structure according to the definitions of 4.2. In this 
+figure and figure 2, the beginning of the tape is at the left 
+and the end of the track is at the right. Each box represents 
+a track. 
+
+If the end-of-tape marker is encountered whilst a data block 
+is being written, then, unless the system avoids the situation 
+by, for example, erasing the current block, the system will 
+complete writing the data block, and will then close the 
+track with an intermediate end of track tape mark. The 
+next track is opened with an intermediate start of track 
+tape mark [as illustrated in figure lb) and Id)], and the file 
+is continued. 
+
+4.4 Coincidence of end of file and intermediate start of 
+track 
+
+This situation arises when the end-of-tape marker is 
+recognized whilst the system is writing the last data block 
+of the file. In this case the system will close the track and 
+open the next track as indicated in 4.3, except that no data 
+blocks of the completed file will be written in the next 
+track, but only a file separator. 
+
+
+
+There are then two possibilities : 
+
+4.4.1 If the file is not the last file of the set, the resulting 
+configuration will be as illustrated in figure 2a). 
+
+4.4.2 If the file is the last file x>f the set, the next track 
+will be terminated by a third tape mark as illustrated in 
+figure 2b), in this case the last two tape marks are to be 
+interpreted as an end of data indicator. 
+
+
+
+{ 
+
+
+a) Single fil«, on« track 
+
+
+
+
+
+
+
+
+
+
+
+
+* FILE A *• 
+
+
+
+
+
+
+
+
+b) Single file, two tracks 
+
+
+
+
+
+
+* FILE A* 
+
+
+
+
+* FILE A** 
+
+
+
+
+t:)Multt-file, one track . 
+
+
+
+
+
+
+
+
+• FILE A* FILE B ** 
+
+
+
+
+
+
+dl) Multi-file, two tracks 
+
+
+
+
+
+
+
+
+
+
+
+
+* FILE A* FILEB* 
+
+
+
+
+• FILEB* FILEC** 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FIGURE 1 - File structure 
+
+
+
+a) 1 ntermediate start of track followed by file separator 
+
+Multi-file, two tracks, coincident end of file and intermediate 
+start of track 
+
+
+
+
+* FILE A* 
+
+
+
+
+••FILEB'* 
+
+
+
+
+b) CoincMence o 
+
+
+f end of last f 
+
+
+ik 
+
+
+» and intermodi 
+
+
+ate start of track 
+
+
+
+
+-* FILE A * FILEB * *** 
+
+
+
+
+
+
+
+
+
+
+
+FIGURE 2 ~ File structure ~ Special cases 
+
+
+
+4.5 Coincidence of end of file and intermediate end of 
+track 
+
+This situation arises when the end-of-tape marker is re- 
+cognized whilst the system is writing the tape mark follow- 
+ing a file. 
+
+There are then two possibilities : 
+
+4.5.1 If the file is not the last file of a set, the track is 
+terminated at that point, so that the tape mark already 
+written is now to be interpreted as an intermediate end 
+of track indicator. The next track starts with an inter- 
+mediate start of track indicator, followed by a file separ- 
+ator indicator, as illustrated in figure 2a). 
+
+4.5.2 If the file is the last file of a set, the system will 
+write a second tape mark to complete the track with an 
+end of data indicator as illustrated in figures 1a) and 1c). 
+
+
+
+IS 12660 : 1989 
+ISO 4341 : 1978 
+
+
+
+4.6 End of available space 
+
+If the end-of-tape marker is recognized at the end of the 
+last or only track on the volume which is available for 
+recording, the file must be terminated with an end of data 
+indicator as illustrated in figure 1. 
+
+4.7 Recording density 
+
+The blocks recorded on all volumes containing a file set 
+shall be recorded with the same density. 
+
+
+
+4,8 By-pass or check-point records 
+
+Only the relevant data blocks shall be written on a cassette 
+used for interchange. Since by-pass information and check- 
+point records are considered to be extraneous to the inter- 
+change, and no standard means of identification is provided, 
+the recording of by-pass and check-point information is not 
+allowed on cassettes for interchange. 
+
+
+
+IS 12660:1989 
+ISO 4341 : 1978 
+
+
+
+5 COMPACT SYSTEM 
+
+
+
+5.3-1 File Header Label (HDR) 
+
+
+
+5.1 Introduction 
+
+The compact system permits the structuring of one or more 
+files on one or more volumes by means of magnetically 
+recorded labels and tape marks. The labels are capable of 
+being recorded by equipment which uses only "n" charac- 
+ters but provision is made for the use of "a" characters in 
+appropriate fields. 
+
+The procedures for recording and detecting end of data 
+on a track are defined in the relevant International 
+Standards for media. 
+
+5.2 Use of tape marks 
+
+The tape mark is used to separate labels from file data and 
+from other labels. 
+
+5.3 Formats and contents o^ labels 
+
+A label is a 32-character block, the character positions of 
+which are numbered 1 to 32. They are classified into four 
+types as given in the table. 
+
+TABLE - ClaMification of laMs 
+
+
+
+Type 
+
+
+Name 
+
+
+MiMfnonic 
+
+
+IdMitHier 
+
+
+Beginning of 
+file or of file 
+section 
+
+
+File Header 
+Label 
+
+
+HDR 
+
+
+1 
+
+
+End of track 
+
+
+End of Track 
+Label 
+
+
+ETR 
+
+
+3 
+
+
+End of volume 
+
+
+End of Volume 
+Label 
+
+
+EOV 
+
+
+7 
+
+
+End of file or 
+of last file 
+section 
+
+
+End of File 
+Label 
+
+
+EOF 
+
+
+9 
+
+
+
+NOTE — ETR and EOV both imply end of first or intermediate file 
+section. 
+
+
+
+Character 
+potition 
+
+(CP) 
+
+
+Field name 
+
+
+Field 
+length 
+
+
+Content 
+
+
+1 
+
+
+Label Identifier 
+
+
+1 
+
+
+1 
+
+
+2 - 
+
+
+Volume Identifier 
+
+
+4 
+
+
+"a" characters. 
+
+
+to 
+
+
+
+
+
+
+Permanently as- 
+
+
+5 
+
+
+
+
+
+
+signed by the owner 
+to identify the 
+volume 
+
+
+6 
+
+
+File Identifier 
+
+
+8 
+
+
+"a" characters. As- 
+
+
+to 
+
+
+
+
+
+
+signed by the origin- 
+
+
+13 
+
+
+
+
+
+
+ator to identify the 
+file 
+
+
+14 
+
+
+File Section Number 
+
+
+2 
+
+
+"n" characters. 
+
+
+and 
+
+
+
+
+
+
+Identifies the sec- 
+
+
+15 
+
+
+
+
+
+
+tion among other 
+sections of the file 
+
+
+16 
+
+
+Creation Date 
+
+
+5 
+
+
+Two "n" charac- 
+
+
+to 
+
+
+
+
+
+
+ters for the year 
+
+
+20 
+
+
+
+
+
+
+followed by three 
+"n" characters for 
+
+
+
+
+
+
+
+
+the day (001 to 
+366) within the year 
+
+
+21 
+
+
+Retention Period 
+
+
+3 
+
+
+n cnaraciers. 
+
+
+to 
+
+
+
+
+
+
+Specifies a number 
+
+
+23 
+
+
+
+
+
+
+of days 
+
+
+24 
+
+
+Block Count 
+
+
+4 
+
+
+0000 
+
+
+to 
+
+
+
+
+
+
+
+
+27 
+
+
+
+
+
+
+
+
+28 
+
+
+Label Standard 
+
+
+1 
+
+
+"a" character. In- 
+
+
+
+
+Version 
+
+
+
+
+dicates the version 
+of this International 
+Standard. 
+
+1 means this ver- 
+sion. 
+
+
+29 
+
+
+Reserved for future 
+
+
+4 
+
+
+0000 
+
+
+to 
+
+
+standardization 
+
+
+
+
+
+
+32 
+
+
+
+
+
+
+
+
+
+5.3.2 End of Track Label (ETR) 
+
+
+
+Character 
+position 
+
+(CP) 
+
+
+Field name 
+
+
+Field 
+length 
+
+
+Content 
+
+
+1 
+
+
+Label Identifier 
+
+
+1 
+
+
+3 
+
+
+2 
+
+to 
+23 
+
+
+Same as the corres- 
+ponding fields in 
+HDR 
+
+
+22 
+
+
+Same as the corres- 
+ponding fields in 
+HDR or 22 ZERO 
+characters 
+
+
+24 
+
+to 
+27 
+
+
+Block Count 
+
+
+4 
+
+
+"n" characters 
+
+
+28 
+to 
+32 
+
+
+Same as the corres- 
+ponding fields in 
+HDR 
+
+
+5 
+
+
+Same as the corres- 
+ponding fields in 
+HDR or 5 ZERO 
+characters 
+
+
+
+IS 12660 : 1989 
+ISO 4341 : 1978 
+
+
+
+5.3.3 End of Volume Label (EOV) 
+
+
+
+Character 
+position 
+
+(CP) 
+
+
+Field name 
+
+
+Field 
+length 
+
+
+Content 
+
+
+1 
+
+
+Label Identifier 
+
+
+1 
+
+
+7 
+
+
+2 
+
+to 
+23 
+
+
+Same as the corres- 
+ponding fields In 
+HDR 
+
+
+22 
+
+
+Same as the corres- 
+ponding fields In 
+HDR or 22 ZERO 
+characters 
+
+
+24 
+
+to 
+27 
+
+
+Block Count 
+
+
+4 
+
+
+"n" characters 
+
+
+28 
+to 
+32 
+
+
+Sanr>e as the corres- 
+ponding fields in 
+HDR 
+
+
+5 
+
+
+Same as the corres- 
+ponding fields in 
+HDR or 5 ZERO 
+characters 
+
+
+
+5,4,3 Fife Section Number ( H D R , CP 1 4 a nd 1 5) 
+
+The number of the first section of a file is 01. This number 
+is increased by 1 for each successive track or volume of the 
+file. 
+
+
+
+B.4.4 Retention Period (HDR, CP 21 to 23) 
+
+The Retention Period is a quantity to be added to the 
+Creation Date to form the expiration date. The retention 
+period may exceed one year. 
+
+A file is regarded as "expired" on a day the date of which 
+is equal to or later than the expiration date. When this 
+condition is satisfied, the remainder of the volume set may 
+be overwritten. To be effective on multi-file volumes, there- 
+fore, the expiration date of a file must be less than or equal 
+to the expiration dates of all previous files on the volume 
+set. 
+
+
+
+5.3.4 End of File Label (EOF) 
+
+
+
+Character 
+position 
+
+<CP) 
+
+
+Field name 
+
+
+Field 
+len«th 
+
+
+Content 
+
+
+1 
+
+
+Label Identifier 
+
+
+1 
+
+
+9 
+
+
+2 
+to 
+23 
+
+
+Same as the corres- 
+ponding fields in 
+HDR 
+
+
+22 
+
+
+Same as the corres- 
+ponding fields in 
+HDR or 22 ZERO 
+characters 
+
+
+24 
+to 
+27 
+
+
+Block Count 
+
+
+4 
+
+
+"n" characters 
+
+
+28 
+1 to 
+* 32 
+
+i 
+
+
+Same as the corres- 
+ponding fields in 
+HDR 
+
+
+5 
+
+
+Same as thexorres- 
+ponding fields in 
+HDR or 5 ZERO 
+characters 
+
+
+
+S.4 Processing of label fields 
+
+5.4.1 General 
+
+The Label Identifier must be written with the content as 
+specified. Other fields may have the content as specified or 
+a default value of the appropriate number of ZERO charac- 
+ters. 
+
+On reading, the fields may be treated as desired. 
+
+
+
+5.4.5 Block Count (ETR, EOV, EOF, CP 24 to 27) 
+
+The Block Count denotes only the number of data blocks 
+since the preceding HDR label. This count excludes label 
+blocks and tape mark blocks. 
+
+If the Block Count has the value zero, it is Ignored. 
+
+This field is provided in order that when a magnetic tape 
+cassette is read the system may ensure that no blocks have 
+been skipped and no false blocks have been inserted. The 
+particular error of equal numbers of skipped and false 
+blocks may escape detection. 
+
+
+
+5,4.6 Label Standard Version ( H D R , CP 28) 
+
+This will appear in every HDR, and must have the same 
+value in every HDR in a volume set. It specifies successive 
+versions of this International Standard that may be defined, 
+and for that purpose numeric values will be used, as far as 
+possible. It is also useful to distinguish between future 
+standards and parochial practice that may develop in the 
+meantime. 
+
+Applications which record a value other than 1 in this field 
+produce non-standard voiuVnes. This may result in a sub- 
+sequent failure of information interchange. 
+
+
+
+5.4.2 Use of data in label fields 
+
+On input, the system may override data found in labels 
+being processed by that system with new values of those 
+data provided from other sources. The new values may 
+be supplied before the file is processed (for example 
+compiled values) or after the processing has begun (for 
+example system control statement), at the x>ption of the 
+system implementors. 
+
+
+
+5.5 Structuring the files 
+
+Labels and tape marks are used to establish the file struc- 
+ture according to the following rules and as illustrated in 
+the accompanying figures 3 to 7. In these figures the 
+beginning of the tape is at the left and the end of the tape 
+is at the right. Labels are represented by their mnemonic 
+identifiers. 
+
+
+
+IS 12660 : 1989 
+rSO 4341 : 1978 
+
+
+
+5.5.1 Configurations of files within the tracks of a volume 5.5,5 End of File Label 
+
+
+
+The various configurations of files that can be formed 
+according to these rules are illustrated in figure 3. Each box 
+represents a track. 
+
+
+
+Single file, one track 
+
+
+
+HDR • FILE A * EOF 
+
+
+
+Single file, two tracks 
+
+
+
+HDR * FILE A * ETR 
+
+
+
+HDR • FILE A* EOF 
+
+
+
+Multi-file, one track 
+
+
+
+HDR 
+
+
+* FILE A* 
+
+
+EOF 
+
+
+* HDR ' 
+
+
+* FILEB* 
+
+
+EOF'^I 
+
+
+Multi-file, two tracks 
+
+
+HDR 
+
+
+* FILE A* 
+
+
+EOF 
+
+
+• HDR 
+
+
+* FILE 8* 
+
+
+ETR* 
+
+
+
+
+|hdr 
+
+
+* FILEB * 
+
+
+EOF 
+
+
+*HDR* 
+
+
+' FILEC* 
+
+
+EOF ** 
+
+
+
+FIGURE 3 - Single-volume file structure 
+
+
+
+5,5.2 Configurations of files in a multi-volume case 
+
+The two configurations of files that can be formed according 
+to these rules are illustrated in figure 4. The distinction 
+between tracks within the volumes is not shown, and the 
+configurations within the volumes are as given in figure 3. 
+Each box represents a volume. 
+
+
+
+Single file, multi-volume 
+
+
+
+
+
+
+HDR * FILE A* EOV **] 
+
+
+
+
+
+
+|hDR * FILE A* EOF ** | 
+
+
+Multi-file, multi-volume 
+
+
+
+
+
+
+|hDR * FILE A * EOF * HDR * FILE B * EOV **| 
+
+
+
+
+
+
+
+
+|hDR • FILE B * EOF * HDR * FILE C * EOF ** | 
+
+
+
+
+
+
+
+
+
+FIGURE 4 ~ Multi-volume file structure 
+
+5.5.3 File Header Label 
+
+Each file shall be preceded by the File Header Label. 
+
+5.5.4 Data 
+
+File data shall follow the File Header Label and be separated 
+from the label by a tape mark. 
+
+
+
+The End of File Label shall follow the last data block of 
+the file and be separated from the file by a tape mark. 
+
+
+
+5.5.6 Tape mark after End of File Label 
+
+If the file ends within a volume, a tape mark shall im- 
+mediately follow the End of File Label. 
+
+If the file is the last file of a file set, a double tape mark 
+shall immediately follow the End of File Label. 
+
+
+
+5.5.7 £ndDf Track Label 
+
+(f the file extends over the end of a track, the End of Track 
+Label shall follow the last data block on that track and be 
+separated from that data block by a tape mark. The End of 
+Track Laberl shall always be followed by a single tape mark. 
+
+
+
+5.5.8 End of Volume Label 
+
+If the file extends over the end of a volume, the End of 
+Volume Label shall follow the last data block on that track 
+and be separated from that data block by a tape mark. The 
+End of Volume Label shall always be followed by a double 
+tape mark. 
+
+
+
+5.5.9 Empty file or file section 
+
+When an empty file or file section is present, the rules 
+stated in 5.5.4, 5.5.5, 5.5.7 and 5.5.8 will cause two conse- 
+cutive tape marks to be written between the File Header 
+Label and the End of File, Track or Volume Label. 
+
+
+
+5.5.10 Continuation file section in a multi-track or multi- 
+volume file 
+
+The first data block of a continuation file section shall be 
+preceded by a File Header Label as described in 5.5.3 and 
+5,5.4. This includes a copy of the last File Header Label 
+on the previous track or volume, in which the File Section 
+Number is increased by one and the Volume Identifier may 
+be different. 
+
+
+
+5,5.11 Coincidence of end of file and end-oftape marker 
+
+If the end of a file coincides with an intermediate end of 
+track or the end of a volume, then, unless the system avoids 
+the situation by, for example, erasing the current block, 
+three situations are possible : 
+
+
+
+5,5.11.1 The end-of-tape marker is detected whilst the 
+system is writing the last data block of the file. In this 
+case the system will complete writing the data block and 
+close the track or volume as described in 5.5.7 or 5.5.8 res- 
+pectively. The file is continued on the next track or volume 
+
+
+
+IS 12660 
+ISO 4341 
+
+
+
+1989 
+:1978 
+
+
+
+by writing a File Header Label (see 5.5.10), two tape marks 
+end an End of File Label. 
+
+Examples are given in figures 5 and 6. 
+
+
+
+
+
+
+
+
+
+1 
+
+
+)■■ 
+
+
+. FILE A*ETR *! 
+
+
+
+
+HDR ** EOF * HDR * FILE B . . . 
+
+
+
+
+
+FIGURE 5 - Empty file section at intermediate start of track 
+
+
+
+
+
+
+
+
+
+
+
+r- 
+
+
+.FILE A*EOV •* 
+
+
+
+
+
+
+
+
+[hDR ** EOF • HDR * FILE B . 
+
+
+"1 
+
+
+
+
+1 
+
+
+
+FIGURE 6 - Empty file section at start of continuation volume 
+
+
+
+5,5,11.2 The end-of-tape marker is recognized whilst the 
+system is writing the End of File Label or the tape mark 
+which precedes or follows it, and the file Is not the last 
+of a set. In this case the system will complete the writing 
+of the End of File Label and the tape mark following it. 
+The File Header Label of the next file will then be written 
+followed by an empty file section, and the track or volume 
+terminated by an End of Track or End of Volume Label 
+respectively. The File Header Label will then be rewritten 
+at the start of the next track or volume. 
+
+Examples are given in figures 7 and 8. 
+
+
+
+
+
+
+
+
+
+/•• 
+
+
+.FILE A* EOF* HDR ** ETR * 
+
+
+
+
+
+
+
+
+
+
+HDR * FILES.. 
+
+
+n 
+
+
+
+
+
+
+
+
+
+E 
+
+
+
+FILE A * EOF * H1DR ** EOV ** 
+
+
+
+HDR * FILE B 
+
+
+
+=11 
+
+
+
+FIGURE 7 ~ Empty file section at intermediate end4»f track 
+
+
+
+FIGURE 8 - Empty file section at end of volume 
+
+5,5,11.3 The end-of-tape marker is recognized whilst 
+the system is writing the End of File Label or the tape 
+mark which precedes or follows it and the file is the last 
+file of a set. In this case the system will complete the 
+writing of the End of File Label and the tape mark following 
+it and then close the volume with a second tape mark as 
+described In 5.5.6. 
+
+5.5.12 Coincidence of beginning of file and end-of-tape 
+marker 
+
+If the end-of-tape marker is recognized whil^st the system is 
+writing the File Header Label or the tape mark following 
+it, then the File Header Label will be followed by an 
+empty file section and the track or volume terminated by 
+an End of Track or End of Volume Label respectively. The 
+File Header Label will then be rewritten at the start of the 
+next track or volume. The resulting configurations are illus- 
+trated in figures 7 and 8. 
+
+5.6 Recording density 
+
+The blocks recorded on all volumes containing a file set 
+shall be recorded with the same density. 
+
+5.7 By*pass or check-point records 
+
+Only the relevant data blocks shall be written on a cassette 
+used for interchange. Since by-pass information and check- 
+point records are considered to be extraneous to the inter- 
+change, and no standard means of identification is provided, 
+the recording of by-pass and check-point information is not 
+allowed on cassettes for interchange. 
+
+
+
+10 
+
+
+
+f S 12660 : 1689 
+ISO 4341 : 197B 
+
+
+
+6 EXTENDED SYSTEM 
+
+
+
+6.1 Introduction 
+
+The extended system provides the full range of facilities 
+described in ISO 1001 together with certain additional 
+features to control the transition from track to track within 
+the volume. The remainder of this clause specifies the 
+format of the End of Track (ETR1 and ETR2) and Start 
+of Track (STRll Labels and the file structure resuming 
+from.their use. 
+
+The procedures for recording and detecting end of data 
+on a track are defined in the relevant International 
+Standards for media. 
+
+
+
+6.3,2 Second End of Track Label (ETR2) (optional) 
+
+
+
+Character 
+position 
+
+(CP) 
+
+
+Field name 
+
+
+Field 
+length 
+
+
+Content 
+
+
+1 
+
+to 
+3 
+
+
+Label Identifier 
+
+
+3 
+
+
+ETR 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+2 
+
+
+5 
+to 
+80 
+
+
+^ame as the corres- 
+ponding fields in 
+HDR2, as speci- 
+fied in ISO 1001 
+
+
+76 
+
+
+Same as the corres- 
+ponding fields in 
+HDR2, as-speci- 
+fied in ISO 1001 
+
+
+
+6.2 Use of tape marks 
+
+The use of tape marks is the same as in ISO 1001 with 
+the addition described in 6.5,3. 
+
+
+
+6.3 Formats and contents of labels 
+6.3.1 First End of Track Label (ETR1 ) 
+
+
+
+6.3,3 Other optional labels (ETR3 to 9) 
+
+
+
+Character 
+position 
+
+(CP) 
+
+
+Field name 
+
+
+Field 
+length 
+
+
+Content 
+
+
+1 
+
+to 
+3 
+
+
+Label Identifier 
+
+
+3 
+
+
+ETR 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+1 
+
+
+5 
+to 
+54 
+
+
+Same as the corres- 
+ponding fields in 
+HDR1 as speci- 
+fied in ISO 1001 
+
+
+50 
+
+
+Same as the corres- 
+ponding fields in 
+HDRT; as speci- 
+fied in ISO 1001 
+
+
+55 
+to 
+60 
+
+
+Block Count 
+
+
+6 
+
+
+"n" chi^rabters. 
+
+Denotes the num- 
+ber of data blocks 
+since the preceding 
+beginning of file 
+label group. This 
+count excludes label 
+blocks and tape 
+mark blocks 
+
+
+61 
+to 
+80 
+
+
+Same as the corres- 
+ponding fields in 
+HDRl,as speci- 
+fied in ISO 1001 
+
+
+20 
+
+
+Sarne as the corres- 
+ponding fields in 
+HDR1, as speci- 
+fied in IS0 1001 
+
+
+
+Character 
+position 
+
+(CP) 
+
+
+Field name 
+
+
+Field 
+length 
+
+
+Content 
+
+
+1 
+
+to 
+3 
+
+
+Label Identifier 
+
+
+3 
+
+
+ETR 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+3, 4, 5, 6, 7, 8 or 9 
+
+
+5 
+to 
+80 
+
+
+Reserved for 
+System Software 
+Use 
+
+
+76 
+
+
+"a" characters 
+
+
+
+6,3.4 Start of Track Label (STR 1 ) 
+
+
+
+Character 
+position 
+
+(CP) 
+
+
+Field name 
+
+
+Field 
+length 
+
+
+Content 
+
+
+1 
+
+to 
+3 
+
+
+Label Identifier 
+
+
+3 
+
+
+STR 
+
+
+4 
+
+
+Label Number 
+
+
+1 
+
+
+1 
+
+
+5 
+to 
+11 
+
+
+Same as the corres- 
+ponding fields in 
+VOL1, as speci- 
+fied in ISO 1001 
+
+
+7 
+
+
+Same as the corres- 
+ponding fields in 
+VOLI.as speci- 
+fied in ISO 1001 
+
+
+12 
+
+
+Track Number 
+
+
+1 
+
+
+"n" character 
+
+
+13 
+
+to 
+80 
+
+
+Same as the corres- 
+ponding fields in 
+V0L1, as speci- 
+fied in ISO 1001 
+
+
+68 
+
+
+Same as the corres- 
+ponding fields in 
+V0L1, as speci- 
+fied in ISO 1001 
+
+
+
+11 
+
+
+
+IS 12660 : 1989 
+ISO 4341 : 1S78 
+
+
+
+6.4 Processing of label fields 
+
+This sub-clause contains references only to the fields of 
+ETR1 and STR1 and to those fields of other labels which 
+are affected by the existence of track transitions. 
+
+
+
+6.4.1 File Section Number (HDR1, CP 28 to 31, also in 
+ETR1,E0V1,E0F1) 
+
+The number of the first section of a file is 0001. 
+This number is increased by 1 for each successive track or 
+volume of the file. 
+
+
+
+6.5 Structuring the files 
+
+Labels and tape marks are used to establish the file struc- 
+ture according to the following rules and as illustrated in 
+the accompanying figures 9 to 12. In these figures the 
+beginning of the tape is at the left, and the end of the 
+tape is at the right. The figures show ^nly the required 
+labels in each label group. 
+
+6.5.1 Configurations of fifes witfiin the trac/csofa volume 
+
+The various configurations of files that can be formed 
+according to these rules are illustrated in figure 9. Each box 
+represents a track. 
+
+
+
+6.4.2 Track Number (STR 1 , CP 1 2) 
+
+The numbering of the tracks commences at 1. However, 
+because the first STR1 label appears on the second track 
+of the volume, the value of Track Number in that label is 2. 
+This value is incremented by 1 for each additional track 
+on the volume. 
+
+
+
+6.5.2 Configurations of files in a multi-volume case 
+
+The two configurations of files that can be formed 
+according to these rules are illustrated In figure 10. Each 
+box represents a volume. The distinction between tracks 
+is not shown. The configurations within the volume are as 
+in figure 9. 
+
+
+
+Single file, one track 
+
+
+
+
+
+
+
+
+
+
+V0L1 HDRl * FILE A * E0F1 ** 
+
+
+
+
+Single file, two tracks 
+
+
+
+
+
+
+V0L1 HDR1 • FILE A * ETR1 * 
+
+
+
+
+STRl HDRl * FILE A • EOFI 
+
+
+«* 
+
+
+Multi-file, one track 
+
+
+
+
+
+
+
+
+
+
+VOL1 HDRl * FILE A * E0F1 * HDRl * FILE B * EOFI •* 
+
+
+
+
+Multl-flla, two tracks 
+
+
+
+
+V0L1 HDRl * FILE A * E0F1 » HDRl * FILE B * ETRl * 
+
+
+
+
+
+
+
+
+1 STR1 HDRl * FILE B * EOFI * HDRl * FILE C * EOFI *» 
+
+
+1 
+
+
+
+
+
+
+
+FIGURE 9 ~ Single-volume file structures 
+
+
+
+Single file, multi-volume 
+
+
+
+[ VOLl HDRl 
+
+
+*FILEA*EOV1 •* II 
+
+
+
+
+I VOLl HDRl 
+
+
+* FILE A * E0F1 •* 
+
+
+
+Multi-file, multi-volume 
+
+
+
+VOLl HDRl * FILE A • EOFI * HDRl * FILE B * EOVl 
+
+
+
+VOLl HDR1 * FILE B * EOFI • HDRl ' FILE C * EOFI 
+
+
+
+FIGURE 10 - Multi-volume file structures 
+
+
+
+12 
+
+
+
+IS 12660 
+ISO 4341 
+
+
+
+1989 
+:1978 
+
+
+
+6.5.3 End of Track Labels 
+
+If the file extends over the end of a track, the End of Track 
+Label (ETR1) shall follow the last data block on that track 
+and be separated from that data block by a tape mark. 
+
+If other end of track labels (ETR2 to ETR9) are used, 
+they shall immediately follow the ETR1 label. 
+
+The last label of an end of track label group shall always 
+be followed by a tape mark. 
+
+
+
+6.5.4 Intermediate Start of Track 
+
+Each track of the volume except the first shall commence 
+with a Start of Track Label. This Label shall be immedi- 
+ately followed by the file header label group of the next 
+file section, as specified in 6.5.B. This label shall not appear 
+at any other place on the track. 
+
+
+
+6.5.5 Continuation file section in a multi-track or multi- 
+volume file 
+
+The first data block of a continuation file section shall be 
+preceded by a beginning of file label group. This includes 
+an exact copy of the last beginning of file label group on 
+the previous track or volume except that the file section 
+number which is on HDR1 is increased by 1 (see 6.4.1). 
+
+6.5.6 Coincidence of end of file and end of track 
+
+If the end of a file coincides with an end of track, then, 
+unless the system avoids the situation by, for example, 
+erasing the current block, three situations are possible : 
+
+6.5.6.1 The ^nd-of-tape marker is recognized whilst the 
+system is writing the last data block 6f the file. In this 
+case the system will complete writing the data block and 
+close the track as described in 6.5.3. The file is continued 
+on the next track or volume by writing a Start of Track 
+Label or Volume Header Label, a file header label group 
+(see 6.5.5), two tape m^rks and an end of file label group. 
+
+An example of the first case is illustrated in figure 11. 
+
+
+
+/ 
+
+
+
+
+
+
+
+
+
+
+I- 
+
+
+.. FILE A * ETR1 * 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+STR1 HDR1 ** EOF'] 
+
+
+^iDRI * FILE B \. 
+
+
+\ 
+
+
+
+
+
+
+f 
+
+
+
+
+
+not the last file of a set. In this case the system will 
+complete the writing of the end of file label group. The 
+beginning of file label group of the next file will then be 
+written followed by an empty file section, and the track 
+will be terminated by an end oT track l^el group. The 
+beginning of file label group will then be rewritten at the 
+start of the next track, following the STR1 label. 
+
+This is illustrated in figure 12. 
+
+
+
+
+
+
+
+
+
+
+
+r- 
+
+
+.FILE A * E0F1 * HDR1 ** ETRl • 
+
+
+
+
+
+
+
+
+■ 
+
+
+
+
+
+
+STRl HDRtI •FILE B.. 
+
+
+:^ 
+
+
+
+
+
+
+
+
+
+FIGURE 1 1 — Empty file section at intermediate start of^rack 
+
+6.5.6.2 The end-of-tape marker is recognized whilst the 
+system is writing the end of file label group and the file is 
+
+
+
+FIGURE 12 ~ Empty file section at intermediate end of track 
+
+6.5.6.3 The end-of-tape marker is recognized whilst the 
+system is vtfriting the end of file label group and the file 
+is the last file of a set. In this case the system will complete 
+the writing of the end of file label group and the tape mark 
+following it and then close the track with a second tape 
+mark. 
+
+6.5.7 Coincidence of beginning of file and end-of-tape 
+marker 
+
+If the end-of-tape marker is recognized whilst the system is 
+writing the beginning of file label group, then this group 
+will be followed by an empty file section and the track will 
+be terminated by an end of track label group. The 
+beginning of file label group will then be rewritten at the 
+start of the next track follovving the STRl label. 
+
+This is illustrated in figure 12. 
+
+6.6 Use of optional labels 
+
+The use of any optional label at the end-of-track condition 
+may result in such labels being written past the usable 
+recording area. 
+
+6.7 Recording density 
+
+The blocks recorded on all volumes confining a file set 
+shall be recorded with the same density. 
+
+6.8 By-pass or check-point records 
+
+Only the relevant data blocks shall be written on a cassette 
+used for interchange. Since by-pass information and check- 
+point records are considered to be extraneous to the inter- 
+change, and no standard means of identification is provided, 
+the recording of by-pass and check-point information is not 
+allowed on cassettes for interchange. 
+
+
+
+13 
+
+
+
+Bureau of Indian Standards 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote 
+harmonious development of the activities of standardization, marking jand quality certification of 
+goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of ail its publications. No part of these publications may be reproduced in 
+any form without the prior permission in writing of BIS. This does not preclude the free use, in the 
+course of implementing the standard, of necessary details, such as symbols and sizes, type or grade 
+designations. Enquiries relating to copyright be addressed to the Director (Publications), BIS. 
+
+Revision of Indian Standards 
+
+Indian Standards are reviewed periodically and revised, when necessary and amendments, if any, are 
+issued from time to time. Users of Indian Standards should ascertain that they are in possession of 
+the latest amendments or edition. Comments on this Indian Standard may be sent to BIS giving the 
+following reference: 
+
+Doc: No. LTD 24 (1291 ) 
+
+
+
+Amendmeiits Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text Affected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+Headquarters : 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 
+Telephones: 331 01 31, 331 13 75 
+
+Regional Offices : 
+
+Central ; Manal< Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110002 
+
+Eastern : 1/14 C. 1. T. Scheme VII M, V. I. P. Road, Maniktola 
+CALCUTTA 700054 
+
+Northern: SCO 445-446, Sector 35-C, CHANDIGARH 160036 
+
+Southern : C. I. T. Campus, IV Cross Road, MADRAS 600113 
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri (East) 
+BOMBAY 400093 
+
+
+
+Telegrams : Manaksanstha 
+( Common to all Offices ) 
+
+Telephone 
+
+f 331 01 31 
+L33113 75 
+
+37 86 62 
+
+
+
+2 18 43 
+
+41 29 16 
+
+6 32 92 95 
+
+
+
+Branches : AHMADABAD. BANGALORE. BHOPAL BHUBANESHWAB. COIMBATORE. 
+FARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. 
+PATNA. TRIVANDRUM. 
+
+
+
+Printed at Slmco Printing Press, Delhii . India 
+
+
+

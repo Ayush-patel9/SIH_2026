@@ -1,0 +1,88 @@
+{
+  "is_number": "IS IS_11103",
+  "standard_id": "IS IS_11103",
+  "title": "Indian Standard Specification / Test Method (IS IS_11103)",
+  "ia_identifier": "IS_11103",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11103) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11103).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 7018",
+      "standard_id": "IS 7018",
+      "title": "Indian Standard Specification / Test Method (IS 7018)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2102 (PART 2)",
+      "standard_id": "IS 2102 (Part 2):1993",
+      "title": "General tolerances, Part 2: Geometrical tolerances for features without individual tolerance indications",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3073",
+      "standard_id": "IS 3073:1967",
+      "title": "Assessment of Surface Roughness",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8000 (PART 1)",
+      "standard_id": "IS 8000 (Part 1):1985",
+      "title": "Geometrical tolerancing on Technical Drawings, Part 1: Tolerances of form orientation, location and Run-out and appropriate geometrical definitions",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8000 (PART2)",
+      "standard_id": "IS 8000 (PART2)",
+      "title": "Indian Standard Specification / Test Method (IS 8000 (PART2))",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade Grade",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11103"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "nominal diameter range from 0'1 mm",
+      "nominal diameter (/=^3'99mm",
+      "nominal diameter f/ == 1 mm",
+      "nominal diameter 3 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 8373
+}

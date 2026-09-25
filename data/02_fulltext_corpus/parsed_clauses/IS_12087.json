@@ -1,0 +1,83 @@
+{
+  "is_number": "IS IS_12087",
+  "standard_id": "IS IS_12087",
+  "title": "Indian Standard Specification / Test Method (IS IS_12087)",
+  "ia_identifier": "IS_12087",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the requirements, methods of test and sampling for suitcase intended for use as personal kit of the air and submarine crew.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 7328",
+      "standard_id": "IS 7328:2020",
+      "title": "Specification for Polyethylene Material for Moulding and Extrusion ( Third Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Polyethylene (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 2136",
+      "standard_id": "IS 2136:2023",
+      "title": "Woven Flat Lining Fabrics For Apparels - Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1068",
+      "standard_id": "IS 1068:1993",
+      "title": "Eletroplated coatings of nickle plus chromium and copper plus nickel plus chromium",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 48",
+      "standard_id": "IS 48",
+      "title": "Indian Standard Specification / Test Method (IS 48)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2500",
+      "standard_id": "IS 2500",
+      "title": "Indian Standard Specification / Test Method (IS 2500)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Grade Length",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12087"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 15823
+}

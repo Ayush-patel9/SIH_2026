@@ -1,0 +1,145 @@
+{
+  "is_number": "IS IS_10645",
+  "standard_id": "IS IS_10645",
+  "title": "Indian Standard Specification / Test Method (IS IS_10645)",
+  "ia_identifier": "IS_10645",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard defines process capability and covers the planning process capability study and its calculation for both variable (normal and non-normal distribution) and attributes type of data. This standard also describes the actions required to be taken when comparing process capability with specification limits.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 9000",
+      "standard_id": "IS/ISO 9000",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 397 (PART 3)",
+      "standard_id": "IS 397 (Part 3):2003",
+      "title": "Method for Statistical Quality Control During Production, Part 3: Special Control Charts by Variables",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7920 (PART 1)",
+      "standard_id": "IS 7920 (Part 1):2012",
+      "title": "Part 1 : 2012: Statistical Vocabulary and Symbols : Part 1 General Statistical Terms and terms used in Probability",
+      "division_code": "LITD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7920 (PART 2)",
+      "standard_id": "IS 7920 (Part 2):2012",
+      "title": "Statistics – Vocabulary and Symbols, Part 2: Applied Statistics",
+      "division_code": "MSD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 397 (PART 1)",
+      "standard_id": "IS 397 (Part 1):2003",
+      "title": "Method for Statistical Quality Control During Production, Part 1: Control Charts for Variables",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 397 (PART 2)",
+      "standard_id": "IS 397 (Part 2):2003",
+      "title": "Method for Statistical Quality Control During Production, Part 2: Control Charts for Attributes",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 72",
+      "standard_id": "IS 72",
+      "title": "Indian Standard Specification / Test Method (IS 72)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 6200 (PART 3)",
+      "standard_id": "IS 6200 (Part 3):2003",
+      "title": "Statistical Tests of Significance, Part 3: Tests for Normality",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12348",
+      "standard_id": "IS 12348:1988",
+      "title": "Use of probability papers",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9300 (PART 2)",
+      "standard_id": "IS 9300 (Part 2):1989",
+      "title": "Statistical models for industrial applications, Part 2: Continuous models",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 398",
+      "standard_id": "IS 398",
+      "title": "Indian Standard Specification / Test Method (IS 398)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade Interval",
+    "Grade of",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10645"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "Breaking Load (in kN) of Aluminium Wires (Size 300 mm"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 37869
+}

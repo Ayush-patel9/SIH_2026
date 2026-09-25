@@ -1,0 +1,266 @@
+{
+  "is_number": "IS IS_1391__PART_1_",
+  "standard_id": "IS IS_1391__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_1391__PART_1_)",
+  "ia_identifier": "IS_1391__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard (Part 1) specifies safety and performance requirements of single-phase nonducted unitary with single-stage, two-stage, multistage, fixed and variable speed air conditioners and heat pumps for household and similar application of rated capacity up to and including 10 500 W their rated voltage not more than 250 V a.c., 50 Hz for single-phase employing air cooled condensers and test methods for determination of various ratings. This standard is limited to systems utilizing a single refrigeration circuit, having one evaporator and one condenser. 1.2 This standard is not applicable to the following: a) Water-source heat pumps or water-cooled air conditioners; b) Mobile (windowless) units having a condenser exhaust duct; c) Individual assemblies not constituting a complete refrigeration system; d) Equipment using the refrigeration cycle; and absorption e) Portable air-conditioners.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 5151",
+      "standard_id": "IS/ISO 5151",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 5151)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 18154 (PART 1)",
+      "standard_id": "IS 18154 (PART 1)",
+      "title": "Indian Standard Specification / Test Method (IS 18154 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 3615",
+      "standard_id": "IS 3615:2020",
+      "title": "Glossary of Terms Used in Refrigeration and Air Conditioning ( Second Revision )",
+      "division_code": "MED",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 694",
+      "standard_id": "IS 694:2010",
+      "title": "POLYVINYL CHLORIDE INSULATED UNSHEATHED AND SHEATHED CABLES/CORDS WITH RIGID AND FLEXIBLE CONDUCTOR FOR RATED VOLTAGES UP TO AND INCLUDING 450/750 V",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Electrical Wires, Cable and Appliances (Quality Control) Order"
+    },
+    {
+      "is_number": "IS 9968 (PART 1)",
+      "standard_id": "IS 9968 (Part 1):1988",
+      "title": "Elastomer insulated cables, Part 1: For working voltages upto and including 1 100 V",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 302 (PART 1)",
+      "standard_id": "IS 302 (Part 1):2008",
+      "title": "Safety of household and similar electrical appliances, Part 1: General Requirements",
+      "division_code": "ETD",
+      "aspect": "Safety Standard",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": true,
+      "qco_order": "Electronics & IT Goods (Compulsory Registration) Order - "
+    },
+    {
+      "is_number": "IS 10773",
+      "standard_id": "IS 10773:1995",
+      "title": "Wrought Copper Tubes for Refrigeration and Air-Conditioning Purposes",
+      "division_code": "MED",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11329",
+      "standard_id": "IS 11329:2018",
+      "title": "Finned Type Heat Exchanger for Room Air Conditioner (First Revision)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16656",
+      "standard_id": "IS 16656",
+      "title": "Indian Standard Specification / Test Method (IS 16656)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 817",
+      "standard_id": "IS/ISO 817",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 817)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 17570 (PART 1)",
+      "standard_id": "IS 17570 (PART 1)",
+      "title": "Indian Standard Specification / Test Method (IS 17570 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 16890",
+      "standard_id": "IS/ISO 16890",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 16890)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 16753 (PART 1)",
+      "standard_id": "IS 16753 (PART 1)",
+      "title": "Indian Standard Specification / Test Method (IS 16753 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 29463",
+      "standard_id": "IS/ISO 29463",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 29463)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60730",
+      "standard_id": "IS/IEC 60730",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60730)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10617",
+      "standard_id": "IS 10617:2018",
+      "title": "Hermetic Compressors — Specification ( Second Revision )",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 996",
+      "standard_id": "IS 996:2009",
+      "title": "Single-phase a.c. industrial motors for general purpose",
+      "division_code": "PGD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3745",
+      "standard_id": "IS/ISO 3745",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3745)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15575 (PART 1)",
+      "standard_id": "IS 15575 (Part 1):2005",
+      "title": "Electroacoustics - Sound level meters, Part 1: Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 61672",
+      "standard_id": "IS/IEC 61672",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 61672)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 16358",
+      "standard_id": "IS/ISO 16358",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 16358)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9968",
+      "standard_id": "IS 9968",
+      "title": "Indian Standard Specification / Test Method (IS 9968)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade Tests",
+    "Grade tests",
+    "3 K",
+    "1 K",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_1391__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "rated voltage not more than 250 V",
+      "sound level should be minimum 10 dB",
+      "sound pressure level or 20 dB",
+      "leakage current shall not exceed 3.5 mA"
+    ],
+    "dimensional_tolerances": [
+      "tolerance of + 0.1 m"
+    ],
+    "marking_requirements": [
+      "13.1 The unitary air conditioner shall have the",
+      "following information marked on a nameplate in a",
+      "a) Manufacturers name/brand/trademark",
+      "/identification mark;",
+      "13.2 BIS Certification Marking"
+    ]
+  },
+  "total_chars_parsed": 130221
+}

@@ -1,0 +1,71 @@
+{
+  "is_number": "IS IS_1225",
+  "standard_id": "IS IS_1225",
+  "title": "Indian Standard Specification / Test Method (IS IS_1225)",
+  "ia_identifier": "IS_1225",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes requirements of leather picking bands, plain or hairy made from ox or buffalo hide.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/ISO 22843",
+      "standard_id": "IS/ISO 22843",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 22843)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2500 (PART 1)",
+      "standard_id": "IS 2500 (Part 1):2000",
+      "title": "Sampling Inspection Procedures, Part 1: Attribute Sampling Plans Indexed by Acceptable Quality Limit (AQL) for Lot-by-Lot Inspection",
+      "division_code": "CED",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 5914",
+      "standard_id": "IS 5914:1970",
+      "title": "Methods of physical testing of leather",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 582",
+      "standard_id": "IS 582:1970",
+      "title": "Methods of Chemical Testing of Leather",
+      "division_code": "CHD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade of",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_1225"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "shoulder end shall be marked on each picking band."
+    ]
+  },
+  "total_chars_parsed": 13260
+}

@@ -1,0 +1,91 @@
+{
+  "is_number": "IS IS_11860",
+  "standard_id": "IS IS_11860",
+  "title": "Indian Standard Specification / Test Method (IS IS_11860)",
+  "ia_identifier": "IS_11860",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11860) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_11860).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 1387",
+      "standard_id": "IS 1387:1993",
+      "title": "General requirments for the supply of metallurgical materials",
+      "division_code": "MTD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1350",
+      "standard_id": "IS 1350",
+      "title": "Indian Standard Specification / Test Method (IS 1350)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1353",
+      "standard_id": "IS 1353:1993",
+      "title": "Methods of test for coal carbonization - caking index, swelling and Grey-King assay (L.T) coke types",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 11795",
+      "standard_id": "IS 11795:1996",
+      "title": "Guidelines for ash softening studies on solid reductants for direct reduction",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12381",
+      "standard_id": "IS 12381:1994",
+      "title": "Coal (Char) Reactivity for Direct Reduction Process - Method of Determination",
+      "division_code": "PCD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1350 (PART 2)",
+      "standard_id": "IS 1350 (Part 2):1975",
+      "title": "Methods of Test for Coal and Coke, Part II: Determination of Calorific Value",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11860"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 10898
+}

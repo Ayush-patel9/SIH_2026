@@ -1,0 +1,51 @@
+{
+  "is_number": "IS IS_1215",
+  "standard_id": "IS IS_1215",
+  "title": "Indian Standard Specification / Test Method (IS IS_1215)",
+  "ia_identifier": "IS_1215",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This standard prescribes methods of test for determination of matter insoluble in toluene for road tar and pitch.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 537",
+      "standard_id": "IS 537:2011",
+      "title": "Toluene -Specification",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1217",
+      "standard_id": "IS 1217",
+      "title": "Indian Standard Specification / Test Method (IS 1217)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_1215"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 14626
+}

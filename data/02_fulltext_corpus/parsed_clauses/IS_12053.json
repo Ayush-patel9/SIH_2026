@@ -1,0 +1,52 @@
+{
+  "is_number": "IS IS_12053",
+  "standard_id": "IS IS_12053",
+  "title": "Indian Standard Specification / Test Method (IS IS_12053)",
+  "ia_identifier": "IS_12053",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard prescribes the requirements and the characteristics of putty based on nitrocellulose or urea formaldehyde resin for use in repairing plywood and other wood based panels.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 848",
+      "standard_id": "IS 848:2006",
+      "title": "Specification for Synthetic Resin Adhesives for Plywood (Phenolic And Aminoplastic) -",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1508",
+      "standard_id": "IS 1508:1972",
+      "title": "Extenders for Use in Synthetic Resin Adhesives (Urea-formaldehyde) for Plywood- Code of Practice",
+      "division_code": "GEN",
+      "aspect": "Code of Practice",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade deration",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12053"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 13681
+}

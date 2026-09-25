@@ -1,0 +1,89 @@
+{
+  "is_number": "IS IS_12252",
+  "standard_id": "IS IS_12252",
+  "title": "Indian Standard Specification / Test Method (IS IS_12252)",
+  "ia_identifier": "IS_12252",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_12252) covers Indian Standard Specification / Test Method (IS IS_12252). This Indian Standard (First Revision) was adopted by the the Plastics Sectional Committee had been approved by the Petroleum, Coal and Related Products Division Council. Plastics are being used on a large scale for packaging of foodstuffs and pharmaceuticals. Where direct contact occurs between the packed commodity and the plastics, the high-molecular mass polymer itself does not pose a toxic hazard being inert and essentially insoluble in food. There is, however, a likelihood that some transfer of polymer additives, adventitious impurities, such as monomers, catalyst remnants and residual polymerization solvents and of low molecular mass polymer fractions will occur from the plastics into the packaged material with consequent toxic hazard to the consumers. The occurrence of acute toxicity due to plastics materials in contact with food is most unlikely, since only trace quantities of potentially toxic materials are likely to migrate. Polyalkylene terephthalates (saturated polyesters) a",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 12229",
+      "standard_id": "IS 12229:1987",
+      "title": "Positive list of constituents of polyalkylene terephthalates (PET, PBT) for their safe use in contact with foodstuffs, pharmaceuticals and drinking water",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10146",
+      "standard_id": "IS 10146:1982",
+      "title": "Polyethylene for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
+      "division_code": "FAD",
+      "aspect": "Product Specification",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "is_mandatory": true,
+      "qco_order": "Polyethylene (Quality Control) Order, 2024"
+    },
+    {
+      "is_number": "IS 9833",
+      "standard_id": "IS 9833:2018",
+      "title": "List of Colourants for Use in Plastics in Contact with Foodstuffs and Pharmaceuticals ( Second Revision )",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9845",
+      "standard_id": "IS 9845:1998",
+      "title": "Determination of Overall Migration of Constituents of Plastics Materials and Articles Intended to Come in Contact with Foodstuffs - Method of Analysis",
+      "division_code": "LITD",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 4905",
+      "standard_id": "IS 4905:1968",
+      "title": "Methods for random sampling",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "PET (Polyehtylene Terephthalate",
+    "PBT (Polybutylene Terephthalate",
+    "Grade rmentation",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12252"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [
+      "Purity > 98.1 percent"
+    ],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "The material shall be packed in gunny/paper bags",
+      "during storage. It shall be securely sealed to prevent",
+      "5.2.1 Each package shall be clearly marked with the",
+      "a) Manufacturer’s name and/or trade-mark, if",
+      "e) Lot and batch number."
+    ]
+  },
+  "total_chars_parsed": 24800
+}

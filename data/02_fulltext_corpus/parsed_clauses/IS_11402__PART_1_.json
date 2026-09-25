@@ -1,0 +1,63 @@
+{
+  "is_number": "IS IS_11402__PART_1_",
+  "standard_id": "IS IS_11402__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_11402__PART_1_)",
+  "ia_identifier": "IS_11402__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11402__PART_1_) covers Indian Standard Specification / Test Method (IS IS_11402__PART_1_). This Indian Standard (Parti) which is identical with ISO 3562-1976 'Information processing — Interchangeable magnetic single disk cartridge (top loaded) — Physical and magnetic characteristics', issued by the International Organization for Standardization (ISO), was adopted by the Indian Standards Institution on the recommendation of the Computers, Business Machines and Calculators Sectional Committee and approved by the Electronics and Telecommunication Division Council. In the adopted standard certain terminology and conventions are not identical with those used in Indian Standards; attention is specially drawn to the following: a) Comma (,) has been used as a decimal marker while in Indian Standards the current practice is to use a point (.) as the decimal marker. b) Wherever the words Mnternational Standard' appear, referring to this standard, they should be read as 'Indian Standard*. c) For the purpose of Indian Standard, only metric dimensions are applicable. Adopted 15 January 1",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 11402",
+      "standard_id": "IS 11402",
+      "title": "Indian Standard Specification / Test Method (IS 11402)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3562",
+      "standard_id": "IS/ISO 3562",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3562)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 3862",
+      "standard_id": "IS/ISO 3862",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 3862)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_11402__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [
+      "adhesion of the coating to the substrate should be maintained following bending around the 25,4 ± 3,2 mm"
+    ],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 44365
+}

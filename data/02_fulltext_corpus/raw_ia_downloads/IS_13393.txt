@@ -1,0 +1,521 @@
+**************** 
+
+
+
+
+Disclosure to Promote the Right To Information 
+
+Whereas the Parliament of India has set out to provide a practical regime of right to 
+information for citizens to secure access to information under the control of public authorities, 
+in order to promote transparency and accountability in the working of every public authority, 
+and whereas the attached publication of the Bureau of Indian Standards is of particular interest 
+to the public, particularly disadvantaged communities and those engaged in the pursuit of 
+education and knowledge, the attached public safety standard is made available to promote the 
+timely dissemination of this information in an accurate manner to the public. 
+
+
+
+
+Mazdoor Kisan Shakti Sangathan 
+"The Right to Information, The Right to Live'' 
+
+
+
+IS 13393 (1992) : Standard Representation of Latitude, 
+Longitude and Altitude for Geographic Point Location [LITD 
+14: Software and System Engineering] 
+
+
+
+
+Jawaharlal Nehru 
+'Step Out From the Old to the New" 
+
+
+
+aj^&vi iJii^s:y%K^ isb^^ni^seg 
+
+
+
+:<>5&i| mT'5K^5?::5:^>^i»l 
+
+
+
+K^^^iXSVCd^ 
+
+
+
+Satyanarayan Gangaram Pitroda 
+Invent a New India Using Knowledge 
+
+
+
+Bhartrhari — Nitisatakam 
+''Knowledge is such a treasure which cannot be stolen" 
+
+
+
+
+^'^^^r 
+
+
+
+k 
+
+
+
+
+BLANK PAGE 
+
+
+
+^*-^^^ 
+
+
+
+
+
+PROTECTED BY COPYRIGHT 
+
+
+
+IS 13393:1992 
+ISO 6709 : 1983 
+
+( Reaffirmed 2004 ) 
+
+//7c//a/7 Standard 
+
+STANDARD REPRESENTATION OF LATITUDE, 
+LONGITUDE AND ALTITUDE FOR GEOGRAPHIC 
+
+POINT LOCATION 
+
+
+
+UDC 911 (460-1 7-2 ) 
+
+
+
+OBIS 1992 
+
+BUREAU OF INDIAN STANDARDS 
+
+MANAK BHAVAN, 9 BAHADUR SHAH ZAFAR MARG 
+
+NEW DELHI 110002 , 
+
+May 1992 Price Group 3 
+
+
+
+IS 13393:1992 
+ISO 6709: 1983 
+
+
+
+Indian Standard 
+
+
+
+STANDARD REPRESENTATION OF LATITUDE, 
+LONGITUDE AND ALTITUDE FOR GEOGRAPHIC 
+
+POINT LOCATION 
+
+NATIONAL FOREWORD 
+
+This Indian Standard which is identical with ISO 6709:1983 'Standard representation of 
+latitude, longitude and altitude for geographic point locations' issued by the Internationa! 
+Organization for Standardization ( ISO ) was adopted by the Bureau of Indian Standards on 
+the recommendation of Information Systems and Software Sectional Committee ( LTD 33 ) 
+and approval of the Electronics and Telecommunication Division Council. 
+
+In the adopted standard certain terminology and conventions are however not identical to 
+those used in Indian Standards, Attention is particularly drawn to the following: 
+
+Wherever the words 'International Standard' appear referring to this standard, they 
+should be read as 'Indian Standard'. 
+
+
+
+As in the Original Standard, this Page is Intentionally Left Blank 
+
+
+
+18 13393:1992 
+150 6709:1983 
+
+
+
+Introduction 
+
+Efficient interchange of geographic point location data requires 
+formats which are universally interpretable and which allow 
+unique identification of points on, above or below the earth's 
+surface. Users in various disciplines may have different re- 
+quirements. This is exemplified by the use of degrees and 
+decimal degrees in addition to the traditional degrees, minutes 
+and seconds for recording latitude and longitude. Users may 
+also require different degrees of precision and may use latitude 
+and longitude without altitude. 
+
+This International Standard provides a variable-length format 
+which has the flexibility to cover these various requirements. 
+
+Use of this International Standard will : 
+
+a) reduce the cost of interchange of data; 
+
+b) reduce the delay in converting non-standard coding 
+structures in preparation for interchange by providing ad- 
+vance knowledge of the standard interchange format. 
+
+
+
+1 Scope and field of application 
+
+This Internationa) Standard specifies a variable-length format 
+for the representation of latitude, longitude and altitude for use 
+in data interchange. The representation of altitude is optional 
+and its presence or absence is implicit in the format. 
+
+This International Standard allows the use of normal sex- 
+agesimal notations involving degrees, minutes and seconds as 
+well as various combinations of sexagesimal and decimal nota- 
+tions — degrees and decimal degrees; degrees, minutes and 
+decimal minutes; degrees, minutes, seconds and decimal 
+seconds. It makes use df the r.jmeric characters to 9, the 
+graphic characters plus ( -i- ), minus ( - }, full stop (.) and com- 
+ma (,). 
+
+
+
+This International Standard does not specify the use of fixed- 
+length field formats which, although they may be consistent 
+with the format in this International Standard, require prior 
+agreement between parties in the data interchange. 
+
+This International Standard does not require special internal 
+procedures, file organization techniques, storage medium, 
+languages, etc., to be used in its implementation. 
+
+
+
+2 Requirements for the representation of 
+latitude, longitude and altitude 
+
+2.1 Latitude 
+
+2.1.1 Latitudes north of the equator shall be designated by 
+use of the plus sign ( + ), latitudes south of the equator shall be 
+designated by use of the minus sign { - ). The equator shall be 
+designated by use of the plus sign ( -t- ). 
+
+2.1.2 The first two digits of the latitude string shall represent 
+degrees. Subsequent digits shall represent minutes, seconds or 
+decimal fractions according to the following convention in 
+which the decimal mark (full stop or comma) indicates the tran- 
+sition from the sexagesimal system to the decimal system : 
+
+Degrees and decimal degrees : 
+
+DD.DD 
+
+Degrees, minutes and decimal minutes : 
+
+DDMM.MMM 
+
+f 
+
+Degrees, minutes, seconds and decimal seconds : 
+DDMMSS.SS 
+
+
+
+IS 13393: 
+ISO 6709 
+
+
+
+1992 
+1983 
+
+
+
+2.1.3 Leading zeros shall be inserted for degree values less 
+than 10, and zeros shall be embedded in proper positions when 
+minutes or seconds are less than 10. 
+
+
+
+2.2 Longitude 
+
+2.2.1 Longitudes east of Greenwich shall be designated by 
+use of the plus sign { + }, longitudes west of Greenwich shall be 
+designated by use of the minus sign { - K The Prime Meridian 
+shall be designated by use of the plus sign ( + ). The 180th meri- 
+dian shall be designated by use of the minus sign ( - ). 
+
+
+
+2.2,2 The first three digits of the longitude string shall repre- 
+sent degrees. Subsequent digits shall represent minutes, 
+seconds or decimal fractions according to the following con- 
+vention in which the decimal mark (full stop or comma) in- 
+dicates the transition from the sexagesimal system to the 
+decimal system : 
+
+Degrees and decimal degrees : 
+
+DDD.DD 
+Degrees, minutes and decimal minutes : 
+
+DDDMM.MM 
+Degrees, minutes, seconds and decimal seconds : 
+
+DDDMMSS.SS 
+
+
+
+2.3.2 Altitudes above the geodetic reference datum shall 
+be designated by use of the plus sign ( -h ), altitudes below the 
+geodetic reference datum shall be designated by use of the 
+minus sign ( - ). Altitudes at the geodetic datum level shall be 
+designated by use of the plus sign {-!-). 
+
+2.3.3 The altitude shall be represented in metres, using 
+decimal fractions if required. 
+
+NOTE — Alternatively, feet may be used, but only where specified in 
+documentation associated with the interchange. 
+
+2.4 Format 
+
+2.4.1 Elements shall be combined in a point location string in 
+the sequence : 
+
+a) latitude; 
+
+b) longitude; 
+
+c) altitude, if represented. 
+
+2.4.2 The designator " -h " or " - " pertaining to any number 
+shall be placed in the character position preceding that number, 
+
+2.4.3 The number of digits for latitude, longitude and altitude 
+shall indicate the precision of available data. 
+
+2.4.4 Latitude and longitude for a specific point should be ex- 
+pressed in the same format style and to the same precision. 
+
+
+
+2.2.3 Leading zeros shall be inserted for degree values less 
+than 100, and zeros shall be embedded in proper positions 
+when minutes or seconds are less than 10. 
+
+
+
+2.3 Altitude 
+
+2.3.1 The representation of altitude is optional, 
+represented it shall comply with 2.3.2 and 2.3.3. 
+
+
+
+If it is 
+
+
+
+2.4.5 There shall be no separator between the elements for 
+latitude, longitude and altitude. 
+
+^OTE — The use of designators " + " and " - " preceding the numeric 
+part of each element permits the recognition of the start of each ele- 
+ment and the termination of the previous one. 
+
+2.4.6 The point location string shall be terminated. The ter- 
+minator character shall be a solidus {/), unless otherwise 
+specified in the documentation associated with interchange. 
+
+
+
+18 13393:1992 
+180 6709:1983 
+
+
+
+3 Examples 
+
+Examples of point location strings complying with this International Standard are given below; 
+a) to f) contain only latitude and longitude, g) to n) also contain altitude. 
+
+
+
+a) degrees 
+
+b) degrees and decimal degrees 
+
+c) degrees and minutes 
+
+d) degrees, minutes and decimal minutes 
+
+e) degrees, minutes and seconds 
+
+f) degrees, minutes, seconds and decimal seconds 
+
+g) degrees 
+
+h) degrees and decimal degrees 
+
+j) degrees and minutes 
+
+k) degrees, minutes and decimal minutes 
+
+m) degrees, minutes and seconds 
+
+n) degrees, minutes, seconds and decimal seconds 
+
+
+
++ 40-075/ 
+
++ 40.20361-075.00417/ 
+
++ 4012-07500/ 
+
++ 4012.22-07500.25/ 
+
++ 401213-0750015/ 
+
++ 401213.1-0750015.1/ 
+
++ 40-075 + 350/ 
+
++ 40.20361 -075.00417 + 350.517/ 
+
++ 4012-07500-169.2/ 
+
++ 4012.22-07500.25-169.2/ 
+
++ 401213-0750015 + 2.79/ 
+
++ 401213.1-0750015.1 +2.79/ 
+
+
+
+Reprography Uait, BIS, New D^ihi, India 
+
+
+
+Bureau of Indian Standard 
+
+BIS is a statutory institution established under the Bureau of Indian Standards Act ^ 1986 to 
+promote harmonious development of the activities of standardization, marking and quality 
+certification of goods and attending to connected matters in the country. 
+
+Copyright 
+
+BIS has the copyright of all its publications. No part of these publications may be reproduced 
+in any form without the prior permission in writting of BIS. This does not preclude the free use, 
+in the course of implementing the standard, of necessary details, such as symbols and sizes, type 
+or grade designation. Enquiries relating to copyright be addressed to the Director 
+( Publications ), BIS. 
+
+Revision of Indian Standards 
+
+Indian Standards are reviewed periodically and revised, when necessary and amendments, if 
+any, are issued from time to time. Users of Indian Standards should ascertain that they are in 
+possession of the latest amendments or edition. Comments on this Indian Standard may be 
+sent to BIS giving the following reference: 
+
+Doc : No. LTD 33 ( 1541 ) 
+
+
+
+Amendments Issued Since Publication 
+
+
+
+Amend No. 
+
+
+
+Date of Issue 
+
+
+
+Text AflFected 
+
+
+
+BUREAU OF INDIAN STANDARDS 
+
+
+
+Headquarters: 
+
+Manak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002 
+Telephones : 331 01 31, 331 13 75 
+
+
+
+Regional OflSees : 
+
+Central : Manak Bhavan, 9 Bahadur Shah Zafar Marg 
+NEW DELHI 110002 
+
+Eastern : 1/14 C. I. T. Scheme VII M, V. I. P. Road, Maniktola 
+CALCUTTA 700054 
+
+Northern : SCO 445-446, Sector 35-C, CHANDIGARH 160036 
+Southern : C. I. T, Campus, IV Cross Road, MADRAS 600113 
+
+
+
+Telegrams : Manaksanstha 
+( Common to all OflSces ) 
+
+Telephone 
+
+C331 01 31 
+^331 13 75 
+
+C37 84 99, 37 85 61, 
+^37 85 26, 37 85 62 
+
+53 38 43, 53 16 40, 
+
+53 23 84 
+
+
+
+Western : Manakalaya, E9 MIDC, Marol, Andheri ( East ) 
+BOMBAY 400093 
+
+
+
+C41 
+
+^41 
+
+
+
+24 42, 41 25 19, 
+23 15, 41 29 16, 
+
+C632 92 95, 63 27 80, 
+i632 78 92 
+
+Branches : AHMADABAD, BANGALORE, BHOPAL, BHUBANESHWAR, COIMBATORE 
+FARIDABAD, GHAZIABAD, GUWAHATI, HYDERABAD, JAIPUR, KANPUR, 
+LUCKNOW, PATNA, THIRUVANANTHAPURAM. 
+
+
+
+Printed at Printwell Printers. Aligarh, India 
+
+
+

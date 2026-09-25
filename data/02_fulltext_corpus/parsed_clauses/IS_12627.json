@@ -1,0 +1,51 @@
+{
+  "is_number": "IS IS_12627",
+  "standard_id": "IS IS_12627",
+  "title": "Indian Standard Specification / Test Method (IS IS_12627)",
+  "ia_identifier": "IS_12627",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard specifies the material, dimensions and other requirements for loop handles for two-men cross cut saws in accordance with 'Specification for two-men cross cut saws*.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 12128",
+      "standard_id": "IS 12128:1987",
+      "title": "Reversible handles for cross cut saws",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2102",
+      "standard_id": "IS 2102",
+      "title": "Indian Standard Specification / Test Method (IS 2102)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12627"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "8.1 Each handle shall be legibly and indelibly",
+      "marked with the manufacturer's name or trademark, if any, and the batch or code number."
+    ]
+  },
+  "total_chars_parsed": 8602
+}

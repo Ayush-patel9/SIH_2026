@@ -1,0 +1,99 @@
+{
+  "is_number": "IS IS_10825__PART_1_",
+  "standard_id": "IS IS_10825__PART_1_",
+  "title": "Indian Standard Specification / Test Method (IS IS_10825__PART_1_)",
+  "ia_identifier": "IS_10825__PART_1_",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_10825__PART_1_) prescribes technical specifications, requirements, tolerances, and testing procedures for Indian Standard Specification / Test Method (IS IS_10825__PART_1_).",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS 10825",
+      "standard_id": "IS 10825",
+      "title": "Indian Standard Specification / Test Method (IS 10825)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2612",
+      "standard_id": "IS 2612",
+      "title": "Indian Standard Specification / Test Method (IS 2612)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 10673",
+      "standard_id": "IS 10673:1983",
+      "title": "Sampling Plans and Procedures for Inspection by Attributes for Electronic Items",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "SAMPLING_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000",
+      "standard_id": "IS 9000",
+      "title": "Indian Standard Specification / Test Method (IS 9000)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 9)",
+      "standard_id": "IS 9000 (Part 9):1984",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 9: Acceleration (steady state)",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 9000 (PART 20)",
+      "standard_id": "IS 9000 (Part 20):1979",
+      "title": "Basic environmental testing procedures for electronic and electrical items, Part 20: Resistance to cleaning solvents and permanence of markings",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade tests",
+    "10 K",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_10825__PART_1_"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "insulation resistance 9.3.4 v",
+      "Insulation resistance 9.3.4 v"
+    ],
+    "dimensional_tolerances": [],
+    "marking_requirements": [
+      "6.1 .1 Type tests — The procedure for type approval shall be in accordance with IS : 2612-1965",
+      "of type tests and requirements shall be in accordance with Table 5.",
+      "6.1 .1 .1 Number of samples — The manufacturer shall submit 24 specimens in any one temperature",
+      "specimens shall be of the highest capacitance value and closest tolerance in each temperature"
+    ]
+  },
+  "total_chars_parsed": 14771
+}

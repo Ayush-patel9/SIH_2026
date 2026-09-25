@@ -1,0 +1,122 @@
+{
+  "is_number": "IS IS_11409",
+  "standard_id": "IS IS_11409",
+  "title": "Indian Standard Specification / Test Method (IS IS_11409)",
+  "ia_identifier": "IS_11409",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "This Indian Standard (IS IS_11409) covers Indian Standard Specification / Test Method (IS IS_11409). This Indian Standard (First Revision) which is identical with ISO/IEC 1863 : 1990 'Information processing — 9-track, 12,7 mm (0,5 in) wide magnetic tape for information interchange using NRZ1 at 32 ftpmm (800 ftpi) — 32 cpmm (800 cpi)' issued by the International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC) jointly was adopted by the and approval of the Electronics and Information Technology Division Council. This standard was originally published in 1 986 and was identical with ISO/IEC 1 863 :1 976 and has now been revised to align it with the latest ISO/IEC Publication. The text of the IEC Standard has been approved as suitable for publication as an Indian Standard without deviations. Certain conventions are, however, not identical to those used in the Indian Standards. Attention is particularly drawn to the following: a) Wherever the words 'International Standard' appear referring to this standard, they should be read as 'Indian Standard",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/IEC 1863",
+      "standard_id": "IS/IEC 1863",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 1863)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1001",
+      "standard_id": "IS/ISO 1001",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1001)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 2022",
+      "standard_id": "IS/ISO 2022",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 2022)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 4873",
+      "standard_id": "IS/ISO 4873",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 4873)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 1864",
+      "standard_id": "IS/ISO 1864",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 1864)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 8064",
+      "standard_id": "IS/ISO 8064",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 8064)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/ISO 646",
+      "standard_id": "IS/ISO 646",
+      "title": "Indian Standard Specification / Test Method (IS/ISO 646)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 31",
+      "standard_id": "IS 31",
+      "title": "Indian Standard Specification / Test Method (IS 31)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "magnetic tape",
+    "reference tape",
+    "Master Standard Reference Tape",
+    "Typical Field",
+    "Reference Field",
+    "Standard Reference Amplitude",
+    "reference edge",
+    "in contact",
+    "track",
+    "row",
+    "physical recording density",
+    "data density"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [],
+    "dimensional_tolerances": [
+      "tolerance shall be ± 0,06 mm"
+    ],
+    "marking_requirements": [
+      "Each container, package or piece shall be marked indelibly with the manufacturer's name, brand/trademark, grade, batch number, and month/year of manufacture.",
+      "The product may also be marked with the Standard Mark (BIS Certification Mark) governed by the Bureau of Indian Standards Act."
+    ]
+  },
+  "total_chars_parsed": 27245
+}

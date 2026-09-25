@@ -1,0 +1,218 @@
+{
+  "is_number": "IS IS_12615",
+  "standard_id": "IS IS_12615",
+  "title": "Indian Standard Specification / Test Method (IS IS_12615)",
+  "ia_identifier": "IS_12615",
+  "division_code": "GEN",
+  "aspect": "Product Specification",
+  "regulatory_compliance": {
+    "is_mandatory": false,
+    "qco_order": null
+  },
+  "clause_1_scope": "1.1 This standard covers the efficiency classes and performance specifications of single-speed line operated a.c. motors that are rated according to IS 15999 (Part 1)/IEC 60034-1, rated for operation on a sinusoidal voltage supply and : a) Have a rated power from 0.12 kW to 1 000 kW; b) Have 2, 4, 6 or 8 poles; c) Have a rated voltage U ир to 1 000 V with a rated frequency of 50 Hz; d) Frame size from 56 up to and including 315 M having Frame to output co-relation as specified in Table 3 of IS 1231; e) Frame size 315 L with dimensions as per IS 1231 and having output rating as declared by motor manufacturer; f) Frame size 355 and above, with dimensions and output ratings as declared by motor manufacturer but conforming to IS 8223; g) Are capable of continuous operation at their rated power with a winding temperature rise within the specified insulation temperature class; h) Are marked with any ambient temperature within the range of — 20°C to + 60°C; ]) Are marked with an altitude up to 4 000 m above sea level; k) This standard covers motors with or without service factor; m) Most motors covered by this standard are primarily rated for duty type S1 (continuous duty). Motors rated for duty cycles S2 and above with an equivalent S1 duty are also covered. These motors must also be marked with the equivalent S1 duty output and its corresponding IE class. Declaration of S1 duty output value may be as per mutual agreement between motor manufacturer and customer. (see 12) n — Motors with output power rating higher than as specified in Table 3 of IS 1231 for a given frame, must meet the efficiency class corresponding to that power rating. NOTES 1 The rated efficiency and efficiency classes are based on 25°C ambient temperature according to IS 15999 (Part 2/ Sec 1) : 2011 and winding temperature rise of motor at rated power output.",
+  "clause_2_normative_references": [
+    {
+      "is_number": "IS/IEC 60034",
+      "standard_id": "IS/IEC 60034",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60034)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15999 (PART 2/SEC 1)",
+      "standard_id": "IS 15999 (PART 2/SEC 1)",
+      "title": "Indian Standard Specification / Test Method (IS 15999 (PART 2/SEC 1))",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15999 (PART 1)",
+      "standard_id": "IS 15999 (PART 1)",
+      "title": "Indian Standard Specification / Test Method (IS 15999 (PART 1))",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1231",
+      "standard_id": "IS 1231:2019",
+      "title": "Dimensions and Output Series of Foot Mounted Induction Motors — Frame Numbers 56 to 315 ( Fourth Revision )",
+      "division_code": "LITD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 8223",
+      "standard_id": "IS 8223:1999",
+      "title": "Dimensions and Output Series for Rotating Electrical Machines",
+      "division_code": "ETD",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15999",
+      "standard_id": "IS 15999",
+      "title": "Indian Standard Specification / Test Method (IS 15999)",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 1885 (PART 35)",
+      "standard_id": "IS 1885 (Part 35):1993",
+      "title": "Electrotechnical Vocabulary, Part 35: Rotating Machines",
+      "division_code": "ETD",
+      "aspect": "Terminology",
+      "relation_type": "TERMINOLOGY",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60034 (PART 5)",
+      "standard_id": "IS/IEC 60034 (PART 5)",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60034 (PART 5))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 123",
+      "standard_id": "IS 123",
+      "title": "Indian Standard Specification / Test Method (IS 123)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS/IEC 60034 (PART 5)",
+      "standard_id": "IS/IEC 60034 (PART 5)",
+      "title": "Indian Standard Specification / Test Method (IS/IEC 60034 (PART 5))",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2223",
+      "standard_id": "IS 2223:1983",
+      "title": "Dimensions of flange mounted ac induction motors",
+      "division_code": "TED",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 50",
+      "standard_id": "IS 50:1980",
+      "title": "Lead and Scarlet Chromes",
+      "division_code": "LITD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 160",
+      "standard_id": "IS 160",
+      "title": "Indian Standard Specification / Test Method (IS 160)",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 7816",
+      "standard_id": "IS 7816:1975",
+      "title": "Guide for testing insulation resistance of rotating machines",
+      "division_code": "GEN",
+      "aspect": "Product Specification",
+      "relation_type": "INSTALLATION_CODE",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 15999 (PART 2/SEC1)",
+      "standard_id": "IS 15999 (PART 2/SEC1)",
+      "title": "Indian Standard Specification / Test Method (IS 15999 (PART 2/SEC1))",
+      "division_code": "GEN",
+      "aspect": "Methods of tests",
+      "relation_type": "TEST_METHOD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 2254",
+      "standard_id": "IS 2254:1985",
+      "title": "Dimensions of vertical shaft motors for pumps",
+      "division_code": "GEN",
+      "aspect": "Dimensions",
+      "relation_type": "DIMENSIONAL_STANDARD",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12075",
+      "standard_id": "IS 12075:2008",
+      "title": "Mechanical Vibration of Rotating Electrical Machines with Shaft Heights 56 mm and Higher - Measurement, Evaluation and Limits of Vibration Severity",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    },
+    {
+      "is_number": "IS 12065",
+      "standard_id": "IS 12065:1987",
+      "title": "Permissible limits of noise level for rotating electrical machines",
+      "division_code": "ETD",
+      "aspect": "Product Specification",
+      "relation_type": "PRODUCT_SPECIFICATION",
+      "is_mandatory": false,
+      "qco_order": null
+    }
+  ],
+  "clause_3_terminology": [
+    "Grade ification",
+    "Grade Tests",
+    "80 K",
+    "Indian Standard Specification",
+    "Test Method",
+    "IS IS_12615"
+  ],
+  "clause_4_requirements": {
+    "mechanical_properties": [],
+    "chemical_properties": [],
+    "electrical_and_safety_parameters": [
+      "rated voltage U ир to 1 000 V",
+      "rated voltage, and rated frequency of 50 Hz"
+    ],
+    "dimensional_tolerances": [
+      "tolerance shall be disregarded. M"
+    ],
+    "marking_requirements": [
+      "The motors may also be marked with the Standard Mark."
+    ]
+  },
+  "total_chars_parsed": 59762
+}
