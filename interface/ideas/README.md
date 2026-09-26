@@ -1,25 +1,79 @@
-# 🧭 ManakAI Feature Blueprint & Implementation Index
+# Feature Implementation Plans — ManakAI BIS Standards Intelligence Platform
 
-## 🔒 Architectural Isolation & Key-and-Lock Principle
-To ensure **zero merge conflicts** while your friend works on the data acquisition & pipeline in `pipeline/`, all application features are decoupled into pure interface contracts:
-- **Pipeline** produces the **Key** (`StandardsResponse`, `QueryRequest`, `FeedbackRequest`, `AlertPayload`).
-- **Application** provides the **Lock** (12 modular, independent feature engines).
+## How to Read These Files
+
+Each feature file (`01_*.md` through `12_*.md`) is a complete implementation blueprint. Every one of them:
+
+1. **Explains WHY the feature exists** (legal context, user need)
+2. **Lists every component to build** with exact function signatures and JSX
+3. **Shows the exact JSON fields consumed** from `interface/contract_schema.json`
+4. **Includes fallback logic** for when the pipeline hasn't returned that field yet
+5. **Gives the Key-and-Lock wiring** — the exact one-line swap to connect to a live pipeline
+6. **States what NOT to build** to prevent scope creep
 
 ---
 
-## 📑 Feature Planning Documents (In-Depth Specifications)
+## Feature List
 
-| # | Feature Name | Planning Document | Core Capability |
-|---|---|---|---|
-| **01** | **Explainability vs. Black-Box** | [`01_explainability_vs_black_box.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/01_explainability_vs_black_box.md) | 4-Stage Reasoning Timeline, Confidence Bars, Knowledge Graph Subgraph Explorer |
-| **02** | **Audit Trail & Legal Defensibility** | [`02_audit_trail_and_legal_defensibility.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/02_audit_trail_and_legal_defensibility.md) | Cryptographic SHA-256 Hash Verification, Printable RTI/CVC Defense Dossier |
-| **03** | **Human-in-the-Loop Feedback** | [`03_human_in_the_loop_feedback.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/03_human_in_the_loop_feedback.md) | Flag Recommendation Modal, Moderation Review Queue, Lifecycle Trust Scoring |
-| **04** | **Proactive Staleness Alerts** | [`04_proactive_staleness_alerts.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/04_proactive_staleness_alerts.md) | Real-time Supersession & Amendment Push Notification Center, Active Tender Impact Matrix |
-| **05** | **Bhashini Multilingual NLP** | [`05_bhashini_multilingual.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/05_bhashini_multilingual.md) | MeitY Bhashini API Scheme Client, Technical Synonym Lexicon, Multi-Language UI |
-| **06** | **Confidence & Coverage Dashboard** | [`06_confidence_and_coverage_dashboard.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/06_confidence_and_coverage_dashboard.md) | Executive HOD / Joint Secretary MIS Analytics, Division Donut Charts, Risk Metrics |
-| **07** | **Dry-Run / Sandbox Mode** | [`07_dry_run_sandbox.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/07_dry_run_sandbox.md) | Live Pre-Submission Draft Specification Checker, Outdated Standard Warning Strip |
-| **08** | **Role-Based Views** | [`08_role_based_views.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/08_role_based_views.md) | 1-Click Persona Lenses: Procurement Officer, Government Auditor, Bidding Vendor |
-| **09** | **Standards as MCP Server** | [`09_standards_as_mcp_server.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/09_standards_as_mcp_server.md) | Standalone FastMCP Server exposing tools (`recommend_standards`, `check_qco`) for AI Agents |
-| **10** | **Automated Tender Parser & PDF Highlighter** | [`10_automated_tender_parser_pdf_highlighter.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/10_automated_tender_parser_pdf_highlighter.md) | Split-screen Text/PDF Viewer with Red (Withdrawn), Yellow (Outdated), Green (Active) Highlights |
-| **11** | **"Explain Like I'm New Here" (ELINH)** | [`11_explain_like_im_new_plain_language.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/11_explain_like_im_new_plain_language.md) | Plain-Language Explainer toggle translating dense engineering standards into simple English/Hindi |
-| **12** | **GeM & CPPP Procurement Integration** | [`12_gem_cppp_procurement_integration.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/12_gem_cppp_procurement_integration.md) | Model Tender Clause Generator, GeM Golden Parameters Matrix, e-Procurement Stubs |
+| # | File | Short Name | Status |
+|---|------|-----------|--------|
+| 01 | [01_explainability_vs_black_box.md](./01_explainability_vs_black_box.md) | Reasoning Trail + Knowledge Graph | Planned |
+| 02 | [02_audit_trail_and_legal_defensibility.md](./02_audit_trail_and_legal_defensibility.md) | Audit Trail + CVC Certificate | Planned |
+| 03 | [03_human_in_the_loop_feedback.md](./03_human_in_the_loop_feedback.md) | Flag + Expert Review Queue | Planned |
+| 04 | [04_proactive_staleness_alerts.md](./04_proactive_staleness_alerts.md) | Withdrawal/Amendment Alerts | Planned |
+| 05 | [05_multi_lingual_domain_switched_output.md](./05_multi_lingual_domain_switched_output.md) | Hinglish Mode + Domain Presets | Planned |
+| 06 | [06_standards_comparison_and_allied.md](./06_standards_comparison_and_allied.md) | Side-by-Side Comparator | Planned |
+| 07 | [07_query_understanding_disambiguation.md](./07_query_understanding_disambiguation.md) | Entity Chips + Disambiguation | Planned |
+| 08 | [08_nit_draft_generator.md](./08_nit_draft_generator.md) | NIT Clause Generator | Planned |
+| 09 | [09_mcp_server.md](./09_mcp_server.md) | MCP Server (Python FastAPI) | Planned |
+| 10 | [10_pdf_standards_parser.md](./10_pdf_standards_parser.md) | PDF Parser CLI (Python) | Planned |
+| 11 | [11_dashboard_analytics_heatmap.md](./11_dashboard_analytics_heatmap.md) | Dashboard + Activity Heatmap | Planned |
+| 12 | [12_certification_compliance_checker.md](./12_certification_compliance_checker.md) | Batch Compliance Checker | Planned |
+
+---
+
+## Design System & Frontend Architecture (DO NOT DEVIATE)
+
+> 📖 **Full Specification:** See [frontend.md](./frontend.md) for the complete Institutional Design System, CSS tokens, animation orchestrations, component library, and government portal guidelines.
+
+All frontend components use the **Egreen-Quanta Design System** from the SIH reference project:
+
+```css
+--paper:               #EEF0F4;   /* panel backgrounds */
+--ink:                 #161A22;   /* primary text */
+--ink-secondary:       #4A5060;   /* labels */
+--ink-muted:           #8890A0;   /* muted */
+--superposition-violet:#6E5AD6;   /* uncertain / violet state */
+--collapse-cobalt:     #1B4FE0;   /* confirmed / active */
+--signal-amber:        #E0982B;   /* warning */
+--void:                #0D0F14;   /* dark canvas */
+--error-line:          #C23B3B;   /* error / withdrawn */
+--hairline:            #D0D4DC;   /* 1px dividers */
+```
+
+Fonts: `Literata` (prose) + `JetBrains Mono` (data/code/IS numbers)
+
+---
+
+## Iron Rule: Pipeline Isolation
+
+```
+✅ You touch: application/  interface/
+❌ You never touch: pipeline/
+```
+
+Every feature reads from `interface/fixtures/cement_mock.json`. When the pipeline is live, the **only** change needed is swapping one import or one fetch URL. The feature logic never changes.
+
+---
+
+## Key-and-Lock Architecture Summary
+
+```
+pipeline/ → raw_output.json
+              ↓
+interface/adapter.py → transforms to contract_schema.json shape
+              ↓
+interface/fixtures/cement_mock.json → used by all 12 features during development
+              ↓
+application/frontend/src/features/*  → all 12 lock implementations
+```
