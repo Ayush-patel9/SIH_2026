@@ -115,6 +115,13 @@ export async function uploadTenderText(
   }
 }
 
+export interface PDFAnnotatedResponse {
+  responses: StandardsResponse[];
+  extracted_text: string;
+  pages: string[];
+  clause_annotations: any[];
+}
+
 export async function uploadPDF(file: File): Promise<StandardsResponse[]> {
   if (USE_MOCK) {
     await delay(1500);
@@ -135,6 +142,104 @@ export async function uploadPDF(file: File): Promise<StandardsResponse[]> {
       cementMock as unknown as StandardsResponse,
       hdpeMock as unknown as StandardsResponse,
     ];
+  }
+}
+
+export async function uploadPDFAnnotated(file: File): Promise<PDFAnnotatedResponse> {
+  if (USE_MOCK) {
+    await delay(1500);
+    return {
+      responses: [
+        cementMock as unknown as StandardsResponse,
+        hdpeMock as unknown as StandardsResponse,
+      ],
+      extracted_text: "Item 1: Supply of 43 Grade Ordinary Portland Cement...\nItem 2: Structural steel plates...",
+      pages: [
+        `GOVERNMENT OF INDIA · NATIONAL HIGHWAYS AUTHORITY OF INDIA (NHAI)\nTECHNICAL SPECIFICATION & BILL OF QUANTITIES (BOQ)\n\nClause 4.1.2 — Cement Specifications for Culvert Works:\nAll structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 8112:1989 with minimum compressive strength of 43 MPa at 28 days.\n\nClause 4.1.3 — Coarse & Fine Aggregates:\nAggregates shall conform to IS 383:2016 and be tested for soundness and alkali-aggregate reactivity.`,
+        `Clause 7.3.1 — Structural Steel Plates for Bridge Superstructure:\nStructural steel plates and sections shall conform to IS 2062:2011 Grade E250 Quality A with ultrasonic testing per ASTM standards.\n\nClause 7.3.2 — Fasteners & Structural Bolts:\nHigh strength friction grip bolts shall conform to IS 3757:1985 and tightening inspection as per IRC 24.`,
+        `Clause 12.4.0 — High Density Polyethylene (HDPE) Water Supply Pipes:\nHDPE pipes for rural drinking water distribution network shall be manufactured as per IS 4984:1995 with PE-80 raw material.\n\nClause 15.2.1 — CCTV Video Surveillance & IP Cameras:\nIP dome cameras for surveillance shall provide 1080p full HD resolution with on-board recording capability.`,
+      ],
+      clause_annotations: [
+        {
+          id: 'clause-1',
+          clauseNumber: 'Clause 4.1.2',
+          clauseTitle: 'Portland Cement Specifications for Highway Culverts',
+          rawText:
+            'All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 8112:1989 with minimum compressive strength of 43 MPa at 28 days.',
+          verbatimQuote:
+            'All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 8112:1989',
+          pageNumber: 1,
+          pageLocation: 'Page 1, Clause 4.1.2',
+          detectedStandard: 'IS 8112:1989',
+          status: 'WITHDRAWN',
+          confidence: 0.98,
+          replacement: 'IS 269:2015 (incorporating 43-Grade under Clause 5.1)',
+          cvcRiskNote:
+            'CVC Office Order No. 04/03/2021: Citing withdrawn standards in public tenders exposes the department to statutory audit disallowance and post-award vendor litigation.',
+          alliedStandards: ['IS 4031', 'IS 4032'],
+          suggestedClauseText:
+            'All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 269:2015 with mandatory BIS Certification under Cement QCO 2024.',
+        },
+        {
+          id: 'clause-2',
+          clauseNumber: 'Clause 7.3.1',
+          clauseTitle: 'Structural Steel Plates for Bridge Superstructure',
+          rawText:
+            'Structural steel plates and sections shall conform to IS 2062:2011 Grade E250 Quality A with ultrasonic testing per ASTM standards.',
+          verbatimQuote:
+            'Structural steel plates and sections shall conform to IS 2062:2011 Grade E250 Quality A',
+          pageNumber: 2,
+          pageLocation: 'Page 2, Clause 7.3.1',
+          detectedStandard: 'IS 2062:2011',
+          status: 'ACTIVE',
+          confidence: 0.95,
+          replacement: 'IS 2062:2011 (Current)',
+          cvcRiskNote:
+            'Statutory compliance verified under Steel and Steel Products (Quality Control) Order 2024. Mandatory ISI marking applies.',
+          alliedStandards: ['IS 1608', 'IS 1599'],
+          suggestedClauseText:
+            'Structural steel plates and sections shall conform to IS 2062:2011 Grade E250 Quality A with mandatory BIS ISI Mark per Steel QCO 2024.',
+        },
+      ]
+    };
+  }
+  try {
+    const form = new FormData();
+    form.append('file', file);
+    const res = await fetch(`${API_BASE}/api/v1/upload-pdf-annotated`, { method: 'POST', body: form });
+    if (!res.ok) throw new Error(`Annotated PDF upload failed: ${res.status} ${res.statusText}`);
+    return await res.json();
+  } catch (err) {
+    console.warn('[standardsClient] Live annotated PDF upload failed, falling back to mock:', err);
+    return {
+      responses: [
+        cementMock as unknown as StandardsResponse,
+        hdpeMock as unknown as StandardsResponse,
+      ],
+      extracted_text: "Item 1: Supply of 43 Grade Ordinary Portland Cement...",
+      pages: [
+        "Clause 4.1.2: All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 8112:1989.",
+        "Clause 7.3.1: Structural steel plates and sections shall conform to IS 2062:2011 Grade E250 Quality A."
+      ],
+      clause_annotations: [
+        {
+          id: 'clause-1',
+          clauseNumber: 'Clause 4.1.2',
+          clauseTitle: 'Portland Cement Specifications for Highway Culverts',
+          rawText: 'All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 8112:1989',
+          verbatimQuote: 'All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 8112:1989',
+          pageNumber: 1,
+          pageLocation: 'Page 1, Clause 4.1.2',
+          detectedStandard: 'IS 8112:1989',
+          status: 'WITHDRAWN',
+          confidence: 0.98,
+          replacement: 'IS 269:2015',
+          cvcRiskNote: 'CVC Office Order No. 04/03/2021: Withdrawn standard cited.',
+          alliedStandards: ['IS 4031'],
+          suggestedClauseText: 'All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 269:2015.'
+        }
+      ]
+    };
   }
 }
 

@@ -5,6 +5,9 @@ export interface TenderClauseAnnotation {
   clauseNumber: string;
   clauseTitle: string;
   rawText: string;
+  verbatimQuote?: string;
+  pageNumber?: number;
+  pageLocation?: string;
   detectedStandard: string;
   status: 'ACTIVE' | 'WITHDRAWN' | 'AMENDMENT_NEEDED' | 'MISSING_ALLIED';
   confidence: number;

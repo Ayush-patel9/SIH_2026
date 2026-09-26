@@ -6,6 +6,7 @@ interface PDFAnnotationViewerProps {
   initialClauses?: TenderClauseAnnotation[];
   pdfUrl?: string | null;
   rawText?: string;
+  pages?: string[];
   onApplyFixToDraft?: (updatedText: string) => void;
   onOpenWorkbench?: (standard: string) => void;
 }
@@ -17,6 +18,9 @@ const SAMPLE_TENDER_CLAUSES: TenderClauseAnnotation[] = [
     clauseTitle: 'Portland Cement Specifications for Highway Culverts',
     rawText:
       'All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 8112:1989 with minimum compressive strength of 43 MPa at 28 days.',
+    verbatimQuote:
+      'All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 8112:1989',
+    pageNumber: 1,
     detectedStandard: 'IS 8112:1989',
     status: 'WITHDRAWN',
     confidence: 0.98,
@@ -33,6 +37,9 @@ const SAMPLE_TENDER_CLAUSES: TenderClauseAnnotation[] = [
     clauseTitle: 'Structural Steel Plates for Bridge Superstructure',
     rawText:
       'Structural steel plates and sections shall conform to IS 2062:2011 Grade E250 Quality A with ultrasonic testing per ASTM standards.',
+    verbatimQuote:
+      'Structural steel plates and sections shall conform to IS 2062:2011 Grade E250 Quality A',
+    pageNumber: 2,
     detectedStandard: 'IS 2062:2011',
     status: 'ACTIVE',
     confidence: 0.95,
@@ -49,6 +56,9 @@ const SAMPLE_TENDER_CLAUSES: TenderClauseAnnotation[] = [
     clauseTitle: 'High Density Polyethylene (HDPE) Water Supply Pipes',
     rawText:
       'HDPE pipes for rural drinking water distribution network shall be manufactured as per IS 4984:1995 with PE-80 raw material.',
+    verbatimQuote:
+      'HDPE pipes for rural drinking water distribution network shall be manufactured as per IS 4984:1995',
+    pageNumber: 3,
     detectedStandard: 'IS 4984:1995',
     status: 'AMENDMENT_NEEDED',
     confidence: 0.93,
@@ -65,6 +75,9 @@ const SAMPLE_TENDER_CLAUSES: TenderClauseAnnotation[] = [
     clauseTitle: 'CCTV Video Surveillance & IP Cameras',
     rawText:
       'IP dome cameras for surveillance shall provide 1080p full HD resolution with on-board recording capability.',
+    verbatimQuote:
+      'IP dome cameras for surveillance shall provide 1080p full HD resolution',
+    pageNumber: 3,
     detectedStandard: 'IS 13252 (Part 1):2010 / CRO Scheme',
     status: 'MISSING_ALLIED',
     confidence: 0.91,
@@ -81,6 +94,7 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
   initialClauses,
   pdfUrl,
   rawText,
+  pages,
   onApplyFixToDraft,
   onOpenWorkbench,
 }) => {
@@ -93,10 +107,22 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
   const [showExportModal, setShowExportModal] = useState(false);
   const [viewMode, setViewMode] = useState<'split_pdf' | 'clause_list'>('split_pdf');
 
+  // Sync state with incoming initialClauses prop
+  React.useEffect(() => {
+    if (initialClauses && initialClauses.length > 0) {
+      setClauses(initialClauses);
+      setSelectedClauseId(initialClauses[0]?.id || null);
+    }
+  }, [initialClauses]);
+
   const selectedClause = clauses.find((c) => c.id === selectedClauseId) || clauses[0];
 
-  // Map clause ID to simulated page index
+  // Map clause ID to page index dynamically
   const getPageForClause = (id: string) => {
+    const found = clauses.find((c) => c.id === id);
+    if (found && typeof found.pageNumber === 'number' && found.pageNumber > 0) {
+      return found.pageNumber;
+    }
     switch (id) {
       case 'clause-1': return 1;
       case 'clause-2': return 2;
@@ -246,8 +272,9 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
           <PDFViewer
             pdfUrl={pdfUrl}
             rawText={rawText}
+            pages={pages}
             initialPage={getPageForClause(selectedClauseId || 'clause-1')}
-            highlightText={selectedClause?.rawText || selectedClause?.detectedStandard}
+            highlightText={selectedClause?.verbatimQuote || selectedClause?.rawText || selectedClause?.detectedStandard}
           />
         ) : (
           <div className="workbench-card" style={{ padding: '16px' }}>

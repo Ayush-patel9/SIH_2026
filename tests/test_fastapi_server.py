@@ -131,6 +131,51 @@ startxref
     assert len(items) == 2
     assert "269" in items[0]["primary_recommendation"]["is_number"]
 
+def test_upload_pdf_annotated_endpoint():
+    """Test POST /api/v1/upload-pdf-annotated with PDF stream returning page breakdowns & clause annotations."""
+    pdf_content = b"""%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >> endobj
+4 0 obj << /Length 120 >> stream
+BT
+/F1 12 Tf
+72 712 Td
+(Clause 4.1.2: Supply of 43 Grade Ordinary Portland Cement conforming to IS 8112:1989.) Tj
+0 -20 Td
+(Clause 7.3.1: Fe 500D TMT steel rebars conforming to IS 1786.) Tj
+ET
+endstream
+endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000000416 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+495
+%%EOF"""
+    response = client.post(
+        "/api/v1/upload-pdf-annotated",
+        files={"file": ("tender.pdf", pdf_content, "application/pdf")},
+        data={"role": "PROCUREMENT_OFFICER"}
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert "responses" in data
+    assert "extracted_text" in data
+    assert "pages" in data
+    assert "clause_annotations" in data
+    assert len(data["pages"]) > 0
+    assert len(data["clause_annotations"]) > 0
+    assert data["clause_annotations"][0]["pageNumber"] == 1
+    assert "verbatimQuote" in data["clause_annotations"][0]
+
 def test_alerts_endpoints():
     """Test GET /api/v1/alerts and POST /api/v1/alerts/simulate."""
     get_res = client.get("/api/v1/alerts")

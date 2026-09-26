@@ -3,6 +3,7 @@
 Feature #10: Standalone PDF / Text Tender Document Parser and IS Version Diff Engine
 Extracts technical specification clauses, Bill of Quantities (BoQ) items, identifies cited IS numbers,
 detects outdated or withdrawn standards, and recommends latest revisions with legal QCO backing.
+Includes page-aware extraction, verbatim quote mapping for PDF highlighter, and GraphRAG connection.
 """
 
 import sys
@@ -13,66 +14,46 @@ import io
 from pathlib import Path
 from typing import Dict, Any, List, Tuple, Optional
 
-try:
-    import pdfplumber
-    _PDFPLUMBER_AVAILABLE = True
-except ImportError:
-    _PDFPLUMBER_AVAILABLE = False
-
 BASE_DIR = Path(__file__).parent.parent.parent
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
+
+from pipeline.rag_engine.pdf_parser import (
+    PDFTenderExtractor,
+    pdf_tender_extractor,
+    extract_text_from_pdf,
+    make_pdf_part
+)
+from pipeline.config.api_contract_models import StandardsResponse
 
 DATA_DIR = BASE_DIR / "pipeline" / "data" if (BASE_DIR / "pipeline" / "data").exists() else BASE_DIR / "data"
 CATALOG_PATH = DATA_DIR / "01_master_catalog" / "unified_standards.json"
 QCO_PATH = DATA_DIR / "03_regulatory_qco" / "qco_mapping_matrix.json"
 
 
-def extract_text_from_pdf(pdf_bytes: bytes) -> str:
-    """
-    Extracts raw text from PDF bytes, preserving clause structure.
-    Raises ValueError if PDF is scanned or empty.
-    """
-    if not _PDFPLUMBER_AVAILABLE:
-        raise RuntimeError(
-            "pdfplumber is not installed. Please install with: pip install pdfplumber"
-        )
-    if not pdf_bytes:
-        raise ValueError("Uploaded PDF file is empty.")
+def extract_pages(pdf_bytes: bytes) -> List[str]:
+    """Extracts an array of page text strings from PDF bytes."""
+    return pdf_tender_extractor.extract_pages(pdf_bytes)
 
-    text_parts: List[str] = []
-    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
-        if not pdf.pages:
-            raise ValueError("Uploaded PDF has no readable pages.")
-        for page in pdf.pages:
-            page_text = page.extract_text()
-            if page_text and page_text.strip():
-                text_parts.append(page_text.strip())
 
-    full_text = "\n\n".join(text_parts).strip()
-    if not full_text:
-        raise ValueError(
-            "PDF appears to be scanned/image-only or contains no extractable text. "
-            "Please use a text-based searchable PDF or paste tender text directly."
-        )
-    return full_text
+def extract_clause_annotations(pdf_bytes: bytes) -> List[Dict[str, Any]]:
+    """Extracts structured clause annotations with verbatim quotes and page numbers for PDF highlighting."""
+    return pdf_tender_extractor.extract_clause_annotations(pdf_bytes)
 
 
 def extract_and_analyse(
     pdf_bytes: bytes,
     role: str = "PROCUREMENT_OFFICER",
     mode: str = "recommend"
-):
+) -> List[StandardsResponse]:
     """
     Full pipeline execution:
-    1. Extracts clean text from PDF bytes.
+    1. Extracts clean text and pages from PDF bytes.
     2. Decomposes multi-clause items via GraphRAG pipeline.
     3. Runs multi-channel retrieval and returns StandardsResponse list.
     """
-    text = extract_text_from_pdf(pdf_bytes)
-    from pipeline.rag_engine.pipeline_core import graph_rag_pipeline
-    return graph_rag_pipeline.process_tender_document(
-        document_text=text,
+    return pdf_tender_extractor.extract_and_analyse(
+        pdf_bytes=pdf_bytes,
         role=role,
         mode=mode
     )
@@ -106,8 +87,7 @@ class TenderPDFParser:
         Parses tender document text and returns structured audit with citations, outdated flags,
         and recommendations.
         """
-        # Find citations like "IS 1786:1985", "IS 456", "IS:269", "IS 13252 (Part 1):2010"
-        pattern = r'(?:IS|IS/ISO|IS/IEC|SP)\s*(?:[:\s]\s*(\d+(?:\s*\([A-Za-z0-9/\s]+\))?))(?:\s*:\s*(\d{4}))?'
+        pattern = r'(?:IS|IS/ISO|IS/IEC|SP)\s*(?:[:\s]\s*(\d+(?:\s*\([A-Za-z0-9/\s]+\))?))(?:\s*:\s*\d{4})?'
         
         matches = re.finditer(pattern, document_text, re.IGNORECASE)
         citations_found = []
@@ -125,7 +105,6 @@ class TenderPDFParser:
                 continue
             seen_keys.add(norm)
 
-            # Lookup in master catalog
             master_record = self.standards_by_num.get(norm)
             
             latest_year = master_record.get("year_published") if master_record else None
@@ -145,7 +124,6 @@ class TenderPDFParser:
                 except ValueError:
                     pass
 
-            # Known supersessions
             if norm == "IS8112" or norm == "IS12269":
                 is_outdated = True
                 outdated_reason = "Standard was superseded and merged into unified IS 269:2015."
@@ -171,7 +149,6 @@ class TenderPDFParser:
                 "is_mandatory": is_mandatory or (norm in self.qco_matrix)
             })
 
-        # Summary statistics
         outdated_count = sum(1 for c in citations_found if c["is_outdated"])
         mandatory_count = sum(1 for c in citations_found if c["is_mandatory"])
 

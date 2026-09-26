@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { uploadTenderText, uploadPDF } from '../../api/standardsClient';
+import { uploadTenderText, uploadPDFAnnotated } from '../../api/standardsClient';
 import { PDFAnnotationViewer } from './PDFAnnotationViewer';
+import type { TenderClauseAnnotation } from './TenderClauseHighlighter';
 import type { StandardsResponse } from '../../types';
 
 interface TenderUploadViewProps {
@@ -16,6 +17,9 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
   const [results, setResults] = useState<StandardsResponse[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [pdfFile, setPdfFile] = useState<File | null>(null);
+  const [pdfUrl, setPdfUrl] = useState<string | null>(null);
+  const [pdfPages, setPdfPages] = useState<string[]>([]);
+  const [clauseAnnotations, setClauseAnnotations] = useState<TenderClauseAnnotation[]>([]);
 
   const handleTextAnalyze = async () => {
     if (!docText.trim() || isLoading) return;
@@ -38,8 +42,21 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
     setError(null);
     setResults([]);
     try {
-      const res = await uploadPDF(pdfFile);
-      setResults(res);
+      const blobUrl = URL.createObjectURL(pdfFile);
+      setPdfUrl(blobUrl);
+      const res = await uploadPDFAnnotated(pdfFile);
+      setResults(res.responses);
+      if (res.pages && res.pages.length > 0) {
+        setPdfPages(res.pages);
+      }
+      if (res.extracted_text) {
+        setDocText(res.extracted_text);
+      }
+      if (res.clause_annotations && res.clause_annotations.length > 0) {
+        setClauseAnnotations(res.clause_annotations as TenderClauseAnnotation[]);
+      }
+      // Instantly switch to interactive Split-Screen Annotator tab
+      setTab('annotator');
     } catch (e: any) {
       setError(e.message || 'Failed to process PDF tender file');
     } finally {
@@ -141,6 +158,10 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
       {/* Mode 1: Split-Screen Annotator & Highlighter */}
       {tab === 'annotator' && (
         <PDFAnnotationViewer
+          initialClauses={clauseAnnotations.length > 0 ? clauseAnnotations : undefined}
+          pdfUrl={pdfUrl}
+          rawText={docText}
+          pages={pdfPages.length > 0 ? pdfPages : undefined}
           onOpenWorkbench={(_std) => {
             if (results.length > 0 && onSelectItem) {
               onSelectItem(results[0]);

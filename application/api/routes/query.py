@@ -93,6 +93,12 @@ def export_nit_clause(req: NitExportRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"NIT Export error: {str(e)}")
 
+class PDFAnnotatedTenderResponse(BaseModel):
+    responses: List[StandardsResponse] = Field(default_factory=list)
+    extracted_text: str
+    pages: List[str] = Field(default_factory=list)
+    clause_annotations: List[Dict[str, Any]] = Field(default_factory=list)
+
 @router.post("/upload-pdf", response_model=List[StandardsResponse], summary="Upload PDF Tender Document")
 async def upload_pdf_tender(
     file: UploadFile = File(...),
@@ -100,7 +106,7 @@ async def upload_pdf_tender(
     mode: Optional[str] = "recommend"
 ):
     """
-    Accepts multipart PDF upload. Extracts clean text via pdfplumber,
+    Accepts multipart PDF upload. Extracts clean text via pdfplumber/pypdf/gemini,
     decomposes tender into line items, and runs GraphRAG retrieval on each.
     """
     try:
@@ -124,4 +130,55 @@ async def upload_pdf_tender(
         raise HTTPException(status_code=422, detail=str(ve))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"PDF processing error: {str(e)}")
+
+@router.post("/upload-pdf-annotated", response_model=PDFAnnotatedTenderResponse, summary="Upload PDF with Clause Annotations and Highlighting")
+async def upload_pdf_tender_annotated(
+    file: UploadFile = File(...),
+    role: Optional[str] = "PROCUREMENT_OFFICER",
+    mode: Optional[str] = "recommend"
+):
+    """
+    Enhanced Multimodal / Page-Aware PDF Tender Extractor:
+    1. Extracts page-by-page text preserving layout and table schedules.
+    2. Identifies all technical clauses with verbatim quotes and page numbers for PDF highlighting.
+    3. Runs GraphRAG retrieval and supersession checks across all line items.
+    4. Returns responses, extracted text, page array, and clause annotations.
+    """
+    try:
+        if not file.filename or not file.filename.lower().endswith(".pdf"):
+            raise HTTPException(status_code=400, detail="Only PDF files (.pdf) are accepted.")
+        
+        pdf_bytes = await file.read()
+        if len(pdf_bytes) == 0:
+            raise HTTPException(status_code=400, detail="Uploaded PDF file is empty.")
+        
+        from application.pdf_parser.pdf_tender_parser import (
+            extract_text_from_pdf,
+            extract_pages,
+            extract_clause_annotations,
+            extract_and_analyse
+        )
+        
+        text = extract_text_from_pdf(pdf_bytes)
+        pages = extract_pages(pdf_bytes)
+        annotations = extract_clause_annotations(pdf_bytes)
+        responses = extract_and_analyse(
+            pdf_bytes=pdf_bytes,
+            role=role or "PROCUREMENT_OFFICER",
+            mode=mode or "recommend"
+        )
+        
+        return PDFAnnotatedTenderResponse(
+            responses=responses,
+            extracted_text=text,
+            pages=pages,
+            clause_annotations=annotations
+        )
+    except HTTPException:
+        raise
+    except ValueError as ve:
+        raise HTTPException(status_code=422, detail=str(ve))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Annotated PDF processing error: {str(e)}")
+
 

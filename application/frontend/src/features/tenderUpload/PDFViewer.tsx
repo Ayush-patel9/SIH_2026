@@ -8,11 +8,14 @@ import {
   Minimize2,
   X,
   Search,
+  FileText,
+  Eye,
 } from 'lucide-react';
 
 interface PDFViewerProps {
   pdfUrl?: string | null;
   rawText?: string;
+  pages?: string[];
   initialPage?: number;
   onPageChange?: (page: number) => void;
   className?: string;
@@ -23,6 +26,7 @@ interface PDFViewerProps {
 export const PDFViewer: React.FC<PDFViewerProps> = ({
   pdfUrl,
   rawText,
+  pages,
   initialPage = 1,
   onPageChange,
   className = '',
@@ -30,9 +34,11 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
   highlightText,
 }) => {
   const [currentPage, setCurrentPage] = useState<number>(initialPage);
-  const [numPages, setNumPages] = useState<number>(3);
   const [scale, setScale] = useState<number>(1.0);
   const [isMaximized, setIsMaximized] = useState<boolean>(false);
+  const [viewMode, setViewMode] = useState<'annotated_text' | 'embedded_pdf'>(
+    pdfUrl && !pages ? 'embedded_pdf' : 'annotated_text'
+  );
   const [highlightStatus, setHighlightStatus] = useState<
     'none' | 'searching' | 'found' | 'not-found'
   >('none');
@@ -40,8 +46,11 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
 
   const textContainerRef = useRef<HTMLDivElement>(null);
 
-  // Split raw text into simulated pages if raw text is provided
-  const pagesText = React.useMemo(() => {
+  // Compute pages list from pages prop or rawText
+  const pagesText: string[] = React.useMemo(() => {
+    if (pages && pages.length > 0) {
+      return pages;
+    }
     if (!rawText) {
       return [
         `GOVERNMENT OF INDIA · NATIONAL HIGHWAYS AUTHORITY OF INDIA (NHAI)\nTECHNICAL SPECIFICATION & BILL OF QUANTITIES (BOQ)\n\nClause 4.1.2 — Cement Specifications for Culvert Works:\nAll structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 8112:1989 with minimum compressive strength of 43 MPa at 28 days.\n\nClause 4.1.3 — Coarse & Fine Aggregates:\nAggregates shall conform to IS 383:2016 and be tested for soundness and alkali-aggregate reactivity.`,
@@ -49,22 +58,20 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
         `Clause 12.4.0 — High Density Polyethylene (HDPE) Water Supply Pipes:\nHDPE pipes for rural drinking water distribution network shall be manufactured as per IS 4984:1995 with PE-80 raw material.\n\nClause 15.2.1 — CCTV Video Surveillance & IP Cameras:\nIP dome cameras for surveillance shall provide 1080p full HD resolution with on-board recording capability.`,
       ];
     }
-    const parts = rawText.split(/(?:--- PAGE BREAK ---|\n{3,})/);
+    const parts = rawText.split(/(?:--- PAGE BREAK ---\n?|\n{3,})/);
     return parts.length > 0 ? parts : [rawText];
-  }, [rawText]);
+  }, [pages, rawText]);
 
-  useEffect(() => {
-    setNumPages(pagesText.length);
-  }, [pagesText]);
+  const numPages = pagesText.length;
 
-  // Update page when initialPage changes
+  // Sync current page with initialPage
   useEffect(() => {
     if (initialPage > 0 && initialPage <= numPages) {
       goToPage(initialPage);
     }
   }, [initialPage, numPages]);
 
-  // Alphanumeric Fuzzy Text Highlighter with TreeWalker (Exact AiForBharat logic)
+  // TreeWalker-based Alphanumeric Fuzzy Text Highlighter
   const highlightTextInPage = useCallback((searchText: string) => {
     if (!textContainerRef.current || !searchText) return;
 
@@ -72,7 +79,7 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
 
     const container = textContainerRef.current;
 
-    // Remove existing highlights
+    // 1. Remove existing highlights and normalize text nodes
     container.querySelectorAll('mark.pdf-highlight').forEach((mark) => {
       const parent = mark.parentNode;
       if (parent) {
@@ -81,6 +88,7 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
       }
     });
 
+    // 2. Gather all DOM text nodes
     const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null);
     const textNodes: Text[] = [];
     let node: Node | null;
@@ -90,6 +98,7 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
       }
     }
 
+    // 3. Build text map with cumulative offsets
     let fullText = '';
     const nodeMap: { node: Text; start: number; end: number }[] = [];
 
@@ -100,30 +109,43 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
       nodeMap.push({ node: textNode, start, end: fullText.length });
     });
 
-    // FUZZY MATCHING: Strip to alphanumeric only
-    const toAlphanumeric = (text: string) => text.toLowerCase().replace(/[^a-z0-9]/g, '');
+    // 4. Fuzzy alphanumeric normalization
+    const toAlphanumeric = (t: string) => t.toLowerCase().replace(/[^a-z0-9]/g, '');
 
     const searchAlpha = toAlphanumeric(searchText);
     const fullTextAlpha = toAlphanumeric(fullText);
 
-    const alphaIndex = fullTextAlpha.indexOf(searchAlpha);
-
-    if (alphaIndex === -1) {
-      setHighlightStatus('not-found');
+    if (!searchAlpha) {
+      setHighlightStatus('none');
       return;
     }
 
-    // Map alphanumeric position back to original text indices
+    const alphaIndex = fullTextAlpha.indexOf(searchAlpha);
+
+    if (alphaIndex === -1) {
+      // Fallback: check if the first 25 alphanumeric chars match
+      const subAlpha = searchAlpha.substring(0, Math.min(30, searchAlpha.length));
+      const subIndex = fullTextAlpha.indexOf(subAlpha);
+      if (subIndex === -1) {
+        setHighlightStatus('not-found');
+        return;
+      }
+    }
+
+    const targetAlpha = alphaIndex !== -1 ? searchAlpha : searchAlpha.substring(0, Math.min(30, searchAlpha.length));
+    const matchIdx = alphaIndex !== -1 ? alphaIndex : fullTextAlpha.indexOf(targetAlpha);
+
+    // 5. Map back to original character indices
     let alphaCount = 0;
     let originalStart = -1;
     let originalEnd = -1;
 
     for (let i = 0; i < fullText.length; i++) {
       if (/[a-zA-Z0-9]/.test(fullText[i])) {
-        if (alphaCount === alphaIndex && originalStart === -1) {
+        if (alphaCount === matchIdx && originalStart === -1) {
           originalStart = i;
         }
-        if (alphaCount === alphaIndex + searchAlpha.length - 1) {
+        if (alphaCount === matchIdx + targetAlpha.length - 1) {
           originalEnd = i + 1;
           break;
         }
@@ -136,34 +158,36 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
       return;
     }
 
+    // 6. Split nodes and wrap matches in <mark> tags
     let highlighted = false;
-    nodeMap.forEach(({ node, start, end }) => {
+    nodeMap.forEach(({ node: targetNode, start, end }) => {
       if (start < originalEnd && end > originalStart) {
         const nodeStart = Math.max(0, originalStart - start);
-        const nodeEnd = Math.min(node.textContent!.length, originalEnd - start);
+        const nodeEnd = Math.min(targetNode.textContent!.length, originalEnd - start);
 
         if (nodeStart < nodeEnd) {
-          const before = node.textContent!.substring(0, nodeStart);
-          const match = node.textContent!.substring(nodeStart, nodeEnd);
-          const after = node.textContent!.substring(nodeEnd);
+          const before = targetNode.textContent!.substring(0, nodeStart);
+          const match = targetNode.textContent!.substring(nodeStart, nodeEnd);
+          const after = targetNode.textContent!.substring(nodeEnd);
 
           const fragment = document.createDocumentFragment();
           if (before) fragment.appendChild(document.createTextNode(before));
 
           const mark = document.createElement('mark');
           mark.className = 'pdf-highlight';
-          mark.style.backgroundColor = 'rgba(254, 240, 138, 0.6)';
+          mark.style.backgroundColor = 'rgba(254, 240, 138, 0.7)';
           mark.style.border = '1px solid #ca8a04';
           mark.style.borderRadius = '3px';
-          mark.style.padding = '1px 3px';
+          mark.style.padding = '2px 4px';
           mark.style.color = '#713f12';
-          mark.style.fontWeight = '600';
+          mark.style.fontWeight = '700';
+          mark.style.boxShadow = '0 0 8px rgba(202, 138, 4, 0.4)';
           mark.textContent = match;
           fragment.appendChild(mark);
 
           if (after) fragment.appendChild(document.createTextNode(after));
 
-          node.parentNode?.replaceChild(fragment, node);
+          targetNode.parentNode?.replaceChild(fragment, targetNode);
           highlighted = true;
         }
       }
@@ -180,6 +204,7 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
     }
   }, []);
 
+  // Trigger highlighting when highlightText, currentPage, or viewMode changes
   useEffect(() => {
     if (!highlightText) {
       setHighlightStatus('none');
@@ -188,10 +213,10 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
 
     const timeoutId = setTimeout(() => {
       highlightTextInPage(highlightText);
-    }, 200);
+    }, 150);
 
     return () => clearTimeout(timeoutId);
-  }, [highlightText, currentPage, scale, highlightTextInPage]);
+  }, [highlightText, currentPage, scale, viewMode, highlightTextInPage]);
 
   function goToPage(pageNumber: number) {
     let p = pageNumber;
@@ -281,13 +306,37 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
             </button>
           )}
           <span style={{ fontFamily: 'var(--font-data)', fontWeight: 700, fontSize: '12px', color: 'var(--ink)' }}>
-            📄 Official PDF Document View
+            📄 PDF Clause Viewer
           </span>
           <span style={{ fontSize: '11px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
             Page {currentPage} of {numPages}
           </span>
           {renderHighlightStatus()}
         </div>
+
+        {/* View Mode Toggle (if real PDF URL is present) */}
+        {pdfUrl && (
+          <div style={{ display: 'flex', gap: '4px' }}>
+            <button
+              type="button"
+              className={`mode-toggle-btn ${viewMode === 'annotated_text' ? 'active' : ''}`}
+              onClick={() => setViewMode('annotated_text')}
+              style={{ padding: '3px 8px', fontSize: '11px' }}
+              title="Interactive Evidence Annotator & Text Highlighter"
+            >
+              <FileText size={12} style={{ marginRight: '4px' }} /> Annotator
+            </button>
+            <button
+              type="button"
+              className={`mode-toggle-btn ${viewMode === 'embedded_pdf' ? 'active' : ''}`}
+              onClick={() => setViewMode('embedded_pdf')}
+              style={{ padding: '3px 8px', fontSize: '11px' }}
+              title="Original PDF Document"
+            >
+              <Eye size={12} style={{ marginRight: '4px' }} /> PDF View
+            </button>
+          </div>
+        )}
 
         {/* Page & Zoom Controls */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
@@ -372,14 +421,14 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
         style={{
           flex: 1,
           overflow: 'auto',
-          background: '#525659',
+          background: '#475569',
           padding: '24px',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'flex-start',
         }}
       >
-        {pdfUrl ? (
+        {pdfUrl && viewMode === 'embedded_pdf' ? (
           <iframe
             src={pdfUrl}
             title="PDF Document Preview"
@@ -396,21 +445,38 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
           <div
             ref={textContainerRef}
             style={{
-              width: `${Math.round(700 * scale)}px`,
-              minHeight: '600px',
+              width: `${Math.round(720 * scale)}px`,
+              minHeight: '620px',
               background: '#FFFFFF',
               color: '#111827',
               padding: `${Math.round(40 * scale)}px`,
-              boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
-              borderRadius: '2px',
+              boxShadow: '0 8px 24px rgba(0,0,0,0.28)',
+              borderRadius: '3px',
               fontFamily: "'Literata', Georgia, serif",
               fontSize: `${Math.round(14 * scale)}px`,
               lineHeight: 1.7,
               whiteSpace: 'pre-wrap',
               transformOrigin: 'top center',
               userSelect: 'text',
+              border: '1px solid #cbd5e1',
             }}
           >
+            <div
+              style={{
+                fontFamily: 'var(--font-data)',
+                fontSize: '11px',
+                color: '#64748b',
+                borderBottom: '1px solid #e2e8f0',
+                paddingBottom: '8px',
+                marginBottom: '16px',
+                display: 'flex',
+                justifyContent: 'space-between',
+              }}
+            >
+              <span>GOVERNMENT OF INDIA · TENDER SPECIFICATION RECORD</span>
+              <span>PAGE {currentPage} OF {numPages}</span>
+            </div>
+
             {pagesText[currentPage - 1] || pagesText[0]}
           </div>
         )}
