@@ -9,6 +9,12 @@ from pydantic import BaseModel
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 logger = logging.getLogger(__name__)
 
 T = TypeVar("T", bound=BaseModel)
