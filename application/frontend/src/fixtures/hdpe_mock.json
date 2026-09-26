@@ -1,0 +1,203 @@
+{
+  "$schema": "SIH2026.StandardsResponse.v1",
+  "meta": {
+    "query_id": "uuid-hdpe-7712",
+    "session_id": "sess-hdpe-3011",
+    "timestamp": "2026-09-26T10:20:00Z",
+    "processing_time_ms": 395,
+    "pipeline_version": "1.0.0",
+    "model_version": "gemini-2.5-pro",
+    "data_snapshot_date": "2026-09-26",
+    "audit_reference_hash": "c8a74e92b31f092384a8c9b10293847291a02938475620194837261948203948",
+    "mode": "recommend"
+  },
+  "query_understanding": {
+    "detected_language": "en",
+    "original_text": "HDPE pipes 110mm PN6 for rural drinking water supply project under Jal Jeevan Mission.",
+    "normalized_text": "HDPE pipes 110mm PN6 rural drinking water Jal Jeevan Mission",
+    "extracted_entities": [
+      {
+        "entity": "HDPE pipes",
+        "type": "PRODUCT",
+        "confidence": 0.99
+      },
+      {
+        "entity": "110mm PN6",
+        "type": "GRADE_SPECIFICATION",
+        "confidence": 0.97
+      },
+      {
+        "entity": "rural drinking water supply",
+        "type": "APPLICATION_DOMAIN",
+        "confidence": 0.95
+      }
+    ],
+    "query_intent": "STANDARD_LOOKUP"
+  },
+  "primary_recommendation": {
+    "is_number": "IS 4984:2016",
+    "standard_id": "IS 4984:2016",
+    "title": "High Density Polyethylene Pipes for Potable Water Supplies — Specification",
+    "full_title": "IS 4984:2016 — High Density Polyethylene Pipes for Potable Water Supplies — Specification (Fifth Revision)",
+    "status": "ACTIVE",
+    "year_published": 2016,
+    "latest_amendment": "Amendment 2 (2022)",
+    "superseded_by": null,
+    "supersedes": ["IS 4984:1995"],
+    "scope_snippet": "This standard specifies requirements for high density polyethylene (HDPE) pipes made from PE-63, PE-80 and PE-100 material for water supply schemes.",
+    "division_code": "CED",
+    "ics_codes": ["23.040.20", "91.140.60"],
+    "confidence": 0.97,
+    "confidence_breakdown": {
+      "semantic_vector_score": 0.49,
+      "keyword_exact_match": 0.31,
+      "graph_co_citation_boost": 0.17
+    },
+    "certification": {
+      "scheme": "BIS_ISI_MARK",
+      "mandatory": true,
+      "qco_order_name": "Pipes and Fittings (Quality Control) Order, 2020",
+      "qco_gazette_ref": "S.O. 4512(E)",
+      "notifying_ministry": "Ministry of Chemicals and Petrochemicals / Jal Shakti",
+      "enforcement_date": "2021-04-01"
+    }
+  },
+  "allied_standards": [
+    {
+      "is_number": "IS 12235 (Part 1 to 19)",
+      "standard_id": "IS 12235:2004",
+      "title": "Thermoplastics Pipes and Fittings — Methods of Test",
+      "relation_type": "TEST_METHOD",
+      "relation_label": "Mandatory Hydrostatic & Impact Tests",
+      "status": "ACTIVE",
+      "confidence": 0.94,
+      "why": "IS 4984 Clause 8 mandates hydrostatic pressure and internal pressure creep testing per IS 12235."
+    },
+    {
+      "is_number": "IS 7634 (Part 2)",
+      "standard_id": "IS 7634 (Part 2):2012",
+      "title": "Code of Practice for Plastics Pipes Laying and Jointing — HDPE Pipes",
+      "relation_type": "INSTALLATION_CODE",
+      "relation_label": "Mandatory Field Installation Standard",
+      "status": "ACTIVE",
+      "confidence": 0.91,
+      "why": "Jal Jeevan Mission guidelines require trenching, laying, and butt-fusion jointing strictly as per IS 7634 Part 2."
+    },
+    {
+      "is_number": "IS 2530",
+      "standard_id": "IS 2530:1963",
+      "title": "Methods of Test for Polyethylene Moulding Materials and Polyethylene Compounds",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_label": "Polymer Resin Verification",
+      "status": "ACTIVE",
+      "confidence": 0.86,
+      "why": "Required for resin carbon black dispersion and density conformance before pipe extrusion."
+    }
+  ],
+  "outdated_citations": [
+    {
+      "cited_standard": "IS 4984:1995",
+      "severity": "HIGH",
+      "status": "SUPERSEDED",
+      "reason": "Superseded by IS 4984:2016 which introduces PE-100 grade and higher burst pressure criteria.",
+      "replacement": "IS 4984:2016",
+      "message": "Draft mentions fourth revision (1995). The current Fifth Revision (2016) must be specified for JJM funding eligibility."
+    }
+  ],
+  "graph_path": [
+    {
+      "from": "HDPE Potable Water Pipes",
+      "to": "IS 4984:1995",
+      "edge_type": "HISTORICAL_SPEC",
+      "label": "Legacy Specification"
+    },
+    {
+      "from": "IS 4984:1995",
+      "to": "IS 4984:2016",
+      "edge_type": "SUPERSEDED_BY",
+      "label": "Superseded & Revised by"
+    },
+    {
+      "from": "IS 4984:2016",
+      "to": "IS 12235 (Part 1 to 19)",
+      "edge_type": "REQUIRES_TEST_METHOD",
+      "label": "Mandates Hydrostatic Testing"
+    },
+    {
+      "from": "IS 4984:2016",
+      "to": "IS 7634 (Part 2)",
+      "edge_type": "INSTALLATION_CODE",
+      "label": "Governs Field Jointing"
+    }
+  ],
+  "reasoning_trace": [
+    {
+      "step": "query_understanding",
+      "detail": "Identified product 'HDPE Pipes', size '110mm PN6', domain 'Drinking Water / Jal Jeevan Mission'.",
+      "confidence": 0.99
+    },
+    {
+      "step": "vector_retrieval",
+      "detail": "Vector similarity identified IS 4984:2016 (0.97) as the direct potable water standard.",
+      "confidence": 0.97
+    },
+    {
+      "step": "graph_traversal",
+      "detail": "Knowledge graph linked mandatory hydrostatic test suite IS 12235 and site jointing code IS 7634 (Part 2).",
+      "confidence": 1.0
+    },
+    {
+      "step": "qco_compliance_lookup",
+      "detail": "Pipes & Fittings QCO 2020 confirms mandatory BIS ISI mark certification.",
+      "confidence": 0.99
+    }
+  ],
+  "plain_language_explanation": {
+    "enabled": true,
+    "text": "For 110mm PN6 potable water piping under Jal Jeevan Mission, specify **IS 4984:2016** (PE-80 or PE-100 material). The manufacturer must hold a valid BIS ISI License under the Pipes QCO. Field laying must strictly follow IS 7634 Part 2 to prevent joint failures.",
+    "bhashini_translated_text": null
+  },
+  "compliance_checklist": [
+    {
+      "item": "Cite IS 4984:2016 (PE-80 / PE-100) in tender documents",
+      "status": "PASS",
+      "action_required": "Ensure technical schedule cites 2016 edition."
+    },
+    {
+      "item": "Mandatory BIS ISI Mark on pipe body at 1-meter intervals",
+      "status": "PASS",
+      "action_required": "Verify marking includes CM/L license number, batch code, and pressure rating."
+    },
+    {
+      "item": "Butt-fusion jointing compliance per IS 7634 (Part 2)",
+      "status": "WARNING",
+      "action_required": "Include contractor joint inspection certificate clause."
+    }
+  ],
+  "audit_record": {
+    "recommendation_id": "rec-hdpe-002",
+    "query_id": "uuid-hdpe-7712",
+    "timestamp": "2026-09-26T10:20:00Z",
+    "standards_version_snapshot": {
+      "IS 4984:2016": {
+        "status_at_query_time": "ACTIVE",
+        "amendment_at_query_time": "Amendment 2 (2022)"
+      }
+    },
+    "audit_hash": "c8a74e92b31f092384a8c9b10293847291a02938475620194837261948203948",
+    "logged": true,
+    "dry_run": false,
+    "rti_exportable": true
+  },
+  "staleness_risk": {
+    "risk_level": "NONE",
+    "message": "Standard is active and fully compliant with latest QCO notifications.",
+    "standards_under_revision": []
+  },
+  "multilingual": {
+    "bhashini_used": false,
+    "detected_input_language": "en",
+    "response_language": "en",
+    "available_translations": ["hi", "ta", "te", "mr", "gu", "bn"]
+  }
+}

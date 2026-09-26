@@ -1,0 +1,188 @@
+{
+  "$schema": "SIH2026.StandardsResponse.v1",
+  "meta": {
+    "query_id": "uuid-led-9041",
+    "session_id": "sess-led-4412",
+    "timestamp": "2026-09-26T10:25:00Z",
+    "processing_time_ms": 310,
+    "pipeline_version": "1.0.0",
+    "model_version": "gemini-2.5-pro",
+    "data_snapshot_date": "2026-09-26",
+    "audit_reference_hash": "b2f14019a8bc43190ab76123e459012384759182374619028347109283746192",
+    "mode": "recommend"
+  },
+  "query_understanding": {
+    "detected_language": "en",
+    "original_text": "LED street lamps 15W warm white for highway lighting under smart city mission.",
+    "normalized_text": "LED street lamps 15W warm white highway lighting smart city",
+    "extracted_entities": [
+      {
+        "entity": "LED street lamps",
+        "type": "PRODUCT",
+        "confidence": 0.98
+      },
+      {
+        "entity": "15W warm white",
+        "type": "GRADE_SPECIFICATION",
+        "confidence": 0.95
+      },
+      {
+        "entity": "highway lighting",
+        "type": "APPLICATION_DOMAIN",
+        "confidence": 0.93
+      }
+    ],
+    "query_intent": "STANDARD_LOOKUP"
+  },
+  "primary_recommendation": {
+    "is_number": "IS 16102 (Part 1):2012",
+    "standard_id": "IS 16102 (Part 1):2012",
+    "title": "Self-Ballasted LED Lamps for General Lighting Services — Part 1: Safety Requirements",
+    "full_title": "IS 16102 (Part 1):2012 — Self-Ballasted LED Lamps for General Lighting Services — Part 1 Safety Requirements",
+    "status": "ACTIVE",
+    "year_published": 2012,
+    "latest_amendment": "Amendment 2 (2020)",
+    "superseded_by": null,
+    "supersedes": [],
+    "scope_snippet": "Specifies the safety and interchangeability requirements, together with test methods and conditions required to show compliance of LED lamps.",
+    "division_code": "ETD",
+    "ics_codes": ["29.140.01", "29.140.99"],
+    "confidence": 0.95,
+    "confidence_breakdown": {
+      "semantic_vector_score": 0.47,
+      "keyword_exact_match": 0.32,
+      "graph_co_citation_boost": 0.16
+    },
+    "certification": {
+      "scheme": "BIS_CRS",
+      "mandatory": true,
+      "qco_order_name": "Electronics and Information Technology Goods (Compulsory Registration) Order, 2012",
+      "qco_gazette_ref": "S.O. 2357(E)",
+      "notifying_ministry": "Ministry of Electronics and Information Technology (MeitY)",
+      "enforcement_date": "2013-04-03"
+    }
+  },
+  "allied_standards": [
+    {
+      "is_number": "IS 16102 (Part 2)",
+      "standard_id": "IS 16102 (Part 2):2012",
+      "title": "Self-Ballasted LED Lamps for General Lighting Services — Part 2: Performance Requirements",
+      "relation_type": "NORMATIVE_REFERENCE",
+      "relation_label": "Performance & Lumen Maintenance",
+      "status": "ACTIVE",
+      "confidence": 0.95,
+      "why": "Mandates 25,000-hour lumen maintenance, luminous efficacy, and color rendering index (CRI ≥ 80)."
+    },
+    {
+      "is_number": "IS 16103 (Part 1)",
+      "standard_id": "IS 16103 (Part 1):2012",
+      "title": "LED Modules for General Lighting — Part 1 Safety Requirements",
+      "relation_type": "RAW_MATERIAL_SPEC",
+      "relation_label": "Component Module Safety",
+      "status": "ACTIVE",
+      "confidence": 0.89,
+      "why": "Governs the LED driver and internal module safety parameters."
+    },
+    {
+      "is_number": "IS 15885 (Part 2/Sec 13)",
+      "standard_id": "IS 15885:2012",
+      "title": "Lamp Controlgear — Electronic Controlgear for LED Modules",
+      "relation_type": "TEST_METHOD",
+      "relation_label": "Electronic Driver Conformance",
+      "status": "ACTIVE",
+      "confidence": 0.91,
+      "why": "Crucial for surge protection and power factor (PF ≥ 0.95) verification in street lighting."
+    }
+  ],
+  "outdated_citations": [],
+  "graph_path": [
+    {
+      "from": "LED Street Lighting",
+      "to": "IS 16102 (Part 1):2012",
+      "edge_type": "GOVERNED_BY",
+      "label": "Primary Safety Regulation"
+    },
+    {
+      "from": "IS 16102 (Part 1):2012",
+      "to": "IS 16102 (Part 2)",
+      "edge_type": "REQUIRES_PERFORMANCE",
+      "label": "Complemented by Performance Standard"
+    },
+    {
+      "from": "IS 16102 (Part 1):2012",
+      "to": "IS 15885 (Part 2/Sec 13)",
+      "edge_type": "REQUIRES_TEST_METHOD",
+      "label": "Driver Surge Protection standard"
+    }
+  ],
+  "reasoning_trace": [
+    {
+      "step": "query_understanding",
+      "detail": "Identified product 'LED Street Lamps', rating '15W', domain 'Smart City / Highway Lighting'.",
+      "confidence": 0.98
+    },
+    {
+      "step": "vector_retrieval",
+      "detail": "Vector similarity matched IS 16102 (Part 1) under BIS Compulsory Registration Scheme (CRS).",
+      "confidence": 0.96
+    },
+    {
+      "step": "graph_traversal",
+      "detail": "Graph linked Part 2 performance criteria (efficacy ≥ 100 lm/W) and IS 15885 surge safety.",
+      "confidence": 1.0
+    },
+    {
+      "step": "qco_compliance_lookup",
+      "detail": "MeitY CRS Order mandates R-Number registration before public procurement listing.",
+      "confidence": 0.99
+    }
+  ],
+  "plain_language_explanation": {
+    "enabled": true,
+    "text": "For 15W LED street lamps, mandatory safety compliance is governed by **IS 16102 (Part 1):2012** under the BIS Compulsory Registration Scheme (CRS). Vendors must provide their 8-digit BIS CRS 'R-Number'. Ensure the tender also mandates Part 2 performance criteria and IS 15885 driver surge protection.",
+    "bhashini_translated_text": null
+  },
+  "compliance_checklist": [
+    {
+      "item": "Mandate BIS CRS Registration Number (R-Number) on luminaire packaging",
+      "status": "PASS",
+      "action_required": "Verify vendor registration status on BIS CRS portal before bid opening."
+    },
+    {
+      "item": "Luminous Efficacy ≥ 100 lm/W per IS 16102 (Part 2)",
+      "status": "PASS",
+      "action_required": "Demand accredited laboratory photometric test report."
+    },
+    {
+      "item": "Surge Protection (minimum 4kV) per IS 15885",
+      "status": "WARNING",
+      "action_required": "Specify external surge protection device (SPD) in technical tender clause."
+    }
+  ],
+  "audit_record": {
+    "recommendation_id": "rec-led-003",
+    "query_id": "uuid-led-9041",
+    "timestamp": "2026-09-26T10:25:00Z",
+    "standards_version_snapshot": {
+      "IS 16102 (Part 1):2012": {
+        "status_at_query_time": "ACTIVE",
+        "amendment_at_query_time": "Amendment 2 (2020)"
+      }
+    },
+    "audit_hash": "b2f14019a8bc43190ab76123e459012384759182374619028347109283746192",
+    "logged": true,
+    "dry_run": false,
+    "rti_exportable": true
+  },
+  "staleness_risk": {
+    "risk_level": "NONE",
+    "message": "Standard is active and CRS enforcement is in full effect.",
+    "standards_under_revision": []
+  },
+  "multilingual": {
+    "bhashini_used": false,
+    "detected_input_language": "en",
+    "response_language": "en",
+    "available_translations": ["hi", "ta", "te", "mr", "gu", "bn"]
+  }
+}

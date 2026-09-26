@@ -8,9 +8,14 @@ import { QueryUnderstandingView, QueryEntityDisplay } from './features/queryUnde
 import { NITGeneratorView } from './features/nitGenerator';
 import { MCPView } from './features/mcp';
 import { DashboardView } from './features/dashboard';
+import { queryStandards } from './api/standardsClient';
+import { useRole } from './store/roleStore';
+import { RoleSwitcher } from './components/RoleSwitcher';
+import { SandboxBanner } from './components/SandboxBanner';
 import type { StandardsResponse } from './types';
 
 export default function App() {
+  const { role, mode, setRole, setMode } = useRole();
   const [selectedDomain, setSelectedDomain] = useState<string>('cement');
   const [activeFeature, setActiveFeature] = useState<
     | 'explainability'
@@ -28,6 +33,8 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState<string>(
     'Procurement of 43 grade ordinary portland cement for highway construction.'
   );
+  const [isLoading, setIsLoading] = useState(false);
+  const [queryError, setQueryError] = useState<string | null>(null);
 
   // Authority Stream (Right Column) Messages
   const [messages, setMessages] = useState([
@@ -59,6 +66,28 @@ export default function App() {
           text: `Switched domain to ${preset.label}. Enforced standard: ${preset.isCode}. Cross-referencing technical annexures and quality control orders.`,
         },
       ]);
+    }
+  };
+
+  const handleAnalyze = async () => {
+    if (!searchQuery.trim() || isLoading) return;
+    setIsLoading(true);
+    setQueryError(null);
+    try {
+      const result = await queryStandards(searchQuery, { mode, role });
+      setActiveData(result);
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: prev.length,
+          type: 'grounded-observation',
+          text: `Query resolved: ${result.primary_recommendation.is_number} (${result.primary_recommendation.title}). Confidence: ${(result.primary_recommendation.confidence * 100).toFixed(0)}%. ${result.audit_record.dry_run ? '🧪 Sandbox mode: Not logged to permanent audit ledger.' : 'Audit hash sealed.'}`,
+        },
+      ]);
+    } catch (e: any) {
+      setQueryError(e.message || 'Failed to query standards intelligence engine');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -180,22 +209,29 @@ export default function App() {
 
           <div className="auth-user-badge">
             <span className="auth-user-name">Ayush Patel</span>
-            <span className="auth-user-role">PROCUREMENT OFFICER</span>
+            <span className="auth-user-role">{role.replace('_', ' ')}</span>
           </div>
         </div>
       </header>
 
       {/* Main Left Stage */}
       <main className="workspace-main">
+        {/* Sandbox & Outdated Warning Banner */}
+        <SandboxBanner data={activeData} mode={mode} />
+
         {/* Domain Preset Switcher & Search Bar */}
         <div className="workbench-card" style={{ padding: '14px 18px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
             <span className="section-label" style={{ margin: 0 }}>
               PROCUREMENT DOMAIN PRESETS
             </span>
-            <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)' }}>
-              FIXTURE: CEMENT_MOCK.JSON
-            </span>
+            {/* Role & Mode Switcher Controls */}
+            <RoleSwitcher
+              role={role}
+              mode={mode}
+              onRoleChange={setRole}
+              onModeChange={setMode}
+            />
           </div>
 
           <div className="palette">
@@ -216,6 +252,9 @@ export default function App() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') handleAnalyze();
+              }}
               placeholder="Enter tender specification or product query..."
               className="auth-input"
               style={{ fontSize: '13px', background: 'var(--paper)' }}
@@ -223,20 +262,18 @@ export default function App() {
             <button
               type="button"
               className="btn-run"
-              onClick={() => {
-                setMessages((prev) => [
-                  ...prev,
-                  {
-                    id: prev.length,
-                    type: 'grounded-observation',
-                    text: `Evaluating query "${searchQuery}". Computing vector embeddings, graph traversal, and audit verification.`,
-                  },
-                ]);
-              }}
+              onClick={handleAnalyze}
+              disabled={isLoading}
             >
-              Analyze
+              {isLoading ? 'Analyzing...' : 'Analyze'}
             </button>
           </div>
+
+          {queryError && (
+            <div style={{ marginTop: '8px', color: 'var(--error-line)', fontSize: '12px', fontFamily: 'var(--font-data)' }}>
+              ⚠ {queryError}
+            </div>
+          )}
 
           {/* Feature 07: Live Compact Query Entity Display */}
           <div style={{ marginTop: '10px' }}>
@@ -247,6 +284,14 @@ export default function App() {
             />
           </div>
         </div>
+
+        {isLoading && (
+          <div className="workbench-card" style={{ padding: '24px', textAlign: 'center' }}>
+            <div style={{ fontFamily: 'var(--font-data)', fontSize: '12px', color: 'var(--collapse-cobalt)' }}>
+              ◉ Querying BIS Standards Intelligence Engine...
+            </div>
+          </div>
+        )}
 
         {/* Feature 01: Explainability vs. Black Box */}
         {activeFeature === 'explainability' && (

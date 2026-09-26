@@ -4,9 +4,15 @@
  */
 
 import cementMockRaw from '../../fixtures/cement_mock.json';
+import hdpeMockRaw from '../../fixtures/hdpe_mock.json';
+import ledMockRaw from '../../fixtures/led_mock.json';
+import cctvMockRaw from '../../fixtures/cctv_mock.json';
 import type { StandardsResponse } from '../../types';
 
 export const CEMENT_MOCK_DATA = cementMockRaw as unknown as StandardsResponse;
+export const HDPE_MOCK_DATA = hdpeMockRaw as unknown as StandardsResponse;
+export const LED_MOCK_DATA = ledMockRaw as unknown as StandardsResponse;
+export const CCTV_MOCK_DATA = cctvMockRaw as unknown as StandardsResponse;
 
 export const STEEL_MOCK_DATA: StandardsResponse = {
   $schema: "SIH2026.StandardsResponse.v1",
@@ -195,4 +201,20 @@ export const DOMAIN_PRESETS: Record<string, { label: string; isCode: string; dat
     isCode: "IS 2062:2011",
     data: STEEL_MOCK_DATA,
   },
+  hdpe: {
+    label: "HDPE Pipes (IS 4984)",
+    isCode: "IS 4984:2016",
+    data: HDPE_MOCK_DATA,
+  },
+  led: {
+    label: "LED Lamps CRS (IS 16102)",
+    isCode: "IS 16102 (Part 1):2012",
+    data: LED_MOCK_DATA,
+  },
+  cctv: {
+    label: "CCTV Systems CRS (IS 16165)",
+    isCode: "IS 16165:2014",
+    data: CCTV_MOCK_DATA,
+  },
 };
+

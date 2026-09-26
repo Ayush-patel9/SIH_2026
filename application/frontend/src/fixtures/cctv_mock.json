@@ -1,0 +1,187 @@
+{
+  "$schema": "SIH2026.StandardsResponse.v1",
+  "meta": {
+    "query_id": "uuid-cctv-1102",
+    "session_id": "sess-cctv-8823",
+    "timestamp": "2026-09-26T10:30:00Z",
+    "processing_time_ms": 485,
+    "pipeline_version": "1.0.0",
+    "model_version": "gemini-2.5-pro",
+    "data_snapshot_date": "2026-09-26",
+    "audit_reference_hash": "f9a8b7c6d5e4f3a2b1c09876543210fedcba9876543210abcdef0123456789ab",
+    "mode": "recommend"
+  },
+  "query_understanding": {
+    "detected_language": "hi",
+    "original_text": "सरकारी कार्यालय और स्मार्ट सिटी निगरानी के लिए आईपी आधारित सीसीटीवी कैमरा सिस्टम",
+    "normalized_text": "IP CCTV surveillance cameras smart city government office monitoring",
+    "extracted_entities": [
+      {
+        "entity": "आईपी आधारित सीसीटीवी कैमरा सिस्टम",
+        "type": "PRODUCT",
+        "confidence": 0.98
+      },
+      {
+        "entity": "सरकारी कार्यालय और स्मार्ट सिटी",
+        "type": "APPLICATION_DOMAIN",
+        "confidence": 0.94
+      }
+    ],
+    "query_intent": "STANDARD_LOOKUP"
+  },
+  "primary_recommendation": {
+    "is_number": "IS 16165:2014",
+    "standard_id": "IS 16165:2014",
+    "title": "CCTV Video Surveillance Systems for Use in Security Applications — System Requirements",
+    "full_title": "IS 16165:2014 — CCTV Video Surveillance Systems for Use in Security Applications — System Requirements",
+    "status": "ACTIVE",
+    "year_published": 2014,
+    "latest_amendment": "Amendment 1 (2019)",
+    "superseded_by": null,
+    "supersedes": [],
+    "scope_snippet": "Specifies the minimum requirements and recommendations for CCTV surveillance systems installed for security applications in public buildings and smart cities.",
+    "division_code": "LITD",
+    "ics_codes": ["33.160.40", "35.240.99"],
+    "confidence": 0.96,
+    "confidence_breakdown": {
+      "semantic_vector_score": 0.48,
+      "keyword_exact_match": 0.33,
+      "graph_co_citation_boost": 0.15
+    },
+    "certification": {
+      "scheme": "BIS_CRS",
+      "mandatory": true,
+      "qco_order_name": "Electronics & IT Goods (Compulsory Registration) Order, CCTV Notification 2018",
+      "qco_gazette_ref": "S.O. 3907(E)",
+      "notifying_ministry": "Ministry of Electronics and Information Technology (MeitY)",
+      "enforcement_date": "2019-06-01"
+    }
+  },
+  "allied_standards": [
+    {
+      "is_number": "IS 13252 (Part 1)",
+      "standard_id": "IS 13252 (Part 1):2010",
+      "title": "Information Technology Equipment — Safety — Part 1: General Requirements",
+      "relation_type": "NORMATIVE_REFERENCE",
+      "relation_label": "Mandatory IT Safety Standard",
+      "status": "ACTIVE",
+      "confidence": 0.95,
+      "why": "All CCTV cameras, NVRs, and PoE switches require mandatory electrical & IT safety certification per IS 13252."
+    },
+    {
+      "is_number": "IS/ISO/IEC 27001",
+      "standard_id": "IS/ISO/IEC 27001:2022",
+      "title": "Information Security, Cybersecurity and Privacy Protection — Information Security Management Systems",
+      "relation_type": "CROSS_DISCIPLINARY",
+      "relation_label": "Data Security & Video Stream Privacy",
+      "status": "ACTIVE",
+      "confidence": 0.88,
+      "why": "Essential for government cloud video storage and encrypted transmission architecture."
+    },
+    {
+      "is_number": "IS 16910 (Part 1)",
+      "standard_id": "IS 16910:2018",
+      "title": "IP Video Surveillance Cameras — Security and Functional Conformance",
+      "relation_type": "TEST_METHOD",
+      "relation_label": "Video Conformance & ONVIF Profile Compliance",
+      "status": "ACTIVE",
+      "confidence": 0.92,
+      "why": "Defines test methodology for optical resolution, frame rates, and ONVIF Profile S/G/T compliance."
+    }
+  ],
+  "outdated_citations": [],
+  "graph_path": [
+    {
+      "from": "IP Surveillance Camera",
+      "to": "IS 16165:2014",
+      "edge_type": "SYSTEM_SPEC",
+      "label": "Overall System Architecture"
+    },
+    {
+      "from": "IS 16165:2014",
+      "to": "IS 13252 (Part 1)",
+      "edge_type": "REQUIRES_SAFETY_CRS",
+      "label": "Mandates Hardware Safety Registration"
+    },
+    {
+      "from": "IS 16165:2014",
+      "to": "IS 16910 (Part 1)",
+      "edge_type": "REQUIRES_CONFORMANCE",
+      "label": "ONVIF Interoperability Protocol"
+    }
+  ],
+  "reasoning_trace": [
+    {
+      "step": "query_understanding",
+      "detail": "Bhashini translated Hindi query 'सरकारी कार्यालय और स्मार्ट सिटी...'. Identified IP CCTV Surveillance System.",
+      "confidence": 0.99
+    },
+    {
+      "step": "vector_retrieval",
+      "detail": "Matched IS 16165:2014 for CCTV systems alongside MeitY mandatory CRS hardware specifications.",
+      "confidence": 0.96
+    },
+    {
+      "step": "graph_traversal",
+      "detail": "Knowledge graph verified safety requirements under IS 13252 (Part 1) and test protocol under IS 16910.",
+      "confidence": 1.0
+    },
+    {
+      "step": "qco_compliance_lookup",
+      "detail": "MeitY CCTV Security Order 2018 mandates trusted source compliance and BIS CRS R-number.",
+      "confidence": 0.99
+    }
+  ],
+  "plain_language_explanation": {
+    "enabled": true,
+    "text": "For IP CCTV surveillance systems in smart cities and public offices, the governing standard is **IS 16165:2014** with mandatory MeitY CRS hardware safety certification under **IS 13252 (Part 1)**. Cameras must be certified for ONVIF compliance and sourced from trusted cybersecurity-audited manufacturers.",
+    "bhashini_translated_text": "सरकारी कार्यालयों और स्मार्ट सिटी के लिए आईपी सीसीटीवी निगरानी प्रणाली हेतु मुख्य मानक **IS 16165:2014** और हार्डवेयर सुरक्षा के लिए **IS 13252 (Part 1)** अनिवार्य है।"
+  },
+  "compliance_checklist": [
+    {
+      "item": "Mandatory MeitY BIS CRS Registration (IS 13252 Part 1) on all cameras",
+      "status": "PASS",
+      "action_required": "Verify valid 8-digit R-number before technical qualification."
+    },
+    {
+      "item": "ONVIF Profile S/G/T Interoperability Compliance per IS 16910",
+      "status": "PASS",
+      "action_required": "Demand official ONVIF member certification report."
+    },
+    {
+      "item": "Cybersecurity & Trusted Source Verification",
+      "status": "WARNING",
+      "action_required": "Ensure NDA and STQC security test certificate are attached."
+    }
+  ],
+  "audit_record": {
+    "recommendation_id": "rec-cctv-004",
+    "query_id": "uuid-cctv-1102",
+    "timestamp": "2026-09-26T10:30:00Z",
+    "standards_version_snapshot": {
+      "IS 16165:2014": {
+        "status_at_query_time": "ACTIVE",
+        "amendment_at_query_time": "Amendment 1 (2019)"
+      },
+      "IS 13252 (Part 1)": {
+        "status_at_query_time": "ACTIVE",
+        "amendment_at_query_time": "Amendment 3 (2020)"
+      }
+    },
+    "audit_hash": "f9a8b7c6d5e4f3a2b1c09876543210fedcba9876543210abcdef0123456789ab",
+    "logged": true,
+    "dry_run": false,
+    "rti_exportable": true
+  },
+  "staleness_risk": {
+    "risk_level": "NONE",
+    "message": "All standards are active and compliant with MeitY electronics mandates.",
+    "standards_under_revision": []
+  },
+  "multilingual": {
+    "bhashini_used": true,
+    "detected_input_language": "hi",
+    "response_language": "hi",
+    "available_translations": ["hi", "en", "ta", "te", "mr", "gu", "bn"]
+  }
+}
