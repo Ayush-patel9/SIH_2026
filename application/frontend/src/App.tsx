@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ExplainabilityView, DOMAIN_PRESETS, CEMENT_MOCK_DATA } from './features/explainability';
+import { DOMAIN_PRESETS, CEMENT_MOCK_DATA } from './features/explainability';
 import { AuditTrailView } from './features/audit';
 import { FeedbackView } from './features/feedback';
 import { AlertsView, NotificationBell, AlertDrawer } from './features/alerts';
@@ -8,6 +8,8 @@ import { QueryUnderstandingView, QueryEntityDisplay } from './features/queryUnde
 import { NITGeneratorView } from './features/nitGenerator';
 import { MCPView } from './features/mcp';
 import { DashboardView } from './features/dashboard';
+import { ProcurementOfficerPanel, AuditorPanel, VendorPanel } from './features/roles';
+import { TenderUploadView } from './features/tenderUpload';
 import { queryStandards } from './api/standardsClient';
 import { useRole } from './store/roleStore';
 import { RoleSwitcher } from './components/RoleSwitcher';
@@ -27,6 +29,7 @@ export default function App() {
     | 'nitGenerator'
     | 'mcp'
     | 'dashboard'
+    | 'tenderUpload'
   >('explainability');
   const [isAlertDrawerOpen, setIsAlertDrawerOpen] = useState(false);
   const [activeData, setActiveData] = useState<StandardsResponse>(CEMENT_MOCK_DATA);
@@ -198,6 +201,13 @@ export default function App() {
             </button>
             <button
               type="button"
+              className={`mode-toggle-btn ${activeFeature === 'tenderUpload' ? 'active' : ''}`}
+              onClick={() => setActiveFeature('tenderUpload')}
+            >
+              10. Tender Upload
+            </button>
+            <button
+              type="button"
               className={`mode-toggle-btn ${activeFeature === 'dashboard' ? 'active' : ''}`}
               onClick={() => setActiveFeature('dashboard')}
             >
@@ -293,9 +303,23 @@ export default function App() {
           </div>
         )}
 
-        {/* Feature 01: Explainability vs. Black Box */}
+        {/* Feature 01: Role-Adapted Views vs. Black Box */}
         {activeFeature === 'explainability' && (
-          <ExplainabilityView data={activeData} />
+          <>
+            {role === 'PROCUREMENT_OFFICER' && (
+              <ProcurementOfficerPanel
+                data={activeData}
+                onOpenNITGenerator={() => setActiveFeature('nitGenerator')}
+              />
+            )}
+            {role === 'AUDITOR' && (
+              <AuditorPanel
+                data={activeData}
+                onOpenCertificate={() => setActiveFeature('audit')}
+              />
+            )}
+            {role === 'VENDOR' && <VendorPanel data={activeData} />}
+          </>
         )}
 
         {/* Feature 02: Audit Trail & Legal Defensibility */}
@@ -367,6 +391,16 @@ export default function App() {
         {/* Feature 09: Model Context Protocol (MCP) Server Workbench */}
         {activeFeature === 'mcp' && (
           <MCPView currentData={activeData} />
+        )}
+
+        {/* Feature 10: Automated Tender Document Analyser */}
+        {activeFeature === 'tenderUpload' && (
+          <TenderUploadView
+            onSelectItem={(item) => {
+              setActiveData(item);
+              setActiveFeature('explainability');
+            }}
+          />
         )}
 
         {/* Feature 11: Dashboard Analytics & Usage Heatmap */}

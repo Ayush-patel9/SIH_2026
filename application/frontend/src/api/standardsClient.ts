@@ -1,7 +1,12 @@
 import type { QueryRequest, StandardsResponse, FeedbackRequest, AlertPayload, UserRole, QueryMode, SupportedLanguage } from '../types';
 
-const USE_MOCK = import.meta.env.VITE_USE_MOCK !== 'false';
-const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:8000';
+const USE_MOCK =
+  typeof import.meta !== 'undefined' && import.meta.env
+    ? import.meta.env.VITE_USE_MOCK !== 'false'
+    : true;
+const API_BASE =
+  (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_BASE) ||
+  'http://localhost:8000';
 
 function delay(ms: number) {
   return new Promise((r) => setTimeout(r, ms));

@@ -3,7 +3,6 @@ import cementMock from '../fixtures/cement_mock.json';
 import hdpeMock from '../fixtures/hdpe_mock.json';
 import ledMock from '../fixtures/led_mock.json';
 import cctvMock from '../fixtures/cctv_mock.json';
-import alertMock from '../fixtures/alert_payload_mock.json';
 import { DOMAIN_PRESETS } from '../features/explainability/mockGraphData';
 import { roleStore } from '../store/roleStore';
 
