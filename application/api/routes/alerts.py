@@ -20,18 +20,42 @@ try:
 except Exception as _e:
     ALERTS_STORE = []
 
-@router.get("/alerts", response_model=List[Dict[str, Any]], summary="Get Proactive Staleness Alerts")
+@router.get("/alerts", response_model=List[Dict[str, Any]], summary="Get Proactive Staleness Alerts List")
 def get_alerts():
     """
-    Returns active supersession, amendment, and QCO enforcement alerts.
-    Enables procurement officers to prevent compliance liabilities before bid opening.
+    Returns active supersession, amendment, and QCO enforcement alerts list.
     """
-    if not ALERTS_STORE:
+    alerts = ALERTS_STORE
+    if not alerts:
         try:
-            return staleness_monitor.get_active_alerts()
+            alerts = staleness_monitor.get_active_alerts()
         except Exception:
-            return []
-    return ALERTS_STORE
+            alerts = []
+    return alerts
+
+@router.get("/alerts/active", response_model=Dict[str, Any], summary="Get Active Staleness Alerts Payload")
+def get_active_alerts_payload():
+    """
+    Returns active alerts payload object with metadata and counts.
+    """
+    alerts = ALERTS_STORE or staleness_monitor.get_active_alerts()
+    return {
+        "status": "ACTIVE",
+        "total_alerts": len(alerts),
+        "alerts": alerts,
+        "timestamp": datetime.now(timezone.utc).isoformat()
+    }
+
+@router.get("/alerts/feed", response_model=Dict[str, Any], summary="Get Live Gazette & Regulatory Alerts Feed")
+def get_alerts_feed():
+    """Returns formatted real-time gazette updates and regulatory alerts feed."""
+    alerts = ALERTS_STORE or staleness_monitor.get_active_alerts()
+    return {
+        "status": "LIVE",
+        "total_items": len(alerts),
+        "items": alerts,
+        "timestamp": datetime.now(timezone.utc).isoformat()
+    }
 
 @router.post("/alerts/simulate", response_model=Dict[str, Any], summary="Simulate Gazette / Revision Event")
 def simulate_alert_event(

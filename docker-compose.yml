@@ -13,8 +13,8 @@ services:
       - PORT=8000
       - GEMINI_API_KEYS=${GEMINI_API_KEYS:-}
       - GEMINI_API_KEY=${GEMINI_API_KEY:-}
-      - GEMINI_FLASH_MODEL=${GEMINI_FLASH_MODEL:-gemini-2.5-flash}
-      - GEMINI_PRO_MODEL=${GEMINI_PRO_MODEL:-gemini-2.5-pro}
+      - GEMINI_FLASH_MODEL=${GEMINI_FLASH_MODEL:-gemini-3.8-flash}
+      - GEMINI_PRO_MODEL=${GEMINI_PRO_MODEL:-gemini-3.8-flash}
     volumes:
       - ./pipeline/data:/app/pipeline/data:ro
     healthcheck:
