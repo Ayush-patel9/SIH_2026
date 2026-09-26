@@ -179,7 +179,7 @@ class TriRetrievalLayer:
         logger.info(f"Tri-Retrieval Layer ready with {len(self.standards_by_num)} standards, {len(self.crs_products)} CRS products, {len(self.normative_ref_graph)} normative graph nodes.")
 
     def _build_vector_index(self):
-        """Constructs a BM25/TF-IDF token index for fast, semantic candidate scoring."""
+        """Constructs a BM25 inverted index with morphological stemming and multi-field representations."""
         self.doc_lengths: Dict[int, int] = {}
         self.inverted_index: Dict[str, List[Tuple[int, float]]] = defaultdict(list)
         self.total_docs = len(self.master_standards)
@@ -188,7 +188,12 @@ class TriRetrievalLayer:
         doc_tokens_list = []
 
         for idx, std in enumerate(self.master_standards):
-            text = f"{std.get('title', '')} {std.get('full_title', '')} {std.get('aspect', '')} {std.get('clause_data', {}).get('clause_1_scope', '')}"
+            text = (
+                f"{std.get('is_number', '')} {std.get('title', '')} {std.get('full_title', '')} "
+                f"{std.get('aspect', '')} {std.get('clause_data', {}).get('clause_1_scope', '')} "
+                f"{' '.join(std.get('ics_codes', []))} {std.get('technical_committee', {}).get('division_code', '')} "
+                f"{' '.join(std.get('supersedes', []))}"
+            )
             tokens = self._tokenize(text)
             self.doc_lengths[idx] = len(tokens)
             doc_tokens_list.append(tokens)
@@ -197,7 +202,7 @@ class TriRetrievalLayer:
 
         self.avg_doc_len = sum(self.doc_lengths.values()) / max(self.total_docs, 1)
 
-        # Build inverted postings with BM25 weights
+        # Build inverted postings with BM25 weights (k1=1.5, b=0.75)
         k1, b = 1.5, 0.75
         for idx, tokens in enumerate(doc_tokens_list):
             tf: Dict[str, int] = defaultdict(int)
@@ -209,12 +214,44 @@ class TriRetrievalLayer:
                 score = idf * (count * (k1 + 1)) / (count + k1 * (1 - b + b * (doc_len / self.avg_doc_len)))
                 self.inverted_index[t].append((idx, score))
 
+    @staticmethod
+    def _stem(word: str) -> str:
+        """Lightweight morphological suffix stemmer for English engineering terms."""
+        w = word.lower().strip()
+        if len(w) <= 3:
+            return w
+        if w.endswith('ies') and len(w) > 4:
+            return w[:-3] + 'y'
+        if w.endswith('es') and not w.endswith('ses') and len(w) > 3:
+            return w[:-2]
+        if w.endswith('s') and not w.endswith('ss') and len(w) > 3:
+            return w[:-1]
+        if w.endswith('ing') and len(w) > 5:
+            return w[:-3]
+        if w.endswith('ed') and len(w) > 4:
+            return w[:-2]
+        if w.endswith('ation') and len(w) > 6:
+            return w[:-5]
+        return w
+
     def _tokenize(self, text: str) -> List[str]:
-        return [t.lower() for t in re.findall(r"\w{2,}", text)]
+        """Extracts stemmed alphanumeric tokens while filtering generic stopwords."""
+        stopwords = {
+            'for', 'and', 'the', 'of', 'in', 'with', 'to', 'at', 'by', 'from', 'as', 'on', 'a', 'an', 'is', 'are', 'be',
+            'shall', 'must', 'under', 'per', 'conforming', 'procurement', 'supply', 'purchase', 'tender', 'specification',
+            'requirements', 'standard', 'standards', 'indian', 'part', 'section', 'code', 'methods', 'method', 'type',
+            'quality', 'use', 'application', 'works', 'system', 'systems'
+        }
+        words = re.findall(r'[a-zA-Z0-9]+', text.lower())
+        tokens = []
+        for w in words:
+            if len(w) >= 2 and w not in stopwords:
+                tokens.append(self._stem(w))
+        return tokens
 
     # --- Retrieval 1: Entity-Weighted Vector / Semantic Search ---
     def retrieve_vector_candidates(self, query_text: str, product_keywords: Optional[List[str]] = None, top_k: int = 15) -> List[Tuple[Dict[str, Any], float]]:
-        """Dense semantic / BM25 candidate retrieval with 4x entity weighting."""
+        """Dense semantic BM25 candidate retrieval with 3x entity keyword weighting."""
         tokens = self._tokenize(query_text)
         prod_tokens = set()
         if product_keywords:
@@ -224,7 +261,7 @@ class TriRetrievalLayer:
         doc_scores: Dict[int, float] = defaultdict(float)
 
         for t in tokens:
-            multiplier = 4.0 if t in prod_tokens else 1.0
+            multiplier = 3.0 if t in prod_tokens else 1.0
             for idx, score in self.inverted_index.get(t, []):
                 doc_scores[idx] += (score * multiplier)
 
