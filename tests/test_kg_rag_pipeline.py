@@ -119,5 +119,41 @@ def test_pipeline_spec_draft_export():
     assert len(response.spec_draft_export.tender_clause_text) > 20
     assert len(response.spec_draft_export.quality_assurance_requirements) > 0
 
+def test_llm_gateway_demand_rotation():
+    """Test 8: Verify LLMGateway single function execution across rotating task demands."""
+    from pipeline.rag_engine.llm_gateway import llm_gateway, LLMTaskType
+
+    # Demand 1: Tender Decomposition
+    decomp = llm_gateway.call(
+        LLMTaskType.TENDER_DECOMPOSITION,
+        document_text="Item 1: 43 Grade OPC Cement. Item 2: Fe 500D TMT Rebars."
+    )
+    assert "extracted_items" in decomp
+    assert len(decomp["extracted_items"]) >= 2
+
+    # Demand 2: Reasoning Synthesis
+    reasoning = llm_gateway.call(
+        LLMTaskType.REASONING_SYNTHESIS,
+        query_text="Ordinary Portland cement",
+        primary={"is_number": "IS 269:2015", "title": "OPC Specification", "certification": {"mandatory": True}},
+        allied_list=[{"is_number": "IS 4031"}],
+        outdated_list=[]
+    )
+    assert "reasoning_trace" in reasoning
+    assert "plain_language_explanation" in reasoning
+    assert "compliance_checklist" in reasoning
+    assert "spec_draft_export" in reasoning
+
+    # Demand 3: Spec Draft Export
+    export_spec = llm_gateway.call(
+        LLMTaskType.SPEC_DRAFT_EXPORT,
+        is_number="IS 1786:2008",
+        title="High Strength Deformed Steel Bars",
+        mandatory=True
+    )
+    assert "tender_clause_text" in export_spec
+    assert "IS 1786:2008" in export_spec["tender_clause_text"]
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
+
