@@ -127,17 +127,34 @@ export const AuditLogEntry: React.FC<AuditLogEntryProps> = ({
         )}
       </div>
 
-      {/* Void Canvas Hash Display Box */}
-      <div style={{ background: 'var(--void)', padding: '8px 12px', borderRadius: '3px', margin: '8px 0 10px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span style={{ fontFamily: 'var(--font-data)', fontSize: '9px', color: '#8890A0', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-            SHA-256 AUDIT HASH
+      {/* Sleek Obsidian SHA-256 Hash Box */}
+      <div
+        style={{
+          background: '#18181B',
+          padding: '10px 14px',
+          borderRadius: 'var(--radius-sm)',
+          margin: '10px 0 12px',
+          border: '1px solid #27272A',
+        }}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
+          <span style={{ fontFamily: 'var(--font-data)', fontSize: '9.5px', color: '#A1A1AA', textTransform: 'uppercase', letterSpacing: '0.06em', fontWeight: 700 }}>
+            🔒 IMMUTABLE SHA-256 AUDIT HASH
           </span>
           <div style={{ display: 'flex', gap: '6px' }}>
             <button
               type="button"
-              className="btn-secondary"
-              style={{ padding: '2px 8px', fontSize: '10px', color: '#FFFFFF', borderColor: 'rgba(255,255,255,0.2)' }}
+              style={{
+                background: '#27272A',
+                border: '1px solid #3F3F46',
+                borderRadius: 'var(--radius-xs)',
+                padding: '2px 8px',
+                fontSize: '10px',
+                color: '#FAFAFA',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-ui)',
+                fontWeight: 500,
+              }}
               onClick={handleCopyHash}
             >
               {copied ? 'Copied ✓' : 'Copy'}
@@ -145,8 +162,17 @@ export const AuditLogEntry: React.FC<AuditLogEntryProps> = ({
             {onVerify && (
               <button
                 type="button"
-                className="btn-secondary"
-                style={{ padding: '2px 8px', fontSize: '10px', color: '#60A5FA', borderColor: 'rgba(96,165,250,0.3)' }}
+                style={{
+                  background: 'rgba(37, 99, 235, 0.2)',
+                  border: '1px solid rgba(37, 99, 235, 0.4)',
+                  borderRadius: 'var(--radius-xs)',
+                  padding: '2px 8px',
+                  fontSize: '10px',
+                  color: '#93C5FD',
+                  cursor: 'pointer',
+                  fontFamily: 'var(--font-ui)',
+                  fontWeight: 600,
+                }}
                 onClick={() => onVerify(hash)}
               >
                 Verify
@@ -158,10 +184,10 @@ export const AuditLogEntry: React.FC<AuditLogEntryProps> = ({
           style={{
             fontFamily: 'var(--font-data)',
             fontSize: '11px',
-            color: '#EEF0F4',
+            color: '#F4F4F5',
             wordBreak: 'break-all',
-            marginTop: '4px',
             letterSpacing: '0.02em',
+            lineHeight: 1.4,
           }}
         >
           {hash}

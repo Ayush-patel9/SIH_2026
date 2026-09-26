@@ -11,7 +11,12 @@ export type FeatureKey =
   | 'mcp'
   | 'dashboard'
   | 'tenderUpload'
-  | 'integrations';
+  | 'integrations'
+  | 'graph3d'
+  | 'gazetteRadar'
+  | 'timeMachine'
+  | 'cagAudit'
+  | 'voiceStudio';
 
 interface MobileBottomNavProps {
   activeFeature: FeatureKey;

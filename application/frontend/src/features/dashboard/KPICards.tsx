@@ -1,7 +1,7 @@
 /**
  * KPICards.tsx
  * Institutional KPI metrics summary row with high tabular density,
- * dark theme cards, and formatted Indian numbering.
+ * crisp white cards, and formatted Indian numbering.
  */
 
 import React from 'react';
@@ -16,48 +16,54 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
     {
       label: 'TOTAL QUERIES SCREENED',
       value: metrics.totalQueries.toLocaleString('en-IN'),
-      color: 'var(--paper)',
-      borderColor: 'var(--hairline)',
+      accentColor: 'var(--ink)',
+      badgeBg: 'var(--surface-secondary)',
+      badgeColor: 'var(--ink-secondary)',
       delta: '+18.4% MoM',
       subtext: 'Across 90-day surveillance window',
     },
     {
       label: 'OFFICIAL AUDIT RECORDS',
       value: metrics.officialRecommendations.toLocaleString('en-IN'),
-      color: '#4B88FF',
-      borderColor: 'rgba(27, 79, 224, 0.4)',
+      accentColor: 'var(--focus-blue)',
+      badgeBg: 'rgba(37, 99, 235, 0.08)',
+      badgeColor: 'var(--focus-blue)',
       delta: 'CVC Compliant',
       subtext: 'SHA-256 locked & verifiable',
     },
     {
       label: 'EXPERT TRUST SCORE',
       value: `${metrics.trustScorePercent}%`,
-      color: 'var(--emerald-pass)',
-      borderColor: 'rgba(16, 130, 80, 0.4)',
+      accentColor: 'var(--emerald-pass)',
+      badgeBg: 'var(--emerald-bg)',
+      badgeColor: 'var(--emerald-text)',
       delta: `${metrics.verifiedCorrections} Verified`,
       subtext: 'Human-in-the-loop consensus',
     },
     {
       label: 'PENDING MODERATIONS',
       value: metrics.pendingFeedback.toLocaleString('en-IN'),
-      color: 'var(--signal-amber)',
-      borderColor: 'rgba(224, 152, 43, 0.4)',
+      accentColor: 'var(--saffron)',
+      badgeBg: 'var(--saffron-bg)',
+      badgeColor: 'var(--saffron-text)',
       delta: 'Action Required',
       subtext: 'Awaiting BIS expert review',
     },
     {
       label: 'STANDARDS MONITORED',
       value: metrics.standardsCovered.toLocaleString('en-IN'),
-      color: '#A08DFF',
-      borderColor: 'rgba(110, 90, 214, 0.4)',
+      accentColor: 'var(--superposition-violet)',
+      badgeBg: 'var(--superposition-bg)',
+      badgeColor: 'var(--superposition-violet)',
       delta: 'Active Gazette',
       subtext: '14 BIS Technical Divisions',
     },
     {
       label: 'OUTDATED INTERCEPTIONS',
       value: (108).toLocaleString('en-IN'),
-      color: 'var(--error-line)',
-      borderColor: 'rgba(194, 59, 59, 0.4)',
+      accentColor: 'var(--error-red)',
+      badgeBg: 'var(--error-bg)',
+      badgeColor: 'var(--error-red)',
       delta: '100% Diverted',
       subtext: 'Prevented non-compliant tenders',
     },
@@ -76,14 +82,16 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
         <div
           key={card.label}
           style={{
-            backgroundColor: 'var(--void)',
-            border: `1px solid ${card.borderColor}`,
-            borderRadius: '4px',
+            backgroundColor: 'var(--surface)',
+            border: '1px solid var(--hairline)',
+            borderTop: `3px solid ${card.accentColor}`,
+            borderRadius: 'var(--radius-sm)',
             padding: '14px 16px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
+            boxShadow: 'var(--shadow-sm)',
+            transition: 'all 0.15s ease',
           }}
         >
           <div
@@ -97,10 +105,10 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
             <span
               style={{
                 fontFamily: 'var(--font-data)',
-                fontSize: '10px',
+                fontSize: '9.5px',
                 letterSpacing: '0.06em',
                 color: 'var(--ink-muted)',
-                fontWeight: 600,
+                fontWeight: 700,
               }}
             >
               {card.label}
@@ -109,10 +117,11 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
               style={{
                 fontFamily: 'var(--font-data)',
                 fontSize: '10px',
-                color: card.color,
-                backgroundColor: 'rgba(255,255,255,0.06)',
-                padding: '1px 6px',
-                borderRadius: '3px',
+                fontWeight: 600,
+                color: card.badgeColor,
+                backgroundColor: card.badgeBg,
+                padding: '2px 6px',
+                borderRadius: 'var(--radius-xs)',
               }}
             >
               {card.delta}
@@ -122,11 +131,11 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
           <div
             style={{
               fontFamily: 'var(--font-data)',
-              fontSize: '26px',
+              fontSize: '24px',
               fontWeight: 700,
-              color: card.color,
+              color: 'var(--ink)',
               lineHeight: 1.1,
-              marginBottom: '6px',
+              marginBottom: '4px',
             }}
           >
             {card.value}
@@ -136,7 +145,7 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
             style={{
               fontFamily: 'var(--font-prose)',
               fontSize: '11px',
-              color: '#8890A0',
+              color: 'var(--ink-muted)',
               lineHeight: 1.3,
             }}
           >

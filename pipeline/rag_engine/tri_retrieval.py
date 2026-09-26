@@ -94,7 +94,18 @@ TIER2_NORM_FALLBACKS = {
     ],
     "CHD": [  # Chemicals, Polymers, Fire Safety
         {"is_number": "IS 12235", "relation_type": "TEST_METHOD", "relation_label": "Hydrostatic Pressure Test", "why": "Mandatory hydrostatic pressure and dimensions test for thermoplastic pipes."},
-        {"is_number": "IS 4308", "relation_type": "TEST_METHOD", "relation_label": "Extinguisher Powder Test", "why": "Mandatory chemical purity and fire-extinguishing efficiency test."}
+        {"is_number": "IS 4308", "relation_type": "TEST_METHOD", "relation_label": "Extinguisher Powder Test", "why": "Mandatory chemical purity and fire-extinguishing efficiency test."},
+        {"is_number": "IS 2190", "relation_type": "INSTALLATION_CODE", "relation_label": "Fire Safety Code of Practice", "why": "Selection, installation and maintenance of first-aid fire extinguishers."}
+    ],
+    "MTD": [  # Metallurgical Engineering, Precious Metals & Hallmarking
+        {"is_number": "IS 1418", "relation_type": "TEST_METHOD", "relation_label": "Fire Assay Gold Testing", "why": "Mandatory fire assay (cupellation) method for gold fineness verification."},
+        {"is_number": "IS 16757", "relation_type": "TEST_METHOD", "relation_label": "XRF Assay Testing", "why": "Non-destructive X-ray fluorescence spectrometry for precious metals."},
+        {"is_number": "IS 2270", "relation_type": "TERMINOLOGY_STANDARD", "relation_label": "Precious Metals Glossary", "why": "Standard terms and definitions relating to precious metals and hallmarking."},
+        {"is_number": "IS 15820", "relation_type": "INSTALLATION_CODE", "relation_label": "Assaying Centre Competence", "why": "General requirements for competence of Assaying & Hallmarking Centres."}
+    ],
+    "MED": [  # Mechanical Engineering & Equipment
+        {"is_number": "IS 2825", "relation_type": "SAFETY_STANDARD", "relation_label": "Pressure Vessel Safety Code", "why": "Safety code for unfired pressure vessels and relief systems."},
+        {"is_number": "IS 1800", "relation_type": "TERMINOLOGY_STANDARD", "relation_label": "Iron and Steel Terminology", "why": "Standard glossary of terms relating to iron and steel products."}
     ]
 }
 
@@ -403,6 +414,84 @@ class TriRetrievalLayer:
                         "label": "Allied normative reference"
                     })
 
+            # Add safety standards
+            for sf in matched_ref_entry.get("safety_standards", []):
+                sf_key = normalize_is_key(sf)
+                if sf_key not in seen_allied and sf_key != norm_key:
+                    seen_allied.add(sf_key)
+                    sf_std = self.standards_by_num.get(sf_key)
+                    allied_nodes.append({
+                        "is_number": sf,
+                        "standard_id": sf_std.get("standard_id", sf) if sf_std else sf,
+                        "title": sf_std.get("title", f"Safety Standard ({sf})") if sf_std else f"Safety and Protective Standard",
+                        "relation_type": "SAFETY_STANDARD",
+                        "relation_label": "Safety Standard",
+                        "status": sf_std.get("status", "ACTIVE") if sf_std else "ACTIVE",
+                        "confidence": 0.94,
+                        "why": f"Mandatory electrical, fire, and personnel safety requirements per {sf}."
+                    })
+                edge_tup = (norm_key, sf, "SAFETY_STANDARD")
+                if edge_tup not in seen_edges:
+                    seen_edges.add(edge_tup)
+                    graph_edges.append({
+                        "from": norm_key,
+                        "to": sf,
+                        "edge_type": "SAFETY_STANDARD",
+                        "label": "Mandates safety/protective norms"
+                    })
+
+            # Add terminology standards
+            for tm_term in matched_ref_entry.get("terminology_standards", []):
+                tm_k = normalize_is_key(tm_term)
+                if tm_k not in seen_allied and tm_k != norm_key:
+                    seen_allied.add(tm_k)
+                    t_std = self.standards_by_num.get(tm_k)
+                    allied_nodes.append({
+                        "is_number": tm_term,
+                        "standard_id": t_std.get("standard_id", tm_term) if t_std else tm_term,
+                        "title": t_std.get("title", f"Glossary & Terminology ({tm_term})") if t_std else f"Terminology Standard",
+                        "relation_type": "TERMINOLOGY_STANDARD",
+                        "relation_label": "Terminology & Definition Standard",
+                        "status": t_std.get("status", "ACTIVE") if t_std else "ACTIVE",
+                        "confidence": 0.91,
+                        "why": f"Standardized technical terminology, definitions, and classifications defined in {tm_term}."
+                    })
+                edge_tup = (norm_key, tm_term, "TERMINOLOGY_STANDARD")
+                if edge_tup not in seen_edges:
+                    seen_edges.add(edge_tup)
+                    graph_edges.append({
+                        "from": norm_key,
+                        "to": tm_term,
+                        "edge_type": "TERMINOLOGY_STANDARD",
+                        "label": "Defines domain terminology"
+                    })
+
+            # Add related product standards
+            for rp in matched_ref_entry.get("related_products", []):
+                rp_key = normalize_is_key(rp)
+                if rp_key not in seen_allied and rp_key != norm_key:
+                    seen_allied.add(rp_key)
+                    rp_std = self.standards_by_num.get(rp_key)
+                    allied_nodes.append({
+                        "is_number": rp,
+                        "standard_id": rp_std.get("standard_id", rp) if rp_std else rp,
+                        "title": rp_std.get("title", f"Related Product Standard ({rp})") if rp_std else f"Related Product Specification",
+                        "relation_type": "RELATED_PRODUCT",
+                        "relation_label": "Related Product Standard",
+                        "status": rp_std.get("status", "ACTIVE") if rp_std else "ACTIVE",
+                        "confidence": 0.89,
+                        "why": f"Interoperable or alternative product standard {rp} for procurement specification."
+                    })
+                edge_tup = (norm_key, rp, "RELATED_PRODUCT")
+                if edge_tup not in seen_edges:
+                    seen_edges.add(edge_tup)
+                    graph_edges.append({
+                        "from": norm_key,
+                        "to": rp,
+                        "edge_type": "RELATED_PRODUCT",
+                        "label": "Related/alternative product specification"
+                    })
+
             # Add reverse references
             for rb in matched_ref_entry.get("referenced_by", []):
                 edge_tup = (rb, norm_key, "REFERENCED_BY")
@@ -531,6 +620,21 @@ class TriRetrievalLayer:
         elif re.search(r"\b(motorcycle\s*helmets?|two\s*wheeler\s*helmets?|protective\s*helmets?\s*for\s*riders?)\b", query_text, re.IGNORECASE):
             if "IS 4151" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 4151"], 0.99, "PRODUCT_GRADE_MATCH (IS 4151)"))
+        if re.search(r"\b(gold\s*jewell?ery|gold\s*artefacts?|gold\s*bullion|22k\s*gold|18k\s*gold|huid|hallmarked\s*gold|सोने\s*के\s*आभूषण)\b", query_text, re.IGNORECASE):
+            if "IS 1417" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 1417"], 0.99, "PRODUCT_GRADE_MATCH (IS 1417 Hallmarking)"))
+        if re.search(r"\b(silver\s*jewell?ery|silver\s*artefacts?|silver\s*bullion|hallmarked\s*silver|चांदी\s*के\s*आभूषण)\b", query_text, re.IGNORECASE):
+            if "IS 2112" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 2112"], 0.99, "PRODUCT_GRADE_MATCH (IS 2112 Hallmarking)"))
+        if re.search(r"\b(fire\s*extinguishers?|portable\s*fire\s*extinguishers?|अग्निशामक)\b", query_text, re.IGNORECASE):
+            if "IS 15683" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 15683"], 0.99, "PRODUCT_GRADE_MATCH (IS 15683)"))
+        if re.search(r"\b(solar\s*pv\s*modules?|photovoltaic\s*modules?|solar\s*panels?|सौर\s*पैनल)\b", query_text, re.IGNORECASE):
+            if "IS 14286" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 14286"], 0.99, "PRODUCT_GRADE_MATCH (IS 14286)"))
+        if re.search(r"\b(surgical\s*rubber\s*gloves?|medical\s*gloves?|examination\s*gloves?)\b", query_text, re.IGNORECASE):
+            if "IS 4148" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 4148"], 0.99, "PRODUCT_GRADE_MATCH (IS 4148)"))
 
         # 2. Check CRS Electronics Catalog for Specific IT Terms (Laptops, Tablets, etc.)
         crs_stopwords = {

@@ -81,31 +81,9 @@ export const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
             cursor: 'pointer',
           }}
         >
-          <Globe size={14} style={{ color: 'var(--collapse-cobalt)' }} />
+          <Globe size={13} style={{ color: 'var(--focus-blue)' }} />
           <span style={{ fontWeight: 600 }}>{currentInfo.nativeName}</span>
-          <span style={{ fontSize: '10px', color: 'var(--ink-muted)' }}>({currentInfo.name})</span>
         </button>
-
-        {bhashiniUsed && (
-          <span
-            style={{
-              fontFamily: 'var(--font-data)',
-              fontSize: '10px',
-              fontWeight: 700,
-              background: 'rgba(27, 79, 224, 0.1)',
-              color: 'var(--collapse-cobalt)',
-              border: '1px solid rgba(27, 79, 224, 0.3)',
-              borderRadius: '2px',
-              padding: '2px 6px',
-              whiteSpace: 'nowrap',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '4px',
-            }}
-          >
-            <span>🌐</span> BHASHINI NLP ✓
-          </span>
-        )}
       </div>
 
       {isOpen && (

@@ -609,13 +609,13 @@ Approved by Technical Review Committee (ManakAI Automated Vigilance Audit)
                     className="font-mono"
                     style={{
                       width: '100%',
-                      fontSize: '11px',
-                      background: 'var(--void)',
-                      color: '#00FF66',
-                      padding: '12px',
-                      borderRadius: '4px',
-                      lineHeight: '1.4',
-                      border: '1px solid var(--hairline)',
+                      fontSize: '12px',
+                      background: '#18181B',
+                      color: '#F4F4F5',
+                      padding: '12px 14px',
+                      borderRadius: 'var(--radius-sm)',
+                      lineHeight: '1.5',
+                      border: '1px solid #27272A',
                     }}
                   />
                 </div>

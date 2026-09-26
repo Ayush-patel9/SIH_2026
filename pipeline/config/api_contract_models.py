@@ -100,7 +100,7 @@ class AlliedStandard(BaseModel):
     is_number: str
     standard_id: str
     title: str
-    relation_type: str = "NORMATIVE_REFERENCE"  # TEST_METHOD | NORMATIVE_REFERENCE | RAW_MATERIAL_SPEC | INSTALLATION_CODE | CROSS_DISCIPLINARY
+    relation_type: str = "NORMATIVE_REFERENCE"  # TEST_METHOD | NORMATIVE_REFERENCE | RAW_MATERIAL_SPEC | INSTALLATION_CODE | SAFETY_STANDARD | TERMINOLOGY_STANDARD | RELATED_PRODUCT | CROSS_DISCIPLINARY
     relation_label: str = "Normative Reference"
     status: str = "ACTIVE"
     confidence: float = 0.85

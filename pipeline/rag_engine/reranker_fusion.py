@@ -178,18 +178,26 @@ class RerankerAndFusion:
         elif isinstance(qco_raw, dict):
             qco_item = qco_raw
 
-        is_crs = "LITD" in str(primary_std.get("technical_committee", {}).get("division_code", "")) or "13252" in top_key or "16046" in top_key or "616" in top_key
-        is_mandatory = bool(qco_item or primary_std.get("regulatory_compliance", {}).get("is_mandatory") or is_crs or top_key in ["IS 269", "IS 1786", "IS 456", "IS 694", "IS 302", "IS 4984", "IS 15658", "IS 2925"])
+        is_hallmark = (qco_item.get("scheme") == "HALLMARKING") or top_key in ["IS 1417", "IS 2112"]
+        is_crs = not is_hallmark and ("LITD" in str(primary_std.get("technical_committee", {}).get("division_code", "")) or "13252" in top_key or "16046" in top_key or "616" in top_key)
+        is_mandatory = bool(qco_item or primary_std.get("regulatory_compliance", {}).get("is_mandatory") or is_crs or is_hallmark or top_key in ["IS 269", "IS 1786", "IS 456", "IS 694", "IS 302", "IS 4984", "IS 15658", "IS 2925", "IS 1417", "IS 2112"])
 
-        scheme_type = "BIS_CRS" if is_crs else ("BIS_ISI_MARK" if is_mandatory else "VOLUNTARY")
+        if is_hallmark:
+            scheme_type = "BIS_HALLMARK"
+        elif is_crs:
+            scheme_type = "BIS_CRS"
+        elif is_mandatory:
+            scheme_type = "BIS_ISI_MARK"
+        else:
+            scheme_type = "VOLUNTARY"
 
         cert_info = CertificationInfo(
             scheme=scheme_type,
             mandatory=is_mandatory,
-            qco_order_name=qco_item.get("order_name") or qco_item.get("product") or (f"{'Compulsory Registration Order (MeitY)' if is_crs else 'Quality Control Order'}" if is_mandatory else None),
-            qco_gazette_ref=qco_item.get("gazette") or qco_item.get("notification_number") or ("S.O. 2357(E)" if is_crs else "SO 3764(E)"),
-            notifying_ministry=qco_item.get("ministry") or ("Ministry of Electronics and Information Technology (MeitY)" if is_crs else "Ministry of Commerce and Industry"),
-            enforcement_date=qco_item.get("enforcement_date") or qco_item.get("date_of_implementation") or "2021-01-20"
+            qco_order_name=qco_item.get("order_name") or qco_item.get("product") or (f"{'Hallmarking of Gold & Silver Artefacts Order' if is_hallmark else ('Compulsory Registration Order (MeitY)' if is_crs else 'Quality Control Order')}" if is_mandatory else None),
+            qco_gazette_ref=qco_item.get("gazette") or qco_item.get("notification_number") or ("SO 3620(E)" if is_hallmark else ("S.O. 2357(E)" if is_crs else "SO 3764(E)")),
+            notifying_ministry=qco_item.get("ministry") or ("Ministry of Consumer Affairs, Food & Public Distribution" if is_hallmark else ("Ministry of Electronics and Information Technology (MeitY)" if is_crs else "Ministry of Commerce and Industry")),
+            enforcement_date=qco_item.get("enforcement_date") or qco_item.get("date_of_implementation") or ("2021-06-16" if is_hallmark else "2021-01-20")
         )
 
         confidence_val = min(max(top_entry["vector_score"] * 0.5 + top_entry["exact_score"] * 0.35 + top_entry["graph_boost"] + 0.1, 0.75), 0.98)

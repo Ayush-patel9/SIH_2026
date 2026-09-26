@@ -124,13 +124,13 @@ export const MCPConfigSnippet: React.FC = () => {
         className="font-mono"
         style={{
           width: '100%',
-          fontSize: '11px',
-          lineHeight: '1.45',
-          background: 'var(--void)',
-          color: '#00FF66',
-          padding: '12px',
-          borderRadius: '4px',
-          border: '1px solid var(--hairline)',
+          fontSize: '12px',
+          lineHeight: '1.5',
+          background: '#18181B',
+          color: '#F4F4F5',
+          padding: '12px 14px',
+          borderRadius: 'var(--radius-sm)',
+          border: '1px solid #27272A',
         }}
       />
     </div>
