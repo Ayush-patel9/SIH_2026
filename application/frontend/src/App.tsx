@@ -11,7 +11,7 @@ import { DashboardView } from './features/dashboard';
 import { ProcurementOfficerPanel, AuditorPanel, VendorPanel } from './features/roles';
 import { TenderUploadView } from './features/tenderUpload';
 import { IntegrationSandboxView } from './features/integrations';
-import { queryStandards, getAlerts } from './api/standardsClient';
+import { getAlerts, streamQueryOverSocket, connectAlertsSocket, type PipelineSocketEvent } from './api/standardsClient';
 import { useRole } from './store/roleStore';
 import { RoleSwitcher } from './components/RoleSwitcher';
 import { SandboxBanner } from './components/SandboxBanner';
@@ -33,9 +33,36 @@ export default function App() {
   );
   const [isLoading, setIsLoading] = useState(false);
   const [queryError, setQueryError] = useState<string | null>(null);
+  const [isSocketLive, setIsSocketLive] = useState(false);
+  const [currentStage, setCurrentStage] = useState<{ stage: number; name: string; detail: string } | null>(null);
 
   useEffect(() => {
     getAlerts().then(setAlerts).catch(console.error);
+
+    // Connect real-time alerts websocket
+    const disconnectAlerts = connectAlertsSocket(
+      (snapshot) => {
+        setAlerts(snapshot);
+        setIsSocketLive(true);
+      },
+      (liveAlert) => {
+        setAlerts((prev) => [liveAlert, ...prev]);
+        const stdNum = liveAlert.affected_standard?.is_number || 'Standard Update';
+        const action = liveAlert.recommended_action || liveAlert.affected_standard?.event || 'Supersession notice received.';
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: prev.length,
+            type: 'grounded-observation',
+            text: `🚨 Live Alert Broadcast [${liveAlert.severity}]: ${stdNum} — ${action}`,
+          },
+        ]);
+      }
+    );
+
+    return () => {
+      disconnectAlerts();
+    };
   }, []);
 
   // Authority Stream (Right Column) Messages
@@ -54,9 +81,44 @@ export default function App() {
     if (!searchQuery.trim() || isLoading) return;
     setIsLoading(true);
     setQueryError(null);
+    setCurrentStage({ stage: 0, name: 'Input Ingestion', detail: 'Connecting to GraphRAG WebSocket pipeline...' });
+
     try {
-      const result = await queryStandards(searchQuery, { mode, role, language });
+      const result = await streamQueryOverSocket(
+        searchQuery,
+        { mode, role, language },
+        (evt: PipelineSocketEvent) => {
+          setIsSocketLive(true);
+          if (evt.type === 'stage_start' && evt.stage !== undefined) {
+            setCurrentStage({
+              stage: evt.stage,
+              name: evt.name || `Stage ${evt.stage}`,
+              detail: evt.detail || '',
+            });
+          } else if (evt.type === 'authority_log' && evt.log) {
+            setMessages((prev) => [
+              ...prev,
+              {
+                id: prev.length,
+                type: 'grounded-observation',
+                text: `⚡ [Live Pipeline Stage 4]: ${evt.log}`,
+              },
+            ]);
+          } else if (evt.type === 'stage_complete' && evt.stage === 1 && evt.normalized_query) {
+            setMessages((prev) => [
+              ...prev,
+              {
+                id: prev.length,
+                type: 'grounded-observation',
+                text: `✨ [AI Call #1 Gemini Flash]: Normalized query to "${evt.normalized_query}" (Detected Lang: ${evt.detected_language || 'en'}).`,
+              },
+            ]);
+          }
+        }
+      );
+
       setActiveData(result);
+      setCurrentStage(null);
       setMessages((prev) => [
         ...prev,
         {
@@ -67,6 +129,7 @@ export default function App() {
       ]);
     } catch (e: any) {
       setQueryError(e.message || 'Failed to query standards intelligence engine');
+      setCurrentStage(null);
     } finally {
       setIsLoading(false);
     }
@@ -264,6 +327,35 @@ export default function App() {
             bhashiniUsed={activeData?.multilingual?.bhashini_used}
           />
 
+          {/* Live Pipeline / WebSocket Indicator */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '4px 10px',
+              borderRadius: '20px',
+              background: isSocketLive ? 'rgba(16, 185, 129, 0.12)' : 'rgba(100, 116, 139, 0.12)',
+              border: `1px solid ${isSocketLive ? 'var(--emerald-pass)' : 'var(--border)'}`,
+              fontFamily: 'var(--font-data)',
+              fontSize: '11px',
+              fontWeight: 600,
+              color: isSocketLive ? 'var(--emerald-pass)' : 'var(--ink-muted)',
+            }}
+            title={isSocketLive ? "Live WebSocket connection active on ws://localhost:8000 (Gemini 3.8 Flash)" : "Local Engine / Mock Fallback"}
+          >
+            <span
+              style={{
+                width: '7px',
+                height: '7px',
+                borderRadius: '50%',
+                backgroundColor: isSocketLive ? 'var(--emerald-pass)' : '#94A3B8',
+                boxShadow: isSocketLive ? '0 0 8px var(--emerald-pass)' : 'none',
+              }}
+            />
+            {isSocketLive ? 'WS LIVE (PORT 8000)' : 'LOCAL ENGINE'}
+          </div>
+
           <NotificationBell alerts={alerts} onClick={() => setIsAlertDrawerOpen(true)} />
 
           <div className="auth-user-badge">
@@ -306,6 +398,50 @@ export default function App() {
             ))}
           </div>
 
+          {/* Real-time Stage Progression Banner */}
+          {currentStage && (
+            <div
+              style={{
+                marginTop: '12px',
+                padding: '10px 14px',
+                borderRadius: '6px',
+                background: 'linear-gradient(90deg, rgba(79, 70, 229, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%)',
+                border: '1px solid var(--superposition-violet)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+              }}
+            >
+              <div
+                style={{
+                  width: '28px',
+                  height: '28px',
+                  borderRadius: '50%',
+                  background: 'var(--superposition-violet)',
+                  color: '#fff',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontFamily: 'var(--font-data)',
+                  fontWeight: 700,
+                  fontSize: '12px',
+                  flexShrink: 0,
+                }}
+              >
+                {currentStage.stage}
+              </div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontFamily: 'var(--font-data)', fontSize: '12px', fontWeight: 700, color: 'var(--superposition-violet)' }}>
+                  STAGE {currentStage.stage}/7: {currentStage.name.toUpperCase()}
+                </div>
+                <div style={{ fontFamily: 'var(--font-prose)', fontSize: '12px', color: 'var(--ink-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {currentStage.detail}
+                </div>
+              </div>
+              <span className="status-dot active" style={{ flexShrink: 0 }} />
+            </div>
+          )}
+
           <div style={{ display: 'flex', gap: '8px', marginTop: '12px' }}>
             <input
               type="text"
@@ -324,7 +460,7 @@ export default function App() {
               onClick={handleAnalyze}
               disabled={isLoading}
             >
-              {isLoading ? 'Analyzing...' : 'Analyze'}
+              {isLoading ? 'Streaming...' : 'Analyze'}
             </button>
           </div>
 

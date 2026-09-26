@@ -105,7 +105,9 @@ class NLPExtractor:
             try:
                 res_dict = llm_gateway.call(
                     LLMTaskType.QUERY_UNDERSTANDING_CALL_1,
-                    raw_text=text
+                    raw_text=text,
+                    user_language=detected_lang,
+                    language=detected_lang
                 )
                 stage1_obj = QueryUnderstandingStage1.model_validate(res_dict)
                 
@@ -123,8 +125,9 @@ class NLPExtractor:
                         confidence=0.95
                     ))
 
+                final_lang = detected_lang if (detected_lang != "en" or not stage1_obj.language_detected) else stage1_obj.language_detected
                 return QueryUnderstanding(
-                    detected_language=stage1_obj.language_detected or detected_lang,
+                    detected_language=final_lang,
                     original_text=text,
                     normalized_text=stage1_obj.normalized_query_en or text,
                     extracted_entities=entities,

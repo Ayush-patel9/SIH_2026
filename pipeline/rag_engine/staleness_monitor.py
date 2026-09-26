@@ -242,6 +242,11 @@ class StalenessMonitor:
         s = re.sub(r"\s+", " ", s).strip()
         return s
 
+    def get_all_alerts(self, limit: int = 50) -> List[Dict[str, Any]]:
+        """Alias for get_active_alerts returning up to limit alerts."""
+        alerts = self.get_active_alerts()
+        return alerts[:limit] if limit else alerts
+
     def get_active_alerts(self) -> List[Dict[str, Any]]:
         """
         Returns a list of AlertPayload dicts from the catalogue and live tender scan.

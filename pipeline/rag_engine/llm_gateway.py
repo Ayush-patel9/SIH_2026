@@ -89,8 +89,8 @@ class LLMGateway:
         self.keys = [k.strip() for k in raw_keys.split(",") if k.strip()]
         self._key_cycle = itertools.cycle(self.keys) if self.keys else None
         
-        self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", "gemini-2.5-flash")
-        self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", "gemini-2.5-pro")
+        self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", "gemini-3.8-flash")
+        self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", "gemini-3.8-flash")
         
         self._has_genai = False
         try:
@@ -173,6 +173,16 @@ class LLMGateway:
                 logger.warning(f"AI Call #1 (Query Understanding) failed, falling back to rule-based: {e}")
 
         # Deterministic Fallback for AI Call #1
+        lang_detected = kwargs.get("user_language") or kwargs.get("language") or "en"
+        if re.search(r"[\u0900-\u097F]", clean_text):
+            lang_detected = "hi"
+        elif re.search(r"[\u0B80-\u0BFF]", clean_text):
+            lang_detected = "ta"
+        elif re.search(r"[\u0C00-\u0C7F]", clean_text):
+            lang_detected = "te"
+        elif re.search(r"[\u0980-\u09FF]", clean_text):
+            lang_detected = "bn"
+
         existing_citations = re.findall(r"\b(?:IS|SP|IS/ISO|IS/IEC)\s*\d{2,5}(?:\s*:\s*\d{4})?", clean_text, re.IGNORECASE)
         existing_clean = [re.sub(r"\s+", " ", c).strip().upper() for c in existing_citations]
         
@@ -180,7 +190,7 @@ class LLMGateway:
         
         # Identify attributes
         attributes = []
-        for pat in [r"\b(43\s*grade|53\s*grade|33\s*grade)\b", r"\b(fe\s*500d?|fe\s*550d?|fe\s*415)\b", r"\b(\d+hp|\d+\s*kw)\b", r"\b(pn\s*\d+|110mm|160mm)\b"]:
+        for pat in [r"\b(43\s*grade|53\s*grade|33\s*grade)\b", r"\b(fe\s*500d?|fe\s*550d?|fe\s*415)\b", r"\b(\d+hp|\d+\s*kw)\b", r"\b(pn\s*\d+|110mm|160mm|80mm)\b"]:
             m = re.search(pat, clean_text, re.IGNORECASE)
             if m:
                 attributes.append(m.group(1).strip())
@@ -190,7 +200,7 @@ class LLMGateway:
 
         return {
             "normalized_query_en": clean_text,
-            "language_detected": "en",
+            "language_detected": lang_detected,
             "product_category": product_guess[:60] or "General Procurement Item",
             "technical_attributes": attributes,
             "existing_is_citations_found": existing_clean,
@@ -356,45 +366,49 @@ class LLMGateway:
         }
 
     def _raw_generate_json(self, prompt: str, schema: Optional[Type[T]] = None, model_type: str = "flash") -> Dict[str, Any]:
-        """Internal low-level runner across available keys."""
+        """Internal low-level runner across available keys and models."""
         if not self.is_available():
             raise RuntimeError("LLM Gateway is in offline mode.")
 
-        model_name = self.default_pro_model if model_type == "pro" else self.default_flash_model
+        primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
+        fallback_models = [primary_model, "gemini-3.8-flash", "gemini-flash-latest"]
+        # Deduplicate while preserving order
+        candidate_models = list(dict.fromkeys(fallback_models))[:2]
+        
         attempts = max(len(self.keys), 1)
         last_error = None
 
-        for attempt in range(attempts):
-            key = self.get_next_key()
-            try:
-                self.genai.configure(api_key=key)
-                model = self.genai.GenerativeModel(model_name)
-                
-                system_instruction = "You are an expert Indian Standards (BIS) intelligence AI. Output strict JSON only without markdown formatting."
-                full_prompt = f"{system_instruction}\n\nTask:\n{prompt}\n\nOutput JSON matching schema."
-                
-                response = model.generate_content(
-                    full_prompt,
-                    generation_config={"response_mime_type": "application/json"}
-                )
-                
-                text = response.text.strip()
-                if text.startswith("```"):
-                    text = re.sub(r"^```(?:json)?\s*", "", text)
-                    text = re.sub(r"\s*```$", "", text)
-                
-                data = json.loads(text)
-                if schema:
-                    validated = schema.model_validate(data)
-                    return validated.model_dump()
-                return data
+        for model_name in candidate_models:
+            for attempt in range(attempts):
+                key = self.get_next_key()
+                try:
+                    self.genai.configure(api_key=key)
+                    model = self.genai.GenerativeModel(model_name)
+                    
+                    system_instruction = "You are an expert Indian Standards (BIS) intelligence AI. Output strict JSON only without markdown formatting."
+                    full_prompt = f"{system_instruction}\n\nTask:\n{prompt}\n\nOutput JSON matching schema."
+                    
+                    response = model.generate_content(
+                        full_prompt,
+                        generation_config={"response_mime_type": "application/json"}
+                    )
+                    
+                    text = response.text.strip()
+                    if text.startswith("```"):
+                        text = re.sub(r"^```(?:json)?\s*", "", text)
+                        text = re.sub(r"\s*```$", "", text)
+                    
+                    data = json.loads(text)
+                    if schema:
+                        validated = schema.model_validate(data)
+                        return validated.model_dump()
+                    return data
 
-            except Exception as e:
-                logger.warning(f"LLM attempt {attempt + 1}/{attempts} failed with key ...{key[-4:] if key else 'None'}: {e}")
-                last_error = e
-                continue
+                except Exception as e:
+                    last_error = e
+                    continue
 
-        raise RuntimeError(f"All LLM keys exhausted. Last error: {last_error}")
+        raise RuntimeError(f"All LLM keys and models exhausted. Last error: {last_error}")
 
 # Master singleton instance
 llm_gateway = LLMGateway()
