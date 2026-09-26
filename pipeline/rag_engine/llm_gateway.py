@@ -227,9 +227,20 @@ class LLMGateway:
             except Exception as e:
                 logger.warning(f"LLM Tender Decomposition failed, using rule-based fallback: {e}")
 
-        # Deterministic Fallback
-        split_pattern = r"(?:\r?\n\s*)+(?=(?:Item|Clause|BOQ|Schedule)\s*(?:No\.?)?\s*\d+[:.]|\d+\.\s+[A-Z])|(?=\b(?:Item|Clause)\s*(?:No\.?)?\s*\d+[:.])|\n{2,}"
-        raw_paras = [p.strip() for p in re.split(split_pattern, clean_text, flags=re.IGNORECASE) if len(p.strip()) > 15]
+        # Deterministic Fallback with inline item splitting support
+        normalized_text = re.sub(r"(?<=[.!?;\n])\s*(?=(?:Item\s*[A-Za-z0-9]+|Clause\s*[A-Za-z0-9]+|\b\d+[\.:]\s+))", "\n", clean_text, flags=re.IGNORECASE)
+        lines = [line.strip() for line in normalized_text.splitlines() if line.strip()]
+        raw_paras = []
+        current_para = []
+        for line in lines:
+            if re.match(r"^(?:Item\s*[A-Za-z0-9]+|Clause\s*[A-Za-z0-9]+|\d+[\.:])", line, re.IGNORECASE) and current_para:
+                raw_paras.append("\n".join(current_para))
+                current_para = [line]
+            else:
+                current_para.append(line)
+        if current_para:
+            raw_paras.append("\n".join(current_para))
+
         if not raw_paras:
             raw_paras = [clean_text] if clean_text else ["Procurement clause item 1"]
 
@@ -242,7 +253,8 @@ class LLMGateway:
             cited = re.findall(r"\b(?:IS|SP|IS/ISO|IS/IEC)\s*\d{2,5}(?:\s*:\s*\d{4})?", para, re.IGNORECASE)
             cited_clean = [re.sub(r"\s+", " ", c).strip().upper() for c in cited]
 
-            product_guess = re.sub(r"\b(procurement|supply|purchase|tender|of|for|the|and|in|mandatory|as per|conforming to|item\s*\d+:?)\b", " ", para[:120], flags=re.IGNORECASE)
+            cleaned_head = re.sub(r"^(?:Item\s*[A-Za-z0-9]+|Clause\s*[A-Za-z0-9]+|\d+[\.:])\s*[:\.-]?\s*", "", para, flags=re.IGNORECASE)
+            product_guess = re.sub(r"\b(procurement|supply|purchase|tender|of|for|the|and|in|mandatory|as per|conforming to)\b", " ", cleaned_head[:120], flags=re.IGNORECASE)
             product_guess = re.sub(r"\s+", " ", product_guess).strip()
 
             items.append({
@@ -379,8 +391,7 @@ class LLMGateway:
         last_error = None
 
         for model_name in candidate_models:
-            for attempt in range(attempts):
-                key = self.get_next_key()
+            for key in self.keys:
                 try:
                     self.genai.configure(api_key=key)
                     model = self.genai.GenerativeModel(model_name)
@@ -406,6 +417,9 @@ class LLMGateway:
 
                 except Exception as e:
                     last_error = e
+                    # If quota exhausted (429), break immediately to avoid long blocking delays
+                    if "429" in str(e) or "quota" in str(e).lower():
+                        break
                     continue
 
         raise RuntimeError(f"All LLM keys and models exhausted. Last error: {last_error}")

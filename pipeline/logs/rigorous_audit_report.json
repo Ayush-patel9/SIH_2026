@@ -1,0 +1,312 @@
+{
+  "timestamp": "2026-09-26T19:55:40.270341+00:00",
+  "summary": {
+    "total_tests": 33,
+    "passed_tests": 33,
+    "failed_tests": 0,
+    "pass_rate_pct": 100.0,
+    "total_duration_sec": 37.87,
+    "avg_latency_ms": 1130.95,
+    "p50_latency_ms": 1587.51,
+    "p95_latency_ms": 2674.99
+  },
+  "test_results": [
+    {
+      "layer": "Layer 1",
+      "test_name": "1.1 Master BIS Standards Catalogue Census",
+      "status": "PASSED",
+      "duration_ms": 113.0,
+      "details": "Indexed 22,011 standards (Requirement: >= 20,000 OKF BIS standards).",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:02.516777+00:00"
+    },
+    {
+      "layer": "Layer 1",
+      "test_name": "1.2 Normative Dependency Knowledge Graph",
+      "status": "PASSED",
+      "duration_ms": 15.58,
+      "details": "Knowledge graph contains 10,452 statutory cross-reference edges.",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:02.532398+00:00"
+    },
+    {
+      "layer": "Layer 1",
+      "test_name": "1.3 Mandatory QCO & CRS Gazette Matrix",
+      "status": "PASSED",
+      "duration_ms": 0.94,
+      "details": "Active QCOs: 70 standards, CRS IT Schemes: 47 categories.",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:02.533369+00:00"
+    },
+    {
+      "layer": "Layer 2",
+      "test_name": "2.1 Hindi Vernacular Query Extraction (Bhashini/Indic)",
+      "status": "PASSED",
+      "duration_ms": 2674.99,
+      "details": "Resolved: 'IS 269' (Detected Lang: hi)",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:05.223456+00:00"
+    },
+    {
+      "layer": "Layer 2",
+      "test_name": "2.2 Tamil Technical Term Translation",
+      "status": "PASSED",
+      "duration_ms": 0.11,
+      "details": "Translation: '\u0b95\u0b9f\u0bcd\u0b9f\u0bc1\u0bae\u0bbe\u0ba9\u0ba4\u0bcd\u0ba4\u0bbf\u0bb1\u0bcd\u0b95\u0bbe\u0ba9 \u0b8e\u0b83\u0b95\u0bc1 High Strength Deformed Steel Bars\u0b95\u0bb3\u0bcd' (Bhashini Live: False)",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:05.223614+00:00"
+    },
+    {
+      "layer": "Layer 2",
+      "test_name": "2.3 Typo & Fuzzy Technical Term Recovery",
+      "status": "PASSED",
+      "duration_ms": 938.01,
+      "details": "Recovered Entities: ['procuremnt portlnd cemnt 43grd concrite'] (Normalized: 'procuremnt of portlnd cemnt 43grd for concrite')",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:06.161663+00:00"
+    },
+    {
+      "layer": "Layer 3",
+      "test_name": "3.1 Dense FAISS Retrieval with Keyword Boosting",
+      "status": "PASSED",
+      "duration_ms": 0.43,
+      "details": "Top Candidate: IS 8112 (Specification for 43 grade ordinary Port)",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:06.665505+00:00"
+    },
+    {
+      "layer": "Layer 3",
+      "test_name": "3.2 Exact IS Code Regex & Lexicon Lookup",
+      "status": "PASSED",
+      "duration_ms": 0.11,
+      "details": "Matched: IS 1786 (High strength deformed steel bars and wi)",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:06.665656+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.01 Ordinary Portland Cement (Highway)",
+      "status": "PASSED",
+      "duration_ms": 2148.25,
+      "details": "Resolved: IS 269 (Specification for Ordinary Portland Ceme...) | Allied: 34 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:08.838938+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.02 Seismic Fe 500D TMT Rebars",
+      "status": "PASSED",
+      "duration_ms": 1640.29,
+      "details": "Resolved: IS 1786 (High strength deformed steel bars and wi...) | Allied: 16 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:10.479313+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.03 E250 Structural Steel Plates",
+      "status": "PASSED",
+      "duration_ms": 1736.65,
+      "details": "Resolved: IS 2062 (Hot Rolled Medium and High Tensile Struc...) | Allied: 40 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:12.216012+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.04 IP CCTV Surveillance Cameras",
+      "status": "PASSED",
+      "duration_ms": 1927.53,
+      "details": "Resolved: IS 13252 (Information Technology Equipment -- Safe...) | Allied: 54 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:14.143590+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.05 11kV XLPE Insulated Cables",
+      "status": "PASSED",
+      "duration_ms": 2066.6,
+      "details": "Resolved: IS 7098 (PART 2) (Crosslinked Polyethylene Insulated Therm...) | Allied: 18 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:16.210217+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.06 HDPE Pipes 110mm PN6",
+      "status": "PASSED",
+      "duration_ms": 1713.46,
+      "details": "Resolved: IS 4984 (Polyethylene Pipes for Water Supply - Sp...) | Allied: 6 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:17.923734+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.07 Industrial Safety Helmets",
+      "status": "PASSED",
+      "duration_ms": 1767.85,
+      "details": "Resolved: IS 2925 (Specification for Industrial Safety Helm...) | Allied: 4 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:19.691637+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.08 Self-Ballasted LED Street Lamps",
+      "status": "PASSED",
+      "duration_ms": 1677.44,
+      "details": "Resolved: IS 16102 (PART 1) (Self - Ballasted LED Lamps for General L...) | Allied: 23 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:21.369154+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.09 Government School Laptops (CRS)",
+      "status": "PASSED",
+      "duration_ms": 1757.37,
+      "details": "Resolved: IS 13252 (Information Technology Equipment -- Safe...) | Allied: 54 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:23.126568+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.10 Precast Concrete Paver Blocks",
+      "status": "PASSED",
+      "duration_ms": 1684.94,
+      "details": "Resolved: IS 15658 (Concrete Paving Blocks - Specification (...) | Allied: 10 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:24.811555+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.11 Hindi Vernacular Cement Query",
+      "status": "PASSED",
+      "duration_ms": 1638.49,
+      "details": "Resolved: IS 269 (Specification for Ordinary Portland Ceme...) | Allied: 34 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:26.450089+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.12 Tamil Vernacular Steel Query",
+      "status": "PASSED",
+      "duration_ms": 4813.11,
+      "details": "Resolved: IS 1786 (High strength deformed steel bars and wi...) | Allied: 16 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:31.263264+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.13 Supersession Trap: IS 8112:1989",
+      "status": "PASSED",
+      "duration_ms": 1721.48,
+      "details": "Resolved: IS 269 (Specification for Ordinary Portland Ceme...) | Allied: 34 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:32.984815+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.14 Supersession Trap: IS 12269:1987",
+      "status": "PASSED",
+      "duration_ms": 1452.71,
+      "details": "Resolved: IS 269 (Specification for Ordinary Portland Ceme...) | Allied: 34 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:34.437551+00:00"
+    },
+    {
+      "layer": "Layer 4",
+      "test_name": "4.15 Allied Testing: Concrete Aggregates",
+      "status": "PASSED",
+      "duration_ms": 1679.12,
+      "details": "Resolved: IS 456 (Plain and Reinforced Concrete - Code of ...) | Allied: 81 | Conf: 98% | Mandate: True",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:36.116725+00:00"
+    },
+    {
+      "layer": "Layer 5",
+      "test_name": "5.1 Cryptographic SHA-256 Audit Seal Integrity",
+      "status": "PASSED",
+      "duration_ms": 1681.62,
+      "details": "SHA-256: e34c8fd72fb318f2dc97b4b3b0f18c8bc9aad8de8808b210024a0baf1b0e0d3b | Timestamp: 2026-09-26T19:55:37.798285+00:00",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:37.798434+00:00"
+    },
+    {
+      "layer": "Layer 5",
+      "test_name": "5.2 CVC Circular & RTI Evidentiary Defensibility",
+      "status": "PASSED",
+      "duration_ms": 0.0,
+      "details": "Audit Logged: True | RTI Exportable: True | Dry Run: False",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:37.798484+00:00"
+    },
+    {
+      "layer": "Layer 6",
+      "test_name": "6.1 MCP Tool: get_standard_recommendation",
+      "status": "PASSED",
+      "duration_ms": 1587.51,
+      "details": "Recommended: IS 269",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:39.386044+00:00"
+    },
+    {
+      "layer": "Layer 6",
+      "test_name": "6.2 MCP Tool: check_standard_status (Supersession)",
+      "status": "PASSED",
+      "duration_ms": 0.04,
+      "details": "Status: WITHDRAWN | Replaced by: IS 269:2015",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:39.386119+00:00"
+    },
+    {
+      "layer": "Layer 6",
+      "test_name": "6.3 MCP Tool: list_active_alerts",
+      "status": "PASSED",
+      "duration_ms": 0.32,
+      "details": "Found 5 active regulatory alerts.",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:39.386455+00:00"
+    },
+    {
+      "layer": "Layer 6",
+      "test_name": "6.4 MCP Tool: generate_nit_clause",
+      "status": "PASSED",
+      "duration_ms": 0.06,
+      "details": "Portal Template: standard_gem | Clause Length: 1547 chars",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:39.386540+00:00"
+    },
+    {
+      "layer": "Layer 6",
+      "test_name": "6.5 MCP Tool: find_testing_labs (LIMS Integration)",
+      "status": "PASSED",
+      "duration_ms": 2.0,
+      "details": "Found 5 accredited testing laboratories.",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:39.388566+00:00"
+    },
+    {
+      "layer": "Layer 6",
+      "test_name": "6.6 MCP Tool: verify_isi_licensee",
+      "status": "PASSED",
+      "duration_ms": 0.64,
+      "details": "Found 1 operative BIS licensee records.",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:39.389239+00:00"
+    },
+    {
+      "layer": "Layer 7",
+      "test_name": "7.1 Multi-Item Tender Clause Decomposition",
+      "status": "PASSED",
+      "duration_ms": 880.65,
+      "details": "Decomposed 3 distinct procurement items with 100% compliance mapping.",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:40.270001+00:00"
+    },
+    {
+      "layer": "Layer 7",
+      "test_name": "7.2 PDF Extraction Engine & OCR Resiliency",
+      "status": "PASSED",
+      "duration_ms": 0.1,
+      "details": "Verified fallback PDF engine readiness (pdfplumber + OCR tesseract).",
+      "metadata": {},
+      "timestamp": "2026-09-26T19:55:40.270177+00:00"
+    }
+  ]
+}
