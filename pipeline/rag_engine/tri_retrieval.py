@@ -236,33 +236,52 @@ class TriRetrievalLayer:
         if w.endswith('es') and not w.endswith('ses') and len(w) > 3:
             return w[:-2]
         if w.endswith('s') and not w.endswith('ss') and len(w) > 3:
-            return w[:-1]
+            w = w[:-1]
         if w.endswith('ing') and len(w) > 5:
             return w[:-3]
         if w.endswith('ed') and len(w) > 4:
             return w[:-2]
         if w.endswith('ation') and len(w) > 6:
             return w[:-5]
+        if w.endswith('ers') and len(w) > 4:
+            return w[:-3]
+        if w.endswith('er') and len(w) > 4:
+            return w[:-2]
+        if w.endswith('ors') and len(w) > 4:
+            return w[:-3]
+        if w.endswith('or') and len(w) > 4:
+            return w[:-2]
+        if w.endswith('ive') and len(w) > 4:
+            return w[:-3]
+        if w.endswith('ment') and len(w) > 5:
+            return w[:-4]
+        if w.endswith('ical') and len(w) > 5:
+            return w[:-4]
+        if w.endswith('ic') and len(w) > 4:
+            return w[:-2]
         return w
 
     def _tokenize(self, text: str) -> List[str]:
-        """Extracts stemmed alphanumeric tokens while filtering generic stopwords."""
+        """Extracts stemmed and unstemmed alphanumeric tokens while filtering generic stopwords."""
         stopwords = {
             'for', 'and', 'the', 'of', 'in', 'with', 'to', 'at', 'by', 'from', 'as', 'on', 'a', 'an', 'is', 'are', 'be',
-            'shall', 'must', 'under', 'per', 'conforming', 'procurement', 'supply', 'purchase', 'tender', 'specification',
-            'requirements', 'standard', 'standards', 'indian', 'part', 'section', 'code', 'methods', 'method', 'type',
-            'quality', 'use', 'application', 'works', 'system', 'systems'
+            'shall', 'must', 'under', 'per', 'conforming', 'procurement', 'supply', 'purchase', 'tender',
+            'requirements', 'standard', 'standards', 'indian', 'part', 'section', 'code', 'methods', 'method',
+            'quality', 'use', 'works', 'system', 'systems'
         }
         words = re.findall(r'[a-zA-Z0-9]+', text.lower())
         tokens = []
         for w in words:
             if len(w) >= 2 and w not in stopwords:
-                tokens.append(self._stem(w))
+                tokens.append(w)
+                st = self._stem(w)
+                if st != w and len(st) >= 2:
+                    tokens.append(st)
         return tokens
 
     # --- Retrieval 1: Entity-Weighted Vector / Semantic Search ---
     def retrieve_vector_candidates(self, query_text: str, product_keywords: Optional[List[str]] = None, top_k: int = 15) -> List[Tuple[Dict[str, Any], float]]:
-        """Dense semantic BM25 candidate retrieval with 3x entity keyword weighting."""
+        """Dense semantic BM25 candidate retrieval with 3x entity keyword weighting and fallback substring match."""
         tokens = self._tokenize(query_text)
         prod_tokens = set()
         if product_keywords:
@@ -275,6 +294,15 @@ class TriRetrievalLayer:
             multiplier = 3.0 if t in prod_tokens else 1.0
             for idx, score in self.inverted_index.get(t, []):
                 doc_scores[idx] += (score * multiplier)
+
+        if not doc_scores:
+            # Substring scan across 22,011 titles if token index had 0 hits
+            q_words = [w.lower() for w in re.findall(r'[a-zA-Z0-9]+', query_text) if len(w) >= 3]
+            for idx, std in enumerate(self.master_standards):
+                t_lower = (std.get("title", "") + " " + std.get("is_number", "")).lower()
+                matches = sum(1 for w in q_words if w in t_lower)
+                if matches > 0:
+                    doc_scores[idx] = float(matches)
 
         if not doc_scores:
             return []
@@ -536,7 +564,37 @@ class TriRetrievalLayer:
                     "label": f"Mandates {edge.get('relation_type', 'reference').lower()}"
                 })
 
-        # 3. Tier 2: Domain matrix fallback if fewer than 2 allied standards or fewer than 3 edges
+        # 3. Multi-Hop / 2-Hop Knowledge Graph Traversal (Recursive Dependency Expansion)
+        hop1_keys = list(seen_allied)[:5]
+        for h1_num in hop1_keys:
+            h1_key = normalize_is_key(h1_num)
+            for h2_edge in self.normative_graph.get(h1_key, [])[:2]:
+                h2_target = h2_edge.get("target", "")
+                h2_key = normalize_is_key(h2_target)
+                if h2_key and h2_key not in seen_allied and h2_key != norm_key:
+                    seen_allied.add(h2_key)
+                    h2_std = self.standards_by_num.get(h2_key)
+                    allied_nodes.append({
+                        "is_number": h2_target,
+                        "standard_id": h2_std.get("standard_id", h2_target) if h2_std else h2_target,
+                        "title": h2_std.get("title", f"Allied Normative Reference ({h2_target})") if h2_std else f"Indian Standard {h2_target}",
+                        "relation_type": "2_HOP_NORMATIVE",
+                        "relation_label": "2-Hop Secondary Dependency",
+                        "status": h2_std.get("status", "ACTIVE") if h2_std else "ACTIVE",
+                        "confidence": 0.86,
+                        "why": f"Cited by primary test method {h1_num} as secondary calibration/testing standard."
+                    })
+                    edge_tup = (h1_key, h2_target, "2_HOP_NORMATIVE")
+                    if edge_tup not in seen_edges:
+                        seen_edges.add(edge_tup)
+                        graph_edges.append({
+                            "from": h1_key,
+                            "to": h2_target,
+                            "edge_type": "2_HOP_NORMATIVE",
+                            "label": f"Cited by {h1_num} (2-Hop Dependency)"
+                        })
+
+        # 4. Tier 2: Domain matrix fallback if fewer than 2 allied standards or fewer than 3 edges
         if len(allied_nodes) < 2 or len(graph_edges) < 3:
             std_obj = self.standards_by_num.get(norm_key, {})
             div = std_obj.get("technical_committee", {}).get("division_code", "CED")
@@ -585,53 +643,127 @@ class TriRetrievalLayer:
         q_norm = query_text.strip().lower()
 
         # 1. Product & Acronym Direct High-Confidence Mappings (0.99 priority)
-        if re.search(r"\b(43\s*grade|53\s*grade|33\s*grade|ordinary\s*portland\s*cement|opc)\b", query_text, re.IGNORECASE):
+        # --- Electronics & Power ---
+        if re.search(r"\b(chargers?|charging|mobile\s*chargers?|phone\s*chargers?|laptop\s*chargers?|fast\s*chargers?|power\s*adapters?|power\s*adaptors?|smps|power\s*supply\s*units?|ac\s*dc\s*adapters?|usb\s*chargers?|wall\s*chargers?)\b", query_text, re.IGNORECASE):
+            if re.search(r"\b(ev|electric\s*vehicle|car|bus|station|conductive)\b", query_text, re.IGNORECASE):
+                if "IS 17017 (PART 1)" in self.standards_by_num:
+                    results.append((self.standards_by_num["IS 17017 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 17017 EV Charging)"))
+            elif "IS 13252 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 13252 (PART 1)"], 0.99, "CRS_ELECTRONIC_MATCH (Power Adapters for IT Equipment / Mobile Chargers)"))
+            elif "IS 616" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 616"], 0.98, "CRS_ELECTRONIC_MATCH (Power Adapters for Audio/Video)"))
+
+        if re.search(r"\b(power\s*banks?|lithium\s*ion|li\s*ion|battery\s*packs?|secondary\s*cells?)\b", query_text, re.IGNORECASE):
+            if "IS 16046 (PART 2)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 16046 (PART 2)"], 0.99, "CRS_ELECTRONIC_MATCH (Secondary Lithium Cells / Battery Packs)"))
+            elif "IS 13252 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 13252 (PART 1)"], 0.98, "CRS_ELECTRONIC_MATCH (Power Banks)"))
+
+        if re.search(r"\b(laptops?|notebooks?|tablets?|computers?|desktops?|servers?)\b", query_text, re.IGNORECASE):
+            if "IS 13252 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 13252 (PART 1)"], 0.99, "CRS_ELECTRONIC_MATCH (Laptop / Notebook / Tablet Computers)"))
+
+        if re.search(r"\b(cctv|video\s*surveillance|security\s*camera|ip\s*camera|सीसीटीवी)\b", query_text, re.IGNORECASE):
+            if "IS 13252 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 13252 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 13252 CCTV Surveillance)"))
+
+        if re.search(r"\b(led\s*lamps?|led\s*bulbs?|led\s*luminaires?|led\s*street\s*lights?|self\s*ballasted\s*led)\b", query_text, re.IGNORECASE):
+            if "IS 16102 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 16102 (PART 1)"], 0.99, "CRS_ELECTRONIC_MATCH (Self-Ballasted LED Lamps)"))
+
+        if re.search(r"\b(solar\s*pv\s*modules?|photovoltaic\s*modules?|solar\s*panels?|सौर\s*पैनल)\b", query_text, re.IGNORECASE):
+            if "IS 14286" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 14286"], 0.99, "PRODUCT_GRADE_MATCH (IS 14286 Solar PV Modules)"))
+
+        if re.search(r"\b(transformers?|distribution\s*transformers?|power\s*transformers?)\b", query_text, re.IGNORECASE):
+            if "IS 1180 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 1180 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 1180 Part 1 Distribution Transformers)"))
+            elif "IS 2026 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 2026 (PART 1)"], 0.98, "PRODUCT_GRADE_MATCH (IS 2026 Power Transformers)"))
+
+        # --- Civil, Metals & Construction ---
+        if re.search(r"\b(cement|portland\s*cement|43\s*grade|53\s*grade|33\s*grade|opc|ppc|सीमेंट)\b", query_text, re.IGNORECASE):
             if "IS 269" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 269"], 0.99, "PRODUCT_GRADE_MATCH (IS 269)"))
-        if re.search(r"\b(tmt|fe\s*500d?|fe\s*550d?|deformed\s*steel\s*bars|thermo\s*mechanically)\b", query_text, re.IGNORECASE):
+                results.append((self.standards_by_num["IS 269"], 0.99, "PRODUCT_GRADE_MATCH (IS 269 Cement)"))
+
+        if re.search(r"\b(tmt|rebars?|fe\s*500d?|fe\s*550d?|deformed\s*steel\s*bars|thermo\s*mechanically|reinforcing\s*steel)\b", query_text, re.IGNORECASE):
             if "IS 1786" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 1786"], 0.99, "PRODUCT_GRADE_MATCH (IS 1786)"))
+
+        if re.search(r"\b(structural\s*steel|e250|e350|steel\s*plates|steel\s*sections|girder|bridge\s*steel)\b", query_text, re.IGNORECASE):
+            if "IS 2062" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 2062"], 0.99, "PRODUCT_GRADE_MATCH (IS 2062)"))
+
         if re.search(r"\b(hdpe|high\s*density\s*polyethylene)[\w\s\(\)]*?\bpipes?\b", query_text, re.IGNORECASE):
             if "IS 4984" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 4984"], 0.99, "PRODUCT_GRADE_MATCH (IS 4984)"))
+
         if re.search(r"\b(upvc|unplasticized\s*polyvinyl\s*chloride|pvc)[\w\s\(\)]*?\bpipes?\b", query_text, re.IGNORECASE):
             if "IS 13592" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 13592"], 0.99, "PRODUCT_GRADE_MATCH (IS 13592)"))
+
+        if re.search(r"\b(di\s*pipes?|ductile\s*iron\s*pipes?)\b", query_text, re.IGNORECASE):
+            if "IS 8329" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 8329"], 0.99, "PRODUCT_GRADE_MATCH (IS 8329)"))
+
+        if re.search(r"\b(gi\s*pipes?|mild\s*steel\s*tubes?|erw\s*pipes?|galvanized\s*steel\s*pipes?)\b", query_text, re.IGNORECASE):
+            if "IS 1239 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 1239 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 1239)"))
+
         if re.search(r"\b(xlpe|cross\s*linked\s*polyethylene|11kv|33kv)\b", query_text, re.IGNORECASE):
             if "IS 7098 (PART 2)" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 7098 (PART 2)"], 0.99, "PRODUCT_GRADE_MATCH (IS 7098 Part 2)"))
             elif "IS 7098 (PART 1)" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 7098 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 7098 Part 1)"))
+
+        if re.search(r"\b(pvc\s*cables?|copper\s*wires?|building\s*wires?|flexible\s*cords?)\b", query_text, re.IGNORECASE):
+            if "IS 694" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 694"], 0.99, "PRODUCT_GRADE_MATCH (IS 694)"))
+
+        if re.search(r"\b(switches|switch\s*gear|modular\s*switches?|plugs?|sockets?|plug\s*and\s*socket)\b", query_text, re.IGNORECASE):
+            if "IS 3854" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 3854"], 0.99, "PRODUCT_GRADE_MATCH (IS 3854)"))
+            elif "IS 1293" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 1293"], 0.98, "PRODUCT_GRADE_MATCH (IS 1293)"))
+
         if re.search(r"\b(submersible\s*pumps?(?:et)?|borewell\s*pump|motor\s*pump|మోటారు\s*పంపు|સબમર્સિબલ\s*પંપ)\b", query_text, re.IGNORECASE):
             if "IS 14220" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 14220"], 0.99, "PRODUCT_GRADE_MATCH (IS 14220)"))
+
         if re.search(r"\b(paver\s*blocks?|पेवर\s*ब्लॉक|precast\s*concrete\s*blocks?\s*for\s*paving)\b", query_text, re.IGNORECASE):
             if "IS 15658" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 15658"], 0.99, "PRODUCT_GRADE_MATCH (IS 15658)"))
+
         if re.search(r"\b(aac\s*blocks?|autoclaved\s*aerated\s*concrete)\b", query_text, re.IGNORECASE):
             if "IS 2185 (PART 3)" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 2185 (PART 3)"], 0.99, "PRODUCT_GRADE_MATCH (IS 2185 Part 3)"))
-        if re.search(r"\b(cctv|video\s*surveillance|security\s*camera|सीसीटीवी)\b", query_text, re.IGNORECASE):
-            if "IS 13252 (PART 1)" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 13252 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 13252)"))
+
         if re.search(r"\b(industrial\s*safety\s*helmets?|construction\s*helmets?|safety\s*helmets?|सुरक्षा\s*हेल्मेट|பாதுகாப்பு\s*தலைக்கவசம்)\b", query_text, re.IGNORECASE):
             if "IS 2925" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 2925"], 0.99, "PRODUCT_GRADE_MATCH (IS 2925)"))
         elif re.search(r"\b(motorcycle\s*helmets?|two\s*wheeler\s*helmets?|protective\s*helmets?\s*for\s*riders?)\b", query_text, re.IGNORECASE):
             if "IS 4151" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 4151"], 0.99, "PRODUCT_GRADE_MATCH (IS 4151)"))
+
+        if re.search(r"\b(fire\s*extinguishers?|portable\s*fire\s*extinguishers?|अग्निशामक)\b", query_text, re.IGNORECASE):
+            if "IS 15683" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 15683"], 0.99, "PRODUCT_GRADE_MATCH (IS 15683)"))
+
+        if re.search(r"\b(plywood|marine\s*plywood|commercial\s*plywood|block\s*boards?)\b", query_text, re.IGNORECASE):
+            if "IS 303" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 303"], 0.99, "PRODUCT_GRADE_MATCH (IS 303)"))
+
+        if re.search(r"\b(bitumen|paving\s*bitumen|vg\s*30|vg\s*40|asphalt)\b", query_text, re.IGNORECASE):
+            if "IS 73" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 73"], 0.99, "PRODUCT_GRADE_MATCH (IS 73)"))
+
         if re.search(r"\b(gold\s*jewell?ery|gold\s*artefacts?|gold\s*bullion|22k\s*gold|18k\s*gold|huid|hallmarked\s*gold|सोने\s*के\s*आभूषण)\b", query_text, re.IGNORECASE):
             if "IS 1417" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 1417"], 0.99, "PRODUCT_GRADE_MATCH (IS 1417 Hallmarking)"))
         if re.search(r"\b(silver\s*jewell?ery|silver\s*artefacts?|silver\s*bullion|hallmarked\s*silver|चांदी\s*के\s*आभूषण)\b", query_text, re.IGNORECASE):
             if "IS 2112" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 2112"], 0.99, "PRODUCT_GRADE_MATCH (IS 2112 Hallmarking)"))
-        if re.search(r"\b(fire\s*extinguishers?|portable\s*fire\s*extinguishers?|अग्निशामक)\b", query_text, re.IGNORECASE):
-            if "IS 15683" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 15683"], 0.99, "PRODUCT_GRADE_MATCH (IS 15683)"))
-        if re.search(r"\b(solar\s*pv\s*modules?|photovoltaic\s*modules?|solar\s*panels?|सौर\s*पैनल)\b", query_text, re.IGNORECASE):
-            if "IS 14286" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 14286"], 0.99, "PRODUCT_GRADE_MATCH (IS 14286)"))
+
         if re.search(r"\b(surgical\s*rubber\s*gloves?|medical\s*gloves?|examination\s*gloves?)\b", query_text, re.IGNORECASE):
             if "IS 4148" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 4148"], 0.99, "PRODUCT_GRADE_MATCH (IS 4148)"))
@@ -661,6 +793,7 @@ class TriRetrievalLayer:
 
         # 3. Check Synonym Lexicon (Exact match or substring match for vernacular/Indic phrases)
         matched_synonym = False
+        found_matches = []
         has_high_conf_product = any(score >= 0.99 for _, score, _ in results)
 
         if not has_high_conf_product:
@@ -675,7 +808,6 @@ class TriRetrievalLayer:
             
             if not matched_synonym:
                 # Substring scanning with positional precedence (earliest in sentence is primary)
-                found_matches = []
                 for syn_k, entry in self.synonyms.items():
                     if len(syn_k) >= 2 and syn_k in q_norm:
                         pos = q_norm.find(syn_k)
@@ -684,13 +816,13 @@ class TriRetrievalLayer:
                             target_key = normalize_is_key(target_is.split("/")[0].strip())
                             if target_key in self.standards_by_num:
                                 found_matches.append((pos, -len(syn_k), target_key, syn_k))
-            
-            if found_matches:
-                found_matches.sort()
-                for pos, neg_len, target_key, syn_k in found_matches:
-                    results.append((self.standards_by_num[target_key], 0.98, f"SYNONYM_SUBSTRING_MATCH ({syn_k})"))
-                    matched_synonym = True
-                    break
+                
+                if found_matches:
+                    found_matches.sort()
+                    for pos, neg_len, target_key, syn_k in found_matches:
+                        results.append((self.standards_by_num[target_key], 0.98, f"SYNONYM_SUBSTRING_MATCH ({syn_k})"))
+                        matched_synonym = True
+                        break
 
         # 4. Strict Exact IS Number Lookup (word boundary check)
         exact_matches = re.findall(r"\b(?:IS|SP|IS/ISO|IS/IEC)\s*(\d{2,5}(?:\s*\(Part\s*\d+\))?)", query_text, re.IGNORECASE)

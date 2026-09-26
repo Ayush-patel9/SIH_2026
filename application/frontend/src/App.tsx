@@ -30,39 +30,136 @@ import { CAGAuditSimulatorView } from './features/cagAudit/CAGAuditSimulatorView
 import { BhashiniVoiceStudioView } from './features/voiceStudio/BhashiniVoiceStudioView';
 import { Sparkles, Activity, Cpu, ShieldCheck } from 'lucide-react';
 
-// Fast 1-Click Test Scenarios
-const QUICK_SCENARIOS = [
-  {
-    label: 'Highway OPC Cement',
-    domain: 'cement',
-    query: 'Procurement of 43 grade ordinary portland cement for national highway bridge construction.',
-    isCode: 'IS 269:2015',
-  },
-  {
-    label: 'Seismic TMT Rebars',
-    domain: 'steel',
-    query: 'High strength deformed steel bars Fe 500D grade for seismic zone IV RCC building construction.',
-    isCode: 'IS 1786:2008',
-  },
-  {
-    label: 'Bridge Girder Steel',
-    domain: 'steel',
-    query: 'Structural steel standard quality plates and sections E250 grade for railway bridge girder fabrication.',
-    isCode: 'IS 2062:2011',
-  },
-  {
-    label: 'Smart City CCTV',
-    domain: 'cctv',
-    query: 'High-definition IP surveillance cameras with ONVIF compliance and IR night vision for municipal traffic monitoring.',
-    isCode: 'IS 13252',
-  },
-  {
-    label: '11kV XLPE Cable',
-    domain: 'cctv',
-    query: 'Supply of 11kV cross-linked polyethylene insulated armoured power cables as per IS 7098 Part 2.',
-    isCode: 'IS 7098',
-  },
-];
+// Dynamic parameter and performance extractor for any of the 22,011 Indian Standards
+function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: string }> {
+  if (!primary) {
+    return [
+      { label: '28-DAY STRENGTH', val: '≥ 43.0 MPa (Grade 43)' },
+      { label: 'INITIAL SETTING TIME', val: '≥ 30 Minutes' },
+      { label: 'INSOLUBLE RESIDUE', val: '≤ 4.0% Max' },
+      { label: 'LE CHATELIER EXPANSION', val: '≤ 10.0 mm' },
+    ];
+  }
+
+  const num = (primary.is_number || '').toUpperCase();
+  const title = (primary.title || '').toLowerCase();
+
+  if (num.includes('13252') || title.includes('information technology') || title.includes('power adapter') || title.includes('charger') || title.includes('laptop') || title.includes('cctv')) {
+    return [
+      { label: 'ELECTRIC SHOCK PROTECTION', val: 'Class I / II Insulation' },
+      { label: 'ENERGY HAZARDS & FIRE', val: 'UL94 V-0 Flammability' },
+      { label: 'DIELECTRIC WITHSTAND', val: '≥ 3.0 kV AC RMS Test' },
+      { label: 'TEMPERATURE RISE LIMIT', val: '≤ 65°C Operating Max' },
+    ];
+  }
+
+  if (num.includes('17017') || title.includes('electric vehicle') || title.includes('charging system')) {
+    return [
+      { label: 'CHARGING CONFIGURATION', val: 'Mode 2 / Mode 3 / DC Fast' },
+      { label: 'INGRESS / IMPACT RATING', val: 'IP55 / IK10 Certified' },
+      { label: 'COMMUNICATION PROTOCOL', val: 'CCS2 / Type 2 / ISO 15118' },
+      { label: 'GALVANIC SEPARATION', val: 'Reinforced Electrical Barrier' },
+    ];
+  }
+
+  if (num.includes('16046') || title.includes('lithium') || title.includes('secondary cell') || title.includes('battery')) {
+    return [
+      { label: 'NOMINAL CAPACITY / VOLT', val: '3.7V / High Energy Density' },
+      { label: 'THERMAL RUNAWAY LIMIT', val: '130°C Overcharge Pass' },
+      { label: 'SHORT CIRCUIT TEST', val: 'Dual PCM & PTC Level 1' },
+      { label: 'MECHANICAL DROP TEST', val: '1.0m Drop onto Hardwood' },
+    ];
+  }
+
+  if (num.includes('269') || num.includes('1489') || num.includes('8112') || num.includes('12269') || title.includes('cement')) {
+    return [
+      { label: '28-DAY STRENGTH', val: '≥ 43.0 MPa (Grade 43)' },
+      { label: 'INITIAL SETTING TIME', val: '≥ 30 Minutes' },
+      { label: 'INSOLUBLE RESIDUE', val: '≤ 4.0% Max' },
+      { label: 'LE CHATELIER EXPANSION', val: '≤ 10.0 mm' },
+    ];
+  }
+
+  if (num.includes('1786') || title.includes('deformed') || title.includes('rebar') || title.includes('tmt')) {
+    return [
+      { label: '0.2% PROOF STRESS (YIELD)', val: '≥ 500.0 MPa (Fe 500D)' },
+      { label: 'TENSILE STRENGTH (UTS)', val: '≥ 565.0 MPa (TS/YS ≥ 1.10)' },
+      { label: 'TOTAL ELONGATION (A5)', val: '≥ 16.0% (Uniform ≥ 5%)' },
+      { label: 'CARBON EQUIVALENT (CE)', val: '≤ 0.42% Max (Seismic)' },
+    ];
+  }
+
+  if (num.includes('2062') || title.includes('structural steel')) {
+    return [
+      { label: 'YIELD STRENGTH (Re)', val: '≥ 250 MPa (E250 Grade)' },
+      { label: 'ULTIMATE TENSILE (Rm)', val: '410 – 560 MPa' },
+      { label: 'ELONGATION (A5)', val: '≥ 23.0% (5.65√S₀)' },
+      { label: 'CHARPY IMPACT (0°C)', val: '≥ 27 J Minimum' },
+    ];
+  }
+
+  if (num.includes('4984') || num.includes('4985') || title.includes('hdpe') || title.includes('pipe')) {
+    return [
+      { label: 'HYDROSTATIC STRENGTH', val: '≥ 100 hrs @ 80°C' },
+      { label: 'MELT FLOW RATE (MFR)', val: '0.2 – 1.4 g/10min' },
+      { label: 'CARBON BLACK CONTENT', val: '2.0 – 2.5% Mass' },
+      { label: 'OXIDATION INDUCTION', val: '≥ 20 min @ 200°C' },
+    ];
+  }
+
+  if (num.includes('14286') || title.includes('photovoltaic') || title.includes('solar')) {
+    return [
+      { label: 'NOMINAL VOLTAGE (Vmp)', val: '41.5 V DC Nominal' },
+      { label: 'MODULE EFFICIENCY', val: '≥ 21.5% Mono PERC' },
+      { label: 'MECHANICAL LOAD TEST', val: '5400 Pa Snow / 2400 Pa Wind' },
+      { label: 'HAIL IMPACT RESISTANCE', val: '25 mm Ice Ball @ 23 m/s' },
+    ];
+  }
+
+  if (num.includes('15683') || title.includes('fire extinguisher')) {
+    return [
+      { label: 'FIRE RATING CLASSIFICATION', val: '3A : 34B Rating' },
+      { label: 'DISCHARGE DURATION', val: '≥ 13 Seconds Continuous' },
+      { label: 'BURST PRESSURE TEST', val: '≥ 55 bar Hydrostatic' },
+      { label: 'EXTINGUISHING MEDIUM', val: 'ABC Dry Powder' },
+    ];
+  }
+
+  if (num.includes('1180') || num.includes('2026') || title.includes('transformer')) {
+    return [
+      { label: 'RATED CAPACITY & VOLTAGE', val: 'Up to 2500 kVA / 33 kV' },
+      { label: 'NO-LOAD & LOAD LOSSES', val: 'BEE 5-Star Energy Norms' },
+      { label: 'DIELECTRIC OIL STRENGTH', val: '≥ 60 kV Breakdown Voltage' },
+      { label: 'TEMPERATURE RISE LIMIT', val: 'Top Oil ≤ 35°C / Wdg ≤ 40°C' },
+    ];
+  }
+
+  if (num.includes('16102') || title.includes('led')) {
+    return [
+      { label: 'LUMINOUS EFFICACY', val: '≥ 100 lm/Watt' },
+      { label: 'COLOUR RENDERING (CRI)', val: '≥ 80 Ra' },
+      { label: 'HARMONIC DISTORTION', val: 'THD ≤ 15% (Class C)' },
+      { label: 'SURGE PROTECTION', val: '≥ 2.5 kV (Level 4)' },
+    ];
+  }
+
+  if (num.includes('1417') || num.includes('2112') || title.includes('gold') || title.includes('hallmark')) {
+    return [
+      { label: 'PURITY FINENESS (GOLD)', val: '916 (22K) / 750 (18K)' },
+      { label: 'ASSAY METHOD APPLIED', val: 'Fire Assay (Cupellation)' },
+      { label: 'HUID MARK MANDATE', val: '6-Digit Alphanumeric HUID' },
+      { label: 'RECOGNIZED CENTRE MARK', val: 'BIS Certified A&H Centre' },
+    ];
+  }
+
+  // General standard fallback
+  return [
+    { label: 'STATUTORY SCHEME', val: primary.certification?.mandatory ? 'Mandatory QCO (BIS Act 2016)' : 'Voluntary Scheme I' },
+    { label: 'TECHNICAL COMMITTEE', val: `Division ${primary.division_code || 'National Bureau'}` },
+    { label: 'PUBLICATION REVISION', val: `${primary.year_published || 2020} Edition` },
+    { label: 'CONFORMITY STATUS', val: `${primary.status || 'Active Indian Standard'}` },
+  ];
+}
 
 const FEATURE_TITLES: Record<FeatureKey, string> = {
   explainability: 'Standards Explorer',
@@ -207,20 +304,9 @@ export default function App() {
     setSelectedDomain(domainKey);
     const preset = DOMAIN_PRESETS[domainKey];
     if (preset) {
-      const queryText = `Procurement conforming to ${preset.isCode} (${preset.label})`;
-      setSearchQuery(queryText);
+      setSearchQuery(preset.query);
       setActiveData(preset.data);
     }
-  };
-
-  const handleRunScenario = (sc: typeof QUICK_SCENARIOS[0]) => {
-    setSelectedDomain(sc.domain);
-    setSearchQuery(sc.query);
-    const preset = DOMAIN_PRESETS[sc.domain];
-    if (preset) {
-      setActiveData(preset.data);
-    }
-    handleAnalyze(sc.query);
   };
 
   const handleAskQuestion = (userQ: string) => {
@@ -357,47 +443,41 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* Subtle Category Filter Pills */}
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+                {/* Subtle Unified Category & Role Bar */}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
                   <div className="category-filter-bar">
-                    {Object.entries(DOMAIN_PRESETS).map(([key, preset]) => (
-                      <button
-                        key={key}
-                        type="button"
-                        className={`category-pill ${selectedDomain === key ? 'selected' : ''}`}
-                        onClick={() => handleDomainChange(key)}
-                      >
-                        {preset.label.split('(')[0].trim()}
-                      </button>
-                    ))}
+                    {Object.entries(DOMAIN_PRESETS).map(([key, preset]) => {
+                      const isSelected = selectedDomain === key;
+                      return (
+                        <button
+                          key={key}
+                          type="button"
+                          className={`category-pill ${isSelected ? 'selected' : ''}`}
+                          onClick={() => handleDomainChange(key)}
+                        >
+                          <span>{preset.label}</span>
+                          <span
+                            style={{
+                              fontFamily: 'var(--font-data)',
+                              fontSize: '10.5px',
+                              opacity: isSelected ? 0.9 : 0.6,
+                              marginLeft: '4px',
+                            }}
+                          >
+                            {preset.isCode}
+                          </span>
+                        </button>
+                      );
+                    })}
                   </div>
 
-                  {/* Role & Mode Switcher */}
+                  {/* Role Switcher */}
                   <RoleSwitcher
                     role={role}
                     mode={mode}
                     onRoleChange={setRole}
                     onModeChange={setMode}
                   />
-                </div>
-
-                {/* Test Queries Row */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                  <span style={{ fontFamily: 'var(--font-ui)', fontSize: '11.5px', color: 'var(--ink-muted)', fontWeight: 600 }}>
-                    Test Scenarios:
-                  </span>
-                  {QUICK_SCENARIOS.map((sc, idx) => (
-                    <button
-                      key={idx}
-                      type="button"
-                      onClick={() => handleRunScenario(sc)}
-                      className="scenario-chip"
-                      style={{ fontSize: '11.5px', padding: '4px 10px' }}
-                    >
-                      <span>{sc.label}</span>
-                      <span className="scenario-chip-code">{sc.isCode}</span>
-                    </button>
-                  ))}
                 </div>
 
                 {/* Stage Progression Status */}
@@ -438,9 +518,9 @@ export default function App() {
               {!isLoading && (
                 <div className="workbench-card" style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
                   {/* Top Metadata Row */}
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
-                      <span className="code-monogram" style={{ fontSize: '14px', padding: '3px 8px' }}>
+                      <span className="code-monogram" style={{ fontSize: '13px', padding: '3px 8px' }}>
                         {primary?.is_number}
                       </span>
                       <span className="concept-status-badge active">
@@ -457,8 +537,8 @@ export default function App() {
                       </span>
                     </div>
 
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'var(--surface-secondary)', padding: '4px 10px', borderRadius: 'var(--radius-full)', border: '1px solid var(--hairline)' }}>
+                      <span style={{ fontFamily: 'var(--font-ui)', fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 500 }}>
                         Match Confidence:
                       </span>
                       <span style={{ fontFamily: 'var(--font-data)', fontSize: '12px', fontWeight: 700, color: 'var(--emerald-text)' }}>
@@ -469,36 +549,34 @@ export default function App() {
 
                   {/* Standard Title */}
                   <div>
-                    <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)', lineHeight: 1.3 }}>
+                    <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)', lineHeight: 1.3, margin: 0 }}>
                       {primary?.title}
                     </h1>
                   </div>
 
                   {/* Executive Plain-English Summary */}
                   {primary?.scope_snippet && (
-                    <p style={{ fontSize: '14px', color: 'var(--ink-secondary)', lineHeight: 1.6, margin: 0 }}>
+                    <div style={{
+                      background: 'var(--surface-secondary)',
+                      borderLeft: '3px solid var(--ink)',
+                      padding: '12px 16px',
+                      borderRadius: '0 var(--radius-sm) var(--radius-sm) 0',
+                      fontSize: '13.5px',
+                      color: 'var(--ink-secondary)',
+                      lineHeight: 1.6,
+                    }}>
                       "{primary.scope_snippet}"
-                    </p>
+                    </div>
                   )}
 
                   {/* Key Parameter Metric Mini-Grid */}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '10px' }}>
-                    <div className="metric-mini-tile">
-                      <span className="label">28-Day Strength</span>
-                      <span className="val">≥ 43.0 MPa (Grade 43)</span>
-                    </div>
-                    <div className="metric-mini-tile">
-                      <span className="label">Initial Setting Time</span>
-                      <span className="val">≥ 30 Minutes</span>
-                    </div>
-                    <div className="metric-mini-tile">
-                      <span className="label">Insoluble Residue</span>
-                      <span className="val">≤ 4.0% Max</span>
-                    </div>
-                    <div className="metric-mini-tile">
-                      <span className="label">Le Chatelier Expansion</span>
-                      <span className="val">≤ 10.0 mm</span>
-                    </div>
+                    {getStandardDynamicMetrics(primary).map((metric, idx) => (
+                      <div key={idx} className="metric-mini-tile">
+                        <span className="label">{metric.label}</span>
+                        <span className="val">{metric.val}</span>
+                      </div>
+                    ))}
                   </div>
 
                   {/* Quick Action Buttons */}
@@ -508,7 +586,7 @@ export default function App() {
                       onClick={handleCopyClause}
                       className="btn-primary"
                     >
-                      <span>{copiedClause ? '✓ Copied Clause' : 'Copy Tender Clause'}</span>
+                      <span>{copiedClause ? '✓ Tender Clause Copied' : '📋 Copy Tender Clause'}</span>
                     </button>
                     <button
                       type="button"

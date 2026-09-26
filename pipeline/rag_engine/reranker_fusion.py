@@ -72,22 +72,41 @@ class RerankerAndFusion:
                 entry["graph_boost"] = min(0.05 * edge_count, 0.25)
 
         if not candidate_scores:
-            fallback_std = self.tri.get_standard_by_number("IS 269") or (self.tri.master_standards[0] if self.tri.master_standards else {
-                "is_number": "IS 269",
-                "standard_id": "IS 269:2015",
-                "title": "Ordinary Portland Cement — Specification",
-                "full_title": "IS 269:2015 — Ordinary Portland Cement — Specification (Fifth Revision)",
-                "status": "ACTIVE",
-                "scope_snippet": "This standard specifies requirements for ordinary portland cement.",
-                "ics_codes": ["91.100.10"]
-            })
-            candidate_scores[normalize_is_key(fallback_std.get("is_number", "IS 269"))] = {
-                "standard": fallback_std,
-                "vector_score": 0.5,
-                "exact_score": 0.5,
-                "graph_boost": 0.1,
-                "match_type": "DEFAULT_FALLBACK"
-            }
+            # Full catalog fallback across 22,011 standards: Match closest standard by word overlap
+            q_words = [w.lower() for w in re.findall(r'[a-zA-Z0-9]+', query_text) if len(w) >= 3]
+            scored_candidates = []
+            for std in self.tri.master_standards:
+                t_lower = (std.get("title", "") + " " + std.get("is_number", "")).lower()
+                matches = sum(1 for w in q_words if w in t_lower)
+                if matches > 0:
+                    scored_candidates.append((matches, std))
+
+            if scored_candidates:
+                scored_candidates.sort(key=lambda x: x[0], reverse=True)
+                top_match = scored_candidates[0][1]
+                key = normalize_is_key(top_match.get("is_number", ""))
+                candidate_scores[key] = {
+                    "standard": top_match,
+                    "vector_score": 0.75,
+                    "exact_score": 0.70,
+                    "graph_boost": 0.10,
+                    "match_type": "CATALOG_TITLE_MATCH"
+                }
+            else:
+                fallback_std = self.tri.master_standards[0] if self.tri.master_standards else {
+                    "is_number": "IS 1",
+                    "standard_id": "IS 1:1968",
+                    "title": "Specification for The National Flag of India",
+                    "status": "ACTIVE"
+                }
+                key = normalize_is_key(fallback_std.get("is_number", "IS 1"))
+                candidate_scores[key] = {
+                    "standard": fallback_std,
+                    "vector_score": 0.3,
+                    "exact_score": 0.3,
+                    "graph_boost": 0.05,
+                    "match_type": "FALLBACK"
+                }
 
         # 4. Compute Weighted Total Score
         scored_list = []

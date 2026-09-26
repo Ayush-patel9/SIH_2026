@@ -618,17 +618,23 @@ body {
 .detail-tab-bar {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   border-bottom: 1px solid var(--hairline);
   margin-bottom: 16px;
   overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.detail-tab-bar::-webkit-scrollbar {
+  display: none;
 }
 
 .detail-tab-btn {
   font-family: var(--font-ui);
   font-size: 13px;
   font-weight: 500;
-  padding: 8px 14px;
+  padding: 8px 16px;
   background: transparent;
   color: var(--ink-muted);
   border: none;

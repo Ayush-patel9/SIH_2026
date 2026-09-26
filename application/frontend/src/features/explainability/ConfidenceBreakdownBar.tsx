@@ -16,26 +16,23 @@ export const ConfidenceBreakdownBar: React.FC<ConfidenceBreakdownBarProps> = ({
   const result = calculateConfidenceBreakdown(breakdown, confidence);
 
   return (
-    <div className="workbench-card">
-      <div className="workbench-card-header">
+    <div style={{ padding: '16px 0', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <h2 className="workbench-card-title">Confidence Factor Breakdown</h2>
-          <div className="workbench-card-subtitle">
-            Proportional contribution of vector semantics, exact keyword matching, and graph topology
+          <span className="section-label" style={{ margin: 0 }}>CONFIDENCE FACTOR BREAKDOWN</span>
+          <div style={{ fontSize: '12.5px', color: 'var(--ink-secondary)', marginTop: '2px' }}>
+            Weighted contribution of vector semantic search, exact keyword matching, and citation graph topology
           </div>
         </div>
         <div style={{ textAlign: 'right' }}>
-          <div className="section-label" style={{ margin: 0 }}>
-            GLOBAL SCORE
-          </div>
-          <div style={{ fontFamily: 'var(--font-data)', fontSize: '20px', fontWeight: 700, color: 'var(--collapse-cobalt)' }}>
+          <span style={{ fontFamily: 'var(--font-data)', fontSize: '18px', fontWeight: 700, color: 'var(--focus-blue)' }}>
             {result.globalConfidencePct}%
-          </div>
+          </span>
         </div>
       </div>
 
       <div className="breakdown-bar-container">
-        <div className="breakdown-multi-bar">
+        <div className="breakdown-multi-bar" style={{ height: '8px', borderRadius: '4px' }}>
           <div
             className="breakdown-segment semantic"
             style={{ width: `${result.semanticPct}%` }}
@@ -53,18 +50,18 @@ export const ConfidenceBreakdownBar: React.FC<ConfidenceBreakdownBarProps> = ({
           />
         </div>
 
-        <div className="breakdown-legend">
+        <div className="breakdown-legend" style={{ gap: '18px', paddingTop: '4px' }}>
           <div className="breakdown-legend-item">
-            <div className="breakdown-swatch" style={{ background: 'var(--collapse-cobalt)' }} />
-            <span>Vector Semantic Score (<strong>{result.semanticPct}%</strong>)</span>
+            <div className="breakdown-swatch" style={{ background: 'var(--focus-blue)' }} />
+            <span>Vector Semantic (<strong>{result.semanticPct}%</strong>)</span>
           </div>
           <div className="breakdown-legend-item">
             <div className="breakdown-swatch" style={{ background: 'var(--superposition-violet)' }} />
-            <span>Keyword Exact Match (<strong>{result.keywordPct}%</strong>)</span>
+            <span>Keyword Match (<strong>{result.keywordPct}%</strong>)</span>
           </div>
           <div className="breakdown-legend-item">
-            <div className="breakdown-swatch" style={{ background: 'var(--signal-amber)' }} />
-            <span>Graph Citation Boost (<strong>{result.graphPct}%</strong>)</span>
+            <div className="breakdown-swatch" style={{ background: 'var(--saffron)' }} />
+            <span>Graph Boost (<strong>{result.graphPct}%</strong>)</span>
           </div>
         </div>
       </div>

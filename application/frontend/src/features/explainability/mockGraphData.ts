@@ -190,30 +190,35 @@ export const STEEL_MOCK_DATA: StandardsResponse = {
   },
 };
 
-export const DOMAIN_PRESETS: Record<string, { label: string; isCode: string; data: StandardsResponse }> = {
+export const DOMAIN_PRESETS: Record<string, { label: string; isCode: string; query: string; data: StandardsResponse }> = {
   cement: {
-    label: "Ordinary Portland Cement (IS 269)",
+    label: "Ordinary Portland Cement",
     isCode: "IS 269:2015",
+    query: "Procurement of 43 grade ordinary portland cement for national highway bridge construction.",
     data: CEMENT_MOCK_DATA,
   },
   steel: {
-    label: "Structural Steel (IS 2062)",
+    label: "Structural Steel",
     isCode: "IS 2062:2011",
+    query: "Structural steel standard quality plates and sections E250 grade for railway bridge girder fabrication.",
     data: STEEL_MOCK_DATA,
   },
   hdpe: {
-    label: "HDPE Pipes (IS 4984)",
+    label: "HDPE Pipes",
     isCode: "IS 4984:2016",
+    query: "High density polyethylene (HDPE) pipes for potable water supply networks PE 100 PN 10.",
     data: HDPE_MOCK_DATA,
   },
   led: {
-    label: "LED Lamps CRS (IS 16102)",
-    isCode: "IS 16102 (Part 1):2012",
+    label: "LED Lamps CRS",
+    isCode: "IS 16102 (Pt 1)",
+    query: "Self-ballasted LED lamps for general lighting services under BIS Compulsory Registration Scheme.",
     data: LED_MOCK_DATA,
   },
   cctv: {
-    label: "CCTV Systems CRS (IS 16165)",
-    isCode: "IS 16165:2014",
+    label: "CCTV Systems CRS",
+    isCode: "IS 13252 (Pt 1)",
+    query: "High-definition IP surveillance cameras with ONVIF compliance and IR night vision for municipal traffic monitoring.",
     data: CCTV_MOCK_DATA,
   },
 };

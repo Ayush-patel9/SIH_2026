@@ -14,75 +14,39 @@ const ROLES: { value: UserRole; label: string; icon: string }[] = [
   { value: 'VENDOR', label: 'Vendor', icon: '🏭' },
 ];
 
-const MODES: { value: QueryMode; label: string; color: string }[] = [
-  { value: 'recommend', label: 'Recommend', color: 'var(--collapse-cobalt)' },
-  { value: 'audit', label: 'Audit', color: 'var(--superposition-violet)' },
-  { value: 'dry_run', label: 'Sandbox', color: 'var(--signal-amber)' },
-  { value: 'vendor_check', label: 'Compliance', color: 'var(--emerald-pass)' },
-];
-
 export const RoleSwitcher: React.FC<RoleSwitcherProps> = ({
   role,
-  mode,
   onRoleChange,
-  onModeChange,
 }) => (
-  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-    {/* Role row */}
-    <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
-      <span
-        style={{
-          fontFamily: 'var(--font-data)',
-          fontSize: '9px',
-          color: 'var(--ink-muted)',
-          marginRight: '2px',
-          fontWeight: 700,
-        }}
-      >
-        ROLE:
-      </span>
-      {ROLES.map((r) => (
+  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '3px', background: 'var(--surface-secondary)', padding: '3px', borderRadius: 'var(--radius-sm)', border: '1px solid var(--hairline)' }}>
+    {ROLES.map((r) => {
+      const isActive = role === r.value;
+      return (
         <button
           key={r.value}
           type="button"
-          className={`mode-toggle-btn ${role === r.value ? 'active' : ''}`}
           onClick={() => onRoleChange(r.value)}
-          style={{ fontSize: '11px', padding: '3px 8px' }}
-        >
-          {r.icon} {r.label}
-        </button>
-      ))}
-    </div>
-    {/* Mode row */}
-    <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
-      <span
-        style={{
-          fontFamily: 'var(--font-data)',
-          fontSize: '9px',
-          color: 'var(--ink-muted)',
-          marginRight: '2px',
-          fontWeight: 700,
-        }}
-      >
-        MODE:
-      </span>
-      {MODES.map((m) => (
-        <button
-          key={m.value}
-          type="button"
-          className={`mode-toggle-btn ${mode === m.value ? 'active' : ''}`}
-          onClick={() => onModeChange(m.value)}
           style={{
-            fontSize: '11px',
-            padding: '3px 8px',
-            ...(mode === m.value
-              ? { background: m.color, color: '#fff', borderColor: m.color }
-              : {}),
+            fontFamily: 'var(--font-ui)',
+            fontSize: '11.5px',
+            fontWeight: isActive ? 600 : 500,
+            padding: '4px 10px',
+            borderRadius: 'var(--radius-xs)',
+            border: 'none',
+            background: isActive ? '#FFFFFF' : 'transparent',
+            color: isActive ? 'var(--ink)' : 'var(--ink-secondary)',
+            cursor: 'pointer',
+            transition: 'all 0.15s ease',
+            boxShadow: isActive ? 'var(--shadow-xs)' : 'none',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '4px',
           }}
         >
-          {m.label}
+          <span>{r.icon}</span>
+          <span>{r.label}</span>
         </button>
-      ))}
-    </div>
+      );
+    })}
   </div>
 );
