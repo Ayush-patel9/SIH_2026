@@ -39,6 +39,8 @@ def query_standards(request: QueryRequest):
     try:
         response = graph_rag_pipeline.process_query(request)
         return response
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Pipeline processing error: {str(e)}")
 
@@ -60,6 +62,8 @@ def upload_tender_document(payload: TenderUploadPayload):
             mode=payload.mode or "recommend"
         )
         return responses
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Tender document ingestion error: {str(e)}")
 
@@ -84,6 +88,8 @@ def export_nit_clause(req: NitExportRequest):
             quality_assurance_requirements=[f"Conformance to {prim.is_number} chemical and physical standards."],
             test_certificate_mandates=[a.is_number for a in standards_resp.allied_standards[:3]]
         )
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"NIT Export error: {str(e)}")
 
@@ -112,6 +118,8 @@ async def upload_pdf_tender(
             mode=mode or "recommend"
         )
         return responses
+    except HTTPException:
+        raise
     except ValueError as ve:
         raise HTTPException(status_code=422, detail=str(ve))
     except Exception as e:

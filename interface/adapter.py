@@ -167,7 +167,7 @@ class InterfaceAdapter:
         }
 
         # 3. Allied Standards
-        allied_standards = normative_refs or [
+        raw_allied = normative_refs or [
             {
                 "is_number": "IS 4031 (Part 1)",
                 "standard_id": "IS 4031 (Part 1):1996",
@@ -199,6 +199,26 @@ class InterfaceAdapter:
                 "why": "Frequently co-procured for formwork in highway bridge and culvert construction."
             }
         ]
+        allied_standards = []
+        for a in raw_allied:
+            is_num_a = a.get("is_number", "IS Standard")
+            std_id_a = a.get("standard_id") or is_num_a
+            title_a = a.get("title") or f"Standard Specification ({is_num_a})"
+            rel_type = a.get("relation_type", "NORMATIVE_REFERENCE")
+            rel_lbl = a.get("relation_label", "Mandatory Testing / Material Code")
+            status_a = a.get("status", "ACTIVE")
+            conf_a = float(a.get("confidence", 0.90))
+            why_a = a.get("why") or f"Mandatory compliance and reference standard associated with {is_num}."
+            allied_standards.append({
+                "is_number": is_num_a,
+                "standard_id": std_id_a,
+                "title": title_a,
+                "relation_type": rel_type,
+                "relation_label": rel_lbl,
+                "status": status_a,
+                "confidence": conf_a,
+                "why": why_a
+            })
 
         # 4. Outdated Citations
         outdated_citations = outdated_list or [

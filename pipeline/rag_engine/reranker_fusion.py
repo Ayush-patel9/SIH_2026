@@ -36,16 +36,19 @@ class RerankerAndFusion:
         # 1. Ingest Exact / Lexicon / CRS Matches (Highest priority signal)
         for std, score, match_type in exact_candidates:
             key = normalize_is_key(std["is_number"])
+            initial_v_score = 0.85 if score >= 0.98 else 0.5
             if key not in candidate_scores:
                 candidate_scores[key] = {
                     "standard": std,
-                    "vector_score": 0.5,
+                    "vector_score": initial_v_score,
                     "exact_score": score,
                     "graph_boost": 0.0,
                     "match_type": match_type
                 }
             else:
                 candidate_scores[key]["exact_score"] = max(candidate_scores[key]["exact_score"], score)
+                if score >= 0.98:
+                    candidate_scores[key]["vector_score"] = max(candidate_scores[key]["vector_score"], initial_v_score)
 
         # 2. Ingest Vector Candidates
         for std, v_score in vector_candidates:

@@ -458,72 +458,91 @@ class TriRetrievalLayer:
         results = []
         q_norm = query_text.strip().lower()
 
-        # 1. Product & Acronym Direct High-Confidence Mappings
+        # 1. Product & Acronym Direct High-Confidence Mappings (0.99 priority)
         if re.search(r"\b(43\s*grade|53\s*grade|33\s*grade|ordinary\s*portland\s*cement|opc)\b", query_text, re.IGNORECASE):
             if "IS 269" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 269"], 0.98, "PRODUCT_GRADE_MATCH (IS 269)"))
-        elif re.search(r"\b(tmt|fe\s*500d?|fe\s*550d?|deformed\s*steel\s*bars|thermo\s*mechanically)\b", query_text, re.IGNORECASE):
+                results.append((self.standards_by_num["IS 269"], 0.99, "PRODUCT_GRADE_MATCH (IS 269)"))
+        if re.search(r"\b(tmt|fe\s*500d?|fe\s*550d?|deformed\s*steel\s*bars|thermo\s*mechanically)\b", query_text, re.IGNORECASE):
             if "IS 1786" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 1786"], 0.98, "PRODUCT_GRADE_MATCH (IS 1786)"))
-        elif re.search(r"\b(hdpe|high\s*density\s*polyethylene)[\w\s\(\)]*?\bpipes?\b", query_text, re.IGNORECASE):
+                results.append((self.standards_by_num["IS 1786"], 0.99, "PRODUCT_GRADE_MATCH (IS 1786)"))
+        if re.search(r"\b(hdpe|high\s*density\s*polyethylene)[\w\s\(\)]*?\bpipes?\b", query_text, re.IGNORECASE):
             if "IS 4984" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 4984"], 0.98, "PRODUCT_GRADE_MATCH (IS 4984)"))
-        elif re.search(r"\b(upvc|unplasticized\s*polyvinyl\s*chloride|pvc)[\w\s\(\)]*?\bpipes?\b", query_text, re.IGNORECASE):
+                results.append((self.standards_by_num["IS 4984"], 0.99, "PRODUCT_GRADE_MATCH (IS 4984)"))
+        if re.search(r"\b(upvc|unplasticized\s*polyvinyl\s*chloride|pvc)[\w\s\(\)]*?\bpipes?\b", query_text, re.IGNORECASE):
             if "IS 13592" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 13592"], 0.98, "PRODUCT_GRADE_MATCH (IS 13592)"))
-        elif re.search(r"\b(xlpe|cross\s*linked\s*polyethylene|insulated\s*power\s*cables?|11kv)\b", query_text, re.IGNORECASE):
+                results.append((self.standards_by_num["IS 13592"], 0.99, "PRODUCT_GRADE_MATCH (IS 13592)"))
+        if re.search(r"\b(xlpe|cross\s*linked\s*polyethylene|11kv|33kv)\b", query_text, re.IGNORECASE):
             if "IS 7098 (PART 2)" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 7098 (PART 2)"], 0.98, "PRODUCT_GRADE_MATCH (IS 7098 Part 2)"))
+                results.append((self.standards_by_num["IS 7098 (PART 2)"], 0.99, "PRODUCT_GRADE_MATCH (IS 7098 Part 2)"))
             elif "IS 7098 (PART 1)" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 7098 (PART 1)"], 0.98, "PRODUCT_GRADE_MATCH (IS 7098 Part 1)"))
-        elif re.search(r"\b(submersible\s*pumps?|motor\s*pump|மோட்டார்\s*பம்ப்|electric\s*pump)\b", query_text, re.IGNORECASE):
+                results.append((self.standards_by_num["IS 7098 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 7098 Part 1)"))
+        if re.search(r"\b(submersible\s*pumps?(?:et)?|borewell\s*pump|motor\s*pump|మోటారు\s*పంపు|સબમર્સિબલ\s*પંપ)\b", query_text, re.IGNORECASE):
             if "IS 14220" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 14220"], 0.98, "PRODUCT_GRADE_MATCH (IS 14220)"))
-            elif "IS 9079" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 9079"], 0.98, "PRODUCT_GRADE_MATCH (IS 9079)"))
-        elif re.search(r"\b(paver\s*blocks?|पेवर\s*ब्लॉक|precast\s*concrete\s*blocks?\s*for\s*paving)\b", query_text, re.IGNORECASE):
+                results.append((self.standards_by_num["IS 14220"], 0.99, "PRODUCT_GRADE_MATCH (IS 14220)"))
+        if re.search(r"\b(paver\s*blocks?|पेवर\s*ब्लॉक|precast\s*concrete\s*blocks?\s*for\s*paving)\b", query_text, re.IGNORECASE):
             if "IS 15658" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 15658"], 0.98, "PRODUCT_GRADE_MATCH (IS 15658)"))
-        elif re.search(r"\b(aac\s*blocks?|autoclaved\s*aerated\s*concrete)\b", query_text, re.IGNORECASE):
+                results.append((self.standards_by_num["IS 15658"], 0.99, "PRODUCT_GRADE_MATCH (IS 15658)"))
+        if re.search(r"\b(aac\s*blocks?|autoclaved\s*aerated\s*concrete)\b", query_text, re.IGNORECASE):
             if "IS 2185 (PART 3)" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 2185 (PART 3)"], 0.98, "PRODUCT_GRADE_MATCH (IS 2185 Part 3)"))
-        elif re.search(r"\b(cctv|video\s*surveillance|security\s*camera)\b", query_text, re.IGNORECASE):
+                results.append((self.standards_by_num["IS 2185 (PART 3)"], 0.99, "PRODUCT_GRADE_MATCH (IS 2185 Part 3)"))
+        if re.search(r"\b(cctv|video\s*surveillance|security\s*camera|सीसीटीवी)\b", query_text, re.IGNORECASE):
             if "IS 13252 (PART 1)" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 13252 (PART 1)"], 0.98, "PRODUCT_GRADE_MATCH (IS 13252)"))
+                results.append((self.standards_by_num["IS 13252 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 13252)"))
+        if re.search(r"\b(industrial\s*safety\s*helmets?|construction\s*helmets?|safety\s*helmets?|सुरक्षा\s*हेल्मेट|பாதுகாப்பு\s*தலைக்கவசம்)\b", query_text, re.IGNORECASE):
+            if "IS 2925" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 2925"], 0.99, "PRODUCT_GRADE_MATCH (IS 2925)"))
+        elif re.search(r"\b(motorcycle\s*helmets?|two\s*wheeler\s*helmets?|protective\s*helmets?\s*for\s*riders?)\b", query_text, re.IGNORECASE):
+            if "IS 4151" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 4151"], 0.99, "PRODUCT_GRADE_MATCH (IS 4151)"))
 
         # 2. Check CRS Electronics Catalog for Specific IT Terms (Laptops, Tablets, etc.)
+        crs_stopwords = {
+            "power", "video", "electric", "audio", "system", "cables", "cable", "supply", "switch",
+            "lights", "meters", "player", "output", "device", "digital", "analog", "control", "module",
+            "input", "built", "above", "below", "smart", "general", "similar", "apparatus", "screen",
+            "under", "voltage", "electronic", "automatic", "portable", "optical", "mains", "operated"
+        }
         for crs in self.crs_products:
             prod_name = crs.get("product_name", "").lower()
-            key_terms = [t for t in re.split(r"[\s/,()]+", prod_name) if len(t) > 4 and t not in ["under", "screen", "apparatus", "similar", "electronic", "general"]]
+            if prod_name in q_norm:
+                target_std = crs.get("applicable_is_standard", "")
+                target_key = normalize_is_key(target_std)
+                if target_key in self.standards_by_num:
+                    results.append((self.standards_by_num[target_key], 0.99, f"CRS_ELECTRONIC_MATCH ({crs.get('product_name')})"))
+                    break
+            key_terms = [t for t in re.split(r"[\s/,()]+", prod_name) if len(t) > 4 and t not in crs_stopwords]
             if any(t in q_norm for t in key_terms):
                 target_std = crs.get("applicable_is_standard", "")
                 target_key = normalize_is_key(target_std)
                 if target_key in self.standards_by_num:
-                    results.append((self.standards_by_num[target_key], 1.0, f"CRS_ELECTRONIC_MATCH ({crs.get('product_name')})"))
+                    results.append((self.standards_by_num[target_key], 0.95, f"CRS_ELECTRONIC_MATCH ({crs.get('product_name')})"))
                     break
 
         # 3. Check Synonym Lexicon (Exact match or substring match for vernacular/Indic phrases)
         matched_synonym = False
-        if q_norm in self.synonyms:
-            entry = self.synonyms[q_norm]
-            target_is = entry.get("is_ref") if isinstance(entry, dict) else str(entry)
-            if target_is:
-                target_key = normalize_is_key(target_is.split("/")[0].strip())
-                if target_key in self.standards_by_num:
-                    results.append((self.standards_by_num[target_key], 1.0, "SYNONYM_EXACT_MATCH"))
-                    matched_synonym = True
-        
-        if not matched_synonym:
-            # Substring scanning with positional precedence (earliest in sentence is primary)
-            found_matches = []
-            for syn_k, entry in self.synonyms.items():
-                if len(syn_k) >= 2 and syn_k in q_norm:
-                    pos = q_norm.find(syn_k)
-                    target_is = entry.get("is_ref") if isinstance(entry, dict) else str(entry)
-                    if target_is:
-                        target_key = normalize_is_key(target_is.split("/")[0].strip())
-                        if target_key in self.standards_by_num:
-                            found_matches.append((pos, -len(syn_k), target_key, syn_k))
+        has_high_conf_product = any(score >= 0.99 for _, score, _ in results)
+
+        if not has_high_conf_product:
+            if q_norm in self.synonyms:
+                entry = self.synonyms[q_norm]
+                target_is = entry.get("is_ref") if isinstance(entry, dict) else str(entry)
+                if target_is:
+                    target_key = normalize_is_key(target_is.split("/")[0].strip())
+                    if target_key in self.standards_by_num:
+                        results.append((self.standards_by_num[target_key], 1.0, "SYNONYM_EXACT_MATCH"))
+                        matched_synonym = True
+            
+            if not matched_synonym:
+                # Substring scanning with positional precedence (earliest in sentence is primary)
+                found_matches = []
+                for syn_k, entry in self.synonyms.items():
+                    if len(syn_k) >= 2 and syn_k in q_norm:
+                        pos = q_norm.find(syn_k)
+                        target_is = entry.get("is_ref") if isinstance(entry, dict) else str(entry)
+                        if target_is:
+                            target_key = normalize_is_key(target_is.split("/")[0].strip())
+                            if target_key in self.standards_by_num:
+                                found_matches.append((pos, -len(syn_k), target_key, syn_k))
             
             if found_matches:
                 found_matches.sort()

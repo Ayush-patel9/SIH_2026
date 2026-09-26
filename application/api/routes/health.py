@@ -21,7 +21,8 @@ def get_health():
         "version": "1.0.0",
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "engine": {
-            "indexed_standards_count": len(graph_rag_pipeline.tri_retrieval.standards_by_num),
+            "indexed_standards_count": len(graph_rag_pipeline.tri_retrieval.master_standards) if graph_rag_pipeline.tri_retrieval.master_standards else len(graph_rag_pipeline.tri_retrieval.standards_by_num),
+            "unique_standards_keys": len(graph_rag_pipeline.tri_retrieval.standards_by_num),
             "knowledge_graph_hubs": len(graph_rag_pipeline.tri_retrieval.normative_graph),
             "qco_mappings_count": len(graph_rag_pipeline.tri_retrieval.qco_matrix),
             "crs_products_count": len(graph_rag_pipeline.tri_retrieval.crs_products),
