@@ -76,12 +76,32 @@ export interface ExtractedEntity {
   confidence: number;
 }
 
+export interface AmbiguityOption {
+  value: string;
+  label: string;
+  description?: string;
+}
+
+export interface AmbiguityFlag {
+  dimension: string;
+  message: string;
+  options: AmbiguityOption[];
+}
+
 export interface QueryUnderstanding {
   detected_language: string;
   original_text: string;
   normalized_text: string;
   extracted_entities: ExtractedEntity[];
   query_intent: QueryIntent;
+  product_name?: string;
+  grade_specification?: string;
+  domain?: string;
+  subdomain?: string;
+  product_codes?: string[];
+  location_context?: string;
+  confidence?: number;
+  ambiguity_flags?: AmbiguityFlag[];
 }
 
 export type StandardStatus = 'ACTIVE' | 'WITHDRAWN' | 'SUPERSEDED' | 'UNDER_REVISION';
@@ -209,11 +229,35 @@ export interface MultilingualInfo {
   available_translations: string[];
 }
 
+export interface AlternativeRecommendation {
+  is_number: string;
+  standard_id?: string;
+  title: string;
+  full_title?: string;
+  status: StandardStatus | string;
+  year_published?: number | null;
+  amendment?: string | null;
+  latest_amendment?: string | null;
+  certification?: CertificationDetails;
+  scope_snippet?: string;
+  confidence: number;
+  why_not_primary?: string;
+}
+
+export interface ConflictResolution {
+  winner: string;
+  loser: string;
+  rule: string;
+  confidence_gap: number;
+}
+
 export interface StandardsResponse {
   $schema?: string;
   meta: ResponseMeta;
   query_understanding: QueryUnderstanding;
   primary_recommendation: PrimaryRecommendation;
+  alternative_recommendations?: AlternativeRecommendation[];
+  conflict_resolution?: ConflictResolution;
   allied_standards: AlliedStandard[];
   outdated_citations: OutdatedCitation[];
   graph_path: GraphPathEdge[];
@@ -268,6 +312,7 @@ export type AlertType =
   | 'STANDARD_SUPERSEDED'
   | 'STANDARD_AMENDED'
   | 'STANDARD_WITHDRAWN'
+  | 'STANDARD_UNDER_REVISION'
   | 'QCO_ENFORCEMENT_DATE'
   | 'NEW_MANDATORY_STANDARD';
 

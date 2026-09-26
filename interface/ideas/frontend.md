@@ -1,6 +1,5 @@
 # Frontend Design System & UI Architecture — ManakAI BIS Standards Intelligence Platform
-
-> **Source Reference:** Egreen-Quanta Design System extracted from [`interface/ideas/SIH/frontend/src/index.css`](file:///Users/ayushpatel/SIH2026/interface/ideas/SIH/frontend/src/index.css), [`interface/ideas/SIH/frontend/src/App.jsx`](file:///Users/ayushpatel/SIH2026/interface/ideas/SIH/frontend/src/App.jsx), and [`interface/ideas/SIH/docs/SIH_Quantum_Platform_UIUX.md`](file:///Users/ayushpatel/SIH2026/interface/ideas/SIH/docs/SIH_Quantum_Platform_UIUX.md).  
+ 
 > **Target Application Root:** `application/frontend/`  
 > **Compliance Standard:** Government Institutional Grade (BIS / NIC / GOI Standard Web Design Guidelines).  
 > **Status:** 100% Complete & Self-Contained Specification (Safe to delete legacy reference folders).
