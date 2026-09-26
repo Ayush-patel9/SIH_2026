@@ -20,7 +20,47 @@ import { LoadingShimmer } from './components/LoadingShimmer';
 import { DataSovereigntyModal } from './components/DataSovereigntyModal';
 import { LowBandwidthToggle } from './components/LowBandwidthToggle';
 import { MobileBottomNav, type FeatureKey } from './components/MobileBottomNav';
+import { CommandPaletteModal } from './components/CommandPaletteModal';
 import type { StandardsResponse, SupportedLanguage, AlertPayload } from './types';
+
+// Fast 1-Click Demo Scenarios for Procurement Officers & Jurors
+const QUICK_SCENARIOS = [
+  {
+    label: 'Highway OPC Cement',
+    domain: 'cement',
+    query: 'Procurement of 43 grade ordinary portland cement for national highway bridge construction.',
+    isCode: 'IS 269:2015',
+    icon: '🏗️',
+  },
+  {
+    label: 'Seismic TMT Rebars',
+    domain: 'steel',
+    query: 'High strength deformed steel bars Fe 500D grade for seismic zone IV RCC building construction.',
+    isCode: 'IS 1786:2008',
+    icon: '🔩',
+  },
+  {
+    label: 'Bridge Girder Steel',
+    domain: 'steel',
+    query: 'Structural steel standard quality plates and sections E250 grade for railway bridge girder fabrication.',
+    isCode: 'IS 2062:2011',
+    icon: '🌉',
+  },
+  {
+    label: 'Smart City CCTV',
+    domain: 'cctv',
+    query: 'High-definition IP surveillance cameras with ONVIF compliance and IR night vision for municipal traffic monitoring.',
+    isCode: 'IS 13252',
+    icon: '📹',
+  },
+  {
+    label: '11kV XLPE Cable',
+    domain: 'cctv',
+    query: 'Supply of 11kV cross-linked polyethylene insulated armoured power cables as per IS 7098 Part 2.',
+    isCode: 'IS 7098',
+    icon: '⚡',
+  },
+];
 
 export default function App() {
   const { role, mode, setRole, setMode } = useRole();
@@ -30,6 +70,7 @@ export default function App() {
   const [activeFeature, setActiveFeature] = useState<FeatureKey>('explainability');
   const [isAlertDrawerOpen, setIsAlertDrawerOpen] = useState(false);
   const [isDataSovereigntyOpen, setIsDataSovereigntyOpen] = useState(false);
+  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
   const [activeData, setActiveData] = useState<StandardsResponse>(CEMENT_MOCK_DATA);
   const [searchQuery, setSearchQuery] = useState<string>(
     'Procurement of 43 grade ordinary portland cement for highway construction.'
@@ -38,6 +79,7 @@ export default function App() {
   const [queryError, setQueryError] = useState<string | null>(null);
   const [isSocketLive, setIsSocketLive] = useState(false);
   const [currentStage, setCurrentStage] = useState<{ stage: number; name: string; detail: string } | null>(null);
+  const [copiedHash, setCopiedHash] = useState(false);
 
   useEffect(() => {
     getAlerts().then(setAlerts).catch(console.error);
@@ -57,6 +99,7 @@ export default function App() {
           {
             id: prev.length,
             type: 'grounded-observation',
+            source: 'alert',
             text: `🚨 Live Alert Broadcast [${liveAlert.severity}]: ${stdNum} — ${action}`,
           },
         ]);
@@ -69,10 +112,11 @@ export default function App() {
   }, []);
 
   // Authority Stream (Right Column) Messages
-  const [messages, setMessages] = useState([
+  const [messages, setMessages] = useState<Array<{ id: number; type: string; source?: string; text: string }>>([
     {
       id: 0,
       type: 'grounded-observation',
+      source: 'gazette',
       text: 'Inspecting IS 269:2015 (Ordinary Portland Cement). The 43-grade specification was consolidated from legacy IS 8112:1989. Mandatory ISI marking is enforced under GSR 739(E). Audit trail and human feedback queue are active.',
     },
   ]);
@@ -80,15 +124,16 @@ export default function App() {
   const [isProcessing, setIsProcessing] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const handleAnalyze = useCallback(async () => {
-    if (!searchQuery.trim() || isLoading) return;
+  const handleAnalyze = useCallback(async (customQuery?: string) => {
+    const targetQuery = customQuery || searchQuery;
+    if (!targetQuery.trim() || isLoading) return;
     setIsLoading(true);
     setQueryError(null);
     setCurrentStage({ stage: 0, name: 'Input Ingestion', detail: 'Connecting to GraphRAG WebSocket pipeline...' });
 
     try {
       const result = await streamQueryOverSocket(
-        searchQuery,
+        targetQuery,
         { mode, role, language },
         (evt: PipelineSocketEvent) => {
           setIsSocketLive(true);
@@ -104,6 +149,7 @@ export default function App() {
               {
                 id: prev.length,
                 type: 'grounded-observation',
+                source: 'pipeline',
                 text: `⚡ [Live Pipeline Stage 4]: ${evt.log}`,
               },
             ]);
@@ -113,6 +159,7 @@ export default function App() {
               {
                 id: prev.length,
                 type: 'grounded-observation',
+                source: 'nlu',
                 text: `✨ [AI Call #1 Gemini Flash]: Normalized query to "${evt.normalized_query}" (Detected Lang: ${evt.detected_language || 'en'}).`,
               },
             ]);
@@ -127,7 +174,8 @@ export default function App() {
         {
           id: prev.length,
           type: 'grounded-observation',
-          text: `Query resolved: ${result.primary_recommendation.is_number} (${result.primary_recommendation.title}). Confidence: ${(result.primary_recommendation.confidence * 100).toFixed(0)}%. ${result.multilingual?.bhashini_used ? '🌐 Bhashini NLP Translation Active.' : ''} ${result.audit_record.dry_run ? '🧪 Sandbox mode: Not logged to permanent audit ledger.' : 'Audit hash sealed.'}`,
+          source: 'audit',
+          text: `Query resolved: ${result.primary_recommendation.is_number} (${result.primary_recommendation.title}). Confidence: ${(result.primary_recommendation.confidence * 100).toFixed(0)}%. ${result.multilingual?.bhashini_used ? '🌐 Bhashini NLP Translation Active.' : ''} ${result.audit_record?.dry_run ? '🧪 Sandbox mode: Not logged to permanent audit ledger.' : 'Audit hash sealed.'}`,
         },
       ]);
     } catch (e: any) {
@@ -138,9 +186,14 @@ export default function App() {
     }
   }, [searchQuery, isLoading, mode, role, language]);
 
-  // Keyboard navigation shortcuts for power users
+  // Global Keyboard shortcuts
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setIsCommandPaletteOpen((prev) => !prev);
+        return;
+      }
       if (e.ctrlKey || e.metaKey) {
         switch (e.key) {
           case '1': setActiveFeature('explainability'); break;
@@ -189,10 +242,21 @@ export default function App() {
         {
           id: prev.length,
           type: 'grounded-observation',
+          source: 'gazette',
           text: `Switched domain to ${preset.label}. Enforced standard: ${preset.isCode}. Cross-referencing technical annexures and quality control orders.`,
         },
       ]);
     }
+  };
+
+  const handleRunScenario = (sc: typeof QUICK_SCENARIOS[0]) => {
+    setSelectedDomain(sc.domain);
+    setSearchQuery(sc.query);
+    const preset = DOMAIN_PRESETS[sc.domain];
+    if (preset) {
+      setActiveData(preset.data);
+    }
+    handleAnalyze(sc.query);
   };
 
   const handleAskQuestion = (e: React.FormEvent) => {
@@ -206,6 +270,7 @@ export default function App() {
       {
         id: prev.length,
         type: 'user',
+        source: 'user',
         text: userQ,
       },
     ]);
@@ -219,10 +284,18 @@ export default function App() {
         {
           id: prev.length,
           type: 'response',
+          source: 'gazette',
           text: `Under ${isNum}, compliance is legally verified against Gazette requirements. Any departure in tender parameters requires explicit sanction from the Technical Committee. CVC audit hash recorded.`,
         },
       ]);
     }, 600);
+  };
+
+  const handleCopyHash = () => {
+    const hash = activeData.audit_record?.audit_hash || activeData.meta.audit_reference_hash;
+    navigator.clipboard.writeText(hash);
+    setCopiedHash(true);
+    setTimeout(() => setCopiedHash(false), 2000);
   };
 
   return (
@@ -230,96 +303,120 @@ export default function App() {
       {/* Institutional Top Header */}
       <header className="workspace-header">
         <div className="header-brand-group">
-          <div className="gov-insignia">BIS</div>
+          <div className="gov-insignia" title="Bureau of Indian Standards — Government of India">
+            BIS
+          </div>
           <div>
             <h1>
               <span>ManakAI</span>
-              <span style={{ fontWeight: 400, color: 'var(--ink-secondary)' }}>
-                / Standards Intelligence Platform
+              <span style={{ fontWeight: 400, color: 'var(--ink-secondary)', fontSize: '13px' }}>
+                / Standards Intelligence
               </span>
             </h1>
           </div>
+
+          {/* Quick Spotlight ⌘K Trigger Button */}
+          <button
+            type="button"
+            onClick={() => setIsCommandPaletteOpen(true)}
+            className="command-palette-trigger"
+            title="Open Command Palette & Quick Search (⌘K / Ctrl+K)"
+          >
+            <span>🔍 Search standards, tools...</span>
+            <kbd>⌘K</kbd>
+          </button>
         </div>
 
         <div className="header-status">
-          {/* Feature Navigator Bar */}
+          {/* Feature Navigator Bar with Group Badges */}
           <div className="mode-toggle-group">
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'explainability' ? 'active' : ''}`}
               onClick={() => setActiveFeature('explainability')}
+              title="Knowledge Graph & Visible Reasoning"
             >
-              01. Explainability & Graph
+              🧠 01. Graph & Logic
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'audit' ? 'active' : ''}`}
               onClick={() => setActiveFeature('audit')}
+              title="CVC Defense & Immutable Audit Trail"
             >
-              02. Audit Trail & CVC Defense
+              🛡️ 02. Audit & CVC
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'feedback' ? 'active' : ''}`}
               onClick={() => setActiveFeature('feedback')}
+              title="Human Moderation Queue"
             >
-              03. Human Feedback Queue
+              👥 03. Feedback
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'alerts' ? 'active' : ''}`}
               onClick={() => setActiveFeature('alerts')}
+              title="Proactive Supersession Alerts"
             >
-              04. Alerts
+              🚨 04. Alerts
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'comparison' ? 'active' : ''}`}
               onClick={() => setActiveFeature('comparison')}
+              title="Side-by-Side Standard Comparison"
             >
-              06. Compare
+              ⚖️ 06. Compare
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'queryUnderstanding' ? 'active' : ''}`}
               onClick={() => setActiveFeature('queryUnderstanding')}
+              title="AI Call #1 Gemini Flash NLU"
             >
-              07. Query NLU
+              🔍 07. Query NLU
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'nitGenerator' ? 'active' : ''}`}
               onClick={() => setActiveFeature('nitGenerator')}
+              title="NIT Draft Clause Generator"
             >
-              08. NIT Generator
+              📝 08. NIT Clauses
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'mcp' ? 'active' : ''}`}
               onClick={() => setActiveFeature('mcp')}
+              title="Model Context Protocol Server Tools"
             >
-              09. MCP Server
+              ⚡ 09. MCP Server
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'tenderUpload' ? 'active' : ''}`}
               onClick={() => setActiveFeature('tenderUpload')}
+              title="PDF Tender Analyzer & Highlighter"
             >
-              10. Tender Upload
+              📄 10. PDF Analyzer
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'dashboard' ? 'active' : ''}`}
               onClick={() => setActiveFeature('dashboard')}
+              title="Ministry MIS Compliance Heatmap"
             >
-              11. Analytics & Heatmap
+              📊 11. MIS Heatmap
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${activeFeature === 'integrations' ? 'active' : ''}`}
               onClick={() => setActiveFeature('integrations')}
+              title="GeM & CPPP National Sandbox"
             >
-              12. GeM & CPPP Sandbox
+              🏛️ 12. GeM/CPPP
             </button>
           </div>
 
@@ -402,12 +499,27 @@ export default function App() {
         {/* Sandbox & Outdated Warning Banner */}
         <SandboxBanner data={activeData} mode={mode} />
 
-        {/* Domain Preset Switcher & Search Bar */}
-        <div className="workbench-card" style={{ padding: '14px 18px' }}>
+        {/* Domain Preset Switcher, Quick Scenarios & Search Bar */}
+        <div className="workbench-card" style={{ padding: '16px 20px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-            <span className="section-label" style={{ margin: 0 }}>
-              PROCUREMENT DOMAIN PRESETS
-            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span className="section-label" style={{ margin: 0 }}>
+                PROCUREMENT DOMAIN PRESETS
+              </span>
+              <span
+                style={{
+                  fontFamily: 'var(--font-data)',
+                  fontSize: '10px',
+                  background: 'rgba(29, 78, 216, 0.08)',
+                  color: 'var(--collapse-cobalt)',
+                  padding: '1px 6px',
+                  borderRadius: 'var(--radius-full)',
+                  fontWeight: 600,
+                }}
+              >
+                22,011 BIS Standards Indexed
+              </span>
+            </div>
             {/* Role & Mode Switcher Controls */}
             <RoleSwitcher
               role={role}
@@ -430,6 +542,35 @@ export default function App() {
             ))}
           </div>
 
+          {/* Quick 1-Click Demo Scenarios */}
+          <div style={{ marginTop: '12px', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+            <span
+              style={{
+                fontFamily: 'var(--font-data)',
+                fontSize: '10px',
+                color: 'var(--ink-muted)',
+                fontWeight: 700,
+                textTransform: 'uppercase',
+                letterSpacing: '0.04em',
+              }}
+            >
+              TEST SCENARIOS:
+            </span>
+            {QUICK_SCENARIOS.map((sc, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => handleRunScenario(sc)}
+                className="scenario-chip"
+                title={`Run test query: "${sc.query}"`}
+              >
+                <span>{sc.icon}</span>
+                <span>{sc.label}</span>
+                <span className="scenario-chip-code">{sc.isCode}</span>
+              </button>
+            ))}
+          </div>
+
           {/* Real-time Stage Progression Banner */}
           {currentStage && (
             <div
@@ -442,6 +583,7 @@ export default function App() {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '12px',
+                animation: 'banner-in 0.2s ease',
               }}
             >
               <div
@@ -474,25 +616,64 @@ export default function App() {
             </div>
           )}
 
-          <div style={{ display: 'flex', gap: '8px', marginTop: '12px' }}>
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter') handleAnalyze();
-              }}
-              placeholder="Enter tender specification or product query..."
-              className="auth-input"
-              style={{ fontSize: '13px', background: 'var(--paper)' }}
-            />
+          {/* Search Input Box */}
+          <div style={{ display: 'flex', gap: '8px', marginTop: '12px', position: 'relative' }}>
+            <div style={{ position: 'relative', flex: 1 }}>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') handleAnalyze();
+                }}
+                placeholder="Enter tender specification, product clause, or Indian Standard (e.g. IS 269)..."
+                className="auth-input"
+                style={{
+                  fontSize: '13.5px',
+                  background: 'var(--paper)',
+                  paddingRight: searchQuery ? '70px' : '14px',
+                }}
+              />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery('')}
+                  style={{
+                    position: 'absolute',
+                    right: '10px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    background: 'none',
+                    border: 'none',
+                    color: 'var(--ink-muted)',
+                    cursor: 'pointer',
+                    fontSize: '14px',
+                    padding: '4px',
+                  }}
+                  title="Clear input"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+
             <button
               type="button"
               className="btn-run"
-              onClick={handleAnalyze}
+              onClick={() => handleAnalyze()}
               disabled={isLoading}
             >
-              {isLoading ? 'Streaming...' : 'Analyze'}
+              {isLoading ? (
+                <>
+                  <span style={{ animation: 'pulse 1s infinite' }}>⚙️</span>
+                  <span>Streaming...</span>
+                </>
+              ) : (
+                <>
+                  <span>Analyze</span>
+                  <kbd style={{ fontSize: '10px', opacity: 0.8, background: 'rgba(255,255,255,0.2)', padding: '1px 5px', borderRadius: '3px' }}>↵</kbd>
+                </>
+              )}
             </button>
           </div>
 
@@ -569,7 +750,6 @@ export default function App() {
           <ComparisonView
             currentData={activeData}
             onPromotePrimary={(alt) => {
-              // Allows promoting an alternative to the active standard
               setActiveData((prev) => ({
                 ...prev,
                 primary_recommendation: {
@@ -589,6 +769,7 @@ export default function App() {
                 {
                   id: prev.length,
                   type: 'grounded-observation',
+                  source: 'gazette',
                   text: `Switched primary recommendation to ${alt.is_number} (${alt.title}). Recalculating conflict resolution and allied test methods.`,
                 },
               ]);
@@ -647,32 +828,85 @@ export default function App() {
       {/* Right Column: Authority Stream & Legal Audit Trail */}
       <aside className="tutor-panel">
         <div className="tutor-header">
-          <div className="section-label">LEGAL DEFICIENCIES & AUTHORITY STREAM</div>
-          <div className="tutor-context-line">
-            Active Standard: <strong>{activeData.primary_recommendation.is_number}</strong>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div className="section-label" style={{ margin: 0 }}>
+              LEGAL DEFICIENCIES & AUTHORITY STREAM
+            </div>
+            <span
+              style={{
+                fontFamily: 'var(--font-data)',
+                fontSize: '9px',
+                padding: '1px 6px',
+                borderRadius: 'var(--radius-full)',
+                background: 'rgba(5, 150, 105, 0.1)',
+                color: 'var(--emerald-pass)',
+                fontWeight: 700,
+              }}
+            >
+              CVC SECURE
+            </span>
+          </div>
+          <div className="tutor-context-line" style={{ marginTop: '6px' }}>
+            Active Standard: <strong>{activeData.primary_recommendation.is_number}</strong> ({activeData.primary_recommendation.year_published})
           </div>
         </div>
 
         <div className="tutor-messages">
-          {messages.map((msg) => (
-            <div
-              key={msg.id}
-              className={`tutor-message ${
-                msg.type === 'grounded-observation'
-                  ? 'grounded-observation'
-                  : msg.type === 'response'
-                  ? 'response'
-                  : ''
-              }`}
-            >
-              {msg.type === 'user' ? (
-                <div style={{ fontFamily: 'var(--font-data)', fontSize: '12px', color: 'var(--ink-muted)', marginBottom: '2px' }}>
-                  QUERY:
+          {messages.map((msg) => {
+            let badgeIcon = '⚖️';
+            let badgeLabel = 'GAZETTE AUTHORITY';
+
+            if (msg.source === 'alert') {
+              badgeIcon = '🚨';
+              badgeLabel = 'LIVE ALERT';
+            } else if (msg.source === 'pipeline') {
+              badgeIcon = '⚡';
+              badgeLabel = 'GRAPHRAG';
+            } else if (msg.source === 'nlu') {
+              badgeIcon = '🤖';
+              badgeLabel = 'GEMINI FLASH';
+            } else if (msg.source === 'audit') {
+              badgeIcon = '🛡️';
+              badgeLabel = 'AUDIT SEAL';
+            } else if (msg.type === 'user') {
+              badgeIcon = '👤';
+              badgeLabel = 'OFFICER QUERY';
+            }
+
+            return (
+              <div
+                key={msg.id}
+                className={`tutor-message ${
+                  msg.type === 'grounded-observation'
+                    ? 'grounded-observation'
+                    : msg.type === 'response'
+                    ? 'response'
+                    : msg.type === 'user'
+                    ? 'user'
+                    : ''
+                }`}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    fontFamily: 'var(--font-data)',
+                    fontSize: '10px',
+                    fontWeight: 700,
+                    color: 'var(--ink-muted)',
+                    marginBottom: '4px',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.04em',
+                  }}
+                >
+                  <span>{badgeIcon}</span>
+                  <span>{badgeLabel}</span>
                 </div>
-              ) : null}
-              {msg.text}
-            </div>
-          ))}
+                <div>{msg.text}</div>
+              </div>
+            );
+          })}
 
           {isProcessing && (
             <div className="tutor-loading">
@@ -683,21 +917,75 @@ export default function App() {
           <div ref={messagesEndRef} />
         </div>
 
-        {/* Audit Hash Reference Card */}
-        <div style={{ padding: '10px 18px', background: 'var(--paper)', borderTop: '1px solid var(--hairline)', borderBottom: '1px solid var(--hairline)' }}>
-          <div className="section-label" style={{ margin: '0 0 2px 0' }}>
-            IMMUTABLE AUDIT REFERENCE
+        {/* Audit Hash Reference Card with 1-Click Copy */}
+        <div style={{ padding: '12px 18px', background: 'var(--surface-raised)', borderTop: '1px solid var(--hairline)', borderBottom: '1px solid var(--hairline)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
+            <span className="section-label" style={{ margin: 0 }}>
+              IMMUTABLE AUDIT REFERENCE
+            </span>
+            <button
+              type="button"
+              onClick={handleCopyHash}
+              style={{
+                fontFamily: 'var(--font-data)',
+                fontSize: '10px',
+                fontWeight: 600,
+                background: copiedHash ? 'var(--emerald-pass)' : 'transparent',
+                color: copiedHash ? '#fff' : 'var(--collapse-cobalt)',
+                border: copiedHash ? '1px solid var(--emerald-pass)' : '1px solid rgba(29, 78, 216, 0.3)',
+                padding: '1px 6px',
+                borderRadius: 'var(--radius-xs)',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease',
+              }}
+            >
+              {copiedHash ? '✓ Copied' : 'Copy Hash'}
+            </button>
           </div>
-          <div style={{ fontFamily: 'var(--font-data)', fontSize: '10px', color: 'var(--ink-secondary)', wordBreak: 'break-all' }}>
-            SHA-256: {activeData.audit_record?.audit_hash || activeData.meta.audit_reference_hash}
+          <div
+            style={{
+              fontFamily: 'var(--font-data)',
+              fontSize: '10px',
+              color: 'var(--ink-secondary)',
+              wordBreak: 'break-all',
+              background: 'var(--paper)',
+              padding: '4px 8px',
+              borderRadius: 'var(--radius-xs)',
+              border: '1px solid var(--hairline)',
+            }}
+          >
+            {activeData.audit_record?.audit_hash || activeData.meta.audit_reference_hash}
           </div>
         </div>
 
-        {/* Question Form */}
+        {/* Question Form with Quick Prompt Suggestions */}
         <form onSubmit={handleAskQuestion} className="tutor-footer">
           <div className="tutor-scope-label">
             Ask about clauses in {activeData.primary_recommendation.is_number}:
           </div>
+
+          <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap', marginBottom: '4px' }}>
+            {['Is ISI mark mandatory?', 'What is latest amendment?', 'Test methods?'].map((promptText, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => setInputQuestion(promptText)}
+                style={{
+                  fontFamily: 'var(--font-data)',
+                  fontSize: '10px',
+                  background: 'rgba(0,0,0,0.03)',
+                  border: '1px solid var(--hairline)',
+                  borderRadius: 'var(--radius-xs)',
+                  padding: '2px 6px',
+                  cursor: 'pointer',
+                  color: 'var(--ink-secondary)',
+                }}
+              >
+                + {promptText}
+              </button>
+            ))}
+          </div>
+
           <div className="tutor-input-row">
             <textarea
               rows={2}
@@ -717,11 +1005,11 @@ export default function App() {
         </form>
       </aside>
 
-      {/* Institutional Institutional Footer */}
+      {/* Institutional Footer */}
       <footer
         style={{
           gridColumn: '1 / -1',
-          padding: '10px 20px',
+          padding: '10px 24px',
           borderTop: '1px solid var(--hairline)',
           background: 'var(--surface)',
           display: 'flex',
@@ -734,12 +1022,28 @@ export default function App() {
           gap: '8px',
         }}
       >
-        <span>ManakAI v1.0.0 · BIS Standards Intelligence Platform · SIH 2026</span>
-        <span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <span>ManakAI v1.0.0 · BIS Standards Intelligence Platform · SIH 2026</span>
+          <span>·</span>
+          <span>Press <kbd style={{ background: 'rgba(0,0,0,0.06)', padding: '1px 5px', borderRadius: '3px' }}>⌘K</kbd> for Command Palette</span>
+        </div>
+        <div>
           Data Snapshot: {activeData?.meta.data_snapshot_date ?? '2026-09-26'} · Pipeline v{activeData?.meta.pipeline_version ?? '1.0.0'} · Audit Sealed
-        </span>
+        </div>
         <span>MeitY & BIS Empanelled Infrastructure · Sovereign Indian Jurisdiction</span>
       </footer>
+
+      {/* Global Command Palette (⌘K / Ctrl+K) */}
+      <CommandPaletteModal
+        isOpen={isCommandPaletteOpen}
+        onClose={() => setIsCommandPaletteOpen(false)}
+        onSelectFeature={setActiveFeature}
+        onSelectDomain={handleDomainChange}
+        onSelectRole={setRole}
+        onOpenDataSovereignty={() => setIsDataSovereigntyOpen(true)}
+        currentRole={role}
+        currentFeature={activeFeature}
+      />
 
       {/* Feature 04: Global Slide-in Alert Drawer */}
       <AlertDrawer
