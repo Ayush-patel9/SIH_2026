@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { PDFViewer } from './PDFViewer';
 import { TenderClauseHighlighter, type TenderClauseAnnotation } from './TenderClauseHighlighter';
 
 interface PDFAnnotationViewerProps {
   initialClauses?: TenderClauseAnnotation[];
+  pdfUrl?: string | null;
+  rawText?: string;
   onApplyFixToDraft?: (updatedText: string) => void;
   onOpenWorkbench?: (standard: string) => void;
 }
@@ -76,6 +79,8 @@ const SAMPLE_TENDER_CLAUSES: TenderClauseAnnotation[] = [
 
 export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
   initialClauses,
+  pdfUrl,
+  rawText,
   onApplyFixToDraft,
   onOpenWorkbench,
 }) => {
@@ -86,8 +91,20 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
     clauses[0]?.id || null
   );
   const [showExportModal, setShowExportModal] = useState(false);
+  const [viewMode, setViewMode] = useState<'split_pdf' | 'clause_list'>('split_pdf');
 
   const selectedClause = clauses.find((c) => c.id === selectedClauseId) || clauses[0];
+
+  // Map clause ID to simulated page index
+  const getPageForClause = (id: string) => {
+    switch (id) {
+      case 'clause-1': return 1;
+      case 'clause-2': return 2;
+      case 'clause-3': return 3;
+      case 'clause-4': return 3;
+      default: return 1;
+    }
+  };
 
   const handleFixClause = (clauseId: string) => {
     setClauses((prev) => {
@@ -157,7 +174,7 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '14px' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-              <span className="concept-status-badge active">SYNCHRONIZED SPLIT-SCREEN VIEWER</span>
+              <span className="concept-status-badge active">FUZZY EVIDENCE HIGHLIGHTER</span>
               <span className="section-label" style={{ margin: 0 }}>PRE-TENDER STATUTORY AUDIT</span>
             </div>
             <h3 style={{ fontFamily: 'var(--font-data)', fontSize: '18px', fontWeight: 700, margin: 0, color: 'var(--ink)' }}>
@@ -182,14 +199,33 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
             </p>
           </div>
 
-          <div style={{ display: 'flex', gap: '8px' }}>
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: '4px', background: 'var(--surface)', padding: '2px', borderRadius: '4px', border: '1px solid var(--hairline)' }}>
+              <button
+                type="button"
+                className={`mode-toggle-btn ${viewMode === 'split_pdf' ? 'active' : ''}`}
+                onClick={() => setViewMode('split_pdf')}
+                style={{ fontSize: '11px', padding: '4px 8px' }}
+              >
+                📄 PDF Viewer
+              </button>
+              <button
+                type="button"
+                className={`mode-toggle-btn ${viewMode === 'clause_list' ? 'active' : ''}`}
+                onClick={() => setViewMode('clause_list')}
+                style={{ fontSize: '11px', padding: '4px 8px' }}
+              >
+                📋 Clause Stream
+              </button>
+            </div>
+
             <button
               type="button"
               className="btn-secondary"
               onClick={() => setShowExportModal(true)}
               style={{ fontSize: '12px', padding: '6px 12px' }}
             >
-              📥 Download Audit Report
+              📥 Export Audit Report
             </button>
             <button
               type="button"
@@ -197,23 +233,31 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
               onClick={handleFixAll}
               style={{ fontSize: '12px', padding: '6px 14px' }}
             >
-              ⚡ 1-Click Fix All Clauses ({clauses.filter((c) => c.status !== 'ACTIVE').length})
+              ⚡ 1-Click Fix All ({clauses.filter((c) => c.status !== 'ACTIVE').length})
             </button>
           </div>
         </div>
       </div>
 
       {/* Synchronized Split-Screen View */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(320px, 1.2fr) minmax(320px, 1fr)', gap: '16px' }}>
-        {/* Left Pane: Clause Stream */}
-        <div className="workbench-card" style={{ padding: '16px' }}>
-          <TenderClauseHighlighter
-            clauses={clauses}
-            selectedClauseId={selectedClauseId}
-            onSelectClause={(c) => setSelectedClauseId(c.id)}
-            onFixClause={handleFixClause}
+      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(340px, 1.25fr) minmax(320px, 1fr)', gap: '16px' }}>
+        {/* Left Pane: Interactive PDF Viewer or Clause Stream */}
+        {viewMode === 'split_pdf' ? (
+          <PDFViewer
+            pdfUrl={pdfUrl}
+            rawText={rawText}
+            initialPage={getPageForClause(selectedClauseId || 'clause-1')}
+            highlightText={selectedClause?.rawText || selectedClause?.detectedStandard}
           />
-        </div>
+        ) : (
+          <div className="workbench-card" style={{ padding: '16px' }}>
+            <TenderClauseHighlighter
+              clauses={clauses}
+              selectedClauseId={selectedClauseId}
+              onSelectClause={(c) => setSelectedClauseId(c.id)}
+            />
+          </div>
+        )}
 
         {/* Right Pane: Inspection & Legal Explainability */}
         {selectedClause && (
@@ -254,6 +298,27 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
                   <strong>Mandatory Active Equivalent:</strong> {selectedClause.replacement}
                 </div>
               )}
+            </div>
+
+            {/* Verbatim Quote in PDF */}
+            <div>
+              <div className="section-label" style={{ marginBottom: '4px' }}>
+                VERBATIM EVIDENCE QUOTE (PAGE {getPageForClause(selectedClause.id)})
+              </div>
+              <div
+                style={{
+                  fontFamily: 'var(--font-prose)',
+                  fontSize: '12.5px',
+                  background: 'var(--paper)',
+                  padding: '8px 12px',
+                  borderRadius: 'var(--radius-sm)',
+                  borderLeft: '3px solid var(--signal-amber)',
+                  fontStyle: 'italic',
+                  color: 'var(--ink)',
+                }}
+              >
+                "{selectedClause.rawText}"
+              </div>
             </div>
 
             {/* Legal / CVC Consequence Note */}
