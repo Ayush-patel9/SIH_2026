@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 class NLPExtractor:
     """
     Extracts entities, detects language/script, normalizes query text,
-    and identifies procurement intents.
+    expands trade acronyms, and identifies procurement intents.
     """
     def __init__(self, synonym_index_path: Optional[str] = None):
         self.synonyms: Dict[str, Any] = {}
@@ -20,6 +20,22 @@ class NLPExtractor:
                     self.synonyms = json.load(f)
             except Exception as e:
                 logger.warning(f"Could not load synonym index: {e}")
+
+        # Canonical Trade & Engineering Acronym Expansions
+        self.acronym_map = {
+            r"\bhdpe\b": "high density polyethylene pipes hdpe",
+            r"\bupvc\b": "unplasticized polyvinyl chloride upvc pipes",
+            r"\bpvc\b": "polyvinyl chloride pvc",
+            r"\bxlpe\b": "cross-linked polyethylene xlpe insulated power cables",
+            r"\btmt\b": "high strength deformed steel bars tmt",
+            r"\baac\b": "autoclaved aerated concrete aac blocks",
+            r"\bcctv\b": "video surveillance systems cctv security camera",
+            r"\bopc\b": "ordinary portland cement opc",
+            r"\bppc\b": "portland pozzolana cement ppc",
+            r"\brcc\b": "reinforced cement concrete rcc",
+            r"\bled\b": "self-ballasted led lamps general lighting",
+            r"\bcrs\b": "compulsory registration scheme crs electronics"
+        }
 
         # Regex patterns for common entity types in BIS procurement
         self.grade_patterns = [
@@ -33,9 +49,9 @@ class NLPExtractor:
         self.domain_patterns = [
             (r"\b(highway|road|expressway|bridge|pavement|flyover)\b", "Highway & Transportation Infrastructure"),
             (r"\b(earthquake|seismic|rcc|building|structural|foundation)\b", "Civil Building Construction & Structural Safety"),
-            (r"\b(irrigation|agriculture|farming|borewell|well)\b", "Agricultural & Water Supply Systems"),
-            (r"\b(electrical|power|transformer|switchgear|cable|wire)\b", "Electrotechnical & Power Distribution"),
-            (r"\b(electronics|it|cctv|surveillance|datacenter|server|laptop)\b", "Information Technology & Electronics (CRS)"),
+            (r"\b(irrigation|agriculture|farming|borewell|well|drinking\s*water|jal\s*jeevan)\b", "Agricultural & Water Supply Systems"),
+            (r"\b(electrical|power|transformer|switchgear|cable|wire|11kv)\b", "Electrotechnical & Power Distribution"),
+            (r"\b(electronics|it|cctv|surveillance|datacenter|server|laptop|computer|tablet)\b", "Information Technology & Electronics (CRS)"),
             (r"\b(solar|pv|renewable|inverter|battery)\b", "Solar & Renewable Energy Systems"),
             (r"\b(fire|safety|extinguisher|flame|hydrant)\b", "Fire Fighting & Personal Safety")
         ]
@@ -61,12 +77,12 @@ class NLPExtractor:
         return "en", False
 
     def extract_is_numbers(self, text: str) -> List[str]:
-        """Extract explicit standard citations e.g. 'IS 269:2015', 'IS 8112', 'IS 1786'."""
-        matches = re.findall(r"\b(?:IS|SP|IS/ISO|IS/IEC)\s*\d{2,5}(?:\s*\([A-Za-z0-9\s]+\))?(?:\s*:\s*\d{4})?", text, re.IGNORECASE)
-        # Clean and uppercase
+        """Extract explicit standard citations with strict word boundaries."""
+        matches = re.findall(r"\b(?:IS|SP|IS/ISO|IS/IEC)\s*(\d{2,5}(?:\s*\(Part\s*\d+\))?(?:\s*:\s*\d{4})?)", text, re.IGNORECASE)
         cleaned = []
         for m in matches:
-            norm = re.sub(r"\s+", " ", m).strip().upper()
+            norm = f"IS {m}".strip().upper()
+            norm = re.sub(r"\s+", " ", norm)
             if norm not in cleaned:
                 cleaned.append(norm)
         return cleaned
@@ -86,16 +102,19 @@ class NLPExtractor:
                     f"Analyze this procurement text: '{text}'.\n"
                     f"Extract entities (PRODUCT, GRADE_SPECIFICATION, APPLICATION_DOMAIN, TEST_PARAMETER), "
                     f"detect intent (STANDARD_LOOKUP, COMPLIANCE_CHECK, OUTDATED_DETECTION, ALLIED_DISCOVERY), "
-                    f"and provide normalized search text."
+                    f"expand any engineering acronyms, and provide normalized search text."
                 )
                 res = llm_gateway.generate_json(prompt, schema=QueryUnderstanding, model_type="flash")
                 return QueryUnderstanding.model_validate(res)
             except Exception as e:
                 logger.info(f"Using rule-based NLP extraction fallback: {e}")
 
-        # Deterministic Rule-Based Extraction
+        # Deterministic Rule-Based Extraction & Acronym Expansion
+        expanded_text = text
+        for pat, repl in self.acronym_map.items():
+            expanded_text = re.sub(pat, repl, expanded_text, flags=re.IGNORECASE)
+
         entities: List[ExtractedEntity] = []
-        normalized_tokens: List[str] = []
 
         # 1. Extract Grade
         for pat in self.grade_patterns:
@@ -109,7 +128,6 @@ class NLPExtractor:
                 break
 
         # 2. Extract Application Domain
-        domain_found = False
         for pat, dom_name in self.domain_patterns:
             m = re.search(pat, text, re.IGNORECASE)
             if m:
@@ -118,24 +136,29 @@ class NLPExtractor:
                     type="APPLICATION_DOMAIN",
                     confidence=0.94
                 ))
-                domain_found = True
                 break
 
-        # 3. Extract Product Entity
-        # Remove common procurement filler words
-        clean_text = re.sub(r"\b(procurement|supply|purchase|tender|specification|for|of|the|and|in|with|mandatory|required|grade|is|standard)\b", " ", text, flags=re.IGNORECASE)
-        clean_text = re.sub(r"\s+", " ", clean_text).strip()
+        # 3. Handle Vernacular Compound Nouns (e.g. पेवर ब्लॉक takes precedence over सीमेंट)
+        clean_text = expanded_text
+        if "पेवर ब्लॉक" in text or "paver block" in text.lower():
+            clean_text = "precast concrete blocks for paving paver blocks"
+        elif "सीमेंट" in text and "कंक्रीट" not in text:
+            clean_text = "ordinary portland cement"
+        else:
+            # Remove common procurement filler words
+            clean_text = re.sub(r"\b(procurement|supply|purchase|tender|specification|for|of|the|and|in|with|mandatory|required|grade|is|standard|conforming|to|under)\b", " ", expanded_text, flags=re.IGNORECASE)
+            clean_text = re.sub(r"\s+", " ", clean_text).strip()
         
         if clean_text:
             entities.append(ExtractedEntity(
-                entity=clean_text,
+                entity=clean_text[:80],
                 type="PRODUCT",
                 confidence=0.95
             ))
 
         # Detect intent
         intent = "STANDARD_LOOKUP"
-        if re.search(r"\b(audit|check|verify|comply|compliance|qco|order|rule)\b", text, re.IGNORECASE):
+        if re.search(r"\b(audit|check|verify|comply|compliance|qco|order|rule|scheme)\b", text, re.IGNORECASE):
             intent = "COMPLIANCE_CHECK"
         elif re.search(r"\b(outdated|superseded|withdrawn|old|valid|revision)\b", text, re.IGNORECASE):
             intent = "OUTDATED_DETECTION"

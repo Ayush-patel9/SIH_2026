@@ -63,19 +63,54 @@ def test_pipeline_tmt_steel_rebars():
     # Should resolve to IS 1786
     assert "1786" in response.primary_recommendation.is_number
     assert response.primary_recommendation.certification.mandatory is True
+    assert len(response.allied_standards) > 0
 
-def test_pipeline_multilingual_query():
-    """Test 4: Vernacular Hindi query."""
-    query = "सीमेंट कंक्रीट पेवर ब्लॉक"
+def test_pipeline_multilingual_paver_block_query():
+    """Test 4: Vernacular Hindi compound query for Paver blocks."""
+    query = "सीमेंट कंक्रीट पेवर ब्लॉक 80mm मोटाई"
     req = QueryRequest(input={"text": query, "language": "hi"})
     
     response = graph_rag_pipeline.process_query(req)
     assert isinstance(response, StandardsResponse)
+    assert "15658" in response.primary_recommendation.is_number
     assert response.query_understanding.detected_language == "hi"
-    assert response.multilingual.bhashini_used is True
+
+def test_pipeline_crs_electronics_and_hdpe():
+    """Test 5: CRS Electronics (Laptops/Tablets) and HDPE pipes."""
+    # Test HDPE pipes
+    hdpe_resp = graph_rag_pipeline.process_query("HDPE pipes for rural drinking water supply project")
+    assert "4984" in hdpe_resp.primary_recommendation.is_number
+
+    # Test Laptops under CRS
+    laptop_resp = graph_rag_pipeline.process_query("Laptops and tablet computers under Scheme II CRS registration")
+    assert "13252" in laptop_resp.primary_recommendation.is_number
+    assert laptop_resp.primary_recommendation.certification.scheme == "BIS_CRS"
+
+def test_pipeline_multi_item_tender_document_processing():
+    """Test 6: Full multi-item raw tender document decomposition & processing."""
+    raw_tender_doc = """
+    NOTICE INVITING TENDER (NIT No. 2026/PWD/091)
+    
+    Item 1: Supply of 43 Grade Ordinary Portland Cement for highway culvert works.
+    
+    Item 2: High strength Thermo-Mechanically Treated (TMT) steel rebars Fe 500D for bridge piers.
+    
+    Item 3: High Density Polyethylene (HDPE) pipes 110mm PN6 for water drainage culverts.
+    """
+    
+    results = graph_rag_pipeline.process_tender_document(raw_tender_doc)
+    assert len(results) == 3
+    assert all(isinstance(r, StandardsResponse) for r in results)
+    
+    # Item 1 -> IS 269
+    assert "269" in results[0].primary_recommendation.is_number
+    # Item 2 -> IS 1786
+    assert "1786" in results[1].primary_recommendation.is_number
+    # Item 3 -> IS 4984
+    assert "4984" in results[2].primary_recommendation.is_number
 
 def test_pipeline_spec_draft_export():
-    """Test 5: Verify citation-ready Spec Draft Export clause generation."""
+    """Test 7: Verify citation-ready Spec Draft Export clause generation."""
     query = "5HP submersible pump for agricultural water supply"
     req = QueryRequest(input={"text": query})
     

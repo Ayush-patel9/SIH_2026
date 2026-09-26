@@ -20,13 +20,14 @@ from pipeline.rag_engine.nlp_extractor import NLPExtractor
 from pipeline.rag_engine.tri_retrieval import TriRetrievalLayer, SYNONYM_INDEX_FILE
 from pipeline.rag_engine.reranker_fusion import RerankerAndFusion
 from pipeline.rag_engine.llm_reasoner import LLMReasoner
+from pipeline.rag_engine.tender_doc_parser import TenderDocParser, TenderDocumentAnalysis
 
 logger = logging.getLogger(__name__)
 
 class GraphRAGPipeline:
     """
     Master KG-Augmented RAG (GraphRAG) Pipeline for the BIS Standards Intelligence Platform.
-    Adheres strictly to the API Contract Schema specification (StandardsResponse v1).
+    Supports single queries, tender clauses, and full multi-item raw tender document decomposition.
     """
     def __init__(self):
         logger.info("Initializing Master GraphRAG Pipeline...")
@@ -34,12 +35,12 @@ class GraphRAGPipeline:
         self.tri_retrieval = TriRetrievalLayer()
         self.reranker_fusion = RerankerAndFusion(self.tri_retrieval)
         self.llm_reasoner = LLMReasoner()
+        self.tender_doc_parser = TenderDocParser()
         logger.info("Master GraphRAG Pipeline successfully initialized and ready for queries.")
 
     def process_query(self, request_input: Union[QueryRequest, Dict[str, Any], str]) -> StandardsResponse:
         """
-        Processes a procurement query, tender text, or spec clause through the entire
-        NLP -> Tri-Retrieval -> Reranking & Fusion -> LLM Reasoning pipeline.
+        Processes a single procurement query, tender clause, or spec text.
         """
         start_time = time.perf_counter()
 
@@ -56,11 +57,16 @@ class GraphRAGPipeline:
 
         # 2. NLP Extraction & Intent Classification
         understanding = self.nlp_extractor.extract_understanding(query_text, user_language=user_lang)
+        product_keywords = [e.entity for e in understanding.extracted_entities if e.type in ["PRODUCT", "GRADE_SPECIFICATION"]]
 
         # 3. Tri-Retrieval Layer Execution
-        # Path A: Vector / Semantic search
-        vector_candidates = self.tri_retrieval.retrieve_vector_candidates(understanding.normalized_text, top_k=15)
-        # Path B: Exact IS & Lexicon lookup
+        # Path A: Entity-Weighted Vector Search (4x on Product & Grade)
+        vector_candidates = self.tri_retrieval.retrieve_vector_candidates(
+            query_text=understanding.normalized_text,
+            product_keywords=product_keywords,
+            top_k=15
+        )
+        # Path B: Strict Exact IS, CRS Electronics, & Lexicon Lookup
         exact_candidates = self.tri_retrieval.exact_and_lexicon_lookup(query_text)
 
         # 4. Reranking, Score Fusion & Supersession Resolution
@@ -160,6 +166,37 @@ class GraphRAGPipeline:
         )
 
         return response
+
+    def process_tender_document(self, document_text: str, role: str = "PROCUREMENT_OFFICER", mode: str = "recommend") -> List[StandardsResponse]:
+        """
+        Full 2-LLM Workflow:
+        1. LLM Call 1: Decomposes multi-clause tender into structured items.
+        2. GraphRAG Retrieval: Runs on each item with 2-Tier Knowledge Graph & QCO checks.
+        3. LLM Call 2: Returns validated StandardsResponse for every item in the document.
+        """
+        analysis: TenderDocumentAnalysis = self.tender_doc_parser.parse_raw_tender_text(document_text)
+        responses: List[StandardsResponse] = []
+
+        session_id = f"sess-{uuid.uuid4().hex[:8]}"
+
+        for item in analysis.extracted_items:
+            req = QueryRequest(
+                session_id=session_id,
+                auth={"role": role},
+                input={
+                    "text": item.clean_search_query or item.raw_clause_text,
+                    "source": "tender_upload",
+                    "mode": mode
+                },
+                context={
+                    "known_standards": item.cited_standards,
+                    "product_category": item.product_name
+                }
+            )
+            resp = self.process_query(req)
+            responses.append(resp)
+
+        return responses
 
 # Master Pipeline Singleton
 graph_rag_pipeline = GraphRAGPipeline()
