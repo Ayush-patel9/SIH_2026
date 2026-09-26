@@ -10,12 +10,14 @@ import { MCPView } from './features/mcp';
 import { DashboardView } from './features/dashboard';
 import { ProcurementOfficerPanel, AuditorPanel, VendorPanel } from './features/roles';
 import { TenderUploadView } from './features/tenderUpload';
+import { IntegrationSandboxView } from './features/integrations';
 import { queryStandards, getAlerts } from './api/standardsClient';
 import { useRole } from './store/roleStore';
 import { RoleSwitcher } from './components/RoleSwitcher';
 import { SandboxBanner } from './components/SandboxBanner';
 import { LanguageSelector } from './components/LanguageSelector';
 import { LoadingShimmer } from './components/LoadingShimmer';
+import { MobileBottomNav, type FeatureKey } from './components/MobileBottomNav';
 import type { StandardsResponse, SupportedLanguage, AlertPayload } from './types';
 
 export default function App() {
@@ -23,18 +25,7 @@ export default function App() {
   const [language, setLanguage] = useState<SupportedLanguage>('en');
   const [alerts, setAlerts] = useState<AlertPayload[]>([]);
   const [selectedDomain, setSelectedDomain] = useState<string>('cement');
-  const [activeFeature, setActiveFeature] = useState<
-    | 'explainability'
-    | 'audit'
-    | 'feedback'
-    | 'alerts'
-    | 'comparison'
-    | 'queryUnderstanding'
-    | 'nitGenerator'
-    | 'mcp'
-    | 'dashboard'
-    | 'tenderUpload'
-  >('explainability');
+  const [activeFeature, setActiveFeature] = useState<FeatureKey>('explainability');
   const [isAlertDrawerOpen, setIsAlertDrawerOpen] = useState(false);
   const [activeData, setActiveData] = useState<StandardsResponse>(CEMENT_MOCK_DATA);
   const [searchQuery, setSearchQuery] = useState<string>(
@@ -96,6 +87,7 @@ export default function App() {
           case '9': setActiveFeature('mcp'); break;
           case '0': setActiveFeature('tenderUpload'); break;
           case 'd': setActiveFeature('dashboard'); break;
+          case 'g': setActiveFeature('integrations'); break;
           case 'Enter': handleAnalyze(); break;
         }
       }
@@ -255,6 +247,13 @@ export default function App() {
               onClick={() => setActiveFeature('dashboard')}
             >
               11. Analytics & Heatmap
+            </button>
+            <button
+              type="button"
+              className={`mode-toggle-btn ${activeFeature === 'integrations' ? 'active' : ''}`}
+              onClick={() => setActiveFeature('integrations')}
+            >
+              12. GeM & CPPP Sandbox
             </button>
           </div>
 
@@ -470,6 +469,11 @@ export default function App() {
             }}
           />
         )}
+
+        {/* Feature 12: National E-Procurement Integrations Sandbox (GeM & CPPP) */}
+        {activeFeature === 'integrations' && (
+          <IntegrationSandboxView />
+        )}
       </main>
 
       {/* Right Column: Authority Stream & Legal Audit Trail */}
@@ -577,6 +581,13 @@ export default function App() {
           setActiveFeature('alerts');
           setIsAlertDrawerOpen(false);
         }}
+      />
+
+      {/* Mobile Bottom Navigation Dock */}
+      <MobileBottomNav
+        activeFeature={activeFeature}
+        onSelectFeature={setActiveFeature}
+        alertCount={alerts.length}
       />
     </div>
   );

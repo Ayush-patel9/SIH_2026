@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  manakai-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: manakai-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - GEMINI_API_KEYS=${GEMINI_API_KEYS:-}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GEMINI_FLASH_MODEL=${GEMINI_FLASH_MODEL:-gemini-2.5-flash}
+      - GEMINI_PRO_MODEL=${GEMINI_PRO_MODEL:-gemini-2.5-pro}
+    volumes:
+      - ./pipeline/data:/app/pipeline/data:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  manakai-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: manakai-mcp
+    restart: unless-stopped
+    command: ["python", "-m", "application.mcp_server.server", "--port", "8001"]
+    ports:
+      - "8001:8001"
+    environment:
+      - MCP_PORT=8001
+      - GEMINI_API_KEYS=${GEMINI_API_KEYS:-}
+    volumes:
+      - ./pipeline/data:/app/pipeline/data:ro
+    depends_on:
+      - manakai-api

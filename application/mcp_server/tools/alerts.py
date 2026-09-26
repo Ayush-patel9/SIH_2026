@@ -98,9 +98,15 @@ DEFAULT_ALERTS: List[Dict[str, Any]] = [
 
 def list_active_alerts(severity: str = "ALL", limit: int = 10) -> List[Dict[str, Any]]:
     """
-    Returns active alerts filtered by severity.
+    Returns active alerts filtered by severity from live staleness monitor with fallback.
     """
-    alerts = DEFAULT_ALERTS
+    try:
+        from pipeline.rag_engine.staleness_monitor import staleness_monitor
+        live_alerts = staleness_monitor.get_active_alerts()
+        alerts = live_alerts if live_alerts else DEFAULT_ALERTS
+    except Exception:
+        alerts = DEFAULT_ALERTS
+
     if severity != "ALL":
-        alerts = [a for a in alerts if a.get("severity") == severity]
+        alerts = [a for a in alerts if a.get("severity", "").upper() == severity.upper()]
     return alerts[:limit]

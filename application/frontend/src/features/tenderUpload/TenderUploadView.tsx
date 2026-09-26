@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { uploadTenderText, uploadPDF } from '../../api/standardsClient';
+import { PDFAnnotationViewer } from './PDFAnnotationViewer';
 import type { StandardsResponse } from '../../types';
 
 interface TenderUploadViewProps {
@@ -7,9 +8,9 @@ interface TenderUploadViewProps {
 }
 
 export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem }) => {
-  const [tab, setTab] = useState<'text' | 'pdf'>('text');
+  const [tab, setTab] = useState<'annotator' | 'text' | 'pdf'>('annotator');
   const [docText, setDocText] = useState(
-    `Item 1: Supply of 43 Grade Ordinary Portland Cement (OPC) for highway culvert construction conforming to national standards.\n\nItem 2: High tensile structural steel plates grade E250 for railway overbridge girders.\n\nItem 3: HDPE pipes 110mm PN6 for rural drinking water distribution network under Jal Jeevan Mission.`
+    `Item 1: Supply of 43 Grade Ordinary Portland Cement (OPC) for highway culvert construction conforming strictly to IS 8112:1989 with minimum compressive strength of 43 MPa.\n\nItem 2: High tensile structural steel plates grade E250 for railway overbridge girders per IS 2062:2011.\n\nItem 3: HDPE pipes 110mm PN6 for rural drinking water distribution network under Jal Jeevan Mission per IS 4984:1995.`
   );
   const [isLoading, setIsLoading] = useState(false);
   const [results, setResults] = useState<StandardsResponse[]>([]);
@@ -46,43 +47,109 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
     }
   };
 
+  const handleLoadSample = (type: 'nhai' | 'railways' | 'jjm') => {
+    if (type === 'nhai') {
+      setDocText(
+        `Item 1: Supply of 43 Grade Ordinary Portland Cement (OPC) conforming to IS 8112:1989 for pre-stressed concrete culverts.\nItem 2: Coarse and fine aggregates conforming to IS 383:2016.`
+      );
+    } else if (type === 'railways') {
+      setDocText(
+        `Item 1: Structural steel plates conforming to IS 2062:2011 Grade E250 Quality A for ROB girders.\nItem 2: High strength structural bolts conforming to IS 3757:1985.`
+      );
+    } else {
+      setDocText(
+        `Item 1: High Density Polyethylene (HDPE) pipes 110mm PN6 conforming to IS 4984:1995 with PE-80 resin for drinking water distribution.`
+      );
+    }
+    setTab('text');
+  };
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {/* Header Card */}
       <div className="workbench-card" style={{ borderLeft: '4px solid var(--collapse-cobalt)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
-          <span className="concept-status-badge active">MULTI-ITEM TENDER INGESTION</span>
+          <span className="concept-status-badge active">MULTI-ITEM TENDER INGESTION & AUDIT</span>
           <span className="section-label" style={{ margin: 0 }}>CLAUSE-BY-CLAUSE EXTRACTION</span>
         </div>
         <h2 style={{ fontFamily: 'var(--font-data)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)', marginBottom: '4px' }}>
-          Automated Tender Document Analyser
+          Automated Tender Document Analyser & Split-Screen Highlighter
         </h2>
         <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', margin: 0 }}>
-          Paste a multi-item procurement tender or upload an official PDF NIT document. Each schedule line item is decomposed, matched to applicable BIS standards, and scanned for withdrawn specifications.
+          Ingest multi-item procurement tenders, inspect live color-coded statutory citation badges (🟢 Active, 🟡 Amendment Needed, 🔴 Withdrawn/Superseded, 🔵 Missing Allied Requirement), and eliminate CVC audit vulnerability before NIT publication.
         </p>
 
-        {/* Tab selector */}
-        <div style={{ display: 'flex', gap: '6px', marginTop: '16px' }}>
-          <button
-            type="button"
-            className={`mode-toggle-btn ${tab === 'text' ? 'active' : ''}`}
-            onClick={() => setTab('text')}
-            style={{ padding: '6px 14px', fontSize: '12px' }}
-          >
-            📋 Paste Tender Text / Clauses
-          </button>
-          <button
-            type="button"
-            className={`mode-toggle-btn ${tab === 'pdf' ? 'active' : ''}`}
-            onClick={() => setTab('pdf')}
-            style={{ padding: '6px 14px', fontSize: '12px' }}
-          >
-            📄 Upload PDF Document
-          </button>
+        {/* Tab & Preset selector */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '16px', flexWrap: 'wrap', gap: '10px' }}>
+          <div style={{ display: 'flex', gap: '6px' }}>
+            <button
+              type="button"
+              className={`mode-toggle-btn ${tab === 'annotator' ? 'active' : ''}`}
+              onClick={() => setTab('annotator')}
+              style={{ padding: '6px 14px', fontSize: '12px' }}
+            >
+              🔍 Split-Screen Clause Annotator
+            </button>
+            <button
+              type="button"
+              className={`mode-toggle-btn ${tab === 'text' ? 'active' : ''}`}
+              onClick={() => setTab('text')}
+              style={{ padding: '6px 14px', fontSize: '12px' }}
+            >
+              📋 Paste Tender Text / Clauses
+            </button>
+            <button
+              type="button"
+              className={`mode-toggle-btn ${tab === 'pdf' ? 'active' : ''}`}
+              onClick={() => setTab('pdf')}
+              style={{ padding: '6px 14px', fontSize: '12px' }}
+            >
+              📄 Upload PDF Document
+            </button>
+          </div>
+
+          <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+            <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)' }}>Load Sample:</span>
+            <button
+              type="button"
+              className="btn-secondary"
+              onClick={() => handleLoadSample('nhai')}
+              style={{ fontSize: '11px', padding: '3px 8px' }}
+            >
+              NHAI Culvert
+            </button>
+            <button
+              type="button"
+              className="btn-secondary"
+              onClick={() => handleLoadSample('railways')}
+              style={{ fontSize: '11px', padding: '3px 8px' }}
+            >
+              Railway Steel
+            </button>
+            <button
+              type="button"
+              className="btn-secondary"
+              onClick={() => handleLoadSample('jjm')}
+              style={{ fontSize: '11px', padding: '3px 8px' }}
+            >
+              Jal Jeevan Pipes
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Text Input Tab */}
+      {/* Mode 1: Split-Screen Annotator & Highlighter */}
+      {tab === 'annotator' && (
+        <PDFAnnotationViewer
+          onOpenWorkbench={(_std) => {
+            if (results.length > 0 && onSelectItem) {
+              onSelectItem(results[0]);
+            }
+          }}
+        />
+      )}
+
+      {/* Mode 2: Text Input Tab */}
       {tab === 'text' && (
         <div className="workbench-card">
           <div className="section-label" style={{ marginBottom: '6px' }}>
@@ -92,7 +159,7 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
             rows={8}
             value={docText}
             onChange={(e) => setDocText(e.target.value)}
-            placeholder={`Paste your full NIT tender document here...\nExample:\nItem 1: Supply of 43 Grade OPC Cement.\nItem 2: Structural Steel Plates Grade E250.\nItem 3: HDPE Pipes 110mm PN6.`}
+            placeholder={`Paste your full NIT tender document here...\nExample:\nItem 1: Supply of 43 Grade OPC Cement per IS 8112:1989.\nItem 2: Structural Steel Plates Grade E250 per IS 2062:2011.\nItem 3: HDPE Pipes 110mm PN6 per IS 4984:1995.`}
             className="auth-input"
             style={{
               width: '100%',
@@ -126,7 +193,7 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
         </div>
       )}
 
-      {/* PDF Upload Tab */}
+      {/* Mode 3: PDF Upload Tab */}
       {tab === 'pdf' && (
         <div className="workbench-card">
           <div className="section-label" style={{ marginBottom: '6px' }}>
@@ -203,8 +270,8 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
         </div>
       )}
 
-      {/* Results List */}
-      {results.length > 0 && (
+      {/* Discovered Results List */}
+      {results.length > 0 && tab !== 'annotator' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span className="section-label" style={{ margin: 0 }}>
@@ -329,7 +396,7 @@ const TenderItemResultCard: React.FC<TenderItemResultCardProps> = ({ index, data
               AUDIT HASH: {data.audit_record?.audit_hash?.slice(0, 32)}...
             </div>
             <div style={{ fontFamily: 'var(--font-data)', fontSize: '10px', color: 'var(--ink-muted)' }}>
-              Allied Standards: {data.allied_standards.map((s) => s.is_number).join(', ')}
+              Allied Standards: {data.allied_standards?.map((s) => s.is_number).join(', ') || 'None'}
             </div>
           </div>
         </div>

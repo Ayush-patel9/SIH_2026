@@ -39,6 +39,15 @@ TOOL_VERIFY_LICENSEE = {
     }
 }
 
+import json
+import os
+from pathlib import Path
+from typing import List, Dict, Any, Optional
+
+PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
+LIMS_FILE = PROJECT_ROOT / "pipeline" / "data" / "04_conformity_ecosystem" / "lims_lab_registry.json"
+LICENSEE_FILE = PROJECT_ROOT / "pipeline" / "data" / "04_conformity_ecosystem" / "manak_licensee_registry.json"
+
 DEFAULT_LABS: List[Dict[str, Any]] = [
     {"name": "National Test House (NTH Northern Region)", "state": "Delhi", "nabl_code": "TC-5012", "standards": ["IS 269", "IS 1786", "IS 2062", "IS 456"]},
     {"name": "Central Road Research Institute (CSIR-CRRI)", "state": "Delhi", "nabl_code": "TC-6190", "standards": ["IS 269", "IS 1489", "IS 1786", "IS 383"]},
@@ -56,27 +65,55 @@ DEFAULT_LICENSEES: List[Dict[str, Any]] = [
     {"cml_number": "CM/L-0582910", "manufacturer_name": "JSW Steel Ltd.", "brand": "JSW Neosteel", "standard": "IS 1786:2008", "status": "OPERATIVE", "valid_upto": "2029-11-30"},
 ]
 
+def _get_labs() -> List[Dict[str, Any]]:
+    if LIMS_FILE.exists():
+        try:
+            with open(LIMS_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, list) and data:
+                    return data
+        except Exception:
+            pass
+    return DEFAULT_LABS
+
+def _get_licensees() -> List[Dict[str, Any]]:
+    if LICENSEE_FILE.exists():
+        try:
+            with open(LICENSEE_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, list) and data:
+                    return data
+        except Exception:
+            pass
+    return DEFAULT_LICENSEES
+
 def find_testing_labs(is_number: str, state: Optional[str] = None) -> List[Dict[str, Any]]:
     norm = re.sub(r'[^A-Z0-9]', '', is_number.upper())
+    labs = _get_labs()
     results = []
-    for lab in DEFAULT_LABS:
-        match_std = any(re.sub(r'[^A-Z0-9]', '', s) in norm or norm in re.sub(r'[^A-Z0-9]', '', s) for s in lab["standards"])
-        match_state = not state or state.lower() in lab["state"].lower()
+    for lab in labs:
+        standards_list = lab.get("standards", lab.get("tested_standards", []))
+        match_std = any(re.sub(r'[^A-Z0-9]', '', s) in norm or norm in re.sub(r'[^A-Z0-9]', '', s) for s in standards_list)
+        match_state = not state or state.lower() in lab.get("state", "").lower() or state.lower() in lab.get("city", "").lower()
         if match_std and match_state:
             results.append(lab)
 
     if not results and state:
         # Fallback without state constraint
-        return [l for l in DEFAULT_LABS if any(re.sub(r'[^A-Z0-9]', '', s) in norm for s in l["standards"])]
+        return [l for l in labs if any(re.sub(r'[^A-Z0-9]', '', s) in norm for s in l.get("standards", l.get("tested_standards", [])))]
 
-    return results or DEFAULT_LABS[:3]
+    return results or labs[:3]
 
 def verify_isi_licensee(is_number: str, manufacturer_name: Optional[str] = None) -> List[Dict[str, Any]]:
     norm = re.sub(r'[^A-Z0-9]', '', is_number.upper())
+    licensees = _get_licensees()
     results = []
-    for lic in DEFAULT_LICENSEES:
-        match_std = norm in re.sub(r'[^A-Z0-9]', '', lic["standard"].upper()) or re.sub(r'[^A-Z0-9]', '', lic["standard"].upper()) in norm
-        match_mfg = not manufacturer_name or manufacturer_name.lower() in lic["manufacturer_name"].lower() or manufacturer_name.lower() in lic["brand"].lower()
+    for lic in licensees:
+        std_str = lic.get("standard", lic.get("is_number", ""))
+        match_std = norm in re.sub(r'[^A-Z0-9]', '', std_str.upper()) or re.sub(r'[^A-Z0-9]', '', std_str.upper()) in norm
+        mfg = lic.get("manufacturer_name", "")
+        brand = lic.get("brand", "")
+        match_mfg = not manufacturer_name or manufacturer_name.lower() in mfg.lower() or manufacturer_name.lower() in brand.lower()
         if match_std and match_mfg:
             results.append(lic)
-    return results or DEFAULT_LICENSEES[:2]
+    return results or licensees[:2]

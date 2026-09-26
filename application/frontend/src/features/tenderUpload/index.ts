@@ -1,1 +1,3 @@
-export { TenderUploadView } from './TenderUploadView';
+export * from './TenderUploadView';
+export * from './PDFAnnotationViewer';
+export * from './TenderClauseHighlighter';
