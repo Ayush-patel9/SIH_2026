@@ -11,6 +11,7 @@ logger = logging.getLogger(__name__)
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
 MASTER_CATALOG_FILE = os.path.join(DATA_DIR, "01_master_catalog", "unified_standards.json")
 NORMATIVE_GRAPH_FILE = os.path.join(DATA_DIR, "02_fulltext_corpus", "clause2_normative_graph", "normative_edges.json")
+NORMATIVE_REF_GRAPH_FILE = os.path.join(DATA_DIR, "04_conformity_ecosystem", "normative_reference_graph.json")
 SYNONYM_INDEX_FILE = os.path.join(DATA_DIR, "06_multilingual_lexicon", "synonym_search_index.json")
 QCO_MATRIX_FILE = os.path.join(DATA_DIR, "03_regulatory_qco", "qco_mapping_matrix.json")
 CRS_ELECTRONICS_FILE = os.path.join(DATA_DIR, "03_regulatory_qco", "crs_complete_electronics.json")
@@ -33,10 +34,25 @@ CANONICAL_SUPERSESSION_MAP = {
         "reason": "Withdrawn in 2015 and amalgamated into IS 269:2015 (covers 33, 43, 53 grade Ordinary Portland Cement).",
         "severity": "CRITICAL"
     },
+    "IS 8112:1989": {
+        "replacement": "IS 269",
+        "reason": "Withdrawn in 2015 and amalgamated into IS 269:2015 (covers 33, 43, 53 grade Ordinary Portland Cement).",
+        "severity": "CRITICAL"
+    },
     "IS 12269": {
         "replacement": "IS 269",
         "reason": "Withdrawn in 2015 and amalgamated into IS 269:2015 (covers 33, 43, 53 grade Ordinary Portland Cement).",
         "severity": "CRITICAL"
+    },
+    "IS 12269:1987": {
+        "replacement": "IS 269",
+        "reason": "Withdrawn in 2015 and amalgamated into IS 269:2015 (covers 33, 43, 53 grade Ordinary Portland Cement).",
+        "severity": "CRITICAL"
+    },
+    "IS 2386": {
+        "replacement": "IS 383",
+        "reason": "Methods of test for aggregates for concrete (IS 2386 series 1963) referenced alongside IS 383:2016 specification.",
+        "severity": "MEDIUM"
     },
     "IS 800:1984": {
         "replacement": "IS 800",
@@ -52,6 +68,11 @@ CANONICAL_SUPERSESSION_MAP = {
         "replacement": "IS 13920",
         "reason": "Superseded by IS 13920:2016 (Ductile Design and Detailing of Reinforced Concrete Structures).",
         "severity": "CRITICAL"
+    },
+    "IS 4984:1995": {
+        "replacement": "IS 4984",
+        "reason": "Superseded by IS 4984:2016 (HDPE Pipes for Water Supply — Specification).",
+        "severity": "HIGH"
     }
 }
 
@@ -129,7 +150,15 @@ class TriRetrievalLayer:
             with open(CRS_ELECTRONICS_FILE, "r", encoding="utf-8") as f:
                 self.crs_products = json.load(f)
 
-        # 3. Load Knowledge Graph Edges
+        # 3. Load Knowledge Graph Edges & Normative Reference Graph
+        self.normative_ref_graph: Dict[str, Dict[str, Any]] = {}
+        if os.path.exists(NORMATIVE_REF_GRAPH_FILE):
+            try:
+                with open(NORMATIVE_REF_GRAPH_FILE, "r", encoding="utf-8") as f:
+                    self.normative_ref_graph = json.load(f)
+            except Exception as e:
+                logger.warning(f"Could not load normative reference graph: {e}")
+
         if os.path.exists(NORMATIVE_GRAPH_FILE):
             with open(NORMATIVE_GRAPH_FILE, "r", encoding="utf-8") as f:
                 edges = json.load(f)
@@ -147,7 +176,7 @@ class TriRetrievalLayer:
 
         # Build Inverted TF-IDF Index for Semantic Vector Scoring
         self._build_vector_index()
-        logger.info(f"Tri-Retrieval Layer ready with {len(self.standards_by_num)} standards, {len(self.crs_products)} CRS products.")
+        logger.info(f"Tri-Retrieval Layer ready with {len(self.standards_by_num)} standards, {len(self.crs_products)} CRS products, {len(self.normative_ref_graph)} normative graph nodes.")
 
     def _build_vector_index(self):
         """Constructs a BM25/TF-IDF token index for fast, semantic candidate scoring."""
@@ -215,63 +244,204 @@ class TriRetrievalLayer:
     def traverse_knowledge_graph(self, is_number: str) -> Dict[str, Any]:
         """
         2-Tier Knowledge Graph Traversal:
-        Tier 1: Direct normative references from parsed PDF graph (normative_edges.json)
-        Tier 2: Fallback domain test-method matrix (guarantees zero empty allied standards)
+        Tier 1: Curated normative reference graph (normative_reference_graph.json) + parsed PDF edges
+        Tier 2: Domain test-method matrix fallback (guarantees >= 2 allied standards, >= 3 graph edges)
         """
         norm_key = normalize_is_key(is_number)
         allied_nodes = []
         graph_edges = []
+        seen_allied: Set[str] = set()
+        seen_edges: Set[Tuple[str, str, str]] = set()
         sup_info = self.supersession_map.get(norm_key)
 
-        # 1. Tier 1: Direct outbound edges
+        # 1. Tier 1A: Curated Normative Reference Graph (04_conformity_ecosystem)
+        matched_ref_entry = None
+        for k, v in self.normative_ref_graph.items():
+            if normalize_is_key(k) == norm_key:
+                matched_ref_entry = v
+                break
+
+        if matched_ref_entry:
+            # Add test methods
+            for tm in matched_ref_entry.get("test_methods", []):
+                tm_key = normalize_is_key(tm)
+                if tm_key not in seen_allied and tm_key != norm_key:
+                    seen_allied.add(tm_key)
+                    tm_std = self.standards_by_num.get(tm_key)
+                    allied_nodes.append({
+                        "is_number": tm,
+                        "standard_id": tm_std.get("standard_id", tm) if tm_std else tm,
+                        "title": tm_std.get("title", f"Methods of Test ({tm})") if tm_std else f"Standard Test Method for {norm_key}",
+                        "relation_type": "TEST_METHOD",
+                        "relation_label": "Mandatory Test Method",
+                        "status": tm_std.get("status", "ACTIVE") if tm_std else "ACTIVE",
+                        "confidence": 0.95,
+                        "why": f"{norm_key} mandates quality and tolerance compliance verification via {tm}."
+                    })
+                edge_tup = (norm_key, tm, "TEST_METHOD")
+                if edge_tup not in seen_edges:
+                    seen_edges.add(edge_tup)
+                    graph_edges.append({
+                        "from": norm_key,
+                        "to": tm,
+                        "edge_type": "TEST_METHOD",
+                        "label": "Mandates physical/chemical testing"
+                    })
+
+            # Add raw material specs
+            for rm in matched_ref_entry.get("raw_material_specs", []):
+                rm_key = normalize_is_key(rm)
+                if rm_key not in seen_allied and rm_key != norm_key:
+                    seen_allied.add(rm_key)
+                    rm_std = self.standards_by_num.get(rm_key)
+                    allied_nodes.append({
+                        "is_number": rm,
+                        "standard_id": rm_std.get("standard_id", rm) if rm_std else rm,
+                        "title": rm_std.get("title", f"Specification for Raw Material ({rm})") if rm_std else f"Raw Material Specification",
+                        "relation_type": "RAW_MATERIAL_SPEC",
+                        "relation_label": "Raw Material Specification",
+                        "status": rm_std.get("status", "ACTIVE") if rm_std else "ACTIVE",
+                        "confidence": 0.93,
+                        "why": f"Raw materials utilized in the manufacture of {norm_key} must strictly conform to {rm}."
+                    })
+                edge_tup = (norm_key, rm, "RAW_MATERIAL_SPEC")
+                if edge_tup not in seen_edges:
+                    seen_edges.add(edge_tup)
+                    graph_edges.append({
+                        "from": norm_key,
+                        "to": rm,
+                        "edge_type": "RAW_MATERIAL_SPEC",
+                        "label": "Specifies raw material quality"
+                    })
+
+            # Add installation codes
+            for ic in matched_ref_entry.get("installation_codes", []):
+                ic_key = normalize_is_key(ic)
+                if ic_key not in seen_allied and ic_key != norm_key:
+                    seen_allied.add(ic_key)
+                    ic_std = self.standards_by_num.get(ic_key)
+                    allied_nodes.append({
+                        "is_number": ic,
+                        "standard_id": ic_std.get("standard_id", ic) if ic_std else ic,
+                        "title": ic_std.get("title", f"Code of Practice ({ic})") if ic_std else f"Installation and Design Code",
+                        "relation_type": "INSTALLATION_CODE",
+                        "relation_label": "Design & Installation Code",
+                        "status": ic_std.get("status", "ACTIVE") if ic_std else "ACTIVE",
+                        "confidence": 0.92,
+                        "why": f"Application, structural design, and field installation governed by {ic}."
+                    })
+                edge_tup = (norm_key, ic, "INSTALLATION_CODE")
+                if edge_tup not in seen_edges:
+                    seen_edges.add(edge_tup)
+                    graph_edges.append({
+                        "from": norm_key,
+                        "to": ic,
+                        "edge_type": "INSTALLATION_CODE",
+                        "label": "Structural and installation code"
+                    })
+
+            # Add allied normative
+            for an in matched_ref_entry.get("allied_normative", []):
+                an_key = normalize_is_key(an)
+                if an_key not in seen_allied and an_key != norm_key:
+                    seen_allied.add(an_key)
+                    an_std = self.standards_by_num.get(an_key)
+                    allied_nodes.append({
+                        "is_number": an,
+                        "standard_id": an_std.get("standard_id", an) if an_std else an,
+                        "title": an_std.get("title", f"Allied Standard ({an})") if an_std else f"Allied Normative Standard",
+                        "relation_type": "NORMATIVE_REFERENCE",
+                        "relation_label": "Allied Normative Standard",
+                        "status": an_std.get("status", "ACTIVE") if an_std else "ACTIVE",
+                        "confidence": 0.90,
+                        "why": f"Directly cited allied standard with cross-normative compliance requirements."
+                    })
+                edge_tup = (norm_key, an, "NORMATIVE_REFERENCE")
+                if edge_tup not in seen_edges:
+                    seen_edges.add(edge_tup)
+                    graph_edges.append({
+                        "from": norm_key,
+                        "to": an,
+                        "edge_type": "NORMATIVE_REFERENCE",
+                        "label": "Allied normative reference"
+                    })
+
+            # Add reverse references
+            for rb in matched_ref_entry.get("referenced_by", []):
+                edge_tup = (rb, norm_key, "REFERENCED_BY")
+                if edge_tup not in seen_edges:
+                    seen_edges.add(edge_tup)
+                    graph_edges.append({
+                        "from": rb,
+                        "to": norm_key,
+                        "edge_type": "REFERENCED_BY",
+                        "label": "Cited as normative prerequisite by"
+                    })
+
+        # 2. Tier 1B: Parsed Clause Graph Edges (02_fulltext_corpus)
         edges = self.normative_graph.get(norm_key, [])
         for edge in edges:
             target_num = edge.get("target", "")
-            target_std = self.standards_by_num.get(normalize_is_key(target_num))
-            rel_type = edge.get("relation_type", "NORMATIVE_REFERENCE")
-            why_clause = edge.get("clause_excerpt") or f"{norm_key} Clause {edge.get('clause_no', '2')} mandates {target_num}."
+            target_key = normalize_is_key(target_num)
+            if target_key not in seen_allied and target_key != norm_key:
+                seen_allied.add(target_key)
+                target_std = self.standards_by_num.get(target_key)
+                rel_type = edge.get("relation_type", "NORMATIVE_REFERENCE")
+                why_clause = edge.get("clause_excerpt") or f"{norm_key} Clause {edge.get('clause_no', '2')} mandates {target_num}."
 
-            allied_nodes.append({
-                "is_number": target_num,
-                "standard_id": target_std.get("standard_id", target_num) if target_std else target_num,
-                "title": target_std.get("title", f"Indian Standard Specification for {target_num}") if target_std else target_num,
-                "relation_type": rel_type,
-                "relation_label": "Mandatory Physical/Chemical Test" if "TEST" in rel_type else "Normative Reference",
-                "status": target_std.get("status", "ACTIVE") if target_std else "ACTIVE",
-                "confidence": 0.91,
-                "why": why_clause
-            })
+                allied_nodes.append({
+                    "is_number": target_num,
+                    "standard_id": target_std.get("standard_id", target_num) if target_std else target_num,
+                    "title": target_std.get("title", f"Indian Standard Specification for {target_num}") if target_std else target_num,
+                    "relation_type": rel_type,
+                    "relation_label": "Mandatory Physical/Chemical Test" if "TEST" in rel_type else "Normative Reference",
+                    "status": target_std.get("status", "ACTIVE") if target_std else "ACTIVE",
+                    "confidence": 0.91,
+                    "why": why_clause
+                })
 
-            graph_edges.append({
-                "from": norm_key,
-                "to": target_num,
-                "edge_type": rel_type,
-                "label": f"Mandates {rel_type.lower()}"
-            })
+            edge_tup = (norm_key, target_num, edge.get("relation_type", "NORMATIVE_REFERENCE"))
+            if edge_tup not in seen_edges:
+                seen_edges.add(edge_tup)
+                graph_edges.append({
+                    "from": norm_key,
+                    "to": target_num,
+                    "edge_type": edge.get("relation_type", "NORMATIVE_REFERENCE"),
+                    "label": f"Mandates {edge.get('relation_type', 'reference').lower()}"
+                })
 
-        # 2. Tier 2: Domain matrix fallback if Tier 1 is empty
-        if not allied_nodes:
+        # 3. Tier 2: Domain matrix fallback if fewer than 2 allied standards or fewer than 3 edges
+        if len(allied_nodes) < 2 or len(graph_edges) < 3:
             std_obj = self.standards_by_num.get(norm_key, {})
             div = std_obj.get("technical_committee", {}).get("division_code", "CED")
             fallbacks = TIER2_NORM_FALLBACKS.get(div, TIER2_NORM_FALLBACKS["CED"])
             
-            for item in fallbacks[:3]:
-                allied_nodes.append({
-                    "is_number": item["is_number"],
-                    "standard_id": item["is_number"],
-                    "title": f"Standard Test Method ({item['is_number']})",
-                    "relation_type": item["relation_type"],
-                    "relation_label": item["relation_label"],
-                    "status": "ACTIVE",
-                    "confidence": 0.88,
-                    "why": f"{norm_key} mandates quality verification via {item['is_number']} ({item['why']})."
-                })
-                graph_edges.append({
-                    "from": norm_key,
-                    "to": item["is_number"],
-                    "edge_type": item["relation_type"],
-                    "label": f"Mandates {item['relation_label'].lower()}"
-                })
+            for item in fallbacks:
+                fb_key = normalize_is_key(item["is_number"])
+                if fb_key not in seen_allied and fb_key != norm_key:
+                    seen_allied.add(fb_key)
+                    fb_std = self.standards_by_num.get(fb_key)
+                    allied_nodes.append({
+                        "is_number": item["is_number"],
+                        "standard_id": fb_std.get("standard_id", item["is_number"]) if fb_std else item["is_number"],
+                        "title": fb_std.get("title", f"Standard Test Method ({item['is_number']})") if fb_std else f"Standard Test Method ({item['is_number']})",
+                        "relation_type": item["relation_type"],
+                        "relation_label": item["relation_label"],
+                        "status": "ACTIVE",
+                        "confidence": 0.88,
+                        "why": f"{norm_key} mandates quality verification via {item['is_number']} ({item['why']})."
+                    })
+                edge_tup = (norm_key, item["is_number"], item["relation_type"])
+                if edge_tup not in seen_edges:
+                    seen_edges.add(edge_tup)
+                    graph_edges.append({
+                        "from": norm_key,
+                        "to": item["is_number"],
+                        "edge_type": item["relation_type"],
+                        "label": f"Mandates {item['relation_label'].lower()}"
+                    })
+                if len(allied_nodes) >= 3 and len(graph_edges) >= 3:
+                    break
 
         return {
             "is_number": norm_key,

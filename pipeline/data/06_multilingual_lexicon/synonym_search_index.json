@@ -1,9 +1,7 @@
 {
   "सरिया": {
-    "en": "Reinforcement Bar (Rebar/TMT)",
-    "domain": "Civil",
-    "is_ref": "IS 1786",
-    "is_context": ""
+    "canonical": "TMT Deformed Steel Rebars",
+    "is_ref": "IS 1786"
   },
   "सरिए": "IS 1786",
   "रीइन्फोर्समेंट स्टील": "IS 1786",
@@ -20,7 +18,10 @@
     "is_context": ""
   },
   "steel rod": "IS 1786",
-  "साधारण पोर्टलैंड सीमेंट": "IS 269",
+  "साधारण पोर्टलैंड सीमेंट": {
+    "canonical": "Ordinary Portland Cement",
+    "is_ref": "IS 269"
+  },
   "सीमेंट 43 ग्रेड": "IS 269",
   "सीमेंट 53 ग्रेड": "IS 269",
   "सीमेंट की बोरियां": "IS 269",
@@ -35,11 +36,17 @@
   "portland cement": "IS 269",
   "पोर्टलैंड पॉज़ोलाना सीमेंट": "IS 1489 (Part 1)",
   "फ्लाई ऐश सीमेंट": "IS 1489 (Part 1)",
-  "पीपीसी सीमेंट": "IS 1489 (Part 1)",
+  "पीपीसी सीमेंट": {
+    "canonical": "Portland Pozzolana Cement",
+    "is_ref": "IS 1489 (Part 1)"
+  },
   "ppc cement": "IS 1489 (Part 1)",
   "fly ash cement": "IS 1489 (Part 1)",
   "बिजली का तार": "IS 694",
-  "विद्युत केबल": "IS 694",
+  "विद्युत केबल": {
+    "canonical": "PVC Insulated Cables",
+    "is_ref": "IS 694"
+  },
   "पीवीसी तार": "IS 694",
   "तांबे का तार": "IS 694",
   "वायरिंग तार": "IS 694",
@@ -69,7 +76,10 @@
   },
   "100 kva transformer": "IS 1180 (Part 1)",
   "250 kva transformer": "IS 1180 (Part 1)",
-  "एलईडी स्ट्रीट लाइट": "IS 10322 (Part 5/Sec 3)",
+  "एलईडी स्ट्रीट लाइट": {
+    "canonical": "LED Luminaires for General Lighting",
+    "is_ref": "IS 16077"
+  },
   "सड़क बत्ती": "IS 10322 (Part 5/Sec 3)",
   "एलईडी प्रकाश व्यवस्था": "IS 10322 (Part 5/Sec 3)",
   "एलईडी ल्यूमिनेयर": "IS 10322 (Part 5/Sec 3)",
@@ -117,7 +127,10 @@
     "is_context": ""
   },
   "दुपहिया वाहन चालकों के लिए हेलमेट": "IS 4151",
-  "हेलमेट": "IS 4151",
+  "हेलमेट": {
+    "canonical": "Industrial Safety Helmets",
+    "is_ref": "IS 2925"
+  },
   "helmet": "IS 4151",
   "two wheeler helmet": "IS 4151",
   "bike helmet": "IS 4151",
@@ -738,10 +751,8 @@
     "is_context": ""
   },
   "सीमेंट": {
-    "en": "Cement",
-    "domain": "Civil",
-    "is_ref": "IS 269/IS 8112",
-    "is_context": ""
+    "canonical": "Ordinary Portland Cement",
+    "is_ref": "IS 269"
   },
   "रेत": {
     "en": "Sand (Fine Aggregate)",
@@ -1092,10 +1103,8 @@
     "is_context": ""
   },
   "ईंट": {
-    "en": "Brick",
-    "domain": "Civil",
-    "is_ref": "IS 1077",
-    "is_context": ""
+    "canonical": "Common Burnt Clay Building Bricks",
+    "is_ref": "IS 1077"
   },
   "brick": {
     "en": "Brick",
@@ -1200,10 +1209,8 @@
     "is_context": ""
   },
   "ट्रांसफार्मर": {
-    "en": "Transformer",
-    "domain": "Electrical",
-    "is_ref": "IS 1180",
-    "is_context": ""
+    "canonical": "Distribution Transformer",
+    "is_ref": "IS 1180 (Part 1)"
   },
   "केबल": {
     "en": "Cable",
@@ -1254,10 +1261,8 @@
     "is_context": ""
   },
   "एलईडी बल्ब": {
-    "en": "LED Lamp",
-    "domain": "Electrical",
-    "is_ref": "IS 16107",
-    "is_context": ""
+    "canonical": "Self-Ballasted LED Lamps",
+    "is_ref": "IS 16102 (Part 1)"
   },
   "led lamp": {
     "en": "LED Lamp",
@@ -1452,10 +1457,8 @@
     "is_context": ""
   },
   "एमसीबी": {
-    "en": "MCB (Miniature Circuit Breaker)",
-    "domain": "Electrical",
-    "is_ref": "IS 8828",
-    "is_context": ""
+    "canonical": "Miniature Circuit Breakers MCBs",
+    "is_ref": "IS 8828"
   },
   "mcb (miniature circuit breaker)": {
     "en": "MCB (Miniature Circuit Breaker)",
@@ -2214,10 +2217,8 @@
     "is_context": ""
   },
   "सुरक्षा जूते": {
-    "en": "Safety Footwear / Shoes",
-    "domain": "Safety",
-    "is_ref": "IS 11226",
-    "is_context": ""
+    "canonical": "Personal Protective Equipment - Safety Footwear",
+    "is_ref": "IS 15298 (Part 2)"
   },
   "safety footwear / shoes": {
     "en": "Safety Footwear / Shoes",
@@ -2388,10 +2389,8 @@
     "is_context": ""
   },
   "लैपटॉप": {
-    "en": "Laptop",
-    "domain": "IT",
-    "is_ref": "",
-    "is_context": ""
+    "canonical": "Laptops & IT Equipment",
+    "is_ref": "IS 13252 (Part 1)"
   },
   "laptop": {
     "en": "Laptop",
@@ -2470,5 +2469,181 @@
     "domain": "IT",
     "is_ref": "",
     "is_context": ""
+  },
+  "४३ ग्रेड सीमेंट": {
+    "canonical": "43 Grade OPC Cement",
+    "is_ref": "IS 269"
+  },
+  "५३ ग्रेड सीमेंट": {
+    "canonical": "53 Grade OPC Cement",
+    "is_ref": "IS 269"
+  },
+  "स्लैग सीमेंट": {
+    "canonical": "Portland Slag Cement",
+    "is_ref": "IS 455"
+  },
+  "टीएमटी स्टील": {
+    "canonical": "TMT Deformed Steel Bars",
+    "is_ref": "IS 1786"
+  },
+  "स्टील रीबार": {
+    "canonical": "Steel Rebars Fe 500D",
+    "is_ref": "IS 1786"
+  },
+  "स्ट्रक्चरल स्टील": {
+    "canonical": "Structural Steel",
+    "is_ref": "IS 2062"
+  },
+  "एचडीपीई पाइप": {
+    "canonical": "HDPE Pipes for Water Supply",
+    "is_ref": "IS 4984"
+  },
+  "पीवीसी पाइप": {
+    "canonical": "uPVC Pipes for Potable Water",
+    "is_ref": "IS 4985"
+  },
+  "कंक्रीट पाइप": {
+    "canonical": "Precast Concrete Pipes",
+    "is_ref": "IS 458"
+  },
+  "एक्सएलपीई केबल": {
+    "canonical": "XLPE Insulated Power Cables",
+    "is_ref": "IS 7098 (Part 2)"
+  },
+  "एलईडी ड्राइवर": {
+    "canonical": "Lamp Controlgear for LED Modules",
+    "is_ref": "IS 15885 (Part 2/Sec 13)"
+  },
+  "सीसीटीवी": {
+    "canonical": "Video Surveillance Systems CCTV",
+    "is_ref": "IS 13252 (Part 1)"
+  },
+  "लिथियम बैटरी": {
+    "canonical": "Secondary Lithium Cells and Batteries",
+    "is_ref": "IS 16046 (Part 2)"
+  },
+  "पेवर ब्लॉक": {
+    "canonical": "Precast Concrete Blocks for Paving",
+    "is_ref": "IS 15658"
+  },
+  "एएसी ब्लॉक": {
+    "canonical": "Autoclaved Aerated Concrete Blocks",
+    "is_ref": "IS 2185 (Part 3)"
+  },
+  "मोटरसाइकिल हेलमेट": {
+    "canonical": "Protective Helmets for Two Wheeler Riders",
+    "is_ref": "IS 4151"
+  },
+  "खिलौने": {
+    "canonical": "Safety of Toys",
+    "is_ref": "IS 9873 (Part 1)"
+  },
+  "जियोटेक्सटाइल": {
+    "canonical": "Geotextiles for Subgrade Stabilization",
+    "is_ref": "IS 16391"
+  },
+  "सबमर्सिबल पंप": {
+    "canonical": "Submersible Pumpsets",
+    "is_ref": "IS 14220"
+  },
+  "गीजर": {
+    "canonical": "Stationary Storage Water Heaters",
+    "is_ref": "IS 302 (Part 2/Sec 21)"
+  },
+  "சிமெண்ட்": {
+    "canonical": "Ordinary Portland Cement",
+    "is_ref": "IS 269"
+  },
+  "கம்பி": {
+    "canonical": "High Strength Deformed Steel Bars",
+    "is_ref": "IS 1786"
+  },
+  "இரும்பு கம்பிகள்": {
+    "canonical": "TMT Steel Rebars",
+    "is_ref": "IS 1786"
+  },
+  "நீர் குழாய்": {
+    "canonical": "HDPE Pipes for Water Supply",
+    "is_ref": "IS 4984"
+  },
+  "குடிநீர் குழாய்": {
+    "canonical": "uPVC Pipes for Potable Water",
+    "is_ref": "IS 4985"
+  },
+  "மின்கம்பி": {
+    "canonical": "PVC Insulated Electric Cables",
+    "is_ref": "IS 694"
+  },
+  "மின்மாற்றி": {
+    "canonical": "Distribution Transformer",
+    "is_ref": "IS 1180 (Part 1)"
+  },
+  "மின்விளக்கு": {
+    "canonical": "LED Lamps",
+    "is_ref": "IS 16102 (Part 1)"
+  },
+  "மோட்டார் பம்ப்": {
+    "canonical": "Submersible Motor Pumps",
+    "is_ref": "IS 14220"
+  },
+  "பாதுகாப்பு தலைக்கவசம்": {
+    "canonical": "Safety Helmets",
+    "is_ref": "IS 2925"
+  },
+  "செங்கல்": {
+    "canonical": "Clay Bricks",
+    "is_ref": "IS 1077"
+  },
+  "கான்கிரீட்": {
+    "canonical": "Plain and Reinforced Concrete",
+    "is_ref": "IS 456"
+  },
+  "సిమెంట్": {
+    "canonical": "Ordinary Portland Cement",
+    "is_ref": "IS 269"
+  },
+  "ఇనుము": {
+    "canonical": "TMT Deformed Steel Bars",
+    "is_ref": "IS 1786"
+  },
+  "టీఎంటీ రాడ్లు": {
+    "canonical": "TMT Steel Rods",
+    "is_ref": "IS 1786"
+  },
+  "నీటి పైపు": {
+    "canonical": "HDPE Pipes for Water Supply",
+    "is_ref": "IS 4984"
+  },
+  "పీవీసీ పైపులు": {
+    "canonical": "uPVC Water Pipes",
+    "is_ref": "IS 4985"
+  },
+  "విద్యుత్ వైరు": {
+    "canonical": "Electric Wire Cable",
+    "is_ref": "IS 694"
+  },
+  "ట్రాన్స్‌ఫార్మర్": {
+    "canonical": "Power & Distribution Transformer",
+    "is_ref": "IS 1180 (Part 1)"
+  },
+  "ఎల్ఈడీ బల్బు": {
+    "canonical": "LED Bulbs",
+    "is_ref": "IS 16102 (Part 1)"
+  },
+  "మోటారు పంపు": {
+    "canonical": "Electric Motor Pump",
+    "is_ref": "IS 14220"
+  },
+  "హెల్మెట్": {
+    "canonical": "Safety Helmets",
+    "is_ref": "IS 2925"
+  },
+  "ఇటుక": {
+    "canonical": "Building Bricks",
+    "is_ref": "IS 1077"
+  },
+  "కాంక్రీట్": {
+    "canonical": "Concrete Construction Code",
+    "is_ref": "IS 456"
   }
 }

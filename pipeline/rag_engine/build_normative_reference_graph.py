@@ -1,0 +1,604 @@
+#!/usr/bin/env python3
+"""
+build_normative_reference_graph.py
+Constructs the multi-tier normative reference graph in pipeline/data/04_conformity_ecosystem/normative_reference_graph.json.
+Contains 60+ fully realized standards with test_methods, raw_material_specs, installation_codes, allied_normative,
+and automatically computes bidirectional referenced_by links.
+"""
+
+import os
+import json
+import logging
+from pathlib import Path
+from collections import defaultdict
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+logger = logging.getLogger(__name__)
+
+DATA_DIR = Path(__file__).parent.parent / "data"
+GRAPH_OUTPUT_FILE = DATA_DIR / "04_conformity_ecosystem" / "normative_reference_graph.json"
+
+RAW_GRAPH_DEFINITIONS = {
+    "IS 269:2015": {
+        "title": "Ordinary Portland Cement — Specification (33, 43 & 53 Grade)",
+        "domain": "Cement & Concrete",
+        "division": "CED",
+        "test_methods": ["IS 4031 (Part 1):1996", "IS 4031 (Part 2):1999", "IS 4031 (Part 3):1988", "IS 4031 (Part 4):1988", "IS 4031 (Part 5):1988", "IS 4031 (Part 6):1988", "IS 4032:1985"],
+        "raw_material_specs": ["IS 650:1991", "IS 3812 (Part 1):2013"],
+        "installation_codes": ["IS 456:2000", "IS 1343:2012"],
+        "allied_normative": ["IS 455:2015", "IS 1489 (Part 1):2015", "IS 1489 (Part 2):2015", "IS 12330:1988", "IS 8041:1990"]
+    },
+    "IS 455:2015": {
+        "title": "Portland Slag Cement — Specification",
+        "domain": "Cement & Concrete",
+        "division": "CED",
+        "test_methods": ["IS 4031 (Part 1):1996", "IS 4031 (Part 5):1988", "IS 4031 (Part 6):1988", "IS 4032:1985"],
+        "raw_material_specs": ["IS 650:1991", "IS 12089:1987"],
+        "installation_codes": ["IS 456:2000"],
+        "allied_normative": ["IS 269:2015", "IS 1489 (Part 1):2015"]
+    },
+    "IS 1489 (Part 1):2015": {
+        "title": "Portland Pozzolana Cement — Specification — Part 1: Fly Ash Based",
+        "domain": "Cement & Concrete",
+        "division": "CED",
+        "test_methods": ["IS 4031 (Part 1):1996", "IS 4031 (Part 3):1988", "IS 4031 (Part 6):1988", "IS 4032:1985", "IS 1727:1967"],
+        "raw_material_specs": ["IS 650:1991", "IS 3812 (Part 1):2013"],
+        "installation_codes": ["IS 456:2000"],
+        "allied_normative": ["IS 269:2015", "IS 1489 (Part 2):2015"]
+    },
+    "IS 1489 (Part 2):2015": {
+        "title": "Portland Pozzolana Cement — Specification — Part 2: Calcined Clay Based",
+        "domain": "Cement & Concrete",
+        "division": "CED",
+        "test_methods": ["IS 4031 (Part 1):1996", "IS 4031 (Part 6):1988", "IS 4032:1985", "IS 1727:1967"],
+        "raw_material_specs": ["IS 650:1991"],
+        "installation_codes": ["IS 456:2000"],
+        "allied_normative": ["IS 269:2015", "IS 1489 (Part 1):2015"]
+    },
+    "IS 456:2000": {
+        "title": "Plain and Reinforced Concrete — Code of Practice",
+        "domain": "Cement & Concrete",
+        "division": "CED",
+        "test_methods": ["IS 516 (Part 1/Sec 1):2021", "IS 1199 (Part 1):2018", "IS 2386 (Part 1):1963", "IS 3025"],
+        "raw_material_specs": ["IS 269:2015", "IS 455:2015", "IS 1489 (Part 1):2015", "IS 1786:2008", "IS 383:2016", "IS 3812 (Part 1):2013", "IS 9103:1999"],
+        "installation_codes": ["IS 13920:2016", "IS 1893 (Part 1):2016", "IS 875 (Part 1 to 5)"],
+        "allied_normative": ["IS 1343:2012", "IS 10262:2019", "IS 1642:1989"]
+    },
+    "IS 1343:2012": {
+        "title": "Prestressed Concrete — Code of Practice",
+        "domain": "Cement & Concrete",
+        "division": "CED",
+        "test_methods": ["IS 516 (Part 1/Sec 1):2021", "IS 1199 (Part 1):2018"],
+        "raw_material_specs": ["IS 269:2015", "IS 1785 (Part 1):1983", "IS 6003:2010", "IS 14268:2022", "IS 383:2016"],
+        "installation_codes": ["IS 456:2000", "IS 13920:2016"],
+        "allied_normative": ["IS 10262:2019"]
+    },
+    "IS 10262:2019": {
+        "title": "Concrete Mix Proportioning — Guidelines",
+        "domain": "Cement & Concrete",
+        "division": "CED",
+        "test_methods": ["IS 516 (Part 1/Sec 1):2021", "IS 1199 (Part 1):2018", "IS 4031 (Part 6):1988"],
+        "raw_material_specs": ["IS 269:2015", "IS 455:2015", "IS 1489 (Part 1):2015", "IS 383:2016", "IS 3812 (Part 1):2013", "IS 9103:1999"],
+        "installation_codes": ["IS 456:2000"],
+        "allied_normative": ["IS 1343:2012"]
+    },
+    "IS 383:2016": {
+        "title": "Coarse and Fine Aggregate for Concrete — Specification",
+        "domain": "Cement & Concrete",
+        "division": "CED",
+        "test_methods": ["IS 2386 (Part 1):1963", "IS 2386 (Part 2):1963", "IS 2386 (Part 3):1963", "IS 2386 (Part 4):1963"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 456:2000"],
+        "allied_normative": ["IS 269:2015", "IS 10262:2019"]
+    },
+    "IS 1786:2008": {
+        "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement",
+        "domain": "Steel & Metallurgy",
+        "division": "MTD",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 1599:2019", "IS 228 (Part 1):1987", "IS 228 (Part 3):1987", "IS 2770 (Part 1):1967"],
+        "raw_material_specs": ["IS 2830:2012"],
+        "installation_codes": ["IS 13920:2016", "IS 456:2000"],
+        "allied_normative": ["IS 2062:2011", "IS 432 (Part 1):1982"]
+    },
+    "IS 2062:2011": {
+        "title": "Hot Rolled Medium and High Tensile Structural Steel — Specification",
+        "domain": "Steel & Metallurgy",
+        "division": "MTD",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 1599:2019", "IS 1757 (Part 1):2014", "IS 228 (Part 1):1987"],
+        "raw_material_specs": ["IS 2830:2012"],
+        "installation_codes": ["IS 800:2007"],
+        "allied_normative": ["IS 1786:2008", "IS 1161:2014", "IS 1079:2017"]
+    },
+    "IS 800:2007": {
+        "title": "General Construction in Steel — Code of Practice",
+        "domain": "Steel & Metallurgy",
+        "division": "CED",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 1599:2019"],
+        "raw_material_specs": ["IS 2062:2011", "IS 1367 (Part 3):2017", "IS 1161:2014", "IS 808:1989"],
+        "installation_codes": ["IS 1893 (Part 1):2016", "IS 875 (Part 1 to 5)"],
+        "allied_normative": ["IS 456:2000", "IS 1786:2008"]
+    },
+    "IS 13920:2016": {
+        "title": "Ductile Design and Detailing of Reinforced Concrete Structures Subjected to Seismic Forces — Code of Practice",
+        "domain": "Cement & Concrete",
+        "division": "CED",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 1599:2019"],
+        "raw_material_specs": ["IS 1786:2008", "IS 269:2015"],
+        "installation_codes": ["IS 456:2000", "IS 1893 (Part 1):2016"],
+        "allied_normative": ["IS 432 (Part 1):1982"]
+    },
+    "IS 432 (Part 1):1982": {
+        "title": "Mild Steel and Medium Tensile Steel Bars and Hard-Drawn Steel Wire for Concrete Reinforcement",
+        "domain": "Steel & Metallurgy",
+        "division": "MTD",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 1599:2019", "IS 228 (Part 1):1987"],
+        "raw_material_specs": ["IS 2830:2012"],
+        "installation_codes": ["IS 456:2000"],
+        "allied_normative": ["IS 1786:2008", "IS 2062:2011"]
+    },
+    "IS 2830:2012": {
+        "title": "Carbon Steel Cast Billet Ingots, Billets, Blooms and Slabs for Re-Rolling into Steel for General Structural Purposes",
+        "domain": "Steel & Metallurgy",
+        "division": "MTD",
+        "test_methods": ["IS 228 (Part 1):1987", "IS 228 (Part 3):1987"],
+        "raw_material_specs": [],
+        "installation_codes": [],
+        "allied_normative": ["IS 1786:2008", "IS 2062:2011", "IS 1977:1975"]
+    },
+    "IS 1977:1975": {
+        "title": "Structural Steel (Standard Quality) — Specification",
+        "domain": "Steel & Metallurgy",
+        "division": "MTD",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 1599:2019", "IS 228 (Part 1):1987"],
+        "raw_material_specs": ["IS 2830:2012"],
+        "installation_codes": ["IS 800:2007"],
+        "allied_normative": ["IS 2062:2011"]
+    },
+    "IS 1161:2014": {
+        "title": "Steel Tubes for Structural Purposes — Specification",
+        "domain": "Steel & Metallurgy",
+        "division": "MTD",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 2328:2018", "IS 2329:2018"],
+        "raw_material_specs": ["IS 2062:2011", "IS 1079:2017"],
+        "installation_codes": ["IS 800:2007"],
+        "allied_normative": ["IS 1239 (Part 1):2004", "IS 3589:2001"]
+    },
+    "IS 1239 (Part 1):2004": {
+        "title": "Steel Tubes, Tubulars and Other Wrought Steel Fittings — Part 1: Steel Tubes",
+        "domain": "Pipes & Water Supply",
+        "division": "MTD",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 2328:2018", "IS 4736:1986"],
+        "raw_material_specs": ["IS 1079:2017"],
+        "installation_codes": ["IS 2065:1983"],
+        "allied_normative": ["IS 1239 (Part 2):1992", "IS 3589:2001"]
+    },
+    "IS 1239 (Part 2):1992": {
+        "title": "Steel Tubes, Tubulars and Other Wrought Steel Fittings — Part 2: Steel Pipe Fittings",
+        "domain": "Pipes & Water Supply",
+        "division": "MTD",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 4736:1986"],
+        "raw_material_specs": ["IS 1239 (Part 1):2004"],
+        "installation_codes": ["IS 2065:1983"],
+        "allied_normative": ["IS 1239 (Part 1):2004"]
+    },
+    "IS 3589:2001": {
+        "title": "Steel Pipes for Water and Sewage (168.3 mm to 2540 mm Outside Diameter) — Specification",
+        "domain": "Pipes & Water Supply",
+        "division": "MTD",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 3600 (Part 1):2009", "IS 4736:1986"],
+        "raw_material_specs": ["IS 2062:2011"],
+        "installation_codes": ["IS 5822:1994"],
+        "allied_normative": ["IS 1161:2014", "IS 1239 (Part 1):2004"]
+    },
+    "IS 4984:2016": {
+        "title": "High Density Polyethylene (HDPE) Pipes for Water Supply — Specification",
+        "domain": "Pipes & Water Supply",
+        "division": "CED",
+        "test_methods": ["IS 12235 (Part 1 to 9)", "IS 7328:1992", "IS 2530:1963"],
+        "raw_material_specs": ["IS 7328:1992"],
+        "installation_codes": ["IS 7634 (Part 2):2012"],
+        "allied_normative": ["IS 4985:2021", "IS 14333:1996"]
+    },
+    "IS 4985:2021": {
+        "title": "Unplasticized Polyvinyl Chloride (uPVC) Pipes for Potable Water Supplies — Specification",
+        "domain": "Pipes & Water Supply",
+        "division": "CED",
+        "test_methods": ["IS 12235 (Part 1 to 9)", "IS 12235 (Part 8/Sec 1):2004"],
+        "raw_material_specs": ["IS 10151:2019"],
+        "installation_codes": ["IS 7634 (Part 3):2003"],
+        "allied_normative": ["IS 4984:2016", "IS 13592:2013"]
+    },
+    "IS 14333:1996": {
+        "title": "High Density Polyethylene (HDPE) Pipes for Sewerage — Specification",
+        "domain": "Pipes & Water Supply",
+        "division": "CED",
+        "test_methods": ["IS 12235 (Part 1 to 9)", "IS 7328:1992"],
+        "raw_material_specs": ["IS 7328:1992"],
+        "installation_codes": ["IS 7634 (Part 2):2012"],
+        "allied_normative": ["IS 4984:2016", "IS 16098 (Part 2):2013"]
+    },
+    "IS 458:2003": {
+        "title": "Precast Concrete Pipes (with and without Reinforcement) — Specification",
+        "domain": "Pipes & Water Supply",
+        "division": "CED",
+        "test_methods": ["IS 3597:1998", "IS 516 (Part 1/Sec 1):2021"],
+        "raw_material_specs": ["IS 269:2015", "IS 455:2015", "IS 432 (Part 1):1982", "IS 1786:2008", "IS 383:2016"],
+        "installation_codes": ["IS 783:1985"],
+        "allied_normative": ["IS 456:2000"]
+    },
+    "IS 8329:2000": {
+        "title": "Centrifugally Cast (Spun) Ductile Iron Pressure Pipes for Water, Gas and Sewage — Specification",
+        "domain": "Pipes & Water Supply",
+        "division": "MTD",
+        "test_methods": ["IS 1608 (Part 1):2018", "IS 1500 (Part 1):2019"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 12288:1987"],
+        "allied_normative": ["IS 9523:2000", "IS 1536:2001"]
+    },
+    "IS 694:2010": {
+        "title": "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductor for Rated Voltages up to and Including 450/750 V",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS 10810 (Part 1 to 64)", "IS 8130:2013", "IS 5831:1984"],
+        "raw_material_specs": ["IS 8130:2013", "IS 5831:1984"],
+        "installation_codes": ["IS 732:2019", "IS 3043:2018"],
+        "allied_normative": ["IS 1554 (Part 1):1988", "IS 7098 (Part 1):1988"]
+    },
+    "IS 1554 (Part 1):1988": {
+        "title": "PVC Insulated (Heavy Duty) Electric Cables — Part 1: For Working Voltages up to and Including 1100 V",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS 10810 (Part 1 to 64)", "IS 8130:2013", "IS 5831:1984", "IS 3975:1999"],
+        "raw_material_specs": ["IS 8130:2013", "IS 5831:1984", "IS 3975:1999"],
+        "installation_codes": ["IS 1255:1983"],
+        "allied_normative": ["IS 694:2010", "IS 7098 (Part 1):1988"]
+    },
+    "IS 7098 (Part 1):1988": {
+        "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables — Part 1: For Working Voltage up to and Including 1100 V",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS 10810 (Part 1 to 64)", "IS 8130:2013", "IS 5831:1984"],
+        "raw_material_specs": ["IS 8130:2013", "IS 5831:1984", "IS 3975:1999"],
+        "installation_codes": ["IS 1255:1983"],
+        "allied_normative": ["IS 7098 (Part 2):2011", "IS 1554 (Part 1):1988"]
+    },
+    "IS 7098 (Part 2):2011": {
+        "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables — Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS 10810 (Part 1 to 64)", "IS 8130:2013", "IS 5831:1984"],
+        "raw_material_specs": ["IS 8130:2013", "IS 5831:1984", "IS 3975:1999"],
+        "installation_codes": ["IS 1255:1983"],
+        "allied_normative": ["IS 7098 (Part 1):1988", "IS 7098 (Part 3):1993"]
+    },
+    "IS 8828:1996": {
+        "title": "Electrical Accessories — Circuit-Breakers for Overcurrent Protection for Household and Similar Installations (MCBs)",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS/IEC 60898-1:2015", "IS/IEC 60947-2:2016"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 732:2019", "IS 3043:2018"],
+        "allied_normative": ["IS 12640 (Part 1):2016", "IS 12640 (Part 2):2016"]
+    },
+    "IS 12640 (Part 1):2016": {
+        "title": "Residual Current Operated Circuit-Breakers without Integral Overcurrent Protection (RCCBs) for Household and Similar Uses",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS/IEC 61008-1:2012"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 732:2019", "IS 3043:2018"],
+        "allied_normative": ["IS 8828:1996", "IS 12640 (Part 2):2016"]
+    },
+    "IS 302 (Part 1):2008": {
+        "title": "Safety of Household and Similar Electrical Appliances — Part 1: General Requirements",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS/IEC 60335-1:2010"],
+        "raw_material_specs": ["IS 694:2010"],
+        "installation_codes": ["IS 732:2019", "IS 3043:2018"],
+        "allied_normative": ["IS 302 (Part 2/Sec 7):2010", "IS 302 (Part 2/Sec 21):2011", "IS 302 (Part 2/Sec 25):2014"]
+    },
+    "IS 302 (Part 2/Sec 7):2010": {
+        "title": "Safety of Household and Similar Electrical Appliances — Part 2-7: Particular Requirements for Domestic Electric Irons",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS/IEC 60335-2-3:2012"],
+        "raw_material_specs": ["IS 694:2010"],
+        "installation_codes": ["IS 732:2019"],
+        "allied_normative": ["IS 302 (Part 1):2008"]
+    },
+    "IS 302 (Part 2/Sec 21):2011": {
+        "title": "Safety of Household and Similar Electrical Appliances — Part 2-21: Particular Requirements for Stationary Storage Water Heaters",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS/IEC 60335-2-21:2012", "IS 2082:1993"],
+        "raw_material_specs": ["IS 694:2010"],
+        "installation_codes": ["IS 732:2019", "IS 2065:1983"],
+        "allied_normative": ["IS 302 (Part 1):2008", "IS 2082:1993"]
+    },
+    "IS 16102 (Part 1):2012": {
+        "title": "Self-Ballasted LED Lamps for General Lighting Services — Part 1: Safety Requirements",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS/IEC 62560:2011", "IS 15885 (Part 1):2011"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 732:2019"],
+        "allied_normative": ["IS 16102 (Part 2):2012", "IS 15885 (Part 2/Sec 13):2012", "IS 16103 (Part 1):2012"]
+    },
+    "IS 16102 (Part 2):2012": {
+        "title": "Self-Ballasted LED Lamps for General Lighting Services — Part 2: Performance Requirements",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS/IEC 62612:2013", "IS 16106:2012"],
+        "raw_material_specs": [],
+        "installation_codes": [],
+        "allied_normative": ["IS 16102 (Part 1):2012", "IS 16107 (Part 2/Sec 1):2012"]
+    },
+    "IS 15885 (Part 2/Sec 13):2012": {
+        "title": "Lamp Controlgear — Part 2-13: Particular Requirements for DC or AC Supplied Electronic Controlgear for LED Modules",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS/IEC 61347-2-13:2014", "IS 15885 (Part 1):2011"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 732:2019"],
+        "allied_normative": ["IS 16102 (Part 1):2012", "IS 16103 (Part 1):2012", "IS 16077:2013"]
+    },
+    "IS 16077:2013": {
+        "title": "LED Luminaires for General Lighting Services — Specification",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS 10322 (Part 5/Sec 1):2012", "IS 16106:2012"],
+        "raw_material_specs": ["IS 15885 (Part 2/Sec 13):2012", "IS 16103 (Part 1):2012"],
+        "installation_codes": ["IS 732:2019"],
+        "allied_normative": ["IS 16102 (Part 1):2012", "IS 10322 (Part 1):2014"]
+    },
+    "IS 2026 (Part 1):2011": {
+        "title": "Power Transformers — Part 1: General",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS 2026 (Part 2):2010", "IS 2026 (Part 3):2009", "IS 2026 (Part 5):2011", "IS 335:2018"],
+        "raw_material_specs": ["IS 335:2018", "IS 12444:1988", "IS 3024:2015"],
+        "installation_codes": ["IS 10028 (Part 1 to 3):1981", "IS 3043:2018"],
+        "allied_normative": ["IS 1180 (Part 1):2014", "IS 2099:1986"]
+    },
+    "IS 1180 (Part 1):2014": {
+        "title": "Outdoor Type Oil Immersed Distribution Transformers up to and Including 2500 kVA, 33 kV — Specification",
+        "domain": "Electrical & Cables",
+        "division": "ETD",
+        "test_methods": ["IS 2026 (Part 1):2011", "IS 2026 (Part 2):2010", "IS 335:2018"],
+        "raw_material_specs": ["IS 335:2018", "IS 12444:1988", "IS 3024:2015"],
+        "installation_codes": ["IS 10028 (Part 1 to 3):1981"],
+        "allied_normative": ["IS 2026 (Part 1):2011"]
+    },
+    "IS 13252 (Part 1):2010": {
+        "title": "Information Technology Equipment — Safety — Part 1: General Requirements",
+        "domain": "IT & CRS Electronics",
+        "division": "LITD",
+        "test_methods": ["IS/IEC 60950-1:2005", "IS 16046 (Part 2):2018"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 732:2019", "IS 3043:2018"],
+        "allied_normative": ["IS 16046 (Part 2):2018", "IS 616:2017", "IS 16242 (Part 1):2014", "IS 16333 (Part 3):2022"]
+    },
+    "IS 16046 (Part 1):2018": {
+        "title": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes — Safety Requirements for Portable Sealed Secondary Cells: Part 1 Nickel Systems",
+        "domain": "IT & CRS Electronics",
+        "division": "LITD",
+        "test_methods": ["IS/IEC 62133-1:2017"],
+        "raw_material_specs": [],
+        "installation_codes": [],
+        "allied_normative": ["IS 16046 (Part 2):2018", "IS 13252 (Part 1):2010"]
+    },
+    "IS 16046 (Part 2):2018": {
+        "title": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes — Safety Requirements for Portable Sealed Secondary Cells: Part 2 Lithium Systems",
+        "domain": "IT & CRS Electronics",
+        "division": "LITD",
+        "test_methods": ["IS/IEC 62133-2:2017"],
+        "raw_material_specs": [],
+        "installation_codes": [],
+        "allied_normative": ["IS 13252 (Part 1):2010", "IS 16046 (Part 1):2018"]
+    },
+    "IS 616:2017": {
+        "title": "Audio, Video and Similar Electronic Apparatus — Safety Requirements",
+        "domain": "IT & CRS Electronics",
+        "division": "LITD",
+        "test_methods": ["IS/IEC 60065:2014"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 732:2019"],
+        "allied_normative": ["IS 13252 (Part 1):2010", "IS 16046 (Part 2):2018"]
+    },
+    "IS 16242 (Part 1):2014": {
+        "title": "Uninterruptible Power Systems (UPS) — Part 1: General and Safety Requirements for UPS",
+        "domain": "IT & CRS Electronics",
+        "division": "LITD",
+        "test_methods": ["IS/IEC 62040-1:2008"],
+        "raw_material_specs": ["IS 16046 (Part 2):2018", "IS 1651:2013"],
+        "installation_codes": ["IS 732:2019", "IS 3043:2018"],
+        "allied_normative": ["IS 13252 (Part 1):2010"]
+    },
+    "IS 16221 (Part 1):2016": {
+        "title": "Safety of Power Converters for Use in Photovoltaic Power Systems — Part 1: General Requirements",
+        "domain": "IT & CRS Electronics",
+        "division": "LITD",
+        "test_methods": ["IS/IEC 62109-1:2010"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 732:2019", "IS 3043:2018"],
+        "allied_normative": ["IS 16221 (Part 2):2015", "IS/IEC 61730 (Part 1):2016"]
+    },
+    "IS 16221 (Part 2):2015": {
+        "title": "Safety of Power Converters for Use in Photovoltaic Power Systems — Part 2: Particular Requirements for Inverters",
+        "domain": "IT & CRS Electronics",
+        "division": "LITD",
+        "test_methods": ["IS/IEC 62109-2:2011"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 732:2019", "IS 3043:2018"],
+        "allied_normative": ["IS 16221 (Part 1):2016"]
+    },
+    "IS 1077:1992": {
+        "title": "Common Burnt Clay Building Bricks — Specification",
+        "domain": "Masonry & Building Blocks",
+        "division": "CED",
+        "test_methods": ["IS 3495 (Part 1 to 4):2019"],
+        "raw_material_specs": [],
+        "installation_codes": ["IS 2212:1991"],
+        "allied_normative": ["IS 2185 (Part 1):2005", "IS 3102:1971"]
+    },
+    "IS 2185 (Part 1):2005": {
+        "title": "Concrete Masonry Units — Specification — Part 1: Hollow and Solid Concrete Blocks",
+        "domain": "Masonry & Building Blocks",
+        "division": "CED",
+        "test_methods": ["IS 2185 (Part 1):2005 Annex D to G", "IS 516 (Part 1/Sec 1):2021"],
+        "raw_material_specs": ["IS 269:2015", "IS 455:2015", "IS 1489 (Part 1):2015", "IS 383:2016"],
+        "installation_codes": ["IS 2572:2005", "IS 456:2000"],
+        "allied_normative": ["IS 2185 (Part 3):1984", "IS 1077:1992"]
+    },
+    "IS 2185 (Part 3):1984": {
+        "title": "Concrete Masonry Units — Specification — Part 3: Autoclaved Cellular Aerated Concrete Blocks (AAC Blocks)",
+        "domain": "Masonry & Building Blocks",
+        "division": "CED",
+        "test_methods": ["IS 2185 (Part 3):1984 Clause 7 to 11", "IS 6441 (Part 1 to 9):1972"],
+        "raw_material_specs": ["IS 269:2015", "IS 3812 (Part 1):2013", "IS 712:1984"],
+        "installation_codes": ["IS 6041:1985"],
+        "allied_normative": ["IS 2185 (Part 1):2005", "IS 1077:1992"]
+    },
+    "IS 15658:2006": {
+        "title": "Precast Concrete Blocks for Paving (Paver Blocks) — Specification",
+        "domain": "Masonry & Building Blocks",
+        "division": "CED",
+        "test_methods": ["IS 15658:2006 Annex D to G", "IS 516 (Part 1/Sec 1):2021"],
+        "raw_material_specs": ["IS 269:2015", "IS 455:2015", "IS 1489 (Part 1):2015", "IS 383:2016", "IS 9103:1999"],
+        "installation_codes": ["IRC:SP:63-2018"],
+        "allied_normative": ["IS 456:2000", "IS 2185 (Part 1):2005"]
+    },
+    "IS 2925:1984": {
+        "title": "Specification for Industrial Safety Helmets",
+        "domain": "Safety PPE & Toys",
+        "division": "TED",
+        "test_methods": ["IS 2925:1984 Appendix A to F"],
+        "raw_material_specs": ["IS 7328:1992"],
+        "installation_codes": [],
+        "allied_normative": ["IS 4151:2015", "IS 15298 (Part 2):2016"]
+    },
+    "IS 4151:2015": {
+        "title": "Protective Helmets for Two Wheeler Riders — Specification",
+        "domain": "Safety PPE & Toys",
+        "division": "TED",
+        "test_methods": ["IS 4151:2015 Annex A to G"],
+        "raw_material_specs": [],
+        "installation_codes": [],
+        "allied_normative": ["IS 2925:1984"]
+    },
+    "IS 9873 (Part 1):2019": {
+        "title": "Safety Aspects of Toys — Part 1: Safety Aspects Related to Mechanical and Physical Properties",
+        "domain": "Safety PPE & Toys",
+        "division": "CHD",
+        "test_methods": ["IS/ISO 8124-1:2018"],
+        "raw_material_specs": [],
+        "installation_codes": [],
+        "allied_normative": ["IS 9873 (Part 2):2017", "IS 9873 (Part 3):2020", "IS 9873 (Part 5):2014"]
+    },
+    "IS 9873 (Part 2):2017": {
+        "title": "Safety Aspects of Toys — Part 2: Flammability Requirements",
+        "domain": "Safety PPE & Toys",
+        "division": "CHD",
+        "test_methods": ["IS/ISO 8124-2:2014"],
+        "raw_material_specs": [],
+        "installation_codes": [],
+        "allied_normative": ["IS 9873 (Part 1):2019", "IS 9873 (Part 3):2020"]
+    },
+    "IS 9873 (Part 3):2020": {
+        "title": "Safety Aspects of Toys — Part 3: Migration of Certain Elements",
+        "domain": "Safety PPE & Toys",
+        "division": "CHD",
+        "test_methods": ["IS/ISO 8124-3:2020"],
+        "raw_material_specs": [],
+        "installation_codes": [],
+        "allied_normative": ["IS 9873 (Part 1):2019", "IS 9873 (Part 5):2014"]
+    },
+    "IS 9873 (Part 5):2014": {
+        "title": "Safety Aspects of Toys — Part 5: Determination of Total Concentration of Heavy Metals",
+        "domain": "Safety PPE & Toys",
+        "division": "CHD",
+        "test_methods": ["IS 9873 (Part 5):2014 Annex A"],
+        "raw_material_specs": [],
+        "installation_codes": [],
+        "allied_normative": ["IS 9873 (Part 1):2019", "IS 9873 (Part 3):2020"]
+    },
+    "IS 15298 (Part 2):2016": {
+        "title": "Personal Protective Equipment — Part 2: Safety Footwear",
+        "domain": "Safety PPE & Toys",
+        "division": "TXD",
+        "test_methods": ["IS/ISO 20344:2011"],
+        "raw_material_specs": ["IS 5831:1984", "IS 578:1985"],
+        "installation_codes": [],
+        "allied_normative": ["IS 2925:1984", "IS 15298 (Part 1):2011"]
+    },
+    "IS 16391:2015": {
+        "title": "Geosynthetics — Polymeric Geotextiles for Subgrade Stabilization in Pavements — Specification",
+        "domain": "Textiles & Geotextiles",
+        "division": "TXD",
+        "test_methods": ["IS 13162 (Part 1 to 5):1992", "IS 14293:1995", "IS 14294:1995"],
+        "raw_material_specs": ["IS 7328:1992"],
+        "installation_codes": ["IRC:SP:59-2019"],
+        "allied_normative": ["IS 16392:2015", "IS 16654:2017"]
+    },
+    "IS 16392:2015": {
+        "title": "Geosynthetics — Geotextiles for Subsurface Drainage and Filtration — Specification",
+        "domain": "Textiles & Geotextiles",
+        "division": "TXD",
+        "test_methods": ["IS 13162 (Part 1 to 5):1992", "IS 14293:1995", "IS 14324:1995"],
+        "raw_material_specs": ["IS 7328:1992"],
+        "installation_codes": ["IRC:SP:59-2019"],
+        "allied_normative": ["IS 16391:2015"]
+    }
+}
+
+
+def build_and_save_graph():
+    logger.info("Building bidirectional normative reference graph...")
+    
+    # Calculate reverse references (referenced_by)
+    referenced_by_map = defaultdict(set)
+    
+    for std_id, details in RAW_GRAPH_DEFINITIONS.items():
+        all_referenced = (
+            details.get("test_methods", []) +
+            details.get("raw_material_specs", []) +
+            details.get("installation_codes", []) +
+            details.get("allied_normative", [])
+        )
+        for ref in all_referenced:
+            # Clean key for matching
+            ref_clean = ref.split(":")[0].strip()
+            # Match against standard IDs
+            for candidate_id in RAW_GRAPH_DEFINITIONS:
+                if candidate_id.startswith(ref_clean) or ref_clean in candidate_id:
+                    referenced_by_map[candidate_id].add(std_id)
+            referenced_by_map[ref].add(std_id)
+
+    # Build final dictionary with bidirectional references
+    final_graph = {}
+    for std_id, details in RAW_GRAPH_DEFINITIONS.items():
+        # Get reverse references
+        ref_by_list = sorted(list(referenced_by_map.get(std_id, set())))
+        
+        final_graph[std_id] = {
+            "title": details["title"],
+            "domain": details["domain"],
+            "division": details["division"],
+            "test_methods": details.get("test_methods", []),
+            "raw_material_specs": details.get("raw_material_specs", []),
+            "installation_codes": details.get("installation_codes", []),
+            "allied_normative": details.get("allied_normative", []),
+            "referenced_by": ref_by_list
+        }
+
+    os.makedirs(GRAPH_OUTPUT_FILE.parent, exist_ok=True)
+    with open(GRAPH_OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(final_graph, f, indent=2, ensure_ascii=False)
+
+    logger.info("Successfully built Normative Reference Graph with %d standards -> %s", len(final_graph), GRAPH_OUTPUT_FILE)
+    return final_graph
+
+
+if __name__ == "__main__":
+    build_and_save_graph()

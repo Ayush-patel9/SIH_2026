@@ -1,19 +1,19 @@
 {
   "01_master_catalog": {
-    "total_standards": 22020,
+    "total_standards": 22011,
     "null_is_number": 0,
     "null_title": 0,
     "null_division_code": 0,
     "null_aspect": 0,
     "null_ics_codes": 0,
-    "total_mandatory_standards": 179,
-    "fulltext_available_flagged": 1984,
+    "total_mandatory_standards": 165,
+    "fulltext_available_flagged": 11990,
     "ics_fields": 31,
     "ics_groups": 306,
     "status": "PASS"
   },
   "02_fulltext_corpus": {
-    "raw_downloads_count": 1632,
+    "raw_downloads_count": 3065,
     "parsed_clauses_count": 1632,
     "null_scopes": 0,
     "total_requirements_extracted": 4946,
@@ -49,8 +49,8 @@
   "06_multilingual_lexicon": {
     "hindi_terms_count": 198,
     "regional_languages": 5,
-    "total_regional_terms": 76,
-    "search_index_entries": 492,
+    "total_regional_terms": 125,
+    "search_index_entries": 536,
     "status": "PASS"
   },
   "passed_all_checks": true

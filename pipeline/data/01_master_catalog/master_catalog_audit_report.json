@@ -1,7 +1,7 @@
 {
   "audit_1_total_volume": {
     "metric": "Total Indian Standards Ingested",
-    "value": 21992,
+    "value": 22011,
     "benchmark": "20,000+ Standards",
     "passed": true,
     "status": "PASS"
@@ -27,13 +27,13 @@
     "division_distribution": {
       "TXD": 1152,
       "FAD": 573,
-      "LITD": 4796,
+      "LITD": 4802,
       "GEN": 7375,
       "MED": 675,
-      "ETD": 1100,
+      "ETD": 1107,
       "PGD": 554,
-      "MTD": 1278,
-      "CHD": 1497,
+      "MTD": 1283,
+      "CHD": 1498,
       "CED": 1292,
       "MHD": 337,
       "TED": 913,
@@ -48,26 +48,33 @@
   },
   "audit_5_qco_statutory_coverage": {
     "metric": "Mandatory QCO Standards Identified",
-    "total_mandatory_standards": 97,
+    "total_mandatory_standards": 176,
     "ministry_breakdown": {
+      "Ministry of Jal Shakti": 2,
       "Ministry of Chemicals and Petrochemicals": 5,
-      "DPIIT": 58,
-      "Ministry of Power / DPIIT": 2,
-      "Ministry of Steel": 13,
-      "MeitY": 5,
-      "Department of Consumer Affairs": 4,
-      "Ministry of New and Renewable Energy (MNRE)": 1,
+      "Ministry of Steel": 17,
+      "Ministry of Labour and Employment": 1,
+      "Ministry of Power": 13,
+      "DPIIT": 71,
+      "MeitY": 32,
+      "Bureau of Indian Standards (BIS)": 4,
+      "Department for Promotion of Industry and Internal Trade (DPIIT)": 7,
+      "Ministry of Housing and Urban Affairs (MoHUA)": 2,
       "Ministry of Electronics and Information Technology (MeitY) / MNRE": 3,
+      "Ministry of Textiles": 2,
+      "Ministry of Road Transport and Highways": 6,
+      "Ministry of Consumer Affairs": 3,
       "Ministry of Chemicals and Petrochemicals (DCPC)": 2,
-      "Department for Promotion of Industry and Internal Trade (DPIIT)": 2,
-      "Ministry of Road Transport and Highways (MoRTH)": 2
+      "Ministry of Heavy Industries": 2,
+      "Ministry of Petroleum and Natural Gas": 2,
+      "Ministry of Agriculture and Farmers Welfare": 2
     },
     "passed": true,
     "status": "PASS"
   },
   "audit_6_international_harmonization": {
     "metric": "International Equivalents (IS/ISO, IS/IEC)",
-    "total_harmonized_standards": 511,
+    "total_harmonized_standards": 516,
     "sample_harmonized": [
       "IS 10316 -> ISO 1006",
       "IS 10958 -> ISO 3447-1975",
@@ -82,14 +89,14 @@
     "metric": "38 Product Group Taxonomy Classification",
     "groups_represented": 23,
     "top_groups": {
-      "Metals, Alloys and Metal Products (including Steel Products)": 7612,
-      "Electronic and Telecom equipments, components and devices": 2801,
+      "Metals, Alloys and Metal Products (including Steel Products)": 7617,
+      "Electronic and Telecom equipments, components and devices": 2805,
       "Building Materials including Paints": 2091,
-      "Electrical Switchgear and Other Electrical Products/Accessories": 1237,
+      "Electrical Switchgear and Other Electrical Products/Accessories": 1238,
       "Food, Food Products and food processing equipments": 1179,
       "Gases, Gas Cylinders , Machine tools and other mechanical products": 1050,
       "Coal and Petroleum products": 915,
-      "Chemicals, Plastics and their Products including packaging and Environment": 771,
+      "Chemicals, Plastics and their Products including packaging and Environment": 772,
       "Transport and Related Products": 739,
       "Textile, Textile Products and Machinery": 651
     },
@@ -99,14 +106,14 @@
   "audit_8_aspect_categorization": {
     "metric": "Aspect Categorization (Specification, Test Methods, Codes)",
     "aspect_breakdown": {
-      "Product Specification": 15638,
+      "Product Specification": 15647,
       "Methods of tests": 2753,
       "Code of Practice": 1437,
       "Terminology": 659,
       "Dimensions": 703,
-      "System Standard": 596,
+      "System Standard": 600,
       "Service Specification": 72,
-      "Safety Standard": 134
+      "Safety Standard": 140
     },
     "passed": true,
     "status": "PASS"
@@ -135,6 +142,10 @@
       "title",
       "full_title",
       "status",
+      "latest_amendment",
+      "supersedes",
+      "superseded_by",
+      "scope_snippet",
       "aspect",
       "product_group",
       "degree_of_equivalence",
@@ -143,11 +154,12 @@
       "ics_codes",
       "amendments",
       "regulatory_compliance",
+      "certification",
       "ia_identifier",
       "fulltext_available",
       "source_ia_url"
     ],
-    "json_size_mb": 24.79,
+    "json_size_mb": 34.38,
     "passed": true,
     "status": "PASS"
   }

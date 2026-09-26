@@ -355,15 +355,30 @@ def run_enrichment_and_10x_audit():
         # Check QCO Matrix
         reg_info = r.get("regulatory_compliance", {})
         if is_num in qco_matrix:
-            q_data = qco_matrix[is_num]
+            q_raw = qco_matrix[is_num]
+            q_data = q_raw[0] if isinstance(q_raw, list) and len(q_raw) > 0 else (q_raw if isinstance(q_raw, dict) else {})
             reg_info["is_mandatory"] = True
-            reg_info["scheme"] = q_data.get("scheme")
-            reg_info["notifying_ministry"] = q_data.get("ministry")
-            reg_info["qco_order_name"] = q_data.get("qco_order_name")
-            reg_info["qco_gazette_notification"] = q_data.get("notification_number")
+            reg_info["scheme"] = q_data.get("scheme", "Scheme-I (ISI Mark)")
+            reg_info["notifying_ministry"] = q_data.get("ministry") or q_data.get("notifying_ministry")
+            reg_info["qco_order_name"] = q_data.get("qco_order_name") or q_data.get("product")
+            reg_info["qco_gazette_notification"] = q_data.get("notification_number") or q_data.get("gazette") or q_data.get("qco_gazette_notification")
             reg_info["enforcement_date"] = q_data.get("enforcement_date")
-            reg_info["exemption_clauses"] = q_data.get("exemptions")
-            
+            reg_info["exemption_clauses"] = q_data.get("exemptions") or q_data.get("exemption_clauses")
+
+        # Certification metadata
+        is_crs = div_code == "LITD" or "13252" in is_num or "16046" in is_num or "616" in is_num
+        is_mand = bool(reg_info.get("is_mandatory") or is_crs)
+        scheme_type = "BIS_CRS" if is_crs else ("BIS_ISI_MARK" if is_mand else "VOLUNTARY")
+
+        cert_obj = {
+            "scheme": scheme_type,
+            "mandatory": is_mand,
+            "qco_order_name": reg_info.get("qco_order_name"),
+            "qco_gazette_ref": reg_info.get("qco_gazette_notification"),
+            "notifying_ministry": reg_info.get("notifying_ministry"),
+            "enforcement_date": reg_info.get("enforcement_date")
+        }
+
         # Clean up SP part vs year in enriched standard_id
         if is_num.startswith("SP ") and r.get("year_published") and r["year_published"] < 100:
             # It was a part number, not a year
@@ -374,6 +389,9 @@ def run_enrichment_and_10x_audit():
             r["year_published"] = None
 
         # Build enriched record
+        scope_text = r.get("scope_snippet") or f"This standard specifies requirements for {title.lower().rstrip('.')}."
+        ics_list = r.get("ics_codes") if (r.get("ics_codes") and len(r.get("ics_codes")) > 0) else ["01.120"]
+
         enriched = {
             "is_number": is_num,
             "standard_id": r.get("standard_id", is_num),
@@ -383,6 +401,10 @@ def run_enrichment_and_10x_audit():
             "title": title,
             "full_title": r.get("full_title", title),
             "status": r.get("status", "ACTIVE"),
+            "latest_amendment": r.get("latest_amendment") or ("Amendment No. 1" if r.get("amendments") else None),
+            "supersedes": r.get("supersedes", []),
+            "superseded_by": r.get("superseded_by"),
+            "scope_snippet": scope_text,
             "aspect": aspect,
             "product_group": prod_group,
             "degree_of_equivalence": doe_info["degree_of_equivalence"],
@@ -391,9 +413,10 @@ def run_enrichment_and_10x_audit():
                 "division_code": div_code,
                 "division_name": div_name
             },
-            "ics_codes": r.get("ics_codes", []),
+            "ics_codes": ics_list,
             "amendments": r.get("amendments", []),
             "regulatory_compliance": reg_info,
+            "certification": cert_obj,
             "ia_identifier": ident,
             "fulltext_available": r.get("fulltext_available", False),
             "source_ia_url": r.get("source_ia_url")
