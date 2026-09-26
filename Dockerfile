@@ -3,7 +3,7 @@ FROM node:20-alpine AS frontend-builder
 WORKDIR /app/frontend
 
 COPY application/frontend/package*.json ./
-RUN npm ci
+RUN npm ci || npm install
 
 COPY application/frontend/ ./
 RUN npm run build
@@ -26,24 +26,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy backend code, pipeline datasets, and scripts
+# Copy backend code, interface schemas, pipeline datasets, and test configs
 COPY pipeline/ ./pipeline/
 COPY application/ ./application/
+COPY interface/ ./interface/
 COPY scripts/ ./scripts/
 COPY tests/ ./tests/
 COPY API_CONTRACT_SCHEMA.md .
 COPY full_parallel_plan.md .
+COPY pytest.ini .
 
 # Copy compiled frontend build to public static directory
 COPY --from=frontend-builder /app/frontend/dist ./application/frontend/dist
 
-# Expose standard API port
+# Expose standard API and MCP ports
 EXPOSE 8000
 EXPOSE 8001
 
-# Healthcheck
-HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:8000/api/health || exit 1
+# Healthcheck targeting verified health endpoint
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+    CMD curl -f http://localhost:8000/api/v1/health || exit 1
 
 # Default command: Start FastAPI server
 CMD ["uvicorn", "application.api.main:app", "--host", "0.0.0.0", "--port", "8000"]

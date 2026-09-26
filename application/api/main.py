@@ -56,6 +56,11 @@ app.include_router(query_router)
 app.include_router(feedback_router)
 app.include_router(alerts_router)
 
+@app.get("/health", summary="Health Check")
+@app.get("/api/health", summary="Health Check (API Prefix)")
+def root_health():
+    return {"status": "HEALTHY", "service": "BIS Standards Intelligence Platform API"}
+
 @app.get("/", summary="Root Index")
 def read_root():
     return {
