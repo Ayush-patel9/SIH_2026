@@ -15,6 +15,7 @@ import { useRole } from './store/roleStore';
 import { RoleSwitcher } from './components/RoleSwitcher';
 import { SandboxBanner } from './components/SandboxBanner';
 import { LanguageSelector } from './components/LanguageSelector';
+import { LoadingShimmer } from './components/LoadingShimmer';
 import type { StandardsResponse, SupportedLanguage, AlertPayload } from './types';
 
 export default function App() {
@@ -45,6 +46,36 @@ export default function App() {
   useEffect(() => {
     getAlerts().then(setAlerts).catch(console.error);
   }, []);
+
+  // Keyboard navigation shortcuts for power users
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey) {
+        switch (e.key) {
+          case '1': setActiveFeature('explainability'); break;
+          case '2': setActiveFeature('audit'); break;
+          case '3': setActiveFeature('feedback'); break;
+          case '4': setActiveFeature('alerts'); break;
+          case '6': setActiveFeature('comparison'); break;
+          case '7': setActiveFeature('queryUnderstanding'); break;
+          case '8': setActiveFeature('nitGenerator'); break;
+          case '9': setActiveFeature('mcp'); break;
+          case '0': setActiveFeature('tenderUpload'); break;
+          case 'd': setActiveFeature('dashboard'); break;
+          case 'Enter': handleAnalyze(); break;
+        }
+      }
+      if (e.key === '/' && (e.target === document.body || (e.target as HTMLElement).tagName === 'DIV')) {
+        const input = document.querySelector<HTMLInputElement>('.auth-input');
+        if (input) {
+          input.focus();
+          e.preventDefault();
+        }
+      }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [searchQuery, mode, role, language]);
 
   // Authority Stream (Right Column) Messages
   const [messages, setMessages] = useState([
@@ -315,10 +346,14 @@ export default function App() {
         </div>
 
         {isLoading && (
-          <div className="workbench-card" style={{ padding: '24px', textAlign: 'center' }}>
-            <div style={{ fontFamily: 'var(--font-data)', fontSize: '12px', color: 'var(--collapse-cobalt)' }}>
-              ◉ Querying BIS Standards Intelligence Engine...
+          <div className="workbench-card" style={{ padding: '20px 24px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+              <span style={{ fontSize: '14px', animation: 'pulse 1.4s ease infinite' }}>⚙️</span>
+              <span style={{ fontFamily: 'var(--font-data)', fontSize: '12px', fontWeight: 700, color: 'var(--collapse-cobalt)' }}>
+                QUERYING BIS STANDARDS INTELLIGENCE ENGINE & AUDIT LEDGER...
+              </span>
             </div>
+            <LoadingShimmer lines={3} height="16px" />
           </div>
         )}
 
@@ -509,6 +544,30 @@ export default function App() {
           </div>
         </form>
       </aside>
+
+      {/* Institutional Institutional Footer */}
+      <footer
+        style={{
+          gridColumn: '1 / -1',
+          padding: '10px 20px',
+          borderTop: '1px solid var(--hairline)',
+          background: 'var(--surface)',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          fontFamily: 'var(--font-data)',
+          fontSize: '11px',
+          color: 'var(--ink-muted)',
+          flexWrap: 'wrap',
+          gap: '8px',
+        }}
+      >
+        <span>ManakAI v1.0.0 · BIS Standards Intelligence Platform · SIH 2026</span>
+        <span>
+          Data Snapshot: {activeData?.meta.data_snapshot_date ?? '2026-09-26'} · Pipeline v{activeData?.meta.pipeline_version ?? '1.0.0'} · Audit Sealed
+        </span>
+        <span>MeitY & BIS Empanelled Infrastructure · Sovereign Indian Jurisdiction</span>
+      </footer>
 
       {/* Feature 04: Global Slide-in Alert Drawer */}
       <AlertDrawer
