@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { AlertStore } from './alertStore';
 import type { AlertWithRead } from './alertStore';
+import type { AlertPayload } from '../../types';
 
 interface NotificationBellProps {
   onClick: () => void;
   className?: string;
+  alerts?: AlertPayload[];
 }
 
-export const NotificationBell: React.FC<NotificationBellProps> = ({ onClick, className = '' }) => {
-  const [alerts, setAlerts] = useState<AlertWithRead[]>([]);
+export const NotificationBell: React.FC<NotificationBellProps> = ({ onClick, className = '', alerts: propAlerts }) => {
+  const [alerts, setAlerts] = useState<AlertWithRead[]>(() => (propAlerts as AlertWithRead[]) || AlertStore.getAll());
 
   useEffect(() => {
-    // Initial fetch
-    setAlerts(AlertStore.getAll());
+    if (propAlerts && propAlerts.length > 0) {
+      setAlerts(propAlerts as AlertWithRead[]);
+    } else {
+      setAlerts(AlertStore.getAll());
+    }
 
     // Subscribe to updates
     const unsubscribe = AlertStore.subscribe(() => {
@@ -20,7 +25,7 @@ export const NotificationBell: React.FC<NotificationBellProps> = ({ onClick, cla
     });
 
     return unsubscribe;
-  }, []);
+  }, [propAlerts]);
 
   const unreadCount = alerts.filter((a) => !a._read).length;
   const criticalCount = alerts.filter((a) => a.severity === 'CRITICAL' && !a._read).length;

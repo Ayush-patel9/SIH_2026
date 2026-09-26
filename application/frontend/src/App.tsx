@@ -10,14 +10,17 @@ import { MCPView } from './features/mcp';
 import { DashboardView } from './features/dashboard';
 import { ProcurementOfficerPanel, AuditorPanel, VendorPanel } from './features/roles';
 import { TenderUploadView } from './features/tenderUpload';
-import { queryStandards } from './api/standardsClient';
+import { queryStandards, getAlerts } from './api/standardsClient';
 import { useRole } from './store/roleStore';
 import { RoleSwitcher } from './components/RoleSwitcher';
 import { SandboxBanner } from './components/SandboxBanner';
-import type { StandardsResponse } from './types';
+import { LanguageSelector } from './components/LanguageSelector';
+import type { StandardsResponse, SupportedLanguage, AlertPayload } from './types';
 
 export default function App() {
   const { role, mode, setRole, setMode } = useRole();
+  const [language, setLanguage] = useState<SupportedLanguage>('en');
+  const [alerts, setAlerts] = useState<AlertPayload[]>([]);
   const [selectedDomain, setSelectedDomain] = useState<string>('cement');
   const [activeFeature, setActiveFeature] = useState<
     | 'explainability'
@@ -38,6 +41,10 @@ export default function App() {
   );
   const [isLoading, setIsLoading] = useState(false);
   const [queryError, setQueryError] = useState<string | null>(null);
+
+  useEffect(() => {
+    getAlerts().then(setAlerts).catch(console.error);
+  }, []);
 
   // Authority Stream (Right Column) Messages
   const [messages, setMessages] = useState([
@@ -61,6 +68,11 @@ export default function App() {
     if (preset) {
       setActiveData(preset.data);
       setSearchQuery(preset.data.query_understanding.original_text);
+      if (domainKey === 'cctv') {
+        setLanguage('hi');
+      } else {
+        setLanguage('en');
+      }
       setMessages((prev) => [
         ...prev,
         {
@@ -77,14 +89,14 @@ export default function App() {
     setIsLoading(true);
     setQueryError(null);
     try {
-      const result = await queryStandards(searchQuery, { mode, role });
+      const result = await queryStandards(searchQuery, { mode, role, language });
       setActiveData(result);
       setMessages((prev) => [
         ...prev,
         {
           id: prev.length,
           type: 'grounded-observation',
-          text: `Query resolved: ${result.primary_recommendation.is_number} (${result.primary_recommendation.title}). Confidence: ${(result.primary_recommendation.confidence * 100).toFixed(0)}%. ${result.audit_record.dry_run ? '🧪 Sandbox mode: Not logged to permanent audit ledger.' : 'Audit hash sealed.'}`,
+          text: `Query resolved: ${result.primary_recommendation.is_number} (${result.primary_recommendation.title}). Confidence: ${(result.primary_recommendation.confidence * 100).toFixed(0)}%. ${result.multilingual?.bhashini_used ? '🌐 Bhashini NLP Translation Active.' : ''} ${result.audit_record.dry_run ? '🧪 Sandbox mode: Not logged to permanent audit ledger.' : 'Audit hash sealed.'}`,
         },
       ]);
     } catch (e: any) {
@@ -215,7 +227,14 @@ export default function App() {
             </button>
           </div>
 
-          <NotificationBell onClick={() => setIsAlertDrawerOpen(true)} />
+          {/* Multilingual / Bhashini Selector */}
+          <LanguageSelector
+            language={language}
+            onChange={setLanguage}
+            bhashiniUsed={activeData?.multilingual?.bhashini_used}
+          />
+
+          <NotificationBell alerts={alerts} onClick={() => setIsAlertDrawerOpen(true)} />
 
           <div className="auth-user-badge">
             <span className="auth-user-name">Ayush Patel</span>
