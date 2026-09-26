@@ -10,56 +10,15 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
 from pipeline.config.api_contract_models import AlertPayload, AffectedStandard, AffectedTender
+from pipeline.rag_engine.staleness_monitor import staleness_monitor
 
 router = APIRouter(prefix="/api/v1", tags=["Proactive Staleness & Alerts"])
 
-# In-memory alerts store initialized with realistic active alerts
-ALERTS_STORE: List[Dict[str, Any]] = [
-    {
-        "$schema": "SIH2026.AlertPayload.v1",
-        "alert_id": "alt-3819-20ba",
-        "timestamp": "2026-09-26T10:30:00Z",
-        "alert_type": "STANDARD_SUPERSEDED",
-        "severity": "CRITICAL",
-        "affected_standard": {
-            "is_number": "IS 8112:1989",
-            "event": "Withdrawn and consolidated into IS 269:2015 (covers 33, 43, 53 grade OPC).",
-            "replacement": "IS 269:2015"
-        },
-        "affected_tenders": [
-            {
-                "tender_id": "NIT-PWD-2026-001",
-                "ministry": "MoHUA",
-                "officer_user_id": "officer_4091",
-                "cited_version": "IS 8112:1989"
-            }
-        ],
-        "recommended_action": "Update tender technical specifications to cite IS 269:2015 to prevent CVC audit rejection.",
-        "deadline": "2026-10-31T23:59:59Z"
-    },
-    {
-        "$schema": "SIH2026.AlertPayload.v1",
-        "alert_id": "alt-5021-99af",
-        "timestamp": "2026-09-25T14:20:00Z",
-        "alert_type": "STANDARD_AMENDED",
-        "severity": "HIGH",
-        "affected_standard": {
-            "is_number": "IS 1786:2008",
-            "event": "Amendment 3 gazetted adding mandatory high-corrosion resistant (CRS) Fe 550D rebar testing.",
-            "replacement": None
-        },
-        "affected_tenders": [
-            {
-                "tender_id": "NHAI-HIGHWAY-2026-442",
-                "ministry": "MoRTH",
-                "officer_user_id": "officer_7721",
-                "cited_version": "IS 1786:2008 (Amd 2)"
-            }
-        ],
-        "recommended_action": "Incorporate Amendment 3 testing clauses in live bridge and marine piling tenders.",
-        "deadline": "2026-11-15T23:59:59Z"
-    }
-]
+# In-memory alerts store initialized with dynamic active alerts from staleness_monitor
+try:
+    ALERTS_STORE: List[Dict[str, Any]] = staleness_monitor.get_active_alerts()
+except Exception as _e:
+    ALERTS_STORE = []
 
 @router.get("/alerts", response_model=List[Dict[str, Any]], summary="Get Proactive Staleness Alerts")
 def get_alerts():
@@ -67,6 +26,11 @@ def get_alerts():
     Returns active supersession, amendment, and QCO enforcement alerts.
     Enables procurement officers to prevent compliance liabilities before bid opening.
     """
+    if not ALERTS_STORE:
+        try:
+            return staleness_monitor.get_active_alerts()
+        except Exception:
+            return []
     return ALERTS_STORE
 
 @router.post("/alerts/simulate", response_model=Dict[str, Any], summary="Simulate Gazette / Revision Event")

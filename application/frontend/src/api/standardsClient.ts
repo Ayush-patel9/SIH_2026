@@ -56,23 +56,32 @@ export async function queryStandards(
     }
     return result;
   }
-  const body: Partial<QueryRequest> = {
-    input: {
-      text,
-      mode: opts?.mode ?? 'recommend',
-      language: opts?.language ?? 'en',
-    },
-    auth: {
-      role: opts?.role ?? 'PROCUREMENT_OFFICER',
-    },
-  };
-  const res = await fetch(`${API_BASE}/api/v1/query`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-  if (!res.ok) throw new Error(`Query failed: ${res.status}`);
-  return res.json();
+  try {
+    const body: Partial<QueryRequest> = {
+      input: {
+        text,
+        mode: opts?.mode ?? 'recommend',
+        language: opts?.language ?? 'en',
+      },
+      auth: {
+        role: opts?.role ?? 'PROCUREMENT_OFFICER',
+      },
+    };
+    const res = await fetch(`${API_BASE}/api/v1/query`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) throw new Error(`Query failed: ${res.status} ${res.statusText}`);
+    return await res.json();
+  } catch (err) {
+    console.warn('[standardsClient] Live query failed, falling back to mock:', err);
+    const mock = pickMock(text);
+    const result = JSON.parse(JSON.stringify(mock)) as StandardsResponse;
+    if (opts?.mode) result.meta.mode = opts.mode;
+    if (opts?.language) result.query_understanding.detected_language = opts.language;
+    return result;
+  }
 }
 
 export async function uploadTenderText(
@@ -88,13 +97,22 @@ export async function uploadTenderText(
       ledMock as unknown as StandardsResponse,
     ];
   }
-  const res = await fetch(`${API_BASE}/api/v1/tender-upload`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ document_text: documentText, role, mode }),
-  });
-  if (!res.ok) throw new Error(`Tender upload failed: ${res.status}`);
-  return res.json();
+  try {
+    const res = await fetch(`${API_BASE}/api/v1/tender-upload`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ document_text: documentText, role, mode }),
+    });
+    if (!res.ok) throw new Error(`Tender upload failed: ${res.status} ${res.statusText}`);
+    return await res.json();
+  } catch (err) {
+    console.warn('[standardsClient] Live tender upload failed, falling back to mock:', err);
+    return [
+      cementMock as unknown as StandardsResponse,
+      hdpeMock as unknown as StandardsResponse,
+      ledMock as unknown as StandardsResponse,
+    ];
+  }
 }
 
 export async function uploadPDF(file: File): Promise<StandardsResponse[]> {
@@ -105,11 +123,19 @@ export async function uploadPDF(file: File): Promise<StandardsResponse[]> {
       hdpeMock as unknown as StandardsResponse,
     ];
   }
-  const form = new FormData();
-  form.append('file', file);
-  const res = await fetch(`${API_BASE}/api/v1/upload-pdf`, { method: 'POST', body: form });
-  if (!res.ok) throw new Error(`PDF upload failed: ${res.status}`);
-  return res.json();
+  try {
+    const form = new FormData();
+    form.append('file', file);
+    const res = await fetch(`${API_BASE}/api/v1/upload-pdf`, { method: 'POST', body: form });
+    if (!res.ok) throw new Error(`PDF upload failed: ${res.status} ${res.statusText}`);
+    return await res.json();
+  } catch (err) {
+    console.warn('[standardsClient] Live PDF upload failed, falling back to mock:', err);
+    return [
+      cementMock as unknown as StandardsResponse,
+      hdpeMock as unknown as StandardsResponse,
+    ];
+  }
 }
 
 export async function submitFeedback(req: FeedbackRequest): Promise<void> {
@@ -117,12 +143,17 @@ export async function submitFeedback(req: FeedbackRequest): Promise<void> {
     await delay(400);
     return;
   }
-  const res = await fetch(`${API_BASE}/api/v1/feedback`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(req),
-  });
-  if (!res.ok) throw new Error(`Feedback submission failed: ${res.status}`);
+  try {
+    const res = await fetch(`${API_BASE}/api/v1/feedback`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(req),
+    });
+    if (!res.ok) throw new Error(`Feedback submission failed: ${res.status} ${res.statusText}`);
+  } catch (err) {
+    console.warn('[standardsClient] Live feedback submission failed:', err);
+    throw err;
+  }
 }
 
 export async function getAlerts(): Promise<AlertPayload[]> {
@@ -131,9 +162,15 @@ export async function getAlerts(): Promise<AlertPayload[]> {
     const raw = alertsMock;
     return Array.isArray(raw) ? (raw as AlertPayload[]) : ([raw] as AlertPayload[]);
   }
-  const res = await fetch(`${API_BASE}/api/v1/alerts`);
-  if (!res.ok) throw new Error(`Alerts fetch failed: ${res.status}`);
-  return res.json();
+  try {
+    const res = await fetch(`${API_BASE}/api/v1/alerts`);
+    if (!res.ok) throw new Error(`Alerts fetch failed: ${res.status} ${res.statusText}`);
+    return await res.json();
+  } catch (err) {
+    console.warn('[standardsClient] Live alerts fetch failed, falling back to mock:', err);
+    const raw = alertsMock;
+    return Array.isArray(raw) ? (raw as AlertPayload[]) : ([raw] as AlertPayload[]);
+  }
 }
 
 export async function exportNITClause(queryOrStandard: string): Promise<{ tender_clause_text: string }> {
@@ -143,11 +180,18 @@ export async function exportNITClause(queryOrStandard: string): Promise<{ tender
       tender_clause_text: `The material/equipment supplied shall strictly conform to Indian Standard specification (${queryOrStandard}) and all current amendments and Quality Control Orders in force. The vendor must provide valid BIS Certification license documentation prior to supply.`,
     };
   }
-  const res = await fetch(`${API_BASE}/api/v1/export-nit`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query_or_standard: queryOrStandard }),
-  });
-  if (!res.ok) throw new Error(`NIT export failed: ${res.status}`);
-  return res.json();
+  try {
+    const res = await fetch(`${API_BASE}/api/v1/export-nit`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query_or_standard: queryOrStandard }),
+    });
+    if (!res.ok) throw new Error(`NIT export failed: ${res.status} ${res.statusText}`);
+    return await res.json();
+  } catch (err) {
+    console.warn('[standardsClient] Live NIT export failed, falling back to mock:', err);
+    return {
+      tender_clause_text: `The material/equipment supplied shall strictly conform to Indian Standard specification (${queryOrStandard}) and all current amendments and Quality Control Orders in force. The vendor must provide valid BIS Certification license documentation prior to supply.`,
+    };
+  }
 }

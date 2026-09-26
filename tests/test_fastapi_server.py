@@ -92,15 +92,66 @@ def test_feedback_endpoints():
     assert get_res.status_code == 200
     assert len(get_res.json()) > 0
 
+def test_upload_pdf_endpoint():
+    """Test POST /api/v1/upload-pdf with a valid PDF stream."""
+    pdf_content = b"""%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >> endobj
+4 0 obj << /Length 120 >> stream
+BT
+/F1 12 Tf
+72 712 Td
+(1. Supply of 43 Grade Ordinary Portland Cement conforming to IS 269:2015.) Tj
+0 -20 Td
+(2. Fe 500D TMT steel rebars conforming to IS 1786.) Tj
+ET
+endstream
+endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000000416 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+495
+%%EOF"""
+    response = client.post(
+        "/api/v1/upload-pdf",
+        files={"file": ("tender.pdf", pdf_content, "application/pdf")},
+        data={"role": "PROCUREMENT_OFFICER"}
+    )
+    assert response.status_code == 200
+    items = response.json()
+    assert len(items) == 2
+    assert "269" in items[0]["primary_recommendation"]["is_number"]
+
 def test_alerts_endpoints():
-    """Test GET & POST /api/v1/alerts."""
+    """Test GET /api/v1/alerts and POST /api/v1/alerts/simulate."""
     get_res = client.get("/api/v1/alerts")
     assert get_res.status_code == 200
-    assert len(get_res.json()) > 0
+    alerts = get_res.json()
+    assert len(alerts) > 0
+    assert "alert_id" in alerts[0]
 
-    sim_res = client.post("/api/v1/alerts/simulate?is_number=IS%201786:2008&event_type=STANDARD_AMENDED")
+    sim_res = client.post(
+        "/api/v1/alerts/simulate",
+        params={
+            "is_number": "IS 456:2000",
+            "event_type": "STANDARD_AMENDED",
+            "event_description": "Amendment 5 published"
+        }
+    )
     assert sim_res.status_code == 200
-    assert sim_res.json()["status"] == "SIMULATION_DISPATCHED"
+    sim_data = sim_res.json()
+    assert sim_data["status"] == "SIMULATION_DISPATCHED"
+    assert sim_data["alert"]["affected_standard"]["is_number"] == "IS 456:2000"
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
+

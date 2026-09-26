@@ -9,13 +9,74 @@ import sys
 import os
 import re
 import json
+import io
 from pathlib import Path
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List, Tuple, Optional
+
+try:
+    import pdfplumber
+    _PDFPLUMBER_AVAILABLE = True
+except ImportError:
+    _PDFPLUMBER_AVAILABLE = False
 
 BASE_DIR = Path(__file__).parent.parent.parent
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
+
 DATA_DIR = BASE_DIR / "pipeline" / "data" if (BASE_DIR / "pipeline" / "data").exists() else BASE_DIR / "data"
 CATALOG_PATH = DATA_DIR / "01_master_catalog" / "unified_standards.json"
 QCO_PATH = DATA_DIR / "03_regulatory_qco" / "qco_mapping_matrix.json"
+
+
+def extract_text_from_pdf(pdf_bytes: bytes) -> str:
+    """
+    Extracts raw text from PDF bytes, preserving clause structure.
+    Raises ValueError if PDF is scanned or empty.
+    """
+    if not _PDFPLUMBER_AVAILABLE:
+        raise RuntimeError(
+            "pdfplumber is not installed. Please install with: pip install pdfplumber"
+        )
+    if not pdf_bytes:
+        raise ValueError("Uploaded PDF file is empty.")
+
+    text_parts: List[str] = []
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        if not pdf.pages:
+            raise ValueError("Uploaded PDF has no readable pages.")
+        for page in pdf.pages:
+            page_text = page.extract_text()
+            if page_text and page_text.strip():
+                text_parts.append(page_text.strip())
+
+    full_text = "\n\n".join(text_parts).strip()
+    if not full_text:
+        raise ValueError(
+            "PDF appears to be scanned/image-only or contains no extractable text. "
+            "Please use a text-based searchable PDF or paste tender text directly."
+        )
+    return full_text
+
+
+def extract_and_analyse(
+    pdf_bytes: bytes,
+    role: str = "PROCUREMENT_OFFICER",
+    mode: str = "recommend"
+):
+    """
+    Full pipeline execution:
+    1. Extracts clean text from PDF bytes.
+    2. Decomposes multi-clause items via GraphRAG pipeline.
+    3. Runs multi-channel retrieval and returns StandardsResponse list.
+    """
+    text = extract_text_from_pdf(pdf_bytes)
+    from pipeline.rag_engine.pipeline_core import graph_rag_pipeline
+    return graph_rag_pipeline.process_tender_document(
+        document_text=text,
+        role=role,
+        mode=mode
+    )
+
 
 class TenderPDFParser:
     def __init__(self):

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, Body
+from fastapi import APIRouter, HTTPException, Body, UploadFile, File
 from typing import List, Dict, Any, Optional
 from pydantic import BaseModel, Field
 
@@ -86,3 +86,34 @@ def export_nit_clause(req: NitExportRequest):
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"NIT Export error: {str(e)}")
+
+@router.post("/upload-pdf", response_model=List[StandardsResponse], summary="Upload PDF Tender Document")
+async def upload_pdf_tender(
+    file: UploadFile = File(...),
+    role: Optional[str] = "PROCUREMENT_OFFICER",
+    mode: Optional[str] = "recommend"
+):
+    """
+    Accepts multipart PDF upload. Extracts clean text via pdfplumber,
+    decomposes tender into line items, and runs GraphRAG retrieval on each.
+    """
+    try:
+        if not file.filename or not file.filename.lower().endswith(".pdf"):
+            raise HTTPException(status_code=400, detail="Only PDF files (.pdf) are accepted.")
+        
+        pdf_bytes = await file.read()
+        if len(pdf_bytes) == 0:
+            raise HTTPException(status_code=400, detail="Uploaded PDF file is empty.")
+        
+        from application.pdf_parser.pdf_tender_parser import extract_and_analyse
+        responses = extract_and_analyse(
+            pdf_bytes=pdf_bytes,
+            role=role or "PROCUREMENT_OFFICER",
+            mode=mode or "recommend"
+        )
+        return responses
+    except ValueError as ve:
+        raise HTTPException(status_code=422, detail=str(ve))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"PDF processing error: {str(e)}")
+

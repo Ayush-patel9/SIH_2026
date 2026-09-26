@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { DOMAIN_PRESETS, CEMENT_MOCK_DATA } from './features/explainability';
 import { AuditTrailView } from './features/audit';
 import { FeedbackView } from './features/feedback';
@@ -47,6 +47,40 @@ export default function App() {
     getAlerts().then(setAlerts).catch(console.error);
   }, []);
 
+  // Authority Stream (Right Column) Messages
+  const [messages, setMessages] = useState([
+    {
+      id: 0,
+      type: 'grounded-observation',
+      text: 'Inspecting IS 269:2015 (Ordinary Portland Cement). The 43-grade specification was consolidated from legacy IS 8112:1989. Mandatory ISI marking is enforced under GSR 739(E). Audit trail and human feedback queue are active.',
+    },
+  ]);
+  const [inputQuestion, setInputQuestion] = useState('');
+  const [isProcessing, setIsProcessing] = useState(false);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  const handleAnalyze = useCallback(async () => {
+    if (!searchQuery.trim() || isLoading) return;
+    setIsLoading(true);
+    setQueryError(null);
+    try {
+      const result = await queryStandards(searchQuery, { mode, role, language });
+      setActiveData(result);
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: prev.length,
+          type: 'grounded-observation',
+          text: `Query resolved: ${result.primary_recommendation.is_number} (${result.primary_recommendation.title}). Confidence: ${(result.primary_recommendation.confidence * 100).toFixed(0)}%. ${result.multilingual?.bhashini_used ? '🌐 Bhashini NLP Translation Active.' : ''} ${result.audit_record.dry_run ? '🧪 Sandbox mode: Not logged to permanent audit ledger.' : 'Audit hash sealed.'}`,
+        },
+      ]);
+    } catch (e: any) {
+      setQueryError(e.message || 'Failed to query standards intelligence engine');
+    } finally {
+      setIsLoading(false);
+    }
+  }, [searchQuery, isLoading, mode, role, language]);
+
   // Keyboard navigation shortcuts for power users
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -75,19 +109,7 @@ export default function App() {
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [searchQuery, mode, role, language]);
-
-  // Authority Stream (Right Column) Messages
-  const [messages, setMessages] = useState([
-    {
-      id: 0,
-      type: 'grounded-observation',
-      text: 'Inspecting IS 269:2015 (Ordinary Portland Cement). The 43-grade specification was consolidated from legacy IS 8112:1989. Mandatory ISI marking is enforced under GSR 739(E). Audit trail and human feedback queue are active.',
-    },
-  ]);
-  const [inputQuestion, setInputQuestion] = useState('');
-  const [isProcessing, setIsProcessing] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  }, [handleAnalyze]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -112,28 +134,6 @@ export default function App() {
           text: `Switched domain to ${preset.label}. Enforced standard: ${preset.isCode}. Cross-referencing technical annexures and quality control orders.`,
         },
       ]);
-    }
-  };
-
-  const handleAnalyze = async () => {
-    if (!searchQuery.trim() || isLoading) return;
-    setIsLoading(true);
-    setQueryError(null);
-    try {
-      const result = await queryStandards(searchQuery, { mode, role, language });
-      setActiveData(result);
-      setMessages((prev) => [
-        ...prev,
-        {
-          id: prev.length,
-          type: 'grounded-observation',
-          text: `Query resolved: ${result.primary_recommendation.is_number} (${result.primary_recommendation.title}). Confidence: ${(result.primary_recommendation.confidence * 100).toFixed(0)}%. ${result.multilingual?.bhashini_used ? '🌐 Bhashini NLP Translation Active.' : ''} ${result.audit_record.dry_run ? '🧪 Sandbox mode: Not logged to permanent audit ledger.' : 'Audit hash sealed.'}`,
-        },
-      ]);
-    } catch (e: any) {
-      setQueryError(e.message || 'Failed to query standards intelligence engine');
-    } finally {
-      setIsLoading(false);
     }
   };
 
