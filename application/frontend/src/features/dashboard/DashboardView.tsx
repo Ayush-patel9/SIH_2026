@@ -14,6 +14,14 @@ import { ActivityHeatmap } from './ActivityHeatmap';
 import { DomainDonutChart } from './DomainDonutChart';
 import { MinistryComplianceHeatmap } from './MinistryComplianceHeatmap';
 import { ExportReport } from './ExportReport';
+import {
+  CEMENT_MOCK_DATA,
+  STEEL_MOCK_DATA,
+  HDPE_MOCK_DATA,
+  LED_MOCK_DATA,
+  CCTV_MOCK_DATA,
+} from '../explainability/mockGraphData';
+import type { StandardsResponse } from '../../types';
 
 interface DashboardViewProps {
   onSelectStandard?: (isNumber: string) => void;
@@ -33,6 +41,27 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onSelectStandard }
   useEffect(() => {
     refreshMetrics();
   }, []);
+
+  const seedDemoData = () => {
+    const mocks = [
+      CEMENT_MOCK_DATA,
+      STEEL_MOCK_DATA,
+      HDPE_MOCK_DATA,
+      LED_MOCK_DATA,
+      CCTV_MOCK_DATA,
+    ];
+    for (let i = 0; i < 20; i++) {
+      const base = mocks[i % mocks.length];
+      const timestamp = new Date(Date.now() - i * 3.5 * 86400000).toISOString();
+      const mockClone = JSON.parse(JSON.stringify(base)) as StandardsResponse;
+      mockClone.meta.query_id = `demo-query-${Date.now()}-${i}`;
+      mockClone.meta.timestamp = timestamp;
+      mockClone.audit_record.query_id = mockClone.meta.query_id;
+      mockClone.audit_record.timestamp = timestamp;
+      AuditStore.save(mockClone);
+    }
+    refreshMetrics();
+  };
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -118,6 +147,14 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onSelectStandard }
                 All-Time
               </button>
             </div>
+            <button
+              type="button"
+              className="btn-secondary"
+              onClick={seedDemoData}
+              style={{ fontSize: '11px', padding: '4px 10px', marginTop: '4px' }}
+            >
+              📊 Load Demo Dataset (20 Records)
+            </button>
           </div>
         </div>
       </div>

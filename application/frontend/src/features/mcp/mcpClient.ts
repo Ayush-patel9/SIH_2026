@@ -169,6 +169,7 @@ export async function executeMCPTool(
         product_name: parameters.product_name || 'Procurement Material',
         template: tmpl,
         clause_text: text,
+        nit_clause: text,
       };
       break;
     }
