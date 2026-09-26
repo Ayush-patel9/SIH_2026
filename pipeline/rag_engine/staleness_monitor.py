@@ -238,7 +238,8 @@ class StalenessMonitor:
         if not s:
             return ""
         s = re.sub(r"\s*:\s*\d{4}", "", s.upper().strip())
-        s = re.sub(r"\s+", " ", s)
+        s = re.sub(r"[-_]+", " ", s)
+        s = re.sub(r"\s+", " ", s).strip()
         return s
 
     def get_active_alerts(self) -> List[Dict[str, Any]]:
@@ -296,13 +297,15 @@ class StalenessMonitor:
         Returns alerts specific to one IS number or standard code.
         """
         norm_query = self._normalize(is_number)
+        norm_digits = re.sub(r"[^\d]", "", norm_query)
         all_alerts = self.get_active_alerts()
         
         filtered = []
         for a in all_alerts:
             aff_std = a.get("affected_standard", {})
             std_in_alert = self._normalize(aff_std.get("is_number", ""))
-            if norm_query in std_in_alert or std_in_alert in norm_query:
+            alert_digits = re.sub(r"[^\d]", "", std_in_alert)
+            if (norm_query and (norm_query in std_in_alert or std_in_alert in norm_query)) or (norm_digits and norm_digits == alert_digits):
                 filtered.append(a)
 
         return filtered

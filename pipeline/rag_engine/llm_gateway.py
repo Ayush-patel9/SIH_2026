@@ -156,9 +156,11 @@ class LLMGateway:
                 logger.warning(f"LLM Tender Decomposition failed, using rule-based fallback: {e}")
 
         # Deterministic Fallback
-        paragraphs = [p.strip() for p in re.split(r"\n{2,}|\b(?=Item\s*\d+:|Clause\s*\d+:|\d+\.\s+[A-Z])", clean_text) if len(p.strip()) > 15]
-        if not paragraphs:
-            paragraphs = [clean_text] if clean_text else ["Procurement clause item 1"]
+        # Split by Item No, Clause No, or numbered bullet points, or multiple newlines
+        split_pattern = r"(?:\r?\n\s*)+(?=(?:Item|Clause|BOQ|Schedule)\s*(?:No\.?)?\s*\d+[:.]|\d+\.\s+[A-Z])|(?=\b(?:Item|Clause)\s*(?:No\.?)?\s*\d+[:.])|\n{2,}"
+        raw_paras = [p.strip() for p in re.split(split_pattern, clean_text, flags=re.IGNORECASE) if len(p.strip()) > 15]
+        if not raw_paras:
+            raw_paras = [clean_text] if clean_text else ["Procurement clause item 1"]
 
         acronyms = {
             r"\bhdpe\b": "High Density Polyethylene HDPE",
@@ -176,8 +178,8 @@ class LLMGateway:
 
         items: List[Dict[str, Any]] = []
         idx = 1
-        for para in paragraphs:
-            if re.match(r"^(?:NOTICE\s+INVITING\s+TENDER|NIT\s+NO|TENDER\s+DOCUMENT|GOVERNMENT\s+OF|INVITATION\s+FOR\s+BIDS)", para, re.IGNORECASE):
+        for para in raw_paras:
+            if re.match(r"^(?:NOTICE\s+INVITING\s+TENDER|NIT\s+NO|TENDER\s+DOCUMENT|GOVERNMENT\s+OF|INVITATION\s+FOR\s+BIDS|SCHEDULE\s+OF\s+TECHNICAL|NAME\s+OF\s+WORK)", para, re.IGNORECASE):
                 continue
 
             expanded = para

@@ -59,6 +59,9 @@ class NLPExtractor:
     def detect_language(self, text: str) -> Tuple[str, bool]:
         """Detects language script and indicates if Bhashini translation is used."""
         if any('\u0900' <= char <= '\u097f' for char in text):
+            # Check for Marathi specific vocabulary/suffixes
+            if re.search(r"(साठी|आणि|पोलाद|तपासणी|शिरस्त्राण|निविदा|काँक्रीट|वीट|पाईप|रस्ते|बांधकाम|करावे|आहेत)", text):
+                return "mr", True
             return "hi", True  # Hindi (Devanagari)
         elif any('\u0b80' <= char <= '\u0bff' for char in text):
             return "ta", True  # Tamil

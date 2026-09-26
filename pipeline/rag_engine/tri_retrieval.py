@@ -502,19 +502,35 @@ class TriRetrievalLayer:
                     results.append((self.standards_by_num[target_key], 1.0, f"CRS_ELECTRONIC_MATCH ({crs.get('product_name')})"))
                     break
 
-        # 3. Check Synonym Lexicon
+        # 3. Check Synonym Lexicon (Exact match or substring match for vernacular/Indic phrases)
+        matched_synonym = False
         if q_norm in self.synonyms:
             entry = self.synonyms[q_norm]
             target_is = entry.get("is_ref") if isinstance(entry, dict) else str(entry)
-            target_key = normalize_is_key(target_is)
-            if target_key in self.standards_by_num:
-                results.append((self.standards_by_num[target_key], 1.0, "SYNONYM_EXACT_MATCH"))
-        elif re.search(r"\b(paver\s*blocks?|पेवर\s*ब्लॉक|precast\s*concrete\s*blocks?\s*for\s*paving)\b", query_text, re.IGNORECASE):
-            if "IS 15658" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 15658"], 0.98, "PRODUCT_GRADE_MATCH (IS 15658)"))
-        elif re.search(r"\b(aac\s*blocks?|autoclaved\s*aerated\s*concrete)\b", query_text, re.IGNORECASE):
-            if "IS 2185 (PART 3)" in self.standards_by_num:
-                results.append((self.standards_by_num["IS 2185 (PART 3)"], 0.98, "PRODUCT_GRADE_MATCH (IS 2185 Part 3)"))
+            if target_is:
+                target_key = normalize_is_key(target_is.split("/")[0].strip())
+                if target_key in self.standards_by_num:
+                    results.append((self.standards_by_num[target_key], 1.0, "SYNONYM_EXACT_MATCH"))
+                    matched_synonym = True
+        
+        if not matched_synonym:
+            # Substring scanning with positional precedence (earliest in sentence is primary)
+            found_matches = []
+            for syn_k, entry in self.synonyms.items():
+                if len(syn_k) >= 2 and syn_k in q_norm:
+                    pos = q_norm.find(syn_k)
+                    target_is = entry.get("is_ref") if isinstance(entry, dict) else str(entry)
+                    if target_is:
+                        target_key = normalize_is_key(target_is.split("/")[0].strip())
+                        if target_key in self.standards_by_num:
+                            found_matches.append((pos, -len(syn_k), target_key, syn_k))
+            
+            if found_matches:
+                found_matches.sort()
+                for pos, neg_len, target_key, syn_k in found_matches:
+                    results.append((self.standards_by_num[target_key], 0.98, f"SYNONYM_SUBSTRING_MATCH ({syn_k})"))
+                    matched_synonym = True
+                    break
 
         # 4. Strict Exact IS Number Lookup (word boundary check)
         exact_matches = re.findall(r"\b(?:IS|SP|IS/ISO|IS/IEC)\s*(\d{2,5}(?:\s*\(Part\s*\d+\))?)", query_text, re.IGNORECASE)
