@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import type { StandardsResponse } from '../../types';
 import { PlainLanguageToggle } from '../explainability/PlainLanguageToggle';
 import { ConfidenceBreakdownBar } from '../explainability/ConfidenceBreakdownBar';
+import { KnowledgeGraphViewer } from '../explainability/KnowledgeGraphViewer';
+import { ReasoningTimeline } from '../explainability/ReasoningTimeline';
 import { FlagButton, FeedbackModal } from '../feedback';
 import { StalenessRiskBanner } from '../alerts';
 
@@ -198,6 +200,17 @@ export const ProcurementOfficerPanel: React.FC<ProcurementOfficerPanelProps> = (
           </table>
         </div>
       </div>
+
+      {/* Component 3: Knowledge Subgraph & Normative Network */}
+      <KnowledgeGraphViewer
+        edges={data.graph_path}
+        primaryStandard={primary?.is_number}
+      />
+
+      {/* Component 1: Step-by-Step AI Reasoning Trail */}
+      <ReasoningTimeline
+        steps={data.reasoning_trace}
+      />
 
       {/* Quick NIT Clause Generator Card */}
       <div className="workbench-card" style={{ borderLeft: '4px solid var(--emerald-pass)' }}>

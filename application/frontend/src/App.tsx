@@ -17,6 +17,8 @@ import { RoleSwitcher } from './components/RoleSwitcher';
 import { SandboxBanner } from './components/SandboxBanner';
 import { LanguageSelector } from './components/LanguageSelector';
 import { LoadingShimmer } from './components/LoadingShimmer';
+import { DataSovereigntyModal } from './components/DataSovereigntyModal';
+import { LowBandwidthToggle } from './components/LowBandwidthToggle';
 import { MobileBottomNav, type FeatureKey } from './components/MobileBottomNav';
 import type { StandardsResponse, SupportedLanguage, AlertPayload } from './types';
 
@@ -27,6 +29,7 @@ export default function App() {
   const [selectedDomain, setSelectedDomain] = useState<string>('cement');
   const [activeFeature, setActiveFeature] = useState<FeatureKey>('explainability');
   const [isAlertDrawerOpen, setIsAlertDrawerOpen] = useState(false);
+  const [isDataSovereigntyOpen, setIsDataSovereigntyOpen] = useState(false);
   const [activeData, setActiveData] = useState<StandardsResponse>(CEMENT_MOCK_DATA);
   const [searchQuery, setSearchQuery] = useState<string>(
     'Procurement of 43 grade ordinary portland cement for highway construction.'
@@ -320,12 +323,41 @@ export default function App() {
             </button>
           </div>
 
+          {/* District Offline / Low-Bandwidth Mode */}
+          <LowBandwidthToggle />
+
           {/* Multilingual / Bhashini Selector */}
           <LanguageSelector
             language={language}
             onChange={setLanguage}
             bhashiniUsed={activeData?.multilingual?.bhashini_used}
           />
+
+          {/* Data Sovereignty Institutional Verification Badge */}
+          <button
+            type="button"
+            onClick={() => setIsDataSovereigntyOpen(true)}
+            className="btn-secondary"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '4px 10px',
+              borderRadius: 'var(--radius-sm)',
+              fontSize: '11px',
+              fontFamily: 'var(--font-data)',
+              fontWeight: 700,
+              background: 'rgba(30, 58, 138, 0.08)',
+              color: '#1E40AF',
+              border: '1px solid rgba(30, 58, 138, 0.25)',
+              height: '28px',
+              cursor: 'pointer',
+            }}
+            title="Click to view 100% Data Sovereignty, MeitY Cloud Empanelment & NIC NDC Hosting Certificate"
+          >
+            <span>🇮🇳</span>
+            <span>MEITY / NIC SOVEREIGN</span>
+          </button>
 
           {/* Live Pipeline / WebSocket Indicator */}
           <div
@@ -717,6 +749,12 @@ export default function App() {
           setActiveFeature('alerts');
           setIsAlertDrawerOpen(false);
         }}
+      />
+
+      {/* Feature 07: Data Sovereignty & MeitY/NIC Localization Modal */}
+      <DataSovereigntyModal
+        isOpen={isDataSovereigntyOpen}
+        onClose={() => setIsDataSovereigntyOpen(false)}
       />
 
       {/* Mobile Bottom Navigation Dock */}
