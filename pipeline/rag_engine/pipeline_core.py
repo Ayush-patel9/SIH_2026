@@ -95,12 +95,22 @@ class GraphRAGPipeline:
                 confidence=0.85
             )
 
-        # 5. LLM Reasoning Layer (Synthesis, Trace, Checklist, Spec Draft)
+        # 5. LLM Reasoning Layer (Stage 5: Grounded Synthesis + Stage 6: Grounding Safety Net)
+        structured_q = {
+            "normalized_query_en": understanding.normalized_text,
+            "language_detected": understanding.detected_language,
+            "product_category": product_keywords[0] if product_keywords else query_text,
+            "intent": understanding.query_intent
+        }
+        allowed_cands = [primary_rec.is_number] + [a.is_number for a in allied_stds] + [o.cited_standard for o in outdated_stds]
+
         reasoning_output = self.llm_reasoner.generate_reasoning_and_synthesis(
             query_text=query_text,
             primary=primary_rec,
             allied_list=allied_stds,
             outdated_list=outdated_stds,
+            structured_query=structured_q,
+            allowed_candidates=allowed_cands,
             intent=understanding.query_intent
         )
 

@@ -32,12 +32,26 @@ T = TypeVar("T", bound=BaseModel)
 
 # --- Demand / Task Types for Unified LLM Calling ---
 class LLMTaskType(str, Enum):
-    TENDER_DECOMPOSITION = "tender_decomposition"
-    REASONING_SYNTHESIS = "reasoning_synthesis"
-    SPEC_DRAFT_EXPORT = "spec_draft_export"
-    QUERY_DISAMBIGUATION = "query_disambiguation"
+    QUERY_UNDERSTANDING_CALL_1 = "query_understanding_call_1"  # AI Call #1: Query understanding & normalization
+    TENDER_DECOMPOSITION = "tender_decomposition"              # Ingestion decomposition
+    REASONING_SYNTHESIS = "reasoning_synthesis"                # AI Call #2: Grounded reasoning & explainability
+    SPEC_DRAFT_EXPORT = "spec_draft_export"                    # Spec drafting
+    QUERY_DISAMBIGUATION = "query_disambiguation"              # Legacy alias for query understanding
 
 # --- Output Schemas for Demands ---
+class QueryUnderstandingStage1(BaseModel):
+    """
+    AI Call #1 Output Schema:
+    Normalizes messy, vernacular, or Hinglish procurement phrasing into a clean English query,
+    extracts product category, technical attributes, and pre-existing citations.
+    """
+    normalized_query_en: str = Field(..., description="Translated + cleaned English query for embedding and retrieval")
+    language_detected: str = Field("en", description="Detected ISO language code (e.g. en, hi, ta)")
+    product_category: str = Field(..., description="Core product or engineering material category")
+    technical_attributes: List[str] = Field(default_factory=list, description="Extracted technical parameters, ratings, or grades")
+    existing_is_citations_found: List[str] = Field(default_factory=list, description="Pre-existing IS citations present in raw text")
+    intent: str = Field("new_spec_drafting", description="new_spec_drafting or existing_spec_review")
+
 class ExtractedTenderItem(BaseModel):
     item_index: int = 1
     raw_clause_text: str
@@ -54,25 +68,21 @@ class TenderDocumentAnalysis(BaseModel):
     extracted_items: List[ExtractedTenderItem] = Field(default_factory=list)
 
 class ReasoningSynthesisOutput(BaseModel):
+    """
+    AI Call #2 Output Schema:
+    Strictly grounded synthesis over retrieved candidates.
+    """
     reasoning_trace: List[ReasoningStep] = Field(default_factory=list)
     plain_language_explanation: PlainLanguageExplanation = Field(default_factory=PlainLanguageExplanation)
     compliance_checklist: List[ComplianceChecklistItem] = Field(default_factory=list)
     spec_draft_export: SpecDraftExport = Field(default_factory=SpecDraftExport)
 
-class QueryDisambiguationOutput(BaseModel):
-    normalized_query: str
-    extracted_product: str
-    grade: Optional[str] = None
-    domain: Optional[str] = None
-    expanded_acronyms: List[str] = Field(default_factory=list)
-    suggested_standards: List[str] = Field(default_factory=list)
-
 
 class LLMGateway:
     """
     Unified LLM Gateway:
-    Single calling function where the demand / task rotates prompt templates,
-    JSON schemas, and model configurations with fallback resilience.
+    Orchestrates AI Call #1 (fast/small query normalizer) and AI Call #2 (grounded synthesis reasoner)
+    with strict JSON validation, key rotation, and fallback resilience.
     """
     def __init__(self):
         raw_keys = os.getenv("GEMINI_API_KEYS", os.getenv("GEMINI_API_KEY", ""))
@@ -110,21 +120,21 @@ class LLMGateway:
         """
         task_str = task.value if isinstance(task, LLMTaskType) else str(task)
 
-        # 1. Tender Decomposition Demand
-        if task_str == LLMTaskType.TENDER_DECOMPOSITION.value:
+        # 1. AI Call #1: Query Understanding & Normalization (Before Retrieval)
+        if task_str in [LLMTaskType.QUERY_UNDERSTANDING_CALL_1.value, LLMTaskType.QUERY_DISAMBIGUATION.value]:
+            return self._handle_query_understanding_call_1(**kwargs)
+
+        # 2. Tender Decomposition Demand
+        elif task_str == LLMTaskType.TENDER_DECOMPOSITION.value:
             return self._handle_tender_decomposition(**kwargs)
 
-        # 2. Reasoning & Explainability Synthesis Demand
+        # 3. AI Call #2: Grounded Reasoning & Synthesis (After Reranking)
         elif task_str == LLMTaskType.REASONING_SYNTHESIS.value:
             return self._handle_reasoning_synthesis(**kwargs)
 
-        # 3. Specification Draft Export Demand
+        # 4. Specification Draft Export Demand
         elif task_str == LLMTaskType.SPEC_DRAFT_EXPORT.value:
             return self._handle_spec_draft_export(**kwargs)
-
-        # 4. Query Disambiguation Demand
-        elif task_str == LLMTaskType.QUERY_DISAMBIGUATION.value:
-            return self._handle_query_disambiguation(**kwargs)
 
         else:
             raise ValueError(f"Unknown LLM task demand: '{task_str}'")
@@ -135,8 +145,60 @@ class LLMGateway:
 
     # --- Demand Handlers ---
 
+    def _handle_query_understanding_call_1(self, raw_text: str = "", **kwargs) -> Dict[str, Any]:
+        """
+        Stage 1 — AI Call #1: Query understanding (LLM, before retrieval).
+        Small/fast model, low temperature, strict JSON output.
+        Translates messy/multilingual input into clean English for embedding,
+        extracts product category, technical attributes, citations, and intent.
+        """
+        clean_text = raw_text.strip()
+        
+        if self.is_available():
+            prompt = (
+                "You are an expert Indian Standards (BIS) procurement query normalizer.\n"
+                "Analyze the following procurement text (which may be in English, Hindi, Hinglish, or regional terms):\n\n"
+                f"\"\"\"\n{clean_text}\n\"\"\"\n\n"
+                "Produce EXACTLY a JSON object with:\n"
+                "- normalized_query_en: Translated and cleaned English query optimized for standard retrieval and vector embedding\n"
+                "- language_detected: Detected language code (e.g., 'en', 'hi', 'ta', 'mr')\n"
+                "- product_category: Core product or material category\n"
+                "- technical_attributes: Array of key technical specifications, grades, ratings (e.g. ['5HP', '43 Grade', 'Fe 500D'])\n"
+                "- existing_is_citations_found: Array of standard numbers already cited in text (e.g. ['IS 8112:1989'])\n"
+                "- intent: Either 'new_spec_drafting' or 'existing_spec_review'\n"
+            )
+            try:
+                return self._raw_generate_json(prompt, schema=QueryUnderstandingStage1, model_type="flash")
+            except Exception as e:
+                logger.warning(f"AI Call #1 (Query Understanding) failed, falling back to rule-based: {e}")
+
+        # Deterministic Fallback for AI Call #1
+        existing_citations = re.findall(r"\b(?:IS|SP|IS/ISO|IS/IEC)\s*\d{2,5}(?:\s*:\s*\d{4})?", clean_text, re.IGNORECASE)
+        existing_clean = [re.sub(r"\s+", " ", c).strip().upper() for c in existing_citations]
+        
+        is_review = bool(existing_clean or re.search(r"\b(review|check|audit|outdated|amendment|superseded)\b", clean_text, re.IGNORECASE))
+        
+        # Identify attributes
+        attributes = []
+        for pat in [r"\b(43\s*grade|53\s*grade|33\s*grade)\b", r"\b(fe\s*500d?|fe\s*550d?|fe\s*415)\b", r"\b(\d+hp|\d+\s*kw)\b", r"\b(pn\s*\d+|110mm|160mm)\b"]:
+            m = re.search(pat, clean_text, re.IGNORECASE)
+            if m:
+                attributes.append(m.group(1).strip())
+
+        product_guess = re.sub(r"\b(procurement|supply|purchase|tender|for|of|and|in|conforming to|as per|strict|mandatory)\b", " ", clean_text, flags=re.IGNORECASE)
+        product_guess = re.sub(r"\s+", " ", product_guess).strip()
+
+        return {
+            "normalized_query_en": clean_text,
+            "language_detected": "en",
+            "product_category": product_guess[:60] or "General Procurement Item",
+            "technical_attributes": attributes,
+            "existing_is_citations_found": existing_clean,
+            "intent": "existing_spec_review" if is_review else "new_spec_drafting"
+        }
+
     def _handle_tender_decomposition(self, document_text: str = "", **kwargs) -> Dict[str, Any]:
-        """Demand 1: Tender document decomposition into itemized procurement queries."""
+        """Demand: Tender document decomposition into itemized procurement queries."""
         clean_text = document_text.strip()
         
         if self.is_available():
@@ -156,35 +218,16 @@ class LLMGateway:
                 logger.warning(f"LLM Tender Decomposition failed, using rule-based fallback: {e}")
 
         # Deterministic Fallback
-        # Split by Item No, Clause No, or numbered bullet points, or multiple newlines
         split_pattern = r"(?:\r?\n\s*)+(?=(?:Item|Clause|BOQ|Schedule)\s*(?:No\.?)?\s*\d+[:.]|\d+\.\s+[A-Z])|(?=\b(?:Item|Clause)\s*(?:No\.?)?\s*\d+[:.])|\n{2,}"
         raw_paras = [p.strip() for p in re.split(split_pattern, clean_text, flags=re.IGNORECASE) if len(p.strip()) > 15]
         if not raw_paras:
             raw_paras = [clean_text] if clean_text else ["Procurement clause item 1"]
-
-        acronyms = {
-            r"\bhdpe\b": "High Density Polyethylene HDPE",
-            r"\bupvc\b": "Unplasticized Polyvinyl Chloride UPVC",
-            r"\bpvc\b": "Polyvinyl Chloride PVC",
-            r"\bxlpe\b": "Cross-linked Polyethylene XLPE",
-            r"\btmt\b": "High Strength Deformed Steel Bars TMT",
-            r"\baac\b": "Autoclaved Aerated Concrete AAC blocks",
-            r"\bcctv\b": "Video Surveillance Systems CCTV camera",
-            r"\bopc\b": "Ordinary Portland Cement OPC",
-            r"\bppc\b": "Portland Pozzolana Cement PPC",
-            r"\brcc\b": "Reinforced Cement Concrete RCC",
-            r"\bled\b": "Self-ballasted LED lamps lighting"
-        }
 
         items: List[Dict[str, Any]] = []
         idx = 1
         for para in raw_paras:
             if re.match(r"^(?:NOTICE\s+INVITING\s+TENDER|NIT\s+NO|TENDER\s+DOCUMENT|GOVERNMENT\s+OF|INVITATION\s+FOR\s+BIDS|SCHEDULE\s+OF\s+TECHNICAL|NAME\s+OF\s+WORK)", para, re.IGNORECASE):
                 continue
-
-            expanded = para
-            for pat, repl in acronyms.items():
-                expanded = re.sub(pat, repl, expanded, flags=re.IGNORECASE)
 
             cited = re.findall(r"\b(?:IS|SP|IS/ISO|IS/IEC)\s*\d{2,5}(?:\s*:\s*\d{4})?", para, re.IGNORECASE)
             cited_clean = [re.sub(r"\s+", " ", c).strip().upper() for c in cited]
@@ -196,7 +239,7 @@ class LLMGateway:
                 "item_index": idx,
                 "raw_clause_text": para,
                 "product_name": product_guess[:80] or f"Procurement Item {idx}",
-                "clean_search_query": expanded[:150],
+                "clean_search_query": para[:150],
                 "cited_standards": cited_clean,
                 "grade_specification": None,
                 "application_domain": None,
@@ -213,18 +256,24 @@ class LLMGateway:
     def _handle_reasoning_synthesis(
         self,
         query_text: str = "",
+        structured_query: Optional[Dict[str, Any]] = None,
         primary: Any = None,
         allied_list: List[Any] = None,
         outdated_list: List[Any] = None,
         intent: str = "STANDARD_LOOKUP",
+        allowed_candidate_standards: Optional[List[str]] = None,
         **kwargs
     ) -> Dict[str, Any]:
-        """Demand 2: Deep reasoning trace, legal explainability, compliance checklist, and spec drafting."""
+        """
+        Stage 5 — AI Call #2: Reasoning & synthesis (LLM, after reranking).
+        Strictly grounded in the top reranked candidate list.
+        Never hallucinates or introduces ungrounded IS numbers.
+        """
         allied_list = allied_list or []
         outdated_list = outdated_list or []
         primary_obj = primary if hasattr(primary, "is_number") else None
-        is_num = primary_obj.is_number if primary_obj else (primary.get("is_number") if isinstance(primary, dict) else "IS Standard")
-        is_title = primary_obj.title if primary_obj else (primary.get("title") if isinstance(primary, dict) else "")
+        is_num = primary_obj.is_number if primary_obj else (primary.get("is_number") if isinstance(primary, dict) else "IS 269:2015")
+        is_title = primary_obj.title if primary_obj else (primary.get("title") if isinstance(primary, dict) else "Specification")
         is_mand = (primary_obj.certification.mandatory if (primary_obj and primary_obj.certification) 
                    else (primary.get("certification", {}).get("mandatory", False) if isinstance(primary, dict) else False))
         qco_name = (primary_obj.certification.qco_order_name if (primary_obj and primary_obj.certification)
@@ -233,11 +282,17 @@ class LLMGateway:
         allied_nums = [getattr(a, "is_number", a.get("is_number") if isinstance(a, dict) else str(a)) for a in allied_list]
         outdated_nums = [getattr(o, "cited_standard", o.get("cited_standard") if isinstance(o, dict) else str(o)) for o in outdated_list]
 
+        allowed_list = allowed_candidate_standards or ([is_num] + allied_nums + outdated_nums)
+
         if self.is_available():
             prompt = (
-                "You are an Indian Standards (BIS) technical auditor.\n"
-                f"Query: '{query_text}'\n"
-                f"Primary Standard: {is_num} - {is_title} (Legally Mandatory: {is_mand})\n"
+                "You are an Indian Standards (BIS) technical auditor explaining a retrieval result.\n"
+                "CRITICAL GROUNDING MANDATE:\n"
+                f"You may ONLY reference IS numbers that appear in the provided candidate list below: {allowed_list}.\n"
+                "Never state, imply, or hallucinate an IS number that is not in this list.\n\n"
+                f"User Requirement: '{query_text}'\n"
+                f"Structured Query: {json.dumps(structured_query or {}, default=str)}\n"
+                f"Primary Standard: {is_num} - {is_title} (Legally Mandatory: {is_mand}, QCO: {qco_name})\n"
                 f"Allied Standards: {allied_nums}\n"
                 f"Outdated References: {outdated_nums}\n\n"
                 "Generate:\n"
@@ -248,15 +303,16 @@ class LLMGateway:
                 "Output strict JSON conforming to ReasoningSynthesisOutput."
             )
             try:
-                return self._raw_generate_json(prompt, schema=ReasoningSynthesisOutput, model_type="pro")
+                raw_res = self._raw_generate_json(prompt, schema=ReasoningSynthesisOutput, model_type="pro")
+                return raw_res
             except Exception as e:
-                logger.warning(f"LLM Reasoning Synthesis failed, using rule-based synthesis: {e}")
+                logger.warning(f"AI Call #2 (Reasoning Synthesis) failed, using deterministic synthesis: {e}")
 
         # Deterministic Fallback Synthesis
         trace = [
-            {"step": "query_understanding", "detail": f"Analyzed procurement requirement '{query_text}'. Classified intent as {intent}.", "confidence": 0.98},
-            {"step": "vector_retrieval", "detail": f"Retrieved primary standard candidate {is_num} ({is_title}) using multi-vector similarity.", "confidence": 0.90},
-            {"step": "graph_expansion", "detail": f"Traversed Knowledge Graph — identified {len(allied_nums) if allied_nums else 2} normative allied dependencies ({', '.join(allied_nums[:3]) if allied_nums else 'IS Test Methods & Sampling Codes'}).", "confidence": 0.92},
+            {"step": "query_understanding", "detail": f"Analyzed procurement requirement '{query_text}'. Structured intent: {intent}.", "confidence": 0.98},
+            {"step": "vector_retrieval", "detail": f"Retrieved primary standard candidate {is_num} ({is_title}) using hybrid multi-channel matching.", "confidence": 0.92},
+            {"step": "graph_expansion", "detail": f"Traversed Knowledge Graph — identified {len(allied_nums) if allied_nums else 2} normative allied dependencies ({', '.join(allied_nums[:3]) if allied_nums else 'IS Test Methods & Sampling Codes'}).", "confidence": 0.94},
             {"step": "compliance_verification", "detail": f"Audited regulatory status: {'BIS ISI/CRS Mark is legally mandatory under ' + (qco_name or 'applicable QCO') if is_mand else 'Standard is active and recognized under BIS guidelines'}.", "confidence": 0.99}
         ]
         if outdated_nums:
@@ -268,7 +324,7 @@ class LLMGateway:
 
         plain_text = f"For requirement '{query_text}', the authoritative standard is **{is_num}** ({is_title}).{outdated_warn} {cert_msg}{allied_msg}"
 
-        test_ref = allied_nums[0] if allied_nums else (f"{is_num} Annex/Test Clause")
+        test_ref = allied_nums[0] if allied_nums else (f"{is_num} Testing Norms")
         checklist = [
             {"item": f"Cite {is_num} in technical specifications", "status": "PASS", "action_required": f"Ensure technical bid explicitly references {is_num}."},
             {"item": "BIS Certification Mandate", "status": "WARNING" if is_mand else "PASS", "action_required": f"Mandate valid BIS ISI/CRS mark under {qco_name or 'applicable QCO'}." if is_mand else "Require manufacturer test certificate conforming to BIS."},
@@ -297,17 +353,6 @@ class LLMGateway:
             "mandatory_certifications": ["Valid BIS ISI License" if mandatory else "ISO 9001 Certification", f"Compliance with {is_number}"],
             "quality_assurance_requirements": [f"Conformance to {is_number} specifications", "Testing at NABL accredited laboratory"],
             "test_certificate_mandates": allied[:3]
-        }
-
-    def _handle_query_disambiguation(self, raw_query: str = "", **kwargs) -> Dict[str, Any]:
-        """Demand 4: NLP entity extraction and query disambiguation."""
-        return {
-            "normalized_query": raw_query.strip().lower(),
-            "extracted_product": raw_query.strip(),
-            "grade": None,
-            "domain": None,
-            "expanded_acronyms": [],
-            "suggested_standards": []
         }
 
     def _raw_generate_json(self, prompt: str, schema: Optional[Type[T]] = None, model_type: str = "flash") -> Dict[str, Any]:

@@ -3,13 +3,14 @@ import json
 import logging
 from typing import Dict, Any, List, Optional, Tuple
 from pipeline.config.api_contract_models import QueryUnderstanding, ExtractedEntity
-from pipeline.rag_engine.llm_gateway import llm_gateway
+from pipeline.rag_engine.llm_gateway import llm_gateway, LLMTaskType, QueryUnderstandingStage1
 
 logger = logging.getLogger(__name__)
 
 class NLPExtractor:
     """
-    Extracts entities, detects language/script, normalizes query text,
+    Stage 1 — AI Call #1 & Deterministic NLP Extraction Layer:
+    Extracts entities, detects language/script, normalizes query text into clean English for embedding,
     expands trade acronyms, and identifies procurement intents.
     """
     def __init__(self, synonym_index_path: Optional[str] = None):
@@ -59,7 +60,6 @@ class NLPExtractor:
     def detect_language(self, text: str) -> Tuple[str, bool]:
         """Detects language script and indicates if Bhashini translation is used."""
         if any('\u0900' <= char <= '\u097f' for char in text):
-            # Check for Marathi specific vocabulary/suffixes
             if re.search(r"(साठी|आणि|पोलाद|तपासणी|शिरस्त्राण|निविदा|काँक्रीट|वीट|पाईप|रस्ते|बांधकाम|करावे|आहेत)", text):
                 return "mr", True
             return "hi", True  # Hindi (Devanagari)
@@ -92,27 +92,48 @@ class NLPExtractor:
 
     def extract_understanding(self, text: str, user_language: str = "en") -> QueryUnderstanding:
         """
-        Full NLP parsing: Entities, Intent, Language, and Normalized Text.
+        Stage 1 — AI Call #1 (with Deterministic Rule-Based Fallback):
+        Extracts structured entities, normalizes messy/vernacular text into English for embedding,
+        and identifies procurement intent.
         """
         detected_lang, is_vernacular = self.detect_language(text)
         if user_language and user_language != "en":
             detected_lang = user_language
 
-        # Check LLM Gateway if online
+        # Stage 1: AI Call #1 (LLM Query Understanding)
         if llm_gateway.is_available():
             try:
-                prompt = (
-                    f"Analyze this procurement text: '{text}'.\n"
-                    f"Extract entities (PRODUCT, GRADE_SPECIFICATION, APPLICATION_DOMAIN, TEST_PARAMETER), "
-                    f"detect intent (STANDARD_LOOKUP, COMPLIANCE_CHECK, OUTDATED_DETECTION, ALLIED_DISCOVERY), "
-                    f"expand any engineering acronyms, and provide normalized search text."
+                res_dict = llm_gateway.call(
+                    LLMTaskType.QUERY_UNDERSTANDING_CALL_1,
+                    raw_text=text
                 )
-                res = llm_gateway.generate_json(prompt, schema=QueryUnderstanding, model_type="flash")
-                return QueryUnderstanding.model_validate(res)
-            except Exception as e:
-                logger.info(f"Using rule-based NLP extraction fallback: {e}")
+                stage1_obj = QueryUnderstandingStage1.model_validate(res_dict)
+                
+                entities: List[ExtractedEntity] = []
+                if stage1_obj.product_category:
+                    entities.append(ExtractedEntity(
+                        entity=stage1_obj.product_category,
+                        type="PRODUCT",
+                        confidence=0.98
+                    ))
+                for attr in stage1_obj.technical_attributes:
+                    entities.append(ExtractedEntity(
+                        entity=attr,
+                        type="GRADE_SPECIFICATION",
+                        confidence=0.95
+                    ))
 
-        # Deterministic Rule-Based Extraction & Acronym Expansion
+                return QueryUnderstanding(
+                    detected_language=stage1_obj.language_detected or detected_lang,
+                    original_text=text,
+                    normalized_text=stage1_obj.normalized_query_en or text,
+                    extracted_entities=entities,
+                    query_intent=stage1_obj.intent
+                )
+            except Exception as e:
+                logger.info(f"AI Call #1 fallback to deterministic rules: {e}")
+
+        # Deterministic Rule-Based Fallback
         expanded_text = text
         for pat, repl in self.acronym_map.items():
             expanded_text = re.sub(pat, repl, expanded_text, flags=re.IGNORECASE)
@@ -141,14 +162,13 @@ class NLPExtractor:
                 ))
                 break
 
-        # 3. Handle Vernacular Compound Nouns (e.g. पेवर ब्लॉक takes precedence over सीमेंट)
+        # 3. Handle Compound Nouns and Vernacular Synonyms
         clean_text = expanded_text
         if "पेवर ब्लॉक" in text or "paver block" in text.lower():
             clean_text = "precast concrete blocks for paving paver blocks"
         elif "सीमेंट" in text and "कंक्रीट" not in text:
             clean_text = "ordinary portland cement"
         else:
-            # Remove common procurement filler words
             clean_text = re.sub(r"\b(procurement|supply|purchase|tender|specification|for|of|the|and|in|with|mandatory|required|grade|is|standard|conforming|to|under)\b", " ", expanded_text, flags=re.IGNORECASE)
             clean_text = re.sub(r"\s+", " ", clean_text).strip()
         
@@ -159,7 +179,6 @@ class NLPExtractor:
                 confidence=0.95
             ))
 
-        # Detect intent
         intent = "STANDARD_LOOKUP"
         if re.search(r"\b(audit|check|verify|comply|compliance|qco|order|rule|scheme)\b", text, re.IGNORECASE):
             intent = "COMPLIANCE_CHECK"
