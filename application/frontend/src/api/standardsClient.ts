@@ -2,6 +2,7 @@ import type { QueryRequest, StandardsResponse, FeedbackRequest, AlertPayload, Us
 
 // Mock Data Imports
 import cementMock from '../fixtures/cement_mock.json';
+import steelMock from '../fixtures/steel_mock.json';
 import hdpeMock from '../fixtures/hdpe_mock.json';
 import ledMock from '../fixtures/led_mock.json';
 import cctvMock from '../fixtures/cctv_mock.json';
@@ -25,6 +26,9 @@ function delay(ms: number) {
 
 export function pickMock(text: string): StandardsResponse {
   const t = text.toLowerCase();
+  if (t.includes('steel') || t.includes('rebar') || t.includes('tmt') || t.includes('1786') || t.includes('fe 500') || t.includes('fe500') || t.includes('लोहा') || t.includes('स्टील') || t.includes('கம்பி') || t.includes('ఇనుము')) {
+    return steelMock as unknown as StandardsResponse;
+  }
   if (t.includes('hdpe') || t.includes('pipe') || t.includes('4984') || t.includes('water')) {
     return hdpeMock as unknown as StandardsResponse;
   }

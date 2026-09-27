@@ -1,0 +1,219 @@
+{
+  "$schema": "SIH2026.StandardsResponse.v1",
+  "meta": {
+    "query_id": "uuid-steel-7f3a-4e2b",
+    "session_id": "sess-steel-108a",
+    "timestamp": "2026-09-26T10:05:00Z",
+    "processing_time_ms": 380,
+    "pipeline_version": "1.0.0",
+    "model_version": "gemini-2.5-pro",
+    "data_snapshot_date": "2026-09-26",
+    "audit_reference_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef0123456789abcdef0",
+    "mode": "recommend"
+  },
+  "query_understanding": {
+    "detected_language": "en",
+    "original_text": "Procurement of Fe 500D TMT rebars for flyover construction",
+    "normalized_text": "tmt steel rebars fe 500d reinforcement flyover bridge",
+    "extracted_entities": [
+      {
+        "entity": "high strength deformed steel bars",
+        "type": "PRODUCT",
+        "confidence": 0.99
+      },
+      {
+        "entity": "Fe 500D",
+        "type": "GRADE_SPECIFICATION",
+        "confidence": 0.98
+      },
+      {
+        "entity": "flyover construction",
+        "type": "APPLICATION_DOMAIN",
+        "confidence": 0.95
+      }
+    ],
+    "query_intent": "STANDARD_LOOKUP",
+    "ambiguity_flags": [
+      "Grade specification Fe 500D selected. Ensure ductile grade ('D') is specified for seismic Zone III/IV/V applications."
+    ]
+  },
+  "primary_recommendation": {
+    "is_number": "IS 1786:2008",
+    "standard_id": "IS 1786:2008",
+    "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement — Specification",
+    "full_title": "IS 1786:2008 — High Strength Deformed Steel Bars and Wires for Concrete Reinforcement — Specification (Fourth Revision)",
+    "status": "ACTIVE",
+    "year_published": 2008,
+    "latest_amendment": "Amendment 3 (2021)",
+    "superseded_by": null,
+    "supersedes": ["IS 1786:1985", "IS 1139:1966"],
+    "scope_snippet": "This standard covers the requirements for deformed steel bars and wires for use as reinforcement in concrete in the following strength grades: Fe 415, Fe 415D, Fe 500, Fe 500D, Fe 550, Fe 550D, Fe 600.",
+    "division_code": "MTD",
+    "ics_codes": ["77.140.15"],
+    "confidence": 0.96,
+    "confidence_breakdown": {
+      "semantic_vector_score": 0.48,
+      "keyword_exact_match": 0.32,
+      "graph_co_citation_boost": 0.16
+    },
+    "certification": {
+      "scheme": "BIS_ISI_MARK",
+      "mandatory": true,
+      "qco_order_name": "Steel and Steel Products (Quality Control) Order, 2020",
+      "qco_gazette_ref": "SO 3764(E)",
+      "notifying_ministry": "Ministry of Steel",
+      "enforcement_date": "2021-01-20"
+    }
+  },
+  "allied_standards": [
+    {
+      "is_number": "IS 1608 (Part 1)",
+      "standard_id": "IS 1608 (Part 1):2018",
+      "title": "Metallic Materials — Tensile Testing — Part 1: Method of Test at Room Temperature",
+      "relation_type": "TEST_METHOD",
+      "relation_label": "Mandatory Mechanical Test",
+      "status": "ACTIVE",
+      "confidence": 0.95,
+      "why": "IS 1786 Clause 9.2 mandates proof stress and tensile strength determination per IS 1608 (Part 1)."
+    },
+    {
+      "is_number": "IS 1599",
+      "standard_id": "IS 1599:2019",
+      "title": "Metallic Materials — Bend Test",
+      "relation_type": "TEST_METHOD",
+      "relation_label": "Mandatory Ductility Test",
+      "status": "ACTIVE",
+      "confidence": 0.92,
+      "why": "IS 1786 Clause 9.3 mandates bend and rebend testing per IS 1599 to verify ductility."
+    },
+    {
+      "is_number": "IS 2770 (Part 1)",
+      "standard_id": "IS 2770 (Part 1):1967",
+      "title": "Methods of Testing Bond in Reinforced Concrete — Part 1: Pull-out Test",
+      "relation_type": "TEST_METHOD",
+      "relation_label": "Bond Verification",
+      "status": "ACTIVE",
+      "confidence": 0.88,
+      "why": "Mandatory for verifying surface rib geometry and concrete-steel bond strength."
+    },
+    {
+      "is_number": "IS 456:2000",
+      "standard_id": "IS 456:2000",
+      "title": "Plain and Reinforced Concrete — Code of Practice",
+      "relation_type": "STRUCTURAL_CODE",
+      "relation_label": "Governing Design Code",
+      "status": "ACTIVE",
+      "confidence": 0.94,
+      "why": "Structural design and detailing code for concrete structures utilizing IS 1786 reinforcement."
+    }
+  ],
+  "outdated_citations": [
+    {
+      "cited_standard": "IS 1786:1985",
+      "severity": "CRITICAL",
+      "status": "WITHDRAWN",
+      "reason": "Superseded by IS 1786:2008 (Fourth Revision).",
+      "replacement": "IS 1786:2008",
+      "message": "Draft mentions IS 1786:1985. The 1985 revision lacks Fe 500D / Fe 550D ductility specifications mandatory for seismic zones under MoRTH."
+    }
+  ],
+  "graph_path": [
+    {
+      "from": "Fe 500D TMT Rebar",
+      "to": "IS 1786:1985",
+      "edge_type": "HISTORICAL_SPEC",
+      "label": "Legacy Specification"
+    },
+    {
+      "from": "IS 1786:1985",
+      "to": "IS 1786:2008",
+      "edge_type": "SUPERSEDED_BY",
+      "label": "Superseded by 4th Revision"
+    },
+    {
+      "from": "IS 1786:2008",
+      "to": "IS 1608 (Part 1)",
+      "edge_type": "REQUIRES_TEST_METHOD",
+      "label": "Mandates Tensile Test"
+    },
+    {
+      "from": "IS 1786:2008",
+      "to": "IS 1599",
+      "edge_type": "REQUIRES_TEST_METHOD",
+      "label": "Mandates Bend Test"
+    }
+  ],
+  "reasoning_trace": [
+    {
+      "step": "query_understanding",
+      "detail": "Extracted product 'TMT Rebar', grade 'Fe 500D', application 'Flyover / Highway Bridge'.",
+      "confidence": 0.99
+    },
+    {
+      "step": "vector_retrieval",
+      "detail": "Vector search returned IS 1786:2008 (score 0.96) and legacy IS 1786:1985.",
+      "confidence": 0.96
+    },
+    {
+      "step": "graph_traversal",
+      "detail": "Knowledge graph verified IS 1786:2008 is ACTIVE with Amendment 3; mapped mandatory test methods IS 1608 and IS 1599.",
+      "confidence": 1.0
+    },
+    {
+      "step": "qco_compliance_lookup",
+      "detail": "Verified Ministry of Steel QCO (SO 3764(E)) strictly mandates BIS ISI Mark (CM/L) for IS 1786.",
+      "confidence": 0.99
+    }
+  ],
+  "plain_language_explanation": {
+    "enabled": true,
+    "text": "For reinforcement steel in structural and bridge works, the applicable Indian Standard is **IS 1786:2008** (Grade Fe 500D). Under the Ministry of Steel Quality Control Order (2020), all reinforcement steel bars must carry a valid **BIS ISI Mark**. Tensile and elongation tests must conform to **IS 1608 (Part 1)**, and bend/rebend tests must satisfy **IS 1599**."
+  },
+  "compliance_checklist": [
+    {
+      "item": "Cite IS 1786:2008 (with Amendment 3) and Grade Fe 500D",
+      "status": "PASS",
+      "action_required": "Ensure tender schedule specifies Fe 500D conforming strictly to IS 1786:2008."
+    },
+    {
+      "item": "Mandatory BIS ISI Mark / License (CM/L) verification clause",
+      "status": "WARNING",
+      "action_required": "Insert clause requiring bidder to submit valid BIS CM/L license number with manufacturer test certificate (MTC)."
+    },
+    {
+      "item": "Test certificate for mechanical properties per IS 1608 & IS 1599",
+      "status": "PASS",
+      "action_required": "Require lot-wise test reports for yield strength (≥500 MPa), tensile ratio (≥1.10), and percentage elongation (≥16.0%)."
+    }
+  ],
+  "audit_record": {
+    "recommendation_id": "rec-steel-9a2c",
+    "query_id": "uuid-steel-7f3a-4e2b",
+    "timestamp": "2026-09-26T10:05:00Z",
+    "standards_version_snapshot": {
+      "IS 1786:2008": {
+        "status_at_query_time": "ACTIVE",
+        "amendment_at_query_time": "Amendment 3 (2021)"
+      }
+    },
+    "audit_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef0123456789abcdef0",
+    "logged": true,
+    "dry_run": false,
+    "rti_exportable": true
+  },
+  "staleness_risk": {
+    "risk_level": "NONE",
+    "message": "IS 1786:2008 is current and active with Amendment 3.",
+    "standards_under_revision": []
+  },
+  "multilingual": {
+    "bhashini_used": false,
+    "detected_input_language": "en",
+    "response_language": "en",
+    "available_translations": ["hi", "ta", "te", "mr", "gu", "bn"]
+  },
+  "spec_draft_export": {
+    "title": "Technical Specification for High Strength Deformed Steel Bars (Fe 500D)",
+    "draft_clause": "All reinforcing steel for RCC and PSC structural components shall be Thermo-Mechanically Treated (TMT) high strength deformed bars of Grade Fe 500D conforming strictly to IS 1786:2008 (incorporating Amendments 1 to 3). All supplied rebars must bear the BIS Standard Mark (ISI Mark) under a valid CM/L license issued by the Bureau of Indian Standards in compliance with the Steel and Steel Products (Quality Control) Order. The contractor shall submit manufacturer test certificates (MTC) verifying yield strength (≥ 500 N/mm²), tensile strength ratio (TS/YS ≥ 1.10), elongation (≥ 16.0%), and bend/rebend tests per IS 1599 and IS 1608 (Part 1) for every consignment batch before incorporation into work."
+  }
+}
