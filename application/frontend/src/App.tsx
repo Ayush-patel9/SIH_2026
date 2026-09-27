@@ -22,6 +22,7 @@ import { MobileBottomNav, type FeatureKey } from './components/MobileBottomNav';
 import { CommandPaletteModal } from './components/CommandPaletteModal';
 import { Sidebar } from './components/Sidebar';
 import { AuthorityDrawer } from './components/AuthorityDrawer';
+import { ProjectsView } from './features/projects';
 import type { StandardsResponse, SupportedLanguage, AlertPayload } from './types';
 
 import { KnowledgeGraph3DView } from './features/neuralGraph/KnowledgeGraph3DView';
@@ -275,6 +276,7 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
 }
 
 const FEATURE_TITLES: Record<FeatureKey, string> = {
+  projects: 'Projects & Procurement History',
   explainability: 'Standards Explorer',
   graph3d: '22,011 Standards 3D Neural Mesh',
   audit: 'CVC Audit Trail & Legal Defense',
@@ -293,6 +295,51 @@ const FEATURE_TITLES: Record<FeatureKey, string> = {
   voiceStudio: 'Bhashini Voice & Audio Station',
 };
 
+export const FEATURE_ROUTES: Record<FeatureKey, string> = {
+  projects: '/app/projects',
+  tenderUpload: '/app/tender-upload',
+  graph3d: '/app/neural-mesh',
+  audit: '/app/cvc-audit',
+  explainability: '/app/standards-explorer',
+  cagAudit: '/app/cag-audit',
+  gazetteRadar: '/app/gazette-radar',
+  timeMachine: '/app/time-machine',
+  voiceStudio: '/app/voice-studio',
+  nitGenerator: '/app/nit-generator',
+  comparison: '/app/comparison',
+  dashboard: '/app/dashboard',
+  mcp: '/app/mcp',
+  integrations: '/app/integrations',
+  feedback: '/app/feedback',
+  alerts: '/app/alerts',
+  queryUnderstanding: '/app/query-understanding',
+};
+
+export function getFeatureFromPath(pathname: string, defaultFeature: FeatureKey = 'projects'): FeatureKey {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  for (const [key, route] of Object.entries(FEATURE_ROUTES)) {
+    if (clean === route) return key as FeatureKey;
+  }
+  if (clean.includes('/projects') || clean.includes('/tenders')) return 'projects';
+  if (clean.includes('/tender-upload') || clean.includes('/upload')) return 'tenderUpload';
+  if (clean.includes('/neural-mesh') || clean.includes('/mesh') || clean.includes('/graph')) return 'graph3d';
+  if (clean.includes('/cvc-audit') || clean.includes('/audit')) return 'audit';
+  if (clean.includes('/cag-audit') || clean.includes('/cag')) return 'cagAudit';
+  if (clean.includes('/standards-explorer') || clean.includes('/standards')) return 'explainability';
+  if (clean.includes('/dashboard')) return 'dashboard';
+  if (clean.includes('/gazette-radar')) return 'gazetteRadar';
+  if (clean.includes('/time-machine')) return 'timeMachine';
+  if (clean.includes('/voice-studio')) return 'voiceStudio';
+  if (clean.includes('/nit-generator')) return 'nitGenerator';
+  if (clean.includes('/comparison')) return 'comparison';
+  if (clean.includes('/mcp')) return 'mcp';
+  if (clean.includes('/integrations')) return 'integrations';
+  if (clean.includes('/feedback')) return 'feedback';
+  if (clean.includes('/alerts')) return 'alerts';
+  if (clean.includes('/query-understanding')) return 'queryUnderstanding';
+  return defaultFeature;
+}
+
 interface AppProps {
   onLogout?: () => void;
 }
@@ -303,7 +350,38 @@ export default function App({ onLogout }: AppProps = {}) {
   const [language, setLanguage] = useState<SupportedLanguage>('en');
   const [alerts, setAlerts] = useState<AlertPayload[]>([]);
   const [selectedDomain, setSelectedDomain] = useState<string>('cement');
-  const [activeFeature, setActiveFeature] = useState<FeatureKey>('explainability');
+  const [activeFeature, setActiveFeature] = useState<FeatureKey>(() => {
+    return getFeatureFromPath(window.location.pathname, 'projects');
+  });
+
+  const navigateToFeature = useCallback((feat: FeatureKey, replace = false) => {
+    setActiveFeature(feat);
+    const targetUrl = FEATURE_ROUTES[feat] || '/app/projects';
+    if (window.location.pathname !== targetUrl) {
+      if (replace) {
+        window.history.replaceState({}, '', targetUrl);
+      } else {
+        window.history.pushState({}, '', targetUrl);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const feat = getFeatureFromPath(window.location.pathname, 'projects');
+      setActiveFeature(feat);
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  useEffect(() => {
+    const initialRoute = FEATURE_ROUTES[activeFeature] || '/app/projects';
+    if (window.location.pathname === '/app' || window.location.pathname === '/app/') {
+      window.history.replaceState({}, '', initialRoute);
+    }
+  }, [activeFeature]);
+
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [isAlertDrawerOpen, setIsAlertDrawerOpen] = useState(false);
   const [isDataSovereigntyOpen, setIsDataSovereigntyOpen] = useState(false);
@@ -506,7 +584,7 @@ export default function App({ onLogout }: AppProps = {}) {
       {/* Minimal Sidebar Navigation */}
       <Sidebar
         activeFeature={activeFeature}
-        onSelectFeature={setActiveFeature}
+        onSelectFeature={navigateToFeature}
         alertCount={alerts.length}
         collapsed={isSidebarCollapsed}
         onToggleCollapse={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
@@ -614,6 +692,15 @@ export default function App({ onLogout }: AppProps = {}) {
 
         {/* Content Stage */}
         <main className="content-stage">
+          {/* Feature 00: Projects & Procurement History */}
+          {activeFeature === 'projects' && (
+            <ProjectsView
+              onNavigateToTenderUpload={() => navigateToFeature('tenderUpload')}
+              onNavigateToNeuralMesh={(_std) => navigateToFeature('graph3d')}
+              onNavigateToAudit={(_id) => navigateToFeature('audit')}
+            />
+          )}
+
           {/* Feature 01: Standards Explorer */}
           {activeFeature === 'explainability' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '22px', maxWidth: '1040px', margin: '0 auto', width: '100%' }}>

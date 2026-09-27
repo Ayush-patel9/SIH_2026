@@ -27,6 +27,7 @@ from application.api.routes.query import router as query_router
 from application.api.routes.feedback import router as feedback_router
 from application.api.routes.alerts import router as alerts_router
 from application.api.routes.websocket import router as websocket_router
+from application.api.routes.knowledge_graph import router as knowledge_graph_router
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("bis_platform_api")
@@ -57,6 +58,7 @@ app.include_router(query_router)
 app.include_router(feedback_router)
 app.include_router(alerts_router)
 app.include_router(websocket_router)
+app.include_router(knowledge_graph_router)
 
 @app.get("/health", summary="Health Check")
 @app.get("/api/health", summary="Health Check (API Prefix)")

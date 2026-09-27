@@ -49,6 +49,25 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const role: UserRole = session?.role || 'PROCUREMENT_OFFICER';
   const sections: NavSection[] = [
     {
+      title: 'TENDERS & PROJECTS',
+      items: [
+        {
+          key: 'projects',
+          label: role === 'VENDOR' ? 'Tender Marketplace' : 'Projects & Tender History',
+          icon: '📁',
+          badge: 'RECENCY',
+          description: role === 'VENDOR' ? 'Explore active tenders & verify standards' : 'Recency drafts, AI suggestions & approval options',
+        },
+        {
+          key: 'tenderUpload',
+          label: 'Tender Upload & Standards',
+          icon: '📄',
+          badge: 'PDF / AI',
+          description: 'Upload PDF/Text tender to extract Indian Standards',
+        },
+      ],
+    },
+    {
       title: 'STANDARDS & INTELLIGENCE',
       items: [
         {
@@ -93,13 +112,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           icon: '🛡️',
           badge: 'SHA-256',
           description: 'CVC Legal Defense & Sealed Audit Ledger',
-        },
-        {
-          key: 'tenderUpload',
-          label: 'Tender Upload & Standards',
-          icon: '📄',
-          badge: 'PDF / AI',
-          description: 'Upload PDF/Text tender to extract Indian Standards',
         },
         {
           key: 'nitGenerator',

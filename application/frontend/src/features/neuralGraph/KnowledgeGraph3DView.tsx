@@ -63,12 +63,63 @@ const INITIAL_EDGES: Edge[] = [
 export const KnowledgeGraph3DView: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [nodes, setNodes] = useState<Node[]>(INITIAL_NODES);
+  const [edges, setEdges] = useState<Edge[]>(INITIAL_EDGES);
   const [selectedNode, setSelectedNode] = useState<Node | null>(INITIAL_NODES[0]);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeFilter, setActiveFilter] = useState<string>('ALL');
   const [zoom, setZoom] = useState(1);
   const [isSimulating, setIsSimulating] = useState(true);
   const [isDragging, setIsDragging] = useState<string | null>(null);
+  const [isLiveGraphLoaded, setIsLiveGraphLoaded] = useState(false);
+  const [totalIndexedCount, setTotalIndexedCount] = useState<number>(22011);
+
+  // Fetch dynamic subgraph from FastAPI backend
+  const fetchDynamicSubgraph = async (centerStd?: string, dom: string = 'ALL') => {
+    try {
+      const params = new URLSearchParams();
+      if (centerStd) params.set('center', centerStd);
+      if (dom && dom !== 'ALL') params.set('domain', dom);
+      const res = await fetch(`http://127.0.0.1:8000/api/v1/knowledge-graph/subgraph?${params.toString()}`);
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.nodes && data.nodes.length > 0) {
+        const centerX = 450;
+        const centerY = 300;
+        const formattedNodes: Node[] = data.nodes.map((n: any, idx: number) => {
+          const existing = nodes.find((ex) => ex.id === n.id);
+          if (existing && existing.x) {
+            return { ...n, x: existing.x, y: existing.y, vx: 0, vy: 0 };
+          }
+          const angle = (idx / data.nodes.length) * 2 * Math.PI;
+          const dist = 140 + (idx % 3) * 65;
+          return {
+            ...n,
+            x: Math.max(90, Math.min(840, centerX + Math.cos(angle) * dist)),
+            y: Math.max(90, Math.min(510, centerY + Math.sin(angle) * dist)),
+            vx: 0,
+            vy: 0,
+            radius: n.radius || 18,
+            color: n.color || '#2563EB',
+          };
+        });
+
+        setNodes(formattedNodes);
+        if (data.edges) setEdges(data.edges);
+        if (data.total_indexed) setTotalIndexedCount(data.total_indexed);
+        setIsLiveGraphLoaded(true);
+
+        if (!selectedNode || !formattedNodes.some((fn) => fn.id === selectedNode.id)) {
+          setSelectedNode(formattedNodes[0]);
+        }
+      }
+    } catch (err) {
+      console.warn('Backend subgraph API unavailable, utilizing local neural mesh baseline:', err);
+    }
+  };
+
+  useEffect(() => {
+    fetchDynamicSubgraph(undefined, activeFilter);
+  }, [activeFilter]);
 
   // Animation Loop with simple force-directed damping
   useEffect(() => {
@@ -86,7 +137,7 @@ export const KnowledgeGraph3DView: React.FC = () => {
       ctx.scale(zoom, zoom);
 
       // Draw Edges
-      INITIAL_EDGES.forEach((edge) => {
+      edges.forEach((edge) => {
         const src = nodes.find((n) => n.id === edge.source);
         const tgt = nodes.find((n) => n.id === edge.target);
         if (!src || !tgt) return;
@@ -251,6 +302,11 @@ export const KnowledgeGraph3DView: React.FC = () => {
                 placeholder="Search standard in mesh..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    fetchDynamicSubgraph(searchQuery, activeFilter);
+                  }
+                }}
                 style={{
                   border: 'none',
                   outline: 'none',

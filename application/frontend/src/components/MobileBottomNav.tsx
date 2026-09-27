@@ -1,6 +1,7 @@
 import React from 'react';
 
 export type FeatureKey =
+  | 'projects'
   | 'explainability'
   | 'audit'
   | 'feedback'
