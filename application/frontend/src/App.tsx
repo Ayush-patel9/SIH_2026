@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { DOMAIN_PRESETS, CEMENT_MOCK_DATA, ConfidenceBreakdownBar, KnowledgeGraphViewer, ReasoningTimeline } from './features/explainability';
 import { AuditTrailView, AuditStore } from './features/audit';
 import { FeedbackView } from './features/feedback';
-import { AlertsView, NotificationBell, AlertDrawer } from './features/alerts';
+import { AlertsView, NotificationBell, AlertDrawer, AlertStore } from './features/alerts';
 import { ComparisonView } from './features/comparison';
 import { QueryUnderstandingView } from './features/queryUnderstanding';
 import { NITGeneratorView } from './features/nitGenerator';
@@ -315,15 +315,26 @@ export default function App() {
   const [copiedClause, setCopiedClause] = useState(false);
 
   useEffect(() => {
-    getAlerts().then(setAlerts).catch(console.error);
+    getAlerts()
+      .then((fetched) => {
+        setAlerts(fetched);
+        if (Array.isArray(fetched)) {
+          fetched.forEach((a) => AlertStore.addAlert(a));
+        }
+      })
+      .catch(console.error);
 
     const disconnectAlerts = connectAlertsSocket(
       (snapshot) => {
         setAlerts(snapshot);
+        if (Array.isArray(snapshot)) {
+          snapshot.forEach((a) => AlertStore.addAlert(a));
+        }
         setIsSocketLive(true);
       },
       (liveAlert) => {
         setAlerts((prev) => [liveAlert, ...prev]);
+        AlertStore.addAlert(liveAlert);
         const stdNum = liveAlert.affected_standard?.is_number || 'Standard Update';
         const action = liveAlert.recommended_action || liveAlert.affected_standard?.event || 'Supersession notice received.';
         setMessages((prev) => [
