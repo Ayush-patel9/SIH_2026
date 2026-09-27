@@ -108,15 +108,39 @@ class RerankerAndFusion:
                     "match_type": "FALLBACK"
                 }
 
-        # 4. Compute Weighted Total Score
+        # 4. Compute Weighted Total Score with Recency and QCO Boosting
         scored_list = []
         for key, entry in candidate_scores.items():
+            std = entry["standard"]
             v_score = entry["vector_score"]
             e_score = entry["exact_score"]
             g_boost = entry["graph_boost"]
             
-            # Weighted total: 40% Vector + 40% Exact + 20% Graph
-            total_score = (0.40 * v_score) + (0.40 * e_score) + (0.20 * g_boost)
+            # Base Weighted Total: 40% Vector + 40% Exact + 20% Graph
+            base_score = (0.40 * v_score) + (0.40 * e_score) + (0.20 * g_boost)
+            
+            # Regulatory & Quality Boosts
+            qco_data = self.tri.get_qco_info(key)
+            is_qco = bool(qco_data or key in ["IS 269", "IS 1786", "IS 456", "IS 694", "IS 616", "IS 13252 (PART 1)", "IS 16046 (PART 2)", "IS 16102 (PART 1)", "IS 14286", "IS 1180 (PART 1)", "IS 4984", "IS 15658", "IS 2925", "IS 15683", "IS 1417", "IS 2112", "IS 18112", "IS 1391 (PART 1)", "IS 1391 (PART 2)", "IS 374", "IS 2082", "IS 16240", "IS 10500"])
+            reg_boost = 0.20 if is_qco else 0.0
+            
+            # Recency Boost
+            yr = std.get("year_published") or 1990
+            recency_boost = 0.15 if yr >= 2015 else (0.08 if yr >= 2005 else 0.0)
+            
+            t_lower = std.get("title", "").lower()
+            penalty = 0.0
+
+            # Primary Product / Complete Specification / Code of Practice Boost
+            if any(w in t_lower for w in ["code of practice", "specification", "general requirements", "safety requirements", "performance requirements"]):
+                base_score += 0.15
+            
+            # Secondary / Auxiliary attachment penalty (unless explicitly queried)
+            if any(w in t_lower for w in ["weighing machine", "training of driver", "driving manual", "spool", "sweep generator", "magnetic properties", "flux measurement"]):
+                if not any(w in query_text.lower() for w in ["weighing", "training", "manual", "spool", "sweep", "magnet", "flux"]):
+                    penalty += 0.35
+
+            total_score = max(base_score + reg_boost + recency_boost - penalty, 0.05)
             scored_list.append((total_score, entry))
 
         scored_list.sort(key=lambda x: x[0], reverse=True)

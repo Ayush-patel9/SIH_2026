@@ -44,15 +44,97 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
   const num = (primary.is_number || '').toUpperCase();
   const title = (primary.title || '').toLowerCase();
 
+  // Cranes, Hoists & Material Handling
+  if (num.includes('3177') || num.includes('807') || num.includes('4573') || num.includes('13367') || title.includes('crane') || title.includes('gantry')) {
+    return [
+      { label: 'SAFE WORKING LOAD (SWL)', val: 'Class II / III / IV (M5/M7 Duty)' },
+      { label: 'HOISTING SPEED & SPAN', val: 'Span up to 35m / VFD Control' },
+      { label: 'STRUCTURAL DEFLECTION', val: '≤ Span / 750 (IS 807 Design Code)' },
+      { label: 'WIRE ROPE SAFETY FACTOR', val: '≥ 5.0 (IS 2266 6x36 Construction)' },
+    ];
+  }
+
+  // Televisions, Video Displays & Monitors
+  if (num.includes('616') || num.includes('18112') || num.includes('10662') || title.includes('television') || title.includes('audio, video') || title.includes('visual display')) {
+    return [
+      { label: 'DIELECTRIC INSULATION', val: '≥ 2000V AC Hi-Pot (Basic/Double)' },
+      { label: 'FIRE HAZARD RESISTANCE', val: 'UL94 V-0 / Glow Wire 750°C' },
+      { label: 'POWER & STANDBY NORM', val: 'BEE 5-Star / Eco Standby ≤ 0.5W' },
+      { label: 'MECHANICAL STABILITY', val: '10° Tilt Stability & Impact Test' },
+    ];
+  }
+
+  // Room Air Conditioners
+  if (num.includes('1391') || title.includes('air conditioner') || title.includes('unitary air')) {
+    return [
+      { label: 'COOLING CAPACITY & ISEER', val: '≥ 4.0 ISEER (BEE 5-Star Rating)' },
+      { label: 'REFRIGERANT SAFETY', val: 'R32 / R290 Eco (Zero ODP)' },
+      { label: 'INDOOR SOUND PRESSURE', val: '≤ 42 dB(A) Quiet Operation' },
+      { label: 'ELECTRICAL SAFETY NORM', val: 'IS 302 High Voltage & Leakage' },
+    ];
+  }
+
+  // Refrigerators & Freezers
+  if (num.includes('17550') || num.includes('15797') || title.includes('refrigerat') || title.includes('deep freezer')) {
+    return [
+      { label: 'ANNUAL ENERGY NORM', val: 'BEE 5-Star Electricity Index' },
+      { label: 'PULL-DOWN PERFORMANCE', val: '+43°C Ambient to -18°C Tested' },
+      { label: 'INSULATION BLOWING AGENT', val: 'Cyclopentane Eco-Foam' },
+      { label: 'PRESSURE LEAKAGE TEST', val: '100% Helium Leak Detection' },
+    ];
+  }
+
+  // Ceiling & Electric Fans
+  if (num.includes('374') || title.includes('ceiling fan') || title.includes('electric fan')) {
+    return [
+      { label: 'AIR DELIVERY CAPACITY', val: '≥ 210 m³/min (1200mm Sweep)' },
+      { label: 'SERVICE VALUE (EFFICIENCY)', val: '≥ 4.0 (m³/min)/Watt (BEE 5-Star)' },
+      { label: 'MOTOR & WINDING SPECS', val: '100% Electrolytic Copper Wire' },
+      { label: 'TEMPERATURE RISE LIMIT', val: 'Class E Insulation ≤ 75°C' },
+    ];
+  }
+
+  // Water Heaters & Geysers
+  if (num.includes('2082') || title.includes('water heater') || title.includes('geyser')) {
+    return [
+      { label: 'RATED PRESSURE CAPACITY', val: '≥ 8.0 bar (High-Rise Ready)' },
+      { label: 'STANDING LOSS FACTOR', val: 'BEE 5-Star (≤ 0.45 kWh/24h)' },
+      { label: 'TANK MATERIAL & COATING', val: 'Glass-Lined Vitreous Enamel' },
+      { label: 'THERMAL CUT-OUT SAFETY', val: 'Dual Thermostat Auto Cut-off' },
+    ];
+  }
+
+  // Water Purifiers & Drinking Water
+  if (num.includes('16240') || num.includes('10500') || title.includes('water purifier') || title.includes('drinking water')) {
+    return [
+      { label: 'TDS REDUCTION EFFICIENCY', val: '≥ 90% Salt Rejection RO' },
+      { label: 'MICROBIAL DISINFECTION', val: '100% E.Coli & Virus Inactivation' },
+      { label: 'WATER RECOVERY FACTOR', val: '≥ 50% High Recovery Eco-RO' },
+      { label: 'FOOD GRADE PLASTIC', val: 'BIS / NSF-58 Contact Safe' },
+    ];
+  }
+
+  // Mobile Handsets & Smartphones
+  if (num.includes('16333') || title.includes('mobile phone') || title.includes('handset')) {
+    return [
+      { label: 'LANGUAGE SCRIPT SUPPORT', val: '22 Official Indian Languages' },
+      { label: 'SAR RADIATION LIMIT', val: '≤ 1.6 W/kg (1g Tissue Head/Body)' },
+      { label: 'EMERGENCY CALL BUTTON', val: '112 Single Emergency Key (GPS)' },
+      { label: 'BATTERY SAFETY NORM', val: 'IS 16046 (Part 2) Compliance' },
+    ];
+  }
+
+  // Information Technology, Computers, CCTV, Power Adapters
   if (num.includes('13252') || title.includes('information technology') || title.includes('power adapter') || title.includes('charger') || title.includes('laptop') || title.includes('cctv')) {
     return [
-      { label: 'ELECTRIC SHOCK PROTECTION', val: 'Class I / II Insulation' },
+      { label: 'ELECTRIC SHOCK PROTECTION', val: 'Class I / II Reinforced' },
       { label: 'ENERGY HAZARDS & FIRE', val: 'UL94 V-0 Flammability' },
       { label: 'DIELECTRIC WITHSTAND', val: '≥ 3.0 kV AC RMS Test' },
       { label: 'TEMPERATURE RISE LIMIT', val: '≤ 65°C Operating Max' },
     ];
   }
 
+  // Electric Vehicle Charging Systems
   if (num.includes('17017') || title.includes('electric vehicle') || title.includes('charging system')) {
     return [
       { label: 'CHARGING CONFIGURATION', val: 'Mode 2 / Mode 3 / DC Fast' },
@@ -62,6 +144,7 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
     ];
   }
 
+  // Lithium Ion & Battery Packs
   if (num.includes('16046') || title.includes('lithium') || title.includes('secondary cell') || title.includes('battery')) {
     return [
       { label: 'NOMINAL CAPACITY / VOLT', val: '3.7V / High Energy Density' },
@@ -71,15 +154,17 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
     ];
   }
 
+  // Cement
   if (num.includes('269') || num.includes('1489') || num.includes('8112') || num.includes('12269') || title.includes('cement')) {
     return [
-      { label: '28-DAY STRENGTH', val: '≥ 43.0 MPa (Grade 43)' },
+      { label: '28-DAY STRENGTH', val: '≥ 43.0 MPa (Grade 43/53)' },
       { label: 'INITIAL SETTING TIME', val: '≥ 30 Minutes' },
       { label: 'INSOLUBLE RESIDUE', val: '≤ 4.0% Max' },
       { label: 'LE CHATELIER EXPANSION', val: '≤ 10.0 mm' },
     ];
   }
 
+  // Steel Rebars & TMT
   if (num.includes('1786') || title.includes('deformed') || title.includes('rebar') || title.includes('tmt')) {
     return [
       { label: '0.2% PROOF STRESS (YIELD)', val: '≥ 500.0 MPa (Fe 500D)' },
@@ -89,6 +174,7 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
     ];
   }
 
+  // Structural Steel
   if (num.includes('2062') || title.includes('structural steel')) {
     return [
       { label: 'YIELD STRENGTH (Re)', val: '≥ 250 MPa (E250 Grade)' },
@@ -98,15 +184,37 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
     ];
   }
 
-  if (num.includes('4984') || num.includes('4985') || title.includes('hdpe') || title.includes('pipe')) {
+  // Pipes & Tubes
+  if (num.includes('4984') || num.includes('4985') || num.includes('13592') || num.includes('8329') || num.includes('1239') || title.includes('hdpe') || title.includes('pipe') || title.includes('tubes')) {
     return [
-      { label: 'HYDROSTATIC STRENGTH', val: '≥ 100 hrs @ 80°C' },
+      { label: 'HYDROSTATIC STRENGTH', val: '≥ 100 hrs @ 80°C / PN10-16' },
       { label: 'MELT FLOW RATE (MFR)', val: '0.2 – 1.4 g/10min' },
-      { label: 'CARBON BLACK CONTENT', val: '2.0 – 2.5% Mass' },
+      { label: 'CARBON BLACK CONTENT', val: '2.0 – 2.5% Mass Uniform' },
       { label: 'OXIDATION INDUCTION', val: '≥ 20 min @ 200°C' },
     ];
   }
 
+  // Cables & Wires
+  if (num.includes('694') || num.includes('7098') || title.includes('cable') || title.includes('conductor') || title.includes('copper wire')) {
+    return [
+      { label: 'CONDUCTOR MATERIAL', val: '100% Electrolytic Copper (EC)' },
+      { label: 'INSULATION RESISTANCE', val: '≥ 50 MΩ·km @ 20°C' },
+      { label: 'FLAME RETARDANCY (FR)', val: 'Oxygen Index ≥ 29% (FRLS)' },
+      { label: 'VOLTAGE GRADE RATING', val: '1100V / 33kV Rated' },
+    ];
+  }
+
+  // Submersible Pumps
+  if (num.includes('14220') || num.includes('8472') || num.includes('9079') || title.includes('submersible') || title.includes('pump')) {
+    return [
+      { label: 'OVERALL PUMP EFFICIENCY', val: '≥ 65% Best Efficiency Point' },
+      { label: 'HYDROSTATIC CASING TEST', val: '1.5x Max Working Pressure' },
+      { label: 'WINDING INSULATION', val: 'Water-Filled Submersible Wire' },
+      { label: 'HEAD & DISCHARGE FLOW', val: 'IS 14220 Class 2 Tolerances' },
+    ];
+  }
+
+  // Solar Photovoltaic Modules
   if (num.includes('14286') || title.includes('photovoltaic') || title.includes('solar')) {
     return [
       { label: 'NOMINAL VOLTAGE (Vmp)', val: '41.5 V DC Nominal' },
@@ -116,6 +224,7 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
     ];
   }
 
+  // Fire Extinguishers
   if (num.includes('15683') || title.includes('fire extinguisher')) {
     return [
       { label: 'FIRE RATING CLASSIFICATION', val: '3A : 34B Rating' },
@@ -125,7 +234,8 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
     ];
   }
 
-  if (num.includes('1180') || num.includes('2026') || title.includes('transformer')) {
+  // Power & Distribution Transformers (Exclude subcomponent television picture tubes)
+  if ((num.includes('1180') || num.includes('2026') || title.includes('distribution transformer') || title.includes('power transformer')) && !title.includes('picture tube') && !title.includes('television')) {
     return [
       { label: 'RATED CAPACITY & VOLTAGE', val: 'Up to 2500 kVA / 33 kV' },
       { label: 'NO-LOAD & LOAD LOSSES', val: 'BEE 5-Star Energy Norms' },
@@ -134,7 +244,8 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
     ];
   }
 
-  if (num.includes('16102') || title.includes('led')) {
+  // LED Lamps & Lighting
+  if (num.includes('16102') || num.includes('10322') || title.includes('led')) {
     return [
       { label: 'LUMINOUS EFFICACY', val: '≥ 100 lm/Watt' },
       { label: 'COLOUR RENDERING (CRI)', val: '≥ 80 Ra' },
@@ -143,6 +254,7 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
     ];
   }
 
+  // Gold & Silver Hallmarking
   if (num.includes('1417') || num.includes('2112') || title.includes('gold') || title.includes('hallmark')) {
     return [
       { label: 'PURITY FINENESS (GOLD)', val: '916 (22K) / 750 (18K)' },

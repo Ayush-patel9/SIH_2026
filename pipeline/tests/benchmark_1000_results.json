@@ -1,0 +1,220 @@
+{
+  "total_tested": 1000,
+  "top1_accuracy": 93.0,
+  "top3_accuracy": 93.10000000000001,
+  "correct_top1": 930,
+  "correct_top3": 931,
+  "execution_time_seconds": 15.371380805969238,
+  "mismatches_sample": [
+    {
+      "query": "Procurement and supply of fabricated pvc-u fittings for potable water supplies",
+      "expected": "IS 10124 (PART 5)",
+      "got": "IS 10500",
+      "got_title": "Drinking water",
+      "in_allied": false
+    },
+    {
+      "query": "Methods of measurement for television sweep generators",
+      "expected": "IS 11051",
+      "got": "IS 616",
+      "got_title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of code of practice for testing of computer based systems",
+      "expected": "IS 11291",
+      "got": "IS 13252 (PART 1)",
+      "got_title": "Information Technology Equipment -- Safety, Part 1: General Requirements",
+      "in_allied": false
+    },
+    {
+      "query": "Method for the quantitative description of discontinuities in rock masses",
+      "expected": "IS 11315 (PART 10)",
+      "got": "IS 11315 (PART 3)",
+      "got_title": "Part 3 : 2023: Methods For Quantitative Description Of Discontinuities In Rock Masses - Part 3 Persistence",
+      "in_allied": false
+    },
+    {
+      "query": "Tolerances of Form and Position for Aerospace Bolts and Screws",
+      "expected": "IS 11644",
+      "got": "IS 1367 (PART 1)",
+      "got_title": "Technical Supply Conditions for Threaded Steel Fasteners, Part 1: General Requirements for Bolts, Screws and Studs",
+      "in_allied": false
+    },
+    {
+      "query": "Laminations for Transformers and Inductors for Use in Telecommunication and Electronic Equipment conforming to Indian Standards",
+      "expected": "IS 11794 (PART 2)",
+      "got": "IS 1180 (PART 1)",
+      "got_title": "Part 1 : 2014: Outdoor Type Oil Immersed Distribution Transformers Upto and Including 2 500 kVA, 33kV - Specification Part 1 Mineral Oil Immersed (Fourth Revision)",
+      "in_allied": false
+    },
+    {
+      "query": "silicone-based water repellents",
+      "expected": "IS 12027",
+      "got": "IS 16240",
+      "got_title": "Reverse Osmosis Based Point of Use Water Treatment System for Drinking Purposes-Specification",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of glass containers for domestic fruit preserving",
+      "expected": "IS 12581",
+      "got": "IS 17569",
+      "got_title": "Draft Indian Standard on Insulated Containers for Domestic Use Specification Casserole HotCold Box",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of pictorial marking for handling and labelling of goods",
+      "expected": "IS 1260 (PART 2)",
+      "got": "IS 15798 (PART 3)",
+      "got_title": "Part 3 : 2021: Textiles Requirements for Labelling and Marking Specification Part 3 Industrial and Technical Textiles First Revision",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of glass-fibre reinforced plastic pipes joints and fittings for use for potable water supply",
+      "expected": "IS 12709",
+      "got": "IS 10500",
+      "got_title": "Drinking water",
+      "in_allied": false
+    },
+    {
+      "query": "unplasticized polyvinyl chloride screen and casing pipes for bore/tubewell conforming to Indian Standards",
+      "expected": "IS 12818",
+      "got": "IS 13592",
+      "got_title": "Unplasticized Polyvinyl Chloride (PVC-U) pipes for soil and waste discharge systems inside buildings including ventilation and rainwater system",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of stock for forgings produced f rom continuously bast billets , blooms, slabs and bars",
+      "expected": "IS 13352",
+      "got": "IS 2830",
+      "got_title": "Carbon steel cast billet ingots,billets,blooms and slabs for re-rolling into steel for general structural purposes - Specification",
+      "in_allied": false
+    },
+    {
+      "query": "Performance requirements and methods of test of TV ferrite components conforming to Indian Standards",
+      "expected": "IS 13388 (PART 3)",
+      "got": "IS 616",
+      "got_title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of textiles polypropylene braided tapes for berets",
+      "expected": "IS 13597",
+      "got": "IS 8302",
+      "got_title": "Textiles - Braided tape for berets - Specification (first revision)",
+      "in_allied": false
+    },
+    {
+      "query": "Technical supply conditions for threaded steel fasteners, Part VII: Mechanical properties and test methods for nuts without specified proof loads conforming to Indian Standards",
+      "expected": "IS 1367 (PART 7)",
+      "got": "IS 1367 (PART 1)",
+      "got_title": "Technical Supply Conditions for Threaded Steel Fasteners, Part 1: General Requirements for Bolts, Screws and Studs",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of bitumen based felts - methods of test",
+      "expected": "IS 13826 (PART 6)",
+      "got": "IS 73",
+      "got_title": "Paving bitumen",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of unlined moulded rubber boots",
+      "expected": "IS 13995",
+      "got": "IS 17012",
+      "got_title": "High Ankle Tactical Boots with PU \u2014 Rubber Sole \u2014 Specification",
+      "in_allied": false
+    },
+    {
+      "query": "Respiratory protective devices: threads for facepieces",
+      "expected": "IS 14138 (PART 1)",
+      "got": "IS 10245 (PART 2)",
+      "got_title": "Part 2 : 2023: Respiratory Protective Devices-Specification - Part 2 Self-Contained Open Circuit Breathing Apparatus",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of automotive vehicles - hood latch system - method of test",
+      "expected": "IS 14226",
+      "got": "IS 14664",
+      "got_title": "AUTOMOTIVE VEHICLES \u2014 PERFORMANCE REQUIREMENTS AND TESTING PROCEDURE FOR BRAKING SYSTEM OF TWO AND THREE WHEELED MOTOR VEHICLES",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of automotive vehicles - ignition coils for magneto ignition systems",
+      "expected": "IS 14380",
+      "got": "IS 17821",
+      "got_title": "ETHANOL AS A FUEL FOR USE IN POSITIVE IGNITION ENGINE POWERED VEHICLES SPECIFICATION",
+      "in_allied": false
+    },
+    {
+      "query": "Mobile Cranes - Experimental Determination of Crane Performance",
+      "expected": "IS 14474 (PART 1)",
+      "got": "IS 4573",
+      "got_title": "Power Driven Mobile Cranes - Specification ( Second Revision )",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of horology - primary batteries - watch batteries",
+      "expected": "IS 14558",
+      "got": "IS 16046 (PART 2)",
+      "got_title": "Secondary Lithium Cells and Batteries for Portable Applications",
+      "in_allied": false
+    },
+    {
+      "query": "Self-Contained Drinking Water Coolers",
+      "expected": "IS 1475 (PART 1)",
+      "got": "IS 10500",
+      "got_title": "Drinking water",
+      "in_allied": false
+    },
+    {
+      "query": "Extenders for Use in Synthetic Resin Adhesives for Plywood- Code of Practice",
+      "expected": "IS 1508",
+      "got": "IS 303",
+      "got_title": "Plywood for General Purposes -",
+      "in_allied": false
+    },
+    {
+      "query": "Digital Set Top Box for Direct-to-Home Services",
+      "expected": "IS 15377",
+      "got": "IS 15954",
+      "got_title": "Digital set top box for MPEG - 4 DTH services \u2013 Specification",
+      "in_allied": false
+    },
+    {
+      "query": "Aluminium and Aluminium Alloy Bare Foil for Food Packaging",
+      "expected": "IS 15392",
+      "got": "IS 16011",
+      "got_title": "Aluminium and Aluminium Alloy Foil for Pharmaceutical Packaging - Specification",
+      "in_allied": false
+    },
+    {
+      "query": "Test Sieves - Technical requirements and testing - test sieves of electroformed sheets conforming to Indian Standards",
+      "expected": "IS 15555",
+      "got": "IS 2405 (PART 2)",
+      "got_title": "Part 2 : 2023: Industrial Sieves Specification - Part 2 Wire Sieves",
+      "in_allied": false
+    },
+    {
+      "query": "Automotive vehicles - Windscreen wiping system for 4 wheelers other than M1 category of vehicles - Requirements",
+      "expected": "IS 15802",
+      "got": "IS 16325",
+      "got_title": "Automotive Vehicles \"\u2022 Windscreen Wiping System For 3 Wheeler Vehicles \"\u2022 Specification",
+      "in_allied": false
+    },
+    {
+      "query": "Procurement and supply of safety of lamp controlgear",
+      "expected": "IS 15885 (PART 1)",
+      "got": "IS 16102 (PART 1)",
+      "got_title": "Self - Ballasted LED Lamps for General Lighting Services, Part 1: Safety Requirements",
+      "in_allied": true
+    },
+    {
+      "query": "Procurement and supply of installation of gas based instantaneous water heater - code of practice",
+      "expected": "IS 16093",
+      "got": "IS 2082",
+      "got_title": "Stationary Storage Type Electric Water Heaters- Specification (Fifth Revision)",
+      "in_allied": false
+    }
+  ]
+}

@@ -86,26 +86,35 @@ TIER2_NORM_FALLBACKS = {
     ],
     "ETD": [  # Electrotechnical
         {"is_number": "IS 302 (Part 1)", "relation_type": "TEST_METHOD", "relation_label": "Electrical Safety Test", "why": "Mandatory general electrical safety and insulation test."},
-        {"is_number": "IS 10810", "relation_type": "TEST_METHOD", "relation_label": "Conductor & Cable Testing", "why": "Methods of test for cables, insulation resistance, and spark testing."}
+        {"is_number": "IS 10810", "relation_type": "TEST_METHOD", "relation_label": "Conductor & Cable Testing", "why": "Methods of test for cables, insulation resistance, and spark testing."},
+        {"is_number": "IS 732", "relation_type": "INSTALLATION_CODE", "relation_label": "Electrical Wiring Code", "why": "Code of practice for electrical wiring installations."}
     ],
     "LITD": [  # Electronics & IT
         {"is_number": "IS 13252 (Part 1)", "relation_type": "NORMATIVE_REFERENCE", "relation_label": "General Safety Requirements", "why": "Mandatory electrical shock and energy hazard safety for IT equipment."},
-        {"is_number": "IS 16046 (Part 2)", "relation_type": "TEST_METHOD", "relation_label": "Battery Safety Test", "why": "Mandatory safety test for secondary lithium cells and portable battery packs."}
+        {"is_number": "IS 16046 (Part 2)", "relation_type": "TEST_METHOD", "relation_label": "Battery Safety Test", "why": "Mandatory safety test for secondary lithium cells and portable battery packs."},
+        {"is_number": "IS 616", "relation_type": "SAFETY_STANDARD", "relation_label": "Audio/Video Safety", "why": "Safety requirements for audio, video and display apparatus."}
     ],
     "CHD": [  # Chemicals, Polymers, Fire Safety
         {"is_number": "IS 12235", "relation_type": "TEST_METHOD", "relation_label": "Hydrostatic Pressure Test", "why": "Mandatory hydrostatic pressure and dimensions test for thermoplastic pipes."},
         {"is_number": "IS 4308", "relation_type": "TEST_METHOD", "relation_label": "Extinguisher Powder Test", "why": "Mandatory chemical purity and fire-extinguishing efficiency test."},
         {"is_number": "IS 2190", "relation_type": "INSTALLATION_CODE", "relation_label": "Fire Safety Code of Practice", "why": "Selection, installation and maintenance of first-aid fire extinguishers."}
     ],
-    "MTD": [  # Metallurgical Engineering, Precious Metals & Hallmarking
-        {"is_number": "IS 1418", "relation_type": "TEST_METHOD", "relation_label": "Fire Assay Gold Testing", "why": "Mandatory fire assay (cupellation) method for gold fineness verification."},
-        {"is_number": "IS 16757", "relation_type": "TEST_METHOD", "relation_label": "XRF Assay Testing", "why": "Non-destructive X-ray fluorescence spectrometry for precious metals."},
-        {"is_number": "IS 2270", "relation_type": "TERMINOLOGY_STANDARD", "relation_label": "Precious Metals Glossary", "why": "Standard terms and definitions relating to precious metals and hallmarking."},
-        {"is_number": "IS 15820", "relation_type": "INSTALLATION_CODE", "relation_label": "Assaying Centre Competence", "why": "General requirements for competence of Assaying & Hallmarking Centres."}
+    "MTD": [  # Metallurgical Engineering & Structural Metals
+        {"is_number": "IS 1608 (Part 1)", "relation_type": "TEST_METHOD", "relation_label": "Tensile Testing", "why": "Mandatory mechanical tensile test for metallic materials and alloys."},
+        {"is_number": "IS 1500", "relation_type": "TEST_METHOD", "relation_label": "Hardness Testing", "why": "Brinell hardness testing for metals and manufactured structural components."},
+        {"is_number": "IS 1599", "relation_type": "TEST_METHOD", "relation_label": "Bend Testing", "why": "Metallic materials bend and ductility testing."},
+        {"is_number": "IS 2062", "relation_type": "NORMATIVE_REFERENCE", "relation_label": "Structural Steel", "why": "Primary structural steel specification for fabricated engineering members."}
     ],
-    "MED": [  # Mechanical Engineering & Equipment
-        {"is_number": "IS 2825", "relation_type": "SAFETY_STANDARD", "relation_label": "Pressure Vessel Safety Code", "why": "Safety code for unfired pressure vessels and relief systems."},
-        {"is_number": "IS 1800", "relation_type": "TERMINOLOGY_STANDARD", "relation_label": "Iron and Steel Terminology", "why": "Standard glossary of terms relating to iron and steel products."}
+    "MED": [  # Mechanical Engineering, Cranes & Material Handling
+        {"is_number": "IS 807", "relation_type": "DESIGN_CODE", "relation_label": "Crane Structural Design Code", "why": "Mandatory structural portion design, manufacture, erection and testing for cranes and hoists."},
+        {"is_number": "IS 13367 (Part 1)", "relation_type": "SAFETY_STANDARD", "relation_label": "Safe Use of Cranes", "why": "Mandatory operational safety, inspection, and maintenance code of practice for cranes."},
+        {"is_number": "IS 2266", "relation_type": "RAW_MATERIAL_SPEC", "relation_label": "Steel Wire Ropes for Cranes", "why": "Specification for steel wire ropes used in cranes, hoists and material handling."},
+        {"is_number": "IS 3815", "relation_type": "SAFETY_STANDARD", "relation_label": "Crane Point Hooks with Shank", "why": "Specification for forged point hooks with shank for cranes and lifting equipment."},
+        {"is_number": "IS 2825", "relation_type": "SAFETY_STANDARD", "relation_label": "Pressure Vessel Safety Code", "why": "Safety code for unfired pressure vessels and relief systems."}
+    ],
+    "TED": [  # Transport Engineering & Mobile Equipment
+        {"is_number": "IS 4573", "relation_type": "PRODUCT_SPECIFICATION", "relation_label": "Mobile Cranes Specification", "why": "Technical requirements and performance tests for power-driven mobile cranes."},
+        {"is_number": "IS 13367 (Part 1)", "relation_type": "SAFETY_STANDARD", "relation_label": "Safe Use of Mobile Cranes", "why": "Code of practice for safe operation and load testing of mobile cranes."}
     ]
 }
 
@@ -190,7 +199,7 @@ class TriRetrievalLayer:
         logger.info(f"Tri-Retrieval Layer ready with {len(self.standards_by_num)} standards, {len(self.crs_products)} CRS products, {len(self.normative_ref_graph)} normative graph nodes.")
 
     def _build_vector_index(self):
-        """Constructs a BM25 inverted index with morphological stemming and multi-field representations."""
+        """Constructs a BM25 inverted index with title-weighted representations and morphological stemming."""
         self.doc_lengths: Dict[int, int] = {}
         self.inverted_index: Dict[str, List[Tuple[int, float]]] = defaultdict(list)
         self.total_docs = len(self.master_standards)
@@ -199,13 +208,10 @@ class TriRetrievalLayer:
         doc_tokens_list = []
 
         for idx, std in enumerate(self.master_standards):
-            text = (
-                f"{std.get('is_number', '')} {std.get('title', '')} {std.get('full_title', '')} "
-                f"{std.get('aspect', '')} {std.get('clause_data', {}).get('clause_1_scope', '')} "
-                f"{' '.join(std.get('ics_codes', []))} {std.get('technical_committee', {}).get('division_code', '')} "
-                f"{' '.join(std.get('supersedes', []))}"
-            )
-            tokens = self._tokenize(text)
+            title_text = f"{std.get('is_number', '')} {std.get('title', '')} {std.get('full_title', '')}"
+            other_text = f"{std.get('aspect', '')} {std.get('clause_data', {}).get('clause_1_scope', '')} {' '.join(std.get('ics_codes', []))} {std.get('technical_committee', {}).get('division_code', '')} {' '.join(std.get('supersedes', []))}"
+            # 3x weight on title tokens vs scope body
+            tokens = self._tokenize(title_text) * 3 + self._tokenize(other_text)
             self.doc_lengths[idx] = len(tokens)
             doc_tokens_list.append(tokens)
             for t in set(tokens):
@@ -280,8 +286,8 @@ class TriRetrievalLayer:
         return tokens
 
     # --- Retrieval 1: Entity-Weighted Vector / Semantic Search ---
-    def retrieve_vector_candidates(self, query_text: str, product_keywords: Optional[List[str]] = None, top_k: int = 15) -> List[Tuple[Dict[str, Any], float]]:
-        """Dense semantic BM25 candidate retrieval with 3x entity keyword weighting and fallback substring match."""
+    def retrieve_vector_candidates(self, query_text: str, product_keywords: Optional[List[str]] = None, top_k: int = 30) -> List[Tuple[Dict[str, Any], float]]:
+        """Dense semantic BM25 candidate retrieval with title phrase overlap weighting and fallback substring match."""
         tokens = self._tokenize(query_text)
         prod_tokens = set()
         if product_keywords:
@@ -295,9 +301,22 @@ class TriRetrievalLayer:
             for idx, score in self.inverted_index.get(t, []):
                 doc_scores[idx] += (score * multiplier)
 
-        if not doc_scores:
+        # Title word overlap and phrase boost
+        q_clean = re.sub(r"\b(procurement|supply|purchase|tender|conforming|to|under|indian|standards?)\b", " ", query_text, flags=re.IGNORECASE).strip()
+        q_words = [w.lower() for w in re.findall(r'[a-zA-Z0-9]+', q_clean) if len(w) >= 3]
+
+        if doc_scores and q_words:
+            for idx in list(doc_scores.keys()):
+                std = self.master_standards[idx]
+                t_lower = (std.get("title", "") + " " + std.get("is_number", "")).lower()
+                matches = sum(1 for w in q_words if w in t_lower)
+                if matches == len(q_words) and len(q_words) >= 2:
+                    doc_scores[idx] *= 2.5
+                elif matches >= 2:
+                    doc_scores[idx] *= (1.0 + (matches / len(q_words)))
+
+        if not doc_scores and q_words:
             # Substring scan across 22,011 titles if token index had 0 hits
-            q_words = [w.lower() for w in re.findall(r'[a-zA-Z0-9]+', query_text) if len(w) >= 3]
             for idx, std in enumerate(self.master_standards):
                 t_lower = (std.get("title", "") + " " + std.get("is_number", "")).lower()
                 matches = sum(1 for w in q_words if w in t_lower)
@@ -597,7 +616,25 @@ class TriRetrievalLayer:
         # 4. Tier 2: Domain matrix fallback if fewer than 2 allied standards or fewer than 3 edges
         if len(allied_nodes) < 2 or len(graph_edges) < 3:
             std_obj = self.standards_by_num.get(norm_key, {})
+            title_lower = (std_obj.get("title", "") + " " + std_obj.get("full_title", "")).lower()
             div = std_obj.get("technical_committee", {}).get("division_code", "CED")
+            
+            # Semantic Domain Inference over noisy division metadata
+            if any(w in title_lower for w in ["crane", "gantry", "hoist", "lifting", "wire rope", "hook", "pressure vessel"]):
+                div = "MED"
+            elif any(w in title_lower for w in ["mobile crane", "truck", "automobile", "vehicle", "tractor"]):
+                div = "TED"
+            elif any(w in title_lower for w in ["audio", "video", "television", "display", "computer", "laptop", "cctv", "secondary cell", "battery", "information technology"]):
+                div = "LITD"
+            elif any(w in title_lower for w in ["cable", "wire", "conductor", "transformer", "switch", "socket", "electrical appliance", "ceiling fan", "water heater", "lamp", "lighting"]):
+                div = "ETD"
+            elif any(w in title_lower for w in ["pipe", "polymer", "polyethylene", "pvc", "fire extinguisher", "chemical", "plastic"]):
+                div = "CHD"
+            elif any(w in title_lower for w in ["gold", "silver", "hallmark", "precious metal", "structural steel", "tensile", "hardness"]):
+                div = "MTD"
+            elif any(w in title_lower for w in ["cement", "concrete", "rebar", "tmt", "aggregate", "sand", "brick", "masonry"]):
+                div = "CED"
+
             fallbacks = TIER2_NORM_FALLBACKS.get(div, TIER2_NORM_FALLBACKS["CED"])
             
             for item in fallbacks:
@@ -643,6 +680,82 @@ class TriRetrievalLayer:
         q_norm = query_text.strip().lower()
 
         # 1. Product & Acronym Direct High-Confidence Mappings (0.99 priority)
+        # --- Televisions, Displays & Audio-Visual ---
+        if re.search(r"\b(televisions?|smart\s*tvs?|led\s*tvs?|lcd\s*tvs?|oled\s*tvs?|plasma\s*tvs?|color\s*tvs?|colour\s*tvs?|tvs?|दूरदर्शन|टेलीविजन|டிவி)\b", query_text, re.IGNORECASE):
+            if re.search(r"\b(satellite|broadcast|digital\s*receiver|set\s*top\s*box)\b", query_text, re.IGNORECASE):
+                if "IS 18112" in self.standards_by_num:
+                    results.append((self.standards_by_num["IS 18112"], 0.99, "PRODUCT_GRADE_MATCH (IS 18112 Digital Television Receiver)"))
+            elif "IS 616" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 616"], 0.99, "CRS_ELECTRONIC_MATCH (IS 616 Audio, Video and Television Apparatus Safety Requirements)"))
+            elif "IS 18112" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 18112"], 0.98, "PRODUCT_GRADE_MATCH (IS 18112 Television Receiver)"))
+            elif "IS 10662" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 10662"], 0.97, "PRODUCT_GRADE_MATCH (IS 10662 Colour Television)"))
+
+        # --- Household & Electrical Appliances ---
+        if re.search(r"\b(refrigerators?|fridges?|deep\s*freezers?|रेफ्रिजरेटर|फ्रिज)\b", query_text, re.IGNORECASE):
+            if "IS 17550 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 17550 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 17550 Refrigerating Appliances)"))
+            elif "IS 302 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 302 (PART 1)"], 0.98, "PRODUCT_GRADE_MATCH (IS 302 Electrical Appliances Safety)"))
+
+        if re.search(r"\b(air\s*conditioners?|acs?|split\s*acs?|window\s*acs?|inverter\s*acs?|hvac|वातानुकूलक|एसी)\b", query_text, re.IGNORECASE):
+            if re.search(r"\b(split)\b", query_text, re.IGNORECASE) and "IS 1391 (PART 2)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 1391 (PART 2)"], 0.99, "PRODUCT_GRADE_MATCH (IS 1391 Part 2 Split Air Conditioners)"))
+            elif "IS 1391 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 1391 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 1391 Room Air Conditioners)"))
+
+        if re.search(r"\b(fan\s*regulators?|electronic\s*fan\s*regulators?)\b", query_text, re.IGNORECASE):
+            if "IS 11037" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 11037"], 0.99, "PRODUCT_GRADE_MATCH (IS 11037 Electronic Fan Regulators)"))
+        elif re.search(r"\b(ceiling\s*fans?|electric\s*fans?|table\s*fans?|exhaust\s*fans?|fans?|पंखा)\b", query_text, re.IGNORECASE) and not re.search(r"\b(motorcycle|vehicle|car|regulator)\b", query_text, re.IGNORECASE):
+            if "IS 374" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 374"], 0.99, "PRODUCT_GRADE_MATCH (IS 374 Electric Ceiling Fans)"))
+
+        if re.search(r"\b(geysers?|water\s*heaters?|electric\s*geysers?|storage\s*water\s*heaters?|गीज़र)\b", query_text, re.IGNORECASE):
+            if "IS 2082" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 2082"], 0.99, "PRODUCT_GRADE_MATCH (IS 2082 Storage Electric Water Heaters)"))
+
+        if re.search(r"\b(water\s*purifiers?|ro\s*water\s*purifiers?|ro\s*purifiers?|drinking\s*water\s*systems?)\b", query_text, re.IGNORECASE):
+            if "IS 16240" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 16240"], 0.99, "PRODUCT_GRADE_MATCH (IS 16240 Point-of-Use RO Water Purifier)"))
+            elif "IS 10500" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 10500"], 0.98, "PRODUCT_GRADE_MATCH (IS 10500 Drinking Water)"))
+
+        if re.search(r"\b(drinking\s*water|potable\s*water|water\s*quality|पेयजल)\b", query_text, re.IGNORECASE) and not re.search(r"\b(pipe|pipes|tube|tubes|fitting|fittings|purifier|ro)\b", query_text, re.IGNORECASE):
+            if "IS 10500" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 10500"], 0.99, "PRODUCT_GRADE_MATCH (IS 10500 Drinking Water Specification)"))
+
+        if re.search(r"\b(mobile\s*phones?|smartphones?|cell\s*phones?|हैंडसेट|मोबाइल)\b", query_text, re.IGNORECASE):
+            if "IS 16333 (PART 3)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 16333 (PART 3)"], 0.99, "CRS_ELECTRONIC_MATCH (IS 16333 Mobile Handsets Language Support)"))
+            elif "IS 13252 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 13252 (PART 1)"], 0.98, "CRS_ELECTRONIC_MATCH (IS 13252 IT Equipment Safety)"))
+
+        # --- Testing Methods Specialization ---
+        if re.search(r"\b(methods?\s*of\s*(?:sampling\s*and\s*)?tests?\s*for\s*paints?|paints?\s*(?:and\s*)?varnish(?:es)?\s*test)\b", query_text, re.IGNORECASE):
+            if "IS 101 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 101 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 101 Paints and Varnishes Test Methods)"))
+            elif "IS 101" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 101"], 0.99, "PRODUCT_GRADE_MATCH (IS 101 Paints and Varnishes Test Methods)"))
+
+        if re.search(r"\b(methods?\s*of\s*tests?\s*for\s*cables?|cable\s*testing)\b", query_text, re.IGNORECASE):
+            if "IS 10810 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 10810 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 10810 Cable Test Methods)"))
+            elif "IS 10810" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 10810"], 0.99, "PRODUCT_GRADE_MATCH (IS 10810 Cable Test Methods)"))
+
+        # --- Cranes, Hoists & Material Handling ---
+        if re.search(r"\b(cranes?|eot\s*cranes?|gantry\s*cranes?|overhead\s*travelling\s*cranes?|mobile\s*cranes?|tower\s*cranes?|jib\s*cranes?|hoists?|क्रेन)\b", query_text, re.IGNORECASE) and not re.search(r"\b(weighing|scale)\b", query_text, re.IGNORECASE):
+            if re.search(r"\b(mobile)\b", query_text, re.IGNORECASE) and "IS 4573" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 4573"], 0.99, "PRODUCT_GRADE_MATCH (IS 4573 Power Driven Mobile Cranes)"))
+            elif re.search(r"\b(safe|safety|operation|inspection|maintenance)\b", query_text, re.IGNORECASE) and "IS 13367 (PART 1)" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 13367 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 13367 Safe Use of Cranes)"))
+            elif "IS 3177" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 3177"], 0.99, "PRODUCT_GRADE_MATCH (IS 3177 Electric Overhead Travelling and Gantry Cranes)"))
+            elif "IS 807" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 807"], 0.98, "PRODUCT_GRADE_MATCH (IS 807 Crane Structural Design Code)"))
+
         # --- Electronics & Power ---
         if re.search(r"\b(chargers?|charging|mobile\s*chargers?|phone\s*chargers?|laptop\s*chargers?|fast\s*chargers?|power\s*adapters?|power\s*adaptors?|smps|power\s*supply\s*units?|ac\s*dc\s*adapters?|usb\s*chargers?|wall\s*chargers?)\b", query_text, re.IGNORECASE):
             if re.search(r"\b(ev|electric\s*vehicle|car|bus|station|conductive)\b", query_text, re.IGNORECASE):
@@ -675,7 +788,7 @@ class TriRetrievalLayer:
             if "IS 14286" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 14286"], 0.99, "PRODUCT_GRADE_MATCH (IS 14286 Solar PV Modules)"))
 
-        if re.search(r"\b(transformers?|distribution\s*transformers?|power\s*transformers?)\b", query_text, re.IGNORECASE):
+        if re.search(r"\b(transformers?|distribution\s*transformers?|power\s*transformers?)\b", query_text, re.IGNORECASE) and not re.search(r"\b(television|picture\s*tube|crt)\b", query_text, re.IGNORECASE):
             if "IS 1180 (PART 1)" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 1180 (PART 1)"], 0.99, "PRODUCT_GRADE_MATCH (IS 1180 Part 1 Distribution Transformers)"))
             elif "IS 2026 (PART 1)" in self.standards_by_num:
@@ -720,7 +833,10 @@ class TriRetrievalLayer:
             if "IS 694" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 694"], 0.99, "PRODUCT_GRADE_MATCH (IS 694)"))
 
-        if re.search(r"\b(switches|switch\s*gear|modular\s*switches?|plugs?|sockets?|plug\s*and\s*socket)\b", query_text, re.IGNORECASE):
+        if re.search(r"\b(spark\s*plugs?)\b", query_text, re.IGNORECASE):
+            if "IS 1062" in self.standards_by_num:
+                results.append((self.standards_by_num["IS 1062"], 0.99, "PRODUCT_GRADE_MATCH (IS 1062 Spark Plugs)"))
+        elif re.search(r"\b(switches|switch\s*gear|modular\s*switches?|(?:electrical|wall|3\s*pin|2\s*pin)?\s*plugs?|sockets?|plug\s*and\s*socket)\b", query_text, re.IGNORECASE) and not re.search(r"\bspark\b", query_text, re.IGNORECASE):
             if "IS 3854" in self.standards_by_num:
                 results.append((self.standards_by_num["IS 3854"], 0.99, "PRODUCT_GRADE_MATCH (IS 3854)"))
             elif "IS 1293" in self.standards_by_num:
@@ -770,21 +886,24 @@ class TriRetrievalLayer:
 
         # 2. Check CRS Electronics Catalog for Specific IT Terms (Laptops, Tablets, etc.)
         crs_stopwords = {
-            "power", "video", "electric", "audio", "system", "cables", "cable", "supply", "switch",
-            "lights", "meters", "player", "output", "device", "digital", "analog", "control", "module",
-            "input", "built", "above", "below", "smart", "general", "similar", "apparatus", "screen",
-            "under", "voltage", "electronic", "automatic", "portable", "optical", "mains", "operated"
+            "equipment", "equipments", "machine", "machines", "tool", "tools", "unit", "units", "vehicle", "vehicles",
+            "product", "products", "material", "materials", "power", "video", "electric", "audio", "system", "systems",
+            "cables", "cable", "supply", "supplies", "switch", "switches", "lights", "light", "meters", "meter", "player",
+            "players", "output", "device", "devices", "digital", "analog", "control", "module", "modules", "input", "built",
+            "above", "below", "smart", "general", "similar", "apparatus", "screen", "screens", "under", "voltage", "electronic",
+            "electronics", "automatic", "portable", "optical", "mains", "operated", "safety", "standard", "standards",
+            "specification", "requirements", "articles", "article", "accessories", "accessory", "testing", "sampling", "method", "methods"
         }
         for crs in self.crs_products:
             prod_name = crs.get("product_name", "").lower()
-            if prod_name in q_norm:
+            if re.search(r"\b" + re.escape(prod_name) + r"\b", q_norm):
                 target_std = crs.get("applicable_is_standard", "")
                 target_key = normalize_is_key(target_std)
                 if target_key in self.standards_by_num:
                     results.append((self.standards_by_num[target_key], 0.99, f"CRS_ELECTRONIC_MATCH ({crs.get('product_name')})"))
                     break
-            key_terms = [t for t in re.split(r"[\s/,()]+", prod_name) if len(t) > 4 and t not in crs_stopwords]
-            if any(t in q_norm for t in key_terms):
+            key_terms = [t for t in re.split(r"[\s/,()]+", prod_name) if len(t) > 3 and t not in crs_stopwords]
+            if len(key_terms) >= 2 and all(re.search(r"\b" + re.escape(t) + r"\b", q_norm) for t in key_terms):
                 target_std = crs.get("applicable_is_standard", "")
                 target_key = normalize_is_key(target_std)
                 if target_key in self.standards_by_num:
@@ -807,20 +926,43 @@ class TriRetrievalLayer:
                         matched_synonym = True
             
             if not matched_synonym:
-                # Substring scanning with positional precedence (earliest in sentence is primary)
+                # Substring scanning for Indic terms or multi-word domain phrases
+                single_english_generic = {
+                    "concrete", "tile", "glass", "pipe", "fitting", "valve", "cable", "wire", "safety", 
+                    "pump", "bearing", "gear", "bolt", "nut", "washer", "screw", "fastener", "thread", 
+                    "paint", "primer", "varnish", "lubricant", "fuel", "yarn", "sprayer", "seed", 
+                    "fertilizer", "gloves", "mask", "measurement", "computer", "laptop", "printer", 
+                    "network", "data", "software", "hardware", "supply", "material", "contract", 
+                    "testing", "sample", "sampling", "textile", "textiles", "steel", "iron", "aluminium",
+                    "roof", "foundation", "wall", "brick", "waterproofing", "corrosion", "metallurgy",
+                    "alloy", "casting", "forging", "welding", "viscosity", "weaving", "fibre", "dyeing",
+                    "uniform", "calibration", "precision", "deviation", "accuracy"
+                }
                 for syn_k, entry in self.synonyms.items():
-                    if len(syn_k) >= 2 and syn_k in q_norm:
-                        pos = q_norm.find(syn_k)
-                        target_is = entry.get("is_ref") if isinstance(entry, dict) else str(entry)
-                        if target_is:
-                            target_key = normalize_is_key(target_is.split("/")[0].strip())
-                            if target_key in self.standards_by_num:
-                                found_matches.append((pos, -len(syn_k), target_key, syn_k))
+                    syn_k_norm = syn_k.strip().lower()
+                    if len(syn_k_norm) < 2:
+                        continue
+                    
+                    is_indic = any(ord(c) > 127 for c in syn_k_norm)
+                    words = syn_k_norm.split()
+                    is_multi_word = len(words) >= 2
+                    is_single_generic = syn_k_norm in single_english_generic
+                    
+                    # Match condition: Indic text OR multi-word phrase OR specific non-generic term
+                    if is_indic or (is_multi_word and not is_single_generic):
+                        match = re.search(r"\b" + re.escape(syn_k_norm) + r"\b", q_norm)
+                        if match:
+                            pos = match.start()
+                            target_is = entry.get("is_ref") if isinstance(entry, dict) else str(entry)
+                            if target_is:
+                                target_key = normalize_is_key(target_is.split("/")[0].strip())
+                                if target_key in self.standards_by_num:
+                                    found_matches.append((pos, -len(syn_k_norm), target_key, syn_k_norm))
                 
                 if found_matches:
                     found_matches.sort()
-                    for pos, neg_len, target_key, syn_k in found_matches:
-                        results.append((self.standards_by_num[target_key], 0.98, f"SYNONYM_SUBSTRING_MATCH ({syn_k})"))
+                    for pos, neg_len, target_key, syn_k_norm in found_matches:
+                        results.append((self.standards_by_num[target_key], 0.98, f"SYNONYM_PHRASE_MATCH ({syn_k_norm})"))
                         matched_synonym = True
                         break
 

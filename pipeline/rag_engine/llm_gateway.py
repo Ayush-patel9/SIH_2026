@@ -378,16 +378,19 @@ class LLMGateway:
         }
 
     def _raw_generate_json(self, prompt: str, schema: Optional[Type[T]] = None, model_type: str = "flash") -> Dict[str, Any]:
-        """Internal low-level runner across available keys and models."""
+        """Internal low-level runner across available keys and models with instant circuit breaker."""
+        import time
         if not self.is_available():
             raise RuntimeError("LLM Gateway is in offline mode.")
 
+        now = time.time()
+        if hasattr(self, "_rate_limited_until") and now < self._rate_limited_until:
+            raise RuntimeError(f"LLM Gateway circuit breaker active (cooling down for {int(self._rate_limited_until - now)}s).")
+
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
         fallback_models = [primary_model, "gemini-3.8-flash", "gemini-flash-latest"]
-        # Deduplicate while preserving order
         candidate_models = list(dict.fromkeys(fallback_models))[:2]
         
-        attempts = max(len(self.keys), 1)
         last_error = None
 
         for model_name in candidate_models:
@@ -417,9 +420,10 @@ class LLMGateway:
 
                 except Exception as e:
                     last_error = e
-                    # If quota exhausted (429), break immediately to avoid long blocking delays
+                    # If quota exhausted (429), trip the 30s circuit breaker immediately
                     if "429" in str(e) or "quota" in str(e).lower():
-                        break
+                        self._rate_limited_until = time.time() + 30
+                        raise RuntimeError(f"Gemini API quota reached. Tripping instant fallback circuit breaker for 30s: {e}")
                     continue
 
         raise RuntimeError(f"All LLM keys and models exhausted. Last error: {last_error}")

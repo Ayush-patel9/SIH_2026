@@ -18,9 +18,10 @@ IS_PATTERN = re.compile(r'\b(?:IS|SP|IS/ISO|IS/IEC)\s*(\d{2,5}(?:\s*\(Part\s*\d+
 
 
 def norm_is_num(is_str: str) -> str:
-    """Normalizes an Indian Standard citation to numeric core for grounding assertion."""
+    """Normalizes an Indian Standard citation to numeric/alphanumeric core for grounding assertion."""
     s = str(is_str).upper().strip()
     s = re.sub(r':\s*\d{4}', '', s)
+    s = re.sub(r'^(?:IS/IEC|IS/ISO|IEC|ISO|SP|IS)\s*', '', s)
     s = re.sub(r'[^A-Z0-9]', '', s)
     return s
 
