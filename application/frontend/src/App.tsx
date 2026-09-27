@@ -499,6 +499,25 @@ export default function App() {
               <kbd>⌘K</kbd>
             </button>
 
+            {/* BIS Authority AI Assistant Trigger */}
+            <button
+              type="button"
+              onClick={() => setIsAuthorityDrawerOpen(true)}
+              className="btn-secondary"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '6px 12px',
+                fontSize: '12px',
+                height: '32px',
+              }}
+              title="Open BIS Authority AI Assistant for GFR & CVC Defense"
+            >
+              <span>🤖</span>
+              <span>BIS Assistant</span>
+            </button>
+
             <LanguageSelector
               language={language}
               onChange={setLanguage}
@@ -725,6 +744,14 @@ export default function App() {
                       className="btn-secondary"
                     >
                       <span>⚖️ Compare Allied Standards</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setIsAuthorityDrawerOpen(true)}
+                      className="btn-secondary"
+                      style={{ background: 'var(--olive-leaf)', color: 'var(--olive-primary)', borderColor: 'rgba(54,69,47,0.25)' }}
+                    >
+                      <span>🤖 Ask BIS Authority AI</span>
                     </button>
                   </div>
 

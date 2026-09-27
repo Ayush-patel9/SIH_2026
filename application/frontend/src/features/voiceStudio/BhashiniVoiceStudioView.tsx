@@ -88,10 +88,31 @@ export const BhashiniVoiceStudioView: React.FC = () => {
 
   const handleToggleAudio = () => {
     if (isPlayingAudio) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
       setIsPlayingAudio(false);
     } else {
       setIsPlayingAudio(true);
-      setTimeout(() => setIsPlayingAudio(false), 4500);
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(selectedSample.clauseExcerpt);
+        const langMap: Record<string, string> = {
+          hi: 'hi-IN',
+          ta: 'ta-IN',
+          te: 'te-IN',
+          bn: 'bn-IN',
+          mr: 'mr-IN',
+          en: 'en-IN',
+        };
+        utterance.lang = langMap[selectedSample.langCode] || 'en-IN';
+        utterance.rate = 0.95;
+        utterance.onend = () => setIsPlayingAudio(false);
+        utterance.onerror = () => setIsPlayingAudio(false);
+        window.speechSynthesis.speak(utterance);
+      } else {
+        setTimeout(() => setIsPlayingAudio(false), 4500);
+      }
     }
   };
 
@@ -100,7 +121,37 @@ export const BhashiniVoiceStudioView: React.FC = () => {
       setIsRecording(false);
     } else {
       setIsRecording(true);
-      setTimeout(() => setIsRecording(false), 3000);
+      const SpeechRec = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      if (SpeechRec) {
+        try {
+          const rec = new SpeechRec();
+          const langMap: Record<string, string> = {
+            hi: 'hi-IN',
+            ta: 'ta-IN',
+            te: 'te-IN',
+            bn: 'bn-IN',
+            mr: 'mr-IN',
+            en: 'en-IN',
+          };
+          rec.lang = langMap[selectedSample.langCode] || 'en-IN';
+          rec.continuous = false;
+          rec.interimResults = false;
+          rec.onresult = (event: any) => {
+            const transcript = event.results?.[0]?.[0]?.transcript;
+            if (transcript) {
+              setSelectedSample((prev) => ({ ...prev, queryText: transcript }));
+            }
+            setIsRecording(false);
+          };
+          rec.onerror = () => setIsRecording(false);
+          rec.onend = () => setIsRecording(false);
+          rec.start();
+        } catch (err) {
+          setTimeout(() => setIsRecording(false), 3000);
+        }
+      } else {
+        setTimeout(() => setIsRecording(false), 3000);
+      }
     }
   };
 
