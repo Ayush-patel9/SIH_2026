@@ -13,6 +13,7 @@ import { IntegrationSandboxView } from './features/integrations';
 import { getAlerts, streamQueryOverSocket, connectAlertsSocket, type PipelineSocketEvent } from './api/standardsClient';
 import { useRole } from './store/roleStore';
 import { RoleSwitcher } from './components/RoleSwitcher';
+import { ProcurementOfficerPanel, AuditorPanel, VendorPanel } from './features/roles';
 import { LanguageSelector } from './components/LanguageSelector';
 import { LoadingShimmer } from './components/LoadingShimmer';
 import { DataSovereigntyModal } from './components/DataSovereigntyModal';
@@ -311,7 +312,7 @@ export default function App() {
   const [queryError, setQueryError] = useState<string | null>(null);
   const [isSocketLive, setIsSocketLive] = useState(false);
   const [currentStage, setCurrentStage] = useState<{ stage: number; name: string; detail: string } | null>(null);
-  const [activeTab, setActiveTab] = useState<'reasoning' | 'allied' | 'graph' | 'audit'>('reasoning');
+  const [activeTab, setActiveTab] = useState<'reasoning' | 'allied' | 'graph' | 'audit' | 'role_view'>('reasoning');
   const [copiedClause, setCopiedClause] = useState(false);
 
   useEffect(() => {
@@ -908,6 +909,19 @@ export default function App() {
                         >
                           Knowledge Graph Lineage
                         </button>
+                        <button
+                          type="button"
+                          className={`detail-tab-btn ${activeTab === 'role_view' ? 'active' : ''}`}
+                          onClick={() => setActiveTab('role_view')}
+                          style={{
+                            fontWeight: 600,
+                            borderColor: activeTab === 'role_view' ? 'var(--collapse-cobalt)' : undefined,
+                          }}
+                        >
+                          {role === 'AUDITOR' && '🛡️ Auditor Panel'}
+                          {role === 'VENDOR' && '🏭 Vendor Portal'}
+                          {(role === 'PROCUREMENT_OFFICER' || role === 'BIS_EXPERT' || role === 'PUBLIC_VIEWER') && '📋 Procurement Officer View'}
+                        </button>
                       </div>
 
                       {/* Tab Content 1: Reasoning Trail */}
@@ -975,6 +989,27 @@ export default function App() {
                       {activeTab === 'graph' && (
                         <div style={{ animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
                           <KnowledgeGraphViewer primaryStandard={primary?.is_number} />
+                        </div>
+                      )}
+
+                      {/* Tab Content 5: Role-Specific Workbench Panel */}
+                      {activeTab === 'role_view' && (
+                        <div style={{ animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
+                          {role === 'AUDITOR' && (
+                            <AuditorPanel
+                              data={activeData}
+                              onOpenCertificate={() => setActiveFeature('audit')}
+                            />
+                          )}
+                          {role === 'VENDOR' && (
+                            <VendorPanel data={activeData} />
+                          )}
+                          {(role === 'PROCUREMENT_OFFICER' || role === 'BIS_EXPERT' || role === 'PUBLIC_VIEWER') && (
+                            <ProcurementOfficerPanel
+                              data={activeData}
+                              onOpenNITGenerator={() => setActiveFeature('nitGenerator')}
+                            />
+                          )}
                         </div>
                       )}
                     </div>
