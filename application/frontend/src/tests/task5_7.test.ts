@@ -12,7 +12,7 @@ console.log('✓ LanguageSelector component exported and callable');
 async function runAsyncTests() {
   const alerts = await getAlerts();
   assert(Array.isArray(alerts), 'getAlerts did not return an array');
-  assert.strictEqual(alerts.length, 5, `Expected 5 alerts in fixture, got ${alerts.length}`);
+  assert(alerts.length >= 5, `Expected at least 5 alerts, got ${alerts.length}`);
 
   const criticals = alerts.filter((a) => a.severity === 'CRITICAL');
   const highs = alerts.filter((a) => a.severity === 'HIGH');

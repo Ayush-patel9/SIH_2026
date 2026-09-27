@@ -12,7 +12,7 @@ import { TenderUploadView } from './features/tenderUpload';
 import { IntegrationSandboxView } from './features/integrations';
 import { getAlerts, streamQueryOverSocket, connectAlertsSocket, type PipelineSocketEvent } from './api/standardsClient';
 import { useRole } from './store/roleStore';
-import { RoleSwitcher } from './components/RoleSwitcher';
+import { useSession } from './store/userStore';
 import { ProcurementOfficerPanel, AuditorPanel, VendorPanel } from './features/roles';
 import { LanguageSelector } from './components/LanguageSelector';
 import { LoadingShimmer } from './components/LoadingShimmer';
@@ -293,7 +293,12 @@ const FEATURE_TITLES: Record<FeatureKey, string> = {
   voiceStudio: 'Bhashini Voice & Audio Station',
 };
 
-export default function App() {
+interface AppProps {
+  onLogout?: () => void;
+}
+
+export default function App({ onLogout }: AppProps = {}) {
+  const { session, logout: performLogout } = useSession();
   const { role, mode, setRole, setMode } = useRole();
   const [language, setLanguage] = useState<SupportedLanguage>('en');
   const [alerts, setAlerts] = useState<AlertPayload[]>([]);
@@ -312,8 +317,23 @@ export default function App() {
   const [queryError, setQueryError] = useState<string | null>(null);
   const [isSocketLive, setIsSocketLive] = useState(false);
   const [currentStage, setCurrentStage] = useState<{ stage: number; name: string; detail: string } | null>(null);
-  const [activeTab, setActiveTab] = useState<'reasoning' | 'allied' | 'graph' | 'audit' | 'role_view'>('reasoning');
+  const [activeTab, setActiveTab] = useState<'reasoning' | 'allied' | 'graph' | 'audit' | 'role_view'>(() => {
+    if (role === 'AUDITOR') return 'audit';
+    if (role === 'VENDOR') return 'role_view';
+    return 'reasoning';
+  });
   const [copiedClause, setCopiedClause] = useState(false);
+
+  useEffect(() => {
+    if (role === 'AUDITOR') setActiveTab('audit');
+    else if (role === 'VENDOR') setActiveTab('role_view');
+    else setActiveTab('reasoning');
+  }, [role]);
+
+  const handleLogout = () => {
+    performLogout();
+    onLogout?.();
+  };
 
   useEffect(() => {
     getAlerts()
@@ -541,9 +561,53 @@ export default function App() {
 
             <NotificationBell alerts={alerts} onClick={() => setIsAlertDrawerOpen(true)} />
 
-            <div className="user-identity-badge">
-              <span className="user-identity-name">Ayush Patel</span>
-              <span className="user-identity-role">{role.replace('_', ' ')}</span>
+            <div
+              className="user-identity-badge"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '9px',
+                padding: '4px 10px 4px 8px',
+                borderRadius: '8px',
+                border: '1px solid var(--hairline)',
+                background: 'var(--surface-secondary)',
+              }}
+            >
+              <span style={{ fontSize: '15px' }}>
+                {role === 'AUDITOR' ? '🔍' : role === 'VENDOR' ? '🏭' : '👔'}
+              </span>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1.2 }}>
+                <span className="user-identity-name" style={{ fontSize: '12px', fontWeight: 700, color: 'var(--ink-primary)' }}>
+                  {session?.name || 'Guest User'}
+                </span>
+                <span className="user-identity-role" style={{ fontSize: '10px', color: 'var(--ink-muted)' }}>
+                  {session?.organization || (role.replace('_', ' ') + ' Workspace')}
+                </span>
+              </div>
+              {onLogout && (
+                <button
+                  type="button"
+                  onClick={handleLogout}
+                  style={{
+                    marginLeft: '4px',
+                    background: 'none',
+                    border: '1px solid rgba(220, 38, 38, 0.3)',
+                    backgroundColor: 'rgba(220, 38, 38, 0.06)',
+                    color: '#DC2626',
+                    borderRadius: '4px',
+                    padding: '2px 7px',
+                    fontSize: '10.5px',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease',
+                  }}
+                  title="Sign out of this session"
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(220, 38, 38, 0.15)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(220, 38, 38, 0.06)')}
+                >
+                  Sign Out
+                </button>
+              )}
             </div>
           </div>
         </header>
@@ -629,13 +693,48 @@ export default function App() {
                     })}
                   </div>
 
-                  {/* Role Switcher */}
-                  <RoleSwitcher
-                    role={role}
-                    mode={mode}
-                    onRoleChange={setRole}
-                    onModeChange={setMode}
-                  />
+                  {/* Active Role Workspace Badge */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        padding: '5px 12px',
+                        borderRadius: '20px',
+                        fontSize: '12px',
+                        fontWeight: 600,
+                        backgroundColor:
+                          role === 'AUDITOR'
+                            ? 'rgba(59, 130, 246, 0.1)'
+                            : role === 'VENDOR'
+                            ? 'rgba(245, 158, 11, 0.1)'
+                            : 'rgba(19, 136, 8, 0.1)',
+                        color:
+                          role === 'AUDITOR'
+                            ? '#1D4ED8'
+                            : role === 'VENDOR'
+                            ? '#B45309'
+                            : '#15803D',
+                        border: `1px solid ${
+                          role === 'AUDITOR'
+                            ? 'rgba(59, 130, 246, 0.3)'
+                            : role === 'VENDOR'
+                            ? 'rgba(245, 158, 11, 0.3)'
+                            : 'rgba(19, 136, 8, 0.3)'
+                        }`,
+                      }}
+                    >
+                      <span>{role === 'AUDITOR' ? '🔍' : role === 'VENDOR' ? '🏭' : '👔'}</span>
+                      <span>
+                        {role === 'AUDITOR'
+                          ? 'CAG Auditor Mode'
+                          : role === 'VENDOR'
+                          ? 'Vendor Gateway'
+                          : 'Procurement Officer'}
+                      </span>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Stage Progression Status */}

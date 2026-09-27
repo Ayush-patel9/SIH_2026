@@ -1,7 +1,18 @@
 import { useState, useCallback, useEffect } from 'react';
 import type { UserRole, QueryMode } from '../types';
 
-let _role: UserRole = 'PROCUREMENT_OFFICER';
+function getInitialRole(): UserRole {
+  try {
+    const raw = localStorage.getItem('manakai_user_session');
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed?.role) return parsed.role;
+    }
+  } catch {}
+  return 'PROCUREMENT_OFFICER';
+}
+
+let _role: UserRole = getInitialRole();
 let _mode: QueryMode = 'recommend';
 const _listeners = new Set<() => void>();
 

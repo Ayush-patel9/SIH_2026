@@ -4,6 +4,7 @@
  */
 
 import type { StandardsResponse } from '../../types';
+import { getSession } from '../../store/userStore';
 
 export interface StoredAuditRecord {
   id: string;
@@ -11,13 +12,17 @@ export interface StoredAuditRecord {
   savedAt: number;
 }
 
-const STORAGE_PREFIX = 'manakai_audit_';
+function getStoragePrefix(): string {
+  const session = getSession();
+  const userId = session?.id || 'anon';
+  return `manakai_${userId}_audit_`;
+}
 
 export const AuditStore = {
   save(response: StandardsResponse): void {
     try {
       const queryId = response.meta?.query_id || `query-${Date.now()}`;
-      const key = `${STORAGE_PREFIX}${queryId}`;
+      const key = `${getStoragePrefix()}${queryId}`;
       const entry: StoredAuditRecord = {
         id: queryId,
         response,
@@ -36,9 +41,10 @@ export const AuditStore = {
   getAll(): StoredAuditRecord[] {
     try {
       const records: StoredAuditRecord[] = [];
+      const prefix = getStoragePrefix();
       for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-        if (key && key.startsWith(STORAGE_PREFIX)) {
+        if (key && key.startsWith(prefix)) {
           const item = localStorage.getItem(key);
           if (item) {
             try {

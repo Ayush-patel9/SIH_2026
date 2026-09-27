@@ -1,5 +1,7 @@
 import React from 'react';
 import type { FeatureKey } from './MobileBottomNav';
+import { useSession } from '../store/userStore';
+import type { UserRole } from '../types';
 
 interface SidebarProps {
   activeFeature: FeatureKey;
@@ -22,6 +24,20 @@ interface NavSection {
   items: NavItem[];
 }
 
+function isItemAllowedForRole(key: FeatureKey, role: UserRole): boolean {
+  if (role === 'VENDOR') {
+    const disallowed: FeatureKey[] = ['nitGenerator', 'cagAudit', 'integrations', 'dashboard', 'feedback', 'mcp'];
+    return !disallowed.includes(key);
+  }
+  if (role === 'AUDITOR') {
+    const disallowed: FeatureKey[] = ['nitGenerator', 'integrations'];
+    return !disallowed.includes(key);
+  }
+  // PROCUREMENT_OFFICER or BIS_EXPERT
+  const disallowed: FeatureKey[] = ['cagAudit'];
+  return !disallowed.includes(key);
+}
+
 export const Sidebar: React.FC<SidebarProps> = ({
   activeFeature,
   onSelectFeature,
@@ -29,6 +45,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   collapsed,
   onToggleCollapse,
 }) => {
+  const { session } = useSession();
+  const role: UserRole = session?.role || 'PROCUREMENT_OFFICER';
   const sections: NavSection[] = [
     {
       title: 'STANDARDS & INTELLIGENCE',
@@ -267,17 +285,88 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </div>
 
         {/* Navigation Sections */}
+        {!collapsed && session && (
+          <div
+            style={{
+              margin: '10px 12px 4px',
+              padding: '8px 10px',
+              borderRadius: '8px',
+              background:
+                role === 'AUDITOR'
+                  ? 'rgba(59, 130, 246, 0.08)'
+                  : role === 'VENDOR'
+                  ? 'rgba(245, 158, 11, 0.08)'
+                  : 'rgba(19, 136, 8, 0.08)',
+              border: `1px solid ${
+                role === 'AUDITOR'
+                  ? 'rgba(59, 130, 246, 0.25)'
+                  : role === 'VENDOR'
+                  ? 'rgba(245, 158, 11, 0.25)'
+                  : 'rgba(19, 136, 8, 0.25)'
+              }`,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+            }}
+          >
+            <span style={{ fontSize: '15px' }}>
+              {role === 'AUDITOR' ? '🔍' : role === 'VENDOR' ? '🏭' : '👔'}
+            </span>
+            <div style={{ minWidth: 0, flex: 1 }}>
+              <div
+                style={{
+                  fontFamily: 'var(--font-data)',
+                  fontSize: '9.5px',
+                  fontWeight: 700,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  color:
+                    role === 'AUDITOR'
+                      ? '#1D4ED8'
+                      : role === 'VENDOR'
+                      ? '#B45309'
+                      : '#15803D',
+                }}
+              >
+                {role === 'AUDITOR'
+                  ? 'Auditor Workspace'
+                  : role === 'VENDOR'
+                  ? 'Vendor Portal'
+                  : 'Procurement Workspace'}
+              </div>
+              <div
+                style={{
+                  fontSize: '11px',
+                  fontWeight: 600,
+                  color: '#2E382A',
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                }}
+              >
+                {session.name}
+              </div>
+            </div>
+          </div>
+        )}
+
         <div
           style={{
-            padding: collapsed ? '12px 6px' : '14px 12px',
+            padding: collapsed ? '12px 6px' : '10px 12px',
             overflowY: 'auto',
-            maxHeight: 'calc(100vh - 170px)',
+            maxHeight: 'calc(100vh - 200px)',
             display: 'flex',
             flexDirection: 'column',
             gap: '16px',
           }}
         >
-          {sections.map((sec, sIdx) => (
+          {sections
+            .map((sec) => ({
+              ...sec,
+              items: sec.items.filter((item) => isItemAllowedForRole(item.key, role)),
+            }))
+            .filter((sec) => sec.items.length > 0)
+            .map((sec, sIdx) => (
             <div key={sIdx}>
               {!collapsed && (
                 <div

@@ -1,6 +1,11 @@
 import type { AlertPayload, CitationSeverity } from '../../types';
+import { getSession } from '../../store/userStore';
 
-const ALERT_STORE_KEY = 'manakAI:alerts:v1';
+function getAlertStoreKey(): string {
+  const session = getSession();
+  const userId = session?.id || 'default';
+  return `manakai_${userId}_alerts_v1`;
+}
 
 export type AlertWithRead = AlertPayload & {
   _read?: boolean;
@@ -162,7 +167,8 @@ export const AlertStore = {
 
   getAll(): AlertWithRead[] {
     try {
-      const stored = localStorage.getItem(ALERT_STORE_KEY);
+      const key = getAlertStoreKey();
+      const stored = localStorage.getItem(key);
       if (!stored) {
         this.save(MOCK_ALERTS);
         return MOCK_ALERTS;
@@ -179,7 +185,7 @@ export const AlertStore = {
 
   save(alerts: AlertWithRead[]): void {
     try {
-      localStorage.setItem(ALERT_STORE_KEY, JSON.stringify(alerts));
+      localStorage.setItem(getAlertStoreKey(), JSON.stringify(alerts));
       notify();
     } catch (e) {
       console.error('Failed to save alerts to localStorage', e);

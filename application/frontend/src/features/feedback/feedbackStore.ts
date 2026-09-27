@@ -5,8 +5,13 @@
 
 import type { FeedbackRequest, VerificationStatus } from '../../types';
 import feedbackMockRaw from '../../fixtures/feedback_request_mock.json';
+import { getSession } from '../../store/userStore';
 
-const STORE_KEY = 'manakai_feedback_queue';
+function getStoreKey(): string {
+  const session = getSession();
+  const userId = session?.id || 'anon';
+  return `manakai_${userId}_feedback_queue`;
+}
 
 const SEED_FEEDBACK: FeedbackRequest[] = [
   feedbackMockRaw as unknown as FeedbackRequest,
@@ -69,10 +74,11 @@ export const FeedbackStore = {
 
   getAll(): FeedbackRequest[] {
     try {
-      const stored = localStorage.getItem(STORE_KEY);
+      const key = getStoreKey();
+      const stored = localStorage.getItem(key);
       if (!stored) {
         // Initialize with default seeds
-        localStorage.setItem(STORE_KEY, JSON.stringify(SEED_FEEDBACK));
+        localStorage.setItem(key, JSON.stringify(SEED_FEEDBACK));
         return SEED_FEEDBACK;
       }
       return JSON.parse(stored);
@@ -85,7 +91,7 @@ export const FeedbackStore = {
     try {
       const existing = this.getAll();
       const updated = [payload, ...existing.filter((f) => f.feedback_id !== payload.feedback_id)];
-      localStorage.setItem(STORE_KEY, JSON.stringify(updated));
+      localStorage.setItem(getStoreKey(), JSON.stringify(updated));
       notifyFeedbackListeners();
     } catch (e) {
       console.warn('FeedbackStore: Failed to save feedback payload', e);
@@ -109,7 +115,7 @@ export const FeedbackStore = {
         }
         return item;
       });
-      localStorage.setItem(STORE_KEY, JSON.stringify(updated));
+      localStorage.setItem(getStoreKey(), JSON.stringify(updated));
       notifyFeedbackListeners();
     } catch (e) {
       console.warn('FeedbackStore: Failed to update status', e);
@@ -130,7 +136,7 @@ export const FeedbackStore = {
   },
 
   resetDefaults(): void {
-    localStorage.setItem(STORE_KEY, JSON.stringify(SEED_FEEDBACK));
+    localStorage.setItem(getStoreKey(), JSON.stringify(SEED_FEEDBACK));
     notifyFeedbackListeners();
   },
 };
