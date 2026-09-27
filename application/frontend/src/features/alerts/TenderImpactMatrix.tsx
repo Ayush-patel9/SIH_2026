@@ -3,6 +3,7 @@ import type { AlertPayload } from '../../types';
 import { buildImpactMatrix, SAVED_TENDERS } from './impactMatrix';
 import type { TenderRecord, TenderImpactRow, ImpactMatrixCell } from './impactMatrix';
 import { formatDeadlineBadge } from './deadlineUtils';
+import { AuditStore } from '../audit/auditStore';
 
 interface TenderImpactMatrixProps {
   alerts: AlertPayload[];
@@ -25,17 +26,50 @@ export const TenderImpactMatrix: React.FC<TenderImpactMatrixProps> = ({
   } | null>(null);
   const [corrigendumCopied, setCorrigendumCopied] = useState(false);
 
-  // Compute matrix from active alerts and saved tenders
+  // Merge static saved tenders and active session queries
+  const allTenders = useMemo<TenderRecord[]>(() => {
+    try {
+      const records = AuditStore.getAll();
+      const sessionList: TenderRecord[] = records.slice(0, 10).map((rec, i) => {
+        const resp = rec.response;
+        const stds: string[] = [];
+        if (resp.primary_recommendation?.is_number) stds.push(resp.primary_recommendation.is_number);
+        (resp.allied_standards || []).forEach((a) => {
+          if (a.is_number && !stds.includes(a.is_number)) stds.push(a.is_number);
+        });
+        (resp.outdated_citations || []).forEach((o) => {
+          if (o.cited_standard && !stds.includes(o.cited_standard)) stds.push(o.cited_standard);
+        });
+
+        return {
+          tender_id: `NIT-SESSION-${(resp.meta?.query_id || `q${i}`).slice(0, 8)}`,
+          title: resp.query_understanding?.normalized_text || resp.primary_recommendation?.title || `Session Tender Query ${i + 1}`,
+          ministry: resp.primary_recommendation?.certification?.notifying_ministry || 'Ministry of Commerce & Industry',
+          department: 'Procurement Cell',
+          value_inr_cr: 25.0 + i * 10,
+          officer_user_id: 'officer_session',
+          date_issued: (resp.meta?.timestamp || new Date().toISOString()).slice(0, 10),
+          bid_closing_date: new Date(Date.now() + 45 * 86400000).toISOString().slice(0, 10),
+          cited_standards: stds,
+        };
+      });
+      return [...SAVED_TENDERS, ...sessionList];
+    } catch {
+      return SAVED_TENDERS;
+    }
+  }, []);
+
+  // Compute matrix from active alerts and all tenders
   const matrixResult = useMemo(() => {
-    return buildImpactMatrix(alerts, SAVED_TENDERS);
-  }, [alerts]);
+    return buildImpactMatrix(alerts, allTenders);
+  }, [alerts, allTenders]);
 
   // List of ministries for filter
   const ministries = useMemo(() => {
     const set = new Set<string>();
-    SAVED_TENDERS.forEach((t) => set.add(t.ministry));
+    allTenders.forEach((t) => set.add(t.ministry));
     return ['ALL', ...Array.from(set).sort()];
-  }, []);
+  }, [allTenders]);
 
   // Filtered rows
   const filteredRows = useMemo(() => {
