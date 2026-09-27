@@ -19,8 +19,12 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({ currentData }) => {
 
   useEffect(() => {
     refreshList();
-    const unsubscribe = FeedbackStore.subscribe(refreshList);
-    return () => unsubscribe();
+    const unsubscribe = FeedbackStore.subscribe(() => {
+      refreshList();
+    });
+    return () => {
+      unsubscribe();
+    };
   }, []);
 
   const handleStatusChange = (id: string, status: VerificationStatus) => {

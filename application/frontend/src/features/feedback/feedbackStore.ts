@@ -51,7 +51,7 @@ const SEED_FEEDBACK: FeedbackRequest[] = [
 type FeedbackListener = () => void;
 const feedbackListeners = new Set<FeedbackListener>();
 
-function notifyFeedback() {
+function notifyFeedbackListeners() {
   feedbackListeners.forEach((listener) => {
     try {
       listener();
@@ -86,7 +86,7 @@ export const FeedbackStore = {
       const existing = this.getAll();
       const updated = [payload, ...existing.filter((f) => f.feedback_id !== payload.feedback_id)];
       localStorage.setItem(STORE_KEY, JSON.stringify(updated));
-      notifyFeedback();
+      notifyFeedbackListeners();
     } catch (e) {
       console.warn('FeedbackStore: Failed to save feedback payload', e);
     }
@@ -110,7 +110,7 @@ export const FeedbackStore = {
         return item;
       });
       localStorage.setItem(STORE_KEY, JSON.stringify(updated));
-      notifyFeedback();
+      notifyFeedbackListeners();
     } catch (e) {
       console.warn('FeedbackStore: Failed to update status', e);
     }
@@ -131,6 +131,6 @@ export const FeedbackStore = {
 
   resetDefaults(): void {
     localStorage.setItem(STORE_KEY, JSON.stringify(SEED_FEEDBACK));
-    notifyFeedback();
+    notifyFeedbackListeners();
   },
 };
