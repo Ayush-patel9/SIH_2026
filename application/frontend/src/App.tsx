@@ -654,6 +654,82 @@ export default function App() {
                 )}
               </div>
 
+              {/* Sandbox Simulation Mode Banner */}
+              {mode === 'dry_run' && (
+                <div
+                  style={{
+                    padding: '12px 18px',
+                    backgroundColor: '#FEF3C7',
+                    border: '1px solid #F59E0B',
+                    borderRadius: 'var(--radius-sm)',
+                    color: '#92400E',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    fontSize: '13px',
+                    fontWeight: 500,
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span>🧪</span>
+                    <span>
+                      <strong>SANDBOX SIMULATION MODE ACTIVE</strong> — Queries in this session are dry-runs and will not be committed to the official CVC Audit Registry.
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setMode('recommend')}
+                    style={{
+                      background: '#D97706',
+                      color: '#FFFFFF',
+                      border: 'none',
+                      borderRadius: 'var(--radius-xs)',
+                      padding: '4px 10px',
+                      fontSize: '11.5px',
+                      cursor: 'pointer',
+                      fontWeight: 600,
+                    }}
+                  >
+                    Switch to Live Mode
+                  </button>
+                </div>
+              )}
+
+              {/* Outdated / Superseded Citations Inline Warning */}
+              {activeData?.outdated_citations && activeData.outdated_citations.length > 0 && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {activeData.outdated_citations.map((outdated, idx) => (
+                    <div
+                      key={idx}
+                      style={{
+                        padding: '14px 18px',
+                        backgroundColor: '#FEF2F2',
+                        border: '1px solid #F87171',
+                        borderLeft: '4px solid #DC2626',
+                        borderRadius: 'var(--radius-sm)',
+                        color: '#991B1B',
+                        fontSize: '13px',
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 700, marginBottom: '4px' }}>
+                        <span>🚨</span>
+                        <span>WITHDRAWN / OUTDATED CITATION DETECTED: {outdated.cited_standard}</span>
+                        <span style={{ fontSize: '10.5px', background: '#DC2626', color: '#FFF', padding: '2px 6px', borderRadius: '2px' }}>
+                          {outdated.severity || 'CRITICAL'}
+                        </span>
+                      </div>
+                      <div>{outdated.message || outdated.reason}</div>
+                      {outdated.replacement && (
+                        <div style={{ marginTop: '6px', fontWeight: 600, color: '#166534' }}>
+                          ✓ Recommended statutory replacement: <strong>{outdated.replacement}</strong>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+
               {isLoading && (
                 <div className="workbench-card">
                   <LoadingShimmer lines={3} height="16px" />
