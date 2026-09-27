@@ -39,7 +39,14 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onSelectStandard }
   };
 
   useEffect(() => {
-    refreshMetrics();
+    const isSeeded = localStorage.getItem('manakAI:dashboard:seeded');
+    const existing = AuditStore.getAll();
+    if (!isSeeded || existing.length === 0) {
+      seedDemoData();
+      localStorage.setItem('manakAI:dashboard:seeded', 'true');
+    } else {
+      refreshMetrics();
+    }
   }, []);
 
   const seedDemoData = () => {

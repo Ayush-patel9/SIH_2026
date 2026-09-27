@@ -1,21 +1,51 @@
-/**
- * KPICards.tsx
- * Institutional KPI metrics summary row with high tabular density,
- * crisp white cards, and formatted Indian numbering.
- */
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import type { DashboardMetrics } from './metricsAggregator';
 
 interface KPICardsProps {
   metrics: DashboardMetrics;
 }
 
+function AnimatedNumber({ target, suffix = '' }: { target: number; suffix?: string }) {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (target === 0) {
+      setCurrent(0);
+      return;
+    }
+    const duration = 600;
+    const steps = 24;
+    const stepTime = duration / steps;
+    const increment = target / steps;
+    let step = 0;
+
+    const timer = setInterval(() => {
+      step++;
+      if (step >= steps) {
+        setCurrent(target);
+        clearInterval(timer);
+      } else {
+        setCurrent(Math.round(increment * step));
+      }
+    }, stepTime);
+
+    return () => clearInterval(timer);
+  }, [target]);
+
+  return (
+    <span>
+      {current.toLocaleString('en-IN')}
+      {suffix}
+    </span>
+  );
+}
+
 export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
   const cards = [
     {
       label: 'TOTAL QUERIES SCREENED',
-      value: metrics.totalQueries.toLocaleString('en-IN'),
+      numericValue: metrics.totalQueries,
+      suffix: '',
       accentColor: 'var(--ink)',
       badgeBg: 'var(--surface-secondary)',
       badgeColor: 'var(--ink-secondary)',
@@ -24,7 +54,8 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
     },
     {
       label: 'OFFICIAL AUDIT RECORDS',
-      value: metrics.officialRecommendations.toLocaleString('en-IN'),
+      numericValue: metrics.officialRecommendations,
+      suffix: '',
       accentColor: 'var(--focus-blue)',
       badgeBg: 'rgba(37, 99, 235, 0.08)',
       badgeColor: 'var(--focus-blue)',
@@ -33,7 +64,8 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
     },
     {
       label: 'EXPERT TRUST SCORE',
-      value: `${metrics.trustScorePercent}%`,
+      numericValue: metrics.trustScorePercent,
+      suffix: '%',
       accentColor: 'var(--emerald-pass)',
       badgeBg: 'var(--emerald-bg)',
       badgeColor: 'var(--emerald-text)',
@@ -42,7 +74,8 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
     },
     {
       label: 'PENDING MODERATIONS',
-      value: metrics.pendingFeedback.toLocaleString('en-IN'),
+      numericValue: metrics.pendingFeedback,
+      suffix: '',
       accentColor: 'var(--saffron)',
       badgeBg: 'var(--saffron-bg)',
       badgeColor: 'var(--saffron-text)',
@@ -51,7 +84,8 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
     },
     {
       label: 'STANDARDS MONITORED',
-      value: metrics.standardsCovered.toLocaleString('en-IN'),
+      numericValue: metrics.standardsCovered,
+      suffix: '',
       accentColor: 'var(--superposition-violet)',
       badgeBg: 'var(--superposition-bg)',
       badgeColor: 'var(--superposition-violet)',
@@ -60,7 +94,8 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
     },
     {
       label: 'OUTDATED INTERCEPTIONS',
-      value: (108).toLocaleString('en-IN'),
+      numericValue: 108,
+      suffix: '',
       accentColor: 'var(--error-red)',
       badgeBg: 'var(--error-bg)',
       badgeColor: 'var(--error-red)',
@@ -138,7 +173,7 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
               marginBottom: '4px',
             }}
           >
-            {card.value}
+            <AnimatedNumber target={card.numericValue} suffix={card.suffix} />
           </div>
 
           <div
@@ -156,3 +191,4 @@ export const KPICards: React.FC<KPICardsProps> = ({ metrics }) => {
     </div>
   );
 };
+
