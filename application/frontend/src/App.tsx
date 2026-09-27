@@ -741,6 +741,47 @@ export default function App() {
                 </div>
               )}
 
+              {/* Multi-Match / Ambiguity Disambiguation Banner */}
+              {activeData?.query_understanding?.ambiguity_flags && activeData.query_understanding.ambiguity_flags.length > 0 && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {activeData.query_understanding.ambiguity_flags.map((flag: any, idx: number) => {
+                    const message = typeof flag === 'string' ? flag : flag.message || 'Multiple grades or revisions match this procurement clause.';
+                    return (
+                      <div
+                        key={idx}
+                        style={{
+                          padding: '14px 18px',
+                          backgroundColor: '#FFFBEB',
+                          border: '1px solid #FDE68A',
+                          borderLeft: '4px solid #D97706',
+                          borderRadius: 'var(--radius-sm)',
+                          color: '#92400E',
+                          fontSize: '13px',
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center',
+                          flexWrap: 'wrap',
+                          gap: '12px',
+                        }}
+                      >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1 }}>
+                          <span>⚠️</span>
+                          <span><strong>DISAMBIGUATION REQUIRED:</strong> {message}</span>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => setActiveFeature('queryUnderstanding')}
+                          className="btn-secondary"
+                          style={{ fontSize: '11.5px', padding: '4px 10px', height: '28px', backgroundColor: '#FEF3C7', borderColor: '#F59E0B', color: '#92400E' }}
+                        >
+                          Refine Intent in NLU Studio →
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
               {isLoading && (
                 <div className="workbench-card">
                   <LoadingShimmer lines={3} height="16px" />
