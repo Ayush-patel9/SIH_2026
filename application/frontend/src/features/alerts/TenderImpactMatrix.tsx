@@ -26,37 +26,28 @@ export const TenderImpactMatrix: React.FC<TenderImpactMatrixProps> = ({
   } | null>(null);
   const [corrigendumCopied, setCorrigendumCopied] = useState(false);
 
-  // Merge static saved tenders and active session queries
-  const allTenders = useMemo<TenderRecord[]>(() => {
-    try {
-      const records = AuditStore.getAll();
-      const sessionList: TenderRecord[] = records.slice(0, 10).map((rec, i) => {
-        const resp = rec.response;
-        const stds: string[] = [];
-        if (resp.primary_recommendation?.is_number) stds.push(resp.primary_recommendation.is_number);
-        (resp.allied_standards || []).forEach((a) => {
-          if (a.is_number && !stds.includes(a.is_number)) stds.push(a.is_number);
-        });
-        (resp.outdated_citations || []).forEach((o) => {
-          if (o.cited_standard && !stds.includes(o.cited_standard)) stds.push(o.cited_standard);
-        });
-
-        return {
-          tender_id: `NIT-SESSION-${(resp.meta?.query_id || `q${i}`).slice(0, 8)}`,
-          title: resp.query_understanding?.normalized_text || resp.primary_recommendation?.title || `Session Tender Query ${i + 1}`,
-          ministry: resp.primary_recommendation?.certification?.notifying_ministry || 'Ministry of Commerce & Industry',
-          department: 'Procurement Cell',
-          value_inr_cr: 25.0 + i * 10,
-          officer_user_id: 'officer_session',
-          date_issued: (resp.meta?.timestamp || new Date().toISOString()).slice(0, 10),
-          bid_closing_date: new Date(Date.now() + 45 * 86400000).toISOString().slice(0, 10),
-          cited_standards: stds,
-        };
-      });
-      return [...SAVED_TENDERS, ...sessionList];
-    } catch {
-      return SAVED_TENDERS;
-    }
+  // Combine static saved tenders with dynamic session records from AuditStore
+  const allTenders = useMemo(() => {
+    const sessionRecords = AuditStore.getAll();
+    const dynamicTenders: TenderRecord[] = sessionRecords.map((r, idx) => {
+      const resp = r.response;
+      const primary = resp.primary_recommendation?.is_number || '';
+      const allied = (resp.allied_standards || []).map((a) => a.is_number);
+      const outdated = (resp.outdated_citations || []).map((o) => o.cited_standard);
+      const qId = resp.meta?.query_id || `session-${idx}`;
+      return {
+        tender_id: `NIT-SESSION-${qId.slice(-6).toUpperCase()}`,
+        title: resp.query_understanding?.original_text || resp.primary_recommendation?.title || 'Procurement Session Query',
+        ministry: resp.primary_recommendation?.certification?.notifying_ministry || 'CPWD / Public Works',
+        department: 'Active Procurement Session',
+        value_inr_cr: 15.0 + (idx % 10) * 8.5,
+        officer_user_id: 'officer_session',
+        date_issued: (resp.meta?.timestamp || new Date().toISOString()).slice(0, 10),
+        bid_closing_date: new Date(Date.now() + 60 * 86400000).toISOString().slice(0, 10),
+        cited_standards: [primary, ...allied, ...outdated].filter(Boolean),
+      };
+    });
+    return [...SAVED_TENDERS, ...dynamicTenders];
   }, []);
 
   // Compute matrix from active alerts and all tenders
