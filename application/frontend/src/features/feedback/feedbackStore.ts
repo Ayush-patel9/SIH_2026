@@ -48,7 +48,25 @@ const SEED_FEEDBACK: FeedbackRequest[] = [
   },
 ];
 
+type FeedbackListener = () => void;
+const feedbackListeners = new Set<FeedbackListener>();
+
+function notifyFeedback() {
+  feedbackListeners.forEach((listener) => {
+    try {
+      listener();
+    } catch (e) {
+      console.error('FeedbackStore listener error:', e);
+    }
+  });
+}
+
 export const FeedbackStore = {
+  subscribe(listener: FeedbackListener): () => void {
+    feedbackListeners.add(listener);
+    return () => feedbackListeners.delete(listener);
+  },
+
   getAll(): FeedbackRequest[] {
     try {
       const stored = localStorage.getItem(STORE_KEY);
@@ -68,9 +86,14 @@ export const FeedbackStore = {
       const existing = this.getAll();
       const updated = [payload, ...existing.filter((f) => f.feedback_id !== payload.feedback_id)];
       localStorage.setItem(STORE_KEY, JSON.stringify(updated));
+      notifyFeedback();
     } catch (e) {
       console.warn('FeedbackStore: Failed to save feedback payload', e);
     }
+  },
+
+  add(payload: FeedbackRequest): void {
+    this.save(payload);
   },
 
   updateStatus(feedbackId: string, newStatus: VerificationStatus): void {
@@ -87,6 +110,7 @@ export const FeedbackStore = {
         return item;
       });
       localStorage.setItem(STORE_KEY, JSON.stringify(updated));
+      notifyFeedback();
     } catch (e) {
       console.warn('FeedbackStore: Failed to update status', e);
     }
@@ -107,5 +131,6 @@ export const FeedbackStore = {
 
   resetDefaults(): void {
     localStorage.setItem(STORE_KEY, JSON.stringify(SEED_FEEDBACK));
+    notifyFeedback();
   },
 };
