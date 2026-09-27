@@ -365,7 +365,14 @@ export async function uploadPDFAnnotated(file: File): Promise<PDFAnnotatedRespon
         detectedStandard: 'IS 8112:1989',
         status: 'WITHDRAWN',
         confidence: 0.98,
+        discardStandard: 'IS 8112:1989 (43 Grade OPC)',
+        useStandard: 'IS 269:2015 (Sixth Revision, Grade 43/53)',
+        whyDiscard:
+          'Standard was superseded and merged into unified IS 269:2015. Legacy IS 8112 ISI marks are no longer issued by BIS. Citing withdrawn standards violates CVC circular 04/03/2021.',
+        actionType: 'DISCARD_AND_REPLACE',
         replacement: 'IS 269:2015 (incorporating 43-Grade under Clause 5.1)',
+        qcoMandate: 'Cement (Quality Control) Order 2024',
+        isMandatory: true,
         cvcRiskNote:
           'CVC Office Order No. 04/03/2021: Citing withdrawn standards in public tenders exposes the department to statutory audit disallowance and post-award vendor litigation.',
         alliedStandards: ['IS 4031', 'IS 4032'],
@@ -385,12 +392,72 @@ export async function uploadPDFAnnotated(file: File): Promise<PDFAnnotatedRespon
         detectedStandard: 'IS 2062:2011',
         status: 'ACTIVE',
         confidence: 0.95,
+        discardStandard: undefined,
+        useStandard: 'IS 2062:2011 Grade E250 Quality A',
+        whyDiscard: undefined,
+        actionType: 'RETAIN_ACTIVE',
         replacement: 'IS 2062:2011 (Current)',
+        qcoMandate: 'Steel and Steel Products (Quality Control) Order 2024',
+        isMandatory: true,
         cvcRiskNote:
           'Statutory compliance verified under Steel and Steel Products (Quality Control) Order 2024. Mandatory ISI marking applies.',
         alliedStandards: ['IS 1608', 'IS 1599'],
         suggestedClauseText:
           'Structural steel plates and sections shall conform to IS 2062:2011 Grade E250 Quality A with mandatory BIS ISI Mark per Steel QCO 2024.',
+      },
+      {
+        id: 'clause-3',
+        clauseNumber: 'Clause 12.4.0',
+        clauseTitle: 'High Density Polyethylene (HDPE) Water Supply Pipes',
+        rawText:
+          'HDPE pipes for rural drinking water distribution network shall be manufactured as per IS 4984:1995 with PE-80 raw material.',
+        verbatimQuote:
+          'HDPE pipes for rural drinking water distribution network shall be manufactured as per IS 4984:1995',
+        pageNumber: 3,
+        pageLocation: 'Page 3, Clause 12.4.0',
+        detectedStandard: 'IS 4984:1995',
+        status: 'AMENDMENT_NEEDED',
+        confidence: 0.93,
+        discardStandard: 'IS 4984:1995 (PE-80 material)',
+        useStandard: 'IS 4984:2016 (incorporating Amendment 3, PE-100 Grade)',
+        whyDiscard:
+          'Standard revised in 2016 with Amendment 3. PE-80 raw material provides 25% lower hydrostatic pressure resistance than modern PE-100 resins.',
+        actionType: 'AMEND_VERSION',
+        replacement: 'IS 4984:2016 (incorporating Amendment 3)',
+        qcoMandate: 'Polyethylene Material for Pipes QCO 2023',
+        isMandatory: true,
+        cvcRiskNote:
+          'Standard revised in 2016. Using legacy 1995 specification fails to incorporate the latest hydrostatic pressure test duration required by Jal Jeevan Mission guidelines.',
+        alliedStandards: ['IS 2530', 'IS 5382'],
+        suggestedClauseText:
+          'HDPE pipes for rural drinking water supply shall conform to IS 4984:2016 with Amendment 3, PE-100 grade material, holding valid BIS License under Polyethylene Pipes QCO.',
+      },
+      {
+        id: 'clause-4',
+        clauseNumber: 'Clause 15.2.1',
+        clauseTitle: 'CCTV Video Surveillance & IP Cameras',
+        rawText:
+          'IP dome cameras for surveillance shall provide 1080p full HD resolution with on-board recording capability.',
+        verbatimQuote:
+          'IP dome cameras for surveillance shall provide 1080p full HD resolution',
+        pageNumber: 3,
+        pageLocation: 'Page 3, Clause 15.2.1',
+        detectedStandard: 'IS 13252 (Part 1):2010 / CRO Scheme',
+        status: 'MISSING_ALLIED',
+        confidence: 0.91,
+        discardStandard: 'Uncertified generic electronic surveillance clauses',
+        useStandard: 'IS 13252 (Part 1):2010 & BIS CRS Registration',
+        whyDiscard:
+          'Tender omits mandatory MeitY Compulsory Registration Scheme (CRS) compliance clause. Public procurement of uncertified electronics violates Public Procurement Order.',
+        actionType: 'ADD_ALLIED',
+        replacement: 'IS 13252 (Part 1):2010 & Essential Requirements under CRO Scheme',
+        qcoMandate: 'MeitY Electronics & IT Goods (Compulsory Registration) Order',
+        isMandatory: true,
+        cvcRiskNote:
+          'Tender omits mandatory MeitY Compulsory Registration Scheme (CRS) compliance clause. Public procurement of uncertified electronics violates Public Procurement Order.',
+        alliedStandards: ['IS 13252 (Part 1):2010', 'IS 16842'],
+        suggestedClauseText:
+          'IP dome cameras shall comply with IS 13252 (Part 1):2010 with valid BIS Compulsory Registration Scheme (CRS) Registration and adhere to STQC/MeitY Cybersecurity Guidelines.',
       },
     ]
   };
