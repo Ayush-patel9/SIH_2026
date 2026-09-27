@@ -32,9 +32,28 @@
         "confidence": 0.95
       }
     ],
-    "query_intent": "STANDARD_LOOKUP",
     "ambiguity_flags": [
-      "Grade specification Fe 500D selected. Ensure ductile grade ('D') is specified for seismic Zone III/IV/V applications."
+      {
+        "dimension": "Steel Rebar Grade",
+        "message": "Multiple strength grades exist under IS 1786:2008. Select required ductility and yield strength for your structural tender:",
+        "options": [
+          {
+            "value": "Fe 500D",
+            "label": "Grade Fe 500D (High Ductility - Recommended for Bridges / Flyovers)",
+            "description": "Yield strength ≥ 500 MPa, Elongation ≥ 16%, TS/YS ≥ 1.10. Mandatory for seismic zones III, IV & V."
+          },
+          {
+            "value": "Fe 550D",
+            "label": "Grade Fe 550D (Extra High Strength Ductile)",
+            "description": "Yield strength ≥ 550 MPa, Elongation ≥ 14.5%. Suitable for heavily loaded long-span girders."
+          },
+          {
+            "value": "Fe 500",
+            "label": "Grade Fe 500 (Standard)",
+            "description": "Standard grade with 12% elongation. Restricted for high-seismic infrastructure."
+          }
+        ]
+      }
     ]
   },
   "primary_recommendation": {

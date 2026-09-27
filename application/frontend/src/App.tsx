@@ -4,7 +4,7 @@ import { AuditTrailView, AuditStore } from './features/audit';
 import { FeedbackView } from './features/feedback';
 import { AlertsView, NotificationBell, AlertDrawer, AlertStore } from './features/alerts';
 import { ComparisonView } from './features/comparison';
-import { QueryUnderstandingView } from './features/queryUnderstanding';
+import { QueryUnderstandingView, AmbiguityCard } from './features/queryUnderstanding';
 import { NITGeneratorView } from './features/nitGenerator';
 import { MCPView } from './features/mcp';
 import { DashboardView } from './features/dashboard';
@@ -741,44 +741,20 @@ export default function App() {
                 </div>
               )}
 
-              {/* Multi-Match / Ambiguity Disambiguation Banner */}
+              {/* Ambiguity Disambiguation Card */}
               {activeData?.query_understanding?.ambiguity_flags && activeData.query_understanding.ambiguity_flags.length > 0 && (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                  {activeData.query_understanding.ambiguity_flags.map((flag: any, idx: number) => {
-                    const message = typeof flag === 'string' ? flag : flag.message || 'Multiple grades or revisions match this procurement clause.';
-                    return (
-                      <div
-                        key={idx}
-                        style={{
-                          padding: '14px 18px',
-                          backgroundColor: '#FFFBEB',
-                          border: '1px solid #FDE68A',
-                          borderLeft: '4px solid #D97706',
-                          borderRadius: 'var(--radius-sm)',
-                          color: '#92400E',
-                          fontSize: '13px',
-                          display: 'flex',
-                          justifyContent: 'space-between',
-                          alignItems: 'center',
-                          flexWrap: 'wrap',
-                          gap: '12px',
-                        }}
-                      >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1 }}>
-                          <span>⚠️</span>
-                          <span><strong>DISAMBIGUATION REQUIRED:</strong> {message}</span>
-                        </div>
-                        <button
-                          type="button"
-                          onClick={() => setActiveFeature('queryUnderstanding')}
-                          className="btn-secondary"
-                          style={{ fontSize: '11.5px', padding: '4px 10px', height: '28px', backgroundColor: '#FEF3C7', borderColor: '#F59E0B', color: '#92400E' }}
-                        >
-                          Refine Intent in NLU Studio →
-                        </button>
-                      </div>
-                    );
-                  })}
+                  {activeData.query_understanding.ambiguity_flags.map((flag, idx) => (
+                    <AmbiguityCard
+                      key={idx}
+                      flag={flag}
+                      onResolve={(_dimension, resolvedVal) => {
+                        const refined = `${searchQuery} ${resolvedVal}`;
+                        setSearchQuery(refined);
+                        handleAnalyze(refined);
+                      }}
+                    />
+                  ))}
                 </div>
               )}
 
