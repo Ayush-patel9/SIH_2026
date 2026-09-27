@@ -920,7 +920,7 @@ export default function App() {
                         >
                           {role === 'AUDITOR' && '🛡️ Auditor Panel'}
                           {role === 'VENDOR' && '🏭 Vendor Portal'}
-                          {(role === 'PROCUREMENT_OFFICER' || role === 'BIS_EXPERT' || role === 'PUBLIC_VIEWER') && '📋 Procurement Officer View'}
+                          {(role === 'PROCUREMENT_OFFICER' || role === 'BIS_EXPERT') && '📋 Procurement Officer View'}
                         </button>
                       </div>
 
@@ -1004,7 +1004,7 @@ export default function App() {
                           {role === 'VENDOR' && (
                             <VendorPanel data={activeData} />
                           )}
-                          {(role === 'PROCUREMENT_OFFICER' || role === 'BIS_EXPERT' || role === 'PUBLIC_VIEWER') && (
+                          {(role === 'PROCUREMENT_OFFICER' || role === 'BIS_EXPERT') && (
                             <ProcurementOfficerPanel
                               data={activeData}
                               onOpenNITGenerator={() => setActiveFeature('nitGenerator')}
