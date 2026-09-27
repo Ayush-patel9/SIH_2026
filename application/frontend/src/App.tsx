@@ -284,7 +284,7 @@ const FEATURE_TITLES: Record<FeatureKey, string> = {
   queryUnderstanding: 'Gemini Technical Intent NLU',
   nitGenerator: 'NIT Clause Builder',
   mcp: 'MCP Tooling Workbench',
-  tenderUpload: 'PDF Tender Document Analyzer',
+  tenderUpload: 'Tender Upload & Indian Standards Matcher',
   dashboard: 'Ministry MIS Heatmap & Compliance',
   integrations: 'GeM & CPPP National Sandbox',
   gazetteRadar: 'Gazette Radar Watchtower',

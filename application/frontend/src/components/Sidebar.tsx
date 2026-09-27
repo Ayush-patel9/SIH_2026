@@ -96,9 +96,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
         },
         {
           key: 'tenderUpload',
-          label: 'Tender Clause Ingestion',
+          label: 'Tender Upload & Standards',
           icon: '📄',
-          description: 'Auto-detect Outdated Citations & QCO Checks',
+          badge: 'PDF / AI',
+          description: 'Upload PDF/Text tender to extract Indian Standards',
         },
         {
           key: 'nitGenerator',
