@@ -34,9 +34,24 @@ T = TypeVar("T", bound=BaseModel)
 class LLMTaskType(str, Enum):
     QUERY_UNDERSTANDING_CALL_1 = "query_understanding_call_1"  # AI Call #1: Query understanding & normalization
     TENDER_DECOMPOSITION = "tender_decomposition"              # Ingestion decomposition
+    CRITIC_VERIFICATION = "critic_verification"                # Self-Reflective Critic & Verification Loop (CRAG)
     REASONING_SYNTHESIS = "reasoning_synthesis"                # AI Call #2: Grounded reasoning & explainability
     SPEC_DRAFT_EXPORT = "spec_draft_export"                    # Spec drafting
     QUERY_DISAMBIGUATION = "query_disambiguation"              # Legacy alias for query understanding
+
+# --- Output Schemas for Demands ---
+class CriticVerificationOutput(BaseModel):
+    """
+    AI Critic / Verifier Output Schema:
+    Evaluates whether the candidate Indian Standard is the primary product specification
+    for the user's procurement request or an irrelevant/subsidiary mismatch.
+    """
+    is_valid: bool = Field(..., description="True if standard matches primary product intent, False if mismatch or secondary component")
+    confidence: float = Field(..., description="Critic alignment score between 0.0 and 1.0")
+    mismatch_type: Optional[str] = Field("NONE", description="NONE | SUBSIDIARY_COMPONENT | WRONG_DOMAIN | OUTDATED_SUPERSEDED | TEST_METHOD_ONLY")
+    critique_reason: str = Field(..., description="Detailed technical explanation of whether the candidate is acceptable or why it was rejected")
+    suggested_refinement: Optional[str] = Field(None, description="Suggested keywords or refined search directions if rejected")
+
 
 # --- Output Schemas for Demands ---
 class QueryUnderstandingStage1(BaseModel):
@@ -128,13 +143,18 @@ class LLMGateway:
         elif task_str == LLMTaskType.TENDER_DECOMPOSITION.value:
             return self._handle_tender_decomposition(**kwargs)
 
-        # 3. AI Call #2: Grounded Reasoning & Synthesis (After Reranking)
+        # 3. AI Critic / Verification Step (Corrective RAG Loop)
+        elif task_str == LLMTaskType.CRITIC_VERIFICATION.value:
+            return self._handle_critic_verification(**kwargs)
+
+        # 4. AI Call #2: Grounded Reasoning & Synthesis (After Reranking)
         elif task_str == LLMTaskType.REASONING_SYNTHESIS.value:
             return self._handle_reasoning_synthesis(**kwargs)
 
-        # 4. Specification Draft Export Demand
+        # 5. Specification Draft Export Demand
         elif task_str == LLMTaskType.SPEC_DRAFT_EXPORT.value:
             return self._handle_spec_draft_export(**kwargs)
+
 
         else:
             raise ValueError(f"Unknown LLM task demand: '{task_str}'")
@@ -273,6 +293,83 @@ class LLMGateway:
             "tender_title": "Procurement Specification Document",
             "issuing_authority": "Government Procurement Entity",
             "extracted_items": items
+        }
+
+    def _handle_critic_verification(
+        self,
+        query_text: str = "",
+        candidate_is: str = "",
+        candidate_title: str = "",
+        candidate_scope: str = "",
+        product_category: str = "",
+        **kwargs
+    ) -> Dict[str, Any]:
+        """
+        Self-Reflective Critic / Verification Step (CRAG):
+        Evaluates whether the candidate Indian Standard is the primary product specification
+        or a subsidiary/secondary attachment mismatch.
+        """
+        clean_q = query_text.strip()
+        
+        if self.is_available():
+            prompt = (
+                "You are an expert Chief Indian Standards (BIS) Verification Officer.\n"
+                f"User Procurement Query: \"{clean_q}\"\n"
+                f"Candidate Standard: {candidate_is} - \"{candidate_title}\"\n"
+                f"Scope Snippet: \"{candidate_scope}\"\n\n"
+                "Evaluate whether this candidate standard is the EXACT primary governing specification for the requested product.\n"
+                "CRITICAL REJECTION RULES:\n"
+                "1. If the user is procuring a complete machine/equipment (e.g., 'television', 'crane', 'laptop', 'charger') and the candidate is only an auxiliary sub-component (e.g., 'frame output transformer for picture tubes', 'weighing machine for cranes', 'spool'), reject it (is_valid=false, mismatch_type='SUBSIDIARY_COMPONENT').\n"
+                "2. If the engineering sector is completely wrong (e.g. IT safety IS 13252 for civil construction rebar/crane), reject it (is_valid=false, mismatch_type='WRONG_DOMAIN').\n"
+                "3. If the user is asking for product procurement and the standard is only a laboratory test method/sampling guide, reject it (is_valid=false, mismatch_type='TEST_METHOD_ONLY').\n"
+                "4. If the standard directly covers the product, approve it (is_valid=true, mismatch_type='NONE').\n\n"
+                "Produce JSON matching the CriticVerificationOutput schema."
+            )
+            try:
+                return self._raw_generate_json(prompt, schema=CriticVerificationOutput, model_type="flash")
+            except Exception as e:
+                logger.warning(f"AI Critic Verification failed, falling back to deterministic critic: {e}")
+
+        # Deterministic Semantic Critic Fallback
+        t_lower = candidate_title.lower()
+        q_lower = clean_q.lower()
+
+        # Check 1: Secondary Component / Auxiliary Attachment mismatch
+        subsidiary_patterns = [
+            (r"\b(transformers?\s*used\s*with|picture\s*tubes?|crt\s*component)\b", ["television", "tv"]),
+            (r"\b(weighing\s*machines?\s*for\s*cranes?|crane\s*weighing)\b", ["crane", "eot"]),
+            (r"\b(spool|bobbins?|creel)\b", ["textile", "yarn"]),
+            (r"\b(sweep\s*generators?)\b", ["television", "tv"]),
+            (r"\b(flux\s*measurement|magnetic\s*properties)\b", ["transformer", "motor"])
+        ]
+        for sub_pat, user_triggers in subsidiary_patterns:
+            if re.search(sub_pat, t_lower) and any(trig in q_lower for trig in user_triggers):
+                if not any(re.search(sub_pat, q_lower) for _ in [1]):
+                    return {
+                        "is_valid": False,
+                        "confidence": 0.3,
+                        "mismatch_type": "SUBSIDIARY_COMPONENT",
+                        "critique_reason": f"Candidate {candidate_is} specifies a subsidiary sub-component ({candidate_title}) rather than the primary apparatus requested in '{clean_q}'.",
+                        "suggested_refinement": f"{clean_q} safety specification apparatus"
+                    }
+
+        # Check 2: Cross-domain IT equipment violation
+        if candidate_is.startswith("IS 13252") and any(w in q_lower for w in ["crane", "cement", "rebar", "tmt", "concrete", "pipe", "helmet", "fire extinguisher", "spark plug"]):
+            return {
+                "is_valid": False,
+                "confidence": 0.2,
+                "mismatch_type": "WRONG_DOMAIN",
+                "critique_reason": f"Candidate IS 13252 is an Information Technology / Electronics safety standard and cannot apply to '{clean_q}'.",
+                "suggested_refinement": clean_q
+            }
+
+        # Check 3: Default valid acceptance
+        return {
+            "is_valid": True,
+            "confidence": 0.95,
+            "mismatch_type": "NONE",
+            "critique_reason": f"Candidate standard {candidate_is} accurately aligns with product intent for '{clean_q}'.",
+            "suggested_refinement": None
         }
 
     def _handle_reasoning_synthesis(

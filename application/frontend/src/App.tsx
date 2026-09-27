@@ -518,7 +518,19 @@ export default function App() {
         <main className="content-stage">
           {/* Feature 01: Standards Explorer */}
           {activeFeature === 'explainability' && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxWidth: '1040px', margin: '0 auto', width: '100%' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '22px', maxWidth: '1040px', margin: '0 auto', width: '100%' }}>
+              {/* Sovereign Editorial Hero */}
+              <div className="editorial-hero">
+                <div className="editorial-hero-tag">
+                  <Sparkles size={12} />
+                  <span>Normative Intelligence System</span>
+                </div>
+                <h1 className="editorial-hero-title">Standards Intelligence Engine</h1>
+                <p className="editorial-hero-subtitle">
+                  Search 22,000+ Indian Standards (IS), mandatory Quality Control Orders (QCOs), and procurement specifications with automated self-reflective reasoning and cryptographic audit trails.
+                </p>
+              </div>
+
               {/* Spotlight Search Header */}
               <div className="spotlight-search-container">
                 <div className="spotlight-search-box">

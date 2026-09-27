@@ -49,10 +49,15 @@ class MetaInfo(BaseModel):
     timestamp: str
     processing_time_ms: int = 0
     pipeline_version: str = "1.0.0"
-    model_version: str = "gemini-2.5-pro"
+    model_version: str = "gemini-3.8-flash"
     data_snapshot_date: str = "2026-09-26"
     audit_reference_hash: str = ""
     mode: str = "recommend"
+    critic_verified: bool = True
+    verification_loops: int = 1
+    critic_critique: Optional[str] = None
+    rejected_candidates: List[str] = Field(default_factory=list)
+
 
 class ExtractedEntity(BaseModel):
     entity: str

@@ -26,12 +26,16 @@ class RerankerAndFusion:
         query_text: str,
         vector_candidates: List[Tuple[Dict[str, Any], float]],
         exact_candidates: List[Tuple[Dict[str, Any], float, str]],
+        rejected_standards: Optional[List[str]] = None,
         max_results: int = 5
     ) -> Dict[str, Any]:
         """
-        Executes multi-channel score fusion and supersession resolution.
+        Executes multi-channel score fusion and supersession resolution,
+        supporting negative feedback constraints from the LLM Critic loop.
         """
+        rejected_keys: Set[str] = {normalize_is_key(r) for r in (rejected_standards or []) if r}
         candidate_scores: Dict[str, Dict[str, Any]] = {}
+
 
         # 1. Ingest Exact / Lexicon / CRS Matches (Highest priority signal)
         for std, score, match_type in exact_candidates:
@@ -140,8 +144,13 @@ class RerankerAndFusion:
                 if not any(w in query_text.lower() for w in ["weighing", "training", "manual", "spool", "sweep", "magnet", "flux"]):
                     penalty += 0.35
 
-            total_score = max(base_score + reg_boost + recency_boost - penalty, 0.05)
+            # Critic Corrective Feedback Loop Penalty
+            if rejected_keys and (key in rejected_keys or normalize_is_key(std.get("is_number", "")) in rejected_keys):
+                penalty += 10.0
+
+            total_score = max(base_score + reg_boost + recency_boost - penalty, 0.01)
             scored_list.append((total_score, entry))
+
 
         scored_list.sort(key=lambda x: x[0], reverse=True)
         top_entry = scored_list[0][1]
@@ -277,5 +286,15 @@ class RerankerAndFusion:
             "primary": primary_recommendation,
             "allied_standards": allied_standards,
             "outdated_citations": outdated_citations,
-            "graph_path_edges": graph_path_edges
+            "graph_path_edges": graph_path_edges,
+            "ranked_candidates": [
+                {
+                    "is_number": e[1]["standard"].get("is_number"),
+                    "title": e[1]["standard"].get("title"),
+                    "score": round(e[0], 3),
+                    "match_type": e[1].get("match_type")
+                }
+                for e in scored_list[:10]
+            ]
         }
+
