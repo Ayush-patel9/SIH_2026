@@ -3,7 +3,7 @@ import uuid
 import hashlib
 import logging
 from datetime import datetime, timezone
-from typing import Dict, Any, List, Optional, Union
+from typing import Dict, Any, List, Optional, Union, Callable
 
 from pipeline.config.api_contract_models import (
     QueryRequest,
