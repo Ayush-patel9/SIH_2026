@@ -1215,5 +1215,98 @@
     "General Industrial & Infrastructure": 2,
     "Footwear & Personal Protective Equipment": 1,
     "Consumer Products, Toys & Domestic Appliances": 17
-  }
+  },
+  "qco_orders": [
+    {
+      "is_number": "IS 269:2015",
+      "product_category": "Cement & Construction Binders",
+      "products": [
+        "Ordinary Portland Cement 33 Grade",
+        "Ordinary Portland Cement 43 Grade",
+        "Ordinary Portland Cement 53 Grade",
+        "Portland Slag Cement IS 455:2015"
+      ],
+      "scheme": "BIS_ISI_MARK",
+      "mandatory": true,
+      "enforcement_date": "2003-10-01",
+      "gazette_ref": "GSR 739(E)",
+      "notifying_ministry": "Ministry of Commerce and Industry"
+    },
+    {
+      "is_number": "IS 1786:2008",
+      "product_category": "Steel & Structural Products",
+      "products": [
+        "High Strength Deformed Steel Bars (TMT Fe 415, Fe 500, Fe 500D, Fe 550, Fe 550D, Fe 600) and Wires for Concrete Reinforcement"
+      ],
+      "scheme": "BIS_ISI_MARK",
+      "mandatory": true,
+      "enforcement_date": "2018-01-16",
+      "gazette_ref": "GSR 254(E)",
+      "notifying_ministry": "Ministry of Steel"
+    },
+    {
+      "is_number": "IS 3196:2015",
+      "product_category": "Gas Cylinders & Pressure Vessels",
+      "products": [
+        "Welded Low Carbon Steel Cylinders Exceeding 5 Litre Water Capacity for Low Pressure Liquefiable Gases (LPG Cylinders)"
+      ],
+      "scheme": "BIS_ISI_MARK",
+      "mandatory": true,
+      "enforcement_date": "2020-04-01",
+      "gazette_ref": "GSR 892(E)",
+      "notifying_ministry": "Ministry of Petroleum and Natural Gas"
+    },
+    {
+      "is_number": "IS 16102:2012",
+      "product_category": "Electrical & Lighting",
+      "products": [
+        "Self-Ballasted LED Lamps for General Lighting Services",
+        "Part 1 Safety Requirements",
+        "Part 2 Performance Requirements"
+      ],
+      "scheme": "BIS_ISI_MARK",
+      "mandatory": true,
+      "enforcement_date": "2017-03-01",
+      "gazette_ref": "GSR 565(E)",
+      "notifying_ministry": "Ministry of Power / BEE"
+    },
+    {
+      "is_number": "IS 4984:2016",
+      "product_category": "Pipes & Water Supply",
+      "products": [
+        "High Density Polyethylene (HDPE) Pipes for Water Supply — Specification"
+      ],
+      "scheme": "BIS_ISI_MARK",
+      "mandatory": true,
+      "enforcement_date": "2021-09-01",
+      "gazette_ref": "GSR 341(E)",
+      "notifying_ministry": "Ministry of Jal Shakti / DPIIT"
+    },
+    {
+      "is_number": "IS 4151:2015",
+      "product_category": "Automotive & Personal Protective Equipment",
+      "products": [
+        "Protective Helmets for Two-Wheeler Riders — Specification"
+      ],
+      "scheme": "BIS_ISI_MARK",
+      "mandatory": true,
+      "enforcement_date": "2022-01-01",
+      "gazette_ref": "GSR 188(E)",
+      "notifying_ministry": "Ministry of Road Transport and Highways (MoRTH)"
+    },
+    {
+      "is_number": "IS 9873:2014",
+      "product_category": "Consumer Goods & Toys",
+      "products": [
+        "Safety of Toys Part 1 Safety Aspects Related to Mechanical and Physical Properties",
+        "Part 2 Flammability",
+        "Part 3 Migration of Certain Elements"
+      ],
+      "scheme": "BIS_ISI_MARK",
+      "mandatory": true,
+      "enforcement_date": "2020-09-01",
+      "gazette_ref": "GSR 766(E)",
+      "notifying_ministry": "DPIIT / Ministry of Commerce and Industry"
+    }
+  ]
 }
