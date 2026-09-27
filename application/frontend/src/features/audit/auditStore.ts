@@ -29,6 +29,10 @@ export const AuditStore = {
     }
   },
 
+  add(response: StandardsResponse): void {
+    this.save(response);
+  },
+
   getAll(): StoredAuditRecord[] {
     try {
       const records: StoredAuditRecord[] = [];

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { DOMAIN_PRESETS, CEMENT_MOCK_DATA, ConfidenceBreakdownBar, KnowledgeGraphViewer, ReasoningTimeline } from './features/explainability';
-import { AuditTrailView } from './features/audit';
+import { AuditTrailView, AuditStore } from './features/audit';
 import { FeedbackView } from './features/feedback';
 import { AlertsView, NotificationBell, AlertDrawer } from './features/alerts';
 import { ComparisonView } from './features/comparison';
@@ -388,6 +388,7 @@ export default function App() {
 
       if (result) {
         setActiveData(result);
+        AuditStore.add(result);
         const conf = result.primary_recommendation?.confidence ? `${(result.primary_recommendation.confidence * 100).toFixed(0)}%` : '98%';
         setMessages((prev) => [
           ...prev,
@@ -405,6 +406,7 @@ export default function App() {
       const preset = DOMAIN_PRESETS[selectedDomain];
       if (preset) {
         setActiveData(preset.data);
+        AuditStore.add(preset.data);
       }
     } finally {
       setIsLoading(false);
@@ -418,6 +420,7 @@ export default function App() {
     if (preset) {
       setSearchQuery(preset.query);
       setActiveData(preset.data);
+      AuditStore.add(preset.data);
     }
   };
 
