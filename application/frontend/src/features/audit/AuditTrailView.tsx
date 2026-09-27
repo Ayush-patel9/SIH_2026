@@ -33,8 +33,32 @@ export const AuditTrailView: React.FC<AuditTrailViewProps> = ({
     setActiveTab('verify');
   };
 
+  const hasDryRun = history.some((h) => h.response.audit_record?.dry_run) || currentData?.audit_record?.dry_run;
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      {hasDryRun && (
+        <div
+          style={{
+            background: '#FEF3C7',
+            border: '1px solid #F59E0B',
+            padding: '12px 16px',
+            borderRadius: '6px',
+            color: '#92400E',
+            fontSize: '13px',
+            lineHeight: 1.5,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+          }}
+        >
+          <span style={{ fontSize: '18px' }}>⚠️</span>
+          <span>
+            <strong>SANDBOX MODE</strong> — Queries marked DRY RUN are not logged to the permanent government audit trail. Use this mode to test draft specifications before finalizing your NIT.
+          </span>
+        </div>
+      )}
+
       {/* Top Audit Vault Stats & Action Bar */}
       <div className="workbench-card" style={{ borderLeft: '4px solid var(--collapse-cobalt)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>

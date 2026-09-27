@@ -8,12 +8,10 @@ export const MCPConfigSnippet: React.FC = () => {
     claude: JSON.stringify(
       {
         mcpServers: {
-          'manakai-standards': {
-            command: 'python3',
-            args: ['/absolute/path/to/SIH2026/application/mcp_server/server.py', '--stdio'],
-            env: {
-              PYTHONPATH: '/absolute/path/to/SIH2026/application/mcp_server',
-            },
+          'bis-standards-intelligence': {
+            command: 'python',
+            args: ['application/mcp_server/server.py'],
+            env: { GEMINI_API_KEYS: 'your-key-here' },
           },
         },
       },

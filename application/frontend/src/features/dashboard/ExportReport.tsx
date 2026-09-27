@@ -7,10 +7,48 @@
 
 import React from 'react';
 import type { DashboardMetrics } from './metricsAggregator';
+import { AuditStore } from '../audit/auditStore';
 
 interface ExportReportProps {
   metrics: DashboardMetrics;
   onRefresh?: () => void;
+}
+
+export function exportMISReportCSV(): void {
+  const records = AuditStore.getAll();
+  const header = ['Query ID', 'Standard IS Number', 'Title', 'Confidence', 'Mode', 'Timestamp', 'Domain', 'Ministry'];
+  const rows = records.map((rec) => {
+    const resp = rec.response;
+    const qId = resp.meta?.query_id || rec.id;
+    const isNum = resp.primary_recommendation?.is_number || 'N/A';
+    const title = `"${(resp.primary_recommendation?.title || '').replace(/"/g, '""')}"`;
+    const conf = resp.primary_recommendation?.confidence != null ? resp.primary_recommendation.confidence.toFixed(2) : '1.00';
+    const mode = resp.meta?.mode || (resp.audit_record?.dry_run ? 'dry_run' : 'recommend');
+    const ts = resp.meta?.timestamp || (rec.savedAt ? new Date(rec.savedAt).toISOString() : new Date().toISOString());
+    const domain = (resp as any).meta?.domain || (resp.primary_recommendation?.ics_codes && resp.primary_recommendation.ics_codes[0]) || 'General';
+    const ministry = `"${(resp.primary_recommendation?.certification?.notifying_ministry || 'Ministry of Commerce & Industry').replace(/"/g, '""')}"`;
+    return [qId, isNum, title, conf, mode, ts, domain, ministry].join(',');
+  });
+
+  const csvContent = [header.join(','), ...rows].join('\n');
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `ManakAI_MIS_Report_${new Date().toISOString().slice(0, 10)}.csv`;
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+export function downloadMetricsJSON(metrics: DashboardMetrics): void {
+  const jsonStr = JSON.stringify(metrics, null, 2);
+  const blob = new Blob([jsonStr], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `ManakAI_Metrics_${new Date().toISOString().slice(0, 10)}.json`;
+  link.click();
+  URL.revokeObjectURL(url);
 }
 
 export function exportDashboardReportCSV(metrics: DashboardMetrics): void {
@@ -197,10 +235,26 @@ export const ExportReport: React.FC<ExportReportProps> = ({ metrics, onRefresh }
         <button
           type="button"
           className="btn-run"
-          onClick={() => exportDashboardReportCSV(metrics)}
+          onClick={() => exportMISReportCSV()}
           style={{ fontSize: '12px', padding: '6px 14px' }}
         >
-          ⬇️ Export Analytics CSV
+          📊 Export MIS Report (CSV)
+        </button>
+        <button
+          type="button"
+          className="palette-btn"
+          onClick={() => downloadMetricsJSON(metrics)}
+          style={{ fontSize: '12px', padding: '6px 12px' }}
+        >
+          📦 Download JSON
+        </button>
+        <button
+          type="button"
+          className="palette-btn"
+          onClick={() => exportDashboardReportCSV(metrics)}
+          style={{ fontSize: '12px', padding: '6px 12px' }}
+        >
+          ⬇️ Executive CSV
         </button>
       </div>
     </div>

@@ -18,6 +18,30 @@ export interface MCPToolDefinition {
 
 export const MCP_TOOLS_MANIFEST: MCPToolDefinition[] = [
   {
+    name: 'search_standards',
+    description: 'Searches BIS Indian Standards via GraphRAG pipeline and returns primary recommendation.',
+    category: 'core',
+    parameters: [
+      { name: 'query', type: 'string', required: true, default: '43 grade OPC cement for highway construction', description: 'Product or technical specification search query' },
+    ],
+  },
+  {
+    name: 'check_certification',
+    description: 'Verifies mandatory BIS ISI / CRS certification requirements and quality control order status for an IS standard.',
+    category: 'regulatory',
+    parameters: [
+      { name: 'is_number', type: 'string', required: true, default: 'IS 269:2015', description: 'Indian Standard number (e.g. IS 269:2015)' },
+    ],
+  },
+  {
+    name: 'get_normative_refs',
+    description: 'Returns normative reference graph edges, test methods, and allied cross-referenced standards for an IS number.',
+    category: 'core',
+    parameters: [
+      { name: 'is_number', type: 'string', required: true, default: 'IS 269:2015', description: 'Indian Standard number' },
+    ],
+  },
+  {
     name: 'get_standard_recommendation',
     description: 'Returns the applicable BIS Indian Standard for a given procurement product query. Returns IS number, title, status, certification requirements, confidence, and reasoning trace.',
     category: 'core',
@@ -116,6 +140,36 @@ export async function executeMCPTool(
   let output: any;
 
   switch (toolName) {
+    case 'search_standards': {
+      output = {
+        standards: [currentData.primary_recommendation],
+        total: 1,
+        source: 'ManakAI GraphRAG',
+      };
+      break;
+    }
+
+    case 'check_certification': {
+      const isNum = (parameters.is_number || currentData.primary_recommendation?.is_number || 'IS 269:2015').toUpperCase();
+      output = {
+        is_number: isNum,
+        mandatory: true,
+        scheme: currentData.primary_recommendation?.certification?.scheme || 'BIS_ISI_MARK',
+        certification_body: 'Bureau of Indian Standards',
+      };
+      break;
+    }
+
+    case 'get_normative_refs': {
+      const isNum = parameters.is_number || currentData.primary_recommendation?.is_number || 'IS 269:2015';
+      output = {
+        is_number: isNum,
+        test_methods: ['IS 4031:1988', 'IS 4032:1985'],
+        allied: (currentData.allied_standards || []).map((s) => s.is_number),
+      };
+      break;
+    }
+
     case 'get_standard_recommendation': {
       const q = (parameters.query || '').toLowerCase();
       const isSteel = q.includes('steel') || q.includes('plate') || q.includes('rebar');
