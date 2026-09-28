@@ -696,19 +696,21 @@ export default function App({ onLogout }: AppProps = {}) {
           {/* Feature 01: Standards Explorer */}
           {activeFeature === 'explainability' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '22px', maxWidth: '1040px', margin: '0 auto', width: '100%' }}>
-              {/* Sovereign Editorial Hero */}
-              <div className="editorial-hero">
-                <div className="editorial-hero-tag">
+              {/* Friendly Hero */}
+              <div className="editorial-hero" style={{ padding: '24px 20px 16px', textAlign: 'center' }}>
+                <div className="editorial-hero-tag" style={{ margin: '0 auto 8px' }}>
                   <Sparkles size={12} />
-                  <span>Normative Intelligence System</span>
+                  <span>BIS Standards Platform</span>
                 </div>
-                <h1 className="editorial-hero-title">Standards Intelligence Engine</h1>
-                <p className="editorial-hero-subtitle">
-                  Search 22,000+ Indian Standards (IS), mandatory Quality Control Orders (QCOs), and procurement specifications with automated self-reflective reasoning and cryptographic audit trails.
+                <h1 className="editorial-hero-title" style={{ fontSize: '26px', marginBottom: '6px' }}>
+                  Indian Standards (IS) Explorer
+                </h1>
+                <p className="editorial-hero-subtitle" style={{ maxWidth: '640px', margin: '0 auto', fontSize: '13.5px' }}>
+                  Search 22,000+ Indian Standards to verify active specifications, mandatory ISI mark (QCO) rules, and laboratory testing protocols.
                 </p>
               </div>
 
-              {/* Spotlight Search Header */}
+              {/* Clean Spotlight Search Box */}
               <div className="spotlight-search-container">
                 <div className="spotlight-search-box">
                   <span className="spotlight-search-icon">🔍</span>
@@ -719,7 +721,7 @@ export default function App({ onLogout }: AppProps = {}) {
                     onKeyDown={(e) => {
                       if (e.key === 'Enter') handleAnalyze();
                     }}
-                    placeholder="Search 22,000+ Indian Standards (IS), materials, or tender clauses..."
+                    placeholder="Search by product name (e.g., Fire Extinguisher, Cement, Steel) or standard code (e.g., IS 15683, IS 269)..."
                     className="spotlight-search-input"
                   />
                   <div className="spotlight-search-actions">
@@ -737,19 +739,56 @@ export default function App({ onLogout }: AppProps = {}) {
                       className="btn-primary"
                       onClick={() => handleAnalyze()}
                       disabled={isLoading}
-                      style={{ height: '34px', padding: '0 16px', fontSize: '12.5px' }}
+                      style={{ height: '34px', padding: '0 18px', fontSize: '13px', fontWeight: 600 }}
                     >
-                      {isLoading ? 'Analyzing...' : 'Search'}
+                      {isLoading ? 'Searching...' : 'Search'}
                     </button>
                   </div>
                 </div>
 
-                {/* Subtle Unified Role & Status Bar */}
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span style={{ fontSize: '12px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
-                      Search 22,011 Standards by Product, Grade, Tender Clause, or IS Citation
+                {/* Friendly Quick-Click Sample Demos */}
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginTop: '10px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                    <span style={{ fontSize: '11px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)', fontWeight: 600 }}>
+                      Quick Demos:
                     </span>
+                    {[
+                      { code: 'IS 15683', label: '🧯 Fire Extinguishers', query: 'Portable fire extinguishers IS 15683' },
+                      { code: 'IS 269', label: '🏛️ Cement', query: 'Ordinary Portland Cement 43 Grade IS 269' },
+                      { code: 'IS 1786', label: '🏗️ TMT Rebars', query: 'High strength deformed steel bars Fe 500D IS 1786' },
+                      { code: 'IS 4984', label: '💧 Water Pipes', query: 'HDPE pipes for potable water IS 4984' },
+                      { code: 'IS 7098', label: '⚡ Power Cables', query: 'XLPE insulated power cables IS 7098' },
+                    ].map((demo) => (
+                      <button
+                        key={demo.code}
+                        type="button"
+                        onClick={() => {
+                          setSearchQuery(demo.query);
+                          handleAnalyze(demo.query);
+                        }}
+                        style={{
+                          background: 'var(--surface-secondary)',
+                          border: '1px solid var(--hairline)',
+                          borderRadius: '16px',
+                          padding: '3px 10px',
+                          fontSize: '11px',
+                          cursor: 'pointer',
+                          color: 'var(--ink)',
+                          fontWeight: 500,
+                          transition: 'all 0.15s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.borderColor = 'var(--collapse-cobalt, #2563EB)';
+                          e.currentTarget.style.color = '#2563EB';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.borderColor = 'var(--hairline)';
+                          e.currentTarget.style.color = 'var(--ink)';
+                        }}
+                      >
+                        {demo.label}
+                      </button>
+                    ))}
                   </div>
 
                   {/* Active Role Workspace Badge */}

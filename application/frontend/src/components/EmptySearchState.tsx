@@ -51,8 +51,8 @@ export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSamp
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '48px 24px',
-        maxWidth: '880px',
+        padding: '36px 20px',
+        maxWidth: '820px',
         margin: '0 auto',
         width: '100%',
         animation: 'fadeIn 0.25s ease-out',
@@ -61,79 +61,60 @@ export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSamp
       {/* Icon Badge */}
       <div
         style={{
-          width: '64px',
-          height: '64px',
-          borderRadius: '16px',
-          background: 'linear-gradient(135deg, rgba(37,99,235,0.12) 0%, rgba(16,185,129,0.12) 100%)',
-          border: '1px solid rgba(37,99,235,0.2)',
+          width: '54px',
+          height: '54px',
+          borderRadius: '14px',
+          background: '#EFF6FF',
+          border: '1px solid #BFDBFE',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          marginBottom: '20px',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
+          marginBottom: '16px',
         }}
       >
-        <Search size={30} style={{ color: 'var(--brand-primary, #2563eb)' }} />
+        <Search size={26} style={{ color: '#2563EB' }} />
       </div>
 
       {/* Main Headline */}
       <h2
         style={{
           fontFamily: 'var(--font-ui)',
-          fontSize: '24px',
+          fontSize: '22px',
           fontWeight: 700,
           color: 'var(--ink)',
-          marginBottom: '8px',
+          marginBottom: '6px',
           textAlign: 'center',
-          letterSpacing: '-0.02em',
+          letterSpacing: '-0.015em',
         }}
       >
-        Search 22,000+ Indian Standards
+        Search Any Indian Standard or Material
       </h2>
 
       {/* Subtitle */}
       <p
         style={{
           fontFamily: 'var(--font-ui)',
-          fontSize: '14px',
+          fontSize: '13.5px',
           color: 'var(--ink-secondary)',
           textAlign: 'center',
-          maxWidth: '560px',
+          maxWidth: '520px',
           lineHeight: 1.5,
-          marginBottom: '32px',
+          marginBottom: '26px',
         }}
       >
-        Type any product name, engineering material, tender clause, or IS citation into the search bar above to begin real-time GraphRAG compliance analysis.
+        Type a product name, material, or standard number above, or click a quick sample below to see an instant compliance report:
       </p>
 
       {/* Quick Start Prompt Cards */}
-      <div style={{ width: '100%', marginBottom: '32px' }}>
-        <div
-          style={{
-            fontSize: '11.5px',
-            fontFamily: 'var(--font-data)',
-            fontWeight: 700,
-            textTransform: 'uppercase',
-            letterSpacing: '0.08em',
-            color: 'var(--ink-muted)',
-            marginBottom: '12px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '6px',
-          }}
-        >
-          <Zap size={13} style={{ color: '#F59E0B' }} />
-          <span>Quick Sample Queries (Click to test live engine)</span>
-        </div>
-
+      <div style={{ width: '100%', marginBottom: '24px' }}>
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
             gap: '12px',
           }}
         >
-          {SAMPLE_QUERIES.map((sample, idx) => (
+          {SAMPLE_QUERIES.slice(0, 4).map((sample, idx) => (
             <button
               key={idx}
               type="button"
@@ -145,16 +126,15 @@ export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSamp
                 alignItems: 'flex-start',
                 textAlign: 'left',
                 padding: '14px 16px',
-                borderRadius: 'var(--radius-sm)',
+                borderRadius: '8px',
                 border: '1px solid var(--hairline)',
-                background: 'var(--paper)',
+                background: '#FFFFFF',
                 cursor: 'pointer',
                 transition: 'all 0.15s ease',
-                position: 'relative',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = 'var(--brand-primary, #2563eb)';
-                e.currentTarget.style.boxShadow = '0 4px 14px rgba(37,99,235,0.08)';
+                e.currentTarget.style.borderColor = '#2563EB';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(37,99,235,0.08)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'var(--hairline)';
@@ -167,8 +147,8 @@ export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSamp
                     fontFamily: 'var(--font-data)',
                     fontSize: '11px',
                     fontWeight: 700,
-                    color: 'var(--brand-primary, #2563eb)',
-                    background: 'rgba(37,99,235,0.08)',
+                    color: '#2563EB',
+                    background: '#EFF6FF',
                     padding: '2px 8px',
                     borderRadius: '4px',
                   }}
@@ -200,34 +180,18 @@ export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSamp
               >
                 {sample.title}
               </h4>
-              <p
-                style={{
-                  fontFamily: 'var(--font-ui)',
-                  fontSize: '11.5px',
-                  color: 'var(--ink-muted)',
-                  margin: 0,
-                  lineHeight: 1.4,
-                  display: '-webkit-box',
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: 'vertical',
-                  overflow: 'hidden',
-                }}
-              >
-                "{sample.query}"
-              </p>
               <div
                 style={{
-                  marginTop: '10px',
+                  marginTop: '8px',
                   display: 'flex',
                   alignItems: 'center',
                   gap: '4px',
-                  fontSize: '11px',
+                  fontSize: '11.5px',
                   fontWeight: 600,
-                  color: 'var(--brand-primary, #2563eb)',
+                  color: '#2563EB',
                 }}
               >
-                <span>Run Analysis</span>
-                <ArrowRight size={12} />
+                <span>Click to View &rarr;</span>
               </div>
             </button>
           ))}
@@ -237,36 +201,32 @@ export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSamp
       {/* Feature Capabilities Grid */}
       <div
         style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-          gap: '12px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '24px',
+          flexWrap: 'wrap',
           width: '100%',
-          paddingTop: '20px',
+          paddingTop: '16px',
           borderTop: '1px solid var(--hairline)',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <ShieldCheck size={16} style={{ color: '#10B981', flexShrink: 0 }} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <ShieldCheck size={15} style={{ color: '#10B981' }} />
           <span style={{ fontSize: '12px', color: 'var(--ink-secondary)', fontWeight: 500 }}>
-            Zero-Hallucination Grounding
+            Mandatory ISI / QCO Rules
           </span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <GitBranch size={16} style={{ color: '#3B82F6', flexShrink: 0 }} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <GitBranch size={15} style={{ color: '#3B82F6' }} />
           <span style={{ fontSize: '12px', color: 'var(--ink-secondary)', fontWeight: 500 }}>
             Normative Knowledge Graph
           </span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <History size={16} style={{ color: '#F59E0B', flexShrink: 0 }} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <History size={15} style={{ color: '#F59E0B' }} />
           <span style={{ fontSize: '12px', color: 'var(--ink-secondary)', fontWeight: 500 }}>
-            Supersession Lineage Check
-          </span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <FileText size={16} style={{ color: '#8B5CF6', flexShrink: 0 }} />
-          <span style={{ fontSize: '12px', color: 'var(--ink-secondary)', fontWeight: 500 }}>
-            SHA-256 CVC Audit Sealing
+            Historical Lineage Checks
           </span>
         </div>
       </div>

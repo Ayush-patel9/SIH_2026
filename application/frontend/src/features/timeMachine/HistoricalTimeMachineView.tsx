@@ -6,6 +6,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import { API_BASE } from '../../api/standardsClient';
 import {
   History,
   Search,
@@ -50,113 +51,6 @@ interface StandardLineage {
   source?: string;
   total_epochs?: number;
 }
-
-interface TestCase {
-  code: string;
-  label: string;
-  domain: string;
-  type: 'WITHDRAWN_TRAP' | 'CONSOLIDATED' | 'MANDATORY_QCO' | 'CORE_CODE';
-}
-
-const TEST_CASES: TestCase[] = [
-  // 1. Fire Safety Consolidation
-  {
-    code: 'IS 15683',
-    label: 'Portable Fire Extinguishers',
-    domain: 'Fire Safety',
-    type: 'CONSOLIDATED',
-  },
-  {
-    code: 'IS 940',
-    label: 'Water Extinguishers (Withdrawn)',
-    domain: 'Fire Safety',
-    type: 'WITHDRAWN_TRAP',
-  },
-  {
-    code: 'IS 2171',
-    label: 'Dry Powder Extinguisher (Withdrawn)',
-    domain: 'Fire Safety',
-    type: 'WITHDRAWN_TRAP',
-  },
-
-  // 2. Civil & Cement
-  {
-    code: 'IS 8112',
-    label: '43-Grade Cement (Withdrawn -> IS 269)',
-    domain: 'Civil / Cement',
-    type: 'WITHDRAWN_TRAP',
-  },
-  {
-    code: 'IS 12269',
-    label: '53-Grade Cement (Withdrawn -> IS 269)',
-    domain: 'Civil / Cement',
-    type: 'WITHDRAWN_TRAP',
-  },
-  {
-    code: 'IS 269',
-    label: 'OPC Cement (Unified 33, 43, 53)',
-    domain: 'Civil / Cement',
-    type: 'MANDATORY_QCO',
-  },
-
-  // 3. Metallurgy & Steel Rebars
-  {
-    code: 'IS 1786',
-    label: 'Fe 500D TMT Rebars (Steel QCO)',
-    domain: 'Metallurgy',
-    type: 'MANDATORY_QCO',
-  },
-  {
-    code: 'IS 226',
-    label: 'Structural Steel (Withdrawn -> IS 2062)',
-    domain: 'Metallurgy',
-    type: 'WITHDRAWN_TRAP',
-  },
-  {
-    code: 'IS 2062',
-    label: 'Modern Structural Steel (E250/E350)',
-    domain: 'Metallurgy',
-    type: 'MANDATORY_QCO',
-  },
-
-  // 4. Electrical, Safety & Infrastructure
-  {
-    code: 'IS 7098',
-    label: 'XLPE Power Cables (Replaces PVC IS 1554)',
-    domain: 'Electrical',
-    type: 'MANDATORY_QCO',
-  },
-  {
-    code: 'IS 2925',
-    label: 'Industrial Safety Helmets (PPE QCO)',
-    domain: 'Safety PPE',
-    type: 'MANDATORY_QCO',
-  },
-  {
-    code: 'IS 10500',
-    label: 'Drinking Water Specification (JJM)',
-    domain: 'Public Health',
-    type: 'MANDATORY_QCO',
-  },
-  {
-    code: 'IS 456',
-    label: 'Plain & Reinforced Concrete Code',
-    domain: 'Structural Design',
-    type: 'CORE_CODE',
-  },
-  {
-    code: 'IS 13920',
-    label: 'Seismic Ductile Detailing Code',
-    domain: 'Earthquake Engg',
-    type: 'CORE_CODE',
-  },
-  {
-    code: 'IS 4984',
-    label: 'HDPE Pipes for Water Supply (PE100)',
-    domain: 'Plastics / Water',
-    type: 'MANDATORY_QCO',
-  },
-];
 
 // Offline fallback archive in case server is starting
 const LOCAL_FALLBACK_CEMENT: StandardLineage = {
@@ -211,16 +105,20 @@ export const HistoricalTimeMachineView: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [copiedClause, setCopiedClause] = useState(false);
-  const [activeCategoryFilter, setActiveCategoryFilter] = useState<string>('ALL');
 
   // Load standard lineage dynamically from backend API
   const fetchLineage = async (standardCode: string) => {
-    const trimmed = standardCode.trim();
+    let trimmed = standardCode.trim();
     if (!trimmed) return;
+
+    // Auto-normalize if user enters only digits (e.g. '15683' -> 'IS 15683')
+    if (/^\d+/.test(trimmed)) {
+      trimmed = `IS ${trimmed}`;
+    }
 
     setIsLoading(true);
     try {
-      const res = await fetch(`/api/v1/knowledge-graph/lineage?standard=${encodeURIComponent(trimmed)}`);
+      const res = await fetch(`${API_BASE}/api/v1/knowledge-graph/lineage?standard=${encodeURIComponent(trimmed)}`);
       if (res.ok) {
         const data: StandardLineage = await res.json();
         setLineage(data);
@@ -247,11 +145,6 @@ export const HistoricalTimeMachineView: React.FC = () => {
     }
   };
 
-  const handleTestCaseClick = (tc: TestCase) => {
-    setSearchQuery(tc.code);
-    fetchLineage(tc.code);
-  };
-
   const currentStep = lineage.evolution[activeEpochIndex] || lineage.evolution[lineage.evolution.length - 1];
 
   const handleCopyLegalClause = () => {
@@ -262,23 +155,18 @@ export const HistoricalTimeMachineView: React.FC = () => {
     setTimeout(() => setCopiedClause(false), 2000);
   };
 
-  const filteredTestCases =
-    activeCategoryFilter === 'ALL'
-      ? TEST_CASES
-      : TEST_CASES.filter((tc) => tc.domain.toLowerCase().includes(activeCategoryFilter.toLowerCase()));
-
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {/* Top Banner Card */}
       <div
         className="workbench-card"
         style={{
           borderLeft: '4px solid var(--focus-blue, #2563EB)',
           background: 'linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%)',
-          padding: '24px 28px',
+          padding: '22px 26px',
         }}
       >
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '14px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
               <span className="status-dot active" />
@@ -293,20 +181,6 @@ export const HistoricalTimeMachineView: React.FC = () => {
               >
                 STANDARDS HISTORICAL TIME-MACHINE (1950 — 2026)
               </span>
-              <span
-                style={{
-                  fontSize: '10px',
-                  padding: '2px 8px',
-                  borderRadius: '4px',
-                  background: '#EFF6FF',
-                  color: '#1D4ED8',
-                  fontWeight: 700,
-                  fontFamily: 'var(--font-data, monospace)',
-                  border: '1px solid #BFDBFE',
-                }}
-              >
-                SUPERSEDED LINEAGE ENGINE
-              </span>
             </div>
             <h1
               style={{
@@ -318,7 +192,7 @@ export const HistoricalTimeMachineView: React.FC = () => {
                 letterSpacing: '-0.015em',
               }}
             >
-              Standards Historical Evolution & Supersession Lineage
+              Standards Evolution & Supersession Lineage
             </h1>
             <p
               style={{
@@ -329,7 +203,7 @@ export const HistoricalTimeMachineView: React.FC = () => {
                 lineHeight: 1.5,
               }}
             >
-              Trace standard revisions through 75 years of Indian industrial development. Dynamically look up any of the <strong>22,011 Indian Standards</strong> to legally defend why historic clauses were superseded and identify active statutory replacements.
+              Trace why older standards were superseded, check withdrawn risks, and find statutory replacements across 22,011 Indian Standards.
             </p>
           </div>
 
@@ -349,7 +223,7 @@ export const HistoricalTimeMachineView: React.FC = () => {
                 border: '1px solid #CBD5E1',
               }}
             >
-              <Layers size={13} /> {lineage.evolution.length} HISTORICAL EPOCHS
+              <Layers size={13} /> {lineage.evolution.length} EPOCHS
             </span>
             <span
               style={{
@@ -372,17 +246,13 @@ export const HistoricalTimeMachineView: React.FC = () => {
         </div>
 
         {/* Dynamic Search Box */}
-        <form onSubmit={handleSearchSubmit} style={{ marginTop: '18px', paddingTop: '16px', borderTop: '1px solid var(--hairline, #E2E8F0)' }}>
-          <div style={{ fontFamily: 'var(--font-data, monospace)', fontSize: '11px', color: 'var(--ink-muted, #64748B)', fontWeight: 700, marginBottom: '8px' }}>
-            LOOKUP ANY STANDARD REVISION OR WITHDRAWN SPECIFICATION (22,011 STANDARDS):
-          </div>
-
+        <form onSubmit={handleSearchSubmit} style={{ marginTop: '16px', paddingTop: '14px', borderTop: '1px solid var(--hairline, #E2E8F0)' }}>
           <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
             <div style={{ flex: 1, position: 'relative', display: 'flex', alignItems: 'center' }}>
               <Search size={16} color="#64748B" style={{ position: 'absolute', left: '12px' }} />
               <input
                 type="text"
-                placeholder="Enter any standard code (e.g., IS 15683, IS 8112, IS 12269, IS 226, IS 456, IS 1786, IS 7098, IS 2925, IS 10500)..."
+                placeholder="Enter any standard code (e.g. IS 15683, IS 8112, IS 1786, IS 7098, IS 226, IS 10500)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="auth-input"
@@ -391,7 +261,7 @@ export const HistoricalTimeMachineView: React.FC = () => {
                   paddingLeft: '38px',
                   paddingRight: '12px',
                   fontSize: '13.5px',
-                  height: '42px',
+                  height: '40px',
                   borderRadius: '6px',
                   border: '1px solid #CBD5E1',
                 }}
@@ -406,108 +276,58 @@ export const HistoricalTimeMachineView: React.FC = () => {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '8px',
-                padding: '0 20px',
-                height: '42px',
+                padding: '0 18px',
+                height: '40px',
                 whiteSpace: 'nowrap',
                 fontSize: '13px',
                 fontWeight: 600,
                 cursor: 'pointer',
               }}
             >
-              {isLoading ? <RefreshCw size={15} className="spin" /> : <History size={16} />}
-              <span>{isLoading ? 'Tracing...' : 'Trace Lineage'}</span>
+              {isLoading ? <RefreshCw size={14} className="spin" /> : <History size={15} />}
+              <span>{isLoading ? 'Tracing...' : 'Trace'}</span>
             </button>
           </div>
         </form>
 
-        {/* Interactive Test Cases Header & Domain Pills */}
-        <div style={{ marginTop: '16px', paddingTop: '14px', borderTop: '1px dashed var(--hairline, #E2E8F0)' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px', marginBottom: '10px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <FlaskConical size={13} color="#2563EB" />
-              <span style={{ fontFamily: 'var(--font-data, monospace)', fontSize: '11px', fontWeight: 700, color: '#1E293B' }}>
-                CLICK TO TEST ANY HISTORICAL EVOLUTION TEST CASE:
-              </span>
-            </div>
-
-            <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
-              {['ALL', 'Fire', 'Cement', 'Metallurgy', 'Electrical', 'PPE'].map((dom) => (
-                <button
-                  key={dom}
-                  type="button"
-                  onClick={() => setActiveCategoryFilter(dom)}
-                  style={{
-                    padding: '2px 8px',
-                    borderRadius: '12px',
-                    fontSize: '10.5px',
-                    cursor: 'pointer',
-                    border: activeCategoryFilter === dom ? '1px solid #2563EB' : '1px solid #E2E8F0',
-                    background: activeCategoryFilter === dom ? '#EFF6FF' : '#FFFFFF',
-                    color: activeCategoryFilter === dom ? '#1D4ED8' : '#64748B',
-                    fontWeight: activeCategoryFilter === dom ? 700 : 500,
-                  }}
-                >
-                  {dom}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
-            {filteredTestCases.map((tc) => {
-              const isSelected = lineage.standard_code.includes(tc.code) || (lineage.withdrawn_alert && lineage.withdrawn_alert.code.includes(tc.code));
-              const isTrap = tc.type === 'WITHDRAWN_TRAP';
-              const isConsolidated = tc.type === 'CONSOLIDATED';
-
-              return (
-                <button
-                  key={tc.code}
-                  type="button"
-                  onClick={() => handleTestCaseClick(tc)}
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '5px',
-                    padding: '5px 12px',
-                    borderRadius: '6px',
-                    fontSize: '11.5px',
-                    fontFamily: 'var(--font-ui, sans-serif)',
-                    fontWeight: isSelected ? 700 : 500,
-                    cursor: 'pointer',
-                    transition: 'all 0.15s ease',
-                    border: isSelected
-                      ? '1.5px solid #2563EB'
-                      : isTrap
-                      ? '1px solid #FECACA'
-                      : '1px solid #E2E8F0',
-                    background: isSelected
-                      ? '#EFF6FF'
-                      : isTrap
-                      ? '#FFF5F5'
-                      : '#FFFFFF',
-                    color: isSelected
-                      ? '#1D4ED8'
-                      : isTrap
-                      ? '#991B1B'
-                      : '#334155',
-                    boxShadow: isSelected ? '0 2px 4px rgba(37, 99, 235, 0.1)' : 'none',
-                  }}
-                >
-                  <span
-                    style={{
-                      fontFamily: 'var(--font-data, monospace)',
-                      fontWeight: 700,
-                      color: isTrap ? '#DC2626' : isConsolidated ? '#047857' : '#0F172A',
-                    }}
-                  >
-                    {tc.code}
-                  </span>
-                  <span>·</span>
-                  <span style={{ fontSize: '11px', color: '#64748B' }}>{tc.label.split('(')[0]}</span>
-                </button>
-              );
-            })}
-          </div>
+        {/* Simple & Friendly Demo Presets */}
+        <div style={{ marginTop: '12px', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+          <span style={{ fontSize: '11px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)', fontWeight: 600, marginRight: '2px' }}>
+            Quick Demos:
+          </span>
+          {[
+            { code: 'IS 15683', label: '🧯 Fire Extinguishers (Consolidated)' },
+            { code: 'IS 8112', label: '⚠️ 43-Grade Cement (Withdrawn ➔ IS 269)' },
+            { code: 'IS 1786', label: '🏗️ TMT Rebars (Fe 500D)' },
+            { code: 'IS 7098', label: '⚡ XLPE Power Cables' },
+            { code: 'IS 226', label: '⚠️ Structural Steel (Withdrawn ➔ IS 2062)' },
+            { code: 'IS 2925', label: '🦺 Safety Helmets' },
+          ].map((item) => {
+            const isSelected = lineage.standard_code.includes(item.code) || (lineage.withdrawn_alert && lineage.withdrawn_alert.code.includes(item.code));
+            return (
+              <button
+                key={item.code}
+                type="button"
+                onClick={() => {
+                  setSearchQuery(item.code);
+                  fetchLineage(item.code);
+                }}
+                style={{
+                  background: isSelected ? '#EFF6FF' : 'var(--surface-secondary)',
+                  border: isSelected ? '1.5px solid #2563EB' : '1px solid var(--hairline)',
+                  color: isSelected ? '#1D4ED8' : 'var(--ink)',
+                  borderRadius: '16px',
+                  padding: '3px 10px',
+                  fontSize: '11px',
+                  cursor: 'pointer',
+                  fontWeight: isSelected ? 700 : 500,
+                  transition: 'all 0.15s ease',
+                }}
+              >
+                {item.label}
+              </button>
+            );
+          })}
         </div>
       </div>
 
