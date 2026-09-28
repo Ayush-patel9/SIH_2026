@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Search, Sparkles, Loader2 } from 'lucide-react';
 import type { StandardsResponse, AmbiguityOption } from '../../types';
 import { QueryEntityDisplay } from './QueryEntityDisplay';
 import { AmbiguityCard } from './AmbiguityCard';
@@ -7,9 +8,9 @@ import { QueryCorrectionForm } from './QueryCorrectionForm';
 import {
   buildRefinedQuery,
   applyQueryCorrection,
-  SAMPLE_AMBIGUOUS_QUERIES,
 } from './refinedQueryBuilder';
 import type { ManualEntityCorrections } from './refinedQueryBuilder';
+import { queryStandards } from '../../api/standardsClient';
 
 interface QueryUnderstandingViewProps {
   currentData: StandardsResponse;
@@ -21,6 +22,8 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
   onUpdateData,
 }) => {
   const [activeData, setActiveData] = useState<StandardsResponse>(currentData);
+  const [queryInput, setQueryInput] = useState<string>('');
+  const [isAnalyzing, setIsAnalyzing] = useState<boolean>(false);
   const [isCorrectionOpen, setIsCorrectionOpen] = useState<boolean>(false);
   const [resolutionNotice, setResolutionNotice] = useState<string | null>(null);
 
@@ -28,6 +31,21 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
   React.useEffect(() => {
     setActiveData(currentData);
   }, [currentData]);
+
+  const handleAnalyze = async (textToAnalyze?: string) => {
+    const query = textToAnalyze || queryInput;
+    if (!query.trim()) return;
+    setIsAnalyzing(true);
+    try {
+      const result = await queryStandards(query);
+      setActiveData(result);
+      if (onUpdateData) onUpdateData(result);
+    } catch (err) {
+      console.error('NLU query failed:', err);
+    } finally {
+      setIsAnalyzing(false);
+    }
+  };
 
   const handleResolveAmbiguity = (
     dimension: string,
@@ -59,14 +77,6 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
       'Officer Manual Override Applied: Entity understanding verified at 100% confidence.'
     );
     setTimeout(() => setResolutionNotice(null), 5000);
-  };
-
-  const handleSelectPreset = (presetId: string) => {
-    const preset = SAMPLE_AMBIGUOUS_QUERIES.find((p) => p.id === presetId);
-    if (preset) {
-      setActiveData(preset.data);
-      if (onUpdateData) onUpdateData(preset.data);
-    }
   };
 
   const qu = activeData.query_understanding;
@@ -104,35 +114,81 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
           </div>
         </div>
 
-        {/* Ambiguous Demo Scenario Switcher */}
-        <div style={{ marginTop: '14px', paddingTop: '12px', borderTop: '1px solid var(--hairline)' }}>
-          <div className="section-label" style={{ margin: '0 0 6px 0', fontSize: '10px' }}>
-            SIMULATE AMBIGUOUS TENDER QUERIES (CLICK TO TEST DISAMBIGUATION FLOW):
+        {/* Live Query Input Bar */}
+        <div style={{ marginTop: '16px', paddingTop: '14px', borderTop: '1px solid var(--hairline)' }}>
+          <div className="section-label" style={{ margin: '0 0 8px 0' }}>
+            ENTER TENDER SPECIFICATION OR AMBIGUOUS QUERY:
           </div>
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            {SAMPLE_AMBIGUOUS_QUERIES.map((preset) => (
-              <button
-                key={preset.id}
-                type="button"
-                className={`palette-btn ${activeData.meta.query_id === preset.data.meta.query_id ? 'selected' : ''}`}
-                onClick={() => handleSelectPreset(preset.id)}
-                style={{ fontSize: '11px' }}
-              >
-                ⚠️ {preset.domainLabel}
-              </button>
-            ))}
-
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            <div style={{ flex: 1, position: 'relative', display: 'flex', alignItems: 'center' }}>
+              <Search size={16} color="#71717A" style={{ position: 'absolute', left: '12px' }} />
+              <input
+                type="text"
+                placeholder="Enter tender clause or raw specification (e.g., Fe 500 TMT bars for coastal foundation, 53 grade cement for precast, HDPE pipes 110mm PN6)..."
+                value={queryInput}
+                onChange={(e) => setQueryInput(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') handleAnalyze();
+                }}
+                className="auth-input"
+                style={{
+                  width: '100%',
+                  paddingLeft: '36px',
+                  paddingRight: '12px',
+                  fontSize: '13px',
+                }}
+              />
+            </div>
             <button
               type="button"
-              className="btn-secondary"
-              style={{ fontSize: '11px', padding: '3px 8px' }}
-              onClick={() => {
-                setActiveData(currentData);
-                if (onUpdateData) onUpdateData(currentData);
+              onClick={() => handleAnalyze()}
+              disabled={isAnalyzing || !queryInput.trim()}
+              className="btn-primary"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '10px 18px',
+                whiteSpace: 'nowrap',
+                opacity: isAnalyzing || !queryInput.trim() ? 0.7 : 1,
               }}
             >
-              Reset to Active Workbench Data
+              {isAnalyzing ? (
+                <>
+                  <Loader2 size={15} className="spinner" />
+                  <span>Analyzing...</span>
+                </>
+              ) : (
+                <>
+                  <Sparkles size={15} />
+                  <span>Analyze Intent</span>
+                </>
+              )}
             </button>
+          </div>
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginTop: '8px', fontSize: '11.5px', color: 'var(--ink-muted)', flexWrap: 'wrap' }}>
+            <span>Quick tests:</span>
+            {['Fe 500D TMT bars for coastal RCC', '53 Grade Ordinary Portland Cement', 'HDPE water supply pipes PN 10'].map((ex) => (
+              <button
+                key={ex}
+                type="button"
+                onClick={() => {
+                  setQueryInput(ex);
+                  handleAnalyze(ex);
+                }}
+                style={{
+                  background: 'none',
+                  border: '1px dashed var(--hairline)',
+                  borderRadius: '3px',
+                  padding: '2px 8px',
+                  fontSize: '11px',
+                  color: 'var(--ink-secondary)',
+                  cursor: 'pointer',
+                }}
+              >
+                "{ex}"
+              </button>
+            ))}
           </div>
         </div>
 

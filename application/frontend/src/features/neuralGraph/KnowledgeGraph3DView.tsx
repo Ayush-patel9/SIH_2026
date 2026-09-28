@@ -299,7 +299,7 @@ export const KnowledgeGraph3DView: React.FC = () => {
               <Search size={14} color="#71717A" />
               <input
                 type="text"
-                placeholder="Search standard in mesh..."
+                placeholder="Search IS number (e.g. IS 1786)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={(e) => {
@@ -313,10 +313,28 @@ export const KnowledgeGraph3DView: React.FC = () => {
                   fontSize: '11.5px',
                   fontFamily: 'var(--font-ui)',
                   background: 'transparent',
-                  width: '160px',
+                  width: '180px',
                   color: 'var(--ink)',
                 }}
               />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => fetchDynamicSubgraph(searchQuery, activeFilter)}
+                  style={{
+                    border: 'none',
+                    background: 'var(--collapse-cobalt, #2563EB)',
+                    color: '#fff',
+                    borderRadius: '3px',
+                    padding: '2px 6px',
+                    fontSize: '10px',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                  }}
+                >
+                  Locate
+                </button>
+              )}
             </div>
             <span style={{ width: '1px', height: '14px', background: 'var(--hairline)' }} />
             <button
@@ -426,7 +444,7 @@ export const KnowledgeGraph3DView: React.FC = () => {
             <div>
               <div className="section-label">CONNECTED STANDARDS LINEAGE</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                {INITIAL_EDGES.filter((e) => e.source === selectedNode.id || e.target === selectedNode.id).map((edge, idx) => {
+                {edges.filter((e) => e.source === selectedNode.id || e.target === selectedNode.id).map((edge, idx) => {
                   const otherId = edge.source === selectedNode.id ? edge.target : edge.source;
                   const otherNode = nodes.find((n) => n.id === otherId);
                   if (!otherNode) return null;

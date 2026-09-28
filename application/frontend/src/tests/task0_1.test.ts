@@ -48,12 +48,12 @@ console.log('✓ All 5 Domain Presets verified in DOMAIN_PRESETS');
 let roleNotified = false;
 let modeNotified = false;
 const unsub = roleStore.subscribe(() => {
-  if (roleStore.getRole() === 'AUDITOR') roleNotified = true;
+  if (roleStore.getRole() === 'VENDOR') roleNotified = true;
   if (roleStore.getMode() === 'dry_run') modeNotified = true;
 });
 
-roleStore.setRole('AUDITOR');
-assert.strictEqual(roleStore.getRole(), 'AUDITOR');
+roleStore.setRole('VENDOR');
+assert.strictEqual(roleStore.getRole(), 'VENDOR');
 assert(roleNotified, 'roleStore subscription failed on setRole');
 
 roleStore.setMode('dry_run');
@@ -61,7 +61,7 @@ assert.strictEqual(roleStore.getMode(), 'dry_run');
 assert(modeNotified, 'roleStore subscription failed on setMode');
 
 // Reset to defaults
-roleStore.setRole('PROCUREMENT_OFFICER');
+roleStore.setRole('OFFICER');
 roleStore.setMode('recommend');
 unsub();
 console.log('✓ roleStore state management and subscriptions verified');

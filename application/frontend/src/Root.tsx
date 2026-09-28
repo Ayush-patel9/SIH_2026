@@ -70,7 +70,7 @@ export const Root: React.FC = () => {
   if (normalizedPath === '/login' || normalizedPath.startsWith('/login/')) {
     return (
       <LoginPage
-        initialRole={roleParam || session?.role || 'PROCUREMENT_OFFICER'}
+        initialRole={roleParam || session?.role || 'OFFICER'}
         initialMode={modeParam || 'signin'}
         onBack={() => navigate('/')}
         onSuccess={handleLoginSuccess}

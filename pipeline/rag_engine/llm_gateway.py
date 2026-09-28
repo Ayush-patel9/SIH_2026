@@ -107,12 +107,32 @@ class ReasoningSynthesisOutput(BaseModel):
 
     @classmethod
     def model_validate(cls, obj: Any, **kwargs) -> 'ReasoningSynthesisOutput':
-        """Override to coerce spec_draft_export.mandatory_certifications from str to list if needed."""
-        if isinstance(obj, dict) and 'spec_draft_export' in obj and isinstance(obj['spec_draft_export'], dict):
-            sde = obj['spec_draft_export']
-            for list_field in ['mandatory_certifications', 'quality_assurance_requirements', 'test_certificate_mandates']:
-                if list_field in sde and isinstance(sde[list_field], str):
-                    sde[list_field] = [sde[list_field]] if sde[list_field].strip() else []
+        """Override to coerce plain_language_explanation and spec_draft_export from flexible LLM output."""
+        if isinstance(obj, dict):
+            obj = dict(obj)
+            # 1. Coerce plain_language_explanation if string
+            if "plain_language_explanation" in obj:
+                ple = obj["plain_language_explanation"]
+                if isinstance(ple, str):
+                    obj["plain_language_explanation"] = {"enabled": True, "text": ple}
+                elif isinstance(ple, dict) and "text" not in ple:
+                    obj["plain_language_explanation"] = {"enabled": True, "text": str(ple)}
+            # 2. Coerce compliance_checklist items if strings
+            if "compliance_checklist" in obj and isinstance(obj["compliance_checklist"], list):
+                checklist = []
+                for item in obj["compliance_checklist"]:
+                    if isinstance(item, str):
+                        checklist.append({"item": item, "status": "PASS", "action_required": "Verify standard compliance"})
+                    elif isinstance(item, dict):
+                        checklist.append(item)
+                obj["compliance_checklist"] = checklist
+            # 3. Coerce spec_draft_export list fields
+            if 'spec_draft_export' in obj and isinstance(obj['spec_draft_export'], dict):
+                sde = dict(obj['spec_draft_export'])
+                for list_field in ['mandatory_certifications', 'quality_assurance_requirements', 'test_certificate_mandates']:
+                    if list_field in sde and isinstance(sde[list_field], str):
+                        sde[list_field] = [sde[list_field]] if sde[list_field].strip() else []
+                obj['spec_draft_export'] = sde
         return super().model_validate(obj, **kwargs)
 
 
@@ -127,8 +147,8 @@ class LLMGateway:
         self.keys = [k.strip() for k in raw_keys.split(",") if k.strip()]
         self._key_cycle = itertools.cycle(self.keys) if self.keys else None
         
-        self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", "gemini-3.8-flash")
-        self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", "gemini-3.8-flash")
+        self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", "gemini-3.5-flash-lite")
+        self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", "gemini-3.5-flash-lite")
         
         self._has_genai = False
         try:
@@ -500,18 +520,13 @@ class LLMGateway:
         }
 
     def _raw_generate_json(self, prompt: str, schema: Optional[Type[T]] = None, model_type: str = "flash") -> Dict[str, Any]:
-        """Internal low-level runner across available keys and models with instant circuit breaker."""
-        import time
+        """Internal low-level runner across available keys and models without artificial timers."""
         if not self.is_available():
             raise RuntimeError("LLM Gateway is in offline mode.")
 
-        now = time.time()
-        if hasattr(self, "_rate_limited_until") and now < self._rate_limited_until:
-            raise RuntimeError(f"LLM Gateway circuit breaker active (cooling down for {int(self._rate_limited_until - now)}s).")
-
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
-        fallback_models = [primary_model, "gemini-3.8-flash", "gemini-flash-latest"]
-        candidate_models = list(dict.fromkeys(fallback_models))[:2]
+        fallback_models = [primary_model, "gemini-3.5-flash-lite", "gemini-flash-lite-latest"]
+        candidate_models = list(dict.fromkeys(fallback_models))
         
         last_error = None
 
@@ -527,7 +542,7 @@ class LLMGateway:
                     response = model.generate_content(
                         full_prompt,
                         generation_config={"response_mime_type": "application/json"},
-                        request_options={"timeout": 6.0}
+                        request_options={"timeout": 180.0}
                     )
                     
                     text = response.text.strip()
@@ -543,13 +558,62 @@ class LLMGateway:
 
                 except Exception as e:
                     last_error = e
-                    # If quota exhausted (429), trip the 30s circuit breaker immediately
-                    if "429" in str(e) or "quota" in str(e).lower():
-                        self._rate_limited_until = time.time() + 30
-                        raise RuntimeError(f"Gemini API quota reached. Tripping instant fallback circuit breaker for 30s: {e}")
+                    logger.warning(f"LLM call on {model_name} (key {key[:8]}...) encountered issue: {e}")
                     continue
 
         raise RuntimeError(f"All LLM keys and models exhausted. Last error: {last_error}")
+
+    def generate_from_pdf(self, pdf_bytes: bytes, prompt: str, schema: Optional[Type[T]] = None, model_type: str = "flash") -> Dict[str, Any]:
+        """
+        Multimodal PDF direct generation using inline_data (identical to AiForBharat).
+        Directly sends PDF byte buffer to Gemini without any PDF text parser.
+        """
+        if not self.is_available():
+            raise RuntimeError("LLM Gateway is in offline mode.")
+
+        primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
+        fallback_models = [primary_model, "gemini-3.5-flash-lite", "gemini-flash-lite-latest"]
+        candidate_models = list(dict.fromkeys(fallback_models))
+        
+        last_error = None
+        pdf_part = {"inline_data": {"mime_type": "application/pdf", "data": pdf_bytes}}
+
+        for model_name in candidate_models:
+            for key in self.keys:
+                try:
+                    self.genai.configure(api_key=key)
+                    model = self.genai.GenerativeModel(model_name)
+                    
+                    system_instruction = (
+                        "You are an expert Indian Standards (BIS) and tender specification analyst. "
+                        "Read the attached PDF and output strict JSON only without markdown formatting."
+                    )
+                    full_prompt = f"{system_instruction}\n\nTask:\n{prompt}\n\nOutput JSON matching schema."
+                    
+                    response = model.generate_content(
+                        [pdf_part, full_prompt],
+                        generation_config={"response_mime_type": "application/json"},
+                        request_options={"timeout": 180.0}
+                    )
+                    
+                    text = response.text.strip()
+                    if text.startswith("```"):
+                        text = re.sub(r"^```(?:json)?\s*", "", text)
+                        text = re.sub(r"\s*```$", "", text)
+                    
+                    data = json.loads(text)
+                    if schema:
+                        validated = schema.model_validate(data)
+                        return validated.model_dump()
+                    return data
+
+                except Exception as e:
+                    last_error = e
+                    logger.warning(f"LLM PDF generation on {model_name} (key {key[:8]}...) encountered issue: {e}")
+                    continue
+
+        raise RuntimeError(f"All LLM keys and models exhausted for PDF generation. Last error: {last_error}")
+
 
 # Master singleton instance
 llm_gateway = LLMGateway()

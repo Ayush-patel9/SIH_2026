@@ -292,19 +292,19 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           >
             <button
               type="button"
-              onClick={() => onLogin('PROCUREMENT_OFFICER', 'signup')}
+              onClick={() => onLogin('OFFICER', 'signup')}
               style={{
                 backgroundColor: '#EDF7F1',
                 border: '1px solid #B7E4C7',
-                color: '#1B4332',
-                padding: '11px 20px',
+                color: '#2D6A4F',
+                padding: '12px 24px',
                 borderRadius: '8px',
-                fontSize: '13.5px',
+                fontSize: '14px',
                 fontWeight: 700,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '8px',
+                gap: '10px',
                 transition: 'all 0.15s ease',
               }}
               onMouseEnter={(e) => {
@@ -316,39 +316,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
-              <span>👔</span>
-              <span>Procurement Officer Gateway</span>
-              <span style={{ opacity: 0.6 }}>➔</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => onLogin('AUDITOR', 'signup')}
-              style={{
-                backgroundColor: '#EFF6FF',
-                border: '1px solid #BFDBFE',
-                color: '#1D4ED8',
-                padding: '11px 20px',
-                borderRadius: '8px',
-                fontSize: '13.5px',
-                fontWeight: 700,
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
-                transition: 'all 0.15s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#DBEAFE';
-                e.currentTarget.style.transform = 'translateY(-1px)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#EFF6FF';
-                e.currentTarget.style.transform = 'translateY(0)';
-              }}
-            >
-              <span>🔍</span>
-              <span>CAG & Vigilance Auditor Gateway</span>
+              <span style={{ fontSize: '18px' }}>🏛️</span>
+              <span>Tender Authority & Officer Gateway</span>
               <span style={{ opacity: 0.6 }}>➔</span>
             </button>
 
@@ -359,14 +328,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 backgroundColor: '#FBF7EC',
                 border: '1px solid #EAD9B5',
                 color: '#8A6922',
-                padding: '11px 20px',
+                padding: '12px 24px',
                 borderRadius: '8px',
-                fontSize: '13.5px',
+                fontSize: '14px',
                 fontWeight: 700,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '8px',
+                gap: '10px',
                 transition: 'all 0.15s ease',
               }}
               onMouseEnter={(e) => {
@@ -378,8 +347,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
-              <span>🏭</span>
-              <span>Industrial Vendor Gateway</span>
+              <span style={{ fontSize: '18px' }}>🏭</span>
+              <span>Industrial Vendor & MSME Gateway</span>
               <span style={{ opacity: 0.6 }}>➔</span>
             </button>
           </div>
@@ -451,7 +420,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               gap: '20px',
             }}
           >
-            {/* ROLE CARD 1: OFFICER */}
+            {/* UNIFIED ROLE CARD 1: TENDER AUTHORITY & TECHNICAL OFFICER */}
             <div
               onMouseEnter={() => setHoveredCard('officer')}
               onMouseLeave={() => setHoveredCard(null)}
@@ -459,7 +428,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 backgroundColor: '#FFFEFB',
                 border: `1px solid ${hoveredCard === 'officer' ? '#2D6A4F' : '#E5E0D4'}`,
                 borderRadius: '12px',
-                padding: '24px',
+                padding: '26px',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
@@ -475,23 +444,23 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '14px' }}>
                   <div
                     style={{
-                      width: '42px',
-                      height: '42px',
+                      width: '44px',
+                      height: '44px',
                       borderRadius: '8px',
                       backgroundColor: '#EDF7F1',
                       border: '1px solid #B7E4C7',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      fontSize: '20px',
+                      fontSize: '22px',
                     }}
                   >
-                    👔
+                    🏛️
                   </div>
                   <span
                     style={{
                       fontSize: '10.5px',
-                      padding: '3px 8px',
+                      padding: '4px 10px',
                       borderRadius: '4px',
                       backgroundColor: '#EDF7F1',
                       color: '#1B4332',
@@ -500,49 +469,49 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                       border: '1px solid #B7E4C7',
                     }}
                   >
-                    CPWD · NHAI · RAILWAYS
+                    CPWD · NHAI · RAILWAYS · CAG · CVC
                   </span>
                 </div>
 
-                <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1C2419', marginBottom: '6px' }}>
-                  Procurement Officer
+                <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#1C2419', marginBottom: '6px' }}>
+                  Tender Authority & Technical Officer
                 </h3>
-                <p style={{ fontSize: '13px', color: '#44503E', lineHeight: 1.5, marginBottom: '18px' }}>
-                  Draft legally compliant tender documents, verify mandatory QCOs, and eliminate withdrawn standards before publishing tenders.
+                <p style={{ fontSize: '13.5px', color: '#44503E', lineHeight: 1.5, marginBottom: '20px' }}>
+                  Draft legally compliant tender documents, verify mandatory Quality Control Orders, resolve AI engineering clarifications, and secure cryptographic SHA-256 evidence for CVC & CAG statutory audit defense.
                 </p>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '22px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12.5px', color: '#2E382A' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '24px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#2E382A' }}>
                     <span style={{ color: '#2D6A4F', fontWeight: 700 }}>✓</span>
-                    <span>Automated NIT specification & clause drafting</span>
+                    <span>3-Stage AI Tender Document Decomposition & Clause Redlines</span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12.5px', color: '#2E382A' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#2E382A' }}>
                     <span style={{ color: '#2D6A4F', fontWeight: 700 }}>✓</span>
-                    <span>Tender PDF clause ingestion & citation checker</span>
+                    <span>Human-in-the-Loop engineering clarifications with confidence boost</span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12.5px', color: '#2E382A' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#2E382A' }}>
                     <span style={{ color: '#2D6A4F', fontWeight: 700 }}>✓</span>
-                    <span>GeM & CPPP National E-Procurement sandbox</span>
+                    <span>Cryptographic SHA-256 seal & GFR Rule 144(xi) / 149 audit defensibility</span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12.5px', color: '#2E382A' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#2E382A' }}>
                     <span style={{ color: '#2D6A4F', fontWeight: 700 }}>✓</span>
-                    <span>Protected private audit ledger & saved clauses</span>
+                    <span>One-click statutory NIT specifications & CVC compliance dossier export</span>
                   </div>
                 </div>
               </div>
 
-              <div style={{ display: 'flex', gap: '8px' }}>
+              <div style={{ display: 'flex', gap: '10px' }}>
                 <button
                   type="button"
-                  onClick={() => onLogin('PROCUREMENT_OFFICER', 'signup')}
+                  onClick={() => onLogin('OFFICER', 'signup')}
                   style={{
                     flex: 1,
                     backgroundColor: '#2D6A4F',
                     color: '#FFFFFF',
                     border: 'none',
-                    padding: '10px 14px',
+                    padding: '11px 16px',
                     borderRadius: '6px',
-                    fontSize: '12.5px',
+                    fontSize: '13px',
                     fontWeight: 700,
                     cursor: 'pointer',
                     transition: 'background-color 0.15s',
@@ -550,143 +519,22 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                   onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1B4332')}
                   onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#2D6A4F')}
                 >
-                  Create Officer Account ➔
+                  Create Authority Account ➔
                 </button>
                 <button
                   type="button"
-                  onClick={() => onLogin('PROCUREMENT_OFFICER', 'signin')}
+                  onClick={() => onLogin('OFFICER', 'signin')}
                   style={{
                     backgroundColor: '#FAF8F2',
                     border: '1px solid #E5E0D4',
                     color: '#1C2419',
-                    padding: '10px 14px',
+                    padding: '11px 16px',
                     borderRadius: '6px',
-                    fontSize: '12.5px',
+                    fontSize: '13px',
                     fontWeight: 600,
                     cursor: 'pointer',
                   }}
                   title="Sign in to existing officer account"
-                >
-                  Sign In
-                </button>
-              </div>
-            </div>
-
-            {/* ROLE CARD 2: AUDITOR */}
-            <div
-              onMouseEnter={() => setHoveredCard('auditor')}
-              onMouseLeave={() => setHoveredCard(null)}
-              style={{
-                backgroundColor: '#FFFEFB',
-                border: `1px solid ${hoveredCard === 'auditor' ? '#1D4ED8' : '#E5E0D4'}`,
-                borderRadius: '12px',
-                padding: '24px',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                transition: 'all 0.2s ease',
-                transform: hoveredCard === 'auditor' ? 'translateY(-3px)' : 'none',
-                boxShadow:
-                  hoveredCard === 'auditor'
-                    ? '0 6px 20px -2px rgba(54, 69, 47, 0.08)'
-                    : '0 1px 3px 0 rgba(54, 69, 47, 0.04)',
-              }}
-            >
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '14px' }}>
-                  <div
-                    style={{
-                      width: '42px',
-                      height: '42px',
-                      borderRadius: '8px',
-                      backgroundColor: '#EFF6FF',
-                      border: '1px solid #BFDBFE',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: '20px',
-                    }}
-                  >
-                    🔍
-                  </div>
-                  <span
-                    style={{
-                      fontSize: '10.5px',
-                      padding: '3px 8px',
-                      borderRadius: '4px',
-                      backgroundColor: '#EFF6FF',
-                      color: '#1D4ED8',
-                      fontWeight: 700,
-                      fontFamily: 'var(--font-data)',
-                      border: '1px solid #BFDBFE',
-                    }}
-                  >
-                    CAG · CVC · VIGILANCE
-                  </span>
-                </div>
-
-                <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1C2419', marginBottom: '6px' }}>
-                  Statutory Auditor
-                </h3>
-                <p style={{ fontSize: '13px', color: '#44503E', lineHeight: 1.5, marginBottom: '18px' }}>
-                  Inspect historical procurement records, calculate financial disallowance exposures under GFR Rule 144(xi), and verify SHA-256 integrity proofs.
-                </p>
-
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '22px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12.5px', color: '#2E382A' }}>
-                    <span style={{ color: '#1D4ED8', fontWeight: 700 }}>✓</span>
-                    <span>CAG Discrepancy & Statutory Violation Scanner</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12.5px', color: '#2E382A' }}>
-                    <span style={{ color: '#1D4ED8', fontWeight: 700 }}>✓</span>
-                    <span>Cryptographic SHA-256 Hash Verification Ledger</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12.5px', color: '#2E382A' }}>
-                    <span style={{ color: '#1D4ED8', fontWeight: 700 }}>✓</span>
-                    <span>GFR Rule 149 / GFR Rule 144(xi) Audit Defense</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12.5px', color: '#2E382A' }}>
-                    <span style={{ color: '#1D4ED8', fontWeight: 700 }}>✓</span>
-                    <span>One-click CVC & CAG CSV/JSON Audit Dossier Export</span>
-                  </div>
-                </div>
-              </div>
-
-              <div style={{ display: 'flex', gap: '8px' }}>
-                <button
-                  type="button"
-                  onClick={() => onLogin('AUDITOR', 'signup')}
-                  style={{
-                    flex: 1,
-                    backgroundColor: '#1D4ED8',
-                    color: '#FFFFFF',
-                    border: 'none',
-                    padding: '10px 14px',
-                    borderRadius: '6px',
-                    fontSize: '12.5px',
-                    fontWeight: 700,
-                    cursor: 'pointer',
-                    transition: 'background-color 0.15s',
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1E40AF')}
-                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#1D4ED8')}
-                >
-                  Create Auditor Account ➔
-                </button>
-                <button
-                  type="button"
-                  onClick={() => onLogin('AUDITOR', 'signin')}
-                  style={{
-                    backgroundColor: '#FAF8F2',
-                    border: '1px solid #E5E0D4',
-                    color: '#1C2419',
-                    padding: '10px 14px',
-                    borderRadius: '6px',
-                    fontSize: '12.5px',
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                  }}
-                  title="Sign in to existing auditor account"
                 >
                   Sign In
                 </button>
@@ -846,7 +694,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
           <button
             type="button"
-            onClick={() => onLogin('PROCUREMENT_OFFICER', 'signup')}
+            onClick={() => onLogin('OFFICER', 'signup')}
             style={{
               backgroundColor: '#36452F',
               color: '#FFFEFB',

@@ -29,13 +29,8 @@ function isItemAllowedForRole(key: FeatureKey, role: UserRole): boolean {
     const disallowed: FeatureKey[] = ['nitGenerator', 'cagAudit', 'integrations', 'dashboard', 'feedback', 'mcp'];
     return !disallowed.includes(key);
   }
-  if (role === 'AUDITOR') {
-    const disallowed: FeatureKey[] = ['nitGenerator', 'integrations'];
-    return !disallowed.includes(key);
-  }
-  // PROCUREMENT_OFFICER or BIS_EXPERT
-  const disallowed: FeatureKey[] = ['cagAudit'];
-  return !disallowed.includes(key);
+  // OFFICER (Tender Authority & Technical Officer) has full access
+  return true;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -46,24 +41,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onToggleCollapse,
 }) => {
   const { session } = useSession();
-  const role: UserRole = session?.role || 'PROCUREMENT_OFFICER';
+  const role: UserRole = session?.role || 'OFFICER';
   const sections: NavSection[] = [
     {
       title: 'TENDERS & PROJECTS',
       items: [
         {
           key: 'projects',
-          label: role === 'VENDOR' ? 'Tender Marketplace' : 'Projects & Tender History',
+          label: role === 'VENDOR' ? 'Tender Marketplace' : 'Projects & Tenders',
           icon: '📁',
-          badge: 'RECENCY',
-          description: role === 'VENDOR' ? 'Explore active tenders & verify standards' : 'Recency drafts, AI suggestions & approval options',
-        },
-        {
-          key: 'tenderUpload',
-          label: 'Tender Upload & Standards',
-          icon: '📄',
-          badge: 'PDF / AI',
-          description: 'Upload PDF/Text tender to extract Indian Standards',
+          badge: 'MANAGED',
+          description: role === 'VENDOR' ? 'Explore active tenders & verify standards' : 'Procurement projects, tender ingestion & 3-stage intelligence',
         },
       ],
     },
@@ -305,15 +293,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
               padding: '8px 10px',
               borderRadius: '8px',
               background:
-                role === 'AUDITOR'
-                  ? 'rgba(59, 130, 246, 0.08)'
-                  : role === 'VENDOR'
+                role === 'VENDOR'
                   ? 'rgba(245, 158, 11, 0.08)'
                   : 'rgba(19, 136, 8, 0.08)',
               border: `1px solid ${
-                role === 'AUDITOR'
-                  ? 'rgba(59, 130, 246, 0.25)'
-                  : role === 'VENDOR'
+                role === 'VENDOR'
                   ? 'rgba(245, 158, 11, 0.25)'
                   : 'rgba(19, 136, 8, 0.25)'
               }`,
@@ -323,7 +307,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             }}
           >
             <span style={{ fontSize: '15px' }}>
-              {role === 'AUDITOR' ? '🔍' : role === 'VENDOR' ? '🏭' : '👔'}
+              {role === 'VENDOR' ? '🏭' : '🏛️'}
             </span>
             <div style={{ minWidth: 0, flex: 1 }}>
               <div
@@ -334,18 +318,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   textTransform: 'uppercase',
                   letterSpacing: '0.05em',
                   color:
-                    role === 'AUDITOR'
-                      ? '#1D4ED8'
-                      : role === 'VENDOR'
+                    role === 'VENDOR'
                       ? '#B45309'
                       : '#15803D',
                 }}
               >
-                {role === 'AUDITOR'
-                  ? 'Auditor Workspace'
-                  : role === 'VENDOR'
-                  ? 'Vendor Portal'
-                  : 'Procurement Workspace'}
+                {role === 'VENDOR'
+                  ? 'Industrial Vendor Portal'
+                  : 'Tender Authority Workspace'}
               </div>
               <div
                 style={{

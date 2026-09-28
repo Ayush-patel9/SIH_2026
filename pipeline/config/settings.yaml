@@ -9,7 +9,7 @@ storage:
   multilingual_dir: "data/06_multilingual_lexicon"
 
 network:
-  request_timeout_seconds: 30
+  request_timeout_seconds: 180
   max_retries: 5
   backoff_factor: 1.5
   concurrent_requests: 10

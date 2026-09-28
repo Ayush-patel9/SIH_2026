@@ -3,10 +3,7 @@ import type { StandardsResponse, AlternativeRecommendation } from '../../types';
 import { ConflictResolver } from './ConflictResolver';
 import { StandardsComparator } from './StandardsComparator';
 import { AlliedStandardsMatrix } from './AlliedStandardsMatrix';
-import {
-  buildFallbackAlternatives,
-  buildFallbackConflict,
-} from './comparisonUtils';
+
 
 interface ComparisonViewProps {
   currentData: StandardsResponse;
@@ -17,14 +14,16 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
   currentData,
   onPromotePrimary,
 }) => {
-  const [alternatives, setAlternatives] = useState<AlternativeRecommendation[]>([]);
+  const [alternatives, setAlternatives] = useState<AlternativeRecommendation[]>(
+    currentData.alternative_recommendations || []
+  );
 
-  // Update alternatives whenever currentData changes
+  // Update alternatives whenever currentData changes, without hardcoded fallbacks
   useEffect(() => {
-    setAlternatives(buildFallbackAlternatives(currentData));
+    setAlternatives(currentData.alternative_recommendations || []);
   }, [currentData]);
 
-  const conflict = buildFallbackConflict(currentData);
+  const conflict = currentData.conflict_resolution || null;
   const primary = currentData.primary_recommendation;
 
   const handleAddAlternative = (alt: AlternativeRecommendation) => {

@@ -10,13 +10,15 @@ interface LoginPageProps {
 }
 
 export const LoginPage: React.FC<LoginPageProps> = ({
-  initialRole = 'PROCUREMENT_OFFICER',
+  initialRole = 'OFFICER',
   initialMode = 'signin',
   onBack,
   onSuccess,
 }) => {
   const [authMode, setAuthMode] = useState<'signin' | 'signup'>(initialMode);
-  const [selectedRole, setSelectedRole] = useState<UserRole>(initialRole);
+  const normalizedInitialRole: UserRole =
+    (initialRole as any) === 'PROCUREMENT_OFFICER' || (initialRole as any) === 'AUDITOR' ? 'OFFICER' : initialRole;
+  const [selectedRole, setSelectedRole] = useState<UserRole>(normalizedInitialRole);
 
   // Form Fields
   const [name, setName] = useState('');
@@ -54,8 +56,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({
       password,
       organization,
       role: selectedRole,
-      ministry: selectedRole === 'PROCUREMENT_OFFICER' ? roleDetail : undefined,
-      auditOffice: selectedRole === 'AUDITOR' ? roleDetail : undefined,
+      ministry: selectedRole === 'OFFICER' ? roleDetail : undefined,
+      department: selectedRole === 'OFFICER' ? roleDetail : undefined,
       gstin: selectedRole === 'VENDOR' ? roleDetail : undefined,
     });
 
@@ -338,58 +340,36 @@ export const LoginPage: React.FC<LoginPageProps> = ({
               <div
                 style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(3, 1fr)',
+                  gridTemplateColumns: '1fr 1fr',
                   backgroundColor: '#F5F0E6',
-                  padding: '3px',
+                  padding: '4px',
                   borderRadius: '8px',
                   border: '1px solid #E5E0D4',
-                  gap: '4px',
+                  gap: '6px',
                 }}
               >
                 <button
                   type="button"
-                  onClick={() => setSelectedRole('PROCUREMENT_OFFICER')}
+                  onClick={() => setSelectedRole('OFFICER')}
                   style={{
-                    backgroundColor: selectedRole === 'PROCUREMENT_OFFICER' ? '#2D6A4F' : 'transparent',
-                    color: selectedRole === 'PROCUREMENT_OFFICER' ? '#FFFFFF' : '#44503E',
+                    backgroundColor: selectedRole === 'OFFICER' ? '#2D6A4F' : 'transparent',
+                    color: selectedRole === 'OFFICER' ? '#FFFFFF' : '#44503E',
                     border: 'none',
-                    padding: '8px 4px',
+                    padding: '10px 8px',
                     borderRadius: '6px',
-                    fontSize: '11.5px',
+                    fontSize: '12px',
                     fontWeight: 700,
                     cursor: 'pointer',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    gap: '2px',
+                    gap: '3px',
                     transition: 'all 0.15s ease',
                   }}
                 >
-                  <span style={{ fontSize: '14px' }}>👔</span>
-                  <span>Officer</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setSelectedRole('AUDITOR')}
-                  style={{
-                    backgroundColor: selectedRole === 'AUDITOR' ? '#1D4ED8' : 'transparent',
-                    color: selectedRole === 'AUDITOR' ? '#FFFFFF' : '#44503E',
-                    border: 'none',
-                    padding: '8px 4px',
-                    borderRadius: '6px',
-                    fontSize: '11.5px',
-                    fontWeight: 700,
-                    cursor: 'pointer',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    gap: '2px',
-                    transition: 'all 0.15s ease',
-                  }}
-                >
-                  <span style={{ fontSize: '14px' }}>🔍</span>
-                  <span>Auditor</span>
+                  <span style={{ fontSize: '16px' }}>🏛️</span>
+                  <span>Tender Authority</span>
+                  <span style={{ fontSize: '10px', opacity: 0.85, fontWeight: 500 }}>Technical Officer & Auditor</span>
                 </button>
 
                 <button
@@ -399,20 +379,21 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                     backgroundColor: selectedRole === 'VENDOR' ? '#8A6922' : 'transparent',
                     color: selectedRole === 'VENDOR' ? '#FFFFFF' : '#44503E',
                     border: 'none',
-                    padding: '8px 4px',
+                    padding: '10px 8px',
                     borderRadius: '6px',
-                    fontSize: '11.5px',
+                    fontSize: '12px',
                     fontWeight: 700,
                     cursor: 'pointer',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    gap: '2px',
+                    gap: '3px',
                     transition: 'all 0.15s ease',
                   }}
                 >
-                  <span style={{ fontSize: '14px' }}>🏭</span>
-                  <span>Vendor</span>
+                  <span style={{ fontSize: '16px' }}>🏭</span>
+                  <span>Industrial Vendor</span>
+                  <span style={{ fontSize: '10px', opacity: 0.85, fontWeight: 500 }}>Bidders & MSMEs</span>
                 </button>
               </div>
             </div>
@@ -509,11 +490,9 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                 value={organization}
                 onChange={(e) => setOrganization(e.target.value)}
                 placeholder={
-                  selectedRole === 'PROCUREMENT_OFFICER'
-                    ? 'e.g. National Highways Authority of India'
-                    : selectedRole === 'AUDITOR'
-                    ? 'e.g. Office of Principal Directorate of Audit'
-                    : 'e.g. Tata Projects / L&T Construction'
+                  selectedRole === 'OFFICER'
+                    ? 'e.g. CPWD / National Highways Authority of India'
+                    : 'e.g. Tata Projects / L&T Construction / Infra Tech'
                 }
                 style={{
                   width: '100%',
@@ -535,19 +514,15 @@ export const LoginPage: React.FC<LoginPageProps> = ({
             {/* Dynamic Role Detail Field */}
             <div>
               <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: '#1C2419', marginBottom: '4px' }}>
-                {selectedRole === 'PROCUREMENT_OFFICER' && 'Ministry / Division Code'}
-                {selectedRole === 'AUDITOR' && 'Audit Directorate / Office'}
-                {selectedRole === 'VENDOR' && 'GSTIN or Udyam Registration'}
+                {selectedRole === 'OFFICER' ? 'Ministry / Division / Audit Directorate' : 'GSTIN or Udyam Registration'}
               </label>
               <input
                 type="text"
                 value={roleDetail}
                 onChange={(e) => setRoleDetail(e.target.value)}
                 placeholder={
-                  selectedRole === 'PROCUREMENT_OFFICER'
-                    ? 'Ministry of Road Transport & Highways'
-                    : selectedRole === 'AUDITOR'
-                    ? 'Principal Directorate of Commercial Audit, New Delhi'
+                  selectedRole === 'OFFICER'
+                    ? 'e.g. Ministry of Road Transport & Highways / Vigilance Division'
                     : 'e.g. 07AAACT2727Q1ZW'
                 }
                 style={{
@@ -571,10 +546,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({
               type="submit"
               style={{
                 backgroundColor:
-                  selectedRole === 'PROCUREMENT_OFFICER'
+                  selectedRole === 'OFFICER'
                     ? '#2D6A4F'
-                    : selectedRole === 'AUDITOR'
-                    ? '#1D4ED8'
                     : '#8A6922',
                 border: 'none',
                 color: '#FFFFFF',
@@ -588,7 +561,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                 transition: 'all 0.15s ease',
               }}
             >
-              Create Account & Launch {selectedRole === 'PROCUREMENT_OFFICER' ? 'Officer Workspace' : selectedRole === 'AUDITOR' ? 'Auditor Workspace' : 'Vendor Portal'} ➔
+              Create Account & Launch {selectedRole === 'OFFICER' ? 'Tender Authority Workspace' : 'Industrial Vendor Portal'} ➔
             </button>
 
             <div style={{ textAlign: 'center', marginTop: '6px' }}>

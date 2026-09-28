@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Search, Plus, Loader2 } from 'lucide-react';
 import type { PrimaryRecommendation, AlternativeRecommendation } from '../../types';
 import {
   COMPARISON_ATTRIBUTES,
@@ -6,6 +7,7 @@ import {
   detectConflicts,
   CANONICAL_STANDARDS_DB,
 } from './comparisonUtils';
+import { queryStandards } from '../../api/standardsClient';
 
 interface StandardsComparatorProps {
   primary: PrimaryRecommendation;
@@ -23,6 +25,8 @@ export const StandardsComparator: React.FC<StandardsComparatorProps> = ({
   onAddAlternative,
 }) => {
   const [selectedToAdd, setSelectedToAdd] = useState<string>('');
+  const [customISInput, setCustomISInput] = useState<string>('');
+  const [isQueryingCustom, setIsQueryingCustom] = useState<boolean>(false);
   const [showOnlyConflicts, setShowOnlyConflicts] = useState<boolean>(false);
 
   const availableToAdd = Object.values(CANONICAL_STANDARDS_DB).filter((std) => {
@@ -37,6 +41,48 @@ export const StandardsComparator: React.FC<StandardsComparatorProps> = ({
     if (std && onAddAlternative) {
       onAddAlternative(std);
       setSelectedToAdd('');
+    }
+  };
+
+  const handleAddCustom = async (codeToQuery?: string) => {
+    const raw = (codeToQuery || customISInput).trim();
+    if (!raw) return;
+
+    // Check if in canonical DB first
+    const matchedCanonical = Object.values(CANONICAL_STANDARDS_DB).find(
+      (c) => c.is_number.toLowerCase().includes(raw.toLowerCase()) || raw.toLowerCase().includes(c.is_number.toLowerCase())
+    );
+    if (matchedCanonical && onAddAlternative) {
+      onAddAlternative(matchedCanonical);
+      setCustomISInput('');
+      return;
+    }
+
+    // Otherwise query live backend
+    setIsQueryingCustom(true);
+    try {
+      const resp = await queryStandards(raw);
+      if (resp && resp.primary_recommendation && onAddAlternative) {
+        const prim = resp.primary_recommendation;
+        const newAlt: AlternativeRecommendation = {
+          is_number: prim.is_number,
+          title: prim.title,
+          full_title: prim.full_title || prim.title,
+          status: prim.status,
+          year_published: prim.year_published,
+          latest_amendment: prim.latest_amendment,
+          scope_snippet: prim.scope_snippet,
+          confidence: prim.confidence || 0.85,
+          why_not_primary: `Compared candidate standard queried via catalog for ${raw}.`,
+          certification: prim.certification,
+        };
+        onAddAlternative(newAlt);
+        setCustomISInput('');
+      }
+    } catch (err) {
+      console.warn('Could not query custom standard:', err);
+    } finally {
+      setIsQueryingCustom(false);
     }
   };
 
@@ -70,48 +116,122 @@ export const StandardsComparator: React.FC<StandardsComparatorProps> = ({
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
           {/* Conflict Highlight Filter */}
-          <button
-            type="button"
-            className={`palette-btn ${showOnlyConflicts ? 'selected' : ''}`}
-            onClick={() => setShowOnlyConflicts(!showOnlyConflicts)}
-            style={{ fontSize: '11px', display: 'flex', alignItems: 'center', gap: '4px' }}
-          >
-            <span>⚠️</span>
-            <span>Show Divergences Only ({conflictCount})</span>
-          </button>
+          {alternatives.length > 0 && (
+            <button
+              type="button"
+              className={`palette-btn ${showOnlyConflicts ? 'selected' : ''}`}
+              onClick={() => setShowOnlyConflicts(!showOnlyConflicts)}
+              style={{ fontSize: '11px', display: 'flex', alignItems: 'center', gap: '4px' }}
+            >
+              <span>⚠️</span>
+              <span>Show Divergences Only ({conflictCount})</span>
+            </button>
+          )}
 
-          {/* Add Standard Selector */}
+          {/* Add Standard via Custom Search */}
+          {onAddAlternative && (
+            <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+              <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+                <Search size={13} color="#71717A" style={{ position: 'absolute', left: '8px' }} />
+                <input
+                  type="text"
+                  placeholder="Enter IS code (e.g. IS 1489)..."
+                  value={customISInput}
+                  onChange={(e) => setCustomISInput(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') handleAddCustom();
+                  }}
+                  className="auth-input"
+                  style={{ width: '190px', paddingLeft: '26px', paddingRight: '6px', fontSize: '12px', height: '30px' }}
+                />
+              </div>
+              <button
+                type="button"
+                disabled={isQueryingCustom || !customISInput.trim()}
+                onClick={() => handleAddCustom()}
+                className="btn-secondary"
+                style={{ padding: '4px 10px', fontSize: '12px', height: '30px', display: 'flex', alignItems: 'center', gap: '4px' }}
+              >
+                {isQueryingCustom ? <Loader2 size={12} className="spinner" /> : <Plus size={12} />}
+                <span>Add Standard</span>
+              </button>
+            </div>
+          )}
+
+          {/* Quick Select Dropdown */}
           {availableToAdd.length > 0 && onAddAlternative && (
             <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
               <select
                 value={selectedToAdd}
                 onChange={(e) => setSelectedToAdd(e.target.value)}
                 className="auth-input auth-select"
-                style={{ width: '180px', padding: '4px 8px', fontSize: '12px' }}
+                style={{ width: '170px', padding: '4px 8px', fontSize: '12px', height: '30px' }}
               >
-                <option value="">+ Compare with standard...</option>
+                <option value="">+ From catalog...</option>
                 {availableToAdd.map((std) => (
                   <option key={std.is_number} value={std.is_number}>
-                    {std.is_number} ({std.title.slice(0, 30)}...)
+                    {std.is_number}
                   </option>
                 ))}
               </select>
-              <button
-                type="button"
-                disabled={!selectedToAdd}
-                onClick={handleAddSelected}
-                className="btn-secondary"
-                style={{ padding: '4px 10px', fontSize: '12px' }}
-              >
-                Add Column
-              </button>
+              {selectedToAdd && (
+                <button
+                  type="button"
+                  onClick={handleAddSelected}
+                  className="btn-secondary"
+                  style={{ padding: '4px 8px', fontSize: '12px', height: '30px' }}
+                >
+                  Add
+                </button>
+              )}
             </div>
           )}
         </div>
       </div>
 
-      {/* Comparison Table */}
-      <div style={{ overflowX: 'auto', border: '1px solid var(--hairline)', borderRadius: 'var(--radius-sm)' }}>
+      {/* Empty State Callout if No Alternative Selected */}
+      {alternatives.length === 0 ? (
+        <div
+          style={{
+            padding: '32px 20px',
+            textAlign: 'center',
+            background: 'var(--surface-secondary)',
+            borderRadius: 'var(--radius-sm)',
+            border: '1px dashed var(--hairline)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '8px',
+          }}
+        >
+          <div style={{ fontSize: '26px' }}>⚖️</div>
+          <h3 style={{ fontFamily: 'var(--font-ui)', fontSize: '15px', fontWeight: 600, color: 'var(--ink)', margin: 0 }}>
+            No Secondary Standard Selected for Comparison
+          </h3>
+          <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', maxWidth: '520px', margin: 0 }}>
+            Currently viewing primary standard <strong>{primary.is_number}</strong>. Use the search input or catalog dropdown above to add an alternative standard and generate an instant side-by-side specification diff.
+          </p>
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginTop: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <span style={{ fontSize: '11.5px', color: 'var(--ink-muted)' }}>Quick comparisons with {primary.is_number}:</span>
+            {['IS 1489 (Part 1):2015', 'IS 455:2015', 'IS 1786:2008', 'IS 2062:2011', 'IS 456:2000']
+              .filter((s) => !primary.is_number.includes(s.split(' ')[1]))
+              .slice(0, 3)
+              .map((code) => (
+                <button
+                  key={code}
+                  type="button"
+                  onClick={() => handleAddCustom(code)}
+                  className="btn-secondary"
+                  style={{ fontSize: '11px', padding: '3px 8px' }}
+                >
+                  + Compare with {code.split(':')[0]}
+                </button>
+              ))}
+          </div>
+        </div>
+      ) : (
+        /* Comparison Table */
+        <div style={{ overflowX: 'auto', border: '1px solid var(--hairline)', borderRadius: 'var(--radius-sm)' }}>
         <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse', tableLayout: 'fixed' }}>
           <colgroup>
             <col style={{ width: '220px' }} />
@@ -356,6 +476,7 @@ export const StandardsComparator: React.FC<StandardsComparatorProps> = ({
           </tbody>
         </table>
       </div>
+      )}
     </div>
   );
 };

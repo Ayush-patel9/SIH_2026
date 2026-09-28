@@ -23,7 +23,7 @@ const SEED_FEEDBACK: FeedbackRequest[] = [
     original_recommendation_id: 'rec-steel-001',
     submitter: {
       user_id: 'officer_sharma',
-      role: 'BIS_EXPERT',
+      role: 'OFFICER',
       ministry_code: 'Ministry of Steel',
     },
     feedback_type: 'MISSING_ALLIED_STANDARD',
@@ -41,7 +41,7 @@ const SEED_FEEDBACK: FeedbackRequest[] = [
     original_recommendation_id: 'rec-6d2f-48e2-b184',
     submitter: {
       user_id: 'auditor_menon',
-      role: 'AUDITOR',
+      role: 'OFFICER',
       ministry_code: 'CAG',
     },
     feedback_type: 'OUTDATED_STANDARD',

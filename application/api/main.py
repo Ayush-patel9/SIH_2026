@@ -28,6 +28,9 @@ from application.api.routes.feedback import router as feedback_router
 from application.api.routes.alerts import router as alerts_router
 from application.api.routes.websocket import router as websocket_router
 from application.api.routes.knowledge_graph import router as knowledge_graph_router
+from application.api.routes.tender_pipeline import router as tender_pipeline_router
+from application.api.routes.projects import router as projects_router
+from application.services.project_repository import init_db, seed_initial_projects_if_empty
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("bis_platform_api")
@@ -42,6 +45,17 @@ app = FastAPI(
     docs_url="/docs",
     redoc_url="/redoc"
 )
+
+# Startup lifecycle: Initialize Neon PostgreSQL tables and seed if empty
+@app.on_event("startup")
+def on_startup():
+    try:
+        logger.info("Initializing Neon PostgreSQL connection and schema...")
+        init_db()
+        seed_initial_projects_if_empty()
+        logger.info("✓ Neon PostgreSQL startup verification complete.")
+    except Exception as e:
+        logger.warning(f"Could not connect to database on startup: {e}")
 
 # Enable Full CORS for Next.js / Vite / React frontends
 app.add_middleware(
@@ -59,6 +73,8 @@ app.include_router(feedback_router)
 app.include_router(alerts_router)
 app.include_router(websocket_router)
 app.include_router(knowledge_graph_router)
+app.include_router(tender_pipeline_router)
+app.include_router(projects_router)
 
 @app.get("/health", summary="Health Check")
 @app.get("/api/health", summary="Health Check (API Prefix)")

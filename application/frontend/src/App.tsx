@@ -9,11 +9,12 @@ import { NITGeneratorView } from './features/nitGenerator';
 import { MCPView } from './features/mcp';
 import { DashboardView } from './features/dashboard';
 import { TenderUploadView } from './features/tenderUpload';
+import { TenderAnalysisDashboard } from './features/tenderAnalysis';
 import { IntegrationSandboxView } from './features/integrations';
 import { getAlerts, streamQueryOverSocket, connectAlertsSocket, type PipelineSocketEvent } from './api/standardsClient';
 import { useRole } from './store/roleStore';
 import { useSession } from './store/userStore';
-import { ProcurementOfficerPanel, AuditorPanel, VendorPanel } from './features/roles';
+import { TenderAuthorityPanel, VendorPanel } from './features/roles';
 import { LanguageSelector } from './components/LanguageSelector';
 import { LoadingShimmer } from './components/LoadingShimmer';
 import { DataSovereigntyModal } from './components/DataSovereigntyModal';
@@ -276,7 +277,8 @@ function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: s
 }
 
 const FEATURE_TITLES: Record<FeatureKey, string> = {
-  projects: 'Projects & Procurement History',
+  projects: 'Projects & Tenders',
+  tenderAnalysis: '3-Stage Tender Intelligence Pipeline',
   explainability: 'Standards Explorer',
   graph3d: '22,011 Standards 3D Neural Mesh',
   audit: 'CVC Audit Trail & Legal Defense',
@@ -286,7 +288,7 @@ const FEATURE_TITLES: Record<FeatureKey, string> = {
   queryUnderstanding: 'Gemini Technical Intent NLU',
   nitGenerator: 'NIT Clause Builder',
   mcp: 'MCP Tooling Workbench',
-  tenderUpload: 'Tender Upload & Indian Standards Matcher',
+  tenderUpload: 'Projects & Tenders',
   dashboard: 'Ministry MIS Heatmap & Compliance',
   integrations: 'GeM & CPPP National Sandbox',
   gazetteRadar: 'Gazette Radar Watchtower',
@@ -297,7 +299,8 @@ const FEATURE_TITLES: Record<FeatureKey, string> = {
 
 export const FEATURE_ROUTES: Record<FeatureKey, string> = {
   projects: '/app/projects',
-  tenderUpload: '/app/tender-upload',
+  tenderAnalysis: '/app/projects',
+  tenderUpload: '/app/projects',
   graph3d: '/app/neural-mesh',
   audit: '/app/cvc-audit',
   explainability: '/app/standards-explorer',
@@ -320,8 +323,7 @@ export function getFeatureFromPath(pathname: string, defaultFeature: FeatureKey 
   for (const [key, route] of Object.entries(FEATURE_ROUTES)) {
     if (clean === route) return key as FeatureKey;
   }
-  if (clean.includes('/projects') || clean.includes('/tenders')) return 'projects';
-  if (clean.includes('/tender-upload') || clean.includes('/upload')) return 'tenderUpload';
+  if (clean.includes('/projects') || clean.includes('/tenders') || clean.includes('/tender-upload') || clean.includes('/upload') || clean.includes('/tender-pipeline') || clean.includes('/pipeline')) return 'projects';
   if (clean.includes('/neural-mesh') || clean.includes('/mesh') || clean.includes('/graph')) return 'graph3d';
   if (clean.includes('/cvc-audit') || clean.includes('/audit')) return 'audit';
   if (clean.includes('/cag-audit') || clean.includes('/cag')) return 'cagAudit';
@@ -396,15 +398,16 @@ export default function App({ onLogout }: AppProps = {}) {
   const [isSocketLive, setIsSocketLive] = useState(false);
   const [currentStage, setCurrentStage] = useState<{ stage: number; name: string; detail: string } | null>(null);
   const [activeTab, setActiveTab] = useState<'reasoning' | 'allied' | 'graph' | 'audit' | 'role_view'>(() => {
-    if (role === 'AUDITOR') return 'audit';
-    if (role === 'VENDOR') return 'role_view';
+    if (role === 'OFFICER' || role === 'VENDOR') return 'role_view';
     return 'reasoning';
   });
   const [copiedClause, setCopiedClause] = useState(false);
+  const [pipelineDocText, setPipelineDocText] = useState<string | undefined>();
+  const [pipelinePdfUrl, setPipelinePdfUrl] = useState<string | null | undefined>();
+  const [pipelineTitle, setPipelineTitle] = useState<string | undefined>();
 
   useEffect(() => {
-    if (role === 'AUDITOR') setActiveTab('audit');
-    else if (role === 'VENDOR') setActiveTab('role_view');
+    if (role === 'OFFICER' || role === 'VENDOR') setActiveTab('role_view');
     else setActiveTab('reasoning');
   }, [role]);
 
@@ -652,7 +655,7 @@ export default function App({ onLogout }: AppProps = {}) {
               }}
             >
               <span style={{ fontSize: '15px' }}>
-                {role === 'AUDITOR' ? '🔍' : role === 'VENDOR' ? '🏭' : '👔'}
+                {role === 'VENDOR' ? '🏭' : '🏛️'}
               </span>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1.2 }}>
                 <span className="user-identity-name" style={{ fontSize: '12px', fontWeight: 700, color: 'var(--ink-primary)' }}>
@@ -792,33 +795,25 @@ export default function App({ onLogout }: AppProps = {}) {
                         fontSize: '12px',
                         fontWeight: 600,
                         backgroundColor:
-                          role === 'AUDITOR'
-                            ? 'rgba(59, 130, 246, 0.1)'
-                            : role === 'VENDOR'
+                          role === 'VENDOR'
                             ? 'rgba(245, 158, 11, 0.1)'
                             : 'rgba(19, 136, 8, 0.1)',
                         color:
-                          role === 'AUDITOR'
-                            ? '#1D4ED8'
-                            : role === 'VENDOR'
+                          role === 'VENDOR'
                             ? '#B45309'
                             : '#15803D',
                         border: `1px solid ${
-                          role === 'AUDITOR'
-                            ? 'rgba(59, 130, 246, 0.3)'
-                            : role === 'VENDOR'
+                          role === 'VENDOR'
                             ? 'rgba(245, 158, 11, 0.3)'
                             : 'rgba(19, 136, 8, 0.3)'
                         }`,
                       }}
                     >
-                      <span>{role === 'AUDITOR' ? '🔍' : role === 'VENDOR' ? '🏭' : '👔'}</span>
+                      <span>{role === 'VENDOR' ? '🏭' : '🏛️'}</span>
                       <span>
-                        {role === 'AUDITOR'
-                          ? 'CAG Auditor Mode'
-                          : role === 'VENDOR'
-                          ? 'Vendor Gateway'
-                          : 'Procurement Officer'}
+                        {role === 'VENDOR'
+                          ? 'Industrial Vendor Gateway'
+                          : 'Tender Authority & Officer'}
                       </span>
                     </div>
                   </div>
@@ -1104,9 +1099,8 @@ export default function App({ onLogout }: AppProps = {}) {
                             borderColor: activeTab === 'role_view' ? 'var(--collapse-cobalt)' : undefined,
                           }}
                         >
-                          {role === 'AUDITOR' && '🛡️ Auditor Panel'}
-                          {role === 'VENDOR' && '🏭 Vendor Portal'}
-                          {(role === 'PROCUREMENT_OFFICER' || role === 'BIS_EXPERT') && '📋 Procurement Officer View'}
+                          {role === 'OFFICER' && '🏛️ Tender Authority & Drafting'}
+                          {role === 'VENDOR' && '🏭 Industrial Vendor Portal'}
                         </button>
                       </div>
 
@@ -1181,20 +1175,15 @@ export default function App({ onLogout }: AppProps = {}) {
                       {/* Tab Content 5: Role-Specific Workbench Panel */}
                       {activeTab === 'role_view' && (
                         <div style={{ animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
-                          {role === 'AUDITOR' && (
-                            <AuditorPanel
+                          {role === 'OFFICER' && (
+                            <TenderAuthorityPanel
                               data={activeData}
+                              onOpenNITGenerator={() => setActiveFeature('nitGenerator')}
                               onOpenCertificate={() => setActiveFeature('audit')}
                             />
                           )}
                           {role === 'VENDOR' && (
                             <VendorPanel data={activeData} />
-                          )}
-                          {(role === 'PROCUREMENT_OFFICER' || role === 'BIS_EXPERT') && (
-                            <ProcurementOfficerPanel
-                              data={activeData}
-                              onOpenNITGenerator={() => setActiveFeature('nitGenerator')}
-                            />
                           )}
                         </div>
                       )}
@@ -1274,6 +1263,22 @@ export default function App({ onLogout }: AppProps = {}) {
                 setActiveData(item);
                 setActiveFeature('explainability');
               }}
+              onLaunchPipeline={(text, title, pdf) => {
+                setPipelineDocText(text);
+                setPipelineTitle(title);
+                setPipelinePdfUrl(pdf);
+                setActiveFeature('tenderAnalysis');
+              }}
+            />
+          )}
+
+          {/* Feature: 3-Stage Tender Intelligence Pipeline (AiForBharat Architecture) */}
+          {activeFeature === 'tenderAnalysis' && (
+            <TenderAnalysisDashboard
+              initialDocumentText={pipelineDocText}
+              initialPdfUrl={pipelinePdfUrl}
+              initialTitle={pipelineTitle}
+              onBackToUpload={() => setActiveFeature('tenderUpload')}
             />
           )}
 

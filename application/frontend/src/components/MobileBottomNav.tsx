@@ -2,6 +2,7 @@ import React from 'react';
 
 export type FeatureKey =
   | 'projects'
+  | 'tenderAnalysis'
   | 'explainability'
   | 'audit'
   | 'feedback'
@@ -32,7 +33,7 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
 }) => {
   const navItems: { key: FeatureKey; label: string; icon: string; badge?: number }[] = [
     { key: 'explainability', label: 'Search', icon: '🔍' },
-    { key: 'tenderUpload', label: 'Tender', icon: '📄' },
+    { key: 'projects', label: 'Projects', icon: '📁' },
     { key: 'alerts', label: 'Alerts', icon: '🔔', badge: alertCount },
     { key: 'nitGenerator', label: 'NIT Gen', icon: '📋' },
     { key: 'integrations', label: 'GeM/CPPP', icon: '🛒' },

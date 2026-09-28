@@ -9,9 +9,8 @@ interface RoleSwitcherProps {
 }
 
 const ROLES: { value: UserRole; label: string; icon: string }[] = [
-  { value: 'PROCUREMENT_OFFICER', label: 'Officer', icon: '👔' },
-  { value: 'AUDITOR', label: 'Auditor', icon: '🔍' },
-  { value: 'VENDOR', label: 'Vendor', icon: '🏭' },
+  { value: 'OFFICER', label: 'Tender Authority', icon: '🏛️' },
+  { value: 'VENDOR', label: 'Industrial Vendor', icon: '🏭' },
 ];
 
 export const RoleSwitcher: React.FC<RoleSwitcherProps> = ({

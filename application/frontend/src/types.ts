@@ -7,7 +7,7 @@
 // 1. Schema 1: QueryRequest (Client → API)
 // ==========================================
 
-export type UserRole = 'PROCUREMENT_OFFICER' | 'AUDITOR' | 'VENDOR' | 'BIS_EXPERT';
+export type UserRole = 'OFFICER' | 'VENDOR';
 export type SupportedLanguage = 'en' | 'hi' | 'ta' | 'te' | 'gu' | 'mr' | 'bn';
 export type QuerySource = 'direct_query' | 'tender_upload' | 'gem_integration' | 'cppp_integration';
 export type QueryMode = 'recommend' | 'audit' | 'dry_run' | 'vendor_check';

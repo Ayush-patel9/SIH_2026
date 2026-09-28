@@ -29,16 +29,16 @@ const officerReg = register({
   email: 'vikram.joshi@cpwd.gov.in',
   password: 'securePassword123',
   organization: 'CPWD - Central Public Works Department',
-  role: 'PROCUREMENT_OFFICER',
+  role: 'OFFICER',
   ministry: 'MoHUA',
 });
 
 assert.strictEqual(officerReg.success, true, 'Officer registration should succeed');
 assert.strictEqual(officerReg.user?.name, 'Vikram Joshi');
-assert.strictEqual(officerReg.user?.role, 'PROCUREMENT_OFFICER');
-assert.strictEqual(roleStore.getRole(), 'PROCUREMENT_OFFICER', 'roleStore must sync to registered role');
+assert.strictEqual(officerReg.user?.role, 'OFFICER');
+assert.strictEqual(roleStore.getRole(), 'OFFICER', 'roleStore must sync to registered role');
 assert.strictEqual(getSession()?.email, 'vikram.joshi@cpwd.gov.in');
-console.log('✓ Registered new Procurement Officer account & auto-logged into session');
+console.log('✓ Registered new Tender Authority Officer account & auto-logged into session');
 
 // 3. Prevent Duplicate Registration
 const duplicateReg = register({
@@ -46,24 +46,24 @@ const duplicateReg = register({
   email: 'vikram.joshi@cpwd.gov.in',
   password: 'anotherPassword',
   organization: 'Fake Org',
-  role: 'AUDITOR',
+  role: 'VENDOR',
 });
 assert.strictEqual(duplicateReg.success, false, 'Duplicate email registration must fail');
 console.log('✓ Duplicate email registration properly blocked');
 
-// 4. Register Auditor Account
-const auditorReg = register({
-  name: 'Ananya Sharma',
-  email: 'ananya.sharma@cag.gov.in',
-  password: 'auditorSecret789',
-  organization: 'CAG Principal Directorate of Audit',
-  role: 'AUDITOR',
-  auditOffice: 'Commercial Audit Directorate',
+// 4. Register Vendor Account
+const vendorReg = register({
+  name: 'Vikram Mehta',
+  email: 'vikram.mehta@infra-equip.in',
+  password: 'vendorSecret789',
+  organization: 'Infra Equipment Suppliers Ltd',
+  role: 'VENDOR',
+  gstin: '07AAACT2727Q1ZW',
 });
-assert.strictEqual(auditorReg.success, true);
-assert.strictEqual(getSession()?.name, 'Ananya Sharma');
-assert.strictEqual(roleStore.getRole(), 'AUDITOR');
-console.log('✓ Registered new Auditor account & switched session');
+assert.strictEqual(vendorReg.success, true);
+assert.strictEqual(getSession()?.name, 'Vikram Mehta');
+assert.strictEqual(roleStore.getRole(), 'VENDOR');
+console.log('✓ Registered new Vendor account & switched session');
 
 // 5. Test Logout & Credential Login
 logout();
@@ -78,7 +78,7 @@ const goodLogin = loginWithCredentials('vikram.joshi@cpwd.gov.in', 'securePasswo
 assert.strictEqual(goodLogin.success, true);
 assert.strictEqual(goodLogin.user?.name, 'Vikram Joshi');
 assert.strictEqual(getSession()?.name, 'Vikram Joshi');
-assert.strictEqual(roleStore.getRole(), 'PROCUREMENT_OFFICER');
+assert.strictEqual(roleStore.getRole(), 'OFFICER');
 console.log('✓ Credential authentication verified (bad password rejected, good password accepted)');
 
 // 6. Test Data Isolation between real registered users
@@ -90,12 +90,12 @@ const mockResponseOfficer: StandardsResponse = {
   audit_record: { recommendation_id: 'rec-1', query_id: 'query-officer-999', audit_hash: 'hash-officer-999', timestamp_utc: new Date().toISOString(), logged: true, dry_run: false, rti_exportable: true },
 };
 
-const mockResponseAuditor: StandardsResponse = {
+const mockResponseVendor: StandardsResponse = {
   $schema: 'SIH2026.StandardsResponse.v1',
-  meta: { query_id: 'query-auditor-888', session_id: 'sess-2', execution_time_ms: 95, model_version: '1.0', audit_reference_hash: 'def456' },
+  meta: { query_id: 'query-vendor-888', session_id: 'sess-2', execution_time_ms: 95, model_version: '1.0', audit_reference_hash: 'def456' },
   primary_recommendation: { is_number: 'IS 1786:2008', title: 'High Strength Deformed Steel Bars', division_code: 'CED 54', publication_year: 2008, status: 'ACTIVE', confidence: 0.96 } as any,
   allied_standards: [],
-  audit_record: { recommendation_id: 'rec-2', query_id: 'query-auditor-888', audit_hash: 'hash-auditor-888', timestamp_utc: new Date().toISOString(), logged: true, dry_run: false, rti_exportable: true },
+  audit_record: { recommendation_id: 'rec-2', query_id: 'query-vendor-888', audit_hash: 'hash-vendor-888', timestamp_utc: new Date().toISOString(), logged: true, dry_run: false, rti_exportable: true },
 };
 
 // While logged in as Officer, save audit log
@@ -104,16 +104,16 @@ const officerLogs = AuditStore.getAll();
 assert.strictEqual(officerLogs.length, 1);
 assert.strictEqual(officerLogs[0].id, 'query-officer-999');
 
-// Log in as Auditor and verify Officer logs are invisible
-loginWithCredentials('ananya.sharma@cag.gov.in', 'auditorSecret789');
-const auditorLogsBefore = AuditStore.getAll();
-assert.strictEqual(auditorLogsBefore.length, 0, 'Auditor must NOT see Officer audit logs');
+// Log in as Vendor and verify Officer logs are invisible
+loginWithCredentials('vikram.mehta@infra-equip.in', 'vendorSecret789');
+const vendorLogsBefore = AuditStore.getAll();
+assert.strictEqual(vendorLogsBefore.length, 0, 'Vendor must NOT see Officer audit logs');
 
-// Save auditor log
-AuditStore.save(mockResponseAuditor);
-const auditorLogsAfter = AuditStore.getAll();
-assert.strictEqual(auditorLogsAfter.length, 1);
-assert.strictEqual(auditorLogsAfter[0].id, 'query-auditor-888');
-console.log('✓ Complete data isolation between registered Officer and Auditor verified');
+// Save vendor log
+AuditStore.save(mockResponseVendor);
+const vendorLogsAfter = AuditStore.getAll();
+assert.strictEqual(vendorLogsAfter.length, 1);
+assert.strictEqual(vendorLogsAfter[0].id, 'query-vendor-888');
+console.log('✓ Complete data isolation between registered Officer and Vendor verified');
 
 console.log('--- ALL REAL REGISTRATION & AUTH TESTS PASSED ---');

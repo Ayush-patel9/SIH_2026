@@ -83,10 +83,10 @@ export async function streamQueryOverSocket(
       if (!isSettled) {
         isSettled = true;
         if (ws) ws.close();
-        console.warn('[standardsClient] WebSocket timed out, falling back to REST/Mock.');
+        console.warn('[standardsClient] WebSocket timed out after 180s, falling back to REST/Mock.');
         queryStandards(text, opts).then(resolve).catch(reject);
       }
-    }, 15000);
+    }, 180000);
 
     try {
       ws = new WebSocket(`${WS_BASE}/ws/pipeline`);
@@ -97,7 +97,7 @@ export async function streamQueryOverSocket(
             type: 'query',
             text,
             mode: opts?.mode ?? 'recommend',
-            role: opts?.role ?? 'PROCUREMENT_OFFICER',
+            role: opts?.role ?? 'OFFICER',
             language: opts?.language ?? 'en',
           })
         );
@@ -240,7 +240,7 @@ export async function queryStandards(
           language: opts?.language ?? 'en',
         },
         auth: {
-          role: opts?.role ?? 'PROCUREMENT_OFFICER',
+          role: opts?.role ?? 'OFFICER',
         },
       };
       const res = await fetch(`${API_BASE}/api/v1/query`, {
@@ -275,7 +275,7 @@ export async function queryStandards(
 
 export async function uploadTenderText(
   documentText: string,
-  role: UserRole = 'PROCUREMENT_OFFICER',
+  role: UserRole = 'OFFICER',
   mode: QueryMode = 'recommend'
 ): Promise<StandardsResponse[]> {
   if (!USE_MOCK_EXPLICIT) {

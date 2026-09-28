@@ -6,10 +6,11 @@ function getInitialRole(): UserRole {
     const raw = localStorage.getItem('manakai_user_session');
     if (raw) {
       const parsed = JSON.parse(raw);
-      if (parsed?.role) return parsed.role;
+      if (parsed?.role === 'OFFICER' || parsed?.role === 'VENDOR') return parsed.role;
+      if (parsed?.role === 'PROCUREMENT_OFFICER' || parsed?.role === 'AUDITOR') return 'OFFICER';
     }
   } catch {}
-  return 'PROCUREMENT_OFFICER';
+  return 'OFFICER';
 }
 
 let _role: UserRole = getInitialRole();

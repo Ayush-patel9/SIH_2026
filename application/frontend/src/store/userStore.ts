@@ -9,7 +9,8 @@ export interface UserProfile {
   organization: string;
   role: UserRole;
   ministry?: string;
-  auditOffice?: string;
+  department?: string;
+  designation?: string;
   gstin?: string;
   createdAt: string;
 }
@@ -25,7 +26,8 @@ export interface RegisterPayload {
   organization: string;
   role: UserRole;
   ministry?: string;
-  auditOffice?: string;
+  department?: string;
+  designation?: string;
   gstin?: string;
 }
 
@@ -67,7 +69,14 @@ export function getSession(): UserProfile | null {
   try {
     const raw = localStorage.getItem(SESSION_KEY);
     if (!raw) return null;
-    return JSON.parse(raw);
+    const parsed = JSON.parse(raw);
+    if (parsed) {
+      // Normalize legacy roles
+      if (parsed.role === 'PROCUREMENT_OFFICER' || parsed.role === 'AUDITOR' || parsed.role === 'BIS_EXPERT') {
+        parsed.role = 'OFFICER';
+      }
+    }
+    return parsed;
   } catch (err) {
     console.warn('userStore: Failed to parse user session', err);
     return null;
@@ -76,6 +85,9 @@ export function getSession(): UserProfile | null {
 
 export function setSession(profile: UserProfile): void {
   try {
+    if ((profile.role as any) === 'PROCUREMENT_OFFICER' || (profile.role as any) === 'AUDITOR') {
+      profile.role = 'OFFICER';
+    }
     localStorage.setItem(SESSION_KEY, JSON.stringify(profile));
     roleStore.setRole(profile.role);
     notify();
@@ -109,8 +121,9 @@ export function register(payload: RegisterPayload): { success: boolean; error?: 
     password: payload.password,
     organization: payload.organization.trim(),
     role: payload.role,
-    ministry: payload.role === 'PROCUREMENT_OFFICER' ? (payload.ministry?.trim() || 'Government of India') : undefined,
-    auditOffice: payload.role === 'AUDITOR' ? (payload.auditOffice?.trim() || 'Statutory Audit Directorate') : undefined,
+    ministry: payload.role === 'OFFICER' ? (payload.ministry?.trim() || 'Government of India') : undefined,
+    department: payload.department?.trim(),
+    designation: payload.designation?.trim(),
     gstin: payload.role === 'VENDOR' ? (payload.gstin?.trim() || undefined) : undefined,
     createdAt: new Date().toISOString(),
   };

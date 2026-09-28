@@ -7,6 +7,7 @@ import { FileUp, FileText, Sparkles, CheckCircle2, AlertTriangle, Upload, Eye } 
 
 interface TenderUploadViewProps {
   onSelectItem?: (item: StandardsResponse) => void;
+  onLaunchPipeline?: (text: string, title?: string, pdfUrl?: string | null) => void;
 }
 
 const PRESET_TENDERS = {
@@ -245,7 +246,7 @@ const PRESET_TENDERS = {
   },
 };
 
-export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem }) => {
+export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem, onLaunchPipeline }) => {
   const [tab, setTab] = useState<'annotator' | 'text' | 'pdf'>('annotator');
   const [docText, setDocText] = useState(PRESET_TENDERS.nhai.text);
   const [isLoading, setIsLoading] = useState(false);
@@ -369,6 +370,32 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
             >
               📋 Paste Tender Text
             </button>
+
+            {onLaunchPipeline && (
+              <button
+                type="button"
+                onClick={() => onLaunchPipeline(docText, 'Tender Document Analysis', pdfUrl)}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  padding: '6px 14px',
+                  fontSize: '12px',
+                  fontWeight: 700,
+                  background: 'linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '6px',
+                  cursor: 'pointer',
+                  boxShadow: '0 2px 8px rgba(79, 70, 229, 0.3)',
+                }}
+              >
+                <span>✨ Launch 3-Stage Pipeline</span>
+                <span style={{ fontSize: '10px', background: 'rgba(255,255,255,0.2)', padding: '1px 5px', borderRadius: '4px' }}>
+                  AI + HITL
+                </span>
+              </button>
+            )}
           </div>
 
           <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>

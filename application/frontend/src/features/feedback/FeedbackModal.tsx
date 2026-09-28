@@ -23,7 +23,7 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
   const [feedbackType, setFeedbackType] = useState<FeedbackType>('WRONG_STANDARD');
   const [correctIsNumber, setCorrectIsNumber] = useState('');
   const [notes, setNotes] = useState('');
-  const [role, setRole] = useState<UserRole>('PROCUREMENT_OFFICER');
+  const [role, setRole] = useState<UserRole>('OFFICER');
   const [ministryCode, setMinistryCode] = useState('MoRTH');
   const [submitted, setSubmitted] = useState(false);
 
@@ -186,10 +186,8 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
                     onChange={(e) => setRole(e.target.value as UserRole)}
                     className="auth-input auth-select"
                   >
-                    <option value="PROCUREMENT_OFFICER">Procurement Officer</option>
-                    <option value="AUDITOR">Vigilance / CAG Auditor</option>
-                    <option value="BIS_EXPERT">BIS Technical Committee</option>
-                    <option value="VENDOR">Registered GeM Vendor</option>
+                    <option value="OFFICER">🏛️ Tender Authority & Technical Officer</option>
+                    <option value="VENDOR">🏭 Registered Vendor / Supplier</option>
                   </select>
                 </label>
 
