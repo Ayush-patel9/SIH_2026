@@ -3,6 +3,7 @@ import json
 import re
 import logging
 import itertools
+import time
 from typing import Dict, Any, List, Optional, Type, TypeVar, Callable, Union
 from enum import Enum
 from pydantic import BaseModel, Field
@@ -147,8 +148,11 @@ class LLMGateway:
         self.keys = [k.strip() for k in raw_keys.split(",") if k.strip()]
         self._key_cycle = itertools.cycle(self.keys) if self.keys else None
         
-        self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", "gemini-3.5-flash-lite")
-        self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", "gemini-3.5-flash-lite")
+        self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", "gemini-3.6-flash")
+        self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", "gemini-3.6-flash")
+        self.request_timeout = float(os.getenv("GEMINI_TIMEOUT_SECONDS", "180.0"))
+        self._current_key_idx = 0
+        self._key_cooldowns: Dict[str, float] = {}
         
         self._has_genai = False
         try:
@@ -166,10 +170,38 @@ class LLMGateway:
     def is_available(self) -> bool:
         return bool(self._has_genai and self.keys)
 
+    def _get_ordered_keys(self) -> List[str]:
+        """
+        Returns keys in round-robin order, prioritizing keys that are NOT currently
+        under an active 429 / ResourceExhausted cooldown.
+        """
+        if not self.keys:
+            return []
+        n = len(self.keys)
+        rotated = [self.keys[(self._current_key_idx + i) % n] for i in range(n)]
+        now = time.time()
+        ready = [k for k in rotated if self._key_cooldowns.get(k, 0) <= now]
+        cooling = [k for k in rotated if self._key_cooldowns.get(k, 0) > now]
+        return ready + cooling
+
+    def _mark_key_success(self, key: str):
+        """Advances round-robin pointer and clears cooldown for this key."""
+        if key in self._key_cooldowns:
+            del self._key_cooldowns[key]
+        if key in self.keys:
+            self._current_key_idx = (self.keys.index(key) + 1) % len(self.keys)
+
+    def _mark_key_error(self, key: str, error: Exception):
+        """Marks a key for temporary cooldown if it hit a 429 quota or rate limit."""
+        err_msg = str(error)
+        err_type = type(error).__name__
+        if "429" in err_msg or "ResourceExhausted" in err_type or "quota" in err_msg.lower():
+            self._key_cooldowns[key] = time.time() + 60.0
+            logger.warning(f"API key {key[:8]}... put on 60s cooldown due to quota limit: {error}")
+
     def get_next_key(self) -> Optional[str]:
-        if self._key_cycle:
-            return next(self._key_cycle)
-        return None
+        keys = self._get_ordered_keys()
+        return keys[0] if keys else None
 
     def execute(self, task: Union[LLMTaskType, str], **kwargs) -> Dict[str, Any]:
         """
@@ -525,12 +557,19 @@ class LLMGateway:
             raise RuntimeError("LLM Gateway is in offline mode.")
 
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
-        candidate_models = [primary_model]
+        fallback_models = [primary_model, "gemini-3.6-flash", "gemini-3.8-flash"]
+        candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
         
         last_error = None
 
         for model_name in candidate_models:
-            for key in self.keys:
+            now = time.time()
+            if self.keys and all(self._key_cooldowns.get(k, 0) > now for k in self.keys):
+                break
+            ordered_keys = self._get_ordered_keys()
+            for key in ordered_keys:
+                if self._key_cooldowns.get(key, 0) > now and any(self._key_cooldowns.get(k, 0) <= now for k in self.keys):
+                    continue
                 try:
                     self.genai.configure(api_key=key)
                     model = self.genai.GenerativeModel(model_name)
@@ -541,7 +580,7 @@ class LLMGateway:
                     response = model.generate_content(
                         full_prompt,
                         generation_config={"response_mime_type": "application/json"},
-                        request_options={"timeout": 12.0, "retry": None}
+                        request_options={"timeout": self.request_timeout, "retry": None}
                     )
                     
                     text = response.text.strip()
@@ -552,15 +591,15 @@ class LLMGateway:
                     data = json.loads(text)
                     if schema:
                         validated = schema.model_validate(data)
+                        self._mark_key_success(key)
                         return validated.model_dump()
+                    self._mark_key_success(key)
                     return data
 
                 except Exception as e:
                     last_error = e
+                    self._mark_key_error(key, e)
                     logger.warning(f"LLM call on {model_name} (key {key[:8]}...) encountered issue: {e}")
-                    # If quota exhausted (429), break model loop quickly to avoid long cascade
-                    if "429" in str(e) or "ResourceExhausted" in type(e).__name__:
-                        break
                     continue
 
         raise RuntimeError(f"All LLM keys and models exhausted. Last error: {last_error}")
@@ -574,13 +613,20 @@ class LLMGateway:
             raise RuntimeError("LLM Gateway is in offline mode.")
 
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
-        candidate_models = [primary_model]
+        fallback_models = [primary_model, "gemini-3.6-flash", "gemini-3.8-flash"]
+        candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
         
         last_error = None
         pdf_part = {"inline_data": {"mime_type": "application/pdf", "data": pdf_bytes}}
 
         for model_name in candidate_models:
-            for key in self.keys:
+            now = time.time()
+            if self.keys and all(self._key_cooldowns.get(k, 0) > now for k in self.keys):
+                break
+            ordered_keys = self._get_ordered_keys()
+            for key in ordered_keys:
+                if self._key_cooldowns.get(key, 0) > now and any(self._key_cooldowns.get(k, 0) <= now for k in self.keys):
+                    continue
                 try:
                     self.genai.configure(api_key=key)
                     model = self.genai.GenerativeModel(model_name)
@@ -594,7 +640,7 @@ class LLMGateway:
                     response = model.generate_content(
                         [pdf_part, full_prompt],
                         generation_config={"response_mime_type": "application/json"},
-                        request_options={"timeout": 15.0, "retry": None}
+                        request_options={"timeout": self.request_timeout, "retry": None}
                     )
                     
                     text = response.text.strip()
@@ -605,11 +651,14 @@ class LLMGateway:
                     data = json.loads(text)
                     if schema:
                         validated = schema.model_validate(data)
+                        self._mark_key_success(key)
                         return validated.model_dump()
+                    self._mark_key_success(key)
                     return data
 
                 except Exception as e:
                     last_error = e
+                    self._mark_key_error(key, e)
                     logger.warning(f"LLM PDF generation on {model_name} (key {key[:8]}...) encountered issue: {e}")
                     continue
 

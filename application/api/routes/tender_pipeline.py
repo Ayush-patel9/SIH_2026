@@ -521,6 +521,15 @@ Output strictly valid JSON only."""
 
     # Case B: Text-based Ingestion
     text = (req.document_text or "").strip()
+    if not text and pdf_bytes:
+        try:
+            from application.pdf_parser.pdf_tender_parser import extract_text_from_pdf
+            extracted = extract_text_from_pdf(pdf_bytes)
+            if extracted and len(extracted.strip()) > 20:
+                text = extracted.strip()
+        except Exception as _pe:
+            logger.warning(f"Could not extract text from PDF bytes in fallback: {_pe}")
+
     if not text:
         text = "Government Infrastructure & Civil Works Procurement Specification"
 
@@ -592,10 +601,15 @@ Output strictly valid JSON only."""
             logger.warning(f"AI Call #1 Gemini failed, falling back to rule-based parser: {e}")
 
     # Deterministic Rule-Based Fallback
-    return _deterministic_stage1_fallback(text, req.tender_title, req.issuing_authority)
+    return _deterministic_stage1_fallback(text, req.tender_title, req.issuing_authority, project_id=req.project_id)
 
 
-def _deterministic_stage1_fallback(text: str, default_title: Optional[str], default_dept: Optional[str]) -> DecomposeResponse:
+def _deterministic_stage1_fallback(
+    text: str,
+    default_title: Optional[str],
+    default_dept: Optional[str],
+    project_id: Optional[str] = None
+) -> DecomposeResponse:
     """Fallback parser if Gemini is unreachable."""
     is_pattern = re.compile(r'\b(?:IS|SP|IS/ISO|IS/IEC)\s*(\d{2,5}(?:\s*\(Part\s*\d+\))?(?:\s*:\s*\d{4})?)', re.IGNORECASE)
     clause_pattern = re.compile(r'(?:^|\n)(?:Clause|Item|Section|Para)\s*([0-9]+(?:\.[0-9]+)*)[:\s—–-](.*?)(?=(?:\n(?:Clause|Item|Section|Para)\s*[0-9]+|\Z))', re.DOTALL | re.IGNORECASE)
@@ -669,10 +683,10 @@ def _deterministic_stage1_fallback(text: str, default_title: Optional[str], defa
         ]
     )
 
-    if req.project_id:
+    if project_id:
         try:
             save_pipeline_analysis(
-                project_id=req.project_id,
+                project_id=project_id,
                 phase="STAGE1_DECOMPOSING",
                 stage1_result=decomp_res.model_dump(),
                 current_step_text="Stage 1 Decomposition Complete"
