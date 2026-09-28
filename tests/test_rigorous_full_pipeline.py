@@ -18,7 +18,6 @@ from pipeline.config.api_contract_models import QueryRequest, StandardsResponse
 from pipeline.rag_engine.pipeline_core import graph_rag_pipeline
 from pipeline.rag_engine.tri_retrieval import TriRetrievalLayer
 from pipeline.rag_engine.nlp_extractor import NLPExtractor
-from pipeline.rag_engine.bhashini_client import BhashiniClient
 from pipeline.rag_engine.staleness_monitor import StalenessMonitor
 from pipeline.rag_engine.pdf_parser import PDFTenderExtractor
 from application.mcp_server.server import dispatch_tool, ALL_TOOLS

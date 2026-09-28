@@ -180,7 +180,7 @@ export const AuditorPanel: React.FC<AuditorPanelProps> = ({ data, onOpenCertific
       <ReasoningTimeline steps={data.reasoning_trace} />
 
       {/* Knowledge Graph Path */}
-      <KnowledgeGraphViewer edges={data.graph_path} primaryStandard={primary?.is_number} />
+      <KnowledgeGraphViewer data={data} edges={data.graph_path} primaryStandard={primary?.is_number} />
 
       {/* Auditor Checklist */}
       <div className="workbench-card">

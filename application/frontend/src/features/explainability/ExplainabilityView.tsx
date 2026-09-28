@@ -97,8 +97,9 @@ export const ExplainabilityView: React.FC<ExplainabilityViewProps> = ({ data }) 
         confidence={primary?.confidence}
       />
 
-      {/* Component 3: Knowledge Subgraph Viewer (Void Canvas) */}
+      {/* Component 3: Knowledge Subgraph Viewer */}
       <KnowledgeGraphViewer
+        data={data}
         edges={data.graph_path}
         primaryStandard={primary?.is_number}
       />

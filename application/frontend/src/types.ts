@@ -7,7 +7,7 @@
 // 1. Schema 1: QueryRequest (Client → API)
 // ==========================================
 
-export type UserRole = 'OFFICER' | 'VENDOR';
+export type UserRole = 'OFFICER' | 'VENDOR' | 'AUDITOR' | 'ADMIN';
 export type SupportedLanguage = 'en' | 'hi' | 'ta' | 'te' | 'gu' | 'mr' | 'bn';
 export type QuerySource = 'direct_query' | 'tender_upload' | 'gem_integration' | 'cppp_integration';
 export type QueryMode = 'recommend' | 'audit' | 'dry_run' | 'vendor_check';
@@ -226,7 +226,7 @@ export interface StalenessRisk {
 }
 
 export interface MultilingualInfo {
-  bhashini_used: boolean;
+  bhashini_used?: boolean;
   detected_input_language: string;
   response_language: string;
   available_translations: string[];

@@ -6,7 +6,8 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, ZoomIn, ZoomOut, RotateCcw, Shield, Layers, Compass, Filter, Share2, Sparkles } from 'lucide-react';
+import { Search, ZoomIn, ZoomOut, RotateCcw, Shield, Layers, Compass, Filter, Share2, Sparkles, Loader2 } from 'lucide-react';
+import { API_BASE } from '../../api/standardsClient';
 
 interface Node {
   id: string;
@@ -69,7 +70,8 @@ export const KnowledgeGraph3DView: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<string>('ALL');
   const [zoom, setZoom] = useState(1);
   const [isSimulating, setIsSimulating] = useState(true);
-  const [isDragging, setIsDragging] = useState<string | null>(null);
+  const [draggedNodeId, setDraggedNodeId] = useState<string | null>(null);
+  const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
   const [isLiveGraphLoaded, setIsLiveGraphLoaded] = useState(false);
   const [totalIndexedCount, setTotalIndexedCount] = useState<number>(22011);
 
@@ -79,26 +81,26 @@ export const KnowledgeGraph3DView: React.FC = () => {
       const params = new URLSearchParams();
       if (centerStd) params.set('center', centerStd);
       if (dom && dom !== 'ALL') params.set('domain', dom);
-      const res = await fetch(`http://127.0.0.1:8000/api/v1/knowledge-graph/subgraph?${params.toString()}`);
+      const res = await fetch(`${API_BASE}/api/v1/knowledge-graph/subgraph?${params.toString()}`);
       if (!res.ok) return;
       const data = await res.json();
       if (data.nodes && data.nodes.length > 0) {
-        const centerX = 450;
-        const centerY = 300;
+        const centerX = 425;
+        const centerY = 260;
         const formattedNodes: Node[] = data.nodes.map((n: any, idx: number) => {
           const existing = nodes.find((ex) => ex.id === n.id);
           if (existing && existing.x) {
             return { ...n, x: existing.x, y: existing.y, vx: 0, vy: 0 };
           }
           const angle = (idx / data.nodes.length) * 2 * Math.PI;
-          const dist = 140 + (idx % 3) * 65;
+          const dist = 140 + (idx % 3) * 70;
           return {
             ...n,
-            x: Math.max(90, Math.min(840, centerX + Math.cos(angle) * dist)),
-            y: Math.max(90, Math.min(510, centerY + Math.sin(angle) * dist)),
+            x: Math.max(90, Math.min(760, centerX + Math.cos(angle) * dist)),
+            y: Math.max(90, Math.min(430, centerY + Math.sin(angle) * dist)),
             vx: 0,
             vy: 0,
-            radius: n.radius || 18,
+            radius: n.radius || 20,
             color: n.color || '#2563EB',
           };
         });
@@ -121,7 +123,7 @@ export const KnowledgeGraph3DView: React.FC = () => {
     fetchDynamicSubgraph(undefined, activeFilter);
   }, [activeFilter]);
 
-  // Animation Loop with simple force-directed damping
+  // Physics Simulation & Animation Loop
   useEffect(() => {
     let animationFrameId: number;
 
@@ -131,10 +133,126 @@ export const KnowledgeGraph3DView: React.FC = () => {
       const ctx = canvas.getContext('2d');
       if (!ctx) return;
 
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const width = canvas.width;
+      const height = canvas.height;
+      const centerX = width / 2;
+      const centerY = height / 2;
 
+      // Physics step if simulating
+      if (isSimulating) {
+        setNodes((currentNodes) => {
+          const updated = currentNodes.map((n) => ({ ...n }));
+
+          // 1. Strong Repulsion & Collision avoidance with spacious clearance
+          for (let i = 0; i < updated.length; i++) {
+            for (let j = i + 1; j < updated.length; j++) {
+              const n1 = updated[i];
+              const n2 = updated[j];
+              const dx = n2.x - n1.x;
+              const dy = n2.y - n1.y;
+              const distSq = dx * dx + dy * dy;
+              const dist = Math.sqrt(distSq) || 1;
+              const minDist = n1.radius + n2.radius + 68;
+
+              // Coulomb repulsion
+              const chargeForce = 24000 / (distSq + 250);
+              const fx = (dx / dist) * chargeForce;
+              const fy = (dy / dist) * chargeForce;
+
+              if (n1.id !== draggedNodeId) {
+                n1.vx -= fx;
+                n1.vy -= fy;
+              }
+              if (n2.id !== draggedNodeId) {
+                n2.vx += fx;
+                n2.vy += fy;
+              }
+
+              // Hard collision repulsion to guarantee text separation
+              if (dist < minDist) {
+                const overlap = (minDist - dist) * 0.45;
+                const pushX = (dx / dist) * overlap;
+                const pushY = (dy / dist) * overlap;
+                if (n1.id !== draggedNodeId) {
+                  n1.vx -= pushX;
+                  n1.vy -= pushY;
+                }
+                if (n2.id !== draggedNodeId) {
+                  n2.vx += pushX;
+                  n2.vy += pushY;
+                }
+              }
+            }
+          }
+
+          // 2. Spring tension along edges with relaxed distance
+          edges.forEach((edge) => {
+            const src = updated.find((n) => n.id === edge.source);
+            const tgt = updated.find((n) => n.id === edge.target);
+            if (!src || !tgt) return;
+
+            const dx = tgt.x - src.x;
+            const dy = tgt.y - src.y;
+            const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+            const desiredLength = 210;
+            const displacement = dist - desiredLength;
+            const springForce = displacement * 0.025;
+
+            const fx = (dx / dist) * springForce;
+            const fy = (dy / dist) * springForce;
+
+            if (src.id !== draggedNodeId) {
+              src.vx += fx;
+              src.vy += fy;
+            }
+            if (tgt.id !== draggedNodeId) {
+              tgt.vx -= fx;
+              tgt.vy -= fy;
+            }
+          });
+
+          // 3. Gentle center gravity pull (keeps nodes spread without crowding)
+          updated.forEach((n) => {
+            if (n.id === draggedNodeId) return;
+
+            const pullX = (centerX - n.x) * 0.005;
+            const pullY = (centerY - n.y) * 0.005;
+            n.vx = (n.vx + pullX) * 0.82;
+            n.vy = (n.vy + pullY) * 0.82;
+
+            n.x += n.vx;
+            n.y += n.vy;
+
+            // Canvas boundary containment with generous padding
+            const pad = n.radius + 35;
+            n.x = Math.max(pad, Math.min(width - pad, n.x));
+            n.y = Math.max(pad, Math.min(height - pad, n.y));
+          });
+
+          return updated;
+        });
+      }
+
+      ctx.clearRect(0, 0, width, height);
       ctx.save();
       ctx.scale(zoom, zoom);
+
+      // Draw subtle grid pattern
+      ctx.strokeStyle = '#F1F5F9';
+      ctx.lineWidth = 1;
+      const gridSize = 45;
+      for (let x = 0; x < width / zoom; x += gridSize) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height / zoom);
+        ctx.stroke();
+      }
+      for (let y = 0; y < height / zoom; y += gridSize) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(width / zoom, y);
+        ctx.stroke();
+      }
 
       // Draw Edges
       edges.forEach((edge) => {
@@ -142,35 +260,55 @@ export const KnowledgeGraph3DView: React.FC = () => {
         const tgt = nodes.find((n) => n.id === edge.target);
         if (!src || !tgt) return;
 
+        const isEdgeActive =
+          (selectedNode && (selectedNode.id === src.id || selectedNode.id === tgt.id)) ||
+          (hoveredNodeId && (hoveredNodeId === src.id || hoveredNodeId === tgt.id));
+
         ctx.beginPath();
         ctx.moveTo(src.x, src.y);
         ctx.lineTo(tgt.x, tgt.y);
 
         if (edge.type === 'SUPERSEDES') {
-          ctx.strokeStyle = 'rgba(239, 68, 68, 0.4)';
+          ctx.strokeStyle = isEdgeActive ? 'rgba(239, 68, 68, 0.9)' : 'rgba(239, 68, 68, 0.35)';
           ctx.setLineDash([4, 4]);
         } else if (edge.type === 'TEST_METHOD') {
-          ctx.strokeStyle = 'rgba(16, 185, 129, 0.45)';
+          ctx.strokeStyle = isEdgeActive ? 'rgba(16, 185, 129, 0.9)' : 'rgba(16, 185, 129, 0.35)';
           ctx.setLineDash([]);
         } else {
-          ctx.strokeStyle = 'rgba(37, 99, 235, 0.35)';
+          ctx.strokeStyle = isEdgeActive ? 'rgba(37, 99, 235, 0.9)' : 'rgba(148, 163, 184, 0.35)';
           ctx.setLineDash([]);
         }
 
-        ctx.lineWidth = 1.8;
+        ctx.lineWidth = isEdgeActive ? 2.5 : 1.4;
         ctx.stroke();
+        ctx.setLineDash([]);
 
-        // Edge Label
-        const midX = (src.x + tgt.x) / 2;
-        const midY = (src.y + tgt.y) / 2;
-        ctx.fillStyle = '#71717A';
-        ctx.font = '9px "JetBrains Mono", monospace';
-        ctx.fillText(edge.label, midX - 20, midY - 4);
+        // Show Edge Label ONLY when connected to selected/hovered node or small graph to avoid text soup
+        if (isEdgeActive || nodes.length <= 5) {
+          const midX = (src.x + tgt.x) / 2;
+          const midY = (src.y + tgt.y) / 2;
+          ctx.font = 'bold 9.5px "JetBrains Mono", monospace';
+          const labelWidth = ctx.measureText(edge.label).width;
+
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.92)';
+          ctx.beginPath();
+          ctx.roundRect ? ctx.roundRect(midX - labelWidth / 2 - 5, midY - 9, labelWidth + 10, 16, 4) : ctx.rect(midX - labelWidth / 2 - 5, midY - 9, labelWidth + 10, 16);
+          ctx.fill();
+          ctx.strokeStyle = isEdgeActive ? '#94A3B8' : '#E2E8F0';
+          ctx.lineWidth = 1;
+          ctx.stroke();
+
+          ctx.fillStyle = isEdgeActive ? '#0F172A' : '#64748B';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(edge.label, midX, midY);
+        }
       });
 
       // Draw Nodes
       nodes.forEach((node) => {
         const isSelected = selectedNode?.id === node.id;
+        const isHovered = hoveredNodeId === node.id;
         const matchesFilter = activeFilter === 'ALL' || node.domain.toLowerCase().includes(activeFilter.toLowerCase());
         const matchesSearch = !searchQuery || node.isNumber.toLowerCase().includes(searchQuery.toLowerCase()) || node.title.toLowerCase().includes(searchQuery.toLowerCase());
         const opacity = matchesFilter && matchesSearch ? 1 : 0.2;
@@ -178,10 +316,12 @@ export const KnowledgeGraph3DView: React.FC = () => {
         ctx.globalAlpha = opacity;
 
         // Glowing outer halo for QCO mandatory or selected nodes
-        if (node.status === 'MANDATORY_QCO' || isSelected) {
+        if (node.status === 'MANDATORY_QCO' || isSelected || isHovered) {
           ctx.beginPath();
-          ctx.arc(node.x, node.y, node.radius + 7, 0, 2 * Math.PI);
-          ctx.fillStyle = isSelected ? 'rgba(37, 99, 235, 0.18)' : 'rgba(234, 88, 12, 0.12)';
+          ctx.arc(node.x, node.y, node.radius + (isSelected ? 10 : 6), 0, 2 * Math.PI);
+          ctx.fillStyle = isSelected
+            ? 'rgba(37, 99, 235, 0.22)'
+            : (node.status === 'MANDATORY_QCO' ? 'rgba(234, 88, 12, 0.16)' : 'rgba(99, 102, 241, 0.14)');
           ctx.fill();
         }
 
@@ -191,43 +331,94 @@ export const KnowledgeGraph3DView: React.FC = () => {
         ctx.fillStyle = node.color;
         ctx.fill();
         ctx.strokeStyle = isSelected ? '#09090B' : '#FFFFFF';
-        ctx.lineWidth = isSelected ? 2.5 : 1.5;
+        ctx.lineWidth = isSelected ? 3.5 : 2;
+        ctx.stroke();
+
+        // Node Text Pill Backdrop
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'alphabetic';
+        ctx.font = 'bold 11px "Plus Jakarta Sans", sans-serif';
+        const isNumText = node.isNumber;
+        const textWidth = ctx.measureText(isNumText).width;
+
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.92)';
+        ctx.beginPath();
+        const pillX = node.x - textWidth / 2 - 5;
+        const pillY = node.y + node.radius + 3;
+        const pillW = textWidth + 10;
+        const pillH = isSelected || isHovered ? 26 : 15;
+        ctx.roundRect ? ctx.roundRect(pillX, pillY, pillW, pillH, 3) : ctx.rect(pillX, pillY, pillW, pillH);
+        ctx.fill();
+        ctx.strokeStyle = isSelected ? '#CBD5E1' : '#F1F5F9';
+        ctx.lineWidth = 1;
         ctx.stroke();
 
         // Standard Label
-        ctx.fillStyle = '#09090B';
-        ctx.font = 'bold 11px "Plus Jakarta Sans", sans-serif';
-        ctx.fillText(node.isNumber, node.x - node.radius - 8, node.y + node.radius + 14);
+        ctx.fillStyle = isSelected ? '#1D4ED8' : '#0F172A';
+        ctx.fillText(isNumText, node.x, node.y + node.radius + 14);
 
-        // Status Badge Pill text
-        ctx.fillStyle = '#71717A';
-        ctx.font = '9px "JetBrains Mono", monospace';
-        ctx.fillText(node.domain.split('/')[0].trim(), node.x - node.radius - 8, node.y + node.radius + 26);
+        // Subtext (only show on selected/hovered or when clean)
+        if (isSelected || isHovered) {
+          ctx.fillStyle = '#64748B';
+          ctx.font = '9px "JetBrains Mono", monospace';
+          const sub = node.domain.split('/')[0].trim();
+          ctx.fillText(sub, node.x, node.y + node.radius + 25);
+        }
       });
 
       ctx.restore();
       ctx.globalAlpha = 1;
 
-      if (isSimulating) {
-        animationFrameId = requestAnimationFrame(render);
-      }
+      animationFrameId = requestAnimationFrame(render);
     };
 
-    render();
+    animationFrameId = requestAnimationFrame(render);
 
     return () => {
       cancelAnimationFrame(animationFrameId);
     };
-  }, [nodes, selectedNode, activeFilter, searchQuery, zoom, isSimulating]);
+  }, [nodes, edges, selectedNode, activeFilter, searchQuery, zoom, isSimulating, draggedNodeId, hoveredNodeId]);
+
+  const getCanvasCoords = (e: React.MouseEvent<HTMLCanvasElement>) => {
+    const canvas = canvasRef.current;
+    if (!canvas) return { x: 0, y: 0 };
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    return {
+      x: ((e.clientX - rect.left) * scaleX) / zoom,
+      y: ((e.clientY - rect.top) * scaleY) / zoom,
+    };
+  };
+
+  const handleCanvasMouseDown = (e: React.MouseEvent<HTMLCanvasElement>) => {
+    const { x, y } = getCanvasCoords(e);
+    const clicked = nodes.find((n) => Math.hypot(n.x - x, n.y - y) <= n.radius + 8);
+    if (clicked) {
+      setDraggedNodeId(clicked.id);
+      setSelectedNode(clicked);
+    }
+  };
+
+  const handleCanvasMouseMove = (e: React.MouseEvent<HTMLCanvasElement>) => {
+    const { x, y } = getCanvasCoords(e);
+    if (draggedNodeId) {
+      setNodes((prev) =>
+        prev.map((n) => (n.id === draggedNodeId ? { ...n, x, y, vx: 0, vy: 0 } : n))
+      );
+    } else {
+      const hovered = nodes.find((n) => Math.hypot(n.x - x, n.y - y) <= n.radius + 8);
+      setHoveredNodeId(hovered ? hovered.id : null);
+    }
+  };
+
+  const handleCanvasMouseUp = () => {
+    setDraggedNodeId(null);
+  };
 
   const handleCanvasClick = (e: React.MouseEvent<HTMLCanvasElement>) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const rect = canvas.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / zoom;
-    const y = (e.clientY - rect.top) / zoom;
-
-    const clicked = nodes.find((n) => Math.hypot(n.x - x, n.y - y) <= n.radius + 5);
+    const { x, y } = getCanvasCoords(e);
+    const clicked = nodes.find((n) => Math.hypot(n.x - x, n.y - y) <= n.radius + 8);
     if (clicked) {
       setSelectedNode(clicked);
     }
@@ -365,10 +556,20 @@ export const KnowledgeGraph3DView: React.FC = () => {
 
           <canvas
             ref={canvasRef}
-            width={850}
-            height={520}
+            width={1050}
+            height={620}
+            onMouseDown={handleCanvasMouseDown}
+            onMouseMove={handleCanvasMouseMove}
+            onMouseUp={handleCanvasMouseUp}
+            onMouseLeave={handleCanvasMouseUp}
             onClick={handleCanvasClick}
-            style={{ width: '100%', height: 'auto', display: 'block', background: '#FAFAFA', cursor: 'pointer' }}
+            style={{
+              width: '100%',
+              height: 'auto',
+              display: 'block',
+              background: '#FAFAFA',
+              cursor: draggedNodeId ? 'grabbing' : (hoveredNodeId ? 'grab' : 'pointer'),
+            }}
           />
 
           {/* Graph Legend Footer */}

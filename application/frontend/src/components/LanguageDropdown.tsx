@@ -11,12 +11,10 @@ import {
 
 interface LanguageDropdownProps {
   onLanguageChange?: (lang: LanguageCode) => void;
-  bhashiniUsed?: boolean;
 }
 
 export const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
   onLanguageChange,
-  bhashiniUsed,
 }) => {
   const [currentLang, setCurrentLang] = useState<LanguageCode>("en");
   const [isOpen, setIsOpen] = useState(false);

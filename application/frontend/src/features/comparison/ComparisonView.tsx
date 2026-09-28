@@ -6,7 +6,7 @@ import { AlliedStandardsMatrix } from './AlliedStandardsMatrix';
 
 
 interface ComparisonViewProps {
-  currentData: StandardsResponse;
+  currentData?: StandardsResponse | null;
   onPromotePrimary?: (alternative: AlternativeRecommendation) => void;
 }
 
@@ -14,6 +14,22 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
   currentData,
   onPromotePrimary,
 }) => {
+  if (!currentData) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        <div className="workbench-card" style={{ padding: '40px', textAlign: 'center' }}>
+          <div style={{ fontSize: '32px', marginBottom: '12px' }}>⚖️</div>
+          <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 600, color: 'var(--ink)' }}>
+            No Active Standard Query for Comparison
+          </h3>
+          <p style={{ fontFamily: 'var(--font-prose)', fontSize: '14px', color: 'var(--ink-secondary)', maxWidth: '520px', margin: '8px auto 0 auto' }}>
+            Please search for an item (e.g. "Ordinary Portland Cement", "Structural Steel", "HDPE Pipes") in the search bar above to generate the primary standard, candidate alternatives, and allied test methods ecosystem.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   const [alternatives, setAlternatives] = useState<AlternativeRecommendation[]>(
     currentData.alternative_recommendations || []
   );

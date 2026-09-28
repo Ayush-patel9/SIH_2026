@@ -60,6 +60,9 @@ def init_connection_pool():
 def get_connection():
     """Get a database connection from the pool with fallback to direct connection."""
     global connection_pool
+    if not DATABASE_URL:
+        return None
+
     if connection_pool is None:
         init_connection_pool()
 

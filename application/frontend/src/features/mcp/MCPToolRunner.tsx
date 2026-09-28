@@ -4,7 +4,7 @@ import { MCP_TOOLS_MANIFEST, executeMCPTool } from './mcpClient';
 import type { MCPToolDefinition } from './mcpClient';
 
 interface MCPToolRunnerProps {
-  currentData: StandardsResponse;
+  currentData?: StandardsResponse | null;
 }
 
 export const MCPToolRunner: React.FC<MCPToolRunnerProps> = ({ currentData }) => {

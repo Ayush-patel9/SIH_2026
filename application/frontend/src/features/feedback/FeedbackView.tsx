@@ -6,7 +6,7 @@ import { FeedbackStore } from './feedbackStore';
 import { computeTrustScore } from './trustScoreCalc';
 
 interface FeedbackViewProps {
-  currentData: StandardsResponse;
+  currentData?: StandardsResponse | null;
 }
 
 export const FeedbackView: React.FC<FeedbackViewProps> = ({ currentData }) => {
@@ -32,7 +32,7 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({ currentData }) => {
     refreshList();
   };
 
-  const primaryIs = currentData.primary_recommendation?.is_number || 'IS 269:2015';
+  const primaryIs = currentData?.primary_recommendation?.is_number || 'IS 269:2015';
   const trust = computeTrustScore(primaryIs, feedbackList);
 
   const total = feedbackList.length;
@@ -126,8 +126,8 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({ currentData }) => {
       <FeedbackModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        queryId={currentData.meta.query_id}
-        recommendationId={currentData.audit_record?.recommendation_id || 'rec-001'}
+        queryId={currentData?.meta?.query_id || 'manual-feedback-session'}
+        recommendationId={currentData?.audit_record?.recommendation_id || 'rec-general'}
         flaggedIsNumber={primaryIs}
         onSuccess={refreshList}
       />

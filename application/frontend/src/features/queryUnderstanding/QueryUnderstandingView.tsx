@@ -13,7 +13,7 @@ import type { ManualEntityCorrections } from './refinedQueryBuilder';
 import { queryStandards } from '../../api/standardsClient';
 
 interface QueryUnderstandingViewProps {
-  currentData: StandardsResponse;
+  currentData?: StandardsResponse | null;
   onUpdateData?: (updated: StandardsResponse) => void;
 }
 
@@ -21,7 +21,7 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
   currentData,
   onUpdateData,
 }) => {
-  const [activeData, setActiveData] = useState<StandardsResponse>(currentData);
+  const [activeData, setActiveData] = useState<StandardsResponse | null>(currentData || null);
   const [queryInput, setQueryInput] = useState<string>('');
   const [isAnalyzing, setIsAnalyzing] = useState<boolean>(false);
   const [isCorrectionOpen, setIsCorrectionOpen] = useState<boolean>(false);
@@ -29,7 +29,7 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
 
   // Sync when parent currentData changes
   React.useEffect(() => {
-    setActiveData(currentData);
+    setActiveData(currentData || null);
   }, [currentData]);
 
   const handleAnalyze = async (textToAnalyze?: string) => {
@@ -52,6 +52,7 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
     resolvedValue: string,
     resolvedOption: AmbiguityOption
   ) => {
+    if (!activeData) return;
     const refined = buildRefinedQuery(
       activeData,
       dimension,
@@ -68,6 +69,7 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
   };
 
   const handleApplyCorrection = (corrections: ManualEntityCorrections) => {
+    if (!activeData) return;
     const corrected = applyQueryCorrection(activeData, corrections);
     setActiveData(corrected);
     if (onUpdateData) onUpdateData(corrected);
@@ -79,7 +81,7 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
     setTimeout(() => setResolutionNotice(null), 5000);
   };
 
-  const qu = activeData.query_understanding;
+  const qu = activeData?.query_understanding;
   const ambiguityFlags = qu?.ambiguity_flags || [];
 
   return (
@@ -110,7 +112,7 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <IntentClassifierBadge mode={activeData.meta.mode} />
+            <IntentClassifierBadge mode={activeData?.meta?.mode || 'recommend'} />
           </div>
         </div>
 
@@ -207,45 +209,57 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
         )}
       </div>
 
-      {/* Component 1: Extracted Entity Visualization */}
-      <QueryEntityDisplay
-        understanding={qu}
-        onOpenCorrection={() => setIsCorrectionOpen(!isCorrectionOpen)}
-      />
+      {!qu ? (
+        <div className="workbench-card" style={{ padding: '36px 24px', textAlign: 'center' }}>
+          <Sparkles size={28} style={{ color: 'var(--brand-primary, #2563eb)', margin: '0 auto 12px' }} />
+          <h3 style={{ fontFamily: 'var(--font-ui)', fontSize: '16px', fontWeight: 600, color: 'var(--ink)' }}>
+            No Active Query Analysis
+          </h3>
+          <p style={{ fontSize: '13px', color: 'var(--ink-secondary)', maxWidth: '480px', margin: '6px auto 16px' }}>
+            Enter a tender clause or material specification above, or click one of the quick test chips to analyze extracted entities, ISO language detection, and procurement intent.
+          </p>
+        </div>
+      ) : (
+        <>
+          {/* Component 1: Extracted Entity Visualization */}
+          <QueryEntityDisplay
+            understanding={qu}
+            onOpenCorrection={() => setIsCorrectionOpen(!isCorrectionOpen)}
+          />
 
-      {/* Component 2: Active Ambiguity Cards if Present */}
-      {ambiguityFlags.length > 0 && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-          {ambiguityFlags.map((flag, idx) => (
-            <AmbiguityCard
-              key={idx}
-              flag={flag}
-              onResolve={handleResolveAmbiguity}
+          {/* Component 2: Active Ambiguity Cards if Present */}
+          {ambiguityFlags.length > 0 && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {ambiguityFlags.map((flag, idx) => (
+                <AmbiguityCard
+                  key={idx}
+                  flag={flag}
+                  onResolve={handleResolveAmbiguity}
+                />
+              ))}
+            </div>
+          )}
+
+          {/* Component 4: Collapsible Manual Officer Override Form */}
+          {isCorrectionOpen && (
+            <QueryCorrectionForm
+              understanding={qu}
+              onCorrect={handleApplyCorrection}
+              onClose={() => setIsCorrectionOpen(false)}
             />
-          ))}
-        </div>
-      )}
+          )}
 
-      {/* Component 4: Collapsible Manual Officer Override Form */}
-      {isCorrectionOpen && (
-        <QueryCorrectionForm
-          understanding={qu}
-          onCorrect={handleApplyCorrection}
-          onClose={() => setIsCorrectionOpen(false)}
-        />
-      )}
+          {/* NLU Pipeline Audit & Reasoning Trace */}
+          <div className="workbench-card" style={{ padding: '20px' }}>
+            <div className="section-label" style={{ margin: '0 0 4px 0' }}>
+              UNDERSTANDING PIPELINE AUDIT TRACE
+            </div>
+            <h3 style={{ fontFamily: 'var(--font-prose)', fontSize: '17px', fontWeight: 600, color: 'var(--ink)', marginBottom: '10px' }}>
+              Query Entity Extraction & Intent Classification Trace
+            </h3>
 
-      {/* NLU Pipeline Audit & Reasoning Trace */}
-      <div className="workbench-card" style={{ padding: '20px' }}>
-        <div className="section-label" style={{ margin: '0 0 4px 0' }}>
-          UNDERSTANDING PIPELINE AUDIT TRACE
-        </div>
-        <h3 style={{ fontFamily: 'var(--font-prose)', fontSize: '17px', fontWeight: 600, color: 'var(--ink)', marginBottom: '10px' }}>
-          Query Entity Extraction & Intent Classification Trace
-        </h3>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          {activeData.reasoning_trace.map((step, idx) => (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {activeData?.reasoning_trace?.map((step, idx) => (
             <div
               key={idx}
               style={{
@@ -285,8 +299,10 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
               </div>
             </div>
           ))}
-        </div>
-      </div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

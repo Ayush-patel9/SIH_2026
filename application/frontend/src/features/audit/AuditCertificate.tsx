@@ -3,10 +3,24 @@ import type { StandardsResponse } from '../../types';
 import { generateCertificateHTML, downloadCertificate } from './certificateGenerator';
 
 interface AuditCertificateProps {
-  data: StandardsResponse;
+  data?: StandardsResponse | null;
 }
 
 export const AuditCertificate: React.FC<AuditCertificateProps> = ({ data }) => {
+  if (!data) {
+    return (
+      <div className="workbench-card" style={{ padding: '40px', textAlign: 'center' }}>
+        <div style={{ fontSize: '32px', marginBottom: '12px' }}>📄</div>
+        <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 600, color: 'var(--ink)' }}>
+          No Active Query for Certificate
+        </h3>
+        <p style={{ fontFamily: 'var(--font-prose)', fontSize: '14px', color: 'var(--ink-secondary)', maxWidth: '480px', margin: '8px auto 0 auto' }}>
+          Execute a query from the search bar or select a past query from Cryptographic Session Logs to view and export its CVC Defense Certificate.
+        </p>
+      </div>
+    );
+  }
+
   const audit = data.audit_record;
   const meta = data.meta;
   const primary = data.primary_recommendation;

@@ -289,7 +289,7 @@ export const TenderAuthorityPanel: React.FC<TenderAuthorityPanelProps> = ({
       {/* Normative Knowledge Graph Component */}
       <div className="workbench-card">
         <div className="section-label">NORMATIVE REFERENCE KNOWLEDGE GRAPH</div>
-        <KnowledgeGraphViewer primaryStandard={primary?.is_number} />
+        <KnowledgeGraphViewer data={data} edges={data.graph_path} primaryStandard={primary?.is_number} />
       </div>
 
       {/* Officer Feedback Modal */}

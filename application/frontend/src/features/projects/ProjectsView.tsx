@@ -443,16 +443,21 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '6px',
-                padding: '7px 12px',
-                fontSize: '12px',
+                gap: '8px',
+                padding: '8px 14px',
+                fontSize: '13px',
                 fontFamily: 'var(--font-data)',
-                fontWeight: 600,
+                fontWeight: 700,
                 cursor: 'pointer',
+                background: 'var(--forest)',
+                color: '#FFFFFF',
+                border: 'none',
+                borderRadius: '6px',
+                boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
               }}
             >
-              <ArrowLeft size={14} />
-              <span>All Projects</span>
+              <ArrowLeft size={16} />
+              <span>← Back to All Projects</span>
             </button>
 
             <div>
@@ -1060,8 +1065,8 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                 padding: '6px 14px',
                 borderRadius: '20px',
                 border: '1px solid',
-                borderColor: filterTab === tab ? 'var(--forest)' : 'var(--hairline)',
-                background: filterTab === tab ? 'var(--forest)' : 'transparent',
+                borderColor: filterTab === tab ? 'var(--ink)' : 'var(--hairline)',
+                background: filterTab === tab ? 'var(--ink)' : 'transparent',
                 color: filterTab === tab ? 'var(--paper)' : 'var(--ink-secondary)',
                 fontSize: '11.5px',
                 fontWeight: 600,
@@ -1083,7 +1088,50 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
         </div>
       </div>
 
-      {/* Projects Grid */}
+      {/* Projects Grid or Clean Empty State */}
+      {filteredProjects.length === 0 ? (
+        <div
+          className="workbench-card"
+          style={{
+            padding: '48px 24px',
+            textAlign: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '12px',
+            border: '1px dashed var(--hairline)',
+            background: 'var(--surface)',
+          }}
+        >
+          <div style={{ fontSize: '36px' }}>📂</div>
+          <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 600, color: 'var(--ink)', margin: 0 }}>
+            No Tenders Match the Current Filter
+          </h3>
+          <p style={{ fontFamily: 'var(--font-prose)', fontSize: '14px', color: 'var(--ink-secondary)', maxWidth: '440px', margin: 0 }}>
+            {searchQuery
+              ? `No projects matching "${searchQuery}" in this view.`
+              : 'There are currently no projects matching this category.'}
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              setFilterTab('ALL');
+              setSearchQuery('');
+            }}
+            className="action-btn secondary"
+            style={{
+              marginTop: '8px',
+              cursor: 'pointer',
+              padding: '8px 16px',
+              fontSize: '13px',
+              fontWeight: 600,
+              fontFamily: 'var(--font-data)',
+            }}
+          >
+            Reset Filters & View All
+          </button>
+        </div>
+      ) : (
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))', gap: '16px' }}>
         {filteredProjects.map((project) => {
           return (
@@ -1248,6 +1296,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
           );
         })}
       </div>
+      )}
 
       {/* Modal: Create New Project */}
       {isCreateModalOpen && (

@@ -203,6 +203,7 @@ export const ProcurementOfficerPanel: React.FC<ProcurementOfficerPanelProps> = (
 
       {/* Component 3: Knowledge Subgraph & Normative Network */}
       <KnowledgeGraphViewer
+        data={data}
         edges={data.graph_path}
         primaryStandard={primary?.is_number}
       />

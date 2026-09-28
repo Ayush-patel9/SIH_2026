@@ -7,10 +7,25 @@ import { ClauseEditor } from './ClauseEditor';
 import { ClauseExportBar } from './ClauseExportBar';
 
 interface NITGeneratorViewProps {
-  currentData: StandardsResponse;
+  currentData?: StandardsResponse | null;
 }
 
 export const NITGeneratorView: React.FC<NITGeneratorViewProps> = ({ currentData }) => {
+  if (!currentData) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        <div className="workbench-card" style={{ padding: '40px', textAlign: 'center' }}>
+          <div style={{ fontSize: '32px', marginBottom: '12px' }}>📝</div>
+          <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 600, color: 'var(--ink)' }}>
+            No Active Standard Selected for NIT Clause Generation
+          </h3>
+          <p style={{ fontFamily: 'var(--font-prose)', fontSize: '14px', color: 'var(--ink-secondary)', maxWidth: '520px', margin: '8px auto 0 auto' }}>
+            Search for a material standard above or select a project from the Projects tab to automatically generate legally defensible GFR Rule 144 / GeM tender clauses.
+          </p>
+        </div>
+      </div>
+    );
+  }
   const [selectedTemplate, setSelectedTemplate] = useState<string>('standard_gem');
   const [customFields, setCustomFields] = useState<NITCustomFields>({
     nitNumber: 'NIT-MoRTH-2026-088',

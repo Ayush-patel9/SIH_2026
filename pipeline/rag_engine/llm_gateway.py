@@ -525,8 +525,7 @@ class LLMGateway:
             raise RuntimeError("LLM Gateway is in offline mode.")
 
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
-        fallback_models = [primary_model, "gemini-3.5-flash-lite", "gemini-flash-lite-latest"]
-        candidate_models = list(dict.fromkeys(fallback_models))
+        candidate_models = [primary_model]
         
         last_error = None
 
@@ -542,7 +541,7 @@ class LLMGateway:
                     response = model.generate_content(
                         full_prompt,
                         generation_config={"response_mime_type": "application/json"},
-                        request_options={"timeout": 180.0}
+                        request_options={"timeout": 12.0, "retry": None}
                     )
                     
                     text = response.text.strip()
@@ -559,6 +558,9 @@ class LLMGateway:
                 except Exception as e:
                     last_error = e
                     logger.warning(f"LLM call on {model_name} (key {key[:8]}...) encountered issue: {e}")
+                    # If quota exhausted (429), break model loop quickly to avoid long cascade
+                    if "429" in str(e) or "ResourceExhausted" in type(e).__name__:
+                        break
                     continue
 
         raise RuntimeError(f"All LLM keys and models exhausted. Last error: {last_error}")
@@ -572,8 +574,7 @@ class LLMGateway:
             raise RuntimeError("LLM Gateway is in offline mode.")
 
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
-        fallback_models = [primary_model, "gemini-3.5-flash-lite", "gemini-flash-lite-latest"]
-        candidate_models = list(dict.fromkeys(fallback_models))
+        candidate_models = [primary_model]
         
         last_error = None
         pdf_part = {"inline_data": {"mime_type": "application/pdf", "data": pdf_bytes}}
@@ -593,7 +594,7 @@ class LLMGateway:
                     response = model.generate_content(
                         [pdf_part, full_prompt],
                         generation_config={"response_mime_type": "application/json"},
-                        request_options={"timeout": 180.0}
+                        request_options={"timeout": 15.0, "retry": None}
                     )
                     
                     text = response.text.strip()

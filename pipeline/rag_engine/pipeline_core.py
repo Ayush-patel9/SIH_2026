@@ -306,7 +306,7 @@ class GraphRAGPipeline:
                 standards_under_revision=[]
             ),
             multilingual=MultilingualInfo(
-                bhashini_used=understanding.detected_language != "en",
+                bhashini_used=False,
                 detected_input_language=understanding.detected_language,
                 response_language=understanding.detected_language,
                 available_translations=["hi", "ta", "te", "mr", "gu", "bn"]

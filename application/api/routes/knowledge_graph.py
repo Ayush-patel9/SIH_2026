@@ -2,7 +2,7 @@ from fastapi import APIRouter, Query
 from typing import Dict, Any, List, Optional
 import logging
 from pipeline.rag_engine.pipeline_core import graph_rag_pipeline
-from pipeline.rag_engine.tri_retrieval import CANONICAL_SUPERSESSION_MAP, TIER2_NORM_FALLBACKS
+from pipeline.rag_engine.tri_retrieval import normalize_is_key, CANONICAL_SUPERSESSION_MAP, TIER2_NORM_FALLBACKS
 
 logger = logging.getLogger("bis_platform_api.knowledge_graph")
 router = APIRouter(prefix="/api/v1/knowledge-graph", tags=["Knowledge Graph & 3D Neural Mesh"])
@@ -15,29 +15,51 @@ DOMAIN_COLORS = {
     "Chemicals": "#06B6D4",
     "Electronics": "#E11D48",
     "Superseded": "#EF4444",
+    "General": "#7C3AED",
 }
+
+def resolve_domain_color(domain_str: str, status: str = "ACTIVE") -> str:
+    if status in ("SUPERSEDED", "WITHDRAWN"):
+        return DOMAIN_COLORS["Superseded"]
+    d_lower = domain_str.lower()
+    if "civil" in d_lower or "cement" in d_lower or "concrete" in d_lower or "ced" in d_lower:
+        return DOMAIN_COLORS["Civil"]
+    if "metal" in d_lower or "steel" in d_lower or "mtd" in d_lower:
+        return DOMAIN_COLORS["Metallurgy"]
+    if "test" in d_lower:
+        return DOMAIN_COLORS["Testing"]
+    if "chem" in d_lower or "plastic" in d_lower or "pipe" in d_lower or "chd" in d_lower:
+        return DOMAIN_COLORS["Chemicals"]
+    if "electr" in d_lower or "cctv" in d_lower or "it" in d_lower or "etd" in d_lower or "litd" in d_lower:
+        return DOMAIN_COLORS["Electronics"]
+    return DOMAIN_COLORS["General"]
+
 
 @router.get("/subgraph", summary="Fetch Dynamic Knowledge Graph Subgraph")
 def get_knowledge_graph_subgraph(
-    center: Optional[str] = Query(None, description="Standard code to center around (e.g. IS 269:2015, IS 1786)"),
+    center: Optional[str] = Query(None, description="Standard code or keyword to center around (e.g. IS 1786, IS 7098, IS 2925, IS 4984)"),
     domain: Optional[str] = Query("ALL", description="Engineering Domain (Civil, Metallurgy, Testing, Electronics, Chemicals, ALL)"),
     limit: int = Query(30, description="Maximum nodes in subgraph")
 ) -> Dict[str, Any]:
     """
-    Dynamically generates a relational Knowledge Graph subgraph based on the 22,011
-    indexed Indian Standards, canonical supersession dictionary, and normative test matrices.
+    Dynamically generates a relational Knowledge Graph subgraph for ANY Indian Standard
+    based on the 22,011 indexed Indian Standards, 2-Tier Knowledge Graph traversal,
+    and canonical supersession lineages.
     """
     tri = graph_rag_pipeline.tri_retrieval
+    limit_val: int = limit if isinstance(limit, int) else (int(limit) if isinstance(limit, str) and limit.isdigit() else 30)
 
     nodes: List[Dict[str, Any]] = []
     edges: List[Dict[str, Any]] = []
     seen_nodes = set()
+    seen_edges = set()
 
-    def add_node(node_id: str, is_number: str, title: str, dom: str, year: int, status: str, citations: int, color: str):
+    def add_node(node_id: str, is_number: str, title: str, dom: str, year: int, status: str, citations: int, color: Optional[str] = None):
         clean_id = node_id.replace(" ", "-").replace(":", "-").replace("/", "-")
         if clean_id in seen_nodes:
             return clean_id
         seen_nodes.add(clean_id)
+        node_color = color or resolve_domain_color(dom, status)
         nodes.append({
             "id": clean_id,
             "isNumber": is_number,
@@ -46,105 +68,200 @@ def get_knowledge_graph_subgraph(
             "year": year,
             "status": status,
             "citations": citations,
-            "color": color,
+            "color": node_color,
             "radius": 24 if citations > 60 else (20 if citations > 30 else 16)
         })
         return clean_id
 
-    # 1. Base Core Standards
-    core_standards = [
-        {"id": "IS-269", "num": "IS 269:2015", "title": "Ordinary Portland Cement (33, 43, 53)", "dom": "Civil / Cement", "year": 2015, "status": "MANDATORY_QCO", "citations": 88, "color": DOMAIN_COLORS["Civil"]},
-        {"id": "IS-456", "num": "IS 456:2000", "title": "Plain & Reinforced Concrete Code of Practice", "dom": "Civil / Structural", "year": 2000, "status": "ACTIVE", "citations": 142, "color": "#7C3AED"},
-        {"id": "IS-1786", "num": "IS 1786:2008", "title": "High Strength Deformed Steel Bars (Fe 500D)", "dom": "Metallurgy / Steel", "year": 2008, "status": "MANDATORY_QCO", "citations": 94, "color": DOMAIN_COLORS["Metallurgy"]},
-        {"id": "IS-2062", "num": "IS 2062:2011", "title": "Hot Rolled Medium & High Tensile Structural Steel", "dom": "Metallurgy / Steel", "year": 2011, "status": "MANDATORY_QCO", "citations": 106, "color": DOMAIN_COLORS["Metallurgy"]},
-        {"id": "IS-4984", "num": "IS 4984:2016", "title": "High Density Polyethylene (HDPE) Pipes for Water Supply", "dom": "Chemicals / Plastics", "year": 2016, "status": "MANDATORY_QCO", "citations": 52, "color": DOMAIN_COLORS["Chemicals"]},
-        {"id": "IS-13252", "num": "IS 13252:2010", "title": "Information Technology Equipment — Safety (Part 1)", "dom": "Electronics / IT", "year": 2010, "status": "MANDATORY_QCO", "citations": 76, "color": DOMAIN_COLORS["Electronics"]},
-        {"id": "IS-16842", "num": "IS 16842:2020", "title": "CCTV Surveillance Systems for Security Applications", "dom": "Electronics / Surveillance", "year": 2020, "status": "ACTIVE", "citations": 34, "color": DOMAIN_COLORS["Electronics"]},
-    ]
+    def add_edge(src: str, tgt: str, edge_type: str, label: str):
+        key = (src, tgt, edge_type)
+        if key in seen_edges or src == tgt:
+            return
+        seen_edges.add(key)
+        edges.append({
+            "source": src,
+            "target": tgt,
+            "type": edge_type,
+            "label": label
+        })
 
-    # Add core nodes matching filter
-    for std in core_standards:
-        if domain != "ALL" and domain.lower() not in std["dom"].lower():
-            continue
-        add_node(std["id"], std["num"], std["title"], std["dom"], std["year"], std["status"], std["citations"], std["color"])
+    # Case A: Center standard is requested
+    if center and center.strip() and center.strip().upper() != "ALL":
+        target_term = center.strip()
+        norm_key = normalize_is_key(target_term)
 
-    # 2. Add Supersession Nodes from Canonical Dictionary
-    for old_std, info in CANONICAL_SUPERSESSION_MAP.items():
-        if len(nodes) >= limit:
-            break
-        replacement = info.get("replacement", "")
-        # Add old standard as superseded node
-        old_id = add_node(
-            f"OLD-{old_std}",
-            old_std,
-            f"Withdrawn Standard ({info.get('reason', '')[:40]}...)",
-            "Superseded / Legacy",
-            1989,
-            "SUPERSEDED",
-            14,
-            DOMAIN_COLORS["Superseded"]
+        # 1. Lookup center standard in 22,011 indexed standards
+        center_std = tri.standards_by_num.get(norm_key)
+        if not center_std:
+            # Fallback search by exact/lexicon or vector candidates
+            matches = tri.exact_and_lexicon_lookup(target_term)
+            if matches:
+                center_std = matches[0][0]
+            else:
+                candidates = tri.retrieve_vector_candidates(target_term, top_k=3)
+                if candidates:
+                    center_std = candidates[0][0]
+
+        center_is_num = center_std.get("is_number", target_term) if center_std else target_term
+        center_title = center_std.get("title", f"Indian Standard {center_is_num}") if center_std else f"Indian Standard {center_is_num}"
+        center_dom = center_std.get("technical_committee", {}).get("division_name", "General Engineering") if center_std else "General Engineering"
+        center_year = center_std.get("year_published", 2020) if center_std else 2020
+        center_status = center_std.get("status", "ACTIVE") if center_std else "ACTIVE"
+
+        center_id = add_node(
+            f"IS-{norm_key}",
+            center_is_num,
+            center_title,
+            center_dom,
+            center_year,
+            center_status,
+            citations=92,
+            color=resolve_domain_color(center_dom, center_status)
         )
-        
-        # Connect to replacement if replacement node exists or can be added
-        target_id = None
-        for n in nodes:
-            if replacement in n["isNumber"]:
-                target_id = n["id"]
+
+        # 2. Dynamic 2-Tier Knowledge Graph Traversal for this standard
+        kg_data = tri.traverse_knowledge_graph(center_is_num)
+        for allied in kg_data.get("allied_standards", []):
+            if len(nodes) >= limit_val:
                 break
-        
-        if not target_id:
-            target_id = add_node(
-                f"TARGET-{replacement}",
-                f"{replacement}:2015",
-                f"Consolidated Active Standard {replacement}",
-                "Civil / Structural",
-                2015,
-                "ACTIVE",
-                45,
-                DOMAIN_COLORS["Civil"]
+            a_is = allied.get("is_number", "")
+            a_std = tri.standards_by_num.get(normalize_is_key(a_is))
+            a_dom = a_std.get("technical_committee", {}).get("division_name", "Testing & Conformity") if a_std else "Testing & Conformity"
+            a_year = a_std.get("year_published", 2021) if a_std else 2021
+            a_id = add_node(
+                f"ALLIED-{a_is}",
+                a_is,
+                allied.get("title", a_std.get("title", a_is) if a_std else a_is),
+                a_dom,
+                a_year,
+                allied.get("status", "ACTIVE"),
+                citations=int(allied.get("confidence", 0.9) * 50)
             )
+            rel_type = allied.get("relation_type", "NORMATIVE")
+            add_edge(center_id, a_id, rel_type, allied.get("relation_label", "Normative Citation"))
 
-        edges.append({
-            "source": old_id,
-            "target": target_id,
-            "type": "SUPERSEDES",
-            "label": "Consolidated / Superseded"
-        })
+        # 3. Dynamic supersession lineage for this standard
+        for old_std, s_info in tri.supersession_map.items():
+            if len(nodes) >= limit_val:
+                break
+            rep = s_info.get("replacement", "")
+            if normalize_is_key(rep) == norm_key or normalize_is_key(old_std) == norm_key:
+                old_id = add_node(
+                    f"OLD-{old_std}",
+                    old_std,
+                    f"Withdrawn Standard ({s_info.get('reason', '')[:35]}...)",
+                    "Superseded / Legacy",
+                    1989,
+                    "SUPERSEDED",
+                    12,
+                    DOMAIN_COLORS["Superseded"]
+                )
+                target_id = center_id if normalize_is_key(rep) == norm_key else add_node(
+                    f"REP-{rep}",
+                    rep,
+                    f"Active Consolidated Standard {rep}",
+                    center_dom,
+                    2015,
+                    "ACTIVE",
+                    65
+                )
+                add_edge(old_id, target_id, "SUPERSEDES", "Superseded / Consolidated")
 
-    # 3. Add Normative Test Methods from TIER2_NORM_FALLBACKS
-    test_mappings = [
-        {"src": "IS-269", "test": "IS 4031 (Part 1-15)", "label": "Mandatory Physical Testing"},
-        {"src": "IS-269", "test": "IS 4032:1985", "label": "Chemical Conformity Analysis"},
-        {"src": "IS-1786", "test": "IS 1608:2022", "label": "Tensile & Yield Protocol"},
-        {"src": "IS-1786", "test": "IS 1599:2019", "label": "Mandatory Bend & Rebend Test"},
-        {"src": "IS-2062", "test": "IS 1757:2020", "label": "Charpy V-Notch Impact Test"},
-        {"src": "IS-4984", "test": "IS 2530:1963", "label": "Hydrostatic & Density Test"},
-    ]
+        # 4. Check parsed normative edges from fulltext corpus
+        for e in tri.normative_graph.get(norm_key, []):
+            if len(nodes) >= limit_val:
+                break
+            tgt_is = e.get("target", "")
+            tgt_std = tri.standards_by_num.get(normalize_is_key(tgt_is))
+            tgt_id = add_node(
+                f"EDGE-{tgt_is}",
+                tgt_is,
+                tgt_std.get("title", tgt_is) if tgt_std else tgt_is,
+                tgt_std.get("technical_committee", {}).get("division_name", "Allied Engineering") if tgt_std else "Allied Engineering",
+                tgt_std.get("year_published", 2020) if tgt_std else 2020,
+                tgt_std.get("status", "ACTIVE") if tgt_std else "ACTIVE",
+                citations=30
+            )
+            add_edge(center_id, tgt_id, "NORMATIVE", e.get("label", "Clause Reference"))
 
-    for tm in test_mappings:
-        if len(nodes) >= limit:
-            break
-        test_id = add_node(
-            f"TEST-{tm['test']}",
-            tm["test"],
-            f"Mandatory Laboratory Test Protocol for {tm['test']}",
-            "Testing Methods",
-            2021,
-            "ACTIVE",
-            38,
-            DOMAIN_COLORS["Testing"]
-        )
-        edges.append({
-            "source": tm["src"],
-            "target": test_id,
-            "type": "TEST_METHOD",
-            "label": tm["label"]
-        })
+    # Case B: General Hub Overview across engineering domains
+    else:
+        # Hub Standards
+        core_standards = [
+            {"id": "IS-269", "num": "IS 269:2015", "title": "Ordinary Portland Cement (33, 43, 53)", "dom": "Civil / Cement", "year": 2015, "status": "MANDATORY_QCO", "citations": 88, "color": DOMAIN_COLORS["Civil"]},
+            {"id": "IS-456", "num": "IS 456:2000", "title": "Plain & Reinforced Concrete Code of Practice", "dom": "Civil / Structural", "year": 2000, "status": "ACTIVE", "citations": 142, "color": "#7C3AED"},
+            {"id": "IS-1786", "num": "IS 1786:2008", "title": "High Strength Deformed Steel Bars (Fe 500D)", "dom": "Metallurgy / Steel", "year": 2008, "status": "MANDATORY_QCO", "citations": 94, "color": DOMAIN_COLORS["Metallurgy"]},
+            {"id": "IS-2062", "num": "IS 2062:2011", "title": "Hot Rolled Medium & High Tensile Structural Steel", "dom": "Metallurgy / Steel", "year": 2011, "status": "MANDATORY_QCO", "citations": 106, "color": DOMAIN_COLORS["Metallurgy"]},
+            {"id": "IS-4984", "num": "IS 4984:2016", "title": "High Density Polyethylene (HDPE) Pipes for Water Supply", "dom": "Chemicals / Plastics", "year": 2016, "status": "MANDATORY_QCO", "citations": 52, "color": DOMAIN_COLORS["Chemicals"]},
+            {"id": "IS-13252", "num": "IS 13252:2010", "title": "Information Technology Equipment — Safety (Part 1)", "dom": "Electronics / IT", "year": 2010, "status": "MANDATORY_QCO", "citations": 76, "color": DOMAIN_COLORS["Electronics"]},
+            {"id": "IS-16842", "num": "IS 16842:2020", "title": "CCTV Surveillance Systems for Security Applications", "dom": "Electronics / Surveillance", "year": 2020, "status": "ACTIVE", "citations": 34, "color": DOMAIN_COLORS["Electronics"]},
+        ]
 
-    # 4. Add Cross-Normative Architectural references
-    edges.append({"source": "IS-456", "target": "IS-269", "type": "NORMATIVE", "label": "Permitted Cement Binder"})
-    edges.append({"source": "IS-456", "target": "IS-1786", "type": "NORMATIVE", "label": "Mandatory Reinforcement Rebar"})
-    edges.append({"source": "IS-13252", "target": "IS-16842", "type": "CO_PROCUREMENT", "label": "Mandatory CRS Safety Gate"})
+        for std in core_standards:
+            if domain != "ALL" and domain.lower() not in std["dom"].lower():
+                continue
+            add_node(std["id"], std["num"], std["title"], std["dom"], std["year"], std["status"], std["citations"], std["color"])
+
+        # Add canonical supersessions
+        for old_std, info in CANONICAL_SUPERSESSION_MAP.items():
+            if len(nodes) >= limit_val:
+                break
+            replacement = info.get("replacement", "")
+            old_id = add_node(
+                f"OLD-{old_std}",
+                old_std,
+                f"Withdrawn Standard ({info.get('reason', '')[:40]}...)",
+                "Superseded / Legacy",
+                1989,
+                "SUPERSEDED",
+                14,
+                DOMAIN_COLORS["Superseded"]
+            )
+            target_id = None
+            for n in nodes:
+                if replacement in n["isNumber"]:
+                    target_id = n["id"]
+                    break
+            if not target_id:
+                target_id = add_node(
+                    f"TARGET-{replacement}",
+                    f"{replacement}:2015",
+                    f"Consolidated Active Standard {replacement}",
+                    "Civil / Structural",
+                    2015,
+                    "ACTIVE",
+                    45,
+                    DOMAIN_COLORS["Civil"]
+                )
+            add_edge(old_id, target_id, "SUPERSEDES", "Consolidated / Superseded")
+
+        # Add Normative Test Methods
+        test_mappings = [
+            {"src": "IS-269", "test": "IS 4031 (Part 1-15)", "label": "Mandatory Physical Testing"},
+            {"src": "IS-269", "test": "IS 4032:1985", "label": "Chemical Conformity Analysis"},
+            {"src": "IS-1786", "test": "IS 1608:2022", "label": "Tensile & Yield Protocol"},
+            {"src": "IS-1786", "test": "IS 1599:2019", "label": "Mandatory Bend & Rebend Test"},
+            {"src": "IS-2062", "test": "IS 1757:2020", "label": "Charpy V-Notch Impact Test"},
+            {"src": "IS-4984", "test": "IS 2530:1963", "label": "Hydrostatic & Density Test"},
+        ]
+        for tm in test_mappings:
+            if len(nodes) >= limit_val:
+                break
+            test_id = add_node(
+                f"TEST-{tm['test']}",
+                tm["test"],
+                f"Mandatory Laboratory Test Protocol for {tm['test']}",
+                "Testing Methods",
+                2021,
+                "ACTIVE",
+                38,
+                DOMAIN_COLORS["Testing"]
+            )
+            add_edge(tm["src"], test_id, "TEST_METHOD", tm["label"])
+
+        add_edge("IS-456", "IS-269", "NORMATIVE", "Permitted Cement Binder")
+        add_edge("IS-456", "IS-1786", "NORMATIVE", "Mandatory Reinforcement Rebar")
+        add_edge("IS-13252", "IS-16842", "CO_PROCUREMENT", "Mandatory CRS Safety Gate")
 
     # Filter edges so only existing nodes are connected
     valid_node_ids = {n["id"] for n in nodes}
@@ -152,7 +269,7 @@ def get_knowledge_graph_subgraph(
 
     return {
         "center": center or "IS 269:2015",
-        "total_indexed": 22011,
+        "total_indexed": len(tri.master_standards) if tri.master_standards else 22011,
         "nodes_count": len(nodes),
         "edges_count": len(valid_edges),
         "nodes": nodes,
@@ -160,3 +277,4 @@ def get_knowledge_graph_subgraph(
         "knowledge_graph_hubs": len(tri.normative_graph),
         "qco_mappings": len(tri.qco_matrix),
     }
+

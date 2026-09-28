@@ -329,7 +329,7 @@ class InterfaceAdapter:
 
         # 11. Multilingual
         multilingual = {
-            "bhashini_used": language != "en",
+            "bhashini_used": False,
             "detected_input_language": language,
             "response_language": "en",
             "available_translations": ["hi", "ta", "te", "mr", "gu", "bn"]

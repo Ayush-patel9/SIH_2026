@@ -17,8 +17,7 @@ export type FeatureKey =
   | 'graph3d'
   | 'gazetteRadar'
   | 'timeMachine'
-  | 'cagAudit'
-  | 'voiceStudio';
+  | 'cagAudit';
 
 interface MobileBottomNavProps {
   activeFeature: FeatureKey;

@@ -6,7 +6,7 @@ import { AuditHashVerifier } from './AuditHashVerifier';
 import { AuditStore, type StoredAuditRecord } from './auditStore';
 
 interface AuditTrailViewProps {
-  currentData: StandardsResponse;
+  currentData?: StandardsResponse | null;
   onSelectRecord?: (data: StandardsResponse) => void;
 }
 
@@ -19,8 +19,10 @@ export const AuditTrailView: React.FC<AuditTrailViewProps> = ({
   const [selectedHash, setSelectedHash] = useState<string>('');
 
   useEffect(() => {
-    // Save current active query record to the local audit store
-    AuditStore.save(currentData);
+    // Save current active query record to the local audit store if present
+    if (currentData) {
+      AuditStore.save(currentData);
+    }
     setHistory(AuditStore.getAll());
   }, [currentData]);
 
@@ -156,25 +158,31 @@ export const AuditTrailView: React.FC<AuditTrailViewProps> = ({
                 onVerify={handleVerifyRequest}
               />
             ))
-          ) : (
+          ) : currentData ? (
             <AuditLogEntry
               data={currentData}
               onSelect={onSelectRecord}
               onVerify={handleVerifyRequest}
             />
+          ) : (
+            <div className="workbench-card" style={{ padding: '36px', textAlign: 'center' }}>
+              <p style={{ fontFamily: 'var(--font-prose)', color: 'var(--ink-secondary)', margin: 0 }}>
+                No cryptographic audit logs recorded yet in this session. Run an IS query to generate a sealed audit record.
+              </p>
+            </div>
           )}
         </div>
       )}
 
       {/* Tab 2: Printable CVC Defense Certificate */}
       {activeTab === 'certificate' && (
-        <AuditCertificate data={currentData} />
+        <AuditCertificate data={currentData || history[0]?.response || null} />
       )}
 
       {/* Tab 3: Public Hash Verification Portal */}
       {activeTab === 'verify' && (
         <AuditHashVerifier
-          cachedRecords={allRecords.length > 0 ? allRecords : [currentData]}
+          cachedRecords={allRecords.length > 0 ? allRecords : currentData ? [currentData] : []}
           initialHash={selectedHash}
           onRecordFound={onSelectRecord}
         />

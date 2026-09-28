@@ -4,7 +4,7 @@ import type { StandardsResponse } from '../types';
 interface AuthorityDrawerProps {
   isOpen: boolean;
   onClose: () => void;
-  activeData: StandardsResponse;
+  activeData?: StandardsResponse | null;
   messages: Array<{ id: number; type: string; source?: string; text: string }>;
   onSendMessage: (text: string) => void;
   isProcessing: boolean;
@@ -38,7 +38,7 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
   };
 
   const handleCopyHash = () => {
-    const hash = activeData.audit_record?.audit_hash || activeData.meta.audit_reference_hash;
+    const hash = activeData?.audit_record?.audit_hash || activeData?.meta?.audit_reference_hash || 'SHA256-PENDING';
     navigator.clipboard.writeText(hash);
     setCopiedHash(true);
     setTimeout(() => setCopiedHash(false), 2000);
@@ -103,7 +103,7 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                 marginTop: '2px',
               }}
             >
-              Active: {activeData.primary_recommendation.is_number} ({activeData.primary_recommendation.year_published})
+              Active: {activeData?.primary_recommendation ? `${activeData.primary_recommendation.is_number} (${activeData.primary_recommendation.year_published})` : 'Standby / General'}
             </div>
           </div>
 
@@ -154,7 +154,7 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                 textOverflow: 'ellipsis',
               }}
             >
-              {activeData.audit_record?.audit_hash || activeData.meta.audit_reference_hash}
+              {activeData?.audit_record?.audit_hash || activeData?.meta?.audit_reference_hash || 'NO-ACTIVE-QUERY-SEAL'}
             </div>
           </div>
           <button

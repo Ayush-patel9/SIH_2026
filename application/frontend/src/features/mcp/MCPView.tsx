@@ -4,7 +4,7 @@ import { MCPToolRunner } from './MCPToolRunner';
 import { MCPConfigSnippet } from './MCPConfigSnippet';
 
 interface MCPViewProps {
-  currentData: StandardsResponse;
+  currentData?: StandardsResponse | null;
 }
 
 export const MCPView: React.FC<MCPViewProps> = ({ currentData }) => {

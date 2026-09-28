@@ -146,13 +146,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           description: 'Supersession & Amendment Live Feed',
         },
         {
-          key: 'voiceStudio',
-          label: 'Bhashini Voice Station',
-          icon: '🎙️',
-          badge: '12 LANG',
-          description: 'Indic Speech & Multilingual Audio TTS',
-        },
-        {
           key: 'integrations',
           label: 'GeM & CPPP Sandbox',
           icon: '🏛️',

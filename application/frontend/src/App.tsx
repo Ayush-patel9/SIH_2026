@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { DOMAIN_PRESETS, CEMENT_MOCK_DATA, ConfidenceBreakdownBar, KnowledgeGraphViewer, ReasoningTimeline } from './features/explainability';
+import { ConfidenceBreakdownBar, KnowledgeGraphViewer, ReasoningTimeline } from './features/explainability';
 import { AuditTrailView, AuditStore } from './features/audit';
 import { FeedbackView } from './features/feedback';
 import { AlertsView, NotificationBell, AlertDrawer, AlertStore } from './features/alerts';
@@ -11,7 +11,7 @@ import { DashboardView } from './features/dashboard';
 import { TenderUploadView } from './features/tenderUpload';
 import { TenderAnalysisDashboard } from './features/tenderAnalysis';
 import { IntegrationSandboxView } from './features/integrations';
-import { getAlerts, streamQueryOverSocket, connectAlertsSocket, type PipelineSocketEvent } from './api/standardsClient';
+import { getAlerts, streamQueryOverSocket, queryStandards, connectAlertsSocket, type PipelineSocketEvent } from './api/standardsClient';
 import { useRole } from './store/roleStore';
 import { useSession } from './store/userStore';
 import { TenderAuthorityPanel, VendorPanel } from './features/roles';
@@ -24,13 +24,13 @@ import { CommandPaletteModal } from './components/CommandPaletteModal';
 import { Sidebar } from './components/Sidebar';
 import { AuthorityDrawer } from './components/AuthorityDrawer';
 import { ProjectsView } from './features/projects';
+import { EmptySearchState } from './components/EmptySearchState';
 import type { StandardsResponse, SupportedLanguage, AlertPayload } from './types';
 
 import { KnowledgeGraph3DView } from './features/neuralGraph/KnowledgeGraph3DView';
 import { GazetteRadarView } from './features/gazetteRadar/GazetteRadarView';
 import { HistoricalTimeMachineView } from './features/timeMachine/HistoricalTimeMachineView';
 import { CAGAuditSimulatorView } from './features/cagAudit/CAGAuditSimulatorView';
-import { BhashiniVoiceStudioView } from './features/voiceStudio/BhashiniVoiceStudioView';
 import { Sparkles, Activity, Cpu, ShieldCheck } from 'lucide-react';
 
 // Dynamic parameter and performance extractor for any of the 22,011 Indian Standards
@@ -294,7 +294,6 @@ const FEATURE_TITLES: Record<FeatureKey, string> = {
   gazetteRadar: 'Gazette Radar Watchtower',
   timeMachine: 'Standards Historical Time-Machine',
   cagAudit: 'CAG Statutory Vigilance Simulator',
-  voiceStudio: 'Bhashini Voice & Audio Station',
 };
 
 export const FEATURE_ROUTES: Record<FeatureKey, string> = {
@@ -307,7 +306,6 @@ export const FEATURE_ROUTES: Record<FeatureKey, string> = {
   cagAudit: '/app/cag-audit',
   gazetteRadar: '/app/gazette-radar',
   timeMachine: '/app/time-machine',
-  voiceStudio: '/app/voice-studio',
   nitGenerator: '/app/nit-generator',
   comparison: '/app/comparison',
   dashboard: '/app/dashboard',
@@ -331,7 +329,6 @@ export function getFeatureFromPath(pathname: string, defaultFeature: FeatureKey 
   if (clean.includes('/dashboard')) return 'dashboard';
   if (clean.includes('/gazette-radar')) return 'gazetteRadar';
   if (clean.includes('/time-machine')) return 'timeMachine';
-  if (clean.includes('/voice-studio')) return 'voiceStudio';
   if (clean.includes('/nit-generator')) return 'nitGenerator';
   if (clean.includes('/comparison')) return 'comparison';
   if (clean.includes('/mcp')) return 'mcp';
@@ -351,7 +348,7 @@ export default function App({ onLogout }: AppProps = {}) {
   const { role, mode, setRole, setMode } = useRole();
   const [language, setLanguage] = useState<SupportedLanguage>('en');
   const [alerts, setAlerts] = useState<AlertPayload[]>([]);
-  const [selectedDomain, setSelectedDomain] = useState<string>('cement');
+  const [selectedDomain, setSelectedDomain] = useState<string | null>(null);
   const [activeFeature, setActiveFeature] = useState<FeatureKey>(() => {
     return getFeatureFromPath(window.location.pathname, 'projects');
   });
@@ -389,10 +386,8 @@ export default function App({ onLogout }: AppProps = {}) {
   const [isDataSovereigntyOpen, setIsDataSovereigntyOpen] = useState(false);
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
   const [isAuthorityDrawerOpen, setIsAuthorityDrawerOpen] = useState(false);
-  const [activeData, setActiveData] = useState<StandardsResponse>(CEMENT_MOCK_DATA);
-  const [searchQuery, setSearchQuery] = useState<string>(
-    'Procurement of 43 grade ordinary portland cement for highway construction.'
-  );
+  const [activeData, setActiveData] = useState<StandardsResponse | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string>('');
   const [isLoading, setIsLoading] = useState(false);
   const [queryError, setQueryError] = useState<string | null>(null);
   const [isSocketLive, setIsSocketLive] = useState(false);
@@ -467,8 +462,8 @@ export default function App({ onLogout }: AppProps = {}) {
   const [isProcessing, setIsProcessing] = useState(false);
 
   const handleAnalyze = useCallback(async (customQuery?: string) => {
-    const targetQuery = customQuery || searchQuery;
-    if (!targetQuery.trim() || isLoading) return;
+    const targetQuery = (customQuery ?? searchQuery).trim();
+    if (!targetQuery || isLoading) return;
     setIsLoading(true);
     setQueryError(null);
     setCurrentStage({ stage: 0, name: 'Input Ingestion', detail: 'Connecting to GraphRAG WebSocket pipeline...' });
@@ -514,28 +509,21 @@ export default function App({ onLogout }: AppProps = {}) {
         ]);
       }
     } catch (err: any) {
-      console.warn('Live WebSocket failed, using local mock fallback:', err);
-      setQueryError('Engine streaming completed (fallback loaded)');
-      const preset = DOMAIN_PRESETS[selectedDomain];
-      if (preset) {
-        setActiveData(preset.data);
-        AuditStore.add(preset.data);
+      console.warn('Live WebSocket failed, using REST API fallback:', err);
+      try {
+        const result = await queryStandards(targetQuery, { mode, role, language });
+        if (result) {
+          setActiveData(result);
+          AuditStore.add(result);
+        }
+      } catch (restErr: any) {
+        setQueryError(restErr?.message || 'Query processing failed. Please check backend connection.');
       }
     } finally {
       setIsLoading(false);
       setCurrentStage(null);
     }
-  }, [searchQuery, isLoading, mode, role, language, selectedDomain]);
-
-  const handleDomainChange = (domainKey: string) => {
-    setSelectedDomain(domainKey);
-    const preset = DOMAIN_PRESETS[domainKey];
-    if (preset) {
-      setSearchQuery(preset.query);
-      setActiveData(preset.data);
-      AuditStore.add(preset.data);
-    }
-  };
+  }, [searchQuery, isLoading, mode, role, language]);
 
   const handleAskQuestion = (userQ: string) => {
     if (!userQ.trim() || isProcessing) return;
@@ -553,7 +541,7 @@ export default function App({ onLogout }: AppProps = {}) {
     setIsProcessing(true);
     setTimeout(() => {
       setIsProcessing(false);
-      const isNum = activeData.primary_recommendation.is_number;
+      const isNum = activeData?.primary_recommendation?.is_number || 'the Indian Standard';
       setMessages((prev) => [
         ...prev,
         {
@@ -566,15 +554,17 @@ export default function App({ onLogout }: AppProps = {}) {
     }, 600);
   };
 
-  const primary = activeData.primary_recommendation;
+  const primary = activeData?.primary_recommendation;
   const qco = primary?.certification;
-  const audit = activeData.audit_record;
+  const audit = activeData?.audit_record;
 
-  const quickClauseText = `The contractor/supplier shall ensure that all materials supplied under this schedule strictly conform to ${primary?.is_number} (${primary?.title}) including latest amendments in force. ${
-    qco?.mandatory
-      ? `Under the ${qco.qco_order_name || 'BIS Quality Control Order'}, possession of a valid BIS ${qco.scheme.replace(/_/g, ' ')} License with Standard Mark is mandatory prior to dispatch.`
-      : ''
-  } Mandatory test certificates as per allied standards (${activeData.allied_standards.map((s) => s.is_number).join(', ') || 'normative test standards'}) shall be submitted with each consignment.`;
+  const quickClauseText = primary
+    ? `The contractor/supplier shall ensure that all materials supplied under this schedule strictly conform to ${primary?.is_number} (${primary?.title}) including latest amendments in force. ${
+        qco?.mandatory
+          ? `Under the ${qco.qco_order_name || 'BIS Quality Control Order'}, possession of a valid BIS ${qco.scheme ? qco.scheme.replace(/_/g, ' ') : 'ISI'} License with Standard Mark is mandatory prior to dispatch.`
+          : ''
+      } Mandatory test certificates as per allied standards (${activeData?.allied_standards?.map((s) => s.is_number).join(', ') || 'normative test standards'}) shall be submitted with each consignment.`
+    : '';
 
   const handleCopyClause = async () => {
     await navigator.clipboard.writeText(quickClauseText);
@@ -637,7 +627,6 @@ export default function App({ onLogout }: AppProps = {}) {
             <LanguageSelector
               language={language}
               onChange={setLanguage}
-              bhashiniUsed={activeData?.multilingual?.bhashini_used}
             />
 
             <NotificationBell alerts={alerts} onClick={() => setIsAlertDrawerOpen(true)} />
@@ -755,32 +744,12 @@ export default function App({ onLogout }: AppProps = {}) {
                   </div>
                 </div>
 
-                {/* Subtle Unified Category & Role Bar */}
+                {/* Subtle Unified Role & Status Bar */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
-                  <div className="category-filter-bar">
-                    {Object.entries(DOMAIN_PRESETS).map(([key, preset]) => {
-                      const isSelected = selectedDomain === key;
-                      return (
-                        <button
-                          key={key}
-                          type="button"
-                          className={`category-pill ${isSelected ? 'selected' : ''}`}
-                          onClick={() => handleDomainChange(key)}
-                        >
-                          <span>{preset.label}</span>
-                          <span
-                            style={{
-                              fontFamily: 'var(--font-data)',
-                              fontSize: '10.5px',
-                              opacity: isSelected ? 0.9 : 0.6,
-                              marginLeft: '4px',
-                            }}
-                          >
-                            {preset.isCode}
-                          </span>
-                        </button>
-                      );
-                    })}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span style={{ fontSize: '12px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
+                      Search 22,011 Standards by Product, Grade, Tender Clause, or IS Citation
+                    </span>
                   </div>
 
                   {/* Active Role Workspace Badge */}
@@ -946,8 +915,18 @@ export default function App({ onLogout }: AppProps = {}) {
                 </div>
               )}
 
+              {/* Empty Search State */}
+              {!isLoading && !activeData && (
+                <EmptySearchState
+                  onSelectSample={(sampleQuery) => {
+                    setSearchQuery(sampleQuery);
+                    handleAnalyze(sampleQuery);
+                  }}
+                />
+              )}
+
               {/* Recommended Standard Primary Artboard Card */}
-              {!isLoading && (
+              {!isLoading && activeData && (
                 <>
                   <div className="workbench-card" style={{ display: 'flex', flexDirection: 'column', gap: '20px', padding: '28px 32px' }}>
                     {/* Top Metadata Row */}
@@ -1168,7 +1147,7 @@ export default function App({ onLogout }: AppProps = {}) {
                       {/* Tab Content 4: Knowledge Graph */}
                       {activeTab === 'graph' && (
                         <div style={{ animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
-                          <KnowledgeGraphViewer primaryStandard={primary?.is_number} />
+                          <KnowledgeGraphViewer data={activeData} edges={activeData.graph_path} primaryStandard={primary?.is_number} />
                         </div>
                       )}
 
@@ -1200,7 +1179,9 @@ export default function App({ onLogout }: AppProps = {}) {
               currentData={activeData}
               onSelectRecord={(rec) => {
                 setActiveData(rec);
-                setSelectedDomain(rec.primary_recommendation.is_number.includes('2062') ? 'steel' : 'cement');
+                if (rec?.primary_recommendation?.is_number) {
+                  setSearchQuery(rec.primary_recommendation.title || rec.primary_recommendation.is_number);
+                }
               }}
             />
           )}
@@ -1220,20 +1201,23 @@ export default function App({ onLogout }: AppProps = {}) {
             <ComparisonView
               currentData={activeData}
               onPromotePrimary={(alt) => {
-                setActiveData((prev) => ({
-                  ...prev,
-                  primary_recommendation: {
-                    ...prev.primary_recommendation,
-                    is_number: alt.is_number,
-                    title: alt.title,
-                    status: alt.status as any,
-                    year_published: alt.year_published,
-                    latest_amendment: alt.latest_amendment || null,
-                    confidence: alt.confidence,
-                    scope_snippet: alt.scope_snippet,
-                    certification: alt.certification || prev.primary_recommendation.certification,
-                  },
-                }));
+                setActiveData((prev) => {
+                  if (!prev) return null;
+                  return {
+                    ...prev,
+                    primary_recommendation: {
+                      ...prev.primary_recommendation,
+                      is_number: alt.is_number,
+                      title: alt.title,
+                      status: alt.status as any,
+                      year_published: alt.year_published,
+                      latest_amendment: alt.latest_amendment || null,
+                      confidence: alt.confidence,
+                      scope_snippet: alt.scope_snippet,
+                      certification: alt.certification || prev.primary_recommendation.certification,
+                    },
+                  };
+                });
               }}
             />
           )}
@@ -1286,11 +1270,8 @@ export default function App({ onLogout }: AppProps = {}) {
           {activeFeature === 'dashboard' && (
             <DashboardView
               onSelectStandard={(isNum) => {
-                if (isNum.includes('2062')) {
-                  handleDomainChange('steel');
-                } else {
-                  handleDomainChange('cement');
-                }
+                setSearchQuery(isNum);
+                handleAnalyze(isNum);
                 setActiveFeature('explainability');
               }}
             />
@@ -1319,11 +1300,6 @@ export default function App({ onLogout }: AppProps = {}) {
           {/* Feature 16: CAG Vigilance Simulator */}
           {activeFeature === 'cagAudit' && (
             <CAGAuditSimulatorView />
-          )}
-
-          {/* Feature 17: Bhashini Voice Studio */}
-          {activeFeature === 'voiceStudio' && (
-            <BhashiniVoiceStudioView />
           )}
         </main>
 
@@ -1370,7 +1346,11 @@ export default function App({ onLogout }: AppProps = {}) {
         isOpen={isCommandPaletteOpen}
         onClose={() => setIsCommandPaletteOpen(false)}
         onSelectFeature={setActiveFeature}
-        onSelectDomain={handleDomainChange}
+        onSelectDomain={(domainQuery) => {
+          setSearchQuery(domainQuery);
+          handleAnalyze(domainQuery);
+          setActiveFeature('explainability');
+        }}
         onSelectRole={setRole}
         onOpenDataSovereignty={() => setIsDataSovereigntyOpen(true)}
         currentRole={role}

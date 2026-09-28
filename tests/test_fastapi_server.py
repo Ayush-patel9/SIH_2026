@@ -197,6 +197,46 @@ def test_alerts_endpoints():
     assert sim_data["status"] == "SIMULATION_DISPATCHED"
     assert sim_data["alert"]["affected_standard"]["is_number"] == "IS 456:2000"
 
+def test_dynamic_knowledge_graph_subgraph():
+    """Test dynamic relational Knowledge Graph traversal for arbitrary IS numbers across domains."""
+    # 1. Test Steel Rebars IS 1786
+    res1 = client.get("/api/v1/knowledge-graph/subgraph?center=IS+1786&limit=15")
+    assert res1.status_code == 200
+    data1 = res1.json()
+    assert data1["center"] == "IS 1786"
+    assert len(data1["nodes"]) > 0
+    assert any("1786" in n["isNumber"] for n in data1["nodes"])
+    assert any("1608" in n["isNumber"] or "1599" in n["isNumber"] for n in data1["nodes"])
+
+    # 2. Test Armoured Power Cables IS 7098
+    res2 = client.get("/api/v1/knowledge-graph/subgraph?center=IS+7098&limit=15")
+    assert res2.status_code == 200
+    data2 = res2.json()
+    assert data2["center"] == "IS 7098"
+    assert any("7098" in n["isNumber"] for n in data2["nodes"])
+    assert any("10810" in n["isNumber"] or "8130" in n["isNumber"] for n in data2["nodes"])
+
+    # 3. Test Industrial Helmets IS 2925
+    res3 = client.get("/api/v1/knowledge-graph/subgraph?center=IS+2925&limit=15")
+    assert res3.status_code == 200
+    data3 = res3.json()
+    assert data3["center"] == "IS 2925"
+    assert any("2925" in n["isNumber"] for n in data3["nodes"])
+
+    # 4. Test HDPE Pipes IS 4984
+    res4 = client.get("/api/v1/knowledge-graph/subgraph?center=IS+4984&limit=15")
+    assert res4.status_code == 200
+    data4 = res4.json()
+    assert any("4984" in n["isNumber"] for n in data4["nodes"])
+
+    # 5. Test Default Overview Hub
+    res5 = client.get("/api/v1/knowledge-graph/subgraph")
+    assert res5.status_code == 200
+    data5 = res5.json()
+    assert data5["total_indexed"] >= 20000
+    assert len(data5["nodes"]) > 5
+    assert len(data5["edges"]) > 5
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
 

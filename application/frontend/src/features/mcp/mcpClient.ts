@@ -106,7 +106,7 @@ export const MCP_TOOLS_MANIFEST: MCPToolDefinition[] = [
 export async function executeMCPTool(
   toolName: string,
   parameters: Record<string, any>,
-  currentData: StandardsResponse
+  currentData?: StandardsResponse | null
 ): Promise<{ result: any; source: 'live_http_server' | 'client_emulator'; latencyMs: number }> {
   const start = performance.now();
 
@@ -142,30 +142,30 @@ export async function executeMCPTool(
   switch (toolName) {
     case 'search_standards': {
       output = {
-        standards: [currentData.primary_recommendation],
-        total: 1,
+        standards: currentData?.primary_recommendation ? [currentData.primary_recommendation] : [],
+        total: currentData?.primary_recommendation ? 1 : 0,
         source: 'ManakAI GraphRAG',
       };
       break;
     }
 
     case 'check_certification': {
-      const isNum = (parameters.is_number || currentData.primary_recommendation?.is_number || 'IS 269:2015').toUpperCase();
+      const isNum = (parameters.is_number || currentData?.primary_recommendation?.is_number || 'IS 269:2015').toUpperCase();
       output = {
         is_number: isNum,
         mandatory: true,
-        scheme: currentData.primary_recommendation?.certification?.scheme || 'BIS_ISI_MARK',
+        scheme: currentData?.primary_recommendation?.certification?.scheme || 'BIS_ISI_MARK',
         certification_body: 'Bureau of Indian Standards',
       };
       break;
     }
 
     case 'get_normative_refs': {
-      const isNum = parameters.is_number || currentData.primary_recommendation?.is_number || 'IS 269:2015';
+      const isNum = parameters.is_number || currentData?.primary_recommendation?.is_number || 'IS 269:2015';
       output = {
         is_number: isNum,
         test_methods: ['IS 4031:1988', 'IS 4032:1985'],
-        allied: (currentData.allied_standards || []).map((s) => s.is_number),
+        allied: (currentData?.allied_standards || []).map((s) => s.is_number),
       };
       break;
     }
@@ -215,9 +215,9 @@ export async function executeMCPTool(
     }
 
     case 'generate_nit_clause': {
-      const isNumber = parameters.is_number || currentData.primary_recommendation.is_number;
+      const isNumber = parameters.is_number || currentData?.primary_recommendation?.is_number || 'IS 269:2015';
       const tmpl = parameters.template || 'standard_gem';
-      const text = generateNITClause(currentData, tmpl);
+      const text = currentData ? generateNITClause(currentData, tmpl) : `Clause: Mandate adherence to ${isNumber} per GFR Rule 144.`;
       output = {
         is_number: isNumber,
         product_name: parameters.product_name || 'Procurement Material',

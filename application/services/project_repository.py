@@ -47,11 +47,107 @@ Ductile iron pressure pipes for water mains and distribution networks shall conf
 Clause 12.4.1 — Potable Drinking Water Testing Parameters:
 Treated water delivered at household tap connections shall adhere strictly to Indian Standard Specification for Drinking Water IS 10500:2012 without deviation."""
 
+_LOCAL_PROJECTS: List[Dict[str, Any]] = [
+    {
+        "id": "proj-nhai-088",
+        "nitNumber": "NIT-NHAI-NCR-2026-088",
+        "title": "Construction of 6-Lane Flyover & Bridge Superstructure on NH-48",
+        "department": "National Highways Authority of India (NHAI)",
+        "estimatedValue": "₹148.50 Crores",
+        "status": "NEEDS_REVIEW",
+        "complianceScore": 78,
+        "hasDocument": True,
+        "lastModified": "Just now",
+        "recencyTimestamp": int(datetime.now().timestamp() * 1000),
+        "tenderId": "tnd-proj-nhai-088",
+        "pdfFileName": "MOCK_GOVERNMENT_TENDER_NIT_2026.pdf",
+        "pdfUrl": "https://res.cloudinary.com/dwnigoa4b/image/upload/v1774735593/tenders/tender_0126786a3456.pdf",
+        "documentText": NHAI_SAMPLE_TENDER,
+        "isFrozen": True,
+        "isAnalyzed": True,
+        "analysisPhase": "DASHBOARD_COMPLETED",
+        "stage1Data": None,
+        "stage2Data": None,
+        "stage3Data": None,
+    },
+    {
+        "id": "proj-cpwd-042",
+        "nitNumber": "NIT-CPWD-AIIMS-2026-042",
+        "title": "Modernization & Electrification of Surgical Wing, AIIMS Delhi",
+        "department": "Central Public Works Department (CPWD)",
+        "estimatedValue": "₹42.80 Crores",
+        "status": "COMPLIANT",
+        "complianceScore": 100,
+        "hasDocument": True,
+        "lastModified": "Just now",
+        "recencyTimestamp": int(datetime.now().timestamp() * 1000) - 100000,
+        "tenderId": "tnd-proj-cpwd-042",
+        "pdfFileName": "CPWD_SURGICAL_SPEC_2026.pdf",
+        "pdfUrl": None,
+        "documentText": CPWD_SAMPLE_TENDER,
+        "isFrozen": True,
+        "isAnalyzed": True,
+        "analysisPhase": "DASHBOARD_COMPLETED",
+        "stage1Data": None,
+        "stage2Data": None,
+        "stage3Data": None,
+    },
+    {
+        "id": "proj-jjm-019",
+        "nitNumber": "NIT-JJM-RAJ-2026-019",
+        "title": "Rural Potable Water Grid Infrastructure & Treatment Facility Phase-II",
+        "department": "Ministry of Jal Shakti (JJM)",
+        "estimatedValue": "₹95.20 Crores",
+        "status": "DRAFT",
+        "complianceScore": 0,
+        "hasDocument": False,
+        "lastModified": "Just now",
+        "recencyTimestamp": int(datetime.now().timestamp() * 1000) - 200000,
+        "tenderId": None,
+        "pdfFileName": None,
+        "pdfUrl": None,
+        "documentText": None,
+        "isFrozen": False,
+        "isAnalyzed": False,
+        "analysisPhase": "IDLE",
+        "stage1Data": None,
+        "stage2Data": None,
+        "stage3Data": None,
+    },
+    {
+        "id": "proj-dfccil-119",
+        "nitNumber": "NIT-MOR-DFCCIL-2026-119",
+        "title": "Dedicated Freight Corridor Track Laying & Pre-Stressed Concrete Sleepers",
+        "department": "Ministry of Railways (DFCCIL)",
+        "estimatedValue": "₹310.00 Crores",
+        "status": "NEEDS_REVIEW",
+        "complianceScore": 84,
+        "hasDocument": True,
+        "lastModified": "Just now",
+        "recencyTimestamp": int(datetime.now().timestamp() * 1000) - 300000,
+        "tenderId": "tnd-proj-dfccil-119",
+        "pdfFileName": "DFCCIL_TRACK_SPEC_2026.pdf",
+        "pdfUrl": None,
+        "documentText": NHAI_SAMPLE_TENDER,
+        "isFrozen": True,
+        "isAnalyzed": True,
+        "analysisPhase": "DASHBOARD_COMPLETED",
+        "stage1Data": None,
+        "stage2Data": None,
+        "stage3Data": None,
+    }
+]
+
+_LOCAL_CHAT_MESSAGES: Dict[str, List[Dict[str, Any]]] = {}
+
 def init_db():
     """Create all required tables and indexes in Neon PostgreSQL."""
     conn = None
     try:
         conn = get_connection()
+        if not conn:
+            logger.info("Database connection not configured. Running with local storage.")
+            return
         cur = get_cursor(conn, dict_cursor=False)
 
         # 1. Projects Table
@@ -259,6 +355,8 @@ def list_projects() -> List[Dict[str, Any]]:
     conn = None
     try:
         conn = get_connection()
+        if not conn:
+            return list(_LOCAL_PROJECTS)
         cur = get_cursor(conn)
         cur.execute("""
             SELECT 
@@ -325,6 +423,8 @@ def get_project(project_id: str) -> Optional[Dict[str, Any]]:
     conn = None
     try:
         conn = get_connection()
+        if not conn:
+            return next((p for p in _LOCAL_PROJECTS if p["id"] == project_id), None)
         cur = get_cursor(conn)
         cur.execute("""
             SELECT 
@@ -393,6 +493,32 @@ def create_project(title: str, nit_number: str, department: str, estimated_value
     conn = None
     try:
         conn = get_connection()
+        if not conn:
+            project_id = f"proj-{uuid.uuid4().hex[:8]}"
+            new_p = {
+                "id": project_id,
+                "nitNumber": nit_number.strip().upper(),
+                "title": title.strip(),
+                "department": department.strip(),
+                "estimatedValue": estimated_value.strip() or "TBD",
+                "status": "DRAFT",
+                "complianceScore": 0,
+                "hasDocument": False,
+                "lastModified": "Just now",
+                "recencyTimestamp": int(datetime.now().timestamp() * 1000),
+                "tenderId": None,
+                "pdfFileName": None,
+                "pdfUrl": None,
+                "documentText": None,
+                "isFrozen": False,
+                "isAnalyzed": False,
+                "analysisPhase": "IDLE",
+                "stage1Data": None,
+                "stage2Data": None,
+                "stage3Data": None,
+            }
+            _LOCAL_PROJECTS.insert(0, new_p)
+            return new_p
         cur = get_cursor(conn)
         project_id = f"proj-{uuid.uuid4().hex[:12]}"
         
@@ -418,6 +544,23 @@ def ingest_tender_document(project_id: str, document_text: str, filename: str, c
     conn = None
     try:
         conn = get_connection()
+        if not conn:
+            for p in _LOCAL_PROJECTS:
+                if p["id"] == project_id:
+                    p["hasDocument"] = True
+                    p["status"] = "NEEDS_REVIEW"
+                    p["documentText"] = document_text
+                    p["pdfFileName"] = filename
+                    p["pdfUrl"] = cloudinary_url
+                    p["isFrozen"] = True
+                    return {
+                        "project_id": project_id,
+                        "tender_id": f"tnd-{project_id}",
+                        "filename": filename,
+                        "cloudinary_url": cloudinary_url,
+                        "is_frozen": True
+                    }
+            return {"project_id": project_id, "error": "Project not found"}
         cur = get_cursor(conn)
 
         # Check existing tender
@@ -474,6 +617,18 @@ def save_pipeline_analysis(
     conn = None
     try:
         conn = get_connection()
+        if not conn:
+            for p in _LOCAL_PROJECTS:
+                if p["id"] == project_id:
+                    p["analysisPhase"] = phase
+                    if stage1_result: p["stage1Data"] = stage1_result
+                    if stage2_result: p["stage2Data"] = stage2_result
+                    if stage3_result: p["stage3Data"] = stage3_result
+                    if phase == "DASHBOARD_COMPLETED":
+                        p["status"] = "COMPLIANT"
+                        p["complianceScore"] = 92
+                        p["isAnalyzed"] = True
+            return
         cur = get_cursor(conn)
 
         # Get tender_id
@@ -548,6 +703,17 @@ def save_chat_message(project_id: str, sender: str, text: str, citations: Option
     conn = None
     try:
         conn = get_connection()
+        if not conn:
+            if project_id not in _LOCAL_CHAT_MESSAGES:
+                _LOCAL_CHAT_MESSAGES[project_id] = []
+            _LOCAL_CHAT_MESSAGES[project_id].append({
+                "id": f"msg-{uuid.uuid4().hex[:8]}",
+                "sender": sender,
+                "text": text,
+                "timestamp": datetime.now().strftime("%I:%M %p"),
+                "citations": citations or []
+            })
+            return
         cur = get_cursor(conn)
         
         cur.execute("SELECT id FROM tenders WHERE project_id = %s", (project_id,))
@@ -572,6 +738,8 @@ def get_chat_history(project_id: str) -> List[Dict[str, Any]]:
     conn = None
     try:
         conn = get_connection()
+        if not conn:
+            return list(_LOCAL_CHAT_MESSAGES.get(project_id, []))
         cur = get_cursor(conn)
         cur.execute("""
             SELECT id, sender, message_text as "text", context_citations as "citations", created_at as "timestamp"

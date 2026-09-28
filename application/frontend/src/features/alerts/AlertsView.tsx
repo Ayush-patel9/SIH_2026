@@ -7,7 +7,7 @@ import { formatDeadlineBadge } from './deadlineUtils';
 import type { StandardsResponse, StalenessRiskLevel } from '../../types';
 
 interface AlertsViewProps {
-  currentData?: StandardsResponse;
+  currentData?: StandardsResponse | null;
 }
 
 type ViewTab = 'matrix' | 'alerts_feed' | 'risk_banner_preview';
