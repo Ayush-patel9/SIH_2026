@@ -237,6 +237,48 @@ def test_dynamic_knowledge_graph_subgraph():
     assert len(data5["nodes"]) > 5
     assert len(data5["edges"]) > 5
 
+def test_historical_lineage_endpoint():
+    """Test GET /api/v1/knowledge-graph/lineage for historical supersession lineages."""
+    # 1. Fire Extinguishers IS 15683 (Flagship consolidation)
+    res1 = client.get("/api/v1/knowledge-graph/lineage?standard=IS+15683")
+    assert res1.status_code == 200
+    data1 = res1.json()
+    assert "IS 15683" in data1["standard_code"]
+    assert len(data1["evolution"]) >= 4
+    assert any("940" in e["code"] or "2171" in e["code"] for e in data1["evolution"])
+    assert any("QCO" in e["code"] or "QCO" in e["title"] for e in data1["evolution"])
+
+    # 2. Obsolete / Withdrawn 43-Grade Cement IS 8112
+    res2 = client.get("/api/v1/knowledge-graph/lineage?standard=IS+8112")
+    assert res2.status_code == 200
+    data2 = res2.json()
+    assert data2["is_withdrawn"] is True
+    assert data2["withdrawn_alert"] is not None
+    assert "269" in data2["withdrawn_alert"]["replacement"]
+    assert data2["withdrawn_alert"]["severity"] == "CRITICAL"
+
+    # 3. Withdrawn Structural Steel IS 226 -> IS 2062
+    res3 = client.get("/api/v1/knowledge-graph/lineage?standard=IS+226")
+    assert res3.status_code == 200
+    data3 = res3.json()
+    assert data3["is_withdrawn"] is True
+    assert "2062" in data3["canonical_replacement"]
+
+    # 4. TMT Steel Rebars IS 1786
+    res4 = client.get("/api/v1/knowledge-graph/lineage?standard=IS+1786")
+    assert res4.status_code == 200
+    data4 = res4.json()
+    assert len(data4["evolution"]) >= 4
+    assert any(e["year"] == 2008 for e in data4["evolution"])
+
+    # 5. Potable Drinking Water IS 10500
+    res5 = client.get("/api/v1/knowledge-graph/lineage?standard=IS+10500")
+    assert res5.status_code == 200
+    data5 = res5.json()
+    assert len(data5["evolution"]) >= 3
+    assert any("2012" in e["code"] for e in data5["evolution"])
+
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
 

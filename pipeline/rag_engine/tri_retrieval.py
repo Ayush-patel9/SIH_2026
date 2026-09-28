@@ -49,6 +49,36 @@ CANONICAL_SUPERSESSION_MAP = {
         "reason": "Withdrawn in 2015 and amalgamated into IS 269:2015 (covers 33, 43, 53 grade Ordinary Portland Cement).",
         "severity": "CRITICAL"
     },
+    "IS 226": {
+        "replacement": "IS 2062",
+        "reason": "Withdrawn and superseded by IS 2062 (Hot Rolled Medium and High Tensile Structural Steel). Replaced UTS grading with yield strength designations (E250, E350).",
+        "severity": "CRITICAL"
+    },
+    "IS 940": {
+        "replacement": "IS 15683",
+        "reason": "Withdrawn and superseded by IS 15683 (Portable Fire Extinguishers — Performance and Construction Specification).",
+        "severity": "CRITICAL"
+    },
+    "IS 2171": {
+        "replacement": "IS 15683",
+        "reason": "Withdrawn and superseded by unified IS 15683 standard for portable fire extinguishers.",
+        "severity": "CRITICAL"
+    },
+    "IS 10204": {
+        "replacement": "IS 15683",
+        "reason": "Withdrawn and amalgamated into IS 15683 for portable fire extinguishers.",
+        "severity": "CRITICAL"
+    },
+    "IS 1554": {
+        "replacement": "IS 7098",
+        "reason": "Superseded for modern distribution by IS 7098 cross-linked polyethylene (XLPE) cables.",
+        "severity": "HIGH"
+    },
+    "IS 432": {
+        "replacement": "IS 1786",
+        "reason": "Mild steel plain rounds superseded by IS 1786 high strength deformed TMT rebars.",
+        "severity": "HIGH"
+    },
     "IS 2386": {
         "replacement": "IS 383",
         "reason": "Methods of test for aggregates for concrete (IS 2386 series 1963) referenced alongside IS 383:2016 specification.",

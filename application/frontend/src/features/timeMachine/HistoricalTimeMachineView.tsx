@@ -1,626 +1,857 @@
 /**
  * HistoricalTimeMachineView.tsx
  * Standards Historical Time-Machine & Phylogenetic Supersession Tree
- * Enables procurement officers and bidders to trace specifications across decades (1950 - 2026),
- * resolving why legacy numbers were withdrawn and mapping them to active standards.
+ * Enables procurement officers and bidders to trace specifications across 75 years (1950 - 2026),
+ * resolving why legacy numbers were withdrawn and dynamically mapping them to active standards.
  */
 
-import React, { useState } from 'react';
-import { History, Search, ArrowRight, AlertTriangle, CheckCircle2, ShieldAlert, Sparkles } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import {
+  History,
+  Search,
+  ArrowRight,
+  AlertTriangle,
+  CheckCircle2,
+  ShieldAlert,
+  Sparkles,
+  Layers,
+  Copy,
+  Check,
+  ExternalLink,
+  ChevronRight,
+  FlaskConical,
+  Scale,
+  RefreshCw,
+} from 'lucide-react';
+
+interface EvolutionEpoch {
+  year: number;
+  code: string;
+  title: string;
+  status: 'ACTIVE' | 'SUPERSEDED' | 'WITHDRAWN';
+  changes: string;
+}
 
 interface StandardLineage {
   id: string;
+  standard_code: string;
+  query_code?: string;
   name: string;
   category: string;
-  canonicalReplacement?: string;
-  evolution: {
-    year: number;
-    code: string;
-    title: string;
-    status: 'ACTIVE' | 'SUPERSEDED' | 'WITHDRAWN';
-    changes: string;
-  }[];
-}
-
-const CANONICAL_SUPERSESSIONS: Record<string, { replacement: string; reason: string; severity: 'CRITICAL' | 'HIGH' | 'MEDIUM'; lineageId: string }> = {
-  'IS 8112': {
-    replacement: 'IS 269:2015',
-    reason: 'Withdrawn in 2015 and amalgamated into IS 269:2015 (covers 33, 43, 53 grade Ordinary Portland Cement). Citing IS 8112 in active tenders violates CVC guidelines.',
-    severity: 'CRITICAL',
-    lineageId: 'cement-lineage',
-  },
-  'IS 12269': {
-    replacement: 'IS 269:2015',
-    reason: 'Withdrawn in 2015 and amalgamated into unified IS 269:2015 specification. 53-grade OPC is now covered under IS 269 Clause 5.',
-    severity: 'CRITICAL',
-    lineageId: 'cement-lineage',
-  },
-  'IS 226': {
-    replacement: 'IS 2062:2011',
-    reason: 'Superseded completely by IS 2062. Replaced archaic UTS grading with modern yield strength designations (Grade E250, E350).',
-    severity: 'CRITICAL',
-    lineageId: 'structural-steel-lineage',
-  },
-  'IS 800:1984': {
-    replacement: 'IS 800:2007',
-    reason: 'Superseded by IS 800:2007 (Limit State Design code for general steel construction). Working Stress Method from 1984 is obsolete.',
-    severity: 'HIGH',
-    lineageId: 'steel-design-lineage',
-  },
-  'IS 456:1978': {
-    replacement: 'IS 456:2000',
-    reason: 'Superseded by IS 456:2000 (Plain and Reinforced Concrete Code of Practice) with updated durability limits and mix proportions.',
-    severity: 'HIGH',
-    lineageId: 'concrete-code-lineage',
-  },
-  'IS 13920:1993': {
-    replacement: 'IS 13920:2016',
-    reason: 'Superseded by IS 13920:2016 (Ductile Design and Detailing of Reinforced Concrete Structures for Seismic Zones IV & V).',
-    severity: 'CRITICAL',
-    lineageId: 'seismic-detailing-lineage',
-  },
-  'IS 4984:1995': {
-    replacement: 'IS 4984:2016',
-    reason: 'Superseded by IS 4984:2016 (HDPE Pipes for Water Supply — Specification). Phased out older PE63/PE80 grades for high-strength PE100 resins.',
-    severity: 'HIGH',
-    lineageId: 'hdpe-pipe-lineage',
-  },
-};
-
-const LINEAGE_DATABASE: StandardLineage[] = [
-  {
-    id: 'cement-lineage',
-    name: 'Ordinary Portland Cement (OPC)',
-    category: 'Civil Engineering / Cement & Binders',
-    canonicalReplacement: 'IS 269:2015',
-    evolution: [
-      {
-        year: 1951,
-        code: 'IS 269:1951',
-        title: 'Specification for Ordinary, Rapid-Hardening and Low Heat Portland Cement (First Issue)',
-        status: 'SUPERSEDED',
-        changes: 'Initial post-independence Indian Standard formulated by ISI based on British BS 12 standard.',
-      },
-      {
-        year: 1976,
-        code: 'IS 269:1976',
-        title: 'Ordinary and Low Heat Portland Cement (Third Revision)',
-        status: 'SUPERSEDED',
-        changes: 'Separated 33-Grade OPC as the base construction grade across India.',
-      },
-      {
-        year: 1989,
-        code: 'IS 8112:1989 & IS 12269:1987',
-        title: '43 Grade and 53 Grade Ordinary Portland Cement (Specialized Editions)',
-        status: 'WITHDRAWN',
-        changes: 'Formulated separate individual standards for high-strength 43 Grade and 53 Grade cement.',
-      },
-      {
-        year: 2015,
-        code: 'IS 269:2015',
-        title: 'Ordinary Portland Cement — Specification (Sixth Revision)',
-        status: 'ACTIVE',
-        changes: 'CONSOLIDATION REVISION: Merged IS 8112 and IS 12269 into a single unified IS 269 standard.',
-      },
-      {
-        year: 2024,
-        code: 'IS 269:2015 + Amd 4 (2024)',
-        title: 'Mandatory ISI Mark under Cement QCO 2024',
-        status: 'ACTIVE',
-        changes: 'DPIIT gazette order mandating digital batch certificates and BIS CM/L marking for public works.',
-      },
-    ],
-  },
-  {
-    id: 'steel-rebar-lineage',
-    name: 'High Strength Deformed Steel Rebars (TMT)',
-    category: 'Metallurgical Engineering / Concrete Reinforcement',
-    canonicalReplacement: 'IS 1786:2008',
-    evolution: [
-      {
-        year: 1966,
-        code: 'IS 432:1966',
-        title: 'Mild Steel and Medium Tensile Steel Bars and Hard-Drawn Steel Wire for Concrete Reinforcement',
-        status: 'SUPERSEDED',
-        changes: 'Standard plain mild steel rounds used before modern rib-deformed rebars were introduced.',
-      },
-      {
-        year: 1979,
-        code: 'IS 1786:1979',
-        title: 'Cold-Worked Steel High Strength Deformed Bars for Concrete Reinforcement',
-        status: 'SUPERSEDED',
-        changes: 'Introduced twisted Torsteel (Fe 415) to replace plain round bars with better bond strength.',
-      },
-      {
-        year: 1985,
-        code: 'IS 1786:1985',
-        title: 'High Strength Deformed Steel Bars and Wires for Concrete Reinforcement (Third Revision)',
-        status: 'SUPERSEDED',
-        changes: 'Recognized Thermo-Mechanically Treated (TMT) quenching processes and added Fe 500 grade.',
-      },
-      {
-        year: 2008,
-        code: 'IS 1786:2008',
-        title: 'High Strength Deformed Steel Bars and Wires for Concrete Reinforcement (Fourth Revision)',
-        status: 'ACTIVE',
-        changes: 'Introduced seismic high-ductility grades (Fe 500D, Fe 550D) with mandatory TS/YS ratio ≥ 1.10.',
-      },
-      {
-        year: 2021,
-        code: 'IS 1786:2008 + Amd 3',
-        title: 'Steel Quality Control Order Mandatory Enforcement',
-        status: 'ACTIVE',
-        changes: 'Mandatory BIS certification for all rebar producers; banned non-certified secondary billets.',
-      },
-    ],
-  },
-  {
-    id: 'structural-steel-lineage',
-    name: 'Structural Steel Plates & Sections',
-    category: 'Metallurgy / Structural Steel',
-    canonicalReplacement: 'IS 2062:2011',
-    evolution: [
-      {
-        year: 1950,
-        code: 'IS 226:1950',
-        title: 'Structural Steel (Standard Quality) — First Indian Issue',
-        status: 'SUPERSEDED',
-        changes: 'Foundational specification for structural steel adopted for early industrial projects.',
-      },
-      {
-        year: 1962,
-        code: 'IS 2062:1962',
-        title: 'Structural Steel (Fusion Welding Quality)',
-        status: 'SUPERSEDED',
-        changes: 'Formulated specifically for welded structures in bridges and power plants.',
-      },
-      {
-        year: 2006,
-        code: 'IS 2062:2006',
-        title: 'Hot Rolled Low, Medium and High Tensile Structural Steel',
-        status: 'SUPERSEDED',
-        changes: 'Superseded IS 226:1975 completely. Replaced UTS grading with yield strength designations (E250, E350).',
-      },
-      {
-        year: 2011,
-        code: 'IS 2062:2011',
-        title: 'Hot Rolled Medium and High Tensile Structural Steel (Seventh Revision)',
-        status: 'ACTIVE',
-        changes: 'Current sovereign standard governing all structural steel fabrication in India with mandatory impact testing.',
-      },
-    ],
-  },
-  {
-    id: 'concrete-code-lineage',
-    name: 'Plain and Reinforced Concrete Code',
-    category: 'Civil Engineering / Structural Design Codes',
-    canonicalReplacement: 'IS 456:2000',
-    evolution: [
-      {
-        year: 1953,
-        code: 'IS 456:1953',
-        title: 'Code of Practice for Plain and Reinforced Concrete for General Building Construction',
-        status: 'SUPERSEDED',
-        changes: 'First unified concrete code of practice formulated by the Indian Standards Institution.',
-      },
-      {
-        year: 1964,
-        code: 'IS 456:1964',
-        title: 'Code of Practice for Plain and Reinforced Concrete (Second Revision)',
-        status: 'SUPERSEDED',
-        changes: 'Standardized Ultimate Load Method alongside classical Working Stress Design.',
-      },
-      {
-        year: 1978,
-        code: 'IS 456:1978',
-        title: 'Code of Practice for Plain and Reinforced Concrete (Third Revision)',
-        status: 'SUPERSEDED',
-        changes: 'Adopted Limit State Design as the primary engineering methodology for Indian structural engineering.',
-      },
-      {
-        year: 2000,
-        code: 'IS 456:2000',
-        title: 'Plain and Reinforced Concrete — Code of Practice (Fourth Revision)',
-        status: 'ACTIVE',
-        changes: 'Modern baseline code with strict durability clauses, maximum w/c ratio by environmental exposure, and high-strength concrete design.',
-      },
-    ],
-  },
-  {
-    id: 'seismic-detailing-lineage',
-    name: 'Ductile Detailing for Earthquake Resistance',
-    category: 'Structural Engineering / Earthquake Engineering',
-    canonicalReplacement: 'IS 13920:2016',
-    evolution: [
-      {
-        year: 1976,
-        code: 'IS 4326:1976',
-        title: 'Code of Practice for Earthquake Resistant Design and Construction of Buildings',
-        status: 'SUPERSEDED',
-        changes: 'Early Indian seismic detailing guidelines based on simple reinforcement strapping.',
-      },
-      {
-        year: 1993,
-        code: 'IS 13920:1993',
-        title: 'Ductile Detailing of Reinforced Concrete Structures Subjected to Seismic Forces',
-        status: 'WITHDRAWN',
-        changes: 'Formulated after the 1993 Killari earthquake; mandated closed stirrups with 135° seismic hooks.',
-      },
-      {
-        year: 2016,
-        code: 'IS 13920:2016',
-        title: 'Ductile Design and Detailing of Reinforced Concrete Structures (First Revision)',
-        status: 'ACTIVE',
-        changes: 'Mandatory standard for all RCC structures in Seismic Zones III, IV, and V. Strictly forbids lap splices in critical beam-column plastic hinge zones.',
-      },
-    ],
-  },
-  {
-    id: 'hdpe-pipe-lineage',
-    name: 'High Density Polyethylene (HDPE) Pipes',
-    category: 'Chemicals & Plastics / Water Infrastructure',
-    canonicalReplacement: 'IS 4984:2016',
-    evolution: [
-      {
-        year: 1972,
-        code: 'IS 4984:1972',
-        title: 'Specification for High Density Polyethylene Pipes for Potable Water Supplies',
-        status: 'SUPERSEDED',
-        changes: 'Introduced early PE pipe specifications using low-density/medium-density compound blends.',
-      },
-      {
-        year: 1995,
-        code: 'IS 4984:1995',
-        title: 'High Density Polyethylene Pipes for Water Supply — Specification (Fourth Revision)',
-        status: 'SUPERSEDED',
-        changes: 'Classified pipes by PE63 and PE80 compound grades with nominal pressure ratings PN 2.5 to PN 16.',
-      },
-      {
-        year: 2016,
-        code: 'IS 4984:2016',
-        title: 'High Density Polyethylene Pipes for Water Supply — Specification (Fifth Revision)',
-        status: 'ACTIVE',
-        changes: 'Mandated PE100 virgin compound resins with 50-year design life; covered under statutory Quality Control Order (QCO).',
-      },
-    ],
-  },
-];
-
-export const HistoricalTimeMachineView: React.FC = () => {
-  const [selectedLineage, setSelectedLineage] = useState<StandardLineage>(LINEAGE_DATABASE[0]);
-  const [activeYearIndex, setActiveYearIndex] = useState<number>(LINEAGE_DATABASE[0].evolution.length - 1);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [detectedWithdrawn, setDetectedWithdrawn] = useState<{
+  is_withdrawn: boolean;
+  canonical_replacement: string;
+  withdrawn_alert?: {
     code: string;
     replacement: string;
     reason: string;
     severity: string;
-    lineageId: string;
-  } | null>(null);
+  } | null;
+  evolution: EvolutionEpoch[];
+  source?: string;
+  total_epochs?: number;
+}
 
-  const handleSearch = (term?: string) => {
-    const raw = (term || searchQuery).trim().toUpperCase();
-    if (!raw) {
-      setDetectedWithdrawn(null);
-      return;
-    }
+interface TestCase {
+  code: string;
+  label: string;
+  domain: string;
+  type: 'WITHDRAWN_TRAP' | 'CONSOLIDATED' | 'MANDATORY_QCO' | 'CORE_CODE';
+}
 
-    // 1. Check if it's a known withdrawn standard
-    const matchedWithdrawnKey = Object.keys(CANONICAL_SUPERSESSIONS).find((k) =>
-      raw.includes(k) || k.includes(raw)
-    );
+const TEST_CASES: TestCase[] = [
+  // 1. Fire Safety Consolidation
+  {
+    code: 'IS 15683',
+    label: 'Portable Fire Extinguishers',
+    domain: 'Fire Safety',
+    type: 'CONSOLIDATED',
+  },
+  {
+    code: 'IS 940',
+    label: 'Water Extinguishers (Withdrawn)',
+    domain: 'Fire Safety',
+    type: 'WITHDRAWN_TRAP',
+  },
+  {
+    code: 'IS 2171',
+    label: 'Dry Powder Extinguisher (Withdrawn)',
+    domain: 'Fire Safety',
+    type: 'WITHDRAWN_TRAP',
+  },
 
-    if (matchedWithdrawnKey) {
-      const info = CANONICAL_SUPERSESSIONS[matchedWithdrawnKey];
-      setDetectedWithdrawn({
-        code: matchedWithdrawnKey,
-        ...info,
-      });
+  // 2. Civil & Cement
+  {
+    code: 'IS 8112',
+    label: '43-Grade Cement (Withdrawn -> IS 269)',
+    domain: 'Civil / Cement',
+    type: 'WITHDRAWN_TRAP',
+  },
+  {
+    code: 'IS 12269',
+    label: '53-Grade Cement (Withdrawn -> IS 269)',
+    domain: 'Civil / Cement',
+    type: 'WITHDRAWN_TRAP',
+  },
+  {
+    code: 'IS 269',
+    label: 'OPC Cement (Unified 33, 43, 53)',
+    domain: 'Civil / Cement',
+    type: 'MANDATORY_QCO',
+  },
 
-      // Also switch to the corresponding lineage if available
-      const foundLin = LINEAGE_DATABASE.find((l) => l.id === info.lineageId);
-      if (foundLin) {
-        setSelectedLineage(foundLin);
-        // Find withdrawn step index in evolution
-        const stepIdx = foundLin.evolution.findIndex((e) =>
-          e.code.toUpperCase().includes(matchedWithdrawnKey) || e.status === 'WITHDRAWN'
-        );
-        setActiveYearIndex(stepIdx >= 0 ? stepIdx : foundLin.evolution.length - 1);
+  // 3. Metallurgy & Steel Rebars
+  {
+    code: 'IS 1786',
+    label: 'Fe 500D TMT Rebars (Steel QCO)',
+    domain: 'Metallurgy',
+    type: 'MANDATORY_QCO',
+  },
+  {
+    code: 'IS 226',
+    label: 'Structural Steel (Withdrawn -> IS 2062)',
+    domain: 'Metallurgy',
+    type: 'WITHDRAWN_TRAP',
+  },
+  {
+    code: 'IS 2062',
+    label: 'Modern Structural Steel (E250/E350)',
+    domain: 'Metallurgy',
+    type: 'MANDATORY_QCO',
+  },
+
+  // 4. Electrical, Safety & Infrastructure
+  {
+    code: 'IS 7098',
+    label: 'XLPE Power Cables (Replaces PVC IS 1554)',
+    domain: 'Electrical',
+    type: 'MANDATORY_QCO',
+  },
+  {
+    code: 'IS 2925',
+    label: 'Industrial Safety Helmets (PPE QCO)',
+    domain: 'Safety PPE',
+    type: 'MANDATORY_QCO',
+  },
+  {
+    code: 'IS 10500',
+    label: 'Drinking Water Specification (JJM)',
+    domain: 'Public Health',
+    type: 'MANDATORY_QCO',
+  },
+  {
+    code: 'IS 456',
+    label: 'Plain & Reinforced Concrete Code',
+    domain: 'Structural Design',
+    type: 'CORE_CODE',
+  },
+  {
+    code: 'IS 13920',
+    label: 'Seismic Ductile Detailing Code',
+    domain: 'Earthquake Engg',
+    type: 'CORE_CODE',
+  },
+  {
+    code: 'IS 4984',
+    label: 'HDPE Pipes for Water Supply (PE100)',
+    domain: 'Plastics / Water',
+    type: 'MANDATORY_QCO',
+  },
+];
+
+// Offline fallback archive in case server is starting
+const LOCAL_FALLBACK_CEMENT: StandardLineage = {
+  id: 'cement-lineage',
+  standard_code: 'IS 269',
+  name: 'Ordinary Portland Cement (33, 43, 53 Grade)',
+  category: 'Civil Engineering / Cement & Binders',
+  is_withdrawn: false,
+  canonical_replacement: 'IS 269:2015',
+  evolution: [
+    {
+      year: 1951,
+      code: 'IS 269:1951',
+      title: 'Specification for Ordinary, Rapid-Hardening and Low Heat Portland Cement (First Issue)',
+      status: 'SUPERSEDED',
+      changes: 'Initial post-independence Indian Standard formulated by ISI based on British BS 12 standard.',
+    },
+    {
+      year: 1976,
+      code: 'IS 269:1976',
+      title: 'Ordinary and Low Heat Portland Cement (Third Revision)',
+      status: 'SUPERSEDED',
+      changes: 'Separated 33-Grade OPC as the base construction grade across India.',
+    },
+    {
+      year: 1989,
+      code: 'IS 8112:1989 & IS 12269:1987',
+      title: '43 Grade and 53 Grade Ordinary Portland Cement (Specialized Editions)',
+      status: 'WITHDRAWN',
+      changes: 'Formulated separate individual standards for high-strength 43 Grade and 53 Grade cement.',
+    },
+    {
+      year: 2015,
+      code: 'IS 269:2015',
+      title: 'Ordinary Portland Cement — Specification (Sixth Revision)',
+      status: 'ACTIVE',
+      changes: 'CONSOLIDATION REVISION: Merged IS 8112 and IS 12269 into a single unified IS 269 standard.',
+    },
+    {
+      year: 2024,
+      code: 'IS 269:2015 + Amd 4 (2024)',
+      title: 'Mandatory ISI Mark under Cement QCO 2024',
+      status: 'ACTIVE',
+      changes: 'DPIIT gazette order mandating digital batch certificates and BIS CM/L marking for public works.',
+    },
+  ],
+};
+
+export const HistoricalTimeMachineView: React.FC = () => {
+  const [lineage, setLineage] = useState<StandardLineage>(LOCAL_FALLBACK_CEMENT);
+  const [activeEpochIndex, setActiveEpochIndex] = useState<number>(LOCAL_FALLBACK_CEMENT.evolution.length - 1);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [copiedClause, setCopiedClause] = useState(false);
+  const [activeCategoryFilter, setActiveCategoryFilter] = useState<string>('ALL');
+
+  // Load standard lineage dynamically from backend API
+  const fetchLineage = async (standardCode: string) => {
+    const trimmed = standardCode.trim();
+    if (!trimmed) return;
+
+    setIsLoading(true);
+    try {
+      const res = await fetch(`/api/v1/knowledge-graph/lineage?standard=${encodeURIComponent(trimmed)}`);
+      if (res.ok) {
+        const data: StandardLineage = await res.json();
+        setLineage(data);
+        setActiveEpochIndex(data.evolution.length - 1);
+      } else {
+        console.warn('Lineage API error, falling back locally');
       }
-      return;
-    }
-
-    setDetectedWithdrawn(null);
-
-    // 2. Check if it matches any lineage title or evolution code
-    const foundLin = LINEAGE_DATABASE.find(
-      (l) =>
-        l.name.toUpperCase().includes(raw) ||
-        l.evolution.some((e) => e.code.toUpperCase().includes(raw) || e.title.toUpperCase().includes(raw))
-    );
-
-    if (foundLin) {
-      setSelectedLineage(foundLin);
-      const stepIdx = foundLin.evolution.findIndex(
-        (e) => e.code.toUpperCase().includes(raw) || e.title.toUpperCase().includes(raw)
-      );
-      setActiveYearIndex(stepIdx >= 0 ? stepIdx : foundLin.evolution.length - 1);
+    } catch (err) {
+      console.error('Failed to load standard lineage:', err);
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  const currentStep =
-    selectedLineage.evolution[activeYearIndex] ||
-    selectedLineage.evolution[selectedLineage.evolution.length - 1];
+  // Initial load
+  useEffect(() => {
+    fetchLineage('IS 269');
+  }, []);
+
+  const handleSearchSubmit = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    if (searchQuery.trim()) {
+      fetchLineage(searchQuery);
+    }
+  };
+
+  const handleTestCaseClick = (tc: TestCase) => {
+    setSearchQuery(tc.code);
+    fetchLineage(tc.code);
+  };
+
+  const currentStep = lineage.evolution[activeEpochIndex] || lineage.evolution[lineage.evolution.length - 1];
+
+  const handleCopyLegalClause = () => {
+    if (!currentStep) return;
+    const clauseText = `Legal & Technical Conformity: Citing ${currentStep.code} (${currentStep.title}). Status: ${currentStep.status}. Statutory Replacement: ${lineage.canonical_replacement}. Rationale: ${currentStep.changes}.`;
+    navigator.clipboard.writeText(clauseText);
+    setCopiedClause(true);
+    setTimeout(() => setCopiedClause(false), 2000);
+  };
+
+  const filteredTestCases =
+    activeCategoryFilter === 'ALL'
+      ? TEST_CASES
+      : TEST_CASES.filter((tc) => tc.domain.toLowerCase().includes(activeCategoryFilter.toLowerCase()));
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-      {/* Top Banner */}
-      <div className="workbench-card" style={{ borderLeft: '4px solid var(--focus-blue, #2563EB)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+      {/* Top Banner Card */}
+      <div
+        className="workbench-card"
+        style={{
+          borderLeft: '4px solid var(--focus-blue, #2563EB)',
+          background: 'linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%)',
+          padding: '24px 28px',
+        }}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '14px' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
               <span className="status-dot active" />
-              <span className="section-label" style={{ margin: 0 }}>
-                STANDARDS HISTORICAL TIME-MACHINE (1950 - 2026)
+              <span
+                style={{
+                  fontFamily: 'var(--font-data, monospace)',
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  letterSpacing: '0.06em',
+                  color: 'var(--ink-muted, #64748B)',
+                }}
+              >
+                STANDARDS HISTORICAL TIME-MACHINE (1950 — 2026)
               </span>
-              <span className="concept-status-badge active" style={{ fontSize: '9px' }}>
+              <span
+                style={{
+                  fontSize: '10px',
+                  padding: '2px 8px',
+                  borderRadius: '4px',
+                  background: '#EFF6FF',
+                  color: '#1D4ED8',
+                  fontWeight: 700,
+                  fontFamily: 'var(--font-data, monospace)',
+                  border: '1px solid #BFDBFE',
+                }}
+              >
                 SUPERSEDED LINEAGE ENGINE
               </span>
             </div>
-            <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)' }}>
+            <h1
+              style={{
+                fontFamily: 'var(--font-ui, sans-serif)',
+                fontSize: '22px',
+                fontWeight: 700,
+                color: 'var(--ink, #0F172A)',
+                margin: '2px 0 6px 0',
+                letterSpacing: '-0.015em',
+              }}
+            >
               Standards Historical Evolution & Supersession Lineage
             </h1>
-            <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', margin: 0 }}>
-              Trace standard revisions through 75 years of Indian industrial development to legally defend why historic clauses were superseded.
+            <p
+              style={{
+                fontFamily: 'var(--font-prose, sans-serif)',
+                fontSize: '13.5px',
+                color: 'var(--ink-secondary, #475569)',
+                margin: 0,
+                lineHeight: 1.5,
+              }}
+            >
+              Trace standard revisions through 75 years of Indian industrial development. Dynamically look up any of the <strong>22,011 Indian Standards</strong> to legally defend why historic clauses were superseded and identify active statutory replacements.
             </p>
+          </div>
+
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            <span
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '5px',
+                padding: '4px 10px',
+                borderRadius: '6px',
+                background: '#F1F5F9',
+                color: '#334155',
+                fontSize: '11.5px',
+                fontWeight: 600,
+                fontFamily: 'var(--font-data, monospace)',
+                border: '1px solid #CBD5E1',
+              }}
+            >
+              <Layers size={13} /> {lineage.evolution.length} HISTORICAL EPOCHS
+            </span>
+            <span
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '5px',
+                padding: '4px 10px',
+                borderRadius: '6px',
+                background: lineage.is_withdrawn ? '#FEF2F2' : '#ECFDF5',
+                color: lineage.is_withdrawn ? '#DC2626' : '#047857',
+                fontSize: '11.5px',
+                fontWeight: 700,
+                fontFamily: 'var(--font-data, monospace)',
+                border: `1px solid ${lineage.is_withdrawn ? '#FECACA' : '#A7F3D0'}`,
+              }}
+            >
+              {lineage.is_withdrawn ? '⚠ WITHDRAWN SPEC' : '✓ ACTIVE STANDARD'}
+            </span>
           </div>
         </div>
 
-        {/* Live Search Bar for Withdrawn and Active Standards */}
-        <div style={{ marginTop: '16px', paddingTop: '14px', borderTop: '1px solid var(--hairline)' }}>
-          <div className="section-label" style={{ margin: '0 0 8px 0' }}>
-            LOOKUP ANY STANDARD REVISION OR WITHDRAWN SPECIFICATION:
+        {/* Dynamic Search Box */}
+        <form onSubmit={handleSearchSubmit} style={{ marginTop: '18px', paddingTop: '16px', borderTop: '1px solid var(--hairline, #E2E8F0)' }}>
+          <div style={{ fontFamily: 'var(--font-data, monospace)', fontSize: '11px', color: 'var(--ink-muted, #64748B)', fontWeight: 700, marginBottom: '8px' }}>
+            LOOKUP ANY STANDARD REVISION OR WITHDRAWN SPECIFICATION (22,011 STANDARDS):
           </div>
+
           <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
             <div style={{ flex: 1, position: 'relative', display: 'flex', alignItems: 'center' }}>
-              <Search size={16} color="#71717A" style={{ position: 'absolute', left: '12px' }} />
+              <Search size={16} color="#64748B" style={{ position: 'absolute', left: '12px' }} />
               <input
                 type="text"
-                placeholder="Enter any standard code (e.g., IS 8112, IS 12269, IS 226, IS 456, IS 1786, IS 13920, IS 4984)..."
+                placeholder="Enter any standard code (e.g., IS 15683, IS 8112, IS 12269, IS 226, IS 456, IS 1786, IS 7098, IS 2925, IS 10500)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') handleSearch();
-                }}
                 className="auth-input"
                 style={{
                   width: '100%',
-                  paddingLeft: '36px',
+                  paddingLeft: '38px',
                   paddingRight: '12px',
-                  fontSize: '13px',
+                  fontSize: '13.5px',
+                  height: '42px',
+                  borderRadius: '6px',
+                  border: '1px solid #CBD5E1',
                 }}
               />
             </div>
+
             <button
-              type="button"
-              onClick={() => handleSearch()}
-              disabled={!searchQuery.trim()}
+              type="submit"
+              disabled={isLoading || !searchQuery.trim()}
               className="btn-primary"
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '6px',
-                padding: '10px 18px',
+                gap: '8px',
+                padding: '0 20px',
+                height: '42px',
                 whiteSpace: 'nowrap',
+                fontSize: '13px',
+                fontWeight: 600,
+                cursor: 'pointer',
               }}
             >
-              <History size={15} />
-              <span>Trace Lineage</span>
+              {isLoading ? <RefreshCw size={15} className="spin" /> : <History size={16} />}
+              <span>{isLoading ? 'Tracing...' : 'Trace Lineage'}</span>
             </button>
           </div>
+        </form>
 
-          {/* Quick Lineage Selector Pills */}
-          <div style={{ display: 'flex', gap: '8px', marginTop: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
-            <span style={{ fontSize: '11.5px', color: 'var(--ink-muted)' }}>Core Lineages:</span>
-            {LINEAGE_DATABASE.map((lin) => (
-              <button
-                key={lin.id}
-                type="button"
-                className={`category-pill ${selectedLineage.id === lin.id ? 'selected' : ''}`}
-                onClick={() => {
-                  setSelectedLineage(lin);
-                  setActiveYearIndex(lin.evolution.length - 1);
-                  setDetectedWithdrawn(null);
-                }}
-                style={{ fontSize: '11px', padding: '4px 10px' }}
-              >
-                {lin.name.split('(')[0]}
-              </button>
-            ))}
+        {/* Interactive Test Cases Header & Domain Pills */}
+        <div style={{ marginTop: '16px', paddingTop: '14px', borderTop: '1px dashed var(--hairline, #E2E8F0)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px', marginBottom: '10px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <FlaskConical size={13} color="#2563EB" />
+              <span style={{ fontFamily: 'var(--font-data, monospace)', fontSize: '11px', fontWeight: 700, color: '#1E293B' }}>
+                CLICK TO TEST ANY HISTORICAL EVOLUTION TEST CASE:
+              </span>
+            </div>
+
+            <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
+              {['ALL', 'Fire', 'Cement', 'Metallurgy', 'Electrical', 'PPE'].map((dom) => (
+                <button
+                  key={dom}
+                  type="button"
+                  onClick={() => setActiveCategoryFilter(dom)}
+                  style={{
+                    padding: '2px 8px',
+                    borderRadius: '12px',
+                    fontSize: '10.5px',
+                    cursor: 'pointer',
+                    border: activeCategoryFilter === dom ? '1px solid #2563EB' : '1px solid #E2E8F0',
+                    background: activeCategoryFilter === dom ? '#EFF6FF' : '#FFFFFF',
+                    color: activeCategoryFilter === dom ? '#1D4ED8' : '#64748B',
+                    fontWeight: activeCategoryFilter === dom ? 700 : 500,
+                  }}
+                >
+                  {dom}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
+            {filteredTestCases.map((tc) => {
+              const isSelected = lineage.standard_code.includes(tc.code) || (lineage.withdrawn_alert && lineage.withdrawn_alert.code.includes(tc.code));
+              const isTrap = tc.type === 'WITHDRAWN_TRAP';
+              const isConsolidated = tc.type === 'CONSOLIDATED';
+
+              return (
+                <button
+                  key={tc.code}
+                  type="button"
+                  onClick={() => handleTestCaseClick(tc)}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    padding: '5px 12px',
+                    borderRadius: '6px',
+                    fontSize: '11.5px',
+                    fontFamily: 'var(--font-ui, sans-serif)',
+                    fontWeight: isSelected ? 700 : 500,
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease',
+                    border: isSelected
+                      ? '1.5px solid #2563EB'
+                      : isTrap
+                      ? '1px solid #FECACA'
+                      : '1px solid #E2E8F0',
+                    background: isSelected
+                      ? '#EFF6FF'
+                      : isTrap
+                      ? '#FFF5F5'
+                      : '#FFFFFF',
+                    color: isSelected
+                      ? '#1D4ED8'
+                      : isTrap
+                      ? '#991B1B'
+                      : '#334155',
+                    boxShadow: isSelected ? '0 2px 4px rgba(37, 99, 235, 0.1)' : 'none',
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily: 'var(--font-data, monospace)',
+                      fontWeight: 700,
+                      color: isTrap ? '#DC2626' : isConsolidated ? '#047857' : '#0F172A',
+                    }}
+                  >
+                    {tc.code}
+                  </span>
+                  <span>·</span>
+                  <span style={{ fontSize: '11px', color: '#64748B' }}>{tc.label.split('(')[0]}</span>
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
 
-      {/* Withdrawn Standard Detection Banner if Searched */}
-      {detectedWithdrawn && (
+      {/* Withdrawn Alert Banner if Current Standard is Obsolete */}
+      {lineage.withdrawn_alert && (
         <div
           style={{
-            padding: '16px 20px',
+            padding: '18px 22px',
             background: '#FEF2F2',
             border: '1px solid #FECACA',
-            borderLeft: '4px solid #EF4444',
-            borderRadius: 'var(--radius-sm)',
+            borderLeft: '4px solid #DC2626',
+            borderRadius: '8px',
             display: 'flex',
             flexDirection: 'column',
-            gap: '8px',
-            animation: 'fadeSlideUp 0.2s ease',
+            gap: '10px',
+            animation: 'fadeSlideUp 0.18s ease-out',
+            boxShadow: '0 4px 12px rgba(220, 38, 38, 0.06)',
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <ShieldAlert size={18} color="#EF4444" />
-              <strong style={{ fontFamily: 'var(--font-data)', fontSize: '13px', color: '#991B1B' }}>
-                WITHDRAWN SPECIFICATION DETECTED: {detectedWithdrawn.code}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <ShieldAlert size={20} color="#DC2626" />
+              <strong style={{ fontFamily: 'var(--font-ui, sans-serif)', fontSize: '14px', color: '#991B1B' }}>
+                WITHDRAWN SPECIFICATION DETECTED: {lineage.withdrawn_alert.code}
               </strong>
             </div>
             <span
               style={{
                 fontSize: '11px',
                 fontWeight: 700,
-                color: '#991B1B',
-                background: '#FEE2E2',
-                padding: '2px 8px',
+                color: '#FFFFFF',
+                background: '#DC2626',
+                padding: '3px 8px',
                 borderRadius: '4px',
+                fontFamily: 'var(--font-data, monospace)',
               }}
             >
-              {detectedWithdrawn.severity} TENDER RISK
+              {lineage.withdrawn_alert.severity || 'CRITICAL'} CVC AUDIT RISK
             </span>
           </div>
 
-          <p style={{ fontSize: '13px', color: '#7F1D1D', margin: 0, lineHeight: 1.5 }}>
-            {detectedWithdrawn.reason}
+          <p style={{ fontSize: '13px', color: '#7F1D1D', margin: 0, lineHeight: 1.55 }}>
+            {lineage.withdrawn_alert.reason}
           </p>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '4px' }}>
-            <span style={{ fontSize: '12px', fontWeight: 600, color: '#1E293B' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginTop: '2px' }}>
+            <span style={{ fontSize: '12.5px', fontWeight: 600, color: '#1E293B' }}>
               Statutory Active Successor:
             </span>
             <span
               className="code-monogram"
-              style={{ fontSize: '13px', background: '#DCFCE7', color: '#166534', border: '1px solid #BBF7D0' }}
+              style={{
+                fontSize: '13px',
+                background: '#DCFCE7',
+                color: '#166534',
+                border: '1px solid #BBF7D0',
+                padding: '3px 10px',
+              }}
             >
-              {detectedWithdrawn.replacement}
+              {lineage.withdrawn_alert.replacement}
+            </span>
+            <span style={{ fontSize: '11.5px', color: '#64748B', fontFamily: 'var(--font-data, monospace)' }}>
+              (Mandatory for all new public tender NITs)
             </span>
           </div>
         </div>
       )}
 
-      {/* Main Timeline Card */}
-      <div className="workbench-card" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+      {/* Main Epoch Timeline Card */}
+      <div
+        className="workbench-card"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '22px',
+          padding: '24px 28px',
+          border: '1px solid var(--hairline, #E2E8F0)',
+          borderRadius: '12px',
+          boxShadow: '0 4px 20px -2px rgba(15, 23, 42, 0.05)',
+          background: '#FFFFFF',
+        }}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '10px' }}>
           <div>
-            <h2 className="workbench-card-title">{selectedLineage.name}</h2>
-            <div className="workbench-card-subtitle">{selectedLineage.category}</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+              <span className="code-monogram" style={{ fontSize: '13px', padding: '3px 8px' }}>
+                {lineage.standard_code}
+              </span>
+              <span style={{ fontSize: '12px', color: 'var(--ink-muted, #64748B)', fontFamily: 'var(--font-data, monospace)' }}>
+                {lineage.category}
+              </span>
+            </div>
+            <h2
+              style={{
+                fontFamily: 'var(--font-ui, sans-serif)',
+                fontSize: '18px',
+                fontWeight: 700,
+                color: 'var(--ink, #0F172A)',
+                margin: 0,
+              }}
+            >
+              {lineage.name}
+            </h2>
           </div>
-          <span className="badge-code font-mono">
-            {selectedLineage.evolution.length} HISTORICAL EPOCHS
-          </span>
+
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            <span
+              style={{
+                fontFamily: 'var(--font-data, monospace)',
+                fontSize: '11px',
+                padding: '4px 10px',
+                borderRadius: '6px',
+                background: '#F8FAFC',
+                color: '#475569',
+                border: '1px solid #E2E8F0',
+                fontWeight: 700,
+              }}
+            >
+              {lineage.evolution.length} HISTORICAL EPOCHS
+            </span>
+          </div>
         </div>
 
-        {/* Interactive Year Slider Steps */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', position: 'relative', margin: '20px 20px 10px' }}>
-          {/* Connector Line */}
+        {/* Clean, Non-Truncated Timeline Progression Bar */}
+        <div style={{ position: 'relative', margin: '24px 10px 14px' }}>
+          {/* Connecting Track Line */}
           <div
             style={{
               position: 'absolute',
-              top: '16px',
-              left: 0,
-              right: 0,
+              top: '18px',
+              left: '40px',
+              right: '40px',
               height: '3px',
-              background: 'var(--hairline)',
+              background: '#E2E8F0',
               zIndex: 1,
             }}
           />
-          {selectedLineage.evolution.map((step, idx) => {
-            const isCurrent = idx === activeYearIndex;
-            return (
-              <div
-                key={idx}
-                onClick={() => setActiveYearIndex(idx)}
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  cursor: 'pointer',
-                  zIndex: 2,
-                }}
-              >
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'flex-start',
+              position: 'relative',
+              zIndex: 2,
+            }}
+          >
+            {lineage.evolution.map((step, idx) => {
+              const isCurrent = idx === activeEpochIndex;
+              const isActive = step.status === 'ACTIVE';
+              const isWithdrawn = step.status === 'WITHDRAWN';
+
+              const bubbleBg = isCurrent
+                ? '#0F172A'
+                : isActive
+                ? '#10B981'
+                : isWithdrawn
+                ? '#EF4444'
+                : '#94A3B8';
+
+              return (
                 <div
+                  key={idx}
+                  onClick={() => setActiveEpochIndex(idx)}
                   style={{
-                    width: isCurrent ? '34px' : '26px',
-                    height: isCurrent ? '34px' : '26px',
-                    borderRadius: '50%',
-                    background: isCurrent
-                      ? 'var(--ink)'
-                      : step.status === 'ACTIVE'
-                      ? 'var(--emerald-pass, #10B981)'
-                      : step.status === 'WITHDRAWN'
-                      ? '#EF4444'
-                      : '#E4E4E7',
-                    color: isCurrent || step.status === 'ACTIVE' || step.status === 'WITHDRAWN' ? '#FFFFFF' : '#71717A',
                     display: 'flex',
+                    flexDirection: 'column',
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '11px',
-                    fontWeight: 700,
-                    fontFamily: 'var(--font-data)',
-                    border: '3px solid #FFFFFF',
-                    boxShadow: isCurrent ? '0 0 0 2px var(--ink)' : 'var(--shadow-xs)',
+                    cursor: 'pointer',
+                    flex: 1,
+                    maxWidth: '160px',
                     transition: 'all 0.15s ease',
                   }}
                 >
-                  {step.year}
+                  {/* Step Bubble */}
+                  <div
+                    style={{
+                      width: isCurrent ? '38px' : '30px',
+                      height: isCurrent ? '38px' : '30px',
+                      borderRadius: '50%',
+                      background: bubbleBg,
+                      color: '#FFFFFF',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: isCurrent ? '12px' : '11px',
+                      fontWeight: 700,
+                      fontFamily: 'var(--font-data, monospace)',
+                      border: '3px solid #FFFFFF',
+                      boxShadow: isCurrent
+                        ? '0 0 0 3px #2563EB, 0 4px 10px rgba(37, 99, 235, 0.3)'
+                        : '0 2px 5px rgba(0, 0, 0, 0.08)',
+                      transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+                    }}
+                  >
+                    {step.year}
+                  </div>
+
+                  {/* Proper Non-Truncated Standard Label */}
+                  <div
+                    style={{
+                      fontFamily: 'var(--font-data, monospace)',
+                      fontSize: '11px',
+                      fontWeight: isCurrent ? 700 : 600,
+                      color: isCurrent ? '#0F172A' : '#475569',
+                      marginTop: '10px',
+                      textAlign: 'center',
+                      lineHeight: 1.25,
+                      padding: '2px 6px',
+                      borderRadius: '4px',
+                      background: isCurrent ? '#F1F5F9' : 'transparent',
+                    }}
+                  >
+                    {step.code.length > 20 ? `${step.code.slice(0, 18)}..` : step.code}
+                  </div>
+
+                  {/* Status Indicator Tag */}
+                  <span
+                    style={{
+                      fontSize: '9px',
+                      fontFamily: 'var(--font-data, monospace)',
+                      fontWeight: 700,
+                      marginTop: '4px',
+                      padding: '1px 6px',
+                      borderRadius: '3px',
+                      background: isActive ? '#DCFCE7' : isWithdrawn ? '#FEE2E2' : '#F1F5F9',
+                      color: isActive ? '#15803D' : isWithdrawn ? '#DC2626' : '#64748B',
+                      letterSpacing: '0.02em',
+                    }}
+                  >
+                    {step.status}
+                  </span>
                 </div>
-                <span
-                  style={{
-                    fontFamily: 'var(--font-data)',
-                    fontSize: '11px',
-                    fontWeight: isCurrent ? 700 : 500,
-                    color: isCurrent ? 'var(--ink)' : 'var(--ink-muted)',
-                    marginTop: '8px',
-                    textAlign: 'center',
-                    maxWidth: '80px',
-                  }}
-                >
-                  {step.code.split(' ')[0]} {step.code.split(' ')[1] ? step.code.split(' ')[1].slice(0, 5) : ''}
-                </span>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
 
-        {/* Snapshot Inspector of Selected Epoch */}
+        {/* Selected Epoch Deep-Dive Inspector */}
         <div
           style={{
-            padding: '18px 22px',
-            background: 'var(--surface-secondary)',
-            borderRadius: 'var(--radius-sm)',
-            border: '1px solid var(--hairline)',
+            padding: '20px 24px',
+            background: 'linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%)',
+            borderRadius: '8px',
+            border: '1px solid #E2E8F0',
             display: 'flex',
             flexDirection: 'column',
-            gap: '10px',
-            animation: 'fadeSlideUp 0.2s ease',
+            gap: '14px',
+            animation: 'fadeSlideUp 0.18s ease-out',
+            boxShadow: '0 2px 8px rgba(15, 23, 42, 0.03)',
           }}
         >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <span className="code-monogram" style={{ fontSize: '15px', padding: '4px 10px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+              <span className="code-monogram" style={{ fontSize: '15px', padding: '4px 12px' }}>
                 {currentStep.code}
               </span>
+
               <span
-                className="concept-status-badge"
                 style={{
-                  fontSize: '11px',
-                  background: currentStep.status === 'ACTIVE' ? '#DCFCE7' : currentStep.status === 'WITHDRAWN' ? '#FEE2E2' : '#F3F4F6',
-                  color: currentStep.status === 'ACTIVE' ? '#166534' : currentStep.status === 'WITHDRAWN' ? '#991B1B' : '#4B5563',
-                  border: `1px solid ${currentStep.status === 'ACTIVE' ? '#BBF7D0' : currentStep.status === 'WITHDRAWN' ? '#FECACA' : '#E5E7EB'}`,
+                  fontSize: '11.5px',
+                  fontWeight: 700,
+                  fontFamily: 'var(--font-data, monospace)',
+                  padding: '3px 10px',
+                  borderRadius: '5px',
+                  background:
+                    currentStep.status === 'ACTIVE'
+                      ? '#DCFCE7'
+                      : currentStep.status === 'WITHDRAWN'
+                      ? '#FEE2E2'
+                      : '#F1F5F9',
+                  color:
+                    currentStep.status === 'ACTIVE'
+                      ? '#15803D'
+                      : currentStep.status === 'WITHDRAWN'
+                      ? '#DC2626'
+                      : '#475569',
+                  border: `1px solid ${
+                    currentStep.status === 'ACTIVE'
+                      ? '#BBF7D0'
+                      : currentStep.status === 'WITHDRAWN'
+                      ? '#FECACA'
+                      : '#E2E8F0'
+                  }`,
                 }}
               >
                 {currentStep.status}
               </span>
+
+              <span style={{ fontFamily: 'var(--font-data, monospace)', fontSize: '12px', color: '#64748B' }}>
+                Publication Epoch: <strong>{currentStep.year}</strong>
+              </span>
             </div>
-            <span style={{ fontFamily: 'var(--font-data)', fontSize: '12px', color: 'var(--ink-muted)' }}>
-              Publication Year: {currentStep.year}
-            </span>
+
+            <button
+              type="button"
+              className="btn-primary"
+              onClick={handleCopyLegalClause}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '6px 14px',
+                fontSize: '12px',
+                cursor: 'pointer',
+              }}
+            >
+              {copiedClause ? <Check size={13} /> : <Copy size={13} />}
+              <span>{copiedClause ? 'Clause Copied!' : 'Copy Legal Defense Clause'}</span>
+            </button>
           </div>
 
-          <div style={{ fontFamily: 'var(--font-ui)', fontSize: '15px', fontWeight: 600, color: 'var(--ink)' }}>
+          <div style={{ fontFamily: 'var(--font-ui, sans-serif)', fontSize: '15.5px', fontWeight: 600, color: 'var(--ink, #0F172A)' }}>
             {currentStep.title}
           </div>
 
-          <div style={{ fontSize: '13.5px', color: 'var(--ink-secondary)', lineHeight: 1.5 }}>
-            <strong>Historical Significance & Engineering Rationale: </strong>
+          <div
+            style={{
+              padding: '12px 16px',
+              background: '#FFFFFF',
+              borderRadius: '6px',
+              border: '1px solid #E2E8F0',
+              fontSize: '13px',
+              color: '#334155',
+              lineHeight: 1.55,
+            }}
+          >
+            <strong style={{ color: '#0F172A' }}>Historical Significance & Engineering Rationale: </strong>
             {currentStep.changes}
+          </div>
+
+          {/* Quick Legal Scrutiny Tip */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', color: '#64748B', flexWrap: 'wrap', gap: '8px' }}>
+            <span>
+              CVC Compliance Status:{' '}
+              <strong style={{ color: currentStep.status === 'ACTIVE' ? '#15803D' : '#DC2626' }}>
+                {currentStep.status === 'ACTIVE'
+                  ? 'Valid for Public Works Procurement'
+                  : 'Prohibited in Active NIT Tenders — Cite Replacement'}
+              </strong>
+            </span>
+            <span>
+              Statutory Authority: <strong>Bureau of Indian Standards Act, 2016</strong>
+            </span>
           </div>
         </div>
       </div>
