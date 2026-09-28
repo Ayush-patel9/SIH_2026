@@ -245,6 +245,59 @@ export const ISDetailDrawer: React.FC<ISDetailDrawerProps> = ({
               </div>
             )}
 
+            {/* Direct Official Link Banner */}
+            {(detail.is_link || detail.source_ia_url || detail.portal_link) && (
+              <a
+                href={detail.is_link || detail.source_ia_url || detail.portal_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '10px 14px',
+                  borderRadius: '8px',
+                  backgroundColor: '#EFF6FF',
+                  border: '1px solid #BFDBFE',
+                  color: '#1D4ED8',
+                  textDecoration: 'none',
+                  fontSize: '12px',
+                  fontWeight: 700,
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <FileText size={15} />
+                  <span>Open Official BIS Standard Document</span>
+                </div>
+                <ExternalLink size={14} />
+              </a>
+            )}
+
+            {/* Statutory Authority & Gazette Citation */}
+            {(detail.where_stated || detail.mandatory_qco?.gazette_date || detail.gazette_notification) && (
+              <div
+                style={{
+                  padding: '12px 14px',
+                  borderRadius: '8px',
+                  backgroundColor: '#FFFBEB',
+                  border: '1px solid #FDE68A',
+                  fontSize: '12px',
+                  color: '#92400E',
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  gap: '8px',
+                }}
+              >
+                <ShieldCheck size={16} color="#B45309" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <div>
+                  <strong style={{ color: '#78350F' }}>Statutory Authority & Gazette Citation:</strong>
+                  <div style={{ marginTop: '2px', lineHeight: 1.45 }}>
+                    {detail.where_stated || `Enacted under Gazette Notification ${detail.gazette_notification || detail.mandatory_qco?.gazette_date || 'under BIS Act 2016'}`}
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Scope Snippet */}
             <div>
               <div style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#6E7A68', fontWeight: 700, marginBottom: '6px' }}>

@@ -85,15 +85,43 @@ def get_knowledge_graph_subgraph(
             "label": label
         })
 
-    # Case A: Center standard is requested
+    # Case A: Center standard or product search requested (e.g. "cement", "tmt steel", "IS 269")
     if center and center.strip() and center.strip().upper() != "ALL":
         target_term = center.strip()
         norm_key = normalize_is_key(target_term)
 
-        # 1. Lookup center standard in 22,011 indexed standards
+        # 1. Direct standard code lookup in 22,011 indexed standards
         center_std = tri.standards_by_num.get(norm_key)
+        pipeline_resp = None
+
+        # 2. If not a direct standard code, use the full Standards Explorer (GraphRAG pipeline)
+        # to extract product semantics, resolve supersessions, and identify canonical standard
         if not center_std:
-            # Fallback search by exact/lexicon or vector candidates
+            try:
+                from pipeline.config.api_contract_models import QueryRequest
+                query_req = QueryRequest(input={
+                    "text": target_term,
+                    "source": "knowledge_graph_explorer",
+                    "mode": "recommend"
+                })
+                pipeline_resp = graph_rag_pipeline.process_query(query_req)
+                if pipeline_resp and pipeline_resp.primary_recommendation:
+                    prim_num = pipeline_resp.primary_recommendation.is_number
+                    resolved_norm_key = normalize_is_key(prim_num)
+                    center_std = tri.standards_by_num.get(resolved_norm_key)
+                    if not center_std:
+                        center_std = {
+                            "is_number": prim_num,
+                            "title": pipeline_resp.primary_recommendation.title,
+                            "technical_committee": {"division_name": "Standards Explorer Match"},
+                            "year_published": pipeline_resp.primary_recommendation.year_published or 2021,
+                            "status": pipeline_resp.primary_recommendation.status or "ACTIVE",
+                        }
+            except Exception as pe:
+                logger.warning(f"Standards Explorer pipeline lookup for '{target_term}' fallback: {pe}")
+
+        # 3. Fast fallbacks: lexicon lookup & BM25 / vector candidate search
+        if not center_std:
             matches = tri.exact_and_lexicon_lookup(target_term)
             if matches:
                 center_std = matches[0][0]
@@ -102,7 +130,10 @@ def get_knowledge_graph_subgraph(
                 if candidates:
                     center_std = candidates[0][0]
 
+        # Canonicalize center standard properties
         center_is_num = center_std.get("is_number", target_term) if center_std else target_term
+        norm_key = normalize_is_key(center_is_num)
+
         center_title = center_std.get("title", f"Indian Standard {center_is_num}") if center_std else f"Indian Standard {center_is_num}"
         center_dom = center_std.get("technical_committee", {}).get("division_name", "General Engineering") if center_std else "General Engineering"
         center_year = center_std.get("year_published", 2020) if center_std else 2020
@@ -119,7 +150,80 @@ def get_knowledge_graph_subgraph(
             color=resolve_domain_color(center_dom, center_status)
         )
 
-        # 2. Dynamic 2-Tier Knowledge Graph Traversal for this standard
+        # 4. Integrate Graph Path & Allied Standards from Standards Explorer pipeline
+        if pipeline_resp:
+            if pipeline_resp.allied_standards:
+                for allied in pipeline_resp.allied_standards:
+                    if len(nodes) >= limit_val:
+                        break
+                    a_is = allied.is_number
+                    a_std = tri.standards_by_num.get(normalize_is_key(a_is))
+                    a_dom = a_std.get("technical_committee", {}).get("division_name", "Testing & Conformity") if a_std else "Testing & Conformity"
+                    a_year = a_std.get("year_published", 2021) if a_std else 2021
+                    a_id = add_node(
+                        f"ALLIED-{a_is}",
+                        a_is,
+                        allied.title or (a_std.get("title", a_is) if a_std else a_is),
+                        a_dom,
+                        a_year,
+                        a_std.get("status", "ACTIVE") if a_std else "ACTIVE",
+                        citations=int((allied.confidence or 0.85) * 50)
+                    )
+                    rel_type = (allied.relation_type or "NORMATIVE").upper()
+                    add_edge(center_id, a_id, rel_type, rel_type.replace("_", " "))
+
+            if pipeline_resp.graph_path:
+                for gp in pipeline_resp.graph_path:
+                    if len(nodes) >= limit_val:
+                        break
+                    s_code = getattr(gp, 'from_node', getattr(gp, 'source', ''))
+                    t_code = getattr(gp, 'to_node', getattr(gp, 'target', ''))
+                    if not s_code or not t_code:
+                        continue
+                    s_norm = normalize_is_key(s_code)
+                    t_norm = normalize_is_key(t_code)
+                    s_std = tri.standards_by_num.get(s_norm)
+                    t_std = tri.standards_by_num.get(t_norm)
+                    s_id = add_node(
+                        f"GP-{s_code}",
+                        s_code,
+                        s_std.get("title", s_code) if s_std else s_code,
+                        s_std.get("technical_committee", {}).get("division_name", "Engineering") if s_std else "Engineering",
+                        s_std.get("year_published", 2020) if s_std else 2020,
+                        s_std.get("status", "ACTIVE") if s_std else "ACTIVE",
+                        citations=45
+                    )
+                    t_id = add_node(
+                        f"GP-{t_code}",
+                        t_code,
+                        t_std.get("title", t_code) if t_std else t_code,
+                        t_std.get("technical_committee", {}).get("division_name", "Testing & Conformity") if t_std else "Testing & Conformity",
+                        t_std.get("year_published", 2021) if t_std else 2021,
+                        t_std.get("status", "ACTIVE") if t_std else "ACTIVE",
+                        citations=40
+                    )
+                    e_type = getattr(gp, 'edge_type', getattr(gp, 'relationship', 'NORMATIVE')) or 'NORMATIVE'
+                    e_label = getattr(gp, 'label', getattr(gp, 'description', e_type)) or e_type
+                    add_edge(s_id, t_id, e_type.upper(), e_label)
+
+            if pipeline_resp.outdated_citations:
+                for outdated in pipeline_resp.outdated_citations:
+                    if len(nodes) >= limit_val:
+                        break
+                    out_code = outdated.cited_standard
+                    out_id = add_node(
+                        f"OLD-{out_code}",
+                        out_code,
+                        f"Outdated: {outdated.message or outdated.reason or 'Superseded'}"[:45],
+                        "Superseded / Legacy",
+                        1989,
+                        "SUPERSEDED",
+                        14,
+                        DOMAIN_COLORS["Superseded"]
+                    )
+                    add_edge(out_id, center_id, "SUPERSEDES", "Superseded / Consolidated")
+
+        # 5. Dynamic 2-Tier Knowledge Graph Traversal for this standard
         kg_data = tri.traverse_knowledge_graph(center_is_num)
         for allied in kg_data.get("allied_standards", []):
             if len(nodes) >= limit_val:
@@ -140,7 +244,7 @@ def get_knowledge_graph_subgraph(
             rel_type = allied.get("relation_type", "NORMATIVE")
             add_edge(center_id, a_id, rel_type, allied.get("relation_label", "Normative Citation"))
 
-        # 3. Dynamic supersession lineage for this standard
+        # 6. Dynamic supersession lineage for this standard
         for old_std, s_info in tri.supersession_map.items():
             if len(nodes) >= limit_val:
                 break
@@ -167,7 +271,7 @@ def get_knowledge_graph_subgraph(
                 )
                 add_edge(old_id, target_id, "SUPERSEDES", "Superseded / Consolidated")
 
-        # 4. Check parsed normative edges from fulltext corpus
+        # 7. Check parsed normative edges from fulltext corpus
         for e in tri.normative_graph.get(norm_key, []):
             if len(nodes) >= limit_val:
                 break
@@ -268,7 +372,10 @@ def get_knowledge_graph_subgraph(
     valid_edges = [e for e in edges if e["source"] in valid_node_ids and e["target"] in valid_node_ids]
 
     return {
-        "center": center or "IS 269:2015",
+        "center": (center.strip() if (center and center.strip().upper().startswith("IS ")) else center_is_num) if (center and center.strip().upper() != "ALL") else "IS 269:2015",
+        "resolved_standard": center_is_num if (center and center.strip().upper() != "ALL") else "IS 269:2015",
+        "resolved_title": center_title if (center and center.strip().upper() != "ALL") else "Ordinary Portland Cement (33, 43, 53)",
+        "product_query": center if (center and center.strip().upper() != "ALL") else None,
         "total_indexed": len(tri.master_standards) if tri.master_standards else 22011,
         "nodes_count": len(nodes),
         "edges_count": len(valid_edges),

@@ -74,9 +74,12 @@ export const KnowledgeGraph3DView: React.FC = () => {
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
   const [isLiveGraphLoaded, setIsLiveGraphLoaded] = useState(false);
   const [totalIndexedCount, setTotalIndexedCount] = useState<number>(22011);
+  const [isLoadingGraph, setIsLoadingGraph] = useState(false);
+  const [resolvedInfo, setResolvedInfo] = useState<{ query: string; standard: string; title?: string } | null>(null);
 
   // Fetch dynamic subgraph from FastAPI backend
   const fetchDynamicSubgraph = async (centerStd?: string, dom: string = 'ALL') => {
+    setIsLoadingGraph(true);
     try {
       const params = new URLSearchParams();
       if (centerStd) params.set('center', centerStd);
@@ -110,12 +113,29 @@ export const KnowledgeGraph3DView: React.FC = () => {
         if (data.total_indexed) setTotalIndexedCount(data.total_indexed);
         setIsLiveGraphLoaded(true);
 
-        if (!selectedNode || !formattedNodes.some((fn) => fn.id === selectedNode.id)) {
-          setSelectedNode(formattedNodes[0]);
+        if (data.product_query && data.resolved_standard) {
+          setResolvedInfo({
+            query: data.product_query,
+            standard: data.resolved_standard,
+            title: data.resolved_title,
+          });
+        } else if (centerStd) {
+          setResolvedInfo({
+            query: centerStd,
+            standard: data.center || centerStd,
+            title: data.resolved_title,
+          });
+        } else {
+          setResolvedInfo(null);
         }
+
+        // Auto-select the resolved primary center standard
+        setSelectedNode(formattedNodes[0]);
       }
     } catch (err) {
       console.warn('Backend subgraph API unavailable, utilizing local neural mesh baseline:', err);
+    } finally {
+      setIsLoadingGraph(false);
     }
   };
 
@@ -462,6 +482,67 @@ export const KnowledgeGraph3DView: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {/* Quick Product Search Presets */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginTop: '12px', borderTop: '1px solid var(--hairline)', paddingTop: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '11px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)', fontWeight: 600 }}>
+              Search by Product:
+            </span>
+            {[
+              { label: '🏛️ Cement', query: 'Cement' },
+              { label: '🏗️ TMT Rebars', query: 'TMT Steel Rebars' },
+              { label: '💧 HDPE Pipes', query: 'HDPE Water Pipes' },
+              { label: '🧯 Fire Extinguishers', query: 'Fire Extinguisher' },
+              { label: '⚡ Power Cables', query: 'Power Cables' },
+              { label: '📹 CCTV Cameras', query: 'CCTV Security Cameras' },
+            ].map((p) => (
+              <button
+                key={p.query}
+                type="button"
+                onClick={() => {
+                  setSearchQuery(p.query);
+                  fetchDynamicSubgraph(p.query, activeFilter);
+                }}
+                style={{
+                  background: 'var(--surface-secondary, #F4F4F5)',
+                  border: '1px solid var(--hairline, #E4E4E7)',
+                  borderRadius: '16px',
+                  padding: '3px 10px',
+                  fontSize: '11px',
+                  cursor: 'pointer',
+                  color: 'var(--ink, #18181B)',
+                  fontWeight: 500,
+                  transition: 'all 0.15s ease',
+                }}
+              >
+                {p.label}
+              </button>
+            ))}
+          </div>
+
+          {resolvedInfo && (
+            <div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '3px 10px',
+                borderRadius: '14px',
+                fontSize: '11.5px',
+                fontWeight: 600,
+                background: 'rgba(37, 99, 235, 0.08)',
+                color: '#1D4ED8',
+                border: '1px solid rgba(37, 99, 235, 0.25)',
+              }}
+            >
+              <Sparkles size={12} />
+              <span>
+                "{resolvedInfo.query}" → <strong>{resolvedInfo.standard}</strong> {resolvedInfo.title ? `(${resolvedInfo.title.slice(0, 35)}...)` : ''}
+              </span>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Main Graph Workbench Grid */}
@@ -478,7 +559,7 @@ export const KnowledgeGraph3DView: React.FC = () => {
               display: 'flex',
               alignItems: 'center',
               gap: '6px',
-              background: 'rgba(255, 255, 255, 0.9)',
+              background: 'rgba(255, 255, 255, 0.95)',
               backdropFilter: 'blur(8px)',
               padding: '4px 8px',
               borderRadius: 'var(--radius-sm)',
@@ -490,7 +571,7 @@ export const KnowledgeGraph3DView: React.FC = () => {
               <Search size={14} color="#71717A" />
               <input
                 type="text"
-                placeholder="Search IS number (e.g. IS 1786)..."
+                placeholder="Search product (e.g. Cement, TMT Rebars) or IS code..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={(e) => {
@@ -504,28 +585,46 @@ export const KnowledgeGraph3DView: React.FC = () => {
                   fontSize: '11.5px',
                   fontFamily: 'var(--font-ui)',
                   background: 'transparent',
-                  width: '180px',
+                  width: '260px',
                   color: 'var(--ink)',
                 }}
               />
               {searchQuery && (
                 <button
                   type="button"
-                  onClick={() => fetchDynamicSubgraph(searchQuery, activeFilter)}
-                  style={{
-                    border: 'none',
-                    background: 'var(--collapse-cobalt, #2563EB)',
-                    color: '#fff',
-                    borderRadius: '3px',
-                    padding: '2px 6px',
-                    fontSize: '10px',
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                  }}
+                  onClick={() => setSearchQuery('')}
+                  style={{ background: 'none', border: 'none', color: '#71717A', cursor: 'pointer', fontSize: '11px', padding: '0 4px' }}
                 >
-                  Locate
+                  ✕
                 </button>
               )}
+              <button
+                type="button"
+                onClick={() => fetchDynamicSubgraph(searchQuery, activeFilter)}
+                disabled={isLoadingGraph}
+                style={{
+                  border: 'none',
+                  background: 'var(--collapse-cobalt, #2563EB)',
+                  color: '#fff',
+                  borderRadius: '3px',
+                  padding: '3px 8px',
+                  fontSize: '10.5px',
+                  fontWeight: 600,
+                  cursor: isLoadingGraph ? 'wait' : 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                }}
+              >
+                {isLoadingGraph ? (
+                  <>
+                    <Loader2 size={11} className="animate-spin" />
+                    <span>Resolving...</span>
+                  </>
+                ) : (
+                  <span>Explore</span>
+                )}
+              </button>
             </div>
             <span style={{ width: '1px', height: '14px', background: 'var(--hairline)' }} />
             <button

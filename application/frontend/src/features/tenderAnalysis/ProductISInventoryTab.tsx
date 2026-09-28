@@ -404,7 +404,39 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                   <div style={{ fontSize: '12.5px', color: '#2D6A4F', marginTop: '2px', fontWeight: 600 }}>
                     {item.recommended_is_title}
                   </div>
-                  <div style={{ fontSize: '11.5px', color: '#44503E', marginTop: '4px' }}>
+                  {item.where_stated && (
+                    <div style={{ fontSize: '11.5px', color: '#8A6922', marginTop: '4px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <ShieldCheck size={13} color="#B45309" />
+                      <span>{item.where_stated}</span>
+                    </div>
+                  )}
+                  {item.what_it_is && (
+                    <div style={{ fontSize: '11.5px', color: '#44503E', marginTop: '3px', lineHeight: 1.4 }}>
+                      {item.what_it_is}
+                    </div>
+                  )}
+                  {item.official_is_link && (
+                    <div style={{ marginTop: '6px' }}>
+                      <a
+                        href={item.official_is_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          fontSize: '11.5px',
+                          color: '#15803D',
+                          fontWeight: 700,
+                          textDecoration: 'none',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                        }}
+                      >
+                        <ExternalLink size={11} />
+                        <span>View Official BIS Standard</span>
+                      </a>
+                    </div>
+                  )}
+                  <div style={{ fontSize: '11.5px', color: '#6E7A68', marginTop: '4px' }}>
                     {item.engineering_rationale}
                   </div>
                 </div>

@@ -13,8 +13,12 @@ import {
   FileText,
   Lock,
   ChevronRight,
+  ChevronDown,
+  ChevronUp,
   RefreshCw,
-  Check
+  Check,
+  Search,
+  BookOpen
 } from 'lucide-react';
 
 interface Stage2ProductSelectionViewProps {
@@ -48,6 +52,11 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
   const [clarifyingId, setClarifyingId] = useState<string | null>(null);
   const [overrideInputs, setOverrideInputs] = useState<Record<string, string>>({});
   const [expandedOverrideId, setExpandedOverrideId] = useState<string | null>(null);
+  const [expandedInsightsId, setExpandedInsightsId] = useState<Record<string, boolean>>({});
+
+  const toggleInsights = (productId: string) => {
+    setExpandedInsightsId((prev) => ({ ...prev, [productId]: !prev[productId] }));
+  };
   const [confirmedProducts, setConfirmedProducts] = useState<Record<string, boolean>>(() => {
     // By default, products with confidence >= 0.85 and no clarification needed can be pre-confirmed
     const initial: Record<string, boolean> = {};
@@ -248,7 +257,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                 </div>
 
                 {/* Confidence & Confirmation Status */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
                   <span
                     style={{
                       padding: '4px 10px',
@@ -262,6 +271,25 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                     }}
                   >
                     Match: {(product.confidence_score * 100).toFixed(0)}%
+                  </span>
+
+                  <span
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      padding: '4px 8px',
+                      borderRadius: '4px',
+                      backgroundColor: 'rgba(45, 106, 79, 0.08)',
+                      border: '1px solid rgba(45, 106, 79, 0.25)',
+                      fontSize: '11px',
+                      color: '#2D6A4F',
+                      fontWeight: 600,
+                    }}
+                    title="Grounded against Gazette of India & BIS Repository"
+                  >
+                    <ShieldCheck size={12} />
+                    <span>e-Gazette Verified</span>
                   </span>
 
                   {isConfirmed ? (
@@ -330,84 +358,304 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                 </div>
               )}
 
-              {/* Recommended Standard Banner */}
+              {/* Recommended Standard Banner with Statutory Reference & What It Is */}
               <div
                 style={{
                   backgroundColor: '#F5F0E6',
                   border: '1px solid #E5E0D4',
                   borderRadius: '8px',
-                  padding: '14px 18px',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                  gap: '12px',
+                  padding: '16px 18px',
                   marginBottom: '14px',
                 }}
               >
-                <div>
-                  <div style={{ fontSize: '11px', color: '#6E7A68', fontFamily: 'var(--font-data, monospace)', fontWeight: 700, textTransform: 'uppercase', marginBottom: '2px' }}>
-                    RECOMMENDED ACTIVE INDIAN STANDARD
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span style={{ fontSize: '15px', fontWeight: 800, color: '#1C2419', fontFamily: 'var(--font-data, monospace)' }}>
-                      {product.recommended_is}
-                    </span>
-                    <span style={{ fontSize: '13px', color: '#44503E', fontWeight: 500 }}>
-                      — {product.recommended_is_title}
-                    </span>
-                  </div>
-                  {product.qco_mandate?.mandatory && (
-                    <div style={{ marginTop: '4px', fontSize: '11.5px', color: '#8A6922', fontWeight: 600 }}>
-                      ⚖️ Mandatory ISI Mark under {product.qco_mandate.order_name || 'BIS Quality Control Order'}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '14px' }}>
+                  <div style={{ flex: 1, minWidth: '280px' }}>
+                    <div style={{ fontSize: '11px', color: '#6E7A68', fontFamily: 'var(--font-data, monospace)', fontWeight: 700, textTransform: 'uppercase', marginBottom: '4px' }}>
+                      RECOMMENDED ACTIVE INDIAN STANDARD
                     </div>
-                  )}
-                </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                      <span style={{ fontSize: '16px', fontWeight: 800, color: '#1C2419', fontFamily: 'var(--font-data, monospace)' }}>
+                        {product.recommended_is}
+                      </span>
+                      <span style={{ fontSize: '13.5px', color: '#36452F', fontWeight: 600 }}>
+                        — {product.recommended_is_title}
+                      </span>
+                    </div>
 
-                <div style={{ display: 'flex', gap: '8px' }}>
-                  <button
-                    type="button"
-                    onClick={() => onOpenStandardDetail(product.recommended_is)}
-                    style={{
-                      padding: '6px 12px',
-                      borderRadius: '6px',
-                      border: '1px solid #D5CFBF',
-                      background: '#FFFEFB',
-                      color: '#36452F',
-                      fontSize: '11.5px',
-                      fontWeight: 600,
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '4px',
-                    }}
-                  >
-                    <span>Inspect BIS Specs</span>
-                    <ExternalLink size={12} />
-                  </button>
+                    {/* Verified Statutory Citation & Scope */}
+                    <div style={{ marginTop: '8px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                      {product.where_stated && (
+                        <div style={{ fontSize: '12px', color: '#8A6922', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <ShieldCheck size={14} color="#B45309" />
+                          <span><strong>Where Stated:</strong> {product.where_stated}</span>
+                        </div>
+                      )}
+                      {product.what_it_is && (
+                        <div style={{ fontSize: '12px', color: '#44503E', lineHeight: 1.45, marginTop: '2px' }}>
+                          <strong>Technical Scope:</strong> {product.what_it_is}
+                        </div>
+                      )}
+                    </div>
+                  </div>
 
-                  <button
-                    type="button"
-                    onClick={() => setExpandedOverrideId(expandedOverrideId === product.product_id ? null : product.product_id)}
-                    style={{
-                      padding: '6px 12px',
-                      borderRadius: '6px',
-                      border: '1px solid #D5CFBF',
-                      background: '#FFFEFB',
-                      color: '#44503E',
-                      fontSize: '11.5px',
-                      fontWeight: 600,
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '4px',
-                    }}
-                  >
-                    <Edit3 size={12} />
-                    <span>Override</span>
-                  </button>
+                  {/* Actions Bar */}
+                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
+                    {product.official_is_link && (
+                      <a
+                        href={product.official_is_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          padding: '6px 12px',
+                          borderRadius: '6px',
+                          border: '1px solid #2D6A4F',
+                          background: 'rgba(45, 106, 79, 0.08)',
+                          color: '#2D6A4F',
+                          fontSize: '11.5px',
+                          fontWeight: 700,
+                          textDecoration: 'none',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '5px',
+                        }}
+                        title="Open official BIS standard or digitized gazette document"
+                      >
+                        <ExternalLink size={12} />
+                        <span>Official BIS Document</span>
+                      </a>
+                    )}
+
+                    <button
+                      type="button"
+                      onClick={() => onOpenStandardDetail(product.recommended_is)}
+                      style={{
+                        padding: '6px 12px',
+                        borderRadius: '6px',
+                        border: '1px solid #D5CFBF',
+                        background: '#FFFEFB',
+                        color: '#36452F',
+                        fontSize: '11.5px',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                      }}
+                    >
+                      <BookOpen size={12} />
+                      <span>Inspect BIS Specs</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => toggleInsights(product.product_id)}
+                      style={{
+                        padding: '6px 12px',
+                        borderRadius: '6px',
+                        border: '1px solid #C29D53',
+                        background: expandedInsightsId[product.product_id] ? '#FFF9EB' : '#FFFEFB',
+                        color: '#92400E',
+                        fontSize: '11.5px',
+                        fontWeight: 700,
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                      }}
+                      title="Inspect all evaluated candidate standards with links & statutory citations"
+                    >
+                      <Search size={12} />
+                      <span>View Insights ({product.all_candidates?.length || 5} Evaluated IS)</span>
+                      {expandedInsightsId[product.product_id] ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setExpandedOverrideId(expandedOverrideId === product.product_id ? null : product.product_id)}
+                      style={{
+                        padding: '6px 12px',
+                        borderRadius: '6px',
+                        border: '1px solid #D5CFBF',
+                        background: '#FFFEFB',
+                        color: '#44503E',
+                        fontSize: '11.5px',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                      }}
+                    >
+                      <Edit3 size={12} />
+                      <span>Override</span>
+                    </button>
+                  </div>
                 </div>
               </div>
+
+              {/* Expandable 5-Candidate Standards Insights Panel */}
+              {expandedInsightsId[product.product_id] && (
+                <div
+                  style={{
+                    backgroundColor: '#FAF8F3',
+                    border: '1px solid #E5E0D4',
+                    borderLeft: '4px solid #C29D53',
+                    borderRadius: '8px',
+                    padding: '16px',
+                    marginBottom: '16px',
+                  }}
+                >
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', flexWrap: 'wrap', gap: '8px' }}>
+                    <div>
+                      <div style={{ fontSize: '13px', fontWeight: 800, color: '#1C2419', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <Search size={15} color="#92400E" />
+                        <span>Evaluated Candidate Indian Standards for {product.product_name}</span>
+                      </div>
+                      <div style={{ fontSize: '11.5px', color: '#6E7A68', marginTop: '2px' }}>
+                        All 5 candidate standards cross-referenced against the tender clause, e-Gazette QCO mandates, and active BIS catalog.
+                      </div>
+                    </div>
+                    <span
+                      style={{
+                        padding: '3px 8px',
+                        borderRadius: '4px',
+                        backgroundColor: '#EDF7F1',
+                        color: '#2D6A4F',
+                        fontSize: '11px',
+                        fontWeight: 700,
+                        fontFamily: 'var(--font-data, monospace)',
+                      }}
+                    >
+                      {product.all_candidates?.length || 0} Standards Evaluated
+                    </span>
+                  </div>
+
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    {product.all_candidates && product.all_candidates.map((cand, cIdx) => {
+                      const isSelected = cand.is_number === product.recommended_is;
+
+                      return (
+                        <div
+                          key={cIdx}
+                          style={{
+                            backgroundColor: isSelected ? '#FFFFFF' : '#FFFEFB',
+                            border: `1px solid ${isSelected ? '#2D6A4F' : '#E5E0D4'}`,
+                            borderRadius: '8px',
+                            padding: '12px 14px',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '8px',
+                            boxShadow: isSelected ? '0 2px 8px rgba(45,106,79,0.08)' : 'none',
+                          }}
+                        >
+                          {/* Row 1: Code, Title, Confidence, Status Badge */}
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '8px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                              <span style={{ fontSize: '13.5px', fontWeight: 800, color: '#1C2419', fontFamily: 'var(--font-data, monospace)' }}>
+                                {cand.is_number}
+                              </span>
+                              <span style={{ fontSize: '12.5px', color: '#44503E', fontWeight: 600 }}>
+                                {cand.title}
+                              </span>
+                              {isSelected && (
+                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: '#EDF7F1', color: '#1B4332', fontSize: '10.5px', fontWeight: 700, border: '1px solid #B7E4C7' }}>
+                                  ✓ CURRENT RECOMMENDATION
+                                </span>
+                              )}
+                              {cand.qco_mandatory && (
+                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: 'rgba(217, 119, 6, 0.1)', color: '#B45309', fontSize: '10.5px', fontWeight: 700, border: '1px solid rgba(217, 119, 6, 0.3)' }}>
+                                  ⚖️ Mandatory QCO
+                                </span>
+                              )}
+                              {cand.status === 'SUPERSEDED_REPLACEMENT' && (
+                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: '#FDF2F0', color: '#BA3A2A', fontSize: '10.5px', fontWeight: 700 }}>
+                                  Active Revision
+                                </span>
+                              )}
+                            </div>
+
+                            <span style={{ fontSize: '11px', fontWeight: 700, fontFamily: 'var(--font-data, monospace)', color: (cand.confidence || 0) >= 0.85 ? '#2D6A4F' : '#92400E' }}>
+                              {Math.round((cand.confidence || 0.85) * 100)}% Match
+                            </span>
+                          </div>
+
+                          {/* Row 2: What it is & Where stated */}
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', fontSize: '12px', color: '#44503E', lineHeight: 1.45 }}>
+                            {cand.what_it_is && (
+                              <div>
+                                <strong style={{ color: '#1C2419' }}>What it is:</strong> {cand.what_it_is}
+                              </div>
+                            )}
+                            {cand.where_stated && (
+                              <div style={{ color: '#8A6922' }}>
+                                <strong>Where stated:</strong> {cand.where_stated}
+                              </div>
+                            )}
+                          </div>
+
+                          {/* Row 3: Action Buttons (Link & Adopt) */}
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '4px', paddingTop: '8px', borderTop: '1px solid #F0ECE1', flexWrap: 'wrap', gap: '8px' }}>
+                            <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
+                              {cand.is_link && (
+                                <a
+                                  href={cand.is_link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{
+                                    fontSize: '11.5px',
+                                    color: '#2D6A4F',
+                                    fontWeight: 700,
+                                    textDecoration: 'none',
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '4px',
+                                  }}
+                                >
+                                  <ExternalLink size={12} />
+                                  <span>View Official BIS Standard</span>
+                                </a>
+                              )}
+                              <button
+                                type="button"
+                                onClick={() => onOpenStandardDetail(cand.is_number)}
+                                style={{
+                                  background: 'none',
+                                  border: 'none',
+                                  color: '#6E7A68',
+                                  fontSize: '11.5px',
+                                  cursor: 'pointer',
+                                  textDecoration: 'underline',
+                                }}
+                              >
+                                Inspect Full Scope & Tests
+                              </button>
+                            </div>
+
+                            {!isSelected && (
+                              <button
+                                type="button"
+                                onClick={() => onOverrideProductIS(product.product_id, cand.is_number)}
+                                style={{
+                                  padding: '4px 10px',
+                                  borderRadius: '4px',
+                                  border: '1px solid #36452F',
+                                  backgroundColor: '#FFFFFF',
+                                  color: '#36452F',
+                                  fontSize: '11px',
+                                  fontWeight: 700,
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                Select This Standard
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
 
               {/* Inline Override Input */}
               {expandedOverrideId === product.product_id && (

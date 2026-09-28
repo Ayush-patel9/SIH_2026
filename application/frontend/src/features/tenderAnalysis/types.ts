@@ -47,6 +47,11 @@ export interface StandardCandidate {
   is_withdrawn?: boolean;
   superseded_by?: string;
   qco_mandatory?: boolean;
+  is_link?: string;
+  portal_link?: string;
+  what_it_is?: string;
+  where_stated?: string;
+  gazette_notification?: string;
 }
 
 export interface MappedProductItem {
@@ -61,6 +66,10 @@ export interface MappedProductItem {
   confidence_score: number;
   all_candidates: StandardCandidate[];
   engineering_rationale: string;
+  what_it_is?: string;
+  where_stated?: string;
+  official_is_link?: string;
+  gazette_notification?: string;
   qco_mandate?: {
     mandatory: boolean;
     order_name: string;
@@ -86,6 +95,10 @@ export interface ClarifyResponse {
   revised_confidence: number;
   engineering_rationale: string;
   status: 'RESOLVED' | 'OVERRIDDEN';
+  what_it_is?: string;
+  where_stated?: string;
+  official_is_link?: string;
+  gazette_notification?: string;
 }
 
 export interface FinalizedClauseDiff {
@@ -138,6 +151,12 @@ export interface StandardDetailResponse {
   };
   normative_test_standards: string[];
   amendments: string[];
+  source_ia_url?: string;
+  portal_link?: string;
+  is_link?: string;
+  what_it_is?: string;
+  where_stated?: string;
+  gazette_notification?: string;
 }
 
 export interface TenderChatMessage {
