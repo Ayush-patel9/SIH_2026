@@ -2,15 +2,13 @@ import { useState, useEffect, useCallback } from 'react';
 import { ConfidenceBreakdownBar, KnowledgeGraphViewer, ReasoningTimeline } from './features/explainability';
 import { AuditTrailView, AuditStore } from './features/audit';
 import { FeedbackView } from './features/feedback';
-import { AlertsView, NotificationBell, AlertDrawer, AlertStore } from './features/alerts';
+import { NotificationBell, AlertDrawer, AlertStore } from './features/alerts';
 import { ComparisonView } from './features/comparison';
 import { QueryUnderstandingView, AmbiguityCard } from './features/queryUnderstanding';
 import { NITGeneratorView } from './features/nitGenerator';
 import { MCPView } from './features/mcp';
-import { DashboardView } from './features/dashboard';
 import { TenderUploadView } from './features/tenderUpload';
 import { TenderAnalysisDashboard } from './features/tenderAnalysis';
-import { IntegrationSandboxView } from './features/integrations';
 import { getAlerts, streamQueryOverSocket, queryStandards, connectAlertsSocket, type PipelineSocketEvent } from './api/standardsClient';
 import { useRole } from './store/roleStore';
 import { useSession } from './store/userStore';
@@ -283,14 +281,11 @@ const FEATURE_TITLES: Record<FeatureKey, string> = {
   graph3d: '22,011 Standards 3D Neural Mesh',
   audit: 'CVC Audit Trail & Legal Defense',
   feedback: 'Human Moderation Queue',
-  alerts: 'Gazette & Staleness Alerts',
   comparison: 'Standards Comparison',
   queryUnderstanding: 'Gemini Technical Intent NLU',
   nitGenerator: 'NIT Clause Builder',
   mcp: 'MCP Tooling Workbench',
   tenderUpload: 'Projects & Tenders',
-  dashboard: 'Ministry MIS Heatmap & Compliance',
-  integrations: 'GeM & CPPP National Sandbox',
   gazetteRadar: 'Gazette Radar Watchtower',
   timeMachine: 'Standards Historical Time-Machine',
   cagAudit: 'CAG Statutory Vigilance Simulator',
@@ -308,11 +303,8 @@ export const FEATURE_ROUTES: Record<FeatureKey, string> = {
   timeMachine: '/app/time-machine',
   nitGenerator: '/app/nit-generator',
   comparison: '/app/comparison',
-  dashboard: '/app/dashboard',
   mcp: '/app/mcp',
-  integrations: '/app/integrations',
   feedback: '/app/feedback',
-  alerts: '/app/alerts',
   queryUnderstanding: '/app/query-understanding',
 };
 
@@ -326,15 +318,12 @@ export function getFeatureFromPath(pathname: string, defaultFeature: FeatureKey 
   if (clean.includes('/cvc-audit') || clean.includes('/audit')) return 'audit';
   if (clean.includes('/cag-audit') || clean.includes('/cag')) return 'cagAudit';
   if (clean.includes('/standards-explorer') || clean.includes('/standards')) return 'explainability';
-  if (clean.includes('/dashboard')) return 'dashboard';
   if (clean.includes('/gazette-radar')) return 'gazetteRadar';
   if (clean.includes('/time-machine')) return 'timeMachine';
   if (clean.includes('/nit-generator')) return 'nitGenerator';
   if (clean.includes('/comparison')) return 'comparison';
   if (clean.includes('/mcp')) return 'mcp';
-  if (clean.includes('/integrations')) return 'integrations';
   if (clean.includes('/feedback')) return 'feedback';
-  if (clean.includes('/alerts')) return 'alerts';
   if (clean.includes('/query-understanding')) return 'queryUnderstanding';
   return defaultFeature;
 }
@@ -1230,10 +1219,6 @@ export default function App({ onLogout }: AppProps = {}) {
             <FeedbackView currentData={activeData} />
           )}
 
-          {/* Feature 04: Alerts View */}
-          {activeFeature === 'alerts' && (
-            <AlertsView currentData={activeData} />
-          )}
 
           {/* Feature 06: Standards Comparison */}
           {activeFeature === 'comparison' && (
@@ -1305,21 +1290,6 @@ export default function App({ onLogout }: AppProps = {}) {
             />
           )}
 
-          {/* Feature 11: MIS Heatmap */}
-          {activeFeature === 'dashboard' && (
-            <DashboardView
-              onSelectStandard={(isNum) => {
-                setSearchQuery(isNum);
-                handleAnalyze(isNum);
-                setActiveFeature('explainability');
-              }}
-            />
-          )}
-
-          {/* Feature 12: National Integrations */}
-          {activeFeature === 'integrations' && (
-            <IntegrationSandboxView />
-          )}
 
           {/* Feature 13: 3D Neural Knowledge Graph */}
           {activeFeature === 'graph3d' && (
@@ -1400,7 +1370,7 @@ export default function App({ onLogout }: AppProps = {}) {
         isOpen={isAlertDrawerOpen}
         onClose={() => setIsAlertDrawerOpen(false)}
         onSelectTender={() => {
-          setActiveFeature('alerts');
+          setActiveFeature('projects');
           setIsAlertDrawerOpen(false);
         }}
       />

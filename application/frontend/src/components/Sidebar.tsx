@@ -26,7 +26,7 @@ interface NavSection {
 
 function isItemAllowedForRole(key: FeatureKey, role: UserRole): boolean {
   if (role === 'VENDOR') {
-    const disallowed: FeatureKey[] = ['nitGenerator', 'cagAudit', 'integrations', 'dashboard', 'feedback', 'mcp'];
+    const disallowed: FeatureKey[] = ['nitGenerator', 'cagAudit', 'feedback', 'mcp'];
     return !disallowed.includes(key);
   }
   // OFFICER (Tender Authority & Technical Officer) has full access
@@ -131,25 +131,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           icon: '📡',
           badge: 'LIVE',
           description: 'Autonomous E-Gazette QCO Scraper',
-        },
-        {
-          key: 'dashboard',
-          label: 'Ministry Compliance MIS',
-          icon: '📈',
-          description: 'National Standards Adherence Heatmap',
-        },
-        {
-          key: 'alerts',
-          label: 'Gazette Alerts',
-          icon: '🚨',
-          badge: alertCount > 0 ? alertCount : undefined,
-          description: 'Supersession & Amendment Live Feed',
-        },
-        {
-          key: 'integrations',
-          label: 'GeM & CPPP Sandbox',
-          icon: '🏛️',
-          description: 'National E-Procurement Gateway API',
         },
         {
           key: 'mcp',

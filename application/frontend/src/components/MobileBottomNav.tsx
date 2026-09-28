@@ -6,14 +6,11 @@ export type FeatureKey =
   | 'explainability'
   | 'audit'
   | 'feedback'
-  | 'alerts'
   | 'comparison'
   | 'queryUnderstanding'
   | 'nitGenerator'
   | 'mcp'
-  | 'dashboard'
   | 'tenderUpload'
-  | 'integrations'
   | 'graph3d'
   | 'gazetteRadar'
   | 'timeMachine'
@@ -33,9 +30,7 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
   const navItems: { key: FeatureKey; label: string; icon: string; badge?: number }[] = [
     { key: 'explainability', label: 'Search', icon: '🔍' },
     { key: 'projects', label: 'Projects', icon: '📁' },
-    { key: 'alerts', label: 'Alerts', icon: '🔔', badge: alertCount },
     { key: 'nitGenerator', label: 'NIT Gen', icon: '📋' },
-    { key: 'integrations', label: 'GeM/CPPP', icon: '🛒' },
     { key: 'audit', label: 'Audit', icon: '📜' },
   ];
 

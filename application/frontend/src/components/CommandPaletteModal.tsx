@@ -90,16 +90,6 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       action: () => { onSelectFeature('feedback'); onClose(); },
     },
     {
-      id: 'feat-alerts',
-      category: 'Features',
-      title: '04. Proactive Staleness & Supersession Alerts',
-      subtitle: 'Tender impact matrix, amendment notices & live WebSocket alert broadcast',
-      shortcut: '⌘4',
-      icon: '🚨',
-      badge: currentFeature === 'alerts' ? 'Active' : undefined,
-      action: () => { onSelectFeature('alerts'); onClose(); },
-    },
-    {
       id: 'feat-compare',
       category: 'Features',
       title: '06. Standards Comparison & Conflict Resolver',
@@ -148,26 +138,6 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       icon: '📄',
       badge: currentFeature === 'projects' ? 'Active' : undefined,
       action: () => { onSelectFeature('projects'); onClose(); },
-    },
-    {
-      id: 'feat-dashboard',
-      category: 'Features',
-      title: '11. Analytics & Ministry MIS Heatmap',
-      subtitle: 'National compliance metrics, top cited standards & department heatmaps',
-      shortcut: '⌘D',
-      icon: '📊',
-      badge: currentFeature === 'dashboard' ? 'Active' : undefined,
-      action: () => { onSelectFeature('dashboard'); onClose(); },
-    },
-    {
-      id: 'feat-gem',
-      category: 'Features',
-      title: '12. GeM & CPPP National Sandbox',
-      subtitle: 'Direct e-Procurement API push/pull testing & statutory payload simulation',
-      shortcut: '⌘G',
-      icon: '🏛️',
-      badge: currentFeature === 'integrations' ? 'Active' : undefined,
-      action: () => { onSelectFeature('integrations'); onClose(); },
     },
 
     // Domains
