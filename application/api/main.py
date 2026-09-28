@@ -30,6 +30,7 @@ from application.api.routes.websocket import router as websocket_router
 from application.api.routes.knowledge_graph import router as knowledge_graph_router
 from application.api.routes.tender_pipeline import router as tender_pipeline_router
 from application.api.routes.projects import router as projects_router
+from application.api.routes.gazette import router as gazette_router
 from application.services.project_repository import init_db, seed_initial_projects_if_empty
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -75,6 +76,7 @@ app.include_router(websocket_router)
 app.include_router(knowledge_graph_router)
 app.include_router(tender_pipeline_router)
 app.include_router(projects_router)
+app.include_router(gazette_router)
 
 @app.get("/health", summary="Health Check")
 @app.get("/api/health", summary="Health Check (API Prefix)")
