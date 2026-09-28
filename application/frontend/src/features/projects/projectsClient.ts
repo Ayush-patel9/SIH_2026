@@ -114,6 +114,20 @@ export const projectsClient = {
   },
 
   /**
+   * Delete a procurement project from Neon PostgreSQL.
+   */
+  async deleteProject(projectId: string): Promise<boolean> {
+    const resp = await fetch(`${API_BASE_URL}/projects/${projectId}`, {
+      method: 'DELETE',
+    });
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      throw new Error(err.detail || `Failed to delete project: HTTP ${resp.status}`);
+    }
+    return true;
+  },
+
+  /**
    * Fetch chat history for a project.
    */
   async getChatHistory(projectId: string): Promise<any[]> {
@@ -127,3 +141,4 @@ export const projectsClient = {
     }
   },
 };
+

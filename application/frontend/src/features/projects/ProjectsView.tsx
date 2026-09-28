@@ -23,7 +23,8 @@ import {
   Layers,
   Check,
   HelpCircle,
-  RefreshCw
+  RefreshCw,
+  Trash2
 } from 'lucide-react';
 import { useSession } from '../../store/userStore';
 import type { UserRole } from '../../types';
@@ -231,6 +232,24 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
   const showToast = (msg: string) => {
     setToastMessage(msg);
     setTimeout(() => setToastMessage(null), 3500);
+  };
+
+  const handleDeleteProject = async (projectId: string, projectTitle: string, e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    const confirmed = window.confirm(`Are you sure you want to delete project "${projectTitle}"?\nThis will permanently remove the dossier, tender text, and all associated analyses.`);
+    if (!confirmed) return;
+
+    try {
+      await projectsClient.deleteProject(projectId);
+      showToast(`Project "${projectTitle}" deleted successfully.`);
+      if (selectedProjectId === projectId) {
+        setSelectedProjectId(null);
+      }
+      await loadProjects();
+    } catch (err: any) {
+      console.error('Failed to delete project:', err);
+      alert(`Failed to delete project: ${err.message || 'Unknown error'}`);
+    }
   };
 
   // Selected Project Object
@@ -498,49 +517,81 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
             </div>
           </div>
 
-          {/* Frozen / Status Badge */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            {selectedProject.hasDocument ? (
-              <div
+            {/* Frozen / Status Badge & Delete Button */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              {selectedProject.hasDocument ? (
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    background: 'rgba(54, 69, 47, 0.08)',
+                    border: '1px solid rgba(54, 69, 47, 0.25)',
+                    padding: '6px 12px',
+                    borderRadius: '6px',
+                    fontFamily: 'var(--font-data)',
+                    fontSize: '12px',
+                    color: 'var(--forest)',
+                    fontWeight: 700,
+                  }}
+                  title="Tender document is frozen for this project. Single-upload pipeline locked."
+                >
+                  <Lock size={14} />
+                  <span>DOCUMENT FROZEN · SINGLE PIPELINE</span>
+                </div>
+              ) : (
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    background: 'rgba(245, 158, 11, 0.12)',
+                    border: '1px solid rgba(245, 158, 11, 0.3)',
+                    padding: '6px 12px',
+                    borderRadius: '6px',
+                    fontFamily: 'var(--font-data)',
+                    fontSize: '12px',
+                    color: '#B45309',
+                    fontWeight: 700,
+                  }}
+                >
+                  <AlertTriangle size={14} />
+                  <span>DOCUMENT PENDING INGESTION</span>
+                </div>
+              )}
+
+              {/* Delete Project Action */}
+              <button
+                onClick={() => handleDeleteProject(selectedProject.id, selectedProject.title)}
+                title="Delete this project"
                 style={{
-                  display: 'flex',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '6px',
-                  background: 'rgba(54, 69, 47, 0.08)',
-                  border: '1px solid rgba(54, 69, 47, 0.25)',
+                  background: 'rgba(239, 68, 68, 0.08)',
+                  border: '1px solid rgba(239, 68, 68, 0.25)',
+                  color: '#DC2626',
                   padding: '6px 12px',
                   borderRadius: '6px',
                   fontFamily: 'var(--font-data)',
                   fontSize: '12px',
-                  color: 'var(--forest)',
-                  fontWeight: 700,
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease',
                 }}
-                title="Tender document is frozen for this project. Single-upload pipeline locked."
-              >
-                <Lock size={14} />
-                <span>DOCUMENT FROZEN · SINGLE PIPELINE</span>
-              </div>
-            ) : (
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '6px',
-                  background: 'rgba(245, 158, 11, 0.12)',
-                  border: '1px solid rgba(245, 158, 11, 0.3)',
-                  padding: '6px 12px',
-                  borderRadius: '6px',
-                  fontFamily: 'var(--font-data)',
-                  fontSize: '12px',
-                  color: '#B45309',
-                  fontWeight: 700,
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#DC2626';
+                  e.currentTarget.style.color = '#FFFFFF';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(239, 68, 68, 0.08)';
+                  e.currentTarget.style.color = '#DC2626';
                 }}
               >
-                <AlertTriangle size={14} />
-                <span>DOCUMENT PENDING INGESTION</span>
-              </div>
-            )}
-          </div>
+                <Trash2 size={13} />
+                <span>Delete Project</span>
+              </button>
+            </div>
         </div>
 
         {/* Project Content Area */}
@@ -1163,7 +1214,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
               }}
             >
               <div>
-                {/* Top Row: Department & Last Modified */}
+                {/* Top Row: Department & Last Modified & Delete */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
                   <span
                     style={{
@@ -1177,19 +1228,47 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                   >
                     {project.department.split('(')[1]?.replace(')', '') || project.department.slice(0, 18)}
                   </span>
-                  <span
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '4px',
-                      fontFamily: 'var(--font-data)',
-                      fontSize: '11px',
-                      color: 'var(--ink-muted)',
-                    }}
-                  >
-                    <Clock size={11} />
-                    {project.lastModified}
-                  </span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        fontFamily: 'var(--font-data)',
+                        fontSize: '11px',
+                        color: 'var(--ink-muted)',
+                      }}
+                    >
+                      <Clock size={11} />
+                      {project.lastModified}
+                    </span>
+                    <button
+                      onClick={(e) => handleDeleteProject(project.id, project.title, e)}
+                      title="Delete Project"
+                      style={{
+                        background: 'transparent',
+                        border: 'none',
+                        color: 'var(--ink-muted)',
+                        cursor: 'pointer',
+                        padding: '3px 5px',
+                        borderRadius: '4px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        transition: 'all 0.15s ease',
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = '#DC2626';
+                        e.currentTarget.style.background = 'rgba(239, 68, 68, 0.12)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = 'var(--ink-muted)';
+                        e.currentTarget.style.background = 'transparent';
+                      }}
+                    >
+                      <Trash2 size={13} />
+                    </button>
+                  </div>
                 </div>
 
                 {/* Project Title */}

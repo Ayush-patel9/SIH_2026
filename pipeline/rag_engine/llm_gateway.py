@@ -557,7 +557,7 @@ class LLMGateway:
             raise RuntimeError("LLM Gateway is in offline mode.")
 
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
-        fallback_models = [primary_model, "gemini-3.6-flash", "gemini-3.8-flash"]
+        fallback_models = [primary_model, "gemini-3.7-flash", "gemini-flash-latest", "gemini-3.5-flash", "gemini-pro-latest", "gemini-3.6-flash", "gemini-3.8-flash"]
         candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
         
         last_error = None
@@ -613,7 +613,7 @@ class LLMGateway:
             raise RuntimeError("LLM Gateway is in offline mode.")
 
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
-        fallback_models = [primary_model, "gemini-3.6-flash", "gemini-3.8-flash"]
+        fallback_models = [primary_model, "gemini-3.7-flash", "gemini-flash-latest", "gemini-3.5-flash", "gemini-pro-latest", "gemini-3.6-flash", "gemini-3.8-flash"]
         candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
         
         last_error = None

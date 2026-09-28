@@ -12,6 +12,7 @@ from application.services.project_repository import (
     list_projects,
     get_project,
     create_project,
+    delete_project,
     ingest_tender_document,
     save_pipeline_analysis,
     save_chat_message,
@@ -77,6 +78,17 @@ def get_single_project(project_id: str):
     return {
         "status": "SUCCESS",
         "project": proj
+    }
+
+@router.delete("/{project_id}", summary="Delete a procurement project")
+def remove_project(project_id: str):
+    """Delete a procurement project and all its associated dossiers from Neon PostgreSQL."""
+    deleted = delete_project(project_id)
+    if not deleted:
+        raise HTTPException(status_code=404, detail=f"Project {project_id} not found or could not be deleted.")
+    return {
+        "status": "SUCCESS",
+        "message": f"Project {project_id} successfully deleted from Neon database."
     }
 
 @router.post("/{project_id}/ingest", summary="Ingest tender document into project")

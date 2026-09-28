@@ -539,6 +539,34 @@ def create_project(title: str, nit_number: str, department: str, estimated_value
     finally:
         release_connection(conn)
 
+def delete_project(project_id: str) -> bool:
+    """Delete a procurement project and all its associated tenders, analyses, and chats."""
+    conn = None
+    try:
+        conn = get_connection()
+        if not conn:
+            initial_len = len(_LOCAL_PROJECTS)
+            _LOCAL_PROJECTS[:] = [p for p in _LOCAL_PROJECTS if p["id"] != project_id]
+            if project_id in _LOCAL_CHAT_MESSAGES:
+                del _LOCAL_CHAT_MESSAGES[project_id]
+            return len(_LOCAL_PROJECTS) < initial_len
+        cur = get_cursor(conn)
+        cur.execute("DELETE FROM projects WHERE id = %s RETURNING id", (project_id,))
+        deleted = cur.fetchone()
+        conn.commit()
+        # Also clean up local cache if present
+        _LOCAL_PROJECTS[:] = [p for p in _LOCAL_PROJECTS if p["id"] != project_id]
+        if project_id in _LOCAL_CHAT_MESSAGES:
+            del _LOCAL_CHAT_MESSAGES[project_id]
+        return bool(deleted)
+    except Exception as e:
+        if conn:
+            conn.rollback()
+        logger.error(f"Error deleting project {project_id}: {e}")
+        raise
+    finally:
+        release_connection(conn)
+
 def ingest_tender_document(project_id: str, document_text: str, filename: str, cloudinary_url: Optional[str] = None, cloudinary_public_id: Optional[str] = None) -> Dict[str, Any]:
     """Attach and freeze a tender document for a project."""
     conn = None
