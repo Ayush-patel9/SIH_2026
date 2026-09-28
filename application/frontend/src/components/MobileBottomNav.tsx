@@ -28,10 +28,10 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
   alertCount = 0,
 }) => {
   const navItems: { key: FeatureKey; label: string; icon: string; badge?: number }[] = [
-    { key: 'explainability', label: 'Search', icon: '🔍' },
     { key: 'projects', label: 'Projects', icon: '📁' },
-    { key: 'nitGenerator', label: 'NIT Gen', icon: '📋' },
-    { key: 'audit', label: 'Audit', icon: '📜' },
+    { key: 'explainability', label: 'Standards', icon: '🔍' },
+    { key: 'graph3d', label: 'Graph Mesh', icon: '🌐' },
+    { key: 'gazetteRadar', label: 'Radar', icon: '📡' },
   ];
 
   return (

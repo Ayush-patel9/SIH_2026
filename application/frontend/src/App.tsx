@@ -328,6 +328,16 @@ export function getFeatureFromPath(pathname: string, defaultFeature: FeatureKey 
   return defaultFeature;
 }
 
+export type ExplorerSubTab = 'dossier' | 'comparison' | 'audit' | 'nitGenerator';
+
+export function getSubTabFromPath(pathname: string): ExplorerSubTab {
+  const clean = pathname.toLowerCase();
+  if (clean.includes('comparison')) return 'comparison';
+  if (clean.includes('audit')) return 'audit';
+  if (clean.includes('nit')) return 'nitGenerator';
+  return 'dossier';
+}
+
 interface AppProps {
   onLogout?: () => void;
 }
@@ -341,9 +351,15 @@ export default function App({ onLogout }: AppProps = {}) {
   const [activeFeature, setActiveFeature] = useState<FeatureKey>(() => {
     return getFeatureFromPath(window.location.pathname, 'projects');
   });
+  const [explorerSubTab, setExplorerSubTab] = useState<ExplorerSubTab>(() => {
+    return getSubTabFromPath(window.location.pathname);
+  });
 
-  const navigateToFeature = useCallback((feat: FeatureKey, replace = false) => {
+  const navigateToFeature = useCallback((feat: FeatureKey, replace = false, subTab?: ExplorerSubTab) => {
     setActiveFeature(feat);
+    if (subTab) {
+      setExplorerSubTab(subTab);
+    }
     const targetUrl = FEATURE_ROUTES[feat] || '/app/projects';
     if (window.location.pathname !== targetUrl) {
       if (replace) {
@@ -358,6 +374,7 @@ export default function App({ onLogout }: AppProps = {}) {
     const handlePopState = () => {
       const feat = getFeatureFromPath(window.location.pathname, 'projects');
       setActiveFeature(feat);
+      setExplorerSubTab(getSubTabFromPath(window.location.pathname));
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
@@ -678,11 +695,13 @@ export default function App({ onLogout }: AppProps = {}) {
             <ProjectsView
               onNavigateToTenderUpload={() => navigateToFeature('tenderUpload')}
               onNavigateToNeuralMesh={(_std) => navigateToFeature('graph3d')}
-              onNavigateToAudit={(_id) => navigateToFeature('audit')}
+              onNavigateToAudit={(_id) => {
+                navigateToFeature('explainability', false, 'audit');
+              }}
             />
           )}
 
-          {/* Feature 01: Standards Explorer */}
+          {/* Feature 01: Standards Explorer (Consolidated with Comparison, CVC Audit Defense & NIT Generator) */}
           {activeFeature === 'explainability' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '22px', maxWidth: '1040px', margin: '0 auto', width: '100%' }}>
               {/* Friendly Hero */}
@@ -695,7 +714,7 @@ export default function App({ onLogout }: AppProps = {}) {
                   Indian Standards (IS) Explorer
                 </h1>
                 <p className="editorial-hero-subtitle" style={{ maxWidth: '640px', margin: '0 auto', fontSize: '13.5px' }}>
-                  Search 22,000+ Indian Standards to verify active specifications, mandatory ISI mark (QCO) rules, and laboratory testing protocols.
+                  Search 22,000+ Indian Standards to verify active specifications, mandatory ISI mark (QCO) rules, comparison matrices, CVC defense ledger, and NIT clause drafting.
                 </p>
               </div>
 
@@ -953,255 +972,403 @@ export default function App({ onLogout }: AppProps = {}) {
                 />
               )}
 
-              {/* Recommended Standard Primary Artboard Card */}
+              {/* Unified Standards Explorer Views (Dossier, Comparison, CVC Audit, NIT Generator) */}
               {!isLoading && activeData && (
                 <>
-                  <div className="workbench-card" style={{ display: 'flex', flexDirection: 'column', gap: '20px', padding: '28px 32px' }}>
-                    {/* Top Metadata Row */}
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
-                        <span className="code-monogram" style={{ fontSize: '13.5px', padding: '4px 10px' }}>
-                          {primary?.is_number}
-                        </span>
-                        <span className="concept-status-badge active">
-                          <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--emerald-pass)' }} />
-                          {primary?.status || 'ACTIVE STANDARD'}
-                        </span>
-                        {qco?.mandatory && (
-                          <span className="concept-status-badge" style={{ background: '#FFFBEB', color: '#B45309', border: '1px solid #FDE68A' }}>
-                            ⚖️ MANDATORY ISI MARK (QCO)
+                  {/* Top Sub-Navigation Tabs Bar (Styled mirroring Project / Tender View tabs) */}
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      padding: '6px',
+                      backgroundColor: '#F5F2EB',
+                      border: '1px solid #E5E0D4',
+                      borderRadius: '10px',
+                      overflowX: 'auto',
+                      boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
+                    }}
+                  >
+                    {[
+                      {
+                        id: 'dossier',
+                        label: 'Intelligence Dossier & Reasoning',
+                        icon: '🔍',
+                        badge: primary?.is_number || 'Active IS',
+                      },
+                      {
+                        id: 'comparison',
+                        label: 'Standards Comparison',
+                        icon: '⚖️',
+                        badge: `${(activeData.alternative_recommendations || []).length} Alternatives`,
+                      },
+                      {
+                        id: 'audit',
+                        label: 'CVC Audit Defense',
+                        icon: '🛡️',
+                        badge: 'SHA-256 Sealed',
+                      },
+                      {
+                        id: 'nitGenerator',
+                        label: 'NIT Clause Generator',
+                        icon: '📝',
+                        badge: 'GFR Rule 144',
+                      },
+                    ].map((tab) => {
+                      const isActive = explorerSubTab === tab.id;
+                      return (
+                        <button
+                          key={tab.id}
+                          type="button"
+                          onClick={() => setExplorerSubTab(tab.id as any)}
+                          style={{
+                            flex: 1,
+                            minWidth: 'max-content',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: '7px',
+                            padding: '9px 16px',
+                            borderRadius: '7px',
+                            border: isActive ? '1px solid #36452F' : '1px solid transparent',
+                            backgroundColor: isActive ? '#36452F' : 'transparent',
+                            color: isActive ? '#FFFEFB' : 'var(--ink-secondary, #44503E)',
+                            fontSize: '12.5px',
+                            fontWeight: isActive ? 700 : 500,
+                            cursor: 'pointer',
+                            transition: 'all 0.15s ease',
+                            fontFamily: 'var(--font-data, monospace)',
+                            boxShadow: isActive ? '0 2px 6px rgba(54,69,47,0.2)' : 'none',
+                          }}
+                        >
+                          <span style={{ fontSize: '14px' }}>{tab.icon}</span>
+                          <span>{tab.label}</span>
+                          <span
+                            style={{
+                              fontSize: '10px',
+                              padding: '2px 6px',
+                              borderRadius: '10px',
+                              backgroundColor: isActive ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.06)',
+                              color: isActive ? '#FFFFFF' : '#6E7A68',
+                              fontWeight: 600,
+                            }}
+                          >
+                            {tab.badge}
                           </span>
-                        )}
-                        <span style={{ fontFamily: 'var(--font-data)', fontSize: '11.5px', color: 'var(--ink-muted)' }}>
-                          Reaffirmed {primary?.year_published} · {primary?.latest_amendment || 'Base Issue'}
-                        </span>
-                      </div>
-
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'var(--surface-secondary)', padding: '5px 12px', borderRadius: 'var(--radius-full)', border: '1px solid var(--hairline)' }}>
-                        <span style={{ fontFamily: 'var(--font-ui)', fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 500 }}>
-                          Match Confidence:
-                        </span>
-                        <span style={{ fontFamily: 'var(--font-data)', fontSize: '13px', fontWeight: 700, color: 'var(--emerald-text)' }}>
-                          {primary?.confidence ? `${(primary.confidence * 100).toFixed(0)}%` : '98%'}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Standard Title */}
-                    <div>
-                      <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '22px', fontWeight: 700, color: 'var(--ink)', lineHeight: 1.35, margin: 0, letterSpacing: '-0.015em' }}>
-                        {primary?.title}
-                      </h1>
-                    </div>
-
-                    {/* Executive Plain-English Summary */}
-                    {primary?.scope_snippet && (
-                      <div style={{
-                        background: 'var(--surface-secondary)',
-                        borderLeft: '3px solid var(--olive-primary)',
-                        padding: '14px 18px',
-                        borderRadius: '0 var(--radius-sm) var(--radius-sm) 0',
-                        fontSize: '13.5px',
-                        color: 'var(--ink-secondary)',
-                        lineHeight: 1.6,
-                      }}>
-                        "{primary.scope_snippet}"
-                      </div>
-                    )}
-
-                    {/* Key Parameter Metric Grid */}
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px' }}>
-                      {getStandardDynamicMetrics(primary).map((metric, idx) => (
-                        <div key={idx} className="metric-mini-tile">
-                          <span className="label">{metric.label}</span>
-                          <span className="val">{metric.val}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Quick Action Buttons */}
-                    <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', paddingTop: '6px' }}>
-                      <button
-                        type="button"
-                        onClick={handleCopyClause}
-                        className="btn-primary"
-                      >
-                        <span>{copiedClause ? '✓ Tender Clause Copied' : '📋 Copy Tender Clause'}</span>
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setActiveFeature('audit')}
-                        className="btn-secondary"
-                      >
-                        <span>🛡️ View CVC Audit Defense</span>
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setActiveFeature('comparison')}
-                        className="btn-secondary"
-                      >
-                        <span>⚖️ Compare Allied Standards</span>
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setIsAuthorityDrawerOpen(true)}
-                        className="btn-secondary"
-                        style={{ background: 'var(--olive-leaf)', color: 'var(--olive-primary)', borderColor: 'rgba(54,69,47,0.25)' }}
-                      >
-                        <span>🤖 Ask BIS Authority AI</span>
-                      </button>
-                    </div>
+                        </button>
+                      );
+                    })}
                   </div>
 
-                  {/* Deep-Dive Intelligence & Provenance Card */}
-                  <div className="workbench-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px', padding: '24px 28px' }}>
-                    <div className="workbench-card-header" style={{ marginBottom: '8px' }}>
-                      <div>
-                        <h2 className="workbench-card-title" style={{ fontSize: '17px' }}>
-                          Normative Intelligence & Reasoning Trail
-                        </h2>
-                        <div className="workbench-card-subtitle">
-                          Self-reflective CRAG validation, normative references, and SHA-256 cryptographic audit logs
-                        </div>
-                      </div>
-                    </div>
+                  {/* Sub-View 1: Primary Intelligence Dossier & Deep-Dive Reasoning */}
+                  {explorerSubTab === 'dossier' && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+                      {/* Recommended Standard Primary Artboard Card */}
+                      <div className="workbench-card" style={{ display: 'flex', flexDirection: 'column', gap: '20px', padding: '28px 32px' }}>
+                        {/* Top Metadata Row */}
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+                            <span className="code-monogram" style={{ fontSize: '13.5px', padding: '4px 10px' }}>
+                              {primary?.is_number}
+                            </span>
+                            <span className="concept-status-badge active">
+                              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--emerald-pass)' }} />
+                              {primary?.status || 'ACTIVE STANDARD'}
+                            </span>
+                            {qco?.mandatory && (
+                              <span className="concept-status-badge" style={{ background: '#FFFBEB', color: '#B45309', border: '1px solid #FDE68A' }}>
+                                ⚖️ MANDATORY ISI MARK (QCO)
+                              </span>
+                            )}
+                            <span style={{ fontFamily: 'var(--font-data)', fontSize: '11.5px', color: 'var(--ink-muted)' }}>
+                              Reaffirmed {primary?.year_published} · {primary?.latest_amendment || 'Base Issue'}
+                            </span>
+                          </div>
 
-                    {/* Structured Tab Bar for Deep-Dive */}
-                    <div>
-                      <div className="detail-tab-bar">
-                        <button
-                          type="button"
-                          className={`detail-tab-btn ${activeTab === 'reasoning' ? 'active' : ''}`}
-                          onClick={() => setActiveTab('reasoning')}
-                        >
-                          Reasoning Trail & CRAG Verifier
-                        </button>
-                        <button
-                          type="button"
-                          className={`detail-tab-btn ${activeTab === 'allied' ? 'active' : ''}`}
-                          onClick={() => setActiveTab('allied')}
-                        >
-                          Allied Test Standards ({activeData.allied_standards.length})
-                        </button>
-                        <button
-                          type="button"
-                          className={`detail-tab-btn ${activeTab === 'audit' ? 'active' : ''}`}
-                          onClick={() => setActiveTab('audit')}
-                        >
-                          Cryptographic Proof (SHA-256)
-                        </button>
-                        <button
-                          type="button"
-                          className={`detail-tab-btn ${activeTab === 'graph' ? 'active' : ''}`}
-                          onClick={() => setActiveTab('graph')}
-                        >
-                          Knowledge Graph Lineage
-                        </button>
-                        <button
-                          type="button"
-                          className={`detail-tab-btn ${activeTab === 'role_view' ? 'active' : ''}`}
-                          onClick={() => setActiveTab('role_view')}
-                          style={{
-                            fontWeight: 600,
-                            borderColor: activeTab === 'role_view' ? 'var(--collapse-cobalt)' : undefined,
-                          }}
-                        >
-                          {role === 'OFFICER' && '🏛️ Tender Authority & Drafting'}
-                          {role === 'VENDOR' && '🏭 Industrial Vendor Portal'}
-                        </button>
-                      </div>
-
-                      {/* Tab Content 1: Reasoning Trail */}
-                      {activeTab === 'reasoning' && (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
-                          <ConfidenceBreakdownBar breakdown={primary?.confidence_breakdown as any} confidence={primary?.confidence} />
-                          <ReasoningTimeline steps={activeData.reasoning_trace} />
-                        </div>
-                      )}
-
-                      {/* Tab Content 2: Allied Test Standards */}
-                      {activeTab === 'allied' && (
-                        <div style={{ animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                            {activeData.allied_standards.map((s, idx) => (
-                              <div
-                                key={idx}
-                                style={{
-                                  display: 'flex',
-                                  justifyContent: 'space-between',
-                                  alignItems: 'center',
-                                  padding: '12px 16px',
-                                  background: 'var(--surface-secondary)',
-                                  borderRadius: 'var(--radius-sm)',
-                                  border: '1px solid var(--hairline)',
-                                }}
-                              >
-                                <div>
-                                  <span className="code-monogram" style={{ marginRight: '10px' }}>{s.is_number}</span>
-                                  <span style={{ fontSize: '13.5px', fontWeight: 600, color: 'var(--ink)' }}>{s.title}</span>
-                                </div>
-                                <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)' }}>
-                                  {s.relation_type.replace(/_/g, ' ')}
-                                </span>
-                              </div>
-                            ))}
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'var(--surface-secondary)', padding: '5px 12px', borderRadius: 'var(--radius-full)', border: '1px solid var(--hairline)' }}>
+                            <span style={{ fontFamily: 'var(--font-ui)', fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 500 }}>
+                              Match Confidence:
+                            </span>
+                            <span style={{ fontFamily: 'var(--font-data)', fontSize: '13px', fontWeight: 700, color: 'var(--emerald-text)' }}>
+                              {primary?.confidence ? `${(primary.confidence * 100).toFixed(0)}%` : '98%'}
+                            </span>
                           </div>
                         </div>
-                      )}
 
-                      {/* Tab Content 3: Cryptographic Proof */}
-                      {activeTab === 'audit' && (
-                        <div
-                          style={{
-                            padding: '18px 20px',
+                        {/* Standard Title */}
+                        <div>
+                          <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '22px', fontWeight: 700, color: 'var(--ink)', lineHeight: 1.35, margin: 0, letterSpacing: '-0.015em' }}>
+                            {primary?.title}
+                          </h1>
+                        </div>
+
+                        {/* Executive Plain-English Summary */}
+                        {primary?.scope_snippet && (
+                          <div style={{
                             background: 'var(--surface-secondary)',
-                            borderRadius: 'var(--radius-sm)',
-                            border: '1px solid var(--hairline)',
-                            animation: 'fadeSlideUp 0.15s ease',
-                          }}
-                        >
-                          <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', marginBottom: '6px', fontWeight: 700 }}>
-                            IMMUTABLE AUDIT RECORD & CVC LEGAL HASH
+                            borderLeft: '3px solid var(--olive-primary)',
+                            padding: '14px 18px',
+                            borderRadius: '0 var(--radius-sm) var(--radius-sm) 0',
+                            fontSize: '13.5px',
+                            color: 'var(--ink-secondary)',
+                            lineHeight: 1.6,
+                          }}>
+                            "{primary.scope_snippet}"
                           </div>
-                          <div style={{ fontFamily: 'var(--font-data)', fontSize: '13px', color: 'var(--ink)', wordBreak: 'break-all', lineHeight: 1.5 }}>
-                            {audit?.audit_hash || activeData.meta.audit_reference_hash}
-                          </div>
-                          <div style={{ fontSize: '12px', color: 'var(--ink-muted)', marginTop: '10px' }}>
-                            Timestamp: {audit?.timestamp || activeData.meta.timestamp} · Primary Reference: {primary?.is_number}
-                          </div>
-                        </div>
-                      )}
+                        )}
 
-                      {/* Tab Content 4: Knowledge Graph */}
-                      {activeTab === 'graph' && (
-                        <div style={{ animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
-                          <KnowledgeGraphViewer data={activeData} edges={activeData.graph_path} primaryStandard={primary?.is_number} />
+                        {/* Key Parameter Metric Grid */}
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px' }}>
+                          {getStandardDynamicMetrics(primary).map((metric, idx) => (
+                            <div key={idx} className="metric-mini-tile">
+                              <span className="label">{metric.label}</span>
+                              <span className="val">{metric.val}</span>
+                            </div>
+                          ))}
                         </div>
-                      )}
 
-                      {/* Tab Content 5: Role-Specific Workbench Panel */}
-                      {activeTab === 'role_view' && (
-                        <div style={{ animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
-                          {role === 'OFFICER' && (
-                            <TenderAuthorityPanel
-                              data={activeData}
-                              onOpenNITGenerator={() => setActiveFeature('nitGenerator')}
-                              onOpenCertificate={() => setActiveFeature('audit')}
-                            />
+                        {/* Quick Action Buttons */}
+                        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', paddingTop: '6px' }}>
+                          <button
+                            type="button"
+                            onClick={handleCopyClause}
+                            className="btn-primary"
+                          >
+                            <span>{copiedClause ? '✓ Tender Clause Copied' : '📋 Copy Tender Clause'}</span>
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setExplorerSubTab('audit')}
+                            className="btn-secondary"
+                          >
+                            <span>🛡️ View CVC Audit Defense</span>
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setExplorerSubTab('comparison')}
+                            className="btn-secondary"
+                          >
+                            <span>⚖️ Compare Allied Standards</span>
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setExplorerSubTab('nitGenerator')}
+                            className="btn-secondary"
+                          >
+                            <span>📝 Draft NIT Clause</span>
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setIsAuthorityDrawerOpen(true)}
+                            className="btn-secondary"
+                            style={{ background: 'var(--olive-leaf)', color: 'var(--olive-primary)', borderColor: 'rgba(54,69,47,0.25)' }}
+                          >
+                            <span>🤖 Ask BIS Authority AI</span>
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Deep-Dive Intelligence & Provenance Card */}
+                      <div className="workbench-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px', padding: '24px 28px' }}>
+                        <div className="workbench-card-header" style={{ marginBottom: '8px' }}>
+                          <div>
+                            <h2 className="workbench-card-title" style={{ fontSize: '17px' }}>
+                              Normative Intelligence & Reasoning Trail
+                            </h2>
+                            <div className="workbench-card-subtitle">
+                              Self-reflective CRAG validation, normative references, and SHA-256 cryptographic audit logs
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Structured Tab Bar for Deep-Dive */}
+                        <div>
+                          <div className="detail-tab-bar">
+                            <button
+                              type="button"
+                              className={`detail-tab-btn ${activeTab === 'reasoning' ? 'active' : ''}`}
+                              onClick={() => setActiveTab('reasoning')}
+                            >
+                              Reasoning Trail & CRAG Verifier
+                            </button>
+                            <button
+                              type="button"
+                              className={`detail-tab-btn ${activeTab === 'allied' ? 'active' : ''}`}
+                              onClick={() => setActiveTab('allied')}
+                            >
+                              Allied Test Standards ({activeData.allied_standards.length})
+                            </button>
+                            <button
+                              type="button"
+                              className={`detail-tab-btn ${activeTab === 'audit' ? 'active' : ''}`}
+                              onClick={() => setActiveTab('audit')}
+                            >
+                              Cryptographic Proof (SHA-256)
+                            </button>
+                            <button
+                              type="button"
+                              className={`detail-tab-btn ${activeTab === 'graph' ? 'active' : ''}`}
+                              onClick={() => setActiveTab('graph')}
+                            >
+                              Knowledge Graph Lineage
+                            </button>
+                            <button
+                              type="button"
+                              className={`detail-tab-btn ${activeTab === 'role_view' ? 'active' : ''}`}
+                              onClick={() => setActiveTab('role_view')}
+                              style={{
+                                fontWeight: 600,
+                                borderColor: activeTab === 'role_view' ? 'var(--collapse-cobalt)' : undefined,
+                              }}
+                            >
+                              {role === 'OFFICER' && '🏛️ Tender Authority & Drafting'}
+                              {role === 'VENDOR' && '🏭 Industrial Vendor Portal'}
+                            </button>
+                          </div>
+
+                          {/* Tab Content 1: Reasoning Trail */}
+                          {activeTab === 'reasoning' && (
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
+                              <ConfidenceBreakdownBar breakdown={primary?.confidence_breakdown as any} confidence={primary?.confidence} />
+                              <ReasoningTimeline steps={activeData.reasoning_trace} />
+                            </div>
                           )}
-                          {role === 'VENDOR' && (
-                            <VendorPanel data={activeData} />
+
+                          {/* Tab Content 2: Allied Test Standards */}
+                          {activeTab === 'allied' && (
+                            <div style={{ animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
+                              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                                {activeData.allied_standards.map((s, idx) => (
+                                  <div
+                                    key={idx}
+                                    style={{
+                                      display: 'flex',
+                                      justifyContent: 'space-between',
+                                      alignItems: 'center',
+                                      padding: '12px 16px',
+                                      background: 'var(--surface-secondary)',
+                                      borderRadius: 'var(--radius-sm)',
+                                      border: '1px solid var(--hairline)',
+                                    }}
+                                  >
+                                    <div>
+                                      <span className="code-monogram" style={{ marginRight: '10px' }}>{s.is_number}</span>
+                                      <span style={{ fontSize: '13.5px', fontWeight: 600, color: 'var(--ink)' }}>{s.title}</span>
+                                    </div>
+                                    <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)' }}>
+                                      {s.relation_type.replace(/_/g, ' ')}
+                                    </span>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Tab Content 3: Cryptographic Proof */}
+                          {activeTab === 'audit' && (
+                            <div
+                              style={{
+                                padding: '18px 20px',
+                                background: 'var(--surface-secondary)',
+                                borderRadius: 'var(--radius-sm)',
+                                border: '1px solid var(--hairline)',
+                                animation: 'fadeSlideUp 0.15s ease',
+                              }}
+                            >
+                              <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', marginBottom: '6px', fontWeight: 700 }}>
+                                IMMUTABLE AUDIT RECORD & CVC LEGAL HASH
+                              </div>
+                              <div style={{ fontFamily: 'var(--font-data)', fontSize: '13px', color: 'var(--ink)', wordBreak: 'break-all', lineHeight: 1.5 }}>
+                                {audit?.audit_hash || activeData.meta.audit_reference_hash}
+                              </div>
+                              <div style={{ fontSize: '12px', color: 'var(--ink-muted)', marginTop: '10px' }}>
+                                Timestamp: {audit?.timestamp || activeData.meta.timestamp} · Primary Reference: {primary?.is_number}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Tab Content 4: Knowledge Graph */}
+                          {activeTab === 'graph' && (
+                            <div style={{ animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
+                              <KnowledgeGraphViewer data={activeData} edges={activeData.graph_path} primaryStandard={primary?.is_number} />
+                            </div>
+                          )}
+
+                          {/* Tab Content 5: Role-Specific Workbench Panel */}
+                          {activeTab === 'role_view' && (
+                            <div style={{ animation: 'fadeSlideUp 0.15s ease', paddingTop: '6px' }}>
+                              {role === 'OFFICER' && (
+                                <TenderAuthorityPanel
+                                  data={activeData}
+                                  onOpenNITGenerator={() => setExplorerSubTab('nitGenerator')}
+                                  onOpenCertificate={() => setExplorerSubTab('audit')}
+                                />
+                              )}
+                              {role === 'VENDOR' && (
+                                <VendorPanel data={activeData} />
+                              )}
+                            </div>
                           )}
                         </div>
-                      )}
+                      </div>
                     </div>
-                  </div>
+                  )}
+
+                  {/* Sub-View 2: Standards Comparison */}
+                  {explorerSubTab === 'comparison' && (
+                    <div style={{ animation: 'fadeSlideUp 0.15s ease' }}>
+                      <ComparisonView
+                        currentData={activeData}
+                        onPromotePrimary={(alt) => {
+                          setActiveData((prev) => {
+                            if (!prev) return null;
+                            return {
+                              ...prev,
+                              primary_recommendation: {
+                                ...prev.primary_recommendation,
+                                is_number: alt.is_number,
+                                title: alt.title,
+                                status: alt.status as any,
+                                year_published: alt.year_published,
+                                latest_amendment: alt.latest_amendment || null,
+                                confidence: alt.confidence,
+                                scope_snippet: alt.scope_snippet,
+                                certification: alt.certification || prev.primary_recommendation.certification,
+                              },
+                            };
+                          });
+                        }}
+                      />
+                    </div>
+                  )}
+
+                  {/* Sub-View 3: CVC Audit Defense Ledger */}
+                  {explorerSubTab === 'audit' && (
+                    <div style={{ animation: 'fadeSlideUp 0.15s ease' }}>
+                      <AuditTrailView
+                        currentData={activeData}
+                        onSelectRecord={(rec) => {
+                          setActiveData(rec);
+                          if (rec?.primary_recommendation?.is_number) {
+                            setSearchQuery(rec.primary_recommendation.title || rec.primary_recommendation.is_number);
+                          }
+                        }}
+                      />
+                    </div>
+                  )}
+
+                  {/* Sub-View 4: NIT Clause Generator */}
+                  {explorerSubTab === 'nitGenerator' && (
+                    <div style={{ animation: 'fadeSlideUp 0.15s ease' }}>
+                      <NITGeneratorView currentData={activeData} />
+                    </div>
+                  )}
                 </>
               )}
             </div>
           )}
 
-          {/* Feature 02: Full-Width Audit Trail */}
+          {/* Feature 02: Standalone Full-Width Audit Trail */}
           {activeFeature === 'audit' && (
             <AuditTrailView
               currentData={activeData}
@@ -1219,8 +1386,7 @@ export default function App({ onLogout }: AppProps = {}) {
             <FeedbackView currentData={activeData} />
           )}
 
-
-          {/* Feature 06: Standards Comparison */}
+          {/* Feature 06: Standalone Standards Comparison */}
           {activeFeature === 'comparison' && (
             <ComparisonView
               currentData={activeData}
@@ -1254,7 +1420,7 @@ export default function App({ onLogout }: AppProps = {}) {
             />
           )}
 
-          {/* Feature 08: NIT Clause Generator */}
+          {/* Feature 08: Standalone NIT Clause Generator */}
           {activeFeature === 'nitGenerator' && (
             <NITGeneratorView currentData={activeData} />
           )}

@@ -26,7 +26,7 @@ interface NavSection {
 
 function isItemAllowedForRole(key: FeatureKey, role: UserRole): boolean {
   if (role === 'VENDOR') {
-    const disallowed: FeatureKey[] = ['nitGenerator', 'cagAudit', 'feedback', 'mcp'];
+    const disallowed: FeatureKey[] = ['cagAudit', 'feedback', 'mcp'];
     return !disallowed.includes(key);
   }
   // OFFICER (Tender Authority & Technical Officer) has full access
@@ -62,7 +62,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           key: 'explainability',
           label: 'Standards Explorer',
           icon: '🔍',
-          description: 'Search & Self-Correcting Graph Reasoning',
+          description: 'Search, Reasoning, Comparison, Audit & NIT Gen',
         },
         {
           key: 'graph3d',
@@ -78,12 +78,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           description: 'Gemini Technical Extraction & Normalization',
         },
         {
-          key: 'comparison',
-          label: 'Standards Comparison',
-          icon: '⚖️',
-          description: 'Diff & Allied Taxonomy Harmonization',
-        },
-        {
           key: 'timeMachine',
           label: 'Historical Time-Machine',
           icon: '⏳',
@@ -94,19 +88,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
     {
       title: 'AUDIT & TENDER DEFENSE',
       items: [
-        {
-          key: 'audit',
-          label: 'CVC Audit Defense',
-          icon: '🛡️',
-          badge: 'SHA-256',
-          description: 'CVC Legal Defense & Sealed Audit Ledger',
-        },
-        {
-          key: 'nitGenerator',
-          label: 'NIT Clause Generator',
-          icon: '📝',
-          description: 'Draft Statutory Specifications & Clauses',
-        },
         {
           key: 'cagAudit',
           label: 'CAG Vigilance Simulator',

@@ -6,6 +6,7 @@ interface CommandPaletteProps {
   isOpen: boolean;
   onClose: () => void;
   onSelectFeature: (feature: FeatureKey) => void;
+  onSelectExplorerSubTab?: (tab: 'dossier' | 'comparison' | 'audit' | 'nitGenerator') => void;
   onSelectDomain: (domain: string) => void;
   onSelectRole: (role: UserRole) => void;
   onOpenDataSovereignty: () => void;
@@ -28,6 +29,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
   isOpen,
   onClose,
   onSelectFeature,
+  onSelectExplorerSubTab,
   onSelectDomain,
   onSelectRole,
   onOpenDataSovereignty,
@@ -62,22 +64,22 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
     {
       id: 'feat-explain',
       category: 'Features',
-      title: '01. Explainability & Knowledge Graph',
+      title: '01. Standards Explorer & Reasoning',
       subtitle: 'Visible reasoning trail, graph traversal path & plain language toggle',
       shortcut: '⌘1',
-      icon: '🧠',
+      icon: '🔍',
       badge: currentFeature === 'explainability' ? 'Active' : undefined,
-      action: () => { onSelectFeature('explainability'); onClose(); },
+      action: () => { onSelectFeature('explainability'); onSelectExplorerSubTab?.('dossier'); onClose(); },
     },
     {
       id: 'feat-audit',
       category: 'Features',
-      title: '02. Audit Trail & Legal Defensibility',
+      title: '02. CVC Audit Trail & Legal Defensibility',
       subtitle: 'SHA-256 sealed audit records, RTI defense & CVC compliance certificates',
       shortcut: '⌘2',
       icon: '🛡️',
       badge: currentFeature === 'audit' ? 'Active' : undefined,
-      action: () => { onSelectFeature('audit'); onClose(); },
+      action: () => { onSelectFeature('explainability'); onSelectExplorerSubTab?.('audit'); onClose(); },
     },
     {
       id: 'feat-feedback',
@@ -92,37 +94,37 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
     {
       id: 'feat-compare',
       category: 'Features',
-      title: '06. Standards Comparison & Conflict Resolver',
+      title: '04. Standards Comparison & Conflict Resolver',
       subtitle: 'Side-by-side comparison, test method matrix & parameter conflict checks',
       shortcut: '⌘6',
       icon: '⚖️',
       badge: currentFeature === 'comparison' ? 'Active' : undefined,
-      action: () => { onSelectFeature('comparison'); onClose(); },
+      action: () => { onSelectFeature('explainability'); onSelectExplorerSubTab?.('comparison'); onClose(); },
     },
     {
       id: 'feat-nlu',
       category: 'Features',
-      title: '07. Query NLU & Intent Disambiguation',
+      title: '05. Query NLU & Intent Disambiguation',
       subtitle: 'AI Call #1 Gemini Flash entity extraction, domain classification & spelling normalizer',
       shortcut: '⌘7',
-      icon: '🔍',
+      icon: '🧠',
       badge: currentFeature === 'queryUnderstanding' ? 'Active' : undefined,
       action: () => { onSelectFeature('queryUnderstanding'); onClose(); },
     },
     {
       id: 'feat-nit',
       category: 'Features',
-      title: '08. NIT Draft Clause Generator',
+      title: '06. NIT Draft Clause Generator',
       subtitle: 'Generate legally defensible Notice Inviting Tender clauses & export to PDF/DOCX',
       shortcut: '⌘8',
       icon: '📝',
       badge: currentFeature === 'nitGenerator' ? 'Active' : undefined,
-      action: () => { onSelectFeature('nitGenerator'); onClose(); },
+      action: () => { onSelectFeature('explainability'); onSelectExplorerSubTab?.('nitGenerator'); onClose(); },
     },
     {
       id: 'feat-mcp',
       category: 'Features',
-      title: '09. Model Context Protocol (MCP) Server',
+      title: '07. Model Context Protocol (MCP) Server',
       subtitle: 'Statutory tool inspector, JSON-RPC schema & AI assistant live runner',
       shortcut: '⌘9',
       icon: '⚡',
