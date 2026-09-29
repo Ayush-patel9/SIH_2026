@@ -220,7 +220,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
       setNewTitle('');
       setNewNitNumber('');
       setNewEstimatedValue('');
-      showToast(`✓ Project "${newProject.title.slice(0, 30)}..." committed to Neon PostgreSQL.`);
+      showToast(`Project "${newProject.title.slice(0, 30)}..." committed to Neon PostgreSQL.`);
     } catch (err: any) {
       alert(`Error creating project: ${err.message}`);
     }
@@ -278,7 +278,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
         })
       );
 
-      showToast(`✓ Tender document frozen & committed to Neon PostgreSQL.`);
+      showToast(`Tender document frozen & committed to Neon PostgreSQL.`);
     } catch (err: any) {
       alert(`Failed to save document to Neon DB: ${err.message}`);
     }
@@ -300,15 +300,15 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
         if (uploadRes && uploadRes.cloudinary_url) {
           setUploadedPdfUrl(uploadRes.cloudinary_url);
           setPasteContent(`[Uploaded Tender PDF Specification: ${file.name}]\nCloudinary URL: ${uploadRes.cloudinary_url}\nSize: ${Math.round(uploadRes.bytes / 1024)} KB`);
-          showToast(`✓ "${file.name}" uploaded to Cloudinary! Click "Ingest & Save" to proceed.`);
+          showToast(`"${file.name}" uploaded to Cloudinary! Click "Ingest & Save" to proceed.`);
         } else {
           setPasteContent(`[Tender PDF Specification: ${file.name}]`);
-          showToast(`✓ "${file.name}" registered for ingestion.`);
+          showToast(`"${file.name}" registered for ingestion.`);
         }
       } catch (err: any) {
         console.warn('Cloudinary upload notice:', err);
         setPasteContent(`[Tender PDF Specification: ${file.name}]`);
-        showToast(`✓ "${file.name}" loaded for ingestion.`);
+        showToast(`"${file.name}" loaded for ingestion.`);
       } finally {
         setIsExtractingPdf(false);
       }
@@ -1014,9 +1014,9 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
             <button
               type="button"
               onClick={() => setSearchQuery('')}
-              style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', fontSize: '11px' }}
+              style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', display: 'flex', alignItems: 'center' }}
             >
-              ✕
+              <X size={12} />
             </button>
           )}
         </div>
@@ -1097,7 +1097,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
             background: 'var(--surface)',
           }}
         >
-          <div style={{ fontSize: '40px' }}>📂</div>
+          <FolderKanban size={40} style={{ color: 'var(--ink-muted)' }} />
           <h3 style={{ fontFamily: 'var(--font-ui)', fontSize: '18px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>
             No Tenders Match the Current Filter
           </h3>

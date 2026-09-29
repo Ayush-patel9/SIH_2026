@@ -735,7 +735,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ fontSize: '18px' }}>🇮🇳</span>
+              <Building2 size={16} color="var(--olive-primary)" />
               <span style={{ fontSize: '12.5px', color: '#44503E', fontWeight: 600 }}>
                 Smart India Hackathon 2026 · Bureau of Indian Standards (BIS) Problem Statement
               </span>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Flag, ShieldCheck } from 'lucide-react';
 import { FeedbackStore } from './feedbackStore';
 import { computeTrustScore } from './trustScoreCalc';
 
@@ -26,12 +27,12 @@ export const FlagButton: React.FC<FlagButtonProps> = ({
       <button
         type="button"
         className="btn-secondary"
-        style={{ fontSize: '11px', padding: '4px 12px', borderColor: 'var(--hairline)' }}
+        style={{ fontSize: '11px', padding: '4px 12px', borderColor: 'var(--hairline)', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
         onClick={() => onOpenModal({ queryId, recommendationId, isNumber })}
         title="Submit an officer correction or report an inaccurate standard citation"
       >
-        <span style={{ color: 'var(--signal-amber)', marginRight: '4px' }}>⚑</span>
-        Flag Recommendation
+        <Flag size={12} style={{ color: 'var(--signal-amber)' }} />
+        <span>Flag Recommendation</span>
       </button>
 
       {trust && (
@@ -58,10 +59,14 @@ export const FlagButton: React.FC<FlagButtonProps> = ({
                 : 'rgba(217, 119, 6, 0.25)'
             }`,
             fontSize: '10px',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '4px',
           }}
           title={`${trust.verifiedCorrectCount} verified corrections, ${trust.pendingCount} pending reviews`}
         >
-          🛡️ TRUST SCORE: {trust.score}% ({trust.badgeLevel.replace(/_/g, ' ')})
+          <ShieldCheck size={11} />
+          <span>TRUST SCORE: {trust.score}% ({trust.badgeLevel.replace(/_/g, ' ')})</span>
         </span>
       )}
     </div>

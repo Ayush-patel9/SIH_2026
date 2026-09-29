@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Plus, Loader2 } from 'lucide-react';
+import { Search, Plus, Loader2, Scale, AlertTriangle, X, CheckCircle2 } from 'lucide-react';
 import type { PrimaryRecommendation, AlternativeRecommendation } from '../../types';
 import {
   COMPARISON_ATTRIBUTES,
@@ -121,9 +121,9 @@ export const StandardsComparator: React.FC<StandardsComparatorProps> = ({
               type="button"
               className={`palette-btn ${showOnlyConflicts ? 'selected' : ''}`}
               onClick={() => setShowOnlyConflicts(!showOnlyConflicts)}
-              style={{ fontSize: '11px', display: 'flex', alignItems: 'center', gap: '4px' }}
+              style={{ fontSize: '11px', display: 'flex', alignItems: 'center', gap: '5px' }}
             >
-              <span>⚠️</span>
+              <AlertTriangle size={13} />
               <span>Show Divergences Only ({conflictCount})</span>
             </button>
           )}
@@ -204,7 +204,9 @@ export const StandardsComparator: React.FC<StandardsComparatorProps> = ({
             gap: '8px',
           }}
         >
-          <div style={{ fontSize: '26px' }}>⚖️</div>
+          <div style={{ marginBottom: '4px' }}>
+            <Scale size={28} style={{ color: 'var(--ink-muted)' }} />
+          </div>
           <h3 style={{ fontFamily: 'var(--font-ui)', fontSize: '15px', fontWeight: 600, color: 'var(--ink)', margin: 0 }}>
             No Secondary Standard Selected for Comparison
           </h3>
@@ -341,12 +343,13 @@ export const StandardsComparator: React.FC<StandardsComparatorProps> = ({
                                 border: 'none',
                                 cursor: 'pointer',
                                 color: 'var(--ink-muted)',
-                                fontSize: '13px',
+                                display: 'flex',
+                                alignItems: 'center',
                                 padding: '0 4px',
                               }}
                               title="Remove column"
                             >
-                              ✕
+                              <X size={12} />
                             </button>
                           )}
                         </div>
@@ -400,7 +403,7 @@ export const StandardsComparator: React.FC<StandardsComparatorProps> = ({
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      {hasConflict && <span style={{ fontSize: '11px', color: '#B45309' }}>⚠️</span>}
+                      {hasConflict && <AlertTriangle size={11} color="#B45309" />}
                       <span>{attr.label}</span>
                     </div>
                   </td>
@@ -421,8 +424,9 @@ export const StandardsComparator: React.FC<StandardsComparatorProps> = ({
                         {primaryFormatted}
                       </span>
                     ) : attr.key === 'why_not_primary' ? (
-                      <span style={{ color: 'var(--collapse-cobalt)', fontFamily: 'var(--font-data)', fontSize: '12px', fontWeight: 600 }}>
-                        ✓ PRIMARY SPECIFICATION SELECTED
+                      <span style={{ color: 'var(--collapse-cobalt)', fontFamily: 'var(--font-data)', fontSize: '12px', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                        <CheckCircle2 size={12} />
+                        <span>PRIMARY SPECIFICATION SELECTED</span>
                       </span>
                     ) : (
                       primaryFormatted

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FileText, Copy, Check, Printer, Globe } from 'lucide-react';
 import { downloadTXT, downloadPrintableHTML, printClause } from './clauseExport';
 
 interface ClauseExportBarProps {
@@ -38,7 +39,7 @@ export const ClauseExportBar: React.FC<ClauseExportBarProps> = ({
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <span style={{ fontSize: '16px' }}>📜</span>
+        <FileText size={18} style={{ color: 'var(--collapse-cobalt)' }} />
         <div>
           <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', fontWeight: 700, color: 'var(--ink)' }}>
             EXPORT TENDER TECHNICAL CLAUSE
@@ -56,7 +57,7 @@ export const ClauseExportBar: React.FC<ClauseExportBarProps> = ({
           className="btn-run"
           style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', padding: '6px 14px' }}
         >
-          <span>{copied ? '✓' : '📋'}</span>
+          {copied ? <Check size={13} /> : <Copy size={13} />}
           <span>{copied ? 'Copied to Clipboard' : 'Copy Full Clause'}</span>
         </button>
 
@@ -66,7 +67,7 @@ export const ClauseExportBar: React.FC<ClauseExportBarProps> = ({
           className="btn-secondary"
           style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', padding: '6px 12px' }}
         >
-          <span>🖨️</span>
+          <Printer size={13} />
           <span>Print / PDF</span>
         </button>
 
@@ -76,7 +77,7 @@ export const ClauseExportBar: React.FC<ClauseExportBarProps> = ({
           className="btn-secondary"
           style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', padding: '6px 12px' }}
         >
-          <span>📄</span>
+          <FileText size={13} />
           <span>Download .TXT</span>
         </button>
 
@@ -86,7 +87,7 @@ export const ClauseExportBar: React.FC<ClauseExportBarProps> = ({
           className="btn-secondary"
           style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', padding: '6px 12px' }}
         >
-          <span>🌐</span>
+          <Globe size={13} />
           <span>Download .HTML</span>
         </button>
       </div>

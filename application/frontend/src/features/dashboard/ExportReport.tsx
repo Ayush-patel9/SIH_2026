@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import { RefreshCw, Printer, FileSpreadsheet, Download, FileDown } from 'lucide-react';
 import type { DashboardMetrics } from './metricsAggregator';
 import { AuditStore } from '../audit/auditStore';
 
@@ -213,48 +214,53 @@ export const ExportReport: React.FC<ExportReportProps> = ({ metrics, onRefresh }
         </span>
       </div>
 
-      <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+      <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
         {onRefresh && (
           <button
             type="button"
             className="palette-btn"
             onClick={onRefresh}
-            style={{ fontSize: '12px', padding: '6px 12px' }}
+            style={{ fontSize: '12px', padding: '6px 12px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
           >
-            ↻ Recompute Metrics
+            <RefreshCw size={13} />
+            <span>Recompute Metrics</span>
           </button>
         )}
         <button
           type="button"
           className="palette-btn"
           onClick={() => printExecutiveMemorandum(metrics)}
-          style={{ fontSize: '12px', padding: '6px 12px' }}
+          style={{ fontSize: '12px', padding: '6px 12px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
         >
-          🖨️ Executive Memorandum
+          <Printer size={13} />
+          <span>Executive Memorandum</span>
         </button>
         <button
           type="button"
           className="btn-run"
           onClick={() => exportMISReportCSV()}
-          style={{ fontSize: '12px', padding: '6px 14px' }}
+          style={{ fontSize: '12px', padding: '6px 14px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
         >
-          📊 Export MIS Report (CSV)
+          <FileSpreadsheet size={13} />
+          <span>Export MIS Report (CSV)</span>
         </button>
         <button
           type="button"
           className="palette-btn"
           onClick={() => downloadMetricsJSON(metrics)}
-          style={{ fontSize: '12px', padding: '6px 12px' }}
+          style={{ fontSize: '12px', padding: '6px 12px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
         >
-          📦 Download JSON
+          <Download size={13} />
+          <span>Download JSON</span>
         </button>
         <button
           type="button"
           className="palette-btn"
           onClick={() => exportDashboardReportCSV(metrics)}
-          style={{ fontSize: '12px', padding: '6px 12px' }}
+          style={{ fontSize: '12px', padding: '6px 12px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
         >
-          ⬇️ Executive CSV
+          <FileDown size={13} />
+          <span>Executive CSV</span>
         </button>
       </div>
     </div>

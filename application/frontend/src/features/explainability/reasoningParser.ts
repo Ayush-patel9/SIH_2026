@@ -23,22 +23,22 @@ export interface StepMetadata {
 
 export const STEP_LABELS: Record<string, StepMetadata> = {
   query_understanding: {
-    icon: "🔍",
+    icon: "Search",
     title: "Query Entity Recognition",
     subtitle: "NLP + Named Entity Extraction on Procurement Intent",
   },
   vector_retrieval: {
-    icon: "📐",
+    icon: "Compass",
     title: "Dense Vector Search",
     subtitle: "Semantic Cosine Similarity over 22,000+ Bureau Catalog Items",
   },
   graph_traversal: {
-    icon: "🕸️",
+    icon: "Share2",
     title: "Knowledge Graph Expansion",
     subtitle: "Multi-Hop Normative Cross-Reference & Succession Traversal",
   },
   qco_compliance_lookup: {
-    icon: "⚖️",
+    icon: "Scale",
     title: "QCO Regulatory Lookup",
     subtitle: "Ministry Gazette Quality Control Order Verification",
   },
@@ -133,31 +133,31 @@ export function synthesizeExplainLikeImNewHere(rec: {
   
   if (numOnly.includes("269") || numOnly.includes("8112") || numOnly.includes("12269")) {
     return {
-      metaphor: "🧱 Think of IS 269 as the official government recipe book and strength guarantee for cement.",
-      trap: "⚠️ The Common Trap: Older government tenders used to cite IS 8112 (for 43 grade) or IS 12269 (for 53 grade). BIS withdrew both and merged them into IS 269:2015. Citing the old numbers gives vendors a legal loophole to supply uncertified stock.",
-      action: "✅ What you should do: Write 'IS 269:2015 with mandatory BIS ISI Mark' in your BoQ schedule. Always mandate compressive strength test certificates under IS 4031.",
+      metaphor: "Think of IS 269 as the official government recipe book and strength guarantee for cement.",
+      trap: "Common Trap: Older government tenders used to cite IS 8112 (for 43 grade) or IS 12269 (for 53 grade). BIS withdrew both and merged them into IS 269:2015. Citing the old numbers gives vendors a legal loophole to supply uncertified stock.",
+      action: "Actionable Requirement: Write 'IS 269:2015 with mandatory BIS ISI Mark' in your BoQ schedule. Always mandate compressive strength test certificates under IS 4031.",
     };
   }
 
   if (numOnly.includes("1786") || numOnly.includes("2062")) {
     return {
-      metaphor: "🏗️ Think of this standard as the earthquake and load-bearing backbone requirement for steel rebars/structural plates.",
-      trap: "⚠️ The Common Trap: Older 1985/2000 revisions allowed mild steel without guaranteed seismic ductility. Steel QCO 2024 mandates Fe 500D / Fe 550D with strict elongation tolerances under IS 1786:2008.",
-      action: "✅ What you should do: Specify 'IS 1786:2008 Grade Fe 500D with BIS ISI Mark' and require chemical mill test certificates verifying Sulphur and Phosphorus limits.",
+      metaphor: "Think of this standard as the earthquake and load-bearing backbone requirement for steel rebars/structural plates.",
+      trap: "Common Trap: Older 1985/2000 revisions allowed mild steel without guaranteed seismic ductility. Steel QCO 2024 mandates Fe 500D / Fe 550D with strict elongation tolerances under IS 1786:2008.",
+      action: "Actionable Requirement: Specify 'IS 1786:2008 Grade Fe 500D with BIS ISI Mark' and require chemical mill test certificates verifying Sulphur and Phosphorus limits.",
     };
   }
 
   if (numOnly.includes("4984") || numOnly.includes("14333")) {
     return {
-      metaphor: "🚰 Think of IS 4984 as the leak-proof, non-toxic guarantee for drinking water supply pipes.",
-      trap: "⚠️ The Common Trap: Citing unamended 1995 standards allows suppliers to use low-grade recycled PE-63 polymer instead of PE-80/PE-100 virgin grade, causing pipe bursts under pressure.",
-      action: "✅ What you should do: Specify 'IS 4984:2016 PN6/PN10 with Amendment 2 compliance and BIS Scheme-I ISI Mark'.",
+      metaphor: "Think of IS 4984 as the leak-proof, non-toxic guarantee for drinking water supply pipes.",
+      trap: "Common Trap: Citing unamended 1995 standards allows suppliers to use low-grade recycled PE-63 polymer instead of PE-80/PE-100 virgin grade, causing pipe bursts under pressure.",
+      action: "Actionable Requirement: Specify 'IS 4984:2016 PN6/PN10 with Amendment 2 compliance and BIS Scheme-I ISI Mark'.",
     };
   }
 
   return {
-    metaphor: `📘 Think of ${isNum} as the mandatory quality benchmark protecting your department from substandard procurement.`,
-    trap: `⚠️ The Common Trap: Standards get updated by BIS. Using an outdated version leaves the procurement officer personally liable during CVC and CAG audit reviews.`,
-    action: `✅ What you should do: Cite '${isNum}' explicitly in your tender document and require the vendor to upload a verified BIS license before bid evaluation.`,
+    metaphor: `Think of ${isNum} as the mandatory quality benchmark protecting your department from substandard procurement.`,
+    trap: `Common Trap: Standards get updated by BIS. Using an outdated version leaves the procurement officer personally liable during CVC and CAG audit reviews.`,
+    action: `Actionable Requirement: Cite '${isNum}' explicitly in your tender document and require the vendor to upload a verified BIS license before bid evaluation.`,
   };
 }

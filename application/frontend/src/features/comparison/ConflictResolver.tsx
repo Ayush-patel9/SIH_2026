@@ -1,4 +1,5 @@
 import React from 'react';
+import { Scale, CheckCircle2, AlertTriangle, Award, X } from 'lucide-react';
 import type { ConflictResolution } from '../../types';
 
 interface ConflictResolverProps {
@@ -29,7 +30,7 @@ export const ConflictResolver: React.FC<ConflictResolverProps> = ({ conflict, cl
       {/* Header Row */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ fontSize: '18px' }}>⚖️</span>
+          <Scale size={18} color="#B45309" />
           <span
             style={{
               fontFamily: 'var(--font-data)',
@@ -59,7 +60,17 @@ export const ConflictResolver: React.FC<ConflictResolverProps> = ({ conflict, cl
             fontWeight: 700,
           }}
         >
-          {isStrong ? '✓ HIGH CERTAINTY PRECEDENCE' : '⚠️ MARGINAL PREFERENCE'}
+          {isStrong ? (
+            <>
+              <CheckCircle2 size={12} />
+              <span>HIGH CERTAINTY PRECEDENCE</span>
+            </>
+          ) : (
+            <>
+              <AlertTriangle size={12} />
+              <span>MARGINAL PREFERENCE</span>
+            </>
+          )}
         </span>
       </div>
 
@@ -76,7 +87,7 @@ export const ConflictResolver: React.FC<ConflictResolverProps> = ({ conflict, cl
             borderRadius: '4px',
           }}
         >
-          <span style={{ fontSize: '12px', color: 'var(--collapse-cobalt)' }}>👑</span>
+          <Award size={13} color="var(--collapse-cobalt)" />
           <span style={{ fontFamily: 'var(--font-data)', fontSize: '12px', fontWeight: 700, color: 'var(--collapse-cobalt)' }}>
             APPLICABLE: {conflict.winner}
           </span>
@@ -98,7 +109,7 @@ export const ConflictResolver: React.FC<ConflictResolverProps> = ({ conflict, cl
             opacity: 0.85,
           }}
         >
-          <span style={{ fontSize: '12px', color: 'var(--ink-muted)' }}>✕</span>
+          <X size={12} color="var(--ink-muted)" />
           <span style={{ fontFamily: 'var(--font-data)', fontSize: '12px', color: 'var(--ink-secondary)' }}>
             NON-PRIMARY: {conflict.loser}
           </span>

@@ -38,19 +38,19 @@ export function formatDeadlineBadge(deadlineISO: string | null | undefined): {
       };
     case 'CRITICAL_URGENT':
       return {
-        text: `⏰ ${days}d REMAINING (CRITICAL)`,
+        text: `${days}d REMAINING (CRITICAL)`,
         color: 'var(--error-line)',
         badgeClass: 'withdrawn',
       };
     case 'APPROACHING':
       return {
-        text: `⏳ ${days} days left`,
+        text: `${days} days left`,
         color: '#B45309',
         badgeClass: 'in-progress',
       };
     case 'NORMAL':
       return {
-        text: `📅 ${days} days remaining`,
+        text: `${days} days remaining`,
         color: 'var(--ink-secondary)',
         badgeClass: 'active',
       };

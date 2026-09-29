@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Zap, Send, CheckCircle2, AlertOctagon, AlertTriangle, Wrench, ShieldAlert } from 'lucide-react';
 
 interface CPPPValidationIssue {
   type: 'WITHDRAWN_STANDARD' | 'MISSING_ALLIED' | 'QCO_MANDATORY' | 'VALID_STANDARD';
@@ -127,9 +128,22 @@ export const CPPPTenderChecker: React.FC = () => {
               fontSize: '11px',
               fontFamily: 'var(--font-data)',
               fontWeight: 700,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
             }}
           >
-            {hasCritical ? '⛔ NIT Publication Blocked' : '🟢 Ready for Tender Notice Publish'}
+            {hasCritical ? (
+              <>
+                <AlertOctagon size={13} />
+                <span>NIT Publication Blocked</span>
+              </>
+            ) : (
+              <>
+                <CheckCircle2 size={13} />
+                <span>Ready for Tender Notice Publish</span>
+              </>
+            )}
           </span>
         </div>
       </div>
@@ -199,9 +213,10 @@ export const CPPPTenderChecker: React.FC = () => {
                 type="button"
                 className="btn-secondary"
                 onClick={handleAutoFixAll}
-                style={{ fontSize: '12px', padding: '6px 12px' }}
+                style={{ fontSize: '12px', padding: '6px 12px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
               >
-                ⚡ 1-Click Resolve All BIS Discrepancies
+                <Zap size={13} />
+                <span>1-Click Resolve All BIS Discrepancies</span>
               </button>
 
               <button
@@ -215,9 +230,22 @@ export const CPPPTenderChecker: React.FC = () => {
                   background: hasCritical ? 'var(--hairline)' : 'var(--collapse-cobalt)',
                   color: hasCritical ? 'var(--ink-muted)' : '#ffffff',
                   cursor: hasCritical ? 'not-allowed' : 'pointer',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
                 }}
               >
-                {hasCritical ? '⛔ Blocked: Fix Withdrawn Standards' : '🚀 Publish NIT to CPPP'}
+                {hasCritical ? (
+                  <>
+                    <ShieldAlert size={13} />
+                    <span>Blocked: Fix Withdrawn Standards</span>
+                  </>
+                ) : (
+                  <>
+                    <Send size={13} />
+                    <span>Publish NIT to CPPP</span>
+                  </>
+                )}
               </button>
             </div>
 
@@ -232,9 +260,13 @@ export const CPPPTenderChecker: React.FC = () => {
                   color: '#15803d',
                   fontSize: '12px',
                   fontFamily: 'var(--font-data)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
                 }}
               >
-                ✓ <strong>TENDER NOTICE PUBLISHED SUCCESSFULLY!</strong> CPPP Notice ID: #CPPP-2026-9082. ManakAI Statutory Hash: 8f910a3c... (Archived in National Procurement Audit Registry).
+                <CheckCircle2 size={16} style={{ flexShrink: 0 }} />
+                <span><strong>TENDER NOTICE PUBLISHED SUCCESSFULLY!</strong> CPPP Notice ID: #CPPP-2026-9082. ManakAI Statutory Hash: 8f910a3c... (Archived in National Procurement Audit Registry).</span>
               </div>
             )}
           </div>
@@ -287,9 +319,13 @@ export const CPPPTenderChecker: React.FC = () => {
                         fontSize: '12px',
                         fontWeight: 700,
                         color: isCrit ? '#b91c1c' : isWarn ? '#854d0e' : '#15803d',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
                       }}
                     >
-                      {isCrit ? '🔴' : isWarn ? '🟡' : '🟢'} {issue.title}
+                      {isCrit ? <AlertOctagon size={13} /> : isWarn ? <AlertTriangle size={13} /> : <CheckCircle2 size={13} />}
+                      <span>{issue.title}</span>
                     </span>
                   </div>
 
@@ -310,9 +346,10 @@ export const CPPPTenderChecker: React.FC = () => {
                       type="button"
                       className="btn-secondary"
                       onClick={() => handleApplyFix(issue.autoFixText)}
-                      style={{ fontSize: '11px', padding: '4px 8px' }}
+                      style={{ fontSize: '11px', padding: '4px 8px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
                     >
-                      ⚡ Auto-Fix in Draft
+                      <Wrench size={11} />
+                      <span>Auto-Fix in Draft</span>
                     </button>
                   )}
                 </div>

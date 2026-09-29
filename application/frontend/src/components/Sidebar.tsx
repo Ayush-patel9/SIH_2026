@@ -14,6 +14,8 @@ import {
   Terminal,
   Building2,
   Factory,
+  ChevronLeft,
+  ChevronRight,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -250,7 +252,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 e.currentTarget.style.color = 'var(--ink-muted)';
               }}
             >
-              ◀
+              <ChevronLeft size={14} />
             </button>
           )}
         </div>
@@ -487,7 +489,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             }}
             title="Expand sidebar"
           >
-            ▶
+            <ChevronRight size={14} />
           </button>
         ) : (
           <>

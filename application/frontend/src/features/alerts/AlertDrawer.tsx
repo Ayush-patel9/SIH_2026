@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { CheckCircle2, FileText, Bell, AlertTriangle, AlertOctagon, X, Check } from 'lucide-react';
 import { AlertStore } from './alertStore';
 import type { AlertWithRead } from './alertStore';
 import { formatDeadlineBadge } from './deadlineUtils';
@@ -61,7 +62,7 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
           bg: '#FEF2F2',
           badgeBg: '#FEE2E2',
           color: 'var(--error-line)',
-          icon: '🔴',
+          IconComponent: AlertOctagon,
         };
       case 'HIGH':
         return {
@@ -69,7 +70,7 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
           bg: '#FFFBEB',
           badgeBg: '#FEF3C7',
           color: '#B45309',
-          icon: '⚠️',
+          IconComponent: AlertTriangle,
         };
       case 'MEDIUM':
         return {
@@ -77,7 +78,7 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
           bg: '#FAF5FF',
           badgeBg: '#F3E8FF',
           color: 'var(--superposition-violet)',
-          icon: '🔔',
+          IconComponent: Bell,
         };
       case 'LOW':
       default:
@@ -86,7 +87,7 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
           bg: '#EFF6FF',
           badgeBg: '#DBEAFE',
           color: 'var(--collapse-cobalt)',
-          icon: '📋',
+          IconComponent: FileText,
         };
     }
   };
@@ -179,10 +180,11 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
             <button
               type="button"
               className="btn-secondary"
-              style={{ padding: '4px 10px', fontSize: '13px' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', padding: '4px 10px', fontSize: '13px' }}
               onClick={onClose}
             >
-              ✕ Close
+              <X size={14} />
+              <span>Close</span>
             </button>
           </div>
 
@@ -249,7 +251,7 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
                 borderRadius: 'var(--radius-sm)',
               }}
             >
-              <div style={{ fontSize: '28px', marginBottom: '8px' }}>✓</div>
+              <CheckCircle2 size={32} style={{ color: 'var(--emerald-pass)', margin: '0 auto 8px auto' }} />
               <strong style={{ fontFamily: 'var(--font-prose)', color: 'var(--ink)' }}>
                 No active alerts in this category
               </strong>
@@ -260,6 +262,7 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
           ) : (
             filteredAlerts.map((alert) => {
               const sev = getSeverityStyle(alert.severity);
+              const SevIcon = sev.IconComponent;
               const deadlineBadge = formatDeadlineBadge(alert.deadline);
 
               return (
@@ -296,7 +299,7 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
                           fontWeight: 700,
                         }}
                       >
-                        <span>{sev.icon}</span>
+                        <SevIcon size={12} />
                         <span>{alert.severity}</span>
                       </span>
 
@@ -456,6 +459,9 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
                       onClick={() => handleAcknowledge(alert.alert_id)}
                       className="btn-secondary"
                       style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px',
                         padding: '3px 10px',
                         fontSize: '11px',
                         fontFamily: 'var(--font-data)',
@@ -463,7 +469,13 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
                         borderColor: alert._read ? 'var(--hairline)' : 'var(--collapse-cobalt)',
                       }}
                     >
-                      {alert._read ? '✓ Acknowledged' : '✓ Acknowledge'}
+                      {alert._read ? (
+                        <>
+                          <Check size={11} style={{ color: 'var(--emerald-pass)' }} /> Acknowledged
+                        </>
+                      ) : (
+                        'Acknowledge'
+                      )}
                     </button>
                   </div>
                 </div>

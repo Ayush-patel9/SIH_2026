@@ -22,6 +22,8 @@ import {
   Copy,
   Clock,
   Sparkles,
+  X,
+  Scale,
 } from 'lucide-react';
 import {
   fetchGazetteRadarData,
@@ -81,10 +83,10 @@ export const GazetteRadarView: React.FC = () => {
           return found || res.events[0];
         });
       }
-      setScanBanner(`✓ Scan complete at ${new Date().toLocaleTimeString()} — 48 Portals verified. All 22,011 Standards cross-checked with active QCO orders.`);
+      setScanBanner(`Scan complete at ${new Date().toLocaleTimeString()} — 48 Portals verified. All 22,011 Standards cross-checked with active QCO orders.`);
       setTimeout(() => setScanBanner(null), 5000);
     } catch (err: any) {
-      setScanBanner(`⚠ Scan error: ${err?.message || 'Check backend connection'}`);
+      setScanBanner(`Scan error: ${err?.message || 'Check backend connection'}`);
     } finally {
       setIsScanning(false);
     }
@@ -179,7 +181,7 @@ export const GazetteRadarView: React.FC = () => {
               title="Trigger real-time Gazette of India and Ministry portal scan"
             >
               <RefreshCw size={15} className={isScanning ? 'spin-anim' : ''} />
-              <span>{isScanning ? 'Scanning Portals...' : '↻ Scan & Refresh e-Gazette'}</span>
+              <span>{isScanning ? 'Scanning Portals...' : 'Scan & Refresh e-Gazette'}</span>
             </button>
           </div>
         </div>
@@ -191,9 +193,9 @@ export const GazetteRadarView: React.FC = () => {
               marginTop: '14px',
               padding: '10px 16px',
               borderRadius: '6px',
-              backgroundColor: scanBanner.includes('✓') ? '#F0FDF4' : scanBanner.includes('⚠') ? '#FEF2F2' : '#EFF6FF',
-              border: `1px solid ${scanBanner.includes('✓') ? '#86EFAC' : scanBanner.includes('⚠') ? '#FCA5A5' : '#BFDBFE'}`,
-              color: scanBanner.includes('✓') ? '#166534' : scanBanner.includes('⚠') ? '#991B1B' : '#1E40AF',
+              backgroundColor: !scanBanner.includes('error') ? '#F0FDF4' : '#FEF2F2',
+              border: `1px solid ${!scanBanner.includes('error') ? '#86EFAC' : '#FCA5A5'}`,
+              color: !scanBanner.includes('error') ? '#166534' : '#991B1B',
               fontSize: '12.5px',
               display: 'flex',
               alignItems: 'center',
@@ -322,9 +324,9 @@ export const GazetteRadarView: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setSearchQuery('')}
-                style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--ink-muted)', fontSize: '11px' }}
+                style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--ink-muted)', display: 'flex', alignItems: 'center', padding: '2px' }}
               >
-                ✕
+                <X size={12} />
               </button>
             )}
           </div>
@@ -391,7 +393,8 @@ export const GazetteRadarView: React.FC = () => {
                             border: `1px solid ${event.eventType === 'NEW_QCO' ? '#FDE68A' : '#BFDBFE'}`,
                           }}
                         >
-                          ⚖️ {event.eventType.replace(/_/g, ' ')}
+                          <Scale size={11} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '4px' }} />
+                          {event.eventType.replace(/_/g, ' ')}
                         </span>
                         <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)' }}>
                           {event.date}
@@ -407,8 +410,9 @@ export const GazetteRadarView: React.FC = () => {
                       </div>
 
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px', paddingTop: '8px', borderTop: '1px dashed var(--hairline)' }}>
-                        <span style={{ fontSize: '11.5px', color: '#DC2626', fontWeight: 600 }}>
-                          ⚠ {event.impactedTendersCount} Tenders Impacted
+                        <span style={{ fontSize: '11.5px', color: '#DC2626', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                          <AlertTriangle size={12} />
+                          <span>{event.impactedTendersCount} Tenders Impacted</span>
                         </span>
                         <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink)', fontWeight: 600 }}>
                           Exposure: ₹{event.financialExposureCr} Cr
@@ -509,7 +513,7 @@ export const GazetteRadarView: React.FC = () => {
                   <span>
                     {isGeneratingCorrigendum
                       ? 'Drafting GFR 144 Corrigendum Notice...'
-                      : '📄 Generate Official Corrigendum Notice'}
+                      : 'Generate Official Corrigendum Notice'}
                   </span>
                 </button>
               </div>
@@ -529,8 +533,9 @@ export const GazetteRadarView: React.FC = () => {
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ fontSize: '11px', fontFamily: 'var(--font-data)', fontWeight: 700, color: '#15803D' }}>
-                      ✓ STATUTORY CORRIGENDUM READY ({corrigendumResult.corrigendum_id})
+                    <span style={{ fontSize: '11px', fontFamily: 'var(--font-data)', fontWeight: 700, color: '#15803D', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                      <CheckCircle2 size={13} />
+                      <span>STATUTORY CORRIGENDUM READY ({corrigendumResult.corrigendum_id})</span>
                     </span>
                     <button
                       type="button"

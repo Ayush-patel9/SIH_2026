@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { FlaskConical, Link2, FileText, AlertOctagon, Globe, Check, Copy } from 'lucide-react';
 import type { StandardsResponse, AlliedStandard } from '../../types';
 import { buildGroupedAllied } from './comparisonUtils';
 import type { GroupedAlliedStandards } from './comparisonUtils';
@@ -22,7 +23,7 @@ export const AlliedStandardsMatrix: React.FC<AlliedStandardsMatrixProps> = ({ da
     key: keyof GroupedAlliedStandards;
     filterKey: AlliedFilterTab;
     label: string;
-    icon: string;
+    icon: React.ReactNode;
     description: string;
     items: AlliedStandard[];
   }[] = [
@@ -30,7 +31,7 @@ export const AlliedStandardsMatrix: React.FC<AlliedStandardsMatrixProps> = ({ da
       key: 'test_methods',
       filterKey: 'TEST_METHODS',
       label: 'Mandatory Test Methods & Protocols',
-      icon: '🧪',
+      icon: <FlaskConical size={14} />,
       description: 'Required laboratory and field testing standards for conformity assessment and mill certificates.',
       items: grouped.test_methods,
     },
@@ -38,7 +39,7 @@ export const AlliedStandardsMatrix: React.FC<AlliedStandardsMatrixProps> = ({ da
       key: 'normative_references',
       filterKey: 'NORMATIVE',
       label: 'Normative References & Raw Materials',
-      icon: '🔗',
+      icon: <Link2 size={14} />,
       description: 'Standards cited as indispensable normative references within the primary specification.',
       items: grouped.normative_references,
     },
@@ -46,7 +47,7 @@ export const AlliedStandardsMatrix: React.FC<AlliedStandardsMatrixProps> = ({ da
       key: 'complementary',
       filterKey: 'COMPLEMENTARY',
       label: 'Complementary Structural Design Codes',
-      icon: '📋',
+      icon: <FileText size={14} />,
       description: 'National codes of practice and engineering design guidelines governing structural execution.',
       items: grouped.complementary,
     },
@@ -54,7 +55,7 @@ export const AlliedStandardsMatrix: React.FC<AlliedStandardsMatrixProps> = ({ da
       key: 'superseded',
       filterKey: 'SUPERSEDED',
       label: 'Withdrawn & Superseded Predecessors',
-      icon: '🚫',
+      icon: <AlertOctagon size={14} />,
       description: 'Legacy specifications that are withdrawn and must NOT be cited in active procurement tenders.',
       items: grouped.superseded,
     },
@@ -62,7 +63,7 @@ export const AlliedStandardsMatrix: React.FC<AlliedStandardsMatrixProps> = ({ da
       key: 'cross_disciplinary',
       filterKey: 'CROSS_DISCIPLINARY',
       label: 'Cross-Disciplinary Co-Procurement Items',
-      icon: '🌐',
+      icon: <Globe size={14} />,
       description: 'Frequently co-procured allied materials and testing standards in government civil works.',
       items: grouped.cross_disciplinary,
     },
@@ -131,33 +132,37 @@ export const AlliedStandardsMatrix: React.FC<AlliedStandardsMatrixProps> = ({ da
             type="button"
             className={`palette-btn ${activeFilter === 'TEST_METHODS' ? 'selected' : ''}`}
             onClick={() => setActiveFilter('TEST_METHODS')}
-            style={{ fontSize: '11px', padding: '3px 8px' }}
+            style={{ fontSize: '11px', padding: '3px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
           >
-            🧪 Test Methods ({grouped.test_methods.length})
+            <FlaskConical size={11} />
+            <span>Test Methods ({grouped.test_methods.length})</span>
           </button>
           <button
             type="button"
             className={`palette-btn ${activeFilter === 'NORMATIVE' ? 'selected' : ''}`}
             onClick={() => setActiveFilter('NORMATIVE')}
-            style={{ fontSize: '11px', padding: '3px 8px' }}
+            style={{ fontSize: '11px', padding: '3px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
           >
-            🔗 Normative ({grouped.normative_references.length})
+            <Link2 size={11} />
+            <span>Normative ({grouped.normative_references.length})</span>
           </button>
           <button
             type="button"
             className={`palette-btn ${activeFilter === 'COMPLEMENTARY' ? 'selected' : ''}`}
             onClick={() => setActiveFilter('COMPLEMENTARY')}
-            style={{ fontSize: '11px', padding: '3px 8px' }}
+            style={{ fontSize: '11px', padding: '3px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
           >
-            📋 Complementary ({grouped.complementary.length})
+            <FileText size={11} />
+            <span>Complementary ({grouped.complementary.length})</span>
           </button>
           <button
             type="button"
             className={`palette-btn ${activeFilter === 'SUPERSEDED' ? 'selected' : ''}`}
             onClick={() => setActiveFilter('SUPERSEDED')}
-            style={{ fontSize: '11px', padding: '3px 8px' }}
+            style={{ fontSize: '11px', padding: '3px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
           >
-            🚫 Withdrawn ({grouped.superseded.length})
+            <AlertOctagon size={11} />
+            <span>Withdrawn ({grouped.superseded.length})</span>
           </button>
         </div>
 
@@ -330,10 +335,20 @@ export const AlliedStandardsMatrix: React.FC<AlliedStandardsMatrixProps> = ({ da
                             type="button"
                             onClick={() => handleCopy(item.is_number)}
                             className="btn-secondary"
-                            style={{ padding: '3px 8px', fontSize: '11px' }}
+                            style={{ padding: '3px 8px', fontSize: '11px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                             title="Copy standard citation string"
                           >
-                            {copiedCode === item.is_number ? '✓ Copied' : 'Copy'}
+                            {copiedCode === item.is_number ? (
+                              <>
+                                <Check size={11} />
+                                <span>Copied</span>
+                              </>
+                            ) : (
+                              <>
+                                <Copy size={11} />
+                                <span>Copy</span>
+                              </>
+                            )}
                           </button>
                         </td>
                       </tr>

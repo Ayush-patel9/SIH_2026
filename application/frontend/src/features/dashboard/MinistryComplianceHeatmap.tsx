@@ -4,6 +4,7 @@
  */
 
 import React, { useState } from 'react';
+import { CheckCircle2, AlertTriangle, AlertOctagon } from 'lucide-react';
 import type { MinistryComplianceItem, ActivityFeedItem } from './metricsAggregator';
 
 interface MinistryComplianceHeatmapProps {
@@ -33,9 +34,13 @@ export const MinistryComplianceHeatmap: React.FC<MinistryComplianceHeatmapProps>
               color: 'var(--emerald-pass)',
               border: '1px solid rgba(16, 130, 80, 0.3)',
               fontWeight: 600,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px',
             }}
           >
-            ✓ HIGH COMPLIANCE
+            <CheckCircle2 size={11} />
+            <span>HIGH COMPLIANCE</span>
           </span>
         );
       case 'WATCHLIST':
@@ -50,9 +55,13 @@ export const MinistryComplianceHeatmap: React.FC<MinistryComplianceHeatmapProps>
               color: 'var(--signal-amber)',
               border: '1px solid rgba(224, 152, 43, 0.3)',
               fontWeight: 600,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px',
             }}
           >
-            ⚠️ WATCHLIST
+            <AlertTriangle size={11} />
+            <span>WATCHLIST</span>
           </span>
         );
       case 'HIGH_RISK':
@@ -67,9 +76,13 @@ export const MinistryComplianceHeatmap: React.FC<MinistryComplianceHeatmapProps>
               color: 'var(--error-line)',
               border: '1px solid rgba(194, 59, 59, 0.3)',
               fontWeight: 600,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px',
             }}
           >
-            🚨 ELEVATED RISK
+            <AlertOctagon size={11} />
+            <span>ELEVATED RISK</span>
           </span>
         );
     }

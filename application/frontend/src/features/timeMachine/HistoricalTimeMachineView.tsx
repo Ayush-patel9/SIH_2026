@@ -241,7 +241,17 @@ export const HistoricalTimeMachineView: React.FC = () => {
                 border: `1px solid ${lineage.is_withdrawn ? '#FECACA' : '#A7F3D0'}`,
               }}
             >
-              {lineage.is_withdrawn ? '⚠ WITHDRAWN SPEC' : '✓ ACTIVE STANDARD'}
+              {lineage.is_withdrawn ? (
+                <>
+                  <AlertTriangle size={12} />
+                  <span>WITHDRAWN SPEC</span>
+                </>
+              ) : (
+                <>
+                  <CheckCircle2 size={12} />
+                  <span>ACTIVE STANDARD</span>
+                </>
+              )}
             </span>
           </div>
         </div>
@@ -297,12 +307,12 @@ export const HistoricalTimeMachineView: React.FC = () => {
             Quick Demos:
           </span>
           {[
-            { code: 'IS 15683', label: '🧯 Fire Extinguishers (Consolidated)' },
-            { code: 'IS 8112', label: '⚠️ 43-Grade Cement (Withdrawn ➔ IS 269)' },
-            { code: 'IS 1786', label: '🏗️ TMT Rebars (Fe 500D)' },
-            { code: 'IS 7098', label: '⚡ XLPE Power Cables' },
-            { code: 'IS 226', label: '⚠️ Structural Steel (Withdrawn ➔ IS 2062)' },
-            { code: 'IS 2925', label: '🦺 Safety Helmets' },
+            { code: 'IS 15683', label: 'Fire Extinguishers (Consolidated)' },
+            { code: 'IS 8112', label: '43-Grade Cement (Withdrawn → IS 269)' },
+            { code: 'IS 1786', label: 'TMT Rebars (Fe 500D)' },
+            { code: 'IS 7098', label: 'XLPE Power Cables' },
+            { code: 'IS 226', label: 'Structural Steel (Withdrawn → IS 2062)' },
+            { code: 'IS 2925', label: 'Safety Helmets' },
           ].map((item) => {
             const isSelected = lineage.standard_code.includes(item.code) || (lineage.withdrawn_alert && lineage.withdrawn_alert.code.includes(item.code));
             return (

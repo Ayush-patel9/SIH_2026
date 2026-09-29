@@ -13,7 +13,8 @@ import {
   Calendar,
   Layers,
   Sparkles,
-  ExternalLink
+  ExternalLink,
+  AlertTriangle,
 } from 'lucide-react';
 import type { StandardsResponse } from '../../types';
 import { AuditLogEntry } from './AuditLogEntry';
@@ -115,7 +116,7 @@ export const AuditTrailView: React.FC<AuditTrailViewProps> = ({
             gap: '10px',
           }}
         >
-          <span style={{ fontSize: '18px' }}>⚠️</span>
+          <AlertTriangle size={18} style={{ color: '#F59E0B', flexShrink: 0 }} />
           <span>
             <strong>SANDBOX / DRY RUN MODE</strong> — Queries marked DRY RUN are not locked to the permanent government audit trail. Use this mode to test draft specifications before finalizing your NIT.
           </span>
@@ -129,11 +130,11 @@ export const AuditTrailView: React.FC<AuditTrailViewProps> = ({
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-                  <span className="concept-status-badge active" style={{ background: '#ECFDF5', color: '#15803D', borderColor: '#A7F3D0' }}>
-                    🛡️ CVC AUDIT DEFENSE RECORD
+                  <span className="concept-status-badge active" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', background: '#ECFDF5', color: '#15803D', borderColor: '#A7F3D0' }}>
+                    <ShieldCheck size={12} /> CVC AUDIT DEFENSE RECORD
                   </span>
-                  <span className="concept-status-badge" style={{ background: '#EFF6FF', color: '#2563EB', borderColor: '#BFDBFE' }}>
-                    🔒 SHA-256 CRYPTOGRAPHICALLY SEALED
+                  <span className="concept-status-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', background: '#EFF6FF', color: '#2563EB', borderColor: '#BFDBFE' }}>
+                    <Lock size={12} /> SHA-256 CRYPTOGRAPHICALLY SEALED
                   </span>
                 </div>
                 <h1 style={{ fontFamily: 'var(--font-data, monospace)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)' }}>
@@ -173,23 +174,29 @@ export const AuditTrailView: React.FC<AuditTrailViewProps> = ({
               <button
                 type="button"
                 className={`auth-tab ${activeTab === 'certificate' ? 'active' : ''}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 onClick={() => setActiveTab('certificate')}
               >
-                📄 Official CVC Vigilance Certificate
+                <FileText size={13} />
+                <span>Official CVC Vigilance Certificate</span>
               </button>
               <button
                 type="button"
                 className={`auth-tab ${activeTab === 'entry' ? 'active' : ''}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 onClick={() => setActiveTab('entry')}
               >
-                🛡️ Sealed Cryptographic Record
+                <ShieldCheck size={13} />
+                <span>Sealed Cryptographic Record</span>
               </button>
               <button
                 type="button"
                 className={`auth-tab ${activeTab === 'verify' ? 'active' : ''}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 onClick={() => setActiveTab('verify')}
               >
-                🔍 Public Hash Verifier
+                <Search size={13} />
+                <span>Public Hash Verifier</span>
               </button>
             </div>
           </div>
@@ -236,11 +243,11 @@ export const AuditTrailView: React.FC<AuditTrailViewProps> = ({
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-                  <span className="concept-status-badge active">
-                    📜 HISTORICAL AUDIT VAULT
+                  <span className="concept-status-badge active" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                    <History size={12} /> HISTORICAL AUDIT VAULT
                   </span>
-                  <span className="concept-status-badge in-progress">
-                    🏛️ PERMANENT CVC ARCHIVE
+                  <span className="concept-status-badge in-progress" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                    <Database size={12} /> PERMANENT CVC ARCHIVE
                   </span>
                 </div>
                 <h1 style={{ fontFamily: 'var(--font-data, monospace)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)' }}>
@@ -288,16 +295,20 @@ export const AuditTrailView: React.FC<AuditTrailViewProps> = ({
               <button
                 type="button"
                 className={`auth-tab ${activeTab === 'vault' ? 'active' : ''}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 onClick={() => setActiveTab('vault')}
               >
-                📋 Past Sealed Audits ({totalLogs})
+                <FileText size={13} />
+                <span>Past Sealed Audits ({totalLogs})</span>
               </button>
               <button
                 type="button"
                 className={`auth-tab ${activeTab === 'verify' ? 'active' : ''}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 onClick={() => setActiveTab('verify')}
               >
-                🔍 Public Hash Verifier
+                <Search size={13} />
+                <span>Public Hash Verifier</span>
               </button>
             </div>
           </div>
@@ -494,9 +505,11 @@ export const AuditTrailView: React.FC<AuditTrailViewProps> = ({
                 <button
                   type="button"
                   className="btn-secondary"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                   onClick={() => AuditStore.exportCSV()}
                 >
-                  📊 Export Audit CSV
+                  <Download size={13} />
+                  <span>Export Audit CSV</span>
                 </button>
               </div>
             </div>
@@ -506,23 +519,29 @@ export const AuditTrailView: React.FC<AuditTrailViewProps> = ({
               <button
                 type="button"
                 className={`auth-tab ${activeTab === 'vault' ? 'active' : ''}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 onClick={() => setActiveTab('vault')}
               >
-                📋 Session Audit Logs ({totalLogs})
+                <FileText size={13} />
+                <span>Session Audit Logs ({totalLogs})</span>
               </button>
               <button
                 type="button"
                 className={`auth-tab ${activeTab === 'certificate' ? 'active' : ''}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 onClick={() => setActiveTab('certificate')}
               >
-                📄 CVC Defense Certificate (Active)
+                <FileText size={13} />
+                <span>CVC Defense Certificate (Active)</span>
               </button>
               <button
                 type="button"
                 className={`auth-tab ${activeTab === 'verify' ? 'active' : ''}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 onClick={() => setActiveTab('verify')}
               >
-                🔍 Public Hash Verifier
+                <Search size={13} />
+                <span>Public Hash Verifier</span>
               </button>
             </div>
           </div>

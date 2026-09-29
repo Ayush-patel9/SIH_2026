@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Zap, Bell, BarChart3, FileText, Check } from 'lucide-react';
 import { AlertStore } from './alertStore';
 import type { AlertWithRead } from './alertStore';
 import { TenderImpactMatrix } from './TenderImpactMatrix';
@@ -83,7 +84,7 @@ export const AlertsView: React.FC<AlertsViewProps> = ({ currentData }) => {
               onClick={handleSimulatePush}
               style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
             >
-              <span>⚡</span>
+              <Zap size={14} />
               <span>Simulate Gazette Notification Push</span>
             </button>
 
@@ -114,7 +115,7 @@ export const AlertsView: React.FC<AlertsViewProps> = ({ currentData }) => {
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ fontSize: '14px' }}>🔔</span>
+              <Bell size={14} style={{ color: 'var(--collapse-cobalt)' }} />
               <span style={{ fontFamily: 'var(--font-data)', fontSize: '12px', fontWeight: 700, color: 'var(--collapse-cobalt)' }}>
                 LIVE GAZETTE EVENT RECEIVED:
               </span>
@@ -195,23 +196,29 @@ export const AlertsView: React.FC<AlertsViewProps> = ({ currentData }) => {
         <button
           type="button"
           className={`palette-btn ${activeTab === 'matrix' ? 'selected' : ''}`}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           onClick={() => setActiveTab('matrix')}
         >
-          📊 Active Tender Impact Matrix
+          <BarChart3 size={13} />
+          <span>Active Tender Impact Matrix</span>
         </button>
         <button
           type="button"
           className={`palette-btn ${activeTab === 'alerts_feed' ? 'selected' : ''}`}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           onClick={() => setActiveTab('alerts_feed')}
         >
-          🔔 Gazette Alerts Feed ({alerts.length})
+          <Bell size={13} />
+          <span>Gazette Alerts Feed ({alerts.length})</span>
         </button>
         <button
           type="button"
           className={`palette-btn ${activeTab === 'risk_banner_preview' ? 'selected' : ''}`}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           onClick={() => setActiveTab('risk_banner_preview')}
         >
-          📋 Staleness Risk Banner Spec Preview
+          <FileText size={13} />
+          <span>Staleness Risk Banner Spec Preview</span>
         </button>
       </div>
 
@@ -297,9 +304,15 @@ export const AlertsView: React.FC<AlertsViewProps> = ({ currentData }) => {
                         disabled={alert._read}
                         onClick={() => handleAcknowledge(alert.alert_id)}
                         className="btn-secondary"
-                        style={{ padding: '3px 8px', fontSize: '11px' }}
+                        style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', padding: '3px 8px', fontSize: '11px' }}
                       >
-                        {alert._read ? '✓ Acknowledged' : 'Acknowledge'}
+                        {alert._read ? (
+                          <>
+                            <Check size={11} style={{ color: 'var(--emerald-pass)' }} /> Acknowledged
+                          </>
+                        ) : (
+                          'Acknowledge'
+                        )}
                       </button>
                     </div>
                   </div>

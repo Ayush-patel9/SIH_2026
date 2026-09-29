@@ -25,8 +25,7 @@ export function generateCertificateHTML(
     <div class="certificate-document" style="font-family: 'Literata', 'Times New Roman', serif; max-width: 760px; margin: 0 auto; padding: 36px 40px; color: #161A22; background: #FFFFFF; border: 2px solid #161A22;">
       <!-- Header -->
       <div style="text-align: center; border-bottom: 2px solid #161A22; padding-bottom: 16px; margin-bottom: 24px;">
-        <div style="font-size: 24px; margin-bottom: 4px;">🏛️</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #4A5060;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #4A5060; font-weight: 700;">
           GOVERNMENT OF INDIA · MINISTRY OF CONSUMER AFFAIRS, FOOD & PUBLIC DISTRIBUTION
         </div>
         <div style="font-family: 'Literata', serif; font-size: 20px; font-weight: 700; margin-top: 4px; color: #161A22;">
@@ -93,7 +92,7 @@ export function generateCertificateHTML(
           ${
             primaryRec.certification?.mandatory
               ? `<div style="margin-top: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #B45309; background: #FEF3C7; padding: 4px 8px; border: 1px solid #FCD34D;">
-                  ⚖️ MANDATORY QCO ORDER: ${primaryRec.certification.qco_order_name} (${primaryRec.certification.qco_gazette_ref})
+                  MANDATORY QCO ORDER: ${primaryRec.certification.qco_order_name} (${primaryRec.certification.qco_gazette_ref})
                 </div>`
               : ''
           }

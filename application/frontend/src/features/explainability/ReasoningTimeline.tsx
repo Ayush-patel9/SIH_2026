@@ -1,8 +1,24 @@
 import React from 'react';
+import { Search, Compass, Share2, Scale, FileText } from 'lucide-react';
 import { STEP_LABELS, FALLBACK_TRACE, type ReasoningStep } from './reasoningParser';
 
 interface ReasoningTimelineProps {
   steps?: ReasoningStep[];
+}
+
+function getStepIcon(stepKey: string) {
+  switch (stepKey) {
+    case 'query_understanding':
+      return <Search size={14} />;
+    case 'vector_retrieval':
+      return <Compass size={14} />;
+    case 'graph_traversal':
+      return <Share2 size={14} />;
+    case 'qco_compliance_lookup':
+      return <Scale size={14} />;
+    default:
+      return <FileText size={14} />;
+  }
 }
 
 export const ReasoningTimeline: React.FC<ReasoningTimelineProps> = ({ steps }) => {
@@ -13,7 +29,7 @@ export const ReasoningTimeline: React.FC<ReasoningTimelineProps> = ({ steps }) =
       <div className="reasoning-timeline">
         {activeSteps.map((stepItem, index) => {
           const meta = STEP_LABELS[stepItem.step] || {
-            icon: '📋',
+            icon: 'FileText',
             title: stepItem.step.replace(/_/g, ' ').toUpperCase(),
             subtitle: 'Pipeline Inference Stage',
           };
@@ -22,21 +38,18 @@ export const ReasoningTimeline: React.FC<ReasoningTimelineProps> = ({ steps }) =
           const confidencePct = Math.round(confidence * 100);
 
           let cardModifier = 'high-confidence';
-          let fillModifier = 'cobalt';
           if (confidence < 0.80) {
             cardModifier = 'low-confidence';
-            fillModifier = 'amber';
           } else if (confidence < 0.90) {
             cardModifier = 'med-confidence';
-            fillModifier = 'violet';
           }
 
           return (
             <div key={index} className={`timeline-step-card ${cardModifier}`} style={{ padding: '14px 16px' }}>
               <div className="timeline-step-header">
                 <div className="timeline-step-title-group">
-                  <span className="timeline-step-icon" style={{ width: '28px', height: '28px', fontSize: '15px' }}>
-                    {meta.icon}
+                  <span className="timeline-step-icon" style={{ width: '28px', height: '28px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    {getStepIcon(stepItem.step)}
                   </span>
                   <div>
                     <div className="timeline-step-title" style={{ fontSize: '13px' }}>{meta.title}</div>

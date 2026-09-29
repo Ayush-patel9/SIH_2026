@@ -4,6 +4,7 @@
  */
 
 import React, { useState } from 'react';
+import { AlertTriangle } from 'lucide-react';
 
 interface TopStandardsBarProps {
   standardsQueried: Record<string, number>;
@@ -148,10 +149,14 @@ export const TopStandardsBar: React.FC<TopStandardsBarProps> = ({
                         fontSize: '10px',
                         color: correctionRate > 15 ? 'var(--error-line)' : 'var(--signal-amber)',
                         fontWeight: 600,
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '3px',
                       }}
                       title={`Correction rate: ${correctionRate.toFixed(1)}%`}
                     >
-                      ⚠️ {correctionRate.toFixed(1)}%
+                      <AlertTriangle size={10} />
+                      <span>{correctionRate.toFixed(1)}%</span>
                     </span>
                   )}
                 </div>

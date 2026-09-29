@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Scale, Download } from 'lucide-react';
 import type { StandardsResponse, AlternativeRecommendation } from '../../types';
 import { ConflictResolver } from './ConflictResolver';
 import { StandardsComparator } from './StandardsComparator';
@@ -18,7 +19,9 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
     return (
       <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
         <div className="workbench-card" style={{ padding: '40px', textAlign: 'center' }}>
-          <div style={{ fontSize: '32px', marginBottom: '12px' }}>⚖️</div>
+          <div style={{ marginBottom: '12px', display: 'flex', justifyContent: 'center' }}>
+            <Scale size={32} style={{ color: 'var(--ink-muted)' }} />
+          </div>
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 600, color: 'var(--ink)' }}>
             No Active Standard Query for Comparison
           </h3>
@@ -109,7 +112,7 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
               className="btn-secondary"
               style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', padding: '6px 12px' }}
             >
-              <span>📥</span>
+              <Download size={14} />
               <span>Export Comparison CSV</span>
             </button>
           </div>

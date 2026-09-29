@@ -6,7 +6,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { Mic, Volume2, Globe2, Sparkles, Play, Square, Languages } from 'lucide-react';
+import { Mic, Volume2, Globe2, Sparkles, Play, Square, Languages, ShieldCheck } from 'lucide-react';
 import type { SupportedLanguage } from '../../types';
 
 interface VoiceSample {
@@ -329,9 +329,13 @@ export const BhashiniVoiceStudioView: React.FC = () => {
               borderRadius: 'var(--radius-sm)',
               fontSize: '11.5px',
               color: '#92400E',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
             }}
           >
-            🛡️ Bhashini Indic terms are verified by BIS translation committees under the National Language Translation Mission (NLTM).
+            <ShieldCheck size={14} style={{ color: '#D97706', flexShrink: 0 }} />
+            <span>Bhashini Indic terms are verified by BIS translation committees under the National Language Translation Mission (NLTM).</span>
           </div>
         </div>
       </div>

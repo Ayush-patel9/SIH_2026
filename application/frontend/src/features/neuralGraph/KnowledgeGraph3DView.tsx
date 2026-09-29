@@ -6,7 +6,7 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, ZoomIn, ZoomOut, RotateCcw, Shield, Layers, Compass, Filter, Share2, Sparkles, Loader2 } from 'lucide-react';
+import { Search, ZoomIn, ZoomOut, RotateCcw, Shield, Layers, Compass, Filter, Share2, Sparkles, Loader2, X } from 'lucide-react';
 import { API_BASE } from '../../api/standardsClient';
 
 interface Node {
@@ -581,9 +581,9 @@ export const KnowledgeGraph3DView: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setSearchQuery('')}
-                style={{ background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', fontSize: '13px', padding: '4px' }}
+                style={{ background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '4px' }}
               >
-                ✕
+                <X size={13} />
               </button>
             )}
             <button

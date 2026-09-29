@@ -1,4 +1,5 @@
 import React from 'react';
+import { CheckCircle2, FileText, Bell, AlertTriangle, AlertOctagon } from 'lucide-react';
 import type { StalenessRisk, StalenessRiskLevel } from '../../types';
 
 interface StalenessRiskBannerProps {
@@ -13,7 +14,7 @@ const RISK_CONFIG: Record<
     border: string;
     color: string;
     badgeBg: string;
-    icon: string;
+    IconComponent: React.FC<{ size?: number; style?: React.CSSProperties }>;
     defaultLabel: string;
   }
 > = {
@@ -22,7 +23,7 @@ const RISK_CONFIG: Record<
     border: '#BBF7D0',
     color: 'var(--emerald-pass)',
     badgeBg: '#DCFCE7',
-    icon: '✓',
+    IconComponent: CheckCircle2,
     defaultLabel: 'All Recommended Standards Are Active and Gazetted',
   },
   LOW: {
@@ -30,7 +31,7 @@ const RISK_CONFIG: Record<
     border: '#BFDBFE',
     color: 'var(--collapse-cobalt)',
     badgeBg: '#DBEAFE',
-    icon: '📋',
+    IconComponent: FileText,
     defaultLabel: 'Standard Active — Routine Gazette Surveillance',
   },
   MEDIUM: {
@@ -38,7 +39,7 @@ const RISK_CONFIG: Record<
     border: '#E9D5FF',
     color: 'var(--superposition-violet)',
     badgeBg: '#F3E8FF',
-    icon: '🔔',
+    IconComponent: Bell,
     defaultLabel: 'Standard Under Technical Committee Revision',
   },
   HIGH: {
@@ -46,7 +47,7 @@ const RISK_CONFIG: Record<
     border: '#FDE68A',
     color: '#B45309',
     badgeBg: '#FEF3C7',
-    icon: '⚠️',
+    IconComponent: AlertTriangle,
     defaultLabel: 'Gazette Amendment Published — Revision Required',
   },
   CRITICAL: {
@@ -54,7 +55,7 @@ const RISK_CONFIG: Record<
     border: '#FECACA',
     color: 'var(--error-line)',
     badgeBg: '#FEE2E2',
-    icon: '🔴',
+    IconComponent: AlertOctagon,
     defaultLabel: 'Standard WITHDRAWN or Superseded — Immediate Corrigendum Required',
   },
 };
@@ -64,6 +65,7 @@ export const StalenessRiskBanner: React.FC<StalenessRiskBannerProps> = ({ risk, 
 
   const level = (risk.risk_level || 'NONE').toUpperCase() as StalenessRiskLevel;
   const config = RISK_CONFIG[level] || RISK_CONFIG.NONE;
+  const Icon = config.IconComponent;
 
   return (
     <div
@@ -90,11 +92,9 @@ export const StalenessRiskBanner: React.FC<StalenessRiskBannerProps> = ({ risk, 
               borderRadius: '50%',
               background: config.badgeBg,
               color: config.color,
-              fontSize: '12px',
-              fontWeight: 700,
             }}
           >
-            {config.icon}
+            <Icon size={12} />
           </span>
           <span
             style={{

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CheckCircle2, XCircle } from 'lucide-react';
 import type { StandardsResponse } from '../../types';
 import { verifyHash, type HashVerificationResult } from './hashUtils';
 
@@ -75,7 +76,11 @@ export const AuditHashVerifier: React.FC<AuditHashVerifierProps> = ({
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ fontSize: '18px' }}>{result.valid ? '✅' : '❌'}</span>
+              {result.valid ? (
+                <CheckCircle2 size={18} style={{ color: 'var(--emerald-pass)' }} />
+              ) : (
+                <XCircle size={18} style={{ color: 'var(--error-line)' }} />
+              )}
               <strong
                 style={{
                   fontFamily: 'var(--font-data)',

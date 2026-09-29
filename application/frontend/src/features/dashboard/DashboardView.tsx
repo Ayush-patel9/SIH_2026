@@ -5,6 +5,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import { BarChart3 } from 'lucide-react';
 import { AuditStore } from '../audit/auditStore';
 import { FeedbackStore } from '../feedback/feedbackStore';
 import { computeDashboardMetrics, type DashboardMetrics } from './metricsAggregator';
@@ -158,9 +159,10 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onSelectStandard }
               type="button"
               className="btn-secondary"
               onClick={seedDemoData}
-              style={{ fontSize: '11px', padding: '4px 10px', marginTop: '4px' }}
+              style={{ fontSize: '11px', padding: '4px 10px', marginTop: '4px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
             >
-              📊 Load Demo Dataset (20 Records)
+              <BarChart3 size={12} />
+              <span>Load Demo Dataset (20 Records)</span>
             </button>
           </div>
         </div>

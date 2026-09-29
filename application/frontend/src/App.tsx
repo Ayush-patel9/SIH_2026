@@ -66,6 +66,9 @@ import {
   Building2,
   Factory,
   Bot,
+  X,
+  FlaskConical,
+  AlertOctagon,
 } from 'lucide-react';
 
 // Dynamic parameter and performance extractor for any of the 22,011 Indian Standards
@@ -579,7 +582,7 @@ export default function App({ onLogout }: AppProps = {}) {
             id: prev.length,
             type: 'grounded-observation',
             source: 'alert',
-            text: `🚨 Live Alert Broadcast [${liveAlert.severity}]: ${stdNum} — ${action}`,
+            text: `Live Alert Broadcast [${liveAlert.severity}]: ${stdNum} — ${action}`,
           },
         ]);
       }
@@ -785,7 +788,7 @@ export default function App({ onLogout }: AppProps = {}) {
               }}
               title="Open BIS Authority AI Assistant for GFR & CVC Defense"
             >
-              <span>🤖</span>
+              <Bot size={14} />
               <span>BIS Assistant</span>
             </button>
 
@@ -1014,9 +1017,9 @@ export default function App({ onLogout }: AppProps = {}) {
                       <button
                         type="button"
                         onClick={() => setSearchQuery('')}
-                        style={{ background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', fontSize: '13px', padding: '4px' }}
+                        style={{ background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '4px' }}
                       >
-                        ✕
+                        <X size={13} />
                       </button>
                     )}
                     <button
@@ -1077,7 +1080,7 @@ export default function App({ onLogout }: AppProps = {}) {
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span>🧪</span>
+                    <FlaskConical size={16} />
                     <span>
                       <strong>SANDBOX SIMULATION MODE ACTIVE</strong> — Queries in this session are dry-runs and will not be committed to the official CVC Audit Registry.
                     </span>
@@ -1119,7 +1122,7 @@ export default function App({ onLogout }: AppProps = {}) {
                       }}
                     >
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 700, marginBottom: '4px' }}>
-                        <span>🚨</span>
+                        <AlertTriangle size={15} />
                         <span>WITHDRAWN / OUTDATED CITATION DETECTED: {outdated.cited_standard}</span>
                         <span style={{ fontSize: '10.5px', background: '#DC2626', color: '#FFF', padding: '2px 6px', borderRadius: '2px' }}>
                           {outdated.severity || 'CRITICAL'}
@@ -1267,9 +1270,9 @@ export default function App({ onLogout }: AppProps = {}) {
                             <button
                               type="button"
                               onClick={() => setVaultSearchFilter('')}
-                              style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', fontSize: '11px' }}
+                              style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', display: 'flex', alignItems: 'center' }}
                             >
-                              ✕
+                              <X size={12} />
                             </button>
                           )}
                         </div>
@@ -1306,7 +1309,7 @@ export default function App({ onLogout }: AppProps = {}) {
                       <p style={{ fontSize: '13px', color: 'var(--ink-secondary)', maxWidth: '420px', margin: 0 }}>
                         {vaultSearchFilter
                           ? `No saved standards match "${vaultSearchFilter}". Try clearing your filter query.`
-                          : 'Search for any Indian Standard and click "💾 Save & Approve Standard in DB" to persist it into this bureau vault.'}
+                          : 'Search for any Indian Standard and click "Save & Approve Standard in DB" to persist it into this bureau vault.'}
                       </p>
                       <button
                         type="button"

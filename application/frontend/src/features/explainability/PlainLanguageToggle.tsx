@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BookOpen, HelpCircle } from 'lucide-react';
 import { synthesizePlainLanguage, synthesizeExplainLikeImNewHere } from './reasoningParser';
 
 interface PlainLanguageToggleProps {
@@ -41,9 +42,9 @@ export const PlainLanguageToggle: React.FC<PlainLanguageToggleProps> = ({
     <div className="plain-language-card">
       <div className="plain-language-header">
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ fontSize: '16px' }}>📜</span>
+          <BookOpen size={16} color="#92400E" />
           <span className="section-label" style={{ margin: 0, color: '#92400E' }}>
-            {mode === 'beginner' ? "👶 'EXPLAIN LIKE I'M NEW HERE' NON-TECHNICAL TRANSLATION" : 'PROCUREMENT EXECUTIVE SUMMARY'}
+            {mode === 'beginner' ? "NON-TECHNICAL PLAIN LANGUAGE TRANSLATION" : 'PROCUREMENT EXECUTIVE SUMMARY'}
           </span>
         </div>
 
@@ -70,9 +71,13 @@ export const PlainLanguageToggle: React.FC<PlainLanguageToggleProps> = ({
               fontWeight: 700,
               background: mode === 'beginner' ? 'var(--superposition-violet)' : undefined,
               color: mode === 'beginner' ? '#ffffff' : undefined,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px',
             }}
           >
-            👶 Explain Like I'm New
+            <HelpCircle size={13} />
+            <span>Plain Summary</span>
           </button>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AlertTriangle, CheckCircle2, ChevronUp, ChevronDown } from 'lucide-react';
 import type { NITCustomFields } from './clauseTemplates';
 
 interface ClauseEditorProps {
@@ -41,6 +42,9 @@ export const ClauseEditor: React.FC<ClauseEditorProps> = ({
             {placeholderCount > 0 ? (
               <span
                 style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '4px',
                   fontFamily: 'var(--font-data)',
                   fontSize: '10px',
                   padding: '1px 6px',
@@ -51,11 +55,14 @@ export const ClauseEditor: React.FC<ClauseEditorProps> = ({
                   fontWeight: 700,
                 }}
               >
-                ⚠️ {placeholderCount} Placeholder{placeholderCount === 1 ? '' : 's'} Remaining
+                <AlertTriangle size={11} /> {placeholderCount} Placeholder{placeholderCount === 1 ? '' : 's'} Remaining
               </span>
             ) : (
               <span
                 style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '4px',
                   fontFamily: 'var(--font-data)',
                   fontSize: '10px',
                   padding: '1px 6px',
@@ -66,7 +73,7 @@ export const ClauseEditor: React.FC<ClauseEditorProps> = ({
                   fontWeight: 700,
                 }}
               >
-                ✓ All Metadata Complete
+                <CheckCircle2 size={11} /> All Metadata Complete
               </span>
             )}
           </div>
@@ -74,10 +81,18 @@ export const ClauseEditor: React.FC<ClauseEditorProps> = ({
           <button
             type="button"
             className="btn-secondary"
-            style={{ padding: '2px 8px', fontSize: '11px' }}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', padding: '2px 8px', fontSize: '11px' }}
             onClick={() => setShowQuickFill(!showQuickFill)}
           >
-            {showQuickFill ? '▲ Hide Form' : '▼ Expand Form'}
+            {showQuickFill ? (
+              <>
+                <ChevronUp size={12} /> Hide Form
+              </>
+            ) : (
+              <>
+                <ChevronDown size={12} /> Expand Form
+              </>
+            )}
           </button>
         </div>
 

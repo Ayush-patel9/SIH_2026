@@ -1,4 +1,5 @@
 import React from 'react';
+import { FileText, Printer } from 'lucide-react';
 import type { StandardsResponse } from '../../types';
 import { generateCertificateHTML, downloadCertificate } from './certificateGenerator';
 
@@ -10,7 +11,7 @@ export const AuditCertificate: React.FC<AuditCertificateProps> = ({ data }) => {
   if (!data) {
     return (
       <div className="workbench-card" style={{ padding: '40px', textAlign: 'center' }}>
-        <div style={{ fontSize: '32px', marginBottom: '12px' }}>📄</div>
+        <FileText size={36} style={{ color: 'var(--ink-muted)', marginBottom: '12px' }} />
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 600, color: 'var(--ink)' }}>
           No Active Query for Certificate
         </h3>
@@ -63,9 +64,11 @@ export const AuditCertificate: React.FC<AuditCertificateProps> = ({ data }) => {
         <button
           type="button"
           className="btn-run"
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           onClick={handlePrint}
         >
-          🖨️ Export Printable PDF
+          <Printer size={14} />
+          <span>Export Printable PDF</span>
         </button>
       </div>
 

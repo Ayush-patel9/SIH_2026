@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Scale } from 'lucide-react';
 import type { StandardsResponse } from '../../types';
 import { ReasoningTimeline } from './ReasoningTimeline';
 import { ConfidenceBreakdownBar } from './ConfidenceBreakdownBar';
@@ -28,8 +29,9 @@ export const ExplainabilityView: React.FC<ExplainabilityViewProps> = ({ data }) 
                 {primary?.status || 'ACTIVE'}
               </span>
               {qco?.mandatory && (
-                <span className="concept-status-badge" style={{ background: 'rgba(217, 119, 6, 0.1)', color: '#B45309', border: '1px solid rgba(217, 119, 6, 0.3)' }}>
-                  ⚖️ {qco.scheme.replace(/_/g, ' ')} MANDATORY
+                <span className="concept-status-badge" style={{ background: 'rgba(217, 119, 6, 0.1)', color: '#B45309', border: '1px solid rgba(217, 119, 6, 0.3)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                  <Scale size={11} />
+                  <span>{qco.scheme.replace(/_/g, ' ')} MANDATORY</span>
                 </span>
               )}
               <span className="section-label" style={{ margin: 0 }}>

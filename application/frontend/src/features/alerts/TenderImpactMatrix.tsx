@@ -1,4 +1,16 @@
 import React, { useState, useMemo } from 'react';
+import {
+  AlertOctagon,
+  AlertTriangle,
+  Bell,
+  ShieldAlert,
+  FileText,
+  CheckCircle2,
+  Download,
+  X,
+  Copy,
+  Check,
+} from 'lucide-react';
 import type { AlertPayload } from '../../types';
 import { buildImpactMatrix, SAVED_TENDERS } from './impactMatrix';
 import type { TenderRecord, TenderImpactRow, ImpactMatrixCell } from './impactMatrix';
@@ -94,7 +106,7 @@ export const TenderImpactMatrix: React.FC<TenderImpactMatrixProps> = ({
     switch (cell.status) {
       case 'WITHDRAWN':
         return {
-          icon: '🔴',
+          IconComponent: AlertOctagon,
           text: 'WITHDRAWN',
           bg: '#FEE2E2',
           color: 'var(--error-line)',
@@ -102,7 +114,7 @@ export const TenderImpactMatrix: React.FC<TenderImpactMatrixProps> = ({
         };
       case 'AMENDED':
         return {
-          icon: '⚠️',
+          IconComponent: AlertTriangle,
           text: 'AMENDED',
           bg: '#FEF3C7',
           color: '#B45309',
@@ -110,7 +122,7 @@ export const TenderImpactMatrix: React.FC<TenderImpactMatrixProps> = ({
         };
       case 'UNDER_REVISION':
         return {
-          icon: '🔔',
+          IconComponent: Bell,
           text: 'IN REVISION',
           bg: '#F3E8FF',
           color: 'var(--superposition-violet)',
@@ -118,7 +130,7 @@ export const TenderImpactMatrix: React.FC<TenderImpactMatrixProps> = ({
         };
       case 'QCO_MANDATORY':
         return {
-          icon: '🚨',
+          IconComponent: ShieldAlert,
           text: 'QCO MANDATE',
           bg: '#FEE2E2',
           color: 'var(--error-line)',
@@ -126,7 +138,7 @@ export const TenderImpactMatrix: React.FC<TenderImpactMatrixProps> = ({
         };
       case 'NEW_MANDATORY':
         return {
-          icon: '📋',
+          IconComponent: FileText,
           text: 'NEW QCO',
           bg: '#DBEAFE',
           color: 'var(--collapse-cobalt)',
@@ -135,7 +147,7 @@ export const TenderImpactMatrix: React.FC<TenderImpactMatrixProps> = ({
       case 'OK':
       default:
         return {
-          icon: '✓',
+          IconComponent: CheckCircle2,
           text: 'CURRENT',
           bg: '#DCFCE7',
           color: 'var(--emerald-pass)',
@@ -228,7 +240,7 @@ Approved by Technical Review Committee (ManakAI Automated Vigilance Audit)
           className="btn-secondary"
           style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', padding: '6px 12px' }}
         >
-          <span>📥</span>
+          <Download size={13} />
           <span>Export Matrix CSV</span>
         </button>
       </div>
@@ -409,6 +421,7 @@ Approved by Technical Review Committee (ManakAI Automated Vigilance Audit)
                         {tender.cited_standards.map((std) => {
                           const cell = row.cells[std] || { standard: std, status: 'OK', severity: 'NONE' };
                           const badge = getCellBadge(cell);
+                          const BadgeIcon = badge.IconComponent;
 
                           return (
                             <button
@@ -433,7 +446,7 @@ Approved by Technical Review Committee (ManakAI Automated Vigilance Audit)
                                   : `${std}: ${cell.status} (${cell.event || 'Click for action notice'})`
                               }
                             >
-                              <span style={{ fontSize: '11px' }}>{badge.icon}</span>
+                              <BadgeIcon size={11} />
                               <span className="font-mono" style={{ fontSize: '11px', fontWeight: 700 }}>
                                 {std}
                               </span>
@@ -457,20 +470,20 @@ Approved by Technical Review Committee (ManakAI Automated Vigilance Audit)
                     {/* Highest Severity Status */}
                     <td style={{ textAlign: 'center' }}>
                       {row.highestSeverity === 'CRITICAL' ? (
-                        <span className="badge-status withdrawn">
-                          🔴 CRITICAL ({row.totalRisks})
+                        <span className="badge-status withdrawn" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                          <AlertOctagon size={11} /> CRITICAL ({row.totalRisks})
                         </span>
                       ) : row.highestSeverity === 'HIGH' ? (
-                        <span className="badge-status in-progress" style={{ background: '#FEF3C7', color: '#B45309' }}>
-                          ⚠️ HIGH ({row.totalRisks})
+                        <span className="badge-status in-progress" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', background: '#FEF3C7', color: '#B45309' }}>
+                          <AlertTriangle size={11} /> HIGH ({row.totalRisks})
                         </span>
                       ) : row.highestSeverity === 'MEDIUM' ? (
-                        <span className="badge-status in-progress" style={{ background: '#F3E8FF', color: 'var(--superposition-violet)' }}>
-                          🔔 REVISION
+                        <span className="badge-status in-progress" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', background: '#F3E8FF', color: 'var(--superposition-violet)' }}>
+                          <Bell size={11} /> REVISION
                         </span>
                       ) : (
-                        <span className="badge-status active">
-                          ✓ COMPLIANT
+                        <span className="badge-status active" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                          <CheckCircle2 size={11} /> COMPLIANT
                         </span>
                       )}
                     </td>
@@ -552,10 +565,10 @@ Approved by Technical Review Committee (ManakAI Automated Vigilance Audit)
               <button
                 type="button"
                 className="btn-secondary"
-                style={{ padding: '4px 8px', fontSize: '12px' }}
+                style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '4px 8px', fontSize: '12px' }}
                 onClick={() => setInspectingCell(null)}
               >
-                ✕
+                <X size={14} />
               </button>
             </div>
 
@@ -621,10 +634,18 @@ Approved by Technical Review Committee (ManakAI Automated Vigilance Audit)
                     <button
                       type="button"
                       className="btn-secondary"
-                      style={{ fontSize: '11px', padding: '2px 8px' }}
+                      style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '11px', padding: '2px 8px' }}
                       onClick={() => handleCopyCorrigendum(inspectingCell.tender, inspectingCell.cell)}
                     >
-                      {corrigendumCopied ? '✓ Copied to Clipboard' : '📋 Copy Notice'}
+                      {corrigendumCopied ? (
+                        <>
+                          <Check size={11} style={{ color: 'var(--emerald-pass)' }} /> Copied to Clipboard
+                        </>
+                      ) : (
+                        <>
+                          <Copy size={11} /> Copy Notice
+                        </>
+                      )}
                     </button>
                   </div>
                   <textarea
@@ -659,9 +680,18 @@ Approved by Technical Review Committee (ManakAI Automated Vigilance Audit)
                   <button
                     type="button"
                     className="btn-run"
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                     onClick={() => handleCopyCorrigendum(inspectingCell.tender, inspectingCell.cell)}
                   >
-                    {corrigendumCopied ? '✓ Copied' : 'Copy Corrigendum Text'}
+                    {corrigendumCopied ? (
+                      <>
+                        <Check size={11} /> Copied
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={11} /> Copy Corrigendum Text
+                      </>
+                    )}
                   </button>
                 )}
               </div>
@@ -722,10 +752,10 @@ Approved by Technical Review Committee (ManakAI Automated Vigilance Audit)
               <button
                 type="button"
                 className="btn-secondary"
-                style={{ padding: '4px 8px', fontSize: '12px' }}
+                style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '4px 8px', fontSize: '12px' }}
                 onClick={() => setInspectingTender(null)}
               >
-                ✕
+                <X size={14} />
               </button>
             </div>
 

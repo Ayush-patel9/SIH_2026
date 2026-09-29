@@ -80,7 +80,7 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
     };
 
     onUpdateProject(updated);
-    showToast(`✓ Standard updated to ${standardToApply}`);
+    showToast(`Standard updated to ${standardToApply}`);
   };
 
   // Action: Apply alternative or custom override
@@ -117,7 +117,7 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
     setActiveModalClause(null);
     setCustomOverrideInput('');
     setOverrideReasonInput('');
-    showToast(`✓ Applied custom standard: ${standard}`);
+    showToast(`Applied custom standard: ${standard}`);
   };
 
   return (
@@ -227,7 +227,7 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
           <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
             {role !== 'VENDOR' && (
               <button
-                onClick={() => showToast('✓ Tender specification verified for public e-procurement')}
+                onClick={() => showToast('Tender specification verified for public e-procurement')}
                 className="action-btn primary"
                 style={{ padding: '9px 16px', fontSize: '12.5px', display: 'flex', alignItems: 'center', gap: '6px', fontWeight: 600 }}
               >
@@ -428,9 +428,9 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
                     }}
                   >
                     {clause.userDecision === 'APPROVED'
-                      ? '✓ APPROVED'
+                      ? 'APPROVED'
                       : clause.userDecision === 'OVERRIDDEN'
-                      ? '⚡ CUSTOM OVERRIDE'
+                      ? 'CUSTOM OVERRIDE'
                       : clause.status === 'WITHDRAWN'
                       ? 'WITHDRAWN STANDARD'
                       : clause.status === 'OUTDATED'
@@ -604,7 +604,7 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
 
           <div style={{ display: 'flex', gap: '10px' }}>
             <button
-              onClick={() => showToast('✓ Audit certificate exported')}
+              onClick={() => showToast('Audit certificate exported')}
               className="action-btn primary"
               style={{ padding: '8px 16px', fontSize: '12.5px', display: 'flex', alignItems: 'center', gap: '6px' }}
             >

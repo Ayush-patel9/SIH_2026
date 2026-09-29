@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Lock, FileText, Check } from 'lucide-react';
 import type { StandardsResponse } from '../../types';
 import { generateCertificateHTML, downloadCertificate } from './certificateGenerator';
 
@@ -138,13 +139,16 @@ export const AuditLogEntry: React.FC<AuditLogEntryProps> = ({
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
-          <span style={{ fontFamily: 'var(--font-data)', fontSize: '9.5px', color: '#A1A1AA', textTransform: 'uppercase', letterSpacing: '0.06em', fontWeight: 700 }}>
-            🔒 IMMUTABLE SHA-256 AUDIT HASH
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontFamily: 'var(--font-data)', fontSize: '9.5px', color: '#A1A1AA', textTransform: 'uppercase', letterSpacing: '0.06em', fontWeight: 700 }}>
+            <Lock size={11} /> IMMUTABLE SHA-256 AUDIT HASH
           </span>
           <div style={{ display: 'flex', gap: '6px' }}>
             <button
               type="button"
               style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '4px',
                 background: '#27272A',
                 border: '1px solid #3F3F46',
                 borderRadius: 'var(--radius-xs)',
@@ -157,7 +161,13 @@ export const AuditLogEntry: React.FC<AuditLogEntryProps> = ({
               }}
               onClick={handleCopyHash}
             >
-              {copied ? 'Copied ✓' : 'Copy'}
+              {copied ? (
+                <>
+                  <Check size={10} style={{ color: 'var(--emerald-pass)' }} /> Copied
+                </>
+              ) : (
+                'Copy'
+              )}
             </button>
             {onVerify && (
               <button
@@ -208,10 +218,11 @@ export const AuditLogEntry: React.FC<AuditLogEntryProps> = ({
         <button
           type="button"
           className="btn-run"
-          style={{ fontSize: '11px', padding: '5px 14px' }}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '11px', padding: '5px 14px' }}
           onClick={handleViewCertificate}
         >
-          📄 View Legal Certificate
+          <FileText size={12} />
+          <span>View Legal Certificate</span>
         </button>
       </div>
     </div>

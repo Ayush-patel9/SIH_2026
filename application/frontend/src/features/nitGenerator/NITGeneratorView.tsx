@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FileText, Scale } from 'lucide-react';
 import type { StandardsResponse } from '../../types';
 import { generateNITClause } from './clauseTemplates';
 import type { NITCustomFields } from './clauseTemplates';
@@ -15,7 +16,7 @@ export const NITGeneratorView: React.FC<NITGeneratorViewProps> = ({ currentData 
     return (
       <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
         <div className="workbench-card" style={{ padding: '40px', textAlign: 'center' }}>
-          <div style={{ fontSize: '32px', marginBottom: '12px' }}>📝</div>
+          <FileText size={36} style={{ color: 'var(--ink-muted)', marginBottom: '12px' }} />
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 600, color: 'var(--ink)' }}>
             No Active Standard Selected for NIT Clause Generation
           </h3>
@@ -125,7 +126,7 @@ export const NITGeneratorView: React.FC<NITGeneratorViewProps> = ({ currentData 
           alignItems: 'flex-start',
         }}
       >
-        <span style={{ fontSize: '20px', marginTop: '2px' }}>⚖️</span>
+        <Scale size={20} style={{ color: 'var(--collapse-cobalt)', marginTop: '2px', flexShrink: 0 }} />
         <div>
           <strong style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink)', textTransform: 'uppercase' }}>
             GOVERNMENT PROCUREMENT VIGILANCE COMPLIANCE NOTE

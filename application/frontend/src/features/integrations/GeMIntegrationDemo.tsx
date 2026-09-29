@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ShieldCheck, ShoppingCart, ShieldAlert, CheckCircle2, AlertOctagon } from 'lucide-react';
 
 interface GeMProduct {
   id: string;
@@ -114,9 +115,13 @@ export const GeMIntegrationDemo: React.FC = () => {
               borderRadius: '4px',
               fontSize: '11px',
               fontFamily: 'var(--font-data)',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
             }}
           >
-            🛡️ ManakAI Live Gatekeeper Active
+            <ShieldCheck size={14} />
+            <span>ManakAI Live Gatekeeper Active</span>
           </span>
         </div>
       </div>
@@ -132,9 +137,10 @@ export const GeMIntegrationDemo: React.FC = () => {
               setSelectedProductId(p.id);
               setSimulatedCheckout(false);
             }}
-            style={{ fontSize: '12px', padding: '6px 14px' }}
+            style={{ fontSize: '12px', padding: '6px 14px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           >
-            {p.qcoCompliant ? '🟢' : '🔴'} {p.title.split('(')[0]}
+            {p.qcoCompliant ? <CheckCircle2 size={12} color="#16a34a" /> : <AlertOctagon size={12} color="#dc2626" />}
+            <span>{p.title.split('(')[0]}</span>
           </button>
         ))}
       </div>
@@ -212,9 +218,22 @@ export const GeMIntegrationDemo: React.FC = () => {
                 background: product.qcoCompliant ? 'var(--collapse-cobalt)' : 'var(--error-line)',
                 fontSize: '12px',
                 padding: '8px 16px',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
               }}
             >
-              {product.qcoCompliant ? '🛒 Place GeM Direct Purchase Order' : '⛔ Blocked by ManakAI'}
+              {product.qcoCompliant ? (
+                <>
+                  <ShoppingCart size={14} />
+                  <span>Place GeM Direct Purchase Order</span>
+                </>
+              ) : (
+                <>
+                  <ShieldAlert size={14} />
+                  <span>Blocked by ManakAI</span>
+                </>
+              )}
             </button>
           </div>
 
@@ -229,15 +248,20 @@ export const GeMIntegrationDemo: React.FC = () => {
                 fontSize: '12px',
                 fontFamily: 'var(--font-data)',
                 color: product.qcoCompliant ? '#15803d' : '#991b1b',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
               }}
             >
               {product.qcoCompliant ? (
                 <>
-                  ✓ <strong>GeM Sanction Order #GEM-SO-2026-8812 Issued!</strong> GFR Rule 144(xi) statutory clearance verified. BIS ISI Mark authenticated via ManakOnline gateway.
+                  <CheckCircle2 size={16} style={{ flexShrink: 0 }} />
+                  <span><strong>GeM Sanction Order #GEM-SO-2026-8812 Issued!</strong> GFR Rule 144(xi) statutory clearance verified. BIS ISI Mark authenticated via ManakOnline gateway.</span>
                 </>
               ) : (
                 <>
-                  ⛔ <strong>TRANSACTION BLOCKED BY MANAKAI STATUTORY GATEWAY:</strong> This product cites superseded standard ({product.claimedStandard}) and invalid BIS CM/L license. GeM procurement cannot proceed without triggering a CVC Vigilance inquiry.
+                  <ShieldAlert size={16} style={{ flexShrink: 0 }} />
+                  <span><strong>TRANSACTION BLOCKED BY MANAKAI STATUTORY GATEWAY:</strong> This product cites superseded standard ({product.claimedStandard}) and invalid BIS CM/L license. GeM procurement cannot proceed without triggering a CVC Vigilance inquiry.</span>
                 </>
               )}
             </div>
@@ -271,14 +295,24 @@ export const GeMIntegrationDemo: React.FC = () => {
             </span>
           </div>
 
-          <h4 style={{ fontFamily: 'var(--font-data)', fontSize: '15px', fontWeight: 700, color: 'var(--ink)', marginBottom: '12px' }}>
-            {product.qcoCompliant ? '🟢 Statutory Clearance Granted' : '🔴 Statutory Non-Compliance Detected'}
+          <h4 style={{ fontFamily: 'var(--font-data)', fontSize: '15px', fontWeight: 700, color: 'var(--ink)', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            {product.qcoCompliant ? (
+              <>
+                <CheckCircle2 size={16} color="#16a34a" />
+                <span>Statutory Clearance Granted</span>
+              </>
+            ) : (
+              <>
+                <AlertOctagon size={16} color="#dc2626" />
+                <span>Statutory Non-Compliance Detected</span>
+              </>
+            )}
           </h4>
 
           {/* Verification Checklist */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '12px', fontFamily: 'var(--font-data)' }}>
-              <span>{product.qcoCompliant ? '✅' : '❌'}</span>
+              <span>{product.qcoCompliant ? <CheckCircle2 size={15} color="#16a34a" /> : <AlertOctagon size={15} color="#dc2626" />}</span>
               <div>
                 <strong>Active BIS Standard Check:</strong>{' '}
                 {product.qcoCompliant ? `${product.claimedStandard} is ACTIVE` : `${product.claimedStandard} is WITHDRAWN`}
@@ -286,7 +320,7 @@ export const GeMIntegrationDemo: React.FC = () => {
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '12px', fontFamily: 'var(--font-data)' }}>
-              <span>{product.licenseeValid ? '✅' : '❌'}</span>
+              <span>{product.licenseeValid ? <CheckCircle2 size={15} color="#16a34a" /> : <AlertOctagon size={15} color="#dc2626" />}</span>
               <div>
                 <strong>ManakOnline Manufacturer CM/L License:</strong>{' '}
                 {product.licenseeValid ? 'VALID & ACTIVE in LIMS Registry' : 'EXPIRED or INVALID LICENSE'}
@@ -294,7 +328,7 @@ export const GeMIntegrationDemo: React.FC = () => {
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '12px', fontFamily: 'var(--font-data)' }}>
-              <span>{product.labTested ? '✅' : '❌'}</span>
+              <span>{product.labTested ? <CheckCircle2 size={15} color="#16a34a" /> : <AlertOctagon size={15} color="#dc2626" />}</span>
               <div>
                 <strong>BIS NABL Accredited Lab Test Report:</strong>{' '}
                 {product.labTested ? 'Passed 28-day compressive test per IS 4031' : 'No valid test certificate on file'}
@@ -302,7 +336,7 @@ export const GeMIntegrationDemo: React.FC = () => {
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '12px', fontFamily: 'var(--font-data)' }}>
-              <span>{product.qcoCompliant ? '✅' : '❌'}</span>
+              <span>{product.qcoCompliant ? <CheckCircle2 size={15} color="#16a34a" /> : <AlertOctagon size={15} color="#dc2626" />}</span>
               <div>
                 <strong>Gazette QCO Enforcement Status:</strong>{' '}
                 {product.qcoCompliant ? 'Mandatory ISI Marking Order 2024 ENFORCED' : 'Violates Quality Control Order'}

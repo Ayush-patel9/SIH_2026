@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Server, Lock, CheckCircle, Database, Award } from 'lucide-react';
+import { ShieldCheck, Server, Lock, CheckCircle, Database, Award, X } from 'lucide-react';
 
 interface DataSovereigntyModalProps {
   isOpen: boolean;
@@ -80,12 +80,14 @@ export const DataSovereigntyModal: React.FC<DataSovereigntyModalProps> = ({
               background: 'transparent',
               border: 'none',
               color: '#FFFFFF',
-              fontSize: '20px',
               cursor: 'pointer',
               padding: '4px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
-            ✕
+            <X size={18} />
           </button>
         </div>
 
