@@ -806,21 +806,23 @@ export default function App({ onLogout }: AppProps = {}) {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '9px',
-                padding: '4px 10px 4px 8px',
-                borderRadius: '8px',
+                gap: '8px',
+                height: '32px',
+                boxSizing: 'border-box',
+                padding: '0 8px',
+                borderRadius: 'var(--radius-sm)',
                 border: '1px solid var(--hairline)',
                 background: 'var(--surface-secondary)',
               }}
             >
               <span style={{ display: 'flex', alignItems: 'center' }}>
-                {role === 'VENDOR' ? <Factory size={15} color="#B45309" /> : <Building2 size={15} color="var(--olive-primary)" />}
+                {role === 'VENDOR' ? <Factory size={14} color="#B45309" /> : <Building2 size={14} color="var(--olive-primary)" />}
               </span>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1.2 }}>
-                <span className="user-identity-name" style={{ fontSize: '12px', fontWeight: 700, color: 'var(--ink-primary)' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1.1 }}>
+                <span className="user-identity-name" style={{ fontSize: '11.5px', fontWeight: 700, color: 'var(--ink-primary)' }}>
                   {session?.name || 'Guest User'}
                 </span>
-                <span className="user-identity-role" style={{ fontSize: '10px', color: 'var(--ink-muted)' }}>
+                <span className="user-identity-role" style={{ fontSize: '9.5px', color: 'var(--ink-muted)' }}>
                   {session?.organization || (role.replace('_', ' ') + ' Workspace')}
                 </span>
               </div>
@@ -835,8 +837,8 @@ export default function App({ onLogout }: AppProps = {}) {
                     backgroundColor: 'rgba(220, 38, 38, 0.06)',
                     color: '#DC2626',
                     borderRadius: '4px',
-                    padding: '2px 7px',
-                    fontSize: '10.5px',
+                    padding: '2px 6px',
+                    fontSize: '10px',
                     fontWeight: 600,
                     cursor: 'pointer',
                     transition: 'all 0.15s ease',
@@ -868,72 +870,93 @@ export default function App({ onLogout }: AppProps = {}) {
           {/* Feature 01: Standards Explorer (Consolidated with Comparison, CVC Audit Defense & NIT Generator) */}
           {activeFeature === 'explainability' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '22px', maxWidth: '1040px', margin: '0 auto', width: '100%' }}>
-              {/* Friendly Hero with Extreme-Right Vault Button */}
-              <div className="editorial-hero" style={{ padding: '20px 20px 14px', textAlign: 'center' }}>
+              {/* Friendly Hero with Clean Aligned Vault Toolbar */}
+              <div className="editorial-hero" style={{ padding: '16px 20px 10px', textAlign: 'center' }}>
                 <div
                   style={{
-                    position: 'relative',
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    marginBottom: '8px',
+                    justifyContent: 'space-between',
+                    marginBottom: '12px',
+                    width: '100%',
+                    gap: '12px',
                     minHeight: '32px',
                   }}
                 >
-                  {/* Top Left: Back to Search Button */}
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setActiveData(null);
-                      setSearchQuery('');
-                      setExplorerSubTab('dossier');
-                    }}
-                    style={{
-                      position: 'absolute',
-                      left: 0,
-                      top: '50%',
-                      transform: 'translateY(-50%)',
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '6px',
-                      padding: '5px 14px',
-                      borderRadius: '20px',
-                      fontSize: '11.5px',
-                      fontWeight: 700,
-                      backgroundColor: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? 'var(--olive-primary)' : 'var(--surface-secondary)',
-                      color: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '#FFFFFF' : 'var(--ink-secondary)',
-                      border: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
-                      cursor: 'pointer',
-                      transition: 'all 0.15s ease',
-                      boxShadow: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '0 2px 6px rgba(0,0,0,0.15)' : 'none',
-                      zIndex: 10,
-                    }}
-                    title="Return to empty search page"
-                  >
-                    <ArrowLeft size={13} />
-                    <span>Back to Search</span>
-                  </button>
-
-                  <div className="editorial-hero-tag" style={{ margin: 0 }}>
-                    <Sparkles size={12} />
-                    <span>BIS Standards Platform</span>
+                  {/* Left Side: Back to Search or Platform Tag */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    {(activeData || explorerSubTab !== 'dossier' || searchQuery) ? (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setActiveData(null);
+                          setSearchQuery('');
+                          setExplorerSubTab('dossier');
+                        }}
+                        className="btn-secondary"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '6px',
+                          padding: '0 11px',
+                          height: '30px',
+                          fontSize: '11.5px',
+                          fontWeight: 600,
+                          borderRadius: 'var(--radius-sm)',
+                          cursor: 'pointer',
+                          background: 'var(--surface)',
+                          border: '1px solid var(--hairline)',
+                          color: 'var(--ink)',
+                        }}
+                        title="Return to empty search page"
+                      >
+                        <ArrowLeft size={13} />
+                        <span>Back to Search</span>
+                      </button>
+                    ) : (
+                      <div className="editorial-hero-tag" style={{ margin: 0 }}>
+                        <Sparkles size={12} />
+                        <span>BIS Standards Platform</span>
+                      </div>
+                    )}
                   </div>
 
-                  {/* Top Right Action Cluster: Past Audits Vault + Saved Standards Vault Just Below */}
+                  {/* Right Side: Clean Horizontally Aligned Vault Buttons */}
                   <div
                     style={{
-                      position: 'absolute',
-                      right: 0,
-                      top: '50%',
-                      transform: 'translateY(-50%)',
                       display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'flex-end',
-                      gap: '5px',
-                      zIndex: 10,
+                      alignItems: 'center',
+                      gap: '8px',
                     }}
                   >
-                    {/* 1. Past Audits Vault Button */}
+                    {/* Saved Standards Vault Button */}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setExplorerSubTab(explorerSubTab === 'savedVault' ? 'dossier' : 'savedVault');
+                      }}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        padding: '0 12px',
+                        height: '30px',
+                        borderRadius: 'var(--radius-sm)',
+                        fontSize: '11.5px',
+                        fontWeight: 600,
+                        backgroundColor: explorerSubTab === 'savedVault' ? 'var(--emerald-pass)' : 'var(--surface)',
+                        color: explorerSubTab === 'savedVault' ? '#FFFFFF' : 'var(--ink)',
+                        border: explorerSubTab === 'savedVault' ? '1px solid var(--emerald-pass)' : '1px solid var(--hairline)',
+                        cursor: 'pointer',
+                        transition: 'all 0.15s ease',
+                      }}
+                      title="Open Saved Standards Vault"
+                    >
+                      <BookmarkCheck size={13} color={explorerSubTab === 'savedVault' ? '#FFFFFF' : 'var(--emerald-pass)'} />
+                      <span>{explorerSubTab === 'savedVault' ? 'Viewing Saved Vault' : `Saved Vault (${savedStandardsList.length})`}</span>
+                    </button>
+
+                    {/* Past Audits Vault Button */}
                     <button
                       type="button"
                       onClick={() => {
@@ -943,47 +966,21 @@ export default function App({ onLogout }: AppProps = {}) {
                         display: 'inline-flex',
                         alignItems: 'center',
                         gap: '6px',
-                        padding: '4px 12px',
-                        borderRadius: '20px',
-                        fontSize: '11px',
-                        fontWeight: 700,
-                        backgroundColor: explorerSubTab === 'pastAudits' ? 'var(--olive-primary)' : 'var(--surface-secondary)',
+                        padding: '0 12px',
+                        height: '30px',
+                        borderRadius: 'var(--radius-sm)',
+                        fontSize: '11.5px',
+                        fontWeight: 600,
+                        backgroundColor: explorerSubTab === 'pastAudits' ? 'var(--olive-primary)' : 'var(--surface)',
                         color: explorerSubTab === 'pastAudits' ? '#FFFFFF' : 'var(--ink)',
                         border: explorerSubTab === 'pastAudits' ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
                         cursor: 'pointer',
                         transition: 'all 0.15s ease',
-                        boxShadow: explorerSubTab === 'pastAudits' ? '0 2px 6px rgba(0,0,0,0.15)' : 'none',
                       }}
+                      title="Open Past Audits Vault"
                     >
-                      <History size={12} />
-                      <span>{explorerSubTab === 'pastAudits' ? 'Back to Search' : 'Past Audits Vault'}</span>
-                    </button>
-
-                    {/* 2. Saved Vault Button Just Below Past Audits Vault */}
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setExplorerSubTab(explorerSubTab === 'savedVault' ? 'dossier' : 'savedVault');
-                      }}
-                      style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '5px',
-                        padding: '3px 11px',
-                        borderRadius: '20px',
-                        fontSize: '10.5px',
-                        fontWeight: 700,
-                        backgroundColor: explorerSubTab === 'savedVault' ? 'var(--emerald-pass)' : 'var(--emerald-bg)',
-                        color: explorerSubTab === 'savedVault' ? '#FFFFFF' : 'var(--emerald-text)',
-                        border: explorerSubTab === 'savedVault' ? '1px solid var(--emerald-pass)' : '1px solid var(--emerald-border)',
-                        cursor: 'pointer',
-                        transition: 'all 0.15s ease',
-                        boxShadow: explorerSubTab === 'savedVault' ? '0 2px 6px rgba(0,0,0,0.15)' : 'none',
-                      }}
-                      title="Open Saved Standards Vault"
-                    >
-                      <BookmarkCheck size={12} />
-                      <span>{explorerSubTab === 'savedVault' ? 'Back to Search' : `Saved Vault (${savedStandardsList.length})`}</span>
+                      <History size={13} color={explorerSubTab === 'pastAudits' ? '#FFFFFF' : 'var(--olive-primary)'} />
+                      <span>{explorerSubTab === 'pastAudits' ? 'Viewing Past Audits' : 'Past Audits Vault'}</span>
                     </button>
                   </div>
                 </div>
@@ -1865,28 +1862,28 @@ export default function App({ onLogout }: AppProps = {}) {
                               className={`detail-tab-btn ${activeTab === 'reasoning' ? 'active' : ''}`}
                               onClick={() => setActiveTab('reasoning')}
                             >
-                              Reasoning Trail & CRAG Verifier
+                              Reasoning Trail & CRAG
                             </button>
                             <button
                               type="button"
                               className={`detail-tab-btn ${activeTab === 'allied' ? 'active' : ''}`}
                               onClick={() => setActiveTab('allied')}
                             >
-                              Allied Test Standards ({activeData.allied_standards.length})
+                              Allied Standards ({activeData.allied_standards.length})
                             </button>
                             <button
                               type="button"
                               className={`detail-tab-btn ${activeTab === 'audit' ? 'active' : ''}`}
                               onClick={() => setActiveTab('audit')}
                             >
-                              Cryptographic Proof (SHA-256)
+                              Cryptographic Proof
                             </button>
                             <button
                               type="button"
                               className={`detail-tab-btn ${activeTab === 'graph' ? 'active' : ''}`}
                               onClick={() => setActiveTab('graph')}
                             >
-                              Knowledge Graph Lineage
+                              Knowledge Graph
                             </button>
                             <button
                               type="button"
@@ -1903,13 +1900,13 @@ export default function App({ onLogout }: AppProps = {}) {
                               {role === 'OFFICER' && (
                                 <>
                                   <Building2 size={13} />
-                                  <span>Tender Authority & Drafting</span>
+                                  <span>Tender Authority</span>
                                 </>
                               )}
                               {role === 'VENDOR' && (
                                 <>
                                   <Factory size={13} />
-                                  <span>Industrial Vendor Portal</span>
+                                  <span>Vendor Portal</span>
                                 </>
                               )}
                             </button>

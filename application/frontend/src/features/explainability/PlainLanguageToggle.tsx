@@ -20,6 +20,21 @@ interface PlainLanguageToggleProps {
   };
 }
 
+function renderMarkdownText(text: string) {
+  if (!text) return null;
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return (
+        <strong key={i} style={{ color: 'var(--ink)', fontWeight: 700 }}>
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
+}
+
 export const PlainLanguageToggle: React.FC<PlainLanguageToggleProps> = ({
   explanation,
   recommendation,
@@ -42,8 +57,8 @@ export const PlainLanguageToggle: React.FC<PlainLanguageToggleProps> = ({
     <div className="plain-language-card">
       <div className="plain-language-header">
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <BookOpen size={16} color="#92400E" />
-          <span className="section-label" style={{ margin: 0, color: '#92400E' }}>
+          <BookOpen size={16} color="var(--gold-text)" />
+          <span className="section-label" style={{ margin: 0, color: 'var(--gold-text)' }}>
             {mode === 'beginner' ? "NON-TECHNICAL PLAIN LANGUAGE TRANSLATION" : 'PROCUREMENT EXECUTIVE SUMMARY'}
           </span>
         </div>
@@ -82,24 +97,26 @@ export const PlainLanguageToggle: React.FC<PlainLanguageToggleProps> = ({
         </div>
       </div>
 
-      <div className="plain-language-text">
+      <div className="plain-language-text" style={{ fontSize: '13.5px', lineHeight: 1.75, color: 'var(--ink)' }}>
         {mode === 'beginner' ? (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <div style={{ padding: '8px 12px', background: 'rgba(245, 158, 11, 0.08)', borderRadius: '4px', borderLeft: '3px solid #F59E0B' }}>
-              <strong>The Plain English Concept:</strong> {beginner.metaphor}
+            <div style={{ padding: '10px 14px', background: 'var(--gold-bg)', borderRadius: '6px', borderLeft: '3px solid var(--gold-antique)', lineHeight: 1.6 }}>
+              <strong style={{ color: 'var(--ink)' }}>The Plain English Concept:</strong> {beginner.metaphor}
             </div>
-            <div style={{ padding: '8px 12px', background: 'rgba(239, 68, 68, 0.08)', borderRadius: '4px', borderLeft: '3px solid #EF4444' }}>
-              <strong>The Procurement Risk / CVC Trap:</strong> {beginner.trap}
+            <div style={{ padding: '10px 14px', background: 'var(--fail-subtle)', borderRadius: '6px', borderLeft: '3px solid var(--fail)', lineHeight: 1.6 }}>
+              <strong style={{ color: 'var(--ink)' }}>The Procurement Risk / CVC Trap:</strong> {beginner.trap}
             </div>
-            <div style={{ padding: '8px 12px', background: 'rgba(16, 185, 129, 0.08)', borderRadius: '4px', borderLeft: '3px solid #10B981' }}>
-              <strong>What To Do Now:</strong> {beginner.action}
+            <div style={{ padding: '10px 14px', background: 'var(--pass-subtle)', borderRadius: '6px', borderLeft: '3px solid var(--pass)', lineHeight: 1.6 }}>
+              <strong style={{ color: 'var(--ink)' }}>What To Do Now:</strong> {beginner.action}
             </div>
           </div>
         ) : mode === 'plain' ? (
-          plainText
+          renderMarkdownText(plainText)
         ) : (
-          recommendation?.scope_snippet ||
-          'This Indian Standard covers the manufacture, physical and chemical testing tolerances, mandatory certification marking, and quality control order conformity assessment requirements.'
+          renderMarkdownText(
+            recommendation?.scope_snippet ||
+            'This Indian Standard covers the manufacture, physical and chemical testing tolerances, mandatory certification marking, and quality control order conformity assessment requirements.'
+          )
         )}
       </div>
     </div>

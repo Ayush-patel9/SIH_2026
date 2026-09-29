@@ -186,16 +186,16 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
           </h4>
         </div>
 
-        <div style={{ overflowX: 'auto' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '12.5px' }}>
+        <div className="table-scroll-container" style={{ width: '100%', overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+          <table style={{ width: '100%', minWidth: '920px', borderCollapse: 'collapse', fontSize: '12.5px' }}>
             <thead>
               <tr style={{ backgroundColor: 'var(--surface-secondary)', borderBottom: '1px solid var(--hairline)', textAlign: 'left' }}>
-                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Item #</th>
-                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Item Description</th>
-                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Mandatory Indian Standard</th>
-                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Grade / Type</th>
-                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Conformity Scheme</th>
-                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Mandatory NABL Test Methods</th>
+                <th style={{ padding: '10px 14px', minWidth: '70px', color: 'var(--ink-muted)', fontWeight: 700 }}>Item #</th>
+                <th style={{ padding: '10px 14px', minWidth: '170px', color: 'var(--ink-muted)', fontWeight: 700 }}>Item Description</th>
+                <th style={{ padding: '10px 14px', minWidth: '170px', color: 'var(--ink-muted)', fontWeight: 700 }}>Mandatory Indian Standard</th>
+                <th style={{ padding: '10px 14px', minWidth: '130px', color: 'var(--ink-muted)', fontWeight: 700 }}>Grade / Type</th>
+                <th style={{ padding: '10px 14px', minWidth: '140px', color: 'var(--ink-muted)', fontWeight: 700 }}>Conformity Scheme</th>
+                <th style={{ padding: '10px 14px', minWidth: '230px', color: 'var(--ink-muted)', fontWeight: 700 }}>Mandatory NABL Test Methods</th>
               </tr>
             </thead>
             <tbody>

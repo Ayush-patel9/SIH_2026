@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import type { FeedbackType, UserRole } from '../../types';
 import { buildFeedbackPayload } from './feedbackBuilder';
 import { FeedbackStore, type ExtendedFeedbackItem } from './feedbackStore';
+import { useSession } from '../../store/userStore';
 import { Flag, X, CheckCircle2, Search, Building2, Scale, AlertTriangle, ShieldCheck } from 'lucide-react';
 import { MASTER_STANDARDS_CATALOG } from '../../data/standardsMentionCatalog';
 import { submitFeedback } from '../../api/standardsClient';
@@ -35,14 +36,15 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
   flaggedIsNumber,
   onSuccess,
 }) => {
+  const { session } = useSession();
   const [feedbackType, setFeedbackType] = useState<FeedbackType>('OUTDATED_STANDARD');
   const [targetIsNumber, setTargetIsNumber] = useState(flaggedIsNumber || 'IS 8112:1989');
   const [correctIsNumber, setCorrectIsNumber] = useState('');
   const [severity, setSeverity] = useState<'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW'>('HIGH');
   const [committee, setCommittee] = useState(SECTIONAL_COMMITTEES[0]);
   const [notes, setNotes] = useState('');
-  const [role, setRole] = useState<UserRole>('OFFICER');
-  const [ministryCode, setMinistryCode] = useState('NHAI / MoRTH');
+  const [role, setRole] = useState<UserRole>(session?.role || 'OFFICER');
+  const [ministryCode, setMinistryCode] = useState(session?.organization || 'NHAI / MoRTH');
   const [submitted, setSubmitted] = useState(false);
 
   if (!isOpen) return null;
@@ -58,7 +60,7 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
         officerNotes: notes.trim(),
         role,
         ministryCode,
-        userId: 'officer_ayush',
+        userId: session?.id || session?.email || session?.name || 'officer_user',
       },
       queryId,
       recommendationId

@@ -309,13 +309,14 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          padding: '10px 16px',
+          padding: '8px 12px',
           borderBottom: '1px solid rgba(255,255,255,0.08)',
           backgroundColor: '#0f172a',
-          gap: '12px',
+          gap: '8px',
+          flexWrap: 'wrap',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0, flexWrap: 'wrap' }}>
           {onClose && (
             <button
               onClick={onClose}
@@ -328,6 +329,7 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
                 borderRadius: '6px',
                 display: 'flex',
                 alignItems: 'center',
+                flexShrink: 0,
               }}
               title="Close Viewer"
             >
@@ -335,23 +337,25 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
             </button>
           )}
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <FileText size={16} color="#38bdf8" />
-            <span style={{ fontSize: '13px', fontWeight: 700, letterSpacing: '0.02em', color: '#e2e8f0' }}>
-              Tender Document Viewer
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
+            <FileText size={15} color="#38bdf8" />
+            <span style={{ fontSize: '12.5px', fontWeight: 700, letterSpacing: '0.02em', color: '#e2e8f0', whiteSpace: 'nowrap' }}>
+              Tender Document
             </span>
           </div>
 
           {pdfUrl && (
             <span
               style={{
-                fontSize: '11px',
-                padding: '2px 8px',
+                fontSize: '10.5px',
+                padding: '2px 7px',
                 borderRadius: '999px',
                 backgroundColor: 'rgba(56, 189, 248, 0.15)',
                 color: '#38bdf8',
                 fontWeight: 600,
                 border: '1px solid rgba(56, 189, 248, 0.3)',
+                whiteSpace: 'nowrap',
+                flexShrink: 0,
               }}
             >
               Cloudinary Synced
@@ -363,26 +367,28 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '5px',
-                fontSize: '11px',
-                padding: '2px 8px',
+                gap: '4px',
+                fontSize: '10.5px',
+                padding: '2px 7px',
                 borderRadius: '999px',
                 backgroundColor: 'rgba(234, 179, 8, 0.15)',
                 color: '#facc15',
                 fontWeight: 600,
                 border: '1px solid rgba(234, 179, 8, 0.4)',
+                whiteSpace: 'nowrap',
+                flexShrink: 0,
               }}
             >
-              <Sparkles size={11} /> Verbatim Quote Highlighted
+              <Sparkles size={11} /> Quote Found
             </span>
           )}
           {highlightStatus === 'searching' && (
-            <span style={{ fontSize: '11px', color: '#94a3b8' }}>Locating clause...</span>
+            <span style={{ fontSize: '11px', color: '#94a3b8', whiteSpace: 'nowrap' }}>Locating...</span>
           )}
         </div>
 
         {/* Controls: Zoom & Maximize */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
           {pdfUrl && (
             <a
               href={pdfUrl}
@@ -395,13 +401,15 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
                 fontSize: '11px',
                 color: '#94a3b8',
                 textDecoration: 'none',
-                padding: '4px 8px',
-                borderRadius: '6px',
+                padding: '3px 7px',
+                borderRadius: '5px',
                 border: '1px solid rgba(255,255,255,0.08)',
+                whiteSpace: 'nowrap',
               }}
               title="Open raw PDF in new tab"
             >
-              <ExternalLink size={12} /> Direct Link
+              <ExternalLink size={11} />
+              <span>Direct Link</span>
             </a>
           )}
 
@@ -410,9 +418,9 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
               display: 'flex',
               alignItems: 'center',
               backgroundColor: 'rgba(255,255,255,0.04)',
-              borderRadius: '8px',
+              borderRadius: '6px',
               border: '1px solid rgba(255,255,255,0.08)',
-              padding: '2px 4px',
+              padding: '1px 3px',
             }}
           >
             <button
@@ -423,13 +431,15 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
                 border: 'none',
                 color: scale <= 0.6 ? '#475569' : '#cbd5e1',
                 cursor: scale <= 0.6 ? 'not-allowed' : 'pointer',
-                padding: '4px',
+                padding: '3px',
+                display: 'flex',
+                alignItems: 'center',
               }}
               title="Zoom Out"
             >
-              <ZoomOut size={14} />
+              <ZoomOut size={13} />
             </button>
-            <span style={{ fontSize: '11px', minWidth: '40px', textAlign: 'center', color: '#94a3b8' }}>
+            <span style={{ fontSize: '10.5px', minWidth: '36px', textAlign: 'center', color: '#94a3b8', fontFamily: 'monospace' }}>
               {Math.round(scale * 100)}%
             </span>
             <button
@@ -440,11 +450,13 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
                 border: 'none',
                 color: scale >= 2.0 ? '#475569' : '#cbd5e1',
                 cursor: scale >= 2.0 ? 'not-allowed' : 'pointer',
-                padding: '4px',
+                padding: '3px',
+                display: 'flex',
+                alignItems: 'center',
               }}
               title="Zoom In"
             >
-              <ZoomIn size={14} />
+              <ZoomIn size={13} />
             </button>
           </div>
 
@@ -454,15 +466,15 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
               background: 'rgba(255,255,255,0.04)',
               border: '1px solid rgba(255,255,255,0.08)',
               color: '#cbd5e1',
-              borderRadius: '8px',
-              padding: '6px 8px',
+              borderRadius: '6px',
+              padding: '4px 6px',
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
             }}
             title={isMaximized ? 'Exit Fullscreen' : 'Fullscreen'}
           >
-            {isMaximized ? <Minimize2 size={14} /> : <Maximize2 size={14} />}
+            {isMaximized ? <Minimize2 size={13} /> : <Maximize2 size={13} />}
           </button>
         </div>
       </div>
@@ -549,19 +561,19 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
               <div
                 style={{
                   marginBottom: '16px',
-                  padding: '10px 14px',
-                  borderRadius: '8px',
-                  backgroundColor: 'var(--amber-bg)',
-                  border: '1px solid var(--amber-border)',
+                  padding: '8px 12px',
+                  borderRadius: '6px',
+                  backgroundColor: 'rgba(217, 119, 6, 0.08)',
+                  border: '1px solid rgba(217, 119, 6, 0.25)',
                   color: 'var(--amber-warn)',
-                  fontSize: '12px',
+                  fontSize: '11.5px',
                   display: 'flex',
                   alignItems: 'center',
                   gap: '6px',
                 }}
               >
-                <AlertTriangle size={14} color="var(--amber-warn)" />
-                <span>Native PDF render preview notice: {pdfLoadError} (Showing formatted text layer)</span>
+                <AlertTriangle size={14} color="var(--amber-warn)" style={{ flexShrink: 0 }} />
+                <span>Text Layer Document View (Formatted specification text)</span>
               </div>
             )}
 

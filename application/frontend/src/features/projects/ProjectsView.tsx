@@ -375,25 +375,26 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                 setSelectedProjectId(null);
                 loadProjects();
               }}
-              className="action-btn secondary"
+              className="btn-primary"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '8px',
                 padding: '8px 14px',
-                fontSize: '13px',
-                fontFamily: 'var(--font-data)',
+                fontSize: '12.5px',
+                fontFamily: 'var(--font-ui)',
                 fontWeight: 700,
                 cursor: 'pointer',
-                background: 'var(--forest)',
+                background: 'var(--olive-primary, #36452F)',
                 color: '#FFFFFF',
                 border: 'none',
                 borderRadius: '6px',
                 boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                whiteSpace: 'nowrap',
               }}
             >
-              <ArrowLeft size={16} />
-              <span>← Back to All Projects</span>
+              <ArrowLeft size={15} />
+              <span>Back to All Projects</span>
             </button>
 
             <div>

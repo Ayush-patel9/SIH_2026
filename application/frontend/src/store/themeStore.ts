@@ -59,9 +59,9 @@ function getInitialTheme(): AppTheme {
       return saved;
     }
   } catch {}
-  // Default to zoom theme as requested
-  applyThemeToDOM('zoom');
-  return 'zoom';
+  // Default to sovereign (light olive) theme as requested
+  applyThemeToDOM('sovereign');
+  return 'sovereign';
 }
 
 function applyThemeToDOM(theme: AppTheme) {

@@ -32,7 +32,21 @@ test.describe('Frontend Baseline Smoke Suite', () => {
     await page.goto('/app/projects');
 
     // Sidebar navigation (aside element) visible
-    await expect(page.getByRole('complementary')).toBeVisible();
+    const sidebar = page.getByRole('complementary');
+    await expect(sidebar).toBeVisible();
+
+    // Test sidebar collapse and expand
+    const collapseBtn = page.getByRole('button', { name: /Collapse sidebar/i });
+    await expect(collapseBtn).toBeVisible();
+    await collapseBtn.click();
+
+    // Verify collapsed state and top expand button presence
+    const expandBtn = page.getByRole('button', { name: /Expand sidebar/i }).first();
+    await expect(expandBtn).toBeVisible();
+    await expandBtn.click();
+
+    // Verify sidebar expanded back
+    await expect(collapseBtn).toBeVisible();
 
     // Projects view should be present
     await expect(page.getByText(/Projects & Tenders/i).first()).toBeVisible();

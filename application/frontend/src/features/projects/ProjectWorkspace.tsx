@@ -164,18 +164,18 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
               background: 'none',
               border: 'none',
               cursor: 'pointer',
-              color: 'var(--forest)',
-              display: 'flex',
+              color: 'var(--olive-primary, #36452F)',
+              display: 'inline-flex',
               alignItems: 'center',
               gap: '6px',
-              fontFamily: 'var(--font-data)',
+              fontFamily: 'var(--font-ui)',
               fontSize: '12.5px',
-              fontWeight: 600,
+              fontWeight: 700,
               padding: 0,
             }}
           >
             <ArrowLeft size={14} />
-            <span>← Back to All Projects</span>
+            <span>Back to All Projects</span>
           </button>
           <span style={{ color: 'var(--ink-muted)', fontSize: '12px' }}>/</span>
           <span style={{ fontFamily: 'var(--font-data)', fontSize: '12px', color: 'var(--ink-muted)' }}>

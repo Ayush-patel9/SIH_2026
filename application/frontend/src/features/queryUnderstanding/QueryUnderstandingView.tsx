@@ -172,69 +172,67 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
   });
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', paddingBottom: '40px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', paddingBottom: '40px' }}>
       {/* Top Header Card */}
       <div
         className="workbench-card"
         style={{
-          padding: '18px 22px',
+          padding: '16px 20px',
           background: 'var(--surface)',
           borderLeft: '4px solid var(--collapse-cobalt)',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '14px',
         }}
       >
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '14px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
               <span className="status-dot active" />
-              <span className="section-label" style={{ margin: 0 }}>
-                NATURAL LANGUAGE UNDERSTANDING & INTENT ENGINE (FEATURE 07)
-              </span>
-              <span className="concept-status-badge active" style={{ fontSize: '10px', fontWeight: 800 }}>
-                22,011 STANDARDS ONTOLOGY
+              <span className="section-label" style={{ margin: 0, fontSize: '10.5px' }}>
+                Technical Intent NLU Engine · 22,011 Standards
               </span>
             </div>
-            <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '22px', fontWeight: 800, color: 'var(--ink)', margin: '0 0 4px' }}>
+            <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '19px', fontWeight: 700, color: 'var(--ink)', margin: '2px 0 3px' }}>
               Query Understanding & Intent Disambiguation
             </h1>
-            <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13.5px', color: 'var(--ink-secondary)', margin: 0, maxWidth: '820px', lineHeight: 1.5 }}>
+            <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', margin: 0, maxWidth: '750px', lineHeight: 1.45 }}>
               Multilingual intent classification, named technical entity extraction, dynamic ambiguity resolution, and officer overrides grounded across 22,011 Indian Standards.
             </p>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-            <IntentClassifierBadge mode={activeData?.meta?.mode || 'recommend'} />
-          </div>
+          <IntentClassifierBadge mode={activeData?.meta?.mode || 'recommend'} />
         </div>
 
         {/* View Tab Navigation */}
-        <div style={{ display: 'flex', gap: '8px', marginTop: '16px', borderBottom: '1px solid var(--hairline)', paddingBottom: '8px', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '8px', borderTop: '1px solid var(--hairline)', paddingTop: '12px', flexWrap: 'wrap' }}>
           <button
             type="button"
             className={activeTab === 'DISAMBIGUATION' ? 'btn-primary' : 'btn-secondary'}
             onClick={() => setActiveTab('DISAMBIGUATION')}
-            style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12.5px', padding: '6px 14px' }}
+            style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', height: '30px', padding: '0 12px' }}
           >
-            <Sparkles size={14} />
-            <span>Interactive Disambiguation & Entities</span>
+            <Sparkles size={13} />
+            <span>Interactive Disambiguation</span>
           </button>
 
           <button
             type="button"
             className={activeTab === 'MULTILINGUAL' ? 'btn-primary' : 'btn-secondary'}
             onClick={() => setActiveTab('MULTILINGUAL')}
-            style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12.5px', padding: '6px 14px' }}
+            style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', height: '30px', padding: '0 12px' }}
           >
-            <Languages size={14} />
-            <span>Multilingual Indic NLU (10 Languages)</span>
+            <Languages size={13} />
+            <span>Multilingual Indic NLU</span>
           </button>
 
           <button
             type="button"
             className={activeTab === 'ONTOLOGY' ? 'btn-primary' : 'btn-secondary'}
             onClick={() => setActiveTab('ONTOLOGY')}
-            style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12.5px', padding: '6px 14px' }}
+            style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', height: '30px', padding: '0 12px' }}
           >
-            <Layers size={14} />
+            <Layers size={13} />
             <span>Entity Taxonomy & Schema</span>
           </button>
 
@@ -242,125 +240,161 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
             type="button"
             className={activeTab === 'CONTRACT_JSON' ? 'btn-primary' : 'btn-secondary'}
             onClick={() => setActiveTab('CONTRACT_JSON')}
-            style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12.5px', padding: '6px 14px' }}
+            style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', height: '30px', padding: '0 12px' }}
           >
-            <Code2 size={14} />
-            <span>API Contract JSON Telemetry</span>
+            <Code2 size={13} />
+            <span>API Telemetry</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Live Query Input & Scenarios Card */}
+      <div
+        className="workbench-card"
+        style={{
+          padding: '16px 20px',
+          background: 'var(--surface)',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '12px',
+        }}
+      >
+        <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+          <div style={{ flex: 1, position: 'relative', display: 'flex', alignItems: 'center' }}>
+            <Search size={16} color="var(--ink-muted)" style={{ position: 'absolute', left: '12px' }} />
+            <input
+              type="text"
+              placeholder="Enter tender specification (e.g. Fe 500D TMT bars for coastal bridge, 53 grade cement for precast, HDPE pipes PN6)..."
+              value={queryInput}
+              onChange={(e) => setQueryInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') handleAnalyze();
+              }}
+              className="auth-input"
+              style={{
+                width: '100%',
+                paddingLeft: '36px',
+                paddingRight: '12px',
+                fontSize: '13px',
+                height: '38px',
+              }}
+            />
+          </div>
+          <button
+            type="button"
+            onClick={() => handleAnalyze()}
+            disabled={isAnalyzing || !queryInput.trim()}
+            className="btn-primary"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              height: '38px',
+              padding: '0 16px',
+              whiteSpace: 'nowrap',
+              opacity: isAnalyzing || !queryInput.trim() ? 0.7 : 1,
+              fontWeight: 600,
+            }}
+          >
+            {isAnalyzing ? (
+              <>
+                <Loader2 size={15} className="spinner" />
+                <span>Analyzing...</span>
+              </>
+            ) : (
+              <>
+                <Sparkles size={15} />
+                <span>Analyze Intent</span>
+              </>
+            )}
           </button>
         </div>
 
-        {/* Live Query Input Bar */}
-        <div style={{ marginTop: '16px', paddingTop: '4px' }}>
-          <div className="section-label" style={{ margin: '0 0 8px 0', fontSize: '10.5px' }}>
-            ENTER RAW TENDER SPECIFICATION OR AMBIGUOUS REQUIREMENT:
-          </div>
-          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-            <div style={{ flex: 1, position: 'relative', display: 'flex', alignItems: 'center' }}>
-              <Search size={16} color="#71717A" style={{ position: 'absolute', left: '12px' }} />
-              <input
-                type="text"
-                placeholder="Enter tender clause or raw specification (e.g., Fe 500D TMT bars for coastal foundation, 53 grade cement for precast, HDPE pipes 110mm PN6)..."
-                value={queryInput}
-                onChange={(e) => setQueryInput(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') handleAnalyze();
-                }}
-                className="auth-input"
-                style={{
-                  width: '100%',
-                  paddingLeft: '36px',
-                  paddingRight: '12px',
-                  fontSize: '13px',
-                }}
-              />
-            </div>
-            <button
-              type="button"
-              onClick={() => handleAnalyze()}
-              disabled={isAnalyzing || !queryInput.trim()}
-              className="btn-primary"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-                padding: '10px 18px',
-                whiteSpace: 'nowrap',
-                opacity: isAnalyzing || !queryInput.trim() ? 0.7 : 1,
-                fontWeight: 700,
+        {/* Clean Compact Preset Selector Bar */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '12px',
+            flexWrap: 'wrap',
+            fontSize: '11.5px',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ fontSize: '10.5px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.03em' }}>
+              Test Scenario:
+            </span>
+            <select
+              value={selectedPresetId}
+              onChange={(e) => {
+                const found = SAMPLE_AMBIGUOUS_QUERIES.find((p) => p.id === e.target.value);
+                if (found) handleLoadPreset(found);
               }}
+              style={{
+                padding: '4px 10px',
+                borderRadius: 'var(--radius-sm)',
+                border: '1px solid var(--hairline)',
+                background: 'var(--paper)',
+                color: 'var(--ink)',
+                fontSize: '11.5px',
+                fontWeight: 600,
+                cursor: 'pointer',
+                maxWidth: '340px',
+              }}
+              title="Select sample ambiguous or multilingual scenario"
             >
-              {isAnalyzing ? (
-                <>
-                  <Loader2 size={15} className="spinner" />
-                  <span>Analyzing NLU...</span>
-                </>
-              ) : (
-                <>
-                  <Sparkles size={15} />
-                  <span>Analyze Intent</span>
-                </>
-              )}
-            </button>
+              <optgroup label="Ambiguous Engineering Clauses">
+                {SAMPLE_AMBIGUOUS_QUERIES.filter((p) => p.category === 'AMBIGUITY' || p.category === 'COMPLEX_SPEC').map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.domainLabel}
+                  </option>
+                ))}
+              </optgroup>
+              <optgroup label="Vernacular Indic Queries">
+                {SAMPLE_AMBIGUOUS_QUERIES.filter((p) => p.category === 'MULTILINGUAL').map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.domainLabel}
+                  </option>
+                ))}
+              </optgroup>
+              <optgroup label="Outdated Citation Audits">
+                {SAMPLE_AMBIGUOUS_QUERIES.filter((p) => p.category === 'OUTDATED_AUDIT').map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.domainLabel}
+                  </option>
+                ))}
+              </optgroup>
+            </select>
           </div>
 
-          {/* Quick Presets Filter & Chips */}
-          <div style={{ marginTop: '12px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-              <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-secondary)', textTransform: 'uppercase' }}>
-                Interactive Test Scenarios:
-              </span>
-              {(['ALL', 'AMBIGUITY', 'MULTILINGUAL', 'OUTDATED_AUDIT'] as const).map((cat) => (
+          {/* Quick Sample Scenario Pills */}
+          <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '10.5px', color: 'var(--ink-muted)' }}>Quick picks:</span>
+            {SAMPLE_AMBIGUOUS_QUERIES.slice(0, 3).map((preset) => {
+              const isSelected = selectedPresetId === preset.id;
+              const shortLabel = preset.domainLabel.split('(')[0].trim();
+              return (
                 <button
-                  key={cat}
+                  key={preset.id}
                   type="button"
-                  onClick={() => setPresetCategory(cat)}
+                  onClick={() => handleLoadPreset(preset)}
                   style={{
-                    background: presetCategory === cat ? 'var(--collapse-cobalt)' : 'var(--paper)',
-                    color: presetCategory === cat ? '#FFFFFF' : 'var(--ink-secondary)',
-                    border: '1px solid var(--hairline)',
+                    background: isSelected ? 'var(--olive-leaf)' : 'var(--paper)',
+                    border: isSelected ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
                     borderRadius: '4px',
-                    padding: '2px 8px',
-                    fontSize: '10.5px',
-                    fontWeight: presetCategory === cat ? 700 : 500,
+                    padding: '3px 8px',
+                    fontSize: '11px',
+                    color: isSelected ? 'var(--olive-primary)' : 'var(--ink-secondary)',
                     cursor: 'pointer',
+                    fontWeight: isSelected ? 700 : 500,
+                    transition: 'all 0.15s ease',
                   }}
                 >
-                  {cat.replace('_', ' ')}
+                  {shortLabel}
                 </button>
-              ))}
-            </div>
-
-            <div style={{ display: 'flex', gap: '8px', alignItems: 'center', fontSize: '11.5px', color: 'var(--ink-muted)', flexWrap: 'wrap' }}>
-              {filteredPresets.map((preset) => {
-                const isSelected = selectedPresetId === preset.id;
-                return (
-                  <button
-                    key={preset.id}
-                    type="button"
-                    onClick={() => handleLoadPreset(preset)}
-                    style={{
-                      background: isSelected ? '#EFF6FF' : 'var(--surface)',
-                      border: isSelected ? '1px solid var(--collapse-cobalt)' : '1px dashed var(--hairline)',
-                      borderRadius: '4px',
-                      padding: '4px 10px',
-                      fontSize: '11px',
-                      color: isSelected ? 'var(--collapse-cobalt)' : 'var(--ink-secondary)',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '5px',
-                      fontWeight: isSelected ? 700 : 500,
-                      transition: 'all 0.15s ease',
-                    }}
-                  >
-                    {preset.category === 'AMBIGUITY' && <HelpCircle size={11} color="var(--signal-amber)" />}
-                    {preset.category === 'MULTILINGUAL' && <Languages size={11} color="var(--teal-guide)" />}
-                    {preset.category === 'OUTDATED_AUDIT' && <AlertTriangle size={11} color="var(--signal-crimson)" />}
-                    <span>{preset.domainLabel}</span>
-                  </button>
-                );
-              })}
-            </div>
+              );
+            })}
           </div>
         </div>
 
@@ -369,16 +403,16 @@ export const QueryUnderstandingView: React.FC<QueryUnderstandingViewProps> = ({
           <div
             className="auth-banner success"
             style={{
-              marginTop: '14px',
-              padding: '10px 14px',
+              marginTop: '4px',
+              padding: '8px 12px',
               display: 'flex',
               alignItems: 'center',
               gap: '8px',
               animation: 'fadeSlideUp 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
             }}
           >
-            <CheckCircle2 size={16} />
-            <strong style={{ fontSize: '12.5px' }}>{resolutionNotice}</strong>
+            <CheckCircle2 size={15} />
+            <strong style={{ fontSize: '12px' }}>{resolutionNotice}</strong>
           </div>
         )}
       </div>

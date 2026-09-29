@@ -29,51 +29,48 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
   };
   const IntentIcon = intentInfo.IconComponent;
 
-  const getDots = (score: number) => {
-    const filled = Math.round(score * 5);
-    return '●'.repeat(filled) + '○'.repeat(5 - filled);
-  };
-
   return (
     <div
       className={`query-entity-display ${className}`}
       style={{
-        padding: compact ? '8px 12px' : '12px 16px',
-        background: 'var(--paper)',
+        padding: compact ? '10px 14px' : '14px 18px',
+        background: 'var(--surface)',
         border: '1px solid var(--hairline)',
         borderRadius: 'var(--radius-sm)',
         display: 'flex',
         flexDirection: 'column',
-        gap: '8px',
+        gap: '10px',
+        boxShadow: '0 1px 2px rgba(0,0,0,0.02)',
       }}
     >
       {/* Header Info Row */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <span
             style={{
-              fontFamily: 'var(--font-data)',
-              fontSize: '10px',
+              fontFamily: 'var(--font-ui)',
+              fontSize: '11px',
               fontWeight: 700,
               textTransform: 'uppercase',
               letterSpacing: '0.04em',
               color: 'var(--ink-secondary)',
             }}
           >
-            PARSED QUERY ENTITIES (NLU PIPELINE)
+            Parsed Entities
           </span>
 
           <span
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              gap: '5px',
+              gap: '4px',
               padding: '2px 8px',
-              borderRadius: '3px',
-              background: '#FFFFFF',
+              borderRadius: '4px',
+              background: 'var(--paper)',
               border: '1px solid var(--hairline)',
               fontFamily: 'var(--font-data)',
-              fontSize: '10px',
+              fontSize: '10.5px',
+              fontWeight: 600,
               color: 'var(--collapse-cobalt)',
             }}
           >
@@ -82,29 +79,35 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
           </span>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           {understanding.detected_language && (
             <span
               style={{
                 fontFamily: 'var(--font-data)',
-                fontSize: '10px',
+                fontSize: '11px',
                 color: 'var(--ink-muted)',
               }}
             >
-              Lang: <strong>{understanding.detected_language.toUpperCase()}</strong>
+              Lang: <strong style={{ color: 'var(--ink)' }}>{understanding.detected_language.toUpperCase()}</strong>
             </span>
           )}
 
           <span
             style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px',
               fontFamily: 'var(--font-data)',
               fontSize: '11px',
               color: confidence >= 0.85 ? 'var(--emerald-pass)' : '#B45309',
               fontWeight: 600,
+              padding: '2px 6px',
+              borderRadius: '3px',
+              background: confidence >= 0.85 ? 'rgba(46, 107, 65, 0.08)' : 'rgba(217, 119, 6, 0.08)',
             }}
             title={`NLU Extraction Confidence: ${confidencePct}%`}
           >
-            {getDots(confidence)} {confidencePct}%
+            <span>●</span> {confidencePct}% Confidence
           </span>
 
           {onOpenCorrection && (
@@ -112,7 +115,15 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
               type="button"
               onClick={onOpenCorrection}
               className="btn-secondary"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', padding: '2px 8px', fontSize: '11px', fontFamily: 'var(--font-data)' }}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '4px',
+                padding: '2px 8px',
+                fontSize: '11px',
+                height: '24px',
+                borderRadius: '4px',
+              }}
             >
               <Pencil size={11} />
               <span>Override</span>
@@ -137,7 +148,7 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '5px',
-                  padding: '3px 8px',
+                  padding: '3px 9px',
                   borderRadius: '4px',
                   background: chip.bg,
                   border: `1px solid ${chip.border}`,
@@ -147,9 +158,9 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
                 }}
               >
                 {ChipIcon && <ChipIcon size={12} style={{ color: chip.color }} />}
-                <strong style={{ fontSize: '9px', opacity: 0.85, textTransform: 'uppercase' }}>
+                <span style={{ fontSize: '9.5px', fontWeight: 700, opacity: 0.8, textTransform: 'uppercase' }}>
                   {chip.typeLabel}:
-                </strong>
+                </span>
                 <span style={{ fontWeight: 600, color: 'var(--ink)' }}>{chip.text}</span>
               </div>
             );
@@ -159,25 +170,26 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
 
       {/* Normalized Text Reference */}
       {!compact && understanding.normalized_text && (
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '2px' }}>
-          <span style={{ fontFamily: 'var(--font-data)', fontSize: '10px', color: 'var(--ink-muted)' }}>
-            NORMALIZED TOKENS:
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '2px', fontSize: '11px', color: 'var(--ink-muted)' }}>
+          <span style={{ fontFamily: 'var(--font-data)', textTransform: 'uppercase', letterSpacing: '0.03em', fontSize: '10px' }}>
+            Normalized Tokens:
           </span>
-          <span
-            className="font-mono"
+          <code
             style={{
               fontSize: '11px',
               color: 'var(--ink-secondary)',
-              background: '#FFFFFF',
-              padding: '1px 6px',
-              borderRadius: '2px',
+              background: 'var(--paper)',
+              padding: '2px 6px',
+              borderRadius: '3px',
               border: '1px solid var(--hairline)',
+              fontFamily: 'var(--font-data)',
             }}
           >
             {understanding.normalized_text}
-          </span>
+          </code>
         </div>
       )}
     </div>
   );
 };
+

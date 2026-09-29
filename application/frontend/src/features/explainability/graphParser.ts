@@ -206,12 +206,12 @@ export function computeLayout(
   });
 
   const positions: Record<string, NodePosition> = {};
-  const CARD_WIDTH = 220;
-  const CARD_HEIGHT = 64;
-  const COL_WIDTH = 340; // 120px clear gap between cards for edge label pills
-  const ROW_HEIGHT = 96;  // Generous vertical breathing room
-  const PADDING_X = 48;
-  const PADDING_Y = 48;
+  const CARD_WIDTH = 210;
+  const CARD_HEIGHT = 60;
+  const COL_WIDTH = 410; // 200px clear gap between cards for edge label pills
+  const ROW_HEIGHT = 114; // Generous vertical breathing room
+  const PADDING_X = 40;
+  const PADDING_Y = 44;
 
   const maxCol = Math.max(...Object.keys(columns).map((k) => parseInt(k, 10)), 0);
   const maxRows = Math.max(...Object.values(columns).map((v) => v.length), 1);
@@ -234,8 +234,8 @@ export function computeLayout(
     });
   });
 
-  const svgWidth = Math.max(900, PADDING_X * 2 + (maxCol + 1) * COL_WIDTH - (COL_WIDTH - CARD_WIDTH));
-  const svgHeight = Math.max(280, PADDING_Y * 2 + maxRows * ROW_HEIGHT);
+  const svgWidth = Math.max(980, PADDING_X * 2 + (maxCol + 1) * COL_WIDTH - (COL_WIDTH - CARD_WIDTH));
+  const svgHeight = Math.max(300, PADDING_Y * 2 + maxRows * ROW_HEIGHT);
 
   return { positions, svgWidth, svgHeight };
 }

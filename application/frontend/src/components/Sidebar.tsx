@@ -163,97 +163,172 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div>
         <div
           style={{
-            padding: collapsed ? '16px 8px' : '18px 20px',
+            padding: collapsed ? '12px 6px' : '18px 20px',
             borderBottom: '1px solid var(--hairline)',
             display: 'flex',
+            flexDirection: collapsed ? 'column' : 'row',
             alignItems: 'center',
             justifyContent: collapsed ? 'center' : 'space-between',
-            gap: '12px',
+            gap: collapsed ? '8px' : '12px',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <div
-              style={{
-                width: '36px',
-                height: '36px',
-                borderRadius: '8px',
-                background: 'linear-gradient(135deg, var(--olive-primary) 0%, var(--olive-dark) 100%)',
-                color: '#FAF8F2',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontFamily: 'var(--font-data)',
-                fontWeight: 800,
-                fontSize: '13px',
-                boxShadow: '0 2px 6px rgba(0, 29, 57, 0.25)',
-                border: '1px solid var(--gold-antique)',
-                flexShrink: 0,
-              }}
-              title="Bureau of Indian Standards — Government of India"
-            >
-              BIS
-            </div>
-            {!collapsed && (
-              <div>
+          {collapsed ? (
+            <>
+              <button
+                type="button"
+                onClick={onToggleCollapse}
+                style={{
+                  width: '36px',
+                  height: '36px',
+                  borderRadius: '8px',
+                  background: 'linear-gradient(135deg, var(--olive-primary) 0%, var(--olive-dark) 100%)',
+                  color: '#FAF8F2',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontFamily: 'var(--font-data)',
+                  fontWeight: 800,
+                  fontSize: '13px',
+                  boxShadow: '0 2px 6px rgba(0, 29, 57, 0.25)',
+                  border: '1px solid var(--gold-antique)',
+                  flexShrink: 0,
+                  cursor: 'pointer',
+                  padding: 0,
+                  transition: 'transform 0.15s ease, box-shadow 0.15s ease',
+                }}
+                title="Expand sidebar (Bureau of Indian Standards)"
+                aria-label="Expand sidebar"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.05)';
+                  e.currentTarget.style.boxShadow = '0 4px 10px rgba(54, 69, 47, 0.35)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 2px 6px rgba(0, 29, 57, 0.25)';
+                }}
+              >
+                BIS
+              </button>
+
+              <button
+                type="button"
+                onClick={onToggleCollapse}
+                style={{
+                  background: 'var(--surface)',
+                  border: '1px solid var(--hairline)',
+                  borderRadius: '6px',
+                  width: '32px',
+                  height: '24px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  color: 'var(--ink-muted)',
+                  fontSize: '11px',
+                  transition: 'all 0.15s ease',
+                }}
+                title="Expand sidebar"
+                aria-label="Expand sidebar"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--olive-primary)';
+                  e.currentTarget.style.color = 'var(--ink)';
+                  e.currentTarget.style.background = 'var(--olive-leaf)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--hairline)';
+                  e.currentTarget.style.color = 'var(--ink-muted)';
+                  e.currentTarget.style.background = 'var(--surface)';
+                }}
+              >
+                <ChevronRight size={14} />
+              </button>
+            </>
+          ) : (
+            <>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <div
                   style={{
-                    fontFamily: 'var(--font-ui)',
-                    fontSize: '15px',
-                    fontWeight: 800,
-                    color: 'var(--ink)',
-                    letterSpacing: '-0.02em',
-                    lineHeight: 1.1,
-                  }}
-                >
-                  Manak<span style={{ color: 'var(--gold-antique)' }}>AI</span>
-                </div>
-                <div
-                  style={{
+                    width: '36px',
+                    height: '36px',
+                    borderRadius: '8px',
+                    background: 'linear-gradient(135deg, var(--olive-primary) 0%, var(--olive-dark) 100%)',
+                    color: '#FAF8F2',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     fontFamily: 'var(--font-data)',
-                    fontSize: '9.5px',
-                    color: 'var(--ink-muted)',
-                    fontWeight: 600,
-                    letterSpacing: '0.04em',
-                    marginTop: '2px',
-                    textTransform: 'uppercase',
+                    fontWeight: 800,
+                    fontSize: '13px',
+                    boxShadow: '0 2px 6px rgba(0, 29, 57, 0.25)',
+                    border: '1px solid var(--gold-antique)',
+                    flexShrink: 0,
                   }}
+                  title="Bureau of Indian Standards — Government of India"
                 >
-                  Standards Portal · GoI
+                  BIS
+                </div>
+                <div>
+                  <div
+                    style={{
+                      fontFamily: 'var(--font-ui)',
+                      fontSize: '15px',
+                      fontWeight: 800,
+                      color: 'var(--ink)',
+                      letterSpacing: '-0.02em',
+                      lineHeight: 1.1,
+                    }}
+                  >
+                    Manak<span style={{ color: 'var(--gold-antique)' }}>AI</span>
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: 'var(--font-data)',
+                      fontSize: '9.5px',
+                      color: 'var(--ink-muted)',
+                      fontWeight: 600,
+                      letterSpacing: '0.04em',
+                      marginTop: '2px',
+                      textTransform: 'uppercase',
+                    }}
+                  >
+                    Standards Portal · GoI
+                  </div>
                 </div>
               </div>
-            )}
-          </div>
 
-          {!collapsed && (
-            <button
-              type="button"
-              onClick={onToggleCollapse}
-              style={{
-                background: 'var(--surface)',
-                border: '1px solid var(--hairline)',
-                borderRadius: '6px',
-                width: '24px',
-                height: '24px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                cursor: 'pointer',
-                color: 'var(--ink-muted)',
-                fontSize: '11px',
-                transition: 'all 0.15s ease',
-              }}
-              title="Collapse sidebar"
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = 'var(--olive-primary)';
-                e.currentTarget.style.color = 'var(--ink)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = 'var(--hairline)';
-                e.currentTarget.style.color = 'var(--ink-muted)';
-              }}
-            >
-              <ChevronLeft size={14} />
-            </button>
+              <button
+                type="button"
+                onClick={onToggleCollapse}
+                style={{
+                  background: 'var(--surface)',
+                  border: '1px solid var(--hairline)',
+                  borderRadius: '6px',
+                  width: '24px',
+                  height: '24px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  color: 'var(--ink-muted)',
+                  fontSize: '11px',
+                  transition: 'all 0.15s ease',
+                }}
+                title="Collapse sidebar"
+                aria-label="Collapse sidebar"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--olive-primary)';
+                  e.currentTarget.style.color = 'var(--ink)';
+                  e.currentTarget.style.background = 'var(--olive-leaf)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--hairline)';
+                  e.currentTarget.style.color = 'var(--ink-muted)';
+                  e.currentTarget.style.background = 'var(--surface)';
+                }}
+              >
+                <ChevronLeft size={14} />
+              </button>
+            </>
           )}
         </div>
 

@@ -27,7 +27,7 @@ export function buildFeedbackPayload(
     original_query_id: originalQueryId,
     original_recommendation_id: originalRecId,
     submitter: {
-      user_id: formData.userId || 'officer_ayush',
+      user_id: formData.userId || 'officer_user',
       role: formData.role,
       ministry_code: formData.ministryCode || 'MoRTH',
     },

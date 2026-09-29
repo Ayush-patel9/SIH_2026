@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Lock, FileText, Check } from 'lucide-react';
 import type { StandardsResponse } from '../../types';
+import { useSession } from '../../store/userStore';
 import { generateCertificateHTML, downloadCertificate } from './certificateGenerator';
 
 interface AuditLogEntryProps {
@@ -14,6 +15,7 @@ export const AuditLogEntry: React.FC<AuditLogEntryProps> = ({
   onSelect,
   onVerify,
 }) => {
+  const { session } = useSession();
   const [copied, setCopied] = useState(false);
   const audit = data.audit_record;
   const meta = data.meta;
@@ -23,6 +25,10 @@ export const AuditLogEntry: React.FC<AuditLogEntryProps> = ({
   const hash = audit?.audit_hash || meta?.audit_reference_hash || '';
   const isDryRun = audit?.dry_run || meta?.mode === 'dry_run';
   const isLogged = audit?.logged ?? true;
+
+  const dynamicOfficer = session?.name
+    ? `${session.name} (${session.designation || session.organization || (session.role ? `${session.role} Workspace` : 'Procurement Officer')})`
+    : 'Authorized Officer (Procurement & Technical Division)';
 
   const handleCopyHash = () => {
     navigator.clipboard.writeText(hash);
@@ -49,7 +55,8 @@ export const AuditLogEntry: React.FC<AuditLogEntryProps> = ({
       },
       meta,
       query,
-      primary
+      primary,
+      dynamicOfficer
     );
     downloadCertificate(html);
   };

@@ -371,16 +371,16 @@ Compliant with CVC Circular 02/02/2022 & GFR Rule 144(xi).`;
             No mapped products available yet. Run Stage 2 & 3 to populate audit matrix.
           </div>
         ) : (
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '12px', textAlign: 'left' }}>
+          <div className="table-scroll-container" style={{ width: '100%', overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+            <table style={{ width: '100%', minWidth: '940px', borderCollapse: 'collapse', fontSize: '12px', textAlign: 'left' }}>
               <thead>
                 <tr style={{ backgroundColor: 'var(--surface-secondary)', borderBottom: '1px solid var(--hairline)', color: 'var(--ink-muted)', fontWeight: 700 }}>
-                  <th style={{ padding: '10px 14px' }}>Line Item / Product</th>
-                  <th style={{ padding: '10px 14px' }}>Clause / Page</th>
-                  <th style={{ padding: '10px 14px' }}>Legacy / Outdated Ref</th>
-                  <th style={{ padding: '10px 14px' }}>Designated BIS Standard</th>
-                  <th style={{ padding: '10px 14px' }}>HITL Governance</th>
-                  <th style={{ padding: '10px 14px' }}>Statutory Justification & Rationale</th>
+                  <th style={{ padding: '10px 14px', minWidth: '160px' }}>Line Item / Product</th>
+                  <th style={{ padding: '10px 14px', minWidth: '130px' }}>Clause / Page</th>
+                  <th style={{ padding: '10px 14px', minWidth: '160px' }}>Legacy / Outdated Ref</th>
+                  <th style={{ padding: '10px 14px', minWidth: '180px' }}>Designated BIS Standard</th>
+                  <th style={{ padding: '10px 14px', minWidth: '140px' }}>HITL Governance</th>
+                  <th style={{ padding: '10px 14px', minWidth: '240px' }}>Statutory Justification & Rationale</th>
                 </tr>
               </thead>
               <tbody>

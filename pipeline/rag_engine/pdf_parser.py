@@ -173,7 +173,7 @@ class PDFTenderExtractor:
                     first_line = clause_body.split('\n')[0].strip()
                     title = first_line[:60] if len(first_line) > 5 else f"Specification {clause_num}"
 
-                    ann_status, replacement, cvc_note, suggested = self._audit_clause(clause_body, stds)
+                    ann_status, replacement, cvc_note, suggested, *extra = self._audit_clause(clause_body, stds)
 
                     annotations.append({
                         "id": f"clause-{uuid.uuid4().hex[:6]}",
@@ -205,7 +205,7 @@ class PDFTenderExtractor:
                                 verbatim_quote = s.strip()
                                 break
 
-                        ann_status, replacement, cvc_note, suggested = self._audit_clause(para, stds)
+                        ann_status, replacement, cvc_note, suggested, *extra = self._audit_clause(para, stds)
                         annotations.append({
                             "id": f"clause-{uuid.uuid4().hex[:6]}",
                             "pageNumber": page_num,
@@ -235,42 +235,73 @@ class PDFTenderExtractor:
                 "WITHDRAWN",
                 "IS 269:2015 (incorporating 43 & 53 Grade Ordinary Portland Cement)",
                 "CVC Office Order No. 04/03/2021: Citing withdrawn standards in public tenders exposes the department to statutory audit disallowance and post-award vendor litigation.",
-                "All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 269:2015 with mandatory BIS Certification under Cement QCO 2024."
+                "All structural concrete elements shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 269:2015 with mandatory BIS Certification under Cement QCO 2024.",
+                "IS 8112:1989" if "IS 8112" in txt_upper else "IS 12269:1987",
+                "IS 269:2015",
+                "Merged into consolidated IS 269:2015 specification.",
+                "DISCARD_AND_REPLACE",
+                {"order_name": "Cement (Quality Control) Order, 2024", "mandatory": True}
             )
         if "IS 1786:1985" in txt_upper:
             return (
                 "WITHDRAWN",
                 "IS 1786:2008 (Fourth Revision with Amendments 1-3)",
                 "Legacy 1985 revision omits mandatory Fe 500D / Fe 550D earthquake ductileness requirements under BIS Mandate.",
-                "High strength deformed steel bars shall conform to IS 1786:2008 Grade Fe 500D with mandatory ISI mark."
+                "High strength deformed steel bars shall conform to IS 1786:2008 Grade Fe 500D with mandatory ISI mark.",
+                "IS 1786:1985",
+                "IS 1786:2008",
+                "Omits mandatory Fe 500D earthquake ductility clauses.",
+                "DISCARD_AND_REPLACE",
+                {"order_name": "Steel and Steel Products QCO", "mandatory": True}
             )
         if "IS 4984:1995" in txt_upper:
             return (
                 "AMENDMENT_NEEDED",
                 "IS 4984:2016 (incorporating Amendment 3)",
                 "Standard revised in 2016. Using legacy 1995 specification fails to incorporate latest hydrostatic pressure tests required by Jal Jeevan Mission guidelines.",
-                "HDPE pipes for water supply shall conform to IS 4984:2016 (PE-100 grade) with valid BIS License under Polyethylene Pipes QCO."
+                "HDPE pipes for water supply shall conform to IS 4984:2016 (PE-100 grade) with valid BIS License under Polyethylene Pipes QCO.",
+                "IS 4984:1995",
+                "IS 4984:2016",
+                "Legacy revision lacks latest pressure rating test methods.",
+                "DISCARD_AND_REPLACE",
+                {"order_name": "Polyethylene Pipes QCO", "mandatory": True}
             )
         if "IS 383:1970" in txt_upper:
             return (
                 "WITHDRAWN",
                 "IS 383:2016 (Third Revision)",
                 "Withdrawn standard: 2016 revision introduced mandatory alkali-aggregate reactivity and recycled aggregate thresholds.",
-                "Coarse and fine aggregates shall conform to IS 383:2016 tested per IS 2386."
+                "Coarse and fine aggregates shall conform to IS 383:2016 tested per IS 2386.",
+                "IS 383:1970",
+                "IS 383:2016",
+                "Withdrawn standard missing alkali-aggregate reactivity tests.",
+                "DISCARD_AND_REPLACE",
+                None
             )
         if "CCTV" in txt_upper or "CAMERA" in txt_upper:
             return (
                 "MISSING_ALLIED",
                 "IS 13252 (Part 1):2010 & CRO Scheme Registration",
                 "Tender omits mandatory MeitY Compulsory Registration Scheme (CRS) compliance clause. Public procurement of uncertified electronics violates Public Procurement Order.",
-                "IP video surveillance cameras shall comply with IS 13252 (Part 1):2010 holding valid BIS CRS registration."
+                "IP video surveillance cameras shall comply with IS 13252 (Part 1):2010 holding valid BIS CRS registration.",
+                stds[0] if stds else "Uncertified CCTV",
+                "IS 13252 (Part 1):2010",
+                "Missing mandatory MeitY CRO registration requirement.",
+                "ADD_ALLIED_TEST",
+                {"order_name": "Electronics and Information Technology Goods QCO", "mandatory": True}
             )
             
+        detected = stds[0] if stds else "IS Current"
         return (
             "ACTIVE",
-            stds[0] if stds else "IS Current",
+            detected,
             "Statutory compliance verified under applicable Quality Control Order (QCO). Mandatory BIS marking applies.",
-            text
+            text,
+            detected,
+            detected,
+            "Standard is currently active and compliant.",
+            "RETAIN",
+            {"order_name": "General BIS Certification", "mandatory": True} if stds else None
         )
 
     def extract_structured_sections(self, text: str) -> Dict[str, Any]:

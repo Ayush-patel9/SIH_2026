@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AlertTriangle, ArrowRight } from 'lucide-react';
+import { HelpCircle, ArrowRight } from 'lucide-react';
 import type { AmbiguityFlag, AmbiguityOption } from '../../types';
 
 interface AmbiguityCardProps {
@@ -21,47 +21,53 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({
     }
   };
 
+  const formattedDimension = flag.dimension.replace(/_/g, ' ');
+
   return (
     <div
       className={`workbench-card ${className}`}
       style={{
         padding: '16px 20px',
-        background: '#FFFBEB',
-        border: '1px solid #FDE68A',
-        borderLeft: '4px solid var(--signal-amber)',
+        background: 'var(--surface)',
+        border: '1px solid rgba(194, 157, 83, 0.35)',
+        borderLeft: '4px solid var(--brass-antique, #C29D53)',
         borderRadius: 'var(--radius-sm)',
         display: 'flex',
         flexDirection: 'column',
         gap: '12px',
-        animation: 'auth-card-in 0.2s ease both',
+        boxShadow: '0 1px 3px rgba(0,0,0,0.03)',
       }}
     >
       {/* Header */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <AlertTriangle size={18} color="#B45309" />
+          <HelpCircle size={17} style={{ color: 'var(--brass-antique, #C29D53)' }} />
           <span
             style={{
-              fontFamily: 'var(--font-data)',
-              fontSize: '11px',
+              fontFamily: 'var(--font-ui)',
+              fontSize: '12px',
               fontWeight: 700,
               textTransform: 'uppercase',
-              letterSpacing: '0.05em',
-              color: '#B45309',
+              letterSpacing: '0.04em',
+              color: 'var(--ink)',
             }}
           >
-            QUERY INTENT DISAMBIGUATION REQUIRED ({flag.dimension.toUpperCase()})
+            Disambiguation Required · <span style={{ color: 'var(--brass-antique, #C29D53)' }}>{formattedDimension}</span>
           </span>
         </div>
 
         <span
           style={{
             fontFamily: 'var(--font-data)',
-            fontSize: '10px',
+            fontSize: '10.5px',
             color: 'var(--ink-secondary)',
+            background: 'var(--paper)',
+            padding: '2px 8px',
+            borderRadius: '4px',
+            border: '1px solid var(--hairline)',
           }}
         >
-          INTERACTIVE CLAUSE REFINEMENT
+          Interactive Clause Refinement
         </span>
       </div>
 
@@ -69,9 +75,9 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({
       <p
         style={{
           fontFamily: 'var(--font-prose)',
-          fontSize: '14px',
+          fontSize: '13.5px',
           color: 'var(--ink)',
-          lineHeight: '1.45',
+          lineHeight: '1.5',
           margin: 0,
         }}
       >
@@ -89,13 +95,13 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({
               style={{
                 display: 'flex',
                 alignItems: 'flex-start',
-                gap: '10px',
+                gap: '12px',
                 padding: '10px 14px',
-                background: isSelected ? '#FEF3C7' : '#FFFFFF',
-                border: `1px solid ${isSelected ? 'var(--signal-amber)' : 'var(--hairline)'}`,
+                background: isSelected ? 'rgba(194, 157, 83, 0.08)' : 'var(--paper)',
+                border: isSelected ? '1px solid var(--brass-antique, #C29D53)' : '1px solid var(--hairline)',
                 borderRadius: 'var(--radius-sm)',
                 cursor: 'pointer',
-                transition: 'all 0.12s ease',
+                transition: 'all 0.15s ease',
               }}
             >
               <input
@@ -104,13 +110,13 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({
                 value={opt.value}
                 checked={isSelected}
                 onChange={() => setSelectedOption(opt)}
-                style={{ marginTop: '3px', cursor: 'pointer', accentColor: '#B45309' }}
+                style={{ marginTop: '3px', cursor: 'pointer', accentColor: 'var(--olive-primary)' }}
               />
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', flex: 1 }}>
                 <span
                   style={{
-                    fontFamily: 'var(--font-prose)',
+                    fontFamily: 'var(--font-ui)',
                     fontSize: '13px',
                     fontWeight: 600,
                     color: 'var(--ink)',
@@ -125,7 +131,7 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({
                       fontFamily: 'var(--font-prose)',
                       fontSize: '12px',
                       color: 'var(--ink-secondary)',
-                      lineHeight: '1.35',
+                      lineHeight: '1.4',
                     }}
                   >
                     {opt.description}
@@ -143,14 +149,15 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({
           type="button"
           disabled={!selectedOption}
           onClick={handleRefine}
-          className="btn-run"
+          className="btn-primary"
           style={{
             display: 'inline-flex',
             alignItems: 'center',
             gap: '6px',
-            padding: '6px 14px',
+            padding: '6px 16px',
             fontSize: '12px',
-            opacity: selectedOption ? 1 : 0.6,
+            fontWeight: 600,
+            opacity: selectedOption ? 1 : 0.5,
             cursor: selectedOption ? 'pointer' : 'not-allowed',
           }}
         >
@@ -161,3 +168,4 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({
     </div>
   );
 };
+

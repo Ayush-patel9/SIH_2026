@@ -1,6 +1,7 @@
 import React from 'react';
 import { FileText, Printer } from 'lucide-react';
 import type { StandardsResponse } from '../../types';
+import { useSession } from '../../store/userStore';
 import { generateCertificateHTML, downloadCertificate } from './certificateGenerator';
 
 interface AuditCertificateProps {
@@ -8,6 +9,8 @@ interface AuditCertificateProps {
 }
 
 export const AuditCertificate: React.FC<AuditCertificateProps> = ({ data }) => {
+  const { session } = useSession();
+
   if (!data) {
     return (
       <div className="workbench-card" style={{ padding: '40px', textAlign: 'center' }}>
@@ -27,6 +30,10 @@ export const AuditCertificate: React.FC<AuditCertificateProps> = ({ data }) => {
   const primary = data.primary_recommendation;
   const query = data.query_understanding;
 
+  const dynamicOfficer = session?.name
+    ? `${session.name} (${session.designation || session.organization || (session.role ? `${session.role} Workspace` : 'Procurement Officer')})`
+    : 'Authorized Officer (Procurement & Technical Division)';
+
   const htmlContent = generateCertificateHTML(
     audit || {
       recommendation_id: `rec-${meta.query_id.slice(0, 8)}`,
@@ -45,7 +52,8 @@ export const AuditCertificate: React.FC<AuditCertificateProps> = ({ data }) => {
     },
     meta,
     query,
-    primary
+    primary,
+    dynamicOfficer
   );
 
   const handlePrint = () => {

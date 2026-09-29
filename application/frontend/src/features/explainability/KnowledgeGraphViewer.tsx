@@ -257,8 +257,8 @@ export const KnowledgeGraphViewer: React.FC<KnowledgeGraphViewerProps> = ({
     setTimeout(() => setCopiedText(false), 2000);
   };
 
-  const CARD_WIDTH = 220;
-  const CARD_HEIGHT = 64;
+  const CARD_WIDTH = 210;
+  const CARD_HEIGHT = 60;
 
   return (
     <div
@@ -478,25 +478,29 @@ export const KnowledgeGraphViewer: React.FC<KnowledgeGraphViewerProps> = ({
             const dx = Math.max(x2 - x1, 20);
             const c1x = x1 + dx * 0.45;
             const c2x = x2 - dx * 0.45;
-            const midX = (x1 + x2) / 2;
+
+            // Stagger midpoint horizontally slightly for fan-out edges to avoid stacking
+            const staggerOffset = ((idx % 3) - 1) * 16;
+            const midX = (x1 + x2) / 2 + staggerOffset;
             const midY = (y1 + y2) / 2;
 
             const isSuperseded = edge.edge_type === 'SUPERSEDED_BY' || edge.edge_type === 'OUTDATED_CITE';
             const isTest = edge.edge_type === 'TEST_METHOD' || edge.edge_type.includes('TEST');
             const isQco = edge.edge_type === 'QCO_MANDATE';
 
-            const strokeColor = isSuperseded ? '#EF4444' : isTest ? '#10B981' : isQco ? '#F59E0B' : '#3B82F6';
+            const strokeColor = isSuperseded ? '#DC2626' : isTest ? '#15803D' : isQco ? '#B45309' : '#2563EB';
             const markerId = isSuperseded ? 'url(#arrow-red)' : isTest ? 'url(#arrow-emerald)' : isQco ? 'url(#arrow-amber)' : 'url(#arrow-blue)';
 
-            const pillW = Math.min(Math.max((edge.label || '').length * 6.5 + 20, 110), 140);
-            const pillH = 22;
+            const cleanLabel = edge.label || '';
+            const pillW = Math.min(Math.max(cleanLabel.length * 5.8 + 14, 82), 125);
+            const pillH = 18;
 
             return (
               <g key={`edge-${idx}`}>
                 <path
                   d={`M ${x1} ${y1} C ${c1x} ${y1}, ${c2x} ${y2}, ${x2} ${y2}`}
                   stroke={strokeColor}
-                  strokeWidth="2.2"
+                  strokeWidth="1.8"
                   strokeDasharray={isSuperseded ? '5 4' : 'none'}
                   fill="none"
                   markerEnd={markerId}
@@ -504,30 +508,30 @@ export const KnowledgeGraphViewer: React.FC<KnowledgeGraphViewerProps> = ({
                 />
 
                 {/* Centered Floating Edge Badge Pill */}
-                {edge.label && (
+                {cleanLabel && (
                   <g transform={`translate(${midX}, ${midY})`}>
                     <rect
                       x={-pillW / 2}
                       y={-pillH / 2}
                       width={pillW}
                       height={pillH}
-                      rx="11"
+                      rx="9"
                       fill="#FFFFFF"
                       stroke={strokeColor}
-                      strokeWidth="1.2"
+                      strokeWidth="1"
                       filter="url(#subgraphCardShadow)"
                     />
                     <text
                       x="0"
-                      y="4"
+                      y="3.5"
                       textAnchor="middle"
                       fill={strokeColor}
-                      fontSize="9.5px"
+                      fontSize="8.5px"
                       fontFamily="var(--font-data, monospace)"
                       fontWeight="700"
-                      letterSpacing="0.02em"
+                      letterSpacing="0.01em"
                     >
-                      {edge.label.length > 20 ? `${edge.label.slice(0, 18)}..` : edge.label}
+                      {cleanLabel.length > 18 ? `${cleanLabel.slice(0, 16)}..` : cleanLabel}
                     </text>
                   </g>
                 )}

@@ -3,6 +3,7 @@ import { FileText, Scale } from 'lucide-react';
 import type { StandardsResponse } from '../../types';
 import { generateNITClause } from './clauseTemplates';
 import type { NITCustomFields } from './clauseTemplates';
+import { useSession } from '../../store/userStore';
 import { TemplateSelector } from './TemplateSelector';
 import { ClauseEditor } from './ClauseEditor';
 import { ClauseExportBar } from './ClauseExportBar';
@@ -12,6 +13,8 @@ interface NITGeneratorViewProps {
 }
 
 export const NITGeneratorView: React.FC<NITGeneratorViewProps> = ({ currentData }) => {
+  const { session } = useSession();
+
   if (!currentData) {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -28,16 +31,16 @@ export const NITGeneratorView: React.FC<NITGeneratorViewProps> = ({ currentData 
     );
   }
   const [selectedTemplate, setSelectedTemplate] = useState<string>('standard_gem');
-  const [customFields, setCustomFields] = useState<NITCustomFields>({
+  const [customFields, setCustomFields] = useState<NITCustomFields>(() => ({
     nitNumber: 'NIT-MoRTH-2026-088',
-    ministry: 'Ministry of Road Transport and Highways',
-    department: 'National Highways Authority of India (NHAI)',
+    ministry: session?.ministry || 'Ministry of Road Transport and Highways',
+    department: session?.department || session?.organization || 'National Highways Authority of India (NHAI)',
     projectName: 'EPC Package 4: 6-Lane Expressway NH-44',
     location: 'NCR Corridor Km 24+000 to 48+000',
-    officerName: 'Ayush Patel',
-    officerDesignation: 'Executive Engineer / Procurement Officer',
+    officerName: session?.name || 'Authorized Officer',
+    officerDesignation: session?.designation || (session?.role ? `${session.role} Workspace` : 'Executive Engineer / Procurement Officer'),
     estimatedCostInrCr: '145.5',
-  });
+  }));
 
   const [clauseText, setClauseText] = useState<string>(() =>
     generateNITClause(currentData, selectedTemplate, customFields)

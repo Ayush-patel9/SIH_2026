@@ -1,193 +1,217 @@
 /* ============================================================
    ManakAI / BIS Standards Intelligence Design System
-   Specification: ManakAI Design Specification v1 (Drawing Sheet)
+   Theme: "ManakAI Sovereign Editorial" (Figma High-End Archival)
+   Palette: Warm Tactile Beige Canvas, Deep Botanical Forest Olive,
+            Warm Antique Brass / Gold, Sage Olive, Soft Olive Leaf
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans+Devanagari:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 :root,
 [data-theme="sovereign"],
-[data-theme="light"] {
-  /* Drawing Sheet Light Mode Tokens */
-  --bg:                   #F3F4F2;
-  --surface:              #FFFFFF;
-  --surface-sunk:         #ECEDEA;
-  --surface-hover:        #E6E8E4;
-  --rule:                 #DDDFDB;
-  --rule-strong:          #C4C7C2;
-  --ink:                  #1A1D21;
-  --ink-2:                #454A52;
-  --ink-muted:            #5D636C;
-  --ink-faint:            #8C9199;
-  --accent:               #1E4D8C;
-  --accent-hover:         #173E72;
-  --accent-subtle:        #E6EDF6;
+[data-theme="light"],
+[data-theme="dark"] {
+  /* Canvas & Surface Tonal Stepping (Warm Beige & Tactile Paper) */
+  --canvas:               #FBF9F5;  /* Warm parchment / unbleached beige canvas */
+  --canvas-secondary:     #F6F3EB;  /* Oatmeal secondary tier */
+  --surface:              #FFFEFB;  /* Elevated ivory / soft white card */
+  --surface-secondary:    #F5F0E6;  /* Subtle warm beige tier */
+  --surface-hover:        #EFE9DD;
+  --paper:                #FFFEFB;
+  --void:                 #232B20;  /* Deep botanical charcoal for code/hash */
+
+  /* Text & Foreground Hierarchy */
+  --ink:                  #1C2419;  /* Deep botanical charcoal */
+  --ink-primary:          #1C2419;
+  --ink-secondary:        #44503E;  /* Muted olive slate */
+  --ink-muted:            #6E7A68;  /* Sage muted */
+  --ink-faint:            #9BA795;  /* Faint sage */
+  --ink-ghost:            #C4CDC0;
+
+  /* Dividers & Hairlines */
+  --hairline:             #E5E0D4;  /* Warm subtle hairline divider */
+  --hairline-hover:       #D5CFBF;
+  --border-default:       #E5E0D4;
+  --canvas-wire:          #D5CFBF;
+
+  /* Primary Brand & Accents: Deep Botanical Olive & Antique Brass */
+  --olive-primary:        #36452F;  /* Deep Botanical Forest Olive */
+  --olive-dark:           #24301F;
+  --olive-hover:          #2A3724;
+  --olive-sage:           #4A5D3F;  /* Sage accent */
+  --olive-leaf:           #E8EDE4;  /* Soft olive chip background */
+  --olive-tint:           #F0F4ED;
+
+  --gold-antique:         #C29D53;  /* Warm antique brass/gold */
+  --gold-bg:              #FBF7EC;
+  --gold-border:          #EAD9B5;
+  --gold-text:            #8A6922;
+
+  --focus-blue:           #36452F;  /* Primary olive focus ring */
+  --focus-blue-glow:      rgba(54, 69, 47, 0.15);
+  --collapse-cobalt:      #36452F;
+
+  --emerald-pass:         #2D6A4F;  /* Forest Emerald */
+  --emerald-bg:           #EDF7F1;
+  --emerald-border:       #B7E4C7;
+  --emerald-text:         #1B4332;
+
+  --saffron:              #C29D53;  /* Antique Gold / Saffron seal */
+  --saffron-bg:           #FBF7EC;
+  --saffron-border:       #EAD9B5;
+  --saffron-text:         #8A6922;
+
+  --amber-warn:           #C47F17;
+  --amber-bg:             #FFF9EB;
+  --amber-border:         #FDE68A;
+  --signal-amber:         #C47F17;
+
+  --error-red:            #BA3A2A;  /* Muted Terracotta */
+  --error-bg:             #FDF2F0;
+  --error-border:         #F7CDC6;
+  --error-line:           #BA3A2A;
+
+  --superposition-violet: #5B4E7A;  /* Muted Slate Violet */
+  --superposition-bg:     #F3F0F8;
+  --superposition-border: #DCD5E8;
+
+  /* Shadows (Subtle architectural contact shadows) */
+  --shadow-xs:            0 1px 2px 0 rgba(54, 69, 47, 0.04);
+  --shadow-sm:            0 1px 3px 0 rgba(54, 69, 47, 0.04), 0 1px 2px -1px rgba(54, 69, 47, 0.03);
+  --shadow-card:          0 1px 3px 0 rgba(54, 69, 47, 0.04), 0 4px 16px -2px rgba(54, 69, 47, 0.03);
+  --shadow-card-hover:    0 6px 20px -2px rgba(54, 69, 47, 0.08);
+  --shadow-modal:         0 16px 40px -4px rgba(28, 36, 25, 0.14), 0 4px 16px -2px rgba(28, 36, 25, 0.08);
+
+  /* Typography */
+  --font-ui:              'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-prose:           'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-data:            'JetBrains Mono', monospace;
+
+  /* Radii (Restrained & Soft) */
+  --radius-xs:            4px;
+  --radius-sm:            6px;
+  --radius-md:            10px;
+  --radius-lg:            14px;
+  --radius-full:          9999px;
+
+  /* Aliases for cross-component compatibility */
+  --bg:                   var(--canvas);
+  --rule:                 var(--hairline);
+  --rule-strong:          var(--hairline-hover);
+  --accent:               var(--olive-primary);
+  --accent-hover:         var(--olive-dark);
+  --accent-subtle:        var(--olive-leaf);
+  --on-accent:            #FAF8F2;
+  --forest:               var(--olive-primary);
+  --forest-dark:          var(--olive-dark);
+  --active-green:         var(--emerald-pass);
+  --superseded-red:       var(--error-red);
+  --seal:                 var(--saffron);
+  --seal-subtle:          var(--gold-bg);
+  --pass:                 var(--emerald-pass);
+  --pass-subtle:          var(--emerald-bg);
+  --fail:                 var(--error-red);
+  --fail-subtle:          var(--error-bg);
+  --warn:                 var(--amber-warn);
+  --warn-subtle:          var(--amber-bg);
+  --surface-sunk:         var(--canvas-secondary);
+}
+
+/* ============================================================
+   Theme: "Zoom Enterprise" (Zoom Workplace Clean Modern Blue)
+   Hex tokens: #001D39, #0A4174, #49769F, #4E8EA2, #6EA2B3, #7BBDE8, #BDD8E9
+   ============================================================ */
+[data-theme="zoom"] {
+  /* Canvas & Surface Tonal Stepping */
+  --canvas:               #F4F7FB;  /* Clean Arctic Blue-White Canvas */
+  --canvas-secondary:     #EAF1F8;  /* Ice blue secondary container */
+  --surface:              #FFFFFF;  /* Crisp Pure White Surface */
+  --surface-secondary:    #F0F5FA;  /* Pale Arctic tint */
+  --surface-hover:        #E2EDF6;  /* Soft Ice Hover */
+  --paper:                #FFFFFF;
+  --void:                 #001D39;  /* Deepest Navy for high-contrast dark bars */
+
+  /* Text & Foreground Hierarchy */
+  --ink:                  #001D39;  /* Deep Midnight Navy (Maximum Legibility) */
+  --ink-primary:          #001D39;
+  --ink-secondary:        #0A4174;  /* Rich Navy */
+  --ink-muted:            #49769F;  /* Slate Steel Blue */
+  --ink-faint:            #6EA2B3;  /* Soft Slate Cyan */
+  --ink-ghost:            #BDD8E9;  /* Ice Blue */
+
+  /* Dividers & Hairlines */
+  --hairline:             #D6E4EE;  /* Cool Ice Hairline */
+  --hairline-hover:       #BDD8E9;
+  --border-default:       #D6E4EE;
+  --canvas-wire:          #BDD8E9;
+
+  /* Primary Brand & Accents: Zoom Corporate Blues */
+  --olive-primary:        #0A4174;  /* Rich Zoom Navy Blue */
+  --olive-dark:           #001D39;
+  --olive-hover:          #001D39;
+  --olive-sage:           #49769F;  /* Slate Steel Blue */
+  --olive-leaf:           #E8F2F8;  /* Crisp Sky/Ice chip background */
+  --olive-tint:           #F0F6FA;
+
+  --gold-antique:         #4E8EA2;  /* Cyan Steel Accent */
+  --gold-bg:              #EDF6F9;
+  --gold-border:          #BDD8E9;
+  --gold-text:            #0A4174;
+
+  --focus-blue:           #0A4174;
+  --focus-blue-glow:      rgba(10, 65, 116, 0.20);
+  --collapse-cobalt:      #0A4174;
+
+  /* Functional Status Indicators */
+  --emerald-pass:         #0E8A5E;  /* Modern Emerald */
+  --emerald-bg:           #E6F7F0;
+  --emerald-border:       #A3E3CA;
+  --emerald-text:         #075A3D;
+
+  --saffron:              #0A4174;
+  --saffron-bg:           #EBF3FA;
+  --saffron-border:       #BDD8E9;
+  --saffron-text:         #001D39;
+
+  --amber-warn:           #D97706;
+  --amber-bg:             #FFFBEB;
+  --amber-border:         #FDE68A;
+  --signal-amber:         #D97706;
+
+  --error-red:            #E11D48;  /* Vibrant Crimson */
+  --error-bg:             #FFF1F2;
+  --error-border:         #FECDD3;
+  --error-line:           #E11D48;
+
+  --superposition-violet: #4E8EA2;  /* Cyan Slate */
+  --superposition-bg:     #EBF4F7;
+  --superposition-border: #CBE3EB;
+
+  /* Zoom Modern Shadows (Crisp & Floated) */
+  --shadow-xs:            0 1px 2px 0 rgba(0, 29, 57, 0.05);
+  --shadow-sm:            0 1px 3px 0 rgba(0, 29, 57, 0.06), 0 1px 2px -1px rgba(0, 29, 57, 0.04);
+  --shadow-card:          0 2px 6px 0 rgba(0, 29, 57, 0.04), 0 8px 24px -4px rgba(0, 29, 57, 0.06);
+  --shadow-card-hover:    0 8px 30px -4px rgba(0, 29, 57, 0.12);
+  --shadow-modal:         0 20px 50px -6px rgba(0, 29, 57, 0.22), 0 6px 20px -2px rgba(0, 29, 57, 0.10);
+
+  /* Aliases for cross-component compatibility */
+  --bg:                   var(--canvas);
+  --rule:                 var(--hairline);
+  --rule-strong:          var(--hairline-hover);
+  --accent:               var(--olive-primary);
+  --accent-hover:         var(--olive-dark);
+  --accent-subtle:        var(--olive-leaf);
   --on-accent:            #FFFFFF;
-  --seal:                 #54408A;
-  --seal-subtle:          #EEEAF5;
-  --pass:                 #2E6B41;
-  --pass-subtle:          #E7F1EA;
-  --fail:                 #A63A2B;
-  --fail-subtle:          #F8E9E6;
-  --warn:                 #8A6510;
-  --warn-subtle:          #F6EFDC;
-  
-  --shadow-float:         0 1px 2px rgba(26,29,33,.06), 0 8px 24px rgba(26,29,33,.10);
-  --shadow-modal:         0 2px 4px rgba(26,29,33,.06), 0 24px 64px rgba(26,29,33,.18);
-
-  --font-ui:              "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-source:          "Literata", Georgia, "Times New Roman", serif;
-  --font-id:              "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
-  --font-data:            var(--font-id);
-  --font-prose:           var(--font-ui);
-
-  --radius-control:       4px;
-  --radius-sheet:         8px;
-  --radius-xs:            4px;
-  --radius-sm:            4px;
-  --radius-md:            8px;
-  --radius-lg:            8px;
-  --radius-full:          9999px;
-
-  /* Backward Compatibility Aliases for Existing Components */
-  --canvas:               var(--bg);
-  --canvas-secondary:     var(--surface-sunk);
-  --surface-secondary:    var(--surface-sunk);
-  --paper:                var(--surface);
-  --void:                 #0F1113;
-  --hairline:             var(--rule);
-  --hairline-hover:       var(--rule-strong);
-  --border-default:       var(--rule);
-  --canvas-wire:          var(--rule-strong);
-  --olive-primary:        var(--accent);
-  --olive-dark:           var(--accent-hover);
-  --olive-hover:          var(--accent-hover);
-  --olive-sage:           var(--ink-muted);
-  --olive-leaf:           var(--accent-subtle);
-  --olive-tint:           var(--accent-subtle);
-  --gold-antique:         var(--accent);
-  --gold-bg:              var(--accent-subtle);
-  --gold-border:          var(--rule-strong);
-  --gold-text:            var(--accent);
-  --focus-blue:           var(--accent);
-  --focus-blue-glow:      rgba(30, 77, 140, 0.15);
-  --collapse-cobalt:      var(--accent);
-  --emerald-pass:         var(--pass);
-  --emerald-bg:           var(--pass-subtle);
-  --emerald-border:       var(--pass);
-  --emerald-text:         var(--pass);
-  --saffron:              var(--warn);
-  --saffron-bg:           var(--warn-subtle);
-  --saffron-border:       var(--warn);
-  --saffron-text:         var(--warn);
-  --amber-warn:           var(--warn);
-  --amber-bg:             var(--warn-subtle);
-  --amber-border:         var(--warn);
-  --signal-amber:         var(--warn);
-  --error-red:            var(--fail);
-  --error-bg:             var(--fail-subtle);
-  --error-border:         var(--fail);
-  --error-line:           var(--fail);
-  --superposition-violet: var(--seal);
-  --superposition-bg:     var(--seal-subtle);
-  --superposition-border: var(--seal);
-  --shadow-xs:            none;
-  --shadow-sm:            none;
-  --shadow-card:          none;
-  --shadow-card-hover:    none;
+  --seal:                 var(--superposition-violet);
+  --seal-subtle:          var(--superposition-bg);
+  --pass:                 var(--emerald-pass);
+  --pass-subtle:          var(--emerald-bg);
+  --fail:                 var(--error-red);
+  --fail-subtle:          var(--error-bg);
+  --warn:                 var(--amber-warn);
+  --warn-subtle:          var(--amber-bg);
+  --surface-sunk:         var(--canvas-secondary);
 }
-
-[data-theme="dark"],
-[data-theme="zoom"],
-.dark {
-  /* Drawing Sheet Dark Mode Tokens */
-  --bg:                   #131619;
-  --surface:              #191C20;
-  --surface-sunk:         #0F1113;
-  --surface-hover:        #20242A;
-  --rule:                 #282C32;
-  --rule-strong:          #383D44;
-  --ink:                  #E6E7E4;
-  --ink-2:                #BFC2C6;
-  --ink-muted:            #969BA3;
-  --ink-faint:            #6B7078;
-  --accent:               #8DB0DE;
-  --accent-hover:         #A7C3E8;
-  --accent-subtle:        #1A2638;
-  --on-accent:            #0D1420;
-  --seal:                 #B9A6E3;
-  --seal-subtle:          #221C33;
-  --pass:                 #7DBB8E;
-  --pass-subtle:          #14241A;
-  --fail:                 #E38B7D;
-  --fail-subtle:          #2B1714;
-  --warn:                 #D8B45F;
-  --warn-subtle:          #2A2210;
-  --shadow-float:         0 0 0 1px #383D44, 0 12px 32px rgba(0,0,0,.5);
-  --shadow-modal:         0 0 0 1px #383D44, 0 24px 64px rgba(0,0,0,.6);
-
-  --font-ui:              "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-source:          "Literata", Georgia, "Times New Roman", serif;
-  --font-id:              "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
-  --font-data:            var(--font-id);
-  --font-prose:           var(--font-ui);
-
-  --radius-control:       4px;
-  --radius-sheet:         8px;
-  --radius-xs:            4px;
-  --radius-sm:            4px;
-  --radius-md:            8px;
-  --radius-lg:            8px;
-  --radius-full:          9999px;
-
-  /* Backward Compatibility Aliases */
-  --canvas:               var(--bg);
-  --canvas-secondary:     var(--surface-sunk);
-  --surface-secondary:    var(--surface-sunk);
-  --paper:                var(--surface);
-  --void:                 #080A0C;
-  --hairline:             var(--rule);
-  --hairline-hover:       var(--rule-strong);
-  --border-default:       var(--rule);
-  --canvas-wire:          var(--rule-strong);
-  --olive-primary:        var(--accent);
-  --olive-dark:           var(--accent-hover);
-  --olive-hover:          var(--accent-hover);
-  --olive-sage:           var(--ink-muted);
-  --olive-leaf:           var(--accent-subtle);
-  --olive-tint:           var(--accent-subtle);
-  --gold-antique:         var(--accent);
-  --gold-bg:              var(--accent-subtle);
-  --gold-border:          var(--rule-strong);
-  --gold-text:            var(--accent);
-  --focus-blue:           var(--accent);
-  --focus-blue-glow:      rgba(141, 176, 222, 0.20);
-  --collapse-cobalt:      var(--accent);
-  --emerald-pass:         var(--pass);
-  --emerald-bg:           var(--pass-subtle);
-  --emerald-border:       var(--pass);
-  --emerald-text:         var(--pass);
-  --saffron:              var(--warn);
-  --saffron-bg:           var(--warn-subtle);
-  --saffron-border:       var(--warn);
-  --saffron-text:         var(--warn);
-  --amber-warn:           var(--warn);
-  --amber-bg:             var(--warn-subtle);
-  --amber-border:         var(--warn);
-  --signal-amber:         var(--warn);
-  --error-red:            var(--fail);
-  --error-bg:             var(--fail-subtle);
-  --error-border:         var(--fail);
-  --error-line:           var(--fail);
-  --superposition-violet: var(--seal);
-  --superposition-bg:     var(--seal-subtle);
-  --superposition-border: var(--seal);
-  --shadow-xs:            none;
-  --shadow-sm:            none;
-  --shadow-card:          none;
-  --shadow-card-hover:    none;
-}
-
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -200,20 +224,14 @@ html, body, #root {
 }
 
 body {
-  background-color: var(--bg);
+  background-color: var(--canvas);
   color: var(--ink);
   font-family: var(--font-ui);
   font-size: 14px;
-  line-height: 20px;
-  font-variant-numeric: tabular-nums lining-nums;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-}
-
-:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
 }
 
 /* Crisp Warm Scrollbars */
@@ -243,10 +261,39 @@ body {
   background: #7BBDE8;
 }
 
+/* Horizontal Table Scroll Container with Accessible Scrollbar */
+.table-scroll-container {
+  overflow-x: auto !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: #C2BAA6 var(--surface-secondary, #F4EFE6) !important;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.table-scroll-container::-webkit-scrollbar {
+  height: 8px !important;
+  width: 8px !important;
+}
+
+.table-scroll-container::-webkit-scrollbar-track {
+  background: var(--surface-secondary, #F4EFE6) !important;
+  border-radius: 4px;
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb {
+  background: #C2BAA6 !important;
+  border-radius: 4px;
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: var(--olive-primary, #36452F) !important;
+}
+
 *:focus-visible {
   outline: 2px solid var(--olive-primary);
   outline-offset: 1px;
 }
+
 
 /* --- App Shell --- */
 .app-container {
@@ -266,13 +313,13 @@ body {
 
 /* Top Navigation Bar */
 .top-navbar {
-  height: 56px;
+  height: 52px;
   background: var(--surface);
   border-bottom: 1px solid var(--hairline);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 28px;
+  padding: 0 24px;
   position: sticky;
   top: 0;
   z-index: 40;
@@ -301,7 +348,7 @@ body {
 .top-navbar-right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 /* Global Command Trigger */
@@ -309,7 +356,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 14px;
+  padding: 0 12px;
+  height: 32px;
+  box-sizing: border-box;
   background: var(--surface-secondary);
   border: 1px solid var(--hairline);
   border-radius: var(--radius-sm);
@@ -333,7 +382,7 @@ body {
   font-family: var(--font-data);
   font-size: 10px;
   font-weight: 700;
-  padding: 1px 6px;
+  padding: 1px 5px;
   background: #FFFFFF;
   border: 1px solid var(--hairline);
   border-radius: var(--radius-xs);
@@ -342,13 +391,15 @@ body {
 
 /* User Identity Badge */
 .user-identity-badge {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 4px 12px;
+  height: 32px;
+  box-sizing: border-box;
+  padding: 0 8px;
   background: var(--surface-secondary);
   border: 1px solid var(--hairline);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-sm);
 }
 
 .user-identity-name {
@@ -578,6 +629,67 @@ body {
   box-shadow: 0 2px 8px rgba(54, 69, 47, 0.2);
 }
 
+/* --- Plain Language & Executive Summary --- */
+.plain-language-card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow-xs);
+}
+
+.plain-language-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.mode-toggle-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--surface-secondary);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  padding: 3px;
+}
+
+.mode-toggle-btn {
+  padding: 4px 10px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: var(--radius-xs);
+  border: none;
+  background: transparent;
+  color: var(--ink-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mode-toggle-btn:hover {
+  color: var(--ink);
+}
+
+.mode-toggle-btn.active {
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 700;
+  box-shadow: var(--shadow-xs);
+}
+
+.plain-language-text {
+  font-family: var(--font-prose);
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--ink);
+}
+
 /* --- Clean Action Buttons --- */
 .btn-primary {
   height: 40px;
@@ -791,23 +903,18 @@ body {
 .detail-tab-bar {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   border-bottom: 1px solid var(--hairline);
   margin-bottom: 18px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.detail-tab-bar::-webkit-scrollbar {
-  display: none;
+  flex-wrap: wrap;
+  overflow-x: visible;
 }
 
 .detail-tab-btn {
   font-family: var(--font-ui);
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 500;
-  padding: 9px 18px;
+  padding: 8px 14px;
   background: transparent;
   color: var(--ink-muted);
   border: none;
@@ -816,6 +923,9 @@ body {
   transition: all 0.15s ease;
   margin-bottom: -1px;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .detail-tab-btn:hover {
@@ -827,6 +937,7 @@ body {
   font-weight: 600;
   border-bottom-color: var(--olive-primary);
 }
+
 
 /* --- Badges & Status Chips --- */
 .concept-status-badge {

@@ -87,7 +87,7 @@ class TenderPDFParser:
         Parses tender document text and returns structured audit with citations, outdated flags,
         and recommendations.
         """
-        pattern = r'(?:IS|IS/ISO|IS/IEC|SP)\s*(?:[:\s]\s*(\d+(?:\s*\([A-Za-z0-9/\s]+\))?))(?:\s*:\s*\d{4})?'
+        pattern = r'(?:IS|IS/ISO|IS/IEC|SP)\s*(?:[:\s]\s*(\d+(?:\s*\([A-Za-z0-9/\s]+\))?))(?:\s*:\s*(\d{4}))?'
         
         matches = re.finditer(pattern, document_text, re.IGNORECASE)
         citations_found = []
@@ -96,7 +96,7 @@ class TenderPDFParser:
         for m in matches:
             full_match = m.group(0).strip()
             num_part = m.group(1).strip() if m.group(1) else ""
-            year_part = m.group(2).strip() if m.group(2) else None
+            year_part = m.group(2).strip() if (m.lastindex and m.lastindex >= 2 and m.group(2)) else None
             
             is_num_clean = f"IS {num_part}".strip()
             norm = self._norm_key(is_num_clean)
@@ -132,6 +132,14 @@ class TenderPDFParser:
                 is_outdated = True
                 outdated_reason = "Withdrawn and replaced by IS 14846:2000."
                 latest_id = "IS 14846:2000"
+            elif norm == "IS1786" and year_part and int(year_part) < 2008:
+                is_outdated = True
+                outdated_reason = f"Cites {year_part} version. Latest published version is IS 1786:2008."
+                latest_id = "IS 1786:2008"
+            elif norm == "IS4984" and year_part and int(year_part) < 2016:
+                is_outdated = True
+                outdated_reason = f"Cites {year_part} version. Latest published version is IS 4984:2016."
+                latest_id = "IS 4984:2016"
 
             qco_order = None
             if norm in self.qco_matrix or is_mandatory:
@@ -152,11 +160,22 @@ class TenderPDFParser:
         outdated_count = sum(1 for c in citations_found if c["is_outdated"])
         mandatory_count = sum(1 for c in citations_found if c["is_mandatory"])
 
+        use_discard_matrix = []
+        for c in citations_found:
+            if c["is_outdated"]:
+                use_discard_matrix.append({
+                    "discard": c["cited_text"],
+                    "use": c["latest_standard_id"],
+                    "reason": c["outdated_warning"],
+                    "action": "DISCARD_AND_REPLACE"
+                })
+
         return {
             "total_citations_found": len(citations_found),
             "outdated_citations_count": outdated_count,
             "mandatory_qco_count": mandatory_count,
             "citations": citations_found,
+            "use_discard_matrix": use_discard_matrix,
             "audit_verdict": "ACTION_REQUIRED" if outdated_count > 0 else "COMPLIANT",
             "recommended_amendments_summary": [
                 f"Replace '{c['cited_text']}' with '{c['latest_standard_id']}' ({c['outdated_warning']})"

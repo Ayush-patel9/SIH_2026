@@ -10,7 +10,7 @@ export function generateCertificateHTML(
   meta: ResponseMeta,
   queryUnderstanding: QueryUnderstanding,
   primaryRec: PrimaryRecommendation,
-  officerName = 'Ayush Patel (Executive Engineer / Procurement Officer)'
+  officerName = 'Authorized Officer (Procurement & Compliance Division)'
 ): string {
   const timestamp = new Date(auditRecord.timestamp || meta.timestamp);
   const istTime = timestamp.toLocaleString('en-IN', {

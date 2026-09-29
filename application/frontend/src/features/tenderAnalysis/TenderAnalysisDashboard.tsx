@@ -1150,6 +1150,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                 <div
                   style={{
                     flex: 1,
+                    minWidth: 0,
                     overflowY: isEitherToolOpen ? 'auto' : 'visible',
                     padding: '24px',
                   }}
