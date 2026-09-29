@@ -54,7 +54,8 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
 
   // Action: Approve AI recommended standard
   const handleApproveStandard = (clauseId: string, standardToApply: string) => {
-    const updatedClauses = project.clauses.map((c) => {
+    const clauses = project.clauses || [];
+    const updatedClauses = clauses.map((c) => {
       if (c.clauseId !== clauseId) return c;
       return {
         ...c,
@@ -86,7 +87,8 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
   const handleApplyAlternative = (standard: string, reason?: string) => {
     if (!activeModalClause) return;
 
-    const updatedClauses = project.clauses.map((c) => {
+    const clauses = project.clauses || [];
+    const updatedClauses = clauses.map((c) => {
       if (c.clauseId !== activeModalClause.clauseId) return c;
       return {
         ...c,
@@ -217,7 +219,7 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
             <div style={{ display: 'flex', gap: '16px', fontSize: '13px', color: 'var(--ink-secondary)', fontFamily: 'var(--font-data)' }}>
               <span>Estimated Outlay: <strong style={{ color: 'var(--ink)' }}>{project.estimatedValue}</strong></span>
               <span>Last Modified: <strong>{project.lastModified}</strong></span>
-              <span>Clauses Ingested: <strong>{project.clauses.length} items</strong></span>
+              <span>Clauses Ingested: <strong>{(project.clauses || []).length} items</strong></span>
             </div>
           </div>
 
@@ -243,7 +245,7 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
               {role === 'VENDOR' ? 'BIS Standard Compliance Verification' : 'Statutory BIS Modernization & Quality Control Order (QCO) Health'}
             </span>
             <span style={{ fontWeight: 700, color: project.complianceScore === 100 ? 'var(--active-green)' : 'var(--superseded-red)' }}>
-              {project.complianceScore}% ({project.clauses.filter((c) => c.status === 'ACTIVE' || c.userDecision === 'APPROVED' || c.userDecision === 'OVERRIDDEN').length} / {project.clauses.length} Standards Compliant)
+              {project.complianceScore}% ({(project.clauses || []).filter((c) => c.status === 'ACTIVE' || c.userDecision === 'APPROVED' || c.userDecision === 'OVERRIDDEN').length} / {(project.clauses || []).length} Standards Compliant)
             </span>
           </div>
           <div style={{ width: '100%', height: '8px', borderRadius: '4px', background: 'var(--hairline)', overflow: 'hidden' }}>
@@ -286,7 +288,7 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
           }}
         >
           <FileText size={15} />
-          <span>Clauses & AI Modernization ({project.clauses.length})</span>
+          <span>Clauses & AI Modernization ({(project.clauses || []).length})</span>
         </button>
 
         <button
@@ -362,7 +364,7 @@ export const ProjectWorkspace: React.FC<ProjectWorkspaceProps> = ({
             </span>
           </div>
 
-          {project.clauses.map((clause) => {
+          {(project.clauses || []).map((clause) => {
             const isResolved =
               clause.userDecision === 'APPROVED' ||
               clause.userDecision === 'OVERRIDDEN' ||

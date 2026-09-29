@@ -37,19 +37,20 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
     return (
       <div
         style={{
-          backgroundColor: '#FFFEFB',
+          backgroundColor: 'var(--surface)',
           padding: '48px 24px',
           borderRadius: '10px',
-          border: '1px solid #E5E0D4',
+          border: '1px solid var(--hairline)',
           textAlign: 'center',
-          color: '#6E7A68',
+          color: 'var(--ink-muted)',
+          boxShadow: 'var(--shadow-card)',
         }}
       >
         <div style={{ fontSize: '32px', marginBottom: '10px' }}>📝</div>
-        <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1C2419', margin: '0 0 6px 0' }}>
+        <h3 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--ink)', margin: '0 0 6px 0' }}>
           No Finalized Clauses Yet
         </h3>
-        <p style={{ fontSize: '13.5px', maxWidth: '500px', margin: '0 auto 18px', lineHeight: 1.5 }}>
+        <p style={{ fontSize: '13.5px', maxWidth: '500px', margin: '0 auto 18px', lineHeight: 1.5, color: 'var(--ink-secondary)' }}>
           Review the Product ↔ IS Inventory tab and click "Finalize Tender & Modernize Clauses" to generate full redline diffs and statutory citations.
         </p>
       </div>
@@ -61,22 +62,23 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
       {/* Top Banner with Copy All */}
       <div
         style={{
-          backgroundColor: '#FFFEFB',
+          backgroundColor: 'var(--surface)',
           padding: '16px 20px',
           borderRadius: '10px',
-          border: '1px solid #E5E0D4',
+          border: '1px solid var(--hairline)',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
           flexWrap: 'wrap',
           gap: '12px',
+          boxShadow: 'var(--shadow-card)',
         }}
       >
         <div>
-          <h3 style={{ fontSize: '16px', fontWeight: 800, color: '#1C2419', margin: '0 0 2px 0' }}>
+          <h3 style={{ fontSize: '16px', fontWeight: 800, color: 'var(--ink)', margin: '0 0 2px 0' }}>
             Clause-by-Clause Modernization & Redline Diffs
           </h3>
-          <p style={{ fontSize: '12.5px', color: '#6E7A68', margin: 0 }}>
+          <p style={{ fontSize: '12.5px', color: 'var(--ink-secondary)', margin: 0 }}>
             {clauseDiffs.length} tender clauses reconstructed with mandatory Quality Control Orders and NABL test protocols.
           </p>
         </div>
@@ -85,7 +87,7 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
           type="button"
           onClick={handleCopyAll}
           style={{
-            backgroundColor: '#2D6A4F',
+            backgroundColor: 'var(--olive-primary)',
             color: '#FFFFFF',
             border: 'none',
             padding: '9px 16px',
@@ -96,6 +98,8 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
             display: 'flex',
             alignItems: 'center',
             gap: '6px',
+            boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
+            transition: 'all 0.15s ease',
           }}
         >
           {copiedAll ? <Check size={14} /> : <Copy size={14} />}
@@ -112,11 +116,11 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
             <div
               key={clause.product_id}
               style={{
-                backgroundColor: '#FFFEFB',
+                backgroundColor: 'var(--surface)',
                 borderRadius: '10px',
-                border: '1px solid #E5E0D4',
+                border: '1px solid var(--hairline)',
                 padding: '22px',
-                boxShadow: '0 1px 3px rgba(54, 69, 47, 0.04)',
+                boxShadow: 'var(--shadow-card)',
               }}
             >
               {/* Clause Header */}
@@ -130,21 +134,22 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                   gap: '10px',
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
                   <span
                     style={{
                       fontSize: '12px',
                       fontWeight: 700,
                       padding: '3px 8px',
                       borderRadius: '4px',
-                      backgroundColor: '#F6F3EB',
-                      color: '#44503E',
-                      fontFamily: 'monospace',
+                      backgroundColor: 'var(--surface-secondary)',
+                      color: 'var(--ink)',
+                      fontFamily: 'var(--font-data, monospace)',
+                      border: '1px solid var(--hairline)',
                     }}
                   >
                     {clause.clause_number}
                   </span>
-                  <h4 style={{ fontSize: '15px', fontWeight: 800, color: '#1C2419', margin: 0 }}>
+                  <h4 style={{ fontSize: '15px', fontWeight: 800, color: 'var(--ink)', margin: 0 }}>
                     {clause.product_name}
                   </h4>
 
@@ -152,9 +157,9 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                     type="button"
                     onClick={() => onPageClick(clause.page_number, clause.verbatim_quote)}
                     style={{
-                      border: '1px solid #BFDBFE',
-                      backgroundColor: '#EFF6FF',
-                      color: '#1D4ED8',
+                      border: '1px solid rgba(59, 130, 246, 0.3)',
+                      backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                      color: 'var(--collapse-cobalt)',
                       padding: '2px 8px',
                       borderRadius: '4px',
                       fontSize: '11px',
@@ -178,9 +183,10 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                       fontWeight: 700,
                       padding: '3px 8px',
                       borderRadius: '4px',
-                      backgroundColor: '#EDF7F1',
-                      color: '#1B4332',
-                      fontFamily: 'monospace',
+                      backgroundColor: 'var(--emerald-bg)',
+                      color: 'var(--emerald-pass)',
+                      fontFamily: 'var(--font-data, monospace)',
+                      border: '1px solid var(--emerald-border)',
                     }}
                   >
                     Designated: {clause.designated_standard}
@@ -190,9 +196,9 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                     type="button"
                     onClick={() => handleCopyClause(clause)}
                     style={{
-                      backgroundColor: isCopied ? '#2D6A4F' : '#FAF8F3',
-                      color: isCopied ? '#FFFFFF' : '#1C2419',
-                      border: '1px solid #DCD6C8',
+                      backgroundColor: isCopied ? 'var(--emerald-pass)' : 'var(--surface-secondary)',
+                      color: isCopied ? '#FFFFFF' : 'var(--ink)',
+                      border: '1px solid var(--hairline)',
                       padding: '5px 12px',
                       borderRadius: '4px',
                       fontSize: '11.5px',
@@ -201,6 +207,7 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                       display: 'flex',
                       alignItems: 'center',
                       gap: '4px',
+                      transition: 'all 0.15s ease',
                     }}
                   >
                     {isCopied ? <Check size={12} /> : <Copy size={12} />}
@@ -214,16 +221,16 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                 {/* Original Clause Box */}
                 <div
                   style={{
-                    backgroundColor: '#FDF2F0',
-                    border: '1px solid #F7CDC6',
+                    backgroundColor: 'var(--error-bg)',
+                    border: '1px solid var(--error-border)',
                     borderRadius: '8px',
                     padding: '14px',
                   }}
                 >
-                  <div style={{ fontSize: '11px', fontWeight: 700, color: '#BA3A2A', textTransform: 'uppercase', marginBottom: '6px' }}>
+                  <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--error-red)', textTransform: 'uppercase', marginBottom: '6px', fontFamily: 'var(--font-data)' }}>
                     ORIGINAL TENDER SPECIFICATION (AUDIT EXPOSURE)
                   </div>
-                  <div style={{ fontSize: '13px', lineHeight: 1.6, color: '#7F1D1D', fontFamily: 'monospace' }}>
+                  <div style={{ fontSize: '13px', lineHeight: 1.6, color: 'var(--error-red)', fontFamily: 'monospace' }}>
                     {clause.original_clause}
                   </div>
                 </div>
@@ -231,16 +238,16 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                 {/* Modernized Clause Box */}
                 <div
                   style={{
-                    backgroundColor: '#EDF7F1',
-                    border: '1px solid #B7E4C7',
+                    backgroundColor: 'var(--emerald-bg)',
+                    border: '1px solid var(--emerald-border)',
                     borderRadius: '8px',
                     padding: '14px',
                   }}
                 >
-                  <div style={{ fontSize: '11px', fontWeight: 700, color: '#1B4332', textTransform: 'uppercase', marginBottom: '6px' }}>
+                  <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--emerald-pass)', textTransform: 'uppercase', marginBottom: '6px', fontFamily: 'var(--font-data)' }}>
                     MODERNIZED STATUTORY CLAUSE (GFR & CVC COMPLIANT)
                   </div>
-                  <div style={{ fontSize: '13px', lineHeight: 1.6, color: '#14532D', fontFamily: 'monospace' }}>
+                  <div style={{ fontSize: '13px', lineHeight: 1.6, color: 'var(--emerald-text)', fontFamily: 'monospace' }}>
                     {clause.modernized_clause}
                   </div>
                 </div>
@@ -250,17 +257,17 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
               {clause.added_qco_clause && (
                 <div
                   style={{
-                    backgroundColor: 'rgba(217, 119, 6, 0.08)',
-                    border: '1px solid rgba(217, 119, 6, 0.25)',
+                    backgroundColor: 'var(--amber-bg)',
+                    border: '1px solid var(--amber-border)',
                     borderRadius: '6px',
                     padding: '12px 14px',
                     marginBottom: '10px',
                   }}
                 >
-                  <div style={{ fontSize: '11px', fontWeight: 700, color: '#B45309', textTransform: 'uppercase', marginBottom: '4px' }}>
+                  <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--amber-warn)', textTransform: 'uppercase', marginBottom: '4px', fontFamily: 'var(--font-data)' }}>
                     ⚡ MANDATORY QUALITY CONTROL ORDER CLAUSE INSERTION:
                   </div>
-                  <div style={{ fontSize: '12px', color: '#78350F', lineHeight: 1.5, fontFamily: 'monospace' }}>
+                  <div style={{ fontSize: '12px', color: 'var(--amber-warn)', lineHeight: 1.5, fontFamily: 'monospace' }}>
                     {clause.added_qco_clause}
                   </div>
                 </div>
@@ -270,16 +277,16 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
               {clause.added_nabl_clause && (
                 <div
                   style={{
-                    backgroundColor: '#EFF6FF',
-                    border: '1px solid #BFDBFE',
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    border: '1px solid rgba(59, 130, 246, 0.3)',
                     borderRadius: '6px',
                     padding: '12px 14px',
                   }}
                 >
-                  <div style={{ fontSize: '11px', fontWeight: 700, color: '#1D4ED8', textTransform: 'uppercase', marginBottom: '4px' }}>
+                  <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--collapse-cobalt)', textTransform: 'uppercase', marginBottom: '4px', fontFamily: 'var(--font-data)' }}>
                     🔬 MANDATORY NABL LABORATORY TEST CLAUSE INSERTION:
                   </div>
-                  <div style={{ fontSize: '12px', color: '#1E3A8A', lineHeight: 1.5, fontFamily: 'monospace' }}>
+                  <div style={{ fontSize: '12px', color: 'var(--collapse-cobalt)', lineHeight: 1.5, fontFamily: 'monospace' }}>
                     {clause.added_nabl_clause}
                   </div>
                 </div>

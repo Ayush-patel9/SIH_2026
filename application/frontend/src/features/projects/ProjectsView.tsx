@@ -62,10 +62,29 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
       setIsLoadingNeon(true);
       const data = await projectsClient.getProjects();
       if (data && data.length > 0) {
-        setProjects(data as any);
+        const initialMap = new Map(INITIAL_PROJECTS.map((p) => [p.id, p]));
+        const merged: TenderProject[] = data.map((p: any) => {
+          const init = initialMap.get(p.id);
+          return {
+            ...(init || {}),
+            ...p,
+            stage1Data: p.stage1Data || init?.stage1Data,
+            stage2Data: p.stage2Data || init?.stage2Data,
+            stage3Data: p.stage3Data || init?.stage3Data,
+            documentText: p.documentText || init?.documentText,
+            analysisPhase: p.analysisPhase || init?.analysisPhase || (init?.stage3Data ? 'DASHBOARD_COMPLETED' : 'IDLE'),
+          };
+        });
+        const returnedIds = new Set(data.map((p: any) => p.id));
+        INITIAL_PROJECTS.forEach((init) => {
+          if (!returnedIds.has(init.id)) {
+            merged.push(init);
+          }
+        });
+        setProjects(merged);
       }
     } catch (err) {
-      console.warn('Could not load projects from Neon, fallback to defaults:', err);
+      console.warn('Could not load projects from Neon, fallback to rich defaults:', err);
     } finally {
       setIsLoadingNeon(false);
     }
@@ -81,10 +100,23 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
     let isCurrent = true;
     projectsClient.getProject(selectedProjectId).then((fullProj) => {
       if (isCurrent && fullProj) {
-        setProjects((prev) => prev.map((p) => (p.id === fullProj.id ? { ...p, ...fullProj } : p)));
+        setProjects((prev) =>
+          prev.map((p) => {
+            if (p.id !== fullProj.id) return p;
+            return {
+              ...p,
+              ...fullProj,
+              stage1Data: fullProj.stage1Data || p.stage1Data,
+              stage2Data: fullProj.stage2Data || p.stage2Data,
+              stage3Data: fullProj.stage3Data || p.stage3Data,
+              documentText: fullProj.documentText || p.documentText,
+              analysisPhase: (fullProj.analysisPhase as TenderProject['analysisPhase']) || p.analysisPhase || (p.stage3Data ? 'DASHBOARD_COMPLETED' : 'IDLE'),
+            };
+          })
+        );
       }
     }).catch((err) => {
-      console.warn(`Could not refresh project ${selectedProjectId}:`, err);
+      console.warn(`Could not refresh project ${selectedProjectId} (retaining preset data):`, err);
     });
     return () => {
       isCurrent = false;
@@ -869,110 +901,98 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
       )}
 
       {/* Hero Banner */}
-      <div
-        className="workbench-card"
-        style={{
-          background: 'linear-gradient(135deg, rgba(54, 69, 47, 0.07) 0%, rgba(200, 185, 154, 0.14) 100%)',
-          border: '1px solid var(--hairline)',
-          borderLeft: '4px solid var(--forest)',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '16px',
-        }}
-      >
-        <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
-            <span className="concept-status-badge active">
-              {role === 'VENDOR' ? 'TENDER MARKETPLACE' : 'TENDER AUTHORITY & AUDIT WORKSPACE'}
-            </span>
-            <span className="section-label" style={{ margin: 0 }}>UNIFIED PROCUREMENT DIRECTORY</span>
+      <div className="hero-gradient-card">
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', position: 'relative', zIndex: 1 }}>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+              <span className="concept-status-badge active" style={{ fontSize: '11px', padding: '3px 10px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                <span className="live-beacon active" />
+                <span>{role === 'VENDOR' ? 'TENDER MARKETPLACE & BIDDING' : 'TENDER AUTHORITY & AUDIT WORKSPACE'}</span>
+              </span>
+              <span className="section-label" style={{ margin: 0 }}>OFFICIAL PROCUREMENT DIRECTORY</span>
+            </div>
+            <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '26px', fontWeight: 800, margin: 0, color: 'var(--ink)', letterSpacing: '-0.02em', lineHeight: 1.25 }}>
+              {role === 'VENDOR' ? 'Public Procurement Tenders & Standards' : 'Procurement Projects & 3-Stage Tender Intelligence'}
+            </h1>
+            <p style={{ fontFamily: 'var(--font-prose)', fontSize: '14px', color: 'var(--ink-secondary)', margin: '6px 0 0 0', maxWidth: '850px', lineHeight: 1.55 }}>
+              {role === 'VENDOR'
+                ? 'Verify mandatory Indian Standards (IS Codes), check Gazette Quality Control Orders (QCOs), and inspect statutory compliance matrices for all active tenders.'
+                : 'Select any procurement project to inspect clause decompositions, interactive human-in-the-loop product mappings, redline diffs, and cryptographic CVC audit seals.'}
+            </p>
           </div>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '24px', fontWeight: 700, margin: 0, color: 'var(--ink)' }}>
-            {role === 'VENDOR' ? 'Public Procurement Tenders & Standards' : 'Procurement Projects & Tender Analysis'}
-          </h2>
-          <p style={{ fontFamily: 'var(--font-prose)', fontSize: '14px', color: 'var(--ink-secondary)', margin: '4px 0 0 0', maxWidth: '850px' }}>
-            {role === 'VENDOR'
-              ? 'Browse open government tenders, verify mandatory Indian Standards (IS Codes), and access bidding compliance checklists.'
-              : 'Manage procurement projects, ingest tender documents, and execute the 3-stage BIS standards intelligence pipeline.'}
-          </p>
-        </div>
 
-        {/* Primary Action Button: Create New Project */}
-        {role !== 'VENDOR' && (
-          <button
-            onClick={() => setIsCreateModalOpen(true)}
-            className="action-btn primary"
-            style={{
-              padding: '12px 20px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              fontFamily: 'var(--font-data)',
-              fontSize: '13px',
-              fontWeight: 600,
-              boxShadow: '0 4px 12px rgba(54,69,47,0.22)',
-              cursor: 'pointer',
-            }}
-          >
-            <Plus size={16} />
-            <span>Create New Project</span>
-          </button>
-        )}
+          {/* Primary Action Button: Create New Project */}
+          {role !== 'VENDOR' && (
+            <button
+              onClick={() => setIsCreateModalOpen(true)}
+              className="btn-primary"
+              style={{
+                padding: '12px 22px',
+                height: '44px',
+                fontSize: '13.5px',
+                fontWeight: 700,
+                borderRadius: '8px',
+                boxShadow: 'var(--shadow-card-hover)',
+              }}
+            >
+              <Plus size={17} />
+              <span>Create New Project</span>
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Directory Metrics Strip */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '14px' }}>
-        <div className="workbench-card" style={{ padding: '14px 18px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <div style={{ width: '40px', height: '40px', borderRadius: '8px', background: 'rgba(54,69,47,0.1)', color: 'var(--forest)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <FolderKanban size={20} />
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', gap: '14px' }}>
+        <div className="stat-kpi-card">
+          <div style={{ width: '44px', height: '44px', borderRadius: '10px', background: 'var(--olive-tint)', color: 'var(--olive-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+            <FolderKanban size={22} />
           </div>
           <div>
-            <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', textTransform: 'uppercase' }}>Total Projects</div>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)' }}>{projects.length}</div>
+            <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Active Projects</div>
+            <div style={{ fontFamily: 'var(--font-ui)', fontSize: '22px', fontWeight: 800, color: 'var(--ink)' }}>{projects.length}</div>
           </div>
         </div>
 
-        <div className="workbench-card" style={{ padding: '14px 18px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <div style={{ width: '40px', height: '40px', borderRadius: '8px', background: 'rgba(34,197,94,0.1)', color: 'var(--active-green)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Lock size={20} />
+        <div className="stat-kpi-card">
+          <div style={{ width: '44px', height: '44px', borderRadius: '10px', background: 'rgba(34,197,94,0.12)', color: 'var(--emerald-pass)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+            <Lock size={22} />
           </div>
           <div>
-            <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', textTransform: 'uppercase' }}>Ingested & Frozen</div>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)' }}>
+            <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Frozen & Analyzed</div>
+            <div style={{ fontFamily: 'var(--font-ui)', fontSize: '22px', fontWeight: 800, color: 'var(--emerald-pass)' }}>
               {projects.filter((p) => p.hasDocument).length}
             </div>
           </div>
         </div>
 
-        <div className="workbench-card" style={{ padding: '14px 18px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <div style={{ width: '40px', height: '40px', borderRadius: '8px', background: 'rgba(245,158,11,0.1)', color: 'var(--proactive-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <FileText size={20} />
+        <div className="stat-kpi-card">
+          <div style={{ width: '44px', height: '44px', borderRadius: '10px', background: 'rgba(245,158,11,0.12)', color: 'var(--amber-warn)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+            <FileText size={22} />
           </div>
           <div>
-            <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', textTransform: 'uppercase' }}>Pending Document</div>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)' }}>
-              {projects.filter((p) => !p.hasDocument).length}
+            <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Action Needed</div>
+            <div style={{ fontFamily: 'var(--font-ui)', fontSize: '22px', fontWeight: 800, color: 'var(--amber-warn)' }}>
+              {projects.filter((p) => p.status === 'NEEDS_REVIEW').length}
             </div>
           </div>
         </div>
 
-        <div className="workbench-card" style={{ padding: '14px 18px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <div style={{ width: '40px', height: '40px', borderRadius: '8px', background: 'rgba(37,99,235,0.1)', color: 'var(--collapse-cobalt)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <ShieldCheck size={20} />
+        <div className="stat-kpi-card">
+          <div style={{ width: '44px', height: '44px', borderRadius: '10px', background: 'var(--olive-leaf)', color: 'var(--olive-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+            <ShieldCheck size={22} />
           </div>
           <div>
-            <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', textTransform: 'uppercase' }}>Standards Repository</div>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)' }}>22,011 IS</div>
+            <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Standards Repository</div>
+            <div style={{ fontFamily: 'var(--font-ui)', fontSize: '22px', fontWeight: 800, color: 'var(--ink)' }}>22,011 IS</div>
           </div>
         </div>
       </div>
 
       {/* Search & Filter Toolbar */}
-      <div className="workbench-card" style={{ padding: '14px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-        <div style={{ position: 'relative', width: '320px', maxWidth: '100%' }}>
-          <Search size={14} style={{ position: 'absolute', left: '10px', top: '10px', color: 'var(--ink-muted)' }} />
+      <div className="workbench-card" style={{ padding: '14px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '14px' }}>
+        <div style={{ position: 'relative', width: '340px', maxWidth: '100%' }}>
+          <Search size={15} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--ink-muted)' }} />
           <input
             type="text"
             value={searchQuery}
@@ -980,47 +1000,85 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
             placeholder="Search projects, NITs, departments..."
             style={{
               width: '100%',
-              padding: '8px 10px 8px 32px',
+              padding: '9px 12px 9px 36px',
               borderRadius: '6px',
               border: '1px solid var(--hairline)',
-              background: 'var(--surface)',
+              background: 'var(--surface-secondary)',
               color: 'var(--ink)',
-              fontSize: '12px',
-              fontFamily: 'var(--font-data)',
+              fontSize: '12.5px',
+              fontFamily: 'var(--font-ui)',
+              outline: 'none',
             }}
           />
+          {searchQuery && (
+            <button
+              type="button"
+              onClick={() => setSearchQuery('')}
+              style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', fontSize: '11px' }}
+            >
+              ✕
+            </button>
+          )}
         </div>
 
         {/* Filter Pills */}
-        <div style={{ display: 'flex', gap: '6px', overflowX: 'auto', paddingBottom: '2px' }}>
-          {(['ALL', 'ANALYZED', 'ACTION_NEEDED', 'DRAFT'] as const).map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setFilterTab(tab)}
-              style={{
-                padding: '6px 14px',
-                borderRadius: '20px',
-                border: '1px solid',
-                borderColor: filterTab === tab ? 'var(--ink)' : 'var(--hairline)',
-                background: filterTab === tab ? 'var(--ink)' : 'transparent',
-                color: filterTab === tab ? 'var(--paper)' : 'var(--ink-secondary)',
-                fontSize: '11.5px',
-                fontWeight: 600,
-                fontFamily: 'var(--font-data)',
-                cursor: 'pointer',
-                whiteSpace: 'nowrap',
-                transition: 'all 0.15s ease',
-              }}
-            >
-              {tab === 'ALL'
-                ? `All (${projects.length})`
-                : tab === 'ANALYZED'
-                ? `Frozen & Analyzed (${projects.filter((p) => p.hasDocument).length})`
-                : tab === 'ACTION_NEEDED'
-                ? `Action Needed (${projects.filter((p) => p.status === 'NEEDS_REVIEW').length})`
-                : `Draft / Pending (${projects.filter((p) => !p.hasDocument).length})`}
-            </button>
-          ))}
+        <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '2px' }}>
+          {(['ALL', 'ANALYZED', 'ACTION_NEEDED', 'DRAFT'] as const).map((tab) => {
+            const isSelected = filterTab === tab;
+            const count = tab === 'ALL'
+              ? projects.length
+              : tab === 'ANALYZED'
+              ? projects.filter((p) => p.hasDocument).length
+              : tab === 'ACTION_NEEDED'
+              ? projects.filter((p) => p.status === 'NEEDS_REVIEW').length
+              : projects.filter((p) => !p.hasDocument).length;
+
+            return (
+              <button
+                key={tab}
+                onClick={() => setFilterTab(tab)}
+                style={{
+                  padding: '7px 16px',
+                  borderRadius: '20px',
+                  border: isSelected ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
+                  background: isSelected ? 'var(--olive-primary)' : 'var(--surface-secondary)',
+                  color: isSelected ? '#FFFFFF' : 'var(--ink-secondary)',
+                  fontSize: '12px',
+                  fontWeight: isSelected ? 700 : 500,
+                  fontFamily: 'var(--font-ui)',
+                  cursor: 'pointer',
+                  whiteSpace: 'nowrap',
+                  transition: 'all 0.15s ease',
+                  boxShadow: isSelected ? '0 2px 6px rgba(0,0,0,0.12)' : 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                }}
+              >
+                <span>
+                  {tab === 'ALL'
+                    ? 'All Projects'
+                    : tab === 'ANALYZED'
+                    ? 'Frozen & Analyzed'
+                    : tab === 'ACTION_NEEDED'
+                    ? 'Action Needed'
+                    : 'Drafts'}
+                </span>
+                <span
+                  style={{
+                    padding: '1px 6px',
+                    borderRadius: '10px',
+                    fontSize: '10.5px',
+                    fontWeight: 700,
+                    background: isSelected ? 'rgba(255,255,255,0.25)' : 'rgba(0,0,0,0.06)',
+                    color: isSelected ? '#FFFFFF' : 'var(--ink-muted)',
+                  }}
+                >
+                  {count}
+                </span>
+              </button>
+            );
+          })}
         </div>
       </div>
 
@@ -1029,18 +1087,18 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
         <div
           className="workbench-card"
           style={{
-            padding: '48px 24px',
+            padding: '56px 24px',
             textAlign: 'center',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: '12px',
+            gap: '14px',
             border: '1px dashed var(--hairline)',
             background: 'var(--surface)',
           }}
         >
-          <div style={{ fontSize: '36px' }}>📂</div>
-          <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 600, color: 'var(--ink)', margin: 0 }}>
+          <div style={{ fontSize: '40px' }}>📂</div>
+          <h3 style={{ fontFamily: 'var(--font-ui)', fontSize: '18px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>
             No Tenders Match the Current Filter
           </h3>
           <p style={{ fontFamily: 'var(--font-prose)', fontSize: '14px', color: 'var(--ink-secondary)', maxWidth: '440px', margin: 0 }}>
@@ -1054,212 +1112,208 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
               setFilterTab('ALL');
               setSearchQuery('');
             }}
-            className="action-btn secondary"
+            className="btn-secondary"
             style={{
               marginTop: '8px',
-              cursor: 'pointer',
-              padding: '8px 16px',
+              padding: '8px 18px',
               fontSize: '13px',
               fontWeight: 600,
-              fontFamily: 'var(--font-data)',
             }}
           >
             Reset Filters & View All
           </button>
         </div>
       ) : (
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))', gap: '16px' }}>
-        {filteredProjects.map((project) => {
-          return (
-            <div
-              key={project.id}
-              onClick={() => setSelectedProjectId(project.id)}
-              className="workbench-card"
-              style={{
-                cursor: 'pointer',
-                padding: '20px',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                border: '1px solid var(--hairline)',
-                background: 'var(--surface)',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                transition: 'all 0.18s ease',
-                position: 'relative',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = 'var(--forest)';
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 6px 16px rgba(54,69,47,0.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = 'var(--hairline)';
-                e.currentTarget.style.transform = 'none';
-                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.04)';
-              }}
-            >
-              <div>
-                {/* Top Row: Department & Last Modified & Delete */}
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-                  <span
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))', gap: '18px' }}>
+          {filteredProjects.map((project) => {
+            const has3Stages = Boolean(project.stage3Data || project.analysisPhase === 'DASHBOARD_COMPLETED');
+            const isCompliant = project.status === 'COMPLIANT';
+
+            return (
+              <div
+                key={project.id}
+                onClick={() => setSelectedProjectId(project.id)}
+                className="project-card-interactive"
+              >
+                <div>
+                  {/* Top Row: Department Badge, Last Modified & Delete */}
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                    <span className="glass-pill" style={{ color: 'var(--olive-primary)', fontWeight: 700 }}>
+                      <Building size={11} />
+                      <span>{project.department.split('(')[1]?.replace(')', '') || project.department.slice(0, 18)}</span>
+                    </span>
+
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          fontFamily: 'var(--font-data)',
+                          fontSize: '11px',
+                          color: 'var(--ink-muted)',
+                        }}
+                      >
+                        <Clock size={11} />
+                        <span>{project.lastModified}</span>
+                      </span>
+
+                      <button
+                        onClick={(e) => handleDeleteProject(project.id, project.title, e)}
+                        title="Delete Project"
+                        style={{
+                          background: 'transparent',
+                          border: 'none',
+                          color: 'var(--ink-muted)',
+                          cursor: 'pointer',
+                          padding: '3px 5px',
+                          borderRadius: '4px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.15s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.color = '#DC2626';
+                          e.currentTarget.style.background = 'rgba(239, 68, 68, 0.12)';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = 'var(--ink-muted)';
+                          e.currentTarget.style.background = 'transparent';
+                        }}
+                      >
+                        <Trash2 size={13} />
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Project Title */}
+                  <h3
                     style={{
-                      fontFamily: 'var(--font-data)',
-                      fontSize: '11px',
-                      color: 'var(--forest)',
-                      fontWeight: 700,
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.04em',
+                      fontFamily: 'var(--font-ui)',
+                      fontSize: '16.5px',
+                      fontWeight: 800,
+                      color: 'var(--ink)',
+                      lineHeight: '1.38',
+                      margin: '0 0 6px 0',
                     }}
                   >
-                    {project.department.split('(')[1]?.replace(')', '') || project.department.slice(0, 18)}
-                  </span>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    {project.title}
+                  </h3>
+
+                  {/* NIT Monogram */}
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontFamily: 'var(--font-data)', fontSize: '11.5px', color: 'var(--ink-muted)', marginBottom: '14px' }}>
+                    <span style={{ padding: '2px 7px', background: 'var(--surface-secondary)', border: '1px solid var(--hairline)', borderRadius: '4px', fontWeight: 600 }}>
+                      {project.nitNumber}
+                    </span>
+                  </div>
+
+                  {/* Description preview if present */}
+                  {project.description && (
+                    <p style={{ fontFamily: 'var(--font-prose)', fontSize: '12.5px', color: 'var(--ink-secondary)', margin: '0 0 16px 0', lineHeight: 1.5, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                      {project.description}
+                    </p>
+                  )}
+                </div>
+
+                {/* Bottom Details & Action Button */}
+                <div>
+                  <div
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      borderTop: '1px solid var(--hairline)',
+                      paddingTop: '12px',
+                      marginBottom: '12px',
+                    }}
+                  >
+                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                      <span style={{ fontSize: '10px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)', textTransform: 'uppercase' }}>Estimated Value</span>
+                      <span style={{ fontFamily: 'var(--font-data)', fontSize: '13px', color: 'var(--ink)', fontWeight: 800 }}>
+                        {project.estimatedValue}
+                      </span>
+                    </div>
+
+                    {/* Status Badge */}
                     <span
                       style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '4px',
-                        fontFamily: 'var(--font-data)',
+                        padding: '4px 10px',
+                        borderRadius: '20px',
                         fontSize: '11px',
-                        color: 'var(--ink-muted)',
-                      }}
-                    >
-                      <Clock size={11} />
-                      {project.lastModified}
-                    </span>
-                    <button
-                      onClick={(e) => handleDeleteProject(project.id, project.title, e)}
-                      title="Delete Project"
-                      style={{
-                        background: 'transparent',
-                        border: 'none',
-                        color: 'var(--ink-muted)',
-                        cursor: 'pointer',
-                        padding: '3px 5px',
-                        borderRadius: '4px',
-                        display: 'flex',
+                        fontWeight: 700,
+                        fontFamily: 'var(--font-data)',
+                        display: 'inline-flex',
                         alignItems: 'center',
-                        justifyContent: 'center',
-                        transition: 'all 0.15s ease',
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.color = '#DC2626';
-                        e.currentTarget.style.background = 'rgba(239, 68, 68, 0.12)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.color = 'var(--ink-muted)';
-                        e.currentTarget.style.background = 'transparent';
+                        gap: '5px',
+                        background: !project.hasDocument
+                          ? 'var(--amber-bg)'
+                          : has3Stages || isCompliant
+                          ? 'var(--emerald-bg)'
+                          : 'rgba(239, 68, 68, 0.1)',
+                        color: !project.hasDocument
+                          ? 'var(--amber-warn)'
+                          : has3Stages || isCompliant
+                          ? 'var(--emerald-text)'
+                          : 'var(--error-red)',
+                        border: `1px solid ${
+                          !project.hasDocument
+                            ? 'var(--amber-border)'
+                            : has3Stages || isCompliant
+                            ? 'var(--emerald-border)'
+                            : 'var(--error-border)'
+                        }`,
                       }}
                     >
-                      <Trash2 size={13} />
-                    </button>
-                  </div>
-                </div>
-
-                {/* Project Title */}
-                <h3
-                  style={{
-                    fontFamily: 'var(--font-display)',
-                    fontSize: '16px',
-                    fontWeight: 700,
-                    color: 'var(--ink)',
-                    lineHeight: '1.4',
-                    margin: '0 0 6px 0',
-                  }}
-                >
-                  {project.title}
-                </h3>
-
-                {/* NIT Reference */}
-                <div style={{ fontFamily: 'var(--font-data)', fontSize: '12px', color: 'var(--ink-muted)', marginBottom: '16px' }}>
-                  {project.nitNumber}
-                </div>
-              </div>
-
-              {/* Bottom Details & Action Button */}
-              <div>
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    borderTop: '1px solid var(--hairline)',
-                    paddingTop: '12px',
-                    marginBottom: '12px',
-                  }}
-                >
-                  <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <span style={{ fontSize: '10.5px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>ESTIMATED VALUE</span>
-                    <span style={{ fontFamily: 'var(--font-data)', fontSize: '13px', color: 'var(--ink)', fontWeight: 700 }}>
-                      {project.estimatedValue}
+                      <span
+                        className={`live-beacon ${
+                          has3Stages || isCompliant ? 'active' : !project.hasDocument ? 'amber' : ''
+                        }`}
+                      />
+                      <span>
+                        {!project.hasDocument
+                          ? 'DOCUMENT PENDING'
+                          : has3Stages || isCompliant
+                          ? '100% COMPLIANT'
+                          : `${project.complianceScore || 78}% HEALTH`}
+                      </span>
                     </span>
                   </div>
 
-                  {/* Status Badge */}
-                  <span
+                  {/* Card Action Link */}
+                  <div
                     style={{
-                      padding: '3px 8px',
-                      borderRadius: '4px',
-                      fontSize: '11px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      background: 'var(--surface-secondary)',
+                      borderRadius: '8px',
+                      padding: '9px 14px',
+                      color: 'var(--olive-primary)',
+                      fontFamily: 'var(--font-ui)',
+                      fontSize: '12.5px',
                       fontWeight: 700,
-                      fontFamily: 'var(--font-data)',
-                      background: !project.hasDocument
-                        ? 'rgba(245, 158, 11, 0.12)'
-                        : project.analysisPhase === 'DASHBOARD_COMPLETED' || project.status === 'COMPLIANT'
-                        ? 'rgba(34, 197, 94, 0.12)'
-                        : project.analysisPhase === 'STAGE2_SELECTION'
-                        ? 'rgba(245, 158, 11, 0.15)'
-                        : 'rgba(239, 68, 68, 0.12)',
-                      color: !project.hasDocument
-                        ? '#B45309'
-                        : project.analysisPhase === 'DASHBOARD_COMPLETED' || project.status === 'COMPLIANT'
-                        ? 'var(--active-green)'
-                        : project.analysisPhase === 'STAGE2_SELECTION'
-                        ? '#B45309'
-                        : 'var(--superseded-red)',
+                      border: '1px solid var(--hairline)',
+                      transition: 'all 0.15s ease',
                     }}
                   >
-                    {!project.hasDocument
-                      ? '⚠️ DOCUMENT PENDING'
-                      : project.analysisPhase === 'DASHBOARD_COMPLETED' || project.status === 'COMPLIANT'
-                      ? '✓ 100% COMPLIANT'
-                      : project.analysisPhase === 'STAGE2_SELECTION'
-                      ? '⚖️ STAGE 2 REVIEW'
-                      : `${project.complianceScore || 75}% HEALTH`}
-                  </span>
-                </div>
-
-                {/* Card Action Link */}
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    background: project.hasDocument ? 'rgba(54, 69, 47, 0.05)' : 'rgba(245, 158, 11, 0.06)',
-                    borderRadius: '6px',
-                    padding: '8px 12px',
-                    color: project.hasDocument ? 'var(--forest)' : '#B45309',
-                    fontFamily: 'var(--font-data)',
-                    fontSize: '12px',
-                    fontWeight: 600,
-                  }}
-                >
-                  <span>
-                    {!project.hasDocument
-                      ? 'Upload Tender Document'
-                      : project.analysisPhase === 'DASHBOARD_COMPLETED' || project.stage3Data
-                      ? 'Open Completed Dashboard'
-                      : project.analysisPhase === 'STAGE2_SELECTION' || project.stage2Data
-                      ? 'Resume Stage 2 Review'
-                      : 'Open 3-Stage Pipeline'}
-                  </span>
-                  <ArrowRight size={14} />
+                    <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Sparkles size={13} color="var(--olive-primary)" />
+                      <span>
+                        {!project.hasDocument
+                          ? 'Upload Tender Specification'
+                          : has3Stages
+                          ? 'Open 3-Stage Intelligence Dossier'
+                          : 'Execute Standards Pipeline'}
+                      </span>
+                    </span>
+                    <ArrowRight size={14} />
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
       )}
 
       {/* Modal: Create New Project */}
@@ -1271,12 +1325,14 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
             left: 0,
             right: 0,
             bottom: 0,
-            background: 'rgba(0,0,0,0.5)',
+            background: 'rgba(0,0,0,0.6)',
+            backdropFilter: 'blur(4px)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             zIndex: 10000,
             padding: '20px',
+            animation: 'fadeSlideUp 0.2s ease',
           }}
         >
           <div
@@ -1284,94 +1340,64 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
             style={{
               width: '100%',
               maxWidth: '540px',
-              background: 'var(--paper)',
+              background: 'var(--surface)',
               padding: '28px',
-              borderRadius: '10px',
-              boxShadow: '0 16px 40px rgba(0,0,0,0.25)',
+              borderRadius: '12px',
+              boxShadow: 'var(--shadow-modal)',
               border: '1px solid var(--hairline)',
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
               <div>
                 <span className="section-label" style={{ margin: 0 }}>NEW PROCUREMENT PROJECT</span>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '20px', fontWeight: 700, margin: '2px 0 0 0', color: 'var(--ink)' }}>
+                <h3 style={{ fontFamily: 'var(--font-ui)', fontSize: '20px', fontWeight: 800, margin: '2px 0 0 0', color: 'var(--ink)' }}>
                   Create Project Record
                 </h3>
               </div>
               <button
                 type="button"
                 onClick={() => setIsCreateModalOpen(false)}
-                style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--ink-muted)' }}
+                style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--ink-muted)', padding: '4px' }}
               >
                 <X size={20} />
               </button>
             </div>
 
-            <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', margin: '0 0 20px 0' }}>
-              Define the project details and NIT reference. Once created, you will upload the tender document to execute the 3-stage intelligence pipeline.
+            <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', margin: '0 0 20px 0', lineHeight: 1.5 }}>
+              Define the project details and NIT reference. Once created, you can upload the tender document to execute the 3-stage intelligence pipeline.
             </p>
 
             <form onSubmit={handleCreateProject} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               <div>
-                <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, fontFamily: 'var(--font-data)', color: 'var(--ink)', marginBottom: '5px' }}>
-                  PROJECT TITLE *
-                </label>
+                <label className="auth-label">PROJECT TITLE *</label>
                 <input
                   type="text"
                   required
                   placeholder="e.g. Construction of Elevated Metro Corridor & Stations"
                   value={newTitle}
                   onChange={(e) => setNewTitle(e.target.value)}
-                  style={{
-                    width: '100%',
-                    padding: '9px 12px',
-                    borderRadius: '6px',
-                    border: '1px solid var(--hairline)',
-                    background: 'var(--surface)',
-                    fontSize: '13px',
-                    color: 'var(--ink)',
-                  }}
+                  className="auth-input"
                 />
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, fontFamily: 'var(--font-data)', color: 'var(--ink)', marginBottom: '5px' }}>
-                  NIT / TENDER REFERENCE NUMBER *
-                </label>
+                <label className="auth-label">NIT / TENDER REFERENCE NUMBER *</label>
                 <input
                   type="text"
                   required
                   placeholder="e.g. NIT-DMRC-2026-088"
                   value={newNitNumber}
                   onChange={(e) => setNewNitNumber(e.target.value)}
-                  style={{
-                    width: '100%',
-                    padding: '9px 12px',
-                    borderRadius: '6px',
-                    border: '1px solid var(--hairline)',
-                    background: 'var(--surface)',
-                    fontSize: '13px',
-                    color: 'var(--ink)',
-                  }}
+                  className="auth-input font-mono"
                 />
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, fontFamily: 'var(--font-data)', color: 'var(--ink)', marginBottom: '5px' }}>
-                  DEPARTMENT / PROCURING ENTITY
-                </label>
+                <label className="auth-label">DEPARTMENT / PROCURING ENTITY</label>
                 <select
                   value={newDepartment}
                   onChange={(e) => setNewDepartment(e.target.value)}
-                  style={{
-                    width: '100%',
-                    padding: '9px 12px',
-                    borderRadius: '6px',
-                    border: '1px solid var(--hairline)',
-                    background: 'var(--surface)',
-                    fontSize: '13px',
-                    color: 'var(--ink)',
-                  }}
+                  className="auth-input auth-select"
                 >
                   <option value="National Highways Authority of India (NHAI)">National Highways Authority of India (NHAI)</option>
                   <option value="Central Public Works Department (CPWD)">Central Public Works Department (CPWD)</option>
@@ -1383,23 +1409,13 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, fontFamily: 'var(--font-data)', color: 'var(--ink)', marginBottom: '5px' }}>
-                  ESTIMATED TENDER VALUE
-                </label>
+                <label className="auth-label">ESTIMATED TENDER VALUE</label>
                 <input
                   type="text"
                   placeholder="e.g. ₹185.00 Crores"
                   value={newEstimatedValue}
                   onChange={(e) => setNewEstimatedValue(e.target.value)}
-                  style={{
-                    width: '100%',
-                    padding: '9px 12px',
-                    borderRadius: '6px',
-                    border: '1px solid var(--hairline)',
-                    background: 'var(--surface)',
-                    fontSize: '13px',
-                    color: 'var(--ink)',
-                  }}
+                  className="auth-input"
                 />
               </div>
 
@@ -1407,16 +1423,16 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                 <button
                   type="button"
                   onClick={() => setIsCreateModalOpen(false)}
-                  className="action-btn secondary"
-                  style={{ padding: '8px 16px', fontSize: '13px' }}
+                  className="btn-secondary"
+                  style={{ height: '38px', padding: '0 16px', fontSize: '13px' }}
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
                   disabled={!newTitle.trim() || !newNitNumber.trim()}
-                  className="action-btn primary"
-                  style={{ padding: '8px 20px', fontSize: '13px', fontWeight: 600 }}
+                  className="btn-primary"
+                  style={{ height: '38px', padding: '0 20px', fontSize: '13px', fontWeight: 700 }}
                 >
                   Create & Ingest Tender
                 </button>
@@ -1428,3 +1444,4 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
     </div>
   );
 };
+

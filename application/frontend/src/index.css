@@ -1239,7 +1239,7 @@ body {
   display: block;
 }
 
-/* --- Keyframe Animations --- */
+/* --- Keyframe Animations & Micro-Interactions --- */
 @keyframes fadeSlideUp {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -1256,12 +1256,111 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.08); }
+}
+
+@keyframes subtle-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 .page-transition-enter {
   animation: fadeSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* --- Project Directory & Workspace Clean Aesthetics --- */
+.hero-gradient-card {
+  background: linear-gradient(135deg, var(--surface-secondary) 0%, var(--surface) 100%);
+  border: 1px solid var(--hairline);
+  border-left: 5px solid var(--olive-primary);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-card);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-gradient-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100%;
+  background: radial-gradient(circle at 100% 0%, var(--focus-blue-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.project-card-interactive {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-card);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card-interactive:hover {
+  border-color: var(--olive-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+}
+
+.live-beacon {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.live-beacon.active {
+  background-color: var(--emerald-pass);
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.2);
+}
+
+.live-beacon.amber {
+  background-color: var(--amber-warn);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.2);
+}
+
+.glass-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-data);
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--surface-secondary);
+  color: var(--ink-secondary);
+  border: 1px solid var(--hairline);
+}
+
+.stat-kpi-card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: var(--shadow-xs);
+  transition: all 0.2s ease;
+}
+
+.stat-kpi-card:hover {
+  border-color: var(--hairline-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
 
 /* --- Responsive Adaptations --- */

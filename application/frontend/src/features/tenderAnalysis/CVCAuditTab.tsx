@@ -41,7 +41,6 @@ export const CVCAuditTab: React.FC<CVCAuditTabProps> = ({
 }) => {
   const [copiedHash, setCopiedHash] = useState(false);
   const [copiedSummary, setCopiedSummary] = useState(false);
-  const [activeLawModal, setActiveLawModal] = useState<string | null>(null);
 
   const hash = auditRecord?.audit_hash || 'SHA256-PENDING-FINALIZE';
   const timestamp = auditRecord?.timestamp_utc || new Date().toISOString();
@@ -128,73 +127,153 @@ Compliant with CVC Circular 02/02/2022 & GFR Rule 144(xi).`;
   ];
 
   return (
-    <div className="space-y-6">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
       {/* Statutory Header Seal Banner */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-emerald-950 via-slate-900 to-indigo-950 p-6 sm:p-8 text-white shadow-xl border border-emerald-500/30">
-        <div className="absolute right-0 top-0 translate-x-8 -translate-y-8 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
-        
-        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-          <div className="space-y-2">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 tracking-wide uppercase">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                CVC Statutory Audit Defense Dossier
+      <div
+        style={{
+          position: 'relative',
+          overflow: 'hidden',
+          borderRadius: '12px',
+          background: 'linear-gradient(135deg, var(--olive-primary) 0%, #001D39 100%)',
+          padding: '24px 28px',
+          color: '#FFFFFF',
+          boxShadow: 'var(--shadow-card-hover)',
+          border: '1px solid rgba(255,255,255,0.15)',
+        }}
+      >
+        <div style={{ position: 'relative', zIndex: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', flexWrap: 'wrap' }}>
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  padding: '3px 10px',
+                  borderRadius: '20px',
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  backgroundColor: 'rgba(34, 197, 94, 0.2)',
+                  color: '#86EFAC',
+                  border: '1px solid rgba(34, 197, 94, 0.4)',
+                  letterSpacing: '0.04em',
+                }}
+              >
+                <ShieldCheck size={14} color="#86EFAC" />
+                <span>CVC STATUTORY AUDIT DEFENSE DOSSIER</span>
               </span>
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-500/20 text-blue-300 border border-blue-500/30">
-                <Award className="w-3 h-3" /> GFR 2017 Rule 144(xi) Certified
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                  padding: '3px 10px',
+                  borderRadius: '20px',
+                  fontSize: '11px',
+                  fontWeight: 600,
+                  backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                  color: '#93C5FD',
+                  border: '1px solid rgba(59, 130, 246, 0.4)',
+                }}
+              >
+                <Award size={13} />
+                <span>GFR 2017 Rule 144(xi) Certified</span>
               </span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-100">
+            <h2 style={{ fontSize: '22px', fontWeight: 800, color: '#FFFFFF', margin: '0 0 6px 0', letterSpacing: '-0.01em' }}>
               Integrity Seal & Statutory Compliance Certificate
             </h2>
-            <p className="text-sm text-slate-300 max-w-2xl leading-relaxed">
+            <p style={{ fontSize: '13.5px', color: 'rgba(255, 255, 255, 0.85)', margin: 0, maxWidth: '750px', lineHeight: 1.5 }}>
               Cryptographically verified audit trail documenting the exact rationalization from obsolete / ambiguous tender clauses to active Bureau of Indian Standards (BIS) mandates. Defensible before Central Vigilance Commission (CVC) & CAG audits.
             </p>
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap items-center gap-3 shrink-0">
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
             <button
+              type="button"
               onClick={handleCopySummary}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-sm font-medium border border-slate-700 shadow-sm transition"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '9px 16px',
+                borderRadius: '8px',
+                backgroundColor: 'rgba(255, 255, 255, 0.12)',
+                color: '#FFFFFF',
+                fontSize: '12.5px',
+                fontWeight: 600,
+                border: '1px solid rgba(255, 255, 255, 0.25)',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease',
+              }}
             >
-              {copiedSummary ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
-              {copiedSummary ? 'Copied Summary!' : 'Copy Summary'}
+              {copiedSummary ? <Check size={14} color="#86EFAC" /> : <Copy size={14} />}
+              <span>{copiedSummary ? 'Copied Summary!' : 'Copy Summary'}</span>
             </button>
             <button
+              type="button"
               onClick={handleDownloadDossier}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold shadow-lg shadow-emerald-900/40 transition"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '9px 18px',
+                borderRadius: '8px',
+                backgroundColor: 'var(--emerald-pass)',
+                color: '#FFFFFF',
+                fontSize: '12.5px',
+                fontWeight: 700,
+                border: 'none',
+                cursor: 'pointer',
+                boxShadow: '0 4px 12px rgba(34, 197, 94, 0.3)',
+                transition: 'all 0.15s ease',
+              }}
             >
-              <Download className="w-4 h-4" />
-              Export Full Audit Dossier (JSON)
+              <Download size={14} />
+              <span>Export Full Audit Dossier (JSON)</span>
             </button>
           </div>
         </div>
 
         {/* Cryptographic Seal Hash Bar */}
-        <div className="mt-6 pt-5 border-t border-slate-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs">
-          <div className="flex items-center gap-2.5">
-            <span className="text-slate-400 font-mono flex items-center gap-1">
-              <Hash className="w-3.5 h-3.5 text-emerald-400" /> SHA-256 SEAL:
+        <div
+          style={{
+            marginTop: '18px',
+            paddingTop: '14px',
+            borderTop: '1px solid rgba(255, 255, 255, 0.15)',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '12px',
+            fontSize: '11.5px',
+            fontFamily: 'var(--font-data)',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+            <span style={{ color: 'rgba(255, 255, 255, 0.7)', display: 'flex', alignItems: 'center', gap: '4px' }}>
+              <Hash size={13} color="#86EFAC" /> SHA-256 SEAL:
             </span>
-            <span className="font-mono bg-slate-950/70 px-3 py-1 rounded-lg text-emerald-300 border border-slate-800 break-all select-all">
+            <span style={{ backgroundColor: 'rgba(0, 0, 0, 0.35)', padding: '3px 8px', borderRadius: '4px', color: '#86EFAC', border: '1px solid rgba(255, 255, 255, 0.1)' }}>
               {hash}
             </span>
             <button
+              type="button"
               onClick={handleCopyHash}
-              title="Copy Audit Hash"
-              className="p-1 rounded hover:bg-slate-800 text-slate-400 hover:text-slate-200 transition"
+              style={{ background: 'none', border: 'none', color: 'rgba(255, 255, 255, 0.8)', cursor: 'pointer', padding: '2px' }}
+              title="Copy Hash"
             >
-              {copiedHash ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+              {copiedHash ? <Check size={13} color="#86EFAC" /> : <Copy size={13} />}
             </button>
           </div>
 
-          <div className="flex items-center gap-4 text-slate-400">
-            <span className="flex items-center gap-1">
-              <Calendar className="w-3.5 h-3.5 text-slate-500" /> {timestamp}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+              <Calendar size={13} /> {timestamp}
             </span>
-            <span className="text-emerald-400 font-medium">
+            <span style={{ color: '#86EFAC', fontWeight: 700 }}>
               {modernizedCount} Clauses Modernized
             </span>
           </div>
@@ -202,29 +281,63 @@ Compliant with CVC Circular 02/02/2022 & GFR Rule 144(xi).`;
       </div>
 
       {/* Statutory Rules Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '14px' }}>
         {statutoryRules.map((rule, idx) => (
           <div
             key={idx}
-            className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-sm space-y-3"
+            style={{
+              borderRadius: '10px',
+              border: '1px solid var(--hairline)',
+              backgroundColor: 'var(--surface)',
+              padding: '18px',
+              boxShadow: 'var(--shadow-card)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '10px',
+            }}
           >
-            <div className="flex items-start justify-between gap-3">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold text-xs">
-                  <Scale className="w-4 h-4" />
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '10px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div
+                  style={{
+                    width: '32px',
+                    height: '32px',
+                    borderRadius: '8px',
+                    backgroundColor: 'var(--olive-tint)',
+                    color: 'var(--olive-primary)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 700,
+                    fontSize: '12px',
+                  }}
+                >
+                  <Scale size={16} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100">
+                  <h4 style={{ fontSize: '13.5px', fontWeight: 800, color: 'var(--ink)', margin: 0 }}>
                     {rule.code}
                   </h4>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">{rule.title}</p>
+                  <p style={{ fontSize: '11px', color: 'var(--ink-muted)', margin: '1px 0 0 0', fontFamily: 'var(--font-data)' }}>{rule.title}</p>
                 </div>
               </div>
-              <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300">
+              <span
+                style={{
+                  padding: '2px 8px',
+                  borderRadius: '12px',
+                  fontSize: '10.5px',
+                  fontWeight: 700,
+                  backgroundColor: 'var(--emerald-bg)',
+                  color: 'var(--emerald-pass)',
+                  border: '1px solid var(--emerald-border)',
+                  fontFamily: 'var(--font-data)',
+                  whiteSpace: 'nowrap',
+                }}
+              >
                 {rule.status}
               </span>
             </div>
-            <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+            <p style={{ fontSize: '12px', color: 'var(--ink-secondary)', margin: 0, lineHeight: 1.5, fontFamily: 'var(--font-prose)' }}>
               {rule.desc}
             </p>
           </div>
@@ -232,99 +345,136 @@ Compliant with CVC Circular 02/02/2022 & GFR Rule 144(xi).`;
       </div>
 
       {/* Audit Line Item Traceability Matrix */}
-      <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-        <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <FileCheck2 className="w-5 h-5 text-indigo-500" />
-            <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">
+      <div
+        style={{
+          borderRadius: '10px',
+          border: '1px solid var(--hairline)',
+          backgroundColor: 'var(--surface)',
+          boxShadow: 'var(--shadow-card)',
+          overflow: 'hidden',
+        }}
+      >
+        <div style={{ padding: '16px 20px', borderBottom: '1px solid var(--hairline)', backgroundColor: 'var(--surface-secondary)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <FileCheck2 size={18} color="var(--olive-primary)" />
+            <h3 style={{ fontSize: '15px', fontWeight: 800, color: 'var(--ink)', margin: 0 }}>
               Clause-by-Clause Audit Defense Matrix ({mappedProducts.length} Items)
             </h3>
           </div>
-          <span className="text-xs text-slate-500 dark:text-slate-400">
+          <span style={{ fontSize: '11.5px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
             Click any standard to inspect BIS Gazette details
           </span>
         </div>
 
         {mappedProducts.length === 0 ? (
-          <div className="p-8 text-center text-slate-500">
+          <div style={{ padding: '32px', textAlign: 'center', color: 'var(--ink-muted)', fontSize: '13px' }}>
             No mapped products available yet. Run Stage 2 & 3 to populate audit matrix.
           </div>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs">
-              <thead className="bg-slate-50 dark:bg-slate-800/60 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-200 dark:border-slate-800">
-                <tr>
-                  <th className="py-3 px-4">Line Item / Product</th>
-                  <th className="py-3 px-4">Clause / Page</th>
-                  <th className="py-3 px-4">Legacy / Outdated Ref</th>
-                  <th className="py-3 px-4">Designated BIS Standard</th>
-                  <th className="py-3 px-4">HITL Governance</th>
-                  <th className="py-3 px-4">Statutory Justification & Rationale</th>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '12px', textAlign: 'left' }}>
+              <thead>
+                <tr style={{ backgroundColor: 'var(--surface-secondary)', borderBottom: '1px solid var(--hairline)', color: 'var(--ink-muted)', fontWeight: 700 }}>
+                  <th style={{ padding: '10px 14px' }}>Line Item / Product</th>
+                  <th style={{ padding: '10px 14px' }}>Clause / Page</th>
+                  <th style={{ padding: '10px 14px' }}>Legacy / Outdated Ref</th>
+                  <th style={{ padding: '10px 14px' }}>Designated BIS Standard</th>
+                  <th style={{ padding: '10px 14px' }}>HITL Governance</th>
+                  <th style={{ padding: '10px 14px' }}>Statutory Justification & Rationale</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-200 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+              <tbody>
                 {mappedProducts.map((p, index) => {
                   const isOutdated = Boolean(p.detected_outdated_is);
                   return (
                     <tr
                       key={p.product_id || index}
-                      className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition"
+                      style={{
+                        borderBottom: '1px solid var(--hairline)',
+                        backgroundColor: index % 2 === 0 ? 'var(--surface)' : 'var(--surface-secondary)',
+                      }}
                     >
-                      <td className="py-3 px-4 font-semibold text-slate-900 dark:text-slate-100">
+                      <td style={{ padding: '12px 14px', fontWeight: 700, color: 'var(--ink)' }}>
                         {p.product_name}
                       </td>
-                      <td className="py-3 px-4 whitespace-nowrap">
-                        <span className="font-mono bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded text-[11px]">
+                      <td style={{ padding: '12px 14px', whiteSpace: 'nowrap' }}>
+                        <span style={{ fontFamily: 'var(--font-data)', backgroundColor: 'var(--surface-secondary)', border: '1px solid var(--hairline)', padding: '2px 6px', borderRadius: '4px', fontSize: '11px', color: 'var(--ink)' }}>
                           Cl. {p.clause_number || 'N/A'} (p. {p.page_number})
                         </span>
                       </td>
-                      <td className="py-3 px-4 whitespace-nowrap">
+                      <td style={{ padding: '12px 14px', whiteSpace: 'nowrap' }}>
                         {isOutdated ? (
-                          <span className="inline-flex items-center gap-1 font-mono text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 px-2 py-0.5 rounded text-[11px] line-through font-medium">
-                            <AlertTriangle className="w-3 h-3 shrink-0" />
+                          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontFamily: 'var(--font-data)', color: 'var(--error-red)', backgroundColor: 'var(--error-bg)', border: '1px solid var(--error-border)', padding: '2px 6px', borderRadius: '4px', fontSize: '11px', textDecoration: 'line-through', fontWeight: 600 }}>
+                            <AlertTriangle size={11} />
                             {p.detected_outdated_is}
                           </span>
                         ) : (
-                          <span className="text-slate-400 italic">None / Generic</span>
+                          <span style={{ color: 'var(--ink-muted)', fontStyle: 'italic', fontSize: '11px' }}>None / Generic</span>
                         )}
                       </td>
-                      <td className="py-3 px-4 whitespace-nowrap">
+                      <td style={{ padding: '12px 14px', whiteSpace: 'nowrap' }}>
                         <button
+                          type="button"
                           onClick={() => onOpenDrawer(p.recommended_is)}
-                          className="inline-flex items-center gap-1 font-mono font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/50 px-2.5 py-1 rounded border border-indigo-200 dark:border-indigo-800/60 transition"
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px',
+                            fontFamily: 'var(--font-data)',
+                            fontWeight: 700,
+                            color: 'var(--olive-primary)',
+                            backgroundColor: 'var(--olive-tint)',
+                            border: '1px solid var(--hairline)',
+                            padding: '3px 8px',
+                            borderRadius: '4px',
+                            cursor: 'pointer',
+                            fontSize: '11.5px',
+                          }}
                         >
-                          {p.recommended_is}
-                          <ExternalLink className="w-3 h-3 ml-0.5" />
+                          <span>{p.recommended_is}</span>
+                          <ExternalLink size={10} />
                         </button>
                         {p.qco_mandate?.mandatory && (
-                          <span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 uppercase">
+                          <span
+                            style={{
+                              marginLeft: '6px',
+                              padding: '2px 6px',
+                              borderRadius: '4px',
+                              fontSize: '9.5px',
+                              fontWeight: 700,
+                              backgroundColor: 'var(--amber-bg)',
+                              color: 'var(--amber-warn)',
+                              border: '1px solid var(--amber-border)',
+                              textTransform: 'uppercase',
+                            }}
+                          >
                             QCO
                           </span>
                         )}
                       </td>
-                      <td className="py-3 px-4 whitespace-nowrap">
+                      <td style={{ padding: '12px 14px', whiteSpace: 'nowrap' }}>
                         {p.status === 'RESOLVED' && (
-                          <span className="px-2 py-0.5 rounded text-[11px] font-medium bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300">
+                          <span style={{ padding: '2px 8px', borderRadius: '10px', fontSize: '10.5px', fontWeight: 700, backgroundColor: 'var(--emerald-bg)', color: 'var(--emerald-pass)', border: '1px solid var(--emerald-border)', fontFamily: 'var(--font-data)' }}>
                             Confidence: {Math.round(p.confidence_score * 100)}%
                           </span>
                         )}
                         {p.status === 'OVERRIDDEN' && (
-                          <span className="px-2 py-0.5 rounded text-[11px] font-medium bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300">
+                          <span style={{ padding: '2px 8px', borderRadius: '10px', fontSize: '10.5px', fontWeight: 700, backgroundColor: 'rgba(79, 70, 229, 0.1)', color: 'var(--collapse-cobalt)', border: '1px solid rgba(79, 70, 229, 0.3)', fontFamily: 'var(--font-data)' }}>
                             Officer Override ({p.officer_override_is})
                           </span>
                         )}
                         {p.status === 'NEEDS_CLARIFICATION' && (
-                          <span className="px-2 py-0.5 rounded text-[11px] font-medium bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300">
+                          <span style={{ padding: '2px 8px', borderRadius: '10px', fontSize: '10.5px', fontWeight: 700, backgroundColor: 'var(--amber-bg)', color: 'var(--amber-warn)', border: '1px solid var(--amber-border)', fontFamily: 'var(--font-data)' }}>
                             HITL Pending
                           </span>
                         )}
                       </td>
-                      <td className="py-3 px-4 max-w-md">
-                        <p className="text-slate-600 dark:text-slate-400 line-clamp-2 leading-relaxed">
+                      <td style={{ padding: '12px 14px', maxWidth: '380px' }}>
+                        <p style={{ fontSize: '11.5px', color: 'var(--ink-secondary)', margin: 0, lineHeight: 1.45 }}>
                           {p.engineering_rationale}
                         </p>
                         {p.officer_clarification_answer && (
-                          <p className="mt-1 text-[11px] text-blue-600 dark:text-blue-400 font-medium">
+                          <p style={{ margin: '4px 0 0 0', fontSize: '11px', color: 'var(--collapse-cobalt)', fontWeight: 600 }}>
                             Clarification Input: &ldquo;{p.officer_clarification_answer}&rdquo;
                           </p>
                         )}
@@ -339,16 +489,37 @@ Compliant with CVC Circular 02/02/2022 & GFR Rule 144(xi).`;
       </div>
 
       {/* Legal & Regulatory Defense Statement */}
-      <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 p-6 space-y-4">
-        <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
-          <BookOpen className="w-4 h-4 text-emerald-600" />
-          Statutory Defense Certification Text
+      <div
+        style={{
+          borderRadius: '10px',
+          border: '1px solid var(--hairline)',
+          backgroundColor: 'var(--surface-secondary)',
+          padding: '20px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '12px',
+        }}
+      >
+        <h4 style={{ fontSize: '13.5px', fontWeight: 800, color: 'var(--ink)', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <BookOpen size={16} color="var(--olive-primary)" />
+          <span>Statutory Defense Certification Text</span>
         </h4>
-        <div className="p-4 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 font-serif text-xs text-slate-700 dark:text-slate-300 leading-relaxed space-y-2">
-          <p>
+        <div
+          style={{
+            padding: '14px 16px',
+            borderRadius: '6px',
+            backgroundColor: 'var(--surface)',
+            border: '1px solid var(--hairline)',
+            fontSize: '12px',
+            color: 'var(--ink-secondary)',
+            lineHeight: 1.6,
+            fontFamily: 'var(--font-prose)',
+          }}
+        >
+          <p style={{ margin: '0 0 8px 0' }}>
             &ldquo;It is hereby certified that the technical specifications of items in this tender schedule have been verified against active Gazette notifications issued under the Bureau of Indian Standards Act, 2016 and General Financial Rules (GFR) 2017 Rule 144(xi).
           </p>
-          <p>
+          <p style={{ margin: 0 }}>
             All cited standards are currently valid in the National Repository, and wherever Quality Control Orders (QCOs) have been issued by line Ministries, compulsory ISI certification requirements have been formally incorporated. No foreign OEM-specific brands or restrictive proprietary metrics have been admitted, guaranteeing open, competitive bidding in compliance with CVC Directives.&rdquo;
           </p>
         </div>

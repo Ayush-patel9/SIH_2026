@@ -58,7 +58,6 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
     setExpandedInsightsId((prev) => ({ ...prev, [productId]: !prev[productId] }));
   };
   const [confirmedProducts, setConfirmedProducts] = useState<Record<string, boolean>>(() => {
-    // By default, products with confidence >= 0.85 and no clarification needed can be pre-confirmed
     const initial: Record<string, boolean> = {};
     products.forEach((p) => {
       if (p.confidence_score >= 0.85 && !p.clarification_needed) {
@@ -78,7 +77,6 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
         option,
         product
       );
-      // Mark as confirmed once clarified
       setConfirmedProducts((prev) => ({ ...prev, [product.product_id]: true }));
     } finally {
       setClarifyingId(null);
@@ -112,12 +110,12 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
       {/* Intermediate Stage Header Banner */}
       <div
         style={{
-          background: 'linear-gradient(135deg, rgba(54, 69, 47, 0.08) 0%, rgba(194, 157, 83, 0.12) 100%)',
-          border: '1px solid #E5E0D4',
-          borderLeft: '5px solid #36452F',
+          background: 'linear-gradient(135deg, var(--olive-tint) 0%, var(--surface-secondary) 100%)',
+          border: '1px solid var(--hairline)',
+          borderLeft: '5px solid var(--olive-primary)',
           borderRadius: '12px',
           padding: '24px 28px',
-          boxShadow: '0 2px 10px rgba(54, 69, 47, 0.05)',
+          boxShadow: 'var(--shadow-card)',
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', flexWrap: 'wrap' }}>
@@ -125,8 +123,8 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
             style={{
               padding: '3px 10px',
               borderRadius: '20px',
-              background: '#36452F',
-              color: '#FFFEFB',
+              background: 'var(--olive-primary)',
+              color: '#FFFFFF',
               fontSize: '11px',
               fontWeight: 700,
               fontFamily: 'var(--font-data, monospace)',
@@ -135,39 +133,39 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
           >
             STAGE 2 OF 3 · INTERMEDIATE SELECTION
           </span>
-          <span style={{ fontSize: '12px', color: '#6E7A68', fontFamily: 'var(--font-data, monospace)' }}>
+          <span style={{ fontSize: '12px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data, monospace)' }}>
             HUMAN-IN-THE-LOOP STANDARDS VERIFICATION
           </span>
         </div>
 
-        <h2 style={{ fontFamily: 'var(--font-ui, sans-serif)', fontSize: '22px', fontWeight: 800, color: '#1C2419', margin: '0 0 6px 0' }}>
+        <h2 style={{ fontFamily: 'var(--font-ui, sans-serif)', fontSize: '22px', fontWeight: 800, color: 'var(--ink)', margin: '0 0 6px 0' }}>
           Technical Product Selection & Indian Standards Mapping
         </h2>
-        <p style={{ fontFamily: 'var(--font-prose, sans-serif)', fontSize: '14px', color: '#44503E', margin: 0, lineHeight: 1.5, maxWidth: '850px' }}>
+        <p style={{ fontFamily: 'var(--font-prose, sans-serif)', fontSize: '14px', color: 'var(--ink-secondary)', margin: 0, lineHeight: 1.5, maxWidth: '850px' }}>
           ManakAI has decomposed <strong>{tenderTitle}</strong> and mapped each extracted product to active Indian Standards. 
           Please review the matched standards below, answer any technical clarification prompts, and confirm all items to generate the official clause redlines and CVC audit seal.
         </p>
 
         {/* Metric Badges */}
         <div style={{ display: 'flex', gap: '12px', marginTop: '18px', flexWrap: 'wrap' }}>
-          <div style={{ background: '#FFFEFB', border: '1px solid #E5E0D4', borderRadius: '8px', padding: '8px 14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Layers size={16} color="#36452F" />
-            <span style={{ fontSize: '12px', fontFamily: 'var(--font-data, monospace)', color: '#1C2419', fontWeight: 600 }}>
+          <div style={{ background: 'var(--surface)', border: '1px solid var(--hairline)', borderRadius: '8px', padding: '8px 14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Layers size={16} color="var(--olive-primary)" />
+            <span style={{ fontSize: '12px', fontFamily: 'var(--font-data, monospace)', color: 'var(--ink)', fontWeight: 600 }}>
               {totalCount} Total Products Extracted
             </span>
           </div>
 
-          <div style={{ background: '#FFFEFB', border: '1px solid #E5E0D4', borderRadius: '8px', padding: '8px 14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <CheckCircle2 size={16} color="#2D6A4F" />
-            <span style={{ fontSize: '12px', fontFamily: 'var(--font-data, monospace)', color: '#2D6A4F', fontWeight: 700 }}>
+          <div style={{ background: 'var(--surface)', border: '1px solid var(--hairline)', borderRadius: '8px', padding: '8px 14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <CheckCircle2 size={16} color="var(--emerald-pass)" />
+            <span style={{ fontSize: '12px', fontFamily: 'var(--font-data, monospace)', color: 'var(--emerald-pass)', fontWeight: 700 }}>
               {confirmedCount} / {totalCount} Items Confirmed
             </span>
           </div>
 
           {pendingClarifications > 0 && (
-            <div style={{ background: '#FFF9EB', border: '1px solid #FDE68A', borderRadius: '8px', padding: '8px 14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <HelpCircle size={16} color="#C47F17" />
-              <span style={{ fontSize: '12px', fontFamily: 'var(--font-data, monospace)', color: '#92400E', fontWeight: 700 }}>
+            <div style={{ background: 'var(--amber-bg)', border: '1px solid var(--amber-border)', borderRadius: '8px', padding: '8px 14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <HelpCircle size={16} color="var(--amber-warn)" />
+              <span style={{ fontSize: '12px', fontFamily: 'var(--font-data, monospace)', color: 'var(--amber-warn)', fontWeight: 700 }}>
                 {pendingClarifications} Technical Clarifications Pending
               </span>
             </div>
@@ -187,13 +185,13 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
             <div
               key={product.product_id || idx}
               style={{
-                backgroundColor: '#FFFEFB',
+                backgroundColor: 'var(--surface)',
                 border: '1px solid',
-                borderColor: isConfirmed ? '#B7E4C7' : hasClarification ? '#FDE68A' : '#E5E0D4',
-                borderLeft: `5px solid ${isConfirmed ? '#2D6A4F' : hasClarification ? '#C47F17' : isOutdated ? '#BA3A2A' : '#36452F'}`,
+                borderColor: isConfirmed ? 'var(--emerald-border)' : hasClarification ? 'var(--amber-border)' : 'var(--hairline)',
+                borderLeft: `5px solid ${isConfirmed ? 'var(--emerald-pass)' : hasClarification ? 'var(--amber-warn)' : isOutdated ? 'var(--error-red)' : 'var(--olive-primary)'}`,
                 borderRadius: '10px',
                 padding: '22px',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                boxShadow: 'var(--shadow-card)',
                 transition: 'all 0.2s ease',
               }}
             >
@@ -205,16 +203,17 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       style={{
                         padding: '3px 8px',
                         borderRadius: '4px',
-                        background: '#F5F0E6',
+                        background: 'var(--surface-secondary)',
                         fontFamily: 'var(--font-data, monospace)',
                         fontSize: '11px',
                         fontWeight: 700,
-                        color: '#36452F',
+                        color: 'var(--olive-primary)',
+                        border: '1px solid var(--hairline)',
                       }}
                     >
                       {product.clause_number || `Item ${idx + 1}`}
                     </span>
-                    <span style={{ fontSize: '16px', fontWeight: 700, color: '#1C2419' }}>
+                    <span style={{ fontSize: '16px', fontWeight: 700, color: 'var(--ink)' }}>
                       {product.product_name}
                     </span>
                     {product.page_number && onPageClick && (
@@ -224,7 +223,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                         style={{
                           background: 'none',
                           border: 'none',
-                          color: '#6E7A68',
+                          color: 'var(--ink-muted)',
                           fontSize: '11.5px',
                           cursor: 'pointer',
                           display: 'inline-flex',
@@ -241,13 +240,13 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                     <div
                       style={{
                         fontSize: '12.5px',
-                        color: '#6E7A68',
+                        color: 'var(--ink-secondary)',
                         fontFamily: 'var(--font-prose, sans-serif)',
                         fontStyle: 'italic',
-                        background: 'rgba(0,0,0,0.02)',
+                        background: 'var(--surface-secondary)',
                         padding: '6px 12px',
                         borderRadius: '6px',
-                        borderLeft: '2px solid #E5E0D4',
+                        borderLeft: '2px solid var(--hairline)',
                         maxWidth: '800px',
                       }}
                     >
@@ -265,9 +264,9 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       fontFamily: 'var(--font-data, monospace)',
                       fontSize: '11px',
                       fontWeight: 700,
-                      background: product.confidence_score >= 0.85 ? '#EDF7F1' : '#FFF9EB',
-                      color: product.confidence_score >= 0.85 ? '#1B4332' : '#92400E',
-                      border: `1px solid ${product.confidence_score >= 0.85 ? '#B7E4C7' : '#FDE68A'}`,
+                      background: product.confidence_score >= 0.85 ? 'var(--emerald-bg)' : 'var(--amber-bg)',
+                      color: product.confidence_score >= 0.85 ? 'var(--emerald-pass)' : 'var(--amber-warn)',
+                      border: `1px solid ${product.confidence_score >= 0.85 ? 'var(--emerald-border)' : 'var(--amber-border)'}`,
                     }}
                   >
                     Match: {(product.confidence_score * 100).toFixed(0)}%
@@ -280,10 +279,10 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       gap: '4px',
                       padding: '4px 8px',
                       borderRadius: '4px',
-                      backgroundColor: 'rgba(45, 106, 79, 0.08)',
-                      border: '1px solid rgba(45, 106, 79, 0.25)',
+                      backgroundColor: 'var(--emerald-bg)',
+                      border: '1px solid var(--emerald-border)',
                       fontSize: '11px',
-                      color: '#2D6A4F',
+                      color: 'var(--emerald-pass)',
                       fontWeight: 600,
                     }}
                     title="Grounded against Gazette of India & BIS Repository"
@@ -297,14 +296,14 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       style={{
                         padding: '4px 10px',
                         borderRadius: '20px',
-                        background: '#EDF7F1',
-                        color: '#1B4332',
+                        background: 'var(--emerald-bg)',
+                        color: 'var(--emerald-pass)',
                         fontSize: '11px',
                         fontWeight: 700,
                         display: 'flex',
                         alignItems: 'center',
                         gap: '4px',
-                        border: '1px solid #B7E4C7',
+                        border: '1px solid var(--emerald-border)',
                       }}
                     >
                       <Check size={13} />
@@ -317,9 +316,9 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       style={{
                         padding: '5px 12px',
                         borderRadius: '6px',
-                        border: '1px solid #36452F',
+                        border: '1px solid var(--olive-primary)',
                         background: 'transparent',
-                        color: '#36452F',
+                        color: 'var(--olive-primary)',
                         fontSize: '12px',
                         fontWeight: 600,
                         cursor: 'pointer',
@@ -336,20 +335,20 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
               {isOutdated && (
                 <div
                   style={{
-                    backgroundColor: '#FDF2F0',
-                    border: '1px solid #F7CDC6',
-                    borderLeft: '4px solid #BA3A2A',
+                    backgroundColor: 'var(--error-bg)',
+                    border: '1px solid var(--error-border)',
+                    borderLeft: '4px solid var(--error-red)',
                     borderRadius: '6px',
                     padding: '10px 14px',
                     marginBottom: '14px',
                     fontSize: '12.5px',
-                    color: '#991B1B',
+                    color: 'var(--error-red)',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '8px',
                   }}
                 >
-                  <AlertTriangle size={16} color="#BA3A2A" style={{ flexShrink: 0 }} />
+                  <AlertTriangle size={16} color="var(--error-red)" style={{ flexShrink: 0 }} />
                   <div>
                     <strong>WITHDRAWN / OUTDATED STANDARD CITED:</strong>{' '}
                     <code>{product.detected_outdated_is}</code> is officially withdrawn. Superseded by active standard{' '}
@@ -361,8 +360,8 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
               {/* Recommended Standard Banner with Statutory Reference & What It Is */}
               <div
                 style={{
-                  backgroundColor: '#F5F0E6',
-                  border: '1px solid #E5E0D4',
+                  backgroundColor: 'var(--surface-secondary)',
+                  border: '1px solid var(--hairline)',
                   borderRadius: '8px',
                   padding: '16px 18px',
                   marginBottom: '14px',
@@ -370,14 +369,14 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '14px' }}>
                   <div style={{ flex: 1, minWidth: '280px' }}>
-                    <div style={{ fontSize: '11px', color: '#6E7A68', fontFamily: 'var(--font-data, monospace)', fontWeight: 700, textTransform: 'uppercase', marginBottom: '4px' }}>
+                    <div style={{ fontSize: '11px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data, monospace)', fontWeight: 700, textTransform: 'uppercase', marginBottom: '4px' }}>
                       RECOMMENDED ACTIVE INDIAN STANDARD
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                      <span style={{ fontSize: '16px', fontWeight: 800, color: '#1C2419', fontFamily: 'var(--font-data, monospace)' }}>
+                      <span style={{ fontSize: '16px', fontWeight: 800, color: 'var(--ink)', fontFamily: 'var(--font-data, monospace)' }}>
                         {product.recommended_is}
                       </span>
-                      <span style={{ fontSize: '13.5px', color: '#36452F', fontWeight: 600 }}>
+                      <span style={{ fontSize: '13.5px', color: 'var(--olive-primary)', fontWeight: 600 }}>
                         — {product.recommended_is_title}
                       </span>
                     </div>
@@ -385,13 +384,13 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                     {/* Verified Statutory Citation & Scope */}
                     <div style={{ marginTop: '8px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
                       {product.where_stated && (
-                        <div style={{ fontSize: '12px', color: '#8A6922', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                          <ShieldCheck size={14} color="#B45309" />
+                        <div style={{ fontSize: '12px', color: 'var(--amber-warn)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <ShieldCheck size={14} color="var(--amber-warn)" />
                           <span><strong>Where Stated:</strong> {product.where_stated}</span>
                         </div>
                       )}
                       {product.what_it_is && (
-                        <div style={{ fontSize: '12px', color: '#44503E', lineHeight: 1.45, marginTop: '2px' }}>
+                        <div style={{ fontSize: '12px', color: 'var(--ink-secondary)', lineHeight: 1.45, marginTop: '2px' }}>
                           <strong>Technical Scope:</strong> {product.what_it_is}
                         </div>
                       )}
@@ -408,9 +407,9 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                         style={{
                           padding: '6px 12px',
                           borderRadius: '6px',
-                          border: '1px solid #2D6A4F',
-                          background: 'rgba(45, 106, 79, 0.08)',
-                          color: '#2D6A4F',
+                          border: '1px solid var(--emerald-border)',
+                          background: 'var(--emerald-bg)',
+                          color: 'var(--emerald-pass)',
                           fontSize: '11.5px',
                           fontWeight: 700,
                           textDecoration: 'none',
@@ -431,9 +430,9 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       style={{
                         padding: '6px 12px',
                         borderRadius: '6px',
-                        border: '1px solid #D5CFBF',
-                        background: '#FFFEFB',
-                        color: '#36452F',
+                        border: '1px solid var(--hairline)',
+                        background: 'var(--surface)',
+                        color: 'var(--ink)',
                         fontSize: '11.5px',
                         fontWeight: 600,
                         cursor: 'pointer',
@@ -452,9 +451,9 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       style={{
                         padding: '6px 12px',
                         borderRadius: '6px',
-                        border: '1px solid #C29D53',
-                        background: expandedInsightsId[product.product_id] ? '#FFF9EB' : '#FFFEFB',
-                        color: '#92400E',
+                        border: '1px solid var(--amber-border)',
+                        background: expandedInsightsId[product.product_id] ? 'var(--amber-bg)' : 'var(--surface)',
+                        color: 'var(--amber-warn)',
                         fontSize: '11.5px',
                         fontWeight: 700,
                         cursor: 'pointer',
@@ -475,9 +474,9 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       style={{
                         padding: '6px 12px',
                         borderRadius: '6px',
-                        border: '1px solid #D5CFBF',
-                        background: '#FFFEFB',
-                        color: '#44503E',
+                        border: '1px solid var(--hairline)',
+                        background: 'var(--surface)',
+                        color: 'var(--ink-secondary)',
                         fontSize: '11.5px',
                         fontWeight: 600,
                         cursor: 'pointer',
@@ -497,9 +496,9 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
               {expandedInsightsId[product.product_id] && (
                 <div
                   style={{
-                    backgroundColor: '#FAF8F3',
-                    border: '1px solid #E5E0D4',
-                    borderLeft: '4px solid #C29D53',
+                    backgroundColor: 'var(--surface-secondary)',
+                    border: '1px solid var(--hairline)',
+                    borderLeft: '4px solid var(--amber-warn)',
                     borderRadius: '8px',
                     padding: '16px',
                     marginBottom: '16px',
@@ -507,20 +506,20 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', flexWrap: 'wrap', gap: '8px' }}>
                     <div>
-                      <div style={{ fontSize: '13px', fontWeight: 800, color: '#1C2419', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                        <Search size={15} color="#92400E" />
+                      <div style={{ fontSize: '13px', fontWeight: 800, color: 'var(--ink)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <Search size={15} color="var(--amber-warn)" />
                         <span>Evaluated Candidate Indian Standards for {product.product_name}</span>
                       </div>
-                      <div style={{ fontSize: '11.5px', color: '#6E7A68', marginTop: '2px' }}>
-                        All 5 candidate standards cross-referenced against the tender clause, e-Gazette QCO mandates, and active BIS catalog.
+                      <div style={{ fontSize: '11.5px', color: 'var(--ink-muted)', marginTop: '2px' }}>
+                        All candidate standards cross-referenced against the tender clause, e-Gazette QCO mandates, and active BIS catalog.
                       </div>
                     </div>
                     <span
                       style={{
                         padding: '3px 8px',
                         borderRadius: '4px',
-                        backgroundColor: '#EDF7F1',
-                        color: '#2D6A4F',
+                        backgroundColor: 'var(--emerald-bg)',
+                        color: 'var(--emerald-pass)',
                         fontSize: '11px',
                         fontWeight: 700,
                         fontFamily: 'var(--font-data, monospace)',
@@ -538,63 +537,63 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                         <div
                           key={cIdx}
                           style={{
-                            backgroundColor: isSelected ? '#FFFFFF' : '#FFFEFB',
-                            border: `1px solid ${isSelected ? '#2D6A4F' : '#E5E0D4'}`,
+                            backgroundColor: 'var(--surface)',
+                            border: `1px solid ${isSelected ? 'var(--emerald-pass)' : 'var(--hairline)'}`,
                             borderRadius: '8px',
                             padding: '12px 14px',
                             display: 'flex',
                             flexDirection: 'column',
                             gap: '8px',
-                            boxShadow: isSelected ? '0 2px 8px rgba(45,106,79,0.08)' : 'none',
+                            boxShadow: isSelected ? '0 2px 8px rgba(0,0,0,0.06)' : 'none',
                           }}
                         >
                           {/* Row 1: Code, Title, Confidence, Status Badge */}
                           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '8px' }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                              <span style={{ fontSize: '13.5px', fontWeight: 800, color: '#1C2419', fontFamily: 'var(--font-data, monospace)' }}>
+                              <span style={{ fontSize: '13.5px', fontWeight: 800, color: 'var(--ink)', fontFamily: 'var(--font-data, monospace)' }}>
                                 {cand.is_number}
                               </span>
-                              <span style={{ fontSize: '12.5px', color: '#44503E', fontWeight: 600 }}>
+                              <span style={{ fontSize: '12.5px', color: 'var(--ink-secondary)', fontWeight: 600 }}>
                                 {cand.title}
                               </span>
                               {isSelected && (
-                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: '#EDF7F1', color: '#1B4332', fontSize: '10.5px', fontWeight: 700, border: '1px solid #B7E4C7' }}>
+                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: 'var(--emerald-bg)', color: 'var(--emerald-pass)', fontSize: '10.5px', fontWeight: 700, border: '1px solid var(--emerald-border)' }}>
                                   ✓ CURRENT RECOMMENDATION
                                 </span>
                               )}
                               {cand.qco_mandatory && (
-                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: 'rgba(217, 119, 6, 0.1)', color: '#B45309', fontSize: '10.5px', fontWeight: 700, border: '1px solid rgba(217, 119, 6, 0.3)' }}>
+                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: 'var(--amber-bg)', color: 'var(--amber-warn)', fontSize: '10.5px', fontWeight: 700, border: '1px solid var(--amber-border)' }}>
                                   ⚖️ Mandatory QCO
                                 </span>
                               )}
                               {cand.status === 'SUPERSEDED_REPLACEMENT' && (
-                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: '#FDF2F0', color: '#BA3A2A', fontSize: '10.5px', fontWeight: 700 }}>
+                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: 'var(--error-bg)', color: 'var(--error-red)', fontSize: '10.5px', fontWeight: 700 }}>
                                   Active Revision
                                 </span>
                               )}
                             </div>
 
-                            <span style={{ fontSize: '11px', fontWeight: 700, fontFamily: 'var(--font-data, monospace)', color: (cand.confidence || 0) >= 0.85 ? '#2D6A4F' : '#92400E' }}>
+                            <span style={{ fontSize: '11px', fontWeight: 700, fontFamily: 'var(--font-data, monospace)', color: (cand.confidence || 0) >= 0.85 ? 'var(--emerald-pass)' : 'var(--amber-warn)' }}>
                               {Math.round((cand.confidence || 0.85) * 100)}% Match
                             </span>
                           </div>
 
                           {/* Row 2: What it is & Where stated */}
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', fontSize: '12px', color: '#44503E', lineHeight: 1.45 }}>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', fontSize: '12px', color: 'var(--ink-secondary)', lineHeight: 1.45 }}>
                             {cand.what_it_is && (
                               <div>
-                                <strong style={{ color: '#1C2419' }}>What it is:</strong> {cand.what_it_is}
+                                <strong style={{ color: 'var(--ink)' }}>What it is:</strong> {cand.what_it_is}
                               </div>
                             )}
                             {cand.where_stated && (
-                              <div style={{ color: '#8A6922' }}>
+                              <div style={{ color: 'var(--amber-warn)' }}>
                                 <strong>Where stated:</strong> {cand.where_stated}
                               </div>
                             )}
                           </div>
 
                           {/* Row 3: Action Buttons (Link & Adopt) */}
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '4px', paddingTop: '8px', borderTop: '1px solid #F0ECE1', flexWrap: 'wrap', gap: '8px' }}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '4px', paddingTop: '8px', borderTop: '1px solid var(--hairline)', flexWrap: 'wrap', gap: '8px' }}>
                             <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
                               {cand.is_link && (
                                 <a
@@ -603,7 +602,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                                   rel="noopener noreferrer"
                                   style={{
                                     fontSize: '11.5px',
-                                    color: '#2D6A4F',
+                                    color: 'var(--emerald-pass)',
                                     fontWeight: 700,
                                     textDecoration: 'none',
                                     display: 'inline-flex',
@@ -621,7 +620,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                                 style={{
                                   background: 'none',
                                   border: 'none',
-                                  color: '#6E7A68',
+                                  color: 'var(--ink-muted)',
                                   fontSize: '11.5px',
                                   cursor: 'pointer',
                                   textDecoration: 'underline',
@@ -638,9 +637,9 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                                 style={{
                                   padding: '4px 10px',
                                   borderRadius: '4px',
-                                  border: '1px solid #36452F',
-                                  backgroundColor: '#FFFFFF',
-                                  color: '#36452F',
+                                  border: '1px solid var(--olive-primary)',
+                                  backgroundColor: 'var(--surface)',
+                                  color: 'var(--olive-primary)',
                                   fontSize: '11px',
                                   fontWeight: 700,
                                   cursor: 'pointer',
@@ -659,7 +658,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
 
               {/* Inline Override Input */}
               {expandedOverrideId === product.product_id && (
-                <div style={{ backgroundColor: '#FBF9F5', padding: '12px', borderRadius: '8px', border: '1px dashed #C29D53', marginBottom: '14px', display: 'flex', gap: '8px', alignItems: 'center' }}>
+                <div style={{ backgroundColor: 'var(--surface-secondary)', padding: '12px', borderRadius: '8px', border: '1px dashed var(--amber-warn)', marginBottom: '14px', display: 'flex', gap: '8px', alignItems: 'center' }}>
                   <input
                     type="text"
                     placeholder="Enter custom IS standard, e.g. IS 1489:2015 (Part 1)"
@@ -669,9 +668,11 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       flex: 1,
                       padding: '7px 10px',
                       borderRadius: '6px',
-                      border: '1px solid #D5CFBF',
+                      border: '1px solid var(--hairline)',
                       fontSize: '12px',
                       fontFamily: 'var(--font-data, monospace)',
+                      backgroundColor: 'var(--surface)',
+                      color: 'var(--ink)',
                     }}
                   />
                   <button
@@ -680,8 +681,8 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                     style={{
                       padding: '7px 14px',
                       borderRadius: '6px',
-                      background: '#36452F',
-                      color: '#FFFEFB',
+                      background: 'var(--olive-primary)',
+                      color: '#FFFFFF',
                       border: 'none',
                       fontSize: '12px',
                       fontWeight: 600,
@@ -693,27 +694,27 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                 </div>
               )}
 
-              {/* HITL Clarification Multiple Choice Prompt (The Intermediate Interactive Step) */}
+              {/* HITL Clarification Multiple Choice Prompt */}
               {product.clarification_question && (
                 <div
                   style={{
-                    backgroundColor: product.officer_clarification_answer ? '#F0F4ED' : '#FFFBEB',
-                    border: `1px solid ${product.officer_clarification_answer ? '#B7E4C7' : '#FDE68A'}`,
+                    backgroundColor: product.officer_clarification_answer ? 'var(--emerald-bg)' : 'var(--amber-bg)',
+                    border: `1px solid ${product.officer_clarification_answer ? 'var(--emerald-border)' : 'var(--amber-border)'}`,
                     borderRadius: '8px',
                     padding: '16px',
                     marginTop: '10px',
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
-                    <HelpCircle size={16} color={product.officer_clarification_answer ? '#2D6A4F' : '#D97706'} />
-                    <span style={{ fontSize: '13px', fontWeight: 700, color: '#1C2419' }}>
+                    <HelpCircle size={16} color={product.officer_clarification_answer ? 'var(--emerald-pass)' : 'var(--amber-warn)'} />
+                    <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--ink)' }}>
                       Technical Clarification Required: {product.clarification_question.question_text}
                     </span>
                   </div>
 
                   {product.officer_clarification_answer ? (
-                    <div style={{ fontSize: '12.5px', color: '#1B4332', display: 'flex', alignItems: 'center', gap: '6px', marginTop: '6px' }}>
-                      <CheckCircle2 size={14} color="#2D6A4F" />
+                    <div style={{ fontSize: '12.5px', color: 'var(--emerald-pass)', display: 'flex', alignItems: 'center', gap: '6px', marginTop: '6px' }}>
+                      <CheckCircle2 size={14} color="var(--emerald-pass)" />
                       <span>
                         Officer selected: <strong>{product.officer_clarification_answer}</strong>. Revised confidence to{' '}
                         <strong>{(product.confidence_score * 100).toFixed(0)}%</strong>.
@@ -730,8 +731,8 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                             gap: '10px',
                             padding: '10px 14px',
                             borderRadius: '6px',
-                            border: '1px solid #E5E0D4',
-                            background: '#FFFEFB',
+                            border: '1px solid var(--hairline)',
+                            background: 'var(--surface)',
                             cursor: isClarifyingThis ? 'wait' : 'pointer',
                             transition: 'all 0.15s ease',
                           }}
@@ -742,19 +743,19 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                             value={opt.label}
                             disabled={isClarifyingThis}
                             onChange={() => handleSelectOption(product, opt.label)}
-                            style={{ cursor: 'pointer' }}
+                            style={{ cursor: 'pointer', accentColor: 'var(--olive-primary)' }}
                           />
                           <div>
-                            <span style={{ fontSize: '13px', fontWeight: 600, color: '#1C2419' }}>
+                            <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--ink)' }}>
                               {opt.label}
                             </span>
                             {opt.technical_implication && (
-                              <span style={{ marginLeft: '6px', fontSize: '12px', color: '#6E7A68' }}>
+                              <span style={{ marginLeft: '6px', fontSize: '12px', color: 'var(--ink-muted)' }}>
                                 — {opt.technical_implication}
                               </span>
                             )}
                             {opt.maps_to_candidate && (
-                              <span style={{ marginLeft: '8px', fontSize: '11px', color: '#36452F', fontFamily: 'var(--font-data, monospace)', fontWeight: 700 }}>
+                              <span style={{ marginLeft: '8px', fontSize: '11px', color: 'var(--olive-primary)', fontFamily: 'var(--font-data, monospace)', fontWeight: 700 }}>
                                 → Designates {opt.maps_to_candidate}
                               </span>
                             )}
@@ -765,7 +766,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                   )}
 
                   {product.engineering_rationale && (
-                    <div style={{ fontSize: '12px', color: '#44503E', marginTop: '10px', fontStyle: 'italic', lineHeight: 1.4 }}>
+                    <div style={{ fontSize: '12px', color: 'var(--ink-secondary)', marginTop: '10px', fontStyle: 'italic', lineHeight: 1.4 }}>
                       Engineering Note: {product.engineering_rationale}
                     </div>
                   )}
@@ -781,11 +782,11 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
         style={{
           position: 'sticky',
           bottom: '20px',
-          backgroundColor: '#FFFEFB',
-          border: '1px solid #E5E0D4',
+          backgroundColor: 'var(--surface)',
+          border: '1px solid var(--hairline)',
           borderRadius: '12px',
           padding: '16px 24px',
-          boxShadow: '0 8px 30px rgba(0,0,0,0.12)',
+          boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
@@ -795,10 +796,10 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
         }}
       >
         <div>
-          <div style={{ fontSize: '14px', fontWeight: 700, color: '#1C2419' }}>
+          <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>
             Ready to generate final NIT schedule?
           </div>
-          <div style={{ fontSize: '12px', color: '#6E7A68' }}>
+          <div style={{ fontSize: '12px', color: 'var(--ink-muted)' }}>
             {confirmedCount} of {totalCount} products confirmed. Stage 3 will draft grounded redline diffs and seal the CVC audit hash.
           </div>
         </div>
@@ -810,8 +811,8 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
           style={{
             padding: '12px 28px',
             borderRadius: '8px',
-            backgroundColor: '#36452F',
-            color: '#FFFEFB',
+            backgroundColor: 'var(--olive-primary)',
+            color: '#FFFFFF',
             border: 'none',
             fontSize: '13.5px',
             fontFamily: 'var(--font-data, monospace)',
@@ -820,7 +821,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
             display: 'flex',
             alignItems: 'center',
             gap: '10px',
-            boxShadow: '0 4px 14px rgba(54, 69, 47, 0.25)',
+            boxShadow: '0 4px 14px rgba(0,0,0,0.2)',
             opacity: isProcessing ? 0.7 : 1,
             transition: 'all 0.15s ease',
           }}

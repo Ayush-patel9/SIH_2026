@@ -32,6 +32,8 @@ import { TenderChatbotPanel } from './TenderChatbotPanel';
 import { ISDetailDrawer } from './ISDetailDrawer';
 import { projectsClient } from '../projects/projectsClient';
 
+import { INITIAL_PROJECTS } from '../projects/mockProjects';
+
 export type PipelinePhase =
   | 'IDLE'
   | 'STAGE1_DECOMPOSING'
@@ -82,18 +84,36 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
   initialStage3Data = null,
   onBackToUpload,
 }) => {
+  // Preset project lookup fallback
+  const presetProject = projectId ? INITIAL_PROJECTS.find((p) => p.id === projectId) : null;
+
   // Document state
-  const [docText, setDocText] = useState<string>(initialDocumentText || DEFAULT_SAMPLE_TENDER);
-  const [pdfUrl, setPdfUrl] = useState<string | null>(initialPdfUrl || null);
+  const [docText, setDocText] = useState<string>(
+    initialDocumentText || presetProject?.documentText || DEFAULT_SAMPLE_TENDER
+  );
+  const [pdfUrl, setPdfUrl] = useState<string | null>(
+    initialPdfUrl !== undefined ? initialPdfUrl : presetProject?.pdfUrl || null
+  );
   const [tenderTitle, setTenderTitle] = useState<string>(
-    initialTitle || 'Government Procurement Tender'
+    initialTitle || presetProject?.title || 'Government Procurement Tender'
   );
 
-  // Pipeline Lifecycle Phase - derived intelligently from initial data
+  // Pipeline Data States (guaranteed non-null fallback to preset if available)
+  const [stage1Data, setStage1Data] = useState<DecomposeResponse | null>(
+    initialStage1Data || presetProject?.stage1Data || null
+  );
+  const [stage2Data, setStage2Data] = useState<Stage2MapResponse | null>(
+    initialStage2Data || presetProject?.stage2Data || null
+  );
+  const [stage3Data, setStage3Data] = useState<Stage3FinalizeResponse | null>(
+    initialStage3Data || presetProject?.stage3Data || null
+  );
+
+  // Pipeline Lifecycle Phase - derived intelligently from initial data & presets
   const deriveInitialPhase = (): PipelinePhase => {
-    if (initialStage3Data || initialPhase === 'DASHBOARD_COMPLETED') return 'DASHBOARD_COMPLETED';
-    if (initialStage2Data || initialPhase === 'STAGE2_SELECTION') return 'STAGE2_SELECTION';
-    if (initialStage1Data || initialPhase === 'STAGE1_DECOMPOSING') return 'STAGE2_SELECTION';
+    if (initialStage3Data || presetProject?.stage3Data || initialPhase === 'DASHBOARD_COMPLETED') return 'DASHBOARD_COMPLETED';
+    if (initialStage2Data || presetProject?.stage2Data || initialPhase === 'STAGE2_SELECTION') return 'STAGE2_SELECTION';
+    if (initialStage1Data || presetProject?.stage1Data || initialPhase === 'STAGE1_DECOMPOSING') return 'STAGE2_SELECTION';
     return initialPhase || 'IDLE';
   };
 
@@ -102,18 +122,13 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
   // Active Horizontal Tab in Completed Dashboard
   const [activeTab, setActiveTab] = useState<'overview' | 'inventory' | 'diffs' | 'nit' | 'audit'>('overview');
 
-  // Pipeline Data States
-  const [stage1Data, setStage1Data] = useState<DecomposeResponse | null>(initialStage1Data);
-  const [stage2Data, setStage2Data] = useState<Stage2MapResponse | null>(initialStage2Data);
-  const [stage3Data, setStage3Data] = useState<Stage3FinalizeResponse | null>(initialStage3Data);
-
   // Progress and loading states
   const [isProcessing, setIsProcessing] = useState<boolean>(false);
   const [currentStepText, setCurrentStepText] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [clarifyingProductId, setClarifyingProductId] = useState<string | null>(null);
 
-  // Collapsible Tool Panels & Split-Screen (Mirrored exactly from AiForBharat)
+  // Collapsible Tool Panels & Split-Screen
   const [isPdfCollapsed, setIsPdfCollapsed] = useState<boolean>(true);
   const [isChatCollapsed, setIsChatCollapsed] = useState<boolean>(true);
   const [leftWidth, setLeftWidth] = useState<number>(55); // percentage width of left window
@@ -156,29 +171,53 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
     if (!projectId) return;
     let isCurrent = true;
 
+    const preset = INITIAL_PROJECTS.find((p) => p.id === projectId);
+
     projectsClient.getProject(projectId).then((proj) => {
       if (!isCurrent || !proj) return;
       if (proj.documentText) setDocText(proj.documentText);
-      if (proj.pdfUrl) setPdfUrl(proj.pdfUrl);
-      if (proj.title) setTenderTitle(proj.title);
+      else if (preset?.documentText) setDocText(preset.documentText);
 
-      if (proj.stage3Data) {
-        setStage3Data(proj.stage3Data);
+      if (proj.pdfUrl) setPdfUrl(proj.pdfUrl);
+      else if (preset?.pdfUrl) setPdfUrl(preset.pdfUrl);
+
+      if (proj.title) setTenderTitle(proj.title);
+      else if (preset?.title) setTenderTitle(preset.title);
+
+      const resolvedS1 = proj.stage1Data || preset?.stage1Data;
+      const resolvedS2 = proj.stage2Data || preset?.stage2Data;
+      const resolvedS3 = proj.stage3Data || preset?.stage3Data;
+
+      if (resolvedS3) {
+        setStage3Data(resolvedS3);
         setPipelinePhase('DASHBOARD_COMPLETED');
-      } else if (proj.stage2Data) {
-        setStage2Data(proj.stage2Data);
+      } else if (resolvedS2) {
+        setStage2Data(resolvedS2);
         setPipelinePhase('STAGE2_SELECTION');
-      } else if (proj.stage1Data) {
-        setStage1Data(proj.stage1Data);
+      } else if (resolvedS1) {
+        setStage1Data(resolvedS1);
         setPipelinePhase('STAGE2_SELECTION');
       } else if (proj.analysisPhase && proj.analysisPhase !== 'IDLE') {
         setPipelinePhase(proj.analysisPhase as PipelinePhase);
+      } else if (preset?.analysisPhase) {
+        setPipelinePhase(preset.analysisPhase as PipelinePhase);
       }
 
-      if (proj.stage1Data) setStage1Data(proj.stage1Data);
-      if (proj.stage2Data) setStage2Data(proj.stage2Data);
+      if (resolvedS1) setStage1Data(resolvedS1);
+      if (resolvedS2) setStage2Data(resolvedS2);
     }).catch((err) => {
-      console.warn(`Could not load saved project analysis for ${projectId}:`, err);
+      console.warn(`Could not load saved project analysis for ${projectId} (using initial preset data):`, err);
+      if (preset) {
+        if (preset.documentText) setDocText(preset.documentText);
+        if (preset.pdfUrl) setPdfUrl(preset.pdfUrl);
+        if (preset.title) setTenderTitle(preset.title);
+        if (preset.stage1Data) setStage1Data(preset.stage1Data);
+        if (preset.stage2Data) setStage2Data(preset.stage2Data);
+        if (preset.stage3Data) {
+          setStage3Data(preset.stage3Data);
+          setPipelinePhase('DASHBOARD_COMPLETED');
+        }
+      }
     });
 
     return () => {
@@ -485,17 +524,17 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: '#FBF9F5', color: '#1C2419', fontFamily: 'var(--font-ui, sans-serif)' }}>
-      {/* Top Application Bar with Sovereign Design */}
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: 'var(--canvas)', color: 'var(--ink)', fontFamily: 'var(--font-ui, sans-serif)' }}>
+      {/* Top Application Bar with Dynamic Theme Support */}
       <header
         style={{
           position: 'sticky',
           top: 0,
           zIndex: 30,
-          backgroundColor: '#FFFEFB',
-          borderBottom: '1px solid #E5E0D4',
+          backgroundColor: 'var(--surface)',
+          borderBottom: '1px solid var(--hairline)',
           padding: '12px 24px',
-          boxShadow: '0 1px 4px rgba(0,0,0,0.03)',
+          boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '14px' }}>
@@ -506,12 +545,12 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                 width: '38px',
                 height: '38px',
                 borderRadius: '8px',
-                background: '#36452F',
-                color: '#FFFEFB',
+                background: 'var(--olive-primary)',
+                color: '#FFFFFF',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 2px 6px rgba(54,69,47,0.25)',
+                boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
               }}
             >
               <Sparkles size={18} />
@@ -519,7 +558,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
 
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                <h1 style={{ fontSize: '17px', fontWeight: 800, color: '#1C2419', margin: 0 }}>
+                <h1 style={{ fontSize: '17px', fontWeight: 800, color: 'var(--ink)', margin: 0 }}>
                   {tenderTitle}
                 </h1>
                 <span
@@ -529,9 +568,9 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                     fontSize: '11px',
                     fontWeight: 700,
                     fontFamily: 'var(--font-data, monospace)',
-                    background: '#F0F4ED',
-                    color: '#36452F',
-                    border: '1px solid #B7E4C7',
+                    background: 'var(--olive-tint)',
+                    color: 'var(--olive-primary)',
+                    border: '1px solid var(--hairline)',
                   }}
                 >
                   AI FOR BHARAT · BIS ENGINE
@@ -544,9 +583,9 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                       fontSize: '11px',
                       fontWeight: 700,
                       fontFamily: 'var(--font-data, monospace)',
-                      background: '#FFF9EB',
-                      color: '#92400E',
-                      border: '1px solid #FDE68A',
+                      background: 'var(--amber-bg)',
+                      color: 'var(--amber-warn)',
+                      border: '1px solid var(--amber-border)',
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '4px',
@@ -557,7 +596,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   </span>
                 )}
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '11.5px', color: '#6E7A68', marginTop: '2px', fontFamily: 'var(--font-data, monospace)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '11.5px', color: 'var(--ink-muted)', marginTop: '2px', fontFamily: 'var(--font-data, monospace)' }}>
                 <span>Repository: 22,011 BIS Standards</span>
                 <span>•</span>
                 <span>GFR 2017 Rule 144(xi) Guard</span>
@@ -572,8 +611,8 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                 display: 'flex',
                 alignItems: 'center',
                 gap: '6px',
-                background: '#F5F0E6',
-                border: '1px solid #E5E0D4',
+                background: 'var(--surface-secondary)',
+                border: '1px solid var(--hairline)',
                 padding: '4px 10px',
                 borderRadius: '20px',
                 fontSize: '11px',
@@ -581,15 +620,15 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                 fontWeight: 600,
               }}
             >
-              <span style={{ color: pipelinePhase !== 'IDLE' ? '#2D6A4F' : '#6E7A68' }}>
+              <span style={{ color: pipelinePhase !== 'IDLE' ? 'var(--emerald-pass)' : 'var(--ink-muted)' }}>
                 1. Decomposition {pipelinePhase !== 'IDLE' ? '✓' : ''}
               </span>
-              <span style={{ color: '#D5CFBF' }}>→</span>
-              <span style={{ color: pipelinePhase === 'STAGE2_SELECTION' ? '#92400E' : pipelinePhase === 'STAGE3_FINALIZING' || pipelinePhase === 'DASHBOARD_COMPLETED' ? '#2D6A4F' : '#6E7A68' }}>
+              <span style={{ color: 'var(--ink-muted)' }}>→</span>
+              <span style={{ color: pipelinePhase === 'STAGE2_SELECTION' ? 'var(--amber-warn)' : pipelinePhase === 'STAGE3_FINALIZING' || pipelinePhase === 'DASHBOARD_COMPLETED' ? 'var(--emerald-pass)' : 'var(--ink-muted)' }}>
                 2. Product Selection {pipelinePhase === 'DASHBOARD_COMPLETED' ? '✓' : ''}
               </span>
-              <span style={{ color: '#D5CFBF' }}>→</span>
-              <span style={{ color: pipelinePhase === 'DASHBOARD_COMPLETED' ? '#2D6A4F' : '#6E7A68' }}>
+              <span style={{ color: 'var(--ink-muted)' }}>→</span>
+              <span style={{ color: pipelinePhase === 'DASHBOARD_COMPLETED' ? 'var(--emerald-pass)' : 'var(--ink-muted)' }}>
                 3. NIT & Audit {pipelinePhase === 'DASHBOARD_COMPLETED' ? '✓' : ''}
               </span>
             </div>
@@ -604,26 +643,26 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                 gap: '7px',
                 padding: '7px 14px',
                 borderRadius: '6px',
-                border: !isPdfCollapsed ? '1px solid #2D6A4F' : '1px solid #D5CFBF',
-                background: !isPdfCollapsed ? '#EDF7F1' : '#FFFEFB',
-                color: !isPdfCollapsed ? '#2D6A4F' : '#36452F',
+                border: !isPdfCollapsed ? '1px solid var(--emerald-pass)' : '1px solid var(--hairline)',
+                background: !isPdfCollapsed ? 'var(--emerald-bg)' : 'var(--surface)',
+                color: !isPdfCollapsed ? 'var(--emerald-pass)' : 'var(--ink)',
                 fontSize: '12px',
                 fontFamily: 'var(--font-data, monospace)',
                 fontWeight: 700,
                 cursor: 'pointer',
                 transition: 'all 0.15s ease',
-                boxShadow: !isPdfCollapsed ? '0 1px 4px rgba(45,106,79,0.15)' : 'none',
+                boxShadow: !isPdfCollapsed ? '0 1px 4px rgba(0,0,0,0.1)' : 'none',
               }}
               title={isPdfCollapsed ? 'Open Tender PDF Viewer' : 'Close Tender PDF Viewer'}
             >
-              <FileText size={14} color={!isPdfCollapsed ? '#2D6A4F' : '#6E7A68'} />
+              <FileText size={14} color={!isPdfCollapsed ? 'var(--emerald-pass)' : 'var(--ink-muted)'} />
               <span>PDF Document</span>
               <span
                 style={{
                   width: '7px',
                   height: '7px',
                   borderRadius: '50%',
-                  backgroundColor: !isPdfCollapsed ? '#2D6A4F' : '#D5CFBF',
+                  backgroundColor: !isPdfCollapsed ? 'var(--emerald-pass)' : 'var(--ink-muted)',
                   transition: 'background-color 0.15s ease',
                 }}
               />
@@ -639,9 +678,9 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                 gap: '7px',
                 padding: '7px 14px',
                 borderRadius: '6px',
-                border: !isChatCollapsed ? '1px solid #6366F1' : '1px solid #D5CFBF',
-                background: !isChatCollapsed ? '#EEF2FF' : '#FFFEFB',
-                color: !isChatCollapsed ? '#4338CA' : '#36452F',
+                border: !isChatCollapsed ? '1px solid var(--collapse-cobalt)' : '1px solid var(--hairline)',
+                background: !isChatCollapsed ? 'rgba(79, 70, 229, 0.1)' : 'var(--surface)',
+                color: !isChatCollapsed ? 'var(--collapse-cobalt)' : 'var(--ink)',
                 fontSize: '12px',
                 fontFamily: 'var(--font-data, monospace)',
                 fontWeight: 700,
@@ -651,14 +690,14 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
               }}
               title={isChatCollapsed ? 'Open Tender AI Assistant Chat' : 'Close Tender AI Assistant Chat'}
             >
-              <MessageSquare size={14} color={!isChatCollapsed ? '#6366F1' : '#6E7A68'} />
+              <MessageSquare size={14} color={!isChatCollapsed ? 'var(--collapse-cobalt)' : 'var(--ink-muted)'} />
               <span>AI Chatbot</span>
               <span
                 style={{
                   width: '7px',
                   height: '7px',
                   borderRadius: '50%',
-                  backgroundColor: !isChatCollapsed ? '#6366F1' : '#D5CFBF',
+                  backgroundColor: !isChatCollapsed ? 'var(--collapse-cobalt)' : 'var(--ink-muted)',
                   transition: 'background-color 0.15s ease',
                 }}
               />
@@ -673,10 +712,10 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
               marginTop: '12px',
               padding: '10px 16px',
               borderRadius: '6px',
-              backgroundColor: '#FDF2F0',
-              border: '1px solid #F7CDC6',
-              borderLeft: '4px solid #BA3A2A',
-              color: '#991B1B',
+              backgroundColor: 'var(--error-bg)',
+              border: '1px solid var(--error-border)',
+              borderLeft: '4px solid var(--error-red)',
+              color: 'var(--error-red)',
               fontSize: '12.5px',
               display: 'flex',
               justifyContent: 'space-between',
@@ -684,12 +723,12 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <AlertTriangle size={15} color="#BA3A2A" />
+              <AlertTriangle size={15} color="var(--error-red)" />
               <span>{errorMessage}</span>
             </div>
             <button
               onClick={() => setErrorMessage(null)}
-              style={{ background: 'none', border: 'none', color: '#BA3A2A', fontWeight: 700, cursor: 'pointer' }}
+              style={{ background: 'none', border: 'none', color: 'var(--error-red)', fontWeight: 700, cursor: 'pointer' }}
             >
               ✕
             </button>
@@ -706,14 +745,14 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
           <main style={{ padding: '24px' }}>
             <div
               style={{
-                backgroundColor: '#FFFEFB',
-                border: '1px solid #E5E0D4',
+                backgroundColor: 'var(--surface)',
+                border: '1px solid var(--hairline)',
                 borderRadius: '12px',
                 padding: '40px 32px',
                 maxWidth: '800px',
                 margin: '30px auto',
                 textAlign: 'center',
-                boxShadow: '0 4px 16px rgba(0,0,0,0.04)',
+                boxShadow: 'var(--shadow-card)',
               }}
             >
               <div
@@ -721,8 +760,8 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   width: '56px',
                   height: '56px',
                   borderRadius: '12px',
-                  backgroundColor: '#F5F0E6',
-                  color: '#36452F',
+                  backgroundColor: 'var(--surface-secondary)',
+                  color: 'var(--olive-primary)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -732,10 +771,10 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                 <Sparkles size={28} />
               </div>
 
-              <h2 style={{ fontSize: '22px', fontWeight: 800, color: '#1C2419', margin: '0 0 8px 0' }}>
+              <h2 style={{ fontSize: '22px', fontWeight: 800, color: 'var(--ink)', margin: '0 0 8px 0' }}>
                 Initialize 3-Stage Standards Intelligence Pipeline
               </h2>
-              <p style={{ fontSize: '14px', color: '#44503E', maxWidth: '600px', margin: '0 auto 24px auto', lineHeight: 1.5 }}>
+              <p style={{ fontSize: '14px', color: 'var(--ink-secondary)', maxWidth: '600px', margin: '0 auto 24px auto', lineHeight: 1.5 }}>
                 Tender dossier is loaded and frozen. The automated 3-stage pipeline will decompose technical clauses, map active Indian Standards, pause for any technical clarifications, and generate the final GFR/CVC-compliant schedule.
               </p>
 
@@ -747,14 +786,14 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   style={{
                     padding: '12px 32px',
                     borderRadius: '8px',
-                    backgroundColor: '#36452F',
-                    color: '#FFFEFB',
+                    backgroundColor: 'var(--olive-primary)',
+                    color: '#FFFFFF',
                     border: 'none',
                     fontSize: '14px',
                     fontFamily: 'var(--font-data, monospace)',
                     fontWeight: 700,
                     cursor: 'pointer',
-                    boxShadow: '0 4px 12px rgba(54,69,47,0.25)',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '10px',
@@ -776,13 +815,14 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
           <main style={{ padding: '24px' }}>
             <div
               style={{
-                backgroundColor: '#FFFEFB',
-                border: '1px solid #E5E0D4',
+                backgroundColor: 'var(--surface)',
+                border: '1px solid var(--hairline)',
                 borderRadius: '12px',
                 padding: '48px 32px',
                 maxWidth: '700px',
                 margin: '40px auto',
                 textAlign: 'center',
+                boxShadow: 'var(--shadow-card)',
               }}
             >
               <div
@@ -790,8 +830,8 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   width: '56px',
                   height: '56px',
                   borderRadius: '50%',
-                  backgroundColor: '#F0F4ED',
-                  color: '#36452F',
+                  backgroundColor: 'var(--olive-tint)',
+                  color: 'var(--olive-primary)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -800,14 +840,14 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
               >
                 <RefreshCw size={26} className="animate-spin" />
               </div>
-              <h3 style={{ fontSize: '18px', fontWeight: 800, color: '#1C2419', margin: '0 0 8px 0' }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'var(--ink)', margin: '0 0 8px 0' }}>
                 Stage 1: Decomposing Document Clauses...
               </h3>
-              <p style={{ fontSize: '13.5px', color: '#6E7A68', margin: '0 0 24px 0' }}>
+              <p style={{ fontSize: '13.5px', color: 'var(--ink-muted)', margin: '0 0 24px 0' }}>
                 {currentStepText || 'Extracting technical specifications and preparing BIS search queries...'}
               </p>
-              <div style={{ width: '100%', height: '8px', borderRadius: '4px', backgroundColor: '#E5E0D4', overflow: 'hidden' }}>
-                <div style={{ width: '50%', height: '100%', backgroundColor: '#36452F', borderRadius: '4px' }} />
+              <div style={{ width: '100%', height: '8px', borderRadius: '4px', backgroundColor: 'var(--surface-secondary)', overflow: 'hidden' }}>
+                <div style={{ width: '50%', height: '100%', backgroundColor: 'var(--olive-primary)', borderRadius: '4px' }} />
               </div>
             </div>
           </main>
@@ -860,7 +900,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   justifyContent: 'center',
                   width: '6px',
                   height: leftPanelHeight,
-                  backgroundColor: isResizing ? '#2D6A4F' : 'transparent',
+                  backgroundColor: isResizing ? 'var(--olive-primary)' : 'transparent',
                   borderRadius: '3px',
                   transition: 'background-color 0.15s ease',
                   userSelect: 'none',
@@ -871,7 +911,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   style={{
                     width: '2px',
                     height: '48px',
-                    backgroundColor: isResizing ? '#2D6A4F' : '#D5CFBF',
+                    backgroundColor: isResizing ? 'var(--olive-primary)' : 'var(--hairline)',
                     borderRadius: '2px',
                   }}
                 />
@@ -895,8 +935,8 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                       height: '580px',
                       borderRadius: '10px',
                       overflow: 'hidden',
-                      border: '1px solid #E5E0D4',
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                      border: '1px solid var(--hairline)',
+                      boxShadow: 'var(--shadow-card)',
                       backgroundColor: '#0f172a',
                     }}
                   >
@@ -918,7 +958,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                       height: '580px',
                       borderRadius: '10px',
                       overflow: 'hidden',
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                      boxShadow: 'var(--shadow-card)',
                     }}
                   >
                     <TenderChatbotPanel
@@ -940,13 +980,14 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
           <main style={{ padding: '24px' }}>
             <div
               style={{
-                backgroundColor: '#FFFEFB',
-                border: '1px solid #E5E0D4',
+                backgroundColor: 'var(--surface)',
+                border: '1px solid var(--hairline)',
                 borderRadius: '12px',
                 padding: '48px 32px',
                 maxWidth: '700px',
                 margin: '40px auto',
                 textAlign: 'center',
+                boxShadow: 'var(--shadow-card)',
               }}
             >
               <div
@@ -954,8 +995,8 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   width: '56px',
                   height: '56px',
                   borderRadius: '50%',
-                  backgroundColor: '#EDF7F1',
-                  color: '#2D6A4F',
+                  backgroundColor: 'var(--emerald-bg)',
+                  color: 'var(--emerald-pass)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -964,21 +1005,21 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
               >
                 <FileCheck2 size={26} className="animate-spin" />
               </div>
-              <h3 style={{ fontSize: '18px', fontWeight: 800, color: '#1C2419', margin: '0 0 8px 0' }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'var(--ink)', margin: '0 0 8px 0' }}>
                 Stage 3: Drafting Clause Diffs & Sealing CVC Audit...
               </h3>
-              <p style={{ fontSize: '13.5px', color: '#6E7A68', margin: '0 0 24px 0' }}>
+              <p style={{ fontSize: '13.5px', color: 'var(--ink-muted)', margin: '0 0 24px 0' }}>
                 Grounding before/after redline replacements and compiling the official NIT schedule...
               </p>
-              <div style={{ width: '100%', height: '8px', borderRadius: '4px', backgroundColor: '#E5E0D4', overflow: 'hidden' }}>
-                <div style={{ width: '85%', height: '100%', backgroundColor: '#2D6A4F', borderRadius: '4px' }} />
+              <div style={{ width: '100%', height: '8px', borderRadius: '4px', backgroundColor: 'var(--surface-secondary)', overflow: 'hidden' }}>
+                <div style={{ width: '85%', height: '100%', backgroundColor: 'var(--emerald-pass)', borderRadius: '4px' }} />
               </div>
             </div>
           </main>
         )}
 
         {/* ========================================================
-            PHASE 5: DASHBOARD COMPLETED (EXACT AIFORBHARAT DUAL-MODE LAYOUT)
+            PHASE 5: DASHBOARD COMPLETED (DUAL-MODE 5-TAB DOSSIER)
            ======================================================== */}
         {pipelinePhase === 'DASHBOARD_COMPLETED' && (
           <div
@@ -1004,11 +1045,11 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   display: 'flex',
                   flexDirection: 'column',
                   height: '100%',
-                  backgroundColor: '#FFFEFB',
-                  border: '1px solid #E5E0D4',
+                  backgroundColor: 'var(--surface)',
+                  border: '1px solid var(--hairline)',
                   borderRadius: '10px',
                   overflow: 'hidden',
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                  boxShadow: 'var(--shadow-card)',
                 }}
               >
                 {/* Horizontal Tabs Header Bar */}
@@ -1019,8 +1060,8 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                     justifyContent: 'space-between',
                     gap: '12px',
                     padding: '10px 16px',
-                    borderBottom: '1px solid #E5E0D4',
-                    backgroundColor: '#FAF8F3',
+                    borderBottom: '1px solid var(--hairline)',
+                    backgroundColor: 'var(--surface-secondary)',
                     overflowX: 'auto',
                     flexShrink: 0,
                   }}
@@ -1042,19 +1083,19 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                             padding: '7px 14px',
                             borderRadius: '6px',
                             border: '1px solid',
-                            borderColor: isActive ? '#36452F' : '#E5E0D4',
-                            backgroundColor: isActive ? '#36452F' : '#FFFEFB',
-                            color: isActive ? '#FFFEFB' : '#44503E',
+                            borderColor: isActive ? 'var(--olive-primary)' : 'var(--hairline)',
+                            backgroundColor: isActive ? 'var(--olive-primary)' : 'var(--surface)',
+                            color: isActive ? '#FFFFFF' : 'var(--ink-secondary)',
                             fontSize: '12px',
                             fontWeight: isActive ? 700 : 600,
                             fontFamily: 'var(--font-data, monospace)',
                             cursor: 'pointer',
                             whiteSpace: 'nowrap',
                             transition: 'all 0.15s ease',
-                            boxShadow: isActive ? '0 2px 6px rgba(54,69,47,0.2)' : 'none',
+                            boxShadow: isActive ? '0 2px 6px rgba(0,0,0,0.12)' : 'none',
                           }}
                         >
-                          <Icon size={14} color={isActive ? '#FFFEFB' : tab.isSeal ? '#2D6A4F' : '#6E7A68'} />
+                          <Icon size={14} color={isActive ? '#FFFFFF' : tab.isSeal ? 'var(--emerald-pass)' : 'var(--ink-muted)'} />
                           <span>{tab.label}</span>
                           {tab.count !== null && (
                             <span
@@ -1062,8 +1103,8 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                                 padding: '1px 6px',
                                 borderRadius: '10px',
                                 fontSize: '10px',
-                                background: isActive ? 'rgba(255,255,255,0.2)' : '#F5F0E6',
-                                color: isActive ? '#FFFEFB' : '#36452F',
+                                background: isActive ? 'rgba(255,255,255,0.25)' : 'var(--surface-secondary)',
+                                color: isActive ? '#FFFFFF' : 'var(--ink)',
                                 fontWeight: 700,
                               }}
                             >
@@ -1076,7 +1117,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                                 width: '7px',
                                 height: '7px',
                                 borderRadius: '50%',
-                                backgroundColor: '#2D6A4F',
+                                backgroundColor: 'var(--emerald-pass)',
                               }}
                             />
                           )}
@@ -1091,9 +1132,9 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                     style={{
                       padding: '6px 12px',
                       borderRadius: '6px',
-                      border: '1px dashed #D5CFBF',
+                      border: '1px dashed var(--hairline)',
                       background: 'transparent',
-                      color: '#6E7A68',
+                      color: 'var(--ink-muted)',
                       fontSize: '11px',
                       fontFamily: 'var(--font-data, monospace)',
                       cursor: 'pointer',
@@ -1129,7 +1170,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   justifyContent: 'center',
                   width: '6px',
                   height: leftPanelHeight,
-                  backgroundColor: isResizing ? '#2D6A4F' : 'transparent',
+                  backgroundColor: isResizing ? 'var(--olive-primary)' : 'transparent',
                   borderRadius: '3px',
                   transition: 'background-color 0.15s ease',
                   userSelect: 'none',
@@ -1140,7 +1181,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   style={{
                     width: '2px',
                     height: '48px',
-                    backgroundColor: isResizing ? '#2D6A4F' : '#D5CFBF',
+                    backgroundColor: isResizing ? 'var(--olive-primary)' : 'var(--hairline)',
                     borderRadius: '2px',
                   }}
                 />
@@ -1165,8 +1206,8 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                       height: '580px',
                       borderRadius: '10px',
                       overflow: 'hidden',
-                      border: '1px solid #E5E0D4',
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                      border: '1px solid var(--hairline)',
+                      boxShadow: 'var(--shadow-card)',
                       backgroundColor: '#0f172a',
                     }}
                   >
@@ -1189,7 +1230,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                       height: '580px',
                       borderRadius: '10px',
                       overflow: 'hidden',
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                      boxShadow: 'var(--shadow-card)',
                     }}
                   >
                     <TenderChatbotPanel

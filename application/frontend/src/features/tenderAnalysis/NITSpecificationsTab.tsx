@@ -52,19 +52,20 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
     return (
       <div
         style={{
-          backgroundColor: '#FFFEFB',
+          backgroundColor: 'var(--surface)',
           padding: '48px 24px',
           borderRadius: '10px',
-          border: '1px solid #E5E0D4',
+          border: '1px solid var(--hairline)',
           textAlign: 'center',
-          color: '#6E7A68',
+          color: 'var(--ink-muted)',
+          boxShadow: 'var(--shadow-card)',
         }}
       >
         <div style={{ fontSize: '32px', marginBottom: '10px' }}>📋</div>
-        <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#1C2419', margin: '0 0 6px 0' }}>
+        <h3 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--ink)', margin: '0 0 6px 0' }}>
           NIT Schedule Pending Finalization
         </h3>
-        <p style={{ fontSize: '13.5px', maxWidth: '500px', margin: '0 auto 18px', lineHeight: 1.5 }}>
+        <p style={{ fontSize: '13.5px', maxWidth: '500px', margin: '0 auto 18px', lineHeight: 1.5, color: 'var(--ink-secondary)' }}>
           Finalize the tender decomposition in the Product ↔ IS Inventory tab to compile the statutory NIT specification schedule.
         </p>
       </div>
@@ -76,34 +77,35 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
       {/* Top Action Bar */}
       <div
         style={{
-          backgroundColor: '#FFFEFB',
+          backgroundColor: 'var(--surface)',
           padding: '16px 20px',
           borderRadius: '10px',
-          border: '1px solid #E5E0D4',
+          border: '1px solid var(--hairline)',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
           flexWrap: 'wrap',
           gap: '12px',
+          boxShadow: 'var(--shadow-card)',
         }}
       >
         <div>
-          <h3 style={{ fontSize: '16px', fontWeight: 800, color: '#1C2419', margin: '0 0 2px 0' }}>
+          <h3 style={{ fontSize: '16px', fontWeight: 800, color: 'var(--ink)', margin: '0 0 2px 0' }}>
             Statutory NIT Technical Specification Schedule
           </h3>
-          <p style={{ fontSize: '12.5px', color: '#6E7A68', margin: 0 }}>
+          <p style={{ fontSize: '12.5px', color: 'var(--ink-secondary)', margin: 0 }}>
             {schedule.length} procurement schedules ready for GeM BOQ / CPPP tender publishing.
           </p>
         </div>
 
-        <div style={{ display: 'flex', gap: '8px' }}>
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
           <button
             type="button"
             onClick={handleCopyTableCSV}
             style={{
-              backgroundColor: '#FAF8F3',
-              color: '#1C2419',
-              border: '1px solid #DCD6C8',
+              backgroundColor: 'var(--surface-secondary)',
+              color: 'var(--ink)',
+              border: '1px solid var(--hairline)',
               padding: '8px 14px',
               borderRadius: '6px',
               fontSize: '12px',
@@ -112,9 +114,10 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
               display: 'flex',
               alignItems: 'center',
               gap: '5px',
+              transition: 'all 0.15s ease',
             }}
           >
-            {copiedTable ? <Check size={14} color="#2D6A4F" /> : <FileSpreadsheet size={14} />}
+            {copiedTable ? <Check size={14} color="var(--emerald-pass)" /> : <FileSpreadsheet size={14} />}
             <span>{copiedTable ? 'CSV Copied' : 'Copy CSV'}</span>
           </button>
 
@@ -122,9 +125,9 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
             type="button"
             onClick={handleCopyDraft}
             style={{
-              backgroundColor: '#FAF8F3',
-              color: '#1C2419',
-              border: '1px solid #DCD6C8',
+              backgroundColor: 'var(--surface-secondary)',
+              color: 'var(--ink)',
+              border: '1px solid var(--hairline)',
               padding: '8px 14px',
               borderRadius: '6px',
               fontSize: '12px',
@@ -133,9 +136,10 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
               display: 'flex',
               alignItems: 'center',
               gap: '5px',
+              transition: 'all 0.15s ease',
             }}
           >
-            {copiedDraft ? <Check size={14} color="#2D6A4F" /> : <Copy size={14} />}
+            {copiedDraft ? <Check size={14} color="var(--emerald-pass)" /> : <Copy size={14} />}
             <span>{copiedDraft ? 'NIT Copied' : 'Copy Full NIT Text'}</span>
           </button>
 
@@ -143,7 +147,7 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
             type="button"
             onClick={handleDownloadDraft}
             style={{
-              backgroundColor: '#2D6A4F',
+              backgroundColor: 'var(--olive-primary)',
               color: '#FFFFFF',
               border: 'none',
               padding: '8px 16px',
@@ -154,6 +158,8 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
               display: 'flex',
               alignItems: 'center',
               gap: '5px',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
+              transition: 'all 0.15s ease',
             }}
           >
             <Download size={14} />
@@ -165,15 +171,15 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
       {/* Structured NIT Schedule Table */}
       <div
         style={{
-          backgroundColor: '#FFFEFB',
+          backgroundColor: 'var(--surface)',
           borderRadius: '10px',
-          border: '1px solid #E5E0D4',
+          border: '1px solid var(--hairline)',
           overflow: 'hidden',
-          boxShadow: '0 1px 3px rgba(54, 69, 47, 0.04)',
+          boxShadow: 'var(--shadow-card)',
         }}
       >
-        <div style={{ padding: '16px 20px', borderBottom: '1px solid #E5E0D4', backgroundColor: '#FAF8F3' }}>
-          <h4 style={{ fontSize: '14px', fontWeight: 800, color: '#1C2419', margin: 0 }}>
+        <div style={{ padding: '16px 20px', borderBottom: '1px solid var(--hairline)', backgroundColor: 'var(--surface-secondary)' }}>
+          <h4 style={{ fontSize: '14px', fontWeight: 800, color: 'var(--ink)', margin: 0 }}>
             Schedule of Prescribed Indian Standards & Conformity Scheme
           </h4>
         </div>
@@ -181,13 +187,13 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
         <div style={{ overflowX: 'auto' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '12.5px' }}>
             <thead>
-              <tr style={{ backgroundColor: '#F6F3EB', borderBottom: '1px solid #E5E0D4', textAlign: 'left' }}>
-                <th style={{ padding: '10px 14px', color: '#6E7A68', fontWeight: 700 }}>Item #</th>
-                <th style={{ padding: '10px 14px', color: '#6E7A68', fontWeight: 700 }}>Item Description</th>
-                <th style={{ padding: '10px 14px', color: '#6E7A68', fontWeight: 700 }}>Mandatory Indian Standard</th>
-                <th style={{ padding: '10px 14px', color: '#6E7A68', fontWeight: 700 }}>Grade / Type</th>
-                <th style={{ padding: '10px 14px', color: '#6E7A68', fontWeight: 700 }}>Conformity Scheme</th>
-                <th style={{ padding: '10px 14px', color: '#6E7A68', fontWeight: 700 }}>Mandatory NABL Test Methods</th>
+              <tr style={{ backgroundColor: 'var(--surface-secondary)', borderBottom: '1px solid var(--hairline)', textAlign: 'left' }}>
+                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Item #</th>
+                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Item Description</th>
+                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Mandatory Indian Standard</th>
+                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Grade / Type</th>
+                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Conformity Scheme</th>
+                <th style={{ padding: '10px 14px', color: 'var(--ink-muted)', fontWeight: 700 }}>Mandatory NABL Test Methods</th>
               </tr>
             </thead>
             <tbody>
@@ -195,32 +201,32 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
                 <tr
                   key={idx}
                   style={{
-                    borderBottom: '1px solid #EAE5D9',
-                    backgroundColor: idx % 2 === 0 ? '#FFFFFF' : '#FCFAF7',
+                    borderBottom: '1px solid var(--hairline)',
+                    backgroundColor: idx % 2 === 0 ? 'var(--surface)' : 'var(--surface-secondary)',
                   }}
                 >
-                  <td style={{ padding: '12px 14px', fontWeight: 700, color: '#1C2419' }}>{row.item_no}</td>
-                  <td style={{ padding: '12px 14px', fontWeight: 600, color: '#1C2419' }}>{row.item_description}</td>
-                  <td style={{ padding: '12px 14px', fontFamily: 'monospace', fontWeight: 700, color: '#2D6A4F' }}>
+                  <td style={{ padding: '12px 14px', fontWeight: 700, color: 'var(--ink)', fontFamily: 'var(--font-data)' }}>{row.item_no}</td>
+                  <td style={{ padding: '12px 14px', fontWeight: 600, color: 'var(--ink)' }}>{row.item_description}</td>
+                  <td style={{ padding: '12px 14px', fontFamily: 'var(--font-data, monospace)', fontWeight: 700, color: 'var(--emerald-pass)' }}>
                     {row.mandatory_indian_standard}
                   </td>
-                  <td style={{ padding: '12px 14px', color: '#44503E' }}>{row.grade_or_type}</td>
+                  <td style={{ padding: '12px 14px', color: 'var(--ink-secondary)' }}>{row.grade_or_type}</td>
                   <td style={{ padding: '12px 14px' }}>
                     <span
                       style={{
                         padding: '3px 8px',
                         borderRadius: '4px',
-                        backgroundColor: 'rgba(217, 119, 6, 0.1)',
-                        color: '#B45309',
+                        backgroundColor: 'var(--amber-bg)',
+                        color: 'var(--amber-warn)',
                         fontSize: '11px',
                         fontWeight: 700,
-                        border: '1px solid rgba(217, 119, 6, 0.25)',
+                        border: '1px solid var(--amber-border)',
                       }}
                     >
                       {row.conformity_scheme}
                     </span>
                   </td>
-                  <td style={{ padding: '12px 14px', fontFamily: 'monospace', fontSize: '11.5px', color: '#1D4ED8' }}>
+                  <td style={{ padding: '12px 14px', fontFamily: 'var(--font-data, monospace)', fontSize: '11.5px', color: 'var(--collapse-cobalt)' }}>
                     {row.mandatory_testing_standards.join(', ')}
                   </td>
                 </tr>
@@ -233,14 +239,15 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
       {/* Raw Draft Text Area */}
       <div
         style={{
-          backgroundColor: '#FFFEFB',
+          backgroundColor: 'var(--surface)',
           borderRadius: '10px',
-          border: '1px solid #E5E0D4',
+          border: '1px solid var(--hairline)',
           padding: '20px',
+          boxShadow: 'var(--shadow-card)',
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-          <h4 style={{ fontSize: '13px', fontWeight: 800, color: '#6E7A68', textTransform: 'uppercase', margin: 0 }}>
+          <h4 style={{ fontSize: '13px', fontWeight: 800, color: 'var(--ink-muted)', textTransform: 'uppercase', margin: 0, fontFamily: 'var(--font-data)' }}>
             Full Exportable NIT Specifications Text
           </h4>
           <button
@@ -249,7 +256,7 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
             style={{
               border: 'none',
               backgroundColor: 'transparent',
-              color: '#2D6A4F',
+              color: 'var(--olive-primary)',
               fontSize: '12px',
               fontWeight: 700,
               cursor: 'pointer',
@@ -269,14 +276,14 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
           rows={14}
           style={{
             width: '100%',
-            backgroundColor: '#FAF8F3',
-            border: '1px solid #E5E0D4',
+            backgroundColor: 'var(--surface-secondary)',
+            border: '1px solid var(--hairline)',
             borderRadius: '6px',
             padding: '14px',
             fontFamily: 'monospace',
             fontSize: '12.5px',
             lineHeight: 1.6,
-            color: '#1C2419',
+            color: 'var(--ink)',
             boxSizing: 'border-box',
             outline: 'none',
           }}

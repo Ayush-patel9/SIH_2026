@@ -47,12 +47,13 @@ export const ProjectsDirectory: React.FC<ProjectsDirectoryProps> = ({
   const filteredProjects = projects
     .filter((project) => {
       const q = searchQuery.toLowerCase().trim();
+      const clauses = project.clauses || [];
       const matchesSearch =
         !q ||
         project.title.toLowerCase().includes(q) ||
         project.nitNumber.toLowerCase().includes(q) ||
         project.department.toLowerCase().includes(q) ||
-        project.clauses.some((c) =>
+        clauses.some((c) =>
           c.title.toLowerCase().includes(q) ||
           c.citedStandard.toLowerCase().includes(q) ||
           c.recommendedStandard.toLowerCase().includes(q)
@@ -310,7 +311,8 @@ export const ProjectsDirectory: React.FC<ProjectsDirectoryProps> = ({
           }}
         >
           {filteredProjects.map((project) => {
-            const needsReviewCount = project.clauses.filter((c) => c.status !== 'ACTIVE' && c.userDecision !== 'APPROVED' && c.userDecision !== 'OVERRIDDEN').length;
+            const clauses = project.clauses || [];
+            const needsReviewCount = clauses.filter((c) => c.status !== 'ACTIVE' && c.userDecision !== 'APPROVED' && c.userDecision !== 'OVERRIDDEN').length;
 
             return (
               <div
@@ -411,7 +413,7 @@ export const ProjectsDirectory: React.FC<ProjectsDirectoryProps> = ({
 
                   {/* Materials & Key Standards Badges */}
                   <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '16px' }}>
-                    {project.clauses.map((c) => (
+                    {clauses.map((c) => (
                       <span
                         key={c.clauseId}
                         style={{

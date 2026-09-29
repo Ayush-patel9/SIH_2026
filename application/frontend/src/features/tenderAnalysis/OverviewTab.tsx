@@ -1,6 +1,6 @@
 import React from 'react';
 import type { DecomposeResponse, Stage2MapResponse, Stage3FinalizeResponse } from './types';
-import { ShieldCheck, AlertTriangle, Layers, FileCheck2, ArrowRight } from 'lucide-react';
+import { ShieldCheck, AlertTriangle, Layers, FileCheck2, ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
 
 interface OverviewTabProps {
   metadata: DecomposeResponse['tender_metadata'] | null;
@@ -17,11 +17,11 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
   stage3Data,
   onNavigateToTab,
 }) => {
-  const totalProducts = stage1Data?.products.length || 0;
-  const mappedCount = stage2Data?.mapped_products.length || 0;
+  const totalProducts = stage1Data?.products?.length || 0;
+  const mappedCount = stage2Data?.mapped_products?.length || 0;
   const outdatedCount = stage2Data?.high_risk_outdated_count || 0;
   const qcoCount = stage2Data?.mandatory_qco_count || 0;
-  const finalizedDiffsCount = stage3Data?.clause_diffs.length || 0;
+  const finalizedDiffsCount = stage3Data?.clause_diffs?.length || 0;
 
   // Calculate compliance score
   let complianceScore = 100;
@@ -44,21 +44,21 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
         {/* KPI 1: Compliance Score */}
         <div
           style={{
-            backgroundColor: '#FFFEFB',
+            backgroundColor: 'var(--surface)',
             padding: '18px 20px',
             borderRadius: '10px',
-            border: '1px solid #E5E0D4',
-            boxShadow: '0 1px 3px rgba(54, 69, 47, 0.04)',
-            borderLeft: `4px solid ${complianceScore >= 80 ? '#2D6A4F' : complianceScore >= 50 ? '#D97706' : '#DC2626'}`,
+            border: '1px solid var(--hairline)',
+            boxShadow: 'var(--shadow-card)',
+            borderLeft: `4px solid ${complianceScore >= 80 ? 'var(--emerald-pass)' : complianceScore >= 50 ? 'var(--amber-warn)' : 'var(--error-red)'}`,
           }}
         >
-          <div style={{ fontSize: '11px', fontWeight: 700, color: '#6E7A68', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             Tender Statutory Health
           </div>
-          <div style={{ fontSize: '28px', fontWeight: 800, color: complianceScore >= 80 ? '#2D6A4F' : complianceScore >= 50 ? '#D97706' : '#DC2626', fontFamily: 'var(--font-data, monospace)', margin: '4px 0 2px' }}>
+          <div style={{ fontSize: '28px', fontWeight: 800, color: complianceScore >= 80 ? 'var(--emerald-pass)' : complianceScore >= 50 ? 'var(--amber-warn)' : 'var(--error-red)', fontFamily: 'var(--font-data, monospace)', margin: '4px 0 2px' }}>
             {complianceScore}%
           </div>
-          <div style={{ fontSize: '12px', color: '#44503E' }}>
+          <div style={{ fontSize: '12px', color: 'var(--ink-secondary)' }}>
             {outdatedCount > 0 ? `⚠️ ${outdatedCount} Withdrawn standards detected` : '✓ All verified against active gazette'}
           </div>
         </div>
@@ -66,21 +66,21 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
         {/* KPI 2: Line Items Decomposed */}
         <div
           style={{
-            backgroundColor: '#FFFEFB',
+            backgroundColor: 'var(--surface)',
             padding: '18px 20px',
             borderRadius: '10px',
-            border: '1px solid #E5E0D4',
-            boxShadow: '0 1px 3px rgba(54, 69, 47, 0.04)',
-            borderLeft: '4px solid #1D4ED8',
+            border: '1px solid var(--hairline)',
+            boxShadow: 'var(--shadow-card)',
+            borderLeft: '4px solid var(--collapse-cobalt)',
           }}
         >
-          <div style={{ fontSize: '11px', fontWeight: 700, color: '#6E7A68', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             Procurement Line Items
           </div>
-          <div style={{ fontSize: '28px', fontWeight: 800, color: '#1D4ED8', fontFamily: 'var(--font-data, monospace)', margin: '4px 0 2px' }}>
+          <div style={{ fontSize: '28px', fontWeight: 800, color: 'var(--collapse-cobalt)', fontFamily: 'var(--font-data, monospace)', margin: '4px 0 2px' }}>
             {totalProducts}
           </div>
-          <div style={{ fontSize: '12px', color: '#44503E' }}>
+          <div style={{ fontSize: '12px', color: 'var(--ink-secondary)' }}>
             Clause-by-clause decomposition
           </div>
         </div>
@@ -88,21 +88,21 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
         {/* KPI 3: Outdated / Withdrawn Standards */}
         <div
           style={{
-            backgroundColor: '#FFFEFB',
+            backgroundColor: 'var(--surface)',
             padding: '18px 20px',
             borderRadius: '10px',
-            border: '1px solid #E5E0D4',
-            boxShadow: '0 1px 3px rgba(54, 69, 47, 0.04)',
-            borderLeft: '4px solid #DC2626',
+            border: '1px solid var(--hairline)',
+            boxShadow: 'var(--shadow-card)',
+            borderLeft: '4px solid var(--error-red)',
           }}
         >
-          <div style={{ fontSize: '11px', fontWeight: 700, color: '#6E7A68', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             Superseded Standards
           </div>
-          <div style={{ fontSize: '28px', fontWeight: 800, color: outdatedCount > 0 ? '#DC2626' : '#2D6A4F', fontFamily: 'var(--font-data, monospace)', margin: '4px 0 2px' }}>
+          <div style={{ fontSize: '28px', fontWeight: 800, color: outdatedCount > 0 ? 'var(--error-red)' : 'var(--emerald-pass)', fontFamily: 'var(--font-data, monospace)', margin: '4px 0 2px' }}>
             {outdatedCount}
           </div>
-          <div style={{ fontSize: '12px', color: '#44503E' }}>
+          <div style={{ fontSize: '12px', color: 'var(--ink-secondary)' }}>
             {outdatedCount > 0 ? 'Exposes tender to audit disallowance' : 'Zero legacy codes cited'}
           </div>
         </div>
@@ -110,21 +110,21 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
         {/* KPI 4: Mandatory QCOs */}
         <div
           style={{
-            backgroundColor: '#FFFEFB',
+            backgroundColor: 'var(--surface)',
             padding: '18px 20px',
             borderRadius: '10px',
-            border: '1px solid #E5E0D4',
-            boxShadow: '0 1px 3px rgba(54, 69, 47, 0.04)',
-            borderLeft: '4px solid #D97706',
+            border: '1px solid var(--hairline)',
+            boxShadow: 'var(--shadow-card)',
+            borderLeft: '4px solid var(--amber-warn)',
           }}
         >
-          <div style={{ fontSize: '11px', fontWeight: 700, color: '#6E7A68', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             Mandatory QCO Enforcements
           </div>
-          <div style={{ fontSize: '28px', fontWeight: 800, color: '#D97706', fontFamily: 'var(--font-data, monospace)', margin: '4px 0 2px' }}>
+          <div style={{ fontSize: '28px', fontWeight: 800, color: 'var(--amber-warn)', fontFamily: 'var(--font-data, monospace)', margin: '4px 0 2px' }}>
             {qcoCount}
           </div>
-          <div style={{ fontSize: '12px', color: '#44503E' }}>
+          <div style={{ fontSize: '12px', color: 'var(--ink-secondary)' }}>
             Statutory BIS licensing mandates
           </div>
         </div>
@@ -133,13 +133,14 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
       {/* 3-Stage Pipeline Progression Card */}
       <div
         style={{
-          backgroundColor: '#FFFEFB',
+          backgroundColor: 'var(--surface)',
           padding: '24px',
           borderRadius: '10px',
-          border: '1px solid #E5E0D4',
+          border: '1px solid var(--hairline)',
+          boxShadow: 'var(--shadow-card)',
         }}
       >
-        <div style={{ fontSize: '11.5px', fontWeight: 700, color: '#6E7A68', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '14px' }}>
+        <div style={{ fontSize: '11.5px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '14px' }}>
           Autonomous 3-Stage Intelligence Pipeline & HITL Gateway
         </div>
 
@@ -149,20 +150,22 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
             style={{
               padding: '16px',
               borderRadius: '8px',
-              backgroundColor: stage1Data ? '#EDF7F1' : '#F6F3EB',
-              border: `1px solid ${stage1Data ? '#B7E4C7' : '#E5E0D4'}`,
+              backgroundColor: stage1Data ? 'var(--emerald-bg)' : 'var(--surface-secondary)',
+              border: `1px solid ${stage1Data ? 'var(--emerald-border)' : 'var(--hairline)'}`,
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-              <span style={{ fontSize: '12px', fontWeight: 700, color: stage1Data ? '#1B4332' : '#6E7A68' }}>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: stage1Data ? 'var(--emerald-pass)' : 'var(--ink-muted)' }}>
                 STAGE 1 · DECOMPOSE
               </span>
-              <span>{stage1Data ? '✓ Done' : '⏳ Ready'}</span>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: stage1Data ? 'var(--emerald-pass)' : 'var(--ink-muted)' }}>
+                {stage1Data ? '✓ Done' : '⏳ Ready'}
+              </span>
             </div>
-            <div style={{ fontSize: '14px', fontWeight: 700, color: '#1C2419' }}>
+            <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>
               Line Item & Query Extraction
             </div>
-            <div style={{ fontSize: '12px', color: '#44503E', marginTop: '4px' }}>
+            <div style={{ fontSize: '12px', color: 'var(--ink-secondary)', marginTop: '4px' }}>
               Extracted {totalProducts} procurement items and verbatim clause quotes.
             </div>
           </div>
@@ -172,20 +175,22 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
             style={{
               padding: '16px',
               borderRadius: '8px',
-              backgroundColor: stage2Data ? '#EFF6FF' : '#F6F3EB',
-              border: `1px solid ${stage2Data ? '#BFDBFE' : '#E5E0D4'}`,
+              backgroundColor: stage2Data ? 'rgba(59, 130, 246, 0.1)' : 'var(--surface-secondary)',
+              border: `1px solid ${stage2Data ? 'rgba(59, 130, 246, 0.3)' : 'var(--hairline)'}`,
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-              <span style={{ fontSize: '12px', fontWeight: 700, color: stage2Data ? '#1D4ED8' : '#6E7A68' }}>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: stage2Data ? 'var(--collapse-cobalt)' : 'var(--ink-muted)' }}>
                 STAGE 2 · MAPPING
               </span>
-              <span>{stage2Data ? '✓ Done' : '⏳ Pending'}</span>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: stage2Data ? 'var(--collapse-cobalt)' : 'var(--ink-muted)' }}>
+                {stage2Data ? '✓ Done' : '⏳ Pending'}
+              </span>
             </div>
-            <div style={{ fontSize: '14px', fontWeight: 700, color: '#1C2419' }}>
+            <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>
               Tri-Retrieval & Confidence
             </div>
-            <div style={{ fontSize: '12px', color: '#44503E', marginTop: '4px' }}>
+            <div style={{ fontSize: '12px', color: 'var(--ink-secondary)', marginTop: '4px' }}>
               Mapped products to 22,011 standards and formulated engineering questions.
             </div>
           </div>
@@ -195,20 +200,22 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
             style={{
               padding: '16px',
               borderRadius: '8px',
-              backgroundColor: '#FEF9C3',
-              border: '1px solid #FDE047',
+              backgroundColor: 'var(--amber-bg)',
+              border: '1px solid var(--amber-border)',
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-              <span style={{ fontSize: '12px', fontWeight: 700, color: '#854D0E' }}>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--amber-warn)' }}>
                 STAGE 2B · HITL DECISION
               </span>
-              <span>⚡ Active</span>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--amber-warn)' }}>
+                ⚡ Active
+              </span>
             </div>
-            <div style={{ fontSize: '14px', fontWeight: 700, color: '#1C2419' }}>
+            <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>
               Engineering Clarifications
             </div>
-            <div style={{ fontSize: '12px', color: '#44503E', marginTop: '4px' }}>
+            <div style={{ fontSize: '12px', color: 'var(--ink-secondary)', marginTop: '4px' }}>
               Officer answers questions on application/environment to boost confidence.
             </div>
           </div>
@@ -218,20 +225,22 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
             style={{
               padding: '16px',
               borderRadius: '8px',
-              backgroundColor: stage3Data ? '#FAF5FF' : '#F6F3EB',
-              border: `1px solid ${stage3Data ? '#E9D5FF' : '#E5E0D4'}`,
+              backgroundColor: stage3Data ? 'var(--olive-tint)' : 'var(--surface-secondary)',
+              border: `1px solid ${stage3Data ? 'var(--hairline)' : 'var(--hairline)'}`,
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-              <span style={{ fontSize: '12px', fontWeight: 700, color: stage3Data ? '#7E22CE' : '#6E7A68' }}>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: stage3Data ? 'var(--olive-primary)' : 'var(--ink-muted)' }}>
                 STAGE 3 · FINALIZE
               </span>
-              <span>{stage3Data ? '✓ Ready' : '⏳ Pending'}</span>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: stage3Data ? 'var(--olive-primary)' : 'var(--ink-muted)' }}>
+                {stage3Data ? '✓ Ready' : '⏳ Pending'}
+              </span>
             </div>
-            <div style={{ fontSize: '14px', fontWeight: 700, color: '#1C2419' }}>
+            <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>
               Clause Diffs & NIT Export
             </div>
-            <div style={{ fontSize: '12px', color: '#44503E', marginTop: '4px' }}>
+            <div style={{ fontSize: '12px', color: 'var(--ink-secondary)', marginTop: '4px' }}>
               {finalizedDiffsCount} redline diffs and exportable statutory NIT schedule.
             </div>
           </div>
@@ -241,14 +250,15 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
       {/* Tender Metadata Card */}
       <div
         style={{
-          backgroundColor: '#FFFEFB',
+          backgroundColor: 'var(--surface)',
           padding: '24px',
           borderRadius: '10px',
-          border: '1px solid #E5E0D4',
+          border: '1px solid var(--hairline)',
+          boxShadow: 'var(--shadow-card)',
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
-          <div style={{ fontSize: '11.5px', fontWeight: 700, color: '#6E7A68', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <div style={{ fontSize: '11.5px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             Document Context & Issuing Authority
           </div>
           <button
@@ -257,7 +267,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
             style={{
               border: 'none',
               backgroundColor: 'transparent',
-              color: '#2D6A4F',
+              color: 'var(--olive-primary)',
               fontSize: '13px',
               fontWeight: 700,
               cursor: 'pointer',
@@ -273,26 +283,26 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px' }}>
           <div>
-            <div style={{ fontSize: '11px', color: '#6E7A68', fontWeight: 600 }}>TENDER TITLE</div>
-            <div style={{ fontSize: '14px', fontWeight: 700, color: '#1C2419', marginTop: '2px' }}>
+            <div style={{ fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 600 }}>TENDER TITLE</div>
+            <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)', marginTop: '2px' }}>
               {metadata?.title || 'Public Works Procurement Document'}
             </div>
           </div>
           <div>
-            <div style={{ fontSize: '11px', color: '#6E7A68', fontWeight: 600 }}>DEPARTMENT / AUTHORITY</div>
-            <div style={{ fontSize: '14px', fontWeight: 700, color: '#1C2419', marginTop: '2px' }}>
+            <div style={{ fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 600 }}>DEPARTMENT / AUTHORITY</div>
+            <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)', marginTop: '2px' }}>
               {metadata?.department || 'Government Procurement Agency'}
             </div>
           </div>
           <div>
-            <div style={{ fontSize: '11px', color: '#6E7A68', fontWeight: 600 }}>TENDER TYPE</div>
-            <div style={{ fontSize: '14px', fontWeight: 700, color: '#1C2419', marginTop: '2px' }}>
+            <div style={{ fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 600 }}>TENDER TYPE</div>
+            <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)', marginTop: '2px' }}>
               {metadata?.tender_type || 'Open Competitive Bidding'}
             </div>
           </div>
           <div>
-            <div style={{ fontSize: '11px', color: '#6E7A68', fontWeight: 600 }}>ESTIMATED PROCUREMENT VALUE</div>
-            <div style={{ fontSize: '14px', fontWeight: 700, color: '#1C2419', marginTop: '2px' }}>
+            <div style={{ fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 600 }}>ESTIMATED PROCUREMENT VALUE</div>
+            <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)', marginTop: '2px' }}>
               {metadata?.estimated_value || 'Item Rate / Schedule Based'}
             </div>
           </div>

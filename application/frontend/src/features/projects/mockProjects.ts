@@ -693,6 +693,226 @@ All sleepers, rails, and ballast conform to BIS 2026 standards.
 Audit Hash: 89AB12CD34EF56017890ABCD1234567890ABCDEF1234567890ABCDEF12345678`,
 };
 
+// Stage 1, 2, 3 data for JJM Rural Water Grid
+const JJM_STAGE1: DecomposeResponse = {
+  tender_metadata: {
+    title: 'Rural Potable Water Grid Infrastructure & Treatment Facility Phase-II',
+    department: 'Ministry of Jal Shakti (JJM)',
+    estimated_value: '₹95.20 Crores',
+    tender_type: 'Rural Water Supply EPC',
+  },
+  products: [
+    {
+      product_id: 'jjm-p1',
+      product_name: 'High Density Polyethylene (HDPE) Distribution Pipes',
+      clause_number: 'Clause 6.1.0',
+      page_number: 1,
+      verbatim_quote: 'HDPE pipes for rural drinking water distribution network shall be manufactured as per IS 4984:1995 utilizing PE-80 raw material class with PN-6 pressure rating.',
+      cited_standard_in_doc: 'IS 4984:1995 PE-80',
+      search_queries: ['IS 4984 HDPE Pipes Water Supply', 'IS 4984 2016 PE 100 QCO'],
+    },
+    {
+      product_id: 'jjm-p2',
+      product_name: 'Cast Iron Sluice Valves for Water Works',
+      clause_number: 'Clause 6.2.4',
+      page_number: 1,
+      verbatim_quote: 'Cast iron sluice valves for isolating pipeline segments shall conform to IS 14846:2000 with bronze trim and flanged ends.',
+      cited_standard_in_doc: 'IS 14846:2000',
+      search_queries: ['IS 14846 Sluice Valves Water Works'],
+    },
+    {
+      product_id: 'jjm-p3',
+      product_name: 'Potable Drinking Water Quality Norms',
+      clause_number: 'Clause 12.4.1',
+      page_number: 2,
+      verbatim_quote: 'Treated water delivered at household tap connections shall adhere strictly to Indian Standard Specification for Drinking Water IS 10500:2012 without deviation.',
+      cited_standard_in_doc: 'IS 10500:2012',
+      search_queries: ['IS 10500 Drinking Water Specification'],
+    },
+    {
+      product_id: 'jjm-p4',
+      product_name: 'Submersible Pump Sets for Deep Wells',
+      clause_number: 'Clause 14.1.2',
+      page_number: 2,
+      verbatim_quote: 'Submersible motor pump sets for deep borewells shall comply with IS 14220:2018 with minimum overall efficiency of 65%.',
+      cited_standard_in_doc: 'IS 14220:2018',
+      search_queries: ['IS 14220 Submersible Pumpsets'],
+    },
+  ],
+};
+
+const JJM_STAGE2: Stage2MapResponse = {
+  high_risk_outdated_count: 1,
+  mandatory_qco_count: 2,
+  mapped_products: [
+    {
+      product_id: 'jjm-p1',
+      product_name: 'High Density Polyethylene (HDPE) Distribution Pipes',
+      clause_number: 'Clause 6.1.0',
+      page_number: 1,
+      verbatim_quote: 'HDPE pipes for rural drinking water distribution network shall be manufactured as per IS 4984:1995 utilizing PE-80 raw material class with PN-6 pressure rating.',
+      detected_outdated_is: 'IS 4984:1995 PE-80 (Superseded)',
+      recommended_is: 'IS 4984:2016 Amd 3 PE-100',
+      recommended_is_title: 'High Density Polyethylene Pipes for Water Supply — Specification (Fifth Revision)',
+      confidence_score: 96,
+      clarification_needed: false,
+      status: 'RESOLVED',
+      engineering_rationale: 'IS 4984:1995 was superseded by IS 4984:2016. Ministry of Chemicals & Petrochemicals QCO 2021 mandates PE-100 high-strength resin with valid ISI marking.',
+      official_is_link: 'https://standardsbis.bsbedge.com/BIS_SearchStandard.aspx?Standard_Number=IS+4984',
+      qco_mandate: {
+        mandatory: true,
+        order_name: 'Pipes and Fittings (Quality Control) Order, 2021',
+        scheme: 'Scheme-I (Mandatory ISI Mark)',
+      },
+      all_candidates: [
+        {
+          is_number: 'IS 4984:2016 Amd 3 PE-100',
+          title: 'HDPE Pipes for Water Supply (PE-100 PN-10)',
+          confidence: 0.96,
+          status: 'ACTIVE',
+          qco_mandatory: true,
+          match_reasons: ['Supersedes IS 4984:1995', 'Mandatory QCO 2021 compliance'],
+        },
+      ],
+    },
+    {
+      product_id: 'jjm-p2',
+      product_name: 'Cast Iron Sluice Valves for Water Works',
+      clause_number: 'Clause 6.2.4',
+      page_number: 1,
+      verbatim_quote: 'Cast iron sluice valves for isolating pipeline segments shall conform to IS 14846:2000 with bronze trim and flanged ends.',
+      recommended_is: 'IS 14846:2000 (Reaffirmed 2021)',
+      recommended_is_title: 'Sluice Valves for Water Works Purposes (50 to 1200 mm Size) — Specification',
+      confidence_score: 98,
+      clarification_needed: false,
+      status: 'RESOLVED',
+      engineering_rationale: 'Active standard with current reaffirmation. Hydrostatic body and seat pressure tests conform to Class PN 1.0 / PN 1.6.',
+      official_is_link: 'https://standardsbis.bsbedge.com/BIS_SearchStandard.aspx?Standard_Number=IS+14846',
+      all_candidates: [
+        {
+          is_number: 'IS 14846:2000',
+          title: 'Sluice Valves for Water Works Purposes',
+          confidence: 0.98,
+          status: 'ACTIVE',
+          match_reasons: ['Direct standard match for water distribution sluice valves'],
+        },
+      ],
+    },
+    {
+      product_id: 'jjm-p3',
+      product_name: 'Potable Drinking Water Quality Norms',
+      clause_number: 'Clause 12.4.1',
+      page_number: 2,
+      verbatim_quote: 'Treated water delivered at household tap connections shall adhere strictly to Indian Standard Specification for Drinking Water IS 10500:2012 without deviation.',
+      recommended_is: 'IS 10500:2012 (Amd 2)',
+      recommended_is_title: 'Drinking Water — Specification (Second Revision)',
+      confidence_score: 100,
+      clarification_needed: false,
+      status: 'RESOLVED',
+      engineering_rationale: 'Active national benchmark for potable drinking water quality across all physico-chemical and microbiological parameters.',
+      official_is_link: 'https://standardsbis.bsbedge.com/BIS_SearchStandard.aspx?Standard_Number=IS+10500',
+      all_candidates: [
+        {
+          is_number: 'IS 10500:2012',
+          title: 'Drinking Water Specification',
+          confidence: 1.0,
+          status: 'ACTIVE',
+          match_reasons: ['National benchmark drinking water code'],
+        },
+      ],
+    },
+    {
+      product_id: 'jjm-p4',
+      product_name: 'Submersible Pump Sets for Deep Wells',
+      clause_number: 'Clause 14.1.2',
+      page_number: 2,
+      verbatim_quote: 'Submersible motor pump sets for deep borewells shall comply with IS 14220:2018 with minimum overall efficiency of 65%.',
+      recommended_is: 'IS 14220:2018',
+      recommended_is_title: 'Submersible Pump-Sets — Specification (Second Revision)',
+      confidence_score: 97,
+      clarification_needed: false,
+      status: 'RESOLVED',
+      engineering_rationale: 'Active standard with BEE 5-star energy efficiency ratings and mandatory ISI marking under Electrical Equipment QCO.',
+      official_is_link: 'https://standardsbis.bsbedge.com/BIS_SearchStandard.aspx?Standard_Number=IS+14220',
+      qco_mandate: {
+        mandatory: true,
+        order_name: 'Pumpsets (Quality Control) Order, 2022',
+        scheme: 'Scheme-I (Mandatory ISI Mark)',
+      },
+      all_candidates: [
+        {
+          is_number: 'IS 14220:2018',
+          title: 'Submersible Pump-Sets Specification',
+          confidence: 0.97,
+          status: 'ACTIVE',
+          qco_mandatory: true,
+          match_reasons: ['Active standard with BEE energy efficiency compliance'],
+        },
+      ],
+    },
+  ],
+};
+
+const JJM_STAGE3: Stage3FinalizeResponse = {
+  cvc_audit_record: {
+    audit_hash: '5E2D9910BA7C6109EF8214BCDE09231847FA65B2019842CDEF0123456789ABCD',
+    gfr_rule_compliance: 'GFR 2017 Rule 144(i) & JJM National Guidelines 2024',
+    timestamp_utc: new Date().toISOString(),
+    total_clauses_modernized: 2,
+  },
+  clause_diffs: [
+    {
+      product_id: 'jjm-p1',
+      product_name: 'High Density Polyethylene (HDPE) Distribution Pipes',
+      clause_number: 'Clause 6.1.0',
+      page_number: 1,
+      original_clause: 'HDPE pipes for rural drinking water distribution network and pipeline extensions shall be manufactured as per IS 4984:1995 utilizing PE-80 raw material class with PN-6 pressure rating.',
+      modernized_clause: 'HDPE pipes for rural drinking water distribution network and pipeline extensions shall be manufactured from PE-100 virgin grade raw material conforming strictly to IS 4984:2016 (Incorporating Amendment No. 3) with pressure rating PN-10. Pipes shall bear valid BIS ISI marking under the Pipes & Fittings QCO 2021.',
+      designated_standard: 'IS 4984:2016 Amd 3 PE-100',
+      verbatim_quote: 'manufactured as per IS 4984:1995 utilizing PE-80 raw material class',
+      added_qco_clause: 'Mandatory Pipes & Fittings QCO 2021 Scheme-I compliance enforced.',
+      added_nabl_clause: 'Hydrostatic pressure burst test and carbon black dispersion tests shall be performed in NABL accredited labs.',
+    },
+  ],
+  nit_specification_schedule: [
+    {
+      item_no: 1,
+      item_description: 'High Density Polyethylene (HDPE) Water Distribution Pipes',
+      mandatory_indian_standard: 'IS 4984:2016 (Amd 3)',
+      grade_or_type: 'PE-100 Resin, PN-10 Rating',
+      conformity_scheme: 'Scheme-I (Mandatory ISI Mark)',
+      mandatory_testing_standards: ['IS 4984 Clause 8 (Internal Hydrostatic Test)', 'IS 2530'],
+    },
+    {
+      item_no: 2,
+      item_description: 'Cast Iron Sluice Valves (Flanged)',
+      mandatory_indian_standard: 'IS 14846:2000 (Reaffirmed 2021)',
+      grade_or_type: 'PN-1.0 / PN-1.6 Flanged Ends with Bronze Trim',
+      conformity_scheme: 'Scheme-I / Works Verified',
+      mandatory_testing_standards: ['IS 14846 (Seat Leakage & Body Proof Test)'],
+    },
+    {
+      item_no: 3,
+      item_description: 'Potable Drinking Water Quality Standard',
+      mandatory_indian_standard: 'IS 10500:2012 (Amd 2)',
+      grade_or_type: 'Acceptable & Permissible Quality Limits',
+      conformity_scheme: 'Water Quality Laboratory Surveillance',
+      mandatory_testing_standards: ['IS 3025 (Parts 1-60 Chemical & Biological Testing)'],
+    },
+    {
+      item_no: 4,
+      item_description: 'Submersible Motor Pump-Sets',
+      mandatory_indian_standard: 'IS 14220:2018',
+      grade_or_type: 'BEE 5-Star Energy Efficient Submersible',
+      conformity_scheme: 'Scheme-I (Mandatory ISI Mark)',
+      mandatory_testing_standards: ['IS 14220 (Head-Discharge & Efficiency Curve Verification)'],
+    },
+  ],
+  full_nit_draft_text: `SECTION 6: JAL JEEVAN MISSION TECHNICAL SPECIFICATIONS (NIT-JJM-RAJ-2026-019)
+All distribution pipelines, sluice valves, pumpsets, and water testing conform strictly to Bureau of Indian Standards mandates.
+Audit Hash: 5E2D9910BA7C6109EF8214BCDE09231847FA65B2019842CDEF0123456789ABCD`,
+};
+
 export const INITIAL_PROJECTS: TenderProject[] = [
   {
     id: 'proj-nhai-088',
@@ -765,11 +985,18 @@ export const INITIAL_PROJECTS: TenderProject[] = [
     estimatedValue: '₹95.20 Crores',
     lastModified: '1 day ago',
     recencyTimestamp: Date.now() - 1000 * 60 * 60 * 24,
-    status: 'DRAFT',
-    complianceScore: 65,
-    hasDocument: false,
+    status: 'COMPLIANT',
+    complianceScore: 92,
+    hasDocument: true,
     documentText: JJM_SAMPLE_TENDER,
+    pdfFileName: 'JJM_WATER_GRID_SPEC_2026.pdf',
     description: 'District rural drinking water pipeline extensions, overhead water reservoir tanks, and household meter connections across 140 villages.',
+    isFrozen: true,
+    isAnalyzed: true,
+    analysisPhase: 'DASHBOARD_COMPLETED',
+    stage1Data: JJM_STAGE1,
+    stage2Data: JJM_STAGE2,
+    stage3Data: JJM_STAGE3,
   },
 ];
 
