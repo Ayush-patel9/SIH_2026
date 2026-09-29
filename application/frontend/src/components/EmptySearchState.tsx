@@ -43,7 +43,7 @@ const SAMPLE_QUERIES = [
   },
 ];
 
-export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSample }) => {
+export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSample: _onSelectSample }) => {
   return (
     <div
       style={{
@@ -51,28 +51,30 @@ export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSamp
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '36px 20px',
-        maxWidth: '820px',
+        padding: '48px 20px',
+        maxWidth: '720px',
         margin: '0 auto',
         width: '100%',
         animation: 'fadeIn 0.25s ease-out',
+        textAlign: 'center',
       }}
     >
       {/* Icon Badge */}
       <div
         style={{
-          width: '54px',
-          height: '54px',
+          width: '56px',
+          height: '56px',
           borderRadius: '14px',
-          background: '#EFF6FF',
-          border: '1px solid #BFDBFE',
+          background: 'var(--surface-secondary, #F5F2EB)',
+          border: '1px solid var(--hairline, #E5E0D4)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           marginBottom: '16px',
+          color: 'var(--forest, #36452F)',
         }}
       >
-        <Search size={26} style={{ color: '#2563EB' }} />
+        <Search size={26} />
       </div>
 
       {/* Main Headline */}
@@ -82,123 +84,28 @@ export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSamp
           fontSize: '22px',
           fontWeight: 700,
           color: 'var(--ink)',
-          marginBottom: '6px',
-          textAlign: 'center',
+          marginBottom: '8px',
           letterSpacing: '-0.015em',
         }}
       >
         Search Any Indian Standard or Material
       </h2>
 
-      {/* Subtitle */}
+      {/* Clean Subtitle */}
       <p
         style={{
-          fontFamily: 'var(--font-ui)',
-          fontSize: '13.5px',
+          fontFamily: 'var(--font-prose)',
+          fontSize: '14px',
           color: 'var(--ink-secondary)',
-          textAlign: 'center',
-          maxWidth: '520px',
-          lineHeight: 1.5,
-          marginBottom: '26px',
+          maxWidth: '560px',
+          lineHeight: 1.6,
+          marginBottom: '28px',
         }}
       >
-        Type a product name, material, or standard number above, or click a quick sample below to see an instant compliance report:
+        Enter any material, engineering product, or standard number in the search bar above to verify active specifications, statutory QCO rules, laboratory test protocols, and CVC defense records.
       </p>
 
-      {/* Quick Start Prompt Cards */}
-      <div style={{ width: '100%', marginBottom: '24px' }}>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gap: '12px',
-          }}
-        >
-          {SAMPLE_QUERIES.slice(0, 4).map((sample, idx) => (
-            <button
-              key={idx}
-              type="button"
-              onClick={() => onSelectSample(sample.query)}
-              className="workbench-card hoverable"
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'flex-start',
-                textAlign: 'left',
-                padding: '14px 16px',
-                borderRadius: '8px',
-                border: '1px solid var(--hairline)',
-                background: '#FFFFFF',
-                cursor: 'pointer',
-                transition: 'all 0.15s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#2563EB';
-                e.currentTarget.style.boxShadow = '0 4px 12px rgba(37,99,235,0.08)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = 'var(--hairline)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
-            >
-              <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginBottom: '6px' }}>
-                <span
-                  style={{
-                    fontFamily: 'var(--font-data)',
-                    fontSize: '11px',
-                    fontWeight: 700,
-                    color: '#2563EB',
-                    background: '#EFF6FF',
-                    padding: '2px 8px',
-                    borderRadius: '4px',
-                  }}
-                >
-                  {sample.standard}
-                </span>
-                <span
-                  style={{
-                    fontSize: '10.5px',
-                    fontWeight: 600,
-                    color: '#B45309',
-                    background: '#FFFBEB',
-                    border: '1px solid #FDE68A',
-                    padding: '1px 6px',
-                    borderRadius: '4px',
-                  }}
-                >
-                  {sample.badge}
-                </span>
-              </div>
-              <h4
-                style={{
-                  fontFamily: 'var(--font-ui)',
-                  fontSize: '13px',
-                  fontWeight: 600,
-                  color: 'var(--ink)',
-                  margin: '0 0 4px 0',
-                }}
-              >
-                {sample.title}
-              </h4>
-              <div
-                style={{
-                  marginTop: '8px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '4px',
-                  fontSize: '11.5px',
-                  fontWeight: 600,
-                  color: '#2563EB',
-                }}
-              >
-                <span>Click to View &rarr;</span>
-              </div>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Feature Capabilities Grid */}
+      {/* Institutional Feature Highlights */}
       <div
         style={{
           display: 'flex',
@@ -207,26 +114,26 @@ export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSamp
           gap: '24px',
           flexWrap: 'wrap',
           width: '100%',
-          paddingTop: '16px',
+          paddingTop: '20px',
           borderTop: '1px solid var(--hairline)',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <ShieldCheck size={15} style={{ color: '#10B981' }} />
-          <span style={{ fontSize: '12px', color: 'var(--ink-secondary)', fontWeight: 500 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+          <ShieldCheck size={16} style={{ color: '#15803D' }} />
+          <span style={{ fontSize: '12.5px', color: 'var(--ink-secondary)', fontWeight: 600, fontFamily: 'var(--font-data)' }}>
             Mandatory ISI / QCO Rules
           </span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <GitBranch size={15} style={{ color: '#3B82F6' }} />
-          <span style={{ fontSize: '12px', color: 'var(--ink-secondary)', fontWeight: 500 }}>
-            Normative Knowledge Graph
+        <div style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+          <GitBranch size={16} style={{ color: '#2563EB' }} />
+          <span style={{ fontSize: '12.5px', color: 'var(--ink-secondary)', fontWeight: 600, fontFamily: 'var(--font-data)' }}>
+            22,011 Standards Knowledge Graph
           </span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <History size={15} style={{ color: '#F59E0B' }} />
-          <span style={{ fontSize: '12px', color: 'var(--ink-secondary)', fontWeight: 500 }}>
-            Historical Lineage Checks
+        <div style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+          <History size={16} style={{ color: '#D97706' }} />
+          <span style={{ fontSize: '12.5px', color: 'var(--ink-secondary)', fontWeight: 600, fontFamily: 'var(--font-data)' }}>
+            Historical Supersession Lineage
           </span>
         </div>
       </div>

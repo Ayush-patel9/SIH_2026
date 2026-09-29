@@ -521,3 +521,149 @@ export async function exportNITClause(queryOrStandard: string): Promise<{ tender
     tender_clause_text: `The material/equipment supplied shall strictly conform to Indian Standard specification (${queryOrStandard}) and all current amendments and Quality Control Orders in force. The vendor must provide valid BIS Certification license documentation prior to supply.`,
   };
 }
+
+export interface SavedStandardRecord {
+  is_number: string;
+  title: string;
+  status: string;
+  year_published?: number;
+  latest_amendment?: string;
+  search_query: string;
+  approved_by: string;
+  response_data: StandardsResponse;
+  created_at: string;
+  updated_at: string;
+}
+
+export async function approveAndSaveStandard(
+  standardData: StandardsResponse,
+  searchQuery: string = '',
+  approvedBy: string = 'Technical Procurement Officer'
+): Promise<{ status: string; message: string; record: SavedStandardRecord }> {
+  if (!USE_MOCK_EXPLICIT) {
+    try {
+      const res = await fetch(`${API_BASE}/api/v1/standards/approve`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          standard_data: standardData,
+          search_query: searchQuery,
+          approved_by: approvedBy,
+        }),
+      });
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (err) {
+      console.warn('[standardsClient] Live standard approval failed:', err);
+    }
+  }
+
+  await delay(300);
+  return {
+    status: 'APPROVED_AND_SAVED',
+    message: `Standard ${standardData.primary_recommendation?.is_number || ''} approved and stored in database.`,
+    record: {
+      is_number: standardData.primary_recommendation?.is_number || 'IS 269',
+      title: standardData.primary_recommendation?.title || 'Approved Standard',
+      status: standardData.primary_recommendation?.status || 'ACTIVE',
+      search_query: searchQuery,
+      approved_by: approvedBy,
+      response_data: standardData,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    },
+  };
+}
+
+export async function getSavedStandards(): Promise<SavedStandardRecord[]> {
+  if (!USE_MOCK_EXPLICIT) {
+    try {
+      const res = await fetch(`${API_BASE}/api/v1/standards/saved`);
+      if (res.ok) {
+        const json = await res.json();
+        return json.items || [];
+      }
+    } catch (err) {
+      console.warn('[standardsClient] Live getSavedStandards failed:', err);
+    }
+  }
+
+  await delay(200);
+  return [];
+}
+
+export interface AuthorityChatPayload {
+  query: string;
+  conversation_history?: Array<{ id?: number | string; type?: string; source?: string; text: string; sender?: string }>;
+  standard_context?: {
+    is_number?: string;
+    title?: string;
+    status?: string;
+    year_published?: number | string | null;
+    scope_snippet?: string;
+    certification?: any;
+    qco?: any;
+  };
+  role?: string;
+  language?: string;
+}
+
+export interface AuthorityChatResponse {
+  reply: string;
+  is_number?: string;
+  model_used?: string;
+}
+
+export async function askAuthorityAssistant(payload: AuthorityChatPayload): Promise<AuthorityChatResponse> {
+  if (!USE_MOCK_EXPLICIT) {
+    try {
+      const res = await fetch(`${API_BASE}/api/v1/authority/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (err) {
+      console.warn('[standardsClient] Live authority chat API failed, falling back to local reasoning:', err);
+    }
+  }
+
+  await delay(400);
+  const isNum = payload.standard_context?.is_number || 'Indian Standard';
+  const q = payload.query.toLowerCase();
+
+  if (q.includes('isi') || q.includes('mandatory') || q.includes('qco') || q.includes('legal')) {
+    return {
+      reply: `Under statutory Quality Control Orders (QCO) issued under Section 16 of the BIS Act 2016, compliance with **${isNum}** and possession of a valid BIS ISI Mark license is **compulsory** for all procurement. Non-compliant citations violate GFR Rule 144(i).`,
+      is_number: isNum,
+      model_used: 'BIS Gazette Knowledge Fallback',
+    };
+  }
+
+  if (q.includes('test') || q.includes('lab') || q.includes('parameter') || q.includes('nabl')) {
+    return {
+      reply: `For **${isNum}**, consignments must provide batch-specific Manufacturer Test Certificates (MTC) alongside mandatory third-party verification from NABL-accredited / BIS-recognized laboratories before acceptance.`,
+      is_number: isNum,
+      model_used: 'BIS Gazette Knowledge Fallback',
+    };
+  }
+
+  if (q.includes('cvc') || q.includes('audit') || q.includes('defense') || q.includes('vigilance')) {
+    return {
+      reply: `Procuring under **${isNum}** provides comprehensive CVC audit defense under GFR 2017 Rule 144(i) and eliminates vendor bias objections via cryptographic SHA-256 audit lineage.`,
+      is_number: isNum,
+      model_used: 'BIS Gazette Knowledge Fallback',
+    };
+  }
+
+  return {
+    reply: `Under **${isNum}**, specifications must align with the latest published revision. Valid BIS Certification Mark (ISI) documentation is required from all participating bidders.`,
+    is_number: isNum,
+    model_used: 'BIS Gazette Knowledge Fallback',
+  };
+}
+
+

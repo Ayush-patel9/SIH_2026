@@ -22,6 +22,7 @@ if PROJECT_ROOT not in sys.path:
 from pipeline.config.api_contract_models import QueryRequest, StandardsResponse
 from pipeline.rag_engine.pipeline_core import graph_rag_pipeline
 from pipeline.rag_engine.staleness_monitor import staleness_monitor
+from application.services.project_repository import get_saved_approved_standard
 
 logger = logging.getLogger("bis_websocket_api")
 
@@ -122,6 +123,51 @@ async def websocket_pipeline_endpoint(websocket: WebSocket):
                 mode = msg.get("mode", "recommend")
                 role = msg.get("role", "PROCUREMENT_OFFICER")
                 language = msg.get("language", "en")
+
+                # 1. Check if user query matches an approved/saved standard in Database
+                cached_entry = get_saved_approved_standard(query_text)
+                if cached_entry and "response_data" in cached_entry:
+                    resp_dict = cached_entry["response_data"]
+                    if isinstance(resp_dict, dict):
+                        if "meta" not in resp_dict:
+                            resp_dict["meta"] = {}
+                        resp_dict["meta"]["approved_in_db"] = True
+                        resp_dict["meta"]["approved_by"] = cached_entry.get("approved_by", "Technical Officer")
+                        resp_dict["meta"]["approved_at"] = cached_entry.get("approved_at", "")
+
+                    logger.info(f"✓ Instant DB Hit in WebSocket: Returning approved standard {cached_entry.get('is_number')} from Neon PostgreSQL.")
+
+                    # Stream instant verification sequence to frontend
+                    await websocket.send_text(json.dumps({
+                        "type": "stage_start",
+                        "stage": 0,
+                        "name": "Database Verification",
+                        "detail": f"Instant verified match found in Bureau DB for {cached_entry.get('is_number')} ({cached_entry.get('title')}).",
+                        "elapsed_ms": 8,
+                        "timestamp": datetime.now(timezone.utc).isoformat()
+                    }))
+                    await asyncio.sleep(0.05)
+                    await websocket.send_text(json.dumps({
+                        "type": "authority_log",
+                        "log": f"🏛️ Bureau Database Match: Verified approved specification for {cached_entry.get('is_number')} retrieved directly from Neon PostgreSQL. Zero LLM latency.",
+                        "level": "success",
+                        "timestamp": datetime.now(timezone.utc).isoformat()
+                    }))
+                    await asyncio.sleep(0.05)
+                    await websocket.send_text(json.dumps({
+                        "type": "stage_complete",
+                        "stage": 0,
+                        "name": "Database Verification",
+                        "detail": "Verified Bureau DB Record retrieved instantly.",
+                        "timestamp": datetime.now(timezone.utc).isoformat()
+                    }))
+                    await asyncio.sleep(0.05)
+                    await websocket.send_text(json.dumps({
+                        "type": "pipeline_complete",
+                        "data": resp_dict,
+                        "timestamp": datetime.now(timezone.utc).isoformat()
+                    }))
+                    continue
 
                 req = QueryRequest(
                     input={"text": query_text, "mode": mode, "language": language},

@@ -9,7 +9,17 @@ import { NITGeneratorView } from './features/nitGenerator';
 import { MCPView } from './features/mcp';
 import { TenderUploadView } from './features/tenderUpload';
 import { TenderAnalysisDashboard } from './features/tenderAnalysis';
-import { getAlerts, streamQueryOverSocket, queryStandards, connectAlertsSocket, type PipelineSocketEvent } from './api/standardsClient';
+import {
+  getAlerts,
+  streamQueryOverSocket,
+  queryStandards,
+  connectAlertsSocket,
+  approveAndSaveStandard,
+  getSavedStandards,
+  askAuthorityAssistant,
+  type PipelineSocketEvent,
+  type SavedStandardRecord,
+} from './api/standardsClient';
 import { useRole } from './store/roleStore';
 import { useSession } from './store/userStore';
 import { TenderAuthorityPanel, VendorPanel } from './features/roles';
@@ -29,7 +39,7 @@ import { KnowledgeGraph3DView } from './features/neuralGraph/KnowledgeGraph3DVie
 import { GazetteRadarView } from './features/gazetteRadar/GazetteRadarView';
 import { HistoricalTimeMachineView } from './features/timeMachine/HistoricalTimeMachineView';
 import { CAGAuditSimulatorView } from './features/cagAudit/CAGAuditSimulatorView';
-import { Sparkles, Activity, Cpu, ShieldCheck } from 'lucide-react';
+import { Sparkles, Activity, Cpu, ShieldCheck, Database, CheckCircle2, History, Save, Check } from 'lucide-react';
 
 // Dynamic parameter and performance extractor for any of the 22,011 Indian Standards
 function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: string }> {
@@ -328,12 +338,13 @@ export function getFeatureFromPath(pathname: string, defaultFeature: FeatureKey 
   return defaultFeature;
 }
 
-export type ExplorerSubTab = 'dossier' | 'comparison' | 'audit' | 'nitGenerator';
+export type ExplorerSubTab = 'dossier' | 'comparison' | 'audit' | 'pastAudits' | 'nitGenerator';
 
 export function getSubTabFromPath(pathname: string): ExplorerSubTab {
   const clean = pathname.toLowerCase();
   if (clean.includes('comparison')) return 'comparison';
-  if (clean.includes('audit')) return 'audit';
+  if (clean.includes('past-audit') || clean.includes('vault')) return 'pastAudits';
+  if (clean.includes('audit') || clean.includes('cvc')) return 'audit';
   if (clean.includes('nit')) return 'nitGenerator';
   return 'dossier';
 }
@@ -407,6 +418,44 @@ export default function App({ onLogout }: AppProps = {}) {
   const [pipelinePdfUrl, setPipelinePdfUrl] = useState<string | null | undefined>();
   const [pipelineTitle, setPipelineTitle] = useState<string | undefined>();
 
+  // Database standard approval & persistence state
+  const [isApprovedInDb, setIsApprovedInDb] = useState<boolean>(false);
+  const [isApproving, setIsApproving] = useState<boolean>(false);
+  const [approvalToast, setApprovalToast] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (activeData?.meta && (activeData.meta as any).approved_in_db) {
+      setIsApprovedInDb(true);
+    } else if (activeData?.primary_recommendation?.is_number) {
+      const activeNum = activeData.primary_recommendation.is_number.trim().toLowerCase();
+      getSavedStandards()
+        .then((records) => {
+          const found = records?.some((r) => r.is_number.trim().toLowerCase() === activeNum);
+          setIsApprovedInDb(!!found);
+        })
+        .catch(() => {});
+    } else {
+      setIsApprovedInDb(false);
+    }
+  }, [activeData]);
+
+  const handleApproveStandard = async () => {
+    if (!activeData || isApproving) return;
+    setIsApproving(true);
+    try {
+      const officerName = session?.name ? `${session.name} (${role})` : `Procurement Officer (${role})`;
+      const res = await approveAndSaveStandard(activeData, searchQuery, officerName);
+      setIsApprovedInDb(true);
+      setApprovalToast(res.message || `Standard ${activeData.primary_recommendation?.is_number} approved and saved to Bureau DB.`);
+      AuditStore.save(activeData);
+      setTimeout(() => setApprovalToast(null), 5000);
+    } catch (err: any) {
+      console.error('Failed to approve standard:', err);
+    } finally {
+      setIsApproving(false);
+    }
+  };
+
   useEffect(() => {
     if (role === 'OFFICER' || role === 'VENDOR') setActiveTab('role_view');
     else setActiveTab('reasoning');
@@ -457,11 +506,12 @@ export default function App({ onLogout }: AppProps = {}) {
     };
   }, []);
 
-  const [messages, setMessages] = useState<Array<{ id: number; type: string; source?: string; text: string }>>([
+  const [messages, setMessages] = useState<Array<{ id: number | string; type: string; source?: string; sender?: string; text: string; model_used?: string }>>([
     {
       id: 0,
       type: 'grounded-observation',
       source: 'gazette',
+      sender: 'system',
       text: 'Inspecting IS 269:2015 (Ordinary Portland Cement). 43-grade consolidated from legacy IS 8112:1989. Mandatory ISI marking enforced under GSR 739(E). CVC audit trail active.',
     },
   ]);
@@ -493,6 +543,7 @@ export default function App({ onLogout }: AppProps = {}) {
                 id: prev.length,
                 type: 'grounded-observation',
                 source: 'pipeline',
+                sender: 'system',
                 text: evt.log || '',
               },
             ]);
@@ -510,6 +561,7 @@ export default function App({ onLogout }: AppProps = {}) {
             id: prev.length,
             type: 'response',
             source: 'pipeline',
+            sender: 'assistant',
             text: `Analysis complete. Recommended standard: ${result.primary_recommendation.is_number} (${conf} confidence).`,
           },
         ]);
@@ -531,33 +583,64 @@ export default function App({ onLogout }: AppProps = {}) {
     }
   }, [searchQuery, isLoading, mode, role, language]);
 
-  const handleAskQuestion = (userQ: string) => {
+  const handleAskQuestion = async (userQ: string) => {
     if (!userQ.trim() || isProcessing) return;
 
-    setMessages((prev) => [
-      ...prev,
-      {
-        id: prev.length,
-        type: 'user',
-        source: 'user',
-        text: userQ,
-      },
-    ]);
+    const userMsgId = Date.now();
+    const newUserMsg = {
+      id: userMsgId,
+      type: 'user',
+      source: 'user',
+      sender: 'user',
+      text: userQ,
+    };
 
+    setMessages((prev) => [...prev, newUserMsg]);
     setIsProcessing(true);
-    setTimeout(() => {
-      setIsProcessing(false);
+
+    try {
+      const resp = await askAuthorityAssistant({
+        query: userQ,
+        conversation_history: messages.slice(-6),
+        standard_context: activeData?.primary_recommendation ? {
+          is_number: activeData.primary_recommendation.is_number,
+          title: activeData.primary_recommendation.title,
+          status: activeData.primary_recommendation.status,
+          year_published: activeData.primary_recommendation.year_published,
+          scope_snippet: activeData.primary_recommendation.scope_snippet || activeData.primary_recommendation.full_title || activeData.primary_recommendation.title,
+          certification: activeData.primary_recommendation.certification,
+        } : undefined,
+        role,
+        language,
+      });
+
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: Date.now() + 1,
+          type: 'response',
+          source: 'gazette',
+          sender: 'assistant',
+          text: resp.reply,
+          model_used: resp.model_used,
+        },
+      ]);
+    } catch (err: any) {
+      console.error('Authority chat error:', err);
       const isNum = activeData?.primary_recommendation?.is_number || 'the Indian Standard';
       setMessages((prev) => [
         ...prev,
         {
-          id: prev.length,
+          id: Date.now() + 1,
           type: 'response',
           source: 'gazette',
+          sender: 'assistant',
           text: `Under ${isNum}, compliance is legally verified against Gazette requirements. Any departure in tender parameters requires explicit sanction from the Technical Committee. CVC audit hash recorded.`,
         },
       ]);
-    }, 600);
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
   const primary = activeData?.primary_recommendation;
@@ -704,12 +787,64 @@ export default function App({ onLogout }: AppProps = {}) {
           {/* Feature 01: Standards Explorer (Consolidated with Comparison, CVC Audit Defense & NIT Generator) */}
           {activeFeature === 'explainability' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '22px', maxWidth: '1040px', margin: '0 auto', width: '100%' }}>
-              {/* Friendly Hero */}
-              <div className="editorial-hero" style={{ padding: '24px 20px 16px', textAlign: 'center' }}>
-                <div className="editorial-hero-tag" style={{ margin: '0 auto 8px' }}>
-                  <Sparkles size={12} />
-                  <span>BIS Standards Platform</span>
+              {/* Friendly Hero with Extreme-Right Vault Button */}
+              <div className="editorial-hero" style={{ padding: '20px 20px 14px', textAlign: 'center' }}>
+                <div
+                  style={{
+                    position: 'relative',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    marginBottom: '8px',
+                    minHeight: '32px',
+                  }}
+                >
+                  <div className="editorial-hero-tag" style={{ margin: 0 }}>
+                    <Sparkles size={12} />
+                    <span>BIS Standards Platform</span>
+                  </div>
+
+                  {/* Past Audits Vault Button Positioned Beside Header on Extreme Right */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setExplorerSubTab(explorerSubTab === 'pastAudits' ? 'dossier' : 'pastAudits');
+                    }}
+                    style={{
+                      position: 'absolute',
+                      right: 0,
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '7px',
+                      padding: '5px 12px',
+                      borderRadius: '20px',
+                      fontSize: '11.5px',
+                      fontWeight: 600,
+                      backgroundColor: explorerSubTab === 'pastAudits' ? '#36452F' : 'var(--surface-secondary, #F5F2EB)',
+                      color: explorerSubTab === 'pastAudits' ? '#FFFEFB' : 'var(--ink, #1F2937)',
+                      border: explorerSubTab === 'pastAudits' ? '1px solid #36452F' : '1px solid var(--hairline, #E5E0D4)',
+                      cursor: 'pointer',
+                      transition: 'all 0.15s ease',
+                      boxShadow: explorerSubTab === 'pastAudits' ? '0 2px 6px rgba(54,69,47,0.2)' : 'none',
+                    }}
+                    onMouseEnter={(e) => {
+                      if (explorerSubTab !== 'pastAudits') {
+                        e.currentTarget.style.borderColor = '#36452F';
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      if (explorerSubTab !== 'pastAudits') {
+                        e.currentTarget.style.borderColor = 'var(--hairline, #E5E0D4)';
+                      }
+                    }}
+                  >
+                    <History size={13} style={{ color: explorerSubTab === 'pastAudits' ? '#FFFEFB' : 'var(--collapse-cobalt, #2563EB)' }} />
+                    <span>{explorerSubTab === 'pastAudits' ? '🔍 Back to Search Explorer' : '📜 Past Audits Vault'}</span>
+                  </button>
                 </div>
+
                 <h1 className="editorial-hero-title" style={{ fontSize: '26px', marginBottom: '6px' }}>
                   Indian Standards (IS) Explorer
                 </h1>
@@ -751,87 +886,6 @@ export default function App({ onLogout }: AppProps = {}) {
                     >
                       {isLoading ? 'Searching...' : 'Search'}
                     </button>
-                  </div>
-                </div>
-
-                {/* Friendly Quick-Click Sample Demos */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginTop: '10px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-                    <span style={{ fontSize: '11px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)', fontWeight: 600 }}>
-                      Quick Demos:
-                    </span>
-                    {[
-                      { code: 'IS 15683', label: '🧯 Fire Extinguishers', query: 'Portable fire extinguishers IS 15683' },
-                      { code: 'IS 269', label: '🏛️ Cement', query: 'Ordinary Portland Cement 43 Grade IS 269' },
-                      { code: 'IS 1786', label: '🏗️ TMT Rebars', query: 'High strength deformed steel bars Fe 500D IS 1786' },
-                      { code: 'IS 4984', label: '💧 Water Pipes', query: 'HDPE pipes for potable water IS 4984' },
-                      { code: 'IS 7098', label: '⚡ Power Cables', query: 'XLPE insulated power cables IS 7098' },
-                    ].map((demo) => (
-                      <button
-                        key={demo.code}
-                        type="button"
-                        onClick={() => {
-                          setSearchQuery(demo.query);
-                          handleAnalyze(demo.query);
-                        }}
-                        style={{
-                          background: 'var(--surface-secondary)',
-                          border: '1px solid var(--hairline)',
-                          borderRadius: '16px',
-                          padding: '3px 10px',
-                          fontSize: '11px',
-                          cursor: 'pointer',
-                          color: 'var(--ink)',
-                          fontWeight: 500,
-                          transition: 'all 0.15s ease',
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.borderColor = 'var(--collapse-cobalt, #2563EB)';
-                          e.currentTarget.style.color = '#2563EB';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.borderColor = 'var(--hairline)';
-                          e.currentTarget.style.color = 'var(--ink)';
-                        }}
-                      >
-                        {demo.label}
-                      </button>
-                    ))}
-                  </div>
-
-                  {/* Active Role Workspace Badge */}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <div
-                      style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '6px',
-                        padding: '5px 12px',
-                        borderRadius: '20px',
-                        fontSize: '12px',
-                        fontWeight: 600,
-                        backgroundColor:
-                          role === 'VENDOR'
-                            ? 'rgba(245, 158, 11, 0.1)'
-                            : 'rgba(19, 136, 8, 0.1)',
-                        color:
-                          role === 'VENDOR'
-                            ? '#B45309'
-                            : '#15803D',
-                        border: `1px solid ${
-                          role === 'VENDOR'
-                            ? 'rgba(245, 158, 11, 0.3)'
-                            : 'rgba(19, 136, 8, 0.3)'
-                        }`,
-                      }}
-                    >
-                      <span>{role === 'VENDOR' ? '🏭' : '🏛️'}</span>
-                      <span>
-                        {role === 'VENDOR'
-                          ? 'Industrial Vendor Gateway'
-                          : 'Tender Authority & Officer'}
-                      </span>
-                    </div>
                   </div>
                 </div>
 
@@ -962,14 +1016,30 @@ export default function App({ onLogout }: AppProps = {}) {
                 </div>
               )}
 
-              {/* Empty Search State */}
-              {!isLoading && !activeData && (
+              {/* Empty Search State or Direct Past Audits Vault View */}
+              {!isLoading && !activeData && explorerSubTab !== 'pastAudits' && (
                 <EmptySearchState
                   onSelectSample={(sampleQuery) => {
                     setSearchQuery(sampleQuery);
                     handleAnalyze(sampleQuery);
                   }}
                 />
+              )}
+
+              {!isLoading && !activeData && explorerSubTab === 'pastAudits' && (
+                <div style={{ animation: 'fadeSlideUp 0.15s ease' }}>
+                  <AuditTrailView
+                    mode="history"
+                    currentData={null}
+                    onSelectRecord={(rec) => {
+                      setActiveData(rec);
+                      if (rec?.primary_recommendation?.is_number) {
+                        setSearchQuery(rec.primary_recommendation.title || rec.primary_recommendation.is_number);
+                      }
+                      setExplorerSubTab('dossier');
+                    }}
+                  />
+                </div>
               )}
 
               {/* Unified Standards Explorer Views (Dossier, Comparison, CVC Audit, NIT Generator) */}
@@ -1006,7 +1076,13 @@ export default function App({ onLogout }: AppProps = {}) {
                         id: 'audit',
                         label: 'CVC Audit Defense',
                         icon: '🛡️',
-                        badge: 'SHA-256 Sealed',
+                        badge: 'Current Seal',
+                      },
+                      {
+                        id: 'pastAudits',
+                        label: 'Past Audits',
+                        icon: '📜',
+                        badge: 'Vault',
                       },
                       {
                         id: 'nitGenerator',
@@ -1063,6 +1139,34 @@ export default function App({ onLogout }: AppProps = {}) {
                   {/* Sub-View 1: Primary Intelligence Dossier & Deep-Dive Reasoning */}
                   {explorerSubTab === 'dossier' && (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+                      {/* Approval Success Notification Toast */}
+                      {approvalToast && (
+                        <div
+                          style={{
+                            background: '#ECFDF5',
+                            border: '1px solid #86EFAC',
+                            padding: '12px 18px',
+                            borderRadius: '8px',
+                            color: '#166534',
+                            fontSize: '13.5px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            animation: 'fadeIn 0.2s ease',
+                          }}
+                        >
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <CheckCircle2 size={18} style={{ color: '#15803D' }} />
+                            <span>
+                              <strong>Bureau DB Verified:</strong> {approvalToast}
+                            </span>
+                          </div>
+                          <span style={{ fontSize: '11.5px', color: '#15803D', fontFamily: 'var(--font-data)' }}>
+                            Active in DB
+                          </span>
+                        </div>
+                      )}
+
                       {/* Recommended Standard Primary Artboard Card */}
                       <div className="workbench-card" style={{ display: 'flex', flexDirection: 'column', gap: '20px', padding: '28px 32px' }}>
                         {/* Top Metadata Row */}
@@ -1075,6 +1179,12 @@ export default function App({ onLogout }: AppProps = {}) {
                               <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--emerald-pass)' }} />
                               {primary?.status || 'ACTIVE STANDARD'}
                             </span>
+                            {isApprovedInDb && (
+                              <span className="concept-status-badge" style={{ background: '#ECFDF5', color: '#15803D', border: '1px solid #86EFAC', display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                                <CheckCircle2 size={12} />
+                                BUREAU DB APPROVED
+                              </span>
+                            )}
                             {qco?.mandatory && (
                               <span className="concept-status-badge" style={{ background: '#FFFBEB', color: '#B45309', border: '1px solid #FDE68A' }}>
                                 ⚖️ MANDATORY ISI MARK (QCO)
@@ -1129,6 +1239,42 @@ export default function App({ onLogout }: AppProps = {}) {
 
                         {/* Quick Action Buttons */}
                         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', paddingTop: '6px' }}>
+                          {/* Save & Approve in DB Button */}
+                          <button
+                            type="button"
+                            onClick={handleApproveStandard}
+                            disabled={isApproving}
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '7px',
+                              padding: '8px 16px',
+                              borderRadius: '6px',
+                              fontSize: '13px',
+                              fontWeight: 600,
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                              backgroundColor: isApprovedInDb ? '#ECFDF5' : '#36452F',
+                              color: isApprovedInDb ? '#15803D' : '#FFFEFB',
+                              border: isApprovedInDb ? '1px solid #86EFAC' : '1px solid #36452F',
+                              boxShadow: isApprovedInDb ? '0 1px 3px rgba(21,128,61,0.12)' : '0 2px 6px rgba(54,69,47,0.25)',
+                            }}
+                          >
+                            {isApproving ? (
+                              <span>⏳ Persisting in DB...</span>
+                            ) : isApprovedInDb ? (
+                              <>
+                                <CheckCircle2 size={15} style={{ color: '#15803D' }} />
+                                <span>✓ Approved & Saved in Bureau DB</span>
+                              </>
+                            ) : (
+                              <>
+                                <Save size={15} />
+                                <span>💾 Save & Approve Standard in DB</span>
+                              </>
+                            )}
+                          </button>
+
                           <button
                             type="button"
                             onClick={handleCopyClause}
@@ -1142,6 +1288,13 @@ export default function App({ onLogout }: AppProps = {}) {
                             className="btn-secondary"
                           >
                             <span>🛡️ View CVC Audit Defense</span>
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setExplorerSubTab('pastAudits')}
+                            className="btn-secondary"
+                          >
+                            <span>📜 Past Audits</span>
                           </button>
                           <button
                             type="button"
@@ -1342,11 +1495,13 @@ export default function App({ onLogout }: AppProps = {}) {
                     </div>
                   )}
 
-                  {/* Sub-View 3: CVC Audit Defense Ledger */}
+                  {/* Sub-View 3: Current CVC Audit Defense */}
                   {explorerSubTab === 'audit' && (
                     <div style={{ animation: 'fadeSlideUp 0.15s ease' }}>
                       <AuditTrailView
+                        mode="current"
                         currentData={activeData}
+                        onOpenPastAudits={() => setExplorerSubTab('pastAudits')}
                         onSelectRecord={(rec) => {
                           setActiveData(rec);
                           if (rec?.primary_recommendation?.is_number) {
@@ -1357,7 +1512,24 @@ export default function App({ onLogout }: AppProps = {}) {
                     </div>
                   )}
 
-                  {/* Sub-View 4: NIT Clause Generator */}
+                  {/* Sub-View 4: Dedicated Past Audits Vault */}
+                  {explorerSubTab === 'pastAudits' && (
+                    <div style={{ animation: 'fadeSlideUp 0.15s ease' }}>
+                      <AuditTrailView
+                        mode="history"
+                        currentData={activeData}
+                        onSelectRecord={(rec) => {
+                          setActiveData(rec);
+                          if (rec?.primary_recommendation?.is_number) {
+                            setSearchQuery(rec.primary_recommendation.title || rec.primary_recommendation.is_number);
+                          }
+                          setExplorerSubTab('dossier');
+                        }}
+                      />
+                    </div>
+                  )}
+
+                  {/* Sub-View 5: NIT Clause Generator */}
                   {explorerSubTab === 'nitGenerator' && (
                     <div style={{ animation: 'fadeSlideUp 0.15s ease' }}>
                       <NITGeneratorView currentData={activeData} />
@@ -1501,7 +1673,7 @@ export default function App({ onLogout }: AppProps = {}) {
             <span>SIH 2026</span>
           </div>
           <div>
-            Data Snapshot: {activeData?.meta.data_snapshot_date ?? '2026-09-26'} · CVC Audit Hash Sealed
+            Data Snapshot: {activeData?.meta?.data_snapshot_date || new Date().toISOString().split('T')[0]} · CVC Audit Hash Sealed (SHA-256)
           </div>
         </footer>
       </div>
@@ -1514,6 +1686,7 @@ export default function App({ onLogout }: AppProps = {}) {
         messages={messages}
         onSendMessage={handleAskQuestion}
         isProcessing={isProcessing}
+        onClearMessages={() => setMessages([])}
       />
 
       {/* Global Modals */}

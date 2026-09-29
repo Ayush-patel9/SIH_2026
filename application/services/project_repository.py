@@ -1,3 +1,4 @@
+import re
 import json
 import uuid
 import logging
@@ -234,6 +235,22 @@ def init_db():
                 created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
             );
             CREATE INDEX IF NOT EXISTS idx_audit_project ON officer_audit_trail(project_id);
+        """)
+
+        # 6. Approved & Saved Standards Dossiers Table
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS saved_standards_dossiers (
+                id VARCHAR(64) PRIMARY KEY,
+                is_number VARCHAR(64) NOT NULL,
+                title TEXT NOT NULL,
+                search_query TEXT,
+                response_data JSONB NOT NULL,
+                approved_by VARCHAR(128) DEFAULT 'Technical Officer / Bureau Authority',
+                approved_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+            );
+            CREATE INDEX IF NOT EXISTS idx_saved_standards_is_num ON saved_standards_dossiers(is_number);
+            CREATE INDEX IF NOT EXISTS idx_saved_standards_query ON saved_standards_dossiers(search_query);
         """)
 
         conn.commit()
@@ -790,3 +807,247 @@ def get_chat_history(project_id: str) -> List[Dict[str, Any]]:
         return []
     finally:
         release_connection(conn)
+
+# -------------------------------------------------------------------------
+# SAVED & APPROVED STANDARDS DOSSIERS (Standards Explorer Persistence)
+# -------------------------------------------------------------------------
+_LOCAL_SAVED_STANDARDS: Dict[str, Dict[str, Any]] = {}
+
+def save_approved_standard(standard_data: Dict[str, Any], search_query: str = "", approved_by: str = "Technical Officer") -> Dict[str, Any]:
+    """
+    Saves and permanently approves a standard dossier in the database.
+    Stores all aspects: primary recommendation, alternatives comparison, allied standards,
+    NIT specifications, audit records, and knowledge graph paths.
+    """
+    is_num = standard_data.get("primary_recommendation", {}).get("is_number") or standard_data.get("is_number") or "IS Standard"
+    title = standard_data.get("primary_recommendation", {}).get("title") or standard_data.get("title") or is_num
+    
+    clean_id_suffix = re.sub(r'[^a-zA-Z0-9]', '', is_num).lower()
+    record_id = f"std-{clean_id_suffix}" if clean_id_suffix else f"std-{uuid.uuid4().hex[:10]}"
+    timestamp = datetime.now().isoformat()
+
+    # Tag meta with approved_in_db
+    if isinstance(standard_data, dict):
+        if "meta" not in standard_data or not isinstance(standard_data["meta"], dict):
+            standard_data["meta"] = {}
+        standard_data["meta"]["approved_in_db"] = True
+        standard_data["meta"]["approved_by"] = approved_by
+        standard_data["meta"]["approved_at"] = timestamp
+
+    saved_payload = {
+        "id": record_id,
+        "is_number": is_num,
+        "title": title,
+        "search_query": search_query or is_num,
+        "response_data": standard_data,
+        "approved_by": approved_by,
+        "approved_at": timestamp,
+        "is_approved": True,
+    }
+
+    # Fast in-memory caching
+    _LOCAL_SAVED_STANDARDS[is_num.upper().strip()] = saved_payload
+    _LOCAL_SAVED_STANDARDS[is_num.lower().strip()] = saved_payload
+    _LOCAL_SAVED_STANDARDS[clean_id_suffix] = saved_payload
+    _LOCAL_SAVED_STANDARDS[title.lower().strip()] = saved_payload
+    if search_query:
+        _LOCAL_SAVED_STANDARDS[search_query.lower().strip()] = saved_payload
+
+    # Neon PostgreSQL persistence
+    conn = None
+    try:
+        conn = get_connection()
+        if conn:
+            cur = get_cursor(conn)
+            cur.execute("""
+                INSERT INTO saved_standards_dossiers (id, is_number, title, search_query, response_data, approved_by, approved_at)
+                VALUES (%s, %s, %s, %s, %s, %s, %s)
+                ON CONFLICT (id) DO UPDATE SET
+                    title = EXCLUDED.title,
+                    search_query = EXCLUDED.search_query,
+                    response_data = EXCLUDED.response_data,
+                    approved_by = EXCLUDED.approved_by,
+                    approved_at = CURRENT_TIMESTAMP,
+                    updated_at = CURRENT_TIMESTAMP;
+            """, (record_id, is_num, title, search_query, json.dumps(standard_data), approved_by, timestamp))
+            conn.commit()
+            logger.info(f"✓ Saved and permanently approved standard {is_num} in PostgreSQL database.")
+    except Exception as e:
+        if conn:
+            conn.rollback()
+        logger.warning(f"Failed to commit saved standard {is_num} to PostgreSQL, using memory: {e}")
+    finally:
+        release_connection(conn)
+
+    return saved_payload
+
+def get_saved_approved_standard(query_or_is: str) -> Optional[Dict[str, Any]]:
+    """
+    Checks if a standard dossier has been approved and saved in the database.
+    Performs multi-strategy lookup:
+    1. Exact standard number or query in-memory
+    2. SQL full-text, ILIKE, and substring pattern matching on IS Number, Title, and Search Query
+    3. Extracted standard number lookup (e.g. '269' matches 'IS 269:2015')
+    4. Keyword token intersection against stored standards
+    """
+    if not query_or_is:
+        return None
+    
+    clean_key = query_or_is.strip()
+    clean_key_lower = clean_key.lower()
+    clean_key_upper = clean_key.upper()
+    
+    # 1. Fast in-memory check
+    if clean_key_upper in _LOCAL_SAVED_STANDARDS:
+        return _LOCAL_SAVED_STANDARDS[clean_key_upper]
+    if clean_key_lower in _LOCAL_SAVED_STANDARDS:
+        return _LOCAL_SAVED_STANDARDS[clean_key_lower]
+
+    clean_alphanumeric = re.sub(r'[^a-zA-Z0-9]', '', clean_key_lower)
+    if clean_alphanumeric and clean_alphanumeric in _LOCAL_SAVED_STANDARDS:
+        return _LOCAL_SAVED_STANDARDS[clean_alphanumeric]
+
+    # Check for IS number in query e.g. "IS 269", "IS-269", "269"
+    is_matches = re.findall(r'(?:IS\s*)?(\d{3,5})', clean_key, re.IGNORECASE)
+
+    # 2. Check Neon PostgreSQL
+    conn = None
+    try:
+        conn = get_connection()
+        if conn:
+            cur = get_cursor(conn)
+            # Strategy A: Direct matches (IS number, title, or search query)
+            cur.execute("""
+                SELECT id, is_number, title, search_query, response_data, approved_by, approved_at
+                FROM saved_standards_dossiers
+                WHERE UPPER(is_number) = UPPER(%s)
+                   OR LOWER(search_query) = LOWER(%s)
+                   OR LOWER(title) = LOWER(%s)
+                   OR %s ILIKE '%%' || is_number || '%%'
+                   OR %s ILIKE '%%' || title || '%%'
+                   OR is_number ILIKE %s
+                   OR title ILIKE %s
+                   OR search_query ILIKE %s
+                ORDER BY approved_at DESC
+                LIMIT 1
+            """, (clean_key, clean_key, clean_key, clean_key, clean_key, f"%{clean_key}%", f"%{clean_key}%", f"%{clean_key}%"))
+            row = cur.fetchone()
+            if row:
+                resp = row["response_data"]
+                if isinstance(resp, str):
+                    resp = json.loads(resp)
+                result = {
+                    "id": row["id"],
+                    "is_number": row["is_number"],
+                    "title": row["title"],
+                    "search_query": row["search_query"],
+                    "response_data": resp,
+                    "approved_by": row["approved_by"],
+                    "approved_at": str(row["approved_at"]),
+                    "is_approved": True,
+                }
+                _LOCAL_SAVED_STANDARDS[clean_key_upper] = result
+                _LOCAL_SAVED_STANDARDS[clean_key_lower] = result
+                return result
+
+            # Strategy B: If standard number digits like 269, 1786, 4984 were detected
+            for num in is_matches:
+                cur.execute("""
+                    SELECT id, is_number, title, search_query, response_data, approved_by, approved_at
+                    FROM saved_standards_dossiers
+                    WHERE is_number ILIKE %s
+                    ORDER BY approved_at DESC
+                    LIMIT 1
+                """, (f"%{num}%",))
+                row = cur.fetchone()
+                if row:
+                    resp = row["response_data"]
+                    if isinstance(resp, str):
+                        resp = json.loads(resp)
+                    result = {
+                        "id": row["id"],
+                        "is_number": row["is_number"],
+                        "title": row["title"],
+                        "search_query": row["search_query"],
+                        "response_data": resp,
+                        "approved_by": row["approved_by"],
+                        "approved_at": str(row["approved_at"]),
+                        "is_approved": True,
+                    }
+                    _LOCAL_SAVED_STANDARDS[clean_key_upper] = result
+                    return result
+
+            # Strategy C: Token / Word intersection against all saved standards
+            stop_words = {'for', 'and', 'the', 'with', 'standard', 'specification', 'supply', 'procurement', 'material', 'item', 'grade'}
+            query_tokens = set(w for w in re.split(r'\W+', clean_key_lower) if len(w) >= 3 and w not in stop_words)
+            if query_tokens:
+                cur.execute("""
+                    SELECT id, is_number, title, search_query, response_data, approved_by, approved_at
+                    FROM saved_standards_dossiers
+                    ORDER BY approved_at DESC
+                """)
+                all_saved = cur.fetchall()
+                for r in all_saved:
+                    target_text = f"{r['is_number']} {r['title']} {r['search_query']}".lower()
+                    target_tokens = set(re.split(r'\W+', target_text))
+                    if query_tokens.intersection(target_tokens):
+                        resp = r["response_data"]
+                        if isinstance(resp, str):
+                            resp = json.loads(resp)
+                        result = {
+                            "id": r["id"],
+                            "is_number": r["is_number"],
+                            "title": r["title"],
+                            "search_query": r["search_query"],
+                            "response_data": resp,
+                            "approved_by": r["approved_by"],
+                            "approved_at": str(r["approved_at"]),
+                            "is_approved": True,
+                        }
+                        _LOCAL_SAVED_STANDARDS[clean_key_upper] = result
+                        return result
+
+    except Exception as e:
+        logger.warning(f"Error querying saved standards from database: {e}")
+    finally:
+        release_connection(conn)
+
+    return None
+
+def list_saved_approved_standards() -> List[Dict[str, Any]]:
+    """
+    Lists all approved standards dossiers saved in the database.
+    """
+    conn = None
+    try:
+        conn = get_connection()
+        if conn:
+            cur = get_cursor(conn)
+            cur.execute("""
+                SELECT id, is_number, title, search_query, response_data, approved_by, approved_at
+                FROM saved_standards_dossiers
+                ORDER BY approved_at DESC
+            """)
+            rows = cur.fetchall()
+            results = []
+            for r in rows:
+                resp = r["response_data"]
+                if isinstance(resp, str):
+                    resp = json.loads(resp)
+                results.append({
+                    "id": r["id"],
+                    "is_number": r["is_number"],
+                    "title": r["title"],
+                    "search_query": r["search_query"],
+                    "response_data": resp,
+                    "approved_by": r["approved_by"],
+                    "approved_at": str(r["approved_at"]),
+                    "is_approved": True,
+                })
+            return results
+    except Exception as e:
+        logger.warning(f"Error fetching saved standards list from database: {e}")
+    finally:
+        release_connection(conn)
+
+    return list(_LOCAL_SAVED_STANDARDS.values())
