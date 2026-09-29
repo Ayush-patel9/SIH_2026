@@ -37,7 +37,9 @@ except ImportError:
 from application.api.routes.projects import router as projects_router
 from application.api.routes.gazette import router as gazette_router
 from application.api.routes.mcp_router import router as mcp_router
+from application.api.routes.heartbeat import router as heartbeat_router
 from application.services.project_repository import init_db, seed_initial_projects_if_empty
+from application.services.s2_heartbeat_service import s2_heartbeat_service
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("bis_platform_api")
@@ -60,9 +62,22 @@ def on_startup():
         logger.info("Initializing Neon PostgreSQL connection and schema...")
         init_db()
         seed_initial_projects_if_empty()
-        logger.info("✓ Neon PostgreSQL startup verification complete.")
+        # Initialize S2 mutual keepalive and daily scraper scheduler
+        s2_heartbeat_service.init_tables()
+        s2_heartbeat_service.load_state_from_db()
+        s2_heartbeat_service.cleanup_stale_runs()
+        s2_heartbeat_service.start()
+        logger.info("✓ Neon PostgreSQL startup verification & S2 scheduler complete.")
     except Exception as e:
         logger.warning(f"Could not connect to database on startup: {e}")
+
+@app.on_event("shutdown")
+def on_shutdown():
+    try:
+        logger.info("Stopping S2 heartbeat & scheduler service...")
+        s2_heartbeat_service.stop()
+    except Exception as e:
+        logger.warning(f"Error shutting down S2 heartbeat service: {e}")
 
 # Enable Full CORS for Next.js / Vite / React frontends
 app.add_middleware(
@@ -87,6 +102,7 @@ app.include_router(projects_router)
 app.include_router(gazette_router)
 app.include_router(mcp_router, prefix="/api/v1/mcp")
 app.include_router(mcp_router, prefix="/mcp")
+app.include_router(heartbeat_router)
 
 @app.get("/health", summary="Health Check")
 @app.get("/api/health", summary="Health Check (API Prefix)")
