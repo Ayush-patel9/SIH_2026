@@ -1830,7 +1830,14 @@ def tender_document_chat(req: TenderChatRequest):
     elif req.messages:
         conv_history = "\n".join([f"{m.role.capitalize()}: {m.content}" for m in req.messages[-5:]])
 
+    # Check for @IS mentions in query (e.g. @IS 7098, @IS 73, @IS 269, @IS 1786)
+    mentioned_standards = re.findall(r"(?:@|\b)IS\s*[:\-]?\s*(\d+[A-Za-z0-9/()\-]*)\b", last_msg, re.IGNORECASE)
+
     if llm_gateway.is_available():
+        mention_guidance = ""
+        if mentioned_standards:
+            mention_guidance = f"\nExplicit Mentioned Indian Standards in User Query: {', '.join([f'IS {s}' for s in mentioned_standards])}. Detail their mandatory specifications, QCO orders, and laboratory test methods."
+
         prompt = f"""You are the ManakAI Sovereign Tender Compliance Assistant.
 You have complete context of the user's uploaded government tender document and the Bureau of Indian Standards (BIS) knowledge graph.
 
@@ -1842,7 +1849,7 @@ Tender Document Snippet:
 Conversation History:
 {conv_history}
 
-User Question: {last_msg}
+User Question: {last_msg}{mention_guidance}
 
 INSTRUCTIONS:
 1. Provide a direct, technically authoritative response.
@@ -1866,25 +1873,60 @@ INSTRUCTIONS:
         except Exception as e:
             logger.warning(f"Tender chat Gemini failed, using fallback: {e}")
 
-    # Fallback Chat Response
-    if "cement" in last_msg.lower():
+    # Fallback Chat Response with @IS Mention Grounding
+    if any("7098" in s for s in mentioned_standards) or "7098" in last_msg or ("cable" in last_msg.lower() and "7" in last_msg):
         reply = (
+            "### Standard Intelligence: **IS 7098 (Part 1 & 2):2011** (Cross-linked Polyethylene / XLPE Insulated Cables)\n\n"
+            "Under statutory Quality Control Orders (QCO) issued by the Ministry of Heavy Industries and DPIIT, **IS 7098** is **mandatory** for LT (up to 1.1 kV) and HT (3.3 kV to 33 kV) power cables.\n\n"
+            "**Mandatory Technical & NABL Test Requirements:**\n"
+            "- **Conductor Resistance:** Conforming strictly to **IS 8130** (Class 2 stranded aluminium/copper).\n"
+            "- **Insulation:** Cross-linked polyethylene (XLPE) with maximum continuous conductor temperature of **90°C** and short-circuit rating of **250°C**.\n"
+            "- **Mandatory Tests:** Spark test per **IS 10810 (Part 44)**, Hot Set Test for XLPE insulation (max elongation 175%), and high-voltage AC water bath test.\n"
+            "- **Bidding Compliance:** Vendors must provide valid BIS CM/L license number with ISI marking on outer sheath at every 1 meter."
+        )
+    elif any("73" in s for s in mentioned_standards) or "is 73" in last_msg.lower():
+        reply = (
+            "### Standard Intelligence: **IS 73:2013** (Paving Bitumen — Fourth Revision)\n\n"
+            "**IS 73:2013** specifies Viscosity Graded (VG) paving bitumen used in highway road construction.\n\n"
+            "**Key Mandatory Acceptance Criteria:**\n"
+            "- **Viscosity Grades:** VG-10, VG-20, VG-30 (standard for NHAI/MoRTH surface courses), and VG-40.\n"
+            "- **Absolute Viscosity at 60°C:** Minimum **2400 Poises** for VG-30 per **IS 1206 (Part 2)**.\n"
+            "- **Penetration at 25°C:** 45 to 70 (0.1 mm) per **IS 1203**.\n"
+            "- **Flash Point:** Minimum **220°C** (Cleveland Open Cup) per **IS 1209**.\n"
+            "- **Statutory QCO:** Mandatory BIS ISI certification per the *Bitumen and Asphalt Products QCO*."
+        )
+    elif any("1786" in s for s in mentioned_standards) or "rebar" in last_msg.lower() or "tmt" in last_msg.lower():
+        reply = (
+            "### Standard Intelligence: **IS 1786:2008** (High Strength Deformed Steel Bars - TMT Rebars)\n\n"
+            "Under the *Steel and Steel Products (Quality Control) Order*, citing **IS 1786:2008** is legally compulsory for structural concrete reinforcement.\n\n"
+            "**Mandatory Mechanical & Chemical Thresholds (Fe 500D):**\n"
+            "- **0.2% Proof Stress:** ≥ 500.0 MPa\n"
+            "- **Tensile Strength:** ≥ 565.0 MPa (TS/YS ratio ≥ 1.10 per Clause 8.1)\n"
+            "- **Elongation at Break:** ≥ 16.0% (Mandatory for Seismic Zones III, IV, and V per IS 13920)\n"
+            "- **Total Phosphorus & Sulphur (P+S):** Maximum **0.075%**\n"
+            "- **Testing Protocols:** Tensile test per **IS 1608**, Mandrel Bend/Re-bend test per **IS 1599**."
+        )
+    elif "cement" in last_msg.lower() or any("269" in s for s in mentioned_standards):
+        reply = (
+            "### Standard Intelligence: **IS 269:2015** (Ordinary Portland Cement - 33, 43 & 53 Grade)\n\n"
             "Under **IS 269:2015 Clause 5.1** (referenced in `[Page 1, Clause 4.1.2]`), Ordinary Portland Cement 43 Grade must strictly bear the **BIS Certification Mark (ISI Mark)** pursuant to the Cement (Quality Control) Order 2024.\n\n"
             "**Mandatory Vendor Submissions:**\n"
-            "- Fineness by Blaine Air Permeability per **IS 4031 (Part 2)** (≥ 225 m²/kg)\n"
-            "- 72h, 7-day, and 28-day Compressive Strength certificates per **IS 4031 (Part 6)**\n"
-            "- Chemical composition and Magnesia limits per **IS 4032**.\n\n"
-            "Note: Citing withdrawn `IS 8112:1989` violates CVC guidelines."
+            "- **Fineness by Blaine Air Permeability:** per **IS 4031 (Part 2)** (≥ 225 m²/kg)\n"
+            "- **Compressive Strength:** 72h (≥ 23 MPa), 7-day (≥ 33 MPa), and 28-day (≥ 43.0 MPa) per **IS 4031 (Part 6)**\n"
+            "- **Soundness:** Le-Chatelier expansion ≤ 10 mm per **IS 4031 (Part 3)**\n"
+            "- **Chemical Composition:** Insoluble residue ≤ 4.0% and Magnesia ≤ 6.0% per **IS 4032**.\n\n"
+            "Note: Citing withdrawn `IS 8112:1989` violates CVC guidelines and GFR Rule 144(i)."
         )
-    elif "pipe" in last_msg.lower():
+    elif "pipe" in last_msg.lower() or any("4984" in s for s in mentioned_standards):
         reply = (
+            "### Standard Intelligence: **IS 4984:2016** (HDPE Water Supply Pipes — Amendment 3)\n\n"
             "For water supply and drainage networks (see `[Page 1, Clause 6.3.1]`), **IS 4984:2016 (Amendment 3)** mandates **PE-100 grade virgin resin**.\n\n"
-            "Bidders must upload valid BIS CM/L license details under the *Polyethylene Material for Pipes QCO 2023*. Tests must include hydrostatic pressure resistance per **IS 12235**."
+            "Bidders must upload valid BIS CM/L license details under the *Polyethylene Material for Pipes QCO 2023*. Tests must include hydrostatic pressure resistance per **IS 12235** and Melt Flow Index (MFI) per **IS 2530**."
         )
     else:
         reply = (
             f"Based on the tender specifications in `[Page 1]`, all materials must conform to active Indian Standards with valid BIS ISI/CRS Certification under mandatory Quality Control Orders.\n\n"
-            "Feel free to ask about specific clauses, required NABL lab test protocols, or QCO legal enforcement dates!"
+            "Type **@** to mention any standard (e.g. `@IS 7098`, `@IS 73`, `@IS 1786`, `@IS 269`) for instant specification lookups, NABL test methods, and QCO legal enforcement dates!"
         )
 
     chat_res = TenderChatResponse(

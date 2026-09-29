@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Sparkles, Copy, Check, Trash2, Send, Shield, BookOpen, AlertCircle } from 'lucide-react';
+import { Sparkles, Copy, Check, Trash2, Send, Shield, BookOpen, AlertCircle, AtSign } from 'lucide-react';
 import type { StandardsResponse } from '../types';
+import { StandardMentionAutocomplete } from './StandardMentionAutocomplete';
+import type { StandardMentionItem } from '../data/standardsMentionCatalog';
 
 interface MessageItem {
   id: number | string;
@@ -146,7 +148,11 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
   const [inputQuestion, setInputQuestion] = useState('');
   const [copiedHash, setCopiedHash] = useState(false);
   const [copiedMsgId, setCopiedMsgId] = useState<number | string | null>(null);
+  const [mentionOpen, setMentionOpen] = useState(false);
+  const [mentionQuery, setMentionQuery] = useState('');
+  const [mentionStartIndex, setMentionStartIndex] = useState(-1);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -161,6 +167,59 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
     if (!inputQuestion.trim() || isProcessing) return;
     onSendMessage(inputQuestion.trim());
     setInputQuestion('');
+    setMentionOpen(false);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    const cursorPos = e.target.selectionStart || val.length;
+    setInputQuestion(val);
+
+    const textBeforeCursor = val.slice(0, cursorPos);
+    const lastAtIndex = textBeforeCursor.lastIndexOf('@');
+
+    if (lastAtIndex !== -1) {
+      const queryPart = textBeforeCursor.slice(lastAtIndex + 1);
+      const charBeforeAt = lastAtIndex > 0 ? textBeforeCursor[lastAtIndex - 1] : ' ';
+      if (charBeforeAt === ' ' || charBeforeAt === '\n' || lastAtIndex === 0) {
+        if (queryPart.length <= 30 && !queryPart.includes('\n')) {
+          setMentionOpen(true);
+          setMentionQuery(queryPart);
+          setMentionStartIndex(lastAtIndex);
+          return;
+        }
+      }
+    }
+
+    setMentionOpen(false);
+  };
+
+  const handleSelectMention = (item: StandardMentionItem) => {
+    const cleanIs = item.is_number.split(':')[0].trim();
+    const tag = `@${cleanIs} `;
+
+    let newText = '';
+    let newCursor = 0;
+
+    if (mentionStartIndex !== -1) {
+      const beforeAt = inputQuestion.slice(0, mentionStartIndex);
+      const afterMention = inputQuestion.slice(mentionStartIndex + mentionQuery.length + 1);
+      newText = `${beforeAt}${tag}${afterMention}`;
+      newCursor = (beforeAt + tag).length;
+    } else {
+      newText = inputQuestion ? `${inputQuestion} ${tag}` : tag;
+      newCursor = newText.length;
+    }
+
+    setInputQuestion(newText);
+    setMentionOpen(false);
+
+    setTimeout(() => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+        inputRef.current.setSelectionRange(newCursor, newCursor);
+      }
+    }, 40);
   };
 
   const handleCopyHash = () => {
@@ -524,8 +583,16 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
           <div ref={messagesEndRef} />
         </div>
 
-        {/* Quick Prompts & Input Box */}
-        <div style={{ padding: '12px 16px', borderTop: '1px solid #E2E8F0', background: '#F8FAFC' }}>
+        {/* Quick Prompts & Input Box with WhatsApp-Style @ Mention Popover */}
+        <div style={{ padding: '12px 16px', borderTop: '1px solid #E2E8F0', background: '#F8FAFC', position: 'relative' }}>
+          {/* Floating @ Mention Autocomplete Popover */}
+          <StandardMentionAutocomplete
+            isOpen={mentionOpen}
+            query={mentionQuery}
+            onSelect={handleSelectMention}
+            onClose={() => setMentionOpen(false)}
+          />
+
           <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap', marginBottom: '8px' }}>
             {dynamicQuickPrompts.map((q, i) => (
               <button
@@ -561,12 +628,50 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
             ))}
           </div>
 
-          <form onSubmit={handleSend} style={{ display: 'flex', gap: '8px' }}>
+          <form onSubmit={handleSend} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            {/* Quick @ Mention Trigger Button */}
+            <button
+              type="button"
+              onClick={() => {
+                if (!mentionOpen) {
+                  const newText = inputQuestion.endsWith(' ') || !inputQuestion ? `${inputQuestion}@` : `${inputQuestion} @`;
+                  setInputQuestion(newText);
+                  setMentionStartIndex(newText.lastIndexOf('@'));
+                  setMentionQuery('');
+                  setMentionOpen(true);
+                  setTimeout(() => inputRef.current?.focus(), 40);
+                } else {
+                  setMentionOpen(false);
+                }
+              }}
+              style={{
+                backgroundColor: mentionOpen ? '#1E3A8A' : '#FFFFFF',
+                color: mentionOpen ? '#FFFFFF' : '#1E3A8A',
+                border: mentionOpen ? '1px solid #1E3A8A' : '1px solid #CBD5E1',
+                borderRadius: '6px',
+                height: '38px',
+                padding: '0 10px',
+                fontWeight: 700,
+                fontSize: '13px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '3px',
+                transition: 'all 0.15s ease',
+                flexShrink: 0,
+              }}
+              title="Mention Indian Standard (@IS)"
+            >
+              <span>@</span>
+              <span style={{ fontSize: '11px', fontWeight: 600 }}>IS</span>
+            </button>
+
             <input
+              ref={inputRef}
               type="text"
               value={inputQuestion}
-              onChange={(e) => setInputQuestion(e.target.value)}
-              placeholder={isNumber ? `Ask anything about ${isNumber}, QCO rules, testing...` : 'Ask a question about Indian Standards & QCO rules...'}
+              onChange={handleInputChange}
+              placeholder={isNumber ? `Ask anything about ${isNumber} or type @ for IS codes...` : 'Ask a question or type @ to mention IS standards (e.g. @IS 7)...'}
               style={{
                 flex: 1,
                 height: '38px',

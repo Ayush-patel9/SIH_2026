@@ -68,8 +68,8 @@ class AuthorityAssistantService:
         """
         Resolves the target Indian Standard using query regex, active context, or keyword search.
         """
-        # 1. Regex check for explicit standard in query (e.g. 'IS 201', 'IS:2062', 'IS-456')
-        m = re.search(r"\bIS\s*[:\-]?\s*(\d+)\b", query, re.IGNORECASE)
+        # 1. Regex check for explicit standard or @IS mention in query (e.g. '@IS 7098', 'IS 201', 'IS:2062', 'IS-456')
+        m = re.search(r"(?:@|\b)IS\s*[:\-]?\s*(\d+)\b", query, re.IGNORECASE)
         if m:
             is_num_query = f"IS {m.group(1)}".upper()
             found = self.standards_by_num.get(is_num_query) or self.standards_by_num.get(is_num_query.replace(" ", ""))
