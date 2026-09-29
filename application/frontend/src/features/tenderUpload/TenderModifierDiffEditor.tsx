@@ -9,6 +9,10 @@ import {
   FileCheck,
   AlertTriangle,
   RefreshCw,
+  Edit3,
+  X,
+  FileText,
+  Check,
 } from 'lucide-react';
 import type { TenderClauseAnnotation } from './TenderClauseHighlighter';
 import { uploadTenderText } from '../../api/standardsClient';
@@ -170,25 +174,28 @@ export const TenderModifierDiffEditor: React.FC<TenderModifierDiffEditorProps> =
                 type="button"
                 className={`mode-toggle-btn ${viewMode === 'redline' ? 'active' : ''}`}
                 onClick={() => setViewMode('redline')}
-                style={{ fontSize: '11px', padding: '4px 8px' }}
+                style={{ fontSize: '11px', padding: '4px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
               >
-                🔴 Redline Diff
+                <span style={{ width: '7px', height: '7px', borderRadius: '50%', backgroundColor: 'var(--error-red)' }} />
+                <span>Redline Diff</span>
               </button>
               <button
                 type="button"
                 className={`mode-toggle-btn ${viewMode === 'side_by_side' ? 'active' : ''}`}
                 onClick={() => setViewMode('side_by_side')}
-                style={{ fontSize: '11px', padding: '4px 8px' }}
+                style={{ fontSize: '11px', padding: '4px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
               >
-                📑 Side-by-Side
+                <FileText size={12} />
+                <span>Side-by-Side</span>
               </button>
               <button
                 type="button"
                 className={`mode-toggle-btn ${viewMode === 'raw_editor' ? 'active' : ''}`}
                 onClick={() => setViewMode('raw_editor')}
-                style={{ fontSize: '11px', padding: '4px 8px' }}
+                style={{ fontSize: '11px', padding: '4px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
               >
-                📝 Raw Output
+                <Edit3 size={12} />
+                <span>Raw Output</span>
               </button>
             </div>
 
@@ -208,9 +215,10 @@ export const TenderModifierDiffEditor: React.FC<TenderModifierDiffEditorProps> =
               className="btn-run"
               onClick={handleFixAll}
               disabled={outdatedCount === 0 && amendCount === 0}
-              style={{ fontSize: '12px', padding: '6px 14px' }}
+              style={{ fontSize: '12px', padding: '6px 14px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
             >
-              ⚡ 1-Click Modernize All ({outdatedCount + amendCount} items)
+              <Sparkles size={13} />
+              <span>1-Click Modernize All ({outdatedCount + amendCount} items)</span>
             </button>
           </div>
         </div>
@@ -221,8 +229,18 @@ export const TenderModifierDiffEditor: React.FC<TenderModifierDiffEditorProps> =
             <span style={{ fontFamily: 'var(--font-data)', fontSize: '12px', color: 'var(--ink)' }}>
               Modernization Progress: <strong>{fixedCount} of {clauses.length} clauses modernized</strong>
             </span>
-            <span style={{ fontSize: '11px', color: outdatedCount > 0 ? '#dc2626' : '#16a34a', fontFamily: 'var(--font-data)', fontWeight: 600 }}>
-              {outdatedCount > 0 ? `⚠ ${outdatedCount} outdated standards remaining` : '✓ 100% Outdated Standards Discarded'}
+            <span style={{ fontSize: '11px', color: outdatedCount > 0 ? 'var(--error-red)' : 'var(--emerald-text)', fontFamily: 'var(--font-data)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+              {outdatedCount > 0 ? (
+                <>
+                  <AlertTriangle size={12} />
+                  <span>{outdatedCount} outdated standards remaining</span>
+                </>
+              ) : (
+                <>
+                  <CheckCircle2 size={12} />
+                  <span>100% Outdated Standards Discarded</span>
+                </>
+              )}
             </span>
           </div>
 
@@ -322,18 +340,20 @@ export const TenderModifierDiffEditor: React.FC<TenderModifierDiffEditorProps> =
                       type="button"
                       className="btn-secondary"
                       onClick={() => handleStartEdit(clause)}
-                      style={{ fontSize: '11px', padding: '2px 8px' }}
+                      style={{ fontSize: '11px', padding: '2px 8px', display: 'inline-flex', alignItems: 'center', gap: '3px' }}
                     >
-                      ✏️ Edit Wording
+                      <Edit3 size={11} />
+                      <span>Edit Wording</span>
                     </button>
                     {!clause.fixed && (isOutdated || isAmend) && (
                       <button
                         type="button"
                         className="btn-run"
                         onClick={() => handleFixSingleClause(clause.id)}
-                        style={{ fontSize: '11px', padding: '2px 10px' }}
+                        style={{ fontSize: '11px', padding: '2px 10px', display: 'inline-flex', alignItems: 'center', gap: '3px' }}
                       >
-                        ⚡ Modernize Clause
+                        <Sparkles size={11} />
+                        <span>Modernize Clause</span>
                       </button>
                     )}
                   </div>
@@ -375,27 +395,35 @@ export const TenderModifierDiffEditor: React.FC<TenderModifierDiffEditorProps> =
                         <div
                           style={{
                             background: 'rgba(239, 68, 68, 0.08)',
-                            color: '#991b1b',
+                            color: 'var(--error-red)',
                             padding: '6px 10px',
                             borderRadius: '3px',
                             marginBottom: '6px',
                             textDecoration: 'line-through',
                             fontSize: '12.5px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '5px',
                           }}
                         >
-                          ❌ Discarded: {clause.rawText}
+                          <X size={13} />
+                          <span>Discarded: {clause.rawText}</span>
                         </div>
                         <div
                           style={{
-                            background: 'rgba(34, 197, 94, 0.08)',
-                            color: '#14532d',
+                            background: 'var(--emerald-bg)',
+                            color: 'var(--emerald-text)',
                             padding: '8px 12px',
                             borderRadius: '3px',
-                            borderLeft: '3px solid #16a34a',
-                            fontWeight: 500,
+                            borderLeft: '3px solid var(--emerald-pass)',
+                            fontWeight: 600,
+                            display: 'flex',
+                            alignItems: 'flex-start',
+                            gap: '5px',
                           }}
                         >
-                          ✅ Modernized Specification: {clause.suggestedClauseText || clause.rawText}
+                          <CheckCircle2 size={14} style={{ marginTop: '2px', flexShrink: 0 }} />
+                          <span>Modernized Specification: {clause.suggestedClauseText || clause.rawText}</span>
                         </div>
                       </div>
                     ) : (
@@ -413,8 +441,9 @@ export const TenderModifierDiffEditor: React.FC<TenderModifierDiffEditorProps> =
                       >
                         {clause.rawText}
                         {isOutdated && (
-                          <div style={{ marginTop: '6px', fontSize: '11.5px', color: '#b91c1c', fontWeight: 600, fontFamily: 'var(--font-data)' }}>
-                            ⚠ Outdated citation: {clause.detectedStandard} → Click "Modernize Clause" to update to {clause.replacement || 'active standard'}.
+                          <div style={{ marginTop: '6px', fontSize: '11.5px', color: 'var(--error-red)', fontWeight: 700, fontFamily: 'var(--font-data)', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                            <AlertTriangle size={12} />
+                            <span>Outdated citation: {clause.detectedStandard} → Click "Modernize Clause" to update to {clause.replacement || 'active standard'}.</span>
                           </div>
                         )}
                       </div>

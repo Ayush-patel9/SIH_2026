@@ -18,7 +18,8 @@ import {
   RefreshCw,
   Check,
   Search,
-  BookOpen
+  BookOpen,
+  Scale,
 } from 'lucide-react';
 
 interface Stage2ProductSelectionViewProps {
@@ -557,13 +558,15 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                                 {cand.title}
                               </span>
                               {isSelected && (
-                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: 'var(--emerald-bg)', color: 'var(--emerald-pass)', fontSize: '10.5px', fontWeight: 700, border: '1px solid var(--emerald-border)' }}>
-                                  ✓ CURRENT RECOMMENDATION
+                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: 'var(--emerald-bg)', color: 'var(--emerald-pass)', fontSize: '10.5px', fontWeight: 700, border: '1px solid var(--emerald-border)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                                  <Check size={11} />
+                                  <span>CURRENT RECOMMENDATION</span>
                                 </span>
                               )}
                               {cand.qco_mandatory && (
-                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: 'var(--amber-bg)', color: 'var(--amber-warn)', fontSize: '10.5px', fontWeight: 700, border: '1px solid var(--amber-border)' }}>
-                                  ⚖️ Mandatory QCO
+                                <span style={{ padding: '2px 8px', borderRadius: '12px', backgroundColor: 'var(--amber-bg)', color: 'var(--amber-warn)', fontSize: '10.5px', fontWeight: 700, border: '1px solid var(--amber-border)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                                  <Scale size={11} />
+                                  <span>Mandatory QCO</span>
                                 </span>
                               )}
                               {cand.status === 'SUPERSEDED_REPLACEMENT' && (

@@ -500,12 +500,12 @@ export const KnowledgeGraph3DView: React.FC = () => {
               Search by Product:
             </span>
             {[
-              { label: '🏛️ Cement', query: 'Cement' },
-              { label: '🏗️ TMT Rebars', query: 'TMT Steel Rebars' },
-              { label: '💧 HDPE Pipes', query: 'HDPE Water Pipes' },
-              { label: '🧯 Fire Extinguishers', query: 'Fire Extinguisher' },
-              { label: '⚡ Power Cables', query: 'Power Cables' },
-              { label: '📹 CCTV Cameras', query: 'CCTV Security Cameras' },
+              { label: 'Cement', query: 'Cement' },
+              { label: 'TMT Rebars', query: 'TMT Steel Rebars' },
+              { label: 'HDPE Pipes', query: 'HDPE Water Pipes' },
+              { label: 'Fire Extinguishers', query: 'Fire Extinguisher' },
+              { label: 'Power Cables', query: 'Power Cables' },
+              { label: 'CCTV Cameras', query: 'CCTV Security Cameras' },
             ].map((p) => (
               <button
                 key={p.query}
@@ -566,7 +566,9 @@ export const KnowledgeGraph3DView: React.FC = () => {
           }}
           className="spotlight-search-box"
         >
-          <span className="spotlight-search-icon">🔍</span>
+          <span className="spotlight-search-icon" style={{ display: 'flex', alignItems: 'center' }}>
+            <Search size={16} />
+          </span>
           <input
             type="text"
             placeholder="Search any product (e.g. Cement, Fire Extinguisher, TMT Steel Rebars) or Indian Standard code (e.g. IS 15683, IS 269)..."
@@ -715,8 +717,9 @@ export const KnowledgeGraph3DView: React.FC = () => {
                 <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#EF4444' }} /> Superseded
               </span>
             </div>
-            <div style={{ fontFamily: 'var(--font-data)', fontSize: '10.5px', color: 'var(--collapse-cobalt, #2563EB)', fontWeight: 600 }}>
-              💡 DOUBLE-CLICK ANY NODE OR SEARCH TO EXPAND FROM 22,011 STANDARDS
+            <div style={{ fontFamily: 'var(--font-data)', fontSize: '10.5px', color: 'var(--collapse-cobalt, #2563EB)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+              <Sparkles size={12} />
+              <span>DOUBLE-CLICK ANY NODE OR SEARCH TO EXPAND FROM 22,011 STANDARDS</span>
             </div>
           </div>
         </div>

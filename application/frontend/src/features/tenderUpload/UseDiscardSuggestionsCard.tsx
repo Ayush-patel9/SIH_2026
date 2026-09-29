@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertTriangle, CheckCircle2, ArrowRight, ShieldAlert, Sparkles, FileText, ChevronRight } from 'lucide-react';
+import { AlertTriangle, CheckCircle2, ArrowRight, ShieldAlert, Sparkles, FileText, ChevronRight, X, Scale, Link2, Zap } from 'lucide-react';
 import type { TenderClauseAnnotation } from './TenderClauseHighlighter';
 
 interface UseDiscardSuggestionsCardProps {
@@ -37,7 +37,7 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
       <div
         className="workbench-card"
         style={{
-          background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(34, 197, 94, 0.05) 100%)',
+          background: 'var(--surface-secondary)',
           border: '1px solid var(--hairline)',
           borderLeft: '4px solid var(--collapse-cobalt)',
         }}
@@ -48,7 +48,7 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
               <span className="concept-status-badge active">RAG STANDARDS RETRIEVAL & AUDIT</span>
               <span className="section-label" style={{ margin: 0 }}>SPECIFICATION MODERNIZATION</span>
             </div>
-            <h3 style={{ fontFamily: 'var(--font-data)', fontSize: '18px', fontWeight: 700, margin: 0, color: 'var(--ink)' }}>
+            <h3 style={{ fontFamily: 'var(--font-data)', fontSize: '18px', fontWeight: 800, margin: 0, color: 'var(--ink)' }}>
               "Use These vs Discard These" Standards Intelligence
             </h3>
             <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', margin: '4px 0 0 0' }}>
@@ -62,15 +62,15 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
               style={{
                 padding: '8px 14px',
                 borderRadius: 'var(--radius-sm)',
-                background: 'rgba(239, 68, 68, 0.1)',
-                border: '1px solid rgba(239, 68, 68, 0.3)',
+                background: 'var(--error-bg)',
+                border: '1px solid var(--error-border)',
                 textAlign: 'center',
               }}
             >
-              <div style={{ fontFamily: 'var(--font-data)', fontSize: '18px', fontWeight: 800, color: '#dc2626' }}>
+              <div style={{ fontFamily: 'var(--font-data)', fontSize: '18px', fontWeight: 800, color: 'var(--error-red)' }}>
                 {outdatedClauses.length}
               </div>
-              <div style={{ fontFamily: 'var(--font-data)', fontSize: '10px', color: '#991b1b', fontWeight: 600 }}>
+              <div style={{ fontFamily: 'var(--font-data)', fontSize: '10px', color: 'var(--error-red)', fontWeight: 700 }}>
                 DISCARD (WITHDRAWN)
               </div>
             </div>
@@ -79,15 +79,15 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
               style={{
                 padding: '8px 14px',
                 borderRadius: 'var(--radius-sm)',
-                background: 'rgba(234, 179, 8, 0.12)',
-                border: '1px solid rgba(234, 179, 8, 0.3)',
+                background: 'var(--amber-bg)',
+                border: '1px solid var(--amber-border)',
                 textAlign: 'center',
               }}
             >
-              <div style={{ fontFamily: 'var(--font-data)', fontSize: '18px', fontWeight: 800, color: '#ca8a04' }}>
+              <div style={{ fontFamily: 'var(--font-data)', fontSize: '18px', fontWeight: 800, color: 'var(--amber-warn)' }}>
                 {amendmentClauses.length + missingAlliedClauses.length}
               </div>
-              <div style={{ fontFamily: 'var(--font-data)', fontSize: '10px', color: '#854d0e', fontWeight: 600 }}>
+              <div style={{ fontFamily: 'var(--font-data)', fontSize: '10px', color: 'var(--amber-warn)', fontWeight: 700 }}>
                 AMEND / ADD ALLIED
               </div>
             </div>
@@ -96,15 +96,15 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
               style={{
                 padding: '8px 14px',
                 borderRadius: 'var(--radius-sm)',
-                background: 'rgba(34, 197, 94, 0.1)',
-                border: '1px solid rgba(34, 197, 94, 0.3)',
+                background: 'var(--emerald-bg)',
+                border: '1px solid var(--emerald-border)',
                 textAlign: 'center',
               }}
             >
-              <div style={{ fontFamily: 'var(--font-data)', fontSize: '18px', fontWeight: 800, color: '#16a34a' }}>
+              <div style={{ fontFamily: 'var(--font-data)', fontSize: '18px', fontWeight: 800, color: 'var(--emerald-pass)' }}>
                 {activeClauses.length}
               </div>
-              <div style={{ fontFamily: 'var(--font-data)', fontSize: '10px', color: '#15803d', fontWeight: 600 }}>
+              <div style={{ fontFamily: 'var(--font-data)', fontSize: '10px', color: 'var(--emerald-pass)', fontWeight: 700 }}>
                 VERIFIED ACTIVE
               </div>
             </div>
@@ -117,25 +117,28 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
             type="button"
             className={`mode-toggle-btn ${filter === 'ACTION_NEEDED' ? 'active' : ''}`}
             onClick={() => setFilter('ACTION_NEEDED')}
-            style={{ fontSize: '11px', padding: '4px 10px' }}
+            style={{ fontSize: '11px', padding: '4px 10px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
           >
-            ⚠ Action Needed ({outdatedClauses.length + amendmentClauses.length + missingAlliedClauses.length})
+            <AlertTriangle size={12} />
+            <span>Action Needed ({outdatedClauses.length + amendmentClauses.length + missingAlliedClauses.length})</span>
           </button>
           <button
             type="button"
             className={`mode-toggle-btn ${filter === 'WITHDRAWN' ? 'active' : ''}`}
             onClick={() => setFilter('WITHDRAWN')}
-            style={{ fontSize: '11px', padding: '4px 10px' }}
+            style={{ fontSize: '11px', padding: '4px 10px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
           >
-            🔴 Discard These ({outdatedClauses.length})
+            <X size={12} color="var(--error-red)" />
+            <span>Discard These ({outdatedClauses.length})</span>
           </button>
           <button
             type="button"
             className={`mode-toggle-btn ${filter === 'AMENDMENT' ? 'active' : ''}`}
             onClick={() => setFilter('AMENDMENT')}
-            style={{ fontSize: '11px', padding: '4px 10px' }}
+            style={{ fontSize: '11px', padding: '4px 10px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
           >
-            🟡 Amendments & Allied ({amendmentClauses.length + missingAlliedClauses.length})
+            <ShieldAlert size={12} color="var(--amber-warn)" />
+            <span>Amendments & Allied ({amendmentClauses.length + missingAlliedClauses.length})</span>
           </button>
           <button
             type="button"
@@ -165,9 +168,9 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
               className="workbench-card"
               style={{
                 borderLeft: `5px solid ${
-                  isWithdrawn ? '#dc2626' : isAmendment ? '#ca8a04' : isAllied ? '#2563eb' : '#16a34a'
+                  isWithdrawn ? 'var(--error-red)' : isAmendment ? 'var(--amber-warn)' : isAllied ? 'var(--collapse-cobalt)' : 'var(--emerald-pass)'
                 }`,
-                background: clause.fixed ? 'rgba(34, 197, 94, 0.03)' : 'var(--paper)',
+                background: clause.fixed ? 'var(--emerald-bg)' : 'var(--surface)',
                 transition: 'all 0.2s ease',
               }}
             >
@@ -175,7 +178,7 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '8px', marginBottom: '12px' }}>
                 <div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span style={{ fontFamily: 'var(--font-data)', fontWeight: 700, fontSize: '14px', color: 'var(--ink)' }}>
+                    <span style={{ fontFamily: 'var(--font-data)', fontWeight: 800, fontSize: '14px', color: 'var(--ink)' }}>
                       {clause.clauseNumber}: {clause.clauseTitle}
                     </span>
                     {clause.pageNumber && (
@@ -190,6 +193,7 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
                           display: 'inline-flex',
                           alignItems: 'center',
                           gap: '2px',
+                          fontWeight: 700,
                         }}
                       >
                         <FileText size={11} /> Page {clause.pageNumber}
@@ -207,50 +211,71 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
                       style={{
                         fontSize: '11px',
                         fontFamily: 'var(--font-data)',
-                        fontWeight: 700,
+                        fontWeight: 800,
                         padding: '3px 8px',
                         borderRadius: '4px',
-                        background: 'rgba(34, 197, 94, 0.15)',
-                        color: '#15803d',
-                        border: '1px solid #16a34a',
+                        background: 'var(--emerald-bg)',
+                        color: 'var(--emerald-pass)',
+                        border: '1px solid var(--emerald-border)',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px',
                       }}
                     >
-                      ✓ MODIFIED & FIXED
+                      <CheckCircle2 size={12} />
+                      <span>MODIFIED & FIXED</span>
                     </span>
                   ) : (
                     <span
                       style={{
                         fontSize: '11px',
                         fontFamily: 'var(--font-data)',
-                        fontWeight: 700,
+                        fontWeight: 800,
                         padding: '3px 8px',
                         borderRadius: '4px',
                         background: isWithdrawn
-                          ? 'rgba(239, 68, 68, 0.12)'
+                          ? 'var(--error-bg)'
                           : isAmendment
-                          ? 'rgba(234, 179, 8, 0.15)'
+                          ? 'var(--amber-bg)'
                           : isAllied
                           ? 'rgba(59, 130, 246, 0.12)'
-                          : 'rgba(34, 197, 94, 0.12)',
+                          : 'var(--emerald-bg)',
                         color: isWithdrawn
-                          ? '#b91c1c'
+                          ? 'var(--error-red)'
                           : isAmendment
-                          ? '#854d0e'
+                          ? 'var(--amber-warn)'
                           : isAllied
-                          ? '#1d4ed8'
-                          : '#15803d',
+                          ? 'var(--collapse-cobalt)'
+                          : 'var(--emerald-pass)',
                         border: `1px solid ${
-                          isWithdrawn ? '#dc2626' : isAmendment ? '#ca8a04' : isAllied ? '#2563eb' : '#16a34a'
+                          isWithdrawn ? 'var(--error-border)' : isAmendment ? 'var(--amber-border)' : isAllied ? 'rgba(59, 130, 246, 0.3)' : 'var(--emerald-border)'
                         }`,
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px',
                       }}
                     >
-                      {isWithdrawn
-                        ? '🔴 WITHDRAWN / OUTDATED'
-                        : isAmendment
-                        ? '🟡 AMENDMENT NEEDED'
-                        : isAllied
-                        ? '🔵 MISSING ALLIED SPEC'
-                        : '🟢 ACTIVE & COMPLIANT'}
+                      {isWithdrawn ? (
+                        <>
+                          <X size={12} />
+                          <span>WITHDRAWN / OUTDATED</span>
+                        </>
+                      ) : isAmendment ? (
+                        <>
+                          <AlertTriangle size={12} />
+                          <span>AMENDMENT NEEDED</span>
+                        </>
+                      ) : isAllied ? (
+                        <>
+                          <ShieldAlert size={12} />
+                          <span>MISSING ALLIED SPEC</span>
+                        </>
+                      ) : (
+                        <>
+                          <CheckCircle2 size={12} />
+                          <span>ACTIVE & COMPLIANT</span>
+                        </>
+                      )}
                     </span>
                   )}
                 </div>
@@ -269,24 +294,24 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
                   {/* Left Column: DISCARD THESE */}
                   <div
                     style={{
-                      background: 'rgba(239, 68, 68, 0.04)',
-                      border: '1px solid rgba(239, 68, 68, 0.25)',
+                      background: 'var(--error-bg)',
+                      border: '1px solid var(--error-border)',
                       borderRadius: 'var(--radius-sm)',
                       padding: '12px',
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
-                      <span style={{ fontSize: '13px' }}>❌</span>
-                      <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', fontWeight: 800, color: '#b91c1c', letterSpacing: '0.05em' }}>
+                      <X size={14} color="var(--error-red)" />
+                      <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', fontWeight: 800, color: 'var(--error-red)', letterSpacing: '0.05em' }}>
                         DISCARD THESE (OUTDATED / INVALID)
                       </span>
                     </div>
 
-                    <div style={{ fontFamily: 'var(--font-data)', fontSize: '13px', fontWeight: 700, color: '#991b1b', marginBottom: '4px' }}>
+                    <div style={{ fontFamily: 'var(--font-data)', fontSize: '14px', fontWeight: 800, color: 'var(--error-red)', marginBottom: '4px' }}>
                       {discardTitle}
                     </div>
 
-                    <p style={{ fontFamily: 'var(--font-prose)', fontSize: '12px', color: '#7f1d1d', margin: 0, lineHeight: 1.45 }}>
+                    <p style={{ fontFamily: 'var(--font-prose)', fontSize: '12px', color: 'var(--ink-secondary)', margin: 0, lineHeight: 1.45 }}>
                       {clause.whyDiscard ||
                         'Standard has been officially superseded or withdrawn by BIS. Continuing to cite legacy revisions in public NIT tenders introduces statutory audit vulnerability.'}
                     </p>
@@ -295,24 +320,24 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
                   {/* Right Column: USE THESE */}
                   <div
                     style={{
-                      background: 'rgba(34, 197, 94, 0.05)',
-                      border: '1px solid rgba(34, 197, 94, 0.3)',
+                      background: 'var(--emerald-bg)',
+                      border: '1px solid var(--emerald-border)',
                       borderRadius: 'var(--radius-sm)',
                       padding: '12px',
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
-                      <CheckCircle2 size={14} color="#16a34a" />
-                      <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', fontWeight: 800, color: '#15803d', letterSpacing: '0.05em' }}>
+                      <CheckCircle2 size={14} color="var(--emerald-pass)" />
+                      <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', fontWeight: 800, color: 'var(--emerald-pass)', letterSpacing: '0.05em' }}>
                         USE THESE (ACTIVE / COMPLIANT)
                       </span>
                     </div>
 
-                    <div style={{ fontFamily: 'var(--font-data)', fontSize: '13px', fontWeight: 700, color: '#14532d', marginBottom: '4px' }}>
+                    <div style={{ fontFamily: 'var(--font-data)', fontSize: '14px', fontWeight: 800, color: 'var(--emerald-text, var(--ink))', marginBottom: '4px' }}>
                       {useTitle}
                     </div>
 
-                    <p style={{ fontFamily: 'var(--font-prose)', fontSize: '12px', color: '#166534', margin: 0, lineHeight: 1.45 }}>
+                    <p style={{ fontFamily: 'var(--font-prose)', fontSize: '12px', color: 'var(--ink)', margin: 0, lineHeight: 1.45 }}>
                       {clause.suggestedClauseText ||
                         'Adopt the latest unified Indian Standard specification with compulsory BIS Certification and current test amendments.'}
                     </p>
@@ -327,13 +352,15 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
                           fontSize: '10.5px',
                           fontFamily: 'var(--font-data)',
                           fontWeight: 700,
-                          color: '#854d0e',
-                          background: 'rgba(234, 179, 8, 0.15)',
+                          color: 'var(--amber-warn)',
+                          background: 'var(--amber-bg)',
+                          border: '1px solid var(--amber-border)',
                           padding: '2px 6px',
                           borderRadius: '3px',
                         }}
                       >
-                        ⚖️ QCO Mandate: {clause.qcoMandate}
+                        <Scale size={11} />
+                        <span>QCO Mandate: {clause.qcoMandate}</span>
                       </div>
                     )}
                   </div>
@@ -344,7 +371,7 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
               {clause.cvcRiskNote && (
                 <div
                   style={{
-                    background: 'var(--surface)',
+                    background: 'var(--surface-secondary)',
                     border: '1px solid var(--hairline)',
                     borderRadius: 'var(--radius-sm)',
                     padding: '8px 12px',
@@ -354,7 +381,7 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
                     gap: '8px',
                   }}
                 >
-                  <ShieldAlert size={14} color={isWithdrawn ? '#dc2626' : '#2563eb'} style={{ marginTop: '2px', flexShrink: 0 }} />
+                  <ShieldAlert size={14} color={isWithdrawn ? 'var(--error-red)' : 'var(--collapse-cobalt)'} style={{ marginTop: '2px', flexShrink: 0 }} />
                   <div style={{ fontFamily: 'var(--font-prose)', fontSize: '12px', color: 'var(--ink-secondary)', lineHeight: 1.4 }}>
                     <strong style={{ color: 'var(--ink)' }}>CVC & Statutory Audit Mandate: </strong>
                     {clause.cvcRiskNote}
@@ -365,7 +392,7 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
               {/* Allied Standards Tags */}
               {clause.alliedStandards && clause.alliedStandards.length > 0 && (
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)' }}>
+                  <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 600 }}>
                     Mandatory Allied Test Standards:
                   </span>
                   {clause.alliedStandards.map((std, i) => (
@@ -376,12 +403,17 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
                         fontSize: '10.5px',
                         padding: '2px 6px',
                         borderRadius: '3px',
-                        background: 'var(--surface)',
+                        background: 'var(--surface-secondary)',
                         border: '1px solid var(--hairline)',
                         color: 'var(--ink)',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        fontWeight: 700,
                       }}
                     >
-                      🔗 {std}
+                      <Link2 size={11} color="var(--ink-muted)" />
+                      <span>{std}</span>
                     </span>
                   ))}
                 </div>
@@ -393,9 +425,10 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
                   type="button"
                   className="btn-secondary"
                   onClick={() => onSelectClause(clause)}
-                  style={{ fontSize: '11px', padding: '4px 10px' }}
+                  style={{ fontSize: '11px', padding: '4px 10px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
                 >
-                  Inspect in PDF Viewer →
+                  <span>Inspect in PDF Viewer</span>
+                  <ArrowRight size={12} />
                 </button>
 
                 {onOpenWorkbench && (
@@ -403,9 +436,10 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
                     type="button"
                     className="btn-secondary"
                     onClick={() => onOpenWorkbench(clause.detectedStandard)}
-                    style={{ fontSize: '11px', padding: '4px 10px' }}
+                    style={{ fontSize: '11px', padding: '4px 10px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
                   >
-                    Graph Workbench ➔
+                    <span>Graph Workbench</span>
+                    <ArrowRight size={12} />
                   </button>
                 )}
 
@@ -415,9 +449,19 @@ export const UseDiscardSuggestionsCard: React.FC<UseDiscardSuggestionsCardProps>
                     className="btn-run"
                     onClick={() => onApplyFix(clause.id)}
                     disabled={clause.fixed}
-                    style={{ fontSize: '11px', padding: '4px 12px' }}
+                    style={{ fontSize: '11px', padding: '4px 12px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
                   >
-                    {clause.fixed ? '✓ Suggestion Applied' : '⚡ Discard & Use Modern Standard'}
+                    {clause.fixed ? (
+                      <>
+                        <CheckCircle2 size={12} />
+                        <span>Suggestion Applied</span>
+                      </>
+                    ) : (
+                      <>
+                        <Zap size={12} />
+                        <span>Discard & Use Modern Standard</span>
+                      </>
+                    )}
                   </button>
                 )}
               </div>

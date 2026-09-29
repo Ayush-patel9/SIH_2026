@@ -3,7 +3,7 @@ import {
   searchStandardsForMention,
   type StandardMentionItem,
 } from '../data/standardsMentionCatalog';
-import { Sparkles, ShieldCheck, CheckCircle2, X, BookOpen, Layers } from 'lucide-react';
+import { Sparkles, ShieldCheck, CheckCircle2, X, BookOpen, Layers, Search, Scale } from 'lucide-react';
 
 interface StandardMentionAutocompleteProps {
   isOpen: boolean;
@@ -14,13 +14,13 @@ interface StandardMentionAutocompleteProps {
 
 const CATEGORIES = [
   { id: 'ALL', label: 'All Domains' },
-  { id: 'Civil', label: '🏛️ Civil & Cement' },
-  { id: 'Steel', label: '🏗️ Steel & Rebar' },
-  { id: 'Electrical', label: '⚡ Electrical & Cables' },
-  { id: 'Water/Pipes', label: '💧 Water & Pipes' },
-  { id: 'Fire Safety', label: '🧯 Fire Safety' },
-  { id: 'Chemicals', label: '🧪 Chemicals' },
-  { id: 'Electronics', label: '💻 Electronics/IT' },
+  { id: 'Civil', label: 'Civil & Cement' },
+  { id: 'Steel', label: 'Steel & Rebar' },
+  { id: 'Electrical', label: 'Electrical & Cables' },
+  { id: 'Water/Pipes', label: 'Water & Pipes' },
+  { id: 'Fire Safety', label: 'Fire Safety' },
+  { id: 'Chemicals', label: 'Chemicals' },
+  { id: 'Electronics', label: 'Electronics/IT' },
 ];
 
 export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompleteProps> = ({
@@ -87,10 +87,10 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
         left: 0,
         right: 0,
         maxHeight: '340px',
-        backgroundColor: '#FFFFFF',
-        border: '1px solid #DCD6C8',
+        backgroundColor: 'var(--surface)',
+        border: '1px solid var(--hairline)',
         borderRadius: '12px',
-        boxShadow: '0 -8px 26px rgba(0, 0, 0, 0.14), 0 2px 6px rgba(0,0,0,0.06)',
+        boxShadow: 'var(--shadow-modal)',
         display: 'flex',
         flexDirection: 'column',
         zIndex: 1000,
@@ -102,8 +102,8 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
       <div
         style={{
           padding: '10px 14px',
-          backgroundColor: '#F7F5F0',
-          borderBottom: '1px solid #E5E0D4',
+          backgroundColor: 'var(--surface-secondary)',
+          borderBottom: '1px solid var(--hairline)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -115,18 +115,18 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
               width: '20px',
               height: '20px',
               borderRadius: '50%',
-              backgroundColor: '#36452F',
+              backgroundColor: 'var(--olive-primary)',
               color: '#FFFFFF',
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
               fontSize: '11px',
-              fontWeight: 700,
+              fontWeight: 800,
             }}
           >
             @
           </span>
-          <span style={{ fontSize: '12px', fontWeight: 700, color: '#1C2419', fontFamily: 'var(--font-ui)' }}>
+          <span style={{ fontSize: '12px', fontWeight: 800, color: 'var(--ink)', fontFamily: 'var(--font-ui)' }}>
             Mention Indian Standard
           </span>
           {cleanQuery && (
@@ -135,10 +135,11 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
                 fontSize: '11px',
                 padding: '2px 8px',
                 borderRadius: '12px',
-                backgroundColor: '#E8EFE5',
-                color: '#2D6A4F',
-                fontWeight: 600,
+                backgroundColor: 'var(--olive-tint)',
+                color: 'var(--olive-primary)',
+                fontWeight: 700,
                 fontFamily: 'var(--font-data)',
+                border: '1px solid var(--hairline)',
               }}
             >
               Prefix Match: "{cleanQuery}"
@@ -147,7 +148,7 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ fontSize: '11px', color: '#6E7A68', fontFamily: 'var(--font-data)' }}>
+          <span style={{ fontSize: '11px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
             {results.length} found
           </span>
           <button
@@ -156,7 +157,7 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
             style={{
               background: 'none',
               border: 'none',
-              color: '#6E7A68',
+              color: 'var(--ink-muted)',
               cursor: 'pointer',
               padding: '2px',
               display: 'flex',
@@ -175,8 +176,8 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
           display: 'flex',
           gap: '6px',
           padding: '6px 10px',
-          backgroundColor: '#FCFAF7',
-          borderBottom: '1px solid #EFECE6',
+          backgroundColor: 'var(--surface)',
+          borderBottom: '1px solid var(--hairline)',
           overflowX: 'auto',
           whiteSpace: 'nowrap',
           scrollbarWidth: 'none',
@@ -193,10 +194,10 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
                 padding: '3px 9px',
                 borderRadius: '14px',
                 fontSize: '11px',
-                fontWeight: isSelected ? 700 : 500,
-                backgroundColor: isSelected ? '#36452F' : '#FFFFFF',
-                color: isSelected ? '#FFFFFF' : '#44503E',
-                border: isSelected ? '1px solid #36452F' : '1px solid #DCD6C8',
+                fontWeight: isSelected ? 800 : 600,
+                backgroundColor: isSelected ? 'var(--olive-primary)' : 'var(--surface-secondary)',
+                color: isSelected ? '#FFFFFF' : 'var(--ink-secondary)',
+                border: isSelected ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
                 cursor: 'pointer',
                 transition: 'all 0.12s ease',
                 flexShrink: 0,
@@ -223,12 +224,15 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
             style={{
               padding: '28px 16px',
               textAlign: 'center',
-              color: '#6E7A68',
+              color: 'var(--ink-muted)',
               fontSize: '12.5px',
             }}
           >
-            <div>🔍 No Indian Standard matching <strong>"{cleanQuery}"</strong></div>
-            <div style={{ fontSize: '11px', marginTop: '4px', color: '#8A9485' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
+              <Search size={15} />
+              <span>No Indian Standard matching <strong>"{cleanQuery}"</strong></span>
+            </div>
+            <div style={{ fontSize: '11px', marginTop: '4px', color: 'var(--ink-muted)' }}>
               Try typing standard numbers like <code>@IS 7</code>, <code>@IS 7098</code>, <code>@IS 269</code>, <code>@IS 1786</code> or materials like <code>@cement</code>, <code>@steel</code>.
             </div>
           </div>
@@ -247,9 +251,9 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
                   gap: '12px',
                   padding: '8px 12px',
                   borderRadius: '7px',
-                  backgroundColor: isSelected ? '#F0F5ED' : 'transparent',
+                  backgroundColor: isSelected ? 'var(--olive-tint)' : 'transparent',
                   cursor: 'pointer',
-                  border: isSelected ? '1px solid #A3C9A8' : '1px solid transparent',
+                  border: isSelected ? '1px solid var(--hairline)' : '1px solid transparent',
                   transition: 'background-color 0.1s ease',
                   margin: '1px 0',
                 }}
@@ -259,12 +263,13 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
                     <span
                       style={{
                         fontFamily: 'var(--font-data, monospace)',
-                        fontWeight: 700,
+                        fontWeight: 800,
                         fontSize: '12.5px',
-                        color: isSelected ? '#1B4332' : '#2D6A4F',
-                        backgroundColor: isSelected ? '#D8E8D5' : '#E8EFE5',
+                        color: isSelected ? 'var(--olive-primary)' : 'var(--ink)',
+                        backgroundColor: isSelected ? 'var(--surface)' : 'var(--surface-secondary)',
                         padding: '2px 7px',
                         borderRadius: '4px',
+                        border: '1px solid var(--hairline)',
                       }}
                     >
                       {item.is_number}
@@ -275,8 +280,8 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
                         fontSize: '10px',
                         padding: '1px 6px',
                         borderRadius: '10px',
-                        backgroundColor: '#F5F2EB',
-                        color: '#6E7A68',
+                        backgroundColor: 'var(--surface-secondary)',
+                        color: 'var(--ink-muted)',
                         fontWeight: 600,
                       }}
                     >
@@ -289,15 +294,17 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
                           fontSize: '9.5px',
                           padding: '1px 5px',
                           borderRadius: '3px',
-                          backgroundColor: '#FEF3C7',
-                          color: '#92400E',
-                          fontWeight: 700,
+                          backgroundColor: 'var(--amber-bg)',
+                          color: 'var(--amber-warn)',
+                          fontWeight: 800,
                           display: 'inline-flex',
                           alignItems: 'center',
-                          gap: '2px',
+                          gap: '3px',
+                          border: '1px solid var(--amber-border)',
                         }}
                       >
-                        ⚖️ QCO MANDATORY
+                        <Scale size={10} />
+                        <span>QCO MANDATORY</span>
                       </span>
                     )}
                   </div>
@@ -305,8 +312,8 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
                   <div
                     style={{
                       fontSize: '12px',
-                      fontWeight: 600,
-                      color: '#1C2419',
+                      fontWeight: 700,
+                      color: 'var(--ink)',
                       overflow: 'hidden',
                       textOverflow: 'ellipsis',
                       whiteSpace: 'nowrap',
@@ -320,7 +327,7 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
                     <div
                       style={{
                         fontSize: '11px',
-                        color: '#6E7A68',
+                        color: 'var(--ink-secondary)',
                         overflow: 'hidden',
                         textOverflow: 'ellipsis',
                         whiteSpace: 'nowrap',
@@ -336,8 +343,8 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
                   <span
                     style={{
                       fontSize: '10.5px',
-                      color: isSelected ? '#1B4332' : '#8A9485',
-                      fontWeight: isSelected ? 700 : 500,
+                      color: isSelected ? 'var(--olive-primary)' : 'var(--ink-muted)',
+                      fontWeight: isSelected ? 800 : 500,
                       fontFamily: 'var(--font-data)',
                     }}
                   >
@@ -354,20 +361,20 @@ export const StandardMentionAutocomplete: React.FC<StandardMentionAutocompletePr
       <div
         style={{
           padding: '6px 12px',
-          backgroundColor: '#F7F5F0',
-          borderTop: '1px solid #E5E0D4',
+          backgroundColor: 'var(--surface-secondary)',
+          borderTop: '1px solid var(--hairline)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
           fontSize: '10.5px',
-          color: '#6E7A68',
+          color: 'var(--ink-muted)',
         }}
       >
         <span>
-          Use <kbd style={{ background: '#FFF', padding: '1px 4px', borderRadius: '3px', border: '1px solid #DCD6C8' }}>↑</kbd> <kbd style={{ background: '#FFF', padding: '1px 4px', borderRadius: '3px', border: '1px solid #DCD6C8' }}>↓</kbd> to navigate, <kbd style={{ background: '#FFF', padding: '1px 4px', borderRadius: '3px', border: '1px solid #DCD6C8' }}>Enter</kbd> to insert
+          Use <kbd style={{ background: 'var(--surface)', padding: '1px 4px', borderRadius: '3px', border: '1px solid var(--hairline)' }}>↑</kbd> <kbd style={{ background: 'var(--surface)', padding: '1px 4px', borderRadius: '3px', border: '1px solid var(--hairline)' }}>↓</kbd> to navigate, <kbd style={{ background: 'var(--surface)', padding: '1px 4px', borderRadius: '3px', border: '1px solid var(--hairline)' }}>Enter</kbd> to insert
         </span>
         <span>
-          <kbd style={{ background: '#FFF', padding: '1px 4px', borderRadius: '3px', border: '1px solid #DCD6C8' }}>Esc</kbd> to dismiss
+          <kbd style={{ background: 'var(--surface)', padding: '1px 4px', borderRadius: '3px', border: '1px solid var(--hairline)' }}>Esc</kbd> to dismiss
         </span>
       </div>
     </div>

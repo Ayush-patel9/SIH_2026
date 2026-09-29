@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GeMIntegrationDemo } from './GeMIntegrationDemo';
 import { CPPPTenderChecker } from './CPPPTenderChecker';
+import { ShoppingCart, Building2, Network } from 'lucide-react';
 
 export const IntegrationSandboxView: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'gem' | 'cppp' | 'architecture'>('gem');
@@ -13,7 +14,7 @@ export const IntegrationSandboxView: React.FC = () => {
           <span className="concept-status-badge active">NATIONAL E-PROCUREMENT INTEGRATION</span>
           <span className="section-label" style={{ margin: 0 }}>API GATEWAY SANDBOX</span>
         </div>
-        <h2 style={{ fontFamily: 'var(--font-data)', fontSize: '20px', fontWeight: 700, color: 'var(--ink)', marginBottom: '4px' }}>
+        <h2 style={{ fontFamily: 'var(--font-data)', fontSize: '20px', fontWeight: 800, color: 'var(--ink)', marginBottom: '4px' }}>
           GeM & CPPP E-Procurement Gateway Sandbox
         </h2>
         <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', margin: 0 }}>
@@ -21,30 +22,33 @@ export const IntegrationSandboxView: React.FC = () => {
         </p>
 
         {/* Sub-tab switcher */}
-        <div style={{ display: 'flex', gap: '8px', marginTop: '16px' }}>
+        <div style={{ display: 'flex', gap: '8px', marginTop: '16px', flexWrap: 'wrap' }}>
           <button
             type="button"
             className={`mode-toggle-btn ${activeTab === 'gem' ? 'active' : ''}`}
             onClick={() => setActiveTab('gem')}
-            style={{ padding: '6px 14px', fontSize: '12px' }}
+            style={{ padding: '6px 14px', fontSize: '12px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           >
-            🛒 GeM Marketplace Buyer Widget
+            <ShoppingCart size={13} />
+            <span>GeM Marketplace Buyer Widget</span>
           </button>
           <button
             type="button"
             className={`mode-toggle-btn ${activeTab === 'cppp' ? 'active' : ''}`}
             onClick={() => setActiveTab('cppp')}
-            style={{ padding: '6px 14px', fontSize: '12px' }}
+            style={{ padding: '6px 14px', fontSize: '12px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           >
-            🏛️ CPPP Pre-Tender Validator
+            <Building2 size={13} />
+            <span>CPPP Pre-Tender Validator</span>
           </button>
           <button
             type="button"
             className={`mode-toggle-btn ${activeTab === 'architecture' ? 'active' : ''}`}
             onClick={() => setActiveTab('architecture')}
-            style={{ padding: '6px 14px', fontSize: '12px' }}
+            style={{ padding: '6px 14px', fontSize: '12px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           >
-            🌐 National Gateway Architecture
+            <Network size={13} />
+            <span>National Gateway Architecture</span>
           </button>
         </div>
       </div>

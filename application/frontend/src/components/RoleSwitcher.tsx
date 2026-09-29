@@ -1,5 +1,6 @@
 import React from 'react';
 import type { UserRole, QueryMode } from '../types';
+import { Building2, Factory } from 'lucide-react';
 
 interface RoleSwitcherProps {
   role: UserRole;
@@ -8,9 +9,9 @@ interface RoleSwitcherProps {
   onModeChange: (m: QueryMode) => void;
 }
 
-const ROLES: { value: UserRole; label: string; icon: string }[] = [
-  { value: 'OFFICER', label: 'Tender Authority', icon: '🏛️' },
-  { value: 'VENDOR', label: 'Industrial Vendor', icon: '🏭' },
+const ROLES: { value: UserRole; label: string; icon: React.ReactNode }[] = [
+  { value: 'OFFICER', label: 'Tender Authority', icon: <Building2 size={13} /> },
+  { value: 'VENDOR', label: 'Industrial Vendor', icon: <Factory size={13} /> },
 ];
 
 export const RoleSwitcher: React.FC<RoleSwitcherProps> = ({
@@ -28,21 +29,21 @@ export const RoleSwitcher: React.FC<RoleSwitcherProps> = ({
           style={{
             fontFamily: 'var(--font-ui)',
             fontSize: '11.5px',
-            fontWeight: isActive ? 600 : 500,
+            fontWeight: isActive ? 700 : 500,
             padding: '4px 10px',
             borderRadius: 'var(--radius-xs)',
             border: 'none',
-            background: isActive ? '#FFFFFF' : 'transparent',
+            background: isActive ? 'var(--surface)' : 'transparent',
             color: isActive ? 'var(--ink)' : 'var(--ink-secondary)',
             cursor: 'pointer',
             transition: 'all 0.15s ease',
             boxShadow: isActive ? 'var(--shadow-xs)' : 'none',
             display: 'inline-flex',
             alignItems: 'center',
-            gap: '4px',
+            gap: '5px',
           }}
         >
-          <span>{r.icon}</span>
+          {r.icon}
           <span>{r.label}</span>
         </button>
       );

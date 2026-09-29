@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import type { TenderChatMessage } from './types';
 import { sendTenderChatMessage } from './tenderAnalysisClient';
-import { Send, Sparkles, Trash2, Bot, User, ArrowRight, CornerDownLeft, X, AtSign } from 'lucide-react';
+import { Send, Sparkles, Trash2, Bot, CornerDownLeft, X, AtSign, Loader2, FileText } from 'lucide-react';
 import { StandardMentionAutocomplete } from '../../components/StandardMentionAutocomplete';
 import type { StandardMentionItem } from '../../data/standardsMentionCatalog';
 
@@ -17,6 +17,28 @@ const DEFAULT_PROMPTS = [
   'Are there any withdrawn or superseded standards cited in the document?',
   'Verify mandatory QCO and test norms for @IS 269 & @IS 1786',
 ];
+
+function isValidMentionQuery(q: string): boolean {
+  const trimmed = q.trim();
+  if (trimmed === '') return true; // just typed '@' or '@ '
+
+  // Standard identifier prefix: "IS", "IS 456", "IS 7098", "IS 269:2015", "IS 1786-2008"
+  if (/^IS(\s+[0-9]+[A-Za-z0-9/:\-()]*|\s*)$/i.test(trimmed)) {
+    return true;
+  }
+
+  // Direct numeric standard code: "456", "7098", "269"
+  if (/^[0-9]+[A-Za-z0-9/:\-()]*$/.test(trimmed)) {
+    return true;
+  }
+
+  // Single keyword without spaces: "cement", "steel", "pipe", "cable", "rebar"
+  if (/^[a-zA-Z0-9_\-]+$/.test(trimmed)) {
+    return true;
+  }
+
+  return false;
+}
 
 export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
   documentText,
@@ -79,7 +101,7 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
       const errorMsg: TenderChatMessage = {
         id: `err-${Date.now()}`,
         sender: 'assistant',
-        text: `⚠️ **Error communicating with AI assistant:** ${err.message || 'Please verify your network connection and try again.'}`,
+        text: `**Error communicating with AI assistant:** ${err.message || 'Please verify your network connection and try again.'}`,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
       setMessages((prev) => [...prev, errorMsg]);
@@ -101,9 +123,9 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
       const queryPart = textBeforeCursor.slice(lastAtIndex + 1);
       const charBeforeAt = lastAtIndex > 0 ? textBeforeCursor[lastAtIndex - 1] : ' ';
       if (charBeforeAt === ' ' || charBeforeAt === '\n' || lastAtIndex === 0) {
-        if (queryPart.length <= 30 && !queryPart.includes('\n')) {
+        if (isValidMentionQuery(queryPart) && queryPart.length <= 25 && !queryPart.includes('\n')) {
           setMentionOpen(true);
-          setMentionQuery(queryPart);
+          setMentionQuery(queryPart.trim());
           setMentionStartIndex(lastAtIndex);
           return;
         }
@@ -132,6 +154,8 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
 
     setInputText(newText);
     setMentionOpen(false);
+    setMentionStartIndex(-1);
+    setMentionQuery('');
 
     setTimeout(() => {
       if (inputRef.current) {
@@ -178,18 +202,19 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
 
           // Check for tables
           if (block.includes('|') && block.split('\n').length >= 2) {
-            const rows = block.split('\n').filter((r) => r.includes('|') && !r.includes('---'));
+            const rows = block.trim().split('\n').filter(r => r.includes('|') && !r.includes('---'));
             return (
               <div key={bIdx} style={{ overflowX: 'auto', margin: '10px 0' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '12px', border: '1px solid #E5E0D4' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '12px', border: '1px solid var(--hairline)' }}>
                   <tbody>
                     {rows.map((row, rIdx) => {
-                      const cols = row.split('|').filter((c) => c.trim());
+                      const cells = row.split('|').map(c => c.trim()).filter((_, idx, arr) => idx > 0 && idx < arr.length - 1);
+                      const isHeader = rIdx === 0;
                       return (
-                        <tr key={rIdx} style={{ backgroundColor: rIdx === 0 ? '#FAF8F3' : 'transparent', borderBottom: '1px solid #E5E0D4' }}>
-                          {cols.map((col, cIdx) => (
-                            <td key={cIdx} style={{ padding: '6px 10px', fontWeight: rIdx === 0 ? 700 : 400 }}>
-                              {renderInlineTokens(col.trim())}
+                        <tr key={rIdx} style={{ backgroundColor: isHeader ? 'var(--surface-secondary)' : 'transparent' }}>
+                          {cells.map((cell, cIdx) => (
+                            <td key={cIdx} style={{ padding: '6px 10px', border: '1px solid var(--hairline)', fontWeight: isHeader ? 700 : 400 }}>
+                              {renderInlineTokens(cell)}
                             </td>
                           ))}
                         </tr>
@@ -241,21 +266,22 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
           style={{
             display: 'inline-flex',
             alignItems: 'center',
-            gap: '2px',
+            gap: '3px',
             padding: '1px 6px',
             borderRadius: '4px',
             backgroundColor: 'rgba(29, 78, 216, 0.1)',
-            color: '#1D4ED8',
+            color: 'var(--focus-blue)',
             border: '1px solid rgba(29, 78, 216, 0.25)',
             fontSize: '11.5px',
-            fontWeight: 700,
+            fontWeight: 800,
             cursor: 'pointer',
             margin: '0 3px',
-            textDecoration: 'underline',
+            textDecoration: 'none',
           }}
           title={`Click to navigate document viewer to Page ${pageNumber}`}
         >
-          <span>📍 {fullMatch}</span>
+          <FileText size={11} />
+          <span>{fullMatch}</span>
         </button>
       );
 
@@ -274,19 +300,20 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
     const parts = raw.split(/(\*\*.*?\*\*|`.*?`|@IS\s+[0-9]+[A-Za-z0-9/()\-]*)/g);
     return parts.map((part, i) => {
       if (part.startsWith('**') && part.endsWith('**')) {
-        return <strong key={i}>{part.slice(2, -2)}</strong>;
+        return <strong key={i} style={{ fontWeight: 800 }}>{part.slice(2, -2)}</strong>;
       }
       if (part.startsWith('`') && part.endsWith('`')) {
         return (
           <code
             key={i}
             style={{
-              backgroundColor: '#ECE7DD',
-              padding: '1px 4px',
+              backgroundColor: 'var(--surface-secondary)',
+              padding: '1px 5px',
               borderRadius: '3px',
-              fontFamily: 'monospace',
+              fontFamily: 'var(--font-data, monospace)',
               fontSize: '11.5px',
-              color: '#92400E',
+              color: 'var(--ink)',
+              border: '1px solid var(--hairline)',
             }}
           >
             {part.slice(1, -1)}
@@ -303,16 +330,16 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
               gap: '3px',
               padding: '1px 7px',
               borderRadius: '4px',
-              backgroundColor: '#E8EFE5',
-              color: '#1B4332',
-              fontWeight: 700,
+              backgroundColor: 'var(--olive-tint)',
+              color: 'var(--olive-primary)',
+              fontWeight: 800,
               fontSize: '11.5px',
-              border: '1px solid #A3C9A8',
+              border: '1px solid var(--hairline)',
               margin: '0 2px',
               fontFamily: 'var(--font-data, monospace)',
             }}
           >
-            <span style={{ color: '#2D6A4F' }}>@</span>
+            <span style={{ opacity: 0.7 }}>@</span>
             <span>{part.substring(1)}</span>
           </span>
         );
@@ -327,9 +354,9 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
         display: 'flex',
         flexDirection: 'column',
         height: '100%',
-        backgroundColor: '#FFFFFF',
+        backgroundColor: 'var(--surface)',
         borderRadius: '10px',
-        border: '1px solid #E5E0D4',
+        border: '1px solid var(--hairline)',
         overflow: 'hidden',
       }}
     >
@@ -337,8 +364,8 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
       <div
         style={{
           padding: '12px 16px',
-          borderBottom: '1px solid #E5E0D4',
-          backgroundColor: '#FAF8F3',
+          borderBottom: '1px solid var(--hairline)',
+          backgroundColor: 'var(--surface-secondary)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -350,21 +377,20 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
               width: '28px',
               height: '28px',
               borderRadius: '6px',
-              backgroundColor: '#2D6A4F',
+              backgroundColor: 'var(--olive-primary)',
               color: '#FFFFFF',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontSize: '14px',
             }}
           >
-            🤖
+            <Bot size={16} />
           </div>
           <div>
-            <div style={{ fontSize: '13px', fontWeight: 700, color: '#1C2419' }}>
+            <div style={{ fontSize: '13px', fontWeight: 800, color: 'var(--ink)' }}>
               Tender Intelligence AI Chat
             </div>
-            <div style={{ fontSize: '11px', color: '#6E7A68' }}>
+            <div style={{ fontSize: '11px', color: 'var(--ink-muted)' }}>
               Full Document Context Aware · Gemini Flash
             </div>
           </div>
@@ -376,8 +402,8 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
             onClick={handleClearHistory}
             style={{
               background: 'none',
-              border: '1px solid #E5E0D4',
-              color: '#6E7A68',
+              border: '1px solid var(--hairline)',
+              color: 'var(--ink-secondary)',
               cursor: 'pointer',
               padding: '4px 8px',
               borderRadius: '4px',
@@ -385,6 +411,7 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
               alignItems: 'center',
               gap: '4px',
               fontSize: '11px',
+              fontWeight: 600,
             }}
             title="Clear chat history"
           >
@@ -399,7 +426,7 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
               style={{
                 background: 'none',
                 border: 'none',
-                color: '#6E7A68',
+                color: 'var(--ink-muted)',
                 cursor: 'pointer',
                 padding: '4px',
                 borderRadius: '4px',
@@ -418,12 +445,13 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
       <div
         style={{
           padding: '8px 14px',
-          backgroundColor: '#F7F5EE',
-          borderBottom: '1px solid #EAE5D9',
+          backgroundColor: 'var(--surface-secondary)',
+          borderBottom: '1px solid var(--hairline)',
           display: 'flex',
           gap: '6px',
           overflowX: 'auto',
           whiteSpace: 'nowrap',
+          scrollbarWidth: 'none',
         }}
       >
         {DEFAULT_PROMPTS.map((prompt, idx) => (
@@ -433,21 +461,22 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
             onClick={() => handleSend(prompt)}
             disabled={loading}
             style={{
-              border: '1px solid #DCD6C8',
-              backgroundColor: '#FFFFFF',
-              color: '#36452F',
+              border: '1px solid var(--hairline)',
+              backgroundColor: 'var(--surface)',
+              color: 'var(--ink)',
               padding: '4px 10px',
               borderRadius: '16px',
               fontSize: '11px',
-              fontWeight: 600,
+              fontWeight: 700,
               cursor: 'pointer',
               flexShrink: 0,
               display: 'flex',
               alignItems: 'center',
               gap: '4px',
+              transition: 'all 0.15s ease',
             }}
           >
-            <Sparkles size={11} color="#2D6A4F" />
+            <Sparkles size={11} color="var(--olive-primary)" />
             <span>{prompt}</span>
           </button>
         ))}
@@ -462,7 +491,7 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
           display: 'flex',
           flexDirection: 'column',
           gap: '14px',
-          backgroundColor: '#FCFAF7',
+          backgroundColor: 'var(--canvas-secondary, var(--surface))',
         }}
       >
         {messages.map((m) => (
@@ -477,25 +506,25 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
             <div
               style={{
                 maxWidth: '88%',
-                backgroundColor: m.sender === 'user' ? '#2D6A4F' : '#FFFFFF',
-                color: m.sender === 'user' ? '#FFFFFF' : '#1C2419',
+                backgroundColor: m.sender === 'user' ? 'var(--olive-primary)' : 'var(--surface)',
+                color: m.sender === 'user' ? '#FFFFFF' : 'var(--ink)',
                 padding: '12px 16px',
                 borderRadius: m.sender === 'user' ? '14px 14px 2px 14px' : '14px 14px 14px 2px',
-                boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)',
-                border: m.sender === 'user' ? 'none' : '1px solid #E5E0D4',
+                boxShadow: 'var(--shadow-card)',
+                border: m.sender === 'user' ? 'none' : '1px solid var(--hairline)',
               }}
             >
               {m.sender === 'assistant' ? renderFormattedMessage(m.text) : m.text}
             </div>
-            <div style={{ fontSize: '10.5px', color: '#8A9485', marginTop: '3px', padding: '0 4px' }}>
+            <div style={{ fontSize: '10.5px', color: 'var(--ink-muted)', marginTop: '3px', padding: '0 4px', fontWeight: 600 }}>
               {m.sender === 'user' ? 'You' : 'ManakAI'} · {m.timestamp}
             </div>
           </div>
         ))}
 
         {loading && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#6E7A68', fontSize: '12px', padding: '8px 12px' }}>
-            <span style={{ animation: 'spin 1s linear infinite' }}>⏳</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--ink-muted)', fontSize: '12px', padding: '8px 12px' }}>
+            <Loader2 size={14} className="animate-spin" color="var(--olive-primary)" />
             <span>Reasoning across tender document and Indian Standards...</span>
           </div>
         )}
@@ -504,7 +533,7 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
       </div>
 
       {/* Message Input Box with WhatsApp-Style @ Mention Popover */}
-      <div style={{ position: 'relative', borderTop: '1px solid #E5E0D4', backgroundColor: '#FFFFFF' }}>
+      <div style={{ position: 'relative', borderTop: '1px solid var(--hairline)', backgroundColor: 'var(--surface)' }}>
         {/* Floating @ Mention Autocomplete Popover */}
         <StandardMentionAutocomplete
           isOpen={mentionOpen}
@@ -541,13 +570,13 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
               }
             }}
             style={{
-              backgroundColor: mentionOpen ? '#36452F' : '#FAF8F3',
-              color: mentionOpen ? '#FFFFFF' : '#36452F',
-              border: mentionOpen ? '1px solid #36452F' : '1px solid #DCD6C8',
+              backgroundColor: mentionOpen ? 'var(--olive-primary)' : 'var(--surface-secondary)',
+              color: mentionOpen ? '#FFFFFF' : 'var(--olive-primary)',
+              border: mentionOpen ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
               borderRadius: '6px',
               height: '38px',
               padding: '0 10px',
-              fontWeight: 700,
+              fontWeight: 800,
               fontSize: '13px',
               cursor: 'pointer',
               display: 'flex',
@@ -559,7 +588,7 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
             title="Mention Indian Standard (@IS)"
           >
             <span>@</span>
-            <span style={{ fontSize: '11px', fontWeight: 600 }}>IS</span>
+            <span style={{ fontSize: '11px', fontWeight: 800 }}>IS</span>
           </button>
 
           <input
@@ -571,29 +600,27 @@ export const TenderChatbotPanel: React.FC<TenderChatbotPanelProps> = ({
             disabled={loading}
             style={{
               flex: 1,
-              backgroundColor: '#FAF8F3',
-              border: '1px solid #DCD6C8',
+              backgroundColor: 'var(--surface-secondary)',
+              border: '1px solid var(--hairline)',
               borderRadius: '6px',
               padding: '10px 14px',
               fontSize: '13px',
-              color: '#1C2419',
+              color: 'var(--ink)',
               outline: 'none',
               fontFamily: 'var(--font-ui)',
             }}
-            onFocus={(e) => (e.target.style.borderColor = '#2D6A4F')}
-            onBlur={(e) => (e.target.style.borderColor = '#DCD6C8')}
           />
 
           <button
             type="submit"
             disabled={!inputText.trim() || loading}
             style={{
-              backgroundColor: inputText.trim() && !loading ? '#2D6A4F' : '#E5E0D4',
+              backgroundColor: inputText.trim() && !loading ? 'var(--olive-primary)' : 'var(--hairline)',
               color: '#FFFFFF',
               border: 'none',
               padding: '10px 16px',
               borderRadius: '6px',
-              fontWeight: 700,
+              fontWeight: 800,
               fontSize: '13px',
               cursor: inputText.trim() && !loading ? 'pointer' : 'not-allowed',
               display: 'flex',

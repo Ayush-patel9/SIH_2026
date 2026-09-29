@@ -3,7 +3,24 @@ import { PDFViewer } from './PDFViewer';
 import { TenderClauseHighlighter, type TenderClauseAnnotation } from './TenderClauseHighlighter';
 import { UseDiscardSuggestionsCard } from './UseDiscardSuggestionsCard';
 import { TenderModifierDiffEditor } from './TenderModifierDiffEditor';
-import { FileText, CheckCircle2, AlertTriangle, ArrowRight, ShieldCheck } from 'lucide-react';
+import { 
+  FileText, 
+  CheckCircle2, 
+  AlertTriangle, 
+  ArrowRight, 
+  ShieldCheck, 
+  Zap, 
+  Scale, 
+  X,
+  Columns,
+  ArrowLeftRight,
+  FileEdit,
+  ListChecks,
+  Download,
+  Printer,
+  FileCheck,
+  Network
+} from 'lucide-react';
 
 interface PDFAnnotationViewerProps {
   initialClauses?: TenderClauseAnnotation[];
@@ -263,10 +280,18 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
                 {complianceScore}/100
               </span>
             </h3>
-            <p style={{ fontFamily: 'var(--font-prose)', fontSize: '12px', color: 'var(--ink-secondary)', margin: '4px 0 0 0' }}>
-              {clauses.filter((c) => c.status === 'WITHDRAWN' && !c.fixed).length === 0
-                ? '✓ All specifications adhere to active Bureau of Indian Standards and QCO gazettes.'
-                : '⚠ Outdated and withdrawn standards detected. CVC audit non-compliance flagged.'}
+            <p style={{ fontFamily: 'var(--font-prose)', fontSize: '12px', color: 'var(--ink-secondary)', margin: '4px 0 0 0', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              {clauses.filter((c) => c.status === 'WITHDRAWN' && !c.fixed).length === 0 ? (
+                <>
+                  <CheckCircle2 size={13} color="var(--emerald-pass)" />
+                  <span>All specifications adhere to active Bureau of Indian Standards and QCO gazettes.</span>
+                </>
+              ) : (
+                <>
+                  <AlertTriangle size={13} color="var(--amber-warn)" />
+                  <span>Outdated and withdrawn standards detected. CVC audit non-compliance flagged.</span>
+                </>
+              )}
             </p>
           </div>
 
@@ -276,37 +301,41 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
                 type="button"
                 className={`mode-toggle-btn ${viewMode === 'split_pdf' ? 'active' : ''}`}
                 onClick={() => setViewMode('split_pdf')}
-                style={{ fontSize: '11px', padding: '4px 8px' }}
+                style={{ fontSize: '11px', padding: '4px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                 title="Synchronized Split-Screen PDF Viewer & Evidence Annotator"
               >
-                🔍 Split-Screen PDF
+                <Columns size={12} />
+                <span>Split-Screen PDF</span>
               </button>
               <button
                 type="button"
                 className={`mode-toggle-btn ${viewMode === 'use_discard' ? 'active' : ''}`}
                 onClick={() => setViewMode('use_discard')}
-                style={{ fontSize: '11px', padding: '4px 8px' }}
+                style={{ fontSize: '11px', padding: '4px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                 title="Actionable Use These vs Discard These Suggestion Deck"
               >
-                💡 Use vs Discard
+                <ArrowLeftRight size={12} />
+                <span>Use vs Discard</span>
               </button>
               <button
                 type="button"
                 className={`mode-toggle-btn ${viewMode === 'modifier_diff' ? 'active' : ''}`}
                 onClick={() => setViewMode('modifier_diff')}
-                style={{ fontSize: '11px', padding: '4px 8px' }}
+                style={{ fontSize: '11px', padding: '4px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                 title="Modify Existing Tender & Live Redline Diff Editor"
               >
-                ✏️ Modify & Diff Editor
+                <FileEdit size={12} />
+                <span>Modify & Diff Editor</span>
               </button>
               <button
                 type="button"
                 className={`mode-toggle-btn ${viewMode === 'clause_list' ? 'active' : ''}`}
                 onClick={() => setViewMode('clause_list')}
-                style={{ fontSize: '11px', padding: '4px 8px' }}
+                style={{ fontSize: '11px', padding: '4px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                 title="Clause Stream List"
               >
-                📋 Clause Stream
+                <ListChecks size={12} />
+                <span>Clause Stream</span>
               </button>
             </div>
 
@@ -314,18 +343,20 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
               type="button"
               className="btn-secondary"
               onClick={() => setShowExportModal(true)}
-              style={{ fontSize: '12px', padding: '6px 12px' }}
+              style={{ fontSize: '12px', padding: '6px 12px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
             >
-              📥 Export Audit Report
+              <Download size={13} />
+              <span>Export Audit Report</span>
             </button>
             <button
               type="button"
               className="btn-run"
               onClick={handleFixAll}
               disabled={clauses.filter((c) => c.status !== 'ACTIVE' && !c.fixed).length === 0}
-              style={{ fontSize: '12px', padding: '6px 14px' }}
+              style={{ fontSize: '12px', padding: '6px 14px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
             >
-              ⚡ 1-Click Fix All ({clauses.filter((c) => c.status !== 'ACTIVE' && !c.fixed).length})
+              <Zap size={13} />
+              <span>1-Click Fix All ({clauses.filter((c) => c.status !== 'ACTIVE' && !c.fixed).length})</span>
             </button>
           </div>
         </div>
@@ -355,10 +386,10 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
                     fontFamily: 'var(--font-data)',
                     fontSize: '11px',
                     fontWeight: 700,
-                    color: selectedClause.status === 'WITHDRAWN' ? '#dc2626' : '#16a34a',
+                    color: selectedClause.status === 'WITHDRAWN' ? 'var(--error-red)' : 'var(--emerald-pass)',
                   }}
                 >
-                  {selectedClause.fixed ? 'MODIFIED ✓' : selectedClause.status}
+                  {selectedClause.fixed ? 'MODIFIED' : selectedClause.status}
                 </span>
               </div>
 
@@ -371,14 +402,14 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
                   padding: '12px',
                 }}
               >
-                <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', marginBottom: '4px' }}>
+                <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--ink-muted)', marginBottom: '4px', fontWeight: 700 }}>
                   DETECTED STANDARD CITATION
                 </div>
-                <div style={{ fontFamily: 'var(--font-data)', fontSize: '15px', fontWeight: 700, color: 'var(--ink)' }}>
+                <div style={{ fontFamily: 'var(--font-data)', fontSize: '15px', fontWeight: 800, color: 'var(--ink)' }}>
                   {selectedClause.detectedStandard}
                 </div>
                 {selectedClause.replacement && (
-                  <div style={{ marginTop: '6px', fontSize: '12px', fontFamily: 'var(--font-data)', color: '#15803d' }}>
+                  <div style={{ marginTop: '6px', fontSize: '12px', fontFamily: 'var(--font-data)', color: 'var(--emerald-pass)', fontWeight: 700 }}>
                     <strong>Mandatory Active Equivalent:</strong> {selectedClause.replacement}
                   </div>
                 )}
@@ -388,21 +419,23 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
               {selectedClause.status !== 'ACTIVE' && (
                 <div
                   style={{
-                    background: 'rgba(239, 68, 68, 0.04)',
-                    border: '1px solid rgba(239, 68, 68, 0.25)',
+                    background: 'var(--error-bg)',
+                    border: '1px solid var(--error-border)',
                     borderRadius: 'var(--radius-sm)',
-                    padding: '10px 12px',
+                    padding: '12px',
                     fontSize: '12px',
                   }}
                 >
-                  <div style={{ color: '#991b1b', marginBottom: '4px', fontFamily: 'var(--font-data)', fontWeight: 700 }}>
-                    ❌ DISCARD: {selectedClause.discardStandard || selectedClause.detectedStandard}
+                  <div style={{ color: 'var(--error-red)', marginBottom: '4px', fontFamily: 'var(--font-data)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '5px' }}>
+                    <X size={13} />
+                    <span>DISCARD: {selectedClause.discardStandard || selectedClause.detectedStandard}</span>
                   </div>
-                  <div style={{ color: '#15803d', fontFamily: 'var(--font-data)', fontWeight: 700 }}>
-                    ✅ USE INSTEAD: {selectedClause.useStandard || selectedClause.replacement}
+                  <div style={{ color: 'var(--emerald-pass)', fontFamily: 'var(--font-data)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '5px' }}>
+                    <CheckCircle2 size={13} />
+                    <span>USE INSTEAD: {selectedClause.useStandard || selectedClause.replacement}</span>
                   </div>
                   {selectedClause.whyDiscard && (
-                    <div style={{ marginTop: '4px', color: 'var(--ink-secondary)', fontSize: '11.5px', fontFamily: 'var(--font-prose)' }}>
+                    <div style={{ marginTop: '6px', color: 'var(--ink-secondary)', fontSize: '11.5px', fontFamily: 'var(--font-prose)', lineHeight: 1.45 }}>
                       {selectedClause.whyDiscard}
                     </div>
                   )}
@@ -418,10 +451,10 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
                   style={{
                     fontFamily: 'var(--font-prose)',
                     fontSize: '12.5px',
-                    background: 'var(--paper)',
-                    padding: '8px 12px',
+                    background: 'var(--surface-secondary)',
+                    padding: '10px 12px',
                     borderRadius: 'var(--radius-sm)',
-                    borderLeft: '3px solid var(--signal-amber)',
+                    borderLeft: '3px solid var(--amber-warn)',
                     fontStyle: 'italic',
                     color: 'var(--ink)',
                   }}
@@ -434,15 +467,8 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
               {selectedClause.cvcRiskNote && (
                 <div
                   style={{
-                    background:
-                      selectedClause.status === 'WITHDRAWN'
-                        ? 'rgba(220, 38, 38, 0.08)'
-                        : 'rgba(37, 99, 235, 0.08)',
-                    border: `1px solid ${
-                      selectedClause.status === 'WITHDRAWN'
-                        ? 'rgba(220, 38, 38, 0.3)'
-                        : 'rgba(37, 99, 235, 0.3)'
-                    }`,
+                    background: 'var(--surface-secondary)',
+                    border: '1px solid var(--hairline)',
                     borderRadius: 'var(--radius-sm)',
                     padding: '12px',
                   }}
@@ -451,12 +477,16 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
                     style={{
                       fontFamily: 'var(--font-data)',
                       fontSize: '11px',
-                      fontWeight: 700,
-                      color: selectedClause.status === 'WITHDRAWN' ? '#991b1b' : '#1e40af',
+                      fontWeight: 800,
+                      color: selectedClause.status === 'WITHDRAWN' ? 'var(--error-red)' : 'var(--olive-primary)',
                       marginBottom: '4px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '5px',
                     }}
                   >
-                    ⚖️ STATUTORY & CVC VIGILANCE IMPLICATION
+                    <Scale size={13} />
+                    <span>STATUTORY & CVC VIGILANCE IMPLICATION</span>
                   </div>
                   <div style={{ fontFamily: 'var(--font-prose)', fontSize: '12px', color: 'var(--ink)', lineHeight: 1.5 }}>
                     {selectedClause.cvcRiskNote}
@@ -494,18 +524,20 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
                   className="btn-run"
                   onClick={() => handleFixClause(selectedClause.id)}
                   disabled={selectedClause.fixed || selectedClause.status === 'ACTIVE'}
-                  style={{ flex: 1, fontSize: '12px', padding: '8px 12px' }}
+                  style={{ flex: 1, fontSize: '12px', padding: '8px 12px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
                 >
-                  {selectedClause.fixed ? '✓ Clause Updated' : '⚡ Discard & Use Modern Standard'}
+                  <Zap size={13} />
+                  <span>{selectedClause.fixed ? 'Clause Updated' : 'Discard & Use Modern Standard'}</span>
                 </button>
                 {onOpenWorkbench && (
                   <button
                     type="button"
                     className="btn-secondary"
                     onClick={() => onOpenWorkbench(selectedClause.detectedStandard)}
-                    style={{ fontSize: '12px', padding: '8px 12px' }}
+                    style={{ fontSize: '12px', padding: '8px 12px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
                   >
-                    Inspect in Graph ➔
+                    <span>Inspect in Graph</span>
+                    <ArrowRight size={12} />
                   </button>
                 )}
               </div>
@@ -561,6 +593,7 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
             position: 'fixed',
             inset: 0,
             background: 'rgba(0, 0, 0, 0.5)',
+            backdropFilter: 'blur(3px)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -580,16 +613,17 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
-              <h3 style={{ fontFamily: 'var(--font-data)', fontSize: '16px', margin: 0 }}>
-                📜 Pre-Tender Statutory Compliance Certificate
+              <h3 style={{ fontFamily: 'var(--font-data)', fontSize: '16px', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <FileCheck size={18} color="var(--olive-primary)" />
+                <span>Pre-Tender Statutory Compliance Certificate</span>
               </h3>
               <button
                 type="button"
                 className="btn-secondary"
                 onClick={() => setShowExportModal(false)}
-                style={{ padding: '2px 8px', fontSize: '12px' }}
+                style={{ padding: '4px 8px', fontSize: '12px' }}
               >
-                ✕
+                <X size={14} />
               </button>
             </div>
 
@@ -629,12 +663,13 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
                 {clauses.map((c, i) => (
                   <div key={i} style={{ fontSize: '11px', borderBottom: '1px dashed var(--hairline)', padding: '6px 0' }}>
                     <strong>{c.clauseNumber}</strong>: {c.detectedStandard} —{' '}
-                    <span style={{ color: c.fixed || c.status === 'ACTIVE' ? '#16a34a' : '#dc2626', fontWeight: 600 }}>
+                    <span style={{ color: c.fixed || c.status === 'ACTIVE' ? 'var(--emerald-pass)' : 'var(--error-red)', fontWeight: 600 }}>
                       {c.fixed ? 'MODIFIED & COMPLIANT' : c.status}
                     </span>
                     {c.replacement && (
-                      <div style={{ color: '#15803d', fontSize: '10.5px' }}>
-                        ➔ Recommended Standard: {c.replacement} {c.qcoMandate ? `(${c.qcoMandate})` : ''}
+                      <div style={{ color: 'var(--emerald-pass)', fontSize: '10.5px', marginTop: '2px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                        <ArrowRight size={10} />
+                        <span>Recommended Standard: {c.replacement} {c.qcoMandate ? `(${c.qcoMandate})` : ''}</span>
                       </div>
                     )}
                   </div>
@@ -642,7 +677,7 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
               </div>
 
               <div style={{ fontSize: '10px', fontFamily: 'var(--font-data)', color: 'var(--ink-muted)', marginTop: '16px', borderTop: '1px solid var(--hairline)', paddingTop: '8px' }}>
-                Digital Signature: SHA-256: 4f88c30d8923a45c928... · Certified under GFR Rule 144(xi) and CVC Circular 04/03/2021.
+                Digital Signature: SHA-256: 4f88c30d8923a45c928... · Certified under GFR Rule 144(xi) and CVC Circular 02/02/2022.
               </div>
             </div>
 
@@ -651,8 +686,10 @@ export const PDFAnnotationViewer: React.FC<PDFAnnotationViewerProps> = ({
                 type="button"
                 className="btn-secondary"
                 onClick={() => window.print()}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
               >
-                🖨️ Print / Save as PDF
+                <Printer size={13} />
+                <span>Print / Save as PDF</span>
               </button>
               <button
                 type="button"

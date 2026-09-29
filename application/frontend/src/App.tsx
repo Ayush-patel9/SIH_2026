@@ -57,6 +57,15 @@ import {
   Search,
   RefreshCw,
   FolderOpen,
+  Scale,
+  FileText,
+  FileCheck2,
+  Zap,
+  AlertTriangle,
+  Layers,
+  Building2,
+  Factory,
+  Bot,
 } from 'lucide-react';
 
 // Dynamic parameter and performance extractor for any of the 22,011 Indian Standards
@@ -801,8 +810,8 @@ export default function App({ onLogout }: AppProps = {}) {
                 background: 'var(--surface-secondary)',
               }}
             >
-              <span style={{ fontSize: '15px' }}>
-                {role === 'VENDOR' ? '🏭' : '🏛️'}
+              <span style={{ display: 'flex', alignItems: 'center' }}>
+                {role === 'VENDOR' ? <Factory size={15} color="#B45309" /> : <Building2 size={15} color="var(--olive-primary)" />}
               </span>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1.2 }}>
                 <span className="user-identity-name" style={{ fontSize: '12px', fontWeight: 700, color: 'var(--ink-primary)' }}>
@@ -884,22 +893,22 @@ export default function App({ onLogout }: AppProps = {}) {
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '6px',
-                      padding: '4px 12px',
+                      padding: '5px 14px',
                       borderRadius: '20px',
-                      fontSize: '11px',
-                      fontWeight: 600,
-                      backgroundColor: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '#36452F' : 'var(--surface-secondary, #F5F2EB)',
-                      color: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '#FFFEFB' : 'var(--ink, #1F2937)',
-                      border: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '1px solid #36452F' : '1px solid var(--hairline, #E5E0D4)',
+                      fontSize: '11.5px',
+                      fontWeight: 700,
+                      backgroundColor: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? 'var(--olive-primary)' : 'var(--surface-secondary)',
+                      color: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '#FFFFFF' : 'var(--ink-secondary)',
+                      border: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
                       cursor: 'pointer',
                       transition: 'all 0.15s ease',
-                      boxShadow: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '0 2px 6px rgba(54,69,47,0.2)' : 'none',
+                      boxShadow: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '0 2px 6px rgba(0,0,0,0.15)' : 'none',
                       zIndex: 10,
                     }}
-                    title="Return to empty search page from anywhere"
+                    title="Return to empty search page"
                   >
-                    <ArrowLeft size={12} style={{ color: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '#FFFEFB' : 'var(--ink-secondary, #44503E)' }} />
-                    <span>← Back to Search</span>
+                    <ArrowLeft size={13} />
+                    <span>Back to Search</span>
                   </button>
 
                   <div className="editorial-hero-tag" style={{ margin: 0 }}>
@@ -934,17 +943,17 @@ export default function App({ onLogout }: AppProps = {}) {
                         padding: '4px 12px',
                         borderRadius: '20px',
                         fontSize: '11px',
-                        fontWeight: 600,
-                        backgroundColor: explorerSubTab === 'pastAudits' ? '#36452F' : 'var(--surface-secondary, #F5F2EB)',
-                        color: explorerSubTab === 'pastAudits' ? '#FFFEFB' : 'var(--ink, #1F2937)',
-                        border: explorerSubTab === 'pastAudits' ? '1px solid #36452F' : '1px solid var(--hairline, #E5E0D4)',
+                        fontWeight: 700,
+                        backgroundColor: explorerSubTab === 'pastAudits' ? 'var(--olive-primary)' : 'var(--surface-secondary)',
+                        color: explorerSubTab === 'pastAudits' ? '#FFFFFF' : 'var(--ink)',
+                        border: explorerSubTab === 'pastAudits' ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
                         cursor: 'pointer',
                         transition: 'all 0.15s ease',
-                        boxShadow: explorerSubTab === 'pastAudits' ? '0 2px 6px rgba(54,69,47,0.2)' : 'none',
+                        boxShadow: explorerSubTab === 'pastAudits' ? '0 2px 6px rgba(0,0,0,0.15)' : 'none',
                       }}
                     >
-                      <History size={12} style={{ color: explorerSubTab === 'pastAudits' ? '#FFFEFB' : 'var(--collapse-cobalt, #2563EB)' }} />
-                      <span>{explorerSubTab === 'pastAudits' ? '🔍 Back to Search' : '📜 Past Audits Vault'}</span>
+                      <History size={12} />
+                      <span>{explorerSubTab === 'pastAudits' ? 'Back to Search' : 'Past Audits Vault'}</span>
                     </button>
 
                     {/* 2. Saved Vault Button Just Below Past Audits Vault */}
@@ -960,18 +969,18 @@ export default function App({ onLogout }: AppProps = {}) {
                         padding: '3px 11px',
                         borderRadius: '20px',
                         fontSize: '10.5px',
-                        fontWeight: 600,
-                        backgroundColor: explorerSubTab === 'savedVault' ? '#065F46' : '#ECFDF5',
-                        color: explorerSubTab === 'savedVault' ? '#FFFFFF' : '#047857',
-                        border: explorerSubTab === 'savedVault' ? '1px solid #065F46' : '1px solid #A7F3D0',
+                        fontWeight: 700,
+                        backgroundColor: explorerSubTab === 'savedVault' ? 'var(--emerald-pass)' : 'var(--emerald-bg)',
+                        color: explorerSubTab === 'savedVault' ? '#FFFFFF' : 'var(--emerald-text)',
+                        border: explorerSubTab === 'savedVault' ? '1px solid var(--emerald-pass)' : '1px solid var(--emerald-border)',
                         cursor: 'pointer',
                         transition: 'all 0.15s ease',
-                        boxShadow: explorerSubTab === 'savedVault' ? '0 2px 6px rgba(6,95,70,0.25)' : 'none',
+                        boxShadow: explorerSubTab === 'savedVault' ? '0 2px 6px rgba(0,0,0,0.15)' : 'none',
                       }}
                       title="Open Saved Standards Vault"
                     >
-                      <BookmarkCheck size={12} style={{ color: explorerSubTab === 'savedVault' ? '#FFFFFF' : '#059669' }} />
-                      <span>{explorerSubTab === 'savedVault' ? '🔍 Back to Search' : `💾 Saved Vault (${savedStandardsList.length})`}</span>
+                      <BookmarkCheck size={12} />
+                      <span>{explorerSubTab === 'savedVault' ? 'Back to Search' : `Saved Vault (${savedStandardsList.length})`}</span>
                     </button>
                   </div>
                 </div>
@@ -987,7 +996,9 @@ export default function App({ onLogout }: AppProps = {}) {
               {/* Clean Spotlight Search Box */}
               <div className="spotlight-search-container">
                 <div className="spotlight-search-box">
-                  <span className="spotlight-search-icon">🔍</span>
+                  <span className="spotlight-search-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Search size={18} color="var(--ink-muted)" />
+                  </span>
                   <input
                     type="text"
                     value={searchQuery}
@@ -1042,8 +1053,9 @@ export default function App({ onLogout }: AppProps = {}) {
                 )}
 
                 {queryError && (
-                  <div style={{ color: 'var(--error-red)', fontSize: '12px' }}>
-                    ⚠ {queryError}
+                  <div style={{ color: 'var(--error-red)', fontSize: '12px', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                    <AlertTriangle size={13} />
+                    <span>{queryError}</span>
                   </div>
                 )}
               </div>
@@ -1362,8 +1374,9 @@ export default function App({ onLogout }: AppProps = {}) {
                                   BUREAU DB VERIFIED
                                 </span>
                                 {qco?.mandatory && (
-                                  <span className="concept-status-badge" style={{ background: '#FFFBEB', color: '#B45309', border: '1px solid #FDE68A', fontSize: '10.5px' }}>
-                                    ⚖️ MANDATORY ISI (QCO)
+                                  <span className="concept-status-badge" style={{ background: 'var(--amber-bg)', color: 'var(--amber-warn)', border: '1px solid var(--amber-border)', fontSize: '10.5px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                                    <Scale size={11} />
+                                    MANDATORY ISI (QCO)
                                   </span>
                                 )}
                               </div>
@@ -1509,52 +1522,53 @@ export default function App({ onLogout }: AppProps = {}) {
                       alignItems: 'center',
                       gap: '8px',
                       padding: '6px',
-                      backgroundColor: '#F5F2EB',
-                      border: '1px solid #E5E0D4',
+                      backgroundColor: 'var(--surface)',
+                      border: '1px solid var(--hairline)',
                       borderRadius: '10px',
                       overflowX: 'auto',
-                      boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
+                      boxShadow: 'var(--shadow-xs)',
                     }}
                   >
                     {[
                       {
                         id: 'dossier',
                         label: 'Intelligence Dossier & Reasoning',
-                        icon: '🔍',
+                        icon: Search,
                         badge: primary?.is_number || 'Active IS',
                       },
                       {
                         id: 'comparison',
                         label: 'Standards Comparison',
-                        icon: '⚖️',
+                        icon: Scale,
                         badge: `${(activeData.alternative_recommendations || []).length} Alternatives`,
                       },
                       {
                         id: 'audit',
                         label: 'CVC Audit Defense',
-                        icon: '🛡️',
+                        icon: ShieldCheck,
                         badge: 'Current Seal',
                       },
                       {
                         id: 'pastAudits',
                         label: 'Past Audits',
-                        icon: '📜',
+                        icon: History,
                         badge: 'Vault',
                       },
                       {
                         id: 'savedVault',
                         label: 'Saved Vault',
-                        icon: '💾',
+                        icon: BookmarkCheck,
                         badge: `${savedStandardsList.length}`,
                       },
                       {
                         id: 'nitGenerator',
                         label: 'NIT Clause Generator',
-                        icon: '📝',
+                        icon: FileCheck2,
                         badge: 'GFR Rule 144',
                       },
                     ].map((tab) => {
                       const isActive = explorerSubTab === tab.id;
+                      const IconComp = tab.icon;
                       return (
                         <button
                           key={tab.id}
@@ -1569,27 +1583,28 @@ export default function App({ onLogout }: AppProps = {}) {
                             gap: '7px',
                             padding: '9px 16px',
                             borderRadius: '7px',
-                            border: isActive ? '1px solid #36452F' : '1px solid transparent',
-                            backgroundColor: isActive ? '#36452F' : 'transparent',
-                            color: isActive ? '#FFFEFB' : 'var(--ink-secondary, #44503E)',
+                            border: isActive ? '1px solid var(--olive-primary)' : '1px solid transparent',
+                            backgroundColor: isActive ? 'var(--olive-primary)' : 'transparent',
+                            color: isActive ? '#FFFFFF' : 'var(--ink-secondary)',
                             fontSize: '12.5px',
-                            fontWeight: isActive ? 700 : 500,
+                            fontWeight: isActive ? 700 : 600,
                             cursor: 'pointer',
                             transition: 'all 0.15s ease',
-                            fontFamily: 'var(--font-data, monospace)',
-                            boxShadow: isActive ? '0 2px 6px rgba(54,69,47,0.2)' : 'none',
+                            fontFamily: 'var(--font-ui)',
+                            boxShadow: isActive ? '0 2px 6px rgba(0,0,0,0.12)' : 'none',
                           }}
                         >
-                          <span style={{ fontSize: '14px' }}>{tab.icon}</span>
+                          <IconComp size={15} style={{ opacity: isActive ? 1 : 0.8 }} />
                           <span>{tab.label}</span>
                           <span
                             style={{
-                              fontSize: '10px',
-                              padding: '2px 6px',
+                              fontSize: '10.5px',
+                              padding: '2px 7px',
                               borderRadius: '10px',
-                              backgroundColor: isActive ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.06)',
-                              color: isActive ? '#FFFFFF' : '#6E7A68',
-                              fontWeight: 600,
+                              backgroundColor: isActive ? 'rgba(255,255,255,0.22)' : 'var(--surface-secondary)',
+                              color: isActive ? '#FFFFFF' : 'var(--ink)',
+                              fontWeight: 700,
+                              fontFamily: 'var(--font-data)',
                             }}
                           >
                             {tab.badge}
@@ -1612,11 +1627,11 @@ export default function App({ onLogout }: AppProps = {}) {
                         gap: '6px',
                         padding: '9px 14px',
                         borderRadius: '7px',
-                        border: '1px solid #E5E0D4',
-                        backgroundColor: '#FFFFFF',
-                        color: '#991B1B',
+                        border: '1px solid var(--hairline)',
+                        backgroundColor: 'var(--surface-secondary)',
+                        color: 'var(--error-red)',
                         fontSize: '12px',
-                        fontWeight: 600,
+                        fontWeight: 700,
                         cursor: 'pointer',
                         transition: 'all 0.15s ease',
                         whiteSpace: 'nowrap',
@@ -1635,11 +1650,11 @@ export default function App({ onLogout }: AppProps = {}) {
                       {approvalToast && (
                         <div
                           style={{
-                            background: '#ECFDF5',
-                            border: '1px solid #86EFAC',
+                            background: 'var(--emerald-bg)',
+                            border: '1px solid var(--emerald-border)',
                             padding: '12px 18px',
                             borderRadius: '8px',
-                            color: '#166534',
+                            color: 'var(--emerald-text)',
                             fontSize: '13.5px',
                             display: 'flex',
                             alignItems: 'center',
@@ -1648,12 +1663,12 @@ export default function App({ onLogout }: AppProps = {}) {
                           }}
                         >
                           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <CheckCircle2 size={18} style={{ color: '#15803D' }} />
+                            <CheckCircle2 size={18} style={{ color: 'var(--emerald-pass)' }} />
                             <span>
                               <strong>Bureau DB Verified:</strong> {approvalToast}
                             </span>
                           </div>
-                          <span style={{ fontSize: '11.5px', color: '#15803D', fontFamily: 'var(--font-data)' }}>
+                          <span style={{ fontSize: '11.5px', color: 'var(--emerald-pass)', fontFamily: 'var(--font-data)', fontWeight: 700 }}>
                             Active in DB
                           </span>
                         </div>
@@ -1664,22 +1679,23 @@ export default function App({ onLogout }: AppProps = {}) {
                         {/* Top Metadata Row */}
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
-                            <span className="code-monogram" style={{ fontSize: '13.5px', padding: '4px 10px' }}>
+                            <span className="code-monogram" style={{ fontSize: '14px', padding: '4px 10px', fontWeight: 800 }}>
                               {primary?.is_number}
                             </span>
-                            <span className="concept-status-badge active">
+                            <span className="concept-status-badge active" style={{ fontWeight: 700 }}>
                               <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--emerald-pass)' }} />
                               {primary?.status || 'ACTIVE STANDARD'}
                             </span>
                             {isApprovedInDb && (
-                              <span className="concept-status-badge" style={{ background: '#ECFDF5', color: '#15803D', border: '1px solid #86EFAC', display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                              <span className="concept-status-badge" style={{ background: 'var(--emerald-bg)', color: 'var(--emerald-text)', border: '1px solid var(--emerald-border)', display: 'inline-flex', alignItems: 'center', gap: '5px', fontWeight: 700 }}>
                                 <CheckCircle2 size={12} />
                                 BUREAU DB APPROVED
                               </span>
                             )}
                             {qco?.mandatory && (
-                              <span className="concept-status-badge" style={{ background: '#FFFBEB', color: '#B45309', border: '1px solid #FDE68A' }}>
-                                ⚖️ MANDATORY ISI MARK (QCO)
+                              <span className="concept-status-badge" style={{ background: 'var(--amber-bg)', color: 'var(--amber-warn)', border: '1px solid var(--amber-border)', display: 'inline-flex', alignItems: 'center', gap: '5px', fontWeight: 700 }}>
+                                <Scale size={12} />
+                                MANDATORY ISI MARK (QCO)
                               </span>
                             )}
                             <span style={{ fontFamily: 'var(--font-data)', fontSize: '11.5px', color: 'var(--ink-muted)' }}>
@@ -1688,10 +1704,10 @@ export default function App({ onLogout }: AppProps = {}) {
                           </div>
 
                           <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'var(--surface-secondary)', padding: '5px 12px', borderRadius: 'var(--radius-full)', border: '1px solid var(--hairline)' }}>
-                            <span style={{ fontFamily: 'var(--font-ui)', fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 500 }}>
+                            <span style={{ fontFamily: 'var(--font-ui)', fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 600 }}>
                               Match Confidence:
                             </span>
-                            <span style={{ fontFamily: 'var(--font-data)', fontSize: '13px', fontWeight: 700, color: 'var(--emerald-text)' }}>
+                            <span style={{ fontFamily: 'var(--font-data)', fontSize: '13px', fontWeight: 800, color: 'var(--emerald-pass)' }}>
                               {primary?.confidence ? `${(primary.confidence * 100).toFixed(0)}%` : '98%'}
                             </span>
                           </div>
@@ -1699,7 +1715,7 @@ export default function App({ onLogout }: AppProps = {}) {
 
                         {/* Standard Title */}
                         <div>
-                          <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '22px', fontWeight: 700, color: 'var(--ink)', lineHeight: 1.35, margin: 0, letterSpacing: '-0.015em' }}>
+                          <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '23px', fontWeight: 800, color: 'var(--ink)', lineHeight: 1.35, margin: 0, letterSpacing: '-0.015em' }}>
                             {primary?.title}
                           </h1>
                         </div>
@@ -1714,6 +1730,7 @@ export default function App({ onLogout }: AppProps = {}) {
                             fontSize: '13.5px',
                             color: 'var(--ink-secondary)',
                             lineHeight: 1.6,
+                            fontWeight: 500,
                           }}>
                             "{primary.scope_snippet}"
                           </div>
@@ -1723,8 +1740,8 @@ export default function App({ onLogout }: AppProps = {}) {
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px' }}>
                           {getStandardDynamicMetrics(primary).map((metric, idx) => (
                             <div key={idx} className="metric-mini-tile">
-                              <span className="label">{metric.label}</span>
-                              <span className="val">{metric.val}</span>
+                              <span className="label" style={{ fontWeight: 700 }}>{metric.label}</span>
+                              <span className="val" style={{ fontWeight: 800, color: 'var(--ink)' }}>{metric.val}</span>
                             </div>
                           ))}
                         </div>
@@ -1743,26 +1760,26 @@ export default function App({ onLogout }: AppProps = {}) {
                               padding: '8px 16px',
                               borderRadius: '6px',
                               fontSize: '13px',
-                              fontWeight: 600,
+                              fontWeight: 700,
                               cursor: 'pointer',
                               transition: 'all 0.15s ease',
-                              backgroundColor: isApprovedInDb ? '#ECFDF5' : '#36452F',
-                              color: isApprovedInDb ? '#15803D' : '#FFFEFB',
-                              border: isApprovedInDb ? '1px solid #86EFAC' : '1px solid #36452F',
-                              boxShadow: isApprovedInDb ? '0 1px 3px rgba(21,128,61,0.12)' : '0 2px 6px rgba(54,69,47,0.25)',
+                              backgroundColor: isApprovedInDb ? 'var(--emerald-bg)' : 'var(--olive-primary)',
+                              color: isApprovedInDb ? 'var(--emerald-text)' : '#FFFFFF',
+                              border: isApprovedInDb ? '1px solid var(--emerald-border)' : '1px solid var(--olive-primary)',
+                              boxShadow: 'var(--shadow-xs)',
                             }}
                           >
                             {isApproving ? (
-                              <span>⏳ Persisting in DB...</span>
+                              <span>Persisting in DB...</span>
                             ) : isApprovedInDb ? (
                               <>
-                                <CheckCircle2 size={15} style={{ color: '#15803D' }} />
-                                <span>✓ Approved & Saved in Bureau DB</span>
+                                <CheckCircle2 size={15} style={{ color: 'var(--emerald-pass)' }} />
+                                <span>Approved & Saved in Bureau DB</span>
                               </>
                             ) : (
                               <>
                                 <Save size={15} />
-                                <span>💾 Save & Approve Standard in DB</span>
+                                <span>Save & Approve Standard in DB</span>
                               </>
                             )}
                           </button>
@@ -1771,44 +1788,55 @@ export default function App({ onLogout }: AppProps = {}) {
                             type="button"
                             onClick={handleCopyClause}
                             className="btn-primary"
+                            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 700 }}
                           >
-                            <span>{copiedClause ? '✓ Tender Clause Copied' : '📋 Copy Tender Clause'}</span>
+                            <Copy size={14} />
+                            <span>{copiedClause ? 'Tender Clause Copied' : 'Copy Tender Clause'}</span>
                           </button>
                           <button
                             type="button"
                             onClick={() => setExplorerSubTab('audit')}
                             className="btn-secondary"
+                            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 600 }}
                           >
-                            <span>🛡️ View CVC Audit Defense</span>
+                            <ShieldCheck size={14} />
+                            <span>View CVC Audit Defense</span>
                           </button>
                           <button
                             type="button"
                             onClick={() => setExplorerSubTab('pastAudits')}
                             className="btn-secondary"
+                            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 600 }}
                           >
-                            <span>📜 Past Audits</span>
+                            <History size={14} />
+                            <span>Past Audits</span>
                           </button>
                           <button
                             type="button"
                             onClick={() => setExplorerSubTab('comparison')}
                             className="btn-secondary"
+                            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 600 }}
                           >
-                            <span>⚖️ Compare Allied Standards</span>
+                            <Scale size={14} />
+                            <span>Compare Allied Standards</span>
                           </button>
                           <button
                             type="button"
                             onClick={() => setExplorerSubTab('nitGenerator')}
                             className="btn-secondary"
+                            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 600 }}
                           >
-                            <span>📝 Draft NIT Clause</span>
+                            <FileCheck2 size={14} />
+                            <span>Draft NIT Clause</span>
                           </button>
                           <button
                             type="button"
                             onClick={() => setIsAuthorityDrawerOpen(true)}
                             className="btn-secondary"
-                            style={{ background: 'var(--olive-leaf)', color: 'var(--olive-primary)', borderColor: 'rgba(54,69,47,0.25)' }}
+                            style={{ background: 'var(--olive-leaf)', color: 'var(--olive-primary)', borderColor: 'var(--hairline)', display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 700 }}
                           >
-                            <span>🤖 Ask BIS Authority AI</span>
+                            <Bot size={14} />
+                            <span>Ask BIS Authority AI</span>
                           </button>
                         </div>
                       </div>
@@ -1862,12 +1890,25 @@ export default function App({ onLogout }: AppProps = {}) {
                               className={`detail-tab-btn ${activeTab === 'role_view' ? 'active' : ''}`}
                               onClick={() => setActiveTab('role_view')}
                               style={{
-                                fontWeight: 600,
+                                fontWeight: 700,
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '6px',
                                 borderColor: activeTab === 'role_view' ? 'var(--collapse-cobalt)' : undefined,
                               }}
                             >
-                              {role === 'OFFICER' && '🏛️ Tender Authority & Drafting'}
-                              {role === 'VENDOR' && '🏭 Industrial Vendor Portal'}
+                              {role === 'OFFICER' && (
+                                <>
+                                  <Building2 size={13} />
+                                  <span>Tender Authority & Drafting</span>
+                                </>
+                              )}
+                              {role === 'VENDOR' && (
+                                <>
+                                  <Factory size={13} />
+                                  <span>Industrial Vendor Portal</span>
+                                </>
+                              )}
                             </button>
                           </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import type { StandardsResponse } from '../types';
+import { FlaskConical, AlertOctagon } from 'lucide-react';
 
 interface SandboxBannerProps {
   data: StandardsResponse;
@@ -17,8 +18,8 @@ export const SandboxBanner: React.FC<SandboxBannerProps> = ({ data, mode }) => {
       {isDryRun && (
         <div
           style={{
-            background: 'rgba(224, 152, 43, 0.08)',
-            border: '1px solid rgba(224, 152, 43, 0.35)',
+            background: 'var(--amber-bg)',
+            border: '1px solid var(--amber-border)',
             borderLeft: '4px solid var(--signal-amber)',
             borderRadius: 'var(--radius-sm)',
             padding: '10px 16px',
@@ -27,14 +28,14 @@ export const SandboxBanner: React.FC<SandboxBannerProps> = ({ data, mode }) => {
             alignItems: 'center',
           }}
         >
-          <span style={{ fontSize: '18px' }}>🧪</span>
+          <FlaskConical size={18} color="var(--amber-warn)" />
           <div>
             <div
               style={{
                 fontFamily: 'var(--font-data)',
                 fontSize: '11px',
                 fontWeight: 700,
-                color: '#92400E',
+                color: 'var(--amber-warn)',
                 textTransform: 'uppercase',
               }}
             >
@@ -44,7 +45,7 @@ export const SandboxBanner: React.FC<SandboxBannerProps> = ({ data, mode }) => {
               style={{
                 fontFamily: 'var(--font-prose)',
                 fontSize: '12px',
-                color: '#78350F',
+                color: 'var(--ink-secondary)',
                 marginTop: '2px',
               }}
             >
@@ -59,8 +60,8 @@ export const SandboxBanner: React.FC<SandboxBannerProps> = ({ data, mode }) => {
           <div
             key={i}
             style={{
-              background: 'rgba(194, 59, 59, 0.06)',
-              border: '1px solid rgba(194, 59, 59, 0.3)',
+              background: 'var(--error-bg)',
+              border: '1px solid var(--error-border)',
               borderLeft: '4px solid var(--error-line)',
               borderRadius: 'var(--radius-sm)',
               padding: '10px 16px',
@@ -69,14 +70,14 @@ export const SandboxBanner: React.FC<SandboxBannerProps> = ({ data, mode }) => {
               alignItems: 'flex-start',
             }}
           >
-            <span style={{ fontSize: '18px', marginTop: '1px' }}>🔴</span>
+            <AlertOctagon size={18} color="var(--error-red)" style={{ marginTop: '2px', flexShrink: 0 }} />
             <div>
               <div
                 style={{
                   fontFamily: 'var(--font-data)',
                   fontSize: '11px',
                   fontWeight: 700,
-                  color: '#991B1B',
+                  color: 'var(--error-red)',
                   textTransform: 'uppercase',
                 }}
               >
@@ -86,7 +87,7 @@ export const SandboxBanner: React.FC<SandboxBannerProps> = ({ data, mode }) => {
                 style={{
                   fontFamily: 'var(--font-prose)',
                   fontSize: '12px',
-                  color: '#7F1D1D',
+                  color: 'var(--ink-secondary)',
                   marginTop: '2px',
                 }}
               >

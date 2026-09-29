@@ -1,5 +1,23 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Sparkles, Copy, Check, Trash2, Send, Shield, BookOpen, AlertCircle, AtSign } from 'lucide-react';
+import { 
+  Sparkles, 
+  Copy, 
+  Check, 
+  Trash2, 
+  Send, 
+  ShieldCheck, 
+  BookOpen, 
+  AlertTriangle, 
+  Scale,
+  FlaskConical,
+  FileEdit,
+  History,
+  Building2,
+  User,
+  Bot,
+  X,
+  Loader2
+} from 'lucide-react';
 import type { StandardsResponse } from '../types';
 import { StandardMentionAutocomplete } from './StandardMentionAutocomplete';
 import type { StandardMentionItem } from '../data/standardsMentionCatalog';
@@ -169,6 +187,28 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
     setMentionOpen(false);
   };
 
+function isValidMentionQuery(q: string): boolean {
+  const trimmed = q.trim();
+  if (trimmed === '') return true; // just typed '@' or '@ '
+
+  // Standard identifier prefix: "IS", "IS 456", "IS 7098", "IS 269:2015", "IS 1786-2008"
+  if (/^IS(\s+[0-9]+[A-Za-z0-9/:\-()]*|\s*)$/i.test(trimmed)) {
+    return true;
+  }
+
+  // Direct numeric standard code: "456", "7098", "269"
+  if (/^[0-9]+[A-Za-z0-9/:\-()]*$/.test(trimmed)) {
+    return true;
+  }
+
+  // Single keyword without spaces: "cement", "steel", "pipe", "cable", "rebar"
+  if (/^[a-zA-Z0-9_\-]+$/.test(trimmed)) {
+    return true;
+  }
+
+  return false;
+}
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
     const cursorPos = e.target.selectionStart || val.length;
@@ -181,9 +221,9 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
       const queryPart = textBeforeCursor.slice(lastAtIndex + 1);
       const charBeforeAt = lastAtIndex > 0 ? textBeforeCursor[lastAtIndex - 1] : ' ';
       if (charBeforeAt === ' ' || charBeforeAt === '\n' || lastAtIndex === 0) {
-        if (queryPart.length <= 30 && !queryPart.includes('\n')) {
+        if (isValidMentionQuery(queryPart) && queryPart.length <= 25 && !queryPart.includes('\n')) {
           setMentionOpen(true);
-          setMentionQuery(queryPart);
+          setMentionQuery(queryPart.trim());
           setMentionStartIndex(lastAtIndex);
           return;
         }
@@ -212,6 +252,8 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
 
     setInputQuestion(newText);
     setMentionOpen(false);
+    setMentionStartIndex(-1);
+    setMentionQuery('');
 
     setTimeout(() => {
       if (inputRef.current) {
@@ -232,17 +274,17 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
 
   const dynamicQuickPrompts = isNumber
     ? [
-        { label: '⚖️ Is ISI Mark mandatory?', text: `Is ISI mark or BIS certification mandatory for ${isNumber}? What is the statutory QCO?` },
-        { label: '🧪 Mandatory Lab Tests', text: `What are the mandatory laboratory test methods and parameter limits specified under ${isNumber}?` },
-        { label: '🛡️ CVC Defense & GFR 144', text: `How does citing ${isNumber} defend against CVC audit objections and comply with GFR Rule 144?` },
-        { label: '📝 Draft Tender Clause', text: `Draft a citation-ready NIT tender clause enforcing ${isNumber} with NABL test requirements.` },
-        { label: '🔄 Supersession History', text: `Has ${isNumber} superseded any older standard version or received recent amendments?` },
+        { label: 'Is ISI Mark mandatory?', text: `Is ISI mark or BIS certification mandatory for ${isNumber}? What is the statutory QCO?` },
+        { label: 'Mandatory Lab Tests', text: `What are the mandatory laboratory test methods and parameter limits specified under ${isNumber}?` },
+        { label: 'CVC Defense & GFR 144', text: `How does citing ${isNumber} defend against CVC audit objections and comply with GFR Rule 144?` },
+        { label: 'Draft Tender Clause', text: `Draft a citation-ready NIT tender clause enforcing ${isNumber} with NABL test requirements.` },
+        { label: 'Supersession History', text: `Has ${isNumber} superseded any older standard version or received recent amendments?` },
       ]
     : [
-        { label: '⚖️ Section 16 BIS Act', text: 'Explain the legal enforceability of Quality Control Orders under Section 16 of BIS Act 2016.' },
-        { label: '🛡️ GFR 144(i) Rules', text: 'How does GFR 2017 Rule 144 mandate Indian Standards in government procurement?' },
-        { label: '🔍 Mandatory QCO List', text: 'How do I check if a product category falls under compulsory ISI mark certification?' },
-        { label: '🏢 NABL Lab Mandates', text: 'What are the rules for third-party lab testing and Manufacturer Test Certificates (MTC)?' },
+        { label: 'Section 16 BIS Act', text: 'Explain the legal enforceability of Quality Control Orders under Section 16 of BIS Act 2016.' },
+        { label: 'GFR 144(i) Rules', text: 'How does GFR 2017 Rule 144 mandate Indian Standards in government procurement?' },
+        { label: 'Mandatory QCO List', text: 'How do I check if a product category falls under compulsory ISI mark certification?' },
+        { label: 'NABL Lab Mandates', text: 'What are the rules for third-party lab testing and Manufacturer Test Certificates (MTC)?' },
       ];
 
   return (
@@ -250,10 +292,10 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
       style={{
         position: 'fixed',
         inset: 0,
-        zIndex: 100,
+        zIndex: 9999,
         display: 'flex',
         justifyContent: 'flex-end',
-        backgroundColor: 'rgba(15, 23, 42, 0.4)',
+        backgroundColor: 'rgba(0, 20, 40, 0.45)',
         backdropFilter: 'blur(3px)',
       }}
       onClick={onClose}
@@ -263,41 +305,42 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
           width: '100%',
           maxWidth: '480px',
           height: '100%',
-          backgroundColor: '#FFFFFF',
-          boxShadow: '-6px 0 28px rgba(15, 23, 42, 0.18)',
+          backgroundColor: 'var(--surface)',
+          boxShadow: 'var(--shadow-modal)',
           display: 'flex',
           flexDirection: 'column',
-          animation: 'fadeSlideUp 0.2s ease-out',
+          borderLeft: '1px solid var(--hairline)',
+          animation: 'slideInRight 0.22s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Drawer Header */}
         <div
           style={{
-            padding: '14px 18px',
-            borderBottom: '1px solid #E2E8F0',
+            padding: '16px 20px',
+            borderBottom: '1px solid var(--hairline)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            background: 'linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%)',
+            background: 'var(--surface-secondary)',
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <div
               style={{
-                width: '34px',
-                height: '34px',
+                width: '36px',
+                height: '36px',
                 borderRadius: '8px',
-                background: '#1E293B',
-                color: '#FFFEFB',
+                background: 'var(--olive-primary)',
+                color: '#FFFFFF',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 fontSize: '16px',
-                boxShadow: '0 2px 6px rgba(15,23,42,0.15)',
+                boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
               }}
             >
-              ⚖️
+              <Scale size={18} color="#FFFFFF" />
             </div>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
@@ -306,7 +349,7 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                     fontFamily: 'var(--font-ui, sans-serif)',
                     fontSize: '14px',
                     fontWeight: 700,
-                    color: '#0F172A',
+                    color: 'var(--ink)',
                   }}
                 >
                   BIS Authority & Legal Assistant
@@ -316,8 +359,9 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                     fontSize: '9.5px',
                     padding: '1px 6px',
                     borderRadius: '10px',
-                    background: '#DBEAFE',
-                    color: '#1E40AF',
+                    background: 'var(--emerald-bg)',
+                    color: 'var(--emerald-pass)',
+                    border: '1px solid var(--emerald-border)',
                     fontWeight: 700,
                   }}
                 >
@@ -328,7 +372,7 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                 style={{
                   fontFamily: 'var(--font-data, monospace)',
                   fontSize: '11px',
-                  color: '#64748B',
+                  color: 'var(--ink-muted)',
                   marginTop: '1px',
                 }}
               >
@@ -345,12 +389,12 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                 title="Clear Chat History"
                 style={{
                   background: 'none',
-                  border: '1px solid #E2E8F0',
+                  border: '1px solid var(--hairline)',
                   borderRadius: '6px',
                   width: '28px',
                   height: '28px',
                   cursor: 'pointer',
-                  color: '#64748B',
+                  color: 'var(--ink-muted)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -365,20 +409,18 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
               onClick={onClose}
               style={{
                 background: 'none',
-                border: '1px solid #E2E8F0',
+                border: '1px solid var(--hairline)',
                 borderRadius: '6px',
                 width: '28px',
                 height: '28px',
                 cursor: 'pointer',
-                color: '#64748B',
+                color: 'var(--ink-muted)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                fontSize: '14px',
-                fontWeight: 'bold',
               }}
             >
-              ✕
+              <X size={14} />
             </button>
           </div>
         </div>
@@ -392,7 +434,7 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
             display: 'flex',
             flexDirection: 'column',
             gap: '12px',
-            backgroundColor: '#FCFCFD',
+            backgroundColor: 'var(--canvas)',
           }}
         >
           {messages.length === 0 && (
@@ -400,20 +442,20 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
               style={{
                 padding: '24px 16px',
                 textAlign: 'center',
-                color: '#64748B',
+                color: 'var(--ink-muted)',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 gap: '8px',
               }}
             >
-              <div style={{ width: '42px', height: '42px', borderRadius: '50%', background: '#F1F5F9', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '20px' }}>
-                🤖
+              <div style={{ width: '42px', height: '42px', borderRadius: '50%', background: 'var(--surface-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--olive-primary)' }}>
+                <Bot size={22} />
               </div>
-              <div style={{ fontWeight: 600, fontSize: '13.5px', color: '#1E293B' }}>
+              <div style={{ fontWeight: 700, fontSize: '14px', color: 'var(--ink)' }}>
                 BIS Legal & Technical Authority Assistant
               </div>
-              <div style={{ fontSize: '12px', maxWidth: '320px', lineHeight: 1.5 }}>
+              <div style={{ fontSize: '12px', maxWidth: '320px', lineHeight: 1.5, color: 'var(--ink-secondary)' }}>
                 Ask questions regarding mandatory QCO Gazette notifications, test protocols, GFR 144 compliance, and tender clause formulations.
               </div>
             </div>
@@ -423,11 +465,10 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
             const isUser = msg.type === 'user' || msg.sender === 'user';
             const isAlert = msg.source === 'alert';
 
-            let icon = isUser ? '👤' : isAlert ? '🚨' : '⚖️';
             let label = isUser ? 'OFFICER QUERY' : isAlert ? 'LIVE GAZETTE ALERT' : 'BIS AUTHORITY AI';
-            let bg = isUser ? '#F8FAFC' : isAlert ? '#FFF7ED' : '#FFFFFF';
-            let border = isUser ? '#E2E8F0' : isAlert ? '#FED7AA' : '#E2E8F0';
-            let borderLeft = isUser ? '#6366F1' : isAlert ? '#EA580C' : '#1E3A8A';
+            let bg = isUser ? 'var(--surface-secondary)' : isAlert ? 'var(--amber-bg)' : 'var(--surface)';
+            let border = isUser ? 'var(--hairline)' : isAlert ? 'var(--amber-border)' : 'var(--hairline)';
+            let borderLeft = isUser ? 'var(--olive-primary)' : isAlert ? 'var(--amber-warn)' : 'var(--emerald-pass)';
 
             return (
               <div
@@ -440,8 +481,8 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                   borderLeft: `3.5px solid ${borderLeft}`,
                   fontSize: '13px',
                   lineHeight: 1.5,
-                  color: '#0F172A',
-                  boxShadow: isUser ? 'none' : '0 1px 3px rgba(0,0,0,0.03)',
+                  color: 'var(--ink)',
+                  boxShadow: isUser ? 'none' : 'var(--shadow-xs)',
                   position: 'relative',
                 }}
               >
@@ -461,14 +502,14 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                       fontFamily: 'var(--font-data)',
                       fontSize: '9.5px',
                       fontWeight: 700,
-                      color: '#64748B',
+                      color: 'var(--ink-muted)',
                       textTransform: 'uppercase',
                     }}
                   >
-                    <span>{icon}</span>
+                    {isUser ? <User size={12} /> : isAlert ? <AlertTriangle size={12} color="var(--amber-warn)" /> : <Scale size={12} color="var(--emerald-pass)" />}
                     <span>{label}</span>
                     {msg.model_used && (
-                      <span style={{ fontSize: '8.5px', color: '#94A3B8', fontWeight: 500 }}>
+                      <span style={{ fontSize: '8.5px', color: 'var(--ink-muted)', fontWeight: 500 }}>
                         · {msg.model_used}
                       </span>
                     )}
@@ -483,7 +524,7 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                         background: 'none',
                         border: 'none',
                         cursor: 'pointer',
-                        color: copiedMsgId === msg.id ? '#10B981' : '#94A3B8',
+                        color: copiedMsgId === msg.id ? 'var(--emerald-pass)' : 'var(--ink-muted)',
                         display: 'flex',
                         alignItems: 'center',
                         gap: '3px',
@@ -507,19 +548,19 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
               style={{
                 padding: '10px 14px',
                 borderRadius: '8px',
-                backgroundColor: '#F8FAFC',
-                border: '1px solid #E2E8F0',
-                borderLeft: '3.5px solid #1E3A8A',
+                backgroundColor: 'var(--surface)',
+                border: '1px solid var(--hairline)',
+                borderLeft: '3.5px solid var(--olive-primary)',
                 fontFamily: 'var(--font-data)',
                 fontSize: '11.5px',
-                color: '#475569',
+                color: 'var(--ink-secondary)',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '8px',
               }}
             >
-              <span style={{ animation: 'spin 1.5s linear infinite', display: 'inline-block' }}>⚙️</span>
-              Cross-referencing Gazette Notifications & CVC Guidelines...
+              <Loader2 size={14} color="var(--olive-primary)" style={{ animation: 'spin 1.5s linear infinite' }} />
+              <span>Cross-referencing Gazette Notifications & CVC Guidelines...</span>
             </div>
           )}
 
@@ -527,7 +568,7 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
         </div>
 
         {/* Quick Prompts & Input Box with WhatsApp-Style @ Mention Popover */}
-        <div style={{ padding: '12px 16px', borderTop: '1px solid #E2E8F0', background: '#F8FAFC', position: 'relative' }}>
+        <div style={{ padding: '12px 16px', borderTop: '1px solid var(--hairline)', background: 'var(--surface-secondary)', position: 'relative' }}>
           {/* Floating @ Mention Autocomplete Popover */}
           <StandardMentionAutocomplete
             isOpen={mentionOpen}
@@ -549,21 +590,11 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                   fontWeight: 600,
                   padding: '3px 8px',
                   borderRadius: '12px',
-                  border: '1px solid #CBD5E1',
-                  background: '#FFFFFF',
-                  color: '#334155',
+                  border: '1px solid var(--hairline)',
+                  background: 'var(--surface)',
+                  color: 'var(--ink-secondary)',
                   cursor: 'pointer',
                   transition: 'all 0.15s ease',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#EFF6FF';
-                  e.currentTarget.style.borderColor = '#93C5FD';
-                  e.currentTarget.style.color = '#1E40AF';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#FFFFFF';
-                  e.currentTarget.style.borderColor = '#CBD5E1';
-                  e.currentTarget.style.color = '#334155';
                 }}
               >
                 {q.label}
@@ -588,9 +619,9 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                 }
               }}
               style={{
-                backgroundColor: mentionOpen ? '#1E3A8A' : '#FFFFFF',
-                color: mentionOpen ? '#FFFFFF' : '#1E3A8A',
-                border: mentionOpen ? '1px solid #1E3A8A' : '1px solid #CBD5E1',
+                backgroundColor: mentionOpen ? 'var(--olive-primary)' : 'var(--surface)',
+                color: mentionOpen ? '#FFFFFF' : 'var(--olive-primary)',
+                border: mentionOpen ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
                 borderRadius: '6px',
                 height: '38px',
                 padding: '0 10px',
@@ -606,7 +637,7 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
               title="Mention Indian Standard (@IS)"
             >
               <span>@</span>
-              <span style={{ fontSize: '11px', fontWeight: 600 }}>IS</span>
+              <span style={{ fontSize: '11px', fontWeight: 700 }}>IS</span>
             </button>
 
             <input
@@ -621,11 +652,11 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
                 padding: '0 12px',
                 fontFamily: 'var(--font-ui)',
                 fontSize: '12.5px',
-                border: '1px solid #CBD5E1',
+                border: '1px solid var(--hairline)',
                 borderRadius: '6px',
                 outline: 'none',
-                backgroundColor: '#FFFFFF',
-                color: '#0F172A',
+                backgroundColor: 'var(--surface)',
+                color: 'var(--ink)',
               }}
             />
             <button

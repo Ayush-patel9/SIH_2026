@@ -15,6 +15,7 @@ import {
   Loader2,
   ExternalLink,
   Sparkles,
+  AlertTriangle,
 } from 'lucide-react';
 
 // Configure PDF.js worker
@@ -535,11 +536,11 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
             style={{
               maxWidth: '820px',
               width: '100%',
-              backgroundColor: '#111827',
+              backgroundColor: 'var(--surface)',
               borderRadius: '12px',
               padding: '32px 36px',
-              border: '1px solid rgba(255,255,255,0.08)',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
+              border: '1px solid var(--hairline)',
+              boxShadow: 'var(--shadow-card)',
               transform: `scale(${scale})`,
               transformOrigin: 'top center',
             }}
@@ -550,13 +551,17 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
                   marginBottom: '16px',
                   padding: '10px 14px',
                   borderRadius: '8px',
-                  backgroundColor: 'rgba(239, 68, 68, 0.1)',
-                  border: '1px solid rgba(239, 68, 68, 0.3)',
-                  color: '#f87171',
+                  backgroundColor: 'var(--amber-bg)',
+                  border: '1px solid var(--amber-border)',
+                  color: 'var(--amber-warn)',
                   fontSize: '12px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
                 }}
               >
-                ⚠ Native PDF render preview notice: {pdfLoadError} (Showing formatted text layer)
+                <AlertTriangle size={14} color="var(--amber-warn)" />
+                <span>Native PDF render preview notice: {pdfLoadError} (Showing formatted text layer)</span>
               </div>
             )}
 
@@ -565,15 +570,15 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                borderBottom: '1px solid rgba(255,255,255,0.08)',
+                borderBottom: '1px solid var(--hairline)',
                 paddingBottom: '12px',
                 marginBottom: '20px',
               }}
             >
-              <span style={{ fontSize: '12px', fontWeight: 600, color: '#38bdf8' }}>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--olive-primary)', fontFamily: 'var(--font-data)' }}>
                 PAGE {currentPage} OF {textPages.length}
               </span>
-              <span style={{ fontSize: '11px', color: '#64748b' }}>SPECIFICATION DOCUMENT LAYER</span>
+              <span style={{ fontSize: '11px', color: 'var(--ink-muted)', fontWeight: 600 }}>SPECIFICATION DOCUMENT LAYER</span>
             </div>
 
             <pre
@@ -582,7 +587,7 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
                 fontFamily: 'JetBrains Mono, Menlo, monospace',
                 fontSize: '13px',
                 lineHeight: '1.7',
-                color: '#e2e8f0',
+                color: 'var(--ink)',
                 margin: 0,
               }}
             >
@@ -609,10 +614,11 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
                       ref={textHighlightRef}
                       style={{
                         backgroundColor: 'rgba(250, 204, 21, 0.35)',
-                        color: '#fef08a',
+                        color: 'inherit',
                         padding: '2px 4px',
                         borderRadius: '3px',
                         borderBottom: '2px solid #eab308',
+                        fontWeight: 700,
                       }}
                     >
                       {matched}
@@ -633,8 +639,8 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
           alignItems: 'center',
           justifyContent: 'space-between',
           padding: '10px 16px',
-          borderTop: '1px solid rgba(255,255,255,0.08)',
-          backgroundColor: '#0f172a',
+          borderTop: '1px solid var(--hairline)',
+          backgroundColor: 'var(--surface-secondary)',
         }}
       >
         <button
@@ -644,12 +650,13 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
             display: 'flex',
             alignItems: 'center',
             gap: '4px',
-            backgroundColor: currentPage <= 1 ? 'transparent' : 'rgba(255,255,255,0.06)',
-            border: '1px solid rgba(255,255,255,0.1)',
-            color: currentPage <= 1 ? '#475569' : '#f8fafc',
+            backgroundColor: currentPage <= 1 ? 'transparent' : 'var(--surface)',
+            border: '1px solid var(--hairline)',
+            color: currentPage <= 1 ? 'var(--ink-muted)' : 'var(--ink)',
             borderRadius: '6px',
             padding: '6px 12px',
             fontSize: '12px',
+            fontWeight: 600,
             cursor: currentPage <= 1 ? 'not-allowed' : 'pointer',
           }}
         >
@@ -657,7 +664,7 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
         </button>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ fontSize: '12px', color: '#94a3b8' }}>Page</span>
+          <span style={{ fontSize: '12px', color: 'var(--ink-muted)' }}>Page</span>
           <input
             type="text"
             value={pageInput}
@@ -671,15 +678,16 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
             style={{
               width: '42px',
               textAlign: 'center',
-              backgroundColor: '#1e293b',
-              border: '1px solid rgba(255,255,255,0.15)',
+              backgroundColor: 'var(--surface)',
+              border: '1px solid var(--hairline)',
               borderRadius: '6px',
-              color: '#f8fafc',
+              color: 'var(--ink)',
               fontSize: '12px',
+              fontWeight: 700,
               padding: '3px 0',
             }}
           />
-          <span style={{ fontSize: '12px', color: '#94a3b8' }}>
+          <span style={{ fontSize: '12px', color: 'var(--ink-muted)' }}>
             of {effectiveNumPages || 1}
           </span>
         </div>
@@ -694,15 +702,16 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
             backgroundColor:
               effectiveNumPages > 0 && currentPage >= effectiveNumPages
                 ? 'transparent'
-                : 'rgba(255,255,255,0.06)',
-            border: '1px solid rgba(255,255,255,0.1)',
+                : 'var(--surface)',
+            border: '1px solid var(--hairline)',
             color:
               effectiveNumPages > 0 && currentPage >= effectiveNumPages
-                ? '#475569'
-                : '#f8fafc',
+                ? 'var(--ink-muted)'
+                : 'var(--ink)',
             borderRadius: '6px',
             padding: '6px 12px',
             fontSize: '12px',
+            fontWeight: 600,
             cursor:
               effectiveNumPages > 0 && currentPage >= effectiveNumPages
                 ? 'not-allowed'

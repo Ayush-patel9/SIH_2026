@@ -11,6 +11,9 @@ import {
   ChevronUp,
   Sparkles,
   BookOpen,
+  MapPin,
+  ArrowRight,
+  Zap,
 } from 'lucide-react';
 
 interface ProductISInventoryTabProps {
@@ -41,6 +44,11 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
   const [overrideInputs, setOverrideInputs] = useState<Record<string, string>>({});
   const [expandedOverrides, setExpandedOverrides] = useState<Record<string, boolean>>({});
+  const [expandedInspect, setExpandedInspect] = useState<Record<string, boolean>>({});
+
+  const handleToggleInspect = (productId: string) => {
+    setExpandedInspect((prev) => ({ ...prev, [productId]: !prev[productId] }));
+  };
 
   const handleSelectOption = (productId: string, optionId: string) => {
     setSelectedAnswers((prev) => ({ ...prev, [productId]: optionId }));
@@ -79,10 +87,10 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
             type="button"
             onClick={() => setFilter('ALL')}
             style={{
-              padding: '7px 14px',
+              padding: '7px 15px',
               borderRadius: '20px',
               fontSize: '12px',
-              fontWeight: filter === 'ALL' ? 700 : 500,
+              fontWeight: filter === 'ALL' ? 700 : 600,
               fontFamily: 'var(--font-ui)',
               cursor: 'pointer',
               border: filter === 'ALL' ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
@@ -99,10 +107,10 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
             type="button"
             onClick={() => setFilter('NEEDS_CLARIFICATION')}
             style={{
-              padding: '7px 14px',
+              padding: '7px 15px',
               borderRadius: '20px',
               fontSize: '12px',
-              fontWeight: filter === 'NEEDS_CLARIFICATION' ? 700 : 500,
+              fontWeight: filter === 'NEEDS_CLARIFICATION' ? 700 : 600,
               fontFamily: 'var(--font-ui)',
               cursor: 'pointer',
               border: filter === 'NEEDS_CLARIFICATION' ? '1px solid var(--amber-warn)' : '1px solid var(--hairline)',
@@ -110,19 +118,23 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
               color: filter === 'NEEDS_CLARIFICATION' ? '#FFFFFF' : 'var(--ink-secondary)',
               transition: 'all 0.15s ease',
               boxShadow: filter === 'NEEDS_CLARIFICATION' ? '0 2px 6px rgba(0,0,0,0.12)' : 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
             }}
           >
-            ⚡ Needs Clarification ({products.filter((p) => p.clarification_needed || p.confidence_score < 0.85).length})
+            <Zap size={13} />
+            <span>Needs Clarification ({products.filter((p) => p.clarification_needed || p.confidence_score < 0.85).length})</span>
           </button>
 
           <button
             type="button"
             onClick={() => setFilter('OUTDATED')}
             style={{
-              padding: '7px 14px',
+              padding: '7px 15px',
               borderRadius: '20px',
               fontSize: '12px',
-              fontWeight: filter === 'OUTDATED' ? 700 : 500,
+              fontWeight: filter === 'OUTDATED' ? 700 : 600,
               fontFamily: 'var(--font-ui)',
               cursor: 'pointer',
               border: filter === 'OUTDATED' ? '1px solid var(--error-red)' : '1px solid var(--hairline)',
@@ -130,19 +142,23 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
               color: filter === 'OUTDATED' ? '#FFFFFF' : 'var(--ink-secondary)',
               transition: 'all 0.15s ease',
               boxShadow: filter === 'OUTDATED' ? '0 2px 6px rgba(0,0,0,0.12)' : 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
             }}
           >
-            ⚠️ Superseded Codes ({products.filter((p) => p.detected_outdated_is).length})
+            <AlertTriangle size={13} />
+            <span>Superseded Codes ({products.filter((p) => p.detected_outdated_is).length})</span>
           </button>
 
           <button
             type="button"
             onClick={() => setFilter('RESOLVED')}
             style={{
-              padding: '7px 14px',
+              padding: '7px 15px',
               borderRadius: '20px',
               fontSize: '12px',
-              fontWeight: filter === 'RESOLVED' ? 700 : 500,
+              fontWeight: filter === 'RESOLVED' ? 700 : 600,
               fontFamily: 'var(--font-ui)',
               cursor: 'pointer',
               border: filter === 'RESOLVED' ? '1px solid var(--emerald-pass)' : '1px solid var(--hairline)',
@@ -150,9 +166,13 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
               color: filter === 'RESOLVED' ? '#FFFFFF' : 'var(--ink-secondary)',
               transition: 'all 0.15s ease',
               boxShadow: filter === 'RESOLVED' ? '0 2px 6px rgba(0,0,0,0.12)' : 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
             }}
           >
-            ✓ Resolved ({products.filter((p) => p.status === 'RESOLVED').length})
+            <CheckCircle2 size={13} />
+            <span>Resolved ({products.filter((p) => p.status === 'RESOLVED').length})</span>
           </button>
         </div>
 
@@ -228,13 +248,14 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                         fontSize: '11px',
                         fontWeight: 700,
                         cursor: 'pointer',
-                        display: 'flex',
+                        display: 'inline-flex',
                         alignItems: 'center',
-                        gap: '3px',
+                        gap: '4px',
                       }}
                       title={`Jump to Page ${item.page_number} and highlight quote`}
                     >
-                      <span>📍 Page {item.page_number}</span>
+                      <MapPin size={11} />
+                      <span>Page {item.page_number}</span>
                       <ExternalLink size={10} />
                     </button>
 
@@ -248,9 +269,13 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                           backgroundColor: 'var(--error-bg)',
                           color: 'var(--error-red)',
                           border: '1px solid var(--error-border)',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
                         }}
                       >
-                        ⚠️ Cites Superseded Code
+                        <AlertTriangle size={11} />
+                        <span>Cites Superseded Code</span>
                       </span>
                     )}
 
@@ -264,9 +289,13 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                           backgroundColor: 'var(--amber-bg)',
                           color: 'var(--amber-warn)',
                           border: '1px solid var(--amber-border)',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
                         }}
                       >
-                        ⚡ Mandatory QCO
+                        <Zap size={11} />
+                        <span>Mandatory QCO</span>
                       </span>
                     )}
                   </div>
@@ -318,10 +347,16 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                   </div>
 
                   {item.status === 'RESOLVED' && (
-                    <span style={{ fontSize: '12px', color: 'var(--emerald-pass)', fontWeight: 700 }}>✓ Verified</span>
+                    <span style={{ fontSize: '12px', color: 'var(--emerald-pass)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                      <CheckCircle2 size={13} />
+                      <span>Verified</span>
+                    </span>
                   )}
                   {item.status === 'OVERRIDDEN' && (
-                    <span style={{ fontSize: '12px', color: 'var(--collapse-cobalt)', fontWeight: 700 }}>✎ Overridden</span>
+                    <span style={{ fontSize: '12px', color: 'var(--collapse-cobalt)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                      <Edit3 size={13} />
+                      <span>Overridden</span>
+                    </span>
                   )}
                 </div>
               </div>
@@ -385,44 +420,101 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                     border: '1px solid var(--emerald-border)',
                   }}
                 >
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
-                    <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--emerald-pass)', textTransform: 'uppercase' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px', flexWrap: 'wrap', gap: '6px' }}>
+                    <span style={{ fontSize: '11px', fontWeight: 800, color: 'var(--emerald-pass)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                       AUTHORITATIVE INDIAN STANDARD
                     </span>
-                    <button
-                      type="button"
-                      onClick={() => onOpenStandardDetail(item.recommended_is)}
-                      style={{
-                        border: 'none',
-                        backgroundColor: 'transparent',
-                        color: 'var(--emerald-pass)',
-                        fontSize: '11.5px',
-                        fontWeight: 700,
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '3px',
-                      }}
-                      title="Inspect full standard, scope and test methods"
-                    >
-                      <span>Inspect Details</span>
-                      <ExternalLink size={12} />
-                    </button>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <button
+                        type="button"
+                        onClick={() => handleToggleInspect(item.product_id)}
+                        style={{
+                          border: '1px solid var(--emerald-border)',
+                          backgroundColor: 'var(--surface)',
+                          color: 'var(--emerald-pass)',
+                          fontSize: '11px',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          padding: '3px 8px',
+                          borderRadius: '4px',
+                          transition: 'all 0.15s ease',
+                        }}
+                        title="Toggle quick inline scope and technical testing methods"
+                      >
+                        <BookOpen size={11} />
+                        <span>{expandedInspect[item.product_id] ? 'Hide Quick Scope' : 'Quick Scope'}</span>
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => onOpenStandardDetail(item.recommended_is)}
+                        style={{
+                          border: 'none',
+                          backgroundColor: 'var(--emerald-pass)',
+                          color: '#FFFFFF',
+                          fontSize: '11px',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          padding: '3px 9px',
+                          borderRadius: '4px',
+                          boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+                          transition: 'all 0.15s ease',
+                        }}
+                        title="Inspect full standard, gazette order and test methods in drawer"
+                      >
+                        <span>Inspect Standard</span>
+                        <ExternalLink size={11} />
+                      </button>
+                    </div>
                   </div>
 
-                  <div style={{ fontSize: '16px', fontWeight: 800, color: 'var(--emerald-text)', fontFamily: 'var(--font-data, monospace)' }}>
+                  <div style={{ fontSize: '16.5px', fontWeight: 800, color: 'var(--emerald-text)', fontFamily: 'var(--font-data, monospace)' }}>
                     {item.recommended_is}
                   </div>
-                  <div style={{ fontSize: '12.5px', color: 'var(--emerald-pass)', marginTop: '2px', fontWeight: 600 }}>
+                  <div style={{ fontSize: '13px', color: 'var(--ink)', marginTop: '2px', fontWeight: 700 }}>
                     {item.recommended_is_title}
                   </div>
                   {item.where_stated && (
-                    <div style={{ fontSize: '11.5px', color: 'var(--amber-warn)', marginTop: '4px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <div style={{ fontSize: '11.5px', color: 'var(--amber-warn)', marginTop: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
                       <ShieldCheck size={13} color="var(--amber-warn)" />
                       <span>{item.where_stated}</span>
                     </div>
                   )}
-                  {item.what_it_is && (
+
+                  {/* Inline Expanded Quick Scope & Technical Breakdown */}
+                  {expandedInspect[item.product_id] && (
+                    <div
+                      style={{
+                        marginTop: '10px',
+                        padding: '12px',
+                        borderRadius: '6px',
+                        backgroundColor: 'var(--surface)',
+                        border: '1px solid var(--emerald-border)',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '8px',
+                        animation: 'fadeIn 0.15s ease',
+                      }}
+                    >
+                      <div style={{ fontSize: '11px', fontWeight: 800, color: 'var(--emerald-pass)', textTransform: 'uppercase' }}>
+                        TECHNICAL SPECIFICATIONS & TESTING METHODS
+                      </div>
+                      <div style={{ fontSize: '12.5px', color: 'var(--ink)', lineHeight: 1.5, fontWeight: 500 }}>
+                        {item.what_it_is || 'Covers manufacturing tolerances, material chemistry, mechanical properties, and sampling criteria.'}
+                      </div>
+                      <div style={{ fontSize: '11.5px', color: 'var(--ink-secondary)', lineHeight: 1.45, fontStyle: 'italic', background: 'var(--surface-secondary)', padding: '6px 10px', borderRadius: '4px' }}>
+                        <strong>Engineering Rationale:</strong> {item.engineering_rationale}
+                      </div>
+                    </div>
+                  )}
+
+                  {item.what_it_is && !expandedInspect[item.product_id] && (
                     <div style={{ fontSize: '11.5px', color: 'var(--ink-secondary)', marginTop: '3px', lineHeight: 1.4 }}>
                       {item.what_it_is}
                     </div>
@@ -578,7 +670,8 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                       }}
                     >
                       <Sparkles size={14} />
-                      <span>{isClarifying ? 'Re-evaluating...' : 'Submit Clarification & Boost Confidence ➔'}</span>
+                      <span>{isClarifying ? 'Re-evaluating...' : 'Submit Clarification & Boost Confidence'}</span>
+                      {!isClarifying && <ArrowRight size={13} />}
                     </button>
                   </div>
                 </div>

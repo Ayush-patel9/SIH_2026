@@ -1,7 +1,8 @@
 import React from 'react';
+import { FileText } from 'lucide-react';
 
 interface EmptyStateProps {
-  icon?: string;
+  icon?: React.ReactNode;
   title: string;
   hint: string;
   actionText?: string;
@@ -10,7 +11,7 @@ interface EmptyStateProps {
 }
 
 export const EmptyState: React.FC<EmptyStateProps> = ({
-  icon = '📋',
+  icon,
   title,
   hint,
   actionText,
@@ -27,7 +28,9 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
       borderRadius: 'var(--radius-sm)',
     }}
   >
-    <div style={{ fontSize: '36px', marginBottom: '12px' }}>{icon}</div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '12px' }}>
+      {icon || <FileText size={36} color="var(--ink-muted)" />}
+    </div>
     <div style={{ fontFamily: 'var(--font-prose)', fontSize: '16px', fontWeight: 600, color: 'var(--ink)' }}>
       {title}
     </div>

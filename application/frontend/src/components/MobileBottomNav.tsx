@@ -1,4 +1,5 @@
 import React from 'react';
+import { FolderKanban, Search, Network, Radio } from 'lucide-react';
 
 export type FeatureKey =
   | 'projects'
@@ -27,11 +28,11 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
   onSelectFeature,
   alertCount = 0,
 }) => {
-  const navItems: { key: FeatureKey; label: string; icon: string; badge?: number }[] = [
-    { key: 'projects', label: 'Projects', icon: '📁' },
-    { key: 'explainability', label: 'Standards', icon: '🔍' },
-    { key: 'graph3d', label: 'Graph Mesh', icon: '🌐' },
-    { key: 'gazetteRadar', label: 'Radar', icon: '📡' },
+  const navItems: { key: FeatureKey; label: string; icon: React.ReactNode; badge?: number }[] = [
+    { key: 'projects', label: 'Projects', icon: <FolderKanban size={18} /> },
+    { key: 'explainability', label: 'Standards', icon: <Search size={18} /> },
+    { key: 'graph3d', label: 'Graph Mesh', icon: <Network size={18} /> },
+    { key: 'gazetteRadar', label: 'Radar', icon: <Radio size={18} /> },
   ];
 
   return (

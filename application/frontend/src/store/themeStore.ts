@@ -24,7 +24,7 @@ export const THEMES_META: Record<AppTheme, ThemeMeta> = {
     name: 'Zoom Enterprise',
     shortName: 'Zoom Blue',
     badge: 'NEW PALETTE',
-    icon: '🟦',
+    icon: 'zoom',
     description: 'Crisp Arctic Slate & Deep Navy with Sky Blue accents',
     palette: {
       primary: '#0A4174',
@@ -39,7 +39,7 @@ export const THEMES_META: Record<AppTheme, ThemeMeta> = {
     name: 'Sovereign Editorial',
     shortName: 'Classic Olive',
     badge: 'EDITORIAL',
-    icon: '🏛️',
+    icon: 'sovereign',
     description: 'Warm Parchment Beige, Deep Forest Olive & Antique Brass',
     palette: {
       primary: '#36452F',

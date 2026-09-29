@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FileText, ArrowRight, CheckCircle2, ShieldAlert } from 'lucide-react';
+import { FileText, ArrowRight, CheckCircle2, ShieldAlert, AlertTriangle, X, Zap, HelpCircle } from 'lucide-react';
 
 export interface TenderClauseAnnotation {
   id: string;
@@ -46,34 +46,34 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
     switch (status) {
       case 'ACTIVE':
         return {
-          bg: 'rgba(34, 197, 94, 0.12)',
-          border: '#16a34a',
-          color: '#15803d',
-          icon: '🟢',
+          bg: 'var(--emerald-bg)',
+          border: 'var(--emerald-border)',
+          color: 'var(--emerald-pass)',
+          icon: <CheckCircle2 size={12} />,
           label: 'ACTIVE / COMPLIANT',
         };
       case 'WITHDRAWN':
         return {
-          bg: 'rgba(239, 68, 68, 0.12)',
-          border: '#dc2626',
-          color: '#b91c1c',
-          icon: '🔴',
+          bg: 'var(--error-bg)',
+          border: 'var(--error-border)',
+          color: 'var(--error-red)',
+          icon: <X size={12} />,
           label: 'WITHDRAWN / OUTDATED',
         };
       case 'AMENDMENT_NEEDED':
         return {
-          bg: 'rgba(234, 179, 8, 0.15)',
-          border: '#ca8a04',
-          color: '#854d0e',
-          icon: '🟡',
+          bg: 'var(--amber-bg)',
+          border: 'var(--amber-border)',
+          color: 'var(--amber-warn)',
+          icon: <AlertTriangle size={12} />,
           label: 'AMENDMENT REQUIRED',
         };
       case 'MISSING_ALLIED':
         return {
           bg: 'rgba(59, 130, 246, 0.12)',
-          border: '#2563eb',
-          color: '#1d4ed8',
-          icon: '🔵',
+          border: 'rgba(59, 130, 246, 0.3)',
+          color: 'var(--collapse-cobalt)',
+          icon: <ShieldAlert size={12} />,
           label: 'MISSING ALLIED TEST',
         };
     }
@@ -106,25 +106,25 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
             type="button"
             className={`mode-toggle-btn ${activeFilter === 'WITHDRAWN' ? 'active' : ''}`}
             onClick={() => setActiveFilter('WITHDRAWN')}
-            style={{ fontSize: '10px', padding: '2px 6px', color: '#dc2626' }}
+            style={{ fontSize: '10px', padding: '2px 6px', color: 'var(--error-red)' }}
           >
-            ● {clauses.filter((c) => c.status === 'WITHDRAWN').length} Outdated
+            {clauses.filter((c) => c.status === 'WITHDRAWN').length} Outdated
           </button>
           <button
             type="button"
             className={`mode-toggle-btn ${activeFilter === 'AMENDMENT' ? 'active' : ''}`}
             onClick={() => setActiveFilter('AMENDMENT')}
-            style={{ fontSize: '10px', padding: '2px 6px', color: '#ca8a04' }}
+            style={{ fontSize: '10px', padding: '2px 6px', color: 'var(--amber-warn)' }}
           >
-            ● {clauses.filter((c) => c.status === 'AMENDMENT_NEEDED' || c.status === 'MISSING_ALLIED').length} Amend
+            {clauses.filter((c) => c.status === 'AMENDMENT_NEEDED' || c.status === 'MISSING_ALLIED').length} Amend
           </button>
           <button
             type="button"
             className={`mode-toggle-btn ${activeFilter === 'ACTIVE' ? 'active' : ''}`}
             onClick={() => setActiveFilter('ACTIVE')}
-            style={{ fontSize: '10px', padding: '2px 6px', color: '#16a34a' }}
+            style={{ fontSize: '10px', padding: '2px 6px', color: 'var(--emerald-pass)' }}
           >
-            ● {clauses.filter((c) => c.status === 'ACTIVE').length} Valid
+            {clauses.filter((c) => c.status === 'ACTIVE').length} Valid
           </button>
         </div>
       </div>
@@ -142,7 +142,7 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
                 cursor: 'pointer',
                 padding: '14px 16px',
                 borderRadius: 'var(--radius-sm)',
-                background: isSelected ? 'rgba(37, 99, 235, 0.04)' : 'var(--paper)',
+                background: isSelected ? 'rgba(37, 99, 235, 0.04)' : 'var(--surface)',
                 border: `1.5px solid ${isSelected ? 'var(--collapse-cobalt)' : 'var(--hairline)'}`,
                 borderLeft: `5px solid ${badge.border}`,
                 transition: 'all 0.15s ease',
@@ -152,7 +152,7 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
               {/* Top Row: Clause Header & Badge */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px', flexWrap: 'wrap', gap: '6px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ fontFamily: 'var(--font-data)', fontWeight: 700, fontSize: '13px', color: 'var(--ink)' }}>
+                  <span style={{ fontFamily: 'var(--font-data)', fontWeight: 800, fontSize: '13px', color: 'var(--ink)' }}>
                     {clause.clauseNumber}: {clause.clauseTitle}
                   </span>
                   {clause.pageNumber && (
@@ -178,6 +178,7 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
                         display: 'inline-flex',
                         alignItems: 'center',
                         gap: '2px',
+                        fontWeight: 700,
                       }}
                       title="Jump directly to this page in the PDF viewer"
                     >
@@ -188,14 +189,19 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
                     <span
                       style={{
                         fontSize: '10px',
-                        background: 'rgba(22, 163, 74, 0.15)',
-                        color: '#15803d',
+                        background: 'var(--emerald-bg)',
+                        color: 'var(--emerald-pass)',
+                        border: '1px solid var(--emerald-border)',
                         padding: '1px 6px',
                         borderRadius: '3px',
-                        fontWeight: 600,
+                        fontWeight: 800,
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '3px',
                       }}
                     >
-                      ✓ FIXED
+                      <CheckCircle2 size={10} />
+                      <span>FIXED</span>
                     </span>
                   )}
                 </div>
@@ -207,7 +213,7 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
                     gap: '4px',
                     fontSize: '11px',
                     fontFamily: 'var(--font-data)',
-                    fontWeight: 700,
+                    fontWeight: 800,
                     padding: '2px 8px',
                     borderRadius: '4px',
                     background: badge.bg,
@@ -215,7 +221,8 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
                     color: badge.color,
                   }}
                 >
-                  {badge.icon} {badge.label}
+                  {badge.icon}
+                  <span>{badge.label}</span>
                 </span>
               </div>
 
@@ -227,7 +234,7 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
                   color: 'var(--ink-secondary)',
                   lineHeight: 1.5,
                   marginBottom: '10px',
-                  background: 'var(--surface)',
+                  background: 'var(--surface-secondary)',
                   padding: '8px 12px',
                   borderRadius: '4px',
                   borderLeft: '2px solid var(--hairline)',
@@ -240,8 +247,8 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
               {clause.status !== 'ACTIVE' && (
                 <div
                   style={{
-                    background: 'rgba(239, 68, 68, 0.04)',
-                    border: '1px solid rgba(239, 68, 68, 0.2)',
+                    background: 'var(--error-bg)',
+                    border: '1px solid var(--error-border)',
                     borderRadius: '4px',
                     padding: '8px 12px',
                     marginBottom: '10px',
@@ -249,11 +256,13 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
                     fontFamily: 'var(--font-data)',
                   }}
                 >
-                  <div style={{ color: '#991b1b', marginBottom: '3px' }}>
-                    ❌ <strong>Discard:</strong> {clause.discardStandard || clause.detectedStandard} (Outdated)
+                  <div style={{ color: 'var(--error-red)', marginBottom: '3px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <X size={12} />
+                    <span><strong>Discard:</strong> {clause.discardStandard || clause.detectedStandard} (Outdated)</span>
                   </div>
-                  <div style={{ color: '#15803d', fontWeight: 600 }}>
-                    ✅ <strong>Use Instead:</strong> {clause.useStandard || clause.replacement}
+                  <div style={{ color: 'var(--emerald-pass)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <CheckCircle2 size={12} />
+                    <span><strong>Use Instead:</strong> {clause.useStandard || clause.replacement}</span>
                   </div>
                 </div>
               )}
@@ -262,9 +271,9 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '11px', fontFamily: 'var(--font-data)' }}>
                 <div>
                   <span style={{ color: 'var(--ink-muted)' }}>Cited Standard: </span>
-                  <strong style={{ color: 'var(--ink)' }}>{clause.detectedStandard}</strong>
+                  <strong style={{ color: 'var(--ink)', fontWeight: 800 }}>{clause.detectedStandard}</strong>
                   {clause.replacement && (
-                    <span style={{ color: '#15803d', marginLeft: '6px' }}>
+                    <span style={{ color: 'var(--emerald-pass)', marginLeft: '6px', fontWeight: 700 }}>
                       → Replace with <strong>{clause.replacement}</strong>
                     </span>
                   )}
@@ -279,13 +288,15 @@ export const TenderClauseHighlighter: React.FC<TenderClauseHighlighterProps> = (
                         e.stopPropagation();
                         onFixClause(clause.id);
                       }}
-                      style={{ fontSize: '10.5px', padding: '2px 8px' }}
+                      style={{ fontSize: '10.5px', padding: '2px 8px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                     >
-                      ⚡ Fix Clause
+                      <Zap size={11} />
+                      <span>Fix Clause</span>
                     </button>
                   )}
-                  <span style={{ color: 'var(--collapse-cobalt)', fontWeight: 600 }}>
-                    {isSelected ? 'Viewing Legal Impact ➔' : 'Click to Inspect →'}
+                  <span style={{ color: 'var(--collapse-cobalt)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                    <span>{isSelected ? 'Viewing Legal Impact' : 'Click to Inspect'}</span>
+                    <ArrowRight size={12} />
                   </span>
                 </div>
               </div>

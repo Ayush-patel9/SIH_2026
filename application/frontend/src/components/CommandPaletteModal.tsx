@@ -2,6 +2,24 @@ import React, { useState, useEffect, useRef } from 'react';
 import type { FeatureKey } from './MobileBottomNav';
 import type { UserRole } from '../types';
 import { themeStore } from '../store/themeStore';
+import {
+  FolderKanban,
+  Search,
+  ShieldCheck,
+  Users,
+  Scale,
+  BrainCircuit,
+  FileEdit,
+  Zap,
+  FileText,
+  Building2,
+  Factory,
+  Palette,
+  Shield,
+  Construction,
+  Wrench,
+  Video,
+} from 'lucide-react';
 
 interface CommandPaletteProps {
   isOpen: boolean;
@@ -21,7 +39,7 @@ interface CommandItem {
   title: string;
   subtitle: string;
   shortcut?: string;
-  icon: string;
+  icon: React.ReactNode;
   badge?: string;
   action: () => void;
 }
@@ -58,7 +76,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       title: '00. Projects & Tenders Ledger',
       subtitle: 'Unified procurement projects, single-upload frozen tender dossiers & 3-stage pipeline',
       shortcut: '⌘P',
-      icon: '📁',
+      icon: <FolderKanban size={18} color="var(--olive-primary)" />,
       badge: currentFeature === 'projects' ? 'Active' : undefined,
       action: () => { onSelectFeature('projects'); onClose(); },
     },
@@ -68,7 +86,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       title: '01. Standards Explorer & Reasoning',
       subtitle: 'Visible reasoning trail, graph traversal path & plain language toggle',
       shortcut: '⌘1',
-      icon: '🔍',
+      icon: <Search size={18} color="var(--olive-primary)" />,
       badge: currentFeature === 'explainability' ? 'Active' : undefined,
       action: () => { onSelectFeature('explainability'); onSelectExplorerSubTab?.('dossier'); onClose(); },
     },
@@ -78,7 +96,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       title: '02. CVC Audit Trail & Legal Defensibility',
       subtitle: 'SHA-256 sealed audit records, RTI defense & CVC compliance certificates',
       shortcut: '⌘2',
-      icon: '🛡️',
+      icon: <ShieldCheck size={18} color="var(--emerald-pass)" />,
       badge: currentFeature === 'audit' ? 'Active' : undefined,
       action: () => { onSelectFeature('explainability'); onSelectExplorerSubTab?.('audit'); onClose(); },
     },
@@ -88,7 +106,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       title: '03. Human-in-the-Loop Feedback Queue',
       subtitle: 'Officer feedback moderation, trust score calculation & review pipeline',
       shortcut: '⌘3',
-      icon: '👥',
+      icon: <Users size={18} color="var(--amber-warn)" />,
       badge: currentFeature === 'feedback' ? 'Active' : undefined,
       action: () => { onSelectFeature('feedback'); onClose(); },
     },
@@ -98,7 +116,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       title: '04. Standards Comparison & Conflict Resolver',
       subtitle: 'Side-by-side comparison, test method matrix & parameter conflict checks',
       shortcut: '⌘6',
-      icon: '⚖️',
+      icon: <Scale size={18} color="var(--olive-primary)" />,
       badge: currentFeature === 'comparison' ? 'Active' : undefined,
       action: () => { onSelectFeature('explainability'); onSelectExplorerSubTab?.('comparison'); onClose(); },
     },
@@ -108,7 +126,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       title: '05. Query NLU & Intent Disambiguation',
       subtitle: 'AI Call #1 Gemini Flash entity extraction, domain classification & spelling normalizer',
       shortcut: '⌘7',
-      icon: '🧠',
+      icon: <BrainCircuit size={18} color="var(--collapse-cobalt)" />,
       badge: currentFeature === 'queryUnderstanding' ? 'Active' : undefined,
       action: () => { onSelectFeature('queryUnderstanding'); onClose(); },
     },
@@ -118,7 +136,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       title: '06. NIT Draft Clause Generator',
       subtitle: 'Generate legally defensible Notice Inviting Tender clauses & export to PDF/DOCX',
       shortcut: '⌘8',
-      icon: '📝',
+      icon: <FileEdit size={18} color="var(--olive-primary)" />,
       badge: currentFeature === 'nitGenerator' ? 'Active' : undefined,
       action: () => { onSelectFeature('explainability'); onSelectExplorerSubTab?.('nitGenerator'); onClose(); },
     },
@@ -128,7 +146,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       title: '07. Model Context Protocol (MCP) Server',
       subtitle: 'Statutory tool inspector, JSON-RPC schema & AI assistant live runner',
       shortcut: '⌘9',
-      icon: '⚡',
+      icon: <Zap size={18} color="var(--amber-warn)" />,
       badge: currentFeature === 'mcp' ? 'Active' : undefined,
       action: () => { onSelectFeature('mcp'); onClose(); },
     },
@@ -138,7 +156,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       title: '10. Projects & Tender Analysis',
       subtitle: 'Unified procurement dossiers, single-upload tender ingestion & 3-stage pipeline',
       shortcut: '⌘0',
-      icon: '📄',
+      icon: <FileText size={18} color="var(--olive-primary)" />,
       badge: currentFeature === 'projects' ? 'Active' : undefined,
       action: () => { onSelectFeature('projects'); onClose(); },
     },
@@ -149,7 +167,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       category: 'Domain Presets',
       title: 'Cement: Ordinary Portland Cement (IS 269:2015)',
       subtitle: 'Highway and structural concrete construction specifications',
-      icon: '🏗️',
+      icon: <Construction size={18} color="var(--ink-secondary)" />,
       action: () => { onSelectDomain('cement'); onSelectFeature('explainability'); onClose(); },
     },
     {
@@ -157,7 +175,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       category: 'Domain Presets',
       title: 'Steel: Structural Steel Sections (IS 2062:2011)',
       subtitle: 'Bridges, transmission towers & heavy infrastructure sections',
-      icon: '🔩',
+      icon: <Wrench size={18} color="var(--ink-secondary)" />,
       action: () => { onSelectDomain('steel'); onSelectFeature('explainability'); onClose(); },
     },
     {
@@ -165,7 +183,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       category: 'Domain Presets',
       title: 'Electronics: CCTV Surveillance Systems (IS 13252)',
       subtitle: 'Information technology security, smart city video surveillance & testing',
-      icon: '📹',
+      icon: <Video size={18} color="var(--ink-secondary)" />,
       action: () => { onSelectDomain('cctv'); onSelectFeature('explainability'); onClose(); },
     },
 
@@ -175,7 +193,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       category: 'Role Profiles',
       title: 'Switch Persona: Tender Authority & Technical Officer',
       subtitle: 'Technical clause drafting, AI clarification resolution & CVC/CAG statutory audit defense',
-      icon: '🏛️',
+      icon: <Building2 size={18} color="var(--olive-primary)" />,
       badge: currentRole === 'OFFICER' ? 'Current' : undefined,
       action: () => { onSelectRole('OFFICER'); onClose(); },
     },
@@ -184,7 +202,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       category: 'Role Profiles',
       title: 'Switch Persona: Industrial Vendor & MSME',
       subtitle: 'QCO conformity verification, ISI certificate check & compliance roadmap',
-      icon: '🏭',
+      icon: <Factory size={18} color="var(--amber-warn)" />,
       badge: currentRole === 'VENDOR' ? 'Current' : undefined,
       action: () => { onSelectRole('VENDOR'); onClose(); },
     },
@@ -196,7 +214,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       title: 'Switch Color Palette (Zoom Enterprise / Sovereign)',
       subtitle: `Currently active: ${themeStore.getTheme() === 'zoom' ? 'Zoom Enterprise (Modern Navy & Ice Blue)' : 'Sovereign Editorial (Warm Parchment & Olive)'}`,
       shortcut: '⌘T',
-      icon: '🎨',
+      icon: <Palette size={18} color="var(--collapse-cobalt)" />,
       badge: themeStore.getTheme() === 'zoom' ? 'Zoom Blue' : 'Sovereign',
       action: () => { themeStore.toggleTheme(); onClose(); },
     },
@@ -205,7 +223,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
       category: 'Actions & Governance',
       title: 'View MeitY / NIC Data Sovereignty Certificate',
       subtitle: '100% On-Premise / Tier-IV NDC hosting, CERT-In compliance & sovereign jurisdiction',
-      icon: '🇮🇳',
+      icon: <Shield size={18} color="var(--emerald-pass)" />,
       action: () => { onOpenDataSovereignty(); onClose(); },
     },
   ];
@@ -299,7 +317,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
             background: 'var(--surface-raised)',
           }}
         >
-          <span style={{ fontSize: '18px', color: 'var(--collapse-cobalt)' }}>🔍</span>
+          <Search size={18} color="var(--collapse-cobalt)" />
           <input
             ref={inputRef}
             type="text"

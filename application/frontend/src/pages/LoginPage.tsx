@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import type { UserRole } from '../types';
 import { register, loginWithCredentials, type UserProfile } from '../store/userStore';
 import { ThemeSwitcher } from '../components/ThemeSwitcher';
+import { Building2, Factory, ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 interface LoginPageProps {
   initialRole?: UserRole;
@@ -312,18 +313,19 @@ export const LoginPage: React.FC<LoginPageProps> = ({
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#24301F')}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#36452F')}
             >
-              Sign In to Platform ➔
+              Sign In to Platform
+              <ArrowRight size={14} style={{ marginLeft: '6px' }} />
             </button>
 
             <div style={{ textAlign: 'center', marginTop: '10px' }}>
-              <span style={{ fontSize: '12.5px', color: '#6E7A68' }}>Don't have an account yet? </span>
+              <span style={{ fontSize: '12.5px', color: 'var(--ink-muted)' }}>Don't have an account yet? </span>
               <button
                 type="button"
                 onClick={() => handleToggleMode('signup')}
                 style={{
                   background: 'none',
                   border: 'none',
-                  color: '#2D6A4F',
+                  color: 'var(--emerald-pass)',
                   fontWeight: 700,
                   fontSize: '12.5px',
                   cursor: 'pointer',
@@ -340,17 +342,17 @@ export const LoginPage: React.FC<LoginPageProps> = ({
           <form onSubmit={handleSignUp} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             {/* Role Selector Tabs */}
             <div>
-              <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#1C2419', marginBottom: '6px' }}>
+              <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: 'var(--ink)', marginBottom: '6px' }}>
                 Select Your Role & Desired Workspace
               </label>
               <div
                 style={{
                   display: 'grid',
                   gridTemplateColumns: '1fr 1fr',
-                  backgroundColor: '#F5F0E6',
+                  backgroundColor: 'var(--surface-secondary)',
                   padding: '4px',
                   borderRadius: '8px',
-                  border: '1px solid #E5E0D4',
+                  border: '1px solid var(--hairline)',
                   gap: '6px',
                 }}
               >
@@ -358,8 +360,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                   type="button"
                   onClick={() => setSelectedRole('OFFICER')}
                   style={{
-                    backgroundColor: selectedRole === 'OFFICER' ? '#2D6A4F' : 'transparent',
-                    color: selectedRole === 'OFFICER' ? '#FFFFFF' : '#44503E',
+                    backgroundColor: selectedRole === 'OFFICER' ? 'var(--olive-primary)' : 'transparent',
+                    color: selectedRole === 'OFFICER' ? '#FFFFFF' : 'var(--ink-secondary)',
                     border: 'none',
                     padding: '10px 8px',
                     borderRadius: '6px',
@@ -369,11 +371,11 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    gap: '3px',
+                    gap: '4px',
                     transition: 'all 0.15s ease',
                   }}
                 >
-                  <span style={{ fontSize: '16px' }}>🏛️</span>
+                  <Building2 size={18} />
                   <span>Tender Authority</span>
                   <span style={{ fontSize: '10px', opacity: 0.85, fontWeight: 500 }}>Technical Officer & Auditor</span>
                 </button>
@@ -382,8 +384,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                   type="button"
                   onClick={() => setSelectedRole('VENDOR')}
                   style={{
-                    backgroundColor: selectedRole === 'VENDOR' ? '#8A6922' : 'transparent',
-                    color: selectedRole === 'VENDOR' ? '#FFFFFF' : '#44503E',
+                    backgroundColor: selectedRole === 'VENDOR' ? 'var(--gold-text)' : 'transparent',
+                    color: selectedRole === 'VENDOR' ? '#FFFFFF' : 'var(--ink-secondary)',
                     border: 'none',
                     padding: '10px 8px',
                     borderRadius: '6px',
@@ -393,11 +395,11 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    gap: '3px',
+                    gap: '4px',
                     transition: 'all 0.15s ease',
                   }}
                 >
-                  <span style={{ fontSize: '16px' }}>🏭</span>
+                  <Factory size={18} />
                   <span>Industrial Vendor</span>
                   <span style={{ fontSize: '10px', opacity: 0.85, fontWeight: 500 }}>Bidders & MSMEs</span>
                 </button>
@@ -553,8 +555,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({
               style={{
                 backgroundColor:
                   selectedRole === 'OFFICER'
-                    ? '#2D6A4F'
-                    : '#8A6922',
+                    ? 'var(--olive-primary)'
+                    : 'var(--gold-text)',
                 border: 'none',
                 color: '#FFFFFF',
                 padding: '11px',
@@ -563,22 +565,27 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                 fontWeight: 700,
                 cursor: 'pointer',
                 marginTop: '4px',
-                boxShadow: '0 2px 6px rgba(54, 69, 47, 0.15)',
+                boxShadow: 'var(--shadow-card)',
                 transition: 'all 0.15s ease',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '6px',
               }}
             >
-              Create Account & Launch {selectedRole === 'OFFICER' ? 'Tender Authority Workspace' : 'Industrial Vendor Portal'} ➔
+              <span>Create Account & Launch {selectedRole === 'OFFICER' ? 'Tender Authority Workspace' : 'Industrial Vendor Portal'}</span>
+              <ArrowRight size={14} />
             </button>
 
             <div style={{ textAlign: 'center', marginTop: '6px' }}>
-              <span style={{ fontSize: '12.5px', color: '#6E7A68' }}>Already registered? </span>
+              <span style={{ fontSize: '12.5px', color: 'var(--ink-muted)' }}>Already registered? </span>
               <button
                 type="button"
                 onClick={() => handleToggleMode('signin')}
                 style={{
                   background: 'none',
                   border: 'none',
-                  color: '#2D6A4F',
+                  color: 'var(--emerald-pass)',
                   fontWeight: 700,
                   fontSize: '12.5px',
                   cursor: 'pointer',

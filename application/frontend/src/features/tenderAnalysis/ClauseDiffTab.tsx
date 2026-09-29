@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { FinalizedClauseDiff } from './types';
-import { Copy, Check, ShieldAlert, FileText, ArrowRight, ExternalLink } from 'lucide-react';
+import { Copy, Check, ShieldAlert, FileText, ArrowRight, ExternalLink, Scale } from 'lucide-react';
 
 interface ClauseDiffTabProps {
   clauseDiffs: FinalizedClauseDiff[];
@@ -264,8 +264,9 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                     marginBottom: '10px',
                   }}
                 >
-                  <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--amber-warn)', textTransform: 'uppercase', marginBottom: '4px', fontFamily: 'var(--font-data)' }}>
-                    ⚡ MANDATORY QUALITY CONTROL ORDER CLAUSE INSERTION:
+                  <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--amber-warn)', textTransform: 'uppercase', marginBottom: '4px', fontFamily: 'var(--font-data)', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <Scale size={12} />
+                    <span>MANDATORY QUALITY CONTROL ORDER CLAUSE INSERTION:</span>
                   </div>
                   <div style={{ fontSize: '12px', color: 'var(--amber-warn)', lineHeight: 1.5, fontFamily: 'monospace' }}>
                     {clause.added_qco_clause}

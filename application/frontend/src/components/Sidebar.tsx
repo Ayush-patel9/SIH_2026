@@ -2,6 +2,19 @@ import React from 'react';
 import type { FeatureKey } from './MobileBottomNav';
 import { useSession } from '../store/userStore';
 import type { UserRole } from '../types';
+import {
+  FolderKanban,
+  Search,
+  Share2,
+  BrainCircuit,
+  History,
+  FileBarChart2,
+  UserCheck,
+  Radio,
+  Terminal,
+  Building2,
+  Factory,
+} from 'lucide-react';
 
 interface SidebarProps {
   activeFeature: FeatureKey;
@@ -14,7 +27,7 @@ interface SidebarProps {
 interface NavItem {
   key: FeatureKey;
   label: string;
-  icon: string;
+  icon: React.ComponentType<{ size?: number; className?: string; style?: React.CSSProperties }>;
   badge?: string | number;
   description: string;
 }
@@ -49,7 +62,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {
           key: 'projects',
           label: role === 'VENDOR' ? 'Tender Marketplace' : 'Projects & Tenders',
-          icon: '📁',
+          icon: FolderKanban,
           badge: 'MANAGED',
           description: role === 'VENDOR' ? 'Explore active tenders & verify standards' : 'Procurement projects, tender ingestion & 3-stage intelligence',
         },
@@ -61,26 +74,26 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {
           key: 'explainability',
           label: 'Standards Explorer',
-          icon: '🔍',
+          icon: Search,
           description: 'Search, Reasoning, Comparison, Audit & NIT Gen',
         },
         {
           key: 'graph3d',
           label: 'Normative Graph Mesh',
-          icon: '🌐',
-          badge: '3D LIVE',
+          icon: Share2,
+          badge: '3D',
           description: '22,011 Standards Interactive Knowledge Mesh',
         },
         {
           key: 'queryUnderstanding',
           label: 'Query Intent NLU',
-          icon: '🧠',
+          icon: BrainCircuit,
           description: 'Gemini Technical Extraction & Normalization',
         },
         {
           key: 'timeMachine',
           label: 'Historical Time-Machine',
-          icon: '⏳',
+          icon: History,
           description: '1950-2026 Standards Evolution Tree',
         },
       ],
@@ -91,14 +104,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {
           key: 'cagAudit',
           label: 'CAG Vigilance Simulator',
-          icon: '📊',
-          badge: '₹ SAVE',
+          icon: FileBarChart2,
+          badge: 'SIMULATOR',
           description: 'Financial Disallowance Stress-Tester',
         },
         {
           key: 'feedback',
           label: 'Human Feedback',
-          icon: '👥',
+          icon: UserCheck,
           description: 'Officer Moderation & Approval Queue',
         },
       ],
@@ -109,14 +122,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {
           key: 'gazetteRadar',
           label: 'Gazette Radar Watchtower',
-          icon: '📡',
+          icon: Radio,
           badge: 'LIVE',
           description: 'Autonomous E-Gazette QCO Scraper',
         },
         {
           key: 'mcp',
           label: 'MCP Tool Workbench',
-          icon: '⚡',
+          icon: Terminal,
           description: 'Model Context Protocol for External AI Agents',
         },
       ],
@@ -127,8 +140,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
     <aside
       className={`sidebar-nav ${collapsed ? 'collapsed' : ''}`}
       style={{
-        width: collapsed ? '68px' : '264px',
-        minWidth: collapsed ? '68px' : '264px',
+        width: collapsed ? '68px' : '272px',
+        minWidth: collapsed ? '68px' : '272px',
+        maxWidth: collapsed ? '68px' : '272px',
+        boxSizing: 'border-box',
         backgroundColor: 'var(--canvas-secondary)',
         borderRight: '1px solid var(--hairline)',
         display: 'flex',
@@ -261,8 +276,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '15px' }}>
-              {role === 'VENDOR' ? '🏭' : '🏛️'}
+            <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              {role === 'VENDOR' ? <Factory size={16} color="#B45309" /> : <Building2 size={16} color="var(--olive-primary)" />}
             </span>
             <div style={{ minWidth: 0, flex: 1 }}>
               <div
@@ -334,6 +349,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
                 {sec.items.map((item) => {
                   const isActive = activeFeature === item.key;
+                  const Icon = item.icon;
                   return (
                     <button
                       key={item.key}
@@ -351,7 +367,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         color: isActive ? 'var(--ink)' : 'var(--ink-secondary)',
                         fontFamily: 'var(--font-ui)',
                         fontSize: '13px',
-                        fontWeight: isActive ? 700 : 500,
+                        fontWeight: isActive ? 700 : 600,
                         cursor: 'pointer',
                         transition: 'all 0.15s cubic-bezier(0.16, 1, 0.3, 1)',
                         width: '100%',
@@ -374,7 +390,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       }}
                     >
                       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
-                        <span style={{ fontSize: '16px', flexShrink: 0 }}>{item.icon}</span>
+                        <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                          <Icon size={16} style={{ color: isActive ? 'var(--olive-primary)' : 'var(--ink-muted)' }} />
+                        </span>
                         {!collapsed && (
                           <span
                             style={{
@@ -393,13 +411,19 @@ export const Sidebar: React.FC<SidebarProps> = ({
                           style={{
                             fontFamily: 'var(--font-data)',
                             fontSize: '9.5px',
-                            fontWeight: 700,
-                            padding: '1px 6px',
+                            fontWeight: 800,
+                            padding: '2px 7px',
                             borderRadius: '9999px',
+                            whiteSpace: 'nowrap',
+                            flexShrink: 0,
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            letterSpacing: '0.04em',
                             background:
                               typeof item.badge === 'number'
                                 ? 'var(--error-bg)'
-                                : 'var(--olive-leaf)',
+                                : 'var(--olive-tint, var(--olive-leaf))',
                             color: typeof item.badge === 'number' ? 'var(--error-red)' : 'var(--olive-primary)',
                             border:
                               typeof item.badge === 'number'

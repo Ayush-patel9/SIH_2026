@@ -58,8 +58,18 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
           <div style={{ fontSize: '28px', fontWeight: 800, color: complianceScore >= 80 ? 'var(--emerald-pass)' : complianceScore >= 50 ? 'var(--amber-warn)' : 'var(--error-red)', fontFamily: 'var(--font-data, monospace)', margin: '4px 0 2px' }}>
             {complianceScore}%
           </div>
-          <div style={{ fontSize: '12px', color: 'var(--ink-secondary)' }}>
-            {outdatedCount > 0 ? `⚠️ ${outdatedCount} Withdrawn standards detected` : '✓ All verified against active gazette'}
+          <div style={{ fontSize: '12px', color: 'var(--ink-secondary)', display: 'flex', alignItems: 'center', gap: '5px' }}>
+            {outdatedCount > 0 ? (
+              <>
+                <AlertTriangle size={13} color="var(--amber-warn)" />
+                <span>{outdatedCount} Withdrawn standards detected</span>
+              </>
+            ) : (
+              <>
+                <CheckCircle2 size={13} color="var(--emerald-text)" />
+                <span>All verified against active gazette</span>
+              </>
+            )}
           </div>
         </div>
 
@@ -208,8 +218,9 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
               <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--amber-warn)' }}>
                 STAGE 2B · HITL DECISION
               </span>
-              <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--amber-warn)' }}>
-                ⚡ Active
+              <span style={{ fontSize: '11px', fontWeight: 800, color: 'var(--amber-warn)', display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+                <span className="status-dot active" style={{ width: '6px', height: '6px' }} />
+                <span>ACTIVE</span>
               </span>
             </div>
             <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>
