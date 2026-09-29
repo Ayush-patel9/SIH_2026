@@ -29,6 +29,7 @@ from application.api.routes.alerts import router as alerts_router
 from application.api.routes.websocket import router as websocket_router
 from application.api.routes.knowledge_graph import router as knowledge_graph_router
 from application.api.routes.tender_pipeline import router as tender_pipeline_router
+from application.api.routes.tender_temporal import router as tender_temporal_router
 from application.api.routes.projects import router as projects_router
 from application.api.routes.gazette import router as gazette_router
 from application.services.project_repository import init_db, seed_initial_projects_if_empty
@@ -75,6 +76,7 @@ app.include_router(alerts_router)
 app.include_router(websocket_router)
 app.include_router(knowledge_graph_router)
 app.include_router(tender_pipeline_router)
+app.include_router(tender_temporal_router)
 app.include_router(projects_router)
 app.include_router(gazette_router)
 
