@@ -31,129 +31,14 @@ import type { UserRole } from '../../types';
 import { TenderAnalysisDashboard } from '../tenderAnalysis';
 import { uploadTenderDocument } from '../tenderAnalysis/tenderAnalysisClient';
 import { projectsClient } from './projectsClient';
-
-export interface TenderProject {
-  id: string;
-  nitNumber: string;
-  title: string;
-  department: string;
-  estimatedValue: string;
-  lastModified: string;
-  recencyTimestamp: number;
-  status: 'DRAFT' | 'NEEDS_REVIEW' | 'COMPLIANT' | 'PUBLISHED' | 'INGESTED' | 'ANALYZING' | 'COMPLETED';
-  complianceScore: number;
-  hasDocument: boolean;
-  documentText?: string | null;
-  pdfUrl?: string | null;
-  pdfFileName?: string | null;
-  isFrozen?: boolean;
-  isAnalyzed?: boolean;
-  analysisPhase?: string;
-  stage1Data?: any;
-  stage2Data?: any;
-  stage3Data?: any;
-}
-
-const NHAI_SAMPLE_TENDER = `GOVERNMENT OF INDIA · NATIONAL HIGHWAYS AUTHORITY OF INDIA (NHAI)
-TECHNICAL SPECIFICATION & BILL OF QUANTITIES (BOQ) FOR HIGHWAY CULVERTS & BRIDGES (NIT-NHAI-NCR-2026-088)
-
-Clause 4.1.2 — Cement Specifications for Structural Culvert Works:
-All structural concrete elements, including precast culvert barrels, deck slabs, and retaining walls, shall utilize 43 Grade Ordinary Portland Cement conforming strictly to IS 8112:1989 with minimum compressive strength of 43 MPa at 28 days.
-
-Clause 4.1.3 — Coarse & Fine Aggregates for Concrete:
-Aggregates shall conform to IS 383:2016 and be tested for soundness, crushing value, and alkali-aggregate reactivity.
-
-Clause 5.2.1 — Reinforcement Steel Bars:
-Reinforcement steel for structural columns, piers, and shear walls shall be High Yield Strength Deformed (HYSD) bars Grade Fe 415 conforming to IS 1786:1985.
-
-Clause 7.3.2 — Fasteners & Structural Bolts:
-High strength friction grip bolts for structural steel bracing shall conform to IS 3757:1985 with torque tightening inspection as per IRC 24.
-
-Clause 12.4.0 — HDPE Water Drainage Pipes:
-HDPE pipes for subsurface bridge drainage and culvert outfall channels shall be manufactured as per IS 4984:1995 with PE-80 raw material.`;
-
-const CPWD_SAMPLE_TENDER = `CENTRAL PUBLIC WORKS DEPARTMENT (CPWD) · AIIMS DELHI SURGICAL WING MODERNIZATION (NIT-CPWD-AIIMS-2026-042)
-
-Clause 3.1.0 — Fire-Resistant Metal Doorsets:
-All fire barrier corridor doors, operation theatre entryways, and ICU partitions shall be 2-hour fire rated metal doorsets manufactured and tested strictly in conformance with IS 3614:2021.
-
-Clause 4.2.1 — Plain & Reinforced Concrete:
-Structural concrete for building expansion joints and slab retrofits shall comply with IS 456:2000 Code of Practice for Plain and Reinforced Concrete.
-
-Clause 5.2.4 — Electrical Cables for Healthcare Facility:
-Power and lighting branch wiring shall utilize low smoke zero halogen (FRLS-H) copper cables conforming to IS 694:2010.
-
-Clause 8.1.5 — High Yield Strength Rebar:
-Reinforcement bars shall be thermo-mechanically treated high ductility steel conforming to IS 1786:2008 Grade Fe 500D.`;
-
-const JJM_SAMPLE_TENDER = `MINISTRY OF JAL SHAKTI · JAL JEEVAN MISSION (JJM)
-DISTRICT WATER SUPPLY NETWORK & DISTRIBUTION GRID (NIT-JJM-RAJ-2026-019)
-
-Clause 6.1.0 — High Density Polyethylene (HDPE) Pipes:
-HDPE pipes for rural drinking water distribution network and pipeline extensions shall be manufactured as per IS 4984:1995 utilizing PE-80 raw material class with PN-6 pressure rating.
-
-Clause 6.2.4 — Sluice Valves for Water Works:
-Cast iron sluice valves for isolating pipeline segments shall conform to IS 14846:2000 with bronze trim and flanged ends.
-
-Clause 12.4.1 — Potable Drinking Water Testing Parameters:
-Treated water delivered at household tap connections shall adhere strictly to Indian Standard Specification for Drinking Water IS 10500:2012 without deviation.`;
-
-const INITIAL_PROJECTS: TenderProject[] = [
-  {
-    id: 'proj-nhai-088',
-    nitNumber: 'NIT-NHAI-NCR-2026-088',
-    title: 'Construction of 6-Lane Flyover & Bridge Superstructure on NH-48',
-    department: 'National Highways Authority of India (NHAI)',
-    estimatedValue: '₹148.50 Crores',
-    lastModified: 'Just now',
-    recencyTimestamp: Date.now() - 1000 * 60 * 5,
-    status: 'NEEDS_REVIEW',
-    complianceScore: 78,
-    hasDocument: true,
-    documentText: NHAI_SAMPLE_TENDER,
-    pdfFileName: 'MOCK_GOVERNMENT_TENDER_NIT_2026.pdf',
-  },
-  {
-    id: 'proj-cpwd-042',
-    nitNumber: 'NIT-CPWD-AIIMS-2026-042',
-    title: 'Modernization & Electrification of Surgical Wing, AIIMS Delhi',
-    department: 'Central Public Works Department (CPWD)',
-    estimatedValue: '₹42.80 Crores',
-    lastModified: '4 hours ago',
-    recencyTimestamp: Date.now() - 1000 * 60 * 60 * 4,
-    status: 'COMPLIANT',
-    complianceScore: 100,
-    hasDocument: true,
-    documentText: CPWD_SAMPLE_TENDER,
-    pdfFileName: 'CPWD_SURGICAL_SPEC_2026.pdf',
-  },
-  {
-    id: 'proj-jjm-019',
-    nitNumber: 'NIT-JJM-RAJ-2026-019',
-    title: 'Rural Potable Water Grid Infrastructure & Treatment Facility Phase-II',
-    department: 'Ministry of Jal Shakti (JJM)',
-    estimatedValue: '₹95.20 Crores',
-    lastModified: '1 day ago',
-    recencyTimestamp: Date.now() - 1000 * 60 * 60 * 24,
-    status: 'DRAFT',
-    complianceScore: 0,
-    hasDocument: false,
-  },
-  {
-    id: 'proj-dfccil-119',
-    nitNumber: 'NIT-MOR-DFCCIL-2026-119',
-    title: 'Dedicated Freight Corridor Track Laying & Pre-Stressed Concrete Sleepers',
-    department: 'Ministry of Railways (DFCCIL)',
-    estimatedValue: '₹310.00 Crores',
-    lastModified: '2 days ago',
-    recencyTimestamp: Date.now() - 1000 * 60 * 60 * 48,
-    status: 'NEEDS_REVIEW',
-    complianceScore: 84,
-    hasDocument: true,
-    documentText: NHAI_SAMPLE_TENDER,
-    pdfFileName: 'DFCCIL_TRACK_SPEC_2026.pdf',
-  },
-];
+import type { TenderProject } from './types';
+import {
+  INITIAL_PROJECTS,
+  NHAI_SAMPLE_TENDER,
+  CPWD_SAMPLE_TENDER,
+  JJM_SAMPLE_TENDER,
+  DFCCIL_SAMPLE_TENDER,
+} from './mockProjects';
 
 interface ProjectsViewProps {
   onNavigateToTenderUpload?: () => void;

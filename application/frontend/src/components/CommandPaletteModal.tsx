@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import type { FeatureKey } from './MobileBottomNav';
 import type { UserRole } from '../types';
+import { themeStore } from '../store/themeStore';
 
 interface CommandPaletteProps {
   isOpen: boolean;
@@ -189,6 +190,16 @@ export const CommandPaletteModal: React.FC<CommandPaletteProps> = ({
     },
 
     // Governance & Actions
+    {
+      id: 'action-theme-toggle',
+      category: 'Actions & Governance',
+      title: 'Switch Color Palette (Zoom Enterprise / Sovereign)',
+      subtitle: `Currently active: ${themeStore.getTheme() === 'zoom' ? 'Zoom Enterprise (Modern Navy & Ice Blue)' : 'Sovereign Editorial (Warm Parchment & Olive)'}`,
+      shortcut: '⌘T',
+      icon: '🎨',
+      badge: themeStore.getTheme() === 'zoom' ? 'Zoom Blue' : 'Sovereign',
+      action: () => { themeStore.toggleTheme(); onClose(); },
+    },
     {
       id: 'action-sovereignty',
       category: 'Actions & Governance',

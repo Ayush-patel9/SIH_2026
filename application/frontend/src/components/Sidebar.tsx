@@ -129,8 +129,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
       style={{
         width: collapsed ? '68px' : '264px',
         minWidth: collapsed ? '68px' : '264px',
-        backgroundColor: '#F6F3EB',
-        borderRight: '1px solid #E5E0D4',
+        backgroundColor: 'var(--canvas-secondary)',
+        borderRight: '1px solid var(--hairline)',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -147,7 +147,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <div
           style={{
             padding: collapsed ? '16px 8px' : '18px 20px',
-            borderBottom: '1px solid #EAE5D9',
+            borderBottom: '1px solid var(--hairline)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: collapsed ? 'center' : 'space-between',
@@ -160,7 +160,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 width: '36px',
                 height: '36px',
                 borderRadius: '8px',
-                background: 'linear-gradient(135deg, #36452F 0%, #202F1A 100%)',
+                background: 'linear-gradient(135deg, var(--olive-primary) 0%, var(--olive-dark) 100%)',
                 color: '#FAF8F2',
                 display: 'flex',
                 alignItems: 'center',
@@ -168,8 +168,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 fontFamily: 'var(--font-data)',
                 fontWeight: 800,
                 fontSize: '13px',
-                boxShadow: '0 2px 6px rgba(54, 69, 47, 0.25)',
-                border: '1px solid #C29D53',
+                boxShadow: '0 2px 6px rgba(0, 29, 57, 0.25)',
+                border: '1px solid var(--gold-antique)',
                 flexShrink: 0,
               }}
               title="Bureau of Indian Standards — Government of India"
@@ -183,18 +183,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     fontFamily: 'var(--font-ui)',
                     fontSize: '15px',
                     fontWeight: 800,
-                    color: '#1C2419',
+                    color: 'var(--ink)',
                     letterSpacing: '-0.02em',
                     lineHeight: 1.1,
                   }}
                 >
-                  Manak<span style={{ color: '#C29D53' }}>AI</span>
+                  Manak<span style={{ color: 'var(--gold-antique)' }}>AI</span>
                 </div>
                 <div
                   style={{
                     fontFamily: 'var(--font-data)',
                     fontSize: '9.5px',
-                    color: '#6E7A68',
+                    color: 'var(--ink-muted)',
                     fontWeight: 600,
                     letterSpacing: '0.04em',
                     marginTop: '2px',
@@ -212,8 +212,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
               type="button"
               onClick={onToggleCollapse}
               style={{
-                background: '#FAF8F2',
-                border: '1px solid #E5E0D4',
+                background: 'var(--surface)',
+                border: '1px solid var(--hairline)',
                 borderRadius: '6px',
                 width: '24px',
                 height: '24px',
@@ -221,18 +221,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 alignItems: 'center',
                 justifyContent: 'center',
                 cursor: 'pointer',
-                color: '#6E7A68',
+                color: 'var(--ink-muted)',
                 fontSize: '11px',
                 transition: 'all 0.15s ease',
               }}
               title="Collapse sidebar"
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#36452F';
-                e.currentTarget.style.color = '#1C2419';
+                e.currentTarget.style.borderColor = 'var(--olive-primary)';
+                e.currentTarget.style.color = 'var(--ink)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#E5E0D4';
-                e.currentTarget.style.color = '#6E7A68';
+                e.currentTarget.style.borderColor = 'var(--hairline)';
+                e.currentTarget.style.color = 'var(--ink-muted)';
               }}
             >
               ◀
@@ -250,11 +250,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
               background:
                 role === 'VENDOR'
                   ? 'rgba(245, 158, 11, 0.08)'
-                  : 'rgba(19, 136, 8, 0.08)',
+                  : 'rgba(10, 65, 116, 0.08)',
               border: `1px solid ${
                 role === 'VENDOR'
                   ? 'rgba(245, 158, 11, 0.25)'
-                  : 'rgba(19, 136, 8, 0.25)'
+                  : 'rgba(10, 65, 116, 0.25)'
               }`,
               display: 'flex',
               alignItems: 'center',
@@ -275,7 +275,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   color:
                     role === 'VENDOR'
                       ? '#B45309'
-                      : '#15803D',
+                      : 'var(--olive-primary)',
                 }}
               >
                 {role === 'VENDOR'
@@ -286,7 +286,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 style={{
                   fontSize: '11px',
                   fontWeight: 600,
-                  color: '#2E382A',
+                  color: 'var(--ink)',
                   whiteSpace: 'nowrap',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
@@ -322,7 +322,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     fontFamily: 'var(--font-data)',
                     fontSize: '10px',
                     fontWeight: 700,
-                    color: '#7E8B78',
+                    color: 'var(--ink-muted)',
                     letterSpacing: '0.08em',
                     padding: '0 8px 6px',
                     textTransform: 'uppercase',
@@ -347,8 +347,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         padding: collapsed ? '10px 0' : '8px 12px',
                         borderRadius: '8px',
                         border: 'none',
-                        background: isActive ? '#E8EDE4' : 'transparent',
-                        color: isActive ? '#1C2419' : '#44503E',
+                        background: isActive ? 'var(--olive-leaf)' : 'transparent',
+                        color: isActive ? 'var(--ink)' : 'var(--ink-secondary)',
                         fontFamily: 'var(--font-ui)',
                         fontSize: '13px',
                         fontWeight: isActive ? 700 : 500,
@@ -357,19 +357,19 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         width: '100%',
                         textAlign: 'left',
                         position: 'relative',
-                        boxShadow: isActive ? 'inset 0 0 0 1px rgba(54, 69, 47, 0.2)' : 'none',
+                        boxShadow: isActive ? 'inset 0 0 0 1px var(--hairline)' : 'none',
                       }}
                       title={collapsed ? `${item.label} — ${item.description}` : item.description}
                       onMouseEnter={(e) => {
                         if (!isActive) {
-                          e.currentTarget.style.backgroundColor = '#EFE9DD';
-                          e.currentTarget.style.color = '#1C2419';
+                          e.currentTarget.style.backgroundColor = 'var(--surface-hover)';
+                          e.currentTarget.style.color = 'var(--ink)';
                         }
                       }}
                       onMouseLeave={(e) => {
                         if (!isActive) {
                           e.currentTarget.style.backgroundColor = 'transparent';
-                          e.currentTarget.style.color = '#44503E';
+                          e.currentTarget.style.color = 'var(--ink-secondary)';
                         }
                       }}
                     >
@@ -398,20 +398,20 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             borderRadius: '9999px',
                             background:
                               typeof item.badge === 'number'
-                                ? '#FDF2F0'
-                                : 'rgba(54, 69, 47, 0.12)',
-                            color: typeof item.badge === 'number' ? '#BA3A2A' : '#36452F',
+                                ? 'var(--error-bg)'
+                                : 'var(--olive-leaf)',
+                            color: typeof item.badge === 'number' ? 'var(--error-red)' : 'var(--olive-primary)',
                             border:
                               typeof item.badge === 'number'
-                                ? '1px solid #F7CDC6'
-                                : '1px solid rgba(54, 69, 47, 0.25)',
+                                ? '1px solid var(--error-border)'
+                                : '1px solid var(--hairline)',
                           }}
                         >
                           {item.badge}
                         </span>
                       )}
 
-                      {/* Active Indicator Bar on left (Olive & Brass) */}
+                      {/* Active Indicator Bar on left */}
                       {isActive && (
                         <div
                           style={{
@@ -421,7 +421,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             bottom: '6px',
                             width: '3.5px',
                             borderRadius: '0 4px 4px 0',
-                            backgroundColor: '#36452F',
+                            backgroundColor: 'var(--olive-primary)',
                           }}
                         />
                       )}
@@ -438,8 +438,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div
         style={{
           padding: collapsed ? '12px 6px' : '14px 16px',
-          borderTop: '1px solid #EAE5D9',
-          backgroundColor: '#F0EBE0',
+          borderTop: '1px solid var(--hairline)',
+          backgroundColor: 'var(--surface-secondary)',
           display: 'flex',
           flexDirection: 'column',
           gap: '8px',
@@ -450,15 +450,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
             type="button"
             onClick={onToggleCollapse}
             style={{
-              background: '#FFFEFB',
-              border: '1px solid #E5E0D4',
+              background: 'var(--surface)',
+              border: '1px solid var(--hairline)',
               borderRadius: '6px',
               height: '32px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               cursor: 'pointer',
-              color: '#6E7A68',
+              color: 'var(--ink-muted)',
               fontSize: '11px',
             }}
             title="Expand sidebar"
@@ -474,15 +474,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     width: '7px',
                     height: '7px',
                     borderRadius: '50%',
-                    backgroundColor: '#2D6A4F',
-                    boxShadow: '0 0 6px #2D6A4F',
+                    backgroundColor: 'var(--emerald-pass)',
+                    boxShadow: '0 0 6px var(--emerald-pass)',
                   }}
                 />
                 <span
                   style={{
                     fontFamily: 'var(--font-data)',
                     fontSize: '11px',
-                    color: '#2E382A',
+                    color: 'var(--ink)',
                     fontWeight: 600,
                   }}
                 >
@@ -493,12 +493,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 style={{
                   fontFamily: 'var(--font-data)',
                   fontSize: '9.5px',
-                  color: '#2D6A4F',
+                  color: 'var(--emerald-text)',
                   fontWeight: 700,
-                  background: '#EDF7F1',
+                  background: 'var(--emerald-bg)',
                   padding: '1px 5px',
                   borderRadius: '4px',
-                  border: '1px solid #B7E4C7',
+                  border: '1px solid var(--emerald-border)',
                 }}
               >
                 LIVE
@@ -509,7 +509,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               style={{
                 fontFamily: 'var(--font-data)',
                 fontSize: '10px',
-                color: '#6E7A68',
+                color: 'var(--ink-muted)',
                 lineHeight: 1.35,
               }}
             >

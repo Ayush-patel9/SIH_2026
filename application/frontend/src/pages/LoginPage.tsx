@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import type { UserRole } from '../types';
 import { register, loginWithCredentials, type UserProfile } from '../store/userStore';
+import { ThemeSwitcher } from '../components/ThemeSwitcher';
 
 interface LoginPageProps {
   initialRole?: UserRole;
@@ -73,8 +74,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({
     <div
       style={{
         minHeight: '100vh',
-        backgroundColor: '#FBF9F5',
-        color: '#1C2419',
+        backgroundColor: 'var(--canvas)',
+        color: 'var(--ink)',
         fontFamily: "'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
         display: 'flex',
         flexDirection: 'column',
@@ -93,9 +94,9 @@ export const LoginPage: React.FC<LoginPageProps> = ({
           position: 'absolute',
           top: '24px',
           left: '28px',
-          backgroundColor: '#FFFEFB',
-          border: '1px solid #E5E0D4',
-          color: '#1C2419',
+          backgroundColor: 'var(--surface)',
+          border: '1px solid var(--hairline)',
+          color: 'var(--ink)',
           padding: '8px 14px',
           borderRadius: '6px',
           fontSize: '12.5px',
@@ -104,33 +105,38 @@ export const LoginPage: React.FC<LoginPageProps> = ({
           display: 'flex',
           alignItems: 'center',
           gap: '6px',
-          boxShadow: '0 1px 3px rgba(54, 69, 47, 0.04)',
+          boxShadow: 'var(--shadow-xs)',
           transition: 'all 0.15s ease',
           zIndex: 10,
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.backgroundColor = '#F5F0E6';
-          e.currentTarget.style.borderColor = '#36452F';
+          e.currentTarget.style.backgroundColor = 'var(--surface-hover)';
+          e.currentTarget.style.borderColor = 'var(--olive-primary)';
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.backgroundColor = '#FFFEFB';
-          e.currentTarget.style.borderColor = '#E5E0D4';
+          e.currentTarget.style.backgroundColor = 'var(--surface)';
+          e.currentTarget.style.borderColor = 'var(--hairline)';
         }}
       >
         <span>←</span>
         <span>Back to Portal Overview</span>
       </button>
 
+      {/* Theme Switcher on Top Right */}
+      <div style={{ position: 'absolute', top: '24px', right: '28px', zIndex: 10 }}>
+        <ThemeSwitcher />
+      </div>
+
       {/* Main Auth Card */}
       <div
         style={{
           width: '100%',
           maxWidth: '480px',
-          backgroundColor: '#FFFEFB',
-          border: '1px solid #E5E0D4',
+          backgroundColor: 'var(--surface)',
+          border: '1px solid var(--hairline)',
           borderRadius: '14px',
           padding: '32px 30px',
-          boxShadow: '0 4px 20px -2px rgba(54, 69, 47, 0.06), 0 1px 3px 0 rgba(54, 69, 47, 0.04)',
+          boxShadow: 'var(--shadow-card)',
           position: 'relative',
           zIndex: 5,
         }}

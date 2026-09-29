@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import type { UserRole } from '../types';
 import type { UserProfile } from '../store/userStore';
+import { ThemeSwitcher } from '../components/ThemeSwitcher';
 
 interface LandingPageProps {
   onLogin: (preselectedRole?: UserRole, mode?: 'signin' | 'signup') => void;
@@ -21,22 +22,22 @@ export const LandingPage: React.FC<LandingPageProps> = ({
     <div
       style={{
         minHeight: '100vh',
-        backgroundColor: '#FBF9F5',
-        color: '#1C2419',
+        backgroundColor: 'var(--canvas)',
+        color: 'var(--ink)',
         fontFamily: "'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
         overflowX: 'hidden',
         position: 'relative',
       }}
     >
-      {/* Sovereign Header */}
+      {/* Sovereign / Zoom Header */}
       <header
         style={{
           position: 'sticky',
           top: 0,
           zIndex: 40,
           backdropFilter: 'blur(12px)',
-          backgroundColor: 'rgba(251, 249, 245, 0.94)',
-          borderBottom: '1px solid #E5E0D4',
+          backgroundColor: 'var(--canvas)',
+          borderBottom: '1px solid var(--hairline)',
           padding: '12px 32px',
         }}
       >
@@ -56,13 +57,13 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 width: '42px',
                 height: '42px',
                 borderRadius: '8px',
-                backgroundColor: '#36452F',
-                border: '1px solid #24301F',
+                backgroundColor: 'var(--olive-primary)',
+                border: '1px solid var(--olive-dark)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: '#FFFEFB',
-                boxShadow: '0 2px 8px rgba(54, 69, 47, 0.15)',
+                color: '#FFFFFF',
+                boxShadow: 'var(--shadow-sm)',
               }}
             >
               <span style={{ fontWeight: 800, fontSize: '18px', letterSpacing: '-0.5px' }}>M</span>
@@ -147,14 +148,16 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
           {/* Action CTAs */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <ThemeSwitcher />
+
             {isLoggedIn && loggedInUser ? (
               <button
                 type="button"
                 onClick={onEnterApp}
                 style={{
-                  backgroundColor: '#36452F',
+                  backgroundColor: 'var(--olive-primary)',
                   border: 'none',
-                  color: '#FFFEFB',
+                  color: '#FFFFFF',
                   padding: '8px 16px',
                   borderRadius: '6px',
                   fontSize: '12.5px',
@@ -163,7 +166,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                   display: 'flex',
                   alignItems: 'center',
                   gap: '6px',
-                  boxShadow: '0 2px 6px rgba(54, 69, 47, 0.2)',
+                  boxShadow: 'var(--shadow-xs)',
                 }}
               >
                 <span>Enter Workspace ({loggedInUser.name.split(' ')[0]})</span>
@@ -175,9 +178,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                   type="button"
                   onClick={() => onLogin(undefined, 'signin')}
                   style={{
-                    backgroundColor: '#FFFEFB',
-                    border: '1px solid #E5E0D4',
-                    color: '#1C2419',
+                    backgroundColor: 'var(--surface)',
+                    border: '1px solid var(--hairline)',
+                    color: 'var(--ink)',
                     padding: '8px 16px',
                     borderRadius: '6px',
                     fontSize: '12.5px',
@@ -186,12 +189,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                     transition: 'all 0.15s ease',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = '#36452F';
-                    e.currentTarget.style.backgroundColor = '#F5F0E6';
+                    e.currentTarget.style.borderColor = 'var(--olive-primary)';
+                    e.currentTarget.style.backgroundColor = 'var(--surface-hover)';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = '#E5E0D4';
-                    e.currentTarget.style.backgroundColor = '#FFFEFB';
+                    e.currentTarget.style.borderColor = 'var(--hairline)';
+                    e.currentTarget.style.backgroundColor = 'var(--surface)';
                   }}
                 >
                   Sign In
@@ -200,19 +203,19 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                   type="button"
                   onClick={() => onLogin(undefined, 'signup')}
                   style={{
-                    backgroundColor: '#36452F',
+                    backgroundColor: 'var(--olive-primary)',
                     border: 'none',
-                    color: '#FFFEFB',
+                    color: '#FFFFFF',
                     padding: '8px 16px',
                     borderRadius: '6px',
                     fontSize: '12.5px',
                     fontWeight: 700,
                     cursor: 'pointer',
-                    boxShadow: '0 2px 8px rgba(54, 69, 47, 0.2)',
+                    boxShadow: 'var(--shadow-xs)',
                     transition: 'all 0.15s ease',
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#24301F')}
-                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#36452F')}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--olive-dark)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--olive-primary)')}
                 >
                   Create Account ➔
                 </button>

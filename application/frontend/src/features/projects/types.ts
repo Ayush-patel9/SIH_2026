@@ -28,10 +28,19 @@ export interface TenderProject {
   estimatedValue: string;
   lastModified: string;
   recencyTimestamp: number;
-  status: 'DRAFT' | 'NEEDS_REVIEW' | 'COMPLIANT' | 'PUBLISHED';
+  status: 'DRAFT' | 'NEEDS_REVIEW' | 'COMPLIANT' | 'PUBLISHED' | 'INGESTED' | 'ANALYZING' | 'COMPLETED';
   complianceScore: number;
-  clauses: ClauseSuggestion[];
-  hasPdfUploaded: boolean;
-  pdfFileName?: string;
+  hasDocument: boolean;
+  hasPdfUploaded?: boolean;
+  documentText?: string | null;
+  pdfUrl?: string | null;
+  pdfFileName?: string | null;
   description?: string;
+  clauses?: ClauseSuggestion[];
+  isFrozen?: boolean;
+  isAnalyzed?: boolean;
+  analysisPhase?: 'IDLE' | 'STAGE1_DECOMPOSING' | 'STAGE2_SELECTION' | 'STAGE3_FINALIZING' | 'DASHBOARD_COMPLETED';
+  stage1Data?: any;
+  stage2Data?: any;
+  stage3Data?: any;
 }

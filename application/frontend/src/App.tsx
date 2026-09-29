@@ -24,6 +24,7 @@ import { useRole } from './store/roleStore';
 import { useSession } from './store/userStore';
 import { TenderAuthorityPanel, VendorPanel } from './features/roles';
 import { LanguageSelector } from './components/LanguageSelector';
+import { ThemeSwitcher } from './components/ThemeSwitcher';
 import { LoadingShimmer } from './components/LoadingShimmer';
 import { DataSovereigntyModal } from './components/DataSovereigntyModal';
 import { LowBandwidthToggle } from './components/LowBandwidthToggle';
@@ -778,6 +779,8 @@ export default function App({ onLogout }: AppProps = {}) {
               <span>🤖</span>
               <span>BIS Assistant</span>
             </button>
+
+            <ThemeSwitcher />
 
             <LanguageSelector
               language={language}

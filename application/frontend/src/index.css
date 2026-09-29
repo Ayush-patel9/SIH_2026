@@ -92,6 +92,84 @@
   --radius-full:          9999px;
 }
 
+/* ============================================================
+   Theme: "Zoom Enterprise" (Zoom Workplace Clean Modern Blue)
+   Hex tokens: #001D39, #0A4174, #49769F, #4E8EA2, #6EA2B3, #7BBDE8, #BDD8E9
+   ============================================================ */
+[data-theme="zoom"] {
+  /* Canvas & Surface Tonal Stepping */
+  --canvas:               #F4F7FB;  /* Clean Arctic Blue-White Canvas */
+  --canvas-secondary:     #EAF1F8;  /* Ice blue secondary container */
+  --surface:              #FFFFFF;  /* Crisp Pure White Surface */
+  --surface-secondary:    #F0F5FA;  /* Pale Arctic tint */
+  --surface-hover:        #E2EDF6;  /* Soft Ice Hover */
+  --paper:                #FFFFFF;
+  --void:                 #001D39;  /* Deepest Navy for high-contrast dark bars */
+
+  /* Text & Foreground Hierarchy */
+  --ink:                  #001D39;  /* Deep Midnight Navy (Maximum Legibility) */
+  --ink-primary:          #001D39;
+  --ink-secondary:        #0A4174;  /* Rich Navy */
+  --ink-muted:            #49769F;  /* Slate Steel Blue */
+  --ink-faint:            #6EA2B3;  /* Soft Slate Cyan */
+  --ink-ghost:            #BDD8E9;  /* Ice Blue */
+
+  /* Dividers & Hairlines */
+  --hairline:             #D6E4EE;  /* Cool Ice Hairline */
+  --hairline-hover:       #BDD8E9;
+  --border-default:       #D6E4EE;
+  --canvas-wire:          #BDD8E9;
+
+  /* Primary Brand & Accents: Zoom Corporate Blues */
+  --olive-primary:        #0A4174;  /* Rich Zoom Navy Blue */
+  --olive-dark:           #001D39;
+  --olive-hover:          #001D39;
+  --olive-sage:           #49769F;  /* Slate Steel Blue */
+  --olive-leaf:           #E8F2F8;  /* Crisp Sky/Ice chip background */
+  --olive-tint:           #F0F6FA;
+
+  --gold-antique:         #4E8EA2;  /* Cyan Steel Accent */
+  --gold-bg:              #EDF6F9;
+  --gold-border:          #BDD8E9;
+  --gold-text:            #0A4174;
+
+  --focus-blue:           #0A4174;
+  --focus-blue-glow:      rgba(10, 65, 116, 0.20);
+  --collapse-cobalt:      #0A4174;
+
+  /* Functional Status Indicators */
+  --emerald-pass:         #0E8A5E;  /* Modern Emerald */
+  --emerald-bg:           #E6F7F0;
+  --emerald-border:       #A3E3CA;
+  --emerald-text:         #075A3D;
+
+  --saffron:              #0A4174;
+  --saffron-bg:           #EBF3FA;
+  --saffron-border:       #BDD8E9;
+  --saffron-text:         #001D39;
+
+  --amber-warn:           #D97706;
+  --amber-bg:             #FFFBEB;
+  --amber-border:         #FDE68A;
+  --signal-amber:         #D97706;
+
+  --error-red:            #E11D48;  /* Vibrant Crimson */
+  --error-bg:             #FFF1F2;
+  --error-border:         #FECDD3;
+  --error-line:           #E11D48;
+
+  --superposition-violet: #4E8EA2;  /* Cyan Slate */
+  --superposition-bg:     #EBF4F7;
+  --superposition-border: #CBE3EB;
+
+  /* Zoom Modern Shadows (Crisp & Floated) */
+  --shadow-xs:            0 1px 2px 0 rgba(0, 29, 57, 0.05);
+  --shadow-sm:            0 1px 3px 0 rgba(0, 29, 57, 0.06), 0 1px 2px -1px rgba(0, 29, 57, 0.04);
+  --shadow-card:          0 2px 6px 0 rgba(0, 29, 57, 0.04), 0 8px 24px -4px rgba(0, 29, 57, 0.06);
+  --shadow-card-hover:    0 8px 30px -4px rgba(0, 29, 57, 0.12);
+  --shadow-modal:         0 20px 50px -6px rgba(0, 29, 57, 0.22), 0 6px 20px -2px rgba(0, 29, 57, 0.10);
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -130,6 +208,14 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #AAB3A2;
+}
+
+[data-theme="zoom"] ::-webkit-scrollbar-thumb {
+  background: #BDD8E9;
+}
+
+[data-theme="zoom"] ::-webkit-scrollbar-thumb:hover {
+  background: #7BBDE8;
 }
 
 *:focus-visible {
