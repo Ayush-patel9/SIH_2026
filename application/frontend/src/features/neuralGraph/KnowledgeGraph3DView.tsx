@@ -444,6 +444,16 @@ export const KnowledgeGraph3DView: React.FC = () => {
     }
   };
 
+  const handleCanvasDoubleClick = (e: React.MouseEvent<HTMLCanvasElement>) => {
+    const { x, y } = getCanvasCoords(e);
+    const clicked = nodes.find((n) => Math.hypot(n.x - x, n.y - y) <= n.radius + 8);
+    if (clicked) {
+      const rawNum = clicked.isNumber.split(':')[0].trim();
+      setSearchQuery(rawNum);
+      fetchDynamicSubgraph(rawNum, activeFilter);
+    }
+  };
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {/* Top Banner */}
@@ -662,6 +672,7 @@ export const KnowledgeGraph3DView: React.FC = () => {
             onMouseUp={handleCanvasMouseUp}
             onMouseLeave={handleCanvasMouseUp}
             onClick={handleCanvasClick}
+            onDoubleClick={handleCanvasDoubleClick}
             style={{
               width: '100%',
               height: 'auto',
@@ -700,8 +711,8 @@ export const KnowledgeGraph3DView: React.FC = () => {
                 <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#EF4444' }} /> Superseded
               </span>
             </div>
-            <div style={{ fontFamily: 'var(--font-data)', fontSize: '10.5px' }}>
-              CLICK ANY NODE TO INSPECT LINEAGE
+            <div style={{ fontFamily: 'var(--font-data)', fontSize: '10.5px', color: 'var(--collapse-cobalt, #2563EB)', fontWeight: 600 }}>
+              💡 DOUBLE-CLICK ANY NODE OR SEARCH TO EXPAND FROM 22,011 STANDARDS
             </div>
           </div>
         </div>
@@ -728,6 +739,29 @@ export const KnowledgeGraph3DView: React.FC = () => {
                 Division: {selectedNode.domain} · Reaffirmed: {selectedNode.year}
               </div>
             </div>
+
+            <button
+              type="button"
+              onClick={() => {
+                const rawNum = selectedNode.isNumber.split(':')[0].trim();
+                setSearchQuery(rawNum);
+                fetchDynamicSubgraph(rawNum, activeFilter);
+              }}
+              className="btn-primary"
+              style={{
+                width: '100%',
+                padding: '7px 12px',
+                fontSize: '11.5px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '6px',
+                fontWeight: 600,
+              }}
+            >
+              <Compass size={13} />
+              <span>Center & Expand Graph for {selectedNode.isNumber.split(':')[0]}</span>
+            </button>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
               <div className="metric-mini-tile" style={{ padding: '8px 10px' }}>
