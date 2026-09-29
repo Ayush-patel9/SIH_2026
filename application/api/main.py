@@ -29,9 +29,13 @@ from application.api.routes.alerts import router as alerts_router
 from application.api.routes.websocket import router as websocket_router
 from application.api.routes.knowledge_graph import router as knowledge_graph_router
 from application.api.routes.tender_pipeline import router as tender_pipeline_router
-from application.api.routes.tender_temporal import router as tender_temporal_router
+try:
+    from application.api.routes.tender_temporal import router as tender_temporal_router
+except ImportError:
+    tender_temporal_router = None
 from application.api.routes.projects import router as projects_router
 from application.api.routes.gazette import router as gazette_router
+from application.api.routes.mcp_router import router as mcp_router
 from application.services.project_repository import init_db, seed_initial_projects_if_empty
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -76,9 +80,12 @@ app.include_router(alerts_router)
 app.include_router(websocket_router)
 app.include_router(knowledge_graph_router)
 app.include_router(tender_pipeline_router)
-app.include_router(tender_temporal_router)
+if tender_temporal_router:
+    app.include_router(tender_temporal_router)
 app.include_router(projects_router)
 app.include_router(gazette_router)
+app.include_router(mcp_router, prefix="/api/v1/mcp")
+app.include_router(mcp_router, prefix="/mcp")
 
 @app.get("/health", summary="Health Check")
 @app.get("/api/health", summary="Health Check (API Prefix)")
@@ -96,7 +103,10 @@ def read_root():
             "tender_upload": "/api/v1/tender-upload (POST)",
             "export_nit": "/api/v1/export-nit (POST)",
             "feedback": "/api/v1/feedback (POST/GET)",
-            "alerts": "/api/v1/alerts (GET)"
+            "alerts": "/api/v1/alerts (GET)",
+            "mcp_rpc": "/api/v1/mcp/rpc (JSON-RPC 2.0)",
+            "mcp_tools": "/api/v1/mcp/tools (GET)",
+            "mcp_call": "/api/v1/mcp/call (POST)"
         }
     }
 
