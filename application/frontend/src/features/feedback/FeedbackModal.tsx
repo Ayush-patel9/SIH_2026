@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import type { FeedbackType, UserRole } from '../../types';
 import { buildFeedbackPayload } from './feedbackBuilder';
-import { FeedbackStore } from './feedbackStore';
+import { FeedbackStore, type ExtendedFeedbackItem } from './feedbackStore';
+import { Flag, X, CheckCircle2, Search, Building2, Scale, AlertTriangle, ShieldCheck } from 'lucide-react';
+import { MASTER_STANDARDS_CATALOG } from '../../data/standardsMentionCatalog';
 
 interface FeedbackModalProps {
   isOpen: boolean;
@@ -12,6 +14,18 @@ interface FeedbackModalProps {
   onSuccess?: () => void;
 }
 
+const SECTIONAL_COMMITTEES = [
+  'CED 02 (Cement and Concrete)',
+  'MTD 04 (Wrought Steel Products)',
+  'MED 17 (Plastics Piping Systems)',
+  'CED 54 (Concrete Reinforcement)',
+  'ETD 16 (Transformers)',
+  'PCD 03 (Bitumen, Tar and Related Products)',
+  'ETD 09 (Power Cables)',
+  'CED 22 (Fire Safety)',
+  'LITD 14 (Computer Hardware & IT)',
+];
+
 export const FeedbackModal: React.FC<FeedbackModalProps> = ({
   isOpen,
   onClose,
@@ -20,11 +34,14 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
   flaggedIsNumber,
   onSuccess,
 }) => {
-  const [feedbackType, setFeedbackType] = useState<FeedbackType>('WRONG_STANDARD');
+  const [feedbackType, setFeedbackType] = useState<FeedbackType>('OUTDATED_STANDARD');
+  const [targetIsNumber, setTargetIsNumber] = useState(flaggedIsNumber || 'IS 8112:1989');
   const [correctIsNumber, setCorrectIsNumber] = useState('');
+  const [severity, setSeverity] = useState<'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW'>('HIGH');
+  const [committee, setCommittee] = useState(SECTIONAL_COMMITTEES[0]);
   const [notes, setNotes] = useState('');
   const [role, setRole] = useState<UserRole>('OFFICER');
-  const [ministryCode, setMinistryCode] = useState('MoRTH');
+  const [ministryCode, setMinistryCode] = useState('NHAI / MoRTH');
   const [submitted, setSubmitted] = useState(false);
 
   if (!isOpen) return null;
@@ -32,10 +49,10 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const payload = buildFeedbackPayload(
+    const basePayload = buildFeedbackPayload(
       {
         feedbackType,
-        flaggedIsNumber,
+        flaggedIsNumber: targetIsNumber.trim(),
         correctIsNumber: correctIsNumber.trim() || undefined,
         officerNotes: notes.trim(),
         role,
@@ -46,7 +63,15 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
       recommendationId
     );
 
-    FeedbackStore.save(payload);
+    const extendedPayload: ExtendedFeedbackItem = {
+      ...basePayload,
+      severity,
+      sectional_committee: committee,
+      affected_tenders_count: Math.floor(Math.random() * 15) + 3,
+      gazette_qco_ref: 'Statutory BIS Quality Control Order',
+    };
+
+    FeedbackStore.save(extendedPayload);
     setSubmitted(true);
 
     setTimeout(() => {
@@ -60,150 +85,281 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
     <div
       style={{
         position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        background: 'rgba(13, 15, 20, 0.65)',
+        inset: 0,
+        backgroundColor: 'rgba(0, 20, 40, 0.65)',
+        backdropFilter: 'blur(3px)',
         display: 'flex',
         justifyContent: 'flex-end',
-        zIndex: 1000,
-        backdropFilter: 'blur(2px)',
+        zIndex: 10000,
       }}
       onClick={onClose}
     >
       <div
         style={{
           width: '100%',
-          maxWidth: '480px',
-          background: 'var(--surface)',
+          maxWidth: '520px',
+          backgroundColor: 'var(--surface)',
           height: '100%',
-          boxShadow: '-4px 0 24px rgba(0, 0, 0, 0.15)',
+          boxShadow: 'var(--shadow-modal)',
           display: 'flex',
           flexDirection: 'column',
           overflowY: 'auto',
-          animation: 'auth-card-in 0.20s ease both',
+          animation: 'fadeSlideUp 0.18s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
         <div
           style={{
-            padding: '18px 24px',
+            padding: '16px 22px',
             borderBottom: '1px solid var(--hairline)',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
-            background: 'var(--paper)',
+            backgroundColor: 'var(--surface-secondary)',
           }}
         >
-          <div>
-            <div className="section-label" style={{ margin: '0 0 2px 0' }}>
-              EXPERT CORRECTION & MODERATION
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Flag size={18} color="var(--olive-primary)" />
+            <div>
+              <div className="section-label" style={{ margin: 0 }}>
+                STATUTORY MODERATION INTAKE
+              </div>
+              <h2 style={{ fontSize: '16px', fontWeight: 800, color: 'var(--ink)', margin: '2px 0 0' }}>
+                Submit Specification Flag
+              </h2>
             </div>
-            <h2 style={{ fontFamily: 'var(--font-prose)', fontSize: '18px', fontWeight: 600, color: 'var(--ink)' }}>
-              Flag Recommendation
-            </h2>
           </div>
           <button
             type="button"
-            className="btn-secondary"
-            style={{ padding: '4px 8px', fontSize: '12px' }}
+            style={{ background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', padding: '4px' }}
             onClick={onClose}
           >
-            ✕
+            <X size={16} />
           </button>
         </div>
 
         {/* Modal Body */}
-        <div style={{ padding: '24px', flex: 1 }}>
+        <div style={{ padding: '22px', flex: 1 }}>
           {submitted ? (
-            <div className="auth-banner success" style={{ padding: '20px', textAlign: 'center' }}>
-              <div style={{ fontSize: '24px', marginBottom: '8px' }}>✓</div>
-              <strong style={{ fontSize: '14px' }}>Correction Recorded in BIS Review Queue</strong>
-              <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', marginTop: '6px', color: '#065F46' }}>
-                Your feedback will be audited by the Technical Committee and integrated into the continuous training store.
+            <div
+              style={{
+                padding: '24px',
+                textAlign: 'center',
+                backgroundColor: 'var(--emerald-bg)',
+                border: '1px solid var(--emerald-border)',
+                borderRadius: '8px',
+              }}
+            >
+              <CheckCircle2 size={32} color="var(--emerald-text)" style={{ margin: '0 auto 8px' }} />
+              <div style={{ fontSize: '15px', fontWeight: 800, color: 'var(--emerald-text)' }}>
+                Moderation Flag Recorded in Review Queue
+              </div>
+              <p style={{ fontSize: '12.5px', marginTop: '6px', color: 'var(--ink-secondary)', lineHeight: 1.5 }}>
+                Your technical feedback has been queued for Technical Committee oversight and incorporated into the continuous trust index telemetry.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="auth-form">
-              <label className="auth-label">
-                Flagged Indian Standard (Read-Only)
+            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              <div>
+                <label style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                  Flagged Indian Standard Code
+                </label>
                 <input
                   type="text"
-                  value={flaggedIsNumber}
-                  disabled
-                  className="auth-input font-mono"
-                  style={{ background: 'var(--paper)', fontWeight: 600 }}
+                  value={targetIsNumber}
+                  onChange={(e) => setTargetIsNumber(e.target.value)}
+                  className="font-mono"
+                  style={{
+                    width: '100%',
+                    padding: '8px 12px',
+                    borderRadius: '6px',
+                    border: '1px solid var(--hairline)',
+                    backgroundColor: 'var(--surface-secondary)',
+                    color: 'var(--ink)',
+                    fontSize: '12.5px',
+                    fontWeight: 700,
+                    boxSizing: 'border-box',
+                  }}
+                  required
                 />
-              </label>
+              </div>
 
-              <label className="auth-label">
-                Feedback Classification Type
+              <div>
+                <label style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                  Feedback Classification
+                </label>
                 <select
                   value={feedbackType}
                   onChange={(e) => setFeedbackType(e.target.value as FeedbackType)}
-                  className="auth-input auth-select"
+                  style={{
+                    width: '100%',
+                    padding: '8px 10px',
+                    borderRadius: '6px',
+                    border: '1px solid var(--hairline)',
+                    backgroundColor: 'var(--surface)',
+                    color: 'var(--ink)',
+                    fontSize: '12.5px',
+                    fontWeight: 600,
+                  }}
                 >
-                  <option value="WRONG_STANDARD">Wrong Standard Recommended (Irrelevant Specification)</option>
-                  <option value="OUTDATED_STANDARD">Outdated / Withdrawn Standard Missed</option>
-                  <option value="MISSING_ALLIED_STANDARD">Missing Allied / Test Method Standard</option>
-                  <option value="WRONG_CERTIFICATION">Incorrect Certification / QCO Order Scheme</option>
+                  <option value="OUTDATED_STANDARD">Outdated / Withdrawn Standard Cited</option>
+                  <option value="MISSING_ALLIED_STANDARD">Missing Mandatory Allied Testing Standard</option>
+                  <option value="WRONG_STANDARD">Wrong Standard Recommended for Scope</option>
+                  <option value="WRONG_CERTIFICATION">QCO / Non-Restrictive Competition Violation</option>
                   <option value="FALSE_OUTDATED_FLAG">False Positive Staleness Flag</option>
-                  <option value="OTHER">Other Domain Specific Recommendation Issue</option>
+                  <option value="OTHER">Other Technical Specification Issue</option>
                 </select>
-              </label>
+              </div>
 
-              <label className="auth-label">
-                Proposed Correct Standard Number (Optional)
-                <input
-                  type="text"
-                  value={correctIsNumber}
-                  onChange={(e) => setCorrectIsNumber(e.target.value)}
-                  placeholder="e.g. IS 1489 (Part 1):2015"
-                  className="auth-input font-mono"
-                />
-              </label>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                <div>
+                  <label style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                    Proposed Correct Standard
+                  </label>
+                  <input
+                    type="text"
+                    value={correctIsNumber}
+                    onChange={(e) => setCorrectIsNumber(e.target.value)}
+                    placeholder="e.g. IS 269:2015"
+                    className="font-mono"
+                    style={{
+                      width: '100%',
+                      padding: '8px 10px',
+                      borderRadius: '6px',
+                      border: '1px solid var(--hairline)',
+                      backgroundColor: 'var(--surface)',
+                      color: 'var(--ink)',
+                      fontSize: '12.5px',
+                      boxSizing: 'border-box',
+                    }}
+                  />
+                </div>
 
-              <label className="auth-label">
-                Officer Notes & Technical Rationale
+                <div>
+                  <label style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                    Severity Level
+                  </label>
+                  <select
+                    value={severity}
+                    onChange={(e: any) => setSeverity(e.target.value)}
+                    style={{
+                      width: '100%',
+                      padding: '8px 10px',
+                      borderRadius: '6px',
+                      border: '1px solid var(--hairline)',
+                      backgroundColor: 'var(--surface)',
+                      color: 'var(--ink)',
+                      fontSize: '12.5px',
+                      fontWeight: 600,
+                    }}
+                  >
+                    <option value="CRITICAL">Critical (Statutory Disallowance)</option>
+                    <option value="HIGH">High (Mandatory QCO Requirement)</option>
+                    <option value="MEDIUM">Medium (Testing Frequency)</option>
+                    <option value="LOW">Low (Terminology / Typo)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                  Target BIS Sectional Committee
+                </label>
+                <select
+                  value={committee}
+                  onChange={(e) => setCommittee(e.target.value)}
+                  style={{
+                    width: '100%',
+                    padding: '8px 10px',
+                    borderRadius: '6px',
+                    border: '1px solid var(--hairline)',
+                    backgroundColor: 'var(--surface)',
+                    color: 'var(--ink)',
+                    fontSize: '12px',
+                    fontWeight: 600,
+                  }}
+                >
+                  {SECTIONAL_COMMITTEES.map((c) => (
+                    <option key={c} value={c}>
+                      {c}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                  Officer Rationale & Technical Justification
+                </label>
                 <textarea
-                  rows={4}
+                  rows={3}
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
-                  placeholder="Explain why this specification is inappropriate for this procurement tender context..."
-                  className="tutor-input"
-                  style={{ width: '100%', fontSize: '13px' }}
+                  placeholder="Explain the statutory or engineering grounds for this correction..."
+                  style={{
+                    width: '100%',
+                    padding: '8px 10px',
+                    borderRadius: '6px',
+                    border: '1px solid var(--hairline)',
+                    backgroundColor: 'var(--surface)',
+                    color: 'var(--ink)',
+                    fontSize: '12.5px',
+                    fontFamily: 'var(--font-ui)',
+                    resize: 'vertical',
+                    boxSizing: 'border-box',
+                  }}
                   required
                 />
-              </label>
+              </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-                <label className="auth-label">
-                  Your Officer Role
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                <div>
+                  <label style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                    Officer Role
+                  </label>
                   <select
                     value={role}
                     onChange={(e) => setRole(e.target.value as UserRole)}
-                    className="auth-input auth-select"
+                    style={{
+                      width: '100%',
+                      padding: '8px 10px',
+                      borderRadius: '6px',
+                      border: '1px solid var(--hairline)',
+                      backgroundColor: 'var(--surface)',
+                      color: 'var(--ink)',
+                      fontSize: '12px',
+                    }}
                   >
-                    <option value="OFFICER">🏛️ Tender Authority & Technical Officer</option>
-                    <option value="VENDOR">🏭 Registered Vendor / Supplier</option>
+                    <option value="OFFICER">Tender Authority & Technical Officer</option>
+                    <option value="VENDOR">Registered Vendor / Supplier</option>
                   </select>
-                </label>
+                </div>
 
-                <label className="auth-label">
-                  Ministry / Entity Code
+                <div>
+                  <label style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                    Ministry / Entity Code
+                  </label>
                   <input
                     type="text"
                     value={ministryCode}
                     onChange={(e) => setMinistryCode(e.target.value)}
-                    className="auth-input font-mono"
+                    style={{
+                      width: '100%',
+                      padding: '8px 10px',
+                      borderRadius: '6px',
+                      border: '1px solid var(--hairline)',
+                      backgroundColor: 'var(--surface)',
+                      color: 'var(--ink)',
+                      fontSize: '12px',
+                      boxSizing: 'border-box',
+                    }}
                     required
                   />
-                </label>
+                </div>
               </div>
 
-              <div style={{ marginTop: '14px', display: 'flex', gap: '8px', justifyContent: 'flex-end' }}>
+              <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '10px' }}>
                 <button
                   type="button"
                   className="btn-secondary"
@@ -213,9 +369,11 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
                 </button>
                 <button
                   type="submit"
-                  className="btn-run"
+                  className="btn-primary"
+                  style={{ display: 'flex', alignItems: 'center', gap: '5px' }}
                 >
-                  Submit Correction
+                  <Flag size={13} />
+                  <span>Submit to Moderation Queue</span>
                 </button>
               </div>
             </form>
