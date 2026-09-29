@@ -39,7 +39,24 @@ import { KnowledgeGraph3DView } from './features/neuralGraph/KnowledgeGraph3DVie
 import { GazetteRadarView } from './features/gazetteRadar/GazetteRadarView';
 import { HistoricalTimeMachineView } from './features/timeMachine/HistoricalTimeMachineView';
 import { CAGAuditSimulatorView } from './features/cagAudit/CAGAuditSimulatorView';
-import { Sparkles, Activity, Cpu, ShieldCheck, Database, CheckCircle2, History, Save, Check } from 'lucide-react';
+import {
+  Sparkles,
+  Activity,
+  Cpu,
+  ShieldCheck,
+  Database,
+  CheckCircle2,
+  History,
+  Save,
+  Check,
+  BookmarkCheck,
+  ArrowLeft,
+  ExternalLink,
+  Copy,
+  Search,
+  RefreshCw,
+  FolderOpen,
+} from 'lucide-react';
 
 // Dynamic parameter and performance extractor for any of the 22,011 Indian Standards
 function getStandardDynamicMetrics(primary?: any): Array<{ label: string; val: string }> {
@@ -338,11 +355,12 @@ export function getFeatureFromPath(pathname: string, defaultFeature: FeatureKey 
   return defaultFeature;
 }
 
-export type ExplorerSubTab = 'dossier' | 'comparison' | 'audit' | 'pastAudits' | 'nitGenerator';
+export type ExplorerSubTab = 'dossier' | 'comparison' | 'audit' | 'pastAudits' | 'savedVault' | 'nitGenerator';
 
 export function getSubTabFromPath(pathname: string): ExplorerSubTab {
   const clean = pathname.toLowerCase();
   if (clean.includes('comparison')) return 'comparison';
+  if (clean.includes('saved-vault') || clean.includes('saved')) return 'savedVault';
   if (clean.includes('past-audit') || clean.includes('vault')) return 'pastAudits';
   if (clean.includes('audit') || clean.includes('cvc')) return 'audit';
   if (clean.includes('nit')) return 'nitGenerator';
@@ -423,6 +441,51 @@ export default function App({ onLogout }: AppProps = {}) {
   const [isApproving, setIsApproving] = useState<boolean>(false);
   const [approvalToast, setApprovalToast] = useState<string | null>(null);
 
+  // Saved Standards Vault state
+  const [savedStandardsList, setSavedStandardsList] = useState<SavedStandardRecord[]>([]);
+  const [isSavedVaultOpen, setIsSavedVaultOpen] = useState<boolean>(false);
+  const [vaultSearchFilter, setVaultSearchFilter] = useState<string>('');
+  const [copiedIsCode, setCopiedIsCode] = useState<string | null>(null);
+
+  const filteredSavedStandards = savedStandardsList.filter((s) => {
+    if (!vaultSearchFilter.trim()) return true;
+    const q = vaultSearchFilter.toLowerCase().trim();
+    return (
+      s.is_number.toLowerCase().includes(q) ||
+      s.title.toLowerCase().includes(q) ||
+      (s.search_query && s.search_query.toLowerCase().includes(q))
+    );
+  });
+
+  const refreshSavedStandards = useCallback(async () => {
+    try {
+      const records = await getSavedStandards();
+      if (Array.isArray(records) && records.length > 0) {
+        setSavedStandardsList(records);
+      } else {
+        // Fallback to locally stored audits if backend DB has none
+        const localAudits = AuditStore.getAll();
+        const converted: SavedStandardRecord[] = localAudits.map((a) => ({
+          is_number: a.response.primary_recommendation?.is_number || 'Standard',
+          title: a.response.primary_recommendation?.title || 'Saved Standard',
+          status: a.response.primary_recommendation?.status || 'ACTIVE',
+          search_query: a.response.query_understanding?.normalized_text || '',
+          approved_by: 'Procurement Officer',
+          response_data: a.response,
+          created_at: new Date(a.savedAt).toISOString(),
+          updated_at: new Date(a.savedAt).toISOString(),
+        }));
+        setSavedStandardsList(converted);
+      }
+    } catch (err) {
+      console.warn('Failed to load saved standards:', err);
+    }
+  }, []);
+
+  useEffect(() => {
+    refreshSavedStandards();
+  }, [refreshSavedStandards, activeFeature]);
+
   useEffect(() => {
     if (activeData?.meta && (activeData.meta as any).approved_in_db) {
       setIsApprovedInDb(true);
@@ -439,6 +502,16 @@ export default function App({ onLogout }: AppProps = {}) {
     }
   }, [activeData]);
 
+  const handleOpenSavedStandard = (savedRecord: SavedStandardRecord) => {
+    if (!savedRecord || !savedRecord.response_data) return;
+    setActiveData(savedRecord.response_data);
+    setSearchQuery(savedRecord.is_number || savedRecord.search_query);
+    setIsApprovedInDb(true);
+    setExplorerSubTab('dossier');
+    setApprovalToast(`✓ Opened verified saved dossier for ${savedRecord.is_number}: ${savedRecord.title}`);
+    setTimeout(() => setApprovalToast(null), 4500);
+  };
+
   const handleApproveStandard = async () => {
     if (!activeData || isApproving) return;
     setIsApproving(true);
@@ -448,6 +521,7 @@ export default function App({ onLogout }: AppProps = {}) {
       setIsApprovedInDb(true);
       setApprovalToast(res.message || `Standard ${activeData.primary_recommendation?.is_number} approved and saved to Bureau DB.`);
       AuditStore.save(activeData);
+      await refreshSavedStandards();
       setTimeout(() => setApprovalToast(null), 5000);
     } catch (err: any) {
       console.error('Failed to approve standard:', err);
@@ -799,50 +873,112 @@ export default function App({ onLogout }: AppProps = {}) {
                     minHeight: '32px',
                   }}
                 >
+                  {/* Top Left: Back to Search Button */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setActiveData(null);
+                      setSearchQuery('');
+                      setExplorerSubTab('dossier');
+                    }}
+                    style={{
+                      position: 'absolute',
+                      left: 0,
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      padding: '4px 12px',
+                      borderRadius: '20px',
+                      fontSize: '11px',
+                      fontWeight: 600,
+                      backgroundColor: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '#36452F' : 'var(--surface-secondary, #F5F2EB)',
+                      color: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '#FFFEFB' : 'var(--ink, #1F2937)',
+                      border: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '1px solid #36452F' : '1px solid var(--hairline, #E5E0D4)',
+                      cursor: 'pointer',
+                      transition: 'all 0.15s ease',
+                      boxShadow: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '0 2px 6px rgba(54,69,47,0.2)' : 'none',
+                      zIndex: 10,
+                    }}
+                    title="Return to empty search page from anywhere"
+                  >
+                    <ArrowLeft size={12} style={{ color: (activeData || explorerSubTab !== 'dossier' || searchQuery) ? '#FFFEFB' : 'var(--ink-secondary, #44503E)' }} />
+                    <span>← Back to Search</span>
+                  </button>
+
                   <div className="editorial-hero-tag" style={{ margin: 0 }}>
                     <Sparkles size={12} />
                     <span>BIS Standards Platform</span>
                   </div>
 
-                  {/* Past Audits Vault Button Positioned Beside Header on Extreme Right */}
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setExplorerSubTab(explorerSubTab === 'pastAudits' ? 'dossier' : 'pastAudits');
-                    }}
+                  {/* Top Right Action Cluster: Past Audits Vault + Saved Standards Vault Just Below */}
+                  <div
                     style={{
                       position: 'absolute',
                       right: 0,
                       top: '50%',
                       transform: 'translateY(-50%)',
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '7px',
-                      padding: '5px 12px',
-                      borderRadius: '20px',
-                      fontSize: '11.5px',
-                      fontWeight: 600,
-                      backgroundColor: explorerSubTab === 'pastAudits' ? '#36452F' : 'var(--surface-secondary, #F5F2EB)',
-                      color: explorerSubTab === 'pastAudits' ? '#FFFEFB' : 'var(--ink, #1F2937)',
-                      border: explorerSubTab === 'pastAudits' ? '1px solid #36452F' : '1px solid var(--hairline, #E5E0D4)',
-                      cursor: 'pointer',
-                      transition: 'all 0.15s ease',
-                      boxShadow: explorerSubTab === 'pastAudits' ? '0 2px 6px rgba(54,69,47,0.2)' : 'none',
-                    }}
-                    onMouseEnter={(e) => {
-                      if (explorerSubTab !== 'pastAudits') {
-                        e.currentTarget.style.borderColor = '#36452F';
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      if (explorerSubTab !== 'pastAudits') {
-                        e.currentTarget.style.borderColor = 'var(--hairline, #E5E0D4)';
-                      }
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'flex-end',
+                      gap: '5px',
+                      zIndex: 10,
                     }}
                   >
-                    <History size={13} style={{ color: explorerSubTab === 'pastAudits' ? '#FFFEFB' : 'var(--collapse-cobalt, #2563EB)' }} />
-                    <span>{explorerSubTab === 'pastAudits' ? '🔍 Back to Search Explorer' : '📜 Past Audits Vault'}</span>
-                  </button>
+                    {/* 1. Past Audits Vault Button */}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setExplorerSubTab(explorerSubTab === 'pastAudits' ? 'dossier' : 'pastAudits');
+                      }}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        padding: '4px 12px',
+                        borderRadius: '20px',
+                        fontSize: '11px',
+                        fontWeight: 600,
+                        backgroundColor: explorerSubTab === 'pastAudits' ? '#36452F' : 'var(--surface-secondary, #F5F2EB)',
+                        color: explorerSubTab === 'pastAudits' ? '#FFFEFB' : 'var(--ink, #1F2937)',
+                        border: explorerSubTab === 'pastAudits' ? '1px solid #36452F' : '1px solid var(--hairline, #E5E0D4)',
+                        cursor: 'pointer',
+                        transition: 'all 0.15s ease',
+                        boxShadow: explorerSubTab === 'pastAudits' ? '0 2px 6px rgba(54,69,47,0.2)' : 'none',
+                      }}
+                    >
+                      <History size={12} style={{ color: explorerSubTab === 'pastAudits' ? '#FFFEFB' : 'var(--collapse-cobalt, #2563EB)' }} />
+                      <span>{explorerSubTab === 'pastAudits' ? '🔍 Back to Search' : '📜 Past Audits Vault'}</span>
+                    </button>
+
+                    {/* 2. Saved Vault Button Just Below Past Audits Vault */}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setExplorerSubTab(explorerSubTab === 'savedVault' ? 'dossier' : 'savedVault');
+                      }}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                        padding: '3px 11px',
+                        borderRadius: '20px',
+                        fontSize: '10.5px',
+                        fontWeight: 600,
+                        backgroundColor: explorerSubTab === 'savedVault' ? '#065F46' : '#ECFDF5',
+                        color: explorerSubTab === 'savedVault' ? '#FFFFFF' : '#047857',
+                        border: explorerSubTab === 'savedVault' ? '1px solid #065F46' : '1px solid #A7F3D0',
+                        cursor: 'pointer',
+                        transition: 'all 0.15s ease',
+                        boxShadow: explorerSubTab === 'savedVault' ? '0 2px 6px rgba(6,95,70,0.25)' : 'none',
+                      }}
+                      title="Open Saved Standards Vault"
+                    >
+                      <BookmarkCheck size={12} style={{ color: explorerSubTab === 'savedVault' ? '#FFFFFF' : '#059669' }} />
+                      <span>{explorerSubTab === 'savedVault' ? '🔍 Back to Search' : `💾 Saved Vault (${savedStandardsList.length})`}</span>
+                    </button>
+                  </div>
                 </div>
 
                 <h1 className="editorial-hero-title" style={{ fontSize: '26px', marginBottom: '6px' }}>
@@ -1016,8 +1152,334 @@ export default function App({ onLogout }: AppProps = {}) {
                 </div>
               )}
 
-              {/* Empty Search State or Direct Past Audits Vault View */}
-              {!isLoading && !activeData && explorerSubTab !== 'pastAudits' && (
+              {/* 1. Dedicated Saved Standards Vault View (PostgreSQL Approved Registry) */}
+              {!isLoading && explorerSubTab === 'savedVault' && (
+                <div style={{ animation: 'fadeSlideUp 0.18s ease', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                  {/* Vault Header Banner Card */}
+                  <div
+                    className="workbench-card"
+                    style={{
+                      padding: '24px 28px',
+                      borderLeft: '4px solid #059669',
+                      backgroundColor: '#FFFFFF',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '16px' }}>
+                      <div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+                          <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#059669' }} />
+                          <span className="section-label" style={{ margin: 0, color: '#047857' }}>
+                            OFFICIAL BUREAU REPOSITORY
+                          </span>
+                          <span className="concept-status-badge active" style={{ fontSize: '9.5px', background: '#ECFDF5', color: '#047857', border: '1px solid #A7F3D0' }}>
+                            POSTGRESQL PERSISTED
+                          </span>
+                        </div>
+                        <h1 style={{ fontFamily: 'var(--font-ui)', fontSize: '22px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>
+                          Saved Standards Vault
+                        </h1>
+                        <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13.5px', color: 'var(--ink-secondary)', margin: '6px 0 0 0', maxWidth: '650px' }}>
+                          Official ledger of approved Indian Standards committed to database by procurement officers. Opening any record restores all technical specifications, comparison tables, CVC audit hashes, and NIT clauses instantly.
+                        </p>
+                      </div>
+
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setActiveData(null);
+                            setSearchQuery('');
+                            setExplorerSubTab('dossier');
+                          }}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '6px',
+                            padding: '8px 16px',
+                            borderRadius: '6px',
+                            fontSize: '12.5px',
+                            fontWeight: 600,
+                            backgroundColor: 'var(--surface-secondary, #F5F2EB)',
+                            color: 'var(--ink, #1F2937)',
+                            border: '1px solid var(--hairline, #E5E0D4)',
+                            cursor: 'pointer',
+                            transition: 'all 0.15s ease',
+                          }}
+                        >
+                          <ArrowLeft size={14} />
+                          <span>Back to Search Page</span>
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => refreshSavedStandards()}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '6px',
+                            padding: '8px 14px',
+                            borderRadius: '6px',
+                            fontSize: '12.5px',
+                            fontWeight: 600,
+                            backgroundColor: '#ECFDF5',
+                            color: '#047857',
+                            border: '1px solid #A7F3D0',
+                            cursor: 'pointer',
+                            transition: 'all 0.15s ease',
+                          }}
+                          title="Refresh saved standards from database"
+                        >
+                          <RefreshCw size={13} />
+                          <span>Refresh Vault</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Filter and Stats Row */}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', marginTop: '20px', paddingTop: '16px', borderTop: '1px solid var(--hairline, #E5E0D4)' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flex: '1 1 300px', maxWidth: '440px' }}>
+                        <div style={{ position: 'relative', width: '100%' }}>
+                          <Search size={14} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--ink-muted)' }} />
+                          <input
+                            type="text"
+                            value={vaultSearchFilter}
+                            onChange={(e) => setVaultSearchFilter(e.target.value)}
+                            placeholder="Filter by IS code (e.g. 15222, 269) or standard title..."
+                            style={{
+                              width: '100%',
+                              padding: '8px 12px 8px 34px',
+                              borderRadius: '6px',
+                              border: '1px solid var(--hairline, #E5E0D4)',
+                              fontSize: '12.5px',
+                              fontFamily: 'var(--font-ui)',
+                              backgroundColor: 'var(--surface-secondary, #F9F9F8)',
+                              outline: 'none',
+                            }}
+                          />
+                          {vaultSearchFilter && (
+                            <button
+                              type="button"
+                              onClick={() => setVaultSearchFilter('')}
+                              style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', fontSize: '11px' }}
+                            >
+                              ✕
+                            </button>
+                          )}
+                        </div>
+                      </div>
+
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                        <span style={{ fontSize: '12px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
+                          Showing <strong>{filteredSavedStandards.length}</strong> of <strong>{savedStandardsList.length}</strong> saved records
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Saved Standards Cards List */}
+                  {filteredSavedStandards.length === 0 ? (
+                    <div
+                      className="workbench-card"
+                      style={{
+                        padding: '48px 24px',
+                        textAlign: 'center',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '12px',
+                      }}
+                    >
+                      <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: '#ECFDF5', border: '1px solid #A7F3D0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#059669' }}>
+                        <BookmarkCheck size={24} />
+                      </div>
+                      <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'var(--ink)', margin: 0 }}>
+                        {vaultSearchFilter ? 'No matching saved standards' : 'No standards saved in vault yet'}
+                      </h3>
+                      <p style={{ fontSize: '13px', color: 'var(--ink-secondary)', maxWidth: '420px', margin: 0 }}>
+                        {vaultSearchFilter
+                          ? `No saved standards match "${vaultSearchFilter}". Try clearing your filter query.`
+                          : 'Search for any Indian Standard and click "💾 Save & Approve Standard in DB" to persist it into this bureau vault.'}
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setActiveData(null);
+                          setSearchQuery('');
+                          setExplorerSubTab('dossier');
+                        }}
+                        style={{
+                          marginTop: '8px',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '6px',
+                          padding: '8px 18px',
+                          borderRadius: '6px',
+                          fontSize: '13px',
+                          fontWeight: 600,
+                          backgroundColor: '#36452F',
+                          color: '#FFFFFF',
+                          border: 'none',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <Search size={14} />
+                        <span>Search & Save Standards</span>
+                      </button>
+                    </div>
+                  ) : (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                      {filteredSavedStandards.map((saved, idx) => {
+                        const resp = saved.response_data;
+                        const prim = resp?.primary_recommendation;
+                        const qco = (prim as any)?.qco;
+                        const auditHash = resp?.audit_record?.audit_hash || resp?.meta?.audit_reference_hash;
+                        const savedDate = saved.created_at ? new Date(saved.created_at).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : 'Verified Session';
+
+                        return (
+                          <div
+                            key={idx}
+                            className="workbench-card"
+                            style={{
+                              padding: '22px 26px',
+                              border: '1px solid #E5E0D4',
+                              borderRadius: '10px',
+                              backgroundColor: '#FFFFFF',
+                              boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '14px',
+                              transition: 'border-color 0.15s ease, box-shadow 0.15s ease',
+                            }}
+                          >
+                            {/* Header Badges */}
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                                <span className="code-monogram" style={{ fontSize: '13px', padding: '3px 10px', background: '#36452F', color: '#FFFFFF' }}>
+                                  {saved.is_number}
+                                </span>
+                                <span className="concept-status-badge active" style={{ fontSize: '10.5px' }}>
+                                  <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'var(--emerald-pass)' }} />
+                                  {saved.status || prim?.status || 'ACTIVE STANDARD'}
+                                </span>
+                                <span className="concept-status-badge" style={{ background: '#ECFDF5', color: '#15803D', border: '1px solid #86EFAC', display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10.5px' }}>
+                                  <CheckCircle2 size={11} />
+                                  BUREAU DB VERIFIED
+                                </span>
+                                {qco?.mandatory && (
+                                  <span className="concept-status-badge" style={{ background: '#FFFBEB', color: '#B45309', border: '1px solid #FDE68A', fontSize: '10.5px' }}>
+                                    ⚖️ MANDATORY ISI (QCO)
+                                  </span>
+                                )}
+                              </div>
+
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '11.5px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
+                                <span>Approved By: <strong style={{ color: 'var(--ink)' }}>{saved.approved_by || 'Procurement Officer'}</strong></span>
+                                <span>·</span>
+                                <span>{savedDate}</span>
+                              </div>
+                            </div>
+
+                            {/* Title & Scope */}
+                            <div>
+                              <h2 style={{ fontFamily: 'var(--font-ui)', fontSize: '17.5px', fontWeight: 700, color: 'var(--ink)', margin: '0 0 6px 0', lineHeight: 1.35 }}>
+                                {saved.title}
+                              </h2>
+                              {prim?.scope_snippet && (
+                                <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', margin: 0, lineHeight: 1.55 }}>
+                                  "{prim.scope_snippet}"
+                                </p>
+                              )}
+                            </div>
+
+                            {/* Dynamic Parameter Pills Preview */}
+                            {prim && (
+                              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '8px' }}>
+                                {getStandardDynamicMetrics(prim).slice(0, 3).map((metric, mIdx) => (
+                                  <div key={mIdx} className="metric-mini-tile" style={{ padding: '6px 10px' }}>
+                                    <span className="label" style={{ fontSize: '9px' }}>{metric.label}</span>
+                                    <span className="val" style={{ fontSize: '11.5px' }}>{metric.val}</span>
+                                  </div>
+                                ))}
+                                {auditHash && (
+                                  <div className="metric-mini-tile" style={{ padding: '6px 10px' }}>
+                                    <span className="label" style={{ fontSize: '9px' }}>CVC HASH SEAL</span>
+                                    <span className="val" style={{ fontSize: '11px', fontFamily: 'var(--font-data)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                      {auditHash.slice(0, 16)}...
+                                    </span>
+                                  </div>
+                                )}
+                              </div>
+                            )}
+
+                            {/* Action Buttons Row */}
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', paddingTop: '8px', borderTop: '1px solid var(--hairline)' }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    navigator.clipboard.writeText(saved.is_number);
+                                    setCopiedIsCode(saved.is_number);
+                                    setTimeout(() => setCopiedIsCode(null), 2500);
+                                  }}
+                                  style={{
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '5px',
+                                    padding: '5px 12px',
+                                    borderRadius: '5px',
+                                    fontSize: '11.5px',
+                                    fontWeight: 500,
+                                    backgroundColor: 'var(--surface-secondary, #F5F2EB)',
+                                    color: 'var(--ink, #1F2937)',
+                                    border: '1px solid var(--hairline, #E5E0D4)',
+                                    cursor: 'pointer',
+                                  }}
+                                >
+                                  {copiedIsCode === saved.is_number ? <Check size={12} style={{ color: '#15803D' }} /> : <Copy size={12} />}
+                                  <span>{copiedIsCode === saved.is_number ? 'Copied IS Number' : 'Copy IS Code'}</span>
+                                </button>
+
+                                <span style={{ fontSize: '11px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
+                                  Original Query: "{saved.search_query || saved.is_number}"
+                                </span>
+                              </div>
+
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <button
+                                  type="button"
+                                  onClick={() => handleOpenSavedStandard(saved)}
+                                  style={{
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '7px',
+                                    padding: '8px 20px',
+                                    borderRadius: '6px',
+                                    fontSize: '13px',
+                                    fontWeight: 700,
+                                    backgroundColor: '#36452F',
+                                    color: '#FFFFFF',
+                                    border: '1px solid #36452F',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.15s ease',
+                                    boxShadow: '0 2px 6px rgba(54,69,47,0.25)',
+                                  }}
+                                >
+                                  <FolderOpen size={14} />
+                                  <span>Open Full Dossier</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* 2. Empty Search State or Direct Past Audits Vault View */}
+              {!isLoading && !activeData && explorerSubTab !== 'pastAudits' && explorerSubTab !== 'savedVault' && (
                 <EmptySearchState
                   onSelectSample={(sampleQuery) => {
                     setSearchQuery(sampleQuery);
@@ -1042,8 +1504,8 @@ export default function App({ onLogout }: AppProps = {}) {
                 </div>
               )}
 
-              {/* Unified Standards Explorer Views (Dossier, Comparison, CVC Audit, NIT Generator) */}
-              {!isLoading && activeData && (
+              {/* 3. Unified Standards Explorer Views (Dossier, Comparison, CVC Audit, Past Audits, NIT Generator) */}
+              {!isLoading && activeData && explorerSubTab !== 'savedVault' && (
                 <>
                   {/* Top Sub-Navigation Tabs Bar (Styled mirroring Project / Tender View tabs) */}
                   <div
@@ -1083,6 +1545,12 @@ export default function App({ onLogout }: AppProps = {}) {
                         label: 'Past Audits',
                         icon: '📜',
                         badge: 'Vault',
+                      },
+                      {
+                        id: 'savedVault',
+                        label: 'Saved Vault',
+                        icon: '💾',
+                        badge: `${savedStandardsList.length}`,
                       },
                       {
                         id: 'nitGenerator',
@@ -1134,6 +1602,35 @@ export default function App({ onLogout }: AppProps = {}) {
                         </button>
                       );
                     })}
+
+                    {/* Quick Return to Search / Clear Button */}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setActiveData(null);
+                        setSearchQuery('');
+                        setExplorerSubTab('dossier');
+                      }}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        padding: '9px 14px',
+                        borderRadius: '7px',
+                        border: '1px solid #E5E0D4',
+                        backgroundColor: '#FFFFFF',
+                        color: '#991B1B',
+                        fontSize: '12px',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        transition: 'all 0.15s ease',
+                        whiteSpace: 'nowrap',
+                      }}
+                      title="Clear active standard and return to empty search page"
+                    >
+                      <ArrowLeft size={13} />
+                      <span>Back to Search</span>
+                    </button>
                   </div>
 
                   {/* Sub-View 1: Primary Intelligence Dossier & Deep-Dive Reasoning */}

@@ -555,11 +555,53 @@ export const KnowledgeGraph3DView: React.FC = () => {
         </div>
       </div>
 
+      {/* Top Search Bar (Main Spotlight Search on Top of Page) */}
+      <div className="spotlight-search-container" style={{ margin: 0 }}>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (searchQuery.trim()) {
+              fetchDynamicSubgraph(searchQuery, activeFilter);
+            }
+          }}
+          className="spotlight-search-box"
+        >
+          <span className="spotlight-search-icon">🔍</span>
+          <input
+            type="text"
+            placeholder="Search any product (e.g. Cement, Fire Extinguisher, TMT Steel Rebars) or Indian Standard code (e.g. IS 15683, IS 269)..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="spotlight-search-input"
+          />
+          <div className="spotlight-search-actions">
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery('')}
+                style={{ background: 'none', border: 'none', color: 'var(--ink-muted)', cursor: 'pointer', fontSize: '13px', padding: '4px' }}
+              >
+                ✕
+              </button>
+            )}
+            <button
+              type="submit"
+              className="btn-primary"
+              disabled={isLoadingGraph}
+              style={{ height: '34px', padding: '0 18px', fontSize: '13px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}
+            >
+              {isLoadingGraph ? <Loader2 size={13} className="animate-spin" /> : <Search size={14} />}
+              <span>{isLoadingGraph ? 'Exploring...' : 'Search Graph'}</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
       {/* Main Graph Workbench Grid */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: '16px', alignItems: 'start' }}>
         {/* Canvas Card */}
         <div className="workbench-card" style={{ padding: 0, position: 'relative', overflow: 'hidden' }}>
-          {/* Canvas Toolbar Overlay */}
+          {/* Canvas View Controls Toolbar */}
           <div
             style={{
               position: 'absolute',
@@ -571,76 +613,19 @@ export const KnowledgeGraph3DView: React.FC = () => {
               gap: '6px',
               background: 'rgba(255, 255, 255, 0.95)',
               backdropFilter: 'blur(8px)',
-              padding: '4px 8px',
+              padding: '5px 10px',
               borderRadius: 'var(--radius-sm)',
               border: '1px solid var(--hairline)',
               boxShadow: 'var(--shadow-xs)',
             }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-              <Search size={14} color="#71717A" />
-              <input
-                type="text"
-                placeholder="Search product (e.g. Cement, TMT Rebars) or IS code..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') {
-                    fetchDynamicSubgraph(searchQuery, activeFilter);
-                  }
-                }}
-                style={{
-                  border: 'none',
-                  outline: 'none',
-                  fontSize: '11.5px',
-                  fontFamily: 'var(--font-ui)',
-                  background: 'transparent',
-                  width: '260px',
-                  color: 'var(--ink)',
-                }}
-              />
-              {searchQuery && (
-                <button
-                  type="button"
-                  onClick={() => setSearchQuery('')}
-                  style={{ background: 'none', border: 'none', color: '#71717A', cursor: 'pointer', fontSize: '11px', padding: '0 4px' }}
-                >
-                  ✕
-                </button>
-              )}
-              <button
-                type="button"
-                onClick={() => fetchDynamicSubgraph(searchQuery, activeFilter)}
-                disabled={isLoadingGraph}
-                style={{
-                  border: 'none',
-                  background: 'var(--collapse-cobalt, #2563EB)',
-                  color: '#fff',
-                  borderRadius: '3px',
-                  padding: '3px 8px',
-                  fontSize: '10.5px',
-                  fontWeight: 600,
-                  cursor: isLoadingGraph ? 'wait' : 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '4px',
-                }}
-              >
-                {isLoadingGraph ? (
-                  <>
-                    <Loader2 size={11} className="animate-spin" />
-                    <span>Resolving...</span>
-                  </>
-                ) : (
-                  <span>Explore</span>
-                )}
-              </button>
-            </div>
-            <span style={{ width: '1px', height: '14px', background: 'var(--hairline)' }} />
+            <span style={{ fontSize: '11px', fontFamily: 'var(--font-data, monospace)', fontWeight: 600, color: '#64748B', marginRight: '4px' }}>
+              GRAPH VIEW:
+            </span>
             <button
               type="button"
               onClick={() => setZoom((z) => Math.min(z + 0.15, 2))}
-              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', display: 'flex' }}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '3px', display: 'flex' }}
               title="Zoom In"
             >
               <ZoomIn size={15} color="#52525B" />
@@ -648,7 +633,7 @@ export const KnowledgeGraph3DView: React.FC = () => {
             <button
               type="button"
               onClick={() => setZoom((z) => Math.max(z - 0.15, 0.6))}
-              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', display: 'flex' }}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '3px', display: 'flex' }}
               title="Zoom Out"
             >
               <ZoomOut size={15} color="#52525B" />
@@ -656,10 +641,29 @@ export const KnowledgeGraph3DView: React.FC = () => {
             <button
               type="button"
               onClick={() => { setZoom(1); setSelectedNode(INITIAL_NODES[0]); setSearchQuery(''); }}
-              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', display: 'flex' }}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '3px', display: 'flex' }}
               title="Reset View"
             >
               <RotateCcw size={14} color="#52525B" />
+            </button>
+            <span style={{ width: '1px', height: '14px', background: 'var(--hairline)' }} />
+            <button
+              type="button"
+              onClick={() => setIsSimulating((s) => !s)}
+              style={{
+                background: isSimulating ? 'rgba(37, 99, 235, 0.1)' : 'transparent',
+                border: 'none',
+                borderRadius: '4px',
+                padding: '3px 7px',
+                fontSize: '11px',
+                fontFamily: 'var(--font-data, monospace)',
+                color: isSimulating ? '#1D4ED8' : '#71717A',
+                cursor: 'pointer',
+                fontWeight: 600,
+              }}
+              title="Toggle Physics Force Simulation"
+            >
+              {isSimulating ? 'Physics: On' : 'Physics: Paused'}
             </button>
           </div>
 
