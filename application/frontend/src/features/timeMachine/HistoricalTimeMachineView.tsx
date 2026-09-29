@@ -50,6 +50,7 @@ interface StandardLineage {
   evolution: EvolutionEpoch[];
   source?: string;
   total_epochs?: number;
+  sample_test_cases?: Array<{ code: string; label: string; domain?: string }>;
 }
 
 // Offline fallback archive in case server is starting
@@ -446,30 +447,48 @@ export const HistoricalTimeMachineView: React.FC = () => {
                 fontWeight: 700,
               }}
             >
-              {lineage.evolution.length} HISTORICAL EPOCHS
+              {lineage.evolution.length} HISTORICAL {lineage.evolution.length === 1 ? 'EPOCH' : 'EPOCHS'}
             </span>
+            {lineage.source && (
+              <span
+                style={{
+                  fontFamily: 'var(--font-data, monospace)',
+                  fontSize: '10.5px',
+                  padding: '4px 8px',
+                  borderRadius: '6px',
+                  background: '#F0FDF4',
+                  color: '#166534',
+                  border: '1px solid #BBF7D0',
+                  fontWeight: 600,
+                }}
+              >
+                {lineage.source.replace(/_/g, ' ')}
+              </span>
+            )}
           </div>
         </div>
 
         {/* Clean, Non-Truncated Timeline Progression Bar */}
         <div style={{ position: 'relative', margin: '24px 10px 14px' }}>
-          {/* Connecting Track Line */}
-          <div
-            style={{
-              position: 'absolute',
-              top: '18px',
-              left: '40px',
-              right: '40px',
-              height: '3px',
-              background: '#E2E8F0',
-              zIndex: 1,
-            }}
-          />
+          {/* Connecting Track Line only if multiple epochs */}
+          {lineage.evolution.length > 1 && (
+            <div
+              style={{
+                position: 'absolute',
+                top: '18px',
+                left: '40px',
+                right: '40px',
+                height: '3px',
+                background: '#E2E8F0',
+                zIndex: 1,
+              }}
+            />
+          )}
 
           <div
             style={{
               display: 'flex',
-              justifyContent: 'space-between',
+              justifyContent: lineage.evolution.length === 1 ? 'center' : 'space-between',
               alignItems: 'flex-start',
               position: 'relative',
               zIndex: 2,
