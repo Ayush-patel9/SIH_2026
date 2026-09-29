@@ -580,15 +580,7 @@ export default function App({ onLogout }: AppProps = {}) {
     };
   }, []);
 
-  const [messages, setMessages] = useState<Array<{ id: number | string; type: string; source?: string; sender?: string; text: string; model_used?: string }>>([
-    {
-      id: 0,
-      type: 'grounded-observation',
-      source: 'gazette',
-      sender: 'system',
-      text: 'Inspecting IS 269:2015 (Ordinary Portland Cement). 43-grade consolidated from legacy IS 8112:1989. Mandatory ISI marking enforced under GSR 739(E). CVC audit trail active.',
-    },
-  ]);
+  const [messages, setMessages] = useState<Array<{ id: number | string; type: string; source?: string; sender?: string; text: string; model_used?: string }>>([]);
   const [isProcessing, setIsProcessing] = useState(false);
 
   const handleAnalyze = useCallback(async (customQuery?: string) => {

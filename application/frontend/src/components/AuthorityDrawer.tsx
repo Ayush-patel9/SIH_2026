@@ -146,7 +146,6 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
   onClearMessages,
 }) => {
   const [inputQuestion, setInputQuestion] = useState('');
-  const [copiedHash, setCopiedHash] = useState(false);
   const [copiedMsgId, setCopiedMsgId] = useState<number | string | null>(null);
   const [mentionOpen, setMentionOpen] = useState(false);
   const [mentionQuery, setMentionQuery] = useState('');
@@ -220,13 +219,6 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
         inputRef.current.setSelectionRange(newCursor, newCursor);
       }
     }, 40);
-  };
-
-  const handleCopyHash = () => {
-    const hash = activeData?.audit_record?.audit_hash || activeData?.meta?.audit_reference_hash || 'SHA256-PENDING';
-    navigator.clipboard.writeText(hash);
-    setCopiedHash(true);
-    setTimeout(() => setCopiedHash(false), 2000);
   };
 
   const handleCopyMessage = (id: number | string, text: string) => {
@@ -389,55 +381,6 @@ export const AuthorityDrawer: React.FC<AuthorityDrawerProps> = ({
               ✕
             </button>
           </div>
-        </div>
-
-        {/* Audit Hash Pill */}
-        <div
-          style={{
-            padding: '8px 16px',
-            background: '#F8FAFC',
-            borderBottom: '1px solid #E2E8F0',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: '8px',
-          }}
-        >
-          <div style={{ minWidth: 0, flex: 1 }}>
-            <div style={{ fontFamily: 'var(--font-data)', fontSize: '9px', color: '#64748B', fontWeight: 700, letterSpacing: '0.04em' }}>
-              IMMUTABLE AUDIT RECORD (SHA-256)
-            </div>
-            <div
-              style={{
-                fontFamily: 'var(--font-data)',
-                fontSize: '10px',
-                color: '#0F172A',
-                whiteSpace: 'nowrap',
-                overflow: 'hidden',
-                textOverflow: 'ellipsis',
-              }}
-            >
-              {activeData?.audit_record?.audit_hash || activeData?.meta?.audit_reference_hash || 'SHA256: 7F9E8200B41ECA89F9A1... (STANDBY)'}
-            </div>
-          </div>
-          <button
-            type="button"
-            onClick={handleCopyHash}
-            style={{
-              fontFamily: 'var(--font-data)',
-              fontSize: '10px',
-              fontWeight: 700,
-              padding: '3px 8px',
-              borderRadius: '4px',
-              border: '1px solid #CBD5E1',
-              background: copiedHash ? '#10B981' : '#FFFFFF',
-              color: copiedHash ? '#FFFFFF' : '#0F172A',
-              cursor: 'pointer',
-              flexShrink: 0,
-            }}
-          >
-            {copiedHash ? '✓ Copied' : 'Copy Hash'}
-          </button>
         </div>
 
         {/* Messages Stream */}
