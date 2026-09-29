@@ -200,13 +200,22 @@ class LLMGateway:
 
     @staticmethod
     def _is_valid_key(key: str) -> bool:
-        """Fast-fails invalid placeholder tokens (e.g. AQ.Ab8...) while permitting genuine AIzaSy keys and test keys."""
+        """Fast-fails invalid placeholder tokens while permitting all genuine Gemini API key formats."""
         if not key or not isinstance(key, str):
             return False
         k_strip = key.strip()
-        if k_strip.startswith("AQ.") or "placeholder" in k_strip.lower() or "your_key" in k_strip.lower():
+        # Reject explicit placeholder strings only
+        if "placeholder" in k_strip.lower() or "your_key" in k_strip.lower() or "your-key" in k_strip.lower():
             return False
-        return k_strip.startswith("AIzaSy") or k_strip.startswith("KEY_") or k_strip.startswith("TEST_")
+        # Accept all known Google AI Studio key formats:
+        # - AIzaSy... (legacy format)
+        # - AQ....    (new format used by AI Studio since 2025)
+        return (
+            k_strip.startswith("AIzaSy") or
+            k_strip.startswith("AQ.") or
+            k_strip.startswith("KEY_") or
+            k_strip.startswith("TEST_")
+        )
 
     def is_available(self) -> bool:
         if not self.keys:
@@ -639,13 +648,11 @@ class LLMGateway:
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
         fallback_models = [
             primary_model,
-            "gemini-3.8-flash",
-            "gemini-3.5-flash-lite",
-            "gemini-3.5-flash",
-            "gemini-3.7-flash",
-            "gemini-3.1-pro-preview",
+            "gemini-2.5-flash",
+            "gemini-2.5-pro",
             "gemini-flash-latest",
-            "gemini-pro-latest"
+            "gemini-1.5-flash",
+            "gemini-1.5-pro",
         ]
         candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
         
@@ -701,13 +708,11 @@ class LLMGateway:
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
         fallback_models = [
             primary_model,
-            "gemini-3.8-flash",
-            "gemini-3.5-flash-lite",
-            "gemini-3.5-flash",
-            "gemini-3.7-flash",
-            "gemini-3.1-pro-preview",
+            "gemini-2.5-flash",
+            "gemini-2.5-pro",
             "gemini-flash-latest",
-            "gemini-pro-latest"
+            "gemini-1.5-flash",
+            "gemini-1.5-pro",
         ]
         candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
         
