@@ -257,7 +257,7 @@ export const TenderModifierDiffEditor: React.FC<TenderModifierDiffEditorProps> =
                   borderRadius: '4px',
                 }}
               >
-                Re-Audit Score: {reauditScore}/100 ✓
+                Re-Audit Score: {reauditScore}/100
               </span>
             )}
             <button
@@ -265,25 +265,28 @@ export const TenderModifierDiffEditor: React.FC<TenderModifierDiffEditorProps> =
               className="btn-secondary"
               onClick={handleRunReaudit}
               disabled={isReauditing}
-              style={{ fontSize: '11px', padding: '4px 10px' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '11px', padding: '4px 10px' }}
             >
-              {isReauditing ? '🔄 Auditing via RAG...' : '🔄 Re-Audit Draft'}
+              <RefreshCw size={12} className={isReauditing ? 'spinner' : ''} />
+              <span>{isReauditing ? 'Auditing via RAG...' : 'Re-Audit Draft'}</span>
             </button>
             <button
               type="button"
               className="btn-secondary"
               onClick={handleCopyToClipboard}
-              style={{ fontSize: '11px', padding: '4px 10px' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '11px', padding: '4px 10px' }}
             >
-              <Copy size={12} style={{ marginRight: '4px' }} /> {copySuccess ? 'Copied ✓' : 'Copy Draft'}
+              <Copy size={12} />
+              <span>{copySuccess ? 'Copied' : 'Copy Draft'}</span>
             </button>
             <button
               type="button"
               className="btn-secondary"
               onClick={handleDownloadDraft}
-              style={{ fontSize: '11px', padding: '4px 10px' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '11px', padding: '4px 10px' }}
             >
-              <Download size={12} style={{ marginRight: '4px' }} /> Download .txt
+              <Download size={12} />
+              <span>Download .txt</span>
             </button>
           </div>
         </div>
@@ -462,7 +465,7 @@ export const TenderModifierDiffEditor: React.FC<TenderModifierDiffEditorProps> =
           {/* Left Column: Original Tender Draft */}
           <div className="workbench-card" style={{ padding: '16px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '10px' }}>
-              <span style={{ fontSize: '14px' }}>📄</span>
+              <FileText size={15} color="#dc2626" />
               <span style={{ fontFamily: 'var(--font-data)', fontWeight: 700, fontSize: '13px', color: '#dc2626' }}>
                 ORIGINAL UPLOADED TENDER
               </span>

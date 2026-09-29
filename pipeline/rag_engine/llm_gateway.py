@@ -150,9 +150,9 @@ class LLMGateway:
         self._current_key_idx = 0
         self.reload_keys()
 
-        self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", "gemini-3.6-flash")
-        self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", "gemini-3.6-flash")
-        self.request_timeout = float(os.getenv("GEMINI_TIMEOUT_SECONDS", "180.0"))
+        self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", "gemini-1.5-flash")
+        self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", "gemini-1.5-flash")
+        self.request_timeout = float(os.getenv("GEMINI_TIMEOUT_SECONDS", "10.0"))
         
         self._has_genai = False
         try:
@@ -198,10 +198,21 @@ class LLMGateway:
         if self._current_key_idx >= len(self.keys):
             self._current_key_idx = 0
 
+    @staticmethod
+    def _is_valid_key(key: str) -> bool:
+        """Fast-fails invalid placeholder tokens (e.g. AQ.Ab8...) while permitting genuine AIzaSy keys and test keys."""
+        if not key or not isinstance(key, str):
+            return False
+        k_strip = key.strip()
+        if k_strip.startswith("AQ.") or "placeholder" in k_strip.lower() or "your_key" in k_strip.lower():
+            return False
+        return k_strip.startswith("AIzaSy") or k_strip.startswith("KEY_") or k_strip.startswith("TEST_")
+
     def is_available(self) -> bool:
         if not self.keys:
             self.reload_keys()
-        return bool(self._has_genai and self.keys)
+        valid_keys = [k for k in self.keys if self._is_valid_key(k)]
+        return bool(self._has_genai and valid_keys)
 
     def _get_ordered_keys(self) -> List[str]:
         """
@@ -210,10 +221,11 @@ class LLMGateway:
         """
         if not self.keys:
             self.reload_keys()
-        if not self.keys:
+        valid_keys = [k for k in self.keys if self._is_valid_key(k)]
+        if not valid_keys:
             return []
-        n = len(self.keys)
-        rotated = [self.keys[(self._current_key_idx + i) % n] for i in range(n)]
+        n = len(valid_keys)
+        rotated = [valid_keys[(self._current_key_idx + i) % n] for i in range(n)]
         now = time.time()
         ready = [k for k in rotated if self._key_cooldowns.get(k, 0) <= now]
         cooling = [k for k in rotated if self._key_cooldowns.get(k, 0) > now]

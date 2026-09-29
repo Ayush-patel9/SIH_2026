@@ -4,6 +4,7 @@ import { buildFeedbackPayload } from './feedbackBuilder';
 import { FeedbackStore, type ExtendedFeedbackItem } from './feedbackStore';
 import { Flag, X, CheckCircle2, Search, Building2, Scale, AlertTriangle, ShieldCheck } from 'lucide-react';
 import { MASTER_STANDARDS_CATALOG } from '../../data/standardsMentionCatalog';
+import { submitFeedback } from '../../api/standardsClient';
 
 interface FeedbackModalProps {
   isOpen: boolean;
@@ -72,6 +73,10 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
     };
 
     FeedbackStore.save(extendedPayload);
+    // Asynchronously dispatch to backend REST API
+    submitFeedback(basePayload).catch((err) =>
+      console.warn('Backend feedback sync notice:', err)
+    );
     setSubmitted(true);
 
     setTimeout(() => {

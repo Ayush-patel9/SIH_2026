@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { X, CheckCircle2, ArrowRight } from 'lucide-react';
 import type { QueryUnderstanding, QueryIntent } from '../../types';
 import type { ManualEntityCorrections } from './refinedQueryBuilder';
 
@@ -82,17 +83,19 @@ export const QueryCorrectionForm: React.FC<QueryCorrectionFormProps> = ({
           <button
             type="button"
             className="btn-secondary"
-            style={{ padding: '3px 8px', fontSize: '11px' }}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', padding: '3px 8px', fontSize: '11px' }}
             onClick={onClose}
           >
-            ✕ Close
+            <X size={12} />
+            <span>Close</span>
           </button>
         )}
       </div>
 
       {applied ? (
-        <div className="auth-banner success" style={{ padding: '12px', textAlign: 'center' }}>
-          <strong>✓ Entity Corrections Applied (100% Officer Verified)</strong>
+        <div className="auth-banner success" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', padding: '12px', textAlign: 'center' }}>
+          <CheckCircle2 size={16} />
+          <strong>Entity Corrections Applied (100% Officer Verified)</strong>
         </div>
       ) : (
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -182,9 +185,10 @@ export const QueryCorrectionForm: React.FC<QueryCorrectionFormProps> = ({
             <button
               type="submit"
               className="btn-run"
-              style={{ fontSize: '12px', padding: '6px 14px' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '12px', padding: '6px 14px' }}
             >
-              Apply Entity Override →
+              <span>Apply Entity Override</span>
+              <ArrowRight size={13} />
             </button>
           </div>
         </form>

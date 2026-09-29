@@ -261,7 +261,7 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
       >
         <Search size={12} />
         {highlightStatus === 'searching' && 'Locating Evidence...'}
-        {highlightStatus === 'found' && 'Evidence Highlighted ✓'}
+        {highlightStatus === 'found' && 'Evidence Highlighted'}
         {highlightStatus === 'not-found' && 'Evidence on Another Page'}
       </div>
     );
@@ -305,8 +305,9 @@ export const PDFViewer: React.FC<PDFViewerProps> = ({
               <X size={13} />
             </button>
           )}
-          <span style={{ fontFamily: 'var(--font-data)', fontWeight: 700, fontSize: '12px', color: 'var(--ink)' }}>
-            📄 PDF Clause Viewer
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontFamily: 'var(--font-data)', fontWeight: 700, fontSize: '12px', color: 'var(--ink)' }}>
+            <FileText size={13} />
+            <span>PDF Clause Viewer</span>
           </span>
           <span style={{ fontSize: '11px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
             Page {currentPage} of {numPages}

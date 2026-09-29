@@ -3,6 +3,23 @@ import type {
   QueryIntent,
   QueryMode,
 } from '../../types';
+import React from 'react';
+import {
+  Package,
+  Tag,
+  Building2,
+  Compass,
+  FlaskConical,
+  MapPin,
+  Binary,
+  HelpCircle,
+  Scale,
+  ShieldCheck,
+  CheckCircle2,
+  Search,
+  Link2,
+  AlertOctagon,
+} from 'lucide-react';
 
 export interface EntityChip {
   text: string;
@@ -12,7 +29,7 @@ export interface EntityChip {
   bg: string;
   border: string;
   confidence: number;
-  icon: string;
+  IconComponent: React.FC<{ size?: number; style?: React.CSSProperties }>;
 }
 
 export const ENTITY_TYPE_STYLES: Record<
@@ -22,7 +39,7 @@ export const ENTITY_TYPE_STYLES: Record<
     color: string;
     bg: string;
     border: string;
-    icon: string;
+    IconComponent: React.FC<{ size?: number; style?: React.CSSProperties }>;
   }
 > = {
   PRODUCT: {
@@ -30,154 +47,154 @@ export const ENTITY_TYPE_STYLES: Record<
     color: 'var(--collapse-cobalt)',
     bg: '#EFF6FF',
     border: '#BFDBFE',
-    icon: '📦',
+    IconComponent: Package,
   },
   product_name: {
     typeLabel: 'PRODUCT',
     color: 'var(--collapse-cobalt)',
     bg: '#EFF6FF',
     border: '#BFDBFE',
-    icon: '📦',
+    IconComponent: Package,
   },
   GRADE_SPECIFICATION: {
     typeLabel: 'GRADE',
     color: 'var(--collapse-cobalt)',
     bg: '#EFF6FF',
     border: '#BFDBFE',
-    icon: '🏷️',
+    IconComponent: Tag,
   },
   grade_specification: {
     typeLabel: 'GRADE',
     color: 'var(--collapse-cobalt)',
     bg: '#EFF6FF',
     border: '#BFDBFE',
-    icon: '🏷️',
+    IconComponent: Tag,
   },
   APPLICATION_DOMAIN: {
     typeLabel: 'DOMAIN',
     color: 'var(--superposition-violet)',
     bg: '#FAF5FF',
     border: '#E9D5FF',
-    icon: '🏗️',
+    IconComponent: Building2,
   },
   domain: {
     typeLabel: 'DOMAIN',
     color: 'var(--superposition-violet)',
     bg: '#FAF5FF',
     border: '#E9D5FF',
-    icon: '🏗️',
+    IconComponent: Building2,
   },
   subdomain: {
     typeLabel: 'SUBDOMAIN',
     color: 'var(--superposition-violet)',
     bg: '#FAF5FF',
     border: '#E9D5FF',
-    icon: '🎯',
+    IconComponent: Compass,
   },
   TEST_PARAMETER: {
     typeLabel: 'TEST PARAM',
     color: 'var(--teal-guide)',
     bg: '#F0FDFA',
     border: '#99F6E4',
-    icon: '🧪',
+    IconComponent: FlaskConical,
   },
   LOCATION: {
     typeLabel: 'LOCATION',
     color: 'var(--ink-secondary)',
     bg: '#F3F4F6',
     border: '#E5E7EB',
-    icon: '📍',
+    IconComponent: MapPin,
   },
   location_context: {
     typeLabel: 'LOCATION',
     color: 'var(--ink-secondary)',
     bg: '#F3F4F6',
     border: '#E5E7EB',
-    icon: '📍',
+    IconComponent: MapPin,
   },
   CODE: {
     typeLabel: 'CODE',
     color: 'var(--collapse-cobalt)',
     bg: '#DBEAFE',
     border: '#93C5FD',
-    icon: '🔢',
+    IconComponent: Binary,
   },
   product_codes: {
     typeLabel: 'CODE',
     color: 'var(--collapse-cobalt)',
     bg: '#DBEAFE',
     border: '#93C5FD',
-    icon: '🔢',
+    IconComponent: Binary,
   },
   AMBIGUOUS: {
     typeLabel: 'AMBIGUOUS',
     color: '#B45309',
     bg: '#FEF3C7',
     border: '#FDE68A',
-    icon: '❓',
+    IconComponent: HelpCircle,
   },
 };
 
 export const MODE_BADGES: Record<
   QueryMode | 'compare' | 'validate' | 'search',
-  { label: string; color: string; bg: string; border: string; icon: string }
+  { label: string; color: string; bg: string; border: string; IconComponent: React.FC<{ size?: number; style?: React.CSSProperties }> }
 > = {
   recommend: {
     label: 'RECOMMENDATION MODE',
     color: 'var(--collapse-cobalt)',
     bg: '#EFF6FF',
     border: '#BFDBFE',
-    icon: '🎯',
+    IconComponent: Compass,
   },
   audit: {
     label: 'CVC AUDIT MODE',
     color: 'var(--superposition-violet)',
     bg: '#FAF5FF',
     border: '#E9D5FF',
-    icon: '⚖️',
+    IconComponent: Scale,
   },
   dry_run: {
     label: 'DRY RUN VERIFICATION',
     color: '#B45309',
     bg: '#FFFBEB',
     border: '#FDE68A',
-    icon: '🧪',
+    IconComponent: FlaskConical,
   },
   vendor_check: {
     label: 'VENDOR CONFORMITY CHECK',
     color: 'var(--teal-guide)',
     bg: '#F0FDFA',
     border: '#99F6E4',
-    icon: '🏢',
+    IconComponent: ShieldCheck,
   },
   compare: {
     label: 'STANDARDS COMPARISON',
     color: 'var(--superposition-violet)',
     bg: '#FAF5FF',
     border: '#E9D5FF',
-    icon: '⚖️',
+    IconComponent: Scale,
   },
   validate: {
     label: 'VALIDATION MODE',
     color: 'var(--emerald-pass)',
     bg: '#F0FDF4',
     border: '#BBF7D0',
-    icon: '✓',
+    IconComponent: CheckCircle2,
   },
   search: {
     label: 'EXPLORATORY SEARCH',
     color: 'var(--ink-secondary)',
     bg: '#F3F4F6',
     border: '#E5E7EB',
-    icon: '🔍',
+    IconComponent: Search,
   },
 };
 
-export const INTENT_LABELS: Record<QueryIntent, { label: string; icon: string }> = {
-  STANDARD_LOOKUP: { label: 'Primary Standard Lookup', icon: '🔍' },
-  COMPLIANCE_CHECK: { label: 'Statutory Compliance Check', icon: '⚖️' },
-  ALLIED_DISCOVERY: { label: 'Allied Standards Discovery', icon: '🔗' },
-  OUTDATED_DETECTION: { label: 'Outdated Citation Detection', icon: '🚫' },
+export const INTENT_LABELS: Record<QueryIntent, { label: string; IconComponent: React.FC<{ size?: number; style?: React.CSSProperties }> }> = {
+  STANDARD_LOOKUP: { label: 'Primary Standard Lookup', IconComponent: Search },
+  COMPLIANCE_CHECK: { label: 'Statutory Compliance Check', IconComponent: Scale },
+  ALLIED_DISCOVERY: { label: 'Allied Standards Discovery', IconComponent: Link2 },
+  OUTDATED_DETECTION: { label: 'Outdated Citation Detection', IconComponent: AlertOctagon },
 };
 
 /**
@@ -202,7 +219,7 @@ export function buildEntityChips(queryUnderstanding?: QueryUnderstanding | null)
         bg: style.bg,
         border: style.border,
         confidence: entity.confidence,
-        icon: style.icon,
+        IconComponent: style.IconComponent,
       });
       seenTexts.add(entity.entity.toLowerCase());
     });
@@ -229,7 +246,7 @@ export function buildEntityChips(queryUnderstanding?: QueryUnderstanding | null)
         bg: style.bg,
         border: style.border,
         confidence: queryUnderstanding.confidence || 0.95,
-        icon: style.icon,
+        IconComponent: style.IconComponent,
       });
       seenTexts.add(val.toLowerCase());
     }
@@ -248,7 +265,7 @@ export function buildEntityChips(queryUnderstanding?: QueryUnderstanding | null)
           bg: style.bg,
           border: style.border,
           confidence: 1.0,
-          icon: style.icon,
+          IconComponent: style.IconComponent,
         });
         seenTexts.add(code.toLowerCase());
       }

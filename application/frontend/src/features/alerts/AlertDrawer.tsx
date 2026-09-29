@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CheckCircle2, FileText, Bell, AlertTriangle, AlertOctagon, X, Check } from 'lucide-react';
+import { CheckCircle2, FileText, Bell, AlertTriangle, AlertOctagon, X, Check, ArrowRight } from 'lucide-react';
 import { AlertStore } from './alertStore';
 import type { AlertWithRead } from './alertStore';
 import { formatDeadlineBadge } from './deadlineUtils';
@@ -348,13 +348,17 @@ export const AlertDrawer: React.FC<AlertDrawerProps> = ({
                       {alert.affected_standard.replacement && (
                         <span
                           style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px',
                             fontFamily: 'var(--font-data)',
                             fontSize: '11px',
                             color: 'var(--collapse-cobalt)',
                             fontWeight: 600,
                           }}
                         >
-                          ➔ Superseded by {alert.affected_standard.replacement}
+                          <ArrowRight size={11} />
+                          <span>Superseded by {alert.affected_standard.replacement}</span>
                         </span>
                       )}
                     </div>

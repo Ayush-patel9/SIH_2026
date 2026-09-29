@@ -521,7 +521,7 @@ export default function App({ onLogout }: AppProps = {}) {
     setSearchQuery(savedRecord.is_number || savedRecord.search_query);
     setIsApprovedInDb(true);
     setExplorerSubTab('dossier');
-    setApprovalToast(`✓ Opened verified saved dossier for ${savedRecord.is_number}: ${savedRecord.title}`);
+    setApprovalToast(`Opened verified saved dossier for ${savedRecord.is_number}: ${savedRecord.title}`);
     setTimeout(() => setApprovalToast(null), 4500);
   };
 
@@ -1131,7 +1131,7 @@ export default function App({ onLogout }: AppProps = {}) {
                       <div>{outdated.message || outdated.reason}</div>
                       {outdated.replacement && (
                         <div style={{ marginTop: '6px', fontWeight: 600, color: '#166534' }}>
-                          ✓ Recommended statutory replacement: <strong>{outdated.replacement}</strong>
+                          Recommended statutory replacement: <strong>{outdated.replacement}</strong>
                         </div>
                       )}
                     </div>
@@ -2125,6 +2125,7 @@ export default function App({ onLogout }: AppProps = {}) {
             <QueryUnderstandingView
               currentData={activeData}
               onUpdateData={(updated) => setActiveData(updated)}
+              onNavigateToExplorer={() => navigateToFeature('explainability')}
             />
           )}
 

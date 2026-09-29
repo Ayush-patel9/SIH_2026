@@ -340,7 +340,7 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
           Automated Tender Document Analyser & "Use vs Discard" Diff Engine
         </h2>
         <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', margin: 0 }}>
-          Ingest multi-item procurement tenders, inspect live color-coded statutory citation badges (🟢 Active, 🟡 Amendment Needed, 🔴 Withdrawn/Superseded, 🔵 Missing Allied Requirement), modify existing tender clauses with in-place redline diffs, and eliminate CVC audit vulnerability before NIT publication.
+          Ingest multi-item procurement tenders, inspect live color-coded statutory citation badges (Active, Amendment Needed, Withdrawn/Superseded, Missing Allied Requirement), modify existing tender clauses with in-place redline diffs, and eliminate CVC audit vulnerability before NIT publication.
         </p>
 
         {/* Tab & Preset selector */}
@@ -350,25 +350,28 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
               type="button"
               className={`mode-toggle-btn ${tab === 'annotator' ? 'active' : ''}`}
               onClick={() => setTab('annotator')}
-              style={{ padding: '6px 14px', fontSize: '12px' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', fontSize: '12px' }}
             >
-              🔍 Split-Screen Annotator & Highlighter
+              <Eye size={13} />
+              <span>Split-Screen Annotator & Highlighter</span>
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${tab === 'pdf' ? 'active' : ''}`}
               onClick={() => setTab('pdf')}
-              style={{ padding: '6px 14px', fontSize: '12px' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', fontSize: '12px' }}
             >
-              📄 Upload PDF Document
+              <FileUp size={13} />
+              <span>Upload PDF Document</span>
             </button>
             <button
               type="button"
               className={`mode-toggle-btn ${tab === 'text' ? 'active' : ''}`}
               onClick={() => setTab('text')}
-              style={{ padding: '6px 14px', fontSize: '12px' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', fontSize: '12px' }}
             >
-              📋 Paste Tender Text
+              <FileText size={13} />
+              <span>Paste Tender Text</span>
             </button>
 
             {onLaunchPipeline && (
@@ -390,7 +393,8 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
                   boxShadow: '0 2px 8px rgba(79, 70, 229, 0.3)',
                 }}
               >
-                <span>✨ Launch 3-Stage Pipeline</span>
+                <Sparkles size={14} />
+                <span>Launch 3-Stage Pipeline</span>
                 <span style={{ fontSize: '10px', background: 'rgba(255,255,255,0.2)', padding: '1px 5px', borderRadius: '4px' }}>
                   AI + HITL
                 </span>
@@ -502,7 +506,9 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
               }}
             />
             <label htmlFor="pdf-upload-input" style={{ cursor: 'pointer', display: 'block' }}>
-              <div style={{ fontSize: '42px', marginBottom: '8px' }}>📄</div>
+              <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '8px' }}>
+                <FileText size={42} style={{ color: 'var(--collapse-cobalt)' }} />
+              </div>
               <div style={{ fontFamily: 'var(--font-data)', fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>
                 {pdfFile ? pdfFile.name : 'Click to Browse or Drag & Drop PDF Tender Document'}
               </div>
@@ -542,7 +548,7 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
               onClick={() => handlePdfUpload()}
               disabled={isLoading || !pdfFile}
             >
-              {isLoading ? 'Extracting Text & Matching...' : '⚙ Extract & Analyse PDF Document'}
+              {isLoading ? 'Extracting Text & Matching...' : 'Extract & Analyse PDF Document'}
             </button>
           </div>
         </div>
@@ -586,7 +592,7 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
               onClick={handleTextAnalyze}
               disabled={isLoading || !docText.trim()}
             >
-              {isLoading ? 'Decomposing Clauses...' : '⚙ Extract & Analyse Tender Items'}
+              {isLoading ? 'Decomposing Clauses...' : 'Extract & Analyse Tender Items'}
             </button>
           </div>
         </div>
@@ -596,7 +602,7 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
       {isLoading && (
         <div className="workbench-card" style={{ padding: '24px', textAlign: 'center' }}>
           <div style={{ fontFamily: 'var(--font-data)', fontSize: '13px', color: 'var(--collapse-cobalt)' }}>
-            ◉ Decomposing tender clauses via GraphRAG pipeline... Matching 22,000+ BIS standards... Evaluating QCOs...
+            Decomposing tender clauses via GraphRAG pipeline... Matching 22,000+ BIS standards... Evaluating QCOs...
           </div>
         </div>
       )}
@@ -612,9 +618,13 @@ export const TenderUploadView: React.FC<TenderUploadViewProps> = ({ onSelectItem
             color: 'var(--error-line)',
             fontFamily: 'var(--font-data)',
             fontSize: '12px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
           }}
         >
-          ⚠ {error}
+          <AlertTriangle size={15} />
+          <span>{error}</span>
         </div>
       )}
     </div>

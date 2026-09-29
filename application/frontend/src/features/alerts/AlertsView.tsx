@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Zap, Bell, BarChart3, FileText, Check } from 'lucide-react';
+import { Zap, Bell, BarChart3, FileText, Check, ArrowRight } from 'lucide-react';
 import { AlertStore } from './alertStore';
 import type { AlertWithRead } from './alertStore';
 import { TenderImpactMatrix } from './TenderImpactMatrix';
@@ -289,8 +289,9 @@ export const AlertsView: React.FC<AlertsViewProps> = ({ currentData }) => {
                         {alert.affected_standard.is_number}
                       </span>
                       {alert.affected_standard.replacement && (
-                        <span style={{ fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--collapse-cobalt)' }}>
-                          ➔ Replacement: {alert.affected_standard.replacement}
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontFamily: 'var(--font-data)', fontSize: '11px', color: 'var(--collapse-cobalt)' }}>
+                          <ArrowRight size={11} />
+                          <span>Replacement: {alert.affected_standard.replacement}</span>
                         </span>
                       )}
                     </div>

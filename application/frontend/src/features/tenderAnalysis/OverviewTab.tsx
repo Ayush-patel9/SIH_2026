@@ -169,7 +169,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
                 STAGE 1 · DECOMPOSE
               </span>
               <span style={{ fontSize: '12px', fontWeight: 700, color: stage1Data ? 'var(--emerald-pass)' : 'var(--ink-muted)' }}>
-                {stage1Data ? '✓ Done' : '⏳ Ready'}
+                {stage1Data ? 'Done' : 'Ready'}
               </span>
             </div>
             <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>
@@ -194,7 +194,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
                 STAGE 2 · MAPPING
               </span>
               <span style={{ fontSize: '12px', fontWeight: 700, color: stage2Data ? 'var(--collapse-cobalt)' : 'var(--ink-muted)' }}>
-                {stage2Data ? '✓ Done' : '⏳ Pending'}
+                {stage2Data ? 'Done' : 'Pending'}
               </span>
             </div>
             <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>
@@ -245,7 +245,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
                 STAGE 3 · FINALIZE
               </span>
               <span style={{ fontSize: '12px', fontWeight: 700, color: stage3Data ? 'var(--olive-primary)' : 'var(--ink-muted)' }}>
-                {stage3Data ? '✓ Ready' : '⏳ Pending'}
+                {stage3Data ? 'Ready' : 'Pending'}
               </span>
             </div>
             <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>

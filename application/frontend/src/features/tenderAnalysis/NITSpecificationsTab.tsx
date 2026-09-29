@@ -61,7 +61,9 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
           boxShadow: 'var(--shadow-card)',
         }}
       >
-        <div style={{ fontSize: '32px', marginBottom: '10px' }}>📋</div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
+          <FileText size={32} style={{ color: 'var(--ink-muted)' }} />
+        </div>
         <h3 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--ink)', margin: '0 0 6px 0' }}>
           NIT Schedule Pending Finalization
         </h3>

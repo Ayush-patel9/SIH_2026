@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AlertTriangle, ArrowRight } from 'lucide-react';
 import type { AmbiguityFlag, AmbiguityOption } from '../../types';
 
 interface AmbiguityCardProps {
@@ -38,7 +39,7 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({
       {/* Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ fontSize: '18px' }}>⚠️</span>
+          <AlertTriangle size={18} color="#B45309" />
           <span
             style={{
               fontFamily: 'var(--font-data)',
@@ -154,7 +155,7 @@ export const AmbiguityCard: React.FC<AmbiguityCardProps> = ({
           }}
         >
           <span>Refine Recommendation</span>
-          <span>→</span>
+          <ArrowRight size={14} />
         </button>
       </div>
     </div>

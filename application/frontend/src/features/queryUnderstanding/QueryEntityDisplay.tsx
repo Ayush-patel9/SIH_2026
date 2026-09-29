@@ -1,4 +1,5 @@
 import React from 'react';
+import { Pencil, Search } from 'lucide-react';
 import type { QueryUnderstanding, QueryIntent } from '../../types';
 import { buildEntityChips, INTENT_LABELS } from './entityUtils';
 
@@ -24,8 +25,9 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
   const intent = understanding.query_intent || 'STANDARD_LOOKUP';
   const intentInfo = INTENT_LABELS[intent as QueryIntent] || {
     label: String(intent),
-    icon: '🎯',
+    IconComponent: Search,
   };
+  const IntentIcon = intentInfo.IconComponent;
 
   const getDots = (score: number) => {
     const filled = Math.round(score * 5);
@@ -65,8 +67,8 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              gap: '4px',
-              padding: '1px 6px',
+              gap: '5px',
+              padding: '2px 8px',
               borderRadius: '3px',
               background: '#FFFFFF',
               border: '1px solid var(--hairline)',
@@ -75,7 +77,7 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
               color: 'var(--collapse-cobalt)',
             }}
           >
-            <span>{intentInfo.icon}</span>
+            <IntentIcon size={12} />
             <span>{intentInfo.label}</span>
           </span>
         </div>
@@ -110,9 +112,10 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
               type="button"
               onClick={onOpenCorrection}
               className="btn-secondary"
-              style={{ padding: '2px 8px', fontSize: '11px', fontFamily: 'var(--font-data)' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', padding: '2px 8px', fontSize: '11px', fontFamily: 'var(--font-data)' }}
             >
-              ✏️ Override
+              <Pencil size={11} />
+              <span>Override</span>
             </button>
           )}
         </div>
@@ -125,29 +128,32 @@ export const QueryEntityDisplay: React.FC<QueryEntityDisplayProps> = ({
             No structured entities extracted yet. Enter a specification query above.
           </span>
         ) : (
-          chips.map((chip, idx) => (
-            <div
-              key={idx}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '5px',
-                padding: '3px 8px',
-                borderRadius: '4px',
-                background: chip.bg,
-                border: `1px solid ${chip.border}`,
-                color: chip.color,
-                fontFamily: 'var(--font-data)',
-                fontSize: '11px',
-              }}
-            >
-              <span style={{ fontSize: '10px' }}>{chip.icon}</span>
-              <strong style={{ fontSize: '9px', opacity: 0.85, textTransform: 'uppercase' }}>
-                {chip.typeLabel}:
-              </strong>
-              <span style={{ fontWeight: 600, color: 'var(--ink)' }}>{chip.text}</span>
-            </div>
-          ))
+          chips.map((chip, idx) => {
+            const ChipIcon = chip.IconComponent;
+            return (
+              <div
+                key={idx}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '3px 8px',
+                  borderRadius: '4px',
+                  background: chip.bg,
+                  border: `1px solid ${chip.border}`,
+                  color: chip.color,
+                  fontFamily: 'var(--font-data)',
+                  fontSize: '11px',
+                }}
+              >
+                {ChipIcon && <ChipIcon size={12} style={{ color: chip.color }} />}
+                <strong style={{ fontSize: '9px', opacity: 0.85, textTransform: 'uppercase' }}>
+                  {chip.typeLabel}:
+                </strong>
+                <span style={{ fontWeight: 600, color: 'var(--ink)' }}>{chip.text}</span>
+              </div>
+            );
+          })
         )}
       </div>
 

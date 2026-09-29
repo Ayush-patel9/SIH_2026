@@ -46,7 +46,9 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
           boxShadow: 'var(--shadow-card)',
         }}
       >
-        <div style={{ fontSize: '32px', marginBottom: '10px' }}>📝</div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
+          <FileText size={32} style={{ color: 'var(--ink-muted)' }} />
+        </div>
         <h3 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--ink)', margin: '0 0 6px 0' }}>
           No Finalized Clauses Yet
         </h3>
@@ -103,7 +105,7 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
           }}
         >
           {copiedAll ? <Check size={14} /> : <Copy size={14} />}
-          <span>{copiedAll ? '✓ All Clauses Copied' : 'Copy All Modernized Clauses'}</span>
+          <span>{copiedAll ? 'All Clauses Copied' : 'Copy All Modernized Clauses'}</span>
         </button>
       </div>
 
@@ -171,7 +173,7 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                     }}
                     title={`Jump to Page ${clause.page_number}`}
                   >
-                    <span>📍 Page {clause.page_number}</span>
+                    <span>Page {clause.page_number}</span>
                     <ExternalLink size={10} />
                   </button>
                 </div>
@@ -285,7 +287,7 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                   }}
                 >
                   <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--collapse-cobalt)', textTransform: 'uppercase', marginBottom: '4px', fontFamily: 'var(--font-data)' }}>
-                    🔬 MANDATORY NABL LABORATORY TEST CLAUSE INSERTION:
+                    MANDATORY NABL LABORATORY TEST CLAUSE INSERTION:
                   </div>
                   <div style={{ fontSize: '12px', color: 'var(--collapse-cobalt)', lineHeight: 1.5, fontFamily: 'monospace' }}>
                     {clause.added_nabl_clause}
