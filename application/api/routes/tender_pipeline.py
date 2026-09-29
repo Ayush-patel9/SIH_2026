@@ -938,7 +938,9 @@ def _deterministic_stage1_fallback(
         except Exception as e:
             logger.warning(f"Could not persist stage1 to Neon: {e}")
 
- # ==========================================
+    return decomp_res
+
+# ==========================================
 # ENDPOINT 2: Stage 2 Mapping & Clarification
 # ==========================================
 

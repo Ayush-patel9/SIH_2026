@@ -13,6 +13,7 @@ import sys
 import os
 import logging
 from pathlib import Path
+from typing import Optional
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -110,6 +111,18 @@ def read_root():
         }
     }
 
+def _cors_headers(request: Request, extra_headers: Optional[dict] = None) -> dict:
+    origin = request.headers.get("origin", "*")
+    h = {
+        "Access-Control-Allow-Origin": origin if origin else "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "*",
+        "Access-Control-Allow-Headers": "*",
+    }
+    if extra_headers:
+        h.update(extra_headers)
+    return h
+
 @app.exception_handler(HTTPException)
 async def http_exception_handler(request: Request, exc: HTTPException):
     return JSONResponse(
@@ -119,7 +132,7 @@ async def http_exception_handler(request: Request, exc: HTTPException):
             "message": exc.detail,
             "path": request.url.path
         },
-        headers=exc.headers
+        headers=_cors_headers(request, exc.headers)
     )
 
 @app.exception_handler(Exception)
@@ -127,7 +140,8 @@ async def global_exception_handler(request: Request, exc: Exception):
     if isinstance(exc, HTTPException):
         return JSONResponse(
             status_code=exc.status_code,
-            content={"status": "ERROR", "message": exc.detail, "path": request.url.path}
+            content={"status": "ERROR", "message": exc.detail, "path": request.url.path},
+            headers=_cors_headers(request, exc.headers)
         )
     logger.error(f"Global unhandled exception on {request.url.path}: {exc}", exc_info=True)
     return JSONResponse(
@@ -137,7 +151,8 @@ async def global_exception_handler(request: Request, exc: Exception):
             "message": "Internal Server Error during pipeline execution.",
             "error_detail": str(exc),
             "path": request.url.path
-        }
+        },
+        headers=_cors_headers(request)
     )
 
 if __name__ == "__main__":
