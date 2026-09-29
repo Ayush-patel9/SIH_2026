@@ -1,307 +1,787 @@
-# System Architecture & Technical Design Document
-## SIH 2026 — BIS Standards Intelligence Platform (ManakAI)
+# ManakAI Design System — Global Design Specification
+## SIH 2026 — BIS Standards Intelligence Platform
+
+> This document is the single source of truth for all UI/UX decisions in the ManakAI platform.
+> Every component, every spacing value, every color token, and every interaction pattern
+> is defined here. All AI agents, developers, and contributors must follow these specifications.
 
 ---
 
-## 1. Executive Summary & Problem Statement
+## 1. Core Principles
 
-### 1.1 Context & Problem
-Public procurement in India involves thousands of crore rupees annually across central ministries, state departments, defense organizations, and public sector undertakings (PSUs). Drafting procurement tenders (NIT - Notice Inviting Tenders) requires specifying precise technical standards established by the Bureau of Indian Standards (BIS).
-
-However, public procurement faces major critical systemic challenges:
-1. **Stale & Superseded Standards**: Tenders frequently cite obsolete Indian Standards (IS), causing vendor confusion, contract disputes, and supply rejections.
-2. **Missing Statutory QCO Compliance**: Quality Control Orders (QCOs) issued by line ministries make specific BIS certifications legally mandatory. Omitting QCO clauses violates statutory norms.
-3. **Single-Vendor Lock-in & Bias**: Vague or overly restrictive specifications lead to restrictive bidding, violating General Financial Rules (GFR) and Central Vigilance Commission (CVC) guidelines.
-4. **Auditing & RTI Friction**: CAG auditors and vigilance officers spend weeks auditing paper/PDF tender trails to verify why certain standards were mandated.
-
-### 1.2 Solution: ManakAI
-**ManakAI** is a production-grade **Knowledge-Graph Augmented Retrieval (GraphRAG) Intelligence Platform** that automates BIS standard discovery, multi-item tender decomposition, normative supersession verification, NIT specification generation, and cryptographic audit sealing.
+1. **No Emojis in UI Copy.** Emojis are explicitly prohibited in all button labels, headings, section titles, badges, status labels, table cells, and navigation items. Use Lucide SVG icons from the `lucide-react` package instead of emoji characters. The only exception is within AI-generated content returned by the backend that the user has not yet reviewed.
+2. **Consistent Hierarchy.** Every screen has exactly one `<h1>` (page title). Secondary sections use `<h2>`. Component titles use `<h3>`. Labels and section markers use the `section-label` utility class.
+3. **Restrained Animation.** Transitions are subtle and purposeful. No animations that loop indefinitely without user interaction. Hover transitions use 150ms ease. Page transitions use 200ms ease.
+4. **Accessible Contrast.** All foreground/background combinations meet WCAG AA minimum contrast ratios. The primary ink color (#1C2419) against the canvas (#FBF9F5) exceeds WCAG AAA.
+5. **Token-Based Implementation.** All colors, spacing, radii, and typography values must use the CSS variable tokens defined in Section 2. No hardcoded hex values should appear in component files.
 
 ---
 
-## 2. High-Level System Architecture
+## 2. Design Token Reference
 
-```mermaid
-flowchart TB
-    subgraph ClientLayer["🖥️ Frontend & Client Applications (React 19 + TypeScript + Vite)"]
-        PO["👔 Procurement Officer Workspace\n(NIT Generator, Decomposition)"]
-        AUD["🔍 CVC / CAG Auditor Portal\n(SHA-256 Ledger, RTI Dossier)"]
-        VEN["🏭 Vendor Compliance Gateway\n(Self-Checklists, Testing)"]
-        EXP["🔬 BIS Expert Feedback Loop\n(Active Learning, Human-in-Loop)"]
-        KG3D["🕸️ 3D Force-Directed Graph View\n(Normative Citation Subgraphs)"]
-    end
+All tokens are defined in `application/frontend/src/index.css` under `:root`.
 
-    subgraph GatewayLayer["⚡ API Gateway & Server Interfaces"]
-        FastAPI["🚀 FastAPI REST Engine (:8000)\n• /api/v1/query\n• /api/v1/tender-upload\n• /api/v1/export-nit\n• /api/v1/feedback\n• /api/v1/alerts"]
-        WS["📡 Real-Time WebSocket Channel (:8000)\n• ws://.../api/v1/ws/query-stream"]
-        MCP["🤖 Model Context Protocol Server (:8001)\n• query_bis_standards\n• verify_tender_compliance\n• get_subgraph_nodes"]
-    end
+### 2.1 Color Tokens — ManakAI Sovereign Theme (Default)
 
-    subgraph IntelligenceTier["🧠 Core Intelligence & GraphRAG Pipeline"]
-        BU["🌐 Bhashini Multilingual Translator\n(Indic ↔ English Query Normalization)"]
-        TRI["🎯 Tri-Retrieval Fusion Engine\n• Dense Vector (Gemini Embeddings)\n• Lexical BM25 + Full-Text Search\n• Normative Knowledge Graph Traversal"]
-        RRF["⚖️ Reciprocal Rank Fusion (RRF) & Reranker"]
-        LLM["🤖 Dual LLM Gateway (Gemini 2.5 Flash / Pro)\n(Multi-Key Rotation Pool & Fallback Engine)"]
-        CRITIC["🛡️ Critic & Guardrail Verifier\n(Hallucination & Normative Checks)"]
-        AUDIT["🔒 Cryptographic SHA-256 Audit Sealer"]
-    end
+```css
+/* Canvas and Surface */
+--canvas:               #FBF9F5;   /* Warm parchment — page background */
+--canvas-secondary:     #F6F3EB;   /* Oatmeal — secondary containers */
+--surface:              #FFFEFB;   /* Elevated ivory — card backgrounds */
+--surface-secondary:    #F5F0E6;   /* Warm beige — nested card tier */
+--surface-hover:        #EFE9DD;   /* Hover state for surface elements */
+--paper:                #FFFEFB;   /* Equivalent to surface — sticky headers */
 
-    subgraph DataStorageLayer["🗄️ Knowledge Base & Data Repositories"]
-        CATALOG[("📚 BIS Master Standards Catalog\n(Active, Withdrawn, Amendments)")]
-        QCO_MAT[("📜 Statutory QCO Enforcement Matrix\n(Mandatory Certification Schemes)")]
-        GRAPH_DB[("🕸️ NetworkX Normative Citation Graph\n(Parent-Child, Superseded, Allied Tests)")]
-        LEDGER[("🧾 Immutable Audit Records & Feedback Store")]
-    end
+/* Text Hierarchy */
+--ink:                  #1C2419;   /* Primary text — headings and body */
+--ink-primary:          #1C2419;
+--ink-secondary:        #44503E;   /* Secondary text — descriptions */
+--ink-muted:            #6E7A68;   /* Muted text — metadata, timestamps */
+--ink-faint:            #9BA795;   /* Faint text — placeholders */
+--ink-ghost:            #C4CDC0;   /* Disabled text */
 
-    ClientLayer --> GatewayLayer
-    GatewayLayer --> IntelligenceTier
-    IntelligenceTier --> DataStorageLayer
+/* Dividers */
+--hairline:             #E5E0D4;   /* Default border and divider */
+--hairline-hover:       #D5CFBF;   /* Hover border state */
+--border-default:       #E5E0D4;
+
+/* Primary Brand — Deep Botanical Olive */
+--olive-primary:        #36452F;   /* Primary action color */
+--olive-dark:           #24301F;   /* Primary action hover */
+--olive-hover:          #2A3724;   /* Primary button hover */
+--olive-sage:           #4A5D3F;   /* Secondary brand tone */
+--olive-leaf:           #E8EDE4;   /* Chip/tag background */
+--olive-tint:           #F0F4ED;   /* Very light olive tint */
+
+/* Gold Accent — Antique Brass */
+--gold-antique:         #C29D53;
+--gold-bg:              #FBF7EC;
+--gold-border:          #EAD9B5;
+--gold-text:            #8A6922;
+
+/* Status Colors */
+--emerald-pass:         #2D6A4F;   /* Success / Active */
+--emerald-bg:           #EDF7F1;
+--emerald-border:       #B7E4C7;
+--emerald-text:         #1B4332;
+
+--amber-warn:           #C47F17;   /* Warning / Amendment required */
+--amber-bg:             #FFF9EB;
+--amber-border:         #FDE68A;
+
+--error-red:            #BA3A2A;   /* Error / Withdrawn / Non-compliant */
+--error-bg:             #FDF2F0;
+--error-border:         #F7CDC6;
+--error-line:           #BA3A2A;
+
+--superposition-violet: #5B4E7A;   /* Alternative / Comparative */
+--superposition-bg:     #F3F0F8;
+--superposition-border: #DCD5E8;
+
+--collapse-cobalt:      #36452F;   /* Primary recommendation highlight */
+
+/* Shadows */
+--shadow-xs:     0 1px 2px 0 rgba(54, 69, 47, 0.04);
+--shadow-sm:     0 1px 3px 0 rgba(54, 69, 47, 0.04), 0 1px 2px -1px rgba(54, 69, 47, 0.03);
+--shadow-card:   0 1px 3px 0 rgba(54, 69, 47, 0.04), 0 4px 16px -2px rgba(54, 69, 47, 0.03);
+--shadow-modal:  0 16px 40px -4px rgba(28, 36, 25, 0.14);
+```
+
+### 2.2 Typography Tokens
+
+```css
+--font-ui:    'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+--font-prose: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+--font-data:  'JetBrains Mono', monospace;
+```
+
+- **`--font-ui`**: All navigation, buttons, labels, badges, section headings, and interactive controls.
+- **`--font-prose`**: Body text, descriptions, paragraphs, and card content.
+- **`--font-data`**: IS standard numbers, SHA-256 hashes, numeric metrics, code snippets, timestamps, and technical identifiers.
+
+### 2.3 Border Radius Tokens
+
+```css
+--radius-xs:   4px;    /* Micro chips, inline badges */
+--radius-sm:   6px;    /* Default cards, inputs, buttons */
+--radius-md:   10px;   /* Modals, larger cards */
+--radius-lg:   14px;   /* Drawers, panels */
+--radius-full: 9999px; /* Pill badges, toggle switches */
+```
+
+### 2.4 Spacing Scale
+
+Use multiples of 4px for all margins, padding, and gaps:
+
+| Token Name | Value | Use Case |
+|:-----------|:------|:---------|
+| 2px | Micro | Icon-to-label gap inside chips |
+| 4px | XS | Gap between inline badges |
+| 6px | SM | Button icon-to-text gap, dense row gap |
+| 8px | Base | Default padding inside chips, small cards |
+| 12px | MD | Section vertical rhythm, input padding |
+| 16px | LG | Card padding, section gap |
+| 20px | XL | Major section padding |
+| 24px | 2XL | Page section vertical separation |
+| 32px | 3XL | Empty state padding, major page sections |
+
+---
+
+## 3. Button Specifications
+
+All buttons must follow these exact specifications. No button should deviate from the classes defined below.
+
+### 3.1 Primary Button — `btn-primary`
+
+Use for: The single most important call-to-action on a screen (e.g., "Search Standards", "Analyze Tender", "Generate Certificate").
+
+```css
+.btn-primary {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: var(--olive-primary);
+  border: 1px solid var(--olive-dark);
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 150ms ease, box-shadow 150ms ease, transform 100ms ease;
+  box-shadow: var(--shadow-xs);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--olive-hover);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid var(--focus-blue);
+  outline-offset: 2px;
+}
+```
+
+**Example usage:**
+```tsx
+<button type="button" className="btn-primary" id="search-standards-btn">
+  <Search size={14} />
+  Search Standards
+</button>
 ```
 
 ---
 
-## 3. Core Subsystems & Technical Workflows
+### 3.2 Secondary Button — `btn-secondary`
 
-### 3.1 Data Ingestion & Knowledge Graph Pipeline
-The data ingestion subsystem builds and maintains the foundational knowledge representations of Indian Standards:
+Use for: Secondary actions adjacent to a primary action (e.g., "Add Standard", "Export", "Copy Clause", "Compare").
 
-1. **BIS Standards Catalog Ingestion**:
-   - Parses official BIS registries into structured records containing: `is_number`, `title`, `status` (`ACTIVE`, `WITHDRAWN`, `UNDER_REVISION`), `year_published`, `scope`, `clause_breakdown`, `mandatory_test_methods`.
-2. **Normative Reference Graph Construction**:
-   - Extracts all cross-standard references (e.g., *"Cement testing shall conform to IS 4031 (Part 1 to Part 6)"*).
-   - Creates a directed multi-edge graph with relationship types:
-     - `NORMATIVELY_REFERENCES`: Standard A depends on Standard B for testing/material specs.
-     - `SUPERSEDES` / `SUPERSEDED_BY`: Standard A replaces old Standard B.
-     - `ALLIED_TEST_STANDARD`: Standard B specifies the laboratory testing protocols for Standard A.
-     - `QCO_MANDATED_UNDER`: Standard A is legally enforced under a specific ministry QCO.
-3. **QCO Statutory Enforcement Engine**:
-   - Maps Central Government Quality Control Orders (QCOs) by Gazette notification number, enforcement date, line ministry (e.g., DPIIT, Ministry of Steel), and certification scheme (e.g., Scheme-I Standard Mark).
+```css
+.btn-secondary {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  padding: 7px 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+  box-shadow: var(--shadow-xs);
+  white-space: nowrap;
+  user-select: none;
+}
 
----
+.btn-secondary:hover:not(:disabled) {
+  background: var(--surface-hover);
+  border-color: var(--hairline-hover);
+  box-shadow: var(--shadow-sm);
+}
 
-### 3.2 The Tri-Retrieval & GraphRAG Engine
+.btn-secondary:active:not(:disabled) {
+  background: var(--canvas-secondary);
+}
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor User as User / Frontend
-    participant API as FastAPI Gateway
-    participant Tri as Tri-Retrieval Engine
-    participant Graph as Knowledge Graph
-    participant Rerank as Fusion Reranker
-    participant LLM as Gemini Reasoner
-    participant Critic as Critic Verifier
-    participant Ledger as Audit Ledger
-
-    User->>API: POST /api/v1/query (QueryRequest)
-    API->>Tri: Execute Multi-Stage Retrieval
-    par Parallel Retrieval
-        Tri->>Tri: 1. Dense Semantic Vector Search
-        Tri->>Tri: 2. BM25 Lexical & Token Inverted Index
-        Tri->>Graph: 3. Subgraph Extraction (2-hop neighborhood)
-    end
-    Tri->>Rerank: Combine Candidates via Reciprocal Rank Fusion (RRF)
-    Rerank-->>LLM: Top-N Ranked Standards + Subgraph Context
-    LLM->>LLM: Generate Recommendation, Confidence & NIT Clauses
-    LLM->>Critic: Structured Candidate Payload
-    Critic->>Critic: Verify QCO Mandate & Supersession Rules
-    Critic->>Ledger: Generate & Seal SHA-256 Provenance Hash
-    Ledger-->>API: StandardsResponse (v1 Contract Compliant)
-    API-->>User: Complete Intelligence Response
+.btn-secondary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 ```
 
-#### Detailed Retrieval Phases:
-1. **Query Parsing & Multilingual Normalization**:
-   - Ingests queries in English, Hindi, Tamil, Telugu, Marathi, Gujarati, or Bengali.
-   - Extracts domain entities: material class, grade, usage environment, tender constraints.
-2. **Tri-Retrieval Search**:
-   - **Dense Semantic Retrieval**: High-dimensional embeddings capture conceptual intent (e.g., *"waterproof roof sealant"* matches *IS 2645*).
-   - **Lexical BM25 Retrieval**: Matches exact standard numbers (e.g., *IS 456*), grades (*Fe 500D*), and technical jargon.
-   - **Graph Traversal**: Expands initial candidates by extracting allied testing standards and checking if any candidate is superseded.
-3. **Reciprocal Rank Fusion (RRF) & Reranking**:
-   $$RRF(d) = \sum_{m \in M} \frac{1}{k + r_m(d)}$$
-   Combines multi-modal candidate rankings with a smoothing constant ($k = 60$).
-4. **Dual-Stage LLM Reasoning**:
-   - Uses **Gemini Flash** for high-throughput entity extraction and candidate scoring.
-   - Uses **Gemini Pro** for deep multi-hop reasoning, confidence derivation, and legal clause synthesis.
-5. **Critic Guardrail & Audit Sealing**:
-   - Validates that active standards are not marked superseded.
-   - Computes an immutable SHA-256 cryptographic seal across input parameters, timestamp, model ID, and output recommendations.
-
----
-
-### 3.3 Multi-Item Tender Document Decomposition
-
-When users upload complete tender documents (PDF/DOCX/Scanned images):
-1. **Layout & Table Extraction**:
-   - Utilizes `PyMuPDF` and `pdfplumber` to extract document hierarchies, clauses, and Bill of Quantities (BOQ) tables.
-2. **Line-Item Decomposition**:
-   - Identifies individual materials/work items (e.g., *Item 1: Structural Steel*, *Item 2: Ready Mix Concrete*, *Item 3: UPVC Conduits*).
-3. **Per-Item Standards Analysis**:
-   - Concurrently maps each line item through the Tri-Retrieval pipeline.
-4. **Conflict & Staleness Matrix**:
-   - Highlights items referencing obsolete standards or missing mandatory QCO clauses across the entire tender schedule.
-
----
-
-## 4. Role-Based Workspaces & Personas
-
-ManakAI adapts its user experience, intelligence depth, and redaction rules dynamically based on the active role:
-
-```mermaid
-graph LR
-    User([User Profile]) -->|Role Context| Selector{Active Role}
-    
-    Selector -->|PROCUREMENT_OFFICER| PO_UI["👔 Procurement Officer Workspace\n• Tender Clause Generator\n• BOQ Decomposer\n• Supersession Risk Banners\n• Export NIT Package"]
-    Selector -->|AUDITOR| AUD_UI["🔍 CVC / CAG Auditor Ledger\n• SHA-256 Proof of Verification\n• Full Step-by-Step Reasoning Trace\n• RTI Defensibility Dossier\n• QCO Compliance Audit Logs"]
-    Selector -->|VENDOR| VEN_UI["🏭 Vendor Compliance Portal\n• Pre-Bid Self-Assessment Checklist\n• Mandatory Lab Test Matrix\n• Scheme-I Mark Requirements\n• Deviation Explanations"]
-    Selector -->|BIS_EXPERT| EXP_UI["🔬 BIS Standards Expert Console\n• Human-in-the-Loop Feedback\n• Rule & Synonym Dataset Tuning\n• Pipeline Precision Benchmark"]
-```
-
-### Role Matrix Comparison
-
-| Feature Capability | Procurement Officer | Auditor (CVC / CAG) | Vendor / Bidder | BIS Expert |
-| :--- | :---: | :---: | :---: | :---: |
-| **Search & Query Intelligence** | ✅ | ✅ | ✅ | ✅ |
-| **NIT Spec Clause Generator** | ✅ | ❌ | ❌ | ❌ |
-| **Decompose Multi-Item Tender PDFs** | ✅ | ✅ | ❌ | ❌ |
-| **Cryptographic SHA-256 Audit Seal** | View | **Verify & Export** | ❌ | View |
-| **Full LLM Reasoning Trace & Graph Path** | Compact | **Complete Forensic** | Simplified | **Full Debug** |
-| **Human-in-the-Loop Feedback & Flagging** | ✅ | ❌ | ❌ | **Approve / Tune** |
-| **Export RTI Compliance Dossier** | ❌ | ✅ | ❌ | ❌ |
-
----
-
-## 5. API Architecture & Interface Contracts
-
-The platform strictly enforces the **`API_CONTRACT_SCHEMA.v1`** across all integration endpoints:
-
-### 5.1 Primary REST Endpoints (`FastAPI @ Port 8000`)
-
-| Method | Endpoint | Description | Key Request / Response |
-| :--- | :--- | :--- | :--- |
-| `POST` | `/api/v1/query` | Primary GraphRAG standards search & recommendation | `QueryRequest` ➔ `StandardsResponse` |
-| `POST` | `/api/v1/tender-upload` | Upload & decompose multi-item tender PDF/DOCX | Multipart File ➔ `DecomposedTenderResponse` |
-| `POST` | `/api/v1/export-nit` | Generate formatted NIT technical specification document | `NITExportRequest` ➔ `NITExportResponse` |
-| `POST` | `/api/v1/feedback` | Submit Human-in-the-Loop corrections & flags | `FeedbackRequest` ➔ `FeedbackResponse` |
-| `GET` | `/api/v1/alerts` | Retrieve active QCO notifications & supersession alerts | Query params ➔ `List[AlertPayload]` |
-| `GET` | `/api/v1/knowledge-graph/subgraph` | Extract localized nodes & edges for 3D visualizer | `is_number` ➔ `GraphJSON` |
-| `GET` | `/api/v1/health` | Service health, model status, and rotation pool diagnostics | None ➔ `HealthStatus` |
-
-### 5.2 Real-Time WebSocket Channel
-- **URL**: `ws://localhost:8000/api/v1/ws/query-stream`
-- **Purpose**: Provides sub-second UI progress streaming during complex multi-hop graph traversals and LLM reasoning.
-- **Event Flow**:
-  1. `{"stage": "INITIALIZING", "progress": 10}`
-  2. `{"stage": "ENTITY_EXTRACTION", "progress": 30}`
-  3. `{"stage": "TRI_RETRIEVAL", "progress": 60}`
-  4. `{"stage": "GRAPH_EXPANSION", "progress": 75}`
-  5. `{"stage": "LLM_REASONING", "progress": 90}`
-  6. `{"stage": "AUDIT_SEALED", "progress": 100, "payload": {...}}`
-
-### 5.3 Model Context Protocol (MCP) Server (`Port 8001`)
-Allows external AI Agents (e.g., Claude, Cursor, Antigravity, Custom Enterprise Agents) to query the BIS Knowledge Graph directly using standardized tool definitions:
-- `query_bis_standards`: Fetch normative standards for a given query.
-- `verify_tender_compliance`: Audit a raw tender clause against the latest QCO gazettes.
-- `get_knowledge_graph_node`: Query citation edges, superseded standards, and testing methods.
-- `generate_nit_clause`: Produce compliant tender specification clauses.
-
----
-
-## 6. Security, Governance & Cryptographic Sealing
-
-### 6.1 Cryptographic Audit Record (SHA-256)
-Every recommendation produced by the platform generates an immutable audit record:
-$$\text{AuditHash} = \text{SHA256}(\text{QueryID} + \text{Timestamp} + \text{QueryText} + \text{PrimaryIS} + \text{ModelVersion})$$
-
-- **Legal Defensibility**: Serves as unalterable proof before CVC or RTI inquiry committees that the procurement officer relied on valid BIS standards at the time of tender publication.
-- **Dry-Run Mode**: Allows officers to explore draft tenders in a sandbox without writing to the permanent audit ledger.
-
-### 6.2 Resilient Multi-Key Gemini API Pool
-To guarantee 99.99% uptime during high-volume hackathons and production loads:
-- Maintains an in-memory key rotation pool with automatic rate-limit detection (`HTTP 429` backoff).
-- Automatic failover from `gemini-2.5-pro` to `gemini-2.5-flash` if timeout thresholds are reached.
-
----
-
-## 7. Technology Stack Summary
-
-| Layer | Technology | Rationale |
-| :--- | :--- | :--- |
-| **Frontend Framework** | React 19 + TypeScript + Vite | Maximum rendering performance, type-safe contract compliance |
-| **Styling & Design System** | Custom Vanilla CSS + Design Tokens | Clean government-grade aesthetic, dark/light themes, zero bloat |
-| **Graph Visualization** | Custom HTML5 Canvas / 3D Force Graph | Interactive multi-hop normative standard exploration |
-| **Backend API Server** | FastAPI (Python 3.11+) | Async high-throughput REST & WebSocket endpoints |
-| **AI & LLM Reasoning** | Google Gemini (2.5 Flash / 2.5 Pro) | Industry-leading multi-modal reasoning and large context window |
-| **Graph Engine** | NetworkX + Custom In-Memory Graph Store | Fast multi-hop neighbor search and citation traversal |
-| **Document Processing** | PyMuPDF + pdfplumber | Precise tabular BOQ extraction from scanned & digital tender PDFs |
-| **Agent Interoperability** | Model Context Protocol (MCP) | Universal protocol for AI assistant tool calling |
-| **Containerization** | Docker & Docker Compose | Uniform reproducible local and cloud deployment |
-
----
-
-## 8. Directory & Repository Structure
-
-```
-SIH_2026/
-├── API_CONTRACT_SCHEMA.md           # Canonical JSON schemas & API specifications
-├── DESIGN.md                        # Complete technical architecture (this file)
-├── Dockerfile                       # Multi-stage container build
-├── docker-compose.yml               # Multi-service orchestration (API + MCP)
-├── requirements.txt                 # Backend Python dependencies
-├── .env.example                     # Environment template (Gemini API keys)
-│
-├── application/
-│   ├── api/                         # FastAPI application
-│   │   ├── main.py                  # Server entry point & CORS configuration
-│   │   └── routes/                  # Modular route handlers
-│   │       ├── health.py            # Health diagnostics & pool status
-│   │       ├── query.py             # Standards search & recommendation
-│   │       ├── feedback.py          # Human-in-the-loop expert corrections
-│   │       ├── alerts.py            # QCO & staleness notifications
-│   │       ├── websocket.py         # Real-time WebSocket streaming
-│   │       └── knowledge_graph.py   # Subgraph exploration endpoints
-│   │
-│   ├── frontend/                    # React 19 + TypeScript web application
-│   │   ├── src/
-│   │   │   ├── api/                 # API client libraries & contracts
-│   │   │   ├── components/          # Reusable UI primitives & layouts
-│   │   │   ├── features/            # Domain-specific feature modules
-│   │   │   │   ├── roles/           # Procurement, Auditor & Vendor panels
-│   │   │   │   ├── explainability/  # Reasoning timeline, Confidence breakdown
-│   │   │   │   ├── neuralGraph/     # 3D & 2D Knowledge Graph visualizers
-│   │   │   │   ├── tender/          # Tender decomposition & PDF upload
-│   │   │   │   └── feedback/        # Expert flag & review modals
-│   │   │   ├── store/               # Role & user state management
-│   │   │   └── types.ts             # TypeScript definitions matching API schema
-│   │   └── vite.config.ts           # Vite bundler configuration
-│   │
-│   ├── mcp_server/                  # Model Context Protocol server
-│   │   ├── server.py                # MCP server entry point (:8001)
-│   │   └── tools/                   # MCP tool definitions
-│   │
-│   └── pdf_parser/                  # Tender document parsing engine
-│       └── pdf_tender_parser.py     # PDF table extraction & BOQ chunker
-│
-└── pipeline/                        # Core GraphRAG & Ingestion Engine
-    ├── data/                        # Processed standards catalogs & graphs
-    ├── rag_engine/                  # Retrieval, fusion, and reasoner modules
-    │   ├── tri_retrieval.py         # Dense + BM25 + Graph Tri-Retrieval
-    │   ├── llm_gateway.py           # Gemini pool manager & rotation
-    │   ├── llm_reasoner.py          # Prompt engineering & reasoning chains
-    │   ├── critic_verifier.py       # Hallucination & QCO guardrail validator
-    │   └── staleness_monitor.py     # Supersession & amendment tracker
-    └── scrapers/                    # BIS & QCO gazette scrapers
+**Example usage:**
+```tsx
+<button type="button" className="btn-secondary" id="add-standard-btn">
+  <Plus size={14} />
+  Add Standard
+</button>
 ```
 
 ---
 
-## 9. Verification & Quality Assurance
+### 3.3 Ghost Button — `btn-ghost`
 
-1. **Strict Contract Conformance**: All API responses are validated against Pydantic models matching `API_CONTRACT_SCHEMA.md`.
-2. **Automated Unit & Integration Tests**: Located in `tests/` and `application/frontend/src/tests/` covering:
-   - Tri-Retrieval rank fusion accuracy.
-   - Supersession resolution and QCO mandate flags.
-   - Role-based data redaction and view separation.
-   - End-to-end tender PDF decomposition and NIT clause export.
-3. **Audit Trail Verification**: Cryptographic SHA-256 seal invariance testing across mock and production queries.
+Use for: Tertiary or destructive actions with low visual weight (e.g., "Remove", "Clear", close icons, "Show more").
+
+```css
+.btn-ghost {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 150ms ease, background 150ms ease, border-color 150ms ease;
+  user-select: none;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  color: var(--ink);
+  background: var(--surface-hover);
+  border-color: var(--hairline);
+}
+
+.btn-ghost:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+```
+
+---
+
+### 3.4 Danger Button — `btn-danger`
+
+Use for: Irreversible destructive actions that require explicit user intent (e.g., "Delete Record", "Revoke Certificate").
+
+```css
+.btn-danger {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--error-red);
+  background: var(--error-bg);
+  border: 1px solid var(--error-border);
+  border-radius: var(--radius-sm);
+  padding: 7px 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 150ms ease, border-color 150ms ease;
+  user-select: none;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: #FAE7E4;
+  border-color: #EFB3AB;
+}
+```
+
+---
+
+### 3.5 Button Sizing Modifiers
+
+Apply these modifier classes alongside the base button class to override default size:
+
+| Class | Font Size | Padding | Use Case |
+|:------|:----------|:--------|:---------|
+| `.btn-xs` | 11px | 3px 8px | Dense table row actions, chip-embedded actions |
+| `.btn-sm` | 12px | 5px 12px | Compact form actions, secondary toolbar buttons |
+| (default) | 13px | 7-8px 14-16px | Standard UI actions |
+| `.btn-lg` | 15px | 10px 20px | Hero CTAs, modal confirmation actions |
+
+---
+
+### 3.6 Button ID Conventions
+
+Every interactive button must have a unique, descriptive `id` attribute for browser testing:
+
+- Pattern: `{feature}-{action}-btn`
+- Examples: `search-standards-btn`, `generate-certificate-btn`, `add-alternative-btn`, `export-nit-btn`, `upload-tender-btn`
+
+---
+
+## 4. Input Field Specifications
+
+### 4.1 Text Input — `auth-input`
+
+```css
+.auth-input {
+  font-family: var(--font-prose);
+  font-size: 13px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  width: 100%;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+  outline: none;
+}
+
+.auth-input::placeholder {
+  color: var(--ink-faint);
+  font-style: normal;
+}
+
+.auth-input:hover {
+  border-color: var(--hairline-hover);
+}
+
+.auth-input:focus {
+  border-color: var(--olive-primary);
+  box-shadow: 0 0 0 3px var(--focus-blue-glow);
+}
+```
+
+### 4.2 Select Dropdown — `auth-input auth-select`
+
+Apply `auth-select` alongside `auth-input` on `<select>` elements. This adds the dropdown arrow treatment and removes the browser default appearance.
+
+---
+
+## 5. Card and Panel Specifications
+
+### 5.1 Workbench Card — `workbench-card`
+
+The primary container for feature content areas and tool panels.
+
+```css
+.workbench-card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 20px;
+  transition: box-shadow 200ms ease;
+}
+
+.workbench-card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+```
+
+**Anatomy:**
+- Top: `section-label` (10–11px uppercase tracking letter) + `<h2>` card title + description `<p>`
+- Middle: Primary content (tables, graphs, forms)
+- Bottom: Action row with `btn-secondary` or `btn-ghost` buttons
+
+### 5.2 Section Label — `section-label`
+
+Used as the eyebrow text above every major card title. Must always be uppercase.
+
+```css
+.section-label {
+  font-family: var(--font-data);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 4px;
+}
+```
+
+**Example:**
+```tsx
+<div className="section-label">STANDARDS INTELLIGENCE</div>
+<h2>Tri-Retrieval Query Engine</h2>
+```
+
+---
+
+## 6. Badge and Chip Specifications
+
+### 6.1 Status Badges — `concept-status-badge`
+
+Used to display IS standard compliance status inline.
+
+```css
+.concept-status-badge {
+  font-family: var(--font-data);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Active / Compliant */
+.concept-status-badge.active {
+  background: var(--emerald-bg);
+  color: var(--emerald-text);
+  border: 1px solid var(--emerald-border);
+}
+
+/* Withdrawn / Non-compliant */
+.concept-status-badge.withdrawn {
+  background: var(--error-bg);
+  color: var(--error-red);
+  border: 1px solid var(--error-border);
+  text-decoration: line-through;
+}
+
+/* Amendment required / Under revision */
+.concept-status-badge.amendment {
+  background: var(--amber-bg);
+  color: var(--amber-warn);
+  border: 1px solid var(--amber-border);
+}
+
+/* Alternative / Comparative */
+.concept-status-badge.alternative {
+  background: var(--superposition-bg);
+  color: var(--superposition-violet);
+  border: 1px solid var(--superposition-border);
+}
+```
+
+### 6.2 QCO Mandatory Badge
+
+For inline tagging of standards with mandatory Quality Control Order status:
+
+```tsx
+<span style={{
+  fontFamily: 'var(--font-data)',
+  fontSize: '10px',
+  fontWeight: 700,
+  padding: '2px 6px',
+  borderRadius: 'var(--radius-xs)',
+  background: 'var(--gold-bg)',
+  color: 'var(--gold-text)',
+  border: '1px solid var(--gold-border)',
+}}>
+  QCO MANDATORY
+</span>
+```
+
+### 6.3 Palette Filter Buttons — `palette-btn`
+
+For toggle-style filter buttons in toolbars:
+
+```css
+.palette-btn {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-secondary);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.palette-btn.selected,
+.palette-btn:hover {
+  background: var(--olive-leaf);
+  border-color: var(--olive-sage);
+  color: var(--olive-primary);
+}
+```
+
+---
+
+## 7. Table Specifications — `data-table`
+
+```css
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-prose);
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.data-table thead tr {
+  background: var(--canvas-secondary);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.data-table th {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.data-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+.data-table tbody tr:hover {
+  background: var(--surface-hover);
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+```
+
+**IS Number Cell:** Always use `var(--font-data)` for IS number values in table cells, with `font-weight: 600`.
+
+---
+
+## 8. Typography Scale
+
+| Element | Font | Size | Weight | Color | Usage |
+|:--------|:-----|:-----|:-------|:------|:------|
+| Page Title `h1` | `--font-ui` | 24px | 700 | `--ink` | One per page |
+| Card Title `h2` | `--font-ui` | 18–20px | 600 | `--ink` | Section heading |
+| Subsection `h3` | `--font-ui` | 15–16px | 600 | `--ink` | Component heading |
+| Section Label | `--font-data` | 10px | 600 | `--ink-muted` | Eyebrow above h2 |
+| Body / Description | `--font-prose` | 13–14px | 400 | `--ink-secondary` | Card descriptions |
+| Table Header | `--font-ui` | 11px | 600 | `--ink-muted` | Uppercase, tracked |
+| Table Cell | `--font-prose` | 13px | 400 | `--ink` | Data cells |
+| IS Number | `--font-data` | 13–15px | 600–700 | `--ink` | Standard codes |
+| Hash / Code | `--font-data` | 11–12px | 400 | `--ink-secondary` | SHA-256, snippets |
+| Badge / Chip | `--font-data` | 10–11px | 600 | varies | Status labels |
+| Button Label | `--font-ui` | 12–13px | 500–600 | varies | Action labels |
+| Input Placeholder | `--font-prose` | 13px | 400 | `--ink-faint` | Placeholder text |
+| Timestamp | `--font-data` | 11px | 400 | `--ink-muted` | Dates, times |
+
+---
+
+## 9. Icon Usage
+
+Use icons exclusively from the `lucide-react` package. Do not use emoji as icon substitutes.
+
+### 9.1 Standard Icon Sizes
+
+| Context | Size | Example |
+|:--------|:-----|:--------|
+| Button icon (default) | 14px | `<Search size={14} />` |
+| Button icon (small) | 12–13px | `<Plus size={12} />` |
+| Inline with text | 14–16px | Next to metadata labels |
+| Card action icons | 16px | Copy, Download, Share actions |
+| Sidebar navigation | 18px | Nav item icons |
+| Feature hero icons | 20–24px | Section-level visual marker |
+| Empty state icons | 32–40px | Centered empty state illustration |
+
+### 9.2 Preferred Icon Assignments
+
+| Action / Concept | Icon |
+|:-----------------|:-----|
+| Search / Query | `Search` |
+| Add / Create | `Plus` |
+| Remove / Delete | `X` or `Trash2` |
+| Download / Export | `Download` |
+| Copy to clipboard | `Copy` |
+| Verification / Compliance | `ShieldCheck` |
+| Warning / Amendment | `AlertTriangle` |
+| Loading / Processing | `Loader2` with `.spinner` class |
+| Standard / Certificate | `Award` |
+| Audit / Lock | `Lock` |
+| Graph / Network | `Network` |
+| Upload / Ingest | `Upload` |
+| Clock / History | `Clock` |
+| Settings | `Settings` |
+
+---
+
+## 10. Loading and Empty States
+
+### 10.1 Loading Spinner
+
+```tsx
+import { Loader2 } from 'lucide-react';
+
+<Loader2 size={16} className="spinner" />
+```
+
+```css
+.spinner {
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+```
+
+### 10.2 Empty State Structure
+
+```tsx
+<div style={{
+  padding: '40px 24px',
+  textAlign: 'center',
+  background: 'var(--surface-secondary)',
+  borderRadius: 'var(--radius-sm)',
+  border: '1px dashed var(--hairline)',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '8px',
+}}>
+  <Search size={36} color="var(--ink-faint)" />
+  <h3 style={{ fontFamily: 'var(--font-ui)', fontSize: '15px', fontWeight: 600, color: 'var(--ink)', margin: 0 }}>
+    No Standards Found
+  </h3>
+  <p style={{ fontFamily: 'var(--font-prose)', fontSize: '13px', color: 'var(--ink-secondary)', maxWidth: '420px', margin: 0 }}>
+    Enter a material name or IS number above to search across 22,011 Indian Standards.
+  </p>
+</div>
+```
+
+---
+
+## 11. Status Color Semantic Mapping
+
+These color assignments are consistent across all features and must not be repurposed:
+
+| Status | Background Token | Text / Border Token | Use Case |
+|:-------|:-----------------|:--------------------|:---------|
+| Active / Compliant | `--emerald-bg` | `--emerald-text` / `--emerald-border` | Active IS standard, QCO compliant |
+| Warning / Amendment | `--amber-bg` | `--amber-warn` / `--amber-border` | Mandatory amendment, under revision |
+| Withdrawn / Error | `--error-bg` | `--error-red` / `--error-border` | Withdrawn standard, non-compliant |
+| QCO Mandatory | `--gold-bg` | `--gold-text` / `--gold-border` | Mandatory ISI mark required |
+| Alternative | `--superposition-bg` | `--superposition-violet` / `--superposition-border` | Alternative candidate standard |
+| Primary Selection | `rgba(54,69,47,0.06)` | `--collapse-cobalt` | Primary recommendation highlight |
+
+---
+
+## 12. Sidebar Navigation Specification
+
+The sidebar is defined in `application/frontend/src/components/Sidebar.tsx`.
+
+- **Width:** 220px (collapsed to icon-only at 56px on mobile breakpoint)
+- **Background:** `var(--void)` (#232B20 — Deep Botanical Charcoal)
+- **Nav Item Font:** `var(--font-ui)`, 13px, weight 500
+- **Nav Item Text Color:** `rgba(255,255,255,0.7)` (inactive), `#FFFFFF` (active)
+- **Active Nav Item Background:** `rgba(255,255,255,0.1)`
+- **Active Nav Item Left Border:** 3px solid `var(--gold-antique)`
+- **Nav Item Padding:** 10px 14px
+- **Nav Item Icon:** Lucide icon, 16px, positioned before label text with 10px gap
+- **Section Separator:** `var(--font-data)`, 9px uppercase, `rgba(255,255,255,0.35)`, with 12px top margin
+
+**No emoji characters in sidebar navigation labels.**
+
+---
+
+## 13. Modal and Drawer Specification
+
+### 13.1 Modal Overlay
+
+```css
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(28, 36, 25, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+```
+
+### 13.2 Modal Container
+
+```css
+.modal-container {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-modal);
+  max-width: 640px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+```
+
+### 13.3 Modal Header Structure
+
+```tsx
+<div style={{ padding: '20px 24px', borderBottom: '1px solid var(--hairline)', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+  <div>
+    <div className="section-label">CONTEXT LABEL</div>
+    <h2 style={{ fontFamily: 'var(--font-ui)', fontSize: '18px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>
+      Modal Title
+    </h2>
+  </div>
+  <button type="button" className="btn-ghost" style={{ padding: '4px' }} id="close-modal-btn" aria-label="Close">
+    <X size={16} />
+  </button>
+</div>
+```
+
+---
+
+## 14. Accessibility Requirements
+
+- All interactive elements must have a unique `id` attribute.
+- All icon-only buttons must have an `aria-label` attribute.
+- All form inputs must have an associated `<label>` element with a `htmlFor` attribute.
+- Focus styles must be visible and use `outline: 2px solid var(--focus-blue)` with `outline-offset: 2px`.
+- Never remove `:focus-visible` styles.
+- Color alone must never be the sole indicator of status — always pair color with text or an icon.
+
+---
+
+## 15. Theme System
+
+The platform supports two themes, toggled via the `data-theme` attribute on `<html>`:
+
+| Theme | Attribute | Description |
+|:------|:----------|:------------|
+| ManakAI Sovereign (default) | none / `data-theme="sovereign"` | Warm parchment, deep olive, antique gold |
+| Zoom Enterprise | `data-theme="zoom"` | Clean arctic blue-white, corporate navy |
+
+All component styles use CSS token variables only, so themes apply automatically without component changes. The theme toggle is implemented in `application/frontend/src/components/ThemeSwitcher.tsx`.
+
+---
+
+## 16. Prohibited Patterns
+
+The following patterns are explicitly prohibited across all component files:
+
+1. **Hardcoded hex colors** in component files (use CSS variable tokens)
+2. **Emoji characters** in UI labels, headings, buttons, badges, or navigation items
+3. **Inline `style={{ color: 'red' }}`** or similar direct color values — use token variables
+4. **Multiple `<h1>` elements** on a single page
+5. **`console.log` statements** committed to production components
+6. **Hardcoded pixel values for spacing** that do not follow the 4px grid system
+7. **`!important` in CSS** except in reset/normalize rules
+8. **Non-Lucide icons** — do not import icons from any other icon library
+
+---
+
+*This document is the authoritative source for all design decisions in ManakAI.*
+*For questions about specific component implementations, refer to the component source files in*
+*`application/frontend/src/components/` and `application/frontend/src/features/`.*
