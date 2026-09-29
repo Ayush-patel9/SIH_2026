@@ -648,11 +648,9 @@ class LLMGateway:
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
         fallback_models = [
             primary_model,
-            "gemini-2.5-flash",
-            "gemini-2.5-pro",
+            "gemini-3.8-flash",
             "gemini-flash-latest",
-            "gemini-1.5-flash",
-            "gemini-1.5-pro",
+            "gemini-3.1-pro-preview",
         ]
         candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
         
@@ -708,11 +706,9 @@ class LLMGateway:
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
         fallback_models = [
             primary_model,
-            "gemini-2.5-flash",
-            "gemini-2.5-pro",
+            "gemini-3.8-flash",
             "gemini-flash-latest",
-            "gemini-1.5-flash",
-            "gemini-1.5-pro",
+            "gemini-3.1-pro-preview",
         ]
         candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
         
