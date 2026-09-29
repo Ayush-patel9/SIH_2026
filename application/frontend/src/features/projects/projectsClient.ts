@@ -2,8 +2,8 @@
  * projectsClient.ts
  * REST Client for Neon PostgreSQL Projects, Tenders & Ingestion Endpoints.
  */
-
-const API_BASE_URL = 'http://127.0.0.1:8000/api/v1';
+import { API_BASE } from '../../api/standardsClient';
+const API_BASE_URL = `${API_BASE}/api/v1`;
 
 export interface BackendProject {
   id: string;

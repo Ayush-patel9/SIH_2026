@@ -14,7 +14,9 @@ const USE_MOCK_EXPLICIT =
     : false;
 
 export const API_BASE =
-  (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_BASE) ||
+  (typeof import.meta !== 'undefined' &&
+    import.meta.env &&
+    (import.meta.env.VITE_API_BASE || import.meta.env.VITE_API_URL)) ||
   'http://localhost:8000';
 
 export const WS_BASE =
