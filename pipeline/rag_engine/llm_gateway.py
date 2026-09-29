@@ -141,18 +141,18 @@ class LLMGateway:
     """
     Unified LLM Gateway:
     Orchestrates AI Call #1 (fast/small query normalizer) and AI Call #2 (grounded synthesis reasoner)
-    with strict JSON validation, key rotation, and fallback resilience.
+    with strict JSON validation, multi-key rotation, automatic 429/quota failover, and fallback resilience.
+    Supports 1 to 10+ comma-separated Gemini API keys in GEMINI_API_KEYS or GEMINI_API_KEY.
     """
     def __init__(self):
-        raw_keys = os.getenv("GEMINI_API_KEYS", os.getenv("GEMINI_API_KEY", ""))
-        self.keys = [k.strip() for k in raw_keys.split(",") if k.strip()]
-        self._key_cycle = itertools.cycle(self.keys) if self.keys else None
-        
+        self.keys: List[str] = []
+        self._key_cooldowns: Dict[str, float] = {}
+        self._current_key_idx = 0
+        self.reload_keys()
+
         self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", "gemini-3.6-flash")
         self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", "gemini-3.6-flash")
         self.request_timeout = float(os.getenv("GEMINI_TIMEOUT_SECONDS", "180.0"))
-        self._current_key_idx = 0
-        self._key_cooldowns: Dict[str, float] = {}
         
         self._has_genai = False
         try:
@@ -167,14 +167,49 @@ class LLMGateway:
         else:
             logger.info("LLMGateway initialized in local/offline fallback mode (no API keys provided).")
 
+    @staticmethod
+    def _parse_keys(raw: str) -> List[str]:
+        """Parses comma, semicolon, or newline separated API keys, trimming quotes and whitespace."""
+        if not raw:
+            return []
+        tokens = re.split(r"[,;\n\r]+", raw)
+        parsed = []
+        for t in tokens:
+            cleaned = t.strip().strip("\"'").strip()
+            if cleaned and cleaned not in parsed:
+                parsed.append(cleaned)
+        return parsed
+
+    @staticmethod
+    def _mask_key(key: str) -> str:
+        """Returns safe masked key representation for logging (e.g. 'AQ.Ab8...VoL9g')."""
+        if not key:
+            return "empty"
+        if len(key) <= 10:
+            return key[:3] + "..."
+        return f"{key[:6]}...{key[-4:]}"
+
+    def reload_keys(self, raw_keys: Optional[str] = None):
+        """Reloads API keys from argument, GEMINI_API_KEYS, or GEMINI_API_KEY environment variable."""
+        if raw_keys is None:
+            raw_keys = os.getenv("GEMINI_API_KEYS", os.getenv("GEMINI_API_KEY", ""))
+        self.keys = self._parse_keys(raw_keys)
+        self._key_cycle = itertools.cycle(self.keys) if self.keys else None
+        if self._current_key_idx >= len(self.keys):
+            self._current_key_idx = 0
+
     def is_available(self) -> bool:
+        if not self.keys:
+            self.reload_keys()
         return bool(self._has_genai and self.keys)
 
     def _get_ordered_keys(self) -> List[str]:
         """
         Returns keys in round-robin order, prioritizing keys that are NOT currently
-        under an active 429 / ResourceExhausted cooldown.
+        under an active 429 / ResourceExhausted / quota cooldown.
         """
+        if not self.keys:
+            self.reload_keys()
         if not self.keys:
             return []
         n = len(self.keys)
@@ -185,19 +220,52 @@ class LLMGateway:
         return ready + cooling
 
     def _mark_key_success(self, key: str):
-        """Advances round-robin pointer and clears cooldown for this key."""
+        """Advances round-robin pointer and clears cooldown for this key upon successful generation."""
         if key in self._key_cooldowns:
             del self._key_cooldowns[key]
         if key in self.keys:
             self._current_key_idx = (self.keys.index(key) + 1) % len(self.keys)
 
+    def _is_rate_limit_or_quota_error(self, error: Exception) -> bool:
+        """Determines if the exception is caused by rate limiting, quota exhaustion, or temporary concurrency."""
+        err_msg = str(error).lower()
+        err_type = type(error).__name__.lower()
+        patterns = [
+            "429", "resourceexhausted", "resource_exhausted", "quota", "quotaexceeded",
+            "quota_exceeded", "rate limit", "ratelimit", "rate_limit", "too many requests",
+            "limit exceeded", "exhausted", "per-minute", "per-day", "rpm", "rpd", "tpm",
+            "503", "unavailable", "service unavailable", "overloaded"
+        ]
+        return any(p in err_msg or p in err_type for p in patterns)
+
+    def _is_invalid_key_error(self, error: Exception) -> bool:
+        """Determines if the exception is due to an invalid or unauthorized API key."""
+        err_msg = str(error).lower()
+        return "api_key_invalid" in err_msg or "permission_denied" in err_msg or "invalid api key" in err_msg
+
     def _mark_key_error(self, key: str, error: Exception):
-        """Marks a key for temporary cooldown if it hit a 429 quota or rate limit."""
-        err_msg = str(error)
-        err_type = type(error).__name__
-        if "429" in err_msg or "ResourceExhausted" in err_type or "quota" in err_msg.lower():
-            self._key_cooldowns[key] = time.time() + 60.0
-            logger.warning(f"API key {key[:8]}... put on 60s cooldown due to quota limit: {error}")
+        """Marks a key for temporary cooldown if it hit a 429 quota, rate limit, or invalid state."""
+        now = time.time()
+        masked = self._mask_key(key)
+        
+        if self._is_invalid_key_error(error):
+            self._key_cooldowns[key] = now + 3600.0  # 1 hour cooldown for invalid keys
+            logger.error(f"❌ Gemini API key [{masked}] is INVALID or PERMISSION DENIED. Cooled for 1hr: {error}")
+        elif self._is_rate_limit_or_quota_error(error):
+            self._key_cooldowns[key] = now + 60.0    # 60s cooldown for rate limits
+            next_keys = [k for k in self.keys if k != key and self._key_cooldowns.get(k, 0) <= now]
+            next_str = self._mask_key(next_keys[0]) if next_keys else "none immediately ready"
+            logger.warning(
+                f"🔄 Rate limit / quota exceeded on Gemini key [{masked}]. "
+                f"Setting 60s cooldown. Auto-switching to next key [{next_str}] in pool ({len(self.keys)} total keys)..."
+            )
+        else:
+            # Short cooldown for transient errors (e.g. socket/network drop on that connection)
+            self._key_cooldowns[key] = now + 15.0
+            logger.warning(f"⚠️ API call error on Gemini key [{masked}]: {error}")
+
+        if key in self.keys:
+            self._current_key_idx = (self.keys.index(key) + 1) % len(self.keys)
 
     def get_next_key(self) -> Optional[str]:
         keys = self._get_ordered_keys()
@@ -557,15 +625,22 @@ class LLMGateway:
             raise RuntimeError("LLM Gateway is in offline mode.")
 
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
-        fallback_models = [primary_model, "gemini-3.7-flash", "gemini-flash-latest", "gemini-3.5-flash", "gemini-pro-latest", "gemini-3.6-flash", "gemini-3.8-flash"]
+        fallback_models = [
+            primary_model,
+            "gemini-3.8-flash",
+            "gemini-3.5-flash-lite",
+            "gemini-3.5-flash",
+            "gemini-3.7-flash",
+            "gemini-3.1-pro-preview",
+            "gemini-flash-latest",
+            "gemini-pro-latest"
+        ]
         candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
         
         last_error = None
 
         for model_name in candidate_models:
             now = time.time()
-            if self.keys and all(self._key_cooldowns.get(k, 0) > now for k in self.keys):
-                break
             ordered_keys = self._get_ordered_keys()
             for key in ordered_keys:
                 if self._key_cooldowns.get(key, 0) > now and any(self._key_cooldowns.get(k, 0) <= now for k in self.keys):
@@ -599,10 +674,9 @@ class LLMGateway:
                 except Exception as e:
                     last_error = e
                     self._mark_key_error(key, e)
-                    logger.warning(f"LLM call on {model_name} (key {key[:8]}...) encountered issue: {e}")
                     continue
 
-        raise RuntimeError(f"All LLM keys and models exhausted. Last error: {last_error}")
+        raise RuntimeError(f"All {len(self.keys)} Gemini keys and models exhausted. Last error: {last_error}")
 
     def generate_from_pdf(self, pdf_bytes: bytes, prompt: str, schema: Optional[Type[T]] = None, model_type: str = "flash") -> Dict[str, Any]:
         """
@@ -613,7 +687,16 @@ class LLMGateway:
             raise RuntimeError("LLM Gateway is in offline mode.")
 
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
-        fallback_models = [primary_model, "gemini-3.7-flash", "gemini-flash-latest", "gemini-3.5-flash", "gemini-pro-latest", "gemini-3.6-flash", "gemini-3.8-flash"]
+        fallback_models = [
+            primary_model,
+            "gemini-3.8-flash",
+            "gemini-3.5-flash-lite",
+            "gemini-3.5-flash",
+            "gemini-3.7-flash",
+            "gemini-3.1-pro-preview",
+            "gemini-flash-latest",
+            "gemini-pro-latest"
+        ]
         candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
         
         last_error = None
@@ -621,8 +704,6 @@ class LLMGateway:
 
         for model_name in candidate_models:
             now = time.time()
-            if self.keys and all(self._key_cooldowns.get(k, 0) > now for k in self.keys):
-                break
             ordered_keys = self._get_ordered_keys()
             for key in ordered_keys:
                 if self._key_cooldowns.get(key, 0) > now and any(self._key_cooldowns.get(k, 0) <= now for k in self.keys):
@@ -659,10 +740,66 @@ class LLMGateway:
                 except Exception as e:
                     last_error = e
                     self._mark_key_error(key, e)
-                    logger.warning(f"LLM PDF generation on {model_name} (key {key[:8]}...) encountered issue: {e}")
                     continue
 
-        raise RuntimeError(f"All LLM keys and models exhausted for PDF generation. Last error: {last_error}")
+        raise RuntimeError(f"All {len(self.keys)} Gemini keys and models exhausted for PDF generation. Last error: {last_error}")
+
+    def generate_text(
+        self,
+        prompt: str,
+        system_instruction: Optional[str] = None,
+        model_type: str = "flash",
+        timeout: Optional[float] = None
+    ) -> str:
+        """
+        Generates standard formatted text across the multi-key pool with automatic 429 failover.
+        """
+        if not self.is_available():
+            raise RuntimeError("LLM Gateway is in offline mode.")
+
+        primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
+        fallback_models = [
+            primary_model,
+            "gemini-3.8-flash",
+            "gemini-3.5-flash-lite",
+            "gemini-3.5-flash",
+            "gemini-3.7-flash",
+            "gemini-3.1-pro-preview",
+            "gemini-flash-latest",
+            "gemini-pro-latest"
+        ]
+        candidate_models = list(dict.fromkeys([m for m in fallback_models if m]))
+        
+        last_error = None
+        req_timeout = timeout or self.request_timeout
+
+        for model_name in candidate_models:
+            now = time.time()
+            ordered_keys = self._get_ordered_keys()
+            for key in ordered_keys:
+                if self._key_cooldowns.get(key, 0) > now and any(self._key_cooldowns.get(k, 0) <= now for k in self.keys):
+                    continue
+                try:
+                    self.genai.configure(api_key=key)
+                    model = self.genai.GenerativeModel(model_name)
+                    
+                    full_prompt = f"{system_instruction}\n\n{prompt}" if system_instruction else prompt
+                    
+                    response = model.generate_content(
+                        full_prompt,
+                        request_options={"timeout": req_timeout, "retry": None}
+                    )
+                    
+                    if response and response.text and response.text.strip():
+                        self._mark_key_success(key)
+                        return response.text.strip()
+
+                except Exception as e:
+                    last_error = e
+                    self._mark_key_error(key, e)
+                    continue
+
+        raise RuntimeError(f"All {len(self.keys)} Gemini keys and models exhausted for text generation. Last error: {last_error}")
 
 
 # Master singleton instance

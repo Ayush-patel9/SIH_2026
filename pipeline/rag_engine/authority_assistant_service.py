@@ -67,21 +67,33 @@ class AuthorityAssistantService:
     def resolve_standard(self, query: str, context: Optional[Dict[str, Any]] = None) -> Optional[Dict[str, Any]]:
         """
         Resolves the target Indian Standard using query regex, active context, or keyword search.
+        Searches both local authority catalog and master 22,011 Tri-Retrieval standards catalog.
         """
-        # 1. Regex check for explicit standard or @IS mention in query (e.g. '@IS 7098', 'IS 201', 'IS:2062', 'IS-456')
-        m = re.search(r"(?:@|\b)IS\s*[:\-]?\s*(\d+)\b", query, re.IGNORECASE)
+        # 1. Regex check for explicit standard or @IS mention in query (e.g. '@IS 7098', '@IS 73', 'IS 201', 'IS:2062', 'IS-456')
+        m = re.search(r"(?:@|\b)IS\s*[:\-]?\s*(\d+[A-Za-z0-9/()\-]*)\b", query, re.IGNORECASE)
         if m:
-            is_num_query = f"IS {m.group(1)}".upper()
+            raw_num = m.group(1).strip()
+            is_num_query = f"IS {raw_num}".upper()
+            
+            # Check local index
             found = self.standards_by_num.get(is_num_query) or self.standards_by_num.get(is_num_query.replace(" ", ""))
             if found:
                 return found
+                
+            # Check master tri_retrieval catalog (22,011 standards)
+            try:
+                from pipeline.rag_engine.pipeline_core import graph_rag_pipeline
+                found_master = graph_rag_pipeline.tri_retrieval.standards_by_num.get(is_num_query) or graph_rag_pipeline.tri_retrieval.standards_by_num.get(is_num_query.replace(" ", ""))
+                if found_master:
+                    return found_master
+            except Exception:
+                pass
 
         # 2. Check active standard context from frontend
         if context and context.get("is_number"):
             ctx_num = context.get("is_number", "").strip().upper()
             found = self.standards_by_num.get(ctx_num) or self.standards_by_num.get(ctx_num.replace(" ", ""))
             if found:
-                # Merge any live overrides from context
                 merged = dict(found)
                 merged.update({k: v for k, v in context.items() if v is not None})
                 return merged
@@ -89,7 +101,6 @@ class AuthorityAssistantService:
 
         # 3. Keyword search in titles
         q_low = query.lower()
-        # Filter out common stop words
         tokens = [w for w in re.findall(r"\w+", q_low) if len(w) > 3 and w not in ["what", "tell", "about", "standard", "standards", "indian", "spec", "specification", "order", "rules"]]
         if tokens:
             best_match = None
@@ -108,10 +119,9 @@ class AuthorityAssistantService:
     def generate_response(self, request: AuthorityChatRequest) -> Dict[str, Any]:
         """
         Generates an authoritative, legally defensible, and technically comprehensive response.
-        Uses live Gemini LLM when available, and falls back to a deep grounded domain synthesis engine.
+        Uses fast JSON structured decoding via Gemini Flash with instant multi-key failover.
         """
-        from pipeline.rag_engine.llm_gateway import LLMGateway
-        llm_gateway = LLMGateway()
+        from pipeline.rag_engine.llm_gateway import llm_gateway
 
         user_q = request.query.strip()
         matched_std = self.resolve_standard(user_q, request.standard_context)
@@ -140,7 +150,7 @@ class AuthorityAssistantService:
                 for m in request.conversation_history[-4:]
             ])
 
-        # Attempt Live Gemini LLM Generation
+        # Attempt Fast Live Gemini LLM Generation (matching Tender Intelligence speed & richness)
         if llm_gateway.is_available():
             system_prompt = f"""You are the official Bureau of Indian Standards (BIS) Technical & Gazette Authority AI Assistant (ManakAI).
 You assist procurement officers, vigilance authorities, engineers, and bidders in interpreting Indian Standards, mandatory QCO Gazette orders, laboratory testing parameters, and CVC defense protocols.
@@ -158,37 +168,25 @@ Conversation History:
 User Question: {user_q}
 
 INSTRUCTIONS:
-1. Provide a comprehensive, direct, and technically rigorous response.
+1. Provide a direct, technically authoritative, and rapid response.
 2. Structure your reply with Markdown: use **bold** for key standard clauses, acts, and parameters; bullet points for limits; blockquotes for citation-ready tender clauses.
 3. Cite statutory provisions (e.g. Section 16 of BIS Act 2016, GFR 2017 Rule 144(i), CVC Guidelines) where applicable.
 4. Detail testing protocols (e.g., chemical composition, physical strength, tolerance thresholds, NABL test certificate mandates).
-5. Never return generic placeholders or ungrounded responses.
-"""
+5. Never return generic placeholders or ungrounded responses."""
+
             try:
-                candidate_models = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-3.5-flash-lite", "gemini-3.7-flash"]
-                ordered_keys = llm_gateway._get_ordered_keys()
-                
-                for key in ordered_keys:
-                    for model_name in candidate_models:
-                        try:
-                            llm_gateway.genai.configure(api_key=key)
-                            model = llm_gateway.genai.GenerativeModel(model_name)
-                            resp = model.generate_content(
-                                system_prompt,
-                                request_options={"timeout": 12, "retry": None}
-                            )
-                            if resp and resp.text and len(resp.text.strip()) > 40:
-                                llm_gateway._mark_key_success(key)
-                                return {
-                                    "reply": resp.text.strip(),
-                                    "is_number": is_num or "Indian Standards",
-                                    "model_used": f"Gemini ({model_name}) / ManakAI Authority Engine"
-                                }
-                        except Exception as inner_e:
-                            logger.debug(f"Authority assistant try model {model_name} failed: {inner_e}")
-                            continue
+                res = llm_gateway._raw_generate_json(
+                    f"{system_prompt}\n\nOutput strict JSON: {{\"reply\": \"Your markdown response here\"}}",
+                    model_type="flash"
+                )
+                if res and "reply" in res and len(str(res["reply"]).strip()) > 20:
+                    return {
+                        "reply": str(res["reply"]).strip(),
+                        "is_number": is_num or "Indian Standards",
+                        "model_used": "Gemini Flash / ManakAI Authority Engine"
+                    }
             except Exception as e:
-                logger.warning(f"Authority assistant live LLM generation failed: {e}")
+                logger.warning(f"Authority assistant live LLM generation failed, using grounded fallback: {e}")
 
         # Grounded Fallback Domain Knowledge Engine
         reply = self._build_grounded_fallback_reply(

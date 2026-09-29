@@ -27,6 +27,8 @@ def get_health():
             "qco_mappings_count": len(graph_rag_pipeline.tri_retrieval.qco_matrix),
             "crs_products_count": len(graph_rag_pipeline.tri_retrieval.crs_products),
             "llm_gateway_online": llm_gateway.is_available(),
-            "llm_key_pool_size": len(llm_gateway.keys)
+            "llm_key_pool_size": len(llm_gateway.keys),
+            "llm_keys_ready": len([k for k in llm_gateway.keys if llm_gateway._key_cooldowns.get(k, 0) <= datetime.now().timestamp()]),
+            "llm_key_rotation_enabled": len(llm_gateway.keys) > 1
         }
     }
