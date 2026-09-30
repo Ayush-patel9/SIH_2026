@@ -131,7 +131,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
   // Collapsible Tool Panels & Split-Screen
   const [isPdfCollapsed, setIsPdfCollapsed] = useState<boolean>(true);
   const [isChatCollapsed, setIsChatCollapsed] = useState<boolean>(true);
-  const [leftWidth, setLeftWidth] = useState<number>(55); // percentage width of left window
+  const [leftWidth, setLeftWidth] = useState<number>(47); // percentage width of left window (giving PDF 53%)
   const [isResizing, setIsResizing] = useState<boolean>(false);
 
   // Document Viewer highlighting & page jump
@@ -249,11 +249,15 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!isResizing) return;
-      const containerWidth = window.innerWidth - 48; // Account for 24px left/right padding
-      const newLeftWidth = (e.clientX / containerWidth) * 100;
-      // Limit between 30% and 75%
-      if (newLeftWidth >= 30 && newLeftWidth <= 75) {
-        setLeftWidth(newLeftWidth);
+      const grid = document.getElementById('tender-split-grid');
+      if (grid) {
+        const rect = grid.getBoundingClientRect();
+        const relativeX = e.clientX - rect.left;
+        const newLeftWidth = (relativeX / rect.width) * 100;
+        // Limit between 25% and 75%
+        if (newLeftWidth >= 25 && newLeftWidth <= 75) {
+          setLeftWidth(newLeftWidth);
+        }
       }
     };
 
@@ -457,8 +461,8 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
   const leftPanelHeight = !isEitherToolOpen
     ? 'auto'
     : isBothToolsOpen
-      ? 'calc(580px + 580px + 16px)'
-      : '580px';
+      ? 'calc(640px + 640px + 16px)'
+      : '640px';
 
   const DASHBOARD_TABS = [
     { id: 'overview', label: 'Executive Overview', icon: BookOpen, count: null },
@@ -858,11 +862,12 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
            ======================================================== */}
         {pipelinePhase === 'STAGE2_SELECTION' && (
           <div
+            id="tender-split-grid"
             style={{
               display: 'grid',
-              gap: '16px',
+              gap: '14px',
               gridTemplateColumns: !isEitherToolOpen ? '1fr' : `${leftWidth}% 6px 1fr`,
-              padding: '24px',
+              padding: '16px 20px',
               alignItems: 'start',
             }}
           >
@@ -932,7 +937,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   <div
                     id="tender-pdf-viewer-container"
                     style={{
-                      height: '580px',
+                      height: '640px',
                       borderRadius: '10px',
                       overflow: 'hidden',
                       border: '1px solid var(--hairline)',
@@ -955,7 +960,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   <div
                     id="tender-chat-container"
                     style={{
-                      height: '580px',
+                      height: '640px',
                       borderRadius: '10px',
                       overflow: 'hidden',
                       boxShadow: 'var(--shadow-card)',
@@ -1023,11 +1028,12 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
            ======================================================== */}
         {pipelinePhase === 'DASHBOARD_COMPLETED' && (
           <div
+            id="tender-split-grid"
             style={{
               display: 'grid',
-              gap: '16px',
+              gap: '14px',
               gridTemplateColumns: !isEitherToolOpen ? '1fr' : `${leftWidth}% 6px 1fr`,
-              padding: '24px',
+              padding: '16px 20px',
               alignItems: 'start',
             }}
           >
@@ -1203,7 +1209,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   <div
                     id="tender-pdf-viewer-container"
                     style={{
-                      height: '580px',
+                      height: '640px',
                       borderRadius: '10px',
                       overflow: 'hidden',
                       border: '1px solid var(--hairline)',
@@ -1227,7 +1233,7 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   <div
                     id="tender-chat-container"
                     style={{
-                      height: '580px',
+                      height: '640px',
                       borderRadius: '10px',
                       overflow: 'hidden',
                       boxShadow: 'var(--shadow-card)',

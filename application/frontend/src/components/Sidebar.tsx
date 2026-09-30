@@ -65,7 +65,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           key: 'projects',
           label: role === 'VENDOR' ? 'Tender Marketplace' : 'Projects & Tenders',
           icon: FolderKanban,
-          badge: 'MANAGED',
           description: role === 'VENDOR' ? 'Explore active tenders & verify standards' : 'Procurement projects, tender ingestion & 3-stage intelligence',
         },
       ],
@@ -83,7 +82,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           key: 'graph3d',
           label: 'Normative Graph Mesh',
           icon: Share2,
-          badge: '3D',
           description: '22,011 Standards Interactive Knowledge Mesh',
         },
         {
@@ -107,7 +105,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           key: 'cagAudit',
           label: 'CAG Vigilance Simulator',
           icon: FileBarChart2,
-          badge: 'SIMULATOR',
           description: 'Financial Disallowance Stress-Tester',
         },
         {
@@ -125,7 +122,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           key: 'gazetteRadar',
           label: 'Gazette Radar Watchtower',
           icon: Radio,
-          badge: 'LIVE',
           description: 'Autonomous E-Gazette QCO Scraper',
         },
         {
@@ -142,9 +138,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
     <aside
       className={`sidebar-nav ${collapsed ? 'collapsed' : ''}`}
       style={{
-        width: collapsed ? '68px' : '272px',
-        minWidth: collapsed ? '68px' : '272px',
-        maxWidth: collapsed ? '68px' : '272px',
+        width: collapsed ? '60px' : '216px',
+        minWidth: collapsed ? '60px' : '216px',
+        maxWidth: collapsed ? '60px' : '216px',
         boxSizing: 'border-box',
         backgroundColor: 'var(--canvas-secondary)',
         borderRight: '1px solid var(--hairline)',
@@ -163,12 +159,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div>
         <div
           style={{
-            padding: collapsed ? '16px 8px' : '18px 20px',
+            padding: collapsed ? '12px 6px' : '14px 14px',
             borderBottom: '1px solid var(--hairline)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: collapsed ? 'center' : 'space-between',
-            gap: '12px',
+            gap: '10px',
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -515,20 +511,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   Gazette Stream
                 </span>
               </div>
-              <span
-                style={{
-                  fontFamily: 'var(--font-data)',
-                  fontSize: '9.5px',
-                  color: 'var(--emerald-text)',
-                  fontWeight: 700,
-                  background: 'var(--emerald-bg)',
-                  padding: '1px 5px',
-                  borderRadius: '4px',
-                  border: '1px solid var(--emerald-border)',
-                }}
-              >
-                LIVE
-              </span>
             </div>
 
             <div

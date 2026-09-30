@@ -54,10 +54,13 @@ const textLayerStyles = `
 mark.pdf-highlight {
   background-color: rgba(253, 224, 71, 0.45) !important;
   color: transparent !important;
-  padding: 2px 1px !important;
-  border-radius: 3px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline !important;
+  line-height: inherit !important;
+  border-radius: 2px !important;
   border-bottom: 2px solid #eab308 !important;
-  box-shadow: 0 0 8px rgba(234, 179, 8, 0.5) !important;
+  box-shadow: 0 0 6px rgba(234, 179, 8, 0.4) !important;
 }
 `;
 
@@ -309,110 +312,139 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          padding: '10px 16px',
+          padding: '8px 14px',
           borderBottom: '1px solid rgba(255,255,255,0.08)',
           backgroundColor: '#0f172a',
-          gap: '12px',
+          gap: '10px',
+          flexWrap: 'nowrap',
+          userSelect: 'none',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
+        {/* Left: Close, Title, Status */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0, flexShrink: 1 }}>
           {onClose && (
             <button
               onClick={onClose}
               style={{
-                background: 'transparent',
-                border: 'none',
+                background: 'rgba(255,255,255,0.05)',
+                border: '1px solid rgba(255,255,255,0.08)',
                 color: '#94a3b8',
                 cursor: 'pointer',
                 padding: '4px',
                 borderRadius: '6px',
                 display: 'flex',
                 alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+                transition: 'all 0.15s ease',
               }}
               title="Close Viewer"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = '#ffffff';
+                e.currentTarget.style.backgroundColor = 'rgba(239, 68, 68, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = '#94a3b8';
+                e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)';
+              }}
             >
-              <X size={16} />
+              <X size={14} />
             </button>
           )}
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <FileText size={16} color="#38bdf8" />
-            <span style={{ fontSize: '13px', fontWeight: 700, letterSpacing: '0.02em', color: '#e2e8f0' }}>
-              Tender Document Viewer
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', minWidth: 0, flexShrink: 1 }}>
+            <FileText size={15} color="#38bdf8" style={{ flexShrink: 0 }} />
+            <span
+              style={{
+                fontSize: '12.5px',
+                fontWeight: 700,
+                letterSpacing: '-0.01em',
+                color: '#f1f5f9',
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+              }}
+            >
+              Tender Document
             </span>
           </div>
 
           {pdfUrl && (
             <span
               style={{
-                fontSize: '11px',
-                padding: '2px 8px',
+                fontSize: '10px',
+                padding: '1.5px 7px',
                 borderRadius: '999px',
-                backgroundColor: 'rgba(56, 189, 248, 0.15)',
+                backgroundColor: 'rgba(56, 189, 248, 0.12)',
                 color: '#38bdf8',
                 fontWeight: 600,
-                border: '1px solid rgba(56, 189, 248, 0.3)',
-              }}
-            >
-              Cloudinary Synced
-            </span>
-          )}
-
-          {highlightStatus === 'found' && (
-            <span
-              style={{
+                border: '1px solid rgba(56, 189, 248, 0.25)',
+                whiteSpace: 'nowrap',
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '5px',
-                fontSize: '11px',
-                padding: '2px 8px',
-                borderRadius: '999px',
-                backgroundColor: 'rgba(234, 179, 8, 0.15)',
-                color: '#facc15',
-                fontWeight: 600,
-                border: '1px solid rgba(234, 179, 8, 0.4)',
+                gap: '4px',
+                flexShrink: 0,
               }}
+              title="Synchronized via Cloudinary PDF pipeline"
             >
-              <Sparkles size={11} /> Verbatim Quote Highlighted
+              <span
+                style={{
+                  width: '5px',
+                  height: '5px',
+                  borderRadius: '50%',
+                  backgroundColor: '#38bdf8',
+                  boxShadow: '0 0 5px #38bdf8',
+                }}
+              />
+              Cloud Synced
             </span>
-          )}
-          {highlightStatus === 'searching' && (
-            <span style={{ fontSize: '11px', color: '#94a3b8' }}>Locating clause...</span>
           )}
         </div>
 
-        {/* Controls: Zoom & Maximize */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        {/* Right: Direct Link, Zoom, Maximize */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
           {pdfUrl && (
             <a
               href={pdfUrl}
               target="_blank"
               rel="noreferrer"
               style={{
-                display: 'flex',
+                display: 'inline-flex',
                 alignItems: 'center',
                 gap: '4px',
                 fontSize: '11px',
-                color: '#94a3b8',
+                color: '#cbd5e1',
                 textDecoration: 'none',
                 padding: '4px 8px',
                 borderRadius: '6px',
                 border: '1px solid rgba(255,255,255,0.08)',
+                backgroundColor: 'rgba(255,255,255,0.04)',
+                whiteSpace: 'nowrap',
+                transition: 'all 0.15s ease',
               }}
-              title="Open raw PDF in new tab"
+              title="Open raw PDF in new browser tab"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = '#ffffff';
+                e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.08)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = '#cbd5e1';
+                e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.04)';
+              }}
             >
-              <ExternalLink size={12} /> Direct Link
+              <ExternalLink size={12} />
+              <span>Direct Link</span>
             </a>
           )}
 
           <div
             style={{
-              display: 'flex',
+              display: 'inline-flex',
               alignItems: 'center',
               backgroundColor: 'rgba(255,255,255,0.04)',
-              borderRadius: '8px',
+              borderRadius: '6px',
               border: '1px solid rgba(255,255,255,0.08)',
-              padding: '2px 4px',
+              padding: '1px 3px',
             }}
           >
             <button
@@ -423,13 +455,25 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
                 border: 'none',
                 color: scale <= 0.6 ? '#475569' : '#cbd5e1',
                 cursor: scale <= 0.6 ? 'not-allowed' : 'pointer',
-                padding: '4px',
+                padding: '3px 5px',
+                display: 'flex',
+                alignItems: 'center',
               }}
               title="Zoom Out"
             >
-              <ZoomOut size={14} />
+              <ZoomOut size={13} />
             </button>
-            <span style={{ fontSize: '11px', minWidth: '40px', textAlign: 'center', color: '#94a3b8' }}>
+            <span
+              style={{
+                fontSize: '10.5px',
+                fontFamily: 'var(--font-data, monospace)',
+                color: '#cbd5e1',
+                minWidth: '36px',
+                textAlign: 'center',
+                fontWeight: 600,
+                padding: '0 2px',
+              }}
+            >
               {Math.round(scale * 100)}%
             </span>
             <button
@@ -440,32 +484,100 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
                 border: 'none',
                 color: scale >= 2.0 ? '#475569' : '#cbd5e1',
                 cursor: scale >= 2.0 ? 'not-allowed' : 'pointer',
-                padding: '4px',
+                padding: '3px 5px',
+                display: 'flex',
+                alignItems: 'center',
               }}
               title="Zoom In"
             >
-              <ZoomIn size={14} />
+              <ZoomIn size={13} />
             </button>
           </div>
 
           <button
             onClick={() => setIsMaximized((m) => !m)}
             style={{
-              background: 'rgba(255,255,255,0.04)',
-              border: '1px solid rgba(255,255,255,0.08)',
-              color: '#cbd5e1',
-              borderRadius: '8px',
-              padding: '6px 8px',
+              background: isMaximized ? 'rgba(56, 189, 248, 0.15)' : 'rgba(255,255,255,0.04)',
+              border: '1px solid',
+              borderColor: isMaximized ? 'rgba(56, 189, 248, 0.3)' : 'rgba(255,255,255,0.08)',
+              color: isMaximized ? '#38bdf8' : '#cbd5e1',
+              borderRadius: '6px',
+              padding: '5px',
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
+              transition: 'all 0.15s ease',
             }}
             title={isMaximized ? 'Exit Fullscreen' : 'Fullscreen'}
           >
-            {isMaximized ? <Minimize2 size={14} /> : <Maximize2 size={14} />}
+            {isMaximized ? <Minimize2 size={13} /> : <Maximize2 size={13} />}
           </button>
         </div>
       </div>
+
+      {/* Dedicated Highlight Status Strip — Prevents any header crowding */}
+      {highlightStatus === 'found' && (
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '5px 14px',
+            backgroundColor: 'rgba(234, 179, 8, 0.12)',
+            borderBottom: '1px solid rgba(234, 179, 8, 0.3)',
+            color: '#facc15',
+            fontSize: '11px',
+            fontWeight: 600,
+            gap: '8px',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', minWidth: 0 }}>
+            <Sparkles size={12} style={{ flexShrink: 0 }} />
+            <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+              Verbatim Quote Highlighted · Page {currentPage}
+            </span>
+          </div>
+          <button
+            type="button"
+            onClick={() => {
+              const firstMark = document.querySelector('mark.pdf-highlight') || textHighlightRef.current;
+              firstMark?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }}
+            style={{
+              background: 'rgba(234, 179, 8, 0.25)',
+              border: '1px solid rgba(234, 179, 8, 0.45)',
+              borderRadius: '4px',
+              color: '#fef08a',
+              fontSize: '10px',
+              padding: '2px 8px',
+              cursor: 'pointer',
+              fontWeight: 700,
+              whiteSpace: 'nowrap',
+              flexShrink: 0,
+            }}
+          >
+            Focus Quote ↓
+          </button>
+        </div>
+      )}
+
+      {highlightStatus === 'searching' && (
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            padding: '5px 14px',
+            backgroundColor: 'rgba(56, 189, 248, 0.08)',
+            borderBottom: '1px solid rgba(56, 189, 248, 0.2)',
+            fontSize: '11px',
+            color: '#38bdf8',
+          }}
+        >
+          <Loader2 size={12} className="animate-spin" />
+          <span>Locating clause quotation on page {currentPage}...</span>
+        </div>
+      )}
 
       {/* Main Document Body */}
       <div
