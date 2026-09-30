@@ -138,16 +138,16 @@ export const Sidebar: React.FC<SidebarProps> = ({
     <aside
       className={`sidebar-nav ${collapsed ? 'collapsed' : ''}`}
       style={{
-        width: collapsed ? '60px' : '216px',
-        minWidth: collapsed ? '60px' : '216px',
-        maxWidth: collapsed ? '60px' : '216px',
+        width: collapsed ? '64px' : '248px',
+        minWidth: collapsed ? '64px' : '248px',
+        maxWidth: collapsed ? '64px' : '248px',
         boxSizing: 'border-box',
         backgroundColor: 'var(--canvas-secondary)',
         borderRight: '1px solid var(--hairline)',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
+        transition: 'all 0.22s cubic-bezier(0.16, 1, 0.3, 1)',
         zIndex: 50,
         height: '100vh',
         position: 'sticky',
@@ -159,7 +159,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div>
         <div
           style={{
-            padding: collapsed ? '12px 6px' : '14px 14px',
+            padding: collapsed ? '14px 6px' : '15px 16px',
             borderBottom: '1px solid var(--hairline)',
             display: 'flex',
             alignItems: 'center',
@@ -167,12 +167,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
             gap: '10px',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '11px' }}>
             <div
               style={{
                 width: '36px',
                 height: '36px',
-                borderRadius: '8px',
+                borderRadius: '9px',
                 background: 'linear-gradient(135deg, var(--olive-primary) 0%, var(--olive-dark) 100%)',
                 color: '#FAF8F2',
                 display: 'flex',
@@ -181,10 +181,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 fontFamily: 'var(--font-data)',
                 fontWeight: 800,
                 fontSize: '13px',
-                boxShadow: '0 2px 6px rgba(0, 29, 57, 0.25)',
+                letterSpacing: '0.04em',
+                boxShadow: '0 3px 10px rgba(0, 0, 0, 0.16)',
                 border: '1px solid var(--gold-antique)',
                 flexShrink: 0,
+                transition: 'transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
+                cursor: 'pointer',
               }}
+              onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.06)')}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
               title="Bureau of Indian Standards — Government of India"
             >
               BIS
@@ -194,7 +199,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 <div
                   style={{
                     fontFamily: 'var(--font-ui)',
-                    fontSize: '15px',
+                    fontSize: '15.5px',
                     fontWeight: 800,
                     color: 'var(--ink)',
                     letterSpacing: '-0.02em',
@@ -209,7 +214,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     fontSize: '9.5px',
                     color: 'var(--ink-muted)',
                     fontWeight: 600,
-                    letterSpacing: '0.04em',
+                    letterSpacing: '0.06em',
                     marginTop: '2px',
                     textTransform: 'uppercase',
                   }}
@@ -228,8 +233,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 background: 'var(--surface)',
                 border: '1px solid var(--hairline)',
                 borderRadius: '6px',
-                width: '24px',
-                height: '24px',
+                width: '26px',
+                height: '26px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -237,15 +242,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 color: 'var(--ink-muted)',
                 fontSize: '11px',
                 transition: 'all 0.15s ease',
+                boxShadow: 'var(--shadow-xs)',
               }}
               title="Collapse sidebar"
               onMouseEnter={(e) => {
                 e.currentTarget.style.borderColor = 'var(--olive-primary)';
                 e.currentTarget.style.color = 'var(--ink)';
+                e.currentTarget.style.transform = 'scale(1.05)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'var(--hairline)';
                 e.currentTarget.style.color = 'var(--ink-muted)';
+                e.currentTarget.style.transform = 'scale(1)';
               }}
             >
               <ChevronLeft size={14} />
@@ -253,59 +261,70 @@ export const Sidebar: React.FC<SidebarProps> = ({
           )}
         </div>
 
-        {/* Navigation Sections */}
+        {/* Workspace Identity Badge */}
         {!collapsed && session && (
           <div
             style={{
-              margin: '10px 12px 4px',
-              padding: '8px 10px',
-              borderRadius: '8px',
-              background:
-                role === 'VENDOR'
-                  ? 'rgba(245, 158, 11, 0.08)'
-                  : 'rgba(10, 65, 116, 0.08)',
-              border: `1px solid ${
-                role === 'VENDOR'
-                  ? 'rgba(245, 158, 11, 0.25)'
-                  : 'rgba(10, 65, 116, 0.25)'
-              }`,
+              margin: '12px 14px 6px 14px',
+              padding: '10px 12px',
+              borderRadius: '10px',
+              background: 'var(--surface)',
+              border: '1px solid var(--hairline)',
+              borderLeft: `3.5px solid ${role === 'VENDOR' ? 'var(--amber-warn)' : 'var(--olive-primary)'}`,
+              boxShadow: 'var(--shadow-xs)',
               display: 'flex',
               alignItems: 'center',
-              gap: '8px',
+              gap: '10px',
+              transition: 'all 0.2s ease',
             }}
           >
-            <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              {role === 'VENDOR' ? <Factory size={16} color="#B45309" /> : <Building2 size={16} color="var(--olive-primary)" />}
-            </span>
+            <div
+              style={{
+                width: '30px',
+                height: '30px',
+                borderRadius: '8px',
+                background: role === 'VENDOR' ? 'var(--amber-bg)' : 'var(--olive-leaf)',
+                border: `1px solid ${role === 'VENDOR' ? 'var(--amber-border)' : 'var(--hairline)'}`,
+                color: role === 'VENDOR' ? 'var(--amber-warn)' : 'var(--olive-primary)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontFamily: 'var(--font-data)',
+                fontWeight: 800,
+                fontSize: '11px',
+                flexShrink: 0,
+              }}
+            >
+              {session.name ? session.name.slice(0, 2).toUpperCase() : (role === 'VENDOR' ? 'VN' : 'AP')}
+            </div>
             <div style={{ minWidth: 0, flex: 1 }}>
-              <div
-                style={{
-                  fontFamily: 'var(--font-data)',
-                  fontSize: '9.5px',
-                  fontWeight: 700,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.05em',
-                  color:
-                    role === 'VENDOR'
-                      ? '#B45309'
-                      : 'var(--olive-primary)',
-                }}
-              >
-                {role === 'VENDOR'
-                  ? 'Industrial Vendor Portal'
-                  : 'Tender Authority Workspace'}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                <span className="live-beacon active" style={{ width: '5px', height: '5px' }} />
+                <span
+                  style={{
+                    fontFamily: 'var(--font-data)',
+                    fontSize: '9.5px',
+                    fontWeight: 800,
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.06em',
+                    color: role === 'VENDOR' ? 'var(--amber-warn)' : 'var(--olive-primary)',
+                  }}
+                >
+                  {role === 'VENDOR' ? 'Vendor Portal' : 'Tender Authority'}
+                </span>
               </div>
               <div
                 style={{
-                  fontSize: '11px',
-                  fontWeight: 600,
+                  fontSize: '12px',
+                  fontWeight: 700,
                   color: 'var(--ink)',
+                  marginTop: '1px',
                   whiteSpace: 'nowrap',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
                 }}
               >
-                {session.name}
+                {session.name || 'Officer Session'}
               </div>
             </div>
           </div>
@@ -313,12 +332,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
         <div
           style={{
-            padding: collapsed ? '12px 6px' : '10px 12px',
+            padding: collapsed ? '12px 6px' : '8px 12px',
             overflowY: 'auto',
-            maxHeight: 'calc(100vh - 200px)',
+            maxHeight: 'calc(100vh - 210px)',
             display: 'flex',
             flexDirection: 'column',
-            gap: '16px',
+            gap: '12px',
           }}
         >
           {sections
@@ -329,19 +348,45 @@ export const Sidebar: React.FC<SidebarProps> = ({
             .filter((sec) => sec.items.length > 0)
             .map((sec, sIdx) => (
             <div key={sIdx}>
+              {sIdx > 0 && !collapsed && (
+                <div
+                  style={{
+                    height: '1px',
+                    margin: '10px 4px 14px 4px',
+                    background: 'linear-gradient(90deg, transparent 0%, var(--hairline) 20%, var(--hairline) 80%, transparent 100%)',
+                  }}
+                />
+              )}
               {!collapsed && (
                 <div
                   style={{
-                    fontFamily: 'var(--font-data)',
-                    fontSize: '10px',
-                    fontWeight: 700,
-                    color: 'var(--ink-muted)',
-                    letterSpacing: '0.08em',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
                     padding: '0 8px 6px',
-                    textTransform: 'uppercase',
                   }}
                 >
-                  {sec.title}
+                  <span
+                    style={{
+                      width: '4px',
+                      height: '4px',
+                      borderRadius: '50%',
+                      backgroundColor: 'var(--olive-sage)',
+                      opacity: 0.65,
+                    }}
+                  />
+                  <span
+                    style={{
+                      fontFamily: 'var(--font-data)',
+                      fontSize: '9.5px',
+                      fontWeight: 800,
+                      color: 'var(--ink-muted)',
+                      letterSpacing: '0.08em',
+                      textTransform: 'uppercase',
+                    }}
+                  >
+                    {sec.title}
+                  </span>
                 </div>
               )}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
@@ -360,36 +405,40 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         gap: '10px',
                         padding: collapsed ? '10px 0' : '8px 12px',
                         borderRadius: '8px',
-                        border: 'none',
-                        background: isActive ? 'var(--olive-leaf)' : 'transparent',
+                        border: isActive ? '1px solid var(--hairline)' : '1px solid transparent',
+                        background: isActive ? 'var(--surface)' : 'transparent',
                         color: isActive ? 'var(--ink)' : 'var(--ink-secondary)',
                         fontFamily: 'var(--font-ui)',
-                        fontSize: '13px',
-                        fontWeight: isActive ? 700 : 600,
+                        fontSize: '12.5px',
+                        fontWeight: isActive ? 700 : 500,
                         cursor: 'pointer',
-                        transition: 'all 0.15s cubic-bezier(0.16, 1, 0.3, 1)',
+                        transition: 'all 0.18s cubic-bezier(0.16, 1, 0.3, 1)',
                         width: '100%',
                         textAlign: 'left',
                         position: 'relative',
-                        boxShadow: isActive ? 'inset 0 0 0 1px var(--hairline)' : 'none',
+                        boxShadow: isActive ? 'var(--shadow-card)' : 'none',
                       }}
                       title={collapsed ? `${item.label} — ${item.description}` : item.description}
                       onMouseEnter={(e) => {
                         if (!isActive) {
                           e.currentTarget.style.backgroundColor = 'var(--surface-hover)';
                           e.currentTarget.style.color = 'var(--ink)';
+                          e.currentTarget.style.transform = 'translateX(3px)';
+                          e.currentTarget.style.boxShadow = 'var(--shadow-xs)';
                         }
                       }}
                       onMouseLeave={(e) => {
                         if (!isActive) {
                           e.currentTarget.style.backgroundColor = 'transparent';
                           e.currentTarget.style.color = 'var(--ink-secondary)';
+                          e.currentTarget.style.transform = 'translateX(0)';
+                          e.currentTarget.style.boxShadow = 'none';
                         }
                       }}
                     >
                       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
                         <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                          <Icon size={16} style={{ color: isActive ? 'var(--olive-primary)' : 'var(--ink-muted)' }} />
+                          <Icon size={16} style={{ color: isActive ? 'var(--olive-primary)' : 'var(--ink-muted)', transition: 'color 0.15s ease' }} />
                         </span>
                         {!collapsed && (
                           <span
@@ -397,6 +446,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                               whiteSpace: 'nowrap',
                               overflow: 'hidden',
                               textOverflow: 'ellipsis',
+                              letterSpacing: '-0.01em',
                             }}
                           >
                             {item.label}
@@ -404,36 +454,45 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         )}
                       </div>
 
-                      {!collapsed && item.badge !== undefined && (
-                        <span
-                          style={{
-                            fontFamily: 'var(--font-data)',
-                            fontSize: '9.5px',
-                            fontWeight: 800,
-                            padding: '2px 7px',
-                            borderRadius: '9999px',
-                            whiteSpace: 'nowrap',
-                            flexShrink: 0,
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            letterSpacing: '0.04em',
-                            background:
-                              typeof item.badge === 'number'
-                                ? 'var(--error-bg)'
-                                : 'var(--olive-tint, var(--olive-leaf))',
-                            color: typeof item.badge === 'number' ? 'var(--error-red)' : 'var(--olive-primary)',
-                            border:
-                              typeof item.badge === 'number'
-                                ? '1px solid var(--error-border)'
-                                : '1px solid var(--hairline)',
-                          }}
-                        >
-                          {item.badge}
-                        </span>
+                      {!collapsed && (
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
+                          {item.badge !== undefined && (
+                            <span
+                              style={{
+                                fontFamily: 'var(--font-data)',
+                                fontSize: '9.5px',
+                                fontWeight: 800,
+                                padding: '2px 7px',
+                                borderRadius: '9999px',
+                                whiteSpace: 'nowrap',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                letterSpacing: '0.04em',
+                                background:
+                                  typeof item.badge === 'number'
+                                    ? 'var(--error-bg)'
+                                    : 'var(--olive-tint, var(--olive-leaf))',
+                                color: typeof item.badge === 'number' ? 'var(--error-red)' : 'var(--olive-primary)',
+                                border:
+                                  typeof item.badge === 'number'
+                                    ? '1px solid var(--error-border)'
+                                    : '1px solid var(--hairline)',
+                              }}
+                            >
+                              {item.badge}
+                            </span>
+                          )}
+
+                          {isActive && (
+                            <span style={{ fontSize: '13px', color: 'var(--olive-primary)', fontWeight: 800, lineHeight: 1, opacity: 0.85 }}>
+                              ›
+                            </span>
+                          )}
+                        </div>
                       )}
 
-                      {/* Active Indicator Bar on left */}
+                      {/* Active Indicator Bar on left with subtle glow */}
                       {isActive && (
                         <div
                           style={{
@@ -444,6 +503,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             width: '3.5px',
                             borderRadius: '0 4px 4px 0',
                             backgroundColor: 'var(--olive-primary)',
+                            boxShadow: '0 0 8px var(--olive-primary)',
+                            animation: 'fadeIn 0.2s ease',
                           }}
                         />
                       )}
@@ -459,9 +520,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Bottom Footer Section */}
       <div
         style={{
-          padding: collapsed ? '12px 6px' : '14px 16px',
+          padding: collapsed ? '12px 6px' : '12px 14px',
           borderTop: '1px solid var(--hairline)',
-          backgroundColor: 'var(--surface-secondary)',
+          backgroundColor: 'var(--canvas-secondary)',
           display: 'flex',
           flexDirection: 'column',
           gap: '8px',
@@ -482,48 +543,81 @@ export const Sidebar: React.FC<SidebarProps> = ({
               cursor: 'pointer',
               color: 'var(--ink-muted)',
               fontSize: '11px',
+              transition: 'all 0.15s ease',
             }}
             title="Expand sidebar"
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = 'var(--olive-primary)';
+              e.currentTarget.style.color = 'var(--ink)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'var(--hairline)';
+              e.currentTarget.style.color = 'var(--ink-muted)';
+            }}
           >
             <ChevronRight size={14} />
           </button>
         ) : (
-          <>
+          <div
+            style={{
+              background: 'var(--surface)',
+              border: '1px solid var(--hairline)',
+              borderRadius: '8px',
+              padding: '10px 12px',
+              boxShadow: 'var(--shadow-xs)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '6px',
+              transition: 'all 0.15s ease',
+            }}
+          >
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span
-                  style={{
-                    width: '7px',
-                    height: '7px',
-                    borderRadius: '50%',
-                    backgroundColor: 'var(--emerald-pass)',
-                    boxShadow: '0 0 6px var(--emerald-pass)',
-                  }}
-                />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+                <span className="live-beacon active" />
                 <span
                   style={{
                     fontFamily: 'var(--font-data)',
                     fontSize: '11px',
                     color: 'var(--ink)',
-                    fontWeight: 600,
+                    fontWeight: 700,
                   }}
                 >
                   Gazette Stream
                 </span>
               </div>
+              <span
+                style={{
+                  fontFamily: 'var(--font-data)',
+                  fontSize: '9px',
+                  color: 'var(--emerald-text)',
+                  background: 'var(--emerald-bg)',
+                  border: '1px solid var(--emerald-border)',
+                  padding: '1px 6px',
+                  borderRadius: '10px',
+                  fontWeight: 800,
+                }}
+              >
+                LIVE
+              </span>
             </div>
 
             <div
               style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
                 fontFamily: 'var(--font-data)',
                 fontSize: '10px',
                 color: 'var(--ink-muted)',
-                lineHeight: 1.35,
+                borderTop: '1px solid var(--hairline)',
+                paddingTop: '6px',
+                marginTop: '2px',
               }}
             >
-              22,011 Standards · v1.0.0
+              <span>22,011 Standards</span>
+              <span>v1.0.0</span>
             </div>
-          </>
+          </div>
         )}
       </div>
     </aside>
