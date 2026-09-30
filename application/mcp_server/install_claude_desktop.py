@@ -55,19 +55,29 @@ def install():
             except Exception:
                 pass
 
+    # Determine target backend URL (Render or local)
+    target_url = "http://127.0.0.1:8000"
+    if len(sys.argv) > 1 and sys.argv[1].startswith("http"):
+        target_url = sys.argv[1].strip().rstrip("/")
+    elif os.environ.get("MANAKAI_RENDER_URL"):
+        target_url = os.environ.get("MANAKAI_RENDER_URL").strip().rstrip("/")
+    elif os.environ.get("MANAKAI_BASE_URL"):
+        target_url = os.environ.get("MANAKAI_BASE_URL").strip().rstrip("/")
+
     # Add or update manakai-standards
     config_data["mcpServers"]["manakai-standards"] = {
         "command": python_cmd,
         "args": [bridge_script],
         "env": {
-            "MANAKAI_BASE_URL": "http://127.0.0.1:8000"
+            "MANAKAI_BASE_URL": target_url
         }
     }
 
     with open(config_file, "w", encoding="utf-8") as f:
         json.dump(config_data, f, indent=2)
 
-    print("\n[SUCCESS] ManakAI MCP Server successfully configured in Claude Desktop!")
+    print(f"\n[SUCCESS] ManakAI MCP Server successfully configured in Claude Desktop!")
+    print(f"Target Backend: {target_url}")
     print(f"Configuration written to: {config_file}")
     print("\nRegistered Tools:")
     print("  1. manakai_search_standards")

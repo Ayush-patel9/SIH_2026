@@ -134,6 +134,26 @@ class ReasoningSynthesisOutput(BaseModel):
                     if list_field in sde and isinstance(sde[list_field], str):
                         sde[list_field] = [sde[list_field]] if sde[list_field].strip() else []
                 obj['spec_draft_export'] = sde
+            # 4. Coerce reasoning_trace item confidence if string ("High", "Medium", "Low")
+            if "reasoning_trace" in obj and isinstance(obj["reasoning_trace"], list):
+                for step in obj["reasoning_trace"]:
+                    if isinstance(step, dict) and "confidence" in step:
+                        c_val = step["confidence"]
+                        if isinstance(c_val, str):
+                            c_lower = c_val.lower()
+                            if "high" in c_lower:
+                                step["confidence"] = 0.95
+                            elif "med" in c_lower:
+                                step["confidence"] = 0.75
+                            elif "low" in c_lower:
+                                step["confidence"] = 0.50
+                            else:
+                                try:
+                                    clean_num = c_val.replace("%", "").strip()
+                                    parsed_f = float(clean_num)
+                                    step["confidence"] = parsed_f / 100.0 if parsed_f > 1.0 else parsed_f
+                                except Exception:
+                                    step["confidence"] = 0.90
         return super().model_validate(obj, **kwargs)
 
 
