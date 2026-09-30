@@ -77,19 +77,19 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                     fontSize: '18px',
                     fontWeight: 800,
                     letterSpacing: '-0.02em',
-                    color: '#1C2419',
+                    color: 'var(--ink)',
                   }}
                 >
-                  Manak<span style={{ color: '#C29D53' }}>AI</span>
+                  Manak<span style={{ color: 'var(--gold-antique)' }}>AI</span>
                 </span>
                 <span
                   style={{
                     fontSize: '10px',
                     padding: '2px 7px',
                     borderRadius: '4px',
-                    backgroundColor: '#FBF7EC',
-                    color: '#8A6922',
-                    border: '1px solid #EAD9B5',
+                    backgroundColor: 'var(--gold-bg)',
+                    color: 'var(--gold-text)',
+                    border: '1px solid var(--gold-border)',
                     fontWeight: 700,
                     letterSpacing: '0.04em',
                   }}
@@ -100,7 +100,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               <div
                 style={{
                   fontSize: '11px',
-                  color: '#6E7A68',
+                  color: 'var(--ink-muted)',
                   letterSpacing: '0.01em',
                   fontWeight: 500,
                 }}
@@ -118,30 +118,30 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               gap: '26px',
               fontSize: '13px',
               fontWeight: 600,
-              color: '#44503E',
+              color: 'var(--ink-secondary)',
             }}
           >
             <a
               href="#roles"
-              style={{ color: '#44503E', textDecoration: 'none', transition: 'color 0.15s' }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#1C2419')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#44503E')}
+              style={{ color: 'var(--ink-secondary)', textDecoration: 'none', transition: 'color 0.15s' }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--ink)')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--ink-secondary)')}
             >
               Role Workspaces
             </a>
             <a
               href="#features"
-              style={{ color: '#44503E', textDecoration: 'none', transition: 'color 0.15s' }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#1C2419')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#44503E')}
+              style={{ color: 'var(--ink-secondary)', textDecoration: 'none', transition: 'color 0.15s' }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--ink)')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--ink-secondary)')}
             >
               QCO Verification
             </a>
             <a
               href="#metrics"
-              style={{ color: '#44503E', textDecoration: 'none', transition: 'color 0.15s' }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#1C2419')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#44503E')}
+              style={{ color: 'var(--ink-secondary)', textDecoration: 'none', transition: 'color 0.15s' }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--ink)')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--ink-secondary)')}
             >
               CVC Defensibility
             </a>
@@ -355,41 +355,41 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
               gap: '16px',
               padding: '22px 24px',
-              backgroundColor: '#FFFEFB',
-              border: '1px solid #E5E0D4',
+              backgroundColor: 'var(--surface)',
+              border: '1px solid var(--hairline)',
               borderRadius: '12px',
-              boxShadow: '0 1px 3px 0 rgba(54, 69, 47, 0.04), 0 4px 16px -2px rgba(54, 69, 47, 0.03)',
+              boxShadow: 'var(--shadow-card)',
             }}
           >
             <div>
-              <div style={{ fontSize: '30px', fontWeight: 800, color: '#36452F', fontFamily: 'var(--font-data)' }}>
+              <div style={{ fontSize: '30px', fontWeight: 800, color: 'var(--olive-primary)', fontFamily: 'var(--font-data)' }}>
                 22,011
               </div>
-              <div style={{ fontSize: '12px', color: '#6E7A68', fontWeight: 600, marginTop: '3px' }}>
+              <div style={{ fontSize: '12px', color: 'var(--ink-muted)', fontWeight: 600, marginTop: '3px' }}>
                 Active Indian Standards (IS)
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '30px', fontWeight: 800, color: '#C29D53', fontFamily: 'var(--font-data)' }}>
+              <div style={{ fontSize: '30px', fontWeight: 800, color: 'var(--gold-antique)', fontFamily: 'var(--font-data)' }}>
                 92 Orders
               </div>
-              <div style={{ fontSize: '12px', color: '#6E7A68', fontWeight: 600, marginTop: '3px' }}>
+              <div style={{ fontSize: '12px', color: 'var(--ink-muted)', fontWeight: 600, marginTop: '3px' }}>
                 Mandatory QCO Enactments
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '30px', fontWeight: 800, color: '#2D6A4F', fontFamily: 'var(--font-data)' }}>
+              <div style={{ fontSize: '30px', fontWeight: 800, color: 'var(--emerald-pass)', fontFamily: 'var(--font-data)' }}>
                 ₹1,840 Cr+
               </div>
-              <div style={{ fontSize: '12px', color: '#6E7A68', fontWeight: 600, marginTop: '3px' }}>
+              <div style={{ fontSize: '12px', color: 'var(--ink-muted)', fontWeight: 600, marginTop: '3px' }}>
                 Audit Disallowances Prevented
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '30px', fontWeight: 800, color: '#1C2419', fontFamily: 'var(--font-data)' }}>
+              <div style={{ fontSize: '30px', fontWeight: 800, color: 'var(--ink)', fontFamily: 'var(--font-data)' }}>
                 100% SHA-256
               </div>
-              <div style={{ fontSize: '12px', color: '#6E7A68', fontWeight: 600, marginTop: '3px' }}>
+              <div style={{ fontSize: '12px', color: 'var(--ink-muted)', fontWeight: 600, marginTop: '3px' }}>
                 Cryptographic CVC Defensibility
               </div>
             </div>
@@ -399,10 +399,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         {/* 3 ROLE WORKSPACES SHOWCASE */}
         <section id="roles" style={{ padding: '32px 0 54px' }}>
           <div style={{ textAlign: 'center', marginBottom: '36px' }}>
-            <h2 style={{ fontSize: '28px', fontWeight: 800, letterSpacing: '-0.02em', color: '#1C2419' }}>
+            <h2 style={{ fontSize: '28px', fontWeight: 800, letterSpacing: '-0.02em', color: 'var(--ink)' }}>
               Role-Engineered Sovereign Workspaces
             </h2>
-            <p style={{ fontSize: '14.5px', color: '#6E7A68', maxWidth: '620px', margin: '6px auto 0' }}>
+            <p style={{ fontSize: '14.5px', color: 'var(--ink-muted)', maxWidth: '620px', margin: '6px auto 0' }}>
               Create an account with your official organization. Every user role unlocks dedicated statutory toolchains, isolated audit ledgers, and tailored workflows.
             </p>
           </div>
@@ -419,8 +419,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               onMouseEnter={() => setHoveredCard('officer')}
               onMouseLeave={() => setHoveredCard(null)}
               style={{
-                backgroundColor: '#FFFEFB',
-                border: `1px solid ${hoveredCard === 'officer' ? '#2D6A4F' : '#E5E0D4'}`,
+                backgroundColor: 'var(--surface)',
+                border: `1px solid ${hoveredCard === 'officer' ? 'var(--olive-primary)' : 'var(--hairline)'}`,
                 borderRadius: '12px',
                 padding: '26px',
                 display: 'flex',
@@ -430,8 +430,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 transform: hoveredCard === 'officer' ? 'translateY(-3px)' : 'none',
                 boxShadow:
                   hoveredCard === 'officer'
-                    ? '0 6px 20px -2px rgba(54, 69, 47, 0.08)'
-                    : '0 1px 3px 0 rgba(54, 69, 47, 0.04)',
+                    ? 'var(--shadow-card-hover)'
+                    : 'var(--shadow-card)',
               }}
             >
               <div>
@@ -719,7 +719,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         <footer
           style={{
             padding: '32px 0 44px',
-            borderTop: '1px solid #E5E0D4',
+            borderTop: '1px solid var(--hairline)',
             display: 'flex',
             flexDirection: 'column',
             gap: '18px',
@@ -736,12 +736,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Building2 size={16} color="var(--olive-primary)" />
-              <span style={{ fontSize: '12.5px', color: '#44503E', fontWeight: 600 }}>
+              <span style={{ fontSize: '12.5px', color: 'var(--ink-secondary)', fontWeight: 600 }}>
                 Smart India Hackathon 2026 · Bureau of Indian Standards (BIS) Problem Statement
               </span>
             </div>
 
-            <div style={{ display: 'flex', gap: '14px', fontSize: '12px', color: '#6E7A68', fontFamily: 'var(--font-data)' }}>
+            <div style={{ display: 'flex', gap: '14px', fontSize: '12px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
               <span>IS 269:2015</span>
               <span>•</span>
               <span>IS 1786:2008</span>
@@ -752,7 +752,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </div>
           </div>
 
-          <div style={{ fontSize: '11.5px', color: '#6E7A68', lineHeight: 1.6 }}>
+          <div style={{ fontSize: '11.5px', color: 'var(--ink-muted)', lineHeight: 1.6 }}>
             Disclaimer: ManakAI is built to provide normative standards intelligence, CVC legal defense records, and statutory Quality Control Order (QCO) compliance verification for government procurement officers, CAG auditors, and industrial bidders. All cryptographic audit logs are sealed using SHA-256 for RTI and vigilance compliance.
           </div>
         </footer>

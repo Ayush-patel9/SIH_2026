@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { UserRole } from '../types';
 import { register, loginWithCredentials, type UserProfile } from '../store/userStore';
 import { ThemeSwitcher } from '../components/ThemeSwitcher';
-import { Building2, Factory, ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Building2, Factory, ArrowRight, ShieldCheck, ArrowLeft, Lock, Mail, User, Briefcase, FileText } from 'lucide-react';
 
 interface LoginPageProps {
   initialRole?: UserRole;
@@ -76,57 +76,67 @@ export const LoginPage: React.FC<LoginPageProps> = ({
       style={{
         minHeight: '100vh',
         backgroundColor: 'var(--canvas)',
+        backgroundImage: 'radial-gradient(circle at 50% 10%, var(--olive-tint) 0%, var(--canvas) 65%)',
         color: 'var(--ink)',
-        fontFamily: "'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        fontFamily: 'var(--font-ui)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '32px 16px',
+        padding: '80px 16px 36px',
         position: 'relative',
         overflow: 'hidden',
+        boxSizing: 'border-box',
       }}
     >
-      {/* Back Button */}
-      <button
-        type="button"
-        onClick={onBack}
+      {/* Top Header Controls Bar */}
+      <header
         style={{
           position: 'absolute',
-          top: '24px',
-          left: '28px',
-          backgroundColor: 'var(--surface)',
-          border: '1px solid var(--hairline)',
-          color: 'var(--ink)',
-          padding: '8px 14px',
-          borderRadius: '6px',
-          fontSize: '12.5px',
-          fontWeight: 600,
-          cursor: 'pointer',
+          top: 0,
+          left: 0,
+          right: 0,
+          padding: '16px 28px',
           display: 'flex',
           alignItems: 'center',
-          gap: '6px',
-          boxShadow: 'var(--shadow-xs)',
-          transition: 'all 0.15s ease',
-          zIndex: 10,
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.backgroundColor = 'var(--surface-hover)';
-          e.currentTarget.style.borderColor = 'var(--olive-primary)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.backgroundColor = 'var(--surface)';
-          e.currentTarget.style.borderColor = 'var(--hairline)';
+          justifyContent: 'space-between',
+          zIndex: 20,
+          backdropFilter: 'blur(8px)',
         }}
       >
-        <span>←</span>
-        <span>Back to Portal Overview</span>
-      </button>
+        <button
+          type="button"
+          onClick={onBack}
+          style={{
+            backgroundColor: 'var(--surface)',
+            border: '1px solid var(--hairline)',
+            color: 'var(--ink)',
+            padding: '8px 14px',
+            borderRadius: '8px',
+            fontSize: '12.5px',
+            fontWeight: 600,
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            boxShadow: 'var(--shadow-xs)',
+            transition: 'all 0.15s ease',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = 'var(--surface-hover)';
+            e.currentTarget.style.borderColor = 'var(--olive-primary)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = 'var(--surface)';
+            e.currentTarget.style.borderColor = 'var(--hairline)';
+          }}
+        >
+          <ArrowLeft size={14} />
+          <span>Back to Portal Overview</span>
+        </button>
 
-      {/* Theme Switcher on Top Right */}
-      <div style={{ position: 'absolute', top: '24px', right: '28px', zIndex: 10 }}>
         <ThemeSwitcher />
-      </div>
+      </header>
 
       {/* Main Auth Card */}
       <div
@@ -135,35 +145,46 @@ export const LoginPage: React.FC<LoginPageProps> = ({
           maxWidth: '480px',
           backgroundColor: 'var(--surface)',
           border: '1px solid var(--hairline)',
-          borderRadius: '14px',
-          padding: '32px 30px',
-          boxShadow: 'var(--shadow-card)',
+          borderRadius: '16px',
+          padding: '36px 32px',
+          boxShadow: 'var(--shadow-modal)',
           position: 'relative',
-          zIndex: 5,
+          zIndex: 10,
+          boxSizing: 'border-box',
         }}
       >
         {/* Header Monogram & Title */}
-        <div style={{ textAlign: 'center', marginBottom: '22px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '24px' }}>
           <div
             style={{
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
-              width: '42px',
-              height: '42px',
-              borderRadius: '8px',
-              backgroundColor: '#36452F',
-              marginBottom: '10px',
-              boxShadow: '0 2px 8px rgba(54, 69, 47, 0.2)',
+              width: '46px',
+              height: '46px',
+              borderRadius: '10px',
+              backgroundColor: 'var(--olive-primary)',
+              color: '#FFFFFF',
+              marginBottom: '12px',
+              boxShadow: '0 4px 14px var(--focus-blue-glow)',
+              transition: 'background-color 0.2s ease',
             }}
           >
-            <span style={{ color: '#FFFEFB', fontWeight: 800, fontSize: '18px' }}>M</span>
+            <span style={{ fontWeight: 800, fontSize: '20px', letterSpacing: '-0.5px' }}>M</span>
           </div>
 
-          <h2 style={{ fontSize: '22px', fontWeight: 800, color: '#1C2419', margin: '0 0 6px', letterSpacing: '-0.02em' }}>
+          <h2
+            style={{
+              fontSize: '22px',
+              fontWeight: 800,
+              color: 'var(--ink)',
+              margin: '0 0 6px',
+              letterSpacing: '-0.02em',
+            }}
+          >
             {authMode === 'signin' ? 'Sign In to ManakAI' : 'Create Your ManakAI Account'}
           </h2>
-          <p style={{ fontSize: '13px', color: '#6E7A68', margin: 0 }}>
+          <p style={{ fontSize: '13px', color: 'var(--ink-muted)', margin: 0, lineHeight: 1.5 }}>
             {authMode === 'signin'
               ? 'Enter your registered credentials to access your sovereign workspace.'
               : 'Register to unlock your role-specific standards intelligence workspace.'}
@@ -175,10 +196,10 @@ export const LoginPage: React.FC<LoginPageProps> = ({
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
-            backgroundColor: '#F5F0E6',
+            backgroundColor: 'var(--surface-secondary)',
             padding: '4px',
             borderRadius: '8px',
-            border: '1px solid #E5E0D4',
+            border: '1px solid var(--hairline)',
             marginBottom: '20px',
           }}
         >
@@ -186,15 +207,15 @@ export const LoginPage: React.FC<LoginPageProps> = ({
             type="button"
             onClick={() => handleToggleMode('signin')}
             style={{
-              backgroundColor: authMode === 'signin' ? '#FFFEFB' : 'transparent',
-              color: authMode === 'signin' ? '#1C2419' : '#6E7A68',
+              backgroundColor: authMode === 'signin' ? 'var(--surface)' : 'transparent',
+              color: authMode === 'signin' ? 'var(--ink)' : 'var(--ink-muted)',
               border: 'none',
-              padding: '8px',
+              padding: '8px 12px',
               borderRadius: '6px',
               fontSize: '12.5px',
-              fontWeight: 700,
+              fontWeight: authMode === 'signin' ? 700 : 600,
               cursor: 'pointer',
-              boxShadow: authMode === 'signin' ? '0 1px 3px rgba(54, 69, 47, 0.06)' : 'none',
+              boxShadow: authMode === 'signin' ? 'var(--shadow-xs)' : 'none',
               transition: 'all 0.15s ease',
             }}
           >
@@ -204,15 +225,15 @@ export const LoginPage: React.FC<LoginPageProps> = ({
             type="button"
             onClick={() => handleToggleMode('signup')}
             style={{
-              backgroundColor: authMode === 'signup' ? '#FFFEFB' : 'transparent',
-              color: authMode === 'signup' ? '#1C2419' : '#6E7A68',
+              backgroundColor: authMode === 'signup' ? 'var(--surface)' : 'transparent',
+              color: authMode === 'signup' ? 'var(--ink)' : 'var(--ink-muted)',
               border: 'none',
-              padding: '8px',
+              padding: '8px 12px',
               borderRadius: '6px',
               fontSize: '12.5px',
-              fontWeight: 700,
+              fontWeight: authMode === 'signup' ? 700 : 600,
               cursor: 'pointer',
-              boxShadow: authMode === 'signup' ? '0 1px 3px rgba(54, 69, 47, 0.06)' : 'none',
+              boxShadow: authMode === 'signup' ? 'var(--shadow-xs)' : 'none',
               transition: 'all 0.15s ease',
             }}
           >
@@ -224,100 +245,151 @@ export const LoginPage: React.FC<LoginPageProps> = ({
         {error && (
           <div
             style={{
-              backgroundColor: '#FDF2F0',
-              border: '1px solid #F7CDC6',
-              color: '#BA3A2A',
-              padding: '9px 12px',
-              borderRadius: '6px',
+              backgroundColor: 'var(--error-bg)',
+              border: '1px solid var(--error-border)',
+              color: 'var(--error-red)',
+              padding: '10px 14px',
+              borderRadius: '8px',
               fontSize: '12.5px',
               fontWeight: 600,
               marginBottom: '16px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
             }}
           >
-            {error}
+            <span>{error}</span>
           </div>
         )}
 
         {/* FORM 1: SIGN IN */}
         {authMode === 'signin' ? (
-          <form onSubmit={handleSignIn} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          <form onSubmit={handleSignIn} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <div>
-              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: '#1C2419', marginBottom: '5px' }}>
+              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: 'var(--ink)', marginBottom: '6px' }}>
                 Email Address
               </label>
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="e.g. officer@nhai.gov.in"
-                style={{
-                  width: '100%',
-                  backgroundColor: '#FAF8F2',
-                  border: '1px solid #E5E0D4',
-                  borderRadius: '6px',
-                  padding: '9px 12px',
-                  color: '#1C2419',
-                  fontSize: '13px',
-                  outline: 'none',
-                  boxSizing: 'border-box',
-                  fontFamily: 'inherit',
-                }}
-                onFocus={(e) => (e.target.style.borderColor = '#36452F')}
-                onBlur={(e) => (e.target.style.borderColor = '#E5E0D4')}
-              />
+              <div style={{ position: 'relative' }}>
+                <Mail
+                  size={15}
+                  style={{
+                    position: 'absolute',
+                    left: '12px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    color: 'var(--ink-muted)',
+                    pointerEvents: 'none',
+                  }}
+                />
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="e.g. officer@nhai.gov.in"
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'var(--surface-secondary)',
+                    border: '1px solid var(--hairline)',
+                    borderRadius: '8px',
+                    padding: '10px 12px 10px 36px',
+                    color: 'var(--ink)',
+                    fontSize: '13.5px',
+                    outline: 'none',
+                    boxSizing: 'border-box',
+                    fontFamily: 'inherit',
+                    transition: 'border-color 0.15s ease, box-shadow 0.15s ease',
+                  }}
+                  onFocus={(e) => {
+                    e.target.style.borderColor = 'var(--olive-primary)';
+                    e.target.style.boxShadow = '0 0 0 3px var(--focus-blue-glow)';
+                    e.target.style.backgroundColor = 'var(--surface)';
+                  }}
+                  onBlur={(e) => {
+                    e.target.style.borderColor = 'var(--hairline)';
+                    e.target.style.boxShadow = 'none';
+                    e.target.style.backgroundColor = 'var(--surface-secondary)';
+                  }}
+                />
+              </div>
             </div>
 
             <div>
-              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: '#1C2419', marginBottom: '5px' }}>
+              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: 'var(--ink)', marginBottom: '6px' }}>
                 Password
               </label>
-              <input
-                type="password"
-                required
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter your password"
-                style={{
-                  width: '100%',
-                  backgroundColor: '#FAF8F2',
-                  border: '1px solid #E5E0D4',
-                  borderRadius: '6px',
-                  padding: '9px 12px',
-                  color: '#1C2419',
-                  fontSize: '13px',
-                  outline: 'none',
-                  boxSizing: 'border-box',
-                  fontFamily: 'inherit',
-                }}
-                onFocus={(e) => (e.target.style.borderColor = '#36452F')}
-                onBlur={(e) => (e.target.style.borderColor = '#E5E0D4')}
-              />
+              <div style={{ position: 'relative' }}>
+                <Lock
+                  size={15}
+                  style={{
+                    position: 'absolute',
+                    left: '12px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    color: 'var(--ink-muted)',
+                    pointerEvents: 'none',
+                  }}
+                />
+                <input
+                  type="password"
+                  required
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Enter your password"
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'var(--surface-secondary)',
+                    border: '1px solid var(--hairline)',
+                    borderRadius: '8px',
+                    padding: '10px 12px 10px 36px',
+                    color: 'var(--ink)',
+                    fontSize: '13.5px',
+                    outline: 'none',
+                    boxSizing: 'border-box',
+                    fontFamily: 'inherit',
+                    transition: 'border-color 0.15s ease, box-shadow 0.15s ease',
+                  }}
+                  onFocus={(e) => {
+                    e.target.style.borderColor = 'var(--olive-primary)';
+                    e.target.style.boxShadow = '0 0 0 3px var(--focus-blue-glow)';
+                    e.target.style.backgroundColor = 'var(--surface)';
+                  }}
+                  onBlur={(e) => {
+                    e.target.style.borderColor = 'var(--hairline)';
+                    e.target.style.boxShadow = 'none';
+                    e.target.style.backgroundColor = 'var(--surface-secondary)';
+                  }}
+                />
+              </div>
             </div>
 
             <button
               type="submit"
               style={{
-                backgroundColor: '#36452F',
+                backgroundColor: 'var(--olive-primary)',
                 border: 'none',
                 color: '#FFFFFF',
-                padding: '11px',
-                borderRadius: '6px',
+                padding: '12px',
+                borderRadius: '8px',
                 fontSize: '13.5px',
                 fontWeight: 700,
                 cursor: 'pointer',
                 marginTop: '6px',
-                boxShadow: '0 2px 6px rgba(54, 69, 47, 0.15)',
-                transition: 'background-color 0.15s ease',
+                boxShadow: 'var(--shadow-sm)',
+                transition: 'background-color 0.15s ease, transform 0.1s ease',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#24301F')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#36452F')}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--olive-dark)')}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--olive-primary)')}
             >
-              Sign In to Platform
-              <ArrowRight size={14} style={{ marginLeft: '6px' }} />
+              <span>Sign In to Platform</span>
+              <ArrowRight size={15} />
             </button>
 
-            <div style={{ textAlign: 'center', marginTop: '10px' }}>
+            <div style={{ textAlign: 'center', marginTop: '6px' }}>
               <span style={{ fontSize: '12.5px', color: 'var(--ink-muted)' }}>Don't have an account yet? </span>
               <button
                 type="button"
@@ -325,7 +397,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                 style={{
                   background: 'none',
                   border: 'none',
-                  color: 'var(--emerald-pass)',
+                  color: 'var(--olive-primary)',
                   fontWeight: 700,
                   fontSize: '12.5px',
                   cursor: 'pointer',
@@ -407,147 +479,257 @@ export const LoginPage: React.FC<LoginPageProps> = ({
             </div>
 
             <div>
-              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: '#1C2419', marginBottom: '4px' }}>
+              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: 'var(--ink)', marginBottom: '4px' }}>
                 Full Name
               </label>
-              <input
-                type="text"
-                required
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="e.g. Ramesh Chandra"
-                style={{
-                  width: '100%',
-                  backgroundColor: '#FAF8F2',
-                  border: '1px solid #E5E0D4',
-                  borderRadius: '6px',
-                  padding: '9px 12px',
-                  color: '#1C2419',
-                  fontSize: '13px',
-                  outline: 'none',
-                  boxSizing: 'border-box',
-                  fontFamily: 'inherit',
-                }}
-                onFocus={(e) => (e.target.style.borderColor = '#36452F')}
-                onBlur={(e) => (e.target.style.borderColor = '#E5E0D4')}
-              />
+              <div style={{ position: 'relative' }}>
+                <User
+                  size={15}
+                  style={{
+                    position: 'absolute',
+                    left: '12px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    color: 'var(--ink-muted)',
+                    pointerEvents: 'none',
+                  }}
+                />
+                <input
+                  type="text"
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="e.g. Ramesh Chandra"
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'var(--surface-secondary)',
+                    border: '1px solid var(--hairline)',
+                    borderRadius: '8px',
+                    padding: '9px 12px 9px 36px',
+                    color: 'var(--ink)',
+                    fontSize: '13px',
+                    outline: 'none',
+                    boxSizing: 'border-box',
+                    fontFamily: 'inherit',
+                    transition: 'border-color 0.15s ease, box-shadow 0.15s ease',
+                  }}
+                  onFocus={(e) => {
+                    e.target.style.borderColor = 'var(--olive-primary)';
+                    e.target.style.boxShadow = '0 0 0 3px var(--focus-blue-glow)';
+                    e.target.style.backgroundColor = 'var(--surface)';
+                  }}
+                  onBlur={(e) => {
+                    e.target.style.borderColor = 'var(--hairline)';
+                    e.target.style.boxShadow = 'none';
+                    e.target.style.backgroundColor = 'var(--surface-secondary)';
+                  }}
+                />
+              </div>
             </div>
 
             <div>
-              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: '#1C2419', marginBottom: '4px' }}>
+              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: 'var(--ink)', marginBottom: '4px' }}>
                 Official Email Address
               </label>
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="e.g. ramesh@nhai.gov.in"
-                style={{
-                  width: '100%',
-                  backgroundColor: '#FAF8F2',
-                  border: '1px solid #E5E0D4',
-                  borderRadius: '6px',
-                  padding: '9px 12px',
-                  color: '#1C2419',
-                  fontSize: '13px',
-                  outline: 'none',
-                  boxSizing: 'border-box',
-                  fontFamily: 'inherit',
-                }}
-                onFocus={(e) => (e.target.style.borderColor = '#36452F')}
-                onBlur={(e) => (e.target.style.borderColor = '#E5E0D4')}
-              />
+              <div style={{ position: 'relative' }}>
+                <Mail
+                  size={15}
+                  style={{
+                    position: 'absolute',
+                    left: '12px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    color: 'var(--ink-muted)',
+                    pointerEvents: 'none',
+                  }}
+                />
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="e.g. ramesh@nhai.gov.in"
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'var(--surface-secondary)',
+                    border: '1px solid var(--hairline)',
+                    borderRadius: '8px',
+                    padding: '9px 12px 9px 36px',
+                    color: 'var(--ink)',
+                    fontSize: '13px',
+                    outline: 'none',
+                    boxSizing: 'border-box',
+                    fontFamily: 'inherit',
+                    transition: 'border-color 0.15s ease, box-shadow 0.15s ease',
+                  }}
+                  onFocus={(e) => {
+                    e.target.style.borderColor = 'var(--olive-primary)';
+                    e.target.style.boxShadow = '0 0 0 3px var(--focus-blue-glow)';
+                    e.target.style.backgroundColor = 'var(--surface)';
+                  }}
+                  onBlur={(e) => {
+                    e.target.style.borderColor = 'var(--hairline)';
+                    e.target.style.boxShadow = 'none';
+                    e.target.style.backgroundColor = 'var(--surface-secondary)';
+                  }}
+                />
+              </div>
             </div>
 
             <div>
-              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: '#1C2419', marginBottom: '4px' }}>
+              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: 'var(--ink)', marginBottom: '4px' }}>
                 Password (minimum 6 characters)
               </label>
-              <input
-                type="password"
-                required
-                minLength={6}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Create a secure password"
-                style={{
-                  width: '100%',
-                  backgroundColor: '#FAF8F2',
-                  border: '1px solid #E5E0D4',
-                  borderRadius: '6px',
-                  padding: '9px 12px',
-                  color: '#1C2419',
-                  fontSize: '13px',
-                  outline: 'none',
-                  boxSizing: 'border-box',
-                  fontFamily: 'inherit',
-                }}
-                onFocus={(e) => (e.target.style.borderColor = '#36452F')}
-                onBlur={(e) => (e.target.style.borderColor = '#E5E0D4')}
-              />
+              <div style={{ position: 'relative' }}>
+                <Lock
+                  size={15}
+                  style={{
+                    position: 'absolute',
+                    left: '12px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    color: 'var(--ink-muted)',
+                    pointerEvents: 'none',
+                  }}
+                />
+                <input
+                  type="password"
+                  required
+                  minLength={6}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Create a secure password"
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'var(--surface-secondary)',
+                    border: '1px solid var(--hairline)',
+                    borderRadius: '8px',
+                    padding: '9px 12px 9px 36px',
+                    color: 'var(--ink)',
+                    fontSize: '13px',
+                    outline: 'none',
+                    boxSizing: 'border-box',
+                    fontFamily: 'inherit',
+                    transition: 'border-color 0.15s ease, box-shadow 0.15s ease',
+                  }}
+                  onFocus={(e) => {
+                    e.target.style.borderColor = 'var(--olive-primary)';
+                    e.target.style.boxShadow = '0 0 0 3px var(--focus-blue-glow)';
+                    e.target.style.backgroundColor = 'var(--surface)';
+                  }}
+                  onBlur={(e) => {
+                    e.target.style.borderColor = 'var(--hairline)';
+                    e.target.style.boxShadow = 'none';
+                    e.target.style.backgroundColor = 'var(--surface-secondary)';
+                  }}
+                />
+              </div>
             </div>
 
             <div>
-              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: '#1C2419', marginBottom: '4px' }}>
+              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: 'var(--ink)', marginBottom: '4px' }}>
                 Organization / Department
               </label>
-              <input
-                type="text"
-                required
-                value={organization}
-                onChange={(e) => setOrganization(e.target.value)}
-                placeholder={
-                  selectedRole === 'OFFICER'
-                    ? 'e.g. CPWD / National Highways Authority of India'
-                    : 'e.g. Tata Projects / L&T Construction / Infra Tech'
-                }
-                style={{
-                  width: '100%',
-                  backgroundColor: '#FAF8F2',
-                  border: '1px solid #E5E0D4',
-                  borderRadius: '6px',
-                  padding: '9px 12px',
-                  color: '#1C2419',
-                  fontSize: '13px',
-                  outline: 'none',
-                  boxSizing: 'border-box',
-                  fontFamily: 'inherit',
-                }}
-                onFocus={(e) => (e.target.style.borderColor = '#36452F')}
-                onBlur={(e) => (e.target.style.borderColor = '#E5E0D4')}
-              />
+              <div style={{ position: 'relative' }}>
+                <Briefcase
+                  size={15}
+                  style={{
+                    position: 'absolute',
+                    left: '12px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    color: 'var(--ink-muted)',
+                    pointerEvents: 'none',
+                  }}
+                />
+                <input
+                  type="text"
+                  required
+                  value={organization}
+                  onChange={(e) => setOrganization(e.target.value)}
+                  placeholder={
+                    selectedRole === 'OFFICER'
+                      ? 'e.g. CPWD / National Highways Authority of India'
+                      : 'e.g. Tata Projects / L&T Construction / Infra Tech'
+                  }
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'var(--surface-secondary)',
+                    border: '1px solid var(--hairline)',
+                    borderRadius: '8px',
+                    padding: '9px 12px 9px 36px',
+                    color: 'var(--ink)',
+                    fontSize: '13px',
+                    outline: 'none',
+                    boxSizing: 'border-box',
+                    fontFamily: 'inherit',
+                    transition: 'border-color 0.15s ease, box-shadow 0.15s ease',
+                  }}
+                  onFocus={(e) => {
+                    e.target.style.borderColor = 'var(--olive-primary)';
+                    e.target.style.boxShadow = '0 0 0 3px var(--focus-blue-glow)';
+                    e.target.style.backgroundColor = 'var(--surface)';
+                  }}
+                  onBlur={(e) => {
+                    e.target.style.borderColor = 'var(--hairline)';
+                    e.target.style.boxShadow = 'none';
+                    e.target.style.backgroundColor = 'var(--surface-secondary)';
+                  }}
+                />
+              </div>
             </div>
 
             {/* Dynamic Role Detail Field */}
             <div>
-              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: '#1C2419', marginBottom: '4px' }}>
+              <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: 'var(--ink)', marginBottom: '4px' }}>
                 {selectedRole === 'OFFICER' ? 'Ministry / Division / Audit Directorate' : 'GSTIN or Udyam Registration'}
               </label>
-              <input
-                type="text"
-                value={roleDetail}
-                onChange={(e) => setRoleDetail(e.target.value)}
-                placeholder={
-                  selectedRole === 'OFFICER'
-                    ? 'e.g. Ministry of Road Transport & Highways / Vigilance Division'
-                    : 'e.g. 07AAACT2727Q1ZW'
-                }
-                style={{
-                  width: '100%',
-                  backgroundColor: '#FAF8F2',
-                  border: '1px solid #E5E0D4',
-                  borderRadius: '6px',
-                  padding: '9px 12px',
-                  color: '#1C2419',
-                  fontSize: '13px',
-                  outline: 'none',
-                  boxSizing: 'border-box',
-                  fontFamily: 'inherit',
-                }}
-                onFocus={(e) => (e.target.style.borderColor = '#36452F')}
-                onBlur={(e) => (e.target.style.borderColor = '#E5E0D4')}
-              />
+              <div style={{ position: 'relative' }}>
+                <FileText
+                  size={15}
+                  style={{
+                    position: 'absolute',
+                    left: '12px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    color: 'var(--ink-muted)',
+                    pointerEvents: 'none',
+                  }}
+                />
+                <input
+                  type="text"
+                  value={roleDetail}
+                  onChange={(e) => setRoleDetail(e.target.value)}
+                  placeholder={
+                    selectedRole === 'OFFICER'
+                      ? 'e.g. Ministry of Road Transport & Highways / Vigilance Division'
+                      : 'e.g. 07AAACT2727Q1ZW'
+                  }
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'var(--surface-secondary)',
+                    border: '1px solid var(--hairline)',
+                    borderRadius: '8px',
+                    padding: '9px 12px 9px 36px',
+                    color: 'var(--ink)',
+                    fontSize: '13px',
+                    outline: 'none',
+                    boxSizing: 'border-box',
+                    fontFamily: 'inherit',
+                    transition: 'border-color 0.15s ease, box-shadow 0.15s ease',
+                  }}
+                  onFocus={(e) => {
+                    e.target.style.borderColor = 'var(--olive-primary)';
+                    e.target.style.boxShadow = '0 0 0 3px var(--focus-blue-glow)';
+                    e.target.style.backgroundColor = 'var(--surface)';
+                  }}
+                  onBlur={(e) => {
+                    e.target.style.borderColor = 'var(--hairline)';
+                    e.target.style.boxShadow = 'none';
+                    e.target.style.backgroundColor = 'var(--surface-secondary)';
+                  }}
+                />
+              </div>
             </div>
 
             <button
@@ -559,22 +741,24 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                     : 'var(--gold-text)',
                 border: 'none',
                 color: '#FFFFFF',
-                padding: '11px',
-                borderRadius: '6px',
+                padding: '12px',
+                borderRadius: '8px',
                 fontSize: '13.5px',
                 fontWeight: 700,
                 cursor: 'pointer',
-                marginTop: '4px',
-                boxShadow: 'var(--shadow-card)',
+                marginTop: '6px',
+                boxShadow: 'var(--shadow-sm)',
                 transition: 'all 0.15s ease',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '6px',
+                gap: '8px',
               }}
+              onMouseEnter={(e) => (e.currentTarget.style.filter = 'brightness(0.92)')}
+              onMouseLeave={(e) => (e.currentTarget.style.filter = 'none')}
             >
-              <span>Create Account & Launch {selectedRole === 'OFFICER' ? 'Tender Authority Workspace' : 'Industrial Vendor Portal'}</span>
-              <ArrowRight size={14} />
+              <span>Create Account & Launch {selectedRole === 'OFFICER' ? 'Authority Workspace' : 'Vendor Portal'}</span>
+              <ArrowRight size={15} />
             </button>
 
             <div style={{ textAlign: 'center', marginTop: '6px' }}>
@@ -585,7 +769,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
                 style={{
                   background: 'none',
                   border: 'none',
-                  color: 'var(--emerald-pass)',
+                  color: 'var(--olive-primary)',
                   fontWeight: 700,
                   fontSize: '12.5px',
                   cursor: 'pointer',
@@ -598,6 +782,23 @@ export const LoginPage: React.FC<LoginPageProps> = ({
             </div>
           </form>
         )}
+      </div>
+
+      {/* Security & Cryptographic Trust Footnote */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '7px',
+          color: 'var(--ink-muted)',
+          fontSize: '11.5px',
+          marginTop: '20px',
+          fontFamily: 'var(--font-data)',
+          zIndex: 10,
+        }}
+      >
+        <ShieldCheck size={14} style={{ color: 'var(--emerald-pass)' }} />
+        <span>SHA-256 Cryptographic Audit Ledger · BIS Act 2016 & GFR Defensible</span>
       </div>
     </div>
   );

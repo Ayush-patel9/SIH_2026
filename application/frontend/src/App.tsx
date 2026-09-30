@@ -1327,7 +1327,7 @@ export default function App({ onLogout }: AppProps = {}) {
                           borderRadius: '6px',
                           fontSize: '13px',
                           fontWeight: 600,
-                          backgroundColor: '#36452F',
+                          backgroundColor: 'var(--olive-primary)',
                           color: '#FFFFFF',
                           border: 'none',
                           cursor: 'pointer',
@@ -1352,10 +1352,10 @@ export default function App({ onLogout }: AppProps = {}) {
                             className="workbench-card"
                             style={{
                               padding: '22px 26px',
-                              border: '1px solid #E5E0D4',
+                              border: '1px solid var(--hairline)',
                               borderRadius: '10px',
-                              backgroundColor: '#FFFFFF',
-                              boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                              backgroundColor: 'var(--surface)',
+                              boxShadow: 'var(--shadow-card)',
                               display: 'flex',
                               flexDirection: 'column',
                               gap: '14px',
@@ -1365,7 +1365,7 @@ export default function App({ onLogout }: AppProps = {}) {
                             {/* Header Badges */}
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
                               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                                <span className="code-monogram" style={{ fontSize: '13px', padding: '3px 10px', background: '#36452F', color: '#FFFFFF' }}>
+                                <span className="code-monogram" style={{ fontSize: '13px', padding: '3px 10px', background: 'var(--olive-primary)', color: '#FFFFFF' }}>
                                   {saved.is_number}
                                 </span>
                                 <span className="concept-status-badge active" style={{ fontSize: '10.5px' }}>
@@ -1441,9 +1441,9 @@ export default function App({ onLogout }: AppProps = {}) {
                                     borderRadius: '5px',
                                     fontSize: '11.5px',
                                     fontWeight: 500,
-                                    backgroundColor: 'var(--surface-secondary, #F5F2EB)',
-                                    color: 'var(--ink, #1F2937)',
-                                    border: '1px solid var(--hairline, #E5E0D4)',
+                                    backgroundColor: 'var(--surface-secondary)',
+                                    color: 'var(--ink)',
+                                    border: '1px solid var(--hairline)',
                                     cursor: 'pointer',
                                   }}
                                 >
@@ -1468,12 +1468,12 @@ export default function App({ onLogout }: AppProps = {}) {
                                     borderRadius: '6px',
                                     fontSize: '13px',
                                     fontWeight: 700,
-                                    backgroundColor: '#36452F',
+                                    backgroundColor: 'var(--olive-primary)',
                                     color: '#FFFFFF',
-                                    border: '1px solid #36452F',
+                                    border: '1px solid var(--olive-primary)',
                                     cursor: 'pointer',
                                     transition: 'all 0.15s ease',
-                                    boxShadow: '0 2px 6px rgba(54,69,47,0.25)',
+                                    boxShadow: 'var(--shadow-sm)',
                                   }}
                                 >
                                   <FolderOpen size={14} />
