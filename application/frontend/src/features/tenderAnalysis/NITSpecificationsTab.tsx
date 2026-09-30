@@ -103,6 +103,7 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
         <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
           <button
             type="button"
+            className="btn-lift"
             onClick={handleCopyTableCSV}
             style={{
               backgroundColor: 'var(--surface-secondary)',
@@ -116,7 +117,6 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
               display: 'flex',
               alignItems: 'center',
               gap: '5px',
-              transition: 'all 0.15s ease',
             }}
           >
             {copiedTable ? <Check size={14} color="var(--emerald-pass)" /> : <FileSpreadsheet size={14} />}
@@ -125,6 +125,7 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
 
           <button
             type="button"
+            className="btn-lift"
             onClick={handleCopyDraft}
             style={{
               backgroundColor: 'var(--surface-secondary)',
@@ -138,7 +139,6 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
               display: 'flex',
               alignItems: 'center',
               gap: '5px',
-              transition: 'all 0.15s ease',
             }}
           >
             {copiedDraft ? <Check size={14} color="var(--emerald-pass)" /> : <Copy size={14} />}
@@ -147,6 +147,7 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
 
           <button
             type="button"
+            className="btn-lift"
             onClick={handleDownloadDraft}
             style={{
               backgroundColor: 'var(--olive-primary)',
@@ -161,7 +162,6 @@ export const NITSpecificationsTab: React.FC<NITSpecificationsTabProps> = ({
               alignItems: 'center',
               gap: '5px',
               boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
-              transition: 'all 0.15s ease',
             }}
           >
             <Download size={14} />

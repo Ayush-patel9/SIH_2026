@@ -14,6 +14,9 @@ import {
   MapPin,
   ArrowRight,
   Zap,
+  Quote,
+  Layers,
+  Check,
 } from 'lucide-react';
 
 interface ProductISInventoryTabProps {
@@ -73,6 +76,10 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
     return true;
   });
 
+  const needsClarificationCount = products.filter((p) => p.clarification_needed || p.confidence_score < 0.85).length;
+  const outdatedCount = products.filter((p) => p.detected_outdated_is).length;
+  const resolvedCount = products.filter((p) => p.status === 'RESOLVED').length;
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {/* Top Filter Bar & Summary */}
@@ -84,8 +91,8 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
           flexWrap: 'wrap',
           gap: '12px',
           backgroundColor: 'var(--surface)',
-          padding: '14px 18px',
-          borderRadius: '10px',
+          padding: '12px 18px',
+          borderRadius: '12px',
           border: '1px solid var(--hairline)',
           boxShadow: 'var(--shadow-card)',
         }}
@@ -93,9 +100,10 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
         <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
           <button
             type="button"
+            className="btn-lift"
             onClick={() => setFilter('ALL')}
             style={{
-              padding: '7px 15px',
+              padding: '6px 14px',
               borderRadius: '20px',
               fontSize: '12px',
               fontWeight: filter === 'ALL' ? 700 : 600,
@@ -104,18 +112,22 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
               border: filter === 'ALL' ? '1px solid var(--olive-primary)' : '1px solid var(--hairline)',
               backgroundColor: filter === 'ALL' ? 'var(--olive-primary)' : 'var(--surface-secondary)',
               color: filter === 'ALL' ? '#FFFFFF' : 'var(--ink-secondary)',
-              transition: 'all 0.15s ease',
-              boxShadow: filter === 'ALL' ? '0 2px 6px rgba(0,0,0,0.12)' : 'none',
+              boxShadow: filter === 'ALL' ? '0 2px 8px rgba(0,0,0,0.12)' : 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
             }}
           >
-            All Products ({products.length})
+            <Layers size={13} />
+            <span>All Products ({products.length})</span>
           </button>
 
           <button
             type="button"
+            className="btn-lift"
             onClick={() => setFilter('NEEDS_CLARIFICATION')}
             style={{
-              padding: '7px 15px',
+              padding: '6px 14px',
               borderRadius: '20px',
               fontSize: '12px',
               fontWeight: filter === 'NEEDS_CLARIFICATION' ? 700 : 600,
@@ -124,22 +136,22 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
               border: filter === 'NEEDS_CLARIFICATION' ? '1px solid var(--amber-warn)' : '1px solid var(--hairline)',
               backgroundColor: filter === 'NEEDS_CLARIFICATION' ? 'var(--amber-warn)' : 'var(--surface-secondary)',
               color: filter === 'NEEDS_CLARIFICATION' ? '#FFFFFF' : 'var(--ink-secondary)',
-              transition: 'all 0.15s ease',
-              boxShadow: filter === 'NEEDS_CLARIFICATION' ? '0 2px 6px rgba(0,0,0,0.12)' : 'none',
+              boxShadow: filter === 'NEEDS_CLARIFICATION' ? '0 2px 8px rgba(217, 119, 6, 0.25)' : 'none',
               display: 'inline-flex',
               alignItems: 'center',
               gap: '6px',
             }}
           >
             <Zap size={13} />
-            <span>Needs Clarification ({products.filter((p) => p.clarification_needed || p.confidence_score < 0.85).length})</span>
+            <span>Needs Clarification ({needsClarificationCount})</span>
           </button>
 
           <button
             type="button"
+            className="btn-lift"
             onClick={() => setFilter('OUTDATED')}
             style={{
-              padding: '7px 15px',
+              padding: '6px 14px',
               borderRadius: '20px',
               fontSize: '12px',
               fontWeight: filter === 'OUTDATED' ? 700 : 600,
@@ -148,22 +160,22 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
               border: filter === 'OUTDATED' ? '1px solid var(--error-red)' : '1px solid var(--hairline)',
               backgroundColor: filter === 'OUTDATED' ? 'var(--error-red)' : 'var(--surface-secondary)',
               color: filter === 'OUTDATED' ? '#FFFFFF' : 'var(--ink-secondary)',
-              transition: 'all 0.15s ease',
-              boxShadow: filter === 'OUTDATED' ? '0 2px 6px rgba(0,0,0,0.12)' : 'none',
+              boxShadow: filter === 'OUTDATED' ? '0 2px 8px rgba(225, 29, 72, 0.25)' : 'none',
               display: 'inline-flex',
               alignItems: 'center',
               gap: '6px',
             }}
           >
             <AlertTriangle size={13} />
-            <span>Superseded Codes ({products.filter((p) => p.detected_outdated_is).length})</span>
+            <span>Superseded Codes ({outdatedCount})</span>
           </button>
 
           <button
             type="button"
+            className="btn-lift"
             onClick={() => setFilter('RESOLVED')}
             style={{
-              padding: '7px 15px',
+              padding: '6px 14px',
               borderRadius: '20px',
               fontSize: '12px',
               fontWeight: filter === 'RESOLVED' ? 700 : 600,
@@ -172,26 +184,25 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
               border: filter === 'RESOLVED' ? '1px solid var(--emerald-pass)' : '1px solid var(--hairline)',
               backgroundColor: filter === 'RESOLVED' ? 'var(--emerald-pass)' : 'var(--surface-secondary)',
               color: filter === 'RESOLVED' ? '#FFFFFF' : 'var(--ink-secondary)',
-              transition: 'all 0.15s ease',
-              boxShadow: filter === 'RESOLVED' ? '0 2px 6px rgba(0,0,0,0.12)' : 'none',
+              boxShadow: filter === 'RESOLVED' ? '0 2px 8px rgba(16, 185, 129, 0.25)' : 'none',
               display: 'inline-flex',
               alignItems: 'center',
               gap: '6px',
             }}
           >
             <CheckCircle2 size={13} />
-            <span>Resolved ({products.filter((p) => p.status === 'RESOLVED').length})</span>
+            <span>Resolved ({resolvedCount})</span>
           </button>
         </div>
 
         <div style={{ fontSize: '12px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)' }}>
-          Showing <strong>{filteredProducts.length}</strong> of {products.length} line items
+          Showing <strong style={{ color: 'var(--ink)' }}>{filteredProducts.length}</strong> of {products.length} line items
         </div>
       </div>
 
       {/* Product Cards List */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-        {filteredProducts.map((item) => {
+        {filteredProducts.map((item, idx) => {
           const isClarifying = clarifyingProductId === item.product_id;
           const confidencePct = Math.round(item.confidence_score * 100);
           const needsClarification = item.clarification_needed && item.clarification_question;
@@ -200,21 +211,16 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
             <div
               key={item.product_id}
               ref={(el) => { cardRefs.current[item.product_id] = el; }}
+              className="product-card-interactive"
               style={{
-                backgroundColor: 'var(--surface)',
-                borderRadius: '10px',
-                border: '1px solid var(--hairline)',
-                padding: '22px',
-                boxShadow: 'var(--shadow-card)',
-                borderLeft: `5px solid ${
+                borderLeft: `4.5px solid ${
                   item.detected_outdated_is
                     ? 'var(--error-red)'
                     : item.confidence_score >= 0.85
                     ? 'var(--emerald-pass)'
                     : 'var(--amber-warn)'
                 }`,
-                transition: 'all 0.2s ease',
-                animation: 'cardEntrance 0.3s cubic-bezier(0.16, 1, 0.3, 1) both',
+                animationDelay: `${Math.min(idx * 0.04, 0.3)}s`,
               }}
             >
               {/* Product Header Row */}
@@ -225,11 +231,11 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                   alignItems: 'flex-start',
                   flexWrap: 'wrap',
                   gap: '12px',
-                  marginBottom: '12px',
+                  marginBottom: '10px',
                 }}
               >
                 <div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px', flexWrap: 'wrap' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px', flexWrap: 'wrap' }}>
                     <span
                       style={{
                         fontSize: '11px',
@@ -248,10 +254,11 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                     {/* Clickable Page Pill to jump Document Reader */}
                     <button
                       type="button"
+                      className="btn-lift"
                       onClick={() => onPageClick(item.page_number, item.verbatim_quote)}
                       style={{
                         border: '1px solid rgba(59, 130, 246, 0.3)',
-                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        backgroundColor: 'rgba(59, 130, 246, 0.08)',
                         color: 'var(--collapse-cobalt)',
                         padding: '2px 8px',
                         borderRadius: '4px',
@@ -310,19 +317,19 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                     )}
                   </div>
 
-                  <h3 style={{ fontSize: '17px', fontWeight: 800, color: 'var(--ink)', margin: '0 0 4px 0' }}>
+                  <h3 style={{ fontSize: '17px', fontWeight: 800, color: 'var(--ink)', margin: 0, letterSpacing: '-0.01em' }}>
                     {item.product_name}
                   </h3>
                 </div>
 
                 {/* Confidence Pill & Status */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
                   <div
                     style={{
                       display: 'flex',
                       alignItems: 'center',
                       gap: '6px',
-                      padding: '5px 12px',
+                      padding: '4px 12px',
                       borderRadius: '20px',
                       backgroundColor:
                         item.confidence_score >= 0.85
@@ -341,7 +348,21 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                   >
                     <span
                       style={{
-                        fontSize: '12px',
+                        width: '7px',
+                        height: '7px',
+                        borderRadius: '50%',
+                        backgroundColor:
+                          item.confidence_score >= 0.85
+                            ? 'var(--emerald-pass)'
+                            : item.confidence_score >= 0.5
+                            ? 'var(--amber-warn)'
+                            : 'var(--error-red)',
+                        display: 'inline-block',
+                      }}
+                    />
+                    <span
+                      style={{
+                        fontSize: '11.5px',
                         fontWeight: 800,
                         color:
                           item.confidence_score >= 0.85
@@ -357,13 +378,39 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                   </div>
 
                   {item.status === 'RESOLVED' && (
-                    <span style={{ fontSize: '12px', color: 'var(--emerald-pass)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                    <span
+                      style={{
+                        fontSize: '11.5px',
+                        color: 'var(--emerald-pass)',
+                        fontWeight: 700,
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        padding: '4px 8px',
+                        borderRadius: '4px',
+                        backgroundColor: 'var(--emerald-bg)',
+                        border: '1px solid var(--emerald-border)',
+                      }}
+                    >
                       <CheckCircle2 size={13} />
                       <span>Verified</span>
                     </span>
                   )}
                   {item.status === 'OVERRIDDEN' && (
-                    <span style={{ fontSize: '12px', color: 'var(--collapse-cobalt)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                    <span
+                      style={{
+                        fontSize: '11.5px',
+                        color: 'var(--collapse-cobalt)',
+                        fontWeight: 700,
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        padding: '4px 8px',
+                        borderRadius: '4px',
+                        backgroundColor: 'rgba(59, 130, 246, 0.08)',
+                        border: '1px solid rgba(59, 130, 246, 0.25)',
+                      }}
+                    >
                       <Edit3 size={13} />
                       <span>Overridden</span>
                     </span>
@@ -371,24 +418,40 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                 </div>
               </div>
 
-              {/* Verbatim Tender Quote Card */}
-              <div
-                style={{
-                  backgroundColor: 'var(--surface-secondary)',
-                  border: '1px solid var(--hairline)',
-                  borderRadius: '6px',
-                  padding: '10px 14px',
-                  marginBottom: '14px',
-                  fontSize: '12.5px',
-                  color: 'var(--ink-secondary)',
-                  lineHeight: 1.5,
-                }}
-              >
-                <div style={{ fontSize: '10.5px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', marginBottom: '2px', fontFamily: 'var(--font-data)' }}>
-                  VERBATIM TENDER CLAUSE QUOTE:
+              {/* Verbatim Tender Quote Card with Refined Typography & Accent */}
+              <div className="quote-excerpt-box">
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    fontSize: '10.5px',
+                    fontWeight: 700,
+                    color: 'var(--ink-muted)',
+                    textTransform: 'uppercase',
+                    marginBottom: '4px',
+                    fontFamily: 'var(--font-data)',
+                    letterSpacing: '0.04em',
+                  }}
+                >
+                  <Quote size={11} style={{ opacity: 0.7 }} />
+                  <span>Verbatim Tender Clause Excerpt</span>
                 </div>
-                "{item.verbatim_quote}"
+                <div
+                  style={{
+                    fontSize: '13px',
+                    color: 'var(--ink)',
+                    lineHeight: 1.55,
+                    fontStyle: 'italic',
+                    fontFamily: 'var(--font-prose, serif)',
+                  }}
+                >
+                  "{item.verbatim_quote}"
+                </div>
               </div>
+
+              {/* Subtle Gradient Separation Line */}
+              <div className="gradient-separator" />
 
               {/* Recommended Standard vs Outdated Standard Comparison */}
               <div
@@ -403,40 +466,39 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                 {item.detected_outdated_is && (
                   <div
                     style={{
-                      padding: '12px 14px',
-                      borderRadius: '6px',
+                      padding: '14px 16px',
+                      borderRadius: '8px',
                       backgroundColor: 'var(--error-bg)',
                       border: '1px solid var(--error-border)',
+                      borderLeft: '3.5px solid var(--error-red)',
                     }}
                   >
-                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--error-red)', textTransform: 'uppercase', marginBottom: '4px' }}>
+                    <div style={{ fontSize: '11px', fontWeight: 800, color: 'var(--error-red)', textTransform: 'uppercase', marginBottom: '4px', letterSpacing: '0.04em' }}>
                       CITED OUTDATED / WITHDRAWN CODE
                     </div>
-                    <div style={{ fontSize: '15px', fontWeight: 800, color: 'var(--error-red)', textDecoration: 'line-through', fontFamily: 'var(--font-data)' }}>
+                    <div style={{ fontSize: '16px', fontWeight: 800, color: 'var(--error-red)', textDecoration: 'line-through', fontFamily: 'var(--font-data)' }}>
                       {item.detected_outdated_is}
                     </div>
-                    <div style={{ fontSize: '11.5px', color: 'var(--error-red)', marginTop: '2px' }}>
-                      Withdrawn by BIS. Must be eliminated from NIT specification.
+                    <div style={{ fontSize: '12px', color: 'var(--error-red)', marginTop: '4px', lineHeight: 1.4 }}>
+                      Withdrawn by BIS. Must be replaced with active standard to comply with CVC guidelines.
                     </div>
                   </div>
                 )}
 
                 {/* Recommended Standard Box */}
-                <div
-                  style={{
-                    padding: '12px 14px',
-                    borderRadius: '6px',
-                    backgroundColor: 'var(--emerald-bg)',
-                    border: '1px solid var(--emerald-border)',
-                  }}
-                >
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px', flexWrap: 'wrap', gap: '6px' }}>
-                    <span style={{ fontSize: '11px', fontWeight: 800, color: 'var(--emerald-pass)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                      AUTHORITATIVE INDIAN STANDARD
-                    </span>
+                <div className="standard-hero-box">
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px', flexWrap: 'wrap', gap: '6px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <ShieldCheck size={14} color="var(--emerald-pass)" />
+                      <span style={{ fontSize: '11px', fontWeight: 800, color: 'var(--emerald-pass)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                        AUTHORITATIVE INDIAN STANDARD
+                      </span>
+                    </div>
+
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <button
                         type="button"
+                        className="btn-lift"
                         onClick={() => handleToggleInspect(item.product_id)}
                         style={{
                           border: '1px solid var(--emerald-border)',
@@ -448,9 +510,8 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                           display: 'inline-flex',
                           alignItems: 'center',
                           gap: '4px',
-                          padding: '3px 8px',
-                          borderRadius: '4px',
-                          transition: 'all 0.15s ease',
+                          padding: '4px 9px',
+                          borderRadius: '5px',
                         }}
                         title="Toggle quick inline scope and technical testing methods"
                       >
@@ -460,6 +521,7 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
 
                       <button
                         type="button"
+                        className="btn-lift"
                         onClick={() => onOpenStandardDetail(item.recommended_is)}
                         style={{
                           border: 'none',
@@ -471,10 +533,9 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                           display: 'inline-flex',
                           alignItems: 'center',
                           gap: '4px',
-                          padding: '3px 9px',
-                          borderRadius: '4px',
-                          boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
-                          transition: 'all 0.15s ease',
+                          padding: '4px 10px',
+                          borderRadius: '5px',
+                          boxShadow: '0 2px 6px rgba(16, 185, 129, 0.25)',
                         }}
                         title="Inspect full standard, gazette order and test methods in drawer"
                       >
@@ -484,14 +545,14 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                     </div>
                   </div>
 
-                  <div style={{ fontSize: '16.5px', fontWeight: 800, color: 'var(--emerald-text)', fontFamily: 'var(--font-data, monospace)' }}>
+                  <div style={{ fontSize: '17px', fontWeight: 800, color: 'var(--emerald-text)', fontFamily: 'var(--font-data, monospace)', letterSpacing: '0.01em' }}>
                     {item.recommended_is}
                   </div>
                   <div style={{ fontSize: '13px', color: 'var(--ink)', marginTop: '2px', fontWeight: 700 }}>
                     {item.recommended_is_title}
                   </div>
                   {item.where_stated && (
-                    <div style={{ fontSize: '11.5px', color: 'var(--amber-warn)', marginTop: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <div style={{ fontSize: '11.5px', color: 'var(--amber-warn)', marginTop: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '5px' }}>
                       <ShieldCheck size={13} color="var(--amber-warn)" />
                       <span>{item.where_stated}</span>
                     </div>
@@ -501,9 +562,9 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                   {expandedInspect[item.product_id] && (
                     <div
                       style={{
-                        marginTop: '10px',
-                        padding: '12px',
-                        borderRadius: '6px',
+                        marginTop: '12px',
+                        padding: '14px',
+                        borderRadius: '8px',
                         backgroundColor: 'var(--surface)',
                         border: '1px solid var(--emerald-border)',
                         display: 'flex',
@@ -512,29 +573,30 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                         animation: 'fadeSlideUp 0.2s ease',
                       }}
                     >
-                      <div style={{ fontSize: '11px', fontWeight: 800, color: 'var(--emerald-pass)', textTransform: 'uppercase' }}>
+                      <div style={{ fontSize: '11px', fontWeight: 800, color: 'var(--emerald-pass)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                         TECHNICAL SPECIFICATIONS & TESTING METHODS
                       </div>
                       <div style={{ fontSize: '12.5px', color: 'var(--ink)', lineHeight: 1.5, fontWeight: 500 }}>
                         {item.what_it_is || 'Covers manufacturing tolerances, material chemistry, mechanical properties, and sampling criteria.'}
                       </div>
-                      <div style={{ fontSize: '11.5px', color: 'var(--ink-secondary)', lineHeight: 1.45, fontStyle: 'italic', background: 'var(--surface-secondary)', padding: '6px 10px', borderRadius: '4px' }}>
-                        <strong>Engineering Rationale:</strong> {item.engineering_rationale}
+                      <div style={{ fontSize: '11.5px', color: 'var(--ink-secondary)', lineHeight: 1.45, fontStyle: 'italic', background: 'var(--surface-secondary)', padding: '8px 12px', borderRadius: '6px', border: '1px solid var(--hairline)' }}>
+                        <strong style={{ color: 'var(--ink)' }}>Engineering Rationale:</strong> {item.engineering_rationale}
                       </div>
                     </div>
                   )}
 
                   {item.what_it_is && !expandedInspect[item.product_id] && (
-                    <div style={{ fontSize: '11.5px', color: 'var(--ink-secondary)', marginTop: '3px', lineHeight: 1.4 }}>
+                    <div style={{ fontSize: '11.5px', color: 'var(--ink-secondary)', marginTop: '4px', lineHeight: 1.4 }}>
                       {item.what_it_is}
                     </div>
                   )}
                   {item.official_is_link && (
-                    <div style={{ marginTop: '6px' }}>
+                    <div style={{ marginTop: '8px' }}>
                       <a
                         href={item.official_is_link}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="btn-lift"
                         style={{
                           fontSize: '11.5px',
                           color: 'var(--emerald-pass)',
@@ -543,6 +605,10 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                           display: 'inline-flex',
                           alignItems: 'center',
                           gap: '4px',
+                          padding: '2px 6px',
+                          borderRadius: '4px',
+                          backgroundColor: 'var(--surface)',
+                          border: '1px solid var(--emerald-border)',
                         }}
                       >
                         <ExternalLink size={11} />
@@ -550,7 +616,7 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                       </a>
                     </div>
                   )}
-                  <div style={{ fontSize: '11.5px', color: 'var(--ink-muted)', marginTop: '4px' }}>
+                  <div style={{ fontSize: '11.5px', color: 'var(--ink-muted)', marginTop: '6px', fontStyle: 'italic' }}>
                     {item.engineering_rationale}
                   </div>
                 </div>
@@ -559,33 +625,24 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
               {/* Other Candidate Standards Chips */}
               {item.all_candidates && item.all_candidates.length > 1 && (
                 <div style={{ marginBottom: '14px' }}>
-                  <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', marginBottom: '6px', fontFamily: 'var(--font-data)' }}>
-                    Alternative Standards Considered:
+                  <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', marginBottom: '6px', fontFamily: 'var(--font-data)', letterSpacing: '0.04em' }}>
+                    Alternative Standards Evaluated:
                   </div>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                     {item.all_candidates
                       .filter((c) => c.is_number !== item.recommended_is)
                       .slice(0, 4)
-                      .map((cand, idx) => (
+                      .map((cand, candIdx) => (
                         <button
-                          key={idx}
+                          key={candIdx}
                           type="button"
+                          className="candidate-chip-btn"
                           onClick={() => onOpenStandardDetail(cand.is_number)}
-                          style={{
-                            padding: '4px 8px',
-                            borderRadius: '4px',
-                            backgroundColor: 'var(--surface-secondary)',
-                            border: '1px solid var(--hairline)',
-                            fontSize: '11.5px',
-                            color: 'var(--ink-secondary)',
-                            cursor: 'pointer',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '4px',
-                          }}
+                          title={`Inspect ${cand.is_number} (${cand.title || ''})`}
                         >
                           <span style={{ fontWeight: 700, fontFamily: 'var(--font-data)' }}>{cand.is_number}</span>
-                          <span style={{ opacity: 0.7 }}>({Math.round(cand.confidence * 100)}%)</span>
+                          <span style={{ opacity: 0.75, fontSize: '11px' }}>({Math.round(cand.confidence * 100)}%)</span>
+                          <ExternalLink size={10} style={{ opacity: 0.6 }} />
                         </button>
                       ))}
                   </div>
@@ -598,17 +655,18 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                   style={{
                     backgroundColor: 'var(--amber-bg)',
                     border: '1px solid var(--amber-border)',
-                    borderRadius: '8px',
+                    borderRadius: '10px',
                     padding: '16px',
                     marginBottom: '16px',
+                    boxShadow: '0 2px 8px rgba(217, 119, 6, 0.08)',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--amber-warn)', fontWeight: 700, fontSize: '13px', marginBottom: '6px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--amber-warn)', fontWeight: 700, fontSize: '12.5px', marginBottom: '6px', letterSpacing: '0.04em' }}>
                     <HelpCircle size={16} />
                     <span>TECHNICAL CLARIFICATION NEEDED TO MAXIMIZE CONFIDENCE</span>
                   </div>
 
-                  <p style={{ fontSize: '13px', color: 'var(--amber-warn)', fontWeight: 600, margin: '0 0 12px 0' }}>
+                  <p style={{ fontSize: '13.5px', color: 'var(--ink)', fontWeight: 700, margin: '0 0 12px 0' }}>
                     {item.clarification_question!.question_text}
                   </p>
 
@@ -619,31 +677,21 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                       return (
                         <label
                           key={opt.option_id}
+                          className={`clarification-choice-card ${isSelected ? 'selected' : ''}`}
                           onClick={() => handleSelectOption(item.product_id, opt.option_id)}
-                          style={{
-                            display: 'flex',
-                            alignItems: 'flex-start',
-                            gap: '10px',
-                            padding: '10px 14px',
-                            borderRadius: '6px',
-                            backgroundColor: isSelected ? 'var(--surface)' : 'var(--surface-secondary)',
-                            border: `1px solid ${isSelected ? 'var(--amber-warn)' : 'var(--hairline)'}`,
-                            cursor: 'pointer',
-                            transition: 'all 0.15s ease',
-                          }}
                         >
                           <input
                             type="radio"
                             name={`clarify-${item.product_id}`}
                             checked={isSelected}
                             onChange={() => handleSelectOption(item.product_id, opt.option_id)}
-                            style={{ marginTop: '2px', accentColor: 'var(--amber-warn)' }}
+                            style={{ marginTop: '3px', accentColor: 'var(--amber-warn)', cursor: 'pointer' }}
                           />
                           <div>
                             <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--ink)' }}>
                               {opt.label}
                             </div>
-                            <div style={{ fontSize: '11.5px', color: 'var(--ink-secondary)', marginTop: '2px' }}>
+                            <div style={{ fontSize: '11.5px', color: 'var(--ink-secondary)', marginTop: '2px', lineHeight: 1.4 }}>
                               {opt.technical_implication}
                             </div>
                           </div>
@@ -655,6 +703,7 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                   <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px' }}>
                     <button
                       type="button"
+                      className="btn-lift"
                       disabled={!selectedAnswers[item.product_id] || isClarifying}
                       onClick={() =>
                         onClarifyProduct(
@@ -668,7 +717,7 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                         backgroundColor: selectedAnswers[item.product_id] && !isClarifying ? 'var(--amber-warn)' : 'var(--hairline)',
                         color: '#FFFFFF',
                         border: 'none',
-                        padding: '9px 16px',
+                        padding: '9px 18px',
                         borderRadius: '6px',
                         fontWeight: 700,
                         fontSize: '12.5px',
@@ -676,7 +725,7 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                         display: 'flex',
                         alignItems: 'center',
                         gap: '6px',
-                        transition: 'background-color 0.15s ease',
+                        boxShadow: selectedAnswers[item.product_id] && !isClarifying ? '0 2px 8px rgba(217, 119, 6, 0.25)' : 'none',
                       }}
                     >
                       <Sparkles size={14} />
@@ -711,7 +760,10 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                     cursor: 'pointer',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '4px',
+                    gap: '5px',
+                    padding: '4px 8px',
+                    borderRadius: '4px',
+                    transition: 'color 0.15s ease',
                   }}
                 >
                   <Edit3 size={13} />
@@ -722,24 +774,34 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                 <div style={{ display: 'flex', gap: '8px' }}>
                   <button
                     type="button"
+                    className="btn-lift"
                     onClick={() => onAcceptProduct(item.product_id)}
                     style={{
                       backgroundColor: item.status === 'RESOLVED' ? 'var(--emerald-pass)' : 'var(--surface-secondary)',
                       color: item.status === 'RESOLVED' ? '#FFFFFF' : 'var(--ink)',
                       border: '1px solid var(--emerald-border)',
-                      padding: '8px 16px',
+                      padding: '8px 18px',
                       borderRadius: '6px',
                       fontWeight: 700,
                       fontSize: '12.5px',
                       cursor: 'pointer',
                       display: 'flex',
                       alignItems: 'center',
-                      gap: '5px',
-                      transition: 'all 0.15s ease',
+                      gap: '6px',
+                      boxShadow: item.status === 'RESOLVED' ? '0 2px 8px rgba(16, 185, 129, 0.25)' : 'none',
                     }}
                   >
-                    <CheckCircle2 size={14} color={item.status === 'RESOLVED' ? '#FFFFFF' : 'var(--emerald-pass)'} />
-                    <span>{item.status === 'RESOLVED' ? 'Verified & Approved' : 'Accept Recommendation'}</span>
+                    {item.status === 'RESOLVED' ? (
+                      <>
+                        <Check size={14} />
+                        <span>Verified & Approved</span>
+                      </>
+                    ) : (
+                      <>
+                        <CheckCircle2 size={14} color="var(--emerald-pass)" />
+                        <span>Accept Recommendation</span>
+                      </>
+                    )}
                   </button>
                 </div>
               </div>
@@ -750,12 +812,13 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                   style={{
                     marginTop: '12px',
                     padding: '12px 14px',
-                    borderRadius: '6px',
+                    borderRadius: '8px',
                     backgroundColor: 'var(--surface-secondary)',
                     border: '1px solid var(--hairline)',
                     display: 'flex',
                     gap: '8px',
                     alignItems: 'center',
+                    animation: 'fadeSlideUp 0.2s ease',
                   }}
                 >
                   <input
@@ -767,17 +830,19 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                     placeholder="e.g. IS 10262:2019 or IS 456:2000"
                     style={{
                       flex: 1,
-                      padding: '7px 10px',
-                      borderRadius: '4px',
+                      padding: '8px 12px',
+                      borderRadius: '6px',
                       border: '1px solid var(--hairline)',
                       backgroundColor: 'var(--surface)',
                       color: 'var(--ink)',
                       fontSize: '12.5px',
                       fontFamily: 'monospace',
+                      outline: 'none',
                     }}
                   />
                   <button
                     type="button"
+                    className="btn-lift"
                     onClick={() => {
                       const val = (overrideInputs[item.product_id] || '').trim();
                       if (val) {
@@ -789,8 +854,8 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                       backgroundColor: 'var(--olive-primary)',
                       color: '#FFFFFF',
                       border: 'none',
-                      padding: '7px 14px',
-                      borderRadius: '4px',
+                      padding: '8px 16px',
+                      borderRadius: '6px',
                       fontSize: '12px',
                       fontWeight: 700,
                       cursor: 'pointer',

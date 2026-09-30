@@ -1465,6 +1465,125 @@ body {
   box-shadow: var(--shadow-sm);
 }
 
+/* --- Product & Workbench UI Enhancements --- */
+.product-card-interactive {
+  background-color: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--hairline);
+  padding: 22px;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+  position: relative;
+}
+
+.product-card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--hairline-hover);
+}
+
+.quote-excerpt-box {
+  background: var(--surface-secondary);
+  border: 1px solid var(--hairline);
+  border-left: 3.5px solid var(--olive-primary);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 14px;
+  position: relative;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-theme="zoom"] .quote-excerpt-box {
+  border-left-color: var(--saffron);
+}
+
+.quote-excerpt-box:hover {
+  background: var(--surface-secondary);
+  box-shadow: var(--shadow-xs);
+}
+
+.gradient-separator {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--hairline) 15%, var(--hairline) 85%, transparent 100%);
+  margin: 14px 0;
+}
+
+.standard-hero-box {
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--emerald-bg) 0%, var(--surface) 100%);
+  border: 1px solid var(--emerald-border);
+  border-left: 3.5px solid var(--emerald-pass);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.standard-hero-box:hover {
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.08);
+}
+
+.btn-lift {
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.18s ease;
+}
+
+.btn-lift:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.btn-lift:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.candidate-chip-btn {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: var(--surface-secondary);
+  border: 1px solid var(--hairline);
+  font-size: 11.5px;
+  color: var(--ink-secondary);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.candidate-chip-btn:hover {
+  transform: translateY(-1.5px);
+  border-color: var(--olive-primary);
+  color: var(--ink);
+  background-color: var(--surface);
+  box-shadow: var(--shadow-xs);
+}
+
+.clarification-choice-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background-color: var(--surface-secondary);
+  border: 1px solid var(--hairline);
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clarification-choice-card:hover {
+  transform: translateX(3px);
+  border-color: var(--amber-warn);
+  background-color: var(--surface);
+}
+
+.clarification-choice-card.selected {
+  background-color: var(--surface);
+  border-color: var(--amber-warn);
+  box-shadow: 0 2px 10px rgba(217, 119, 6, 0.12);
+}
+
+.pulse-badge {
+  animation: pulse 2.5s infinite;
+}
+
 /* --- Responsive Adaptations --- */
 @media (max-width: 1024px) {
   .top-navbar {

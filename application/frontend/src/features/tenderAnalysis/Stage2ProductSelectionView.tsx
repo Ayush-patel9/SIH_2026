@@ -4,15 +4,12 @@ import {
   CheckCircle2,
   AlertTriangle,
   HelpCircle,
-  Sparkles,
   ArrowRight,
   ShieldCheck,
   Edit3,
   ExternalLink,
   Layers,
-  FileText,
   Lock,
-  ChevronRight,
   ChevronDown,
   ChevronUp,
   RefreshCw,
@@ -20,6 +17,8 @@ import {
   Search,
   BookOpen,
   Scale,
+  Quote,
+  Sparkles,
 } from 'lucide-react';
 
 interface Stage2ProductSelectionViewProps {
@@ -117,9 +116,10 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
           borderRadius: '12px',
           padding: '24px 28px',
           boxShadow: 'var(--shadow-card)',
+          position: 'relative',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', flexWrap: 'wrap' }}>
           <span
             style={{
               padding: '3px 10px',
@@ -130,33 +130,61 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
               fontWeight: 700,
               fontFamily: 'var(--font-data, monospace)',
               letterSpacing: '0.05em',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
             }}
           >
-            STAGE 2 OF 3 · INTERMEDIATE SELECTION
+            <span className="live-beacon active" style={{ width: '6px', height: '6px' }} />
+            <span>STAGE 2 OF 3 · INTERMEDIATE SELECTION</span>
           </span>
-          <span style={{ fontSize: '12px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data, monospace)' }}>
+          <span style={{ fontSize: '12px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data, monospace)', letterSpacing: '0.04em' }}>
             HUMAN-IN-THE-LOOP STANDARDS VERIFICATION
           </span>
         </div>
 
-        <h2 style={{ fontFamily: 'var(--font-ui, sans-serif)', fontSize: '22px', fontWeight: 800, color: 'var(--ink)', margin: '0 0 6px 0' }}>
+        <h2 style={{ fontFamily: 'var(--font-ui, sans-serif)', fontSize: '22px', fontWeight: 800, color: 'var(--ink)', margin: '0 0 8px 0', letterSpacing: '-0.01em' }}>
           Technical Product Selection & Indian Standards Mapping
         </h2>
-        <p style={{ fontFamily: 'var(--font-prose, sans-serif)', fontSize: '14px', color: 'var(--ink-secondary)', margin: 0, lineHeight: 1.5, maxWidth: '850px' }}>
+        <p style={{ fontFamily: 'var(--font-prose, sans-serif)', fontSize: '14px', color: 'var(--ink-secondary)', margin: 0, lineHeight: 1.55, maxWidth: '850px' }}>
           ManakAI has decomposed <strong>{tenderTitle}</strong> and mapped each extracted product to active Indian Standards. 
           Please review the matched standards below, answer any technical clarification prompts, and confirm all items to generate the official clause redlines and CVC audit seal.
         </p>
 
         {/* Metric Badges */}
-        <div style={{ display: 'flex', gap: '12px', marginTop: '18px', flexWrap: 'wrap' }}>
-          <div style={{ background: 'var(--surface)', border: '1px solid var(--hairline)', borderRadius: '8px', padding: '8px 14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <div style={{ display: 'flex', gap: '12px', marginTop: '20px', flexWrap: 'wrap' }}>
+          <div
+            className="btn-lift"
+            style={{
+              background: 'var(--surface)',
+              border: '1px solid var(--hairline)',
+              borderRadius: '8px',
+              padding: '8px 14px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              boxShadow: 'var(--shadow-xs)',
+            }}
+          >
             <Layers size={16} color="var(--olive-primary)" />
             <span style={{ fontSize: '12px', fontFamily: 'var(--font-data, monospace)', color: 'var(--ink)', fontWeight: 600 }}>
               {totalCount} Total Products Extracted
             </span>
           </div>
 
-          <div style={{ background: 'var(--surface)', border: '1px solid var(--hairline)', borderRadius: '8px', padding: '8px 14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <div
+            className="btn-lift"
+            style={{
+              background: 'var(--surface)',
+              border: '1px solid var(--emerald-border)',
+              borderRadius: '8px',
+              padding: '8px 14px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              boxShadow: 'var(--shadow-xs)',
+            }}
+          >
             <CheckCircle2 size={16} color="var(--emerald-pass)" />
             <span style={{ fontSize: '12px', fontFamily: 'var(--font-data, monospace)', color: 'var(--emerald-pass)', fontWeight: 700 }}>
               {confirmedCount} / {totalCount} Items Confirmed
@@ -164,7 +192,19 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
           </div>
 
           {pendingClarifications > 0 && (
-            <div style={{ background: 'var(--amber-bg)', border: '1px solid var(--amber-border)', borderRadius: '8px', padding: '8px 14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div
+              className="btn-lift"
+              style={{
+                background: 'var(--amber-bg)',
+                border: '1px solid var(--amber-border)',
+                borderRadius: '8px',
+                padding: '8px 14px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                boxShadow: 'var(--shadow-xs)',
+              }}
+            >
               <HelpCircle size={16} color="var(--amber-warn)" />
               <span style={{ fontSize: '12px', fontFamily: 'var(--font-data, monospace)', color: 'var(--amber-warn)', fontWeight: 700 }}>
                 {pendingClarifications} Technical Clarifications Pending
@@ -185,25 +225,28 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
           return (
             <div
               key={product.product_id || idx}
+              className="product-card-interactive"
               style={{
-                backgroundColor: 'var(--surface)',
-                border: '1px solid',
+                borderLeft: `4.5px solid ${
+                  isConfirmed
+                    ? 'var(--emerald-pass)'
+                    : hasClarification
+                    ? 'var(--amber-warn)'
+                    : isOutdated
+                    ? 'var(--error-red)'
+                    : 'var(--olive-primary)'
+                }`,
                 borderColor: isConfirmed ? 'var(--emerald-border)' : hasClarification ? 'var(--amber-border)' : 'var(--hairline)',
-                borderLeft: `5px solid ${isConfirmed ? 'var(--emerald-pass)' : hasClarification ? 'var(--amber-warn)' : isOutdated ? 'var(--error-red)' : 'var(--olive-primary)'}`,
-                borderRadius: '10px',
-                padding: '22px',
-                boxShadow: 'var(--shadow-card)',
-                transition: 'all 0.2s ease',
-                animation: 'cardEntrance 0.28s cubic-bezier(0.16, 1, 0.3, 1) both',
+                animationDelay: `${Math.min(idx * 0.04, 0.3)}s`,
               }}
             >
               {/* Top Row: Clause Number, Product Name, and Status Badge */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px', marginBottom: '12px' }}>
                 <div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px', flexWrap: 'wrap' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px', flexWrap: 'wrap' }}>
                     <span
                       style={{
-                        padding: '3px 8px',
+                        padding: '2px 8px',
                         borderRadius: '4px',
                         background: 'var(--surface-secondary)',
                         fontFamily: 'var(--font-data, monospace)',
@@ -215,44 +258,43 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                     >
                       {product.clause_number || `Item ${idx + 1}`}
                     </span>
-                    <span style={{ fontSize: '16px', fontWeight: 700, color: 'var(--ink)' }}>
+                    <span style={{ fontSize: '17px', fontWeight: 800, color: 'var(--ink)', letterSpacing: '-0.01em' }}>
                       {product.product_name}
                     </span>
                     {product.page_number && onPageClick && (
                       <button
                         type="button"
+                        className="btn-lift"
                         onClick={() => onPageClick(product.page_number, product.verbatim_quote)}
                         style={{
-                          background: 'none',
-                          border: 'none',
-                          color: 'var(--ink-muted)',
-                          fontSize: '11.5px',
+                          background: 'rgba(59, 130, 246, 0.08)',
+                          border: '1px solid rgba(59, 130, 246, 0.25)',
+                          color: 'var(--collapse-cobalt)',
+                          padding: '2px 8px',
+                          borderRadius: '4px',
+                          fontSize: '11px',
+                          fontWeight: 700,
                           cursor: 'pointer',
                           display: 'inline-flex',
                           alignItems: 'center',
-                          gap: '3px',
-                          textDecoration: 'underline',
+                          gap: '4px',
                         }}
                       >
-                        Page {product.page_number}
+                        <span>Page {product.page_number}</span>
+                        <ExternalLink size={10} />
                       </button>
                     )}
                   </div>
+
                   {product.verbatim_quote && (
-                    <div
-                      style={{
-                        fontSize: '12.5px',
-                        color: 'var(--ink-secondary)',
-                        fontFamily: 'var(--font-prose, sans-serif)',
-                        fontStyle: 'italic',
-                        background: 'var(--surface-secondary)',
-                        padding: '6px 12px',
-                        borderRadius: '6px',
-                        borderLeft: '2px solid var(--hairline)',
-                        maxWidth: '800px',
-                      }}
-                    >
-                      "{product.verbatim_quote}"
+                    <div className="quote-excerpt-box" style={{ maxWidth: '850px', marginBottom: '6px' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '10.5px', fontWeight: 700, color: 'var(--ink-muted)', textTransform: 'uppercase', marginBottom: '4px', fontFamily: 'var(--font-data)' }}>
+                        <Quote size={11} style={{ opacity: 0.7 }} />
+                        <span>Tender Clause Excerpt</span>
+                      </div>
+                      <div style={{ fontSize: '12.5px', color: 'var(--ink)', fontStyle: 'italic', lineHeight: 1.5, fontFamily: 'var(--font-prose, serif)' }}>
+                        "{product.verbatim_quote}"
+                      </div>
                     </div>
                   )}
                 </div>
@@ -269,9 +311,20 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       background: product.confidence_score >= 0.85 ? 'var(--emerald-bg)' : 'var(--amber-bg)',
                       color: product.confidence_score >= 0.85 ? 'var(--emerald-pass)' : 'var(--amber-warn)',
                       border: `1px solid ${product.confidence_score >= 0.85 ? 'var(--emerald-border)' : 'var(--amber-border)'}`,
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '5px',
                     }}
                   >
-                    Match: {(product.confidence_score * 100).toFixed(0)}%
+                    <span
+                      style={{
+                        width: '6px',
+                        height: '6px',
+                        borderRadius: '50%',
+                        backgroundColor: product.confidence_score >= 0.85 ? 'var(--emerald-pass)' : 'var(--amber-warn)',
+                      }}
+                    />
+                    <span>Match: {(product.confidence_score * 100).toFixed(0)}%</span>
                   </span>
 
                   <span
@@ -296,7 +349,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                   {isConfirmed ? (
                     <span
                       style={{
-                        padding: '4px 10px',
+                        padding: '4px 12px',
                         borderRadius: '20px',
                         background: 'var(--emerald-bg)',
                         color: 'var(--emerald-pass)',
@@ -306,23 +359,25 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                         alignItems: 'center',
                         gap: '4px',
                         border: '1px solid var(--emerald-border)',
+                        boxShadow: '0 2px 6px rgba(16, 185, 129, 0.2)',
                       }}
                     >
                       <Check size={13} />
-                      Verified
+                      <span>Verified</span>
                     </span>
                   ) : (
                     <button
                       type="button"
+                      className="btn-lift"
                       onClick={() => handleToggleConfirm(product.product_id)}
                       style={{
-                        padding: '5px 12px',
+                        padding: '5px 14px',
                         borderRadius: '6px',
                         border: '1px solid var(--olive-primary)',
-                        background: 'transparent',
+                        background: 'var(--surface)',
                         color: 'var(--olive-primary)',
                         fontSize: '12px',
-                        fontWeight: 600,
+                        fontWeight: 700,
                         cursor: 'pointer',
                         fontFamily: 'var(--font-data, monospace)',
                       }}
@@ -340,45 +395,44 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                     backgroundColor: 'var(--error-bg)',
                     border: '1px solid var(--error-border)',
                     borderLeft: '4px solid var(--error-red)',
-                    borderRadius: '6px',
-                    padding: '10px 14px',
+                    borderRadius: '8px',
+                    padding: '12px 14px',
                     marginBottom: '14px',
                     fontSize: '12.5px',
                     color: 'var(--error-red)',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '8px',
+                    gap: '10px',
                   }}
                 >
-                  <AlertTriangle size={16} color="var(--error-red)" style={{ flexShrink: 0 }} />
+                  <AlertTriangle size={17} color="var(--error-red)" style={{ flexShrink: 0 }} />
                   <div>
                     <strong>WITHDRAWN / OUTDATED STANDARD CITED:</strong>{' '}
-                    <code>{product.detected_outdated_is}</code> is officially withdrawn. Superseded by active standard{' '}
+                    <code style={{ textDecoration: 'line-through', fontWeight: 800 }}>{product.detected_outdated_is}</code> is officially withdrawn. Superseded by active standard{' '}
                     <strong>{product.recommended_is}</strong>.
                   </div>
                 </div>
               )}
 
+              {/* Subtle Gradient Separation Line */}
+              <div className="gradient-separator" />
+
               {/* Recommended Standard Banner with Statutory Reference & What It Is */}
-              <div
-                style={{
-                  backgroundColor: 'var(--surface-secondary)',
-                  border: '1px solid var(--hairline)',
-                  borderRadius: '8px',
-                  padding: '16px 18px',
-                  marginBottom: '14px',
-                }}
-              >
+              <div className="standard-hero-box" style={{ marginBottom: '14px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '14px' }}>
                   <div style={{ flex: 1, minWidth: '280px' }}>
-                    <div style={{ fontSize: '11px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data, monospace)', fontWeight: 700, textTransform: 'uppercase', marginBottom: '4px' }}>
-                      RECOMMENDED ACTIVE INDIAN STANDARD
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
+                      <ShieldCheck size={13} color="var(--emerald-pass)" />
+                      <span style={{ fontSize: '11px', color: 'var(--emerald-pass)', fontFamily: 'var(--font-data, monospace)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                        RECOMMENDED ACTIVE INDIAN STANDARD
+                      </span>
                     </div>
+
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                      <span style={{ fontSize: '16px', fontWeight: 800, color: 'var(--ink)', fontFamily: 'var(--font-data, monospace)' }}>
+                      <span style={{ fontSize: '17px', fontWeight: 800, color: 'var(--emerald-text)', fontFamily: 'var(--font-data, monospace)' }}>
                         {product.recommended_is}
                       </span>
-                      <span style={{ fontSize: '13.5px', color: 'var(--olive-primary)', fontWeight: 600 }}>
+                      <span style={{ fontSize: '13.5px', color: 'var(--ink)', fontWeight: 700 }}>
                         — {product.recommended_is_title}
                       </span>
                     </div>
@@ -406,6 +460,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                         href={product.official_is_link}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="btn-lift"
                         style={{
                           padding: '6px 12px',
                           borderRadius: '6px',
@@ -428,6 +483,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
 
                     <button
                       type="button"
+                      className="btn-lift"
                       onClick={() => onOpenStandardDetail(product.recommended_is)}
                       style={{
                         padding: '6px 12px',
@@ -440,7 +496,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                         cursor: 'pointer',
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '4px',
+                        gap: '5px',
                       }}
                     >
                       <BookOpen size={12} />
@@ -449,6 +505,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
 
                     <button
                       type="button"
+                      className="btn-lift"
                       onClick={() => toggleInsights(product.product_id)}
                       style={{
                         padding: '6px 12px',
@@ -461,7 +518,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                         cursor: 'pointer',
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '4px',
+                        gap: '5px',
                       }}
                       title="Inspect all evaluated candidate standards with links & statutory citations"
                     >
@@ -485,6 +542,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                         display: 'flex',
                         alignItems: 'center',
                         gap: '4px',
+                        transition: 'all 0.15s ease',
                       }}
                     >
                       <Edit3 size={12} />
@@ -547,7 +605,8 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                             display: 'flex',
                             flexDirection: 'column',
                             gap: '8px',
-                            boxShadow: isSelected ? '0 2px 8px rgba(0,0,0,0.06)' : 'none',
+                            boxShadow: isSelected ? '0 2px 8px rgba(16, 185, 129, 0.12)' : 'none',
+                            transition: 'all 0.18s ease',
                           }}
                         >
                           {/* Row 1: Code, Title, Confidence, Status Badge */}
@@ -605,6 +664,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                                   href={cand.is_link}
                                   target="_blank"
                                   rel="noopener noreferrer"
+                                  className="btn-lift"
                                   style={{
                                     fontSize: '11.5px',
                                     color: 'var(--emerald-pass)',
@@ -638,9 +698,10 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                             {!isSelected && (
                               <button
                                 type="button"
+                                className="btn-lift"
                                 onClick={() => onOverrideProductIS(product.product_id, cand.is_number)}
                                 style={{
-                                  padding: '4px 10px',
+                                  padding: '4px 12px',
                                   borderRadius: '4px',
                                   border: '1px solid var(--olive-primary)',
                                   backgroundColor: 'var(--surface)',
@@ -663,7 +724,19 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
 
               {/* Inline Override Input */}
               {expandedOverrideId === product.product_id && (
-                <div style={{ backgroundColor: 'var(--surface-secondary)', padding: '12px', borderRadius: '8px', border: '1px dashed var(--amber-warn)', marginBottom: '14px', display: 'flex', gap: '8px', alignItems: 'center' }}>
+                <div
+                  style={{
+                    backgroundColor: 'var(--surface-secondary)',
+                    padding: '12px 14px',
+                    borderRadius: '8px',
+                    border: '1px dashed var(--amber-warn)',
+                    marginBottom: '14px',
+                    display: 'flex',
+                    gap: '8px',
+                    alignItems: 'center',
+                    animation: 'fadeSlideUp 0.2s ease',
+                  }}
+                >
                   <input
                     type="text"
                     placeholder="Enter custom IS standard, e.g. IS 1489:2015 (Part 1)"
@@ -671,26 +744,28 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                     onChange={(e) => setOverrideInputs({ ...overrideInputs, [product.product_id]: e.target.value })}
                     style={{
                       flex: 1,
-                      padding: '7px 10px',
+                      padding: '8px 12px',
                       borderRadius: '6px',
                       border: '1px solid var(--hairline)',
                       fontSize: '12px',
                       fontFamily: 'var(--font-data, monospace)',
                       backgroundColor: 'var(--surface)',
                       color: 'var(--ink)',
+                      outline: 'none',
                     }}
                   />
                   <button
                     type="button"
+                    className="btn-lift"
                     onClick={() => handleApplyOverride(product.product_id)}
                     style={{
-                      padding: '7px 14px',
+                      padding: '8px 16px',
                       borderRadius: '6px',
                       background: 'var(--olive-primary)',
                       color: '#FFFFFF',
                       border: 'none',
                       fontSize: '12px',
-                      fontWeight: 600,
+                      fontWeight: 700,
                       cursor: 'pointer',
                     }}
                   >
@@ -705,9 +780,10 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                   style={{
                     backgroundColor: product.officer_clarification_answer ? 'var(--emerald-bg)' : 'var(--amber-bg)',
                     border: `1px solid ${product.officer_clarification_answer ? 'var(--emerald-border)' : 'var(--amber-border)'}`,
-                    borderRadius: '8px',
+                    borderRadius: '10px',
                     padding: '16px',
-                    marginTop: '10px',
+                    marginTop: '12px',
+                    boxShadow: 'var(--shadow-xs)',
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
@@ -730,16 +806,9 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                       {product.clarification_question.options.map((opt) => (
                         <label
                           key={opt.option_id}
+                          className="clarification-choice-card"
                           style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '10px',
-                            padding: '10px 14px',
-                            borderRadius: '6px',
-                            border: '1px solid var(--hairline)',
-                            background: 'var(--surface)',
                             cursor: isClarifyingThis ? 'wait' : 'pointer',
-                            transition: 'all 0.15s ease',
                           }}
                         >
                           <input
@@ -748,14 +817,14 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                             value={opt.label}
                             disabled={isClarifyingThis}
                             onChange={() => handleSelectOption(product, opt.label)}
-                            style={{ cursor: 'pointer', accentColor: 'var(--olive-primary)' }}
+                            style={{ cursor: 'pointer', accentColor: 'var(--olive-primary)', marginTop: '2px' }}
                           />
                           <div>
-                            <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--ink)' }}>
+                            <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--ink)' }}>
                               {opt.label}
                             </span>
                             {opt.technical_implication && (
-                              <span style={{ marginLeft: '6px', fontSize: '12px', color: 'var(--ink-muted)' }}>
+                              <span style={{ marginLeft: '6px', fontSize: '12px', color: 'var(--ink-secondary)' }}>
                                 — {opt.technical_implication}
                               </span>
                             )}
@@ -791,26 +860,29 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
           border: '1px solid var(--hairline)',
           borderRadius: '12px',
           padding: '16px 24px',
-          boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
+          boxShadow: 'var(--shadow-modal)',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
           flexWrap: 'wrap',
           gap: '16px',
           zIndex: 50,
+          backdropFilter: 'blur(10px)',
         }}
       >
         <div>
-          <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>
-            Ready to generate final NIT schedule?
+          <div style={{ fontSize: '14px', fontWeight: 800, color: 'var(--ink)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <Sparkles size={15} color="var(--olive-primary)" />
+            <span>Ready to generate final NIT schedule?</span>
           </div>
-          <div style={{ fontSize: '12px', color: 'var(--ink-muted)' }}>
-            {confirmedCount} of {totalCount} products confirmed. Stage 3 will draft grounded redline diffs and seal the CVC audit hash.
+          <div style={{ fontSize: '12px', color: 'var(--ink-muted)', marginTop: '2px' }}>
+            <strong style={{ color: 'var(--ink)' }}>{confirmedCount}</strong> of {totalCount} products confirmed. Stage 3 will draft grounded redline diffs and seal the CVC audit hash.
           </div>
         </div>
 
         <button
           type="button"
+          className="btn-lift"
           onClick={onConfirmAllAndProceed}
           disabled={isProcessing}
           style={{
@@ -828,7 +900,6 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
             gap: '10px',
             boxShadow: '0 4px 14px rgba(0,0,0,0.2)',
             opacity: isProcessing ? 0.7 : 1,
-            transition: 'all 0.15s ease',
           }}
         >
           {isProcessing ? (

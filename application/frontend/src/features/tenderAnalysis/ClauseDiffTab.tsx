@@ -87,6 +87,7 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
 
         <button
           type="button"
+          className="btn-lift"
           onClick={handleCopyAll}
           style={{
             backgroundColor: 'var(--olive-primary)',
@@ -101,7 +102,6 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
             alignItems: 'center',
             gap: '6px',
             boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
-            transition: 'all 0.15s ease',
           }}
         >
           {copiedAll ? <Check size={14} /> : <Copy size={14} />}
@@ -111,18 +111,15 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
 
       {/* Diff Cards */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
-        {clauseDiffs.map((clause) => {
+        {clauseDiffs.map((clause, idx) => {
           const isCopied = copiedId === clause.product_id;
 
           return (
             <div
               key={clause.product_id}
+              className="product-card-interactive"
               style={{
-                backgroundColor: 'var(--surface)',
-                borderRadius: '10px',
-                border: '1px solid var(--hairline)',
-                padding: '22px',
-                boxShadow: 'var(--shadow-card)',
+                animationDelay: `${Math.min(idx * 0.04, 0.3)}s`,
               }}
             >
               {/* Clause Header */}
@@ -196,6 +193,7 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
 
                   <button
                     type="button"
+                    className="btn-lift"
                     onClick={() => handleCopyClause(clause)}
                     style={{
                       backgroundColor: isCopied ? 'var(--emerald-pass)' : 'var(--surface-secondary)',
@@ -209,7 +207,6 @@ export const ClauseDiffTab: React.FC<ClauseDiffTabProps> = ({
                       display: 'flex',
                       alignItems: 'center',
                       gap: '4px',
-                      transition: 'all 0.15s ease',
                     }}
                   >
                     {isCopied ? <Check size={12} /> : <Copy size={12} />}
