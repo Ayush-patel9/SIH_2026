@@ -175,7 +175,8 @@ export const GazetteRadarView: React.FC = () => {
                 padding: '10px 20px',
                 fontSize: '13px',
                 fontWeight: 700,
-                backgroundColor: isScanning ? '#44503E' : '#36452F',
+                backgroundColor: isScanning ? 'var(--olive-sage)' : 'var(--olive-primary)',
+                color: '#FFFFFF',
                 cursor: isScanning ? 'not-allowed' : 'pointer',
               }}
               title="Trigger real-time Gazette of India and Ministry portal scan"
@@ -275,9 +276,9 @@ export const GazetteRadarView: React.FC = () => {
               type="button"
               onClick={() => setSelectedCategory(cat)}
               style={{
-                background: selectedCategory === cat ? '#36452F' : 'var(--surface-secondary)',
-                color: selectedCategory === cat ? '#FAF8F2' : 'var(--ink)',
-                border: `1px solid ${selectedCategory === cat ? '#36452F' : 'var(--hairline)'}`,
+                background: selectedCategory === cat ? 'var(--olive-primary)' : 'var(--surface-secondary)',
+                color: selectedCategory === cat ? '#FFFFFF' : 'var(--ink)',
+                border: `1px solid ${selectedCategory === cat ? 'var(--olive-primary)' : 'var(--hairline)'}`,
                 padding: '4px 12px',
                 borderRadius: '16px',
                 fontSize: '11.5px',
@@ -376,11 +377,11 @@ export const GazetteRadarView: React.FC = () => {
                       style={{
                         padding: '14px 16px',
                         background: isSelected ? 'var(--surface-secondary)' : 'var(--surface)',
-                        border: isSelected ? '2px solid #36452F' : '1px solid var(--hairline)',
+                        border: isSelected ? '2px solid var(--olive-primary)' : '1px solid var(--hairline)',
                         borderRadius: 'var(--radius-sm)',
                         cursor: 'pointer',
                         transition: 'all 0.15s ease',
-                        boxShadow: isSelected ? '0 2px 8px rgba(54,69,47,0.12)' : 'none',
+                        boxShadow: isSelected ? 'var(--shadow-sm)' : 'none',
                       }}
                     >
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
@@ -541,8 +542,8 @@ export const GazetteRadarView: React.FC = () => {
                       type="button"
                       onClick={handleCopyCorrigendum}
                       style={{
-                        background: copiedCorrigendum ? '#15803D' : '#36452F',
-                        color: '#FAF8F2',
+                        background: copiedCorrigendum ? 'var(--emerald-pass)' : 'var(--olive-primary)',
+                        color: '#FFFFFF',
                         border: 'none',
                         borderRadius: '4px',
                         padding: '4px 10px',

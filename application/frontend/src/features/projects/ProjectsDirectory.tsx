@@ -81,7 +81,7 @@ export const ProjectsDirectory: React.FC<ProjectsDirectoryProps> = ({
       <div
         className="workbench-card"
         style={{
-          background: 'linear-gradient(135deg, rgba(54, 69, 47, 0.05) 0%, rgba(200, 185, 154, 0.12) 100%)',
+          background: 'linear-gradient(135deg, var(--surface-secondary) 0%, var(--surface) 100%)',
           border: '1px solid var(--hairline)',
           borderLeft: '4px solid var(--forest)',
           display: 'flex',
@@ -125,7 +125,7 @@ export const ProjectsDirectory: React.FC<ProjectsDirectoryProps> = ({
               fontFamily: 'var(--font-data)',
               fontSize: '13.5px',
               fontWeight: 600,
-              boxShadow: '0 4px 14px rgba(54,69,47,0.18)',
+              boxShadow: 'var(--shadow-card)',
               cursor: 'pointer',
               borderRadius: '6px',
             }}
@@ -327,15 +327,16 @@ export const ProjectsDirectory: React.FC<ProjectsDirectoryProps> = ({
                   borderRadius: '8px',
                   background: 'var(--surface)',
                   transition: 'all 0.2s ease',
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.02)',
+                  boxShadow: 'var(--shadow-sm)',
+                  animation: 'cardEntrance 0.28s cubic-bezier(0.16, 1, 0.3, 1) both',
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor = 'var(--forest)';
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(54,69,47,0.08)';
+                  e.currentTarget.style.boxShadow = 'var(--shadow-card-hover)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = 'var(--hairline)';
-                  e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.02)';
+                  e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
                 }}
               >
                 {/* Card Top: Department & Recency */}
@@ -347,7 +348,7 @@ export const ProjectsDirectory: React.FC<ProjectsDirectoryProps> = ({
                         fontSize: '11px',
                         fontWeight: 700,
                         color: 'var(--forest)',
-                        background: 'rgba(54,69,47,0.08)',
+                        background: 'var(--olive-leaf)',
                         padding: '3px 8px',
                         borderRadius: '4px',
                         letterSpacing: '0.03em',

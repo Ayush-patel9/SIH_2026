@@ -646,7 +646,7 @@ export const PDFDocumentViewer: React.FC<PDFDocumentViewerProps> = ({
           /* Text Layer Mode (For pasted text or if PDF load falls back) */
           <div
             style={{
-              maxWidth: '820px',
+              maxWidth: '100%',
               width: '100%',
               backgroundColor: 'var(--surface)',
               borderRadius: '12px',

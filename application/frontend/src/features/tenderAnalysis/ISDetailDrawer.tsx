@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import type { StandardDetailResponse } from './types';
 import { getStandardDetail } from './tenderAnalysisClient';
 import { X, ExternalLink, ShieldCheck, AlertTriangle, FileText, CheckCircle2, Clock, Scale, BookOpen } from 'lucide-react';
@@ -44,9 +45,17 @@ export const ISDetailDrawer: React.FC<ISDetailDrawerProps> = ({
     };
   }, [isNumber]);
 
+  const drawerBodyRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (isNumber && drawerBodyRef.current) {
+      drawerBodyRef.current.scrollTop = 0;
+    }
+  }, [isNumber]);
+
   if (!isNumber) return null;
 
-  return (
+  return createPortal(
     <>
       {/* Dimmed Blurred Backdrop Overlay */}
       <div
@@ -144,7 +153,7 @@ export const ISDetailDrawer: React.FC<ISDetailDrawerProps> = ({
         </div>
 
         {/* Drawer Body */}
-        <div style={{ flex: 1, overflowY: 'auto', padding: '22px' }}>
+        <div ref={drawerBodyRef} style={{ flex: 1, overflowY: 'auto', padding: '22px' }}>
           {loading && (
             <div style={{ padding: '60px 20px', textAlign: 'center', color: 'var(--ink-muted)' }}>
               <Clock size={28} className="animate-spin" style={{ margin: '0 auto 12px auto', color: 'var(--olive-primary)' }} />
@@ -451,6 +460,7 @@ export const ISDetailDrawer: React.FC<ISDetailDrawerProps> = ({
           </button>
         </div>
       </div>
-    </>
+    </>,
+    document.body
   );
 };

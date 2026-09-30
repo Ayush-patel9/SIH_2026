@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import {
   FileText,
   CheckCircle2,
@@ -329,7 +330,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
     return (
       <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', minHeight: '85vh' }}>
         {/* Toast */}
-        {toastMessage && (
+        {toastMessage && createPortal(
           <div
             style={{
               position: 'fixed',
@@ -340,7 +341,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
               padding: '12px 20px',
               borderRadius: '8px',
               boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
-              zIndex: 9999,
+              zIndex: 99999,
               display: 'flex',
               alignItems: 'center',
               gap: '10px',
@@ -351,7 +352,8 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
           >
             <CheckCircle2 size={16} color="var(--active-green)" />
             <span>{toastMessage}</span>
-          </div>
+          </div>,
+          document.body
         )}
 
         {/* Project Header Navigation Bar */}
@@ -442,8 +444,8 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                     display: 'flex',
                     alignItems: 'center',
                     gap: '6px',
-                    background: 'rgba(54, 69, 47, 0.08)',
-                    border: '1px solid rgba(54, 69, 47, 0.25)',
+                    background: 'var(--olive-leaf)',
+                    border: '1px solid var(--hairline)',
                     padding: '6px 12px',
                     borderRadius: '6px',
                     fontFamily: 'var(--font-data)',
@@ -462,13 +464,13 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                     display: 'flex',
                     alignItems: 'center',
                     gap: '6px',
-                    background: 'rgba(245, 158, 11, 0.12)',
-                    border: '1px solid rgba(245, 158, 11, 0.3)',
+                    background: 'var(--amber-bg)',
+                    border: '1px solid var(--amber-border)',
                     padding: '6px 12px',
                     borderRadius: '6px',
                     fontFamily: 'var(--font-data)',
                     fontSize: '12px',
-                    color: '#B45309',
+                    color: 'var(--amber-warn)',
                     fontWeight: 700,
                   }}
                 >
@@ -485,9 +487,9 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '6px',
-                  background: 'rgba(239, 68, 68, 0.08)',
-                  border: '1px solid rgba(239, 68, 68, 0.25)',
-                  color: '#DC2626',
+                  background: 'var(--error-bg)',
+                  border: '1px solid var(--error-border)',
+                  color: 'var(--error-red)',
                   padding: '6px 12px',
                   borderRadius: '6px',
                   fontFamily: 'var(--font-data)',
@@ -497,12 +499,12 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                   transition: 'all 0.15s ease',
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#DC2626';
+                  e.currentTarget.style.background = 'var(--error-red)';
                   e.currentTarget.style.color = '#FFFFFF';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'rgba(239, 68, 68, 0.08)';
-                  e.currentTarget.style.color = '#DC2626';
+                  e.currentTarget.style.background = 'var(--error-bg)';
+                  e.currentTarget.style.color = 'var(--error-red)';
                 }}
               >
                 <Trash2 size={13} />
@@ -544,7 +546,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                   width: '52px',
                   height: '52px',
                   borderRadius: '12px',
-                  background: 'rgba(54, 69, 47, 0.1)',
+                  background: 'var(--olive-leaf)',
                   color: 'var(--forest)',
                   display: 'flex',
                   alignItems: 'center',
@@ -687,7 +689,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                         borderRadius: '8px',
                         border: '1px solid',
                         borderColor: isSelected ? 'var(--forest)' : 'var(--hairline)',
-                        background: isSelected ? 'rgba(54, 69, 47, 0.05)' : 'var(--surface)',
+                        background: isSelected ? 'var(--olive-tint)' : 'var(--surface)',
                         cursor: 'pointer',
                         transition: 'all 0.15s ease',
                         display: 'flex',
@@ -704,7 +706,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                               fontSize: '10px',
                               padding: '2px 6px',
                               borderRadius: '4px',
-                              background: 'rgba(54,69,47,0.1)',
+                              background: 'var(--olive-leaf)',
                               color: 'var(--forest)',
                               fontWeight: 600,
                             }}
@@ -756,7 +758,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                   style={{
                     border: '2px dashed',
                     borderColor: isDragOver ? 'var(--forest)' : 'var(--hairline)',
-                    background: isDragOver ? 'rgba(54, 69, 47, 0.05)' : 'var(--surface)',
+                    background: isDragOver ? 'var(--olive-tint)' : 'var(--surface)',
                     borderRadius: '8px',
                     padding: '36px 20px',
                     textAlign: 'center',
@@ -875,7 +877,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', minHeight: '85vh' }}>
       {/* Toast */}
-      {toastMessage && (
+      {toastMessage && createPortal(
         <div
           style={{
             position: 'fixed',
@@ -886,7 +888,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
             padding: '12px 20px',
             borderRadius: '8px',
             boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
-            zIndex: 9999,
+            zIndex: 99999,
             display: 'flex',
             alignItems: 'center',
             gap: '10px',
@@ -897,7 +899,8 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
         >
           <CheckCircle2 size={16} color="var(--active-green)" />
           <span>{toastMessage}</span>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* Hero Banner */}
@@ -1174,8 +1177,8 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                           transition: 'all 0.15s ease',
                         }}
                         onMouseEnter={(e) => {
-                          e.currentTarget.style.color = '#DC2626';
-                          e.currentTarget.style.background = 'rgba(239, 68, 68, 0.12)';
+                          e.currentTarget.style.color = 'var(--error-red)';
+                          e.currentTarget.style.background = 'var(--error-bg)';
                         }}
                         onMouseLeave={(e) => {
                           e.currentTarget.style.color = 'var(--ink-muted)';
@@ -1317,7 +1320,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
       )}
 
       {/* Modal: Create New Project */}
-      {isCreateModalOpen && (
+      {isCreateModalOpen && createPortal(
         <div
           style={{
             position: 'fixed',
@@ -1439,7 +1442,8 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
               </div>
             </form>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

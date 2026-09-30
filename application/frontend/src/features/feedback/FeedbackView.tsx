@@ -13,7 +13,6 @@ import { FeedbackModal } from './FeedbackModal';
 import { FeedbackStore, type ExtendedFeedbackItem } from './feedbackStore';
 import { computeTrustScore } from './trustScoreCalc';
 import {
-  UserCheck,
   ShieldCheck,
   Sparkles,
   RotateCcw,

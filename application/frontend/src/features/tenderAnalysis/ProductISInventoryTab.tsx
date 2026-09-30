@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import type { MappedProductItem } from './types';
 import {
   ShieldCheck,
@@ -45,9 +45,17 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
   const [overrideInputs, setOverrideInputs] = useState<Record<string, string>>({});
   const [expandedOverrides, setExpandedOverrides] = useState<Record<string, boolean>>({});
   const [expandedInspect, setExpandedInspect] = useState<Record<string, boolean>>({});
+  const cardRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   const handleToggleInspect = (productId: string) => {
+    const isOpening = !expandedInspect[productId];
     setExpandedInspect((prev) => ({ ...prev, [productId]: !prev[productId] }));
+    if (isOpening) {
+      setTimeout(() => {
+        const el = cardRefs.current[productId];
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 60);
+    }
   };
 
   const handleSelectOption = (productId: string, optionId: string) => {
@@ -191,6 +199,7 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
           return (
             <div
               key={item.product_id}
+              ref={(el) => { cardRefs.current[item.product_id] = el; }}
               style={{
                 backgroundColor: 'var(--surface)',
                 borderRadius: '10px',
@@ -204,7 +213,8 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                     ? 'var(--emerald-pass)'
                     : 'var(--amber-warn)'
                 }`,
-                transition: 'all 0.15s ease',
+                transition: 'all 0.2s ease',
+                animation: 'cardEntrance 0.3s cubic-bezier(0.16, 1, 0.3, 1) both',
               }}
             >
               {/* Product Header Row */}
@@ -499,7 +509,7 @@ export const ProductISInventoryTab: React.FC<ProductISInventoryTabProps> = ({
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '8px',
-                        animation: 'fadeIn 0.15s ease',
+                        animation: 'fadeSlideUp 0.2s ease',
                       }}
                     >
                       <div style={{ fontSize: '11px', fontWeight: 800, color: 'var(--emerald-pass)', textTransform: 'uppercase' }}>

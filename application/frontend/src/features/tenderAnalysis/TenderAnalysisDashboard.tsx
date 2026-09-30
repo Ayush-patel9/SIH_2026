@@ -458,11 +458,13 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
   // Split-Screen Dimensions
   const isBothToolsOpen = !isPdfCollapsed && !isChatCollapsed;
   const isEitherToolOpen = !isPdfCollapsed || !isChatCollapsed;
+
+  // Viewport-relative panel heights — adjusts to screen size instead of fixed 640px
+  const singleToolHeight = 'max(560px, calc(100vh - 210px))';
+  const bothToolHeight = 'max(290px, calc(50vh - 115px))';
   const leftPanelHeight = !isEitherToolOpen
     ? 'auto'
-    : isBothToolsOpen
-      ? 'calc(640px + 640px + 16px)'
-      : '640px';
+    : 'max(560px, calc(100vh - 210px))';
 
   const DASHBOARD_TABS = [
     { id: 'overview', label: 'Executive Overview', icon: BookOpen, count: null },
@@ -937,12 +939,13 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   <div
                     id="tender-pdf-viewer-container"
                     style={{
-                      height: '640px',
+                      height: isBothToolsOpen ? bothToolHeight : singleToolHeight,
                       borderRadius: '10px',
                       overflow: 'hidden',
                       border: '1px solid var(--hairline)',
                       boxShadow: 'var(--shadow-card)',
-                      backgroundColor: '#0f172a',
+                      backgroundColor: 'var(--void)',
+                      animation: 'scaleIn 0.2s ease',
                     }}
                   >
                     <PDFDocumentViewer
@@ -960,10 +963,11 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   <div
                     id="tender-chat-container"
                     style={{
-                      height: '640px',
+                      height: isBothToolsOpen ? bothToolHeight : singleToolHeight,
                       borderRadius: '10px',
                       overflow: 'hidden',
                       boxShadow: 'var(--shadow-card)',
+                      animation: 'scaleIn 0.2s ease',
                     }}
                   >
                     <TenderChatbotPanel
@@ -1209,12 +1213,13 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   <div
                     id="tender-pdf-viewer-container"
                     style={{
-                      height: '640px',
+                      height: isBothToolsOpen ? bothToolHeight : singleToolHeight,
                       borderRadius: '10px',
                       overflow: 'hidden',
                       border: '1px solid var(--hairline)',
                       boxShadow: 'var(--shadow-card)',
-                      backgroundColor: '#0f172a',
+                      backgroundColor: 'var(--void)',
+                      animation: 'scaleIn 0.2s ease',
                     }}
                   >
                     <PDFDocumentViewer
@@ -1233,10 +1238,11 @@ export const TenderAnalysisDashboard: React.FC<TenderAnalysisDashboardProps> = (
                   <div
                     id="tender-chat-container"
                     style={{
-                      height: '640px',
+                      height: isBothToolsOpen ? bothToolHeight : singleToolHeight,
                       borderRadius: '10px',
                       overflow: 'hidden',
                       boxShadow: 'var(--shadow-card)',
+                      animation: 'scaleIn 0.2s ease',
                     }}
                   >
                     <TenderChatbotPanel

@@ -853,7 +853,7 @@ export default function App({ onLogout }: AppProps = {}) {
         </header>
 
         {/* Content Stage */}
-        <main className="content-stage">
+        <main className={`content-stage ${activeFeature === 'projects' || activeFeature === 'tenderUpload' || activeFeature === 'graph3d' ? 'wide-stage' : ''}`}>
           {/* Feature 00: Projects & Procurement History */}
           {activeFeature === 'projects' && (
             <ProjectsView

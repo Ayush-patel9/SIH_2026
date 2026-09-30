@@ -65,13 +65,13 @@ export const EmptySearchState: React.FC<EmptySearchStateProps> = ({ onSelectSamp
           width: '56px',
           height: '56px',
           borderRadius: '14px',
-          background: 'var(--surface-secondary, #F5F2EB)',
-          border: '1px solid var(--hairline, #E5E0D4)',
+          background: 'var(--surface-secondary)',
+          border: '1px solid var(--hairline)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           marginBottom: '16px',
-          color: 'var(--forest, #36452F)',
+          color: 'var(--olive-primary)',
         }}
       >
         <Search size={26} />

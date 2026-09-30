@@ -72,6 +72,11 @@
   --superposition-bg:     #F3F0F8;
   --superposition-border: #DCD5E8;
 
+  /* Semantic Aliases (Backward Compatibility - used across features) */
+  --forest:               #36452F;  /* Alias for olive-primary — deep forest accent */
+  --active-green:         #2D6A4F;  /* Alias for emerald-pass — success/active indicator */
+  --superseded-red:       #BA3A2A;  /* Alias for error-red — deprecated/withdrawn flag */
+
   /* Shadows (Subtle architectural contact shadows) */
   --shadow-xs:            0 1px 2px 0 rgba(54, 69, 47, 0.04);
   --shadow-sm:            0 1px 3px 0 rgba(54, 69, 47, 0.04), 0 1px 2px -1px rgba(54, 69, 47, 0.03);
@@ -161,6 +166,11 @@
   --superposition-violet: #4E8EA2;  /* Cyan Slate */
   --superposition-bg:     #EBF4F7;
   --superposition-border: #CBE3EB;
+
+  /* Zoom Semantic Aliases */
+  --forest:               #0A4174;
+  --active-green:         #0E8A5E;
+  --superseded-red:       #E11D48;
 
   /* Zoom Modern Shadows (Crisp & Floated) */
   --shadow-xs:            0 1px 2px 0 rgba(0, 29, 57, 0.05);
@@ -342,21 +352,71 @@ body {
   background: var(--olive-leaf);
   padding: 1px 8px;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(54, 69, 47, 0.2);
+  border: 1px solid var(--hairline);
 }
 
 /* --- Content Container (Airy, Spacious & Editorial) --- */
 .content-stage {
   flex: 1;
-  padding: 38px 40px 80px;
+  padding: 32px 36px 80px;
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 28px;
-  animation: fadeSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeIn 0.2s ease-out; /* Note: No transform so position:fixed modals/drawers are never trapped! */
   min-width: 0;
+}
+
+/* Full-width container for Projects & Split-Screen Document Analysis */
+.content-stage.wide-stage {
+  max-width: 100% !important;
+  padding: 18px 24px 60px !important;
+}
+
+/* --- Action Buttons (Theme Responsive) --- */
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-data);
+  font-weight: 600;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.action-btn.primary {
+  background: var(--olive-primary);
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.action-btn.primary:hover {
+  background: var(--olive-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.action-btn.primary:active {
+  transform: translateY(0);
+}
+
+.action-btn.secondary {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--shadow-xs);
+}
+
+.action-btn.secondary:hover {
+  background: var(--surface-hover);
+  border-color: var(--hairline-hover);
+  color: var(--ink);
 }
 
 /* --- Editorial Hero Header --- */
@@ -376,7 +436,7 @@ body {
   font-weight: 700;
   color: var(--olive-primary);
   background: var(--olive-leaf);
-  border: 1px solid rgba(54, 69, 47, 0.22);
+  border: 1px solid var(--hairline);
   padding: 3px 10px;
   border-radius: var(--radius-full);
   width: fit-content;
@@ -407,8 +467,8 @@ body {
   border: 1px solid var(--hairline);
   border-radius: var(--radius-md);
   padding: 28px 32px;
-  box-shadow: 0 1px 3px rgba(54, 69, 47, 0.03), 0 6px 20px -4px rgba(54, 69, 47, 0.04);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   position: relative;
   min-width: 0;
   overflow: hidden;
@@ -416,7 +476,7 @@ body {
 
 .workbench-card:hover {
   border-color: var(--hairline-hover);
-  box-shadow: 0 2px 6px rgba(54, 69, 47, 0.04), 0 10px 28px -4px rgba(54, 69, 47, 0.07);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .workbench-card-header {
@@ -1245,6 +1305,31 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes cardEntrance {
+  from { opacity: 0; transform: translateY(8px) scale(0.99); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
 @keyframes banner-in {
   from { opacity: 0; transform: translateY(-4px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -1253,6 +1338,11 @@ body {
 @keyframes auth-card-in {
   from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 @keyframes pulse {
@@ -1267,6 +1357,11 @@ body {
 
 .page-transition-enter {
   animation: fadeSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Spinner utility — used by Lucide icons via className="animate-spin" */
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 /* --- Project Directory & Workspace Clean Aesthetics --- */
@@ -1305,12 +1400,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: cardEntrance 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .project-card-interactive:hover {
   border-color: var(--olive-primary);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px -4px rgba(0, 0, 0, 0.10), 0 4px 10px -2px rgba(0, 0, 0, 0.06);
+}
+
+.project-card-interactive:active {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-card);
+  transition-duration: 0.1s;
 }
 
 .live-beacon {

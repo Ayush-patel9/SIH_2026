@@ -194,6 +194,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                 padding: '22px',
                 boxShadow: 'var(--shadow-card)',
                 transition: 'all 0.2s ease',
+                animation: 'cardEntrance 0.28s cubic-bezier(0.16, 1, 0.3, 1) both',
               }}
             >
               {/* Top Row: Clause Number, Product Name, and Status Badge */}
@@ -503,6 +504,7 @@ export const Stage2ProductSelectionView: React.FC<Stage2ProductSelectionViewProp
                     borderRadius: '8px',
                     padding: '16px',
                     marginBottom: '16px',
+                    animation: 'fadeSlideUp 0.2s ease',
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', flexWrap: 'wrap', gap: '8px' }}>

@@ -134,7 +134,7 @@ Compliant with CVC Circular 02/02/2022 & GFR Rule 144(xi).`;
           position: 'relative',
           overflow: 'hidden',
           borderRadius: '12px',
-          background: 'linear-gradient(135deg, var(--olive-primary) 0%, #001D39 100%)',
+          background: 'linear-gradient(135deg, var(--olive-primary) 0%, var(--void) 100%)',
           padding: '24px 28px',
           color: '#FFFFFF',
           boxShadow: 'var(--shadow-card-hover)',
