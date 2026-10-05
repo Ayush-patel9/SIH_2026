@@ -62,12 +62,11 @@ def on_startup():
         logger.info("Initializing Neon PostgreSQL connection and schema...")
         init_db()
         seed_initial_projects_if_empty()
-        # Initialize S2 mutual keepalive and daily scraper scheduler
+        # Initialize S2 mutual keepalive
         s2_heartbeat_service.init_tables()
         s2_heartbeat_service.load_state_from_db()
-        s2_heartbeat_service.cleanup_stale_runs()
         s2_heartbeat_service.start()
-        logger.info("✓ Neon PostgreSQL startup verification & S2 scheduler complete.")
+        logger.info("✓ Neon PostgreSQL startup verification & S2 heartbeat service complete.")
     except Exception as e:
         logger.warning(f"Could not connect to database on startup: {e}")
 
