@@ -7,17 +7,20 @@ import type { StandardsResponse } from '../types';
 console.log('--- Running Tests for Real User Registration, Auth & Data Isolation ---');
 
 // Mock browser localStorage for Node testing environment
-if (typeof localStorage === 'undefined') {
-  const store: Record<string, string> = {};
-  (globalThis as any).localStorage = {
-    getItem: (k: string) => store[k] || null,
-    setItem: (k: string, v: string) => { store[k] = String(v); },
-    removeItem: (k: string) => { delete store[k]; },
-    clear: () => { Object.keys(store).forEach(k => delete store[k]); },
-    get length() { return Object.keys(store).length; },
-    key: (i: number) => Object.keys(store)[i] || null,
-  };
+class MockStorage {
+  private store: Record<string, string> = {};
+  getItem(key: string): string | null { return this.store[key] ?? null; }
+  setItem(key: string, value: string): void { this.store[key] = String(value); }
+  removeItem(key: string): void { delete this.store[key]; }
+  clear(): void { this.store = {}; }
+  get length(): number { return Object.keys(this.store).length; }
+  key(index: number): string | null { return Object.keys(this.store)[index] ?? null; }
 }
+Object.defineProperty(globalThis, 'localStorage', {
+  value: new MockStorage(),
+  writable: true,
+  configurable: true,
+});
 
 // 1. Initial State
 logout();
