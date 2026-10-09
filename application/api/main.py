@@ -62,19 +62,24 @@ def on_startup():
         logger.info("Initializing Neon PostgreSQL connection and schema...")
         init_db()
         seed_initial_projects_if_empty()
-        # Initialize S2 mutual keepalive
+        # Initialize S2 tables and state for inbound health checks
         s2_heartbeat_service.init_tables()
         s2_heartbeat_service.load_state_from_db()
-        s2_heartbeat_service.start()
-        logger.info("✓ Neon PostgreSQL startup verification & S2 heartbeat service complete.")
+        # Outbound heartbeat disabled (keepalive handled via external cron worker)
+        if s2_heartbeat_service.outbound_enabled:
+            s2_heartbeat_service.start()
+        else:
+            logger.info("✓ Outbound heartbeat disabled (keepalive handled via external cron worker).")
+        logger.info("✓ Neon PostgreSQL startup verification complete.")
     except Exception as e:
         logger.warning(f"Could not connect to database on startup: {e}")
 
 @app.on_event("shutdown")
 def on_shutdown():
     try:
-        logger.info("Stopping S2 heartbeat & scheduler service...")
-        s2_heartbeat_service.stop()
+        if s2_heartbeat_service.is_running:
+            logger.info("Stopping S2 heartbeat service...")
+            s2_heartbeat_service.stop()
     except Exception as e:
         logger.warning(f"Error shutting down S2 heartbeat service: {e}")
 

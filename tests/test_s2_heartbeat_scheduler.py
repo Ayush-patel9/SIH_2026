@@ -106,3 +106,20 @@ def test_manual_ping_s1_route():
         data = resp.json()
         assert data["success"] is True
         assert "diagnostics" in data
+
+def test_outbound_heartbeat_disabled_by_default():
+    """Verifies outbound heartbeat loop is disabled by default and does not start background tasks."""
+    service = S2HeartbeatService()
+    assert service.outbound_enabled is False
+    assert service.is_running is False
+    # Calling start() must be a no-op when outbound_enabled is False
+    service.start()
+    assert service.is_running is False
+    assert service._worker_task is None
+
+    # Diagnostics show healthy status with inactive outbound loop
+    diag = service.get_diagnostics()
+    assert diag["status"] == "HEALTHY"
+    assert diag["diagnostics"]["outbound_heartbeat_active"] is False
+    assert diag["diagnostics"]["outbound_heartbeat_enabled"] is False
+

@@ -19,6 +19,7 @@ class S2HeartbeatService:
         self.s1_heartbeat_url = os.getenv("S1_HEARTBEAT_URL", "").strip()
         self.interval_seconds = float(os.getenv("HEARTBEAT_INTERVAL_SECONDS", "90.0"))
         self.http_timeout = float(os.getenv("HEARTBEAT_HTTP_TIMEOUT", "10.0"))
+        self.outbound_enabled = os.getenv("ENABLE_OUTBOUND_HEARTBEAT", "false").lower() in ("true", "1", "yes")
 
         # In-memory diagnostics cache for < 10ms responses on GET /api/heartbeat
         self._state_lock = None
@@ -38,6 +39,7 @@ class S2HeartbeatService:
         self.s1_heartbeat_url = os.getenv("S1_HEARTBEAT_URL", "").strip()
         self.interval_seconds = float(os.getenv("HEARTBEAT_INTERVAL_SECONDS", "90.0"))
         self.http_timeout = float(os.getenv("HEARTBEAT_HTTP_TIMEOUT", "10.0"))
+        self.outbound_enabled = os.getenv("ENABLE_OUTBOUND_HEARTBEAT", "false").lower() in ("true", "1", "yes")
 
     def init_tables(self):
         """Ensures service_heartbeats table exists in Neon DB."""
@@ -105,7 +107,7 @@ class S2HeartbeatService:
         """
         Ultra-fast in-memory diagnostics provider (< 10ms, typical < 0.5ms).
         """
-        effective_status = "DEGRADED" if self._consecutive_failures > 3 else "HEALTHY"
+        effective_status = "DEGRADED" if (self.outbound_enabled and self._consecutive_failures > 3) else "HEALTHY"
 
         return {
             "service": "S2",
@@ -116,7 +118,9 @@ class S2HeartbeatService:
                 "last_heartbeat_attempt": self._last_attempt_at,
                 "last_successful_heartbeat": self._last_success_at,
                 "last_failure": self._last_failure,
-                "consecutive_successes": self._consecutive_successes
+                "consecutive_successes": self._consecutive_successes,
+                "outbound_heartbeat_active": self._is_running,
+                "outbound_heartbeat_enabled": self.outbound_enabled
             }
         }
 
@@ -222,13 +226,17 @@ class S2HeartbeatService:
 
     async def _run_loop(self):
         """Main async background loop for S2 keepalive."""
+        if not self.outbound_enabled:
+            logger.info("[S2] Outbound heartbeat is disabled. Exiting loop.")
+            return
+
         logger.info(f"[S2] Background heartbeat loop started (interval={self.interval_seconds}s).")
         self._is_running = True
 
         # Initial small delay to let server finish booting
         await asyncio.sleep(2.0)
 
-        while self._is_running:
+        while self._is_running and self.outbound_enabled:
             try:
                 # Outbound heartbeat ping to S1
                 await self.ping_s1()
@@ -247,7 +255,11 @@ class S2HeartbeatService:
         logger.info("[S2] Background loop exited.")
 
     def start(self):
-        """Starts the background worker task."""
+        """Starts the background worker task if outbound heartbeat is enabled."""
+        if not self.outbound_enabled:
+            logger.info("[S2] Outbound heartbeat is disabled (keepalive handled via external cron worker). Worker not started.")
+            return
+
         if self._worker_task and not self._worker_task.done():
             logger.warning("[S2] Worker task already running.")
             return
@@ -262,6 +274,10 @@ class S2HeartbeatService:
         if self._worker_task and not self._worker_task.done():
             self._worker_task.cancel()
             logger.info("[S2] S2HeartbeatService worker task cancelled.")
+
+    @property
+    def is_running(self) -> bool:
+        return self._is_running and bool(self._worker_task and not self._worker_task.done())
 
 
 # Global singleton instance
