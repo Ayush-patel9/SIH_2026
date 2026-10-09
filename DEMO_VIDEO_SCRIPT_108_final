@@ -1,0 +1,5 @@
+"Finally, we implemented a full Model Context Protocol (MCP) server. It exposes six different BIS tools to external AI agents"
+
+Let's run a live prompt: 'I am drafting a CPWD tender for a highway bridge requiring TMT steel bars. Use ManakAI tools to find the standard, verify its QCO status, and generate a compliant NIT clause.'
+
+Claude Desktop invokes manakai_search_standards, verifies the Ministry of Steel QCO mandate with manakai_check_qco_compliance, and drafts a legally airtight NIT clause citing IS 1786 Fe 500D. Any AI agent can now tap into verified Indian Standards intelligence with zero hallucinations."

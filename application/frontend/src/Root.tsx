@@ -40,21 +40,34 @@ export const Root: React.FC = () => {
     setCurrentSearch(fullSearch);
   }, []);
 
-  // Params from query string if available: e.g. /login?role=AUDITOR&mode=signup
+  // Params from query string if available: e.g. /login?role=AUDITOR&mode=signup&email=...
   const searchParams = new URLSearchParams(currentSearch);
   const roleParam = searchParams.get('role') as UserRole | null;
   const modeParam = searchParams.get('mode') as 'signin' | 'signup' | null;
+  const emailParam = searchParams.get('email') || undefined;
+  const passwordParam = searchParams.get('password') || undefined;
 
   // Handle transitions
-  const handleOpenLogin = (role?: UserRole, mode: 'signin' | 'signup' = 'signin') => {
+  const handleOpenLogin = (
+    role?: UserRole,
+    mode: 'signin' | 'signup' = 'signin',
+    email?: string,
+    password?: string
+  ) => {
     const params = new URLSearchParams();
     if (role) params.set('role', role);
     if (mode) params.set('mode', mode);
+    if (email) params.set('email', email);
+    if (password) params.set('password', password);
     const queryString = params.toString() ? `?${params.toString()}` : '';
     navigate(`/login${queryString}`);
   };
 
   const handleLoginSuccess = () => {
+    navigate('/app');
+  };
+
+  const handleQuickDemoLogin = () => {
     navigate('/app');
   };
 
@@ -72,8 +85,11 @@ export const Root: React.FC = () => {
       <LoginPage
         initialRole={roleParam || session?.role || 'OFFICER'}
         initialMode={modeParam || 'signin'}
+        initialEmail={emailParam}
+        initialPassword={passwordParam}
         onBack={() => navigate('/')}
         onSuccess={handleLoginSuccess}
+        onQuickDemo={handleQuickDemoLogin}
       />
     );
   }
@@ -88,6 +104,7 @@ export const Root: React.FC = () => {
     <LandingPage
       onLogin={handleOpenLogin}
       onEnterApp={() => navigate('/app')}
+      onQuickDemoLogin={handleQuickDemoLogin}
       isLoggedIn={isAuthenticated}
       loggedInUser={session}
     />

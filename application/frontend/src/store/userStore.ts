@@ -1,6 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { UserRole } from '../types';
 import { roleStore } from './roleStore';
+import { DEMO_ACCOUNTS, type DemoAccount } from '../data/demoAccounts';
+
+export { DEMO_ACCOUNTS, type DemoAccount };
 
 export interface UserProfile {
   id: string;
@@ -49,11 +52,48 @@ function notify() {
 export function getRegisteredUsers(): UserAccount[] {
   try {
     const raw = localStorage.getItem(REGISTERED_USERS_KEY);
-    if (!raw) return [];
-    return JSON.parse(raw);
+    const users: UserAccount[] = raw ? JSON.parse(raw) : [];
+    const existingEmails = new Set(users.map((u) => u.email.toLowerCase()));
+    let hasChanges = false;
+
+    for (const demo of DEMO_ACCOUNTS) {
+      if (!existingEmails.has(demo.email.toLowerCase())) {
+        users.push({
+          id: demo.id,
+          name: demo.name,
+          email: demo.email,
+          password: demo.password,
+          organization: demo.organization,
+          role: demo.role,
+          ministry: demo.ministry,
+          department: demo.department,
+          designation: demo.designation,
+          gstin: demo.gstin,
+          createdAt: demo.createdAt,
+        });
+        hasChanges = true;
+      }
+    }
+
+    if (hasChanges || !raw) {
+      saveRegisteredUsers(users);
+    }
+    return users;
   } catch (err) {
     console.warn('userStore: Failed to load registered users', err);
-    return [];
+    return DEMO_ACCOUNTS.map((d) => ({
+      id: d.id,
+      name: d.name,
+      email: d.email,
+      password: d.password,
+      organization: d.organization,
+      role: d.role,
+      ministry: d.ministry,
+      department: d.department,
+      designation: d.designation,
+      gstin: d.gstin,
+      createdAt: d.createdAt,
+    }));
   }
 }
 
@@ -63,6 +103,20 @@ function saveRegisteredUsers(users: UserAccount[]): void {
   } catch (err) {
     console.error('userStore: Failed to save registered users', err);
   }
+}
+
+export function loginAsDemo(demoIdOrEmail: string): { success: boolean; user?: UserProfile; error?: string } {
+  const normalized = demoIdOrEmail.trim().toLowerCase();
+  const demo = DEMO_ACCOUNTS.find(
+    (d) => d.id.toLowerCase() === normalized || d.email.toLowerCase() === normalized
+  ) || DEMO_ACCOUNTS[0];
+
+  // Ensure demo accounts are in registered users
+  getRegisteredUsers();
+
+  const { password: _, ...profile } = demo;
+  setSession(profile);
+  return { success: true, user: profile };
 }
 
 export function getSession(): UserProfile | null {

@@ -1,21 +1,27 @@
 import React, { useState } from 'react';
 import type { UserRole } from '../types';
-import { register, loginWithCredentials, type UserProfile } from '../store/userStore';
+import { register, loginWithCredentials, loginAsDemo, DEMO_ACCOUNTS, type UserProfile } from '../store/userStore';
 import { ThemeSwitcher } from '../components/ThemeSwitcher';
-import { Building2, Factory, ArrowRight, ShieldCheck, ArrowLeft, Lock, Mail, User, Briefcase, FileText } from 'lucide-react';
+import { Building2, Factory, ArrowRight, ShieldCheck, ArrowLeft, Lock, Mail, User, Briefcase, FileText, Zap } from 'lucide-react';
 
 interface LoginPageProps {
   initialRole?: UserRole;
   initialMode?: 'signin' | 'signup';
+  initialEmail?: string;
+  initialPassword?: string;
   onBack: () => void;
   onSuccess: (profile: UserProfile) => void;
+  onQuickDemo?: (profile: UserProfile) => void;
 }
 
 export const LoginPage: React.FC<LoginPageProps> = ({
   initialRole = 'OFFICER',
   initialMode = 'signin',
+  initialEmail = '',
+  initialPassword = '',
   onBack,
   onSuccess,
+  onQuickDemo,
 }) => {
   const [authMode, setAuthMode] = useState<'signin' | 'signup'>(initialMode);
   const normalizedInitialRole: UserRole =
@@ -24,8 +30,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({
 
   // Form Fields
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState(initialEmail);
+  const [password, setPassword] = useState(initialPassword);
   const [organization, setOrganization] = useState('');
   const [roleDetail, setRoleDetail] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -265,6 +271,143 @@ export const LoginPage: React.FC<LoginPageProps> = ({
         {/* FORM 1: SIGN IN */}
         {authMode === 'signin' ? (
           <form onSubmit={handleSignIn} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {/* Quick Demo Fast-Track Toolbar */}
+            <div
+              style={{
+                backgroundColor: 'var(--surface-secondary)',
+                border: '1px solid var(--hairline)',
+                borderRadius: '10px',
+                padding: '12px',
+                marginBottom: '4px',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: '10px',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <Zap size={14} color="var(--gold-antique)" />
+                  <span style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--ink)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                    Quick Demo Credentials
+                  </span>
+                </div>
+                <span
+                  style={{
+                    fontSize: '10px',
+                    fontWeight: 700,
+                    backgroundColor: 'var(--gold-bg)',
+                    color: 'var(--gold-text)',
+                    padding: '2px 7px',
+                    borderRadius: '4px',
+                    border: '1px solid var(--gold-border)',
+                  }}
+                >
+                  Team Nexus · IIITB
+                </span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                {DEMO_ACCOUNTS.map((demo) => (
+                  <div
+                    key={demo.id}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      backgroundColor: 'var(--surface)',
+                      border: demo.recommendedForJudge ? '1px solid var(--emerald-border)' : '1px solid var(--hairline)',
+                      padding: '7px 10px',
+                      borderRadius: '6px',
+                    }}
+                  >
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', minWidth: 0 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <span style={{ fontSize: '11.5px', fontWeight: 700, color: 'var(--ink)' }}>
+                          {demo.name.split(' (')[0]}
+                        </span>
+                        {demo.recommendedForJudge && (
+                          <span
+                            style={{
+                              fontSize: '9px',
+                              backgroundColor: 'var(--emerald-bg)',
+                              color: 'var(--emerald-text)',
+                              padding: '1px 5px',
+                              borderRadius: '3px',
+                              fontWeight: 700,
+                            }}
+                          >
+                            Judge
+                          </span>
+                        )}
+                      </div>
+                      <span style={{ fontSize: '10.5px', color: 'var(--ink-muted)', fontFamily: 'var(--font-data)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {demo.email}
+                      </span>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setEmail(demo.email);
+                          setPassword(demo.password);
+                          setSelectedRole(demo.role);
+                        }}
+                        style={{
+                          background: 'none',
+                          border: '1px solid var(--hairline)',
+                          borderRadius: '4px',
+                          color: 'var(--ink-secondary)',
+                          fontSize: '11px',
+                          fontWeight: 600,
+                          padding: '3px 7px',
+                          cursor: 'pointer',
+                        }}
+                        title="Auto-fill email and password in the inputs below"
+                      >
+                        Fill
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const res = loginAsDemo(demo.id);
+                          if (res.success && res.user) {
+                            if (onQuickDemo) {
+                              onQuickDemo(res.user);
+                            } else {
+                              onSuccess(res.user);
+                            }
+                          }
+                        }}
+                        style={{
+                          backgroundColor: demo.recommendedForJudge ? 'var(--emerald-pass)' : 'var(--olive-primary)',
+                          border: 'none',
+                          borderRadius: '4px',
+                          color: '#FFFFFF',
+                          fontSize: '11px',
+                          fontWeight: 700,
+                          padding: '3px 9px',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '3px',
+                        }}
+                        title="Sign in immediately with this demo persona"
+                      >
+                        <Zap size={10} />
+                        <span>Sign In</span>
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             <div>
               <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: 'var(--ink)', marginBottom: '6px' }}>
                 Email Address

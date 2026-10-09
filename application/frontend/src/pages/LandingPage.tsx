@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import type { UserRole } from '../types';
 import type { UserProfile } from '../store/userStore';
 import { ThemeSwitcher } from '../components/ThemeSwitcher';
-import { Building2, Factory, ShieldCheck, ArrowRight, CheckCircle2, Award, Sparkles, Shield } from 'lucide-react';
+import { QuickDemoSection } from '../components/QuickDemoSection';
+import { Building2, Factory, ArrowRight, CheckCircle2, Award, Zap } from 'lucide-react';
 
 interface LandingPageProps {
-  onLogin: (preselectedRole?: UserRole, mode?: 'signin' | 'signup') => void;
+  onLogin: (preselectedRole?: UserRole, mode?: 'signin' | 'signup', email?: string, password?: string) => void;
   onEnterApp?: () => void;
+  onQuickDemoLogin?: (demoUser: UserProfile) => void;
   isLoggedIn?: boolean;
   loggedInUser?: UserProfile | null;
 }
@@ -14,6 +16,7 @@ interface LandingPageProps {
 export const LandingPage: React.FC<LandingPageProps> = ({
   onLogin,
   onEnterApp,
+  onQuickDemoLogin,
   isLoggedIn,
   loggedInUser,
 }) => {
@@ -115,12 +118,41 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '26px',
+              gap: '20px',
               fontSize: '13px',
               fontWeight: 600,
               color: 'var(--ink-secondary)',
             }}
           >
+            <a
+              href="#quick-demo"
+              style={{
+                color: 'var(--gold-text)',
+                backgroundColor: 'var(--gold-bg)',
+                border: '1px solid var(--gold-border)',
+                padding: '4px 10px',
+                borderRadius: '6px',
+                textDecoration: 'none',
+                fontWeight: 800,
+                fontSize: '12px',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '5px',
+                transition: 'all 0.15s ease',
+                boxShadow: 'var(--shadow-xs)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'var(--surface-hover)';
+                e.currentTarget.style.borderColor = 'var(--gold-antique)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'var(--gold-bg)';
+                e.currentTarget.style.borderColor = 'var(--gold-border)';
+              }}
+            >
+              <Zap size={13} color="var(--gold-antique)" />
+              <span>Quick Demo</span>
+            </a>
             <a
               href="#roles"
               style={{ color: 'var(--ink-secondary)', textDecoration: 'none', transition: 'color 0.15s' }}
@@ -345,6 +377,39 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               <span>Industrial Vendor & MSME Gateway</span>
               <ArrowRight size={14} />
             </button>
+
+            {/* Quick Demo Judge Fast-Track Link */}
+            <div style={{ width: '100%', marginTop: '6px', display: 'flex', justifyContent: 'center' }}>
+              <a
+                href="#quick-demo"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  padding: '7px 18px',
+                  borderRadius: '999px',
+                  backgroundColor: 'var(--gold-bg)',
+                  border: '1px solid var(--gold-border)',
+                  color: 'var(--gold-text)',
+                  fontSize: '12.5px',
+                  fontWeight: 700,
+                  textDecoration: 'none',
+                  boxShadow: 'var(--shadow-xs)',
+                  transition: 'all 0.15s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--surface)';
+                  e.currentTarget.style.borderColor = 'var(--gold-antique)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--gold-bg)';
+                  e.currentTarget.style.borderColor = 'var(--gold-border)';
+                }}
+              >
+                <Zap size={14} color="var(--gold-antique)" />
+                <span>Team Nexus (IIITB) · Inspect Quick Demo Credentials Below ↓</span>
+              </a>
+            </div>
           </div>
 
           {/* STATS TICKER */}
@@ -395,6 +460,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </div>
           </div>
         </section>
+
+        {/* QUICK DEMO SECTION · SIH 2026 JUDGE FAST-TRACK */}
+        <QuickDemoSection
+          id="quick-demo"
+          onQuickDemoLogin={onQuickDemoLogin}
+          onEnterApp={onEnterApp}
+          onFillLogin={(role, email, password) => onLogin(role, 'signin', email, password)}
+        />
 
         {/* 3 ROLE WORKSPACES SHOWCASE */}
         <section id="roles" style={{ padding: '32px 0 54px' }}>
