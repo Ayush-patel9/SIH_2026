@@ -45,7 +45,7 @@ class ApproveStandardPayload(BaseModel):
 
 from fastapi.responses import JSONResponse
 
-@router.post("/query", summary="Query Standards Intelligence")
+@router.post("/query", summary="Query Standards Intelligence", response_model=StandardsResponse, response_model_by_alias=True)
 def query_standards(request: QueryRequest):
     """
     Core RAG & Knowledge Graph Intelligence Endpoint.
@@ -59,6 +59,8 @@ def query_standards(request: QueryRequest):
         if cached_entry and "response_data" in cached_entry:
             resp_dict = cached_entry["response_data"]
             if isinstance(resp_dict, dict):
+                if "$schema" not in resp_dict:
+                    resp_dict["$schema"] = resp_dict.get("schema_version", "SIH2026.StandardsResponse.v1")
                 if "meta" not in resp_dict:
                     resp_dict["meta"] = {}
                 resp_dict["meta"]["approved_in_db"] = True
@@ -67,7 +69,10 @@ def query_standards(request: QueryRequest):
             return JSONResponse(content=resp_dict)
 
         response = graph_rag_pipeline.process_query(request)
-        return response
+        out_dict = response.model_dump(by_alias=True)
+        if "$schema" not in out_dict:
+            out_dict["$schema"] = getattr(response, "schema_version", "SIH2026.StandardsResponse.v1")
+        return JSONResponse(content=out_dict)
     except HTTPException:
         raise
     except Exception as e:

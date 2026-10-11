@@ -170,8 +170,9 @@ class LLMGateway:
         self._current_key_idx = 0
         self.reload_keys()
 
-        self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", "gemini-3.1-flash-lite")
-        self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", "gemini-3.1-flash-lite")
+        model_override = os.getenv("GEMINI_MODEL", "gemini-flash-lite-latest")
+        self.default_flash_model = os.getenv("GEMINI_FLASH_MODEL", model_override)
+        self.default_pro_model = os.getenv("GEMINI_PRO_MODEL", self.default_flash_model)
         self.request_timeout = float(os.getenv("GEMINI_TIMEOUT_SECONDS", "60.0"))
         
         self._has_genai = False
@@ -668,10 +669,10 @@ class LLMGateway:
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
         fallback_models = [
             primary_model,
-            "gemini-3.1-flash-lite",
+            "gemini-flash-lite-latest",
             "gemini-3.5-flash-lite",
+            "gemini-3.6-flash",
             "gemini-3.7-flash",
-            "gemini-3.5-flash",
             "gemini-3.8-flash",
             "gemini-flash-latest",
         ]
@@ -729,10 +730,10 @@ class LLMGateway:
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
         fallback_models = [
             primary_model,
-            "gemini-3.1-flash-lite",
+            "gemini-flash-lite-latest",
             "gemini-3.5-flash-lite",
+            "gemini-3.6-flash",
             "gemini-3.7-flash",
-            "gemini-3.5-flash",
             "gemini-3.8-flash",
             "gemini-flash-latest",
         ]
@@ -799,11 +800,11 @@ class LLMGateway:
         primary_model = self.default_pro_model if model_type == "pro" else self.default_flash_model
         fallback_models = [
             primary_model,
-            "gemini-3.8-flash",
+            "gemini-flash-lite-latest",
             "gemini-3.5-flash-lite",
-            "gemini-3.5-flash",
+            "gemini-3.6-flash",
             "gemini-3.7-flash",
-            "gemini-3.1-pro-preview",
+            "gemini-3.8-flash",
             "gemini-flash-latest",
             "gemini-pro-latest"
         ]

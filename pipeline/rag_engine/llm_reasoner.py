@@ -76,6 +76,15 @@ class LLMReasoner:
         ]
 
         spec_dict = raw_output.get("spec_draft_export", {})
+        if isinstance(spec_dict, dict):
+            if not spec_dict.get("tender_clause_text"):
+                spec_dict["tender_clause_text"] = f"The material/equipment supplied shall strictly conform to Indian Standard {primary.is_number} ({primary.title}) along with all current amendments."
+            if not spec_dict.get("mandatory_certifications"):
+                spec_dict["mandatory_certifications"] = [f"Compliance with {primary.is_number} specifications."]
+            if not spec_dict.get("quality_assurance_requirements"):
+                spec_dict["quality_assurance_requirements"] = ["Pre-dispatch inspection and manufacturer conformance testing per BIS norms."]
+            if not spec_dict.get("test_certificate_mandates"):
+                spec_dict["test_certificate_mandates"] = [f"NABL accredited laboratory test certificate conforming to {primary.is_number}."]
         spec_obj = SpecDraftExport.model_validate(spec_dict) if isinstance(spec_dict, dict) else spec_dict
 
         synthesis_result = {

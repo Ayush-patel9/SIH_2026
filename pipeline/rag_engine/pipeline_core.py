@@ -22,6 +22,7 @@ from pipeline.rag_engine.reranker_fusion import RerankerAndFusion
 from pipeline.rag_engine.critic_verifier import CriticVerifier
 from pipeline.rag_engine.llm_reasoner import LLMReasoner
 from pipeline.rag_engine.tender_doc_parser import TenderDocParser, TenderDocumentAnalysis
+from pipeline.rag_engine.llm_gateway import llm_gateway
 
 logger = logging.getLogger(__name__)
 
@@ -267,7 +268,7 @@ class GraphRAGPipeline:
                 timestamp=timestamp_now,
                 processing_time_ms=elapsed_ms,
                 pipeline_version="1.0.0",
-                model_version="gemini-3.8-flash",
+                model_version=llm_gateway.default_flash_model,
                 data_snapshot_date="2026-09-26",
                 audit_reference_hash=audit_hash,
                 mode=req.input.mode,
