@@ -662,6 +662,30 @@ async def upload_tender_document(file: UploadFile = File(...)):
 # ENDPOINT 1: Stage 1 Decomposition
 # ==========================================
 
+def _cleanup_temp_pdf(local_file: Optional[Path] = None):
+    """Safely cleans up temporary local PDF files once uploaded/processed and reclaims RAM."""
+    try:
+        if local_file and local_file.exists() and "tenders" in str(local_file):
+            local_file.unlink(missing_ok=True)
+            logger.info(f"Cleaned up temporary tender PDF: {local_file.name}")
+    except Exception as e:
+        logger.debug(f"Could not delete temp PDF {local_file}: {e}")
+
+    # Purge any orphaned cached PDFs older than 10 minutes in data/tenders
+    try:
+        tenders_dir = Path("data") / "tenders"
+        if tenders_dir.exists():
+            now = time.time()
+            for f in tenders_dir.glob("*.pdf"):
+                if f.name.startswith("179") and (now - f.stat().st_mtime > 600):
+                    f.unlink(missing_ok=True)
+                    logger.info(f"Purged stale cached tender PDF: {f.name}")
+    except Exception as e:
+        logger.debug(f"Orphan tender cleanup notice: {e}")
+    
+    import gc
+    gc.collect()
+
 @router.post("/stage1-decompose", response_model=DecomposeResponse, summary="Stage 1: Decompose Tender & Extract Product Queries")
 def stage1_decompose_tender(req: DecomposeRequest):
     """
@@ -671,12 +695,14 @@ def stage1_decompose_tender(req: DecomposeRequest):
     for PDF textLayer highlighting, and generates RAG search queries.
     """
     pdf_bytes: Optional[bytes] = None
+    used_local_file: Optional[Path] = None
 
     # Step 1: Attempt to load raw PDF bytes if file_path or cloudinary_url is provided
     if req.file_path and os.path.exists(req.file_path):
         try:
             with open(req.file_path, "rb") as f:
                 pdf_bytes = f.read()
+            used_local_file = Path(req.file_path)
         except Exception as e:
             logger.warning(f"Could not read local file_path {req.file_path}: {e}")
 
@@ -689,6 +715,7 @@ def stage1_decompose_tender(req: DecomposeRequest):
                     try:
                         with open(local_file, "rb") as f:
                             pdf_bytes = f.read()
+                            used_local_file = local_file
                             break
                     except Exception:
                         pass
@@ -759,6 +786,8 @@ Output strictly valid JSON only."""
                         )
                     except Exception as e:
                         logger.warning(f"Could not persist stage1 to Neon: {e}")
+                _cleanup_temp_pdf(used_local_file)
+                pdf_bytes = None
                 return decomp_res
         except Exception as e:
             logger.warning(f"AI Call #1 Multimodal PDF Gemini failed, falling back to text: {e}")
@@ -840,11 +869,15 @@ Output strictly valid JSON only."""
                         )
                     except Exception as e:
                         logger.warning(f"Could not persist stage1 to Neon: {e}")
+                _cleanup_temp_pdf(used_local_file)
+                pdf_bytes = None
                 return decomp_res
         except Exception as e:
             logger.warning(f"AI Call #1 Gemini failed, falling back to rule-based parser: {e}")
 
     # Deterministic Rule-Based Fallback
+    _cleanup_temp_pdf(used_local_file)
+    pdf_bytes = None
     return _deterministic_stage1_fallback(text, req.tender_title, req.issuing_authority, project_id=req.project_id)
 
 

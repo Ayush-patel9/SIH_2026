@@ -61,12 +61,26 @@ def extract_and_analyse(
 
 class TenderPDFParser:
     def __init__(self):
+        try:
+            from pipeline.rag_engine.pipeline_core import graph_rag_pipeline
+            self.catalog = graph_rag_pipeline.tri_retrieval.master_standards
+            self.qco_matrix = graph_rag_pipeline.tri_retrieval.qco_matrix
+            self.standards_by_num = {}
+            for r in self.catalog:
+                norm = self._norm_key(r.get("is_number", ""))
+                if norm:
+                    self.standards_by_num[norm] = r
+            return
+        except Exception:
+            pass
+
         self.catalog = self._load_json(CATALOG_PATH)
         self.qco_matrix = self._load_json(QCO_PATH)
         self.standards_by_num = {}
         for r in self.catalog:
             norm = self._norm_key(r.get("is_number", ""))
-            self.standards_by_num[norm] = r
+            if norm:
+                self.standards_by_num[norm] = r
 
     @staticmethod
     def _load_json(path: Path) -> Any:

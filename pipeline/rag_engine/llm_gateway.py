@@ -70,11 +70,11 @@ class QueryUnderstandingStage1(BaseModel):
 
 class ExtractedTenderItem(BaseModel):
     item_index: int = 1
-    raw_clause_text: str
-    product_name: str
+    raw_clause_text: str = ""
+    product_name: str = "Procurement Item"
     grade_specification: Optional[str] = None
     application_domain: Optional[str] = None
-    clean_search_query: str
+    clean_search_query: str = ""
     cited_standards: List[str] = Field(default_factory=list)
     quantity_or_scope: Optional[str] = None
 
@@ -93,6 +93,21 @@ class TenderDocumentAnalysis(BaseModel):
                 obj_copy["extracted_items"] = obj_copy["line_items"]
             elif "procurement_items" in obj_copy and not obj_copy.get("extracted_items"):
                 obj_copy["extracted_items"] = obj_copy["procurement_items"]
+
+            if "extracted_items" in obj_copy and isinstance(obj_copy["extracted_items"], list):
+                coerced = []
+                for idx, itm in enumerate(obj_copy["extracted_items"]):
+                    if isinstance(itm, dict):
+                        itm_dict = dict(itm)
+                        if not itm_dict.get("raw_clause_text"):
+                            itm_dict["raw_clause_text"] = itm_dict.get("clause_text") or itm_dict.get("text") or itm_dict.get("product_name") or f"Item {idx+1}"
+                        if not itm_dict.get("clean_search_query"):
+                            itm_dict["clean_search_query"] = itm_dict.get("search_query") or itm_dict.get("product_name") or ""
+                        coerced.append(itm_dict)
+                    else:
+                        coerced.append(itm)
+                obj_copy["extracted_items"] = coerced
+
             return super().model_validate(obj_copy, **kwargs)
         return super().model_validate(obj, **kwargs)
 
@@ -134,26 +149,31 @@ class ReasoningSynthesisOutput(BaseModel):
                     if list_field in sde and isinstance(sde[list_field], str):
                         sde[list_field] = [sde[list_field]] if sde[list_field].strip() else []
                 obj['spec_draft_export'] = sde
-            # 4. Coerce reasoning_trace item confidence if string ("High", "Medium", "Low")
+            # 4. Coerce reasoning_trace item fields
             if "reasoning_trace" in obj and isinstance(obj["reasoning_trace"], list):
                 for step in obj["reasoning_trace"]:
-                    if isinstance(step, dict) and "confidence" in step:
-                        c_val = step["confidence"]
-                        if isinstance(c_val, str):
-                            c_lower = c_val.lower()
-                            if "high" in c_lower:
-                                step["confidence"] = 0.95
-                            elif "med" in c_lower:
-                                step["confidence"] = 0.75
-                            elif "low" in c_lower:
-                                step["confidence"] = 0.50
-                            else:
-                                try:
-                                    clean_num = c_val.replace("%", "").strip()
-                                    parsed_f = float(clean_num)
-                                    step["confidence"] = parsed_f / 100.0 if parsed_f > 1.0 else parsed_f
-                                except Exception:
-                                    step["confidence"] = 0.90
+                    if isinstance(step, dict):
+                        if "step" in step:
+                            step["step"] = str(step["step"])
+                        if not step.get("detail"):
+                            step["detail"] = str(step.get("text") or step.get("description") or "Reasoning step verified")
+                        if "confidence" in step:
+                            c_val = step["confidence"]
+                            if isinstance(c_val, str):
+                                c_lower = c_val.lower()
+                                if "high" in c_lower:
+                                    step["confidence"] = 0.95
+                                elif "med" in c_lower:
+                                    step["confidence"] = 0.75
+                                elif "low" in c_lower:
+                                    step["confidence"] = 0.50
+                                else:
+                                    try:
+                                        clean_num = c_val.replace("%", "").strip()
+                                        parsed_f = float(clean_num)
+                                        step["confidence"] = parsed_f / 100.0 if parsed_f > 1.0 else parsed_f
+                                    except Exception:
+                                        step["confidence"] = 0.90
         return super().model_validate(obj, **kwargs)
 
 

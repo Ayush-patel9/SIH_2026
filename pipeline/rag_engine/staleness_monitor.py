@@ -221,18 +221,37 @@ class StalenessMonitor:
     """
     def __init__(self):
         logger.info("Initializing Staleness Monitor...")
-        self.catalog: List[Dict[str, Any]] = []
-        self.standards_by_num: Dict[str, Dict[str, Any]] = {}
-        
-        if CATALOG_FILE.exists():
-            with open(CATALOG_FILE, "r", encoding="utf-8") as f:
-                self.catalog = json.load(f)
-            for s in self.catalog:
-                num = s.get("is_number", "")
-                if num:
-                    self.standards_by_num[self._normalize(num)] = s
-                    
-        logger.info(f"Staleness Monitor loaded with {len(self.standards_by_num)} standards.")
+        self._catalog: Optional[List[Dict[str, Any]]] = None
+        self._standards_by_num: Optional[Dict[str, Dict[str, Any]]] = None
+        logger.info("Staleness Monitor initialized (using shared master catalog).")
+
+    @property
+    def catalog(self) -> List[Dict[str, Any]]:
+        if self._catalog is None:
+            try:
+                from pipeline.rag_engine.pipeline_core import graph_rag_pipeline
+                self._catalog = graph_rag_pipeline.tri_retrieval.master_standards
+            except Exception:
+                if CATALOG_FILE.exists():
+                    with open(CATALOG_FILE, "r", encoding="utf-8") as f:
+                        self._catalog = json.load(f)
+                else:
+                    self._catalog = []
+        return self._catalog
+
+    @property
+    def standards_by_num(self) -> Dict[str, Dict[str, Any]]:
+        if self._standards_by_num is None:
+            try:
+                from pipeline.rag_engine.pipeline_core import graph_rag_pipeline
+                self._standards_by_num = graph_rag_pipeline.tri_retrieval.standards_by_num
+            except Exception:
+                self._standards_by_num = {}
+                for s in self.catalog:
+                    num = s.get("is_number", "")
+                    if num:
+                        self._standards_by_num[self._normalize(num)] = s
+        return self._standards_by_num
 
     def _normalize(self, s: str) -> str:
         if not s:

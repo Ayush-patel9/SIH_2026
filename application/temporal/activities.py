@@ -87,10 +87,10 @@ async def extract_pdf_activity(input_data: Dict[str, Any]) -> Dict[str, Any]:
                 text_out = "\n\n--- PAGE BREAK ---\n\n".join(pages)
             except Exception as e1:
                 try:
-                    import pdfplumber
-                    with pdfplumber.open(io.BytesIO(raw)) as pdf:
-                        p_count = len(pdf.pages)
-                        text_out = "\n\n".join(p.extract_text() or "" for p in pdf.pages)
+                    import pypdf
+                    reader = pypdf.PdfReader(io.BytesIO(raw))
+                    p_count = len(reader.pages)
+                    text_out = "\n\n--- PAGE BREAK ---\n\n".join(p.extract_text() or "" for p in reader.pages)
                 except Exception as e2:
                     text_out = ""
             return text_out, p_count

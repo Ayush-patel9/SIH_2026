@@ -42,6 +42,15 @@ class AuthorityAssistantService:
 
     def _load_catalog(self):
         try:
+            from pipeline.rag_engine.pipeline_core import graph_rag_pipeline
+            self.standards_list = graph_rag_pipeline.tri_retrieval.master_standards
+            self.standards_by_num = graph_rag_pipeline.tri_retrieval.standards_by_num
+            logger.info("AuthorityAssistantService linked to shared master catalog.")
+            return
+        except Exception:
+            pass
+
+        try:
             if os.path.exists(CATALOG_PATH):
                 with open(CATALOG_PATH, "r", encoding="utf-8") as f:
                     self.standards_list = json.load(f)
@@ -51,13 +60,10 @@ class AuthorityAssistantService:
                     if num:
                         self.standards_by_num[num] = std
                         self.standards_by_num[num.replace(" ", "")] = std
-                        
-                        # Also index IS 1234 from IS 1234:2015
                         clean_num = re.sub(r"[:\-].*$", "", num).strip()
                         if clean_num and clean_num not in self.standards_by_num:
                             self.standards_by_num[clean_num] = std
                             self.standards_by_num[clean_num.replace(" ", "")] = std
-                
                 logger.info(f"AuthorityAssistantService loaded {len(self.standards_list)} standards from catalog.")
             else:
                 logger.warning(f"Catalog file not found at {CATALOG_PATH}")

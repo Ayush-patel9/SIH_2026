@@ -1,4 +1,4 @@
-from typing import List, Optional, Dict, Any
+from typing import List, Optional, Dict, Any, Union
 from pydantic import BaseModel, Field, ConfigDict
 from datetime import datetime, timezone
 import uuid
@@ -128,8 +128,8 @@ class GraphPathEdge(BaseModel):
     label: str
 
 class ReasoningStep(BaseModel):
-    step: str
-    detail: str
+    step: Union[str, int] = "1"
+    detail: str = ""
     confidence: float = 0.95
 
 class PlainLanguageExplanation(BaseModel):
